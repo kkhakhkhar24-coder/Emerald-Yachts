@@ -37,6 +37,7 @@ const toggleMenu = () => {
 </div>
 
 <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
+   <div className="close-btn" onClick={() => toggleMenu()}>×</div>
   <a href="#">HOME</a>
   <a href="#">EXPERIENCES</a>
   <a href="#">MEETINGS & INCENTIVES</a>
