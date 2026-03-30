@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import '../../src/index.css'
+import '../../pages/DrakePassagePage/DrakePassagePage.css'
 
 const faqData = [
     { q: "What is the Drake Passage and where is it located?", a: "The Drake Passage is the body of water between the southern tip of South America and Antarctica. It connects the Atlantic and Pacific Oceans and serves as the primary route for expedition cruises traveling to the Antarctic Peninsula." },
