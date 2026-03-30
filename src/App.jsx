@@ -1,570 +1,468 @@
-import React, { useState } from "react";
-import FAQ from "./FAQ";
+
+       {/* <section class="heading_section">
+        <div class="heading_main">
+          <h1>Emerald Yachts:Boutique Yacht Cruising Expertly Planned by Trips & Ships Luxury Travel</h1>
+        </div>
+
+         <div class="hero_main">
+          <p>Emerald Yachts offer a refined, boutique-style yacht experience designed for travelers who value relaxed luxury, coastal access, and an easy, social atmosphere at sea. These are not expedition vessels. They are intimate yachts built for warm-weather cruising, scenic coastlines, and destination-driven travel with a lighter pace.</p>
+          <p>Planning an Emerald Yacht journey is not simply about selecting a sailing. It is about choosing the right itinerary, season, and onboard experience to match how you want your time to feel.</p>
+          <p>Trips & Ships Luxury Travel designs Emerald Yacht journeys using a structured planning approach led by Angela Hughes, ensuring every detail is aligned from the beginning so the experience feels effortless and well-paced.</p>
+          <button>Schedule an Emerald Yacht Planning Consultation</button>
+          <button>Prefer email? sales@tripsandships.com</button>
+        </div>
+
+      </section> */}
+
+
+import React, { useEffect, useState } from "react";
 import "./orient.css";
 
-const LuxuryHero = () => {
+const LuxuryPage = () => {
 
-const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [current, setCurrent] = useState(0);
+  const [readMore, setReadMore] = useState(false);
 
-const toggleMenu = () => {
-  setMenuOpen(!menuOpen);
-};
+   const images = [
+    "https://ucd8baf43e60107c95b83766b0a0.previews.dropboxusercontent.com/p/thumb/AC_msA0cLGgYPp2DqDwDizVpCyRXmQ7Mm2OdjQ2NrWIsburThd6At59ksC_Rmlt05zcXYnai0FPGt0EjsiWHpuFR86ltciHLGqk9xyo306zKwuBnwRsD7jjJiBmgDHX3jWobmhakh-V2fFtavSzty82AH8nkFqYQ6WNZNE6B9KtymhT16M7p4wiUfMQB1RCjXxwxfrZUbgXHaCXFSWbdAEAdqaHcMEhny0pnF6wp62iypoL3XrVpINuGZnr955TWf6LWl9a8mpCzk5vqpoUFsmaenH_hB7HnZ8Oa6BSRyY5ny84gjh5w_mOfTa4EeOhPMag3cmJeDnpQlcYpKK5m5o9X6sAy6M2jkelDxYH3_dK3Xw/p.jpeg",
+    "https://ucfda2b7d3c7dca99a880dd2c5ae.previews.dropboxusercontent.com/p/thumb/AC8okR26iTMzrLzHXSr9EP1UOvDhRT0BZNM6zHbGsff5NoHXgplkB9llltzI0sLp59gh7ZZUI8GeewHtnkbEczyfPQvkTHW-vpYOaF0B-0wVDTnxbviTJKnQh3ofuxd7JpAQNxUrsuyctFdNOuD4CEAdxPa7rfI55BGetlGM4VjjLdFMvebN3UisbG1ANoGBdlCV1JhIhtd1Z98ieAUGYbkdFWq7nOSVccRiIsWsHbQqdhnXvkp8HTAbr0N0vPMwOG6fhU70vvCVP4zcv9Bhbk7jnaJC-geynu57-HujyxyJYKGIJ4gyzdU1GTnZx5ui-tRdmmKMwNvKnH7R3SqCurVEL6EP2mLCU4y0KqcXdTQeNwSpIbnaY0Rpq5p93HomwxL2mYqzy5OQUgwcis58UyJ94HXo0HfOTIor_UT5vAVUBA/p.jpeg",
+    "https://uc864bbfa833507e595e834ae8d9.previews.dropboxusercontent.com/p/thumb/AC83JTTHTeYw1MqsDGESou0Dd9_MrwCi7sUyE4AGtXRs6eZxVyotZUscHF21UUv94KRFXVbRWvMa_sRHbSMuSr8Gr5ISnKbbvV-y4vuXX88ewQXgF9hezfjUgk3hh84pbYJJcQ4MbI6uX5HXVDndA5mRbwXdM-dGWiuNqA9lTs6iDA12tLt590ou8_SdBPDHxqq4icxkqsQuH6bVFnRj2EYXdMwi5XQCib-dAwsptj44hfwd1wmdUNUrTi-0GeYXj8FuzZSM4Cr4O7mGoRfGOCzzx8evCZNUiYYN8FV1iUTqqmFEpC4sKzemXY9D0dlgB5oFiADvFOBjBSWI_4gD9PYq8bDNFswxFLxC2jhWGYGU9A/p.jpeg"
+  ];
+
+
+ useEffect(() => {
+    const slider = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(slider);
+  }, []);
+
+
+   
 
   return (
-    <div className="wrapper">
+    <>
+       {/* ================= NAVBAR ================= */}
+      <nav className="navbar">
+        <div className="nav_inner">
 
-    <nav className="navbar">
-        <div className="logo">TRIPS & SHIPS</div>
+          <div className="logo">TRIPS & SHIPS</div>
 
-        <div className="nav-links">
-          <a href="#">HOME</a>
-          <a href="#">EXPERIENCES</a>
-          <a href="#">MEETINGS & INCENTIVES</a>
-          <a href="#">ALUMNI TRAVEL</a>
-          <a href="#">VIP HOTELS</a>
-          <a href="#">ABOUT & RESOURCES</a>
-          <a href="#">BLOG</a>
+          <div className="nav_links">
+            <a href="#">HOME</a>
+            <a href="#">EXPERIENCES</a>
+            <a href="#">MEETINGS & INCENTIVES</a>
+            <a href="#">ALUMNI TRAVEL</a>
+            <a href="#">VIP HOTELS</a>
+            <a href="#">ABOUT & RESOURCES</a>
+            <a href="#">BLOG</a>
+            <button className="contact_btn">CONTACT</button>
+          </div>
+
+          <div className="hamburger" onClick={() => setMenuOpen(true)}>
+            ☰
+          </div>
+
         </div>
-
-        <div className="nav-right">
-          <button className="nav-btn">CONTACT</button>
-        </div>
-
-<div className="hamburger" onClick={() => toggleMenu()}>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
-   <div className="close-btn" onClick={() => toggleMenu()}>×</div>
-  <a href="#">HOME</a>
-  <a href="#">EXPERIENCES</a>
-  <a href="#">MEETINGS & INCENTIVES</a>
-  <a href="#">ALUMNI TRAVEL</a>
-  <a href="#">VIP HOTELS</a>
-  <a href="#">ABOUT & RESOURCES</a>
-  <a href="#">BLOG</a>
-  <button className="nav-btn">CONTACT</button>
-</div>
       </nav>
 
-      <section className="hero">
-        <div className="hero-content">
+      {/* ================= OFFCANVAS ================= */}
+      <div className={`offcanvas ${menuOpen ? "active" : ""}`}>
+        <div className="close_btn" onClick={() => setMenuOpen(false)}>×</div>
+
+        <a href="#">HOME</a>
+        <a href="#">EXPERIENCES</a>
+        <a href="#">MEETINGS & INCENTIVES</a>
+        <a href="#">ALUMNI TRAVEL</a>
+        <a href="#">VIP HOTELS</a>
+        <a href="#">ABOUT & RESOURCES</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+      </div>
+
+      {/* ================= HERO ================= */}
+      <section className="hero_section">
+
+        <div
+          className="hero_bg"
+          style={{ backgroundImage: `url(${images[current]})` }}
+        ></div>
+
+        <div className="hero_overlay"></div>
+
+        <div className="hero_content">
+
           <h1>
-            Orient Express Yachts:
-            <br />
-            A New Era of Luxury Travel at Sea
+            Emerald Yachts: A New Era of Luxury Travel at Sea
           </h1>
 
-          <p className="lead">
-            Most people think they understand cruising.
-            <br />
-            They don’t.
+          <p>
+            Emerald Yachts offer a refined, boutique-style yacht experience designed for travelers who value relaxed luxury, coastal access, and an easy, social atmosphere at sea. These are not expedition vessels. They are intimate yachts built for warm-weather cruising, scenic coastlines, and destination-driven travel with a lighter pace.
           </p>
 
-          <p className="sub">
-            And that is exactly why Orient Express Yachts matters.
+          <p>
+            Planning an Emerald Yacht journey is not simply about selecting a sailing. It is about choosing the right itinerary, season, and onboard experience to match how you want your time to feel.
           </p>
 
-         <p className="extra-text">
-  This is not simply another ship entering the market. It is a new
-  expression of luxury travel at sea for travelers who care about
-  space, design, privacy, and a more intentional pace of travel.
-</p>
+          <p>
+            Trips & Ships Luxury Travel designs Emerald Yacht journeys using a structured planning approach led by Angela Hughes, ensuring every detail is aligned from the beginning so the experience feels effortless and well-paced.
+          </p>
 
-<p className="extra-text">
-  I have spent more than four decades in the travel industry, and very
-  few products genuinely shift consumer perception the way this one
-  does.
-</p>
-
-          <div className="hero-buttons">
-            <button className="primary">
-              Request a Private Consultation
+          <div className="hero_buttons">
+            <button className="primary_btn">
+              Schedule an Emerald Yacht Planning Consultation
             </button>
-            <button className="secondary">
-              View Upcoming Sailings
+
+            <button className="secondary_btn">
+              Prefer email? sales@tripsandships.com
             </button>
           </div>
+
         </div>
       </section>
 
 
-<section className="what-luxury">
-
-  <div className="luxury-bg"></div> 
-
-  <div className="what-text">
-    <h2>What Is Orient Express Yachts</h2>
-
-    <p className="fade-in">
-      Orient Express Sailing Yachts introduces a very different category of travel at sea. The first yacht, Orient Express Corinthian, begins its maiden voyages in May 2026. It is presented by the brand as the world’s largest sailing yacht and is designed with 54 suites, panoramic sea views, and Mediterranean itineraries that position it at the very top end of the ultra-luxury market. 
-    </p>
-
-    <p className="fade-in delay-1">
-      This is not a traditional cruise ship experience. It is a more private, design-forward, and residential approach to being at sea.
-    </p>
-
-    <div className="highlights-title fade-in delay-2">Key highlights</div>
-
-   <div className="highlights-luxury fade-in delay-2">
-  <div className="highlight-pill">
-    <span className="highlight-icon">⛵</span>
-    54 Suites
-  </div>
-  <div className="highlight-pill">
-    <span className="highlight-icon">🌊</span>
-    Panoramic Sea Views
-  </div>
-  <div className="highlight-pill">
-    <span className="highlight-icon">🗓️</span>
-    Maiden Voyages May 2026
-  </div>
-  <div className="highlight-pill">
-    <span className="highlight-icon">🧭</span>
-    Mediterranean Itineraries
-  </div>
-  <div className="highlight-pill">
-    <span className="highlight-icon">💎</span>
-    Curated Luxury Concept
-  </div>
-</div>
-  </div>
-
-</section>
-
-
-
-<section className="editorial-block">
-
-  <div className="editorial-inner fade-in">
-    <h2>Is Orient Express Yachts a Cruise or a Yacht</h2>
-
-    <p>
-      Technically, it operates as a sailing yacht experience, but the better answer is that it is designed to feel far more like a private yacht than a traditional cruise.
-    </p>
-
-    <p className="emphasis fade-in delay-1">
-      That distinction matters.
-    </p>
-
-    <p>
-      For many travelers, the resistance to cruising has never been about the sea. It has been about scale, density, and the feeling that the experience was built for someone else. Orient Express Yachts addresses that gap with a lower-density concept, stronger design identity, and a more immersive sense of place. Its positioning, suite count, and Mediterranean launch all support that interpretation.
-    </p>
-  </div>
-
-</section>
-
-<section className="difference">
-
-  <div className="difference-bg"></div>
-
-  <div className="difference-content">
-
-    <div className="difference-card">
-      <h2>Why This Is Different</h2>
-
-      <p>
-        Most cruise products have historically been built around itinerary, volume, and logistics.
-      </p>
-
-      <p className="highlight-line">
-        Orient Express Yachts is built around something else entirely.
-      </p>
-
-      <p>
-        It is about space over density, environment over programming, design over sameness, and atmosphere over activity schedules. The brand is bringing the legacy of Orient Express into a floating, highly stylized setting that is meant to feel curated rather than crowded.
-      </p>
-
-      <p>
-        This is why it matters so much for travelers who have never really seen themselves on a cruise.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section className="experience">
-
-  <div className="experience-inner">
-
-    <h2>The Experience Onboard</h2>
-
-    <p>
-      The onboard experience is where this product begins to separate itself.
-    </p>
-
-    <p>
-      Official Orient Express materials describe a layered experience that includes restaurants and bars, a marina, wellness spaces, a cabaret, a cinema, a game room, a music salon, and a library. Accor’s press materials also confirm five restaurants and private dining spaces, a 115-seat cabaret, a state-of-the-art recording studio, two pools, and a marina. Culinary direction for Orient Express Corinthian is led by Yannick Alléno.
-    </p>
-
-    <p>
-      This gives the experience more depth than a simple yacht aesthetic.
-    </p>
-
-    <p className="emphasis">
-      It creates a full world onboard.
-    </p>
-
-    <div className="exp-highlights-title">
-      Experience highlights
-    </div>
-
-    <div className="exp-slider">
-      <div className="exp-track">
-
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0')"}}>
-          <span>Five restaurants and private dining spaces</span>
+ {/* <section>
+        <div>
+          <h2>What Are Emerald Yachts?</h2>
+          <p>Emerald Yachts are part of the Scenic Group portfolio and are designed for boutique yacht cruising in warm-weather destinations. With a smaller guest count and an open, relaxed onboard environment, Emerald Yachts focus on lifestyle-driven travel rather than expedition or technical exploration.</p>
         </div>
+       </section>  */}
 
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')"}}>
-          <span>Bars and lounges</span>
-        </div>
 
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf')"}}>
-          <span>115-seat cabaret</span>
-        </div>
 
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')"}}>
-          <span>Marina and water access</span>
-        </div>
+       <section className="about_section">
+  <div className="about_inner">
+    <h2>What Are Emerald Yachts?</h2>
 
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.pexels.com/photos/4716818/pexels-photo-4716818.jpeg')"}}>
-          <span>Two pools</span>
-        </div>
-
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1506126613408-eca07ce68773')"}}>
-          <span>Fitness and wellness spaces</span>
-        </div>
-
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1512820790803-83ca734da794')"}}>
-          <span>Library, cinema, and music salon</span>
-        </div>
-
-        <div className="exp-slide" style={{backgroundImage: "url('https://images.unsplash.com/photo-1555992336-03a23c7b20ee')"}}>
-          <span>Culinary direction by Yannick Alléno</span>
-        </div>
-
-      </div>
-    </div>
-
+    <p>
+      Emerald Yachts are part of the Scenic Group portfolio and are designed for boutique yacht cruising in warm-weather destinations. With a smaller guest count and an open, relaxed onboard environment, Emerald Yachts focus on lifestyle-driven travel rather than expedition or technical exploration.
+    </p>
   </div>
-
 </section>
 
 
-<section className="suites">
-
-  <div className="suites-inner">
-
-   
-    <div className="suites-image"></div>
-
-    <div className="suites-text">
-
-      <h2>Suites and Space</h2>
-
-      <p>
-        One of the strongest selling points is the sense of space.
-      </p>
-
-      <p>
-        Accor states that the yacht’s 54 suites range from 485 square feet to 2,476 square feet, with expansive picture windows or terraces and elevated ceilings. That is materially different from how most travelers think about accommodation at sea.
-      </p>
-
-      <p className="emphasis">
-        For the right traveler, that changes the entire conversation.
-      </p>
-
-      <p>
-        This is not about fitting into a cabin. It is about inhabiting a beautifully designed environment that happens to move through the Mediterranean.
-      </p>
-
-    </div>
-
+{/* <section>
+  <div>
+    <h2>
+         Real Experience with Emerald Yachts
+    </h2>
+    <p>
+        Our experience with Emerald Yachts is not theoretical. We understand how these journeys unfold in real time, how itinerary pacing impacts the feel of the trip, and how small decisions such as sailing selection and cabin placement influence the overall experience.
+    </p>
   </div>
+</section> */}
 
-</section>
-
-
-<section className="pricing">
-
-  <div className="pricing-inner">
-
-    <h2>How Much Does Orient Express Yacht Cost</h2>
+{/* <section className="experience_section">
+  <div className="experience_inner">
+    <h2>
+      Real Experience with Emerald Yachts
+    </h2>
 
     <p>
-      Pricing is expected to place Orient Express Yachts at the very top of the ultra-luxury market.
+      Our experience with Emerald Yachts is not theoretical. We understand how these journeys unfold in real time, how itinerary pacing impacts the feel of the trip, and how small decisions such as sailing selection and cabin placement influence the overall experience.
     </p>
-
-    <p>
-      While the brand’s public materials emphasize itinerary availability and booking status rather than a simple universal rate card, the overall product positioning, suite scale, culinary leadership, and density strongly suggest a mid five-figure starting point per person and upward, depending on suite category, season, and itinerary. That pricing expectation is an inference based on the official product profile and positioning rather than a single published flat rate.
-    </p>
-
-    <p className="emphasis">
-      This is not a price-first product.
-    </p>
-
-    <p>
-      It is a product for travelers choosing for rarity, design, access, and experience.
-    </p>
-
   </div>
+</section> */}
 
-</section>
+<section className="experience_section">
+  <div className="experience_inner">
 
+    <div className="experience_grid">
 
-<section className="sustainability">
+      {/* LEFT CONTENT */}
+      <div className="experience_text">
+        <h2>
+          Real Experience with Emerald Yachts
+        </h2>
 
-  <div className="sustain-inner">
-
-    <h2>Sustainability and Innovation</h2>
-
-    <p>
-      Sustainability is part of the product story, but in this case it is also part of the appeal.
-    </p>
-
-    <p>
-      Orient Express has positioned this as a sailing yacht experience, and the brand’s official messaging centers the vessel’s identity as a large-scale sailing concept rather than a conventional cruise ship. What matters for the consumer page is that this is being framed as a more future-facing, design-led approach to ultra-luxury travel at sea.
-    </p>
-
-    <p className="emphasis">
-      For many luxury travelers, that combination of innovation and elegance is part of the draw.
-    </p>
-
-  </div>
-
-</section>
-
-<section className="audience">
-
-  <div className="audience-inner">
-
-    <h2>Who This Is For</h2>
-
-    <p className="intro">
-      This is not for everyone.
-    </p>
-
-    <p>
-      It is best suited for travelers who:
-    </p>
-
-    <div className="audience-list">
-      <p>Have never really identified as cruise travelers</p>
-      <p>Prefer private villas, yachts, and more design-driven environments</p>
-      <p>Value privacy, atmosphere, and a quieter pace</p>
-      <p>Want something newer and more distinctive than a standard luxury cruise</p>
-      <p>Want to integrate a sailing into a broader Europe itinerary</p>
-    </div>
-
-    <p className="emphasis">
-      If you have ever said, “I do not think cruising is for me,” this may be the first product that genuinely challenges that assumption.
-    </p>
-
-  </div>
-
-</section>
-
-
-<section className="compare">
-
-  <div className="compare-inner">
-
-   
-    <div className="compare-text">
-
-      <h2>How It Compares to Other Luxury Yacht Experiences</h2>
-
-      <p>
-        Orient Express Yachts enters a space that already includes products that blend hospitality and small-ship luxury.
-      </p>
-
-      <p>
-        What makes this stand apart is the strength of the Orient Express brand identity, the emphasis on sailing, the highly stylized design point of view, the intimate suite count, and the framing of the journey itself as part of the allure. The official brand language leans much more heavily into heritage, craftsmanship, and the Mediterranean experience than into conventional cruise messaging.
-      </p>
-
-      <p className="emphasis">
-        That difference matters.
-      </p>
-
-      <p className="emphasis">
-        It changes who will be drawn to it.
-      </p>
-
-    </div>
-
-  
-    <div className="compare-images">
-      <img src="https://www.tripsandships.com/blog-river-cruise.jpeg" alt="luxury yacht" />
-      <img src="https://www.tripsandships.com/MAGNA_Exterior_passau.jpeg" alt="deck view" />
-      <img src="https://www.tripsandships.com/bush-lunch-tanzania-safari-experience.jpeg" alt="luxury interior" />
-    </div>
-
-  </div>
-
-</section>
-
-<section className="angela">
-
-  <div className="angela-box">
-
-    <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
-
-    <p className="lead">
-      Angela Hughes leads this work personally.
-    </p>
-
-    <p>
-      She is the CEO and Founder of Trips & Ships Luxury Travel and one of the most recognized voices in luxury travel today.
-    </p>
-
-    <div className="angela-points">
-      <p>CEO and Founder of Trips & Ships Luxury Travel</p>
-      <p>Founder of Luxury Travel University</p>
-      <p>More than 40 years in the travel industry</p>
-      <p>Named one of the Most Influential Women in Travel 2026 by TravelPulse</p>
-      <p>Named Luxury Travel Influencer of the Year 2024 by Travel Leaders Network</p>
-      <p>Trusted by luxury travelers globally</p>
-    </div>
-
-    <p>
-      Her role is not simply to book a product.
-    </p>
-
-    <p className="emphasis">
-      It is to interpret where the market is going and help clients decide whether something is truly right for them.
-    </p>
-
-    <p>
-      Orient Express Yachts is one of those moments.
-    </p>
-
-    <h3 className="subhead">
-      A personal approach backed by a global team
-    </h3>
-
-    <p>
-      While Angela leads the strategy and client experience, she is supported by a team of more than 140 luxury travel advisors and operational specialists within Trips & Ships Luxury Travel.
-    </p>
-
-    <p>
-      That means clients benefit from:
-    </p>
-
-    <div className="angela-points">
-      <p>Strategic oversight</p>
-      <p>Deep supplier relationships</p>
-      <p>Support before, during, and after travel</p>
-      <p>Full itinerary coordination around the sailing itself</p>
-    </div>
-
-    <p className="emphasis">
-      This is not a one-person transaction.
-    </p>
-
-    <p>
-      It is a high-touch experience supported by both leadership and infrastructure.
-    </p>
-
-  </div>
-
-</section>
-
-<section className="availability">
-
-  <div className="availability-inner">
-
-    <h2>Availability and Booking Strategy</h2>
-
-    <p>
-      With only 54 suites, this is a limited-inventory product from the start. Official Orient Express itinerary pages already show booking-driven sailings, call-for-availability language on some departures, and a clear emphasis on early planning.
-    </p>
-
-    <p>
-      Working with Trips & Ships Luxury Travel means:
-    </p>
-
-    <div className="availability-list">
-
-      <div className="availability-item">
-        <svg viewBox="0 0 24 24" className="icon">
-          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
-        <p>Strategic timing on when to book</p>
+        <p>
+          Our experience with Emerald Yachts is not theoretical. We understand how these journeys unfold in real time, how itinerary pacing impacts the feel of the trip, and how small decisions such as sailing selection and cabin placement influence the overall experience.
+        </p>
       </div>
 
-      <div className="availability-item">
-        <svg viewBox="0 0 24 24" className="icon">
-          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
-        <p>Guidance on whether the product fits your travel style</p>
-      </div>
-
-      <div className="availability-item">
-        <svg viewBox="0 0 24 24" className="icon">
-          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
-        <p>Help selecting the right suite and sailing</p>
-      </div>
-
-      <div className="availability-item">
-        <svg viewBox="0 0 24 24" className="icon">
-          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
-        <p>Pre- and post-yacht itinerary planning</p>
-      </div>
-
-      <div className="availability-item">
-        <svg viewBox="0 0 24 24" className="icon">
-          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-          <path d="m9 11 3 3L22 4"></path>
-        </svg>
-        <p>Ongoing advocacy throughout the experience</p>
+      {/* RIGHT IMAGE */}
+      <div className="experience_image">
+        <img 
+          src="https://ucfda2b7d3c7dca99a880dd2c5ae.previews.dropboxusercontent.com/p/thumb/AC-Nf36pdgBs0rExUusTmoEuAA9-zDO2GuEJOenWLe_X6WKcqvLT2YhF_XkFs1WalmE7jInrY8U0Aqxyif5kviMdGPLnjlZs03jazoz4BfxwvAVtsDcWW6t-hmSPb1BwIbesRYjuV9lkaTAt54mSUm3JteJS6W5OB5w2546aKlKCBB5dx8waZcKqoEE6_EkxEvXodkdkkzKGkTeWnmmKd8lS-BSA7zkMUM6Tzsaojx7g-Qrzxu6mqc6Oh9SKd2uxYzM2eQyg56RcS8xNzrkXG5FRRGhpETzh-YGQGm442vh_WYcfzGsA1PgZB1JSp_X4agn6rdAGuARu6qYD8QEafolr_PnzOK17vL1g3AO20xTkIBLsvwz8m6F3usfx4rhWPMPIyHkIR6uCk8Qdg5YB7kelPxtDb_sdng7SIyIl9AWFCw/p.jpeg" 
+          alt="Yacht Experience"
+        />
       </div>
 
     </div>
 
   </div>
-
 </section>
 
 
-<section className="final-cta">
+<section className="planning_section">
+  <div className="planning_inner">
 
-  <div className="final-cta-inner">
-
-    <h2>Start Your Journey</h2>
-
-    <p>
-      This is not something to book casually in five minutes.
-    </p>
+    <h2>
+      Expert Planning for Emerald Yacht Cruises
+    </h2>
 
     <p>
-      It requires thought, fit, timing, and the right planning around it.
+      Emerald Yacht cruising is about flow, not complexity. The experience is shaped by how the itinerary unfolds, how much time is spent in port, and how the onboard atmosphere complements the destination.
     </p>
-
-    <p className="cta-emphasis">
-      If this aligns with how you want to travel, the next step is a conversation.
-    </p>
-
-    <button className="cta-button">
-      Request a Private Consultation
-    </button>
 
   </div>
-
 </section>
-      
+
+
+<section className="insight_section">
+  <div className="insight_inner">
+
+    <h2>
+      Expert Insight from Angela Hughes
+    </h2>
+
+    <p>
+      <span className="highlight_text">
+        Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel
+      </span>
+    </p>
+
+    <p>
+      Angela Hughes is the CEO and Founder of Trips & Ships Luxury Travel and one of the most recognized voices in the luxury travel industry. With more than four decades of experience, she has built and scaled a global luxury travel business and trained advisors worldwide.
+    </p>
+
+    <p>
+      She was named Luxury Travel Influencer of the Year by Travel Leaders Network and recognized among the Most Influential Women in Travel by TravelPulse. Her insights have been featured in Travel Weekly, Insider Travel Report, Travel Market Report, The Washington Post, and The New York Times.
+    </p>
+
+  </div>
+</section>
+
+
+<section className="team_section">
+  <div className="team_inner">
+
+    <h2>
+      The Trips & Ships Luxury Travel Team
+    </h2>
+
+    <p>
+      Trips & Ships Luxury Travel is a team of over 140 luxury travel advisors supported by a structured planning methodology and deep industry relationships.
+    </p>
+
+    <p>
+      Each journey benefits from:
+    </p>
+
+    <p className="team_points">
+      • A consistent planning framework <br />
+      • Advisor training through Luxury Travel University <br />
+      • Preferred supplier relationships <br />
+      • Ongoing client support before, during, and after travel
+    </p>
+
+  </div>
+</section>
+
+
+<section className="recognition_section">
+  <div className="recognition_inner">
+
+    <h2>
+      As Seen In and Industry Recognition
+    </h2>
+
+    <p>
+      Angela Hughes and Trips & Ships Luxury Travel have been recognized and featured across leading global media and travel industry publications, including:
+    </p>
+
+    <p className="recognition_list">
+      • Travel Weekly <br />
+      • TravelPulse <br />
+      • Insider Travel Report <br />
+      • Travel Market Report <br />
+      • Travel Leaders Network <br />
+      • The Washington Post <br />
+      • The New York Times
+    </p>
+
+    <p>
+      Media inquiries and speaking engagements available upon request.
+    </p>
+
+  </div>
+</section>
+
+
+<section className="ideal_section">
+  <div className="ideal_inner">
+
+    <h2>
+      Is Emerald Yachts Right for You?
+    </h2>
+
+    <p>
+      <span className="highlight_blue">Emerald Yachts Are Ideal If You:</span>
+    </p>
+
+    <p className="ideal_list">
+      • Want a relaxed, warm-weather yacht experience <br />
+      • Prefer smaller ships with a social atmosphere <br />
+      • Enjoy coastal cruising <br />
+      • Value simplicity and ease
+    </p>
+
+    <p>
+      <span className="highlight_blue">Who Should Not Book Emerald Yachts</span>
+    </p>
+
+    <p>
+      Travelers seeking expedition travel, polar regions, or highly structured enrichment experiences should consider alternatives such as Scenic Eclipse.
+    </p>
+
+  </div>
+</section>
+
+<section className="about_yachts_section">
+  <div className="about_yachts_inner">
+
+    <h2>
+      About Emerald Yachts
+    </h2>
+
+    <p>
+      Emerald Yachts are boutique vessels designed for relaxed luxury cruising in destinations such as the Mediterranean and Caribbean, with approximately 100 guests onboard.
+    </p>
+
+  </div>
+</section>
+
+<section className="expert_section">
+  <div className="expert_inner">
+
+    <h2>
+      How an Expert Chooses the Right Emerald Yacht Sailing
+    </h2>
+
+    <p>
+      <span className="highlight_blue">Key considerations include:</span>
+    </p>
+
+    <div className="expert_cards">
+
+      <div className="expert_card">
+        <div className="icon_box"><i className="fas fa-route"></i></div>
+        <p>Itinerary structure</p>
+      </div>
+
+      <div className="expert_card">
+        <div className="icon_box"><i className="fas fa-sun"></i></div>
+        <p>Seasonality</p>
+      </div>
+
+      <div className="expert_card">
+        <div className="icon_box"><i className="fas fa-clock"></i></div>
+        <p>Time in port versus sea</p>
+      </div>
+
+      <div className="expert_card">
+        <div className="icon_box"><i className="fas fa-ship"></i></div>
+        <p>Ship atmosphere</p>
+      </div>
+
+      <div className="expert_card">
+        <div className="icon_box"><i className="fas fa-plane"></i></div>
+        <p>Travel logistics</p>
+      </div>
 
     </div>
+
+  </div>
+</section>
+
+
+<section className="method_section">
+  <div className="method_inner">
+
+    <h2>
+      The Trips & Ships Yacht Planning Method
+    </h2>
+
+    <div className="method_steps">
+
+      <div className="method_step">
+        <span className="step_number">01</span>
+        <p>Experience Alignment</p>
+      </div>
+
+      <div className="method_step">
+        <span className="step_number">02</span>
+        <p>Destination Strategy</p>
+      </div>
+
+      <div className="method_step">
+        <span className="step_number">03</span>
+        <p>Itinerary Flow</p>
+      </div>
+
+      <div className="method_step">
+        <span className="step_number">04</span>
+        <p>Cabin Strategy</p>
+      </div>
+
+      <div className="method_step">
+        <span className="step_number">05</span>
+        <p>Full Journey Design</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section className="cost_section">
+  <div className="cost_inner">
+
+    <h2>
+      How Much Do Emerald Yachts Cost?
+    </h2>
+
+    <div className="cost_list">
+
+      <div className="cost_item">
+        <p>Short itineraries:</p>
+        <span>$4,000 to $8,000 per person</span>
+      </div>
+
+      <div className="cost_item">
+        <p>Mediterranean and Caribbean sailings:</p>
+        <span>$6,000 to $12,000+</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    </>
   );
 };
 
-export default LuxuryHero;
+export default LuxuryPage;
+
+
+       {/* <section class="hero_section">
+        <div class="hero_main">
+          <p></p>
+          <p></p>
+          <p></p>
+          <button></button>
+          <button></button>
+        </div>
+       </section>
+
+
+       <section>
+        <div>
+          <h2></h2>
+          <p></p>
+        </div>
+       </section> */}
+  
