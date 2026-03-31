@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './LuxuryTravel.css'
 import { ChevronDown, Star, Sparkles } from 'lucide-react'
+import ProfilePicture from '../../assets/image.jpg'
 
 // --- FAQ Component Logic ---
 function FAQComponent() {
@@ -133,7 +134,9 @@ function LuxuryTravel() {
                         {/* Sidebar: Headshot and Credentials */}
                         <div className="lux-expert-sidebar">
                             <div className="lux-expert-image-wrap">
-                                <div className="lux-expert-avatar">AH</div>
+                                <div className="lux-expert-avatar">
+                                    <img src={ProfilePicture} alt="" />
+                                </div>
                             </div>
                             <div className="lux-credentials-box">
                                 <h4 className="lux-sidebar-title">Recognition</h4>
