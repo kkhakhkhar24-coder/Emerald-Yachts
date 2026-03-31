@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
 
@@ -17,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">TRIPS & SHIPS</div>
+      <div className="logo" onClick={() => navigate("/")} style={{ cursor: 'pointer' }}>TRIPS & SHIPS</div>
 
       <div className="nav-links">
         <div className="nav-dropdown-wrapper">
@@ -53,7 +54,7 @@ const Navbar = () => {
 
       <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
         <div className="close-btn" onClick={toggleMenu}>×</div>
-        
+
         <div className="mobile-dropdown-wrapper">
           <div className="mobile-dropdown-trigger" onClick={toggleHomeDropdown}>
             HOME <i className={`fas fa-angle-${homeDropdownOpen ? "up" : "down"}`}></i>
