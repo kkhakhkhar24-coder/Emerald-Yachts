@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './LuxuryTravel.css'
-import { ChevronDown, Star } from 'lucide-react'
+import { ChevronDown, Star, Sparkles } from 'lucide-react'
 
 // --- FAQ Component Logic ---
 function FAQComponent() {
@@ -295,31 +295,31 @@ function LuxuryTravel() {
 
                         {/* Factor 1 */}
                         <div className="lux-planning-card">
-                            <Star className="lux-planning-icon" size={20} />
+                            <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Experience alignment between discovery travel and comfort expectations</p>
                         </div>
 
                         {/* Factor 2 */}
                         <div className="lux-planning-card">
-                            <Star className="lux-planning-icon" size={20} />
+                            <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Seasonality, including weather, wildlife, daylight, and sea conditions</p>
                         </div>
 
                         {/* Factor 3 */}
                         <div className="lux-planning-card">
-                            <Star className="lux-planning-icon" size={20} />
+                            <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Itinerary pacing and expedition intensity</p>
                         </div>
 
                         {/* Factor 4 */}
                         <div className="lux-planning-card">
-                            <Star className="lux-planning-icon" size={20} />
+                            <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Cabin placement and ship flow</p>
                         </div>
 
                         {/* Factor 5 */}
-                        <div className="lux-planning-card lux-span-2">
-                            <Star className="lux-planning-icon" size={20} />
+                        <div className="lux-planning-card lux-span-full">
+                            <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Flights, transfers, documentation, and pre- and post-cruise planning</p>
                         </div>
 
@@ -337,7 +337,6 @@ function LuxuryTravel() {
                         <div className="lux-method-hero-content">
                             <span className="lux-method-eyebrow">Strategic Methodology</span>
                             <h2 className="lux-h2-white">The Trips & Ships Scenic Eclipse <br />Planning Approach</h2>
-                            <div className="lux-method-hero-divider"></div>
                             <p className="lux-method-hero-intro">
                                 Every Scenic Eclipse journey planned through Trips & Ships follows a clear, experience-driven approach refined over decades in luxury and expedition travel.
                             </p>

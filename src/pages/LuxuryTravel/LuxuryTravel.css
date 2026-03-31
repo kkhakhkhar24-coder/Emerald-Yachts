@@ -379,6 +379,12 @@
     text-align: center;
 }
 
+.lux-matrix-intro {
+    margin: 15px 0;
+    padding: 0 10px 0 0;
+    color: #000000 !important;
+}
+
 /* Centering the gold line specifically for this section */
 .lux-expert-header .lux-h2::after {
     margin: 25px auto 0 !important;
@@ -585,7 +591,7 @@
 .lux-trust-icon {
     color: #c6a15b;
     /* Gold Hash */
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 700 !important;
     flex-shrink: 0;
 }
@@ -961,7 +967,7 @@
 .lux-planning-icon {
     color: #c6a15b;
     /* Gold Hash */
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 700 !important;
     margin-top: 2px;
 }
@@ -990,12 +996,20 @@
     .lux-span-2 {
         max-width: 100%;
     }
+
+    .lux-planning-icon {
+        font-size: 20px !important;
+    }
 }
 
 @media (max-width: 768px) {
     .lux-planning-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .lux-planning-icon {
+        font-size: 20px !important;
     }
 
     .lux-span-2 {
@@ -1015,6 +1029,10 @@
 @media (max-width: 480px) {
     .lux-planning-header .lux-h2 {
         font-size: 28px !important;
+    }
+
+    .lux-planning-icon {
+        font-size: 20px !important;
     }
 }
 
