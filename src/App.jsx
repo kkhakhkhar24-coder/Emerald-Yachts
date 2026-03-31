@@ -17,11 +17,8 @@ function App() {
           <Route path='/' element={<EmeraldYachts />}></Route>
           <Route path='/DrakePassagePage' element={<DrakePassagePage />}></Route>
           <Route path='/ScenicVSSilversea' element={<ScenicVSSilversea />}></Route>
-<<<<<<< Updated upstream
           <Route path='/ScenicAntarctica' element={<ScenicAntarctica />}></Route>
-=======
           <Route path='/LuxuryTravel' element={<LuxuryTravel />}></Route>
->>>>>>> Stashed changes
         </Routes>
       </BrowserRouter>
     </>
