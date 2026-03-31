@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from 'react';
 import '../ScenicAntarctica/ScenicAntarctica.css'
@@ -40,7 +41,9 @@ function ScenicAntarctica() {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-
+          {/* <div className="page_breadcrumb">
+            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Scenic Antarctica Cruises</span>
+          </div> */}
           <h1>Scenic Antarctica Cruises</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
