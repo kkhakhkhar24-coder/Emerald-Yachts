@@ -325,7 +325,6 @@ function LuxuryTravel() {
                             <Sparkles className="lux-planning-icon" size={20} />
                             <p className="lux-planning-text">Flights, transfers, documentation, and pre- and post-cruise planning</p>
                         </div>
-
                     </div>
                 </div>
             </section>

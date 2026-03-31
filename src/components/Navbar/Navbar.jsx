@@ -27,6 +27,8 @@ const Navbar = () => {
               <span className="nav-dropdown-title">ANTARCTICA</span>
               <Link to="/antarctica-cruise-cost">Antarctica Cruise Cost</Link>
               <Link to="/scenic-antarctica-cruise">Scenic Antarctica Cruises</Link>
+              <Link to="/scenic-vs-silversea-antarctica">Scenic vs Silversea Antarctica</Link>
+              <Link to="/DrakePassagePage">The Drake Passage</Link>
             </div>
             <Link to="/luxury-travel" className="nav-dropdown-single">LUXURY TRAVEL</Link>
           </div>
@@ -60,6 +62,8 @@ const Navbar = () => {
             <span className="mobile-dropdown-title">ANTARCTICA</span>
             <Link to="/antarctica-cruise-cost" onClick={toggleMenu}>Antarctica Cruise Cost</Link>
             <Link to="/scenic-antarctica-cruise" onClick={toggleMenu}>Scenic Antarctica Cruises</Link>
+            <Link to="/scenic-vs-silversea-antarctica" onClick={toggleMenu}>Scenic vs Silversea Antarctica</Link>
+            <Link to="/DrakePassagePage" onClick={toggleMenu}>The Drake Passage</Link>
             <span className="mobile-dropdown-divider"></span>
             <Link to="/luxury-travel" onClick={toggleMenu} className="mobile-dropdown-single">LUXURY TRAVEL</Link>
           </div>
