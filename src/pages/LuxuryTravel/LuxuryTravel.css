@@ -988,6 +988,7 @@
     font-weight: 500 !important;
     margin-bottom: 0;
     text-align: left;
+    width: fit-content;
 }
 
 /* Center the final long item on desktop */
@@ -1800,6 +1801,7 @@
     /* Navy Hash */
     line-height: 1.4 !important;
     text-align: left;
+    width: fit-content;
 }
 
 .lux-faq-icon {
@@ -1842,6 +1844,7 @@
 
 /* Highlight the question when open */
 .lux-faq-item.lux-open .lux-q-text {
+    width: fit-content;
     color: #c6a15b;
     /* Gold Hash */
 }
@@ -1853,6 +1856,7 @@
     }
 
     .lux-q-text {
+        width: fit-content;
         font-size: 15px !important;
     }
 
