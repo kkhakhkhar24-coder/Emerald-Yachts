@@ -1,186 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --navy: #274472;
-    --navy-light: #274472cc;
-    --gold: #c6a15b;
-    --bg-white: #ffffff;
-    --bg-soft: rgb(231, 243, 245);
-    --bg-cream: #f7f6f2;
-    --bg-dark: #0f1c2e;
-    --bg-dark2: #1c2f4a;
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --header-navy: #1c355e;
-    --header-font: 'Montserrat', sans-serif;
-    --logo-font: 'Playfair Display', serif;
-}
 
-body {
-    font-family: var(--font-body);
-    color: var(--navy);
-    background: var(--bg-white);
-    overflow-x: hidden;
-}
-
-/* --- NAVBAR STYLES --- */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-
-    background: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(8px);
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 700;
-    color: white;
-}
-
-.nav-links {
-    display: flex;
-    gap: 28px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    opacity: 0.7;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-}
-
-.nav-btn {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 8px 18px;
-    cursor: pointer;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: 0.3s ease;
-}
-
-.nav-btn:hover {
-    background: white;
-    color: black;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    z-index: 1100;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-.offcanvas-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 500px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 100px 20px;
-    transition: right 0.3s ease;
-    z-index: 1050;
-    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.offcanvas-menu a {
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-.offcanvas-menu .nav-btn {
-    width: 100%;
-    text-align: center;
-    border: 1px solid black;
-    background: black;
-    color: white;
-    padding: 10px 0;
-    cursor: pointer;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.offcanvas-menu .nav-btn:hover {
-    background: #333;
-}
-
-.offcanvas-menu.active {
-    right: 0;
-}
-
-/* CROSS BUTTON */
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close-btn:hover {
-    opacity: 0.6;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links,
-    .nav-right {
-        display: none;
-    }
-}
 
 @media (max-width: 900px) {
     .hero {
@@ -214,16 +34,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .navbar {
-        padding: 15px 25px;
-        align-items: center;
-        gap: 15px;
-    }
 
-    .nav-right {
-        display: flex;
-        justify-content: flex-start;
-    }
 
     .hero {
         padding: 120px 20px 140px 20px;
@@ -265,18 +76,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        padding: 10px 15px;
-    }
 
-    .logo {
-        font-size: 16px;
-    }
-
-    .nav-btn {
-        font-size: 10px;
-        padding: 5px 10px;
-    }
 
     .hero h1 {
         font-size: 28px;
@@ -405,7 +205,6 @@ body {
 }
 
 .hero h1 {
-    font-family: var(--font-display);
     font-size: 60px;
     font-weight: 400;
     line-height: 1.1;

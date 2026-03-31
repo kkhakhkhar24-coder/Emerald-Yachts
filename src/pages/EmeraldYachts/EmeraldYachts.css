@@ -1,121 +1,7 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 
 /* ================= NAVBAR ================= */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(6px);
-}
-
-.nav_inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 18px 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* LOGO */
-.logo {
-  color: white;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-/* LINKS */
-.nav_links {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-.nav_links a {
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-   position: relative;
-}
-
-
-/* underline animation */
-.nav_links a::after {
-  content: "";
-  width: 0;
-  height: 1px;
-  background: white;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  transition: 0.3s;
-}
-
-.nav_links a:hover::after {
-  width: 100%;
-}
-
-/* CONTACT BTN */
-.contact_btn {
-  padding: 8px 14px;
-  border: 1px solid white;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-}
-
-/* HAMBURGER */
-.hamburger {
-  display: none;
-  font-size: 22px;
-  color: white;
-  cursor: pointer;
-}
-
-/* ================= OFFCANVAS ================= */
-.offcanvas {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 260px;
-  height: 100%;
-  background: #111;
-  padding: 20px;
-  transition: 0.3s;
-  z-index: 2000;
-}
-
-.offcanvas.active {
-  right: 0;
-}
-
-.offcanvas a {
-  display: block;
-  color: white;
-  margin: 15px 0;
-  text-decoration: none;
-}
-
-.close_btn {
-  font-size: 26px;
-  color: white;
-  cursor: pointer;
-  text-align: right;
-}
 
 /* ================= HERO ================= */
 .hero_section {
@@ -154,19 +40,12 @@ body {
 
 /* H1 */
 .hero_content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 60px;
-  line-height: 1.15;
   margin-bottom: 20px;
 }
 
 /* P */
 .hero_content p {
-  font-size: 1.125rem;
-  line-height: 1.6;
   margin-bottom: 12px;
-  color: #ffffffcc;
-  
 }
 
 /* ================= READ MORE ================= */
@@ -225,15 +104,7 @@ body {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 1100px) {
-  .nav_links {
-    display: none;
-  }
 
-  .hamburger {
-    display: block;
-  }
-}
 
 @media (max-width: 1024px) {
   .hero_content h1 {
@@ -277,11 +148,6 @@ body {
 
 /* H2 */
 .about_section .about_inner h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  font-weight: 500;
-  color: #2f4a6d;
-  line-height: 1.1;
   margin-bottom: 20px;
   position: relative;
 }

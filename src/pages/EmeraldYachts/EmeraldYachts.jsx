@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../../components/Navbar/Navbar";
 import "./EmeraldYachts.css"
 
 const LuxuryPage = () => {
 
-  const [menuOpen, setMenuOpen] = useState(false);
   const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
 
@@ -19,60 +19,14 @@ const LuxuryPage = () => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 4000);
     return () => clearInterval(slider);
-  }, []);
+  }, [images.length]);
 
 
    
 
   return (
     <>
-       {/* ================= NAVBAR ================= */}
-       <nav className="navbar">
-        <div className="nav_inner">
-          <div className="logo">TRIPS & SHIPS</div>
-
-          <div className="nav_links">
-            <a href="#">HOME</a>
-            <a href="#">EXPERIENCES</a>
-            <a href="#">MEETINGS & INCENTIVES</a>
-            <a href="#">ALUMNI TRAVEL</a>
-            <a href="#">VIP HOTELS</a>
-            <a href="#">ABOUT & RESOURCES</a>
-            <a href="#">BLOG</a>
-            <button className="contact_btn">CONTACT</button>
-          </div>
-
-          <div className="hamburger" onClick={() => setMenuOpen(true)}>☰</div>
-        </div>
-      </nav>
-
-      {/* ================= OFFCANVAS ================= */}
-
-{/* OVERLAY */}
-{menuOpen && (
-  <div 
-    className="offcanvas_overlay" 
-    onClick={() => setMenuOpen(false)}
-  ></div>
-)}
-
-<div className={`offcanvas ${menuOpen ? "active" : ""}`}>
-
-  {/* CLOSE BUTTON */}
-  <div className="close_btn" onClick={() => setMenuOpen(false)}>
-    ×
-  </div>
-
-  <a href="#" onClick={() => setMenuOpen(false)}>HOME</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>EXPERIENCES</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>MEETINGS & INCENTIVES</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>ALUMNI TRAVEL</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>VIP HOTELS</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>ABOUT & RESOURCES</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>BLOG</a>
-  <a href="#" onClick={() => setMenuOpen(false)}>CONTACT</a>
-
-</div>
+      <Navbar />
 
       {/* HERO */}
       <section className="hero_section">

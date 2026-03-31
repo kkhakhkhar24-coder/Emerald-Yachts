@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import Navbar from "../../components/Navbar/Navbar"
 import '../../pages/DrakePassagePage/DrakePassagePage.css'
 
 const faqData = [
@@ -80,55 +81,13 @@ const styles = `
 `;
 
 export default function DrakePassagePage() {
-    const [scrolled, setScrolled] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 50);
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
 
     return (
         <>
             <style>{styles}</style>
 
-            {/* ===== NAVBAR — exact copy ===== */}
-            <nav className="navbar">
-                <div className="logo">TRIPS & SHIPS</div>
-
-                <div className="nav-links">
-                    <a href="#">HOME</a>
-                    <a href="#">EXPERIENCES</a>
-                    <a href="#">MEETINGS & INCENTIVES</a>
-                    <a href="#">ALUMNI TRAVEL</a>
-                    <a href="#">VIP HOTELS</a>
-                    <a href="#">ABOUT & RESOURCES</a>
-                    <a href="#">BLOG</a>
-                </div>
-
-                <div className="nav-right">
-                    <button className="nav-btn">CONTACT</button>
-                </div>
-
-                <div className="hamburger" onClick={() => setMenuOpen(true)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
-                    <div className="close-btn" onClick={() => setMenuOpen(false)}>×</div>
-                    <a href="#">HOME</a>
-                    <a href="#">EXPERIENCES</a>
-                    <a href="#">MEETINGS & INCENTIVES</a>
-                    <a href="#">ALUMNI TRAVEL</a>
-                    <a href="#">VIP HOTELS</a>
-                    <a href="#">ABOUT & RESOURCES</a>
-                    <a href="#">BLOG</a>
-                    <button className="nav-btn">CONTACT</button>
-                </div>
-            </nav>
+            <Navbar />
 
             {/* HERO */}
             <section className="hero">
