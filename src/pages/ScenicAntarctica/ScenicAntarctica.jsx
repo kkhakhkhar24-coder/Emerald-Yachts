@@ -286,32 +286,36 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 8 ================= */}
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+<section className="Scenic_pricing_investment_section">
+  <div className="Scenic_pricing_investment_inner">
 
     <h2>Pricing and Investment Strategy</h2>
 
-    <p>
-      Antarctica is a limited-access destination with strict capacity controls. Scenic operates within the ultra-luxury segment.
+    <p className="Scenic_pricing_lead">
+      Antarctica is a limited-access destination with strict capacity controls. Scenic operates within the ultra-luxury segment. Expeditions represent a significant travel investment. The value is driven by:
     </p>
 
-    <p>
-      Expeditions represent a significant travel investment. The value is driven by:
-    </p>
+    <div className="Scenic_investment_factors">
+      <div className="Scenic_factor_card">
+        <i className="fas fa-map-marked-alt"></i>
+        <h4>Restricted Access</h4>
+      </div>
+      <div className="Scenic_factor_card">
+        <i className="fas fa-ship"></i>
+        <h4>Limited Capacity</h4>
+      </div>
+      <div className="Scenic_factor_card">
+        <i className="fas fa-shield-alt"></i>
+        <h4>Safety Standards</h4>
+      </div>
+      <div className="Scenic_factor_card">
+        <i className="fas fa-glass-cheers"></i>
+        <h4>All-Inclusive</h4>
+      </div>
+    </div>
 
-    <p>
-      • Restricted access to the region <br/>
-      • Limited ship capacity <br/>
-      • Expedition execution and safety standards <br/>
-      • All-inclusive structure
-    </p>
-
-    <p>
-      Pricing varies based on suite category, itinerary length, timing, and availability.
-    </p>
-
-    <p>
-      Strategic planning allows clients to secure the right experience well in advance.
+    <p className="Scenic_pricing_footer">
+      Pricing varies based on suite category, itinerary length, timing, and availability. Strategic planning allows clients to secure the right experience well in advance.
     </p>
 
   </div>
@@ -411,17 +415,24 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 12 ================= */}
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+<section className="Scenic_curator_section">
+  <div className="Scenic_curator_inner">
 
-    <h2>Planned and Curated by Angela Hughes</h2>
+    <div className="Scenic_curator_content">
+      <h2>Planned and Curated by Angela Hughes</h2>
+      <p className="Scenic_curator_subtitle">CEO, Trips & Ships Luxury Travel</p>
+      
+      <ul className="Scenic_curator_credentials">
+        <li><i className="fas fa-award"></i> 40+ years in the travel industry</li>
+        <li><i className="fas fa-globe-americas"></i> Traveled to 121 countries and territories</li>
+        <li><i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)</li>
+        <li><i className="fas fa-crown"></i> Named among the Most Influential Women in Travel (2026)</li>
+      </ul>
 
-    <p>CEO, Trips & Ships Luxury Travel</p>
-    <p>40+ years in the travel industry</p>
-    <p>Traveled to 121 countries and territories</p>
-    <p>Luxury Travel Influencer of the Year (2024)</p>
-    <p>Named among the Most Influential Women in Travel (2026)</p>
-    <p>Featured in Travel Weekly, TravelPulse, and other publications</p>
+      <p className="Scenic_curator_featured">
+        Featured in <strong>Travel Weekly</strong>, <strong>TravelPulse</strong>, and other leading industry publications.
+      </p>
+    </div>
 
   </div>
 </section>
