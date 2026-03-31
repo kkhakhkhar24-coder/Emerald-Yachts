@@ -300,45 +300,24 @@ const LuxuryPage = () => {
   </div>
 </section>
 
-<section className="expert_section">
-  <div className="expert_inner">
+<section className="Scenic_team_section">
+  <div className="Scenic_team_inner">
 
-    <h2>
-      How an Expert Chooses the Right Emerald Yacht Sailing
-    </h2>
+    <h2>When to Travel to Antarctica</h2>
 
     <p>
-      <span className="highlight_blue">Key considerations include:</span>
+      The Antarctica season runs from November through March.
     </p>
 
-    <div className="expert_cards">
+    <p className="Scenic_team_points">
+      • Early season: pristine ice and untouched landscapes <br />
+      • Mid-season: peak wildlife activity <br />
+      • Late season: whale activity and changing light
+    </p>
 
-      <div className="expert_card">
-        <div className="icon_box"><i className="fas fa-route"></i></div>
-        <p>Itinerary structure</p>
-      </div>
-
-      <div className="expert_card">
-        <div className="icon_box"><i className="fas fa-sun"></i></div>
-        <p>Seasonality</p>
-      </div>
-
-      <div className="expert_card">
-        <div className="icon_box"><i className="fas fa-clock"></i></div>
-        <p>Time in port versus sea</p>
-      </div>
-
-      <div className="expert_card">
-        <div className="icon_box"><i className="fas fa-ship"></i></div>
-        <p>Ship atmosphere</p>
-      </div>
-
-      <div className="expert_card">
-        <div className="icon_box"><i className="fas fa-plane"></i></div>
-        <p>Travel logistics</p>
-      </div>
-
-    </div>
+    <p>
+      The best timing depends on the traveler’s priorities.
+    </p>
 
   </div>
 </section>
