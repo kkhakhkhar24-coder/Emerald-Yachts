@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import Navbar from "../../components/Navbar/Navbar"
 import '../../pages/DrakePassagePage/DrakePassagePage.css'
+import ProfilePicture from '../../assets/image.jpg'
 import { Anchor, Ship, Compass, ChevronDown, Sparkles, Check, AlertCircle } from 'lucide-react'
 
 const faqData = [
@@ -110,10 +111,10 @@ export default function DrakePassagePage() {
 
             <Navbar />
 
-            {/* HERO */}
-            <section className="hero">
-                <div className="hero-content">
-                    <span className="hero-eyebrow">Antarctica Expedition Planning</span>
+            {/* ===== HERO SECTION — Main hero with animated background, eyebrow title, heading, description, and call-to-action buttons ===== */}
+            <section className="drake-hero">
+                <div className="drake-hero-content">
+                    <span className="drake-hero-eyebrow">Antarctica Expedition Planning</span>
                     <h1>The Drake Passage</h1>
                     <p className="drake-hero-sub">What to expect when crossing to Antarctica</p>
 
@@ -691,7 +692,9 @@ export default function DrakePassagePage() {
                     <div className="drake-author-profile">
 
                         {/* Avatar with Initials */}
-                        <div className="drake-author-avatar">AH</div>
+                        <div className="drake-author-avatar">
+                            <img src={ProfilePicture} alt="" />
+                        </div>
 
                         <div className="drake-author-info">
                             <span className="drake-author-eyebrow">Planned and Curated by</span>
