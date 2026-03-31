@@ -1793,3 +1793,130 @@
     font-size: 24px;
   }
 }
+
+/* =========================================================
+   SECTION 5 — WHERE MOST CLIENTS FALL (SIDE BY SIDE OVERRIDE)
+========================================================= */
+.anta_clients_section {
+  background: white;
+  padding: 80px 20px;
+}
+
+.anta_clients_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.anta_clients_content {
+  text-align: left;
+}
+
+.anta_clients_content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #2f4a6d;
+  margin-bottom: 24px;
+}
+
+.anta_clients_content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #274472cc;
+  margin-bottom: 20px;
+}
+
+.anta_clients_highlight {
+  font-style: italic;
+  color: #2f4a6d !important;
+  font-weight: 500;
+  border-left: 4px solid #c5a059;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.anta_clients_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .anta_clients_inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .anta_clients_content h2 {
+    font-size: 32px;
+  }
+  .anta_clients_content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .anta_clients_inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .anta_clients_content {
+    order: 2;
+    text-align: center;
+  }
+  .anta_clients_image {
+    order: 1;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .anta_clients_content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .anta_clients_content p {
+    text-align: center;
+  }
+  .anta_clients_highlight {
+    border-left: none;
+    border-top: 4px solid #c5a059;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+}
+
+/* =========================================================
+   BREADCRUMBS
+========================================================= */
+/* .page_breadcrumb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page_breadcrumb a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.page_breadcrumb a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.page_breadcrumb span {
+  color: rgba(255, 255, 255, 0.9);
+} */

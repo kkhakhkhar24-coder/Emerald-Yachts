@@ -1,10 +1,6 @@
 
-
-/* ================= NAVBAR ================= */
-
-
 /* ================= HERO ================= */
-.hero_section {
+.Emerald_hero_section {
   position: relative;
   min-height: 100vh;  /* ✅ FIXED */
   display: flex;
@@ -14,7 +10,7 @@
 }
 
 /* BG */
-.hero_bg {
+.Emerald_hero_bg {
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -23,14 +19,14 @@
 }
 
 /* OVERLAY */
-.hero_overlay {
+.Emerald_hero_overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
 }
 
 /* CONTENT */
-.hero_content {
+.Emerald_hero_content {
   position: relative;
   z-index: 2;
   max-width: 850px;   /* ✅ FIXED */
@@ -39,23 +35,23 @@
 }
 
 /* H1 */
-.hero_content h1 {
+.Emerald_hero_content h1 {
   margin-bottom: 20px;
 }
 
 /* P */
-.hero_content p {
+.Emerald_hero_content p {
   margin-bottom: 12px;
 }
 
 /* ================= READ MORE ================= */
-.readmore_wrapper {
+.Emerald_readmore_wrapper {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-.readmore_btn {
+.Emerald_readmore_btn {
   background: transparent;
   border: none;
   color: white;
@@ -65,7 +61,7 @@
 }
 
 /* underline hover */
-.readmore_btn::after {
+.Emerald_readmore_btn::after {
   content: "";
   width: 0;
   height: 1px;
@@ -76,12 +72,12 @@
   transition: 0.3s;
 }
 
-.readmore_btn:hover::after {
+.Emerald_readmore_btn:hover::after {
   width: 100%;
 }
 
 /* BUTTONS */
-.hero_buttons {
+.Emerald_hero_buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -89,14 +85,14 @@
   margin-top: 20px;
 }
 
-.primary_btn {
+.Emerald_primary_btn {
   padding: 14px 26px;
   background: white;
   color: black;
   border: none;
 }
 
-.secondary_btn {
+.Emerald_secondary_btn {
   padding: 14px 26px;
   background: transparent;
   color: white;
@@ -107,53 +103,53 @@
 
 
 @media (max-width: 1024px) {
-  .hero_content h1 {
+  .Emerald_hero_content h1 {
     font-size: 42px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero_section {
+  .Emerald_hero_section {
     padding: 110px 15px 50px;
   }
 
-  .hero_content h1 {
+  .Emerald_hero_content h1 {
     font-size: 32px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero_content h1 {
+  .Emerald_hero_content h1 {
     font-size: 26px;
   }
 
-  .primary_btn,
-  .secondary_btn {
+  .Emerald_primary_btn,
+  .Emerald_secondary_btn {
     width: 100%;
   }
 }
 
 /* ================= ABOUT SECTION ================= */
-.about_section {
+.Emerald_about_section {
   background: #eef2f5;
   padding: 60px 20px;   /* 👈 inner spacing like your 2nd image */
   text-align: center;
 }
 
 /* INNER CONTENT */
-.about_section .about_inner {
+.Emerald_about_section .Emerald_about_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.about_section .about_inner h2 {
+.Emerald_about_section .Emerald_about_inner h2 {
   margin-bottom: 20px;
   position: relative;
 }
 
 /* UNDERLINE (like your screenshot) */
-.about_section .about_inner h2::after {
+.Emerald_about_section .Emerald_about_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -163,7 +159,7 @@
 }
 
 /* PARAGRAPH */
-.about_section .about_inner p {
+.Emerald_about_section .Emerald_about_inner p {
   font-size: 1.125rem;
   line-height: 1.7;
   font-weight: 300;
@@ -172,23 +168,23 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .about_section .about_inner h2 {
+  .Emerald_about_section .Emerald_about_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .about_section {
+  .Emerald_about_section {
     padding: 50px 15px;
   }
 
-  .about_section .about_inner h2 {
+  .Emerald_about_section .Emerald_about_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .about_section .about_inner h2 {
+  .Emerald_about_section .Emerald_about_inner h2 {
     font-size: 24px;
   }
 }
@@ -196,19 +192,19 @@
 
 /* ================= EXPERIENCE SECTION ================= */
 /* ================= EXPERIENCE SECTION ================= */
-.experience_section {
+.Emerald_experience_section {
   background: #f7f9fb;
   padding: 60px 20px;   /* ❗ SAME spacing */
 }
 
 /* INNER */
-.experience_section .experience_inner {
+.Emerald_experience_section .Emerald_experience_inner {
   max-width: 1100px;   /* 🔥 thoda wide for layout */
   margin: 0 auto;
 }
 
 /* GRID */
-.experience_grid {
+.Emerald_experience_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -216,12 +212,12 @@
 }
 
 /* TEXT SIDE */
-.experience_text {
+.Emerald_experience_text {
   text-align: left;
 }
 
 /* H2 */
-.experience_text h2 {
+.Emerald_experience_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -231,7 +227,7 @@
   position: relative;
 }
 
-.experience_text h2::after {
+.Emerald_experience_text h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -242,14 +238,14 @@
 }
 
 /* P */
-.experience_text p {
+.Emerald_experience_text p {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #274472cc;
 }
 
 /* IMAGE */
-.experience_image img {
+.Emerald_experience_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -258,56 +254,56 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .experience_text h2 {
+  .Emerald_experience_text h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .experience_section {
+  .Emerald_experience_section {
     padding: 50px 15px;   /* ❗ SAME system */
   }
 
-  .experience_grid {
+  .Emerald_experience_grid {
     grid-template-columns: 1fr;   /* stack */
     gap: 25px;
   }
 
-  .experience_text {
+  .Emerald_experience_text {
     text-align: center;
   }
 
-  .experience_text h2 {
+  .Emerald_experience_text h2 {
     font-size: 28px;
   }
 
-  .experience_text h2::after {
+  .Emerald_experience_text h2::after {
     margin: 12px auto 0;
   }
 }
 
 @media (max-width: 480px) {
-  .experience_text h2 {
+  .Emerald_experience_text h2 {
     font-size: 24px;
   }
 }
 
 
 /* ================= PLANNING SECTION ================= */
-.planning_section {
+.Emerald_planning_section {
   background: #ffffff;          /* clean white for contrast */
   padding: 60px 20px;          /* SAME spacing as others */
   text-align: center;
 }
 
 /* INNER */
-.planning_section .planning_inner {
+.Emerald_planning_section .Emerald_planning_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.planning_section .planning_inner h2 {
+.Emerald_planning_section .Emerald_planning_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -318,7 +314,7 @@
 }
 
 /* UNDERLINE (slightly styled) */
-.planning_section .planning_inner h2::after {
+.Emerald_planning_section .Emerald_planning_inner h2::after {
   content: "";
   width: 70px;
   height: 2px;
@@ -328,7 +324,7 @@
 }
 
 /* P */
-.planning_section .planning_inner p {
+.Emerald_planning_section .Emerald_planning_inner p {
   font-size: 1.125rem;
   line-height: 1.7;
   font-weight: 300;
@@ -337,33 +333,33 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .planning_section .planning_inner h2 {
+  .Emerald_planning_section .Emerald_planning_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .planning_section {
+  .Emerald_planning_section {
     padding: 50px 15px;   /* SAME responsive spacing */
   }
 
-  .planning_section .planning_inner h2 {
+  .Emerald_planning_section .Emerald_planning_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .planning_section .planning_inner h2 {
+  .Emerald_planning_section .Emerald_planning_inner h2 {
     font-size: 24px;
   }
 
-  .planning_section .planning_inner p {
+  .Emerald_planning_section .Emerald_planning_inner p {
     font-size: 1rem;
   }
 }
 
 /* ================= INSIGHT SECTION ================= */
-.insight_section {
+.Emerald_insight_section {
   position: relative;
   padding: 60px 20px;
   text-align: center;
@@ -376,7 +372,7 @@
 
 
 /* ================= HIGHLIGHT TEXT ================= */
-.insight_section .insight_inner .highlight_text {
+.Emerald_insight_section .Emerald_insight_inner .Emerald_highlight_text {
   color: #274472;       /* 👈 dark blue */
   font-weight: 500;
   background: rgba(255,255,255,0.9);  /* 👈 light bg so blue visible */
@@ -386,7 +382,7 @@
 }
 
 /* OVERLAY */
-.insight_section::before {
+.Emerald_insight_section::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -394,7 +390,7 @@
 }
 
 /* INNER */
-.insight_section .insight_inner {
+.Emerald_insight_section .Emerald_insight_inner {
   position: relative;
   z-index: 2;
   max-width: 800px;
@@ -402,16 +398,17 @@
 }
 
 /* H2 */
-.insight_section .insight_inner h2 {
+.Emerald_insight_section .Emerald_insight_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 20px;
+  color: white;
 }
 
 /* UNDERLINE */
-.insight_section .insight_inner h2::after {
+.Emerald_insight_section .Emerald_insight_inner h2::after {
   content: "";
   width: 70px;
   height: 2px;
@@ -421,7 +418,7 @@
 }
 
 /* PARAGRAPHS */
-.insight_section .insight_inner p {
+.Emerald_insight_section .Emerald_insight_inner p {
   font-size: 1.125rem;
   line-height: 1.7;
   font-weight: 300;
@@ -430,53 +427,53 @@
 }
 
 /* FIRST LINE (NAME LINE) */
-.insight_section .insight_inner p:first-of-type {
+.Emerald_insight_section .Emerald_insight_inner p:first-of-type {
   font-weight: 500;
   color: #ffffff;
 }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .insight_section .insight_inner h2 {
+  .Emerald_insight_section .Emerald_insight_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .insight_section {
+  .Emerald_insight_section {
     padding: 50px 15px;
   }
 
-  .insight_section .insight_inner h2 {
+  .Emerald_insight_section .Emerald_insight_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .insight_section .insight_inner h2 {
+  .Emerald_insight_section .Emerald_insight_inner h2 {
     font-size: 24px;
   }
 
-  .insight_section .insight_inner p {
+  .Emerald_insight_section .Emerald_insight_inner p {
     font-size: 1rem;
   }
 }
 
 /* ================= TEAM SECTION ================= */
-.team_section {
+.Emerald_team_section {
   background: #eef2f5;
   padding: 60px 20px;   /* SAME spacing */
   text-align: center;
 }
 
 /* INNER */
-.team_section .team_inner {
+.Emerald_team_section .Emerald_team_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.team_section h2 {
+.Emerald_team_section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -486,7 +483,7 @@
 }
 
 /* UNDERLINE */
-.team_section h2::after {
+.Emerald_team_section h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -496,7 +493,7 @@
 }
 
 /* PARAGRAPH */
-.team_section p {
+.Emerald_team_section p {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #274472cc;
@@ -504,7 +501,7 @@
 }
 
 /* POINTS (premium look) */
-.team_section .team_points {
+.Emerald_team_section .Emerald_team_points {
   background: white;
   padding: 20px;
   border-radius: 6px;
@@ -518,49 +515,49 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .team_section h2 {
+  .Emerald_team_section h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .team_section {
+  .Emerald_team_section {
     padding: 50px 15px;
   }
 
-  .team_section h2 {
+  .Emerald_team_section h2 {
     font-size: 28px;
   }
 
-  .team_section .team_points {
+  .Emerald_team_section .Emerald_team_points {
     padding: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .team_section h2 {
+  .Emerald_team_section h2 {
     font-size: 24px;
   }
 
-  .team_section p {
+  .Emerald_team_section p {
     font-size: 1rem;
   }
 }
 /* ================= RECOGNITION SECTION ================= */
-.recognition_section {
+.Emerald_recognition_section {
   background: #f7f9fb;
   padding: 60px 20px;   /* ✅ SAME spacing */
   text-align: center;
 }
 
 /* INNER */
-.recognition_inner {
+.Emerald_recognition_inner {
   max-width: 800px;   /* ✅ SAME width */
   margin: 0 auto;
 }
 
 /* H2 */
-.recognition_inner h2 {
+.Emerald_recognition_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -569,7 +566,7 @@
 }
 
 /* UNDERLINE */
-.recognition_inner h2::after {
+.Emerald_recognition_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -579,7 +576,7 @@
 }
 
 /* TEXT */
-.recognition_inner p {
+.Emerald_recognition_inner p {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #274472cc;
@@ -587,7 +584,7 @@
 }
 
 /* LIST */
-.recognition_list {
+.Emerald_recognition_list {
   text-align: left;
   display: inline-block;
   margin: 20px 0;
@@ -597,46 +594,46 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .recognition_inner h2 {
+  .Emerald_recognition_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .recognition_section {
+  .Emerald_recognition_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .recognition_inner h2 {
+  .Emerald_recognition_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .recognition_inner h2 {
+  .Emerald_recognition_inner h2 {
     font-size: 24px;
   }
 
-  .recognition_inner p {
+  .Emerald_recognition_inner p {
     font-size: 1rem;
   }
 }
 /* ================= IDEAL SECTION ================= */
-.ideal_section {
+.Emerald_ideal_section {
   position: relative;
   padding: 60px 20px;   /* ✅ SAME section spacing */
   background: white;
 }
 
 /* INNER */
-.ideal_inner {
+.Emerald_ideal_inner {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 /* H2 */
-.ideal_inner h2 {
+.Emerald_ideal_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -644,7 +641,7 @@
   margin-bottom: 20px;
 }
 
-.ideal_inner h2::after {
+.Emerald_ideal_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -654,7 +651,7 @@
 }
 
 /* TEXT */
-.ideal_inner p {
+.Emerald_ideal_inner p {
   font-size: 1.125rem;
   line-height: 1.6;     /* 👈 slightly tighter */
   color: #274472cc;
@@ -662,7 +659,7 @@
 }
 
 /* LIST */
-.ideal_list {
+.Emerald_ideal_list {
   text-align: left;
   display: inline-block;
   margin: 10px 0 16px;   /* 👈 controlled spacing */
@@ -675,53 +672,53 @@
 }
 
 /* HIGHLIGHT */
-.highlight_blue {
+.Emerald_highlight_blue {
   color: #2f4a6d;
   font-weight: 500;
 }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .ideal_inner h2 {
+  .Emerald_ideal_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .ideal_section {
+  .Emerald_ideal_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .ideal_inner h2 {
+  .Emerald_ideal_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .ideal_inner h2 {
+  .Emerald_ideal_inner h2 {
     font-size: 24px;
   }
 
-  .ideal_inner p {
+  .Emerald_ideal_inner p {
     font-size: 1rem;
   }
 }
 
 /* ================= ABOUT YACHTS SECTION ================= */
-.about_yachts_section {
+.Emerald_about_yachts_section {
   background: #eef2f5;   /* 👈 soft contrast */
   padding: 60px 20px;   /* ✅ SAME section spacing */
   text-align: center;
 }
 
 /* INNER */
-.about_yachts_inner {
+.Emerald_about_yachts_inner {
   max-width: 800px;   /* ✅ SAME width */
   margin: 0 auto;
 }
 
 /* H2 */
-.about_yachts_inner h2 {
+.Emerald_about_yachts_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -730,7 +727,7 @@
 }
 
 /* UNDERLINE */
-.about_yachts_inner h2::after {
+.Emerald_about_yachts_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -740,7 +737,7 @@
 }
 
 /* TEXT */
-.about_yachts_inner p {
+.Emerald_about_yachts_inner p {
   font-size: 1.125rem;
   line-height: 1.6;   /* 👈 consistent with previous fix */
   color: #274472cc;
@@ -749,45 +746,45 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .about_yachts_inner h2 {
+  .Emerald_about_yachts_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .about_yachts_section {
+  .Emerald_about_yachts_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .about_yachts_inner h2 {
+  .Emerald_about_yachts_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .about_yachts_inner h2 {
+  .Emerald_about_yachts_inner h2 {
     font-size: 24px;
   }
 
-  .about_yachts_inner p {
+  .Emerald_about_yachts_inner p {
     font-size: 1rem;
   }
 }
 /* ================= EXPERT SECTION ================= */
-.expert_section {
+.Emerald_expert_section {
   background: #ffffff;
   padding: 60px 20px;   /* ✅ SAME spacing */
   text-align: center;
 }
 
 /* INNER */
-.expert_inner {
+.Emerald_expert_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.expert_inner h2 {
+.Emerald_expert_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -795,7 +792,7 @@
   margin-bottom: 20px;
 }
 
-.expert_inner h2::after {
+.Emerald_expert_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -805,7 +802,7 @@
 }
 
 /* TEXT */
-.expert_inner p {
+.Emerald_expert_inner p {
   font-size: 1.125rem;
   line-height: 1.6;
   color: #274472cc;
@@ -813,13 +810,13 @@
 }
 
 /* HIGHLIGHT */
-.highlight_blue {
+.Emerald_highlight_blue {
   color: #2f4a6d;
   font-weight: 500;
 }
 
 /* ================= CARDS ================= */
-.expert_cards {
+.Emerald_expert_cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
@@ -827,7 +824,7 @@
 }
 
 /* CARD */
-.expert_card {
+.Emerald_expert_card {
   background: #ffffff;
   padding: 18px;
   border-radius: 10px;
@@ -843,7 +840,7 @@
 }
 
 /* ICON BOX 🔥 */
-.icon_box {
+.Emerald_icon_box {
   width: 42px;
   height: 42px;
   background: #eef2f5;
@@ -855,13 +852,13 @@
 }
 
 /* ICON */
-.icon_box i {
+.Emerald_icon_box i {
   font-size: 16px;
   color: #2f4a6d;
 }
 
 /* TEXT */
-.expert_card p {
+.Emerald_expert_card p {
   margin: 0;
   font-size: 1rem;
   color: #2f4a6d;
@@ -869,7 +866,7 @@
 }
 
 /* HOVER EFFECT 🔥 */
-.expert_card:hover {
+.Emerald_expert_card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   border-color: #d6dee6;
@@ -877,50 +874,50 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .expert_inner h2 {
+  .Emerald_expert_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .expert_section {
+  .Emerald_expert_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .expert_inner h2 {
+  .Emerald_expert_inner h2 {
     font-size: 28px;
   }
 
-  .expert_cards {
+  .Emerald_expert_cards {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .expert_inner h2 {
+  .Emerald_expert_inner h2 {
     font-size: 24px;
   }
 
-  .expert_inner p {
+  .Emerald_expert_inner p {
     font-size: 1rem;
   }
 }
 
 /* ================= METHOD SECTION ================= */
-.method_section {
+.Emerald_method_section {
   background: #eef2f5;
   padding: 60px 20px;   /* ✅ SAME spacing */
   text-align: center;
 }
 
 /* INNER */
-.method_inner {
+.Emerald_method_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.method_inner h2 {
+.Emerald_method_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -928,7 +925,7 @@
   margin-bottom: 25px;
 }
 
-.method_inner h2::after {
+.Emerald_method_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -938,7 +935,7 @@
 }
 
 /* ================= STEPS ================= */
-.method_steps {
+.Emerald_method_steps {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -946,7 +943,7 @@
 }
 
 /* STEP ITEM */
-.method_step {
+.Emerald_method_step {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -959,7 +956,7 @@
 }
 
 /* NUMBER */
-.step_number {
+.Emerald_step_number {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   color: #2f4a6d;
@@ -968,7 +965,7 @@
 }
 
 /* TEXT */
-.method_step p {
+.Emerald_method_step p {
   margin: 0;
   font-size: 1.05rem;
   color: #2f4a6d;
@@ -977,46 +974,46 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .method_inner h2 {
+  .Emerald_method_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .method_section {
+  .Emerald_method_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .method_inner h2 {
+  .Emerald_method_inner h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .method_inner h2 {
+  .Emerald_method_inner h2 {
     font-size: 24px;
   }
 
-  .method_step p {
+  .Emerald_method_step p {
     font-size: 1rem;
   }
 }
 
 /* ================= COST SECTION ================= */
-.cost_section {
+.Emerald_cost_section {
   background: #ffffff;
   padding: 60px 20px;   /* ✅ SAME spacing */
   text-align: center;
 }
 
 /* INNER */
-.cost_inner {
+.Emerald_cost_inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* H2 */
-.cost_inner h2 {
+.Emerald_cost_inner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 500;
@@ -1024,7 +1021,7 @@
   margin-bottom: 25px;
 }
 
-.cost_inner h2::after {
+.Emerald_cost_inner h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -1034,7 +1031,7 @@
 }
 
 /* ================= COST LIST ================= */
-.cost_list {
+.Emerald_cost_list {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -1042,7 +1039,7 @@
 }
 
 /* ITEM */
-.cost_item {
+.Emerald_cost_item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1055,7 +1052,7 @@
 }
 
 /* TEXT */
-.cost_item p {
+.Emerald_cost_item p {
   margin: 0;
   font-size: 1.05rem;
   color: #2f4a6d;
@@ -1063,7 +1060,7 @@
 }
 
 /* PRICE */
-.cost_item span {
+.Emerald_cost_item span {
   font-size: 1.05rem;
   font-weight: 500;
   color: #2f4a6d;
@@ -1072,39 +1069,39 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .cost_inner h2 {
+  .Emerald_cost_inner h2 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .cost_section {
+  .Emerald_cost_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
 
-  .cost_inner h2 {
+  .Emerald_cost_inner h2 {
     font-size: 28px;
   }
 
   /* stack text + price */
-  .cost_item {
+  .Emerald_cost_item {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
 
-  .cost_item span {
+  .Emerald_cost_item span {
     text-align: left;
   }
 }
 
 @media (max-width: 480px) {
-  .cost_inner h2 {
+  .Emerald_cost_inner h2 {
     font-size: 24px;
   }
 
-  .cost_item p,
-  .cost_item span {
+  .Emerald_cost_item p,
+  .Emerald_cost_item span {
     font-size: 1rem;
   }
 }

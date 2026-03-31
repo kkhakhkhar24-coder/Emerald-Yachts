@@ -23,6 +23,7 @@
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 28px;
 }
 
@@ -128,6 +129,123 @@
 
 .close-btn:hover {
   opacity: 0.6;
+}
+
+/* ================= DROPDOWN DESKTOP ================= */
+.nav-dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-dropdown-trigger {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-dropdown-wrapper:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-dropdown-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 11px;
+  color: #c5a059;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.nav-dropdown-menu a {
+  color: #2f4a6d !important;
+  font-size: 13px !important;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.nav-dropdown-menu a:hover {
+  opacity: 0.7;
+  color: #1a2a40 !important;
+}
+
+.nav-dropdown-single {
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+}
+
+/* ================= DROPDOWN MOBILE ================= */
+.mobile-dropdown-wrapper {
+  width: 100%;
+}
+
+.mobile-dropdown-trigger {
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-left: 2px solid #eee;
+}
+
+.mobile-dropdown-menu.active {
+  display: flex;
+}
+
+.mobile-dropdown-title {
+  font-size: 12px;
+  color: #c5a059;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.mobile-dropdown-divider {
+  height: 1px;
+  background: #eee;
 }
 
 @media (max-width: 1024px) {

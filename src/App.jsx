@@ -18,9 +18,9 @@ function App() {
           <Route path='/' element={<EmeraldYachts />}></Route>
           <Route path='/DrakePassagePage' element={<DrakePassagePage />}></Route>
           <Route path='/ScenicVSSilversea' element={<ScenicVSSilversea />}></Route>
-          <Route path='/AntarcticaCruise' element={<AntarcticaCruise />}></Route>
-          <Route path='/ScenicAntarctica' element={<ScenicAntarctica />}></Route>
-          <Route path='/LuxuryTravel' element={<LuxuryTravel />}></Route>
+          <Route path='/antarctica-cruise-cost' element={<AntarcticaCruise />}></Route>
+          <Route path='/scenic-antarctica-cruise' element={<ScenicAntarctica />}></Route>
+          <Route path='/luxury-travel' element={<LuxuryTravel />}></Route>
         </Routes>
       </BrowserRouter>
     </>

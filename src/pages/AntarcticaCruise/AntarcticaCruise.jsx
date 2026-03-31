@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
+import myImage from "../../assets/image.jpg";
 
 const AntarcticaCostPage = () => {
   const [current, setCurrent] = useState(0);
@@ -33,6 +35,9 @@ const AntarcticaCostPage = () => {
         <div className="anta_hero_overlay"></div>
 
         <div className="anta_hero_content">
+          {/* <div className="page_breadcrumb">
+            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Antarctica Cruise Cost</span>
+          </div> */}
           <h1>How Much Does an Antarctica Cruise Cost</h1>
 
           <p className="anta_hero_p">Understanding the real investment in Antarctica travel</p>
@@ -242,23 +247,32 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 5 — WHERE MOST CLIENTS FALL ===== */}
       <section className="anta_clients_section">
         <div className="anta_clients_inner">
-          <h2>Where Most Clients Travel</h2>
+          <div className="anta_clients_content">
+            <h2>Where Most Clients Travel</h2>
 
-          <p>
-            Clients planning Antarctica with our team span multiple tiers
-            depending on their priorities.
-          </p>
+            <p>
+              Clients planning Antarctica with our team span multiple tiers
+              depending on their priorities.
+            </p>
 
-          <p>
-            Some prioritize expedition depth and choose brands such as HX or
-            Lindblad. Others prefer a balance of comfort and exploration. Many
-            opt for fully structured luxury experiences with Scenic or Silversea.
-          </p>
+            <p>
+              Some prioritize expedition depth and choose brands such as HX or
+              Lindblad. Others prefer a balance of comfort and exploration. Many
+              opt for fully structured luxury experiences with Scenic or Silversea.
+            </p>
 
-          <p>
-            We do not recommend Antarctica based on brand alone. We recommend
-            it based on how you want to experience it.
-          </p>
+            <p className="anta_clients_highlight">
+              We do not recommend Antarctica based on brand alone. We recommend
+              it based on how you want to experience it.
+            </p>
+          </div>
+          
+          <div className="anta_clients_image">
+            <img 
+              src={myImage}
+              alt="Luxury Antarctica Expedition" 
+            />
+          </div>
         </div>
       </section>
 

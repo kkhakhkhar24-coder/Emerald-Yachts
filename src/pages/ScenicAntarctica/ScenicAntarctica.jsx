@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from 'react';
-import '../ScenicAntarctica/ScenicAntarctica.css'
+import '../ScenicAntarctica/ScenicAntarctica.css';
+import myImage from "../../assets/image.jpg";
+
 
 function ScenicAntarctica() {
 
@@ -11,9 +14,9 @@ function ScenicAntarctica() {
   const [activeFAQ, setActiveFAQ] = useState(null);
 
    const images = [
-    "https://ucd8baf43e60107c95b83766b0a0.previews.dropboxusercontent.com/p/thumb/AC_msA0cLGgYPp2DqDwDizVpCyRXmQ7Mm2OdjQ2NrWIsburThd6At59ksC_Rmlt05zcXYnai0FPGt0EjsiWHpuFR86ltciHLGqk9xyo306zKwuBnwRsD7jjJiBmgDHX3jWobmhakh-V2fFtavSzty82AH8nkFqYQ6WNZNE6B9KtymhT16M7p4wiUfMQB1RCjXxwxfrZUbgXHaCXFSWbdAEAdqaHcMEhny0pnF6wp62iypoL3XrVpINuGZnr955TWf6LWl9a8mpCzk5vqpoUFsmaenH_hB7HnZ8Oa6BSRyY5ny84gjh5w_mOfTa4EeOhPMag3cmJeDnpQlcYpKK5m5o9X6sAy6M2jkelDxYH3_dK3Xw/p.jpeg",
-    "https://ucfda2b7d3c7dca99a880dd2c5ae.previews.dropboxusercontent.com/p/thumb/AC8okR26iTMzrLzHXSr9EP1UOvDhRT0BZNM6zHbGsff5NoHXgplkB9llltzI0sLp59gh7ZZUI8GeewHtnkbEczyfPQvkTHW-vpYOaF0B-0wVDTnxbviTJKnQh3ofuxd7JpAQNxUrsuyctFdNOuD4CEAdxPa7rfI55BGetlGM4VjjLdFMvebN3UisbG1ANoGBdlCV1JhIhtd1Z98ieAUGYbkdFWq7nOSVccRiIsWsHbQqdhnXvkp8HTAbr0N0vPMwOG6fhU70vvCVP4zcv9Bhbk7jnaJC-geynu57-HujyxyJYKGIJ4gyzdU1GTnZx5ui-tRdmmKMwNvKnH7R3SqCurVEL6EP2mLCU4y0KqcXdTQeNwSpIbnaY0Rpq5p93HomwxL2mYqzy5OQUgwcis58UyJ94HXo0HfOTIor_UT5vAVUBA/p.jpeg",
-    "https://uc864bbfa833507e595e834ae8d9.previews.dropboxusercontent.com/p/thumb/AC83JTTHTeYw1MqsDGESou0Dd9_MrwCi7sUyE4AGtXRs6eZxVyotZUscHF21UUv94KRFXVbRWvMa_sRHbSMuSr8Gr5ISnKbbvV-y4vuXX88ewQXgF9hezfjUgk3hh84pbYJJcQ4MbI6uX5HXVDndA5mRbwXdM-dGWiuNqA9lTs6iDA12tLt590ou8_SdBPDHxqq4icxkqsQuH6bVFnRj2EYXdMwi5XQCib-dAwsptj44hfwd1wmdUNUrTi-0GeYXj8FuzZSM4Cr4O7mGoRfGOCzzx8evCZNUiYYN8FV1iUTqqmFEpC4sKzemXY9D0dlgB5oFiADvFOBjBSWI_4gD9PYq8bDNFswxFLxC2jhWGYGU9A/p.jpeg"
+    "https://ucad543950156cf5951892cfcf68.previews.dropboxusercontent.com/p/thumb/AC8Fr-1JzVGbGHMP94K5UNpHrs1RfZrQYcNGlKvhAiMJFrxLMxh-zz0AmSP6oe4JUvhdbquwzdbCg_-X5TVkgGnRVfsoLJ2iQvktRxsGIv_JS2K2zFs69c3oNdyMHVfC9Q1A5CSZBU0QCiWtj-1PSgWMz0WclezVAiDZYOA4itlg63n104wWmpEcJ-6Cpjw0CVWwsl_vZ2P1k-f5Jl2XY3QhJgnY_qfZwvUr7DbJ10eI7xhOdxaAWYP4qHSjehdVvvyoO3-b1Ge-9vPGG6mfjhzQe_WVvjQfTvUKGHa8SnnbR-Zi76BbaS7P3a3BHu2J8vnIGoUvQzBgUWZxLDH3EQjHi6iMi9NH7Mxrj20AF4BgiaWw6J0bzjF3LqrH3-WvQwM3qeGLpjMkOs9bEopt29q_sDyHbPqvtzr8ZN8KdZ9Ovw/p.jpeg",
+    "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC-peetLkZUWPMdZgI2tm962awPr0rC9PUUMaJoC4upBhxSYuuT9hCWOfuES8X0gaeAPSyLxv16bigOl0bHU7CDC6OQKS-z3V_Nt_o9S4VSklsmP_XbeIcmeP9l_ZV2Mf6-P2mw13dg2KCO97btkcfctVPPppiVee9nccZvc0OkGVC2LaQR19C73s4tFxXXNoLJSwvrcbDiHeK1o_Q_zE1q8a_YIAlCmAATM-cM5llN_IVcWmQLi_lCtFCqsCwlYMK1a1BAbxqX06DN_mOAqoiu7yPZVBvj00BMNxdYqksrM8BhzszSC3BjbBBBY1KEsJdmAjRpwkIddxdXn4bcj83qcTdZtH65hkLBEfG-8H3lqCyaRiKU-lQzp7psQ1D-wHsppJs1CELwbVEjgfqECh2KV45th7q3uKWmHUN3yZFNNCA/p.jpeg",
+    "https://ucd7950d9692d1cde772610c7702.previews.dropboxusercontent.com/p/thumb/AC8xZCm0ufGHCmiQCg7ZQku6MhDtJdSURevdPzEY6VaopiossBoX4rfqcwCOBmJFIubwbVEJWWqIfIg01z-qTqXTz9Nq-b8lyKY8bZd6WZhhyQgrly2yuTxj7G2HZ2-XoZyDSn2V5UZFcTSppwdSWGo_aYSJDR4yYUmvIpLS7Q2SNxrkpDRaiMOvBJQ9sSx1wOR4nlIgUmk3MKGsIoJsyYcGfap1it_NShAvAvUkXakE28MS3jUnwn8BQXeaOF7PqX6UNJk99Cq-uLMKmhxAScXFSUd3Ikypkw2-zG67K0smImp14AK3Ne5xbbKkpodxEgKdCVp1zf342te6FIuJCA9UI9fNbswnnNvUsI9OSP82sOaIreidLswdnZULoDmvu-jMDXKQPPtN9K5MxJXKtllkDj8SBl2_9LAQn4oP56Pzmw/p.jpeg"
   ];
 
 
@@ -40,7 +43,9 @@ function ScenicAntarctica() {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-
+          {/* <div className="page_breadcrumb">
+            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Scenic Antarctica Cruises</span>
+          </div> */}
           <h1>Scenic Antarctica Cruises</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
@@ -168,27 +173,27 @@ Between landings, the ship provides a refined onboard environment designed for r
     <div className="Scenic_expert_cards">
 
       <div className="Scenic_expert_card">
-        <div className="Scenic_icon_box"><i className="fas fa-route"></i></div>
+        {/* <div className="Scenic_icon_box"><i className="fas fa-route"></i></div> */}
         <p>Suite accommodations</p>
       </div>
 
       <div className="Scenic_expert_card">
-        <div className="Scenic_icon_box"><i className="fas fa-sun"></i></div>
+        {/* <div className="Scenic_icon_box"><i className="fas fa-sun"></i></div> */}
         <p>Dining across multiple venues</p>
       </div>
 
       <div className="Scenic_expert_card">
-        <div className="icon_box"><i className="fas fa-clock"></i></div>
+        {/* <div className="icon_box"><i className="fas fa-clock"></i></div> */}
         <p>Beverages</p>
       </div>
 
       <div className="Scenic_expert_card">
-        <div className="icon_box"><i className="fas fa-ship"></i></div>
+        {/* <div className="icon_box"><i className="fas fa-ship"></i></div> */}
         <p>Guided expedition landings and zodiac excursions</p>
       </div>
 
       <div className="Scenic_expert_card">
-        <div className="icon_box"><i className="fas fa-plane"></i></div>
+        {/* <div className="icon_box"><i className="fas fa-plane"></i></div> */}
         <p>Onboard lectures and enrichment</p>
       </div>
 
@@ -256,7 +261,7 @@ Between landings, the ship provides a refined onboard environment designed for r
     </div>
 
     <div className="Scenic_right_experience_image">
-      <img src="" alt="Scenic Antarctica Explorer" />
+      <img src={myImage} alt="Scenic Antarctica Explorer" />
     </div>
 
   </div>
@@ -334,21 +339,21 @@ Between landings, the ship provides a refined onboard environment designed for r
     <div className="Scenic_season_cards">
       <div className="Scenic_season_card Scenic_season_card--early">
         <div className="Scenic_season_icon"><i className="fas fa-snowflake"></i></div>
-        <div className="Scenic_season_label">November – Early December</div>
+        {/* <div className="Scenic_season_label">November – Early December</div> */}
         <h4>Early Season</h4>
         <p>Pristine ice, untouched landscapes, and courtship behaviors among penguins.</p>
       </div>
 
       <div className="Scenic_season_card Scenic_season_card--mid">
         <div className="Scenic_season_icon"><i className="fas fa-paw"></i></div>
-        <div className="Scenic_season_label">Late December – January</div>
+        {/* <div className="Scenic_season_label">Late December – January</div> */}
         <h4>Mid Season</h4>
         <p>Peak summer temperatures, hatching penguin chicks, and peak wildlife activity.</p>
       </div>
 
       <div className="Scenic_season_card Scenic_season_card--late">
         <div className="Scenic_season_icon"><i className="fas fa-water"></i></div>
-        <div className="Scenic_season_label">February – March</div>
+        {/* <div className="Scenic_season_label">February – March</div> */}
         <h4>Late Season</h4>
         <p>Incredible whale activity, receding ice opening up new channels, and spectacular sunsets.</p>
       </div>

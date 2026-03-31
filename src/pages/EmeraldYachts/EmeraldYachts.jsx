@@ -8,9 +8,9 @@ const LuxuryPage = () => {
   const [readMore, setReadMore] = useState(false);
 
    const images = [
-    "https://ucd8baf43e60107c95b83766b0a0.previews.dropboxusercontent.com/p/thumb/AC_msA0cLGgYPp2DqDwDizVpCyRXmQ7Mm2OdjQ2NrWIsburThd6At59ksC_Rmlt05zcXYnai0FPGt0EjsiWHpuFR86ltciHLGqk9xyo306zKwuBnwRsD7jjJiBmgDHX3jWobmhakh-V2fFtavSzty82AH8nkFqYQ6WNZNE6B9KtymhT16M7p4wiUfMQB1RCjXxwxfrZUbgXHaCXFSWbdAEAdqaHcMEhny0pnF6wp62iypoL3XrVpINuGZnr955TWf6LWl9a8mpCzk5vqpoUFsmaenH_hB7HnZ8Oa6BSRyY5ny84gjh5w_mOfTa4EeOhPMag3cmJeDnpQlcYpKK5m5o9X6sAy6M2jkelDxYH3_dK3Xw/p.jpeg",
-    "https://ucfda2b7d3c7dca99a880dd2c5ae.previews.dropboxusercontent.com/p/thumb/AC8okR26iTMzrLzHXSr9EP1UOvDhRT0BZNM6zHbGsff5NoHXgplkB9llltzI0sLp59gh7ZZUI8GeewHtnkbEczyfPQvkTHW-vpYOaF0B-0wVDTnxbviTJKnQh3ofuxd7JpAQNxUrsuyctFdNOuD4CEAdxPa7rfI55BGetlGM4VjjLdFMvebN3UisbG1ANoGBdlCV1JhIhtd1Z98ieAUGYbkdFWq7nOSVccRiIsWsHbQqdhnXvkp8HTAbr0N0vPMwOG6fhU70vvCVP4zcv9Bhbk7jnaJC-geynu57-HujyxyJYKGIJ4gyzdU1GTnZx5ui-tRdmmKMwNvKnH7R3SqCurVEL6EP2mLCU4y0KqcXdTQeNwSpIbnaY0Rpq5p93HomwxL2mYqzy5OQUgwcis58UyJ94HXo0HfOTIor_UT5vAVUBA/p.jpeg",
-    "https://uc864bbfa833507e595e834ae8d9.previews.dropboxusercontent.com/p/thumb/AC83JTTHTeYw1MqsDGESou0Dd9_MrwCi7sUyE4AGtXRs6eZxVyotZUscHF21UUv94KRFXVbRWvMa_sRHbSMuSr8Gr5ISnKbbvV-y4vuXX88ewQXgF9hezfjUgk3hh84pbYJJcQ4MbI6uX5HXVDndA5mRbwXdM-dGWiuNqA9lTs6iDA12tLt590ou8_SdBPDHxqq4icxkqsQuH6bVFnRj2EYXdMwi5XQCib-dAwsptj44hfwd1wmdUNUrTi-0GeYXj8FuzZSM4Cr4O7mGoRfGOCzzx8evCZNUiYYN8FV1iUTqqmFEpC4sKzemXY9D0dlgB5oFiADvFOBjBSWI_4gD9PYq8bDNFswxFLxC2jhWGYGU9A/p.jpeg"
+    "https://uc25954b0152d6d65098caa785be.previews.dropboxusercontent.com/p/thumb/AC-WBjS3AzuwDkk7-9HnkrzPJeE29riWEHPXuzcRvbK20zII2widZ_RTVlFbYsKfXbLxHJPcXvg-qfNWHW4RAcyrZtJ2fj0NuTssQz92og_8scWagkrRUcSesJ4yNg_JnM-fBmGkb7zN732VZmoec-jt8RZD_9m6qpX6r_t5NB0IVXzD0ex6voCN2_gj_S1mv6Sxkk4LD0B6ZIl5AN4aUOrBGjIBU6w9Zuet6pYr6K9zdSXtRTwEGp1_W6_LEMGy8GNsDd9X4kArUTEYP_rgQ2fV1KyYe3sKO3uObe_VdTaPFOAm65D8ebsP1M0s4ll52_TODdzPRYfeMtqJ9GnqXTslckbrwQkUfUnSnmRX-pEzpFpU7tIEPh2dXwWDslIzRueeRmMwDoMXRLN4fgDUfvUyg0X1Rf5Oa_O0DRhBylnFYw/p.jpeg",
+    "https://uc62d07f7d67bf803f4f7c15e420.previews.dropboxusercontent.com/p/thumb/AC-ke5D1QsdqwgF1-RYU-GFf2MEaAOPlvQpJLvCKMokZ7Fo7W0WohPBpD4eilnY0hYl0Gv94c7ElaRX7AKq8itFeez7NIDEq7GYuPLkrOzf_5C7p-C3yhGOAs6sKgqlIWt0sOW2WvCSOt9jpsSSVjo_eeqoOZSXNfNA1Ispb3byAa6duatZUgM73H6o9d8hthyJmSoL_2mVOLhNGbnGo0jHYiRZEF6AHshp8zcSUeLA-Z91bwwxBowgF3gxB5l9t1EWQ2ChD-PnJrIyWFaIK_GREy2kBygbaW41zUqm0rXJqep2AVPw46eEBzYVgTPLY5qZrheOH32SkCpCrVF5WASqCumaJYa_wEyXzxRIoItldNg/p.jpeg",
+    "https://ucfb69bcee71ee06438b471ef91d.previews.dropboxusercontent.com/p/thumb/AC9Lfl0gIxe2htsmd0whzz_shACzaqicQQe-aiNBQ9f2hO3Y_3Hn-fCe8XvRvOpD1d_Nfh3GOOqifKO7MfjGefmEuyRBJeMOR1_SHhd4AoD2vbcJAylr5w7AJtodIG3--JKzvh5sM5aXEGrnsyvM4jrdoNDOLO67Od1deP0jJpj7DwPE0T4b1-v8rP2Gf3pC12x-YMMjFwLabclsLLXWsZrkLL4nYoM1NZc_XlaKnJAO1s93jf8EWyC2H7kulpX-vz4_u8VXcyhDN5xMi3T_-6zHtkfYApr-jU2bm51A5waiGUA0irHakNH_55XfGhx1MN3S9zC2isRZpjZnT41CU5Dlqki_4brn0CrsSVfNdqC6WQ/p.jpeg"
   ];
 
 
@@ -29,15 +29,15 @@ const LuxuryPage = () => {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero_section">
+      <section className="Emerald_hero_section">
         <div
-          className="hero_bg"
+          className="Emerald_hero_bg"
           style={{ backgroundImage: `url(${images[current]})` }}
         ></div>
 
-        <div className="hero_overlay"></div>
+        <div className="Emerald_hero_overlay"></div>
 
-        <div className="hero_content">
+        <div className="Emerald_hero_content">
 
           <h1>Emerald Yachts: A New Era of Luxury Travel at Sea</h1>
 
@@ -64,9 +64,9 @@ const LuxuryPage = () => {
           )}
 
           {/* READ MORE BUTTON */}
-          <div className="readmore_wrapper">
+          <div className="Emerald_readmore_wrapper">
             <button
-              className="readmore_btn"
+              className="Emerald_readmore_btn"
               onClick={() => setReadMore(!readMore)}
             >
               {readMore ? "Read Less" : "Read More"}
@@ -74,12 +74,12 @@ const LuxuryPage = () => {
           </div>
 
           {/* CTA BUTTONS */}
-          <div className="hero_buttons">
-            <button className="primary_btn">
+          <div className="Emerald_hero_buttons">
+            <button className="Emerald_primary_btn">
               Schedule an Emerald Yacht Planning Consultation
             </button>
 
-            <button className="secondary_btn">
+            <button className="Emerald_secondary_btn">
               Prefer email? sales@tripsandships.com
             </button>
           </div>
@@ -98,8 +98,8 @@ const LuxuryPage = () => {
 
 
 
-       <section className="about_section">
-  <div className="about_inner">
+       <section className="Emerald_about_section">
+  <div className="Emerald_about_inner">
     <h2>What Are Emerald Yachts?</h2>
 
     <p>
@@ -132,13 +132,13 @@ const LuxuryPage = () => {
   </div>
 </section> */}
 
-<section className="experience_section">
-  <div className="experience_inner">
+<section className="Emerald_experience_section">
+  <div className="Emerald_experience_inner">
 
-    <div className="experience_grid">
+    <div className="Emerald_experience_grid">
 
       {/* LEFT CONTENT */}
-      <div className="experience_text">
+      <div className="Emerald_experience_text">
         <h2>
           Real Experience with Emerald Yachts
         </h2>
@@ -149,9 +149,9 @@ const LuxuryPage = () => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="experience_image">
+      <div className="Emerald_experience_image">
         <img 
-          src="https://ucfda2b7d3c7dca99a880dd2c5ae.previews.dropboxusercontent.com/p/thumb/AC-Nf36pdgBs0rExUusTmoEuAA9-zDO2GuEJOenWLe_X6WKcqvLT2YhF_XkFs1WalmE7jInrY8U0Aqxyif5kviMdGPLnjlZs03jazoz4BfxwvAVtsDcWW6t-hmSPb1BwIbesRYjuV9lkaTAt54mSUm3JteJS6W5OB5w2546aKlKCBB5dx8waZcKqoEE6_EkxEvXodkdkkzKGkTeWnmmKd8lS-BSA7zkMUM6Tzsaojx7g-Qrzxu6mqc6Oh9SKd2uxYzM2eQyg56RcS8xNzrkXG5FRRGhpETzh-YGQGm442vh_WYcfzGsA1PgZB1JSp_X4agn6rdAGuARu6qYD8QEafolr_PnzOK17vL1g3AO20xTkIBLsvwz8m6F3usfx4rhWPMPIyHkIR6uCk8Qdg5YB7kelPxtDb_sdng7SIyIl9AWFCw/p.jpeg" 
+          src="https://uca5a376721c908e8d77da325734.previews.dropboxusercontent.com/p/thumb/AC_RxOJLiFaCmKRqW1lfBL5n5fz61GFVDA5fetoc011UdWrBjB3wRZ6lDbIPUAWjCxaNqFa2Wp35TN8X-cQLzUDuauNxZF4UgQGWoH4fCSV5HyHdX1qsSrNSwiI6Fda_4v-oCgc83hBxgDnm5SWKrpJVS4yTPytE_blzTrxRbXH9JmpUcXZIVzsL6NAsQvaPMHgw8wiDJicKSF1Bz2sTNXvkP8kvVDetIQJ7FXT1ilJ90YQQyfD5ygBjzHgFrkdybfinR-ALGk8eWPra0uIsdT6OtlMaCF8hcUeZPBPrlATgVFlRmXYK83Ip6cGv6_DDG5mgFmvDT30rYNnYdX-7_SnkG3zXv-r98MG6m_W5dL6xokAwy_TdGlSBO2TTgMYOsqnhpqnYKUaY9hGx9v8kWkberhwIRfs3ntfx1c93OMv8_A/p.jpeg" 
           alt="Yacht Experience"
         />
       </div>
@@ -162,8 +162,8 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="planning_section">
-  <div className="planning_inner">
+<section className="Emerald_planning_section">
+  <div className="Emerald_planning_inner">
 
     <h2>
       Expert Planning for Emerald Yacht Cruises
@@ -177,15 +177,15 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="insight_section">
-  <div className="insight_inner">
+<section className="Emerald_insight_section">
+  <div className="Emerald_insight_inner">
 
     <h2>
       Expert Insight from Angela Hughes
     </h2>
 
     <p>
-      <span className="highlight_text">
+      <span className="Emerald_highlight_text">
         Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel
       </span>
     </p>
@@ -202,8 +202,8 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="team_section">
-  <div className="team_inner">
+<section className="Emerald_team_section">
+  <div className="Emerald_team_inner">
 
     <h2>
       The Trips & Ships Luxury Travel Team
@@ -217,7 +217,7 @@ const LuxuryPage = () => {
       Each journey benefits from:
     </p>
 
-    <p className="team_points">
+    <p className="Emerald_team_points">
       • A consistent planning framework <br />
       • Advisor training through Luxury Travel University <br />
       • Preferred supplier relationships <br />
@@ -228,8 +228,8 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="recognition_section">
-  <div className="recognition_inner">
+<section className="Emerald_recognition_section">
+  <div className="Emerald_recognition_inner">
 
     <h2>
       As Seen In and Industry Recognition
@@ -239,7 +239,7 @@ const LuxuryPage = () => {
       Angela Hughes and Trips & Ships Luxury Travel have been recognized and featured across leading global media and travel industry publications, including:
     </p>
 
-    <p className="recognition_list">
+    <p className="Emerald_recognition_list">
       • Travel Weekly <br />
       • TravelPulse <br />
       • Insider Travel Report <br />
@@ -257,18 +257,18 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="ideal_section">
-  <div className="ideal_inner">
+<section className="Emerald_ideal_section">
+  <div className="Emerald_ideal_inner">
 
     <h2>
       Is Emerald Yachts Right for You?
     </h2>
 
     <p>
-      <span className="highlight_blue">Emerald Yachts Are Ideal If You:</span>
+      <span className="Emerald_highlight_blue">Emerald Yachts Are Ideal If You:</span>
     </p>
 
-    <p className="ideal_list">
+    <p className="Emerald_ideal_list">
       • Want a relaxed, warm-weather yacht experience <br />
       • Prefer smaller ships with a social atmosphere <br />
       • Enjoy coastal cruising <br />
@@ -276,7 +276,7 @@ const LuxuryPage = () => {
     </p>
 
     <p>
-      <span className="highlight_blue">Who Should Not Book Emerald Yachts</span>
+      <span className="Emerald_highlight_blue">Who Should Not Book Emerald Yachts</span>
     </p>
 
     <p>
@@ -286,8 +286,8 @@ const LuxuryPage = () => {
   </div>
 </section>
 
-<section className="about_yachts_section">
-  <div className="about_yachts_inner">
+<section className="Emerald_about_yachts_section">
+  <div className="Emerald_about_yachts_inner">
 
     <h2>
       About Emerald Yachts
@@ -300,60 +300,81 @@ const LuxuryPage = () => {
   </div>
 </section>
 
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Emerald_expert_section">
+  <div className="Emerald_expert_inner">
 
-    <h2>When to Travel to Antarctica</h2>
-
-    <p>
-      The Antarctica season runs from November through March.
-    </p>
-
-    <p className="Scenic_team_points">
-      • Early season: pristine ice and untouched landscapes <br />
-      • Mid-season: peak wildlife activity <br />
-      • Late season: whale activity and changing light
-    </p>
+    <h2>
+      How an Expert Chooses the Right Emerald Yacht Sailing
+    </h2>
 
     <p>
-      The best timing depends on the traveler’s priorities.
+      <span className="Emerald_highlight_blue">Key considerations include:</span>
     </p>
+
+    <div className="Emerald_expert_cards">
+
+      <div className="Emerald_expert_card">
+        <i className="fas fa-route"></i>
+        <p>Itinerary structure</p>
+      </div>
+
+      <div className="Emerald_expert_card">
+        <i className="fas fa-sun"></i>
+        <p>Seasonality</p>
+      </div>
+
+      <div className="Emerald_expert_card">
+        <i className="fas fa-clock"></i>
+        <p>Time in port versus sea</p>
+      </div>
+
+      <div className="Emerald_expert_card">
+        <i className="fas fa-ship"></i>
+        <p>Ship atmosphere</p>
+      </div>
+
+      <div className="Emerald_expert_card">
+        <i className="fas fa-plane"></i>
+        <p>Travel logistics</p>
+      </div>
+
+    </div>
 
   </div>
 </section>
 
 
-<section className="method_section">
-  <div className="method_inner">
+<section className="Emerald_method_section">
+  <div className="Emerald_method_inner">
 
     <h2>
       The Trips & Ships Yacht Planning Method
     </h2>
 
-    <div className="method_steps">
+    <div className="Emerald_method_steps">
 
-      <div className="method_step">
-        <span className="step_number">01</span>
+      <div className="Emerald_method_step">
+        <span className="Emerald_step_number">01</span>
         <p>Experience Alignment</p>
       </div>
 
-      <div className="method_step">
-        <span className="step_number">02</span>
+      <div className="Emerald_method_step">
+        <span className="Emerald_step_number">02</span>
         <p>Destination Strategy</p>
       </div>
 
-      <div className="method_step">
-        <span className="step_number">03</span>
+      <div className="Emerald_method_step">
+        <span className="Emerald_step_number">03</span>
         <p>Itinerary Flow</p>
       </div>
 
-      <div className="method_step">
-        <span className="step_number">04</span>
+      <div className="Emerald_method_step">
+        <span className="Emerald_step_number">04</span>
         <p>Cabin Strategy</p>
       </div>
 
-      <div className="method_step">
-        <span className="step_number">05</span>
+      <div className="Emerald_method_step">
+        <span className="Emerald_step_number">05</span>
         <p>Full Journey Design</p>
       </div>
 
@@ -362,21 +383,21 @@ const LuxuryPage = () => {
   </div>
 </section>
 
-<section className="cost_section">
-  <div className="cost_inner">
+<section className="Emerald_cost_section">
+  <div className="Emerald_cost_inner">
 
     <h2>
       How Much Do Emerald Yachts Cost?
     </h2>
 
-    <div className="cost_list">
+    <div className="Emerald_cost_list">
 
-      <div className="cost_item">
+      <div className="Emerald_cost_item">
         <p>Short itineraries:</p>
         <span>$4,000 to $8,000 per person</span>
       </div>
 
-      <div className="cost_item">
+      <div className="Emerald_cost_item">
         <p>Mediterranean and Caribbean sailings:</p>
         <span>$6,000 to $12,000+</span>
       </div>

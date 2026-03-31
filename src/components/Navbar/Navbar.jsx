@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleHomeDropdown = (e) => {
+    e.preventDefault();
+    setHomeDropdownOpen(!homeDropdownOpen);
   };
 
   return (
@@ -13,7 +20,17 @@ const Navbar = () => {
       <div className="logo">TRIPS & SHIPS</div>
 
       <div className="nav-links">
-        <a href="#">HOME</a>
+        <div className="nav-dropdown-wrapper">
+          <Link to="/" className="nav-dropdown-trigger">HOME <i className="fas fa-angle-down"></i></Link>
+          <div className="nav-dropdown-menu">
+            <div className="nav-dropdown-group">
+              <span className="nav-dropdown-title">ANTARCTICA</span>
+              <Link to="/antarctica-cruise-cost">Antarctica Cruise Cost</Link>
+              <Link to="/scenic-antarctica-cruise">Scenic Antarctica Cruises</Link>
+            </div>
+            <Link to="/luxury-travel" className="nav-dropdown-single">LUXURY TRAVEL</Link>
+          </div>
+        </div>
         <a href="#">EXPERIENCES</a>
         <a href="#">MEETINGS & INCENTIVES</a>
         <a href="#">ALUMNI TRAVEL</a>
@@ -34,7 +51,20 @@ const Navbar = () => {
 
       <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
         <div className="close-btn" onClick={toggleMenu}>×</div>
-        <a href="#">HOME</a>
+        
+        <div className="mobile-dropdown-wrapper">
+          <div className="mobile-dropdown-trigger" onClick={toggleHomeDropdown}>
+            HOME <i className={`fas fa-angle-${homeDropdownOpen ? "up" : "down"}`}></i>
+          </div>
+          <div className={`mobile-dropdown-menu ${homeDropdownOpen ? "active" : ""}`}>
+            <span className="mobile-dropdown-title">ANTARCTICA</span>
+            <Link to="/antarctica-cruise-cost" onClick={toggleMenu}>Antarctica Cruise Cost</Link>
+            <Link to="/scenic-antarctica-cruise" onClick={toggleMenu}>Scenic Antarctica Cruises</Link>
+            <span className="mobile-dropdown-divider"></span>
+            <Link to="/luxury-travel" onClick={toggleMenu} className="mobile-dropdown-single">LUXURY TRAVEL</Link>
+          </div>
+        </div>
+
         <a href="#">EXPERIENCES</a>
         <a href="#">MEETINGS & INCENTIVES</a>
         <a href="#">ALUMNI TRAVEL</a>
