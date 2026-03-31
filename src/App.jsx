@@ -7,6 +7,7 @@ import ScenicAntarctica from '../src/pages/ScenicAntarctica/ScenicAntarctica'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
+import LuxuryTravel from './pages/LuxuryTravel/LuxuryTravel'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/ScenicVSSilversea' element={<ScenicVSSilversea />}></Route>
           <Route path='/AntarcticaCruise' element={<AntarcticaCruise />}></Route>
           <Route path='/ScenicAntarctica' element={<ScenicAntarctica />}></Route>
+          <Route path='/LuxuryTravel' element={<LuxuryTravel />}></Route>
         </Routes>
       </BrowserRouter>
     </>

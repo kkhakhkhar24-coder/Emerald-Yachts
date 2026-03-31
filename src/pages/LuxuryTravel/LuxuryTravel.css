@@ -1,0 +1,2088 @@
+/* ========================================
+   SCENIC ECLIPSE HERO (SECTION 1)
+   Ultra-luxury hero with background overlay, glassmorphism, and editorial text
+   ======================================== */
+
+/* ========================================
+   SCENIC ECLIPSE HERO (SECTION 1)
+   ======================================== */
+
+.lux-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 40px 100px;
+    position: relative;
+    text-align: center;
+    background: url('https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC90HEdgBE5gEZKzgaua0bQiH69tOnJsQ9tDKtj3T6-NVmlhN9Y_FxSdFyikTx77x14F21UgZB7uEiVlfYwtCsz51eHkglm2IMZrYnc_8PjVoa8yIYFPrY-GQfbiQmycKjUJBdjiYP7U6Bkx83GTneBtod254dxiCmEbEBajgT0AKidkdeD6vpgGgabk9II9lAyea5l6O3HBxqHOcBXMFG0Rrz5uaph1gm06vLjw6a2boOiP2zq88HJDbhtmuvYl6mYanJFnp3xWzYWt1yi4CZqh3M0Ry6z2uInnHUo11Zv_wlnDDXSJOWzOv-vskqf5CE9oPQtYn7z6qHB58gVNtLqDTl3_OIHnpemF0UtrCwHvfQ/p.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.lux-hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* Using a dark hash color background for maximum text visibility */
+    background: linear-gradient(135deg, rgba(15, 28, 74, 0.9) 0%, rgba(15, 28, 46, 0.75) 100%);
+    z-index: 1;
+}
+
+.lux-hero-content {
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: lux-fadeInUp 1s ease-out;
+}
+
+@keyframes lux-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Visibility Fix: Using Gold Hash #c6a15b */
+.lux-hero-eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 4px !important;
+    font-weight: 600 !important;
+    color: #c6a15b !important;
+    text-transform: uppercase !important;
+    margin-bottom: 24px;
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.lux-h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.lux-hero-lead {
+    line-height: 1.8 !important;
+    font-weight: 300 !important;
+    color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.lux-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lux-hero-details.lux-expanded {
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.lux-hero-note {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 300 !important;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Visibility Fix: Using Gold Hash #c6a15b */
+.lux-hero-read-more {
+    display: inline-block;
+    margin: 10px 0 35px 0;
+    background: transparent;
+    border: none;
+    color: #c6a15b !important;
+    padding: 8px 0;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif !important;
+    border-bottom: 1px solid #c6a15b;
+}
+
+.lux-hero-read-more:hover {
+    color: #ffffff !important;
+    border-bottom-color: #ffffff;
+}
+
+.lux-hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.lux-btn-primary {
+    background: #ffffff;
+    color: #000000;
+    padding: 18px 45px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+/* Hover using Gold Hash #c6a15b */
+.lux-btn-primary:hover {
+    background: #c6a15b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.lux-btn-secondary-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Visibility Fix: White color for secondary label */
+.lux-secondary-label {
+    font-size: 13px !important;
+    color: #ffffff !important;
+    font-weight: 300 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Visibility Fix: Gold Hash for email link */
+.lux-btn-text-link {
+    color: #c6a15b !important;
+    text-decoration: none;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    transition: 0.3s;
+}
+
+.lux-btn-text-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .lux-h1 {
+        font-size: 46px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-hero {
+        padding: 100px 20px 80px;
+    }
+
+    .lux-h1 {
+        font-size: 34px !important;
+    }
+
+    .lux-btn-primary {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   SCENIC ECLIPSE PLANNING (SECTION 2)
+   Editorial split layout using Navy (#274472) and Gold (#c6a15b)
+   ======================================== */
+
+.lux-section {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+.lux-inner {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.lux-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* --- Title Side --- */
+.lux-title-side {
+    position: sticky;
+    top: 120px;
+    text-align: left;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 14px !important;
+    color: #c6a15b;
+    /* Gold Hash */
+    font-weight: 700 !important;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    text-transform: uppercase !important;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 500 !important;
+    color: #274472;
+    /* Navy Hash */
+    line-height: 1.1 !important;
+    margin-bottom: 0;
+}
+
+/* Adding the signature decorative bar */
+.lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin-top: 25px;
+    border-radius: 2px;
+}
+
+/* --- Content Side --- */
+.lux-content-side {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.lux-lead-text {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    /* Navy Hash */
+    font-weight: 500 !important;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.lux-section-p {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    color: rgba(39, 68, 114, 0.8) !important;
+    /* Navy Hash with opacity */
+    font-weight: 300 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 0;
+}
+
+/* Editorial accent for the final paragraph */
+.lux-editorial-accent {
+    border-left: 2px solid #c6a15b;
+    /* Gold Hash */
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.lux-editorial-accent .lux-section-p {
+    font-style: italic !important;
+    color: #274472 !important;
+    /* Navy Hash */
+    font-weight: 400 !important;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 1024px) {
+    .lux-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .lux-title-side {
+        position: static;
+        text-align: center;
+    }
+
+    .lux-h2::after {
+        margin: 25px auto 0;
+    }
+
+    .lux-content-side {
+        text-align: center;
+    }
+
+    .lux-editorial-accent {
+        border-left: none;
+        border-top: 2px solid #c6a15b;
+        /* Gold Hash */
+        padding-left: 0;
+        padding-top: 30px;
+        max-width: 80%;
+        margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-section {
+        padding: 70px 20px;
+    }
+
+    .lux-h2 {
+        font-size: 32px !important;
+    }
+
+    .lux-lead-text {
+        font-size: 18px !important;
+    }
+
+    .lux-editorial-accent {
+        max-width: 100%;
+    }
+}
+
+/* ========================================
+   EXPERT INSIGHT (SECTION 3)
+   Editorial bio and credentials layout
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+    /* Cream Hash */
+}
+
+/* Centering the entire header container */
+.lux-expert-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Specific styling for the H2 in the Expert Insight section */
+.lux-expert-header .lux-h2 {
+    text-align: center;
+}
+
+/* Centering the gold line specifically for this section */
+.lux-expert-header .lux-h2::after {
+    margin: 25px auto 0 !important;
+    /* Force center the gold bar */
+}
+
+/* --- Layout Grid --- */
+.lux-expert-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+/* --- Sidebar Styling --- */
+.lux-expert-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lux-expert-avatar {
+    width: 140px;
+    height: 140px;
+    background-color: #274472;
+    /* Navy Hash */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c6a15b;
+    /* Gold Hash */
+    font-family: 'Playfair Display', serif !important;
+    font-size: 42px !important;
+    border: 2px solid #c6a15b;
+    margin: 0 auto;
+}
+
+.lux-credentials-box {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    border-top: 3px solid #c6a15b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.lux-sidebar-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 15px;
+}
+
+.lux-credentials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lux-credentials-list li {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    color: rgba(39, 68, 114, 0.7) !important;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.lux-credentials-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #c6a15b;
+    border-radius: 50%;
+}
+
+/* --- Main Content Area --- */
+.lux-expert-main-content {
+    text-align: left;
+}
+
+.lux-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin-bottom: 30px;
+    line-height: 1.2 !important;
+}
+
+.lux-expert-main-content .lux-section-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    color: #274472;
+    font-weight: 300 !important;
+    margin-bottom: 25px;
+}
+
+.lux-expert-highlight-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+    border-left: 4px solid #c6a15b;
+}
+
+.lux-expert-highlight-box .lux-section-p {
+    margin-bottom: 0;
+    font-style: italic !important;
+    font-weight: 400 !important;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-expert-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lux-expert-sidebar {
+        order: 2;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .lux-expert-main-content {
+        order: 1;
+        text-align: center;
+    }
+
+    .lux-expert-highlight-box {
+        border-left: none;
+        border-top: 4px solid #c6a15b;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-expert-main-content .lux-h3 {
+        font-size: 22px !important;
+    }
+}
+
+/* ========================================
+   TRUST & AUTHORITY (SECTION 4)
+   Professional grid layout using Navy and Gold
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+/* Centered Header */
+.lux-trust-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-trust-header .lux-h2 {
+    text-align: center;
+}
+
+.lux-trust-header .lux-h2::after {
+    margin: 25px auto 0 !important;
+    /* Centered Gold Bar */
+}
+
+/* --- Trust Grid --- */
+.lux-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lux-trust-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 35px;
+    background-color: #f7f6f2;
+    /* Subtle Cream contrast */
+    border-radius: 8px;
+    border-left: 3px solid #c6a15b;
+    /* Gold Hash accent */
+    transition: all 0.3s ease;
+}
+
+.lux-trust-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.08);
+}
+
+.lux-trust-icon {
+    color: #c6a15b;
+    /* Gold Hash */
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    flex-shrink: 0;
+}
+
+.lux-trust-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #274472;
+    /* Navy Hash */
+    font-weight: 500 !important;
+    margin-bottom: 0;
+}
+
+/* Making the final card centered on desktop */
+.lux-span-full {
+    grid-column: span 2;
+    justify-content: center;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-trust-grid {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-span-full {
+        grid-column: span 1;
+        justify-content: flex-start;
+    }
+
+    .lux-trust-card {
+        padding: 25px 20px;
+    }
+
+    .lux-trust-header {
+        margin-bottom: 40px;
+    }
+
+    .lux-trust-text {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-trust-header .lux-h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* ========================================
+   SUITABILITY SELECTION (SECTION 5)
+   Comparison grid layout using Navy and Gold
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+    /* Cream Hash */
+}
+
+/* Centered Header */
+.lux-selection-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-selection-header .lux-h2 {
+    text-align: center;
+}
+
+.lux-selection-header .lux-h2::after {
+    margin: 25px auto 0 !important;
+    /* Centered Gold Bar */
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+}
+
+/* --- Selection Grid --- */
+.lux-selection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.lux-selection-card {
+    padding: 50px 45px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.lux-selection-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Distinction for the "Ideal" card */
+.lux-ideal {
+    border-top: 4px solid #c6a15b;
+    /* Gold Hash */
+}
+
+/* Distinction for the "Not Ideal" card */
+.lux-not-ideal {
+    border-top: 4px solid #274472;
+    /* Navy Hash */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.lux-selection-card .lux-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin-bottom: 35px;
+    line-height: 1.3 !important;
+}
+
+.lux-selection-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lux-selection-list li {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    font-weight: 300 !important;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+    text-align: left;
+}
+
+/* Custom Bullet Icon */
+.lux-selection-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #c6a15b;
+    /* Gold Hash */
+    font-weight: 700 !important;
+}
+
+/* Adjust bullet for "Not Ideal" side to Navy for visual hierarchy */
+.lux-not-ideal .lux-selection-list li::before {
+    color: rgba(39, 68, 114, 0.4);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-selection-card {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-selection-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .lux-selection-card {
+        padding: 35px 25px;
+    }
+
+    .lux-selection-card .lux-h3 {
+        font-size: 22px !important;
+        margin-bottom: 25px;
+    }
+
+    .lux-selection-list li {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-selection-header .lux-h2 {
+        font-size: 30px !important;
+    }
+}
+
+/* ========================================
+   ABOUT THE YACHTS (SECTION 6)
+   Editorial narrative layout using Navy and Gold
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+.lux-inner.lux-narrow {
+    max-width: 800px;
+    /* Narrower for high-end readability */
+    width: 100%;
+}
+
+/* Centered Header */
+.lux-about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lux-about-header .lux-h2 {
+    text-align: center;
+}
+
+.lux-about-header .lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 25px auto 0 !important;
+    /* Centered Gold Bar */
+}
+
+/* --- Content Styling --- */
+.lux-about-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lux-about-lead {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    /* Navy Hash */
+    font-weight: 500 !important;
+    margin-bottom: 30px;
+}
+
+.lux-editorial-divider {
+    width: 40px;
+    height: 1px;
+    background-color: rgba(198, 161, 91, 0.4);
+    /* Faded Gold Hash */
+    margin-bottom: 35px;
+}
+
+.lux-about-content .lux-section-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    color: rgba(39, 68, 114, 0.8) !important;
+    /* Navy Hash with opacity */
+    font-weight: 300 !important;
+    margin-bottom: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-about-lead {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-section {
+        padding: 80px 20px;
+    }
+
+    .lux-about-header .lux-h2 {
+        font-size: 32px !important;
+    }
+
+    .lux-about-lead {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+
+    .lux-about-content .lux-section-p {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-about-header .lux-h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* ========================================
+   STRATEGIC PLANNING (SECTION 7)
+   Structured framework grid using Navy and Gold
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+    /* Cream Hash */
+}
+
+/* Centered Header */
+.lux-planning-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lux-planning-header .lux-h2 {
+    text-align: center;
+}
+
+.lux-planning-header .lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 25px auto 0 !important;
+    /* Centered Gold Bar */
+}
+
+.lux-planning-intro {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.lux-planning-intro .lux-section-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: #274472;
+    /* Navy Hash */
+    font-weight: 300 !important;
+}
+
+/* --- Planning Grid --- */
+.lux-planning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.lux-planning-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+    transition: all 0.35s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.lux-planning-card:hover {
+    transform: translateY(-8px);
+    border-bottom-color: #c6a15b;
+    /* Gold Hash highlight */
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+.lux-planning-icon {
+    color: #c6a15b;
+    /* Gold Hash */
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-top: 2px;
+}
+
+.lux-planning-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    /* Navy Hash */
+    font-weight: 500 !important;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Center the final long item on desktop */
+.lux-span-2 {
+    grid-column: span 2;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-span-2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-planning-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lux-span-2 {
+        grid-column: span 1;
+        justify-content: flex-start;
+    }
+
+    .lux-planning-card {
+        padding: 30px 25px;
+    }
+
+    .lux-planning-header .lux-h2 {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-planning-header .lux-h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* ========================================
+   PLANNING METHOD (SECTION 8)
+   Upgraded Header with Background and Editorial Layout
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+/* --- Hero Header Block --- */
+.lux-method-hero {
+    position: relative;
+    width: 100%;
+    padding: 120px 40px;
+    margin-bottom: 90px;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.lux-method-hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* Deep Navy Hash for professional contrast */
+    background: linear-gradient(135deg, rgba(28, 47, 74, 0.9) 0%, rgba(15, 28, 46, 0.75) 100%);
+    z-index: 1;
+}
+
+.lux-method-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.lux-method-eyebrow {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    letter-spacing: 4px !important;
+    font-weight: 600 !important;
+    color: #c6a15b;
+    /* Gold Hash */
+    text-transform: uppercase !important;
+    margin-bottom: 25px;
+}
+
+.lux-h2-white {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 42px !important;
+    font-weight: 500 !important;
+    color: #ffffff;
+    line-height: 1.1 !important;
+    margin-bottom: 0;
+}
+
+.lux-method-hero-divider {
+    width: 60px;
+    height: 2px;
+    background-color: #c6a15b;
+    margin: 35px auto;
+}
+
+.lux-method-hero-intro {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300 !important;
+    margin: 0 auto;
+}
+
+/* --- Layout Grid --- */
+.lux-method-layout {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 80px;
+    align-items: start;
+}
+
+.lux-method-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lux-method-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.lux-step-num {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    color: #c6a15b;
+    font-weight: 700 !important;
+    border-bottom: 2px solid #c6a15b;
+    padding-bottom: 5px;
+    flex-shrink: 0;
+    line-height: 1 !important;
+}
+
+.lux-h3-sm {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #274472;
+    /* Navy Hash */
+    margin-bottom: 12px;
+}
+
+.lux-method-step .lux-section-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: #274472;
+    font-weight: 300 !important;
+    opacity: 0.85;
+}
+
+/* --- Image Side Styling --- */
+.lux-method-image-side {
+    position: sticky;
+    top: 150px;
+}
+
+.lux-image-frame {
+    position: relative;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+.lux-featured-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.lux-image-caption {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background-color: #274472;
+    /* Navy Hash */
+    color: #c6a15b;
+    /* Gold Hash */
+    padding: 12px 25px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1150px) {
+    .lux-method-layout {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .lux-method-image-side {
+        position: static;
+        max-width: 600px;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .lux-featured-img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-method-hero {
+        padding: 80px 24px;
+        border-radius: 0;
+    }
+
+    .lux-h2-white {
+        font-size: 32px !important;
+    }
+
+    .lux-method-step {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lux-image-caption {
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+/* ========================================
+   DECISION MATRIX (SECTION 9)
+   Comparative table layout using Navy and Gold
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+}
+
+/* --- Value Color Fixes (Universal) --- */
+.lux-val-yes {
+    color: #c6a15b !important;
+    /* Prominent Gold */
+    font-weight: 700 !important;
+}
+
+.lux-val-no {
+    color: #a5b1c2 !important;
+    /* Muted Blue-Grey */
+    font-weight: 400 !important;
+}
+
+.lux-val-lim {
+    color: #274472 !important;
+    /* Strong Navy */
+    font-weight: 500 !important;
+}
+
+/* --- Desktop Styles (Old Design) --- */
+.lux-matrix-container {
+    max-width: 1050px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 60px 50px;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.lux-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+}
+
+.lux-comparison-table th {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    border-bottom: 2px solid #274472;
+    text-transform: uppercase !important;
+}
+
+.lux-comparison-table td {
+    padding: 22px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.lux-td-label {
+    text-align: left !important;
+    font-weight: 600 !important;
+    color: #274472;
+}
+
+/* --- Mobile Side-by-Side Cards --- */
+@media (max-width: 768px) {
+    .lux-matrix-container {
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .lux-h3-matrix {
+        margin: 20px 0;
+    }
+
+    .lux-comparison-table thead {
+        display: none;
+    }
+
+    .lux-comparison-table,
+    .lux-comparison-table tbody,
+    .lux-comparison-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .lux-comparison-table tr {
+        background-color: #ffffff;
+        margin-bottom: 30px;
+        padding: 25px 20px;
+        border-radius: 15px;
+        border: 1px solid rgba(39, 68, 114, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lux-td-label {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        font-family: 'Playfair Display', serif !important;
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        padding: 0 0 15px 0 !important;
+        border-bottom: 1px solid #f7f6f2 !important;
+    }
+
+    .lux-td-res {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48% !important;
+        padding: 15px 5px !important;
+        border-bottom: none !important;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        /* Default light wash */
+    }
+
+    /* Specific mobile background tints for visibility */
+    .lux-val-yes {
+        background-color: #fcf9f2;
+        border: 1px solid rgba(198, 161, 91, 0.2) !important;
+    }
+
+    .lux-val-no {
+        background-color: #f7f6f2;
+        opacity: 1 !important;
+    }
+
+    .lux-val-lim {
+        background-color: #f0f4f8;
+    }
+
+    .lux-td-res::before {
+        content: attr(data-label);
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        color: #274472;
+        margin-bottom: 8px;
+        opacity: 0.6;
+    }
+}
+
+/* ========================================
+   HIGH-LEVEL SUMMARY (SECTION 10)
+   Executive summary table using Navy and Gold
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+/* Centered Header */
+.lux-summary-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-summary-header .lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 25px auto 0 !important;
+}
+
+/* --- Summary Container Styling --- */
+.lux-summary-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lux-summary-table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+}
+
+.lux-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+/* Table Head */
+.lux-summary-table thead tr {
+    background-color: #274472;
+    /* Navy Hash */
+}
+
+.lux-th-summary {
+    padding: 22px 15px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Table Body */
+.lux-summary-table td {
+    padding: 25px 15px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #274472;
+    text-align: center;
+    border-bottom: 1px solid #f7f6f2;
+}
+
+/* Highlight the Brand Names */
+.lux-td-brand {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #c6a15b !important;
+    /* Gold Hash */
+}
+
+/* Row separation */
+.lux-row-emerald td {
+    background-color: #fcf9f2;
+    /* Lightest tint for distinction */
+}
+
+/* --- MOBILE "BRAND CARD" REDESIGN --- */
+@media (max-width: 900px) {
+    .lux-summary-container {
+        padding: 0 10px;
+    }
+
+    .lux-summary-table,
+    .lux-summary-table thead,
+    .lux-summary-table tbody,
+    .lux-summary-table tr,
+    .lux-summary-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .lux-summary-table thead {
+        display: none;
+        /* Hide header on mobile */
+    }
+
+    /* Each Row becomes a branded Card */
+    .lux-summary-table tr {
+        margin-bottom: 40px;
+        border: 1px solid rgba(198, 161, 91, 0.2);
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Specific Card Headings */
+    .lux-td-brand {
+        background-color: #274472;
+        /* Navy Wash */
+        color: #ffffff !important;
+        font-size: 22px !important;
+        padding: 25px 20px !important;
+        text-align: center !important;
+    }
+
+    .lux-summary-table td:not(.lux-td-brand) {
+        padding: 18px 20px !important;
+        text-align: left !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f7f6f2;
+    }
+
+    /* Responsive Labels for Mobile Context */
+    .lux-summary-table td:not(.lux-td-brand)::before {
+        content: attr(data-label);
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        color: #c6a15b;
+        /* Gold Hash label */
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .lux-row-emerald .lux-td-brand {
+        background-color: #c6a15b;
+        /* Gold head for second brand */
+        color: #000000 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-summary-header .lux-h2 {
+        font-size: 28px !important;
+    }
+
+    .lux-summary-table td:not(.lux-td-brand) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* ========================================
+   ADVISOR ADVANTAGE (SECTION 11)
+   Side-by-side comparison layout
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+}
+
+/* Centered Header */
+.lux-adv-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.lux-adv-header .lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    margin: 25px auto 0 !important;
+}
+
+.lux-adv-intro {
+    max-width: 850px;
+    margin: 30px auto 0;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: #274472;
+    font-weight: 300 !important;
+}
+
+/* --- Comparison Grid --- */
+.lux-comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    align-items: stretch;
+}
+
+.lux-comp-panel {
+    padding: 50px 40px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Visual Elevation for the Advisor Panel */
+.lux-advisor-booking {
+    border: 2px solid #c6a15b;
+    /* Gold Hash */
+    box-shadow: 0 20px 50px rgba(198, 161, 91, 0.12);
+}
+
+.lux-adv-badge {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    background-color: #c6a15b;
+    color: #000000;
+    padding: 6px 18px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    border-radius: 4px;
+}
+
+.lux-comp-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin-bottom: 35px;
+    line-height: 1.3 !important;
+}
+
+.lux-comp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lux-comp-list li {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    font-weight: 300 !important;
+    margin-bottom: 18px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.lux-comp-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #c6a15b;
+    /* Gold Hash */
+    font-size: 14px !important;
+}
+
+/* Neutralize the "Direct" panel bullet to show hierarchy */
+.lux-direct-booking .lux-comp-list li::before {
+    color: #a5b1c2;
+    content: "○";
+}
+
+/* --- Footer Callout --- */
+.lux-adv-footer {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lux-adv-callout {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-style: italic !important;
+    color: #274472;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    border-top: 1px solid rgba(198, 161, 91, 0.3);
+    padding-top: 30px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .lux-comp-grid {
+        gap: 30px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-comp-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lux-comp-panel {
+        padding: 40px 25px;
+    }
+
+    .lux-adv-intro {
+        font-size: 16px !important;
+    }
+
+    .lux-adv-header .lux-h2 {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-comp-title {
+        font-size: 21px !important;
+    }
+}
+
+/* ========================================
+   EXPERT FAQs (SECTION 12)
+   Accordion layout using Navy and Gold
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+.lux-inner.lux-narrow-faq {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Centered Header */
+.lux-faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-faq-header .lux-h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 25px auto 0 !important;
+}
+
+/* --- Accordion Styling --- */
+.lux-faq-list {
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.lux-faq-item {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lux-faq-item:hover {
+    background-color: #f7f6f2;
+    /* Cream Hash hover */
+}
+
+.lux-faq-question {
+    padding: 28px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.lux-q-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: #274472;
+    /* Navy Hash */
+    line-height: 1.4 !important;
+    text-align: left;
+}
+
+.lux-faq-icon {
+    color: #c6a15b;
+    /* Gold Hash */
+    font-size: 20px !important;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lux-faq-item.lux-open .lux-faq-icon {
+    transform: rotate(180deg);
+}
+
+/* --- Answer Animation --- */
+.lux-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.lux-faq-item.lux-open .lux-faq-answer {
+    max-height: 500px;
+    /* Sufficient height for text */
+    transition: max-height 0.8s ease-in-out;
+}
+
+.lux-a-inner {
+    padding: 0 10px 35px 10px;
+}
+
+.lux-a-inner .lux-section-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    color: rgba(39, 68, 114, 0.85) !important;
+    font-weight: 300 !important;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Highlight the question when open */
+.lux-faq-item.lux-open .lux-q-text {
+    color: #c6a15b;
+    /* Gold Hash */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .lux-faq-header .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-q-text {
+        font-size: 15px !important;
+    }
+
+    .lux-a-inner .lux-section-p {
+        font-size: 15px !important;
+    }
+
+    .lux-faq-question {
+        padding: 22px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-faq-header .lux-h2 {
+        font-size: 26px !important;
+    }
+}
+
+/* ========================================
+   FINAL CTA (SECTION 13)
+   High-impact visual conclusion using Navy and Gold
+   ======================================== */
+
+.lux-final-cta-section {
+    position: relative;
+    padding: 140px 40px;
+    /* Suggestion: Epic shot of the Scenic Eclipse at sea */
+    background: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    overflow: hidden;
+}
+
+/* Dark wash for high-end text contrast */
+.lux-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(28, 47, 74, 0.95) 0%, rgba(15, 28, 46, 0.8) 100%);
+    z-index: 1;
+}
+
+.lux-final-cta-inner {
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Specific white H2 for the dark background */
+.lux-h2-white {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 52px !important;
+    font-weight: 500 !important;
+    color: #ffffff;
+    line-height: 1.1 !important;
+    margin-bottom: 30px;
+}
+
+.lux-h2-white::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+.lux-cta-content-box {
+    margin-bottom: 50px;
+}
+
+.lux-cta-paragraph {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 19px !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300 !important;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- CTA Button Styling --- */
+.lux-cta-btn-primary {
+    padding: 22px 50px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    color: #000000;
+    border: 1px solid #c6a15b;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.lux-cta-btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .lux-final-cta-section {
+        padding: 100px 30px;
+    }
+
+    .lux-h2-white {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-h2-white {
+        font-size: 32px !important;
+    }
+
+    .lux-cta-paragraph {
+        font-size: 17px !important;
+    }
+
+    .lux-cta-btn-primary {
+        padding: 18px 30px;
+        width: 100%;
+        /* Full width on mobile for easier tapping */
+        line-height: 1.4 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-final-cta-section {
+        padding: 80px 20px;
+    }
+
+    .lux-h2-white {
+        font-size: 28px !important;
+    }
+}
+
+/* ========================================
+   CONTENT ATTRIBUTION (SECTION 14)
+   Professional footer metadata using Navy and Gold
+   ======================================== */
+
+.lux-bg-cream {
+    background-color: #f7f6f2;
+    /* Cream Hash */
+}
+
+.lux-attribution-section {
+    padding: 80px 40px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.lux-inner.lux-narrow {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.lux-attr-container {
+    text-align: center;
+}
+
+/* Smaller, subtle version of the H2 */
+.lux-attr-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    /* Navy Hash */
+    margin-bottom: 35px;
+}
+
+.lux-attr-h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #c6a15b;
+    /* Gold Hash */
+    margin: 15px auto 0;
+}
+
+.lux-attr-content {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lux-attr-item {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #274472;
+    margin: 0;
+}
+
+.lux-attr-label {
+    font-weight: 400 !important;
+    opacity: 0.7;
+    margin-right: 6px;
+}
+
+.lux-attr-value {
+    font-weight: 600 !important;
+}
+
+.lux-attr-footer {
+    padding-top: 25px;
+    border-top: 1px solid rgba(198, 161, 91, 0.2);
+    /* Faded Gold divider */
+    display: inline-block;
+}
+
+.lux-attr-date {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #c6a15b;
+    /* Gold Hash */
+    font-weight: 500 !important;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .lux-attribution-section {
+        padding: 60px 20px;
+    }
+
+    .lux-attr-h2 {
+        font-size: 21px !important;
+    }
+
+    .lux-attr-item {
+        font-size: 14px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .lux-attr-label {
+        font-size: 11px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+    }
+}
