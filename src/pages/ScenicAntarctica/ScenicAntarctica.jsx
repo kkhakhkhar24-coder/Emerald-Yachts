@@ -121,8 +121,8 @@ function ScenicAntarctica() {
 </section>
 
 
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+<section className="Scenic_about_yachts_Experience_section">
+  <div className="Scenic_about_yachts_Experience_inner">
 
     <h2>
     The Scenic Eclipse Experience
@@ -154,7 +154,7 @@ Between landings, the ship provides a refined onboard environment designed for r
   <div className="Scenic_expert_inner">
 
     <h2>
-     What Is Included on a Scenic Antarctica Expedition
+     What Is Included on a Scenic Antarctica Expedition?
     </h2>
 
     <p>
@@ -199,10 +199,10 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 5 ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Scenic_team_Cruises_section">
+  <div className="Scenic_team_Cruises_inner">
 
-    <h2>How Scenic Compares to Other Antarctica Expedition Cruises</h2>
+    <h2>How Scenic Compares to Other Antarctica Expedition Cruises?</h2>
 
     <p>
       Travelers evaluating Antarctica often compare multiple expedition cruise lines.
@@ -212,7 +212,7 @@ Between landings, the ship provides a refined onboard environment designed for r
       Scenic’s position is distinct within the market:
     </p>
 
-    <p className="Scenic_team_points">
+    <p className="Scenic_team_Cruises_points">
       • Scenic: all-inclusive structure with a modern luxury yacht environment <br/>
       • Silversea Cruises: strong expedition heritage with a more traditional luxury approach <br/>
       • Seabourn Cruise Line: refined, smaller ship experience with expedition capability <br/>
@@ -232,7 +232,7 @@ Between landings, the ship provides a refined onboard environment designed for r
   <div className="Scenic_right_experience_inner">
     
     <div className="Scenic_right_experience_content">
-      <h2>Is Antarctica the Right Experience for You</h2>
+      <h2>Is Antarctica the Right Experience for You?</h2>
 
       <p>
         Antarctica is not a passive destination. It requires flexibility and a clear understanding of what the experience involves.
@@ -256,7 +256,7 @@ Between landings, the ship provides a refined onboard environment designed for r
     </div>
 
     <div className="Scenic_right_experience_image">
-      <img src="https://uc864bbfa833507e595e834ae8d9.previews.dropboxusercontent.com/p/thumb/AC83JTTHTeYw1MqsDGESou0Dd9_MrwCi7sUyE4AGtXRs6eZxVyotZUscHF21UUv94KRFXVbRWvMa_sRHbSMuSr8Gr5ISnKbbvV-y4vuXX88ewQXgF9hezfjUgk3hh84pbYJJcQ4MbI6uX5HXVDndA5mRbwXdM-dGWiuNqA9lTs6iDA12tLt590ou8_SdBPDHxqq4icxkqsQuH6bVFnRj2EYXdMwi5XQCib-dAwsptj44hfwd1wmdUNUrTi-0GeYXj8FuzZSM4Cr4O7mGoRfGOCzzx8evCZNUiYYN8FV1iUTqqmFEpC4sKzemXY9D0dlgB5oFiADvFOBjBSWI_4gD9PYq8bDNFswxFLxC2jhWGYGU9A/p.jpeg" alt="Scenic Antarctica Explorer" />
+      <img src="" alt="Scenic Antarctica Explorer" />
     </div>
 
   </div>
@@ -264,8 +264,8 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 7 ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Scenic_team_Routes_section">
+  <div className="Scenic_team_Routes_inner">
 
     <h2>Antarctica Itineraries and Routes</h2>
 
@@ -364,10 +364,10 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 10 ================= */}
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+<section className="Scenic_about_yachts_Happens_section">
+  <div className="Scenic_about_yachts_Happens_inner">
 
-    <h2>What Happens Next</h2>
+    <h2>What Happens Next?</h2>
 
     <p>Initial consultation to define timing, goals, and comfort level</p>
     <p>Curated Scenic options with strategic recommendations</p>
@@ -385,7 +385,7 @@ Between landings, the ship provides a refined onboard environment designed for r
 <section className="Scenic_team_section">
   <div className="Scenic_team_inner">
 
-    <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel</h2>
+    <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel?</h2>
 
     <p>
       Antarctica requires strategic planning and execution.
@@ -439,8 +439,8 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 13 ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Scenic_team_Hughes_section">
+  <div className="Scenic_team_Hughes_inner">
 
     <h2>About Angela Hughes</h2>
 
