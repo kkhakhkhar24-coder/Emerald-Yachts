@@ -3,170 +3,174 @@
 
 
 @media (max-width: 900px) {
-    .hero {
-        padding: 140px 60px 160px 60px;
-        min-height: 100vh;
-    }
+  .drake-hero {
+    padding: 140px 60px 160px 60px;
+    min-height: 100vh;
+  }
 
-    .hero h1 {
-        font-size: 48px;
-    }
+  .hero h1 {
+    font-size: 48px !important;
+  }
 
-    .lead {
-        font-size: 18px;
-    }
+  .drake-lead {
+    font-size: 18px !important;
+  }
 
-    .extra-text {
-        font-size: 14px;
-        max-width: 90%;
-        margin: 0 auto;
-    }
+  .drake-extra-text {
+    font-size: 14px !important;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 
-    .hero-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .drake-hero-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .primary {
-        margin-left: 0;
-        width: auto;
-    }
+  .drake-primary {
+    margin-left: 0;
+    width: auto;
+  }
 }
 
 @media (max-width: 1024px) {
 
+  .drake-hero {
+    padding: 120px 20px 140px 20px;
+    min-height: 90vh;
+  }
 
-    .hero {
-        padding: 120px 20px 140px 20px;
-        min-height: 90vh;
-    }
+  .drake-hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
 
-    .hero h1 {
-        font-size: 32px;
-        text-align: center;
-    }
+  .drake-lead,
+  .drake-sub,
+  .drake-extra-text {
+    text-align: center;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
 
-    .lead,
-    .sub,
-    .extra-text {
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.5;
-    }
+  .drake-hero-buttons {
+    margin-left: -220px;
+  }
 
-    .hero-buttons {
-        margin-left: -220px;
-    }
-
-    .primary,
-    .secondary {
-        width: 90%;
-        text-align: center;
-        padding: 12px 0;
-    }
+  .drake-primary,
+  .drake-secondary {
+    width: 90%;
+    text-align: center;
+    padding: 12px 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-buttons {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-        margin-left: 0px;
-    }
+  .drake-hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 480px) {
 
+  .drake-hero h1 {
+    font-size: 28px !important;
+  }
 
-    .hero h1 {
-        font-size: 28px;
-    }
+  .drake-lead,
+  .drake-sub,
+  .drake-extra-text {
+    font-size: 13px !important;
+  }
 
-    .lead,
-    .sub,
-    .extra-text {
-        font-size: 13px;
-    }
+  .drake-hero {
+    padding: 100px 10px 120px 10px;
+  }
 
-    .hero {
-        padding: 100px 10px 120px 10px;
-    }
-
-    .hero-buttons {
-        gap: 10px;
-    }
+  .drake-hero-buttons {
+    gap: 10px;
+  }
 }
+
+/* ========================================
+   HERO SECTION
+   Main hero with animated background, particles effect, eyebrow title, heading, and call-to-action buttons
+   ======================================== */
 
 /* ── HERO ── */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 140px 80px 100px;
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    animation: bgSlide 18s infinite ease-in-out;
-    overflow: hidden;
+.drake-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 40px 100px;
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  animation: drake-bgSlide 18s infinite ease-in-out;
+  overflow: hidden;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.35) 100%);
-    z-index: 1;
+.drake-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
 }
 
 /* Animated particles effect */
-.hero::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: snowfall 60s linear infinite;
-    opacity: 0.3;
-    pointer-events: none;
+.drake-hero::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: drake-snowfall 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
 }
 
-@keyframes bgSlide {
+@keyframes drake-bgSlide {
 
-    0%,
-    100% {
-        background-image: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&q=80&w=1920');
-    }
+  0%,
+  100% {
+    background-image: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&q=80&w=1920');
+  }
 
-    33% {
-        background-image: url('https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&q=80&w=1920');
-    }
+  33% {
+    background-image: url('https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&q=80&w=1920');
+  }
 
-    66% {
-        background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1920');
-    }
+  66% {
+    background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1920');
+  }
 }
 
-@keyframes snowfall {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
+@keyframes drake-snowfall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
 
-    100% {
-        transform: translateY(100px) rotate(5deg);
-    }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
 }
 
-.hero-content {
-    max-width: 900px;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    animation: fadeInUp 1s ease-out;
+.drake-hero-content {
+  max-width: 850px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  animation: drake-fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -263,1306 +267,2172 @@
 .hero-details .hero-note {
     margin: 0 0 14px 0;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
+    transform: translateY(40px);
+  }
 
-.hero-details.expanded .hero-note {
+  to {
     opacity: 1;
     transform: translateY(0);
+  }
+
+
+.drake-hero-eyebrow {
+  font-size: 12px !important;
+  letter-spacing: 5px !important;
+  font-weight: 600 !important;
+  color: var(--gold);
+  text-transform: uppercase !important;
+  margin-bottom: 24px;
+  display: block;
 }
 
-.hero-read-more {
-    display: inline-block;
-    margin: 20px 0 0 0;
-    background: transparent;
-    border: none;
-    color: rgba(255, 255, 255, 0.9);
-    padding: 8px 0;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: var(--font-body);
-    text-decoration: none;
-    position: relative;
+.drake-hero h1 {
+  font-family: var(--font-display) !important;
+  font-size: 64px !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  color: #fff;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
-.hero-read-more::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.9);
-    transition: width 0.3s ease;
+.drake-hero-sub {
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 35px;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px !important;
 }
 
-.hero-read-more:hover {
-    color: #fff;
+.drake-hero-lead {
+  font-size: 19px !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
+  color: #ffffff !important;
+  margin-bottom: 16px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero-read-more:hover::after {
-    width: 100%;
+/* Hero Details with Read More Interaction */
+.drake-hero-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btns {
-    display: flex;
-    gap: 20px;
-    margin-top: 48px;
-    flex-wrap: wrap;
-    justify-content: center;
-    animation: fadeInUp 0.8s ease-out 1.1s both;
+.drake-hero-details.expanded {
+  max-height: 600px;
+  margin-top: 20px;
 }
 
-.btn-primary {
-    background: #fff;
-    color: #000;
-    padding: 16px 40px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    font-family: var(--font-body);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+.drake-hero-note {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 300 !important;
+  margin-bottom: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s ease;
+.drake-hero-read-more {
+  display: inline-block;
+  margin: 10px 0 30px 0;
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  padding: 8px 0;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-body) !important;
+  border-bottom: 1px solid transparent;
 }
 
-.btn-primary:hover::before {
-    left: 100%;
+.drake-hero-read-more:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
-.btn-primary:hover {
-    background: var(--bg-soft);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.drake-hero-btns {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.btn-secondary {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: #fff;
-    padding: 16px 40px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    font-family: var(--font-body);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
+.drake-btn-primary {
+  background: #ffffff;
+  color: #000000;
+  padding: 18px 44px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 1.5px !important;
+  font-family: var(--font-body) !important;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #fff;
-    color: #fff;
-    transform: translateY(-3px);
+.drake-btn-primary:hover {
+  background: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.drake-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 18px 44px;
+  cursor: pointer;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  letter-spacing: 1.5px !important;
+  font-family: var(--font-body) !important;
+  transition: all 0.3s ease;
+  text-transform: uppercase !important;
+  border-radius: 4px;
+}
+
+.drake-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
 @media (max-width: 900px) {
-    .hero {
-        padding: 140px 30px 100px;
-    }
+  .drake-hero h1 {
+    font-size: 48px !important;
+  }
 
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero-lead {
-        font-size: 15px;
-    }
+  .drake-hero-lead {
+    font-size: 17px !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 120px 20px 80px;
-        min-height: 100vh;
-    }
+  .drake-hero {
+    padding: 120px 20px 80px;
+  }
 
-    .hero h1 {
-        font-size: 32px;
-    }
+  .drake-hero h1 {
+    font-size: 36px !important;
+  }
 
-    .hero-btns {
-        flex-direction: column;
-    }
+  .drake-hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .btn-primary,
-    .btn-secondary {
-        text-align: center;
-    }
+  .drake-btn-primary,
+  .drake-btn-secondary {
+    width: 100%;
+    padding: 16px 20px;
+  }
 }
+
+/* ========================================
+   SHARED SECTION STYLES
+   Base section layouts, backgrounds, headings, paragraphs, and read-more buttons
+   ======================================== */
 
 /* ── SHARED SECTION ── */
-.section {
-    padding: 90px 40px;
-    display: flex;
-    justify-content: center;
+.drake-section {
+  padding: 90px 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.section-inner {
-    max-width: 950px;
-    width: 100%;
+.drake-section-inner {
+  max-width: 950px;
+  width: 100%;
 }
 
-.section-inner.wide {
-    max-width: 1100px;
+.drake-section-inner.wide {
+  max-width: 1100px;
 }
 
-.section-inner.narrow {
-    max-width: 750px;
+.drake-section-inner.narrow {
+  max-width: 750px;
 }
 
-.section-bg-white {
-    background: var(--bg-white);
+.drake-bg-white {
+  background: var(--bg-white);
 }
 
-.section-bg-soft {
-    background: var(--bg-soft);
+.drake-bg-soft {
+  background: var(--bg-soft);
 }
 
-.section-bg-cream {
-    background: var(--bg-cream);
+.drake-bg-cream {
+  background: var(--bg-cream);
 }
 
-.section-bg-dark {
-    background: linear-gradient(135deg, var(--bg-dark), var(--bg-dark2));
+.drake-bg-dark {
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-dark2));
 }
 
 /* ── HEADINGS ── */
-.section-h2 {
-    font-family: var(--font-display);
-    font-size: 48px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 30px;
-    line-height: 1;
-    text-align: center;
-    position: relative;
+.drake-section-h2 {
+  font-family: var(--font-display) !important;
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  color: var(--navy);
+  margin-bottom: 30px;
+  line-height: 1 !important;
+  text-align: center;
+  position: relative;
 }
 
-.section-h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: var(--navy);
-    margin: 16px auto 0;
-    border-radius: 2px;
+.drake-section-h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--navy);
+  margin: 16px auto 0;
+  border-radius: 2px;
 }
 
-.section-h2.left-bar::after {
-    margin: 16px 0 0;
+.drake-section-h2.left-bar::after {
+  margin: 16px 0 0;
 }
 
-.section-h2.white {
-    color: #fff;
+.drake-section-h2.white {
+  color: #fff;
 }
 
-.section-h2.white::after {
-    background: #fff;
+.drake-section-h2.white::after {
+  background: #fff;
 }
 
-.section-h2.gold-bar::after {
-    background: var(--gold);
+.drake-section-h2.gold-bar::after {
+  background: var(--gold);
 }
 
 /* ── READ MORE BUTTON ── */
-.read-more-btn {
-    display: block;
-    margin: 20px auto 0;
-    background: transparent;
-    border: none;
-    color: var(--navy);
-    padding: 8px 0;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: var(--font-body);
-    text-transform: uppercase;
-    text-decoration: none;
-    position: relative;
+.drake-read-more-btn {
+  display: block;
+  margin: 20px auto 0;
+  background: transparent;
+  border: none;
+  color: var(--navy);
+  padding: 8px 0;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-body) !important;
+  text-transform: uppercase !important;
+  text-decoration: none;
+  position: relative;
 }
 
-.read-more-btn::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 1px;
-    background: var(--navy);
-    transition: width 0.3s ease;
+.drake-read-more-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: var(--navy);
+  transition: width 0.3s ease;
 }
 
-.read-more-btn:hover {
-    color: var(--navy);
-    opacity: 0.7;
+.drake-read-more-btn:hover {
+  color: var(--navy);
+  opacity: 0.7;
 }
 
-.read-more-btn:hover::after {
-    width: 100%;
+.drake-read-more-btn:hover::after {
+  width: 100%;
 }
 
 /* ── PARAGRAPHS ── */
-.section-p {
-    font-size: 1.125rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
-    margin-bottom: 24px;
-    text-align: center;
+.drake-section-p {
+  font-size: 1.125rem !important;
+  line-height: 1.65 !important;
+  font-weight: 300 !important;
+  color: var(--navy-light);
+  font-family: var(--font-body) !important;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
-.section-p.left {
-    text-align: left;
+.drake-section-p.left {
+  text-align: left;
 }
 
-.section-p.white {
-    color: rgba(255, 255, 255, 0.85);
+.drake-section-p.white {
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.section-p:last-child {
-    margin-bottom: 0;
+.drake-section-p:last-child {
+  margin-bottom: 0;
 }
+
+/* ========================================
+   WHAT IS THE DRAKE PASSAGE (SECTION 1)
+   3-column grid layout introducing the Drake Passage
+   ======================================== */
 
 /* ── WHAT IS DRAKE ── */
-.what-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 48px;
+
+/* Layout container for the split view */
+.drake-layout-split {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  /* Clean split favoring the content side */
+  gap: 60px;
+  align-items: start;
+  text-align: left;
 }
 
-.what-card {
-    background: linear-gradient(145deg, #fff, var(--bg-soft));
-    padding: 36px 28px;
-    border-radius: 16px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+.drake-title-side {
+  position: sticky;
+  top: 120px;
+}
+
+.drake-section-number {
+  display: block;
+  font-family: var(--font-display) !important;
+  font-size: 14px !important;
+  color: var(--gold);
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  margin-bottom: 15px;
+}
+
+.drake-content-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Highlighting the lead paragraph */
+.drake-lead-text {
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+  color: var(--navy);
+  font-weight: 500 !important;
+  font-family: var(--font-display) !important;
+}
+
+.drake-section-p-clean {
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+  margin-bottom: 30px;
+}
+
+/* Editorial note styling */
+.drake-editorial-note {
+  border-left: 3px solid var(--gold);
+  padding: 10px 0 10px 30px;
+  background: rgba(231, 243, 245, 0.4);
+  /* subtle use of var(--bg-soft) */
+  border-radius: 0 8px 8px 0;
+}
+
+.drake-editorial-note p {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  font-style: italic !important;
+  color: var(--navy);
+  font-weight: 400 !important;
+}
+
+/* Maintain responsiveness */
+@media (max-width: 1024px) {
+  .drake-layout-split {
+    grid-template-columns: 1fr;
+    /* Stack on smaller screens */
+    gap: 40px;
+  }
+
+  .drake-title-side {
+    position: static;
     text-align: center;
-    transition: transform 0.35s, box-shadow 0.35s;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-}
+  }
 
-.what-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
-}
+  .drake-section-h2.left-bar::after {
+    margin: 16px auto 0;
+    /* Center the bar on mobile */
+  }
 
-.what-card-icon {
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-.what-card h3 {
-    font-family: var(--font-display);
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 12px;
-}
-
-.what-card p {
-    font-size: 0.975rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
+  .drake-lead-text,
+  .drake-section-p-clean {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
-    .what-grid {
-        grid-template-columns: 1fr;
-    }
+  .drake-text-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drake-lead-text {
+    font-size: 20px !important;
+  }
+
+  .drake-editorial-note {
+    padding: 20px;
+    border-left: none;
+    border-top: 3px solid var(--gold);
+    text-align: center;
+  }
+}
+
+/* ========================================
+   HOW ROUGH IS THE DRAKE PASSAGE (SECTION 2)
+   Lake vs Shake comparison cards showing calm vs active conditions
+   ======================================== */
+
+/* ── HOW ROUGH ── */
+
+.drake-roughness-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.drake-roughness-title-side {
+  position: sticky;
+  top: 120px;
+  text-align: left;
+}
+
+.drake-roughness-lead-text {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: var(--navy);
+  font-weight: 500 !important;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.drake-roughness-term-intro {
+  font-size: 14px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: var(--gold);
+  font-weight: 600 !important;
+}
+
+.drake-lake-shake-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.drake-term-card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.drake-term-card:hover {
+  transform: translateY(-5px);
+}
+
+.drake-term-card.drake-lake {
+  background: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.drake-term-card.drake-shake {
+  background: var(--bg-dark);
+}
+
+.drake-term-card h3 {
+  font-family: var(--font-display) !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  margin-bottom: 15px;
+}
+
+.drake-term-card.drake-lake h3 {
+  color: var(--navy);
+}
+
+.drake-term-card.drake-shake h3 {
+  color: #fff;
+}
+
+.drake-white-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.drake-term-badge {
+  display: inline-block;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  font-weight: 700 !important;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase !important;
+}
+
+.drake-term-card.drake-lake .drake-term-badge {
+  background: var(--bg-soft);
+  color: var(--navy);
+}
+
+.drake-gold-badge {
+  background: var(--gold) !important;
+  color: #000 !important;
+}
+
+.drake-roughness-summary {
+  text-align: left;
+}
+
+.drake-roughness-summary .drake-section-p-clean {
+  margin-bottom: 30px;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+.drake-roughness-summary .drake-editorial-note {
+  border-left: 2px solid var(--gold);
+  padding-left: 25px;
+}
+
+.drake-roughness-summary .drake-editorial-note p {
+  font-style: italic !important;
+  color: var(--navy);
+  font-weight: 500 !important;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .drake-roughness-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-roughness-title-side {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-roughness-title-side .drake-section-h2::after {
+    margin: 20px auto 0;
+  }
+
+  .drake-roughness-summary {
+    text-align: center;
+  }
+
+  .drake-roughness-summary .drake-editorial-note {
+    border-left: none;
+    border-top: 2px solid var(--gold);
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .drake-lake-shake-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   HOW SHIPS HANDLE (SECTION 4)
+   Ship features including stabilization, hull design, and expert crew
+   ======================================== */
+
+/* ── SHIPS SECTION ── */
+
+.drake-ship-container {
+  text-align: center;
+}
+
+.drake-ship-header {
+  margin-bottom: 40px;
+}
+
+.drake-ship-lead {
+  font-size: 20px !important;
+  color: var(--navy) !important;
+  font-weight: 500 !important;
+  max-width: 800px;
+  margin: 0 auto 20px !important;
+  line-height: 1.5 !important;
+}
+
+.drake-ship-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.drake-ship-card {
+  background: var(--bg-cream);
+  padding: 40px 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-ship-card:hover {
+  transform: translateY(-8px);
+  background: white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.drake-ship-icon {
+  font-size: 32px !important;
+  margin-bottom: 20px;
+}
+
+.drake-ship-card h3 {
+  font-family: var(--font-body) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--navy);
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  line-height: 1.4 !important;
+  min-height: 45px;
+}
+
+.drake-ship-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin-top: 15px;
+}
+
+.drake-ship-footer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Reusing your editorial note style but specifically for this footer */
+.drake-ship-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding: 30px 0 0 0;
+  margin-top: 20px;
+}
+
+.drake-ship-footer .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: var(--navy);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .drake-ship-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-ship-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .drake-ship-lead {
+    font-size: 18px !important;
+  }
+
+  .drake-ship-card {
+    padding: 30px 20px;
+  }
+}
+
+/* ========================================
+   IS IT DANGEROUS (SECTION 5)
+   Safety information addressing concerns about the Drake Passage
+   ======================================== */
+
+/* ── DANGER CALLOUT ── */
+
+.drake-safety-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--bg-cream);
+  /* Ensuring background is cream */
+}
+
+/* Fix: Header is outside the navy box to ensure maximum visibility on cream background */
+.drake-safety-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Ensure the heading uses Navy color for visibility on Cream */
+.drake-safety-header .drake-section-h2 {
+  color: var(--navy) !important;
+}
+
+.drake-danger-box {
+  background: var(--navy);
+  /* Dark background */
+  border-radius: 24px;
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(15, 28, 46, 0.2);
+}
+
+/* Lead text specific styling - Forced to white for contrast against navy box */
+.drake-danger-lead {
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 30px !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* All other paragraphs inside the navy box forced to white/light */
+.drake-danger-box .drake-section-p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 24px;
+}
+
+/* Highlighted conclusion block inside navy box */
+.drake-danger-conclusion {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drake-danger-conclusion .drake-section-p {
+  font-family: var(--font-display) !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: var(--gold) !important;
+  /* Gold looks great on Navy */
+}
+
+/* Safety Badge inside navy box */
+.drake-safe-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(198, 161, 91, 0.1);
+  border: 1px solid var(--gold);
+  padding: 8px 20px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: var(--gold);
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .drake-danger-box {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-danger-box {
+    padding: 40px 25px;
+    border-radius: 16px;
+  }
+}
+
+/* ========================================
+   WHAT IT FEELS LIKE (SECTION 6)
+   Clean editorial layout describing the sensory experience
+   ======================================== */
+
+/* ── FEELS LIKE ── */
+
+.drake-feels-like-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.drake-feels-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  /* Split for clean editorial look */
+  gap: 80px;
+  align-items: start;
+}
+
+.drake-feels-title-side {
+  position: sticky;
+  top: 120px;
+}
+
+.drake-feels-content-side {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Lead Paragraph Styling */
+.drake-feels-lead {
+  font-family: var(--font-display) !important;
+  font-size: 22px !important;
+  line-height: 1.4 !important;
+  color: var(--navy);
+  font-weight: 500 !important;
+  margin-bottom: 5px;
+}
+
+/* Central experience box with subtle background */
+.drake-feels-experience-box {
+  background: var(--bg-soft);
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  border-left: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.drake-feels-experience-box .drake-section-p-clean {
+  margin-bottom: 0;
+  font-style: italic !important;
+  font-size: 17px !important;
+  color: var(--navy);
+}
+
+/* Paragraph 3 styling */
+.drake-feels-details .drake-section-p-clean {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+}
+
+/* Final Editorial Note (Paragraph 4) */
+.drake-feels-content-side .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding: 30px 0 0 0;
+  margin-top: 10px;
+}
+
+.drake-feels-content-side .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: var(--navy);
+  line-height: 1.5 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .drake-feels-grid {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .what-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* ── HOW ROUGH ── */
-.lake-shake {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    margin-top: 48px;
-}
-
-.term-card {
-    padding: 40px 32px;
-    border-radius: 20px;
+  .drake-feels-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.term-card.lake {
-    background: linear-gradient(135deg, #e7f3f5, #c8e6ea);
-}
-
-.term-card.shake {
-    background: linear-gradient(135deg, #274472, #1a2f54);
-}
-
-.term-card h3 {
-    font-family: var(--font-display);
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 14px;
-}
-
-.term-card.lake h3 {
-    color: var(--navy);
-}
-
-.term-card.shake h3 {
-    color: #fff;
-}
-
-.term-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 300;
-    font-family: var(--font-body);
-}
-
-.term-card.lake p {
-    color: var(--navy-light);
-}
-
-.term-card.shake p {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.term-badge {
-    display: inline-block;
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    padding: 6px 16px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.term-card.lake .term-badge {
-    background: var(--navy);
-    color: #fff;
-}
-
-.term-card.shake .term-badge {
-    background: var(--gold);
-    color: #000;
-}
-
-@media (max-width: 640px) {
-    .lake-shake {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── SHIPS SECTION ── */
-.ship-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 44px;
-}
-
-.ship-pill {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: linear-gradient(145deg, #fff, var(--bg-soft));
-    padding: 16px 28px;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--navy);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.35s ease;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-}
-
-.ship-pill:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
-}
-
-.ship-pill-icon {
-    font-size: 22px;
-}
-
-/* ── DANGER CALLOUT ── */
-.danger-box {
-    background: var(--navy);
-    border-radius: 20px;
-    padding: 50px 48px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.25);
-}
-
-.danger-box::before {
-    content: "";
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: rgba(198, 161, 91, 0.12);
-}
-
-.danger-box h2 {
-    color: #fff;
-}
-
-.danger-box h2::after {
-    background: var(--gold);
-}
-
-.danger-box .section-p {
-    color: rgba(255, 255, 255, 0.82);
-    text-align: center;
-}
-
-.safe-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(198, 161, 91, 0.15);
-    border: 1px solid var(--gold);
-    padding: 12px 28px;
-    border-radius: 30px;
-    margin-top: 28px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 1px;
-}
-
-/* ── FEELS LIKE ── */
-.feels-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-top: 48px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.14);
-}
-
-.feels-panel {
-    padding: 48px 40px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-.feels-panel::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.feels-panel.calm {
-    background-color: var(--bg-soft);
-}
-
-.feels-panel.active {
-    background: var(--navy);
-}
-
-.feels-panel-inner {
-    position: relative;
-    z-index: 1;
-}
-
-.feels-label {
-    font-size: 11px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    display: block;
-}
-
-.feels-panel.calm .feels-label {
-    color: var(--navy);
-}
-
-.feels-panel.active .feels-label {
-    color: var(--gold);
-}
-
-.feels-panel h3 {
-    font-family: var(--font-display);
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 14px;
-}
-
-.feels-panel.calm h3 {
-    color: var(--navy);
-}
-
-.feels-panel.active h3 {
-    color: #fff;
-}
-
-.feels-panel p {
-    font-size: 1rem;
-    line-height: 1.65;
-    font-weight: 300;
-    font-family: var(--font-body);
-}
-
-.feels-panel.calm p {
-    color: var(--navy-light);
-}
-
-.feels-panel.active p {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 640px) {
-    .feels-split {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── FLY VS CROSS ── */
-.choice-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    margin-top: 48px;
-}
-
-.choice-card {
-    padding: 44px 36px;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    transition: all 0.35s;
-}
-
-.choice-card.cross {
-    background: var(--bg-soft);
-    border-color: var(--navy);
-}
-
-.choice-card.fly {
-    background: var(--bg-cream);
-    border-color: rgba(39, 68, 114, 0.2);
-}
-
-.choice-card h3 {
-    font-family: var(--font-display);
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 8px;
-}
-
-.choice-card .choice-sub {
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    display: block;
-}
-
-.choice-list {
-    list-style: none;
-}
-
-.choice-list li {
-    font-size: 0.975rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.choice-list li:last-child {
-    border-bottom: none;
-}
-
-.choice-list li::before {
-    content: "›";
-    color: var(--navy);
-    font-weight: 600;
-    margin-top: 1px;
-}
-
-@media (max-width: 640px) {
-    .choice-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── WHO IS IT RIGHT FOR ── */
-.audience-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 48px;
-}
-
-.audience-card {
-    padding: 36px 32px;
-    border-radius: 16px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
-    border: 1px solid rgba(39, 68, 114, 0.1);
-    transition: all 0.35s;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(8px);
-}
-
-.audience-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.audience-card h3 {
-    font-family: var(--font-display);
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.audience-card p {
-    font-size: 0.975rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
-    margin-bottom: 10px;
-}
-
-@media (max-width: 640px) {
-    .audience-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── PREPARE ── */
-.prepare-steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 48px;
-}
-
-.prepare-step {
-    padding: 32px 24px;
-    border-radius: 16px;
-    text-align: center;
-    background: linear-gradient(145deg, #fff, var(--bg-soft));
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    transition: transform 0.3s;
-}
-
-.prepare-step:hover {
-    transform: translateY(-5px);
-}
-
-.step-num {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--navy);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 18px;
-    font-family: var(--font-display);
-}
-
-.prepare-step h3 {
-    font-family: var(--font-display);
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 10px;
-}
-
-.prepare-step p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
-}
-
-@media (max-width: 900px) {
-    .prepare-steps {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .prepare-steps {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── EXPERT INSIGHT ── */
-.expert-box {
-    max-width: 800px;
+  }
+
+  .drake-feels-title-side {
+    position: static;
+  }
+
+  .drake-feels-title-side .drake-section-h2::after {
+    margin: 20px auto 0;
+  }
+
+  .drake-feels-experience-box {
+    border-left: none;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+  }
+
+  .drake-feels-content-side .drake-editorial-note {
+    border-top: 2px solid var(--gold);
     margin: 0 auto;
-    background: linear-gradient(120deg, var(--gold), #fff, var(--gold));
-    padding: 3px;
-    border-radius: 24px;
-}
-
-.expert-inner {
-    background: #f8f7f3;
-    border-radius: 22px;
-    padding: 64px 72px;
-    text-align: center;
-}
-
-.expert-quote {
-    font-family: var(--font-display);
-    font-size: 24px;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--navy);
-    line-height: 1.55;
-    margin-bottom: 32px;
-    position: relative;
-}
-
-.expert-quote::before {
-    content: "\\201C";
-    font-size: 80px;
-    color: var(--gold);
-    line-height: 0;
-    position: relative;
-    top: 28px;
-    margin-right: 8px;
-    opacity: 0.4;
-}
-
-.expert-name {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: var(--navy);
-    text-transform: uppercase;
-    margin-bottom: 4px;
-}
-
-.expert-title {
-    font-size: 12px;
-    color: var(--navy-light);
-    font-weight: 300;
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
-    .expert-inner {
-        padding: 40px 28px;
-    }
+  .drake-feels-lead {
+    font-size: 20px !important;
+  }
 
-    .expert-quote {
-        font-size: 18px;
-    }
+  .drake-feels-experience-box {
+    padding: 30px 20px;
+  }
+
+  .drake-feels-content-side .drake-editorial-note {
+    max-width: 100%;
+  }
 }
 
-/* ── WHAT HAPPENS NEXT ── */
-.next-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 48px;
+/* ========================================
+   CROSS OR FLY (SECTION 7)
+   Comparison between crossing the Drake Passage vs fly-cruise options
+   ======================================== */
+
+/* ── FLY VS CROSS ── */
+
+.drake-choice-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.next-step {
-    display: flex;
-    align-items: flex-start;
-    gap: 28px;
-    padding: 32px 40px;
-    position: relative;
-    transition: background 0.3s;
+.drake-choice-header {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.next-step:hover {
-    background: rgba(39, 68, 114, 0.04);
-    border-radius: 12px;
+.drake-choice-intro {
+  font-size: 18px !important;
+  color: var(--navy-light) !important;
+  margin-top: 20px !important;
+  font-weight: 400 !important;
 }
 
-.next-step-num {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: var(--navy);
-    color: #fff;
-    font-family: var(--font-display);
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+.drake-choice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
-.next-step-body h3 {
-    font-family: var(--font-display);
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 8px;
+.drake-choice-card {
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.next-step-body p {
-    font-size: 1rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
+.drake-choice-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-.next-connector {
-    width: 2px;
-    height: 32px;
-    background: rgba(39, 68, 114, 0.15);
-    margin-left: 64px;
+/* Accent for the "Cross" card to make it feel more "traditional" */
+.drake-choice-card.drake-cross {
+  border-top: 4px solid var(--navy);
 }
 
-/* ── WHY BOOK ── */
-.why-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
-    margin-top: 0;
+/* Accent for the "Fly" card */
+.drake-choice-card.drake-fly {
+  border-top: 4px solid var(--gold);
 }
 
-.why-text .section-h2 {
-    text-align: left;
+.drake-choice-badge {
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: var(--gold);
+  margin-bottom: 15px;
+  display: block;
 }
 
-.why-text .section-h2::after {
-    margin: 16px 0 0;
+.drake-choice-card h3 {
+  font-family: var(--font-display) !important;
+  font-size: 26px !important;
+  color: var(--navy);
+  margin-bottom: 30px;
+  font-weight: 500 !important;
 }
 
-.why-text .section-p {
-    text-align: left;
+.drake-choice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.why-benefits {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.drake-choice-list li {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.why-benefit {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 18px 22px;
-    border-radius: 12px;
-    background: linear-gradient(145deg, #fff, var(--bg-soft));
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-    border-left: 3px solid var(--gold);
-    transition: transform 0.3s;
+.drake-choice-list li::before {
+  content: "—";
+  color: var(--gold);
+  font-weight: bold !important;
 }
 
-.why-benefit:hover {
-    transform: translateX(6px);
+.drake-choice-list li:last-child {
+  border-bottom: none;
 }
 
-.why-benefit p {
-    font-size: 0.975rem;
-    font-weight: 400;
-    color: var(--navy);
-    font-family: var(--font-body);
+/* Footer & Verdict Styling */
+.drake-choice-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.why-image-stack {
-    position: relative;
-    height: 480px;
+.drake-choice-verdict {
+  margin-bottom: 20px;
 }
 
-.why-img {
-    position: absolute;
-    border-radius: 16px;
-    object-fit: cover;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-    transition: transform 0.4s;
+.drake-choice-verdict .drake-section-p-clean {
+  font-family: var(--font-display) !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: var(--navy);
 }
 
-.why-img:hover {
-    transform: scale(1.03);
-    z-index: 10;
+.drake-choice-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding-top: 25px;
+  margin-top: 30px;
 }
 
-.why-img-1 {
-    width: 68%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    z-index: 3;
+.drake-choice-footer .drake-editorial-note p {
+  font-style: italic !important;
+  font-size: 18px !important;
+  color: var(--navy);
 }
 
-.why-img-2 {
-    width: 62%;
-    height: 260px;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-}
-
-@media (max-width: 900px) {
-    .why-split {
-        grid-template-columns: 1fr;
-    }
-
-    .why-image-stack {
-        display: none;
-    }
-
-    .why-text .section-h2 {
-        text-align: center;
-    }
-
-    .why-text .section-h2::after {
-        margin: 16px auto 0;
-    }
-
-    .why-text .section-p {
-        text-align: center;
-    }
-}
-
-/* ── AUTHOR PROOF ── */
-.author-bar {
-    background: linear-gradient(135deg, var(--bg-dark), var(--bg-dark2));
-    padding: 60px 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.author-inner {
-    max-width: 900px;
-    width: 100%;
-}
-
-.author-profile {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.author-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    border: 3px solid var(--gold);
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--navy), #1a2f54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-size: 36px;
-    color: var(--gold);
-}
-
-.author-info h3 {
-    font-family: var(--font-display);
-    font-size: 28px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 4px;
-}
-
-.author-info .author-title {
-    font-size: 13px;
-    color: var(--gold);
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.author-stats {
-    display: flex;
-    flex-wrap: wrap;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .drake-choice-grid {
     gap: 20px;
+  }
+
+  .drake-choice-card {
+    padding: 40px 25px;
+  }
 }
 
-.author-stat {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 10px 18px;
-    border-radius: 8px;
+@media (max-width: 768px) {
+  .drake-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drake-choice-card h3 {
+    font-size: 22px !important;
+  }
+
+  .drake-choice-footer {
+    padding: 0 10px;
+  }
 }
 
-.author-stat .stat-val {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--gold);
-    font-family: var(--font-display);
+/* ========================================
+   WHO IS IT RIGHT FOR (SECTION 8)
+   Audience targeting to help travelers determine suitability
+   ======================================== */
+
+/* ── WHO IS IT RIGHT FOR ── */
+
+.drake-audience-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.author-stat .stat-lbl {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.drake-audience-header {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.author-awards {
-    margin-top: 28px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+.drake-audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
 }
 
-.award-badge {
-    font-size: 11px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(198, 161, 91, 0.15);
-    border: 1px solid rgba(198, 161, 91, 0.35);
-    padding: 7px 16px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
+.drake-audience-card {
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 640px) {
-    .author-profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .author-stats {
-        justify-content: center;
-    }
-
-    .author-awards {
-        justify-content: center;
-    }
+.drake-audience-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
-/* ── FAQ ── */
-.faq-list {
-    margin-top: 48px;
+.drake-audience-icon-wrap {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-soft);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-shrink: 0;
 }
 
-.faq-item {
-    border-top: 1px solid rgba(39, 68, 114, 0.12);
-    padding: 22px 0;
-    cursor: pointer;
-    transition: all 0.3s;
+.drake-suited .drake-audience-icon {
+  color: var(--navy);
+  font-weight: bold !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.faq-item:last-child {
-    border-bottom: 1px solid rgba(39, 68, 114, 0.12);
+.drake-alternatives .drake-audience-icon {
+  color: var(--gold);
+  font-weight: bold !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.faq-q {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--navy);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--font-body);
-    transition: color 0.3s;
+.drake-audience-card h3 {
+  font-family: var(--font-display) !important;
+  font-size: 22px !important;
+  color: var(--navy);
+  margin-bottom: 25px;
+  font-weight: 500 !important;
 }
 
-.faq-item:hover .faq-q {
-    color: #1a5276;
+.drake-audience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.faq-icon {
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--gold);
-    transition: transform 0.35s;
-    flex-shrink: 0;
-    margin-left: 16px;
+.drake-audience-list li {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.faq-item.open .faq-icon {
-    transform: rotate(180deg);
+.drake-audience-list li:last-child {
+  border-bottom: none;
 }
 
-.faq-a {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.45s ease, margin 0.3s ease;
-    font-size: 1rem;
-    line-height: 1.65;
-    font-weight: 300;
-    color: var(--navy-light);
-    font-family: var(--font-body);
+/* Footer Conclusion */
+.drake-audience-footer {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.faq-item.open .faq-a {
-    max-height: 200px;
-    margin-top: 14px;
+.drake-audience-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding-top: 25px;
 }
 
-/* ── FINAL CTA ── */
-.final-cta {
-    position: relative;
-    padding: 120px 20px;
-    background: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+.drake-audience-footer .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: var(--navy);
 }
 
-.final-cta::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 0;
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .drake-audience-grid {
+    gap: 20px;
+  }
+
+  .drake-audience-card {
+    padding: 40px 30px;
+  }
 }
 
-.final-cta-inner {
-    max-width: 680px;
-    width: 100%;
-    z-index: 1;
+@media (max-width: 768px) {
+  .drake-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drake-audience-card h3 {
+    font-size: 20px !important;
+  }
+
+  .drake-audience-footer {
+    padding: 0 15px;
+  }
 }
 
-.final-cta h2 {
-    font-family: var(--font-display);
-    font-size: 52px;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 24px;
-    line-height: 1.1;
+/* ========================================
+   HOW TO PREPARE (SECTION 9)
+   4-step preparation guide for the Drake Passage crossing
+   ======================================== */
+
+/* ── PREPARE ── */
+
+.drake-prepare-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.final-cta h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: var(--gold);
-    margin: 18px auto 0;
+.drake-prepare-header {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.final-cta p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 16px;
-    font-family: var(--font-body);
+.drake-prepare-intro {
+  font-size: 18px !important;
+  color: var(--navy) !important;
+  font-weight: 500 !important;
+  margin-top: 20px !important;
 }
 
-.final-cta .cta-em {
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    margin: 30px 0;
+.drake-prepare-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
 }
 
-.cta-btn {
-    margin-top: 20px;
-    padding: 16px 44px;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    border: 1px solid #fff;
-    background: #fff;
-    color: #000;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: var(--font-body);
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: all 0.35s;
+.drake-prepare-card {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(39, 68, 114, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
 }
 
-.cta-btn:hover {
-    background: transparent;
-    color: #fff;
-    transform: translateY(-3px);
+.drake-prepare-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: var(--gold);
 }
 
-/* ── FADE IN ── */
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+.drake-prepare-step-num {
+  width: 40px;
+  height: 40px;
+  background: var(--navy);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 25px;
 }
 
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+.drake-prepare-text {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+  font-family: var(--font-body) !important;
 }
 
-@media (max-width: 900px) {
-    .section {
-        padding: 70px 24px;
-    }
+.drake-prepare-footer {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    .section-h2 {
-        font-size: 38px;
-    }
+.drake-prepare-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding-top: 30px;
+  margin-top: 10px;
+}
 
-    .section-p {
-        font-size: 1rem;
-    }
+.drake-prepare-footer .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: var(--navy);
+  line-height: 1.5 !important;
+}
+
+/* Responsive Logic */
+@media (max-width: 1100px) {
+  .drake-prepare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-prepare-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .drake-prepare-grid {
+    gap: 16px;
+  }
+
+  .drake-prepare-card {
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 480px) {
-    .section {
-        padding: 56px 16px;
-    }
+  .drake-prepare-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .section-h2 {
-        font-size: 30px;
-    }
+  .drake-prepare-header .drake-section-h2 {
+    font-size: 28px !important;
+  }
+}
+
+/* ========================================
+   EXPERT INSIGHT (SECTION 10)
+   Angela Hughes' expertise quote and credentials display
+   ======================================== */
+
+/* ── EXPERT INSIGHT ── */
+
+.drake-expert-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--bg-cream);
+}
+
+.drake-expert-card {
+  background: #ffffff;
+  padding: 80px 70px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.08);
+  position: relative;
+  text-align: center;
+}
+
+.drake-expert-header {
+  margin-bottom: 40px;
+}
+
+.drake-expert-header .drake-section-h2 {
+  font-size: 32px !important;
+  color: var(--navy);
+  margin-bottom: 0;
+}
+
+.drake-expert-header .drake-section-h2::after {
+  margin: 20px auto 0;
+  width: 50px;
+  background: var(--gold);
+}
+
+.drake-expert-quote-content {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.drake-expert-quote-mark {
+  font-family: var(--font-display) !important;
+  font-size: 80px !important;
+  color: var(--gold);
+  line-height: 1 !important;
+  height: 40px;
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.drake-expert-paragraph {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: var(--navy-light);
+  margin-bottom: 24px;
+  font-weight: 300 !important;
+  font-family: var(--font-body) !important;
+}
+
+/* Treat the first paragraph as a lead */
+.drake-expert-paragraph.drake-highlight {
+  font-size: 21px !important;
+  color: var(--navy) !important;
+  font-weight: 500 !important;
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+}
+
+/* Final punchy insight paragraph */
+.drake-expert-paragraph.drake-final-insight {
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  margin-bottom: 0;
+}
+
+.drake-expert-attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drake-expert-line {
+  width: 30px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 15px;
+}
+
+.drake-expert-name {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.drake-expert-title {
+  font-size: 12px !important;
+  color: var(--navy-light);
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .drake-expert-card {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-expert-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .drake-expert-card {
+    padding: 50px 25px;
+    border-radius: 20px;
+  }
+
+  .drake-expert-paragraph.drake-highlight {
+    font-size: 19px !important;
+  }
+
+  .drake-expert-paragraph {
+    font-size: 16px !important;
+  }
+}
+
+/* ========================================
+   WHAT HAPPENS NEXT (SECTION 11)
+   Step-by-step booking process outline
+   ======================================== */
+
+/* ── WHAT HAPPENS NEXT ── */
+
+.drake-next-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.drake-next-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.drake-next-steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.drake-next-step-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.drake-next-step-row:hover {
+  transform: translateX(10px);
+  border-color: var(--gold);
+}
+
+.drake-next-step-circle {
+  width: 48px;
+  height: 48px;
+  background: var(--navy);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--font-display) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.drake-next-step-body {
+  flex-grow: 1;
+}
+
+.drake-next-step-body .drake-section-p-clean {
+  margin-bottom: 0;
+  font-size: 16px !important;
+  color: var(--navy);
+  font-weight: 400 !important;
+  text-align: left;
+}
+
+/* Vertical line connecting the steps */
+.drake-next-connector {
+  width: 2px;
+  height: 30px;
+  background: var(--gold);
+  opacity: 0.4;
+  margin: 5px 0;
+}
+
+/* Footer note styling */
+.drake-next-footer {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.drake-next-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+
+.drake-next-footer .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: var(--navy);
+  line-height: 1.5 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .drake-next-step-row {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .drake-next-step-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px !important;
+  }
+
+  .drake-next-step-body .drake-section-p-clean {
+    font-size: 15px !important;
+  }
+
+  .drake-next-footer .drake-editorial-note p {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-next-step-row:hover {
+    transform: none;
+    /* Disable hover shift on small mobile for stability */
+  }
+}
+
+/* ========================================
+   WHY BOOK (SECTION 12)
+   Benefits of booking with Angela Hughes and Trips & Ships
+   ======================================== */
+
+/* ── WHY BOOK ── */
+
+.drake-why-book-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.drake-why-main-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.drake-why-header {
+  text-align: left;
+}
+
+.drake-why-header .drake-section-h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.drake-why-header .drake-section-h2::after {
+  margin: 20px 0 0;
+}
+
+.drake-why-intro {
+  font-family: var(--font-display) !important;
+  font-size: 22px !important;
+  line-height: 1.4 !important;
+  color: var(--navy);
+  font-weight: 500 !important;
+  margin-bottom: 25px;
+}
+
+.drake-why-bio .drake-section-p-clean {
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: var(--navy-light);
+  font-weight: 300 !important;
+}
+
+/* Benefits Section Styling */
+.drake-why-benefits-area {
+  margin-bottom: 60px;
+}
+
+.drake-why-benefit-title {
+  font-size: 14px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: var(--gold);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.drake-why-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.drake-why-benefit-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 30px;
+  background: var(--bg-soft);
+  border-radius: 12px;
+  border-left: 3px solid var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.drake-why-benefit-card:hover {
+  transform: translateX(10px);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.drake-why-benefit-icon {
+  color: var(--gold);
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.drake-why-benefit-card p {
+  font-family: var(--font-body) !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--navy);
+  margin: 0;
+}
+
+/* Footer note styling */
+.drake-why-footer {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.drake-why-footer .drake-editorial-note {
+  border-top: 2px solid var(--gold);
+  border-left: none;
+  padding-top: 30px;
+}
+
+.drake-why-footer .drake-editorial-note p {
+  font-family: var(--font-display) !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: var(--navy);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .drake-why-main-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .drake-why-header {
+    text-align: center;
+  }
+
+  .drake-why-header .drake-section-h2::after {
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-why-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drake-why-benefit-card {
+    padding: 20px;
+  }
+
+  .drake-why-intro {
+    font-size: 20px !important;
+  }
+}
+
+/* ========================================
+   AUTHOR PROOF BAR
+   Angela Hughes' profile, stats, awards, and credentials showcase
+   ======================================== */
+
+/* ── AUTHOR PROOF ── */
+
+.drake-author-bar {
+  background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+.drake-author-inner {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.drake-author-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.drake-author-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--gold);
+  background: rgba(39, 68, 114, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display) !important;
+  font-size: 42px !important;
+  color: var(--gold);
+  box-shadow: 0 0 30px rgba(198, 161, 91, 0.15);
+}
+
+.drake-author-eyebrow {
+  display: block;
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 600 !important;
+}
+
+.drake-author-name {
+  font-family: var(--font-display) !important;
+  font-size: 36px !important;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 500 !important;
+}
+
+.drake-author-title {
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px !important;
+  margin-bottom: 30px;
+  font-weight: 400 !important;
+}
+
+/* Stats Styling */
+.drake-author-stats-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.drake-author-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.drake-stat-val {
+  font-family: var(--font-display) !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: var(--gold);
+  line-height: 1 !important;
+}
+
+.drake-stat-lbl {
+  font-size: 11px !important;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-top: 8px;
+}
+
+/* Awards Badge Styling */
+.drake-author-awards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.drake-award-badge {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(198, 161, 91, 0.3);
+  padding: 10px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Media note footer */
+.drake-author-media-note p {
+  font-size: 13px !important;
+  font-style: italic !important;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  display: inline-block;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .drake-author-profile {
+    gap: 30px;
+  }
+
+  .drake-author-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-author-bar {
+    padding: 60px 20px;
+  }
+
+  .drake-author-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .drake-author-stats-row {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .drake-author-awards-grid {
+    align-items: center;
+  }
+
+  .drake-award-badge {
+    text-align: center;
+  }
+
+  .drake-author-name {
+    font-size: 30px !important;
+  }
+}
+
+/* ========================================
+   FAQ SECTION (SECTION 14)
+   Accordion-style frequently asked questions
+   ======================================== */
+
+/* ── FAQ ── */
+
+.drake-faq-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.drake-faq-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.drake-faq-sub {
+  font-size: 16px !important;
+  color: var(--navy-light);
+  margin-top: 20px;
+  font-weight: 300 !important;
+}
+
+.drake-faq-list {
+  border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.drake-faq-item {
+  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.drake-faq-item:hover {
+  background: rgba(231, 243, 245, 0.3);
+  /* Subtle var(--bg-soft) hint */
+}
+
+.drake-faq-q {
+  padding: 24px 10px;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body) !important;
+  transition: color 0.3s ease;
+}
+
+.drake-faq-item:hover .drake-faq-q {
+  color: var(--gold);
+}
+
+.drake-faq-icon {
+  font-size: 18px !important;
+  color: var(--gold);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 20px;
+}
+
+.drake-faq-item.drake-open .drake-faq-icon {
+  transform: rotate(180deg);
+}
+
+.drake-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  /* Optimized for smoothness */
+}
+
+.drake-faq-item.drake-open .drake-faq-a {
+  max-height: 1000px;
+  /* Large enough for long answers */
+  transition: max-height 0.8s ease-in-out;
+}
+
+.drake-faq-a-inner {
+  padding: 0 10px 24px 10px;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  font-weight: 300 !important;
+  color: var(--navy-light);
+  font-family: var(--font-body) !important;
+}
+
+/* Specific highlight for open state question */
+.drake-faq-item.drake-open .drake-faq-q {
+  color: var(--navy);
+  font-weight: 600 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .drake-faq-q {
+    font-size: 15px !important;
+    padding: 20px 5px;
+  }
+
+  .drake-faq-a-inner {
+    font-size: 15px !important;
+  }
+
+  .drake-faq-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* ========================================
+   FINAL CTA (SECTION 15)
+   Final call-to-action with background image encouraging expedition planning
+   ======================================== */
+
+/* ── FINAL CTA ── */
+
+.drake-final-cta-section {
+  position: relative;
+  padding: 140px 20px;
+  background: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 50vh;
+  align-items: center;
+}
+
+/* Dark overlay for contrast */
+.drake-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15, 28, 46, 0.85), rgba(15, 28, 46, 0.7));
+  z-index: 1;
+}
+
+.drake-final-cta-inner {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Visibility for Heading on dark background */
+.drake-final-cta-inner .drake-section-h2.drake-white {
+  color: #ffffff !important;
+  font-size: 48px !important;
+  margin-bottom: 30px;
+}
+
+.drake-cta-content-wrap {
+  margin-bottom: 45px;
+}
+
+.drake-cta-paragraph {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  font-family: var(--font-body) !important;
+}
+
+/* Emphasis on the first sentence */
+.drake-cta-lead {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+}
+
+/* Primary Button Styling */
+.drake-cta-btn {
+  padding: 18px 50px;
+  font-size: 13px !important;
+  letter-spacing: 2px !important;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.drake-cta-btn:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .drake-final-cta-section {
+    padding: 100px 24px;
+  }
+
+  .drake-final-cta-inner .drake-section-h2.drake-white {
+    font-size: 38px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-final-cta-section {
+    padding: 80px 16px;
+  }
+
+  .drake-final-cta-inner .drake-section-h2.drake-white {
+    font-size: 32px !important;
+  }
+
+  .drake-cta-paragraph {
+    font-size: 16px !important;
+  }
+
+  .drake-cta-btn {
+    width: 100%;
+    padding: 18px 20px;
+  }
 }
