@@ -62,7 +62,6 @@ function ScenicAntarctica() {
               <p>
                 This is structured exploration. Every element is built for access, operational precision, and a high level of comfort in an extreme environment.</p>
 
-             
             </>
           )}
 
@@ -229,30 +228,36 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 6 ================= */}
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+<section className="Scenic_right_experience_section">
+  <div className="Scenic_right_experience_inner">
+    
+    <div className="Scenic_right_experience_content">
+      <h2>Is Antarctica the Right Experience for You</h2>
 
-    <h2>Is Antarctica the Right Experience for You</h2>
+      <p>
+        Antarctica is not a passive destination. It requires flexibility and a clear understanding of what the experience involves.
+      </p>
 
-    <p>
-      Antarctica is not a passive destination. It requires flexibility and a clear understanding of what the experience involves.
-    </p>
+      <p>Considerations include:</p>
 
-    <p>Considerations include:</p>
+      <ul className="Scenic_styled_list">
+        <li><i className="fas fa-check"></i> The Drake Passage crossing, which can vary in conditions</li>
+        <li><i className="fas fa-check"></i> Zodiac transfers and uneven terrain during landings</li>
+        <li><i className="fas fa-check"></i> Weather-driven itinerary adjustments</li>
+      </ul>
 
-    <p>
-      • The Drake Passage crossing, which can vary in conditions <br/>
-      • Zodiac transfers and uneven terrain during landings <br/>
-      • Weather-driven itinerary adjustments
-    </p>
+      <p>
+        Scenic is designed to provide a high level of comfort throughout, but the experience remains an active expedition.
+      </p>
 
-    <p>
-      Scenic is designed to provide a high level of comfort throughout, but the experience remains an active expedition.
-    </p>
+      <p>
+        For many travelers, Antarctica becomes one of the most meaningful journeys they will take. The key is approaching it with the right expectations and preparation.
+      </p>
+    </div>
 
-    <p>
-      For many travelers, Antarctica becomes one of the most meaningful journeys they will take. The key is approaching it with the right expectations and preparation.
-    </p>
+    <div className="Scenic_right_experience_image">
+      <img src="https://uc864bbfa833507e595e834ae8d9.previews.dropboxusercontent.com/p/thumb/AC83JTTHTeYw1MqsDGESou0Dd9_MrwCi7sUyE4AGtXRs6eZxVyotZUscHF21UUv94KRFXVbRWvMa_sRHbSMuSr8Gr5ISnKbbvV-y4vuXX88ewQXgF9hezfjUgk3hh84pbYJJcQ4MbI6uX5HXVDndA5mRbwXdM-dGWiuNqA9lTs6iDA12tLt590ou8_SdBPDHxqq4icxkqsQuH6bVFnRj2EYXdMwi5XQCib-dAwsptj44hfwd1wmdUNUrTi-0GeYXj8FuzZSM4Cr4O7mGoRfGOCzzx8evCZNUiYYN8FV1iUTqqmFEpC4sKzemXY9D0dlgB5oFiADvFOBjBSWI_4gD9PYq8bDNFswxFLxC2jhWGYGU9A/p.jpeg" alt="Scenic Antarctica Explorer" />
+    </div>
 
   </div>
 </section>
@@ -314,41 +319,41 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 9 ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Scenic_season_section">
+  <div className="Scenic_season_inner">
 
-    <h2>When to Travel to Antarctica</h2>
-
-    <p>
-      The Antarctica season runs from November through March.
-    </p>
-
-    {/* NEW CARDS */}
-    <div className="Scenic_season_cards">
-
-      <div className="Scenic_season_card">
-        <div className="Scenic_season_icon"><i className="fas fa-snowflake"></i></div>
-        <h4>Early Season</h4>
-        <p>Pristine ice and untouched landscapes</p>
-      </div>
-
-      <div className="Scenic_season_card">
-        <div className="Scenic_season_icon"><i className="fas fa-paw"></i></div>
-        <h4>Mid Season</h4>
-        <p>Peak wildlife activity</p>
-      </div>
-
-      <div className="Scenic_season_card">
-        <div className="Scenic_season_icon"><i className="fas fa-water"></i></div>
-        <h4>Late Season</h4>
-        <p>Whale activity and changing light</p>
-      </div>
-
+    <div className="Scenic_section_header">
+      <h2>When to Travel to Antarctica</h2>
+      <p>The Antarctica expedition season runs exclusively from November through March.</p>
     </div>
 
-    <p>
-      The best timing depends on the traveler’s priorities.
-    </p>
+    <div className="Scenic_season_cards">
+      <div className="Scenic_season_card Scenic_season_card--early">
+        <div className="Scenic_season_icon"><i className="fas fa-snowflake"></i></div>
+        <div className="Scenic_season_label">November – Early December</div>
+        <h4>Early Season</h4>
+        <p>Pristine ice, untouched landscapes, and courtship behaviors among penguins.</p>
+      </div>
+
+      <div className="Scenic_season_card Scenic_season_card--mid">
+        <div className="Scenic_season_icon"><i className="fas fa-paw"></i></div>
+        <div className="Scenic_season_label">Late December – January</div>
+        <h4>Mid Season</h4>
+        <p>Peak summer temperatures, hatching penguin chicks, and peak wildlife activity.</p>
+      </div>
+
+      <div className="Scenic_season_card Scenic_season_card--late">
+        <div className="Scenic_season_icon"><i className="fas fa-water"></i></div>
+        <div className="Scenic_season_label">February – March</div>
+        <h4>Late Season</h4>
+        <p>Incredible whale activity, receding ice opening up new channels, and spectacular sunsets.</p>
+      </div>
+    </div>
+
+    <div className="Scenic_season_footer">
+      <i className="fas fa-info-circle"></i>
+      <p>The best timing depends entirely on your personal priorities. All months offer exceptional expedition conditions.</p>
+    </div>
 
   </div>
 </section>
@@ -386,12 +391,12 @@ Between landings, the ship provides a refined onboard environment designed for r
       Angela Hughes brings over four decades of experience in the travel industry and has traveled to 121 countries and territories.
     </p>
 
-    <p className="Scenic_team_points">
-      • Strategic positioning across expedition inventory <br/>
-      • Access to preferred availability and timing <br/>
-      • Full itinerary coordination <br/>
-      • Ongoing support throughout the journey
-    </p>
+    <ul className="Scenic_styled_list Scenic_team_points_styled">
+      <li><i className="fas fa-check-circle"></i> Strategic positioning across expedition inventory</li>
+      <li><i className="fas fa-check-circle"></i> Access to preferred availability and timing</li>
+      <li><i className="fas fa-check-circle"></i> Full itinerary coordination</li>
+      <li><i className="fas fa-check-circle"></i> Ongoing support throughout the journey</li>
+    </ul>
 
     <p>
       Clients are often positioned into inventory that is no longer publicly available due to timing and relationships.
@@ -524,8 +529,9 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 15 CTA ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+<section className="Scenic_cta_section">
+  <div className="Scenic_cta_overlay"></div>
+  <div className="Scenic_cta_inner">
 
     <h2>Plan Your Scenic Antarctica Expedition</h2>
 
