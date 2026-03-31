@@ -1873,32 +1873,32 @@
 }
 
 .faq-inner h2 {
-  font-size: 42px;
+  font-size: 52px;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #274472;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 25px;
+  line-height: 1.1;
 }
 
 .faq-inner h2::after {
   content: "";
   display: block;
-  width: 60px;
-  height: 2px;
+  width: 100px;
+  height: 3px;
   background-color: #274472;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
 }
 
 .faq-accordion {
-  margin-top: 60px;
-  border-top: 1px solid #eeeeee;
+  margin-top: 80px;
+  border-top: 1px solid #e0e0e0;
 }
 
 .faq-item {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -1907,50 +1907,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 35px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #1a1a1a;
-  font-weight: 600;
+  font-size: 16.5px;
+    color: #2f4a6d;
+    font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.faq-item:hover .faq-question {
+/* .faq-item:hover .faq-question {
   color: #c5a059;
-}
+} */
 
 .faq-icon {
-  color: #c5a059;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: none; /* Icons swapped in JSX, no rotate needed */
 }
 
 .faq-item.active .faq-icon {
-  transform: rotate(180deg);
+  transform: none; /* Icons swapped in JSX, no rotate needed */
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-  padding-right: 40px;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 1000px;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-  padding-bottom: 25px;
+  max-height: 500px; /* Reduced for better animation feel */
+  padding-bottom: 35px;
 }
 
 .faq-answer p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #666666;
-  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #777777;
+  font-weight: 300;
   margin: 0;
+  max-width: 90%;
 }
 
 @media (max-width: 768px) {

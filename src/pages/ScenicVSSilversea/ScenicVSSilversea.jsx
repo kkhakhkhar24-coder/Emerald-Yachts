@@ -496,7 +496,7 @@ const AntarcticaPage = () => {
       {/* ===== SECTION 15 — FAQ ===== */}
       <section className="faq-section">
         <div className="faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2>Frequently Asked Questions About Scenic vs Silversea</h2>
           <div className="faq-accordion">
             {faqData.map((faq, index) => (
               <div 
