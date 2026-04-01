@@ -417,27 +417,28 @@
 .Emerald_insight_flex {
   display: flex;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px; /* 🔥 Reduced gap to give more room for the image */
 }
 
 .Emerald_insight_content {
-  flex: 1.4;
+  flex: 1; /* 🔥 Equal flex for both sides */
 }
 
 .Emerald_insight_image_container {
-  flex: 0.8;
+  flex: 1; /* 🔥 Equal flex for both sides */
   display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: 15vh;
+  justify-content: center;
+  position: static;
+  align-self: center; /* 🔥 Center vertically relative to the text on the left */
 }
 
 .Emerald_insight_image_wrapper {
-  max-width: 450px;
+  max-width: 550px; /* 🔥 Increased from 450px to make the image "some big" */
   width: 100%;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(39, 68, 114, 0.1);
+  background: #ffffff; /* 🔥 Added white background to avoid dark gaps */
+  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.1); /* 👈 slightly reduced offset to avoid heavy shadow */
   border: 1px solid rgba(39, 68, 114, 0.05);
 }
 

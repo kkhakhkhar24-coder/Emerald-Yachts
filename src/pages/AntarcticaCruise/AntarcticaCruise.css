@@ -1879,6 +1879,78 @@
 
 .anta_author_merge {
   margin-top: 50px;
+  position: relative;
+}
+
+.anta_author_card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(47, 74, 109, 0.05);
+}
+
+.anta_author_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.anta_author_badge {
+  background: #2f4a6d;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.anta_author_merge h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #2f4a6d;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.anta_author_role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2f4a6dcc;
+  margin: 0;
+}
+
+.anta_author_highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.anta_author_tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #274472cc;
+  line-height: 1.4;
+  background: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #edf2f7;
+}
+
+.anta_icon {
+  color: #2f4a6d;
+  flex-shrink: 0;
 }
 
 .anta_author_divider {
@@ -1888,7 +1960,7 @@
   margin-bottom: 35px;
 }
 
-.anta_author_merge h3 {
+.anta_author_merge h2 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   color: #2f4a6d;
@@ -1910,12 +1982,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-}
-
-.anta_author_tag {
-  font-size: 0.95rem;
-  color: #274472cc;
-  line-height: 1.5;
 }
 
 .anta_clients_image img {
@@ -1964,6 +2030,15 @@
     border-left: none;
     padding-left: 0;
     padding-top: 15px;
+    margin-bottom: 40px;
+  }
+  .anta_author_header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .anta_author_highlights {
+    grid-template-columns: 1fr;
   }
 }
 

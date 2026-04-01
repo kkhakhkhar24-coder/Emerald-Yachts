@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
 import myImage from "../../assets/image.jpg";
+import { Award, Globe, Shield, Star } from "lucide-react";
 
 const AntarcticaCostPage = () => {
   const [current, setCurrent] = useState(0);
@@ -267,15 +268,32 @@ const AntarcticaCostPage = () => {
             </p>
 
             <div className="anta_author_merge">
-              <div className="anta_author_divider"></div>
-              <h3>Planned and Curated by Angela Hughes</h3>
-              <p className="anta_author_role">CEO, Trips & Ships Luxury Travel</p>
-              
-              <div className="anta_author_highlights">
-                <div className="anta_author_tag">✦ 40+ years of experience</div>
-                <div className="anta_author_tag">✦ 121 countries traveled</div>
-                <div className="anta_author_tag">✦ Luxury Travel Influencer of the Year (2024)</div>
-                <div className="anta_author_tag">✦ Most Influential Women in Travel (2026)</div>
+              <div className="anta_author_card">
+                <div className="anta_author_header">
+                  <div className="anta_author_signature">
+                    <h2>Planned and Curated by Angela Hughes</h2>
+                    <p className="anta_author_role">CEO & Founder, Trips & Ships Luxury Travel</p>
+                  </div>
+                </div>
+                
+                <div className="anta_author_highlights">
+                  <div className="anta_author_tag">
+                    <Star size={14} className="anta_icon" />
+                    <span>40+ years of expertise</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <Globe size={14} className="anta_icon" />
+                    <span>121 countries traveled</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <Award size={14} className="anta_icon" />
+                    <span>Luxury Travel Influencer of the Year</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <Award size={14} className="anta_icon" />
+                    <span>Most Influential Women in Travel</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

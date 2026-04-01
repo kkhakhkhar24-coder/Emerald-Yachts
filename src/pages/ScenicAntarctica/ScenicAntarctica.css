@@ -978,11 +978,11 @@
 
 .Scenic_team_points_styled {
   background: white;
-  padding: 24px;
+  padding: 14px 18px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-  margin-top: 20px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 30px;
 }
 
 /* RESPONSIVE */
@@ -1496,75 +1496,87 @@
 }
 
 /* =========================================================
-   SECTION 12 — PLANNED & CURATED BY ANGELA HUGHES
+   PLANNED & CURATED CARD (Section 11)
 ========================================================= */
-.Scenic_expert_divider {
-  border: none;
-  border-top: 1px solid #f0f0f0;
-  margin: 40px 0;
+.Scenic_curated_card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(47, 74, 109, 0.06);
 }
 
-.Scenic_curated_by h3 {
+.Scenic_curated_card_header {
+  margin-bottom: 18px;
+}
+
+.Scenic_curated_card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 20px;
   color: #2f4a6d;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  line-height: 1.3;
 }
 
 .Scenic_curator_subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   color: #2f4a6d88;
-  margin-bottom: 25px;
+  margin: 0;
 }
 
-.Scenic_curator_credentials {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 35px 0;
+.Scenic_curated_badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.Scenic_curated_badge_item {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.Scenic_curator_credentials li {
-  font-size: 1.1rem;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.85rem;
   color: #274472cc;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
-.Scenic_curator_credentials li i {
+.Scenic_curated_badge_item i {
   color: #2f4a6d;
-  margin-top: 4px;
+  font-size: 13px;
+  flex-shrink: 0;
 }
 
 .Scenic_curator_featured {
-  padding: 24px;
-  background: #f7f9fb;
+  padding: 12px 16px;
+  background: white;
   border-radius: 8px;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: #2f4a6d;
-  line-height: 1.6;
-  border-top: 3px solid #2f4a6d;
-  margin-bottom: 35px;
+  line-height: 1.5;
+  border-left: 3px solid #2f4a6d;
+  margin: 0;
 }
 
 .Scenic_curator_featured strong {
   font-weight: 600;
 }
 
-.Scenic_margin_top {
-  margin-top: 40px;
+@media (max-width: 480px) {
+  .Scenic_curated_card { padding: 16px; }
+  .Scenic_curated_badges { grid-template-columns: 1fr; }
+  .Scenic_curated_card h3 { font-size: 18px; }
 }
 
-@media (max-width: 480px) {
-  .Scenic_curator_subtitle { font-size: 12px; }
+.Scenic_margin_top {
+  margin-top: 16px;
 }
 
 /* ================= EXPERT & TEAM MERGED SECTION (Section 11) ================= */
@@ -1582,20 +1594,20 @@
 
 .Scenic_insight_flex {
   display: flex;
-  align-items: flex-start;
-  gap: 80px;
+  align-items: center;
+  gap: 40px;
 }
 
 .Scenic_insight_content {
-  flex: 1.4;
+  flex: 1;
   text-align: left;
 }
 
 .Scenic_insight_content h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 44px;
+  font-size: 38px;
   color: #2f4a6d;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   line-height: 1.2;
 }
 
@@ -1609,27 +1621,28 @@
 }
 
 .Scenic_expert_sub p {
-  font-size: 1.125rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #274472cc;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .Scenic_insight_image_container {
-  flex: 0.8;
+  flex: 1;
   display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: 15vh;
+  justify-content: center;
+  align-self: center;
+  position: relative;
 }
 
 .Scenic_insight_image_wrapper {
-  max-width: 420px;
+  max-width: 450px;
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(39, 68, 114, 0.12);
+  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.1);
   border: 1px solid rgba(39, 68, 114, 0.05);
+  background: #ffffff;
 }
 
 .Scenic_insight_expert_image {

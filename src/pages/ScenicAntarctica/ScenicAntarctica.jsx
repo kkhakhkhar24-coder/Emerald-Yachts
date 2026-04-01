@@ -22,9 +22,12 @@ function ScenicAntarctica() {
 
   const galleryImages = [
     "https://uc2638e406449897a43dc0796e47.previews.dropboxusercontent.com/p/thumb/AC9WqdDAK77RH-nIhvacxDMuup5aJ4-ukccY9qs-norLuRsB6hdOzfG1JzXXqPxMfrMzbD69yeVvHtcftYxN4e5pie5x1FQSHIInflizXm-b6E6mam9kNaQPRE5ccqfCPCuxSD3GrF41011186_eKERVq7qvwID2_dTJds87WC6SDWieWBKqAz5dnsN_tqh3f1K7wITfCnCzLpKm06k7W7ceUGuhyvWuyDLQsQ8rcPGvP7jCzoTBeVFRovjzQcwhsiBeDMUKTGRfHsvELE03CpsCkCd4qDzvtew_u3YTB48pYS6RT6pk-59BM8oWnXndIIhRkSA9JC4OtctfcMcIKKejSjL2k00Qvr5-fggANf_pmezqCn7BqjZgUq3tl4PMSMxNm4xbo4YEiTq4s16hL_Yo-6h1LUDq0r2SLRPkUGfmhw/p.jpeg",
-    "https://uceaa5075cbc1cb0bcfba473fc4d.previews.dropboxusercontent.com/p/thumb/AC_a1fnToWcyTTXv3EtpZCR4bO4y_Ug9AY3d2pmRxgOjHL-3p05vDOc_ZNEgGNaPMzXCEWPOCRFBlrQdelw-nXnADYQxAkUR-LRyElhKAdpri5qjQYuXGXoPbRBic2san8GQxZChRhWlyucqWeVxhPROmtCkHh-KGaBrK4trUQ3DXo264CY8SiyJjzD_azFeaV_qx2QXvoI8pXNSLC68fj-zVYtgn_tdBaGvGw4Ou36DerHtdAxGo5c_7L4vcZXfUH0m5QH-ZMriG14HW2NwvH32ovgk5b6ZVit4sK84Uvq4r_EVo7Z2smVg-JofBaoRyVE3XWqc36rye5fjPRGFUYsiMJnVTJCfNNfZgN6xC8QraA/p.jpeg",
     "https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC_Krb_nJtbHKvZY4l2-eW1N_HyPSJDQnsy5-Yb_KwHmGXRqNamR_AmiIuW31FqulD6_Z34T0mU_zNqv4OAa2zfTXazkh9-flUGbJ7rqVcFJlgG5Qd_TpfrxrU_GfrZA28WKfPAQkQzCjwRi8iiqR34EoRF-6U7o1ODhYoISXJEonwvhVYuhsmyGlrkNHz6PrOLGjuSmBsVZKMNGp9kZvRv8xh0VZBhHzK-fd7dlPTQDb5iHs2heSqEyJOKk4ReSyVlijDHLy_oRLtFYDAM5_XjEyEpwNCGEry1AeygJmCKmPPerBHyU-bMX5ayzCFf_FIqN2EiJl6Kwfx3mjpQ91GGWJtSHvLMraFcruYGQ0tOI3g/p.jpeg",
-    "https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg"
+    "https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg",
+    "https://uc729644c4abf5f6b2344dc569cf.previews.dropboxusercontent.com/p/thumb/AC_wD0COjP-wglE_eTR5ev9gC5cEoLahAL7V4tbzWIVMVWRNoVbz_CiwS8yodVwEsbngzJqLMsaeFcmmLAwYIzb0v8-ciJGTnC__E16UxS9zT5-qjmvG-cfiydQZv_nNZe1A8RkATOUBU-Xzl2il7mqLz50rWeeWdn-eS1SK4UwW6uAcfzRUixE8fhcGnztCMoFUcadL6WzLVX8I3Q8JIAfMlhge7w6x7iRpPtWdWV27j-4_I2k3Fqh7Ld4c5Xw1Z0CT92dLexcrpLLOwFi_v8tTCR8oV7IdfR1O2LNW21r6KQrCiZP31mG_VQd4Z7nozhY4ZSyjiznaeGEs0DLVtuABfPrEZTHgTrOabDQt6Bfy8w/p.jpeg",
+    "https://uc19847a53eeb49ff6ce98c13423.previews.dropboxusercontent.com/p/thumb/AC96S-Jvtss46JkbC9ZrNtjE5feaF4wR_Chzwdgp-kNnNiVfXM5mc7CNo4npe03ZvL_nHj82FcHgcKwHmZKFEpdb8fBhJKLrUOKI3lQZTALotpFTXcAbqWKRYu-fQBU6UeCKBRcDvvHInSeutv_Lo_4Tf3yzo9fB_EZ_my5C1ob62a-QT7V5sUeFQNhpNLmgBToUIgL5zecci-nNBbsAn7dLZ0yAJSZg_oCzc53ronHwxPN6edOXU5eml_Tt0lpQK_49Qz40YkqnX_As-fPHRWCUO-ft4kPWPbmpJ9FlXYBLJvqiUEEtiNEVAbE3u5zRVDW_Wh2LPzkmy0q_B54fxtb471OTPA_JGi1kQxgHJQYqbw/p.jpeg",
+    "https://uc8524b4870d68527df3f2365a3b.previews.dropboxusercontent.com/p/thumb/AC9vme7oRJb7_EHQ9kb-qQ-0fIGbLuaCxJJgzlvmQh-vKqgr2oLvVn6XExzdjjkFekwEQ8cN7tLtt5JqsnUGwKpq5QeFfSSGYcNkKAal8Xjyuj54s4FMNG6zsaTcaEfASaY5UcVITmjPqV5j2xmwatVfxpRIpUsMKrH7aIvQjGJYPhNwcndwB2n2zB8YUOFvmkhzOx8iqx2bUjQX3Zn84HAaJg9FCAFtl9LYH4OTNALc1dRgGHBVpJCWFsB0DjeqH7yJqJRl903qmgyUyrx_wzLl8VujmOHFpRhyuoZGuxwNdHpe5u_nAnIhtv65KEtSRIzfBTSaMIDSKQF88PHf3yjJ5s8msNQGXXXH1bnD2-wEUQ/p.jpeg",
+    "https://uc4d774fa30995fb504b9c28d7f4.previews.dropboxusercontent.com/p/thumb/AC9z7B_aBdn6zkpXoa58J2NQbUbtROupZrFrqWZEGU5nGTiA6hm5LN2zYfVkcMbjPY1fOC3Xcst_G8M4Wj_61kxHPBYVjqSqreP5ER0Mv_AcJybLR8jxGaRP0bcsYn4y1WlxjWW9ap6mkQHwr9bwHLHF42vp4-bygFKX9Oqp8Ke3g7fBkKygcIBm86O0tyIYrOdBuYWpPd65x8tXz9jQAf03sAc0j7msGOHz_bown9bKw3evonDakNG9RPEXmUhS89-aiIqaGecxo25KMx7TaeUfa5lxValvSOwbNkJJ5F_YVAaENbvLzrMmV6xf5Ryb-EpG6EP2vI-GZ-lzpEKJ-OEy_dTpt-C2Ejin8VmjHo4hrw/p.jpeg"
   ];
 
   useEffect(() => {
@@ -422,18 +425,32 @@ Between landings, the ship provides a refined onboard environment designed for r
           <li><i className="fas fa-check-circle"></i> Ongoing support throughout the journey</li>
         </ul>
 
-        <hr className="Scenic_expert_divider" />
+        <div className="Scenic_curated_card">
+          <div className="Scenic_curated_card_header">
+            <div className="Scenic_curated_card_title">
+              <h3>Planned and Curated by Angela Hughes</h3>
+              <p className="Scenic_curator_subtitle">CEO & Founder, Trips & Ships Luxury Travel</p>
+            </div>
+          </div>
 
-        <div className="Scenic_curated_by">
-          <h3>Planned and Curated by Angela Hughes</h3>
-          <p className="Scenic_curator_subtitle">CEO, Trips & Ships Luxury Travel</p>
-          
-          <ul className="Scenic_curator_credentials">
-            <li><i className="fas fa-award"></i> 40+ years in the travel industry</li>
-            <li><i className="fas fa-globe-americas"></i> Traveled to 121 countries and territories</li>
-            <li><i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)</li>
-            <li><i className="fas fa-crown"></i> Named among the Most Influential Women in Travel (2026)</li>
-          </ul>
+          <div className="Scenic_curated_badges">
+            <div className="Scenic_curated_badge_item">
+              <i className="fas fa-award"></i>
+              <span>40+ years of expertise</span>
+            </div>
+            <div className="Scenic_curated_badge_item">
+              <i className="fas fa-globe-americas"></i>
+              <span>121 countries traveled</span>
+            </div>
+            <div className="Scenic_curated_badge_item">
+              <i className="fas fa-star"></i>
+              <span>Luxury Travel Influencer of the Year</span>
+            </div>
+            <div className="Scenic_curated_badge_item">
+              <i className="fas fa-crown"></i>
+              <span>Most Influential Women in Travel (2026)</span>
+            </div>
+          </div>
 
           <p className="Scenic_curator_featured">
             Featured in <strong>Travel Weekly</strong>, <strong>TravelPulse</strong>, and other leading industry publications.

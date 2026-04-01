@@ -65,7 +65,7 @@ const AntarcticaPage = () => {
   
       const images = [
     "https://ucb8cb38154eb16cefd84e161c3a.previews.dropboxusercontent.com/p/thumb/AC-F0cflvxbaUcdfDpDst1RcBi_il4XV5tb-NKPppnr3kOFyuN_vyyzVcweJxb_Le7Fdh154aNKB3puRrAj67SPT-YY7ys8I0MBsOkiSG4mVbKfcr_4SqqGsfpTOknEj5kmfbBTgsfkXno1stt1ZJcxzD0iafTp_kmHSXb5XXOOx2DPM43XB3Pq-DxhFxDCQmT0qHZpgBy3O_Q_kc5aNPxY0xaSod0aw6bID3CpbMpiunbIqvg7Hpp2XOEhw63EYB4KGbcdNaeQoty5nr9LueqMXS6J036_f5Yj8ifBTsV1XRsCLiQGTOH1yhUVPU9-pFDr-eSxv23gaokJ2uc-WvtZ6ESt_FjYeOHpJVUrZmcKNEQ/p.jpeg",
-    "https://ucaeb620e69c9cdfaf339509cf41.previews.dropboxusercontent.com/p/thumb/AC_F4eMSIpgeX3xL1x4gGQIlq3n0goR3O_0YpCY9JEHbrbUHkl5fE2-YYEpDr90l4zyPmCSMGAdibt3onSUuZ0MERDDaMV2wWSVq4TtSNnvGdG6CRt2eQG_bYTtutVUFZpW8LDrzB8rukKvm-UqeVXd1XVh4g5ERrIg2BJzItO2KT3032vtfsVAWxOabattZ1xteQY1kB-sFPYGyOW3otFviG4GdC1BNNbNSU9ZZdXGS6yzM6zngHVaruuv9hKBLSddn-cw642dTJBbbTSHyjtIzAaBGuWqOfpFhwtkP4PshfJpUGQcxvPsFHfuZk-mfZa7vywLcdQBH0jZLBlKx4eK_lei_o4Z74BTkifNgY1H6sg/p.jpeg",
+    "https://uc869d76ccaa1edc1e4b2db13487.previews.dropboxusercontent.com/p/thumb/AC81Z3-R7e4hiFpy1kf8hDlKl1lyrzvQoOHCXDna6jgpt_VAxwW7e658pmnf8e9X0B_ppJPuf8qkIi_7gmeI_2BSYDrdktc5A3r5LJnaxeODc_dGetFgPRB--7ntUitCRaD-JiU0tLayqi8XE5In8N2EUh6dnuRv1xJnccUCMIEJttaP7cKHSEDTOr3dlz-JuKNEyMtLoF2COd7IetQVdRDiQLCD6RSLyIKzJ_rDfDtyRASP87Wz1gkvTCDEPk-ZMSga8lJa3XqpclUubiJTxpCG7T9DHQ9zB-3LXOOxSneTztbZ802xjJ8R3VMyW9gjovpwMx8oNHek3O6cUseZLZ3iGpsYCbwsVpCPFWWtMlrNjw/p.jpeg",
     "https://uc1a0086802815dc470a9a156438.previews.dropboxusercontent.com/p/thumb/AC_2u1X69aLHqlgW2BHmw5bP27w5sygVdTEz6Va6SwrQCiFRFUxVUKs8hsfiNbYxYFDbD6AdLC97TYGzwnhJr-5kJkJVmCaFzYQedwGbKkMiZDD0q19uQDjDkSpyp9pZPZQ2xbDCCwPG_LRs7gUHD6dGGmv14CDRypiwcJvB61E6SxIBEP9UbxBkE592_xhvYXyz_e07t2qrZR6mpTVJUIzxZSMz40IquJ6itgVxDQQZH7tcXTUEDkVNvyZHR4PWqamsDwCT6INP1Kjq-96XjPdQF6d-gW6i56fowSyjJyXXtxjmdwP0DgchzSGI-fxVBhMnfBIbwmp1KsRhgYSUwQJyJ07klleNsQNjLj0Ytfj0e1sLKHjQneXuCgXJ_iw2pa3Z6hMfUi9enLzfkOOooESQ1ZN3NX8CYUwf5TbtB_x59A/p.jpeg"
   ];
 
@@ -636,9 +636,6 @@ const AntarcticaPage = () => {
           <div className="senianta-hero-buttons senianta-hero-buttons--centered">
             <button className="senianta-primary senianta-primary--no-offset">
               Get Expert Recommendation
-            </button>
-            <button className="senianta-secondary">
-              View Scenic Antarctica Expeditions
             </button>
           </div>
         </div>
