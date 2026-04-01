@@ -424,7 +424,7 @@ to {
   color: var(--navy);
   margin-bottom: 30px;
   line-height: 1 !important;
-  text-align: center;
+  text-align: start;
   position: relative;
 }
 
@@ -518,706 +518,971 @@ to {
 }
 
 /* ========================================
-   WHAT IS THE DRAKE PASSAGE (SECTION 1)
-   3-column grid layout introducing the Drake Passage
+   SECTION 1: STICKY EDITORIAL DESIGN
+   Prefix: drake- | Colors: Navy, Soft Blue, White
    ======================================== */
 
-/* ── WHAT IS DRAKE ── */
-
-/* Layout container for the split view */
-.drake-layout-split {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  /* Clean split favoring the content side */
-  gap: 60px;
-  align-items: start;
-  text-align: left;
+/* --- Container Reversion --- */
+.drake-section-inner.drake-wide {
+  max-width: 1200px;
+  /* Original Wide Width */
+  width: 100%;
 }
 
-.drake-title-side {
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  /* Classic split */
+  gap: 80px;
+  align-items: start;
+}
+
+/* --- Left Column: Sticky Heading Effect --- */
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
   position: sticky;
-  top: 120px;
+  top: 140px;
+  /* Sticky Offset */
+  text-align: left;
 }
 
 .drake-section-number {
   display: block;
-  font-family: var(--font-display) !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 14px !important;
-  color: var(--gold);
   font-weight: 700 !important;
+  color: #274472;
   letter-spacing: 3px !important;
   margin-bottom: 15px;
+  opacity: 0.5;
 }
 
-.drake-content-side {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.drake-section-h2.drake-left-bar {
+  text-align: left !important;
+  color: #274472 !important;
+  font-size: 44px !important;
+  margin-bottom: 0 !important;
 }
 
-/* Highlighting the lead paragraph */
-.drake-lead-text {
-  font-size: 22px !important;
-  line-height: 1.5 !important;
-  color: var(--navy);
-  font-weight: 500 !important;
-  font-family: var(--font-display) !important;
+.drake-section-h2.drake-left-bar::after {
+  margin: 25px 0 0 0 !important;
+  /* Left Aligned Bar */
+  background-color: #274472 !important;
+  width: 60px !important;
 }
 
-.drake-section-p-clean {
-  font-size: 17px !important;
-  line-height: 1.8 !important;
-  color: var(--navy-light);
-  font-weight: 300 !important;
-  margin-bottom: 30px;
-}
-
-/* Editorial note styling */
+/* --- Filling the Left Side Gap --- */
 .drake-editorial-note {
-  border-left: 3px solid var(--gold);
-  padding: 10px 0 10px 30px;
-  background: rgba(231, 243, 245, 0.4);
-  /* subtle use of var(--bg-soft) */
-  border-radius: 0 8px 8px 0;
+  margin-top: 50px;
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue */
+  padding: 35px;
+  border-left: 4px solid #274472;
+  /* Navy Accent */
+  border-radius: 0 4px 4px 0;
 }
 
 .drake-editorial-note p {
-  font-size: 16px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
   line-height: 1.6 !important;
   font-style: italic !important;
-  color: var(--navy);
+  color: #274472;
   font-weight: 400 !important;
 }
 
-/* Maintain responsiveness */
-@media (max-width: 1024px) {
-  .drake-layout-split {
-    grid-template-columns: 1fr;
-    /* Stack on smaller screens */
-    gap: 40px;
-  }
+/* --- Right Column: Content --- */
+.drake-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 24px !important;
+  line-height: 1.5 !important;
+  color: #274472;
+  font-weight: 500 !important;
+  margin-bottom: 35px;
+}
 
-  .drake-title-side {
-    position: static;
-    text-align: center;
-  }
+.drake-section-p-clean {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: #274472;
+  font-weight: 300 !important;
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
 
-  .drake-section-h2.left-bar::after {
-    margin: 16px auto 0;
-    /* Center the bar on mobile */
-  }
+/* --- Image Design --- */
+.drake-figure-box {
+  margin: 0;
+}
 
-  .drake-lead-text,
-  .drake-section-p-clean {
-    text-align: center;
+.drake-img-container {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+.drake-img-main {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.drake-img-caption {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+  opacity: 0.7;
+  line-height: 1.5 !important;
+}
+
+/* ========================================
+   FLIPPED LAYOUT - Content Left, Heading Right
+   For Sections 02, 04, 06, 08, 10
+   ======================================== */
+
+.drake-sticky-wrapper.flipped {
+  direction: rtl;
+  /* Flip the entire grid */
+}
+
+.drake-sticky-wrapper.flipped .drake-side-sticky {
+  direction: ltr;
+  /* Restore normal text direction */
+}
+
+.drake-sticky-wrapper.flipped .drake-content-column {
+  direction: ltr;
+  /* Restore normal text direction */
+}
+
+/* Adjust sticky positioning for flipped layout */
+.drake-sticky-wrapper.flipped .drake-sticky-element {
+  text-align: right;
+}
+
+.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
+  text-align: right !important;
+}
+
+.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
+  margin: 25px 0 0 auto !important;
+  /* Right aligned bar */
+}
+
+/* Flip editorial note alignment */
+.drake-sticky-wrapper.flipped .drake-editorial-note {
+  border-left: none;
+  border-right: 4px solid #274472;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Adjust gap for flipped layout */
+@media (min-width: 769px) {
+  .drake-sticky-wrapper.flipped {
+    gap: 80px;
   }
 }
 
-@media (max-width: 768px) {
-  .drake-text-grid {
-    grid-template-columns: 1fr;
+/* Mobile Responsive for Flipped Layouts - Center Alignment */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper.flipped .drake-sticky-element {
+    text-align: center !important;
   }
 
-  .drake-lead-text {
-    font-size: 20px !important;
+  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
+    text-align: center !important;
   }
 
-  .drake-editorial-note {
-    padding: 20px;
-    border-left: none;
-    border-top: 3px solid var(--gold);
+  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+    /* Center bar on mobile */
+  }
+
+  .drake-sticky-wrapper.flipped .drake-editorial-note {
+    margin: 30px auto;
+    max-width: 600px;
     text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: 4px solid #274472;
   }
 }
 
 /* ========================================
-   HOW ROUGH IS THE DRAKE PASSAGE (SECTION 2)
-   Lake vs Shake comparison cards showing calm vs active conditions
+   PROPER RESPONSIVE LOGIC
    ======================================== */
 
-/* ── HOW ROUGH ── */
-
-.drake-roughness-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 60px;
-  align-items: start;
-}
-
-.drake-roughness-title-side {
-  position: sticky;
-  top: 120px;
-  text-align: left;
-}
-
-.drake-roughness-lead-text {
-  font-size: 18px !important;
-  line-height: 1.6 !important;
-  color: var(--navy);
-  font-weight: 500 !important;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.drake-roughness-term-intro {
-  font-size: 14px !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
-  color: var(--gold);
-  font-weight: 600 !important;
-}
-
-.drake-lake-shake-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 40px;
-}
-
-.drake-term-card {
-  padding: 40px 30px;
-  border-radius: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.drake-term-card:hover {
-  transform: translateY(-5px);
-}
-
-.drake-term-card.drake-lake {
-  background: #ffffff;
-  border: 1px solid rgba(39, 68, 114, 0.1);
-}
-
-.drake-term-card.drake-shake {
-  background: var(--bg-dark);
-}
-
-.drake-term-card h3 {
-  font-family: var(--font-display) !important;
-  font-size: 24px !important;
-  font-weight: 500 !important;
-  margin-bottom: 15px;
-}
-
-.drake-term-card.drake-lake h3 {
-  color: var(--navy);
-}
-
-.drake-term-card.drake-shake h3 {
-  color: #fff;
-}
-
-.drake-white-text {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.drake-term-badge {
-  display: inline-block;
-  font-size: 10px !important;
-  letter-spacing: 2px !important;
-  font-weight: 700 !important;
-  padding: 6px 14px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  text-transform: uppercase !important;
-}
-
-.drake-term-card.drake-lake .drake-term-badge {
-  background: var(--bg-soft);
-  color: var(--navy);
-}
-
-.drake-gold-badge {
-  background: var(--gold) !important;
-  color: #ffffff !important;
-}
-
-.drake-roughness-summary {
-  text-align: left;
-}
-
-.drake-roughness-summary .drake-section-p-clean {
-  margin-bottom: 30px;
-  font-size: 16px !important;
-  line-height: 1.8 !important;
-}
-
-.drake-roughness-summary .drake-editorial-note {
-  border-left: 2px solid var(--gold);
-  padding-left: 25px;
-}
-
-.drake-roughness-summary .drake-editorial-note p {
-  font-style: italic !important;
-  color: var(--navy);
-  font-weight: 500 !important;
-}
-
-/* Responsive Logic */
-@media (max-width: 1024px) {
-  .drake-roughness-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 1100px) {
+  .drake-sticky-wrapper {
     gap: 40px;
   }
 
-  .drake-roughness-title-side {
+  .drake-section-h2.drake-left-bar {
+    font-size: 38px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    /* Stack layout */
+    gap: 50px;
+  }
+
+  .drake-sticky-element {
     position: static;
     text-align: center;
   }
 
-  .drake-roughness-title-side .drake-section-h2::after {
-    margin: 20px auto 0;
+  .drake-section-h2.drake-left-bar {
+    text-align: center !important;
   }
 
-  .drake-roughness-summary {
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+    /* Center bar on mobile */
+  }
+
+  .drake-editorial-note {
+    margin: 30px auto;
+    max-width: 600px;
     text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
   }
 
-  .drake-roughness-summary .drake-editorial-note {
-    border-left: none;
-    border-top: 2px solid var(--gold);
-    padding-left: 0;
-    padding-top: 20px;
+  .drake-lead-text,
+  .drake-section-p-clean,
+  .drake-img-caption {
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .drake-section-h2 {
-    font-size: 34px !important;
+  .drake-section-h2.drake-left-bar {
+    font-size: 32px !important;
+  }
+
+  .drake-lead-text {
+    font-size: 21px !important;
+  }
+
+  .drake-img-main {
+    height: 350px;
+  }
+
+  .drake-editorial-note {
+    padding: 25px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
+  .drake-img-main {
+    height: 280px;
+  }
+}
+
+/* ========================================
+   SECTION 2: CONSISTENT EDITORIAL DESIGN
+   Matches Figure, Caption, and Sticky styles of Section 1
+   ======================================== */
+
+.drake-bg-soft {
+  background-color: rgb(231, 243, 245);
+}
+
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* --- Consistent Sticky Side --- */
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+.drake-roughness-term-intro {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #274472;
+  font-weight: 700 !important;
+  opacity: 0.6;
+  margin-top: 30px;
+}
+
+/* --- CONSISTENT FIGURE DESIGN (Same as Section 1) --- */
+.drake-hero-figure {
+  margin: 0 0 50px 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-img-fluid {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.drake-hero-caption {
+  margin-top: 25px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(39, 68, 114, 0.2);
+  /* Sidebar caption style */
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+  text-align: left;
+}
+
+.drake-caption-tag {
+  display: block;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+
+/* --- Cards Grid --- */
+.drake-lake-shake-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.drake-term-card {
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.08);
+}
+
+.drake-term-card.drake-lake {
+  background: #ffffff;
+}
+
+.drake-term-card.drake-shake {
+  background: #274472;
+  color: #ffffff;
+}
+
+.drake-term-card h3 {
+  font-family: 'Playfair Display', serif !important;
+  margin-bottom: 10px;
+}
+
+/* --- Consistent Editorial Note --- */
+.drake-editorial-note-white {
+  background-color: #ffffff;
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+  margin-top: 30px;
+}
+
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: #274472;
+}
+
+/* ========================================
+   RESPONSIVE (MATCHES SECTION 1)
+   ======================================== */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-hero-caption {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .drake-editorial-note-white {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-img-fluid {
+    height: 350px;
+  }
+
   .drake-lake-shake-cards {
     grid-template-columns: 1fr;
   }
 }
 
 /* ========================================
-   HOW SHIPS HANDLE (SECTION 4)
-   Ship features including stabilization, hull design, and expert crew
+   SECTION 3: SHIP MANAGEMENT DESIGN
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* ── SHIPS SECTION ── */
-
-.drake-ship-container {
-  text-align: center;
-}
-
-.drake-ship-header {
-  margin-bottom: 40px;
-}
-
-.drake-ship-lead {
-  font-size: 20px !important;
-  color: var(--navy) !important;
-  font-weight: 500 !important;
-  max-width: 800px;
-  margin: 0 auto 20px !important;
-  line-height: 1.5 !important;
-}
-
-.drake-ship-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin: 60px 0;
-}
-
-.drake-ship-card {
-  background: var(--bg-cream);
-  padding: 40px 25px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(39, 68, 114, 0.05);
-}
-
-.drake-ship-card:hover {
-  transform: translateY(-8px);
-  background: white;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-}
-
-.drake-ship-icon {
-  font-size: 32px !important;
-  margin-bottom: 20px;
-}
-
-.drake-ship-card h3 {
-  font-family: var(--font-body) !important;
-  font-size: 15px !important;
-  font-weight: 600 !important;
-  color: var(--navy);
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  line-height: 1.4 !important;
-  min-height: 45px;
-}
-
-.drake-ship-divider {
-  width: 40px;
-  height: 2px;
-  background: var(--gold);
-  margin-top: 15px;
-}
-
-.drake-ship-footer {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Reusing your editorial note style but specifically for this footer */
-.drake-ship-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding: 30px 0 0 0;
-  margin-top: 20px;
-}
-
-.drake-ship-footer .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 18px !important;
-  font-style: italic !important;
-  color: var(--navy);
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .drake-ship-feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-ship-feature-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .drake-ship-lead {
-    font-size: 18px !important;
-  }
-
-  .drake-ship-card {
-    padding: 30px 20px;
-  }
-}
-
-/* ========================================
-   IS IT DANGEROUS (SECTION 5)
-   Safety information addressing concerns about the Drake Passage
-   ======================================== */
-
-/* ── DANGER CALLOUT ── */
-
-.drake-safety-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--bg-cream);
-  /* Ensuring background is cream */
-}
-
-/* Fix: Header is outside the navy box to ensure maximum visibility on cream background */
-.drake-safety-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* Ensure the heading uses Navy color for visibility on Cream */
-.drake-safety-header .drake-section-h2 {
-  color: var(--navy) !important;
-}
-
-.drake-danger-box {
-  background: var(--navy);
-  /* Dark background */
-  border-radius: 24px;
-  padding: 80px 60px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(15, 28, 46, 0.2);
-}
-
-/* Lead text specific styling - Forced to white for contrast against navy box */
-.drake-danger-lead {
-  font-size: 20px !important;
-  line-height: 1.5 !important;
-  margin-bottom: 30px !important;
-  color: #ffffff !important;
-  font-weight: 500 !important;
-}
-
-/* All other paragraphs inside the navy box forced to white/light */
-.drake-danger-box .drake-section-p {
-  color: rgba(255, 255, 255, 0.85) !important;
-  margin-bottom: 24px;
-}
-
-/* Highlighted conclusion block inside navy box */
-.drake-danger-conclusion {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.drake-danger-conclusion .drake-section-p {
-  font-family: var(--font-display) !important;
-  font-size: 19px !important;
-  font-style: italic !important;
-  color: #ffffff !important;
-  /* Gold looks great on Navy */
-}
-
-/* Safety Badge inside navy box */
-.drake-safe-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(198, 161, 91, 0.1);
-  padding: 8px 20px;
-  border-radius: 40px;
-  margin-bottom: 30px;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  color: #ffffff;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .drake-danger-box {
-    padding: 60px 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-danger-box {
-    padding: 40px 25px;
-    border-radius: 16px;
-  }
-}
-
-/* ========================================
-   WHAT IT FEELS LIKE (SECTION 6)
-   Clean editorial layout describing the sensory experience
-   ======================================== */
-
-/* ── FEELS LIKE ── */
-
-.drake-feels-like-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.drake-feels-grid {
+/* --- Layout & Sticky (Re-using consistent logic) --- */
+.drake-sticky-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
-  /* Split for clean editorial look */
   gap: 80px;
   align-items: start;
 }
 
-.drake-feels-title-side {
-  position: sticky;
-  top: 120px;
+.drake-side-sticky {
+  height: 100%;
 }
 
-.drake-feels-content-side {
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Feature Pills Grid --- */
+.drake-ship-feature-grid-redesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.drake-feature-pill-card {
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue background */
+  padding: 30px 25px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  align-items: center;
+  text-align: center;
+  border-bottom: 3px solid #274472;
+  /* Navy accent instead of gold */
+  transition: transform 0.3s ease;
 }
 
-/* Lead Paragraph Styling */
-.drake-feels-lead {
-  font-family: var(--font-display) !important;
-  font-size: 22px !important;
+.drake-feature-pill-card:hover {
+  transform: translateY(-5px);
+}
+
+.drake-pill-icon-navy {
+  font-size: 28px !important;
+  margin-bottom: 15px;
+}
+
+.drake-feature-pill-card h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #274472;
   line-height: 1.4 !important;
-  color: var(--navy);
-  font-weight: 500 !important;
-  margin-bottom: 5px;
 }
 
-/* Central experience box with subtle background */
-.drake-feels-experience-box {
-  background: var(--bg-soft);
-  padding: 40px;
-  border-radius: 12px;
-  position: relative;
-  border-left: 1px solid rgba(39, 68, 114, 0.1);
+.drake-full-width-pill {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-.drake-feels-experience-box .drake-section-p-clean {
-  margin-bottom: 0;
+/* --- Consistent Figure Design (Shared with Section 1 & 2) --- */
+.drake-hero-figure {
+  margin: 0 0 50px 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-img-fluid {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.drake-hero-caption {
+  margin-top: 25px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(39, 68, 114, 0.2);
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+  text-align: left;
+}
+
+.drake-caption-tag {
+  display: block;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+
+/* --- Consistent Editorial Note --- */
+.drake-editorial-note-white {
+  background-color: rgb(231, 243, 245);
+  /* Section uses Blue Box for footer */
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+}
+
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
   font-style: italic !important;
-  font-size: 17px !important;
-  color: var(--navy);
+  color: #274472;
+  margin: 0;
 }
 
-/* Paragraph 3 styling */
-.drake-feels-details .drake-section-p-clean {
-  font-size: 16px !important;
-  line-height: 1.8 !important;
-  color: var(--navy-light);
-  font-weight: 300 !important;
-}
-
-/* Final Editorial Note (Paragraph 4) */
-.drake-feels-content-side .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding: 30px 0 0 0;
-  margin-top: 10px;
-}
-
-.drake-feels-content-side .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  color: var(--navy);
-  line-height: 1.5 !important;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1100px) {
-  .drake-feels-grid {
-    gap: 50px;
-  }
-}
-
+/* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
-  .drake-feels-grid {
+  .drake-sticky-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
     text-align: center;
   }
 
-  .drake-feels-title-side {
-    position: static;
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
   }
 
-  .drake-feels-title-side .drake-section-h2::after {
-    margin: 20px auto 0;
-  }
-
-  .drake-feels-experience-box {
+  .drake-hero-caption {
     border-left: none;
-    border-top: 1px solid rgba(39, 68, 114, 0.1);
-  }
-
-  .drake-feels-content-side .drake-editorial-note {
-    border-top: 2px solid var(--gold);
-    margin: 0 auto;
-    max-width: 80%;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .drake-feels-lead {
-    font-size: 20px !important;
+  .drake-img-fluid {
+    height: 350px;
   }
 
-  .drake-feels-experience-box {
-    padding: 30px 20px;
-  }
-
-  .drake-feels-content-side .drake-editorial-note {
-    max-width: 100%;
+  .drake-ship-feature-grid-redesign {
+    grid-template-columns: 1fr;
   }
 }
 
 /* ========================================
-   CROSS OR FLY (SECTION 7)
-   Comparison between crossing the Drake Passage vs fly-cruise options
+   SECTION 4: SAFETY DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* ── FLY VS CROSS ── */
+.drake-bg-soft {
+  background-color: rgb(231, 243, 245);
+}
+
+/* --- Sticky Side (Matches Sections 1-3) --- */
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 19px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Danger Box: High Contrast Navy --- */
+.drake-danger-box {
+  background-color: #274472;
+  /* Solid Navy */
+  border-radius: 12px;
+  padding: 80px 60px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(15, 28, 46, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Safety Badge (Navy/White) */
+.drake-safe-badge-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 24px;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+}
+
+.drake-danger-lead {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 30px !important;
+  font-weight: 500 !important;
+}
+
+.drake-section-p-white {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 300 !important;
+  margin-bottom: 25px;
+}
+
+.drake-danger-conclusion-line {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.drake-danger-conclusion-line p {
+  font-style: italic !important;
+  margin-bottom: 0;
+}
+
+/* ========================================
+   RESPONSIVE (MATCHES SECTION 1-3)
+   ======================================== */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-danger-box {
+    padding: 60px 30px;
+    border-radius: 0;
+    /* Full width on mobile looks more professional */
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-danger-lead {
+    font-size: 20px !important;
+  }
+
+  .drake-section-p-white {
+    font-size: 15px !important;
+  }
+}
+
+/* ========================================
+   SECTION 5: FEELS LIKE DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
+   ======================================== */
+
+/* --- Layout Grid (Matches Sections 1-4) --- */
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Content Boxes --- */
+.drake-feels-accent-box {
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue Background */
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-left: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.drake-feels-accent-box .drake-section-p-clean {
+  margin-bottom: 0;
+  font-style: italic !important;
+  color: #274472;
+}
+
+.drake-narrative-block {
+  margin-bottom: 50px;
+}
+
+/* --- CONSISTENT FIGURE DESIGN (Same as Sections 1-3) --- */
+.drake-hero-figure {
+  margin: 0 0 50px 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-img-fluid {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.drake-hero-caption {
+  margin-top: 25px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(39, 68, 114, 0.2);
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+  text-align: left;
+}
+
+.drake-caption-tag {
+  display: block;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+
+/* --- Consistent Editorial Note --- */
+.drake-editorial-note-white {
+  background-color: rgb(231, 243, 245);
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+}
+
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  color: #274472;
+  margin: 0;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-hero-caption {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .drake-editorial-note-white {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-img-fluid {
+    height: 350px;
+  }
+
+  .drake-feels-accent-box {
+    padding: 30px 20px;
+  }
+}
+
+/* ========================================
+   SECTION 6: CHOICE DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
+   ======================================== */
 
 .drake-choice-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
-.drake-choice-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.drake-choice-intro {
-  font-size: 18px !important;
-  color: var(--navy-light) !important;
-  margin-top: 20px !important;
-  font-weight: 400 !important;
-}
-
-.drake-choice-grid {
+/* --- Layout Grid (Matches Sections 1-5) --- */
+.drake-sticky-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 60px;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
 }
 
-.drake-choice-card {
-  padding: 50px 40px;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(39, 68, 114, 0.1);
-  transition: all 0.35s ease;
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Comparison Cards --- */
+.drake-choice-grid {
   display: flex;
   flex-direction: column;
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
-.drake-choice-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+.drake-choice-card-redesign {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+  border: 1px solid rgba(39, 68, 114, 0.1);
 }
 
-/* Accent for the "Cross" card to make it feel more "traditional" */
-.drake-choice-card.drake-cross {
-  border-top: 4px solid var(--navy);
-}
-
-/* Accent for the "Fly" card */
-.drake-choice-card.drake-fly {
-  border-top: 4px solid var(--gold);
-}
-
-.drake-choice-badge {
+.drake-choice-badge-navy {
+  display: inline-block;
   font-size: 10px !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
-  color: var(--gold);
+  background-color: rgb(231, 243, 245);
+  color: #274472;
+  padding: 6px 14px;
+  border-radius: 4px;
   margin-bottom: 15px;
-  display: block;
 }
 
-.drake-choice-card h3 {
-  font-family: var(--font-display) !important;
-  font-size: 26px !important;
-  color: var(--navy);
-  margin-bottom: 30px;
+.drake-choice-card-redesign h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 28px !important;
+  color: #274472;
+  margin-bottom: 25px;
   font-weight: 500 !important;
 }
 
-.drake-choice-list {
+.drake-choice-list-navy {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.drake-choice-list li {
+.drake-choice-list-navy li {
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.6 !important;
-  color: var(--navy-light);
+  color: #274472;
   font-weight: 300 !important;
   padding: 12px 0;
   border-bottom: 1px solid rgba(39, 68, 114, 0.06);
@@ -1226,338 +1491,439 @@ to {
   gap: 12px;
 }
 
-.drake-choice-list li::before {
+.drake-choice-list-navy li::before {
   content: "—";
-  color: var(--gold);
+  color: #274472;
   font-weight: bold !important;
 }
 
-.drake-choice-list li:last-child {
+.drake-choice-list-navy li:last-child {
   border-bottom: none;
 }
 
-/* Footer & Verdict Styling */
-.drake-choice-footer {
+/* --- CONSISTENT FIGURE DESIGN (Shared with Section 1-5) --- */
+.drake-hero-figure {
+  margin: 0 0 40px 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(39, 68, 114, 0.1);
+}
+
+.drake-img-fluid {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+.drake-hero-caption {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 1px solid rgba(39, 68, 114, 0.2);
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+}
+
+/* --- Consistent Editorial Note (White box on Blue section) --- */
+.drake-editorial-note-white {
+  background-color: #ffffff;
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+  margin-top: 30px;
+}
+
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: #274472;
+}
+
+.drake-choice-verdict .drake-section-p-clean {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important;
+  color: #274472;
+  font-weight: 500 !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-hero-caption {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .drake-choice-card-redesign {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-img-fluid {
+    height: 300px;
+  }
+}
+
+/* ========================================
+   SECTION 7: AUDIENCE DESIGN (SIDE-BY-SIDE)
+   Prefix: drake- | Colors: Navy & Soft Blue
+   ======================================== */
+
+.drake-audience-redesign {
+  padding: 100px 0;
+}
+
+/* --- Centered Header --- */
+.drake-audience-header-center {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.drake-audience-header-center .drake-section-h2 {
+  color: #274472 !important;
+  margin-bottom: 0;
+}
+
+/* Removing auto-bar to use custom Navy center divider */
+.drake-audience-header-center .drake-section-h2::after {
+  display: none !important;
+}
+
+.drake-navy-divider-center {
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  margin: 30px auto;
+  border-radius: 2px;
+}
+
+/* --- Side-by-Side Grid --- */
+.drake-audience-grid-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Side-by-Side */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.drake-audience-card-clean {
+  padding: 50px 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drake-audience-card-clean:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+}
+
+/* Variant 1: Soft Blue */
+.drake-bg-soft-blue {
+  background-color: rgb(231, 243, 245);
+}
+
+/* Variant 2: Outline */
+.drake-card-outline {
+  background-color: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.15);
+}
+
+.drake-card-icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #274472;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 15px rgba(39, 68, 114, 0.05);
+}
+
+/* Ensure Lucide icons inside circles are centered */
+.drake-card-icon-circle .drake-icon-check,
+.drake-card-icon-circle .drake-icon-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.drake-card-outline .drake-card-icon-circle {
+  background-color: rgb(231, 243, 245);
+}
+
+.drake-audience-card-clean h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important;
+  color: #274472;
+  margin-bottom: 25px;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+}
+
+.drake-audience-list-navy {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.drake-audience-list-navy li {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  font-weight: 400 !important;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.drake-audience-list-navy li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #274472;
+  opacity: 0.5;
+}
+
+.drake-audience-list-navy li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Centered Footer --- */
+.drake-audience-footer-center {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-.drake-choice-verdict {
-  margin-bottom: 20px;
+.drake-editorial-note-centered {
+  padding: 35px;
+  border-top: 1px solid rgba(39, 68, 114, 0.15);
 }
 
-.drake-choice-verdict .drake-section-p-clean {
-  font-family: var(--font-display) !important;
-  font-size: 20px !important;
-  font-weight: 500 !important;
-  color: var(--navy);
-}
-
-.drake-choice-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding-top: 25px;
-  margin-top: 30px;
-}
-
-.drake-choice-footer .drake-editorial-note p {
-  font-style: italic !important;
+.drake-editorial-note-centered p {
+  font-family: 'Playfair Display', serif !important;
   font-size: 18px !important;
-  color: var(--navy);
+  font-style: italic !important;
+  color: #274472;
+  margin: 0;
 }
 
-/* Responsive adjustments */
+/* --- Responsive --- */
 @media (max-width: 1024px) {
-  .drake-choice-grid {
+  .drake-audience-grid-side {
+    padding: 0 20px;
     gap: 20px;
   }
 
-  .drake-choice-card {
+  .drake-audience-card-clean {
     padding: 40px 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .drake-choice-grid {
+  .drake-audience-grid-side {
     grid-template-columns: 1fr;
-  }
-
-  .drake-choice-card h3 {
-    font-size: 22px !important;
-  }
-
-  .drake-choice-footer {
-    padding: 0 10px;
-  }
-}
-
-/* ========================================
-   WHO IS IT RIGHT FOR (SECTION 8)
-   Audience targeting to help travelers determine suitability
-   ======================================== */
-
-/* ── WHO IS IT RIGHT FOR ── */
-
-.drake-audience-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.drake-audience-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.drake-audience-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.drake-audience-card {
-  padding: 50px 40px;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(39, 68, 114, 0.08);
-  transition: all 0.35s ease;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-}
-
-.drake-audience-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--gold);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-}
-
-.drake-audience-icon-wrap {
-  width: 44px;
-  height: 44px;
-  background: var(--bg-soft);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-  flex-shrink: 0;
-}
-
-.drake-suited .drake-audience-icon {
-  color: var(--navy);
-  font-weight: bold !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.drake-alternatives .drake-audience-icon {
-  color: var(--gold);
-  font-weight: bold !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.drake-audience-card h3 {
-  font-family: var(--font-display) !important;
-  font-size: 22px !important;
-  color: var(--navy);
-  margin-bottom: 25px;
-  font-weight: 500 !important;
-}
-
-.drake-audience-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.drake-audience-list li {
-  font-size: 15px !important;
-  line-height: 1.6 !important;
-  color: var(--navy-light);
-  font-weight: 300 !important;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(39, 68, 114, 0.05);
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.drake-audience-list li:last-child {
-  border-bottom: none;
-}
-
-/* Footer Conclusion */
-.drake-audience-footer {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.drake-audience-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding-top: 25px;
-}
-
-.drake-audience-footer .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 19px !important;
-  font-style: italic !important;
-  color: var(--navy);
-}
-
-/* Responsive Logic */
-@media (max-width: 1024px) {
-  .drake-audience-grid {
-    gap: 20px;
-  }
-
-  .drake-audience-card {
-    padding: 40px 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-audience-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .drake-audience-card h3 {
-    font-size: 20px !important;
-  }
-
-  .drake-audience-footer {
-    padding: 0 15px;
-  }
-}
-
-/* ========================================
-   HOW TO PREPARE (SECTION 9)
-   4-step preparation guide for the Drake Passage crossing
-   ======================================== */
-
-/* ── PREPARE ── */
-
-.drake-prepare-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.drake-prepare-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.drake-prepare-intro {
-  font-size: 18px !important;
-  color: var(--navy) !important;
-  font-weight: 500 !important;
-  margin-top: 20px !important;
-}
-
-.drake-prepare-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-bottom: 60px;
-}
-
-.drake-prepare-card {
-  background: #ffffff;
-  padding: 40px 25px;
-  border-radius: 16px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid rgba(39, 68, 114, 0.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
-}
-
-.drake-prepare-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  border-color: var(--gold);
-}
-
-.drake-prepare-step-num {
-  width: 40px;
-  height: 40px;
-  background: var(--navy);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display) !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  margin-bottom: 25px;
-}
-
-.drake-prepare-text {
-  font-size: 15px !important;
-  line-height: 1.6 !important;
-  color: var(--navy-light);
-  font-weight: 300 !important;
-  font-family: var(--font-body) !important;
-}
-
-.drake-prepare-footer {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.drake-prepare-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding-top: 30px;
-  margin-top: 10px;
-}
-
-.drake-prepare-footer .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 19px !important;
-  font-style: italic !important;
-  color: var(--navy);
-  line-height: 1.5 !important;
-}
-
-/* Responsive Logic */
-@media (max-width: 1100px) {
-  .drake-prepare-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-prepare-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .drake-prepare-grid {
-    gap: 16px;
-  }
-
-  .drake-prepare-card {
-    padding: 30px 20px;
+    /* Stack on mobile */
   }
 }
 
 @media (max-width: 480px) {
-  .drake-prepare-grid {
+  .drake-audience-header-center .drake-section-h2 {
+    font-size: 28px !important;
+  }
+}
+
+/* ========================================
+   SECTION 8: PREPARE DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
+   ======================================== */
+
+.drake-prepare-section {
+  padding-top: 50px;
+}
+
+/* --- Layout Grid (Consistent with sections 1-7) --- */
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Preparation Cards --- */
+.drake-prepare-grid-redesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2x2 grid in the scrolling column */
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.drake-prepare-step-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.drake-prepare-step-card:hover {
+  transform: translateY(-5px);
+}
+
+.drake-prepare-badge {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: #ffffff;
+  background-color: #274472;
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.drake-prepare-text-navy {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  color: #274472;
+  font-weight: 500 !important;
+  margin: 0;
+}
+
+/* --- CONSISTENT FIGURE DESIGN (Same as Sections 1-7) --- */
+.drake-hero-figure {
+  margin: 0 0 20px 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-img-fluid {
+  width: 100%;
+  height: 220px;
+  /* Card image height */
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Consistent White Editorial Box (Used in Footer) --- */
+.drake-editorial-note-white {
+  background-color: #ffffff;
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+  margin-top: 30px;
+}
+
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: #274472;
+  margin: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-editorial-note-white {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-prepare-grid-redesign {
     grid-template-columns: 1fr;
   }
 
-  .drake-prepare-header .drake-section-h2 {
-    font-size: 28px !important;
+  .drake-img-fluid {
+    height: 300px;
   }
 }
 
@@ -1605,7 +1971,6 @@ to {
   left: 0;
   width: 100%;
   height: 10px;
-  background-color: #274472;
 }
 
 /* --- Right Column: Text Styling --- */
@@ -1757,423 +2122,592 @@ to {
 }
 
 /* ========================================
-   WHAT HAPPENS NEXT (SECTION 11)
-   Step-by-step booking process outline
+   SECTION 10: NEXT STEPS DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* ── WHAT HAPPENS NEXT ── */
-
 .drake-next-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
-.drake-next-header {
-  text-align: center;
-  margin-bottom: 60px;
+/* --- Layout Grid (Matches Previous Sections) --- */
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
 }
 
-.drake-next-steps-container {
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
+}
+
+/* --- Timeline / Steps Styling --- */
+.drake-next-steps-timeline {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto 50px;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
 
-.drake-next-step-row {
+.drake-next-step-row-new {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(39, 68, 114, 0.05);
-  transition: transform 0.3s ease;
 }
 
-.drake-next-step-row:hover {
-  transform: translateX(10px);
-  border-color: var(--gold);
-}
-
-.drake-next-step-circle {
-  width: 48px;
-  height: 48px;
-  background: var(--navy);
+.drake-next-step-circle-navy {
+  width: 50px;
+  height: 50px;
+  background-color: #274472;
+  /* Solid Navy */
   color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-family: var(--font-display) !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-}
-
-.drake-next-step-body {
-  flex-grow: 1;
-}
-
-.drake-next-step-body .drake-section-p-clean {
-  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
-  color: var(--navy);
+  font-weight: 700 !important;
+}
+
+.drake-next-step-card-white {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(39, 68, 114, 0.05);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  flex-grow: 1;
+  transition: transform 0.3s ease;
+}
+
+.drake-next-step-card-white:hover {
+  transform: translateX(10px);
+  border-color: #274472;
+}
+
+.drake-next-step-card-white .drake-section-p-clean {
+  color: #274472;
+  margin: 0;
   font-weight: 400 !important;
-  text-align: left;
 }
 
-/* Vertical line connecting the steps */
-.drake-next-connector {
+/* Navy Vertical Connector */
+.drake-next-connector-navy {
   width: 2px;
-  height: 30px;
-  background: var(--gold);
-  opacity: 0.4;
-  margin: 5px 0;
+  height: 35px;
+  background-color: #274472;
+  margin-left: 24px;
+  /* Centered with the 50px circle */
+  opacity: 0.3;
 }
 
-/* Footer note styling */
-.drake-next-footer {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
+/* --- Consistent White Editorial Box (Used in Footer) --- */
+.drake-editorial-note-white {
+  background-color: #ffffff;
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+  margin-top: 30px;
 }
 
-.drake-next-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding-top: 25px;
-  margin-top: 10px;
-}
-
-.drake-next-footer .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 19px !important;
+.drake-editorial-note-white p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
   font-style: italic !important;
-  color: var(--navy);
-  line-height: 1.5 !important;
+  color: #274472;
+  margin: 0;
 }
 
-/* Responsive adjustments */
+/* ========================================
+   RESPONSIVE (MATCHES PREVIOUS SECTIONS)
+   ======================================== */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-next-steps-timeline {
+    align-items: center;
+  }
+
+  .drake-next-step-row-new {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .drake-next-connector-navy {
+    margin-left: 0;
+    margin: 15px 0;
+  }
+
+  .drake-editorial-note-white {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
+  }
+}
+
 @media (max-width: 768px) {
-  .drake-next-step-row {
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .drake-next-step-circle {
-    width: 40px;
-    height: 40px;
-    font-size: 16px !important;
-  }
-
-  .drake-next-step-body .drake-section-p-clean {
-    font-size: 15px !important;
-  }
-
-  .drake-next-footer .drake-editorial-note p {
-    font-size: 17px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .drake-next-step-row:hover {
-    transform: none;
-    /* Disable hover shift on small mobile for stability */
+  .drake-next-step-card-white {
+    padding: 20px;
   }
 }
 
 /* ========================================
-   WHY BOOK (SECTION 12)
-   Benefits of booking with Angela Hughes and Trips & Ships
+   SECTION 11: WHY BOOK DESIGN (STICKY)
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* ── WHY BOOK ── */
-
 .drake-why-book-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
-.drake-why-main-content {
+/* --- Layout Grid (Consistent with sections 1-10) --- */
+.drake-sticky-wrapper {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
   align-items: start;
-  margin-bottom: 80px;
 }
 
-.drake-why-header {
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: sticky;
+  top: 140px;
   text-align: left;
 }
 
-.drake-why-header .drake-section-h2 {
-  text-align: left;
-  margin-bottom: 0;
+.drake-sticky-lead-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 19px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin-top: 25px;
+  font-weight: 500 !important;
 }
 
-.drake-why-header .drake-section-h2::after {
-  margin: 20px 0 0;
-}
-
-.drake-why-intro {
-  font-family: var(--font-display) !important;
+/* --- Bio Section --- */
+.drake-why-intro-navy {
+  font-family: 'Playfair Display', serif !important;
   font-size: 22px !important;
   line-height: 1.4 !important;
-  color: var(--navy);
+  color: #274472;
   font-weight: 500 !important;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.drake-why-bio .drake-section-p-clean {
-  font-size: 17px !important;
-  line-height: 1.8 !important;
-  color: var(--navy-light);
-  font-weight: 300 !important;
+.drake-why-bio-navy {
+  margin-bottom: 50px;
 }
 
-/* Benefits Section Styling */
-.drake-why-benefits-area {
-  margin-bottom: 60px;
+.drake-why-bio-navy .drake-section-p-clean {
+  color: #274472;
+  opacity: 0.85;
 }
 
-.drake-why-benefit-title {
-  font-size: 14px !important;
+/* --- Benefit Cards Grid --- */
+.drake-why-benefit-title-navy {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
-  color: var(--gold);
-  margin-bottom: 30px;
-  text-align: center;
+  color: #274472;
+  margin-bottom: 25px;
+  opacity: 0.6;
 }
 
-.drake-why-benefits-grid {
+.drake-why-benefits-grid-navy {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-bottom: 60px;
 }
 
-.drake-why-benefit-card {
+.drake-benefit-card-navy {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 25px 30px;
-  background: var(--bg-soft);
-  border-radius: 12px;
-  border-left: 3px solid var(--gold);
+  gap: 15px;
+  padding: 22px 25px;
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue background */
+  border-radius: 8px;
+  border-left: 3px solid #274472;
+  /* Navy accent instead of gold */
   transition: transform 0.3s ease;
 }
 
-.drake-why-benefit-card:hover {
-  transform: translateX(10px);
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+.drake-benefit-card-navy:hover {
+  transform: translateX(8px);
 }
 
-.drake-why-benefit-icon {
-  color: var(--gold);
+.drake-benefit-icon-navy {
+  color: #274472;
+  font-size: 16px !important;
+}
+
+.drake-benefit-card-navy p {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #274472;
+  margin: 0;
+  line-height: 1.3 !important;
+}
+
+/* --- Consistent Editorial Note (Soft Blue box for White section) --- */
+.drake-editorial-note-blue {
+  background-color: rgb(231, 243, 245);
+  padding: 35px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+}
+
+.drake-editorial-note-blue p {
+  font-family: 'Playfair Display', serif !important;
   font-size: 18px !important;
-  font-weight: bold !important;
-}
-
-.drake-why-benefit-card p {
-  font-family: var(--font-body) !important;
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  color: var(--navy);
+  font-style: italic !important;
+  color: #274472;
   margin: 0;
 }
 
-/* Footer note styling */
-.drake-why-footer {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 40px;
+  }
 }
 
-.drake-why-footer .drake-editorial-note {
-  border-top: 2px solid var(--gold);
-  border-left: none;
-  padding-top: 30px;
-}
-
-.drake-why-footer .drake-editorial-note p {
-  font-family: var(--font-display) !important;
-  font-size: 19px !important;
-  font-style: italic !important;
-  color: var(--navy);
-}
-
-/* Responsive adjustments */
 @media (max-width: 1024px) {
-  .drake-why-main-content {
+  .drake-sticky-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static;
     text-align: center;
   }
 
-  .drake-why-header {
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-why-bio-navy,
+  .drake-why-benefit-title-navy {
     text-align: center;
   }
 
-  .drake-why-header .drake-section-h2::after {
-    margin: 20px auto 0;
+  .drake-editorial-note-blue {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
   }
 }
 
 @media (max-width: 768px) {
-  .drake-why-benefits-grid {
+  .drake-why-benefits-grid-navy {
     grid-template-columns: 1fr;
   }
 
-  .drake-why-benefit-card {
-    padding: 20px;
-  }
-
-  .drake-why-intro {
+  .drake-why-intro-navy {
     font-size: 20px !important;
   }
 }
 
 /* ========================================
-   FAQ SECTION (SECTION 14)
-   Accordion-style frequently asked questions
+   SECTION 12: FAQ DESIGN (FULL WIDTH)
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* ── FAQ ── */
-
-.drake-faq-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
+.drake-faq-fullwidth {
+  padding: 100px 0;
 }
 
-.drake-faq-header {
+/* --- Centered Header --- */
+.drake-faq-header-centered {
   text-align: center;
   margin-bottom: 60px;
+  padding: 0 20px;
 }
 
-.drake-faq-sub {
-  font-size: 16px !important;
-  color: var(--navy-light);
-  margin-top: 20px;
-  font-weight: 300 !important;
+.drake-faq-header-centered .drake-section-h2 {
+  color: #274472 !important;
+  margin-bottom: 0;
+}
+
+/* Removing default auto-bar to use custom Navy center divider */
+.drake-faq-header-centered .drake-section-h2::after {
+  display: none !important;
+}
+
+.drake-navy-divider-center {
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  margin: 30px auto;
+  border-radius: 2px;
+}
+
+.drake-faq-intro-text {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  color: #274472;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400 !important;
+  opacity: 0.8;
+}
+
+/* --- Full Width Accordion Container --- */
+.drake-faq-full-container {
+  max-width: 1000px;
+  /* Optimal readability width */
+  margin: 0 auto;
+  width: 100%;
 }
 
 .drake-faq-list {
-  border-top: 1px solid rgba(39, 68, 114, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(39, 68, 114, 0.08);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+/* Emerald-style FAQ overrides */
+.drake-faq-list.emerald-style {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: left;
+}
+
+.drake-faq-item.emerald-faq-item {
+  border-top: 1px solid #e4e9ee;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.drake-faq-item.emerald-faq-item:last-child {
+  border-bottom: 1px solid #e4e9ee;
+}
+
+.drake-faq-item.emerald-faq-item:hover {
+  background-color: transparent;
+}
+
+.drake-faq-item.emerald-faq-item:hover .emerald-faq-question {
+  color: #1a3a6d;
+}
+
+.drake-faq-q.emerald-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2f4a6d;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+}
+
+.drake-faq-icon.emerald-faq-icon {
+  font-size: 22px;
+  font-weight: 300;
+  color: #2f4a6d;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drake-faq-a.emerald-faq-answer {
+  margin: 0;
+  padding: 0;
+}
+
+.drake-faq-a-inner {
+  padding: 14px 0 0 0;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  color: #274472cc;
+  font-weight: 300 !important;
+  opacity: 1;
 }
 
 .drake-faq-item {
   border-bottom: 1px solid rgba(39, 68, 114, 0.1);
-  padding: 0;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.drake-faq-item:last-child {
+  border-bottom: none;
 }
 
 .drake-faq-item:hover {
-  background: rgba(231, 243, 245, 0.3);
-  /* Subtle var(--bg-soft) hint */
+  background-color: rgba(231, 243, 245, 0.4);
+  /* Light Blue Hover */
 }
 
 .drake-faq-q {
-  padding: 24px 10px;
-  font-size: 17px !important;
-  font-weight: 500 !important;
-  color: var(--navy);
+  padding: 30px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-body) !important;
-  transition: color 0.3s ease;
+  gap: 30px;
 }
 
-.drake-faq-item:hover .drake-faq-q {
-  color: var(--gold);
+.drake-faq-q span {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #274472;
+  line-height: 1.5 !important;
 }
 
 .drake-faq-icon {
-  font-size: 18px !important;
-  color: var(--gold);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 20px;
+  color: #274472;
+  transition: transform 0.4s ease;
+  flex-shrink: 0;
 }
 
 .drake-faq-item.drake-open .drake-faq-icon {
   transform: rotate(180deg);
 }
 
-.drake-faq-a {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-  /* Optimized for smoothness */
-}
-
-.drake-faq-item.drake-open .drake-faq-a {
-  max-height: 1000px;
-  /* Large enough for long answers */
-  transition: max-height 0.8s ease-in-out;
+.drake-faq-item.drake-open .drake-faq-q {
+  background-color: rgba(231, 243, 245, 0.2);
 }
 
 .drake-faq-a-inner {
-  padding: 0 10px 24px 10px;
+  padding: 0 40px 40px 40px;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
-  line-height: 1.7 !important;
+  line-height: 1.8 !important;
+  color: #274472;
   font-weight: 300 !important;
-  color: var(--navy-light);
-  font-family: var(--font-body) !important;
+  opacity: 0.9;
 }
 
-/* Specific highlight for open state question */
-.drake-faq-item.drake-open .drake-faq-q {
-  color: var(--navy);
-  font-weight: 600 !important;
-}
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .drake-faq-fullwidth {
+    padding: 70px 20px;
+  }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
   .drake-faq-q {
-    font-size: 15px !important;
-    padding: 20px 5px;
+    padding: 25px;
   }
 
   .drake-faq-a-inner {
+    padding: 0 25px 30px 25px;
+  }
+
+  /* Emerald-style FAQ responsive */
+  .drake-faq-q.emerald-faq-question {
+    padding: 5px 0;
+  }
+
+  .drake-faq-a-inner {
+    padding: 14px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .emerald-faq-question {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-faq-header-centered .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-faq-intro-text {
+    font-size: 18px !important;
+  }
+
+  .drake-faq-q span {
     font-size: 15px !important;
   }
 
-  .drake-faq-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .drake-faq-list {
+    border-radius: 8px;
+  }
+
+  /* Emerald-style FAQ mobile */
+  .drake-faq-item.emerald-faq-item {
+    padding: 15px 0;
+  }
+
+  .drake-faq-icon.emerald-faq-icon {
+    font-size: 20px;
   }
 }
 
 /* ========================================
-   FINAL CTA (SECTION 15)
-   Final call-to-action with background image encouraging expedition planning
+   FINAL CTA DESIGN (SECTION 15)
+   Prefix: drake- | Colors: Navy, White, Soft Blue
    ======================================== */
-
-/* ── FINAL CTA ── */
 
 .drake-final-cta-section {
   position: relative;
-  padding: 100px 20px;
+  padding: 120px 20px;
   background: url('https://ucd284b7c9a5a19f0dc8352b7e35.previews.dropboxusercontent.com/p/thumb/AC-laTVDXSQhgu4yS0PzpG47qSxvzjhxVAylmAZKLb-8C3V-zBtrNI5aODEP0uvty2Wtr03DKmYL58LIb81e0rxce9shKFcKOPssp8QdnFGBMTkgwc6zdjApAaZfNJDcdywquLX-nvwBnI4DXuvTuTqPBMTpRXxCFwHBTB5KNOBXmUYY1F2g3012rJxF-TMIZOdprPFA7mxmmCrfjLiCaLjY-uaU3fuz2cQNZov1WswCYgReUWoZdEF6WcHLxRbH8E1t5DliNcyr5a2ihibehD388hJsAum6BF_gY6PRtjaVAANHo1xebmyqEUddb-_pf8tPEvtNRgM8xzRSKC4rSPx11GJ-nogXB0vetzhQb9IqAw/p.jpeg') center/cover no-repeat;
   display: flex;
   justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  min-height: 50vh;
   align-items: center;
+  text-align: center;
+  min-height: 60vh;
+  overflow: hidden;
 }
 
-/* Dark overlay for contrast */
-.drake-cta-overlay {
+/* Dark Navy Overlay (Replacing the neutral black) */
+.drake-cta-overlay-navy {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(15, 28, 46, 0.85), rgba(15, 28, 46, 0.7));
+  background: linear-gradient(to bottom, rgba(15, 28, 46, 0.85), rgba(39, 68, 114, 0.75));
   z-index: 1;
 }
 
@@ -2184,84 +2718,106 @@ to {
   z-index: 2;
 }
 
-/* Visibility for Heading on dark background */
-.drake-final-cta-inner .drake-section-h2.drake-white {
+/* Heading Fix */
+.drake-text-white {
   color: #ffffff !important;
-  font-size: 48px !important;
-  margin-bottom: 30px;
+  font-size: 52px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Custom Divider (Replacing Gold Bar) */
+.drake-cta-divider-blue {
+  width: 60px;
+  height: 3px;
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue accent */
+  margin: 30px auto;
+  border-radius: 2px;
 }
 
 .drake-cta-content-wrap {
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .drake-cta-paragraph {
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
   line-height: 1.6 !important;
   font-weight: 300 !important;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 10px;
-  font-family: var(--font-body) !important;
 }
 
-/* Emphasis on the first sentence */
 .drake-cta-lead {
-  font-size: 20px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important;
   font-weight: 400 !important;
   color: #ffffff !important;
 }
 
-/* Primary Button Styling */
-.drake-cta-btn {
-  padding: 18px 50px;
+/* --- The Action Button (No Gold) --- */
+.drake-cta-btn-white {
+  padding: 20px 50px;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 13px !important;
-  letter-spacing: 2px !important;
-  border: 1px solid var(--gold);
-  background: var(--gold);
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: var(--font-body) !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px !important;
+  background-color: #ffffff;
+  /* Solid White */
+  color: #274472;
+  /* Navy Text */
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.drake-cta-btn:hover {
-  background: #ffffff;
-  border-color: #ffffff;
-  color: #000000;
+.drake-cta-btn-white:hover {
+  background-color: transparent;
+  color: #ffffff;
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive adjustments */
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
 @media (max-width: 900px) {
   .drake-final-cta-section {
-    padding: 100px 24px;
+    padding: 100px 30px;
   }
 
-  .drake-final-cta-inner .drake-section-h2.drake-white {
-    font-size: 38px !important;
+  .drake-text-white {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-text-white {
+    font-size: 32px !important;
+  }
+
+  .drake-cta-lead {
+    font-size: 20px !important;
+  }
+
+  .drake-cta-btn-white {
+    width: 100%;
+    padding: 18px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .drake-final-cta-section {
-    padding: 80px 16px;
+    min-height: auto;
+    padding: 80px 20px;
   }
 
-  .drake-final-cta-inner .drake-section-h2.drake-white {
-    font-size: 32px !important;
-  }
-
-  .drake-cta-paragraph {
-    font-size: 16px !important;
-  }
-
-  .drake-cta-btn {
-    width: 100%;
-    padding: 18px 20px;
+  .drake-text-white {
+    text-align: center;
+    font-size: 28px !important;
   }
 }

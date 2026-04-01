@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './LuxuryTravel.css'
-import { ChevronDown, Star, Sparkles } from 'lucide-react'
+import { ChevronDown, Star, Sparkles, Check, AlertCircle, Plus, Minus } from 'lucide-react'
 import ProfilePicture from '../../assets/image.jpg'
 
 // --- FAQ Component Logic ---
@@ -24,22 +24,26 @@ function FAQComponent() {
     ];
 
     return (
-        <div className="lux-faq-list">
+        <div className="lux-faq-list emerald-style">
             {faqData.map((item, index) => (
                 <div
                     key={index}
-                    className={`lux-faq-item ${openIndex === index ? 'lux-open' : ''}`}
+                    className={`lux-faq-item emerald-faq-item${openIndex === index ? ' lux-open emerald-faq-item--open' : ''}`}
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 >
-                    <div className="lux-faq-question">
+                    <div className="lux-faq-question emerald-faq-question">
                         <span className="lux-q-text">{item.q}</span>
-                        <ChevronDown className="lux-faq-icon" size={20} />
+                        <span className="lux-faq-icon emerald-faq-icon">
+                            {openIndex === index ? <Minus size={20} strokeWidth={1.5} /> : <Plus size={20} strokeWidth={1.5} />}
+                        </span>
                     </div>
-                    <div className="lux-faq-answer">
-                        <div className="lux-a-inner">
-                            <p className="lux-section-p">{item.a}</p>
+                    {openIndex === index && (
+                        <div className="lux-faq-answer emerald-faq-answer">
+                            <div className="lux-a-inner">
+                                <p className="lux-section-p">{item.a}</p>
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             ))}
         </div>
@@ -88,102 +92,124 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 2: EXPERTISE — Explaining the distinct level of planning required for Discovery Yachts ===== */}
-            <section className="lux-section lux-bg-white">
+            {/* ===== SECTION 2: EXPERTISE — Sticky Editorial Layout with New Navy/Soft-Blue Schema ===== */}
+            <section className="lux-section lux-bg-white lux-expertise-redesign">
                 <div className="lux-inner">
-                    <div className="lux-split-grid">
+                    <div className="lux-sticky-split-layout">
 
-                        {/* Left Column: Title and Numbering */}
-                        <div className="lux-title-side">
-                            <span className="lux-section-number">01</span>
-                            <h2 className="lux-h2">Expert Planning for <br />Scenic Eclipse Discovery Yachts</h2>
-                        </div>
+                        {/* Left Side: Sticky Header and Step Number */}
+                        <aside className="lux-title-side-sticky">
+                            <div className="lux-sticky-container">
+                                <span className="lux-section-number">01</span>
+                                <h2 className="lux-h2">Expert Planning for <br />Scenic Eclipse Discovery Yachts</h2>
+                                <div className="lux-navy-bar-accent"></div>
+                            </div>
+                        </aside>
 
-                        {/* Right Column: Content Area */}
-                        <div className="lux-content-side">
+                        {/* Right Side: Narrative Content */}
+                        <main className="lux-content-side-scroll">
                             <p className="lux-lead-text">
                                 Planning a Scenic Eclipse journey requires a different level of expertise than traditional luxury cruising. Discovery yachts operate in remote regions, follow expedition-style pacing, and are shaped by seasonality, weather, and regional conditions.
                             </p>
 
-                            <div className="lux-editorial-accent">
+                            {/* Editorial box using the requested Soft Blue schema */}
+                            <div className="lux-editorial-box-blue">
                                 <p className="lux-section-p">
                                     Our role is not simply to book the sailing. It is to help travelers determine whether Scenic Eclipse is the right experience and, if so, to design the journey thoughtfully and intelligently from the start.
                                 </p>
                             </div>
-                        </div>
+                        </main>
 
                     </div>
                 </div>
             </section>
 
-            {/* ===== SECTION 3: EXPERT INSIGHT — Featuring Angela Hughes' leadership and strategic Scenic partnership ===== */}
-            <section className="lux-section lux-bg-cream">
-                <div className="lux-inner">
+            {/* ===== SECTION 3: EXPERT INSIGHT — Sticky Editorial Layout with Navy Schema ===== */}
+            <section className="lux-section lux-bg-soft lux-expert-redesign">
+                <div className="lux-inner lux-wide">
+                    <div className="lux-sticky-wrapper flipped">
 
-                    {/* Centered Header Wrapper */}
-                    <div className="lux-expert-header">
-                        <span className="lux-section-number">02</span>
-                        <h2 className="lux-h2">Expert Insight from Angela Hughes</h2>
-                    </div>
+                        {/* Left Side: Sticky Title & Recognition Sidebar */}
+                        <aside className="lux-side-sticky">
+                            <div className="lux-sticky-element">
+                                <span className="lux-section-number">02</span>
+                                <h2 className="lux-h2 lux-left-bar">Expert Insight from <br />Angela Hughes</h2>
 
-                    <div className="lux-expert-grid">
-
-                        {/* Sidebar: Headshot and Credentials */}
-                        <div className="lux-expert-sidebar">
-                            <div className="lux-expert-image-wrap">
-                                <div className="lux-expert-avatar">
-                                    <img src={ProfilePicture} alt="" />
+                                {/* Professional Recognition Box filling the sticky space */}
+                                <div className="lux-credentials-box-navy">
+                                    <div className="lux-expert-avatar-wrap">
+                                        <img src={ProfilePicture} alt="Angela Hughes" className="lux-avatar-img" />
+                                    </div>
+                                    <h4 className="lux-sidebar-title-navy">Recognition</h4>
+                                    <ul className="lux-credentials-list-navy">
+                                        <li>Travelpulse Most Influential Women in Travel 2026</li>
+                                        <li>Luxury Travel Advisor Trainer</li>
+                                        <li>International Strategy Speaker</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="lux-credentials-box">
-                                <h4 className="lux-sidebar-title">Recognition</h4>
-                                <ul className="lux-credentials-list">
-                                    <li>Travelpulse Most Influential Women in Travel 2026</li>
-                                    <li>Luxury Travel Advisor Trainer</li>
-                                    <li>International Strategy Speaker</li>
-                                </ul>
-                            </div>
-                        </div>
+                        </aside>
 
-                        {/* Main Content Area */}
-                        <div className="lux-expert-main-content">
-                            <h3 className="lux-h3">Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel</h3>
+                        {/* Right Side: Scrolling Narrative Content */}
+                        <main className="lux-content-column">
+                            <h3 className="lux-h3-navy">Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel</h3>
 
-                            <p className="lux-section-p">
-                                Angela Hughes is the CEO and Founder of Trips & Ships Luxury Travel and a recognized authority in luxury cruising, expedition travel, and discovery yacht experiences. With more than four decades in the travel industry, Angela trains luxury travel advisors, consults with cruise leadership teams, and speaks internationally on premium travel strategy. Angela was named to Travelpulse’s Most Influential Women in Travel list 2026.
+                            <p className="lux-section-p-clean">
+                                Angela Hughes is the CEO and Founder of Trips & Ships Luxury Travel and a recognized authority in luxury cruising, expedition travel, and discovery yacht experiences. With more than four decades in the travel industry, Angela trains luxury travel advisors, consults with cruise leadership teams, and speaks internationally on premium travel strategy.
                             </p>
 
-                            <div className="lux-expert-highlight-box">
-                                <p className="lux-section-p">
-                                    Her expertise with Scenic Eclipse Discovery Yachts comes from real-world experience — understanding how expedition travel unfolds day by day, how seasonality affects itineraries, and how small planning decisions can significantly shape the guest experience. Every Scenic Eclipse journey planned through Trips & Ships reflects this perspective.
+                            {/* SEO Image: (Consistent Figure Style) */}
+                            <figure className="lux-hero-figure">
+                                <div className="lux-figure-inner">
+                                    <img
+                                        src="https://uc3f064bbd303043973f703878c2.previews.dropboxusercontent.com/p/thumb/AC-aA8bCoiGzf9Q9awahdPkqN13dvsJc3hp-ppkf5ErBnwT3h4f_1uDadgJvUkF1acU6gIwq69DkXUxP2cPAp9CIWA5XTSNs2FD_dFN7vf-UOqLrN_TvLAArrAOILEiJ2hPSzXKWJUW24ATT71UBdP-Rt3kReh7K3tICysqM9XCGcb1CMqMaF-9rpmWk7H21IssN_hIjBD0TbRFtoV9H3Rx5ChZ7IBYK94OTyrsyWTexN0zALOXULP5AkUMMGswlxu6MNcJmXssnnxPaqYZ-seGi3CSaHAyqi2dfg7ExU1uuhT3sCGl0Jr7ZwhECP1Mu1r63a1iPEsSHppLMulhT7fYSIx8jTn_jJjVfgrdzNeJt6A/p.jpeg"
+                                        alt="Expert planning for Drake Passage crossing on luxury expedition ship Antarctica"
+                                        className="lux-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="lux-hero-caption">
+                                    <span className="lux-caption-tag">Strategic Planning</span>
+                                    Decades of experience ensure that complex logistics like the Drake Passage are managed professionally.
+                                </figcaption>
+                            </figure>
+
+                            <div className="lux-expert-highlight-box-white">
+                                <p className="lux-section-p-clean">
+                                    Her expertise with Scenic Eclipse Discovery Yachts comes from real-world experience — understanding how expedition travel unfolds day by day, how seasonality affects itineraries, and how small planning decisions can significantly shape the guest experience.
                                 </p>
                             </div>
 
-                            <p className="lux-section-p">
-                                Through decades of work in the luxury cruise and expedition space, Angela Hughes and the Trips & Ships Luxury Travel leadership team maintain direct access to the president and vice president of the Scenic Group. This relationship provides informed perspective and senior-level insight when planning Scenic Eclipse journeys, ensuring alignment and clarity while preserving the integrity of the onboard experience.
+                            <p className="lux-section-p-clean">
+                                Through decades of work in the luxury cruise and expedition space, Angela Hughes and the Trips & Ships Luxury Travel leadership team maintain direct access to the president and vice president of the Scenic Group. This relationship provides senior-level insight when planning Scenic Eclipse journeys, ensuring alignment and clarity.
                             </p>
-                        </div>
+                        </main>
 
                     </div>
                 </div>
             </section>
 
-            {/* ===== SECTION 5: SUITABILITY — Helping travelers determine if Scenic Eclipse aligns with their priorities ===== */}
-            <section className="lux-section lux-bg-white">
-                <div className="lux-inner">
+            {/* ===== SECTION 5: SUITABILITY — Full-Width Side-by-Side Design with Navy Schema ===== */}
+            <section className="lux-section lux-bg-white lux-suitability-full">
+                <div className="lux-inner-full">
 
-                    {/* Centered Header Wrapper */}
-                    <div className="lux-selection-header">
+                    {/* Centered Header Area */}
+                    <div className="lux-suitability-header-centered">
                         <span className="lux-section-number">03</span>
                         <h2 className="lux-h2">Is Scenic Eclipse Right for You?</h2>
+                        <div className="lux-navy-divider-center"></div>
                     </div>
 
-                    <div className="lux-selection-grid">
+                    <div className="lux-suitability-side-grid">
 
-                        {/* Column 1: Ideal Fit */}
-                        <div className="lux-selection-card lux-ideal">
-                            <h3 className="lux-h3">Scenic Eclipse Is Ideal If You:</h3>
-                            <ul className="lux-selection-list">
+                        {/* Column 1: Ideal Fit - Soft Blue Background */}
+                        <div className="lux-suitability-box lux-bg-soft-blue">
+                            <div className="lux-box-header">
+                                <span className="lux-box-icon">
+                                    <Check size={24} strokeWidth={2.5} />
+                                </span>
+                                <h3>Scenic Eclipse Is Ideal If You:</h3>
+                            </div>
+                            <ul className="lux-suitability-list-navy">
                                 <li>Want immersive discovery rather than mass-market cruising</li>
                                 <li>Value learning, enrichment, and destination depth</li>
                                 <li>Prefer smaller ships with elevated service</li>
@@ -192,16 +218,22 @@ function LuxuryTravel() {
                             </ul>
                         </div>
 
-                        {/* Column 2: Not Ideal Fit */}
-                        <div className="lux-selection-card lux-not-ideal">
-                            <h3 className="lux-h3">Scenic Eclipse May Not Be Ideal If You:</h3>
-                            <ul className="lux-selection-list">
+                        {/* Column 2: Not Ideal Fit - Navy Outline */}
+                        <div className="lux-suitability-box lux-box-outline-navy">
+                            <div className="lux-box-header">
+                                <span className="lux-box-icon">
+                                    <AlertCircle size={24} strokeWidth={2.5} />
+                                </span>
+                                <h3>Scenic Eclipse May Not Be Ideal If You:</h3>
+                            </div>
+                            <ul className="lux-suitability-list-navy">
                                 <li>Prefer large-ship entertainment and nightlife</li>
                                 <li>Are shopping strictly on price</li>
                                 <li>Want rigid sightseeing schedules</li>
                                 <li>Expect a traditional cruise-ship atmosphere</li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -230,53 +262,70 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 7: PLANNING FACTORS — Outlining the specific criteria used in expert itinerary selection ===== */}
-            <section className="lux-section lux-bg-white">
-                <div className="lux-inner">
+            {/* ===== SECTION 7: PLANNING FACTORS — Redesigned with Sticky Side-Heading and Navy Schema ===== */}
+            <section className="lux-section lux-bg-white lux-planning-redesign">
+                <div className="lux-inner lux-wide">
+                    <div className="lux-sticky-wrapper">
 
-                    {/* Centered Header Wrapper */}
-                    <div className="lux-planning-header">
-                        <span className="lux-section-number">05</span>
-                        <h2 className="lux-h2">How an Expert Chooses the <br />Right Scenic Eclipse Sailing</h2>
-                    </div>
+                        {/* Left Column: Sticky Title & Intro */}
+                        <aside className="lux-side-sticky">
+                            <div className="lux-sticky-element">
+                                <span className="lux-section-number">05</span>
+                                <h2 className="lux-h2 lux-left-bar">How an Expert Chooses the <br />Right Scenic Eclipse Sailing</h2>
 
-                    <div className="lux-planning-intro">
-                        <p className="lux-section-p">
-                            Selecting the right Scenic Eclipse itinerary involves far more than choosing a destination. Expert planning considers how multiple factors interact to shape the overall experience.
-                        </p>
-                    </div>
+                                <p className="lux-sticky-lead-text">
+                                    Selecting the right Scenic Eclipse itinerary involves far more than choosing a destination. Expert planning considers how multiple factors interact to shape the overall experience.
+                                </p>
+                            </div>
+                        </aside>
 
-                    <div className="lux-planning-grid">
+                        {/* Right Column: Scrolling Planning Cards Grid */}
+                        <main className="lux-content-column">
+                            <div className="lux-planning-grid-redesign">
 
-                        {/* Factor 1 */}
-                        <div className="lux-planning-card">
-                            <Sparkles className="lux-planning-icon" size={20} />
-                            <p className="lux-planning-text">Experience alignment between discovery travel and comfort expectations</p>
-                        </div>
+                                {/* Factor 1 */}
+                                <div className="lux-planning-card-navy">
+                                    <span className="lux-planning-icon-navy">
+                                        <Sparkles size={20} strokeWidth={1.5} />
+                                    </span>
+                                    <p className="lux-planning-text-navy">Experience alignment between discovery travel and comfort expectations</p>
+                                </div>
 
-                        {/* Factor 2 */}
-                        <div className="lux-planning-card">
-                            <Sparkles className="lux-planning-icon" size={20} />
-                            <p className="lux-planning-text">Seasonality, including weather, wildlife, daylight, and sea conditions</p>
-                        </div>
+                                {/* Factor 2 */}
+                                <div className="lux-planning-card-navy">
+                                    <span className="lux-planning-icon-navy">
+                                        <Sparkles size={20} strokeWidth={1.5} />
+                                    </span>
+                                    <p className="lux-planning-text-navy">Seasonality, including weather, wildlife, daylight, and sea conditions</p>
+                                </div>
 
-                        {/* Factor 3 */}
-                        <div className="lux-planning-card">
-                            <Sparkles className="lux-planning-icon" size={20} />
-                            <p className="lux-planning-text">Itinerary pacing and expedition intensity</p>
-                        </div>
+                                {/* Factor 3 */}
+                                <div className="lux-planning-card-navy">
+                                    <span className="lux-planning-icon-navy">
+                                        <Sparkles size={20} strokeWidth={1.5} />
+                                    </span>
+                                    <p className="lux-planning-text-navy">Itinerary pacing and expedition intensity</p>
+                                </div>
 
-                        {/* Factor 4 */}
-                        <div className="lux-planning-card">
-                            <Sparkles className="lux-planning-icon" size={20} />
-                            <p className="lux-planning-text">Cabin placement and ship flow</p>
-                        </div>
+                                {/* Factor 4 */}
+                                <div className="lux-planning-card-navy">
+                                    <span className="lux-planning-icon-navy">
+                                        <Sparkles size={20} strokeWidth={1.5} />
+                                    </span>
+                                    <p className="lux-planning-text-navy">Cabin placement and ship flow</p>
+                                </div>
 
-                        {/* Factor 5 */}
-                        <div className="lux-planning-card lux-span-full">
-                            <Sparkles className="lux-planning-icon" size={20} />
-                            <p className="lux-planning-text">Flights, transfers, documentation, and pre- and post-cruise planning</p>
-                        </div>
+                                {/* Factor 5 - Full Width in the grid */}
+                                <div className="lux-planning-card-navy lux-grid-span-full">
+                                    <span className="lux-planning-icon-navy">
+                                        <Sparkles size={20} strokeWidth={1.5} />
+                                    </span>
+                                    <p className="lux-planning-text-navy">Flights, transfers, documentation, and pre- and post-cruise planning</p>
+                                </div>
+
+                            </div>
+                        </main>
+
                     </div>
                 </div>
             </section>
@@ -357,83 +406,107 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 9: DECISION MATRIX — High-contrast text colors for Yes/No/Limited values ===== */}
-            <section className="lux-section lux-bg-cream">
-                <div className="lux-inner">
+            {/* ===== SECTION 9: DECISION MATRIX — Sticky Side-Heading Layout with Navy/Soft-Blue Schema ===== */}
+<section className="lux-section lux-bg-soft lux-matrix-redesign">
+    <div className="lux-inner lux-wide">
+        <div className="lux-sticky-wrapper">
 
-                    <div className="lux-matrix-header">
-                        <span className="lux-section-number">07</span>
-                        <h2 className="lux-h2">Which Yacht Should You Choose?</h2>
-                        <p className="lux-matrix-intro">
-                            Scenic Eclipse and Emerald Yachts serve very different traveler profiles. Choosing the right yacht depends on how you want your journey to feel.
-                        </p>
-                    </div>
-
-                    <div className="lux-matrix-container">
-                        <h3 className="lux-h3-matrix">Scenic Eclipse vs Emerald Yachts — Decision Matrix</h3>
-
-                        <div className="lux-table-wrapper">
-                            <table className="lux-comparison-table">
-                                <thead>
-                                    <tr>
-                                        <th className="lux-th-aspect">If You Value…</th>
-                                        <th className="lux-th-scenic">Choose Scenic Eclipse</th>
-                                        <th className="lux-th-emerald">Choose Emerald Yachts</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="lux-td-label">Exploration & Discovery</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Remote or Polar Destinations</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Expert-Led Enrichment</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                        <td className="lux-td-res lux-val-lim" data-label="Emerald">Limited</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Relaxed Coastal Cruising</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Social Yacht Atmosphere</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Warm-Weather Lifestyle Focus</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Expedition-Style Pacing</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Leisure-Forward Pacing</td>
-                                        <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="lux-td-label">Destination Depth</td>
-                                        <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                        <td className="lux-td-res lux-val-lim" data-label="Emerald">Moderate</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
+            {/* Left Column: Sticky Title & Intro */}
+            <aside className="lux-side-sticky">
+                <div className="lux-sticky-element">
+                    <span className="lux-section-number">07</span>
+                    <h2 className="lux-h2 lux-left-bar">Which Yacht <br />Should You Choose?</h2>
+                    
+                    <p className="lux-sticky-lead-text">
+                        Scenic Eclipse and Emerald Yachts serve very different traveler profiles. Choosing the right yacht depends on how you want your journey to feel.
+                    </p>
                 </div>
-            </section>
+            </aside>
+
+            {/* Right Column: Scrolling Matrix Content */}
+            <main className="lux-content-column">
+                <div className="lux-matrix-container">
+                    <h3 className="lux-h3-matrix">Scenic Eclipse vs Emerald Yachts — Decision Matrix</h3>
+
+                    {/* SEO Image: Consistent Figure Style */}
+                    <figure className="lux-hero-figure">
+                        <div className="lux-figure-inner">
+                            <img
+                                src="https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC-23vyXZiMnH2p13E4BPfBgJ63tlqCaQ6RjXqHqtFl8gref5taIkCH4sdT1YMEXUun06NFLaw7fnk0Y7qfcg5AQUclkFxaimwhtAi_qsBDlklgxYaLeAxhd-V_HafeNGp2i6QlYjJ2h__kTrqip_IjbRB0Ch1tRw0TP8ha4vP7R3mVekoqZwxQHQCJNDuy3s9t4BV1w05iG32eqbMmb5tXJNZIKItJ2rNuk_0ft5AN5vamVDAA4cpMhXXIM3uwF5mokendzMLyx9Gf2za2hyDY_Ekezf_jkEIL3vdwHLDlBOffPWVC0Chjl7S2c4ctaKvq5A5CNsycWxITVgfOIz17KlwaAikd_TF1RqlnMevI0-Q/p.png"
+                                alt="Drake Passage expedition cruise compared to traditional luxury yacht experience"
+                                className="lux-img-fluid"
+                            />
+                        </div>
+                        <figcaption className="lux-hero-caption">
+                            <span className="lux-caption-tag">Comparison</span>
+                            Understanding the difference between Drake Passage expeditions and traditional cruising helps determine the right yacht for your journey.
+                        </figcaption>
+                    </figure>
+
+                    <div className="lux-table-wrapper">
+                        <table className="lux-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th className="lux-th-aspect">If You Value…</th>
+                                    <th className="lux-th-scenic">Choose Scenic Eclipse</th>
+                                    <th className="lux-th-emerald">Choose Emerald Yachts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="lux-td-label">Exploration & Discovery</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Remote or Polar Destinations</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Expert-Led Enrichment</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                    <td className="lux-td-res lux-val-lim" data-label="Emerald">Limited</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Relaxed Coastal Cruising</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Social Yacht Atmosphere</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Warm-Weather Lifestyle Focus</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Expedition-Style Pacing</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Leisure-Forward Pacing</td>
+                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                </tr>
+                                <tr>
+                                    <td className="lux-td-label">Destination Depth</td>
+                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                    <td className="lux-td-res lux-val-lim" data-label="Emerald">Moderate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</section>
 
             {/* ===== SECTION 10: HIGH-LEVEL COMPARISON — Quick-reference summary of brand differences ===== */}
             <section className="lux-section lux-bg-white">
