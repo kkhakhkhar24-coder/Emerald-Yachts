@@ -9,23 +9,38 @@ import myImage from "../../assets/image.jpg";
 function ScenicAntarctica() {
 
 
- const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const [galleryCurrent, setGalleryCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const [activeFAQ, setActiveFAQ] = useState(null);
 
-   const images = [
-    "https://ucad543950156cf5951892cfcf68.previews.dropboxusercontent.com/p/thumb/AC8Fr-1JzVGbGHMP94K5UNpHrs1RfZrQYcNGlKvhAiMJFrxLMxh-zz0AmSP6oe4JUvhdbquwzdbCg_-X5TVkgGnRVfsoLJ2iQvktRxsGIv_JS2K2zFs69c3oNdyMHVfC9Q1A5CSZBU0QCiWtj-1PSgWMz0WclezVAiDZYOA4itlg63n104wWmpEcJ-6Cpjw0CVWwsl_vZ2P1k-f5Jl2XY3QhJgnY_qfZwvUr7DbJ10eI7xhOdxaAWYP4qHSjehdVvvyoO3-b1Ge-9vPGG6mfjhzQe_WVvjQfTvUKGHa8SnnbR-Zi76BbaS7P3a3BHu2J8vnIGoUvQzBgUWZxLDH3EQjHi6iMi9NH7Mxrj20AF4BgiaWw6J0bzjF3LqrH3-WvQwM3qeGLpjMkOs9bEopt29q_sDyHbPqvtzr8ZN8KdZ9Ovw/p.jpeg",
-    "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC-peetLkZUWPMdZgI2tm962awPr0rC9PUUMaJoC4upBhxSYuuT9hCWOfuES8X0gaeAPSyLxv16bigOl0bHU7CDC6OQKS-z3V_Nt_o9S4VSklsmP_XbeIcmeP9l_ZV2Mf6-P2mw13dg2KCO97btkcfctVPPppiVee9nccZvc0OkGVC2LaQR19C73s4tFxXXNoLJSwvrcbDiHeK1o_Q_zE1q8a_YIAlCmAATM-cM5llN_IVcWmQLi_lCtFCqsCwlYMK1a1BAbxqX06DN_mOAqoiu7yPZVBvj00BMNxdYqksrM8BhzszSC3BjbBBBY1KEsJdmAjRpwkIddxdXn4bcj83qcTdZtH65hkLBEfG-8H3lqCyaRiKU-lQzp7psQ1D-wHsppJs1CELwbVEjgfqECh2KV45th7q3uKWmHUN3yZFNNCA/p.jpeg",
-    "https://ucd7950d9692d1cde772610c7702.previews.dropboxusercontent.com/p/thumb/AC8xZCm0ufGHCmiQCg7ZQku6MhDtJdSURevdPzEY6VaopiossBoX4rfqcwCOBmJFIubwbVEJWWqIfIg01z-qTqXTz9Nq-b8lyKY8bZd6WZhhyQgrly2yuTxj7G2HZ2-XoZyDSn2V5UZFcTSppwdSWGo_aYSJDR4yYUmvIpLS7Q2SNxrkpDRaiMOvBJQ9sSx1wOR4nlIgUmk3MKGsIoJsyYcGfap1it_NShAvAvUkXakE28MS3jUnwn8BQXeaOF7PqX6UNJk99Cq-uLMKmhxAScXFSUd3Ikypkw2-zG67K0smImp14AK3Ne5xbbKkpodxEgKdCVp1zf342te6FIuJCA9UI9fNbswnnNvUsI9OSP82sOaIreidLswdnZULoDmvu-jMDXKQPPtN9K5MxJXKtllkDj8SBl2_9LAQn4oP56Pzmw/p.jpeg"
+  const images = [
+    "https://ucad543950156cf5951892cfcf68.previews.dropboxusercontent.com/p/thumb/AC_-VR2tAgRX4SbbdyZSMUxJ0Gn_E3zJK7hKvMGx0na6gQxxwPsS9NRBuES1aaQmK0KZcYfrtFRCwoijGvDEosXOg88HW1JjH4bQY6X14_IHWs_nIIAJINHKFcoMByurvNfmKug2H0HEJw9nD7dy8Z99-h0xbmOLLDs5DiSl1Kc1WYT8G_Ub6coAAwa47gbuqtVXi-wOw4DSYoa5fcTLWttcQQcyw-5zefzlTmr52vLOZdkUHVCo1aY0hFImclzaiLzJ2BTxfUklGi2lgbUcYhR_CFPhBWFkdyP-haSuM1a7QSFhEtWQ5wWoHyf5ZarUvrBbBNrx58p-iZIwyXKxFa7viRfY1oVUVwthIuOKOT98yyhgoQuycmWO8fH2Zl-VoTir6hFc9w2GuCvpp89y0YsWIWcvs4olRmTMJtbrRzcc2Q/p.jpeg",
+    "https://ucd7950d9692d1cde772610c7702.previews.dropboxusercontent.com/p/thumb/AC8T4ZhbVovwny9BwYX2HkgFAPkljbLuPw8BNynXPm2xFlPSBtHt2iiswaiH95Kse5H5q2_fKf5REVhIdZoIdBC9V8YCshT1Kig3prXdAkWoAbr2q2YYpXIxNydkwzM7S6U9U_yxXV4PnNd9LUNnsJRPBETvqLtWBcILYPqp08nSN9kzgY0SvFWd1iXs8sYh4KEUZoP9NwcubQ6GjpJKhfGcSb8wZL4V5OWYipBBHELVwi8RwY3eFbIiKPkLErxiu0vaP1lxrnI7cu3SVhmGPoQF2cIYwV8QgcWtKOdeJmYHteKypxbA-uHjjMuHA7cwNL0nYoRwyExZ0tMzg5ZhW3ifj4YXnkqW14HTM56WsAs8XTz9EKK65gxrDXqHQcZhdMSzGZdM9tAPWvz7ChBaNk6N41vsryWN41Dus0FaVXUX3A/p.jpeg",
+    "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC_PRH2CFPmhVx0XIwPyFAiNiEAgseUip9MfWSkfBWm8n5Fz-lzwbmJPWj-OGPDmYJp5qaPmKGk0Bcvy3xDY2cVJ2vN7SQ-JupOo1nDfhiUTa_nnZWaYnHKbhXCUH5kzxa3RHD8vfyZJnjOxH027bBi_N6l1vDa_BgtiCXsQR6cP9q6_oDKsLKkMexVBcMHpakg4u14Kw8XGlxT3QNY0e6BfsHLJxnlsdDJ8iLcSJViawKdeArN3ErC_I6TmS7c-5yWrvlPNOwxnoxrQb-XSrvTIVWvUjs_mxFKhxDBgnZ45yPoLiIv8m52c9dUSIo4aZWOyeRvsY6pvHq6FOfyNLujcC3sS4mxyNJJznR3RVoQ8BuxvAqtBBDo9m7UC4iakhDMKXgRcARnvGppJq5mLNwf0l-ifuD7MozvbJ4YZA_wJ5w/p.jpeg"
   ];
 
+  const galleryImages = [
+    "https://uc2638e406449897a43dc0796e47.previews.dropboxusercontent.com/p/thumb/AC9WqdDAK77RH-nIhvacxDMuup5aJ4-ukccY9qs-norLuRsB6hdOzfG1JzXXqPxMfrMzbD69yeVvHtcftYxN4e5pie5x1FQSHIInflizXm-b6E6mam9kNaQPRE5ccqfCPCuxSD3GrF41011186_eKERVq7qvwID2_dTJds87WC6SDWieWBKqAz5dnsN_tqh3f1K7wITfCnCzLpKm06k7W7ceUGuhyvWuyDLQsQ8rcPGvP7jCzoTBeVFRovjzQcwhsiBeDMUKTGRfHsvELE03CpsCkCd4qDzvtew_u3YTB48pYS6RT6pk-59BM8oWnXndIIhRkSA9JC4OtctfcMcIKKejSjL2k00Qvr5-fggANf_pmezqCn7BqjZgUq3tl4PMSMxNm4xbo4YEiTq4s16hL_Yo-6h1LUDq0r2SLRPkUGfmhw/p.jpeg",
+    "https://uceaa5075cbc1cb0bcfba473fc4d.previews.dropboxusercontent.com/p/thumb/AC_a1fnToWcyTTXv3EtpZCR4bO4y_Ug9AY3d2pmRxgOjHL-3p05vDOc_ZNEgGNaPMzXCEWPOCRFBlrQdelw-nXnADYQxAkUR-LRyElhKAdpri5qjQYuXGXoPbRBic2san8GQxZChRhWlyucqWeVxhPROmtCkHh-KGaBrK4trUQ3DXo264CY8SiyJjzD_azFeaV_qx2QXvoI8pXNSLC68fj-zVYtgn_tdBaGvGw4Ou36DerHtdAxGo5c_7L4vcZXfUH0m5QH-ZMriG14HW2NwvH32ovgk5b6ZVit4sK84Uvq4r_EVo7Z2smVg-JofBaoRyVE3XWqc36rye5fjPRGFUYsiMJnVTJCfNNfZgN6xC8QraA/p.jpeg",
+    "https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC_Krb_nJtbHKvZY4l2-eW1N_HyPSJDQnsy5-Yb_KwHmGXRqNamR_AmiIuW31FqulD6_Z34T0mU_zNqv4OAa2zfTXazkh9-flUGbJ7rqVcFJlgG5Qd_TpfrxrU_GfrZA28WKfPAQkQzCjwRi8iiqR34EoRF-6U7o1ODhYoISXJEonwvhVYuhsmyGlrkNHz6PrOLGjuSmBsVZKMNGp9kZvRv8xh0VZBhHzK-fd7dlPTQDb5iHs2heSqEyJOKk4ReSyVlijDHLy_oRLtFYDAM5_XjEyEpwNCGEry1AeygJmCKmPPerBHyU-bMX5ayzCFf_FIqN2EiJl6Kwfx3mjpQ91GGWJtSHvLMraFcruYGQ0tOI3g/p.jpeg",
+    "https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg"
+  ];
 
- useEffect(() => {
-    const slider = setInterval(() => {
+  useEffect(() => {
+    const heroSlider = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
+    
+    const gallerySlider = setInterval(() => {
+      setGalleryCurrent((prev) => (prev + 1) % galleryImages.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(heroSlider);
+      clearInterval(gallerySlider);
+    };
+  }, [images.length, galleryImages.length]);
 
 
 
@@ -261,7 +276,7 @@ Between landings, the ship provides a refined onboard environment designed for r
     </div>
 
     <div className="Scenic_right_experience_image">
-      <img src={myImage} alt="Scenic Antarctica Explorer" />
+      <img src="https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg" alt="Scenic Antarctica Explorer" />
     </div>
 
   </div>
@@ -386,59 +401,109 @@ Between landings, the ship provides a refined onboard environment designed for r
 </section>
 
 
-{/* ================= SECTION 11 ================= */}
-<section className="Scenic_team_section">
-  <div className="Scenic_team_inner">
+{/* ================= SECTION 11 — EXPERT TEAM & PERSONAL CURATOR ================= */}
+<section className="Scenic_expert_team_merged_section">
+  <div className="Scenic_insight_inner">
+    <div className="Scenic_insight_flex">
+      
+      {/* CONTENT (LEFT) */}
+      <div className="Scenic_insight_content">
+        <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel?</h2>
+        
+        <div className="Scenic_expert_sub">
+          <p>Antarctica requires strategic planning and execution.</p>
+          <p>Angela Hughes brings over four decades of experience in the travel industry and has traveled to 121 countries and territories.</p>
+        </div>
 
-    <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel?</h2>
+        <ul className="Scenic_styled_list Scenic_team_points_styled">
+          <li><i className="fas fa-check-circle"></i> Strategic positioning across expedition inventory</li>
+          <li><i className="fas fa-check-circle"></i> Access to preferred availability and timing</li>
+          <li><i className="fas fa-check-circle"></i> Full itinerary coordination</li>
+          <li><i className="fas fa-check-circle"></i> Ongoing support throughout the journey</li>
+        </ul>
 
-    <p>
-      Antarctica requires strategic planning and execution.
-    </p>
+        <hr className="Scenic_expert_divider" />
 
-    <p>
-      Angela Hughes brings over four decades of experience in the travel industry and has traveled to 121 countries and territories.
-    </p>
+        <div className="Scenic_curated_by">
+          <h3>Planned and Curated by Angela Hughes</h3>
+          <p className="Scenic_curator_subtitle">CEO, Trips & Ships Luxury Travel</p>
+          
+          <ul className="Scenic_curator_credentials">
+            <li><i className="fas fa-award"></i> 40+ years in the travel industry</li>
+            <li><i className="fas fa-globe-americas"></i> Traveled to 121 countries and territories</li>
+            <li><i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)</li>
+            <li><i className="fas fa-crown"></i> Named among the Most Influential Women in Travel (2026)</li>
+          </ul>
 
-    <ul className="Scenic_styled_list Scenic_team_points_styled">
-      <li><i className="fas fa-check-circle"></i> Strategic positioning across expedition inventory</li>
-      <li><i className="fas fa-check-circle"></i> Access to preferred availability and timing</li>
-      <li><i className="fas fa-check-circle"></i> Full itinerary coordination</li>
-      <li><i className="fas fa-check-circle"></i> Ongoing support throughout the journey</li>
-    </ul>
+          <p className="Scenic_curator_featured">
+            Featured in <strong>Travel Weekly</strong>, <strong>TravelPulse</strong>, and other leading industry publications.
+          </p>
+        </div>
 
-    <p>
-      Clients are often positioned into inventory that is no longer publicly available due to timing and relationships.
-    </p>
+        <div className="Scenic_expert_sub Scenic_margin_top">
+          <p>Clients are often positioned into inventory that is no longer publicly available due to timing and relationships.</p>
+          <p>Every Antarctica journey is reviewed and structured prior to confirmation to ensure accuracy and alignment.</p>
+        </div>
+      </div>
 
-    <p>
-      Every Antarctica journey is reviewed and structured prior to confirmation to ensure accuracy and alignment.
-    </p>
+      {/* IMAGE (RIGHT) */}
+      <div className="Scenic_insight_image_container">
+        <div className="Scenic_insight_image_wrapper">
+          <img 
+            src={myImage} 
+            alt="Angela Hughes - Luxury Travel Advisor" 
+            className="Scenic_insight_expert_image"
+          />
+        </div>
+      </div>
 
+    </div>
   </div>
 </section>
 
 
-{/* ================= SECTION 12 ================= */}
-<section className="Scenic_curator_section">
-  <div className="Scenic_curator_inner">
-
-    <div className="Scenic_curator_content">
-      <h2>Planned and Curated by Angela Hughes</h2>
-      <p className="Scenic_curator_subtitle">CEO, Trips & Ships Luxury Travel</p>
+{/* ================= SECTION 11.5 — IMAGE GALLERY SLIDER ================= */}
+<section className="Scenic_gallery_section">
+  <div className="Scenic_gallery_inner">
+    <div className="Scenic_gallery_wrapper">
       
-      <ul className="Scenic_curator_credentials">
-        <li><i className="fas fa-award"></i> 40+ years in the travel industry</li>
-        <li><i className="fas fa-globe-americas"></i> Traveled to 121 countries and territories</li>
-        <li><i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)</li>
-        <li><i className="fas fa-crown"></i> Named among the Most Influential Women in Travel (2026)</li>
-      </ul>
+      {/* NAVIGATION ARROWS */}
+      <button 
+        className="Scenic_gallery_arrow Scenic_gallery_arrow--prev"
+        onClick={() => setGalleryCurrent((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)}
+      >
+        <i className="fas fa-chevron-left"></i>
+      </button>
+      
+      <button 
+        className="Scenic_gallery_arrow Scenic_gallery_arrow--next"
+        onClick={() => setGalleryCurrent((prev) => (prev + 1) % galleryImages.length)}
+      >
+        <i className="fas fa-chevron-right"></i>
+      </button>
 
-      <p className="Scenic_curator_featured">
-        Featured in <strong>Travel Weekly</strong>, <strong>TravelPulse</strong>, and other leading industry publications.
-      </p>
+      {/* IMAGES */}
+      <div 
+        className="Scenic_gallery_slide"
+        style={{ backgroundImage: `url(${galleryImages[galleryCurrent]})` }}
+      >
+        <div className="Scenic_gallery_overlay">
+          <span className="Scenic_image_counter">{galleryCurrent + 1} / {galleryImages.length}</span>
+        </div>
+      </div>
+
+      {/* PAGINATION DOTS */}
+      <div className="Scenic_gallery_dots">
+        {galleryImages.map((_, index) => (
+          <span 
+            key={index} 
+            className={`Scenic_gallery_dot ${index === galleryCurrent ? 'active' : ''}`}
+            onClick={() => setGalleryCurrent(index)}
+          ></span>
+        ))}
+      </div>
+
     </div>
-
   </div>
 </section>
 

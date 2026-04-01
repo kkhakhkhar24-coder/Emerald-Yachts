@@ -140,11 +140,14 @@
   .anta_hero_content h1 {
     font-size: 32px;
   }
+  .anta_hero_content p{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
   .anta_hero_content h1 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .anta_hero_content p{
     font-size: 16px;
@@ -435,8 +438,8 @@
 }
 
 .anta_tier_price {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   font-weight: 600;
   color: #2f4a6d;
   line-height: 1.2;
@@ -605,7 +608,7 @@
 }
 
 .anta_voyage_price {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #2f4a6d;
@@ -615,7 +618,7 @@
 
 .anta_voyage_from {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif !important;
   font-size: 11px;
   font-weight: 400;
   color: #274472aa;
@@ -739,8 +742,8 @@
 .anta_ladder_badge--discovery { background: #e6f4ea; color: #1a5e2a; }
 
 .anta_ladder_price {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   font-weight: 600;
   color: #2f4a6d;
   margin-bottom: 14px;
@@ -751,7 +754,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #274472cc;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif !important;
 }
 
 .anta_ladder_label {
@@ -852,7 +855,7 @@
   padding: 80px 20px;
   text-align: center;
   color: white;
-  background: url("https://uc23b144d2397f3421a3d1986b46.previews.dropboxusercontent.com/p/thumb/AC9HXf4jJcDS21GzLQQk8E_zw-6GMPWcD0Ao3fLj9ymhclQhqySp0jDPttQdmq4sj75pSXuEemqxaIQM4qNI0IQDBFA2DRVwnOtYTLRYd-6kSST9q-s2JRDN0bDc7C0hIZC5P_e83oXsEycUXfYOhVs-SFzST8-NLsGjq_G-nqefK4rRJKYRECd95ppTbBu69kwla9dk8SSUMK76Z1YNEgP7uOagxrRZTBrAU7-aBvhtHZoNLNSqI8brDQGaslWC0O0FAF0t4ivcfBfRaADrACnjBVKbO4JxKhPLELFM0Q7z5sQy3yO0R7AcNbTT7YQxpAzwzyWqt_H3zgUoNZ5ct7d7lRonTTpvyFU5ri0h9BI8Jg/p.jpeg");
+  background: url("https://ucf88a9a988d90a283d1d9d813b8.previews.dropboxusercontent.com/p/thumb/AC9CtEnCUcbOYQg4LmwsK87nfGdchoZpRWO38oY0Wc4m150EyZuwq-8XI8vN4HykD5xqeAdJzVTlBqi_TYmJsOd6lHI1sjA9_MOw3npJdLg2w8NNP8KKGuE1ivGEOO_P6OFSaDcC9-CgPpHV-N4Bk2qnuq8XcmchV-4-_aUZL801y9ShGrXUjd-d6tZGrxGln8i6jGcLhN7ocZ0hAVrHcUrT6CcLNM0OthcD0G2EfB_Myq8HjJ4sD0_A3f65lhQuiLsl6bG7FoO1UD0scyz4wp_y3Rf0TOIpxIXXT4JEs5fDKRwt89SHdpL66mPi2PLdnhQuaJcKvtMg_oez2ELwhoFozBnlf9I2a3XxhMise5ljK3fxikRBc9FhFkPpKsiPAZGxo37qbCfp89RLMtzT7TiVGP5SO-afwvcNHh0nqZ1gmw/p.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -967,7 +970,7 @@
 }
 
 .anta_total_price {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #2f4a6d;
@@ -1004,7 +1007,7 @@
 }
 
 .anta_summary_value {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -1257,44 +1260,85 @@
 /* ================= SECTION 12 — WHY PRICED DIFFERENTLY ================= */
 .anta_why_section {
   background: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 80px 20px;
 }
 
 .anta_why_inner {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.anta_why_inner h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  font-weight: 500;
-  color: #2f4a6d;
-  margin-bottom: 20px;
-  position: relative;
+.anta_why_flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.anta_why_inner h2::after {
+.anta_why_content {
+  text-align: left;
+}
+
+.anta_why_content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #2f4a6d;
+  margin-bottom: 24px;
+}
+
+.anta_why_content h2::after {
   content: "";
   width: 60px;
   height: 2px;
   background: #2f4a6d;
   display: block;
-  margin: 12px auto 0;
+  margin-top: 15px;
 }
 
-.anta_why_inner p {
+.anta_why_content p {
   font-size: 1.125rem;
-  line-height: 1.7;
-  font-weight: 300;
+  line-height: 1.8;
   color: #274472cc;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.anta_why_highlight_box {
+  background: #f8fafc;
+  padding: 24px;
+  border-left: 4px solid #2f4a6d;
+  border-radius: 0 8px 8px 0;
+  margin-top: 30px;
+}
+
+.anta_why_highlight_box p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #2f4a6d;
+  margin-bottom: 0;
+}
+
+.anta_why_image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .anta_why_flex { gap: 40px; }
+  .anta_why_content h2 { font-size: 32px; }
+  .anta_why_image img { height: 400px; }
 }
 
 @media (max-width: 768px) {
-  .anta_why_section { padding: 50px 15px; }
-  .anta_why_inner h2 { font-size: 28px; }
+  .anta_why_section { padding: 60px 15px; }
+  .anta_why_flex { grid-template-columns: 1fr; gap: 40px; }
+  .anta_why_content { text-align: center; order: 2; }
+  .anta_why_content h2::after { margin: 15px auto 0; }
+  .anta_why_image { order: 1; }
+  .anta_why_image img { height: 350px; }
 }
 
 @media (max-width: 480px) {
@@ -1355,6 +1399,40 @@
 
 @media (max-width: 480px) {
   .anta_worth_inner h2 { font-size: 26px; }
+}
+
+
+/* ================= SECTION 13.5 — ANTARCTICA VIDEO SHOWCASE ================= */
+.anta_video_section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.anta_video_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.anta_video_wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.anta_showcase_video {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 40px 100px rgba(39, 68, 114, 0.18);
+  display: block;
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+@media (max-width: 768px) {
+  .anta_video_section {
+    padding: 60px 15px;
+  }
 }
 
 
@@ -1496,54 +1574,12 @@
 }
 
 
-/* ================= SECTION 17 — AUTHOR PROOF ================= */
-.anta_author_section {
-  background: #eef2f5;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.anta_author_inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.anta_author_inner h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  font-weight: 500;
-  color: #2f4a6d;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.anta_author_inner h2::after {
-  content: "";
-  width: 60px;
-  height: 2px;
-  background: #2f4a6d;
-  display: block;
-  margin: 12px auto 0;
-}
-
-.anta_author_inner > p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  font-weight: 300;
-  color: #274472cc;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 480px) {
-}
+/* CSS for Section 17 was merged into Section 5 side-by-side layout above */
 
 
 /* ================= SECTION 18 — FAQ ================= */
 .anta_faq_section {
-  background: #ffffff;
+  background: #eef2f5;
   padding: 60px 20px;
   text-align: center;
 }
@@ -1836,9 +1872,50 @@
   font-style: italic;
   color: #2f4a6d !important;
   font-weight: 500;
-  border-left: 4px solid #c5a059;
+  border-left: 4px solid #2f4a6d;
   padding-left: 15px;
   margin-top: 30px;
+}
+
+.anta_author_merge {
+  margin-top: 50px;
+}
+
+.anta_author_divider {
+  width: 100%;
+  height: 1px;
+  background: #e2e8f0;
+  margin-bottom: 35px;
+}
+
+.anta_author_merge h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #2f4a6d;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.anta_author_role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #2f4a6d88;
+  margin-bottom: 25px;
+}
+
+.anta_author_highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.anta_author_tag {
+  font-size: 0.95rem;
+  color: #274472cc;
+  line-height: 1.5;
 }
 
 .anta_clients_image img {
@@ -1885,7 +1962,6 @@
   }
   .anta_clients_highlight {
     border-left: none;
-    border-top: 4px solid #c5a059;
     padding-left: 0;
     padding-top: 15px;
   }

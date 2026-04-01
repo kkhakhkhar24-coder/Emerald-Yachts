@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import { Award, Globe, Newspaper, Quote, Star, Check, X } from "lucide-react";
+import myImage from "../../assets/image.jpg";
 import "./EmeraldYachts.css"
 
 const LuxuryPage = () => {
@@ -8,11 +10,10 @@ const LuxuryPage = () => {
   const [readMore, setReadMore] = useState(false);
 
    const images = [
-    "https://uc25954b0152d6d65098caa785be.previews.dropboxusercontent.com/p/thumb/AC-WBjS3AzuwDkk7-9HnkrzPJeE29riWEHPXuzcRvbK20zII2widZ_RTVlFbYsKfXbLxHJPcXvg-qfNWHW4RAcyrZtJ2fj0NuTssQz92og_8scWagkrRUcSesJ4yNg_JnM-fBmGkb7zN732VZmoec-jt8RZD_9m6qpX6r_t5NB0IVXzD0ex6voCN2_gj_S1mv6Sxkk4LD0B6ZIl5AN4aUOrBGjIBU6w9Zuet6pYr6K9zdSXtRTwEGp1_W6_LEMGy8GNsDd9X4kArUTEYP_rgQ2fV1KyYe3sKO3uObe_VdTaPFOAm65D8ebsP1M0s4ll52_TODdzPRYfeMtqJ9GnqXTslckbrwQkUfUnSnmRX-pEzpFpU7tIEPh2dXwWDslIzRueeRmMwDoMXRLN4fgDUfvUyg0X1Rf5Oa_O0DRhBylnFYw/p.jpeg",
-    "https://uc62d07f7d67bf803f4f7c15e420.previews.dropboxusercontent.com/p/thumb/AC-ke5D1QsdqwgF1-RYU-GFf2MEaAOPlvQpJLvCKMokZ7Fo7W0WohPBpD4eilnY0hYl0Gv94c7ElaRX7AKq8itFeez7NIDEq7GYuPLkrOzf_5C7p-C3yhGOAs6sKgqlIWt0sOW2WvCSOt9jpsSSVjo_eeqoOZSXNfNA1Ispb3byAa6duatZUgM73H6o9d8hthyJmSoL_2mVOLhNGbnGo0jHYiRZEF6AHshp8zcSUeLA-Z91bwwxBowgF3gxB5l9t1EWQ2ChD-PnJrIyWFaIK_GREy2kBygbaW41zUqm0rXJqep2AVPw46eEBzYVgTPLY5qZrheOH32SkCpCrVF5WASqCumaJYa_wEyXzxRIoItldNg/p.jpeg",
-    "https://ucfb69bcee71ee06438b471ef91d.previews.dropboxusercontent.com/p/thumb/AC9Lfl0gIxe2htsmd0whzz_shACzaqicQQe-aiNBQ9f2hO3Y_3Hn-fCe8XvRvOpD1d_Nfh3GOOqifKO7MfjGefmEuyRBJeMOR1_SHhd4AoD2vbcJAylr5w7AJtodIG3--JKzvh5sM5aXEGrnsyvM4jrdoNDOLO67Od1deP0jJpj7DwPE0T4b1-v8rP2Gf3pC12x-YMMjFwLabclsLLXWsZrkLL4nYoM1NZc_XlaKnJAO1s93jf8EWyC2H7kulpX-vz4_u8VXcyhDN5xMi3T_-6zHtkfYApr-jU2bm51A5waiGUA0irHakNH_55XfGhx1MN3S9zC2isRZpjZnT41CU5Dlqki_4brn0CrsSVfNdqC6WQ/p.jpeg"
+    "https://ucf43d17f880c225791baafbd8be.previews.dropboxusercontent.com/p/thumb/AC8IFSCD94lR_A8Yyi9aEyhFTGQ1wneHAkbkz0FDZ8ee0sLFYUFFXKOs1hFBm2frG6qlcmsMepeoUJF4o2O7bBcfl0BrNQwi4XrnHdo9Qkh5qZ64iXByFCUUlNoMyBo9hfbfZJZTIuo_lrEH3mYGoRenDn_iddFIo9Q_wKUyEUTs6uV_qRylVXSjGkcTekOs2FEdT66j7WYcrHVokCuvEndIb8rw2tdMEVD9GOkPBLhEer8hTY9HgLL0Htzl7BHsnYYwLIwVCVln6XRFkrh1e4r-I_D5RIPAC5CkN7TzZnIO5T3Xg5i40CP2Lv4u5HlW0XpZG-OZMRA466VCS24qX3Am2CEW7qGCLNXkj9s71k_QmQ/p.jpeg",
+    "https://uc611d4039c46e4a371ac9c8ed05.previews.dropboxusercontent.com/p/thumb/AC_W9KI5Ctzsi-TPM-VYcFNi1yQQbWPaUaEIqL376gKyQIYGXmVVCIh_iPbsqjmPN3YDxYFpPPzMR-k52a7ZNq4t9yjILEandp7lTNfCM5z0lEhjHsBOVtm9CFlR6zWeXFUJVZ9oIjAeStZTcPjc0RcgcIh-gcOsubhjF6MMdCnIVaOa1oJa_JKdlfv0ZWd4VgPcH1i3EPTGNWtupfpb3HitlWtDOQLz9C1G-9-r9LxkdGLJkLrMP3XmFBt2nJo39_uu3wyt-r5vSRnS1qA658o20HvSsKjxw5y4jQLFsCkelKq1pEPHM61hdhTYjjFDW3GfXQaxhqKCs_yYKJG3MMdKs4CTn4keVIulnikcaoV658hKnU9f88d6Cw0zCSVT85EvZg7xK6P80Bdx6vA8pWhCWcOMFUT5i-qqzCil5HIy3g/p.jpeg",
+    "https://uc351b119610200051f46f6577d6.previews.dropboxusercontent.com/p/thumb/AC9WQRP9jjhmAEv1BNzMf9o1rJap_6ukqiTqysXby1snm2g8YCyTYKWRGwt7yLQFw9HNylWE2n_Vq6Q_75tejn4kE3kwaUsK5OPaTI1O0HCSCPf77amzxDHXtGPSumQYYlGWDmpv1anXOiQyadRJtCh149a6LG00sTihHsaaaDUqBed03NXQkfefNiYi40NPnXJimO76DSk2RZ-HiOITqzBilvkSEidC7vO4VIbgMQih3Nm7suxXBYjSIqlWO4zdhJV1jaPJDBJqn44Y_sSGW2XpesXKbFFXUW94OvOhhEjZFnQRktfyIbrWlwN9oWyUaVLoAHBzWe6WTlkAImLb4cKrUn7q8IauhZuPVO8YhKVzwQ/p.jpeg"
   ];
-
 
  useEffect(() => {
     const slider = setInterval(() => {
@@ -21,72 +22,75 @@ const LuxuryPage = () => {
     return () => clearInterval(slider);
   }, [images.length]);
 
-
-   
-
   return (
     <>
       <Navbar />
 
       {/* HERO */}
-      <section className="Emerald_hero_section">
+       <section className="Emerald_hero_section">
+      
+      {/* BACKGROUND WRAPPER */}
+      <div className="Emerald_hero_bg_wrapper">
         <div
-          className="Emerald_hero_bg"
+          key={current} 
+          className="Emerald_hero_bg fade"
           style={{ backgroundImage: `url(${images[current]})` }}
         ></div>
+      </div>
 
-        <div className="Emerald_hero_overlay"></div>
+      {/* OVERLAY */}
+      <div className="Emerald_hero_overlay"></div>
 
-        <div className="Emerald_hero_content">
+      {/* CONTENT */}
+      <div className="Emerald_hero_content">
 
-          <h1>Emerald Yachts: A New Era of Luxury Travel at Sea</h1>
+        <h1>Emerald Yachts: A New Era of Luxury Travel at Sea</h1>
 
-          {/* FIRST PARAGRAPH (VISIBLE) */}
-          <p>
-            Emerald Yachts offer a refined, boutique-style yacht experience designed for travelers who value relaxed luxury, coastal access, and an easy, social atmosphere at sea.
-          </p>
+        {/* FIRST PARAGRAPH */}
+        <p>
+          Emerald Yachts offer a refined, boutique-style yacht experience designed for travelers who value relaxed luxury, coastal access, and an easy, social atmosphere at sea.
+        </p>
 
-          {/* READ MORE CONTENT */}
-          {readMore && (
-            <>
-              <p>
-                These are not expedition vessels. They are intimate yachts built for warm-weather cruising, scenic coastlines, and destination-driven travel with a lighter pace.
-              </p>
+        {/* READ MORE */}
+        {readMore && (
+          <>
+            <p>
+              These are not expedition vessels. They are intimate yachts built for warm-weather cruising, scenic coastlines, and destination-driven travel with a lighter pace.
+            </p>
 
-              <p>
-                Planning an Emerald Yacht journey is not simply about selecting a sailing. It is about choosing the right itinerary, season, and onboard experience to match how you want your time to feel.
-              </p>
+            <p>
+              Planning an Emerald Yacht journey is not simply about selecting a sailing. It is about choosing the right itinerary, season, and onboard experience to match how you want your time to feel.
+            </p>
 
-              <p>
-                Trips & Ships Luxury Travel designs Emerald Yacht journeys using a structured planning approach led by Angela Hughes, ensuring every detail is aligned from the beginning so the experience feels effortless and well-paced.
-              </p>
-            </>
-          )}
+            <p>
+              Trips & Ships Luxury Travel designs Emerald Yacht journeys using a structured planning approach led by Angela Hughes, ensuring every detail is aligned from the beginning so the experience feels effortless and well-paced.
+            </p>
+          </>
+        )}
 
-          {/* READ MORE BUTTON */}
-          <div className="Emerald_readmore_wrapper">
-            <button
-              className="Emerald_readmore_btn"
-              onClick={() => setReadMore(!readMore)}
-            >
-              {readMore ? "Read Less" : "Read More"}
-            </button>
-          </div>
-
-          {/* CTA BUTTONS */}
-          <div className="Emerald_hero_buttons">
-            <button className="Emerald_primary_btn">
-              Schedule an Emerald Yacht Planning Consultation
-            </button>
-
-            <button className="Emerald_secondary_btn">
-              Prefer email? sales@tripsandships.com
-            </button>
-          </div>
-
+        {/* READ MORE BUTTON */}
+        <div className="Emerald_readmore_wrapper">
+          <button
+            className="Emerald_readmore_btn"
+            onClick={() => setReadMore(!readMore)}
+          >
+            {readMore ? "Read Less" : "Read More"}
+          </button>
         </div>
-      </section>
 
+        {/* BUTTONS */}
+        <div className="Emerald_hero_buttons">
+          <button className="Emerald_primary_btn">
+            Schedule an Emerald Yacht Planning Consultation
+          </button>
+
+          <button className="Emerald_secondary_btn">
+            Prefer email? sales@tripsandships.com
+          </button>
+        </div>
+
+      </div>
+    </section>
 
 
  {/* <section>
@@ -151,7 +155,7 @@ const LuxuryPage = () => {
       {/* RIGHT IMAGE */}
       <div className="Emerald_experience_image">
         <img 
-          src="https://uca5a376721c908e8d77da325734.previews.dropboxusercontent.com/p/thumb/AC_RxOJLiFaCmKRqW1lfBL5n5fz61GFVDA5fetoc011UdWrBjB3wRZ6lDbIPUAWjCxaNqFa2Wp35TN8X-cQLzUDuauNxZF4UgQGWoH4fCSV5HyHdX1qsSrNSwiI6Fda_4v-oCgc83hBxgDnm5SWKrpJVS4yTPytE_blzTrxRbXH9JmpUcXZIVzsL6NAsQvaPMHgw8wiDJicKSF1Bz2sTNXvkP8kvVDetIQJ7FXT1ilJ90YQQyfD5ygBjzHgFrkdybfinR-ALGk8eWPra0uIsdT6OtlMaCF8hcUeZPBPrlATgVFlRmXYK83Ip6cGv6_DDG5mgFmvDT30rYNnYdX-7_SnkG3zXv-r98MG6m_W5dL6xokAwy_TdGlSBO2TTgMYOsqnhpqnYKUaY9hGx9v8kWkberhwIRfs3ntfx1c93OMv8_A/p.jpeg" 
+          src="https://ucfcfe70c13e047d12a1a2540a65.previews.dropboxusercontent.com/p/thumb/AC8AsfIjkUT65Ui6gbKr3W7waEVlUC4kUn0jY9_cg67euWQIpa77QmlqSl8m6gOLNipnvit3-NDpwnAONwH4S_yiTWYZaOSZ_-SuHlm7iypojBfXB7rudJnQkoVkPXrU8J7aEAPiEAI7fH75I8c4KgSbg1S_UPOUNHpqoXWaARVvn5rOFgb_dHdOSfqmEdxFBgw9Fu0s6OP6VmX-cQOx-3fLe1IQUwR3MEa9oja132DNoFx_0fyM84J4TQQ_GvfyoXz_CC0cQ8TjgsI481-LPpfaGDAci0Q2Q0Eu12ynQXk6iO67CkvG-ILxAvau7IIUdhMtZ-dpHhQ9IAiPhd_PaczM0g4CLS4Ff1nANPYN3OLHIQ/p.jpeg" 
           alt="Yacht Experience"
         />
       </div>
@@ -177,82 +181,103 @@ const LuxuryPage = () => {
 </section>
 
 
-<section className="Emerald_insight_section">
+<section className="Emerald_expert_team_section">
   <div className="Emerald_insight_inner">
+    <div className="Emerald_insight_flex">
+      {/* LEFT CONTENT (Combined Expert & Team) */}
+      <div className="Emerald_insight_content">
+        <h2>Expert Insight & Elite Team</h2>
+        
+        {/* ANGELA HUGHES INSIGHT */}
+        <div className="Emerald_expert_sub">
+          <p className="Emerald_expert_title">
+            <span className="Emerald_highlight_text">
+              Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel
+            </span>
+          </p>
+          <p>
+            Angela Hughes is a recognized voice in the luxury travel industry with over four decades of experience. Named Luxury Travel Influencer of the Year by Travel Leaders Network, her insights are built on a foundation of scaling global luxury businesses and training elite advisors worldwide.
+          </p>
+          <p>She was named Luxury Travel Influencer of the Year by Travel Leaders Network and recognized among the Most Influential Women in Travel by TravelPulse. Her insights have been featured in Travel Weekly, Insider Travel Report, Travel Market Report, The Washington Post, and The New York Times.</p>
+        </div>
 
-    <h2>
-      Expert Insight from Angela Hughes
-    </h2>
+        {/* TEAM CREDENTIALS */}
+        <div className="Emerald_team_sub">
+          <h3>The Trips & Ships Specialized Team</h3>
+          <p>
+            Trips & Ships Luxury Travel is a premier network of over 140 luxury travel advisors. Each journey we plan is powered by a structured methodology and deep industry relationships.
+          </p>
+          <ul className="Emerald_team_highlights">
+            <li>Consistent, expert planning framework</li>
+            <li>Advisors trained through Luxury Travel University</li>
+            <li>Preferred yacht and shore excursion partnerships</li>
+            <li>End-to-end client support for a seamless experience</li>
+          </ul>
+        </div>
+      </div>
 
-    <p>
-      <span className="Emerald_highlight_text">
-        Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel
-      </span>
-    </p>
-
-    <p>
-      Angela Hughes is the CEO and Founder of Trips & Ships Luxury Travel and one of the most recognized voices in the luxury travel industry. With more than four decades of experience, she has built and scaled a global luxury travel business and trained advisors worldwide.
-    </p>
-
-    <p>
-      She was named Luxury Travel Influencer of the Year by Travel Leaders Network and recognized among the Most Influential Women in Travel by TravelPulse. Her insights have been featured in Travel Weekly, Insider Travel Report, Travel Market Report, The Washington Post, and The New York Times.
-    </p>
-
-  </div>
-</section>
-
-
-<section className="Emerald_team_section">
-  <div className="Emerald_team_inner">
-
-    <h2>
-      The Trips & Ships Luxury Travel Team
-    </h2>
-
-    <p>
-      Trips & Ships Luxury Travel is a team of over 140 luxury travel advisors supported by a structured planning methodology and deep industry relationships.
-    </p>
-
-    <p>
-      Each journey benefits from:
-    </p>
-
-    <p className="Emerald_team_points">
-      • A consistent planning framework <br />
-      • Advisor training through Luxury Travel University <br />
-      • Preferred supplier relationships <br />
-      • Ongoing client support before, during, and after travel
-    </p>
-
+      {/* RIGHT IMAGE (Expert Portrait) */}
+      <div className="Emerald_insight_image_container">
+        <div className="Emerald_insight_image_wrapper">
+          <img src={myImage} alt="Angela Hughes - CEO & Founder" className="Emerald_insight_expert_image" />
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
 <section className="Emerald_recognition_section">
   <div className="Emerald_recognition_inner">
-
-    <h2>
-      As Seen In and Industry Recognition
-    </h2>
-
-    <p>
-      Angela Hughes and Trips & Ships Luxury Travel have been recognized and featured across leading global media and travel industry publications, including:
+    <h2>As Seen In & Industry Recognition</h2>
+    <p className="Emerald_recognition_sub">
+      Angela Hughes and Trips & Ships Luxury Travel have been recognized and featured across leading global media and travel industry publications.
     </p>
 
-    <p className="Emerald_recognition_list">
-      • Travel Weekly <br />
-      • TravelPulse <br />
-      • Insider Travel Report <br />
-      • Travel Market Report <br />
-      • Travel Leaders Network <br />
-      • The Washington Post <br />
-      • The New York Times
-    </p>
+    {/* MEDIA GRID (Static, Sophisticated) */}
+    <div className="Emerald_media_grid">
+      {[
+        "The New York Times", "The Washington Post", "Travel Weekly",
+        "TravelPulse", "Insider Travel Report", "Travel Market Report",
+        "Travel Leaders Network"
+      ].map((brand, i) => (
+        <div key={i} className="Emerald_media_box">
+          <span className="Emerald_media_name">{brand}</span>
+        </div>
+      ))}
+    </div>
 
-    <p>
+    {/* INDUSTRY RECOGNITION (Minimalist Cards) */}
+    {/* <div className="Emerald_awards_row">
+      <div className="Emerald_award_card">
+        <Award className="Emerald_award_icon" />
+        <div className="Emerald_award_info">
+          <h4>Luxury Travel Influencer of the Year</h4>
+          <p>Recognized by Travel Leaders Network for 2024</p>
+        </div>
+      </div>
+      
+      <div className="Emerald_award_card">
+        <Star className="Emerald_award_icon" />
+        <div className="Emerald_award_info">
+          <h4>Most Influential Women in Travel</h4>
+          <p>Awarded by TravelPulse (2026)</p>
+        </div>
+      </div>
+
+      <div className="Emerald_award_card">
+        <Globe className="Emerald_award_icon" />
+        <div className="Emerald_award_info">
+          <h4>Global Industry Contributor</h4>
+          <p>Featured spokesperson in leading publications</p>
+        </div>
+      </div>
+    </div> */}
+
+    <p className="Emerald_media_inquiry">
+      <Quote size={12} className="Emerald_quote_icon" />
       Media inquiries and speaking engagements available upon request.
     </p>
-
   </div>
 </section>
 
@@ -407,9 +432,85 @@ const LuxuryPage = () => {
   </div>
 </section>
 
+{/* ===== SECTION 18 — FAQ ===== */}
+      <section className="emerald_faq_section">
+  <div className="emerald_faq_inner">
+    <h2>Emerald Yachts FAQs — Expert Answers</h2>
+
+    <AntaFAQ
+      items={[
+        {
+          q: "What is included on Emerald Yachts?",
+          a: "Emerald Yachts include accommodations, dining, select beverages, and curated itineraries designed for simplicity and ease.",
+        },
+        {
+          q: "Are Emerald Yachts all-inclusive?",
+          a: "They are largely inclusive, though inclusions vary by itinerary and are not as extensive as expedition yachts.",
+        },
+        {
+          q: "Is Emerald Yachts considered luxury?",
+          a: "Emerald Yachts fall into the premium to boutique luxury category with a relaxed, elevated atmosphere.",
+        },
+        {
+          q: "Is Emerald Yachts worth it?",
+          a: "Yes, for travelers seeking a smaller ship, relaxed pacing, and destination-focused travel.",
+        },
+        {
+          q: "How do Emerald Yachts compare to Scenic Eclipse?",
+          a: "Emerald focuses on warm-weather lifestyle cruising, while Scenic Eclipse focuses on expedition and discovery travel.",
+        },
+        {
+          q: "How do Emerald Yachts compare to traditional cruises?",
+          a: "They offer a more intimate experience with fewer guests, smaller ports, and a quieter onboard environment.",
+        },
+        {
+          q: "What destinations do Emerald Yachts visit?",
+          a: "Primarily the Mediterranean and Caribbean, focusing on coastal and scenic routes.",
+        },
+        {
+          q: "When should I book Emerald Yachts?",
+          a: "Booking 6 to 12 months in advance is recommended for best availability.",
+        },
+        {
+          q: "Will I pay more booking through a travel advisor?",
+          a: "No. Pricing is the same, but planning expertise is added.",
+        },
+        {
+          q: "Do I need a travel advisor?",
+          a: "Not required, but highly recommended for itinerary alignment and planning support.",
+        },
+      ]}
+    />
+  </div>
+</section>
+
     </>
   );
 };
+
+/* ===== INLINE FAQ ACCORDION ===== */
+const AntaFAQ = ({ items }) => {
+  const [open, setOpen] = useState(null);
+
+  return (
+    <div className="anta_faq_list">
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className={`anta_faq_item ${open === i ? "anta_faq_item--open" : ""}`}
+          onClick={() => setOpen(open === i ? null : i)}
+        >
+          <div className="anta_faq_question">
+            <span>{item.q}</span>
+            <span className="anta_faq_icon">{open === i ? "−" : "+"}</span>
+          </div>
+          {open === i && <p className="anta_faq_answer">{item.a}</p>}
+        </div>
+      ))}
+    </div>
+  );
+};
+
 
 export default LuxuryPage;
 

@@ -125,9 +125,7 @@ const AntarcticaPage = () => {
             <button className="senianta-primary senianta-primary--no-offset">
               Get Expert Recommendation
             </button>
-            <button className="senianta-secondary">
-              View Scenic Antarctica Expeditions
-            </button>
+           
           </div>
         </div>
       </section>
@@ -419,6 +417,19 @@ const AntarcticaPage = () => {
         </div>
       </section>
 
+      <div className="senianta-promo-video-wrapper">
+        <video 
+          className="senianta-promo-video-player" 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+        >
+          <source src="/Scenic - Yacht - 15 sec - CBS.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       {/* ===== SECTION 10 — COMMON MISTAKES ===== */}
       <section className="senianta-mistakes">
         <div className="senianta-mistakes-inner">
@@ -506,29 +517,41 @@ const AntarcticaPage = () => {
         <div className="senianta-why-book-inner">
           <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel</h2>
           <div className="senianta-why-book-flex">
-            <div className="senianta-why-story">
-              <p className="senianta-lead-expertise">Choosing between senianta-expedition cruise lines requires experience and perspective.</p>
-              <p>Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories, working with clients on complex, high-value itineraries.</p>
-              <p className="senianta-emphasis senianta-emphasis--guided">The decision is guided, not guessed.</p>
+            <div className="senianta-why-book-left">
+              <div className="senianta-why-story">
+                <p className="senianta-lead-expertise">Choosing between expedition cruise lines requires experience and perspective.</p>
+                <p>Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories, working with clients on complex, high-value itineraries.</p>
+                <p className="senianta-emphasis senianta-emphasis--guided">The decision is guided, not guessed.</p>
+              </div>
+              
+              <div className="senianta-why-benefits-grid">
+                <h3>Clients benefit from:</h3>
+                <div className="senianta-benefit-item">
+                  <Globe className="senianta-benefit-icon" />
+                  <p>Clear positioning across competing brands</p>
+                </div>
+                <div className="senianta-benefit-item">
+                  <Key className="senianta-benefit-icon" />
+                  <p>Access to preferred inventory and timing</p>
+                </div>
+                <div className="senianta-benefit-item">
+                  <LayoutGrid className="senianta-benefit-icon" />
+                  <p>Full itinerary coordination</p>
+                </div>
+                <div className="senianta-benefit-item">
+                  <ShieldCheck className="senianta-benefit-icon" />
+                  <p>Ongoing support throughout the journey</p>
+                </div>
+              </div>
             </div>
-            
-            <div className="senianta-why-benefits-grid">
-              <h3>Clients benefit from:</h3>
-              <div className="senianta-benefit-item">
-                <Globe className="senianta-benefit-icon" />
-                <p>Clear positioning across competing brands</p>
-              </div>
-              <div className="senianta-benefit-item">
-                <Key className="senianta-benefit-icon" />
-                <p>Access to preferred inventory and timing</p>
-              </div>
-              <div className="senianta-benefit-item">
-                <LayoutGrid className="senianta-benefit-icon" />
-                <p>Full itinerary coordination</p>
-              </div>
-              <div className="senianta-benefit-item">
-                <ShieldCheck className="senianta-benefit-icon" />
-                <p>Ongoing support throughout the journey</p>
+
+            <div className="senianta-why-book-right">
+              <div className="senianta-why-book-image-wrapper">
+                <img 
+                  src="https://uc2638e406449897a43dc0796e47.previews.dropboxusercontent.com/p/thumb/AC9WqdDAK77RH-nIhvacxDMuup5aJ4-ukccY9qs-norLuRsB6hdOzfG1JzXXqPxMfrMzbD69yeVvHtcftYxN4e5pie5x1FQSHIInflizXm-b6E6mam9kNaQPRE5ccqfCPCuxSD3GrF41011186_eKERVq7qvwID2_dTJds87WC6SDWieWBKqAz5dnsN_tqh3f1K7wITfCnCzLpKm06k7W7ceUGuhyvWuyDLQsQ8rcPGvP7jCzoTBeVFRovjzQcwhsiBeDMUKTGRfHsvELE03CpsCkCd4qDzvtew_u3YTB48pYS6RT6pk-59BM8oWnXndIIhRkSA9JC4OtctfcMcIKKejSjL2k00Qvr5-fggANf_pmezqCn7BqjZgUq3tl4PMSMxNm4xbo4YEiTq4s16hL_Yo-6h1LUDq0r2SLRPkUGfmhw/p.jpeg" 
+                  alt="Angela Hughes - Luxury Travel Advisor" 
+                  className="senianta-why-book-portrait" 
+                />
               </div>
             </div>
           </div>

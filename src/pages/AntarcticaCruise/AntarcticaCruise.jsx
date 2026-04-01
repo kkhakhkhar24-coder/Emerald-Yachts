@@ -95,7 +95,7 @@ const AntarcticaCostPage = () => {
                 <i className="fas fa-anchor"></i>
               </div>
               <div className="anta_tier_label">Entry Expedition</div>
-              <div className="anta_tier_price">$8,000 – $15,000</div>
+              <div className="anta_tier_price"> $8,000 – $15,000</div>
               <div className="anta_tier_sub">per person</div>
             </div>
 
@@ -244,7 +244,7 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 5 — WHERE MOST CLIENTS FALL ===== */}
+      {/* ===== SECTION 5 — WHERE MOST CLIENTS FALL & AUTHOR PROOF ===== */}
       <section className="anta_clients_section">
         <div className="anta_clients_inner">
           <div className="anta_clients_content">
@@ -265,12 +265,25 @@ const AntarcticaCostPage = () => {
               We do not recommend Antarctica based on brand alone. We recommend
               it based on how you want to experience it.
             </p>
+
+            <div className="anta_author_merge">
+              <div className="anta_author_divider"></div>
+              <h3>Planned and Curated by Angela Hughes</h3>
+              <p className="anta_author_role">CEO, Trips & Ships Luxury Travel</p>
+              
+              <div className="anta_author_highlights">
+                <div className="anta_author_tag">✦ 40+ years of experience</div>
+                <div className="anta_author_tag">✦ 121 countries traveled</div>
+                <div className="anta_author_tag">✦ Luxury Travel Influencer of the Year (2024)</div>
+                <div className="anta_author_tag">✦ Most Influential Women in Travel (2026)</div>
+              </div>
+            </div>
           </div>
           
           <div className="anta_clients_image">
             <img 
               src={myImage}
-              alt="Luxury Antarctica Expedition" 
+              alt="Luxury Antarctica Expedition with Angela Hughes" 
             />
           </div>
         </div>
@@ -454,17 +467,36 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 12 — WHY ANTARCTICA IS PRICED DIFFERENTLY ===== */}
       <section className="anta_why_section">
         <div className="anta_why_inner">
-          <h2>Why Antarctica Is Priced Differently</h2>
+          <div className="anta_why_flex">
+            
+            {/* CONTENT (LEFT) */}
+            <div className="anta_why_content">
+              <h2>Why Antarctica Is Priced Differently</h2>
 
-          <p>
-            Antarctica is one of the few destinations in the world where pricing
-            reflects access rather than amenities.
-          </p>
+              <p>
+                Antarctica is one of the few destinations in the world where pricing
+                reflects access rather than amenities.
+              </p>
 
-          <p>
-            The investment is driven by logistics, regulation, and the ability
-            to operate in a remote and protected environment.
-          </p>
+              <p>
+                The investment is driven by logistics, regulation, and the ability
+                to operate in a remote and protected environment.
+              </p>
+              
+              <div className="anta_why_highlight_box">
+                <p>Every voyage operates under strict environmental guidelines and requires specialized equipment, crew, and insurance to ensure safe and responsible exploration.</p>
+              </div>
+            </div>
+
+            {/* IMAGE (RIGHT) */}
+            <div className="anta_why_image">
+              <img 
+                src="https://uc398519f547a13156d03710fc3f.previews.dropboxusercontent.com/p/thumb/AC9fAamaoGSeLj5dOxeZ7NkWZOWZpACeivB0iiFLhmXwM2C-kET3fB8vudrdQ_9-psEqlIet_IDwofeJdP--PAFzSqoBITiWXSYF8nljo-hLtFv7g9iYVV5snSbDfFGTgwLsUkY_9wEJgr5PC4TyaqDTS8G-nejoxfxr5Sypm8VHuwNohoTf8R4fYzjYKiAgV5K5RaMZ67mwHUNWGbXisF6rTWA72Cndrgc5sUA2wp0gGKh__vXoXd4StS5ZGqFTVOJ5hTwPFkiGwO2ZZc-kAZUu69SQhkkIiAYni8e3q9UvIjCapqYT5o63A13gApZCxWVhL3lqasELkOLBGilDrsk7lcU53lsgtYC_n7Bo3qaXMg/p.jpeg" 
+                alt="Antarctic Expedition Logistics" 
+              />
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -479,6 +511,25 @@ const AntarcticaCostPage = () => {
           </p>
 
           <p>The value lies in access, scale, and rarity.</p>
+        </div>
+      </section>
+
+      {/* ===== SECTION 13.5 — ANTARCTICA VIDEO SHOWCASE ===== */}
+      <section className="anta_video_section">
+        <div className="anta_video_inner">
+          <div className="anta_video_wrapper">
+            <video 
+              src="/Antarctica LTT _ 30sec TVC.mp4" 
+              autoPlay 
+              muted 
+              loop 
+              playsInline 
+              controls
+              className="anta_showcase_video"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
 
@@ -553,34 +604,6 @@ const AntarcticaCostPage = () => {
             <div className="anta_expert_card">
               <div className="anta_icon_box"><i className="fas fa-headset"></i></div>
               <p>Ongoing support throughout the journey</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SECTION 17 — AUTHOR PROOF ===== */}
-      <section className="anta_author_section">
-        <div className="anta_author_inner">
-          <h2>Planned and Curated by Angela Hughes</h2>
-
-          <p>CEO, Trips &amp; Ships Luxury Travel</p>
-
-          <div className="anta_method_steps">
-            <div className="anta_method_step">
-              <span className="anta_step_number">✦</span>
-              <p>40+ years of experience</p>
-            </div>
-            <div className="anta_method_step">
-              <span className="anta_step_number">✦</span>
-              <p>121 countries traveled</p>
-            </div>
-            <div className="anta_method_step">
-              <span className="anta_step_number">✦</span>
-              <p>Luxury Travel Influencer of the Year (2024)</p>
-            </div>
-            <div className="anta_method_step">
-              <span className="anta_step_number">✦</span>
-              <p>Most Influential Women in Travel (2026)</p>
             </div>
           </div>
         </div>
