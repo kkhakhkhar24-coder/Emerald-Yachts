@@ -8,12 +8,15 @@
   /* Color Palette (Hash Codes) */
   --navy: #274472;
   --navy-light: #274472cc;
-  --gold: #c6a15b;
+  --gold: #274472;
+  /* Changed to Navy Blue */
 
   /* Background Variations */
   --bg-white: #ffffff;
   --bg-soft: rgb(231, 243, 245);
-  --bg-cream: #f7f6f2;
+  /* Light Blue */
+  --bg-cream: rgb(231, 243, 245);
+  /* Changed from cream to Light Blue */
   --bg-dark: #0f1c2e;
   --bg-dark2: #1c2f4a;
 

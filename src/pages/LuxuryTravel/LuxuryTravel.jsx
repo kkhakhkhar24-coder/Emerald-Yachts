@@ -53,10 +53,7 @@ function LuxuryTravel() {
 
             {/* ===== HERO SECTION: SCENIC ECLIPSE — High-impact introduction to Discovery Yachts and Trips & Ships expert planning ===== */}
             <section className="lux-hero">
-                <div className="lux-hero-overlay"></div>
-
                 <div className="lux-hero-content">
-                    {/* Visibility: Now using hex Gold #c6a15b */}
                     <span className="lux-hero-eyebrow">Expert Planning by Trips & Ships Luxury Travel</span>
 
                     <h1 className="lux-h1">Scenic Eclipse Discovery Yachts</h1>
@@ -171,58 +168,13 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 4: TRUST & AUTHORITY — Highlighting industry leadership and specialized expertise ===== */}
+            {/* ===== SECTION 5: SUITABILITY — Helping travelers determine if Scenic Eclipse aligns with their priorities ===== */}
             <section className="lux-section lux-bg-white">
                 <div className="lux-inner">
 
                     {/* Centered Header Wrapper */}
-                    <div className="lux-trust-header">
-                        <span className="lux-section-number">03</span>
-                        <h2 className="lux-h2">Trusted by Travelers, Advisors, and <br />the Luxury Travel Industry</h2>
-                    </div>
-
-                    <div className="lux-trust-grid">
-
-                        {/* Trust Item 1 */}
-                        <div className="lux-trust-card">
-                            <Star className="lux-trust-icon" size={20} />
-                            <p className="lux-trust-text">CEO of Trips & Ships Luxury Travel</p>
-                        </div>
-
-                        {/* Trust Item 2 */}
-                        <div className="lux-trust-card">
-                            <Star className="lux-trust-icon" size={20} />
-                            <p className="lux-trust-text">International luxury travel educator and speaker</p>
-                        </div>
-
-                        {/* Trust Item 3 */}
-                        <div className="lux-trust-card">
-                            <Star className="lux-trust-icon" size={20} />
-                            <p className="lux-trust-text">Senior-level relationships within the Scenic Group</p>
-                        </div>
-
-                        {/* Trust Item 4 */}
-                        <div className="lux-trust-card">
-                            <Star className="lux-trust-icon" size={20} />
-                            <p className="lux-trust-text">Specialist in expedition, discovery yacht, and small-ship cruising</p>
-                        </div>
-
-                        {/* Trust Item 5 - Spanning full width on larger screens for balance */}
-                        <div className="lux-trust-card lux-span-full">
-                            <Star className="lux-trust-icon" size={20} />
-                            <p className="lux-trust-text">Leads a trained advisor team using a consistent planning approach</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ===== SECTION 5: SUITABILITY — Helping travelers determine if Scenic Eclipse aligns with their priorities ===== */}
-            <section className="lux-section lux-bg-cream">
-                <div className="lux-inner">
-
-                    {/* Centered Header Wrapper */}
                     <div className="lux-selection-header">
-                        <span className="lux-section-number">04</span>
+                        <span className="lux-section-number">03</span>
                         <h2 className="lux-h2">Is Scenic Eclipse Right for You?</h2>
                     </div>
 
@@ -255,12 +207,12 @@ function LuxuryTravel() {
             </section>
 
             {/* ===== SECTION 6: ABOUT THE YACHTS — Defining Discovery Yachts and the Scenic Eclipse philosophy ===== */}
-            <section className="lux-section lux-bg-white">
+            <section className="lux-section lux-bg-cream">
                 <div className="lux-inner lux-narrow">
 
                     {/* Centered Header Wrapper */}
                     <div className="lux-about-header">
-                        <span className="lux-section-number">05</span>
+                        <span className="lux-section-number">04</span>
                         <h2 className="lux-h2">About Scenic Eclipse Discovery Yachts</h2>
                     </div>
 
@@ -279,12 +231,12 @@ function LuxuryTravel() {
             </section>
 
             {/* ===== SECTION 7: PLANNING FACTORS — Outlining the specific criteria used in expert itinerary selection ===== */}
-            <section className="lux-section lux-bg-cream">
+            <section className="lux-section lux-bg-white">
                 <div className="lux-inner">
 
                     {/* Centered Header Wrapper */}
                     <div className="lux-planning-header">
-                        <span className="lux-section-number">06</span>
+                        <span className="lux-section-number">05</span>
                         <h2 className="lux-h2">How an Expert Chooses the <br />Right Scenic Eclipse Sailing</h2>
                     </div>
 
@@ -394,11 +346,11 @@ function LuxuryTravel() {
                         <div className="lux-method-image-side">
                             <div className="lux-image-frame">
                                 <img
-                                    src="https://uc2c479371a0f881b145d2eb0bc8.previews.dropboxusercontent.com/p/thumb/AC8cept9zgsMGw8Xo5dwGkmN_nEyaZLTTA2m0hQLyCoVJ9U-Ia9oZCjsNHPomRWXx17_Lje6kWaklDnAs3IfS4kZgSrUJ_SYwhrgbINQxHmgiYx6ufT5Pyfzm4LVutQUmMxlRqVVbV049FyKkx9MefHbZqXppqceTVK_rljD78Qv6mEZgHQvCXoGpn09n1IMWmTaKHdgQsL1MDYiop8cDRM5BMGGeFr6oGxLhtS1c9DEMM6NUJ1bAmT-lBvvhKBzXd4EbK0Vgxr48VItRd1aLrGBqTjTi8wpgQX4owTjYMBegPq-KTIi6o7bFw2DKALdcS9oaMEr9mp9oRST4NuhT_eywHkUOQ4Ncjoac-FwLZsWUPjc-N6oAWcj7m1eZlJWklwY0FNRB8xj_ghal9Iatobxdlby8aYXlCSDV62TXNDUSg/p.jpeg"
+                                    src="https://uc2bd972a38218ff4f0293512594.previews.dropboxusercontent.com/p/thumb/AC-Dw_exETVSKrAfV1m6CvlW0XP_lXvII9vsAQFTEyizZ_gGdzZM_YC78FjhP91CREZjDni67cOSwnyOep2545I4ZeMzIbfsHcIFB-diZRT4OMzI0pHlI884QuyUiGy_jX3lSi8GMUIzP9a9EzLDe7ckChagfX2XSHOESgQijKkpg4ky6I1I-bd-oNgos29y9FeJWVpSdo10SUVMc4yN6WolfzCCBY1VC_m3YQA8V_RNCdobx0kYMI9JTh5b44Ducs4Po_OUrwCQJ7sH21cS476nBrTXqvZ-8_vXyybDrlit4nK2bLhH_r1csOqUp3bkKvd-avd5JmnHzgOVAsgNvsAW5XhhiXztMNyfkbkJUQrCIw/p.jpeg"
                                     alt="Scenic Eclipse Planning Method"
                                     className="lux-featured-img"
                                 />
-                                <div className="lux-image-caption">Discovery Yacht Intelligence</div>
+                                <div className="lux-image-caption">Discovery  Destination</div>
                             </div>
                         </div>
 
@@ -411,7 +363,7 @@ function LuxuryTravel() {
                 <div className="lux-inner">
 
                     <div className="lux-matrix-header">
-                        <span className="lux-section-number">08</span>
+                        <span className="lux-section-number">07</span>
                         <h2 className="lux-h2">Which Yacht Should You Choose?</h2>
                         <p className="lux-matrix-intro">
                             Scenic Eclipse and Emerald Yachts serve very different traveler profiles. Choosing the right yacht depends on how you want your journey to feel.
@@ -490,7 +442,7 @@ function LuxuryTravel() {
 
                     {/* Centered Header Wrapper */}
                     <div className="lux-summary-header">
-                        <span className="lux-section-number">09</span>
+                        <span className="lux-section-number">08</span>
                         <h2 className="lux-h2">Scenic Eclipse vs Emerald Yachts <br />(High-Level Comparison)</h2>
                     </div>
 
@@ -539,7 +491,7 @@ function LuxuryTravel() {
 
                     {/* Centered Header Wrapper */}
                     <div className="lux-adv-header">
-                        <span className="lux-section-number">10</span>
+                        <span className="lux-section-number">09</span>
                         <h2 className="lux-h2">Why Work With Trips & Ships Luxury Travel <br />Instead of Booking Scenic Eclipse Direct?</h2>
                         <p className="lux-adv-intro">
                             Scenic does an excellent job designing and operating the Scenic Eclipse experience. Where most travelers benefit from working with a travel advisor is not in purchasing the cruise, but in designing and supporting the journey around it.
@@ -589,7 +541,7 @@ function LuxuryTravel() {
 
                     {/* Centered Header Wrapper */}
                     <div className="lux-faq-header">
-                        <span className="lux-section-number">11</span>
+                        <span className="lux-section-number">10</span>
                         <h2 className="lux-h2">Scenic Eclipse FAQs — Expert Answers</h2>
                     </div>
 

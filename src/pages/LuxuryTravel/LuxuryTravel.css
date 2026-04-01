@@ -15,16 +15,60 @@
     padding: 140px 40px 100px;
     position: relative;
     text-align: center;
-    background: url('https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC90HEdgBE5gEZKzgaua0bQiH69tOnJsQ9tDKtj3T6-NVmlhN9Y_FxSdFyikTx77x14F21UgZB7uEiVlfYwtCsz51eHkglm2IMZrYnc_8PjVoa8yIYFPrY-GQfbiQmycKjUJBdjiYP7U6Bkx83GTneBtod254dxiCmEbEBajgT0AKidkdeD6vpgGgabk9II9lAyea5l6O3HBxqHOcBXMFG0Rrz5uaph1gm06vLjw6a2boOiP2zq88HJDbhtmuvYl6mYanJFnp3xWzYWt1yi4CZqh3M0Ry6z2uInnHUo11Zv_wlnDDXSJOWzOv-vskqf5CE9oPQtYn7z6qHB58gVNtLqDTl3_OIHnpemF0UtrCwHvfQ/p.png') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: lux-bgSlide 18s infinite ease-in-out;
     overflow: hidden;
 }
 
-.lux-hero-overlay {
+.lux-hero::before {
+    content: "";
     position: absolute;
     inset: 0;
-    /* Using a dark hash color background for maximum text visibility */
-    background: linear-gradient(135deg, rgba(15, 28, 74, 0.9) 0%, rgba(15, 28, 46, 0.75) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
     z-index: 1;
+}
+
+/* Animated particles effect */
+.lux-hero::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: lux-snowfall 60s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes lux-bgSlide {
+
+    0%,
+    100% {
+        background-image: url('https://uce7c1665ac6101580e1ecb894b8.previews.dropboxusercontent.com/p/thumb/AC_B3lG4DVlbT7wkCqdE2ULZwTqpYRCyK-WKyLrEL46L8ttSOtnV3PUPt5dR-w489W_8bF1R7ZoV1jtk5fZhKw8ngI2QdhBSUDEPfwTdu9V5H20-wFIBC4lhQfq-1kuSsu-or6AdZYdlgYsF8OvKAKjnnMYhemuSyJbyA3qD_zHkzJO6r49K5IxZusXgUuqp5O9HXCp3Ww4_QcfotdTjaJwPdpKawiwu74OKI9fK1MvBKHEo8xTt2T_IeQ5hpHzOdG-gzeutwH1tzoryb9GWnYfdgc9i_VP-Lr8pBOjMZovKnJ_vyVyJug5GH8sIeKYst2QlhGbiCjCWVgkxFPIWTByTzDys2_9612l5udnUUV293A/p.jpeg');
+    }
+
+    33% {
+        background-image: url('https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC9KN_x7V1KfESsuwlb8JpE7P2wtFjyc5AmJaS6MhqODZWO8tooE_5q9wILI96jiL4uFU5mttifkAA6nDZG_GSdoAWkUO1TEfJ9b8qYrcmpnPrXRK48QZMmm7n8lvg9b0cnKVXZ5Cql-WqM4zcxxE6Vb8_dgjhYiOOQwHO4WigrgxytUhy7SX1mRe1jUklCIe2qDAMBspcke07TowLp9ak8R4Y-OsdRGnxxrg2l1zxLtzDafSSEJotgi2oiVc0f7aV7Ysqe_9W-5khHUWTbEkLYYG9wAZbxe2MHQZI3QFMvX__6S4rBLhT_WWgBxalpNPwjgJ1vqwkG7iQYzUb1_BbfVLLUwl3GOHKuoC-O8zMv51g/p.png');
+    }
+
+    66% {
+        background-image: url('https://uce1f6ac3f845bdc5773c87e7298.previews.dropboxusercontent.com/p/thumb/AC9RuIv7P_k7RQ9bD-O6uc-bcMXmZNIUe9pcyJfZK29VUlMsyDXry2SgK1-UgacOrnGHjHfKRAYGAT5g1IFlrAv6dSerNQUOfB1VOdHCyI1P5nrq3iv6pjQTi10rxMAiF3ciL0MGi2DJkrgQtRBzkmWECHF-gj-I0YbcBoQTw5ms_bhZJBDTjL-M_xvh37x6PD4_XEx2zWLzI54LAAM8Uea2T4XCDffuBtuR_aLGrW-W_nzVTcoqAtS0EajwUTWlSf-X4SrJx1D_ZBukwxMEb-fe8ZJeBMOztwzBOflSQJ_EMqFSkdk6LJe2AaDUBsP_8tBOeb4Hv01dN9cHL-80QUwgH4L_zxTO8qNPx1-2_g_tFA/p.jpeg');
+    }
+}
+
+@keyframes lux-snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100px) rotate(5deg);
+    }
 }
 
 .lux-hero-content {
@@ -47,12 +91,12 @@
     }
 }
 
-/* Visibility Fix: Using Gold Hash #c6a15b */
+/* Visibility Fix: Using Navy Blue #274472 */
 .lux-hero-eyebrow {
     font-size: 12px !important;
     letter-spacing: 4px !important;
     font-weight: 600 !important;
-    color: #c6a15b !important;
+    color: rgb(231, 243, 245, 0.9) !important;
     text-transform: uppercase !important;
     margin-bottom: 24px;
     display: block;
@@ -99,13 +143,13 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-/* Visibility Fix: Using Gold Hash #c6a15b */
+/* Visibility Fix: Using Navy Blue #274472 */
 .lux-hero-read-more {
     display: inline-block;
     margin: 10px 0 35px 0;
     background: transparent;
     border: none;
-    color: #c6a15b !important;
+    color: #ffffff !important;
     padding: 8px 0;
     font-size: 11px !important;
     font-weight: 700 !important;
@@ -113,7 +157,7 @@
     text-transform: uppercase !important;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif !important;
-    border-bottom: 1px solid #c6a15b;
+    border-bottom: 1px solid #ffffff;
 }
 
 .lux-hero-read-more:hover {
@@ -144,9 +188,10 @@
     transition: 0.3s ease;
 }
 
-/* Hover using Gold Hash #c6a15b */
+/* Hover using Navy Blue #274472 */
 .lux-btn-primary:hover {
-    background: #c6a15b;
+    background: #274472;
+    color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
@@ -165,9 +210,9 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-/* Visibility Fix: Gold Hash for email link */
+/* Visibility Fix: Navy Blue for email link */
 .lux-btn-text-link {
-    color: #c6a15b !important;
+    color: #ffffff !important;
     text-decoration: none;
     font-size: 13px !important;
     font-weight: 600 !important;
@@ -177,7 +222,7 @@
 }
 
 .lux-btn-text-link:hover {
-    color: #ffffff !important;
+    color: #274472 !important;
     text-decoration: underline;
 }
 
@@ -202,7 +247,7 @@
 }
 
 /* ========================================
-   SCENIC ECLIPSE PLANNING (SECTION 2)
+   EXPERT PLANNING (SECTION 2)
    Editorial split layout using Navy (#274472) and Gold (#c6a15b)
    ======================================== */
 
@@ -212,7 +257,7 @@
     justify-content: center;
 }
 
-.lux-bg-white {
+.lux-bg-cream {
     background-color: #ffffff;
 }
 
@@ -233,14 +278,15 @@
     position: sticky;
     top: 120px;
     text-align: left;
+    height: fit-content;
 }
 
 .lux-section-number {
     display: block;
     font-family: 'Playfair Display', serif !important;
     font-size: 14px !important;
-    color: #c6a15b;
-    /* Gold Hash */
+    color: #274472;
+    /* Navy Blue Hash */
     font-weight: 700 !important;
     letter-spacing: 4px !important;
     margin-bottom: 20px;
@@ -262,8 +308,8 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue Hash */
     margin-top: 25px;
     border-radius: 2px;
 }
@@ -296,8 +342,8 @@
 
 /* Editorial accent for the final paragraph */
 .lux-editorial-accent {
-    border-left: 2px solid #c6a15b;
-    /* Gold Hash */
+    border-left: 2px solid #274472;
+    /* Navy Blue Hash */
     padding-left: 30px;
     margin-top: 10px;
 }
@@ -305,7 +351,7 @@
 .lux-editorial-accent .lux-section-p {
     font-style: italic !important;
     color: #274472 !important;
-    /* Navy Hash */
+    /* Navy Blue Hash */
     font-weight: 400 !important;
 }
 
@@ -331,8 +377,8 @@
 
     .lux-editorial-accent {
         border-left: none;
-        border-top: 2px solid #c6a15b;
-        /* Gold Hash */
+        border-top: 2px solid #274472;
+        /* Navy Blue Hash */
         padding-left: 0;
         padding-top: 30px;
         max-width: 80%;
@@ -364,8 +410,8 @@
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
-    /* Cream Hash */
+    background-color: rgb(231, 243, 245);
+    /* Light Blue Hash */
 }
 
 /* Centering the entire header container */
@@ -412,6 +458,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
 }
 
 .lux-expert-avatar {
@@ -419,16 +468,16 @@
     width: 140px;
     height: 140px;
     background-color: #274472;
-    /* Navy Hash */
+    /* Navy Blue Hash */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c6a15b;
-    /* Gold Hash */
+    color: #ffffff;
+    /* White for contrast */
     font-family: 'Playfair Display', serif !important;
     font-size: 42px !important;
-    border: 2px solid #c6a15b;
+    border: 2px solid #274472;
     margin: 0 auto;
 }
 
@@ -442,7 +491,7 @@
     background-color: #ffffff;
     padding: 30px 25px;
     border-radius: 8px;
-    border-top: 3px solid #c6a15b;
+    border-top: 3px solid #274472;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
@@ -480,7 +529,7 @@
     top: 6px;
     width: 6px;
     height: 6px;
-    background-color: #c6a15b;
+    background-color: #274472;
     border-radius: 50%;
 }
 
@@ -512,7 +561,7 @@
     padding: 40px;
     border-radius: 12px;
     margin: 40px 0;
-    border-left: 4px solid #c6a15b;
+    border-left: 4px solid #274472;
 }
 
 .lux-expert-highlight-box .lux-section-p {
@@ -541,7 +590,7 @@
 
     .lux-expert-highlight-box {
         border-left: none;
-        border-top: 4px solid #c6a15b;
+        border-top: 4px solid #274472;
     }
 }
 
@@ -589,11 +638,11 @@
     align-items: center;
     gap: 20px;
     padding: 30px 35px;
-    background-color: #f7f6f2;
-    /* Subtle Cream contrast */
+    background-color: #ffffff;
+    /* White instead of cream */
     border-radius: 8px;
-    border-left: 3px solid #c6a15b;
-    /* Gold Hash accent */
+    border-left: 3px solid #274472;
+    /* Navy Blue accent */
     transition: all 0.3s ease;
 }
 
@@ -664,13 +713,13 @@
 }
 
 /* ========================================
-   SUITABILITY SELECTION (SECTION 5)
+   SUITABILITY SELECTION (SECTION 3)
    Comparison grid layout using Navy and Gold
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
-    /* Cream Hash */
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 /* Centered Header */
@@ -685,12 +734,12 @@
 
 .lux-selection-header .lux-h2::after {
     margin: 25px auto 0 !important;
-    /* Centered Gold Bar */
+    /* Centered Navy Blue Bar */
     content: "";
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
+    background-color: #274472;
 }
 
 /* --- Selection Grid --- */
@@ -711,12 +760,13 @@
 
 .lux-selection-card:hover {
     transform: translateY(-5px);
+    background-color: #ffffff;
 }
 
 /* Distinction for the "Ideal" card */
 .lux-ideal {
-    border-top: 4px solid #c6a15b;
-    /* Gold Hash */
+    border-top: 4px solid #274472;
+    /* Navy Blue Hash */
 }
 
 /* Distinction for the "Not Ideal" card */
@@ -758,14 +808,14 @@
     content: "✦";
     position: absolute;
     left: 0;
-    color: #c6a15b;
-    /* Gold Hash */
+    color: #274472;
+    /* Navy Blue Hash */
     font-weight: 700 !important;
 }
 
-/* Adjust bullet for "Not Ideal" side to Navy for visual hierarchy */
+/* Adjust bullet for "Not Ideal" side to lighter navy for visual hierarchy */
 .lux-not-ideal .lux-selection-list li::before {
-    color: rgba(39, 68, 114, 0.4);
+    color: rgba(39, 68, 114, 0.5);
 }
 
 /* --- Responsive Adjustments --- */
@@ -831,10 +881,10 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue */
     margin: 25px auto 0 !important;
-    /* Centered Gold Bar */
+    /* Centered Navy Blue Bar */
 }
 
 /* --- Content Styling --- */
@@ -906,13 +956,13 @@
 }
 
 /* ========================================
-   STRATEGIC PLANNING (SECTION 7)
+   STRATEGIC PLANNING (SECTION 5)
    Structured framework grid using Navy and Gold
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
-    /* Cream Hash */
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 /* Centered Header */
@@ -930,10 +980,10 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue */
     margin: 25px auto 0 !important;
-    /* Centered Gold Bar */
+    /* Centered Navy Blue Bar */
 }
 
 .lux-planning-intro {
@@ -965,7 +1015,8 @@
     align-items: flex-start;
     gap: 20px;
     padding: 35px 40px;
-    background-color: #ffffff;
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
     transition: all 0.35s ease;
@@ -974,13 +1025,13 @@
 
 .lux-planning-card:hover {
     transform: translateY(-8px);
-    border-bottom-color: #c6a15b;
-    /* Gold Hash highlight */
+    border-bottom-color: #274472;
+    /* Navy Blue highlight */
     box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
 }
 
 .lux-planning-icon {
-    color: #c6a15b;
+    color: #274472;
     /* Gold Hash */
     font-size: 20px !important;
     font-weight: 700 !important;
@@ -1098,8 +1149,8 @@
     font-size: 12px !important;
     letter-spacing: 4px !important;
     font-weight: 600 !important;
-    color: #c6a15b;
-    /* Gold Hash */
+    color: #ffffff;
+    /* White for contrast on dark bg */
     text-transform: uppercase !important;
     margin-bottom: 25px;
 }
@@ -1116,7 +1167,7 @@
 .lux-method-hero-divider {
     width: 60px;
     height: 2px;
-    background-color: #c6a15b;
+    background-color: #ffffff;
     margin: 35px auto;
 }
 
@@ -1152,9 +1203,10 @@
 .lux-step-num {
     font-family: 'Playfair Display', serif !important;
     font-size: 24px !important;
-    color: #c6a15b;
+    color: #274472;
+    /* White for contrast */
     font-weight: 700 !important;
-    border-bottom: 2px solid #c6a15b;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
     flex-shrink: 0;
     line-height: 1 !important;
@@ -1207,7 +1259,7 @@
     right: -20px;
     background-color: #274472;
     /* Navy Hash */
-    color: #c6a15b;
+    color: #ffffff;
     /* Gold Hash */
     padding: 12px 25px;
     font-family: 'Montserrat', sans-serif !important;
@@ -1259,18 +1311,19 @@
 }
 
 /* ========================================
-   DECISION MATRIX (SECTION 9)
+   DECISION MATRIX (SECTION 7)
    Comparative table layout using Navy and Gold
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 /* --- Value Color Fixes (Universal) --- */
 .lux-val-yes {
-    color: #c6a15b !important;
-    /* Prominent Gold */
+    color: #274472 !important;
+    /* Navy Blue */
     font-weight: 700 !important;
 }
 
@@ -1384,14 +1437,14 @@
         /* Default light wash */
     }
 
-    /* Specific mobile background tints for visibility */
+    /* Specific light blue background tints for visibility */
     .lux-val-yes {
-        background-color: #fcf9f2;
-        border: 1px solid rgba(198, 161, 91, 0.2) !important;
+        background-color: rgb(231, 243, 245);
+        border: 1px solid rgba(39, 68, 114, 0.2) !important;
     }
 
     .lux-val-no {
-        background-color: #f7f6f2;
+        background-color: rgb(231, 243, 245, 0.5);
         opacity: 1 !important;
     }
 
@@ -1432,8 +1485,8 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue */
     margin: 25px auto 0 !important;
 }
 
@@ -1488,14 +1541,14 @@
     font-family: 'Playfair Display', serif !important;
     font-size: 18px !important;
     font-weight: 600 !important;
-    color: #c6a15b !important;
+    color: #274472 !important;
     /* Gold Hash */
 }
 
 /* Row separation */
 .lux-row-emerald td {
-    background-color: #fcf9f2;
-    /* Lightest tint for distinction */
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 /* --- MOBILE "BRAND CARD" REDESIGN --- */
@@ -1555,14 +1608,14 @@
         font-weight: 700 !important;
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
-        color: #c6a15b;
+        color: #274472;
         /* Gold Hash label */
         margin-right: 15px;
         flex-shrink: 0;
     }
 
     .lux-row-emerald .lux-td-brand {
-        background-color: #c6a15b;
+        background-color: rgb(231, 243, 245);
         /* Gold head for second brand */
         color: #000000 !important;
     }
@@ -1581,12 +1634,13 @@
 }
 
 /* ========================================
-   ADVISOR ADVANTAGE (SECTION 11)
+   ADVISOR ADVANTAGE (SECTION 9)
    Side-by-side comparison layout
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 /* Centered Header */
@@ -1600,7 +1654,8 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
+    background-color: #274472;
+    /* Navy Blue */
     margin: 25px auto 0 !important;
 }
 
@@ -1644,8 +1699,9 @@
     position: absolute;
     top: -15px;
     left: 40px;
-    background-color: #c6a15b;
-    color: #000000;
+    background-color: #274472;
+    /* Navy Blue */
+    color: #ffffff;
     padding: 6px 18px;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
@@ -1772,8 +1828,8 @@
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue */
     margin: 25px auto 0 !important;
 }
 
@@ -1789,8 +1845,8 @@
 }
 
 .lux-faq-item:hover {
-    background-color: #f7f6f2;
-    /* Cream Hash hover */
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue hover */
 }
 
 .lux-faq-question {
@@ -1813,7 +1869,7 @@
 }
 
 .lux-faq-icon {
-    color: #c6a15b;
+    color: #274472;
     /* Gold Hash */
     font-size: 20px !important;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1853,8 +1909,8 @@
 /* Highlight the question when open */
 .lux-faq-item.lux-open .lux-q-text {
     width: fit-content;
-    color: #c6a15b;
-    /* Gold Hash */
+    color: #274472;
+    /* Navy Blue */
 }
 
 /* --- Responsive Adjustments --- */
@@ -1892,7 +1948,7 @@
     position: relative;
     padding: 140px 40px;
     /* Suggestion: Epic shot of the Scenic Eclipse at sea */
-    background: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    background: url('https://uc21cdf6bc0099a001c5e4c09b91.previews.dropboxusercontent.com/p/thumb/AC-qhaNFzf-MTezCRptsqUASG6ZdQpHw6yOpv2-Eqk9riv4woEWc4pHYBVBN5ojkeUG-Sz_NqwqfQ38UJv-aOmSRl9MOpKt-_ZS8rzZcRZbHfVoUzqDFPLD3Tr3endAAO_sLh1Uh0CNc1mqYAwBK_fzK3DhsSXTxsRwN_aJE-okgtDBle3pixmlWAqbLpy4zF8sZYu4KSzzjkdtSiX8ZxbLEs58oW2Z8cd_g6sushW4FrrRGdtCLjB7lEITau0VQM_X9SnuiVfi-0wt4oVZp8a-B1zNhKAdhCpiIWxxgsbgjp_ZrreX6jMFK-pw7ITYXomS-osifkqC3jmGsQUYZkzRfFx2MDoc9qpSd9MkmXtdKYA/p.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1931,8 +1987,8 @@
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #ffffff;
+    /* Navy Blue */
     margin: 30px auto 0;
     border-radius: 2px;
 }
@@ -1954,10 +2010,10 @@
 /* --- CTA Button Styling --- */
 .lux-cta-btn-primary {
     padding: 22px 50px;
-    background-color: #c6a15b;
-    /* Gold Hash */
-    color: #000000;
-    border: 1px solid #c6a15b;
+    background-color: #274472;
+    /* Navy Blue Hash */
+    color: #ffffff;
+    border: 1px solid #274472;
     border-radius: 4px;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
@@ -1971,9 +2027,9 @@
 
 .lux-cta-btn-primary:hover {
     background-color: #ffffff;
+    color: #274472;
     border-color: #ffffff;
     transform: translateY(-5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 /* --- Responsive Adjustments --- */
@@ -2015,13 +2071,13 @@
 }
 
 /* ========================================
-   CONTENT ATTRIBUTION (SECTION 14)
+   CONTENT ATTRIBUTION (SECTION 12)
    Professional footer metadata using Navy and Gold
    ======================================== */
 
 .lux-bg-cream {
-    background-color: #f7f6f2;
-    /* Cream Hash */
+    background-color: rgb(231, 243, 245);
+    /* Light Navy Blue */
 }
 
 .lux-attribution-section {
@@ -2053,8 +2109,8 @@
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #c6a15b;
-    /* Gold Hash */
+    background-color: #274472;
+    /* Navy Blue */
     margin: 15px auto 0;
 }
 
@@ -2085,8 +2141,8 @@
 
 .lux-attr-footer {
     padding-top: 25px;
-    border-top: 1px solid rgba(198, 161, 91, 0.2);
-    /* Faded Gold divider */
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    /* Faded Navy divider */
     display: inline-block;
 }
 
@@ -2095,7 +2151,7 @@
     font-size: 12px !important;
     text-transform: uppercase !important;
     letter-spacing: 1.5px !important;
-    color: #c6a15b;
+    color: #274472;
     /* Gold Hash */
     font-weight: 500 !important;
 }
