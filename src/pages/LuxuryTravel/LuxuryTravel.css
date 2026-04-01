@@ -1,10 +1,10 @@
 /* ========================================
-   SCENIC ECLIPSE HERO (SECTION 1)
+   SECTION 1: SCENIC ECLIPSE HERO
    Ultra-luxury hero with background overlay, glassmorphism, and editorial text
    ======================================== */
 
 /* ========================================
-   SCENIC ECLIPSE HERO (SECTION 1)
+   SECTION 1: SCENIC ECLIPSE HERO
    ======================================== */
 
 .lux-hero {
@@ -276,7 +276,7 @@
     align-items: start;
 }
 
-/* Flipped layout for Section 02 - Heading Left, Content Right */
+/* Flipped layout for Section 2 - Heading Left, Content Right */
 .lux-sticky-split-layout.flipped {
     direction: rtl;
 }
@@ -297,7 +297,7 @@
     margin-left: 0;
 }
 
-/* Flipped layout for Section 03 (Expert Insight) - Heading Left, Content Right */
+/* Flipped layout for Section 3 (Expert Insight) - Heading Left, Content Right */
 .lux-sticky-wrapper.flipped {
     direction: rtl;
 }
@@ -445,7 +445,7 @@
         max-width: 700px;
     }
 
-    /* Reset flip on mobile for Section 03 */
+    /* Reset flip on mobile for Section 3 */
     .lux-sticky-wrapper.flipped {
         direction: ltr;
     }
@@ -752,7 +752,7 @@
 }
 
 /* ========================================
-   SECTION 5: SUITABILITY (FULL WIDTH SIDE-BY-SIDE)
+   SECTION 4: SUITABILITY (FULL WIDTH SIDE-BY-SIDE)
    Prefix: lux- | Colors: Navy & Soft Blue
    ======================================== */
 
@@ -1038,7 +1038,7 @@
 }
 
 /* ========================================
-   ABOUT THE YACHTS (SECTION 6)
+   SECTION 5: ABOUT THE YACHTS
    Editorial narrative layout using Navy and Gold
    ======================================== */
 
@@ -1142,7 +1142,7 @@
 }
 
 /* ========================================
-   SECTION 7: STRATEGIC PLANNING (STICKY)
+   SECTION 6: STRATEGIC PLANNING (STICKY)
    Prefix: lux- | Colors: Navy & Soft Blue
    ======================================== */
 
@@ -1314,7 +1314,7 @@
 }
 
 /* ========================================
-   PLANNING METHOD (SECTION 8)
+   SECTION 7: PLANNING METHOD
    Upgraded Header with Background and Editorial Layout
    ======================================== */
 
@@ -1538,7 +1538,7 @@
 }
 
 /* ========================================
-   SECTION 9: DECISION MATRIX (STICKY)
+   SECTION 8: DECISION MATRIX (STICKY)
    Prefix: lux- | Colors: Navy & Soft Blue
    ======================================== */
 
@@ -1810,7 +1810,7 @@
 }
 
 /* ========================================
-   HIGH-LEVEL SUMMARY (SECTION 10)
+   SECTION 9: HIGH-LEVEL SUMMARY
    Executive summary table using Navy and Gold
    ======================================== */
 
@@ -1978,7 +1978,7 @@
 }
 
 /* ========================================
-   ADVISOR ADVANTAGE (SECTION 9)
+   SECTION 10: ADVISOR ADVANTAGE
    Side-by-side comparison layout
    ======================================== */
 
@@ -2163,7 +2163,7 @@
 }
 
 /* ========================================
-   EXPERT FAQs (SECTION 12)
+   SECTION 11: EXPERT FAQs
    Accordion layout using Navy and Gold
    ======================================== */
 
@@ -2381,7 +2381,7 @@
 }
 
 /* ========================================
-   FINAL CTA (SECTION 13)
+   SECTION 12: FINAL CTA
    High-impact visual conclusion using Navy and Gold
    ======================================== */
 
@@ -2512,7 +2512,7 @@
 }
 
 /* ========================================
-   CONTENT ATTRIBUTION (SECTION 12)
+   SECTION 13: CONTENT ATTRIBUTION
    Professional footer metadata using Navy and Gold
    ======================================== */
 

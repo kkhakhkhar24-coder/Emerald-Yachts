@@ -55,7 +55,7 @@ function LuxuryTravel() {
         <div>
             <Navbar />
 
-            {/* ===== HERO SECTION: SCENIC ECLIPSE — High-impact introduction to Discovery Yachts and Trips & Ships expert planning ===== */}
+            {/* ===== SECTION 1: SCENIC ECLIPSE — High-impact introduction to Discovery Yachts and Trips & Ships expert planning ===== */}
             <section className="lux-hero">
                 <div className="lux-hero-content">
                     <span className="lux-hero-eyebrow">Expert Planning by Trips & Ships Luxury Travel</span>
@@ -188,7 +188,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 5: SUITABILITY — Full-Width Side-by-Side Design with Navy Schema ===== */}
+            {/* ===== SECTION 4: SUITABILITY — Full-Width Side-by-Side Design with Navy Schema ===== */}
             <section className="lux-section lux-bg-white lux-suitability-full">
                 <div className="lux-inner-full">
 
@@ -238,7 +238,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 6: ABOUT THE YACHTS — Defining Discovery Yachts and the Scenic Eclipse philosophy ===== */}
+            {/* ===== SECTION 5: ABOUT THE YACHTS — Defining Discovery Yachts and the Scenic Eclipse philosophy ===== */}
             <section className="lux-section lux-bg-cream">
                 <div className="lux-inner lux-narrow">
 
@@ -262,7 +262,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 7: PLANNING FACTORS — Redesigned with Sticky Side-Heading and Navy Schema ===== */}
+            {/* ===== SECTION 6: PLANNING FACTORS — Redesigned with Sticky Side-Heading and Navy Schema ===== */}
             <section className="lux-section lux-bg-white lux-planning-redesign">
                 <div className="lux-inner lux-wide">
                     <div className="lux-sticky-wrapper">
@@ -330,7 +330,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 8: PLANNING METHOD — Integrating your custom Scenic Eclipse imagery ===== */}
+            {/* ===== SECTION 7: PLANNING METHOD — Integrating your custom Scenic Eclipse imagery ===== */}
             <section className="lux-section lux-bg-white">
                 <div className="lux-inner">
 
@@ -406,7 +406,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 9: DECISION MATRIX — Sticky Side-Heading Layout with Navy/Soft-Blue Schema ===== */}
+            {/* ===== SECTION 8: DECISION MATRIX — Sticky Side-Heading Layout with Navy/Soft-Blue Schema ===== */}
 <section className="lux-section lux-bg-soft lux-matrix-redesign">
     <div className="lux-inner lux-wide">
         <div className="lux-sticky-wrapper">
@@ -508,7 +508,7 @@ function LuxuryTravel() {
     </div>
 </section>
 
-            {/* ===== SECTION 10: HIGH-LEVEL COMPARISON — Quick-reference summary of brand differences ===== */}
+            {/* ===== SECTION 9: HIGH-LEVEL COMPARISON — Quick-reference summary of brand differences ===== */}
             <section className="lux-section lux-bg-white">
                 <div className="lux-inner">
 
@@ -557,7 +557,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 11: ADVISOR ADVANTAGE — Comparing direct booking vs. expert planning with Trips & Ships ===== */}
+            {/* ===== SECTION 10: ADVISOR ADVANTAGE — Comparing direct booking vs. expert planning with Trips & Ships ===== */}
             <section className="lux-section lux-bg-cream">
                 <div className="lux-inner">
 
@@ -607,7 +607,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 12: EXPERT FAQs — Detailed answers to common Scenic Eclipse planning questions ===== */}
+            {/* ===== SECTION 11: EXPERT FAQs — Detailed answers to common Scenic Eclipse planning questions ===== */}
             <section className="lux-section lux-bg-white">
                 <div className="lux-inner lux-narrow-faq">
 
@@ -621,7 +621,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 13: FINAL CTA — The definitive call-to-action to schedule a Scenic Eclipse consultation ===== */}
+            {/* ===== SECTION 12: FINAL CTA — The definitive call-to-action to schedule a Scenic Eclipse consultation ===== */}
             <section className="lux-final-cta-section">
                 {/* Dark Wash Overlay for Typography Clarity */}
                 <div className="lux-cta-overlay"></div>
@@ -645,7 +645,7 @@ function LuxuryTravel() {
                 </div>
             </section>
 
-            {/* ===== SECTION 14: ATTRIBUTION — Professional credentials and content metadata ===== */}
+            {/* ===== SECTION 13: ATTRIBUTION — Professional credentials and content metadata ===== */}
             <section className="lux-attribution-section lux-bg-cream">
                 <div className="lux-inner lux-narrow">
 
