@@ -1,0 +1,1380 @@
+.Yachts_hero_section {
+  position: relative;
+  min-height: 100vh;  /* ✅ FIXED */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 60px;  /* navbar space */
+}
+
+/* BG */
+.Yachts_hero_bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: 1s ease;
+}
+
+/* OVERLAY */
+.Yachts_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* CONTENT */
+.Yachts_hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;   /* ✅ FIXED */
+  text-align: center;
+  color: white;
+}
+
+/* H1 */
+.Yachts_hero_content h1 {
+  margin-bottom: 20px;
+}
+
+/* P */
+.Yachts_hero_content p {
+  margin-bottom: 12px;
+}
+
+/* ================= READ MORE ================= */
+.Yachts_readmore_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Yachts_readmore_btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* underline hover */
+.Yachts_readmore_btn::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.Yachts_readmore_btn:hover::after {
+  width: 100%;
+}
+
+/* BUTTONS */
+.Yachts_hero_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.Yachts_primary_btn {
+  padding: 14px 26px;
+  background: white;
+  color: black;
+  border: none;
+}
+
+.Yachts_secondary_btn {
+  padding: 14px 26px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 1024px) {
+  .Yachts_hero_content h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Yachts_hero_section {
+    padding: 110px 15px 50px;
+  }
+
+  .Yachts_hero_content h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Yachts_hero_content h1 {
+    font-size: 26px;
+  }
+
+  .Yachts_primary_btn,
+  .Yachts_secondary_btn {
+    width: 100%;
+  }
+}
+
+/* ================= SECTION BASE (COMMON STYLE PATTERN REPEATED MANUALLY) ================= */
+
+/* ================= HERO ================= */
+.Yachts_hero_section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 60px;
+}
+
+.Yachts_hero_bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: 1s ease;
+}
+
+.Yachts_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.Yachts_hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  text-align: center;
+  color: white;
+}
+
+.Yachts_hero_content h1 { margin-bottom: 20px; }
+.Yachts_hero_content p { margin-bottom: 12px; }
+
+.Yachts_hero_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.Yachts_primary_btn {
+  padding: 14px 26px;
+  background: white;
+  color: black;
+  border: none;
+}
+
+.Yachts_secondary_btn {
+  padding: 14px 26px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* READ MORE */
+.Yachts_readmore_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Yachts_readmore_btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.Yachts_readmore_btn::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.Yachts_readmore_btn:hover::after {
+  width: 100%;
+}
+
+/* ================= SECTION COMMON STYLE (MANUAL REPEAT) ================= */
+
+/* SECTION 2 */
+.Yachts_compare_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_compare_inner { max-width:800px; margin:0 auto;}
+.Yachts_compare_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_compare_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_compare_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_compare_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_compare_section { padding: 50px 15px; }
+  .Yachts_compare_inner h2 { font-size: 28px; }
+  .Yachts_compare_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_compare_inner h2 { font-size: 24px; }
+  .Yachts_compare_inner p { font-size: 0.95rem; }
+}
+
+/* SECTION 3 */
+/* ================= SECTION 3 (UPGRADED UI) ================= */
+
+.Yachts_price_section {
+  background: white;
+  padding: 60px 20px; /* SAME */
+  text-align: center;
+}
+
+.Yachts_price_inner {
+  max-width: 900px; /* slight expand for grid */
+  margin: 0 auto;
+}
+
+/* HEADING */
+.Yachts_price_inner h2 {
+  font-size: 48px;
+  color: #2f4a6d;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.Yachts_price_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #2f4a6d;
+  display: block;
+  margin: 12px auto 0;
+}
+
+/* SUBTEXT */
+.Yachts_price_subtext {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #274472cc;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.Yachts_price_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* CARD */
+.Yachts_price_card {
+  background: #f7f9fb;
+  border: 1px solid #e4e9ee;
+  border-radius: 10px;
+  padding: 16px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-align: left;
+
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.Yachts_price_card i {
+  font-size: 16px;
+  color: #2f4a6d;
+  min-width: 20px;
+}
+
+/* TEXT */
+.Yachts_price_card span {
+  font-size: 1rem;
+  color: #2f4a6d;
+}
+
+/* HOVER */
+.Yachts_price_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  border-color: #d6dee6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .Yachts_price_inner h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Yachts_price_section {
+    padding: 50px 15px; /* SAME PATTERN */
+  }
+
+  .Yachts_price_inner h2 {
+    font-size: 28px;
+  }
+
+  .Yachts_price_cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .Yachts_price_inner h2 {
+    font-size: 24px;
+  }
+
+  .Yachts_price_subtext {
+    font-size: 1rem;
+  }
+}
+
+/* SECTION 4 */
+/* .Yachts_difference_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_difference_inner { max-width:800px; margin:0 auto;}
+.Yachts_difference_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_difference_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_difference_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;} */
+
+/* ================= SECTION 4 (UI ONLY, CONTENT SAME) ================= */
+
+.Yachts_difference_section {
+  background: #eef2f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Yachts_difference_inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+.Yachts_difference_inner h2 {
+  font-size: 48px;
+  color: #2f4a6d;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.Yachts_difference_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #2f4a6d;
+  display: block;
+  margin: 12px auto 0;
+}
+
+/* GRID */
+.Yachts_difference_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.Yachts_difference_card {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #e4e9ee;
+
+  text-align: left;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: 0.3s;
+}
+
+.Yachts_difference_card p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #274472cc;
+  margin: 0;
+}
+
+/* LAST FULL WIDTH */
+.Yachts_difference_full {
+  grid-column: span 2;
+  text-align: center;
+  background: #f7f9fb;
+}
+
+/* HOVER */
+.Yachts_difference_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .Yachts_difference_inner h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Yachts_difference_section {
+    padding: 50px 15px;
+  }
+
+  .Yachts_difference_inner h2 {
+    font-size: 28px;
+  }
+
+  .Yachts_difference_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .Yachts_difference_full {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .Yachts_difference_inner h2 {
+    font-size: 24px;
+  }
+}
+
+/* SECTION 5 */
+.Yachts_feel_section { background:white; padding:60px 20px; text-align:center;}
+.Yachts_feel_inner { max-width:800px; margin:0 auto;}
+.Yachts_feel_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_feel_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_feel_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_feel_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_feel_section { padding: 50px 15px; }
+  .Yachts_feel_inner h2 { font-size: 28px; }
+  .Yachts_feel_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_feel_inner h2 { font-size: 24px; }
+  .Yachts_feel_inner p { font-size: 0.95rem; }
+}
+
+/* SECTION 6 */
+/* .Yachts_ship_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_ship_inner { max-width:800px; margin:0 auto;}
+.Yachts_ship_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_ship_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_ship_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;} */
+
+
+/* SECTION 6 */
+.Yachts_ship_section {
+  position: relative;
+  background: url("https://uc73dbbba6bb225aff7e72e81765.previews.dropboxusercontent.com/p/thumb/AC_Mhyb__21IP-jSz80SJ4dxXWzjhMKm9UBLwg2YTU4Aeoiloq_FjJGNGZHYlPYz0XnIUvRhTEqxR9XhvEV7JLUH3vD2IpXWEKQMMxQyw35xJgEi2HrYW8-wxKWtgDQSCOMjxfaAScuDkU1vg6mMM-gsbspMq9wv4FYf2DCgnDLklqPOcYSASBNk0WT0UK6bHKd5Nn53pXB89ADRuWigokZN-90ivMPe22GtuFVeRRWQX60BvhxWxExwm_i4HMXxRVt6dXSEcyH3NH9T2H16eE2sK_e2UHOw_HHl6lPAcBZm26dPvsAHpZqHprwmHuKbbDvoRVntisg08FK9pwZZzy7finBbJVEU9FHVFdGCagLjaQ/p.jpeg") center/cover no-repeat;
+  padding:60px 20px;
+  text-align:center;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY (for readability) */
+.Yachts_ship_section::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.55); /* adjust if needed */
+  z-index:1;
+}
+
+/* KEEP CONTENT ABOVE OVERLAY */
+.Yachts_ship_inner {
+  position: relative;
+  z-index:2;
+  max-width:800px;
+  margin:0 auto;
+}
+
+/* TEXT COLOR UPDATED FOR BG IMAGE */
+.Yachts_ship_inner h2 {
+  font-size:48px;
+  color:#ffffff;
+  margin-bottom:20px;
+  font-family:'Playfair Display',serif;
+}
+
+.Yachts_ship_inner h2::after {
+  content:"";
+  width:60px;
+  height:2px;
+  background:#ffffff;
+  display:block;
+  margin:12px auto 0;
+}
+
+.Yachts_ship_inner p {
+  font-size:1.125rem;
+  line-height:1.7;
+  color:rgba(255,255,255,0.9);
+}
+
+@media (max-width:1024px){
+  .Yachts_ship_inner h2 { font-size:36px; }
+}
+
+@media (max-width:768px){
+  .Yachts_ship_section { padding:50px 18px; }
+
+  .Yachts_ship_inner h2 {
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .Yachts_ship_inner p {
+    font-size:1rem;
+  }
+}
+
+@media (max-width:480px){
+  .Yachts_ship_section { padding:40px 15px; }
+
+  .Yachts_ship_inner h2 {
+    font-size:24px;
+  }
+
+  .Yachts_ship_inner p {
+    font-size:0.95rem;
+  }
+}
+
+/* SECTION 7 */
+.Yachts_inclusion_section { background:white; padding:60px 20px; text-align:center;}
+.Yachts_inclusion_inner { max-width:800px; margin:0 auto;}
+.Yachts_inclusion_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_inclusion_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_inclusion_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_inclusion_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_inclusion_section { padding: 50px 15px; }
+  .Yachts_inclusion_inner h2 { font-size: 28px; }
+  .Yachts_inclusion_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_inclusion_inner h2 { font-size: 24px; }
+  .Yachts_inclusion_inner p { font-size: 0.95rem; }
+}
+
+/* SECTION 8 */
+/* .Yachts_best_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_best_inner { max-width:800px; margin:0 auto;}
+.Yachts_best_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_best_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_best_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;} */
+
+/* SECTION 8 */
+.Yachts_best_section {
+  background:rgb(247,249,251);
+  padding:60px 20px;
+  text-align:center;
+}
+
+.Yachts_best_inner {
+  max-width:900px;
+  margin:0 auto;
+}
+
+/* HEADING */
+.Yachts_best_inner h2 {
+  font-size:48px;
+  color:#2f4a6d;
+  margin-bottom:30px;
+  font-family:'Playfair Display',serif;
+}
+
+.Yachts_best_inner h2::after {
+  content:"";
+  width:60px;
+  height:2px;
+  background:#2f4a6d;
+  display:block;
+  margin:12px auto 0;
+}
+
+/* ALL TEXT BASE */
+.Yachts_best_inner p {
+  font-size:1.125rem;
+  line-height:1.7;
+  color:#274472cc;
+  margin:8px 0;
+}
+
+/* "Choose Scenic / Emerald" HEADINGS */
+.Yachts_best_inner p:nth-of-type(1),
+.Yachts_best_inner p:nth-of-type(5) {
+  font-weight:600;
+  font-size:1.25rem;
+  color:#2f4a6d;
+  margin-top:25px;
+}
+
+/* SCENIC POINTS (1–3) */
+.Yachts_best_inner p:nth-of-type(2),
+.Yachts_best_inner p:nth-of-type(3),
+.Yachts_best_inner p:nth-of-type(4) {
+  background:#f4f7fb;
+  padding:12px 16px;
+  border-radius:8px;
+  margin:8px auto;
+  max-width:500px;
+  text-align:left;
+  position:relative;
+}
+
+/* EMERALD POINTS (6–8) */
+.Yachts_best_inner p:nth-of-type(6),
+.Yachts_best_inner p:nth-of-type(7),
+.Yachts_best_inner p:nth-of-type(8) {
+  background:#eef7f2;
+  padding:12px 16px;
+  border-radius:8px;
+  margin:8px auto;
+  max-width:500px;
+  text-align:left;
+  position:relative;
+}
+
+/* ICON STYLE (LEFT DOT) */
+.Yachts_best_inner p:nth-of-type(2)::before,
+.Yachts_best_inner p:nth-of-type(3)::before,
+.Yachts_best_inner p:nth-of-type(4)::before,
+.Yachts_best_inner p:nth-of-type(6)::before,
+.Yachts_best_inner p:nth-of-type(7)::before,
+.Yachts_best_inner p:nth-of-type(8)::before {
+  content:"✓";
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:14px;
+  color:#2f4a6d;
+}
+
+.Yachts_best_inner p:nth-of-type(2),
+.Yachts_best_inner p:nth-of-type(3),
+.Yachts_best_inner p:nth-of-type(4),
+.Yachts_best_inner p:nth-of-type(6),
+.Yachts_best_inner p:nth-of-type(7),
+.Yachts_best_inner p:nth-of-type(8) {
+  padding-left:35px;
+}
+
+@media (max-width:1024px){
+  .Yachts_best_inner h2 { font-size:36px; }
+}
+
+@media (max-width:768px){
+  .Yachts_best_section { padding:50px 18px; }
+
+  .Yachts_best_inner h2 {
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .Yachts_best_inner p {
+    font-size:1rem;
+  }
+}
+
+@media (max-width:480px){
+  .Yachts_best_section { padding:40px 15px; }
+
+  .Yachts_best_inner h2 { font-size:24px; }
+
+  .Yachts_best_inner p {
+    font-size:0.95rem;
+  }
+}
+
+/* SECTION 9 */
+.Yachts_notfor_section { background:white; padding:60px 20px; text-align:center;}
+.Yachts_notfor_inner { max-width:800px; margin:0 auto;}
+.Yachts_notfor_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_notfor_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_notfor_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_notfor_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_notfor_section { padding: 50px 15px; }
+  .Yachts_notfor_inner h2 { font-size: 28px; }
+  .Yachts_notfor_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_notfor_inner h2 { font-size: 24px; }
+  .Yachts_notfor_inner p { font-size: 0.95rem; }
+}
+
+/* SECTION 10 */
+.Yachts_mistake_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_mistake_inner { max-width:800px; margin:0 auto;}
+.Yachts_mistake_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_mistake_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_mistake_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_mistake_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_mistake_section { padding: 50px 15px; }
+  .Yachts_mistake_inner h2 { font-size: 28px; }
+  .Yachts_mistake_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_mistake_inner h2 { font-size: 24px; }
+  .Yachts_mistake_inner p { font-size: 0.95rem; }
+}
+
+/* SECTION 11 */
+.Yachts_expert_section { background:white; padding:60px 20px; text-align:center;}
+.Yachts_expert_inner { max-width:800px; margin:0 auto;}
+.Yachts_expert_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_expert_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_expert_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_expert_inner h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .Yachts_expert_section { padding: 50px 15px; }
+  .Yachts_expert_inner h2 { font-size: 28px; }
+  .Yachts_expert_inner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .Yachts_expert_inner h2 { font-size: 24px; }
+  .Yachts_expert_inner p { font-size: 0.95rem; }
+}
+
+/* IMAGE GRID */
+/* .Yachts_expert_images {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.Yachts_expert_images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.Yachts_expert_images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width:1024px){
+  .Yachts_expert_images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:768px){
+  .Yachts_expert_images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .Yachts_expert_images img {
+    height: 180px;
+  }
+}
+@media (max-width:480px){
+  .Yachts_expert_images {
+    grid-template-columns: 1fr;
+  }
+
+  .Yachts_expert_images img {
+    height: 160px;
+  }
+} */
+
+/* SECTION 12 */
+/* .Yachts_recommend_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_recommend_inner { max-width:800px; margin:0 auto;}
+.Yachts_recommend_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_recommend_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_recommend_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;} */
+
+/* ================= SECTION 12 : OUR RECOMMENDATION ================= */
+
+.Yachts_recommend_section {
+  background: #eef2f5;
+  padding: 60px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Yachts_recommend_inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px; /* safe spacing for small screens */
+  box-sizing: border-box;
+}
+
+.Yachts_recommend_inner h2 {
+  font-size: 48px;
+  color: #2f4a6d;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.Yachts_recommend_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #2f4a6d;
+  display: block;
+  margin: 12px auto 0;
+}
+
+.Yachts_recommend_inner p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #274472cc;
+  margin-bottom: 12px;
+
+  max-width: 100%;
+  word-break: break-word;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* ===== 1024px ===== */
+@media (max-width: 1024px) {
+  .Yachts_recommend_inner h2 {
+    font-size: 36px;
+  }
+}
+
+/* ===== 768px ===== */
+@media (max-width: 768px) {
+  .Yachts_recommend_section {
+    padding: 50px 15px;
+  }
+
+  .Yachts_recommend_inner {
+    padding: 0 8px;
+  }
+
+  .Yachts_recommend_inner h2 {
+    font-size: 28px;
+  }
+
+  .Yachts_recommend_inner p {
+    font-size: 1.05rem;
+    
+  }
+}
+
+/* ===== 480px ===== */
+@media (max-width: 480px) {
+  .Yachts_recommend_section {
+    padding: 45px 12px;
+  }
+
+  .Yachts_recommend_inner h2 {
+    font-size: 24px;
+  }
+
+  .Yachts_recommend_inner p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* SECTION 13 */
+.Yachts_next_section { background:white; padding:60px 20px; text-align:center;}
+.Yachts_next_inner { max-width:800px; margin:0 auto;}
+.Yachts_next_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_next_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_next_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;}
+
+@media (max-width: 1024px) {
+  .Yachts_next_inner h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Yachts_next_section {
+    padding: 50px 15px;
+  }
+
+  .Yachts_next_inner h2 {
+    font-size: 28px;
+  }
+
+  .Yachts_next_inner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Yachts_next_inner h2 {
+    font-size: 24px;
+  }
+
+  .Yachts_next_inner p {
+    font-size: 0.95rem;
+  }
+}
+
+/* SECTION 14 */
+/* .Yachts_why_section { background:#eef2f5; padding:60px 20px; text-align:center;}
+.Yachts_why_inner { max-width:800px; margin:0 auto;}
+.Yachts_why_inner h2 { font-size:48px; color:#2f4a6d; margin-bottom:20px; font-family:'Playfair Display',serif;}
+.Yachts_why_inner h2::after {content:"";width:60px;height:2px;background:#2f4a6d;display:block;margin:12px auto 0;}
+.Yachts_why_inner p {font-size:1.125rem;line-height:1.7;color:#274472cc;} */
+
+/* SECTION 14 */
+.Yachts_why_section {
+  background:#eef2f5;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.Yachts_why_inner {
+  max-width:900px;
+  margin:0 auto;
+}
+
+/* HEADING */
+.Yachts_why_inner h2 {
+  font-size:48px;
+  color:#2f4a6d;
+  margin-bottom:20px;
+  font-family:'Playfair Display',serif;
+}
+
+.Yachts_why_inner h2::after {
+  content:"";
+  width:60px;
+  height:2px;
+  background:#2f4a6d;
+  display:block;
+  margin:12px auto 0;
+}
+
+/* TOP PARAGRAPHS */
+.Yachts_why_inner p {
+  font-size:1.125rem;
+  line-height:1.7;
+  color:#274472cc;
+  margin-bottom:10px;
+}
+
+/* "Clients benefit from" spacing */
+.Yachts_why_inner p:nth-of-type(3) {
+  margin-top:20px;
+  margin-bottom:15px;
+  font-weight:500;
+}
+
+/* BENEFITS BOX (LIKE YOUR IMAGE CARD) */
+.Yachts_why_inner p:nth-of-type(4),
+.Yachts_why_inner p:nth-of-type(5),
+.Yachts_why_inner p:nth-of-type(6),
+.Yachts_why_inner p:nth-of-type(7) {
+  background:#ffffff;
+  max-width:520px;
+  margin:6px auto;
+  padding:14px 18px;
+  border-radius:8px;
+  text-align:left;
+  position:relative;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* DOT STYLE */
+.Yachts_why_inner p:nth-of-type(4)::before,
+.Yachts_why_inner p:nth-of-type(5)::before,
+.Yachts_why_inner p:nth-of-type(6)::before,
+.Yachts_why_inner p:nth-of-type(7)::before {
+  content:"•";
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:18px;
+  color:#2f4a6d;
+}
+
+/* LEFT SPACE FOR DOT */
+.Yachts_why_inner p:nth-of-type(4),
+.Yachts_why_inner p:nth-of-type(5),
+.Yachts_why_inner p:nth-of-type(6),
+.Yachts_why_inner p:nth-of-type(7) {
+  padding-left:30px;
+}
+
+@media (max-width:1024px){
+  .Yachts_why_inner h2 { font-size:36px; }
+}
+
+@media (max-width:768px){
+  .Yachts_why_section { padding:50px 18px; }
+
+  .Yachts_why_inner h2 {
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .Yachts_why_inner p {
+    font-size:1rem;
+  }
+}
+
+@media (max-width:480px){
+  .Yachts_why_section { padding:40px 15px; }
+
+  .Yachts_why_inner h2 { font-size:24px; }
+
+  .Yachts_why_inner p {
+    font-size:0.95rem;
+  }
+
+  .Yachts_why_inner p:nth-of-type(4),
+  .Yachts_why_inner p:nth-of-type(5),
+  .Yachts_why_inner p:nth-of-type(6),
+  .Yachts_why_inner p:nth-of-type(7) {
+    max-width:100%;
+  }
+}
+
+/* ================= SECTION 15 (UPDATED SPLIT) ================= */
+
+.Yachts_author_section {
+  background: white;
+  padding: 60px 20px; /* SAME */
+}
+
+/* KEEP SAME WIDTH */
+.Yachts_author_inner {
+  max-width: 1100px;  /* slightly wider for split */
+  margin: 0 auto;
+}
+
+/* NEW SPLIT LAYOUT */
+.Yachts_author_split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+.Yachts_author_content {
+  text-align: left;
+}
+
+.Yachts_author_content h2 {
+  font-size: 48px;
+  color: #2f4a6d;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.Yachts_author_content h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #2f4a6d;
+  display: block;
+  margin: 12px 0 0; /* LEFT aligned now */
+}
+
+.Yachts_author_content p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #274472cc;
+  margin-bottom: 10px;
+}
+
+/* RIGHT IMAGE */
+.Yachts_author_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .Yachts_author_content h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Yachts_author_section {
+    padding: 50px 15px; /* SAME PATTERN */
+  }
+
+  .Yachts_author_split {
+    grid-template-columns: 1fr; /* STACK */
+    gap: 30px;
+  }
+
+  .Yachts_author_content {
+    text-align: center;
+  }
+
+  .Yachts_author_content h2 {
+    font-size: 28px;
+  }
+
+  .Yachts_author_content h2::after {
+    margin: 12px auto 0; /* center again */
+  }
+}
+
+@media (max-width: 480px) {
+  .Yachts_author_content h2 {
+    font-size: 24px;
+  }
+
+  .Yachts_author_content p {
+    font-size: 1rem;
+  }
+}
+
+
+/* FAQ SECTION WRAPPER */
+.Scenic_about_yachts_section {
+  background: #eef2f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Scenic_about_yachts_inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+.Scenic_about_yachts_inner h2 {
+  font-size: 48px;
+  color: #2f4a6d;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.Scenic_about_yachts_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #2f4a6d;
+  display: block;
+  margin: 12px auto 0;
+}
+
+@media (max-width: 1024px) {
+  .Scenic_about_yachts_inner h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Scenic_about_yachts_section {
+    padding: 50px 15px;
+  }
+
+  .Scenic_about_yachts_inner h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Scenic_about_yachts_inner h2 {
+    font-size: 24px;
+  }
+}
+
+/* SECTION 17 CTA */
+/* ================= SECTION 17 - CTA ================= */
+
+.Yachts_cta_section {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  /* background: url("data:image/jpeg;base64,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") center/cover no-repeat;
+  overflow: hidden; */
+  background:url("https://uc217cc89b2c6d5fad5006a7cdac.previews.dropboxusercontent.com/p/thumb/AC9PvF6sLmjHar45A1QZJReT_ro3ho0Hb7YCl5hC-kxf1HpO_Ka9Z2vz9PX9tlXP0B1VJlg7lllBSrpyDN7Cc_RJI--gVMCcInfWUSg7Vk3m1RuliKD_XrCEMddtIqtWN_ZOh2Yk4cHrflhvAUf_aoRYBPYkSsLtTHLCDUEGCE6hPooIbikpLLuIWpG5LfqTaStVJ727MF-i51MSuYadNR33OEXKobSq6xPIK1aPWTM9N5PEuvYziVtVSRA_3cQ4HagDLe0kkToZDMokma2zs_Rkiu038tpR5x44q7EAySKskC3w5UrcLO2CMVWApL0To_hxu9bdCTVhJveXlrXnNaNU3oL_4oq0QvODcjnfIG1bk6yeGl4KiLPHoWL9M8inuroSNtsJqs264tvDl9SEDx2wc0eXjGU8-0wd7CdWDM2M6g/p.jpeg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:12px;
+  background-position: left;
+}
+
+/* OVERLAY */
+.Yachts_cta_section::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  z-index:1;
+}
+
+/* INNER */
+.Yachts_cta_inner {
+  position: relative;
+  z-index:2;
+  max-width:800px;
+  margin:0 auto;
+}
+
+/* HEADING */
+.Yachts_cta_inner h2 {
+  font-size:48px;
+  color:#ffffff;
+  margin-bottom:20px;
+  font-family:'Playfair Display',serif;
+}
+
+.Yachts_cta_inner h2::after {
+  content:"";
+  width:60px;
+  height:2px;
+  background:#ffffff;
+  display:block;
+  margin:12px auto 0;
+}
+
+/* TEXT */
+.Yachts_cta_inner p {
+  font-size:1.125rem;
+  color:#ffffffcc;
+  margin-bottom:10px;
+}
+
+/* BUTTONS */
+.Yachts_primary_btn {
+  background:#ffffff;
+  color:#2f4a6d;
+  padding:12px 24px;
+  border:none;
+  border-radius:6px;
+  margin:12px 8px;
+  cursor:pointer;
+  font-weight:500;
+}
+
+.Yachts_secondary_btn {
+  background:transparent;
+  color:#ffffff;
+  padding:12px 24px;
+  border:1px solid #ffffff;
+  border-radius:6px;
+  margin:12px 8px;
+  cursor:pointer;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* 1024 */
+@media (max-width:1024px){
+  .Yachts_cta_inner h2 {
+    font-size:36px;
+  }
+}
+
+/* 768 */
+@media (max-width:768px){
+  .Yachts_cta_section {
+    padding:70px 15px;
+  }
+
+  .Yachts_cta_inner h2 {
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .Yachts_cta_inner p {
+    font-size:1rem;
+  }
+}
+
+/* 480 */
+@media (max-width:480px){
+  .Yachts_cta_inner h2 {
+    font-size:24px;
+  }
+
+  .Yachts_cta_inner p {
+    font-size:0.95rem;
+  }
+
+  .Yachts_primary_btn,
+  .Yachts_secondary_btn {
+    width:100%;
+  }
+
+  .Yachts_cta_section {
+    overflow: hidden;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:112px;
+  background-position: left;
+}
+}
