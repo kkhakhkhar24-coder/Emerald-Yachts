@@ -641,10 +641,9 @@
 
 /* ================= ABOUT YACHTS SECTION ================= */
 .Scenic_about_yachts_section {
-  background: white;   /* 👈 soft contrast */
-  padding: 60px 20px;   /* ✅ SAME section spacing */
+  background: #f7f9fb;   /* ✅ matched premium contrast */
+  padding: 80px 20px;   /* ✅ consistent section spacing */
   text-align: center;
-  
 }
 
 /* INNER */
@@ -1436,7 +1435,7 @@
   background: url("https://uc2bdec23bb154591783f5e3a24a.previews.dropboxusercontent.com/p/thumb/AC9cK9K7ZwiQqNyrTgMVK6iB0IZNrgvvyuKsx0DFD0dUloX6cs88vcaclKttGR9Yzr1CyF5hiSoA6yJ1OgDXv1jIkMJXGMpH7fpWaLBNIkcR9Zy3fM52OCEqHmSV73XsJvJBHHa4eGVYyq9d-84IKZSwqU78oeIz5Imffo4B6qHKERVOe0e1Ot0dte8ySMwnBKs4Pd4P00MYAYbWB6hTZRwc4ZoMyUTHQFu0s0qkB-AB1DUvrb0IYHrsw9kAQToYOAJaMP0fYU6fUSJEQ_ealQeEChmiG5qHLaof0dw_VTmMlZ6q53AHVaydwC4-zb4RdB1py9TbapRJiMU9JdEOvlAm5-LVDQg1WFr1TrkypghEcC9rCzZfbqDlDk7ud0DbDal6fMa5uiQqVrsQ0Kf8s6kD6MZvn-n76yGI7E7RqIDbcg/p.jpeg");
   background-size: cover;
   background-position: center;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .Scenic_cta_overlay {

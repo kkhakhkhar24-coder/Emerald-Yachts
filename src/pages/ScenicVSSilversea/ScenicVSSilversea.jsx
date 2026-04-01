@@ -424,6 +424,7 @@ const AntarcticaPage = () => {
           muted 
           loop 
           playsInline
+          controls
         >
           <source src="/Scenic - Yacht - 15 sec - CBS.mp4" type="video/mp4" />
           Your browser does not support the video tag.
