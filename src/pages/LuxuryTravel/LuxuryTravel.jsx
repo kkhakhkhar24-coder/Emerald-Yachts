@@ -346,7 +346,7 @@ function LuxuryTravel() {
                         <div className="lux-method-image-side">
                             <div className="lux-image-frame">
                                 <img
-                                    src="https://uc2bd972a38218ff4f0293512594.previews.dropboxusercontent.com/p/thumb/AC-Dw_exETVSKrAfV1m6CvlW0XP_lXvII9vsAQFTEyizZ_gGdzZM_YC78FjhP91CREZjDni67cOSwnyOep2545I4ZeMzIbfsHcIFB-diZRT4OMzI0pHlI884QuyUiGy_jX3lSi8GMUIzP9a9EzLDe7ckChagfX2XSHOESgQijKkpg4ky6I1I-bd-oNgos29y9FeJWVpSdo10SUVMc4yN6WolfzCCBY1VC_m3YQA8V_RNCdobx0kYMI9JTh5b44Ducs4Po_OUrwCQJ7sH21cS476nBrTXqvZ-8_vXyybDrlit4nK2bLhH_r1csOqUp3bkKvd-avd5JmnHzgOVAsgNvsAW5XhhiXztMNyfkbkJUQrCIw/p.jpeg7Fj0Gk4JQSAfuZeIHNp72IvbFphhkYNh7rqrvx2-PlBoXw50zXHmw/p.jpeglanning Method"
+                                    src="https://ucad55844b3e38f2f08c2678b145.previews.dropboxusercontent.com/p/thumb/AC9kZ2H7NTpQFX1uZ-No0IsrRk6gvPXKh-t9lkM0AycMsuUxWWYPFEQaNlvTuvAYbz0WYlevVcVFfZ0SB4UyCXsy0mv9YLuLTF1NIFS3NeUUKfQS5AOpnbF5t03lemXr6aP7uGnKa0yLNNIYJvyE9-IfRe3LNc_kZTy0OhweMDIC5GVz_Wvj-lsvMAZs2z7a56P-kKWsZTBh5nQTMNsgXbhlvNxgCggNDid4q1Y9wrZuRjQaqrqyxqeDC_yJ9svjcjEa8rKr7KcMdVan_LwZ_sil5KRcHWjjSy_Xza8mIs3QDOS7uGz6TKsu8ZjVpyY9OsD20nB97rZK-fy2qzb6bDS16vMpVfJtBLgz93yd5pf3-w/p.jpeg"
                                     className="lux-featured-img"
                                 />
                                 <div className="lux-image-caption">Discovery  Destination</div>
