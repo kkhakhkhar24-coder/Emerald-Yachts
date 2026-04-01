@@ -537,42 +537,55 @@ export default function DrakePassagePage() {
                 </div>
             </section>
 
-            {/* ===== SECTION 9: EXPERT INSIGHT — Features Angela Hughes' expertise and client experience with Antarctica expeditions ===== */}
-            <section className="drake-section drake-bg-cream drake-expert-section">
-                <div className="drake-section-inner drake-narrow">
-
-                    <div className="drake-expert-card">
-                        {/* Header within the card */}
-                        <div className="drake-expert-header">
-                            <span className="drake-section-number">09</span>
-                            <h2 className="drake-section-h2">Expert Insight from Angela Hughes</h2>
+            {/* ===== SECTION 9: EXPERT INSIGHT — Redesigned side-by-side layout featuring Angela Hughes' photo and expert perspective ===== */}
+            <section className="drake-section drake-bg-white drake-expert-redesign">
+                <div className="drake-section-inner drake-wide">
+                    <div className="drake-expert-flex">
+            
+                        {/* Left Column: Content area */}
+                        <div className="drake-expert-content-wrap">
+                            <div className="drake-expert-header-left">
+                                <span className="drake-section-number">09</span>
+                                <h2 className="drake-section-h2 left-bar">Expert Insight from <br />Angela Hughes</h2>
+                            </div>
+            
+                            <div className="drake-expert-quote-body">
+                                <div className="drake-expert-icon-navy">"</div>
+            
+                                <p className="drake-expert-paragraph drake-highlight">
+                                    In working with Antarctica clients, the concern around the Drake Passage is almost always greater before the trip than after.
+                                </p>
+            
+                                <p className="drake-expert-paragraph">
+                                    Once travelers understand how the crossing is structured and select the right ship, it becomes a manageable and expected part of the journey.
+                                </p>
+            
+                                <p className="drake-expert-paragraph drake-final-insight">
+                                    The difference is not in avoiding the Drake Passage. It is in planning it correctly.
+                                </p>
+                            </div>
+            
+                            <div className="drake-expert-author-footer">
+                                <div className="drake-expert-line-navy"></div>
+                                <p className="drake-expert-name">Angela Hughes</p>
+                                <p className="drake-expert-title">Antarctica Expedition Specialist</p>
+                            </div>
                         </div>
-
-                        {/* Quote content containing the exact copy provided */}
-                        <div className="drake-expert-quote-content">
-                            <div className="drake-expert-quote-mark">“</div>
-
-                            <p className="drake-expert-paragraph drake-highlight">
-                                In working with Antarctica clients, the concern around the Drake Passage is almost always greater before the trip than after.
-                            </p>
-
-                            <p className="drake-expert-paragraph">
-                                Once travelers understand how the crossing is structured and select the right ship, it becomes a manageable and expected part of the journey.
-                            </p>
-
-                            <p className="drake-expert-paragraph drake-final-insight">
-                                The difference is not in avoiding the Drake Passage. It is in planning it correctly.
-                            </p>
+            
+                        {/* Right Column: Professional Photo - Sticky */}
+                        <div className="drake-expert-image-wrap">
+                            <div className="drake-expert-photo-container">
+                                <img
+                                    src={ProfilePicture}
+                                    alt="Angela Hughes - Antarctica Expedition Specialist"
+                                    className="drake-expert-img"
+                                />
+                                {/* Decorative Navy Frame Accent */}
+                                <div className="drake-expert-photo-accent"></div>
+                            </div>
                         </div>
-
-                        {/* Signature/Attribution area */}
-                        <div className="drake-expert-attribution">
-                            <div className="drake-expert-line"></div>
-                            <p className="drake-expert-name">Angela Hughes</p>
-                            <p className="drake-expert-title">Antarctica Expedition Specialist</p>
-                        </div>
+            
                     </div>
-
                 </div>
             </section>
 
@@ -686,48 +699,8 @@ export default function DrakePassagePage() {
                 </div>
             </section>
 
-            {/* ===== AUTHOR PROOF BAR — Displays Angela Hughes' credentials, stats (40+ years, 121 countries), and awards ===== */}
-            <div className="drake-author-bar drake-author-section">
-                <div className="drake-author-inner">
-                    <div className="drake-author-profile">
-
-                        {/* Avatar with Initials */}
-                        <div className="drake-author-avatar">
-                            <img src={ProfilePicture} alt="" />
-                        </div>
-
-                        <div className="drake-author-info">
-                            <span className="drake-author-eyebrow">Planned and Curated by</span>
-                            <h3 className="drake-author-name">Angela Hughes</h3>
-                            <div className="drake-author-title">CEO, Trips & Ships Luxury Travel</div>
-
-                            <div className="drake-author-stats-row">
-                                <div className="drake-author-stat-item">
-                                    <span className="drake-stat-val">40+</span>
-                                    <span className="drake-stat-lbl">years in the travel industry</span>
-                                </div>
-                                <div className="drake-author-stat-item">
-                                    <span className="drake-stat-val">121</span>
-                                    <span className="drake-stat-lbl">countries and territories</span>
-                                </div>
-                            </div>
-
-                            <div className="drake-author-awards-grid">
-                                <span className="drake-award-badge">Luxury Travel Influencer of the Year (2024), Travel Leaders Network</span>
-                                <span className="drake-award-badge">Most Influential Women in Travel (2026), TravelPulse</span>
-                            </div>
-
-                            <div className="drake-author-media-note">
-                                <p>Featured across leading travel media</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
             {/* ===== FAQ SECTION — Accordion-style frequently asked questions about the Drake Passage with expandable answers ===== */}
-            <section className="drake-section drake-bg-white drake-faq-section">
+            <section className="drake-section drake-bg-cream drake-faq-section">
                 <div className="drake-section-inner drake-narrow">
 
                     <div className="drake-faq-header">

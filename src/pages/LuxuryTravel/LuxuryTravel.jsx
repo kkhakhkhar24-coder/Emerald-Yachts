@@ -286,7 +286,7 @@ function LuxuryTravel() {
                 <div className="lux-inner">
 
                     {/* Visual Title Block with Image 1 */}
-                    <div className="lux-method-hero" style={{ backgroundImage: `url('https://uc93561690e085f9ae9fde394415.previews.dropboxusercontent.com/p/thumb/AC-xql32IsaqZ8FpIu_UUdcr2f7TzIHnNa9amWdrgazwrulcFc2DAGgbOnKw3S5cITMLzJFysn9ftKn74w8jxHZFEO-hhFfmGGZ0itd_OsW11VIVVfYVtYC4tl8R9tJwjmykt3Ad6AGa4kG1t3nrY_PLkeOZp8aqu703C9m72UfHbRV3Pu8Y7uKUtCN0GNxUR1ZtkAHKeKIz_Yt2YGMkdSEUQTUt7b4V-T4-Z2O1WsyV1Fx2tquhaaMT970J4xJQU7QBqK1YG9pVaWHSeThLgpt7IwV6BxPDMuvDue0Q2L97ED-RKFHNN-hmSdvC3xLTyutSP91NF2939wnjUOf-1qdRI43p_Lz9TJVPlf-vD7zFzxVt6oUIKJ0OnKRuCU3iIPrtF1ucfkSvS8ZCJWgD1VCeGN_hSIxhC4YtKrEghVo5AA/p.jpeg')` }}>
+                    <div className="lux-method-hero" style={{ backgroundImage: `url('https://uc23929ccb13c0ce43eb9f019c77.previews.dropboxusercontent.com/p/thumb/AC9lXAEHkExMz2U1E4wGYh47-mLDI2nD-na54qBmKcNp4WIZSazFY5Oxj4TiK1BDno0wspYwvIArApLiEnHlkKHA8SjIEG5E5svaoKMC2hBCsYvD_s2TW3oDbKq5Zu_YNEl7L5bmiNzvdDdRz0lVlAOU0rEHaqusME6tJs5c-P1u-rNA7nw2QvugEKTucHErj3GDofWfzTyYNlLOV-CD-xyD07kytnD8OJP9vJOQlUHRjRbQoMMrWch3iqfqjYZphXcEBLaQ9XzklNMfz_hwlZTur-y4d6WuMIsxaHZgqnLzKEUgoVHPHkuWW-E5iVhXdUulmQ4tEUcIHDUUECCL1Rr2OPJYAPQ2ySIkyUF9WB6xpjmUS6oOUhU5Fn0x-xRp-1kpDZWWhdyCfOE_9XfgQCH50K6ocq0rncVBpLG-re4VaEifqv8ZdpozX-xuv0dJbo-fgzJGXGsDOk1MX0ClZ_rB9QqvT7BYMDea6jBEZzrsKw/p.jpeg')` }}>
                         <div className="lux-method-hero-overlay"></div>
                         <div className="lux-method-hero-content">
                             <span className="lux-method-eyebrow">Strategic Methodology</span>
@@ -346,8 +346,7 @@ function LuxuryTravel() {
                         <div className="lux-method-image-side">
                             <div className="lux-image-frame">
                                 <img
-                                    src="https://uc2bd972a38218ff4f0293512594.previews.dropboxusercontent.com/p/thumb/AC-Dw_exETVSKrAfV1m6CvlW0XP_lXvII9vsAQFTEyizZ_gGdzZM_YC78FjhP91CREZjDni67cOSwnyOep2545I4ZeMzIbfsHcIFB-diZRT4OMzI0pHlI884QuyUiGy_jX3lSi8GMUIzP9a9EzLDe7ckChagfX2XSHOESgQijKkpg4ky6I1I-bd-oNgos29y9FeJWVpSdo10SUVMc4yN6WolfzCCBY1VC_m3YQA8V_RNCdobx0kYMI9JTh5b44Ducs4Po_OUrwCQJ7sH21cS476nBrTXqvZ-8_vXyybDrlit4nK2bLhH_r1csOqUp3bkKvd-avd5JmnHzgOVAsgNvsAW5XhhiXztMNyfkbkJUQrCIw/p.jpeg"
-                                    alt="Scenic Eclipse Planning Method"
+                                    src="https://uc2bd972a38218ff4f0293512594.previews.dropboxusercontent.com/p/thumb/AC-Dw_exETVSKrAfV1m6CvlW0XP_lXvII9vsAQFTEyizZ_gGdzZM_YC78FjhP91CREZjDni67cOSwnyOep2545I4ZeMzIbfsHcIFB-diZRT4OMzI0pHlI884QuyUiGy_jX3lSi8GMUIzP9a9EzLDe7ckChagfX2XSHOESgQijKkpg4ky6I1I-bd-oNgos29y9FeJWVpSdo10SUVMc4yN6WolfzCCBY1VC_m3YQA8V_RNCdobx0kYMI9JTh5b44Ducs4Po_OUrwCQJ7sH21cS476nBrTXqvZ-8_vXyybDrlit4nK2bLhH_r1csOqUp3bkKvd-avd5JmnHzgOVAsgNvsAW5XhhiXztMNyfkbkJUQrCIw/p.jpeg7Fj0Gk4JQSAfuZeIHNp72IvbFphhkYNh7rqrvx2-PlBoXw50zXHmw/p.jpeglanning Method"
                                     className="lux-featured-img"
                                 />
                                 <div className="lux-image-caption">Discovery  Destination</div>
