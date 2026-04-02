@@ -31,7 +31,6 @@ import section8_Image2 from "../../assets/DrakePassage/section8_image2.jpeg";
 import section8_Image3 from "../../assets/DrakePassage/section8_image3.jpeg";
 import section8_Image4 from "../../assets/DrakePassage/section8_image4.jpeg";
 
-
 function useFadeIn() {
   const ref = useRef(null);
   useEffect(() => {
@@ -349,7 +348,7 @@ export default function DrakePassagePage() {
 
               <div className="drake-lake-shake-cards">
                 <div className="drake-term-card drake-lake">
-                  <span className="drake-term-badge">Drake Lake</span>
+                  {/* <span className="drake-term-badge">Drake Lake</span> */}
                   <h3>Drake Lake</h3>
                   <p className="drake-section-p-clean">
                     referring to calmer crossings
@@ -357,9 +356,9 @@ export default function DrakePassagePage() {
                 </div>
 
                 <div className="drake-term-card drake-shake">
-                  <span className="drake-term-badge drake-navy-badge">
+                  {/* <span className="drake-term-badge drake-navy-badge">
                     Drake Shake
-                  </span>
+                  </span> */}
                   <h3>Drake Shake</h3>
                   <p
                     className="drake-section-p-clean drake-white-text"

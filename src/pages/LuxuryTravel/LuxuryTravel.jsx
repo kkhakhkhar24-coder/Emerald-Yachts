@@ -417,106 +417,106 @@ function LuxuryTravel() {
             </section>
 
             {/* ===== SECTION 8: DECISION MATRIX — Sticky Side-Heading Layout with Navy/Soft-Blue Schema ===== */}
-<section className="lux-section lux-bg-soft lux-matrix-redesign">
-    <div className="lux-inner lux-wide">
-        <div className="lux-sticky-wrapper">
+            <section className="lux-section lux-bg-soft lux-matrix-redesign">
+                <div className="lux-inner lux-wide">
+                    <div className="lux-sticky-wrapper">
 
-            {/* Left Column: Sticky Title & Intro */}
-            <aside className="lux-side-sticky">
-                <div className="lux-sticky-element">
-                    <span className="lux-section-number">07</span>
-                    <h2 className="lux-h2 lux-left-bar">Which Yacht <br />Should You Choose?</h2>
-                    
-                    <p className="lux-sticky-lead-text">
-                        Scenic Eclipse and Emerald Yachts serve very different traveler profiles. Choosing the right yacht depends on how you want your journey to feel.
-                    </p>
-                </div>
-            </aside>
+                        {/* Left Column: Sticky Title & Intro */}
+                        <aside className="lux-side-sticky">
+                            <div className="lux-sticky-element">
+                                <span className="lux-section-number">07</span>
+                                <h2 className="lux-h2 lux-left-bar">Which Yacht <br />Should You Choose?</h2>
 
-            {/* Right Column: Scrolling Matrix Content */}
-            <main className="lux-content-column">
-                <div className="lux-matrix-container">
-                    <h3 className="lux-h3-matrix">Scenic Eclipse vs Emerald Yachts — Decision Matrix</h3>
+                                <p className="lux-sticky-lead-text">
+                                    Scenic Eclipse and Emerald Yachts serve very different traveler profiles. Choosing the right yacht depends on how you want your journey to feel.
+                                </p>
+                            </div>
+                        </aside>
 
-                    {/* SEO Image: Consistent Figure Style */}
-                    <figure className="lux-hero-figure">
-                        <div className="lux-figure-inner">
-                            <img
-                                src={Section7Image}
-                                alt="Drake Passage expedition cruise compared to traditional luxury yacht experience"
-                                className="lux-img-fluid"
-                            />
-                        </div>
-                        <figcaption className="lux-hero-caption">
-                            <span className="lux-caption-tag">Comparison</span>
-                            Understanding the difference between Drake Passage expeditions and traditional cruising helps determine the right yacht for your journey.
-                        </figcaption>
-                    </figure>
+                        {/* Right Column: Scrolling Matrix Content */}
+                        <main className="lux-content-column">
+                            <div className="lux-matrix-container">
+                                <h3 className="lux-h3-matrix">Scenic Eclipse vs Emerald Yachts — Decision Matrix</h3>
 
-                    <div className="lux-table-wrapper">
-                        <table className="lux-comparison-table">
-                            <thead>
-                                <tr>
-                                    <th className="lux-th-aspect">If You Value…</th>
-                                    <th className="lux-th-scenic">Choose Scenic Eclipse</th>
-                                    <th className="lux-th-emerald">Choose Emerald Yachts</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td className="lux-td-label">Exploration & Discovery</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Remote or Polar Destinations</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Expert-Led Enrichment</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                    <td className="lux-td-res lux-val-lim" data-label="Emerald">Limited</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Relaxed Coastal Cruising</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Social Yacht Atmosphere</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Warm-Weather Lifestyle Focus</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Expedition-Style Pacing</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Leisure-Forward Pacing</td>
-                                    <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
-                                </tr>
-                                <tr>
-                                    <td className="lux-td-label">Destination Depth</td>
-                                    <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
-                                    <td className="lux-td-res lux-val-lim" data-label="Emerald">Moderate</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                {/* SEO Image: Consistent Figure Style */}
+                                <figure className="lux-hero-figure">
+                                    <div className="lux-figure-inner">
+                                        <img
+                                            src={Section7Image}
+                                            alt="Drake Passage expedition cruise compared to traditional luxury yacht experience"
+                                            className="lux-img-fluid"
+                                        />
+                                    </div>
+                                    <figcaption className="lux-hero-caption">
+                                        <span className="lux-caption-tag">Comparison</span>
+                                        Understanding the difference between Drake Passage expeditions and traditional cruising helps determine the right yacht for your journey.
+                                    </figcaption>
+                                </figure>
+
+                                <div className="lux-table-wrapper">
+                                    <table className="lux-comparison-table">
+                                        <thead>
+                                            <tr>
+                                                <th className="lux-th-aspect">If You Value…</th>
+                                                <th className="lux-th-scenic">Choose Scenic Eclipse</th>
+                                                <th className="lux-th-emerald">Choose Emerald Yachts</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td className="lux-td-label">Exploration & Discovery</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Remote or Polar Destinations</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Expert-Led Enrichment</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                                <td className="lux-td-res lux-val-lim" data-label="Emerald">Limited</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Relaxed Coastal Cruising</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Social Yacht Atmosphere</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Warm-Weather Lifestyle Focus</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Expedition-Style Pacing</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Emerald">No</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Leisure-Forward Pacing</td>
+                                                <td className="lux-td-res lux-val-no" data-label="Scenic">No</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Emerald">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="lux-td-label">Destination Depth</td>
+                                                <td className="lux-td-res lux-val-yes" data-label="Scenic">Yes</td>
+                                                <td className="lux-td-res lux-val-lim" data-label="Emerald">Moderate</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </main>
+
                     </div>
                 </div>
-            </main>
-
-        </div>
-    </div>
-</section>
+            </section>
 
             {/* ===== SECTION 9: HIGH-LEVEL COMPARISON — Quick-reference summary of brand differences ===== */}
             <section className="lux-section lux-bg-white">

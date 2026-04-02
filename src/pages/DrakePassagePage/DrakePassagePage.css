@@ -1272,6 +1272,27 @@ h3 {
 .drake-term-card h3 {
   font-family: 'Playfair Display', serif !important;
   margin-bottom: 10px;
+  font-weight: 600 !important;
+}
+
+/* Drake Lake Card - Better Text Visibility */
+.drake-term-card.drake-lake h3 {
+  color: #274472 !important;
+}
+
+.drake-term-card.drake-lake p {
+  color: #274472 !important;
+  opacity: 1 !important;
+}
+
+/* Drake Shake Card - Better Text Visibility */
+.drake-term-card.drake-shake h3 {
+  color: #ffffff !important;
+}
+
+.drake-term-card.drake-shake p {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* --- Consistent Editorial Note --- */
@@ -3507,12 +3528,13 @@ h3 {
 }
 
 .drake-faq-q span {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
-    font-weight: 500 !important;
-    color: #2f4a6d;
-    line-height: 1.5 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color: #2f4a6d;
+  line-height: 1.5 !important;
 }
+
 .drake-faq-icon {
   color: #274472;
   transition: transform 0.4s ease;
@@ -3660,21 +3682,26 @@ h3 {
   z-index: 2;
 }
 
-/* Heading Fix */
+/* Heading Fix - with white line */
 .drake-text-white {
   color: #ffffff !important;
   font-size: 60px !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 30px !important;
 }
 
-/* Custom Divider (White only, no blue) */
-.drake-cta-divider-blue {
+.drake-text-white::after {
+  content: "";
+  display: block;
   width: 60px;
   height: 3px;
   background-color: #ffffff;
-  /* White accent only */
-  margin: 30px auto;
+  margin: 30px auto 0;
   border-radius: 2px;
+}
+
+/* Custom Divider - hidden, using heading line instead */
+.drake-cta-divider-blue {
+  display: none;
 }
 
 .drake-cta-content-wrap {

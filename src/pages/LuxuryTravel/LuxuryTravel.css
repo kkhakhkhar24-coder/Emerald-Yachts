@@ -236,7 +236,7 @@
     .lux-hero-lead {
         font-size: 17px !important;
     }
-    
+
     .lux-hero-btns {
         gap: 20px;
     }
@@ -246,7 +246,7 @@
     .lux-h1 {
         font-size: 36px !important;
     }
-    
+
     .lux-hero-content {
         max-width: 100%;
     }
@@ -269,7 +269,7 @@
     .lux-section-p {
         font-size: 16px !important;
     }
-    
+
     .lux-hero-lead {
         font-size: 15px !important;
         line-height: 1.6 !important;
@@ -280,7 +280,7 @@
         padding: 16px 30px !important;
         font-size: 11px !important;
     }
-    
+
     .lux-hero-note {
         font-size: 15px !important;
     }
@@ -523,7 +523,7 @@ h3 {
         display: inline-block;
         text-align: left;
     }
-    
+
     .lux-expert-avatar-wrap {
         margin: 0 auto 20px;
     }
@@ -549,7 +549,7 @@ h3 {
     .lux-lead-text {
         font-size: 20px !important;
     }
-    
+
     .lux-inner {
         padding: 0 10px;
     }
@@ -576,11 +576,11 @@ h3 {
     .lux-editorial-box-blue .lux-section-p {
         font-size: 16px !important;
     }
-    
+
     .lux-expertise-redesign {
         padding: 60px 15px;
     }
-    
+
     .lux-editorial-box-blue {
         padding: 25px 20px;
     }
@@ -816,7 +816,7 @@ h3 {
     .lux-section-p-clean {
         text-align: center;
     }
-    
+
     .lux-img-fluid {
         height: 400px;
     }
@@ -843,11 +843,11 @@ h3 {
     .lux-expert-highlight-box-white {
         padding: 30px 20px;
     }
-    
+
     .lux-expert-redesign {
         padding: 80px 20px;
     }
-    
+
     .lux-inner.lux-wide {
         padding: 0 10px;
     }
@@ -877,11 +877,11 @@ h3 {
     .lux-credentials-list-navy li {
         font-size: 16px !important;
     }
-    
+
     .lux-img-fluid {
         height: 250px;
     }
-    
+
     .lux-expert-redesign {
         padding: 60px 15px;
     }
@@ -899,6 +899,7 @@ h3 {
 
 /* Global Inner Padding for Mobile */
 @media (max-width: 768px) {
+
     .lux-inner,
     .lux-inner-full,
     .lux-inner.lux-wide,
@@ -910,6 +911,7 @@ h3 {
 }
 
 @media (max-width: 480px) {
+
     .lux-inner,
     .lux-inner-full,
     .lux-inner.lux-wide,
@@ -918,7 +920,7 @@ h3 {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-    
+
     .lux-section {
         padding: 80px 15px;
     }
@@ -1046,7 +1048,7 @@ h3 {
     .lux-suitability-box {
         padding: 40px 30px;
     }
-    
+
     .lux-inner-full {
         padding: 0 20px;
     }
@@ -1079,7 +1081,7 @@ h3 {
     .lux-suitability-header-centered .lux-h2 {
         font-size: 30px !important;
     }
-    
+
     .lux-suitability-box {
         padding: 35px 25px;
     }
@@ -1101,11 +1103,11 @@ h3 {
     .lux-suitability-header-centered .lux-h2 {
         font-size: 26px !important;
     }
-    
+
     .lux-suitability-box {
         padding: 30px 20px;
     }
-    
+
     .lux-box-header {
         flex-direction: column;
         align-items: flex-start;
@@ -1224,7 +1226,7 @@ h3 {
     .lux-selection-card {
         padding: 40px 30px;
     }
-    
+
     .lux-inner.lux-narrow {
         padding: 0 20px;
     }
@@ -1260,7 +1262,7 @@ h3 {
     .lux-selection-list li {
         font-size: 16px !important;
     }
-    
+
     .lux-section {
         padding: 80px 20px;
     }
@@ -1282,11 +1284,11 @@ h3 {
     .lux-selection-header .lux-h2 {
         font-size: 26px !important;
     }
-    
+
     .lux-selection-card {
         padding: 30px 20px;
     }
-    
+
     .lux-selection-list li {
         font-size: 15px !important;
     }
@@ -1401,7 +1403,7 @@ h3 {
     .lux-about-content .lux-section-p {
         font-size: 17px !important;
     }
-    
+
     .lux-inner.lux-narrow {
         padding: 0 15px;
     }
@@ -1424,11 +1426,11 @@ h3 {
     .lux-about-header .lux-h2 {
         font-size: 26px !important;
     }
-    
+
     .lux-about-lead {
         font-size: 17px !important;
     }
-    
+
     .lux-about-content .lux-section-p {
         font-size: 16px !important;
     }
@@ -1581,7 +1583,7 @@ h3 {
     .lux-planning-grid-redesign {
         margin-top: 20px;
     }
-    
+
     .lux-inner.lux-wide {
         padding: 0 20px;
     }
@@ -1621,7 +1623,7 @@ h3 {
     .lux-planning-card-navy {
         padding: 25px;
     }
-    
+
     .lux-planning-redesign {
         padding: 80px 20px;
     }
@@ -1648,11 +1650,11 @@ h3 {
     .lux-planning-grid-redesign {
         grid-template-columns: 1fr;
     }
-    
+
     .lux-planning-card-navy {
         padding: 20px;
     }
-    
+
     .lux-planning-text-navy {
         font-size: 14px !important;
     }
@@ -1774,6 +1776,7 @@ h3 {
     color: #274472;
     /* Navy Hash */
     margin-bottom: 12px;
+    text-align: left;
 }
 
 .lux-method-step .lux-section-p {
@@ -1843,7 +1846,7 @@ h3 {
         height: 450px;
         object-fit: cover;
     }
-    
+
     .lux-inner {
         padding: 0 20px;
     }
@@ -1861,11 +1864,17 @@ h3 {
 
     .lux-h2 {
         font-size: 30px !important;
+        text-align: center !important;
     }
 
     .lux-section-p,
     h3 {
         font-size: 17px !important;
+    }
+
+    /* Center align all H3 headings on mobile */
+    h3, .lux-h3-sm, .lux-h3-navy, .lux-comp-title {
+        text-align: center !important;
     }
 
     .lux-h2-white {
@@ -1898,7 +1907,7 @@ h3 {
     .lux-step-num {
         margin: 0 auto;
     }
-    
+
     .lux-featured-img {
         height: 350px;
     }
@@ -1933,11 +1942,11 @@ h3 {
     .lux-method-step .lux-section-p {
         font-size: 16px !important;
     }
-    
+
     .lux-featured-img {
         height: 280px;
     }
-    
+
     .lux-method-hero {
         padding: 60px 20px;
     }
@@ -2133,6 +2142,7 @@ h3 {
 
     .lux-h2 {
         font-size: 30px !important;
+        text-align: center !important;
     }
 
     .lux-section-p,
@@ -2147,12 +2157,13 @@ h3 {
     /* Match H2 font size with other sections */
     .lux-h2.lux-left-bar {
         font-size: 30px !important;
+        text-align: center !important;
     }
-    
+
     .lux-inner.lux-wide {
         padding: 0 15px;
     }
-    
+
     .lux-matrix-container {
         padding: 40px 25px;
     }
@@ -2187,7 +2198,7 @@ h3 {
     .lux-img-fluid {
         height: 300px;
     }
-    
+
     .lux-matrix-redesign {
         padding: 60px 15px;
     }
@@ -2611,7 +2622,7 @@ h3 {
         gap: 30px;
         padding: 0 20px;
     }
-    
+
     .lux-inner {
         padding: 0 15px;
     }
@@ -2681,11 +2692,11 @@ h3 {
     .lux-comp-title {
         font-size: 22px !important;
     }
-    
+
     .lux-comp-panel {
         padding: 35px 20px;
     }
-    
+
     .lux-adv-intro {
         font-size: 16px !important;
     }
@@ -2904,7 +2915,7 @@ h3 {
     .lux-a-inner {
         padding: 14px 0 0 0;
     }
-    
+
     .lux-inner.lux-narrow-faq {
         padding: 0 15px;
     }
@@ -2943,7 +2954,7 @@ h3 {
     .lux-a-inner {
         font-size: 16px !important;
     }
-    
+
     .lux-inner.lux-narrow-faq {
         padding: 0 10px;
     }
@@ -3081,7 +3092,7 @@ h3 {
         line-height: 1.4 !important;
         font-size: 12px !important;
     }
-    
+
     .lux-final-cta-section {
         padding: 80px 20px;
     }
@@ -3107,11 +3118,11 @@ h3 {
     .lux-section-p {
         font-size: 16px !important;
     }
-    
+
     .lux-cta-paragraph {
         font-size: 16px !important;
     }
-    
+
     .lux-cta-btn-primary {
         padding: 18px 25px;
         font-size: 11px !important;
@@ -3238,7 +3249,7 @@ h3 {
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
     }
-    
+
     .lux-inner.lux-narrow {
         padding: 0 15px;
     }
@@ -3268,7 +3279,7 @@ h3 {
     .lux-attr-content {
         font-size: 16px !important;
     }
-    
+
     .lux-attribution-section {
         padding: 50px 15px;
     }
@@ -3322,7 +3333,7 @@ h3 {
     .lux-seo-image {
         height: 450px;
     }
-    
+
     .lux-inner {
         padding: 0 20px;
     }
@@ -3373,11 +3384,11 @@ h3 {
     .lux-seo-image {
         height: 280px;
     }
-    
+
     .lux-seo-figure {
         margin: 25px 0;
     }
-    
+
     .lux-seo-caption {
         padding: 14px 18px;
         font-size: 13px !important;
