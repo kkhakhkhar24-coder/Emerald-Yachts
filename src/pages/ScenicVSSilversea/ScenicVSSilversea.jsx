@@ -521,7 +521,7 @@ const AntarcticaPage = () => {
             <div className="senianta-why-book-left">
               <div className="senianta-why-story">
                 <p className="senianta-lead-expertise">Choosing between expedition cruise lines requires experience and perspective.</p>
-                <p>Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories, working with clients on complex, high-value itineraries.</p>
+                <p className="senianta-p">Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories, working with clients on complex, high-value itineraries.</p>
                 <p className="senianta-emphasis senianta-emphasis--guided">The decision is guided, not guessed.</p>
               </div>
               

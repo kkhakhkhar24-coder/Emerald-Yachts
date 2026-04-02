@@ -694,6 +694,9 @@
   .Scenic_about_yachts_inner h2 {
     font-size: 28px;
   }
+  .Scenic_about_yachts_inner p{
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1247,6 +1250,9 @@
 @media (max-width: 768px) {
   .Scenic_faq_item {
     padding: 14px 16px;
+  }
+  .Scenic_faq_question{
+    font-size: 17px;
   }
 }
 
