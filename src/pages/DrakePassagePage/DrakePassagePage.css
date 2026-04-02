@@ -2598,13 +2598,12 @@ to {
 }
 
 .drake-faq-q span {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 17px !important;
-  font-weight: 600 !important;
-  color: #274472;
-  line-height: 1.5 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #2f4a6d;
+    line-height: 1.5 !important;
 }
-
 .drake-faq-icon {
   color: #274472;
   transition: transform 0.4s ease;

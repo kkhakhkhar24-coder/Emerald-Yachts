@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { Plus, Minus } from "lucide-react"
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from 'react';
 import '../ScenicAntarctica/ScenicAntarctica.css';
@@ -8,11 +9,43 @@ import myImage from "../../assets/image.jpg";
 
 function ScenicAntarctica() {
 
-
   const [current, setCurrent] = useState(0);
   const [galleryCurrent, setGalleryCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const [activeFAQ, setActiveFAQ] = useState(null);
+  const [activeFaq, setActiveFaq] = useState(null);
+  
+  const faqData = [
+  {
+    question: "What is a Scenic Antarctica cruise?",
+    answer:
+      "An expedition voyage with guided landings, zodiac excursions, and all-inclusive luxury.",
+  },
+  {
+    question: "How much does it cost?",
+    answer: "Pricing varies based on suite, timing, and itinerary.",
+  },
+  {
+    question: "What is included?",
+    answer:
+      "Accommodation, dining, beverages, and guided excursions.",
+  },
+  {
+    question: "Best time to travel?",
+    answer:
+      "December–February for wildlife, November & March for unique conditions.",
+  },
+  {
+    question: "How early to book?",
+    answer: "12–24 months in advance.",
+  },
+  {
+    question: "Is it physically demanding?",
+    answer: "Moderate mobility required.",
+  },
+];
+const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  };
 
   const images = [
     "https://ucad543950156cf5951892cfcf68.previews.dropboxusercontent.com/p/thumb/AC_-VR2tAgRX4SbbdyZSMUxJ0Gn_E3zJK7hKvMGx0na6gQxxwPsS9NRBuES1aaQmK0KZcYfrtFRCwoijGvDEosXOg88HW1JjH4bQY6X14_IHWs_nIIAJINHKFcoMByurvNfmKug2H0HEJw9nD7dy8Z99-h0xbmOLLDs5DiSl1Kc1WYT8G_Ub6coAAwa47gbuqtVXi-wOw4DSYoa5fcTLWttcQQcyw-5zefzlTmr52vLOZdkUHVCo1aY0hFImclzaiLzJ2BTxfUklGi2lgbUcYhR_CFPhBWFkdyP-haSuM1a7QSFhEtWQ5wWoHyf5ZarUvrBbBNrx58p-iZIwyXKxFa7viRfY1oVUVwthIuOKOT98yyhgoQuycmWO8fH2Zl-VoTir6hFc9w2GuCvpp89y0YsWIWcvs4olRmTMJtbrRzcc2Q/p.jpeg",
@@ -544,8 +577,7 @@ Between landings, the ship provides a refined onboard environment designed for r
 
 
 {/* ================= SECTION 14 (FAQ) ================= */}
-{/* ================= SECTION 14 (FAQ) ================= */}
-<section className="Scenic_about_yachts_section">
+{/* <section className="Scenic_about_yachts_section">
   <div className="Scenic_about_yachts_inner">
 
     <h2>Frequently Asked Questions</h2>
@@ -622,6 +654,39 @@ Between landings, the ship provides a refined onboard environment designed for r
       )}
     </div>
 
+  </div>
+</section> */}
+
+<section className="Scenic-faq-section">
+  <div className="Scenic-faq-inner">
+    <h2>Frequently Asked Questions About Scenic Antarctica</h2>
+
+    <div className="Scenic-faq-accordion">
+      {faqData.map((faq, index) => (
+        <div
+          key={index}
+          className={`Scenic-faq-item ${
+            activeFaq === index ? "Scenic-active" : ""
+          }`}
+          onClick={() => toggleFaq(index)}
+        >
+          <div className="Scenic-faq-question">
+            <span>{faq.question}</span>
+            <span className="Scenic-faq-icon">
+              {activeFaq === index ? (
+                <Minus size={15} />
+              ) : (
+                <Plus size={15} />
+              )}
+            </span>
+          </div>
+
+          <div className="Scenic-faq-answer">
+            <p>{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
 

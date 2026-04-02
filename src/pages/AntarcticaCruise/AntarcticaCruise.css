@@ -867,7 +867,7 @@
   padding: 80px 20px;
   text-align: center;
   color: white;
-  background: url("https://ucf88a9a988d90a283d1d9d813b8.previews.dropboxusercontent.com/p/thumb/AC9CtEnCUcbOYQg4LmwsK87nfGdchoZpRWO38oY0Wc4m150EyZuwq-8XI8vN4HykD5xqeAdJzVTlBqi_TYmJsOd6lHI1sjA9_MOw3npJdLg2w8NNP8KKGuE1ivGEOO_P6OFSaDcC9-CgPpHV-N4Bk2qnuq8XcmchV-4-_aUZL801y9ShGrXUjd-d6tZGrxGln8i6jGcLhN7ocZ0hAVrHcUrT6CcLNM0OthcD0G2EfB_Myq8HjJ4sD0_A3f65lhQuiLsl6bG7FoO1UD0scyz4wp_y3Rf0TOIpxIXXT4JEs5fDKRwt89SHdpL66mPi2PLdnhQuaJcKvtMg_oez2ELwhoFozBnlf9I2a3XxhMise5ljK3fxikRBc9FhFkPpKsiPAZGxo37qbCfp89RLMtzT7TiVGP5SO-afwvcNHh0nqZ1gmw/p.jpeg");
+  background: url("../../assets/antarctica-cruise-cost/anta4.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1655,7 +1655,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.05rem;
+  font-size: 18px;
   font-weight: 500;
   color: #2f4a6d;
   font-family: 'Montserrat', sans-serif;
@@ -1669,7 +1669,7 @@
 }
 
 .anta_faq_answer {
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.7;
   font-weight: 300;
   color: #274472cc;
@@ -1699,7 +1699,7 @@
   padding: 100px 20px;
   text-align: center;
   color: white;
-  background: url("https://uc2bdec23bb154591783f5e3a24a.previews.dropboxusercontent.com/p/thumb/AC9cK9K7ZwiQqNyrTgMVK6iB0IZNrgvvyuKsx0DFD0dUloX6cs88vcaclKttGR9Yzr1CyF5hiSoA6yJ1OgDXv1jIkMJXGMpH7fpWaLBNIkcR9Zy3fM52OCEqHmSV73XsJvJBHHa4eGVYyq9d-84IKZSwqU78oeIz5Imffo4B6qHKERVOe0e1Ot0dte8ySMwnBKs4Pd4P00MYAYbWB6hTZRwc4ZoMyUTHQFu0s0qkB-AB1DUvrb0IYHrsw9kAQToYOAJaMP0fYU6fUSJEQ_ealQeEChmiG5qHLaof0dw_VTmMlZ6q53AHVaydwC4-zb4RdB1py9TbapRJiMU9JdEOvlAm5-LVDQg1WFr1TrkypghEcC9rCzZfbqDlDk7ud0DbDal6fMa5uiQqVrsQ0Kf8s6kD6MZvn-n76yGI7E7RqIDbcg/p.jpeg");
+  background: url("../../assets/antarctica-cruise-cost/anta6.jpg");
   background-size: cover;
   background-position: center;
 }

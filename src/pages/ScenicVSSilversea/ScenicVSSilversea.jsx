@@ -1,5 +1,20 @@
-import React, { useState,useEffect } from "react";
-import { Snowflake, Anchor, Ship, AlertCircle, CheckCircle2, Globe, Key, LayoutGrid, ShieldCheck, Award, Clock, MapPin, Plus, Minus } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import {
+  Snowflake,
+  Anchor,
+  Ship,
+  AlertCircle,
+  CheckCircle2,
+  Globe,
+  Key,
+  LayoutGrid,
+  ShieldCheck,
+  Award,
+  Clock,
+  MapPin,
+  Plus,
+  Minus,
+} from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
 import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilver5.jpg";
@@ -13,76 +28,86 @@ const AntarcticaPage = () => {
   const faqData = [
     {
       question: "Which is better for Antarctica, Scenic or Silversea?",
-      answer: "Both Scenic and Silversea operate at a high level, but the better choice depends on your preference for a modern all-inclusive experience versus a more traditional luxury cruise environment."
+      answer:
+        "Both Scenic and Silversea operate at a high level, but the better choice depends on your preference for a modern all-inclusive experience versus a more traditional luxury cruise environment.",
     },
     {
       question: "Is Scenic Eclipse newer than Silversea ships?",
-      answer: "Scenic Eclipse is a purpose-built discovery yacht with a modern design, while Silversea operates a mix of newer senianta-expedition ships and established vessels with a traditional feel."
+      answer:
+        "Scenic Eclipse is a purpose-built discovery yacht with a modern design, while Silversea operates a mix of newer senianta-expedition ships and established vessels with a traditional feel.",
     },
     {
       question: "Do Scenic and Silversea offer similar Antarctica itineraries?",
-      answer: "Both typically visit the Antarctic Peninsula, but exact routes vary based on conditions, timing, and senianta-expedition planning."
+      answer:
+        "Both typically visit the Antarctic Peninsula, but exact routes vary based on conditions, timing, and senianta-expedition planning.",
     },
     {
       question: "Which cruise line is more all-inclusive?",
-      answer: "Scenic emphasizes a simplified all-inclusive structure, while Silversea also includes many elements but may vary by itinerary."
+      answer:
+        "Scenic emphasizes a simplified all-inclusive structure, while Silversea also includes many elements but may vary by itinerary.",
     },
     {
       question: "Which is more luxurious, Scenic or Silversea?",
-      answer: "Both are luxury, but Scenic leans modern luxury while Silversea reflects classic luxury."
+      answer:
+        "Both are luxury, but Scenic leans modern luxury while Silversea reflects classic luxury.",
     },
     {
       question: "Which is better for first-time Antarctica travelers?",
-      answer: "Scenic’s simplified structure may appeal to first-time travelers, while Silversea suits those familiar with traditional luxury cruising."
+      answer:
+        "Scenic’s simplified structure may appeal to first-time travelers, while Silversea suits those familiar with traditional luxury cruising.",
     },
     {
       question: "Which has better suites?",
-      answer: "Both offer high-end suites, though Scenic is known for modern design and Silversea for refined, classic accommodations."
+      answer:
+        "Both offer high-end suites, though Scenic is known for modern design and Silversea for refined, classic accommodations.",
     },
     {
       question: "Is the senianta-expedition experience different?",
-      answer: "Both offer zodiac landings and guided excursions, though delivery style differs slightly."
+      answer:
+        "Both offer zodiac landings and guided excursions, though delivery style differs slightly.",
     },
     {
       question: "Which is better value?",
-      answer: "Value depends on how inclusions align with your expectations rather than price alone."
+      answer:
+        "Value depends on how inclusions align with your expectations rather than price alone.",
     },
     {
       question: "Should I use a travel advisor to choose?",
-      answer: "Yes. Antarctica requires careful planning, and an advisor ensures the right match."
+      answer:
+        "Yes. Antarctica requires careful planning, and an advisor ensures the right match.",
     },
     {
       question: "Which ship is better for the Drake Passage?",
-      answer: "Both use ships designed for polar conditions. Comfort depends more on conditions and ship design than brand alone."
+      answer:
+        "Both use ships designed for polar conditions. Comfort depends more on conditions and ship design than brand alone.",
     },
     {
       question: "How do I decide between Scenic and Silversea?",
-      answer: "The decision comes down to whether you prefer a modern all-inclusive structure or a traditional luxury cruise environment."
-    }
+      answer:
+        "The decision comes down to whether you prefer a modern all-inclusive structure or a traditional luxury cruise environment.",
+    },
   ];
 
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
   const [current, setCurrent] = useState(0);
-    const [readMore, setReadMore] = useState(false);
-  
-      const images = [scenisilver1,scenisilver2,scenisilver3];
+  const [readMore, setReadMore] = useState(false);
 
-  
-    useEffect(() => {
-      const slider = setInterval(() => {
-        setCurrent((prev) => (prev + 1) % images.length);
-      }, 4000);
-      return () => clearInterval(slider);
-    }, [images.length]);
+  const images = [scenisilver1, scenisilver2, scenisilver3];
+
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(slider);
+  }, [images.length]);
 
   return (
     <div className="senianta-wrapper">
-
       <Navbar />
 
-       <section className="anta_hero_section">
+      <section className="anta_hero_section">
         <div
           className="anta_hero_bg"
           style={{ backgroundImage: `url(${images[current]})` }}
@@ -93,21 +118,26 @@ const AntarcticaPage = () => {
         <div className="anta_hero_content">
           <h1>Scenic vs Silversea Antarctica</h1>
 
-          <p className="anta_hero_p">Choosing the right luxury senianta-expedition experience</p>
+          <p className="anta_hero_p">
+            Choosing the right luxury senianta-expedition experience
+          </p>
 
           <p>
-            The difference is not simply in features. It is in how you want to experience the journey.
+            The difference is not simply in features. It is in how you want to
+            experience the journey.
           </p>
           <p>
-             Choosing the right senianta-expedition cruise line for Antarctica impacts more than your itinerary.
-            It shapes how you experience the destination from start to finish.
+            Choosing the right senianta-expedition cruise line for Antarctica
+            impacts more than your itinerary. It shapes how you experience the
+            destination from start to finish.
           </p>
 
           {readMore && (
             <>
               <p>
-                 Two of the most commonly compared options are Scenic Luxury Cruises &amp; Tours and Silversea Cruises.
-            Both operate at the highest level of the market. Both provide access to Antarctica.
+                Two of the most commonly compared options are Scenic Luxury
+                Cruises &amp; Tours and Silversea Cruises. Both operate at the
+                highest level of the market. Both provide access to Antarctica.
               </p>
             </>
           )}
@@ -125,7 +155,6 @@ const AntarcticaPage = () => {
             <button className="senianta-primary senianta-primary--no-offset">
               Get Expert Recommendation
             </button>
-           
           </div>
         </div>
       </section>
@@ -168,82 +197,111 @@ const AntarcticaPage = () => {
 
       {/* ===== SECTION 2 — QUICK COMPARISON ===== */}
       <section className="senianta-glance">
-
         <div className="senianta-glance-inner">
-
           <h2>Scenic vs Silversea at a Glance</h2>
 
           <div className="senianta-glance-table-wrap">
             <table className="senianta-glance-table">
               <thead>
                 <tr>
-                  <th className="senianta-glance-th senianta-glance-th--feature">Feature</th>
-                  <th className="senianta-glance-th senianta-glance-th--scenic">Scenic</th>
-                  <th className="senianta-glance-th senianta-glance-th--silversea">Silversea</th>
+                  <th className="senianta-glance-th senianta-glance-th--feature">
+                    Feature
+                  </th>
+                  <th className="senianta-glance-th senianta-glance-th--scenic">
+                    Scenic
+                  </th>
+                  <th className="senianta-glance-th senianta-glance-th--silversea">
+                    Silversea
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="senianta-glance-row">
-                  <td className="senianta-glance-td senianta-glance-td--label">Overall Style</td>
+                  <td className="senianta-glance-td senianta-glance-td--label">
+                    Overall Style
+                  </td>
                   <td className="senianta-glance-td">Modern luxury yacht</td>
                   <td className="senianta-glance-td">Classic luxury cruise</td>
                 </tr>
                 <tr className="senianta-glance-row senianta-glance-row--alt">
-                  <td className="senianta-glance-td senianta-glance-td--label">Pricing Structure</td>
+                  <td className="senianta-glance-td senianta-glance-td--label">
+                    Pricing Structure
+                  </td>
                   <td className="senianta-glance-td">Fully all-inclusive</td>
                   <td className="senianta-glance-td">High inclusion, varies</td>
                 </tr>
                 <tr className="senianta-glance-row">
-                  <td className="senianta-glance-td senianta-glance-td--label">Ship Design</td>
-                  <td className="senianta-glance-td">Contemporary, design-forward</td>
+                  <td className="senianta-glance-td senianta-glance-td--label">
+                    Ship Design
+                  </td>
+                  <td className="senianta-glance-td">
+                    Contemporary, design-forward
+                  </td>
                   <td className="senianta-glance-td">Traditional, refined</td>
                 </tr>
                 <tr className="senianta-glance-row senianta-glance-row--alt">
-                  <td className="senianta-glance-td senianta-glance-td--label">Experience Focus</td>
-                  <td className="senianta-glance-td">Balance of luxury + senianta-expedition</td>
+                  <td className="senianta-glance-td senianta-glance-td--label">
+                    Experience Focus
+                  </td>
+                  <td className="senianta-glance-td">
+                    Balance of luxury + senianta-expedition
+                  </td>
                   <td className="senianta-glance-td">Heritage + service</td>
                 </tr>
                 <tr className="senianta-glance-row">
-                  <td className="senianta-glance-td senianta-glance-td--label">Best For</td>
-                  <td className="senianta-glance-td">Simplicity and modern comfort</td>
-                  <td className="senianta-glance-td">Familiar luxury experience</td>
+                  <td className="senianta-glance-td senianta-glance-td--label">
+                    Best For
+                  </td>
+                  <td className="senianta-glance-td">
+                    Simplicity and modern comfort
+                  </td>
+                  <td className="senianta-glance-td">
+                    Familiar luxury experience
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-
         </div>
-
       </section>
 
       {/* ===== SECTION 3 — THE BIGGEST DIFFERENCES ===== */}
       <section className="senianta-differences">
-
         <div className="senianta-differences-bg"></div>
 
         <div className="senianta-differences-content">
           <div className="senianta-differences-card">
-
             <h2>The Biggest Differences Between Scenic and Silversea</h2>
 
             <div className="senianta-differences-columns">
-              
               <div className="senianta-diff-col senianta-diff-scenic">
                 <h3 className="senianta-diff-brand">Scenic</h3>
                 <ul className="senianta-diff-list">
                   <li>
-                    <svg viewBox="0 0 24 24" className="senianta-differences-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="senianta-differences-icon"
+                    >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span>Delivers a modern, all-inclusive experience with simplified structure.</span>
+                    <span>
+                      Delivers a modern, all-inclusive experience with
+                      simplified structure.
+                    </span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" className="senianta-differences-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="senianta-differences-icon"
+                    >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span>Emphasizes contemporary design and absolute clarity in pricing.</span>
+                    <span>
+                      Emphasizes contemporary design and absolute clarity in
+                      pricing.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -256,87 +314,98 @@ const AntarcticaPage = () => {
                 <h3 className="senianta-diff-brand">Silversea</h3>
                 <ul className="senianta-diff-list">
                   <li>
-                    <svg viewBox="0 0 24 24" className="senianta-differences-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="senianta-differences-icon"
+                    >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span>Offers a more traditional luxury cruise environment with strong heritage.</span>
+                    <span>
+                      Offers a more traditional luxury cruise environment with
+                      strong heritage.
+                    </span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" className="senianta-differences-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="senianta-differences-icon"
+                    >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span>Emphasizes classic service tradition and high brand familiarity.</span>
+                    <span>
+                      Emphasizes classic service tradition and high brand
+                      familiarity.
+                    </span>
                   </li>
                 </ul>
               </div>
-
             </div>
 
             <p className="senianta-differences-senianta-emphasis">
-              The difference is not in access to Antarctica. It is in how that access is experienced.
+              The difference is not in access to Antarctica. It is in how that
+              access is experienced.
             </p>
-
           </div>
         </div>
-
       </section>
 
       {/* ===== SECTION 4 — SHIP EXPERIENCE ===== */}
       <section className="senianta-ship-exp">
-
         <div className="senianta-ship-exp-inner">
-
           <div className="senianta-ship-exp-image"></div>
 
           <div className="senianta-ship-exp-text">
-
             <h2>Ship Design and Onboard Experience</h2>
 
             <p>
-              Scenic Eclipse was built as a discovery yacht designed specifically for senianta-expedition environments. The onboard experience is modern, with open spaces, multiple dining venues, and a contemporary layout.
+              Scenic Eclipse was built as a discovery yacht designed
+              specifically for senianta-expedition environments. The onboard
+              experience is modern, with open spaces, multiple dining venues,
+              and a contemporary layout.
             </p>
 
             <p>
-              Silversea's senianta-expedition ships reflect the brand's heritage in luxury cruising, combining senianta-expedition capability with a more classic onboard environment.
+              Silversea's senianta-expedition ships reflect the brand's heritage
+              in luxury cruising, combining senianta-expedition capability with
+              a more classic onboard environment.
             </p>
 
             <p className="senianta-emphasis">
-              Travelers who prefer a modern, design-forward experience often choose Scenic. Those who value a traditional luxury atmosphere often prefer Silversea.
+              Travelers who prefer a modern, design-forward experience often
+              choose Scenic. Those who value a traditional luxury atmosphere
+              often prefer Silversea.
             </p>
-
           </div>
-
         </div>
-
       </section>
 
       {/* ===== SECTION 5 — EXPEDITION EXPERIENCE ===== */}
       <section className="senianta-expedition">
-
         <div className="senianta-expedition-inner">
-
           <h2>Expedition Style and Execution</h2>
 
           <p>
-            Both Scenic and Silversea deliver full senianta-expedition programs, including zodiac landings and guided exploration.
+            Both Scenic and Silversea deliver full senianta-expedition programs,
+            including zodiac landings and guided exploration.
           </p>
 
           <p>
-            Scenic focuses on delivering senianta-expedition access within a highly structured, all-inclusive framework.
+            Scenic focuses on delivering senianta-expedition access within a
+            highly structured, all-inclusive framework.
           </p>
 
           <p>
-            Silversea brings a longer senianta-expedition heritage with a refined service approach.
+            Silversea brings a longer senianta-expedition heritage with a
+            refined service approach.
           </p>
 
           <p className="senianta-emphasis">
-            In practice, both provide strong senianta-expedition execution. The difference lies in how the experience is delivered.
+            In practice, both provide strong senianta-expedition execution. The
+            difference lies in how the experience is delivered.
           </p>
-
         </div>
-
       </section>
 
       {/* ===== SECTION 6 — PRICING AND VALUE ===== */}
@@ -344,8 +413,11 @@ const AntarcticaPage = () => {
         <div className="senianta-pricing-value-inner">
           <h2>Pricing and Value Positioning</h2>
           <div className="senianta-pricing-content">
-            <p className="senianta-pricing-intro">Both Scenic and Silversea navigate the ultra-luxury segment of Antarctica travel.</p>
-            
+            <p className="senianta-pricing-intro">
+              Both Scenic and Silversea navigate the ultra-luxury segment of
+              Antarctica travel.
+            </p>
+
             <div className="senianta-value-grid">
               <div className="senianta-value-card">
                 <Snowflake className="senianta-value-icon" />
@@ -364,15 +436,24 @@ const AntarcticaPage = () => {
             <div className="senianta-brand-positioning">
               <div className="senianta-brand-pill">
                 <h4>Scenic</h4>
-                <p>Appeals to travelers who want clarity and simplicity in pricing.</p>
+                <p>
+                  Appeals to travelers who want clarity and simplicity in
+                  pricing.
+                </p>
               </div>
               <div className="senianta-brand-pill">
                 <h4>Silversea</h4>
-                <p>Appeals to those who value brand heritage and a traditional luxury model.</p>
+                <p>
+                  Appeals to those who value brand heritage and a traditional
+                  luxury model.
+                </p>
               </div>
             </div>
 
-            <p className="senianta-emphasis senianta-emphasis--decision">The decision is less about cost and more about how value is structured and perceived.</p>
+            <p className="senianta-emphasis senianta-emphasis--decision">
+              The decision is less about cost and more about how value is
+              structured and perceived.
+            </p>
           </div>
         </div>
       </section>
@@ -382,10 +463,18 @@ const AntarcticaPage = () => {
         <div className="senianta-drake-passage-inner">
           <h2>Drake Passage Experience</h2>
           <div className="senianta-drake-content">
-            <p>Both brands operate ships designed for polar conditions with stabilization systems to manage open water crossings.</p>
-            <p>The Drake Passage experience depends more on conditions and ship design than brand choice alone.</p>
+            <p>
+              Both brands operate ships designed for polar conditions with
+              stabilization systems to manage open water crossings.
+            </p>
+            <p>
+              The Drake Passage experience depends more on conditions and ship
+              design than brand choice alone.
+            </p>
             <div className="senianta-cta-container">
-              <button className="senianta-secondary">Read Drake Passage Guide</button>
+              <button className="senianta-secondary">
+                Read Drake Passage Guide
+              </button>
             </div>
           </div>
         </div>
@@ -401,7 +490,10 @@ const AntarcticaPage = () => {
                 <li>You prefer a modern, design-forward ship</li>
                 <li>You want a clearly defined all-inclusive structure</li>
                 <li>You value simplicity in planning and pricing</li>
-                <li>You want a balance between senianta-expedition and onboard luxury</li>
+                <li>
+                  You want a balance between senianta-expedition and onboard
+                  luxury
+                </li>
               </ul>
             </div>
             <div className="senianta-choice-card senianta-silversea-choice">
@@ -418,11 +510,11 @@ const AntarcticaPage = () => {
       </section>
 
       <div className="senianta-promo-video-wrapper">
-        <video 
-          className="senianta-promo-video-player" 
-          autoPlay 
-          muted 
-          loop 
+        <video
+          className="senianta-promo-video-player"
+          autoPlay
+          muted
+          loop
           playsInline
           controls
         >
@@ -440,32 +532,44 @@ const AntarcticaPage = () => {
               <AlertCircle className="senianta-mistake-icon" />
               <div className="senianta-mistake-text">
                 <span className="senianta-mistake-title"></span>
-                <span className="senianta-mistake-desc">Choosing based on price alone without understanding inclusions</span>
+                <span className="senianta-mistake-desc">
+                  Choosing based on price alone without understanding inclusions
+                </span>
               </div>
             </div>
             <div className="senianta-mistake-card">
               <AlertCircle className="senianta-mistake-icon" />
               <div className="senianta-mistake-text">
                 <span className="senianta-mistake-title"></span>
-                <span className="senianta-mistake-desc">Not aligning the ship experience with personal travel style</span>
+                <span className="senianta-mistake-desc">
+                  Not aligning the ship experience with personal travel style
+                </span>
               </div>
             </div>
             <div className="senianta-mistake-card">
               <AlertCircle className="senianta-mistake-icon" />
               <div className="senianta-mistake-text">
                 <span className="senianta-mistake-title"></span>
-                <span className="senianta-mistake-desc">Booking too late and losing preferred inventory</span>
+                <span className="senianta-mistake-desc">
+                  Booking too late and losing preferred inventory
+                </span>
               </div>
             </div>
             <div className="senianta-mistake-card">
               <AlertCircle className="senianta-mistake-icon" />
               <div className="senianta-mistake-text">
-                <span className="senianta-mistake-desc">Assuming all senianta-expedition experiences are identical</span>
+                <span className="senianta-mistake-desc">
+                  Assuming all senianta-expedition experiences are identical
+                </span>
               </div>
             </div>
           </div>
           <div className="senianta-consultant-tip">
-            <p><strong>Expert Advice:</strong> The right choice comes from understanding how each experience is structured, not simply comparing features.</p>
+            <p>
+              <strong>Expert Advice:</strong> The right choice comes from
+              understanding how each experience is structured, not simply
+              comparing features.
+            </p>
           </div>
         </div>
       </section>
@@ -478,16 +582,28 @@ const AntarcticaPage = () => {
             <div className="senianta-verdict-card senianta-verdict-card--scenic">
               <CheckCircle2 className="senianta-verdict-icon" />
               <h3>The Scenic Recommendation</h3>
-              <p>For most clients seeking a modern, all-inclusive experience with clear pricing and contemporary design, <strong>Scenic</strong> is often the stronger fit.</p>
+              <p>
+                For most clients seeking a modern, all-inclusive experience with
+                clear pricing and contemporary design, <strong>Scenic</strong>{" "}
+                is often the stronger fit.
+              </p>
             </div>
             <div className="senianta-verdict-card senianta-verdict-card--silversea">
               <CheckCircle2 className="senianta-verdict-icon" />
               <h3>The Silversea Recommendation</h3>
-              <p>For clients who prefer a more traditional luxury cruise environment with established service style, <strong>Silversea</strong> remains a strong choice.</p>
+              <p>
+                For clients who prefer a more traditional luxury cruise
+                environment with established service style,{" "}
+                <strong>Silversea</strong> remains a strong choice.
+              </p>
             </div>
           </div>
           <div className="senianta-expert-seal">
-            <p>We regularly guide clients through this exact decision, ensuring the selection aligns with expectations before any booking is confirmed.</p>
+            <p>
+              We regularly guide clients through this exact decision, ensuring
+              the selection aligns with expectations before any booking is
+              confirmed.
+            </p>
           </div>
         </div>
       </section>
@@ -520,11 +636,20 @@ const AntarcticaPage = () => {
           <div className="senianta-why-book-flex">
             <div className="senianta-why-book-left">
               <div className="senianta-why-story">
-                <p className="senianta-lead-expertise">Choosing between expedition cruise lines requires experience and perspective.</p>
-                <p className="senianta-p">Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories, working with clients on complex, high-value itineraries.</p>
-                <p className="senianta-emphasis senianta-emphasis--guided">The decision is guided, not guessed.</p>
+                <p className="senianta-lead-expertise">
+                  Choosing between expedition cruise lines requires experience
+                  and perspective.
+                </p>
+                <p className="senianta-p">
+                  Angela Hughes has over four decades in the travel industry and
+                  has traveled to 121 countries and territories, working with
+                  clients on complex, high-value itineraries.
+                </p>
+                <p className="senianta-emphasis senianta-emphasis--guided">
+                  The decision is guided, not guessed.
+                </p>
               </div>
-              
+
               <div className="senianta-why-benefits-grid">
                 <h3>Clients benefit from:</h3>
                 <div className="senianta-benefit-item">
@@ -548,10 +673,10 @@ const AntarcticaPage = () => {
 
             <div className="senianta-why-book-right">
               <div className="senianta-why-book-image-wrapper">
-                <img 
+                <img
                   src={scenisilver5}
-                  alt="Angela Hughes - Luxury Travel Advisor" 
-                  className="senianta-why-book-portrait" 
+                  alt="Angela Hughes - Luxury Travel Advisor"
+                  className="senianta-why-book-portrait"
                 />
               </div>
             </div>
@@ -567,10 +692,12 @@ const AntarcticaPage = () => {
               <Award className="senianta-auth-icon" />
               <div className="senianta-auth-title">
                 <h3>Planned and Curated by Angela Hughes</h3>
-                <p className="senianta-auth-role">CEO, Trips & Ships Luxury Travel</p>
+                <p className="senianta-auth-role">
+                  CEO, Trips & Ships Luxury Travel
+                </p>
               </div>
             </div>
-            
+
             <div className="senianta-auth-stats-grid">
               <div className="senianta-auth-stat-item">
                 <Clock className="senianta-stat-icon" />
@@ -591,7 +718,10 @@ const AntarcticaPage = () => {
             <div className="senianta-auth-recognition">
               <h4>Industry Recognition</h4>
               <ul className="senianta-recognition-list">
-                <li>Luxury Travel Influencer of the Year (2024), Travel Leaders Network</li>
+                <li>
+                  Luxury Travel Influencer of the Year (2024), Travel Leaders
+                  Network
+                </li>
                 <li>Most Influential Women in Travel (2026), TravelPulse</li>
                 <li>Featured across leading travel media</li>
               </ul>
@@ -606,15 +736,19 @@ const AntarcticaPage = () => {
           <h2>Frequently Asked Questions About Scenic vs Silversea</h2>
           <div className="senianta-faq-accordion">
             {faqData.map((faq, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`senianta-faq-item ${activeFaq === index ? "senianta-active" : ""}`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="senianta-faq-question">
                   <span>{faq.question}</span>
                   <span className="senianta-faq-icon">
-                    {activeFaq === index ? <Minus size={20} /> : <Plus size={20} />}
+                    {activeFaq === index ? (
+                      <Minus size={15} />
+                    ) : (
+                      <Plus size={15} />
+                    )}
                   </span>
                 </div>
                 <div className="senianta-faq-answer">
@@ -631,8 +765,14 @@ const AntarcticaPage = () => {
         <div className="senianta-final-overlay"></div>
         <div className="senianta-final-reach-inner">
           <h2>Choose the Right Antarctica Expedition</h2>
-          <p>The difference between Scenic and Silversea is not obvious on the surface. It is in how the experience is delivered.</p>
-          <p>Work with a team that understands both and can guide you to the right decision from the start.</p>
+          <p>
+            The difference between Scenic and Silversea is not obvious on the
+            surface. It is in how the experience is delivered.
+          </p>
+          <p>
+            Work with a team that understands both and can guide you to the
+            right decision from the start.
+          </p>
           <div className="senianta-hero-buttons senianta-hero-buttons--centered">
             <button className="senianta-primary senianta-primary--no-offset">
               Get Expert Recommendation

@@ -1977,7 +1977,7 @@
 }
 
 .senianta-faq-inner h2 {
-  font-size: 52px;
+  font-size: 32px;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #274472;
@@ -2011,9 +2011,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 20px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16.5px;
+  font-size: 18px;
     color: #2f4a6d;
     font-weight: 500;
   transition: color 0.3s ease;
@@ -2048,9 +2048,9 @@
 
 .senianta-faq-answer p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
-  color: #777777;
+  color: #274472cc;
   font-weight: 300;
   margin: 0;
   max-width: 90%;

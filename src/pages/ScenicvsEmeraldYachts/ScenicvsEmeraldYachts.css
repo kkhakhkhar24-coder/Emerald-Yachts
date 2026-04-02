@@ -1212,57 +1212,6 @@
 }
 
 
-/* FAQ SECTION WRAPPER */
-.Scenic_about_yachts_section {
-  background: #eef2f5;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.Scenic_about_yachts_inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* HEADING */
-.Scenic_about_yachts_inner h2 {
-  font-size: 48px;
-  color: #2f4a6d;
-  margin-bottom: 30px;
-  font-family: 'Playfair Display', serif;
-}
-
-.Scenic_about_yachts_inner h2::after {
-  content: "";
-  width: 60px;
-  height: 2px;
-  background: #2f4a6d;
-  display: block;
-  margin: 12px auto 0;
-}
-
-@media (max-width: 1024px) {
-  .Scenic_about_yachts_inner h2 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Scenic_about_yachts_section {
-    padding: 50px 15px;
-  }
-
-  .Scenic_about_yachts_inner h2 {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Scenic_about_yachts_inner h2 {
-    font-size: 24px;
-  }
-}
-
 /* SECTION 17 CTA */
 /* ================= SECTION 17 - CTA ================= */
 

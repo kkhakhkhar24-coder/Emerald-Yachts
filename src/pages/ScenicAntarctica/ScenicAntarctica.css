@@ -637,77 +637,130 @@
   }
 }
 
+/* ================= FAQ SECTION ================= */
 
-
-/* ================= ABOUT YACHTS SECTION ================= */
-.Scenic_about_yachts_section {
-  background: #f7f9fb;   /* ✅ matched premium contrast */
-  padding: 80px 20px;   /* ✅ consistent section spacing */
-  text-align: center;
+.Scenic-faq-section {
+  padding: 70px 20px 80px;
+  background: #eef2f5;
+  display: flex;
+  justify-content: center;
 }
 
-/* INNER */
-.Scenic_about_yachts_inner {
-  max-width: 800px;   /* ✅ SAME width */
-  margin: 0 auto;
+.Scenic-faq-inner {
+  max-width: 900px;
+  width: 100%;
 }
 
-/* H2 */
-.Scenic_about_yachts_inner h2 {
-  font-family: 'Playfair Display', serif;
+.Scenic-faq-inner h2 {
   font-size: 48px;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
-  color: #2f4a6d;
-  margin-bottom: 20px;
+  color: #274472;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.1;
 }
 
-/* UNDERLINE */
-.Scenic_about_yachts_inner h2::after {
+.Scenic-faq-inner h2::after {
   content: "";
-  width: 60px;
-  height: 2px;
-  background: #2f4a6d;
   display: block;
-  margin: 12px auto 0;
+  width: 100px;
+  height: 3px;
+  background-color: #274472;
+  margin: 30px auto 0;
 }
 
-/* TEXT */
-.Scenic_about_yachts_inner p {
-  font-size: 1.125rem;
-  line-height: 1.6;   /* 👈 consistent with previous fix */
+.Scenic-faq-accordion {
+  margin-top: 80px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.Scenic-faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Scenic-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #2f4a6d;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Optional hover */
+/* 
+.Scenic-faq-item:hover .Scenic-faq-question {
+  color: #c5a059;
+} 
+*/
+
+.Scenic-faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+}
+
+.Scenic-faq-item.Scenic-active .Scenic-faq-icon {
+  transform: none;
+}
+
+.Scenic-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.Scenic-faq-item.Scenic-active .Scenic-faq-answer {
+  max-height: 500px;
+  padding-bottom: 35px;
+}
+
+.Scenic-faq-answer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
   color: #274472cc;
-  margin-bottom: 10px;   /* 👈 SAME paragraph spacing control */
+  font-weight: 300;
+  margin: 0;
+  max-width: 90%;
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1024px) {
-  .Scenic_about_yachts_inner h2 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Scenic_about_yachts_section {
-    padding: 50px 15px;   /* ✅ SAME responsive spacing */
-  }
-
-  .Scenic_about_yachts_inner h2 {
-    font-size: 28px;
-  }
-  .Scenic_about_yachts_inner p{
+@media (max-width: 480px) {
+  .Scenic-faq-answer p {
     font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
-  .Scenic_about_yachts_inner h2 {
-    font-size: 24px;
+@media (max-width: 768px) {
+  .Scenic-faq-section {
+    padding: 50px 15px 60px;
   }
 
-  .Scenic_about_yachts_inner p {
-    font-size: 1rem;
+  .Scenic-faq-inner h2 {
+    font-size: 32px;
+  }
+
+  .Scenic-faq-question {
+    font-size: 16px;
+    padding: 20px 0;
   }
 }
+
+
+
+
+
+
+
+
 /* ================= EXPERT SECTION ================= */
 .Scenic_expert_section {
   background: white;
