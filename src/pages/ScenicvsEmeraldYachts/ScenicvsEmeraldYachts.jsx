@@ -110,7 +110,9 @@ function YachtsComparison() {
           <h1>Scenic vs Emerald Yachts</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
-          <p>Choosing the right luxury yacht experience</p>
+          <p className="Yachts_hero_p">
+            Choosing the right luxury yacht experience
+          </p>
 
           <p>
             For travelers considering a yacht cruise, the decision often comes

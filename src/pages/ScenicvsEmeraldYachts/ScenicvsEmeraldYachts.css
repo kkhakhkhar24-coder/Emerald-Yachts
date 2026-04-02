@@ -41,6 +41,10 @@
 .Yachts_hero_content p {
   margin-bottom: 12px;
 }
+.Yachts_hero_p{
+  font-size: 24px;
+  font-weight: 500;
+}
 
 /* ================= READ MORE ================= */
 .Yachts_readmore_wrapper {
