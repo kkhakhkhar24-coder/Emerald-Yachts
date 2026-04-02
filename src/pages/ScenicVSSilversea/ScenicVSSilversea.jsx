@@ -2,6 +2,10 @@ import React, { useState,useEffect } from "react";
 import { Snowflake, Anchor, Ship, AlertCircle, CheckCircle2, Globe, Key, LayoutGrid, ShieldCheck, Award, Clock, MapPin, Plus, Minus } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
+import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilver5.jpg";
+import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
+import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
+import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -63,11 +67,7 @@ const AntarcticaPage = () => {
   const [current, setCurrent] = useState(0);
     const [readMore, setReadMore] = useState(false);
   
-      const images = [
-    "https://ucb8cb38154eb16cefd84e161c3a.previews.dropboxusercontent.com/p/thumb/AC-F0cflvxbaUcdfDpDst1RcBi_il4XV5tb-NKPppnr3kOFyuN_vyyzVcweJxb_Le7Fdh154aNKB3puRrAj67SPT-YY7ys8I0MBsOkiSG4mVbKfcr_4SqqGsfpTOknEj5kmfbBTgsfkXno1stt1ZJcxzD0iafTp_kmHSXb5XXOOx2DPM43XB3Pq-DxhFxDCQmT0qHZpgBy3O_Q_kc5aNPxY0xaSod0aw6bID3CpbMpiunbIqvg7Hpp2XOEhw63EYB4KGbcdNaeQoty5nr9LueqMXS6J036_f5Yj8ifBTsV1XRsCLiQGTOH1yhUVPU9-pFDr-eSxv23gaokJ2uc-WvtZ6ESt_FjYeOHpJVUrZmcKNEQ/p.jpeg",
-    "https://uc869d76ccaa1edc1e4b2db13487.previews.dropboxusercontent.com/p/thumb/AC81Z3-R7e4hiFpy1kf8hDlKl1lyrzvQoOHCXDna6jgpt_VAxwW7e658pmnf8e9X0B_ppJPuf8qkIi_7gmeI_2BSYDrdktc5A3r5LJnaxeODc_dGetFgPRB--7ntUitCRaD-JiU0tLayqi8XE5In8N2EUh6dnuRv1xJnccUCMIEJttaP7cKHSEDTOr3dlz-JuKNEyMtLoF2COd7IetQVdRDiQLCD6RSLyIKzJ_rDfDtyRASP87Wz1gkvTCDEPk-ZMSga8lJa3XqpclUubiJTxpCG7T9DHQ9zB-3LXOOxSneTztbZ802xjJ8R3VMyW9gjovpwMx8oNHek3O6cUseZLZ3iGpsYCbwsVpCPFWWtMlrNjw/p.jpeg",
-    "https://uc1a0086802815dc470a9a156438.previews.dropboxusercontent.com/p/thumb/AC_2u1X69aLHqlgW2BHmw5bP27w5sygVdTEz6Va6SwrQCiFRFUxVUKs8hsfiNbYxYFDbD6AdLC97TYGzwnhJr-5kJkJVmCaFzYQedwGbKkMiZDD0q19uQDjDkSpyp9pZPZQ2xbDCCwPG_LRs7gUHD6dGGmv14CDRypiwcJvB61E6SxIBEP9UbxBkE592_xhvYXyz_e07t2qrZR6mpTVJUIzxZSMz40IquJ6itgVxDQQZH7tcXTUEDkVNvyZHR4PWqamsDwCT6INP1Kjq-96XjPdQF6d-gW6i56fowSyjJyXXtxjmdwP0DgchzSGI-fxVBhMnfBIbwmp1KsRhgYSUwQJyJ07klleNsQNjLj0Ytfj0e1sLKHjQneXuCgXJ_iw2pa3Z6hMfUi9enLzfkOOooESQ1ZN3NX8CYUwf5TbtB_x59A/p.jpeg"
-  ];
+      const images = [scenisilver1,scenisilver2,scenisilver3];
 
   
     useEffect(() => {
@@ -549,7 +549,7 @@ const AntarcticaPage = () => {
             <div className="senianta-why-book-right">
               <div className="senianta-why-book-image-wrapper">
                 <img 
-                  src="https://uc2638e406449897a43dc0796e47.previews.dropboxusercontent.com/p/thumb/AC9WqdDAK77RH-nIhvacxDMuup5aJ4-ukccY9qs-norLuRsB6hdOzfG1JzXXqPxMfrMzbD69yeVvHtcftYxN4e5pie5x1FQSHIInflizXm-b6E6mam9kNaQPRE5ccqfCPCuxSD3GrF41011186_eKERVq7qvwID2_dTJds87WC6SDWieWBKqAz5dnsN_tqh3f1K7wITfCnCzLpKm06k7W7ceUGuhyvWuyDLQsQ8rcPGvP7jCzoTBeVFRovjzQcwhsiBeDMUKTGRfHsvELE03CpsCkCd4qDzvtew_u3YTB48pYS6RT6pk-59BM8oWnXndIIhRkSA9JC4OtctfcMcIKKejSjL2k00Qvr5-fggANf_pmezqCn7BqjZgUq3tl4PMSMxNm4xbo4YEiTq4s16hL_Yo-6h1LUDq0r2SLRPkUGfmhw/p.jpeg" 
+                  src={scenisilver5}
                   alt="Angela Hughes - Luxury Travel Advisor" 
                   className="senianta-why-book-portrait" 
                 />
@@ -640,7 +640,6 @@ const AntarcticaPage = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };
