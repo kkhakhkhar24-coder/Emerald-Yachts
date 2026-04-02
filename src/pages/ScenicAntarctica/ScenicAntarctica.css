@@ -674,12 +674,12 @@
   display: flex;
   justify-content: center;
 }
-
+ 
 .Scenic-faq-inner {
   max-width: 900px;
   width: 100%;
 }
-
+ 
 .Scenic-faq-inner h2 {
   font-size: 48px;
   font-family: 'Playfair Display', serif;
@@ -690,7 +690,7 @@
   margin-bottom: 25px;
   line-height: 1.1;
 }
-
+ 
 .Scenic-faq-inner h2::after {
   content: "";
   display: block;
@@ -699,18 +699,18 @@
   background-color: #274472;
   margin: 30px auto 0;
 }
-
+ 
 .Scenic-faq-accordion {
   margin-top: 40px;
   border-top: 1px solid #e0e0e0;
 }
-
+ 
 .Scenic-faq-item {
   border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+ 
 .Scenic-faq-question {
   display: flex;
   justify-content: space-between;
@@ -722,43 +722,67 @@
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1024px) {
-  .Scenic_about_yachts_inner h2 {
-    font-size: 36px;
-  }
+ 
+/* Optional hover */
+/*
+.Scenic-faq-item:hover .Scenic-faq-question {
+  color: #c5a059;
 }
-
-@media (max-width: 768px) {
-  .Scenic_about_yachts_section {
-    padding: 50px 15px;   /* ✅ SAME responsive spacing */
-  }
-
-  .Scenic_about_yachts_inner h2 {
-    font-size: 28px;
-  }
+*/
+ 
+.Scenic-faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
 }
-
+ 
+.Scenic-faq-item.Scenic-active .Scenic-faq-icon {
+  transform: none;
+}
+ 
+.Scenic-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+ 
+.Scenic-faq-item.Scenic-active .Scenic-faq-answer {
+  max-height: 500px;
+  padding-bottom: 35px;
+}
+ 
+.Scenic-faq-answer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #274472cc;
+  font-weight: 300;
+  margin: 0;
+  max-width: 90%;
+}
+ 
 @media (max-width: 480px) {
   .Scenic-faq-answer p {
     font-size: 16px;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .Scenic-faq-section {
     padding: 50px 15px 60px;
   }
-
+ 
   .Scenic-faq-inner h2 {
     font-size: 32px;
   }
-
-  .Scenic_about_yachts_inner p {
-    font-size: 1rem;
+ 
+  .Scenic-faq-question {
+    font-size: 16px;
+    padding: 20px 0;
   }
 }
+ 
 
 
 

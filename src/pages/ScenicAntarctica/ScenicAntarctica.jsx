@@ -327,7 +327,7 @@ function ScenicAntarctica() {
 
           <div className="Scenic_right_experience_image">
             <img
-              src="https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg"
+              src={SecondPage3}
               alt="Scenic Antarctica Explorer"
             />
           </div>
