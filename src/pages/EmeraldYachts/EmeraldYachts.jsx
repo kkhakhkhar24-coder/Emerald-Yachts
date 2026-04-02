@@ -3,6 +3,12 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Award, Globe, Newspaper, Quote, Star, Check, X } from "lucide-react";
 import myImage from "../../assets/image.jpg";
 import "./EmeraldYachts.css"
+import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
+import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
+import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
+import HomePage2 from "../../assets/HomePage/HomePage2.jpg";
+
+
 
 const LuxuryPage = () => {
 
@@ -10,9 +16,9 @@ const LuxuryPage = () => {
   const [readMore, setReadMore] = useState(false);
 
    const images = [
-    "https://ucf43d17f880c225791baafbd8be.previews.dropboxusercontent.com/p/thumb/AC8IFSCD94lR_A8Yyi9aEyhFTGQ1wneHAkbkz0FDZ8ee0sLFYUFFXKOs1hFBm2frG6qlcmsMepeoUJF4o2O7bBcfl0BrNQwi4XrnHdo9Qkh5qZ64iXByFCUUlNoMyBo9hfbfZJZTIuo_lrEH3mYGoRenDn_iddFIo9Q_wKUyEUTs6uV_qRylVXSjGkcTekOs2FEdT66j7WYcrHVokCuvEndIb8rw2tdMEVD9GOkPBLhEer8hTY9HgLL0Htzl7BHsnYYwLIwVCVln6XRFkrh1e4r-I_D5RIPAC5CkN7TzZnIO5T3Xg5i40CP2Lv4u5HlW0XpZG-OZMRA466VCS24qX3Am2CEW7qGCLNXkj9s71k_QmQ/p.jpeg",
-    "https://uc611d4039c46e4a371ac9c8ed05.previews.dropboxusercontent.com/p/thumb/AC_W9KI5Ctzsi-TPM-VYcFNi1yQQbWPaUaEIqL376gKyQIYGXmVVCIh_iPbsqjmPN3YDxYFpPPzMR-k52a7ZNq4t9yjILEandp7lTNfCM5z0lEhjHsBOVtm9CFlR6zWeXFUJVZ9oIjAeStZTcPjc0RcgcIh-gcOsubhjF6MMdCnIVaOa1oJa_JKdlfv0ZWd4VgPcH1i3EPTGNWtupfpb3HitlWtDOQLz9C1G-9-r9LxkdGLJkLrMP3XmFBt2nJo39_uu3wyt-r5vSRnS1qA658o20HvSsKjxw5y4jQLFsCkelKq1pEPHM61hdhTYjjFDW3GfXQaxhqKCs_yYKJG3MMdKs4CTn4keVIulnikcaoV658hKnU9f88d6Cw0zCSVT85EvZg7xK6P80Bdx6vA8pWhCWcOMFUT5i-qqzCil5HIy3g/p.jpeg",
-    "https://uc351b119610200051f46f6577d6.previews.dropboxusercontent.com/p/thumb/AC9WQRP9jjhmAEv1BNzMf9o1rJap_6ukqiTqysXby1snm2g8YCyTYKWRGwt7yLQFw9HNylWE2n_Vq6Q_75tejn4kE3kwaUsK5OPaTI1O0HCSCPf77amzxDHXtGPSumQYYlGWDmpv1anXOiQyadRJtCh149a6LG00sTihHsaaaDUqBed03NXQkfefNiYi40NPnXJimO76DSk2RZ-HiOITqzBilvkSEidC7vO4VIbgMQih3Nm7suxXBYjSIqlWO4zdhJV1jaPJDBJqn44Y_sSGW2XpesXKbFFXUW94OvOhhEjZFnQRktfyIbrWlwN9oWyUaVLoAHBzWe6WTlkAImLb4cKrUn7q8IauhZuPVO8YhKVzwQ/p.jpeg"
+    HomePage1,
+    HomePage3,
+    HomePage4
   ];
 
  useEffect(() => {
@@ -155,7 +161,7 @@ const LuxuryPage = () => {
       {/* RIGHT IMAGE */}
       <div className="Emerald_experience_image">
         <img 
-          src="https://ucfcfe70c13e047d12a1a2540a65.previews.dropboxusercontent.com/p/thumb/AC8AsfIjkUT65Ui6gbKr3W7waEVlUC4kUn0jY9_cg67euWQIpa77QmlqSl8m6gOLNipnvit3-NDpwnAONwH4S_yiTWYZaOSZ_-SuHlm7iypojBfXB7rudJnQkoVkPXrU8J7aEAPiEAI7fH75I8c4KgSbg1S_UPOUNHpqoXWaARVvn5rOFgb_dHdOSfqmEdxFBgw9Fu0s6OP6VmX-cQOx-3fLe1IQUwR3MEa9oja132DNoFx_0fyM84J4TQQ_GvfyoXz_CC0cQ8TjgsI481-LPpfaGDAci0Q2Q0Eu12ynQXk6iO67CkvG-ILxAvau7IIUdhMtZ-dpHhQ9IAiPhd_PaczM0g4CLS4Ff1nANPYN3OLHIQ/p.jpeg" 
+          src={HomePage2} 
           alt="Yacht Experience"
         />
       </div>

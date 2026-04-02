@@ -104,7 +104,11 @@
 
 @media (max-width: 1024px) {
   .Scenic_hero_content h1 {
-    font-size: 42px;
+    font-size: 60px;
+  }
+
+  .Scenic_hero_content p {
+    font-size: 18px;
   }
 }
 
@@ -124,6 +128,10 @@
 @media (max-width: 480px) {
   .Scenic_hero_content h1 {
     font-size: 26px;
+  }
+
+  .Scenic_hero_content p {
+    font-size: 16px;
   }
 
   .Scenic_primary_btn,
@@ -189,7 +197,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_team_section h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_team_section p {
+    font-size: 18px;
   }
 }
 
@@ -282,7 +294,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_team_Hughes_section h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_team_Hughes_section p {
+    font-size: 18px;
   }
 }
 
@@ -309,7 +325,8 @@
   }
 
   .Scenic_team_Hughes_section p {
-    font-size: 1rem;
+    font-size: 16px;
+   
   }
 }
 
@@ -371,7 +388,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_team_Routes_section h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_team_Routes_section p {
+    font-size: 18px;
   }
 }
 
@@ -398,7 +419,7 @@
   }
 
   .Scenic_team_Routes_section p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -461,7 +482,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_team_Cruises_section h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_team_Cruises_section p {
+    font-size: 18px;
   }
 }
 
@@ -489,7 +514,7 @@
   }
 
   .Scenic_team_Cruises_section p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -538,7 +563,7 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_about_yachts_Experience_inner h2 {
-    font-size: 36px;
+    font-size: 48px;
   }
 }
 
@@ -561,7 +586,7 @@
   }
 
   .Scenic_about_yachts_Experience_inner p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -610,7 +635,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_about_yachts_Happens_inner h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_about_yachts_Happens_inner h2 {
+    font-size: 18px;
   }
 }
 
@@ -633,7 +662,7 @@
   }
 
   .Scenic_about_yachts_Happens_inner p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -682,7 +711,11 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_about_yachts_inner h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_about_yachts_inner p {
+    font-size: 18px;
   }
 }
 
@@ -694,6 +727,10 @@
   .Scenic_about_yachts_inner h2 {
     font-size: 28px;
   }
+
+  .Scenic_about_yachts_inner p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -702,7 +739,7 @@
   }
 
   .Scenic_about_yachts_inner p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 /* ================= EXPERT SECTION ================= */
@@ -810,7 +847,15 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .Scenic_expert_inner h2 {
-    font-size: 36px;
+    font-size: 48px;
+  }
+
+  .Scenic_expert_inner p {
+    font-size: 18px;
+  }
+
+  .Scenic_expert_card p{
+    text-align: left;
   }
 }
 
@@ -829,6 +874,10 @@
   .Scenic_expert_cards {
     grid-template-columns: 1fr;
   }
+
+  .Scenic_expert_card p{
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
@@ -837,7 +886,11 @@
   }
 
   .Scenic_expert_inner p {
-    font-size: 1rem;
+    font-size: 16px;
+  }
+
+  .Scenic_expert_card p{
+    text-align: left;
   }
 }
 
@@ -892,15 +945,17 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .Scenic_compare_inner h2 { font-size: 36px; }
+  .Scenic_compare_inner h2 { font-size: 48px; }
+  .Scenic_compare_inner p { font-size: 18px; }
 }
 @media (max-width: 768px) {
   .Scenic_compare_section { padding: 50px 15px; }
   .Scenic_compare_inner h2 { font-size: 28px; }
+  .Scenic_compare_inner p { font-size: 17px; }
 }
 @media (max-width: 480px) {
   .Scenic_compare_inner h2 { font-size: 24px; }
-  .Scenic_compare_inner p { font-size: 1rem; }
+  .Scenic_compare_inner p { font-size: 16px; }
 }
 
 
@@ -987,7 +1042,8 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .Scenic_right_experience_content h2 { font-size: 36px; }
+  .Scenic_right_experience_content h2 { font-size: 48px; }
+  .Scenic_right_experience_content p { font-size: 18px; }
   .Scenic_right_experience_inner { gap: 30px; padding: 0 20px; }
 }
 
@@ -1004,7 +1060,7 @@
 
 @media (max-width: 480px) {
   .Scenic_right_experience_content h2 { font-size: 24px; }
-  .Scenic_right_experience_content p, .Scenic_styled_list li { font-size: 1rem; }
+  .Scenic_right_experience_content p, .Scenic_styled_list li { font-size: 16px; }
 }
 
 
@@ -1047,15 +1103,18 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .Scenic_routes_inner h2 { font-size: 36px; }
+  .Scenic_routes_inner h2 { font-size: 48px; }
+  .Scenic_routes_inner p { font-size: 18px; }
+
 }
 @media (max-width: 768px) {
   .Scenic_routes_section { padding: 50px 15px; }
   .Scenic_routes_inner h2 { font-size: 28px; }
+  .Scenic_routes_inner p { font-size: 17px; }
 }
 @media (max-width: 480px) {
   .Scenic_routes_inner h2 { font-size: 24px; }
-  .Scenic_routes_inner p { font-size: 1rem; }
+  .Scenic_routes_inner p { font-size: 16px; }
 }
 
 
@@ -1138,19 +1197,22 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .Scenic_pricing_investment_inner h2 { font-size: 36px; }
+  .Scenic_pricing_investment_inner h2 { font-size: 48px; }
+  .Scenic_pricing_investment_inner h2 { font-size: 18px; }
   .Scenic_investment_factors { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
   .Scenic_pricing_investment_section { padding: 60px 15px; }
   .Scenic_pricing_investment_inner h2 { font-size: 28px; }
+  .Scenic_pricing_investment_inner p { font-size: 17px; }
   .Scenic_investment_factors { gap: 16px; }
   .Scenic_pricing_lead{font-size: 17px;}
 }
 
 @media (max-width: 480px) {
   .Scenic_pricing_investment_inner h2 { font-size: 24px; }
+  .Scenic_pricing_investment_inner h2 { font-size: 16px; }
   .Scenic_investment_factors { grid-template-columns: 1fr; }
   .Scenic_factor_card { padding: 20px 15px; }
 }
@@ -1410,7 +1472,8 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .Scenic_section_header h2 { font-size: 36px; }
+  .Scenic_section_header h2 { font-size: 48px; }
+  .Scenic_section_header p { font-size: 18px; }
   .Scenic_season_cards { gap: 16px; }
   .Scenic_season_card { padding: 30px 20px; }
 }
@@ -1418,6 +1481,7 @@
 @media (max-width: 768px) {
   .Scenic_season_section { padding: 60px 15px; }
   .Scenic_section_header h2 { font-size: 28px; }
+  .Scenic_section_header p { font-size: 17px; }
   .Scenic_season_cards { grid-template-columns: 1fr; }
   .Scenic_season_card { padding: 25px 20px; }
   .Scenic_season_footer { flex-direction: column; text-align: center; border-radius: 12px; }
@@ -1481,18 +1545,19 @@
 }
 
 @media (max-width: 1024px) {
-  .Scenic_cta_inner h2 { font-size: 36px; }
+  .Scenic_cta_inner h2 { font-size: 48px; }
 }
+.Scenic_section_header p { font-size: 18px; }
 
 @media (max-width: 768px) {
   .Scenic_cta_section { padding: 70px 15px; }
-  .Scenic_cta_inner h2 { font-size: 32px; }
-  .Scenic_cta_inner p { font-size: 1.1rem; }
+  .Scenic_cta_inner h2 { font-size: 28px; }
+  .Scenic_cta_inner p { font-size: 17px; }
 }
 
 @media (max-width: 480px) {
-  .Scenic_cta_inner h2 { font-size: 26px; }
-  .Scenic_cta_inner p { font-size: 1rem; }
+  .Scenic_cta_inner h2 { font-size: 24px; }
+  .Scenic_cta_inner p { font-size: 16px; }
 }
 
 /* =========================================================
@@ -1573,6 +1638,18 @@
   .Scenic_curated_card { padding: 16px; }
   .Scenic_curated_badges { grid-template-columns: 1fr; }
   .Scenic_curated_card h3 { font-size: 18px; }
+}
+
+.Scenic_curated_card h3::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background:  #2f4a6d;
+  display: block;
+  margin: 14px auto 0;
+  margin-top: 12px;
+  
+ 
 }
 
 .Scenic_margin_top {
@@ -1687,13 +1764,21 @@
   }
 
   .Scenic_insight_content h2 {
-    font-size: 34px;
+    font-size: 48px;
+  }
+
+  .Scenic_insight_content p {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .Scenic_insight_content h2 {
     font-size: 28px;
+  }
+
+  .Scenic_insight_content p {
+    font-size: 17px;
   }
 }
 
@@ -1703,7 +1788,7 @@
   }
   
   .Scenic_expert_sub p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 

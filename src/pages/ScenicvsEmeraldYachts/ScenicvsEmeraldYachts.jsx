@@ -3,6 +3,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from 'react';
 import "./ScenicvsEmeraldYachts.css";
 import myImage from "../../assets/image.jpg";
+import FourthPage1 from "../../assets/FourthPage/FourthPage1.jpg";
+import FourthPage2 from "../../assets/FourthPage/FourthPage2.jpeg";
+import FourthPage3 from "../../assets/FourthPage/FourthPage3.jpg";
+
 
 function YachtsComparison() {
 
@@ -12,9 +16,11 @@ const [current, setCurrent] = useState(0);
   const [activeFAQ, setActiveFAQ] = useState(null);
 
    const images = [
-    "https://uc3749ade80d5167e36d59065973.previews.dropboxusercontent.com/p/thumb/AC9HnsGsIGTaE7EG2avMZPgNrHYwOAIANUNZVnVVP-4cgV52RXLofVqsHLQb40rsqWq-1TKPk050jfyecj9ax4CyPMuV6qpKOqqU0abl7uG6YLxcRmBY8gGytcS-sGFu_sJq0xcG25xoWJbiB1aND2WAJtmWU44VKQzP_rU9XK2vt01LHk93t2IsZux0O-kJtpqGDYeCSSrBCfgjFfHvGbrk3NxVm3UnElVZ-LmhaOMFALVdSSFU0KS1K0z2dVfqV_YU52jye5kahDuk1RjSnlLSPPE6GMFBJcQEnKHS1vx9vrO394-uskGdIFKJKNNSxfAi_lCo4GVVZGEpbuaClns14dgMHam4pnphNWop18HtYA/p.jpeg",
-    "https://ucdcb92de13ccf64d4b69f2d64ec.previews.dropboxusercontent.com/p/thumb/AC_L9ize8-YmCJ5XclOEGJBvHd-IjIwEfnrMEhLdelUu5ikbrE8X1oqv8IpRvL_EJylGbC9G9SnDdWHPuFe5RhHxEoOnyb9SkZIRC6vLs4dSN0OroDbSG-BxkYW3sII9TnM6JmCiOSMiKwhKSUxSnW-jEbV0JygVSm2YJExHgjedr6tLJ1PBysOAxsnwgJ2FZynHC_nDx40eTvgktce9FHRpaJfMtE_aprbUtugYPzpj9lk1N68_QnOIIXdw6YnGjoNNSJqfEnwQvMgYWlIR7xq3y1vczK8RGF_Ow4ZMvftRmhRMOS35ZBPWwB9HL46Cy2jg5UYoo2sfWoiDpNHDHhn1fZHWKa3FRSSoLx7ZVXq8lw/p.jpeg",
-    "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC_PM9HJCQsWMPxUMg-dgOakE6fvdBxqc-Z_yWgJDccRWr5QZtFk0chrkMKeuGMzaBddOMH5fBgNVNajQxeAXE-b82jtGdoJ2nzXzYv4RCot64DPdJaeWPHXDjXkiMbY25cA5GwRL5zzZ1O8jaS3JJGu5JvpRDyQ4X2lFL1fx6EGDP2sEooa5OmiPrKV6BgPGwgZLw46lPJk6HEft8FL3uWVq9tWmhTXNwUAGEnVol4zNE7UVG5M0nZ7R1FM0rRn_OBTG77TYcg1fcag7oOg7s9YzLwEzGf8ik_9vRT2l2GJeDcy4z8TQeoTer0Jhy-ngBAyOmVOW8aks786CYfnPq2fwhb93vXDpKcTCKOOsWQ-6p6xW4JmTgWtsKiU17hHJIPRdhtKshbzPR7UzFO4Ly-FegyjjuCMASHurPe0ebGQgA/p.jpeg"
+    // "https://uc3749ade80d5167e36d59065973.previews.dropboxusercontent.com/p/thumb/AC9HnsGsIGTaE7EG2avMZPgNrHYwOAIANUNZVnVVP-4cgV52RXLofVqsHLQb40rsqWq-1TKPk050jfyecj9ax4CyPMuV6qpKOqqU0abl7uG6YLxcRmBY8gGytcS-sGFu_sJq0xcG25xoWJbiB1aND2WAJtmWU44VKQzP_rU9XK2vt01LHk93t2IsZux0O-kJtpqGDYeCSSrBCfgjFfHvGbrk3NxVm3UnElVZ-LmhaOMFALVdSSFU0KS1K0z2dVfqV_YU52jye5kahDuk1RjSnlLSPPE6GMFBJcQEnKHS1vx9vrO394-uskGdIFKJKNNSxfAi_lCo4GVVZGEpbuaClns14dgMHam4pnphNWop18HtYA/p.jpeg",
+    // "https://ucdcb92de13ccf64d4b69f2d64ec.previews.dropboxusercontent.com/p/thumb/AC_L9ize8-YmCJ5XclOEGJBvHd-IjIwEfnrMEhLdelUu5ikbrE8X1oqv8IpRvL_EJylGbC9G9SnDdWHPuFe5RhHxEoOnyb9SkZIRC6vLs4dSN0OroDbSG-BxkYW3sII9TnM6JmCiOSMiKwhKSUxSnW-jEbV0JygVSm2YJExHgjedr6tLJ1PBysOAxsnwgJ2FZynHC_nDx40eTvgktce9FHRpaJfMtE_aprbUtugYPzpj9lk1N68_QnOIIXdw6YnGjoNNSJqfEnwQvMgYWlIR7xq3y1vczK8RGF_Ow4ZMvftRmhRMOS35ZBPWwB9HL46Cy2jg5UYoo2sfWoiDpNHDHhn1fZHWKa3FRSSoLx7ZVXq8lw/p.jpeg",
+    // "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC_PM9HJCQsWMPxUMg-dgOakE6fvdBxqc-Z_yWgJDccRWr5QZtFk0chrkMKeuGMzaBddOMH5fBgNVNajQxeAXE-b82jtGdoJ2nzXzYv4RCot64DPdJaeWPHXDjXkiMbY25cA5GwRL5zzZ1O8jaS3JJGu5JvpRDyQ4X2lFL1fx6EGDP2sEooa5OmiPrKV6BgPGwgZLw46lPJk6HEft8FL3uWVq9tWmhTXNwUAGEnVol4zNE7UVG5M0nZ7R1FM0rRn_OBTG77TYcg1fcag7oOg7s9YzLwEzGf8ik_9vRT2l2GJeDcy4z8TQeoTer0Jhy-ngBAyOmVOW8aks786CYfnPq2fwhb93vXDpKcTCKOOsWQ-6p6xW4JmTgWtsKiU17hHJIPRdhtKshbzPR7UzFO4Ly-FegyjjuCMASHurPe0ebGQgA/p.jpeg"
+
+    FourthPage2,FourthPage1,FourthPage3
   ];
 
 
