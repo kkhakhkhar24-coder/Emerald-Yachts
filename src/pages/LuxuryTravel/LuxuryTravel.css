@@ -49,15 +49,15 @@
 
     0%,
     100% {
-        background-image: url('https://uce7c1665ac6101580e1ecb894b8.previews.dropboxusercontent.com/p/thumb/AC_B3lG4DVlbT7wkCqdE2ULZwTqpYRCyK-WKyLrEL46L8ttSOtnV3PUPt5dR-w489W_8bF1R7ZoV1jtk5fZhKw8ngI2QdhBSUDEPfwTdu9V5H20-wFIBC4lhQfq-1kuSsu-or6AdZYdlgYsF8OvKAKjnnMYhemuSyJbyA3qD_zHkzJO6r49K5IxZusXgUuqp5O9HXCp3Ww4_QcfotdTjaJwPdpKawiwu74OKI9fK1MvBKHEo8xTt2T_IeQ5hpHzOdG-gzeutwH1tzoryb9GWnYfdgc9i_VP-Lr8pBOjMZovKnJ_vyVyJug5GH8sIeKYst2QlhGbiCjCWVgkxFPIWTByTzDys2_9612l5udnUUV293A/p.jpeg');
+        background-image: url(../../assets/LuxuryTravel/Hero1.jpeg);
     }
 
     33% {
-        background-image: url('https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC9KN_x7V1KfESsuwlb8JpE7P2wtFjyc5AmJaS6MhqODZWO8tooE_5q9wILI96jiL4uFU5mttifkAA6nDZG_GSdoAWkUO1TEfJ9b8qYrcmpnPrXRK48QZMmm7n8lvg9b0cnKVXZ5Cql-WqM4zcxxE6Vb8_dgjhYiOOQwHO4WigrgxytUhy7SX1mRe1jUklCIe2qDAMBspcke07TowLp9ak8R4Y-OsdRGnxxrg2l1zxLtzDafSSEJotgi2oiVc0f7aV7Ysqe_9W-5khHUWTbEkLYYG9wAZbxe2MHQZI3QFMvX__6S4rBLhT_WWgBxalpNPwjgJ1vqwkG7iQYzUb1_BbfVLLUwl3GOHKuoC-O8zMv51g/p.png');
+        background-image: url(../../assets/LuxuryTravel/Hero2.png);
     }
 
     66% {
-        background-image: url('https://uc62d07f7d67bf803f4f7c15e420.previews.dropboxusercontent.com/p/thumb/AC8zxNaARq4dDLN7vwOiez8bGwQDIMS4Fx2j4Qm6-RHvusgVPzJhhwINMit7OERzFD8fsk32IG0JlETIqylvpxJfTtpL-8Uk6JHdz3QueXcelIDE8pIUlUdJk1HFEgq9SBCkA1AeuK_zN6bqrnhbrjgjZw0DL2HYPFE1nQ34lmbu45C51Wvgd0PW4oC2HWBQj6JxeeEWIL0ppB092uMfbGbOMN6NrT_dCIl__uM2P5pOQwyDhHb2fQvuLAK3psFhLlsQwRhrDM9bWsrnV7KEEcT3gLcHXDcJY06Ieo-4J8y0IgcuW-p-QYDJsxct8Q9D8kxrTzvYcVfBpuqfflFN73jP27t23g7UwLVKO36bSV8jqA/p.jpeg');
+        background-image: url(../../assets/LuxuryTravel/Hero3.jpeg);
     }
 }
 
@@ -110,7 +110,7 @@
     color: #ffffff;
     margin-bottom: 20px;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-    font-size: 48px !important;
+    font-size: 60px !important;
 }
 
 .lux-hero-lead {
@@ -122,7 +122,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 .lux-hero-details {
@@ -230,21 +230,59 @@
 
 @media (max-width: 900px) {
     .lux-h1 {
-        font-size: 48px !important;
+        font-size: 42px !important;
+    }
+
+    .lux-hero-lead {
+        font-size: 17px !important;
+    }
+    
+    .lux-hero-btns {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+    
+    .lux-hero-content {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .lux-hero {
-        padding: 120px 20px 80px;
+        padding: 100px 20px 60px;
     }
 
     .lux-h1 {
-        font-size: 34px !important;
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+    
+    .lux-hero-lead {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
     }
 
     .lux-btn-primary {
         width: 100%;
+        padding: 16px 30px !important;
+        font-size: 11px !important;
+    }
+    
+    .lux-hero-note {
+        font-size: 15px !important;
     }
 }
 
@@ -372,16 +410,17 @@
 /* --- Right Side: Content --- */
 .lux-lead-text {
     font-family: 'Playfair Display', serif !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
     line-height: 1.5 !important;
     color: #274472;
     font-weight: 500 !important;
     margin-bottom: 40px;
 }
 
-.lux-section-p {
+.lux-section-p,
+h3 {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
+    font-size: 18px !important;
     line-height: 1.8 !important;
     color: #274472;
     font-weight: 300 !important;
@@ -400,6 +439,7 @@
     font-style: italic !important;
     font-weight: 400 !important;
     color: #274472;
+    font-size: 18px !important;
 }
 
 /* --- Responsive Adjustments --- */
@@ -483,6 +523,10 @@
         display: inline-block;
         text-align: left;
     }
+    
+    .lux-expert-avatar-wrap {
+        margin: 0 auto 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -490,12 +534,55 @@
         padding: 80px 20px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
     .lux-h2 {
-        font-size: 32px !important;
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
     }
 
     .lux-lead-text {
-        font-size: 21px !important;
+        font-size: 20px !important;
+    }
+    
+    .lux-inner {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
+    .lux-lead-text {
+        font-size: 17px !important;
+    }
+
+    .lux-editorial-box-blue .lux-section-p {
+        font-size: 16px !important;
+    }
+    
+    .lux-expertise-redesign {
+        padding: 60px 15px;
+    }
+    
+    .lux-editorial-box-blue {
+        padding: 25px 20px;
     }
 }
 
@@ -545,7 +632,7 @@
 .lux-h2.lux-left-bar {
     text-align: left !important;
     color: #274472 !important;
-    font-size: 42px !important;
+    font-size: 48px !important;
     margin-bottom: 40px !important;
 }
 
@@ -628,7 +715,7 @@
 
 .lux-section-p-clean {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
+    font-size: 18px !important;
     line-height: 1.8 !important;
     color: #274472;
     font-weight: 300 !important;
@@ -704,7 +791,7 @@
 
     .lux-credentials-box-navy {
         margin: 0 auto;
-        max-width: 450px;
+        max-width: 500px;
     }
 
     .lux-expert-avatar-wrap {
@@ -729,15 +816,74 @@
     .lux-section-p-clean {
         text-align: center;
     }
+    
+    .lux-img-fluid {
+        height: 400px;
+    }
 }
 
 @media (max-width: 768px) {
     .lux-img-fluid {
-        height: 300px;
+        height: 320px;
+    }
+
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
     }
 
     .lux-expert-highlight-box-white {
         padding: 30px 20px;
+    }
+    
+    .lux-expert-redesign {
+        padding: 80px 20px;
+    }
+    
+    .lux-inner.lux-wide {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+
+    .lux-sticky-lead-text {
+        font-size: 16px !important;
+    }
+
+    .lux-expert-highlight-box-white .lux-section-p-clean {
+        font-size: 16px !important;
+    }
+
+    .lux-credentials-list-navy li {
+        font-size: 16px !important;
+    }
+    
+    .lux-img-fluid {
+        height: 250px;
+    }
+    
+    .lux-expert-redesign {
+        padding: 60px 15px;
     }
 }
 
@@ -749,6 +895,33 @@
     /* New Global Standard */
     display: flex;
     justify-content: center;
+}
+
+/* Global Inner Padding for Mobile */
+@media (max-width: 768px) {
+    .lux-inner,
+    .lux-inner-full,
+    .lux-inner.lux-wide,
+    .lux-inner.lux-narrow,
+    .lux-inner.lux-narrow-faq {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-inner,
+    .lux-inner-full,
+    .lux-inner.lux-wide,
+    .lux-inner.lux-narrow,
+    .lux-inner.lux-narrow-faq {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .lux-section {
+        padding: 80px 15px;
+    }
 }
 
 /* ========================================
@@ -873,6 +1046,10 @@
     .lux-suitability-box {
         padding: 40px 30px;
     }
+    
+    .lux-inner-full {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -887,14 +1064,52 @@
         /* Reduced padding for mobile */
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
+    }
+
     .lux-suitability-header-centered .lux-h2 {
         font-size: 30px !important;
+    }
+    
+    .lux-suitability-box {
+        padding: 35px 25px;
     }
 }
 
 @media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+
     .lux-suitability-header-centered .lux-h2 {
         font-size: 26px !important;
+    }
+    
+    .lux-suitability-box {
+        padding: 30px 20px;
+    }
+    
+    .lux-box-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
 
@@ -1009,6 +1224,10 @@
     .lux-selection-card {
         padding: 40px 30px;
     }
+    
+    .lux-inner.lux-narrow {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1021,19 +1240,55 @@
         padding: 35px 25px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
+    }
+
     .lux-selection-card .lux-h3 {
-        font-size: 22px !important;
+        font-size: 24px !important;
         margin-bottom: 25px;
     }
 
     .lux-selection-list li {
-        font-size: 14px !important;
+        font-size: 16px !important;
+    }
+    
+    .lux-section {
+        padding: 80px 20px;
     }
 }
 
 @media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+
     .lux-selection-header .lux-h2 {
-        font-size: 30px !important;
+        font-size: 26px !important;
+    }
+    
+    .lux-selection-card {
+        padding: 30px 20px;
+    }
+    
+    .lux-selection-list li {
+        font-size: 15px !important;
     }
 }
 
@@ -1101,7 +1356,7 @@
 
 .lux-about-content .lux-section-p {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
+    font-size: 18px !important;
     line-height: 1.8 !important;
     color: rgba(39, 68, 114, 0.8) !important;
     /* Navy Hash with opacity */
@@ -1121,23 +1376,61 @@
         padding: 80px 20px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-about-header .lux-h2 {
-        font-size: 32px !important;
+        font-size: 30px !important;
     }
 
     .lux-about-lead {
-        font-size: 18px !important;
+        font-size: 19px !important;
         line-height: 1.5 !important;
     }
 
     .lux-about-content .lux-section-p {
-        font-size: 16px !important;
+        font-size: 17px !important;
+    }
+    
+    .lux-inner.lux-narrow {
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .lux-about-header .lux-h2 {
+    .lux-h1 {
         font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
+    .lux-about-header .lux-h2 {
+        font-size: 26px !important;
+    }
+    
+    .lux-about-lead {
+        font-size: 17px !important;
+    }
+    
+    .lux-about-content .lux-section-p {
+        font-size: 16px !important;
     }
 }
 
@@ -1186,7 +1479,7 @@
 .lux-h2.lux-left-bar {
     text-align: left !important;
     color: #274472 !important;
-    font-size: 42px !important;
+    font-size: 48px !important;
     margin-bottom: 0 !important;
 }
 
@@ -1288,6 +1581,10 @@
     .lux-planning-grid-redesign {
         margin-top: 20px;
     }
+    
+    .lux-inner.lux-wide {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1295,8 +1592,21 @@
         padding: 80px 20px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-h2.lux-left-bar {
-        font-size: 32px !important;
+        font-size: 30px !important;
         text-align: center !important;
     }
 
@@ -1310,6 +1620,41 @@
 
     .lux-planning-card-navy {
         padding: 25px;
+    }
+    
+    .lux-planning-redesign {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
+    .lux-h2.lux-left-bar {
+        font-size: 26px !important;
+    }
+
+    .lux-planning-grid-redesign {
+        grid-template-columns: 1fr;
+    }
+    
+    .lux-planning-card-navy {
+        padding: 20px;
+    }
+    
+    .lux-planning-text-navy {
+        font-size: 14px !important;
     }
 }
 
@@ -1367,7 +1712,7 @@
 
 .lux-h2-white {
     font-family: 'Playfair Display', serif !important;
-    font-size: 42px !important;
+    font-size: 48px !important;
     font-weight: 500 !important;
     color: #ffffff;
     line-height: 1.1 !important;
@@ -1495,7 +1840,12 @@
     }
 
     .lux-featured-img {
-        height: 400px;
+        height: 450px;
+        object-fit: cover;
+    }
+    
+    .lux-inner {
+        padding: 0 20px;
     }
 }
 
@@ -1505,8 +1855,21 @@
         border-radius: 0;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-h2-white {
-        font-size: 32px !important;
+        font-size: 30px !important;
     }
 
     .lux-method-step {
@@ -1534,6 +1897,49 @@
 
     .lux-step-num {
         margin: 0 auto;
+    }
+    
+    .lux-featured-img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
+    .lux-h2-white {
+        font-size: 26px !important;
+    }
+
+    .lux-method-hero-intro {
+        font-size: 16px !important;
+    }
+
+    .lux-h3-sm {
+        font-size: 22px !important;
+    }
+
+    .lux-method-step .lux-section-p {
+        font-size: 16px !important;
+    }
+    
+    .lux-featured-img {
+        height: 280px;
+    }
+    
+    .lux-method-hero {
+        padding: 60px 20px;
     }
 }
 
@@ -1583,7 +1989,7 @@
 .lux-h2.lux-left-bar {
     text-align: left !important;
     color: #274472 !important;
-    font-size: 42px !important;
+    font-size: 48px !important;
     margin-bottom: 40px !important;
 }
 
@@ -1721,14 +2127,49 @@
         text-align: center;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-h2.lux-left-bar::after {
         margin: 20px auto 0 !important;
     }
 
     /* Match H2 font size with other sections */
     .lux-h2.lux-left-bar {
-        font-size: 32px !important;
-        text-align: center !important;
+        font-size: 30px !important;
+    }
+    
+    .lux-inner.lux-wide {
+        padding: 0 15px;
+    }
+    
+    .lux-matrix-container {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
     }
 
     .lux-matrix-container {
@@ -1739,12 +2180,30 @@
     }
 
     .lux-h3-matrix {
-        font-size: 20px !important;
+        font-size: 22px !important;
         margin-bottom: 30px;
     }
 
     .lux-img-fluid {
-        height: 280px;
+        height: 300px;
+    }
+    
+    .lux-matrix-redesign {
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 26px !important;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
     }
 
     .lux-comparison-table thead {
@@ -1965,9 +2424,41 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .lux-h1 {
+        font-size: 32px !important;
+    }
+
+    .lux-h2 {
+        font-size: 28px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-summary-header .lux-h2 {
         font-size: 28px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 26px !important;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
+    .lux-summary-header .lux-h2 {
+        font-size: 24px !important;
     }
 
     .lux-summary-table td:not(.lux-td-brand) {
@@ -2120,6 +2611,10 @@
         gap: 30px;
         padding: 0 20px;
     }
+    
+    .lux-inner {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2132,12 +2627,25 @@
         padding: 40px 25px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
+    }
+
     .lux-adv-intro {
-        font-size: 16px !important;
+        font-size: 17px !important;
     }
 
     .lux-adv-header .lux-h2 {
-        font-size: 28px !important;
+        font-size: 30px !important;
     }
 
     /* Center align advisor advantage section on mobile */
@@ -2157,8 +2665,29 @@
 }
 
 @media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
     .lux-comp-title {
-        font-size: 21px !important;
+        font-size: 22px !important;
+    }
+    
+    .lux-comp-panel {
+        padding: 35px 20px;
+    }
+    
+    .lux-adv-intro {
+        font-size: 16px !important;
     }
 }
 
@@ -2254,7 +2783,7 @@
 .lux-a-inner {
     padding: 14px 0 0 0;
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
+    font-size: 18px !important;
     line-height: 1.7 !important;
     color: #274472cc;
     font-weight: 300 !important;
@@ -2283,7 +2812,11 @@
 .lux-q-text {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
+<<<<<<< Updated upstream
     font-weight: 500 !important;
+=======
+    font-weight: 600 !important;
+>>>>>>> Stashed changes
     color: #274472;
     /* Navy Hash */
     line-height: 1.4 !important;
@@ -2342,13 +2875,25 @@
         font-size: 30px !important;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
+    }
+
     .lux-q-text {
         width: fit-content;
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
 
     .lux-a-inner .lux-section-p {
-        font-size: 15px !important;
+        font-size: 17px !important;
     }
 
     .lux-faq-question {
@@ -2363,9 +2908,25 @@
     .lux-a-inner {
         padding: 14px 0 0 0;
     }
+    
+    .lux-inner.lux-narrow-faq {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+
     .lux-faq-header .lux-h2 {
         font-size: 26px !important;
     }
@@ -2378,6 +2939,18 @@
     .lux-faq-icon.emerald-faq-icon {
         font-size: 20px;
     }
+
+    .lux-q-text {
+        font-size: 15px !important;
+    }
+
+    .lux-a-inner {
+        font-size: 16px !important;
+    }
+    
+    .lux-inner.lux-narrow-faq {
+        padding: 0 10px;
+    }
 }
 
 /* ========================================
@@ -2389,7 +2962,7 @@
     position: relative;
     padding: 140px 40px;
     /* Suggestion: Epic shot of the Scenic Eclipse at sea */
-    background: url('https://uc21cdf6bc0099a001c5e4c09b91.previews.dropboxusercontent.com/p/thumb/AC-qhaNFzf-MTezCRptsqUASG6ZdQpHw6yOpv2-Eqk9riv4woEWc4pHYBVBN5ojkeUG-Sz_NqwqfQ38UJv-aOmSRl9MOpKt-_ZS8rzZcRZbHfVoUzqDFPLD3Tr3endAAO_sLh1Uh0CNc1mqYAwBK_fzK3DhsSXTxsRwN_aJE-okgtDBle3pixmlWAqbLpy4zF8sZYu4KSzzjkdtSiX8ZxbLEs58oW2Z8cd_g6sushW4FrrRGdtCLjB7lEITau0VQM_X9SnuiVfi-0wt4oVZp8a-B1zNhKAdhCpiIWxxgsbgjp_ZrreX6jMFK-pw7ITYXomS-osifkqC3jmGsQUYZkzRfFx2MDoc9qpSd9MkmXtdKYA/p.png') center/cover no-repeat;
+    background: url(../../assets/LuxuryTravel/section11_bg.png) center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2416,7 +2989,7 @@
 /* Specific white H2 for the dark background */
 .lux-h2-white {
     font-family: 'Playfair Display', serif !important;
-    font-size: 52px !important;
+    font-size: 60px !important;
     font-weight: 500 !important;
     color: #ffffff;
     line-height: 1.1 !important;
@@ -2480,11 +3053,23 @@
     }
 
     .lux-h2-white {
-        font-size: 40px !important;
+        font-size: 45px !important;
     }
 }
 
 @media (max-width: 768px) {
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
+    }
+
     .lux-h2-white {
         font-size: 32px !important;
     }
@@ -2494,20 +3079,46 @@
     }
 
     .lux-cta-btn-primary {
-        padding: 18px 30px;
+        padding: 20px 35px;
         width: 100%;
         /* Full width on mobile for easier tapping */
         line-height: 1.4 !important;
+        font-size: 12px !important;
+    }
+    
+    .lux-final-cta-section {
+        padding: 80px 20px;
     }
 }
 
 @media (max-width: 480px) {
     .lux-final-cta-section {
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
 
     .lux-h2-white {
         font-size: 28px !important;
+    }
+
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+    
+    .lux-cta-paragraph {
+        font-size: 16px !important;
+    }
+    
+    .lux-cta-btn-primary {
+        padding: 18px 25px;
+        font-size: 11px !important;
     }
 }
 
@@ -2603,12 +3214,24 @@
         padding: 60px 20px;
     }
 
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p {
+        font-size: 17px !important;
+    }
+
     .lux-attr-h2 {
-        font-size: 21px !important;
+        font-size: 30px !important;
     }
 
     .lux-attr-item {
-        font-size: 14px !important;
+        font-size: 15px !important;
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -2618,6 +3241,40 @@
         font-size: 11px !important;
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
+    }
+    
+    .lux-inner.lux-narrow {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p {
+        font-size: 16px !important;
+    }
+
+    .lux-attr-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-attr-item {
+        font-size: 16px !important;
+    }
+
+    .lux-attr-content {
+        font-size: 16px !important;
+    }
+    
+    .lux-attribution-section {
+        padding: 50px 15px;
     }
 }
 
@@ -2669,11 +3326,28 @@
     .lux-seo-image {
         height: 450px;
     }
+    
+    .lux-inner {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 768px) {
     .lux-seo-figure {
         margin: 35px 0;
+    }
+
+    .lux-h1 {
+        font-size: 36px !important;
+    }
+
+    .lux-h2 {
+        font-size: 30px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 17px !important;
     }
 
     .lux-seo-image {
@@ -2682,12 +3356,34 @@
 
     .lux-seo-caption {
         padding: 16px 22px;
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
 }
 
 @media (max-width: 480px) {
+    .lux-h1 {
+        font-size: 28px !important;
+    }
+
+    .lux-h2 {
+        font-size: 26px !important;
+    }
+
+    .lux-section-p,
+    h3 {
+        font-size: 16px !important;
+    }
+
     .lux-seo-image {
-        height: 300px;
+        height: 280px;
+    }
+    
+    .lux-seo-figure {
+        margin: 25px 0;
+    }
+    
+    .lux-seo-caption {
+        padding: 14px 18px;
+        font-size: 13px !important;
     }
 }

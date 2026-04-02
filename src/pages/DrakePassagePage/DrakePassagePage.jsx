@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../../pages/DrakePassagePage/DrakePassagePage.css";
@@ -16,6 +17,47 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+=======
+import { useState, useEffect, useRef } from "react"
+import Navbar from "../../components/Navbar/Navbar"
+import '../../pages/DrakePassagePage/DrakePassagePage.css'
+import ProfilePicture from '../../assets/image.jpg'
+import { Anchor, Ship, Compass, ChevronDown, Sparkles, Check, AlertCircle, Anchor as AnchorIcon, Ship as ShipIcon, Compass as CompassIcon, Plus, Minus } from 'lucide-react'
+
+// Import all Drake Passage images from assets folder
+import section1_Image from '../../assets/DrakePassage/section1_image.png'
+import section2_Image1 from '../../assets/DrakePassage/section2_image1.png'
+import section2_Image2 from '../../assets/DrakePassage/section2_image2.png'
+import section3_Image1 from '../../assets/DrakePassage/section3_image1.png'
+import section3_Image2 from '../../assets/DrakePassage/section3_image2.jpeg'
+import section5_Image1 from '../../assets/DrakePassage/section5_image1.jpeg'
+import section6_Image1 from '../../assets/DrakePassage/section06_image1.jpeg'
+import section6_Image2 from '../../assets/DrakePassage/section06_image2.jpeg'
+import section8_Image1 from '../../assets/DrakePassage/section8_image1.png'
+import section8_Image2 from '../../assets/DrakePassage/section8_image2.jpeg'
+import section8_Image3 from '../../assets/DrakePassage/section8_image3.jpeg'
+import section8_Image4 from '../../assets/DrakePassage/section8_image4.jpeg'
+// import section5_Image1 from '../DrakePassagePage/section5_image1.jpeg'
+// import section6_Image1 from '../DrakePassagePage/section06_image1.jpeg'
+// import section6_Image2 from '../DrakePassagePage/section06_image2.jpeg'
+
+
+
+const faqData = [
+    { q: "What is the Drake Passage and where is it located?", a: "The Drake Passage is the body of water between the southern tip of South America and Antarctica. It connects the Atlantic and Pacific Oceans and serves as the primary route for expedition cruises traveling to the Antarctic Peninsula." },
+    { q: "How rough is the Drake Passage crossing?", a: "Conditions vary depending on weather systems and time of year. Some crossings are relatively calm, while others involve more noticeable ocean movement. Modern expedition ships are designed to handle both scenarios effectively." },
+    { q: "Is the Drake Passage dangerous for cruise passengers?", a: "No. The Drake Passage is not considered dangerous when traveled on modern expedition ships operated by experienced crews who monitor conditions and adjust operations as needed." },
+    { q: "How long does it take to cross the Drake Passage?", a: "Most crossings take approximately two days each way, depending on itinerary and weather conditions." },
+    { q: "What does Drake Lake vs Drake Shake mean?", a: "These informal terms describe calm versus more active sea conditions during the crossing." },
+    { q: "Do all Antarctica cruises cross the Drake Passage?", a: "Most do, though some fly-cruise itineraries bypass the crossing by flying directly to Antarctica." },
+    { q: "Can you avoid seasickness in the Drake Passage?", a: "Preparation, ship selection, and motion management strategies help reduce the likelihood, though sensitivity varies by individual." },
+    { q: "Is Scenic Eclipse stable in the Drake Passage?", a: "Yes. Scenic Eclipse is designed for polar conditions and includes advanced stabilization systems to enhance comfort." },
+    { q: "What should I pack for the Drake Passage crossing?", a: "Layered clothing and motion management options are recommended to ensure comfort during varying conditions." },
+    { q: "Is the Drake Passage worth experiencing?", a: "For many travelers, it is an integral part of the Antarctica journey and contributes to the overall expedition experience." },
+    { q: "What is the best ship for the Drake Passage crossing?", a: "Ships specifically designed for polar expedition travel with modern stabilization systems are best suited for the crossing." },
+    { q: "Should I be worried about the Drake Passage?", a: "With proper planning and the right ship, the Drake Passage is a manageable and expected part of traveling to Antarctica." },
+];
+>>>>>>> Stashed changes
 
 function useFadeIn() {
   const ref = useRef(null);
@@ -581,6 +623,7 @@ export default function DrakePassagePage() {
                 know and the wilderness of Antarctica.
               </p>
 
+<<<<<<< Updated upstream
               {/* SEO Image 6: Guest Experience (Matches Section 1 Figure Style) */}
               <figure className="drake-hero-figure">
                 <div className="drake-figure-inner">
@@ -589,6 +632,38 @@ export default function DrakePassagePage() {
                     alt="Travelers walking on deck during calm conditions in the Drake Passage Antarctica cruise"
                     className="drake-img-fluid"
                   />
+=======
+                        {/* Right Column: Narrative Content and Main Image */}
+                        <main className="drake-content-column">
+                            <p className="drake-lead-text">
+                                The Drake Passage is the stretch of ocean between the southern tip of South America and Antarctica, connecting the Atlantic and Pacific Oceans.
+                            </p>
+
+                            <div className="drake-narrative-body">
+                                <p className="drake-section-p-clean">
+                                    It is the primary route used by expedition ships traveling to the Antarctic Peninsula.
+                                    Most voyages cross the Drake Passage twice, once heading south and once returning north.
+                                </p>
+
+                                {/* SEO-Optimized Image */}
+                                <figure className="drake-figure-box">
+                                    <div className="drake-img-container">
+                                        <img
+                                            src={section1_Image}
+                                            alt="Luxury expedition ship crossing the Drake Passage in open ocean waters"
+                                            className="drake-img-main"
+                                            style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }}
+                                        />
+                                    </div>
+                                    <figcaption className="drake-img-caption">
+                                        Modern expedition ships are designed to handle the unpredictable conditions of the Drake Passage crossing
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </main>
+
+                    </div>
+>>>>>>> Stashed changes
                 </div>
                 <figcaption className="drake-hero-caption">
                   <span className="drake-caption-tag">Guest Perspective</span>
@@ -614,6 +689,7 @@ export default function DrakePassagePage() {
                 </p>
               </div>
 
+<<<<<<< Updated upstream
               <div className="drake-ship-footer">
                 {/* Consistent White Editorial Box with Navy Border */}
                 <div className="drake-editorial-note-white">
@@ -621,6 +697,74 @@ export default function DrakePassagePage() {
                     For most travelers, the Drake Passage becomes part of the
                     story, not a disruption to the journey.
                   </p>
+=======
+                                <p className="drake-sticky-lead-text">
+                                    Conditions in the Drake Passage vary based on weather systems, wind patterns, and time of year.
+                                </p>
+                                <p className="drake-roughness-term-intro">Travelers often hear two terms:</p>
+                            </div>
+                        </aside>
+
+                        {/* Right Column: Scrolling Content */}
+                        <main className="drake-content-column">
+
+                            {/* SEO Image 2: Drake Lake (Matches Section 1 Figure Style) */}
+                            <figure className="drake-hero-figure">
+                                <div className="drake-figure-inner">
+                                    <img
+                                        src={section2_Image1}
+                                        alt="Calm waters in the Drake Passage during a smooth Antarctica cruise crossing known as Drake Lake"
+                                        className="drake-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="drake-hero-caption">
+                                    <span className="drake-caption-tag">Conditions: Calm</span>
+                                    When conditions are calm, known as the "Drake Lake," the crossing can feel surprisingly smooth and peaceful.
+                                </figcaption>
+                            </figure>
+
+                            <div className="drake-lake-shake-cards">
+                                <div className="drake-term-card drake-lake">
+                                    <span className="drake-term-badge">Drake Lake</span>
+                                    <h3>Drake Lake</h3>
+                                    <p className="drake-section-p-clean">referring to calmer crossings</p>
+                                </div>
+
+                                <div className="drake-term-card drake-shake">
+                                    <span className="drake-term-badge drake-navy-badge">Drake Shake</span>
+                                    <h3>Drake Shake</h3>
+                                    <p className="drake-section-p-clean drake-white-text" style={{ color: '#ffffff' }}>referring to more active conditions</p>
+                                </div>
+                            </div>
+
+                            {/* SEO Image 3: Drake Shake (Matches Section 1 Figure Style) */}
+                            <figure className="drake-hero-figure">
+                                <div className="drake-figure-inner">
+                                    <img
+                                        src={section2_Image2}
+                                        alt="Rough seas and powerful waves in the Drake Passage during stormy Southern Ocean conditions"
+                                        className="drake-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="drake-hero-caption">
+                                    <span className="drake-caption-tag">Conditions: Active</span>
+                                    The "Drake Shake" brings powerful swells that make this crossing one of the most talked about parts of an Antarctica expedition.
+                                </figcaption>
+                            </figure>
+
+                            <div className="drake-roughness-summary">
+                                <p className="drake-section-p-clean">
+                                    Both occur. Most crossings fall somewhere in between. Modern expedition ships are designed to manage these conditions, and the experience is influenced as much by ship design and preparation as it is by weather.
+                                </p>
+                                {/* Consistent White Editorial Box */}
+                                <div className="drake-editorial-note-white">
+                                    <p>Understanding this variability is key to setting expectations correctly.</p>
+                                </div>
+                            </div>
+                        </main>
+
+                    </div>
+>>>>>>> Stashed changes
                 </div>
               </div>
             </main>
@@ -641,6 +785,7 @@ export default function DrakePassagePage() {
                   Drake Passage or Fly Over It
                 </h2>
 
+<<<<<<< Updated upstream
                 <p className="drake-sticky-lead-text">
                   Travelers have two primary options when planning Antarctica.
                   The right decision depends on comfort level and travel
@@ -648,6 +793,87 @@ export default function DrakePassagePage() {
                 </p>
               </div>
             </aside>
+=======
+                        {/* Left Column: Sticky Title & Intro (Consistent with Section 1 & 2) */}
+                        <aside className="drake-side-sticky">
+                            <div className="drake-sticky-element">
+                                <span className="drake-section-number">03</span>
+                                <h2 className="drake-section-h2 drake-left-bar">How Expedition Ships <br />Handle the Drake Passage</h2>
+
+                                <p className="drake-sticky-lead-text">
+                                    Ships designed for Antarctica, including vessels operated by Scenic Luxury Cruises & Tours, are engineered for stability and performance in open water.
+                                </p>
+                            </div>
+                        </aside>
+
+                        {/* Right Column: Scrolling Content & Features */}
+                        <main className="drake-content-column">
+                            <p className="drake-section-p-clean">
+                                While ocean movement cannot be eliminated, it can be managed. Key factors in modern maritime engineering allow for a controlled and professional crossing.
+                            </p>
+
+                            {/* SEO Image 4: Stabilization (Matches Section 1 Figure Style) */}
+                            <figure className="drake-hero-figure">
+                                <div className="drake-figure-inner">
+                                    <img
+                                        src={section3_Image1}
+                                        alt="Expedition ship stabilization systems reducing movement during Drake Passage crossing"
+                                        className="drake-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="drake-hero-caption">
+                                    <span className="drake-caption-tag">Technology</span>
+                                    Advanced stabilization systems are built into the hull to significantly reduce rolling and enhance guest comfort.
+                                </figcaption>
+                            </figure>
+
+                            {/* Feature Cards Grid */}
+                            <div className="drake-ship-feature-grid-redesign">
+                                <div className="drake-feature-pill-card">
+                                    <div className="drake-pill-icon-navy">
+                                        <AnchorIcon size={24} strokeWidth={1.5} />
+                                    </div>
+                                    <h3>Stabilization systems</h3>
+                                </div>
+
+                                <div className="drake-feature-pill-card">
+                                    <div className="drake-pill-icon-navy">
+                                        <ShipIcon size={24} strokeWidth={1.5} />
+                                    </div>
+                                    <h3>Hull design suited for polar conditions</h3>
+                                </div>
+                            </div>
+
+                            {/* SEO Image 5: Observation Deck (Matches Section 1 Figure Style) */}
+                            <figure className="drake-hero-figure">
+                                <div className="drake-figure-inner">
+                                    <img
+                                        src={section3_Image2}
+                                        alt="Passengers watching Drake Passage waves from ship observation deck during expedition"
+                                        className="drake-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="drake-hero-caption">
+                                    <span className="drake-caption-tag">Experience</span>
+                                    The observation deck offers front-row views of the Drake Passage experience while maintaining a secure environment.
+                                </figcaption>
+                            </figure>
+
+                            <div className="drake-feature-pill-card drake-full-width-pill">
+                                <div className="drake-pill-icon-navy">
+                                    <CompassIcon size={24} strokeWidth={1.5} />
+                                </div>
+                                <h3>Experienced crews monitoring real-time weather</h3>
+                            </div>
+
+                            <div className="drake-ship-footer">
+                                {/* Consistent White Editorial Box */}
+                                <div className="drake-editorial-note-white">
+                                    <p>The Drake Passage is not avoided. It is anticipated and managed as part of the expedition.</p>
+                                </div>
+                            </div>
+                        </main>
+>>>>>>> Stashed changes
 
             {/* Right Side: Scrolling Comparison Content */}
             <main className="drake-content-column">
@@ -711,11 +937,75 @@ export default function DrakePassagePage() {
                 </div>
               </div>
 
+<<<<<<< Updated upstream
               <div className="drake-choice-footer">
                 <div className="drake-choice-verdict">
                   <p className="drake-section-p-clean">
                     There is no universal right choice.
                   </p>
+=======
+            {/* ===== SECTION 5: WHAT IT FEELS LIKE — Consistent Sticky Design with Navy/Soft-Blue Schema ===== */}
+            <section className="drake-section drake-bg-white">
+                <div className="drake-section-inner drake-wide">
+                    <div className="drake-sticky-wrapper">
+
+                        {/* Left Side: Sticky Title & Eyebrow */}
+                        <aside className="drake-side-sticky">
+                            <div className="drake-sticky-element">
+                                <span className="drake-section-number">05</span>
+                                <h2 className="drake-section-h2 drake-left-bar">What the Drake <br />Passage Feels Like</h2>
+
+                                <p className="drake-sticky-lead-text">
+                                    The experience varies by traveler and conditions, shaped by preparation and ship selection.
+                                </p>
+                            </div>
+                        </aside>
+
+                        {/* Right Side: Narrative Content */}
+                        <main className="drake-content-column">
+                            <p className="drake-section-p-clean">
+                                The experience varies by traveler and conditions. For most, the journey across these waters is a bridge between the world they know and the wilderness of Antarctica.
+                            </p>
+
+                            {/* SEO Image 6: Guest Experience (Matches Section 1 Figure Style) */}
+                            <figure className="drake-hero-figure">
+                                <div className="drake-figure-inner">
+                                    <img
+                                        src={section5_Image1}
+                                        alt="Travelers walking on deck during calm conditions in the Drake Passage Antarctica cruise"
+                                        className="drake-img-fluid"
+                                    />
+                                </div>
+                                <figcaption className="drake-hero-caption">
+                                    <span className="drake-caption-tag">Guest Perspective</span>
+                                    On calmer days, guests can fully enjoy time on deck while crossing the Drake Passage, watching for wildlife and icebergs.
+                                </figcaption>
+                            </figure>
+
+                            <div className="drake-feels-accent-box">
+                                <p className="drake-section-p-clean">
+                                    Some guests experience light movement similar to ocean cruising. Others may feel more pronounced motion during active crossings.
+                                </p>
+                            </div>
+
+                            <div className="drake-narrative-block">
+                                <p className="drake-section-p-clean">
+                                    Preparation, ship selection, and mindset significantly influence how the crossing is experienced. Modern technology ensures the transition is managed professionally.
+                                </p>
+                            </div>
+
+                            <div className="drake-ship-footer">
+                                {/* Consistent White Editorial Box with Navy Border */}
+                                <div className="drake-editorial-note-white">
+                                    <p>
+                                        For most travelers, the Drake Passage becomes part of the story, not a disruption to the journey.
+                                    </p>
+                                </div>
+                            </div>
+                        </main>
+
+                    </div>
+>>>>>>> Stashed changes
                 </div>
 
                 <p className="drake-section-p-clean">
@@ -724,12 +1014,101 @@ export default function DrakePassagePage() {
                   fly.
                 </p>
 
+<<<<<<< Updated upstream
                 {/* Consistent White Editorial Box */}
                 <div className="drake-editorial-note-white">
                   <p>
                     The right decision depends on comfort level and travel
                     priorities.
                   </p>
+=======
+                        {/* Left Side: Sticky Title & Intro */}
+                        <aside className="drake-side-sticky">
+                            <div className="drake-sticky-element">
+                                <span className="drake-section-number">06</span>
+                                <h2 className="drake-section-h2 drake-left-bar">Should You Cross the <br />Drake Passage or Fly Over It</h2>
+
+                                <p className="drake-sticky-lead-text">
+                                    Travelers have two primary options when planning Antarctica. The right decision depends on comfort level and travel priorities.
+                                </p>
+                            </div>
+                        </aside>
+
+                        {/* Right Side: Scrolling Comparison Content */}
+                        <main className="drake-content-column">
+
+                            <div className="drake-choice-grid">
+                                {/* Option 1: Cross */}
+                                <div className="drake-choice-card-redesign">
+                                    {/* SEO Image 7: Full Expedition (Consistent Figure Style) */}
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section6_Image1}
+                                                alt="Full expedition ship crossing the Drake Passage toward Antarctica with open ocean"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                        <figcaption className="drake-hero-caption">
+                                            <span className="drake-caption-tag">Option 01</span>
+                                            The standard crossing offers a gradual transition into the Antarctic wilderness.
+                                        </figcaption>
+                                    </figure>
+
+                                    <span className="drake-choice-badge-navy">Expedition Standard</span>
+                                    <h3>Cross the Drake Passage</h3>
+                                    <ul className="drake-choice-list-navy">
+                                        <li>Full expedition experience</li>
+                                        <li>Gradual transition into Antarctica</li>
+                                        <li>More time onboard the expedition vessel</li>
+                                    </ul>
+                                </div>
+
+                                {/* Option 2: Fly */}
+                                <div className="drake-choice-card-redesign">
+                                    {/* SEO Image 8: Scenic Southern Ocean (Consistent Figure Style) */}
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section6_Image2}
+                                                alt="Scenic Southern Ocean views during Drake Passage cruise expedition"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                        <figcaption className="drake-hero-caption">
+                                            <span className="drake-caption-tag">Option 02</span>
+                                            Fly-cruise itineraries bypass the water crossing for faster arrival.
+                                        </figcaption>
+                                    </figure>
+
+                                    <span className="drake-choice-badge-navy">Time Optimized</span>
+                                    <h3>Fly-Cruise Option</h3>
+                                    <ul className="drake-choice-list-navy">
+                                        <li>Avoids the ocean crossing</li>
+                                        <li>Reduces transit time</li>
+                                        <li>Appeals to highly motion-sensitive travelers</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="drake-choice-footer">
+                                <div className="drake-choice-verdict">
+                                    <p className="drake-section-p-clean">There is no universal right choice.</p>
+                                </div>
+
+                                <p className="drake-section-p-clean">
+                                    Travelers seeking the full Antarctica narrative often choose to cross. Those prioritizing speed or comfort may prefer to fly.
+                                </p>
+
+                                {/* Consistent White Editorial Box */}
+                                <div className="drake-editorial-note-white">
+                                    <p>The right decision depends on comfort level and travel priorities.</p>
+                                </div>
+                            </div>
+                        </main>
+
+                    </div>
+>>>>>>> Stashed changes
                 </div>
               </div>
             </main>
@@ -833,6 +1212,102 @@ export default function DrakePassagePage() {
                     Selecting a ship designed for polar stability
                   </p>
                 </div>
+<<<<<<< Updated upstream
+=======
+            </section>
+
+            {/* ===== SECTION 8: HOW TO PREPARE — Consistent Sticky Design with Navy Schema ===== */}
+            <section className="drake-section drake-bg-soft drake-prepare-section">
+                <div className="drake-section-inner drake-wide">
+                    <div className="drake-sticky-wrapper flipped">
+
+                        {/* Left Column: Sticky Title & Intro */}
+                        <aside className="drake-side-sticky">
+                            <div className="drake-sticky-element">
+                                <span className="drake-section-number">08</span>
+                                <h2 className="drake-section-h2 drake-left-bar">How to Prepare for <br />the Drake Passage</h2>
+
+                                <p className="drake-sticky-lead-text">
+                                    Preparation is straightforward when handled in advance. Aligning expectations with planning ensures a manageable experience.
+                                </p>
+                            </div>
+                        </aside>
+
+                        {/* Right Column: Scrolling Steps */}
+                        <main className="drake-content-column">
+
+                            <div className="drake-prepare-grid-redesign">
+
+                                {/* Step 1 */}
+                                <div className="drake-prepare-step-card">
+                                    <div className="drake-prepare-badge">Step 01</div>
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section8_Image1}
+                                                alt="Polar expedition ship designed for Drake Passage Antarctica cruises"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                    </figure>
+                                    <p className="drake-prepare-text-navy">Selecting a ship designed for polar stability</p>
+                                </div>
+
+                                {/* Step 2 */}
+                                <div className="drake-prepare-step-card">
+                                    <div className="drake-prepare-badge">Step 02</div>
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section8_Image2}
+                                                alt="Motion management and preparation for Drake Passage crossing conditions"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                    </figure>
+                                    <p className="drake-prepare-text-navy">Bringing motion management options if needed</p>
+                                </div>
+
+                                {/* Step 3 */}
+                                <div className="drake-prepare-step-card">
+                                    <div className="drake-prepare-badge">Step 03</div>
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section8_Image3}
+                                                alt="Layered clothing and packing for Drake Passage cruise comfort"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                    </figure>
+                                    <p className="drake-prepare-text-navy">Packing layered clothing for comfort</p>
+                                </div>
+
+                                {/* Step 4 */}
+                                <div className="drake-prepare-step-card">
+                                    <div className="drake-prepare-badge">Step 04</div>
+                                    <figure className="drake-hero-figure">
+                                        <div className="drake-figure-inner">
+                                            <img
+                                                src={section8_Image4}
+                                                alt="Understanding varying Drake Passage weather and sea conditions"
+                                                className="drake-img-fluid"
+                                            />
+                                        </div>
+                                    </figure>
+                                    <p className="drake-prepare-text-navy">Understanding that conditions vary</p>
+                                </div>
+
+                            </div>
+
+                            <div className="drake-prepare-footer-redesign">
+                                {/* Consistent White Editorial Box with Navy Border */}
+                                <div className="drake-editorial-note-white">
+                                    <p>When planned correctly, the Drake Passage becomes manageable rather than uncertain.</p>
+                                </div>
+                            </div>
+                        </main>
+>>>>>>> Stashed changes
 
                 {/* Step 2 */}
                 <div className="drake-prepare-step-card">

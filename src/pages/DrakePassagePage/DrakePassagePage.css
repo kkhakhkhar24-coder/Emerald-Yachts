@@ -86,15 +86,15 @@ body {
 
   0%,
   100% {
-    background-image: url('https://ucec4e3c043f6820410b5844580d.previews.dropboxusercontent.com/p/thumb/AC-Ipv7pg_XbCNwolCYKtebjtNxV9tVAxqbVTjb88SmWm5s517RpN6dUXV-yWS-PiuJVs0WYYFsIw6VQuzW8KwtrqjHGCmof0YODplgzk8mRcsw5t2-yMWam6vZuAoQZx2sglLqer1gQCqNH924sf_uKxvedi6OmJDJqjpEEH8mQT681pZrKMQwUS-8eE2NzBsg1ASUFRi3BX1-R3jFaLWQGk-yUuG-kVztC377jBwwGJTfJhZo3_KeOQxCWYonHvoCyz1CmKsxC9UFg6cS0XMDNHKBiUIGfhyKbA8K-zfTVGhgrDz385qE2CcwODWUY-mRr0cWhvDxhbU3iuSWD7p7NESRElUHdI80c74SLu9sHeQ/p.jpeg');
+    background-image: url('../../assets/DrakePassage/Hero1.jpeg');
   }
 
   33% {
-    background-image: url('https://uc2bdec23bb154591783f5e3a24a.previews.dropboxusercontent.com/p/thumb/AC_vOaILUUSZnPbET0v52hpcBuM3Mb4etz6n_y3N7JJupyPDRcDrO4J_-wFdDny5XloXjQYqjEOkpNpkWV7IHOHXoTvEb6haYyQATd4h9OULkeF0eRXpp46hSdnXoSbn3PSXOnP6PDMRZmB420-rvfUw5rflFSCYeSegLIFVrOwFYNhollBDJoH9oCLNwq3IUnuiCh8-qWEKAf4lemN9n5XeaQtmLpI-rnUHKSF9AfN5qRannNoouUyRE4xkPST9_ummeF819liVG7Mw6oM2hEt6rR1_scNSayyP8GFDy5IysQJre7kdT4iZzC3bxIprqUsnLZUXWDc93jTg_vIjmZA4eLoKRKcYnBZEah5-Fd-wZpW7r3wPfBHVAJNRWgyvRvGxSdu3yzw6eDjKKEHzJQJKvlsGpzS66oZFrzJchIOKWA/p.jpeg');
+    background-image: url('../../assets/DrakePassage/Hero2.jpeg');
   }
 
   66% {
-    background-image: url('https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC8_V8rLFYw7zR6xdlno4yvPrUCtlOrXugFHG_8WtKdcBsl4Qres40fCvEymzJl59vJZYfyZuLdPeOZh2KYQgv0ACHMXJkBMDWAwZfgj8X7CBQ1jK0aUObmGstLuZz7OPXEMuk3Il0jjdYQBRnJAG-0OuX_7c1hGSeqc6qc1HL9zrQC_AElt11Fd5TG6_76QDXUUH5TjXJkurqDDVYezVPqGKsgSh7plq8SGOkM21kRWeasgqmWDMYHkJiprRt14R5b790CBDHjGsicxZB1K19xhgDTZe3MikQbj5knGUClFyoGUVUNHvho-9Qbr2ogR5_F4tAAa7EmHT6DyrKUjIgLkej6fjmKfqMxJfIebm_kzkg/p.jpeg');
+    background-image: url('../../assets/DrakePassage/Hero3.jpeg');
   }
 }
 
@@ -158,6 +158,7 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  font-size: 60px !important;
 }
 
 .hero-sub {
@@ -346,7 +347,30 @@ to {
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .drake-hero h1 {
-    font-size: 48px !important;
+    font-size: 32px !important;
+  }
+
+  .drake-hero-lead {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-hero {
+    padding: 120px 30px 80px;
+  }
+
+  .drake-hero h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-hero h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-hero p,
+  .drake-hero h3 {
+    font-size: 17px !important;
   }
 
   .drake-hero-lead {
@@ -360,7 +384,16 @@ to {
   }
 
   .drake-hero h1 {
-    font-size: 34px !important;
+    font-size: 26px !important;
+  }
+
+  .drake-hero h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-hero p,
+  .drake-hero h3 {
+    font-size: 16px !important;
   }
 
   .drake-hero-btns {
@@ -424,7 +457,7 @@ to {
   color: var(--navy);
   margin-bottom: 30px;
   line-height: 1 !important;
-  text-align: start;
+  text-align: center;
   position: relative;
 }
 
@@ -495,10 +528,11 @@ to {
 }
 
 /* ── PARAGRAPHS ── */
-.drake-section-p {
-  font-size: 1.125rem !important;
+.drake-section-p,
+h3 {
+  font-size: 18px !important;
   line-height: 1.65 !important;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
   color: var(--navy-light);
   font-family: var(--font-body) !important;
   margin-bottom: 24px;
@@ -563,7 +597,7 @@ to {
 .drake-section-h2.drake-left-bar {
   text-align: left !important;
   color: #274472 !important;
-  font-size: 44px !important;
+  font-size: 48px !important;
   margin-bottom: 0 !important;
 }
 
@@ -606,7 +640,7 @@ to {
 
 .drake-section-p-clean {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 17px !important;
+  font-size: 18px !important;
   line-height: 1.8 !important;
   color: #274472;
   font-weight: 300 !important;
@@ -617,17 +651,21 @@ to {
 /* --- Image Design --- */
 .drake-figure-box {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .drake-img-container {
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
 }
 
 .drake-img-main {
   width: 100%;
-  height: 550px;
+  height: 100%;
+  min-height: 350px;
   object-fit: cover;
   display: block;
 }
@@ -718,13 +756,51 @@ to {
    PROPER RESPONSIVE LOGIC
    ======================================== */
 
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 60px;
+  }
+
+  .drake-section-inner.drake-wide {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 @media (max-width: 1100px) {
   .drake-sticky-wrapper {
-    gap: 40px;
+    gap: 50px;
   }
 
   .drake-section-h2.drake-left-bar {
     font-size: 38px !important;
+  }
+
+  .drake-side-sticky {
+    position: static;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .drake-sticky-element {
+    position: static !important;
+    text-align: center !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    text-align: center !important;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-editorial-note {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
   }
 }
 
@@ -736,8 +812,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar {
@@ -757,34 +833,328 @@ to {
     border-top: 4px solid #274472;
   }
 
+  /* Flip layout fixes */
+  .drake-sticky-wrapper.flipped {
+    direction: ltr;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-side-sticky,
+  .drake-sticky-wrapper.flipped .drake-content-column {
+    direction: ltr;
+  }
+
   .drake-lead-text,
   .drake-section-p-clean,
   .drake-img-caption {
     text-align: center;
   }
+
+  .drake-hero-figure {
+    margin: 0 auto 40px;
+    max-width: 100%;
+  }
+
+  .drake-figure-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .drake-section {
+    padding: 70px 30px;
+  }
+
+  .drake-expert-redesign {
+    padding: 80px 30px;
+  }
+
+  .drake-final-cta-section {
+    padding: 80px 25px;
+  }
 }
 
 @media (max-width: 768px) {
+  .drake-section {
+    padding: 60px 25px;
+  }
+
+  .drake-section-inner {
+    width: 100%;
+  }
+
   .drake-section-h2.drake-left-bar {
+    font-size: 28px !important;
+  }
+
+  .drake-h1 {
     font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
   }
 
   .drake-lead-text {
     font-size: 21px !important;
   }
 
-  .drake-img-main {
-    height: 350px;
+  .drake-sticky-lead-text {
+    font-size: 18px !important;
+  }
+
+  .drake-img-main,
+  .drake-img-fluid {
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-figure-inner img {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
   }
 
   .drake-editorial-note {
-    padding: 25px;
+    padding: 25px 20px;
+  }
+
+  .drake-editorial-note p {
+    font-size: 16px !important;
+  }
+
+  .drake-choice-grid,
+  .drake-audience-grid-side,
+  .drake-prepare-grid-redesign,
+  .drake-ship-feature-grid-redesign,
+  .drake-lake-shake-cards,
+  .drake-why-benefits-grid-navy {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-expert-flex {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drake-expert-image-wrap {
+    position: static;
+    max-width: 100%;
+  }
+
+  .drake-expert-photo-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .drake-faq-q {
+    padding: 20px 25px;
+  }
+
+  .drake-faq-a-inner {
+    padding: 0 25px 25px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .drake-section {
+    padding: 50px 20px;
+  }
+
+  .drake-hero {
+    padding: 100px 25px 70px;
+  }
+
+  .drake-section-h2 {
+    font-size: 26px !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 26px !important;
+  }
+
+  .drake-sticky-lead-text,
+  .drake-lead-text {
+    font-size: 17px !important;
+  }
+
+  .drake-img-fluid,
+  .drake-img-main {
+    min-height: 250px;
+  }
+
+  .drake-editorial-note,
+  .drake-editorial-note-white,
+  .drake-editorial-note-blue,
+  .drake-editorial-note-centered {
+    padding: 20px;
+  }
+
+  .drake-danger-box {
+    padding: 40px 25px;
   }
 }
 
 @media (max-width: 480px) {
+  .drake-section {
+    padding: 45px 18px;
+  }
+
+  .drake-hero {
+    padding: 90px 18px 60px;
+  }
+
   .drake-img-main {
-    height: 280px;
+    min-height: 220px;
+  }
+
+  .drake-figure-inner img {
+    min-height: 220px;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-editorial-note p {
+    font-size: 16px !important;
+  }
+
+  .drake-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-section-p-clean {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-expert-redesign {
+    padding: 60px 18px;
+  }
+
+  .drake-expert-img {
+    height: 350px;
+  }
+
+  .drake-expert-paragraph.drake-highlight {
+    font-size: 18px !important;
+  }
+
+  .drake-faq-header-centered .drake-section-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-faq-intro-text {
+    font-size: 16px !important;
+  }
+
+  .drake-faq-q {
+    padding: 18px 20px;
+  }
+
+  .drake-faq-q span {
+    font-size: 15px !important;
+  }
+
+  .drake-faq-a-inner {
+    padding: 0 20px 20px 20px;
+    font-size: 15px !important;
+  }
+
+  .drake-final-cta-section {
+    padding: 60px 18px;
+  }
+
+  .drake-text-white {
+    font-size: 26px !important;
+  }
+
+  .drake-cta-btn-white {
+    width: 100%;
+    padding: 16px 25px;
+  }
+
+  .drake-hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .drake-btn-primary,
+  .drake-btn-secondary {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .drake-section {
+    padding: 40px 15px;
+  }
+
+  .drake-hero {
+    padding: 80px 15px 50px;
+  }
+
+  .drake-section-h2 {
+    font-size: 22px !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 22px !important;
+  }
+
+  .drake-h1 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3,
+  .drake-lead-text,
+  .drake-sticky-lead-text {
+    font-size: 15px !important;
+  }
+
+  .drake-img-fluid,
+  .drake-img-main {
+    min-height: 200px;
+  }
+
+  .drake-editorial-note,
+  .drake-editorial-note-white,
+  .drake-editorial-note-blue {
+    padding: 18px;
+  }
+
+  .drake-expert-img {
+    height: 300px;
+  }
+
+  .drake-danger-box {
+    padding: 30px 20px;
   }
 }
 
@@ -923,6 +1293,12 @@ to {
 /* ========================================
    RESPONSIVE (MATCHES SECTION 1)
    ======================================== */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -930,8 +1306,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -949,16 +1325,67 @@ to {
     max-width: 600px;
     text-align: center;
     border-left: none;
+    border-top: 4px solid #274472;
+  }
+
+  .drake-lake-shake-cards {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
   .drake-img-fluid {
-    height: 350px;
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
   }
 
   .drake-lake-shake-cards {
     grid-template-columns: 1fr;
+  }
+
+  .drake-term-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-img-fluid {
+    min-height: 220px;
   }
 }
 
@@ -1097,6 +1524,12 @@ to {
 }
 
 /* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -1104,8 +1537,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -1117,15 +1550,63 @@ to {
     padding-left: 0;
     text-align: center;
   }
+
+  .drake-ship-feature-grid-redesign {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
   .drake-img-fluid {
-    height: 350px;
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p {
+    font-size: 17px !important;
   }
 
   .drake-ship-feature-grid-redesign {
     grid-template-columns: 1fr;
+  }
+
+  .drake-feature-pill-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p {
+    font-size: 16px !important;
+  }
+
+  .drake-img-fluid {
+    min-height: 220px;
   }
 }
 
@@ -1219,6 +1700,12 @@ to {
 /* ========================================
    RESPONSIVE (MATCHES SECTION 1-3)
    ======================================== */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -1226,8 +1713,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -1235,7 +1722,7 @@ to {
   }
 
   .drake-danger-box {
-    padding: 60px 30px;
+    padding: 60px 40px;
     border-radius: 0;
     /* Full width on mobile looks more professional */
   }
@@ -1246,8 +1733,48 @@ to {
     font-size: 20px !important;
   }
 
-  .drake-section-p-white {
-    font-size: 15px !important;
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p-white,
+  h3 {
+    font-size: 17px !important;
+  }
+
+  .drake-danger-box {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p-white,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-danger-box {
+    padding: 40px 25px;
+  }
+
+  .drake-danger-lead {
+    font-size: 19px !important;
   }
 }
 
@@ -1359,6 +1886,12 @@ to {
 }
 
 /* --- Responsive Layout --- */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -1366,8 +1899,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -1391,11 +1924,61 @@ to {
 
 @media (max-width: 768px) {
   .drake-img-fluid {
-    height: 350px;
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
   }
 
   .drake-feels-accent-box {
     padding: 30px 20px;
+  }
+
+  .drake-narrative-block {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-img-fluid {
+    min-height: 220px;
+  }
+
+  .drake-feels-accent-box {
+    padding: 25px 18px;
   }
 }
 
@@ -1552,6 +2135,12 @@ to {
 }
 
 /* --- Responsive --- */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -1559,8 +2148,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -1574,13 +2163,72 @@ to {
   }
 
   .drake-choice-card-redesign {
-    padding: 30px 20px;
+    padding: 30px 25px;
   }
 }
 
 @media (max-width: 768px) {
   .drake-img-fluid {
-    height: 300px;
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
+
+  .drake-choice-card-redesign {
+    padding: 25px 20px;
+  }
+
+  .drake-choice-card-redesign h3 {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-img-fluid {
+    min-height: 220px;
+  }
+
+  .drake-choice-badge-navy {
+    font-size: 9px !important;
+    padding: 5px 12px;
+  }
+
+  .drake-choice-card-redesign h3 {
+    font-size: 22px !important;
   }
 }
 
@@ -1758,11 +2406,37 @@ to {
     grid-template-columns: 1fr;
     /* Stack on mobile */
   }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
 }
 
 @media (max-width: 480px) {
   .drake-audience-header-center .drake-section-h2 {
-    font-size: 28px !important;
+    font-size: 24px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
   }
 }
 
@@ -1889,7 +2563,7 @@ to {
 /* --- Responsive Adjustments --- */
 @media (max-width: 1200px) {
   .drake-sticky-wrapper {
-    gap: 40px;
+    gap: 50px;
   }
 }
 
@@ -1900,8 +2574,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -1915,6 +2589,10 @@ to {
     border-left: none;
     border-top: 4px solid #274472;
   }
+
+  .drake-prepare-grid-redesign {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1923,7 +2601,66 @@ to {
   }
 
   .drake-img-fluid {
-    height: 300px;
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
+
+  .drake-prepare-step-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-prepare-text-navy {
+    font-size: 16px !important;
+  }
+
+  .drake-img-fluid {
+    min-height: 220px;
+  }
+
+  .drake-prepare-step-card {
+    padding: 20px;
+  }
+
+  .drake-prepare-badge {
+    font-size: 9px !important;
+    padding: 5px 10px;
   }
 }
 
@@ -2065,13 +2802,20 @@ to {
 }
 
 /* --- Responsive Layout --- */
+@media (max-width: 1200px) {
+  .drake-expert-flex {
+    gap: 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-expert-flex {
-    gap: 40px;
+    gap: 50px;
   }
 
   .drake-expert-img {
-    height: 500px;
+    height: 450px;
+    object-fit: cover;
   }
 }
 
@@ -2083,8 +2827,8 @@ to {
 
   .drake-expert-image-wrap {
     order: 2;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 100%;
+    position: static;
   }
 
   .drake-expert-content-wrap {
@@ -2105,19 +2849,64 @@ to {
   .drake-expert-line-navy {
     margin: 20px auto 0;
   }
+
+  .drake-expert-photo-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 480px) {
-  .drake-expert-redesign {
-    padding: 80px 20px;
+@media (max-width: 768px) {
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-expert-paragraph,
+  h3 {
+    font-size: 17px !important;
   }
 
   .drake-expert-img {
     height: 400px;
   }
+}
+
+@media (max-width: 480px) {
+  .drake-expert-redesign {
+    padding: 60px 20px;
+  }
+
+  .drake-expert-img {
+    height: 350px;
+  }
 
   .drake-expert-paragraph.drake-highlight {
     font-size: 18px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-expert-paragraph,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-expert-quote-body {
+    margin-bottom: 30px;
+  }
+
+  .drake-expert-icon-navy {
+    font-size: 60px !important;
   }
 }
 
@@ -2239,6 +3028,12 @@ to {
 /* ========================================
    RESPONSIVE (MATCHES PREVIOUS SECTIONS)
    ======================================== */
+@media (max-width: 1200px) {
+  .drake-sticky-wrapper {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
@@ -2246,8 +3041,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -2280,6 +3075,60 @@ to {
 @media (max-width: 768px) {
   .drake-next-step-card-white {
     padding: 20px;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p {
+    font-size: 17px !important;
+  }
+
+  .drake-next-step-circle-navy {
+    width: 45px;
+    height: 45px;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white p {
+    font-size: 16px !important;
+  }
+
+  .drake-next-step-card-white .drake-section-p-clean {
+    font-size: 16px !important;
+  }
+
+  .drake-next-step-card-white {
+    padding: 18px;
+  }
+
+  .drake-next-step-circle-navy {
+    width: 40px;
+    height: 40px;
+    font-size: 13px !important;
   }
 }
 
@@ -2407,7 +3256,7 @@ to {
 /* --- Responsive Adjustments --- */
 @media (max-width: 1200px) {
   .drake-sticky-wrapper {
-    gap: 40px;
+    gap: 50px;
   }
 }
 
@@ -2418,8 +3267,8 @@ to {
   }
 
   .drake-sticky-element {
-    position: static;
-    text-align: center;
+    position: static !important;
+    text-align: center !important;
   }
 
   .drake-section-h2.drake-left-bar::after {
@@ -2438,6 +3287,10 @@ to {
     border-left: none;
     border-top: 4px solid #274472;
   }
+
+  .drake-why-benefits-grid-navy {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2447,6 +3300,62 @@ to {
 
   .drake-why-intro-navy {
     font-size: 20px !important;
+  }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
+
+  .drake-benefit-card-navy {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-blue p {
+    font-size: 16px !important;
+  }
+
+  .drake-why-intro-navy {
+    font-size: 18px !important;
+  }
+
+  .drake-benefit-card-navy p {
+    font-size: 16px !important;
+  }
+
+  .drake-benefit-card-navy {
+    padding: 16px 18px;
+  }
+
+  .drake-benefit-icon-navy {
+    font-size: 14px !important;
   }
 }
 
@@ -2542,7 +3451,7 @@ to {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.05rem;
+  font-size: 18px !important;
   font-weight: 500;
   color: #2f4a6d;
   font-family: 'Montserrat', sans-serif;
@@ -2567,7 +3476,7 @@ to {
 .drake-faq-a-inner {
   padding: 14px 0 0 0;
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 1rem !important;
+  font-size: 18px !important;
   line-height: 1.7 !important;
   color: #274472cc;
   font-weight: 300 !important;
@@ -2656,11 +3565,37 @@ to {
   .emerald-faq-question {
     font-size: 1rem;
   }
+
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
 }
 
 @media (max-width: 480px) {
   .drake-faq-header-centered .drake-section-h2 {
-    font-size: 28px !important;
+    font-size: 24px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
   }
 
   .drake-faq-intro-text {
@@ -2683,6 +3618,14 @@ to {
   .drake-faq-icon.emerald-faq-icon {
     font-size: 20px;
   }
+
+  .drake-faq-q.emerald-faq-question {
+    font-size: 16px !important;
+  }
+
+  .drake-faq-a-inner {
+    font-size: 16px !important;
+  }
 }
 
 /* ========================================
@@ -2693,7 +3636,7 @@ to {
 .drake-final-cta-section {
   position: relative;
   padding: 120px 20px;
-  background: url('https://ucd284b7c9a5a19f0dc8352b7e35.previews.dropboxusercontent.com/p/thumb/AC-laTVDXSQhgu4yS0PzpG47qSxvzjhxVAylmAZKLb-8C3V-zBtrNI5aODEP0uvty2Wtr03DKmYL58LIb81e0rxce9shKFcKOPssp8QdnFGBMTkgwc6zdjApAaZfNJDcdywquLX-nvwBnI4DXuvTuTqPBMTpRXxCFwHBTB5KNOBXmUYY1F2g3012rJxF-TMIZOdprPFA7mxmmCrfjLiCaLjY-uaU3fuz2cQNZov1WswCYgReUWoZdEF6WcHLxRbH8E1t5DliNcyr5a2ihibehD388hJsAum6BF_gY6PRtjaVAANHo1xebmyqEUddb-_pf8tPEvtNRgM8xzRSKC4rSPx11GJ-nogXB0vetzhQb9IqAw/p.jpeg') center/cover no-repeat;
+  background: url('../../assets/DrakePassage/Footer_Image.jpeg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2720,16 +3663,16 @@ to {
 /* Heading Fix */
 .drake-text-white {
   color: #ffffff !important;
-  font-size: 52px !important;
+  font-size: 60px !important;
   margin-bottom: 0 !important;
 }
 
-/* Custom Divider (Replacing Gold Bar) */
+/* Custom Divider (White only, no blue) */
 .drake-cta-divider-blue {
   width: 60px;
   height: 3px;
-  background-color: rgb(231, 243, 245);
-  /* Soft Blue accent */
+  background-color: #ffffff;
+  /* White accent only */
   margin: 30px auto;
   border-radius: 2px;
 }
@@ -2803,6 +3746,19 @@ to {
     font-size: 20px !important;
   }
 
+  .drake-h1 {
+    font-size: 32px !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 28px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 17px !important;
+  }
+
   .drake-cta-btn-white {
     width: 100%;
     padding: 18px 20px;
@@ -2817,6 +3773,19 @@ to {
 
   .drake-text-white {
     text-align: center;
-    font-size: 28px !important;
+    font-size: 26px !important;
+  }
+
+  .drake-h1 {
+    font-size: 26px !important;
+  }
+
+  .drake-h2 {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p,
+  h3 {
+    font-size: 16px !important;
   }
 }

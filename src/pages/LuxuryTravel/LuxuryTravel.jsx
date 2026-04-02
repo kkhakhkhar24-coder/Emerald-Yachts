@@ -2,7 +2,17 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './LuxuryTravel.css'
 import { ChevronDown, Star, Sparkles, Check, AlertCircle, Plus, Minus } from 'lucide-react'
-import ProfilePicture from '../../assets/image.jpg'
+
+// Import Images
+import ProfilePicture from '../../../public/angela-hughes-portrait.png'
+import Hero1Img from '../../assets/LuxuryTravel/Hero1.jpeg'
+import Hero2Img from '../../assets/LuxuryTravel/Hero2.png'
+import Hero3Img from '../../assets/LuxuryTravel/Hero3.jpeg'
+import Section2Image1 from '../../assets/LuxuryTravel/section2_image1.jpeg'
+import Section6Bg from '../../assets/LuxuryTravel/section6_bg.jpeg'
+import Section6Image2 from '../../assets/LuxuryTravel/section6_image2.jpeg'
+import Section7Image from '../../assets/LuxuryTravel/section7_image.png'
+import Section11Bg from '../../assets/LuxuryTravel/section11_bg.png'
 
 // --- FAQ Component Logic ---
 function FAQComponent() {
@@ -162,7 +172,7 @@ function LuxuryTravel() {
                             <figure className="lux-hero-figure">
                                 <div className="lux-figure-inner">
                                     <img
-                                        src="https://uc3f064bbd303043973f703878c2.previews.dropboxusercontent.com/p/thumb/AC-aA8bCoiGzf9Q9awahdPkqN13dvsJc3hp-ppkf5ErBnwT3h4f_1uDadgJvUkF1acU6gIwq69DkXUxP2cPAp9CIWA5XTSNs2FD_dFN7vf-UOqLrN_TvLAArrAOILEiJ2hPSzXKWJUW24ATT71UBdP-Rt3kReh7K3tICysqM9XCGcb1CMqMaF-9rpmWk7H21IssN_hIjBD0TbRFtoV9H3Rx5ChZ7IBYK94OTyrsyWTexN0zALOXULP5AkUMMGswlxu6MNcJmXssnnxPaqYZ-seGi3CSaHAyqi2dfg7ExU1uuhT3sCGl0Jr7ZwhECP1Mu1r63a1iPEsSHppLMulhT7fYSIx8jTn_jJjVfgrdzNeJt6A/p.jpeg"
+                                        src={Section2Image1}
                                         alt="Expert planning for Drake Passage crossing on luxury expedition ship Antarctica"
                                         className="lux-img-fluid"
                                     />
@@ -335,7 +345,7 @@ function LuxuryTravel() {
                 <div className="lux-inner">
 
                     {/* Visual Title Block with Image 1 */}
-                    <div className="lux-method-hero" style={{ backgroundImage: `url('https://uc23929ccb13c0ce43eb9f019c77.previews.dropboxusercontent.com/p/thumb/AC9lXAEHkExMz2U1E4wGYh47-mLDI2nD-na54qBmKcNp4WIZSazFY5Oxj4TiK1BDno0wspYwvIArApLiEnHlkKHA8SjIEG5E5svaoKMC2hBCsYvD_s2TW3oDbKq5Zu_YNEl7L5bmiNzvdDdRz0lVlAOU0rEHaqusME6tJs5c-P1u-rNA7nw2QvugEKTucHErj3GDofWfzTyYNlLOV-CD-xyD07kytnD8OJP9vJOQlUHRjRbQoMMrWch3iqfqjYZphXcEBLaQ9XzklNMfz_hwlZTur-y4d6WuMIsxaHZgqnLzKEUgoVHPHkuWW-E5iVhXdUulmQ4tEUcIHDUUECCL1Rr2OPJYAPQ2ySIkyUF9WB6xpjmUS6oOUhU5Fn0x-xRp-1kpDZWWhdyCfOE_9XfgQCH50K6ocq0rncVBpLG-re4VaEifqv8ZdpozX-xuv0dJbo-fgzJGXGsDOk1MX0ClZ_rB9QqvT7BYMDea6jBEZzrsKw/p.jpeg')` }}>
+                    <div className="lux-method-hero" style={{ backgroundImage: `url(${Section6Bg})` }}>
                         <div className="lux-method-hero-overlay"></div>
                         <div className="lux-method-hero-content">
                             <span className="lux-method-eyebrow">Strategic Methodology</span>
@@ -395,7 +405,7 @@ function LuxuryTravel() {
                         <div className="lux-method-image-side">
                             <div className="lux-image-frame">
                                 <img
-                                    src="https://ucad55844b3e38f2f08c2678b145.previews.dropboxusercontent.com/p/thumb/AC9kZ2H7NTpQFX1uZ-No0IsrRk6gvPXKh-t9lkM0AycMsuUxWWYPFEQaNlvTuvAYbz0WYlevVcVFfZ0SB4UyCXsy0mv9YLuLTF1NIFS3NeUUKfQS5AOpnbF5t03lemXr6aP7uGnKa0yLNNIYJvyE9-IfRe3LNc_kZTy0OhweMDIC5GVz_Wvj-lsvMAZs2z7a56P-kKWsZTBh5nQTMNsgXbhlvNxgCggNDid4q1Y9wrZuRjQaqrqyxqeDC_yJ9svjcjEa8rKr7KcMdVan_LwZ_sil5KRcHWjjSy_Xza8mIs3QDOS7uGz6TKsu8ZjVpyY9OsD20nB97rZK-fy2qzb6bDS16vMpVfJtBLgz93yd5pf3-w/p.jpeg"
+                                    src={Section6Image2}
                                     className="lux-featured-img"
                                 />
                                 <div className="lux-image-caption">Discovery  Destination</div>
@@ -432,7 +442,7 @@ function LuxuryTravel() {
                     <figure className="lux-hero-figure">
                         <div className="lux-figure-inner">
                             <img
-                                src="https://uc4da0417bc686e4f3ae63ffb2dd.previews.dropboxusercontent.com/p/thumb/AC-23vyXZiMnH2p13E4BPfBgJ63tlqCaQ6RjXqHqtFl8gref5taIkCH4sdT1YMEXUun06NFLaw7fnk0Y7qfcg5AQUclkFxaimwhtAi_qsBDlklgxYaLeAxhd-V_HafeNGp2i6QlYjJ2h__kTrqip_IjbRB0Ch1tRw0TP8ha4vP7R3mVekoqZwxQHQCJNDuy3s9t4BV1w05iG32eqbMmb5tXJNZIKItJ2rNuk_0ft5AN5vamVDAA4cpMhXXIM3uwF5mokendzMLyx9Gf2za2hyDY_Ekezf_jkEIL3vdwHLDlBOffPWVC0Chjl7S2c4ctaKvq5A5CNsycWxITVgfOIz17KlwaAikd_TF1RqlnMevI0-Q/p.png"
+                                src={Section7Image}
                                 alt="Drake Passage expedition cruise compared to traditional luxury yacht experience"
                                 className="lux-img-fluid"
                             />
