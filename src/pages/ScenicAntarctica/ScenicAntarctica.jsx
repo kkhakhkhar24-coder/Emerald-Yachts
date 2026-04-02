@@ -55,23 +55,12 @@ function ScenicAntarctica() {
   };
 
   const images = [
-    // "https://ucad543950156cf5951892cfcf68.previews.dropboxusercontent.com/p/thumb/AC_-VR2tAgRX4SbbdyZSMUxJ0Gn_E3zJK7hKvMGx0na6gQxxwPsS9NRBuES1aaQmK0KZcYfrtFRCwoijGvDEosXOg88HW1JjH4bQY6X14_IHWs_nIIAJINHKFcoMByurvNfmKug2H0HEJw9nD7dy8Z99-h0xbmOLLDs5DiSl1Kc1WYT8G_Ub6coAAwa47gbuqtVXi-wOw4DSYoa5fcTLWttcQQcyw-5zefzlTmr52vLOZdkUHVCo1aY0hFImclzaiLzJ2BTxfUklGi2lgbUcYhR_CFPhBWFkdyP-haSuM1a7QSFhEtWQ5wWoHyf5ZarUvrBbBNrx58p-iZIwyXKxFa7viRfY1oVUVwthIuOKOT98yyhgoQuycmWO8fH2Zl-VoTir6hFc9w2GuCvpp89y0YsWIWcvs4olRmTMJtbrRzcc2Q/p.jpeg",
-    // "https://ucd7950d9692d1cde772610c7702.previews.dropboxusercontent.com/p/thumb/AC8T4ZhbVovwny9BwYX2HkgFAPkljbLuPw8BNynXPm2xFlPSBtHt2iiswaiH95Kse5H5q2_fKf5REVhIdZoIdBC9V8YCshT1Kig3prXdAkWoAbr2q2YYpXIxNydkwzM7S6U9U_yxXV4PnNd9LUNnsJRPBETvqLtWBcILYPqp08nSN9kzgY0SvFWd1iXs8sYh4KEUZoP9NwcubQ6GjpJKhfGcSb8wZL4V5OWYipBBHELVwi8RwY3eFbIiKPkLErxiu0vaP1lxrnI7cu3SVhmGPoQF2cIYwV8QgcWtKOdeJmYHteKypxbA-uHjjMuHA7cwNL0nYoRwyExZ0tMzg5ZhW3ifj4YXnkqW14HTM56WsAs8XTz9EKK65gxrDXqHQcZhdMSzGZdM9tAPWvz7ChBaNk6N41vsryWN41Dus0FaVXUX3A/p.jpeg",
-    // "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC_PRH2CFPmhVx0XIwPyFAiNiEAgseUip9MfWSkfBWm8n5Fz-lzwbmJPWj-OGPDmYJp5qaPmKGk0Bcvy3xDY2cVJ2vN7SQ-JupOo1nDfhiUTa_nnZWaYnHKbhXCUH5kzxa3RHD8vfyZJnjOxH027bBi_N6l1vDa_BgtiCXsQR6cP9q6_oDKsLKkMexVBcMHpakg4u14Kw8XGlxT3QNY0e6BfsHLJxnlsdDJ8iLcSJViawKdeArN3ErC_I6TmS7c-5yWrvlPNOwxnoxrQb-XSrvTIVWvUjs_mxFKhxDBgnZ45yPoLiIv8m52c9dUSIo4aZWOyeRvsY6pvHq6FOfyNLujcC3sS4mxyNJJznR3RVoQ8BuxvAqtBBDo9m7UC4iakhDMKXgRcARnvGppJq5mLNwf0l-ifuD7MozvbJ4YZA_wJ5w/p.jpeg"
      SecondPage9,
       SecondPage10,
        SecondPage8
   ];
 
   const galleryImages = [
-    // "https://uc2638e406449897a43dc0796e47.previews.dropboxusercontent.com/p/thumb/AC9WqdDAK77RH-nIhvacxDMuup5aJ4-ukccY9qs-norLuRsB6hdOzfG1JzXXqPxMfrMzbD69yeVvHtcftYxN4e5pie5x1FQSHIInflizXm-b6E6mam9kNaQPRE5ccqfCPCuxSD3GrF41011186_eKERVq7qvwID2_dTJds87WC6SDWieWBKqAz5dnsN_tqh3f1K7wITfCnCzLpKm06k7W7ceUGuhyvWuyDLQsQ8rcPGvP7jCzoTBeVFRovjzQcwhsiBeDMUKTGRfHsvELE03CpsCkCd4qDzvtew_u3YTB48pYS6RT6pk-59BM8oWnXndIIhRkSA9JC4OtctfcMcIKKejSjL2k00Qvr5-fggANf_pmezqCn7BqjZgUq3tl4PMSMxNm4xbo4YEiTq4s16hL_Yo-6h1LUDq0r2SLRPkUGfmhw/p.jpeg",
-    // "https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC_Krb_nJtbHKvZY4l2-eW1N_HyPSJDQnsy5-Yb_KwHmGXRqNamR_AmiIuW31FqulD6_Z34T0mU_zNqv4OAa2zfTXazkh9-flUGbJ7rqVcFJlgG5Qd_TpfrxrU_GfrZA28WKfPAQkQzCjwRi8iiqR34EoRF-6U7o1ODhYoISXJEonwvhVYuhsmyGlrkNHz6PrOLGjuSmBsVZKMNGp9kZvRv8xh0VZBhHzK-fd7dlPTQDb5iHs2heSqEyJOKk4ReSyVlijDHLy_oRLtFYDAM5_XjEyEpwNCGEry1AeygJmCKmPPerBHyU-bMX5ayzCFf_FIqN2EiJl6Kwfx3mjpQ91GGWJtSHvLMraFcruYGQ0tOI3g/p.jpeg",
-    // "https://ucc68ffeff1c43fb342d5b81b9b4.previews.dropboxusercontent.com/p/thumb/AC_CyCuf2q5X4p_Z8dMoQrWrvJwUUAfv3P9D_85ovk8nNs-tmRzWE3dMgNkOFMxZwrqj7cEAYVWX40i17uLjypxqJPY1TbSGcDYvsJebO4M2D6QPjz1hwECkt2XkQsFBMmWGDJO-AR5wCLiWf6fw8sYFgnRhTeh_f1zZsPwNa4P5sDCWBEaUFVz7GF4FQBWRPSgCopdwdFngx3xVhAnfxqta8dZGltdx69Subwj7s-H9SFZA3iuvUsGeJ49speIEk2ZgsNQ3q_OTMd8iv_piMgioBZd9Rn390FCW2wwxs8YWqjtOx7NzG3HFWbHx9Kk-ZZdpW5qkpH1Hb4rAyYAB2eiz9sMFARsNoAzBr4wq2fJDkg/p.jpeg",
-    // "https://uc729644c4abf5f6b2344dc569cf.previews.dropboxusercontent.com/p/thumb/AC_wD0COjP-wglE_eTR5ev9gC5cEoLahAL7V4tbzWIVMVWRNoVbz_CiwS8yodVwEsbngzJqLMsaeFcmmLAwYIzb0v8-ciJGTnC__E16UxS9zT5-qjmvG-cfiydQZv_nNZe1A8RkATOUBU-Xzl2il7mqLz50rWeeWdn-eS1SK4UwW6uAcfzRUixE8fhcGnztCMoFUcadL6WzLVX8I3Q8JIAfMlhge7w6x7iRpPtWdWV27j-4_I2k3Fqh7Ld4c5Xw1Z0CT92dLexcrpLLOwFi_v8tTCR8oV7IdfR1O2LNW21r6KQrCiZP31mG_VQd4Z7nozhY4ZSyjiznaeGEs0DLVtuABfPrEZTHgTrOabDQt6Bfy8w/p.jpeg",
-    // "https://uc19847a53eeb49ff6ce98c13423.previews.dropboxusercontent.com/p/thumb/AC96S-Jvtss46JkbC9ZrNtjE5feaF4wR_Chzwdgp-kNnNiVfXM5mc7CNo4npe03ZvL_nHj82FcHgcKwHmZKFEpdb8fBhJKLrUOKI3lQZTALotpFTXcAbqWKRYu-fQBU6UeCKBRcDvvHInSeutv_Lo_4Tf3yzo9fB_EZ_my5C1ob62a-QT7V5sUeFQNhpNLmgBToUIgL5zecci-nNBbsAn7dLZ0yAJSZg_oCzc53ronHwxPN6edOXU5eml_Tt0lpQK_49Qz40YkqnX_As-fPHRWCUO-ft4kPWPbmpJ9FlXYBLJvqiUEEtiNEVAbE3u5zRVDW_Wh2LPzkmy0q_B54fxtb471OTPA_JGi1kQxgHJQYqbw/p.jpeg",
-    // "https://uc8524b4870d68527df3f2365a3b.previews.dropboxusercontent.com/p/thumb/AC9vme7oRJb7_EHQ9kb-qQ-0fIGbLuaCxJJgzlvmQh-vKqgr2oLvVn6XExzdjjkFekwEQ8cN7tLtt5JqsnUGwKpq5QeFfSSGYcNkKAal8Xjyuj54s4FMNG6zsaTcaEfASaY5UcVITmjPqV5j2xmwatVfxpRIpUsMKrH7aIvQjGJYPhNwcndwB2n2zB8YUOFvmkhzOx8iqx2bUjQX3Zn84HAaJg9FCAFtl9LYH4OTNALc1dRgGHBVpJCWFsB0DjeqH7yJqJRl903qmgyUyrx_wzLl8VujmOHFpRhyuoZGuxwNdHpe5u_nAnIhtv65KEtSRIzfBTSaMIDSKQF88PHf3yjJ5s8msNQGXXXH1bnD2-wEUQ/p.jpeg",
-    // "https://uc4d774fa30995fb504b9c28d7f4.previews.dropboxusercontent.com/p/thumb/AC9z7B_aBdn6zkpXoa58J2NQbUbtROupZrFrqWZEGU5nGTiA6hm5LN2zYfVkcMbjPY1fOC3Xcst_G8M4Wj_61kxHPBYVjqSqreP5ER0Mv_AcJybLR8jxGaRP0bcsYn4y1WlxjWW9ap6mkQHwr9bwHLHF42vp4-bygFKX9Oqp8Ke3g7fBkKygcIBm86O0tyIYrOdBuYWpPd65x8tXz9jQAf03sAc0j7msGOHz_bown9bKw3evonDakNG9RPEXmUhS89-aiIqaGecxo25KMx7TaeUfa5lxValvSOwbNkJJ5F_YVAaENbvLzrMmV6xf5Ryb-EpG6EP2vI-GZ-lzpEKJ-OEy_dTpt-C2Ejin8VmjHo4hrw/p.jpeg"
-
     SecondPage7,SecondPage6,SecondPage5,SecondPage4,SecondPage3,SecondPage1
   ];
 
@@ -104,9 +93,7 @@ function ScenicAntarctica() {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-          {/* <div className="page_breadcrumb">
-            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Scenic Antarctica Cruises</span>
-          </div> */}
+         
           <h1>Scenic Antarctica Cruises</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
@@ -638,87 +625,6 @@ function ScenicAntarctica() {
           </p>
         </div>
       </section>
-
-      {/* ================= SECTION 14 (FAQ) ================= */}
-      {/* <section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 1 ? null : 1)}>
-      <div className="Scenic_faq_question">
-        <span>What is a Scenic Antarctica cruise?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 1 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 1 && (
-        <p className="Scenic_faq_answer">
-          An expedition voyage with guided landings, zodiac excursions, and all-inclusive luxury.
-        </p>
-      )}
-    </div>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 2 ? null : 2)}>
-      <div className="Scenic_faq_question">
-        <span>How much does it cost?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 2 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 2 && (
-        <p className="Scenic_faq_answer">
-          Pricing varies based on suite, timing, and itinerary.
-        </p>
-      )}
-    </div>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 3 ? null : 3)}>
-      <div className="Scenic_faq_question">
-        <span>What is included?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 3 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 3 && (
-        <p className="Scenic_faq_answer">
-          Accommodation, dining, beverages, and guided excursions.
-        </p>
-      )}
-    </div>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 4 ? null : 4)}>
-      <div className="Scenic_faq_question">
-        <span>Best time to travel?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 4 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 4 && (
-        <p className="Scenic_faq_answer">
-          December–February for wildlife, November & March for unique conditions.
-        </p>
-      )}
-    </div>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 5 ? null : 5)}>
-      <div className="Scenic_faq_question">
-        <span>How early to book?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 5 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 5 && (
-        <p className="Scenic_faq_answer">
-          12–24 months in advance.
-        </p>
-      )}
-    </div>
-
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 6 ? null : 6)}>
-      <div className="Scenic_faq_question">
-        <span>Is it physically demanding?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 6 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 6 && (
-        <p className="Scenic_faq_answer">
-          Moderate mobility required.
-        </p>
-      )}
-    </div>
-
-  </div>
-</section> */}
 
       <section className="Scenic-faq-section">
         <div className="Scenic-faq-inner">
