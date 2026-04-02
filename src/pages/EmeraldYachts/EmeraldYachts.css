@@ -149,12 +149,15 @@
   .Emerald_hero_content h1 {
     font-size: 32px;
   }
+  .Emerald_hero_content p{
+    font-size: 17px;
+  }
 }
 
 
 @media (max-width: 480px) {
   .Emerald_hero_content h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .Emerald_hero_content p{
     font-size: 16px;
@@ -217,6 +220,9 @@
 
   .Emerald_about_section .Emerald_about_inner h2 {
     font-size: 28px;
+  }
+  .Emerald_about_section .Emerald_about_inner p {
+    font-size: 17px;
   }
 }
 
@@ -320,6 +326,9 @@
   .Emerald_experience_text h2::after {
     margin: 12px auto 0;
   }
+  .Emerald_experience_text p{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -388,6 +397,9 @@
 
   .Emerald_planning_section .Emerald_planning_inner h2 {
     font-size: 28px;
+  }
+  .Emerald_planning_section .Emerald_planning_inner p{
+    font-size: 17px;
   }
 }
 
@@ -578,7 +590,7 @@
   }
 
   .Emerald_insight_content h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 35px;
   }
   .Emerald_insight_flex{
@@ -586,12 +598,18 @@
   }
 
   .Emerald_team_sub h3 {
-    font-size: 1.6rem;
+    font-size: 24px;
   }
 
   .Emerald_highlight_text {
-    font-size: 1.05rem;
+    font-size: 16px;
     padding: 6px 12px;
+  }
+  .Emerald_expert_sub p{
+    font-size: 17px;
+  }
+  .Emerald_team_sub p{
+    font-size: 17px;
   }
 }
 
@@ -611,6 +629,9 @@
   
   .Emerald_insight_image_wrapper {
     border-radius: 16px;
+  }
+  .Emerald_team_highlights li{
+    font-size: 15px;
   }
 }
 
@@ -748,14 +769,32 @@
   .Emerald_recognition_section {
     padding: 70px 15px;
   }
+  .Emerald_recognition_sub{
+    font-size: 17px;
+  }
   
   .Emerald_recognition_inner h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   
   .Emerald_awards_row {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .Emerald_media_name{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Emerald_recognition_inner h2 {
+    font-size: 24px;
+  }
+  .Emerald_recognition_inner p{
+    font-size: 16px;
+  }
+  .Emerald_media_name{
+    font-size: 16px;
   }
 }
 /* ================= IDEAL SECTION ================= */
@@ -828,9 +867,15 @@
   .Emerald_ideal_section {
     padding: 50px 15px;   /* ✅ SAME responsive spacing */
   }
+  .Emerald_highlight_blue{
+    font-size: 17px;
+  }
 
   .Emerald_ideal_inner h2 {
     font-size: 28px;
+  }
+  .Emerald_ideal_inner p{
+    font-size: 17px;
   }
 }
 
@@ -898,6 +943,9 @@
 
   .Emerald_about_yachts_inner h2 {
     font-size: 28px;
+  }
+  .Emerald_about_yachts_inner p{
+    font-size: 17px;
   }
 }
 
@@ -1031,6 +1079,9 @@
   .Emerald_expert_cards {
     grid-template-columns: 1fr;
   }
+  .Emerald_expert_card p{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1039,7 +1090,7 @@
   }
 
   .Emerald_expert_inner p {
-    font-size: 1rem;
+    font-size: 15px;
   }
 }
 
@@ -1126,6 +1177,9 @@
 
   .Emerald_method_inner h2 {
     font-size: 28px;
+  }
+  .Emerald_method_step p{
+    font-size: 17px;
   }
 }
 
@@ -1282,7 +1336,7 @@
 }
 
 .emerald_faq_item {
-  border-top: 1px solid #e4e9ee;
+  border-top: 1px solid #d8d8d8;
   padding: 20px 0;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1329,7 +1383,13 @@
   .emerald_faq_question { 
     font-size: 1rem; 
   }
+  .emerald_faq_inner h2{
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 480px) {
+  .emerald_faq_inner h2{
+    font-size: 24px;
+  }
 }

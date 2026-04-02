@@ -4,16 +4,16 @@ import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
 import myImage from "../../assets/image.jpg";
 import { Award, Globe, Shield, Star } from "lucide-react";
+import anta1 from "../../assets/antarctica-cruise-cost/anta1.jpg";
+import anta2 from "../../assets/antarctica-cruise-cost/anta2.jpg";
+import anta3 from "../../assets/antarctica-cruise-cost/anta3.jpg";
+import anta5 from "../../assets/antarctica-cruise-cost/anta5.jpg";
 
 const AntarcticaCostPage = () => {
   const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
 
-  const images = [
-    "https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC-f59Ur5xGGyOCMYLNohyucakaS3QwX1RM2CMh8oWWd3eaK_CkdjTWmO3_bm0Ogvs1evbgdvudSC1PisNok0pmmXEnk5YQZfE68CbVLjg5FOMRfqGeuG_wjsU9HpaB_RrQUlHAM0DQG05NwhvbHJT7_uw3YkRdk0HqQ3Rxbfp5poyRfBdsQvE1rBK9B1eu8Ly_jqKv6ExohHF27PwLSiBdx2pjYM_VM79eOt-EQNe6zZgFB-kUQDnme5Z3L76HS35qp_voRelcaSQuf__hslb5Mfmq_GrB7DRTezE-8NW8d6LVvaq-9n5ZceJgX3ZjPXXr45aiJCwAZ8SE3N3zr-thfwvTv72KpQGyWiVy1I8y5fQ/p.jpeg",
-    "https://ucdc7d2491b8ae7078e0a94d0cd5.previews.dropboxusercontent.com/p/thumb/AC_XnIpKn5JuIUrkF4pUk0_c7O6uQQkNKOiEnBzO4PyMOnkiIQ34aPpFrgkN7iird98gbOkQi5QT5n9xvRckaJFf1tGiQWmNVLmDCqAuWpmMnDyHdJz0mlPgciacl5FER1Z2Y0xqDZa4eaUAOw3oCiYvxE_OE-VMSjsc7U_riBsE1aqOuG-39B5TkWJHx_rhCKqQI3dE8Vo4KgI7Vu-7txBLaiP34UP-XqNAPZCkLXvyC4XiqHlu9T7gUC5qWsdID88H1D_55RqBM6vXLEkiS1LsIoZqytYEnbeIrjP8RKpu47u3yLIJAUNeHTGvNCJXeGV2mUrlbZMFWqii4he2XTk4gkzH66IKIAdBqYouQJrhGC2yqey4cnazgvrK04O4MeSBl0TIhQjtXWApEzPPZeR1pauZ8wj8NO9OpClx-L5FGQ/p.jpeg",
-    "https://uce1f6ac3f845bdc5773c87e7298.previews.dropboxusercontent.com/p/thumb/AC_p0FqWtm4iozch9vlQqXwrh4Zlvb0-NmIaNY0dQgwJCznWaYoV-R9w61gDta0c9P0jc1Yl48aOXncsGWPyNbpl5ZWyV7T6813-L6lGq4-jobevtobSWFE1TFYPA08pZmi67Pa-up8M3Aq7B-3abJNe_9ZWpl2dBcZO0mQ3thJh3MpTjFhr3I7njn7FKMqXKsKFWM-BO2q7O8UySkvJ09X0JkH6Fw6jZOxaCdV6vvwJd9LGrwt0g0WgpXGqK8dVkcbf-Sn_laDc5lfRKe7qCa028WsNh3UvOo6hhj0VHt8jvJ-OyvBrYrdgMApzlEZxg8uoO9qzHJiah6FylUNIwW5K9SJzM7i0NH-S8PCD7Yhydw/p.jpeg",
-  ];
+  const images = [anta1, anta2, anta3];
 
   useEffect(() => {
     const slider = setInterval(() => {
@@ -41,7 +41,9 @@ const AntarcticaCostPage = () => {
           </div> */}
           <h1>How Much Does an Antarctica Cruise Cost</h1>
 
-          <p className="anta_hero_p">Understanding the real investment in Antarctica travel</p>
+          <p className="anta_hero_p">
+            Understanding the real investment in Antarctica travel
+          </p>
 
           <p>
             Antarctica is one of the most exclusive travel experiences in the
@@ -86,11 +88,11 @@ const AntarcticaCostPage = () => {
           <h2>Antarctica Cruise Cost at a Glance</h2>
 
           <p className="anta_overview_lead">
-            Typical Antarctica expedition pricing falls into the following ranges:
+            Typical Antarctica expedition pricing falls into the following
+            ranges:
           </p>
 
           <div className="anta_tier_cards">
-
             <div className="anta_tier_card anta_tier_card--entry">
               <div className="anta_tier_icon">
                 <i className="fas fa-anchor"></i>
@@ -117,18 +119,17 @@ const AntarcticaCostPage = () => {
               <div className="anta_tier_price">$25,000 – $50,000+</div>
               <div className="anta_tier_sub">per person</div>
             </div>
-
           </div>
 
           <div className="anta_overview_note">
             <i className="fas fa-info-circle"></i>
             <p>
               Most clients planning Antarctica with our team fall within the
-              <strong> $20,000 to $40,000</strong> range, where the experience is fully
-              structured and aligned with expectations. Antarctica is not priced like
-              traditional travel — it reflects restricted access, limited capacity, and
-              the level of execution required to operate in one of the most remote
-              environments in the world.
+              <strong> $20,000 to $40,000</strong> range, where the experience
+              is fully structured and aligned with expectations. Antarctica is
+              not priced like traditional travel — it reflects restricted
+              access, limited capacity, and the level of execution required to
+              operate in one of the most remote environments in the world.
             </p>
           </div>
         </div>
@@ -140,11 +141,11 @@ const AntarcticaCostPage = () => {
           <h2>Real Antarctica Cruise Pricing Examples</h2>
 
           <p className="anta_examples_lead">
-            To provide context beyond general ranges, here are typical real-world pricing scenarios:
+            To provide context beyond general ranges, here are typical
+            real-world pricing scenarios:
           </p>
 
           <div className="anta_voyage_cards">
-
             <div className="anta_voyage_card">
               <div className="anta_voyage_nights">10 nights</div>
               <div className="anta_voyage_brand">HX Expeditions</div>
@@ -159,7 +160,11 @@ const AntarcticaCostPage = () => {
 
             <div className="anta_voyage_card">
               <div className="anta_voyage_nights">12 nights</div>
-              <div className="anta_voyage_brand">Lindblad Expeditions<br /><span>with National Geographic</span></div>
+              <div className="anta_voyage_brand">
+                Lindblad Expeditions
+                <br />
+                <span>with National Geographic</span>
+              </div>
               <div className="anta_voyage_divider"></div>
               <div className="anta_voyage_price">
                 <span className="anta_voyage_from">approx.</span>
@@ -183,7 +188,11 @@ const AntarcticaCostPage = () => {
 
             <div className="anta_voyage_card">
               <div className="anta_voyage_nights">11 nights</div>
-              <div className="anta_voyage_brand">Scenic Luxury Cruises<br /><span>&amp; Tours</span></div>
+              <div className="anta_voyage_brand">
+                Scenic Luxury Cruises
+                <br />
+                <span>&amp; Tours</span>
+              </div>
               <div className="anta_voyage_divider"></div>
               <div className="anta_voyage_price">
                 <span className="anta_voyage_from">approx.</span>
@@ -192,12 +201,12 @@ const AntarcticaCostPage = () => {
               <div className="anta_voyage_pp">per person</div>
               <div className="anta_voyage_bar anta_voyage_bar--4"></div>
             </div>
-
           </div>
 
           <p className="anta_examples_note">
-            Pricing varies based on suite category, timing, and availability, but these examples
-            reflect how Antarctica pricing typically scales across brands.
+            Pricing varies based on suite category, timing, and availability,
+            but these examples reflect how Antarctica pricing typically scales
+            across brands.
           </p>
         </div>
       </section>
@@ -208,39 +217,59 @@ const AntarcticaCostPage = () => {
           <h2>Antarctica Cruise Pricing by Expedition Level</h2>
 
           <div className="anta_ladder_grid">
-
             <div className="anta_ladder_card">
               <div className="anta_ladder_badge">Entry Expedition</div>
-              <div className="anta_ladder_price">$8,000 – $15,000 <span>per person</span></div>
+              <div className="anta_ladder_price">
+                $8,000 – $15,000 <span>per person</span>
+              </div>
               <p className="anta_ladder_label">Typical brands</p>
               <p>HX Expeditions, Atlas Ocean Voyages</p>
-              <p className="anta_ladder_focus">Focus: expedition-first experience with minimal luxury</p>
+              <p className="anta_ladder_focus">
+                Focus: expedition-first experience with minimal luxury
+              </p>
             </div>
 
             <div className="anta_ladder_card">
-              <div className="anta_ladder_badge anta_ladder_badge--premium">Premium Expedition</div>
-              <div className="anta_ladder_price">$15,000 – $25,000 <span>per person</span></div>
+              <div className="anta_ladder_badge anta_ladder_badge--premium">
+                Premium Expedition
+              </div>
+              <div className="anta_ladder_price">
+                $15,000 – $25,000 <span>per person</span>
+              </div>
               <p className="anta_ladder_label">Typical brands</p>
               <p>Lindblad Expeditions, Ponant</p>
-              <p className="anta_ladder_focus">Focus: balance of comfort and exploration</p>
+              <p className="anta_ladder_focus">
+                Focus: balance of comfort and exploration
+              </p>
             </div>
 
             <div className="anta_ladder_card">
-              <div className="anta_ladder_badge anta_ladder_badge--luxury">Ultra-Luxury Expedition</div>
-              <div className="anta_ladder_price">$25,000 – $50,000+ <span>per person</span></div>
+              <div className="anta_ladder_badge anta_ladder_badge--luxury">
+                Ultra-Luxury Expedition
+              </div>
+              <div className="anta_ladder_price">
+                $25,000 – $50,000+ <span>per person</span>
+              </div>
               <p className="anta_ladder_label">Typical brands</p>
               <p>Silversea Cruises, Seabourn Cruise Line</p>
-              <p className="anta_ladder_focus">Focus: luxury accommodations with full expedition access</p>
+              <p className="anta_ladder_focus">
+                Focus: luxury accommodations with full expedition access
+              </p>
             </div>
 
             <div className="anta_ladder_card">
-              <div className="anta_ladder_badge anta_ladder_badge--discovery">Ultra-Luxury Discovery Yacht</div>
-              <div className="anta_ladder_price">$30,000 – $60,000+ <span>per person</span></div>
+              <div className="anta_ladder_badge anta_ladder_badge--discovery">
+                Ultra-Luxury Discovery Yacht
+              </div>
+              <div className="anta_ladder_price">
+                $30,000 – $60,000+ <span>per person</span>
+              </div>
               <p className="anta_ladder_label">Typical brands</p>
               <p>Scenic Luxury Cruises &amp; Tours</p>
-              <p className="anta_ladder_focus">Focus: modern, all-inclusive, design-forward experience</p>
+              <p className="anta_ladder_focus">
+                Focus: modern, all-inclusive, design-forward experience
+              </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -259,7 +288,8 @@ const AntarcticaCostPage = () => {
             <p>
               Some prioritize expedition depth and choose brands such as HX or
               Lindblad. Others prefer a balance of comfort and exploration. Many
-              opt for fully structured luxury experiences with Scenic or Silversea.
+              opt for fully structured luxury experiences with Scenic or
+              Silversea.
             </p>
 
             <p className="anta_clients_highlight">
@@ -272,10 +302,12 @@ const AntarcticaCostPage = () => {
                 <div className="anta_author_header">
                   <div className="anta_author_signature">
                     <h2>Planned and Curated by Angela Hughes</h2>
-                    <p className="anta_author_role">CEO & Founder, Trips & Ships Luxury Travel</p>
+                    <p className="anta_author_role">
+                      CEO & Founder, Trips & Ships Luxury Travel
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="anta_author_highlights">
                   <div className="anta_author_tag">
                     <Star size={14} className="anta_icon" />
@@ -297,11 +329,11 @@ const AntarcticaCostPage = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="anta_clients_image">
-            <img 
+            <img
               src={myImage}
-              alt="Luxury Antarctica Expedition with Angela Hughes" 
+              alt="Luxury Antarctica Expedition with Angela Hughes"
             />
           </div>
         </div>
@@ -327,33 +359,44 @@ const AntarcticaCostPage = () => {
         <div className="anta_total_inner">
           <div className="anta_section_header">
             <h2>What Your Total Antarctica Trip Really Costs</h2>
-            <p>Beyond the cruise fare, plan for the full journey from doorstep to doorstep:</p>
+            <p>
+              Beyond the cruise fare, plan for the full journey from doorstep to
+              doorstep:
+            </p>
           </div>
 
           <div className="anta_total_grid">
             <div className="anta_total_card">
-              <div className="anta_total_icon"><i className="fas fa-ship"></i></div>
+              <div className="anta_total_icon">
+                <i className="fas fa-ship"></i>
+              </div>
               <h3>Cruise</h3>
               <div className="anta_total_price">$15,000 – $50,000+</div>
               <p>Per Person</p>
             </div>
 
             <div className="anta_total_card">
-              <div className="anta_total_icon"><i className="fas fa-plane"></i></div>
+              <div className="anta_total_icon">
+                <i className="fas fa-plane"></i>
+              </div>
               <h3>Flights</h3>
               <div className="anta_total_price">$1,500 – $6,000+</div>
               <p>Main Cabin to Biz</p>
             </div>
 
             <div className="anta_total_card">
-              <div className="anta_total_icon"><i className="fas fa-hotel"></i></div>
+              <div className="anta_total_icon">
+                <i className="fas fa-hotel"></i>
+              </div>
               <h3>Hotels and transfers</h3>
               <div className="anta_total_price">$500 – $2,000</div>
               <p>Average Stay</p>
             </div>
 
             <div className="anta_total_card">
-              <div className="anta_total_icon"><i className="fas fa-shield-alt"></i></div>
+              <div className="anta_total_icon">
+                <i className="fas fa-shield-alt"></i>
+              </div>
               <h3>Travel insurance</h3>
               <div className="anta_total_price">$500 – $2,500</div>
               <p>Essential Prep</p>
@@ -368,7 +411,10 @@ const AntarcticaCostPage = () => {
             </div>
             <div className="anta_summary_cta">
               <i className="fas fa-info-circle"></i>
-              <span>Reflects the full cost of executing the journey with premium standards.</span>
+              <span>
+                Reflects the full cost of executing the journey with premium
+                standards.
+              </span>
             </div>
           </div>
         </div>
@@ -381,23 +427,33 @@ const AntarcticaCostPage = () => {
 
           <div className="anta_expert_cards">
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-bed"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-bed"></i>
+              </div>
               <p>Suite category</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-calendar-alt"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-calendar-alt"></i>
+              </div>
               <p>Length of itinerary</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-snowflake"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-snowflake"></i>
+              </div>
               <p>Travel month</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-ship"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-ship"></i>
+              </div>
               <p>Expedition brand</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-plane"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-plane"></i>
+              </div>
               <p>Air and pre/post arrangements</p>
             </div>
           </div>
@@ -442,7 +498,9 @@ const AntarcticaCostPage = () => {
           <div className="anta_cost_list">
             <div className="anta_cost_item">
               <p>Entry</p>
-              <span>Expedition-focused experience with minimal onboard luxury</span>
+              <span>
+                Expedition-focused experience with minimal onboard luxury
+              </span>
             </div>
             <div className="anta_cost_item">
               <p>Premium</p>
@@ -450,7 +508,9 @@ const AntarcticaCostPage = () => {
             </div>
             <div className="anta_cost_item">
               <p>Luxury</p>
-              <span>Full service, structure, and elevated onboard experience</span>
+              <span>
+                Full service, structure, and elevated onboard experience
+              </span>
             </div>
           </div>
         </div>
@@ -468,7 +528,9 @@ const AntarcticaCostPage = () => {
             </div>
             <div className="anta_method_step">
               <span className="anta_step_number">02</span>
-              <p>Focusing only on base price without understanding inclusions</p>
+              <p>
+                Focusing only on base price without understanding inclusions
+              </p>
             </div>
             <div className="anta_method_step">
               <span className="anta_step_number">03</span>
@@ -486,34 +548,33 @@ const AntarcticaCostPage = () => {
       <section className="anta_why_section">
         <div className="anta_why_inner">
           <div className="anta_why_flex">
-            
             {/* CONTENT (LEFT) */}
             <div className="anta_why_content">
               <h2>Why Antarctica Is Priced Differently</h2>
 
               <p>
-                Antarctica is one of the few destinations in the world where pricing
-                reflects access rather than amenities.
+                Antarctica is one of the few destinations in the world where
+                pricing reflects access rather than amenities.
               </p>
 
               <p>
-                The investment is driven by logistics, regulation, and the ability
-                to operate in a remote and protected environment.
+                The investment is driven by logistics, regulation, and the
+                ability to operate in a remote and protected environment.
               </p>
-              
+
               <div className="anta_why_highlight_box">
-                <p>Every voyage operates under strict environmental guidelines and requires specialized equipment, crew, and insurance to ensure safe and responsible exploration.</p>
+                <p>
+                  Every voyage operates under strict environmental guidelines
+                  and requires specialized equipment, crew, and insurance to
+                  ensure safe and responsible exploration.
+                </p>
               </div>
             </div>
 
             {/* IMAGE (RIGHT) */}
             <div className="anta_why_image">
-              <img 
-                src="https://uc398519f547a13156d03710fc3f.previews.dropboxusercontent.com/p/thumb/AC9fAamaoGSeLj5dOxeZ7NkWZOWZpACeivB0iiFLhmXwM2C-kET3fB8vudrdQ_9-psEqlIet_IDwofeJdP--PAFzSqoBITiWXSYF8nljo-hLtFv7g9iYVV5snSbDfFGTgwLsUkY_9wEJgr5PC4TyaqDTS8G-nejoxfxr5Sypm8VHuwNohoTf8R4fYzjYKiAgV5K5RaMZ67mwHUNWGbXisF6rTWA72Cndrgc5sUA2wp0gGKh__vXoXd4StS5ZGqFTVOJ5hTwPFkiGwO2ZZc-kAZUu69SQhkkIiAYni8e3q9UvIjCapqYT5o63A13gApZCxWVhL3lqasELkOLBGilDrsk7lcU53lsgtYC_n7Bo3qaXMg/p.jpeg" 
-                alt="Antarctic Expedition Logistics" 
-              />
+              <img src={anta5} alt="Antarctic Expedition Logistics" />
             </div>
-
           </div>
         </div>
       </section>
@@ -536,12 +597,12 @@ const AntarcticaCostPage = () => {
       <section className="anta_video_section">
         <div className="anta_video_inner">
           <div className="anta_video_wrapper">
-            <video 
-              src="/Antarctica LTT _ 30sec TVC.mp4" 
-              autoPlay 
-              muted 
-              loop 
-              playsInline 
+            <video
+              src="/Antarctica LTT _ 30sec TVC.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
               controls
               className="anta_showcase_video"
             >
@@ -608,19 +669,27 @@ const AntarcticaCostPage = () => {
 
           <div className="anta_expert_cards">
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-compass"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-compass"></i>
+              </div>
               <p>Strategic guidance across all expedition brands</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-star"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-star"></i>
+              </div>
               <p>Access to preferred inventory</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-map-marked-alt"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-map-marked-alt"></i>
+              </div>
               <p>Full itinerary planning</p>
             </div>
             <div className="anta_expert_card">
-              <div className="anta_icon_box"><i className="fas fa-headset"></i></div>
+              <div className="anta_icon_box">
+                <i className="fas fa-headset"></i>
+              </div>
               <p>Ongoing support throughout the journey</p>
             </div>
           </div>

@@ -12,10 +12,9 @@
   text-align: center;
 }
  
-/* Fix button alignment — remove the left offset from senianta-primary */
 .senianta-hero-buttons--centered {
   justify-content: center;
-  margin-left: 0 !important;
+  margin: 0 auto !important;
 }
  
 .senianta-primary--no-offset {
@@ -112,6 +111,7 @@
   letter-spacing: 1px;
   transition: 0.3s;
   margin-left: 0;
+  margin-top: 12px;
 }
 
 .senianta-primary:hover {
@@ -153,15 +153,15 @@
   }
 
   .senianta-hero h1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .senianta-lead {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .senianta-extra-text {
-    font-size: 14px;
+    font-size: 17px;
     max-width: 90%;
     margin: 0 auto;
   }
@@ -186,7 +186,7 @@
   }
 
   .senianta-hero h1 {
-    font-size: 42px;
+    font-size: 32px;
     text-align: center;
   }
 
@@ -194,7 +194,7 @@
   .senianta-sub,
   .senianta-extra-text {
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
   }
 
@@ -394,13 +394,13 @@
   }
 
   .senianta-glance-inner h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .senianta-glance-th,
   .senianta-glance-td {
     padding: 16px 18px;
-    font-size: 0.9rem;
+    font-size: 17px;
   }
 
   .senianta-glance-td--label {
@@ -416,7 +416,7 @@
   .senianta-glance-th,
   .senianta-glance-td {
     padding: 14px 14px;
-    font-size: 0.82rem;
+    font-size: 16px;
   }
 }
 
@@ -576,7 +576,7 @@
   }
 
   .senianta-differences-card h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
   
   .senianta-differences-columns {
@@ -594,7 +594,7 @@
 
   .senianta-diff-list span,
   .senianta-differences-senianta-emphasis {
-    font-size: 1rem;
+    font-size: 17px;
   }
 }
 
@@ -605,7 +605,7 @@
 
   .senianta-diff-list span,
   .senianta-differences-senianta-emphasis {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .senianta-diff-brand{
     font-size: 17px;
@@ -635,7 +635,7 @@
 .senianta-ship-exp-image {
   width: 100%;
   height: 480px;
-  background: url('https://uceaa5075cbc1cb0bcfba473fc4d.previews.dropboxusercontent.com/p/thumb/AC_a1fnToWcyTTXv3EtpZCR4bO4y_Ug9AY3d2pmRxgOjHL-3p05vDOc_ZNEgGNaPMzXCEWPOCRFBlrQdelw-nXnADYQxAkUR-LRyElhKAdpri5qjQYuXGXoPbRBic2san8GQxZChRhWlyucqWeVxhPROmtCkHh-KGaBrK4trUQ3DXo264CY8SiyJjzD_azFeaV_qx2QXvoI8pXNSLC68fj-zVYtgn_tdBaGvGw4Ou36DerHtdAxGo5c_7L4vcZXfUH0m5QH-ZMriG14HW2NwvH32ovgk5b6ZVit4sK84Uvq4r_EVo7Z2smVg-JofBaoRyVE3XWqc36rye5fjPRGFUYsiMJnVTJCfNNfZgN6xC8QraA/p.jpeg') center/cover no-repeat;
+  background: url('../../assets//scenic-vs-silversea-antarctica/scenisilver4.jpg') center/cover no-repeat;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   order: 2;
@@ -725,7 +725,7 @@
 
   .senianta-ship-exp-text p,
   .senianta-ship-exp-text .senianta-emphasis {
-    font-size: 1rem;
+    font-size: 17px;
     text-align: center;
   }
 }
@@ -838,7 +838,7 @@
 
   .senianta-expedition-inner p,
   .senianta-expedition-inner .senianta-emphasis {
-    font-size: 1rem;
+    font-size: 17px;
   }
 }
 
@@ -849,7 +849,7 @@
 
   .senianta-expedition-inner p,
   .senianta-expedition-inner .senianta-emphasis {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -989,7 +989,7 @@
 
 .senianta-emphasis--decision {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
   color: #274472 !important;
   font-style: italic;
   font-weight: 300 !important;
@@ -1022,7 +1022,7 @@
   }
   
   .senianta-pricing-intro {
-    font-size: 1.1rem;
+    font-size: 17px;
     margin-bottom: 40px;
   }
 }
@@ -1321,6 +1321,14 @@
   line-height: 1.7;
 }
 
+@media (max-width: 768px) {
+  .senianta-consultant-tip p { font-size: 17px; }
+}
+
+@media (max-width: 480px) {
+  .senianta-consultant-tip p { font-size: 16px; }
+}
+
 .senianta-consultant-tip strong {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1353,14 +1361,14 @@
   .senianta-pricing-value-inner h2,
   .senianta-drake-passage-inner h2,
   .senianta-mistakes-inner h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .senianta-pricing-content p,
   .senianta-drake-content p,
   .senianta-choice-list li,
   .senianta-mistakes-inner .senianta-emphasis {
-    font-size: 1rem;
+    font-size: 17px;
     text-align: center;
   }
   
@@ -1594,7 +1602,7 @@
 
 .senianta-step-item p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
   color: #274472;
   font-weight: 300;
@@ -1685,16 +1693,36 @@
 
 .senianta-why-story p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.15rem;
+
   line-height: 1.8;
   color: #274472cc;
   margin-bottom: 25px;
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  .senianta-why-story p { font-size: 17px;
+  text-align: center; }
+  .senianta-lead-expertise{
+    font-size: 20px !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .senianta-why-story p { font-size: 16px; }
+  .senianta-lead-expertise{
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .senianta-why-benefits-grid h3{
+    font-size: 20px !important;
+  }
+}
+
 .senianta-lead-expertise {
   font-family: 'Playfair Display', serif !important;
-  font-size: 1.6rem !important;
+  font-size: 1.6rem;
   color: #274472 !important;
   line-height: 1.4 !important;
   font-weight: 500 !important;
@@ -1703,7 +1731,7 @@
 
 .senianta-emphasis--guided {
   font-style: italic;
-  font-size: 1.3rem !important;
+  font-size: 1.3rem;
   color: #274472 !important;
   margin-top: 40px;
   padding-left: 20px;
@@ -1735,8 +1763,9 @@
 
 .senianta-benefit-item {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
 }
 
 .senianta-benefit-icon {
@@ -1748,10 +1777,11 @@
 
 .senianta-benefit-item p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
+  font-size: 17px;
   color: #274472cc;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 500;
+  margin: 0;
 }
 
 /* =====================================================
@@ -1880,6 +1910,15 @@
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  .senianta-recognition-list li { font-size: 17px; }
+  .senianta-stat-icon{font-size: 20px;}
+}
+
+@media (max-width: 480px) {
+  .senianta-recognition-list li { font-size: 16px; }
+}
+
 .senianta-recognition-list li::before {
   content: "✦";
   position: absolute;
@@ -1891,6 +1930,9 @@
   .senianta-professional-card {
     padding: 40px 30px;
   }
+  .senianta-auth-stat-item .senianta-stat-val{
+  font-size: 32px;
+}
   
   .senianta-card-header {
     flex-direction: column;
@@ -1902,11 +1944,14 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .senianta-auth-title h3 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 480px) {
   .senianta-auth-title h3 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 22px;
   }
   .senianta-auth-stat-item .senianta-stat-val {
@@ -1932,7 +1977,7 @@
 }
 
 .senianta-faq-inner h2 {
-  font-size: 52px;
+  font-size: 32px;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #274472;
@@ -1966,9 +2011,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 20px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16.5px;
+  font-size: 18px;
     color: #2f4a6d;
     font-weight: 500;
   transition: color 0.3s ease;
@@ -2003,12 +2048,16 @@
 
 .senianta-faq-answer p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
-  color: #777777;
+  color: #274472cc;
   font-weight: 300;
   margin: 0;
   max-width: 90%;
+}
+
+@media (max-width: 480px) {
+  .senianta-faq-answer p { font-size: 16px; }
 }
 
 @media (max-width: 768px) {
@@ -2034,7 +2083,7 @@
 .senianta-final-reach {
   position: relative;
   padding: 100px 20px;
-   background: url('https://ucb3eb83518843a4a3afe89fb158.previews.dropboxusercontent.com/p/thumb/AC_Krb_nJtbHKvZY4l2-eW1N_HyPSJDQnsy5-Yb_KwHmGXRqNamR_AmiIuW31FqulD6_Z34T0mU_zNqv4OAa2zfTXazkh9-flUGbJ7rqVcFJlgG5Qd_TpfrxrU_GfrZA28WKfPAQkQzCjwRi8iiqR34EoRF-6U7o1ODhYoISXJEonwvhVYuhsmyGlrkNHz6PrOLGjuSmBsVZKMNGp9kZvRv8xh0VZBhHzK-fd7dlPTQDb5iHs2heSqEyJOKk4ReSyVlijDHLy_oRLtFYDAM5_XjEyEpwNCGEry1AeygJmCKmPPerBHyU-bMX5ayzCFf_FIqN2EiJl6Kwfx3mjpQ91GGWJtSHvLMraFcruYGQ0tOI3g/p.jpeg') center/cover no-repeat;
+   background: url('../../assets/scenic-vs-silversea-antarctica/scenisilver6.jpg') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2077,6 +2126,16 @@
   background: white;
   display: block;
   margin: 14px auto 0;
+}
+
+@media (max-width: 768px) {
+  .senianta-final-reach h2 { font-size: 32px; }
+  .senianta-final-reach p { font-size: 17px; }
+}
+
+@media (max-width: 480px) {
+  .senianta-final-reach h2 { font-size: 26px; }
+  .senianta-final-reach p { font-size: 16px; }
 }
 
 .senianta-final-reach p {
@@ -2154,12 +2213,12 @@
   }
 
   .senianta-hero h1 {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 25px;
   }
 
   .senianta-hero .senianta-lead {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .senianta-hero .senianta-sub {
@@ -2181,7 +2240,7 @@
   .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
   .senianta-faq-inner h2, .senianta-mistakes-inner h2, .senianta-glance-inner h2,
   .senianta-pricing-value-inner h2, .senianta-drake-passage-inner h2 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 35px;
   }
 
@@ -2211,12 +2270,12 @@
   }
 
   .senianta-hero-inner h1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
   .senianta-faq-inner h2, .senianta-mistakes-inner h2 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 40px;
   }
 
@@ -2260,11 +2319,12 @@
     flex-direction: column;
     width: 100%;
     max-width: 300px;
-    margin-left: auto;
+    margin: 35px auto 0;
   }
 
   .senianta-primary, .senianta-secondary {
     width: 100%;
+    margin-top: 12px;
   }
 
   .senianta-professional-card {
@@ -2294,16 +2354,27 @@
   }
 
   .senianta-hero-inner h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
-
+  .senianta-verdict-card p{
+    font-size: 16px;
+  }
   .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
   .senianta-faq-inner h2, .senianta-mistakes-inner h2 {
     font-size: 24px;
   }
+  .senianta-lead-expertise{
+    font-size: 18px;
+  }
+  .senianta-benefit-item p{
+    font-size: 16px;
+  }
 
   .senianta-stat-val {
     font-size: 32px;
+  }
+  .senianta-emphasis--guided{
+    font-size: 16px;
   }
 
   .senianta-category-pill, .senianta-brand-pill {

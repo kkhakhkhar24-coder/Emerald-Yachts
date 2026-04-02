@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { useState, useEffect } from 'react';
+import { Plus, Minus } from "lucide-react";
+import { useState, useEffect } from "react";
 import "./ScenicvsEmeraldYachts.css";
 import myImage from "../../assets/image.jpg";
 import FourthPage1 from "../../assets/FourthPage/FourthPage1.jpg";
@@ -9,35 +10,91 @@ import FourthPage3 from "../../assets/FourthPage/FourthPage3.jpg";
 
 
 function YachtsComparison() {
-
-
-const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const [activeFAQ, setActiveFAQ] = useState(null);
+  const [activeFaq, setActiveFaq] = useState(null);
 
-   const images = [
-    // "https://uc3749ade80d5167e36d59065973.previews.dropboxusercontent.com/p/thumb/AC9HnsGsIGTaE7EG2avMZPgNrHYwOAIANUNZVnVVP-4cgV52RXLofVqsHLQb40rsqWq-1TKPk050jfyecj9ax4CyPMuV6qpKOqqU0abl7uG6YLxcRmBY8gGytcS-sGFu_sJq0xcG25xoWJbiB1aND2WAJtmWU44VKQzP_rU9XK2vt01LHk93t2IsZux0O-kJtpqGDYeCSSrBCfgjFfHvGbrk3NxVm3UnElVZ-LmhaOMFALVdSSFU0KS1K0z2dVfqV_YU52jye5kahDuk1RjSnlLSPPE6GMFBJcQEnKHS1vx9vrO394-uskGdIFKJKNNSxfAi_lCo4GVVZGEpbuaClns14dgMHam4pnphNWop18HtYA/p.jpeg",
-    // "https://ucdcb92de13ccf64d4b69f2d64ec.previews.dropboxusercontent.com/p/thumb/AC_L9ize8-YmCJ5XclOEGJBvHd-IjIwEfnrMEhLdelUu5ikbrE8X1oqv8IpRvL_EJylGbC9G9SnDdWHPuFe5RhHxEoOnyb9SkZIRC6vLs4dSN0OroDbSG-BxkYW3sII9TnM6JmCiOSMiKwhKSUxSnW-jEbV0JygVSm2YJExHgjedr6tLJ1PBysOAxsnwgJ2FZynHC_nDx40eTvgktce9FHRpaJfMtE_aprbUtugYPzpj9lk1N68_QnOIIXdw6YnGjoNNSJqfEnwQvMgYWlIR7xq3y1vczK8RGF_Ow4ZMvftRmhRMOS35ZBPWwB9HL46Cy2jg5UYoo2sfWoiDpNHDHhn1fZHWKa3FRSSoLx7ZVXq8lw/p.jpeg",
-    // "https://uccb6324b97673307f62df953b14.previews.dropboxusercontent.com/p/thumb/AC_PM9HJCQsWMPxUMg-dgOakE6fvdBxqc-Z_yWgJDccRWr5QZtFk0chrkMKeuGMzaBddOMH5fBgNVNajQxeAXE-b82jtGdoJ2nzXzYv4RCot64DPdJaeWPHXDjXkiMbY25cA5GwRL5zzZ1O8jaS3JJGu5JvpRDyQ4X2lFL1fx6EGDP2sEooa5OmiPrKV6BgPGwgZLw46lPJk6HEft8FL3uWVq9tWmhTXNwUAGEnVol4zNE7UVG5M0nZ7R1FM0rRn_OBTG77TYcg1fcag7oOg7s9YzLwEzGf8ik_9vRT2l2GJeDcy4z8TQeoTer0Jhy-ngBAyOmVOW8aks786CYfnPq2fwhb93vXDpKcTCKOOsWQ-6p6xW4JmTgWtsKiU17hHJIPRdhtKshbzPR7UzFO4Ly-FegyjjuCMASHurPe0ebGQgA/p.jpeg"
-
-    FourthPage2,FourthPage1,FourthPage3
+   const images = [FourthPage2,FourthPage1,FourthPage3]
+   
+  const faqData = [
+    {
+      question: "Which is better, Scenic or Emerald yachts?",
+      answer:
+        "Scenic is ultra-luxury with a fully all-inclusive model, while Emerald offers a more accessible yacht experience. The better choice depends on your expectations and travel style.",
+    },
+    {
+      question: "How much more expensive is Scenic compared to Emerald?",
+      answer:
+        "Scenic is typically 40 to 100 percent more expensive depending on itinerary and suite level due to its higher level of inclusions and service.",
+    },
+    {
+      question: "Is Scenic worth the higher price?",
+      answer:
+        "For travelers seeking a seamless, high-end experience, Scenic often justifies the higher investment.",
+    },
+    {
+      question: "Are Scenic and Emerald owned by the same company?",
+      answer:
+        "Yes. Both brands operate under the same parent company but are positioned in different tiers.",
+    },
+    {
+      question: "Which is better for first-time yacht travelers?",
+      answer:
+        "Emerald is often a strong entry point due to its approachable pricing and relaxed environment.",
+    },
+    {
+      question: "Do Scenic and Emerald visit the same destinations?",
+      answer:
+        "Yes, both operate in similar regions such as the Mediterranean and Caribbean.",
+    },
+    {
+      question: "Is Scenic all-inclusive compared to Emerald?",
+      answer:
+        "Scenic emphasizes a fully all-inclusive structure, while Emerald includes many elements but is less comprehensive.",
+    },
+    {
+      question: "Which yacht has better service?",
+      answer:
+        "Both offer strong service, though Scenic is positioned at a higher level.",
+    },
+    {
+      question: "What type of traveler chooses Emerald?",
+      answer:
+        "Travelers seeking value, relaxation, and a boutique yacht experience.",
+    },
+    {
+      question: "What type of traveler chooses Scenic?",
+      answer:
+        "Travelers seeking a structured, ultra-luxury, all-inclusive experience.",
+    },
+    {
+      question: "Should I use a travel advisor?",
+      answer:
+        "Yes. Choosing the right yacht requires aligning expectations with experience.",
+    },
+    {
+      question: "How do I decide between Scenic and Emerald?",
+      answer:
+        "The decision depends on whether you prioritize a high-end all-inclusive experience or a relaxed, value-driven yacht journey.",
+    },
   ];
 
+  const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  };
 
- useEffect(() => {
+  useEffect(() => {
     const slider = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 4000);
     return () => clearInterval(slider);
   }, [images.length]);
 
-
-
   return (
     <div>
       <Navbar />
 
- {/* HERO */}
+      {/* HERO */}
       <section className="Yachts_hero_section">
         <div
           className="Yachts_hero_bg"
@@ -53,26 +110,30 @@ const [current, setCurrent] = useState(0);
           <h1>Scenic vs Emerald Yachts</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
-          <p>
-           Choosing the right luxury yacht experience
+          <p className="Yachts_hero_p">
+            Choosing the right luxury yacht experience
           </p>
 
           <p>
-           For travelers considering a yacht cruise, the decision often comes down to choosing between Scenic Luxury Cruises & Tours and Emerald Cruises.
+            For travelers considering a yacht cruise, the decision often comes
+            down to choosing between Scenic Luxury Cruises & Tours and Emerald
+            Cruises.
           </p>
 
           {/* READ MORE CONTENT */}
           {readMore && (
             <>
               <p>
-              Both brands operate under the same ownership and visit similar destinations.
+                Both brands operate under the same ownership and visit similar
+                destinations.
               </p>
 
               <p>The difference is not where they go.</p>
               <p>It is how the experience is delivered.</p>
               <p>
-                The right decision ensures your expectations align with the journey from the beginning.</p>
-
+                The right decision ensures your expectations align with the
+                journey from the beginning.
+              </p>
             </>
           )}
 
@@ -92,7 +153,6 @@ const [current, setCurrent] = useState(0);
               Get a Personalized Yacht Recommendation
             </button>
           </div>
-
         </div>
       </section>
 
@@ -123,44 +183,49 @@ const [current, setCurrent] = useState(0);
         </div>
       </section> */}
 
-
-
       <section className="Yachts_price_section">
-  <div className="Yachts_price_inner">
+        <div className="Yachts_price_inner">
+          <h2>Scenic vs Emerald Price Difference</h2>
 
-    <h2>Scenic vs Emerald Price Difference</h2>
+          <p className="Yachts_price_subtext">
+            Typical pricing reflects their positioning:
+          </p>
 
-    <p className="Yachts_price_subtext">
-      Typical pricing reflects their positioning:
-    </p>
+          {/* CARDS */}
+          <div className="Yachts_price_cards">
+            <div className="Yachts_price_card">
+              <i className="fas fa-dollar-sign"></i>
+              <span>
+                Emerald yachts: approximately $6,000 to $12,000 per person
+              </span>
+            </div>
 
-    {/* CARDS */}
-    <div className="Yachts_price_cards">
+            <div className="Yachts_price_card">
+              <i className="fas fa-gem"></i>
+              <span>
+                Scenic yachts: approximately $10,000 to $25,000 or more per
+                person
+              </span>
+            </div>
 
-      <div className="Yachts_price_card">
-        <i className="fas fa-dollar-sign"></i>
-        <span>Emerald yachts: approximately $6,000 to $12,000 per person</span>
-      </div>
+            <div className="Yachts_price_card">
+              <i className="fas fa-chart-line"></i>
+              <span>
+                Scenic is typically 40 to 100 percent higher depending on
+                itinerary and suite level.
+              </span>
+            </div>
 
-      <div className="Yachts_price_card">
-        <i className="fas fa-gem"></i>
-        <span>Scenic yachts: approximately $10,000 to $25,000 or more per person</span>
-      </div>
-
-      <div className="Yachts_price_card">
-        <i className="fas fa-chart-line"></i>
-        <span>Scenic is typically 40 to 100 percent higher depending on itinerary and suite level.</span>
-      </div>
-
-      <div className="Yachts_price_card">
-        <i className="fas fa-layer-group"></i>
-        <span>The difference is driven by inclusions, service level, and overall experience structure.</span>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+            <div className="Yachts_price_card">
+              <i className="fas fa-layer-group"></i>
+              <span>
+                The difference is driven by inclusions, service level, and
+                overall experience structure.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 4 */}
       {/* <section className="Yachts_difference_section">
@@ -176,36 +241,34 @@ const [current, setCurrent] = useState(0);
       </section> */}
 
       <section className="Yachts_difference_section">
-  <div className="Yachts_difference_inner">
+        <div className="Yachts_difference_inner">
+          <h2>The Biggest Differences Between Scenic and Emerald</h2>
 
-    <h2>The Biggest Differences Between Scenic and Emerald</h2>
+          <div className="Yachts_difference_cards">
+            <div className="Yachts_difference_card">
+              <p>
+                Scenic delivers a fully all-inclusive, ultra-luxury experience
+              </p>
+            </div>
 
-    <div className="Yachts_difference_cards">
+            <div className="Yachts_difference_card">
+              <p>Emerald offers a more accessible luxury yacht experience</p>
+            </div>
 
-      <div className="Yachts_difference_card">
-        <p>Scenic delivers a fully all-inclusive, ultra-luxury experience</p>
-      </div>
+            <div className="Yachts_difference_card">
+              <p>Scenic emphasizes seamless service and structure</p>
+            </div>
 
-      <div className="Yachts_difference_card">
-        <p>Emerald offers a more accessible luxury yacht experience</p>
-      </div>
+            <div className="Yachts_difference_card">
+              <p>Emerald focuses on relaxed, easygoing travel</p>
+            </div>
 
-      <div className="Yachts_difference_card">
-        <p>Scenic emphasizes seamless service and structure</p>
-      </div>
-
-      <div className="Yachts_difference_card">
-        <p>Emerald focuses on relaxed, easygoing travel</p>
-      </div>
-
-      <div className="Yachts_difference_card Yachts_difference_full">
-        <p>The difference is not access. It is experience level.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+            <div className="Yachts_difference_card Yachts_difference_full">
+              <p>The difference is not access. It is experience level.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 5 */}
       <section className="Yachts_feel_section">
@@ -224,8 +287,15 @@ const [current, setCurrent] = useState(0);
         <div className="Yachts_ship_inner">
           <h2>Ship Design and Onboard Experience</h2>
 
-          <p>Scenic yachts are designed as ultra-luxury discovery vessels with expansive suites, multiple dining venues, and a design-forward environment.</p>
-          <p>Emerald yachts are smaller and more intimate, offering a boutique experience that prioritizes simplicity and comfort.</p>
+          <p>
+            Scenic yachts are designed as ultra-luxury discovery vessels with
+            expansive suites, multiple dining venues, and a design-forward
+            environment.
+          </p>
+          <p>
+            Emerald yachts are smaller and more intimate, offering a boutique
+            experience that prioritizes simplicity and comfort.
+          </p>
         </div>
       </section>
 
@@ -234,8 +304,14 @@ const [current, setCurrent] = useState(0);
         <div className="Yachts_inclusion_inner">
           <h2>What Is Included?</h2>
 
-          <p>Scenic operates a fully all-inclusive model designed to eliminate additional costs and simplify the experience.</p>
-          <p>Emerald includes many core elements but may offer a more flexible structure depending on itinerary.</p>
+          <p>
+            Scenic operates a fully all-inclusive model designed to eliminate
+            additional costs and simplify the experience.
+          </p>
+          <p>
+            Emerald includes many core elements but may offer a more flexible
+            structure depending on itinerary.
+          </p>
         </div>
       </section>
 
@@ -250,7 +326,6 @@ const [current, setCurrent] = useState(0);
           <p>Travelers who value structure and inclusions</p>
           <p>High-end, design-forward experiences</p>
 
-
           <p>Choose Emerald for:</p>
           <p>First-time yacht travelers</p>
           <p>Relaxed, social travel style</p>
@@ -263,14 +338,13 @@ const [current, setCurrent] = useState(0);
         <div className="Yachts_notfor_inner">
           <h2>Who Each Option Is Not For</h2>
 
-         <p>Scenic may not be ideal for:</p>
-         <p>Travelers focused primarily on lower pricing</p>
-         <p>Those who do not value all-inclusive structure</p>
+          <p>Scenic may not be ideal for:</p>
+          <p>Travelers focused primarily on lower pricing</p>
+          <p>Those who do not value all-inclusive structure</p>
 
-         <p>Emerald may not be ideal for:</p>
-         <p>Travelers expecting ultra-luxury service</p>
-         <p>Those wanting a highly structured experience</p>
-        
+          <p>Emerald may not be ideal for:</p>
+          <p>Travelers expecting ultra-luxury service</p>
+          <p>Those wanting a highly structured experience</p>
         </div>
       </section>
 
@@ -290,13 +364,14 @@ const [current, setCurrent] = useState(0);
         <div className="Yachts_expert_inner">
           <h2>Expert Insight from Angela Hughes</h2>
 
-
-         <p>We work with both Scenic and Emerald regularly and guide clients through this exact decision based on how they want to travel, not just price.</p>
-         <p>The goal is alignment.</p>
-         <p>The difference is not which brand is better.</p>
-         <p>It is which experience fits you.</p>
-
-
+          <p>
+            We work with both Scenic and Emerald regularly and guide clients
+            through this exact decision based on how they want to travel, not
+            just price.
+          </p>
+          <p>The goal is alignment.</p>
+          <p>The difference is not which brand is better.</p>
+          <p>It is which experience fits you.</p>
 
           {/* <div className="Yachts_expert_images">
       <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="" />
@@ -305,8 +380,6 @@ const [current, setCurrent] = useState(0);
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="" />
     </div> */}
         </div>
-
-        
       </section>
 
       {/* SECTION 12 */}
@@ -314,8 +387,14 @@ const [current, setCurrent] = useState(0);
         <div className="Yachts_recommend_inner">
           <h2>Our Recommendation</h2>
 
-          <p>For travelers seeking a fully structured, ultra-luxury experience with seamless inclusions, Scenic is typically the stronger fit.</p>
-          <p>For travelers looking for a relaxed yacht experience with strong value, Emerald is an excellent option.</p>
+          <p>
+            For travelers seeking a fully structured, ultra-luxury experience
+            with seamless inclusions, Scenic is typically the stronger fit.
+          </p>
+          <p>
+            For travelers looking for a relaxed yacht experience with strong
+            value, Emerald is an excellent option.
+          </p>
         </div>
       </section>
 
@@ -334,9 +413,15 @@ const [current, setCurrent] = useState(0);
       <section className="Yachts_why_section">
         <div className="Yachts_why_inner">
           <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
-          
-          <p>Angela Hughes has over four decades in the travel industry and has traveled to 121 countries and territories.</p>
-          <p>She leads a team of more than 140 luxury travel advisors and specializes in matching clients to the right travel experience.</p>
+
+          <p>
+            Angela Hughes has over four decades in the travel industry and has
+            traveled to 121 countries and territories.
+          </p>
+          <p>
+            She leads a team of more than 140 luxury travel advisors and
+            specializes in matching clients to the right travel experience.
+          </p>
 
           <p>Clients benefit from:</p>
           <p>Clear positioning across yacht brands</p>
@@ -360,197 +445,60 @@ const [current, setCurrent] = useState(0);
       </section> */}
 
       <section className="Yachts_author_section">
-  <div className="Yachts_author_inner Yachts_author_split">
+        <div className="Yachts_author_inner Yachts_author_split">
+          {/* LEFT CONTENT */}
+          <div className="Yachts_author_content">
+            <h2>
+              Planned and Curated by Angela Hughes CEO, Trips & Ships Luxury
+              Travel
+            </h2>
 
-    {/* LEFT CONTENT */}
-    <div className="Yachts_author_content">
-      <h2>
-        Planned and Curated by Angela Hughes CEO, Trips & Ships Luxury Travel
-      </h2>
+            <p>40+ years of experience</p>
+            <p>121 countries traveled</p>
+            <p>Luxury Travel Influencer of the Year (2024)</p>
+            <p>Most Influential Women in Travel (2026)</p>
+          </div>
 
-      <p>40+ years of experience</p>
-      <p>121 countries traveled</p>
-      <p>Luxury Travel Influencer of the Year (2024)</p>
-      <p>Most Influential Women in Travel (2026)</p>
-    </div>
+          {/* RIGHT IMAGE */}
+          <div className="Yachts_author_image">
+            <img src={myImage} alt="Yacht Experience" />
+          </div>
+        </div>
+      </section>
 
-    {/* RIGHT IMAGE */}
-    <div className="Yachts_author_image">
-      <img
-        src={myImage}
-        alt="Yacht Experience"
-      />
-    </div>
-
-  </div>
-</section>
-
-      {/* SECTION 16 */}
-      
       {/* FAQ SECTION */}
-<section className="Scenic_about_yachts_section">
-  <div className="Scenic_about_yachts_inner">
+      <section className="Scenic-faq-section">
+        <div className="Scenic-faq-inner">
+          <h2>Frequently Asked Questions About Scenic vs Emerald Yachts</h2>
 
-    <h2>Frequently Asked Questions</h2>
+          <div className="Scenic-faq-accordion">
+            {faqData.map((faq, index) => (
+              <div
+                key={index}
+                className={`Scenic-faq-item ${
+                  activeFaq === index ? "Scenic-active" : ""
+                }`}
+                onClick={() => toggleFaq(index)}
+              >
+                <div className="Scenic-faq-question">
+                  <span>{faq.question}</span>
+                  <span className="Scenic-faq-icon">
+                    {activeFaq === index ? (
+                      <Minus size={15} />
+                    ) : (
+                      <Plus size={15} />
+                    )}
+                  </span>
+                </div>
 
-    {/* 1 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 1 ? null : 1)}>
-      <div className="Scenic_faq_question">
-        <span>Which is better, Scenic or Emerald yachts?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 1 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 1 && (
-        <p className="Scenic_faq_answer">
-          Scenic is ultra-luxury with a fully all-inclusive model, while Emerald offers a more accessible yacht experience. The better choice depends on your expectations and travel style.
-        </p>
-      )}
-    </div>
-
-    {/* 2 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 2 ? null : 2)}>
-      <div className="Scenic_faq_question">
-        <span>How much more expensive is Scenic compared to Emerald?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 2 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 2 && (
-        <p className="Scenic_faq_answer">
-          Scenic is typically 40 to 100 percent more expensive depending on itinerary and suite level due to its higher level of inclusions and service.
-        </p>
-      )}
-    </div>
-
-    {/* 3 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 3 ? null : 3)}>
-      <div className="Scenic_faq_question">
-        <span>Is Scenic worth the higher price?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 3 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 3 && (
-        <p className="Scenic_faq_answer">
-          For travelers seeking a seamless, high-end experience, Scenic often justifies the higher investment.
-        </p>
-      )}
-    </div>
-
-    {/* 4 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 4 ? null : 4)}>
-      <div className="Scenic_faq_question">
-        <span>Are Scenic and Emerald owned by the same company?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 4 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 4 && (
-        <p className="Scenic_faq_answer">
-          Yes. Both brands operate under the same parent company but are positioned in different tiers.
-        </p>
-      )}
-    </div>
-
-    {/* 5 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 5 ? null : 5)}>
-      <div className="Scenic_faq_question">
-        <span>Which is better for first-time yacht travelers?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 5 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 5 && (
-        <p className="Scenic_faq_answer">
-          Emerald is often a strong entry point due to its approachable pricing and relaxed environment.
-        </p>
-      )}
-    </div>
-
-    {/* 6 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 6 ? null : 6)}>
-      <div className="Scenic_faq_question">
-        <span>Do Scenic and Emerald visit the same destinations?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 6 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 6 && (
-        <p className="Scenic_faq_answer">
-          Yes, both operate in similar regions such as the Mediterranean and Caribbean.
-        </p>
-      )}
-    </div>
-
-    {/* 7 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 7 ? null : 7)}>
-      <div className="Scenic_faq_question">
-        <span>Is Scenic all-inclusive compared to Emerald?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 7 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 7 && (
-        <p className="Scenic_faq_answer">
-          Scenic emphasizes a fully all-inclusive structure, while Emerald includes many elements but is less comprehensive.
-        </p>
-      )}
-    </div>
-
-    {/* 8 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 8 ? null : 8)}>
-      <div className="Scenic_faq_question">
-        <span>Which yacht has better service?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 8 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 8 && (
-        <p className="Scenic_faq_answer">
-          Both offer strong service, though Scenic is positioned at a higher level.
-        </p>
-      )}
-    </div>
-
-    {/* 9 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 9 ? null : 9)}>
-      <div className="Scenic_faq_question">
-        <span>What type of traveler chooses Emerald?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 9 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 9 && (
-        <p className="Scenic_faq_answer">
-          Travelers seeking value, relaxation, and a boutique yacht experience.
-        </p>
-      )}
-    </div>
-
-    {/* 10 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 10 ? null : 10)}>
-      <div className="Scenic_faq_question">
-        <span>What type of traveler chooses Scenic?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 10 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 10 && (
-        <p className="Scenic_faq_answer">
-          Travelers seeking a structured, ultra-luxury, all-inclusive experience.
-        </p>
-      )}
-    </div>
-
-    {/* 11 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 11 ? null : 11)}>
-      <div className="Scenic_faq_question">
-        <span>Should I use a travel advisor?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 11 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 11 && (
-        <p className="Scenic_faq_answer">
-          Yes. Choosing the right yacht requires aligning expectations with experience.
-        </p>
-      )}
-    </div>
-
-    {/* 12 */}
-    <div className="Scenic_faq_item" onClick={() => setActiveFAQ(activeFAQ === 12 ? null : 12)}>
-      <div className="Scenic_faq_question">
-        <span>How do I decide between Scenic and Emerald?</span>
-        <span className={`Scenic_faq_icon ${activeFAQ === 12 ? "active" : ""}`}>+</span>
-      </div>
-      {activeFAQ === 12 && (
-        <p className="Scenic_faq_answer">
-          The decision depends on whether you prioritize a high-end all-inclusive experience or a relaxed, value-driven yacht journey.
-        </p>
-      )}
-    </div>
-
-  </div>
-</section>
+                <div className="Scenic-faq-answer">
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 17 */}
       <section className="Yachts_cta_section">
@@ -559,13 +507,16 @@ const [current, setCurrent] = useState(0);
 
           <p>The difference between Scenic and Emerald is not just price.</p>
           <p>It is how you want to experience the journey.</p>
-          <p>Yacht inventory is limited and popular sailings often sell out in advance.</p>
+          <p>
+            Yacht inventory is limited and popular sailings often sell out in
+            advance.
+          </p>
           <button className="Yachts_primary_btn">
             Get a Personalized Yacht Recommendation
           </button>
 
           <button className="Yachts_secondary_btn">
-           Explore Scenic Yacht Cruises
+            Explore Scenic Yacht Cruises
           </button>
         </div>
       </section>

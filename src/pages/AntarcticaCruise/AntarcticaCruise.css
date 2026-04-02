@@ -141,13 +141,13 @@
     font-size: 32px;
   }
   .anta_hero_content p{
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 480px) {
   .anta_hero_content h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .anta_hero_content p{
     font-size: 16px;
@@ -501,8 +501,8 @@
 
 @media (max-width: 480px) {
   .anta_overview_inner h2 { font-size: 24px; }
-  .anta_tier_price { font-size: 20px; }
-  .anta_overview_lead { font-size: 1rem; }
+  .anta_tier_price { font-size: 18px; }
+  .anta_overview_lead { font-size: 16px; }
 }
 
 
@@ -656,21 +656,29 @@
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .anta_examples_inner h2 { font-size: 36px; }
-  .anta_voyage_cards { grid-template-columns: repeat(2, 1fr); }
-  .anta_voyage_brand { min-height: auto; }
+  .anta_voyage_cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .anta_voyage_brand { min-height: auto; font-size: 17px; }
 }
 
 @media (max-width: 768px) {
   .anta_examples_section { padding: 50px 15px 60px; }
   .anta_examples_inner h2 { font-size: 28px; }
-  .anta_voyage_cards { grid-template-columns: 1fr; gap: 14px; }
-  .anta_voyage_card { padding: 22px 18px 0; }
+  .anta_voyage_cards { grid-template-columns: 1fr; gap: 16px; }
+  .anta_voyage_card { padding: 24px 20px 0; }
+  .anta_examples_lead { font-size: 17px; }
 }
 
 @media (max-width: 480px) {
   .anta_examples_inner h2 { font-size: 24px; }
-  .anta_examples_lead { font-size: 1rem; }
-  .anta_voyage_price { font-size: 18px; }
+  .anta_examples_lead { font-size: 15px; margin-bottom: 30px; }
+  .anta_voyage_card { padding: 22px 18px 0; }
+  .anta_voyage_nights { font-size: 10px; margin-bottom: 8px; }
+  .anta_voyage_brand { font-size: 16px; margin-bottom: 10px; min-height: auto; }
+  .anta_voyage_brand span { font-size: 12px; }
+  .anta_voyage_divider { margin-bottom: 14px; width: 30px; }
+  .anta_voyage_price { font-size: 18px; margin-bottom: 4px; }
+  .anta_voyage_from { font-size: 10px; }
+  .anta_voyage_pp { font-size: 10px; margin-bottom: 20px; }
 }
 
 /* ================= SECTION 4 — PRICING LADDER ================= */
@@ -690,7 +698,7 @@
   font-size: 48px;
   font-weight: 500;
   color: #2f4a6d;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -706,7 +714,7 @@
 .anta_ladder_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 24px;
   text-align: left;
 }
 
@@ -788,17 +796,21 @@
 }
 
 @media (max-width: 768px) {
-  .anta_ladder_card { padding: 20px 15px; }
+  .anta_ladder_inner h2 { font-size: 28px; margin-bottom: 30px; }
+  .anta_ladder_card { padding: 24px 20px; }
   .anta_ladder_price { font-size: 22px; margin-bottom: 10px; }
   .anta_ladder_badge { font-size: 11px; padding: 4px 12px; margin-bottom: 10px; }
 }
 
 @media (max-width: 480px) {
-  .anta_ladder_price { font-size: 20px; }
-  .anta_ladder_price span { font-size: 13px; display: block; margin-top: 4px; }
-  .anta_ladder_label { font-size: 10px; }
-  .anta_ladder_card p { font-size: 0.95rem; }
-  .anta_ladder_focus { font-size: 0.85rem !important; }
+  .anta_ladder_inner h2 { font-size: 24px; margin-bottom: 25px; }
+  .anta_ladder_card { padding: 20px 18px; }
+  .anta_ladder_badge { font-size: 10px; padding: 3px 10px; margin-bottom: 8px; }
+  .anta_ladder_price { font-size: 18px; margin-bottom: 8px; }
+  .anta_ladder_price span { font-size: 12px; display: inline-block; margin-top: 0; margin-left: 4px; }
+  .anta_ladder_label { font-size: 10px; margin-bottom: 2px; }
+  .anta_ladder_card p { font-size: 15px; margin-bottom: 8px; }
+  .anta_ladder_focus { font-size: 13px !important; padding-top: 8px; margin-top: 4px; }
 }
 
 
@@ -841,11 +853,11 @@
 }
 
 @media (max-width: 768px) {
-  .anta_clients_inner p { font-size: 1.1rem; }
+  .anta_clients_inner p { font-size: 17px; }
 }
 
 @media (max-width: 480px) {
-  .anta_clients_inner p { font-size: 1rem; }
+  .anta_clients_inner p { font-size: 16px; }
 }
 
 
@@ -855,7 +867,7 @@
   padding: 80px 20px;
   text-align: center;
   color: white;
-  background: url("https://ucf88a9a988d90a283d1d9d813b8.previews.dropboxusercontent.com/p/thumb/AC9CtEnCUcbOYQg4LmwsK87nfGdchoZpRWO38oY0Wc4m150EyZuwq-8XI8vN4HykD5xqeAdJzVTlBqi_TYmJsOd6lHI1sjA9_MOw3npJdLg2w8NNP8KKGuE1ivGEOO_P6OFSaDcC9-CgPpHV-N4Bk2qnuq8XcmchV-4-_aUZL801y9ShGrXUjd-d6tZGrxGln8i6jGcLhN7ocZ0hAVrHcUrT6CcLNM0OthcD0G2EfB_Myq8HjJ4sD0_A3f65lhQuiLsl6bG7FoO1UD0scyz4wp_y3Rf0TOIpxIXXT4JEs5fDKRwt89SHdpL66mPi2PLdnhQuaJcKvtMg_oez2ELwhoFozBnlf9I2a3XxhMise5ljK3fxikRBc9FhFkPpKsiPAZGxo37qbCfp89RLMtzT7TiVGP5SO-afwvcNHh0nqZ1gmw/p.jpeg");
+  background: url("../../assets/antarctica-cruise-cost/anta4.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1013,10 +1025,6 @@
   margin-bottom: 5px;
 }
 
-.anta_section_header p{
-  margin-bottom: 40px;
-    margin-top: 20px;
-}
 
 .anta_summary_content p {
   font-size: 1rem;
@@ -1066,9 +1074,10 @@
 
 @media (max-width: 480px) {
   .anta_total_card { padding: 20px 15px; }
-  .anta_total_price { font-size: 20px; }
+  .anta_total_card h3{font-size: 12px;}
+  .anta_total_price { font-size: 18px; }
   .anta_summary_label { font-size: 12px; }
-  .anta_summary_value { font-size: 28px; }
+  .anta_summary_value { font-size: 20px; }
   .anta_total_summary { padding: 30px 20px; }
 }
 
@@ -1115,9 +1124,15 @@
 }
 
 @media (max-width: 768px) {
+  .anta_impacts_inner p{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
+  .anta_impacts_inner p{
+    font-size: 16px;
+  }
 }
 
 
@@ -1163,9 +1178,15 @@
 }
 
 @media (max-width: 768px) {
+  .anta_pricing_inner p{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
+  .anta_pricing_inner p{
+    font-size: 16px;
+  }
 }
 
 
@@ -1395,10 +1416,12 @@
 @media (max-width: 768px) {
   .anta_worth_section { padding: 60px 15px; }
   .anta_worth_inner h2 { font-size: 32px; }
+  .anta_worth_inner p{ font-size: 17px;}
 }
 
 @media (max-width: 480px) {
   .anta_worth_inner h2 { font-size: 26px; }
+  .anta_worth_inner p{ font-size: 16px;}
 }
 
 
@@ -1482,9 +1505,15 @@
 }
 
 @media (max-width: 768px) {
+  .anta_insight_inner p{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
+  .anta_insight_inner p{
+    font-size: 16px;
+  }
 }
 
 
@@ -1626,7 +1655,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.05rem;
+  font-size: 18px;
   font-weight: 500;
   color: #2f4a6d;
   font-family: 'Montserrat', sans-serif;
@@ -1640,7 +1669,7 @@
 }
 
 .anta_faq_answer {
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.7;
   font-weight: 300;
   color: #274472cc;
@@ -1656,10 +1685,11 @@
 }
 
 @media (max-width: 768px) {
-  .anta_faq_question { font-size: 1rem; }
+  .anta_faq_question { font-size: 17px; }
 }
 
 @media (max-width: 480px) {
+  .anta_faq_question{font-size: 16px;}
 }
 
 
@@ -1669,7 +1699,7 @@
   padding: 100px 20px;
   text-align: center;
   color: white;
-  background: url("https://uc2bdec23bb154591783f5e3a24a.previews.dropboxusercontent.com/p/thumb/AC9cK9K7ZwiQqNyrTgMVK6iB0IZNrgvvyuKsx0DFD0dUloX6cs88vcaclKttGR9Yzr1CyF5hiSoA6yJ1OgDXv1jIkMJXGMpH7fpWaLBNIkcR9Zy3fM52OCEqHmSV73XsJvJBHHa4eGVYyq9d-84IKZSwqU78oeIz5Imffo4B6qHKERVOe0e1Ot0dte8ySMwnBKs4Pd4P00MYAYbWB6hTZRwc4ZoMyUTHQFu0s0qkB-AB1DUvrb0IYHrsw9kAQToYOAJaMP0fYU6fUSJEQ_ealQeEChmiG5qHLaof0dw_VTmMlZ6q53AHVaydwC4-zb4RdB1py9TbapRJiMU9JdEOvlAm5-LVDQg1WFr1TrkypghEcC9rCzZfbqDlDk7ud0DbDal6fMa5uiQqVrsQ0Kf8s6kD6MZvn-n76yGI7E7RqIDbcg/p.jpeg");
+  background: url("../../assets/antarctica-cruise-cost/anta6.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1714,11 +1744,11 @@
 }
 
 @media (max-width: 768px) {
-  .anta_finalcta_inner p { font-size: 1.1rem; }
+  .anta_finalcta_inner p { font-size: 17px; }
 }
 
 @media (max-width: 480px) {
-  .anta_finalcta_inner p { font-size: 1rem; }
+  .anta_finalcta_inner p { font-size: 16px; }
 }
 
 /* ================= RESPONSIVE STANDARDIZATION — GLOBAL HEADINGS ================= */
@@ -1753,7 +1783,7 @@
 }
 
 @media (max-width: 768px) {
-  .anta_hero_inner h1 { font-size: 40px; }
+  .anta_hero_inner h1 { font-size: 32px; }
   
   /* Standard H2 across all sections */
   .anta_overview_inner h2,
@@ -1808,7 +1838,7 @@
 }
 
 @media (max-width: 480px) {
-  .anta_hero_inner h1 { font-size: 32px; }
+  .anta_hero_inner h1 { font-size: 26px; }
   
   /* Standard H2 across all sections */
   .anta_overview_inner h2,
@@ -1830,6 +1860,27 @@
   .anta_faq_inner h2,
   .anta_finalcta_inner h2 {
     font-size: 24px;
+  }
+
+  .anta_overview_section,
+  .anta_examples_section,
+  .anta_ladder_section,
+  .anta_clients_section,
+  .anta_midcta_section,
+  .anta_total_section,
+  .anta_impacts_section,
+  .anta_pricing_section,
+  .anta_levels_section,
+  .anta_mistakes_section,
+  .anta_why_section,
+  .anta_worth_section,
+  .anta_insight_section,
+  .anta_next_section,
+  .anta_angela_section,
+  .anta_author_section,
+  .anta_faq_section,
+  .anta_finalcta_section {
+    padding: 40px 15px;
   }
 }
 
@@ -2001,7 +2052,13 @@
     font-size: 32px;
   }
   .anta_clients_content p {
-    font-size: 1rem;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anta_clients_content p{
+    font-size: 16px;
   }
 }
 
