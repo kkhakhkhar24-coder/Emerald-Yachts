@@ -4,7 +4,7 @@ import './LuxuryTravel.css'
 import { ChevronDown, Star, Sparkles, Check, AlertCircle, Plus, Minus } from 'lucide-react'
 
 // Import Images
-import ProfilePicture from '../../../public/angela-hughes-portrait.png'
+import ProfilePicture from '../../assets/image.jpg'
 import Hero1Img from '../../assets/LuxuryTravel/Hero1.jpeg'
 import Hero2Img from '../../assets/LuxuryTravel/Hero2.png'
 import Hero3Img from '../../assets/LuxuryTravel/Hero3.jpeg'
