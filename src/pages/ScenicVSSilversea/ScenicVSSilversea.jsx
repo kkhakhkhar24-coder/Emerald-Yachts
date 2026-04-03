@@ -868,19 +868,27 @@ const AntarcticaPage = () => {
               <div className="senianta-why-benefits-grid">
                 <h3>Clients benefit from:</h3>
                 <div className="senianta-benefit-item">
-                  <Globe className="senianta-benefit-icon" />
+                  <div className="senianta-benefit-icon-wrap">
+                    <Globe className="senianta-benefit-icon" />
+                  </div>
                   <p>Clear positioning across competing brands</p>
                 </div>
                 <div className="senianta-benefit-item">
-                  <Key className="senianta-benefit-icon" />
+                  <div className="senianta-benefit-icon-wrap">
+                    <Key className="senianta-benefit-icon" />
+                  </div>
                   <p>Access to preferred inventory and timing</p>
                 </div>
                 <div className="senianta-benefit-item">
-                  <LayoutGrid className="senianta-benefit-icon" />
+                  <div className="senianta-benefit-icon-wrap">
+                    <LayoutGrid className="senianta-benefit-icon" />
+                  </div>
                   <p>Full itinerary coordination</p>
                 </div>
                 <div className="senianta-benefit-item">
-                  <ShieldCheck className="senianta-benefit-icon" />
+                  <div className="senianta-benefit-icon-wrap">
+                    <ShieldCheck className="senianta-benefit-icon" />
+                  </div>
                   <p>Ongoing support throughout the journey</p>
                 </div>
               </div>
