@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Plus, Minus } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
@@ -54,14 +55,15 @@ function ScenicAntarctica() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const images = [
-     SecondPage9,
-      SecondPage10,
-       SecondPage8
-  ];
+  const images = [SecondPage10, SecondPage8];
 
   const galleryImages = [
-    SecondPage7,SecondPage6,SecondPage5,SecondPage4,SecondPage3,SecondPage1
+    SecondPage7,
+    SecondPage6,
+    SecondPage5,
+    SecondPage4,
+    SecondPage3,
+    SecondPage1,
   ];
 
   useEffect(() => {
@@ -81,6 +83,19 @@ function ScenicAntarctica() {
 
   return (
     <div>
+      <Helmet>
+        <title>
+          Scenic Antarctica Cruise | Scenic Eclipse Expedition Antarctica
+        </title>
+        <meta
+          name="title"
+          content="Scenic Antarctica Cruise | Scenic Eclipse"
+        />
+        <meta
+          name="description"
+          content="Plan a Scenic Antarctica cruise aboard Scenic Eclipse. Ultra-luxury, all-inclusive expeditions with expert guidance from Angela Hughes and Trips & Ships Luxury Travel."
+        />
+      </Helmet>
       <Navbar />
 
       {/* HERO */}
@@ -93,7 +108,6 @@ function ScenicAntarctica() {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-         
           <h1>Scenic Antarctica Cruises</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}
@@ -313,10 +327,7 @@ function ScenicAntarctica() {
           </div>
 
           <div className="Scenic_right_experience_image">
-            <img
-              src={SecondPage3}
-              alt="Scenic Antarctica Explorer"
-            />
+            <img src={SecondPage3} alt="Scenic Antarctica Explorer" />
           </div>
         </div>
       </section>
@@ -625,6 +636,8 @@ function ScenicAntarctica() {
           </p>
         </div>
       </section>
+
+      {/* ================= SECTION 14 (FAQ) ================= */}
 
       <section className="Scenic-faq-section">
         <div className="Scenic-faq-inner">

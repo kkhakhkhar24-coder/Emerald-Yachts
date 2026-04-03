@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
 import { Plus, Minus } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -8,14 +9,13 @@ import FourthPage1 from "../../assets/FourthPage/FourthPage1.jpg";
 import FourthPage2 from "../../assets/FourthPage/FourthPage2.jpeg";
 import FourthPage3 from "../../assets/FourthPage/FourthPage3.jpg";
 
-
 function YachtsComparison() {
   const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const [activeFaq, setActiveFaq] = useState(null);
 
-   const images = [FourthPage2,FourthPage1,FourthPage3]
-   
+  const images = [FourthPage2, FourthPage1, FourthPage3];
+
   const faqData = [
     {
       question: "Which is better, Scenic or Emerald yachts?",
@@ -92,6 +92,233 @@ function YachtsComparison() {
 
   return (
     <div>
+      <Helmet>
+        <title>
+          Scenic vs Emerald Yachts: Which Experience Is Right for You
+        </title>
+        <meta
+          name="description"
+          content="Compare Scenic vs Emerald yacht cruises. Pricing, inclusions, experience, and expert recommendations from Angela Hughes to help you choose the right luxury yacht."
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id":
+                  "https://www.tripsandships.com/scenic-vs-emerald-yachts#webpage",
+                url: "https://www.tripsandships.com/scenic-vs-emerald-yachts",
+                name: "Scenic vs Emerald Yachts: Which Experience Is Right for You",
+                headline:
+                  "Scenic vs Emerald Yachts: Which Experience Is Right for You",
+                description:
+                  "Compare Scenic vs Emerald yacht cruises. Pricing, inclusions, experience, and expert recommendations from Angela Hughes to help you choose the right luxury yacht.",
+                inLanguage: "en-US",
+                isPartOf: { "@id": "https://www.tripsandships.com/#website" },
+                about: [
+                  {
+                    "@type": "Organization",
+                    name: "Scenic Luxury Cruises & Tours",
+                  },
+                  { "@type": "Organization", name: "Emerald Cruises" },
+                  { "@type": "Thing", name: "Luxury yacht cruises" },
+                ],
+                primaryImageOfPage: {
+                  "@type": "ImageObject",
+                  "@id":
+                    "https://www.tripsandships.com/scenic-vs-emerald-yachts#primaryimage",
+                  contentUrl:
+                    "https://www.tripsandships.com/path-to-yacht-comparison-image.jpg",
+                },
+                breadcrumb: {
+                  "@id":
+                    "https://www.tripsandships.com/scenic-vs-emerald-yachts#breadcrumb",
+                },
+                author: {
+                  "@id": "https://www.tripsandships.com/#angela-hughes",
+                },
+                publisher: {
+                  "@id": "https://www.tripsandships.com/#organization",
+                },
+                mainEntity: {
+                  "@id":
+                    "https://www.tripsandships.com/scenic-vs-emerald-yachts#faq",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.tripsandships.com/#website",
+                url: "https://www.tripsandships.com/",
+                name: "Trips & Ships Luxury Travel",
+                inLanguage: "en-US",
+                publisher: {
+                  "@id": "https://www.tripsandships.com/#organization",
+                },
+              },
+              {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsandships.com/#organization",
+                name: "Trips & Ships Luxury Travel",
+                url: "https://www.tripsandships.com/",
+                logo: {
+                  "@type": "ImageObject",
+                  "@id": "https://www.tripsandships.com/#logo",
+                  contentUrl: "https://www.tripsandships.com/path-to-logo.png",
+                },
+                description:
+                  "Luxury travel agency specializing in yacht cruises, expedition travel, and high-end global experiences.",
+                areaServed: "Worldwide",
+                sameAs: [
+                  "https://www.luxuryhostagency.com/",
+                  "https://www.luxurytraveluniversity.com/",
+                  "https://www.travelleaders.com/agent/17255",
+                ],
+              },
+              {
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
+                name: "Angela Hughes",
+                jobTitle: "CEO",
+                worksFor: {
+                  "@id": "https://www.tripsandships.com/#organization",
+                },
+                description:
+                  "Angela Hughes is the CEO of Trips & Ships Luxury Travel with more than 40 years in the travel industry and travel experience across 121 countries and territories. She specializes in luxury travel, yacht cruises, and expedition planning.",
+                sameAs: ["https://www.travelleaders.com/agent/17255"],
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.tripsandships.com/scenic-vs-emerald-yachts#breadcrumb",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.tripsandships.com/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Yacht Cruises",
+                    item: "https://www.tripsandships.com/yacht-cruises",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Scenic vs Emerald Yachts",
+                    item: "https://www.tripsandships.com/scenic-vs-emerald-yachts",
+                  },
+                ],
+              },
+              {
+                "@type": "FAQPage",
+                "@id":
+                  "https://www.tripsandships.com/scenic-vs-emerald-yachts#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Which is better, Scenic or Emerald yachts?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Scenic is positioned as an ultra-luxury, fully all-inclusive yacht experience, while Emerald offers a more accessible luxury yacht experience. The better choice depends on your expectations, budget, and preferred travel style.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What is the main difference between Scenic and Emerald yachts?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "The main difference is positioning. Scenic delivers a fully all-inclusive, ultra-luxury experience, while Emerald provides a boutique yacht experience at a lower price point with fewer inclusions.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "How much more expensive is Scenic compared to Emerald?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Scenic is typically 40 to 100 percent more expensive than Emerald depending on itinerary and suite category, reflecting its higher level of inclusions and service.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is Scenic worth the higher price?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "For travelers seeking a seamless, all-inclusive, high-end experience, Scenic often justifies the higher investment. The value depends on how much you prioritize inclusions and service.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Are Scenic and Emerald owned by the same company?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. Scenic Luxury Cruises & Tours and Emerald Cruises operate under the same parent company but are positioned in different segments of the luxury yacht market.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Which is better for first-time yacht travelers?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Emerald is often a strong entry point for first-time yacht travelers due to its approachable pricing and relaxed atmosphere, while Scenic is better suited for those seeking a higher-end experience.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Do Scenic and Emerald yachts visit the same destinations?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. Both brands operate in similar regions such as the Mediterranean and Caribbean, though specific itineraries may vary.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is Scenic all-inclusive compared to Emerald?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Scenic emphasizes a fully all-inclusive structure, while Emerald includes many core elements but may not be as comprehensive depending on the itinerary.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Which yacht has better service, Scenic or Emerald?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Both offer strong service, but Scenic is positioned at a higher luxury tier with a more structured and elevated service experience.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What type of traveler chooses Emerald yachts?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Emerald appeals to travelers who want a yacht experience with strong value, a relaxed atmosphere, and fewer formalities.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What type of traveler chooses Scenic yachts?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Scenic attracts travelers seeking a high-end, fully inclusive, and design-forward yacht experience with minimal friction during the journey.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Should I use a travel advisor to choose between Scenic and Emerald?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. A travel advisor helps match your expectations with the right yacht experience and ensures your trip is structured correctly from the beginning.",
+                    },
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* HERO */}
@@ -104,9 +331,6 @@ function YachtsComparison() {
         <div className="Yachts_hero_overlay"></div>
 
         <div className="Yachts_hero_content">
-          {/* <div className="page_breadcrumb">
-            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Scenic Antarctica Cruises</span>
-          </div> */}
           <h1>Scenic vs Emerald Yachts</h1>
 
           {/* FIRST PARAGRAPH (VISIBLE) */}

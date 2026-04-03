@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
 import "../../pages/DrakePassagePage/DrakePassagePage.css";
 import ProfilePicture from "../../assets/image.jpg";
@@ -176,6 +177,24 @@ const styles = `
 export default function DrakePassagePage() {
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Person",
+                name: "Angela Hughes",
+                jobTitle: "CEO",
+                worksFor: {
+                  "@type": "TravelAgency",
+                  name: "Trips & Ships Luxury Travel",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
       <style>{styles}</style>
 
       <Navbar />
@@ -290,7 +309,7 @@ export default function DrakePassagePage() {
                       style={{
                         objectFit: "cover",
                         width: "100%",
-                        height: "300px",
+                        height: "100%",
                       }}
                     />
                   </div>
@@ -348,7 +367,7 @@ export default function DrakePassagePage() {
 
               <div className="drake-lake-shake-cards">
                 <div className="drake-term-card drake-lake">
-                  {/* <span className="drake-term-badge">Drake Lake</span> */}
+                  <span className="drake-term-badge">Drake Lake</span>
                   <h3>Drake Lake</h3>
                   <p className="drake-section-p-clean">
                     referring to calmer crossings
@@ -356,9 +375,9 @@ export default function DrakePassagePage() {
                 </div>
 
                 <div className="drake-term-card drake-shake">
-                  {/* <span className="drake-term-badge drake-navy-badge">
+                  <span className="drake-term-badge drake-navy-badge">
                     Drake Shake
-                  </span> */}
+                  </span>
                   <h3>Drake Shake</h3>
                   <p
                     className="drake-section-p-clean drake-white-text"

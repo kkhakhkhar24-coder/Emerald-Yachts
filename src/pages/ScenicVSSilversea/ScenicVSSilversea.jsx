@@ -21,6 +21,7 @@ import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilve
 import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
 import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
+import { Helmet } from "react-helmet";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -103,8 +104,222 @@ const AntarcticaPage = () => {
     return () => clearInterval(slider);
   }, [images.length]);
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id":
+          "https://www.tripsandships.com/scenic-vs-silversea-antarctica#webpage",
+        url: "https://www.tripsandships.com/scenic-vs-silversea-antarctica",
+        name: "Scenic vs Silversea Antarctica: Which Expedition Is Right for You",
+        headline:
+          "Scenic vs Silversea Antarctica: Which Expedition Is Right for You",
+        description:
+          "Compare Scenic vs Silversea Antarctica cruises. Ships, experience, pricing, and expert recommendations from Angela Hughes to help you choose the right expedition.",
+        isPartOf: { "@id": "https://www.tripsandships.com/#website" },
+        about: [
+          { "@type": "Organization", name: "Scenic Luxury Cruises & Tours" },
+          { "@type": "Organization", name: "Silversea Cruises" },
+          { "@type": "Thing", name: "Antarctica expedition cruises" },
+        ],
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          contentUrl:
+            "https://www.tripsandships.com/path-to-comparison-image.jpg",
+        },
+        breadcrumb: {
+          "@id":
+            "https://www.tripsandships.com/scenic-vs-silversea-antarctica#breadcrumb",
+        },
+        author: { "@id": "https://www.tripsandships.com/#angela-hughes" },
+        publisher: { "@id": "https://www.tripsandships.com/#organization" },
+        mainEntity: {
+          "@id":
+            "https://www.tripsandships.com/scenic-vs-silversea-antarctica#faq",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tripsandships.com/#website",
+        url: "https://www.tripsandships.com/",
+        name: "Trips & Ships Luxury Travel",
+        publisher: { "@id": "https://www.tripsandships.com/#organization" },
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#organization",
+        name: "Trips & Ships Luxury Travel",
+        url: "https://www.tripsandships.com/",
+        logo: {
+          "@type": "ImageObject",
+          contentUrl: "https://www.tripsandships.com/path-to-logo.png",
+        },
+        sameAs: [
+          "https://www.luxuryhostagency.com/",
+          "https://www.luxurytraveluniversity.com/",
+        ],
+        areaServed: "Worldwide",
+        description:
+          "Luxury travel agency specializing in expedition cruises, Antarctica travel, and high-end global experiences.",
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/#angela-hughes",
+        name: "Angela Hughes",
+        jobTitle: "CEO",
+        worksFor: { "@id": "https://www.tripsandships.com/#organization" },
+        description:
+          "Angela Hughes is the CEO of Trips & Ships Luxury Travel with over 40 years in the travel industry and travel experience across 121 countries and territories. She specializes in luxury and expedition travel.",
+        sameAs: ["https://www.travelleaders.com/agent/17255"],
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id":
+          "https://www.tripsandships.com/scenic-vs-silversea-antarctica#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.tripsandships.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Antarctica",
+            item: "https://www.tripsandships.com/antarctica",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Scenic vs Silversea Antarctica",
+            item: "https://www.tripsandships.com/scenic-vs-silversea-antarctica",
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id":
+          "https://www.tripsandships.com/scenic-vs-silversea-antarctica#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Which is better for Antarctica, Scenic or Silversea?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both Scenic and Silversea offer high-quality Antarctica expeditions. The better choice depends on whether you prefer a modern all-inclusive experience or a more traditional luxury cruise environment.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is Scenic Eclipse newer than Silversea ships?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Scenic Eclipse is a purpose-built discovery yacht with a modern design, while Silversea operates both newer expedition ships and established vessels with a more traditional luxury feel.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do Scenic and Silversea offer similar Antarctica itineraries?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both typically operate similar routes to the Antarctic Peninsula, though exact itineraries vary based on timing, weather conditions, and expedition planning.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which cruise line is more all-inclusive?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Scenic emphasizes a simplified all-inclusive structure, while Silversea also includes many elements but may vary depending on itinerary.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which is more luxurious, Scenic or Silversea?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both operate in the luxury segment. Scenic offers a modern luxury experience, while Silversea reflects a more classic luxury cruise style.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which is better for first-time Antarctica travelers?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Scenic may appeal to first-time travelers due to its simplified structure, while Silversea suits those familiar with traditional luxury cruising.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which has better suites?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both offer high-end suites. Scenic is known for modern design, while Silversea offers refined accommodations with a classic aesthetic.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is the expedition experience different between Scenic and Silversea?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both offer zodiac landings and guided excursions, though delivery style and onboard experience differ slightly between the two brands.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which is better value for Antarctica cruises?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Value depends on how inclusions and overall experience align with your expectations rather than price alone.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Should I use a travel advisor to choose between Scenic and Silversea?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Antarctica requires careful planning, and a travel advisor ensures the right expedition is selected and structured properly.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which ship is better for the Drake Passage crossing?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both brands use ships designed for polar conditions. Comfort depends more on ship design and sea conditions than brand alone.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How do I decide between Scenic and Silversea?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The decision depends on whether you prefer a modern all-inclusive structure or a traditional luxury cruise environment. Working with an expert helps align the choice with your travel style.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="senianta-wrapper">
+      <Helmet>
+        <title>
+          Scenic vs Silversea Antarctica | Which Expedition Is Better
+        </title>
+        <meta
+          name="title"
+          content="Scenic vs Silversea Antarctica | Luxury Expedition Comparison"
+        />
+        <meta
+          name="description"
+          content="Compare Scenic vs Silversea Antarctica cruises. Ships, experience, pricing, and expert recommendations from Angela Hughes to help you choose the right expedition."
+        />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+      </Helmet>
       <Navbar />
 
       <section className="anta_hero_section">

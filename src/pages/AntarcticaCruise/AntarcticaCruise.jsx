@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
@@ -22,8 +23,192 @@ const AntarcticaCostPage = () => {
     return () => clearInterval(slider);
   }, [images.length]);
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/antarctica-cruise-cost#webpage",
+        url: "https://www.tripsandships.com/antarctica-cruise-cost",
+        name: "How Much Does an Antarctica Cruise Cost",
+        headline: "How Much Does an Antarctica Cruise Cost",
+        description:
+          "How much does Antarctica cost? Real pricing examples, full trip cost breakdown, and expert guidance from Angela Hughes to plan your Antarctica expedition.",
+        inLanguage: "en-US",
+        isPartOf: { "@id": "https://www.tripsandships.com/#website" },
+        about: [
+          { "@type": "Thing", name: "Antarctica cruise cost" },
+          { "@type": "Thing", name: "Antarctica expedition travel" },
+          { "@type": "Thing", name: "Luxury Antarctica cruises" },
+        ],
+        breadcrumb: {
+          "@id":
+            "https://www.tripsandships.com/antarctica-cruise-cost#breadcrumb",
+        },
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          "@id":
+            "https://www.tripsandships.com/antarctica-cruise-cost#primaryimage",
+          contentUrl:
+            "https://www.tripsandships.com/path-to-antarctica-cost-hero-image.jpg",
+        },
+        author: { "@id": "https://www.tripsandships.com/#angela-hughes" },
+        publisher: { "@id": "https://www.tripsandships.com/#organization" },
+        mainEntity: {
+          "@id": "https://www.tripsandships.com/antarctica-cruise-cost#faq",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tripsandships.com/#website",
+        url: "https://www.tripsandships.com/",
+        name: "Trips & Ships Luxury Travel",
+        publisher: { "@id": "https://www.tripsandships.com/#organization" },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#organization",
+        name: "Trips & Ships Luxury Travel",
+        url: "https://www.tripsandships.com/",
+        logo: {
+          "@type": "ImageObject",
+          "@id": "https://www.tripsandships.com/#logo",
+          contentUrl: "https://www.tripsandships.com/path-to-logo.png",
+        },
+        description:
+          "Luxury travel agency specializing in expedition cruises, Antarctica travel, and high-end global experiences.",
+        areaServed: "Worldwide",
+        sameAs: [
+          "https://www.luxuryhostagency.com/",
+          "https://www.luxurytraveluniversity.com/",
+          "https://www.travelleaders.com/agent/17255",
+        ],
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/#angela-hughes",
+        name: "Angela Hughes",
+        jobTitle: "CEO",
+        worksFor: { "@id": "https://www.tripsandships.com/#organization" },
+        description:
+          "Angela Hughes is the CEO of Trips & Ships Luxury Travel with more than 40 years in the travel industry and travel experience across 121 countries and territories. She specializes in luxury and expedition travel.",
+        sameAs: ["https://www.travelleaders.com/agent/17255"],
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id":
+          "https://www.tripsandships.com/antarctica-cruise-cost#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.tripsandships.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Antarctica",
+            item: "https://www.tripsandships.com/antarctica",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Antarctica Cruise Cost",
+            item: "https://www.tripsandships.com/antarctica-cruise-cost",
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/antarctica-cruise-cost#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "How much does Antarctica cost in total?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "A full Antarctica trip typically ranges from $18,000 to over $60,000 per person depending on cruise, flights, hotels, insurance, and overall travel structure.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Why is Antarctica so expensive?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Antarctica pricing reflects limited access, strict environmental regulations, specialized ships, expedition teams, and the logistics required to operate in a remote and protected region.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the cheapest way to go to Antarctica?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Entry-level expedition cruises generally offer the lowest pricing, though availability is limited and the onboard experience is typically more expedition-focused than luxury-focused.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How much is a luxury Antarctica cruise?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Luxury Antarctica expeditions typically range from about $25,000 to $50,000 or more per person depending on the ship, suite category, itinerary length, and travel dates.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Are Antarctica cruises all-inclusive?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Many Antarctica cruises in the premium and luxury segments include accommodations, meals, beverages, guided landings, and expedition excursions, though exact inclusions vary by brand and itinerary.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "When is Antarctica cheapest?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Early and late season departures may offer different pricing opportunities depending on demand, itinerary, and cabin availability.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How far in advance should I book Antarctica?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Most travelers book Antarctica 12 to 24 months in advance because capacity is limited and the best suite inventory often sells early.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is Antarctica worth the cost?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "For many travelers, Antarctica is considered one of the most meaningful and unique travel experiences in the world because of its rarity, restricted access, and depth of experience.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <Helmet>
+        <title>
+          How Much Does an Antarctica Cruise Cost | Full Pricing Guide
+        </title>
+        <meta
+          name="title"
+          content="Antarctica Cruise Cost | What You Should Expect to Pay"
+        />
+        <meta
+          name="description"
+          content="How much does Antarctica cost? Real pricing examples, full trip cost breakdown, and expert guidance from Angela Hughes to plan your Antarctica expedition."
+        />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+      </Helmet>
       <Navbar />
 
       {/* ===== SECTION 1 — HERO ===== */}
@@ -36,9 +221,6 @@ const AntarcticaCostPage = () => {
         <div className="anta_hero_overlay"></div>
 
         <div className="anta_hero_content">
-          {/* <div className="page_breadcrumb">
-            <Link to="/">Home</Link> &gt; <span>Antarctica</span> &gt; <span>Antarctica Cruise Cost</span>
-          </div> */}
           <h1>How Much Does an Antarctica Cruise Cost</h1>
 
           <p className="anta_hero_p">
