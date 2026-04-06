@@ -31,9 +31,10 @@ const Navbar = () => {
               <Link to="/scenic-vs-silversea-antarctica">Scenic vs Silversea Antarctica</Link>
               <Link to="/ScenicvsEmeraldYachts">Scenic vs Emerald Yachts</Link>
               <Link to="/DrakePassagePage">The Drake Passage</Link>
+              <Link to="/luxury-travel" className="nav-dropdown-single">Luxury Travel</Link>
+              <Link to="/scenic-vs-four-seasons-yachts" className="nav-dropdown-single">Scenic vs Four Seasons Yachts</Link>
+              <Link to="/emerald-azzurra-vs-emerald-sakara" className="nav-dropdown-single">Emerald Azzurra vs Emerald Sakara</Link>
             </div>
-            <Link to="/luxury-travel" className="nav-dropdown-single">Luxury Travel</Link>
-            <Link to="/scenic-vs-four-seasons-yachts" className="nav-dropdown-single">Scenic vs Four Seasons Yachts</Link>
           </div>
         </div>
         <a href="#">EXPERIENCES</a>
@@ -68,9 +69,10 @@ const Navbar = () => {
             <Link to="/scenic-vs-silversea-antarctica" onClick={toggleMenu}>Scenic vs Silversea Antarctica</Link>
             <Link to="/ScenicvsEmeraldYachts" onClick={toggleMenu}>Scenic vs Emerald Yachts</Link>
             <Link to="/DrakePassagePage" onClick={toggleMenu}>The Drake Passage</Link>
-            <span className="mobile-dropdown-divider"></span>
             <Link to="/luxury-travel" onClick={toggleMenu} className="mobile-dropdown-single">Luxury Travel</Link>
+            <Link to="/emerald-azzurra-vs-emerald-sakara" onClick={toggleMenu}>Emerald Azzurra vs Emerald Sakara</Link>
             <Link to="/scenic-vs-four-seasons-yachts" onClick={toggleMenu} className="mobile-dropdown-single">Scenic vs Four Seasons Yachts</Link>
+            <span className="mobile-dropdown-divider"></span>
           </div>
         </div>
 

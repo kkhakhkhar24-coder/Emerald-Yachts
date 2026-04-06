@@ -10,6 +10,7 @@ import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import LuxuryTravel from './pages/LuxuryTravel/LuxuryTravel'
 import ScenicVSFourSeasonsYachts from './pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts'
+import EmeraldAzzurraVsEmeraldSakara from './pages/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/luxury-travel' element={<LuxuryTravel />}></Route>
           <Route path='/ScenicvsEmeraldYachts' element={<ScenicvsEmeraldYachts />}></Route>
           <Route path='/scenic-vs-four-seasons-yachts' element={<ScenicVSFourSeasonsYachts />}></Route>
+          <Route path='/emerald-azzurra-vs-emerald-sakara' element={<EmeraldAzzurraVsEmeraldSakara />}></Route>
         </Routes>
       </BrowserRouter>
     </>
