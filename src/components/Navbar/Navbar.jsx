@@ -69,7 +69,8 @@ const Navbar = () => {
             <Link to="/ScenicvsEmeraldYachts" onClick={toggleMenu}>Scenic vs Emerald Yachts</Link>
             <Link to="/DrakePassagePage" onClick={toggleMenu}>The Drake Passage</Link>
             <span className="mobile-dropdown-divider"></span>
-            <Link to="/luxury-travel" onClick={toggleMenu} className="mobile-dropdown-single">LUXURY TRAVEL</Link>
+            <Link to="/luxury-travel" onClick={toggleMenu} className="mobile-dropdown-single">Luxury Travel</Link>
+            <Link to="/scenic-vs-four-seasons-yachts" onClick={toggleMenu} className="mobile-dropdown-single">Scenic vs Four Seasons Yachts</Link>
           </div>
         </div>
 
