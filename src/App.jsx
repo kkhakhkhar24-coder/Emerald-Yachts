@@ -5,6 +5,7 @@ import ScenicVSSilversea from '../src/pages/ScenicVSSilversea/ScenicVSSilversea'
 import AntarcticaCruise from '../src/pages/AntarcticaCruise/AntarcticaCruise'
 import ScenicAntarctica from '../src/pages/ScenicAntarctica/ScenicAntarctica'
 import ScenicvsEmeraldYachts from '../src/pages/ScenicvsEmeraldYachts/ScenicvsEmeraldYachts'
+import EmeraldAzzurraVsEmeraldSakara from '../src/pages/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -23,6 +24,8 @@ function App() {
           <Route path='/scenic-antarctica-cruise' element={<ScenicAntarctica />}></Route>
           <Route path='/luxury-travel' element={<LuxuryTravel />}></Route>
           <Route path='/ScenicvsEmeraldYachts' element={<ScenicvsEmeraldYachts />}></Route>
+          <Route path='/emerald-azzurra-vs-emerald-sakara' element={<EmeraldAzzurraVsEmeraldSakara />}></Route>
+
         </Routes>
       </BrowserRouter>
     </>
