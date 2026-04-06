@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import LuxuryTravel from './pages/LuxuryTravel/LuxuryTravel'
-import Navbar from './components/Navbar/Navbar'
+import ScenicVSFourSeasonsYachts from './pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts'
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
           <Route path='/scenic-antarctica-cruise' element={<ScenicAntarctica />}></Route>
           <Route path='/luxury-travel' element={<LuxuryTravel />}></Route>
           <Route path='/ScenicvsEmeraldYachts' element={<ScenicvsEmeraldYachts />}></Route>
+          <Route path='/scenic-vs-four-seasons-yachts' element={<ScenicVSFourSeasonsYachts />}></Route>
         </Routes>
       </BrowserRouter>
     </>

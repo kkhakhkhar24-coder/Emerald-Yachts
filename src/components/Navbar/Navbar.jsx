@@ -32,7 +32,8 @@ const Navbar = () => {
               <Link to="/ScenicvsEmeraldYachts">Scenic vs Emerald Yachts</Link>
               <Link to="/DrakePassagePage">The Drake Passage</Link>
             </div>
-            <Link to="/luxury-travel" className="nav-dropdown-single">LUXURY TRAVEL</Link>
+            <Link to="/luxury-travel" className="nav-dropdown-single">Luxury Travel</Link>
+            <Link to="/scenic-vs-four-seasons-yachts" className="nav-dropdown-single">Scenic vs Four Seasons Yachts</Link>
           </div>
         </div>
         <a href="#">EXPERIENCES</a>
@@ -52,7 +53,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      
+
       <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
         <div className="close-btn" onClick={toggleMenu}>×</div>
 

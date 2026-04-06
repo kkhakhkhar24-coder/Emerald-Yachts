@@ -1,0 +1,1766 @@
+/* ============================================================
+   SCENIC VS FOUR SEASONS — COMPLETE CSS
+   Navy: #274472  |  Soft Blue: rgb(231,243,245)
+   Fonts: Playfair Display (headings) · Montserrat (body)
+   ============================================================ */
+
+/* ---- TOKENS ---- */
+.svf-bg-white {
+    background-color: #ffffff;
+}
+
+.svf-bg-soft {
+    background-color: rgb(231, 243, 245);
+}
+
+/* ---- INNER CONTAINER ---- */
+.svf-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.svf-narrow {
+    max-width: 860px;
+}
+
+/* ---- SECTION WRAPPER ---- */
+.svf-section {
+    padding: 70px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ============================================================
+   TYPOGRAPHY — strict size rules
+   desktop: h1 60 · h2 48 · p 18
+   tablet:  h1 32 · h2 28 · p 17
+   mobile:  h1 26 · h2 24 · p 16
+   ============================================================ */
+
+.svf-h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 60px !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+    color: #ffffff;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.svf-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+}
+
+.svf-h2-white {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 60px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    line-height: 1.1 !important;
+    margin: 0;
+}
+
+.svf-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 0 0 20px;
+    line-height: 1.3 !important;
+}
+
+.svf-h3-cta {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 0 0 14px;
+    line-height: 1.3 !important;
+}
+
+.svf-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.75 !important;
+    color: #274472 !important;
+    margin: 0;
+}
+
+.svf-p-white {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.75 !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+    margin: 0 0 20px;
+}
+
+.svf-white-text {
+    color: #ffffff !important;
+}
+
+/* spacing helpers */
+.svf-mb-sm {
+    margin-bottom: 16px !important;
+}
+
+.svf-mb-md {
+    margin-bottom: 36px !important;
+}
+
+/* ============================================================
+   SECTION 1: HERO
+   ============================================================ */
+.svf-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 40px 80px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    animation: svfSlide 18s infinite ease-in-out;
+    overflow: hidden;
+}
+
+.svf-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.38) 100%);
+    z-index: 1;
+}
+
+@keyframes svfSlide {
+
+    0%,
+    100% {
+        background-image: var(--h1);
+    }
+
+    33% {
+        background-image: var(--h2);
+    }
+
+    66% {
+        background-image: var(--h3);
+    }
+}
+
+.svf-hero-inner {
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: svfUp 0.9s ease-out;
+}
+
+@keyframes svfUp {
+    from {
+        opacity: 0;
+        transform: translateY(36px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.svf-eyebrow {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    letter-spacing: 4px !important;
+    font-weight: 700 !important;
+    color: rgba(231, 243, 245, 0.85) !important;
+    text-transform: uppercase !important;
+    margin-bottom: 22px;
+}
+
+.svf-hero-lead {
+    font-weight: 400 !important;
+    max-width: 760px;
+    margin: 0 auto 18px !important;
+    color: #ffffff !important;
+}
+
+.svf-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svf-hero-details.svf-expanded {
+    max-height: 300px;
+    margin-top: 16px;
+}
+
+.svf-snippet-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 28px 36px;
+    border-left: 4px solid #ffffff;
+    border-radius: 0 4px 4px 0;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.svf-snippet-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.svf-hero-toggle {
+    display: inline-block;
+    margin: 8px 0 32px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 6px 0;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    transition: opacity 0.3s;
+}
+
+.svf-hero-toggle:hover {
+    opacity: 0.65;
+}
+
+.svf-hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.svf-btn-primary {
+    background: #ffffff;
+    color: #000000;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.svf-btn-primary:hover {
+    background: #274472;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.svf-btn-dark {
+    background: #274472 !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+.svf-btn-dark:hover {
+    background: #1c2f4a !important;
+}
+
+.svf-hero-sub {
+    font-size: 13px !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* ============================================================
+   SHARED ATOMS
+   ============================================================ */
+/* Section number */
+.svf-num {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 16px;
+    opacity: 0.45;
+    text-transform: uppercase;
+}
+
+/* Centered header */
+.svf-hdr {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+/* Navy bar */
+.svf-bar {
+    width: 55px;
+    height: 3px;
+    background: #274472;
+    margin: 22px auto 0;
+    border-radius: 2px;
+}
+
+/* White bar */
+.svf-white-bar {
+    width: 55px;
+    height: 3px;
+    background: #ffffff;
+    margin: 20px auto 30px;
+    border-radius: 2px;
+}
+
+/* Cards */
+.svf-card {
+    padding: 40px 36px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.svf-card-blue {
+    background: rgb(231, 243, 245);
+}
+
+.svf-card-white {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.05);
+}
+
+.svf-card-outline {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.18);
+}
+
+/* 2-column card grid */
+.svf-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.svf-2col-sm {
+    gap: 18px;
+}
+
+/* Card top: icon + title */
+.svf-card-top {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.svf-icon-circle {
+    width: 52px;
+    height: 52px;
+    background: #274472;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+}
+
+.svf-card-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    margin: 0;
+}
+
+.svf-card-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 8px 0 0;
+    line-height: 1.3 !important;
+}
+
+.svf-card-hdr {
+    margin-bottom: 28px;
+}
+
+/* Checklist */
+.svf-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.svf-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    color: #274472;
+}
+
+.svf-checklist li:last-child {
+    border-bottom: none;
+}
+
+.svf-checklist li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #274472;
+}
+
+/* Decision badge */
+.svf-badge {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    color: #ffffff;
+    background: #274472;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+/* Editorial box (left border) */
+.svf-editorial-box {
+    background: rgb(231, 243, 245);
+    padding: 30px 36px;
+    border-left: 4px solid #274472;
+    border-radius: 0 4px 4px 0;
+}
+
+.svf-editorial-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.svf-editorial-row .svf-editorial-box {
+    max-width: 780px;
+    text-align: center;
+}
+
+/* Highlight box (white on soft bg) */
+.svf-highlight-box {
+    background: #ffffff;
+    padding: 30px 36px;
+    border-left: 4px solid #274472;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Small label */
+.svf-sm-lbl {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2.5px !important;
+    color: #274472;
+    opacity: 0.55;
+    margin-bottom: 14px;
+}
+
+.svf-mini-lbl {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #274472;
+    opacity: 0.5;
+    margin-bottom: 14px;
+}
+
+/* Sep line */
+.svf-sep {
+    height: 1px;
+    background: rgba(39, 68, 114, 0.12);
+    margin: 20px 0;
+}
+
+/* ============================================================
+   STICKY WRAPPER (heading left, content right)
+   ============================================================ */
+.svf-sticky-wrap {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    gap: 60px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Reversed: content LEFT, heading RIGHT */
+.svf-sticky-wrap.svf-rev {
+    grid-template-columns: 1.65fr 1fr;
+}
+
+.svf-sticky-side {
+    height: 100%;
+}
+
+.svf-sticky-el {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    text-align: left;
+}
+
+/* Right-aligned sticky (sections 7 & 11) */
+.svf-rside {
+    text-align: right;
+}
+
+/* Left bar after h2 */
+.svf-lbar {
+    text-align: left !important;
+}
+
+.svf-lbar::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #274472;
+    margin: 20px 0 0;
+}
+
+/* Right bar after h2 (sections 7 & 11) */
+.svf-rbar {
+    text-align: right !important;
+}
+
+.svf-rbar::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #274472;
+    margin: 20px 0 0 auto;
+}
+
+.svf-sticky-desc {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    color: #274472;
+    font-weight: 500 !important;
+    margin-top: 24px;
+}
+
+/* Credentials box */
+.svf-cred-box {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    border-top: 4px solid #274472;
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.06);
+    margin-top: 28px;
+}
+
+.svf-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 18px;
+    border: 2px solid rgb(231, 243, 245);
+}
+
+.svf-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svf-cred-label {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #274472;
+    opacity: 0.6;
+    margin: 0 0 6px;
+}
+
+.svf-cred-role {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    color: #274472;
+    font-weight: 400 !important;
+    margin: 0;
+    opacity: 0.75;
+}
+
+.svf-main-col {
+    width: 100%;
+}
+
+.svf-mb-md {
+    margin-bottom: 36px;
+}
+
+.svf-mb-sm {
+    margin-bottom: 18px;
+}
+
+.svf-mt-sm {
+    margin-top: 14px;
+}
+
+/* ============================================================
+   SECTION 5: THE REAL DECISION
+   ============================================================ */
+.svf-real-decision {
+    position: relative;
+    padding: 90px 40px;
+    background-image: var(--s5bg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 55vh;
+    overflow: hidden;
+}
+
+.svf-rd-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(20, 38, 62, 0.93) 0%, rgba(10, 22, 38, 0.82) 100%);
+    z-index: 1;
+}
+
+.svf-rd-inner {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Single white bar only — no duplicate */
+.svf-white-bar {
+    width: 55px;
+    height: 3px;
+    background: #ffffff;
+    margin: 18px auto 36px;
+    border-radius: 2px;
+}
+
+.svf-bold-stmt {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    color: #ffffff !important;
+    display: block;
+    margin: 16px 0 20px;
+}
+
+.svf-cmp-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 28px;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 20px;
+}
+
+.svf-cmp-item {
+    text-align: center;
+}
+
+.svf-cmp-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+.svf-cmp-vline {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* ============================================================
+   SECTION 6: COMPARISON TABLE
+   ============================================================ */
+.svf-tbl-wrap {
+    overflow-x: auto;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.06);
+}
+
+.svf-tbl {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.svf-tbl thead tr {
+    background: #274472;
+}
+
+.svf-th {
+    padding: 18px 16px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+.svf-th-l {
+    text-align: left;
+}
+
+.svf-tbl td {
+    padding: 18px 16px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    color: #274472;
+    text-align: center;
+}
+
+.svf-tbl tr:nth-child(even) td {
+    background: rgb(231, 243, 245);
+}
+
+.svf-td-lbl {
+    text-align: left !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+.svf-td {
+    font-weight: 300 !important;
+}
+
+.svf-takeaway {
+    background: rgb(231, 243, 245);
+    padding: 32px 36px;
+    border-left: 4px solid #274472;
+    border-radius: 0 4px 4px 0;
+}
+
+.svf-takeaway-p {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #274472;
+    line-height: 1.5 !important;
+    margin: 0;
+}
+
+/* ============================================================
+   SECTION 7: WHAT ACTUALLY MATTERS (BLOCKS)
+   ============================================================ */
+.svf-block {
+    margin-bottom: 50px;
+}
+
+.svf-block:last-child {
+    margin-bottom: 0;
+}
+
+.svf-mini-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
+}
+
+.svf-dotlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.svf-dotlist li {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    color: #274472;
+    font-weight: 300 !important;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.svf-dotlist li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    background: #274472;
+    border-radius: 50%;
+}
+
+/* Flow */
+.svf-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.svf-flow-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #ffffff;
+    padding: 20px 28px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
+}
+
+.svf-flow-cond {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    color: #274472;
+    font-weight: 300 !important;
+    flex: 1;
+}
+
+.svf-flow-arr {
+    color: #274472;
+    opacity: 0.3;
+    flex-shrink: 0;
+}
+
+.svf-flow-res {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    width: 140px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* Value cards */
+.svf-val-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 4px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.svf-val-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 8px 0 12px;
+    line-height: 1.2 !important;
+}
+
+.svf-vbar {
+    width: 100%;
+    height: 1px;
+    background: rgba(39, 68, 114, 0.1);
+    position: relative;
+    margin-top: 16px;
+}
+
+.svf-vbar-fill {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 36px;
+    height: 3px;
+    background: #274472;
+}
+
+/* Expert verdict */
+.svf-verdict-box {
+    background: #ffffff;
+    padding: 32px 36px;
+    border-top: 4px solid #274472;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 14px 36px rgba(39, 68, 114, 0.06);
+}
+
+/* ============================================================
+   SECTION 8: PRICE & VALUE
+   ============================================================ */
+.svf-price-card {
+    padding: 28px 32px;
+    border-radius: 4px;
+}
+
+.svf-take-cols {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.svf-take-cols>div {
+    flex: 1;
+}
+
+.svf-take-vline {
+    width: 1px;
+    background: rgba(39, 68, 114, 0.15);
+    margin: 0 24px;
+    flex-shrink: 0;
+}
+
+.svf-take-lbl {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #274472;
+    opacity: 0.4;
+    margin-bottom: 6px;
+}
+
+.svf-take-txt {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 18px !important;
+    color: #274472;
+    margin: 0;
+    font-weight: 400 !important;
+}
+
+/* ============================================================
+   SECTION 9: WHO THIS IS NOT FOR
+   ============================================================ */
+.svf-dashlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.svf-dashlist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.svf-dashlist li:last-child {
+    border-bottom: none;
+}
+
+.svf-dash {
+    font-weight: 700;
+    color: #274472;
+    opacity: 0.4;
+    font-size: 16px !important;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   SECTION 10: SUITES & DESIGN
+   ============================================================ */
+.svf-design-card {
+    padding: 32px 36px;
+    border-radius: 4px;
+}
+
+.svf-design-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 8px 0 18px;
+    line-height: 1.2 !important;
+}
+
+.svf-iconlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.svf-iconlist li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.svf-iconlist li:last-child {
+    margin-bottom: 0;
+}
+
+.svf-icondot {
+    color: #274472;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   SECTION 11: WHAT CLIENTS GET WRONG
+   ============================================================ */
+.svf-plan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.svf-plan-card {
+    background: #ffffff;
+    padding: 26px 28px;
+    border-radius: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.svf-plan-card:hover {
+    border-bottom-color: #274472;
+}
+
+.svf-plan-num {
+    display: block;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 18px !important;
+    color: #274472;
+    opacity: 0.22;
+    margin-bottom: 10px;
+    font-weight: 700 !important;
+}
+
+.svf-plan-h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    color: #274472;
+    margin-bottom: 10px;
+}
+
+.svf-insight-box {
+    background: #ffffff;
+    padding: 30px 36px;
+    border-top: 4px solid #274472;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.07);
+}
+
+.svf-italic-q {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-style: italic !important;
+    font-weight: 300 !important;
+    color: #274472;
+    line-height: 1.55 !important;
+    margin: 0;
+}
+
+/* ============================================================
+   SECTION 12: ALTERNATIVES
+   ============================================================ */
+.svf-alt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.svf-alt-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.svf-alt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(39, 68, 114, 0.1);
+}
+
+.svf-alt-img-wrap {
+    height: 200px;
+    overflow: hidden;
+}
+
+.svf-alt-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.svf-alt-card:hover .svf-alt-img {
+    transform: scale(1.05);
+}
+
+.svf-alt-cap {
+    padding: 18px 16px;
+    text-align: center;
+}
+
+.svf-alt-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    margin: 0;
+    line-height: 1.3 !important;
+}
+
+/* ============================================================
+   SECTION 13: TRAVELER PROFILE & CTA
+   ============================================================ */
+.svf-profile-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.svf-profile-card {
+    padding: 32px 36px;
+    border-radius: 8px;
+}
+
+.svf-quote-wrap {
+    position: relative;
+    padding-top: 8px;
+}
+
+.svf-qmark {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 70px !important;
+    color: #274472;
+    opacity: 0.08;
+    position: absolute;
+    top: -8px;
+    left: -6px;
+    line-height: 1;
+}
+
+.svf-profile-q {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    color: #274472;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    line-height: 1.3 !important;
+}
+
+.svf-cta-box {
+    background: rgb(231, 243, 245);
+    padding: 36px 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 36px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 36px;
+}
+
+.svf-cta-box .svf-p {
+    max-width: 500px;
+    margin: 0 auto 28px !important;
+    opacity: 0.85;
+}
+
+/* ============================================================
+   SECTION 14: FINAL VERDICT
+   ============================================================ */
+.svf-stmt-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.svf-stmt-text {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 28px !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    color: #274472;
+    line-height: 1.5 !important;
+    text-align: center;
+    max-width: 720px;
+    margin: 0;
+}
+
+/* ============================================================
+   SECTION 15: FAQ
+   ============================================================ */
+.svf-faq-intro {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    color: #274472;
+    max-width: 680px;
+    margin: 18px auto 0;
+    line-height: 1.6 !important;
+    font-weight: 300 !important;
+}
+
+.svf-faq-list {
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    margin-top: 36px;
+}
+
+.svf-faq-item {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.svf-faq-item:hover {
+    background: rgba(231, 243, 245, 0.55);
+}
+
+.svf-faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8px;
+    gap: 18px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.45 !important;
+}
+
+.svf-faq-icon {
+    color: #274472;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.svf-faq-item.svf-open .svf-faq-icon {
+    transform: rotate(180deg);
+}
+
+.svf-faq-a {
+    padding: 0 8px 22px;
+}
+
+.svf-faq-a-inner {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    color: rgba(39, 68, 114, 0.82) !important;
+    font-weight: 300 !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ---- TABLET 1024px ---- */
+@media (max-width: 1024px) {
+    .svf-section {
+        padding: 55px 30px;
+    }
+
+    /* typography */
+    .svf-h1 {
+        font-size: 32px !important;
+    }
+
+    .svf-h2 {
+        font-size: 28px !important;
+    }
+
+    .svf-h2-white {
+        font-size: 32px !important;
+    }
+
+    .svf-h3 {
+        font-size: 20px !important;
+    }
+
+    .svf-h3-cta {
+        font-size: 22px !important;
+    }
+
+    .svf-p {
+        font-size: 17px !important;
+    }
+
+    .svf-p-white {
+        font-size: 17px !important;
+    }
+
+    .svf-sticky-desc {
+        font-size: 16px !important;
+    }
+
+    .svf-faq-intro {
+        font-size: 16px !important;
+    }
+
+    .svf-bold-stmt {
+        font-size: 26px !important;
+    }
+
+    .svf-stmt-text {
+        font-size: 24px !important;
+    }
+
+    .svf-italic-q {
+        font-size: 18px !important;
+    }
+
+    .svf-profile-q {
+        font-size: 22px !important;
+    }
+
+    .svf-takeaway-p {
+        font-size: 18px !important;
+    }
+
+    /* sticky → stack */
+    .svf-sticky-wrap,
+    .svf-sticky-wrap.svf-rev {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .svf-sticky-el {
+        position: static;
+        text-align: center;
+    }
+
+    .svf-rside {
+        text-align: center;
+    }
+
+    .svf-lbar {
+        text-align: center !important;
+    }
+
+    .svf-lbar::after {
+        margin: 18px auto 0;
+    }
+
+    .svf-rbar {
+        text-align: center !important;
+    }
+
+    .svf-rbar::after {
+        margin: 18px auto 0;
+    }
+
+    /* On reversed sections, heading side goes BELOW content on tablet */
+    .svf-sticky-wrap.svf-rev .svf-sticky-side {
+        order: 2;
+    }
+
+    .svf-sticky-wrap.svf-rev .svf-main-col {
+        order: 1;
+    }
+
+    .svf-sticky-desc {
+        text-align: center;
+        max-width: 640px;
+        margin: 18px auto 0;
+    }
+
+    .svf-cred-box {
+        max-width: 440px;
+        margin: 24px auto 0;
+        text-align: center;
+    }
+
+    .svf-avatar {
+        margin: 0 auto 16px;
+    }
+
+    /* hero */
+    .svf-hero {
+        padding: 100px 30px 70px;
+    }
+
+    /* real decision */
+    .svf-real-decision {
+        padding: 70px 30px;
+    }
+
+    .svf-cmp-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .svf-cmp-vline {
+        display: none;
+    }
+
+    /* hdr */
+    .svf-hdr {
+        margin-bottom: 36px;
+    }
+
+    /* alt grid 2x2 */
+    .svf-alt-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* take cols stack */
+    .svf-take-cols {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .svf-take-vline {
+        width: 36px;
+        height: 1px;
+        margin: 0;
+    }
+}
+
+/* ---- MOBILE 768px ---- */
+@media (max-width: 768px) {
+    .svf-section {
+        padding: 48px 22px;
+    }
+
+    .svf-h1 {
+        font-size: 26px !important;
+    }
+
+    .svf-h2 {
+        font-size: 24px !important;
+    }
+
+    .svf-h2-white {
+        font-size: 26px !important;
+    }
+
+    .svf-h3 {
+        font-size: 19px !important;
+    }
+
+    .svf-p {
+        font-size: 16px !important;
+    }
+
+    .svf-p-white {
+        font-size: 16px !important;
+    }
+
+    .svf-bold-stmt {
+        font-size: 22px !important;
+    }
+
+    .svf-2col {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .svf-2col-sm {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .svf-plan-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .svf-card {
+        padding: 30px 24px;
+    }
+
+    .svf-design-card {
+        padding: 26px 22px;
+    }
+
+    .svf-price-card {
+        padding: 24px;
+    }
+
+    .svf-mini-card {
+        padding: 22px;
+    }
+
+    .svf-val-card {
+        padding: 22px;
+    }
+
+    .svf-plan-card {
+        padding: 22px 20px;
+    }
+
+    .svf-editorial-box {
+        padding: 24px 26px;
+    }
+
+    .svf-highlight-box {
+        padding: 24px 26px;
+    }
+
+    .svf-verdict-box {
+        padding: 24px 26px;
+    }
+
+    .svf-takeaway {
+        padding: 24px 26px;
+    }
+
+    .svf-insight-box {
+        padding: 24px 26px;
+    }
+
+    .svf-cta-box {
+        padding: 28px 24px;
+        margin-top: 28px;
+    }
+
+    .svf-profile-card {
+        padding: 26px 22px;
+    }
+
+    .svf-profile-q {
+        font-size: 20px !important;
+    }
+
+    .svf-hero {
+        padding: 80px 22px 60px;
+    }
+
+    .svf-hero-btns {
+        width: 100%;
+    }
+
+    .svf-btn-primary {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .svf-real-decision {
+        padding: 60px 22px;
+        min-height: auto;
+    }
+
+    .svf-flow-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 16px 20px;
+    }
+
+    .svf-flow-res {
+        width: 100%;
+        text-align: center;
+    }
+
+    .svf-alt-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .svf-alt-img-wrap {
+        height: 160px;
+    }
+
+    .svf-stmt-wrap {
+        padding-top: 36px;
+    }
+
+    .svf-stmt-text {
+        font-size: 20px !important;
+    }
+
+    .svf-faq-q {
+        padding: 18px 6px;
+        font-size: 15px !important;
+    }
+
+    .svf-faq-a {
+        padding: 0 6px 18px;
+    }
+
+    .svf-hdr {
+        margin-bottom: 28px;
+    }
+
+    .svf-inner {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Table mobile cards */
+    .svf-tbl thead {
+        display: none;
+    }
+
+    .svf-tbl,
+    .svf-tbl tbody,
+    .svf-tbl tr {
+        display: block;
+        width: 100%;
+    }
+
+    .svf-tbl tr {
+        background: #ffffff;
+        margin-bottom: 14px;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(39, 68, 114, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .svf-td-lbl {
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 14px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 1px solid rgb(231, 243, 245) !important;
+        margin-bottom: 8px;
+    }
+
+    .svf-td {
+        width: 48% !important;
+        padding: 10px 8px !important;
+        background: rgb(231, 243, 245);
+        border-radius: 4px;
+        text-align: center !important;
+        border-bottom: none !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .svf-td::before {
+        content: attr(data-label);
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 8px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        color: #274472;
+        opacity: 0.45;
+        margin-bottom: 4px;
+    }
+}
+
+/* ---- SMALL MOBILE 480px ---- */
+@media (max-width: 480px) {
+    .svf-section {
+        padding: 40px 16px;
+    }
+
+    .svf-h2 {
+        font-size: 22px !important;
+    }
+
+    .svf-h2-white {
+        font-size: 24px !important;
+    }
+
+    .svf-p {
+        font-size: 15px !important;
+    }
+
+    .svf-p-white {
+        font-size: 15px !important;
+    }
+
+    .svf-faq-q {
+        font-size: 14px !important;
+        gap: 12px;
+    }
+
+    .svf-faq-a-inner {
+        font-size: 14px !important;
+    }
+
+    .svf-alt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .svf-alt-img-wrap {
+        height: 200px;
+    }
+
+    .svf-card {
+        padding: 26px 20px;
+    }
+
+    .svf-card-title {
+        font-size: 22px !important;
+    }
+
+    .svf-snippet-card {
+        padding: 22px 24px;
+    }
+
+    .svf-hero {
+        padding: 70px 16px 50px;
+    }
+
+    .svf-real-decision {
+        padding: 50px 16px;
+    }
+
+    .svf-bold-stmt {
+        font-size: 20px !important;
+    }
+
+    .svf-stmt-text {
+        font-size: 18px !important;
+    }
+
+    .svf-italic-q {
+        font-size: 16px !important;
+    }
+
+    .svf-profile-q {
+        font-size: 18px !important;
+    }
+
+    .svf-takeaway-p {
+        font-size: 16px !important;
+    }
+
+    .svf-design-h3 {
+        font-size: 20px !important;
+    }
+}
