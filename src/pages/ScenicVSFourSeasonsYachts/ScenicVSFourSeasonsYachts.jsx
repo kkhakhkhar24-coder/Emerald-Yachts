@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./ScenicVSFourSeasonsYachts.css";
 import { Compass, Sparkles, CheckCircle2, Check, ArrowRight, Plus, Minus } from "lucide-react";
 import ProfilePicture from "../../assets/image.jpg";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import heroImage1 from "../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg";
 import heroImage2 from "../../assets/ScenicvsFourSeasonsYachts/Hero2.jpg";

@@ -21,7 +21,7 @@ import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilve
 import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
 import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);

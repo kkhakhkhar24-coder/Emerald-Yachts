@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
 import { Award, Globe, Newspaper, Quote, Star, Check, X } from "lucide-react";
 import myImage from "../../assets/image.jpg";
