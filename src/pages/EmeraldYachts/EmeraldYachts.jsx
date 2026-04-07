@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
-import { Award, Globe, Newspaper, Quote, Star, Check, X } from "lucide-react";
+import { Award, Globe, Newspaper, Quote, Star, Check, X, Play } from "lucide-react";
 import myImage from "../../assets/image.jpg";
 import "./EmeraldYachts.css";
 import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
@@ -15,6 +15,9 @@ import Logo4 from "../../assets/HomePage/Logo4.webp";
 import Logo5 from "../../assets/HomePage/Logo5.png";
 import Logo6 from "../../assets/HomePage/Logo6.png";
 import Logo7 from "../../assets/HomePage/Logo7.png";
+import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
+import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
+import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
 
 const LuxuryPage = () => {
   const [current, setCurrent] = useState(0);
@@ -264,19 +267,7 @@ const LuxuryPage = () => {
         </div>
       </section>
 
-      <section className="Emerald_planning_section">
-        <div className="Emerald_planning_inner">
-          <h2>Expert Planning for Emerald Yacht Cruises</h2>
-
-          <p>
-            Emerald Yacht cruising is about flow, not complexity. The experience
-            is shaped by how the itinerary unfolds, how much time is spent in
-            port, and how the onboard atmosphere complements the destination.
-          </p>
-        </div>
-      </section>
-
-      <section className="Emerald_expert_team_section">
+      <section className="Emerald_expert_section">
         <div className="Emerald_insight_inner">
           <div className="Emerald_insight_flex">
             {/* LEFT CONTENT (Combined Expert & Team) */}
@@ -402,18 +393,6 @@ const LuxuryPage = () => {
         </div>
       </section>
 
-      <section className="Emerald_about_yachts_section">
-        <div className="Emerald_about_yachts_inner">
-          <h2>About Emerald Yachts</h2>
-
-          <p>
-            Emerald Yachts are boutique vessels designed for relaxed luxury
-            cruising in destinations such as the Mediterranean and Caribbean,
-            with approximately 100 guests onboard.
-          </p>
-        </div>
-      </section>
-
       <section className="Emerald_expert_section">
         <div className="Emerald_expert_inner">
           <h2>How an Expert Chooses the Right Emerald Yacht Sailing</h2>
@@ -504,9 +483,116 @@ const LuxuryPage = () => {
         </div>
       </section>
 
+      {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <span className="Emerald_section_number">06</span>
+            <h2>Experience Emerald Yachts</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+              Watch how Emerald Yachts combines refined elegance with relaxed coastal cruising in the world's most beautiful destinations.
+            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <video
+                className="Emerald_video_player"
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                poster={EmeraldAzzurraVsEmeraldSakara1}
+              >
+                <source src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/AA3pOBiM5PBbCvWe_uIS0bU/Emerald%20Cruises/Yacht%20Cruising/Videos/Paid%20Social_%20EYC%20Caribbean%20Experiences%20_%2030sec%2016x9%20No%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=e1xf9emi&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+
+          <p className="Emerald_video_caption">
+            <span className="Emerald_caption_tag">Discover</span>
+            Discover the refined elegance and relaxed luxury of Emerald Yachts
+            as they navigate the stunning coastlines of the Mediterranean and Caribbean.
+          </p>
+        </div>
+      </section>
+
+      {/* ===== SECTION: IMAGE GALLERY ===== */}
+      <section className="Emerald_gallery_section">
+        <div className="Emerald_gallery_inner">
+          <div className="Emerald_gallery_header">
+            <span className="Emerald_section_number">07</span>
+            <h2>Life Onboard Emerald Yachts</h2>
+            <div className="Emerald_gallery_divider"></div>
+            <p className="Emerald_gallery_subtitle">
+              Experience intimate spaces designed for relaxed elegance and unforgettable coastal journeys.
+            </p>
+          </div>
+
+          <div className="Emerald_gallery_masonry">
+            <div className="Emerald_gallery_item Emerald_gallery_item--large">
+              <div className="Emerald_gallery_image_wrap">
+                <img
+                  src={EmeraldAzzurraVsEmeraldSakara2}
+                  alt="Emerald Yachts boutique luxury interior and coastal cruising experience"
+                  className="Emerald_gallery_image"
+                />
+                <div className="Emerald_gallery_overlay">
+                  <div className="Emerald_gallery_content">
+                    <span className="Emerald_gallery_badge">Boutique Luxury</span>
+                    <h3>Refined Interiors</h3>
+                    <p>Intimate spaces crafted for comfort and elegance with panoramic ocean views.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="Emerald_gallery_item">
+              <div className="Emerald_gallery_image_wrap">
+                <img
+                  src={EmeraldAzzurraVsEmeraldSakara3}
+                  alt="Emerald Yachts Mediterranean destination and scenic coastal views"
+                  className="Emerald_gallery_image"
+                />
+                <div className="Emerald_gallery_overlay">
+                  <div className="Emerald_gallery_content">
+                    <span className="Emerald_gallery_badge">Destinations</span>
+                    <h3>Coastal Beauty</h3>
+                    <p>Explore stunning Mediterranean and Caribbean coastlines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="Emerald_gallery_item">
+              <div className="Emerald_gallery_image_wrap">
+                <img
+                  src={EmeraldAzzurraVsEmeraldSakara1}
+                  alt="Emerald Yachts onboard dining and luxury amenities"
+                  className="Emerald_gallery_image"
+                />
+                <div className="Emerald_gallery_overlay">
+                  <div className="Emerald_gallery_content">
+                    <span className="Emerald_gallery_badge">Experience</span>
+                    <h3>Effortless Luxury</h3>
+                    <p>Relaxed atmosphere with world-class service and curated experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 18 — FAQ ===== */}
       <section className="emerald_faq_section">
         <div className="emerald_faq_inner">
+          <span className="Emerald_section_number">08</span>
           <h2>Emerald Yachts FAQs — Expert Answers</h2>
 
           <AntaFAQ
