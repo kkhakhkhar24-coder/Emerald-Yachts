@@ -522,7 +522,7 @@
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  stroke: #c5a059; /* Elegant gold accent for checkmarks */
+  stroke: #274472; /* Elegant gold accent for checkmarks */
   stroke-width: 2;
   fill: none;
   margin-top: 2px;
@@ -716,7 +716,7 @@
   }
 
   .senianta-ship-exp-text h2 {
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -834,7 +834,7 @@
   }
 
   .senianta-expedition-inner h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .senianta-expedition-inner p,
@@ -855,178 +855,265 @@
 }
 
 /* =====================================================
-   SECTION 6 — PRICING AND VALUE
+   SECTION 6 — PRICING AND VALUE (REDESIGNED)
    ===================================================== */
 
 .senianta-pricing-value {
-  position: relative;
-  padding: 70px 20px 80px;
-  background: #ffffff;
+  padding: 100px 20px;
+  background: #f8fafc;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-}
-
-.senianta-pricing-value::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120%;
-  height: 100%;
-  background: url('/luxury-bg-pattern.png') center/cover no-repeat;
-  opacity: 0.03;
-  z-index: 0;
+  position: relative;
 }
 
 .senianta-pricing-value-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
-  z-index: 1;
 }
 
-.senianta-pricing-value-inner h2 {
+.senianta-pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.senianta-pricing-header h2 {
   font-size: 48px;
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
   color: #274472;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  line-height: 1;
-  text-align: center;
-  position: relative;
+  margin-bottom: 30px;
 }
 
-.senianta-pricing-value-inner h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #274472;
-  margin: 15px auto 0;
-  border-radius: 2px;
+.senianta-pricing-intro-wrap {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .senianta-pricing-intro {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  color: #274472cc;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 300;
   line-height: 1.6;
+  color: #274472cc;
+  font-weight: 300;
 }
 
-.senianta-value-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* Value Framework Hero Box */
+.senianta-value-framework {
   margin-bottom: 80px;
 }
 
-.senianta-value-card {
-  background: #fdfdfd;
-  padding: 40px 30px;
-  border-radius: 20px;
-  text-align: center;
-  border: 1px solid rgba(39, 68, 114, 0.06);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease;
-}
-
-.senianta-value-card:hover {
-  transform: translateY(-8px);
-}
-
-.senianta-value-icon {
-  width: 42px;
-  height: 42px;
-  stroke: #274472;
-  stroke-width: 1.5px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.senianta-value-card p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  color: #274472;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.senianta-brand-positioning {
+.senianta-value-hero-box {
+  position: relative;
+  min-height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   display: flex;
+  background: #274472; /* Fallback */
+}
+
+.senianta-value-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom; /* Keep ship visible */
+  z-index: 1;
+}
+
+.senianta-value-hero-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(to top, rgba(39, 68, 114, 0.95), rgba(39, 68, 114, 0.5));
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  color: #ffffff;
+}
+
+.senianta-value-hero-overlay h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px !important;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500 !important;
+  line-height: 1.2;
+}
+
+
+.senianta-value-pillars {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.senianta-pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.senianta-pillar-icon {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+}
+
+.senianta-pillar span {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Brand Value Grid */
+.senianta-brand-value-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 60px;
 }
 
-.senianta-brand-pill {
-  flex: 1;
-  background: #f3f6fb;
-  padding: 50px 40px;
+.senianta-brand-value-card {
+  background: #ffffff;
   border-radius: 24px;
-  text-align: center;
-  border: 1px solid rgba(39, 68, 114, 0.04);
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.senianta-brand-pill h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
+.senianta-brand-value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(39, 68, 114, 0.12);
+}
+
+.senianta-card-image-wrap {
+  position: relative;
+  height: 250px;
+}
+
+.senianta-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.senianta-card-brand-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
   color: #274472;
-  margin-bottom: 20px;
-  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(5px);
 }
 
-.senianta-brand-pill p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
+.senianta-card-content {
+  padding: 40px;
+}
+
+.senianta-card-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #274472;
+  margin-bottom: 15px;
+}
+
+.senianta-card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
   color: #274472cc;
-  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.senianta-value-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.senianta-value-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #274472;
+  font-weight: 500;
+}
+
+.senianta-value-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #274472;
+  font-weight: bold;
+}
+
+.senianta-pricing-summary {
+  text-align: center;
+  margin-top: 40px;
 }
 
 .senianta-emphasis--decision {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  color: #274472 !important;
+  font-size: 1.15rem;
   font-style: italic;
-  font-weight: 300 !important;
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 1px solid rgba(8, 8, 8, 0.08);
-  max-width: 850px;
-  margin: 0 auto !important;
+  color: #274472;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
-  .senianta-brand-positioning {
-    flex-direction: column;
+  .senianta-brand-value-grid {
     gap: 30px;
   }
 }
 
 @media (max-width: 900px) {
   .senianta-pricing-value {
-    padding: 50px 15px 60px;
+    padding: 60px 15px;
   }
   
-  .senianta-pricing-value-inner h2 {
-    font-size: 36px;
-  }
 
-  .senianta-value-grid {
+  .senianta-brand-value-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
   
   .senianta-pricing-intro {
     font-size: 17px;
     margin-bottom: 40px;
   }
+
+  .senianta-value-hero-box {
+    min-height: auto;
+  }
+
+  .senianta-value-hero-overlay {
+    padding: 60px 20px;
+  }
+
+  .senianta-value-hero-overlay h3 {
+    font-size: 25px !important;
+    margin-bottom: 30px;
+  }
+
+  .senianta-value-pillars {
+    gap: 35px;
+  }
 }
+
+
 
 /* =====================================================
    SECTION 7 — DRAKE PASSAGE EXPERIENCE
@@ -1375,6 +1462,7 @@
   
   .senianta-choice-card h2 {
     text-align: center;
+    font-size: 28px;
   }
   
   .senianta-choice-card h2::after {
@@ -1400,6 +1488,7 @@
 }
 
 
+
 /* =====================================================
    SECTION 11 — EXPERT RECOMMENDATION
    ===================================================== */
@@ -1416,6 +1505,7 @@
   width: 100%;
 }
 
+/* ---------- Heading ---------- */
 .senianta-expert-inner h2 {
   font-size: 48px;
   font-family: 'Playfair Display', serif;
@@ -1438,6 +1528,7 @@
   border-radius: 2px;
 }
 
+/* ---------- Card Grid ---------- */
 .senianta-verdict-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1445,53 +1536,87 @@
   margin-bottom: 60px;
 }
 
+/* ---------- Individual Card ---------- */
 .senianta-verdict-card {
-  padding: 50px 40px;
   border-radius: 24px;
-  text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 1px solid rgba(39, 68, 114, 0.12);
   transition: all 0.3s ease;
-}
-
-.senianta-verdict-card--scenic {
-  background: #f7fafd;
-  border: 1px solid rgba(39, 68, 114, 0.08);
-}
-
-.senianta-verdict-card--silversea {
-  background: #fdfaf7;
-  border: 1px solid rgba(39, 68, 114, 0.08);
 }
 
 .senianta-verdict-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Card Image ---------- */
+.senianta-verdict-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Card Body ---------- */
+.senianta-verdict-body {
+  padding: 36px 36px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.senianta-verdict-card--scenic .senianta-verdict-body {
+  background: #f7fafd;
+}
+
+.senianta-verdict-card--silversea .senianta-verdict-body {
+  background: #fdfaf7;
+}
+
+/* ---------- Floating Icon Badge ---------- */
+.senianta-verdict-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #274472;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -46px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(39, 68, 114, 0.25);
 }
 
 .senianta-verdict-icon {
-  width: 40px;
-  height: 40px;
-  stroke: #274472;
-  stroke-width: 1.5;
-  margin-bottom: 25px;
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  stroke-width: 2;
 }
 
+/* ---------- Card Typography ---------- */
 .senianta-verdict-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   color: #274472;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
 .senianta-verdict-card p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #274472cc;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(39, 68, 114, 0.75);
   font-weight: 300;
+  margin: 0;
 }
 
 .senianta-verdict-card strong {
@@ -1499,6 +1624,7 @@
   font-weight: 700;
 }
 
+/* ---------- Expert Seal ---------- */
 .senianta-expert-seal {
   background: #f3f6fb;
   padding: 40px;
@@ -1523,6 +1649,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 50px;
+  white-space: nowrap;
 }
 
 .senianta-expert-seal p {
@@ -1532,12 +1659,36 @@
   font-style: italic;
   font-weight: 300;
   line-height: 1.6;
+  margin: 0;
 }
 
+/* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .senianta-verdict-container {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .senianta-expert-inner h2 {
+    font-size: 36px;
+  }
+
+  .senianta-verdict-body {
+    padding: 28px 24px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .senianta-expert-rec {
+    padding: 50px 16px 60px;
+  }
+
+  .senianta-expert-inner h2 {
+    font-size: 30px;
+  }
+
+  .senianta-verdict-img {
+    height: 180px;
   }
 }
 
@@ -2367,9 +2518,7 @@
     grid-template-columns: 1fr;
   }
 
-  .senianta-final-reach h2 {
-    font-size: 32px;
-  }
+ 
 
   .senianta-cta-glass-card {
     padding: 40px 25px;
@@ -2426,49 +2575,151 @@
   }
 }
 
-/* --- PROMOTIONAL VIDEO SECTION --- */
-.senianta-promo-video-wrapper {
-  max-width: 1000px;
-  margin: 60px auto;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(39, 68, 114, 0.1);
-  background: #000;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+/* --- PROMOTIONAL VIDEO SHOWCASE GRID --- */
+.senianta-video-showcase {
+  max-width: 1300px;
+  margin: 80px auto;
+  padding: 0 40px;
   position: relative;
   z-index: 2;
 }
 
-.senianta-promo-video-wrapper:hover {
-  transform: translateY(-5px) scale(1.005);
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3);
+.senianta-video-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.senianta-video-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.senianta-video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(39, 68, 114, 0.15);
+}
+
+.senianta-video-title {
+  padding: 20px 25px;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #274472;
+  background: #f8fafc;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+  text-align: center;
+}
+
+.senianta-video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
 }
 
 .senianta-promo-video-player {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
 
+.senianta-video-card-body {
+  padding: 25px;
+  flex-grow: 1;
+  background: #ffffff;
+}
+
+.senianta-video-card-body p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #274472cc;
+  text-align: center;
+}
+
 @media (max-width: 1100px) {
-  .senianta-promo-video-wrapper {
-    max-width: 90%;
-    margin: 50px auto;
+  .senianta-video-grid-inner {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .senianta-promo-video-wrapper {
-    margin: 40px 20px;
-    border-radius: 12px;
+  .senianta-video-showcase {
+    padding: 0 20px;
+    margin: 60px auto;
+  }
+  .senianta-video-grid-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .senianta-video-title {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .senianta-promo-video-wrapper {
-    margin: 30px 15px;
-    border-radius: 8px;
+  .senianta-video-showcase {
+    margin: 40px auto;
+  }
+  .senianta-video-card {
+    border-radius: 12px;
   }
 }
+
+/* --- SECTION 6 PRICING & VALUE RESPONSIVE --- */
+@media (max-width: 480px) {
+  .senianta-pricing-header h2 {
+    font-size: 26px !important;
+  }
+
+  .senianta-value-hero-box {
+    border-radius: 20px;
+  }
+
+  .senianta-value-hero-overlay {
+    padding: 40px 15px;
+  }
+
+  .senianta-value-hero-overlay h3 {
+    font-size: 22px !important;
+    margin-bottom: 25px;
+  }
+
+  .senianta-value-pillars {
+    gap: 30px;
+  }
+
+  .senianta-pillar-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .senianta-pillar span {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .senianta-card-content {
+    padding: 25px;
+  }
+  
+  .senianta-card-image-wrap {
+    height: 200px;
+  }
+
+  .senianta-emphasis--decision {
+    font-size: 16px;
+  }
+}
+
+
+

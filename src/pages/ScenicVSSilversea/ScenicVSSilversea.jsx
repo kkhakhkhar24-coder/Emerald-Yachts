@@ -21,7 +21,12 @@ import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilve
 import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
 import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
+import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.jpeg";
+import scenicValue from "../../assets/scenic-vs-silversea-antarctica/scenic_value.jpg";
+import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silversea_value.jpg";
 import { Helmet } from "react-helmet-async";
+import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.jpeg";
+import silverseaImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea2.jpg";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -626,48 +631,88 @@ const AntarcticaPage = () => {
       {/* ===== SECTION 6 — PRICING AND VALUE ===== */}
       <section className="senianta-pricing-value">
         <div className="senianta-pricing-value-inner">
-          <h2>Pricing and Value Positioning</h2>
-          <div className="senianta-pricing-content">
-            <p className="senianta-pricing-intro">
-              Both Scenic and Silversea navigate the ultra-luxury segment of
-              Antarctica travel.
-            </p>
+          <div className="senianta-pricing-header">
+            <h2>Pricing and Value Positioning</h2>
+            <div className="senianta-pricing-intro-wrap">
+              <p className="senianta-pricing-intro">
+                Both Scenic and Silversea navigate the ultra-luxury segment of
+                Antarctica travel. The investment represents more than a ticket;
+                it is an entry into the world's most remote frontier.
+              </p>
+            </div>
+          </div>
 
-            <div className="senianta-value-grid">
-              <div className="senianta-value-card">
-                <Snowflake className="senianta-value-icon" />
-                <p>Limited access to Antarctica</p>
+          <div className="senianta-value-framework">
+            <div className="senianta-value-hero-box">
+              <img
+                src={valueHero}
+                alt="Antarctica Value"
+                className="senianta-value-hero-img"
+              />
+              <div className="senianta-value-hero-overlay">
+                <h3>What Defines Value in Antarctica?</h3>
+                <div className="senianta-value-pillars">
+                  <div className="senianta-pillar">
+                    <Snowflake className="senianta-pillar-icon" />
+                    <span>Exclusive Access</span>
+                  </div>
+                  <div className="senianta-pillar">
+                    <Anchor className="senianta-pillar-icon" />
+                    <span>Logistical Excellence</span>
+                  </div>
+                  <div className="senianta-pillar">
+                    <Ship className="senianta-pillar-icon" />
+                    <span>Onboard Sophistication</span>
+                  </div>
+                </div>
               </div>
-              <div className="senianta-value-card">
-                <Anchor className="senianta-value-icon" />
-                <p>Expedition logistics and execution</p>
+            </div>
+          </div>
+
+          <div className="senianta-brand-value-grid">
+            <div className="senianta-brand-value-card">
+              <div className="senianta-card-image-wrap">
+                <img src={scenicValue} alt="Scenic Modern Luxury" />
+                <div className="senianta-card-brand-label">Scenic</div>
               </div>
-              <div className="senianta-value-card">
-                <Ship className="senianta-value-icon" />
-                <p>Ship capacity and onboard experience</p>
+              <div className="senianta-card-content">
+                <h4>Clarity and Simplicity</h4>
+                <p>
+                  Appeals to travelers who want an all-inclusive model where
+                  every detail is managed under one transparent price.
+                </p>
+                <ul className="senianta-value-bullets">
+                  <li>Ultra-modern discovery yacht</li>
+                  <li>All-inclusive shore expeditions</li>
+                  <li>No hidden surcharges</li>
+                </ul>
               </div>
             </div>
 
-            <div className="senianta-brand-positioning">
-              <div className="senianta-brand-pill">
-                <h4>Scenic</h4>
-                <p>
-                  Appeals to travelers who want clarity and simplicity in
-                  pricing.
-                </p>
+            <div className="senianta-brand-value-card">
+              <div className="senianta-card-image-wrap">
+                <img src={silverseaValue} alt="Silversea Classic Luxury" />
+                <div className="senianta-card-brand-label">Silversea</div>
               </div>
-              <div className="senianta-brand-pill">
-                <h4>Silversea</h4>
+              <div className="senianta-card-content">
+                <h4>Heritage and Service</h4>
                 <p>
-                  Appeals to those who value brand heritage and a traditional
-                  luxury model.
+                  Appeals to those who value traditional luxury models and a
+                  legacy of service developed over decades of cruising.
                 </p>
+                <ul className="senianta-value-bullets">
+                  <li>Classic silver service tradition</li>
+                  <li>Expedition heritage and expertise</li>
+                  <li>Customizable inclusions framework</li>
+                </ul>
               </div>
             </div>
+          </div>
 
+          <div className="senianta-pricing-summary">
             <p className="senianta-emphasis senianta-emphasis--decision">
               The decision is less about cost and more about how value is
-              structured and perceived.
+              structured and perceived relative to your travel style.
             </p>
           </div>
         </div>
@@ -724,19 +769,87 @@ const AntarcticaPage = () => {
         </div>
       </section>
 
-      <div className="senianta-promo-video-wrapper">
-        <video
-          className="senianta-promo-video-player"
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-        >
-          <source src="/Scenic - Yacht - 15 sec - CBS.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <section className="senianta-video-showcase">
+        <div className="senianta-video-grid-inner">
+          <div className="senianta-video-card">
+            <h3 className="senianta-video-title">Scenic Yacht Experience</h3>
+            <div className="senianta-video-wrapper">
+              <video
+                className="senianta-promo-video-player"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source
+                  src="/Scenic - Yacht - 15 sec - CBS.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="senianta-video-card-body">
+              <p>
+                Experience the ultra-luxury of Scenic Eclipse, the World's First
+                Discovery Yacht.
+              </p>
+            </div>
+          </div>
+
+          <div className="senianta-video-card">
+            <h3 className="senianta-video-title">Scenic B-Roll</h3>
+            <div className="senianta-video-wrapper">
+              <video
+                className="senianta-promo-video-player"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/ABFlnrVxF8Vzbuht3Dm-6HY/Scenic/Scenic%20Ocean/Videos/Experiences/Scenic%20b-roll.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ch1c9jtw&dl=0"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="senianta-video-card-body">
+              <p>
+                A closer look at the stunning environments and onboard life with
+                Scenic Luxury Cruises.
+              </p>
+            </div>
+          </div>
+
+          <div className="senianta-video-card">
+            <h3 className="senianta-video-title">Scenic Long Form</h3>
+            <div className="senianta-video-wrapper">
+              <video
+                className="senianta-promo-video-player"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/AM4U9Ywg5B3JhMCyVmy7Vm0/Scenic/Scenic%20Ocean/Videos/Experiences/SCENIC_LONG_FORM_FINAL.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=yb59ylmj&dl=0"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="senianta-video-card-body">
+              <p>
+                The complete journey – an in-depth exploration of the Antarctica
+                expedition experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ===== SECTION 10 — COMMON MISTAKES ===== */}
       <section className="senianta-mistakes">
@@ -793,26 +906,50 @@ const AntarcticaPage = () => {
       <section className="senianta-expert-rec">
         <div className="senianta-expert-inner">
           <h2>Our Recommendation</h2>
+
           <div className="senianta-verdict-container">
+            {/* Scenic Card */}
             <div className="senianta-verdict-card senianta-verdict-card--scenic">
-              <CheckCircle2 className="senianta-verdict-icon" />
-              <h3>The Scenic Recommendation</h3>
-              <p>
-                For most clients seeking a modern, all-inclusive experience with
-                clear pricing and contemporary design, <strong>Scenic</strong>{" "}
-                is often the stronger fit.
-              </p>
+              <img
+                className="senianta-verdict-img"
+                src={scenicImage}
+                alt="Scenic luxury river cruise ship on calm waters"
+              />
+              <div className="senianta-verdict-body">
+                <div className="senianta-verdict-icon-wrap">
+                  <CheckCircle2 className="senianta-verdict-icon" />
+                </div>
+                <h3>The Scenic Recommendation</h3>
+                <p>
+                  For most clients seeking a modern, all-inclusive experience
+                  with clear pricing and contemporary design,{" "}
+                  <strong>Scenic</strong> is often the stronger fit.
+                </p>
+              </div>
             </div>
+
+            {/* Silversea Card */}
             <div className="senianta-verdict-card senianta-verdict-card--silversea">
-              <CheckCircle2 className="senianta-verdict-icon" />
-              <h3>The Silversea Recommendation</h3>
-              <p>
-                For clients who prefer a more traditional luxury cruise
-                environment with established service style,{" "}
-                <strong>Silversea</strong> remains a strong choice.
-              </p>
+              <img
+                className="senianta-verdict-img"
+                src={silverseaImage}
+                alt="Silversea ocean cruise ship at sunset"
+              />
+              <div className="senianta-verdict-body">
+                <div className="senianta-verdict-icon-wrap">
+                  <CheckCircle2 className="senianta-verdict-icon" />
+                </div>
+                <h3>The Silversea Recommendation</h3>
+                <p>
+                  For clients who prefer a more traditional luxury cruise
+                  environment with established service style,{" "}
+                  <strong>Silversea</strong> remains a strong choice.
+                </p>
+              </div>
             </div>
           </div>
+
+          {/* Expert Seal */}
           <div className="senianta-expert-seal">
             <p>
               We regularly guide clients through this exact decision, ensuring
