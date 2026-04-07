@@ -26,13 +26,13 @@ const LuxuryPage = () => {
   const images = [HomePage1, HomePage3, HomePage4];
 
   const brands = [
-    { name: "The Wall Street Journal", logo: Logo1 },
-    { name: "The Washington Post", logo: Logo2 },
-    { name: "Travel Weekly", logo: Logo3 },
-    { name: "TravelPulse", logo: Logo4 },
-    { name: "Insider Travel Report", logo: Logo5 },
-    { name: "Travel Market Report", logo: Logo6 },
-    { name: "Travel Leaders Network", logo: Logo7 },
+    { name: "The Washington Post", logo: Logo1 },
+    { name: "Travel Weekly", logo: Logo2 },
+    { name: "TravelPulse", logo: Logo3 },
+    { name: "Insider Travel Report", logo: Logo4 },
+    { name: "Travel Market Report", logo: Logo5 },
+    { name: "Travel Leaders Network", logo: Logo6 },
+    { name: "The Wall Street Journal", logo: Logo7 },
   ];
 
   useEffect(() => {
