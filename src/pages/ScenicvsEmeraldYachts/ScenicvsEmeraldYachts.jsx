@@ -539,21 +539,43 @@ function YachtsComparison() {
         </div>
       </section>
 
-      {/* SECTION 8 */}
+      {/* SECTION 8: Best Choice Based on Travel Style */}
       <section className="Yachts_best_section">
         <div className="Yachts_best_inner">
           <h2>Best Choice Based on Travel Style</h2>
 
-          <p>Choose Scenic for:</p>
+          {/* SCENIC CHOICE (Text Left, Video Right) */}
+          <div className="Yachts_choice_row">
+            <div className="Yachts_choice_content">
+              <h3>Choose Scenic for:</h3>
+              <p>Luxury anniversaries or milestone trips</p>
+              <p>Travelers who value structure and inclusions</p>
+              <p>High-end, design-forward experiences</p>
+            </div>
+            <div className="Yachts_choice_video">
+              <video autoPlay muted loop playsInline controls>
+                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AHDoC69hOnqPpbFkjXvNTuc/Scenic/Scenic%20Ocean/Videos/Scenic%20-%20Yacht%20-%2015%20sec%20-%20CBS.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ptfv114l&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-          <p>Luxury anniversaries or milestone trips</p>
-          <p>Travelers who value structure and inclusions</p>
-          <p>High-end, design-forward experiences</p>
-
-          <p>Choose Emerald for:</p>
-          <p>First-time yacht travelers</p>
-          <p>Relaxed, social travel style</p>
-          <p>Strong value within yacht cruising</p>
+          {/* EMERALD CHOICE (Video Left, Text Right) */}
+          <div className="Yachts_choice_row Yachts_choice_reverse">
+            <div className="Yachts_choice_content">
+              <h3>Choose Emerald for:</h3>
+              <p>First-time yacht travelers seeking approachable luxury</p>
+              <p>Relaxed, social travel style with boutique vibes</p>
+              <p>Strong value within the premium yacht cruising segment</p>
+              <p>Ideal for warm-weather coastal exploration and docking in small ports</p>
+            </div>
+            <div className="Yachts_choice_video">
+              <video autoPlay muted loop playsInline controls>
+                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AIKUdjJ96iUVyUnmWwwHKpk/Emerald%20Cruises/Yacht%20Cruising/Videos/Emerald%20Cruises%20Luxury%20Yacht%20Cruising.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=w90egx60&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </section>
 

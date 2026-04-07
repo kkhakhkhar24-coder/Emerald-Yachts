@@ -352,6 +352,35 @@ function ScenicAntarctica() {
         </div>
       </section>
 
+      {/* ================= NEW VIDEO SECTION ================= */}
+      <section className="Scenic_video_grid_section">
+        <div className="Scenic_video_grid_inner">
+          <div className="Scenic_video_row">
+            <div className="Scenic_video_item">
+              <h3>Wildlife of Antarctica</h3>
+              <video autoPlay muted loop playsInline controls>
+                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACNt3LrAxynWJPY-CRQRbH8/Scenic/Scenic%20Ocean/Videos/Antarctica/Reel%20Format/Wildlife%20Of%20Antarctica%20Social%20Reel%201%20-%20World%20Wildlife%20Day%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ba372ruc&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="Scenic_video_item">
+              <h3>Antarctica & East Antarctica</h3>
+              <video autoPlay muted loop playsInline controls>
+                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AK_BXGRAgNIVFjkeht6x-hw/Scenic/Scenic%20Ocean/Videos/Antarctica/30s-Antarctica%20and%20East%20Antarctica_Brochure%20video_Gen_CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=f9qak7ti&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="Scenic_video_item">
+              <h3>Exploring East Antarctica & Ross Sea</h3>
+              <video autoPlay muted loop playsInline controls>
+                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/APLYAQLs3hUko6hSJWqpcIo/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20_%20%20Exploring%20East%20Antarctica%20and%20the%20Ross%20Sea.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ovtwu8dc&raw=1" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ================= SECTION 8 ================= */}
       <section className="Scenic_pricing_investment_section">
         <div className="Scenic_pricing_investment_inner">
