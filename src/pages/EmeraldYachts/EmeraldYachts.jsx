@@ -8,12 +8,29 @@ import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
 import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
 import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
 import HomePage2 from "../../assets/HomePage/HomePage2.jpg";
+import Logo1 from "../../assets/HomePage/Logo1.png";
+import Logo2 from "../../assets/HomePage/Logo2.png";
+import Logo3 from "../../assets/HomePage/Logo3.png";
+import Logo4 from "../../assets/HomePage/Logo4.webp";
+import Logo5 from "../../assets/HomePage/Logo5.png";
+import Logo6 from "../../assets/HomePage/Logo6.png";
+import Logo7 from "../../assets/HomePage/Logo7.png";
 
 const LuxuryPage = () => {
   const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
 
   const images = [HomePage1, HomePage3, HomePage4];
+
+  const brands = [
+    { name: "The Wall Street Journal", logo: Logo1 },
+    { name: "The Washington Post", logo: Logo2 },
+    { name: "Travel Weekly", logo: Logo3 },
+    { name: "TravelPulse", logo: Logo4 },
+    { name: "Insider Travel Report", logo: Logo5 },
+    { name: "Travel Market Report", logo: Logo6 },
+    { name: "Travel Leaders Network", logo: Logo7 },
+  ];
 
   useEffect(() => {
     const slider = setInterval(() => {
@@ -329,49 +346,24 @@ const LuxuryPage = () => {
             publications.
           </p>
 
-          {/* MEDIA GRID (Static, Sophisticated) */}
-          <div className="Emerald_media_grid">
-            {[
-              "The New York Times",
-              "The Washington Post",
-              "Travel Weekly",
-              "TravelPulse",
-              "Insider Travel Report",
-              "Travel Market Report",
-              "Travel Leaders Network",
-            ].map((brand, i) => (
-              <div key={i} className="Emerald_media_box">
-                <span className="Emerald_media_name">{brand}</span>
-              </div>
-            ))}
+          {/* LOGO SLIDER (Responsive, Interactive) */}
+          <div className="Emerald_slider_container">
+            <div className="Emerald_slider_track">
+              {[...brands, ...brands].map((brand, i) => (
+                <div key={i} className="Emerald_media_box">
+                  <div className="Emerald_logo_wrapper">
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="Emerald_media_logo"
+                    />
+                  </div>
+                  <span className="Emerald_media_name">{brand.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* INDUSTRY RECOGNITION (Minimalist Cards) */}
-          {/* <div className="Emerald_awards_row">
-      <div className="Emerald_award_card">
-        <Award className="Emerald_award_icon" />
-        <div className="Emerald_award_info">
-          <h4>Luxury Travel Influencer of the Year</h4>
-          <p>Recognized by Travel Leaders Network for 2024</p>
-        </div>
-      </div>
-      
-      <div className="Emerald_award_card">
-        <Star className="Emerald_award_icon" />
-        <div className="Emerald_award_info">
-          <h4>Most Influential Women in Travel</h4>
-          <p>Awarded by TravelPulse (2026)</p>
-        </div>
-      </div>
-
-      <div className="Emerald_award_card">
-        <Globe className="Emerald_award_icon" />
-        <div className="Emerald_award_info">
-          <h4>Global Industry Contributor</h4>
-          <p>Featured spokesperson in leading publications</p>
-        </div>
-      </div>
-    </div> */}
 
           <p className="Emerald_media_inquiry">
             <Quote size={12} className="Emerald_quote_icon" />

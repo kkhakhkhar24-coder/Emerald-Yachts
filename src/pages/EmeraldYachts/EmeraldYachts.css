@@ -705,39 +705,123 @@
   font-weight: 300;
 }
 
-/* MEDIA GRID */
-.Emerald_media_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-bottom: 80px;
+/* RECOGNITION SLIDER */
+.Emerald_slider_container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent, black 10%, black 90%, transparent
+  );
+}
+
+.Emerald_slider_track {
+  display: flex;
+  width: max-content;
+  animation: scrollLogos 35s linear infinite;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 7 - 30px * 7));
+  }
+}
+
+.Emerald_slider_container:hover .Emerald_slider_track {
+  animation-play-state: paused;
 }
 
 .Emerald_media_box {
+  width: 280px;
+  flex-shrink: 0;
   background: white;
-  padding: 30px 15px;
-  border-radius: 12px;
-  border: 1px solid #f2f2f2;
+  padding: 20px 15px; /* LOWER PADDING */
+  border-radius: 16px;
+  border: 1px solid #eef2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(39, 68, 114, 0.04);
+}
+
+.Emerald_logo_wrapper {
+  height: 110px; /* INCREASED SIZE */
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.Emerald_media_logo {
+  height: 100px; /* SAME SIZE (UNIFORM HEIGHT) */
+  max-width: 90%;
+  width: auto;
+  object-fit: contain;
+  opacity: 1;
+  filter: grayscale(40%); /* even less grayscale */
   transition: all 0.3s ease;
-  min-height: 100px;
 }
 
 .Emerald_media_box:hover {
-  border-color: #2f4a6d33;
-  box-shadow: 0 10px 25px rgba(39, 68, 114, 0.05);
-  transform: translateY(-3px);
+  border-color: #2f4a6d44;
+  box-shadow: 0 15px 40px rgba(39, 68, 114, 0.1);
+  transform: translateY(-10px);
+}
+
+.Emerald_media_box:hover .Emerald_media_logo {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .Emerald_media_name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  color: #2f4a6d;
-  font-weight: 600;
-  opacity: 0.8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #274472;
+  font-weight: 700;
   text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+/* RESPONSIVE OVERRIDES */
+@media (max-width: 768px) {
+  .Emerald_media_box {
+    width: 220px;
+    padding: 15px 10px;
+  }
+  .Emerald_logo_wrapper {
+    height: 80px;
+  }
+  .Emerald_media_logo {
+    height: 70px;
+  }
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-220px * 7 - 30px * 7));
+    }
+  }
 }
 
 /* AWARDS ROW */
