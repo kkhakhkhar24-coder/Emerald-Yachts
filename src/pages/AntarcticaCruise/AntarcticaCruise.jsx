@@ -8,7 +8,14 @@ import { Award, Globe, Shield, Star } from "lucide-react";
 import anta1 from "../../assets/antarctica-cruise-cost/anta1.jpg";
 import anta2 from "../../assets/antarctica-cruise-cost/anta2.jpg";
 import anta3 from "../../assets/antarctica-cruise-cost/anta3.jpg";
-import anta5 from "../../assets/antarctica-cruise-cost/anta5.jpg";
+
+import AntaSilder1 from "../../assets/antarctica-cruise-cost/AntaSilder1.jpg";
+import AntaSilder2 from "../../assets/antarctica-cruise-cost/AntaSilder2.jpg";
+import AntaSilder3 from "../../assets/antarctica-cruise-cost/AntaSilder3.jpg";
+import AntaSilder4 from "../../assets/antarctica-cruise-cost/AntaSilder4.jpg";
+import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.jpg";
+import AntaSilder6 from "../../assets/antarctica-cruise-cost/AntaSilder6.jpg";
+import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.jpg";
 
 const AntarcticaCostPage = () => {
   const [current, setCurrent] = useState(0);
@@ -672,6 +679,35 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
+      {/* ===== ROW SLIDER SECTION ===== */}
+      <section className="anta_row_slider_section">
+        <div className="anta_row_slider_wrapper">
+          <div className="anta_row_slider_track">
+            {[
+              AntaSilder1,
+              AntaSilder2,
+              AntaSilder3,
+              AntaSilder4,
+              AntaSilder5,
+              AntaSilder6,
+              AntaSilder7,
+              // Repeat once for seamless loop
+              AntaSilder1,
+              AntaSilder2,
+              AntaSilder3,
+              AntaSilder4,
+              AntaSilder5,
+              AntaSilder6,
+              AntaSilder7,
+            ].map((img, index) => (
+              <div className="anta_row_slider_item" key={index}>
+                <img src={img} alt={`Antarctica Slider ${index + 1}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 10 — WHAT YOU GET AT EACH LEVEL ===== */}
       <section className="anta_levels_section">
         <div className="anta_levels_inner">
@@ -753,9 +789,18 @@ const AntarcticaCostPage = () => {
               </div>
             </div>
 
-            {/* IMAGE (RIGHT) */}
+            {/* VIDEO (RIGHT) */}
             <div className="anta_why_image">
-              <img src={anta5} alt="Antarctic Expedition Logistics" />
+              <video
+                src="/AntaVideo1.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="anta_why_showcase_video"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -778,18 +823,25 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 13.5 — ANTARCTICA VIDEO SHOWCASE ===== */}
       <section className="anta_video_section">
         <div className="anta_video_inner">
-          <div className="anta_video_wrapper">
-            <video
-              src="/Antarctica LTT _ 30sec TVC.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              className="anta_showcase_video"
-            >
-              Your browser does not support the video tag.
-            </video>
+          <div className="anta_video_header">
+            <h2>Experience the Scale of Antarctica</h2>
+            <p>A visual journey through the world's most remote wilderness</p>
+          </div>
+          
+          <div className="anta_video_card">
+            <div className="anta_video_wrapper">
+              <video
+                src="/Antarctica LTT _ 30sec TVC.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                className="anta_showcase_video"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
