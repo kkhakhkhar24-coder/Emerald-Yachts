@@ -10,6 +10,7 @@ import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmerald
 import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
 import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.jpg"
 import myImage from "../../assets/image.jpg";
+import { Helmet } from "react-helmet-async";
 
 // Lucide React Icons
 import {
@@ -113,10 +114,300 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
     return () => clearInterval(slider);
   }, [images.length]);
 
-
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#webpage",
+        "url": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/",
+        "name": "Emerald Azzurra vs Emerald Sakara: Which Emerald Yacht Is Best?",
+        "headline": "Emerald Azzurra vs Emerald Sakara: Which Emerald Yacht Is Right for You?",
+        "description": "Compare Emerald Azzurra vs Emerald Sakara with expert insights from Angela Hughes. Explore suites, itineraries, experience, and which Emerald yacht is right for you.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Emerald Azzurra"
+          },
+          {
+            "@type": "Thing",
+            "name": "Emerald Sakara"
+          },
+          {
+            "@type": "Thing",
+            "name": "Emerald Cruises"
+          },
+          {
+            "@type": "Thing",
+            "name": "Luxury yacht cruises"
+          }
+        ],
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/wp-content/uploads/2026/04/emerald-azzurra-vs-emerald-sakara.jpg"
+        },
+        "datePublished": "2026-04-05",
+        "dateModified": "2026-04-05",
+        "author": {
+          "@id": "https://www.tripsandships.com/#/schema/person/angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#breadcrumb"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tripsandships.com/#website",
+        "url": "https://www.tripsandships.com/",
+        "name": "Trips & Ships Luxury Travel",
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/wp-content/uploads/2026/04/trips-and-ships-logo.png"
+        },
+        "image": "https://www.tripsandships.com/wp-content/uploads/2026/04/trips-and-ships-logo.png",
+        "email": "sales@tripsandships.com",
+        "telephone": "+1-603-860-3274",
+        "sameAs": [
+          "https://www.instagram.com/tripsandships",
+          "https://www.facebook.com/tripsandships",
+          "https://www.linkedin.com/company/trips-and-ships-luxury-travel",
+          "https://www.youtube.com/@tripsandships"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/#/schema/person/angela-hughes",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO & Founder",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "url": "https://www.tripsandships.com/about-angela-hughes/",
+        "image": "https://www.tripsandships.com/wp-content/uploads/2026/04/angela-hughes.jpg",
+        "sameAs": [
+          "https://www.instagram.com/tripsandships",
+          "https://www.linkedin.com/in/angela-hughes",
+          "https://www.youtube.com/@tripsandships"
+        ],
+        "description": "Angela Hughes is the CEO and Founder of Trips & Ships Luxury Travel and a luxury travel expert specializing in yacht and small-ship cruising."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Luxury Yacht Cruises",
+            "item": "https://www.tripsandships.com/luxury-yacht-cruises/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Emerald Azzurra vs Emerald Sakara",
+            "item": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between Emerald Azzurra and Emerald Sakara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are sister yachts with nearly identical onboard experiences. The main difference is itinerary and availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is better, Emerald Azzurra or Emerald Sakara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neither is universally better. The best choice depends on itinerary, timing, and suite availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Emerald Azzurra and Emerald Sakara the same ship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are not the same vessel but are designed with the same layout and experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Emerald yacht is newer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Emerald Sakara is newer, but the onboard experience is very similar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do both yachts have the same suites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, both offer the same suite categories and layouts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best suite on Emerald yachts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Owner’s Suite is the top category, though many prefer Yacht Suites or Deluxe Balcony Suites for value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Emerald Cruises considered luxury?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Emerald is positioned in the luxury category."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Scenic better than Emerald?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scenic is generally more ultra-luxury, while Emerald offers strong luxury value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many passengers are on Emerald yachts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "100 guests with approximately 76 crew."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Emerald good for first-time luxury cruisers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is one of the best entry points into luxury yacht cruising."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I use a travel advisor for Emerald Cruises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, especially for comparing itineraries and building the full experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What destinations do Emerald yachts sail?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mediterranean, Adriatic, Caribbean, Seychelles, and other warm-weather destinations."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#article",
+        "mainEntityOfPage": {
+          "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#webpage"
+        },
+        "headline": "Emerald Azzurra vs Emerald Sakara: Which Emerald Yacht Is Right for You?",
+        "description": "Compare Emerald Azzurra vs Emerald Sakara with expert insights from Angela Hughes. Explore suites, itineraries, experience, and which Emerald yacht is right for you.",
+        "author": {
+          "@id": "https://www.tripsandships.com/#/schema/person/angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "datePublished": "2026-04-05",
+        "dateModified": "2026-04-05",
+        "image": [
+          "https://www.tripsandships.com/wp-content/uploads/2026/04/emerald-azzurra-vs-emerald-sakara.jpg"
+        ],
+        "articleSection": [
+          "Luxury Yacht Cruises",
+          "Emerald Cruises",
+          "Ship Comparisons"
+        ],
+        "keywords": [
+          "Emerald Azzurra vs Emerald Sakara",
+          "Emerald Azzurra review",
+          "Emerald Sakara review",
+          "Emerald Cruises yacht comparison",
+          "luxury yacht cruises"
+        ],
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#video",
+        "name": "Emerald Azzurra vs Emerald Sakara: What Actually Matters",
+        "description": "Angela Hughes explains how to choose between Emerald Azzurra and Emerald Sakara and what actually matters when comparing these luxury yachts.",
+        "thumbnailUrl": [
+          "https://www.tripsandships.com/wp-content/uploads/2026/04/emerald-azzurra-vs-emerald-sakara-video-thumb.jpg"
+        ],
+        "uploadDate": "2026-04-05",
+        "embedUrl": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID",
+        "contentUrl": "https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID",
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/#speakable",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".quick-answer",
+            ".key-takeaway",
+            ".final-expert-statement"
+          ]
+        },
+        "url": "https://www.tripsandships.com/emerald-azzurra-vs-emerald-sakara/"
+      }
+    ]
+  };
 
   return (
     <>
+      <Helmet>
+        <title>Emerald Azzurra vs Emerald Sakara: Which Yacht Is Best?</title>
+        <meta
+          name="description"
+          content="Compare Emerald Azzurra vs Emerald Sakara with expert insights from Angela Hughes. Suites, itineraries, experience, and which Emerald yacht is right for you."
+        />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+      </Helmet>
       <Navbar />
 
       {/* ===== HERO ===== */}
