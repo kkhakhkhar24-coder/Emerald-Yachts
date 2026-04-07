@@ -93,19 +93,22 @@
 }
 
 .anta_primary_btn {
-  padding: 14px 26px;
-  background: white;
-  color: black;
+  padding: 15px 30px;
+  background: #fff;
+  color: #1a1a1a;
   border: none;
-  cursor: pointer;
-  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .anta_primary_btn:hover {
-  background: #dbeafe;
+  background: #274472;
+  color: #fff;
 }
 
 .anta_secondary_btn {

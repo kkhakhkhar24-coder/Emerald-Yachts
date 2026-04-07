@@ -40,8 +40,10 @@
 /* P */
 .Yachts_hero_content p {
   margin-bottom: 12px;
+  color: #fff;
 }
 .Yachts_hero_p{
+  color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
@@ -88,10 +90,22 @@
 }
 
 .Yachts_primary_btn {
-  padding: 14px 26px;
-  background: white;
-  color: black;
+  padding: 15px 30px;
+  background: #fff;
+  color: #1a1a1a;
   border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.Yachts_primary_btn:hover {
+  background: #274472;
+  color: #fff;
 }
 
 .Yachts_secondary_btn {

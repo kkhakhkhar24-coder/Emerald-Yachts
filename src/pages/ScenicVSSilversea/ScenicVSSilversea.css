@@ -100,22 +100,23 @@
 }
 
 .senianta-primary {
-  background: white;
-  color: black;
-  padding: 14px 30px;
+  padding: 15px 30px;
+  background: #fff;
+  color: #1a1a1a;
   border: none;
-  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  transition: 0.3s;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
   margin-left: 0;
-  margin-top: 12px;
 }
 
 .senianta-primary:hover {
-  background: #dbeafe;
+  background: #274472;
+  color: #fff;
 }
 
 .senianta-secondary {

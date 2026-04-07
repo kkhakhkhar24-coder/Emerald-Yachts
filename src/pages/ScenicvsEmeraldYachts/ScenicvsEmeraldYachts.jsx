@@ -699,9 +699,8 @@ function YachtsComparison() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${
-                  activeFaq === index ? "Scenic-active" : ""
-                }`}
+                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
+                  }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

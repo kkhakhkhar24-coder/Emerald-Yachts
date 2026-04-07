@@ -443,35 +443,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
         {/* Slide dots */}
       </section>
 
-      {/* ===== VIDEO SECTION ===== */}
-      <section className="Sakara_video_section">
-        <div className="Sakara_video_container">
-
-          <h2 className="Sakara_video_heading">
-            Emerald Azzurra vs Emerald Sakara: What Actually Matters
-          </h2>
-          <p className="Sakara_video_sub">
-            These yachts are nearly identical. The mistake most travelers make
-            is choosing based on the ship instead of the itinerary. Here's how
-            we guide clients to make the right decision.
-          </p>
-          <div className="Sakara_video_wrapper">
-            <video
-              className="Sakara_video_player"
-              autoPlay
-              loop
-              muted
-              controls
-              playsInline
-              poster={EmeraldAzzurraVsEmeraldSakara1}
-            >
-              <source src="/Emerald - Yacht - 15 sec - CBS.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-
       {/* ===== AUTHORITY SECTION ===== */}
       <section className="Sakara_authority_section">
         <div className="Sakara_authority_container">
@@ -523,6 +494,35 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
         </div>
       </section>
 
+      {/* ===== VIDEO SECTION ===== */}
+      <section className="Sakara_video_section">
+        <div className="Sakara_video_container">
+
+          <h2 className="Sakara_video_heading">
+            Emerald Azzurra vs Emerald Sakara: What Actually Matters
+          </h2>
+          <p className="Sakara_video_sub">
+            These yachts are nearly identical. The mistake most travelers make
+            is choosing based on the ship instead of the itinerary. Here's how
+            we guide clients to make the right decision.
+          </p>
+          <div className="Sakara_video_wrapper">
+            <video
+              className="Sakara_video_player"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              poster={EmeraldAzzurraVsEmeraldSakara1}
+            >
+              <source src="/Emerald - Yacht - 15 sec - CBS.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* ===== WHY THIS COMPARISON MATTERS ===== */}
       <section className="Sakara_why_section">
         <div className="Sakara_why_container">
@@ -537,22 +537,18 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
             <div className="Sakara_why_card">
               <FiUsers className="Sakara_why_icon" />
               <h4>100 Guests</h4>
-              <p>Both yachts carry only 100 guests, creating an intimate, private atmosphere unlike traditional cruise ships.</p>
             </div>
             <div className="Sakara_why_card">
               <FiAnchor className="Sakara_why_icon" />
               <h4>Smaller Ports & Harbors</h4>
-              <p>These yachts access destinations larger ships simply cannot reach, giving you a fundamentally different experience.</p>
             </div>
             <div className="Sakara_why_card">
               <FiWind className="Sakara_why_icon" />
               <h4>Relaxed Yacht Atmosphere</h4>
-              <p>A casual, unhurried rhythm onboard that mirrors the feeling of traveling on a private yacht.</p>
             </div>
             <div className="Sakara_why_card">
               <FiMap className="Sakara_why_icon" />
               <h4>More Immersive Travel</h4>
-              <p>The small-ship format means more time in destination and deeper cultural access at every port.</p>
             </div>
           </div>
           <div className="Sakara_why_note">
@@ -769,22 +765,18 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
             <div className="Sakara_why_trips_card">
               <BsGraphUp className="Sakara_why_trips_icon" />
               <h4>Compare Emerald vs Scenic vs Alternatives</h4>
-              <p>We evaluate every option on the market against your specific travel goals and timeline.</p>
             </div>
             <div className="Sakara_why_trips_card">
               <MdOutlineRoute className="Sakara_why_trips_icon" />
               <h4>Select the Right Sailing</h4>
-              <p>We match your dates, destinations, and goals to the sailing that delivers the best experience.</p>
             </div>
             <div className="Sakara_why_trips_card">
               <MdOutlineKingBed className="Sakara_why_trips_icon" />
               <h4>Choose the Right Suite</h4>
-              <p>We guide you to the suite that matches how you actually travel, not just the most expensive option.</p>
             </div>
             <div className="Sakara_why_trips_card">
               <MdOutlineDesignServices className="Sakara_why_trips_icon" />
               <h4>Design the Full Experience</h4>
-              <p>Pre-cruise hotels, extensions, air strategy, and shore planning — we build the entire trip.</p>
             </div>
           </div>
           <div className="Sakara_trust_statement">
@@ -830,7 +822,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
           <div className="Sakara_verdict_expert">
             <p className="Sakara_verdict_quote">"The biggest mistake you can make is choosing the ship first instead of the experience."</p>
           </div>
-          <button className="Sakara_verdict_btn">Request My Custom Yacht Recommendation</button>
         </div>
       </section>
 

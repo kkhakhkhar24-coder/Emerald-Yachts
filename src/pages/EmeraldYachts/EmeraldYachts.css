@@ -121,10 +121,22 @@
 }
 
 .Emerald_primary_btn {
-  padding: 14px 26px;
-  background: white;
-  color: black;
+  padding: 15px 30px;
+  background: #fff;
+  color: #1a1a1a;
   border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.Emerald_primary_btn:hover {
+  background: #274472;
+  color: #fff;
 }
 
 .Emerald_secondary_btn {
