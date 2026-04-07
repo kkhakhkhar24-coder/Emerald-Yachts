@@ -510,7 +510,7 @@
    ============================================================ */
 .svf-sticky-wrap {
     display: grid;
-    grid-template-columns: 1.65fr 1fr;
+    grid-template-columns: 1fr 1.65fr;
     gap: 60px;
     align-items: start;
     width: 100%;
@@ -719,6 +719,7 @@
 /* ============================================================
    SECTION 6: COMPARISON TABLE
    ============================================================ */
+
 .svf-tbl-wrap {
     overflow-x: auto;
     border-radius: 4px;

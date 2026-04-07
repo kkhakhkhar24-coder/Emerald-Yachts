@@ -137,7 +137,7 @@ function ScenicVSFourSeasonsYachts() {
             {/* SECTION 4: AUTHORITY — heading LEFT */}
             <section className="svf-section svf-bg-white">
                 <div className="svf-inner">
-                    <div className="svf-sticky-wrap">
+                    <div className="svf-sticky-wrap svf-rev">
                         <main className="svf-main-col">
                             <h3 className="svf-h3">Angela Hughes — Luxury Yacht Expert</h3>
                             <p className="svf-p svf-mb-md">Angela Hughes is a global luxury travel expert specializing in ultra-luxury cruises and yacht experiences. She leads a team of over 140 advisors and works directly with clients comparing Scenic, Four Seasons, and other top-tier cruise products.</p>
