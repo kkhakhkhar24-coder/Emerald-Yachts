@@ -9,13 +9,14 @@ import EmeraldAzzurraVsEmeraldSakara from '../src/pages/EmeraldAzzurraVsEmeraldS
 import { BrowserRouter } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import LuxuryTravel from './pages/LuxuryTravel/LuxuryTravel'
 import Navbar from './components/Navbar/Navbar'
 import ScenicVSFourSeasonsYachts from './pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts'
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<EmeraldYachts />}></Route>
@@ -29,7 +30,7 @@ function App() {
           <Route path='/emerald-azzurra-vs-emerald-sakara' element={<EmeraldAzzurraVsEmeraldSakara />}></Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </HelmetProvider>
   )
 }
 
