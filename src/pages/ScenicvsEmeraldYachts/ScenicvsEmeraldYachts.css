@@ -1831,7 +1831,7 @@
   font-size: 22px;
   color: #2f4a6d;
   margin-bottom: 8px;
-
+  font-weight:600 !important;
 }
 
 .Yachts_box_subtitle {
@@ -1839,8 +1839,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #888;
-  font-weight: 600;
+  font-weight:light;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .Yachts_box_grid {
