@@ -5,17 +5,17 @@
 import React, { useEffect, useState } from "react";
 import "./EmeraldAzzurraVsEmeraldSakara.css";
 import Navbar from "../../components/Navbar/Navbar";
-import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
-import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
-import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
-import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.jpg"
+import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurravsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
+import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurravsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
+import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurravsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
+import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurravsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.jpg";
 import myImage from "../../assets/image.jpg";
 import { Helmet } from "react-helmet-async";
-import ImageGellery1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery1.jpg";
-import ImageGellery2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery2.jpg";
-import ImageGellery3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery3.jpg";
-import ImageGellery4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery4.jpg";
-import ImageGellery5 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery5.jpg";
+import ImageGellery1 from "../../assets/EmeraldAzzurravsEmeraldSakara/ImageGellery1.jpg";
+import ImageGellery2 from "../../assets/EmeraldAzzurravsEmeraldSakara/ImageGellery2.jpg";
+import ImageGellery3 from "../../assets/EmeraldAzzurravsEmeraldSakara/ImageGellery3.jpg";
+import ImageGellery4 from "../../assets/EmeraldAzzurravsEmeraldSakara/ImageGellery4.jpg";
+import ImageGellery5 from "../../assets/EmeraldAzzurravsEmeraldSakara/ImageGellery5.jpg";
 
 // Lucide React Icons
 import {
