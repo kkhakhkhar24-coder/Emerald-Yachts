@@ -286,6 +286,30 @@ function ScenicAntarctica() {
         </div>
       </section>
 
+
+
+
+
+
+
+      
+
+      {/* ================= NEW VIDEO SECTION ================= */}
+      <section className="Scenic_youtube_video_section">
+        <div className="Scenic_youtube_video_inner">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/MlndaJ0LN7E?si=v-S_FIpbcGGPpfBH" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
       {/* ================= SECTION 6 ================= */}
       <section className="Scenic_right_experience_section">
         <div className="Scenic_right_experience_inner">
@@ -676,9 +700,8 @@ function ScenicAntarctica() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${
-                  activeFaq === index ? "Scenic-active" : ""
-                }`}
+                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
+                  }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

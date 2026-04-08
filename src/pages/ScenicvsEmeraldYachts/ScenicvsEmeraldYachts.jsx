@@ -655,54 +655,63 @@ function YachtsComparison() {
         </div>
       </section>
 
-      {/* SECTION 14 */}
-      <section className="Yachts_why_section">
-        <div className="Yachts_why_inner">
-          <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
-
-          <p>
-            Angela Hughes has over four decades in the travel industry and has
-            traveled to 121 countries and territories.
-          </p>
-          <p>
-            She leads a team of more than 140 luxury travel advisors and
-            specializes in matching clients to the right travel experience.
-          </p>
-
-          <p>Clients benefit from:</p>
-          <p>Clear positioning across yacht brands</p>
-          <p>Access to preferred inventory</p>
-          <p>Full itinerary coordination</p>
-          <p>Ongoing support</p>
-        </div>
-      </section>
-
-      {/* SECTION 15 */}
-      {/* <section className="Yachts_author_section">
-        <div className="Yachts_author_inner">
-          <h2>Planned and Curated by Angela Hughes CEO, Trips & Ships Luxury Travel</h2>
-
-
-          <p>40+ years of experience</p>
-          <p>121 countries traveled</p>
-          <p>Luxury Travel Influencer of the Year (2024)</p>
-          <p>Most Influential Women in Travel (2026)</p>
-        </div>
-      </section> */}
-
+      {/* COMBINED SECTION 14 & 15 */}
       <section className="Yachts_author_section">
         <div className="Yachts_author_inner Yachts_author_split">
+          
           {/* LEFT CONTENT */}
-          <div className="Yachts_author_content">
-            <h2>
-              Planned and Curated by Angela Hughes CEO, Trips & Ships Luxury
-              Travel
-            </h2>
+          <div className="Yachts_author_content Yachts_author_content_new">
+            <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
+            
+            <p className="Yachts_author_desc">
+              Angela Hughes has over four decades in the travel industry and has
+              traveled to 121 countries and territories.
+            </p>
+            <p className="Yachts_author_desc">
+              She leads a team of more than 140 luxury travel advisors and
+              specializes in matching clients to the right travel experience.
+            </p>
 
-            <p>40+ years of experience</p>
-            <p>121 countries traveled</p>
-            <p>Luxury Travel Influencer of the Year (2024)</p>
-            <p>Most Influential Women in Travel (2026)</p>
+            {/* First Box: Benefits */}
+            <div className="Yachts_author_box">
+                <p className="Yachts_benefit_title">Clients benefit from:</p>
+                <div className="Yachts_benefit_list">
+                  <div className="Yachts_benefit_item">
+                    <i className="fas fa-check-circle"></i> Clear positioning across yacht brands
+                  </div>
+                  <div className="Yachts_benefit_item">
+                    <i className="fas fa-check-circle"></i> Access to preferred inventory
+                  </div>
+                  <div className="Yachts_benefit_item">
+                    <i className="fas fa-check-circle"></i> Full itinerary coordination
+                  </div>
+                  <div className="Yachts_benefit_item">
+                    <i className="fas fa-check-circle"></i> Ongoing support
+                  </div>
+                </div>
+            </div>
+
+            {/* Second Box: Planned and Curated */}
+            <div className="Yachts_author_box">
+              <h3 className="Yachts_box_title">Planned and Curated by Angela Hughes</h3>
+              <p className="Yachts_box_subtitle">CEO, TRIPS & SHIPS LUXURY TRAVEL</p>
+              
+              <div className="Yachts_box_grid">
+                <div className="Yachts_box_grid_item">
+                  <i className="fas fa-award"></i> 40+ years of experience
+                </div>
+                <div className="Yachts_box_grid_item">
+                  <i className="fas fa-globe"></i> 121 countries traveled
+                </div>
+                <div className="Yachts_box_grid_item">
+                  <i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)
+                </div>
+                <div className="Yachts_box_grid_item">
+                  <i className="fas fa-crown"></i> Most Influential Women in Travel (2026)
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* RIGHT IMAGE */}
@@ -711,6 +720,24 @@ function YachtsComparison() {
           </div>
         </div>
       </section>
+
+      {/* VIDEO PRE FAQ SECTION */}
+      <section className="Yachts_video_section">
+        <div className="Yachts_video_inner">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/B90qoiaHDaE?si=yeOL4rhI-GjJ8lKt" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
+
 
       {/* FAQ SECTION */}
       <section className="Scenic-faq-section">
