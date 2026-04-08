@@ -467,6 +467,45 @@ export default function DrakePassagePage() {
         </div>
       </section>
 
+      {/* ===== VIDEO SECTION: DRAKE PASSAGE EXPERIENCE ===== */}
+      <section className="drake-section drake-video-section">
+        <div className="drake-section-inner drake-wide">
+          <div className="drake-video-header">
+            <h2 className="drake-section-h2" style={{ textAlign: "center" }}>
+              Experience the Drake Passage Crossing
+            </h2>
+            <div className="drake-navy-divider-center"></div>
+            <p className="drake-video-subtitle">
+              Watch how modern expedition ships navigate the Drake Passage with advanced stabilization systems and expert crews, ensuring a comfortable and controlled journey to Antarctica.
+            </p>
+          </div>
+
+          <div className="drake-video-wrapper">
+            <video
+              className="drake-video-player"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              poster={section3_Image1}
+            >
+              <source
+                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AGSXMM4jE8589-mxx8imwB4/Scenic/Scenic%20Ocean/Videos/Antarctica/SE26TV0130_Antarctica_Digital_16x9_Gen%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=bhbggnyh&raw=1"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div className="drake-video-caption">
+            <span className="drake-caption-tag">Expedition in Action</span>
+            <p>Modern expedition vessels are engineered to handle the Drake Passage crossing safely and comfortably, providing guests with a smooth transition to Antarctica.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 4: IS IT DANGEROUS — Sticky Layout with Navy and Soft Blue Schema ===== */}
       <section className="drake-section drake-bg-soft drake-safety-section">
         <div className="drake-section-inner drake-wide">

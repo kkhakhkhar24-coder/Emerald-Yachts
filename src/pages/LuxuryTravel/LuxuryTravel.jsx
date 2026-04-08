@@ -550,6 +550,44 @@ function LuxuryTravel() {
         </div>
       </section>
 
+      {/* ===== SECTION 5.5: VIDEO SHOWCASE — Scenic Eclipse Experience Video ===== */}
+      <section className="lux-section lux-video-section">
+        <div className="lux-inner lux-wide">
+          <div className="lux-video-header">
+            <h2 className="lux-h2" style={{ textAlign: "center" }}>
+              Where Ultra-Luxury Meets Discovery
+            </h2>
+            <div className="lux-navy-divider-center"></div>
+            <p className="lux-video-subtitle">
+              Experience the refined elegance and expedition capability of Scenic Eclipse Discovery Yachts, where every journey combines world-class luxury with purposeful exploration.
+            </p>
+          </div>
+
+          <div className="lux-video-wrapper">
+            <video
+              className="lux-video-player"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+            >
+              <source
+                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACtfgBhUKrypzRX6rrjYOpM/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20Where%20Ultra-Luxury%20Meets%20Discovery%20_%20Paid%20Digital%2030sec%2016x9.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=mhghgei3&raw=1"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div className="lux-video-caption">
+            <span className="lux-caption-tag">Discovery in Action</span>
+            <p>Scenic Eclipse Discovery Yachts are purpose-built to reach extraordinary destinations while maintaining the highest standards of luxury, comfort, and personalized service.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 6: PLANNING FACTORS — Redesigned with Sticky Side-Heading and Navy Schema ===== */}
       <section className="lux-section lux-bg-white lux-planning-redesign">
         <div className="lux-inner lux-wide">

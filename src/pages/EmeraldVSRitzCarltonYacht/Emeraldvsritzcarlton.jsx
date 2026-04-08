@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Emeraldvsritzcarlton.css";
 import myImage from "../../assets/image.jpg";
-import { Award, Globe, Shield, Star } from "lucide-react";
+import { Award, Globe, Shield, Star, Calendar, Trophy, Newspaper, BadgeCheck } from "lucide-react";
 
 import hero1 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr1.jpg";
 import hero2 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr2.jpg";
@@ -171,7 +171,7 @@ const EmeraldVsRitzCarltonPage = () => {
               </p>
               <div className="evrc_authority_tags">
                 <div className="evrc_auth_tag">
-                  <Star size={14} className="evrc_icon" />
+                  <Calendar size={14} className="evrc_icon" />
                   <span>40+ years in travel</span>
                 </div>
                 <div className="evrc_auth_tag">
@@ -179,11 +179,11 @@ const EmeraldVsRitzCarltonPage = () => {
                   <span>120+ countries visited</span>
                 </div>
                 <div className="evrc_auth_tag">
-                  <Award size={14} className="evrc_icon" />
+                  <Newspaper size={14} className="evrc_icon" />
                   <span>Featured in Wall Street Journal</span>
                 </div>
                 <div className="evrc_auth_tag">
-                  <Award size={14} className="evrc_icon" />
+                  <Trophy size={14} className="evrc_icon" />
                   <span>Featured in Travel Weekly</span>
                 </div>
               </div>
