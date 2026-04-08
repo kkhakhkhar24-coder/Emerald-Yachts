@@ -11,6 +11,11 @@ import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmerald
 import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.jpg"
 import myImage from "../../assets/image.jpg";
 import { Helmet } from "react-helmet-async";
+import ImageGellery1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery1.jpg";
+import ImageGellery2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery2.jpg";
+import ImageGellery3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery3.jpg";
+import ImageGellery4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery4.jpg";
+import ImageGellery5 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery5.jpg";
 
 // Lucide React Icons
 import {
@@ -29,6 +34,10 @@ import {
   BadgeCheck as HiOutlineBadgeCheck,
   Plus,
   Minus,
+  Newspaper as FiNewspaper,
+  Activity as BsActivity,
+  Award as BsAward,
+  CalendarCheck as BsCalendarCheck,
 } from "lucide-react";
 
 // ── Main Component ────────────────────────────────────────────────────
@@ -464,45 +473,45 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
             <div className="Sakara_authority_ticker_container">
               <div className="Sakara_authority_ticker_track">
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <FiNewspaper className="Sakara_tag_icon" />
                   <p>Travel Weekly</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <BsActivity className="Sakara_tag_icon" />
                   <p>TravelPulse</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <BsAward className="Sakara_tag_icon" />
                   <p>Insider Travel Report</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <HiOutlineBadgeCheck className="Sakara_tag_icon" />
+                  <FiUsers className="Sakara_tag_icon" />
                   <p>Travel Leaders Network Advisory Board</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsShieldCheck className="Sakara_tag_icon" />
+                  <BsCalendarCheck className="Sakara_tag_icon" />
                   <p>40+ Years in the Travel Industry</p>
                 </div>
-                
+
                 {/* Duplicated for seamless loop */}
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <FiNewspaper className="Sakara_tag_icon" />
                   <p>Travel Weekly</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <BsActivity className="Sakara_tag_icon" />
                   <p>TravelPulse</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsStarFill className="Sakara_tag_icon" />
+                  <BsAward className="Sakara_tag_icon" />
                   <p>Insider Travel Report</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <HiOutlineBadgeCheck className="Sakara_tag_icon" />
+                  <FiUsers className="Sakara_tag_icon" />
                   <p>Travel Leaders Network Advisory Board</p>
                 </div>
                 <div className="Sakara_authority_tag_box">
-                  <BsShieldCheck className="Sakara_tag_icon" />
+                  <BsCalendarCheck className="Sakara_tag_icon" />
                   <p>40+ Years in the Travel Industry</p>
                 </div>
               </div>
@@ -804,6 +813,71 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
           </div>
           <div className="Sakara_trust_statement">
             <p>Our clients are not looking for deals. They are looking for the right decision.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION — MODERN IMAGE GALLERY ===== */}
+      <section className="Sakara_gallery_section">
+        <div className="Sakara_gallery_inner">
+
+          {/* Header Area */}
+          <div className="Sakara_gallery_header">
+            <span className="Sakara_gallery_eyebrow">Onboard Experience</span>
+            <h2 className="Sakara_gallery_h2">Life Aboard Emerald Yachts</h2>
+            <div className="Sakara_gallery_divider"></div>
+            <p className="Sakara_gallery_p">
+              From pristine suites to stunning coastal destinations — experience what boutique luxury at sea truly looks and feels like.
+            </p>
+          </div>
+
+          {/* Bento Grid Layout */}
+          <div className="Sakara_gallery_bento_grid">
+
+            {/* 01: Large Featured Item */}
+            <div className="Sakara_gallery_item Sakara_gallery_feature">
+              <div className="Sakara_gallery_image_box">
+                <img src={ImageGellery1} alt="Owner's Suite" className="Sakara_gallery_img" />
+                <div className="Sakara_gallery_overlay">
+                  <span className="Sakara_gallery_badge">Owner's Suite</span>
+                  <h3 className="Sakara_gallery_h3">Panoramic Elegance</h3>
+                  <p className="Sakara_gallery_item_p">Spacious suites with floor-to-ceiling views of the open sea.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 02: Vertical Item */}
+            <div className="Sakara_gallery_item Sakara_gallery_tall">
+              <div className="Sakara_gallery_image_box">
+                <img src={ImageGellery2} alt="Onboard lifestyle" className="Sakara_gallery_img" />
+                <div className="Sakara_gallery_overlay">
+                  <span className="Sakara_gallery_badge">Onboard Life</span>
+                  <h3 className="Sakara_gallery_h3">Social Atmosphere</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 03: Standard Item */}
+            <div className="Sakara_gallery_item">
+              <div className="Sakara_gallery_image_box">
+                <img src={ImageGellery3} alt="Fine Dining" className="Sakara_gallery_img" />
+                <div className="Sakara_gallery_overlay">
+                  <span className="Sakara_gallery_badge">Fine Dining</span>
+                  <h3 className="Sakara_gallery_h3">Culinary Excellence</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 04: Standard Item */}
+            <div className="Sakara_gallery_item">
+              <div className="Sakara_gallery_image_box">
+                <img src={ImageGellery4} alt="Destinations" className="Sakara_gallery_img" />
+                <div className="Sakara_gallery_overlay">
+                  <span className="Sakara_gallery_badge">Destinations</span>
+                  <h3 className="Sakara_gallery_h3">Adriatic Hidden Coves</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

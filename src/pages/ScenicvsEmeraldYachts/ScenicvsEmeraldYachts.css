@@ -1510,7 +1510,7 @@
 /* ================= SECTION 15 (UPDATED SPLIT) ================= */
 
 .Yachts_author_section {
-  background: rgb(238,242,245);
+  background: rgb(238, 242, 245);
   padding: 60px 20px;
   /* SAME */
 }
@@ -1525,9 +1525,11 @@
 /* NEW SPLIT LAYOUT */
 .Yachts_author_split {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* content ko zyada space */
+  grid-template-columns: 1.2fr 0.8fr;
+  /* content ko zyada space */
   gap: 40px;
-  align-items: start; /* center ki jagah start */
+  align-items: start;
+  /* center ki jagah start */
 }
 
 /* LEFT CONTENT */
@@ -1565,8 +1567,10 @@
   height: auto;
   border-radius: 12px;
   display: block;
-  max-height: 420px;   /* control height */
-  object-fit: cover;   /* crop nicely */
+  max-height: 420px;
+  /* control height */
+  object-fit: cover;
+  /* crop nicely */
   margin-top: 160px;
   margin-left: 22px;
 }
@@ -1586,7 +1590,8 @@
   }
 
   .Yachts_author_image {
-    order: -1; /* image upar aa jayegi */
+    order: -1;
+    /* image upar aa jayegi */
   }
 
   .Yachts_author_image img {
@@ -1603,23 +1608,24 @@
     line-height: 1.6;
   }
 
-   .Yachts_author_content h2 {
-  font-size: 28px !important;
-}
+  .Yachts_author_content h2 {
+    font-size: 28px !important;
+  }
 
-.Yachts_author_image img {
-  object-fit:contain;
-  margin-top: 9px;
-  margin-left: -12px;
-  width:100%;
-}
+  .Yachts_author_image img {
+    object-fit: contain;
+    margin-top: 9px;
+    margin-left: -12px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
 
   .Yachts_author_content h2 {
-  font-size: 24px !important;
-}
+    font-size: 24px !important;
+  }
+
   .Yachts_author_content h2 {
     font-size: 24px;
   }
@@ -1630,10 +1636,10 @@
 
 
   .Yachts_author_image img {
-  object-fit: contain;
-  margin-top: 9px;
-  margin-left: -12px;
-}
+    object-fit: contain;
+    margin-top: 9px;
+    margin-left: -12px;
+  }
 }
 
 
@@ -1775,6 +1781,7 @@
   font-family: 'Playfair Display', serif;
   margin-bottom: 20px;
 }
+
 .Yachts_author_content_new h2::after {
   content: "";
   display: block;
@@ -1783,6 +1790,7 @@
   background-color: #2f4a6d;
   margin-top: 15px;
 }
+
 .Yachts_author_desc {
   font-size: 1.05rem;
   line-height: 1.6;
@@ -1796,14 +1804,14 @@
   padding: 18px;
   border-radius: 10px;
   margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .Yachts_benefit_title {
   font-weight: 600;
   color: #2f4a6d;
   margin-bottom: 12px;
-  
+
 }
 
 .Yachts_benefit_list {
@@ -1821,6 +1829,7 @@
   font-size: 0.95rem;
   align-items: left;
 }
+
 .Yachts_benefit_item i {
   color: #2f4a6d;
   align-items: left;
@@ -1831,7 +1840,7 @@
   font-size: 22px;
   color: #2f4a6d;
   margin-bottom: 8px;
-  font-weight:600 !important;
+  font-weight: 600 !important;
 }
 
 .Yachts_box_subtitle {
@@ -1839,7 +1848,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #888;
-  font-weight:light;
+  font-weight: light;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1861,6 +1870,7 @@
   padding: 10px 12px;
   border-radius: 6px;
 }
+
 .Yachts_box_grid_item i {
   color: #2f4a6d;
 }
@@ -1897,4 +1907,188 @@
   .Yachts_video_section {
     padding: 50px 15px;
   }
+}
+
+/* ========================================
+   EMERALD VS SCENIC COMPARISON (SECTION)
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-comparison-section {
+  padding: 120px 40px; /* Global Padding */
+}
+
+.lux-inner-full {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --- Sticky Side Column --- */
+.lux-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.lux-side-sticky { height: 100%; }
+.lux-sticky-element {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 140px;
+  text-align: left;
+}
+
+.lux-navy-divider-left {
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  margin-top: 30px;
+}
+
+.lux-sticky-intro {
+  margin-top: 30px;
+  font-size: 18px !important; /* DESKTOP P */
+  opacity: 0.8;
+}
+
+/* --- Comparison Dual Grid --- */
+.lux-comparison-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.lux-brand-column {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+}
+
+.lux-brand-header-box {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.lux-bg-soft-blue { background-color: rgb(231, 243, 245); }
+.lux-bg-navy { background-color: #274472; }
+
+.lux-brand-name {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px;
+  color: #274472;
+}
+
+.lux-brand-tagline {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  font-weight: 600 !important;
+  color: #274472;
+  opacity: 0.7;
+}
+
+.lux-text-white { color: #ffffff !important; }
+
+/* --- Gallery Grid Styling --- */
+.lux-comparison-gallery {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lux-gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.lux-gallery-item.lux-feat {
+  height: 300px;
+}
+
+.lux-gallery-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.lux-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.lux-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.lux-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(39, 68, 114, 0.7), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lux-gallery-item:hover .lux-img-overlay { opacity: 1; }
+
+.lux-img-overlay span {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+/* --- Footer Note --- */
+.lux-editorial-note-white {
+  background-color: rgb(231, 243, 245);
+  padding: 35px 45px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ========================================
+   RESPONSIVE LOGIC (STRICT SIZE RULES)
+   ======================================== */
+
+@media (max-width: 1200px) {
+  .lux-sticky-wrapper { grid-template-columns: 1fr; gap: 60px; }
+  .lux-sticky-element { position: static; text-align: center; }
+  .lux-navy-divider-left { margin: 25px auto; }
+}
+
+@media (max-width: 1024px) {
+  .lux-h2 { font-size: 28px !important; }
+  .lux-p { font-size: 17px !important; }
+  .lux-brand-name { font-size: 24px !important; }
+}
+
+@media (max-width: 768px) {
+  .lux-comparison-dual-grid { grid-template-columns: 1fr; }
+  .lux-gallery-item.lux-feat { height: 250px; }
+  .lux-gallery-item { height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .lux-section { padding: 80px 20px; }
+  .lux-h2 { font-size: 24px !important; }
+  .lux-p { font-size: 16px !important; }
+  .lux-brand-header-box { padding: 30px 15px; }
+  .lux-gallery-group { grid-template-columns: 1fr; }
+  .lux-img-overlay { opacity: 1; padding: 15px; }
 }

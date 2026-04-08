@@ -13,6 +13,10 @@ import section12Image1 from '../../assets/ScenicvsFourSeasonsYachts/Section_12_E
 import section12Image2 from '../../assets/ScenicvsFourSeasonsYachts/Section_12_RitzCarlton_Yacht_Collection.jpg';
 import section12Image3 from '../../assets/ScenicvsFourSeasonsYachts/Section_12_Explora_Journeys.jpg';
 import section12Image4 from '../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg';
+import galleryImage1 from '../../assets/ScenicvsFourSeasonsYachts/GalleryImage1.jpg';
+import galleryImage2 from '../../assets/ScenicvsFourSeasonsYachts/GalleryImage2.jpg';
+import galleryImage3 from '../../assets/ScenicvsFourSeasonsYachts/GalleryImage3.jpg';
+import galleryImage4 from '../../assets/ScenicvsFourSeasonsYachts/GalleryImage4.jpg';
 
 function FAQ() {
     const [open, setOpen] = useState(null);
@@ -264,6 +268,71 @@ function ScenicVSFourSeasonsYachts() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 7.6: IMAGE GALLERY */}
+            <section className="svf-section svf-gallery-section">
+                <div className="svf-inner">
+                    <div className="svf-gallery-header">
+                        <h2 className="svf-h2" style={{ textAlign: 'center' }}>Ultra-Luxury Yacht Experience</h2>
+                        <div className="svf-bar" style={{ margin: '20px auto 0' }}></div>
+                        <p className="svf-p" style={{ textAlign: 'center', marginTop: '20px', maxWidth: '700px', margin: '20px auto 0' }}>Explore the refined elegance, world-class amenities, and breathtaking destinations that define ultra-luxury yacht cruising.</p>
+                    </div>
+
+                    <div className="svf-gallery-grid">
+                        <div className="svf-gallery-item svf-gallery-item--large">
+                            <div className="svf-gallery-image-wrap">
+                                <img src={galleryImage1} alt="Scenic Eclipse luxury suite with panoramic ocean views" className="svf-gallery-image" />
+                                <div className="svf-gallery-overlay">
+                                    <div className="svf-gallery-content">
+                                        <span className="svf-gallery-badge">Luxury Suites</span>
+                                        <h3>Panoramic Elegance</h3>
+                                        <p>Spacious suites designed for comfort with stunning ocean vistas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="svf-gallery-item">
+                            <div className="svf-gallery-image-wrap">
+                                <img src={galleryImage2} alt="Yacht dining experience with world-class cuisine" className="svf-gallery-image" />
+                                <div className="svf-gallery-overlay">
+                                    <div className="svf-gallery-content">
+                                        <span className="svf-gallery-badge">Fine Dining</span>
+                                        <h3>Culinary Excellence</h3>
+                                        <p>World-class cuisine crafted by expert chefs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="svf-gallery-item">
+                            <div className="svf-gallery-image-wrap">
+                                <img src={galleryImage3} alt="Luxury yacht deck with premium amenities" className="svf-gallery-image" />
+                                <div className="svf-gallery-overlay">
+                                    <div className="svf-gallery-content">
+                                        <span className="svf-gallery-badge">Onboard Luxury</span>
+                                        <h3>Deck & Amenities</h3>
+                                        <p>Premium facilities for relaxation and recreation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="svf-gallery-item svf-gallery-item--wide">
+                            <div className="svf-gallery-image-wrap">
+                                <img src={galleryImage4} alt="Scenic yacht exploring Mediterranean coastal destinations" className="svf-gallery-image" />
+                                <div className="svf-gallery-overlay">
+                                    <div className="svf-gallery-content">
+                                        <span className="svf-gallery-badge">Destinations</span>
+                                        <h3>Coastal Discovery</h3>
+                                        <p>Explore iconic Mediterranean and Caribbean destinations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
