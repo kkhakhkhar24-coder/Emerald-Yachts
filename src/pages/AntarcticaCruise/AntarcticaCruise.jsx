@@ -830,17 +830,14 @@ const AntarcticaCostPage = () => {
           
           <div className="anta_video_card">
             <div className="anta_video_wrapper">
-              <video
-                src="/Antarctica LTT _ 30sec TVC.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
+              <iframe
+                src="https://www.youtube.com/embed/QGdU4xPFFeE"
+                title="Experience the Scale of Antarctica"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
                 className="anta_showcase_video"
-              >
-                Your browser does not support the video tag.
-              </video>
+              />
             </div>
           </div>
         </div>

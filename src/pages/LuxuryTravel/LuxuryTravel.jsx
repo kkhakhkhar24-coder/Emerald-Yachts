@@ -358,7 +358,6 @@ function LuxuryTravel() {
             {/* Left Side: Sticky Header and Step Number */}
             <aside className="lux-title-side-sticky">
               <div className="lux-sticky-container">
-                <span className="lux-section-number">01</span>
                 <h2 className="lux-h2">
                   Expert Planning for <br />
                   Scenic Eclipse Discovery Yachts
@@ -397,7 +396,6 @@ function LuxuryTravel() {
             {/* Left Side: Sticky Title & Recognition Sidebar */}
             <aside className="lux-side-sticky">
               <div className="lux-sticky-element">
-                <span className="lux-section-number">02</span>
                 <h2 className="lux-h2 lux-left-bar">
                   Expert Insight from <br />
                   Angela Hughes
@@ -481,7 +479,6 @@ function LuxuryTravel() {
         <div className="lux-inner-full">
           {/* Centered Header Area */}
           <div className="lux-suitability-header-centered">
-            <span className="lux-section-number">03</span>
             <h2 className="lux-h2">Is Scenic Eclipse Right for You?</h2>
             <div className="lux-navy-divider-center"></div>
           </div>
@@ -530,7 +527,6 @@ function LuxuryTravel() {
         <div className="lux-inner lux-narrow">
           {/* Centered Header Wrapper */}
           <div className="lux-about-header">
-            <span className="lux-section-number">04</span>
             <h2 className="lux-h2">About Scenic Eclipse Discovery Yachts</h2>
           </div>
 
@@ -561,7 +557,6 @@ function LuxuryTravel() {
             {/* Left Column: Sticky Title & Intro */}
             <aside className="lux-side-sticky">
               <div className="lux-sticky-element">
-                <span className="lux-section-number">05</span>
                 <h2 className="lux-h2 lux-left-bar">
                   How an Expert Chooses the <br />
                   Right Scenic Eclipse Sailing
@@ -663,7 +658,6 @@ function LuxuryTravel() {
             {/* Left Column: The 5 Planning Pillars */}
             <div className="lux-method-steps">
               <div className="lux-method-step">
-                <div className="lux-step-num">01</div>
                 <div className="lux-step-content">
                   <h3 className="lux-h3-sm">Experience & Traveler Fit</h3>
                   <p className="lux-section-p">
@@ -674,7 +668,6 @@ function LuxuryTravel() {
               </div>
 
               <div className="lux-method-step">
-                <div className="lux-step-num">02</div>
                 <div className="lux-step-content">
                   <h3 className="lux-h3-sm">Destination & Seasonality</h3>
                   <p className="lux-section-p">
@@ -685,7 +678,6 @@ function LuxuryTravel() {
               </div>
 
               <div className="lux-method-step">
-                <div className="lux-step-num">03</div>
                 <div className="lux-step-content">
                   <h3 className="lux-h3-sm">Itinerary & Pacing</h3>
                   <p className="lux-section-p">
@@ -696,7 +688,6 @@ function LuxuryTravel() {
               </div>
 
               <div className="lux-method-step">
-                <div className="lux-step-num">04</div>
                 <div className="lux-step-content">
                   <h3 className="lux-h3-sm">Cabin & Ship Considerations</h3>
                   <p className="lux-section-p">
@@ -707,7 +698,6 @@ function LuxuryTravel() {
               </div>
 
               <div className="lux-method-step">
-                <div className="lux-step-num">05</div>
                 <div className="lux-step-content">
                   <h3 className="lux-h3-sm">
                     Travel Coordination & Ongoing Support
@@ -739,7 +729,6 @@ function LuxuryTravel() {
             {/* Left Column: Sticky Title & Intro */}
             <aside className="lux-side-sticky">
               <div className="lux-sticky-element">
-                <span className="lux-section-number">07</span>
                 <h2 className="lux-h2 lux-left-bar">
                   Which Yacht <br />
                   Should You Choose?
@@ -950,7 +939,6 @@ function LuxuryTravel() {
         <div className="lux-inner">
           {/* Centered Header Wrapper */}
           <div className="lux-summary-header">
-            <span className="lux-section-number">08</span>
             <h2 className="lux-h2">
               Scenic Eclipse vs Emerald Yachts <br />
               (High-Level Comparison)
@@ -1005,7 +993,6 @@ function LuxuryTravel() {
         <div className="lux-inner">
           {/* Centered Header Wrapper */}
           <div className="lux-adv-header">
-            <span className="lux-section-number">09</span>
             <h2 className="lux-h2">
               Why Work With Trips & Ships Luxury Travel <br />
               Instead of Booking Scenic Eclipse Direct?
@@ -1063,7 +1050,6 @@ function LuxuryTravel() {
         <div className="lux-inner lux-narrow-faq">
           {/* Centered Header Wrapper */}
           <div className="lux-faq-header">
-            <span className="lux-section-number">10</span>
             <h2 className="lux-h2">Scenic Eclipse FAQs — Expert Answers</h2>
           </div>
 

@@ -415,22 +415,23 @@ to {
 
 /* ── SHARED SECTION ── */
 .drake-section {
-  padding: 90px 40px;
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
 }
 
 .drake-section-inner {
-  max-width: 950px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .drake-section-inner.wide {
-  max-width: 1100px;
+  max-width: 1400px;
 }
 
 .drake-section-inner.narrow {
-  max-width: 750px;
+  max-width: 900px;
 }
 
 .drake-bg-white {
@@ -552,34 +553,315 @@ h3 {
 }
 
 /* ========================================
-   SECTION 1: STICKY EDITORIAL DESIGN
-   Prefix: drake- | Colors: Navy, Soft Blue, White
+   SECTION 1: WHAT IS THE DRAKE PASSAGE
+   Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* --- Container Reversion --- */
-.drake-section-inner.drake-wide {
-  max-width: 1200px;
-  /* Original Wide Width */
-  width: 100%;
+.drake-clean-layout {
+  padding: 120px 40px;
+  /* Global Padding Requirement */
 }
 
 .drake-sticky-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  /* Classic split */
+  grid-template-columns: 1fr 1.5fr;
+  /* Architectural Split */
   gap: 80px;
   align-items: start;
 }
 
-/* --- Left Column: Sticky Heading Effect --- */
+.drake-sticky-wrapper.flipped {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.drake-sticky-wrapper.flipped .drake-side-sticky {
+  order: 2;
+}
+
+.drake-sticky-wrapper.flipped .drake-content-column {
+  order: 1;
+}
+
+.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
+  text-align: right !important;
+}
+
+.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
+  margin: 30px 0 0 auto !important;
+}
+
+.drake-sticky-wrapper.flipped .drake-sticky-lead-text {
+  text-align: right;
+}
+
+/* --- Left Column: Sticky side --- */
 .drake-side-sticky {
   height: 100%;
 }
 
 .drake-sticky-element {
+  position: -webkit-sticky;
   position: sticky;
   top: 140px;
-  /* Sticky Offset */
+  text-align: left;
+}
+
+.drake-section-number {
+  display: block;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #274472;
+  letter-spacing: 4px !important;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.drake-section-h2.drake-left-bar {
+  text-align: left !important;
+  color: #274472 !important;
+  font-size: 48px !important;
+  /* DESKTOP SIZE */
+  margin-bottom: 0 !important;
+  line-height: 1.1 !important;
+}
+
+.drake-section-h2.drake-left-bar::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  margin: 30px 0 0 0 !important;
+}
+
+/* --- The Editorial Note (Matches your reference image) --- */
+.drake-editorial-note-blue {
+  margin-top: 50px;
+  background-color: rgb(231, 243, 245);
+  /* Soft Blue */
+  padding: 45px 40px;
+  border-left: 4px solid #274472;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+}
+
+.drake-editorial-note-blue p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  /* Tablet size for italics often looks better */
+  line-height: 1.6 !important;
+  font-style: italic !important;
+  color: #274472;
+  font-weight: 400 !important;
+  margin: 0;
+}
+
+/* --- Right Column: Content --- */
+.drake-lead-para {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 24px !important;
+  line-height: 1.5 !important;
+  color: #274472;
+  font-weight: 500 !important;
+  margin-bottom: 35px;
+}
+
+.drake-section-p-clean {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  /* DESKTOP SIZE */
+  line-height: 1.8 !important;
+  color: #274472;
+  font-weight: 300 !important;
+  opacity: 0.85;
+  margin-bottom: 45px;
+}
+
+/* --- Consistent Figure Design (Matches Reference Image) --- */
+.drake-hero-figure {
+  margin: 0;
+}
+
+.drake-figure-inner {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.12);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.drake-img-main {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .drake-img-main {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-img-main {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drake-img-main {
+    height: 280px;
+  }
+}
+
+.drake-img-caption {
+  margin-top: 25px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(39, 68, 114, 0.2);
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  color: #274472;
+  text-align: left;
+}
+
+.drake-caption-tag {
+  display: block;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-size: 10px !important;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+/* ========================================
+   STRICT RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+  .drake-clean-layout {
+    padding: 80px 40px;
+  }
+
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .drake-sticky-wrapper.flipped {
+    grid-template-columns: 1fr;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-side-sticky {
+    order: 0;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-content-column {
+    order: 0;
+  }
+
+  .drake-sticky-element {
+    position: static !important;
+    text-align: center !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 28px !important;
+    text-align: center !important;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-editorial-note-blue {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
+    padding: 30px;
+  }
+
+  .drake-editorial-note-blue p {
+    font-size: 17px !important;
+  }
+
+  .drake-lead-para {
+    font-size: 21px !important;
+    text-align: center;
+  }
+
+  .drake-section-p-clean {
+    font-size: 17px !important;
+    text-align: center;
+  }
+
+  .drake-img-main {
+    height: 400px;
+  }
+
+  .drake-img-caption {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+/* MOBILE (480px) */
+@media (max-width: 480px) {
+  .drake-clean-layout {
+    padding: 60px 20px;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 24px !important;
+  }
+
+  .drake-section-p-clean {
+    font-size: 16px !important;
+  }
+
+  .drake-img-main {
+    height: 280px;
+  }
+
+  .drake-lead-para {
+    font-size: 19px !important;
+  }
+}
+
+/* ========================================
+   SECTION 2: ROUGHNESS (PROPER DESIGN)
+   Prefix: drake- | Colors: Navy & Soft Blue
+   ======================================== */
+
+.drake-bg-soft {
+  background-color: rgb(231, 243, 245);
+}
+
+.drake-roughness-proper {
+  padding: 120px 0;
+}
+
+.drake-sticky-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  /* Architectural Split */
+  gap: 100px;
+  align-items: start;
+}
+
+/* --- Left Column: Sticky Header --- */
+.drake-side-sticky {
+  height: 100%;
+}
+
+.drake-sticky-element {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 140px;
   text-align: left;
 }
 
@@ -598,40 +880,58 @@ h3 {
   text-align: left !important;
   color: #274472 !important;
   font-size: 48px !important;
+  /* DESKTOP SIZE */
   margin-bottom: 0 !important;
 }
 
 .drake-section-h2.drake-left-bar::after {
   margin: 25px 0 0 0 !important;
-  /* Left Aligned Bar */
   background-color: #274472 !important;
   width: 60px !important;
 }
 
-/* --- Filling the Left Side Gap --- */
-.drake-editorial-note {
+/* --- The Terminology Box (Left Side Gap Filler) --- */
+.drake-editorial-note-navy {
   margin-top: 50px;
-  background-color: rgb(231, 243, 245);
-  /* Soft Blue */
-  padding: 35px;
+  background-color: #ffffff;
+  /* Contrast Box */
+  padding: 40px;
   border-left: 4px solid #274472;
-  /* Navy Accent */
   border-radius: 0 4px 4px 0;
+  box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05);
 }
 
-.drake-editorial-note p {
-  font-family: 'Playfair Display', serif !important;
-  font-size: 18px !important;
-  line-height: 1.6 !important;
-  font-style: italic !important;
+.drake-note-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
   color: #274472;
-  font-weight: 400 !important;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.drake-editorial-note-navy p {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #274472;
+  margin: 0;
+}
+
+.drake-note-divider {
+  height: 1px;
+  background-color: rgba(39, 68, 114, 0.1);
+  margin: 15px 0;
 }
 
 /* --- Right Column: Content --- */
-.drake-lead-text {
+.drake-lead-para {
   font-family: 'Playfair Display', serif !important;
   font-size: 24px !important;
+  /* DESKTOP SIZE */
   line-height: 1.5 !important;
   color: #274472;
   font-weight: 500 !important;
@@ -641,573 +941,17 @@ h3 {
 .drake-section-p-clean {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
+  /* DESKTOP SIZE */
   line-height: 1.8 !important;
   color: #274472;
   font-weight: 300 !important;
   opacity: 0.85;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
-/* --- Image Design --- */
-.drake-figure-box {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.drake-img-container {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.drake-img-main {
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  object-fit: cover;
-  display: block;
-}
-
-.drake-img-caption {
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 13px !important;
-  color: #274472;
-  opacity: 0.7;
-  line-height: 1.5 !important;
-}
-
-/* ========================================
-   FLIPPED LAYOUT - Content Left, Heading Right
-   For Sections 02, 04, 06, 08, 10
-   ======================================== */
-
-.drake-sticky-wrapper.flipped {
-  direction: rtl;
-  /* Flip the entire grid */
-}
-
-.drake-sticky-wrapper.flipped .drake-side-sticky {
-  direction: ltr;
-  /* Restore normal text direction */
-}
-
-.drake-sticky-wrapper.flipped .drake-content-column {
-  direction: ltr;
-  /* Restore normal text direction */
-}
-
-/* Adjust sticky positioning for flipped layout */
-.drake-sticky-wrapper.flipped .drake-sticky-element {
-  text-align: right;
-}
-
-.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
-  text-align: right !important;
-}
-
-.drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
-  margin: 25px 0 0 auto !important;
-  /* Right aligned bar */
-}
-
-/* Flip editorial note alignment */
-.drake-sticky-wrapper.flipped .drake-editorial-note {
-  border-left: none;
-  border-right: 4px solid #274472;
-  border-radius: 4px 0 0 4px;
-}
-
-/* Adjust gap for flipped layout */
-@media (min-width: 769px) {
-  .drake-sticky-wrapper.flipped {
-    gap: 80px;
-  }
-}
-
-/* Mobile Responsive for Flipped Layouts - Center Alignment */
-@media (max-width: 1024px) {
-  .drake-sticky-wrapper.flipped .drake-sticky-element {
-    text-align: center !important;
-  }
-
-  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
-    text-align: center !important;
-  }
-
-  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
-    margin: 20px auto 0 !important;
-    /* Center bar on mobile */
-  }
-
-  .drake-sticky-wrapper.flipped .drake-editorial-note {
-    margin: 30px auto;
-    max-width: 600px;
-    text-align: center;
-    border-left: none;
-    border-right: none;
-    border-top: 4px solid #274472;
-  }
-}
-
-/* ========================================
-   PROPER RESPONSIVE LOGIC
-   ======================================== */
-
-@media (max-width: 1200px) {
-  .drake-sticky-wrapper {
-    gap: 60px;
-  }
-
-  .drake-section-inner.drake-wide {
-    max-width: 100%;
-    padding: 0;
-  }
-}
-
-@media (max-width: 1100px) {
-  .drake-sticky-wrapper {
-    gap: 50px;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    font-size: 38px !important;
-  }
-
-  .drake-side-sticky {
-    position: static;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .drake-sticky-element {
-    position: static !important;
-    text-align: center !important;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    text-align: center !important;
-  }
-
-  .drake-section-h2.drake-left-bar::after {
-    margin: 20px auto 0 !important;
-  }
-
-  .drake-editorial-note {
-    margin: 30px auto;
-    max-width: 600px;
-    text-align: center;
-    border-left: none;
-    border-top: 4px solid #274472;
-  }
-}
-
-@media (max-width: 1024px) {
-  .drake-sticky-wrapper {
-    grid-template-columns: 1fr;
-    /* Stack layout */
-    gap: 50px;
-  }
-
-  .drake-sticky-element {
-    position: static !important;
-    text-align: center !important;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    text-align: center !important;
-  }
-
-  .drake-section-h2.drake-left-bar::after {
-    margin: 20px auto 0 !important;
-    /* Center bar on mobile */
-  }
-
-  .drake-editorial-note {
-    margin: 30px auto;
-    max-width: 600px;
-    text-align: center;
-    border-left: none;
-    border-top: 4px solid #274472;
-  }
-
-  /* Flip layout fixes */
-  .drake-sticky-wrapper.flipped {
-    direction: ltr;
-  }
-
-  .drake-sticky-wrapper.flipped .drake-side-sticky,
-  .drake-sticky-wrapper.flipped .drake-content-column {
-    direction: ltr;
-  }
-
-  .drake-lead-text,
-  .drake-section-p-clean,
-  .drake-img-caption {
-    text-align: center;
-  }
-
-  .drake-hero-figure {
-    margin: 0 auto 40px;
-    max-width: 100%;
-  }
-
-  .drake-figure-inner {
-    width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .drake-section {
-    padding: 70px 30px;
-  }
-
-  .drake-expert-redesign {
-    padding: 80px 30px;
-  }
-
-  .drake-final-cta-section {
-    padding: 80px 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-section {
-    padding: 60px 25px;
-  }
-
-  .drake-section-inner {
-    width: 100%;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    font-size: 28px !important;
-  }
-
-  .drake-h1 {
-    font-size: 32px !important;
-  }
-
-  .drake-section-h2 {
-    font-size: 28px !important;
-  }
-
-  .drake-section-p,
-  h3 {
-    font-size: 17px !important;
-  }
-
-  .drake-lead-text {
-    font-size: 21px !important;
-  }
-
-  .drake-sticky-lead-text {
-    font-size: 18px !important;
-  }
-
-  .drake-img-main,
-  .drake-img-fluid {
-    height: auto;
-    min-height: 280px;
-    width: 100%;
-  }
-
-  .drake-figure-inner img {
-    width: 100%;
-    height: auto;
-    min-height: 280px;
-    object-fit: cover;
-  }
-
-  .drake-editorial-note {
-    padding: 25px 20px;
-  }
-
-  .drake-editorial-note p {
-    font-size: 16px !important;
-  }
-
-  .drake-choice-grid,
-  .drake-audience-grid-side,
-  .drake-prepare-grid-redesign,
-  .drake-ship-feature-grid-redesign,
-  .drake-lake-shake-cards,
-  .drake-why-benefits-grid-navy {
-    grid-template-columns: 1fr !important;
-  }
-
-  .drake-expert-flex {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .drake-expert-image-wrap {
-    position: static;
-    max-width: 100%;
-  }
-
-  .drake-expert-photo-container {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .drake-faq-q {
-    padding: 20px 25px;
-  }
-
-  .drake-faq-a-inner {
-    padding: 0 25px 25px 25px;
-  }
-}
-
-@media (max-width: 600px) {
-  .drake-section {
-    padding: 50px 20px;
-  }
-
-  .drake-hero {
-    padding: 100px 25px 70px;
-  }
-
-  .drake-section-h2 {
-    font-size: 26px !important;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    font-size: 26px !important;
-  }
-
-  .drake-sticky-lead-text,
-  .drake-lead-text {
-    font-size: 17px !important;
-  }
-
-  .drake-img-fluid,
-  .drake-img-main {
-    min-height: 250px;
-  }
-
-  .drake-editorial-note,
-  .drake-editorial-note-white,
-  .drake-editorial-note-blue,
-  .drake-editorial-note-centered {
-    padding: 20px;
-  }
-
-  .drake-danger-box {
-    padding: 40px 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .drake-section {
-    padding: 45px 18px;
-  }
-
-  .drake-hero {
-    padding: 90px 18px 60px;
-  }
-
-  .drake-img-main {
-    min-height: 220px;
-  }
-
-  .drake-figure-inner img {
-    min-height: 220px;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    font-size: 24px !important;
-  }
-
-  .drake-section-p,
-  h3 {
-    font-size: 16px !important;
-  }
-
-  .drake-h1 {
-    font-size: 26px !important;
-  }
-
-  .drake-h2 {
-    font-size: 24px !important;
-  }
-
-  .drake-editorial-note p {
-    font-size: 16px !important;
-  }
-
-  .drake-lead-text {
-    font-size: 16px !important;
-  }
-
-  .drake-section-p-clean {
-    font-size: 16px !important;
-  }
-
-  .drake-sticky-lead-text {
-    font-size: 16px !important;
-  }
-
-  .drake-expert-redesign {
-    padding: 60px 18px;
-  }
-
-  .drake-expert-img {
-    height: 350px;
-  }
-
-  .drake-expert-paragraph.drake-highlight {
-    font-size: 18px !important;
-  }
-
-  .drake-faq-header-centered .drake-section-h2 {
-    font-size: 24px !important;
-  }
-
-  .drake-faq-intro-text {
-    font-size: 16px !important;
-  }
-
-  .drake-faq-q {
-    padding: 18px 20px;
-  }
-
-  .drake-faq-q span {
-    font-size: 15px !important;
-  }
-
-  .drake-faq-a-inner {
-    padding: 0 20px 20px 20px;
-    font-size: 15px !important;
-  }
-
-  .drake-final-cta-section {
-    padding: 60px 18px;
-  }
-
-  .drake-text-white {
-    font-size: 26px !important;
-  }
-
-  .drake-cta-btn-white {
-    width: 100%;
-    padding: 16px 25px;
-  }
-
-  .drake-hero-btns {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .drake-btn-primary,
-  .drake-btn-secondary {
-    width: 100%;
-    padding: 15px 25px;
-    font-size: 11px !important;
-  }
-}
-
-@media (max-width: 375px) {
-  .drake-section {
-    padding: 40px 15px;
-  }
-
-  .drake-hero {
-    padding: 80px 15px 50px;
-  }
-
-  .drake-section-h2 {
-    font-size: 22px !important;
-  }
-
-  .drake-section-h2.drake-left-bar {
-    font-size: 22px !important;
-  }
-
-  .drake-h1 {
-    font-size: 24px !important;
-  }
-
-  .drake-section-p,
-  h3,
-  .drake-lead-text,
-  .drake-sticky-lead-text {
-    font-size: 15px !important;
-  }
-
-  .drake-img-fluid,
-  .drake-img-main {
-    min-height: 200px;
-  }
-
-  .drake-editorial-note,
-  .drake-editorial-note-white,
-  .drake-editorial-note-blue {
-    padding: 18px;
-  }
-
-  .drake-expert-img {
-    height: 300px;
-  }
-
-  .drake-danger-box {
-    padding: 30px 20px;
-  }
-}
-
-/* ========================================
-   SECTION 2: CONSISTENT EDITORIAL DESIGN
-   Matches Figure, Caption, and Sticky styles of Section 1
-   ======================================== */
-
-.drake-bg-soft {
-  background-color: rgb(231, 243, 245);
-}
-
-.drake-sticky-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  align-items: start;
-}
-
-/* --- Consistent Sticky Side --- */
-.drake-side-sticky {
-  height: 100%;
-}
-
-.drake-sticky-element {
-  position: sticky;
-  top: 140px;
-  text-align: left;
-}
-
-.drake-sticky-lead-text {
-  font-family: 'Playfair Display', serif !important;
-  font-size: 20px !important;
-  line-height: 1.6 !important;
-  color: #274472;
-  margin-top: 25px;
-  font-weight: 500 !important;
-}
-
-.drake-roughness-term-intro {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 13px !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
-  color: #274472;
-  font-weight: 700 !important;
-  opacity: 0.6;
-  margin-top: 30px;
-}
-
-/* --- CONSISTENT FIGURE DESIGN (Same as Section 1) --- */
+/* --- CONSISTENT FIGURE DESIGN (Synced with Section 1) --- */
 .drake-hero-figure {
-  margin: 0 0 50px 0;
+  margin: 0 0 60px 0;
 }
 
 .drake-figure-inner {
@@ -1219,7 +963,7 @@ h3 {
 
 .drake-img-fluid {
   width: 100%;
-  height: 500px;
+  height: 550px;
   object-fit: cover;
   display: block;
 }
@@ -1228,7 +972,7 @@ h3 {
   margin-top: 25px;
   padding-left: 20px;
   border-left: 1px solid rgba(39, 68, 114, 0.2);
-  /* Sidebar caption style */
+  /* Consistent Sidebar Style */
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13px !important;
   color: #274472;
@@ -1237,68 +981,17 @@ h3 {
 
 .drake-caption-tag {
   display: block;
-  font-size: 10px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 1px !important;
+  font-size: 10px !important;
   margin-bottom: 4px;
   opacity: 0.5;
 }
 
-/* --- Cards Grid --- */
-.drake-lake-shake-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-bottom: 50px;
-}
-
-.drake-term-card {
-  padding: 40px 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.08);
-}
-
-.drake-term-card.drake-lake {
-  background: #ffffff;
-}
-
-.drake-term-card.drake-shake {
-  background: #274472;
-  color: #ffffff;
-}
-
-.drake-term-card h3 {
-  font-family: 'Playfair Display', serif !important;
-  margin-bottom: 10px;
-  font-weight: 600 !important;
-}
-
-/* Drake Lake Card - Better Text Visibility */
-.drake-term-card.drake-lake h3 {
-  color: #274472 !important;
-}
-
-.drake-term-card.drake-lake p {
-  color: #274472 !important;
-  opacity: 1 !important;
-}
-
-/* Drake Shake Card - Better Text Visibility */
-.drake-term-card.drake-shake h3 {
-  color: #ffffff !important;
-}
-
-.drake-term-card.drake-shake p {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* --- Consistent Editorial Note --- */
+/* --- Conclusion Footer Box --- */
 .drake-editorial-note-white {
   background-color: #ffffff;
-  padding: 35px;
+  padding: 40px;
   border-left: 4px solid #274472;
   border-radius: 0 4px 4px 0;
   margin-top: 30px;
@@ -1312,13 +1005,8 @@ h3 {
 }
 
 /* ========================================
-   RESPONSIVE (MATCHES SECTION 1)
+   RESPONSIVE LOGIC
    ======================================== */
-@media (max-width: 1200px) {
-  .drake-sticky-wrapper {
-    gap: 50px;
-  }
-}
 
 @media (max-width: 1024px) {
   .drake-sticky-wrapper {
@@ -1335,13 +1023,7 @@ h3 {
     margin: 20px auto 0 !important;
   }
 
-  .drake-hero-caption {
-    border-left: none;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .drake-editorial-note-white {
+  .drake-editorial-note-navy {
     margin: 30px auto;
     max-width: 600px;
     text-align: center;
@@ -1349,77 +1031,61 @@ h3 {
     border-top: 4px solid #274472;
   }
 
-  .drake-lake-shake-cards {
-    grid-template-columns: 1fr;
+  .drake-lead-para,
+  .drake-section-p-clean {
+    font-size: 17px !important;
+    text-align: center;
+  }
+
+  .drake-hero-caption {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 20px;
+  }
+
+  .drake-editorial-note-white {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
   }
 }
 
 @media (max-width: 768px) {
   .drake-img-fluid {
-    height: auto;
-    min-height: 280px;
-    width: 100%;
-  }
-
-  .drake-h1 {
-    font-size: 32px !important;
-  }
-
-  .drake-section-h2 {
-    font-size: 28px !important;
-  }
-
-  .drake-section-p,
-  h3 {
-    font-size: 17px !important;
-  }
-
-  .drake-lake-shake-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .drake-term-card {
-    padding: 30px 20px;
+    height: 350px;
   }
 }
 
 @media (max-width: 480px) {
-  .drake-h1 {
-    font-size: 26px !important;
-  }
-
-  .drake-h2 {
+  .drake-section-h2.drake-left-bar {
     font-size: 24px !important;
   }
 
-  .drake-section-p,
-  h3 {
+  .drake-lead-para,
+  .drake-section-p-clean {
     font-size: 16px !important;
-  }
-
-  .drake-editorial-note-white p {
-    font-size: 16px !important;
-  }
-
-  .drake-sticky-lead-text {
-    font-size: 16px !important;
-  }
-
-  .drake-img-fluid {
-    min-height: 220px;
   }
 }
 
 /* ========================================
-   SECTION 3: SHIP MANAGEMENT DESIGN
+   SECTION 3: SHIP MANAGEMENT (FIXED)
    Prefix: drake- | Colors: Navy & Soft Blue
    ======================================== */
 
-/* --- Layout & Sticky (Re-using consistent logic) --- */
+.drake-ship-management-fixed {
+  padding: 120px 40px;
+  /* Global Desktop Padding */
+}
+
+/* --- Layout Grid (Matches Section 1) --- */
 .drake-sticky-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
+  gap: 100px;
   align-items: start;
 }
 
@@ -1428,9 +1094,39 @@ h3 {
 }
 
 .drake-sticky-element {
+  position: -webkit-sticky;
   position: sticky;
   top: 140px;
   text-align: left;
+}
+
+.drake-section-number {
+  display: block;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #274472;
+  letter-spacing: 4px !important;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.drake-section-h2.drake-left-bar {
+  text-align: left !important;
+  color: #274472 !important;
+  font-size: 48px !important;
+  /* DESKTOP SIZE */
+  line-height: 1.1 !important;
+  margin-bottom: 0 !important;
+}
+
+.drake-section-h2.drake-left-bar::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  margin-top: 30px;
 }
 
 .drake-sticky-lead-text {
@@ -1438,59 +1134,131 @@ h3 {
   font-size: 20px !important;
   line-height: 1.6 !important;
   color: #274472;
-  margin-top: 25px;
+  margin-top: 30px;
   font-weight: 500 !important;
 }
 
-/* --- Feature Pills Grid --- */
-.drake-ship-feature-grid-redesign {
+/* --- Feature Grid Architecture --- */
+.drake-ship-feature-grid-fixed {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 50px;
+  gap: 25px;
+  margin: 40px 0 60px 0;
 }
 
-.drake-feature-pill-card {
+.drake-feature-card-navy {
   background-color: rgb(231, 243, 245);
-  /* Soft Blue background */
-  padding: 30px 25px;
-  border-radius: 8px;
+  /* Soft Blue */
+  padding: 45px 30px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-bottom: 3px solid #274472;
-  /* Navy accent instead of gold */
   transition: transform 0.3s ease;
+  border: 1px solid rgba(39, 68, 114, 0.05);
 }
 
-.drake-feature-pill-card:hover {
+.drake-feature-card-navy:hover {
   transform: translateY(-5px);
 }
 
-.drake-pill-icon-navy {
-  font-size: 28px !important;
-  margin-bottom: 15px;
+.drake-card-icon-wrap {
+  font-size: 24px !important;
+  margin-bottom: 20px;
+  color: #274472;
 }
 
-.drake-feature-pill-card h3 {
+.drake-card-h3-sm {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 1.5px !important;
   color: #274472;
+  margin: 0;
   line-height: 1.4 !important;
 }
 
-.drake-full-width-pill {
-  width: 100%;
-  margin-bottom: 50px;
+.drake-card-divider-navy {
+  width: 30px;
+  height: 2px;
+  background-color: #274472;
+  margin-top: 15px;
 }
 
-/* --- Consistent Figure Design (Shared with Section 1 & 2) --- */
+/* --- Full Width Feature --- */
+.drake-feature-card-full-navy {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  background: linear-gradient(135deg, #274472 0%, #1e3659 100%);
+  padding: 50px 45px;
+  border-radius: 6px;
+  margin-bottom: 60px;
+  box-shadow: 0 20px 45px rgba(39, 68, 114, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.drake-feature-card-full-navy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}
+
+.drake-full-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.drake-full-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.drake-full-info {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.drake-full-info h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  line-height: 1.4 !important;
+  letter-spacing: 0.5px;
+}
+
+.drake-full-info p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  line-height: 1.7 !important;
+  margin: 0;
+}
+
+/* --- CONSISTENT FIGURE DESIGN (Same as Section 1) --- */
 .drake-hero-figure {
-  margin: 0 0 50px 0;
+  margin: 0 0 60px 0;
 }
 
 .drake-figure-inner {
@@ -1502,7 +1270,7 @@ h3 {
 
 .drake-img-fluid {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   display: block;
 }
@@ -1519,19 +1287,17 @@ h3 {
 
 .drake-caption-tag {
   display: block;
-  font-size: 10px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  margin-bottom: 4px;
+  font-size: 10px !important;
+  margin-bottom: 5px;
   opacity: 0.5;
 }
 
-/* --- Consistent Editorial Note --- */
+/* --- Editorial Note Box --- */
 .drake-editorial-note-white {
   background-color: rgb(231, 243, 245);
-  /* Section uses Blue Box for footer */
-  padding: 35px;
+  padding: 40px;
   border-left: 4px solid #274472;
   border-radius: 0 4px 4px 0;
 }
@@ -1539,19 +1305,23 @@ h3 {
 .drake-editorial-note-white p {
   font-family: 'Playfair Display', serif !important;
   font-size: 18px !important;
+  /* Desktop Size */
   font-style: italic !important;
   color: #274472;
+  line-height: 1.6 !important;
   margin: 0;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 1200px) {
-  .drake-sticky-wrapper {
-    gap: 50px;
-  }
-}
+/* ========================================
+   STRICT RESPONSIVE BREAKPOINTS
+   ======================================== */
 
+/* TABLET (1024px) */
 @media (max-width: 1024px) {
+  .drake-ship-management-fixed {
+    padding: 80px 40px;
+  }
+
   .drake-sticky-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1562,72 +1332,120 @@ h3 {
     text-align: center !important;
   }
 
+  .drake-section-h2.drake-left-bar {
+    font-size: 28px !important;
+    text-align: center !important;
+  }
+
   .drake-section-h2.drake-left-bar::after {
     margin: 20px auto 0 !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 17px !important;
+    text-align: center;
+  }
+
+  .drake-img-fluid {
+    height: 400px;
   }
 
   .drake-hero-caption {
     border-left: none;
     padding-left: 0;
     text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 20px;
   }
 
-  .drake-ship-feature-grid-redesign {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .drake-img-fluid {
-    height: auto;
-    min-height: 280px;
-    width: 100%;
+  .drake-feature-card-full-navy {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+    gap: 25px;
   }
 
-  .drake-h1 {
-    font-size: 32px !important;
+  .drake-full-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
   }
 
-  .drake-section-h2 {
-    font-size: 28px !important;
+  .drake-full-icon svg {
+    width: 28px;
+    height: 28px;
   }
 
-  .drake-section-p {
+  .drake-full-info h3 {
+    font-size: 16px !important;
+  }
+
+  .drake-full-info p {
+    font-size: 16px !important;
+  }
+
+  .drake-editorial-note-white {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #274472;
+  }
+
+  .drake-editorial-note-white p {
     font-size: 17px !important;
   }
-
-  .drake-ship-feature-grid-redesign {
-    grid-template-columns: 1fr;
-  }
-
-  .drake-feature-pill-card {
-    padding: 25px 20px;
-  }
 }
 
+/* MOBILE (480px) */
 @media (max-width: 480px) {
+  .drake-ship-management-fixed {
+    padding: 60px 20px;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 24px !important;
+  }
+
   .drake-sticky-lead-text {
     font-size: 16px !important;
+  }
+
+  .drake-ship-feature-grid-fixed {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .drake-img-fluid {
+    height: 280px;
   }
 
   .drake-editorial-note-white p {
     font-size: 16px !important;
   }
 
-  .drake-h1 {
-    font-size: 26px !important;
+  .drake-feature-card-full-navy {
+    padding: 30px 20px;
+    gap: 20px;
   }
 
-  .drake-h2 {
-    font-size: 24px !important;
+  .drake-full-icon {
+    width: 55px;
+    height: 55px;
   }
 
-  .drake-section-p {
-    font-size: 16px !important;
+  .drake-full-icon svg {
+    width: 24px;
+    height: 24px;
   }
 
-  .drake-img-fluid {
-    min-height: 220px;
+  .drake-full-info h3 {
+    font-size: 15px !important;
+  }
+
+  .drake-full-info p {
+    font-size: 15px !important;
   }
 }
 
@@ -2458,6 +2276,328 @@ h3 {
   .drake-section-p,
   h3 {
     font-size: 16px !important;
+  }
+}
+
+/* ========================================
+   COMPREHENSIVE GLOBAL RESPONSIVE RULES
+   Ensures consistency across all breakpoints
+   ======================================== */
+
+/* LARGE TABLET (1200px) */
+@media (max-width: 1200px) {
+  .drake-section {
+    padding: 50px 30px;
+  }
+
+  .drake-section-inner {
+    max-width: 100%;
+  }
+
+  .drake-section-inner.wide {
+    max-width: 100%;
+  }
+
+  .drake-sticky-wrapper {
+    gap: 60px;
+  }
+
+  .drake-section-h2 {
+    font-size: 42px !important;
+  }
+}
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+  .drake-section {
+    padding: 50px 25px;
+  }
+
+  .drake-section-inner {
+    max-width: 100%;
+  }
+
+  .drake-sticky-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+
+  .drake-sticky-wrapper.flipped {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-side-sticky {
+    order: 0 !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-content-column {
+    order: 0 !important;
+  }
+
+  .drake-side-sticky {
+    height: auto !important;
+  }
+
+  .drake-sticky-element {
+    position: static !important;
+    text-align: center !important;
+  }
+
+  .drake-section-h2 {
+    font-size: 36px !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 36px !important;
+    text-align: center !important;
+  }
+
+  .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-sticky-lead-text {
+    text-align: center !important;
+    font-size: 17px !important;
+  }
+
+  /* All images consistent at tablet */
+  .drake-img-main,
+  .drake-img-fluid {
+    height: 400px !important;
+  }
+
+  .drake-lead-para {
+    font-size: 20px !important;
+  }
+
+  .drake-section-p-clean,
+  .drake-section-p {
+    font-size: 17px !important;
+  }
+}
+
+/* MOBILE LARGE (768px) */
+@media (max-width: 768px) {
+  .drake-section {
+    padding: 40px 20px;
+  }
+
+  .drake-section-h2 {
+    font-size: 30px !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 30px !important;
+  }
+
+  /* All images consistent at mobile large */
+  .drake-img-main,
+  .drake-img-fluid {
+    height: 350px !important;
+  }
+
+  .drake-lead-para {
+    font-size: 18px !important;
+  }
+
+  .drake-section-p-clean,
+  .drake-section-p {
+    font-size: 16px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 16px !important;
+  }
+
+  /* Captions center aligned */
+  .drake-img-caption,
+  .drake-hero-caption {
+    border-left: none !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+    border-top: 1px solid rgba(39, 68, 114, 0.1) !important;
+    padding-top: 15px !important;
+  }
+
+  /* Cards stack */
+  .drake-ship-feature-grid-fixed {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-audience-grid-side {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-choice-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-prepare-grid-redesign {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-why-benefits-grid-navy {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Full width card */
+  .drake-feature-card-full-navy {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 35px 25px !important;
+  }
+
+  .drake-full-icon {
+    margin: 0 auto !important;
+  }
+
+  .drake-full-info h3 {
+    text-align: center !important;
+  }
+
+  /* Editorial notes center */
+  .drake-editorial-note-blue,
+  .drake-editorial-note-navy,
+  .drake-editorial-note-white {
+    margin: 25px auto !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    border-left: none !important;
+    border-top: 4px solid #274472 !important;
+  }
+}
+
+/* MOBILE (480px) */
+@media (max-width: 480px) {
+  .drake-section {
+    padding: 35px 15px;
+  }
+
+  .drake-section-h2 {
+    font-size: 26px !important;
+  }
+
+  .drake-section-h2.drake-left-bar {
+    font-size: 26px !important;
+  }
+
+  /* All images consistent at mobile */
+  .drake-img-main,
+  .drake-img-fluid {
+    height: 280px !important;
+  }
+
+  .drake-lead-para {
+    font-size: 17px !important;
+  }
+
+  .drake-section-p-clean,
+  .drake-section-p {
+    font-size: 15px !important;
+  }
+
+  .drake-sticky-lead-text {
+    font-size: 15px !important;
+  }
+
+  /* Smaller cards padding */
+  .drake-feature-card-navy {
+    padding: 25px 20px !important;
+  }
+
+  .drake-feature-card-full-navy {
+    padding: 30px 20px !important;
+  }
+
+  .drake-full-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .drake-full-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .drake-full-info h3 {
+    font-size: 15px !important;
+  }
+
+  .drake-full-info p {
+    font-size: 14px !important;
+  }
+
+  /* Next steps timeline */
+  .drake-next-step-row-new {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .drake-next-step-circle-navy {
+    margin: 0 auto 15px !important;
+  }
+
+  /* Buttons stack */
+  .drake-hero-btns {
+    flex-direction: column !important;
+  }
+
+  .drake-btn-primary,
+  .drake-btn-secondary {
+    width: 100% !important;
+  }
+
+  /* CTA section */
+  .drake-final-cta-section {
+    padding: 50px 15px !important;
+  }
+
+  .drake-cta-btn-white {
+    width: 100% !important;
+  }
+
+  /* FAQ */
+  .drake-faq-list.emerald-style {
+    padding: 0 !important;
+  }
+
+  .emerald-faq-question {
+    font-size: 15px !important;
+    padding: 15px !important;
+  }
+
+  .emerald-faq-answer {
+    padding: 0 15px 15px !important;
+  }
+}
+
+/* ========================================
+   GLOBAL FLIPPED LAYOUT RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+  .drake-sticky-wrapper.flipped {
+    grid-template-columns: 1fr !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-side-sticky {
+    order: 0 !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-content-column {
+    order: 0 !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar {
+    text-align: center !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-section-h2.drake-left-bar::after {
+    margin: 20px auto 0 !important;
+  }
+
+  .drake-sticky-wrapper.flipped .drake-sticky-lead-text {
+    text-align: center !important;
   }
 }
 
@@ -3302,11 +3442,12 @@ h3 {
   }
 
   .drake-editorial-note-blue {
-    margin: 0 auto;
+    margin: 30px auto;
     max-width: 600px;
     text-align: center;
     border-left: none;
     border-top: 4px solid #274472;
+    padding: 30px;
   }
 
   .drake-why-benefits-grid-navy {
@@ -3657,7 +3798,7 @@ h3 {
 
 .drake-final-cta-section {
   position: relative;
-  padding: 120px 20px;
+  padding: 60px 20px;
   background: url('../../assets/DrakePassage/Footer_Image.jpeg') center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -3744,7 +3885,7 @@ h3 {
 }
 
 .drake-cta-btn-white:hover {
-  background-color: transparent;
+  background-color: #274472;
   color: #ffffff;
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);

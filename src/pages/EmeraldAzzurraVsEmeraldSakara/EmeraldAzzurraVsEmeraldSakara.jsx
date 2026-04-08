@@ -449,7 +449,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
 
           {/* LEFT */}
           <div className="Sakara_authority_left">
-            <p className="Sakara_section_label">Authority + Trust Stack</p>
             <h2 className="Sakara_authority_heading">
               Written and Reviewed by Angela Hughes
             </h2>
@@ -462,26 +461,50 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
               of over 140 advisors and works directly with clients comparing
               Emerald, Scenic, and other luxury cruise products.
             </p>
-            <div className="Sakara_authority_tags">
-              <div className="Sakara_authority_tag_box">
-                <BsStarFill className="Sakara_tag_icon" />
-                <p>Travel Weekly</p>
-              </div>
-              <div className="Sakara_authority_tag_box">
-                <BsStarFill className="Sakara_tag_icon" />
-                <p>TravelPulse</p>
-              </div>
-              <div className="Sakara_authority_tag_box">
-                <BsStarFill className="Sakara_tag_icon" />
-                <p>Insider Travel Report</p>
-              </div>
-              <div className="Sakara_authority_tag_box">
-                <HiOutlineBadgeCheck className="Sakara_tag_icon" />
-                <p>Travel Leaders Network Advisory Board</p>
-              </div>
-              <div className="Sakara_authority_tag_box">
-                <BsShieldCheck className="Sakara_tag_icon" />
-                <p>40+ Years in the Travel Industry</p>
+            <div className="Sakara_authority_ticker_container">
+              <div className="Sakara_authority_ticker_track">
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>Travel Weekly</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>TravelPulse</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>Insider Travel Report</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <HiOutlineBadgeCheck className="Sakara_tag_icon" />
+                  <p>Travel Leaders Network Advisory Board</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsShieldCheck className="Sakara_tag_icon" />
+                  <p>40+ Years in the Travel Industry</p>
+                </div>
+                
+                {/* Duplicated for seamless loop */}
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>Travel Weekly</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>TravelPulse</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsStarFill className="Sakara_tag_icon" />
+                  <p>Insider Travel Report</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <HiOutlineBadgeCheck className="Sakara_tag_icon" />
+                  <p>Travel Leaders Network Advisory Board</p>
+                </div>
+                <div className="Sakara_authority_tag_box">
+                  <BsShieldCheck className="Sakara_tag_icon" />
+                  <p>40+ Years in the Travel Industry</p>
+                </div>
               </div>
             </div>
           </div>

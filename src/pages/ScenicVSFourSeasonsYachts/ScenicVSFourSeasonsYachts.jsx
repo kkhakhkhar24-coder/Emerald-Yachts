@@ -80,7 +80,6 @@ function ScenicVSFourSeasonsYachts() {
             <section className="svf-section svf-bg-white">
                 <div className="svf-inner">
                     <div className="svf-hdr">
-                        <span className="svf-num">02</span>
                         <h2 className="svf-h2">Scenic vs Four Seasons Yachts: Best For</h2>
                         <div className="svf-bar"></div>
                     </div>
@@ -147,7 +146,6 @@ function ScenicVSFourSeasonsYachts() {
                         </main>
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el">
-                                <span className="svf-num">04</span>
                                 <h2 className="svf-h2 svf-lbar">Written and reviewed by <br />Angela Hughes</h2>
                                 <div className="svf-cred-box">
                                     <div className="svf-avatar"><img src={ProfilePicture} alt="Angela Hughes" className="svf-avatar-img" /></div>
@@ -183,7 +181,6 @@ function ScenicVSFourSeasonsYachts() {
                     <div className="svf-sticky-wrap">
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el">
-                                <span className="svf-num">06</span>
                                 <h2 className="svf-h2 svf-lbar">Scenic vs <br />Four Seasons Yachts</h2>
                                 <p className="svf-sticky-desc">A detailed breakdown of the fundamental differences between these two ultra-luxury leaders.</p>
                             </div>
@@ -242,11 +239,31 @@ function ScenicVSFourSeasonsYachts() {
                         </main>
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el svf-rside">
-                                <span className="svf-num">07</span>
                                 <h2 className="svf-h2 svf-rbar">What Actually <br />Matters</h2>
                                 <p className="svf-sticky-desc">Beyond the luxury amenities, the choice between Scenic and Four Seasons comes down to your primary travel objective.</p>
                             </div>
                         </aside>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 7.5: VIDEO SHOWCASE */}
+            <section className="svf-section svf-video-section">
+                <div className="svf-inner">
+                    <div className="svf-video-header">
+                        <h2 className="svf-h2" style={{ textAlign: 'center' }}>The Discovery Yacht <br /> Advantage in the Mediterranean</h2>
+                        <div className="svf-bar" style={{ margin: '20px auto 0' }}></div>
+                        <p className="svf-p" style={{ textAlign: 'center', marginTop: '20px', maxWidth: '700px', margin: '20px auto 0' }}>Is Scenic Eclipse right for your European summer? This showcase of Rome, Capri, and the French Riviera demonstrates the difference between a "hotel at sea" and a "Discovery Yacht." See how all-inclusive luxury is paired with active immersion, allowing guests to explore iconic destinations at their own pace and from every perspective.</p>
+                    </div>
+                    <div className="svf-video-wrapper">
+                        <iframe
+                            className="svf-video-player"
+                            src="https://www.youtube.com/embed/TCCFGo2Fo-E"
+                            title="Experience Scenic Eclipse"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
                     </div>
                 </div>
             </section>
@@ -257,7 +274,6 @@ function ScenicVSFourSeasonsYachts() {
                     <div className="svf-sticky-wrap">
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el">
-                                <span className="svf-num">08</span>
                                 <h2 className="svf-h2 svf-lbar">Price & <br />Value</h2>
                                 <p className="svf-sticky-desc">Understanding the financial structure of each brand is key to aligning your travel budget with your expectations.</p>
                             </div>
@@ -285,7 +301,6 @@ function ScenicVSFourSeasonsYachts() {
             <section className="svf-section svf-bg-soft">
                 <div className="svf-inner">
                     <div className="svf-hdr">
-                        <span className="svf-num">09</span>
                         <h2 className="svf-h2">Who This Is Not For</h2>
                         <div className="svf-bar"></div>
                     </div>
@@ -317,7 +332,6 @@ function ScenicVSFourSeasonsYachts() {
                     <div className="svf-sticky-wrap">
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el">
-                                <span className="svf-num">10</span>
                                 <h2 className="svf-h2 svf-lbar">Suites & <br />Design</h2>
                                 <p className="svf-sticky-desc">The structural philosophy of each yacht defines how you interact with your private space and the surrounding environment.</p>
                             </div>
@@ -358,7 +372,6 @@ function ScenicVSFourSeasonsYachts() {
                         </main>
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el svf-rside">
-                                <span className="svf-num">11</span>
                                 <h2 className="svf-h2 svf-rbar">What Clients <br />Get Wrong</h2>
                                 <p className="svf-sticky-desc">Luxury travel planning is about more than just selecting a brand. Avoid these common strategic errors.</p>
                             </div>
@@ -371,7 +384,6 @@ function ScenicVSFourSeasonsYachts() {
             <section className="svf-section svf-bg-white">
                 <div className="svf-inner">
                     <div className="svf-hdr">
-                        <span className="svf-num">12</span>
                         <h2 className="svf-h2">What We Recommend Instead</h2>
                         <div className="svf-bar"></div>
                     </div>
@@ -390,7 +402,6 @@ function ScenicVSFourSeasonsYachts() {
                     <div className="svf-sticky-wrap">
                         <aside className="svf-sticky-side">
                             <div className="svf-sticky-el">
-                                <span className="svf-num">13</span>
                                 <h2 className="svf-h2 svf-lbar">Traveler <br />Profile</h2>
                                 <p className="svf-sticky-desc">Which statement better aligns with your personal travel philosophy?</p>
                             </div>
@@ -414,7 +425,6 @@ function ScenicVSFourSeasonsYachts() {
             <section className="svf-section svf-bg-white">
                 <div className="svf-inner">
                     <div className="svf-hdr">
-                        <span className="svf-num">14</span>
                         <h2 className="svf-h2">Final Verdict</h2>
                         <div className="svf-bar"></div>
                     </div>
@@ -432,7 +442,6 @@ function ScenicVSFourSeasonsYachts() {
             <section className="svf-section svf-bg-soft">
                 <div className="svf-inner svf-narrow">
                     <div className="svf-hdr">
-                        <span className="svf-num">15</span>
                         <h2 className="svf-h2">Frequently Asked Questions</h2>
                         <div className="svf-bar"></div>
                         <p className="svf-faq-intro">Everything you need to know about choosing between Scenic and Four Seasons Yachts.</p>
