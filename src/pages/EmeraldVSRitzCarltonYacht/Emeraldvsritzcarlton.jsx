@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
-import "./EmeraldVsRitzCarlton.css";
+import "./Emeraldvsritzcarlton.css";
 import myImage from "../../assets/image.jpg";
 import { Award, Globe, Shield, Star } from "lucide-react";
 
