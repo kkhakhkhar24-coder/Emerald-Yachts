@@ -438,27 +438,27 @@ const LuxuryPage = () => {
 
           <div className="Emerald_method_steps">
             <div className="Emerald_method_step">
-              <span className="Emerald_step_number">01</span>
+
               <p>Experience Alignment</p>
             </div>
 
             <div className="Emerald_method_step">
-              <span className="Emerald_step_number">02</span>
+
               <p>Destination Strategy</p>
             </div>
 
             <div className="Emerald_method_step">
-              <span className="Emerald_step_number">03</span>
+
               <p>Itinerary Flow</p>
             </div>
 
             <div className="Emerald_method_step">
-              <span className="Emerald_step_number">04</span>
+
               <p>Cabin Strategy</p>
             </div>
 
             <div className="Emerald_method_step">
-              <span className="Emerald_step_number">05</span>
+
               <p>Full Journey Design</p>
             </div>
           </div>
@@ -487,7 +487,7 @@ const LuxuryPage = () => {
       <section className="Emerald_video_section">
         <div className="Emerald_video_inner">
           <div className="Emerald_video_header">
-            <span className="Emerald_section_number">06</span>
+
             <h2>Experience Emerald Yachts</h2>
             <div className="Emerald_video_divider"></div>
             <p className="Emerald_video_subtitle">
@@ -526,7 +526,7 @@ const LuxuryPage = () => {
       <section className="Emerald_gallery_section">
         <div className="Emerald_gallery_inner">
           <div className="Emerald_gallery_header">
-            <span className="Emerald_section_number">07</span>
+
             <h2>Life Onboard Emerald Yachts</h2>
             <div className="Emerald_gallery_divider"></div>
             <p className="Emerald_gallery_subtitle">
@@ -592,7 +592,7 @@ const LuxuryPage = () => {
       {/* ===== SECTION 18 — FAQ ===== */}
       <section className="emerald_faq_section">
         <div className="emerald_faq_inner">
-          <span className="Emerald_section_number">08</span>
+
           <h2>Emerald Yachts FAQs — Expert Answers</h2>
 
           <AntaFAQ
