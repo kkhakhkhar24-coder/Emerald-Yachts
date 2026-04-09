@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
-import { Award, Globe, Newspaper, Quote, Star, Check, X, Play } from "lucide-react";
+import {
+  Award,
+  Globe,
+  Newspaper,
+  Quote,
+  Star,
+  Check,
+  X,
+  Play,
+} from "lucide-react";
 import myImage from "../../assets/image.jpg";
 import "./EmeraldYachts.css";
 import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
@@ -220,29 +229,6 @@ const LuxuryPage = () => {
         </div>
       </section>
 
-      {/* <section>
-  <div>
-    <h2>
-         Real Experience with Emerald Yachts
-    </h2>
-    <p>
-        Our experience with Emerald Yachts is not theoretical. We understand how these journeys unfold in real time, how itinerary pacing impacts the feel of the trip, and how small decisions such as sailing selection and cabin placement influence the overall experience.
-    </p>
-  </div>
-</section> */}
-
-      {/* <section className="experience_section">
-  <div className="experience_inner">
-    <h2>
-      Real Experience with Emerald Yachts
-    </h2>
-
-    <p>
-      Our experience with Emerald Yachts is not theoretical. We understand how these journeys unfold in real time, how itinerary pacing impacts the feel of the trip, and how small decisions such as sailing selection and cabin placement influence the overall experience.
-    </p>
-  </div>
-</section> */}
-
       <section className="Emerald_experience_section">
         <div className="Emerald_experience_inner">
           <div className="Emerald_experience_grid">
@@ -355,7 +341,6 @@ const LuxuryPage = () => {
             </div>
           </div>
 
-
           <p className="Emerald_media_inquiry">
             <Quote size={12} className="Emerald_quote_icon" />
             Media inquiries and speaking engagements available upon request.
@@ -438,27 +423,22 @@ const LuxuryPage = () => {
 
           <div className="Emerald_method_steps">
             <div className="Emerald_method_step">
-
               <p>Experience Alignment</p>
             </div>
 
             <div className="Emerald_method_step">
-
               <p>Destination Strategy</p>
             </div>
 
             <div className="Emerald_method_step">
-
               <p>Itinerary Flow</p>
             </div>
 
             <div className="Emerald_method_step">
-
               <p>Cabin Strategy</p>
             </div>
 
             <div className="Emerald_method_step">
-
               <p>Full Journey Design</p>
             </div>
           </div>
@@ -487,11 +467,11 @@ const LuxuryPage = () => {
       <section className="Emerald_video_section">
         <div className="Emerald_video_inner">
           <div className="Emerald_video_header">
-
             <h2>Experience Emerald Yachts</h2>
             <div className="Emerald_video_divider"></div>
             <p className="Emerald_video_subtitle">
-              Watch how Emerald Yachts combines refined elegance with relaxed coastal cruising in the world's most beautiful destinations.
+              Watch how Emerald Yachts combines refined elegance with relaxed
+              coastal cruising in the world's most beautiful destinations.
             </p>
           </div>
 
@@ -507,7 +487,10 @@ const LuxuryPage = () => {
                 preload="auto"
                 poster={EmeraldAzzurraVsEmeraldSakara1}
               >
-                <source src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/AA3pOBiM5PBbCvWe_uIS0bU/Emerald%20Cruises/Yacht%20Cruising/Videos/Paid%20Social_%20EYC%20Caribbean%20Experiences%20_%2030sec%2016x9%20No%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=e1xf9emi&raw=1" type="video/mp4" />
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/AA3pOBiM5PBbCvWe_uIS0bU/Emerald%20Cruises/Yacht%20Cruising/Videos/Paid%20Social_%20EYC%20Caribbean%20Experiences%20_%2030sec%2016x9%20No%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=e1xf9emi&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
               <div className="Emerald_video_glow"></div>
@@ -517,7 +500,8 @@ const LuxuryPage = () => {
           <p className="Emerald_video_caption">
             <span className="Emerald_caption_tag">Discover</span>
             Discover the refined elegance and relaxed luxury of Emerald Yachts
-            as they navigate the stunning coastlines of the Mediterranean and Caribbean.
+            as they navigate the stunning coastlines of the Mediterranean and
+            Caribbean.
           </p>
         </div>
       </section>
@@ -526,11 +510,11 @@ const LuxuryPage = () => {
       <section className="Emerald_gallery_section">
         <div className="Emerald_gallery_inner">
           <div className="Emerald_gallery_header">
-
             <h2>Life Onboard Emerald Yachts</h2>
             <div className="Emerald_gallery_divider"></div>
             <p className="Emerald_gallery_subtitle">
-              Experience intimate spaces designed for relaxed elegance and unforgettable coastal journeys.
+              Experience intimate spaces designed for relaxed elegance and
+              unforgettable coastal journeys.
             </p>
           </div>
 
@@ -544,9 +528,14 @@ const LuxuryPage = () => {
                 />
                 <div className="Emerald_gallery_overlay">
                   <div className="Emerald_gallery_content">
-                    <span className="Emerald_gallery_badge">Boutique Luxury</span>
+                    <span className="Emerald_gallery_badge">
+                      Boutique Luxury
+                    </span>
                     <h3>Refined Interiors</h3>
-                    <p>Intimate spaces crafted for comfort and elegance with panoramic ocean views.</p>
+                    <p>
+                      Intimate spaces crafted for comfort and elegance with
+                      panoramic ocean views.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -563,7 +552,9 @@ const LuxuryPage = () => {
                   <div className="Emerald_gallery_content">
                     <span className="Emerald_gallery_badge">Destinations</span>
                     <h3>Coastal Beauty</h3>
-                    <p>Explore stunning Mediterranean and Caribbean coastlines.</p>
+                    <p>
+                      Explore stunning Mediterranean and Caribbean coastlines.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -580,7 +571,10 @@ const LuxuryPage = () => {
                   <div className="Emerald_gallery_content">
                     <span className="Emerald_gallery_badge">Experience</span>
                     <h3>Effortless Luxury</h3>
-                    <p>Relaxed atmosphere with world-class service and curated experiences.</p>
+                    <p>
+                      Relaxed atmosphere with world-class service and curated
+                      experiences.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -592,7 +586,6 @@ const LuxuryPage = () => {
       {/* ===== SECTION 18 — FAQ ===== */}
       <section className="emerald_faq_section">
         <div className="emerald_faq_inner">
-
           <h2>Emerald Yachts FAQs — Expert Answers</h2>
 
           <AntaFAQ
