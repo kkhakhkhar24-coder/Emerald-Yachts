@@ -381,15 +381,22 @@
 @media (max-width: 768px) {
   .evrc_authority_content {
     grid-template-columns: 1fr;
+    text-align: center;
   }
   .evrc_authority_right {
-    display: none;
+    display: flex;
+    justify-content: center;
+    order: -1; /* Move image to the top on mobile */
+    margin-bottom: 20px;
   }
   .evrc_authority_tags {
     grid-template-columns: 1fr;
   }
   .evrc_authority_left h2 {
     font-size: 28px;
+  }
+  .evrc_authority_note {
+    text-align: left;
   }
 }
 
