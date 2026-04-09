@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
-import scenisilver5 from "../../assets/scenic-vs-silversea-antarctica/scenisilver5.jpg";
 import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
 import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
@@ -27,6 +26,7 @@ import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silverse
 import { Helmet } from "react-helmet-async";
 import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.jpeg";
 import silverseaImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea2.jpg";
+import myImage from "../../assets/image.jpg";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -981,7 +981,7 @@ const AntarcticaPage = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 13 — WHY BOOK WITH ANGELA HUGHES ===== */}
+      {/* ===== SECTION 13 — WHY BOOK & AUTHOR PROOF ===== */}
       <section className="senianta-why-book">
         <div className="senianta-why-book-inner">
           <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel</h2>
@@ -1029,62 +1029,53 @@ const AntarcticaPage = () => {
                   <p>Ongoing support throughout the journey</p>
                 </div>
               </div>
+
+              <div className="senianta-auth-recognition">
+                <h4>Industry Recognition</h4>
+                <ul className="senianta-recognition-list">
+                  <li>
+                    Luxury Travel Influencer of the Year (2024), Travel Leaders
+                    Network
+                  </li>
+                  <li>Most Influential Women in Travel (2026), TravelPulse</li>
+                  <li>Featured across leading travel media</li>
+                </ul>
+              </div>
             </div>
 
             <div className="senianta-why-book-right">
               <div className="senianta-why-book-image-wrapper">
                 <img
-                  src={scenisilver5}
-                  alt="Angela Hughes - Luxury Travel Advisor"
+                  src={myImage}
+                  alt="Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel"
                   className="senianta-why-book-portrait"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SECTION 14 — AUTHOR PROOF ===== */}
-      <section className="senianta-author-proof">
-        <div className="senianta-author-proof-inner">
-          <div className="senianta-professional-card">
-            <div className="senianta-card-header">
-              <Award className="senianta-auth-icon" />
-              <div className="senianta-auth-title">
-                <h3>Planned and Curated by Angela Hughes</h3>
-                <p className="senianta-auth-role">
-                  CEO, Trips & Ships Luxury Travel
-                </p>
+              <div className="senianta-auth-title-wrap">
+                <h3 className="senianta-auth-title">Planned and Curated by Angela Hughes</h3>
+                <p className="senianta-auth-role">CEO, Trips & Ships Luxury Travel</p>
               </div>
-            </div>
 
-            <div className="senianta-auth-stats-grid">
-              <div className="senianta-auth-stat-item">
-                <Clock className="senianta-stat-icon" />
-                <div className="senianta-stat-content">
-                  <span className="senianta-stat-val">40+</span>
-                  <span className="senianta-stat-label">Years Experience</span>
+              <div className="senianta-auth-stats-grid">
+                <div className="senianta-auth-stat-item">
+                  <Clock className="senianta-stat-icon" />
+                  <div className="senianta-stat-content">
+                    <span className="senianta-stat-val">40+</span>
+                    <span className="senianta-stat-label">
+                      Years Experience
+                    </span>
+                  </div>
+                </div>
+                <div className="senianta-auth-stat-item">
+                  <MapPin className="senianta-stat-icon" />
+                  <div className="senianta-stat-content">
+                    <span className="senianta-stat-val">121</span>
+                    <span className="senianta-stat-label">
+                      Countries Visited
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div className="senianta-auth-stat-item">
-                <MapPin className="senianta-stat-icon" />
-                <div className="senianta-stat-content">
-                  <span className="senianta-stat-val">121</span>
-                  <span className="senianta-stat-label">Countries Visited</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="senianta-auth-recognition">
-              <h4>Industry Recognition</h4>
-              <ul className="senianta-recognition-list">
-                <li>
-                  Luxury Travel Influencer of the Year (2024), Travel Leaders
-                  Network
-                </li>
-                <li>Most Influential Women in Travel (2026), TravelPulse</li>
-                <li>Featured across leading travel media</li>
-              </ul>
             </div>
           </div>
         </div>

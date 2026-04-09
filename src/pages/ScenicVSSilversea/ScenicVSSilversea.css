@@ -1813,7 +1813,9 @@
 .senianta-why-book-right {
   flex: 0.8;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
 .senianta-why-book-image-wrapper {
@@ -1901,12 +1903,13 @@
   gap: 25px;
   box-shadow: 0 25px 50px rgba(39, 68, 114, 0.06);
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .senianta-why-benefits-grid h3 {
   grid-column: 1 / -1;
   font-family: 'Playfair Display', serif !important;
-  font-size: 24px !important;
+  font-size: 23px !important;
   color: #274472;
   margin-bottom: 10px;
   text-align: left;
@@ -1968,36 +1971,30 @@
 }
 
 /* =====================================================
-   SECTION 14 — AUTHOR PROOF (PROFESSIONAL CARD)
-   ===================================================== */
-
-.senianta-author-proof {
-  padding: 70px 20px 80px;
-  background: rgb(231, 243, 245);
-  display: flex;
-  justify-content: center;
+   REMOVED SECTION 14 — AUTHOR PROOF (PROFESSIONAL CARD)
+   /* Styles now integrated into SECTION 13 */
+.senianta-auth-title-wrap {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.senianta-author-proof-inner {
-  max-width: 900px;
-  width: 100%;
+.senianta-auth-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 26px !important;
+  color: #274472;
+  margin-bottom: 8px;
+  font-weight: 500 !important;
+  line-height: 1.3;
 }
 
-.senianta-professional-card {
-  background: #ffffff;
-  padding: 60px;
-  border-radius: 30px;
-  box-shadow: 0 30px 80px rgba(39, 68, 114, 0.12);
-  border: 1px solid rgba(39, 68, 114, 0.05);
-}
-
-.senianta-card-header {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 30px;
+.senianta-auth-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #27447288;
+  margin: 0;
 }
 
 .senianta-auth-icon {
@@ -2008,27 +2005,12 @@
   flex-shrink: 0;
 }
 
-.senianta-auth-title h3 {
-  font-family: 'Playfair Display', serif !important;
-  font-size: 32px !important;
-  color: #274472;
-  margin-bottom: 5px;
-  font-weight: 500 !important;
-}
-
-.senianta-auth-role {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #27447288;
-}
-
 .senianta-auth-stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 50px;
+  gap: 20px;
+  width: 100%;
+  max-width: 450px;
 }
 
 .senianta-auth-stat-item {
@@ -2055,7 +2037,7 @@
 
 .senianta-auth-stat-item .senianta-stat-val {
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-size: 37px;
   color: #274472;
   font-weight: 500;
 }
@@ -2089,56 +2071,17 @@
   font-size: 1rem;
   color: #274472cc;
   position: relative;
-  padding-left: 30px;
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
-  .senianta-recognition-list li { font-size: 17px; }
-  .senianta-stat-icon{font-size: 20px;}
-}
-
-@media (max-width: 480px) {
-  .senianta-recognition-list li { font-size: 16px; }
-}
-
-.senianta-recognition-list li::before {
-  content: "✦";
-  position: absolute;
-  left: 0;
-  color: #274472;
-}
-
-@media (max-width: 768px) {
-  .senianta-professional-card {
-    padding: 40px 30px;
-  }
-  .senianta-auth-stat-item .senianta-stat-val{
-  font-size: 32px;
-}
-  
-  .senianta-card-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  
+@media (max-width: 1024px) {
   .senianta-auth-stats-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .senianta-auth-title h3 {
-    font-size: 28px !important;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media (max-width: 480px) {
-  .senianta-auth-title h3 {
-    font-size: 24px !important;
-    margin-bottom: 22px;
-  }
-  .senianta-auth-stat-item .senianta-stat-val {
-    font-size: 20px;
+@media(max-width: 480px){
+  .senianta-auth-stat-item .senianta-stat-val{
+    font-size: 25px;
   }
 }
 
@@ -2149,7 +2092,7 @@
 
 .senianta-faq-section {
   padding: 70px 20px 80px;
-  background: #ffffff;
+  background: rgb(231, 243, 245);
   display: flex;
   justify-content: center;
 }
@@ -2180,7 +2123,6 @@
 }
 
 .senianta-faq-accordion {
-  margin-top: 80px;
   border-top: 1px solid #e0e0e0;
 }
 
@@ -2370,7 +2312,15 @@
 
   .senianta-why-book-flex {
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
+  }
+  .senianta-why-book-right {
+    order: -1;
+    width: 100%;
+    align-items: center;
+  }
+  .senianta-auth-stats-grid {
+    margin: 0 auto;
   }
 
   .senianta-faq-grid {
