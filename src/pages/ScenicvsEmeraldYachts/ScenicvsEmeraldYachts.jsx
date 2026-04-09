@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, Medal } from "lucide-react";
 import { useState, useEffect } from "react";
 import "./ScenicvsEmeraldYachts.css";
 import myImage from "../../assets/image.jpg";
@@ -566,7 +566,10 @@ function YachtsComparison() {
             </div>
             <div className="Yachts_choice_video">
               <video autoPlay muted loop playsInline controls>
-                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AHDoC69hOnqPpbFkjXvNTuc/Scenic/Scenic%20Ocean/Videos/Scenic%20-%20Yacht%20-%2015%20sec%20-%20CBS.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ptfv114l&raw=1" type="video/mp4" />
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AHDoC69hOnqPpbFkjXvNTuc/Scenic/Scenic%20Ocean/Videos/Scenic%20-%20Yacht%20-%2015%20sec%20-%20CBS.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ptfv114l&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -579,11 +582,17 @@ function YachtsComparison() {
               <p>First-time yacht travelers seeking approachable luxury</p>
               <p>Relaxed, social travel style with boutique vibes</p>
               <p>Strong value within the premium yacht cruising segment</p>
-              <p>Ideal for warm-weather coastal exploration and docking in small ports</p>
+              <p>
+                Ideal for warm-weather coastal exploration and docking in small
+                ports
+              </p>
             </div>
             <div className="Yachts_choice_video">
               <video autoPlay muted loop playsInline controls>
-                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AIKUdjJ96iUVyUnmWwwHKpk/Emerald%20Cruises/Yacht%20Cruising/Videos/Emerald%20Cruises%20Luxury%20Yacht%20Cruising.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=w90egx60&raw=1" type="video/mp4" />
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AIKUdjJ96iUVyUnmWwwHKpk/Emerald%20Cruises/Yacht%20Cruising/Videos/Emerald%20Cruises%20Luxury%20Yacht%20Cruising.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=w90egx60&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -618,119 +627,160 @@ function YachtsComparison() {
       </section>
 
       {/* ===== SECTION: EMERALD VS SCENIC — Side-by-Side Comparison with Sticky Header ===== */}
-<section className="lux-section lux-bg-white lux-comparison-section">
-    <div className="lux-inner-full">
-        <div className="lux-sticky-wrapper">
-
+      <section className="lux-section lux-bg-white lux-comparison-section">
+        <div className="lux-inner-full">
+          <div className="lux-sticky-wrapper">
             {/* Left Column: Sticky Side-Heading */}
             <aside className="lux-side-sticky">
-                <div className="lux-sticky-element">
-                    <span className="lux-section-number">COMPARISON</span>
-                    <h2 className="lux-h2">See the Difference: <br />Emerald vs Scenic</h2>
-                    <div className="lux-navy-divider-left"></div>
-                    <p className="lux-p lux-sticky-intro">
-                        Two distinct approaches to luxury cruising. See the difference between relaxed coastal elegance and expedition discovery.
-                    </p>
-                </div>
+              <div className="lux-sticky-element">
+                <span className="lux-section-number">COMPARISON</span>
+                <h2 className="lux-h2">
+                  See the Difference: <br />
+                  Emerald vs Scenic
+                </h2>
+                <div className="lux-navy-divider-left"></div>
+                <p className="lux-p lux-sticky-intro">
+                  Two distinct approaches to luxury cruising. See the difference
+                  between relaxed coastal elegance and expedition discovery.
+                </p>
+              </div>
             </aside>
 
             {/* Right Column: Scrolling Comparison Columns */}
             <main className="lux-content-column">
-                <div className="lux-comparison-dual-grid">
+              <div className="lux-comparison-dual-grid">
+                {/* Column 1: Emerald Yachts */}
+                <div className="lux-brand-column">
+                  <div className="lux-brand-header-box lux-bg-soft-blue">
+                    <h3 className="lux-brand-name">Emerald Yachts</h3>
+                    <p className="lux-brand-tagline">Relaxed Coastal Luxury</p>
+                  </div>
 
-                    {/* Column 1: Emerald Yachts */}
-                    <div className="lux-brand-column">
-                        <div className="lux-brand-header-box lux-bg-soft-blue">
-                            <h3 className="lux-brand-name">Emerald Yachts</h3>
-                            <p className="lux-brand-tagline">Relaxed Coastal Luxury</p>
-                        </div>
-                        
-                        <div className="lux-comparison-gallery">
-                            <div className="lux-gallery-item lux-feat">
-                                <img src={Emerald1} alt="Emerald Yachts luxury suite" />
-                                <div className="lux-img-overlay"><span>Luxury Suites</span></div>
-                            </div>
-                            <div className="lux-gallery-group">
-                                <div className="lux-gallery-item">
-                                    <img src={Emerald2} alt="Emerald Yachts pool deck" />
-                                    <div className="lux-img-overlay"><span>Pool Deck</span></div>
-                                </div>
-                                <div className="lux-gallery-item">
-                                    <img src={Emerald3} alt="Emerald Yachts dining" />
-                                    <div className="lux-img-overlay"><span>Fine Dining</span></div>
-                                </div>
-                            </div>
-                            <div className="lux-gallery-item">
-                                <img src={Emerald4} alt="Emerald Yachts lounge" />
-                                <div className="lux-img-overlay"><span>Elegant Lounges</span></div>
-                            </div>
-                            <div className="lux-gallery-group">
-                                <div className="lux-gallery-item">
-                                    <img src={Emerald5} alt="Emerald Yachts view" />
-                                    <div className="lux-img-overlay"><span>Ocean Views</span></div>
-                                </div>
-                                <div className="lux-gallery-item">
-                                    <img src={Emerald6} alt="Emerald Yachts coastal" />
-                                    <div className="lux-img-overlay"><span>Coastal Journeys</span></div>
-                                </div>
-                            </div>
-                        </div>
+                  <div className="lux-comparison-gallery">
+                    <div className="lux-gallery-item lux-feat">
+                      <img src={Emerald1} alt="Emerald Yachts luxury suite" />
+                      <div className="lux-img-overlay">
+                        <span>Luxury Suites</span>
+                      </div>
                     </div>
-
-                    {/* Column 2: Scenic Eclipse */}
-                    <div className="lux-brand-column">
-                        <div className="lux-brand-header-box lux-bg-navy">
-                            <h3 className="lux-brand-name lux-text-white">Scenic Eclipse</h3>
-                            <p className="lux-brand-tagline lux-text-white">Expedition Discovery</p>
+                    <div className="lux-gallery-group">
+                      <div className="lux-gallery-item">
+                        <img src={Emerald2} alt="Emerald Yachts pool deck" />
+                        <div className="lux-img-overlay">
+                          <span>Pool Deck</span>
                         </div>
-
-                        <div className="lux-comparison-gallery">
-                            <div className="lux-gallery-item lux-feat">
-                                <img src={Scenic1} alt="Scenic Eclipse expedition yacht" />
-                                <div className="lux-img-overlay"><span>Expedition Yacht</span></div>
-                            </div>
-                            <div className="lux-gallery-group">
-                                <div className="lux-gallery-item">
-                                    <img src={Scenic2} alt="Scenic Eclipse discovery lounge" />
-                                    <div className="lux-img-overlay"><span>Discovery Lounge</span></div>
-                                </div>
-                                <div className="lux-gallery-item">
-                                    <img src={Scenic3} alt="Scenic Eclipse observation deck" />
-                                    <div className="lux-img-overlay"><span>Observation Deck</span></div>
-                                </div>
-                            </div>
-                            <div className="lux-gallery-item">
-                                <img src={Scenic4} alt="Scenic Eclipse suite interior" />
-                                <div className="lux-img-overlay"><span>Premium Suites</span></div>
-                            </div>
-                            <div className="lux-gallery-group">
-                                <div className="lux-gallery-item">
-                                    <img src={Scenic5} alt="Scenic Eclipse polar" />
-                                    <div className="lux-img-overlay"><span>Polar Expeditions</span></div>
-                                </div>
-                                <div className="lux-gallery-item">
-                                    <img src={Scenic6} alt="Scenic Eclipse adventure" />
-                                    <div className="lux-img-overlay"><span>Adventure Experiences</span></div>
-                                </div>
-                            </div>
+                      </div>
+                      <div className="lux-gallery-item">
+                        <img src={Emerald3} alt="Emerald Yachts dining" />
+                        <div className="lux-img-overlay">
+                          <span>Fine Dining</span>
                         </div>
+                      </div>
                     </div>
-
+                    <div className="lux-gallery-item">
+                      <img src={Emerald4} alt="Emerald Yachts lounge" />
+                      <div className="lux-img-overlay">
+                        <span>Elegant Lounges</span>
+                      </div>
+                    </div>
+                    <div className="lux-gallery-group">
+                      <div className="lux-gallery-item">
+                        <img src={Emerald5} alt="Emerald Yachts view" />
+                        <div className="lux-img-overlay">
+                          <span>Ocean Views</span>
+                        </div>
+                      </div>
+                      <div className="lux-gallery-item">
+                        <img src={Emerald6} alt="Emerald Yachts coastal" />
+                        <div className="lux-img-overlay">
+                          <span>Coastal Journeys</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Final Comparison Note */}
-                <div className="lux-comparison-footer">
-                    <div className="lux-editorial-note-white">
-                        <p className="lux-p">
-                            <strong>Key Difference:</strong> Emerald Yachts focus on warm-weather coastal cruising with a relaxed, social atmosphere, while Scenic Eclipse specializes in expedition travel to remote destinations like Antarctica and the Arctic.
-                        </p>
+                {/* Column 2: Scenic Eclipse */}
+                <div className="lux-brand-column">
+                  <div className="lux-brand-header-box lux-bg-navy">
+                    <h3 className="lux-brand-name lux-text-white">
+                      Scenic Eclipse
+                    </h3>
+                    <p className="lux-brand-tagline lux-text-white">
+                      Expedition Discovery
+                    </p>
+                  </div>
+
+                  <div className="lux-comparison-gallery">
+                    <div className="lux-gallery-item lux-feat">
+                      <img
+                        src={Scenic1}
+                        alt="Scenic Eclipse expedition yacht"
+                      />
+                      <div className="lux-img-overlay">
+                        <span>Expedition Yacht</span>
+                      </div>
                     </div>
+                    <div className="lux-gallery-group">
+                      <div className="lux-gallery-item">
+                        <img
+                          src={Scenic2}
+                          alt="Scenic Eclipse discovery lounge"
+                        />
+                        <div className="lux-img-overlay">
+                          <span>Discovery Lounge</span>
+                        </div>
+                      </div>
+                      <div className="lux-gallery-item">
+                        <img
+                          src={Scenic3}
+                          alt="Scenic Eclipse observation deck"
+                        />
+                        <div className="lux-img-overlay">
+                          <span>Observation Deck</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="lux-gallery-item">
+                      <img src={Scenic4} alt="Scenic Eclipse suite interior" />
+                      <div className="lux-img-overlay">
+                        <span>Premium Suites</span>
+                      </div>
+                    </div>
+                    <div className="lux-gallery-group">
+                      <div className="lux-gallery-item">
+                        <img src={Scenic5} alt="Scenic Eclipse polar" />
+                        <div className="lux-img-overlay">
+                          <span>Polar Expeditions</span>
+                        </div>
+                      </div>
+                      <div className="lux-gallery-item">
+                        <img src={Scenic6} alt="Scenic Eclipse adventure" />
+                        <div className="lux-img-overlay">
+                          <span>Adventure Experiences</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              {/* Final Comparison Note */}
+              <div className="lux-comparison-footer">
+                <div className="lux-editorial-note-white">
+                  <p className="lux-p">
+                    <strong>Key Difference:</strong> Emerald Yachts focus on
+                    warm-weather coastal cruising with a relaxed, social
+                    atmosphere, while Scenic Eclipse specializes in expedition
+                    travel to remote destinations like Antarctica and the
+                    Arctic.
+                  </p>
+                </div>
+              </div>
             </main>
-
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* SECTION 11 */}
       <section className="Yachts_expert_section">
@@ -785,11 +835,10 @@ function YachtsComparison() {
       {/* COMBINED SECTION 14 & 15 */}
       <section className="Yachts_author_section">
         <div className="Yachts_author_inner Yachts_author_split">
-          
           {/* LEFT CONTENT */}
           <div className="Yachts_author_content Yachts_author_content_new">
             <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
-            
+
             <p className="Yachts_author_desc">
               Angela Hughes has over four decades in the travel industry and has
               traveled to 121 countries and territories.
@@ -801,28 +850,35 @@ function YachtsComparison() {
 
             {/* First Box: Benefits */}
             <div className="Yachts_author_box">
-                <p className="Yachts_benefit_title">Clients benefit from:</p>
-                <div className="Yachts_benefit_list">
-                  <div className="Yachts_benefit_item">
-                    <i className="fas fa-check-circle"></i> Clear positioning across yacht brands
-                  </div>
-                  <div className="Yachts_benefit_item">
-                    <i className="fas fa-check-circle"></i> Access to preferred inventory
-                  </div>
-                  <div className="Yachts_benefit_item">
-                    <i className="fas fa-check-circle"></i> Full itinerary coordination
-                  </div>
-                  <div className="Yachts_benefit_item">
-                    <i className="fas fa-check-circle"></i> Ongoing support
-                  </div>
+              <p className="Yachts_benefit_title">Clients benefit from:</p>
+              <div className="Yachts_benefit_list">
+                <div className="Yachts_benefit_item">
+                  <i className="fas fa-check-circle"></i> Clear positioning
+                  across yacht brands
                 </div>
+                <div className="Yachts_benefit_item">
+                  <i className="fas fa-check-circle"></i> Access to preferred
+                  inventory
+                </div>
+                <div className="Yachts_benefit_item">
+                  <i className="fas fa-check-circle"></i> Full itinerary
+                  coordination
+                </div>
+                <div className="Yachts_benefit_item">
+                  <i className="fas fa-check-circle"></i> Ongoing support
+                </div>
+              </div>
             </div>
 
             {/* Second Box: Planned and Curated */}
             <div className="Yachts_author_box">
-              <h3 className="Yachts_box_title">Planned and Curated by Angela Hughes</h3>
-              <p className="Yachts_box_subtitle">CEO, TRIPS & SHIPS LUXURY TRAVEL</p>
-              
+              <h3 className="Yachts_box_title">
+                Planned and Curated by Angela Hughes
+              </h3>
+              <p className="Yachts_box_subtitle">
+                CEO, TRIPS & SHIPS LUXURY TRAVEL
+              </p>
+
               <div className="Yachts_box_grid">
                 <div className="Yachts_box_grid_item">
                   <i className="fas fa-award"></i> 40+ years of experience
@@ -831,14 +887,15 @@ function YachtsComparison() {
                   <i className="fas fa-globe"></i> 121 countries traveled
                 </div>
                 <div className="Yachts_box_grid_item">
-                  <i className="fas fa-star"></i> Luxury Travel Influencer of the Year (2024)
+                  <Medal size={20} color="#2f4a6d" /> Luxury Travel Influencer
+                  of the Year (2024)
                 </div>
                 <div className="Yachts_box_grid_item">
-                  <i className="fas fa-crown"></i> Most Influential Women in Travel (2026)
+                  <i className="fas fa-crown"></i> Most Influential Women in
+                  Travel (2026)
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* RIGHT IMAGE */}
@@ -851,20 +908,18 @@ function YachtsComparison() {
       {/* VIDEO PRE FAQ SECTION */}
       <section className="Yachts_video_section">
         <div className="Yachts_video_inner">
-          <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://www.youtube.com/embed/B90qoiaHDaE?si=yeOL4rhI-GjJ8lKt" 
-            title="YouTube video player" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/B90qoiaHDaE?si=yeOL4rhI-GjJ8lKt"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
       </section>
-
-
 
       {/* FAQ SECTION */}
       <section className="Scenic-faq-section">
@@ -875,8 +930,9 @@ function YachtsComparison() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
-                  }`}
+                className={`Scenic-faq-item ${
+                  activeFaq === index ? "Scenic-active" : ""
+                }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

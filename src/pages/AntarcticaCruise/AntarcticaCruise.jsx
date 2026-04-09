@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
 import myImage from "../../assets/image.jpg";
-import { Award, Globe, Shield, Star } from "lucide-react";
+import { Award, Globe, Medal, Shield, Star } from "lucide-react";
 import anta1 from "../../assets/antarctica-cruise-cost/anta1.jpg";
 import anta2 from "../../assets/antarctica-cruise-cost/anta2.jpg";
 import anta3 from "../../assets/antarctica-cruise-cost/anta3.jpg";
@@ -499,19 +499,19 @@ const AntarcticaCostPage = () => {
 
                 <div className="anta_author_highlights">
                   <div className="anta_author_tag">
-                    <Star size={14} className="anta_icon" />
+                    <i className="fas fa-award"></i>
                     <span>40+ years of expertise</span>
                   </div>
                   <div className="anta_author_tag">
-                    <Globe size={14} className="anta_icon" />
+                    <i className="fas fa-globe-americas"></i>
                     <span>121 countries traveled</span>
                   </div>
                   <div className="anta_author_tag">
-                    <Award size={14} className="anta_icon" />
+                    <Medal />
                     <span>Luxury Travel Influencer of the Year</span>
                   </div>
                   <div className="anta_author_tag">
-                    <Award size={14} className="anta_icon" />
+                    <i className="fas fa-crown"></i>
                     <span>Most Influential Women in Travel</span>
                   </div>
                 </div>
@@ -827,7 +827,7 @@ const AntarcticaCostPage = () => {
             <h2>Experience the Scale of Antarctica</h2>
             <p>A visual journey through the world's most remote wilderness</p>
           </div>
-          
+
           <div className="anta_video_card">
             <div className="anta_video_wrapper">
               <iframe

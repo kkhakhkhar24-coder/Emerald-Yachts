@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, Medal } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import "../ScenicAntarctica/ScenicAntarctica.css";
@@ -286,25 +286,17 @@ function ScenicAntarctica() {
         </div>
       </section>
 
-
-
-
-
-
-
-      
-
       {/* ================= NEW VIDEO SECTION ================= */}
       <section className="Scenic_youtube_video_section">
         <div className="Scenic_youtube_video_inner">
-          <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://www.youtube.com/embed/MlndaJ0LN7E?si=v-S_FIpbcGGPpfBH" 
-            title="YouTube video player" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/MlndaJ0LN7E?si=v-S_FIpbcGGPpfBH"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
@@ -383,21 +375,30 @@ function ScenicAntarctica() {
             <div className="Scenic_video_item">
               <h3>Wildlife of Antarctica</h3>
               <video autoPlay muted loop playsInline controls>
-                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACNt3LrAxynWJPY-CRQRbH8/Scenic/Scenic%20Ocean/Videos/Antarctica/Reel%20Format/Wildlife%20Of%20Antarctica%20Social%20Reel%201%20-%20World%20Wildlife%20Day%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ba372ruc&raw=1" type="video/mp4" />
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACNt3LrAxynWJPY-CRQRbH8/Scenic/Scenic%20Ocean/Videos/Antarctica/Reel%20Format/Wildlife%20Of%20Antarctica%20Social%20Reel%201%20-%20World%20Wildlife%20Day%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ba372ruc&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
             <div className="Scenic_video_item">
               <h3>Antarctica & East Antarctica</h3>
               <video autoPlay muted loop playsInline controls>
-                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AK_BXGRAgNIVFjkeht6x-hw/Scenic/Scenic%20Ocean/Videos/Antarctica/30s-Antarctica%20and%20East%20Antarctica_Brochure%20video_Gen_CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=f9qak7ti&raw=1" type="video/mp4" />
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AK_BXGRAgNIVFjkeht6x-hw/Scenic/Scenic%20Ocean/Videos/Antarctica/30s-Antarctica%20and%20East%20Antarctica_Brochure%20video_Gen_CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=f9qak7ti&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
             <div className="Scenic_video_item">
               <h3>Exploring East Antarctica & Ross Sea</h3>
               <video autoPlay muted loop playsInline controls>
-                <source src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/APLYAQLs3hUko6hSJWqpcIo/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20_%20%20Exploring%20East%20Antarctica%20and%20the%20Ross%20Sea.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ovtwu8dc&raw=1" type="video/mp4" />
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/APLYAQLs3hUko6hSJWqpcIo/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20_%20%20Exploring%20East%20Antarctica%20and%20the%20Ross%20Sea.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ovtwu8dc&raw=1"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -577,7 +578,7 @@ function ScenicAntarctica() {
                     <span>121 countries traveled</span>
                   </div>
                   <div className="Scenic_curated_badge_item">
-                    <i className="fas fa-star"></i>
+                    <Medal size={20} color="#2f4a6d" />
                     <span>Luxury Travel Influencer of the Year</span>
                   </div>
                   <div className="Scenic_curated_badge_item">
@@ -700,8 +701,9 @@ function ScenicAntarctica() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
-                  }`}
+                className={`Scenic-faq-item ${
+                  activeFaq === index ? "Scenic-active" : ""
+                }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">
