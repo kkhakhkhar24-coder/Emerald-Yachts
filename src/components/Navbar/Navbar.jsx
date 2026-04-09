@@ -64,6 +64,12 @@ const Navbar = () => {
               >
                 Emerald Yachts vs Ritz-Carlton Yacht Collection
               </Link>
+              <Link
+                to="/luxury-yacht-cruises"
+                className="nav-dropdown-single"
+              >
+                Luxury Yacht Cruises
+              </Link>
             </div>
           </div>
         </div>
@@ -138,6 +144,12 @@ const Navbar = () => {
               className="nav-dropdown-single"
             >
               Emerald Yachts vs Ritz-Carlton Yacht Collection
+            </Link>
+            <Link
+              to="/luxury-yacht-cruises"
+              className="nav-dropdown-single"
+            >
+              Luxury Yacht Cruises
             </Link>
             <span className="mobile-dropdown-divider"></span>
           </div>

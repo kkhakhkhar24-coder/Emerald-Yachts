@@ -1,4 +1,3 @@
-import React from "react";
 import EmeraldYachts from "../src/pages/EmeraldYachts/EmeraldYachts";
 import DrakePassagePage from "../src/pages/DrakePassagePage/DrakePassagePage";
 import ScenicVSSilversea from "../src/pages/ScenicVSSilversea/ScenicVSSilversea";
@@ -11,9 +10,9 @@ import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import LuxuryTravel from "./pages/LuxuryTravel/LuxuryTravel";
-import Navbar from "./components/Navbar/Navbar";
 import ScenicVSFourSeasonsYachts from "./pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts";
 import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldvsritzcarlton";
+import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
 
 function App() {
   return (
@@ -53,6 +52,10 @@ function App() {
           <Route
             path="/emerald-yachts-vs-ritz-carlton-yacht-collection"
             element={<EmeraldVsRitzCarltonPage />}
+          ></Route>
+          <Route
+            path="/luxury-yacht-cruises"
+            element={<LuxuryYachtCruises />}
           ></Route>
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,2832 @@
+/* ========================================
+   ROOT VARIABLES - YACHT CRUISES PAGE
+   ======================================== */
+
+:root {
+    /* Color Palette */
+    --navy: #274472;
+    --navy-light: #274472cc;
+
+    /* Background Variations */
+    --bg-white: #ffffff;
+    --bg-soft: rgb(231, 243, 245);
+    --bg-dark: #0f1c2e;
+    --bg-dark2: #1c2f4a;
+
+    /* Font Families */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* Base Body Setup */
+body {
+    font-family: var(--font-body) !important;
+    color: var(--navy);
+    background: var(--bg-white);
+    overflow-x: hidden;
+    font-size: 18px;
+    /* Desktop Base P size */
+}
+
+/* Global Typography for the Page */
+.yacht-hero h1,
+.lux-h2,
+.yacht-section-h2,
+.lux-versus-title,
+.lux-cta-main-title {
+    font-family: var(--font-display) !important;
+}
+
+.yacht-hero-lead,
+.yacht-section-p-clean,
+.lux-p,
+.yacht-expert-paragraph {
+    font-family: var(--font-body) !important;
+    font-size: 18px !important;
+    /* Desktop P size */
+    line-height: 1.8 !important;
+}
+
+h2.lux-h2,
+h2.yacht-section-h2 {
+    font-size: 48px !important;
+    /* Desktop H2 size */
+}
+
+.yacht-hero h1 {
+    font-size: 60px !important;
+    /* Desktop H1 size */
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.yacht-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px 100px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    animation: yacht-bgSlide 18s infinite ease-in-out;
+    overflow: hidden;
+}
+
+.yacht-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+}
+
+/* Animated particles effect */
+.yacht-hero::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: yacht-snowfall 60s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes yacht-bgSlide {
+
+    0%,
+    100% {
+        background-image: url('../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_Santo_Stefano_23262.jpg');
+    }
+
+    33% {
+        background-image: url('../../assets/LuxuryYachtCruises/SSC_RA_Spain_Palma_De_Mallorca_A059C0056.jpg');
+    }
+
+    66% {
+        background-image: url('../../assets/LuxuryYachtCruises/SSC_SM_Turkey_Kusadasi_0055.jpg');
+    }
+}
+
+@keyframes yacht-snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100px) rotate(5deg);
+    }
+}
+
+.yacht-hero-content {
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.yacht-hero h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    font-size: 60px !important;
+    /* Desktop */
+}
+
+.yacht-hero-eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 4px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    margin-bottom: 24px;
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.yacht-hero-sub {
+    font-size: 18px !important;
+    font-style: italic !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin-bottom: 35px;
+    font-weight: 300 !important;
+    letter-spacing: 0.5px !important;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.yacht-hero-lead {
+    font-size: 18px !important;
+    /* Desktop */
+    line-height: 1.8 !important;
+    font-weight: 300 !important;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.yacht-hero-note {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    margin-bottom: 16px;
+    transition: all 0.4s ease;
+}
+
+.yacht-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.yacht-hero-details.expanded {
+    max-height: 500px;
+}
+
+.yacht-hero-details .yacht-hero-note {
+    margin: 0 auto 14px auto;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.5s ease;
+}
+
+.yacht-hero-details.expanded .yacht-hero-note {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yacht-hero-read-more {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.yacht-hero-read-more:hover {
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
+
+.yacht-hero-btns {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.yacht-btn-primary {
+    background: #ffffff;
+    color: #000000;
+    padding: 18px 44px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.yacht-btn-primary:hover {
+    background: #274472;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.yacht-btn-secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    padding: 18px 44px;
+    cursor: pointer;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase !important;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.yacht-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   QUICK COMPARISON STRIP (SECTION)
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-bg-soft-blue {
+    background-color: rgb(231, 243, 245);
+}
+
+.lux-bg-soft {
+    background-color: #f8fafc;
+}
+
+.lux-strip-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Grid Container --- */
+.lux-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3x3 (for 6 items) on Desktop */
+    gap: 40px;
+    width: 100%;
+}
+
+.lux-strip-card {
+    background-color: #ffffff;
+    padding: 40px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+}
+
+.lux-strip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+/* --- Icon & Content --- */
+.lux-strip-icon-box {
+    color: #274472;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lux-strip-brand {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #274472;
+    margin: 0 0 10px 0;
+    line-height: 1.2 !important;
+}
+
+.lux-strip-desc {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    color: #274472;
+    opacity: 0.6;
+    margin-bottom: 20px !important;
+    line-height: 1.4 !important;
+    min-height: 36px;
+    /* Balance heights */
+}
+
+/* --- Price Area --- */
+.lux-strip-price-wrap {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.lux-strip-price {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #274472;
+}
+
+.lux-strip-unit {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+/* ========================================
+   RESPONSIVE (STRICT SIZE RULES)
+   ======================================== */
+
+/* ========================================
+   SHARED SECTION STYLES
+   ======================================== */
+
+.yacht-section,
+.lux-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.yacht-section-inner,
+.lux-container-wide {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.yacht-bg-white {
+    background: var(--bg-white);
+}
+
+.yacht-bg-soft {
+    background: var(--bg-soft);
+}
+
+/* ========================================
+   HEADINGS & TYPOGRAPHY
+   ======================================== */
+
+.yacht-section-h2 {
+    font-family: var(--font-display) !important;
+    font-size: 48px !important;
+    /* Desktop */
+    font-weight: 500 !important;
+    color: var(--navy);
+    margin-bottom: 30px;
+    line-height: 1.2 !important;
+    position: relative;
+}
+
+.yacht-section-h2.yacht-left-bar {
+    text-align: left !important;
+}
+
+.yacht-section-h2.yacht-left-bar::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 30px 0 0 0;
+    border-radius: 2px;
+}
+
+.yacht-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+
+.yacht-section-p-clean {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* Desktop */
+    line-height: 1.8 !important;
+    color: #274472;
+    font-weight: 300 !important;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+.yacht-text-white {
+    color: #ffffff !important;
+}
+
+/* ========================================
+   SECTION: INTRO (PROPER DESIGN)
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-intro-section {
+    padding: 60px 20px;
+    /* Global Desktop Padding */
+    background-color: #ffffff;
+}
+
+/* --- Sticky Grid Setup --- */
+.lux-sticky-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.lux-side-sticky {
+    height: 100%;
+}
+
+.lux-sticky-element {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 140px;
+    text-align: left;
+}
+
+/* --- Section Title --- */
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* DESKTOP */
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+}
+
+.lux-navy-divider-left {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Content Column --- */
+.lux-intro-text-wrap {
+    margin-bottom: 40px;
+}
+
+.lux-lead-text {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    line-height: 1.4 !important;
+    color: #274472;
+    margin-bottom: 40px !important;
+}
+
+.lux-statement-row {
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.lux-statement-row .lux-p {
+    font-weight: 500 !important;
+    font-style: italic !important;
+    margin: 0 !important;
+}
+
+.lux-editorial-box {
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue */
+    padding: 40px;
+    border-radius: 4px;
+    margin: 40px 0;
+}
+
+.lux-highlight-text {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+}
+
+/* --- Minimal Visual Element --- */
+.lux-minimal-visual-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0.3;
+}
+
+.lux-line-art {
+    width: 150px;
+    height: 1px;
+    background-color: #274472;
+    margin-bottom: 10px;
+}
+
+.lux-visual-label {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #274472;
+}
+
+
+
+/* ========================================
+   PRICING SECTION
+   ======================================== */
+
+.yacht-pricing-section {
+    padding: 60px 20px;
+}
+
+.yacht-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.yacht-pricing-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.yacht-pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.yacht-pricing-featured {
+    border: 2px solid #274472;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.12);
+}
+
+.yacht-pricing-badge {
+    display: inline-block;
+    background: rgb(231, 243, 245);
+    color: #274472;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 20px;
+}
+
+.yacht-pricing-badge-featured {
+    background: #274472;
+    color: #ffffff;
+}
+
+.yacht-pricing-card h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    color: #274472;
+    margin-bottom: 15px;
+    font-weight: 500 !important;
+}
+
+.yacht-pricing-brand {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    color: #274472;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.yacht-pricing-amount {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 32px !important;
+    color: #274472;
+    font-weight: 700 !important;
+    margin-bottom: 8px;
+}
+
+.yacht-pricing-unit {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    color: #274472;
+    opacity: 0.6;
+}
+
+/* ========================================
+   SECTION: WHERE CLIENTS GET IT WRONG
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-pitfalls-modern {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.lux-container-wide {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- Sticky Grid Setup --- */
+.lux-sticky-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.lux-side-sticky {
+    height: 100%;
+}
+
+.lux-sticky-element {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 140px;
+    text-align: left;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* DESKTOP H2 */
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+}
+
+.lux-navy-divider-left {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lux-sticky-summary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+/* --- Right Column Intelligence Flow --- */
+.lux-assumption-text {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    line-height: 1.4 !important;
+    color: #274472;
+    font-weight: 500 !important;
+    text-align: center;
+}
+
+.lux-impact-statement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 60px;
+}
+
+.lux-impact-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(39, 68, 114, 0.2);
+}
+
+.lux-impact-word {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+    color: #274472;
+}
+
+/* --- Correction Grid --- */
+.lux-correction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.lux-correction-card {
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue Wash */
+    padding: 40px 35px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.lux-correction-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    border-color: #274472;
+}
+
+.lux-card-num {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+
+.lux-correction-card .lux-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* DESKTOP P */
+    color: #274472 !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    margin: 0;
+}
+
+/* --- Final Alignment Bar --- */
+.lux-alignment-bar {
+    background-color: #274472;
+    padding: 3px;
+    /* Border effect */
+    border-radius: 4px;
+}
+
+.lux-alignment-inner {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.lux-alignment-inner .lux-p {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+}
+
+/* ========================================
+   RESPONSIVE (STRICT SIZE RULES)
+   ======================================== */
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+    .lux-pitfalls-modern {
+        padding: 50px 15px;
+    }
+
+    .lux-sticky-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .lux-sticky-element {
+        position: static;
+        text-align: center;
+    }
+
+    .lux-h2 {
+        font-size: 28px !important;
+        text-align: center !important;
+    }
+
+    .lux-navy-divider-left {
+        margin: 25px auto;
+    }
+
+    .lux-p {
+        font-size: 17px !important;
+    }
+
+    .lux-assumption-text {
+        font-size: 22px !important;
+    }
+
+    .lux-correction-grid {
+        gap: 20px;
+    }
+
+    .lux-correction-card {
+        padding: 30px 25px;
+    }
+}
+
+/* MOBILE (768px and below) */
+@media (max-width: 768px) {
+    .lux-correction-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-pitfalls-modern {
+        padding: 50px 15px;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-p {
+        font-size: 16px !important;
+    }
+
+    .lux-impact-word {
+        font-size: 20px !important;
+    }
+
+    .lux-alignment-inner .lux-p {
+        font-size: 18px !important;
+    }
+}
+
+/* ========================================
+   SECTION 03: BRAND PORTFOLIO GRID
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-bg-soft-blue {
+    background-color: rgb(231, 243, 245);
+}
+
+.lux-grid-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Portfolio Grid Architecture --- */
+.lux-brand-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cards per row */
+    gap: 30px;
+}
+
+.lux-portfolio-card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-top: 4px solid #274472;
+    /* Top-accent Navy */
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+}
+
+.lux-portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+/* Card Heading */
+.lux-portfolio-top {
+    padding: 30px 25px 20px 25px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lux-portfolio-name {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #274472;
+    line-height: 1.2 !important;
+    margin: 0;
+}
+
+/* Card List Body */
+.lux-portfolio-body {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.lux-portfolio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lux-portfolio-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.lux-portfolio-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #274472;
+    font-size: 14px !important;
+    opacity: 0.4;
+}
+
+.lux-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* DESKTOP P */
+    font-weight: 300 !important;
+    color: #274472 !important;
+    margin: 0;
+    line-height: 1.5 !important;
+}
+
+
+
+/* ========================================
+   SECTION 04: CLIENT SCENARIOS
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-bg-white {
+    background-color: #ffffff;
+}
+
+/* --- Sticky Layout --- */
+.lux-sticky-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.lux-side-sticky {
+    height: 100%;
+}
+
+.lux-sticky-element {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 140px;
+    text-align: left;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* Desktop Size */
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.1 !important;
+}
+
+.lux-navy-divider-left {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin-top: 30px auto;
+}
+
+.lux-sticky-desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+/* --- Scenario Grid --- */
+.lux-scenario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 Column Grid requested */
+    gap: 25px;
+}
+
+.lux-scenario-card {
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue Wash */
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.lux-scenario-card:hover {
+    transform: translateY(-5px);
+}
+
+.lux-scenario-full-width {
+    grid-column: 1 / -1;
+}
+
+.lux-scenario-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #274472;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.lux-scenario-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    color: #274472;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 30px;
+    min-height: 56px;
+    /* Balance grid row heights */
+}
+
+/* --- Recommendation Logic --- */
+.lux-recommendation-box {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.lux-rec-tag {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #274472;
+    margin-bottom: 8px;
+}
+
+.lux-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* Desktop Size */
+    font-weight: 600 !important;
+    /* Specific weight for recommendation results */
+    color: #274472 !important;
+    margin: 0;
+}
+
+
+
+/* ========================================
+   SECTION 05: YACHT VS TRADITIONAL
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-bg-soft-blue {
+    background-color: rgb(231, 243, 245);
+}
+
+.lux-vs-section {
+    padding: 60px 20px;
+    /* Global Desktop Padding */
+    overflow: hidden;
+}
+
+.lux-container-wide {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- Header Styling --- */
+.lux-vs-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* Desktop Size */
+    font-weight: 500 !important;
+    color: #274472 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+}
+
+.lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Comparison Grid Architecture --- */
+.lux-vs-container {
+    position: relative;
+    width: 100%;
+}
+
+/* "VS" Background Element */
+.lux-vs-background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif !important;
+    font-size: 200px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    opacity: 0.03;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.lux-vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.lux-vs-card {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.06);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    transition: transform 0.4s ease;
+}
+
+.lux-vs-card:hover {
+    transform: translateY(-10px);
+}
+
+.lux-card-indicator {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #274472;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.lux-card-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 32px !important;
+    color: #274472;
+    font-weight: 500 !important;
+    margin: 0;
+}
+
+.lux-card-line {
+    width: 40px;
+    height: 1px;
+    background-color: #274472;
+    margin: 30px 0;
+    opacity: 0.3;
+}
+
+/* --- List Styling --- */
+.lux-vs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lux-vs-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.lux-vs-bullet {
+    color: #274472;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-top: 2px;
+}
+
+.lux-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* Desktop Size */
+    font-weight: 300 !important;
+    line-height: 1.6 !important;
+    color: #274472 !important;
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE (STRICT SIZE RULES)
+   ======================================== */
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+    .lux-vs-section {
+        padding: 50px 15px;
+    }
+
+    .lux-h2 {
+        font-size: 28px !important;
+    }
+
+    .lux-p {
+        font-size: 17px !important;
+    }
+
+    .lux-vs-grid {
+        gap: 20px;
+    }
+
+    .lux-vs-card {
+        padding: 50px 35px;
+    }
+
+    .lux-card-h3 {
+        font-size: 26px !important;
+    }
+
+    .lux-vs-background-text {
+        font-size: 120px !important;
+    }
+}
+
+/* MOBILE (768px and below) */
+@media (max-width: 768px) {
+    .lux-vs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-vs-background-text {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-vs-section {
+        padding: 50px 15px;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-p {
+        font-size: 16px !important;
+    }
+
+    .lux-vs-card {
+        padding: 40px 25px;
+    }
+
+    .lux-card-h3 {
+        font-size: 22px !important;
+    }
+}
+
+/* ========================================
+   SECTION 06: AUTHORITY (REFINED & SMALL IMG)
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-authority-refined {
+    padding: 60px 20px;
+    /* Global Desktop Padding */
+    background-color: #ffffff;
+}
+
+.lux-authority-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    /* Text heavy | Image light */
+    gap: 100px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Left Column: Content --- */
+.lux-authority-header {
+    margin-bottom: 40px;
+}
+
+.lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* DESKTOP H2 */
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+}
+
+.lux-navy-divider-short {
+    width: 50px;
+    height: 3px;
+    background-color: #274472;
+    margin: 30px 0;
+}
+
+.lux-authority-sub {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #274472;
+    opacity: 0.7;
+}
+
+.lux-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* DESKTOP P */
+    font-weight: 300 !important;
+    line-height: 1.8 !important;
+    color: #274472 !important;
+    margin-bottom: 25px;
+}
+
+/* Quote styling */
+.lux-expert-quote-box {
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue */
+    padding: 40px;
+    border-radius: 4px;
+    margin: 40px 0;
+    border-left: 4px solid #274472;
+}
+
+.lux-serif-quote {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 21px !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+.lux-final-note {
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+    opacity: 0.9;
+}
+
+/* --- Right Column: Small Image Frame --- */
+.lux-authority-image-area {
+    display: flex;
+    justify-content: center;
+}
+
+.lux-small-portrait-frame {
+    position: relative;
+    width: 320px;
+    /* Small image constraint */
+    padding: 20px;
+}
+
+.lux-portrait-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue Accent */
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.lux-small-img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.15);
+    display: block;
+}
+
+/* ========================================
+   RESPONSIVE (STRICT SIZE RULES)
+   ======================================== */
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+    .lux-authority-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .lux-h2 {
+        font-size: 28px !important;
+    }
+
+    .lux-p {
+        font-size: 17px !important;
+    }
+
+    .lux-navy-divider-short {
+        margin: 25px auto;
+    }
+
+    .lux-expert-quote-box {
+        border-left: none;
+        border-top: 4px solid #274472;
+    }
+
+    .lux-serif-quote {
+        font-size: 19px !important;
+    }
+
+    .lux-small-portrait-frame {
+        width: 280px;
+    }
+}
+
+/* MOBILE (480px) */
+@media (max-width: 480px) {
+    .lux-authority-refined {
+        padding: 50px 15px;
+    }
+
+    .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-p {
+        font-size: 16px !important;
+    }
+
+    .lux-small-portrait-frame {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .lux-small-img {
+        height: 350px;
+    }
+
+    .lux-expert-quote-box {
+        padding: 30px 20px;
+    }
+}
+
+/* ========================================
+   FAQ SECTION
+   ======================================== */
+
+.yacht-faq-fullwidth {
+    padding: 60px 20px;
+}
+
+.yacht-faq-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.yacht-faq-intro-text {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+    color: #274472;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 400 !important;
+    opacity: 0.8;
+}
+
+/* ========================================
+   FAQ SECTION: ScenicVSFourSeasonsYachts Style
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-container-narrow {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.lux-faq-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.lux-faq-header .lux-h2 {
+    margin-bottom: 20px;
+}
+
+.lux-faq-intro {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: rgba(39, 68, 114, 0.7) !important;
+    line-height: 1.6 !important;
+    margin-top: 20px;
+}
+
+.lux-faq-list {
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    margin-top: 36px;
+}
+
+.lux-faq-item {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.lux-faq-item:hover {
+    background: rgba(231, 243, 245, 0.55);
+}
+
+.lux-faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8px;
+    gap: 18px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    line-height: 1.45 !important;
+}
+
+.lux-faq-icon {
+    color: #274472;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.lux-faq-item.lux-open .lux-faq-icon {
+    transform: rotate(180deg);
+}
+
+.lux-faq-a {
+    padding: 0 8px 22px;
+}
+
+.lux-faq-a-inner {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    color: rgba(39, 68, 114, 0.82) !important;
+    font-weight: 300 !important;
+}
+
+/* ========================================
+   IMAGE GALLERY SECTION: MODERN BENTO GRID
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-gallery-section {
+    padding: 40px 20px; /* Reduced padding for cleaner look */
+    background: #ffffff;
+}
+
+.lux-gallery-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lux-gallery-header {
+    text-align: center;
+    margin-bottom: 35px; /* Reduced space */
+}
+
+.lux-gallery-header .lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #274472;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.lux-gallery-header .lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    margin-bottom: 0;
+    line-height: 1.1 !important;
+}
+
+.lux-gallery-header .lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background: #274472;
+    margin: 20px auto; /* Reduced space */
+    border-radius: 3px;
+}
+
+.lux-gallery-subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    color: #274472;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-weight: 300 !important;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+/* Uniform 3-Column Image Grid */
+.lux-gallery-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px; /* Generous gap for clean look */
+}
+
+/* Gallery Items */
+.lux-gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lux-gallery-feature {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.lux-gallery-tall {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.lux-gallery-image-box {
+    aspect-ratio: 4 / 3; /* Ensure uniform size */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lux-gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.lux-gallery-item:hover .lux-gallery-img {
+    transform: scale(1.1); /* Subtle zoom */
+}
+
+/* Overlay - Signature Slide-up Entrace (Four Seasons Style) */
+.lux-gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.95) 0%, rgba(39, 68, 114, 0.4) 50%, transparent 100%);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    z-index: 2;
+}
+
+.lux-gallery-item:hover .lux-gallery-overlay {
+    opacity: 1; /* Fade in on hover */
+}
+
+.lux-gallery-content {
+    transform: translateY(20px); /* Position slightly below */
+    transition: transform 0.4s ease;
+    text-align: left !important;
+    width: 100%;
+}
+
+.lux-gallery-item:hover .lux-gallery-content {
+    transform: translateY(0); /* Slide up on hover */
+}
+
+/* Glassmorphism Badge */
+.lux-gallery-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase !important;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.lux-gallery-h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 28px !important; /* Larger premium size */
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin-bottom: 8px;
+    line-height: 1.2 !important;
+}
+
+.lux-gallery-item-p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
+}
+
+/* ========================================
+   RESPONSIVE (STRICT SIZE RULES)
+   ======================================== */
+
+/* TABLET (1024px) */
+@media (max-width: 1024px) {
+    .lux-gallery-section {
+        padding: 50px 15px;
+    }
+
+    .lux-gallery-header {
+        margin-bottom: 40px;
+    }
+
+    .lux-gallery-header .lux-h2 {
+        font-size: 28px !important;
+    }
+
+    .lux-gallery-bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 14px;
+    }
+
+    .lux-gallery-feature {
+        grid-column: span 2;
+        grid-row: span 1;
+        min-height: 320px;
+    }
+
+    .lux-gallery-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+        min-height: 260px;
+    }
+
+    .lux-gallery-item:not(.lux-gallery-feature):not(.lux-gallery-tall) {
+        min-height: 260px;
+    }
+}
+
+/* MOBILE (768px and below) */
+@media (max-width: 768px) {
+    .lux-gallery-section {
+        padding: 48px 22px;
+    }
+
+    .lux-gallery-header {
+        margin-bottom: 35px;
+    }
+
+    .lux-gallery-header .lux-h2 {
+        font-size: 24px !important;
+    }
+
+    .lux-gallery-subtitle {
+        font-size: 16px;
+    }
+
+    .lux-gallery-bento-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lux-gallery-feature,
+    .lux-gallery-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .lux-gallery-item:not(.lux-gallery-feature):not(.lux-gallery-tall) {
+        min-height: auto;
+    }
+
+    .lux-gallery-h3 {
+        font-size: 20px !important;
+    }
+
+    .lux-gallery-item-p {
+        font-size: 15px !important;
+    }
+
+    .lux-gallery-overlay {
+        padding: 24px 20px 20px;
+    }
+}
+
+/* Small Mobile: <480px */
+@media (max-width: 480px) {
+    .lux-gallery-section {
+        padding: 40px 16px;
+    }
+
+    .lux-gallery-header {
+        margin-bottom: 30px;
+    }
+
+    .lux-gallery-header .lux-h2 {
+        font-size: 22px !important;
+    }
+
+    .lux-gallery-subtitle {
+        font-size: 15px;
+    }
+
+    .lux-gallery-bento-grid {
+        gap: 16px;
+    }
+
+    .lux-gallery-feature,
+    .lux-gallery-tall,
+    .lux-gallery-item:not(.lux-gallery-feature):not(.lux-gallery-tall) {
+        min-height: auto;
+    }
+
+    .lux-gallery-overlay {
+        padding: 20px 16px 16px;
+    }
+
+    .lux-gallery-badge {
+        font-size: 9px !important;
+        margin-bottom: 6px;
+    }
+
+    .lux-gallery-h3 {
+        font-size: 18px !important;
+        margin-bottom: 6px;
+    }
+
+    .lux-gallery-item-p {
+        font-size: 14px !important;
+    }
+}
+
+/* ========================================
+   VIDEO SECTION: LUXURY YACHT EXPERIENCE
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-video-section {
+    padding: 60px 20px;
+    background: #274472;
+    position: relative;
+}
+
+.lux-video-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lux-video-header .lux-section-number {
+    display: block;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #ffffff;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.lux-video-header .lux-h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    margin-bottom: 0;
+    line-height: 1.1 !important;
+}
+
+.lux-video-header .lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 30px auto;
+    border-radius: 3px;
+}
+
+.lux-video-subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-weight: 300 !important;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+}
+
+.lux-video-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.12);
+    background: #000;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.lux-video-wrapper:hover {
+    box-shadow: 0 15px 60px rgba(39, 68, 114, 0.18);
+}
+
+.lux-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    object-fit: cover;
+}
+
+.lux-video-caption {
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.lux-video-caption .lux-caption-tag {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    padding: 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lux-video-caption p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300 !important;
+    opacity: 0.85;
+}
+
+/* ========================================
+   SECTION 07: FINAL CTA
+   Prefix: lux- | Colors: Navy (#274472) & Soft Blue
+   ======================================== */
+
+.lux-final-cta-section {
+    padding: 60px 20px;
+    /* Global Desktop Padding */
+    background-color: rgb(231, 243, 245);
+    /* Soft Blue */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+.lux-final-cta-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.lux-final-cta-section .lux-container-wide {
+    position: relative;
+    z-index: 2;
+}
+
+/* Make navy divider white in final CTA section only */
+.lux-final-cta-section .lux-navy-divider-center {
+    background-color: #ffffff;
+}
+
+.lux-container-wide {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lux-cta-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* --- Top Line P --- */
+.lux-cta-top-line {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    /* DESKTOP P */
+    color: #ffffff !important;
+    margin-bottom: 20px !important;
+    opacity: 0.9;
+}
+
+/* --- Main H2 Title --- */
+.lux-cta-main-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px !important;
+    /* DESKTOP H2 */
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lux-navy-divider-center {
+    width: 60px;
+    height: 3px;
+    background-color: #274472;
+    margin: 35px auto;
+    border-radius: 2px;
+}
+
+/* --- Bottom Line P --- */
+.lux-cta-bottom-line {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 24px !important;
+    /* Larger editorial size for final P */
+    font-style: italic !important;
+    color: #ffffff !important;
+    margin-bottom: 40px !important;
+    font-weight: 400 !important;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Action Button --- */
+.lux-btn-primary {
+    background-color: #274472;
+    color: #ffffff;
+    padding: 22px 50px;
+    border: 1px solid #274472;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.15);
+}
+
+.lux-btn-primary:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.2);
+}
+
+
+
+/* ========================================
+   GLOBAL RESPONSIVE RULES
+   Matches DrakePassage spacing:
+   Desktop: 60px 20px | Tablet: 50px 15px | Mobile: 50px 15px
+   Font: H1(60/32/26) H2(48/28/24) P(18/17/16)
+   ======================================== */
+
+/* ── TABLET (max-width: 1024px) ── */
+@media (max-width: 1024px) {
+
+    /* Hero */
+    .yacht-hero {
+        padding: 100px 30px 70px;
+    }
+
+    .yacht-hero h1 {
+        font-size: 32px !important;
+    }
+
+    .yacht-hero-lead,
+    .yacht-hero-sub {
+        font-size: 17px !important;
+    }
+
+    /* Typography - Match Four Seasons */
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name {
+        font-size: 28px !important;
+    }
+
+    .lux-cta-main-title {
+        font-size: 32px !important;
+    }
+
+    .lux-p,
+    .yacht-section-p-clean,
+    .yacht-hero-lead,
+    .lux-lead-text,
+    .lux-pitfall-lead,
+    .lux-cta-top-line {
+        font-size: 17px !important;
+    }
+
+    .lux-cta-bottom-line {
+        font-size: 22px !important;
+    }
+
+    .lux-scenario-title {
+        font-size: 20px !important;
+    }
+
+    .lux-gallery-subtitle {
+        font-size: 16px !important;
+    }
+
+    .lux-faq-intro {
+        font-size: 16px !important;
+    }
+
+    /* All section padding */
+    .yacht-section,
+    .lux-section,
+    .lux-intro-section,
+    .lux-pitfalls-section,
+    .lux-versus-section,
+    .lux-authority-redesign,
+    .lux-final-cta-section,
+    .yacht-pricing-section,
+    .yacht-faq-fullwidth,
+    .lux-gallery-section,
+    .lux-video-section {
+        padding: 55px 30px !important;
+    }
+
+    /* H2 — all heading classes */
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name {
+        font-size: 28px !important;
+    }
+
+    .lux-cta-main-title {
+        font-size: 32px !important;
+    }
+
+    /* CTA button tablet */
+    .lux-btn-primary {
+        padding: 18px 40px;
+    }
+
+    .lux-cta-bottom-line {
+        margin-bottom: 35px !important;
+    }
+
+    .lux-p,
+    .yacht-section-p-clean,
+    .yacht-hero-lead,
+    .yacht-faq-a-inner,
+    .lux-lead-text,
+    .lux-pitfall-lead,
+    .lux-cta-top-line,
+    .lux-gallery-subtitle,
+    .lux-video-subtitle,
+    .lux-video-caption p,
+    .lux-sticky-summary {
+        font-size: 17px !important;
+        text-align: center !important; /* Centered for Tablet */
+    }
+
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name,
+    .lux-gallery-header .lux-h2,
+    .lux-video-header .lux-h2 {
+        font-size: 28px !important;
+        text-align: center !important; /* Centered for Tablet */
+    }
+
+    /* Sticky layout → single column */
+    .lux-sticky-wrapper {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .lux-sticky-element {
+        position: static !important;
+        text-align: center !important;
+    }
+
+    .lux-side-sticky {
+        text-align: center;
+    }
+
+    .lux-intro-text-wrap,
+    .lux-pitfalls-list {
+        text-align: center;
+    }
+
+    /* Authority split → single column */
+    .lux-authority-split {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lux-authority-text-side {
+        text-align: center;
+    }
+
+    /* Dividers → center on tablet */
+    .lux-navy-divider-left,
+    .lux-navy-divider-short {
+        margin: 25px auto !important;
+    }
+
+    /* Comparison grid → 2 col on tablet */
+    .lux-strip-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* Brand grid → 2 col */
+    .lux-brand-portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Scenarios → 1 col */
+    .lux-scenario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* VS section padding */
+    .lux-vs-section {
+        padding: 50px 15px !important;
+    }
+
+    .lux-vs-card {
+        padding: 40px 30px;
+    }
+
+    .lux-vs-header {
+        margin-bottom: 50px;
+    }
+
+    /* Pricing grid → 1 col */
+    .yacht-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Portrait image */
+    .lux-portrait-main-img {
+        height: 450px;
+    }
+
+    /* Quote text & Authority */
+    .lux-serif-quote {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .lux-authority-sub {
+        text-align: center !important;
+    }
+}
+
+/* ── TABLET MID (max-width: 768px) ── */
+@media (max-width: 768px) {
+
+    /* All section padding - Match Four Seasons */
+    .yacht-section,
+    .lux-section,
+    .lux-intro-section,
+    .lux-pitfalls-section,
+    .lux-versus-section,
+    .lux-authority-redesign,
+    .lux-final-cta-section,
+    .yacht-pricing-section,
+    .yacht-faq-fullwidth,
+    .lux-gallery-section,
+    .lux-video-section {
+        padding: 48px 22px !important;
+    }
+
+    /* Typography - Match Four Seasons */
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name {
+        font-size: 24px !important;
+    }
+
+    .lux-cta-main-title {
+        font-size: 26px !important;
+    }
+
+    .lux-p,
+    .yacht-section-p-clean,
+    .yacht-faq-a-inner,
+    .lux-lead-text,
+    .lux-pitfall-lead,
+    .lux-cta-top-line {
+        font-size: 16px !important;
+    }
+
+    .lux-cta-bottom-line {
+        font-size: 20px !important;
+    }
+
+    .lux-scenario-title {
+        font-size: 19px !important;
+    }
+
+    .lux-gallery-subtitle {
+        font-size: 16px !important;
+    }
+
+    .lux-faq-intro {
+        font-size: 16px !important;
+    }
+
+    .lux-faq-q {
+        font-size: 15px !important;
+        padding: 18px 6px;
+    }
+
+    .lux-faq-a-inner {
+        font-size: 15px !important;
+    }
+
+    /* Authority → stack */
+    .lux-authority-split {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-authority-text-side {
+        text-align: center;
+    }
+
+    .lux-navy-divider-short {
+        margin: 25px auto;
+    }
+
+    .lux-portrait-wrapper {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .lux-portrait-bg-shape {
+        display: none;
+    }
+
+    .lux-authority-quote-box {
+        border-left: none;
+        border-top: 5px solid #274472;
+    }
+
+    /* VS grid → stack */
+    .lux-versus-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Brand grid → 1 col */
+    .lux-brand-portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── MOBILE (max-width: 480px) ── */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .yacht-hero {
+        padding: 70px 16px 50px;
+    }
+
+    .yacht-hero h1 {
+        font-size: 26px !important;
+    }
+
+    .yacht-hero-lead,
+    .yacht-hero-sub {
+        font-size: 16px !important;
+    }
+
+    /* All section padding - Match Four Seasons */
+    .yacht-section,
+    .lux-section,
+    .lux-intro-section,
+    .lux-pitfalls-section,
+    .lux-versus-section,
+    .lux-authority-redesign,
+    .lux-final-cta-section,
+    .yacht-pricing-section,
+    .yacht-faq-fullwidth,
+    .lux-gallery-section,
+    .lux-video-section {
+        padding: 40px 16px !important;
+    }
+
+    /* Typography - Match Four Seasons */
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name {
+        font-size: 24px !important;
+    }
+
+    .lux-cta-main-title {
+        font-size: 24px !important;
+    }
+
+    .lux-p,
+    .yacht-section-p-clean,
+    .yacht-faq-a-inner,
+    .lux-lead-text,
+    .lux-pitfall-lead,
+    .lux-cta-top-line,
+    .lux-gallery-subtitle,
+    .lux-video-subtitle,
+    .lux-video-caption p,
+    .lux-sticky-summary {
+        font-size: 16px !important;
+        text-align: center !important; /* Centered for Mobile */
+    }
+
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-portfolio-name,
+    .lux-gallery-header .lux-h2,
+    .lux-video-header .lux-h2,
+    .lux-authority-header .lux-h2,
+    .lux-strip-header .lux-h2,
+    .lux-grid-header .lux-h2,
+    .lux-vs-header .lux-h2 {
+        font-size: 24px !important;
+        text-align: center !important; /* Centered for Mobile */
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .lux-cta-bottom-line {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .lux-scenario-title {
+        font-size: 18px !important;
+    }
+
+    .lux-faq-q {
+        font-size: 14px !important;
+        gap: 12px;
+    }
+
+    .lux-faq-a-inner {
+        font-size: 14px !important;
+    }
+
+    .yacht-hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .yacht-btn-primary,
+    .yacht-btn-secondary,
+    .lux-btn-primary {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    /* Card padding mobile */
+    .lux-scenario-card {
+        padding: 26px 20px;
+    }
+
+    .yacht-pricing-card {
+        padding: 30px 24px;
+    }
+
+    .lux-portfolio-top {
+        padding: 25px 20px;
+    }
+
+    .lux-portfolio-body {
+        padding: 20px;
+    }
+
+    .lux-vs-card {
+        padding: 26px 22px;
+    }
+
+    /* All section padding */
+    .yacht-section,
+    .lux-section,
+    .lux-intro-section,
+    .lux-pitfalls-section,
+    .lux-versus-section,
+    .lux-authority-redesign,
+    .lux-final-cta-section,
+    .yacht-pricing-section,
+    .yacht-faq-fullwidth {
+        padding: 50px 15px !important;
+    }
+
+    /* H2 */
+    .lux-h2,
+    .yacht-section-h2,
+    .lux-versus-title,
+    .lux-cta-main-title,
+    .lux-portfolio-name {
+        font-size: 24px !important;
+    }
+
+    /* P */
+    .lux-p,
+    .yacht-section-p-clean,
+    .yacht-hero-lead,
+    .yacht-faq-a-inner,
+    .lux-lead-text,
+    .lux-pitfall-lead,
+    .lux-cta-top-line,
+    .lux-cta-bottom-line {
+        font-size: 16px !important;
+    }
+
+    /* Comparison strip → horizontal scroll */
+    .lux-strip-grid {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        gap: 15px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .lux-strip-card {
+        min-width: 240px;
+        scroll-snap-align: start;
+    }
+
+    /* Brand grid → 1 col */
+    .lux-brand-portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-portfolio-top {
+        padding: 25px 20px;
+        min-height: auto;
+    }
+
+    .lux-portfolio-body {
+        padding: 20px;
+    }
+
+    /* VS grid → 1 col */
+    .lux-versus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-versus-card {
+        padding: 35px 25px;
+    }
+
+    .lux-vs-section {
+        padding: 50px 15px !important;
+    }
+
+    .lux-vs-card {
+        padding: 30px 20px;
+    }
+
+    .lux-vs-header {
+        margin-bottom: 40px;
+    }
+
+    /* Scenarios → 1 col */
+    .lux-scenario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lux-scenario-card {
+        padding: 30px 20px;
+    }
+
+    /* Portrait */
+    .lux-portrait-main-img {
+        height: 350px;
+    }
+
+    /* Quote & Authority */
+    .lux-serif-quote {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .lux-authority-sub {
+        text-align: center !important;
+    }
+
+    /* FAQ */
+    .lux-faq-q {
+        font-size: 16px !important;
+        padding: 18px 6px;
+    }
+
+    .lux-faq-a-inner {
+        font-size: 15px !important;
+    }
+
+    .lux-faq-header {
+        margin-bottom: 30px;
+    }
+
+    /* Impact box */
+    .lux-impact-box {
+        margin: 0 auto 30px;
+    }
+
+    /* Editorial box */
+    .lux-editorial-box {
+        padding: 25px 20px;
+    }
+}
