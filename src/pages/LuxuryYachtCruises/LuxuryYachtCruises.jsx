@@ -29,12 +29,12 @@ import EmeraldImage from "../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_San
 import FourSeasonsImage from "../../assets/LuxuryYachtCruises/SSC_SM_Turkey_Kusadasi_0055.jpg";
 import OrientExpressImage from "../../assets/LuxuryYachtCruises/SSC_RA_Spain_Palma_De_Mallorca_A059C0056.jpg";
 import FinalBGImage from "../../assets/LuxuryYachtCruises/FinalBG_Image.jpg";
-import ImageGallery1 from "../../assets/LuxuryYachtCruises/ImageGallery1.jpg";
-import ImageGallery2 from "../../assets/LuxuryYachtCruises/ImageGallery2.jpg";
-import ImageGallery3 from "../../assets/LuxuryYachtCruises/ImageGallery3.jpg";
-import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.jpg";
-import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.jpg";
-import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.jpg";
+import ImageGallery1 from "../../assets/LuxuryYachtCruises/ImageGallery1.webp";
+import ImageGallery2 from "../../assets/LuxuryYachtCruises/ImageGallery2.webp";
+import ImageGallery3 from "../../assets/LuxuryYachtCruises/ImageGallery3.webp";
+import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.webp";
+import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.webp";
+import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.webp";
 
 function useFadeIn() {
     const ref = useRef(null);
