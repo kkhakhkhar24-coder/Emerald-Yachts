@@ -1096,7 +1096,7 @@ function LuxuryTravel() {
       </section>
 
       {/* ===== SECTION 12: FINAL CTA — The definitive call-to-action to schedule a Scenic Eclipse consultation ===== */}
-      <section className="lux-final-cta-section">
+      <section className="lux-final-cta-section" style={{ backgroundImage: `url(${Section11Bg})` }}>
         {/* Dark Wash Overlay for Typography Clarity */}
         <div className="lux-cta-overlay"></div>
 

@@ -26,7 +26,7 @@
 
 /* ---- SECTION WRAPPER ---- */
 .svf-section {
-    padding: 70px 40px;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
 }
@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 130px 40px 80px;
+    padding: 60px 20px;
     position: relative;
     text-align: center;
     background-size: cover;
@@ -640,7 +640,7 @@
    ============================================================ */
 .svf-real-decision {
     position: relative;
-    padding: 90px 40px;
+    padding: 60px 20px;
     background-image: var(--s5bg);
     background-size: cover;
     background-position: center;
@@ -1296,7 +1296,7 @@
 /* ---- TABLET 1024px ---- */
 @media (max-width: 1024px) {
     .svf-section {
-        padding: 55px 30px;
+        padding: 50px 15px;
     }
 
     /* typography */
@@ -1415,12 +1415,12 @@
 
     /* hero */
     .svf-hero {
-        padding: 100px 30px 70px;
+        padding: 50px 15px;
     }
 
     /* real decision */
     .svf-real-decision {
-        padding: 70px 30px;
+        padding: 50px 15px;
     }
 
     .svf-cmp-row {
@@ -1459,7 +1459,7 @@
 /* ---- MOBILE 768px ---- */
 @media (max-width: 768px) {
     .svf-section {
-        padding: 48px 22px;
+        padding: 50px 15px;
     }
 
     .svf-h1 {
@@ -1563,7 +1563,7 @@
     }
 
     .svf-hero {
-        padding: 80px 22px 60px;
+        padding: 50px 15px;
     }
 
     .svf-hero-btns {
@@ -1576,7 +1576,7 @@
     }
 
     .svf-real-decision {
-        padding: 60px 22px;
+        padding: 50px 15px;
         min-height: auto;
     }
 
@@ -1686,7 +1686,7 @@
 /* ---- SMALL MOBILE 480px ---- */
 @media (max-width: 480px) {
     .svf-section {
-        padding: 40px 16px;
+        padding: 50px 15px;
     }
 
     .svf-h2 {
@@ -1735,11 +1735,11 @@
     }
 
     .svf-hero {
-        padding: 70px 16px 50px;
+        padding: 50px 15px;
     }
 
     .svf-real-decision {
-        padding: 50px 16px;
+        padding: 50px 15px;
     }
 
     .svf-bold-stmt {
@@ -1773,7 +1773,7 @@
 
 .svf-video-section {
     background: linear-gradient(135deg, #274472 0%, #1e3659 100%);
-    padding: 80px 40px;
+    padding: 60px 20px;
 }
 
 .svf-video-header {
@@ -1826,7 +1826,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
     .svf-video-section {
-        padding: 60px 30px;
+        padding: 50px 15px;
     }
 
     .svf-video-header {
@@ -1841,7 +1841,7 @@
 /* Responsive: Mobile Large */
 @media (max-width: 768px) {
     .svf-video-section {
-        padding: 50px 20px;
+        padding: 50px 15px;
     }
 
     .svf-video-header {
@@ -1868,7 +1868,7 @@
 /* Responsive: Mobile */
 @media (max-width: 480px) {
     .svf-video-section {
-        padding: 40px 15px;
+        padding: 50px 15px;
     }
 
     .svf-video-header {
@@ -2017,6 +2017,7 @@
     color: #ffffff;
     margin: 0 0 8px 0;
     line-height: 1.2;
+    text-align: left !important;
 }
 
 .svf-gallery-content p {
@@ -2024,12 +2025,13 @@
     color: rgba(255, 255, 255, 0.9);
     margin: 0;
     line-height: 1.5;
+    text-align: left !important;
 }
 
 /* Tablet: 768px - 1024px */
 @media (max-width: 1024px) {
     .svf-gallery-section {
-        padding: 60px 30px;
+        padding: 50px 15px;
     }
 
     .svf-gallery-header .svf-h2 {
@@ -2074,7 +2076,7 @@
 /* Mobile: 480px - 768px */
 @media (max-width: 768px) {
     .svf-gallery-section {
-        padding: 50px 20px;
+        padding: 50px 15px;
     }
 
     .svf-gallery-header {
@@ -2130,7 +2132,7 @@
 /* Small Mobile: <480px */
 @media (max-width: 480px) {
     .svf-gallery-section {
-        padding: 40px 15px;
+        padding: 50px 15px;
     }
 
     .svf-gallery-header .svf-h2 {

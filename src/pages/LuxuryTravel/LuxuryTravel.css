@@ -244,7 +244,7 @@
 
 @media (max-width: 768px) {
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-hero-content {
@@ -258,7 +258,7 @@
     }
 
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
         line-height: 1.2 !important;
     }
 
@@ -292,7 +292,7 @@
    ======================================== */
 
 .lux-expertise-redesign {
-    padding: 120px 40px;
+    padding: 60px 20px;
 }
 
 .lux-bg-white {
@@ -535,11 +535,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -557,11 +557,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -828,11 +828,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -855,11 +855,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -891,7 +891,7 @@ h3 {
    GLOBAL SECTION PADDING UPDATE
    ======================================== */
 .lux-section {
-    padding: 120px 40px;
+    padding: 60px 20px;
     /* New Global Standard */
     display: flex;
     justify-content: center;
@@ -905,8 +905,12 @@ h3 {
     .lux-inner.lux-wide,
     .lux-inner.lux-narrow,
     .lux-inner.lux-narrow-faq {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .lux-section {
+        padding: 50px 15px;
     }
 }
 
@@ -922,7 +926,7 @@ h3 {
     }
 
     .lux-section {
-        padding: 80px 15px;
+        padding: 50px 15px;
     }
 }
 
@@ -1067,11 +1071,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -1079,7 +1083,7 @@ h3 {
     }
 
     .lux-suitability-header-centered .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-suitability-box {
@@ -1089,11 +1093,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -1101,7 +1105,7 @@ h3 {
     }
 
     .lux-suitability-header-centered .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-suitability-box {
@@ -1243,11 +1247,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -1270,11 +1274,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -1282,7 +1286,7 @@ h3 {
     }
 
     .lux-selection-header .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-selection-card {
@@ -1379,11 +1383,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -1392,7 +1396,7 @@ h3 {
     }
 
     .lux-about-header .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-about-lead {
@@ -1411,11 +1415,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -1424,7 +1428,7 @@ h3 {
     }
 
     .lux-about-header .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-about-lead {
@@ -1595,11 +1599,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -1608,7 +1612,7 @@ h3 {
     }
 
     .lux-h2.lux-left-bar {
-        font-size: 30px !important;
+        font-size: 24px !important;
         text-align: center !important;
     }
 
@@ -1631,11 +1635,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -1644,7 +1648,7 @@ h3 {
     }
 
     .lux-h2.lux-left-bar {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-planning-grid-redesign {
@@ -1859,11 +1863,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
         text-align: center !important;
     }
 
@@ -1873,12 +1877,15 @@ h3 {
     }
 
     /* Center align all H3 headings on mobile */
-    h3, .lux-h3-sm, .lux-h3-navy, .lux-comp-title {
+    h3,
+    .lux-h3-sm,
+    .lux-h3-navy,
+    .lux-comp-title {
         text-align: center !important;
     }
 
     .lux-h2-white {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-method-step {
@@ -1915,11 +1922,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -1928,7 +1935,7 @@ h3 {
     }
 
     .lux-h2-white {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-method-hero-intro {
@@ -2137,11 +2144,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
         text-align: center !important;
     }
 
@@ -2156,7 +2163,7 @@ h3 {
 
     /* Match H2 font size with other sections */
     .lux-h2.lux-left-bar {
-        font-size: 30px !important;
+        font-size: 24px !important;
         text-align: center !important;
     }
 
@@ -2171,11 +2178,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -2206,7 +2213,7 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
@@ -2441,7 +2448,7 @@ h3 {
     }
 
     .lux-h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -2450,13 +2457,13 @@ h3 {
     }
 
     .lux-summary-header .lux-h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 }
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
@@ -2639,11 +2646,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -2656,7 +2663,7 @@ h3 {
     }
 
     .lux-adv-header .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     /* Center align advisor advantage section on mobile */
@@ -2677,11 +2684,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -2879,15 +2886,15 @@ h3 {
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
     .lux-faq-header .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -2923,11 +2930,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -2935,7 +2942,7 @@ h3 {
     }
 
     .lux-faq-header .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     /* Emerald-style FAQ mobile */
@@ -2967,9 +2974,11 @@ h3 {
 
 .lux-final-cta-section {
     position: relative;
-    padding: 140px 40px;
-    /* Suggestion: Epic shot of the Scenic Eclipse at sea */
-    background: url(../../assets/LuxuryTravel/section11_bg.png) center/cover no-repeat;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2982,7 +2991,7 @@ h3 {
 .lux-cta-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(28, 47, 74, 0.95) 0%, rgba(15, 28, 46, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0.10) 100%);
     z-index: 1;
 }
 
@@ -3066,11 +3075,11 @@ h3 {
 
 @media (max-width: 768px) {
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -3104,15 +3113,15 @@ h3 {
     }
 
     .lux-h2-white {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -3140,7 +3149,7 @@ h3 {
 }
 
 .lux-attribution-section {
-    padding: 80px 40px;
+    padding: 60px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.1);
 }
 
@@ -3222,11 +3231,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -3234,7 +3243,7 @@ h3 {
     }
 
     .lux-attr-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-attr-item {
@@ -3257,11 +3266,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p {
@@ -3269,7 +3278,7 @@ h3 {
     }
 
     .lux-attr-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-attr-item {
@@ -3345,11 +3354,11 @@ h3 {
     }
 
     .lux-h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .lux-h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -3369,11 +3378,11 @@ h3 {
 
 @media (max-width: 480px) {
     .lux-h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .lux-section-p,
@@ -3401,7 +3410,7 @@ h3 {
    ======================================== */
 
 .lux-video-section {
-    padding: 50px 40px;
+    padding: 60px 20px;
     background: #f0f4f8;
     position: relative;
 }
@@ -3532,7 +3541,7 @@ h3 {
     }
 
     .lux-video-header .lux-h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .lux-video-header .lux-navy-divider-center {

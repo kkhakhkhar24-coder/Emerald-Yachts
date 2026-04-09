@@ -39,6 +39,36 @@ body {
 }
 
 /* ========================================
+   TYPOGRAPHY - DRAKE PASSAGE
+   ======================================== */
+
+.drake-h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 60px !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  color: #ffffff;
+}
+
+.drake-h2,
+.drake-section-h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  line-height: 1.1 !important;
+  color: #274472 !important;
+}
+
+.drake-p,
+.drake-expert-paragraph {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  line-height: 1.75 !important;
+  color: #274472 !important;
+}
+
+/* ========================================
    HERO SECTION
    Main hero with animated background, particles effect, eyebrow title, heading, and call-to-action buttons
    ======================================== */
@@ -558,7 +588,7 @@ h3 {
    ======================================== */
 
 .drake-clean-layout {
-  padding: 120px 40px;
+  padding: 60px 20px;
   /* Global Padding Requirement */
 }
 
@@ -741,7 +771,7 @@ h3 {
 /* TABLET (1024px) */
 @media (max-width: 1024px) {
   .drake-clean-layout {
-    padding: 80px 40px;
+    padding: 50px 15px;
   }
 
   .drake-sticky-wrapper {
@@ -812,7 +842,7 @@ h3 {
 /* MOBILE (480px) */
 @media (max-width: 480px) {
   .drake-clean-layout {
-    padding: 60px 20px;
+    padding: 50px 15px;
   }
 
   .drake-section-h2.drake-left-bar {
@@ -842,7 +872,7 @@ h3 {
 }
 
 .drake-roughness-proper {
-  padding: 120px 0;
+  padding: 60px 20px;
 }
 
 .drake-sticky-wrapper {
@@ -1077,7 +1107,7 @@ h3 {
    ======================================== */
 
 .drake-ship-management-fixed {
-  padding: 120px 40px;
+  padding: 60px 20px;
   /* Global Desktop Padding */
 }
 
@@ -1319,7 +1349,7 @@ h3 {
 /* TABLET (1024px) */
 @media (max-width: 1024px) {
   .drake-ship-management-fixed {
-    padding: 80px 40px;
+    padding: 50px 15px;
   }
 
   .drake-sticky-wrapper {
@@ -1401,7 +1431,7 @@ h3 {
 /* MOBILE (480px) */
 @media (max-width: 480px) {
   .drake-ship-management-fixed {
-    padding: 60px 20px;
+    padding: 50px 15px;
   }
 
   .drake-section-h2.drake-left-bar {
@@ -2077,7 +2107,7 @@ h3 {
    ======================================== */
 
 .drake-audience-redesign {
-  padding: 100px 0;
+  padding: 60px 20px;
 }
 
 /* --- Centered Header --- */
@@ -2831,7 +2861,7 @@ h3 {
    ======================================== */
 
 .drake-expert-redesign {
-  padding: 120px 40px;
+  padding: 60px 20px;
 }
 
 .drake-expert-flex {
@@ -3527,7 +3557,7 @@ h3 {
    ======================================== */
 
 .drake-faq-fullwidth {
-  padding: 100px 0;
+  padding: 60px 20px;
 }
 
 /* --- Centered Header --- */
@@ -3800,6 +3830,10 @@ h3 {
   position: relative;
   padding: 60px 20px;
   background: url('../../assets/DrakePassage/Footer_Image.jpeg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3808,11 +3842,11 @@ h3 {
   overflow: hidden;
 }
 
-/* Dark Navy Overlay (Replacing the neutral black) */
+/* Dark Overlay */
 .drake-cta-overlay-navy {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(15, 28, 46, 0.85), rgba(39, 68, 114, 0.75));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.70) 50%, rgba(0, 0, 0, 0.60) 100%);
   z-index: 1;
 }
 
@@ -3877,7 +3911,7 @@ h3 {
   /* Solid White */
   color: #274472;
   /* Navy Text */
-  border: 1px solid #ffffff;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.35s ease;
@@ -3897,7 +3931,7 @@ h3 {
    ======================================== */
 
 .drake-video-section {
-  padding: 50px 40px;
+  padding: 60px 20px;
   background: #f0f4f8;
   position: relative;
 }
