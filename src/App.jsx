@@ -13,6 +13,7 @@ import LuxuryTravel from "./pages/LuxuryTravel/LuxuryTravel";
 import ScenicVSFourSeasonsYachts from "./pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts";
 import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldvsritzcarlton";
 import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
+import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
 
 function App() {
   return (
@@ -57,6 +58,12 @@ function App() {
             path="/luxury-yacht-cruises"
             element={<LuxuryYachtCruises />}
           ></Route>
+          <Route
+            path="/riverside-luxury-cruises"
+            element={<RiversideLuxuryCruises />}
+          ></Route>
+
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
