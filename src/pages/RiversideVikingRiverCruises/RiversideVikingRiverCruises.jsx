@@ -3,6 +3,9 @@ import { Ship, Diamond, Navigation, Plus, Minus, Heart, Users, Star, BadgeCheck,
 import './RiversideVikingRiverCruises.css';
 import Navbar from '../../components/Navbar/Navbar';
 import AboutImage from '../../assets/image.webp';
+import HeroImage1 from '../../assets/Riverside-vs-Viking/Hero1.jpeg';
+import HeroImage2 from '../../assets/Riverside-vs-Viking/Hero2.jpeg';
+import HeroImage3 from '../../assets/Riverside-vs-Viking/Hero3.jpeg';
 import { Helmet } from 'react-helmet-async';
 
 const schemaData = {
@@ -322,6 +325,16 @@ function FAQ() {
 }
 
 const RiversideVsViking = () => {
+    const [currentHeroImage, setCurrentHeroImage] = useState(0);
+    const heroImages = [HeroImage1, HeroImage2, HeroImage3];
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentHeroImage((prev) => (prev + 1) % heroImages.length);
+        }, 6000);
+        return () => clearInterval(interval);
+    }, [heroImages.length]);
+
     return (
         <div className="page-wrapper">
             {/* SEO & Schema */}
@@ -342,7 +355,13 @@ const RiversideVsViking = () => {
             <Navbar />
 
             {/* HERO SECTION */}
-            <section className="river-hero">
+            <section
+                className="river-hero"
+                style={{
+                    backgroundImage: `url(${heroImages[currentHeroImage]})`,
+                    transition: 'background-image 1s ease-in-out'
+                }}
+            >
                 <div className="container">
                     <div className="river-hero-content">
                         <span className="river-hero-eyebrow">River Cruise Planning</span>
@@ -629,7 +648,7 @@ const RiversideVsViking = () => {
             <section className="lux-section lux-bg-white lux-video-section">
                 <div className="lux-container-wide">
                     <div className="lux-video-header">
-                        <h2 className="lux-h2">Riverside vs Viking River Cruises</h2>
+                        <h2 className="lux-h2">Riverside Cruises</h2>
                         <div className="lux-navy-divider-center"></div>
                         <p className="lux-video-subtitle">
                             See the real difference between boutique luxury and premium river cruising. Discover which experience matches your travel style and expectations for exploring Europe's most beautiful waterways.
@@ -647,7 +666,7 @@ const RiversideVsViking = () => {
                             preload="auto"
                         >
                             <source
-                                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AM4U9Ywg5B3JhMCyVmy7Vm0/Scenic/Scenic%20Ocean/Videos/Experiences/SCENIC_LONG_FORM_FINAL.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=cmis4m8h&raw=1"
+                                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AEAoUcNeZ79lxKW5OIRPxjo/Emerald%20Cruises/River%20Cruising/Videos/Overview/Emerald%20-%20River%20-%2015%20sec%20-%20CBS.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=gew8je6r&raw=1"
                                 type="video/mp4"
                             />
                             Your browser does not support the video tag.
