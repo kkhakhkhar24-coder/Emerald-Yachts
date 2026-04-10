@@ -14,6 +14,7 @@ import ScenicVSFourSeasonsYachts from "./pages/ScenicVSFourSeasonsYachts/ScenicV
 import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldvsritzcarlton";
 import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
 import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
+import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/RiversideVikingRiverCruises";
 
 function App() {
   return (
@@ -62,8 +63,10 @@ function App() {
             path="/riverside-luxury-cruises"
             element={<RiversideLuxuryCruises />}
           ></Route>
-
-
+          <Route
+            path="/riverside-vs-viking-river-cruises"
+            element={<RiversideVikingRiverCruises />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

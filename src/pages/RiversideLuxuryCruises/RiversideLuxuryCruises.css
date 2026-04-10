@@ -138,7 +138,7 @@
 .riv_hero_read_more_btn:hover { background: #274472; border-color: #274472; transform: scale(1.05); }
 
 .riv_hero_quick_take_dropdown {
-  background: rgba(39, 68, 114, 0.95);
+  background: transparent;
   backdrop-filter: blur(25px);
   padding: 25px;
   border-radius: 12px;

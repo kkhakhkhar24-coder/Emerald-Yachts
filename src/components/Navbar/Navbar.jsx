@@ -70,15 +70,18 @@ const Navbar = () => {
               >
                 Luxury Yacht Cruises
               </Link>
-
-
               <Link
                 to="/riverside-luxury-cruises"
                 className="nav-dropdown-single"
               >
                 River side Luxury Cruises
               </Link>
-
+              <Link
+                to="/riverside-vs-viking-river-cruises"
+                className="nav-dropdown-single"
+              >
+                River side vs Viking River Cruises
+              </Link>
             </div>
           </div>
         </div>
@@ -167,7 +170,7 @@ const Navbar = () => {
               >
                 River side Luxury Cruises
               </Link>
-
+    
 
             <span className="mobile-dropdown-divider"></span>
           </div>
