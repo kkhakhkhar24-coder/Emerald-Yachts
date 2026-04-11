@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import "./RiversideLuxuryCruises.css"
+import "./RiversideLuxuryCruises.css";
 import Navbar from "../../components/Navbar/Navbar";
 import {
   Calendar,
@@ -469,7 +469,7 @@ const RiversideLuxuryCruises = () => {
           <p className="riv_pricing_top_p">Typical pricing categories for European river cruises:</p>
           <div className="riv_pricing_three_card_grid">
             <div className="riv_price_unit_card">
-              <h4 className="riv_price_type_h4">Entry</h4>
+              <h4 className="riv_price_type_h4_white">Entry</h4>
               <div className="riv_price_value_display">$4,000–$6,500</div>
               <button className="riv_price_action_btn">View Details</button>
             </div>
@@ -480,7 +480,7 @@ const RiversideLuxuryCruises = () => {
               <button className="riv_price_action_btn_filled">Check Availability</button>
             </div>
             <div className="riv_price_unit_card">
-              <h4 className="riv_price_type_h4">Suites</h4>
+              <h4 className="riv_price_type_h4_white">Suites</h4>
               <div className="riv_price_value_display">$10,000+</div>
               <button className="riv_price_action_btn">View Luxury Suites</button>
             </div>
