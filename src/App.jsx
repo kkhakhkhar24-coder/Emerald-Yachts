@@ -15,6 +15,7 @@ import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldv
 import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
 import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
 import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/RiversideVikingRiverCruises";
+import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways"
 
 function App() {
   return (
@@ -67,6 +68,11 @@ function App() {
             path="/riverside-vs-viking-river-cruises"
             element={<RiversideVikingRiverCruises />}
           ></Route>
+          <Route
+            path="/riverside-vs-amawaterways"
+            element={<RiversidevsAmaWaterways />}
+          ></Route>
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
