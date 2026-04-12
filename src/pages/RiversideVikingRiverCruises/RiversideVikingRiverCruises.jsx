@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Ship, Diamond, Navigation, Plus, Minus, Heart, Users, Star, BadgeCheck, User, Award, Shield, ArrowRight, Layers, Check } from 'lucide-react';
+import { Ship, Diamond, Navigation, Plus, Minus, Heart, Users, Star, BadgeCheck, User, Award, Shield, ArrowRight, Layers, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import './RiversideVikingRiverCruises.css';
 import Navbar from '../../components/Navbar/Navbar';
 import AboutImage from '../../assets/image.webp';
@@ -325,15 +325,25 @@ function FAQ() {
 }
 
 const RiversideVsViking = () => {
-    const [currentHeroImage, setCurrentHeroImage] = useState(0);
-    const heroImages = [HeroImage1, HeroImage2, HeroImage3];
+    // Hero image slider
+    const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
 
     React.useEffect(() => {
+        const slides = document.querySelectorAll('.riv_hero_bg_slide');
+        let currentSlide = 0;
+        
         const interval = setInterval(() => {
-            setCurrentHeroImage((prev) => (prev + 1) % heroImages.length);
+            slides[currentSlide].classList.remove('riv_active_slide');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('riv_active_slide');
         }, 6000);
+        
         return () => clearInterval(interval);
-    }, [heroImages.length]);
+    }, []);
+
+    const toggleReadMore = () => {
+        setIsReadMoreOpen(!isReadMoreOpen);
+    };
 
     return (
         <div className="page-wrapper">
@@ -355,48 +365,47 @@ const RiversideVsViking = () => {
             <Navbar />
 
             {/* HERO SECTION */}
-            <section
-                className="river-hero"
-                style={{
-                    backgroundImage: `url(${heroImages[currentHeroImage]})`,
-                    transition: 'background-image 1s ease-in-out'
-                }}
-            >
-                <div className="container">
-                    <div className="river-hero-content">
-                        <span className="river-hero-eyebrow">River Cruise Planning</span>
-                        <h1>Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
-                        <p className="river-hero-sub">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
-
-                        {/* QUICK ANSWER BOX */}
-                        <div className="river-hero-details">
-                            <div className="river-quick-answer">
-                                <p className="river-qa-main">
-                                    The biggest mistake travelers make when comparing these two brands is assuming they are choosing between equals.
-                                </p>
-                                <p className="river-qa-emphasis">They are not.</p>
-                                <p className="river-qa-detail">
-                                    Riverside Luxury Cruises is a boutique luxury river cruise experience with more space, refinement, and a quieter onboard atmosphere. Viking River Cruises is a premium river cruise line designed for first-time travelers who want structure, consistency, and ease.
-                                </p>
+            <section className="riv_hero_viewport">
+                <div className="riv_hero_image_slider">
+                    <div className="riv_hero_bg_slide riv_active_slide" style={{ backgroundImage: `url(${HeroImage1})` }}></div>
+                    <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage2})` }}></div>
+                    <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage3})` }}></div>
+                </div>
+            
+                <div className="riv_hero_overlay_content">
+                    <div className="riv_container_90">
+                        <div className="riv_hero_text_box">
+                            <span className="river-hero-eyebrow">River Cruise Planning</span>
+                            <h1 className="riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
+                            <p className="riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
+            
+                            {/* QUICK ANSWER BOX */}
+                            <div className="riv_hero_read_more_outer">
+                                <button
+                                    className="riv_hero_read_more_btn"
+                                    onClick={toggleReadMore}
+                                >
+                                    {isReadMoreOpen ? 'Read Less' : 'Read More'}
+                                    {isReadMoreOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                                </button>
+            
+                                <div className={`river-hero-details ${isReadMoreOpen ? 'expanded' : ''}`}>
+                                    <div className="river-quick-answer">
+                                        <p className="river-qa-main">
+                                            The biggest mistake travelers make when comparing these two brands is assuming they are choosing between equals.
+                                        </p>
+                                        <p className="river-qa-emphasis">They are not.</p>
+                                        <p className="river-qa-detail">
+                                            Riverside Luxury Cruises is a boutique luxury river cruise experience with more space, refinement, and a quieter onboard atmosphere. Viking River Cruises is a premium river cruise line designed for first-time travelers who want structure, consistency, and ease.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <button
-                            className="river-hero-read-more"
-                            onClick={(e) => {
-                                const details = document.querySelector(".river-hero-details");
-                                if (details) {
-                                    details.classList.toggle("expanded");
-                                    e.target.innerText = details.classList.contains("expanded") ? "Read Less" : "Read More";
-                                }
-                            }}
-                        >
-                            Read More
-                        </button>
-
-                        <div className="river-hero-btns">
-                            <button className="river-btn-primary">Compare River Cruise Lines</button>
-                            <button className="river-btn-secondary">Plan My River Cruise</button>
+            
+                            <div className="riv_hero_button_group">
+                                <button className="riv_hero_btn_filled">Compare River Cruise Lines</button>
+                                <button className="riv_hero_btn_transparent">Plan My River Cruise</button>
+                            </div>
                         </div>
                     </div>
                 </div>
