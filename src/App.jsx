@@ -15,7 +15,8 @@ import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldv
 import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
 import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
 import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/RiversideVikingRiverCruises";
-import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways"
+import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways";
+import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/DistinctiveVoyageSailings"
 
 function App() {
   return (
@@ -71,6 +72,10 @@ function App() {
           <Route
             path="/riverside-vs-amawaterways"
             element={<RiversidevsAmaWaterways />}
+          ></Route>
+          <Route
+            path="/distinctive-voyage-sailings"
+            element={<DistinctiveVoyageSailings />}
           ></Route>
 
         </Routes>

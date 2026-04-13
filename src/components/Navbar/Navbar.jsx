@@ -86,6 +86,10 @@ const Navbar = () => {
               <Link to="/riverside-vs-amawaterways" className="nav-dropdown-single">
                 Riverside vs AmaWaterways
               </Link>
+
+              <Link to="/distinctive-voyage-sailings" className="nav-dropdown-single">
+                Distinctive Voyage Sailings
+              </Link>
             </div>
           </div>
         </div>
@@ -158,12 +162,14 @@ const Navbar = () => {
             <Link
               to="/emerald-yachts-vs-ritz-carlton-yacht-collection"
               className="nav-dropdown-single"
+              onClick={toggleMenu}
             >
               Emerald Yachts vs Ritz-Carlton Yacht Collection
             </Link>
             <Link
               to="/luxury-yacht-cruises"
               className="nav-dropdown-single"
+              onClick={toggleMenu}
             >
               Luxury Yacht Cruises
             </Link>
@@ -178,6 +184,10 @@ const Navbar = () => {
 
               <Link to="/riverside-vs-amawaterways" className="nav-dropdown-single" onClick={toggleMenu}>
                 Riverside vs AmaWaterways
+              </Link>
+
+              <Link to="/distinctive-voyage-sailings" className="nav-dropdown-single" onClick={toggleMenu}>
+                Distinctive Voyage Sailings
               </Link>
             <span className="mobile-dropdown-divider"></span>
           </div>
