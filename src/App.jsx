@@ -17,13 +17,18 @@ import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxu
 import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/RiversideVikingRiverCruises";
 import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways";
 import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/DistinctiveVoyageSailings"
+import OrientExpress from "./pages/OrientExpress/OrientExpress";
 
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<EmeraldYachts />}></Route>
+          <Route
+            path="/"
+            element={<OrientExpress />}
+          ></Route>
+          <Route path="/emerald-yachts" element={<EmeraldYachts />}></Route>
           <Route
             path="/DrakePassagePage"
             element={<DrakePassagePage />}
@@ -77,7 +82,6 @@ function App() {
             path="/distinctive-voyage-sailings"
             element={<DistinctiveVoyageSailings />}
           ></Route>
-
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

@@ -34,6 +34,7 @@ const Navbar = () => {
           <div className="nav-dropdown-menu">
             <div className="nav-dropdown-group">
               <span className="nav-dropdown-title">ANTARCTICA</span>
+              <Link to="/emerald-yachts">Emerald Yachts</Link>
               <Link to="/antarctica-cruise-cost">Antarctica Cruise Cost</Link>
               <Link to="/scenic-antarctica-cruise">
                 Scenic Antarctica Cruises
@@ -127,6 +128,7 @@ const Navbar = () => {
             className={`mobile-dropdown-menu ${homeDropdownOpen ? "active" : ""}`}
           >
             <span className="mobile-dropdown-title">ANTARCTICA</span>
+            <Link to="/emerald-yachts" onClick={toggleMenu}>Emerald Yachts</Link>
             <Link to="/antarctica-cruise-cost" onClick={toggleMenu}>
               Antarctica Cruise Cost
             </Link>
@@ -173,22 +175,22 @@ const Navbar = () => {
             >
               Luxury Yacht Cruises
             </Link>
-            
+
             <Link
-                to="/riverside-vs-viking-river-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Riverside vs Viking River Cruises
-              </Link>
+              to="/riverside-vs-viking-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside vs Viking River Cruises
+            </Link>
 
-              <Link to="/riverside-vs-amawaterways" className="nav-dropdown-single" onClick={toggleMenu}>
-                Riverside vs AmaWaterways
-              </Link>
+            <Link to="/riverside-vs-amawaterways" className="nav-dropdown-single" onClick={toggleMenu}>
+              Riverside vs AmaWaterways
+            </Link>
 
-              <Link to="/distinctive-voyage-sailings" className="nav-dropdown-single" onClick={toggleMenu}>
-                Distinctive Voyage Sailings
-              </Link>
+            <Link to="/distinctive-voyage-sailings" className="nav-dropdown-single" onClick={toggleMenu}>
+              Distinctive Voyage Sailings
+            </Link>
             <span className="mobile-dropdown-divider"></span>
           </div>
         </div>
