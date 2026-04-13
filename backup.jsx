@@ -6,11 +6,8 @@ import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
 import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
 import SailImg1 from "../../assets/HomePage/HomePage1.jpg";
 import SailImg2 from "../../assets/HomePage/HomePage4.jpg";
-import { 
-  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass, 
-  Clock, Anchor, GraduationCap, Users, Mic, Newspaper, ShieldCheck, 
-  Lightbulb, Map, Heart, Star, Gift, Ticket, ConciergeBell, Navigation, Sparkles 
-} from "lucide-react";
+import { Check } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 import TrustImage from "../../assets/HomePage/HomePage3.jpg";
 
 const DistinctiveVoyageSailings = () => {
@@ -160,42 +157,42 @@ const toggleFAQ = (index) => {
             <div className="Dist_trustclean_points">
 
               <div className="Dist_trustclean_point_1">
-                <Clock size={16} />
+                <Check size={16} />
                 <p>40+ Years in Luxury Travel</p>
               </div>
 
               <div className="Dist_trustclean_point_2">
-                <Anchor size={16} />
+                <Check size={16} />
                 <p>CEO of Trips & Ships Luxury Travel</p>
               </div>
 
               <div className="Dist_trustclean_point_3">
-                <GraduationCap size={16} />
+                <Check size={16} />
                 <p>Founder of Luxury Travel University</p>
               </div>
 
               <div className="Dist_trustclean_point_4">
-                <Users size={16} />
+                <Check size={16} />
                 <p>Leads a Host Agency of 140+ Advisors</p>
               </div>
 
               <div className="Dist_trustclean_point_5">
-                <Mic size={16} />
+                <Check size={16} />
                 <p>Global Speaker on Luxury Travel Trends</p>
               </div>
 
               <div className="Dist_trustclean_point_6">
-                <Newspaper size={16} />
+                <Check size={16} />
                 <p>Featured in Major Travel Media Publications</p>
               </div>
 
               <div className="Dist_trustclean_point_7">
-                <User size={16} />
+                <Check size={16} />
                 <p>Personally Hosts Luxury Sailings Worldwide</p>
               </div>
 
               <div className="Dist_trustclean_point_8">
-                <ShieldCheck size={16} />
+                <Check size={16} />
                 <p>Trusted Relationships with Leading Luxury Cruise Lines</p>
               </div>
 
@@ -264,7 +261,6 @@ const toggleFAQ = (index) => {
           <div className="Dist_include_grid">
 
             <div className="Dist_include_card_1">
-              <div className="Dist_include_icon"><User size={24} /></div>
               <h4>The Services of a Distinctive Voyages Host</h4>
               <p>
                 Your onboard concierge and host to help ensure your experience is seamless and elevated throughout the sailing.
@@ -272,7 +268,6 @@ const toggleFAQ = (index) => {
             </div>
 
             <div className="Dist_include_card_2">
-              <div className="Dist_include_icon"><GlassWater size={24} /></div>
               <h4>Invitation to a Private Welcome Reception</h4>
               <p>
                 Meet your host, fellow guests, and learn what to expect throughout the journey.
@@ -280,7 +275,6 @@ const toggleFAQ = (index) => {
             </div>
 
             <div className="Dist_include_card_3">
-              <div className="Dist_include_icon"><MapPin size={24} /></div>
               <h4>Exclusive Shore Event</h4>
               <p>
                 A complimentary curated event designed to immerse you more deeply in the local culture.
@@ -808,28 +802,28 @@ const toggleFAQ = (index) => {
 
           <div className="Dist_whysail_points">
 
-            <div className="Dist_whysail_grid_item">
-              <Lightbulb size={24} />
+            <div className="Dist_whysail_point_1">
+              <Check size={16} />
               <p>Expert guidance before departure</p>
             </div>
 
-            <div className="Dist_whysail_grid_item">
-              <Compass size={24} />
+            <div className="Dist_whysail_point_2">
+              <Check size={16} />
               <p>Trusted cruise and destination insight</p>
             </div>
 
-            <div className="Dist_whysail_grid_item">
-              <Map size={24} />
+            <div className="Dist_whysail_point_3">
+              <Check size={16} />
               <p>Elevated planning support</p>
             </div>
 
-            <div className="Dist_whysail_grid_item">
-              <Heart size={24} />
+            <div className="Dist_whysail_point_4">
+              <Check size={16} />
               <p>A personal connection to their travel advisor</p>
             </div>
 
-            <div className="Dist_whysail_grid_item">
-              <Star size={24} />
+            <div className="Dist_whysail_point_5">
+              <Check size={16} />
               <p>A more thoughtful and curated travel experience</p>
             </div>
 
@@ -851,14 +845,14 @@ const toggleFAQ = (index) => {
             Booking a Distinctive Voyage through Angela Hughes and Trips & Ships Luxury Travel provides added value that typically is not available when booking directly with the cruise line.
           </p>
 
-          <div className="Dist_booking_grid">
+          <div className="Dist_booking_points">
 
-            <div className="Dist_booking_card"><Gift size={20} /><p>Complimentary Hosted Amenities</p></div>
-            <div className="Dist_booking_card"><GlassWater size={20} /><p>Private Cocktail Reception</p></div>
-            <div className="Dist_booking_card"><Ticket size={20} /><p>Exclusive Shore Event</p></div>
-            <div className="Dist_booking_card"><ConciergeBell size={20} /><p>Concierge Planning Support</p></div>
-            <div className="Dist_booking_card"><Navigation size={20} /><p>Expert Cruise Guidance</p></div>
-            <div className="Dist_booking_card"><Sparkles size={20} /><p>Personalized Service Before and After Travel</p></div>
+            <div className="Dist_booking_point_1"><Check size={16} /><p>Complimentary Hosted Amenities</p></div>
+            <div className="Dist_booking_point_2"><Check size={16} /><p>Private Cocktail Reception</p></div>
+            <div className="Dist_booking_point_3"><Check size={16} /><p>Exclusive Shore Event</p></div>
+            <div className="Dist_booking_point_4"><Check size={16} /><p>Concierge Planning Support</p></div>
+            <div className="Dist_booking_point_5"><Check size={16} /><p>Expert Cruise Guidance</p></div>
+            <div className="Dist_booking_point_6"><Check size={16} /><p>Personalized Service Before and After Travel</p></div>
 
           </div>
 
@@ -894,40 +888,14 @@ const toggleFAQ = (index) => {
 
           <div className="Dist_form_grid">
 
-            <div className="Dist_form_group">
-              <label>Full Name</label>
-              <input type="text" placeholder="Your Name" />
-            </div>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Phone" />
+            <input type="text" placeholder="Sailing of Interest" />
+            <input type="text" placeholder="Number of Travelers" />
+            <input type="text" placeholder="Preferred Cabin Category" />
 
-            <div className="Dist_form_group">
-              <label>Email Address</label>
-              <input type="email" placeholder="Your Email" />
-            </div>
-
-            <div className="Dist_form_group">
-              <label>Phone Number</label>
-              <input type="text" placeholder="Your Phone" />
-            </div>
-
-            <div className="Dist_form_group">
-              <label>Sailing of Interest</label>
-              <input type="text" placeholder="Enterprise / Voyage Name" />
-            </div>
-
-            <div className="Dist_form_group">
-              <label>Number of Travelers</label>
-              <input type="text" placeholder="1-10+" />
-            </div>
-
-            <div className="Dist_form_group">
-              <label>Preferred Cabin Category</label>
-              <input type="text" placeholder="Suite / Balcony / Oceanview" />
-            </div>
-
-            <div className="Dist_form_group full_width">
-              <label>Additional Notes</label>
-              <textarea placeholder="Tell us more about your ideal trip..."></textarea>
-            </div>
+            <textarea placeholder="Additional Notes"></textarea>
 
           </div>
 

@@ -1,0 +1,937 @@
+/* ================= GLOBAL TRANSITIONS ================= */
+* {
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+
+/* ================= HERO ================= */
+.Dist_hero_section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 60px;
+  overflow: hidden;
+}
+
+.Dist_hero_bg_wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.Dist_hero_bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.Dist_hero_bg.fade {
+  opacity: 0;
+  animation: distFade 1.5s ease forwards, distZoom 8s ease forwards;
+}
+
+@keyframes distFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes distZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.Dist_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.Dist_hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  text-align: center;
+  color: white;
+}
+
+.Dist_hero_content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.Dist_hero_content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.Dist_readmore_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Dist_readmore_btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.Dist_readmore_btn::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.Dist_readmore_btn:hover::after {
+  width: 100%;
+}
+
+.Dist_hero_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.Dist_primary_btn {
+  padding: 15px 35px;
+  background: #fff;
+  color: #1a1a1a;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Dist_primary_btn:hover {
+  background: #274472;
+  color: #fff;
+}
+
+.Dist_secondary_btn {
+  padding: 14px 30px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Dist_secondary_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= HEADINGS ================= */
+.Dist_trustclean_heading,
+.Dist_hosted_heading,
+.Dist_voyage_heading,
+.Dist_include_heading,
+.Dist_sailpro_heading,
+.Dist_past_heading,
+.Dist_whysail_heading,
+.Dist_booking_heading,
+.Dist_ready_heading,
+.Dist_faq_heading {
+  font-size: 48px;
+  color: #274472;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.Dist_trustclean_heading::after,
+.Dist_hosted_heading::after,
+.Dist_voyage_heading::after,
+.Dist_include_heading::after,
+.Dist_sailpro_heading::after,
+.Dist_past_heading::after,
+.Dist_whysail_heading::after,
+.Dist_booking_heading::after,
+.Dist_ready_heading::after,
+.Dist_faq_heading::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #274472;
+  display: block;
+  margin-top: 15px;
+}
+
+.Dist_hosted_heading::after,
+.Dist_voyage_heading::after,
+.Dist_include_heading::after,
+.Dist_sailpro_heading::after,
+.Dist_past_heading::after,
+.Dist_whysail_heading::after,
+.Dist_booking_heading::after,
+.Dist_ready_heading::after,
+.Dist_faq_heading::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= TRUST SECTION ================= */
+.Dist_trustclean_section {
+  background: #f7f9fb;
+  padding: 80px 20px;
+}
+
+.Dist_trustclean_container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.Dist_trustclean_intro,
+.Dist_trustclean_outro {
+  color: #274472cc;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+.Dist_trustclean_points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 25px;
+  margin-bottom: 25px;
+}
+
+.Dist_trustclean_points>div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.Dist_trustclean_points svg {
+  color: #274472;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.Dist_trustclean_points p {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.625;
+  margin: 0;
+}
+
+.Dist_trustclean_right img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= SECTIONS ================= */
+.Dist_hosted_section,
+.Dist_voyage_section,
+.Dist_include_section,
+.Dist_whysail_section,
+.Dist_booking_section,
+.Dist_ready_section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.Dist_hosted_section {
+  background: #eef2f5;
+}
+
+.Dist_voyage_section {
+  background: #f7f9fb;
+}
+
+.Dist_include_section {
+  background: #eef2f5;
+}
+
+.Dist_hosted_text,
+.Dist_voyage_text,
+.Dist_voyage_text2,
+.Dist_include_note,
+.Dist_include_note2 {
+  color: #274472cc;
+  max-width: 850px;
+  margin: 0 auto 15px;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+}
+
+/* ================= INCLUDED BENEFITS ================= */
+.Dist_include_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.Dist_include_grid>div {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Dist_include_grid>div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.Dist_include_icon {
+  color: #274472;
+}
+
+.Dist_include_grid h4 {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.Dist_include_grid p {
+  color: #274472cc;
+  font-size: 18px;
+  font-weight: 300px;
+  margin: 0;
+  line-height: 1.625;
+}
+
+/* ================= COMPARE TABLES ================= */
+.Dist_compare_section {
+  background: #f7f9fb;
+  padding: 80px 20px;
+}
+
+.Dist_table_wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  margin-top: 35px;
+}
+
+.Dist_compare_table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 14px;
+}
+
+.Dist_compare_table thead {
+  background: #274472;
+  color: white;
+}
+
+.Dist_compare_table th {
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Dist_compare_table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #edf2f7;
+  color: #2d3748;
+}
+
+.Dist_compare_table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.Dist_compare_table tbody tr:hover {
+  background: #edf2f7;
+}
+
+/* ================= SAILING CARDS (2026 Sailings) ================= */
+.Dist_sailpro_section {
+  background: #f7f9fb;
+  padding: 80px 20px;
+}
+
+.Dist_sailpro_container,
+.Dist_past_container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.Dist_sailpro_card_one,
+.Dist_sailpro_card_two,
+.Dist_sailpro_card_three,
+.Dist_sailpro_card_four,
+.Dist_sailpro_card_five,
+.Dist_sailpro_card_six,
+.Dist_past_card {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  background: #fff;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.Dist_sailpro_card_one:hover,
+.Dist_sailpro_card_two:hover,
+.Dist_sailpro_card_three:hover,
+.Dist_sailpro_card_four:hover,
+.Dist_sailpro_card_five:hover,
+.Dist_sailpro_card_six:hover,
+.Dist_past_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.Dist_sailpro_imgwrap_one,
+.Dist_sailpro_imgwrap_two,
+.Dist_sailpro_imgwrap_three,
+.Dist_sailpro_imgwrap_four,
+.Dist_sailpro_imgwrap_five,
+.Dist_sailpro_imgwrap_six,
+.Dist_past_imgwrap {
+  overflow: hidden;
+  height: 100%;
+}
+
+.Dist_sailpro_imgwrap_one img,
+.Dist_sailpro_imgwrap_two img,
+.Dist_sailpro_imgwrap_three img,
+.Dist_sailpro_imgwrap_four img,
+.Dist_sailpro_imgwrap_five img,
+.Dist_sailpro_imgwrap_six img,
+.Dist_past_imgwrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Dist_sailpro_content_one,
+.Dist_sailpro_content_two,
+.Dist_sailpro_content_three,
+.Dist_sailpro_content_four,
+.Dist_sailpro_content_five,
+.Dist_sailpro_content_six,
+.Dist_past_content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Dist_sailpro_meta_one,
+.Dist_sailpro_meta_two,
+.Dist_sailpro_meta_three,
+.Dist_sailpro_meta_four,
+.Dist_sailpro_meta_five,
+.Dist_sailpro_meta_six,
+.Dist_past_content .meta {
+  font-size: 18px;
+  color: #274472;
+  font-weight: 300;
+  line-height: 1.625;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Dist_sailpro_title_one,
+.Dist_sailpro_title_two,
+.Dist_sailpro_title_three,
+.Dist_sailpro_title_four,
+.Dist_sailpro_title_five,
+.Dist_sailpro_title_six,
+.Dist_past_content h3 {
+  font-size: 26px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.Dist_sailpro_desc_one,
+.Dist_sailpro_desc_two,
+.Dist_sailpro_desc_three,
+.Dist_sailpro_desc_four,
+.Dist_sailpro_desc_five,
+.Dist_sailpro_desc_six,
+.Dist_past_content .desc {
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.625;
+}
+
+.Dist_sailpro_route_one,
+.Dist_sailpro_route_two,
+.Dist_sailpro_route_three,
+.Dist_sailpro_route_four,
+.Dist_sailpro_route_five,
+.Dist_sailpro_route_six,
+.Dist_past_content .route {
+  color: #274472cc;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+  margin-bottom: 10px;
+}
+
+.Dist_sailpro_text_one,
+.Dist_sailpro_text_two,
+.Dist_sailpro_text_three,
+.Dist_sailpro_text_four,
+.Dist_sailpro_text_five,
+.Dist_sailpro_text_six,
+.Dist_past_content p {
+  color: #4a5568;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+  margin-bottom: 12px;
+}
+
+.Dist_sailpro_ideal_one,
+.Dist_sailpro_ideal_two,
+.Dist_sailpro_ideal_three,
+.Dist_sailpro_ideal_four,
+.Dist_sailpro_ideal_five,
+.Dist_sailpro_ideal_six,
+.Dist_past_content .ideal {
+  /* font-style: italic; */
+  color: #274472aa;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+}
+
+.Dist_sailpro_btn_one,
+.Dist_sailpro_btn_two,
+.Dist_sailpro_btn_three,
+.Dist_sailpro_btn_four,
+.Dist_sailpro_btn_five,
+.Dist_sailpro_btn_six,
+.Dist_past_content .btn {
+  padding: 14px 30px;
+  background: #274472;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Dist_sailpro_btn_one:hover,
+.Dist_past_content .btn:hover {
+  background: #1a2f4d;
+  box-shadow: 0 5px 15px rgba(39, 68, 114, 0.3);
+}
+
+/* ================= WHY SAIL SECTION ================= */
+.Dist_whysail_section {
+  background: #eef2f5;
+}
+
+.Dist_whysail_container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.Dist_whysail_intro {
+  color: #274472cc;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+}
+
+.Dist_whysail_points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.Dist_whysail_grid_item {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.Dist_whysail_grid_item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1);
+}
+
+.Dist_whysail_grid_item svg {
+  color: #274472;
+}
+
+.Dist_whysail_grid_item p {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.625;
+}
+
+/* ================= BOOKING BENEFITS ================= */
+.Dist_booking_section {
+  background: #f7f9fb;
+}
+
+.Dist_booking_container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.Dist_booking_intro {
+  color: #274472cc;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+}
+
+.Dist_booking_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Dist_booking_card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border: 1px solid #edf2f7;
+  text-align: left;
+}
+
+.Dist_booking_card:hover {
+  border-color: #27447233;
+  background: #fcfdfe;
+  transform: scale(1.02);
+}
+
+.Dist_booking_card svg {
+  color: #274472;
+  flex-shrink: 0;
+}
+
+.Dist_booking_card p {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ================= READY TO SAIL ================= */
+.Dist_ready_section {
+  background: #eef2f5;
+}
+
+.Dist_ready_container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+.Dist_ready_heading {
+  margin-top: 0;
+}
+
+.Dist_ready_text,
+.Dist_ready_text2 {
+  color: #274472cc;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.625;
+  margin-bottom: 15px;
+}
+
+/* ================= FORM ================= */
+.Dist_form_section {
+  background: #f7f9fb;
+  padding: 100px 20px;
+}
+
+.Dist_form_container {
+  max-width: 950px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.06);
+}
+
+.Dist_form_heading {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #274472;
+}
+
+.Dist_form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.Dist_form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.Dist_form_group.full_width {
+  grid-column: span 2;
+}
+
+.Dist_form_group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #274472;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Dist_form_group input,
+.Dist_form_group textarea {
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8fafc;
+}
+
+.Dist_form_group input:focus,
+.Dist_form_group textarea:focus {
+  border-color: #274472;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(39, 68, 114, 0.1);
+}
+
+.Dist_form_group textarea {
+  height: 150px;
+}
+
+.Dist_form_btn {
+  margin-top: 40px;
+  width: 100%;
+  padding: 22px;
+  background: #274472;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Dist_form_btn:hover {
+  background: #1a2f4d;
+  box-shadow: 0 12px 25px rgba(39, 68, 114, 0.25);
+}
+
+/* ================= FAQ ================= */
+.Dist_faq_section {
+  background: white;
+  padding: 80px 20px;
+}
+
+.Dist_faq_list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.Dist_faq_item {
+  border: 1px solid #edf2f7;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.Dist_faq_question {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Dist_faq_question h4 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.Dist_faq_answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 30px;
+  opacity: 0;
+}
+
+.Dist_faq_answer.active {
+  max-height: 300px;
+  padding-bottom: 30px;
+  opacity: 1;
+}
+
+.Dist_faq_answer p {
+  color: #4a5568;
+  font-size: 17px;
+  line-height: 1.7;
+  padding-top: 20px;
+  border-top: 1px solid #edf2f7;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .Dist_hero_content h1 {
+    font-size: 42px;
+  }
+
+  .Dist_trustclean_container {
+    grid-template-columns: 1fr;
+  }
+
+  .Dist_trustclean_heading,
+  .Dist_hosted_heading,
+  .Dist_voyage_heading,
+  .Dist_include_heading {
+    font-size: 36px;
+  }
+
+  .Dist_include_grid,
+  .Dist_booking_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .Dist_hero_content h1 {
+    font-size: 32px;
+  }
+
+  .Dist_trustclean_heading,
+  .Dist_hosted_heading,
+  .Dist_voyage_heading,
+  .Dist_include_heading,
+  .Dist_sailpro_heading {
+    font-size: 30px;
+  }
+
+  .Dist_sailpro_card_one,
+  .Dist_sailpro_card_two,
+  .Dist_sailpro_card_three,
+  .Dist_sailpro_card_four,
+  .Dist_sailpro_card_five,
+  .Dist_sailpro_card_six,
+  .Dist_past_card {
+    grid-template-columns: 1fr;
+  }
+
+  .Dist_whysail_points,
+  .Dist_booking_grid,
+  .Dist_form_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Dist_form_group.full_width {
+    grid-column: span 1;
+  }
+
+  .Dist_form_container {
+    padding: 40px 20px;
+  }
+
+  .Dist_include_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .Dist_hero_content h1 {
+    font-size: 28px;
+  }
+
+  .Dist_primary_btn,
+  .Dist_secondary_btn {
+    width: 100%;
+  }
+}
+.Dist_contact_container{
+  text-align: center;
+}
+.Dist_faq_heading{
+  text-align: center;
+}
