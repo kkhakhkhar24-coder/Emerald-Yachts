@@ -169,8 +169,16 @@ section {
   margin-bottom: 20px;
   font-weight: 500;
   position: relative;
+  
 }
 
+.Dist_past_section{
+    background-color: white;
+}
+
+.Dist_contact_section{
+    background-color: white;
+}
 .Dist_trustclean_heading::after,
 .Dist_hosted_heading::after,
 .Dist_voyage_heading::after,
