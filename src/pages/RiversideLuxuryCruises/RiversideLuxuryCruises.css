@@ -322,11 +322,14 @@
 
 .riv_hero_button_group {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin-top: 36px;
+  margin-top: 40px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .riv_hero_btn_filled {
@@ -793,10 +796,24 @@
    MODERN IMAGE GALLERY
    ======================================== */
 .riv-gallery-section {
-  padding: 100px 20px;
+  padding: 120px 20px;
   background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3欲%3Cfilter id='noiseFilter'%3欲%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3欲%3C/filter%3欲%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3欲%3C/svg%3欲");
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.riv-gallery-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(39, 68, 114, 0.02) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .riv-gallery-inner {
@@ -824,16 +841,31 @@
 
 .riv-gallery-h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 48px;
   color: #274472;
   margin: 0;
+  letter-spacing: -0.01em;
+  font-weight: 500;
 }
 
 .riv-gallery-divider {
-  width: 60px;
-  height: 2px;
-  background-color: #274472;
-  margin: 24px auto;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #274472, transparent);
+  margin: 30px auto;
+  position: relative;
+}
+
+.riv-gallery-divider::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background: #274472;
+  border-radius: 50%;
 }
 
 .riv-gallery-p {
@@ -870,10 +902,20 @@
 /* ── Item shell ── */
 .riv-gallery-item {
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background: #1a1a1a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.riv-gallery-item:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px rgba(39, 68, 114, 0.2), 
+              0 10px 20px rgba(39, 68, 114, 0.1);
+  border-color: rgba(39, 68, 114, 0.2);
 }
 
 .riv-gallery-image-box {
@@ -886,11 +928,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 2s cubic-bezier(0.1, 0, 0.1, 1);
+  filter: brightness(0.9) contrast(1.1);
 }
 
 .riv-gallery-item:hover .riv-gallery-img {
-  transform: scale(1.08);
+  transform: scale(1.1) rotate(0.5deg);
+  filter: brightness(1) contrast(1.1);
 }
 
 /* ── Hover overlay ── */
@@ -899,16 +943,26 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(39, 68, 114, 0.9) 0%,
-    rgba(39, 68, 114, 0.2) 60%,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.5) 40%,
+    rgba(15, 23, 42, 0.1) 70%,
     transparent 100%
   );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 30px;
+  align-items: center;
+  padding: 40px;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transform: translateY(10px);
+  transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.riv-gallery-item:hover .riv-gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  backdrop-filter: blur(3px);
 }
 
 .riv-gallery-item:hover .riv-gallery-overlay {
@@ -918,33 +972,84 @@
 .riv-gallery-badge {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 6px 14px;
-  border-radius: 4px;
+  background: #274472;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 100px;
   width: fit-content;
-  margin-bottom: 12px;
-  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(39, 68, 114, 0.4);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0.1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.riv-gallery-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: rivBadgeShine 4s infinite linear;
+}
+
+@keyframes rivBadgeShine {
+  0%   { left: -100%; }
+  25%  { left: 100%; }
+  100% { left: 100%; }
+}
+
+.riv-gallery-item:hover .riv-gallery-badge {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .riv-gallery-h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 26px;
+  font-size: 28px;
   color: #ffffff;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-weight: 500;
+  line-height: 1.2;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0.2s;
+}
+
+.riv-gallery-item:hover .riv-gallery-h3 {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .riv-gallery-item_p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-weight: 300;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0.3s;
+}
+
+.riv-gallery-item:hover .riv-gallery-item_p {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* ── Tablet (≤1024px) ── */

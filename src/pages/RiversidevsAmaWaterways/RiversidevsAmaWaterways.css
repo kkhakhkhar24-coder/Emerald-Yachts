@@ -98,6 +98,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     line-height: 1.75 !important;
     max-width: 780px;
     margin: 0 auto;
+    text-align: center;
 }
 .rva-disclaimer {
     font-weight: 300 !important;
@@ -343,6 +344,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     line-height: 1.7 !important; margin-top: 24px !important;
     max-width: 780px; margin-left: auto; margin-right: auto;
     padding-top: 20px; border-top: 1px solid rgba(39,68,114,0.08);
+    text-align: center;
 }
 
 /* ========================================

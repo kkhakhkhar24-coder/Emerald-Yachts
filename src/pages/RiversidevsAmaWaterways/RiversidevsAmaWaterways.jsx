@@ -865,11 +865,10 @@ const RiversidevsAmaWaterways = () => {
                   className="rva-gallery-img"
                 />
                 <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Premier Suites</span>
-                  <h3 className="rva-gallery-h3">Panoramic Elegance</h3>
+                  <span className="rva-gallery-badge">Poolside Escape</span>
+                  <h3 className="rva-gallery-h3">Relaxed Poolside Luxury Experience</h3>
                   <p className="rva-gallery-item_p">
-                    Spacious accommodations with floor-to-ceiling views of the
-                    river.
+                    Unwind with handcrafted cocktails beside a tranquil onboard pool, where modern design and scenic river views create the perfect setting for relaxation.
                   </p>
                 </div>
               </div>
@@ -884,8 +883,8 @@ const RiversidevsAmaWaterways = () => {
                   className="rva-gallery-img"
                 />
                 <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Onboard Life</span>
-                  <h3 className="rva-gallery-h3">Refined Atmosphere</h3>
+                  <span className="rva-gallery-badge">Fine Dining</span>
+                  <h3 className="rva-gallery-h3">Elegant Onboard Fine Dining</h3>
                 </div>
               </div>
             </div>
@@ -899,8 +898,8 @@ const RiversidevsAmaWaterways = () => {
                   className="rva-gallery-img"
                 />
                 <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Fine Dining</span>
-                  <h3 className="rva-gallery-h3">Culinary Excellence</h3>
+                  <span className="rva-gallery-badge">River Suites</span>
+                  <h3 className="rva-gallery-h3">Luxury River Suite with Panoramic Views</h3>
                 </div>
               </div>
             </div>
@@ -914,8 +913,8 @@ const RiversidevsAmaWaterways = () => {
                   className="rva-gallery-img"
                 />
                 <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Destinations</span>
-                  <h3 className="rva-gallery-h3">European River Charms</h3>
+                  <span className="rva-gallery-badge">Social Lounge</span>
+                  <h3 className="rva-gallery-h3">Social Evenings & Lounge Experience</h3>
                 </div>
               </div>
             </div>

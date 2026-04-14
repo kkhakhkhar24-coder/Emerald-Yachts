@@ -479,11 +479,10 @@ const RiversideLuxuryCruises = () => {
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Premier Suites</span>
-                  <h3 className="riv-gallery-h3">Panoramic Elegance</h3>
+                  <span className="riv-gallery-badge">Fine Dining</span>
+                  <h3 className="riv-gallery-h3">Elegant Onboard Fine Dining</h3>
                   <p className="riv-gallery-item_p">
-                    Spacious accommodations with floor-to-ceiling views of the
-                    river.
+                    Dine in a beautifully designed restaurant where sophisticated interiors, attentive service, and curated menus create a refined culinary experience.
                   </p>
                 </div>
               </div>
@@ -498,14 +497,14 @@ const RiversideLuxuryCruises = () => {
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Onboard Life</span>
-                  <h3 className="riv-gallery-h3">Refined Atmosphere</h3>
+                  <span className="riv-gallery-badge">Gourmet Selection</span>
+                  <h3 className="riv-gallery-h3">Artisanal Cuisine & Fresh Selections</h3>
                 </div>
               </div>
             </div>
 
-            {/* 3 — Single */}
-            <div className="riv-gallery-item">
+            {/* 3 — Tall (row span 2) */}
+            <div className="riv-gallery-item riv-gallery-tall">
               <div className="riv-gallery-image-box">
                 <img
                   src={ImageGellery3}
@@ -513,13 +512,13 @@ const RiversideLuxuryCruises = () => {
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Fine Dining</span>
-                  <h3 className="riv-gallery-h3">Culinary Excellence</h3>
+                  <span className="riv-gallery-badge">Private Terrace</span>
+                  <h3 className="riv-gallery-h3">Luxury Suite Terrace with Private Jacuzzi</h3>
                 </div>
               </div>
             </div>
 
-            {/* 4 — Single (NEW) */}
+            {/* 4 — Single (row 3, col 1) */}
             <div className="riv-gallery-item">
               <div className="riv-gallery-image-box">
                 <img
@@ -528,28 +527,13 @@ const RiversideLuxuryCruises = () => {
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Entertainment</span>
-                  <h3 className="riv-gallery-h3">Evening Elegance</h3>
+                  <span className="riv-gallery-badge">Culinary Art</span>
+                  <h3 className="riv-gallery-h3">Chef-Curated Culinary Creations</h3>
                 </div>
               </div>
             </div>
 
-            {/* 5 — Wide (col span 2) */}
-            <div className="riv-gallery-item riv-gallery-wide">
-              <div className="riv-gallery-image-box">
-                <img
-                  src={ImageGellery5}
-                  alt="Exclusive Excursions"
-                  className="riv-gallery-img"
-                />
-                <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Guided Tours</span>
-                  <h3 className="riv-gallery-h3">Exclusive Discoveries</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* 6 — Single */}
+            {/* 5 — Single (row 3, col 2) - MOVED HERE to fill tablet gaps */}
             <div className="riv-gallery-item">
               <div className="riv-gallery-image-box">
                 <img
@@ -558,8 +542,23 @@ const RiversideLuxuryCruises = () => {
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Wellness</span>
-                  <h3 className="riv-gallery-h3">Relax & Rejuvenate</h3>
+                  <span className="riv-gallery-badge">Evening Deck</span>
+                  <h3 className="riv-gallery-h3">Evening Poolside Serenity</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 6 — Wide (row 3, col 3-4 / Row 4 in tablet) */}
+            <div className="riv-gallery-item riv-gallery-wide">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery5}
+                  alt="Exclusive Excursions"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Wellness Lounge</span>
+                  <h3 className="riv-gallery-h3">Onboard Spa & Beauty Experience</h3>
                 </div>
               </div>
             </div>
