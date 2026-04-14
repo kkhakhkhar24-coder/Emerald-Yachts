@@ -998,6 +998,31 @@ h3 {
   display: block;
 }
 
+/* Section 5 Image Grid */
+.drake-section5-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.drake-section5-grid .drake-img-fluid {
+  height: 380px;
+}
+
+@media (max-width: 900px) {
+  .drake-section5-grid .drake-img-fluid {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drake-section5-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+
 .drake-hero-caption {
   margin-top: 25px;
   padding-left: 20px;
@@ -3829,7 +3854,7 @@ h3 {
 .drake-final-cta-section {
   position: relative;
   padding: 60px 20px;
-  background: url('../../assets/DrakePassage/Footer_Image.jpeg') center/cover no-repeat;
+  background: url('../../assets/DrakePassage/Footer_Image.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

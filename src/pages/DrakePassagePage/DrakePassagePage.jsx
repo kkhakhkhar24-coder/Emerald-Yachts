@@ -23,8 +23,8 @@ import section1_Image from "../../assets/DrakePassage/section1_image.jpeg";
 import section2_Image1 from "../../assets/DrakePassage/section2_image1.png";
 import section2_Image2 from "../../assets/DrakePassage/section2_image2.png";
 import section3_Image1 from "../../assets/DrakePassage/section3_image1.png";
-import section3_Image2 from "../../assets/DrakePassage/section3_image2.jpeg";
-import section5_Image1 from "../../assets/DrakePassage/section5_image1.jpeg";
+import section5_Image1 from "../../assets/DrakePassage/section5_image1.png";
+import section5_Image2 from "../../assets/DrakePassage/section5_image2.png";
 import section6_Image1 from "../../assets/DrakePassage/section06_image1.jpeg";
 import section6_Image2 from "../../assets/DrakePassage/section06_image2.jpeg";
 import section8_Image1 from "../../assets/DrakePassage/section8_image1.png";
@@ -263,7 +263,6 @@ export default function DrakePassagePage() {
       <section className="drake-section drake-bg-white drake-clean-layout">
         <div className="drake-section-inner drake-wide">
           <div className="drake-sticky-wrapper">
-
             {/* Left Column: Sticky Title and Editorial Note */}
             <aside className="drake-side-sticky">
               <div className="drake-sticky-element">
@@ -275,8 +274,10 @@ export default function DrakePassagePage() {
                 {/* Editorial box from your reference image, filling the left side gap */}
                 <div className="drake-editorial-note-blue">
                   <p>
-                    The Drake Passage crossing experience in Antarctica is not an optional add-on.
-                    It is part of the structure of the journey and is built into expedition planning from the beginning.
+                    The Drake Passage crossing experience in Antarctica is not
+                    an optional add-on. It is part of the structure of the
+                    journey and is built into expedition planning from the
+                    beginning.
                   </p>
                 </div>
               </div>
@@ -285,13 +286,16 @@ export default function DrakePassagePage() {
             {/* Right Column: Narrative Content and Main Image */}
             <main className="drake-content-column">
               <p className="drake-lead-para">
-                The Drake Passage is the stretch of ocean between the southern tip of South America and Antarctica, connecting the Atlantic and Pacific Oceans.
+                The Drake Passage is the stretch of ocean between the southern
+                tip of South America and Antarctica, connecting the Atlantic and
+                Pacific Oceans.
               </p>
 
               <div className="drake-narrative-body">
                 <p className="drake-section-p-clean">
-                  It is the primary route used by expedition ships traveling to the Antarctic Peninsula.
-                  Most voyages cross the Drake Passage twice, once heading south and once returning north.
+                  It is the primary route used by expedition ships traveling to
+                  the Antarctic Peninsula. Most voyages cross the Drake Passage
+                  twice, once heading south and once returning north.
                 </p>
 
                 {/* SEO-Optimized Image (Matches the reference image with ship and rainbow) */}
@@ -304,8 +308,11 @@ export default function DrakePassagePage() {
                     />
                   </div>
                   <figcaption className="drake-hero-caption">
-                    <span className="drake-caption-tag">Expedition Insight</span>
-                    Modern expedition ships are designed to handle the unpredictable conditions of the Drake Passage crossing
+                    <span className="drake-caption-tag">
+                      Expedition Insight
+                    </span>
+                    Modern expedition ships are designed to handle the
+                    unpredictable conditions of the Drake Passage crossing
                   </figcaption>
                 </figure>
               </div>
@@ -318,18 +325,27 @@ export default function DrakePassagePage() {
       <section className="drake-section drake-bg-soft drake-roughness-proper">
         <div className="drake-section-inner drake-wide">
           <div className="drake-sticky-wrapper flipped">
-
             {/* Left Column: Sticky Title & Terminology Definitions to fill the gap */}
             <aside className="drake-side-sticky">
               <div className="drake-sticky-element">
-                <h2 className="drake-section-h2 drake-left-bar">How Rough Is the <br />Drake Passage</h2>
+                <h2 className="drake-section-h2 drake-left-bar">
+                  How Rough Is the <br />
+                  Drake Passage
+                </h2>
 
                 {/* Definitions Box - Using original content to fill the left gap */}
                 <div className="drake-editorial-note-navy">
-                  <p className="drake-note-label">Travelers often hear two terms:</p>
-                  <p><strong>Drake Lake:</strong> referring to calmer crossings</p>
+                  <p className="drake-note-label">
+                    Travelers often hear two terms:
+                  </p>
+                  <p>
+                    <strong>Drake Lake:</strong> referring to calmer crossings
+                  </p>
                   <div className="drake-note-divider"></div>
-                  <p><strong>Drake Shake:</strong> referring to more active conditions</p>
+                  <p>
+                    <strong>Drake Shake:</strong> referring to more active
+                    conditions
+                  </p>
                 </div>
               </div>
             </aside>
@@ -337,7 +353,8 @@ export default function DrakePassagePage() {
             {/* Right Column: Narrative Content and Balanced Imagery */}
             <main className="drake-content-column">
               <p className="drake-lead-para">
-                Conditions in the Drake Passage vary based on weather systems, wind patterns, and time of year. Both occur.
+                Conditions in the Drake Passage vary based on weather systems,
+                wind patterns, and time of year. Both occur.
               </p>
 
               <div className="drake-narrative-body">
@@ -346,18 +363,22 @@ export default function DrakePassagePage() {
                   <div className="drake-figure-inner">
                     <img
                       src={section2_Image1}
-                      alt="Calm waters in the Drake Passage during a smooth Antarctica cruise crossing known as Drake Lake"
+                      alt="Crystal-clear turquoise ocean waves with white foam under natural daylight, showing dynamic sea movement"
                       className="drake-img-fluid"
                     />
                   </div>
                   <figcaption className="drake-hero-caption">
                     <span className="drake-caption-tag">Conditions: Calm</span>
-                    When conditions are calm, known as the "Drake Lake," the crossing can feel surprisingly smooth and peaceful.
+                    When conditions are calm, known as the "Drake Lake," the
+                    crossing can feel surprisingly smooth and peaceful.
                   </figcaption>
                 </figure>
 
                 <p className="drake-section-p-clean">
-                  Most crossings fall somewhere in between. Modern expedition ships are designed to manage these conditions, and the experience is influenced as much by ship design and preparation as it is by weather.
+                  Most crossings fall somewhere in between. Modern expedition
+                  ships are designed to manage these conditions, and the
+                  experience is influenced as much by ship design and
+                  preparation as it is by weather.
                 </p>
 
                 {/* SEO Image 3: Drake Shake (Consistent Figure Style with Section 1) */}
@@ -365,25 +386,31 @@ export default function DrakePassagePage() {
                   <div className="drake-figure-inner">
                     <img
                       src={section2_Image2}
-                      alt="Rough seas and powerful waves in the Drake Passage during stormy Southern Ocean conditions"
+                      alt="Antarctic icebergs floating on calm ocean water during a colorful sunset with pink and blue sky reflections"
                       className="drake-img-fluid"
                     />
                   </div>
                   <figcaption className="drake-hero-caption">
-                    <span className="drake-caption-tag">Conditions: Active</span>
-                    The "Drake Shake" brings powerful swells that make this crossing one of the most talked about parts of an Antarctica expedition.
+                    <span className="drake-caption-tag">
+                      Conditions: Active
+                    </span>
+                    The "Drake Shake" brings powerful swells that make this
+                    crossing one of the most talked about parts of an Antarctica
+                    expedition.
                   </figcaption>
                 </figure>
 
                 <div className="drake-roughness-conclusion">
                   {/* Consistent White Editorial Box for the concluding sentence */}
                   <div className="drake-editorial-note-white">
-                    <p>Understanding this variability is key to setting expectations correctly.</p>
+                    <p>
+                      Understanding this variability is key to setting
+                      expectations correctly.
+                    </p>
                   </div>
                 </div>
               </div>
             </main>
-
           </div>
         </div>
       </section>
@@ -392,14 +419,18 @@ export default function DrakePassagePage() {
       <section className="drake-section drake-bg-white drake-ship-management-fixed">
         <div className="drake-section-inner drake-wide">
           <div className="drake-sticky-wrapper">
-
             {/* Left Column: Sticky Title & Lead (Matches Section 1 & 2) */}
             <aside className="drake-side-sticky">
               <div className="drake-sticky-element">
-                <h2 className="drake-section-h2 drake-left-bar">How Expedition Ships <br />Handle the Drake Passage</h2>
+                <h2 className="drake-section-h2 drake-left-bar">
+                  How Expedition Ships <br />
+                  Handle the Drake Passage
+                </h2>
 
                 <p className="drake-sticky-lead-text">
-                  Ships designed for Antarctica, including vessels operated by Scenic Luxury Cruises & Tours, are engineered for stability and performance in open water.
+                  Ships designed for Antarctica, including vessels operated by
+                  Scenic Luxury Cruises & Tours, are engineered for stability
+                  and performance in open water.
                 </p>
               </div>
             </aside>
@@ -407,7 +438,9 @@ export default function DrakePassagePage() {
             {/* Right Column: Scrolling Content & Professional Feature Grid */}
             <main className="drake-content-column">
               <p className="drake-section-p-clean">
-                While ocean movement cannot be eliminated, it can be managed. Key factors in modern maritime engineering allow for a controlled and professional crossing.
+                While ocean movement cannot be eliminated, it can be managed.
+                Key factors in modern maritime engineering allow for a
+                controlled and professional crossing.
               </p>
 
               {/* FEATURE CARDS: Clean Architectural Grid */}
@@ -416,7 +449,9 @@ export default function DrakePassagePage() {
                   <div className="drake-card-icon-wrap">
                     <Anchor size={32} strokeWidth={1.5} />
                   </div>
-                  <h3 className="drake-card-h3-sm">Stabilization <br /> Systems</h3>
+                  <h3 className="drake-card-h3-sm">
+                    Stabilization <br /> Systems
+                  </h3>
                   <div className="drake-card-divider-navy"></div>
                 </div>
 
@@ -424,7 +459,9 @@ export default function DrakePassagePage() {
                   <div className="drake-card-icon-wrap">
                     <Ship size={32} strokeWidth={1.5} />
                   </div>
-                  <h3 className="drake-card-h3-sm">Hull Design for <br /> Polar Conditions</h3>
+                  <h3 className="drake-card-h3-sm">
+                    Hull Design for <br /> Polar Conditions
+                  </h3>
                   <div className="drake-card-divider-navy"></div>
                 </div>
               </div>
@@ -439,8 +476,12 @@ export default function DrakePassagePage() {
                   />
                 </div>
                 <figcaption className="drake-hero-caption">
-                  <span className="drake-caption-tag">Maritime Engineering</span>
-                  Ships designed for Antarctica, including vessels operated by Scenic Luxury Cruises & Tours, are engineered for stability and performance in open water.
+                  <span className="drake-caption-tag">
+                    Maritime Engineering
+                  </span>
+                  Ships designed for Antarctica, including vessels operated by
+                  Scenic Luxury Cruises & Tours, are engineered for stability
+                  and performance in open water.
                 </figcaption>
               </figure>
 
@@ -450,19 +491,26 @@ export default function DrakePassagePage() {
                   <Compass size={32} strokeWidth={1.5} />
                 </div>
                 <div className="drake-full-info">
-                  <h3 className="drake-card-h3-sm">Experienced crews monitoring real-time weather</h3>
-                  <p className="drake-section-p-clean" style={{ margin: 0 }}>Itineraries are adjusted dynamically based on weather systems to ensure the smoothest possible crossing.</p>
+                  <h3 className="drake-card-h3-sm">
+                    Experienced crews monitoring real-time weather
+                  </h3>
+                  <p className="drake-section-p-clean" style={{ margin: 0 }}>
+                    Itineraries are adjusted dynamically based on weather
+                    systems to ensure the smoothest possible crossing.
+                  </p>
                 </div>
               </div>
 
               <div className="drake-ship-footer">
                 {/* Consistent White Editorial Box with Navy Border */}
                 <div className="drake-editorial-note-white">
-                  <p>The Drake Passage is not avoided. It is anticipated and managed as part of the expedition.</p>
+                  <p>
+                    The Drake Passage is not avoided. It is anticipated and
+                    managed as part of the expedition.
+                  </p>
                 </div>
               </div>
             </main>
-
           </div>
         </div>
       </section>
@@ -476,7 +524,9 @@ export default function DrakePassagePage() {
             </h2>
             <div className="drake-navy-divider-center"></div>
             <p className="drake-video-subtitle">
-              Watch how modern expedition ships navigate the Drake Passage with advanced stabilization systems and expert crews, ensuring a comfortable and controlled journey to Antarctica.
+              Watch how modern expedition ships navigate the Drake Passage with
+              advanced stabilization systems and expert crews, ensuring a
+              comfortable and controlled journey to Antarctica.
             </p>
           </div>
 
@@ -501,7 +551,11 @@ export default function DrakePassagePage() {
 
           <div className="drake-video-caption">
             <span className="drake-caption-tag">Expedition in Action</span>
-            <p>Modern expedition vessels are engineered to handle the Drake Passage crossing safely and comfortably, providing guests with a smooth transition to Antarctica.</p>
+            <p>
+              Modern expedition vessels are engineered to handle the Drake
+              Passage crossing safely and comfortably, providing guests with a
+              smooth transition to Antarctica.
+            </p>
           </div>
         </div>
       </section>
@@ -595,12 +649,21 @@ export default function DrakePassagePage() {
 
               {/* SEO Image 6: Guest Experience (Matches Section 1 Figure Style) */}
               <figure className="drake-hero-figure">
-                <div className="drake-figure-inner">
-                  <img
-                    src={section5_Image1}
-                    alt="Travelers walking on deck during calm conditions in the Drake Passage Antarctica cruise"
-                    className="drake-img-fluid"
-                  />
+                <div className="drake-section5-grid">
+                  <div className="drake-figure-inner">
+                    <img
+                      src={section5_Image1}
+                      alt="Humpback whale breaching out of the ocean with water splashing around its body in open sea"
+                      className="drake-img-fluid"
+                    />
+                  </div>
+                  <div className="drake-figure-inner">
+                    <img
+                      src={section5_Image2}
+                      alt="Close-up of a fluffy Antarctic seabird chick with soft gray feathers and detailed beak"
+                      className="drake-img-fluid"
+                    />
+                  </div>
                 </div>
                 <figcaption className="drake-hero-caption">
                   <span className="drake-caption-tag">Guest Perspective</span>

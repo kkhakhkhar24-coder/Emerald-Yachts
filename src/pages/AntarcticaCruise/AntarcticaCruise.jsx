@@ -14,7 +14,7 @@ import AntaSilder2 from "../../assets/antarctica-cruise-cost/AntaSilder2.jpg";
 import AntaSilder3 from "../../assets/antarctica-cruise-cost/AntaSilder3.jpg";
 import AntaSilder4 from "../../assets/antarctica-cruise-cost/AntaSilder4.jpg";
 import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.jpg";
-import AntaSilder6 from "../../assets/antarctica-cruise-cost/AntaSilder6.jpg";
+import AntaSilder6 from "../../assets/antarctica-cruise-cost/seal-on-antarctic-ice.png";
 import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.jpg";
 
 import GalleryIceFields from "../../assets/antarctica-cruise-cost/antarctica-ice-fields.png";
