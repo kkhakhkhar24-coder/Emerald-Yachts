@@ -17,6 +17,11 @@ import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.jpg";
 import AntaSilder6 from "../../assets/antarctica-cruise-cost/AntaSilder6.jpg";
 import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.jpg";
 
+import GalleryIceFields from "../../assets/antarctica-cruise-cost/antarctica-ice-fields.png";
+import GalleryIceberg from "../../assets/antarctica-cruise-cost/antarctica-iceberg-reflection.png";
+import GalleryPenguins from "../../assets/antarctica-cruise-cost/penguins-in-antarctica.png";
+import GalleryWhale from "../../assets/antarctica-cruise-cost/whale-diving-antarctica.png";
+
 const AntarcticaCostPage = () => {
   const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
@@ -877,6 +882,101 @@ const AntarcticaCostPage = () => {
             <div className="anta_method_step">
               <span className="anta_step_number">03</span>
               <p>Confirm and plan the full journey</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== GALLERY SECTION — ANTARCTICA IN IMAGES ===== */}
+      <section className="anta_gallery_section">
+        <div className="anta_gallery_inner">
+          <div className="anta_gallery_header">
+            <span className="anta_gallery_eyebrow">
+              The Antarctic Experience
+            </span>
+            <h2 className="anta_gallery_h2">Antarctica Through the Lens</h2>
+            <div className="anta_gallery_divider"></div>
+            <p className="anta_gallery_lead">
+              From endless ice fields to thrilling wildlife encounters —
+              discover what awaits in the world's most remote wilderness.
+            </p>
+          </div>
+
+          <div className="anta_gallery_bento">
+            {/* Featured large image */}
+            <div className="anta_gallery_item anta_gallery_feature">
+              <div className="anta_gallery_img_box">
+                <img
+                  src={GalleryIceFields}
+                  alt="Expansive Antarctic ice fields and floating icebergs beneath clear blue skies"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Ice & Reflection</span>
+                  <h3 className="anta_gallery_h3">Iceberg Reflection</h3>
+                  <p className="anta_gallery_caption">
+                    Towering icebergs create surreal landscapes unlike anywhere
+                    else on earth.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Vertical tall image */}
+            <div className="anta_gallery_item anta_gallery_tall">
+              <div className="anta_gallery_img_box">
+                <img
+                  src={GalleryIceberg}
+                  alt="Massive Antarctic iceberg reflected in calm polar waters"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Polar Landscapes</span>
+                  <h3 className="anta_gallery_h3">Antarctic Ice Fields</h3>
+                  <p className="anta_gallery_caption">
+                    Endless polar landscapes define the breathtaking beauty of
+                    Antarctica.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Standard image */}
+            <div className="anta_gallery_item">
+              <div className="anta_gallery_img_box">
+                <img
+                  src={GalleryPenguins}
+                  alt="Penguins walking across snowy Antarctic shoreline with mountains and glaciers in the background"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Wildlife</span>
+                  <h3 className="anta_gallery_h3">Penguin Colonies</h3>
+                  <p className="anta_gallery_caption">
+                    Walk among penguin colonies in one of the world's last great
+                    wildernesses.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Standard image */}
+            <div className="anta_gallery_item">
+              <div className="anta_gallery_img_box">
+                <img
+                  src={GalleryWhale}
+                  alt="Whale diving beneath Antarctic waters with tail fluke above the surface"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Wildlife</span>
+                  <h3 className="anta_gallery_h3">Whale Encounters</h3>
+                  <p className="anta_gallery_caption">
+                    Close wildlife encounters make Antarctica one of the world's
+                    greatest expedition destinations.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

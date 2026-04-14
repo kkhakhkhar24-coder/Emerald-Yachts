@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "./RiversideLuxuryCruises.css";
 import Navbar from "../../components/Navbar/Navbar";
 import {
@@ -14,174 +14,186 @@ import {
   Compass,
   CheckCircle,
   Plus,
-  Minus
+  Minus,
 } from "lucide-react";
-import ProfileImage from '../../assets/image.jpg'
+import ProfileImage from "../../assets/image.jpg";
+import ImageGellery1 from "../../assets/RiversideLuxuryCruises/Riversideimage1.jpg";
+import ImageGellery2 from "../../assets/RiversideLuxuryCruises/Riversideimage2.jpg";
+import ImageGellery3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.jpg";
+import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.jpg";
+import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.jpg";
+import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.jpg";
 
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "TravelAgency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "logo": "https://www.tripsandships.com/logo.png",
-      "description": "Luxury travel agency specializing in river cruises, luxury cruises, safaris, and custom global itineraries.",
-      "sameAs": [
+      name: "Trips & Ships Luxury Travel",
+      url: "https://www.tripsandships.com",
+      logo: "https://www.tripsandships.com/logo.png",
+      description:
+        "Luxury travel agency specializing in river cruises, luxury cruises, safaris, and custom global itineraries.",
+      sameAs: [
         "https://www.instagram.com/tripsandships",
-        "https://www.linkedin.com/company/trips-and-ships-luxury-travel"
-      ]
+        "https://www.linkedin.com/company/trips-and-ships-luxury-travel",
+      ],
     },
     {
       "@type": "Person",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO of Trips & Ships Luxury Travel",
-      "worksFor": {
+      name: "Angela Hughes",
+      jobTitle: "CEO of Trips & Ships Luxury Travel",
+      worksFor: {
         "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel"
+        name: "Trips & Ships Luxury Travel",
       },
-      "description": "Luxury travel expert with over 40 years of experience specializing in river cruises, luxury cruises, and global travel planning.",
-      "url": "https://www.tripsandships.com",
-      "sameAs": [
+      description:
+        "Luxury travel expert with over 40 years of experience specializing in river cruises, luxury cruises, and global travel planning.",
+      url: "https://www.tripsandships.com",
+      sameAs: [
         "https://www.linkedin.com/in/angela-hughes",
-        "https://www.instagram.com/tripsandships"
-      ]
+        "https://www.instagram.com/tripsandships",
+      ],
     },
     {
       "@type": "WebPage",
-      "name": "Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide",
-      "url": "https://www.tripsandships.com/riverside-luxury-cruises",
-      "description": "Expert guide to Riverside Luxury Cruises including pricing, ships, itineraries, and comparisons.",
-      "inLanguage": "en",
-      "isPartOf": {
+      name: "Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide",
+      url: "https://www.tripsandships.com/riverside-luxury-cruises",
+      description:
+        "Expert guide to Riverside Luxury Cruises including pricing, ships, itineraries, and comparisons.",
+      inLanguage: "en",
+      isPartOf: {
         "@type": "WebSite",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com"
-      }
+        name: "Trips & Ships Luxury Travel",
+        url: "https://www.tripsandships.com",
+      },
     },
     {
       "@type": "Article",
-      "headline": "Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide",
-      "author": {
+      headline:
+        "Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide",
+      author: {
         "@type": "Person",
-        "name": "Angela Hughes"
+        name: "Angela Hughes",
       },
-      "publisher": {
+      publisher: {
         "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel",
-        "logo": {
+        name: "Trips & Ships Luxury Travel",
+        logo: {
           "@type": "ImageObject",
-          "url": "https://www.tripsandships.com/logo.png"
-        }
+          url: "https://www.tripsandships.com/logo.png",
+        },
       },
-      "datePublished": "2026-01-01",
-      "dateModified": "2026-01-01",
-      "mainEntityOfPage": "https://www.tripsandships.com/riverside-luxury-cruises",
-      "description": "Comprehensive expert guide to Riverside Luxury Cruises including pricing, ships, itineraries, and comparisons."
+      datePublished: "2026-01-01",
+      dateModified: "2026-01-01",
+      mainEntityOfPage:
+        "https://www.tripsandships.com/riverside-luxury-cruises",
+      description:
+        "Comprehensive expert guide to Riverside Luxury Cruises including pricing, ships, itineraries, and comparisons.",
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
+      mainEntity: [
         {
           "@type": "Question",
-          "name": "What is Riverside Luxury Cruises known for?",
-          "acceptedAnswer": {
+          name: "What is Riverside Luxury Cruises known for?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside Luxury Cruises is known for spacious ships and boutique luxury service built on the former Crystal river cruise fleet."
-          }
+            text: "Riverside Luxury Cruises is known for spacious ships and boutique luxury service built on the former Crystal river cruise fleet.",
+          },
         },
         {
           "@type": "Question",
-          "name": "How much does a Riverside river cruise cost?",
-          "acceptedAnswer": {
+          name: "How much does a Riverside river cruise cost?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Pricing typically ranges from $4,000 to over $10,000 per person depending on suite category and itinerary."
-          }
+            text: "Pricing typically ranges from $4,000 to over $10,000 per person depending on suite category and itinerary.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Is Riverside considered a luxury river cruise line?",
-          "acceptedAnswer": {
+          name: "Is Riverside considered a luxury river cruise line?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Yes, Riverside is considered a boutique luxury river cruise line offering more space and refinement than most premium brands."
-          }
+            text: "Yes, Riverside is considered a boutique luxury river cruise line offering more space and refinement than most premium brands.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What rivers does Riverside sail?",
-          "acceptedAnswer": {
+          name: "What rivers does Riverside sail?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside sails the Danube, Rhine, and Main rivers in Europe."
-          }
+            text: "Riverside sails the Danube, Rhine, and Main rivers in Europe.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What ships are in the Riverside fleet?",
-          "acceptedAnswer": {
+          name: "What ships are in the Riverside fleet?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "The fleet includes Riverside Mozart, Riverside Debussy, and Riverside Ravel."
-          }
+            text: "The fleet includes Riverside Mozart, Riverside Debussy, and Riverside Ravel.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Is Riverside all-inclusive?",
-          "acceptedAnswer": {
+          name: "Is Riverside all-inclusive?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside includes many core elements but is not as fully all-inclusive as some ultra-luxury competitors."
-          }
+            text: "Riverside includes many core elements but is not as fully all-inclusive as some ultra-luxury competitors.",
+          },
         },
         {
           "@type": "Question",
-          "name": "How does Riverside compare to Viking River Cruises?",
-          "acceptedAnswer": {
+          name: "How does Riverside compare to Viking River Cruises?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside offers more space and a boutique experience, while Viking operates at a larger scale with more standardized offerings."
-          }
+            text: "Riverside offers more space and a boutique experience, while Viking operates at a larger scale with more standardized offerings.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Is Riverside better than AmaWaterways?",
-          "acceptedAnswer": {
+          name: "Is Riverside better than AmaWaterways?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "It depends on travel style. Riverside focuses on space and refinement, while AmaWaterways offers more structured programming."
-          }
+            text: "It depends on travel style. Riverside focuses on space and refinement, while AmaWaterways offers more structured programming.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Who should choose Riverside river cruises?",
-          "acceptedAnswer": {
+          name: "Who should choose Riverside river cruises?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside is best for experienced travelers and luxury clients seeking a quieter and more refined river cruise experience."
-          }
+            text: "Riverside is best for experienced travelers and luxury clients seeking a quieter and more refined river cruise experience.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Are excursions included on Riverside?",
-          "acceptedAnswer": {
+          name: "Are excursions included on Riverside?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Some excursions are included, but offerings vary by itinerary."
-          }
+            text: "Some excursions are included, but offerings vary by itinerary.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What makes Riverside different from other river cruise lines?",
-          "acceptedAnswer": {
+          name: "What makes Riverside different from other river cruise lines?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Riverside stands out for larger ships, a boutique atmosphere, and elevated service compared to traditional river cruise brands."
-          }
+            text: "Riverside stands out for larger ships, a boutique atmosphere, and elevated service compared to traditional river cruise brands.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Is Riverside worth the price?",
-          "acceptedAnswer": {
+          name: "Is Riverside worth the price?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "For travelers prioritizing space, service, and a refined experience, Riverside is considered an excellent value in the luxury segment."
-          }
-        }
-      ]
-    }
-  ]
+            text: "For travelers prioritizing space, service, and a refined experience, Riverside is considered an excellent value in the luxury segment.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 // FAQ Component
@@ -274,9 +286,9 @@ const RiversideLuxuryCruises = () => {
   const [showQuickTake, setShowQuickTake] = useState(false);
 
   const heroImages = [
-    'luxury_river_cruise_1.png',
-    'luxury_river_cruise_2.png',
-    'luxury_river_cruise_3.png'
+    "luxury_river_cruise_1.png",
+    "luxury_river_cruise_2.png",
+    "luxury_river_cruise_3.png",
   ];
 
   useEffect(() => {
@@ -293,7 +305,7 @@ const RiversideLuxuryCruises = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -301,7 +313,9 @@ const RiversideLuxuryCruises = () => {
     <div className="riv_page_main_container">
       {/* SEO & Schema */}
       <Helmet>
-        <title>Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide</title>
+        <title>
+          Riverside Luxury Cruises Review, Pricing, Ships and Expert Guide
+        </title>
         <meta
           name="description"
           content="Riverside Luxury Cruises offers one of Europe's most refined river cruise experiences. Explore pricing, ships, itineraries, and expert comparisons to find out if it's right for you."
@@ -318,8 +332,10 @@ const RiversideLuxuryCruises = () => {
           {heroImages.map((img, index) => (
             <div
               key={index}
-              className={`riv_hero_bg_slide ${currentSlide === index ? 'riv_active_slide' : ''}`}
-              style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/${img})` }}
+              className={`riv_hero_bg_slide ${currentSlide === index ? "riv_active_slide" : ""}`}
+              style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/${img})`,
+              }}
             ></div>
           ))}
         </div>
@@ -327,28 +343,47 @@ const RiversideLuxuryCruises = () => {
         <div className="riv_hero_overlay_content">
           <div className="riv_container_90">
             <div className="riv_hero_text_box">
-              <h1 className="riv_hero_main_h1">Riverside Luxury Cruises: A Boutique Luxury River Cruise Experience in Europe</h1>
-              <p className="riv_hero_sub_p">Spacious ships, elevated service, and a refined approach to European river cruising</p>
+              <h1 className="riv_hero_main_h1">
+                Riverside Luxury Cruises: A Boutique Luxury River Cruise
+                Experience in Europe
+              </h1>
+              <p className="riv_hero_sub_p">
+                Spacious ships, elevated service, and a refined approach to
+                European river cruising
+              </p>
 
               <div className="riv_hero_read_more_outer">
                 <button
                   className="riv_hero_read_more_btn"
                   onClick={() => setShowQuickTake(!showQuickTake)}
                 >
-                  {showQuickTake ? 'Show Less' : 'Read Quick Take'}
-                  {showQuickTake ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                  {showQuickTake ? "Show Less" : "Read More"}
+                  {showQuickTake ? (
+                    <ChevronUp size={16} />
+                  ) : (
+                    <ChevronDown size={16} />
+                  )}
                 </button>
 
                 {showQuickTake && (
                   <div className="riv_hero_quick_take_dropdown">
-                    <p>Riverside Luxury Cruises is one of the best boutique luxury river cruise lines in Europe, ideal for experienced travelers who want more space, elevated service, and a quieter onboard experience than traditional river cruises.</p>
+                    <p>
+                      Riverside Luxury Cruises is one of the best boutique
+                      luxury river cruise lines in Europe, ideal for experienced
+                      travelers who want more space, elevated service, and a
+                      quieter onboard experience than traditional river cruises.
+                    </p>
                   </div>
                 )}
               </div>
 
               <div className="riv_hero_button_group">
-                <button className="riv_hero_btn_filled">View Riverside Pricing</button>
-                <button className="riv_hero_btn_transparent">Compare River Cruise Lines</button>
+                <button className="riv_hero_btn_filled">
+                  View Riverside Pricing
+                </button>
+                <button className="riv_hero_btn_transparent">
+                  Compare River Cruise Lines
+                </button>
               </div>
             </div>
           </div>
@@ -361,11 +396,14 @@ const RiversideLuxuryCruises = () => {
           <div className="riv_intro_content_block">
             <div className="riv_intro_decorative_line"></div>
             <h2 className="riv_intro_highlight_text">
-              There are very few brands in river cruising that truly elevate the experience. <span>Riverside Luxury Cruises is one of them.</span>
+              There are very few brands in river cruising that truly elevate the
+              experience. <span>Riverside Luxury Cruises is one of them.</span>
             </h2>
             <div className="riv_intro_p_box">
               <p className="riv_intro_p_text">
-                Built on the legacy of the former Crystal river ships, Riverside delivers a more refined, spacious, and quietly luxurious way to experience Europe.
+                Built on the legacy of the former Crystal river ships, Riverside
+                delivers a more refined, spacious, and quietly luxurious way to
+                experience Europe.
               </p>
             </div>
           </div>
@@ -396,7 +434,10 @@ const RiversideLuxuryCruises = () => {
             </div>
             <div className="riv_fits_card_panel">
               <h2 className="riv_fits_h2_title">Where Riverside Fits</h2>
-              <p className="riv_fits_description">Riverside sits between premium and ultra-luxury river cruise lines.</p>
+              <p className="riv_fits_description">
+                Riverside sits between premium and ultra-luxury river cruise
+                lines.
+              </p>
               <div className="riv_fits_features">
                 <div className="riv_fit_tag">More Space</div>
                 <div className="riv_fit_tag">Boutique Luxury</div>
@@ -412,13 +453,132 @@ const RiversideLuxuryCruises = () => {
         </div>
       </section>
 
+      {/* MODERN IMAGE GALLERY */}
+      <section className="riv-gallery-section">
+        <div className="riv-gallery-inner">
+          <div className="riv-gallery-header">
+            <span className="riv-gallery-eyebrow">Onboard Experience</span>
+            <h2 className="riv-gallery-h2">
+              Life Aboard Riverside Luxury Cruises
+            </h2>
+            <div className="riv-gallery-divider"></div>
+            <p className="riv-gallery-p">
+              Experience the pinnacle of European river cruising—where spacious
+              all-suite designed ships meet world-class service and boutique
+              refinement.
+            </p>
+          </div>
+
+          <div className="riv-gallery-bento-grid">
+            {/* 1 — Feature (2×2) */}
+            <div className="riv-gallery-item riv-gallery-feature">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery1}
+                  alt="Luxury Suite"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Premier Suites</span>
+                  <h3 className="riv-gallery-h3">Panoramic Elegance</h3>
+                  <p className="riv-gallery-item_p">
+                    Spacious accommodations with floor-to-ceiling views of the
+                    river.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2 — Tall (row span 2) */}
+            <div className="riv-gallery-item riv-gallery-tall">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery2}
+                  alt="Onboard lifestyle"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Onboard Life</span>
+                  <h3 className="riv-gallery-h3">Refined Atmosphere</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 3 — Single */}
+            <div className="riv-gallery-item">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery3}
+                  alt="Fine Dining"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Fine Dining</span>
+                  <h3 className="riv-gallery-h3">Culinary Excellence</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 4 — Single (NEW) */}
+            <div className="riv-gallery-item">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery4}
+                  alt="Entertainment"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Entertainment</span>
+                  <h3 className="riv-gallery-h3">Evening Elegance</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 5 — Wide (col span 2) */}
+            <div className="riv-gallery-item riv-gallery-wide">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery5}
+                  alt="Exclusive Excursions"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Guided Tours</span>
+                  <h3 className="riv-gallery-h3">Exclusive Discoveries</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 6 — Single */}
+            <div className="riv-gallery-item">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery6}
+                  alt="Spa & Wellness"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Wellness</span>
+                  <h3 className="riv-gallery-h3">Relax & Rejuvenate</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* COMPARISON TABLES */}
-      <section className="riv_comparison_table_section" id="riv_comparison_section">
+      <section
+        className="riv_comparison_table_section"
+        id="riv_comparison_section"
+      >
         <div className="riv_container_90">
           <h2 className="riv_comp_main_h2">Compare the Best River Cruises</h2>
 
           <div className="riv_table_container_box">
-            <div className="riv_table_label">River Cruise Brand Positioning</div>
+            <div className="riv_table_label">
+              River Cruise Brand Positioning
+            </div>
             <div className="riv_responsive_table_holder">
               <table className="riv_striped_table">
                 <thead>
@@ -429,11 +589,31 @@ const RiversideLuxuryCruises = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="riv_row_riverside"><td>Riverside Luxury Cruises</td><td>Boutique luxury</td><td>Experienced travelers</td></tr>
-                  <tr className="riv_row_viking"><td>Viking River Cruises</td><td>Premium</td><td>First-time cruisers</td></tr>
-                  <tr className="riv_row_ama"><td>AmaWaterways</td><td>Premium+</td><td>Active travelers</td></tr>
-                  <tr className="riv_row_avalon"><td>Avalon Waterways</td><td>Premium</td><td>Value travelers</td></tr>
-                  <tr className="riv_row_scenic"><td>Scenic Luxury Cruises & Tours</td><td>Ultra-luxury</td><td>All-inclusive luxury</td></tr>
+                  <tr className="riv_row_riverside">
+                    <td>Riverside Luxury Cruises</td>
+                    <td>Boutique luxury</td>
+                    <td>Experienced travelers</td>
+                  </tr>
+                  <tr className="riv_row_viking">
+                    <td>Viking River Cruises</td>
+                    <td>Premium</td>
+                    <td>First-time cruisers</td>
+                  </tr>
+                  <tr className="riv_row_ama">
+                    <td>AmaWaterways</td>
+                    <td>Premium+</td>
+                    <td>Active travelers</td>
+                  </tr>
+                  <tr className="riv_row_avalon">
+                    <td>Avalon Waterways</td>
+                    <td>Premium</td>
+                    <td>Value travelers</td>
+                  </tr>
+                  <tr className="riv_row_scenic">
+                    <td>Scenic Luxury Cruises & Tours</td>
+                    <td>Ultra-luxury</td>
+                    <td>All-inclusive luxury</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -452,9 +632,24 @@ const RiversideLuxuryCruises = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="riv_feat_row_space"><td>Space</td><td>High</td><td>Moderate</td><td>High</td></tr>
-                  <tr className="riv_feat_row_vibe"><td>Atmosphere</td><td>Boutique</td><td>Structured</td><td>Formal</td></tr>
-                  <tr className="riv_feat_row_inc"><td>Inclusions</td><td>Moderate</td><td>Moderate</td><td>Extensive</td></tr>
+                  <tr className="riv_feat_row_space">
+                    <td>Space</td>
+                    <td>High</td>
+                    <td>Moderate</td>
+                    <td>High</td>
+                  </tr>
+                  <tr className="riv_feat_row_vibe">
+                    <td>Atmosphere</td>
+                    <td>Boutique</td>
+                    <td>Structured</td>
+                    <td>Formal</td>
+                  </tr>
+                  <tr className="riv_feat_row_inc">
+                    <td>Inclusions</td>
+                    <td>Moderate</td>
+                    <td>Moderate</td>
+                    <td>Extensive</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -466,7 +661,9 @@ const RiversideLuxuryCruises = () => {
       <section className="riv_pricing_card_section" id="riv_pricing_section">
         <div className="riv_container_90">
           <h2 className="riv_pricing_center_h2">Riverside Pricing</h2>
-          <p className="riv_pricing_top_p">Typical pricing categories for European river cruises:</p>
+          <p className="riv_pricing_top_p">
+            Typical pricing categories for European river cruises:
+          </p>
           <div className="riv_pricing_three_card_grid">
             <div className="riv_price_unit_card">
               <h4 className="riv_price_type_h4_white">Entry</h4>
@@ -477,28 +674,40 @@ const RiversideLuxuryCruises = () => {
               <div className="riv_price_best_label">RECOMMENDED</div>
               <h4 className="riv_price_type_h4">Mid-Tier</h4>
               <div className="riv_price_value_display">$6,500–$10,000</div>
-              <button className="riv_price_action_btn_filled">Check Availability</button>
+              <button className="riv_price_action_btn_filled">
+                Check Availability
+              </button>
             </div>
             <div className="riv_price_unit_card">
               <h4 className="riv_price_type_h4_white">Suites</h4>
               <div className="riv_price_value_display">$10,000+</div>
-              <button className="riv_price_action_btn">View Luxury Suites</button>
+              <button className="riv_price_action_btn">
+                View Luxury Suites
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* EXPERIENCE SECTION */}
-      <section className="riv_experience_insight_section" id="riv_ships_section">
+      <section
+        className="riv_experience_insight_section"
+        id="riv_ships_section"
+      >
         <div className="riv_container_90">
           <div className="riv_experience_split_layout">
             <div className="riv_experience_text_side">
               <h2 className="riv_experience_h2_title">Experience</h2>
               <div className="riv_experience_scroll_box">
-                <p className="riv_experience_main_p">Sailing with Riverside feels calm, intentional, and refined.</p>
+                <p className="riv_experience_main_p">
+                  Sailing with Riverside feels calm, intentional, and refined.
+                </p>
                 <div className="riv_expert_callout_box">
                   <div className="riv_expert_top_bar">EXPERT INSIGHT</div>
-                  <p>Most clients upgrade from Viking River Cruises or AmaWaterways seeking more space and better service.</p>
+                  <p>
+                    Most clients upgrade from Viking River Cruises or
+                    AmaWaterways seeking more space and better service.
+                  </p>
                 </div>
               </div>
             </div>
@@ -518,7 +727,9 @@ const RiversideLuxuryCruises = () => {
             <h2 className="lux-h2">Experience Riverside Luxury Cruises</h2>
             <div className="lux-navy-divider-center"></div>
             <p className="lux-video-subtitle">
-              Discover the refined elegance and spacious comfort that defines Riverside Luxury Cruises. See why experienced travelers choose Riverside for their European river cruise experience.
+              Discover the refined elegance and spacious comfort that defines
+              Riverside Luxury Cruises. See why experienced travelers choose
+              Riverside for their European river cruise experience.
             </p>
           </div>
 
@@ -533,7 +744,7 @@ const RiversideLuxuryCruises = () => {
               preload="auto"
             >
               <source
-                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AM4U9Ywg5B3JhMCyVmy7Vm0/Scenic/Scenic%20Ocean/Videos/Experiences/SCENIC_LONG_FORM_FINAL.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=cmis4m8h&raw=1"
+                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AGU8QgoeLHNd-yZz7oJmK1g/Emerald%20Cruises/River%20Cruising/Videos/Overview/Paid%20Social_%20Emerald%20Cruises%20ERC%20Highlights%20_%2030sec%2016x9%20No%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=59aimhde&dl=1"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -551,12 +762,16 @@ const RiversideLuxuryCruises = () => {
                 <Calendar size={32} />
               </div>
               <div className="riv_itin_content_ui">
-                <h2 className="riv_itinerary_h2_title">Best Time to Take a Riverside River Cruise</h2>
+                <h2 className="riv_itinerary_h2_title">
+                  Best Time to Take a Riverside River Cruise
+                </h2>
                 <div className="riv_itin_highlight_box">
                   <Clock size={16} />
                   <span>Peak Seasons</span>
                 </div>
-                <p className="riv_itinerary_p_text">Spring and fall offer the best value and weather.</p>
+                <p className="riv_itinerary_p_text">
+                  Spring and fall offer the best value and weather.
+                </p>
               </div>
             </div>
             <div className="riv_itinerary_card_ui">
@@ -564,12 +779,16 @@ const RiversideLuxuryCruises = () => {
                 <Compass size={32} />
               </div>
               <div className="riv_itin_content_ui">
-                <h2 className="riv_itinerary_h2_title">Best Riverside Itineraries</h2>
+                <h2 className="riv_itinerary_h2_title">
+                  Best Riverside Itineraries
+                </h2>
                 <div className="riv_itin_highlight_box">
                   <MapPin size={16} />
                   <span>Top Routes</span>
                 </div>
-                <p className="riv_itinerary_p_text">Rhine for first-time travelers, Danube for experienced.</p>
+                <p className="riv_itinerary_p_text">
+                  Rhine for first-time travelers, Danube for experienced.
+                </p>
               </div>
             </div>
           </div>
@@ -622,9 +841,16 @@ const RiversideLuxuryCruises = () => {
       <section className="riv_cta_footer_section" id="riv_cta_footer_section">
         <div className="riv_container_90">
           <div className="riv_cta_footer_box">
-            <h2 className="riv_cta_footer_h2">Plan Your Riverside Experience</h2>
-            <p className="riv_cta_footer_p">Choosing the right itinerary and cabin matters. Work with an expert to ensure the right fit.</p>
-            <button className="riv_cta_footer_action_btn">Plan My River Cruise</button>
+            <h2 className="riv_cta_footer_h2">
+              Plan Your Riverside Experience
+            </h2>
+            <p className="riv_cta_footer_p">
+              Choosing the right itinerary and cabin matters. Work with an
+              expert to ensure the right fit.
+            </p>
+            <button className="riv_cta_footer_action_btn">
+              Plan My River Cruise
+            </button>
           </div>
         </div>
       </section>
@@ -635,33 +861,65 @@ const RiversideLuxuryCruises = () => {
           <div className="riv_authority_balanced_grid">
             <div className="riv_auth_media_column">
               <div className="riv_profile_frame_new">
-                <img src={ProfileImage} alt="Angela Hughes" onError={(e) => { e.target.style.display = 'none'; e.target.parentElement.classList.add('riv_fallback_avatar'); }} />
+                <img
+                  src={ProfileImage}
+                  alt="Angela Hughes"
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                    e.target.parentElement.classList.add("riv_fallback_avatar");
+                  }}
+                />
                 <div className="riv_auth_signature">Angela Hughes</div>
               </div>
               <div className="riv_auth_quick_stats">
-                <div className="riv_stat_pill"><Award size={14} /> 40+ Years</div>
-                <div className="riv_stat_pill"><Users size={14} /> 140+ Advisors</div>
-                <div className="riv_stat_pill"><Star size={14} /> Top Influencer</div>
+                <div className="riv_stat_pill">
+                  <Award size={14} /> 40+ Years
+                </div>
+                <div className="riv_stat_pill">
+                  <Users size={14} /> 140+ Advisors
+                </div>
+                <div className="riv_stat_pill">
+                  <Star size={14} /> Top Influencer
+                </div>
               </div>
             </div>
             <div className="riv_auth_content_wrap">
-              <h2 className="riv_auth_h2_name">About Angela Hughes and Trips & Ships Luxury Travel</h2>
+              <h2 className="riv_auth_h2_name">
+                About Angela Hughes and Trips & Ships Luxury Travel
+              </h2>
               <p className="riv_auth_intro_text">
-                When evaluating luxury river cruise lines, the difference between a good experience and the right experience comes down to expertise. Angela Hughes is one of the most recognized voices in the luxury travel industry.
+                When evaluating luxury river cruise lines, the difference
+                between a good experience and the right experience comes down to
+                expertise. Angela Hughes is one of the most recognized voices in
+                the luxury travel industry.
               </p>
               <div className="riv_auth_scrollable_text">
                 <p className="riv_auth_body_text">
-                  With more than 40 years in travel, Angela is the CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University. She leads a network of over 140 travel advisors and has personally sold millions in luxury travel annually across cruise, expedition, and global itineraries.
+                  With more than 40 years in travel, Angela is the CEO of Trips
+                  & Ships Luxury Travel and founder of Luxury Travel University.
+                  She leads a network of over 140 travel advisors and has
+                  personally sold millions in luxury travel annually across
+                  cruise, expedition, and global itineraries.
                 </p>
                 <p className="riv_auth_body_text">
-                  Angela has been featured in Travel Weekly, TravelAge West, Travel Market Report, Insider Travel Report, and more. She has been recognized as Luxury Travel Influencer of the Year by Travel Leaders Network and regularly speaks at global industry conferences.
+                  Angela has been featured in Travel Weekly, TravelAge West,
+                  Travel Market Report, Insider Travel Report, and more. She has
+                  been recognized as Luxury Travel Influencer of the Year by
+                  Travel Leaders Network and regularly speaks at global industry
+                  conferences.
                 </p>
                 <p className="riv_auth_body_text">
-                  She works across all major river cruise lines, including Riverside Luxury Cruises, Viking River Cruises, and AmaWaterways, ensuring recommendations are based on real experience and client fit—not a single supplier.
+                  She works across all major river cruise lines, including
+                  Riverside Luxury Cruises, Viking River Cruises, and
+                  AmaWaterways, ensuring recommendations are based on real
+                  experience and client fit—not a single supplier.
                 </p>
               </div>
               <div className="riv_auth_firm_desc">
-                <strong>Trips & Ships Luxury Travel operates as a high-level advisory firm, helping clients:</strong>
+                <strong>
+                  Trips & Ships Luxury Travel operates as a high-level advisory
+                  firm, helping clients:
+                </strong>
                 <ul className="riv_auth_feature_list_points">
                   <li>compare cruise lines with clarity</li>
                   <li>select the right experience</li>
@@ -679,7 +937,12 @@ const RiversideLuxuryCruises = () => {
         <div className="riv_container_90">
           <div className="riv_closing_line_box">
             <h2 className="riv_closing_h2">Final Thoughts</h2>
-            <p className="riv_closing_p">Riverside is not for everyone—and that is exactly its strength. For travelers seeking a refined, spacious, and more intentional river cruise experience, it stands out as one of the best in Europe.</p>
+            <p className="riv_closing_p">
+              Riverside is not for everyone—and that is exactly its strength.
+              For travelers seeking a refined, spacious, and more intentional
+              river cruise experience, it stands out as one of the best in
+              Europe.
+            </p>
           </div>
         </div>
       </section>
@@ -690,7 +953,9 @@ const RiversideLuxuryCruises = () => {
           <div className="lux-faq-header">
             <h2 className="lux-h2">Frequently Asked Questions</h2>
             <div className="lux-navy-divider-center"></div>
-            <p className="lux-faq-intro">Everything you need to know about Riverside Luxury Cruises.</p>
+            <p className="lux-faq-intro">
+              Everything you need to know about Riverside Luxury Cruises.
+            </p>
           </div>
           <FAQ />
         </div>

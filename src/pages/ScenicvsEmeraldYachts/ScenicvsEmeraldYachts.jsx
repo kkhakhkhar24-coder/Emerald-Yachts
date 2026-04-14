@@ -20,6 +20,8 @@ import Scenic3 from "../../assets/FourthPage/Scenic3.jpg";
 import Scenic4 from "../../assets/FourthPage/Scenic4.jpg";
 import Scenic5 from "../../assets/FourthPage/Scenic5.jpg";
 import Scenic6 from "../../assets/FourthPage/Scenic6.jpg";
+import Scenicdiff from "../../assets/FourthPage/Scenicdiff.JPG";
+import Emeralddiff from "../../assets/FourthPage/Emeralddiff.jpg";
 
 function YachtsComparison() {
   const [current, setCurrent] = useState(0);
@@ -397,27 +399,48 @@ function YachtsComparison() {
         <div className="Yachts_compare_inner">
           <h2>Scenic vs Emerald at a Glance</h2>
 
-          <p>Feature Scenic Emerald</p>
-          <p>Positioning Ultra-luxury Luxury</p>
-          <p>Pricing Higher, all-inclusive Lower, value-driven</p>
-          <p>Ship Style Discovery yacht Boutique yacht</p>
-          <p>Experience Structured, elevated Relaxed, social</p>
-          <p>Best For High-end seamless travel Approachable yacht experience</p>
+          <div className="Yachts_compare_table_wrapper">
+            <table className="Yachts_compare_table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Scenic</th>
+                  <th>Emerald</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Positioning</td>
+                  <td>Ultra-luxury</td>
+                  <td>Luxury</td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td>Higher, all-inclusive</td>
+                  <td>Lower, value-driven</td>
+                </tr>
+                <tr>
+                  <td>Ship Style</td>
+                  <td>Discovery yacht</td>
+                  <td>Boutique yacht</td>
+                </tr>
+                <tr>
+                  <td>Experience</td>
+                  <td>Structured, elevated</td>
+                  <td>Relaxed, social</td>
+                </tr>
+                <tr>
+                  <td>Best For</td>
+                  <td>High-end seamless travel</td>
+                  <td>Approachable yacht experience</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
-      {/* SECTION 3 */}
-      {/* <section className="Yachts_price_section">
-        <div className="Yachts_price_inner">
-          <h2>Scenic vs Emerald Price Difference</h2>
-
-          <p>Typical pricing reflects their positioning:</p>
-          <p>Emerald yachts: approximately $6,000 to $12,000 per person</p>
-          <p>Scenic yachts: approximately $10,000 to $25,000 or more per person</p>
-          <p>Scenic is typically 40 to 100 percent higher depending on itinerary and suite level.</p>
-          <p>The difference is driven by inclusions, service level, and overall experience structure.</p>
-        </div>
-      </section> */}
+      {/* SECTION 3 Scenic vs Emerald Price Difference */}
 
       <section className="Yachts_price_section">
         <div className="Yachts_price_inner">
@@ -428,80 +451,104 @@ function YachtsComparison() {
           </p>
 
           {/* CARDS */}
-          <div className="Yachts_price_cards">
-            <div className="Yachts_price_card">
-              <i className="fas fa-dollar-sign"></i>
-              <span>
-                Emerald yachts: approximately $6,000 to $12,000 per person
-              </span>
+          <div className="Yachts_price_main_grid">
+            {/* BRAND PRICING CARDS */}
+            <div className="Yachts_price_premium_card emerald">
+              <div className="Yachts_price_badge">Value Luxury</div>
+              <div className="Yachts_price_icon_box">
+                <i className="fas fa-anchor"></i>
+              </div>
+              <h3>Emerald Yachts</h3>
+              <p className="Yachts_price_amount">Approximately $6,000 – $12,000</p>
+              <p className="Yachts_price_unit">per person</p>
             </div>
 
-            <div className="Yachts_price_card">
-              <i className="fas fa-gem"></i>
-              <span>
-                Scenic yachts: approximately $10,000 to $25,000 or more per
-                person
-              </span>
+            <div className="Yachts_price_premium_card scenic">
+              <div className="Yachts_price_badge">Ultra-Luxury</div>
+              <div className="Yachts_price_icon_box">
+                <i className="fas fa-gem"></i>
+              </div>
+              <h3>Scenic Yachts</h3>
+              <p className="Yachts_price_amount">Approximately $10,000 – $25,000+</p>
+              <p className="Yachts_price_unit">per person</p>
             </div>
+          </div>
 
-            <div className="Yachts_price_card">
-              <i className="fas fa-chart-line"></i>
-              <span>
+          <div className="Yachts_price_insights_box">
+            <div className="Yachts_price_insight_item">
+              <div className="Yachts_price_insight_icon">
+                <i className="fas fa-percentage"></i>
+              </div>
+              <p>
                 Scenic is typically 40 to 100 percent higher depending on
                 itinerary and suite level.
-              </span>
+              </p>
             </div>
 
-            <div className="Yachts_price_card">
-              <i className="fas fa-layer-group"></i>
-              <span>
+            <div className="Yachts_price_insight_item">
+              <div className="Yachts_price_insight_icon">
+                <i className="fas fa-info-circle"></i>
+              </div>
+              <p>
                 The difference is driven by inclusions, service level, and
                 overall experience structure.
-              </span>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 4 */}
-      {/* <section className="Yachts_difference_section">
-        <div className="Yachts_difference_inner">
-          <h2>The Biggest Differences Between Scenic and Emerald</h2>
-          
-          <p>Scenic delivers a fully all-inclusive, ultra-luxury experience</p>
-          <p>Emerald offers a more accessible luxury yacht experience</p>
-          <p>Scenic emphasizes seamless service and structure</p>
-          <p>Emerald focuses on relaxed, easygoing travel</p>
-          <p>The difference is not access. It is experience level.</p>
-        </div>
-      </section> */}
 
       <section className="Yachts_difference_section">
         <div className="Yachts_difference_inner">
           <h2>The Biggest Differences Between Scenic and Emerald</h2>
 
-          <div className="Yachts_difference_cards">
-            <div className="Yachts_difference_card">
-              <p>
-                Scenic delivers a fully all-inclusive, ultra-luxury experience
-              </p>
+          <div className="Yachts_diff_new_grid">
+            {/* SCENIC CARD */}
+            <div className="Yachts_diff_brand_card">
+              <div className="Yachts_diff_img_box">
+                <img src={Scenicdiff} alt="Scenic Luxury Yacht" />
+                <div className="Yachts_diff_badge">Scenic</div>
+              </div>
+              <div className="Yachts_diff_content">
+                <div className="Yachts_diff_point">
+                  <i className="fas fa-check"></i>
+                  <p>
+                    Scenic delivers a fully all-inclusive, ultra-luxury
+                    experience
+                  </p>
+                </div>
+                <div className="Yachts_diff_point">
+                  <i className="fas fa-check"></i>
+                  <p>Scenic emphasizes seamless service and structure</p>
+                </div>
+              </div>
             </div>
 
-            <div className="Yachts_difference_card">
-              <p>Emerald offers a more accessible luxury yacht experience</p>
+            {/* EMERALD CARD */}
+            <div className="Yachts_diff_brand_card">
+              <div className="Yachts_diff_img_box">
+                <img src={Emeralddiff} alt="Emerald Yacht" />
+                <div className="Yachts_diff_badge">Emerald</div>
+              </div>
+              <div className="Yachts_diff_content">
+                <div className="Yachts_diff_point">
+                  <i className="fas fa-check"></i>
+                  <p>
+                    Emerald offers a more accessible luxury yacht experience
+                  </p>
+                </div>
+                <div className="Yachts_diff_point">
+                  <i className="fas fa-check"></i>
+                  <p>Emerald focuses on relaxed, easygoing travel</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div className="Yachts_difference_card">
-              <p>Scenic emphasizes seamless service and structure</p>
-            </div>
-
-            <div className="Yachts_difference_card">
-              <p>Emerald focuses on relaxed, easygoing travel</p>
-            </div>
-
-            <div className="Yachts_difference_card Yachts_difference_full">
-              <p>The difference is not access. It is experience level.</p>
-            </div>
+          <div className="Yachts_diff_footer">
+            <p>The difference is not access. It is experience level.</p>
           </div>
         </div>
       </section>
@@ -671,9 +718,9 @@ function YachtsComparison() {
                         </div>
                       </div>
                       <div className="lux-gallery-item">
-                        <img src={Emerald3} alt="Emerald Yachts dining" />
+                        <img src={Emerald6} alt="Emerald Yachts coastal" />
                         <div className="lux-img-overlay">
-                          <span>Fine Dining</span>
+                          <span>Coastal Journeys</span>
                         </div>
                       </div>
                     </div>
@@ -688,12 +735,6 @@ function YachtsComparison() {
                         <img src={Emerald5} alt="Emerald Yachts view" />
                         <div className="lux-img-overlay">
                           <span>Ocean Views</span>
-                        </div>
-                      </div>
-                      <div className="lux-gallery-item">
-                        <img src={Emerald6} alt="Emerald Yachts coastal" />
-                        <div className="lux-img-overlay">
-                          <span>Coastal Journeys</span>
                         </div>
                       </div>
                     </div>
@@ -742,7 +783,7 @@ function YachtsComparison() {
                       </div>
                     </div>
                     <div className="lux-gallery-item">
-                      <img src={Scenic4} alt="Scenic Eclipse suite interior" />
+                      <img src={Scenic6} alt="Scenic Eclipse suite interior" />
                       <div className="lux-img-overlay">
                         <span>Premium Suites</span>
                       </div>
@@ -752,12 +793,6 @@ function YachtsComparison() {
                         <img src={Scenic5} alt="Scenic Eclipse polar" />
                         <div className="lux-img-overlay">
                           <span>Polar Expeditions</span>
-                        </div>
-                      </div>
-                      <div className="lux-gallery-item">
-                        <img src={Scenic6} alt="Scenic Eclipse adventure" />
-                        <div className="lux-img-overlay">
-                          <span>Adventure Experiences</span>
                         </div>
                       </div>
                     </div>
@@ -783,7 +818,7 @@ function YachtsComparison() {
       </section>
 
       {/* SECTION 11 */}
-      <section className="Yachts_expert_section">
+      {/* <section className="Yachts_expert_section">
         <div className="Yachts_expert_inner">
           <h2>Expert Insight from Angela Hughes</h2>
 
@@ -795,15 +830,8 @@ function YachtsComparison() {
           <p>The goal is alignment.</p>
           <p>The difference is not which brand is better.</p>
           <p>It is which experience fits you.</p>
-
-          {/* <div className="Yachts_expert_images">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="" />
-      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="" />
-      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="" />
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="" />
-    </div> */}
         </div>
-      </section>
+      </section> */}
 
       {/* SECTION 12 */}
       <section className="Yachts_recommend_section">
@@ -822,7 +850,7 @@ function YachtsComparison() {
       </section>
 
       {/* SECTION 13 */}
-      <section className="Yachts_next_section">
+      {/* <section className="Yachts_next_section">
         <div className="Yachts_next_inner">
           <h2>What Happens Next?</h2>
 
@@ -830,7 +858,7 @@ function YachtsComparison() {
           <p>Personalized yacht recommendation</p>
           <p>Booking and full planning</p>
         </div>
-      </section>
+      </section> */}
 
       {/* COMBINED SECTION 14 & 15 */}
       <section className="Yachts_author_section">

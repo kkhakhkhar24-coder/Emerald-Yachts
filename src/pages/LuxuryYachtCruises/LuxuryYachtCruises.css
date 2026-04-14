@@ -989,11 +989,18 @@ h2.yacht-section-h2 {
 
 .lux-comparison-strip-section {
     padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lux-strip-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    width: 100%;
 }
 
 .lux-strip-header .lux-h2 {
@@ -1005,39 +1012,52 @@ h2.yacht-section-h2 {
     margin: 0 !important;
 }
 
+/* ── Marquee: left-to-right infinite auto-scroll ── */
+@keyframes lux-marquee-ltr {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
 .lux-strip-scroll-wrapper {
     position: relative;
-    max-width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     overflow: hidden;
+    /* Fade edges for a polished look */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
 }
 
 .lux-strip-scroll {
     display: flex;
+    width: max-content;
+    animation: lux-marquee-ltr 30s linear infinite;
+    padding: 20px 0 30px;
+}
+
+/* Pause on hover */
+.lux-strip-scroll-wrapper:hover .lux-strip-scroll {
+    animation-play-state: paused;
+}
+
+/* Each duplicated track */
+.lux-strip-track {
+    display: flex;
     gap: 24px;
-    overflow-x: auto;
-    padding: 20px 10px 30px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-}
-
-.lux-strip-scroll::-webkit-scrollbar {
-    height: 6px;
-}
-
-.lux-strip-scroll::-webkit-scrollbar-track {
-    background: rgba(39, 68, 114, 0.05);
-    border-radius: 10px;
-}
-
-.lux-strip-scroll::-webkit-scrollbar-thumb {
-    background: rgba(39, 68, 114, 0.2);
-    border-radius: 10px;
-    transition: background 0.3s ease;
-}
-
-.lux-strip-scroll::-webkit-scrollbar-thumb:hover {
-    background: rgba(39, 68, 114, 0.4);
+    padding: 0 12px;
 }
 
 .lux-strip-new-card {
@@ -1329,11 +1349,6 @@ h2.yacht-section-h2 {
 
     .lux-comparison-strip-section {
         padding: 40px 16px !important;
-    }
-
-    .lux-strip-scroll {
-        gap: 16px;
-        padding: 16px 8px 24px;
     }
 
     .lux-strip-new-card {
@@ -4485,5 +4500,3 @@ h2.yacht-section-h2 {
     }
 
 }
-
-
