@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./DistinctiveVoyageSailings.css";
 import Navbar from "../../components/Navbar/Navbar";
 import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
@@ -6,10 +7,10 @@ import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
 import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
 import SailImg1 from "../../assets/HomePage/HomePage1.jpg";
 import SailImg2 from "../../assets/HomePage/HomePage4.jpg";
-import { 
-  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass, 
-  Clock, Anchor, GraduationCap, Users, Mic, Newspaper, ShieldCheck, 
-  Lightbulb, Map, Heart, Star, Gift, Ticket, ConciergeBell, Navigation, Sparkles 
+import {
+  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass,
+  Clock, Anchor, GraduationCap, Users, Mic, Newspaper, ShieldCheck,
+  Lightbulb, Map, Heart, Star, Gift, Ticket, ConciergeBell, Navigation, Sparkles
 } from "lucide-react";
 import TrustImage from "../../assets/HomePage/HomePage3.jpg";
 
@@ -55,10 +56,10 @@ const DistinctiveVoyageSailings = () => {
     }
   ];
 
-const toggleFAQ = (index) => {
-  setActiveIndex(activeIndex === index ? null : index);
-};
-  
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
 
 
   const images = [HomePage1, HomePage3, HomePage4];
@@ -75,6 +76,149 @@ const toggleFAQ = (index) => {
 
   return (
     <>
+      <Helmet>
+        <title>Distinctive Voyage Sailings with Angela Hughes | Hosted Luxury Cruises 2026–2027</title>
+        <meta name="description" content="Explore Distinctive Voyage hosted luxury cruises with Angela Hughes and Trips & Ships Luxury Travel. Enjoy exclusive hosted amenities, private shore events, and sail with a trusted luxury cruise expert." />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a hosted sailing with Angela Hughes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A hosted sailing means Angela Hughes is connected to the voyage as host, offering added expertise, support, and a more personalized travel experience."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is included in a Distinctive Voyage?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Many Distinctive Voyages include exclusive amenities such as private cocktail receptions, shore events, and added hosted benefits."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does it cost more to book with Angela Hughes instead of booking direct?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. In most cases, booking through Angela Hughes and Trips & Ships Luxury Travel does not cost more than booking direct. In fact, Distinctive Voyage amenities and hosted benefits are often not available when booking directly with the cruise line."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are these group sailings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Some hosted sailings may include group amenities or hosted experiences depending on the voyage. Details vary by departure and availability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I have to travel with the group?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. You can enjoy all eligible hosted amenities while still traveling independently. Join as little or as much of the hosted experience as you would like throughout the voyage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you assist with flights and hotels?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Trips & Ships Luxury Travel can assist with pre and post cruise hotels, transfers, touring, and airfare guidance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who are these sailings best suited for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "These voyages are ideal for travelers seeking elevated luxury cruising with expert guidance and curated support."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I reserve my space?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can contact our team directly to request pricing, review current availability, and begin the booking process."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* Person Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Angela Hughes",
+            "jobTitle": "CEO",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Trips & Ships Luxury Travel"
+            },
+            "alumniOf": "Brigham Young University",
+            "description": "Angela Hughes is the CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University. She is a luxury travel expert, global speaker, and hosted cruise specialist with more than four decades in the travel industry.",
+            "url": "https://www.tripsandships.com/",
+            "sameAs": [
+              "https://www.luxurytraveluniversity.com/"
+            ]
+          })}
+        </script>
+
+        {/* Travel Agency Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Trips & Ships Luxury Travel",
+            "url": "https://www.tripsandships.com/",
+            "email": "sales@tripsandships.com",
+            "telephone": "+1-603-860-3274",
+            "description": "Trips & Ships Luxury Travel is a luxury travel agency specializing in hosted luxury cruises, distinctive voyages, expeditions, river cruises, and customized upscale travel experiences.",
+            "sameAs": [
+              "https://www.luxuryhostagency.com/",
+              "https://www.luxurytraveluniversity.com/"
+            ]
+          })}
+        </script>
+
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.tripsandships.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cruises",
+                "item": "https://www.tripsandships.com/cruises/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Distinctive Voyage Sailings",
+                "item": "https://www.tripsandships.com/distinctive-voyage-sailings/"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
 
@@ -150,7 +294,7 @@ const toggleFAQ = (index) => {
           <div className="Dist_trustclean_left">
 
             <h2 className="Dist_trustclean_heading">
-              Why Travelers Trust Angela Hughes for Hosted Luxury Cruises
+              Why Travelers Trust Angela Hughes for Hosted Luxury Cruises?
             </h2>
 
             <p className="Dist_trustclean_intro">
@@ -258,7 +402,7 @@ const toggleFAQ = (index) => {
         <div className="Dist_include_container">
 
           <h2 className="Dist_include_heading">
-            What Is Included with Distinctive Voyages
+            What Is Included with Distinctive Voyages?
           </h2>
 
           <div className="Dist_include_grid">
@@ -301,189 +445,189 @@ const toggleFAQ = (index) => {
       </section>
 
       {/* ================= COMPARE TABLE 1 ================= */}
-<section className="Dist_compare_section">
-  <div className="Dist_compare_container">
+      <section className="Dist_compare_section">
+        <div className="Dist_compare_container">
 
-    <h2 className="Dist_compare_heading">
-      Compare Hosted Sailings
-    </h2>
+          <h2 className="Dist_compare_heading">
+            Compare Angela's Hosted Distinctive Voyages
+          </h2>
 
-    <div className="Dist_table_wrapper">
-      <table className="Dist_compare_table">
+          <div className="Dist_table_wrapper">
+            <table className="Dist_compare_table">
 
-        <thead>
-          <tr>
-            <th>Voyage</th>
-            <th>Dates</th>
-            <th>Cruise Line / Ship</th>
-            <th>Region</th>
-            <th>Nights</th>
-            <th>Starting From</th>
-            <th>Best For</th>
-          </tr>
-        </thead>
+              <thead>
+                <tr>
+                  <th>Voyage</th>
+                  <th>Dates</th>
+                  <th>Cruise Line / Ship</th>
+                  <th>Region</th>
+                  <th>Nights</th>
+                  <th>Starting From</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
 
-        <tbody>
-          <tr>
-            <td>Greek Isles & Adriatic</td>
-            <td>Aug 3–10, 2026</td>
-            <td>Explora II</td>
-            <td>Mediterranean</td>
-            <td>7</td>
-            <td>$5,500 pp</td>
-            <td>Couples / First-Time Luxury Cruisers</td>
-          </tr>
+              <tbody>
+                <tr>
+                  <td>Greek Isles & Adriatic</td>
+                  <td>Aug 3–10, 2026</td>
+                  <td>Explora II</td>
+                  <td>Mediterranean</td>
+                  <td>7</td>
+                  <td>$5,500 pp</td>
+                  <td>Couples / First-Time Luxury Cruisers</td>
+                </tr>
 
-          <tr>
-            <td>Adriatic to Greece</td>
-            <td>Aug 10–17, 2026</td>
-            <td>Explora II</td>
-            <td>Mediterranean</td>
-            <td>7</td>
-            <td>$5,200 pp</td>
-            <td>Mediterranean Repeat Travelers</td>
-          </tr>
+                <tr>
+                  <td>Adriatic to Greece</td>
+                  <td>Aug 10–17, 2026</td>
+                  <td>Explora II</td>
+                  <td>Mediterranean</td>
+                  <td>7</td>
+                  <td>$5,200 pp</td>
+                  <td>Mediterranean Repeat Travelers</td>
+                </tr>
 
-          <tr>
-            <td>Antarctica Fly Cruise</td>
-            <td>Nov 19–25, 2026</td>
-            <td>Silver Endeavour</td>
-            <td>Antarctica</td>
-            <td>6</td>
-            <td>$24,500 pp</td>
-            <td>Bucket List Expedition Travelers</td>
-          </tr>
+                <tr>
+                  <td>Antarctica Fly Cruise</td>
+                  <td>Nov 19–25, 2026</td>
+                  <td>Silver Endeavour</td>
+                  <td>Antarctica</td>
+                  <td>6</td>
+                  <td>$24,500 pp</td>
+                  <td>Bucket List Expedition Travelers</td>
+                </tr>
 
-          <tr>
-            <td>Hong Kong to Singapore</td>
-            <td>Jan 3–17, 2027</td>
-            <td>Silver Muse</td>
-            <td>Asia</td>
-            <td>14</td>
-            <td>$8,500 pp</td>
-            <td>Asia / Culture Enthusiasts</td>
-          </tr>
+                <tr>
+                  <td>Hong Kong to Singapore</td>
+                  <td>Jan 3–17, 2027</td>
+                  <td>Silver Muse</td>
+                  <td>Asia</td>
+                  <td>14</td>
+                  <td>$8,500 pp</td>
+                  <td>Asia / Culture Enthusiasts</td>
+                </tr>
 
-          <tr>
-            <td>Cape Town to Dakar</td>
-            <td>Apr 11–30, 2027</td>
-            <td>Silver Dawn</td>
-            <td>Africa</td>
-            <td>19</td>
-            <td>$13,500 pp</td>
-            <td>Well-Traveled Luxury Explorers</td>
-          </tr>
+                <tr>
+                  <td>Cape Town to Dakar</td>
+                  <td>Apr 11–30, 2027</td>
+                  <td>Silver Dawn</td>
+                  <td>Africa</td>
+                  <td>19</td>
+                  <td>$13,500 pp</td>
+                  <td>Well-Traveled Luxury Explorers</td>
+                </tr>
 
-        </tbody>
-      </table>
-    </div>
+              </tbody>
+            </table>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
 
-{/* ================= COMPARE TABLE 2 ================= */}
-<section className="Dist_compare_section">
-  <div className="Dist_compare_container">
+      {/* ================= COMPARE TABLE 2 ================= */}
+      <section className="Dist_compare_section2">
+        <div className="Dist_compare_container2">
 
-    <h2 className="Dist_compare_heading">
-      Compare Hosted Sailings
-    </h2>
+          <h2 className="Dist_compare_heading">
+            Compare Hosted Sailings
+          </h2>
 
-    <div className="Dist_table_wrapper">
-      <table className="Dist_compare_table">
+          <div className="Dist_table_wrapper">
+            <table className="Dist_compare_table">
 
-        <thead>
-          <tr>
-            <th>Voyage</th>
-            <th>Dates</th>
-            <th>Cruise Line / Ship</th>
-            <th>Region</th>
-            <th>Nights</th>
-            <th>Starting From</th>
-            <th>Best For</th>
-          </tr>
-        </thead>
+              <thead>
+                <tr>
+                  <th>Voyage</th>
+                  <th>Dates</th>
+                  <th>Cruise Line / Ship</th>
+                  <th>Region</th>
+                  <th>Nights</th>
+                  <th>Starting From</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
 
-        <tbody>
+              <tbody>
 
-          <tr>
-            <td>Greek Isles & Adriatic</td>
-            <td>Aug 3–10, 2026</td>
-            <td>Explora Journeys / EXPLORA II</td>
-            <td>Mediterranean</td>
-            <td>7</td>
-            <td>$5,500 pp</td>
-            <td>Couples / First-Time Luxury Cruisers</td>
-          </tr>
+                <tr>
+                  <td>Greek Isles & Adriatic</td>
+                  <td>Aug 3–10, 2026</td>
+                  <td>Explora Journeys / EXPLORA II</td>
+                  <td>Mediterranean</td>
+                  <td>7</td>
+                  <td>$5,500 pp</td>
+                  <td>Couples / First-Time Luxury Cruisers</td>
+                </tr>
 
-          <tr>
-            <td>Adriatic to Greece</td>
-            <td>Aug 10–17, 2026</td>
-            <td>Explora Journeys / EXPLORA II</td>
-            <td>Mediterranean</td>
-            <td>7</td>
-            <td>$5,200 pp</td>
-            <td>Mediterranean Repeat Travelers</td>
-          </tr>
+                <tr>
+                  <td>Adriatic to Greece</td>
+                  <td>Aug 10–17, 2026</td>
+                  <td>Explora Journeys / EXPLORA II</td>
+                  <td>Mediterranean</td>
+                  <td>7</td>
+                  <td>$5,200 pp</td>
+                  <td>Mediterranean Repeat Travelers</td>
+                </tr>
 
-          <tr>
-            <td>Antarctica Fly Cruise</td>
-            <td>Nov 19–25, 2026</td>
-            <td>Silversea / Silver Endeavour</td>
-            <td>Antarctica</td>
-            <td>6</td>
-            <td>$24,500 pp</td>
-            <td>Bucket List Expedition Travelers</td>
-          </tr>
+                <tr>
+                  <td>Antarctica Fly Cruise</td>
+                  <td>Nov 19–25, 2026</td>
+                  <td>Silversea / Silver Endeavour</td>
+                  <td>Antarctica</td>
+                  <td>6</td>
+                  <td>$24,500 pp</td>
+                  <td>Bucket List Expedition Travelers</td>
+                </tr>
 
-          <tr>
-            <td>Hong Kong to Singapore</td>
-            <td>Jan 3–17, 2027</td>
-            <td>Silversea / Silver Muse</td>
-            <td>Asia</td>
-            <td>14</td>
-            <td>$8,500 pp</td>
-            <td>Asia / Culture Enthusiasts</td>
-          </tr>
+                <tr>
+                  <td>Hong Kong to Singapore</td>
+                  <td>Jan 3–17, 2027</td>
+                  <td>Silversea / Silver Muse</td>
+                  <td>Asia</td>
+                  <td>14</td>
+                  <td>$8,500 pp</td>
+                  <td>Asia / Culture Enthusiasts</td>
+                </tr>
 
-          <tr>
-            <td>Phuket to Bangkok</td>
-            <td>Jan 17–24, 2027</td>
-            <td>Windstar Cruises / Star Seeker</td>
-            <td>Asia</td>
-            <td>7</td>
-            <td>$4,999 pp</td>
-            <td>Boutique Yacht Cruisers / Asia Explorers</td>
-          </tr>
+                <tr>
+                  <td>Phuket to Bangkok</td>
+                  <td>Jan 17–24, 2027</td>
+                  <td>Windstar Cruises / Star Seeker</td>
+                  <td>Asia</td>
+                  <td>7</td>
+                  <td>$4,999 pp</td>
+                  <td>Boutique Yacht Cruisers / Asia Explorers</td>
+                </tr>
 
-          <tr>
-            <td>Cape Town to Dakar</td>
-            <td>Apr 11–30, 2027</td>
-            <td>Silversea / Silver Dawn</td>
-            <td>Africa</td>
-            <td>19</td>
-            <td>$13,500 pp</td>
-            <td>Well-Traveled Luxury Explorers</td>
-          </tr>
+                <tr>
+                  <td>Cape Town to Dakar</td>
+                  <td>Apr 11–30, 2027</td>
+                  <td>Silversea / Silver Dawn</td>
+                  <td>Africa</td>
+                  <td>19</td>
+                  <td>$13,500 pp</td>
+                  <td>Well-Traveled Luxury Explorers</td>
+                </tr>
 
-          <tr>
-            <td>Dreams of Tahiti</td>
-            <td>Jul 8–15, 2027</td>
-            <td>Windstar Cruises / Star Breeze</td>
-            <td>French Polynesia</td>
-            <td>7</td>
-            <td>$5,499 pp</td>
-            <td>Active Couples / Warm Weather Luxury Travelers</td>
-          </tr>
+                <tr>
+                  <td>Dreams of Tahiti</td>
+                  <td>Jul 8–15, 2027</td>
+                  <td>Windstar Cruises / Star Breeze</td>
+                  <td>French Polynesia</td>
+                  <td>7</td>
+                  <td>$5,499 pp</td>
+                  <td>Active Couples / Warm Weather Luxury Travelers</td>
+                </tr>
 
-        </tbody>
-      </table>
-    </div>
+              </tbody>
+            </table>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
 
@@ -725,71 +869,71 @@ const toggleFAQ = (index) => {
 
 
       <section className="Dist_past_section">
-  <div className="Dist_past_container">
+        <div className="Dist_past_container">
 
-    <h2 className="Dist_past_heading">
-      Past Hosted Sailings
-    </h2>
+          <h2 className="Dist_past_heading">
+            Past Hosted Sailings
+          </h2>
 
-    {/* CARD 1 */}
-    <div className="Dist_past_card">
-      <div className="Dist_past_imgwrap">
-        <img src={SailImg1} alt="Greek Isles & Adriatic" />
-      </div>
+          {/* CARD 1 */}
+          <div className="Dist_past_card">
+            <div className="Dist_past_imgwrap">
+              <img src={SailImg1} alt="Greek Isles & Adriatic" />
+            </div>
 
-      <div className="Dist_past_content">
-        <p className="meta">Aug 3–10, 2026</p>
-        <h3>Greek Isles & Adriatic</h3>
-        <p className="desc">Explora II</p>
-        <p className="route">Mediterranean</p>
-        <p>Nights: 7</p>
-        <p>Starting From: $5,500 pp</p>
-        <p className="ideal">Couples / First-Time Luxury Cruisers</p>
+            <div className="Dist_past_content">
+              <p className="meta">Aug 3–10, 2026</p>
+              <h3>Greek Isles & Adriatic</h3>
+              <p className="desc">Explora II</p>
+              <p className="route">Mediterranean</p>
+              <p>Nights: 7</p>
+              <p>Starting From: $5,500 pp</p>
+              <p className="ideal">Couples / First-Time Luxury Cruisers</p>
 
-        <button className="btn">View Details</button>
-      </div>
-    </div>
+              <button className="btn">View Details</button>
+            </div>
+          </div>
 
-    {/* CARD 2 */}
-    <div className="Dist_past_card">
-      <div className="Dist_past_imgwrap">
-        <img src={SailImg2} alt="Adriatic to Greece" />
-      </div>
+          {/* CARD 2 */}
+          <div className="Dist_past_card">
+            <div className="Dist_past_imgwrap">
+              <img src={SailImg2} alt="Adriatic to Greece" />
+            </div>
 
-      <div className="Dist_past_content">
-        <p className="meta">Aug 10–17, 2026</p>
-        <h3>Adriatic to Greece</h3>
-        <p className="desc">Explora II</p>
-        <p className="route">Mediterranean</p>
-        <p>Nights: 7</p>
-        <p>Starting From: $5,200 pp</p>
-        <p className="ideal">Mediterranean Repeat Travelers</p>
+            <div className="Dist_past_content">
+              <p className="meta">Aug 10–17, 2026</p>
+              <h3>Adriatic to Greece</h3>
+              <p className="desc">Explora II</p>
+              <p className="route">Mediterranean</p>
+              <p>Nights: 7</p>
+              <p>Starting From: $5,200 pp</p>
+              <p className="ideal">Mediterranean Repeat Travelers</p>
 
-        <button className="btn">View Details</button>
-      </div>
-    </div>
+              <button className="btn">View Details</button>
+            </div>
+          </div>
 
-    {/* CARD 3 */}
-    <div className="Dist_past_card">
-      <div className="Dist_past_imgwrap">
-        <img src={SailImg1} alt="Antarctica Fly Cruise" />
-      </div>
+          {/* CARD 3 */}
+          <div className="Dist_past_card">
+            <div className="Dist_past_imgwrap">
+              <img src={SailImg1} alt="Antarctica Fly Cruise" />
+            </div>
 
-      <div className="Dist_past_content">
-        <p className="meta">Nov 19–25, 2026</p>
-        <h3>Antarctica Fly Cruise</h3>
-        <p className="desc">Silver Endeavour</p>
-        <p className="route">Antarctica</p>
-        <p>Nights: 6</p>
-        <p>Starting From: $24,500 pp</p>
-        <p className="ideal">Bucket List Expedition Travelers</p>
+            <div className="Dist_past_content">
+              <p className="meta">Nov 19–25, 2026</p>
+              <h3>Antarctica Fly Cruise</h3>
+              <p className="desc">Silver Endeavour</p>
+              <p className="route">Antarctica</p>
+              <p>Nights: 6</p>
+              <p>Starting From: $24,500 pp</p>
+              <p className="ideal">Bucket List Expedition Travelers</p>
 
-        <button className="btn">View Details</button>
-      </div>
-    </div>
+              <button className="btn">View Details</button>
+            </div>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
 
@@ -799,7 +943,7 @@ const toggleFAQ = (index) => {
         <div className="Dist_whysail_container">
 
           <h2 className="Dist_whysail_heading">
-            Why Sail with Angela Hughes
+            Why Sail with Angela Hughes?
           </h2>
 
           <p className="Dist_whysail_intro">
@@ -953,36 +1097,36 @@ const toggleFAQ = (index) => {
       </section>
 
 
-{/* ================= FAQ SECTION ================= */}
-<section className="Dist_faq_section">
-  <div className="Dist_faq_container">
+      {/* ================= FAQ SECTION ================= */}
+      <section className="Dist_faq_section">
+        <div className="Dist_faq_container">
 
-    <h2 className="Dist_faq_heading">
-      Frequently Asked Questions
-    </h2>
+          <h2 className="Dist_faq_heading">
+            Frequently Asked Questions
+          </h2>
 
-    <div className="Dist_faq_list">
-      {faqData.map((item, index) => (
-        <div key={index} className="Dist_faq_item">
+          <div className="Dist_faq_list">
+            {faqData.map((item, index) => (
+              <div key={index} className="Dist_faq_item">
 
-          <div
-            className="Dist_faq_question"
-            onClick={() => toggleFAQ(index)}
-          >
-            <h4>{item.q}</h4>
-            {activeIndex === index ? <Minus size={18} /> : <Plus size={18} />}
-          </div>
+                <div
+                  className="Dist_faq_question"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <h4>{item.q}</h4>
+                  {activeIndex === index ? <Minus size={18} /> : <Plus size={18} />}
+                </div>
 
-          <div className={`Dist_faq_answer ${activeIndex === index ? "active" : ""}`}>
-            <p>{item.a}</p>
+                <div className={`Dist_faq_answer ${activeIndex === index ? "active" : ""}`}>
+                  <p>{item.a}</p>
+                </div>
+
+              </div>
+            ))}
           </div>
 
         </div>
-      ))}
-    </div>
-
-  </div>
-</section>
+      </section>
 
     </>
   )
