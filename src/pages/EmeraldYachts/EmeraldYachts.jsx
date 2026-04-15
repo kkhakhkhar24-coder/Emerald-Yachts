@@ -434,7 +434,9 @@ const LuxuryPage = () => {
                   alt="Emerald Yacht coastal cruising experience"
                 />
                 <div className="Emerald_planning_card_overlay"></div>
-                <span className="Emerald_planning_card_badge">Destinations</span>
+                <span className="Emerald_planning_card_badge">
+                  Destinations
+                </span>
               </div>
               <div className="Emerald_planning_card_body">
                 <h3>Coastal Cruising</h3>
@@ -458,8 +460,8 @@ const LuxuryPage = () => {
               <div className="Emerald_planning_card_body">
                 <h3>Refined Luxury</h3>
                 <p>
-                  Intimate spaces designed for relaxed elegance with
-                  panoramic ocean views and world-class service throughout.
+                  Intimate spaces designed for relaxed elegance with panoramic
+                  ocean views and world-class service throughout.
                 </p>
               </div>
             </div>
@@ -546,22 +548,14 @@ const LuxuryPage = () => {
 
           <div className="Emerald_video_wrapper">
             <div className="Emerald_video_frame">
-              <video
+              <iframe
                 className="Emerald_video_player"
-                controls
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                poster={EmeraldAzzurraVsEmeraldSakara1}
-              >
-                <source
-                  src="https://dl.dropboxusercontent.com/scl/fo/50i1fncme11gdwvndkgz9/AA3pOBiM5PBbCvWe_uIS0bU/Emerald%20Cruises/Yacht%20Cruising/Videos/Paid%20Social_%20EYC%20Caribbean%20Experiences%20_%2030sec%2016x9%20No%20CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=e1xf9emi&raw=1"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+                src="https://www.youtube.com/embed/0uxC2nq35-4?autoplay=1&mute=1&loop=1&playlist=0uxC2nq35-4"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
               <div className="Emerald_video_glow"></div>
             </div>
           </div>
@@ -655,7 +649,9 @@ const LuxuryPage = () => {
       {/* ===== SECTION 18 — FAQ ===== */}
       <section className="emerald_faq_section">
         <div className="emerald_faq_inner">
-          <h2>Emerald Yachts FAQs <br /> Expert Answers</h2>
+          <h2>
+            Emerald Yachts FAQs <br /> Expert Answers
+          </h2>
 
           <AntaFAQ
             items={[

@@ -16,6 +16,11 @@ import SecondPage7 from "../../assets/SecondPage/SecondPage7.jpg";
 import SecondPage8 from "../../assets/SecondPage/SecondPage8.jpg";
 import SecondPage9 from "../../assets/SecondPage/SecondPage9.jpg";
 import SecondPage10 from "../../assets/SecondPage/SecondPage10.jpg";
+import SuiteImg from "../../assets/SecondPage/Suite.jpg";
+import DiningImg from "../../assets/SecondPage/Dining.jpg";
+import BeveragesImg from "../../assets/SecondPage/Beverages.jpg";
+import GuidedImg from "../../assets/SecondPage/Guided.jpg";
+import OnboardImg from "../../assets/SecondPage/Onboard.jpg";
 
 function ScenicAntarctica() {
   const [current, setCurrent] = useState(0);
@@ -55,7 +60,7 @@ function ScenicAntarctica() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const images = [SecondPage10, SecondPage8];
+  const images = [SecondPage10, SecondPage8, SecondPage9];
 
   const galleryImages = [
     SecondPage7,
@@ -189,6 +194,60 @@ function ScenicAntarctica() {
         </div>
       </section>
 
+      {/* ================= SECTION 11.5 — IMAGE GALLERY SLIDER ================= */}
+      <section className="Scenic_gallery_section">
+        <div className="Scenic_gallery_inner">
+          <div className="Scenic_gallery_wrapper">
+            {/* NAVIGATION ARROWS */}
+            <button
+              className="Scenic_gallery_arrow Scenic_gallery_arrow--prev"
+              onClick={() =>
+                setGalleryCurrent(
+                  (prev) =>
+                    (prev - 1 + galleryImages.length) % galleryImages.length,
+                )
+              }
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+
+            <button
+              className="Scenic_gallery_arrow Scenic_gallery_arrow--next"
+              onClick={() =>
+                setGalleryCurrent((prev) => (prev + 1) % galleryImages.length)
+              }
+            >
+              <i className="fas fa-chevron-right"></i>
+            </button>
+
+            {/* IMAGES */}
+            <div
+              className="Scenic_gallery_slide"
+              style={{
+                backgroundImage: `url(${galleryImages[galleryCurrent]})`,
+              }}
+            >
+              <div className="Scenic_gallery_overlay">
+                <span className="Scenic_image_counter">
+                  {galleryCurrent + 1} / {galleryImages.length}
+                </span>
+              </div>
+            </div>
+
+            {/* PAGINATION DOTS */}
+            <div className="Scenic_gallery_dots">
+              {galleryImages.map((_, index) => (
+                <span
+                  key={index}
+                  className={`Scenic_gallery_dot ${index === galleryCurrent ? "active" : ""}`}
+                  onClick={() => setGalleryCurrent(index)}
+                ></span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="Scenic_about_yachts_Experience_section">
         <div className="Scenic_about_yachts_Experience_inner">
           <h2>The Scenic Eclipse Experience</h2>
@@ -215,6 +274,8 @@ function ScenicAntarctica() {
         </div>
       </section>
 
+      {/* section What Is Included on a Scenic Antarctica Expedition? */}
+
       <section className="Scenic_expert_section">
         <div className="Scenic_expert_inner">
           <h2>What Is Included on a Scenic Antarctica Expedition?</h2>
@@ -229,28 +290,48 @@ function ScenicAntarctica() {
 
           <div className="Scenic_expert_cards">
             <div className="Scenic_expert_card">
-              {/* <div className="Scenic_icon_box"><i className="fas fa-route"></i></div> */}
-              <p>Suite accommodations</p>
+              <div className="Scenic_card_image">
+                <img src={SuiteImg} alt="Suite accommodations" />
+              </div>
+              <div className="Scenic_card_content">
+                <p>Suite accommodations</p>
+              </div>
             </div>
 
             <div className="Scenic_expert_card">
-              {/* <div className="Scenic_icon_box"><i className="fas fa-sun"></i></div> */}
-              <p>Dining across multiple venues</p>
+              <div className="Scenic_card_image">
+                <img src={DiningImg} alt="Dining across multiple venues" />
+              </div>
+              <div className="Scenic_card_content">
+                <p>Dining across multiple venues</p>
+              </div>
             </div>
 
             <div className="Scenic_expert_card">
-              {/* <div className="icon_box"><i className="fas fa-clock"></i></div> */}
-              <p>Beverages</p>
+              <div className="Scenic_card_image">
+                <img src={BeveragesImg} alt="Beverages" />
+              </div>
+              <div className="Scenic_card_content">
+                <p>Beverages</p>
+              </div>
             </div>
 
             <div className="Scenic_expert_card">
-              {/* <div className="icon_box"><i className="fas fa-ship"></i></div> */}
-              <p>Guided expedition landings and zodiac excursions</p>
+              <div className="Scenic_card_image">
+                <img src={GuidedImg} alt="Guided expedition landings" />
+              </div>
+              <div className="Scenic_card_content">
+                <p>Guided expedition landings and zodiac excursions</p>
+              </div>
             </div>
 
             <div className="Scenic_expert_card">
-              {/* <div className="icon_box"><i className="fas fa-plane"></i></div> */}
-              <p>Onboard lectures and enrichment</p>
+              <div className="Scenic_card_image">
+                <img src={OnboardImg} alt="Onboard lectures" />
+              </div>
+              <div className="Scenic_card_content">
+                <p>Onboard lectures and enrichment</p>
+              </div>
             </div>
           </div>
         </div>
@@ -615,60 +696,6 @@ function ScenicAntarctica() {
                   className="Scenic_insight_expert_image"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= SECTION 11.5 — IMAGE GALLERY SLIDER ================= */}
-      <section className="Scenic_gallery_section">
-        <div className="Scenic_gallery_inner">
-          <div className="Scenic_gallery_wrapper">
-            {/* NAVIGATION ARROWS */}
-            <button
-              className="Scenic_gallery_arrow Scenic_gallery_arrow--prev"
-              onClick={() =>
-                setGalleryCurrent(
-                  (prev) =>
-                    (prev - 1 + galleryImages.length) % galleryImages.length,
-                )
-              }
-            >
-              <i className="fas fa-chevron-left"></i>
-            </button>
-
-            <button
-              className="Scenic_gallery_arrow Scenic_gallery_arrow--next"
-              onClick={() =>
-                setGalleryCurrent((prev) => (prev + 1) % galleryImages.length)
-              }
-            >
-              <i className="fas fa-chevron-right"></i>
-            </button>
-
-            {/* IMAGES */}
-            <div
-              className="Scenic_gallery_slide"
-              style={{
-                backgroundImage: `url(${galleryImages[galleryCurrent]})`,
-              }}
-            >
-              <div className="Scenic_gallery_overlay">
-                <span className="Scenic_image_counter">
-                  {galleryCurrent + 1} / {galleryImages.length}
-                </span>
-              </div>
-            </div>
-
-            {/* PAGINATION DOTS */}
-            <div className="Scenic_gallery_dots">
-              {galleryImages.map((_, index) => (
-                <span
-                  key={index}
-                  className={`Scenic_gallery_dot ${index === galleryCurrent ? "active" : ""}`}
-                  onClick={() => setGalleryCurrent(index)}
-                ></span>
-              ))}
             </div>
           </div>
         </div>

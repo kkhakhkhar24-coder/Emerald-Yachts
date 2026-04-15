@@ -26,21 +26,16 @@ import {
   Info,
 } from "lucide-react";
 
-// Import yacht images from LuxuryYachtCruises folder
-// Using available images - you can replace these with actual brand-specific images later
-import RitzCarltonImage from "../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_Santo_Stefano_23262.jpg";
-import AmanImage from "../../assets/LuxuryYachtCruises/SSC_SM_Turkey_Kusadasi_0055.jpg";
-import ScenicImage from "../../assets/LuxuryYachtCruises/SSC_RA_Spain_Palma_De_Mallorca_A059C0056.jpg";
-import EmeraldImage from "../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_Santo_Stefano_23262.jpg";
-import FourSeasonsImage from "../../assets/LuxuryYachtCruises/SSC_SM_Turkey_Kusadasi_0055.jpg";
-import OrientExpressImage from "../../assets/LuxuryYachtCruises/SSC_RA_Spain_Palma_De_Mallorca_A059C0056.jpg";
 import FinalBGImage from "../../assets/LuxuryYachtCruises/FinalBG_Image.jpg";
 import ImageGallery1 from "../../assets/LuxuryYachtCruises/ImageGallery1.webp";
 import ImageGallery2 from "../../assets/LuxuryYachtCruises/ImageGallery2.webp";
 import ImageGallery3 from "../../assets/LuxuryYachtCruises/ImageGallery3.webp";
 import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.webp";
-import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.webp";
-import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.webp";
+import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.jpeg";
+import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.jpg";
+import EmeraldKaia from "../../assets/LuxuryYachtCruises/Emerald Kaia.jpg";
+import RitzCart from "../../assets/LuxuryYachtCruises/Ritzcart.jpeg";
+import AmaDante from "../../assets/LuxuryYachtCruises/AmaDante_Yachts.jpg";
 
 function useFadeIn() {
   const ref = useRef(null);
@@ -782,21 +777,14 @@ export default function YachtCruisesPage() {
           </div>
 
           <div className="lux-video-wrapper">
-            <video
+            <iframe
               className="lux-video-player"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-            >
-              <source
-                src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AM4U9Ywg5B3JhMCyVmy7Vm0/Scenic/Scenic%20Ocean/Videos/Experiences/SCENIC_LONG_FORM_FINAL.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=cmis4m8h&raw=1"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+              src="https://www.youtube.com/embed/o9Pf7o-ICzc"
+              title="Luxury Yacht Experience"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <div className="lux-video-caption">
@@ -1204,6 +1192,43 @@ export default function YachtCruisesPage() {
                 </div>
               </div>
             </main>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION 04.5: FEATURED BRANDS — Modern Three-Column Visual Grid ===== */}
+      <section className="lux-brands-highlight">
+        <div className="lux-container-wide">
+          <div className="lux-brand-highlight-grid">
+            {/* Card 1: Emerald Cruises */}
+            <div className="lux-highlight-card">
+              <div className="lux-highlight-image">
+                <img src={EmeraldKaia} alt="Emerald Cruises" />
+              </div>
+              <div className="lux-highlight-info">
+                <h3 className="lux-highlight-title">Emerald Cruises</h3>
+              </div>
+            </div>
+
+            {/* Card 2: Ritz-Carlton yacht */}
+            <div className="lux-highlight-card">
+              <div className="lux-highlight-image">
+                <img src={RitzCart} alt="Ritz-Carlton yacht" />
+              </div>
+              <div className="lux-highlight-info">
+                <h3 className="lux-highlight-title">Ritz-Carlton yacht</h3>
+              </div>
+            </div>
+
+            {/* Card 3: Aman yacht */}
+            <div className="lux-highlight-card">
+              <div className="lux-highlight-image">
+                <img src={AmaDante} alt="Aman yacht" />
+              </div>
+              <div className="lux-highlight-info">
+                <h3 className="lux-highlight-title">Aman yacht</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>

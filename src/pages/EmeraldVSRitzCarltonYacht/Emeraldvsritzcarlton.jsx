@@ -4,7 +4,16 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Emeraldvsritzcarlton.css";
 import myImage from "../../assets/image.jpg";
-import { Award, Globe, Shield, Star, Calendar, Trophy, Newspaper, BadgeCheck } from "lucide-react";
+import {
+  Award,
+  Globe,
+  Shield,
+  Star,
+  Calendar,
+  Trophy,
+  Newspaper,
+  BadgeCheck,
+} from "lucide-react";
 
 import hero1 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr1.jpg";
 import hero2 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr2.jpg";
@@ -14,12 +23,12 @@ import ExpertInsight from "../../assets/EmeraldVSRitzCarltonYacht/Expert1.jpg";
 import ExpertInsight2 from "../../assets/EmeraldVSRitzCarltonYacht/Expert2.jpg";
 import ExpertInsight3 from "../../assets/EmeraldVSRitzCarltonYacht/Expert3.jpg";
 import CTA_BG from "../../assets/EmeraldVSRitzCarltonYacht/Experice.jpg";
-
+import RitzImg from "../../assets/EmeraldVSRitzCarltonYacht/Ritzcarton.jpg";
 import Slider1 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider1.jpg";
 import Slider2 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider2.jpg";
 import Slider3 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider3.jpg";
 import Slider4 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider4.jpg";
-import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.jpg";
+import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.jpeg";
 import Slider6 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider6.jpg";
 import Slider7 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider7.jpg";
 
@@ -375,14 +384,11 @@ const EmeraldVsRitzCarltonPage = () => {
         <div className="evrc_brand_inner">
           <div className="evrc_brand_flex">
             <div className="evrc_brand_video">
-              <div className="evrc_video_wrapper">
-                <video
-                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AGzy-ggsf1Qlag61oJJTosM/Emerald%20Cruises/Yacht%20Cruising/Emerald%20Cruises%20Luxury%20Yachts/Emerald%20Kaia/Videos/Emerald%20Kaia%20-%202%20min%20Video.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=jj7giiko&raw=1"
-                  autoPlay
-                  loop
-                  muted
-                  controls
-                  playsInline
+              <div className="evrc_image_wrapper">
+                <img
+                  src={RitzImg}
+                  alt="Ritz-Carlton Yacht Collection Luxury Experience"
+                  className="evrc_brand_img"
                 />
               </div>
             </div>
