@@ -1772,11 +1772,11 @@
 
 .Emerald_video_player {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
   display: block;
-  max-height: 500px;
-  object-fit: cover;
+  max-height: 700px;
   border-radius: 20px;
+  border: none;
 }
 
 .Emerald_video_caption {
@@ -2024,7 +2024,7 @@
   }
 
   .Emerald_video_player {
-    max-height: 350px;
+    max-height: 500px;
   }
 
   .Emerald_video_caption {
@@ -2067,7 +2067,7 @@
   }
 
   .Emerald_video_player {
-    max-height: 250px;
+    max-height: 400px;
   }
 
   .Emerald_video_frame {
