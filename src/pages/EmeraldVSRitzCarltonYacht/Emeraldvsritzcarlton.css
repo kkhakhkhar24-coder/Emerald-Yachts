@@ -1579,3 +1579,123 @@
   }
 }
 
+/* ================= SECTION 10.5 — VIDEO SHOWCASE ================= */
+.evrc_video_showcase {
+  background: linear-gradient(180deg, #f8f9fa 0%, #eef2f5 100%);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.evrc_video_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.evrc_video_header {
+  margin-bottom: 40px;
+}
+
+.evrc_video_header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #2f4a6d;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.evrc_video_divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2f4a6d 0%, #3d5a80 100%);
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.evrc_video_wrapper {
+  margin-bottom: 30px;
+}
+
+.evrc_video_frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.15),
+    0 0 0 1px rgba(39, 68, 114, 0.08);
+  transition: all 0.4s ease;
+}
+
+.evrc_video_frame:hover {
+  box-shadow: 0 30px 80px rgba(39, 68, 114, 0.2),
+    0 0 0 1px rgba(39, 68, 114, 0.12);
+  transform: translateY(-4px);
+}
+
+.evrc_video_glow {
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    135deg,
+    rgba(47, 74, 109, 0.3) 0%,
+    transparent 50%,
+    rgba(47, 74, 109, 0.3) 100%
+  );
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.evrc_video_frame:hover .evrc_video_glow {
+  opacity: 1;
+}
+
+.evrc_video_player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  max-height: 650px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .evrc_video_header h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .evrc_video_showcase {
+    padding: 60px 15px;
+  }
+  .evrc_video_header h2 {
+    font-size: 28px;
+  }
+  .evrc_video_player {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .evrc_video_header h2 {
+    font-size: 24px;
+  }
+  .evrc_video_player {
+    max-height: 300px;
+  }
+  .evrc_video_frame {
+    border-radius: 14px;
+  }
+  .evrc_video_player {
+    border-radius: 14px;
+  }
+}
+

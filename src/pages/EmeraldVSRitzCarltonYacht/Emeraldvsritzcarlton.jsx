@@ -689,6 +689,30 @@ const EmeraldVsRitzCarltonPage = () => {
         </div>
       </section>
 
+      {/* ===== SECTION 10.5 — RITZ-CARLTON VIDEO SHOWCASE ===== */}
+      <section className="evrc_video_showcase">
+        <div className="evrc_video_inner">
+          <div className="evrc_video_header">
+            <h2>Experience the Ritz-Carlton Yacht Collection</h2>
+            <div className="evrc_video_divider"></div>
+          </div>
+
+          <div className="evrc_video_wrapper">
+            <div className="evrc_video_frame">
+              <iframe
+                className="evrc_video_player"
+                src="https://www.youtube.com/embed/o9Pf7o-ICzc?autoplay=1&mute=1&loop=1&playlist=o9Pf7o-ICzc"
+                title="Ritz-Carlton Yacht Collection Experience"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="evrc_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 11 — URGENCY / BOOKING ===== */}
       <section className="evrc_urgency_section">
         <div className="evrc_urgency_inner">

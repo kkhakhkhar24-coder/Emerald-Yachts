@@ -30,7 +30,7 @@ import FinalBGImage from "../../assets/LuxuryYachtCruises/FinalBG_Image.jpg";
 import ImageGallery1 from "../../assets/LuxuryYachtCruises/ImageGallery1.webp";
 import ImageGallery2 from "../../assets/LuxuryYachtCruises/ImageGallery2.webp";
 import ImageGallery3 from "../../assets/LuxuryYachtCruises/ImageGallery3.webp";
-import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.webp";
+import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.jpg";
 import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.jpeg";
 import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.jpg";
 import EmeraldKaia from "../../assets/LuxuryYachtCruises/Emerald Kaia.jpg";
@@ -779,7 +779,7 @@ export default function YachtCruisesPage() {
           <div className="lux-video-wrapper">
             <iframe
               className="lux-video-player"
-              src="https://www.youtube.com/embed/o9Pf7o-ICzc"
+              src="https://www.youtube.com/embed/07r79O5k1Cw?autoplay=1&mute=1&loop=1&playlist=07r79O5k1Cw"
               title="Luxury Yacht Experience"
               frameBorder="0"
               allow="autoplay; encrypted-media"

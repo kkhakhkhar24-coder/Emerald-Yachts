@@ -416,7 +416,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* INTRO */}
-      <section className="rva-section rva-bg-white" id="rva-overview">
+      <section className="rva-section rva-bg-soft" id="rva-overview">
         <div className="rva-container">
           <p className="rva-intro-text">
             This is one of the most important river cruise comparisons for
@@ -430,7 +430,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* WHY TRUST */}
-      <section className="rva-section rva-bg-soft">
+      <section className="rva-section rva-bg-white">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Why Trust This Comparison</h2>
@@ -448,7 +448,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* KEY DIFFERENCES TABLE */}
-      <section className="rva-section rva-bg-white" id="rva-comparison">
+      <section className="rva-section rva-bg-soft" id="rva-comparison">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Key Differences at a Glance</h2>
@@ -505,7 +505,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* KEY FEATURES TABLE */}
-      <section className="rva-section rva-bg-soft">
+      <section className="rva-section rva-bg-white">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">
@@ -578,6 +578,29 @@ const RiversidevsAmaWaterways = () => {
         </div>
       </section>
 
+      {/* VIDEO CLIP SECTION */}
+      <section className="rva-video-showcase">
+        <div className="rva-container">
+          <div className="rva-section-header">
+            <h2 className="rva-h2">Experience Riverside Luxury</h2>
+            <div className="rva-accent-line"></div>
+          </div>
+          <div className="rva-video-wrapper">
+            <div className="rva-video-frame">
+              <iframe
+                className="rva-video-player"
+                src="https://www.youtube.com/embed/vjyJnYhRYF0?autoplay=1&mute=1&loop=1&playlist=vjyJnYhRYF0"
+                title="Riverside Luxury Cruises Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="rva-video-glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* THE REAL DIFFERENCE */}
       <section className="rva-section rva-bg-white">
         <div className="rva-container">
@@ -623,36 +646,8 @@ const RiversidevsAmaWaterways = () => {
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-      <section className="rva-dual-video-section">
-        <div className="rva-container">
-          <div className="rva-section-header">
-            <h2 className="rva-h2">Watch the Experience</h2>
-            <div className="rva-accent-line"></div>
-          </div>
-          <div className="rva-video-grid">
-            <div className="rva-video-item">
-              <iframe
-                src="https://www.youtube.com/embed/mq3Efm_UrpQ"
-                title="Riverside Luxury Cruises Video 1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="rva-video-item">
-              <iframe
-                src="https://www.youtube.com/embed/vjyJnYhRYF0"
-                title="Riverside Luxury Cruises Video 2"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* PRICING */}
-      <section className="rva-section rva-bg-white" id="rva-pricing">
+      <section className="rva-section rva-bg-soft" id="rva-pricing">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Pricing Comparison</h2>
@@ -672,6 +667,98 @@ const RiversidevsAmaWaterways = () => {
               published positioning and inclusions, not a fixed fare chart,
               since fares vary by sailing date, itinerary, and cabin category.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MODERN IMAGE GALLERY */}
+      <section className="rva-gallery-section">
+        <div className="rva-gallery-inner">
+          {/* Header Area */}
+          <div className="rva-gallery-header">
+            <span className="rva-gallery-eyebrow">Onboard Experience</span>
+            <h2 className="rva-gallery-h2">Life Aboard Luxury River Cruises</h2>
+            <div className="rva-gallery-divider"></div>
+            <p className="rva-gallery-p">
+              From pristine suites to stunning river destinations — experience
+              what boutique luxury on the water truly looks and feels like.
+            </p>
+          </div>
+
+          {/* Bento Grid Layout */}
+          <div className="rva-gallery-bento-grid">
+            {/* 01: Large Featured Item */}
+            <div className="rva-gallery-item rva-gallery-feature">
+              <div className="rva-gallery-image-box">
+                <img
+                  src={ImageGellery1}
+                  alt="Luxury Suite"
+                  className="rva-gallery-img"
+                />
+                <div className="rva-gallery-overlay">
+                  <span className="rva-gallery-badge">Poolside Escape</span>
+                  <h3 className="rva-gallery-h3">
+                    Relaxed Poolside Luxury Experience
+                  </h3>
+                  <p className="rva-gallery-item_p">
+                    Unwind with handcrafted cocktails beside a tranquil onboard
+                    pool, where modern design and scenic river views create the
+                    perfect setting for relaxation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 02: Vertical Item */}
+            <div className="rva-gallery-item rva-gallery-tall">
+              <div className="rva-gallery-image-box">
+                <img
+                  src={ImageGellery2}
+                  alt="Onboard lifestyle"
+                  className="rva-gallery-img"
+                />
+                <div className="rva-gallery-overlay">
+                  <span className="rva-gallery-badge">Fine Dining</span>
+                  <h3 className="rva-gallery-h3">
+                    Elegant Onboard Fine Dining
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 03: Standard Item */}
+            <div className="rva-gallery-item">
+              <div className="rva-gallery-image-box">
+                <img
+                  src={ImageGellery3}
+                  alt="Fine Dining"
+                  className="rva-gallery-img"
+                />
+                <div className="rva-gallery-overlay">
+                  <span className="rva-gallery-badge">River Suites</span>
+                  <h3 className="rva-gallery-h3">
+                    Luxury River Suite with Panoramic Views
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 04: Standard Item */}
+            <div className="rva-gallery-item">
+              <div className="rva-gallery-image-box">
+                <img
+                  src={ImageGellery4}
+                  alt="Destinations"
+                  className="rva-gallery-img"
+                />
+                <div className="rva-gallery-overlay">
+                  <span className="rva-gallery-badge">Social Lounge</span>
+                  <h3 className="rva-gallery-h3">
+                    Social Evenings & Lounge Experience
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -776,7 +863,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* WHO SHOULD CHOOSE */}
-      <section className="rva-section rva-bg-white">
+      <section className="rva-section rva-bg-soft">
         <div className="rva-container">
           <div className="rva-choose-grid">
             <div className="rva-choose-card">
@@ -864,93 +951,24 @@ const RiversidevsAmaWaterways = () => {
         </div>
       </section>
 
-      {/* MODERN IMAGE GALLERY */}
-      <section className="rva-gallery-section">
-        <div className="rva-gallery-inner">
-          {/* Header Area */}
-          <div className="rva-gallery-header">
-            <span className="rva-gallery-eyebrow">Onboard Experience</span>
-            <h2 className="rva-gallery-h2">Life Aboard Luxury River Cruises</h2>
-            <div className="rva-gallery-divider"></div>
-            <p className="rva-gallery-p">
-              From pristine suites to stunning river destinations — experience
-              what boutique luxury on the water truly looks and feels like.
-            </p>
+      {/* VIDEO SECTION — AMAWATERWAYS EXPERIENCE */}
+      <section className="rva-video-showcase">
+        <div className="rva-container">
+          <div className="rva-section-header">
+            <h2 className="rva-h2">The AmaWaterways Experience</h2>
+            <div className="rva-accent-line"></div>
           </div>
-
-          {/* Bento Grid Layout */}
-          <div className="rva-gallery-bento-grid">
-            {/* 01: Large Featured Item */}
-            <div className="rva-gallery-item rva-gallery-feature">
-              <div className="rva-gallery-image-box">
-                <img
-                  src={ImageGellery1}
-                  alt="Luxury Suite"
-                  className="rva-gallery-img"
-                />
-                <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Poolside Escape</span>
-                  <h3 className="rva-gallery-h3">
-                    Relaxed Poolside Luxury Experience
-                  </h3>
-                  <p className="rva-gallery-item_p">
-                    Unwind with handcrafted cocktails beside a tranquil onboard
-                    pool, where modern design and scenic river views create the
-                    perfect setting for relaxation.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 02: Vertical Item */}
-            <div className="rva-gallery-item rva-gallery-tall">
-              <div className="rva-gallery-image-box">
-                <img
-                  src={ImageGellery2}
-                  alt="Onboard lifestyle"
-                  className="rva-gallery-img"
-                />
-                <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Fine Dining</span>
-                  <h3 className="rva-gallery-h3">
-                    Elegant Onboard Fine Dining
-                  </h3>
-                </div>
-              </div>
-            </div>
-
-            {/* 03: Standard Item */}
-            <div className="rva-gallery-item">
-              <div className="rva-gallery-image-box">
-                <img
-                  src={ImageGellery3}
-                  alt="Fine Dining"
-                  className="rva-gallery-img"
-                />
-                <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">River Suites</span>
-                  <h3 className="rva-gallery-h3">
-                    Luxury River Suite with Panoramic Views
-                  </h3>
-                </div>
-              </div>
-            </div>
-
-            {/* 04: Standard Item */}
-            <div className="rva-gallery-item">
-              <div className="rva-gallery-image-box">
-                <img
-                  src={ImageGellery4}
-                  alt="Destinations"
-                  className="rva-gallery-img"
-                />
-                <div className="rva-gallery-overlay">
-                  <span className="rva-gallery-badge">Social Lounge</span>
-                  <h3 className="rva-gallery-h3">
-                    Social Evenings & Lounge Experience
-                  </h3>
-                </div>
-              </div>
+          <div className="rva-video-wrapper">
+            <div className="rva-video-frame">
+              <iframe
+                className="rva-video-player"
+                src="https://www.youtube.com/embed/mq3Efm_UrpQ?autoplay=1&mute=1&loop=1&playlist=mq3Efm_UrpQ"
+                title="AmaWaterways Experience Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="rva-video-glow"></div>
             </div>
           </div>
         </div>

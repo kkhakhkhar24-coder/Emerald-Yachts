@@ -788,9 +788,6 @@ h2.yacht-section-h2 {
         padding: 100px 30px 70px;
     }
 
-    .yacht-hero h1 {
-        font-size: 42px !important;
-    }
 
     .yacht-hero-eyebrow {
         font-size: 11px !important;
@@ -836,10 +833,6 @@ h2.yacht-section-h2 {
         font-size: 11px !important;
     }
 
-    .yacht-hero h1 {
-        font-size: 32px !important;
-    }
-
     .yacht-hero-lead,
     .lux-lead-text {
         font-size: 17px !important;
@@ -856,7 +849,7 @@ h2.yacht-section-h2 {
     }
 
     .yacht-hero h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
         line-height: 1.15 !important;
     }
 
@@ -901,9 +894,6 @@ h2.yacht-section-h2 {
         padding: 14px 28px;
     }
 
-    .yacht-hero h1 {
-        font-size: 26px !important;
-    }
 
 }
 
@@ -916,7 +906,7 @@ h2.yacht-section-h2 {
     }
 
     .yacht-hero h1 {
-        font-size: 30px !important;
+        font-size: 28px !important;
         line-height: 1.15 !important;
     }
 
@@ -965,9 +955,6 @@ h2.yacht-section-h2 {
         padding: 15px 20px;
     }
 
-    .yacht-hero h1 {
-        font-size: 26px !important;
-    }
 
     .yacht-btn-primary,
     .yacht-btn-secondary {
@@ -3252,6 +3239,9 @@ h2.yacht-section-h2 {
     .lux-vs-card {
         padding: 30px 20px;
     }
+    .lux-card-h3{
+        font-size: 24px !important;
+    }
 
 }
 
@@ -3534,6 +3524,9 @@ h2.yacht-section-h2 {
 
     .lux-authority-image-wrapper {
         border-radius: 16px;
+    }
+    .lux-authority-title{
+        font-size: 24px !important;
     }
 
 }
