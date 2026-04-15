@@ -18,13 +18,16 @@ import heroImage2 from "../../assets/ScenicvsFourSeasonsYachts/Hero2.jpg";
 import heroImage3 from "../../assets/ScenicvsFourSeasonsYachts/Hero3.jpg";
 import section5bg from "../../assets/ScenicvsFourSeasonsYachts/Section5_bg.jpg";
 import section12Image1 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Emerald_Cruises.jpg";
-import section12Image2 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_RitzCarlton_Yacht_Collection.jpg";
+import section12Image2 from "../../assets/ScenicvsFourSeasonsYachts/Ritz_Carlton_Yacht.jpg";
 import section12Image3 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Explora_Journeys.jpg";
 import section12Image4 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg";
 import galleryImage1 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage1.jpg";
 import galleryImage2 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage2.jpg";
 import galleryImage3 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage3.jpg";
 import galleryImage4 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage4.jpg";
+import Cliffs_of_Moher from "../../assets/ScenicvsFourSeasonsYachts/Cliffs_of_Moher.png";
+import Athens_Acropolis from "../../assets/ScenicvsFourSeasonsYachts/Athens_Acropolis.png";
+import Mont_Saint_Michel from "../../assets/ScenicvsFourSeasonsYachts/Mont_Saint_Michel.png";
 
 function FAQ() {
   const [open, setOpen] = useState(null);
@@ -326,10 +329,10 @@ function ScenicVSFourSeasonsYachts() {
             </main>
             <aside className="svf-sticky-side">
               <div className="svf-sticky-el">
-                <h2 className="svf-h2 svf-lbar">
+                {/* <h2 className="svf-h2 svf-lbar">
                   Written and reviewed by <br />
                   Angela Hughes
-                </h2>
+                </h2> */}
                 <div className="svf-cred-box">
                   <div className="svf-avatar">
                     <img
@@ -580,7 +583,7 @@ function ScenicVSFourSeasonsYachts() {
         <div className="svf-inner">
           <div className="svf-video-header">
             <h2 className="svf-h2" style={{ textAlign: "center" }}>
-              The Discovery Yacht <br /> Advantage in the Mediterranean
+              Four Seasons Yachts <br /> Love Makes Waves
             </h2>
             <div className="svf-bar" style={{ margin: "20px auto 0" }}></div>
             <p
@@ -592,18 +595,13 @@ function ScenicVSFourSeasonsYachts() {
                 margin: "20px auto 0",
               }}
             >
-              Is Scenic Eclipse right for your European summer? This showcase of
-              Rome, Capri, and the French Riviera demonstrates the difference
-              between a "hotel at sea" and a "Discovery Yacht." See how
-              all-inclusive luxury is paired with active immersion, allowing
-              guests to explore iconic destinations at their own pace and from
-              every perspective.
+              Experience a new era of luxury at sea where legendary service meets the horizon. Four Seasons Yachts invites you to embark on a grand voyage, bringing the world-class sophistication of the Four Seasons brand to the seas.
             </p>
           </div>
           <div className="svf-video-wrapper">
             <iframe
               className="svf-video-player"
-              src="https://www.youtube.com/embed/TCCFGo2Fo-E"
+              src="https://www.youtube.com/embed/CHX_uDP9RlM"
               title="Experience Scenic Eclipse"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -639,17 +637,16 @@ function ScenicVSFourSeasonsYachts() {
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
-                  src={galleryImage1}
+                  src={Mont_Saint_Michel}
                   alt="Scenic Eclipse luxury suite with panoramic ocean views"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Luxury Suites</span>
-                    <h3>Panoramic Elegance</h3>
+                    <span className="svf-gallery-badge">Iconic Destinations</span>
+                    <h3>The Timeless Beauty of Mont Saint-Michel</h3>
                     <p>
-                      Spacious suites designed for comfort with stunning ocean
-                      vistas
+                      Step into one of France’s most iconic landmarks, where history, architecture, and atmosphere come together in a truly unforgettable coastal setting.
                     </p>
                   </div>
                 </div>
@@ -676,15 +673,15 @@ function ScenicVSFourSeasonsYachts() {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  src={galleryImage3}
+                  src={Athens_Acropolis}
                   alt="Luxury yacht deck with premium amenities"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Onboard Luxury</span>
-                    <h3>Deck & Amenities</h3>
-                    <p>Premium facilities for relaxation and recreation</p>
+                    <span className="svf-gallery-badge">Cultural Journeys</span>
+                    <h3>Ancient Athens & The Acropolis</h3>
+                    <p>Discover the origins of Western civilization as you explore Athens and the Acropolis, guided by immersive experiences that bring history to life.</p>
                   </div>
                 </div>
               </div>
@@ -693,16 +690,16 @@ function ScenicVSFourSeasonsYachts() {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
-                  src={galleryImage4}
+                  src={Cliffs_of_Moher}
                   alt="Scenic yacht exploring Mediterranean coastal destinations"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Destinations</span>
-                    <h3>Coastal Discovery</h3>
+                    <span className="svf-gallery-badge">Coastal Escapes</span>
+                    <h3>Ireland’s Dramatic Atlantic Coastline</h3>
                     <p>
-                      Explore iconic Mediterranean and Caribbean destinations
+                      Experience the raw beauty of Ireland’s Cliffs of Moher, where dramatic ocean views and sweeping landscapes create unforgettable moments along your curated journey.
                     </p>
                   </div>
                 </div>
@@ -979,7 +976,7 @@ function ScenicVSFourSeasonsYachts() {
       <section className="svf-section svf-bg-white">
         <div className="svf-inner">
           <div className="svf-hdr">
-            <h2 className="svf-h2">What We Recommend Instead</h2>
+            <h2 className="svf-h2">Explore Other Top Yacht Brands</h2>
             <div className="svf-bar"></div>
           </div>
           <div className="svf-alt-grid">
