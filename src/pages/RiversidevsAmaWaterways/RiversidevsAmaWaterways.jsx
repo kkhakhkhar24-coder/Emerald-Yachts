@@ -18,14 +18,14 @@ import {
 import "./RiversidevsAmaWaterways.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/Riverside-vs-Viking/Hero1.jpeg";
-import HeroImage2 from "../../assets/Riverside-vs-Viking/Hero2.jpeg";
-import HeroImage3 from "../../assets/Riverside-vs-Viking/Hero3.jpeg";
-import CTAImage from "../../assets/Riverside-vs-Viking/plancruse.png";
-import ImageGellery1 from "../../assets/Riverside-vs-Viking/Imagegallery1.jpg";
-import ImageGellery2 from "../../assets/Riverside-vs-Viking/Imagegallery2.jpg";
-import ImageGellery3 from "../../assets/Riverside-vs-Viking/Imagegallery3.jpg";
-import ImageGellery4 from "../../assets/Riverside-vs-Viking/Imagegallery4.jpg";
+import HeroImage1 from "../../assets/RiversidevsAmaWaterways/AmaBella_Exterior.jpg";
+import HeroImage2 from "../../assets/RiversidevsAmaWaterways/AmaLilia_Exterior.jpg";
+import HeroImage3 from "../../assets/RiversidevsAmaWaterways/FR_Avignon_AmaCello.jpg";
+import CTAImage from "../../assets/RiversidevsAmaWaterways/Magnificent Europe.jpg";
+import ImageGellery1 from "../../assets/RiversidevsAmaWaterways/AmaCello_ChefTable_Dining.jpg";
+import ImageGellery2 from "../../assets/RiversidevsAmaWaterways/AmaCello_Bar_Lounge.jpg";
+import ImageGellery3 from "../../assets/RiversidevsAmaWaterways/AmaBella_Twin-Balcony.jpg";
+import ImageGellery4 from "../../assets/RiversidevsAmaWaterways/AmaBella_MainLounge.jpg";
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {
@@ -685,38 +685,62 @@ const RiversidevsAmaWaterways = () => {
           </div>
           <div className="rva-best-for-grid">
             <div className="rva-best-for-card riverside">
-              <div className="rva-best-for-icon"><Heart size={24} /></div>
-              <p className="rva-best-for-text">Best for couples seeking a quieter atmosphere:</p>
+              <div className="rva-best-for-icon">
+                <Heart size={24} />
+              </div>
+              <p className="rva-best-for-text">
+                Best for couples seeking a quieter atmosphere:
+              </p>
               <div className="rva-best-for-badge">Riverside</div>
             </div>
 
             <div className="rva-best-for-card ama">
-              <div className="rva-best-for-icon"><Ship size={24} /></div>
+              <div className="rva-best-for-icon">
+                <Ship size={24} />
+              </div>
               <p className="rva-best-for-text">Best for active travelers:</p>
               <div className="rva-best-for-badge">AmaWaterways</div>
             </div>
 
             <div className="rva-best-for-card ama">
-              <div className="rva-best-for-icon"><MapPin size={24} /></div>
-              <p className="rva-best-for-text">Best for travelers wanting broader destination options:</p>
+              <div className="rva-best-for-icon">
+                <MapPin size={24} />
+              </div>
+              <p className="rva-best-for-text">
+                Best for travelers wanting broader destination options:
+              </p>
               <div className="rva-best-for-badge">AmaWaterways</div>
             </div>
 
             <div className="rva-best-for-card riverside">
-              <div className="rva-best-for-icon"><Layers size={24} /></div>
-              <p className="rva-best-for-text">Best for travelers prioritizing suite-style space:</p>
+              <div className="rva-best-for-icon">
+                <Layers size={24} />
+              </div>
+              <p className="rva-best-for-text">
+                Best for travelers prioritizing suite-style space:
+              </p>
               <div className="rva-best-for-badge">Riverside</div>
             </div>
 
             <div className="rva-best-for-card ama">
-              <div className="rva-best-for-icon"><Check size={24} /></div>
-              <p className="rva-best-for-text">Best for first-time premium river cruisers who want lots included:</p>
+              <div className="rva-best-for-icon">
+                <Check size={24} />
+              </div>
+              <p className="rva-best-for-text">
+                Best for first-time premium river cruisers who want lots
+                included:
+              </p>
               <div className="rva-best-for-badge">AmaWaterways</div>
             </div>
 
             <div className="rva-best-for-card riverside">
-              <div className="rva-best-for-icon"><Users size={24} /></div>
-              <p className="rva-best-for-text">Best for travelers who want a more boutique European river experience:</p>
+              <div className="rva-best-for-icon">
+                <Users size={24} />
+              </div>
+              <p className="rva-best-for-text">
+                Best for travelers who want a more boutique European river
+                experience:
+              </p>
               <div className="rva-best-for-badge">Riverside</div>
             </div>
           </div>
@@ -866,9 +890,13 @@ const RiversidevsAmaWaterways = () => {
                 />
                 <div className="rva-gallery-overlay">
                   <span className="rva-gallery-badge">Poolside Escape</span>
-                  <h3 className="rva-gallery-h3">Relaxed Poolside Luxury Experience</h3>
+                  <h3 className="rva-gallery-h3">
+                    Relaxed Poolside Luxury Experience
+                  </h3>
                   <p className="rva-gallery-item_p">
-                    Unwind with handcrafted cocktails beside a tranquil onboard pool, where modern design and scenic river views create the perfect setting for relaxation.
+                    Unwind with handcrafted cocktails beside a tranquil onboard
+                    pool, where modern design and scenic river views create the
+                    perfect setting for relaxation.
                   </p>
                 </div>
               </div>
@@ -884,7 +912,9 @@ const RiversidevsAmaWaterways = () => {
                 />
                 <div className="rva-gallery-overlay">
                   <span className="rva-gallery-badge">Fine Dining</span>
-                  <h3 className="rva-gallery-h3">Elegant Onboard Fine Dining</h3>
+                  <h3 className="rva-gallery-h3">
+                    Elegant Onboard Fine Dining
+                  </h3>
                 </div>
               </div>
             </div>
@@ -899,7 +929,9 @@ const RiversidevsAmaWaterways = () => {
                 />
                 <div className="rva-gallery-overlay">
                   <span className="rva-gallery-badge">River Suites</span>
-                  <h3 className="rva-gallery-h3">Luxury River Suite with Panoramic Views</h3>
+                  <h3 className="rva-gallery-h3">
+                    Luxury River Suite with Panoramic Views
+                  </h3>
                 </div>
               </div>
             </div>
@@ -914,7 +946,9 @@ const RiversidevsAmaWaterways = () => {
                 />
                 <div className="rva-gallery-overlay">
                   <span className="rva-gallery-badge">Social Lounge</span>
-                  <h3 className="rva-gallery-h3">Social Evenings & Lounge Experience</h3>
+                  <h3 className="rva-gallery-h3">
+                    Social Evenings & Lounge Experience
+                  </h3>
                 </div>
               </div>
             </div>

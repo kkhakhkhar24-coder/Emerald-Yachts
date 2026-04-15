@@ -169,16 +169,15 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 .rva-hero-bg-slide.rva-active-slide { opacity: 1; }
 .rva-hero-overlay {
     position: relative; z-index: 2; min-height: 100vh;
-    display: flex; align-items: center; justify-content: center; width: 100%;
+    display: flex; align-items: center; justify-content: flex-start; width: 100%;
 }
 .rva-hero-container {
     width: 100%; max-width: 1200px;
-    margin: 0 auto; padding: 60px 20px 80px;
+    margin: 0 auto; padding: 60px 40px 80px; /* increased left padding */
 }
 .rva-hero-text-box {
     max-width: 860px;
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
     animation: rva-fade-up 1s ease-out;
 }
 .rva-hero-eyebrow {
@@ -190,23 +189,23 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 }
 .rva-hero-h1 {
     font-family: var(--font-display) !important;
-    font-weight: 400 !important; line-height: 1.15 !important;
-    color: #fff !important; margin-bottom: 20px;
+    font-weight: 400 !important; line-height: 1.1 !important;
+    color: #fff !important; margin-bottom: 24px;
     animation: rva-fade-up 0.8s ease-out 0.5s both;
 }
 .rva-hero-sub {
     font-family: var(--font-display) !important;
     font-style: italic !important; color: rgba(255,255,255,0.8) !important;
-    margin-bottom: 36px; font-weight: 400 !important;
-    line-height: 1.5 !important; max-width: 700px;
-    margin-left: auto; margin-right: auto;
+    margin-bottom: 40px; font-weight: 400 !important;
+    line-height: 1.5 !important; max-width: 650px;
+    margin-left: 0; margin-right: 0;
     animation: rva-fade-up 0.8s ease-out 0.7s both;
 }
 
 .rva-hero-read-more-outer { margin-bottom: 0; }
 .rva-hero-read-more-btn {
     display: inline-flex; align-items: center; gap: 8px;
-    margin: 6px auto 30px;
+    margin: 6px 0 30px;
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(16px) saturate(150%);
     -webkit-backdrop-filter: blur(16px) saturate(150%);
@@ -247,7 +246,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     .rva-hero-read-more-btn { background: rgba(255,255,255,0.15); }
 }
 
-.rva-hero-btns { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; justify-content: center; }
+.rva-hero-btns { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; justify-content: flex-start; }
 .rva-btn-filled {
     background: #fff; color: var(--navy);
     padding: 16px 36px; border: none; cursor: pointer;
@@ -274,12 +273,12 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 }
 
 @media (max-width: 1023px) {
-    .rva-hero-container { padding: 50px 15px 60px; }
-    .rva-hero-text-box { text-align: center; max-width: 100%; }
-    .rva-hero-eyebrow, .rva-hero-sub { text-align: center; }
+    .rva-hero-container { padding: 50px 20px 60px; }
+    .rva-hero-text-box { text-align: center; max-width: 100%; margin: 0 auto; }
+    .rva-hero-eyebrow, .rva-hero-sub { text-align: center; margin-left: auto; margin-right: auto; }
     .rva-hero-sub { max-width: 100%; }
     .rva-quick-answer { text-align: left; }
-    .rva-hero-read-more-btn { display: block; text-align: center; margin: 6px auto 30px; }
+    .rva-hero-read-more-btn { display: inline-flex; text-align: center; margin: 6px auto 30px; }
     .rva-hero-btns { justify-content: center; }
 }
 @media (max-width: 767px) {
@@ -304,20 +303,29 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 /* ========================================
    TABLES
    ======================================== */
-.rva-table-scroll { overflow-x: auto; margin: 0 -20px; padding: 0 20px; }
+.rva-table-scroll { 
+    overflow-x: auto; 
+    margin: 0 -20px; 
+    padding: 20px; /* added vertical padding for shadow visibility */
+}
 .rva-table {
-    width: 100%; border-collapse: collapse;
-    background: var(--bg-white); border-radius: 8px;
-    overflow: hidden; border: 1px solid rgba(39,68,114,0.1);
-    min-width: 640px;
+    width: 100%; 
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--bg-white); 
+    border-radius: 12px;
+    overflow: hidden; 
+    border: 1px solid rgba(39, 68, 114, 0.18);
+    min-width: 720px;
 }
 .rva-table thead { background: var(--navy); }
 .rva-table th {
-    padding: 16px 24px;
+    padding: 20px 24px;
     font-family: var(--font-body) !important;
     font-size: 11px !important; font-weight: 600 !important;
     letter-spacing: 1.5px; text-transform: uppercase;
     color: #fff !important; text-align: left;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .rva-table th:nth-child(2),
 .rva-table th:nth-child(3) {
@@ -327,18 +335,25 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     letter-spacing: 0 !important;
 }
 .rva-table td {
-    padding: 16px 24px;
+    padding: 20px 24px;
     font-weight: 400 !important; color: #1a1a1a !important;
-    line-height: 1.5; border-bottom: 1px solid rgba(39,68,114,0.08);
-    vertical-align: top;
+    line-height: 1.6; 
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    vertical-align: middle;
+}
+.rva-table td:last-child {
+    border-right: none;
 }
 .rva-table td:first-child {
     font-weight: 600 !important; color: var(--navy) !important;
+    background: rgba(39, 68, 114, 0.02);
 }
 .rva-table td:nth-child(2),
 .rva-table td:nth-child(3) { text-align: center; }
 .rva-table tbody tr:last-child td { border-bottom: none; }
-.rva-table tbody tr:hover { background: rgba(39,68,114,0.02); }
+.rva-table tbody tr:hover { background: rgba(39, 68, 114, 0.03); }
+.rva-table tbody tr:hover td:first-child { background: rgba(39, 68, 114, 0.05); }
 .rva-table-note {
     font-weight: 300 !important; color: #666 !important;
     line-height: 1.7 !important; margin-top: 24px !important;
