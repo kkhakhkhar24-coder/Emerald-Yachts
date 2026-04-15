@@ -338,7 +338,7 @@ function LuxuryTravel() {
             <button className="lux-btn-primary">
               Schedule a Scenic Eclipse Planning Consultation
             </button>
-            <div className="lux-btn-secondary-wrap">
+            {/* <div className="lux-btn-secondary-wrap">
               <span className="lux-secondary-label">Prefer email?</span>
               <a
                 href="mailto:sales@tripsandships.com"
@@ -346,7 +346,7 @@ function LuxuryTravel() {
               >
                 sales@tripsandships.com
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -27,6 +27,9 @@ import Logo7 from "../../assets/HomePage/Logo7.png";
 import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
 import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
 import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
+import Coastal_Cruising from "../../assets/HomePage/Coastal_Cruising.jpeg";
+import Refined_Luxury from "../../assets/HomePage/Refined_Luxury.jpeg";
+import Curated_Journeys from "../../assets/HomePage/Curated_Journeys.jpeg";
 
 const LuxuryPage = () => {
   const [current, setCurrent] = useState(0);
@@ -417,6 +420,72 @@ const LuxuryPage = () => {
         </div>
       </section>
 
+      {/* ===== YACHT PLANNING SHOWCASE ===== */}
+      <section className="Emerald_planning_showcase">
+        <div className="Emerald_planning_showcase_inner">
+          <h2>The Emerald Yacht Experience</h2>
+
+          <div className="Emerald_planning_cards">
+            {/* CARD 1 */}
+            <div className="Emerald_planning_card">
+              <div className="Emerald_planning_card_image">
+                <img
+                  src={Coastal_Cruising}
+                  alt="Emerald Yacht coastal cruising experience"
+                />
+                <div className="Emerald_planning_card_overlay"></div>
+                <span className="Emerald_planning_card_badge">Destinations</span>
+              </div>
+              <div className="Emerald_planning_card_body">
+                <h3>Coastal Cruising</h3>
+                <p>
+                  Navigate stunning Mediterranean and Caribbean coastlines with
+                  intimate port access and scenic waterway itineraries.
+                </p>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className="Emerald_planning_card">
+              <div className="Emerald_planning_card_image">
+                <img
+                  src={Refined_Luxury}
+                  alt="Emerald Yacht onboard luxury and refined interiors"
+                />
+                <div className="Emerald_planning_card_overlay"></div>
+                <span className="Emerald_planning_card_badge">Onboard</span>
+              </div>
+              <div className="Emerald_planning_card_body">
+                <h3>Refined Luxury</h3>
+                <p>
+                  Intimate spaces designed for relaxed elegance with
+                  panoramic ocean views and world-class service throughout.
+                </p>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className="Emerald_planning_card">
+              <div className="Emerald_planning_card_image">
+                <img
+                  src={Curated_Journeys}
+                  alt="Emerald Yacht curated shore excursions and experiences"
+                />
+                <div className="Emerald_planning_card_overlay"></div>
+                <span className="Emerald_planning_card_badge">Experiences</span>
+              </div>
+              <div className="Emerald_planning_card_body">
+                <h3>Curated Journeys</h3>
+                <p>
+                  Every sailing is designed with intentional pacing, local
+                  immersion, and seamless end-to-end journey coordination.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="Emerald_method_section">
         <div className="Emerald_method_inner">
           <h2>The Trips & Ships Yacht Planning Method</h2>
@@ -586,7 +655,7 @@ const LuxuryPage = () => {
       {/* ===== SECTION 18 — FAQ ===== */}
       <section className="emerald_faq_section">
         <div className="emerald_faq_inner">
-          <h2>Emerald Yachts FAQs — Expert Answers</h2>
+          <h2>Emerald Yachts FAQs <br /> Expert Answers</h2>
 
           <AntaFAQ
             items={[
