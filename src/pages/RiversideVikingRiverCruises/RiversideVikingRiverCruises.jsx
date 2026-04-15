@@ -3,9 +3,18 @@ import { Ship, Diamond, Navigation, Plus, Minus, Heart, Users, Star, BadgeCheck,
 import './RiversideVikingRiverCruises.css';
 import Navbar from '../../components/Navbar/Navbar';
 import AboutImage from '../../assets/image.webp';
-import HeroImage1 from '../../assets/Riverside-vs-Viking/Hero1.jpeg';
-import HeroImage2 from '../../assets/Riverside-vs-Viking/Hero2.jpeg';
-import HeroImage3 from '../../assets/Riverside-vs-Viking/Hero3.jpeg';
+import HeroImage1 from '../../assets/Riverside-vs-Viking/Hero1.jpg';
+import HeroImage2 from '../../assets/Riverside-vs-Viking/Hero2.jpg';
+import HeroImage3 from '../../assets/Riverside-vs-Viking/Hero3.jpg';
+import Gallary1 from '../../assets/Riverside-vs-Viking/ImageGallary1.jpg';
+import Gallary2 from '../../assets/Riverside-vs-Viking/ImageGallary2.jpg';
+import Gallary3 from '../../assets/Riverside-vs-Viking/ImageGallary3.jpg';
+import Gallary4 from '../../assets/Riverside-vs-Viking/ImageGallary4.jpg';
+import Gallary5 from '../../assets/Riverside-vs-Viking/ImageGallary5.jpg';
+import Gallary6 from '../../assets/Riverside-vs-Viking/ImageGallary6.jpg';
+import Gallary7 from '../../assets/Riverside-vs-Viking/ImageGallary7.jpg';
+import Gallary8 from '../../assets/Riverside-vs-Viking/ImageGallary8.jpg';
+import Gallary9 from '../../assets/Riverside-vs-Viking/ImageGallary9.jpg';
 import { Helmet } from 'react-helmet-async';
 
 const schemaData = {
@@ -331,13 +340,13 @@ const RiversideVsViking = () => {
     React.useEffect(() => {
         const slides = document.querySelectorAll('.riv_hero_bg_slide');
         let currentSlide = 0;
-        
+
         const interval = setInterval(() => {
             slides[currentSlide].classList.remove('riv_active_slide');
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('riv_active_slide');
         }, 6000);
-        
+
         return () => clearInterval(interval);
     }, []);
 
@@ -371,14 +380,14 @@ const RiversideVsViking = () => {
                     <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage2})` }}></div>
                     <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage3})` }}></div>
                 </div>
-            
+
                 <div className="riv_hero_overlay_content">
                     <div className="riv_container_90">
                         <div className="riv_hero_text_box">
                             <span className="river-hero-eyebrow">River Cruise Planning</span>
                             <h1 className="riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
                             <p className="riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
-            
+
                             {/* QUICK ANSWER BOX */}
                             <div className="riv_hero_read_more_outer">
                                 <button
@@ -388,7 +397,7 @@ const RiversideVsViking = () => {
                                     {isReadMoreOpen ? 'Read Less' : 'Read More'}
                                     {isReadMoreOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                                 </button>
-            
+
                                 <div className={`river-hero-details ${isReadMoreOpen ? 'expanded' : ''}`}>
                                     <div className="river-quick-answer">
                                         <p className="river-qa-main">
@@ -401,7 +410,7 @@ const RiversideVsViking = () => {
                                     </div>
                                 </div>
                             </div>
-            
+
                             <div className="riv_hero_button_group">
                                 <button className="riv_hero_btn_filled">Compare River Cruise Lines</button>
                                 <button className="riv_hero_btn_transparent">Plan My River Cruise</button>
@@ -989,6 +998,74 @@ const RiversideVsViking = () => {
                                     </div>
                                     <p className="choose-right-item-text">the right overall experience</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* IMAGE GALLERY SECTION */}
+            <section className="content-section gallery-section">
+                <div className="container">
+                    <div className="gallery-header">
+                        <h2 className="gallery-heading">Visualizing the Experience</h2>
+                        <div className="gallery-accent-line"></div>
+                        <p className="gallery-intro">Discover the elegance and detail that define these exceptional river cruise journeys.</p>
+                    </div>
+
+                    <div className="premium-gallery-grid">
+                        <div className="gallery-item item-large">
+                            <img src={Gallary1} alt="Luxury Suite Details" />
+                            <div className="gallery-overlay">
+                                <span>Luxury Suite Details</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary2} alt="Boutique Onboard Spaces" />
+                            <div className="gallery-overlay">
+                                <span>Boutique Onboard Spaces</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary3} alt="Dining Excellence" />
+                            <div className="gallery-overlay">
+                                <span>Dining Excellence</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary4} alt="Scenic European Views" />
+                            <div className="gallery-overlay">
+                                <span>Scenic European Views</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item item-tall">
+                            <img src={Gallary5} alt="Elegant Architecture" />
+                            <div className="gallery-overlay">
+                                <span>Elegant Architecture</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary6} alt="Riverside Luxury" />
+                            <div className="gallery-overlay">
+                                <span>Riverside Luxury</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary7} alt="Viking Heritage" />
+                            <div className="gallery-overlay">
+                                <span>Viking Heritage</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary8} alt="Boutique Atmosphere" />
+                            <div className="gallery-overlay">
+                                <span>Boutique Atmosphere</span>
+                            </div>
+                        </div>
+                        <div className="gallery-item">
+                            <img src={Gallary9} alt="Modern Refinement" />
+                            <div className="gallery-overlay">
+                                <span>Modern Refinement</span>
                             </div>
                         </div>
                     </div>

@@ -405,6 +405,34 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
+      {/* ===== PREMIUM OVERLAPPING SHOWCASE ===== */}
+      <section className="anta_luxury_mosaic_section">
+        <div className="anta_luxury_mosaic_inner">
+          <div className="anta_mosaic_container">
+            <div className="anta_mosaic_item anta_mosaic_main">
+              <div className="anta_mosaic_card">
+                <img src={AntaSilder1} alt="Luxury Antarctica Capture" />
+              </div>
+            </div>
+            <div className="anta_mosaic_item anta_mosaic_accent_1">
+              <div className="anta_mosaic_card">
+                <img src={AntaSilder2} alt="Antarctica Blue Ice" />
+              </div>
+            </div>
+            <div className="anta_mosaic_item anta_mosaic_accent_2">
+              <div className="anta_mosaic_card">
+                <img src={AntaSilder3} alt="Polar Wildlife" />
+              </div>
+            </div>
+            <div className="anta_mosaic_item anta_mosaic_accent_3">
+              <div className="anta_mosaic_card">
+                <img src={AntaSilder4} alt="Expedition Spirit" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 4 — PRICING LADDER ===== */}
       <section className="anta_ladder_section">
         <div className="anta_ladder_inner">
@@ -468,70 +496,6 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 5 — WHERE MOST CLIENTS FALL & AUTHOR PROOF ===== */}
-      <section className="anta_clients_section">
-        <div className="anta_clients_inner">
-          <div className="anta_clients_content">
-            <h2>Where Most Clients Travel</h2>
-
-            <p>
-              Clients planning Antarctica with our team span multiple tiers
-              depending on their priorities.
-            </p>
-
-            <p>
-              Some prioritize expedition depth and choose brands such as HX or
-              Lindblad. Others prefer a balance of comfort and exploration. Many
-              opt for fully structured luxury experiences with Scenic or
-              Silversea.
-            </p>
-
-            <p className="anta_clients_highlight">
-              We do not recommend Antarctica based on brand alone. We recommend
-              it based on how you want to experience it.
-            </p>
-
-            <div className="anta_author_merge">
-              <div className="anta_author_card">
-                <div className="anta_author_header">
-                  <div className="anta_author_signature">
-                    <h2>Planned and Curated by Angela Hughes</h2>
-                    <p className="anta_author_role">
-                      CEO & Founder, Trips & Ships Luxury Travel
-                    </p>
-                  </div>
-                </div>
-
-                <div className="anta_author_highlights">
-                  <div className="anta_author_tag">
-                    <i className="fas fa-award"></i>
-                    <span>40+ years of expertise</span>
-                  </div>
-                  <div className="anta_author_tag">
-                    <i className="fas fa-globe-americas"></i>
-                    <span>121 countries traveled</span>
-                  </div>
-                  <div className="anta_author_tag">
-                    <Medal />
-                    <span>Luxury Travel Influencer of the Year</span>
-                  </div>
-                  <div className="anta_author_tag">
-                    <i className="fas fa-crown"></i>
-                    <span>Most Influential Women in Travel</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="anta_clients_image">
-            <img
-              src={myImage}
-              alt="Luxury Antarctica Expedition with Angela Hughes"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* ===== SECTION 6 — MID-PAGE CTA ===== */}
       <section className="anta_midcta_section">
@@ -614,6 +578,33 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
+      {/* ===== LUXURY COLLAGE TRANSPLANT ===== */}
+      <section className="anta_transplant_collage_section">
+        <div className="anta_transplant_collage_inner">
+          <div className="anta_collage_container">
+            <div className="anta_collage_item anta_collage_large">
+              <div className="anta_collage_card">
+                <img src={GalleryIceberg} alt="Antarctic Ice Fields" />
+                <div className="anta_collage_content">
+                  <span className="anta_collage_badge">Polar Landscapes</span>
+                  <h3 className="anta_collage_h3">Antarctic Ice Fields</h3>
+                </div>
+              </div>
+            </div>
+            <div className="anta_collage_item anta_collage_floating">
+              <div className="anta_collage_card">
+                <img src={GalleryWhale} alt="Whale Encounters" />
+                <div className="anta_collage_content">
+                  <span className="anta_collage_badge">Wildlife</span>
+                  <h3 className="anta_collage_h3">Whale Encounters</h3>
+                </div>
+              </div>
+            </div>
+            <div className="anta_collage_decoration"></div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SECTION 8 — WHAT IMPACTS YOUR COST ===== */}
       <section className="anta_impacts_section">
         <div className="anta_impacts_inner">
@@ -689,18 +680,10 @@ const AntarcticaCostPage = () => {
         <div className="anta_row_slider_wrapper">
           <div className="anta_row_slider_track">
             {[
-              AntaSilder1,
-              AntaSilder2,
-              AntaSilder3,
-              AntaSilder4,
               AntaSilder5,
               AntaSilder6,
               AntaSilder7,
-              // Repeat once for seamless loop
-              AntaSilder1,
-              AntaSilder2,
-              AntaSilder3,
-              AntaSilder4,
+              // Repeat for seamless loop
               AntaSilder5,
               AntaSilder6,
               AntaSilder7,
@@ -848,20 +831,81 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 14 — EXPERT INSIGHT ===== */}
-      <section className="anta_insight_section">
-        <div className="anta_insight_inner">
-          <h2>Expert Insight from Angela Hughes</h2>
+      {/* ===== SECTION 5 — WHERE MOST CLIENTS FALL & AUTHOR PROOF ===== */}
+      <section className="anta_clients_section">
+        <div className="anta_clients_inner">
+          <div className="anta_clients_content">
+            <h2>Where Most Clients Travel</h2>
 
-          <p>
-            We guide clients through Antarctica planning every day, ensuring the
-            right balance between experience, value, and execution.
-          </p>
+            <p>
+              Clients planning Antarctica with our team span multiple tiers
+              depending on their priorities.
+            </p>
 
-          <p>
-            The difference is not what you spend. It is how well the experience
-            is structured.
-          </p>
+            <p>
+              Some prioritize expedition depth and choose brands such as HX or
+              Lindblad. Others prefer a balance of comfort and exploration. Many
+              opt for fully structured luxury experiences with Scenic or
+              Silversea.
+            </p>
+
+            <p className="anta_clients_highlight">
+              We do not recommend Antarctica based on brand alone. We recommend
+              it based on how you want to experience it.
+            </p>
+
+            {/* EXPERT INSIGHT INTEGRATED HERE */}
+            <div className="anta_expert_insight_box">
+              <h2>Expert Insight from Angela Hughes</h2>
+              <p>
+                We guide clients through Antarctica planning every day, ensuring
+                the right balance between experience, value, and execution.
+              </p>
+              <p>
+                The difference is not what you spend. It is how well the
+                experience is structured.
+              </p>
+            </div>
+
+            <div className="anta_author_merge">
+              <div className="anta_author_card">
+                <div className="anta_author_header">
+                  <div className="anta_author_signature">
+                    <h2>Planned and Curated by Angela Hughes</h2>
+                    <p className="anta_author_role">
+                      CEO & Founder, Trips & Ships Luxury Travel
+                    </p>
+                  </div>
+                </div>
+
+                <div className="anta_author_highlights">
+                  <div className="anta_author_tag">
+                    <i className="fas fa-award"></i>
+                    <span>40+ years of expertise</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <i className="fas fa-globe-americas"></i>
+                    <span>121 countries traveled</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <Medal />
+                    <span>Luxury Travel Influencer of the Year</span>
+                  </div>
+                  <div className="anta_author_tag">
+                    <i className="fas fa-crown"></i>
+                    <span>Most Influential Women in Travel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="anta_clients_image">
+            <img
+              src={myImage}
+              alt="Luxury Antarctica Expedition with Angela Hughes"
+            />
+          </div>
         </div>
       </section>
 
@@ -902,19 +946,19 @@ const AntarcticaCostPage = () => {
             </p>
           </div>
 
-          <div className="anta_gallery_bento">
-            {/* Featured large image */}
-            <div className="anta_gallery_item anta_gallery_feature">
-              <div className="anta_gallery_img_box">
+          <div className="anta_gallery_panels">
+            {/* Ice & Reflection Panel */}
+            <div className="anta_gallery_panel anta_panel_ice">
+              <div className="anta_panel_img_box">
                 <img
                   src={GalleryIceFields}
-                  alt="Expansive Antarctic ice fields and floating icebergs beneath clear blue skies"
-                  className="anta_gallery_img"
+                  alt="Expansive Antarctic ice fields"
+                  className="anta_panel_img"
                 />
-                <div className="anta_gallery_overlay">
-                  <span className="anta_gallery_badge">Ice & Reflection</span>
-                  <h3 className="anta_gallery_h3">Iceberg Reflection</h3>
-                  <p className="anta_gallery_caption">
+                <div className="anta_panel_content">
+                  <span className="anta_panel_badge">Ice & Reflection</span>
+                  <h3 className="anta_panel_h3">Iceberg Reflection</h3>
+                  <p className="anta_panel_caption">
                     Towering icebergs create surreal landscapes unlike anywhere
                     else on earth.
                   </p>
@@ -922,58 +966,20 @@ const AntarcticaCostPage = () => {
               </div>
             </div>
 
-            {/* Vertical tall image */}
-            <div className="anta_gallery_item anta_gallery_tall">
-              <div className="anta_gallery_img_box">
-                <img
-                  src={GalleryIceberg}
-                  alt="Massive Antarctic iceberg reflected in calm polar waters"
-                  className="anta_gallery_img"
-                />
-                <div className="anta_gallery_overlay">
-                  <span className="anta_gallery_badge">Polar Landscapes</span>
-                  <h3 className="anta_gallery_h3">Antarctic Ice Fields</h3>
-                  <p className="anta_gallery_caption">
-                    Endless polar landscapes define the breathtaking beauty of
-                    Antarctica.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Standard image */}
-            <div className="anta_gallery_item">
-              <div className="anta_gallery_img_box">
+            {/* Wildlife Panel */}
+            <div className="anta_gallery_panel anta_panel_wildlife">
+              <div className="anta_panel_img_box">
                 <img
                   src={GalleryPenguins}
-                  alt="Penguins walking across snowy Antarctic shoreline with mountains and glaciers in the background"
-                  className="anta_gallery_img"
+                  alt="Penguins in Antarctica"
+                  className="anta_panel_img"
                 />
-                <div className="anta_gallery_overlay">
-                  <span className="anta_gallery_badge">Wildlife</span>
-                  <h3 className="anta_gallery_h3">Penguin Colonies</h3>
-                  <p className="anta_gallery_caption">
+                <div className="anta_panel_content">
+                  <span className="anta_panel_badge">Wildlife</span>
+                  <h3 className="anta_panel_h3">Penguin Colonies</h3>
+                  <p className="anta_panel_caption">
                     Walk among penguin colonies in one of the world's last great
                     wildernesses.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Standard image */}
-            <div className="anta_gallery_item">
-              <div className="anta_gallery_img_box">
-                <img
-                  src={GalleryWhale}
-                  alt="Whale diving beneath Antarctic waters with tail fluke above the surface"
-                  className="anta_gallery_img"
-                />
-                <div className="anta_gallery_overlay">
-                  <span className="anta_gallery_badge">Wildlife</span>
-                  <h3 className="anta_gallery_h3">Whale Encounters</h3>
-                  <p className="anta_gallery_caption">
-                    Close wildlife encounters make Antarctica one of the world's
-                    greatest expedition destinations.
                   </p>
                 </div>
               </div>
