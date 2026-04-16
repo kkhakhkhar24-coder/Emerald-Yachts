@@ -7,12 +7,11 @@ import { useState, useEffect } from "react";
 import "../ScenicAntarctica/ScenicAntarctica.css";
 import myImage from "../../assets/image.jpg";
 import SecondPage1 from "../../assets/SecondPage/SecondPage1.jpg";
-import SecondPage2 from "../../assets/SecondPage/SecondPage2.jpg";
-import SecondPage3 from "../../assets/SecondPage/SecondPage3.jpg";
-import SecondPage4 from "../../assets/SecondPage/SecondPage4.jpg";
-import SecondPage5 from "../../assets/SecondPage/SecondPage5.jpg";
-import SecondPage6 from "../../assets/SecondPage/SecondPage6.jpg";
-import SecondPage7 from "../../assets/SecondPage/SecondPage7.jpg";
+import SecondPage3 from "../../assets/SecondPage/SecondPage3.webp";
+import SecondPage4 from "../../assets/SecondPage/SecondPage4.webp";
+import SecondPage5 from "../../assets/SecondPage/SecondPage5.webp";
+import SecondPage6 from "../../assets/SecondPage/SecondPage6.webp";
+import SecondPage7 from "../../assets/SecondPage/SecondPage7.webp";
 import SecondPage8 from "../../assets/SecondPage/SecondPage8.jpg";
 import SecondPage9 from "../../assets/SecondPage/SecondPage9.jpg";
 import SecondPage10 from "../../assets/SecondPage/SecondPage10.jpg";
@@ -748,9 +747,8 @@ function ScenicAntarctica() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${
-                  activeFaq === index ? "Scenic-active" : ""
-                }`}
+                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
+                  }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

@@ -28,7 +28,7 @@ import Slider1 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider1.jpg";
 import Slider2 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider2.jpg";
 import Slider3 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider3.jpg";
 import Slider4 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider4.jpg";
-import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.jpeg";
+import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.jpg";
 import Slider6 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider6.jpg";
 import Slider7 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider7.jpg";
 

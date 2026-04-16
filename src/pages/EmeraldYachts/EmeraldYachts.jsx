@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 import myImage from "../../assets/image.jpg";
 import "./EmeraldYachts.css";
-import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
-import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
-import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
+import HomePage1 from "../../assets/HomePage/HomePage1.webp";
+import HomePage3 from "../../assets/HomePage/HomePage3.webp";
+import HomePage4 from "../../assets/HomePage/HomePage4.webp";
 import HomePage2 from "../../assets/HomePage/HomePage2.jpg";
 import Logo1 from "../../assets/HomePage/Logo1.png";
 import Logo2 from "../../assets/HomePage/Logo2.png";

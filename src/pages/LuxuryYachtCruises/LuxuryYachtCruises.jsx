@@ -31,10 +31,10 @@ import ImageGallery1 from "../../assets/LuxuryYachtCruises/ImageGallery1.webp";
 import ImageGallery2 from "../../assets/LuxuryYachtCruises/ImageGallery2.webp";
 import ImageGallery3 from "../../assets/LuxuryYachtCruises/ImageGallery3.webp";
 import ImageGallery4 from "../../assets/LuxuryYachtCruises/ImageGallery4.jpg";
-import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.jpeg";
+import ImageGallery5 from "../../assets/LuxuryYachtCruises/ImageGallery5.jpg";
 import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.jpg";
 import EmeraldKaia from "../../assets/LuxuryYachtCruises/Emerald Kaia.jpg";
-import RitzCart from "../../assets/LuxuryYachtCruises/Ritzcart.jpeg";
+import RitzCart from "../../assets/LuxuryYachtCruises/Ritzcart.jpg";
 import AmaDante from "../../assets/LuxuryYachtCruises/AmaDante_Yachts.jpg";
 
 function useFadeIn() {

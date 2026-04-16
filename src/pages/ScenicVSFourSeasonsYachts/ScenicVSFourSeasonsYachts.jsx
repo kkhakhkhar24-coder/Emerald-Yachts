@@ -25,9 +25,9 @@ import galleryImage1 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage1.
 import galleryImage2 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage2.jpg";
 import galleryImage3 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage3.jpg";
 import galleryImage4 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage4.jpg";
-import Cliffs_of_Moher from "../../assets/ScenicvsFourSeasonsYachts/Cliffs_of_Moher.png";
-import Athens_Acropolis from "../../assets/ScenicvsFourSeasonsYachts/Athens_Acropolis.png";
-import Mont_Saint_Michel from "../../assets/ScenicvsFourSeasonsYachts/Mont_Saint_Michel.png";
+import Cliffs_of_Moher from "../../assets/ScenicvsFourSeasonsYachts/Cliffs_of_Moher.jpg";
+import Athens_Acropolis from "../../assets/ScenicvsFourSeasonsYachts/Athens_Acropolis.jpg";
+import Mont_Saint_Michel from "../../assets/ScenicvsFourSeasonsYachts/Mont_Saint_Michel.jpg";
 
 function FAQ() {
   const [open, setOpen] = useState(null);
