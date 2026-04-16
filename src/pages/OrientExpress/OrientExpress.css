@@ -560,6 +560,107 @@ img {
     background: var(--bg-white);
 }
 
+/* ===== VIDEO SECTION ===== */
+.orient-video-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.orient-video-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(39, 68, 114, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.video-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.video-header h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.video-header h2::after {
+    display: none; /* Using custom divider below */
+}
+
+.navy-divider-center {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #ffffff 50%, transparent 100%);
+    margin: 20px auto;
+}
+
+.video-subtitle {
+    color: rgba(255, 255, 255, 0.8) !important;
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-weight: 300;
+}
+
+.video-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    background: #000;
+}
+
+.video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-caption {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.caption-tag {
+    display: inline-block;
+    color: #60a5fa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding: 6px 16px;
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    border-radius: 20px;
+}
+
+.video-caption p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* ===== SUSTAINABILITY ===== */
 .sustainability {
     padding: 60px 20px;

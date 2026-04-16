@@ -23,6 +23,7 @@ import ImageGellery3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.j
 import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.jpg";
 import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.jpg";
 import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.jpg";
+import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.jpeg";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -334,14 +335,17 @@ const RiversideLuxuryCruises = () => {
               key={index}
               className={`riv_hero_bg_slide ${currentSlide === index ? "riv_active_slide" : ""}`}
               style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/${img})`,
+                backgroundImage: `url(/${img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
               }}
             ></div>
           ))}
         </div>
 
         <div className="riv_hero_overlay_content">
-          <div className="riv_container_90">
+          <div className="riv_container_main">
             <div className="riv_hero_text_box">
               <h1 className="riv_hero_main_h1">
                 Riverside Luxury Cruises: A Boutique Luxury River Cruise
@@ -392,7 +396,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* INTRO SECTION */}
       <section className="riv_intro_premium_section" id="riv_overview_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_intro_content_block">
             <div className="riv_intro_decorative_line"></div>
             <h2 className="riv_intro_highlight_text">
@@ -410,9 +414,69 @@ const RiversideLuxuryCruises = () => {
         </div>
       </section>
 
+      {/* NEW INTRO GALLERY SECTION */}
+      <section className="riv-gallery-section riv-intro-gallery">
+        <div className="riv-gallery-inner">
+          <div className="riv-gallery-header">
+            <span className="riv-gallery-eyebrow">A Glimpse of Riverside</span>
+            <h2 className="riv-gallery-h2">Refined Moments on Every Deck</h2>
+            <div className="riv-gallery-divider"></div>
+            <p className="riv-gallery-p">
+              From the first sip of artisanal coffee to sunset views by the pool, discover the thoughtful details that make Riverside a true standout in luxury river cruising.
+            </p>
+          </div>
+          <div className="riv-gallery-bento-grid">
+            {/* 4 — Single */}
+            <div className="riv-gallery-item">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery4}
+                  alt="Entertainment"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Culinary Art</span>
+                  <h3 className="riv-gallery-h3">Chef-Curated Culinary Creations</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 5 — Single */}
+            <div className="riv-gallery-item">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery6}
+                  alt="Spa & Wellness"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Evening Deck</span>
+                  <h3 className="riv-gallery-h3">Evening Poolside Serenity</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 6 — Wide */}
+            <div className="riv-gallery-item riv-gallery-wide">
+              <div className="riv-gallery-image-box">
+                <img
+                  src={ImageGellery5}
+                  alt="Exclusive Excursions"
+                  className="riv-gallery-img"
+                />
+                <div className="riv-gallery-overlay">
+                  <span className="riv-gallery-badge">Wellness Lounge</span>
+                  <h3 className="riv-gallery-h3">Onboard Spa & Beauty Experience</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHY TRUST & WHERE IT FITS (TRUST SECTION) */}
       <section className="riv_trust_modern_box">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_trust_layout_grid">
             <div className="riv_trust_card_panel">
               <div className="riv_trust_badge">ELITE EXPERTISE</div>
@@ -517,51 +581,6 @@ const RiversideLuxuryCruises = () => {
                 </div>
               </div>
             </div>
-
-            {/* 4 — Single (row 3, col 1) */}
-            <div className="riv-gallery-item">
-              <div className="riv-gallery-image-box">
-                <img
-                  src={ImageGellery4}
-                  alt="Entertainment"
-                  className="riv-gallery-img"
-                />
-                <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Culinary Art</span>
-                  <h3 className="riv-gallery-h3">Chef-Curated Culinary Creations</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* 5 — Single (row 3, col 2) - MOVED HERE to fill tablet gaps */}
-            <div className="riv-gallery-item">
-              <div className="riv-gallery-image-box">
-                <img
-                  src={ImageGellery6}
-                  alt="Spa & Wellness"
-                  className="riv-gallery-img"
-                />
-                <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Evening Deck</span>
-                  <h3 className="riv-gallery-h3">Evening Poolside Serenity</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* 6 — Wide (row 3, col 3-4 / Row 4 in tablet) */}
-            <div className="riv-gallery-item riv-gallery-wide">
-              <div className="riv-gallery-image-box">
-                <img
-                  src={ImageGellery5}
-                  alt="Exclusive Excursions"
-                  className="riv-gallery-img"
-                />
-                <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Wellness Lounge</span>
-                  <h3 className="riv-gallery-h3">Onboard Spa & Beauty Experience</h3>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -571,7 +590,7 @@ const RiversideLuxuryCruises = () => {
         className="riv_comparison_table_section"
         id="riv_comparison_section"
       >
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <h2 className="riv_comp_main_h2">Compare the Best River Cruises</h2>
 
           <div className="riv_table_container_box">
@@ -658,7 +677,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* PRICING SECTION */}
       <section className="riv_pricing_card_section" id="riv_pricing_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <h2 className="riv_pricing_center_h2">Riverside Pricing</h2>
           <p className="riv_pricing_top_p">
             Typical pricing categories for European river cruises:
@@ -693,7 +712,7 @@ const RiversideLuxuryCruises = () => {
         className="riv_experience_insight_section"
         id="riv_ships_section"
       >
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_experience_split_layout">
             <div className="riv_experience_text_side">
               <h2 className="riv_experience_h2_title">Experience</h2>
@@ -754,7 +773,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* BEST TIME TO SAIL (SEO SECTION) - NEW UI WITH LUCIDE */}
       <section className="riv_itinerary_premium_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_itinerary_grid_layout">
             <div className="riv_itinerary_card_ui">
               <div className="riv_itin_icon_circle">
@@ -796,7 +815,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* OBJECTIONS & WHO IT'S FOR */}
       <section className="riv_who_why_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_who_why_split">
             <div className="riv_objections_panel">
               <h2 className="riv_obj_h2_title">Common Objections</h2>
@@ -838,7 +857,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* FINAL CTA (ABOVE ANGELA) */}
       <section className="riv_cta_footer_section" id="riv_cta_footer_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_cta_footer_box">
             <h2 className="riv_cta_footer_h2">
               Plan Your Riverside Experience
@@ -854,12 +873,13 @@ const RiversideLuxuryCruises = () => {
         </div>
       </section>
 
-      {/* AUTHORITY BLOCK - ANGELA HUGHES (BALANCED UI) */}
+      {/* AUTHORITY BLOCK - ANGELA HUGHES (FLOATING LAYOUT) */}
       <section className="riv_authority_bio_section">
-        <div className="riv_container_90">
-          <div className="riv_authority_balanced_grid">
-            <div className="riv_auth_media_column">
-              <div className="riv_profile_frame_new">
+        <div className="riv_container_main">
+          <div className="riv_authority_float_layout">
+            {/* LEFT SIDE - FLOATING IMAGE */}
+            <div className="riv_auth_float_image">
+              <div className="riv_profile_frame_floating">
                 <img
                   src={ProfileImage}
                   alt="Angela Hughes"
@@ -882,7 +902,9 @@ const RiversideLuxuryCruises = () => {
                 </div>
               </div>
             </div>
-            <div className="riv_auth_content_wrap">
+
+            {/* RIGHT SIDE - FLOATING CONTENT */}
+            <div className="riv_auth_float_content">
               <h2 className="riv_auth_h2_name">
                 About Angela Hughes and Trips & Ships Luxury Travel
               </h2>
@@ -931,9 +953,47 @@ const RiversideLuxuryCruises = () => {
         </div>
       </section>
 
+      {/* ===== RIVERSIDE EXPERIENCE IMAGE SHOWCASE ===== */}
+      {/* ===== CENTERED SHOWCASE WITH HOVER OVERLAY ===== */}
+      <section className="riv_showcase_modern_reveal">
+        <div className="riv_container_main">
+          {/* HEADER (OUTSIDE IMAGE) */}
+          <div className="riv_reveal_header_box">
+            <span className="riv_reveal_eyebrow">The Experience</span>
+            <h2 className="riv_reveal_h2">
+              Why Riverside Stands Apart from Other River Cruises
+            </h2>
+            <div className="riv_reveal_divider"></div>
+          </div>
+
+          {/* CENTERED SMALLER IMAGE */}
+          <div className="riv_reveal_interactive_frame">
+            <img
+              src={RiversideHeroShot}
+              alt="Riverside Luxury Cruises elegant river cruising experience"
+              className="riv_reveal_img"
+            />
+
+            {/* HOVER OVERLAY (BOTTOM LEFT) */}
+            <div className="riv_reveal_bottom_overlay">
+              <div className="riv_reveal_overlay_content">
+                <div className="riv_reveal_label">
+                  <span>European River Cruising</span>
+                </div>
+                <p className="riv_reveal_description">
+                  Riverside Luxury Cruises redefines what a European river cruise
+                  can feel like — more space, better service, and a quieter,
+                  more intentional pace of travel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL THOUGHTS */}
       <section className="riv_closing_thoughts_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="riv_closing_line_box">
             <h2 className="riv_closing_h2">Final Thoughts</h2>
             <p className="riv_closing_p">
@@ -948,7 +1008,7 @@ const RiversideLuxuryCruises = () => {
 
       {/* FAQ SECTION (MATCHING LUXURY YACHT DESIGN) */}
       <section className="riv_faq_standard_section" id="riv_faq_section">
-        <div className="riv_container_90">
+        <div className="riv_container_main">
           <div className="lux-faq-header">
             <h2 className="lux-h2">Frequently Asked Questions</h2>
             <div className="lux-navy-divider-center"></div>

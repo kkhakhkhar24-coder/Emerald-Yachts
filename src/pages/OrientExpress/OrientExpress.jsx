@@ -219,6 +219,38 @@ const OrientExpress = () => {
         </div>
       </section>
 
+      {/* ===== VIDEO SECTION ===== */}
+      <section className="orient-video-section">
+        <div className="section-inner wide">
+          <div className="video-header">
+            <h2>Experience the Orient Express Corinthian</h2>
+            <div className="navy-divider-center"></div>
+            <p className="video-subtitle">
+              Step into a new era of ultra-luxury travel. The Orient Express Corinthian reimagines 
+              the legendary heritage of the world's most iconic train as a futuristic sailing yacht, 
+              blending timeless elegance with state-of-the-art maritime innovation.
+            </p>
+          </div>
+          <div className="video-wrapper">
+             <iframe 
+                className="video-player"
+                src="https://www.youtube.com/embed/WrbfeZCcyP8?autoplay=0&mute=1&loop=1&playlist=WrbfeZCcyP8" 
+                title="Orient Express Corinthian" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+          </div>
+          <div className="video-caption">
+            <span className="caption-tag">Yacht Insight</span>
+            <p>
+              A legendary heritage reborn as the world's largest sailing yacht, offering 54 ultra-luxury 
+              suites and a revolutionary design that pushes the boundaries of private yacht travel.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SUSTAINABILITY ===== */}
       <section className="sustainability">
         <div className="section-inner">
