@@ -16,6 +16,8 @@ import AntaSilder4 from "../../assets/antarctica-cruise-cost/AntaSilder4.jpg";
 import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.jpg";
 import AntaSilder6 from "../../assets/antarctica-cruise-cost/seal-on-antarctic-ice.png";
 import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.jpg";
+import AntaSilder8 from "../../assets/antarctica-cruise-cost/AntaSilder8.png";
+import AntaSilder9 from "../../assets/antarctica-cruise-cost/AntaSilder9.png";
 
 import GalleryIceFields from "../../assets/antarctica-cruise-cost/antarctica-ice-fields.png";
 import GalleryIceberg from "../../assets/antarctica-cruise-cost/antarctica-iceberg-reflection.png";
@@ -405,28 +407,93 @@ const AntarcticaCostPage = () => {
         </div>
       </section>
 
-      {/* ===== PREMIUM OVERLAPPING SHOWCASE ===== */}
-      <section className="anta_luxury_mosaic_section">
-        <div className="anta_luxury_mosaic_inner">
-          <div className="anta_mosaic_container">
-            <div className="anta_mosaic_item anta_mosaic_main">
-              <div className="anta_mosaic_card">
-                <img src={AntaSilder1} alt="Luxury Antarctica Capture" />
+      {/* ===== MODERN BENTO GRID GALLERY SHOWCASE ===== */}
+      <section className="anta_gallery_section">
+        <div className="anta_gallery_inner">
+          {/* Header Area */}
+          <div className="anta_gallery_header">
+            <span className="anta_gallery_eyebrow">Expedition Gallery</span>
+            <h2 className="anta_gallery_h2">Visualizing the White Continent</h2>
+            <div className="anta_gallery_divider"></div>
+            <p className="anta_gallery_p">
+              From colossal icebergs to pristine wildlife encounters, glimpse
+              the reality of an Antarctica expedition.
+            </p>
+          </div>
+
+          {/* Bento Grid Layout */}
+          <div className="anta_gallery_bento_grid">
+            {/* 01: Large Featured Item */}
+            <div className="anta_gallery_item anta_gallery_feature">
+              <div className="anta_gallery_image_box">
+                <img
+                  src={AntaSilder1}
+                  alt="Colossal Antarctic Icebergs"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Polar Expedition</span>
+
+                  <h3 className="anta_gallery_h3">Walk the White Continent</h3>
+
+                  <p className="anta_gallery_item_p">
+                    Step onto the untouched Antarctic landscape and explore vast
+                    лед fields alongside expert guides, experiencing the raw
+                    beauty and scale of the frozen wilderness up close.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="anta_mosaic_item anta_mosaic_accent_1">
-              <div className="anta_mosaic_card">
-                <img src={AntaSilder2} alt="Antarctica Blue Ice" />
+
+            {/* 02: Vertical Item */}
+            <div className="anta_gallery_item anta_gallery_tall">
+              <div className="anta_gallery_image_box">
+                <img
+                  src={AntaSilder2}
+                  alt="Pristine Antarctic Waters"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Polar Adventure</span>
+
+                  <h3 className="anta_gallery_h3">Kayak Among Icebergs</h3>
+                </div>
               </div>
             </div>
-            <div className="anta_mosaic_item anta_mosaic_accent_2">
-              <div className="anta_mosaic_card">
-                <img src={AntaSilder3} alt="Polar Wildlife" />
+
+            {/* 03: Standard Item */}
+            <div className="anta_gallery_item">
+              <div className="anta_gallery_image_box">
+                <img
+                  src={AntaSilder3}
+                  alt="Wildlife in Antarctica"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">
+                    Antarctic Experience
+                  </span>
+
+                  <h3 className="anta_gallery_h3">
+                    Moments at the Edge of the World
+                  </h3>
+                </div>
               </div>
             </div>
-            <div className="anta_mosaic_item anta_mosaic_accent_3">
-              <div className="anta_mosaic_card">
-                <img src={AntaSilder4} alt="Expedition Spirit" />
+
+            {/* 04: Standard Item */}
+            <div className="anta_gallery_item">
+              <div className="anta_gallery_image_box">
+                <img
+                  src={AntaSilder4}
+                  alt="Expedition Spirit"
+                  className="anta_gallery_img"
+                />
+                <div className="anta_gallery_overlay">
+                  <span className="anta_gallery_badge">Onboard Dining</span>
+
+                  <h3 className="anta_gallery_h3">Refined Culinary Spaces</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -495,7 +562,6 @@ const AntarcticaCostPage = () => {
           </div>
         </div>
       </section>
-
 
       {/* ===== SECTION 6 — MID-PAGE CTA ===== */}
       <section className="anta_midcta_section">
@@ -600,7 +666,6 @@ const AntarcticaCostPage = () => {
                 </div>
               </div>
             </div>
-            <div className="anta_collage_decoration"></div>
           </div>
         </div>
       </section>
@@ -683,10 +748,14 @@ const AntarcticaCostPage = () => {
               AntaSilder5,
               AntaSilder6,
               AntaSilder7,
+              AntaSilder8,
+              AntaSilder9,
               // Repeat for seamless loop
               AntaSilder5,
               AntaSilder6,
               AntaSilder7,
+              AntaSilder8,
+              AntaSilder9,
             ].map((img, index) => (
               <div className="anta_row_slider_item" key={index}>
                 <img src={img} alt={`Antarctica Slider ${index + 1}`} />

@@ -399,11 +399,170 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 /* ========================================
    PRICING
    ======================================== */
-.rva-pricing-block {
+/* ========================================
+   PRICING ANALYSIS REDESIGN
+   ======================================== */
+.rva-pricing-analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.rva-pricing-card {
     background: var(--bg-white);
-    border: 1px solid rgba(39,68,114,0.08);
-    border-radius: 8px; padding: 28px 32px;
-    max-width: 780px; margin: 0 auto;
+    border-radius: 16px;
+    padding: 36px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.rva-pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.12);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.rva-pricing-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.rva-pricing-card:hover::after {
+    transform: scaleX(1);
+}
+
+.rva-pricing-riverside::after { background: var(--navy); }
+.rva-pricing-ama::after { background: var(--navy); } /* Using a gold/sand color for AmaWaterways contrast */
+
+.rva-pricing-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.rva-pricing-brand-badge {
+    font-family: var(--font-display) !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: var(--navy) !important;
+}
+
+.rva-pricing-icon {
+    color: var(--navy);
+    opacity: 0.6;
+}
+
+.rva-pricing-text {
+    font-family: var(--font-body) !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    color: #444 !important;
+    font-weight: 300 !important;
+    margin: 0 !important;
+}
+
+.rva-pricing-expert-box {
+    grid-column: span 2;
+    background: linear-gradient(135deg, var(--navy) 0%, #1c2f4a 100%);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.25);
+}
+
+.rva-pricing-expert-box::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: var(--font-display);
+    font-size: 180px;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 1;
+}
+
+.rva-pricing-expert-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.rva-pricing-expert-title {
+    font-family: var(--font-body) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin-bottom: 20px !important;
+}
+
+.rva-pricing-expert-text {
+    font-family: var(--font-display) !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    color: #ffffff !important;
+    max-width: 700px;
+    margin: 0 auto !important;
+}
+
+.rva-pricing-disclaimer-box {
+    grid-column: span 2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.rva-pricing-disclaimer-text {
+    font-family: var(--font-body) !important;
+    font-size: 14px !important;
+    font-style: italic;
+    color: #999 !important;
+    line-height: 1.6 !important;
+    max-width: 780px;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 900px) {
+    .rva-pricing-analysis-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rva-pricing-expert-box,
+    .rva-pricing-disclaimer-box {
+        grid-column: span 1;
+    }
+    .rva-pricing-expert-text {
+        font-size: 20px !important;
+    }
+    .rva-pricing-card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rva-pricing-expert-box {
+        padding: 30px 20px;
+    }
+    .rva-pricing-expert-text {
+        font-size: 18px !important;
+    }
 }
 
 /* ========================================
@@ -711,52 +870,186 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 .rva-cta-secondary svg { transition: transform 0.3s ease; }
 
 /* ========================================
-   ABOUT
+   EXPERT PROFILE SPLIT LAYOUT
    ======================================== */
-.rva-about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 44px; align-items: start; }
-.rva-about-portrait { position: sticky; top: 100px; }
-.rva-about-img {
-    width: 100%; height: auto; display: block;
-    border-radius: 8px; border: 1px solid rgba(39,68,114,0.1);
+.rva-expert-profile-split {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
 }
-.rva-about-text { display: flex; flex-direction: column; gap: 20px; }
-.rva-about-lead {
-    font-weight: 400 !important; color: var(--navy) !important;
-    line-height: 1.7 !important;
-    padding-bottom: 18px; border-bottom: 1px solid rgba(39,68,114,0.08);
+
+.rva-expert-left {
+    display: flex;
+    justify-content: center;
 }
-.rva-about-p {
-    font-weight: 300 !important; color: #444 !important;
-    line-height: 1.7 !important;
+
+.rva-expert-portrait-wrap {
+    position: relative;
+    width: 280px;
 }
-.rva-about-credential {
-    display: flex; gap: 16px; padding: 20px;
-    background: var(--bg-white); border-radius: 0 8px 8px 0;
-    border-left: 3px solid var(--navy);
+
+.rva-expert-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
-.rva-about-credential svg {
-    flex-shrink: 0; width: 22px; height: 22px;
-    color: var(--navy); margin-top: 2px;
+
+.rva-expert-badge {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.rva-about-credential p {
-    font-weight: 400 !important; color: var(--navy) !important;
-    line-height: 1.7 !important; margin: 0 !important;
+
+.rva-expert-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.rva-about-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.rva-about-list li {
-    display: flex; align-items: flex-start; gap: 12px;
-    padding: 10px 16px; background: var(--bg-white); border-radius: 6px;
+
+.rva-expert-meta {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding-bottom: 24px;
 }
-.rva-about-list li svg {
-    flex-shrink: 0; width: 20px; height: 20px;
-    background: var(--navy); border-radius: 50%;
-    padding: 3px; color: #fff; margin-top: 1px;
+
+.rva-expert-name {
+    font-family: var(--font-display) !important;
+    font-size: 38px !important;
+    color: var(--navy) !important;
+    margin-bottom: 6px !important;
+    font-weight: 500 !important;
 }
-.rva-about-list li span { font-weight: 400 !important; color: #1a1a1a !important; }
-.rva-about-closing {
-    font-weight: 400 !important; color: var(--navy) !important;
-    padding-top: 18px; border-top: 1px solid rgba(39,68,114,0.08);
+
+.rva-expert-title {
+    font-family: var(--font-body) !important;
+    font-size: 18px !important;
+    color: #274472aa !important;
+    margin-bottom: 20px !important;
+    font-weight: 400 !important;
 }
+
+.rva-expert-trust-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.rva-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--navy);
+    background: rgba(39, 68, 114, 0.05);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.rva-expert-bio p {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: #444 !important;
+    margin-bottom: 14px !important;
+    font-weight: 300 !important;
+}
+
+.rva-expert-bio p strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.rva-expert-services {
+    background: rgba(39, 68, 114, 0.02);
+    padding: 20px 24px;
+    border-radius: 12px;
+    border-left: 4px solid var(--navy);
+}
+
+.rva-services-h4 {
+    font-family: var(--font-body) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--navy);
+    margin-bottom: 12px !important;
+}
+
+.rva-services-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.rva-services-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.rva-services-list li svg {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .rva-expert-profile-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px;
+        text-align: center;
+    }
+    .rva-expert-trust-row, .rva-services-list {
+        justify-content: center;
+    }
+    .rva-services-list {
+        grid-template-columns: 1fr;
+        text-align: left;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .rva-expert-bio p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .rva-expert-profile-split {
+        padding: 30px 20px;
+    }
+    .rva-expert-name {
+        font-size: 28px !important;
+    }
+    .rva-expert-portrait-wrap {
+        width: 100%;
+        max-width: 240px;
+    }
+}
+
+
 
 /* ========================================
    MODERN IMAGE GALLERY
@@ -792,7 +1085,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 
 .rva-gallery-h2 {
     font-family: var(--font-display) !important;
-    font-size: 42px !important;
+    font-size: 48px !important;
     color: var(--navy) !important;
     margin: 0 !important;
 }
@@ -898,7 +1191,6 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 
 @media (max-width: 1024px) {
     .rva-gallery-section { padding: 60px 20px; }
-    .rva-gallery-h2 { font-size: 32px !important; }
     .rva-gallery-bento-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 240px;
@@ -908,6 +1200,9 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 @media (max-width: 768px) {
     .rva-gallery-overlay { opacity: 1; padding: 25px; }
     .rva-gallery-header { margin-bottom: 40px; }
+    .rva-gallery-h2{font-size: 28px !important;}
+    .rva-gallery-h3{font-size: 20px !important;}
+    .rva-gallery-badge{margin-bottom: 0px;}
 }
 
 @media (max-width: 480px) {
@@ -919,6 +1214,85 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     .rva-gallery-feature, .rva-gallery-tall {
         grid-column: span 1;
         grid-row: span 1;
+    }
+}
+
+/* ========================================
+   FLEET SHOWCASE
+   ======================================== */
+.rva-fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.rva-fleet-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.rva-fleet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.12);
+}
+
+.rva-fleet-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.rva-fleet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.rva-fleet-card:hover .rva-fleet-image img {
+    transform: scale(1.1);
+}
+
+.rva-fleet-content {
+    padding: 28px;
+    text-align: left;
+}
+
+.rva-fleet-title {
+    font-family: var(--font-display) !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: var(--navy) !important;
+    margin-bottom: 12px !important;
+}
+
+.rva-fleet-desc {
+    font-family: var(--font-body) !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #444 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+    .rva-fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rva-fleet-content {
+        padding: 20px;
+    }
+    .rva-fleet-title {
+        font-size: 20px !important;
     }
 }
 
@@ -1003,6 +1377,13 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
    VIDEO SHOWCASE
    ======================================== */
 .rva-video-showcase {
+    background: var(--bg-white);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.rva-video-showcase1 {
     background: var(--bg-soft);
     padding: 80px 20px;
     text-align: center;

@@ -369,6 +369,10 @@ function ScenicAntarctica() {
 
       {/* ================= NEW VIDEO SECTION ================= */}
       <section className="Scenic_youtube_video_section">
+        <div className="Scenic_section_header">
+          <h2>Experience Scenic Eclipse</h2>
+          <div className="Scenic_accent_line"></div>
+        </div>
         <div className="Scenic_youtube_video_inner">
           <iframe
             width="100%"
@@ -451,10 +455,13 @@ function ScenicAntarctica() {
 
       {/* ================= NEW VIDEO SECTION ================= */}
       <section className="Scenic_video_grid_section">
+        <div className="Scenic_section_header">
+          <h2>Antarctica Expedition Highlights</h2>
+          <div className="Scenic_accent_line"></div>
+        </div>
         <div className="Scenic_video_grid_inner">
           <div className="Scenic_video_row">
             <div className="Scenic_video_item">
-              <h3>Wildlife of Antarctica</h3>
               <video autoPlay muted loop playsInline controls>
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACNt3LrAxynWJPY-CRQRbH8/Scenic/Scenic%20Ocean/Videos/Antarctica/Reel%20Format/Wildlife%20Of%20Antarctica%20Social%20Reel%201%20-%20World%20Wildlife%20Day%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ba372ruc&raw=1"
@@ -462,9 +469,13 @@ function ScenicAntarctica() {
                 />
                 Your browser does not support the video tag.
               </video>
+              <h3>Wildlife of Antarctica</h3>
+              <p className="Scenic_video_desc">
+                Witness the raw power and beauty of Antarctica's diverse animal
+                kingdom in their natural polar habitat.
+              </p>
             </div>
             <div className="Scenic_video_item">
-              <h3>Antarctica & East Antarctica</h3>
               <video autoPlay muted loop playsInline controls>
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AK_BXGRAgNIVFjkeht6x-hw/Scenic/Scenic%20Ocean/Videos/Antarctica/30s-Antarctica%20and%20East%20Antarctica_Brochure%20video_Gen_CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=f9qak7ti&raw=1"
@@ -472,9 +483,13 @@ function ScenicAntarctica() {
                 />
                 Your browser does not support the video tag.
               </video>
+              <h3>Antarctica & East Antarctica</h3>
+              <p className="Scenic_video_desc">
+                An extraordinary journey through the world's last great
+                wilderness and most remote coastal regions.
+              </p>
             </div>
             <div className="Scenic_video_item">
-              <h3>Exploring East Antarctica & Ross Sea</h3>
               <video autoPlay muted loop playsInline controls>
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/APLYAQLs3hUko6hSJWqpcIo/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20_%20%20Exploring%20East%20Antarctica%20and%20the%20Ross%20Sea.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ovtwu8dc&raw=1"
@@ -482,6 +497,11 @@ function ScenicAntarctica() {
                 />
                 Your browser does not support the video tag.
               </video>
+              <h3>Exploring East Antarctica & Ross Sea</h3>
+              <p className="Scenic_video_desc">
+                Discover the historic routes and frozen landscapes of the
+                dramatic and rarely visited Ross Sea.
+              </p>
             </div>
           </div>
         </div>

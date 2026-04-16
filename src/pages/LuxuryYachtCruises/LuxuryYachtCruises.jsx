@@ -847,8 +847,8 @@ export default function YachtCruisesPage() {
                 </div>
                 <div className="lux-gallery-overlay">
                   <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Onboard Life</span>
-                    <h3 className="lux-gallery-h3">Social Atmosphere</h3>
+                    <span className="lux-gallery-badge">Ocean Retreat</span>
+                    <h3 className="lux-gallery-h3">Relaxed Luxury Lounge</h3>
                   </div>
                 </div>
               </div>
@@ -864,8 +864,8 @@ export default function YachtCruisesPage() {
                 </div>
                 <div className="lux-gallery-overlay">
                   <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Fine Dining</span>
-                    <h3 className="lux-gallery-h3">Culinary Excellence</h3>
+                    <span className="lux-gallery-badge">Quiet Moments</span>
+                    <h3 className="lux-gallery-h3">Sunset Reading Lounge</h3>
                   </div>
                 </div>
               </div>
@@ -881,8 +881,8 @@ export default function YachtCruisesPage() {
                 </div>
                 <div className="lux-gallery-overlay">
                   <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Destinations</span>
-                    <h3 className="lux-gallery-h3">Hidden Coastal Coves</h3>
+                    <span className="lux-gallery-badge">Fine Dining</span>
+                    <h3 className="lux-gallery-h3">Oceanview Restaurant</h3>
                   </div>
                 </div>
               </div>
@@ -898,8 +898,8 @@ export default function YachtCruisesPage() {
                 </div>
                 <div className="lux-gallery-overlay">
                   <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Deck Experience</span>
-                    <h3 className="lux-gallery-h3">Sunset Relaxation</h3>
+                    <span className="lux-gallery-badge">Night Deck</span>
+                    <h3 className="lux-gallery-h3">Luxury Under the Stars</h3>
                   </div>
                 </div>
               </div>
@@ -915,8 +915,8 @@ export default function YachtCruisesPage() {
                 </div>
                 <div className="lux-gallery-overlay">
                   <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Service</span>
-                    <h3 className="lux-gallery-h3">Bespoke Experience</h3>
+                    <span className="lux-gallery-badge">Signature Deck</span>
+                    <h3 className="lux-gallery-h3">Luxury Sun Lounge</h3>
                   </div>
                 </div>
               </div>
@@ -1199,6 +1199,15 @@ export default function YachtCruisesPage() {
       {/* ===== SECTION 04.5: FEATURED BRANDS — Modern Three-Column Visual Grid ===== */}
       <section className="lux-brands-highlight">
         <div className="lux-container-wide">
+          <div className="lux-brand-highlight-header">
+            <h2 className="lux-h2">Featured Luxury Vessels</h2>
+            <div className="lux-navy-divider-center"></div>
+            <p className="lux-brand-highlight-subtitle">
+              Explore the distinctive character and design of the industry's
+              most prestigious yachts.
+            </p>
+          </div>
+
           <div className="lux-brand-highlight-grid">
             {/* Card 1: Emerald Cruises */}
             <div className="lux-highlight-card">
@@ -1207,6 +1216,10 @@ export default function YachtCruisesPage() {
               </div>
               <div className="lux-highlight-info">
                 <h3 className="lux-highlight-title">Emerald Cruises</h3>
+                <p className="lux-highlight-desc">
+                  Modern, innovative yachts designed for contemporary luxury at
+                  sea.
+                </p>
               </div>
             </div>
 
@@ -1217,6 +1230,10 @@ export default function YachtCruisesPage() {
               </div>
               <div className="lux-highlight-info">
                 <h3 className="lux-highlight-title">Ritz-Carlton yacht</h3>
+                <p className="lux-highlight-desc">
+                  A seamless extension of the legendary gold-standard service
+                  and luxury.
+                </p>
               </div>
             </div>
 
@@ -1227,6 +1244,10 @@ export default function YachtCruisesPage() {
               </div>
               <div className="lux-highlight-info">
                 <h3 className="lux-highlight-title">Aman yacht</h3>
+                <p className="lux-highlight-desc">
+                  An ultra-private sanctuary reflecting the serene philosophy of
+                  Aman resorts.
+                </p>
               </div>
             </div>
           </div>

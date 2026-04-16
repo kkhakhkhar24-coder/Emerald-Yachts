@@ -17,16 +17,20 @@ import {
 } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
-import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpeg";
-import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpeg";
+import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpg";
+import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
 import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.jpeg";
 import scenicValue from "../../assets/scenic-vs-silversea-antarctica/scenic_value.jpg";
 import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silversea_value.jpg";
 import { Helmet } from "react-helmet-async";
-import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.jpeg";
+import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.jpg";
 import silverseaImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea2.jpg";
 import myImage from "../../assets/image.jpg";
+import ScenicGallery1 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery1.jpg";
+import ScenicGallery2 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery2.jpg";
+import ScenicGallery3 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery3.jpg";
+import ScenicGallery4 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery4.jpg";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -379,42 +383,6 @@ const AntarcticaPage = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 1 — HERO ===== */}
-      {/* <section className="senianta-hero senianta-antarctica-senianta-hero">
-        <div className="senianta-hero-content">
-          <h1>
-            Scenic vs Silversea Antarctica
-          </h1>
-
-          <p className="senianta-lead">
-            Choosing the right luxury senianta-expedition experience
-          </p>
-
-          <p className="senianta-sub">
-            The difference is not simply in features. It is in how you want to experience the journey.
-          </p>
-
-          <p className="senianta-extra-text">
-            Choosing the right senianta-expedition cruise line for Antarctica impacts more than your itinerary.
-            It shapes how you experience the destination from start to finish.
-          </p>
-
-          <p className="senianta-extra-text">
-            Two of the most commonly compared options are Scenic Luxury Cruises &amp; Tours and Silversea Cruises.
-            Both operate at the highest level of the market. Both provide access to Antarctica.
-          </p>
-
-          <div className="senianta-hero-buttons senianta-hero-buttons--centered">
-            <button className="senianta-primary senianta-primary--no-offset">
-              Get Expert Recommendation
-            </button>
-            <button className="senianta-secondary">
-              View Scenic Antarctica Expeditions
-            </button>
-          </div>
-        </div>
-      </section> */}
-
       {/* ===== SECTION 2 — QUICK COMPARISON ===== */}
       <section className="senianta-glance">
         <div className="senianta-glance-inner">
@@ -625,6 +593,97 @@ const AntarcticaPage = () => {
             In practice, both provide strong senianta-expedition execution. The
             difference lies in how the experience is delivered.
           </p>
+        </div>
+      </section>
+
+      {/* ===== MODERN BENTO GRID GALLERY SHOWCASE ===== */}
+      <section className="senianta-gallery-section">
+        <div className="senianta-gallery-inner">
+          <div className="senianta-gallery-header">
+            <span className="senianta-gallery-eyebrow">Visual Journey</span>
+            <h2 className="senianta-gallery-h2">The Antarctica Expedition</h2>
+            <div className="senianta-gallery-divider"></div>
+            <p className="senianta-gallery-p">
+              From mirror-like waters to ancient glaciers, experience the raw
+              beauty of the White Continent through any lens.
+            </p>
+          </div>
+
+          <div className="senianta-gallery-bento-grid">
+            {/* 01: Large Featured Item */}
+            <div className="senianta-gallery-item senianta-gallery-feature">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ScenicGallery1}
+                  alt="Colossal Antarctic Icebergs"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Polar Expedition
+                  </span>
+                  <h3 className="senianta-gallery-h3">Glistening Horizons</h3>
+                  <p className="senianta-gallery-item-p">
+                    Witness the sheer scale of the Antarctic landscape where
+                    modern luxury meets primal wilderness.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 02: Vertical Item */}
+            <div className="senianta-gallery-item senianta-gallery-tall">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ScenicGallery2}
+                  alt="Pristine Antarctic Waters"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Expedition Lifestyle
+                  </span>
+                  <h3 className="senianta-gallery-h3">Discovery & Design</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 03: Standard Item */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ScenicGallery3}
+                  alt="Wildlife in Antarctica"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Authentic Service
+                  </span>
+                  <h3 className="senianta-gallery-h3">
+                    Classic Luxury Traditons
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 04: Standard Item */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ScenicGallery4}
+                  alt="Expedition Spirit"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Frontier Discovery
+                  </span>
+                  <h3 className="senianta-gallery-h3">Remote Exploration</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -912,7 +971,7 @@ const AntarcticaPage = () => {
             <div className="senianta-verdict-card senianta-verdict-card--scenic">
               <img
                 className="senianta-verdict-img"
-                src={scenicImage}
+                src={silverseaImage}
                 alt="Scenic luxury river cruise ship on calm waters"
               />
               <div className="senianta-verdict-body">
@@ -932,7 +991,7 @@ const AntarcticaPage = () => {
             <div className="senianta-verdict-card senianta-verdict-card--silversea">
               <img
                 className="senianta-verdict-img"
-                src={silverseaImage}
+                src={scenicImage}
                 alt="Silversea ocean cruise ship at sunset"
               />
               <div className="senianta-verdict-body">
@@ -1052,8 +1111,12 @@ const AntarcticaPage = () => {
                 />
               </div>
               <div className="senianta-auth-title-wrap">
-                <h3 className="senianta-auth-title">Planned and Curated by Angela Hughes</h3>
-                <p className="senianta-auth-role">CEO, Trips & Ships Luxury Travel</p>
+                <h3 className="senianta-auth-title">
+                  Planned and Curated by Angela Hughes
+                </h3>
+                <p className="senianta-auth-role">
+                  CEO, Trips & Ships Luxury Travel
+                </p>
               </div>
 
               <div className="senianta-auth-stats-grid">

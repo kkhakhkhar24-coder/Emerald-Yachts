@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Ship,
   Heart,
@@ -26,6 +26,8 @@ import ImageGellery1 from "../../assets/RiversidevsAmaWaterways/AmaCello_ChefTab
 import ImageGellery2 from "../../assets/RiversidevsAmaWaterways/AmaCello_Bar_Lounge.jpg";
 import ImageGellery3 from "../../assets/RiversidevsAmaWaterways/AmaBella_Twin-Balcony.jpg";
 import ImageGellery4 from "../../assets/RiversidevsAmaWaterways/AmaBella_MainLounge.jpg";
+import RiversideImage from "../../assets/RiversidevsAmaWaterways/Riverside.jpg";
+import AmawaterImage from "../../assets/RiversidevsAmaWaterways/Amawater.jpg";
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {
@@ -303,24 +305,6 @@ function FAQ() {
 
 const RiversidevsAmaWaterways = () => {
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
-  const [isNavSticky, setIsNavSticky] = useState(false);
-
-  useEffect(() => {
-    const slides = document.querySelectorAll(".rva-hero-bg-slide");
-    let current = 0;
-    const interval = setInterval(() => {
-      slides[current].classList.remove("rva-active-slide");
-      current = (current + 1) % slides.length;
-      slides[current].classList.add("rva-active-slide");
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => setIsNavSticky(window.scrollY > 600);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div className="rva-page-wrapper">
@@ -416,7 +400,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* INTRO */}
-      <section className="rva-section rva-bg-soft" id="rva-overview">
+      <section className="rva-section rva-bg-white" id="rva-overview">
         <div className="rva-container">
           <p className="rva-intro-text">
             This is one of the most important river cruise comparisons for
@@ -430,7 +414,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* WHY TRUST */}
-      <section className="rva-section rva-bg-white">
+      <section className="rva-section rva-bg-soft">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Why Trust This Comparison</h2>
@@ -444,6 +428,45 @@ const RiversidevsAmaWaterways = () => {
             global footprint that includes Europe, Asia, Africa, and South
             America, along with extensive included shore experiences.
           </p>
+        </div>
+      </section>
+
+      {/* FLEET SHOWCASE */}
+      <section className="rva-section rva-bg-white" id="rva-fleet">
+        <div className="rva-container">
+          <div className="rva-section-header">
+            <h2 className="rva-h2">The Luxury Fleet</h2>
+            <div className="rva-accent-line"></div>
+          </div>
+          <div className="rva-fleet-grid">
+            <div className="rva-fleet-card">
+              <div className="rva-fleet-image">
+                <img src={RiversideImage} alt="Riverside Luxury Cruise Ship" />
+              </div>
+              <div className="rva-fleet-content">
+                <h3 className="rva-fleet-title">Riverside Cruise</h3>
+                <p className="rva-fleet-desc">
+                  Experience a boutique luxury atmosphere with all-suite
+                  accommodations and expansive personal space across the
+                  European rivers.
+                </p>
+              </div>
+            </div>
+
+            <div className="rva-fleet-card">
+              <div className="rva-fleet-image">
+                <img src={AmawaterImage} alt="AmaWaterways Cruise Ship" />
+              </div>
+              <div className="rva-fleet-content">
+                <h3 className="rva-fleet-title">AmaWaterways Cruise</h3>
+                <p className="rva-fleet-desc">
+                  Enjoy an active and social river cruise experience with
+                  unrivaled destination depth and multiple included excursion
+                  options in every port.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -509,7 +532,7 @@ const RiversidevsAmaWaterways = () => {
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">
-              Riverside vs AmaWaterways: Key Features Compared
+              Riverside vs AmaWaterways <br /> Key Features Compared
             </h2>
             <div className="rva-accent-line"></div>
           </div>
@@ -579,7 +602,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* VIDEO CLIP SECTION */}
-      <section className="rva-video-showcase">
+      <section className="rva-video-showcase1">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Experience Riverside Luxury</h2>
@@ -587,15 +610,20 @@ const RiversidevsAmaWaterways = () => {
           </div>
           <div className="rva-video-wrapper">
             <div className="rva-video-frame">
-              <iframe
+              <video
                 className="rva-video-player"
-                src="https://www.youtube.com/embed/vjyJnYhRYF0?autoplay=1&mute=1&loop=1&playlist=vjyJnYhRYF0"
-                title="Riverside Luxury Cruises Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="rva-video-glow"></div>
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+              >
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ANzka3lSVEl8ZWdzq6aa2JU/Emerald%20Cruises/River%20Cruising/Europe%20River%20Cruising/ECER%20Star-Ships/Videos/Emerald%20Cruises%20-%20EmeraldEXPERIENCE%20(short).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ilapbpj3&dl=1"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
@@ -653,20 +681,56 @@ const RiversidevsAmaWaterways = () => {
             <h2 className="rva-h2">Pricing Comparison</h2>
             <div className="rva-accent-line"></div>
           </div>
-          <div className="rva-pricing-block">
-            <p className="rva-body-text">
-              Riverside generally belongs in the conversation when a client is
-              comfortable paying for more space, a more intimate onboard feel,
-              and a more boutique luxury positioning. AmaWaterways often appeals
-              to travelers who still want a premium experience but place more
-              value on included touring, active excursions, and a larger choice
-              set of itineraries and destinations. I would position Riverside as
-              the more boutique luxury choice and AmaWaterways as the stronger
-              inclusion-and-activity value play within the premium-plus space.
-              This pricing lens is an interpretation based on the brands'
-              published positioning and inclusions, not a fixed fare chart,
-              since fares vary by sailing date, itinerary, and cabin category.
-            </p>
+          <div className="rva-pricing-analysis-grid">
+            {/* Riverside Positioning */}
+            <div className="rva-pricing-card rva-pricing-riverside">
+              <div className="rva-pricing-card-header">
+                <span className="rva-pricing-brand-badge">Riverside</span>
+                <Ship size={20} className="rva-pricing-icon" />
+              </div>
+              <p className="rva-pricing-text">
+                Riverside generally belongs in the conversation when a client is
+                comfortable paying for more space, a more intimate onboard feel,
+                and a more boutique luxury positioning.
+              </p>
+            </div>
+
+            {/* AmaWaterways Positioning */}
+            <div className="rva-pricing-card rva-pricing-ama">
+              <div className="rva-pricing-card-header">
+                <span className="rva-pricing-brand-badge">AmaWaterways</span>
+                <Ship size={20} className="rva-pricing-icon" />
+              </div>
+              <p className="rva-pricing-text">
+                AmaWaterways often appeals to travelers who still want a premium
+                experience but place more value on included touring, active
+                excursions, and a larger choice set of itineraries and
+                destinations.
+              </p>
+            </div>
+
+            {/* Expert Positioning Recommended */}
+            <div className="rva-pricing-expert-box">
+              <div className="rva-pricing-expert-inner">
+                <h4 className="rva-pricing-expert-title">
+                  Expert Positioning Summary
+                </h4>
+                <p className="rva-pricing-expert-text">
+                  I would position Riverside as the more boutique luxury choice
+                  and AmaWaterways as the stronger inclusion-and-activity value
+                  play within the premium-plus space.
+                </p>
+              </div>
+            </div>
+
+            {/* Pricing Disclaimer */}
+            <div className="rva-pricing-disclaimer-box">
+              <p className="rva-pricing-disclaimer-text">
+                This pricing lens is an interpretation based on the brands'
+                published positioning and inclusions, not a fixed fare chart,
+                since fares vary by sailing date, itinerary, and cabin category.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1078,95 +1142,68 @@ const RiversidevsAmaWaterways = () => {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="rva-section rva-bg-soft">
+      {/* EXPERT PROFILE SECTION */}
+      <section className="rva-section rva-bg-soft" id="rva-expert">
         <div className="rva-container">
-          <div className="rva-section-header">
-            <h2 className="rva-h2">
-              About Angela Hughes and Trips &amp; Ships Luxury Travel
-            </h2>
-            <div className="rva-accent-line"></div>
-          </div>
-          <div className="rva-about-grid">
-            <div className="rva-about-portrait">
-              <img
-                src={AboutImage}
-                alt="Angela Hughes - Luxury Travel Expert"
-                className="rva-about-img"
-              />
+          <div className="rva-expert-profile-split">
+            <div className="rva-expert-left">
+              <div className="rva-expert-portrait-wrap">
+                <img
+                  src={AboutImage}
+                  alt="Angela Hughes"
+                  className="rva-expert-img"
+                />
+              </div>
             </div>
-            <div className="rva-about-text">
-              <p className="rva-about-lead">
-                When you are comparing river cruise lines like Riverside Luxury
-                Cruises and AmaWaterways, you are not just choosing a ship—you
-                are choosing the experience that will define your entire trip.
-              </p>
-              <p className="rva-about-p">
-                Angela Hughes brings more than 40 years of experience in the
-                travel industry and is widely recognized as a leading voice in
-                luxury travel, river cruising, and global itinerary design.
-              </p>
-              <div className="rva-about-credential">
-                <Shield size={20} strokeWidth={1.5} />
+
+            <div className="rva-expert-right">
+              <div className="rva-expert-meta">
+                <h2 className="rva-expert-name">Angela Hughes</h2>
+                <p className="rva-expert-title">
+                  CEO & Founder, Trips & Ships Luxury Travel
+                </p>
+                <div className="rva-expert-trust-row">
+                  <div className="rva-trust-item">
+                    <Shield size={16} /> <span>40+ Years Expertise</span>
+                  </div>
+                  <div className="rva-trust-item">
+                    <Award size={16} />{" "}
+                    <span>Luxury Influencer of the Year</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rva-expert-bio">
                 <p>
-                  As CEO of Trips &amp; Ships Luxury Travel and founder of
-                  Luxury Travel University, Angela leads a network of over 140
-                  travel advisors and has personally sold millions in luxury
-                  travel annually. Her team works across every major river
-                  cruise brand, giving her a real-world view of how these
-                  products actually perform—not just how they are marketed.
+                  As a leading voice in luxury river cruising, Angela Hughes
+                  brings four decades of operational insight to every
+                  comparison. Her team at Trips & Ships Luxury Travel leads 140+
+                  advisors, providing an independent, experience-based view of
+                  how brands like Riverside and AmaWaterways actually perform
+                  for travelers.
+                </p>
+                <p>
+                  Featured in <strong>Travel Weekly</strong> and{" "}
+                  <strong>Insider Travel Report</strong>, Angela's
+                  recommendations are rooted in real-world feedback and
+                  long-term value, not marketing bias.
                 </p>
               </div>
-              <div className="rva-about-credential">
-                <Award size={20} strokeWidth={1.5} />
-                <p>
-                  Angela has been featured in Travel Weekly, TravelAge West,
-                  Travel Market Report, Insider Travel Report, and other leading
-                  industry publications. She has also been recognized as Luxury
-                  Travel Influencer of the Year and is a frequent global
-                  speaker, advising both travel professionals and cruise brands
-                  on trends shaping the luxury travel space.
-                </p>
+
+              <div className="rva-expert-services">
+                <h4 className="rva-services-h4">Advisory Services</h4>
+                <ul className="rva-services-list">
+                  <li>
+                    <Check size={14} /> Clear Brand Comparisons
+                  </li>
+                  <li>
+                    <Check size={14} /> Style & Prioritization Matching
+                  </li>
+                  <li>
+                    <Check size={14} /> Logistics & Value Optimization
+                  </li>
+                </ul>
               </div>
-              <div className="rva-about-credential">
-                <Layers size={20} strokeWidth={1.5} />
-                <p>
-                  What sets this perspective apart is independence. Angela and
-                  her team are not aligned with a single cruise line. They work
-                  across brands like Riverside Luxury Cruises and AmaWaterways,
-                  ensuring recommendations are based on experience, client fit,
-                  and long-term value—not supplier bias.
-                </p>
-              </div>
-              <p className="rva-about-p">
-                Trips &amp; Ships Luxury Travel operates as a high-level
-                advisory firm. Clients work with Angela and her team to:
-              </p>
-              <ul className="rva-about-list">
-                <li>
-                  <Check size={16} strokeWidth={2.5} />
-                  <span>compare cruise lines with clarity</span>
-                </li>
-                <li>
-                  <Check size={16} strokeWidth={2.5} />
-                  <span>
-                    identify the right experience for their travel style
-                  </span>
-                </li>
-                <li>
-                  <Check size={16} strokeWidth={2.5} />
-                  <span>avoid costly planning mistakes</span>
-                </li>
-                <li>
-                  <Check size={16} strokeWidth={2.5} />
-                  <span>maximize both value and overall experience</span>
-                </li>
-              </ul>
-              <p className="rva-about-closing">
-                For travelers navigating a decision like Riverside versus
-                AmaWaterways, that level of expertise ensures the trip is not
-                just booked—but designed correctly from the start.
-              </p>
             </div>
           </div>
         </div>

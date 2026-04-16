@@ -709,7 +709,6 @@ h2.yacht-section-h2 {
 
 .yacht-hero-read-more {
     display: inline-block;
-    margin: 8px 0 32px;
     background: transparent;
     border: none;
     color: #ffffff;
@@ -4501,6 +4500,21 @@ h2.yacht-section-h2 {
     background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
 }
 
+.lux-brand-highlight-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.lux-brand-highlight-subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    color: #274472;
+    font-weight: 300 !important;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
 .lux-brand-highlight-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -4557,8 +4571,18 @@ h2.yacht-section-h2 {
     font-size: 24px !important;
     font-weight: 600 !important;
     color: #274472;
-    margin: 0 !important;
+    margin-bottom: 12px !important;
     letter-spacing: 0.5px;
+}
+
+.lux-highlight-desc {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    color: #274472;
+    font-weight: 300 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    opacity: 0.8;
 }
 
 /* RESPONSIVE */
