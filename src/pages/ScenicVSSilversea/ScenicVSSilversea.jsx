@@ -20,7 +20,7 @@ import "../ScenicVSSilversea/ScenicVSSilversea.css";
 import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpg";
 import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpg";
 import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
-import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.jpeg";
+import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.jpg";
 import scenicValue from "../../assets/scenic-vs-silversea-antarctica/scenic_value.jpg";
 import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silversea_value.jpg";
 import { Helmet } from "react-helmet-async";
