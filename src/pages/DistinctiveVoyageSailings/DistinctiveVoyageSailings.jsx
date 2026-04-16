@@ -2,13 +2,30 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./DistinctiveVoyageSailings.css";
 import Navbar from "../../components/Navbar/Navbar";
-import HomePage1 from "../../assets/HomePage/HomePage1.jpg";
-import HomePage3 from "../../assets/HomePage/HomePage3.jpg";
-import HomePage4 from "../../assets/HomePage/HomePage4.jpg";
-import SailImg1 from "../../assets/HomePage/HomePage1.jpg";
-import SailImg2 from "../../assets/HomePage/HomePage4.jpg";
+
+import dist1 from "../../assets/DistinctiveVoyageSailings/dist1.png";
+import dist2 from "../../assets/DistinctiveVoyageSailings/dist2.png";
+import dist3 from "../../assets/DistinctiveVoyageSailings/dist3.png";
+
+import sailing1 from "../../assets/DistinctiveVoyageSailings/sailing1.png";
+import sailing2 from "../../assets/DistinctiveVoyageSailings/sailing2.png";
+import sailing3 from "../../assets/DistinctiveVoyageSailings/sailing3.png";
+import sailing4 from "../../assets/DistinctiveVoyageSailings/sailing4.png";
+import sailing5 from "../../assets/DistinctiveVoyageSailings/sailing5.png";
+import sailing6 from "../../assets/DistinctiveVoyageSailings/sailing6.jpg";
+
+import pastsail1 from "../../assets/DistinctiveVoyageSailings/pastsail1.png";
+import pastsail2 from "../../assets/DistinctiveVoyageSailings/pastsail2.png";
+import pastsail3 from "../../assets/DistinctiveVoyageSailings/pastsail3.png";
+
+import image from "../../assets/image.webp";
+
+
+import new1 from "../../assets/DistinctiveVoyageSailings/new1.png";
+import new2 from "../../assets/DistinctiveVoyageSailings/new2.png";
+
 import {
-  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass,
+  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass, Award,
   Clock, Anchor, GraduationCap, Users, Mic, Newspaper, ShieldCheck,
   Lightbulb, Map, Heart, Star, Gift, Ticket, ConciergeBell, Navigation, Sparkles
 } from "lucide-react";
@@ -62,7 +79,7 @@ const DistinctiveVoyageSailings = () => {
 
 
 
-  const images = [HomePage1, HomePage3, HomePage4];
+  const images = [dist1, dist2, dist3];
 
 
 
@@ -79,7 +96,7 @@ const DistinctiveVoyageSailings = () => {
       <Helmet>
         <title>Distinctive Voyage Sailings with Angela Hughes | Hosted Luxury Cruises 2026–2027</title>
         <meta name="description" content="Explore Distinctive Voyage hosted luxury cruises with Angela Hughes and Trips & Ships Luxury Travel. Enjoy exclusive hosted amenities, private shore events, and sail with a trusted luxury cruise expert." />
-        
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -242,7 +259,7 @@ const DistinctiveVoyageSailings = () => {
 
           {/* FIRST PARAGRAPH */}
           <p>
-            Explore Distinctive Voyage hosted sailings curated by Angela Hughes and Trips & Ships Luxury Travel.
+            Explore Distinctive Voyage hosted sailings curated by Angela Hughes <br /> and Trips & Ships Luxury Travel.
 
           </p>
 
@@ -273,10 +290,6 @@ const DistinctiveVoyageSailings = () => {
           {/* BUTTONS */}
           <div className="Dist_hero_buttons">
             <button className="Dist_primary_btn">
-              Reserve Your Spot
-            </button>
-
-            <button className="Dist_secondary_btn">
               Request Sailing Details
             </button>
           </div>
@@ -294,11 +307,11 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_trustclean_left">
 
             <h2 className="Dist_trustclean_heading">
-              Why Travelers Trust Angela Hughes for Hosted Luxury Cruises?
+              Why Travelers Trust Angela Hughes for Hosted Ocean Cruises?
             </h2>
 
             <p className="Dist_trustclean_intro">
-              Angela Hughes is one of the most recognized voices in luxury travel today, serving as CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University. With more than four decades in the travel industry, Angela has personally sailed, inspected, and vetted many of the world’s leading luxury cruise brands and destinations.
+              Angela Hughes is one of the most recognized voices in luxury travel today, serving as CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University. With more than four decades in the travel industry, Angela has personally sailed, inspected, and vetted many of the world’s leading luxury cruise brands and destinations.She has personally traveled to over 121 countries and territories.
             </p>
 
             <div className="Dist_trustclean_points">
@@ -353,7 +366,7 @@ const DistinctiveVoyageSailings = () => {
 
           {/* RIGHT IMAGE */}
           <div className="Dist_trustclean_right">
-            <img src={TrustImage} alt="Luxury Cruise" />
+            <img src={image} alt="Luxury Cruise" />
           </div>
 
         </div>
@@ -366,7 +379,7 @@ const DistinctiveVoyageSailings = () => {
         <div className="Dist_hosted_container">
 
           <h2 className="Dist_hosted_heading">
-            Hosted Luxury Sailings with Angela Hughes
+            Hosted Cruise Sailings with Angela Hughes
           </h2>
 
           <p className="Dist_hosted_text">
@@ -375,6 +388,25 @@ const DistinctiveVoyageSailings = () => {
 
         </div>
       </section>
+
+      {/* ================= MEMORY 1 (SUGGESTED) ================= */}
+      <section className="Dist_suggest_section">
+        <div className="Dist_suggest_container">
+          <div className="Dist_suggest_text_card variant_blue">
+            <div className="suggest_meta">
+              <Award size={36} className="suggest_icon" />
+              <span className="suggest_tag">Expertise</span>
+            </div>
+            <h3 className="suggest_heading">A Legacy of Curated Luxury</h3>
+            <p className="suggest_desc">With more than 40 years of expertise, we bring you closer to the world's most intimate and exclusive experiences.</p>
+          </div>
+          <div className="Dist_suggest_image">
+            <img src={new1} alt="Luxury Travel Memory" />
+          </div>
+        </div>
+      </section>
+
+
 
 
       {/* ================= DISTINCTIVE VOYAGES ================= */}
@@ -395,6 +427,24 @@ const DistinctiveVoyageSailings = () => {
 
         </div>
       </section>
+
+      {/* ================= MEMORY 2 (SUGGESTED) ================= */}
+      <section className="Dist_suggest_section">
+        <div className="Dist_suggest_container">
+          <div className="Dist_suggest_text_card">
+            <div className="suggest_meta">
+              <Compass size={36} className="suggest_icon" />
+              <span className="suggest_tag">Exploration</span>
+            </div>
+            <h3 className="suggest_heading">The Joy of Discovery</h3>
+            <p className="suggest_desc">It’s not just about the destinations you visit, but the deep connections and unforgettable moments you make along the way.</p>
+          </div>
+          <div className="Dist_suggest_image">
+            <img src={new2} alt="Luxury Travel Memory" />
+          </div>
+        </div>
+      </section>
+
 
 
       {/* ================= INCLUDED BENEFITS ================= */}
@@ -443,88 +493,6 @@ const DistinctiveVoyageSailings = () => {
 
         </div>
       </section>
-
-      {/* ================= COMPARE TABLE 1 ================= */}
-      <section className="Dist_compare_section">
-        <div className="Dist_compare_container">
-
-          <h2 className="Dist_compare_heading">
-            Compare Angela's Hosted Distinctive Voyages
-          </h2>
-
-          <div className="Dist_table_wrapper">
-            <table className="Dist_compare_table">
-
-              <thead>
-                <tr>
-                  <th>Voyage</th>
-                  <th>Dates</th>
-                  <th>Cruise Line / Ship</th>
-                  <th>Region</th>
-                  <th>Nights</th>
-                  <th>Starting From</th>
-                  <th>Best For</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>Greek Isles & Adriatic</td>
-                  <td>Aug 3–10, 2026</td>
-                  <td>Explora II</td>
-                  <td>Mediterranean</td>
-                  <td>7</td>
-                  <td>$5,500 pp</td>
-                  <td>Couples / First-Time Luxury Cruisers</td>
-                </tr>
-
-                <tr>
-                  <td>Adriatic to Greece</td>
-                  <td>Aug 10–17, 2026</td>
-                  <td>Explora II</td>
-                  <td>Mediterranean</td>
-                  <td>7</td>
-                  <td>$5,200 pp</td>
-                  <td>Mediterranean Repeat Travelers</td>
-                </tr>
-
-                <tr>
-                  <td>Antarctica Fly Cruise</td>
-                  <td>Nov 19–25, 2026</td>
-                  <td>Silver Endeavour</td>
-                  <td>Antarctica</td>
-                  <td>6</td>
-                  <td>$24,500 pp</td>
-                  <td>Bucket List Expedition Travelers</td>
-                </tr>
-
-                <tr>
-                  <td>Hong Kong to Singapore</td>
-                  <td>Jan 3–17, 2027</td>
-                  <td>Silver Muse</td>
-                  <td>Asia</td>
-                  <td>14</td>
-                  <td>$8,500 pp</td>
-                  <td>Asia / Culture Enthusiasts</td>
-                </tr>
-
-                <tr>
-                  <td>Cape Town to Dakar</td>
-                  <td>Apr 11–30, 2027</td>
-                  <td>Silver Dawn</td>
-                  <td>Africa</td>
-                  <td>19</td>
-                  <td>$13,500 pp</td>
-                  <td>Well-Traveled Luxury Explorers</td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </section>
-
 
 
       {/* ================= COMPARE TABLE 2 ================= */}
@@ -644,7 +612,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_one">
 
             <div className="Dist_sailpro_imgwrap_one">
-              <img src={SailImg1} alt="Explora Journey" />
+              <img src={sailing1} alt="Explora Journey" />
             </div>
 
             <div className="Dist_sailpro_content_one">
@@ -681,7 +649,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_two">
 
             <div className="Dist_sailpro_imgwrap_two">
-              <img src={SailImg2} alt="Explora Journey" />
+              <img src={sailing2} alt="Explora Journey" />
             </div>
 
             <div className="Dist_sailpro_content_two">
@@ -718,7 +686,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_three">
 
             <div className="Dist_sailpro_imgwrap_three">
-              <img src={SailImg1} alt="Antarctica Cruise" />
+              <img src={sailing3} alt="Antarctica Cruise" />
             </div>
 
             <div className="Dist_sailpro_content_three">
@@ -755,7 +723,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_four">
 
             <div className="Dist_sailpro_imgwrap_four">
-              <img src={SailImg2} alt="Asia Cruise" />
+              <img src={sailing4} alt="Asia Cruise" />
             </div>
 
             <div className="Dist_sailpro_content_four">
@@ -792,7 +760,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_five">
 
             <div className="Dist_sailpro_imgwrap_five">
-              <img src={SailImg1} alt="Africa Cruise" />
+              <img src={sailing5} alt="Africa Cruise" />
             </div>
 
             <div className="Dist_sailpro_content_five">
@@ -828,13 +796,13 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_six">
 
             <div className="Dist_sailpro_imgwrap_six">
-              <img src={SailImg2} alt="Tahiti Cruise" />
+              <img src={sailing6} alt="Tahiti Cruise" />
             </div>
 
             <div className="Dist_sailpro_content_six">
 
               <p className="Dist_sailpro_meta_six">
-                July 8, 2027
+                February 11-18, 2027
               </p>
 
               <h3 className="Dist_sailpro_title_six">
@@ -866,29 +834,29 @@ const DistinctiveVoyageSailings = () => {
         </div>
       </section>
 
-
-
       <section className="Dist_past_section">
         <div className="Dist_past_container">
 
           <h2 className="Dist_past_heading">
-            Past Hosted Sailings
+            Past 2026 Hosted Sailings
           </h2>
 
-          {/* CARD 1 */}
+          {/* NEW PAST SAILING CARD */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={SailImg1} alt="Greek Isles & Adriatic" />
+              <img src={pastsail1} alt="Regent Seven Seas Explorer" />
             </div>
 
             <div className="Dist_past_content">
-              <p className="meta">Aug 3–10, 2026</p>
-              <h3>Greek Isles & Adriatic</h3>
-              <p className="desc">Explora II</p>
-              <p className="route">Mediterranean</p>
-              <p>Nights: 7</p>
-              <p>Starting From: $5,500 pp</p>
-              <p className="ideal">Couples / First-Time Luxury Cruisers</p>
+              <p className="meta">April 8 to April 19, 2026</p>
+              <h3>Regent Seven Seas | Seven Seas Explorer. SOLD OUT</h3>
+              <p className="desc">Cruise Line: Regent Seven Seas Cruises | Ship: Seven Seas Explorer</p>
+              <p className="route">Voyage: Tokyo Roundtrip Japan Hosted Sailing</p>
+              <p>Sailing ID: EXP260408</p>
+              <p>Itinerary: Tokyo Roundtrip Japan Luxury Voyage</p>
+              <p>Hosted By: Angela Hughes</p>
+              <p>This sold-out hosted sailing aboard Seven Seas Explorer showcased the beauty of Japan during spring aboard one of Regent’s most elegant ships.</p>
+              <p className="ideal">Status: Past Hosted Sailing</p>
 
               <button className="btn">View Details</button>
             </div>
@@ -897,17 +865,20 @@ const DistinctiveVoyageSailings = () => {
           {/* CARD 2 */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={SailImg2} alt="Adriatic to Greece" />
+              <img src={pastsail2} alt="Crystal Symphony" />
             </div>
 
             <div className="Dist_past_content">
-              <p className="meta">Aug 10–17, 2026</p>
-              <h3>Adriatic to Greece</h3>
-              <p className="desc">Explora II</p>
-              <p className="route">Mediterranean</p>
-              <p>Nights: 7</p>
-              <p>Starting From: $5,200 pp</p>
-              <p className="ideal">Mediterranean Repeat Travelers</p>
+              <p className="meta">March 3 to March 13, 2026</p>
+              <h3>Crystal Cruises | Crystal Symphony</h3>
+              <p className="desc">Cruise Line: Crystal Cruises | Ship: Crystal Symphony</p>
+              <p className="route">Voyage: Singapore to Manila</p>
+              <p>Sailing ID: CSY-010-260303</p>
+              <p>Itinerary: Singapore → Southeast Asia → Philippines → Manila</p>
+              <p>Hosted By: Angela Hughes</p>
+              <p>This hosted Crystal Symphony voyage highlighted Southeast Asia and the Philippines aboard one of luxury cruising’s most beloved classic ships.</p>
+              <p>Starting From: $5,900 per person*</p>
+              <p className="ideal">Status: Past Hosted Sailing</p>
 
               <button className="btn">View Details</button>
             </div>
@@ -916,17 +887,18 @@ const DistinctiveVoyageSailings = () => {
           {/* CARD 3 */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={SailImg1} alt="Antarctica Fly Cruise" />
+              <img src={pastsail3} alt="Oceania Cruises" />
             </div>
 
             <div className="Dist_past_content">
-              <p className="meta">Nov 19–25, 2026</p>
-              <h3>Antarctica Fly Cruise</h3>
-              <p className="desc">Silver Endeavour</p>
-              <p className="route">Antarctica</p>
-              <p>Nights: 6</p>
-              <p>Starting From: $24,500 pp</p>
-              <p className="ideal">Bucket List Expedition Travelers</p>
+              <p className="meta">January 10 to January 21, 2025</p>
+              <h3>Oceania Cruises</h3>
+              <p className="desc">Cruise Line: Oceania Cruises</p>
+              <p className="route">Voyage: Brazil, Argentina & Uruguay Hosted Sailing</p>
+              <p>Itinerary: South America Luxury Voyage Featuring Brazil and Argentina</p>
+              <p>Hosted By: Angela Hughes</p>
+              <p>A memorable hosted South America voyage exploring the vibrant culture, cuisine, and coastal beauty of Brazil and Argentina.</p>
+              <p className="ideal">Status: Past Hosted Sailing</p>
 
               <button className="btn">View Details</button>
             </div>
@@ -938,49 +910,6 @@ const DistinctiveVoyageSailings = () => {
 
 
 
-      {/* WHY SAIL SECTION  */}
-      <section className="Dist_whysail_section">
-        <div className="Dist_whysail_container">
-
-          <h2 className="Dist_whysail_heading">
-            Why Sail with Angela Hughes?
-          </h2>
-
-          <p className="Dist_whysail_intro">
-            When you book a hosted sailing with Angela Hughes through Trips & Ships Luxury Travel, you are not simply reserving a cabin. You are gaining access to the expertise of one of the most recognized voices in luxury travel.
-          </p>
-
-          <div className="Dist_whysail_points">
-
-            <div className="Dist_whysail_grid_item">
-              <Lightbulb size={24} />
-              <p>Expert guidance before departure</p>
-            </div>
-
-            <div className="Dist_whysail_grid_item">
-              <Compass size={24} />
-              <p>Trusted cruise and destination insight</p>
-            </div>
-
-            <div className="Dist_whysail_grid_item">
-              <Map size={24} />
-              <p>Elevated planning support</p>
-            </div>
-
-            <div className="Dist_whysail_grid_item">
-              <Heart size={24} />
-              <p>A personal connection to their travel advisor</p>
-            </div>
-
-            <div className="Dist_whysail_grid_item">
-              <Star size={24} />
-              <p>A more thoughtful and curated travel experience</p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
 
 
       {/* BOOKING BENEFITS  */}
@@ -988,7 +917,7 @@ const DistinctiveVoyageSailings = () => {
         <div className="Dist_booking_container">
 
           <h2 className="Dist_booking_heading">
-            Why Book a Distinctive Voyage Instead of Booking Direct?
+            Why Book a Distinctive Voyage <br /> Instead of Booking Direct?
           </h2>
 
           <p className="Dist_booking_intro">
@@ -1013,7 +942,7 @@ const DistinctiveVoyageSailings = () => {
       {/* READY SECTION  */}
       <section className="Dist_ready_section">
         <div className="Dist_ready_container">
-
+          <div className="Dist_ready_icon"><Navigation size={40} /></div>
           <h2 className="Dist_ready_heading">
             Ready to Sail?
           </h2>
