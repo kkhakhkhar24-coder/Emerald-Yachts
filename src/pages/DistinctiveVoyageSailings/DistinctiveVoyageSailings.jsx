@@ -3,26 +3,26 @@ import { Helmet } from "react-helmet-async";
 import "./DistinctiveVoyageSailings.css";
 import Navbar from "../../components/Navbar/Navbar";
 
-import dist1 from "../../assets/DistinctiveVoyageSailings/dist1.png";
-import dist2 from "../../assets/DistinctiveVoyageSailings/dist2.png";
-import dist3 from "../../assets/DistinctiveVoyageSailings/dist3.png";
+import dist1 from "../../assets/DistinctiveVoyageSailings/wroclaw-poland-old-town-square-luxury-europe-travel-guide-angela-hughes.png";
+import dist2 from "../../assets/DistinctiveVoyageSailings/bergen-norway-bryggen-waterfront-scandinavia-luxury-travel.png";
+import dist3 from "../../assets/DistinctiveVoyageSailings/palace-of-versailles-france-luxury-travel-angela-hughes.png";
 
 import sailing1 from "../../assets/DistinctiveVoyageSailings/sailing1.png";
-import sailing2 from "../../assets/DistinctiveVoyageSailings/sailing2.png";
-import sailing3 from "../../assets/DistinctiveVoyageSailings/sailing3.png";
-import sailing4 from "../../assets/DistinctiveVoyageSailings/sailing4.png";
-import sailing5 from "../../assets/DistinctiveVoyageSailings/sailing5.png";
+import sailing2 from "../../assets/DistinctiveVoyageSailings/angela-hughes-antarctica-luxury-expedition-expert.png";
+import sailing3 from "../../assets/DistinctiveVoyageSailings/angela-hughes-antarctica-luxury-expedition-expert3.png";
+import sailing4 from "../../assets/DistinctiveVoyageSailings/angela-hughes-palawan-philippines-luxury-travel-expert.png";
+import sailing5 from "../../assets/DistinctiveVoyageSailings/angela-hughes-cape-town-south-africa-luxury-travel-expert.png";
 import sailing6 from "../../assets/DistinctiveVoyageSailings/sailing6.jpg";
 
-import pastsail1 from "../../assets/DistinctiveVoyageSailings/pastsail1.png";
-import pastsail2 from "../../assets/DistinctiveVoyageSailings/pastsail2.png";
+import pastsail1 from "../../assets/DistinctiveVoyageSailings/christ-the-redeemer-rio-de-janeiro-brazil-luxury-travel.png";
+import pastsail2 from "../../assets/DistinctiveVoyageSailings/singapore-marina-bay-sands-skyline-luxury-travel.png";
 import pastsail3 from "../../assets/DistinctiveVoyageSailings/pastsail3.png";
 
 import image from "../../assets/image.webp";
 
 
 import new1 from "../../assets/DistinctiveVoyageSailings/new1.png";
-import new2 from "../../assets/DistinctiveVoyageSailings/new2.png";
+import new2 from "../../assets/DistinctiveVoyageSailings/angela-hughes-tokyo-japan-bike-ride-cherry-blossoms.png";
 
 import {
   Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass, Award,
@@ -80,6 +80,12 @@ const DistinctiveVoyageSailings = () => {
 
 
   const images = [dist1, dist2, dist3];
+
+  const altTexts = [
+    "Historic colorful townhouses and medieval architecture in Wroclaw Old Town Square, Poland, a picturesque luxury European travel destination.",
+    "Colorful historic Bryggen waterfront buildings in Bergen, Norway reflected on the harbor at sunset.",
+    "The Palace of Versailles in France featuring grand architecture, reflecting pools, and classical sculpture in the gardens."
+  ];
 
 
 
@@ -247,6 +253,8 @@ const DistinctiveVoyageSailings = () => {
             key={current}
             className="Dist_hero_bg fade"
             style={{ backgroundImage: `url(${images[current]})` }}
+            role="img"
+            aria-label={altTexts[current]}
           ></div>
         </div>
 
@@ -440,7 +448,8 @@ const DistinctiveVoyageSailings = () => {
             <p className="suggest_desc">It’s not just about the destinations you visit, but the deep connections and unforgettable moments you make along the way.</p>
           </div>
           <div className="Dist_suggest_image">
-            <img src={new2} alt="Luxury Travel Memory" />
+            <img src={new2} alt="Angela Hughes enjoying a bike ride beneath cherry blossoms in Tokyo, Japan during sakura season. Luxury travel expert and CEO of Trips & Ships Luxury Travel explores Japan’s iconic spring scenery and cultural experiences.
+" />
           </div>
         </div>
       </section>
@@ -649,7 +658,8 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_two">
 
             <div className="Dist_sailpro_imgwrap_two">
-              <img src={sailing2} alt="Explora Journey" />
+              <img src={sailing2} alt="Angela Hughes luxury expedition travel expert in Antarctica featuring polar expedition cruising, icebergs, wildlife encounters, and luxury Antarctic exploration experiences.
+" />
             </div>
 
             <div className="Dist_sailpro_content_two">
@@ -686,7 +696,8 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_three">
 
             <div className="Dist_sailpro_imgwrap_three">
-              <img src={sailing3} alt="Antarctica Cruise" />
+              <img src={sailing3} alt="Angela Hughes luxury expedition travel expert in Antarctica featuring polar expedition cruising, icebergs, wildlife encounters, and luxury Antarctic exploration experiences.
+" />
             </div>
 
             <div className="Dist_sailpro_content_three">
@@ -723,7 +734,8 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_four">
 
             <div className="Dist_sailpro_imgwrap_four">
-              <img src={sailing4} alt="Asia Cruise" />
+              <img src={sailing4} alt=" “Angela Hughes exploring Palawan, Philippines—one of Southeast Asia’s premier luxury island destinations.”
+" />
             </div>
 
             <div className="Dist_sailpro_content_four">
@@ -760,7 +772,8 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_sailpro_card_five">
 
             <div className="Dist_sailpro_imgwrap_five">
-              <img src={sailing5} alt="Africa Cruise" />
+              <img src={sailing5} alt="Angela Hughes in Cape Town, South Africa showcasing luxury travel expertise while exploring one of Africa’s premier destinations known for Table Mountain, coastal beauty, and world-class luxury experiences.
+" />
             </div>
 
             <div className="Dist_sailpro_content_five">
@@ -844,7 +857,8 @@ const DistinctiveVoyageSailings = () => {
           {/* NEW PAST SAILING CARD */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={pastsail1} alt="Regent Seven Seas Explorer" />
+              <img src={pastsail1} alt="Aerial view of Christ the Redeemer overlooking Rio de Janeiro, Brazil with Sugarloaf Mountain and Guanabara Bay in the background.
+" />
             </div>
 
             <div className="Dist_past_content">
@@ -865,7 +879,8 @@ const DistinctiveVoyageSailings = () => {
           {/* CARD 2 */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={pastsail2} alt="Crystal Symphony" />
+              <img src={pastsail2} alt="Singapore skyline at dusk featuring Marina Bay Sands, Gardens by the Bay, and illuminated waterfront reflections.
+" />
             </div>
 
             <div className="Dist_past_content">
