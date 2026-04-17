@@ -12,7 +12,7 @@ import sailing2 from "../../assets/DistinctiveVoyageSailings/angela-hughes-antar
 import sailing3 from "../../assets/DistinctiveVoyageSailings/angela-hughes-antarctica-luxury-expedition-expert3.png";
 import sailing4 from "../../assets/DistinctiveVoyageSailings/angela-hughes-palawan-philippines-luxury-travel-expert.png";
 import sailing5 from "../../assets/DistinctiveVoyageSailings/angela-hughes-cape-town-south-africa-luxury-travel-expert.png";
-import sailing6 from "../../assets/DistinctiveVoyageSailings/sailing6.jpg";
+import sailing6 from "../../assets/DistinctiveVoyageSailings/sailing6.png";
 
 import pastsail1 from "../../assets/DistinctiveVoyageSailings/christ-the-redeemer-rio-de-janeiro-brazil-luxury-travel.png";
 import pastsail2 from "../../assets/DistinctiveVoyageSailings/singapore-marina-bay-sands-skyline-luxury-travel.png";
@@ -21,11 +21,11 @@ import pastsail3 from "../../assets/DistinctiveVoyageSailings/pastsail3.png";
 import image from "../../assets/image.webp";
 
 
-import new1 from "../../assets/DistinctiveVoyageSailings/new1.png";
-import new2 from "../../assets/DistinctiveVoyageSailings/angela-hughes-tokyo-japan-bike-ride-cherry-blossoms.png";
+import new1 from "../../assets/DistinctiveVoyageSailings/new1.jpeg";
+import new2 from "../../assets/DistinctiveVoyageSailings/angela-hughes-tokyo-japan-bike-ride-cherry-blossoms.jpg";
 
 import {
-  Check, User, MapPin, GlassWater, Plus, Minus, Send, Phone, Mail, Compass, Award,
+  Check, User, MapPin, Wine, Plus, Minus, Send, Phone, Mail, Compass, Award,
   Clock, Anchor, GraduationCap, Users, Mic, Newspaper, ShieldCheck,
   Lightbulb, Map, Heart, Star, Gift, Ticket, ConciergeBell, Navigation, Sparkles
 } from "lucide-react";
@@ -267,7 +267,7 @@ const DistinctiveVoyageSailings = () => {
 
           {/* FIRST PARAGRAPH */}
           <p>
-            Explore Distinctive Voyage hosted sailings curated by Angela Hughes <br /> and Trips & Ships Luxury Travel.
+            Explore Distinctive Voyage hosted sailings curated by Angela Hughes <br /> and Trips <span style={{ fontFamily: "'Playfair Display', serif" }}>&</span> Ships Luxury Travel.
 
           </p>
 
@@ -475,7 +475,7 @@ const DistinctiveVoyageSailings = () => {
             </div>
 
             <div className="Dist_include_card_2">
-              <div className="Dist_include_icon"><GlassWater size={24} /></div>
+              <div className="Dist_include_icon"><Wine size={24} /></div>
               <h4>Invitation to a Private Welcome Reception</h4>
               <p>
                 Meet your host, fellow guests, and learn what to expect throughout the journey.
@@ -509,7 +509,7 @@ const DistinctiveVoyageSailings = () => {
         <div className="Dist_compare_container2">
 
           <h2 className="Dist_compare_heading">
-            Compare Hosted Sailings
+            Compare Angela Hughes's Hosted Sailings
           </h2>
 
           <div className="Dist_table_wrapper">
@@ -580,6 +580,16 @@ const DistinctiveVoyageSailings = () => {
                 </tr>
 
                 <tr>
+                  <td>Dreams of Tahiti</td>
+                  <td>Feb 11–18, 2027</td>
+                  <td>Windstar Cruises / Star Breeze</td>
+                  <td>French Polynesia</td>
+                  <td>7</td>
+                  <td>$5,499 pp</td>
+                  <td>Active Couples / Warm Weather Luxury Travelers</td>
+                </tr>
+
+                <tr>
                   <td>Cape Town to Dakar</td>
                   <td>Apr 11–30, 2027</td>
                   <td>Silversea / Silver Dawn</td>
@@ -587,16 +597,6 @@ const DistinctiveVoyageSailings = () => {
                   <td>19</td>
                   <td>$13,500 pp</td>
                   <td>Well-Traveled Luxury Explorers</td>
-                </tr>
-
-                <tr>
-                  <td>Dreams of Tahiti</td>
-                  <td>Jul 8–15, 2027</td>
-                  <td>Windstar Cruises / Star Breeze</td>
-                  <td>French Polynesia</td>
-                  <td>7</td>
-                  <td>$5,499 pp</td>
-                  <td>Active Couples / Warm Weather Luxury Travelers</td>
                 </tr>
 
               </tbody>
@@ -614,7 +614,7 @@ const DistinctiveVoyageSailings = () => {
         <div className="Dist_sailpro_container">
 
           <h2 className="Dist_sailpro_heading">
-            2026 Sailings with Angela Hughes
+            2026-2027 Sailings with Angela Hughes
           </h2>
 
           {/* ===== CARD 1 ===== */}
@@ -768,6 +768,52 @@ const DistinctiveVoyageSailings = () => {
           </div>
 
 
+
+
+          {/* ===== CARD 6 ===== */}
+          <div className="Dist_sailpro_card_six">
+
+            <div className="Dist_sailpro_imgwrap_six">
+              <img src={sailing6} alt="Tahiti Cruise" />
+            </div>
+
+            <div className="Dist_sailpro_content_six">
+
+              <p className="Dist_sailpro_meta_six">
+                February 11-18, 2027
+              </p>
+
+              <h3 className="Dist_sailpro_title_six">
+                Windstar Cruises | Star Breeze
+              </h3>
+
+              <p className="Dist_sailpro_desc_six">
+                Dreams of Tahiti Hosted Sailing
+              </p>
+
+              <p className="Dist_sailpro_route_six">
+                Papeete → Moorea → Raiatea → Bora Bora → Huahine → Tahiti
+              </p>
+
+              <p className="Dist_sailpro_text_six">
+                Experience the romance and beauty of French Polynesia aboard Star Breeze with relaxed luxury and stunning lagoons.
+              </p>
+
+              <p className="Dist_sailpro_text_six">
+               This sailing does not include a shore excursion.  It is hosted by Brian and Angela Hughes but not part of the Distinctive Voyage shore excursion program.
+              </p>
+
+              <p className="Dist_sailpro_ideal_six">
+                Ideal for: Honeymooners, couples, Tahiti lovers, and warm-weather luxury seekers.
+              </p>
+
+              <button className="Dist_sailpro_btn_six">
+                Request Windstar Details
+              </button>
+
+            </div>
+          </div>
+
           {/* ===== CARD 5 ===== */}
           <div className="Dist_sailpro_card_five">
 
@@ -805,45 +851,11 @@ const DistinctiveVoyageSailings = () => {
             </div>
           </div>
 
-          {/* ===== CARD 6 ===== */}
-          <div className="Dist_sailpro_card_six">
 
-            <div className="Dist_sailpro_imgwrap_six">
-              <img src={sailing6} alt="Tahiti Cruise" />
-            </div>
 
-            <div className="Dist_sailpro_content_six">
 
-              <p className="Dist_sailpro_meta_six">
-                February 11-18, 2027
-              </p>
 
-              <h3 className="Dist_sailpro_title_six">
-                Windstar Cruises | Star Breeze
-              </h3>
 
-              <p className="Dist_sailpro_desc_six">
-                Dreams of Tahiti Hosted Sailing
-              </p>
-
-              <p className="Dist_sailpro_route_six">
-                Papeete → Moorea → Raiatea → Bora Bora → Huahine → Tahiti
-              </p>
-
-              <p className="Dist_sailpro_text_six">
-                Experience the romance and beauty of French Polynesia aboard Star Breeze with relaxed luxury and stunning lagoons.
-              </p>
-
-              <p className="Dist_sailpro_ideal_six">
-                Ideal for: Honeymooners, couples, Tahiti lovers, and warm-weather luxury seekers.
-              </p>
-
-              <button className="Dist_sailpro_btn_six">
-                Request Windstar Details
-              </button>
-
-            </div>
-          </div>
         </div>
       </section>
 
@@ -857,7 +869,7 @@ const DistinctiveVoyageSailings = () => {
           {/* NEW PAST SAILING CARD */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={pastsail1} alt="Aerial view of Christ the Redeemer overlooking Rio de Janeiro, Brazil with Sugarloaf Mountain and Guanabara Bay in the background.
+              <img src={pastsail3} alt="Aerial view of Christ the Redeemer overlooking Rio de Janeiro, Brazil with Sugarloaf Mountain and Guanabara Bay in the background.
 " />
             </div>
 
@@ -866,7 +878,7 @@ const DistinctiveVoyageSailings = () => {
               <h3>Regent Seven Seas | Seven Seas Explorer. SOLD OUT</h3>
               <p className="desc">Cruise Line: Regent Seven Seas Cruises | Ship: Seven Seas Explorer</p>
               <p className="route">Voyage: Tokyo Roundtrip Japan Hosted Sailing</p>
-              <p>Sailing ID: EXP260408</p>
+              {/* <p>Sailing ID: EXP260408</p> */}
               <p>Itinerary: Tokyo Roundtrip Japan Luxury Voyage</p>
               <p>Hosted By: Angela Hughes</p>
               <p>This sold-out hosted sailing aboard Seven Seas Explorer showcased the beauty of Japan during spring aboard one of Regent’s most elegant ships.</p>
@@ -879,7 +891,7 @@ const DistinctiveVoyageSailings = () => {
           {/* CARD 2 */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={pastsail2} alt="Singapore skyline at dusk featuring Marina Bay Sands, Gardens by the Bay, and illuminated waterfront reflections.
+              <img src={pastsail1} alt="Singapore skyline at dusk featuring Marina Bay Sands, Gardens by the Bay, and illuminated waterfront reflections.
 " />
             </div>
 
@@ -888,7 +900,7 @@ const DistinctiveVoyageSailings = () => {
               <h3>Crystal Cruises | Crystal Symphony</h3>
               <p className="desc">Cruise Line: Crystal Cruises | Ship: Crystal Symphony</p>
               <p className="route">Voyage: Singapore to Manila</p>
-              <p>Sailing ID: CSY-010-260303</p>
+              {/* <p>Sailing ID: CSY-010-260303</p> */}
               <p>Itinerary: Singapore → Southeast Asia → Philippines → Manila</p>
               <p>Hosted By: Angela Hughes</p>
               <p>This hosted Crystal Symphony voyage highlighted Southeast Asia and the Philippines aboard one of luxury cruising’s most beloved classic ships.</p>
@@ -902,11 +914,11 @@ const DistinctiveVoyageSailings = () => {
           {/* CARD 3 */}
           <div className="Dist_past_card">
             <div className="Dist_past_imgwrap">
-              <img src={pastsail3} alt="Oceania Cruises" />
+              <img src={pastsail2} alt="Oceania Cruises" />
             </div>
 
             <div className="Dist_past_content">
-              <p className="meta">January 10 to January 21, 2025</p>
+              <p className="meta">January 10 to January 21, 2026</p>
               <h3>Oceania Cruises</h3>
               <p className="desc">Cruise Line: Oceania Cruises</p>
               <p className="route">Voyage: Brazil, Argentina & Uruguay Hosted Sailing</p>
@@ -942,7 +954,7 @@ const DistinctiveVoyageSailings = () => {
           <div className="Dist_booking_grid">
 
             <div className="Dist_booking_card"><Gift size={20} /><p>Complimentary Hosted Amenities</p></div>
-            <div className="Dist_booking_card"><GlassWater size={20} /><p>Private Cocktail Reception</p></div>
+            <div className="Dist_booking_card"><Wine size={20} /><p>Private Cocktail Reception</p></div>
             <div className="Dist_booking_card"><Ticket size={20} /><p>Exclusive Shore Event</p></div>
             <div className="Dist_booking_card"><ConciergeBell size={20} /><p>Concierge Planning Support</p></div>
             <div className="Dist_booking_card"><Navigation size={20} /><p>Expert Cruise Guidance</p></div>

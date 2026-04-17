@@ -2888,7 +2888,8 @@ section {
 .Dist_suggest_image {
   flex: 0 0 42%;
   /* Smaller image as requested */
-  height: 400px;
+  height: 110vh;
+  object-position:  center;
   border-radius: 35px;
   overflow: hidden;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.1);
