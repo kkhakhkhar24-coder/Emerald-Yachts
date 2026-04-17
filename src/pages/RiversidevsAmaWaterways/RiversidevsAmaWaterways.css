@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 .rva-page-wrapper { width: 100%; }
-.rva-container { max-width: 1100px; margin: 0 auto; width: 100%; }
+.rva-container { max-width: var(--section-max); margin: 0 auto; width: 100%; }
 .rva-section { padding: 60px 20px; }
 .rva-bg-white { background: var(--bg-white); }
 .rva-bg-soft { background: var(--bg-soft); }
@@ -1319,7 +1319,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     margin-top: 16px !important;
 }
 .rva-faq-list {
-    max-width: 780px; margin: 28px auto 0;
+    margin: 28px auto 0;
     border-top: 1px solid rgba(39,68,114,0.08);
 }
 .rva-faq-item {

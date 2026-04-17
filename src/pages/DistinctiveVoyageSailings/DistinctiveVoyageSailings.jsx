@@ -1070,7 +1070,13 @@ const DistinctiveVoyageSailings = () => {
                   onClick={() => toggleFAQ(index)}
                 >
                   <h4>{item.q}</h4>
-                  {activeIndex === index ? <Minus size={18} /> : <Plus size={18} />}
+                  <span className="Dist_faq_icon">
+                    {activeIndex === index ? (
+                      <Minus size={20} strokeWidth={1.5} />
+                    ) : (
+                      <Plus size={20} strokeWidth={1.5} />
+                    )}
+                  </span>
                 </div>
 
                 <div className={`Dist_faq_answer ${activeIndex === index ? "active" : ""}`}>

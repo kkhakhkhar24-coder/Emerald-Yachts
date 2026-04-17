@@ -230,8 +230,6 @@ section {
   font-weight: 500;
   position: relative;
   text-align: center;
-
-
 }
 
 .Dist_past_section {
@@ -388,9 +386,6 @@ section {
     text-align: center;
     font-size: 24px;
   }
-
-
-
 }
 
 /* ================= TRUST SECTION ================= */
@@ -1643,19 +1638,29 @@ section {
 }
 
 .Dist_faq_list {
-  max-width: 850px;
+  max-width: 1000px;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .Dist_faq_item {
-  border: 1px solid #edf2f7;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  background: #f8fafc;
+  border-top: 1px solid #e4e9ee;
+  margin-bottom: 0;
+  border-radius: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.Dist_faq_item:hover {
+  background-color: transparent;
+}
+
+.Dist_faq_item:hover .Dist_faq_question h4 {
+  color: #1a3a6d;
 }
 
 .Dist_faq_question {
-  padding: 25px 30px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1663,18 +1668,27 @@ section {
 }
 
 .Dist_faq_question h4 {
-  font-size: 20px;
-  color: #1a1a1a;
+  font-size: 18px;
+  color: #2f4a6d;
   margin: 0;
   font-weight: 500;
   line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Dist_faq_icon {
+  color: #2f4a6d;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Dist_faq_answer {
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0 30px;
+  transition: all 0.3s ease;
+  padding: 0;
   opacity: 0;
 }
 
@@ -1685,11 +1699,12 @@ section {
 }
 
 .Dist_faq_answer p {
-  color: #4a5568;
-  font-size: 17px;
+  color: #274472cc;
+  font-size: 18px;
   line-height: 1.7;
-  padding-top: 20px;
-  border-top: 1px solid #edf2f7;
+  padding: 14px 0 20px 0;
+  font-weight: 300;
+  margin: 0;
 }
 
 /* ================= RESPONSIVE ================= */

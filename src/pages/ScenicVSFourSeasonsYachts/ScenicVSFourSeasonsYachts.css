@@ -20,10 +20,6 @@
     width: 100%;
 }
 
-.svf-narrow {
-    max-width: 860px;
-}
-
 /* ---- SECTION WRAPPER ---- */
 .svf-section {
     padding: 60px 20px;
