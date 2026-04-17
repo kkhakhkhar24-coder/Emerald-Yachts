@@ -2,7 +2,7 @@
 // REPLACE your full EmeraldAzzurraVsEmeraldSakara.jsx with this
 // =====================================================================
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./EmeraldAzzurraVsEmeraldSakara.css";
 import Navbar from "../../components/Navbar/Navbar";
 import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
@@ -45,6 +45,21 @@ import {
 // ── Main Component ────────────────────────────────────────────────────
 const EmeraldAzzurraVsEmeraldSakara = () => {
   const [activeFaq, setActiveFaq] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroImages = [
+    EmeraldAzzurraVsEmeraldSakara1,
+    EmeraldAzzurraVsEmeraldSakara2,
+    EmeraldAzzurraVsEmeraldSakara3,
+    EmeraldAzzurraVsEmeraldSakara4,
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
   const faqData = [
     {
       question:
@@ -424,6 +439,15 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
 
       {/* ===== HERO ===== */}
       <section className="Sakara_hero_section">
+        <div className="Sakara_hero_slider">
+          {heroImages.map((img, i) => (
+            <div
+              key={i}
+              className={`Sakara_hero_slide${i === currentSlide ? " Sakara_slide_active" : ""}`}
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))}
+        </div>
         <div className="Sakara_hero_overlay" />
         <div className="Sakara_hero_content">
           <h1>
