@@ -12,39 +12,97 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;
-}
-
-.anta_hero_bg {
-  position: absolute;
-  inset: 0;
+  padding: 120px 40px 100px;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  transition: 1s ease;
+  animation: anta-bgSlide 18s infinite ease-in-out;
 }
 
+/* Smooth background slide animation */
+@keyframes anta-bgSlide {
+
+  0%,
+  100% {
+    background-image: url('../../assets/antarctica-cruise-cost/anta1.webp');
+  }
+
+  33% {
+    background-image: url('../../assets/antarctica-cruise-cost/anta2.webp');
+  }
+
+  66% {
+    background-image: url('../../assets/antarctica-cruise-cost/anta3.webp');
+  }
+}
+
+/* Gradient overlay for better text readability */
 .anta_hero_overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
 }
 
+/* Animated particles effect */
+.anta_hero_section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: anta-particles 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes anta-particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
+
+/* CONTENT - Smooth fade-in animation */
 .anta_hero_content {
   position: relative;
   z-index: 2;
   max-width: 850px;
   text-align: center;
   color: white;
+  animation: anta-fadeInUp 1s ease-out;
+}
+
+@keyframes anta-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .anta_hero_content h1 {
   margin-bottom: 20px;
   color: #fff;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  animation: anta-fadeInUp 1s ease-out 0.3s both;
 }
 
 .anta_hero_content p {
   margin-bottom: 12px;
   color: white;
+  animation: anta-fadeInUp 0.8s ease-out 0.5s both;
 }
 
 .anta_hero_p {
@@ -85,13 +143,14 @@
   width: 100%;
 }
 
-/* BUTTONS */
+/* BUTTONS - Smooth entrance */
 .anta_hero_buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  animation: anta-fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .anta_primary_btn {
@@ -891,12 +950,10 @@
 .anta_gallery_overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(39, 68, 114, 0.9) 0%,
-    rgba(39, 68, 114, 0.2) 60%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(39, 68, 114, 0.9) 0%,
+      rgba(39, 68, 114, 0.2) 60%,
+      transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -945,9 +1002,11 @@
   .anta_gallery_section {
     padding: 60px 20px;
   }
+
   .anta_gallery_h2 {
     font-size: 32px;
   }
+
   .anta_gallery_bento_grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 240px;
@@ -959,6 +1018,7 @@
     opacity: 1;
     padding: 25px;
   }
+
   .anta_gallery_header {
     margin-bottom: 40px;
   }
@@ -968,10 +1028,12 @@
   .anta_gallery_h2 {
     font-size: 26px;
   }
+
   .anta_gallery_bento_grid {
     grid-template-columns: 1fr;
     grid-auto-rows: 260px;
   }
+
   .anta_gallery_feature,
   .anta_gallery_tall {
     grid-column: span 1;
@@ -2366,7 +2428,8 @@
 }
 
 .anta_faq_inner {
-  max-width: 800px;
+  max-width: var(--section-max);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -3143,7 +3206,8 @@
   transform: translateY(10px);
   transition: all 0.5s ease;
 }
-.anta_gallery_p{
+
+.anta_gallery_p {
   color: #fff;
 }
 

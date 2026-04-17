@@ -283,21 +283,7 @@ function FAQ() {
 
 const RiversideLuxuryCruises = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [showQuickTake, setShowQuickTake] = useState(false);
-
-  const heroImages = [
-    "luxury_river_cruise_1.png",
-    "luxury_river_cruise_2.png",
-    "luxury_river_cruise_3.png",
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   const toggleFaq = (index) => {
     setExpandedFaq(expandedFaq === index ? null : index);
@@ -328,68 +314,47 @@ const RiversideLuxuryCruises = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="riv_hero_viewport">
-        <div className="riv_hero_image_slider">
-          {heroImages.map((img, index) => (
-            <div
-              key={index}
-              className={`riv_hero_bg_slide ${currentSlide === index ? "riv_active_slide" : ""}`}
-              style={{
-                backgroundImage: `url(/${img})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            ></div>
-          ))}
-        </div>
+      <section className="riv_hero_section">
+        <div className="riv_hero_content">
+          <span className="riv_hero_eyebrow">
+            Boutique River Cruise Guide
+          </span>
+          <h1 className="riv_hero_main_h1">
+            Riverside Luxury Cruises <br /> A Boutique Luxury River Cruise Experience
+          </h1>
+          <p className="riv_hero_sub_p">
+            Spacious ships, elevated service, and a refined approach to European
+            river cruising
+          </p>
 
-        <div className="riv_hero_overlay_content">
-          <div className="riv_container_main">
-            <div className="riv_hero_text_box">
-              <h1 className="riv_hero_main_h1">
-                Riverside Luxury Cruises: A Boutique Luxury River Cruise
-                Experience in Europe
-              </h1>
-              <p className="riv_hero_sub_p">
-                Spacious ships, elevated service, and a refined approach to
-                European river cruising
-              </p>
+          <p className="riv_hero_lead">
+            Riverside Luxury Cruises represents a new standard of boutique
+            luxury on Europe’s waterways. Built on the legacy of the most
+            spacious ships in river cruising, the experience is defined by
+            refined service and a commitment to architectural elegance.
+          </p>
 
-              <div className="riv_hero_read_more_outer">
-                <button
-                  className="riv_hero_read_more_btn"
-                  onClick={() => setShowQuickTake(!showQuickTake)}
-                >
-                  {showQuickTake ? "Show Less" : "Read More"}
-                  {showQuickTake ? (
-                    <ChevronUp size={16} />
-                  ) : (
-                    <ChevronDown size={16} />
-                  )}
-                </button>
+          {/* This container expands when the button below is clicked */}
+          <div className={`riv_hero_details ${showQuickTake ? "expanded" : ""}`}>
+            <p className="riv_hero_note">
+              Riverside Luxury Cruises is ideal for experienced travelers and
+              luxury clients seeking a quieter, more refined onboard
+              experience than traditional river cruise lines.
+            </p>
+          </div>
 
-                {showQuickTake && (
-                  <div className="riv_hero_quick_take_dropdown">
-                    <p>
-                      Riverside Luxury Cruises is one of the best boutique
-                      luxury river cruise lines in Europe, ideal for experienced
-                      travelers who want more space, elevated service, and a
-                      quieter onboard experience than traditional river cruises.
-                    </p>
-                  </div>
-                )}
-              </div>
+          <button
+            className="riv_hero_read_more"
+            onClick={() => setShowQuickTake(!showQuickTake)}
+          >
+            {showQuickTake ? "Read Less" : "Read More"}
+          </button>
 
-              <div className="riv_hero_button_group">
-                <button className="riv_hero_btn_filled">
-                  View Riverside Pricing
-                </button>
-                <button className="riv_hero_btn_transparent">
-                  Compare River Cruise Lines
-                </button>
-              </div>
-            </div>
+          <div className="riv_hero_btns">
+            <button className="riv_btn_primary">View Riverside Pricing</button>
+            <button className="riv_btn_secondary">
+              Compare River Cruise Lines
+            </button>
           </div>
         </div>
       </section>

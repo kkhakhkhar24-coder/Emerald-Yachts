@@ -25,17 +25,7 @@ import GalleryPenguins from "../../assets/antarctica-cruise-cost/penguins-in-ant
 import GalleryWhale from "../../assets/antarctica-cruise-cost/whale-diving-antarctica.png";
 
 const AntarcticaCostPage = () => {
-  const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
-
-  const images = [anta1, anta2, anta3];
-
-  useEffect(() => {
-    const slider = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -227,11 +217,6 @@ const AntarcticaCostPage = () => {
 
       {/* ===== SECTION 1 — HERO ===== */}
       <section className="anta_hero_section">
-        <div
-          className="anta_hero_bg"
-          style={{ backgroundImage: `url(${images[current]})` }}
-        ></div>
-
         <div className="anta_hero_overlay"></div>
 
         <div className="anta_hero_content">

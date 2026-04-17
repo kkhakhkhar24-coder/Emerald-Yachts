@@ -337,19 +337,6 @@ const RiversideVsViking = () => {
     // Hero image slider
     const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
 
-    React.useEffect(() => {
-        const slides = document.querySelectorAll('.riv_hero_bg_slide');
-        let currentSlide = 0;
-
-        const interval = setInterval(() => {
-            slides[currentSlide].classList.remove('riv_active_slide');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('riv_active_slide');
-        }, 6000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     const toggleReadMore = () => {
         setIsReadMoreOpen(!isReadMoreOpen);
     };
@@ -375,47 +362,37 @@ const RiversideVsViking = () => {
 
             {/* HERO SECTION */}
             <section className="riv_hero_viewport">
-                <div className="riv_hero_image_slider">
-                    <div className="riv_hero_bg_slide riv_active_slide" style={{ backgroundImage: `url(${HeroImage1})` }}></div>
-                    <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage2})` }}></div>
-                    <div className="riv_hero_bg_slide" style={{ backgroundImage: `url(${HeroImage3})` }}></div>
-                </div>
+                <div className="riv_hero_content">
+                    <span className="river-hero-eyebrow">River Cruise Planning</span>
+                    <h1 className="riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
+                    <p className="riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
 
-                <div className="riv_hero_overlay_content">
-                    <div className="riv_container_90">
-                        <div className="riv_hero_text_box">
-                            <span className="river-hero-eyebrow">River Cruise Planning</span>
-                            <h1 className="riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
-                            <p className="riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
+                    {/* QUICK ANSWER BOX */}
+                    <div className="riv_hero_read_more_outer">
+                        <button
+                            className="riv_hero_read_more_btn"
+                            onClick={toggleReadMore}
+                        >
+                            {isReadMoreOpen ? 'Read Less' : 'Read More'}
+                            {isReadMoreOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </button>
 
-                            {/* QUICK ANSWER BOX */}
-                            <div className="riv_hero_read_more_outer">
-                                <button
-                                    className="riv_hero_read_more_btn"
-                                    onClick={toggleReadMore}
-                                >
-                                    {isReadMoreOpen ? 'Read Less' : 'Read More'}
-                                    {isReadMoreOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                                </button>
-
-                                <div className={`river-hero-details ${isReadMoreOpen ? 'expanded' : ''}`}>
-                                    <div className="river-quick-answer">
-                                        <p className="river-qa-main">
-                                            The biggest mistake travelers make when comparing these two brands is assuming they are choosing between equals.
-                                        </p>
-                                        <p className="river-qa-emphasis">They are not.</p>
-                                        <p className="river-qa-detail">
-                                            Riverside Luxury Cruises is a boutique luxury river cruise experience with more space, refinement, and a quieter onboard atmosphere. Viking River Cruises is a premium river cruise line designed for first-time travelers who want structure, consistency, and ease.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="riv_hero_button_group">
-                                <button className="riv_hero_btn_filled">Compare River Cruise Lines</button>
-                                <button className="riv_hero_btn_transparent">Plan My River Cruise</button>
+                        <div className={`river-hero-details ${isReadMoreOpen ? 'expanded' : ''}`}>
+                            <div className="river-quick-answer">
+                                <p className="river-qa-main">
+                                    The biggest mistake travelers make when comparing these two brands is assuming they are choosing between equals.
+                                </p>
+                                <p className="river-qa-emphasis">They are not.</p>
+                                <p className="river-qa-detail">
+                                    Riverside Luxury Cruises is a boutique luxury river cruise experience with more space, refinement, and a quieter onboard atmosphere. Viking River Cruises is a premium river cruise line designed for first-time travelers who want structure, consistency, and ease.
+                                </p>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="riv_hero_button_group">
+                        <button className="riv_hero_btn_filled">Compare River Cruise Lines</button>
+                        <button className="riv_hero_btn_transparent">Plan My River Cruise</button>
                     </div>
                 </div>
             </section>

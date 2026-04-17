@@ -101,17 +101,8 @@ const AntarcticaPage = () => {
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
-  const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
-
   const images = [scenisilver1, scenisilver2, scenisilver3];
-
-  useEffect(() => {
-    const slider = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -331,49 +322,39 @@ const AntarcticaPage = () => {
       </Helmet>
       <Navbar />
 
-      <section className="anta_hero_section">
-        <div
-          className="anta_hero_bg"
-          style={{ backgroundImage: `url(${images[current]})` }}
-        ></div>
-
-        <div className="anta_hero_overlay"></div>
-
-        <div className="anta_hero_content">
+      <section className="senianta-hero">
+        <div className="senianta-hero-content">
+          <span className="senianta-hero-eyebrow">
+            Luxury Expedition Comparison
+          </span>
           <h1>Scenic vs Silversea Antarctica</h1>
 
-          <p className="anta_hero_p">
-            Choosing the right luxury senianta-expedition experience
+          <p className="senianta-hero-sub">
+            Choosing the right luxury expedition experience
           </p>
 
-          <p>
+          <p className="senianta-hero-lead">
             The difference is not simply in features. It is in how you want to
-            experience the journey.
-          </p>
-          <p>
-            Choosing the right senianta-expedition cruise line for Antarctica
-            impacts more than your itinerary. It shapes how you experience the
-            destination from start to finish.
+            experience the journey. Choosing the right expedition cruise line
+            for Antarctica impacts more than your itinerary. It shapes how you
+            experience the destination from start to finish.
           </p>
 
-          {readMore && (
-            <>
-              <p>
-                Two of the most commonly compared options are Scenic Luxury
-                Cruises &amp; Tours and Silversea Cruises. Both operate at the
-                highest level of the market. Both provide access to Antarctica.
-              </p>
-            </>
-          )}
-
-          <div className="anta_readmore_wrapper">
-            <button
-              className="anta_readmore_btn"
-              onClick={() => setReadMore(!readMore)}
-            >
-              {readMore ? "Read Less" : "Read More"}
-            </button>
+          {/* This container expands when the button below is clicked */}
+          <div className={`senianta-hero-details ${readMore ? "expanded" : ""}`}>
+            <p className="senianta-hero-note">
+              Two of the most commonly compared options are Scenic Luxury
+              Cruises & Tours and Silversea Cruises. Both operate at the
+              highest level of the market. Both provide access to Antarctica.
+            </p>
           </div>
+
+          <button
+            className="senianta-hero-read-more"
+            onClick={() => setReadMore(!readMore)}
+          >
+            {readMore ? "Read Less" : "Read More"}
+          </button>
 
           <div className="senianta-hero-buttons senianta-hero-buttons--centered">
             <button className="senianta-primary senianta-primary--no-offset">

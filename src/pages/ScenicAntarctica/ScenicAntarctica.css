@@ -690,8 +690,9 @@
 }
  
 .Scenic-faq-inner {
-  max-width: 900px;
+  max-width: var(--section-max);
   width: 100%;
+  margin: 0 auto;
 }
  
 .Scenic-faq-inner h2 {

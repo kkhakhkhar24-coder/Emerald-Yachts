@@ -2,7 +2,7 @@
 // REPLACE your full EmeraldAzzurraVsEmeraldSakara.jsx with this
 // =====================================================================
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./EmeraldAzzurraVsEmeraldSakara.css";
 import Navbar from "../../components/Navbar/Navbar";
 import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
@@ -44,7 +44,6 @@ import {
 
 // ── Main Component ────────────────────────────────────────────────────
 const EmeraldAzzurraVsEmeraldSakara = () => {
-  const [current, setCurrent] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
   const faqData = [
     {
@@ -110,18 +109,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
-  const images = [
-    EmeraldAzzurraVsEmeraldSakara1,
-    EmeraldAzzurraVsEmeraldSakara2,
-    EmeraldAzzurraVsEmeraldSakara3,
-  ];
-
-  useEffect(() => {
-    const slider = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -437,15 +424,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
 
       {/* ===== HERO ===== */}
       <section className="Sakara_hero_section">
-        <div className="Sakara_hero_bg_wrapper">
-          {images.map((img, i) => (
-            <div
-              key={i}
-              className={`Sakara_hero_bg ${i === current ? "active" : ""}`}
-              style={{ backgroundImage: `url(${img})` }}
-            />
-          ))}
-        </div>
         <div className="Sakara_hero_overlay" />
         <div className="Sakara_hero_content">
           <h1>
@@ -466,8 +444,6 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
             actually travel.
           </p>
         </div>
-
-        {/* Slide dots */}
       </section>
 
       {/* ===== AUTHORITY SECTION ===== */}

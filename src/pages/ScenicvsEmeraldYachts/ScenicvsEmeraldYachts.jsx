@@ -24,11 +24,8 @@ import Scenicdiff from "../../assets/FourthPage/Scenicdiff.JPG";
 import Emeralddiff from "../../assets/FourthPage/Emeralddiff.jpg";
 
 function YachtsComparison() {
-  const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const [activeFaq, setActiveFaq] = useState(null);
-
-  const images = [FourthPage2, FourthPage1, FourthPage3];
 
   const faqData = [
     {
@@ -97,12 +94,7 @@ function YachtsComparison() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  useEffect(() => {
-    const slider = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
+
 
   return (
     <div>
@@ -337,11 +329,6 @@ function YachtsComparison() {
 
       {/* HERO */}
       <section className="Yachts_hero_section">
-        <div
-          className="Yachts_hero_bg"
-          style={{ backgroundImage: `url(${images[current]})` }}
-        ></div>
-
         <div className="Yachts_hero_overlay"></div>
 
         <div className="Yachts_hero_content">

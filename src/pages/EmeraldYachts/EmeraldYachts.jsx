@@ -32,10 +32,7 @@ import Refined_Luxury from "../../assets/HomePage/Refined_Luxury.jpeg";
 import Curated_Journeys from "../../assets/HomePage/Curated_Journeys.jpeg";
 
 const LuxuryPage = () => {
-  const [current, setCurrent] = useState(0);
   const [readMore, setReadMore] = useState(false);
-
-  const images = [HomePage1, HomePage3, HomePage4];
 
   const brands = [
     { name: "The Washington Post", logo: Logo1 },
@@ -47,12 +44,7 @@ const LuxuryPage = () => {
     { name: "The Wall Street Journal", logo: Logo7 },
   ];
 
-  useEffect(() => {
-    const slider = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(slider);
-  }, [images.length]);
+
 
   return (
     <>
@@ -141,15 +133,6 @@ const LuxuryPage = () => {
 
       {/* HERO */}
       <section className="Emerald_hero_section">
-        {/* BACKGROUND WRAPPER */}
-        <div className="Emerald_hero_bg_wrapper">
-          <div
-            key={current}
-            className="Emerald_hero_bg fade"
-            style={{ backgroundImage: `url(${images[current]})` }}
-          ></div>
-        </div>
-
         {/* OVERLAY */}
         <div className="Emerald_hero_overlay"></div>
 

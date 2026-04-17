@@ -1,84 +1,100 @@
 /* ================= HERO ================= */
-/* ================= HERO ================= */
 .Emerald_hero_section {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;
+  padding: 120px 40px 100px;
   overflow: hidden;
-}
-
-/* BG WRAPPER */
-.Emerald_hero_bg_wrapper {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-/* BG IMAGE */
-.Emerald_hero_bg {
-  position: absolute;
-  inset: 0;
   background-size: cover;
   background-position: center;
+  animation: emerald-bgSlide 18s infinite ease-in-out;
 }
 
-/* FADE + ZOOM EFFECT */
-.Emerald_hero_bg.fade {
-  opacity: 0;
-  animation: emeraldFade 1.5s ease forwards,
-    emeraldZoom 8s ease forwards;
-}
-
-/* FADE */
-@keyframes emeraldFade {
-  to {
-    opacity: 1;
+/* Smooth background slide animation */
+@keyframes emerald-bgSlide {
+  0%, 100% {
+    background-image: url('../../assets/HomePage/HomePage1.webp');
+  }
+  33% {
+    background-image: url('../../assets/HomePage/HomePage3.webp');
+  }
+  66% {
+    background-image: url('../../assets/HomePage/HomePage4.webp');
   }
 }
 
-/* ZOOM (Luxury feel) */
-@keyframes emeraldZoom {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.08);
-  }
-}
-
-/* OVERLAY */
+/* Gradient overlay for better text readability */
 .Emerald_hero_overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
 }
 
-/* CONTENT */
+/* Animated particles effect */
+.Emerald_hero_section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: emerald-particles 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes emerald-particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
+
+/* CONTENT - Smooth fade-in animation */
 .Emerald_hero_content {
   position: relative;
   z-index: 2;
   max-width: 850px;
   text-align: center;
   color: white;
+  animation: emerald-fadeInUp 1s ease-out;
 }
 
-/* H1 */
+@keyframes emerald-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* H1 - Smooth entrance */
 .Emerald_hero_content h1 {
   font-size: 52px;
   margin-bottom: 20px;
   color: #fff;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  animation: emerald-fadeInUp 1s ease-out 0.3s both;
 }
 
-/* P */
+/* P - Staggered animations */
 .Emerald_hero_content p {
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 12px;
   color: #fff;
+  animation: emerald-fadeInUp 0.8s ease-out 0.5s both;
 }
 
 /* READ MORE */
@@ -112,13 +128,14 @@
   width: 100%;
 }
 
-/* BUTTONS */
+/* BUTTONS - Smooth entrance */
 .Emerald_hero_buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  animation: emerald-fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .Emerald_primary_btn {
@@ -2122,7 +2139,8 @@
 }
 
 .emerald_faq_inner {
-  max-width: 800px;
+  max-width: var(--section-max);
+  width: 100%;
   margin: 0 auto;
 }
 

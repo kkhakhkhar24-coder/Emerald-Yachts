@@ -141,6 +141,30 @@
     z-index: 1;
 }
 
+.svf-hero::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: svf-particles 60s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes svf-particles {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100px) rotate(5deg);
+    }
+}
+
 @keyframes svfSlide {
 
     0%,
@@ -162,19 +186,45 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    animation: svfUp 0.9s ease-out;
 }
 
-@keyframes svfUp {
+@keyframes svf-fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(36px);
+        transform: translateY(40px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.svf-hero-inner {
+    animation: svf-fadeInUp 1s ease-out;
+}
+
+.svf-eyebrow {
+    animation: svf-fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.svf-h1 {
+    animation: svf-fadeInUp 1s ease-out 0.3s both;
+}
+
+.svf-hero-lead {
+    animation: svf-fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.svf-hero-details {
+    animation: svf-fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.svf-hero-toggle {
+    animation: svf-fadeInUp 0.8s ease-out 0.65s both;
+}
+
+.svf-hero-btns {
+    animation: svf-fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .svf-eyebrow {

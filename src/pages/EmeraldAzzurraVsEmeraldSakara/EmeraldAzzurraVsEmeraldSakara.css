@@ -48,34 +48,28 @@ p {
     overflow: hidden;
 }
 
-/* BG — all images stacked, only active one visible */
-.Sakara_hero_bg_wrapper {
-    position: absolute;
-    inset: 0;
+.Sakara_hero_section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 80px;
     overflow: hidden;
-}
-
-.Sakara_hero_bg {
-    position: absolute;
-    inset: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transition: opacity 1.2s ease;
+    animation: Sakara-bgSlide 18s infinite ease-in-out;
 }
 
-.Sakara_hero_bg.active {
-    opacity: 1;
-    animation: SakaraZoom 8s ease forwards;
-}
-
-@keyframes SakaraZoom {
-    from {
-        transform: scale(1);
+@keyframes Sakara-bgSlide {
+    0%, 100% {
+        background-image: url('../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg');
     }
-
-    to {
-        transform: scale(1.06);
+    33% {
+        background-image: url('../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg');
+    }
+    66% {
+        background-image: url('../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg');
     }
 }
 
@@ -83,11 +77,66 @@ p {
 .Sakara_hero_overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.55) 0%,
-            rgba(0, 0, 0, 0.45) 60%,
-            rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
     z-index: 1;
+}
+
+/* PARTICLE EFFECT */
+.Sakara_hero_section::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: Sakara-particles 60s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes Sakara-particles {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100px) rotate(5deg);
+    }
+}
+
+/* STAGGERED CONTENT ANIMATIONS */
+@keyframes Sakara-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Sakara_hero_content {
+    animation: Sakara-fadeInUp 1s ease-out;
+}
+
+.Sakara_hero_content h1 {
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    animation: Sakara-fadeInUp 1s ease-out 0.3s both;
+}
+
+.Sakara_hero_sub {
+    animation: Sakara-fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.Sakara_hero_buttons {
+    animation: Sakara-fadeInUp 0.8s ease-out 0.7s both;
+}
+
+.Sakara_hero_cta_sub {
+    animation: Sakara-fadeInUp 0.8s ease-out 0.8s both;
 }
 
 /* CONTENT */
@@ -169,32 +218,7 @@ p {
     font-style: italic;
 }
 
-/* SLIDE DOTS */
-.Sakara_hero_dots {
-    position: absolute;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    display: flex;
-    gap: 8px;
-}
-
-.Sakara_hero_dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-    padding: 0;
-}
-
-.Sakara_hero_dot.active {
-    background: #274472;
-    transform: scale(1.3);
-}
+/* SLIDE DOTS - REMOVED (no longer needed with CSS animation) */
 
 /* =============================================================
    VIDEO SECTION

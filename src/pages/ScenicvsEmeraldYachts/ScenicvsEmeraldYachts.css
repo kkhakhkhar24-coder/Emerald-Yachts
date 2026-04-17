@@ -1,50 +1,96 @@
 .Yachts_hero_section {
   position: relative;
   min-height: 100vh;
-  /* ✅ FIXED */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;
-  /* navbar space */
-}
-
-/* BG */
-.Yachts_hero_bg {
-  position: absolute;
-  inset: 0;
+  padding: 120px 40px 100px;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  transition: 1s ease;
+  animation: yachts-bgSlide 18s infinite ease-in-out;
 }
 
-/* OVERLAY */
+/* Smooth background slide animation */
+@keyframes yachts-bgSlide {
+  0%, 100% {
+    background-image: url('../../assets/FourthPage/FourthPage2.jpeg');
+  }
+  33% {
+    background-image: url('../../assets/FourthPage/FourthPage1.jpg');
+  }
+  66% {
+    background-image: url('../../assets/FourthPage/FourthPage3.jpg');
+  }
+}
+
+/* Gradient overlay for better text readability */
 .Yachts_hero_overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
 }
 
-/* CONTENT */
+/* Animated particles effect */
+.Yachts_hero_section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: yachts-particles 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes yachts-particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
+
+/* CONTENT - Smooth fade-in animation */
 .Yachts_hero_content {
   position: relative;
   z-index: 2;
   max-width: 850px;
-  /* ✅ FIXED */
   text-align: center;
   color: white;
+  animation: yachts-fadeInUp 1s ease-out;
 }
 
-/* H1 */
+@keyframes yachts-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* H1 - Smooth entrance */
 .Yachts_hero_content h1 {
   margin-bottom: 20px;
   color: #fff;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  animation: yachts-fadeInUp 1s ease-out 0.3s both;
 }
 
-/* P */
+/* P - Staggered animations */
 .Yachts_hero_content p {
   margin-bottom: 12px;
   color: #fff;
+  animation: yachts-fadeInUp 0.8s ease-out 0.5s both;
 }
 
 .Yachts_hero_p {
@@ -85,13 +131,14 @@
   width: 100%;
 }
 
-/* BUTTONS */
+/* BUTTONS - Smooth entrance */
 .Yachts_hero_buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  animation: yachts-fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .Yachts_primary_btn {

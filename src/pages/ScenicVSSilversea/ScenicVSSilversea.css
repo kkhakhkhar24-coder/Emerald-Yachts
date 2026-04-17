@@ -5,146 +5,246 @@
   flex-direction: column;
   align-items: center;
 }
- 
+
 .senianta-antarctica-senianta-hero .senianta-lead,
 .senianta-antarctica-senianta-hero .senianta-sub,
 .senianta-antarctica-senianta-hero .senianta-extra-text {
   text-align: center;
 }
- 
+
 .senianta-hero-buttons--centered {
   justify-content: center;
   margin: 0 auto !important;
 }
- 
+
 .senianta-primary--no-offset {
   margin-left: 0 !important;
 }
- 
+
 .senianta-hero {
-  min-height: 115vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 160px 80px;
+  padding: 140px 40px 100px;
   position: relative;
-  animation: bgSlider 15s infinite ease-in-out;
+  text-align: center;
   background-size: cover;
   background-position: center;
+  animation: senianta-bgSlider 18s infinite ease-in-out;
+  overflow: hidden;
 }
 
 .senianta-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right,
-      rgba(0, 0, 0, 0.75) 30%,
-      rgba(0, 0, 0, 0.4) 60%,
-      rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 1;
 }
 
+/* Animated particles effect */
+.senianta-hero::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: senianta-snowfall 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
 
+@keyframes senianta-bgSlider {
+
+  0%,
+  100% {
+    background-image: url('../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpg');
+  }
+
+  33% {
+    background-image: url('../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpg');
+  }
+
+  66% {
+    background-image: url('../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg');
+  }
+}
+
+@keyframes senianta-snowfall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
 
 .senianta-hero-content {
-  max-width: 990px;
+  max-width: 850px;
+  width: 100%;
   position: relative;
   z-index: 2;
+  animation: senianta-fadeInUp 1s ease-out;
+}
+
+@keyframes senianta-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.senianta-hero-eyebrow {
+  font-size: 12px !important;
+  letter-spacing: 4px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  margin-bottom: 24px;
+  display: block;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .senianta-hero h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  font-size: 60px !important;
+  text-align: center;
+}
+
+.senianta-hero-sub {
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   margin-bottom: 35px;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px !important;
   text-align: center;
 }
 
-.senianta-extra-text {
-  line-height: 1.35;
-  color: white;
-  text-align: center;
-  margin-bottom: 12px;
-
-}
-
-.senianta-lead {
-  font-size: 24px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  font-weight: 500;
-  color: white;
-
-}
-
-.senianta-sub {
-  font-size: 18px;
-  opacity: 0.75;
-  margin-bottom: 25px;
-  font-style: italic;
-  color: white;
+.senianta-hero-lead {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
+  color: #ffffff !important;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif !important;
   text-align: center;
 }
 
-.senianta-hero-content .senianta-lead:nth-of-type(2),
-.senianta-hero-content .senianta-lead:nth-of-type(3) {
-  font-size: 15px;
-  line-height: 1.7;
-  opacity: 0.9;
-  max-width: 620px;
+/* Hero Details with Read More Interaction */
+.senianta-hero-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.senianta-hero-details.expanded {
+  max-height: 600px;
+  margin-top: 20px;
+}
+
+.senianta-hero-note {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 300 !important;
+  margin-bottom: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.senianta-hero-read-more {
+  display: inline-block;
+  margin: 10px 0 35px 0;
+  background: transparent;
+  border: none;
+  color: #ffffff !important;
+  padding: 8px 0;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif !important;
+  border-bottom: 1px solid #ffffff;
+}
+
+.senianta-hero-read-more:hover {
+  color: #ffffff !important;
+  border-bottom-color: #ffffff;
 }
 
 .senianta-hero-buttons {
   display: flex;
   gap: 20px;
-  margin-top: 20px !important;
+  margin-top: 40px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .senianta-primary {
-  padding: 15px 30px;
-  background: #fff;
-  color: #1a1a1a;
+  background: #ffffff;
+  color: #000000;
+  padding: 18px 44px;
   border: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   cursor: pointer;
-  border-radius: 3px;
-  transition: background 0.2s, color 0.2s;
-  margin-left: 0;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 1.5px !important;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .senianta-primary:hover {
   background: #274472;
-  color: #fff;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .senianta-secondary {
   background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 14px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 18px 44px;
   cursor: pointer;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  transition: 0.3s;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  letter-spacing: 1.5px !important;
+  transition: all 0.3s ease;
+  text-transform: uppercase !important;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .senianta-secondary:hover {
-  background: white;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.senianta-hero,
-.senianta-hero-content,
-.senianta-hero-buttons {
-  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 900px) {
@@ -226,7 +326,7 @@
 
 
   .senianta-hero h1 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 
   .senianta-lead,
@@ -427,14 +527,16 @@
 
 .senianta-differences {
   padding: 70px 20px 80px;
-  background: #f8fafc; /* Subtle premium soft background */
+  background: #f8fafc;
+  /* Subtle premium soft background */
   display: flex;
   justify-content: center;
 }
 
 .senianta-differences-bg,
 .senianta-differences::after {
-  display: none; /* Removed the background image and overlay */
+  display: none;
+  /* Removed the background image and overlay */
 }
 
 .senianta-differences-content {
@@ -523,7 +625,8 @@
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  stroke: #274472; /* Elegant gold accent for checkmarks */
+  stroke: #274472;
+  /* Elegant gold accent for checkmarks */
   stroke-width: 2;
   fill: none;
   margin-top: 2px;
@@ -580,7 +683,7 @@
   .senianta-differences-card h2 {
     font-size: 28px;
   }
-  
+
   .senianta-differences-columns {
     flex-direction: column;
     gap: 20px;
@@ -589,7 +692,7 @@
   .senianta-diff-col {
     padding: 30px 20px;
   }
-  
+
   .senianta-diff-vs {
     margin: 10px 0;
   }
@@ -609,7 +712,8 @@
   .senianta-differences-senianta-emphasis {
     font-size: 16px;
   }
-  .senianta-diff-brand{
+
+  .senianta-diff-brand {
     font-size: 24px !important;
   }
 }
@@ -708,11 +812,13 @@
   .senianta-ship-exp-image {
     width: 100%;
     height: 350px;
-    order: 1; /* Image on top */
+    order: 1;
+    /* Image on top */
   }
 
   .senianta-ship-exp-text {
-    order: 2; /* Text below image */
+    order: 2;
+    /* Text below image */
     padding: 0 15px;
   }
 
@@ -908,7 +1014,8 @@
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   display: flex;
-  background: #274472; /* Fallback */
+  background: #274472;
+  /* Fallback */
 }
 
 .senianta-value-hero-img {
@@ -918,7 +1025,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center bottom; /* Keep ship visible */
+  object-position: center bottom;
+  /* Keep ship visible */
   z-index: 1;
 }
 
@@ -1085,12 +1193,12 @@
   .senianta-pricing-value {
     padding: 60px 15px;
   }
-  
+
 
   .senianta-brand-value-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .senianta-pricing-intro {
     font-size: 17px;
     margin-bottom: 40px;
@@ -1411,11 +1519,15 @@
 }
 
 @media (max-width: 768px) {
-  .senianta-consultant-tip p { font-size: 17px; }
+  .senianta-consultant-tip p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
-  .senianta-consultant-tip p { font-size: 16px; }
+  .senianta-consultant-tip p {
+    font-size: 16px;
+  }
 }
 
 .senianta-consultant-tip strong {
@@ -1440,13 +1552,14 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .senianta-mistakes-list {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 900px) {
+
   .senianta-pricing-value-inner h2,
   .senianta-drake-passage-inner h2,
   .senianta-mistakes-inner h2 {
@@ -1460,12 +1573,12 @@
     font-size: 17px;
     text-align: center;
   }
-  
+
   .senianta-choice-card h2 {
     text-align: center;
     font-size: 28px;
   }
-  
+
   .senianta-choice-card h2::after {
     left: 50%;
     transform: translateX(-50%);
@@ -1473,6 +1586,7 @@
 }
 
 @media (max-width: 480px) {
+
   .senianta-pricing-value-inner h2,
   .senianta-drake-passage-inner h2,
   .senianta-mistakes-inner h2 {
@@ -1856,21 +1970,28 @@
 }
 
 @media (max-width: 768px) {
-  .senianta-why-story p { font-size: 17px;
-  text-align: center; }
-  .senianta-lead-expertise{
+  .senianta-why-story p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .senianta-lead-expertise {
     font-size: 20px !important;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .senianta-why-story p { font-size: 16px; }
-  .senianta-lead-expertise{
+  .senianta-why-story p {
+    font-size: 16px;
+  }
+
+  .senianta-lead-expertise {
     font-size: 16px !important;
     text-align: center;
   }
-  .senianta-why-benefits-grid h3{
+
+  .senianta-why-benefits-grid h3 {
     font-size: 20px;
   }
 }
@@ -2080,8 +2201,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media(max-width: 480px){
-  .senianta-auth-stat-item .senianta-stat-val{
+
+@media(max-width: 480px) {
+  .senianta-auth-stat-item .senianta-stat-val {
     font-size: 25px;
   }
 }
@@ -2099,8 +2221,9 @@
 }
 
 .senianta-faq-inner {
-  max-width: 900px;
+  max-width: var(--section-max);
   width: 100%;
+  margin: 0 auto;
 }
 
 .senianta-faq-inner h2 {
@@ -2140,8 +2263,8 @@
   padding: 20px 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-    color: #2f4a6d;
-    font-weight: 500;
+  color: #2f4a6d;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -2154,11 +2277,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: none; /* Icons swapped in JSX, no rotate needed */
+  transition: none;
+  /* Icons swapped in JSX, no rotate needed */
 }
 
 .senianta-faq-item.senianta-active .senianta-faq-icon {
-  transform: none; /* Icons swapped in JSX, no rotate needed */
+  transform: none;
+  /* Icons swapped in JSX, no rotate needed */
 }
 
 .senianta-faq-answer {
@@ -2168,7 +2293,8 @@
 }
 
 .senianta-faq-item.senianta-active .senianta-faq-answer {
-  max-height: 500px; /* Reduced for better animation feel */
+  max-height: 500px;
+  /* Reduced for better animation feel */
   padding-bottom: 35px;
 }
 
@@ -2183,18 +2309,20 @@
 }
 
 @media (max-width: 480px) {
-  .senianta-faq-answer p { font-size: 16px; }
+  .senianta-faq-answer p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
   .senianta-faq-section {
     padding: 50px 15px 60px;
   }
-  
+
   .senianta-faq-inner h2 {
     font-size: 32px;
   }
-  
+
   .senianta-faq-question {
     font-size: 16px;
     padding: 20px 0;
@@ -2209,7 +2337,7 @@
 .senianta-final-reach {
   position: relative;
   padding: 100px 20px;
-   background: url('../../assets/scenic-vs-silversea-antarctica/scenisilver6.webp') center/cover no-repeat;
+  background: url('../../assets/scenic-vs-silversea-antarctica/scenisilver6.webp') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2255,13 +2383,23 @@
 }
 
 @media (max-width: 768px) {
-  .senianta-final-reach h2 { font-size: 32px; }
-  .senianta-final-reach p { font-size: 17px; }
+  .senianta-final-reach h2 {
+    font-size: 32px;
+  }
+
+  .senianta-final-reach p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
-  .senianta-final-reach h2 { font-size: 26px; }
-  .senianta-final-reach p { font-size: 16px; }
+  .senianta-final-reach h2 {
+    font-size: 26px;
+  }
+
+  .senianta-final-reach p {
+    font-size: 16px;
+  }
 }
 
 .senianta-final-reach p {
@@ -2283,7 +2421,8 @@
 @media (max-width: 1024px) {
   .senianta-final-reach {
     padding: 120px 30px;
-    background-attachment: scroll; /* Fixed is buggy on mobile */
+    background-attachment: scroll;
+    /* Fixed is buggy on mobile */
   }
 }
 
@@ -2306,7 +2445,9 @@
     gap: 40px;
   }
 
-  .senianta-value-grid, .senianta-steps-grid, .senianta-verdict-container {
+  .senianta-value-grid,
+  .senianta-steps-grid,
+  .senianta-verdict-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -2315,11 +2456,13 @@
     flex-direction: column;
     gap: 40px;
   }
+
   .senianta-why-book-right {
     order: -1;
     width: 100%;
     align-items: center;
   }
+
   .senianta-auth-stats-grid {
     margin: 0 auto;
   }
@@ -2340,9 +2483,21 @@
 
 /* --- TABLET STANDARDIZATION (1024PX) --- */
 @media (max-width: 1024px) {
-  .senianta-hero, .senianta-glance, .senianta-differences, .senianta-ship-exp, .senianta-expedition, 
-  .senianta-pricing-value, .senianta-drake-passage, .senianta-choice-section, .senianta-mistakes, 
-  .senianta-expert-rec, .senianta-what-next, .senianta-why-book, .senianta-author-proof, .senianta-faq-section {
+
+  .senianta-hero,
+  .senianta-glance,
+  .senianta-differences,
+  .senianta-ship-exp,
+  .senianta-expedition,
+  .senianta-pricing-value,
+  .senianta-drake-passage,
+  .senianta-choice-section,
+  .senianta-mistakes,
+  .senianta-expert-rec,
+  .senianta-what-next,
+  .senianta-why-book,
+  .senianta-author-proof,
+  .senianta-faq-section {
     padding: 50px 15px 60px;
   }
 
@@ -2366,14 +2521,20 @@
     margin-top: 35px;
   }
 
-  .senianta-primary, .senianta-secondary {
+  .senianta-primary,
+  .senianta-secondary {
     width: 100%;
     max-width: 320px;
   }
 
-  .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
-  .senianta-faq-inner h2, .senianta-mistakes-inner h2, .senianta-glance-inner h2,
-  .senianta-pricing-value-inner h2, .senianta-drake-passage-inner h2 {
+  .senianta-expert-inner h2,
+  .senianta-what-next-inner h2,
+  .senianta-why-book-inner h2,
+  .senianta-faq-inner h2,
+  .senianta-mistakes-inner h2,
+  .senianta-glance-inner h2,
+  .senianta-pricing-value-inner h2,
+  .senianta-drake-passage-inner h2 {
     font-size: 28px;
     margin-bottom: 35px;
   }
@@ -2383,8 +2544,12 @@
     margin-top: 20px;
   }
 
-  .senianta-value-grid, .senianta-steps-grid, .senianta-verdict-container, 
-  .senianta-brand-senianta-comparison-grid, .senianta-mistakes-grid, .senianta-why-benefits-grid {
+  .senianta-value-grid,
+  .senianta-steps-grid,
+  .senianta-verdict-container,
+  .senianta-brand-senianta-comparison-grid,
+  .senianta-mistakes-grid,
+  .senianta-why-benefits-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -2395,121 +2560,161 @@
 }
 
 /* --- MOBILE LANDSCAPE (768PX) --- */
-@media (max-width: 768px) {
-  .senianta-hero-section, .senianta-summary-section, .senianta-ship-comparison, 
-  .senianta-content-section, .senianta-price-section, .senianta-comparison-section, 
-  .senianta-antarctica-details, .senianta-mistakes-section, .senianta-expert-rec, 
-  .senianta-what-next, .senianta-why-book, .senianta-author-proof, .senianta-faq-section {
-    padding: 80px 25px;
-  }
+@media (max-width: 768px) {}
 
-  .senianta-hero-inner h1 {
-    font-size: 32px;
-  }
+.senianta-hero-section,
+.senianta-summary-section,
+.senianta-ship-comparison,
+.senianta-content-section,
+.senianta-price-section,
+.senianta-comparison-section,
+.senianta-antarctica-details,
+.senianta-mistakes-section,
+.senianta-expert-rec,
+.senianta-what-next,
+.senianta-why-book,
+.senianta-author-proof,
+.senianta-faq-section {
+  padding: 80px 25px;
+}
 
-  .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
-  .senianta-faq-inner h2, .senianta-mistakes-inner h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
+.senianta-hero-inner h1 {
+  font-size: 32px;
+}
 
-  .senianta-content-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+.senianta-expert-inner h2,
+.senianta-what-next-inner h2,
+.senianta-why-book-inner h2,
+.senianta-faq-inner h2,
+.senianta-mistakes-inner h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
 
-  .senianta-summary-grid {
-    grid-template-columns: 1fr;
-  }
+.senianta-content-grid {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
 
-  .senianta-brand-positioning, .senianta-ship-stats-grid, .senianta-antarctica-details-grid, .senianta-mistakes-grid {
-    grid-template-columns: 1fr;
-  }
+.senianta-summary-grid {
+  grid-template-columns: 1fr;
+}
 
-  .senianta-column-label {
-    margin-top: 20px;
-  }
+.senianta-brand-positioning,
+.senianta-ship-stats-grid,
+.senianta-antarctica-details-grid,
+.senianta-mistakes-grid {
+  grid-template-columns: 1fr;
+}
 
-  /* Handle Comparison Table Scroll */
-  .senianta-comparison-grid {
-    display: flex;
-    overflow-x: auto;
-    padding-bottom: 20px;
-    -webkit-overflow-scrolling: touch;
-    gap: 20px;
-    justify-content: flex-start;
-  }
+.senianta-column-label {
+  margin-top: 20px;
+}
 
-  .senianta-comparison-label, .senianta-brand-col {
-    min-width: 250px;
-    flex-shrink: 0;
-  }
+/* Handle Comparison Table Scroll */
+.senianta-comparison-grid {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  justify-content: flex-start;
+}
 
-  .senianta-detailed-comparison .senianta-comparison-inner {
-    width: 100%;
-  }
+.senianta-comparison-label,
+.senianta-brand-col {
+  min-width: 250px;
+  flex-shrink: 0;
+}
 
-  .senianta-hero-buttons {
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    margin: 35px auto 0;
-  }
+.senianta-detailed-comparison .senianta-comparison-inner {
+  width: 100%;
+}
 
-  .senianta-primary, .senianta-secondary {
-    width: 100%;
-    margin-top: 12px;
-  }
+.senianta-hero-buttons {
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 35px auto 0;
+}
 
-  .senianta-professional-card {
-    padding: 40px 20px;
-  }
+.senianta-primary,
+.senianta-secondary {
+  width: 100%;
+  margin-top: 12px;
+}
 
-  .senianta-auth-stats-grid {
-    grid-template-columns: 1fr;
-  }
+.senianta-professional-card {
+  padding: 40px 20px;
+}
 
- 
+.senianta-auth-stats-grid {
+  grid-template-columns: 1fr;
+}
 
-  .senianta-cta-glass-card {
-    padding: 40px 25px;
-  }
+
+
+.senianta-cta-glass-card {
+  padding: 40px 25px;
 }
 
 /* --- SMALL MOBILE (480PX) --- */
 @media (max-width: 480px) {
-  .senianta-hero-section, .senianta-summary-section, .senianta-ship-comparison, 
-  .senianta-content-section, .senianta-price-section, .senianta-comparison-section, 
-  .senianta-antarctica-details, .senianta-mistakes-section, .senianta-expert-rec, 
-  .senianta-what-next, .senianta-why-book, .senianta-author-proof, .senianta-faq-section {
+  .senianta-hero {
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+  }
+
+  .senianta-hero-section,
+  .senianta-summary-section,
+  .senianta-ship-comparison,
+  .senianta-content-section,
+  .senianta-price-section,
+  .senianta-comparison-section,
+  .senianta-antarctica-details,
+  .senianta-mistakes-section,
+  .senianta-expert-rec,
+  .senianta-what-next,
+  .senianta-why-book,
+  .senianta-author-proof,
+  .senianta-faq-section {
     padding: 60px 20px;
   }
 
   .senianta-hero-inner h1 {
     font-size: 26px;
   }
-  .senianta-verdict-card p{
+
+  .senianta-verdict-card p {
     font-size: 16px;
   }
-  .senianta-expert-inner h2, .senianta-what-next-inner h2, .senianta-why-book-inner h2, 
-  .senianta-faq-inner h2, .senianta-mistakes-inner h2 {
+
+  .senianta-expert-inner h2,
+  .senianta-what-next-inner h2,
+  .senianta-why-book-inner h2,
+  .senianta-faq-inner h2,
+  .senianta-mistakes-inner h2 {
     font-size: 24px;
   }
-  .senianta-lead-expertise{
+
+  .senianta-lead-expertise {
     font-size: 18px;
   }
-  .senianta-benefit-item p{
+
+  .senianta-benefit-item p {
     font-size: 16px;
   }
 
   .senianta-stat-val {
     font-size: 32px;
   }
-  .senianta-emphasis--guided{
+
+  .senianta-emphasis--guided {
     font-size: 16px;
   }
 
-  .senianta-category-pill, .senianta-brand-pill {
+  .senianta-category-pill,
+  .senianta-brand-pill {
     padding: 10px 20px;
   }
 
@@ -2520,7 +2725,7 @@
   .senianta-advantage-pill {
     font-size: 10px;
   }
-  
+
   .senianta-step-num {
     font-size: 48px;
   }
@@ -2608,10 +2813,12 @@
     padding: 0 20px;
     margin: 60px auto;
   }
+
   .senianta-video-grid-inner {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .senianta-video-title {
     font-size: 20px;
   }
@@ -2621,6 +2828,7 @@
   .senianta-video-showcase {
     margin: 40px auto;
   }
+
   .senianta-video-card {
     border-radius: 12px;
   }
@@ -2662,7 +2870,7 @@
   .senianta-card-content {
     padding: 25px;
   }
-  
+
   .senianta-card-image-wrap {
     height: 200px;
   }
@@ -2773,12 +2981,10 @@
 .senianta-gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(39, 68, 114, 0.95) 0%,
-    rgba(39, 68, 114, 0.3) 60%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(39, 68, 114, 0.95) 0%,
+      rgba(39, 68, 114, 0.3) 60%,
+      transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2827,6 +3033,7 @@
   .senianta-gallery-section {
     padding: 80px 20px;
   }
+
   .senianta-gallery-bento-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 250px;
@@ -2837,18 +3044,19 @@
   .senianta-gallery-h2 {
     font-size: 32px;
   }
+
   .senianta-gallery-p {
     font-size: 16px;
   }
+
   .senianta-gallery-overlay {
     opacity: 1;
-    background: linear-gradient(
-      to top,
-      rgba(39, 68, 114, 0.8) 0%,
-      transparent 100%
-    );
+    background: linear-gradient(to top,
+        rgba(39, 68, 114, 0.8) 0%,
+        transparent 100%);
     padding: 20px;
   }
+
   .senianta-gallery-h3 {
     font-size: 20px;
   }
@@ -2859,12 +3067,10 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 220px;
   }
-  .senianta-gallery-feature, .senianta-gallery-tall {
+
+  .senianta-gallery-feature,
+  .senianta-gallery-tall {
     grid-column: span 1;
     grid-row: span 1;
   }
 }
-
-
-
-
