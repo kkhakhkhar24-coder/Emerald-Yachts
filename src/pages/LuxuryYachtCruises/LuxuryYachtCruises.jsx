@@ -121,16 +121,16 @@ function FAQ() {
   ];
 
   return (
-    <div className="lux-faq-list">
+    <div className="luxury-faq-list">
       {faqData.map((item, i) => (
         <div
           key={i}
-          className={`lux-faq-item${open === i ? " lux-open" : ""}`}
+          className={`luxury-faq-item${open === i ? " luxury-open" : ""}`}
           onClick={() => setOpen(open === i ? null : i)}
         >
-          <div className="lux-faq-q">
+          <div className="luxury-faq-q">
             <span>{item.q}</span>
-            <span className="lux-faq-icon">
+            <span className="luxury-faq-icon">
               {open === i ? (
                 <Minus size={18} strokeWidth={1.5} />
               ) : (
@@ -139,8 +139,8 @@ function FAQ() {
             </span>
           </div>
           {open === i && (
-            <div className="lux-faq-a">
-              <div className="lux-faq-a-inner">{item.a}</div>
+            <div className="luxury-faq-a">
+              <div className="luxury-faq-a-inner">{item.a}</div>
             </div>
           )}
         </div>
@@ -168,8 +168,8 @@ export default function YachtCruisesPage() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.tripsandships.com/luxury-yacht-cruises-compared/#webpage",
-            url: "https://www.tripsandships.com/luxury-yacht-cruises-compared/",
+              "https://www.tripsandships.com/luxury-luxury-cruises-compared/#webpage",
+            url: "https://www.tripsandships.com/luxury-luxury-cruises-compared/",
             name: "Luxury Yacht Cruises | Compare Ritz-Carlton, Aman, Scenic, Emerald, Four Seasons, Orient Express",
             description:
               "Compare the best luxury yacht cruises including Ritz-Carlton, Aman, Scenic, Emerald, Four Seasons, and Orient Express with pricing, inclusions, and expert guidance from Angela Hughes.",
@@ -210,7 +210,7 @@ export default function YachtCruisesPage() {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "@id":
-              "https://www.tripsandships.com/luxury-yacht-cruises-compared/#faq",
+              "https://www.tripsandships.com/luxury-luxury-cruises-compared/#faq",
             mainEntity: [
               {
                 "@type": "Question",
@@ -318,7 +318,7 @@ export default function YachtCruisesPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "@id":
-              "https://www.tripsandships.com/luxury-yacht-cruises-compared/#breadcrumb",
+              "https://www.tripsandships.com/luxury-luxury-cruises-compared/#breadcrumb",
             itemListElement: [
               {
                 "@type": "ListItem",
@@ -336,13 +336,13 @@ export default function YachtCruisesPage() {
                 "@type": "ListItem",
                 position: 3,
                 name: "Yacht Cruises",
-                item: "https://www.tripsandships.com/yacht-cruises/",
+                item: "https://www.tripsandships.com/luxury-cruises/",
               },
               {
                 "@type": "ListItem",
                 position: 4,
                 name: "Luxury Yacht Cruises Compared",
-                item: "https://www.tripsandships.com/luxury-yacht-cruises-compared/",
+                item: "https://www.tripsandships.com/luxury-luxury-cruises-compared/",
               },
             ],
           })}
@@ -401,48 +401,48 @@ export default function YachtCruisesPage() {
       <Navbar />
 
       {/* ===== HERO SECTION ===== */}
-      <section className="yacht-hero">
-        <div className="yacht-hero-content">
-          <span className="yacht-hero-eyebrow">Yacht Cruise Planning</span>
+      <section className="luxury-hero">
+        <div className="luxury-hero-content">
+          <span className="luxury-hero-eyebrow">Yacht Cruise Planning</span>
           <h1>Luxury Yacht Cruises</h1>
-          <p className="yacht-hero-sub">
+          <p className="luxury-hero-sub">
             Compare the Leading Yacht Cruise Brands and Choose the Right
             Experience
           </p>
-          <p className="yacht-hero-lead">
+          <p className="luxury-hero-lead">
             Choosing the right yacht is not about price alone. It is about how
             you travel, what you value, and what the experience actually
             delivers.
           </p>
 
           {/* This container expands when the button below is clicked */}
-          <div className="yacht-hero-details">
-            <div className="yacht-hero-features">
-              <div className="yacht-feature-card">
-                <div className="yacht-feature-icon">
+          <div className="luxury-hero-details">
+            <div className="luxury-hero-features">
+              <div className="luxury-feature-card">
+                <div className="luxury-feature-icon">
                   <Ship size={28} strokeWidth={1.5} />
                 </div>
-                <p className="yacht-feature-text">
+                <p className="luxury-feature-text">
                   Small ships provide unmatched intimacy, granting access to
                   secluded harbors and pristine coves larger ships simply cannot
                   reach.
                 </p>
               </div>
-              <div className="yacht-feature-card">
-                <div className="yacht-feature-icon">
+              <div className="luxury-feature-card">
+                <div className="luxury-feature-icon">
                   <Diamond size={28} strokeWidth={1.5} />
                 </div>
-                <p className="yacht-feature-text">
+                <p className="luxury-feature-text">
                   However, the experiences vary vastly from ultra-private
                   sanctuaries like Aman to the vibrant, social lifestyle of
                   Ritz-Carlton.
                 </p>
               </div>
-              <div className="yacht-feature-card">
-                <div className="yacht-feature-icon">
+              <div className="luxury-feature-card">
+                <div className="luxury-feature-icon">
                   <Navigation size={28} strokeWidth={1.5} />
                 </div>
-                <p className="yacht-feature-text">
+                <p className="luxury-feature-text">
                   We navigate these nuances to ensure your voyage aligns
                   perfectly with your refined expectations.
                 </p>
@@ -451,9 +451,9 @@ export default function YachtCruisesPage() {
           </div>
 
           <button
-            className="yacht-hero-read-more"
+            className="luxury-hero-read-more"
             onClick={(e) => {
-              const details = document.querySelector(".yacht-hero-details");
+              const details = document.querySelector(".luxury-hero-details");
               if (details) {
                 details.classList.toggle("expanded");
                 e.target.innerText = details.classList.contains("expanded")
@@ -465,9 +465,9 @@ export default function YachtCruisesPage() {
             Read More
           </button>
 
-          <div className="yacht-hero-btns">
-            <button className="yacht-btn-primary">Start Planning</button>
-            <button className="yacht-btn-secondary">
+          <div className="luxury-hero-btns">
+            <button className="luxury-btn-primary">Start Planning</button>
+            <button className="luxury-btn-secondary">
               Compare Yacht Options
             </button>
           </div>
@@ -475,107 +475,109 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION: QUICK COMPARISON STRIP — Modern Horizontal Scroll ===== */}
-      <section className="lux-section lux-bg-soft-blue lux-comparison-strip-section">
-        <div className="lux-container-wide">
+      <section className="luxury-section luxury-bg-soft-blue luxury-comparison-strip-section">
+        <div className="luxury-container-wide">
           {/* Centered Heading */}
-          <div className="lux-strip-header">
-            <h2 className="lux-h2">Quick Comparison</h2>
-            <div className="lux-navy-divider-center"></div>
+          <div className="luxury-strip-header">
+            <h2 className="luxury-h2">Quick Comparison</h2>
+            <div className="luxury-navy-divider-center"></div>
           </div>
         </div>
 
         {/* Auto-Scroll Marquee — full-width, left-to-right */}
-        <div className="lux-strip-scroll-wrapper">
-          <div className="lux-strip-scroll">
+        <div className="luxury-strip-scroll-wrapper">
+          <div className="luxury-strip-scroll">
             {/* Track is duplicated to create seamless infinite loop */}
             {[0, 1].map((copy) => (
               <div
-                className="lux-strip-track"
+                className="luxury-strip-track"
                 key={copy}
                 aria-hidden={copy === 1}
               >
                 {/* Item 1: Ritz-Carlton */}
-                <div className="lux-strip-new-card">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card">
+                  <div className="luxury-strip-new-icon">
                     <Star size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Ritz-Carlton</h3>
-                  <p className="lux-strip-new-tagline">Best overall balance</p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Ritz-Carlton</h3>
+                  <p className="luxury-strip-new-tagline">
+                    Best overall balance
+                  </p>
+                  <div className="luxury-strip-new-price">
                     $7K–$15K <span>per person</span>
                   </div>
                 </div>
 
                 {/* Item 2: Aman */}
-                <div className="lux-strip-new-card lux-strip-featured">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card luxury-strip-featured">
+                  <div className="luxury-strip-new-icon">
                     <Diamond size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Aman</h3>
-                  <p className="lux-strip-new-tagline">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Aman</h3>
+                  <p className="luxury-strip-new-tagline">
                     Ultra-private experience
                   </p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-price">
                     $25K+ <span>per week</span>
                   </div>
                 </div>
 
                 {/* Item 3: Scenic */}
-                <div className="lux-strip-new-card">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card">
+                  <div className="luxury-strip-new-icon">
                     <Compass size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Scenic</h3>
-                  <p className="lux-strip-new-tagline">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Scenic</h3>
+                  <p className="luxury-strip-new-tagline">
                     All-inclusive expedition
                   </p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-price">
                     $10K–$25K <span>per person</span>
                   </div>
                 </div>
 
                 {/* Item 4: Emerald */}
-                <div className="lux-strip-new-card">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card">
+                  <div className="luxury-strip-new-icon">
                     <Anchor size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Emerald</h3>
-                  <p className="lux-strip-new-tagline">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Emerald</h3>
+                  <p className="luxury-strip-new-tagline">
                     Entry yacht experience
                   </p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-price">
                     $5K–$9K <span>per person</span>
                   </div>
                 </div>
 
                 {/* Item 5: Four Seasons */}
-                <div className="lux-strip-new-card">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card">
+                  <div className="luxury-strip-new-icon">
                     <Building2 size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Four Seasons</h3>
-                  <p className="lux-strip-new-tagline">Residential luxury</p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Four Seasons</h3>
+                  <p className="luxury-strip-new-tagline">Residential luxury</p>
+                  <div className="luxury-strip-new-price">
                     $20K+ <span>per suite</span>
                   </div>
                 </div>
 
                 {/* Item 6: Orient Express */}
-                <div className="lux-strip-new-card">
-                  <div className="lux-strip-new-icon">
+                <div className="luxury-strip-new-card">
+                  <div className="luxury-strip-new-icon">
                     <Palette size={32} strokeWidth={1.5} />
                   </div>
-                  <div className="lux-strip-new-divider"></div>
-                  <h3 className="lux-strip-new-brand">Orient Express</h3>
-                  <p className="lux-strip-new-tagline">
+                  <div className="luxury-strip-new-divider"></div>
+                  <h3 className="luxury-strip-new-brand">Orient Express</h3>
+                  <p className="luxury-strip-new-tagline">
                     Design-driven experience
                   </p>
-                  <div className="lux-strip-new-price">
+                  <div className="luxury-strip-new-price">
                     $20K+ <span>base price</span>
                   </div>
                 </div>
@@ -586,31 +588,31 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION: INTRO — Modern Two-Column Layout ===== */}
-      <section className="lux-section lux-bg-white lux-intro-section-new">
-        <div className="lux-container-wide">
-          <div className="lux-intro-grid">
+      <section className="luxury-section luxury-bg-white luxury-intro-section-new">
+        <div className="luxury-container-wide">
+          <div className="luxury-intro-grid">
             {/* Left Column: Text Content */}
-            <div className="lux-intro-left">
-              <p className="lux-p lux-intro-lead">
+            <div className="luxury-intro-left">
+              <p className="luxury-p luxury-intro-lead">
                 Luxury yacht cruising has redefined how high-end travelers
                 experience the world.
               </p>
 
-              <div className="lux-intro-features">
-                <div className="lux-intro-feature-item">
+              <div className="luxury-intro-features">
+                <div className="luxury-intro-feature-item">
                   <Anchor size={20} strokeWidth={1.5} />
-                  <p className="lux-p">
+                  <p className="luxury-p">
                     Smaller ships. Higher service. Access to destinations larger
                     ships cannot reach.
                   </p>
                 </div>
               </div>
 
-              <p className="lux-p lux-intro-contrast">
+              <p className="luxury-p luxury-intro-contrast">
                 But not all yacht cruises are the same.
               </p>
 
-              <p className="lux-p">
+              <p className="luxury-p">
                 The difference between{" "}
                 <strong>
                   The Ritz-Carlton Yacht Collection, Aman, Scenic Luxury Cruises
@@ -619,29 +621,29 @@ export default function YachtCruisesPage() {
                 and <strong>Orient Express Yachts</strong> is not just price.
               </p>
 
-              <p className="lux-p lux-intro-conclusion">
+              <p className="luxury-p luxury-intro-conclusion">
                 It is experience, inclusions, and positioning.
               </p>
             </div>
 
             {/* Right Column: Minimal Visual / Negative Space */}
-            <div className="lux-intro-right">
-              <div className="lux-intro-visual">
-                <div className="lux-intro-visual-card">
-                  <h3 className="lux-intro-card-title">
+            <div className="luxury-intro-right">
+              <div className="luxury-intro-visual">
+                <div className="luxury-intro-visual-card">
+                  <h3 className="luxury-intro-card-title">
                     What Sets Yacht Cruising Apart
                   </h3>
-                  <div className="lux-intro-hr"></div>
-                  <div className="lux-intro-key-points">
-                    <div className="lux-intro-key-item">
+                  <div className="luxury-intro-hr"></div>
+                  <div className="luxury-intro-key-points">
+                    <div className="luxury-intro-key-item">
                       <Ship size={18} strokeWidth={1.5} />
                       <span>6 Luxury Brands</span>
                     </div>
-                    <div className="lux-intro-key-item">
+                    <div className="luxury-intro-key-item">
                       <Snowflake size={18} strokeWidth={1.5} />
                       <span>Global Destinations</span>
                     </div>
-                    <div className="lux-intro-key-item">
+                    <div className="luxury-intro-key-item">
                       <Sparkles size={18} strokeWidth={1.5} />
                       <span>Ultra-Luxury Experience</span>
                     </div>
@@ -654,41 +656,41 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== PRICING SECTION ===== */}
-      <section className="yacht-section yacht-bg-soft yacht-pricing-section">
-        <div className="yacht-section-inner yacht-wide">
-          <div className="yacht-pricing-grid">
-            <div className="yacht-pricing-card">
-              <div className="yacht-pricing-badge">Entry</div>
+      <section className="luxury-section luxury-bg-soft luxury-pricing-section">
+        <div className="luxury-section-inner luxury-wide">
+          <div className="luxury-pricing-grid">
+            <div className="luxury-pricing-card">
+              <div className="luxury-pricing-badge">Entry</div>
               <h3>Entry Yacht Experience</h3>
-              <p className="yacht-pricing-brand">Emerald Cruises</p>
-              <p className="yacht-pricing-amount">$5,000–$9,000</p>
-              <p className="yacht-pricing-unit">per person per week</p>
+              <p className="luxury-pricing-brand">Emerald Cruises</p>
+              <p className="luxury-pricing-amount">$5,000–$9,000</p>
+              <p className="luxury-pricing-unit">per person per week</p>
             </div>
-            <div className="yacht-pricing-card yacht-pricing-featured">
-              <div className="yacht-pricing-badge yacht-pricing-badge-featured">
+            <div className="luxury-pricing-card luxury-pricing-featured">
+              <div className="luxury-pricing-badge luxury-pricing-badge-featured">
                 Luxury
               </div>
               <h3>Luxury Yacht Experience</h3>
-              <p className="yacht-pricing-brand">Ritz-Carlton and Scenic</p>
-              <p className="yacht-pricing-amount">$7,000–$15,000+</p>
-              <p className="yacht-pricing-unit">per person per week</p>
+              <p className="luxury-pricing-brand">Ritz-Carlton and Scenic</p>
+              <p className="luxury-pricing-amount">$7,000–$15,000+</p>
+              <p className="luxury-pricing-unit">per person per week</p>
             </div>
-            <div className="yacht-pricing-card">
-              <div className="yacht-pricing-badge">Ultra-Luxury</div>
+            <div className="luxury-pricing-card">
+              <div className="luxury-pricing-badge">Ultra-Luxury</div>
               <h3>Ultra-Luxury Yacht Experience</h3>
-              <p className="yacht-pricing-brand">
+              <p className="luxury-pricing-brand">
                 Four Seasons, Aman, Orient Express
               </p>
-              <p className="yacht-pricing-amount">$20,000+</p>
-              <p className="yacht-pricing-unit">per week</p>
+              <p className="luxury-pricing-amount">$20,000+</p>
+              <p className="luxury-pricing-unit">per week</p>
             </div>
           </div>
-          <div className="yacht-pricing-footer">
-            <div className="yacht-pricing-footer-content">
-              <div className="yacht-pricing-footer-icon">
+          <div className="luxury-pricing-footer">
+            <div className="luxury-pricing-footer-content">
+              <div className="luxury-pricing-footer-icon">
                 <Info size={20} strokeWidth={2} />
               </div>
-              <p className="yacht-section-p-clean">
+              <p className="luxury-section-p-clean">
                 Pricing is driven by suite category, itinerary, and inclusions.
               </p>
             </div>
@@ -697,62 +699,66 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION: WHERE CLIENTS GET IT WRONG — New Modern Design ===== */}
-      <section className="lux-section lux-bg-highlight lux-mistakes-section">
-        <div className="lux-container-wide">
-          <div className="lux-mistakes-header">
-            <span className="lux-mistakes-eyebrow">Common Misconceptions</span>
-            <h2 className="lux-h2">Where Clients Get It Wrong</h2>
-            <div className="lux-navy-divider-center"></div>
+      <section className="luxury-section luxury-bg-highlight luxury-mistakes-section">
+        <div className="luxury-container-wide">
+          <div className="luxury-mistakes-header">
+            <span className="luxury-mistakes-eyebrow">
+              Common Misconceptions
+            </span>
+            <h2 className="luxury-h2">Where Clients Get It Wrong</h2>
+            <div className="luxury-navy-divider-center"></div>
           </div>
 
-          <div className="lux-mistakes-intro">
-            <p className="lux-p lux-mistakes-lead">
+          <div className="luxury-mistakes-intro">
+            <p className="luxury-p luxury-mistakes-lead">
               Many travelers assume the most expensive yacht is the best option.
             </p>
-            <p className="lux-mistakes-truth">It is not.</p>
+            <p className="luxury-mistakes-truth">It is not.</p>
           </div>
 
-          <div className="lux-mistakes-grid">
-            <div className="lux-mistake-item">
-              <div className="lux-mistake-icon">
+          <div className="luxury-mistakes-grid">
+            <div className="luxury-mistake-item">
+              <div className="luxury-mistake-icon">
                 <X size={20} strokeWidth={2} />
               </div>
-              <p className="lux-p">
+              <p className="luxury-p">
                 Four Seasons is not always a better fit than Ritz-Carlton
               </p>
             </div>
 
-            <div className="lux-mistake-item">
-              <div className="lux-mistake-icon">
+            <div className="luxury-mistake-item">
+              <div className="luxury-mistake-icon">
                 <X size={20} strokeWidth={2} />
               </div>
-              <p className="lux-p">Emerald is not positioned as ultra-luxury</p>
+              <p className="luxury-p">
+                Emerald is not positioned as ultra-luxury
+              </p>
             </div>
 
-            <div className="lux-mistake-item">
-              <div className="lux-mistake-icon">
+            <div className="luxury-mistake-item">
+              <div className="luxury-mistake-icon">
                 <X size={20} strokeWidth={2} />
               </div>
-              <p className="lux-p">
+              <p className="luxury-p">
                 All-inclusive varies significantly by brand
               </p>
             </div>
 
-            <div className="lux-mistake-item">
-              <div className="lux-mistake-icon">
+            <div className="luxury-mistake-item">
+              <div className="luxury-mistake-icon">
                 <X size={20} strokeWidth={2} />
               </div>
-              <p className="lux-p">
+              <p className="luxury-p">
                 Brand name does not equal the right experience
               </p>
             </div>
           </div>
 
-          <div className="lux-mistakes-conclusion">
-            <div className="lux-conclusion-icon">
+          <div className="luxury-mistakes-conclusion">
+            <div className="luxury-conclusion-icon">
               <Check size={24} strokeWidth={2} />
             </div>
-            <p className="lux-p">
+            <p className="luxury-p">
               The right decision comes down to <strong>alignment</strong>, not
               perception.
             </p>
@@ -761,24 +767,24 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== VIDEO SECTION: LUXURY YACHT EXPERIENCE ===== */}
-      <section className="lux-section lux-bg-white lux-video-section">
-        <div className="lux-container-wide">
-          <div className="lux-video-header">
-            <h2 className="lux-h2">
+      <section className="luxury-section luxury-bg-white luxury-video-section">
+        <div className="luxury-container-wide">
+          <div className="luxury-video-header">
+            <h2 className="luxury-h2">
               Experience Luxury <br />
               Yacht Cruising
             </h2>
-            <div className="lux-navy-divider-center"></div>
-            <p className="lux-video-subtitle">
+            <div className="luxury-navy-divider-center"></div>
+            <p className="luxury-video-subtitle">
               Discover how modern luxury yachts combine sophisticated design,
               world-class service, and access to exclusive destinations for an
               unforgettable journey.
             </p>
           </div>
 
-          <div className="lux-video-wrapper">
+          <div className="luxury-video-wrapper">
             <iframe
-              className="lux-video-player"
+              className="luxury-video-player"
               src="https://www.youtube.com/embed/07r79O5k1Cw?autoplay=1&mute=1&loop=1&playlist=07r79O5k1Cw"
               title="Luxury Yacht Experience"
               frameBorder="0"
@@ -787,8 +793,8 @@ export default function YachtCruisesPage() {
             ></iframe>
           </div>
 
-          <div className="lux-video-caption">
-            <span className="lux-caption-tag">Yacht Experience</span>
+          <div className="luxury-video-caption">
+            <span className="luxury-caption-tag">Yacht Experience</span>
             <p>
               Luxury yacht cruising offers an intimate, personalized travel
               experience with access to exclusive ports and destinations that
@@ -799,14 +805,14 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION: IMAGE GALLERY — Modern Bento Grid Layout ===== */}
-      <section className="lux-section lux-bg-white lux-gallery-section">
-        <div className="lux-container-wide">
-          <div className="lux-gallery-inner">
+      <section className="luxury-section luxury-bg-white luxury-gallery-section">
+        <div className="luxury-container-wide">
+          <div className="luxury-gallery-inner">
             {/* Header Area */}
-            <div className="lux-gallery-header">
-              <h2 className="lux-h2">Life Aboard Luxury Yachts</h2>
-              <div className="lux-navy-divider-center"></div>
-              <p className="lux-gallery-subtitle">
+            <div className="luxury-gallery-header">
+              <h2 className="luxury-h2">Life Aboard Luxury Yachts</h2>
+              <div className="luxury-navy-divider-center"></div>
+              <p className="luxury-gallery-subtitle">
                 From pristine suites to stunning coastal destinations —
                 experience what boutique luxury at sea truly looks and feels
                 like.
@@ -814,21 +820,21 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Bento Grid Layout */}
-            <div className="lux-gallery-bento-grid">
+            <div className="luxury-gallery-bento-grid">
               {/* 01: Gallery Item */}
-              <div className="lux-gallery-item lux-gallery-feature">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item luxury-gallery-feature">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery1}
                     alt="Luxury yacht suite with panoramic ocean views"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Luxury Suite</span>
-                    <h3 className="lux-gallery-h3">Panoramic Elegance</h3>
-                    <p className="lux-gallery-item-p">
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Luxury Suite</span>
+                    <h3 className="luxury-gallery-h3">Panoramic Elegance</h3>
+                    <p className="luxury-gallery-item-p">
                       Spacious suites with floor-to-ceiling views of the open
                       sea.
                     </p>
@@ -837,86 +843,88 @@ export default function YachtCruisesPage() {
               </div>
 
               {/* 02: Gallery Item */}
-              <div className="lux-gallery-item lux-gallery-tall">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item luxury-gallery-tall">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery2}
                     alt="Onboard lifestyle and yacht experience"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Ocean Retreat</span>
-                    <h3 className="lux-gallery-h3">Relaxed Luxury Lounge</h3>
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Ocean Retreat</span>
+                    <h3 className="luxury-gallery-h3">Relaxed Luxury Lounge</h3>
                   </div>
                 </div>
               </div>
 
               {/* 03: Gallery Item */}
-              <div className="lux-gallery-item">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery3}
                     alt="Fine dining experience on luxury yacht"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Quiet Moments</span>
-                    <h3 className="lux-gallery-h3">Sunset Reading Lounge</h3>
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Quiet Moments</span>
+                    <h3 className="luxury-gallery-h3">Sunset Reading Lounge</h3>
                   </div>
                 </div>
               </div>
 
               {/* 04: Gallery Item */}
-              <div className="lux-gallery-item">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery4}
                     alt="Exclusive coastal destinations and hidden coves"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Fine Dining</span>
-                    <h3 className="lux-gallery-h3">Oceanview Restaurant</h3>
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Fine Dining</span>
+                    <h3 className="luxury-gallery-h3">Oceanview Restaurant</h3>
                   </div>
                 </div>
               </div>
 
               {/* 05: Gallery Item */}
-              <div className="lux-gallery-item">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery5}
                     alt="Luxury yacht deck and relaxation area"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Night Deck</span>
-                    <h3 className="lux-gallery-h3">Luxury Under the Stars</h3>
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Night Deck</span>
+                    <h3 className="luxury-gallery-h3">
+                      Luxury Under the Stars
+                    </h3>
                   </div>
                 </div>
               </div>
 
               {/* 06: Gallery Item */}
-              <div className="lux-gallery-item">
-                <div className="lux-gallery-image-box">
+              <div className="luxury-gallery-item">
+                <div className="luxury-gallery-image-box">
                   <img
                     src={ImageGallery6}
                     alt="Personalized service on luxury yacht"
-                    className="lux-gallery-img"
+                    className="luxury-gallery-img"
                   />
                 </div>
-                <div className="lux-gallery-overlay">
-                  <div className="lux-gallery-content">
-                    <span className="lux-gallery-badge">Signature Deck</span>
-                    <h3 className="lux-gallery-h3">Luxury Sun Lounge</h3>
+                <div className="luxury-gallery-overlay">
+                  <div className="luxury-gallery-content">
+                    <span className="luxury-gallery-badge">Signature Deck</span>
+                    <h3 className="luxury-gallery-h3">Luxury Sun Lounge</h3>
                   </div>
                 </div>
               </div>
@@ -926,42 +934,48 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION 03: BRAND COMPARISON — Modern Stacked Cards ===== */}
-      <section className="lux-section lux-bg-soft-blue lux-brand-comparison-section">
-        <div className="lux-container-wide">
+      <section className="luxury-section luxury-bg-soft-blue luxury-brand-comparison-section">
+        <div className="luxury-container-wide">
           {/* Centered Section Header */}
-          <div className="lux-brand-header">
-            <h2 className="lux-h2">Brand Comparison</h2>
-            <div className="lux-navy-divider-center"></div>
-            <p className="lux-brand-subtitle">
+          <div className="luxury-brand-header">
+            <h2 className="luxury-h2">Brand Comparison</h2>
+            <div className="luxury-navy-divider-center"></div>
+            <p className="luxury-brand-subtitle">
               Compare the leading luxury yacht brands to find your perfect match
             </p>
           </div>
 
-          <div className="lux-brand-cards-grid">
+          <div className="luxury-brand-cards-grid">
             {/* Brand 1: Ritz-Carlton */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">01</span>
-                <h3 className="lux-brand-title">
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">01</span>
+                <h3 className="luxury-brand-title">
                   The Ritz-Carlton Yacht Collection
                 </h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">Best overall balance</p>
+                  <p className="luxury-brand-feature-text">
+                    Best overall balance
+                  </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">Nearly all-inclusive</p>
+                  <p className="luxury-brand-feature-text">
+                    Nearly all-inclusive
+                  </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">Social but refined</p>
+                  <p className="luxury-brand-feature-text">
+                    Social but refined
+                  </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Strong value relative to experience
                   </p>
                 </div>
@@ -969,27 +983,27 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Brand 2: Aman */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">02</span>
-                <h3 className="lux-brand-title">Aman</h3>
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">02</span>
+                <h3 className="luxury-brand-title">Aman</h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Ultra-private and highly customized
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Minimalist, design-driven
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Built for privacy and space
                   </p>
                 </div>
@@ -997,27 +1011,29 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Brand 3: Scenic */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">03</span>
-                <h3 className="lux-brand-title">
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">03</span>
+                <h3 className="luxury-brand-title">
                   Scenic Luxury Cruises & Tours
                 </h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">Fully all-inclusive</p>
+                  <p className="luxury-brand-feature-text">
+                    Fully all-inclusive
+                  </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Expedition capability
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Destination-focused travel
                   </p>
                 </div>
@@ -1025,25 +1041,27 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Brand 4: Emerald */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">04</span>
-                <h3 className="lux-brand-title">Emerald Cruises</h3>
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">04</span>
+                <h3 className="luxury-brand-title">Emerald Cruises</h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Accessible entry into yacht cruising
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">Modern and relaxed</p>
+                  <p className="luxury-brand-feature-text">
+                    Modern and relaxed
+                  </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Clean design and smaller scale
                   </p>
                 </div>
@@ -1051,27 +1069,27 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Brand 5: Four Seasons */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">05</span>
-                <h3 className="lux-brand-title">Four Seasons Yachts</h3>
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">05</span>
+                <h3 className="luxury-brand-title">Four Seasons Yachts</h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Large residential-style suites
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Hotel-driven experience
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Not fully all-inclusive
                   </p>
                 </div>
@@ -1079,27 +1097,27 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Brand 6: Orient Express */}
-            <div className="lux-brand-card">
-              <div className="lux-brand-card-header">
-                <span className="lux-brand-number">06</span>
-                <h3 className="lux-brand-title">Orient Express Yachts</h3>
+            <div className="luxury-brand-card">
+              <div className="luxury-brand-card-header">
+                <span className="luxury-brand-number">06</span>
+                <h3 className="luxury-brand-title">Orient Express Yachts</h3>
               </div>
-              <div className="lux-brand-card-body">
-                <div className="lux-brand-feature">
+              <div className="luxury-brand-card-body">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Design-forward concept
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Heritage-driven experience
                   </p>
                 </div>
-                <div className="lux-brand-feature">
+                <div className="luxury-brand-feature">
                   <Sparkles size={14} strokeWidth={1.5} />
-                  <p className="lux-brand-feature-text">
+                  <p className="luxury-brand-feature-text">
                     Positioned in ultra-luxury tier
                   </p>
                 </div>
@@ -1110,18 +1128,18 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION 04: CLIENT SCENARIOS — Decision-mapping grid with Sticky Header ===== */}
-      <section className="lux-section lux-bg-white">
-        <div className="lux-container-wide">
-          <div className="lux-sticky-wrapper">
+      <section className="luxury-section luxury-bg-white">
+        <div className="luxury-container-wide">
+          <div className="luxury-sticky-wrapper">
             {/* Left Column: Sticky Side-Heading */}
-            <aside className="lux-side-sticky">
-              <div className="lux-sticky-element">
-                <h2 className="lux-h2">
+            <aside className="luxury-side-sticky">
+              <div className="luxury-sticky-element">
+                <h2 className="luxury-h2">
                   Real Client <br />
                   Scenarios
                 </h2>
-                <div className="lux-navy-divider-left"></div>
-                <p className="lux-p lux-sticky-desc">
+                <div className="luxury-navy-divider-left"></div>
+                <p className="luxury-p luxury-sticky-desc">
                   Matching specific travel milestones and preferences with the
                   appropriate yacht collection.
                 </p>
@@ -1129,65 +1147,65 @@ export default function YachtCruisesPage() {
             </aside>
 
             {/* Right Column: Scenario Grid */}
-            <main className="lux-content-column">
-              <div className="lux-scenario-grid">
+            <main className="luxury-content-column">
+              <div className="luxury-scenario-grid">
                 {/* Scenario 1 */}
-                <div className="lux-scenario-card">
-                  <span className="lux-scenario-label">The Occasion</span>
-                  <h3 className="lux-scenario-title">
+                <div className="luxury-scenario-card">
+                  <span className="luxury-scenario-label">The Occasion</span>
+                  <h3 className="luxury-scenario-title">
                     Anniversary or milestone travel
                   </h3>
-                  <div className="lux-recommendation-box">
-                    <span className="lux-rec-tag">Recommended</span>
-                    <p className="lux-p">Ritz-Carlton</p>
+                  <div className="luxury-recommendation-box">
+                    <span className="luxury-rec-tag">Recommended</span>
+                    <p className="luxury-p">Ritz-Carlton</p>
                   </div>
                 </div>
 
                 {/* Scenario 2 */}
-                <div className="lux-scenario-card">
-                  <span className="lux-scenario-label">The Priority</span>
-                  <h3 className="lux-scenario-title">
+                <div className="luxury-scenario-card">
+                  <span className="luxury-scenario-label">The Priority</span>
+                  <h3 className="luxury-scenario-title">
                     Privacy-focused traveler
                   </h3>
-                  <div className="lux-recommendation-box">
-                    <span className="lux-rec-tag">Recommended</span>
-                    <p className="lux-p">Aman</p>
+                  <div className="luxury-recommendation-box">
+                    <span className="luxury-rec-tag">Recommended</span>
+                    <p className="luxury-p">Aman</p>
                   </div>
                 </div>
 
                 {/* Scenario 3 */}
-                <div className="lux-scenario-card">
-                  <span className="lux-scenario-label">The Destination</span>
-                  <h3 className="lux-scenario-title">
+                <div className="luxury-scenario-card">
+                  <span className="luxury-scenario-label">The Destination</span>
+                  <h3 className="luxury-scenario-title">
                     Antarctica or expedition travel
                   </h3>
-                  <div className="lux-recommendation-box">
-                    <span className="lux-rec-tag">Recommended</span>
-                    <p className="lux-p">Scenic</p>
+                  <div className="luxury-recommendation-box">
+                    <span className="luxury-rec-tag">Recommended</span>
+                    <p className="luxury-p">Scenic</p>
                   </div>
                 </div>
 
                 {/* Scenario 4 */}
-                <div className="lux-scenario-card">
-                  <span className="lux-scenario-label">The Experience</span>
-                  <h3 className="lux-scenario-title">
+                <div className="luxury-scenario-card">
+                  <span className="luxury-scenario-label">The Experience</span>
+                  <h3 className="luxury-scenario-title">
                     First-time yacht experience
                   </h3>
-                  <div className="lux-recommendation-box">
-                    <span className="lux-rec-tag">Recommended</span>
-                    <p className="lux-p">Emerald</p>
+                  <div className="luxury-recommendation-box">
+                    <span className="luxury-rec-tag">Recommended</span>
+                    <p className="luxury-p">Emerald</p>
                   </div>
                 </div>
 
                 {/* Scenario 5 - Full Width */}
-                <div className="lux-scenario-card lux-scenario-full-width">
-                  <span className="lux-scenario-label">The Traveler</span>
-                  <h3 className="lux-scenario-title">
+                <div className="luxury-scenario-card luxury-scenario-full-width">
+                  <span className="luxury-scenario-label">The Traveler</span>
+                  <h3 className="luxury-scenario-title">
                     Brand-loyal luxury traveler
                   </h3>
-                  <div className="lux-recommendation-box">
-                    <span className="lux-rec-tag">Recommended</span>
-                    <p className="lux-p">Four Seasons</p>
+                  <div className="luxury-recommendation-box">
+                    <span className="luxury-rec-tag">Recommended</span>
+                    <p className="luxury-p">Four Seasons</p>
                   </div>
                 </div>
               </div>
@@ -1197,26 +1215,26 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION 04.5: FEATURED BRANDS — Modern Three-Column Visual Grid ===== */}
-      <section className="lux-brands-highlight">
-        <div className="lux-container-wide">
-          <div className="lux-brand-highlight-header">
-            <h2 className="lux-h2">Featured Luxury Vessels</h2>
-            <div className="lux-navy-divider-center"></div>
-            <p className="lux-brand-highlight-subtitle">
+      <section className="luxury-brands-highlight">
+        <div className="luxury-container-wide">
+          <div className="luxury-brand-highlight-header">
+            <h2 className="luxury-h2">Featured Luxury Vessels</h2>
+            <div className="luxury-navy-divider-center"></div>
+            <p className="luxury-brand-highlight-subtitle">
               Explore the distinctive character and design of the industry's
               most prestigious yachts.
             </p>
           </div>
 
-          <div className="lux-brand-highlight-grid">
+          <div className="luxury-brand-highlight-grid">
             {/* Card 1: Emerald Cruises */}
-            <div className="lux-highlight-card">
-              <div className="lux-highlight-image">
+            <div className="luxury-highlight-card">
+              <div className="luxury-highlight-image">
                 <img src={EmeraldKaia} alt="Emerald Cruises" />
               </div>
-              <div className="lux-highlight-info">
-                <h3 className="lux-highlight-title">Emerald Cruises</h3>
-                <p className="lux-highlight-desc">
+              <div className="luxury-highlight-info">
+                <h3 className="luxury-highlight-title">Emerald Cruises</h3>
+                <p className="luxury-highlight-desc">
                   Modern, innovative yachts designed for contemporary luxury at
                   sea.
                 </p>
@@ -1224,13 +1242,13 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Card 2: Ritz-Carlton yacht */}
-            <div className="lux-highlight-card">
-              <div className="lux-highlight-image">
+            <div className="luxury-highlight-card">
+              <div className="luxury-highlight-image">
                 <img src={RitzCart} alt="Ritz-Carlton yacht" />
               </div>
-              <div className="lux-highlight-info">
-                <h3 className="lux-highlight-title">Ritz-Carlton yacht</h3>
-                <p className="lux-highlight-desc">
+              <div className="luxury-highlight-info">
+                <h3 className="luxury-highlight-title">Ritz-Carlton yacht</h3>
+                <p className="luxury-highlight-desc">
                   A seamless extension of the legendary gold-standard service
                   and luxury.
                 </p>
@@ -1238,13 +1256,13 @@ export default function YachtCruisesPage() {
             </div>
 
             {/* Card 3: Aman yacht */}
-            <div className="lux-highlight-card">
-              <div className="lux-highlight-image">
+            <div className="luxury-highlight-card">
+              <div className="luxury-highlight-image">
                 <img src={AmaDante} alt="Aman yacht" />
               </div>
-              <div className="lux-highlight-info">
-                <h3 className="lux-highlight-title">Aman yacht</h3>
-                <p className="lux-highlight-desc">
+              <div className="luxury-highlight-info">
+                <h3 className="luxury-highlight-title">Aman yacht</h3>
+                <p className="luxury-highlight-desc">
                   An ultra-private sanctuary reflecting the serene philosophy of
                   Aman resorts.
                 </p>
@@ -1255,47 +1273,47 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION 05: YACHT VS TRADITIONAL — Architectural Comparison Architecture ===== */}
-      <section className="lux-section lux-bg-soft-blue lux-vs-section">
-        <div className="lux-container-wide">
+      <section className="luxury-section luxury-bg-soft-blue luxury-vs-section">
+        <div className="luxury-container-wide">
           {/* Section Header */}
-          <div className="lux-vs-header">
-            <h2 className="lux-h2">Yacht vs. Traditional Cruise</h2>
-            <div className="lux-navy-divider-center"></div>
+          <div className="luxury-vs-header">
+            <h2 className="luxury-h2">Yacht vs. Traditional Cruise</h2>
+            <div className="luxury-navy-divider-center"></div>
           </div>
 
-          <div className="lux-vs-container">
+          <div className="luxury-vs-container">
             {/* Decorative "VS" background text */}
-            <div className="lux-vs-background-text">VS</div>
+            <div className="luxury-vs-background-text">VS</div>
 
-            <div className="lux-vs-grid">
+            <div className="luxury-vs-grid">
               {/* Side A: Yacht Cruise */}
-              <div className="lux-vs-card">
-                <div className="lux-card-indicator">The Intimate Choice</div>
-                <h3 className="lux-card-h3">Yacht Cruise</h3>
-                <div className="lux-card-line"></div>
+              <div className="luxury-vs-card">
+                <div className="luxury-card-indicator">The Intimate Choice</div>
+                <h3 className="luxury-card-h3">Yacht Cruise</h3>
+                <div className="luxury-card-line"></div>
 
-                <ul className="lux-vs-list">
+                <ul className="luxury-vs-list">
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Diamond size={14} strokeWidth={2} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       Smaller ships with higher service levels
                     </p>
                   </li>
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Diamond size={14} strokeWidth={2} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       Deeply personalized guest experiences
                     </p>
                   </li>
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Diamond size={14} strokeWidth={2} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       Access to exclusive, small-scale ports
                     </p>
                   </li>
@@ -1303,33 +1321,35 @@ export default function YachtCruisesPage() {
               </div>
 
               {/* Side B: Traditional Luxury Cruise */}
-              <div className="lux-vs-card">
-                <div className="lux-card-indicator">The Traditional Choice</div>
-                <h3 className="lux-card-h3">Luxury Cruise</h3>
-                <div className="lux-card-line"></div>
+              <div className="luxury-vs-card">
+                <div className="luxury-card-indicator">
+                  The Traditional Choice
+                </div>
+                <h3 className="luxury-card-h3">Luxury Cruise</h3>
+                <div className="luxury-card-line"></div>
 
-                <ul className="lux-vs-list">
+                <ul className="luxury-vs-list">
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Circle size={14} strokeWidth={1.5} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       Larger ships with more onboard amenities
                     </p>
                   </li>
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Circle size={14} strokeWidth={1.5} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       Broader range of commercial entertainment
                     </p>
                   </li>
                   <li>
-                    <span className="lux-vs-bullet">
+                    <span className="luxury-vs-bullet">
                       <Circle size={14} strokeWidth={1.5} />
                     </span>
-                    <p className="lux-p">
+                    <p className="luxury-p">
                       A more structured, less intimate experience
                     </p>
                   </li>
@@ -1341,54 +1361,56 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== SECTION 06: AUTHORITY — Modern Expert Profile ===== */}
-      <section className="lux-section lux-bg-white lux-authority-section">
-        <div className="lux-container-wide">
-          <div className="lux-authority-modern-grid">
+      <section className="luxury-section luxury-bg-white luxury-authority-section">
+        <div className="luxury-container-wide">
+          <div className="luxury-authority-modern-grid">
             {/* Left Column: Image */}
-            <div className="lux-authority-image-col">
-              <div className="lux-authority-image-wrapper">
-                <div className="lux-authority-image-bg"></div>
+            <div className="luxury-authority-image-col">
+              <div className="luxury-authority-image-wrapper">
+                <div className="luxury-authority-image-bg"></div>
                 <img
                   src={ProfilePicture}
                   alt="Angela Hughes - CEO, Trips & Ships Luxury Travel"
-                  className="lux-authority-image"
+                  className="luxury-authority-image"
                 />
               </div>
             </div>
 
             {/* Right Column: Content */}
-            <div className="lux-authority-content-col">
-              <div className="lux-authority-content">
-                <div className="lux-authority-header-new">
-                  <span className="lux-authority-label">Expert Guidance</span>
-                  <h2 className="lux-authority-title">
+            <div className="luxury-authority-content-col">
+              <div className="luxury-authority-content">
+                <div className="luxury-authority-header-new">
+                  <span className="luxury-authority-label">
+                    Expert Guidance
+                  </span>
+                  <h2 className="luxury-authority-title">
                     Work with Angela Hughes
                   </h2>
-                  <p className="lux-authority-role">
+                  <p className="luxury-authority-role">
                     CEO, Trips & Ships Luxury Travel
                   </p>
                 </div>
 
-                <div className="lux-authority-divider"></div>
+                <div className="luxury-authority-divider"></div>
 
-                <div className="lux-authority-bio-new">
-                  <p className="lux-authority-text">
+                <div className="luxury-authority-bio-new">
+                  <p className="luxury-authority-text">
                     Angela Hughes has spent over four decades in the travel
                     industry and leads a global luxury travel agency with more
                     than 140 advisors.
                   </p>
-                  <p className="lux-authority-text">
+                  <p className="luxury-authority-text">
                     She works directly with the brands shaping the yacht space
                     and spends extensive time onboard and in destination.
                   </p>
                 </div>
 
-                <div className="lux-authority-insight">
-                  <div className="lux-insight-icon">
+                <div className="luxury-authority-insight">
+                  <div className="luxury-insight-icon">
                     <Info size={20} strokeWidth={2} />
                   </div>
-                  <div className="lux-insight-content">
-                    <p className="lux-insight-text">
+                  <div className="luxury-insight-content">
+                    <p className="luxury-insight-text">
                       Clients rarely book the yacht they initially request. They
                       book the yacht that fits once they understand the
                       differences. That is where expertise matters.
@@ -1396,20 +1418,20 @@ export default function YachtCruisesPage() {
                   </div>
                 </div>
 
-                <div className="lux-authority-stats">
-                  <div className="lux-stat-item">
-                    <span className="lux-stat-number">40+</span>
-                    <span className="lux-stat-label">Years Experience</span>
+                <div className="luxury-authority-stats">
+                  <div className="luxury-stat-item">
+                    <span className="luxury-stat-number">40+</span>
+                    <span className="luxury-stat-label">Years Experience</span>
                   </div>
-                  <div className="lux-stat-divider"></div>
-                  <div className="lux-stat-item">
-                    <span className="lux-stat-number">140+</span>
-                    <span className="lux-stat-label">Global Advisors</span>
+                  <div className="luxury-stat-divider"></div>
+                  <div className="luxury-stat-item">
+                    <span className="luxury-stat-number">140+</span>
+                    <span className="luxury-stat-label">Global Advisors</span>
                   </div>
-                  <div className="lux-stat-divider"></div>
-                  <div className="lux-stat-item">
-                    <span className="lux-stat-number">1000+</span>
-                    <span className="lux-stat-label">Happy Clients</span>
+                  <div className="luxury-stat-divider"></div>
+                  <div className="luxury-stat-item">
+                    <span className="luxury-stat-number">1000+</span>
+                    <span className="luxury-stat-label">Happy Clients</span>
                   </div>
                 </div>
               </div>
@@ -1419,12 +1441,12 @@ export default function YachtCruisesPage() {
       </section>
 
       {/* ===== FAQ SECTION ===== */}
-      <section className="lux-section lux-bg-soft">
-        <div className="lux-container-narrow">
-          <div className="lux-faq-header">
-            <h2 className="lux-h2">Frequently Asked Questions</h2>
-            <div className="lux-navy-divider-center"></div>
-            <p className="lux-faq-intro">
+      <section className="luxury-section luxury-bg-soft">
+        <div className="luxury-container-narrow">
+          <div className="luxury-faq-header">
+            <h2 className="luxury-h2">Frequently Asked Questions</h2>
+            <div className="luxury-navy-divider-center"></div>
+            <p className="luxury-faq-intro">
               Everything you need to know about luxury yacht cruises.
             </p>
           </div>
@@ -1434,27 +1456,27 @@ export default function YachtCruisesPage() {
 
       {/* ===== SECTION 07: FINAL CTA — Minimalist, high-impact concluding statement ===== */}
       <section
-        className="lux-section lux-final-cta-section"
+        className="luxury-section luxury-final-cta-section"
         style={{ backgroundImage: `url(${FinalBGImage})` }}
       >
-        <div className="lux-container-wide">
-          <div className="lux-cta-content-center">
-            <p className="lux-p lux-cta-top-line">
+        <div className="luxury-container-wide">
+          <div className="luxury-cta-content-center">
+            <p className="luxury-p luxury-cta-top-line">
               Choosing the right yacht is not about availability.
             </p>
 
-            <h2 className="lux-h2 lux-cta-main-title">
+            <h2 className="luxury-h2 luxury-cta-main-title">
               It is about alignment.
             </h2>
 
-            <div className="lux-navy-divider-center"></div>
+            <div className="luxury-navy-divider-center"></div>
 
-            <p className="lux-p lux-cta-bottom-line">
+            <p className="luxury-p luxury-cta-bottom-line">
               Start with the right strategy and the experience follows.
             </p>
 
-            <div className="lux-cta-action">
-              <button className="lux-btn-primary">
+            <div className="luxury-cta-action">
+              <button className="luxury-btn-primary">
                 Plan Your Yacht Experience
               </button>
             </div>

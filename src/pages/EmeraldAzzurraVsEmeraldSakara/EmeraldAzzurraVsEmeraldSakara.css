@@ -1502,7 +1502,7 @@ p {
 }
 
 .Sakara-faq-inner {
-    max-width: 900px;
+    max-width: 950px;
     width: 100%;
 }
 
@@ -1527,7 +1527,7 @@ p {
 }
 
 .Sakara-faq-accordion {
-    margin-top: 80px;
+    margin-top: 40px;
     border-top: 1px solid #e0e0e0;
 }
 
