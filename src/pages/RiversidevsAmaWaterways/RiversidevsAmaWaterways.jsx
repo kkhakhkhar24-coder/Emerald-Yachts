@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Ship,
   Heart,
@@ -275,16 +275,16 @@ function FAQ() {
   ];
 
   return (
-    <div className="lux-faq-list">
+    <div className="rva-faq-list">
       {faqData.map((item, i) => (
         <div
           key={i}
-          className={`lux-faq-item${open === i ? " lux-open" : ""}`}
+          className={`rva-faq-item${open === i ? " rva-open" : ""}`}
           onClick={() => setOpen(open === i ? null : i)}
         >
-          <div className="lux-faq-q">
+          <div className="rva-faq-q">
             <span>{item.q}</span>
-            <span className="lux-faq-icon">
+            <span className="rva-faq-icon">
               {open === i ? (
                 <Minus size={18} strokeWidth={1.5} />
               ) : (
@@ -293,8 +293,8 @@ function FAQ() {
             </span>
           </div>
           {open === i && (
-            <div className="lux-faq-a">
-              <div className="lux-faq-a-inner">{item.a}</div>
+            <div className="rva-faq-a">
+              <div className="rva-faq-a-inner">{item.a}</div>
             </div>
           )}
         </div>
@@ -305,6 +305,14 @@ function FAQ() {
 
 const RiversidevsAmaWaterways = () => {
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % 3);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="rva-page-wrapper">
@@ -329,15 +337,15 @@ const RiversidevsAmaWaterways = () => {
       <section className="rva-hero-viewport">
         <div className="rva-hero-image-slider">
           <div
-            className="rva-hero-bg-slide rva-active-slide"
+            className={`rva-hero-bg-slide ${currentSlide === 0 ? "rva-active-slide" : ""}`}
             style={{ backgroundImage: `url(${HeroImage1})` }}
           ></div>
           <div
-            className="rva-hero-bg-slide"
+            className={`rva-hero-bg-slide ${currentSlide === 1 ? "rva-active-slide" : ""}`}
             style={{ backgroundImage: `url(${HeroImage2})` }}
           ></div>
           <div
-            className="rva-hero-bg-slide"
+            className={`rva-hero-bg-slide ${currentSlide === 2 ? "rva-active-slide" : ""}`}
             style={{ backgroundImage: `url(${HeroImage3})` }}
           ></div>
         </div>
