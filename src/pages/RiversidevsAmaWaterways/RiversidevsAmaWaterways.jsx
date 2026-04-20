@@ -1151,7 +1151,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* EXPERT PROFILE SECTION */}
-      <section className="rva-section rva-bg-soft" id="rva-expert">
+      <section className="rva-section rva-bg-white" id="rva-expert">
         <div className="rva-container">
           <div className="rva-expert-profile-split">
             <div className="rva-expert-left">
@@ -1218,7 +1218,7 @@ const RiversidevsAmaWaterways = () => {
       </section>
 
       {/* FAQ */}
-      <section className="rva-section rva-bg-white" id="rva-faq">
+      <section className="rva-section rva-bg-soft" id="rva-faq">
         <div className="rva-container">
           <div className="rva-section-header">
             <h2 className="rva-h2">Frequently Asked Questions</h2>

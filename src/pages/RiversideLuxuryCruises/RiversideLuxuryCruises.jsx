@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./RiversideLuxuryCruises.css";
 import Navbar from "../../components/Navbar/Navbar";
@@ -23,6 +23,10 @@ import ImageGellery3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.j
 import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.jpg";
 import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.jpg";
 import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.jpg";
+import ImageGellery8 from "../../assets/RiversideLuxuryCruises/Riversideimage8.jpg";
+import ImageGellery9 from "../../assets/RiversideLuxuryCruises/Riversideimage9.jpg";
+import ImageGellery10 from "../../assets/RiversideLuxuryCruises/Riversideimage10.jpg";
+import ImageGellery11 from "../../assets/RiversideLuxuryCruises/Riversideimage11.jpg";
 import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.jpeg";
 
 const schemaData = {
@@ -253,16 +257,16 @@ function FAQ() {
   ];
 
   return (
-    <div className="lux-faq-list">
+    <div className="riv-faq-list">
       {faqData.map((item, i) => (
         <div
           key={i}
-          className={`lux-faq-item${open === i ? " lux-open" : ""}`}
+          className={`riv-faq-item${open === i ? " riv-open" : ""}`}
           onClick={() => setOpen(open === i ? null : i)}
         >
-          <div className="lux-faq-q">
+          <div className="riv-faq-q">
             <span>{item.q}</span>
-            <span className="lux-faq-icon">
+            <span className="riv-faq-icon">
               {open === i ? (
                 <Minus size={18} strokeWidth={1.5} />
               ) : (
@@ -271,8 +275,8 @@ function FAQ() {
             </span>
           </div>
           {open === i && (
-            <div className="lux-faq-a">
-              <div className="lux-faq-a-inner">{item.a}</div>
+            <div className="riv-faq-a">
+              <div className="riv-faq-a-inner">{item.a}</div>
             </div>
           )}
         </div>
@@ -282,19 +286,7 @@ function FAQ() {
 }
 
 const RiversideLuxuryCruises = () => {
-  const [expandedFaq, setExpandedFaq] = useState(null);
   const [showQuickTake, setShowQuickTake] = useState(false);
-
-  const toggleFaq = (index) => {
-    setExpandedFaq(expandedFaq === index ? null : index);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div className="riv_page_main_container">
@@ -316,11 +308,10 @@ const RiversideLuxuryCruises = () => {
       {/* HERO SECTION */}
       <section className="riv_hero_section">
         <div className="riv_hero_content">
-          <span className="riv_hero_eyebrow">
-            Boutique River Cruise Guide
-          </span>
+          <span className="riv_hero_eyebrow">Boutique River Cruise Guide</span>
           <h1 className="riv_hero_main_h1">
-            Riverside Luxury Cruises <br /> A Boutique Luxury River Cruise Experience
+            Riverside Luxury Cruises <br /> A Boutique Luxury River Cruise
+            Experience
           </h1>
           <p className="riv_hero_sub_p">
             Spacious ships, elevated service, and a refined approach to European
@@ -335,11 +326,13 @@ const RiversideLuxuryCruises = () => {
           </p>
 
           {/* This container expands when the button below is clicked */}
-          <div className={`riv_hero_details ${showQuickTake ? "expanded" : ""}`}>
+          <div
+            className={`riv_hero_details ${showQuickTake ? "expanded" : ""}`}
+          >
             <p className="riv_hero_note">
               Riverside Luxury Cruises is ideal for experienced travelers and
-              luxury clients seeking a quieter, more refined onboard
-              experience than traditional river cruise lines.
+              luxury clients seeking a quieter, more refined onboard experience
+              than traditional river cruise lines.
             </p>
           </div>
 
@@ -387,7 +380,9 @@ const RiversideLuxuryCruises = () => {
             <h2 className="riv-gallery-h2">Refined Moments on Every Deck</h2>
             <div className="riv-gallery-divider"></div>
             <p className="riv-gallery-p">
-              From the first sip of artisanal coffee to sunset views by the pool, discover the thoughtful details that make Riverside a true standout in luxury river cruising.
+              From the first sip of artisanal coffee to sunset views by the
+              pool, discover the thoughtful details that make Riverside a true
+              standout in luxury river cruising.
             </p>
           </div>
           <div className="riv-gallery-bento-grid">
@@ -401,7 +396,9 @@ const RiversideLuxuryCruises = () => {
                 />
                 <div className="riv-gallery-overlay">
                   <span className="riv-gallery-badge">Culinary Art</span>
-                  <h3 className="riv-gallery-h3">Chef-Curated Culinary Creations</h3>
+                  <h3 className="riv-gallery-h3">
+                    Chef-Curated Culinary Creations
+                  </h3>
                 </div>
               </div>
             </div>
@@ -431,7 +428,9 @@ const RiversideLuxuryCruises = () => {
                 />
                 <div className="riv-gallery-overlay">
                   <span className="riv-gallery-badge">Wellness Lounge</span>
-                  <h3 className="riv-gallery-h3">Onboard Spa & Beauty Experience</h3>
+                  <h3 className="riv-gallery-h3">
+                    Onboard Spa & Beauty Experience
+                  </h3>
                 </div>
               </div>
             </div>
@@ -503,15 +502,21 @@ const RiversideLuxuryCruises = () => {
             <div className="riv-gallery-item riv-gallery-feature">
               <div className="riv-gallery-image-box">
                 <img
-                  src={ImageGellery1}
+                  src={ImageGellery8}
                   alt="Luxury Suite"
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Fine Dining</span>
-                  <h3 className="riv-gallery-h3">Elegant Onboard Fine Dining</h3>
+                  <span className="riv-gallery-badge">Luxury Lounge</span>
+                  <h3 className="riv-gallery-h3">
+                    Sophisticated Onboard Lounge & Bar
+                  </h3>
                   <p className="riv-gallery-item_p">
-                    Dine in a beautifully designed restaurant where sophisticated interiors, attentive service, and curated menus create a refined culinary experience.
+                    Unwind in a beautifully designed onboard lounge featuring
+                    stylish interiors, ambient lighting, plush seating, and a
+                    refined bar area. Perfect for relaxing with a signature
+                    drink, socializing, or enjoying quiet moments in an elegant
+                    setting.
                   </p>
                 </div>
               </div>
@@ -521,13 +526,15 @@ const RiversideLuxuryCruises = () => {
             <div className="riv-gallery-item riv-gallery-tall">
               <div className="riv-gallery-image-box">
                 <img
-                  src={ImageGellery2}
+                  src={ImageGellery9}
                   alt="Onboard lifestyle"
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Gourmet Selection</span>
-                  <h3 className="riv-gallery-h3">Artisanal Cuisine & Fresh Selections</h3>
+                  <span className="riv-gallery-badge">Open-Air Luxury</span>
+                  <h3 className="riv-gallery-h3">
+                    Elegant Pool Deck with Panoramic Views
+                  </h3>
                 </div>
               </div>
             </div>
@@ -536,13 +543,15 @@ const RiversideLuxuryCruises = () => {
             <div className="riv-gallery-item riv-gallery-tall">
               <div className="riv-gallery-image-box">
                 <img
-                  src={ImageGellery3}
+                  src={ImageGellery10}
                   alt="Fine Dining"
                   className="riv-gallery-img"
                 />
                 <div className="riv-gallery-overlay">
-                  <span className="riv-gallery-badge">Private Terrace</span>
-                  <h3 className="riv-gallery-h3">Luxury Suite Terrace with Private Jacuzzi</h3>
+                  <span className="riv-gallery-badge">Luxury Suite</span>
+                  <h3 className="riv-gallery-h3">
+                    Elegant Suite with Panoramic Private Terrace
+                  </h3>
                 </div>
               </div>
             </div>
@@ -696,7 +705,7 @@ const RiversideLuxuryCruises = () => {
             </div>
             <div className="riv_experience_media_side">
               <div className="riv_exp_img_frame">
-                <img src="/luxury_river_cruise_3.png" alt="Riverside Life" />
+                <img src={ImageGellery11} alt="Riverside Life" />
               </div>
             </div>
           </div>
@@ -946,9 +955,9 @@ const RiversideLuxuryCruises = () => {
                   <span>European River Cruising</span>
                 </div>
                 <p className="riv_reveal_description">
-                  Riverside Luxury Cruises redefines what a European river cruise
-                  can feel like — more space, better service, and a quieter,
-                  more intentional pace of travel.
+                  Riverside Luxury Cruises redefines what a European river
+                  cruise can feel like — more space, better service, and a
+                  quieter, more intentional pace of travel.
                 </p>
               </div>
             </div>
@@ -974,8 +983,8 @@ const RiversideLuxuryCruises = () => {
       {/* FAQ SECTION (MATCHING LUXURY YACHT DESIGN) */}
       <section className="riv_faq_standard_section" id="riv_faq_section">
         <div className="riv_container_main">
-          <div className="lux-faq-header">
-            <h2 className="lux-h2">Frequently Asked Questions</h2>
+          <div className="riv-faq-header">
+            <h2 className="riv-h2">Frequently Asked Questions</h2>
             <div className="lux-navy-divider-center"></div>
             <p className="lux-faq-intro">
               Everything you need to know about Riverside Luxury Cruises.

@@ -884,14 +884,9 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
    ======================================== */
 .rva-expert-profile-split {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 420px 1fr;
     gap: 60px;
-    background: #ffffff;
-    border-radius: 24px;
-    padding: 50px;
-    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.08);
-    border: 1px solid rgba(39, 68, 114, 0.05);
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     align-items: center;
 }
@@ -903,7 +898,7 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 
 .rva-expert-portrait-wrap {
     position: relative;
-    width: 280px;
+    width: 380px;
 }
 
 .rva-expert-img {
@@ -1029,7 +1024,6 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
     .rva-expert-profile-split {
         grid-template-columns: 1fr;
         gap: 40px;
-        padding: 40px;
         text-align: center;
     }
     .rva-expert-trust-row, .rva-services-list {
@@ -1047,9 +1041,6 @@ body { font-family: var(--font-body); overflow-x: clip; color: #1a1a1a; }
 }
 
 @media (max-width: 480px) {
-    .rva-expert-profile-split {
-        padding: 30px 20px;
-    }
     .rva-expert-name {
         font-size: 28px !important;
     }
