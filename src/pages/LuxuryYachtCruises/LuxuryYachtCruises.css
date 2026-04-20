@@ -53,9 +53,6 @@ body {
 }
 
 
-.luxury-hero h1 {
-    font-size: 60px !important;
-}
 
 /* ========================================
    SHARED CONTAINER & LAYOUT STYLES
@@ -666,6 +663,10 @@ body {
     .luxury-btn-secondary {
         width: 100%;
         padding: 15px 20px;
+    }
+    .luxury-navy-divider-left{
+        width: 50px;
+        margin: 18px auto;
     }
 
 }
@@ -2948,6 +2949,9 @@ body {
     .luxury-card-h3{
         font-size: 24px !important;
     }
+    .luxury-vs-header .luxury-h2{
+        font-size: 24px !important;
+    }
 
 }
 
@@ -3114,7 +3118,6 @@ body {
 .luxury-insight-text {
     font-family: 'Playfair Display', serif !important;
     font-size: 17px !important;
-    font-style: italic !important;
     color: #274472;
     line-height: 1.6 !important;
     font-weight: 400 !important;
@@ -3987,6 +3990,12 @@ body {
     .luxury-faq-q {
         font-size: 14px !important;
     }
+    .luxury-faq-header .luxury-h2{
+        font-size: 24px !important;
+    }
+    .luxury-faq-intro{
+        font-size: 16px !important;
+    }
 
 }
 
@@ -4292,4 +4301,11 @@ body {
     .luxury-highlight-title {
         font-size: 22px !important;
     }
+}
+
+@media(max-width:480px){
+    .luxury-h2{
+        font-size: 24px !important;
+    }
+    
 }

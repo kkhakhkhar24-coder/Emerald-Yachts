@@ -613,12 +613,9 @@ export default function YachtCruisesPage() {
               </p>
 
               <p className="luxury-p">
-                The difference between{" "}
-                <strong>
-                  The Ritz-Carlton Yacht Collection, Aman, Scenic Luxury Cruises
-                  & Tours, Emerald Cruises, Four Seasons Yachts,
-                </strong>{" "}
-                and <strong>Orient Express Yachts</strong> is not just price.
+                The difference between The Ritz-Carlton Yacht Collection, Aman,
+                Scenic Luxury Cruises & Tours, Emerald Cruises, Four Seasons
+                Yachts, and Orient Express Yachts is not just price.
               </p>
 
               <p className="luxury-p luxury-intro-conclusion">

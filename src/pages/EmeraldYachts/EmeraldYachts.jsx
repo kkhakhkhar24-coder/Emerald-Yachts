@@ -44,8 +44,6 @@ const LuxuryPage = () => {
     { name: "The Wall Street Journal", logo: Logo7 },
   ];
 
-
-
   return (
     <>
       <Helmet>
