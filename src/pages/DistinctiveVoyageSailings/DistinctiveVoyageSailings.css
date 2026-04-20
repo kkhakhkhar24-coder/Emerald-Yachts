@@ -363,7 +363,7 @@ section {
   }
 
   .Dist_past_heading {
-    font-size: 30px;
+    font-size: 24px !important;
   }
 
   .Dist_past_section {
@@ -553,6 +553,7 @@ section {
 
   .Dist_trustclean_intro {
     text-align: center;
+    font-size: 17px !important;
   }
 
   .Dist_trustclean_right {
@@ -898,6 +899,9 @@ section {
 
   .Dist_compare_table td {
     padding: 12px 15px;
+  }
+  .Dist_compare_container2 h2{
+    font-size: 28px;
   }
 }
 
@@ -1859,7 +1863,7 @@ section {
   .Dist_voyage_heading,
   .Dist_include_heading,
   .Dist_sailpro_heading {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .Dist_sailpro_card_one,
@@ -1889,6 +1893,18 @@ section {
   .Dist_include_grid {
     grid-template-columns: 1fr;
   }
+  .Dist_faq_heading{
+    font-size: 28px;
+  }
+  .Dist_ready_heading{
+    font-size: 28px;
+  }
+  .Dist_booking_heading{
+    font-size: 28px;
+  }
+  .Dist_past_heading{
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1898,6 +1914,12 @@ section {
   .Dist_secondary_btn {
     width: 100%;
   }
+      .Dist_trustclean_heading, .Dist_hosted_heading, .Dist_voyage_heading, .Dist_include_heading, .Dist_sailpro_heading {
+        font-size: 24px;
+    }
+.Dist_compare_container2 h2{
+  font-size: 24px;
+}
 
   .Dist_trustclean_heading::after,
   .Dist_hosted_heading::after,
@@ -2012,7 +2034,7 @@ section {
   }
 
   .Dist_contact_heading {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 35px;
   }
 
@@ -3121,6 +3143,7 @@ section {
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .suggest_icon {
@@ -3151,6 +3174,7 @@ section {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
+  text-align: center;
   max-width: 100%;
 }
 
