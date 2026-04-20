@@ -2899,18 +2899,7 @@ section {
   color: #fff !important;
 }
 
-/* INNER FRAME EFFECT FOR BLUE CARD */
-.variant_blue::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  pointer-events: none;
-}
+
 
 /* ENHANCED SHADOWS AND TRANSITIONS */
 .Dist_premium_mem_card {
