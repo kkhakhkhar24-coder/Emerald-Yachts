@@ -446,7 +446,7 @@ function YachtsComparison() {
                 <i className="fas fa-anchor"></i>
               </div>
               <h3>Emerald Yachts</h3>
-              <p className="Yachts_price_amount">Approximately $6,000 – $12,000</p>
+              <p className="Yachts_price_amount">Approximately <br /> $6,000 – $12,000</p>
               <p className="Yachts_price_unit">per person</p>
             </div>
 
@@ -489,7 +489,7 @@ function YachtsComparison() {
 
       <section className="Yachts_difference_section">
         <div className="Yachts_difference_inner">
-          <h2>The Biggest Differences Between Scenic and Emerald</h2>
+          <h2>The Biggest Differences Between <br /> Scenic and Emerald</h2>
 
           <div className="Yachts_diff_new_grid">
             {/* SCENIC CARD */}
@@ -543,7 +543,7 @@ function YachtsComparison() {
       {/* SECTION 5 */}
       <section className="Yachts_feel_section">
         <div className="Yachts_feel_inner">
-          <h2>How the Experience Feels Onboard</h2>
+          <h2>How the Experience Feels Onboard?</h2>
 
           <p>Scenic feels structured, elevated, and seamless.</p>
           <p>Emerald feels relaxed, social, and easy.</p>
@@ -637,7 +637,7 @@ function YachtsComparison() {
       {/* SECTION 9 */}
       <section className="Yachts_notfor_section">
         <div className="Yachts_notfor_inner">
-          <h2>Who Each Option Is Not For</h2>
+          <h2>Who Each Option Is Not For?</h2>
 
           <p>Scenic may not be ideal for:</p>
           <p>Travelers focused primarily on lower pricing</p>
@@ -852,7 +852,7 @@ function YachtsComparison() {
         <div className="Yachts_author_inner Yachts_author_split">
           {/* LEFT CONTENT */}
           <div className="Yachts_author_content Yachts_author_content_new">
-            <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel</h2>
+            <h2>Why Work with Angela Hughes and Trips & Ships Luxury Travel?</h2>
 
             <p className="Yachts_author_desc">
               Angela Hughes has over four decades in the travel industry and has
@@ -939,7 +939,7 @@ function YachtsComparison() {
       {/* FAQ SECTION */}
       <section className="Scenic-faq-section">
         <div className="Scenic-faq-inner">
-          <h2>Frequently Asked Questions About Scenic vs Emerald Yachts</h2>
+          <h2>Frequently Asked Questions <br /> About Scenic vs Emerald Yachts</h2>
 
           <div className="Scenic-faq-accordion">
             {faqData.map((faq, index) => (

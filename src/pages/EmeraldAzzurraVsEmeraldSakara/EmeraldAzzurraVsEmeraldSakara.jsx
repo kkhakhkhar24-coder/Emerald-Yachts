@@ -40,6 +40,14 @@ import {
   Activity as BsActivity,
   Award as BsAward,
   CalendarCheck as BsCalendarCheck,
+  Crown,
+  Gem,
+  Sun,
+  Waves,
+  KeyRound,
+  Sparkles,
+  DoorOpen,
+  CircleUser,
 } from "lucide-react";
 
 // ── Main Component ────────────────────────────────────────────────────
@@ -546,7 +554,7 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
       <section className="Sakara_video_section">
         <div className="Sakara_video_container">
           <h2 className="Sakara_video_heading">
-            Emerald Azzurra vs Emerald Sakara: What Actually Matters
+            Emerald Azzurra vs Emerald Sakara: What Actually Matters?
           </h2>
           <p className="Sakara_video_sub">
             These yachts are nearly identical. The mistake most travelers make
@@ -745,16 +753,16 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
               <h4>Suite Categories on Both Yachts</h4>
               <div className="Sakara_suite_list">
                 {[
-                  "Owner's Suite",
-                  "Yacht Suite",
-                  "Terrace Suite",
-                  "Deluxe Balcony Suite",
-                  "Balcony Suite",
-                  "Oceanview Stateroom",
+                  { name: "Owner's Suite", icon: <CircleUser size={20} /> },
+                  { name: "Yacht Suite", icon: <TbYacht size={20} /> },
+                  { name: "Terrace Suite", icon: <Sun size={20} /> },
+                  { name: "Deluxe Balcony Suite", icon: <Sparkles size={20} /> },
+                  { name: "Balcony Suite", icon: <DoorOpen size={20} /> },
+                  { name: "Oceanview Stateroom", icon: <Waves size={20} /> },
                 ].map((s, i) => (
                   <div className="Sakara_suite_item" key={i}>
-                    <MdOutlineKingBed className="Sakara_suite_react_icon" />
-                    <p>{s}</p>
+                    <span className="Sakara_suite_react_icon">{s.icon}</span>
+                    <p>{s.name}</p>
                   </div>
                 ))}
               </div>
@@ -955,10 +963,10 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
       <section className="Sakara_why_trips_section">
         <div className="Sakara_why_trips_container">
           <h2 className="Sakara_why_trips_heading">
-            Why Work With Trips & Ships
+            Why Work With Trips & Ships?
           </h2>
           <p className="Sakara_why_trips_intro">
-            Luxury yacht cruising is not a simple booking. Angela Hughes and the
+            Luxury yacht cruising is not a simple booking. Angela Hughes and the <br />
             Trips & Ships Luxury Travel team help clients make the right
             decision from the start.
           </p>

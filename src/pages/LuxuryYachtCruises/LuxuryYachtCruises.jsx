@@ -702,7 +702,7 @@ export default function YachtCruisesPage() {
             <span className="luxury-mistakes-eyebrow">
               Common Misconceptions
             </span>
-            <h2 className="luxury-h2">Where Clients Get It Wrong</h2>
+            <h2 className="luxury-h2">Where Clients Get It Wrong?</h2>
             <div className="luxury-navy-divider-center"></div>
           </div>
 

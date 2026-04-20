@@ -206,7 +206,7 @@ const EmeraldVsRitzCarltonPage = () => {
           </div>
           <p className="evrc_authority_note">
             Angela Hughes and her team work directly with yacht partners and
-            clients, helping travelers align the right yacht with how they
+            clients, helping travelers align the right yacht <br />with how they
             actually travel.
           </p>
         </div>
@@ -215,7 +215,7 @@ const EmeraldVsRitzCarltonPage = () => {
       {/* ===== SECTION 3 — DECISION FRAMEWORK ===== */}
       <section className="evrc_decision_section">
         <div className="evrc_decision_inner">
-          <h2>How to Decide Before You Dig Deeper</h2>
+          <h2>How to Decide Before You Dig Deeper?</h2>
 
           <div className="evrc_decision_cards">
             <div className="evrc_decision_card evrc_decision_card--emerald">
@@ -449,7 +449,7 @@ const EmeraldVsRitzCarltonPage = () => {
       {/* ===== SECTION 8 — REAL INSIGHT ===== */}
       <section className="evrc_insight_section">
         <div className="evrc_insight_inner">
-          <h2>Where Expectations Go Wrong</h2>
+          <h2>Where Expectations Go Wrong?</h2>
 
           <div className="evrc_method_steps">
             <div className="evrc_method_step">
@@ -490,7 +490,7 @@ const EmeraldVsRitzCarltonPage = () => {
       {/* ===== SECTION 9 — INCLUSIONS & VALUE ===== */}
       <section className="evrc_inclusions_section">
         <div className="evrc_inclusions_inner">
-          <h2>What Each Yacht Includes</h2>
+          <h2>What Each Yacht Includes?</h2>
 
           <div className="evrc_inclusions_grid">
             <div className="evrc_inclusions_card">
@@ -635,7 +635,7 @@ const EmeraldVsRitzCarltonPage = () => {
       {/* ===== SECTION 10 — WHO EACH IS FOR ===== */}
       <section className="evrc_whoisfor_section">
         <div className="evrc_whoisfor_inner">
-          <h2>Who Each Yacht Is Right For</h2>
+          <h2>Who Each Yacht Is Right For?</h2>
 
           <div className="evrc_whoisfor_grid">
             <div className="evrc_whoisfor_card">
@@ -716,7 +716,7 @@ const EmeraldVsRitzCarltonPage = () => {
       {/* ===== SECTION 11 — URGENCY / BOOKING ===== */}
       <section className="evrc_urgency_section">
         <div className="evrc_urgency_inner">
-          <h2>Why Timing Matters</h2>
+          <h2>Why Timing Matters?</h2>
 
           <p>
             Most of our clients book yacht experiences 9 to 18 months in
@@ -725,7 +725,7 @@ const EmeraldVsRitzCarltonPage = () => {
           </p>
 
           <p>
-            We work with a limited number of yacht clients per sailing to ensure
+            We work with a limited number of yacht clients per sailing to ensure <br />
             each placement is strategic.
           </p>
         </div>
