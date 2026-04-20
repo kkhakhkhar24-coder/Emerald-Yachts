@@ -17,10 +17,6 @@ import heroImage1 from "../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg";
 import heroImage2 from "../../assets/ScenicvsFourSeasonsYachts/Hero2.jpg";
 import heroImage3 from "../../assets/ScenicvsFourSeasonsYachts/Hero3.jpg";
 import section5bg from "../../assets/ScenicvsFourSeasonsYachts/Section5_bg.jpg";
-import section12Image1 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Emerald_Cruises.jpg";
-import section12Image2 from "../../assets/ScenicvsFourSeasonsYachts/Ritz_Carlton_Yacht.jpg";
-import section12Image3 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Explora_Journeys.jpg";
-import section12Image4 from "../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg";
 import galleryImage1 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage1.jpg";
 import galleryImage2 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage2.jpg";
 import galleryImage3 from "../../assets/ScenicvsFourSeasonsYachts/GalleryImage3.jpg";
@@ -979,49 +975,48 @@ function ScenicVSFourSeasonsYachts() {
             <h2 className="svf-h2">Explore Other Top Yacht Brands</h2>
             <div className="svf-bar"></div>
           </div>
-          <div className="svf-alt-grid">
-            <div className="svf-alt-card">
-              <div className="svf-alt-img-wrap">
-                <img
-                  src={section12Image1}
-                  alt="Explora Journeys"
-                  className="svf-alt-img"
-                />
-              </div>
-              <div className="svf-alt-cap">
-                <h3 className="svf-alt-title">Explora Journeys</h3>
-              </div>
-            </div>
-            <div className="svf-alt-card">
-              <div className="svf-alt-img-wrap">
-                <img
-                  src={section12Image2}
-                  alt="Ritz-Carlton Yacht Collection"
-                  className="svf-alt-img"
+          <div className="svf-video-grid-3">
+            <div className="svf-video-box-alt">
+              <div className="svf-video-wrapper-alt">
+                <iframe
+                  className="svf-video-player-alt"
+                  src="https://www.youtube.com/embed/o9Pf7o-ICzc"
+                  title="Ritz-Carlton Yacht Collection"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
               <div className="svf-alt-cap">
                 <h3 className="svf-alt-title">Ritz-Carlton Yacht Collection</h3>
               </div>
             </div>
-            <div className="svf-alt-card">
-              <div className="svf-alt-img-wrap">
-                <img
-                  src={section12Image3}
-                  alt="Scenic Eclipse"
-                  className="svf-alt-img"
+
+            <div className="svf-video-box-alt">
+              <div className="svf-video-wrapper-alt">
+                <iframe
+                  className="svf-video-player-alt"
+                  src="https://www.youtube.com/embed/07r79O5k1Cw"
+                  title="AMAN At Sea"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
               <div className="svf-alt-cap">
-                <h3 className="svf-alt-title">Scenic Eclipse</h3>
+                <h3 className="svf-alt-title">AMAN At Sea</h3>
               </div>
             </div>
-            <div className="svf-alt-card">
-              <div className="svf-alt-img-wrap">
-                <img
-                  src={section12Image4}
-                  alt="Emerald Cruises"
-                  className="svf-alt-img"
+
+            <div className="svf-video-box-alt">
+              <div className="svf-video-wrapper-alt">
+                <iframe
+                  className="svf-video-player-alt"
+                  src="https://www.youtube.com/embed/0uxC2nq35-4"
+                  title="Emerald Cruises"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
               <div className="svf-alt-cap">
