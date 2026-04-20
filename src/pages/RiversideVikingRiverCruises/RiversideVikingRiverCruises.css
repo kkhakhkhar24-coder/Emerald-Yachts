@@ -28,11 +28,11 @@ body {
     color: var(--text-dark);
 }
 
-.page-wrapper {
+.vik-page-wrapper {
     width: 100%;
 }
 
-.container {
+.vik-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -42,186 +42,186 @@ body {
    TYPOGRAPHY — RESPONSIVE
    ======================================== */
 @media (min-width: 1024px) {
-    .riv_hero_main_h1 {
+    .vik-riv_hero_main_h1 {
         font-size: 60px !important;
     }
 
-    .intro-heading,
-    .trust-heading,
-    .comparison-heading,
-    .real-diff-heading,
-    .pricing-heading,
-    .best-for-heading,
-    .mistake-heading,
-    .choose-heading,
-    .expert-heading,
-    .choose-right-heading,
-    .cta-heading,
-    .about-heading,
-    .lux-h2,
-    .lux-faq-header .lux-h2 {
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
         font-size: 48px !important;
     }
 
-    .content-section p,
-    .riv_hero_sub_p,
-    .river-qa-main,
-    .river-qa-detail,
-    .intro-main-text,
-    .intro-option p,
-    .intro-closing,
-    .trust-intro,
-    .trust-point-content p,
-    .comparison-cell-feature,
-    .comparison-cell,
-    .real-diff-text,
-    .real-diff-list-item p,
-    .real-diff-conclusion,
-    .pricing-conclusion,
-    .mistake-main-text,
-    .mistake-subtext,
-    .mistake-option-text,
-    .mistake-conclusion,
-    .choose-intro,
-    .choose-list-text,
-    .expert-intro,
-    .expert-category-text,
-    .expert-insight-text,
-    .expert-insight-badge span,
-    .choose-right-main-text,
-    .choose-right-subtext,
-    .choose-right-item-text,
-    .cta-subtext,
-    .about-intro,
-    .about-text,
-    .about-credential-text,
-    .about-brand-text,
-    .lux-faq-intro,
-    .lux-faq-a-inner {
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
         font-size: 18px !important;
     }
 }
 
 @media (max-width: 1023px) {
-    .riv_hero_main_h1 {
+    .vik-riv_hero_main_h1 {
         font-size: 32px !important;
     }
 
-    .intro-heading,
-    .trust-heading,
-    .comparison-heading,
-    .real-diff-heading,
-    .pricing-heading,
-    .best-for-heading,
-    .mistake-heading,
-    .choose-heading,
-    .expert-heading,
-    .choose-right-heading,
-    .cta-heading,
-    .about-heading,
-    .lux-h2,
-    .lux-faq-header .lux-h2 {
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
         font-size: 28px !important;
         text-align: center;
     }
 
-    .content-section p,
-    .riv_hero_sub_p,
-    .river-qa-main,
-    .river-qa-detail,
-    .intro-main-text,
-    .intro-option p,
-    .intro-closing,
-    .trust-intro,
-    .trust-point-content p,
-    .comparison-cell-feature,
-    .comparison-cell,
-    .real-diff-text,
-    .real-diff-list-item p,
-    .real-diff-conclusion,
-    .pricing-conclusion,
-    .mistake-main-text,
-    .mistake-subtext,
-    .mistake-option-text,
-    .mistake-conclusion,
-    .choose-intro,
-    .choose-list-text,
-    .expert-intro,
-    .expert-category-text,
-    .expert-insight-text,
-    .expert-insight-badge span,
-    .choose-right-main-text,
-    .choose-right-subtext,
-    .choose-right-item-text,
-    .cta-subtext,
-    .about-intro,
-    .about-text,
-    .about-credential-text,
-    .about-brand-text,
-    .lux-faq-intro,
-    .lux-faq-a-inner {
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
         font-size: 17px !important;
     }
 }
 
 @media (max-width: 480px) {
-    .riv_hero_main_h1 {
+    .vik-riv_hero_main_h1 {
         font-size: 26px !important;
     }
 
-    .intro-heading,
-    .trust-heading,
-    .comparison-heading,
-    .real-diff-heading,
-    .pricing-heading,
-    .best-for-heading,
-    .mistake-heading,
-    .choose-heading,
-    .expert-heading,
-    .choose-right-heading,
-    .cta-heading,
-    .about-heading,
-    .lux-h2,
-    .lux-faq-header .lux-h2 {
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
         font-size: 24px !important;
         text-align: center;
     }
 
-    .content-section p,
-    .riv_hero_sub_p,
-    .river-qa-main,
-    .river-qa-detail,
-    .intro-main-text,
-    .intro-option p,
-    .intro-closing,
-    .trust-intro,
-    .trust-point-content p,
-    .comparison-cell-feature,
-    .comparison-cell,
-    .real-diff-text,
-    .real-diff-list-item p,
-    .real-diff-conclusion,
-    .pricing-conclusion,
-    .mistake-main-text,
-    .mistake-subtext,
-    .mistake-option-text,
-    .mistake-conclusion,
-    .choose-intro,
-    .choose-list-text,
-    .expert-intro,
-    .expert-category-text,
-    .expert-insight-text,
-    .expert-insight-badge span,
-    .choose-right-main-text,
-    .choose-right-subtext,
-    .choose-right-item-text,
-    .cta-subtext,
-    .about-intro,
-    .about-text,
-    .about-credential-text,
-    .about-brand-text,
-    .lux-faq-intro,
-    .lux-faq-a-inner {
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
         font-size: 16px !important;
     }
 }
@@ -229,19 +229,60 @@ body {
 /* ========================================
    SECTION PADDING
    ======================================== */
-.content-section,
-.cta-section {
+.vik-content-section,
+.vik-cta-section {
     padding: 60px 20px;
 }
 
-.lux-video-section {
+.vik-lux-video-section {
     padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.lux-container-wide {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.vik-lux-video-header {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vik-lux-video-subtitle {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: var(--text-body) !important;
+    font-weight: 300 !important;
+    margin-top: 20px;
+}
+
+.vik-lux-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: #000;
+}
+
+.vik-lux-video-player {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 1023px) {
-    .content-section,
-    .cta-section,
-    .lux-video-section {
+
+    .vik-content-section,
+    .vik-cta-section,
+    .vik-lux-video-section {
         padding: 50px 15px;
     }
 }
@@ -249,17 +290,17 @@ body {
 /* ========================================
    SHARED SECTION HEADING STYLE
    ======================================== */
-.intro-accent-line,
-.trust-accent-line,
-.comparison-accent-line,
-.real-diff-accent-line,
-.pricing-accent-line,
-.best-for-accent-line,
-.mistake-accent-line,
-.choose-accent-line,
-.expert-accent-line,
-.choose-right-accent-line,
-.about-accent-line {
+.vik-intro-accent-line,
+.vik-trust-accent-line,
+.vik-comparison-accent-line,
+.vik-real-diff-accent-line,
+.vik-pricing-accent-line,
+.vik-best-for-accent-line,
+.vik-mistake-accent-line,
+.vik-choose-accent-line,
+.vik-expert-accent-line,
+.vik-choose-right-accent-line,
+.vik-about-accent-line {
     width: 40px;
     height: 2px;
     background: var(--navy);
@@ -267,7 +308,7 @@ body {
     margin: 18px auto 0;
 }
 
-.lux-navy-divider-center {
+.vik-lux-navy-divider-center {
     width: 40px;
     height: 2px;
     background: var(--navy);
@@ -282,7 +323,7 @@ body {
 /* ========================================
    HERO SECTION
    ======================================== */
-.riv_hero_viewport {
+.vik-riv_hero_viewport {
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -298,7 +339,7 @@ body {
     overflow: hidden;
 }
 
-.riv_hero_viewport::before {
+.vik-riv_hero_viewport::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -307,7 +348,7 @@ body {
 }
 
 /* Animated particles effect */
-.riv_hero_viewport::after {
+.vik-riv_hero_viewport::after {
     content: "";
     position: absolute;
     top: -50%;
@@ -323,12 +364,16 @@ body {
 }
 
 @keyframes riv_viking_bgSlider {
-    0%, 100% {
+
+    0%,
+    100% {
         background-image: url('../../assets/Riverside-vs-Viking/Hero1.jpg');
     }
+
     33% {
         background-image: url('../../assets/Riverside-vs-Viking/Hero2.jpg');
     }
+
     66% {
         background-image: url('../../assets/Riverside-vs-Viking/Hero3.jpg');
     }
@@ -338,12 +383,13 @@ body {
     0% {
         transform: translateY(0) rotate(0deg);
     }
+
     100% {
         transform: translateY(100px) rotate(5deg);
     }
 }
 
-.riv_hero_content {
+.vik-riv_hero_content {
     max-width: 850px;
     width: 100%;
     position: relative;
@@ -359,13 +405,14 @@ body {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.river-hero-eyebrow {
+.vik-river-hero-eyebrow {
     font-size: 11px !important;
     letter-spacing: 3px !important;
     font-weight: 600 !important;
@@ -376,7 +423,7 @@ body {
     font-family: var(--font-body) !important;
 }
 
-.riv_hero_main_h1 {
+.vik-riv_hero_main_h1 {
     font-family: var(--font-display) !important;
     font-weight: 400 !important;
     line-height: 1.15 !important;
@@ -387,7 +434,7 @@ body {
     text-align: center;
 }
 
-.riv_hero_sub_p {
+.vik-riv_hero_sub_p {
     font-family: var(--font-display) !important;
     font-style: italic !important;
     color: rgba(255, 255, 255, 0.8) !important;
@@ -399,11 +446,11 @@ body {
 }
 
 /* Read More */
-.riv_hero_read_more_outer {
+.vik-riv_hero_read_more_outer {
     margin-bottom: 0;
 }
 
-.riv_hero_read_more_btn {
+.vik-riv_hero_read_more_btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -423,12 +470,12 @@ body {
     transition: all 0.35s ease;
 }
 
-.riv_hero_read_more_btn:hover {
+.vik-riv_hero_read_more_btn:hover {
     background: rgba(255, 255, 255, 0.18);
     border-color: rgba(255, 255, 255, 0.45);
 }
 
-.river-hero-details {
+.vik-river-hero-details {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
@@ -440,7 +487,7 @@ body {
         visibility 0s linear 0.5s;
 }
 
-.river-hero-details.expanded {
+.vik-river-hero-details.vik-expanded {
     max-height: 800px;
     opacity: 1;
     visibility: visible;
@@ -453,7 +500,7 @@ body {
         visibility 0s linear 0s;
 }
 
-.river-quick-answer {
+.vik-river-quick-answer {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(30px) saturate(150%);
     -webkit-backdrop-filter: blur(30px) saturate(150%);
@@ -464,14 +511,14 @@ body {
     text-align: left;
 }
 
-.river-qa-main {
+.vik-river-qa-main {
     font-weight: 300 !important;
     color: rgba(255, 255, 255, 0.85) !important;
     line-height: 1.65 !important;
     margin-bottom: 14px !important;
 }
 
-.river-qa-emphasis {
+.vik-river-qa-emphasis {
     font-family: var(--font-display) !important;
     font-size: 24px !important;
     color: #fff !important;
@@ -480,14 +527,14 @@ body {
     font-style: italic !important;
 }
 
-.river-qa-detail {
+.vik-river-qa-detail {
     font-weight: 300 !important;
     color: rgba(255, 255, 255, 0.8) !important;
     line-height: 1.65 !important;
     margin: 0 !important;
 }
 
-.riv_hero_button_group {
+.vik-riv_hero_button_group {
     display: flex;
     gap: 14px;
     margin-top: 20px;
@@ -495,7 +542,7 @@ body {
     justify-content: center;
 }
 
-.riv_hero_btn_filled {
+.vik-riv_hero_btn_filled {
     background: #fff;
     color: var(--navy);
     padding: 16px 36px;
@@ -510,13 +557,13 @@ body {
     font-family: var(--font-body) !important;
 }
 
-.riv_hero_btn_filled:hover {
+.vik-riv_hero_btn_filled:hover {
     background: #e8edf5;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.riv_hero_btn_transparent {
+.vik-riv_hero_btn_transparent {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.45);
     color: #fff;
@@ -531,7 +578,7 @@ body {
     font-family: var(--font-body) !important;
 }
 
-.riv_hero_btn_transparent:hover {
+.vik-riv_hero_btn_transparent:hover {
     background: #fff;
     color: var(--navy);
     border-color: #fff;
@@ -539,20 +586,22 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .riv_hero_viewport {
+    .vik-riv_hero_viewport {
         padding: 120px 20px 80px 20px;
         min-height: 90vh;
     }
-    .riv_hero_main_h1 {
+
+    .vik-riv_hero_main_h1 {
         font-size: 32px !important;
     }
 }
 
 @media (max-width: 480px) {
-    .riv_hero_viewport {
+    .vik-riv_hero_viewport {
         padding: 100px 10px 60px 10px;
     }
-    .riv_hero_main_h1 {
+
+    .vik-riv_hero_main_h1 {
         font-size: 26px !important;
     }
 }
@@ -560,16 +609,16 @@ body {
 /* ========================================
    INTRO SECTION
    ======================================== */
-.intro-section {
+.vik-intro-section {
     background: var(--bg-soft);
 }
 
-.intro-wrapper {
+.vik-intro-wrapper {
     max-width: 820px;
     margin: 0 auto;
 }
 
-.intro-heading {
+.vik-intro-heading {
     text-align: center;
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
@@ -579,7 +628,7 @@ body {
     letter-spacing: -0.01em;
 }
 
-.intro-main-text {
+.vik-intro-main-text {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     line-height: 1.7 !important;
@@ -587,20 +636,20 @@ body {
     margin-bottom: 22px !important;
 }
 
-.intro-sub-text {
+.vik-intro-sub-text {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin-bottom: 20px !important;
 }
 
-.intro-options {
+.vik-intro-options {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-bottom: 28px;
 }
 
-.intro-option {
+.vik-intro-option {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -611,12 +660,12 @@ body {
     transition: all 0.3s ease;
 }
 
-.intro-option:hover {
+.vik-intro-option:hover {
     border-color: rgba(39, 68, 114, 0.2);
     box-shadow: 0 2px 12px rgba(39, 68, 114, 0.06);
 }
 
-.intro-option-bullet {
+.vik-intro-option-bullet {
     width: 6px;
     height: 6px;
     background: var(--navy);
@@ -624,17 +673,17 @@ body {
     flex-shrink: 0;
 }
 
-.intro-option-bullet::after {
+.vik-intro-option-bullet::after {
     display: none;
 }
 
-.intro-option p {
+.vik-intro-option p {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
 }
 
-.intro-closing {
+.vik-intro-closing {
     font-weight: 400 !important;
     color: var(--navy) !important;
     margin-top: 24px !important;
@@ -645,20 +694,20 @@ body {
 /* ========================================
    TRUST SECTION
    ======================================== */
-.trust-section {
+.vik-trust-section {
     background: var(--bg-white);
 }
 
-.trust-wrapper {
+.vik-trust-wrapper {
     max-width: 820px;
     margin: 0 auto;
 }
 
-.trust-header {
+.vik-trust-header {
     margin-bottom: 36px;
 }
 
-.trust-heading {
+.vik-trust-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -667,19 +716,19 @@ body {
     letter-spacing: -0.01em;
 }
 
-.trust-intro {
+.vik-trust-intro {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin-bottom: 28px !important;
 }
 
-.trust-points {
+.vik-trust-points {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-.trust-point {
+.vik-trust-point {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -690,11 +739,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.trust-point:hover {
+.vik-trust-point:hover {
     border-color: rgba(39, 68, 114, 0.18);
 }
 
-.trust-point-number {
+.vik-trust-point-number {
     font-family: var(--font-display) !important;
     font-weight: 700 !important;
     color: var(--navy);
@@ -705,7 +754,7 @@ body {
     text-align: center;
 }
 
-.trust-point-content p {
+.vik-trust-point-content p {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
@@ -714,21 +763,21 @@ body {
 /* ========================================
    COMPARISON TABLES
    ======================================== */
-.table-section {
+.vik-table-section {
     background: var(--bg-soft);
 }
 
-.comparison-wrapper {
+.vik-comparison-wrapper {
     max-width: 920px;
     margin: 0 auto;
 }
 
-.comparison-header {
+.vik-comparison-header {
     margin-bottom: 36px;
     text-align: center;
 }
 
-.comparison-heading {
+.vik-comparison-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -737,14 +786,14 @@ body {
     letter-spacing: -0.01em;
 }
 
-.comparison-table-modern {
+.vik-comparison-table-modern {
     background: var(--bg-white);
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--navy-border);
 }
 
-.comparison-table-header {
+.vik-comparison-table-header {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
     background: var(--navy);
@@ -752,7 +801,7 @@ body {
     gap: 16px;
 }
 
-.comparison-col-feature {
+.vik-comparison-col-feature {
     font-size: 11px !important;
     font-weight: 600 !important;
     color: rgba(255, 255, 255, 0.6) !important;
@@ -760,7 +809,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-.comparison-col-brand {
+.vik-comparison-col-brand {
     font-family: var(--font-display) !important;
     font-size: 20px !important;
     font-weight: 500 !important;
@@ -768,17 +817,17 @@ body {
     text-align: center;
 }
 
-.riverside-col,
-.viking-col {
+.vik-riverside-col,
+.vik-viking-col {
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     padding-left: 16px;
 }
 
-.comparison-table-body {
+.vik-comparison-table-body {
     padding: 0;
 }
 
-.comparison-row {
+.vik-comparison-row {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
     padding: 18px 28px;
@@ -787,22 +836,22 @@ body {
     transition: background 0.2s ease;
 }
 
-.comparison-row:last-child {
+.vik-comparison-row:last-child {
     border-bottom: none;
 }
 
-.comparison-row:hover {
+.vik-comparison-row:hover {
     background: rgba(39, 68, 114, 0.02);
 }
 
-.comparison-cell-feature {
+.vik-comparison-cell-feature {
     font-weight: 600 !important;
     color: var(--navy) !important;
     display: flex;
     align-items: center;
 }
 
-.comparison-cell {
+.vik-comparison-cell {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     text-align: center;
@@ -811,8 +860,8 @@ body {
     justify-content: center;
 }
 
-.riverside-cell,
-.viking-cell {
+.vik-riverside-cell,
+.vik-viking-cell {
     border-left: 1px solid var(--navy-border);
     padding-left: 16px;
 }
@@ -820,21 +869,21 @@ body {
 /* ========================================
    REAL DIFFERENCE
    ======================================== */
-.real-difference-section {
+.vik-real-difference-section {
     background: var(--bg-white);
 }
 
-.real-diff-wrapper {
+.vik-real-diff-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.real-diff-header {
+.vik-real-diff-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.real-diff-heading {
+.vik-real-diff-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -843,13 +892,13 @@ body {
     letter-spacing: -0.01em;
 }
 
-.real-diff-grid {
+.vik-real-diff-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
-.real-diff-card {
+.vik-real-diff-card {
     background: var(--bg-soft);
     border: 1px solid var(--navy-border);
     border-radius: 12px;
@@ -858,20 +907,20 @@ body {
     position: relative;
 }
 
-.real-diff-card::before {
+.vik-real-diff-card::before {
     display: none;
 }
 
-.real-diff-card:hover {
+.vik-real-diff-card:hover {
     box-shadow: 0 4px 20px rgba(39, 68, 114, 0.06);
     border-color: rgba(39, 68, 114, 0.16);
 }
 
-.real-diff-card-header {
+.vik-real-diff-card-header {
     margin-bottom: 24px;
 }
 
-.real-diff-badge {
+.vik-real-diff-badge {
     display: inline-block;
     padding: 5px 14px;
     border-radius: 4px;
@@ -882,17 +931,17 @@ body {
     margin-bottom: 16px;
 }
 
-.riverside-badge {
+.vik-riverside-badge {
     background: var(--navy);
     color: #fff;
 }
 
-.viking-badge {
+.vik-viking-badge {
     background: var(--navy-soft);
     color: var(--navy);
 }
 
-.real-diff-card-title {
+.vik-real-diff-card-title {
     font-family: var(--font-display) !important;
     font-size: 22px !important;
     font-weight: 500 !important;
@@ -901,39 +950,39 @@ body {
     margin: 0 !important;
 }
 
-.real-diff-card-content {
+.vik-real-diff-card-content {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-.real-diff-text {
+.vik-real-diff-text {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     line-height: 1.65 !important;
     margin: 0 !important;
 }
 
-.real-diff-subtext {
+.vik-real-diff-subtext {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin: 0 !important;
 }
 
-.real-diff-list {
+.vik-real-diff-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-left: 6px;
 }
 
-.real-diff-list-item {
+.vik-real-diff-list-item {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.real-diff-bullet {
+.vik-real-diff-bullet {
     width: 5px;
     height: 5px;
     background: var(--navy);
@@ -942,13 +991,13 @@ body {
     opacity: 0.5;
 }
 
-.real-diff-list-item p {
+.vik-real-diff-list-item p {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
 }
 
-.real-diff-conclusion {
+.vik-real-diff-conclusion {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin: 8px 0 0 0 !important;
@@ -959,20 +1008,20 @@ body {
 /* ========================================
    VIDEO SECTION
    ======================================== */
-.lux-video-section {
+.vik-lux-video-section {
     background: #0f1c2e;
     position: relative;
 }
 
-.lux-video-section::before {
+.vik-lux-video-section::before {
     display: none;
 }
 
-.lux-video-section::after {
+.vik-lux-video-section::after {
     display: none;
 }
 
-.lux-video-header {
+.vik-lux-video-header {
     text-align: center;
     margin-bottom: 32px;
     max-width: 800px;
@@ -982,17 +1031,17 @@ body {
     z-index: 1;
 }
 
-.lux-video-header .lux-h2 {
+.vik-lux-video-header .vik-lux-h2 {
     color: #fff !important;
     line-height: 1.25 !important;
     margin-bottom: 14px;
 }
 
-.lux-video-header .lux-navy-divider-center {
+.vik-lux-video-header .vik-lux-navy-divider-center {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.lux-video-subtitle {
+.vik-lux-video-subtitle {
     font-family: var(--font-body) !important;
     color: rgba(255, 255, 255, 0.6) !important;
     line-height: 1.65 !important;
@@ -1003,8 +1052,8 @@ body {
     margin-right: auto;
 }
 
-.lux-video-wrapper {
-    max-width: 1100px;
+.vik-lux-video-wrapper {
+    max-width: 1300px;
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
@@ -1016,15 +1065,15 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.lux-video-wrapper::before {
+.vik-lux-video-wrapper::before {
     display: none;
 }
 
-.lux-video-wrapper:hover {
+.vik-lux-video-wrapper:hover {
     box-shadow: 0 16px 50px rgba(0, 0, 0, 0.5);
 }
 
-.lux-video-player {
+.vik-lux-video-player {
     position: absolute;
     top: 0;
     left: 0;
@@ -1039,21 +1088,21 @@ body {
 /* ========================================
    PRICING
    ======================================== */
-.pricing-section {
+.vik-pricing-section {
     background: var(--bg-soft);
 }
 
-.pricing-wrapper {
+.vik-pricing-wrapper {
     max-width: 820px;
     margin: 0 auto;
 }
 
-.pricing-header {
+.vik-pricing-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.pricing-heading {
+.vik-pricing-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1062,14 +1111,14 @@ body {
     letter-spacing: -0.01em;
 }
 
-.pricing-cards-grid {
+.vik-pricing-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-bottom: 32px;
 }
 
-.pricing-card {
+.vik-pricing-card {
     background: var(--bg-white);
     border-radius: 10px;
     overflow: hidden;
@@ -1077,16 +1126,16 @@ body {
     transition: all 0.35s ease;
 }
 
-.pricing-card:hover {
+.vik-pricing-card:hover {
     box-shadow: 0 6px 24px rgba(39, 68, 114, 0.08);
 }
 
-.pricing-card-header {
+.vik-pricing-card-header {
     padding: 24px 28px 16px;
     text-align: center;
 }
 
-.pricing-badge {
+.vik-pricing-badge {
     display: inline-block;
     padding: 6px 18px;
     border-radius: 4px;
@@ -1096,22 +1145,22 @@ body {
     text-transform: uppercase;
 }
 
-.riverside-pricing-badge {
+.vik-riverside-pricing-badge {
     background: var(--navy);
     color: #fff;
 }
 
-.viking-pricing-badge {
+.vik-viking-pricing-badge {
     background: var(--navy-soft);
     color: var(--navy);
 }
 
-.pricing-card-body {
+.vik-pricing-card-body {
     padding: 16px 28px 32px;
     text-align: center;
 }
 
-.pricing-amount {
+.vik-pricing-amount {
     font-family: var(--font-display) !important;
     font-size: 34px !important;
     font-weight: 400 !important;
@@ -1120,12 +1169,12 @@ body {
     margin-bottom: 8px;
 }
 
-.pricing-unit {
+.vik-pricing-unit {
     font-weight: 300 !important;
     color: var(--text-muted) !important;
 }
 
-.pricing-conclusion {
+.vik-pricing-conclusion {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     text-align: center;
@@ -1139,21 +1188,21 @@ body {
 /* ========================================
    BEST FOR
    ======================================== */
-.best-for-section {
+.vik-best-for-section {
     background: var(--bg-white);
 }
 
-.best-for-wrapper {
+.vik-best-for-wrapper {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.best-for-header {
+.vik-best-for-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.best-for-heading {
+.vik-best-for-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1162,13 +1211,13 @@ body {
     letter-spacing: -0.01em;
 }
 
-.best-for-grid {
+.vik-best-for-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.best-for-card {
+.vik-best-for-card {
     background: var(--bg-soft);
     border: 1px solid var(--navy-border);
     border-radius: 10px;
@@ -1181,7 +1230,7 @@ body {
     overflow: hidden;
 }
 
-.best-for-card::before {
+.vik-best-for-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1193,16 +1242,16 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.riverside-best-card::before {
+.vik-riverside-best-card::before {
     opacity: 0.5;
 }
 
-.best-for-card:hover {
+.vik-best-for-card:hover {
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
     border-color: rgba(39, 68, 114, 0.16);
 }
 
-.best-for-icon {
+.vik-best-for-icon {
     flex-shrink: 0;
     width: 52px;
     height: 52px;
@@ -1216,65 +1265,65 @@ body {
     transition: all 0.3s ease;
 }
 
-.best-for-card:hover .best-for-icon {
+.vik-best-for-card:hover .vik-best-for-icon {
     border-color: var(--navy);
 }
 
-.best-for-content {
+.vik-best-for-content {
     flex: 1;
 }
 
-.best-for-category {
+.vik-best-for-category {
     font-weight: 500 !important;
     color: var(--text-dark) !important;
     margin: 0 0 8px 0 !important;
 }
 
-.best-for-answer {
+.vik-best-for-answer {
     font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 500 !important;
     margin: 0 !important;
 }
 
-.riverside-best-card .best-for-answer {
+.vik-riverside-best-card .vik-best-for-answer {
     color: var(--navy);
 }
 
-.viking-best-card .best-for-answer {
+.vik-viking-best-card .vik-best-for-answer {
     color: rgba(39, 68, 114, 0.6);
 }
 
 /* ========================================
    BIGGEST MISTAKE (DARK)
    ======================================== */
-.mistake-section {
+.vik-mistake-section {
     background: var(--navy);
     position: relative;
     overflow: hidden;
 }
 
-.mistake-section::before {
+.vik-mistake-section::before {
     display: none;
 }
 
-.mistake-section::after {
+.vik-mistake-section::after {
     display: none;
 }
 
-.mistake-wrapper {
+.vik-mistake-wrapper {
     max-width: 820px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
-.mistake-header {
+.vik-mistake-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.mistake-heading {
+.vik-mistake-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: #fff !important;
@@ -1283,24 +1332,24 @@ body {
     letter-spacing: -0.01em;
 }
 
-.mistake-accent-line {
+.vik-mistake-accent-line {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.mistake-content {
+.vik-mistake-content {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.mistake-main-text {
+.vik-mistake-main-text {
     font-weight: 300 !important;
     color: rgba(255, 255, 255, 0.85) !important;
     margin: 0 !important;
     text-align: center;
 }
 
-.mistake-emphasis {
+.vik-mistake-emphasis {
     font-family: var(--font-display) !important;
     font-size: 28px !important;
     font-weight: 500 !important;
@@ -1310,14 +1359,14 @@ body {
     font-style: italic;
 }
 
-.mistake-subtext {
+.vik-mistake-subtext {
     font-weight: 400 !important;
     color: rgba(255, 255, 255, 0.8) !important;
     margin: 0 !important;
     text-align: center;
 }
 
-.mistake-options {
+.vik-mistake-options {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -1325,7 +1374,7 @@ body {
     margin: 8px 0;
 }
 
-.mistake-option {
+.vik-mistake-option {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -1336,12 +1385,12 @@ body {
     transition: all 0.3s ease;
 }
 
-.mistake-option:hover {
+.vik-mistake-option:hover {
     background: rgba(255, 255, 255, 0.09);
     border-color: rgba(255, 255, 255, 0.18);
 }
 
-.mistake-option-icon {
+.vik-mistake-option-icon {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
@@ -1354,25 +1403,25 @@ body {
     transition: all 0.3s ease;
 }
 
-.mistake-option:hover .mistake-option-icon {
+.vik-mistake-option:hover .vik-mistake-option-icon {
     background: rgba(255, 255, 255, 0.12);
 }
 
-.mistake-option-number {
+.vik-mistake-option-number {
     font-family: var(--font-display) !important;
     font-size: 18px !important;
     font-weight: 700 !important;
     color: rgba(255, 255, 255, 0.8);
 }
 
-.mistake-option-text {
+.vik-mistake-option-text {
     font-weight: 400 !important;
     color: rgba(255, 255, 255, 0.9) !important;
     margin: 0 !important;
     flex: 1;
 }
 
-.mistake-conclusion {
+.vik-mistake-conclusion {
     font-weight: 400 !important;
     color: #fff !important;
     margin: 16px 0 0 0 !important;
@@ -1384,21 +1433,21 @@ body {
 /* ========================================
    WHO SHOULD CHOOSE
    ======================================== */
-.who-should-choose-section {
+.vik-who-should-choose-section {
     background: var(--bg-soft);
 }
 
-.choose-wrapper {
+.vik-choose-wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.choose-header {
+.vik-choose-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.choose-heading {
+.vik-choose-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1407,13 +1456,13 @@ body {
     letter-spacing: -0.01em;
 }
 
-.choose-grid {
+.vik-choose-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
-.choose-card {
+.vik-choose-card {
     background: var(--bg-white);
     border-radius: 10px;
     overflow: hidden;
@@ -1422,7 +1471,7 @@ body {
     position: relative;
 }
 
-.choose-card::before {
+.vik-choose-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1431,28 +1480,28 @@ body {
     height: 3px;
 }
 
-.riverside-choose-card::before {
+.vik-riverside-choose-card::before {
     background: var(--navy);
 }
 
-.viking-choose-card::before {
+.vik-viking-choose-card::before {
     background: rgba(39, 68, 114, 0.3);
 }
 
-.choose-card:hover {
+.vik-choose-card:hover {
     box-shadow: 0 6px 24px rgba(39, 68, 114, 0.08);
 }
 
-.choose-card:hover::before {
+.vik-choose-card:hover::before {
     height: 4px;
 }
 
-.choose-card-header {
+.vik-choose-card-header {
     padding: 30px 30px 22px;
     text-align: center;
 }
 
-.choose-badge {
+.vik-choose-badge {
     display: inline-block;
     padding: 5px 18px;
     border-radius: 4px;
@@ -1463,17 +1512,17 @@ body {
     margin-bottom: 16px;
 }
 
-.riverside-choose-badge {
+.vik-riverside-choose-badge {
     background: var(--navy);
     color: #fff;
 }
 
-.viking-choose-badge {
+.vik-viking-choose-badge {
     background: var(--navy-soft);
     color: var(--navy);
 }
 
-.choose-card-title {
+.vik-choose-card-title {
     font-family: var(--font-display) !important;
     font-size: 22px !important;
     font-weight: 500 !important;
@@ -1482,23 +1531,23 @@ body {
     margin: 0 !important;
 }
 
-.choose-card-body {
+.vik-choose-card-body {
     padding: 0 30px 30px;
 }
 
-.choose-intro {
+.vik-choose-intro {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin: 0 0 20px 0 !important;
 }
 
-.choose-list {
+.vik-choose-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.choose-list-item {
+.vik-choose-list-item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
@@ -1509,11 +1558,11 @@ body {
     border: 1px solid transparent;
 }
 
-.choose-list-item:hover {
+.vik-choose-list-item:hover {
     border-color: var(--navy-border);
 }
 
-.choose-list-icon {
+.vik-choose-list-icon {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
@@ -1525,16 +1574,16 @@ body {
     color: #fff;
 }
 
-.viking-choose-card .choose-list-icon {
+.vik-viking-choose-card .vik-choose-list-icon {
     background: rgba(39, 68, 114, 0.5);
 }
 
-.choose-list-icon svg {
+.vik-choose-list-icon svg {
     width: 14px;
     height: 14px;
 }
 
-.choose-list-text {
+.vik-choose-list-text {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
@@ -1544,21 +1593,21 @@ body {
 /* ========================================
    EXPERT INSIGHT
    ======================================== */
-.expert-insight-section {
+.vik-expert-insight-section {
     background: var(--bg-white);
 }
 
-.expert-wrapper {
+.vik-expert-wrapper {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.expert-header {
+.vik-expert-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.expert-heading {
+.vik-expert-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1567,27 +1616,27 @@ body {
     letter-spacing: -0.01em;
 }
 
-.expert-content {
+.vik-expert-content {
     display: flex;
     flex-direction: column;
     gap: 26px;
 }
 
-.expert-intro {
+.vik-expert-intro {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin: 0 !important;
     text-align: center;
 }
 
-.expert-categories {
+.vik-expert-categories {
     display: flex;
     flex-direction: column;
     gap: 14px;
     padding: 0;
 }
 
-.expert-category {
+.vik-expert-category {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -1598,11 +1647,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.expert-category:hover {
+.vik-expert-category:hover {
     border-color: rgba(39, 68, 114, 0.18);
 }
 
-.expert-category-icon {
+.vik-expert-category-icon {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
@@ -1615,24 +1664,24 @@ body {
     position: relative;
 }
 
-.expert-category-icon::after {
+.vik-expert-category-icon::after {
     display: none;
 }
 
-.expert-category-number {
+.vik-expert-category-number {
     font-family: var(--font-display) !important;
     font-weight: 700 !important;
     color: #fff;
 }
 
-.expert-category-text {
+.vik-expert-category-text {
     font-weight: 400 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
     flex: 1;
 }
 
-.expert-insight-box {
+.vik-expert-insight-box {
     background: var(--bg-soft);
     border-left: 3px solid var(--navy);
     border-radius: 0 8px 8px 0;
@@ -1642,15 +1691,15 @@ body {
     position: relative;
 }
 
-.expert-insight-box::before {
+.vik-expert-insight-box::before {
     display: none;
 }
 
-.expert-insight-box:hover {
+.vik-expert-insight-box:hover {
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
 }
 
-.expert-insight-badge {
+.vik-expert-insight-badge {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1659,17 +1708,17 @@ body {
     border-bottom: 1px solid var(--navy-border);
 }
 
-.expert-insight-badge svg {
+.vik-expert-insight-badge svg {
     color: var(--navy);
     flex-shrink: 0;
 }
 
-.expert-insight-badge span {
+.vik-expert-insight-badge span {
     font-weight: 700 !important;
     color: var(--navy) !important;
 }
 
-.expert-insight-text {
+.vik-expert-insight-text {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     line-height: 1.7 !important;
@@ -1681,21 +1730,21 @@ body {
 /* ========================================
    HOW TO CHOOSE
    ======================================== */
-.how-to-choose-section {
+.vik-how-to-choose-section {
     background: var(--bg-soft);
 }
 
-.choose-right-wrapper {
+.vik-choose-right-wrapper {
     max-width: 820px;
     margin: 0 auto;
 }
 
-.choose-right-header {
+.vik-choose-right-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.choose-right-heading {
+.vik-choose-right-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1704,13 +1753,13 @@ body {
     letter-spacing: -0.01em;
 }
 
-.choose-right-content {
+.vik-choose-right-content {
     display: flex;
     flex-direction: column;
     gap: 26px;
 }
 
-.choose-right-main-text {
+.vik-choose-right-main-text {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     margin: 0 !important;
@@ -1718,21 +1767,21 @@ body {
     padding: 0;
 }
 
-.choose-right-subtext {
+.vik-choose-right-subtext {
     font-weight: 500 !important;
     color: var(--navy) !important;
     margin: 0 !important;
     text-align: center;
 }
 
-.choose-right-checklist {
+.vik-choose-right-checklist {
     display: flex;
     flex-direction: column;
     gap: 14px;
     padding: 0;
 }
 
-.choose-right-item {
+.vik-choose-right-item {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -1745,16 +1794,16 @@ body {
     overflow: hidden;
 }
 
-.choose-right-item::before {
+.vik-choose-right-item::before {
     display: none;
 }
 
-.choose-right-item:hover {
+.vik-choose-right-item:hover {
     border-color: rgba(39, 68, 114, 0.18);
     box-shadow: 0 2px 12px rgba(39, 68, 114, 0.05);
 }
 
-.choose-right-icon {
+.vik-choose-right-icon {
     flex-shrink: 0;
     width: 36px;
     height: 36px;
@@ -1766,12 +1815,12 @@ body {
     color: #fff;
 }
 
-.choose-right-icon svg {
+.vik-choose-right-icon svg {
     width: 18px;
     height: 18px;
 }
 
-.choose-right-item-text {
+.vik-choose-right-item-text {
     font-weight: 500 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
@@ -1781,21 +1830,21 @@ body {
 /* ========================================
    CTA
    ======================================== */
-.cta-section {
+.vik-cta-section {
     background: var(--navy);
     position: relative;
     overflow: hidden;
 }
 
-.cta-section::before {
+.vik-cta-section::before {
     display: none;
 }
 
-.cta-section::after {
+.vik-cta-section::after {
     display: none;
 }
 
-.cta-wrapper {
+.vik-cta-wrapper {
     max-width: 820px;
     margin: 0 auto;
     text-align: center;
@@ -1803,11 +1852,11 @@ body {
     z-index: 1;
 }
 
-.cta-content {
+.vik-cta-content {
     margin-bottom: 36px;
 }
 
-.cta-heading {
+.vik-cta-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: #fff !important;
@@ -1816,21 +1865,21 @@ body {
     letter-spacing: -0.01em;
 }
 
-.cta-subtext {
+.vik-cta-subtext {
     font-weight: 300 !important;
     color: rgba(255, 255, 255, 0.75) !important;
     margin: 0 !important;
 }
 
-.cta-buttons {
+.vik-cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.cta-primary,
-.cta-secondary {
+.vik-cta-primary,
+.vik-cta-secondary {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1848,72 +1897,72 @@ body {
     overflow: hidden;
 }
 
-.cta-primary::before,
-.cta-secondary::before {
+.vik-cta-primary::before,
+.vik-cta-secondary::before {
     display: none;
 }
 
-.cta-primary span,
-.cta-secondary span {
+.vik-cta-primary span,
+.vik-cta-secondary span {
     position: relative;
     z-index: 1;
 }
 
-.cta-primary svg,
-.cta-secondary svg {
+.vik-cta-primary svg,
+.vik-cta-secondary svg {
     position: relative;
     z-index: 1;
     transition: transform 0.3s ease;
 }
 
-.cta-primary {
+.vik-cta-primary {
     background: #fff;
     color: var(--navy);
 }
 
-.cta-primary:hover {
+.vik-cta-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-.cta-primary:hover svg {
+.vik-cta-primary:hover svg {
     transform: translateX(4px);
 }
 
-.cta-secondary {
+.vik-cta-secondary {
     background: transparent;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.cta-secondary:hover {
+.vik-cta-secondary:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.7);
     transform: translateY(-2px);
 }
 
-.cta-secondary:hover svg {
+.vik-cta-secondary:hover svg {
     transform: scale(1.1);
 }
 
 /* ========================================
    ABOUT ANGELA
    ======================================== */
-.about-section {
+.vik-about-section {
     background: var(--bg-white);
 }
 
-.about-wrapper {
+.vik-about-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.about-header {
+.vik-about-header {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.about-heading {
+.vik-about-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1922,38 +1971,38 @@ body {
     letter-spacing: -0.01em;
 }
 
-.about-content {
+.vik-about-content {
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 48px;
     align-items: start;
 }
 
-.about-portrait-section {
+.vik-about-portrait-section {
     position: sticky;
     top: 100px;
 }
 
-.about-portrait {
+.vik-about-portrait {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--navy-border);
 }
 
-.about-portrait-img {
+.vik-about-portrait-img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.about-text-content {
+.vik-about-text-content {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.about-intro {
+.vik-about-intro {
     font-weight: 400 !important;
     color: var(--navy) !important;
     margin: 0 !important;
@@ -1961,19 +2010,19 @@ body {
     border-bottom: 1px solid var(--navy-border);
 }
 
-.about-text {
+.vik-about-text {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     margin: 0 !important;
 }
 
-.about-credentials {
+.vik-about-credentials {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.about-credential-item {
+.vik-about-credential-item {
     display: flex;
     gap: 16px;
     padding: 20px;
@@ -1983,11 +2032,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.about-credential-item:hover {
+.vik-about-credential-item:hover {
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
 }
 
-.about-credential-icon {
+.vik-about-credential-icon {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
@@ -1999,19 +2048,19 @@ body {
     color: #fff;
 }
 
-.about-credential-icon svg {
+.vik-about-credential-icon svg {
     width: 20px;
     height: 20px;
 }
 
-.about-credential-text {
+.vik-about-credential-text {
     font-weight: 400 !important;
     color: var(--navy) !important;
     margin: 0 !important;
     flex: 1;
 }
 
-.about-brand-statement {
+.vik-about-brand-statement {
     display: flex;
     gap: 16px;
     padding: 22px 24px;
@@ -2022,11 +2071,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.about-brand-statement:hover {
+.vik-about-brand-statement:hover {
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
 }
 
-.about-brand-icon {
+.vik-about-brand-icon {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
@@ -2038,12 +2087,12 @@ body {
     color: #fff;
 }
 
-.about-brand-icon svg {
+.vik-about-brand-icon svg {
     width: 20px;
     height: 20px;
 }
 
-.about-brand-text {
+.vik-about-brand-text {
     font-weight: 400 !important;
     color: var(--navy) !important;
     margin: 0 !important;
@@ -2053,26 +2102,26 @@ body {
 /* ========================================
    FAQ
    ======================================== */
-.faq-section {
+.vik-faq-section {
     background: var(--bg-soft);
 }
 
-.faq-section .container {
+.vik-faq-section .vik-container {
     max-width: var(--section-max);
     width: 100%;
     margin: 0 auto;
 }
 
-.lux-faq-header {
+.vik-lux-faq-header {
     text-align: center;
     margin-bottom: 36px;
 }
 
-.lux-faq-header .lux-h2 {
+.vik-lux-faq-header .vik-lux-h2 {
     margin-bottom: 20px;
 }
 
-.lux-faq-intro {
+.vik-lux-faq-intro {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     font-weight: 300 !important;
@@ -2081,22 +2130,22 @@ body {
     margin-top: 20px;
 }
 
-.lux-faq-list {
+.vik-lux-faq-list {
     border-top: 1px solid rgba(39, 68, 114, 0.1);
     margin-top: 36px;
 }
 
-.lux-faq-item {
+.vik-lux-faq-item {
     border-bottom: 1px solid rgba(39, 68, 114, 0.1);
     cursor: pointer;
     transition: background 0.2s;
 }
 
-.lux-faq-item:hover {
+.vik-lux-faq-item:hover {
     background: rgba(231, 243, 245, 0.55);
 }
 
-.lux-faq-q {
+.vik-lux-faq-q {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2109,21 +2158,21 @@ body {
     line-height: 1.45 !important;
 }
 
-.lux-faq-icon {
+.vik-lux-faq-icon {
     color: #274472;
     flex-shrink: 0;
     transition: transform 0.3s;
 }
 
-.lux-faq-item.lux-open .lux-faq-icon {
+.vik-lux-faq-item.vik-lux-open .vik-lux-faq-icon {
     transform: rotate(180deg);
 }
 
-.lux-faq-a {
+.vik-lux-faq-a {
     padding: 0 8px 22px;
 }
 
-.lux-faq-a-inner {
+.vik-lux-faq-a-inner {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     line-height: 1.75 !important;
@@ -2135,104 +2184,105 @@ body {
    RESPONSIVE — TABLET (≤1023px)
    ======================================== */
 @media (max-width: 1023px) {
-    .real-diff-grid,
-    .choose-grid,
-    .about-content {
+
+    .vik-real-diff-grid,
+    .vik-choose-grid,
+    .vik-about-content {
         grid-template-columns: 1fr;
         gap: 28px;
     }
 
-    .lux-faq-section {
+    .vik-lux-faq-section {
         padding: 70px 30px !important;
     }
 
-    .lux-faq-header {
+    .vik-lux-faq-header {
         margin-bottom: 36px;
     }
 
-    .lux-faq-header .lux-h2 {
+    .vik-lux-faq-header .vik-lux-h2 {
         font-size: 28px !important;
     }
 
-    .about-portrait-section {
+    .vik-about-portrait-section {
         position: relative;
         top: 0;
         max-width: 360px;
         margin: 0 auto;
     }
 
-    .best-for-grid {
+    .vik-best-for-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
-    .comparison-table-header {
+    .vik-comparison-table-header {
         padding: 16px 22px;
         gap: 12px;
     }
 
-    .comparison-row {
+    .vik-comparison-row {
         padding: 16px 22px;
         gap: 12px;
     }
 
-    .real-diff-card {
+    .vik-real-diff-card {
         padding: 28px;
     }
 
-    .choose-card-header {
+    .vik-choose-card-header {
         padding: 26px 24px 20px;
     }
 
-    .choose-card-body {
+    .vik-choose-card-body {
         padding: 0 24px 24px;
     }
 
-    .mistake-option {
+    .vik-mistake-option {
         padding: 20px;
         gap: 16px;
     }
 
-    .mistake-option-icon {
+    .vik-mistake-option-icon {
         width: 40px;
         height: 40px;
     }
 
-    .expert-category {
+    .vik-expert-category {
         padding: 18px 20px;
         gap: 16px;
     }
 
-    .expert-category-icon {
+    .vik-expert-category-icon {
         width: 40px;
         height: 40px;
     }
 
-    .expert-insight-box {
+    .vik-expert-insight-box {
         padding: 24px 26px;
     }
 
-    .about-credential-item {
+    .vik-about-credential-item {
         padding: 18px;
         gap: 14px;
     }
 
-    .about-credential-icon {
+    .vik-about-credential-icon {
         width: 36px;
         height: 36px;
     }
 
-    .about-brand-statement {
+    .vik-about-brand-statement {
         padding: 20px 22px;
         gap: 14px;
     }
 
-    .about-brand-icon {
+    .vik-about-brand-icon {
         width: 36px;
         height: 36px;
     }
 
-    .lux-video-header .lux-h2 {
+    .vik-lux-video-header .vik-lux-h2 {
         font-size: 28px !important;
     }
 }
@@ -2241,183 +2291,183 @@ body {
    RESPONSIVE — MOBILE (≤767px)
    ======================================== */
 @media (max-width: 767px) {
-    .lux-faq-q {
+    .vik-lux-faq-q {
         font-size: 15px !important;
         padding: 18px 6px;
     }
 
-    .comparison-table-header {
+    .vik-comparison-table-header {
         padding: 14px 16px;
         gap: 10px;
     }
 
-    .comparison-row {
+    .vik-comparison-row {
         padding: 14px 16px;
         gap: 10px;
     }
 
-    .comparison-col-brand {
+    .vik-comparison-col-brand {
         font-size: 16px !important;
     }
 
-    .real-diff-card {
+    .vik-real-diff-card {
         padding: 24px;
     }
 
-    .real-diff-card-title {
+    .vik-real-diff-card-title {
         font-size: 20px !important;
     }
 
-    .best-for-card {
+    .vik-best-for-card {
         padding: 24px 20px;
         gap: 16px;
     }
 
-    .best-for-icon {
+    .vik-best-for-icon {
         width: 46px;
         height: 46px;
     }
 
-    .best-for-category {
+    .vik-best-for-category {
         font-size: 16px !important;
     }
 
-    .best-for-answer {
+    .vik-best-for-answer {
         font-size: 20px !important;
     }
 
-    .pricing-cards-grid {
+    .vik-pricing-cards-grid {
         grid-template-columns: 1fr;
         gap: 18px;
     }
 
-    .pricing-amount {
+    .vik-pricing-amount {
         font-size: 28px !important;
     }
 
-    .mistake-emphasis {
+    .vik-mistake-emphasis {
         font-size: 22px !important;
     }
 
-    .mistake-option {
+    .vik-mistake-option {
         padding: 18px;
         gap: 14px;
         border-radius: 6px;
     }
 
-    .mistake-option-icon {
+    .vik-mistake-option-icon {
         width: 38px;
         height: 38px;
     }
 
-    .choose-card {
+    .vik-choose-card {
         border-radius: 8px;
     }
 
-    .choose-card-header {
+    .vik-choose-card-header {
         padding: 22px 20px 18px;
     }
 
-    .choose-card-body {
+    .vik-choose-card-body {
         padding: 0 20px 20px;
     }
 
-    .choose-card-title {
+    .vik-choose-card-title {
         font-size: 18px !important;
     }
 
-    .choose-list-item {
+    .vik-choose-list-item {
         padding: 12px 14px;
         gap: 10px;
     }
 
-    .expert-category {
+    .vik-expert-category {
         padding: 16px 18px;
         gap: 14px;
         border-radius: 6px;
     }
 
-    .expert-category-icon {
+    .vik-expert-category-icon {
         width: 38px;
         height: 38px;
     }
 
-    .expert-insight-box {
+    .vik-expert-insight-box {
         padding: 22px 22px;
         border-radius: 0 6px 6px 0;
     }
 
-    .choose-right-item {
+    .vik-choose-right-item {
         padding: 16px 18px;
         gap: 14px;
         border-radius: 6px;
     }
 
-    .choose-right-icon {
+    .vik-choose-right-icon {
         width: 32px;
         height: 32px;
     }
 
-    .choose-right-icon svg {
+    .vik-choose-right-icon svg {
         width: 16px;
         height: 16px;
     }
 
-    .cta-buttons {
+    .vik-cta-buttons {
         flex-direction: column;
         gap: 12px;
         align-items: stretch;
     }
 
-    .cta-primary,
-    .cta-secondary {
+    .vik-cta-primary,
+    .vik-cta-secondary {
         width: 100%;
         justify-content: center;
         padding: 14px 28px;
     }
 
-    .about-portrait-section {
+    .vik-about-portrait-section {
         max-width: 280px;
     }
 
-    .about-credential-item {
+    .vik-about-credential-item {
         padding: 16px;
         gap: 12px;
         border-radius: 6px;
     }
 
-    .about-credential-icon {
+    .vik-about-credential-icon {
         width: 34px;
         height: 34px;
         border-radius: 6px;
     }
 
-    .about-credential-icon svg {
+    .vik-about-credential-icon svg {
         width: 18px;
         height: 18px;
     }
 
-    .about-brand-statement {
+    .vik-about-brand-statement {
         padding: 18px 20px;
         gap: 12px;
         border-radius: 0 6px 6px 0;
     }
 
-    .about-brand-icon {
+    .vik-about-brand-icon {
         width: 34px;
         height: 34px;
     }
 
-    .about-brand-icon svg {
+    .vik-about-brand-icon svg {
         width: 18px;
         height: 18px;
     }
 
-    .lux-video-header .lux-h2 {
+    .vik-lux-video-header .vik-lux-h2 {
         font-size: 24px !important;
     }
 
-    .lux-video-wrapper {
+    .vik-lux-video-wrapper {
         border-radius: 6px;
     }
 }
@@ -2426,122 +2476,122 @@ body {
    RESPONSIVE — SMALL MOBILE (≤480px)
    ======================================== */
 @media (max-width: 480px) {
-    .lux-faq-q {
+    .vik-lux-faq-q {
         font-size: 14px !important;
     }
 
-    .real-diff-card {
+    .vik-real-diff-card {
         padding: 22px 18px;
     }
 
-    .real-diff-card-title {
+    .vik-real-diff-card-title {
         font-size: 18px !important;
     }
 
-    .best-for-card {
+    .vik-best-for-card {
         padding: 20px 16px;
         gap: 14px;
     }
 
-    .best-for-icon {
+    .vik-best-for-icon {
         width: 42px;
         height: 42px;
     }
 
-    .best-for-answer {
+    .vik-best-for-answer {
         font-size: 18px !important;
     }
 
-    .mistake-emphasis {
+    .vik-mistake-emphasis {
         font-size: 20px !important;
     }
 
-    .mistake-option {
+    .vik-mistake-option {
         padding: 16px;
         gap: 12px;
     }
 
-    .mistake-option-icon {
+    .vik-mistake-option-icon {
         width: 36px;
         height: 36px;
     }
 
-    .mistake-option-number {
+    .vik-mistake-option-number {
         font-size: 16px !important;
     }
 
-    .choose-card-header {
+    .vik-choose-card-header {
         padding: 18px 16px 14px;
     }
 
-    .choose-card-body {
+    .vik-choose-card-body {
         padding: 0 16px 16px;
     }
 
-    .choose-list-item {
+    .vik-choose-list-item {
         padding: 10px 12px;
         gap: 8px;
     }
 
-    .choose-list-icon {
+    .vik-choose-list-icon {
         width: 22px;
         height: 22px;
     }
 
-    .choose-list-icon svg {
+    .vik-choose-list-icon svg {
         width: 12px;
         height: 12px;
     }
 
-    .expert-insight-box {
+    .vik-expert-insight-box {
         padding: 18px 16px;
     }
 
-    .choose-right-item {
+    .vik-choose-right-item {
         padding: 14px 16px;
     }
 
-    .about-portrait-section {
+    .vik-about-portrait-section {
         max-width: 240px;
     }
 
-    .about-credential-item {
+    .vik-about-credential-item {
         padding: 14px;
         gap: 10px;
     }
 
-    .about-credential-icon {
+    .vik-about-credential-icon {
         width: 30px;
         height: 30px;
     }
 
-    .about-credential-icon svg {
+    .vik-about-credential-icon svg {
         width: 16px;
         height: 16px;
     }
 
-    .about-brand-statement {
+    .vik-about-brand-statement {
         padding: 16px;
         gap: 10px;
     }
 
-    .about-brand-icon {
+    .vik-about-brand-icon {
         width: 30px;
         height: 30px;
     }
 
-    .about-brand-icon svg {
+    .vik-about-brand-icon svg {
         width: 16px;
         height: 16px;
     }
 
-    .cta-primary,
-    .cta-secondary {
+    .vik-cta-primary,
+    .vik-cta-secondary {
         padding: 14px 20px;
         font-size: 11px !important;
     }
 
-    .lux-video-header .lux-h2 {
+    .vik-lux-video-header .vik-lux-h2 {
         font-size: 22px !important;
     }
 }
@@ -2549,17 +2599,17 @@ body {
 /* ========================================
    PREMIUM IMAGE GALLERY
    ======================================== */
-.gallery-section {
+.vik-gallery-section {
     background: var(--bg-white);
     padding: 80px 20px;
 }
 
-.gallery-header {
+.vik-gallery-header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.gallery-heading {
+.vik-gallery-heading {
     font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -2568,28 +2618,28 @@ body {
     letter-spacing: -0.01em;
 }
 
-.gallery-accent-line {
+.vik-gallery-accent-line {
     width: 40px;
     height: 2px;
     background: var(--navy);
     margin: 18px auto 24px;
 }
 
-.gallery-intro {
+.vik-gallery-intro {
     font-weight: 300 !important;
     color: var(--text-body) !important;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.premium-gallery-grid {
+.vik-premium-gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
     margin-top: 50px;
 }
 
-.gallery-item {
+.vik-gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
@@ -2598,27 +2648,27 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.item-large {
+.vik-item-large {
     grid-column: span 2;
 }
 
-.item-tall {
+.vik-item-tall {
     grid-row: span 2;
     height: 664px;
 }
 
-.gallery-item img {
+.vik-gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.gallery-item:hover img {
+.vik-gallery-item:hover img {
     transform: scale(1.1);
 }
 
-.gallery-overlay {
+.vik-gallery-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(39, 68, 114, 0.85) 0%, transparent 60%);
@@ -2629,11 +2679,11 @@ body {
     padding: 30px;
 }
 
-.gallery-item:hover .gallery-overlay {
+.vik-gallery-item:hover .vik-gallery-overlay {
     opacity: 1;
 }
 
-.gallery-overlay span {
+.vik-gallery-overlay span {
     color: #fff;
     font-size: 13px;
     font-weight: 600;
@@ -2643,35 +2693,40 @@ body {
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.gallery-item:hover .gallery-overlay span {
+.vik-gallery-item:hover .vik-gallery-overlay span {
     transform: translateY(0);
 }
 
 @media (max-width: 1023px) {
-    .premium-gallery-grid {
+    .vik-premium-gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
-    .item-large {
+
+    .vik-item-large {
         grid-column: span 1;
     }
-    .item-tall {
+
+    .vik-item-tall {
         grid-row: span 1;
         height: 320px;
     }
 }
 
 @media (max-width: 767px) {
-    .premium-gallery-grid {
+    .vik-premium-gallery-grid {
         grid-template-columns: 1fr;
     }
-    .gallery-item {
+
+    .vik-gallery-item {
         height: 280px;
     }
-    .item-tall {
+
+    .vik-item-tall {
         height: 280px;
     }
-    .gallery-section {
+
+    .vik-gallery-section {
         padding: 60px 15px;
     }
 }

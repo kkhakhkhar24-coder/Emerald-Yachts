@@ -207,51 +207,51 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is Riverside Luxury Cruises known for",
+      q: "What is Riverside Luxury Cruises known for?",
       a: "Riverside Luxury Cruises is known for spacious ships and boutique luxury service.",
     },
     {
-      q: "How much does a Riverside river cruise cost",
+      q: "How much does a Riverside river cruise cost?",
       a: "$4,000 to $10,000+ depending on suite and itinerary.",
     },
     {
-      q: "Is Riverside a luxury river cruise line",
+      q: "Is Riverside a luxury river cruise line?",
       a: "Yes, it is positioned as boutique luxury.",
     },
     {
-      q: "What rivers does Riverside sail",
+      q: "What rivers does Riverside sail?",
       a: "Danube, Rhine, and Main.",
     },
     {
-      q: "What ships are in the fleet",
+      q: "What ships are in the fleet?",
       a: "Mozart, Debussy, and Ravel.",
     },
     {
-      q: "Is Riverside all-inclusive",
+      q: "Is Riverside all-inclusive?",
       a: "Partially, but not fully all-inclusive.",
     },
     {
-      q: "How does it compare to Viking",
+      q: "How does it compare to Viking?",
       a: "More space and boutique experience than Viking River Cruises.",
     },
     {
-      q: "Is it better than AmaWaterways",
+      q: "Is it better than AmaWaterways?",
       a: "Depends on preference; Riverside is quieter and more refined than AmaWaterways.",
     },
     {
-      q: "Who should choose Riverside",
+      q: "Who should choose Riverside?",
       a: "Experienced luxury travelers.",
     },
     {
-      q: "Are excursions included",
+      q: "Are excursions included?",
       a: "Some are included; varies by itinerary.",
     },
     {
-      q: "What makes it different",
+      q: "What makes it different?",
       a: "Space, service, boutique feel.",
     },
     {
-      q: "Is it worth it",
+      q: "Is it worth it?",
       a: "Yes for travelers prioritizing experience.",
     },
   ];
@@ -444,7 +444,7 @@ const RiversideLuxuryCruises = () => {
           <div className="riv_trust_layout_grid">
             <div className="riv_trust_card_panel">
               <div className="riv_trust_badge">ELITE EXPERTISE</div>
-              <h2 className="riv_trust_h2_title">Why Trust This Guide</h2>
+              <h2 className="riv_trust_h2_title">Why Trust This Guide?</h2>
               <div className="riv_trust_points_container">
                 <div className="riv_trust_point">
                   <CheckCircle size={20} className="riv_point_icon" />
@@ -461,7 +461,7 @@ const RiversideLuxuryCruises = () => {
               </div>
             </div>
             <div className="riv_fits_card_panel">
-              <h2 className="riv_fits_h2_title">Where Riverside Fits</h2>
+              <h2 className="riv_fits_h2_title">Where Riverside Fits?</h2>
               <p className="riv_fits_description">
                 Riverside sits between premium and ultra-luxury river cruise
                 lines.
@@ -807,7 +807,7 @@ const RiversideLuxuryCruises = () => {
               </div>
             </div>
             <div className="riv_vibe_panel">
-              <h2 className="riv_vibe_h2_title">Who It's For</h2>
+              <h2 className="riv_vibe_h2_title">Who It's For?</h2>
               <div className="riv_vibe_group">
                 <div className="riv_vibe_positive">
                   <strong>Best For:</strong>
@@ -935,7 +935,7 @@ const RiversideLuxuryCruises = () => {
           <div className="riv_reveal_header_box">
             <span className="riv_reveal_eyebrow">The Experience</span>
             <h2 className="riv_reveal_h2">
-              Why Riverside Stands Apart from Other River Cruises
+              Why Riverside Stands Apart <br /> from Other River Cruises?
             </h2>
             <div className="riv_reveal_divider"></div>
           </div>

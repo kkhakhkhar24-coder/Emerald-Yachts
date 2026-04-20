@@ -305,16 +305,16 @@ function FAQ() {
     ];
 
     return (
-        <div className="lux-faq-list">
+        <div className="vik-lux-faq-list">
             {faqData.map((item, i) => (
                 <div
                     key={i}
-                    className={`lux-faq-item${open === i ? " lux-open" : ""}`}
+                    className={`vik-lux-faq-item${open === i ? " vik-lux-open" : ""}`}
                     onClick={() => setOpen(open === i ? null : i)}
                 >
-                    <div className="lux-faq-q">
+                    <div className="vik-lux-faq-q">
                         <span>{item.q}</span>
-                        <span className="lux-faq-icon">
+                        <span className="vik-lux-faq-icon">
                             {open === i ? (
                                 <Minus size={18} strokeWidth={1.5} />
                             ) : (
@@ -323,8 +323,8 @@ function FAQ() {
                         </span>
                     </div>
                     {open === i && (
-                        <div className="lux-faq-a">
-                            <div className="lux-faq-a-inner">{item.a}</div>
+                        <div className="vik-lux-faq-a">
+                            <div className="vik-lux-faq-a-inner">{item.a}</div>
                         </div>
                     )}
                 </div>
@@ -342,7 +342,7 @@ const RiversideVsViking = () => {
     };
 
     return (
-        <div className="page-wrapper">
+        <div className="vik-page-wrapper">
             {/* SEO & Schema */}
             <Helmet>
                 <title>Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</title>
@@ -361,64 +361,64 @@ const RiversideVsViking = () => {
             <Navbar />
 
             {/* HERO SECTION */}
-            <section className="riv_hero_viewport">
-                <div className="riv_hero_content">
-                    <span className="river-hero-eyebrow">River Cruise Planning</span>
-                    <h1 className="riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
-                    <p className="riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
+            <section className="vik-riv_hero_viewport">
+                <div className="vik-riv_hero_content">
+                    <span className="vik-river-hero-eyebrow">River Cruise Planning</span>
+                    <h1 className="vik-riv_hero_main_h1">Riverside vs Viking River Cruises: Which River Cruise Is Actually Right for You</h1>
+                    <p className="vik-riv_hero_sub_p">A clear, expert comparison to help you choose the right river cruise experience in Europe</p>
 
                     {/* QUICK ANSWER BOX */}
-                    <div className="riv_hero_read_more_outer">
+                    <div className="vik-riv_hero_read_more_outer">
                         <button
-                            className="riv_hero_read_more_btn"
+                            className="vik-riv_hero_read_more_btn"
                             onClick={toggleReadMore}
                         >
                             {isReadMoreOpen ? 'Read Less' : 'Read More'}
                             {isReadMoreOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                         </button>
 
-                        <div className={`river-hero-details ${isReadMoreOpen ? 'expanded' : ''}`}>
-                            <div className="river-quick-answer">
-                                <p className="river-qa-main">
+                        <div className={`vik-river-hero-details ${isReadMoreOpen ? 'vik-expanded' : ''}`}>
+                            <div className="vik-river-quick-answer">
+                                <p className="vik-river-qa-main">
                                     The biggest mistake travelers make when comparing these two brands is assuming they are choosing between equals.
                                 </p>
-                                <p className="river-qa-emphasis">They are not.</p>
-                                <p className="river-qa-detail">
+                                <p className="vik-river-qa-emphasis">They are not.</p>
+                                <p className="vik-river-qa-detail">
                                     Riverside Luxury Cruises is a boutique luxury river cruise experience with more space, refinement, and a quieter onboard atmosphere. Viking River Cruises is a premium river cruise line designed for first-time travelers who want structure, consistency, and ease.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="riv_hero_button_group">
-                        <button className="riv_hero_btn_filled">Compare River Cruise Lines</button>
-                        <button className="riv_hero_btn_transparent">Plan My River Cruise</button>
+                    <div className="vik-riv_hero_button_group">
+                        <button className="vik-riv_hero_btn_filled">Compare River Cruise Lines</button>
+                        <button className="vik-riv_hero_btn_transparent">Plan My River Cruise</button>
                     </div>
                 </div>
             </section>
 
             {/* INTRO SECTION */}
-            <section className="content-section intro-section">
-                <div className="container">
-                    <div className="intro-wrapper">
+            <section className="vik-content-section vik-intro-section">
+                <div className="vik-container">
+                    <div className="vik-intro-wrapper">
                         <div className="intro-content">
-                            <h2 className="intro-heading">INTRO</h2>
-                            <div className="intro-accent-line"></div>
-                            <p className="intro-main-text">
+                            <h2 className="vik-intro-heading">INTRO</h2>
+                            <div className="vik-intro-accent-line"></div>
+                            <p className="vik-intro-main-text">
                                 This is one of the most important decisions you will make when planning a river cruise.
                             </p>
-                            <p className="intro-sub-text">Clients are usually deciding between:</p>
-                            <div className="intro-options">
-                                <div className="intro-option">
-                                    <div className="intro-option-bullet"></div>
+                            <p className="vik-intro-sub-text">Clients are usually deciding between:</p>
+                            <div className="vik-intro-options">
+                                <div className="vik-intro-option">
+                                    <div className="vik-intro-option-bullet"></div>
                                     <p>starting with a trusted, structured experience</p>
                                 </div>
-                                <div className="intro-option">
-                                    <div className="intro-option-bullet"></div>
+                                <div className="vik-intro-option">
+                                    <div className="vik-intro-option-bullet"></div>
                                     <p>or upgrading to something more refined</p>
                                 </div>
                             </div>
-                            <p className="intro-closing">
+                            <p className="vik-intro-closing">
                                 Those are very different travelers—and they should not be booking the same product.
                             </p>
                         </div>
@@ -427,30 +427,30 @@ const RiversideVsViking = () => {
             </section>
 
             {/* WHY TRUST THIS COMPARISON */}
-            <section className="content-section trust-section">
-                <div className="container">
-                    <div className="trust-wrapper">
-                        <div className="trust-header">
-                            <h2 className="trust-heading">WHY TRUST THIS COMPARISON</h2>
-                            <div className="trust-accent-line"></div>
+            <section className="vik-content-section vik-trust-section">
+                <div className="vik-container">
+                    <div className="vik-trust-wrapper">
+                        <div className="vik-trust-header">
+                            <h2 className="vik-trust-heading">WHY TRUST THIS COMPARISON</h2>
+                            <div className="vik-trust-accent-line"></div>
                         </div>
-                        <p className="trust-intro">This guide is based on:</p>
-                        <div className="trust-points">
-                            <div className="trust-point">
-                                <div className="trust-point-number">01</div>
-                                <div className="trust-point-content">
+                        <p className="vik-trust-intro">This guide is based on:</p>
+                        <div className="vik-trust-points">
+                            <div className="vik-trust-point">
+                                <div className="vik-trust-point-number">01</div>
+                                <div className="vik-trust-point-content">
                                     <p>over 40 years of luxury travel expertise</p>
                                 </div>
                             </div>
-                            <div className="trust-point">
-                                <div className="trust-point-number">02</div>
-                                <div className="trust-point-content">
+                            <div className="vik-trust-point">
+                                <div className="vik-trust-point-number">02</div>
+                                <div className="vik-trust-point-content">
                                     <p>booking data across 140+ travel advisors</p>
                                 </div>
                             </div>
-                            <div className="trust-point">
-                                <div className="trust-point-number">03</div>
-                                <div className="trust-point-content">
+                            <div className="vik-trust-point">
+                                <div className="vik-trust-point-number">03</div>
+                                <div className="vik-trust-point-content">
                                     <p>firsthand experience across major river cruise brands</p>
                                 </div>
                             </div>
@@ -460,50 +460,50 @@ const RiversideVsViking = () => {
             </section>
 
             {/* KEY DIFFERENCES AT A GLANCE */}
-            <section className="content-section table-section">
-                <div className="container">
-                    <div className="comparison-wrapper">
-                        <div className="comparison-header">
-                            <h2 className="comparison-heading">KEY DIFFERENCES AT A GLANCE</h2>
-                            <div className="comparison-accent-line"></div>
+            <section className="vik-content-section vik-table-section">
+                <div className="vik-container">
+                    <div className="vik-comparison-wrapper">
+                        <div className="vik-comparison-header">
+                            <h2 className="vik-comparison-heading">KEY DIFFERENCES AT A GLANCE</h2>
+                            <div className="vik-comparison-accent-line"></div>
                         </div>
 
-                        <div className="comparison-table-modern">
-                            <div className="comparison-table-header">
-                                <div className="comparison-col-feature">Feature</div>
-                                <div className="comparison-col-brand riverside-col">Riverside</div>
-                                <div className="comparison-col-brand viking-col">Viking</div>
+                        <div className="vik-comparison-table-modern">
+                            <div className="vik-comparison-table-header">
+                                <div className="vik-comparison-col-feature">Feature</div>
+                                <div className="vik-comparison-col-brand vik-riverside-col">Riverside</div>
+                                <div className="vik-comparison-col-brand vik-viking-col">Viking</div>
                             </div>
 
-                            <div className="comparison-table-body">
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Positioning</div>
-                                    <div className="comparison-cell riverside-cell">Boutique luxury</div>
-                                    <div className="comparison-cell viking-cell">Premium</div>
+                            <div className="vik-comparison-table-body">
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Positioning</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Boutique luxury</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Premium</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Traveler Type</div>
-                                    <div className="comparison-cell riverside-cell">Experienced</div>
-                                    <div className="comparison-cell viking-cell">First-time</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Traveler Type</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Experienced</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">First-time</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Space</div>
-                                    <div className="comparison-cell riverside-cell">Larger suites</div>
-                                    <div className="comparison-cell viking-cell">Standard cabins</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Space</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Larger suites</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Standard cabins</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Atmosphere</div>
-                                    <div className="comparison-cell riverside-cell">Quiet, refined</div>
-                                    <div className="comparison-cell viking-cell">Structured</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Atmosphere</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Quiet, refined</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Structured</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Experience</div>
-                                    <div className="comparison-cell riverside-cell">Curated</div>
-                                    <div className="comparison-cell viking-cell">Systemized</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Experience</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Curated</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Systemized</div>
                                 </div>
                             </div>
                         </div>
@@ -512,50 +512,50 @@ const RiversideVsViking = () => {
             </section>
 
             {/* KEY FEATURES COMPARED */}
-            <section className="content-section table-section">
-                <div className="container">
-                    <div className="comparison-wrapper">
-                        <div className="comparison-header">
-                            <h2 className="comparison-heading">RIVERSIDE VS VIKING: KEY FEATURES COMPARED</h2>
-                            <div className="comparison-accent-line"></div>
+            <section className="vik-content-section vik-table-section">
+                <div className="vik-container">
+                    <div className="vik-comparison-wrapper">
+                        <div className="vik-comparison-header">
+                            <h2 className="vik-comparison-heading">RIVERSIDE VS VIKING: KEY FEATURES COMPARED</h2>
+                            <div className="vik-comparison-accent-line"></div>
                         </div>
 
-                        <div className="comparison-table-modern">
-                            <div className="comparison-table-header">
-                                <div className="comparison-col-feature">Feature</div>
-                                <div className="comparison-col-brand riverside-col">Riverside</div>
-                                <div className="comparison-col-brand viking-col">Viking</div>
+                        <div className="vik-comparison-table-modern">
+                            <div className="vik-comparison-table-header">
+                                <div className="vik-comparison-col-feature">Feature</div>
+                                <div className="vik-comparison-col-brand vik-riverside-col">Riverside</div>
+                                <div className="vik-comparison-col-brand vik-viking-col">Viking</div>
                             </div>
 
-                            <div className="comparison-table-body">
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Average Cabin Size</div>
-                                    <div className="comparison-cell riverside-cell">Larger suites</div>
-                                    <div className="comparison-cell viking-cell">Standard cabins</div>
+                            <div className="vik-comparison-table-body">
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Average Cabin Size</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Larger suites</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Standard cabins</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Guest Capacity</div>
-                                    <div className="comparison-cell riverside-cell">Lower density</div>
-                                    <div className="comparison-cell viking-cell">Higher capacity</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Guest Capacity</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Lower density</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Higher capacity</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Crew Ratio</div>
-                                    <div className="comparison-cell riverside-cell">Higher</div>
-                                    <div className="comparison-cell viking-cell">Standard</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Crew Ratio</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Higher</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Standard</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Dining Style</div>
-                                    <div className="comparison-cell riverside-cell">Curated</div>
-                                    <div className="comparison-cell viking-cell">Structured</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Dining Style</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Curated</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Structured</div>
                                 </div>
 
-                                <div className="comparison-row">
-                                    <div className="comparison-cell-feature">Excursion Style</div>
-                                    <div className="comparison-cell riverside-cell">Flexible</div>
-                                    <div className="comparison-cell viking-cell">Guided</div>
+                                <div className="vik-comparison-row">
+                                    <div className="vik-comparison-cell-feature">Excursion Style</div>
+                                    <div className="vik-comparison-cell vik-riverside-cell">Flexible</div>
+                                    <div className="vik-comparison-cell vik-viking-cell">Guided</div>
                                 </div>
                             </div>
                         </div>
@@ -564,72 +564,72 @@ const RiversideVsViking = () => {
             </section>
 
             {/* THE REAL DIFFERENCE */}
-            <section className="content-section real-difference-section">
-                <div className="container">
-                    <div className="real-diff-wrapper">
-                        <div className="real-diff-header">
-                            <h2 className="real-diff-heading">THE REAL DIFFERENCE</h2>
-                            <div className="real-diff-accent-line"></div>
+            <section className="vik-content-section vik-real-difference-section">
+                <div className="vik-container">
+                    <div className="vik-real-diff-wrapper">
+                        <div className="vik-real-diff-header">
+                            <h2 className="vik-real-diff-heading">THE REAL DIFFERENCE</h2>
+                            <div className="vik-real-diff-accent-line"></div>
                         </div>
 
-                        <div className="real-diff-grid">
+                        <div className="vik-real-diff-grid">
                             {/* Riverside Card */}
-                            <div className="real-diff-card riverside-card">
-                                <div className="real-diff-card-header">
-                                    <div className="real-diff-badge riverside-badge">Riverside</div>
-                                    <h4 className="real-diff-card-title">Riverside Feels Like a Boutique Hotel on the Water</h4>
+                            <div className="vik-real-diff-card riverside-card">
+                                <div className="vik-real-diff-card-header">
+                                    <div className="vik-real-diff-badge vik-riverside-badge">Riverside</div>
+                                    <h4 className="vik-real-diff-card-title">Riverside Feels Like a Boutique Hotel on the Water</h4>
                                 </div>
-                                <div className="real-diff-card-content">
-                                    <p className="real-diff-text">
+                                <div className="vik-real-diff-card-content">
+                                    <p className="vik-real-diff-text">
                                         When you step onboard Riverside Luxury Cruises, the first thing you notice is space.
                                     </p>
-                                    <p className="real-diff-subtext">The second thing you notice is what's missing:</p>
-                                    <div className="real-diff-list">
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                    <p className="vik-real-diff-subtext">The second thing you notice is what's missing:</p>
+                                    <div className="vik-real-diff-list">
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>no crowds</p>
                                         </div>
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>no rush</p>
                                         </div>
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>no over-scheduling</p>
                                         </div>
                                     </div>
-                                    <p className="real-diff-conclusion">
+                                    <p className="vik-real-diff-conclusion">
                                         It is designed for travelers who want a more intentional experience.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Viking Card */}
-                            <div className="real-diff-card viking-card">
-                                <div className="real-diff-card-header">
-                                    <div className="real-diff-badge viking-badge">Viking</div>
-                                    <h4 className="real-diff-card-title">Viking Feels Structured—and That's the Point</h4>
+                            <div className="vik-real-diff-card viking-card">
+                                <div className="vik-real-diff-card-header">
+                                    <div className="vik-real-diff-badge vik-viking-badge">Viking</div>
+                                    <h4 className="vik-real-diff-card-title">Viking Feels Structured—and That's the Point</h4>
                                 </div>
-                                <div className="real-diff-card-content">
-                                    <p className="real-diff-text">
+                                <div className="vik-real-diff-card-content">
+                                    <p className="vik-real-diff-text">
                                         Viking River Cruises is built for consistency.
                                     </p>
-                                    <p className="real-diff-subtext">It is:</p>
-                                    <div className="real-diff-list">
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                    <p className="vik-real-diff-subtext">It is:</p>
+                                    <div className="vik-real-diff-list">
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>organized</p>
                                         </div>
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>predictable</p>
                                         </div>
-                                        <div className="real-diff-list-item">
-                                            <div className="real-diff-bullet"></div>
+                                        <div className="vik-real-diff-list-item">
+                                            <div className="vik-real-diff-bullet"></div>
                                             <p>easy to follow</p>
                                         </div>
                                     </div>
-                                    <p className="real-diff-conclusion">
+                                    <p className="vik-real-diff-conclusion">
                                         For many travelers, especially first-timers, that is exactly what they want.
                                     </p>
                                 </div>
@@ -640,19 +640,19 @@ const RiversideVsViking = () => {
             </section>
 
             {/* ===== VIDEO SECTION: RIVER CRUISE EXPERIENCE ===== */}
-            <section className="lux-section lux-bg-white lux-video-section">
+            <section className="lux-section lux-bg-white vik-lux-video-section">
                 <div className="lux-container-wide">
-                    <div className="lux-video-header">
-                        <h2 className="lux-h2">Riverside Cruises</h2>
-                        <div className="lux-navy-divider-center"></div>
-                        <p className="lux-video-subtitle">
+                    <div className="vik-lux-video-header">
+                        <h2 className="vik-lux-h2">Riverside Cruises</h2>
+                        <div className="vik-lux-navy-divider-center"></div>
+                        <p className="vik-lux-video-subtitle">
                             See the real difference between boutique luxury and premium river cruising. Discover which experience matches your travel style and expectations for exploring Europe's most beautiful waterways.
                         </p>
                     </div>
 
-                    <div className="lux-video-wrapper">
+                    <div className="vik-lux-video-wrapper">
                         <video
-                            className="lux-video-player"
+                            className="vik-lux-video-player"
                             controls
                             autoPlay
                             muted
@@ -671,39 +671,39 @@ const RiversideVsViking = () => {
             </section>
 
             {/* PRICING COMPARISON */}
-            <section className="content-section pricing-section">
-                <div className="container">
-                    <div className="pricing-wrapper">
-                        <div className="pricing-header">
-                            <h2 className="pricing-heading">PRICING COMPARISON</h2>
-                            <div className="pricing-accent-line"></div>
+            <section className="vik-content-section vik-pricing-section">
+                <div className="vik-container">
+                    <div className="vik-pricing-wrapper">
+                        <div className="vik-pricing-header">
+                            <h2 className="vik-pricing-heading">PRICING COMPARISON</h2>
+                            <div className="vik-pricing-accent-line"></div>
                         </div>
 
-                        <div className="pricing-cards-grid">
+                        <div className="vik-pricing-cards-grid">
                             {/* Riverside Pricing Card */}
-                            <div className="pricing-card riverside-pricing-card">
-                                <div className="pricing-card-header">
-                                    <div className="pricing-badge riverside-pricing-badge">Riverside</div>
+                            <div className="vik-pricing-card riverside-pricing-card">
+                                <div className="vik-pricing-card-header">
+                                    <div className="vik-pricing-badge vik-riverside-pricing-badge">Riverside</div>
                                 </div>
-                                <div className="pricing-card-body">
-                                    <div className="pricing-amount">$4,000–$10,000+</div>
-                                    <div className="pricing-unit">per person</div>
+                                <div className="vik-pricing-card-body">
+                                    <div className="vik-pricing-amount">$4,000–$10,000+</div>
+                                    <div className="vik-pricing-unit">per person</div>
                                 </div>
                             </div>
 
                             {/* Viking Pricing Card */}
-                            <div className="pricing-card viking-pricing-card">
-                                <div className="pricing-card-header">
-                                    <div className="pricing-badge viking-pricing-badge">Viking</div>
+                            <div className="vik-pricing-card viking-pricing-card">
+                                <div className="vik-pricing-card-header">
+                                    <div className="vik-pricing-badge vik-viking-pricing-badge">Viking</div>
                                 </div>
-                                <div className="pricing-card-body">
-                                    <div className="pricing-amount">$3,000–$7,000</div>
-                                    <div className="pricing-unit">per person</div>
+                                <div className="vik-pricing-card-body">
+                                    <div className="vik-pricing-amount">$3,000–$7,000</div>
+                                    <div className="vik-pricing-unit">per person</div>
                                 </div>
                             </div>
                         </div>
 
-                        <p className="pricing-conclusion">
+                        <p className="vik-pricing-conclusion">
                             This is not just a price difference—it reflects a difference in experience.
                         </p>
                     </div>
@@ -711,52 +711,52 @@ const RiversideVsViking = () => {
             </section>
 
             {/* WHICH IS BEST FOR YOU */}
-            <section className="content-section best-for-section">
-                <div className="container">
-                    <div className="best-for-wrapper">
-                        <div className="best-for-header">
-                            <h2 className="best-for-heading">WHICH RIVER CRUISE IS BEST FOR YOU</h2>
-                            <div className="best-for-accent-line"></div>
+            <section className="vik-content-section vik-best-for-section">
+                <div className="vik-container">
+                    <div className="vik-best-for-wrapper">
+                        <div className="vik-best-for-header">
+                            <h2 className="vik-best-for-heading">WHICH RIVER CRUISE IS BEST FOR YOU</h2>
+                            <div className="vik-best-for-accent-line"></div>
                         </div>
 
-                        <div className="best-for-grid">
-                            <div className="best-for-card riverside-best-card">
-                                <div className="best-for-icon">
+                        <div className="vik-best-for-grid">
+                            <div className="vik-best-for-card vik-riverside-best-card">
+                                <div className="vik-best-for-icon">
                                     <Heart size={32} strokeWidth={1.5} />
                                 </div>
-                                <div className="best-for-content">
-                                    <h4 className="best-for-category">Best for couples</h4>
-                                    <div className="best-for-answer">Riverside</div>
+                                <div className="vik-best-for-content">
+                                    <h4 className="vik-best-for-category">Best for couples</h4>
+                                    <div className="vik-best-for-answer">Riverside</div>
                                 </div>
                             </div>
 
-                            <div className="best-for-card viking-best-card">
-                                <div className="best-for-icon">
+                            <div className="vik-best-for-card vik-viking-best-card">
+                                <div className="vik-best-for-icon">
                                     <Users size={32} strokeWidth={1.5} />
                                 </div>
-                                <div className="best-for-content">
-                                    <h4 className="best-for-category">Best for first-time cruisers</h4>
-                                    <div className="best-for-answer">Viking</div>
+                                <div className="vik-best-for-content">
+                                    <h4 className="vik-best-for-category">Best for first-time cruisers</h4>
+                                    <div className="vik-best-for-answer">Viking</div>
                                 </div>
                             </div>
 
-                            <div className="best-for-card riverside-best-card">
-                                <div className="best-for-icon">
+                            <div className="vik-best-for-card vik-riverside-best-card">
+                                <div className="vik-best-for-icon">
                                     <Star size={32} strokeWidth={1.5} />
                                 </div>
-                                <div className="best-for-content">
-                                    <h4 className="best-for-category">Best for luxury travelers</h4>
-                                    <div className="best-for-answer">Riverside</div>
+                                <div className="vik-best-for-content">
+                                    <h4 className="vik-best-for-category">Best for luxury travelers</h4>
+                                    <div className="vik-best-for-answer">Riverside</div>
                                 </div>
                             </div>
 
-                            <div className="best-for-card viking-best-card">
-                                <div className="best-for-icon">
+                            <div className="vik-best-for-card vik-viking-best-card">
+                                <div className="vik-best-for-icon">
                                     <BadgeCheck size={32} strokeWidth={1.5} />
                                 </div>
-                                <div className="best-for-content">
-                                    <h4 className="best-for-category">Best value</h4>
-                                    <div className="best-for-answer">Viking</div>
+                                <div className="vik-best-for-content">
+                                    <h4 className="vik-best-for-category">Best value</h4>
+                                    <div className="vik-best-for-answer">Viking</div>
                                 </div>
                             </div>
                         </div>
@@ -765,40 +765,40 @@ const RiversideVsViking = () => {
             </section>
 
             {/* BIGGEST MISTAKE */}
-            <section className="content-section mistake-section">
-                <div className="container">
-                    <div className="mistake-wrapper">
-                        <div className="mistake-header">
-                            <h2 className="mistake-heading">THE BIGGEST MISTAKE TRAVELERS MAKE</h2>
-                            <div className="mistake-accent-line"></div>
+            <section className="vik-content-section vik-mistake-section">
+                <div className="vik-container">
+                    <div className="vik-mistake-wrapper">
+                        <div className="vik-mistake-header">
+                            <h2 className="vik-mistake-heading">THE BIGGEST MISTAKE TRAVELERS MAKE</h2>
+                            <div className="vik-mistake-accent-line"></div>
                         </div>
 
-                        <div className="mistake-content">
-                            <p className="mistake-main-text">
+                        <div className="vik-mistake-content">
+                            <p className="vik-mistake-main-text">
                                 Most travelers assume they are choosing between two similar products.
                             </p>
 
-                            <p className="mistake-emphasis">They are not.</p>
+                            <p className="vik-mistake-emphasis">They are not.</p>
 
-                            <p className="mistake-subtext">They are choosing between:</p>
+                            <p className="vik-mistake-subtext">They are choosing between:</p>
 
-                            <div className="mistake-options">
-                                <div className="mistake-option">
-                                    <div className="mistake-option-icon">
-                                        <span className="mistake-option-number">01</span>
+                            <div className="vik-mistake-options">
+                                <div className="vik-mistake-option">
+                                    <div className="vik-mistake-option-icon">
+                                        <span className="vik-mistake-option-number">01</span>
                                     </div>
-                                    <p className="mistake-option-text">a structured first experience</p>
+                                    <p className="vik-mistake-option-text">a structured first experience</p>
                                 </div>
 
-                                <div className="mistake-option">
-                                    <div className="mistake-option-icon">
-                                        <span className="mistake-option-number">02</span>
+                                <div className="vik-mistake-option">
+                                    <div className="vik-mistake-option-icon">
+                                        <span className="vik-mistake-option-number">02</span>
                                     </div>
-                                    <p className="mistake-option-text">a refined upgrade experience</p>
+                                    <p className="vik-mistake-option-text">a refined upgrade experience</p>
                                 </div>
                             </div>
 
-                            <p className="mistake-conclusion">
+                            <p className="vik-mistake-conclusion">
                                 Understanding that difference changes the decision entirely.
                             </p>
                         </div>
@@ -807,84 +807,84 @@ const RiversideVsViking = () => {
             </section>
 
             {/* WHO SHOULD CHOOSE */}
-            <section className="content-section who-should-choose-section">
-                <div className="container">
-                    <div className="choose-wrapper">
-                        <div className="choose-header">
-                            <h2 className="choose-heading">WHO SHOULD CHOOSE</h2>
-                            <div className="choose-accent-line"></div>
+            <section className="vik-content-section vik-who-should-choose-section">
+                <div className="vik-container">
+                    <div className="vik-choose-wrapper">
+                        <div className="vik-choose-header">
+                            <h2 className="vik-choose-heading">WHO SHOULD CHOOSE</h2>
+                            <div className="vik-choose-accent-line"></div>
                         </div>
 
-                        <div className="choose-grid">
+                        <div className="vik-choose-grid">
                             {/* Riverside Card */}
-                            <div className="choose-card riverside-choose-card">
-                                <div className="choose-card-header">
-                                    <div className="choose-badge riverside-choose-badge">Riverside</div>
-                                    <h4 className="choose-card-title">WHO SHOULD CHOOSE RIVERSIDE</h4>
+                            <div className="vik-choose-card vik-riverside-choose-card">
+                                <div className="vik-choose-card-header">
+                                    <div className="vik-choose-badge vik-riverside-choose-badge">Riverside</div>
+                                    <h4 className="vik-choose-card-title">WHO SHOULD CHOOSE RIVERSIDE</h4>
                                 </div>
-                                <div className="choose-card-body">
-                                    <p className="choose-intro">Choose Riverside Luxury Cruises if you:</p>
-                                    <div className="choose-list">
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                <div className="vik-choose-card-body">
+                                    <p className="vik-choose-intro">Choose Riverside Luxury Cruises if you:</p>
+                                    <div className="vik-choose-list">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">have already taken a river cruise</p>
+                                            <p className="vik-choose-list-text">have already taken a river cruise</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">want more space and privacy</p>
+                                            <p className="vik-choose-list-text">want more space and privacy</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">prefer a quieter, more refined experience</p>
+                                            <p className="vik-choose-list-text">prefer a quieter, more refined experience</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">are comfortable paying more for quality</p>
+                                            <p className="vik-choose-list-text">are comfortable paying more for quality</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Viking Card */}
-                            <div className="choose-card viking-choose-card">
-                                <div className="choose-card-header">
-                                    <div className="choose-badge viking-choose-badge">Viking</div>
-                                    <h4 className="choose-card-title">WHO SHOULD CHOOSE VIKING</h4>
+                            <div className="vik-choose-card vik-viking-choose-card">
+                                <div className="vik-choose-card-header">
+                                    <div className="vik-choose-badge vik-viking-choose-badge">Viking</div>
+                                    <h4 className="vik-choose-card-title">WHO SHOULD CHOOSE VIKING</h4>
                                 </div>
-                                <div className="choose-card-body">
-                                    <p className="choose-intro">Choose Viking River Cruises if you:</p>
-                                    <div className="choose-list">
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                <div className="vik-choose-card-body">
+                                    <p className="vik-choose-intro">Choose Viking River Cruises if you:</p>
+                                    <div className="vik-choose-list">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">are taking your first river cruise</p>
+                                            <p className="vik-choose-list-text">are taking your first river cruise</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">want a structured, guided experience</p>
+                                            <p className="vik-choose-list-text">want a structured, guided experience</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">prefer a well-known and consistent brand</p>
+                                            <p className="vik-choose-list-text">prefer a well-known and consistent brand</p>
                                         </div>
-                                        <div className="choose-list-item">
-                                            <div className="choose-list-icon">
+                                        <div className="vik-choose-list-item">
+                                            <div className="vik-choose-list-icon">
                                                 <Check size={16} strokeWidth={2.5} />
                                             </div>
-                                            <p className="choose-list-text">are more price conscious</p>
+                                            <p className="vik-choose-list-text">are more price conscious</p>
                                         </div>
                                     </div>
                                 </div>
@@ -895,41 +895,41 @@ const RiversideVsViking = () => {
             </section>
 
             {/* EXPERT INSIGHT */}
-            <section className="content-section expert-insight-section">
-                <div className="container">
-                    <div className="expert-wrapper">
-                        <div className="expert-header">
-                            <h2 className="expert-heading">EXPERT INSIGHT</h2>
-                            <div className="expert-accent-line"></div>
+            <section className="vik-content-section vik-expert-insight-section">
+                <div className="vik-container">
+                    <div className="vik-expert-wrapper">
+                        <div className="vik-expert-header">
+                            <h2 className="vik-expert-heading">EXPERT INSIGHT</h2>
+                            <div className="vik-expert-accent-line"></div>
                         </div>
 
-                        <div className="expert-content">
-                            <p className="expert-intro">
+                        <div className="vik-expert-content">
+                            <p className="vik-expert-intro">
                                 Most travelers comparing these brands fall into two categories:
                             </p>
 
-                            <div className="expert-categories">
-                                <div className="expert-category">
-                                    <div className="expert-category-icon">
-                                        <span className="expert-category-number">01</span>
+                            <div className="vik-expert-categories">
+                                <div className="vik-expert-category">
+                                    <div className="vik-expert-category-icon">
+                                        <span className="vik-expert-category-number">01</span>
                                     </div>
-                                    <p className="expert-category-text">first-time cruisers deciding where to start</p>
+                                    <p className="vik-expert-category-text">first-time cruisers deciding where to start</p>
                                 </div>
 
-                                <div className="expert-category">
-                                    <div className="expert-category-icon">
-                                        <span className="expert-category-number">02</span>
+                                <div className="vik-expert-category">
+                                    <div className="vik-expert-category-icon">
+                                        <span className="vik-expert-category-number">02</span>
                                     </div>
-                                    <p className="expert-category-text">experienced travelers looking to upgrade</p>
+                                    <p className="vik-expert-category-text">experienced travelers looking to upgrade</p>
                                 </div>
                             </div>
 
-                            <div className="expert-insight-box">
-                                <div className="expert-insight-badge">
+                            <div className="vik-expert-insight-box">
+                                <div className="vik-expert-insight-badge">
                                     <Layers size={24} strokeWidth={2} />
                                     <span>Expert Insight:</span>
                                 </div>
-                                <p className="expert-insight-text">
+                                <p className="vik-expert-insight-text">
                                     Viking dominates the entry-level river cruise market, but Riverside is quickly becoming one of the most compelling upgrade options for travelers seeking more space and a more refined onboard experience.
                                 </p>
                             </div>
@@ -939,41 +939,41 @@ const RiversideVsViking = () => {
             </section>
 
             {/* HOW TO CHOOSE */}
-            <section className="content-section how-to-choose-section">
-                <div className="container">
-                    <div className="choose-right-wrapper">
-                        <div className="choose-right-header">
-                            <h2 className="choose-right-heading">HOW TO CHOOSE THE RIGHT RIVER CRUISE</h2>
-                            <div className="choose-right-accent-line"></div>
+            <section className="vik-content-section vik-how-to-choose-section">
+                <div className="vik-container">
+                    <div className="vik-choose-right-wrapper">
+                        <div className="vik-choose-right-header">
+                            <h2 className="vik-choose-right-heading">HOW TO CHOOSE THE RIGHT RIVER CRUISE</h2>
+                            <div className="vik-choose-right-accent-line"></div>
                         </div>
 
-                        <div className="choose-right-content">
-                            <p className="choose-right-main-text">
+                        <div className="vik-choose-right-content">
+                            <p className="vik-choose-right-main-text">
                                 Choosing between Riverside Luxury Cruises and Viking River Cruises is not about picking the better brand—it is about matching the right experience to the right traveler.
                             </p>
 
-                            <p className="choose-right-subtext">Working with an experienced advisor ensures:</p>
+                            <p className="vik-choose-right-subtext">Working with an experienced advisor ensures:</p>
 
-                            <div className="choose-right-checklist">
-                                <div className="choose-right-item">
-                                    <div className="choose-right-icon">
+                            <div className="vik-choose-right-checklist">
+                                <div className="vik-choose-right-item">
+                                    <div className="vik-choose-right-icon">
                                         <Check size={20} strokeWidth={2.5} />
                                     </div>
-                                    <p className="choose-right-item-text">the right itinerary</p>
+                                    <p className="vik-choose-right-item-text">the right itinerary</p>
                                 </div>
 
-                                <div className="choose-right-item">
-                                    <div className="choose-right-icon">
+                                <div className="vik-choose-right-item">
+                                    <div className="vik-choose-right-icon">
                                         <Check size={20} strokeWidth={2.5} />
                                     </div>
-                                    <p className="choose-right-item-text">the right cabin</p>
+                                    <p className="vik-choose-right-item-text">the right cabin</p>
                                 </div>
 
-                                <div className="choose-right-item">
-                                    <div className="choose-right-icon">
+                                <div className="vik-choose-right-item">
+                                    <div className="vik-choose-right-icon">
                                         <Check size={20} strokeWidth={2.5} />
                                     </div>
-                                    <p className="choose-right-item-text">the right overall experience</p>
+                                    <p className="vik-choose-right-item-text">the right overall experience</p>
                                 </div>
                             </div>
                         </div>
@@ -982,66 +982,66 @@ const RiversideVsViking = () => {
             </section>
 
             {/* IMAGE GALLERY SECTION */}
-            <section className="content-section gallery-section">
-                <div className="container">
-                    <div className="gallery-header">
-                        <h2 className="gallery-heading">Visualizing the Experience</h2>
-                        <div className="gallery-accent-line"></div>
-                        <p className="gallery-intro">Discover the elegance and detail that define these exceptional river cruise journeys.</p>
+            <section className="vik-content-section vik-gallery-section">
+                <div className="vik-container">
+                    <div className="vik-gallery-header">
+                        <h2 className="vik-gallery-heading">Visualizing the Experience</h2>
+                        <div className="vik-gallery-accent-line"></div>
+                        <p className="vik-gallery-intro">Discover the elegance and detail that define these exceptional river cruise journeys.</p>
                     </div>
 
-                    <div className="premium-gallery-grid">
-                        <div className="gallery-item item-large">
+                    <div className="vik-premium-gallery-grid">
+                        <div className="vik-gallery-item vik-item-large">
                             <img src={Gallary1} alt="Luxury Suite Details" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Luxury Suite Details</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary2} alt="Boutique Onboard Spaces" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Boutique Onboard Spaces</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary3} alt="Dining Excellence" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Dining Excellence</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary4} alt="Scenic European Views" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Scenic European Views</span>
                             </div>
                         </div>
-                        <div className="gallery-item item-tall">
+                        <div className="vik-gallery-item vik-item-tall">
                             <img src={Gallary5} alt="Elegant Architecture" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Elegant Architecture</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary6} alt="Riverside Luxury" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Riverside Luxury</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary7} alt="Viking Heritage" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Viking Heritage</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary8} alt="Boutique Atmosphere" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Boutique Atmosphere</span>
                             </div>
                         </div>
-                        <div className="gallery-item">
+                        <div className="vik-gallery-item">
                             <img src={Gallary9} alt="Modern Refinement" />
-                            <div className="gallery-overlay">
+                            <div className="vik-gallery-overlay">
                                 <span>Modern Refinement</span>
                             </div>
                         </div>
@@ -1050,20 +1050,20 @@ const RiversideVsViking = () => {
             </section>
 
             {/* CTA SECTION */}
-            <section className="cta-section">
-                <div className="container">
-                    <div className="cta-wrapper">
-                        <div className="cta-content">
-                            <h2 className="cta-heading">Plan Your River Cruise the Right Way</h2>
-                            <p className="cta-subtext">Work with an expert to match the right cruise to your travel style.</p>
+            <section className="vik-cta-section">
+                <div className="vik-container">
+                    <div className="vik-cta-wrapper">
+                        <div className="vik-cta-content">
+                            <h2 className="vik-cta-heading">Plan Your River Cruise the Right Way</h2>
+                            <p className="vik-cta-subtext">Work with an expert to match the right cruise to your travel style.</p>
                         </div>
 
-                        <div className="cta-buttons">
-                            <button className="cta-primary">
+                        <div className="vik-cta-buttons">
+                            <button className="vik-cta-primary">
                                 <span>Plan My River Cruise</span>
                                 <ArrowRight size={20} strokeWidth={2.5} />
                             </button>
-                            <button className="cta-secondary">
+                            <button className="vik-cta-secondary">
                                 <span>Work With Angela Hughes</span>
                                 <User size={20} strokeWidth={2.5} />
                             </button>
@@ -1073,62 +1073,62 @@ const RiversideVsViking = () => {
             </section>
 
             {/* ABOUT ANGELA HUGHES */}
-            <section className="content-section about-section">
-                <div className="container">
-                    <div className="about-wrapper">
-                        <div className="about-header">
-                            <h2 className="about-heading">ABOUT ANGELA HUGHES AND TRIPS & SHIPS LUXURY TRAVEL</h2>
-                            <div className="about-accent-line"></div>
+            <section className="vik-content-section vik-about-section">
+                <div className="vik-container">
+                    <div className="vik-about-wrapper">
+                        <div className="vik-about-header">
+                            <h2 className="vik-about-heading">ABOUT ANGELA HUGHES AND TRIPS & SHIPS LUXURY TRAVEL</h2>
+                            <div className="vik-about-accent-line"></div>
                         </div>
 
-                        <div className="about-content">
-                            <div className="about-portrait-section">
-                                <div className="about-portrait">
+                        <div className="vik-about-content">
+                            <div className="vik-about-portrait-section">
+                                <div className="vik-about-portrait">
                                     <img
                                         src={AboutImage}
                                         alt="Angela Hughes - Luxury Travel Expert"
-                                        className="about-portrait-img"
+                                        className="vik-about-portrait-img"
                                     />
                                 </div>
                             </div>
 
-                            <div className="about-text-content">
-                                <p className="about-intro">
+                            <div className="vik-about-text-content">
+                                <p className="vik-about-intro">
                                     When clients are comparing river cruise lines, they are not just choosing a ship—they are choosing the experience.
                                 </p>
 
-                                <p className="about-text">
+                                <p className="vik-about-text">
                                     Angela Hughes brings over 40 years of experience in luxury travel and is one of the most recognized voices in the industry.
                                 </p>
 
-                                <div className="about-credentials">
-                                    <div className="about-credential-item">
-                                        <div className="about-credential-icon">
+                                <div className="vik-about-credentials">
+                                    <div className="vik-about-credential-item">
+                                        <div className="vik-about-credential-icon">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                                 <circle cx="12" cy="7" r="4"></circle>
                                             </svg>
                                         </div>
-                                        <p className="about-credential-text">As CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, she leads a network of over 140 travel advisors and has personally sold millions in luxury travel annually across cruise, expedition, and global itineraries.</p>
+                                        <p className="vik-about-credential-text">As CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, she leads a network of over 140 travel advisors and has personally sold millions in luxury travel annually across cruise, expedition, and global itineraries.</p>
                                     </div>
 
-                                    <div className="about-credential-item">
-                                        <div className="about-credential-icon">
+                                    <div className="vik-about-credential-item">
+                                        <div className="vik-about-credential-icon">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                             </svg>
                                         </div>
-                                        <p className="about-credential-text">Angela has been featured in Travel Weekly, TravelAge West, Travel Market Report, Insider Travel Report, and more, and has been recognized as Luxury Travel Influencer of the Year. She is also a global speaker and industry leader.</p>
+                                        <p className="vik-about-credential-text">Angela has been featured in Travel Weekly, TravelAge West, Travel Market Report, Insider Travel Report, and more, and has been recognized as Luxury Travel Influencer of the Year. She is also a global speaker and industry leader.</p>
                                     </div>
                                 </div>
 
-                                <div className="about-brand-statement">
-                                    <div className="about-brand-icon">
+                                <div className="vik-about-brand-statement">
+                                    <div className="vik-about-brand-icon">
                                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                         </svg>
                                     </div>
-                                    <p className="about-brand-text">
+                                    <p className="vik-about-brand-text">
                                         She works across all major cruise brands, including Riverside Luxury Cruises and Viking River Cruises, ensuring recommendations are based on experience and client fit—not a single supplier relationship.
                                     </p>
                                 </div>
@@ -1139,12 +1139,12 @@ const RiversideVsViking = () => {
             </section>
 
             {/* FAQ SECTION */}
-            <section className="content-section faq-section">
-                <div className="container">
-                    <div className="lux-faq-header">
-                        <h2 className="lux-h2">Frequently Asked Questions</h2>
-                        <div className="lux-navy-divider-center"></div>
-                        <p className="lux-faq-intro">Everything you need to know about Riverside vs Viking River Cruises.</p>
+            <section className="vik-content-section vik-faq-section">
+                <div className="vik-container">
+                    <div className="vik-lux-faq-header">
+                        <h2 className="vik-lux-h2">Frequently Asked Questions</h2>
+                        <div className="vik-lux-navy-divider-center"></div>
+                        <p className="vik-lux-faq-intro">Everything you need to know about Riverside vs Viking River Cruises.</p>
                     </div>
                     <FAQ />
                 </div>

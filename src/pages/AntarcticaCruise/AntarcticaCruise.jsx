@@ -567,7 +567,7 @@ const AntarcticaCostPage = () => {
       <section className="anta_total_section">
         <div className="anta_total_inner">
           <div className="anta_section_header">
-            <h2>What Your Total Antarctica Trip Really Costs</h2>
+            <h2>What Your Total Antarctica Trip Really Costs?</h2>
             <p>
               Beyond the cruise fare, plan for the full journey from doorstep to
               doorstep:
@@ -658,7 +658,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 8 — WHAT IMPACTS YOUR COST ===== */}
       <section className="anta_impacts_section">
         <div className="anta_impacts_inner">
-          <h2>What Impacts Your Antarctica Cost Most</h2>
+          <h2>What Impacts Your br Antarctica Cost Most?</h2>
 
           <div className="anta_expert_cards">
             <div className="anta_expert_card">
@@ -702,7 +702,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 9 — WHY PRICES CHANGE QUICKLY ===== */}
       <section className="anta_pricing_section">
         <div className="anta_pricing_inner">
-          <h2>Why Antarctica Pricing Changes Quickly</h2>
+          <h2>Why Antarctica Pricing br Changes Quickly?</h2>
 
           <div className="anta_method_steps">
             <div className="anta_method_step">
@@ -889,7 +889,7 @@ const AntarcticaCostPage = () => {
       <section className="anta_clients_section">
         <div className="anta_clients_inner">
           <div className="anta_clients_content">
-            <h2>Where Most Clients Travel</h2>
+            <h2>Where Most Clients Travel?</h2>
 
             <p>
               Clients planning Antarctica with our team span multiple tiers
@@ -1045,7 +1045,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 16 — WHY BOOK WITH ANGELA HUGHES ===== */}
       <section className="anta_angela_section">
         <div className="anta_angela_inner">
-          <h2>Why Book with Angela Hughes</h2>
+          <h2>Why Book with Angela Hughes?</h2>
 
           <p>
             Angela Hughes has over four decades in the travel industry and has

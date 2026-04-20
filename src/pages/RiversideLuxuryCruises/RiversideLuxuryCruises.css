@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
   color: #1a1a1a;
   background: #fff;
 }
@@ -664,12 +663,12 @@
 
 @media (max-width: 768px) {
   .riv_trust_point p {
-        font-size: 17px;
-    }
+    font-size: 17px;
+  }
 
-    .riv_fits_list_detail li{
-      font-size: 17px;
-    }
+  .riv_fits_list_detail li {
+    font-size: 17px;
+  }
 }
 
 /* ========================================
@@ -797,7 +796,7 @@
   letter-spacing: -0.01em;
 }
 
-.riv_price_type_h4_white{
+.riv_price_type_h4_white {
   font-size: 25px;
 }
 
@@ -1227,7 +1226,8 @@
   .riv-gallery-bento-grid .riv-gallery-wide {
     flex: 2;
   }
-   .riv-gallery-overlay {
+
+  .riv-gallery-overlay {
     opacity: 1;
     padding: 25px;
   }
@@ -1235,9 +1235,10 @@
   .riv-gallery-header {
     margin-bottom: 40px;
   }
-   .riv-gallery-p {
-        font-size: 17px;
-    }
+
+  .riv-gallery-p {
+    font-size: 17px;
+  }
 }
 
 /* ── Small mobile ── */
@@ -1355,11 +1356,14 @@
   border-radius: 12px;
   display: block;
 }
+
 @media (max-width: 768px) {
   .riv_expert_callout_box p {
     font-size: 17px;
   }
-  .riv_vibe_positive ul li, .riv_vibe_negative ul li{
+
+  .riv_vibe_positive ul li,
+  .riv_vibe_negative ul li {
     font-size: 17px;
   }
 }
@@ -1642,7 +1646,7 @@
 /* ========================================
    AUTHORITY / ANGELA HUGHES - FLOATING LAYOUT
    ======================================== */
-   
+
 .riv_authority_bio_section {
   background: #fff;
   padding: 80px 20px;
@@ -1651,17 +1655,19 @@
 .riv_authority_float_layout {
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 60px;
+  align-items: start;
   position: relative;
 }
 
 /* LEFT FLOATING IMAGE */
 .riv_auth_float_image {
-  float: left;
-  width: 380px;
-  margin-right: 60px;
-  margin-bottom: 40px;
-  position: relative;
+  width: 100%;
+  position: sticky;
+  top: 120px;
+  z-index: 10;
 }
 
 .riv_profile_frame_floating {
@@ -1734,10 +1740,7 @@
   transform: translateY(-2px);
 }
 
-/* RIGHT FLOATING CONTENT */
-.riv_auth_float_content {
-  overflow: hidden;
-}
+
 
 .riv_auth_h2_name {
   font-family: 'Playfair Display', serif;
@@ -1758,9 +1761,6 @@
 }
 
 .riv_auth_scrollable_text {
-  max-height: 320px;
-  overflow-y: auto;
-  padding-right: 20px;
   margin-bottom: 28px;
 }
 
@@ -2031,59 +2031,63 @@
 /* ========================================
    FAQ SECTION
    ======================================== */
-.riv-faq-header{
-     text-align: center;
+.riv-faq-header {
+  text-align: center;
 }
 
 .lux-faq-header .lux-h2 {
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #274472;
-    /* Navy Blue */
-    margin: 25px auto 0 !important;
-}
-.riv-faq-list{
-   border-top: 1px solid rgba(39, 68, 114, 0.1);
-    margin-top: 36px;
-}
-.riv-faq-item{
-  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.riv-faq-item:hover{
-    background: rgba(231, 243, 245, 0.55);
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #274472;
+  /* Navy Blue */
+  margin: 25px auto 0 !important;
 }
 
-.riv-faq-q{
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 8px;
-    gap: 18px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    color: #274472 !important;
-    line-height: 1.45 !important;
+.riv-faq-list {
+  border-top: 1px solid rgba(39, 68, 114, 0.1);
+  margin-top: 36px;
 }
-.riv-faq-icon{
-   color: #274472;
-    flex-shrink: 0;
-    transition: transform 0.3s;
+
+.riv-faq-item {
+  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.riv-faq-item:hover {
+  background: rgba(231, 243, 245, 0.55);
+}
+
+.riv-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8px;
+  gap: 18px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #274472 !important;
+  line-height: 1.45 !important;
+}
+
+.riv-faq-icon {
+  color: #274472;
+  flex-shrink: 0;
+  transition: transform 0.3s;
 }
 
 .riv-faq-a {
-    padding: 0 8px 22px;
+  padding: 0 8px 22px;
 }
 
 .riv-faq-a-inner {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px !important;
-    line-height: 1.75 !important;
-    color: rgba(39, 68, 114, 0.82) !important;
-    font-weight: 300 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  color: rgba(39, 68, 114, 0.82) !important;
+  font-weight: 300 !important;
 }
 
 .riv_faq_standard_section {
@@ -2194,13 +2198,15 @@
   /* Float layout tablet */
   .riv_authority_float_layout {
     max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .riv_auth_float_image {
-    float: left;
-    width: 300px;
-    margin-right: 40px;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: static;
   }
 
   .riv_auth_h2_name {

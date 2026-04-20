@@ -2733,44 +2733,70 @@
 
 /* --- PROMOTIONAL VIDEO SHOWCASE GRID --- */
 .senianta-video-showcase {
-  max-width: 1300px;
-  margin: 80px auto;
-  padding: 0 40px;
+  background: linear-gradient(135deg, #1a2e4a 0%, #274472 100%);
+  width: 100%;
+  padding: 100px 20px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 2;
+  overflow: hidden;
+}
+
+/* Subtle background decorative elements */
+.senianta-video-showcase::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .senianta-video-grid-inner {
+  max-width: 1300px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
 
 .senianta-video-card {
-  background: #ffffff;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(39, 68, 114, 0.1);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .senianta-video-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(39, 68, 114, 0.15);
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
 
 .senianta-video-title {
-  padding: 20px 25px;
+  padding: 25px 30px;
   margin: 0;
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  color: #274472;
-  background: #f8fafc;
-  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .senianta-video-wrapper {
@@ -2778,6 +2804,15 @@
   aspect-ratio: 16 / 9;
   background: #000;
   overflow: hidden;
+  position: relative;
+}
+
+.senianta-video-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .senianta-promo-video-player {
@@ -2785,21 +2820,40 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.senianta-video-card:hover .senianta-promo-video-player {
+  transform: scale(1.05);
 }
 
 .senianta-video-card-body {
-  padding: 25px;
+  padding: 30px;
   flex-grow: 1;
-  background: #ffffff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .senianta-video-card-body p {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #274472cc;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .senianta-video-showcase {
+    padding: 80px 30px;
+  }
+  
+  .senianta-video-grid-inner {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2810,27 +2864,36 @@
 
 @media (max-width: 768px) {
   .senianta-video-showcase {
-    padding: 0 20px;
-    margin: 60px auto;
+    padding: 60px 20px;
   }
 
   .senianta-video-grid-inner {
     grid-template-columns: 1fr;
     gap: 40px;
+    max-width: 500px; /* Center and restrict width on mobile for better single-column look */
   }
 
   .senianta-video-title {
     font-size: 20px;
+    padding: 20px;
+  }
+  
+  .senianta-video-card-body {
+    padding: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .senianta-video-showcase {
-    margin: 40px auto;
+    padding: 50px 15px;
   }
 
   .senianta-video-card {
-    border-radius: 12px;
+    border-radius: 16px;
+  }
+  
+  .senianta-video-card-body p {
+    font-size: 14px;
   }
 }
 
@@ -2988,6 +3051,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  text-align: center;
   padding: 30px;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -3008,7 +3073,7 @@
   padding: 6px 14px;
   border-radius: 4px;
   margin-bottom: 12px;
-  align-self: flex-start;
+  align-self: center;
   text-transform: uppercase;
 }
 
