@@ -13,12 +13,16 @@
 
 /* Smooth background slide animation */
 @keyframes yachts-bgSlide {
-  0%, 100% {
+
+  0%,
+  100% {
     background-image: url('../../assets/FourthPage/FourthPage2.jpeg');
   }
+
   33% {
     background-image: url('../../assets/FourthPage/FourthPage1.jpg');
   }
+
   66% {
     background-image: url('../../assets/FourthPage/FourthPage3.jpg');
   }
@@ -52,6 +56,7 @@
   0% {
     transform: translateY(0) rotate(0deg);
   }
+
   100% {
     transform: translateY(100px) rotate(5deg);
   }
@@ -72,6 +77,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -433,7 +439,7 @@
   .Yachts_compare_table_wrapper {
     border-radius: 8px;
   }
-  
+
   .Yachts_compare_table td {
     padding: 12px;
     font-size: 13px;
@@ -507,11 +513,13 @@
 }
 
 .Yachts_price_premium_card.emerald {
-  border-top: 4px solid #4a7ab5; /* slightly lighter navy */
+  border-top: 4px solid #4a7ab5;
+  /* slightly lighter navy */
 }
 
 .Yachts_price_premium_card.scenic {
-  border-top: 4px solid #274472; /* deep navy */
+  border-top: 4px solid #274472;
+  /* deep navy */
 }
 
 .Yachts_price_badge {
@@ -522,7 +530,7 @@
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  
+
   letter-spacing: 1.5px;
   color: #27447288;
 }
@@ -651,7 +659,8 @@
   .Yachts_price_insight_item p {
     font-size: 14px;
   }
-  .Yachts_price_inner h2{
+
+  .Yachts_price_inner h2 {
     font-size: 24px;
   }
 }
@@ -800,7 +809,8 @@
 
 @media (max-width: 1024px) {
   .Yachts_diff_brand_card {
-    padding: 0; /* image container handles its own */
+    padding: 0;
+    /* image container handles its own */
   }
 }
 
@@ -1817,7 +1827,6 @@
 .Yachts_author_section {
   background: white;
   padding: 60px 20px;
-  /* SAME */
 }
 
 /* KEEP SAME WIDTH */
@@ -1867,6 +1876,14 @@
   margin-bottom: 10px;
 }
 
+.Yachts_author_image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 100px;
+}
+
 /* RIGHT IMAGE */
 .Yachts_author_image img {
   width: 100%;
@@ -1877,7 +1894,6 @@
   /* control height */
   object-fit: cover;
   /* crop nicely */
-  margin-top: 160px;
   margin-left: 22px;
 }
 
@@ -2221,7 +2237,8 @@
    ======================================== */
 
 .lux-comparison-section {
-  padding: 120px 40px; /* Global Padding */
+  padding: 120px 40px;
+  /* Global Padding */
 }
 
 .lux-inner-full {
@@ -2238,7 +2255,10 @@
   align-items: start;
 }
 
-.lux-side-sticky { height: 100%; }
+.lux-side-sticky {
+  height: 100%;
+}
+
 .lux-sticky-element {
   position: -webkit-sticky;
   position: sticky;
@@ -2255,7 +2275,8 @@
 
 .lux-sticky-intro {
   margin-top: 30px;
-  font-size: 18px !important; /* DESKTOP P */
+  font-size: 18px !important;
+  /* DESKTOP P */
   opacity: 0.8;
 }
 
@@ -2279,8 +2300,13 @@
   text-align: center;
 }
 
-.lux-bg-soft-blue { background-color: rgb(231, 243, 245); }
-.lux-bg-navy { background-color: #274472; }
+.lux-bg-soft-blue {
+  background-color: rgb(231, 243, 245);
+}
+
+.lux-bg-navy {
+  background-color: #274472;
+}
 
 .lux-brand-name {
   font-family: 'Playfair Display', serif !important;
@@ -2300,7 +2326,9 @@
   opacity: 0.7;
 }
 
-.lux-text-white { color: #ffffff !important; }
+.lux-text-white {
+  color: #ffffff !important;
+}
 
 /* --- Gallery Grid Styling --- */
 .lux-comparison-gallery {
@@ -2349,7 +2377,9 @@
   transition: opacity 0.3s ease;
 }
 
-.lux-gallery-item:hover .lux-img-overlay { opacity: 1; }
+.lux-gallery-item:hover .lux-img-overlay {
+  opacity: 1;
+}
 
 .lux-img-overlay span {
   color: #ffffff;
@@ -2373,28 +2403,72 @@
    ======================================== */
 
 @media (max-width: 1200px) {
-  .lux-sticky-wrapper { grid-template-columns: 1fr; gap: 60px; }
-  .lux-sticky-element { position: static; text-align: center; }
-  .lux-navy-divider-left { margin: 25px auto; }
+  .lux-sticky-wrapper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .lux-sticky-element {
+    position: static;
+    text-align: center;
+  }
+
+  .lux-navy-divider-left {
+    margin: 25px auto;
+  }
 }
 
 @media (max-width: 1024px) {
-  .lux-h2 { font-size: 28px !important; }
-  .lux-p { font-size: 17px !important; }
-  .lux-brand-name { font-size: 24px !important; }
+  .lux-h2 {
+    font-size: 28px !important;
+  }
+
+  .lux-p {
+    font-size: 17px !important;
+  }
+
+  .lux-brand-name {
+    font-size: 24px !important;
+  }
 }
 
 @media (max-width: 768px) {
-  .lux-comparison-dual-grid { grid-template-columns: 1fr; }
-  .lux-gallery-item.lux-feat { height: 250px; }
-  .lux-gallery-item { height: 180px; }
+  .lux-comparison-dual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lux-gallery-item.lux-feat {
+    height: 250px;
+  }
+
+  .lux-gallery-item {
+    height: 180px;
+  }
 }
 
 @media (max-width: 480px) {
-  .lux-section { padding: 80px 20px; }
-  .lux-h2 { font-size: 24px !important; }
-  .lux-p { font-size: 16px !important; }
-  .lux-brand-header-box { padding: 30px 15px; }
-  .lux-gallery-group { grid-template-columns: 1fr; }
-  .lux-img-overlay { opacity: 1; padding: 15px; }
+  .lux-section {
+    padding: 80px 20px;
+  }
+
+  .lux-h2 {
+    font-size: 24px !important;
+  }
+
+  .lux-p {
+    font-size: 16px !important;
+  }
+
+  .lux-brand-header-box {
+    padding: 30px 15px;
+  }
+
+  .lux-gallery-group {
+    grid-template-columns: 1fr;
+  }
+
+  .lux-img-overlay {
+    opacity: 1;
+    padding: 15px;
+  }
 }

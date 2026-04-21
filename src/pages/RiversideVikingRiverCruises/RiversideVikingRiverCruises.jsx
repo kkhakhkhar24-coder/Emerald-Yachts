@@ -1039,7 +1039,7 @@ const RiversideVsViking = () => {
                                 <span>Boutique Atmosphere</span>
                             </div>
                         </div>
-                        <div className="vik-gallery-item">
+                        <div className="vik-gallery-item vik-item-large">
                             <img src={Gallary9} alt="Modern Refinement" />
                             <div className="vik-gallery-overlay">
                                 <span>Modern Refinement</span>

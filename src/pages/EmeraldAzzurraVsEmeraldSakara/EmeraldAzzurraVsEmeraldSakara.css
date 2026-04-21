@@ -1962,6 +1962,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   padding: 35px;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -1996,6 +1997,7 @@ p {
 .Sakara_gallery_item_p {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 14px !important;
+  text-align: center;
   color: rgba(255, 255, 255, 0.8) !important;
   margin: 0 !important;
   line-height: 1.4 !important;
