@@ -655,7 +655,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 8 — WHAT IMPACTS YOUR COST ===== */}
       <section className="anta_impacts_section">
         <div className="anta_impacts_inner">
-          <h2>What Impacts Your br Antarctica Cost Most?</h2>
+          <h2>What Impacts Your <br /> Antarctica Cost Most?</h2>
 
           <div className="anta_expert_cards">
             <div className="anta_expert_card">
@@ -699,7 +699,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 9 — WHY PRICES CHANGE QUICKLY ===== */}
       <section className="anta_pricing_section">
         <div className="anta_pricing_inner">
-          <h2>Why Antarctica Pricing br Changes Quickly?</h2>
+          <h2>Why Antarctica Pricing <br /> Changes Quickly?</h2>
 
           <div className="anta_method_steps">
             <div className="anta_method_step">
@@ -848,7 +848,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 13 — IS ANTARCTICA WORTH THE COST ===== */}
       <section className="anta_worth_section">
         <div className="anta_worth_inner">
-          <h2>Is Antarctica Worth the Cost</h2>
+          <h2>Is Antarctica Worth the Cost?</h2>
 
           <p>
             Antarctica is one of the few destinations where the experience
@@ -963,7 +963,7 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 15 — WHAT HAPPENS NEXT ===== */}
       <section className="anta_next_section">
         <div className="anta_next_inner">
-          <h2>What Happens Next</h2>
+          <h2>What Happens Next?</h2>
 
           <div className="anta_method_steps">
             <div className="anta_method_step">
