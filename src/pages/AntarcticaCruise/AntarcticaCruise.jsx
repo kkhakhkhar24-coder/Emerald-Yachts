@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "../AntarcticaCruise/AntarcticaCruise.css";
 import myImage from "../../assets/image.jpg";
 import { Award, Globe, Medal, Shield, Star } from "lucide-react";
-import anta1 from "../../assets/antarctica-cruise-cost/anta1.webp";
-import anta2 from "../../assets/antarctica-cruise-cost/anta2.webp";
-import anta3 from "../../assets/antarctica-cruise-cost/anta3.webp";
 
 import AntaSilder1 from "../../assets/antarctica-cruise-cost/AntaSilder1.jpg";
 import AntaSilder2 from "../../assets/antarctica-cruise-cost/AntaSilder2.jpg";

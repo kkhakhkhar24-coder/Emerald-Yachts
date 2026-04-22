@@ -91,6 +91,10 @@ const Navbar = () => {
               <NavLink to="/distinctive-voyage-sailings" className="nav-dropdown-single">
                 Distinctive Voyage Sailings
               </NavLink>
+
+              <NavLink to="/trip-to-japan" className="nav-dropdown-single">
+                Trip To Japan
+              </NavLink>
             </div>
           </div>
         </div>
@@ -191,6 +195,11 @@ const Navbar = () => {
             <NavLink to="/distinctive-voyage-sailings" className="nav-dropdown-single" onClick={toggleMenu}>
               Distinctive Voyage Sailings
             </NavLink>
+
+            <NavLink to="/trip-to-japan" className="nav-dropdown-single" onClick={toggleMenu}>
+              Trip To Japan
+            </NavLink>
+
             <span className="mobile-dropdown-divider"></span>
           </div>
         </div>

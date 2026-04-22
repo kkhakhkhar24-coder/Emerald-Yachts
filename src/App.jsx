@@ -18,6 +18,7 @@ import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/Riv
 import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways";
 import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/DistinctiveVoyageSailings"
 import OrientExpress from "./pages/OrientExpress/OrientExpress";
+import TripToJapan from "./pages/TripToJapan/TripToJapan";
 
 function App() {
   return (
@@ -81,6 +82,10 @@ function App() {
           <Route
             path="/distinctive-voyage-sailings"
             element={<DistinctiveVoyageSailings />}
+          ></Route>
+          <Route
+            path="/trip-to-japan"
+            element={<TripToJapan />}
           ></Route>
         </Routes>
       </BrowserRouter>
