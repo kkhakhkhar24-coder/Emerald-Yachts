@@ -1,8 +1,4 @@
-/* TripToJapan.css - Japan Travel Guide Page Styles */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-/* ─── Base ──────────────────────────────────────────────── */
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 .jpn-section {
     padding: 60px 20px;
@@ -104,7 +100,7 @@
     margin: 0 auto;
 }
 
-/* ─── Typography ────────────────────────────────────────── */
+/* â”€â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-h1 {
     font-family: 'Playfair Display', serif;
@@ -154,7 +150,37 @@
     margin-bottom: 36px;
 }
 
-/* ─── Backgrounds ───────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-h3 {
+        font-size: 24px;
+    }
+
+    .jpn-p {
+        font-size: 17px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-h2 {
+        font-size: 24px;
+    }
+
+    .jpn-h3 {
+        font-size: 22px;
+    }
+
+    .jpn-p {
+        font-size: 16px;
+    }
+}
+
+/* â”€â”€â”€ Backgrounds â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-bg-white {
     background: #ffffff;
@@ -172,7 +198,13 @@
     background: #132240;
 }
 
-/* ─── HERO ──────────────────────────────────────────────── */
+/* ============================================================
+   SECTION 4: HERO SECTION
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+/* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-hero {
     min-height: 100vh;
@@ -368,7 +400,46 @@
     margin: 0;
 }
 
-/* ─── Buttons ───────────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-hero {
+        padding: 60px 15px;
+    }
+
+    .jpn-hero-lead {
+        font-size: 17px;
+    }
+
+    .jpn-white-text {
+        font-size: 17px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-hero {
+        min-height: 100svh;
+        padding: 60px 15px;
+    }
+
+    .jpn-hero-lead {
+        font-size: 16px;
+    }
+
+    .jpn-white-text {
+        font-size: 16px;
+    }
+
+    .jpn-snippet-card {
+        padding: 22px 20px;
+    }
+}
+
+/* ============================================================
+   SECTION 5: BUTTONS
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-btn-primary {
     display: inline-flex;
@@ -430,7 +501,31 @@
     box-shadow: 0 10px 26px rgba(39, 68, 114, 0.28);
 }
 
-/* ─── Section Headers ───────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    /* Button tablet styles if any */
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-btn-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+        font-size: 11px;
+    }
+
+    .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   SECTION 6: SECTION HEADERS
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-hdr {
     text-align: center;
@@ -445,7 +540,25 @@
     border-radius: 2px;
 }
 
-/* ─── Side-by-Side Layout ───────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-hdr {
+        margin-bottom: 36px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-hdr {
+        margin-bottom: 36px;
+    }
+}
+
+/* ============================================================
+   SECTION 7: SIDE-BY-SIDE LAYOUT
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-side-layout {
     display: grid;
@@ -475,13 +588,56 @@
     min-width: 0;
 }
 
-/* ─── Content Box ───────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-side-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .jpn-side-layout.jpn-reverse-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-side-heading {
+        position: static;
+        text-align: center;
+    }
+
+    .jpn-side-heading .jpn-bar {
+        margin: 18px auto 0;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-side-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ============================================================
+   SECTION 8: CONTENT BOX
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-content-box {
     max-width: 860px;
 }
 
-/* ─── Planning Section (New Design) ─────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* No specific tablet styles for content box */
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* No specific mobile styles for content box */
+
+/* ============================================================
+   SECTION 9: PLANNING SECTION
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-plan-section {
     background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
@@ -579,7 +735,74 @@
     line-height: 1.7;
 }
 
-/* ─── Why Planning Japan Is Different Section ─────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-plan-section {
+        padding: 48px 40px;
+    }
+
+    .jpn-plan-title {
+        font-size: 36px;
+    }
+
+    .jpn-plan-lead {
+        font-size: 18px;
+    }
+
+    .jpn-plan-step {
+        padding: 22px 24px;
+        gap: 16px;
+        font-size: 16px;
+    }
+
+    .jpn-plan-tip {
+        padding: 22px 24px;
+    }
+
+    .jpn-tip-text {
+        font-size: 16px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-plan-section {
+        padding: 32px 24px;
+        border-radius: 16px;
+    }
+
+    .jpn-plan-title {
+        font-size: 28px;
+    }
+
+    .jpn-plan-lead {
+        font-size: 17px;
+    }
+
+    .jpn-plan-step {
+        padding: 18px 20px;
+        gap: 14px;
+        font-size: 15px;
+    }
+
+    .jpn-plan-step:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-plan-tip {
+        padding: 18px 20px;
+    }
+
+    .jpn-tip-text {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   SECTION 10: WHY PLANNING JAPAN IS DIFFERENT
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-different-wrapper {
     max-width: 1100px;
@@ -699,7 +922,97 @@
     line-height: 1.6;
 }
 
-/* ─── The 4 Decisions Section ───────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-different-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-subtitle {
+        font-size: 18px;
+        margin-bottom: 28px !important;
+    }
+
+    .jpn-different-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-diff-card {
+        padding: 24px 22px;
+        gap: 16px;
+    }
+
+    .jpn-diff-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .jpn-diff-text {
+        font-size: 17px;
+    }
+
+    .jpn-different-conclusion {
+        padding: 28px 32px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 19px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-different-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-subtitle {
+        font-size: 17px;
+        margin-bottom: 24px !important;
+    }
+
+    .jpn-different-cards {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-diff-card {
+        padding: 20px 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-diff-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-diff-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-diff-text {
+        font-size: 16px;
+    }
+
+    .jpn-different-conclusion {
+        padding: 24px 28px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   SECTION 11: THE 4 DECISIONS SECTION
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-decisions-wrapper {
     max-width: 1100px;
@@ -820,7 +1133,95 @@
     line-height: 1.5;
 }
 
-/* ─── Step 1: Best Time Section ─────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-decisions-intro {
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-decisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-decision-item {
+        padding: 28px 22px;
+    }
+
+    .jpn-decision-number {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    .jpn-decision-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-decision-desc {
+        font-size: 15px;
+    }
+
+    .jpn-decisions-verdict {
+        padding: 32px 36px;
+    }
+
+    .jpn-verdict-text {
+        font-size: 20px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-decisions-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-decisions-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-decision-item {
+        padding: 24px 20px;
+    }
+
+    .jpn-decision-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-decision-number {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-decision-title {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .jpn-decision-desc {
+        font-size: 14px;
+    }
+
+    .jpn-decisions-verdict {
+        padding: 28px 24px;
+    }
+
+    .jpn-verdict-text {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   SECTION 12: STEP 1 - BEST TIME
+   ============================================================ */
+
+/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step1-wrapper {
     max-width: 1100px;
@@ -994,7 +1395,130 @@
     justify-content: center;
 }
 
-/* ─── Step 2: Cost Section ────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-step1 {
+        padding: 50px 15px;
+    }
+
+    .jpn-step1-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step1-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-seasons-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-season-card {
+        padding: 24px 22px;
+        gap: 16px;
+    }
+
+    .jpn-season-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .jpn-season-text {
+        font-size: 17px;
+    }
+
+    .jpn-impacts-section {
+        padding: 28px 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-impacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .jpn-impact-item {
+        padding: 16px 14px;
+        font-size: 15px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-step1 {
+        padding: 40px 15px;
+    }
+
+    .jpn-step1-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step-label {
+        font-size: 10px;
+        padding: 6px 16px;
+    }
+
+    .jpn-step1-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-seasons-grid {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-season-card {
+        padding: 20px 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-season-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-season-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-season-text {
+        font-size: 16px;
+    }
+
+    .jpn-impacts-section {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-impacts-label {
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .jpn-impacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .jpn-impact-item {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    .jpn-section-step1 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* â”€â”€â”€ Step 2: Cost Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step2-wrapper {
     max-width: 1100px;
@@ -1229,7 +1753,160 @@
     justify-content: center;
 }
 
-/* ─── Step 3: Experience Section ──────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-step2 {
+        padding: 50px 15px;
+    }
+
+    .jpn-step2-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step2-intro {
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-step2-subtitle {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-step2-label {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-price-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-price-card {
+        padding: 32px 28px;
+    }
+
+    .jpn-price-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .jpn-price-tier {
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+    .jpn-price-amount {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .jpn-price-note {
+        font-size: 15px;
+    }
+
+    .jpn-breakdown-section {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-breakdown-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-breakdown-item {
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
+    .jpn-breakdown-item span {
+        font-size: 16px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-step2 {
+        padding: 40px 15px;
+    }
+
+    .jpn-step2-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step2-intro {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-step2-subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-step2-label {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-price-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-price-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-price-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-price-tier {
+        font-size: 9px;
+        margin-bottom: 12px;
+    }
+
+    .jpn-price-amount {
+        font-size: 26px;
+        margin: 8px 0;
+    }
+
+    .jpn-price-note {
+        font-size: 14px;
+    }
+
+    .jpn-breakdown-section {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-breakdown-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .jpn-breakdown-item {
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .jpn-breakdown-item span {
+        font-size: 15px;
+    }
+
+    .jpn-section-step2 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* â”€â”€â”€ Step 3: Experience Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step3-wrapper {
     max-width: 1100px;
@@ -1390,7 +2067,125 @@
     justify-content: center;
 }
 
-/* ─── Step 4: Itinerary Section ───────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-step3 {
+        padding: 50px 15px;
+    }
+
+    .jpn-step3-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step3-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-comparison {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-card {
+        padding: 32px 28px;
+    }
+
+    .jpn-experience-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-experience-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-experience-list {
+        gap: 16px;
+    }
+
+    .jpn-experience-list li {
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .jpn-step3-verdict {
+        padding: 28px 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-verdict-statement {
+        font-size: 19px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-step3 {
+        padding: 40px 15px;
+    }
+
+    .jpn-step3-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step3-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-comparison {
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-experience-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-experience-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-experience-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-experience-list {
+        gap: 14px;
+    }
+
+    .jpn-experience-list li {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .jpn-step3-verdict {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-verdict-statement {
+        font-size: 17px;
+    }
+
+    .jpn-section-step3 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* â”€â”€â”€ Step 4: Itinerary Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step4-wrapper {
     max-width: 1100px;
@@ -1557,7 +2352,157 @@
     justify-content: center;
 }
 
-/* ─── Flow Section New ──────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-step4 {
+        padding: 50px 15px;
+    }
+
+    .jpn-step4-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step4-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-itinerary-section {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-itinerary-label {
+        font-size: 10px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-itinerary-items {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .jpn-itinerary-item {
+        padding: 22px 20px;
+        gap: 16px;
+    }
+
+    .jpn-itinerary-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .jpn-itinerary-city {
+        font-size: 18px;
+    }
+
+    .jpn-itinerary-desc {
+        font-size: 14px;
+    }
+
+    .jpn-step4-warning {
+        padding: 28px 32px;
+        margin-bottom: 28px;
+        gap: 16px;
+    }
+
+    .jpn-warning-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .jpn-warning-title {
+        font-size: 18px;
+    }
+
+    .jpn-warning-text {
+        font-size: 16px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-step4 {
+        padding: 40px 15px;
+    }
+
+    .jpn-step4-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step4-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-itinerary-section {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-itinerary-label {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-itinerary-items {
+        gap: 16px;
+    }
+
+    .jpn-itinerary-item {
+        padding: 18px 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-itinerary-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-itinerary-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-itinerary-city {
+        font-size: 17px;
+    }
+
+    .jpn-itinerary-desc {
+        font-size: 13px;
+    }
+
+    .jpn-step4-warning {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-warning-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .jpn-warning-title {
+        font-size: 17px;
+    }
+
+    .jpn-warning-text {
+        font-size: 15px;
+    }
+
+    .jpn-section-step4 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* â”€â”€â”€ Flow Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-flow-wrapper {
     max-width: 1100px;
@@ -1743,7 +2688,165 @@
     opacity: 0.95;
 }
 
-/* ─── Mistakes Section New ───────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-flow-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-flow-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-flow-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-route-visual {
+        padding: 32px 24px;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-route-city {
+        font-size: 16px;
+        padding: 16px 20px;
+        min-width: 90px;
+    }
+
+    .jpn-route-city svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .jpn-route-arrow svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .jpn-flow-reasons {
+        padding: 28px 24px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-reasons-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-reasons-list {
+        gap: 16px;
+    }
+
+    .jpn-reason-item {
+        font-size: 16px;
+        padding: 14px 18px;
+        gap: 14px;
+    }
+
+    .jpn-reason-item svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-flow-statement {
+        padding: 24px 24px;
+    }
+
+    .jpn-statement-text {
+        font-size: 17px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-flow-new {
+        padding: 40px 15px;
+    }
+
+    .jpn-flow-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-flow-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-route-visual {
+        padding: 24px 20px;
+        gap: 10px;
+        margin-bottom: 28px;
+        flex-direction: column;
+    }
+
+    .jpn-route-city {
+        font-size: 15px;
+        padding: 14px 18px;
+        min-width: 80px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .jpn-route-city svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .jpn-route-arrow {
+        transform: rotate(90deg);
+    }
+
+    .jpn-route-arrow svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-route-city:hover {
+        transform: translateY(-2px);
+    }
+
+    .jpn-flow-reasons {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-reasons-label {
+        font-size: 10px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-reasons-list {
+        gap: 14px;
+    }
+
+    .jpn-reason-item {
+        font-size: 15px;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .jpn-reason-item svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-reason-item:hover {
+        transform: translateY(-2px);
+    }
+
+    .jpn-flow-statement {
+        padding: 20px 20px;
+    }
+
+    .jpn-statement-text {
+        font-size: 16px;
+    }
+}
+
+/* â”€â”€â”€ Mistakes Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-mistakes-wrapper {
     max-width: 1100px;
@@ -1874,7 +2977,99 @@
     line-height: 1.5;
 }
 
-/* ─── Pace Section New ─────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-mistakes-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-mistakes-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-mistake-card:nth-child(4),
+    .jpn-mistake-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .jpn-mistake-card {
+        padding: 26px 18px;
+        gap: 14px;
+    }
+
+    .jpn-mistake-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-mistake-text {
+        font-size: 15px;
+    }
+
+    .jpn-mistakes-impact {
+        padding: 28px 32px;
+    }
+
+    .jpn-impact-text {
+        font-size: 18px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-mistakes-new {
+        padding: 40px 15px;
+    }
+
+    .jpn-mistakes-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-mistake-card:nth-child(4),
+    .jpn-mistake-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .jpn-mistake-card {
+        padding: 22px 16px;
+        gap: 14px;
+    }
+
+    .jpn-mistake-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-mistake-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-mistake-text {
+        font-size: 16px;
+    }
+
+    .jpn-mistakes-impact {
+        padding: 24px 22px;
+    }
+
+    .jpn-impact-text {
+        font-size: 17px;
+    }
+}
+
+/* â”€â”€â”€ Pace Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-pace-wrapper {
     max-width: 1000px;
@@ -2003,7 +3198,125 @@
     line-height: 1.4;
 }
 
-/* ─── Feels Section New ────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-pace-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-pace-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-pace-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-pace-principles {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-principles-label {
+        font-size: 10px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-principles-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-principle-item {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .jpn-principle-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-principle-text {
+        font-size: 15px;
+    }
+
+    .jpn-pace-goal {
+        padding: 32px;
+    }
+
+    .jpn-goal-statement {
+        font-size: 17px;
+    }
+
+    .jpn-goal-highlight {
+        font-size: 22px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-pace-new {
+        padding: 40px 15px;
+    }
+
+    .jpn-pace-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-pace-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-pace-principles {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-principles-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-principles-list {
+        gap: 14px;
+    }
+
+    .jpn-principle-item {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .jpn-principle-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-principle-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .jpn-principle-text {
+        font-size: 15px;
+    }
+
+    .jpn-pace-goal {
+        padding: 28px 24px;
+    }
+
+    .jpn-goal-statement {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-goal-highlight {
+        font-size: 20px;
+    }
+}
+
+/* â”€â”€â”€ Feels Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-feels-wrapper {
     max-width: 1100px;
@@ -2120,7 +3433,108 @@
     opacity: 0.95;
 }
 
-/* ─── Regret Section New ───────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-feels-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-feels-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-feels-intro {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-feels-label {
+        font-size: 17px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experiences-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-card {
+        padding: 28px 24px;
+        gap: 18px;
+    }
+
+    .jpn-experience-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-experience-text {
+        font-size: 16px;
+    }
+
+    .jpn-feels-conclusion {
+        padding: 28px 32px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 18px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-feels-new {
+        padding: 40px 15px;
+    }
+
+    .jpn-feels-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-feels-intro {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-feels-label {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experiences-grid {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-card {
+        padding: 24px 20px;
+        gap: 16px;
+    }
+
+    .jpn-experience-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-experience-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-experience-text {
+        font-size: 15px;
+    }
+
+    .jpn-feels-conclusion {
+        padding: 24px 22px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 17px;
+    }
+}
+
+/* â”€â”€â”€ Regret Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-regret-wrapper {
     max-width: 900px;
@@ -2230,7 +3644,107 @@
     line-height: 1.4;
 }
 
-/* ─── Highlight Box ─────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-regret-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-regret-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-regret-main {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-regret-label {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-regrets-list {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-regret-item {
+        padding: 20px 24px;
+        gap: 16px;
+    }
+
+    .jpn-regret-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-regret-text {
+        font-size: 16px;
+    }
+
+    .jpn-regret-truth {
+        padding: 28px 32px;
+    }
+
+    .jpn-truth-text {
+        font-size: 22px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-regret-new {
+        padding: 40px 15px;
+    }
+
+    .jpn-regret-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-regret-main {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .jpn-regret-label {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-regrets-list {
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-regret-item {
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
+    .jpn-regret-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-regret-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-regret-text {
+        font-size: 15px;
+    }
+
+    .jpn-regret-truth {
+        padding: 24px 22px;
+    }
+
+    .jpn-truth-text {
+        font-size: 20px;
+    }
+}
+
+/* â”€â”€â”€ Highlight Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-highlight-box {
     background: rgba(39, 68, 114, 0.05);
@@ -2240,7 +3754,7 @@
     margin-top: 32px;
 }
 
-/* ─── Editorial Box ─────────────────────────────────────── */
+/* â”€â”€â”€ Editorial Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-editorial-box {
     background: #ffffff;
@@ -2251,7 +3765,7 @@
     border: 1px solid #edf2f7;
 }
 
-/* ─── Checklist ─────────────────────────────────────────── */
+/* â”€â”€â”€ Checklist â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-checklist {
     list-style: none;
@@ -2279,7 +3793,7 @@
     justify-content: center;
 }
 
-/* ─── Season List ───────────────────────────────────────── */
+/* â”€â”€â”€ Season List â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-season-list {
     list-style: none;
@@ -2313,7 +3827,7 @@
     font-weight: 600;
 }
 
-/* ─── Grids ─────────────────────────────────────────────── */
+/* â”€â”€â”€ Grids â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-grid-2 {
     display: grid;
@@ -2336,7 +3850,7 @@
     margin: 32px 0;
 }
 
-/* ─── Info Cards ────────────────────────────────────────── */
+/* â”€â”€â”€ Info Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-info-card {
     background: #ffffff;
@@ -2375,7 +3889,7 @@
     color: #ffffff;
 }
 
-/* ─── Decision Cards ────────────────────────────────────── */
+/* â”€â”€â”€ Decision Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-decision-card {
     background: #ffffff;
@@ -2427,7 +3941,7 @@
     margin: 0 0 10px 0;
 }
 
-/* ─── Verdict Box ───────────────────────────────────────── */
+/* â”€â”€â”€ Verdict Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-verdict-box {
     background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
@@ -2444,7 +3958,7 @@
     margin: 0;
 }
 
-/* ─── Sticky Layout ─────────────────────────────────────── */
+/* â”€â”€â”€ Sticky Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-sticky-wrap {
     display: grid;
@@ -2489,7 +4003,51 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ─── Impact Box ────────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-sticky-wrap {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .jpn-sticky-wrap.jpn-rev {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-sticky-el {
+        position: static;
+    }
+
+    .jpn-sticky-el.jpn-rside {
+        text-align: left;
+    }
+
+    .jpn-lbar::after {
+        margin: 16px 0 0;
+    }
+
+    .jpn-rbar {
+        text-align: left !important;
+    }
+
+    .jpn-rbar::after {
+        margin: 16px 0 0;
+    }
+
+    .jpn-sticky-desc {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-sticky-wrap {
+        gap: 24px;
+    }
+}
+
+/* â”€â”€â”€ Impact Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-impact-box {
     background: #ffffff;
@@ -2536,7 +4094,7 @@
     border-color: #274472;
 }
 
-/* ─── Price Grid ────────────────────────────────────────── */
+/* â”€â”€â”€ Price Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-price-grid {
     display: grid;
@@ -2609,7 +4167,7 @@
     color: #274472;
 }
 
-/* ─── Dot List ──────────────────────────────────────────── */
+/* â”€â”€â”€ Dot List â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-dotlist {
     list-style: none;
@@ -2638,7 +4196,7 @@
     display: block;
 }
 
-/* ─── Breakdown Box ─────────────────────────────────────── */
+/* â”€â”€â”€ Breakdown Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-breakdown-box {
     background: #f7f9fc;
@@ -2648,7 +4206,7 @@
     border: 1px solid #edf2f7;
 }
 
-/* ─── Experience Cards ──────────────────────────────────── */
+/* â”€â”€â”€ Experience Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-exp-card {
     padding: 32px;
@@ -2679,7 +4237,7 @@
     color: #6b93bd;
 }
 
-/* ─── Itinerary Card ────────────────────────────────────── */
+/* â”€â”€â”€ Itinerary Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-itinerary-card {
     background: #ffffff;
@@ -2698,7 +4256,259 @@
     margin: 28px 0;
 }
 
-/* ─── Flow Section ──────────────────────────────────────── */
+/* ============================================================
+   SECTIONS 23-36: COMPONENT SECTIONS - RESPONSIVE STYLES
+   ============================================================ */
+
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    /* Highlight Box */
+    .jpn-highlight-box {
+        padding: 24px 28px;
+    }
+
+    /* Editorial Box */
+    .jpn-editorial-box {
+        padding: 28px;
+    }
+
+    /* Checklist */
+    .jpn-checklist li {
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+
+    /* Season List */
+    .jpn-season-list li {
+        font-size: 17px;
+        padding: 18px 22px;
+    }
+
+    /* Grids */
+    .jpn-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Info Cards */
+    .jpn-info-card {
+        padding: 28px 20px;
+    }
+
+    .jpn-icon-wrap {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Experience Grid */
+    .jpn-experience-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Dot List */
+    .jpn-dotlist li {
+        font-size: 17px;
+    }
+
+    /* Breakdown Box */
+    .jpn-breakdown-box {
+        padding: 28px;
+    }
+
+    /* Impact Grid */
+    .jpn-impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jpn-impact-item {
+        font-size: 15px;
+        padding: 16px 14px;
+    }
+
+    /* Price Grid */
+    .jpn-price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-price-card {
+        padding: 32px 28px;
+    }
+
+    /* Timeline */
+    .jpn-timeline {
+        padding: 28px;
+    }
+
+    .jpn-tl-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-tl-period {
+        font-size: 22px;
+    }
+
+    /* Mistakes Grid */
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Pacing Card */
+    .jpn-pacing-card {
+        padding: 28px;
+    }
+
+    .jpn-quote-box {
+        padding: 32px;
+    }
+
+    .jpn-quote {
+        font-size: 20px;
+    }
+
+    /* Itinerary Card */
+    .jpn-itinerary-card {
+        padding: 28px;
+    }
+
+    .jpn-warning-box {
+        padding: 20px 24px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    /* Highlight Box */
+    .jpn-highlight-box {
+        padding: 20px 24px;
+    }
+
+    /* Editorial Box */
+    .jpn-editorial-box {
+        padding: 24px 20px;
+    }
+
+    /* Checklist */
+    .jpn-checklist li {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    /* Season List */
+    .jpn-season-list li {
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+
+    .jpn-season-list li:hover {
+        transform: translateX(3px);
+    }
+
+    /* Grids */
+    .jpn-grid-2,
+    .jpn-grid-4,
+    .jpn-2col {
+        grid-template-columns: 1fr;
+    }
+
+    /* Info Cards */
+    .jpn-info-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-icon-wrap {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-info-card:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Experience Grid */
+    .jpn-experience-grid {
+        gap: 16px;
+    }
+
+    /* Dot List */
+    .jpn-dotlist li {
+        font-size: 16px;
+    }
+
+    /* Breakdown Box */
+    .jpn-breakdown-box {
+        padding: 24px 20px;
+    }
+
+    /* Impact Grid */
+    .jpn-impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-impact-item {
+        font-size: 14px;
+        padding: 14px 12px;
+    }
+
+    /* Price Grid */
+    .jpn-price-grid {
+        gap: 18px;
+    }
+
+    .jpn-price-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-price-card:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Timeline */
+    .jpn-timeline {
+        padding: 24px 20px;
+    }
+
+    .jpn-tl-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-tl-period {
+        font-size: 20px;
+    }
+
+    /* Mistakes Grid */
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .jpn-mistake-card:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Pacing Card */
+    .jpn-pacing-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-quote-box {
+        padding: 28px 24px;
+    }
+
+    .jpn-quote {
+        font-size: 18px;
+    }
+
+    /* Itinerary Card */
+    .jpn-itinerary-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-warning-box {
+        padding: 18px 20px;
+    }
+}
+
+/* â”€â”€â”€ Flow Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-flow {
     position: relative;
@@ -2834,7 +4644,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ─── Mistakes Grid ─────────────────────────────────────── */
+/* â”€â”€â”€ Mistakes Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-mistakes-grid {
     display: grid;
@@ -2867,7 +4677,7 @@
     line-height: 1;
 }
 
-/* ─── Pacing Card ───────────────────────────────────────── */
+/* â”€â”€â”€ Pacing Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-pacing-card {
     background: #ffffff;
@@ -2894,7 +4704,117 @@
     line-height: 1.5;
 }
 
-/* ─── Feels Section ─────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-flow {
+        padding: 70px 15px;
+    }
+
+    .jpn-h2-white {
+        font-size: 36px;
+    }
+
+    .jpn-p-white {
+        font-size: 17px;
+    }
+
+    .jpn-route-text {
+        font-size: 24px;
+        padding: 18px 36px;
+    }
+
+    .jpn-why-box {
+        padding: 28px;
+        margin: 32px auto;
+    }
+
+    .jpn-checklist-white li {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .jpn-mistake-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-mistake-num {
+        font-size: 38px;
+    }
+
+    .jpn-pacing-card {
+        padding: 28px;
+    }
+
+    .jpn-quote-box {
+        padding: 32px;
+    }
+
+    .jpn-quote {
+        font-size: 20px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-flow {
+        padding: 60px 15px;
+    }
+
+    .jpn-h2-white {
+        font-size: 28px;
+    }
+
+    .jpn-p-white {
+        font-size: 16px;
+    }
+
+    .jpn-route-text {
+        font-size: 20px;
+        padding: 16px 28px;
+    }
+
+    .jpn-why-box {
+        padding: 24px 20px;
+        margin: 28px auto;
+    }
+
+    .jpn-checklist-white li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .jpn-mistake-card {
+        padding: 20px 18px;
+    }
+
+    .jpn-mistake-num {
+        font-size: 34px;
+    }
+
+    .jpn-pacing-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-quote-box {
+        padding: 28px 24px;
+    }
+
+    .jpn-quote {
+        font-size: 18px;
+    }
+}
+
+/* â”€â”€â”€ Feels Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-feels {
     position: relative;
@@ -2938,7 +4858,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ─── Regret Section ────────────────────────────────────── */
+/* â”€â”€â”€ Regret Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-regret-box {
     max-width: 800px;
@@ -2950,7 +4870,7 @@
     text-align: center;
 }
 
-/* ─── Timeline ──────────────────────────────────────────── */
+/* â”€â”€â”€ Timeline â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-timeline {
     display: flex;
@@ -2984,7 +4904,7 @@
     font-family: 'Playfair Display', serif;
 }
 
-/* ─── Expert Card ───────────────────────────────────────── */
+/* â”€â”€â”€ Expert Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-expert-card {
     background: #ffffff;
@@ -3080,7 +5000,117 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ─── Links Grid ────────────────────────────────────────── */
+/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 1024px) {
+    .jpn-section-feels {
+        padding: 70px 15px;
+    }
+
+    .jpn-h2-white {
+        font-size: 36px;
+    }
+
+    .jpn-p-white {
+        font-size: 17px;
+    }
+
+    .jpn-stmt {
+        font-size: 19px;
+        padding: 28px;
+    }
+
+    .jpn-editorial-box {
+        padding: 28px;
+    }
+
+    .jpn-editorial-box .jpn-h3 {
+        font-size: 24px;
+    }
+
+    .jpn-expert-card {
+        padding: 28px;
+    }
+
+    .jpn-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .jpn-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .jpn-link-card {
+        padding: 28px 20px;
+    }
+
+    .jpn-link-icon-wrap {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-link-title {
+        font-size: 15px;
+    }
+}
+
+/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@media (max-width: 768px) {
+    .jpn-section-feels {
+        padding: 60px 15px;
+    }
+
+    .jpn-h2-white {
+        font-size: 28px;
+    }
+
+    .jpn-p-white {
+        font-size: 16px;
+    }
+
+    .jpn-stmt {
+        font-size: 17px;
+        padding: 24px 20px;
+    }
+
+    .jpn-editorial-box {
+        padding: 24px 20px;
+    }
+
+    .jpn-editorial-box .jpn-h3 {
+        font-size: 22px;
+    }
+
+    .jpn-expert-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .jpn-links-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-link-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-link-icon-wrap {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-link-title {
+        font-size: 14px;
+    }
+}
+
+/* â”€â”€â”€ Links Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-links-grid {
     display: grid;
@@ -3165,1637 +5195,7 @@
     transform: translateX(5px);
 }
 
-/* ─── Tablet  (≤ 1024px) ────────────────────────────────── */
-
-@media (max-width: 1024px) {
-
-    .jpn-section {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-different {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-decisions {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-flow,
-    .jpn-section-feels {
-        padding: 70px 15px;
-    }
-
-    .jpn-hero {
-        padding: 60px 15px;
-    }
-
-    .jpn-h1 {
-        font-size: 32px;
-    }
-
-    .jpn-h2 {
-        font-size: 28px;
-    }
-
-    .jpn-h3 {
-        font-size: 22px;
-    }
-
-    .jpn-h2-white {
-        font-size: 28px;
-    }
-
-    .jpn-p {
-        font-size: 17px;
-    }
-
-    .jpn-section-step1 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-step2 {
-        padding: 50px 15px;
-    }
-
-    .jpn-hero-lead {
-        font-size: 17px;
-    }
-
-    .jpn-white-text {
-        font-size: 17px;
-    }
-
-    .jpn-p-white {
-        font-size: 17px;
-    }
-
-    .jpn-quote {
-        font-size: 20px;
-    }
-
-    .jpn-stmt {
-        font-size: 18px;
-    }
-
-    .jpn-section-step3 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-step4 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-flow-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-mistakes-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-pace-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-checklist li {
-        font-size: 17px;
-    }
-
-    .jpn-season-list li {
-        font-size: 17px;
-    }
-
-    .jpn-dotlist li {
-        font-size: 17px;
-    }
-
-    .jpn-checklist-white li {
-        font-size: 17px;
-    }
-
-    .jpn-exp-text {
-        font-size: 17px;
-    }
-
-    .jpn-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .jpn-side-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .jpn-side-layout.jpn-reverse-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-side-heading {
-        position: static;
-        text-align: center;
-    }
-
-    .jpn-side-heading .jpn-bar {
-        margin: 18px auto 0;
-    }
-
-    .jpn-sticky-wrap,
-    .jpn-sticky-wrap.jpn-rev {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .jpn-sticky-side {
-        position: static;
-        order: -1;
-    }
-
-    .jpn-sticky-el.jpn-rside {
-        text-align: left;
-    }
-
-    .jpn-rbar {
-        text-align: left;
-        border-right: none;
-        border-left: 3px solid #274472;
-        padding-left: 20px;
-        padding-right: 0;
-    }
-
-    .jpn-links-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .jpn-experience-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-impact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .jpn-route-text {
-        font-size: 22px;
-        padding: 18px 32px;
-    }
-
-    .jpn-verdict-box {
-        padding: 32px 36px;
-    }
-
-    .jpn-verdict-box .jpn-p {
-        font-size: 18px;
-    }
-
-    /* Planning Section Tablet */
-    .jpn-plan-section {
-        padding: 48px 40px;
-    }
-
-    .jpn-plan-title {
-        font-size: 36px;
-    }
-
-    .jpn-plan-lead {
-        font-size: 18px;
-    }
-
-    .jpn-plan-step {
-        padding: 22px 24px;
-        gap: 16px;
-        font-size: 16px;
-    }
-
-    .jpn-plan-tip {
-        padding: 22px 24px;
-    }
-
-    .jpn-tip-text {
-        font-size: 16px;
-    }
-
-    /* Why Planning Japan Is Different - Tablet */
-    .jpn-different-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-subtitle {
-        font-size: 18px;
-        margin-bottom: 28px !important;
-    }
-
-    .jpn-different-cards {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-diff-card {
-        padding: 24px 22px;
-        gap: 16px;
-    }
-
-    .jpn-diff-icon {
-        width: 46px;
-        height: 46px;
-    }
-
-    .jpn-diff-text {
-        font-size: 17px;
-    }
-
-    .jpn-different-conclusion {
-        padding: 28px 32px;
-    }
-
-    .jpn-conclusion-text {
-        font-size: 19px;
-    }
-
-    /* The 4 Decisions - Tablet */
-    .jpn-decisions-intro {
-        font-size: 18px;
-        margin-bottom: 36px;
-    }
-
-    .jpn-decisions-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 22px;
-        margin-bottom: 36px;
-    }
-
-    .jpn-decision-item {
-        padding: 28px 22px;
-    }
-
-    .jpn-decision-number {
-        font-size: 44px;
-        margin-bottom: 12px;
-    }
-
-    .jpn-decision-title {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .jpn-decision-desc {
-        font-size: 15px;
-    }
-
-    .jpn-decisions-verdict {
-        padding: 32px 36px;
-    }
-
-    .jpn-verdict-text {
-        font-size: 20px;
-    }
-
-    /* Step 1: Best Time - Tablet */
-    .jpn-step1-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-step1-intro {
-        font-size: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-seasons-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-bottom: 36px;
-    }
-
-    .jpn-season-card {
-        padding: 24px 22px;
-        gap: 16px;
-    }
-
-    .jpn-season-icon {
-        width: 46px;
-        height: 46px;
-    }
-
-    .jpn-season-text {
-        font-size: 17px;
-    }
-
-    .jpn-impacts-section {
-        padding: 28px 32px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-impacts-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .jpn-impact-item {
-        padding: 16px 14px;
-        font-size: 15px;
-    }
-
-    /* Step 2: Cost - Tablet */
-    .jpn-step2-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-step2-intro {
-        font-size: 19px;
-        margin-bottom: 6px;
-    }
-
-    .jpn-step2-subtitle {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-step2-label {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-price-cards {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        margin-bottom: 36px;
-    }
-
-    .jpn-price-card {
-        padding: 32px 28px;
-    }
-
-    .jpn-price-icon {
-        width: 56px;
-        height: 56px;
-    }
-
-    .jpn-price-tier {
-        font-size: 10px;
-        margin-bottom: 14px;
-    }
-
-    .jpn-price-amount {
-        font-size: 30px;
-        margin: 10px 0;
-    }
-
-    .jpn-price-note {
-        font-size: 15px;
-    }
-
-    .jpn-breakdown-section {
-        padding: 32px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-breakdown-list {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .jpn-breakdown-item {
-        padding: 18px 20px;
-        gap: 14px;
-    }
-
-    .jpn-breakdown-item span {
-        font-size: 16px;
-    }
-
-    /* Step 3: Experience - Tablet */
-    .jpn-step3-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-step3-intro {
-        font-size: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-experience-comparison {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-experience-card {
-        padding: 32px 28px;
-    }
-
-    .jpn-experience-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-experience-title {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-experience-list {
-        gap: 16px;
-    }
-
-    .jpn-experience-list li {
-        font-size: 16px;
-        gap: 12px;
-    }
-
-    .jpn-step3-verdict {
-        padding: 28px 32px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-verdict-statement {
-        font-size: 19px;
-    }
-
-    /* Step 4: Itinerary - Tablet */
-    .jpn-step4-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-step4-intro {
-        font-size: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-itinerary-section {
-        padding: 32px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-itinerary-label {
-        font-size: 10px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-itinerary-items {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .jpn-itinerary-item {
-        padding: 22px 20px;
-        gap: 16px;
-    }
-
-    .jpn-itinerary-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .jpn-itinerary-city {
-        font-size: 18px;
-    }
-
-    .jpn-itinerary-desc {
-        font-size: 14px;
-    }
-
-    .jpn-step4-warning {
-        padding: 24px 28px;
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-warning-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-warning-title {
-        font-size: 18px;
-    }
-
-    .jpn-warning-text {
-        font-size: 16px;
-    }
-
-    /* Flow Section New - Tablet */
-    .jpn-flow-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-flow-intro {
-        font-size: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-route-visual {
-        padding: 32px 24px;
-        gap: 12px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-route-city {
-        font-size: 16px;
-        padding: 16px 20px;
-        min-width: 90px;
-    }
-
-    .jpn-route-city svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .jpn-route-arrow svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .jpn-flow-reasons {
-        padding: 28px 24px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-reasons-label {
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-reasons-list {
-        gap: 16px;
-    }
-
-    .jpn-reason-item {
-        font-size: 16px;
-        padding: 14px 18px;
-        gap: 14px;
-    }
-
-    .jpn-reason-item svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .jpn-flow-statement {
-        padding: 24px 24px;
-    }
-
-    .jpn-statement-text {
-        font-size: 17px;
-    }
-
-    /* Mistakes Section New - Tablet */
-    .jpn-mistakes-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-mistakes-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-mistake-card:nth-child(4),
-    .jpn-mistake-card:nth-child(5) {
-        grid-column: span 1;
-    }
-
-    .jpn-mistake-card {
-        padding: 26px 18px;
-        gap: 14px;
-    }
-
-    .jpn-mistake-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-    .jpn-mistake-text {
-        font-size: 15px;
-    }
-
-    .jpn-mistakes-impact {
-        padding: 28px 32px;
-    }
-
-    .jpn-impact-text {
-        font-size: 18px;
-    }
-
-    /* Pace Section New - Tablet */
-    .jpn-pace-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-pace-intro {
-        font-size: 18px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-pace-principles {
-        padding: 32px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-principles-label {
-        font-size: 10px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-principles-list {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .jpn-principle-item {
-        padding: 18px;
-        gap: 14px;
-    }
-
-    .jpn-principle-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-principle-text {
-        font-size: 15px;
-    }
-
-    .jpn-pace-goal {
-        padding: 32px;
-    }
-
-    .jpn-goal-statement {
-        font-size: 17px;
-    }
-
-    .jpn-goal-highlight {
-        font-size: 22px;
-    }
-
-    /* Feels Section New - Tablet */
-    .jpn-feels-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-feels-intro {
-        font-size: 18px;
-        margin-bottom: 6px;
-    }
-
-    .jpn-feels-label {
-        font-size: 17px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-experiences-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-experience-card {
-        padding: 28px 24px;
-        gap: 18px;
-    }
-
-    .jpn-experience-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-    .jpn-experience-text {
-        font-size: 16px;
-    }
-
-    .jpn-feels-conclusion {
-        padding: 28px 32px;
-    }
-
-    .jpn-conclusion-text {
-        font-size: 18px;
-    }
-
-    /* Regret Section New - Tablet */
-    .jpn-regret-header {
-        margin-bottom: 36px;
-    }
-
-    .jpn-regret-main {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .jpn-regret-label {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-regrets-list {
-        gap: 16px;
-        margin-bottom: 32px;
-    }
-
-    .jpn-regret-item {
-        padding: 20px 24px;
-        gap: 16px;
-    }
-
-    .jpn-regret-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .jpn-regret-text {
-        font-size: 16px;
-    }
-
-    .jpn-regret-truth {
-        padding: 28px 32px;
-    }
-
-    .jpn-truth-text {
-        font-size: 22px;
-    }
-}
-
-/* ─── Mobile  (≤ 768px) ─────────────────────────────────── */
-
-@media (max-width: 768px) {
-
-    .jpn-section {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-different {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-decisions {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-flow,
-    .jpn-section-feels {
-        padding: 60px 15px;
-    }
-
-    .jpn-hero {
-        min-height: 100svh;
-        padding: 60px 15px;
-    }
-
-    .jpn-h1 {
-        font-size: 26px;
-    }
-
-    .jpn-h2 {
-        font-size: 24px;
-    }
-
-    .jpn-h3 {
-        font-size: 20px;
-    }
-
-    .jpn-h2-white {
-        font-size: 24px;
-    }
-
-    .jpn-p {
-        font-size: 16px;
-    }
-
-    .jpn-section-step1 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-step2 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-step3 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-step4 {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-flow-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-mistakes-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-pace-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-feels-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-regret-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-section-regret-new {
-        padding: 50px 15px;
-    }
-
-    .jpn-hero-lead {
-        font-size: 16px;
-    }
-
-    .jpn-white-text {
-        font-size: 16px;
-    }
-
-    .jpn-p-white {
-        font-size: 16px;
-    }
-
-    .jpn-quote {
-        font-size: 18px;
-    }
-
-    .jpn-stmt {
-        font-size: 17px;
-    }
-
-    .jpn-checklist li {
-        font-size: 16px;
-    }
-
-    .jpn-season-list li {
-        font-size: 16px;
-        padding: 16px 18px;
-    }
-
-    .jpn-dotlist li {
-        font-size: 16px;
-    }
-
-    .jpn-checklist-white li {
-        font-size: 16px;
-    }
-
-    .jpn-exp-text {
-        font-size: 16px;
-    }
-
-    .jpn-grid-2,
-    .jpn-grid-4,
-    .jpn-2col {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-info-card-wide {
-        grid-column: auto;
-    }
-
-    .jpn-price-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-links-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-mistakes-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-impact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .jpn-btn-primary {
-        width: 100%;
-        justify-content: center;
-        padding: 15px 20px;
-        font-size: 11px;
-    }
-
-    .jpn-btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .jpn-price-amount {
-        font-size: 28px;
-    }
-
-    .jpn-verdict-box {
-        padding: 28px 22px;
-    }
-
-    .jpn-verdict-box .jpn-p {
-        font-size: 16px;
-    }
-
-    .jpn-quote-box {
-        padding: 28px 22px;
-    }
-
-    .jpn-why-box {
-        padding: 24px;
-    }
-
-    .jpn-expert-card {
-        padding: 24px;
-    }
-
-    .jpn-expert-name {
-        font-size: 24px;
-    }
-
-    .jpn-route-text {
-        font-size: 17px;
-        padding: 16px 22px;
-        letter-spacing: 1px;
-    }
-
-    .jpn-snippet-card {
-        padding: 22px 20px;
-    }
-
-    .jpn-regret-box .jpn-verdict-box .jpn-p {
-        font-size: 18px;
-    }
-
-    .jpn-hdr {
-        margin-bottom: 36px;
-    }
-
-    .jpn-timeline-label {
-        font-size: 17px;
-    }
-
-    .jpn-decision-num {
-        font-size: 40px;
-    }
-
-    /* Planning Section Mobile */
-    .jpn-plan-section {
-        padding: 32px 24px;
-        border-radius: 16px;
-    }
-
-    .jpn-plan-title {
-        font-size: 28px;
-    }
-
-    .jpn-plan-lead {
-        font-size: 17px;
-    }
-
-    .jpn-plan-step {
-        padding: 18px 20px;
-        gap: 14px;
-        font-size: 15px;
-    }
-
-    .jpn-plan-step:hover {
-        transform: translateY(-3px);
-    }
-
-    .jpn-plan-tip {
-        padding: 18px 20px;
-    }
-
-    .jpn-tip-text {
-        font-size: 15px;
-    }
-
-    /* Why Planning Japan Is Different - Mobile */
-    .jpn-different-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-subtitle {
-        font-size: 17px;
-        margin-bottom: 24px !important;
-    }
-
-    .jpn-different-cards {
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-diff-card {
-        padding: 20px 18px;
-        gap: 14px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .jpn-diff-card:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-diff-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-diff-text {
-        font-size: 16px;
-    }
-
-    .jpn-different-conclusion {
-        padding: 24px 22px;
-    }
-
-    .jpn-conclusion-text {
-        font-size: 17px;
-    }
-
-    /* The 4 Decisions - Mobile */
-    .jpn-decisions-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-decisions-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-decision-item {
-        padding: 24px 20px;
-    }
-
-    .jpn-decision-item:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-decision-number {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-
-    .jpn-decision-title {
-        font-size: 19px;
-        margin-bottom: 8px;
-    }
-
-    .jpn-decision-desc {
-        font-size: 15px;
-    }
-
-    .jpn-decisions-verdict {
-        padding: 28px 24px;
-    }
-
-    .jpn-verdict-text {
-        font-size: 18px;
-    }
-
-    /* Step 1: Best Time - Mobile */
-    .jpn-step1-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-step-label {
-        font-size: 10px;
-        padding: 6px 16px;
-    }
-
-    .jpn-step1-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-seasons-grid {
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-season-card {
-        padding: 20px 18px;
-        gap: 14px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .jpn-season-card:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-season-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-season-text {
-        font-size: 16px;
-    }
-
-    .jpn-impacts-section {
-        padding: 24px 22px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-impacts-label {
-        font-size: 10px;
-        margin-bottom: 16px;
-    }
-
-    .jpn-impacts-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .jpn-impact-item {
-        padding: 14px 12px;
-        font-size: 14px;
-    }
-
-    .jpn-section-step1 .jpn-btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Step 2: Cost - Mobile */
-    .jpn-step2-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-step2-intro {
-        font-size: 18px;
-        margin-bottom: 6px;
-    }
-
-    .jpn-step2-subtitle {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-step2-label {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-price-cards {
-        gap: 18px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-price-card {
-        padding: 28px 24px;
-    }
-
-    .jpn-price-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-    .jpn-price-tier {
-        font-size: 10px;
-        margin-bottom: 12px;
-    }
-
-    .jpn-price-amount {
-        font-size: 26px;
-        margin: 8px 0;
-    }
-
-    .jpn-price-note {
-        font-size: 14px;
-    }
-
-    .jpn-breakdown-section {
-        padding: 24px 22px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-breakdown-label {
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-breakdown-list {
-        gap: 14px;
-    }
-
-    .jpn-breakdown-item {
-        padding: 16px 18px;
-        gap: 12px;
-    }
-
-    .jpn-breakdown-item span {
-        font-size: 15px;
-    }
-
-    .jpn-section-step2 .jpn-btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Step 3: Experience - Mobile */
-    .jpn-step3-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-step3-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-experience-comparison {
-        gap: 18px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-experience-card {
-        padding: 28px 24px;
-    }
-
-    .jpn-experience-card:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-experience-icon {
-        width: 56px;
-        height: 56px;
-        margin-bottom: 18px;
-    }
-
-    .jpn-experience-title {
-        font-size: 20px;
-        margin-bottom: 18px;
-    }
-
-    .jpn-experience-list {
-        gap: 14px;
-    }
-
-    .jpn-experience-list li {
-        font-size: 15px;
-        gap: 12px;
-    }
-
-    .jpn-step3-verdict {
-        padding: 24px 22px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-verdict-statement {
-        font-size: 17px;
-    }
-
-    .jpn-section-step3 .jpn-btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Step 4: Itinerary - Mobile */
-    .jpn-step4-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-step4-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-itinerary-section {
-        padding: 24px 22px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-itinerary-label {
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-itinerary-items {
-        gap: 16px;
-    }
-
-    .jpn-itinerary-item {
-        padding: 18px 18px;
-        gap: 14px;
-    }
-
-    .jpn-itinerary-item:hover {
-        transform: translateY(-3px);
-    }
-
-    .jpn-itinerary-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-itinerary-city {
-        font-size: 17px;
-    }
-
-    .jpn-itinerary-desc {
-        font-size: 14px;
-    }
-
-    .jpn-step4-warning {
-        padding: 20px 22px;
-        gap: 14px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-
-    .jpn-warning-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .jpn-warning-title {
-        font-size: 17px;
-    }
-
-    .jpn-warning-text {
-        font-size: 15px;
-    }
-
-    .jpn-section-step4 .jpn-btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Flow Section New - Mobile */
-    .jpn-flow-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-flow-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-route-visual {
-        padding: 24px 20px;
-        gap: 10px;
-        margin-bottom: 28px;
-        flex-direction: column;
-    }
-
-    .jpn-route-city {
-        font-size: 15px;
-        padding: 14px 18px;
-        min-width: 80px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .jpn-route-city svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .jpn-route-arrow {
-        transform: rotate(90deg);
-    }
-
-    .jpn-route-arrow svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .jpn-route-city:hover {
-        transform: translateY(-2px);
-    }
-
-    .jpn-flow-reasons {
-        padding: 24px 20px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-reasons-label {
-        font-size: 10px;
-        margin-bottom: 18px;
-    }
-
-    .jpn-reasons-list {
-        gap: 14px;
-    }
-
-    .jpn-reason-item {
-        font-size: 15px;
-        padding: 12px 16px;
-        gap: 12px;
-    }
-
-    .jpn-reason-item svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .jpn-reason-item:hover {
-        transform: translateY(-2px);
-    }
-
-    .jpn-flow-statement {
-        padding: 20px 20px;
-    }
-
-    .jpn-statement-text {
-        font-size: 16px;
-    }
-
-    /* Mistakes Section New - Mobile */
-    .jpn-mistakes-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-mistakes-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-mistake-card:nth-child(4),
-    .jpn-mistake-card:nth-child(5) {
-        grid-column: span 1;
-    }
-
-    .jpn-mistake-card {
-        padding: 22px 16px;
-        gap: 14px;
-    }
-
-    .jpn-mistake-card:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-mistake-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-    .jpn-mistake-text {
-        font-size: 16px;
-    }
-
-    .jpn-mistakes-impact {
-        padding: 24px 22px;
-    }
-
-    .jpn-impact-text {
-        font-size: 17px;
-    }
-
-    /* Pace Section New - Mobile */
-    .jpn-pace-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-pace-intro {
-        font-size: 17px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-pace-principles {
-        padding: 24px 22px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-principles-label {
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .jpn-principles-list {
-        gap: 14px;
-    }
-
-    .jpn-principle-item {
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .jpn-principle-item:hover {
-        transform: translateY(-3px);
-    }
-
-    .jpn-principle-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .jpn-principle-text {
-        font-size: 15px;
-    }
-
-    .jpn-pace-goal {
-        padding: 28px 24px;
-    }
-
-    .jpn-goal-statement {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .jpn-goal-highlight {
-        font-size: 20px;
-    }
-
-    /* Feels Section New - Mobile */
-    .jpn-feels-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-feels-intro {
-        font-size: 17px;
-        margin-bottom: 6px;
-    }
-
-    .jpn-feels-label {
-        font-size: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-experiences-grid {
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-experience-card {
-        padding: 24px 20px;
-        gap: 16px;
-    }
-
-    .jpn-experience-card:hover {
-        transform: translateY(-4px);
-    }
-
-    .jpn-experience-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .jpn-experience-text {
-        font-size: 15px;
-    }
-
-    .jpn-feels-conclusion {
-        padding: 24px 22px;
-    }
-
-    .jpn-conclusion-text {
-        font-size: 17px;
-    }
-
-    /* Regret Section New - Mobile */
-    .jpn-regret-header {
-        margin-bottom: 28px;
-    }
-
-    .jpn-regret-main {
-        font-size: 22px;
-        margin-bottom: 8px;
-    }
-
-    .jpn-regret-label {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-
-    .jpn-regrets-list {
-        gap: 14px;
-        margin-bottom: 28px;
-    }
-
-    .jpn-regret-item {
-        padding: 18px 20px;
-        gap: 14px;
-    }
-
-    .jpn-regret-item:hover {
-        transform: translateY(-3px);
-    }
-
-    .jpn-regret-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .jpn-regret-text {
-        font-size: 15px;
-    }
-
-    .jpn-regret-truth {
-        padding: 24px 22px;
-    }
-
-    .jpn-truth-text {
-        font-size: 20px;
-    }
-}
-
-/* ─── NEW Timeline Section ──────────────────────────────────────────── */
+/* â"€â”€â”€ NEW Timeline Section â"€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-timeline-new {
     background: var(--bg-soft);
@@ -5022,7 +5422,7 @@
     }
 }
 
-/* ─── NEW Expert Section ──────────────────────────────────────────── */
+/* â”€â”€â”€ NEW Expert Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-expert-new {
     background: var(--bg-white);
@@ -5292,7 +5692,7 @@
     }
 }
 
-/* ─── NEW Where to Start Section ──────────────────────────────────────────── */
+/* â”€â”€â”€ NEW Where to Start Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-where-start {
     background: var(--bg-soft);
@@ -5492,435 +5892,3 @@
     }
 }
 
-/* ============================================================
-   STICKY WRAPPER (heading left, content right) — SVF pattern
-   ============================================================ */
-.jpn-sticky-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1.65fr;
-    gap: 60px;
-    align-items: start;
-    width: 100%;
-}
-
-/* Reversed: content LEFT, heading RIGHT */
-.jpn-sticky-wrap.jpn-rev {
-    grid-template-columns: 1.65fr 1fr;
-}
-
-.jpn-sticky-side {
-    height: 100%;
-}
-
-.jpn-sticky-el {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 120px;
-    text-align: left;
-}
-
-/* Right-aligned sticky */
-.jpn-sticky-el.jpn-rside {
-    text-align: right;
-}
-
-/* Left bar after h2 */
-.jpn-lbar {
-    text-align: left !important;
-}
-
-.jpn-lbar::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 3px;
-    background: #274472;
-    margin: 20px 0 0;
-}
-
-/* Right bar after h2 */
-.jpn-rbar {
-    text-align: right !important;
-}
-
-.jpn-rbar::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 3px;
-    background: #274472;
-    margin: 20px 0 0 auto;
-}
-
-.jpn-sticky-desc {
-    font-family: 'Playfair Display', serif;
-    font-size: 17px;
-    line-height: 1.6;
-    color: #274472;
-    font-weight: 500;
-    margin-top: 24px;
-}
-
-.jpn-main-col {
-    width: 100%;
-}
-
-/* ─── Credentials box (Expert sidebar) ──────────────────── */
-
-.jpn-cred-box {
-    background: #ffffff;
-    padding: 28px;
-    border-radius: 10px;
-    border-top: 4px solid #274472;
-    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.06);
-    margin-top: 28px;
-}
-
-.jpn-avatar {
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 18px;
-    border: 2px solid rgb(231, 243, 245);
-}
-
-.jpn-avatar-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.jpn-cred-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #274472;
-    opacity: 0.6;
-    margin: 0 0 6px;
-}
-
-.jpn-cred-role {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    color: #274472;
-    font-weight: 400;
-    margin: 0;
-    opacity: 0.75;
-}
-
-/* ─── Checklist (SVF pattern) ───────────────────────────── */
-
-.jpn-checklist {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.jpn-checklist li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 14px 0;
-    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
-    color: #274472;
-}
-
-.jpn-checklist li:last-child {
-    border-bottom: none;
-}
-
-.jpn-checklist li svg {
-    flex-shrink: 0;
-    margin-top: 2px;
-    color: #274472;
-}
-
-/* ─── Editorial box (left border) ───────────────────────── */
-
-.jpn-editorial-box {
-    background: rgb(231, 243, 245);
-    padding: 30px 36px;
-    border-left: 4px solid #274472;
-    border-radius: 0 4px 4px 0;
-    margin-bottom: 28px;
-}
-
-/* ─── Highlight box (white on soft bg) ──────────────────── */
-
-.jpn-highlight-box {
-    background: #ffffff;
-    padding: 30px 36px;
-    border-left: 4px solid #274472;
-    border-radius: 0 8px 8px 0;
-    margin-bottom: 28px;
-    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
-}
-
-/* ─── Timeline Cards ────────────────────────────────────── */
-
-.jpn-tl-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 32px;
-}
-
-.jpn-tl-card {
-    background: #ffffff;
-    padding: 32px 28px;
-    border-radius: 10px;
-    border: 1px solid rgba(39, 68, 114, 0.12);
-    box-shadow: 0 4px 14px rgba(39, 68, 114, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.jpn-tl-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(39, 68, 114, 0.12);
-}
-
-.jpn-tl-card-primary {
-    background: rgb(231, 243, 245);
-    border-color: rgba(39, 68, 114, 0.18);
-}
-
-.jpn-tl-badge {
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
-    background: #274472;
-    padding: 6px 16px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-}
-
-.jpn-tl-badge-outline {
-    background: transparent;
-    color: #274472;
-    border: 1px solid rgba(39, 68, 114, 0.3);
-}
-
-.jpn-tl-period {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #274472;
-    margin: 0 0 10px;
-    line-height: 1.3;
-}
-
-/* ─── Where to Start — Link Cards ───────────────────────── */
-
-.jpn-start-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.jpn-start-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 26px 28px;
-    border-radius: 10px;
-    border: 1px solid rgba(39, 68, 114, 0.10);
-    box-shadow: 0 4px 14px rgba(39, 68, 114, 0.04);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.jpn-start-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.12);
-    border-color: rgba(39, 68, 114, 0.22);
-}
-
-.jpn-start-card-top {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-.jpn-start-icon {
-    width: 48px;
-    height: 48px;
-    background: rgb(231, 243, 245);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #274472;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-}
-
-.jpn-start-card:hover .jpn-start-icon {
-    background: #274472;
-    color: #ffffff;
-}
-
-.jpn-start-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #274472;
-    margin: 0;
-    line-height: 1.3;
-}
-
-.jpn-start-arrow {
-    color: #274472;
-    opacity: 0.35;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-}
-
-.jpn-start-card:hover .jpn-start-arrow {
-    opacity: 1;
-    transform: translateX(4px);
-}
-
-/* ============================================================
-   RESPONSIVE — Tablet (≤1024px)
-   ============================================================ */
-@media (max-width: 1024px) {
-    .jpn-sticky-wrap {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .jpn-sticky-wrap.jpn-rev {
-        grid-template-columns: 1fr;
-    }
-
-    .jpn-sticky-el {
-        position: static;
-    }
-
-    .jpn-sticky-el.jpn-rside {
-        text-align: left;
-    }
-
-    .jpn-lbar::after {
-        margin: 16px 0 0;
-    }
-
-    .jpn-rbar {
-        text-align: left !important;
-    }
-
-    .jpn-rbar::after {
-        margin: 16px 0 0;
-    }
-
-    .jpn-sticky-desc {
-        font-size: 16px;
-        margin-top: 16px;
-    }
-
-    .jpn-h2 {
-        font-size: 28px;
-    }
-
-    .jpn-h3 {
-        font-size: 24px;
-    }
-
-    .jpn-p {
-        font-size: 17px;
-    }
-
-    .jpn-tl-period {
-        font-size: 22px;
-    }
-
-    .jpn-start-title {
-        font-size: 18px;
-    }
-
-    .jpn-cred-box {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        margin-top: 0;
-    }
-
-    .jpn-avatar {
-        width: 68px;
-        height: 68px;
-        margin-bottom: 0;
-        flex-shrink: 0;
-    }
-}
-
-/* ============================================================
-   RESPONSIVE — Mobile (≤768px)
-   ============================================================ */
-@media (max-width: 768px) {
-    .jpn-sticky-wrap {
-        gap: 24px;
-    }
-
-    .jpn-h2 {
-        font-size: 24px;
-    }
-
-    .jpn-h3 {
-        font-size: 22px;
-    }
-
-    .jpn-p {
-        font-size: 16px;
-    }
-
-    .jpn-editorial-box {
-        padding: 24px 20px;
-    }
-
-    .jpn-highlight-box {
-        padding: 24px 20px;
-    }
-
-    .jpn-tl-card {
-        padding: 24px 20px;
-    }
-
-    .jpn-tl-period {
-        font-size: 20px;
-    }
-
-    .jpn-start-card {
-        padding: 20px 22px;
-    }
-
-    .jpn-start-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .jpn-start-title {
-        font-size: 16px;
-    }
-
-    .jpn-checklist li {
-        padding: 12px 0;
-    }
-
-    .jpn-cred-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .jpn-avatar {
-        margin-bottom: 14px;
-    }
-}
