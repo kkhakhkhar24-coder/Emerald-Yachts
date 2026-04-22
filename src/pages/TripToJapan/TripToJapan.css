@@ -1,0 +1,5926 @@
+/* TripToJapan.css - Japan Travel Guide Page Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* ─── Base ──────────────────────────────────────────────── */
+
+.jpn-section {
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-section-different {
+    padding: 60px 20px;
+}
+
+.jpn-section-decisions {
+    padding: 60px 20px;
+}
+
+.jpn-section-step1 {
+    padding: 60px 20px;
+}
+
+.jpn-section-step2 {
+    padding: 60px 20px;
+}
+
+.jpn-section-step3 {
+    padding: 60px 20px;
+}
+
+.jpn-section-step4 {
+    padding: 60px 20px;
+}
+
+.jpn-section-flow-new {
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-section-mistakes-new {
+    padding: 60px 20px;
+}
+
+.jpn-section-pace-new {
+    padding: 60px 20px;
+}
+
+.jpn-section-feels-new {
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-section-regret-new {
+    padding: 60px 20px;
+}
+
+.jpn-feels-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?w=1920');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.jpn-feels-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 28, 46, 0.92) 0%, rgba(28, 47, 74, 0.88) 100%);
+    z-index: 1;
+}
+
+.jpn-feels-relative {
+    position: relative;
+    z-index: 2;
+}
+
+.jpn-flow-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1528360983277-13c40149641b?w=1920');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.jpn-flow-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.92) 0%, rgba(39, 68, 114, 0.88) 100%);
+    z-index: 1;
+}
+
+.jpn-flow-relative {
+    position: relative;
+    z-index: 2;
+}
+
+.jpn-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ─── Typography ────────────────────────────────────────── */
+
+.jpn-h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+}
+
+.jpn-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #274472;
+}
+
+.jpn-h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin: 0 0 18px 0;
+    color: #274472;
+}
+
+.jpn-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+}
+
+.jpn-mb-sm {
+    margin-bottom: 10px;
+}
+
+.jpn-mb-md {
+    margin-bottom: 24px;
+}
+
+.jpn-mb-lg {
+    margin-bottom: 36px;
+}
+
+/* ─── Backgrounds ───────────────────────────────────────── */
+
+.jpn-bg-white {
+    background: #ffffff;
+}
+
+.jpn-bg-soft {
+    background: #f7f9fc;
+}
+
+.jpn-bg-dark {
+    background: #0c1829;
+}
+
+.jpn-bg-dark2 {
+    background: #132240;
+}
+
+/* ─── HERO ──────────────────────────────────────────────── */
+
+.jpn-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    animation: jpnSlide 18s infinite ease-in-out;
+    overflow: hidden;
+}
+
+.jpn-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(12, 24, 41, 0.70) 50%,
+            rgba(0, 0, 0, 0.50) 100%);
+    z-index: 1;
+}
+
+.jpn-hero::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: jpn-particles 60s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes jpn-particles {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100px) rotate(5deg);
+    }
+}
+
+@keyframes jpnSlide {
+
+    0%,
+    32% {
+        background-image: var(--jpn-h1);
+    }
+
+    33%,
+    65% {
+        background-image: var(--jpn-h2);
+    }
+
+    66%,
+    100% {
+        background-image: var(--jpn-h3);
+    }
+}
+
+.jpn-hero-inner {
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: jpnFadeUp 1s ease-out both;
+}
+
+@keyframes jpnFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(36px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jpn-eyebrow {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: rgba(231, 243, 245, 0.80);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    animation: jpnFadeUp 0.8s ease-out 0.1s both;
+}
+
+.jpn-hero .jpn-h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+    animation: jpnFadeUp 1s ease-out 0.25s both;
+}
+
+.jpn-hero-lead {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    color: rgba(255, 255, 255, 0.90);
+    line-height: 1.8;
+    animation: jpnFadeUp 0.8s ease-out 0.45s both;
+}
+
+/* Quick-answer reveal */
+.jpn-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: jpnFadeUp 0.8s ease-out 0.55s both;
+}
+
+.jpn-hero-details.jpn-expanded {
+    max-height: 360px;
+    margin-top: 18px;
+}
+
+.jpn-snippet-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 28px 36px;
+    border-left: 3px solid rgba(255, 255, 255, 0.70);
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.jpn-snippet-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.60);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.jpn-white-text {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.jpn-hero-toggle {
+    display: inline-block;
+    margin: 10px 0 32px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 6px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    transition: opacity 0.25s;
+    animation: jpnFadeUp 0.8s ease-out 0.60s both;
+}
+
+.jpn-hero-toggle:hover {
+    opacity: 0.60;
+}
+
+.jpn-hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+    animation: jpnFadeUp 0.8s ease-out 0.70s both;
+}
+
+.jpn-hero-sub {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* ─── Buttons ───────────────────────────────────────────── */
+
+.jpn-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    color: #0c1829;
+    padding: 16px 44px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.28s, color 0.28s, transform 0.28s, box-shadow 0.28s;
+}
+
+.jpn-btn-primary:hover {
+    background: #274472;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+.jpn-btn-dark {
+    background: #0c1829;
+    color: #ffffff;
+}
+
+.jpn-btn-dark:hover {
+    background: #274472;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.30);
+}
+
+.jpn-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 1.5px solid #274472;
+    color: #274472;
+    padding: 13px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.28s, color 0.28s, transform 0.28s, box-shadow 0.28s;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 28px;
+    letter-spacing: 0.3px;
+}
+
+.jpn-btn-secondary:hover {
+    background: #274472;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(39, 68, 114, 0.28);
+}
+
+/* ─── Section Headers ───────────────────────────────────── */
+
+.jpn-hdr {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-bar {
+    width: 48px;
+    height: 3px;
+    background: #274472;
+    margin: 18px auto 0;
+    border-radius: 2px;
+}
+
+/* ─── Side-by-Side Layout ───────────────────────────────── */
+
+.jpn-side-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.jpn-side-layout.jpn-reverse-layout {
+    grid-template-columns: 1fr 380px;
+}
+
+.jpn-side-heading {
+    position: sticky;
+    top: 100px;
+}
+
+.jpn-side-heading .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-side-heading .jpn-bar {
+    margin: 18px 0 0 0;
+}
+
+.jpn-side-content {
+    min-width: 0;
+}
+
+/* ─── Content Box ───────────────────────────────────────── */
+
+.jpn-content-box {
+    max-width: 860px;
+}
+
+/* ─── Planning Section (New Design) ─────────────────────── */
+
+.jpn-plan-section {
+    background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
+    border-radius: 24px;
+    padding: 60px;
+    box-shadow: 0 4px 24px rgba(39, 68, 114, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.jpn-plan-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-plan-title {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.jpn-plan-bar {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.jpn-plan-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.jpn-plan-lead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin: 0;
+}
+
+.jpn-plan-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.jpn-plan-step {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #edf2f7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.jpn-plan-step svg {
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-plan-step:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.10);
+    border-color: #6b93bd;
+}
+
+.jpn-plan-step:hover svg {
+    color: #6b93bd;
+    transform: scale(1.1);
+}
+
+.jpn-plan-tip {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.08));
+    padding: 24px 28px;
+    border-radius: 12px;
+    border-left: 4px solid #274472;
+}
+
+.jpn-tip-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #274472;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ─── Why Planning Japan Is Different Section ─────────── */
+
+.jpn-different-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-different-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-different-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-different-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.jpn-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 36px !important;
+}
+
+.jpn-different-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.jpn-diff-card {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-diff-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-diff-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.12);
+    border-color: #6b93bd;
+}
+
+.jpn-diff-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-diff-card-full {
+    grid-column: 1 / -1;
+}
+
+.jpn-diff-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-diff-card:hover .jpn-diff-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.05) rotate(5deg);
+}
+
+.jpn-diff-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+    flex: 1;
+}
+
+.jpn-different-conclusion {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    padding: 36px 40px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.jpn-conclusion-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ─── The 4 Decisions Section ───────────────────────── */
+
+.jpn-decisions-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-decisions-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jpn-decisions-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-decisions-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 48px;
+}
+
+.jpn-decisions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+}
+
+.jpn-decision-item {
+    background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
+    padding: 36px 28px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-decision-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-decision-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.15);
+    border-color: #6b93bd;
+}
+
+.jpn-decision-item:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-decision-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: rgba(39, 68, 114, 0.08);
+    line-height: 1;
+    margin-bottom: 16px;
+    transition: color 0.3s;
+}
+
+.jpn-decision-item:hover .jpn-decision-number {
+    color: rgba(39, 68, 114, 0.15);
+}
+
+.jpn-decision-content {
+    position: relative;
+    z-index: 1;
+}
+
+.jpn-decision-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0 0 14px 0;
+    transition: color 0.3s;
+}
+
+.jpn-decision-item:hover .jpn-decision-title {
+    color: #1a365d;
+}
+
+.jpn-decision-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.jpn-decisions-verdict {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    padding: 40px 48px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.jpn-verdict-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ─── Step 1: Best Time Section ─────────────────────── */
+
+.jpn-step1-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-step1-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-step-label {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b93bd;
+    margin-bottom: 16px;
+    padding: 8px 20px;
+    background: rgba(107, 147, 189, 0.10);
+    border-radius: 100px;
+}
+
+.jpn-step1-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-step1-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.jpn-step1-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 40px;
+}
+
+.jpn-seasons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.jpn-season-card {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-season-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-season-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.12);
+    border-color: #6b93bd;
+}
+
+.jpn-season-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-season-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-season-card:hover .jpn-season-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.05) rotate(5deg);
+}
+
+.jpn-season-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+    flex: 1;
+}
+
+.jpn-season-text strong {
+    color: #274472;
+    font-weight: 600;
+}
+
+.jpn-impacts-section {
+    background: #ffffff;
+    padding: 36px 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    margin-bottom: 36px;
+}
+
+.jpn-impacts-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #274472;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.jpn-impacts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.jpn-impact-item {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.08));
+    padding: 18px 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #274472;
+    border: 1px solid rgba(39, 68, 114, 0.10);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-impact-item:hover {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    border-color: #274472;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(39, 68, 114, 0.20);
+}
+
+.jpn-section-step1 .jpn-btn-secondary {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ─── Step 2: Cost Section ────────────────────────── */
+
+.jpn-step2-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-step2-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-step2-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-step2-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.jpn-step2-intro {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 8px;
+}
+
+.jpn-step2-subtitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a5568;
+    margin-bottom: 36px;
+}
+
+.jpn-step2-label {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 36px;
+}
+
+.jpn-price-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+}
+
+.jpn-price-card {
+    padding: 40px 32px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-price-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.15);
+}
+
+.jpn-price-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-price-mid {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    color: #ffffff;
+}
+
+.jpn-price-mid .jpn-price-tier {
+    color: #6b93bd;
+}
+
+.jpn-price-mid .jpn-price-note {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.jpn-price-mid .jpn-price-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.jpn-price-luxury {
+    background: #ffffff;
+    border: 2px solid #edf2f7;
+}
+
+.jpn-price-luxury .jpn-price-tier {
+    color: #274472;
+}
+
+.jpn-price-luxury .jpn-price-note {
+    color: #718096;
+}
+
+.jpn-price-luxury .jpn-price-icon {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    color: #274472;
+}
+
+.jpn-price-luxury:hover {
+    border-color: #274472;
+}
+
+.jpn-price-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-price-card:hover .jpn-price-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.jpn-price-tier {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 16px;
+}
+
+.jpn-price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 12px 0;
+}
+
+.jpn-price-luxury .jpn-price-amount {
+    color: #274472;
+}
+
+.jpn-price-note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.jpn-breakdown-section {
+    background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    margin-bottom: 36px;
+}
+
+.jpn-breakdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #274472;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.jpn-breakdown-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.jpn-breakdown-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    padding: 20px 22px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid #edf2f7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-breakdown-item svg {
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-breakdown-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.10);
+    border-color: #6b93bd;
+}
+
+.jpn-breakdown-item:hover svg {
+    color: #6b93bd;
+    transform: scale(1.15);
+}
+
+.jpn-breakdown-item span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.jpn-section-step2 .jpn-btn-secondary {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ─── Step 3: Experience Section ──────────────────── */
+
+.jpn-step3-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-step3-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-step3-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-step3-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.jpn-step3-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 40px;
+}
+
+.jpn-experience-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 40px;
+}
+
+.jpn-experience-card {
+    background: #ffffff;
+    padding: 40px 36px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #edf2f7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.12);
+    border-color: #6b93bd;
+}
+
+.jpn-experience-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-experience-land {
+    border-color: rgba(39, 68, 114, 0.20);
+}
+
+.jpn-experience-land .jpn-experience-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+}
+
+.jpn-experience-cruise .jpn-experience-icon {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    color: #274472;
+}
+
+.jpn-experience-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-experience-card:hover .jpn-experience-icon {
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-experience-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0 0 24px 0;
+}
+
+.jpn-experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.jpn-experience-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.jpn-experience-list li svg {
+    color: #6b93bd;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-experience-card:hover .jpn-experience-list li svg {
+    color: #274472;
+    transform: scale(1.15);
+}
+
+.jpn-step3-verdict {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    padding: 36px 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.jpn-verdict-statement {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.jpn-section-step3 .jpn-btn-secondary {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ─── Step 4: Itinerary Section ───────────────────── */
+
+.jpn-step4-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-step4-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-step4-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-step4-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.jpn-step4-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 40px;
+}
+
+.jpn-itinerary-section {
+    background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    margin-bottom: 36px;
+}
+
+.jpn-itinerary-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #274472;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.jpn-itinerary-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.jpn-itinerary-item {
+    background: #ffffff;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid #edf2f7;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-itinerary-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.10);
+    border-color: #6b93bd;
+}
+
+.jpn-itinerary-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-itinerary-item:hover .jpn-itinerary-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-itinerary-text {
+    flex: 1;
+}
+
+.jpn-itinerary-city {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0 0 4px 0;
+    transition: color 0.3s;
+}
+
+.jpn-itinerary-item:hover .jpn-itinerary-city {
+    color: #1a365d;
+}
+
+.jpn-itinerary-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #718096;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.jpn-step4-warning {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(39, 68, 114, 0.06));
+    padding: 32px 36px;
+    border-radius: 16px;
+    border-left: 4px solid #274472;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.jpn-warning-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+}
+
+.jpn-warning-content {
+    flex: 1;
+}
+
+.jpn-warning-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0 0 8px 0;
+}
+
+.jpn-warning-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.jpn-section-step4 .jpn-btn-secondary {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ─── Flow Section New ──────────────────────────── */
+
+.jpn-flow-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-flow-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-flow-bar {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin: 20px auto 0;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+.jpn-flow-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.jpn-flow-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.jpn-route-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 32px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 40px;
+}
+
+.jpn-route-city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 100px;
+}
+
+.jpn-route-city svg {
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-route-city:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.jpn-route-city:hover svg {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.jpn-route-return {
+    background: rgba(107, 147, 189, 0.25);
+    border-color: rgba(107, 147, 189, 0.40);
+}
+
+.jpn-route-arrow {
+    color: #6b93bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jpn-route-arrow svg {
+    animation: pulse-arrow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-arrow {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateX(4px);
+        opacity: 1;
+    }
+}
+
+.jpn-flow-reasons {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 36px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 36px;
+}
+
+.jpn-reasons-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.jpn-reasons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.jpn-reason-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-reason-item svg {
+    color: #6b93bd;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-reason-item:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateX(8px);
+    border-color: rgba(107, 147, 189, 0.30);
+}
+
+.jpn-reason-item:hover svg {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.jpn-flow-statement {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.10), rgba(28, 47, 74, 0.08));
+    padding: 28px 32px;
+    border-radius: 14px;
+    border-left: 4px solid #274472;
+    text-align: center;
+}
+
+.jpn-statement-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* ─── Mistakes Section New ───────────────────────── */
+
+.jpn-mistakes-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-mistakes-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-mistakes-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-mistakes-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.jpn-mistakes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.jpn-mistake-item {
+    background: #ffffff;
+    padding: 24px 32px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #edf2f7;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-mistake-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #274472, #6b93bd);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-mistake-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.12);
+    border-color: #6b93bd;
+}
+
+.jpn-mistake-item:hover::before {
+    transform: scaleY(1);
+}
+
+.jpn-mistake-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(39, 68, 114, 0.12);
+    flex-shrink: 0;
+    min-width: 40px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-mistake-item:hover .jpn-mistake-number {
+    color: rgba(39, 68, 114, 0.25);
+    transform: scale(1.1);
+}
+
+.jpn-mistake-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-mistake-item:hover .jpn-mistake-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-mistake-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #274472;
+    margin: 0;
+    flex: 1;
+    line-height: 1.5;
+    transition: color 0.3s;
+}
+
+.jpn-mistake-item:hover .jpn-mistake-text {
+    color: #1a365d;
+}
+
+.jpn-mistakes-impact {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.06));
+    padding: 32px 36px;
+    border-radius: 16px;
+    border-left: 4px solid #274472;
+    text-align: center;
+}
+
+.jpn-impact-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ─── Pace Section New ─────────────────────────── */
+
+.jpn-pace-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.jpn-pace-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-pace-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-pace-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.jpn-pace-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin-bottom: 40px;
+}
+
+.jpn-pace-principles {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #edf2f7;
+    margin-bottom: 36px;
+}
+
+.jpn-principles-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #274472;
+    margin: 0 0 28px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.jpn-principles-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.jpn-principle-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.03), rgba(107, 147, 189, 0.03));
+    border-radius: 12px;
+    border: 1px solid #edf2f7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-principle-item:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.06));
+    transform: translateX(6px);
+    border-color: #6b93bd;
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.08);
+}
+
+.jpn-principle-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-principle-item:hover .jpn-principle-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-principle-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #274472;
+    line-height: 1.5;
+    transition: color 0.3s;
+}
+
+.jpn-principle-item:hover .jpn-principle-text {
+    color: #1a365d;
+}
+
+.jpn-pace-goal {
+    background: linear-gradient(135deg, #274472 0%, #1c2f4a 100%);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.jpn-goal-statement {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.jpn-goal-highlight {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ─── Feels Section New ────────────────────────── */
+
+.jpn-feels-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.jpn-feels-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-feels-header .jpn-h2-white {
+    margin-bottom: 0;
+}
+
+.jpn-feels-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.jpn-feels-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+    opacity: 0.95;
+}
+
+.jpn-feels-label {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6b93bd;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.jpn-experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.jpn-experience-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 32px 28px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-experience-card:hover {
+    background: rgba(255, 255, 255, 0.10);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    border-color: rgba(107, 147, 189, 0.30);
+}
+
+.jpn-experience-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(107, 147, 189, 0.20), rgba(107, 147, 189, 0.10));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b93bd;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-experience-card:hover .jpn-experience-icon {
+    background: linear-gradient(135deg, #6b93bd, #274472);
+    color: #ffffff;
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-experience-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+    flex: 1;
+    opacity: 0.95;
+    transition: opacity 0.3s;
+}
+
+.jpn-experience-card:hover .jpn-experience-text {
+    opacity: 1;
+}
+
+.jpn-feels-conclusion {
+    background: linear-gradient(135deg, rgba(107, 147, 189, 0.15), rgba(39, 68, 114, 0.12));
+    padding: 32px 36px;
+    border-radius: 16px;
+    border-left: 4px solid #6b93bd;
+    text-align: center;
+}
+
+.jpn-conclusion-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+/* ─── Regret Section New ───────────────────────── */
+
+.jpn-regret-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.jpn-regret-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.jpn-regret-header .jpn-h2 {
+    margin-bottom: 0;
+}
+
+.jpn-regret-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.jpn-regret-main {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #274472;
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+}
+
+.jpn-regret-label {
+    text-align: center;
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 36px;
+}
+
+.jpn-regrets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.jpn-regret-item {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #edf2f7;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-regret-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.10);
+    border-color: #6b93bd;
+}
+
+.jpn-regret-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-regret-item:hover .jpn-regret-icon {
+    background: linear-gradient(135deg, #274472, #6b93bd);
+    color: #ffffff;
+    transform: scale(1.08) rotate(5deg);
+}
+
+.jpn-regret-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #274472;
+    line-height: 1.5;
+    transition: color 0.3s;
+}
+
+.jpn-regret-item:hover .jpn-regret-text {
+    color: #1a365d;
+}
+
+.jpn-regret-truth {
+    background: linear-gradient(135deg, #274472 0%, #1c2f4a 100%);
+    padding: 36px 40px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.jpn-truth-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ─── Highlight Box ─────────────────────────────────────── */
+
+.jpn-highlight-box {
+    background: rgba(39, 68, 114, 0.05);
+    padding: 28px 32px;
+    border-left: 3px solid #274472;
+    border-radius: 0 10px 10px 0;
+    margin-top: 32px;
+}
+
+/* ─── Editorial Box ─────────────────────────────────────── */
+
+.jpn-editorial-box {
+    background: #ffffff;
+    padding: 32px 36px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    margin-top: 36px;
+    border: 1px solid #edf2f7;
+}
+
+/* ─── Checklist ─────────────────────────────────────────── */
+
+.jpn-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.jpn-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.jpn-checklist li svg {
+    color: #6b93bd;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.jpn-checklist-center li {
+    justify-content: center;
+}
+
+/* ─── Season List ───────────────────────────────────────── */
+
+.jpn-season-list {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.jpn-season-list li {
+    padding: 20px 26px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+    border-left: 3px solid #274472;
+    font-size: 18px;
+    color: #4a5568;
+    line-height: 1.65;
+    transition: transform 0.28s, box-shadow 0.28s, border-color 0.28s;
+}
+
+.jpn-season-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    border-left-color: #6b93bd;
+}
+
+.jpn-season-list li strong {
+    color: #274472;
+    font-weight: 600;
+}
+
+/* ─── Grids ─────────────────────────────────────────────── */
+
+.jpn-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 36px 0;
+}
+
+.jpn-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 44px 0;
+}
+
+.jpn-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin: 32px 0;
+}
+
+/* ─── Info Cards ────────────────────────────────────────── */
+
+.jpn-info-card {
+    background: #ffffff;
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #edf2f7;
+    transition: transform 0.28s, box-shadow 0.28s;
+}
+
+.jpn-info-card-wide {
+    grid-column: 1 / -1;
+}
+
+.jpn-info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.09);
+}
+
+.jpn-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    color: #274472;
+    transition: background 0.28s, color 0.28s;
+}
+
+.jpn-info-card:hover .jpn-icon-wrap {
+    background: #274472;
+    color: #ffffff;
+}
+
+/* ─── Decision Cards ────────────────────────────────────── */
+
+.jpn-decision-card {
+    background: #ffffff;
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.28s, box-shadow 0.28s;
+}
+
+.jpn-decision-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s;
+}
+
+.jpn-decision-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
+}
+
+.jpn-decision-card:hover::after {
+    transform: scaleX(1);
+}
+
+.jpn-decision-num {
+    font-size: 52px;
+    font-weight: 700;
+    color: rgba(39, 68, 114, 0.10);
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.jpn-decision-card .jpn-h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+/* ─── Verdict Box ───────────────────────────────────────── */
+
+.jpn-verdict-box {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    color: #ffffff;
+    padding: 40px 48px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.jpn-verdict-box .jpn-p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* ─── Sticky Layout ─────────────────────────────────────── */
+
+.jpn-sticky-wrap {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.jpn-sticky-wrap.jpn-rev {
+    grid-template-columns: 1fr 260px;
+}
+
+.jpn-sticky-side {
+    position: sticky;
+    top: 100px;
+}
+
+.jpn-sticky-el {
+    padding: 24px;
+}
+
+.jpn-lbar {
+    padding-left: 20px;
+    border-left: 3px solid #274472;
+}
+
+.jpn-rbar {
+    padding-right: 20px;
+    border-right: 3px solid #274472;
+    text-align: right;
+}
+
+.jpn-rside {
+    text-align: right;
+}
+
+.jpn-sticky-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #718096;
+    margin: 14px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Impact Box ────────────────────────────────────────── */
+
+.jpn-impact-box {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    margin: 32px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+}
+
+.jpn-sm-lbl {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #274472;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.jpn-impact-item {
+    background: #f7f9fc;
+    padding: 14px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #274472;
+    border: 1px solid #edf2f7;
+    transition: background 0.25s, color 0.25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-impact-item:hover {
+    background: #274472;
+    color: #ffffff;
+    border-color: #274472;
+}
+
+/* ─── Price Grid ────────────────────────────────────────── */
+
+.jpn-price-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+}
+
+.jpn-price-card {
+    padding: 40px 32px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.28s, box-shadow 0.28s;
+}
+
+.jpn-price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
+}
+
+.jpn-mini-lbl {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-card-filled {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    color: #ffffff;
+}
+
+.jpn-card-filled .jpn-p {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.jpn-card-filled .jpn-mini-lbl {
+    color: #6b93bd;
+}
+
+.jpn-card-ghost {
+    background: #ffffff;
+    border: 1.5px solid #edf2f7;
+}
+
+.jpn-card-ghost:hover {
+    border-color: #274472;
+}
+
+.jpn-card-ghost .jpn-mini-lbl {
+    color: #274472;
+}
+
+.jpn-card-ghost .jpn-card-h3 {
+    color: #1a202c;
+}
+
+.jpn-price-amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 12px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.jpn-card-ghost .jpn-price-amount {
+    color: #274472;
+}
+
+/* ─── Dot List ──────────────────────────────────────────── */
+
+.jpn-dotlist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.jpn-dotlist li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #4a5568;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-dotlist .jpn-dot {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6b93bd;
+    display: block;
+}
+
+/* ─── Breakdown Box ─────────────────────────────────────── */
+
+.jpn-breakdown-box {
+    background: #f7f9fc;
+    padding: 28px;
+    border-radius: 12px;
+    margin: 28px 0;
+    border: 1px solid #edf2f7;
+}
+
+/* ─── Experience Cards ──────────────────────────────────── */
+
+.jpn-exp-card {
+    padding: 32px;
+    border-radius: 12px;
+    transition: transform 0.28s;
+}
+
+.jpn-exp-card:hover {
+    transform: translateY(-4px);
+}
+
+.jpn-card-h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 18px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.jpn-card-filled .jpn-card-h3 {
+    color: #ffffff;
+}
+
+.jpn-card-filled .jpn-checklist li {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.jpn-card-filled .jpn-checklist li svg {
+    color: #6b93bd;
+}
+
+/* ─── Itinerary Card ────────────────────────────────────── */
+
+.jpn-itinerary-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    margin: 32px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+}
+
+.jpn-warning-box {
+    background: linear-gradient(135deg, rgba(107, 147, 189, 0.12), rgba(39, 68, 114, 0.07));
+    border-left: 3px solid #6b93bd;
+    padding: 22px 28px;
+    border-radius: 0 8px 8px 0;
+    margin: 28px 0;
+}
+
+/* ─── Flow Section ──────────────────────────────────────── */
+
+.jpn-section-flow {
+    position: relative;
+    padding: 90px 20px;
+}
+
+.jpn-section-flow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--jpn-flow-bg) center/cover no-repeat;
+    opacity: 0.14;
+    z-index: 1;
+}
+
+.jpn-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(12, 24, 41, 0.94) 0%,
+            rgba(12, 24, 41, 0.90) 100%);
+    z-index: 2;
+}
+
+.jpn-relative {
+    position: relative;
+    z-index: 3;
+}
+
+.jpn-h2-white {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.jpn-white-bar {
+    width: 48px;
+    height: 3px;
+    background: #6b93bd;
+    margin: 18px auto 32px;
+    border-radius: 2px;
+}
+
+.jpn-p-white {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+
+.jpn-route-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 44px 0;
+}
+
+.jpn-route-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 22px 44px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    transition: background 0.28s, border-color 0.28s;
+}
+
+.jpn-route-text:hover {
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+.jpn-why-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 32px;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 580px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.jpn-sm-lbl-white {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #6b93bd;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-checklist-white {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jpn-checklist-white li {
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 14px;
+    font-size: 18px;
+    padding-left: 26px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.jpn-checklist-white li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6b93bd;
+}
+
+.jpn-stmt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Mistakes Grid ─────────────────────────────────────── */
+
+.jpn-mistakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 44px 0;
+}
+
+.jpn-mistake-card {
+    background: #f7f9fc;
+    padding: 28px 24px;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid #edf2f7;
+    transition: background 0.28s, box-shadow 0.28s;
+}
+
+.jpn-mistake-card:hover {
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.jpn-mistake-num {
+    display: block;
+    font-size: 44px;
+    font-weight: 700;
+    color: rgba(39, 68, 114, 0.11);
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+/* ─── Pacing Card ───────────────────────────────────────── */
+
+.jpn-pacing-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+}
+
+.jpn-quote-box {
+    background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
+    padding: 40px;
+    border-radius: 16px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.jpn-quote {
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+/* ─── Feels Section ─────────────────────────────────────── */
+
+.jpn-section-feels {
+    position: relative;
+    padding: 90px 20px;
+}
+
+.jpn-section-feels::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--jpn-feels-bg) center/cover no-repeat;
+    opacity: 0.12;
+    z-index: 1;
+}
+
+.jpn-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 44px 0;
+}
+
+.jpn-exp-item {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.28s, border-color 0.28s, transform 0.28s;
+}
+
+.jpn-exp-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-4px);
+}
+
+.jpn-exp-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.75;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Regret Section ────────────────────────────────────── */
+
+.jpn-regret-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.jpn-text-center {
+    text-align: center;
+}
+
+/* ─── Timeline ──────────────────────────────────────────── */
+
+.jpn-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 32px 0;
+}
+
+.jpn-timeline-item {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    border-left: 3px solid #274472;
+    transition: transform 0.28s, box-shadow 0.28s, border-color 0.28s;
+}
+
+.jpn-timeline-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-left-color: #6b93bd;
+}
+
+.jpn-timeline-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #274472;
+    margin-bottom: 6px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ─── Expert Card ───────────────────────────────────────── */
+
+.jpn-expert-card {
+    background: #ffffff;
+    padding: 36px;
+    border-radius: 16px;
+    margin: 32px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    border: 1px solid #edf2f7;
+    border-top: 3px solid #274472;
+}
+
+.jpn-expert-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    font-family: 'Playfair Display', serif;
+    color: #274472;
+}
+
+.jpn-expert-title {
+    font-size: 14px;
+    color: #718096;
+    margin: 0 0 24px 0;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-expert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jpn-expert-list li {
+    padding: 14px 0 14px 22px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 16px;
+    color: #4a5568;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.jpn-expert-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #6b93bd;
+}
+
+.jpn-expert-list li:last-child {
+    border-bottom: none;
+}
+
+.jpn-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    padding: 3px;
+    background: linear-gradient(135deg, #274472, #6b93bd);
+}
+
+.jpn-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.jpn-cred-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #718096;
+    text-align: center;
+    margin: 0 0 6px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jpn-cred-role {
+    font-size: 15px;
+    font-weight: 600;
+    color: #274472;
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ─── Links Grid ────────────────────────────────────────── */
+
+.jpn-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 44px;
+}
+
+.jpn-link-card {
+    background: #ffffff;
+    padding: 36px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.28s, box-shadow 0.28s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    border: 1px solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.jpn-link-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #274472, #6b93bd);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s;
+}
+
+.jpn-link-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.10);
+}
+
+.jpn-link-card:hover::after {
+    transform: scaleX(1);
+}
+
+.jpn-link-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    transition: background 0.28s, color 0.28s;
+}
+
+.jpn-link-card:hover .jpn-link-icon-wrap {
+    background: #274472;
+    color: #ffffff;
+}
+
+.jpn-link-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #274472;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4;
+}
+
+.jpn-link-arrow {
+    color: #718096;
+    transition: transform 0.28s, color 0.28s;
+}
+
+.jpn-link-card:hover .jpn-link-arrow {
+    color: #274472;
+    transform: translateX(5px);
+}
+
+/* ─── Tablet  (≤ 1024px) ────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+    .jpn-section {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-different {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-decisions {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-flow,
+    .jpn-section-feels {
+        padding: 70px 15px;
+    }
+
+    .jpn-hero {
+        padding: 60px 15px;
+    }
+
+    .jpn-h1 {
+        font-size: 32px;
+    }
+
+    .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-h3 {
+        font-size: 22px;
+    }
+
+    .jpn-h2-white {
+        font-size: 28px;
+    }
+
+    .jpn-p {
+        font-size: 17px;
+    }
+
+    .jpn-section-step1 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-step2 {
+        padding: 50px 15px;
+    }
+
+    .jpn-hero-lead {
+        font-size: 17px;
+    }
+
+    .jpn-white-text {
+        font-size: 17px;
+    }
+
+    .jpn-p-white {
+        font-size: 17px;
+    }
+
+    .jpn-quote {
+        font-size: 20px;
+    }
+
+    .jpn-stmt {
+        font-size: 18px;
+    }
+
+    .jpn-section-step3 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-step4 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-flow-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-mistakes-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-pace-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-checklist li {
+        font-size: 17px;
+    }
+
+    .jpn-season-list li {
+        font-size: 17px;
+    }
+
+    .jpn-dotlist li {
+        font-size: 17px;
+    }
+
+    .jpn-checklist-white li {
+        font-size: 17px;
+    }
+
+    .jpn-exp-text {
+        font-size: 17px;
+    }
+
+    .jpn-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jpn-side-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .jpn-side-layout.jpn-reverse-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-side-heading {
+        position: static;
+        text-align: center;
+    }
+
+    .jpn-side-heading .jpn-bar {
+        margin: 18px auto 0;
+    }
+
+    .jpn-sticky-wrap,
+    .jpn-sticky-wrap.jpn-rev {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .jpn-sticky-side {
+        position: static;
+        order: -1;
+    }
+
+    .jpn-sticky-el.jpn-rside {
+        text-align: left;
+    }
+
+    .jpn-rbar {
+        text-align: left;
+        border-right: none;
+        border-left: 3px solid #274472;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .jpn-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jpn-experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jpn-route-text {
+        font-size: 22px;
+        padding: 18px 32px;
+    }
+
+    .jpn-verdict-box {
+        padding: 32px 36px;
+    }
+
+    .jpn-verdict-box .jpn-p {
+        font-size: 18px;
+    }
+
+    /* Planning Section Tablet */
+    .jpn-plan-section {
+        padding: 48px 40px;
+    }
+
+    .jpn-plan-title {
+        font-size: 36px;
+    }
+
+    .jpn-plan-lead {
+        font-size: 18px;
+    }
+
+    .jpn-plan-step {
+        padding: 22px 24px;
+        gap: 16px;
+        font-size: 16px;
+    }
+
+    .jpn-plan-tip {
+        padding: 22px 24px;
+    }
+
+    .jpn-tip-text {
+        font-size: 16px;
+    }
+
+    /* Why Planning Japan Is Different - Tablet */
+    .jpn-different-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-subtitle {
+        font-size: 18px;
+        margin-bottom: 28px !important;
+    }
+
+    .jpn-different-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-diff-card {
+        padding: 24px 22px;
+        gap: 16px;
+    }
+
+    .jpn-diff-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .jpn-diff-text {
+        font-size: 17px;
+    }
+
+    .jpn-different-conclusion {
+        padding: 28px 32px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 19px;
+    }
+
+    /* The 4 Decisions - Tablet */
+    .jpn-decisions-intro {
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-decisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-decision-item {
+        padding: 28px 22px;
+    }
+
+    .jpn-decision-number {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    .jpn-decision-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-decision-desc {
+        font-size: 15px;
+    }
+
+    .jpn-decisions-verdict {
+        padding: 32px 36px;
+    }
+
+    .jpn-verdict-text {
+        font-size: 20px;
+    }
+
+    /* Step 1: Best Time - Tablet */
+    .jpn-step1-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step1-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-seasons-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-season-card {
+        padding: 24px 22px;
+        gap: 16px;
+    }
+
+    .jpn-season-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .jpn-season-text {
+        font-size: 17px;
+    }
+
+    .jpn-impacts-section {
+        padding: 28px 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-impacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .jpn-impact-item {
+        padding: 16px 14px;
+        font-size: 15px;
+    }
+
+    /* Step 2: Cost - Tablet */
+    .jpn-step2-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step2-intro {
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-step2-subtitle {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-step2-label {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-price-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 36px;
+    }
+
+    .jpn-price-card {
+        padding: 32px 28px;
+    }
+
+    .jpn-price-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .jpn-price-tier {
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+    .jpn-price-amount {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .jpn-price-note {
+        font-size: 15px;
+    }
+
+    .jpn-breakdown-section {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-breakdown-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-breakdown-item {
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
+    .jpn-breakdown-item span {
+        font-size: 16px;
+    }
+
+    /* Step 3: Experience - Tablet */
+    .jpn-step3-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step3-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-comparison {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-card {
+        padding: 32px 28px;
+    }
+
+    .jpn-experience-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-experience-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-experience-list {
+        gap: 16px;
+    }
+
+    .jpn-experience-list li {
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .jpn-step3-verdict {
+        padding: 28px 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-verdict-statement {
+        font-size: 19px;
+    }
+
+    /* Step 4: Itinerary - Tablet */
+    .jpn-step4-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-step4-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-itinerary-section {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-itinerary-label {
+        font-size: 10px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-itinerary-items {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .jpn-itinerary-item {
+        padding: 22px 20px;
+        gap: 16px;
+    }
+
+    .jpn-itinerary-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-itinerary-city {
+        font-size: 18px;
+    }
+
+    .jpn-itinerary-desc {
+        font-size: 14px;
+    }
+
+    .jpn-step4-warning {
+        padding: 24px 28px;
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-warning-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-warning-title {
+        font-size: 18px;
+    }
+
+    .jpn-warning-text {
+        font-size: 16px;
+    }
+
+    /* Flow Section New - Tablet */
+    .jpn-flow-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-flow-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-route-visual {
+        padding: 32px 24px;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-route-city {
+        font-size: 16px;
+        padding: 16px 20px;
+        min-width: 90px;
+    }
+
+    .jpn-route-city svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .jpn-route-arrow svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .jpn-flow-reasons {
+        padding: 28px 24px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-reasons-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-reasons-list {
+        gap: 16px;
+    }
+
+    .jpn-reason-item {
+        font-size: 16px;
+        padding: 14px 18px;
+        gap: 14px;
+    }
+
+    .jpn-reason-item svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-flow-statement {
+        padding: 24px 24px;
+    }
+
+    .jpn-statement-text {
+        font-size: 17px;
+    }
+
+    /* Mistakes Section New - Tablet */
+    .jpn-mistakes-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-mistake-card:nth-child(4),
+    .jpn-mistake-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .jpn-mistake-card {
+        padding: 26px 18px;
+        gap: 14px;
+    }
+
+    .jpn-mistake-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-mistake-text {
+        font-size: 15px;
+    }
+
+    .jpn-mistakes-impact {
+        padding: 28px 32px;
+    }
+
+    .jpn-impact-text {
+        font-size: 18px;
+    }
+
+    /* Pace Section New - Tablet */
+    .jpn-pace-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-pace-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-pace-principles {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-principles-label {
+        font-size: 10px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-principles-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-principle-item {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .jpn-principle-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-principle-text {
+        font-size: 15px;
+    }
+
+    .jpn-pace-goal {
+        padding: 32px;
+    }
+
+    .jpn-goal-statement {
+        font-size: 17px;
+    }
+
+    .jpn-goal-highlight {
+        font-size: 22px;
+    }
+
+    /* Feels Section New - Tablet */
+    .jpn-feels-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-feels-intro {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-feels-label {
+        font-size: 17px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experiences-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-experience-card {
+        padding: 28px 24px;
+        gap: 18px;
+    }
+
+    .jpn-experience-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-experience-text {
+        font-size: 16px;
+    }
+
+    .jpn-feels-conclusion {
+        padding: 28px 32px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 18px;
+    }
+
+    /* Regret Section New - Tablet */
+    .jpn-regret-header {
+        margin-bottom: 36px;
+    }
+
+    .jpn-regret-main {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-regret-label {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-regrets-list {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .jpn-regret-item {
+        padding: 20px 24px;
+        gap: 16px;
+    }
+
+    .jpn-regret-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-regret-text {
+        font-size: 16px;
+    }
+
+    .jpn-regret-truth {
+        padding: 28px 32px;
+    }
+
+    .jpn-truth-text {
+        font-size: 22px;
+    }
+}
+
+/* ─── Mobile  (≤ 768px) ─────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+    .jpn-section {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-different {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-decisions {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-flow,
+    .jpn-section-feels {
+        padding: 60px 15px;
+    }
+
+    .jpn-hero {
+        min-height: 100svh;
+        padding: 60px 15px;
+    }
+
+    .jpn-h1 {
+        font-size: 26px;
+    }
+
+    .jpn-h2 {
+        font-size: 24px;
+    }
+
+    .jpn-h3 {
+        font-size: 20px;
+    }
+
+    .jpn-h2-white {
+        font-size: 24px;
+    }
+
+    .jpn-p {
+        font-size: 16px;
+    }
+
+    .jpn-section-step1 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-step2 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-step3 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-step4 {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-flow-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-mistakes-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-pace-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-feels-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-regret-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-section-regret-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-hero-lead {
+        font-size: 16px;
+    }
+
+    .jpn-white-text {
+        font-size: 16px;
+    }
+
+    .jpn-p-white {
+        font-size: 16px;
+    }
+
+    .jpn-quote {
+        font-size: 18px;
+    }
+
+    .jpn-stmt {
+        font-size: 17px;
+    }
+
+    .jpn-checklist li {
+        font-size: 16px;
+    }
+
+    .jpn-season-list li {
+        font-size: 16px;
+        padding: 16px 18px;
+    }
+
+    .jpn-dotlist li {
+        font-size: 16px;
+    }
+
+    .jpn-checklist-white li {
+        font-size: 16px;
+    }
+
+    .jpn-exp-text {
+        font-size: 16px;
+    }
+
+    .jpn-grid-2,
+    .jpn-grid-4,
+    .jpn-2col {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-info-card-wide {
+        grid-column: auto;
+    }
+
+    .jpn-price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jpn-btn-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+        font-size: 11px;
+    }
+
+    .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .jpn-price-amount {
+        font-size: 28px;
+    }
+
+    .jpn-verdict-box {
+        padding: 28px 22px;
+    }
+
+    .jpn-verdict-box .jpn-p {
+        font-size: 16px;
+    }
+
+    .jpn-quote-box {
+        padding: 28px 22px;
+    }
+
+    .jpn-why-box {
+        padding: 24px;
+    }
+
+    .jpn-expert-card {
+        padding: 24px;
+    }
+
+    .jpn-expert-name {
+        font-size: 24px;
+    }
+
+    .jpn-route-text {
+        font-size: 17px;
+        padding: 16px 22px;
+        letter-spacing: 1px;
+    }
+
+    .jpn-snippet-card {
+        padding: 22px 20px;
+    }
+
+    .jpn-regret-box .jpn-verdict-box .jpn-p {
+        font-size: 18px;
+    }
+
+    .jpn-hdr {
+        margin-bottom: 36px;
+    }
+
+    .jpn-timeline-label {
+        font-size: 17px;
+    }
+
+    .jpn-decision-num {
+        font-size: 40px;
+    }
+
+    /* Planning Section Mobile */
+    .jpn-plan-section {
+        padding: 32px 24px;
+        border-radius: 16px;
+    }
+
+    .jpn-plan-title {
+        font-size: 28px;
+    }
+
+    .jpn-plan-lead {
+        font-size: 17px;
+    }
+
+    .jpn-plan-step {
+        padding: 18px 20px;
+        gap: 14px;
+        font-size: 15px;
+    }
+
+    .jpn-plan-step:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-plan-tip {
+        padding: 18px 20px;
+    }
+
+    .jpn-tip-text {
+        font-size: 15px;
+    }
+
+    /* Why Planning Japan Is Different - Mobile */
+    .jpn-different-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-subtitle {
+        font-size: 17px;
+        margin-bottom: 24px !important;
+    }
+
+    .jpn-different-cards {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-diff-card {
+        padding: 20px 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-diff-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-diff-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-diff-text {
+        font-size: 16px;
+    }
+
+    .jpn-different-conclusion {
+        padding: 24px 22px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 17px;
+    }
+
+    /* The 4 Decisions - Mobile */
+    .jpn-decisions-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-decisions-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-decision-item {
+        padding: 24px 20px;
+    }
+
+    .jpn-decision-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-decision-number {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-decision-title {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .jpn-decision-desc {
+        font-size: 15px;
+    }
+
+    .jpn-decisions-verdict {
+        padding: 28px 24px;
+    }
+
+    .jpn-verdict-text {
+        font-size: 18px;
+    }
+
+    /* Step 1: Best Time - Mobile */
+    .jpn-step1-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step-label {
+        font-size: 10px;
+        padding: 6px 16px;
+    }
+
+    .jpn-step1-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-seasons-grid {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-season-card {
+        padding: 20px 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .jpn-season-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-season-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-season-text {
+        font-size: 16px;
+    }
+
+    .jpn-impacts-section {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-impacts-label {
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .jpn-impacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .jpn-impact-item {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    .jpn-section-step1 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Step 2: Cost - Mobile */
+    .jpn-step2-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step2-intro {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-step2-subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-step2-label {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-price-cards {
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-price-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-price-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-price-tier {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .jpn-price-amount {
+        font-size: 26px;
+        margin: 8px 0;
+    }
+
+    .jpn-price-note {
+        font-size: 14px;
+    }
+
+    .jpn-breakdown-section {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-breakdown-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-breakdown-list {
+        gap: 14px;
+    }
+
+    .jpn-breakdown-item {
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .jpn-breakdown-item span {
+        font-size: 15px;
+    }
+
+    .jpn-section-step2 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Step 3: Experience - Mobile */
+    .jpn-step3-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step3-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-comparison {
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-card {
+        padding: 28px 24px;
+    }
+
+    .jpn-experience-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-experience-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-experience-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-experience-list {
+        gap: 14px;
+    }
+
+    .jpn-experience-list li {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .jpn-step3-verdict {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-verdict-statement {
+        font-size: 17px;
+    }
+
+    .jpn-section-step3 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Step 4: Itinerary - Mobile */
+    .jpn-step4-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-step4-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-itinerary-section {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-itinerary-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-itinerary-items {
+        gap: 16px;
+    }
+
+    .jpn-itinerary-item {
+        padding: 18px 18px;
+        gap: 14px;
+    }
+
+    .jpn-itinerary-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-itinerary-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-itinerary-city {
+        font-size: 17px;
+    }
+
+    .jpn-itinerary-desc {
+        font-size: 14px;
+    }
+
+    .jpn-step4-warning {
+        padding: 20px 22px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .jpn-warning-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .jpn-warning-title {
+        font-size: 17px;
+    }
+
+    .jpn-warning-text {
+        font-size: 15px;
+    }
+
+    .jpn-section-step4 .jpn-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Flow Section New - Mobile */
+    .jpn-flow-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-flow-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-route-visual {
+        padding: 24px 20px;
+        gap: 10px;
+        margin-bottom: 28px;
+        flex-direction: column;
+    }
+
+    .jpn-route-city {
+        font-size: 15px;
+        padding: 14px 18px;
+        min-width: 80px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .jpn-route-city svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .jpn-route-arrow {
+        transform: rotate(90deg);
+    }
+
+    .jpn-route-arrow svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-route-city:hover {
+        transform: translateY(-2px);
+    }
+
+    .jpn-flow-reasons {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-reasons-label {
+        font-size: 10px;
+        margin-bottom: 18px;
+    }
+
+    .jpn-reasons-list {
+        gap: 14px;
+    }
+
+    .jpn-reason-item {
+        font-size: 15px;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .jpn-reason-item svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jpn-reason-item:hover {
+        transform: translateY(-2px);
+    }
+
+    .jpn-flow-statement {
+        padding: 20px 20px;
+    }
+
+    .jpn-statement-text {
+        font-size: 16px;
+    }
+
+    /* Mistakes Section New - Mobile */
+    .jpn-mistakes-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-mistakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-mistake-card:nth-child(4),
+    .jpn-mistake-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .jpn-mistake-card {
+        padding: 22px 16px;
+        gap: 14px;
+    }
+
+    .jpn-mistake-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-mistake-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jpn-mistake-text {
+        font-size: 16px;
+    }
+
+    .jpn-mistakes-impact {
+        padding: 24px 22px;
+    }
+
+    .jpn-impact-text {
+        font-size: 17px;
+    }
+
+    /* Pace Section New - Mobile */
+    .jpn-pace-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-pace-intro {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-pace-principles {
+        padding: 24px 22px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-principles-label {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .jpn-principles-list {
+        gap: 14px;
+    }
+
+    .jpn-principle-item {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .jpn-principle-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-principle-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .jpn-principle-text {
+        font-size: 15px;
+    }
+
+    .jpn-pace-goal {
+        padding: 28px 24px;
+    }
+
+    .jpn-goal-statement {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .jpn-goal-highlight {
+        font-size: 20px;
+    }
+
+    /* Feels Section New - Mobile */
+    .jpn-feels-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-feels-intro {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    .jpn-feels-label {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experiences-grid {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-experience-card {
+        padding: 24px 20px;
+        gap: 16px;
+    }
+
+    .jpn-experience-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .jpn-experience-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-experience-text {
+        font-size: 15px;
+    }
+
+    .jpn-feels-conclusion {
+        padding: 24px 22px;
+    }
+
+    .jpn-conclusion-text {
+        font-size: 17px;
+    }
+
+    /* Regret Section New - Mobile */
+    .jpn-regret-header {
+        margin-bottom: 28px;
+    }
+
+    .jpn-regret-main {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .jpn-regret-label {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .jpn-regrets-list {
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .jpn-regret-item {
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
+    .jpn-regret-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .jpn-regret-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-regret-text {
+        font-size: 15px;
+    }
+
+    .jpn-regret-truth {
+        padding: 24px 22px;
+    }
+
+    .jpn-truth-text {
+        font-size: 20px;
+    }
+}
+
+/* ─── NEW Timeline Section ──────────────────────────────────────────── */
+
+.jpn-section-timeline-new {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+}
+
+.jpn-timeline-new-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jpn-timeline-new-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jpn-timeline-new-header .jpn-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #274472;
+}
+
+.jpn-timeline-new-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.jpn-timeline-new-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.jpn-timeline-new-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.08);
+}
+
+.jpn-timeline-new-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(39, 68, 114, 0.15);
+}
+
+.jpn-timeline-new-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.jpn-timeline-new-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--navy-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.jpn-timeline-new-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    flex: 1;
+}
+
+.jpn-timeline-new-card-desc {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 72px;
+}
+
+.jpn-timeline-new-card-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--navy);
+}
+
+.jpn-timeline-new-card-early .jpn-timeline-new-card-accent {
+    background: linear-gradient(90deg, #274472, #3a6ba5);
+}
+
+.jpn-timeline-new-card-ideal .jpn-timeline-new-card-accent {
+    background: linear-gradient(90deg, #274472, #4a8bc7);
+}
+
+.jpn-timeline-new-card-late .jpn-timeline-new-card-accent {
+    background: linear-gradient(90deg, #274472, #6a9fd8);
+}
+
+.jpn-timeline-new-alert {
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 6px 25px rgba(39, 68, 114, 0.25);
+}
+
+.jpn-timeline-new-alert-icon {
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.jpn-timeline-new-alert-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .jpn-section-timeline-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-timeline-new-header .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-timeline-new-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .jpn-timeline-new-card {
+        padding: 30px 24px;
+    }
+
+    .jpn-timeline-new-card-title {
+        font-size: 20px;
+    }
+
+    .jpn-timeline-new-card-desc {
+        font-size: 17px;
+        padding-left: 0;
+        margin-top: 12px;
+    }
+
+    .jpn-timeline-new-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .jpn-timeline-new-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .jpn-timeline-new-alert {
+        padding: 24px 28px;
+    }
+
+    .jpn-timeline-new-alert-text {
+        font-size: 17px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .jpn-section-timeline-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-timeline-new-header .jpn-h2 {
+        font-size: 26px;
+    }
+
+    .jpn-timeline-new-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .jpn-timeline-new-card {
+        padding: 28px 22px;
+    }
+
+    .jpn-timeline-new-card-title {
+        font-size: 20px;
+    }
+
+    .jpn-timeline-new-card-desc {
+        font-size: 16px;
+    }
+
+    .jpn-timeline-new-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .jpn-timeline-new-alert {
+        padding: 22px 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .jpn-timeline-new-alert-text {
+        font-size: 16px;
+    }
+
+    .jpn-timeline-new-header {
+        margin-bottom: 40px;
+    }
+}
+
+/* ─── NEW Expert Section ──────────────────────────────────────────── */
+
+.jpn-section-expert-new {
+    background: var(--bg-white);
+    padding: 60px 20px;
+}
+
+.jpn-expert-new-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jpn-expert-new-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.jpn-expert-new-image-side {
+    position: sticky;
+    top: 100px;
+}
+
+.jpn-expert-new-image-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.2);
+}
+
+.jpn-expert-new-main-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.jpn-expert-new-content-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.jpn-expert-new-header {
+    margin-bottom: 10px;
+}
+
+.jpn-expert-new-header .jpn-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #274472;
+}
+
+.jpn-expert-new-info-block {
+    background: linear-gradient(135deg, var(--bg-soft) 0%, #ffffff 100%);
+    padding: 28px 32px;
+    border-radius: 16px;
+    border-left: 4px solid var(--navy);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.08);
+}
+
+.jpn-expert-new-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 8px 0;
+}
+
+.jpn-expert-new-role {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+}
+
+.jpn-expert-new-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.jpn-expert-new-list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.jpn-expert-new-list-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.jpn-expert-new-description {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 6px 25px rgba(39, 68, 114, 0.25);
+}
+
+.jpn-expert-new-text {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.jpn-expert-new-cta {
+    margin-top: 10px;
+}
+
+.jpn-expert-new-btn {
+    background: var(--navy);
+    color: #ffffff;
+    border: none;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.3);
+}
+
+.jpn-expert-new-btn:hover {
+    background: var(--bg-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.4);
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .jpn-section-expert-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-expert-new-grid {
+        grid-template-columns: 300px 1fr;
+        gap: 40px;
+    }
+
+    .jpn-expert-new-header .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-expert-new-image-side {
+        position: relative;
+        top: 0;
+    }
+
+    .jpn-expert-new-name {
+        font-size: 26px;
+    }
+
+    .jpn-expert-new-role {
+        font-size: 17px;
+    }
+
+    .jpn-expert-new-info-block {
+        padding: 24px 28px;
+    }
+
+    .jpn-expert-new-list-item {
+        font-size: 17px;
+    }
+
+    .jpn-expert-new-list-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .jpn-expert-new-description {
+        padding: 28px 30px;
+    }
+
+    .jpn-expert-new-text {
+        font-size: 17px;
+    }
+
+    .jpn-expert-new-btn {
+        font-size: 17px;
+        padding: 16px 35px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .jpn-section-expert-new {
+        padding: 50px 15px;
+    }
+
+    .jpn-expert-new-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .jpn-expert-new-image-side {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .jpn-expert-new-header .jpn-h2 {
+        font-size: 26px;
+    }
+
+    .jpn-expert-new-name {
+        font-size: 24px;
+    }
+
+    .jpn-expert-new-role {
+        font-size: 16px;
+    }
+
+    .jpn-expert-new-info-block {
+        padding: 22px 24px;
+    }
+
+    .jpn-expert-new-list-item {
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .jpn-expert-new-list-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .jpn-expert-new-description {
+        padding: 24px 22px;
+    }
+
+    .jpn-expert-new-text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .jpn-expert-new-btn {
+        font-size: 16px;
+        padding: 14px 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .jpn-expert-new-content-side {
+        gap: 24px;
+    }
+
+    .jpn-expert-new-header {
+        margin-bottom: 5px;
+    }
+}
+
+/* ─── NEW Where to Start Section ──────────────────────────────────────────── */
+
+.jpn-section-where-start {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+}
+
+.jpn-where-start-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jpn-where-start-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jpn-where-start-header .jpn-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #274472;
+}
+
+.jpn-where-start-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.jpn-where-start-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.jpn-where-start-card {
+    background: #ffffff;
+    padding: 40px 28px;
+    border-radius: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.08);
+}
+
+.jpn-where-start-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--navy);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.jpn-where-start-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(39, 68, 114, 0.15);
+}
+
+.jpn-where-start-card:hover::before {
+    transform: scaleX(1);
+}
+
+.jpn-where-start-card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.jpn-where-start-card:hover .jpn-where-start-card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.jpn-where-start-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.jpn-where-start-card-arrow {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    transition: all 0.3s ease;
+}
+
+.jpn-where-start-card:hover .jpn-where-start-card-arrow {
+    background: var(--navy);
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .jpn-section-where-start {
+        padding: 50px 15px;
+    }
+
+    .jpn-where-start-header .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-where-start-subtitle {
+        font-size: 17px;
+    }
+
+    .jpn-where-start-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .jpn-where-start-card {
+        padding: 32px 24px;
+    }
+
+    .jpn-where-start-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .jpn-where-start-card-title {
+        font-size: 17px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .jpn-section-where-start {
+        padding: 50px 15px;
+    }
+
+    .jpn-where-start-header .jpn-h2 {
+        font-size: 26px;
+    }
+
+    .jpn-where-start-subtitle {
+        font-size: 16px;
+    }
+
+    .jpn-where-start-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .jpn-where-start-card {
+        padding: 28px 22px;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .jpn-where-start-card-icon {
+        width: 56px;
+        height: 56px;
+        flex-shrink: 0;
+    }
+
+    .jpn-where-start-card-title {
+        font-size: 16px;
+        flex: 1;
+    }
+
+    .jpn-where-start-card-arrow {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    .jpn-where-start-header {
+        margin-bottom: 40px;
+    }
+}
+
+/* ============================================================
+   STICKY WRAPPER (heading left, content right) — SVF pattern
+   ============================================================ */
+.jpn-sticky-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.65fr;
+    gap: 60px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Reversed: content LEFT, heading RIGHT */
+.jpn-sticky-wrap.jpn-rev {
+    grid-template-columns: 1.65fr 1fr;
+}
+
+.jpn-sticky-side {
+    height: 100%;
+}
+
+.jpn-sticky-el {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    text-align: left;
+}
+
+/* Right-aligned sticky */
+.jpn-sticky-el.jpn-rside {
+    text-align: right;
+}
+
+/* Left bar after h2 */
+.jpn-lbar {
+    text-align: left !important;
+}
+
+.jpn-lbar::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #274472;
+    margin: 20px 0 0;
+}
+
+/* Right bar after h2 */
+.jpn-rbar {
+    text-align: right !important;
+}
+
+.jpn-rbar::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #274472;
+    margin: 20px 0 0 auto;
+}
+
+.jpn-sticky-desc {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #274472;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.jpn-main-col {
+    width: 100%;
+}
+
+/* ─── Credentials box (Expert sidebar) ──────────────────── */
+
+.jpn-cred-box {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    border-top: 4px solid #274472;
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.06);
+    margin-top: 28px;
+}
+
+.jpn-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 18px;
+    border: 2px solid rgb(231, 243, 245);
+}
+
+.jpn-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jpn-cred-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #274472;
+    opacity: 0.6;
+    margin: 0 0 6px;
+}
+
+.jpn-cred-role {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #274472;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+}
+
+/* ─── Checklist (SVF pattern) ───────────────────────────── */
+
+.jpn-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jpn-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    color: #274472;
+}
+
+.jpn-checklist li:last-child {
+    border-bottom: none;
+}
+
+.jpn-checklist li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #274472;
+}
+
+/* ─── Editorial box (left border) ───────────────────────── */
+
+.jpn-editorial-box {
+    background: rgb(231, 243, 245);
+    padding: 30px 36px;
+    border-left: 4px solid #274472;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 28px;
+}
+
+/* ─── Highlight box (white on soft bg) ──────────────────── */
+
+.jpn-highlight-box {
+    background: #ffffff;
+    padding: 30px 36px;
+    border-left: 4px solid #274472;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
+}
+
+/* ─── Timeline Cards ────────────────────────────────────── */
+
+.jpn-tl-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.jpn-tl-card {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    box-shadow: 0 4px 14px rgba(39, 68, 114, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jpn-tl-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(39, 68, 114, 0.12);
+}
+
+.jpn-tl-card-primary {
+    background: rgb(231, 243, 245);
+    border-color: rgba(39, 68, 114, 0.18);
+}
+
+.jpn-tl-badge {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background: #274472;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.jpn-tl-badge-outline {
+    background: transparent;
+    color: #274472;
+    border: 1px solid rgba(39, 68, 114, 0.3);
+}
+
+.jpn-tl-period {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #274472;
+    margin: 0 0 10px;
+    line-height: 1.3;
+}
+
+/* ─── Where to Start — Link Cards ───────────────────────── */
+
+.jpn-start-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.jpn-start-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 26px 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(39, 68, 114, 0.10);
+    box-shadow: 0 4px 14px rgba(39, 68, 114, 0.04);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.jpn-start-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.12);
+    border-color: rgba(39, 68, 114, 0.22);
+}
+
+.jpn-start-card-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.jpn-start-icon {
+    width: 48px;
+    height: 48px;
+    background: rgb(231, 243, 245);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274472;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.jpn-start-card:hover .jpn-start-icon {
+    background: #274472;
+    color: #ffffff;
+}
+
+.jpn-start-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #274472;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.jpn-start-arrow {
+    color: #274472;
+    opacity: 0.35;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.jpn-start-card:hover .jpn-start-arrow {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet (≤1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+    .jpn-sticky-wrap {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .jpn-sticky-wrap.jpn-rev {
+        grid-template-columns: 1fr;
+    }
+
+    .jpn-sticky-el {
+        position: static;
+    }
+
+    .jpn-sticky-el.jpn-rside {
+        text-align: left;
+    }
+
+    .jpn-lbar::after {
+        margin: 16px 0 0;
+    }
+
+    .jpn-rbar {
+        text-align: left !important;
+    }
+
+    .jpn-rbar::after {
+        margin: 16px 0 0;
+    }
+
+    .jpn-sticky-desc {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .jpn-h2 {
+        font-size: 28px;
+    }
+
+    .jpn-h3 {
+        font-size: 24px;
+    }
+
+    .jpn-p {
+        font-size: 17px;
+    }
+
+    .jpn-tl-period {
+        font-size: 22px;
+    }
+
+    .jpn-start-title {
+        font-size: 18px;
+    }
+
+    .jpn-cred-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    .jpn-avatar {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤768px)
+   ============================================================ */
+@media (max-width: 768px) {
+    .jpn-sticky-wrap {
+        gap: 24px;
+    }
+
+    .jpn-h2 {
+        font-size: 24px;
+    }
+
+    .jpn-h3 {
+        font-size: 22px;
+    }
+
+    .jpn-p {
+        font-size: 16px;
+    }
+
+    .jpn-editorial-box {
+        padding: 24px 20px;
+    }
+
+    .jpn-highlight-box {
+        padding: 24px 20px;
+    }
+
+    .jpn-tl-card {
+        padding: 24px 20px;
+    }
+
+    .jpn-tl-period {
+        font-size: 20px;
+    }
+
+    .jpn-start-card {
+        padding: 20px 22px;
+    }
+
+    .jpn-start-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .jpn-start-title {
+        font-size: 16px;
+    }
+
+    .jpn-checklist li {
+        padding: 12px 0;
+    }
+
+    .jpn-cred-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jpn-avatar {
+        margin-bottom: 14px;
+    }
+}
