@@ -35,14 +35,18 @@ const Navbar = () => {
             <div className="nav-dropdown-group">
               <span className="nav-dropdown-title">ANTARCTICA</span>
               <NavLink to="/emerald-yachts">Emerald Yachts</NavLink>
-              <NavLink to="/antarctica-cruise-cost">Antarctica Cruise Cost</NavLink>
+              <NavLink to="/antarctica-cruise-cost">
+                Antarctica Cruise Cost
+              </NavLink>
               <NavLink to="/scenic-antarctica-cruise">
                 Scenic Antarctica Cruises
               </NavLink>
               <NavLink to="/scenic-vs-silversea-antarctica">
                 Scenic vs Silversea Antarctica
               </NavLink>
-              <NavLink to="/ScenicvsEmeraldYachts">Scenic vs Emerald Yachts</NavLink>
+              <NavLink to="/ScenicvsEmeraldYachts">
+                Scenic vs Emerald Yachts
+              </NavLink>
               <NavLink to="/DrakePassagePage">The Drake Passage</NavLink>
               <NavLink to="/luxury-travel" className="nav-dropdown-single">
                 Luxury Travel
@@ -84,16 +88,29 @@ const Navbar = () => {
                 Riverside vs Viking River Cruises
               </NavLink>
 
-              <NavLink to="/riverside-vs-amawaterways" className="nav-dropdown-single">
+              <NavLink
+                to="/riverside-vs-amawaterways"
+                className="nav-dropdown-single"
+              >
                 Riverside vs AmaWaterways
               </NavLink>
 
-              <NavLink to="/distinctive-voyage-sailings" className="nav-dropdown-single">
+              <NavLink
+                to="/distinctive-voyage-sailings"
+                className="nav-dropdown-single"
+              >
                 Distinctive Voyage Sailings
               </NavLink>
 
               <NavLink to="/trip-to-japan" className="nav-dropdown-single">
                 Trip To Japan
+              </NavLink>
+
+              <NavLink
+                to="/first-time-japan-itinerary"
+                className="nav-dropdown-single"
+              >
+                First Time Japan Itinerary
               </NavLink>
             </div>
           </div>
@@ -132,7 +149,9 @@ const Navbar = () => {
             className={`mobile-dropdown-menu ${homeDropdownOpen ? "active" : ""}`}
           >
             <span className="mobile-dropdown-title">ANTARCTICA</span>
-            <NavLink to="/emerald-yachts" onClick={toggleMenu}>Emerald Yachts</NavLink>
+            <NavLink to="/emerald-yachts" onClick={toggleMenu}>
+              Emerald Yachts
+            </NavLink>
             <NavLink to="/antarctica-cruise-cost" onClick={toggleMenu}>
               Antarctica Cruise Cost
             </NavLink>
@@ -155,7 +174,10 @@ const Navbar = () => {
             >
               Luxury Travel
             </NavLink>
-            <NavLink to="/emerald-azzurra-vs-emerald-sakara" onClick={toggleMenu}>
+            <NavLink
+              to="/emerald-azzurra-vs-emerald-sakara"
+              onClick={toggleMenu}
+            >
               Emerald Azzurra vs Emerald Sakara
             </NavLink>
             <NavLink
@@ -188,16 +210,36 @@ const Navbar = () => {
               Riverside vs Viking River Cruises
             </NavLink>
 
-            <NavLink to="/riverside-vs-amawaterways" className="nav-dropdown-single" onClick={toggleMenu}>
+            <NavLink
+              to="/riverside-vs-amawaterways"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
               Riverside vs AmaWaterways
             </NavLink>
 
-            <NavLink to="/distinctive-voyage-sailings" className="nav-dropdown-single" onClick={toggleMenu}>
+            <NavLink
+              to="/distinctive-voyage-sailings"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
               Distinctive Voyage Sailings
             </NavLink>
 
-            <NavLink to="/trip-to-japan" className="nav-dropdown-single" onClick={toggleMenu}>
+            <NavLink
+              to="/trip-to-japan"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
               Trip To Japan
+            </NavLink>
+
+            <NavLink
+              to="/first-time-japan-itinerary"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              First Time Japan Itinerary
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

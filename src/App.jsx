@@ -16,19 +16,17 @@ import LuxuryYachtCruises from "./pages/LuxuryYachtCruises/LuxuryYachtCruises";
 import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
 import RiversideVikingRiverCruises from "./pages/RiversideVikingRiverCruises/RiversideVikingRiverCruises";
 import RiversidevsAmaWaterways from "./pages/RiversidevsAmaWaterways/RiversidevsAmaWaterways";
-import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/DistinctiveVoyageSailings"
+import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/DistinctiveVoyageSailings";
 import OrientExpress from "./pages/OrientExpress/OrientExpress";
 import TripToJapan from "./pages/TripToJapan/TripToJapan";
+import FirstTimeJapan from "./pages/FirstTimeJapan/FirstTimeJapan";
 
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={<OrientExpress />}
-          ></Route>
+          <Route path="/" element={<OrientExpress />}></Route>
           <Route path="/emerald-yachts" element={<EmeraldYachts />}></Route>
           <Route
             path="/DrakePassagePage"
@@ -83,9 +81,10 @@ function App() {
             path="/distinctive-voyage-sailings"
             element={<DistinctiveVoyageSailings />}
           ></Route>
+          <Route path="/trip-to-japan" element={<TripToJapan />}></Route>
           <Route
-            path="/trip-to-japan"
-            element={<TripToJapan />}
+            path="/first-time-japan-itinerary"
+            element={<FirstTimeJapan />}
           ></Route>
         </Routes>
       </BrowserRouter>
