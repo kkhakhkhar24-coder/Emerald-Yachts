@@ -1,25 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./OrientExpress.css";
-import ExperienceImage1 from "../../assets/OrientExpress/ExperienceImage1.jpeg"
-import ExperienceImage2 from "../../assets/OrientExpress/ExperienceImage2.jpeg"
-import ExperienceImage3 from "../../assets/OrientExpress/ExperienceImage3.jpeg"
-import ExperienceImage4 from "../../assets/OrientExpress/ExperienceImage4.jpeg"
-import ExperienceImage5 from "../../assets/OrientExpress/ExperienceImage5.jpeg"
-import ExperienceImage6 from "../../assets/OrientExpress/ExperienceImage6.jpeg"
-import ExperienceImage7 from "../../assets/OrientExpress/ExperienceImage7.jpeg"
-import ExperienceImage8 from "../../assets/OrientExpress/ExperienceImage8.jpeg"
-import ExperienceImage9 from "../../assets/OrientExpress/ExperienceImage9.jpeg"
-import ExperienceImage10 from "../../assets/OrientExpress/ExperienceImage10.jpeg"
-import ExperienceImage11 from "../../assets/OrientExpress/ExperienceImage11.jpeg"
-import SuitesSpaceImage from "../../assets/OrientExpress/Suites_Space.jpeg"
-import WhyThisIsDifferentBg from "../../assets/OrientExpress/why_this_is_different_bg.jpeg"
-import luxury_yacht_experiences1 from "../../assets/OrientExpress/luxury_yacht_experiences1.jpeg"
-import luxury_yacht_experiences2 from "../../assets/OrientExpress/luxury_yacht_experiences2.jpeg"
-import luxury_yacht_experiences3 from "../../assets/OrientExpress/luxury_yacht_experiences3.jpeg"
-import PrivateConsultationBg from "../../assets/OrientExpress/Private_consultation.jpeg"
-
+import ExperienceImage1 from "../../assets/OrientExpress/ExperienceImage1.webp"
+import ExperienceImage4 from "../../assets/OrientExpress/ExperienceImage4.webp"
+import ExperienceImage6 from "../../assets/OrientExpress/ExperienceImage6.webp"
+import ExperienceImage7 from "../../assets/OrientExpress/ExperienceImage7.webp"
+import ExperienceImage8 from "../../assets/OrientExpress/ExperienceImage8.webp"
+import ExperienceImage9 from "../../assets/OrientExpress/ExperienceImage9.webp"
+import ExperienceImage10 from "../../assets/OrientExpress/ExperienceImage10.webp"
+import ExperienceImage11 from "../../assets/OrientExpress/ExperienceImage11.webp"
+import SuitesSpaceImage from "../../assets/OrientExpress/Suites_Space.webp"
+import WhyThisIsDifferentBg from "../../assets/OrientExpress/why_this_is_different_bg.webp"
+import luxury_yacht_experiences1 from "../../assets/OrientExpress/luxury_yacht_experiences1.webp"
+import luxury_yacht_experiences2 from "../../assets/OrientExpress/luxury_yacht_experiences2.webp"
+import luxury_yacht_experiences3 from "../../assets/OrientExpress/luxury_yacht_experiences3.webp"
+import PrivateConsultationBg from "../../assets/OrientExpress/Private_consultation.webp"
 
 const faqData = [
   {

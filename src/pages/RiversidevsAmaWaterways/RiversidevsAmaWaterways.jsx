@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Ship,
   Heart,
@@ -18,16 +18,16 @@ import {
 import "./RiversidevsAmaWaterways.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/RiversidevsAmaWaterways/AmaBella_Exterior.jpg";
-import HeroImage2 from "../../assets/RiversidevsAmaWaterways/AmaLilia_Exterior.jpg";
-import HeroImage3 from "../../assets/RiversidevsAmaWaterways/FR_Avignon_AmaCello.jpg";
-import CTAImage from "../../assets/RiversidevsAmaWaterways/Magnificent Europe.jpg";
-import ImageGellery1 from "../../assets/RiversidevsAmaWaterways/AmaCello_ChefTable_Dining.jpg";
-import ImageGellery2 from "../../assets/RiversidevsAmaWaterways/AmaCello_Bar_Lounge.jpg";
-import ImageGellery3 from "../../assets/RiversidevsAmaWaterways/AmaBella_Twin-Balcony.jpg";
-import ImageGellery4 from "../../assets/RiversidevsAmaWaterways/AmaBella_MainLounge.jpg";
-import RiversideImage from "../../assets/RiversidevsAmaWaterways/Riverside.jpg";
-import AmawaterImage from "../../assets/RiversidevsAmaWaterways/Amawater.jpg";
+import HeroImage1 from "../../assets/RiversidevsAmaWaterways/AmaBella_Exterior.webp";
+import HeroImage2 from "../../assets/RiversidevsAmaWaterways/AmaLilia_Exterior.webp";
+import HeroImage3 from "../../assets/RiversidevsAmaWaterways/FR_Avignon_AmaCello.webp";
+import CTAImage from "../../assets/RiversidevsAmaWaterways/Magnificent Europe.webp";
+import ImageGellery1 from "../../assets/RiversidevsAmaWaterways/AmaCello_ChefTable_Dining.webp";
+import ImageGellery2 from "../../assets/RiversidevsAmaWaterways/AmaCello_Bar_Lounge.webp";
+import ImageGellery3 from "../../assets/RiversidevsAmaWaterways/AmaBella_Twin-Balcony.webp";
+import ImageGellery4 from "../../assets/RiversidevsAmaWaterways/AmaBella_MainLounge.webp";
+import RiversideImage from "../../assets/RiversidevsAmaWaterways/Riverside.webp";
+import AmawaterImage from "../../assets/RiversidevsAmaWaterways/Amawater.webp";
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {

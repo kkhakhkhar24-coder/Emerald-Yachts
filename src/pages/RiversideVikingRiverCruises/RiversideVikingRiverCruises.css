@@ -367,15 +367,15 @@ body {
 
     0%,
     100% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero1.jpg');
+        background-image: url('../../assets/Riverside-vs-Viking/Hero1.webp');
     }
 
     33% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero2.jpg');
+        background-image: url('../../assets/Riverside-vs-Viking/Hero2.webp');
     }
 
     66% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero3.jpg');
+        background-image: url('../../assets/Riverside-vs-Viking/Hero3.webp');
     }
 }
 

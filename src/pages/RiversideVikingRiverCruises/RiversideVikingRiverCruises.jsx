@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
-import { Ship, Diamond, Navigation, Plus, Minus, Heart, Users, Star, BadgeCheck, User, Award, Shield, ArrowRight, Layers, Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
+import { Plus, Minus, Heart, Users, Star, BadgeCheck, User, ArrowRight, Layers, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import './RiversideVikingRiverCruises.css';
 import Navbar from '../../components/Navbar/Navbar';
 import AboutImage from '../../assets/image.webp';
-import HeroImage1 from '../../assets/Riverside-vs-Viking/Hero1.jpg';
-import HeroImage2 from '../../assets/Riverside-vs-Viking/Hero2.jpg';
-import HeroImage3 from '../../assets/Riverside-vs-Viking/Hero3.jpg';
-import Gallary1 from '../../assets/Riverside-vs-Viking/ImageGallary1.jpg';
-import Gallary2 from '../../assets/Riverside-vs-Viking/ImageGallary2.jpg';
-import Gallary3 from '../../assets/Riverside-vs-Viking/ImageGallary3.jpg';
-import Gallary4 from '../../assets/Riverside-vs-Viking/ImageGallary4.jpg';
-import Gallary5 from '../../assets/Riverside-vs-Viking/ImageGallary5.jpg';
-import Gallary6 from '../../assets/Riverside-vs-Viking/ImageGallary6.jpg';
-import Gallary7 from '../../assets/Riverside-vs-Viking/ImageGallary7.jpg';
-import Gallary8 from '../../assets/Riverside-vs-Viking/ImageGallary8.jpg';
-import Gallary9 from '../../assets/Riverside-vs-Viking/ImageGallary9.jpg';
+import Gallary1 from '../../assets/Riverside-vs-Viking/ImageGallary1.webp';
+import Gallary2 from '../../assets/Riverside-vs-Viking/ImageGallary2.webp';
+import Gallary3 from '../../assets/Riverside-vs-Viking/ImageGallary3.webp';
+import Gallary4 from '../../assets/Riverside-vs-Viking/ImageGallary4.webp';
+import Gallary5 from '../../assets/Riverside-vs-Viking/ImageGallary5.webp';
+import Gallary6 from '../../assets/Riverside-vs-Viking/ImageGallary6.webp';
+import Gallary7 from '../../assets/Riverside-vs-Viking/ImageGallary7.webp';
+import Gallary8 from '../../assets/Riverside-vs-Viking/ImageGallary8.webp';
+import Gallary9 from '../../assets/Riverside-vs-Viking/ImageGallary9.webp';
 import { Helmet } from 'react-helmet-async';
 
 const schemaData = {
