@@ -884,7 +884,7 @@ function TripToJapan() {
             </section>
 
             {/* ── Where to Start ────────────────────────────────────── */}
-            <section className="jpn-section jpn-section-where-start">
+            <section className="jpn-section jpn-section-timeline-new">
                 <div className="jpn-inner">
                     <div className="jpn-where-start-header">
                         <h2 className="jpn-h2">Where to Start</h2>
