@@ -6,6 +6,10 @@ import profilePicture from "../../assets/image.jpg";
 import heroImage1 from "../../assets/TripToJapan/Hero1.jpg";
 import heroImage2 from "../../assets/TripToJapan/Hero2.jpg";
 import heroImage3 from "../../assets/TripToJapan/Hero3.jpg";
+import planningJapan from "../../assets/TripToJapan/Planning_Japan.jpg";
+import decisions4 from "../../assets/TripToJapan/4_Decisions.jpg";
+import bestTime from "../../assets/TripToJapan/Best_Time_Visit_Japan.jpg";
+import buildItinerary from "../../assets/TripToJapan/Build_Itinerary.jpg";
 
 function TripToJapan() {
     return (
@@ -76,7 +80,7 @@ function TripToJapan() {
                     <div className="jpn-plan-section">
                         <div className="jpn-plan-heading">
                             <h2 className="jpn-h2 jpn-plan-title">How to Plan a Trip to Japan</h2>
-                            <div className="jpn-plan-bar"></div>
+                            <div className="jpn-bar"></div>
                         </div>
                         <div className="jpn-plan-content">
                             <div className="jpn-plan-intro">
@@ -120,8 +124,16 @@ function TripToJapan() {
                     <div className="jpn-different-wrapper">
                         <div className="jpn-different-header">
                             <h2 className="jpn-h2">Why Planning Japan Is Different</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                         <div className="jpn-different-content">
+                            <div className="jpn-section-image-wrap">
+                                <img 
+                                    src={planningJapan} 
+                                    alt="Luxury Ryokan Interior in Japan" 
+                                    className="jpn-section-image"
+                                />
+                            </div>
                             <p className="jpn-p jpn-mb-md">Japan is not a plug-and-play destination.</p>
                             <p className="jpn-p jpn-subtitle">Here's what makes it different:</p>
                             <div className="jpn-different-cards">
@@ -172,8 +184,16 @@ function TripToJapan() {
                     <div className="jpn-decisions-wrapper">
                         <div className="jpn-decisions-header">
                             <h2 className="jpn-h2">The 4 Decisions That Shape Your Entire Trip</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                         <p className="jpn-p jpn-decisions-intro">Every Japan trip comes down to four core decisions:</p>
+                        <div className="jpn-section-image-wrap">
+                            <img 
+                                src={decisions4} 
+                                alt="Tokyo Skyline at Blue Hour" 
+                                className="jpn-section-image"
+                            />
+                        </div>
                         <div className="jpn-decisions-grid">
                             <div className="jpn-decision-item">
                                 <div className="jpn-decision-number">01</div>
@@ -216,12 +236,20 @@ function TripToJapan() {
             {/* ── Step 1: Best Time ─────────────────────────────────── */}
             <section className="jpn-section jpn-section-step1 jpn-bg-soft">
                 <div className="jpn-inner">
-                    <div className="jpn-step1-wrapper">
-                        <div className="jpn-step1-header">
+                    <div className="jpn-side-layout">
+                        <div className="jpn-side-heading">
                             <span className="jpn-step-label">Step 1</span>
                             <h2 className="jpn-h2">Choose the Best Time to Visit Japan</h2>
+                            <div className="jpn-bar"></div>
                         </div>
-                        <div className="jpn-step1-content">
+                        <div className="jpn-side-content">
+                            <div className="jpn-section-image-wrap">
+                                <img 
+                                    src={bestTime} 
+                                    alt="Cherry Blossoms in Japan" 
+                                    className="jpn-section-image"
+                                />
+                            </div>
                             <p className="jpn-p jpn-step1-intro">Japan changes dramatically by season.</p>
                             <div className="jpn-seasons-grid">
                                 <div className="jpn-season-card">
@@ -269,12 +297,8 @@ function TripToJapan() {
             {/* ── Step 2: Cost ──────────────────────────────────────── */}
             <section className="jpn-section jpn-section-step2 jpn-bg-white">
                 <div className="jpn-inner">
-                    <div className="jpn-step2-wrapper">
-                        <div className="jpn-step2-header">
-                            <span className="jpn-step-label">Step 2</span>
-                            <h2 className="jpn-h2">Understand How Much Japan Costs</h2>
-                        </div>
-                        <div className="jpn-step2-content">
+                    <div className="jpn-side-layout jpn-reverse-layout">
+                        <div className="jpn-side-content">
                             <p className="jpn-p jpn-step2-intro">Japan is not one price point.</p>
                             <p className="jpn-p jpn-step2-subtitle">It is a range.</p>
                             <p className="jpn-p jpn-step2-label">Most travelers fall into:</p>
@@ -321,6 +345,11 @@ function TripToJapan() {
                                 See our Japan Travel Cost Guide <ArrowRight size={16} />
                             </button>
                         </div>
+                        <div className="jpn-side-heading">
+                            <span className="jpn-step-label">Step 2</span>
+                            <h2 className="jpn-h2">Understand How Much Japan Costs</h2>
+                            <div className="jpn-bar"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -328,12 +357,13 @@ function TripToJapan() {
             {/* ── Step 3: Experience ────────────────────────────────── */}
             <section className="jpn-section jpn-section-step3 jpn-bg-soft">
                 <div className="jpn-inner">
-                    <div className="jpn-step3-wrapper">
-                        <div className="jpn-step3-header">
+                    <div className="jpn-side-layout">
+                        <div className="jpn-side-heading">
                             <span className="jpn-step-label">Step 3</span>
                             <h2 className="jpn-h2">Decide How You Want to Experience Japan</h2>
+                            <div className="jpn-bar"></div>
                         </div>
-                        <div className="jpn-step3-content">
+                        <div className="jpn-side-content">
                             <p className="jpn-p jpn-step3-intro">Japan is a land-first destination.</p>
                             <div className="jpn-experience-comparison">
                                 <div className="jpn-experience-card jpn-experience-land">
@@ -344,15 +374,15 @@ function TripToJapan() {
                                     <ul className="jpn-experience-list">
                                         <li>
                                             <Compass size={18} strokeWidth={2} />
-                                            <span>Flexibility</span>
+                                            <span>Flexibility to change pace</span>
                                         </li>
                                         <li>
                                             <Search size={18} strokeWidth={2} />
-                                            <span>Depth</span>
+                                            <span>Depth in specific neighborhoods</span>
                                         </li>
                                         <li>
                                             <Utensils size={18} strokeWidth={2} />
-                                            <span>Better access to neighborhoods and food</span>
+                                            <span>Better access to authentic local food</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -364,15 +394,15 @@ function TripToJapan() {
                                     <ul className="jpn-experience-list">
                                         <li>
                                             <CheckCircle size={18} strokeWidth={2} />
-                                            <span>Simplicity</span>
+                                            <span>Simplicity of logistics</span>
                                         </li>
                                         <li>
                                             <LayoutList size={18} strokeWidth={2} />
-                                            <span>Structure</span>
+                                            <span>Structured daily plans</span>
                                         </li>
                                         <li>
                                             <ShieldCheck size={18} strokeWidth={2} />
-                                            <span>Less logistical effort</span>
+                                            <span>Less overall travel effort</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -393,12 +423,15 @@ function TripToJapan() {
             {/* ── Step 4: Itinerary ─────────────────────────────────── */}
             <section className="jpn-section jpn-section-step4 jpn-bg-white">
                 <div className="jpn-inner">
-                    <div className="jpn-step4-wrapper">
-                        <div className="jpn-step4-header">
-                            <span className="jpn-step-label">Step 4</span>
-                            <h2 className="jpn-h2">Build the Right Itinerary</h2>
-                        </div>
-                        <div className="jpn-step4-content">
+                    <div className="jpn-side-layout jpn-reverse-layout">
+                        <div className="jpn-side-content">
+                            <div className="jpn-section-image-wrap">
+                                <img 
+                                    src={buildItinerary} 
+                                    alt="Arashiyama Bamboo Forest" 
+                                    className="jpn-section-image"
+                                />
+                            </div>
                             <p className="jpn-p jpn-step4-intro">This is where most trips succeed or fail.</p>
                             <div className="jpn-itinerary-section">
                                 <p className="jpn-itinerary-label">A strong first-time itinerary includes:</p>
@@ -453,6 +486,11 @@ function TripToJapan() {
                             <button className="jpn-btn-secondary">
                                 Start with our First-Time Japan Itinerary <ArrowRight size={16} />
                             </button>
+                        </div>
+                        <div className="jpn-side-heading">
+                            <span className="jpn-step-label">Step 4</span>
+                            <h2 className="jpn-h2">Build the Right Itinerary</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                     </div>
                 </div>
@@ -530,6 +568,7 @@ function TripToJapan() {
                     <div className="jpn-mistakes-wrapper">
                         <div className="jpn-mistakes-header">
                             <h2 className="jpn-h2">What Most Travelers Get Wrong</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                         <div className="jpn-mistakes-content">
                             <div className="jpn-mistakes-list">
@@ -584,7 +623,8 @@ function TripToJapan() {
                 <div className="jpn-inner">
                     <div className="jpn-pace-wrapper">
                         <div className="jpn-pace-header">
-                            <h2 className="jpn-h2">How to Pace Japan Correctly</h2>
+                            <h2 className="jpn-h2">The Goldilocks Pace for Japan</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                         <div className="jpn-pace-content">
                             <p className="jpn-p jpn-pace-intro">Japan should feel intentional, not rushed.</p>
@@ -638,6 +678,7 @@ function TripToJapan() {
                     <div className="jpn-feels-wrapper">
                         <div className="jpn-feels-header">
                             <h2 className="jpn-h2-white">What Japan Feels Like When Done Right</h2>
+                            <div className="jpn-bar-white"></div>
                         </div>
                         <div className="jpn-feels-content">
                             <p className="jpn-p-white jpn-feels-intro">Japan is not just a list of sights.</p>
@@ -683,7 +724,8 @@ function TripToJapan() {
                 <div className="jpn-inner">
                     <div className="jpn-regret-wrapper">
                         <div className="jpn-regret-header">
-                            <h2 className="jpn-h2">The Biggest Regret Travelers Have</h2>
+                            <h2 className="jpn-h2">The "One More Day" Regret</h2>
+                            <div className="jpn-bar"></div>
                         </div>
                         <div className="jpn-regret-content">
                             <p className="jpn-p jpn-regret-main">Not slowing down.</p>
@@ -721,11 +763,13 @@ function TripToJapan() {
             {/* ── Timeline ──────────────────────────────────────────── */}
             <section className="jpn-section jpn-section-timeline-new">
                 <div className="jpn-inner">
-                    <div className="jpn-timeline-new-wrapper">
-                        <div className="jpn-timeline-new-header">
+                    <div className="jpn-side-layout">
+                        <div className="jpn-side-heading">
                             <h2 className="jpn-h2">When to Start Planning Your Japan Trip</h2>
+                            <div className="jpn-bar"></div>
+                            <p className="jpn-sticky-desc">Timing is the most critical factor in securing the best hotels and experiences in Japan.</p>
                         </div>
-                        <div className="jpn-timeline-new-content">
+                        <div className="jpn-side-content">
                             <div className="jpn-timeline-new-cards">
                                 <div className="jpn-timeline-new-card jpn-timeline-new-card-early">
                                     <div className="jpn-timeline-new-card-header">
@@ -776,14 +820,10 @@ function TripToJapan() {
                 <div className="jpn-inner">
                     <div className="jpn-expert-new-wrapper">
                         <div className="jpn-expert-new-grid">
-                            <div className="jpn-expert-new-image-side">
-                                <div className="jpn-expert-new-image-container">
-                                    <img src={profilePicture} alt="Angela Hughes" className="jpn-expert-new-main-img" />
-                                </div>
-                            </div>
                             <div className="jpn-expert-new-content-side">
                                 <div className="jpn-expert-new-header">
                                     <h2 className="jpn-h2">Plan Your Japan Trip With an Expert</h2>
+                                    <div className="jpn-bar jpn-bar-left"></div>
                                 </div>
                                 <div className="jpn-expert-new-info-block">
                                     <h3 className="jpn-expert-new-name">Angela Hughes</h3>
@@ -810,9 +850,9 @@ function TripToJapan() {
                                     </li>
                                     <li className="jpn-expert-new-list-item">
                                         <div className="jpn-expert-new-list-icon">
-                                            <Users size={18} strokeWidth={2} />
+                                            <Search size={18} strokeWidth={2} />
                                         </div>
-                                        <span>Works directly with hotels and local partners</span>
+                                        <span>Access to exclusive local experiences</span>
                                     </li>
                                     <li className="jpn-expert-new-list-item">
                                         <div className="jpn-expert-new-list-icon">
@@ -833,6 +873,11 @@ function TripToJapan() {
                                     </button>
                                 </div>
                             </div>
+                            <div className="jpn-expert-new-image-side">
+                                <div className="jpn-expert-new-image-container">
+                                    <img src={profilePicture} alt="Angela Hughes" className="jpn-expert-new-main-img" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -841,49 +886,57 @@ function TripToJapan() {
             {/* ── Where to Start ────────────────────────────────────── */}
             <section className="jpn-section jpn-section-where-start">
                 <div className="jpn-inner">
-                    <div className="jpn-where-start-wrapper">
-                        <div className="jpn-where-start-header">
-                            <h2 className="jpn-h2">Where to Start</h2>
-                            <p className="jpn-where-start-subtitle">Explore our comprehensive guides to plan your perfect Japan trip</p>
-                        </div>
-                        <div className="jpn-where-start-grid">
-                            <a href="#" className="jpn-where-start-card">
-                                <div className="jpn-where-start-card-icon">
-                                    <Calendar size={32} strokeWidth={1.5} />
-                                </div>
-                                <h3 className="jpn-where-start-card-title">Best Time to Visit Japan</h3>
-                                <div className="jpn-where-start-card-arrow">
-                                    <ArrowRight size={20} strokeWidth={2} />
-                                </div>
-                            </a>
-                            <a href="#" className="jpn-where-start-card">
-                                <div className="jpn-where-start-card-icon">
-                                    <DollarSign size={32} strokeWidth={1.5} />
-                                </div>
-                                <h3 className="jpn-where-start-card-title">Japan Travel Cost Guide</h3>
-                                <div className="jpn-where-start-card-arrow">
-                                    <ArrowRight size={20} strokeWidth={2} />
-                                </div>
-                            </a>
-                            <a href="#" className="jpn-where-start-card">
-                                <div className="jpn-where-start-card-icon">
-                                    <Compass size={32} strokeWidth={1.5} />
-                                </div>
-                                <h3 className="jpn-where-start-card-title">Japan Land vs Cruise</h3>
-                                <div className="jpn-where-start-card-arrow">
-                                    <ArrowRight size={20} strokeWidth={2} />
-                                </div>
-                            </a>
-                            <a href="#" className="jpn-where-start-card">
-                                <div className="jpn-where-start-card-icon">
-                                    <MapPin size={32} strokeWidth={1.5} />
-                                </div>
-                                <h3 className="jpn-where-start-card-title">First-Time Japan Itinerary</h3>
-                                <div className="jpn-where-start-card-arrow">
-                                    <ArrowRight size={20} strokeWidth={2} />
-                                </div>
-                            </a>
-                        </div>
+                    <div className="jpn-where-start-header">
+                        <h2 className="jpn-h2">Where to Start</h2>
+                        <div className="jpn-bar jpn-bar-center"></div>
+                        <p className="jpn-where-start-subtitle">Explore our comprehensive guides to plan your perfect Japan trip</p>
+                    </div>
+
+                    <div className="jpn-where-start-grid">
+                        <a href="#" className="jpn-where-start-card">
+                            <div className="jpn-where-start-card-accent"></div>
+                            <div className="jpn-where-start-card-icon">
+                                <Calendar size={28} strokeWidth={1.5} />
+                            </div>
+                            <h3 className="jpn-where-start-card-title">Best Time to Visit Japan</h3>
+                            <p className="jpn-where-start-card-text">Weather, crowds, and events.</p>
+                            <div className="jpn-where-start-card-arrow">
+                                <ArrowRight size={18} strokeWidth={2} />
+                            </div>
+                        </a>
+                        <a href="#" className="jpn-where-start-card">
+                            <div className="jpn-where-start-card-accent"></div>
+                            <div className="jpn-where-start-card-icon">
+                                <DollarSign size={28} strokeWidth={1.5} />
+                            </div>
+                            <h3 className="jpn-where-start-card-title">Travel Cost Guide</h3>
+                            <p className="jpn-where-start-card-text">Budgeting for your journey.</p>
+                            <div className="jpn-where-start-card-arrow">
+                                <ArrowRight size={18} strokeWidth={2} />
+                            </div>
+                        </a>
+                        <a href="#" className="jpn-where-start-card">
+                            <div className="jpn-where-start-card-accent"></div>
+                            <div className="jpn-where-start-card-icon">
+                                <Compass size={28} strokeWidth={1.5} />
+                            </div>
+                            <h3 className="jpn-where-start-card-title">Land vs Cruise</h3>
+                            <p className="jpn-where-start-card-text">Deciding your travel style.</p>
+                            <div className="jpn-where-start-card-arrow">
+                                <ArrowRight size={18} strokeWidth={2} />
+                            </div>
+                        </a>
+                        <a href="#" className="jpn-where-start-card">
+                            <div className="jpn-where-start-card-accent"></div>
+                            <div className="jpn-where-start-card-icon">
+                                <MapPin size={28} strokeWidth={1.5} />
+                            </div>
+                            <h3 className="jpn-where-start-card-title">First-Time Itinerary</h3>
+                            <p className="jpn-where-start-card-text">The essential Golden Route.</p>
+                            <div className="jpn-where-start-card-arrow">
+                                <ArrowRight size={18} strokeWidth={2} />
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>

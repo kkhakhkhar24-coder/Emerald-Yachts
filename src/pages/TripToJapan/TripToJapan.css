@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 .jpn-section {
     padding: 60px 20px;
@@ -56,7 +56,7 @@
 .jpn-feels-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?w=1920');
+    background-image: url('../../assets/TripToJapan/Feels-bg.jpg');
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -77,7 +77,7 @@
 .jpn-flow-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1528360983277-13c40149641b?w=1920');
+    background-image: url('../../assets/TripToJapan/4_Decisions.jpg');
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -99,8 +99,6 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* â”€â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-h1 {
     font-family: 'Playfair Display', serif;
@@ -150,8 +148,11 @@
     margin-bottom: 36px;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
+    .jpn-h1 {
+        font-size: 32px;
+    }
+
     .jpn-h2 {
         font-size: 28px;
     }
@@ -165,8 +166,11 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
+    .jpn-h1 {
+        font-size: 26px;
+    }
+
     .jpn-h2 {
         font-size: 24px;
     }
@@ -179,8 +183,6 @@
         font-size: 16px;
     }
 }
-
-/* â”€â”€â”€ Backgrounds â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-bg-white {
     background: #ffffff;
@@ -201,10 +203,6 @@
 /* ============================================================
    SECTION 4: HERO SECTION
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
-/* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-hero {
     min-height: 100vh;
@@ -250,6 +248,7 @@
     0% {
         transform: translateY(0) rotate(0deg);
     }
+
     100% {
         transform: translateY(100px) rotate(5deg);
     }
@@ -400,10 +399,13 @@
     margin: 0;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-hero {
         padding: 60px 15px;
+    }
+
+    .jpn-hero .jpn-h1 {
+        font-size: 32px;
     }
 
     .jpn-hero-lead {
@@ -415,11 +417,15 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
 @media (max-width: 768px) {
     .jpn-hero {
         min-height: 100svh;
         padding: 60px 15px;
+    }
+
+    .jpn-hero .jpn-h1 {
+        font-size: 26px;
     }
 
     .jpn-hero-lead {
@@ -438,8 +444,6 @@
 /* ============================================================
    SECTION 5: BUTTONS
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-btn-primary {
     display: inline-flex;
@@ -501,12 +505,6 @@
     box-shadow: 0 10px 26px rgba(39, 68, 114, 0.28);
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-@media (max-width: 1024px) {
-    /* Button tablet styles if any */
-}
-
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-btn-primary {
         width: 100%;
@@ -525,11 +523,13 @@
    SECTION 6: SECTION HEADERS
    ============================================================ */
 
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-hdr {
     text-align: center;
     margin-bottom: 48px;
+}
+
+.jpn-bar-center {
+    margin: 18px auto 0 !important;
 }
 
 .jpn-bar {
@@ -540,14 +540,24 @@
     border-radius: 2px;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.jpn-bar-white {
+    width: 48px;
+    height: 3px;
+    background: #ffffff;
+    margin: 18px auto 0;
+    border-radius: 2px;
+}
+
+.jpn-bar-left {
+    margin: 18px 0 0 0 !important;
+}
+
 @media (max-width: 1024px) {
     .jpn-hdr {
         margin-bottom: 36px;
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-hdr {
         margin-bottom: 36px;
@@ -557,8 +567,6 @@
 /* ============================================================
    SECTION 7: SIDE-BY-SIDE LAYOUT
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-side-layout {
     display: grid;
@@ -588,7 +596,6 @@
     min-width: 0;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-side-layout {
         grid-template-columns: 1fr;
@@ -609,7 +616,13 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.jpn-sticky-desc {
+    font-size: 18px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-top: 24px;
+}
+
 @media (max-width: 768px) {
     .jpn-side-layout {
         grid-template-columns: 1fr;
@@ -621,23 +634,34 @@
    SECTION 8: CONTENT BOX
    ============================================================ */
 
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-content-box {
     max-width: 860px;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-/* No specific tablet styles for content box */
+.jpn-section-image-wrap {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.12);
+    border: 1px solid rgba(237, 242, 247, 0.8);
+}
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-/* No specific mobile styles for content box */
+.jpn-section-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpn-section-image:hover {
+    transform: scale(1.04);
+}
 
 /* ============================================================
    SECTION 9: PLANNING SECTION
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-plan-section {
     background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%);
@@ -735,7 +759,6 @@
     line-height: 1.7;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-plan-section {
         padding: 48px 40px;
@@ -764,7 +787,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-plan-section {
         padding: 32px 24px;
@@ -801,8 +823,6 @@
 /* ============================================================
    SECTION 10: WHY PLANNING JAPAN IS DIFFERENT
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-different-wrapper {
     max-width: 1100px;
@@ -922,7 +942,6 @@
     line-height: 1.6;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-different-header {
         margin-bottom: 36px;
@@ -962,7 +981,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-different-header {
         margin-bottom: 28px;
@@ -1011,8 +1029,6 @@
 /* ============================================================
    SECTION 11: THE 4 DECISIONS SECTION
    ============================================================ */
-
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-decisions-wrapper {
     max-width: 1100px;
@@ -1133,7 +1149,6 @@
     line-height: 1.5;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-decisions-intro {
         font-size: 18px;
@@ -1173,7 +1188,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-decisions-intro {
         font-size: 17px;
@@ -1221,8 +1235,6 @@
    SECTION 12: STEP 1 - BEST TIME
    ============================================================ */
 
-/* â”€â”€â”€ Desktop Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-step1-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -1256,12 +1268,16 @@
     margin: 0 auto;
 }
 
-.jpn-step1-intro {
-    text-align: center;
+.jpn-step1-intro,
+.jpn-step2-intro,
+.jpn-step3-intro,
+.jpn-step4-intro {
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
     color: #274472;
     margin-bottom: 40px;
+    max-width: 800px;
 }
 
 .jpn-seasons-grid {
@@ -1378,6 +1394,9 @@
     border: 1px solid rgba(39, 68, 114, 0.10);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .jpn-impact-item:hover {
@@ -1390,12 +1409,8 @@
 
 .jpn-section-step1 .jpn-btn-secondary {
     margin-top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-step1 {
         padding: 50px 15px;
@@ -1446,7 +1461,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-step1 {
         padding: 40px 15px;
@@ -1515,10 +1529,9 @@
     .jpn-section-step1 .jpn-btn-secondary {
         width: 100%;
         justify-content: center;
+        display: flex;
     }
 }
-
-/* â”€â”€â”€ Step 2: Cost Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step2-wrapper {
     max-width: 1100px;
@@ -1540,7 +1553,7 @@
 }
 
 .jpn-step2-intro {
-    text-align: center;
+    text-align: left;
     font-size: 22px;
     font-weight: 500;
     color: #274472;
@@ -1548,7 +1561,7 @@
 }
 
 .jpn-step2-subtitle {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 400;
     color: #4a5568;
@@ -1556,7 +1569,7 @@
 }
 
 .jpn-step2-label {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     font-weight: 500;
     color: #274472;
@@ -1748,12 +1761,8 @@
 
 .jpn-section-step2 .jpn-btn-secondary {
     margin-top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-step2 {
         padding: 50px 15px;
@@ -1827,7 +1836,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-step2 {
         padding: 40px 15px;
@@ -1903,10 +1911,9 @@
     .jpn-section-step2 .jpn-btn-secondary {
         width: 100%;
         justify-content: center;
+        display: flex;
     }
 }
-
-/* â”€â”€â”€ Step 3: Experience Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step3-wrapper {
     max-width: 1100px;
@@ -1928,11 +1935,15 @@
 }
 
 .jpn-step3-intro {
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     font-weight: 500;
     color: #274472;
     margin-bottom: 40px;
+    border-left: 3px solid #6b93bd;
+    padding-left: 24px;
 }
 
 .jpn-experience-comparison {
@@ -1945,12 +1956,14 @@
 .jpn-experience-card {
     background: #ffffff;
     padding: 40px 36px;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    border: 2px solid #edf2f7;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.06);
+    border: 1px solid #edf2f7;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .jpn-experience-card::before {
@@ -1981,8 +1994,9 @@
 }
 
 .jpn-experience-land .jpn-experience-icon {
-    background: linear-gradient(135deg, #274472, #6b93bd);
+    background: linear-gradient(135deg, #274472, #4a6fa5);
     color: #ffffff;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.2);
 }
 
 .jpn-experience-cruise .jpn-experience-icon {
@@ -2062,12 +2076,8 @@
 
 .jpn-section-step3 .jpn-btn-secondary {
     margin-top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-step3 {
         padding: 50px 15px;
@@ -2122,7 +2132,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-step3 {
         padding: 40px 15px;
@@ -2182,10 +2191,9 @@
     .jpn-section-step3 .jpn-btn-secondary {
         width: 100%;
         justify-content: center;
+        display: flex;
     }
 }
-
-/* â”€â”€â”€ Step 4: Itinerary Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-step4-wrapper {
     max-width: 1100px;
@@ -2207,7 +2215,7 @@
 }
 
 .jpn-step4-intro {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
     color: #274472;
@@ -2347,12 +2355,8 @@
 
 .jpn-section-step4 .jpn-btn-secondary {
     margin-top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-step4 {
         padding: 50px 15px;
@@ -2420,7 +2424,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-step4 {
         padding: 40px 15px;
@@ -2499,10 +2502,9 @@
     .jpn-section-step4 .jpn-btn-secondary {
         width: 100%;
         justify-content: center;
+        display: flex;
     }
 }
-
-/* â”€â”€â”€ Flow Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-flow-wrapper {
     max-width: 1100px;
@@ -2688,7 +2690,6 @@
     opacity: 0.95;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-flow-new {
         padding: 50px 15px;
@@ -2759,7 +2760,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-flow-new {
         padding: 40px 15px;
@@ -2845,8 +2845,6 @@
         font-size: 16px;
     }
 }
-
-/* â”€â”€â”€ Mistakes Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-mistakes-wrapper {
     max-width: 1100px;
@@ -2977,7 +2975,6 @@
     line-height: 1.5;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-mistakes-new {
         padding: 50px 15px;
@@ -3021,7 +3018,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-mistakes-new {
         padding: 40px 15px;
@@ -3068,8 +3064,6 @@
         font-size: 17px;
     }
 }
-
-/* â”€â”€â”€ Pace Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-pace-wrapper {
     max-width: 1000px;
@@ -3198,7 +3192,6 @@
     line-height: 1.4;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-pace-new {
         padding: 50px 15px;
@@ -3255,7 +3248,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-pace-new {
         padding: 40px 15px;
@@ -3315,8 +3307,6 @@
         font-size: 20px;
     }
 }
-
-/* â”€â”€â”€ Feels Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-feels-wrapper {
     max-width: 1100px;
@@ -3433,7 +3423,6 @@
     opacity: 0.95;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-feels-new {
         padding: 50px 15px;
@@ -3482,7 +3471,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-feels-new {
         padding: 40px 15px;
@@ -3533,8 +3521,6 @@
         font-size: 17px;
     }
 }
-
-/* â”€â”€â”€ Regret Section New â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-regret-wrapper {
     max-width: 900px;
@@ -3644,7 +3630,6 @@
     line-height: 1.4;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-regret-new {
         padding: 50px 15px;
@@ -3692,7 +3677,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-regret-new {
         padding: 40px 15px;
@@ -3744,8 +3728,6 @@
     }
 }
 
-/* â”€â”€â”€ Highlight Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-highlight-box {
     background: rgba(39, 68, 114, 0.05);
     padding: 28px 32px;
@@ -3753,8 +3735,6 @@
     border-radius: 0 10px 10px 0;
     margin-top: 32px;
 }
-
-/* â”€â”€â”€ Editorial Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-editorial-box {
     background: #ffffff;
@@ -3764,8 +3744,6 @@
     margin-top: 36px;
     border: 1px solid #edf2f7;
 }
-
-/* â”€â”€â”€ Checklist â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-checklist {
     list-style: none;
@@ -3792,8 +3770,6 @@
 .jpn-checklist-center li {
     justify-content: center;
 }
-
-/* â”€â”€â”€ Season List â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-season-list {
     list-style: none;
@@ -3827,8 +3803,6 @@
     font-weight: 600;
 }
 
-/* â”€â”€â”€ Grids â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -3849,8 +3823,6 @@
     gap: 28px;
     margin: 32px 0;
 }
-
-/* â”€â”€â”€ Info Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-info-card {
     background: #ffffff;
@@ -3888,8 +3860,6 @@
     background: #274472;
     color: #ffffff;
 }
-
-/* â”€â”€â”€ Decision Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-decision-card {
     background: #ffffff;
@@ -3941,8 +3911,6 @@
     margin: 0 0 10px 0;
 }
 
-/* â”€â”€â”€ Verdict Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-verdict-box {
     background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
     color: #ffffff;
@@ -3957,8 +3925,6 @@
     font-size: 20px;
     margin: 0;
 }
-
-/* â”€â”€â”€ Sticky Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-sticky-wrap {
     display: grid;
@@ -4003,7 +3969,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-sticky-wrap {
         grid-template-columns: 1fr;
@@ -4040,14 +4005,11 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-sticky-wrap {
         gap: 24px;
     }
 }
-
-/* â”€â”€â”€ Impact Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-impact-box {
     background: #ffffff;
@@ -4093,8 +4055,6 @@
     color: #ffffff;
     border-color: #274472;
 }
-
-/* â”€â”€â”€ Price Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-price-grid {
     display: grid;
@@ -4167,8 +4127,6 @@
     color: #274472;
 }
 
-/* â”€â”€â”€ Dot List â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-dotlist {
     list-style: none;
     padding: 0;
@@ -4196,8 +4154,6 @@
     display: block;
 }
 
-/* â”€â”€â”€ Breakdown Box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-breakdown-box {
     background: #f7f9fc;
     padding: 28px;
@@ -4205,8 +4161,6 @@
     margin: 28px 0;
     border: 1px solid #edf2f7;
 }
-
-/* â”€â”€â”€ Experience Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-exp-card {
     padding: 32px;
@@ -4237,8 +4191,6 @@
     color: #6b93bd;
 }
 
-/* â”€â”€â”€ Itinerary Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-itinerary-card {
     background: #ffffff;
     padding: 32px;
@@ -4260,8 +4212,8 @@
    SECTIONS 23-36: COMPONENT SECTIONS - RESPONSIVE STYLES
    ============================================================ */
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
+
     /* Highlight Box */
     .jpn-highlight-box {
         padding: 24px 28px;
@@ -4375,8 +4327,8 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
+
     /* Highlight Box */
     .jpn-highlight-box {
         padding: 20px 24px;
@@ -4507,8 +4459,6 @@
         padding: 18px 20px;
     }
 }
-
-/* â”€â”€â”€ Flow Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-section-flow {
     position: relative;
@@ -4644,8 +4594,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* â”€â”€â”€ Mistakes Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-mistakes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -4677,8 +4625,6 @@
     line-height: 1;
 }
 
-/* â”€â”€â”€ Pacing Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-pacing-card {
     background: #ffffff;
     padding: 32px;
@@ -4704,7 +4650,6 @@
     line-height: 1.5;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-flow {
         padding: 70px 15px;
@@ -4759,7 +4704,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-flow {
         padding: 60px 15px;
@@ -4814,8 +4758,6 @@
     }
 }
 
-/* â”€â”€â”€ Feels Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-section-feels {
     position: relative;
     padding: 90px 20px;
@@ -4858,8 +4800,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* â”€â”€â”€ Regret Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-regret-box {
     max-width: 800px;
     margin: 0 auto;
@@ -4869,8 +4809,6 @@
 .jpn-text-center {
     text-align: center;
 }
-
-/* â”€â”€â”€ Timeline â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-timeline {
     display: flex;
@@ -4903,8 +4841,6 @@
     margin-bottom: 6px;
     font-family: 'Playfair Display', serif;
 }
-
-/* â”€â”€â”€ Expert Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-expert-card {
     background: #ffffff;
@@ -5000,7 +4936,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* â”€â”€â”€ Tablet Styles (â‰¤1024px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1024px) {
     .jpn-section-feels {
         padding: 70px 15px;
@@ -5055,7 +4990,6 @@
     }
 }
 
-/* â”€â”€â”€ Mobile Styles (â‰¤768px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
     .jpn-section-feels {
         padding: 60px 15px;
@@ -5109,8 +5043,6 @@
         font-size: 14px;
     }
 }
-
-/* â”€â”€â”€ Links Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .jpn-links-grid {
     display: grid;
@@ -5195,8 +5127,6 @@
     transform: translateX(5px);
 }
 
-/* â"€â”€â”€ NEW Timeline Section â"€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-section-timeline-new {
     background: var(--bg-soft);
     padding: 60px 20px;
@@ -5229,23 +5159,27 @@
 }
 
 .jpn-timeline-new-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .jpn-timeline-new-card {
     background: #ffffff;
-    border-radius: 16px;
-    padding: 40px 30px;
+    border-radius: 20px;
+    padding: 32px 28px;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.06);
+    border: 1px solid #edf2f7;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: right;
 }
 
 .jpn-timeline-new-card:hover {
-    transform: translateY(-8px);
     box-shadow: 0 12px 35px rgba(39, 68, 114, 0.15);
 }
 
@@ -5253,7 +5187,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 20px;
 }
 
 .jpn-timeline-new-icon {
@@ -5277,10 +5210,10 @@
 
 .jpn-timeline-new-card-desc {
     font-size: 18px;
-    color: #555;
+    color: #4a5568;
     line-height: 1.6;
     margin: 0;
-    padding-left: 72px;
+    flex: 1;
 }
 
 .jpn-timeline-new-card-accent {
@@ -5312,11 +5245,14 @@
     align-items: center;
     gap: 20px;
     box-shadow: 0 6px 25px rgba(39, 68, 114, 0.25);
+    margin-top: 20px;
 }
 
 .jpn-timeline-new-alert-icon {
     color: #ffffff;
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .jpn-timeline-new-alert-text {
@@ -5337,7 +5273,6 @@
     }
 
     .jpn-timeline-new-cards {
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
@@ -5356,9 +5291,7 @@
     }
 
     .jpn-timeline-new-card-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
+        margin-bottom: 0;
     }
 
     .jpn-timeline-new-icon {
@@ -5386,25 +5319,19 @@
     }
 
     .jpn-timeline-new-cards {
-        grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .jpn-timeline-new-card {
-        padding: 28px 22px;
-    }
-
-    .jpn-timeline-new-card-title {
-        font-size: 20px;
-    }
-
-    .jpn-timeline-new-card-desc {
-        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px;
     }
 
     .jpn-timeline-new-icon {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
     }
 
     .jpn-timeline-new-alert {
@@ -5422,8 +5349,6 @@
     }
 }
 
-/* â”€â”€â”€ NEW Expert Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-section-expert-new {
     background: var(--bg-white);
     padding: 60px 20px;
@@ -5436,7 +5361,7 @@
 
 .jpn-expert-new-grid {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 400px;
     gap: 60px;
     align-items: start;
 }
@@ -5577,7 +5502,7 @@
     }
 
     .jpn-expert-new-grid {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 1fr;
         gap: 40px;
     }
 
@@ -5588,6 +5513,9 @@
     .jpn-expert-new-image-side {
         position: relative;
         top: 0;
+        order: -1;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .jpn-expert-new-name {
@@ -5639,6 +5567,7 @@
     .jpn-expert-new-image-side {
         max-width: 400px;
         margin: 0 auto;
+        order: -1;
     }
 
     .jpn-expert-new-header .jpn-h2 {
@@ -5692,124 +5621,121 @@
     }
 }
 
-/* â”€â”€â”€ NEW Where to Start Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-
 .jpn-section-where-start {
-    background: var(--bg-soft);
-    padding: 60px 20px;
-}
-
-.jpn-where-start-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    background: #ffffff;
+    padding: 100px 20px;
+    border-top: 1px solid #edf2f7;
 }
 
 .jpn-where-start-header {
     text-align: center;
-    margin-bottom: 50px;
-}
-
-.jpn-where-start-header .jpn-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-    letter-spacing: -0.01em;
-    color: #274472;
+    max-width: 800px;
+    margin: 0 auto 60px;
 }
 
 .jpn-where-start-subtitle {
-    font-size: 18px;
-    color: #555;
-    margin: 0;
+    font-size: 20px;
+    color: #4a5568;
+    margin-top: 24px;
     line-height: 1.6;
 }
 
 .jpn-where-start-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 24px;
 }
 
 .jpn-where-start-card {
     background: #ffffff;
-    padding: 40px 28px;
+    padding: 40px 24px;
     border-radius: 16px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 16px;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.04);
+    border: 1px solid #edf2f7;
 }
 
-.jpn-where-start-card::before {
-    content: '';
+.jpn-where-start-card-accent {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: var(--navy);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    height: 3px;
+    background: #274472;
+    transform: scaleX(0.4);
+    transition: transform 0.4s ease, background 0.4s ease;
+    border-radius: 3px 3px 0 0;
 }
 
 .jpn-where-start-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 35px rgba(39, 68, 114, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(39, 68, 114, 0.08);
 }
 
-.jpn-where-start-card:hover::before {
+.jpn-where-start-card:hover .jpn-where-start-card-accent {
     transform: scaleX(1);
+    background: #6b93bd;
 }
 
 .jpn-where-start-card-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy) 100%);
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #f7f9fc;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    transition: all 0.3s ease;
+    color: #274472;
+    transition: all 0.4s ease;
+    margin-bottom: 4px;
 }
 
 .jpn-where-start-card:hover .jpn-where-start-card-icon {
-    transform: scale(1.1) rotate(5deg);
+    background: #274472;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .jpn-where-start-card-title {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
-    color: var(--navy);
+    color: #274472;
     margin: 0;
+    line-height: 1.3;
+}
+
+.jpn-where-start-card-text {
+    font-size: 14px;
+    color: #718096;
     line-height: 1.4;
-    flex: 1;
+    margin: 0;
 }
 
 .jpn-where-start-card-arrow {
-    width: 40px;
-    height: 40px;
-    background: var(--bg-soft);
+    width: 36px;
+    height: 36px;
+    background: #f7f9fc;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--navy);
-    transition: all 0.3s ease;
+    color: #274472;
+    transition: all 0.4s ease;
+    margin-top: 8px;
 }
 
 .jpn-where-start-card:hover .jpn-where-start-card-arrow {
-    background: var(--navy);
+    background: #274472;
     color: #ffffff;
-    transform: translateX(5px);
+    transform: translateX(4px);
 }
 
 /* Tablet Responsive */
@@ -5828,67 +5754,93 @@
 
     .jpn-where-start-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 20px;
     }
 
     .jpn-where-start-card {
-        padding: 32px 24px;
-    }
-
-    .jpn-where-start-card-icon {
-        width: 60px;
-        height: 60px;
+        padding: 36px 24px;
     }
 
     .jpn-where-start-card-title {
-        font-size: 17px;
+        font-size: 18px;
+    }
+
+    .jpn-where-start-subtitle {
+        font-size: 18px;
     }
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .jpn-section-where-start {
-        padding: 50px 15px;
-    }
-
-    .jpn-where-start-header .jpn-h2 {
-        font-size: 26px;
-    }
-
-    .jpn-where-start-subtitle {
-        font-size: 16px;
-    }
-
-    .jpn-where-start-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .jpn-where-start-card {
-        padding: 28px 22px;
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .jpn-where-start-card-icon {
-        width: 56px;
-        height: 56px;
-        flex-shrink: 0;
-    }
-
-    .jpn-where-start-card-title {
-        font-size: 16px;
-        flex: 1;
-    }
-
-    .jpn-where-start-card-arrow {
-        width: 36px;
-        height: 36px;
-        flex-shrink: 0;
+        padding: 60px 15px;
     }
 
     .jpn-where-start-header {
         margin-bottom: 40px;
     }
+
+    .jpn-where-start-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .jpn-where-start-card {
+        padding: 30px 20px;
+        flex-direction: row;
+        text-align: left;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .jpn-where-start-card-accent {
+        width: 3px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scaleY(0.4);
+        transform-origin: center;
+        border-radius: 0;
+    }
+
+    .jpn-where-start-card:hover .jpn-where-start-card-accent {
+        transform: scaleY(1);
+    }
+
+    .jpn-where-start-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+
+    .jpn-where-start-card-title {
+        font-size: 16px;
+    }
+
+    .jpn-where-start-card-text {
+        display: none;
+    }
+
+    .jpn-where-start-card-arrow {
+        width: 32px;
+        height: 32px;
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+    .jpn-where-start-subtitle {
+        font-size: 17px;
+    }
 }
 
+@media (max-width: 768px) {
+    .jpn-section-image {
+        height: 240px;
+    }
+
+    .jpn-section-image-wrap {
+        border-radius: 16px;
+        margin-bottom: 24px;
+    }
+}
