@@ -99,15 +99,20 @@ function ScenicAntarctica() {
           name="description"
           content="Plan a Scenic Antarctica cruise aboard Scenic Eclipse. Ultra-luxury, all-inclusive expeditions with expert guidance from Angela Hughes and Trips & Ships Luxury Travel."
         />
+        {/* Preload first hero image for better performance */}
+        <link rel="preload" as="image" href={images[0]} />
       </Helmet>
       <Navbar />
 
       {/* HERO */}
       <section className="Scenic_hero_section">
-        <div
-          className="Scenic_hero_bg"
-          style={{ backgroundImage: `url(${images[current]})` }}
-        ></div>
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`Scenic_hero_bg ${index === current ? "active" : ""}`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
 
         <div className="Scenic_hero_overlay"></div>
 
@@ -220,17 +225,22 @@ function ScenicAntarctica() {
             </button>
 
             {/* IMAGES */}
-            <div
-              className="Scenic_gallery_slide"
-              style={{
-                backgroundImage: `url(${galleryImages[galleryCurrent]})`,
-              }}
-            >
-              <div className="Scenic_gallery_overlay">
-                <span className="Scenic_image_counter">
-                  {galleryCurrent + 1} / {galleryImages.length}
-                </span>
-              </div>
+            <div className="Scenic_gallery_container">
+              {galleryImages.map((img, index) => (
+                <div
+                  key={index}
+                  className={`Scenic_gallery_slide ${index === galleryCurrent ? "active" : ""}`}
+                  style={{
+                    backgroundImage: `url(${img})`,
+                  }}
+                >
+                  <div className="Scenic_gallery_overlay">
+                    <span className="Scenic_image_counter">
+                      {galleryCurrent + 1} / {galleryImages.length}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* PAGINATION DOTS */}
@@ -290,7 +300,7 @@ function ScenicAntarctica() {
           <div className="Scenic_expert_cards">
             <div className="Scenic_expert_card">
               <div className="Scenic_card_image">
-                <img src={SuiteImg} alt="Suite accommodations" />
+                <img src={SuiteImg} alt="Suite accommodations" loading="lazy" decoding="async" />
               </div>
               <div className="Scenic_card_content">
                 <p>Suite accommodations</p>
@@ -299,7 +309,7 @@ function ScenicAntarctica() {
 
             <div className="Scenic_expert_card">
               <div className="Scenic_card_image">
-                <img src={DiningImg} alt="Dining across multiple venues" />
+                <img src={DiningImg} alt="Dining across multiple venues" loading="lazy" decoding="async" />
               </div>
               <div className="Scenic_card_content">
                 <p>Dining across multiple venues</p>
@@ -308,7 +318,7 @@ function ScenicAntarctica() {
 
             <div className="Scenic_expert_card">
               <div className="Scenic_card_image">
-                <img src={BeveragesImg} alt="Beverages" />
+                <img src={BeveragesImg} alt="Beverages" loading="lazy" decoding="async" />
               </div>
               <div className="Scenic_card_content">
                 <p>Beverages</p>
@@ -317,7 +327,7 @@ function ScenicAntarctica() {
 
             <div className="Scenic_expert_card">
               <div className="Scenic_card_image">
-                <img src={GuidedImg} alt="Guided expedition landings" />
+                <img src={GuidedImg} alt="Guided expedition landings" loading="lazy" decoding="async" />
               </div>
               <div className="Scenic_card_content">
                 <p>Guided expedition landings and zodiac excursions</p>
@@ -326,7 +336,7 @@ function ScenicAntarctica() {
 
             <div className="Scenic_expert_card">
               <div className="Scenic_card_image">
-                <img src={OnboardImg} alt="Onboard lectures" />
+                <img src={OnboardImg} alt="Onboard lectures" loading="lazy" decoding="async" />
               </div>
               <div className="Scenic_card_content">
                 <p>Onboard lectures and enrichment</p>
@@ -427,7 +437,7 @@ function ScenicAntarctica() {
           </div>
 
           <div className="Scenic_right_experience_image">
-            <img src={SecondPage3} alt="Scenic Antarctica Explorer" />
+            <img src={SecondPage3} alt="Scenic Antarctica Explorer" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -461,7 +471,7 @@ function ScenicAntarctica() {
         <div className="Scenic_video_grid_inner">
           <div className="Scenic_video_row">
             <div className="Scenic_video_item">
-              <video autoPlay muted loop playsInline controls>
+              <video autoPlay muted loop playsInline controls poster={SecondPage10} preload="metadata">
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/ACNt3LrAxynWJPY-CRQRbH8/Scenic/Scenic%20Ocean/Videos/Antarctica/Reel%20Format/Wildlife%20Of%20Antarctica%20Social%20Reel%201%20-%20World%20Wildlife%20Day%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ba372ruc&raw=1"
                   type="video/mp4"
@@ -475,7 +485,7 @@ function ScenicAntarctica() {
               </p>
             </div>
             <div className="Scenic_video_item">
-              <video autoPlay muted loop playsInline controls>
+              <video autoPlay muted loop playsInline controls poster={SecondPage8} preload="metadata">
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AK_BXGRAgNIVFjkeht6x-hw/Scenic/Scenic%20Ocean/Videos/Antarctica/30s-Antarctica%20and%20East%20Antarctica_Brochure%20video_Gen_CTA.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=f9qak7ti&raw=1"
                   type="video/mp4"
@@ -489,7 +499,7 @@ function ScenicAntarctica() {
               </p>
             </div>
             <div className="Scenic_video_item">
-              <video autoPlay muted loop playsInline controls>
+              <video autoPlay muted loop playsInline controls poster={SecondPage9} preload="metadata">
                 <source
                   src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/APLYAQLs3hUko6hSJWqpcIo/Scenic/Scenic%20Ocean/Videos/Antarctica/Scenic%20Eclipse%20_%20%20Exploring%20East%20Antarctica%20and%20the%20Ross%20Sea.mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=ovtwu8dc&raw=1"
                   type="video/mp4"
@@ -713,6 +723,8 @@ function ScenicAntarctica() {
                   src={myImage}
                   alt="Angela Hughes - Luxury Travel Advisor"
                   className="Scenic_insight_expert_image"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
