@@ -6,20 +6,20 @@ import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import "../ScenicAntarctica/ScenicAntarctica.css";
 import myImage from "../../assets/image.jpg";
-import SecondPage1 from "../../assets/SecondPage/SecondPage1.jpg";
+import SecondPage1 from "../../assets/SecondPage/SecondPage1.webp";
 import SecondPage3 from "../../assets/SecondPage/SecondPage3.webp";
 import SecondPage4 from "../../assets/SecondPage/SecondPage4.webp";
 import SecondPage5 from "../../assets/SecondPage/SecondPage5.webp";
 import SecondPage6 from "../../assets/SecondPage/SecondPage6.webp";
 import SecondPage7 from "../../assets/SecondPage/SecondPage7.webp";
-import SecondPage8 from "../../assets/SecondPage/SecondPage8.jpg";
-import SecondPage9 from "../../assets/SecondPage/SecondPage9.jpg";
-import SecondPage10 from "../../assets/SecondPage/SecondPage10.jpg";
-import SuiteImg from "../../assets/SecondPage/Suite.jpg";
-import DiningImg from "../../assets/SecondPage/Dining.jpg";
-import BeveragesImg from "../../assets/SecondPage/Beverages.jpg";
-import GuidedImg from "../../assets/SecondPage/Guided.jpg";
-import OnboardImg from "../../assets/SecondPage/Onboard.jpg";
+import SecondPage8 from "../../assets/SecondPage/SecondPage8.webp";
+import SecondPage9 from "../../assets/SecondPage/SecondPage9.webp";
+import SecondPage10 from "../../assets/SecondPage/SecondPage10.webp";
+import SuiteImg from "../../assets/SecondPage/Suite.webp";
+import DiningImg from "../../assets/SecondPage/Dining.webp";
+import BeveragesImg from "../../assets/SecondPage/Beverages.webp";
+import GuidedImg from "../../assets/SecondPage/Guided.webp";
+import OnboardImg from "../../assets/SecondPage/Onboard.webp";
 
 function ScenicAntarctica() {
   const [current, setCurrent] = useState(0);
@@ -747,8 +747,9 @@ function ScenicAntarctica() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
-                  }`}
+                className={`Scenic-faq-item ${
+                  activeFaq === index ? "Scenic-active" : ""
+                }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

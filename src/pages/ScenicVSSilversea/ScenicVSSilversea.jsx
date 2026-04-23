@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Snowflake,
   Anchor,
@@ -17,20 +17,17 @@ import {
 } from "lucide-react";
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
-import scenisilver1 from "../../assets/scenic-vs-silversea-antarctica/scenisilver1.jpg";
-import scenisilver2 from "../../assets/scenic-vs-silversea-antarctica/scenisilver2.jpg";
-import scenisilver3 from "../../assets/scenic-vs-silversea-antarctica/scenisilver3.jpg";
-import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.jpg";
-import scenicValue from "../../assets/scenic-vs-silversea-antarctica/scenic_value.jpg";
-import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silversea_value.jpg";
+import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.webp";
+import scenicValue from "../../assets/scenic-vs-silversea-antarctica/scenic_value.webp";
+import silverseaValue from "../../assets/scenic-vs-silversea-antarctica/silversea_value.webp";
 import { Helmet } from "react-helmet-async";
-import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.jpg";
-import silverseaImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea2.jpg";
+import scenicImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea1.webp";
+import silverseaImage from "../../assets/scenic-vs-silversea-antarctica/SenicSilversea2.webp";
 import myImage from "../../assets/image.jpg";
-import ScenicGallery1 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery1.jpg";
-import ScenicGallery2 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery2.jpg";
-import ScenicGallery3 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery3.jpg";
-import ScenicGallery4 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery4.jpg";
+import ScenicGallery1 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery1.webp";
+import ScenicGallery2 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery2.webp";
+import ScenicGallery3 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery3.webp";
+import ScenicGallery4 from "../../assets/scenic-vs-silversea-antarctica/scenicGallery4.webp";
 
 const AntarcticaPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -102,7 +99,6 @@ const AntarcticaPage = () => {
     setActiveFaq(activeFaq === index ? null : index);
   };
   const [readMore, setReadMore] = useState(false);
-  const images = [scenisilver1, scenisilver2, scenisilver3];
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -341,11 +337,13 @@ const AntarcticaPage = () => {
           </p>
 
           {/* This container expands when the button below is clicked */}
-          <div className={`senianta-hero-details ${readMore ? "expanded" : ""}`}>
+          <div
+            className={`senianta-hero-details ${readMore ? "expanded" : ""}`}
+          >
             <p className="senianta-hero-note">
               Two of the most commonly compared options are Scenic Luxury
-              Cruises & Tours and Silversea Cruises. Both operate at the
-              highest level of the market. Both provide access to Antarctica.
+              Cruises & Tours and Silversea Cruises. Both operate at the highest
+              level of the market. Both provide access to Antarctica.
             </p>
           </div>
 
