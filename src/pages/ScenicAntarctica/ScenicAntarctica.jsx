@@ -86,7 +86,7 @@ function ScenicAntarctica() {
   }, [images.length, galleryImages.length]);
 
   return (
-    <div>
+    <div className="Scenic_page_wrapper">
       <Helmet>
         <title>
           Scenic Antarctica Cruise | Scenic Eclipse Expedition Antarctica

@@ -1,11 +1,12 @@
 /* ================= HERO ================= */
 .Scenic_hero_section {
   position: relative;
-  min-height: 100vh;  /* ✅ FIXED */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;  /* navbar space */
+  padding: 120px 20px 60px;
+  overflow: hidden; /* Prevent Ken Burns effect from causing horizontal scroll */
 }
 
 /* BG */
@@ -69,6 +70,12 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
+  position: relative;
+}
+
+.Scenic_page_wrapper {
+  overflow-x: hidden;
+  width: 100%;
   position: relative;
 }
 
