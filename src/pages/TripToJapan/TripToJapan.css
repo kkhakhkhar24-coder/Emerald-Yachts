@@ -275,6 +275,7 @@
 .jpn-hero-inner {
     max-width: 900px;
     width: 100%;
+    margin-top: 50px;
     position: relative;
     z-index: 2;
     animation: jpnFadeUp 1s ease-out both;
