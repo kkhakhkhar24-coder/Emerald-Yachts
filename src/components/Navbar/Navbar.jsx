@@ -112,6 +112,14 @@ const Navbar = () => {
               >
                 First Time Japan Itinerary
               </NavLink>
+
+              <NavLink
+                to="/best-time-to-visit-japan"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Time to Visit Japan
+              </NavLink>
             </div>
           </div>
         </div>
@@ -240,6 +248,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               First Time Japan Itinerary
+            </NavLink>
+
+            <NavLink
+              to="/best-time-to-visit-japan"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Time to Visit Japan
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

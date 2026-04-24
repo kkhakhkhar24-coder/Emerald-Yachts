@@ -1,0 +1,2348 @@
+/* ================= CSS VARIABLES ================= */
+:root {
+  --btjapan-navy: #2f4a6d;
+  --btjapan-navy-light: #274472cc;
+  --btjapan-bg-light: #eef2f5;
+  --btjapan-bg-teal: rgb(231, 243, 245);
+  --btjapan-bg-white: #f7f9fb;
+  --btjapan-white: #ffffff;
+  --btjapan-section-max: 1100px;
+  --btjapan-content-max: 800px;
+}
+
+/* ================= HERO ================= */
+.BTJapan_hero_section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px 100px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  animation: BTJapan_bgSlide 18s infinite ease-in-out;
+}
+
+@keyframes BTJapan_bgSlide {
+  0%,
+  100% {
+    background-image: url("../../assets/BestTimeJapan/BTJhero1.webp");
+  }
+  33% {
+    background-image: url("../../assets/BestTimeJapan/BTJhero2.webp");
+  }
+  66% {
+    background-image: url("../../assets/BestTimeJapan/BTJhero3.webp");
+  }
+}
+
+.BTJapan_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.BTJapan_hero_section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 50px 50px;
+  animation: BTJapan_particles 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes BTJapan_particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
+
+.BTJapan_hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  text-align: center;
+  color: var(--btjapan-white);
+  animation: BTJapan_fadeInUp 1s ease-out;
+}
+
+@keyframes BTJapan_fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.BTJapan_hero_content h1 {
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--btjapan-white);
+  line-height: 1.15;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  animation: BTJapan_fadeInUp 1s ease-out 0.3s both;
+}
+
+.BTJapan_hero_content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: var(--btjapan-white);
+  font-weight: 300;
+  animation: BTJapan_fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.BTJapan_readmore_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.BTJapan_readmore_btn {
+  background: transparent;
+  border: none;
+  color: var(--btjapan-white);
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.BTJapan_readmore_btn::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.BTJapan_readmore_btn:hover::after {
+  width: 100%;
+}
+
+.BTJapan_hero_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  animation: BTJapan_fadeInUp 0.8s ease-out 0.7s both;
+}
+
+.BTJapan_primary_btn {
+  padding: 15px 30px;
+  background: var(--btjapan-white);
+  color: var(--btjapan-navy);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.BTJapan_primary_btn:hover {
+  background: #274472;
+  color: var(--btjapan-white);
+}
+
+.BTJapan_secondary_btn {
+  padding: 14px 26px;
+  background: transparent;
+  color: var(--btjapan-white);
+  border: 1px solid var(--btjapan-white);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 3px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.BTJapan_secondary_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= EXPERT SECTION ================= */
+.BTJapan_expert_section {
+  position: relative;
+  padding: 60px 20px;
+  background: var(--btjapan-white);
+  text-align: left;
+}
+
+.BTJapan_expert_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.BTJapan_expert_flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.BTJapan_expert_content {
+  flex: 1;
+}
+
+.BTJapan_expert_content h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.BTJapan_expert_highlight {
+  font-size: 1.15rem;
+  color: var(--btjapan-navy);
+  font-weight: 600;
+  background: #f0f4f7;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.BTJapan_expert_content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.BTJapan_expert_credentials {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.BTJapan_expert_credentials li {
+  font-size: 0.92rem;
+  color: var(--btjapan-navy);
+  background: #fdfdfd;
+  padding: 14px 15px;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_expert_credentials li:hover {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_expert_credentials li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: inherit;
+  font-weight: bold;
+}
+
+.BTJapan_expert_image_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.BTJapan_expert_image_wrapper {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--btjapan-white);
+  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.BTJapan_expert_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ================= QUICK ANSWER (ABOUT) ================= */
+.BTJapan_about_section {
+  background: var(--btjapan-bg-teal);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_about_inner {
+  max-width: var(--btjapan-content-max);
+  margin: 0 auto;
+}
+
+.BTJapan_about_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.BTJapan_about_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_about_inner p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--btjapan-navy-light);
+  margin-bottom: 16px;
+}
+
+.BTJapan_quick_list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  max-width: 500px;
+}
+
+.BTJapan_quick_list li {
+  font-size: 1rem;
+  color: var(--btjapan-navy);
+  padding: 12px 16px;
+  background: var(--btjapan-white);
+  border-radius: 8px;
+  border-left: 3px solid var(--btjapan-navy);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_quick_list li:hover {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+  transform: translateX(4px);
+}
+
+/* ================= QUICK ANSWER V2 ================= */
+.BTJapan_quick_answer_v2_section {
+  background: var(--btjapan-bg-white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_quick_answer_v2_inner {
+  max-width: var(--btjapan-content-max);
+  margin: 0 auto;
+}
+
+.BTJapan_quick_answer_v2_inner h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 30px;
+}
+
+.BTJapan_v2_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.BTJapan_v2_list li {
+  font-size: 1.1rem;
+  color: var(--btjapan-navy);
+  background: var(--btjapan-white);
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(47, 74, 109, 0.1);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_v2_list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(39, 68, 114, 0.08);
+}
+
+.BTJapan_v2_highlight {
+  background: var(--btjapan-navy) !important;
+  color: var(--btjapan-white) !important;
+  margin-top: 10px;
+}
+
+/* ================= SEASONS OVERVIEW (10S SUMMARY STYLE) ================= */
+.BTJapan_summary_10s_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+  text-align: left;
+}
+
+.BTJapan_summary_10s_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_summary_grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.BTJapan_summary_text_content h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.BTJapan_summary_10s_content {
+  background: var(--btjapan-white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+  border: 1px solid var(--btjapan-bg-light);
+}
+
+.BTJapan_seasons_table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.BTJapan_season_row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border-left: 3px solid var(--btjapan-navy);
+  background: var(--btjapan-bg-light);
+  transition: all 0.3s ease;
+}
+
+.BTJapan_season_row:hover {
+  background: var(--btjapan-navy);
+}
+
+.BTJapan_season_row:hover .BTJapan_season_name,
+.BTJapan_season_row:hover .BTJapan_season_months,
+.BTJapan_season_row:hover .BTJapan_season_best {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_season_name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--btjapan-navy);
+  min-width: 70px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_season_details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.BTJapan_season_months {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  transition: color 0.3s ease;
+}
+
+.BTJapan_season_best {
+  font-size: 0.8rem;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_summary_image_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.BTJapan_summary_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.BTJapan_summary_image_container:hover img {
+  transform: scale(1.05);
+}
+
+/* ================= TRAVEL GOALS SECTION ================= */
+.BTJapan_goals_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_goals_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_goals_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.BTJapan_goals_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_goals_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.BTJapan_goal_card {
+  background: var(--btjapan-bg-light);
+  border-radius: 16px;
+  padding: 30px 24px;
+  text-align: left;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.BTJapan_goal_card:hover {
+  background: var(--btjapan-navy);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_goal_card:hover .BTJapan_goal_icon,
+.BTJapan_goal_card:hover h3,
+.BTJapan_goal_card:hover p {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_goal_icon {
+  color: var(--btjapan-navy);
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_goal_content h3 {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_goal_content p {
+  font-size: 0.9rem;
+  color: var(--btjapan-navy-light);
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* ================= SEASONS DETAIL SECTION ================= */
+.BTJapan_seasons_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+}
+
+.BTJapan_seasons_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_seasons_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.BTJapan_seasons_header h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.BTJapan_seasons_header h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_seasons_detail_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.BTJapan_season_detail_card {
+  background: var(--btjapan-white);
+  border-radius: 20px;
+  padding: 36px 30px;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.BTJapan_season_detail_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--btjapan-navy);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.BTJapan_season_detail_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_season_detail_card:hover::before {
+  transform: scaleX(1);
+}
+
+.BTJapan_season_detail_icon {
+  width: 56px;
+  height: 56px;
+  background: var(--btjapan-bg-light);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-navy);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_season_detail_card:hover .BTJapan_season_detail_icon {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+}
+
+.BTJapan_season_detail_content h3 {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 12px;
+}
+
+.BTJapan_season_detail_content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ================= MONTHS GRID ================= */
+.BTJapan_months_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+}
+
+.BTJapan_months_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_months_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.BTJapan_months_header h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  position: relative;
+}
+
+.BTJapan_months_header h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_months_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.BTJapan_month_card {
+  background: var(--btjapan-bg-light);
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: left;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.BTJapan_month_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--btjapan-navy);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.BTJapan_month_card:hover {
+  background: var(--btjapan-white);
+  border-color: rgba(39, 68, 114, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08);
+}
+
+.BTJapan_month_card:hover::before {
+  transform: scaleX(1);
+}
+
+.BTJapan_month_name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--btjapan-navy);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.BTJapan_month_desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ================= EXPERIENCE / TIMING SECTION ================= */
+.BTJapan_experience_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+}
+
+.BTJapan_experience_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_experience_header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.BTJapan_experience_header h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.BTJapan_experience_header h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_experience_header p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+}
+
+.BTJapan_experience_content_wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.BTJapan_experience_text {
+  text-align: left;
+}
+
+.BTJapan_phase_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.BTJapan_phase_item {
+  background: var(--btjapan-white);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid var(--btjapan-navy);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+}
+
+.BTJapan_phase_item:hover {
+  background: var(--btjapan-navy);
+  transform: translateX(5px);
+}
+
+.BTJapan_phase_item:hover .BTJapan_phase_city,
+.BTJapan_phase_item:hover .BTJapan_phase_desc {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_phase_city {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--btjapan-navy);
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_phase_desc {
+  font-size: 16px;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_experience_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.BTJapan_experience_card {
+  background: var(--btjapan-white);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+}
+
+.BTJapan_experience_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_experience_icon {
+  width: 48px;
+  height: 48px;
+  background: var(--btjapan-bg-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-navy);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_experience_card:hover .BTJapan_experience_icon {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+}
+
+.BTJapan_experience_card h4 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 6px;
+}
+
+.BTJapan_experience_card p {
+  font-size: 0.9rem;
+  color: var(--btjapan-navy-light);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ================= TIMING IMPACT (TRUTH ABOUT BLOSSOMS) ================= */
+.BTJapan_timing_impact_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_timing_impact_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_timing_impact_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.BTJapan_timing_impact_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_timing_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.BTJapan_timing_card {
+  background: var(--btjapan-bg-light);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.BTJapan_timing_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--btjapan-navy);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.BTJapan_timing_card:hover {
+  background: var(--btjapan-white);
+  border-color: rgba(39, 68, 114, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_timing_card:hover::before {
+  transform: scaleX(1);
+}
+
+.BTJapan_timing_icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(39, 68, 114, 0.08);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-navy);
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_timing_card:hover .BTJapan_timing_icon {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+}
+
+.BTJapan_timing_card h3 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 10px;
+}
+
+.BTJapan_timing_card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ================= SPRING VS FALL (LANDCRUISE STYLE) ================= */
+.BTJapan_landcruise_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+  text-align: left;
+}
+
+.BTJapan_landcruise_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_landcruise_grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.BTJapan_landcruise_text h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.BTJapan_landcruise_text h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin-top: 12px;
+}
+
+.BTJapan_landcruise_text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.BTJapan_landcruise_comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.BTJapan_landcruise_option {
+  background: var(--btjapan-white);
+  border-radius: 12px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--btjapan-bg-light);
+  transition: all 0.3s ease;
+}
+
+.BTJapan_landcruise_option--highlight {
+  border-left-color: var(--btjapan-navy);
+  background: var(--btjapan-navy);
+}
+
+.BTJapan_landcruise_option--highlight .BTJapan_landcruise_label,
+.BTJapan_landcruise_option--highlight p {
+  color: var(--btjapan-white) !important;
+}
+
+.BTJapan_landcruise_option:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(39, 68, 114, 0.08);
+}
+
+.BTJapan_landcruise_label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--btjapan-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.BTJapan_landcruise_option p {
+  font-size: 0.95rem;
+  color: var(--btjapan-navy-light);
+  margin: 0;
+  font-weight: 300;
+}
+
+.BTJapan_landcruise_image_container {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_landcruise_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= PRICING & CROWDS (PACING STYLE) ================= */
+.BTJapan_pacing_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_pacing_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_pacing_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.BTJapan_pacing_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_pacing_inner > p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  max-width: 700px;
+  margin: 20px auto 40px;
+}
+
+.BTJapan_pacing_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.BTJapan_pacing_card {
+  border-radius: 20px;
+  padding: 36px 30px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_pacing_peak {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+}
+
+.BTJapan_pacing_value {
+  background: var(--btjapan-bg-light);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_pacing_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_pacing_card h3 {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: inherit;
+  margin-bottom: 16px;
+}
+
+.BTJapan_pacing_peak h3 {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_pacing_value h3 {
+  color: var(--btjapan-navy);
+}
+
+.BTJapan_pacing_peak ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.BTJapan_pacing_peak ul li {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
+  padding-left: 16px;
+  position: relative;
+}
+
+.BTJapan_pacing_peak ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.BTJapan_pacing_value p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ================= WHY TIMING MATTERS (SKIP STYLE) ================= */
+.BTJapan_skip_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_skip_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_skip_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.BTJapan_skip_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_skip_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.BTJapan_skip_card {
+  background: var(--btjapan-white);
+  border-radius: 20px;
+  padding: 35px 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
+}
+
+.BTJapan_skip_card:hover {
+  background: var(--btjapan-navy);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_skip_card:hover .BTJapan_skip_icon_box,
+.BTJapan_skip_card:hover .BTJapan_skip_card_content h3,
+.BTJapan_skip_card:hover .BTJapan_skip_card_content p {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_skip_card:hover .BTJapan_skip_icon_box {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.BTJapan_skip_icon_box {
+  width: 50px;
+  height: 50px;
+  background: var(--btjapan-bg-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-navy);
+  transition: all 0.3s ease;
+}
+
+.BTJapan_skip_card_content h3 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_skip_card_content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* ================= CLIENT INSIGHTS (REGRET STYLE) ================= */
+.BTJapan_regret_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_regret_inner {
+  max-width: var(--btjapan-content-max);
+  margin: 0 auto;
+}
+
+.BTJapan_regret_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 30px;
+}
+
+.BTJapan_regret_highlight {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.BTJapan_regret_content p:not(.BTJapan_regret_highlight) {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+}
+
+/* ================= MISTAKES V2 ================= */
+.BTJapan_mistakes_v2_section {
+  background: var(--btjapan-bg-teal);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_mistakes_v2_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_mistakes_v2_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 40px;
+}
+
+.BTJapan_mistakes_v2_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.BTJapan_mistake_v2_card {
+  background: var(--btjapan-white);
+  border-radius: 16px;
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  border: 1px solid #e0e8f0;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_mistake_v2_card:hover {
+  background: var(--btjapan-navy);
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.BTJapan_mistake_v2_card:hover p {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_mistake_v2_bullet {
+  width: 32px;
+  height: 32px;
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_mistake_v2_card:hover .BTJapan_mistake_v2_bullet {
+  background: var(--btjapan-white);
+  color: var(--btjapan-navy);
+}
+
+.BTJapan_mistake_v2_card p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* ================= INSIGHTS SECTION ================= */
+.BTJapan_insights_section {
+  background: var(--btjapan-navy);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--btjapan-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.BTJapan_insights_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.BTJapan_insights_header {
+  margin-bottom: 60px;
+}
+
+.BTJapan_insights_header h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-white);
+  margin-bottom: 20px;
+}
+
+.BTJapan_insights_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.BTJapan_insight_card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.BTJapan_insight_card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-10px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.BTJapan_insight_icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-white);
+  transition: all 0.3s ease;
+}
+
+.BTJapan_insight_card:hover .BTJapan_insight_icon {
+  background: var(--btjapan-white);
+  color: var(--btjapan-navy);
+  transform: scale(1.1);
+}
+
+.BTJapan_insight_card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--btjapan-white);
+  opacity: 0.9;
+  font-weight: 300;
+  margin: 0;
+}
+
+.BTJapan_insight_card--highlight {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.BTJapan_insight_card--highlight p {
+  font-size: 1.25rem;
+  opacity: 1;
+}
+
+/* ================= QUOTE SECTION ================= */
+.BTJapan_quote_section {
+  background: var(--btjapan-navy);
+  padding: 0px 20px 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_quote_inner {
+  max-width: var(--btjapan-content-max);
+  margin: 0 auto;
+}
+
+.BTJapan_quote_icon {
+  font-size: 48px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.BTJapan_quote_text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--btjapan-white);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.BTJapan_quote_author {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ================= REMEMBER SECTION ================= */
+.BTJapan_remember_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_remember_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_remember_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 40px;
+}
+
+.BTJapan_remember_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.BTJapan_remember_item {
+  background: var(--btjapan-white);
+  border-radius: 16px;
+  padding: 36px 24px;
+  text-align: center;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  transition: all 0.3s ease;
+}
+
+.BTJapan_remember_item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
+}
+
+.BTJapan_remember_item--highlight {
+  background: var(--btjapan-navy);
+}
+
+.BTJapan_remember_item--highlight .BTJapan_remember_label,
+.BTJapan_remember_item--highlight .BTJapan_remember_text {
+  color: var(--btjapan-white) !important;
+}
+
+.BTJapan_remember_label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--btjapan-navy);
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.BTJapan_remember_text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--btjapan-navy);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ================= CUSTOMIZE (WHY TRUST) ================= */
+.BTJapan_customize_section {
+  background: var(--btjapan-white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_customize_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_customize_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.BTJapan_customize_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_customize_inner > p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.BTJapan_customize_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.BTJapan_customize_card {
+  background: var(--btjapan-bg-light);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.BTJapan_customize_card:hover {
+  background: var(--btjapan-navy);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_customize_card:hover h4,
+.BTJapan_customize_card:hover p {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_customize_card h4 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: var(--btjapan-navy);
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.BTJapan_customize_card p {
+  font-size: 0.9rem;
+  color: var(--btjapan-navy-light);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+/* ================= SAMPLE TRIPS (COST STYLE) ================= */
+.BTJapan_cost_section {
+  background: var(--btjapan-bg-teal);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.BTJapan_cost_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_cost_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.BTJapan_cost_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_cost_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.BTJapan_cost_card {
+  background: var(--btjapan-white);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
+  border: 1px solid #e8edf2;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.BTJapan_cost_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--btjapan-navy);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.BTJapan_cost_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_cost_card:hover::before {
+  transform: scaleX(1);
+}
+
+.BTJapan_cost_icon {
+  width: 56px;
+  height: 56px;
+  background: var(--btjapan-bg-light);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btjapan-navy);
+  margin: 0 auto 18px;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_cost_card:hover .BTJapan_cost_icon {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+}
+
+.BTJapan_cost_season {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--btjapan-navy);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.BTJapan_cost_destinations {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 10px;
+}
+
+.BTJapan_cost_highlight {
+  font-size: 0.85rem;
+  color: var(--btjapan-navy-light);
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ================= CTA SECTION ================= */
+.BTJapan_cta_section {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  overflow: hidden;
+  color: var(--btjapan-white);
+}
+
+.BTJapan_cta_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.BTJapan_cta_background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.BTJapan_cta_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 68, 114, 0.4) 0%,
+    rgba(39, 68, 114, 0.8) 100%
+  );
+  z-index: 2;
+}
+
+.BTJapan_cta_inner {
+  position: relative;
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.BTJapan_cta_card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.BTJapan_cta_card h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--btjapan-white);
+  margin-bottom: 20px;
+}
+
+.BTJapan_cta_intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--btjapan-white);
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-weight: 300;
+}
+
+.BTJapan_cta_content_grid {
+  margin-bottom: 50px;
+}
+
+.BTJapan_cta_list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  text-align: left;
+}
+
+.BTJapan_cta_list li {
+  font-size: 1.05rem;
+  color: var(--btjapan-white);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+}
+
+.BTJapan_cta_dot {
+  width: 8px;
+  height: 8px;
+  background: var(--btjapan-white);
+  border-radius: 50%;
+  display: block;
+}
+
+.BTJapan_cta_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.BTJapan_cta_primary_btn {
+  background: var(--btjapan-navy);
+  color: var(--btjapan-white);
+  border: none;
+  padding: 18px 40px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.BTJapan_cta_primary_btn:hover {
+  background: var(--btjapan-white);
+  color: var(--btjapan-navy);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= WHERE TO GO NEXT ================= */
+.BTJapan_links_section {
+  background: var(--btjapan-bg-teal);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_links_inner {
+  max-width: var(--btjapan-content-max);
+  margin: 0 auto;
+}
+
+.BTJapan_links_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.BTJapan_links_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_links_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.BTJapan_link_card {
+  background: var(--btjapan-white);
+  border-radius: 12px;
+  padding: 22px 18px;
+  text-align: left;
+  border: 1px solid #e0e8f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.BTJapan_link_card:hover {
+  background: var(--btjapan-navy);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(39, 68, 114, 0.12);
+}
+
+.BTJapan_link_card:hover .BTJapan_link_title,
+.BTJapan_link_card:hover .BTJapan_link_arrow {
+  color: var(--btjapan-white);
+}
+
+.BTJapan_link_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--btjapan-navy);
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+.BTJapan_link_arrow {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--btjapan-navy);
+  opacity: 0.5;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.BTJapan_link_card:hover .BTJapan_link_arrow {
+  opacity: 1;
+}
+
+/* ================= FAQ SECTION ================= */
+.BTJapan_faq_section {
+  background: var(--btjapan-white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.BTJapan_faq_inner {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.BTJapan_faq_inner h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin: 12px 0 30px;
+  position: relative;
+}
+
+.BTJapan_faq_inner h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_faq_list {
+  text-align: left;
+}
+
+.BTJapan_faq_item {
+  border-top: 1px solid #d8d8d8;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.BTJapan_faq_item:last-child {
+  border-bottom: 1px solid #e4e9ee;
+}
+
+.BTJapan_faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+}
+
+.BTJapan_faq_icon {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--btjapan-navy);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.BTJapan_faq_answer {
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--btjapan-navy-light);
+  margin: 14px 0 0;
+}
+
+.BTJapan_faq_item:hover .BTJapan_faq_question {
+  color: #1a3a6d;
+}
+
+/* ================= SECTION BADGE ================= */
+.BTJapan_section_badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--btjapan-navy);
+  background: var(--btjapan-bg-light);
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .BTJapan_hero_content h1 {
+    font-size: 42px;
+  }
+  .BTJapan_expert_flex {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .BTJapan_expert_credentials {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .BTJapan_goals_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_timing_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_cost_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .BTJapan_hero_section {
+    padding: 110px 15px 50px;
+  }
+  .BTJapan_hero_content h1 {
+    font-size: 32px;
+  }
+  .BTJapan_hero_content p {
+    font-size: 17px;
+  }
+  .BTJapan_summary_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .BTJapan_summary_text_content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .BTJapan_goals_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_seasons_detail_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_months_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_experience_content_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_experience_cards_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_timing_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_landcruise_grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .BTJapan_landcruise_image_container {
+    height: 300px;
+  }
+  .BTJapan_pacing_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_skip_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_mistakes_v2_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_insights_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_remember_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_customize_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_cost_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_cta_card {
+    padding: 40px 20px;
+  }
+  .BTJapan_cta_card h2 {
+    font-size: 32px;
+  }
+  .BTJapan_cta_list {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_links_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_about_inner h2,
+  .BTJapan_quick_answer_v2_inner h2,
+  .BTJapan_seasons_header h2,
+  .BTJapan_months_header h2,
+  .BTJapan_experience_header h2,
+  .BTJapan_timing_impact_inner h2,
+  .BTJapan_landcruise_text h2,
+  .BTJapan_pacing_inner h2,
+  .BTJapan_skip_inner h2,
+  .BTJapan_regret_inner h2,
+  .BTJapan_mistakes_v2_inner h2,
+  .BTJapan_insights_header h2,
+  .BTJapan_remember_inner h2,
+  .BTJapan_customize_inner h2,
+  .BTJapan_cost_inner h2,
+  .BTJapan_links_inner h2,
+  .BTJapan_faq_inner h2,
+  .BTJapan_goals_inner h2 {
+    font-size: 28px;
+  }
+  .BTJapan_expert_content h2 {
+    font-size: 28px;
+  }
+  .BTJapan_quote_text {
+    font-size: 1.2rem;
+  }
+  .BTJapan_faq_question {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .BTJapan_hero_content h1 {
+    font-size: 26px;
+  }
+  .BTJapan_expert_content h2 {
+    font-size: 24px;
+  }
+  .BTJapan_months_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_experience_cards_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_timing_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_skip_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_customize_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_cost_cards {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_links_grid {
+    grid-template-columns: 1fr;
+  }
+  .BTJapan_primary_btn,
+  .BTJapan_secondary_btn,
+  .BTJapan_cta_primary_btn {
+    width: 100%;
+  }
+  .BTJapan_regret_highlight {
+    font-size: 1.8rem;
+  }
+  .BTJapan_remember_text {
+    font-size: 1.1rem;
+  }
+  .BTJapan_faq_inner h2 {
+    font-size: 24px;
+  }
+}

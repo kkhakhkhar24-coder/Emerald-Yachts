@@ -6,7 +6,6 @@ import {
   Landmark,
   Utensils,
   Bed,
-  ChevronRight,
   MapPinOff,
   CalendarX,
   Footprints,
@@ -16,11 +15,11 @@ import {
   Compass,
 } from "lucide-react";
 import "./FirstTimeJapan.css";
-import myimage from "../../assets/FirstTimeJapan/image.jpg";
+import myimage from "../../assets/image.webp";
 import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
 import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
 import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
-import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.jpg";
+import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
 import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
 
 /* ===== INLINE FAQ ACCORDION ===== */

@@ -20,6 +20,7 @@ import DistinctiveVoyageSailings from "./pages/DistinctiveVoyageSailings/Distinc
 import OrientExpress from "./pages/OrientExpress/OrientExpress";
 import TripToJapan from "./pages/TripToJapan/TripToJapan";
 import FirstTimeJapan from "./pages/FirstTimeJapan/FirstTimeJapan";
+import BestTimeJapan from "./pages/BestTimeVisitJapan/Besttimejapan";
 
 function App() {
   return (
@@ -85,6 +86,10 @@ function App() {
           <Route
             path="/first-time-japan-itinerary"
             element={<FirstTimeJapan />}
+          ></Route>
+          <Route
+            path="/best-time-to-visit-japan"
+            element={<BestTimeJapan />}
           ></Route>
         </Routes>
       </BrowserRouter>

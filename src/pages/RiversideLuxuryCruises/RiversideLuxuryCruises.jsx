@@ -923,7 +923,6 @@ const RiversideLuxuryCruises = () => {
       </section>
 
       {/* ===== RIVERSIDE EXPERIENCE IMAGE SHOWCASE ===== */}
-      {/* ===== CENTERED SHOWCASE WITH HOVER OVERLAY ===== */}
       <section className="riv_showcase_modern_reveal">
         <div className="riv_container_main">
           {/* HEADER (OUTSIDE IMAGE) */}
