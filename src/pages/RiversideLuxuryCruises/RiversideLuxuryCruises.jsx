@@ -5,8 +5,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import {
   Calendar,
   MapPin,
-  ChevronDown,
-  ChevronUp,
   Award,
   Users,
   Star,
@@ -17,17 +15,14 @@ import {
   Minus,
 } from "lucide-react";
 import ProfileImage from "../../assets/image.jpg";
-import ImageGellery1 from "../../assets/RiversideLuxuryCruises/Riversideimage1.jpg";
-import ImageGellery2 from "../../assets/RiversideLuxuryCruises/Riversideimage2.jpg";
-import ImageGellery3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.jpg";
-import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.jpg";
-import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.jpg";
-import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.jpg";
-import ImageGellery8 from "../../assets/RiversideLuxuryCruises/Riversideimage8.jpg";
-import ImageGellery9 from "../../assets/RiversideLuxuryCruises/Riversideimage9.jpg";
-import ImageGellery10 from "../../assets/RiversideLuxuryCruises/Riversideimage10.jpg";
-import ImageGellery11 from "../../assets/RiversideLuxuryCruises/Riversideimage11.jpg";
-import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.jpeg";
+import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.webp";
+import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.webp";
+import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.webp";
+import ImageGellery8 from "../../assets/RiversideLuxuryCruises/Riversideimage8.webp";
+import ImageGellery9 from "../../assets/RiversideLuxuryCruises/Riversideimage9.webp";
+import ImageGellery10 from "../../assets/RiversideLuxuryCruises/Riversideimage10.webp";
+import ImageGellery11 from "../../assets/RiversideLuxuryCruises/Riversideimage11.webp";
+import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.webp";
 
 const schemaData = {
   "@context": "https://schema.org",

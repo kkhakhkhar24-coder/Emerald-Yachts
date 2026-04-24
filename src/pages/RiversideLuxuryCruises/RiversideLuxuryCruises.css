@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 
 /* ========================================
    BASE & CONTAINER
@@ -252,15 +252,15 @@
 
   0%,
   100% {
-    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage1.jpg');
+    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage1.webp');
   }
 
   33% {
-    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage2.jpg');
+    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage2.webp');
   }
 
   66% {
-    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage3.jpg');
+    background-image: url('../../assets/RiversideLuxuryCruises/Riversideimage3.webp');
   }
 }
 
