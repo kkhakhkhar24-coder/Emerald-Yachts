@@ -211,14 +211,13 @@ const BestTimeJapan = () => {
             Most people chase cherry blossoms. The smartest travelers chase
             timing.
           </p>
+          <p>
+            Most people think the best time to visit Japan is cherry blossom
+            season. They are not wrong. But they are also not entirely right.
+          </p>
 
           {readMore && (
             <>
-              <p>
-                Most people think the best time to visit Japan is cherry blossom
-                season. They are not wrong. But they are also not entirely
-                right.
-              </p>
               <p>
                 After living in Japan and returning year after year, I can tell
                 you this: the best time to visit Japan depends entirely on how
@@ -295,7 +294,7 @@ const BestTimeJapan = () => {
       <section className="BTJapan_about_section">
         <div className="BTJapan_about_inner">
           <span className="BTJapan_section_badge">Quick Answer</span>
-          <h2>Best Time to Visit Japan (Quick Expert Answer)</h2>
+          <h2>Best Time to Visit Japan</h2>
           <p>The best time to visit Japan depends on your priorities:</p>
           <ul className="BTJapan_quick_list">
             <li>March to April for cherry blossoms</li>
@@ -312,73 +311,95 @@ const BestTimeJapan = () => {
         <div className="BTJapan_quick_answer_v2_inner">
           <span className="BTJapan_section_badge">Expert Take</span>
           <h2>What Is the Best Time to Visit Japan?</h2>
-          <ul className="BTJapan_v2_list">
-            <li>Late March to early April for cherry blossoms</li>
-            <li>October to November for fall foliage</li>
-            <li className="BTJapan_v2_highlight">
-              May and October for the best overall experience
-            </li>
-          </ul>
+          <div className="BTJapan_v2_grid">
+            <div className="BTJapan_v2_card">
+              <div className="BTJapan_v2_image">
+                <img src={BTJimage1} alt="Cherry blossoms in Japan" />
+              </div>
+              <div className="BTJapan_v2_content">
+                <p>Late March to early April for cherry blossoms</p>
+              </div>
+            </div>
+            <div className="BTJapan_v2_card">
+              <div className="BTJapan_v2_image">
+                <img src={BTJimage2} alt="Fall foliage in Japan" />
+              </div>
+              <div className="BTJapan_v2_content">
+                <p>October to November for fall foliage</p>
+              </div>
+            </div>
+            <div className="BTJapan_v2_card BTJapan_v2_card--highlight">
+              <div className="BTJapan_v2_image">
+                <img src={BTJimage3} alt="Best balance in Japan" />
+              </div>
+              <div className="BTJapan_v2_content">
+                <p>May and October for the best overall experience</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ===== SEASONS AT A GLANCE ===== */}
-      <section className="BTJapan_summary_10s_section">
-        <div className="BTJapan_summary_10s_inner">
-          <div className="BTJapan_summary_grid">
-            <div className="BTJapan_summary_text_content">
-              <span className="BTJapan_section_badge">Season Overview</span>
-              <h2>Japan Travel Seasons at a Glance</h2>
-              <div className="BTJapan_summary_10s_content">
-                <div className="BTJapan_seasons_table">
-                  {[
-                    {
-                      season: "Spring",
-                      months: "March to May",
-                      pros: "Cherry blossoms, mild weather",
-                      cons: "Crowds, high prices",
-                      best: "First-time visitors",
-                    },
-                    {
-                      season: "Summer",
-                      months: "June to August",
-                      pros: "Festivals, food, energy",
-                      cons: "Heat, humidity",
-                      best: "Culture and food lovers",
-                    },
-                    {
-                      season: "Fall",
-                      months: "Sept to November",
-                      pros: "Foliage, ideal weather",
-                      cons: "Moderate crowds",
-                      best: "Luxury travelers",
-                    },
-                    {
-                      season: "Winter",
-                      months: "December to February",
-                      pros: "Snow, fewer tourists",
-                      cons: "Cold",
-                      best: "Ski and onsen",
-                    },
-                  ].map((row) => (
-                    <div className="BTJapan_season_row" key={row.season}>
-                      <div className="BTJapan_season_name">{row.season}</div>
-                      <div className="BTJapan_season_details">
-                        <span className="BTJapan_season_months">
-                          {row.months}
-                        </span>
-                        <span className="BTJapan_season_best">
-                          Best for: {row.best}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="BTJapan_summary_image_container">
-              <img src={BTJimage1} alt="Japan seasonal landscape" />
-            </div>
+      <section className="BTJapan_glance">
+        <div className="BTJapan_glance_inner">
+          <span className="BTJapan_section_badge">Season Overview</span>
+          <h2>Japan Travel Seasons at a Glance</h2>
+
+          <div className="BTJapan_glance_table_wrap">
+            <table className="BTJapan_glance_table">
+              <thead>
+                <tr>
+                  <th className="BTJapan_glance_th BTJapan_glance_th--feature">
+                    Feature
+                  </th>
+                  <th className="BTJapan_glance_th">Spring</th>
+                  <th className="BTJapan_glance_th">Summer</th>
+                  <th className="BTJapan_glance_th">Fall</th>
+                  <th className="BTJapan_glance_th">Winter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="BTJapan_glance_row">
+                  <td className="BTJapan_glance_td BTJapan_glance_td--label">
+                    Months
+                  </td>
+                  <td className="BTJapan_glance_td">March to May</td>
+                  <td className="BTJapan_glance_td">June to August</td>
+                  <td className="BTJapan_glance_td">Sept to November</td>
+                  <td className="BTJapan_glance_td">December to February</td>
+                </tr>
+                <tr className="BTJapan_glance_row BTJapan_glance_row--alt">
+                  <td className="BTJapan_glance_td BTJapan_glance_td--label">
+                    Pros
+                  </td>
+                  <td className="BTJapan_glance_td">
+                    Cherry blossoms, mild weather
+                  </td>
+                  <td className="BTJapan_glance_td">Festivals, food, energy</td>
+                  <td className="BTJapan_glance_td">Foliage, ideal weather</td>
+                  <td className="BTJapan_glance_td">Snow, fewer tourists</td>
+                </tr>
+                <tr className="BTJapan_glance_row">
+                  <td className="BTJapan_glance_td BTJapan_glance_td--label">
+                    Cons
+                  </td>
+                  <td className="BTJapan_glance_td">Crowds, high prices</td>
+                  <td className="BTJapan_glance_td">Heat, humidity</td>
+                  <td className="BTJapan_glance_td">Moderate crowds</td>
+                  <td className="BTJapan_glance_td">Cold</td>
+                </tr>
+                <tr className="BTJapan_glance_row BTJapan_glance_row--alt">
+                  <td className="BTJapan_glance_td BTJapan_glance_td--label">
+                    Best For
+                  </td>
+                  <td className="BTJapan_glance_td">First-time visitors</td>
+                  <td className="BTJapan_glance_td">Culture and food lovers</td>
+                  <td className="BTJapan_glance_td">Luxury travelers</td>
+                  <td className="BTJapan_glance_td">Ski and onsen</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -387,7 +408,9 @@ const BestTimeJapan = () => {
       <section className="BTJapan_goals_section">
         <div className="BTJapan_goals_inner">
           <span className="BTJapan_section_badge">Travel Goals</span>
-          <h2>Best Time to Visit Japan Based on Your Travel Goals</h2>
+          <h2>
+            Best Time to Visit Japan <br /> Based on Your Travel Goals
+          </h2>
           <div className="BTJapan_goals_grid">
             {[
               {
@@ -782,19 +805,29 @@ const BestTimeJapan = () => {
       {/* ===== CLIENT INSIGHTS ===== */}
       <section className="BTJapan_regret_section">
         <div className="BTJapan_regret_inner">
-          <span className="BTJapan_section_badge">What I See</span>
-          <h2>What I See With Clients Every Year</h2>
-          <div className="BTJapan_regret_content">
-            <p className="BTJapan_regret_highlight">
-              The difference is the planning.
-            </p>
-            <p>
-              Every year, I see travelers who book too late for cherry blossom
-              season and miss it entirely. I see travelers overpay for hotels
-              because they did not understand timing. I see travelers try to
-              move too quickly through Japan during peak periods and feel
-              overwhelmed.
-            </p>
+          <div className="BTJapan_regret_grid">
+            <div className="BTJapan_regret_text">
+              <span className="BTJapan_section_badge">Expert Insight</span>
+              <h2>What I See With Clients Every Year</h2>
+              <div className="BTJapan_regret_content">
+                <p className="BTJapan_regret_highlight">
+                  "The difference is the planning."
+                </p>
+                <p>
+                  Every year, I see travelers who book too late for cherry
+                  blossom season and miss it entirely. I see travelers overpay
+                  for hotels because they did not understand timing. I see
+                  travelers try to move too quickly through Japan during peak
+                  periods and feel overwhelmed.
+                </p>
+              </div>
+            </div>
+            <div className="BTJapan_regret_image_container">
+              <div className="BTJapan_regret_image_wrapper">
+                <img src={BTJimage1} alt="Japan Travel Planning" />
+                <div className="BTJapan_regret_badge">Expert Guidance</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -830,27 +863,18 @@ const BestTimeJapan = () => {
 
           <div className="BTJapan_insights_grid">
             <div className="BTJapan_insight_card">
-              <div className="BTJapan_insight_icon">
-                <Flower2 size={24} />
-              </div>
               <p>
                 If I had to choose, it would not be peak cherry blossom season.
                 It would be May or October.
               </p>
             </div>
             <div className="BTJapan_insight_card">
-              <div className="BTJapan_insight_icon">
-                <Star size={24} />
-              </div>
               <p>
                 You still get beauty, but you gain something more important:
                 access, ease, and flow.
               </p>
             </div>
             <div className="BTJapan_insight_card BTJapan_insight_card--highlight">
-              <div className="BTJapan_insight_icon">
-                <Compass size={24} />
-              </div>
               <p>
                 Japan is not just about what you see. It is about how you
                 experience it.
@@ -984,43 +1008,69 @@ const BestTimeJapan = () => {
       </section>
 
       {/* ===== CTA ===== */}
-      <section className="BTJapan_cta_section">
-        <div className="BTJapan_cta_background">
-          <img src={BTJimage3} alt="Atmospheric Japan street" />
-          <div className="BTJapan_cta_overlay"></div>
+      <section className="BTJapan_cta_premium">
+        {/* Background Layer */}
+        <div className="BTJapan_cta_bg_wrapper">
+          <img
+            src={BTJimage3}
+            alt="Atmospheric Japan"
+            className="BTJapan_parallax_bg"
+          />
+          <div className="BTJapan_premium_overlay"></div>
         </div>
 
-        <div className="BTJapan_cta_inner">
-          <div className="BTJapan_cta_card">
-            <span className="BTJapan_section_badge">Get Started</span>
-            <h2>Planning Japan the Right Way Matters</h2>
-            <p className="BTJapan_cta_intro">
-              We help you choose the right season, avoid costly mistakes, secure
-              the best hotels, and build seamless itineraries.
-            </p>
-            <div className="BTJapan_cta_content_grid">
-              <ul className="BTJapan_cta_list">
-                <li>
-                  <span className="BTJapan_cta_dot"></span> Right Season
-                  Selection
-                </li>
-                <li>
-                  <span className="BTJapan_cta_dot"></span> Best Hotel Access
-                </li>
-                <li>
-                  <span className="BTJapan_cta_dot"></span> Seamless Logistics
-                  &amp; Flow
-                </li>
-                <li>
-                  <span className="BTJapan_cta_dot"></span> End-to-End Planning
-                  Support
-                </li>
-              </ul>
-            </div>
-            <div className="BTJapan_cta_buttons">
-              <button className="BTJapan_cta_primary_btn">
+        <div className="BTJapan_cta_container">
+          <div className="BTJapan_cta_main_grid">
+            {/* Left side: Editorial Text */}
+            <div className="BTJapan_text_content">
+              <span className="BTJapan_premium_badge">Get Started</span>
+              <h2 className="BTJapan_premium_h2">
+                Planning Japan <br />
+                <span className="light_serif">The Right Way</span> Matters
+              </h2>
+              <p className="BTJapan_premium_p">
+                We help you choose the right season, avoid costly mistakes,
+                secure the best hotels, and build seamless itineraries.
+              </p>
+              <button className="BTJapan_premium_main_btn">
                 Plan My Japan Trip
               </button>
+            </div>
+
+            {/* Right side: Glass Benefit Card */}
+            <div className="BTJapan_feature_side">
+              <div className="BTJapan_glass_card">
+                <ul className="BTJapan_premium_list">
+                  <li>
+                    <div className="list_num">01</div>
+                    <div className="list_text">
+                      <strong>Right Season</strong>
+                      <span>Selection</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_num">02</div>
+                    <div className="list_text">
+                      <strong>Best Hotel Access</strong>
+                      <span>Curated Stays</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_num">03</div>
+                    <div className="list_text">
+                      <strong>Seamless Logistics</strong>
+                      <span>& Flow</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_num">04</div>
+                    <div className="list_text">
+                      <strong>End-to-End Planning</strong>
+                      <span>Support</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

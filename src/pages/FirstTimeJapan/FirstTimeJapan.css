@@ -2054,17 +2054,9 @@
   .FTJapan_hero_content p {
     font-size: 17px;
   }
-  .FTJapan_about_inner h2,
-  .FTJapan_geo_inner h2,
-  .FTJapan_itinerary_header h2,
-  .FTJapan_experience_text h2,
-  .FTJapan_pacing_inner h2,
-  .FTJapan_cost_inner h2,
-  .FTJapan_mistakes_inner h2,
-  .FTJapan_cta_inner h2,
-  .FTJapan_links_inner h2,
-  .FTJapan_faq_inner h2 {
-    font-size: 28px;
+  section[class*="FTJapan_"] h2,
+  .FTJapan_glance h2 {
+    font-size: 28px !important;
   }
   .FTJapan_expert_content h2 {
     font-size: 28px;
@@ -2202,17 +2194,9 @@
   .FTJapan_expert_highlight {
     font-size: 16px;
   }
-  .FTJapan_about_inner h2,
-  .FTJapan_geo_inner h2,
-  .FTJapan_itinerary_header h2,
-  .FTJapan_experience_text h2,
-  .FTJapan_pacing_inner h2,
-  .FTJapan_cost_inner h2,
-  .FTJapan_mistakes_inner h2,
-  .FTJapan_cta_inner h2,
-  .FTJapan_links_inner h2,
-  .FTJapan_faq_inner h2 {
-    font-size: 24px;
+  section[class*="FTJapan_"] h2,
+  .FTJapan_glance h2 {
+    font-size: 24px !important;
   }
   .FTJapan_about_inner p {
     font-size: 16px;
