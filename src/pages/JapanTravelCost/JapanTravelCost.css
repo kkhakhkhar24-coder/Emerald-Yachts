@@ -1,25 +1,3 @@
-﻿/* ============================================================
-   JAPAN TRAVEL COST — SECTION-WISE CSS
-   Prefix: jtc-
-   
-   COLOR PALETTE:
-   --navy: #274472
-   --navy-light: #274472cc
-   --bg-white: #ffffff
-   --bg-soft: rgb(231, 243, 245)
-   --bg-dark: #0f1c2e
-   --bg-dark2: #1c2f4a
-   
-   TYPOGRAPHY:
-   Desktop (1025px+): h1: 60px, h2: 48px, p: 18px
-   Tablet (769px-1024px): h1: 32px, h2: 28px, p: 17px
-   Mobile (<=768px): h1: 26px, h2: 24px, p: 16px
-   
-   PADDING:
-   Desktop (1025px+): 60px 20px
-   Tablet & Mobile (<=1024px): 50px 15px
-   ============================================================ */
-
 /* ============================================================
    VARIABLES
    ============================================================ */
@@ -512,6 +490,162 @@
 /* ============================================================
    SECTION 2 — BUDGET COMPARISON (3-COL CARDS)
    ============================================================ */
+
+.jtc-itin-split-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.jtc-itin-split-video {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jtc-video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.2);
+}
+
+.jtc-video-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--navy);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.jtc-split-video-caption {
+    padding: 10px 5px;
+}
+
+.jtc-itin-vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.jtc-itin-row-card {
+    background: var(--bg-white);
+    padding: 24px 30px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.jtc-itin-row-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1);
+    border-color: var(--navy);
+}
+
+.jtc-itin-row-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--bg-soft);
+    color: var(--navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.jtc-itin-row-card:hover .jtc-itin-row-icon {
+    background: var(--navy);
+    color: #ffffff;
+}
+
+.jtc-row-navy {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.jtc-row-navy .jtc-itin-row-icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.jtc-gold {
+    color: #d4af37 !important;
+}
+
+.jtc-itin-row-info {
+    text-align: left;
+}
+
+.jtc-itin-row-info .jtc-h3 {
+    font-size: 20px !important;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.jtc-fs-sm {
+    font-size: 14px !important;
+}
+
+.jtc-itin-row-price .jtc-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    white-space: nowrap;
+}
+
+.jtc-row-navy:hover {
+    background: var(--bg-dark2);
+}
+
+@media (max-width: 1024px) {
+    .jtc-itin-split-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jtc-itin-row-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 12px;
+    }
+    
+    .jtc-itin-row-info {
+        text-align: center;
+    }
+    
+    .jtc-itin-row-info .jtc-h3 {
+        text-align: center !important;
+        margin-bottom: 5px;
+    }
+
+    .jtc-itin-row-price {
+        margin-top: 5px;
+    }
+}
+
 .jtc-card {
     padding: 40px 36px;
     border-radius: 10px;
@@ -3872,10 +4006,12 @@
         font-size: 14px !important;
     }
 }
+
 /* --- MEDIA COMPONENTS (Images & Videos) --- */
 .jtc-video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 12px;
@@ -3940,7 +4076,8 @@
     align-items: center;
 }
 
-.jtc-media-card, .jtc-video-card {
+.jtc-media-card,
+.jtc-video-card {
     width: 100%;
     border-radius: 16px;
     overflow: hidden;
@@ -3952,9 +4089,208 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .jtc-media-row {
         flex-direction: column;
     }
 }
 
+
+/* ============================================================
+   MEDIA COMPONENTS (NEW)
+   ============================================================ */
+.jtc-media-spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 40px;
+}
+
+.jtc-media-img-box {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.jtc-media-video-box {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+.jtc-fluid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.jtc-fluid-img:hover {
+    transform: scale(1.05);
+}
+
+.jtc-video-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.15);
+}
+
+.jtc-full-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.jtc-rounded-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.jtc-mt-xl {
+    margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+    .jtc-media-spread {
+        grid-template-columns: 1fr;
+    }
+
+    .jtc-media-video-box {
+        min-height: 300px;
+    }
+
+    .jtc-video-container iframe {
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .jtc-video-container iframe {
+        height: 250px !important;
+    }
+}
+
+/* ============================================================
+   SECTION 19 — EXPERT TAKE (NEW LOOK)
+   ============================================================ */
+.jtc-bg-dark {
+    background-color: var(--bg-dark) !important;
+}
+
+.jtc-closing-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.jtc-closing-verdict {
+    padding: 60px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jtc-glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.jtc-icon-gold {
+    color: #d4af37;
+}
+
+.jtc-expert-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jtc-badge-line {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+}
+
+.jtc-closing-warning {
+    padding: 50px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jtc-warning-list-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jtc-warning-list-new li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.jtc-theater-frame {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jtc-theater-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.jtc-video-theater {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+    border: 4px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1024px) {
+    .jtc-closing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .jtc-closing-verdict {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jtc-video-theater {
+        border-radius: 12px;
+        border-width: 2px;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    .jtc-theater-frame {
+        padding: 0 10px;
+    }
+}

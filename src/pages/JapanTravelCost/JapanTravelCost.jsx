@@ -173,6 +173,32 @@ function JapanTravelCost() {
                 </div>
             </section>
 
+            {/* NEW SECTION: VISUAL ATMOSPHERE */}
+            <section className="jtc-section jtc-bg-soft">
+                <div className="jtc-inner">
+                    <div className="jtc-media-spread">
+                        <div className="jtc-media-img-box">
+                            <img
+                                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop"
+                                alt="Tokyo Skyline at Night"
+                                className="jtc-fluid-img"
+                            />
+                        </div>
+                        <div className="jtc-media-video-box">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/HsX79uNVz6A"
+                                title="Japan Travel Guide"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* SECTION 2: BUDGET COMPARISON */}
             <section className="jtc-section jtc-bg-white">
                 <div className="jtc-inner">
@@ -365,43 +391,88 @@ function JapanTravelCost() {
                         <div className="jtc-bar"></div>
                     </div>
 
-                    <div className="jtc-itin-grid">
-                        {/* City-focused */}
-                        <div className="jtc-itin-new-card">
-                            <div className="jtc-flex jtc-gap-md jtc-items-center">
-                                <Building2 size={24} className="jtc-icon-navy" />
-                                <h3 className="jtc-h3 jtc-mb-0">City-focused (Tokyo and Kyoto)</h3>
+                    <div className="jtc-itin-split-layout jtc-mt-lg">
+                        {/* LEFT SIDE: VIDEO */}
+                        <div className="jtc-itin-split-video">
+                            <div className="jtc-video-wrapper">
+                                <div className="jtc-video-tag">Expert Video Guide</div>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/GJ0jP3NbNs4"
+                                    title="10-Day Japan Itinerary"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
                             </div>
-                            <p className="jtc-price-tag jtc-mt-sm">$5,000 to $8,000 per person</p>
+                            <div className="jtc-split-video-caption">
+                                <p className="jtc-p jtc-italic">"A well-structured itinerary is the backbone of a successful Japan trip. Watch our masterclass on route optimization."</p>
+                            </div>
                         </div>
 
-                        {/* Multi-region */}
-                        <div className="jtc-itin-new-card">
-                            <div className="jtc-flex jtc-gap-md jtc-items-center">
-                                <MapPin size={24} className="jtc-icon-navy" />
-                                <h3 className="jtc-h3 jtc-mb-0">Multi-region (Tokyo, Kyoto, Osaka, Hakone)</h3>
-                            </div>
-                            <p className="jtc-price-tag jtc-mt-sm">$6,500 to $12,000</p>
-                        </div>
+                        {/* RIGHT SIDE: CONTENT */}
+                        <div className="jtc-itin-split-content">
+                            <div className="jtc-itin-vertical-list">
+                                {/* City-focused */}
+                                <div className="jtc-itin-row-card">
+                                    <div className="jtc-itin-row-icon">
+                                        <Building2 size={20} />
+                                    </div>
+                                    <div className="jtc-itin-row-info">
+                                        <h3 className="jtc-h3">City-focused</h3>
+                                        <p className="jtc-p jtc-fs-sm">Tokyo and Kyoto focus</p>
+                                    </div>
+                                    <div className="jtc-itin-row-price">
+                                        <span className="jtc-price">$5,000 – $8,000</span>
+                                    </div>
+                                </div>
 
-                        {/* Luxury curated */}
-                        <div className="jtc-itin-new-card jtc-card-navy">
-                            <div className="jtc-flex jtc-gap-md jtc-items-center">
-                                <Crown size={24} className="jtc-white" />
-                                <h3 className="jtc-h3 jtc-white jtc-mb-0">Luxury curated itinerary</h3>
-                            </div>
-                            <p className="jtc-price-tag jtc-white jtc-mt-sm">$12,000 to $25,000+</p>
-                        </div>
+                                {/* Multi-region */}
+                                <div className="jtc-itin-row-card">
+                                    <div className="jtc-itin-row-icon">
+                                        <MapPin size={20} />
+                                    </div>
+                                    <div className="jtc-itin-row-info">
+                                        <h3 className="jtc-h3">Multi-region</h3>
+                                        <p className="jtc-p jtc-fs-sm">Tokyo, Kyoto, Osaka, Hakone</p>
+                                    </div>
+                                    <div className="jtc-itin-row-price">
+                                        <span className="jtc-price">$6,500 – $12,000</span>
+                                    </div>
+                                </div>
 
-                        {/* Cruise */}
-                        <div className="jtc-itin-new-card">
-                            <div className="jtc-flex jtc-gap-md jtc-items-center">
-                                <Ship size={24} className="jtc-icon-navy" />
-                                <h3 className="jtc-h3 jtc-mb-0">Cruise and land combination</h3>
+                                {/* Luxury curated */}
+                                <div className="jtc-itin-row-card jtc-row-navy">
+                                    <div className="jtc-itin-row-icon jtc-gold">
+                                        <Crown size={20} />
+                                    </div>
+                                    <div className="jtc-itin-row-info">
+                                        <h3 className="jtc-h3 jtc-white">Luxury Curated</h3>
+                                        <p className="jtc-p jtc-white jtc-fs-sm">Exclusive Cultural Access</p>
+                                    </div>
+                                    <div className="jtc-itin-row-price">
+                                        <span className="jtc-price jtc-white">$12,000 – $25,000+</span>
+                                    </div>
+                                </div>
+
+                                {/* Cruise */}
+                                <div className="jtc-itin-row-card">
+                                    <div className="jtc-itin-row-icon">
+                                        <Ship size={20} />
+                                    </div>
+                                    <div className="jtc-itin-row-info">
+                                        <h3 className="jtc-h3">Cruise & Land</h3>
+                                        <p className="jtc-p jtc-fs-sm">Seamless Combined Travel</p>
+                                    </div>
+                                    <div className="jtc-itin-row-price">
+                                        <span className="jtc-price">$8,000 – $18,000</span>
+                                    </div>
+                                </div>
                             </div>
-                            <p className="jtc-price-tag jtc-mt-sm">$8,000 to $18,000</p>
                         </div>
                     </div>
+
 
                     <div className="jtc-editorial-box jtc-mt-lg jtc-center">
                         <p className="jtc-p">If you are planning your route, start with our first-time Japan itinerary or compare options in our Japan land vs cruise guide.</p>
@@ -708,6 +779,14 @@ function JapanTravelCost() {
                             </div>
                         </div>
 
+                        <div className="jtc-food-gallery jtc-mt-lg">
+                            <img
+                                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2070&auto=format&fit=crop"
+                                alt="Sushi Fine Dining"
+                                className="jtc-fluid-img"
+                            />
+                        </div>
+
                         <div className="jtc-editorial-box jtc-mt-lg jtc-center">
                             <p className="jtc-p">Some of the best meals in Japan cost less than a coffee in major U.S. cities.</p>
                         </div>
@@ -829,6 +908,22 @@ function JapanTravelCost() {
                                 <p className="jtc-p jtc-bold jtc-fs-sm jtc-mt-auto">Your choices shape your cost more than the destination itself.</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="jtc-video-container jtc-mt-xl">
+                        <div className="jtc-hdr">
+                            <h2 className="jtc-h2">Understanding the Budget</h2>
+                            <div className="jtc-bar"></div>
+                        </div>
+                        <iframe
+                            width="100%"
+                            height="500"
+                            src="https://www.youtube.com/embed/Eqe7atICNy0"
+                            title="Japan Budget Guide"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>
@@ -1006,26 +1101,51 @@ function JapanTravelCost() {
             </section>
 
             {/* SECTION 19: EXPERT TAKE */}
-            <section className="jtc-section jtc-bg-soft">
+            <section className="jtc-section jtc-bg-dark">
                 <div className="jtc-inner">
                     <div className="jtc-hdr">
-                        <h2 className="jtc-h2">My Expert Take</h2>
-                        <div className="jtc-bar"></div>
+                        <h2 className="jtc-h2 jtc-white">My Expert Take</h2>
+                        <div className="jtc-bar jtc-bg-white"></div>
                     </div>
-                    <div className="jtc-content-box jtc-mt-lg">
-                        <div className="jtc-expert-insight-panel">
-                            <div className="jtc-expert-main">
-                                <Award size={48} className="jtc-icon-navy jtc-mb-lg" />
-                                <p className="jtc-h3 jtc-navy jtc-mb-lg">Japan is not expensive when planned correctly.</p>
-                                <p className="jtc-p jtc-bold jtc-italic jtc-navy jtc-mb-0">"The difference is knowledge and execution."</p>
+                    
+                    <div className="jtc-expert-closing jtc-mt-lg">
+                        <div className="jtc-closing-grid">
+                            {/* Left: The Verdict */}
+                            <div className="jtc-closing-verdict jtc-bg-white-o jtc-glass">
+                                <Award size={40} className="jtc-icon-gold jtc-mb-md" />
+                                <p className="jtc-h3 jtc-white jtc-mb-lg">Japan is not expensive when planned correctly.</p>
+                                <p className="jtc-p jtc-white jtc-italic jtc-mb-0">
+                                    "The difference is knowledge and execution."
+                                </p>
                             </div>
-                            <div className="jtc-expert-warning jtc-bg-navy jtc-white-all">
-                                <p className="jtc-p jtc-bold jtc-mb-md jtc-white">It becomes expensive when:</p>
-                                <ul className="jtc-warning-checklist">
-                                    <li><AlertTriangle size={18} /> <span>You book too late</span></li>
-                                    <li><AlertTriangle size={18} /> <span>You travel at the wrong time</span></li>
-                                    <li><AlertTriangle size={18} /> <span>You do not understand the system</span></li>
+
+                            {/* Right: The Warning */}
+                            <div className="jtc-closing-warning jtc-bg-navy jtc-border-white-o">
+                                <h4 className="jtc-h3 jtc-white jtc-mb-lg">It becomes expensive when:</h4>
+                                <ul className="jtc-warning-list-new">
+                                    <li><CheckCircle2 size={18} className="jtc-icon-gold" /> <span>You book too late</span></li>
+                                    <li><CheckCircle2 size={18} className="jtc-icon-gold" /> <span>You travel at the wrong time</span></li>
+                                    <li><CheckCircle2 size={18} className="jtc-icon-gold" /> <span>You do not understand the system</span></li>
                                 </ul>
+                            </div>
+                        </div>
+
+                        {/* Video in Theater Mode */}
+                        <div className="jtc-theater-frame jtc-mt-xl">
+                            <div className="jtc-theater-header">
+                                <span className="jtc-eyebrow jtc-white">Curated Masterclass</span>
+                                <h4 className="jtc-h2 jtc-white" style={{ fontSize: '24px' }}>Deep Dive: The Economics of Japan Travel</h4>
+                            </div>
+                            <div className="jtc-video-theater">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/OShhce4kPrk"
+                                    title="Expert Insights"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
                             </div>
                         </div>
                     </div>
