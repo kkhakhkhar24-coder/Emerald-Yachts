@@ -19,12 +19,12 @@ import {
 } from "lucide-react";
 
 // Import all Drake Passage images from assets folder
-import section1_Image from "../../assets/DrakePassage/section1_image.jpeg";
-import section2_Image1 from "../../assets/DrakePassage/section2_image1.jpg";
-import section2_Image2 from "../../assets/DrakePassage/section2_image2.jpg";
+import section1_Image from "../../assets/DrakePassage/section1_image.webp";
+import section2_Image1 from "../../assets/DrakePassage/section2_image1.webp";
+import section2_Image2 from "../../assets/DrakePassage/section2_image2.webp";
 import section3_Image1 from "../../assets/DrakePassage/section3_image1.webp";
-import section5_Image1 from "../../assets/DrakePassage/section5_image1.jpg";
-import section5_Image2 from "../../assets/DrakePassage/section5_image2.jpg";
+import section5_Image1 from "../../assets/DrakePassage/section5_image1.webp";
+import section5_Image2 from "../../assets/DrakePassage/section5_image2.webp";
 import section6_Image1 from "../../assets/DrakePassage/section06_image1.webp";
 import section6_Image2 from "../../assets/DrakePassage/section06_image2.webp";
 import section8_Image1 from "../../assets/DrakePassage/section8_image1.webp";

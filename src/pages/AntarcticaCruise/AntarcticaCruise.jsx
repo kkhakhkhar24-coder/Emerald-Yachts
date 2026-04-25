@@ -6,20 +6,20 @@ import "../AntarcticaCruise/AntarcticaCruise.css";
 import myImage from "../../assets/image.jpg";
 import { Award, Globe, Medal, Shield, Star } from "lucide-react";
 
-import AntaSilder1 from "../../assets/antarctica-cruise-cost/AntaSilder1.jpg";
-import AntaSilder2 from "../../assets/antarctica-cruise-cost/AntaSilder2.jpg";
-import AntaSilder3 from "../../assets/antarctica-cruise-cost/AntaSilder3.jpg";
-import AntaSilder4 from "../../assets/antarctica-cruise-cost/AntaSilder4.jpg";
-import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.jpg";
-import AntaSilder6 from "../../assets/antarctica-cruise-cost/seal-on-antarctic-ice.png";
-import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.jpg";
-import AntaSilder8 from "../../assets/antarctica-cruise-cost/AntaSilder8.png";
-import AntaSilder9 from "../../assets/antarctica-cruise-cost/AntaSilder9.png";
+import AntaSilder1 from "../../assets/antarctica-cruise-cost/AntaSilder1.webp";
+import AntaSilder2 from "../../assets/antarctica-cruise-cost/AntaSilder2.webp";
+import AntaSilder3 from "../../assets/antarctica-cruise-cost/AntaSilder3.webp";
+import AntaSilder4 from "../../assets/antarctica-cruise-cost/AntaSilder4.webp";
+import AntaSilder5 from "../../assets/antarctica-cruise-cost/AntaSilder5.webp";
+import AntaSilder6 from "../../assets/antarctica-cruise-cost/seal-on-antarctic-ice.webp";
+import AntaSilder7 from "../../assets/antarctica-cruise-cost/AntaSilder7.webp";
+import AntaSilder8 from "../../assets/antarctica-cruise-cost/AntaSilder8.webp";
+import AntaSilder9 from "../../assets/antarctica-cruise-cost/AntaSilder9.webp";
 
-import GalleryIceFields from "../../assets/antarctica-cruise-cost/antarctica-ice-fields.png";
-import GalleryIceberg from "../../assets/antarctica-cruise-cost/antarctica-iceberg-reflection.png";
-import GalleryPenguins from "../../assets/antarctica-cruise-cost/penguins-in-antarctica.png";
-import GalleryWhale from "../../assets/antarctica-cruise-cost/whale-diving-antarctica.png";
+import GalleryIceFields from "../../assets/antarctica-cruise-cost/antarctica-ice-fields.webp";
+import GalleryIceberg from "../../assets/antarctica-cruise-cost/antarctica-iceberg-reflection.webp";
+import GalleryPenguins from "../../assets/antarctica-cruise-cost/penguins-in-antarctica.webp";
+import GalleryWhale from "../../assets/antarctica-cruise-cost/whale-diving-antarctica.webp";
 
 const AntarcticaCostPage = () => {
   const [readMore, setReadMore] = useState(false);
@@ -655,7 +655,9 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 8 — WHAT IMPACTS YOUR COST ===== */}
       <section className="anta_impacts_section">
         <div className="anta_impacts_inner">
-          <h2>What Impacts Your <br /> Antarctica Cost Most?</h2>
+          <h2>
+            What Impacts Your <br /> Antarctica Cost Most?
+          </h2>
 
           <div className="anta_expert_cards">
             <div className="anta_expert_card">
@@ -699,7 +701,9 @@ const AntarcticaCostPage = () => {
       {/* ===== SECTION 9 — WHY PRICES CHANGE QUICKLY ===== */}
       <section className="anta_pricing_section">
         <div className="anta_pricing_inner">
-          <h2>Why Antarctica Pricing <br /> Changes Quickly?</h2>
+          <h2>
+            Why Antarctica Pricing <br /> Changes Quickly?
+          </h2>
 
           <div className="anta_method_steps">
             <div className="anta_method_step">

@@ -1,11 +1,12 @@
 /* ================= HERO ================= */
 .Scenic_hero_section {
   position: relative;
-  min-height: 100vh;  /* ✅ FIXED */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;  /* navbar space */
+  padding: 120px 20px 60px;
+  overflow: hidden; /* Prevent Ken Burns effect from causing horizontal scroll */
 }
 
 /* BG */
@@ -14,7 +15,17 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  transition: 1s ease;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 8s linear;
+  z-index: 0;
+  will-change: opacity, transform;
+  transform: scale(1.1);
+}
+
+.Scenic_hero_bg.active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
 }
 
 /* OVERLAY */
@@ -22,12 +33,12 @@
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
+  z-index: 2;
 }
 
-/* CONTENT */
 .Scenic_hero_content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 850px;   /* ✅ FIXED */
   text-align: center;
   color: white;
@@ -59,6 +70,12 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
+  position: relative;
+}
+
+.Scenic_page_wrapper {
+  overflow-x: hidden;
+  width: 100%;
   position: relative;
 }
 
@@ -1891,13 +1908,29 @@
   box-shadow: 0 40px 100px rgba(39, 68, 114, 0.15);
 }
 
+.Scenic_gallery_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .Scenic_gallery_slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: background-image 0.8s ease-in-out;
-  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 6s ease-out;
+  will-change: opacity, transform;
+  transform: scale(1.05);
+}
+
+.Scenic_gallery_slide.active {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
 }
 
 .Scenic_gallery_overlay {

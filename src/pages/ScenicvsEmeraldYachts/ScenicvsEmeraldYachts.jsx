@@ -1,27 +1,21 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
 import { Plus, Minus, Medal } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ScenicvsEmeraldYachts.css";
 import myImage from "../../assets/image.jpg";
-import FourthPage1 from "../../assets/FourthPage/FourthPage1.jpg";
-import FourthPage2 from "../../assets/FourthPage/FourthPage2.jpeg";
-import FourthPage3 from "../../assets/FourthPage/FourthPage3.jpg";
-import Emerald1 from "../../assets/FourthPage/Emerald1.jpg";
-import Emerald2 from "../../assets/FourthPage/Emerald2.jpg";
-import Emerald3 from "../../assets/FourthPage/Emerald3.jpg";
-import Emerald4 from "../../assets/FourthPage/Emerald4.jpg";
-import Emerald5 from "../../assets/FourthPage/Emerald5.jpg";
-import Emerald6 from "../../assets/FourthPage/Emerald6.jpg";
-import Scenic1 from "../../assets/FourthPage/Scenic1.jpg";
-import Scenic2 from "../../assets/FourthPage/Scenic2.jpg";
-import Scenic3 from "../../assets/FourthPage/Scenic3.jpg";
-import Scenic4 from "../../assets/FourthPage/Scenic4.jpg";
-import Scenic5 from "../../assets/FourthPage/Scenic5.jpg";
-import Scenic6 from "../../assets/FourthPage/Scenic6.jpg";
-import Scenicdiff from "../../assets/FourthPage/Scenicdiff.JPG";
-import Emeralddiff from "../../assets/FourthPage/Emeralddiff.jpg";
+import Emerald1 from "../../assets/FourthPage/Emerald1.webp";
+import Emerald2 from "../../assets/FourthPage/Emerald2.webp";
+import Emerald4 from "../../assets/FourthPage/Emerald4.webp";
+import Emerald5 from "../../assets/FourthPage/Emerald5.webp";
+import Emerald6 from "../../assets/FourthPage/Emerald6.webp";
+import Scenic1 from "../../assets/FourthPage/Scenic1.webp";
+import Scenic2 from "../../assets/FourthPage/Scenic2.webp";
+import Scenic3 from "../../assets/FourthPage/Scenic3.webp";
+import Scenic5 from "../../assets/FourthPage/Scenic5.webp";
+import Scenic6 from "../../assets/FourthPage/Scenic6.webp";
+import Scenicdiff from "../../assets/FourthPage/Scenicdiff.webp";
+import Emeralddiff from "../../assets/FourthPage/Emeralddiff.webp";
 
 function YachtsComparison() {
   const [readMore, setReadMore] = useState(false);
@@ -945,9 +939,8 @@ function YachtsComparison() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className={`Scenic-faq-item ${
-                  activeFaq === index ? "Scenic-active" : ""
-                }`}
+                className={`Scenic-faq-item ${activeFaq === index ? "Scenic-active" : ""
+                  }`}
                 onClick={() => toggleFaq(index)}
               >
                 <div className="Scenic-faq-question">

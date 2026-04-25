@@ -1,32 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-/* ========================================
-   BASE
-   ======================================== */
-:root {
-    --navy: #274472;
-    --navy-soft: rgba(39, 68, 114, 0.07);
-    --navy-border: rgba(39, 68, 114, 0.1);
-    --text-dark: #1a1a1a;
-    --text-body: #444;
-    --text-muted: #777;
-    --bg-white: #ffffff;
-    --bg-soft: #f5f7fb;
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Montserrat', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-body);
-    overflow-x: clip;
-    color: var(--text-dark);
-}
 
 .vik-page-wrapper {
     width: 100%;
@@ -36,194 +7,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-}
-
-/* ========================================
-   TYPOGRAPHY — RESPONSIVE
-   ======================================== */
-@media (min-width: 1024px) {
-    .vik-riv_hero_main_h1 {
-        font-size: 60px !important;
-    }
-
-    .vik-intro-heading,
-    .vik-trust-heading,
-    .vik-comparison-heading,
-    .vik-real-diff-heading,
-    .vik-pricing-heading,
-    .vik-best-for-heading,
-    .vik-mistake-heading,
-    .vik-choose-heading,
-    .vik-expert-heading,
-    .vik-choose-right-heading,
-    .vik-cta-heading,
-    .vik-about-heading,
-    .vik-lux-h2,
-    .vik-lux-faq-header .vik-lux-h2 {
-        font-size: 48px !important;
-    }
-
-    .vik-content-section p,
-    .vik-riv_hero_sub_p,
-    .vik-river-qa-main,
-    .vik-river-qa-detail,
-    .vik-intro-main-text,
-    .vik-intro-option p,
-    .vik-intro-closing,
-    .vik-trust-intro,
-    .vik-trust-point-content p,
-    .vik-comparison-cell-feature,
-    .vik-comparison-cell,
-    .vik-real-diff-text,
-    .vik-real-diff-list-item p,
-    .vik-real-diff-conclusion,
-    .vik-pricing-conclusion,
-    .vik-mistake-main-text,
-    .vik-mistake-subtext,
-    .vik-mistake-option-text,
-    .vik-mistake-conclusion,
-    .vik-choose-intro,
-    .vik-choose-list-text,
-    .vik-expert-intro,
-    .vik-expert-category-text,
-    .vik-expert-insight-text,
-    .vik-expert-insight-badge span,
-    .vik-choose-right-main-text,
-    .vik-choose-right-subtext,
-    .vik-choose-right-item-text,
-    .vik-cta-subtext,
-    .vik-about-intro,
-    .vik-about-text,
-    .vik-about-credential-text,
-    .vik-about-brand-text,
-    .vik-lux-faq-intro,
-    .vik-lux-faq-a-inner {
-        font-size: 18px !important;
-    }
-}
-
-@media (max-width: 1023px) {
-    .vik-riv_hero_main_h1 {
-        font-size: 32px !important;
-    }
-
-    .vik-intro-heading,
-    .vik-trust-heading,
-    .vik-comparison-heading,
-    .vik-real-diff-heading,
-    .vik-pricing-heading,
-    .vik-best-for-heading,
-    .vik-mistake-heading,
-    .vik-choose-heading,
-    .vik-expert-heading,
-    .vik-choose-right-heading,
-    .vik-cta-heading,
-    .vik-about-heading,
-    .vik-lux-h2,
-    .vik-lux-faq-header .vik-lux-h2 {
-        font-size: 28px !important;
-        text-align: center;
-    }
-
-    .vik-content-section p,
-    .vik-riv_hero_sub_p,
-    .vik-river-qa-main,
-    .vik-river-qa-detail,
-    .vik-intro-main-text,
-    .vik-intro-option p,
-    .vik-intro-closing,
-    .vik-trust-intro,
-    .vik-trust-point-content p,
-    .vik-comparison-cell-feature,
-    .vik-comparison-cell,
-    .vik-real-diff-text,
-    .vik-real-diff-list-item p,
-    .vik-real-diff-conclusion,
-    .vik-pricing-conclusion,
-    .vik-mistake-main-text,
-    .vik-mistake-subtext,
-    .vik-mistake-option-text,
-    .vik-mistake-conclusion,
-    .vik-choose-intro,
-    .vik-choose-list-text,
-    .vik-expert-intro,
-    .vik-expert-category-text,
-    .vik-expert-insight-text,
-    .vik-expert-insight-badge span,
-    .vik-choose-right-main-text,
-    .vik-choose-right-subtext,
-    .vik-choose-right-item-text,
-    .vik-cta-subtext,
-    .vik-about-intro,
-    .vik-about-text,
-    .vik-about-credential-text,
-    .vik-about-brand-text,
-    .vik-lux-faq-intro,
-    .vik-lux-faq-a-inner {
-        font-size: 17px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .vik-riv_hero_main_h1 {
-        font-size: 26px !important;
-    }
-
-    .vik-intro-heading,
-    .vik-trust-heading,
-    .vik-comparison-heading,
-    .vik-real-diff-heading,
-    .vik-pricing-heading,
-    .vik-best-for-heading,
-    .vik-mistake-heading,
-    .vik-choose-heading,
-    .vik-expert-heading,
-    .vik-choose-right-heading,
-    .vik-cta-heading,
-    .vik-about-heading,
-    .vik-lux-h2,
-    .vik-lux-faq-header .vik-lux-h2 {
-        font-size: 24px !important;
-        text-align: center;
-    }
-
-    .vik-content-section p,
-    .vik-riv_hero_sub_p,
-    .vik-river-qa-main,
-    .vik-river-qa-detail,
-    .vik-intro-main-text,
-    .vik-intro-option p,
-    .vik-intro-closing,
-    .vik-trust-intro,
-    .vik-trust-point-content p,
-    .vik-comparison-cell-feature,
-    .vik-comparison-cell,
-    .vik-real-diff-text,
-    .vik-real-diff-list-item p,
-    .vik-real-diff-conclusion,
-    .vik-pricing-conclusion,
-    .vik-mistake-main-text,
-    .vik-mistake-subtext,
-    .vik-mistake-option-text,
-    .vik-mistake-conclusion,
-    .vik-choose-intro,
-    .vik-choose-list-text,
-    .vik-expert-intro,
-    .vik-expert-category-text,
-    .vik-expert-insight-text,
-    .vik-expert-insight-badge span,
-    .vik-choose-right-main-text,
-    .vik-choose-right-subtext,
-    .vik-choose-right-item-text,
-    .vik-cta-subtext,
-    .vik-about-intro,
-    .vik-about-text,
-    .vik-about-credential-text,
-    .vik-about-brand-text,
-    .vik-lux-faq-intro,
-    .vik-lux-faq-a-inner {
-        font-size: 16px !important;
-    }
 }
 
 /* ========================================
@@ -257,7 +40,7 @@ body {
 .vik-lux-video-subtitle {
     font-size: 18px !important;
     line-height: 1.7 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     font-weight: 300 !important;
     margin-top: 20px;
 }
@@ -278,14 +61,6 @@ body {
     object-fit: cover;
 }
 
-@media (max-width: 1023px) {
-
-    .vik-content-section,
-    .vik-cta-section,
-    .vik-lux-video-section {
-        padding: 50px 15px;
-    }
-}
 
 /* ========================================
    SHARED SECTION HEADING STYLE
@@ -326,25 +101,38 @@ body {
 .vik-riv_hero_viewport {
     position: relative;
     min-height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 140px 40px 100px;
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    animation: riv_viking_bgSlider 18s infinite ease-in-out;
+    padding: 120px 20px 60px;
     overflow: hidden;
 }
 
-.vik-riv_hero_viewport::before {
-    content: "";
+/* BG */
+.vik-riv_hero_bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.4) 100%);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 8s linear;
+    z-index: 0;
+    will-change: opacity, transform;
+    transform: scale(1.1);
+}
+
+.vik-riv_hero_bg.vik-active {
+    opacity: 1;
     z-index: 1;
+    transform: scale(1);
+}
+
+/* OVERLAY */
+.vik-riv_hero_overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
 }
 
 /* Animated particles effect */
@@ -355,28 +143,12 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: riv_viking_snowfall 60s linear infinite;
     opacity: 0.3;
     pointer-events: none;
-    z-index: 1;
-}
-
-@keyframes riv_viking_bgSlider {
-
-    0%,
-    100% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero1.jpg');
-    }
-
-    33% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero2.jpg');
-    }
-
-    66% {
-        background-image: url('../../assets/Riverside-vs-Viking/Hero3.jpg');
-    }
+    z-index: 2;
 }
 
 @keyframes riv_viking_snowfall {
@@ -420,11 +192,9 @@ body {
     text-transform: uppercase !important;
     margin-bottom: 22px;
     display: block;
-    font-family: var(--font-body) !important;
 }
 
 .vik-riv_hero_main_h1 {
-    font-family: var(--font-display) !important;
     font-weight: 400 !important;
     line-height: 1.15 !important;
     color: #fff !important;
@@ -435,7 +205,6 @@ body {
 }
 
 .vik-riv_hero_sub_p {
-    font-family: var(--font-display) !important;
     font-style: italic !important;
     color: rgba(255, 255, 255, 0.8) !important;
     margin-bottom: 36px;
@@ -448,6 +217,7 @@ body {
 /* Read More */
 .vik-riv_hero_read_more_outer {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .vik-riv_hero_read_more_btn {
@@ -461,7 +231,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.25);
     color: #fff;
     padding: 11px 28px;
-    font-family: var(--font-body) !important;
     font-size: 13px !important;
     font-weight: 500 !important;
     letter-spacing: 0.5px !important;
@@ -519,7 +288,6 @@ body {
 }
 
 .vik-river-qa-emphasis {
-    font-family: var(--font-display) !important;
     font-size: 24px !important;
     color: #fff !important;
     font-weight: 500 !important;
@@ -554,7 +322,6 @@ body {
     letter-spacing: 1.2px !important;
     transition: all 0.3s ease;
     border-radius: 4px;
-    font-family: var(--font-body) !important;
 }
 
 .vik-riv_hero_btn_filled:hover {
@@ -575,7 +342,6 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase !important;
     border-radius: 4px;
-    font-family: var(--font-body) !important;
 }
 
 .vik-riv_hero_btn_transparent:hover {
@@ -585,26 +351,7 @@ body {
     transform: translateY(-2px);
 }
 
-@media (max-width: 1024px) {
-    .vik-riv_hero_viewport {
-        padding: 120px 20px 80px 20px;
-        min-height: 90vh;
-    }
 
-    .vik-riv_hero_main_h1 {
-        font-size: 32px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .vik-riv_hero_viewport {
-        padding: 100px 10px 60px 10px;
-    }
-
-    .vik-riv_hero_main_h1 {
-        font-size: 26px !important;
-    }
-}
 
 /* ========================================
    INTRO SECTION
@@ -620,7 +367,6 @@ body {
 
 .vik-intro-heading {
     text-align: center;
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -630,7 +376,7 @@ body {
 
 .vik-intro-main-text {
     font-weight: 300 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     line-height: 1.7 !important;
     margin-top: 32px !important;
     margin-bottom: 22px !important;
@@ -679,7 +425,7 @@ body {
 
 .vik-intro-option p {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
 }
 
@@ -708,8 +454,8 @@ body {
 }
 
 .vik-trust-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
+    text-align: center;
     color: var(--navy) !important;
     line-height: 1.2 !important;
     margin-bottom: 18px !important;
@@ -744,7 +490,6 @@ body {
 }
 
 .vik-trust-point-number {
-    font-family: var(--font-display) !important;
     font-weight: 700 !important;
     color: var(--navy);
     opacity: 0.2;
@@ -756,7 +501,7 @@ body {
 
 .vik-trust-point-content p {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
 }
 
@@ -778,7 +523,6 @@ body {
 }
 
 .vik-comparison-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -810,7 +554,6 @@ body {
 }
 
 .vik-comparison-col-brand {
-    font-family: var(--font-display) !important;
     font-size: 20px !important;
     font-weight: 500 !important;
     color: #fff !important;
@@ -853,7 +596,7 @@ body {
 
 .vik-comparison-cell {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     text-align: center;
     display: flex;
     align-items: center;
@@ -884,7 +627,6 @@ body {
 }
 
 .vik-real-diff-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -942,8 +684,8 @@ body {
 }
 
 .vik-real-diff-card-title {
-    font-family: var(--font-display) !important;
     font-size: 22px !important;
+    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.3 !important;
@@ -958,7 +700,7 @@ body {
 
 .vik-real-diff-text {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     line-height: 1.65 !important;
     margin: 0 !important;
 }
@@ -993,7 +735,7 @@ body {
 
 .vik-real-diff-list-item p {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
 }
 
@@ -1042,7 +784,6 @@ body {
 }
 
 .vik-lux-video-subtitle {
-    font-family: var(--font-body) !important;
     color: rgba(255, 255, 255, 0.6) !important;
     line-height: 1.65 !important;
     margin-top: 14px;
@@ -1103,7 +844,6 @@ body {
 }
 
 .vik-pricing-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -1161,9 +901,8 @@ body {
 }
 
 .vik-pricing-amount {
-    font-family: var(--font-display) !important;
     font-size: 34px !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
     margin-bottom: 8px;
@@ -1171,12 +910,12 @@ body {
 
 .vik-pricing-unit {
     font-weight: 300 !important;
-    color: var(--text-muted) !important;
+    color:#777;
 }
 
 .vik-pricing-conclusion {
     font-weight: 300 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     text-align: center;
     margin: 0 !important;
     padding: 24px 28px;
@@ -1203,7 +942,6 @@ body {
 }
 
 .vik-best-for-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -1275,14 +1013,14 @@ body {
 
 .vik-best-for-category {
     font-weight: 500 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 0 8px 0 !important;
 }
 
 .vik-best-for-answer {
-    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 500 !important;
+    font-family: var(--font-display) !important;
     margin: 0 !important;
 }
 
@@ -1324,7 +1062,6 @@ body {
 }
 
 .vik-mistake-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: #fff !important;
     line-height: 1.2 !important;
@@ -1350,7 +1087,6 @@ body {
 }
 
 .vik-mistake-emphasis {
-    font-family: var(--font-display) !important;
     font-size: 28px !important;
     font-weight: 500 !important;
     color: #fff !important;
@@ -1408,7 +1144,6 @@ body {
 }
 
 .vik-mistake-option-number {
-    font-family: var(--font-display) !important;
     font-size: 18px !important;
     font-weight: 700 !important;
     color: rgba(255, 255, 255, 0.8);
@@ -1448,7 +1183,6 @@ body {
 }
 
 .vik-choose-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -1523,8 +1257,8 @@ body {
 }
 
 .vik-choose-card-title {
-    font-family: var(--font-display) !important;
     font-size: 22px !important;
+    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.3 !important;
@@ -1585,7 +1319,7 @@ body {
 
 .vik-choose-list-text {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
     flex: 1;
 }
@@ -1608,7 +1342,6 @@ body {
 }
 
 .vik-expert-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -1669,14 +1402,13 @@ body {
 }
 
 .vik-expert-category-number {
-    font-family: var(--font-display) !important;
     font-weight: 700 !important;
     color: #fff;
 }
 
 .vik-expert-category-text {
     font-weight: 400 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
     flex: 1;
 }
@@ -1720,7 +1452,7 @@ body {
 
 .vik-expert-insight-text {
     font-weight: 300 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     line-height: 1.7 !important;
     margin: 0 !important;
     position: relative;
@@ -1745,7 +1477,6 @@ body {
 }
 
 .vik-choose-right-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -1761,7 +1492,7 @@ body {
 
 .vik-choose-right-main-text {
     font-weight: 300 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
     text-align: center;
     padding: 0;
@@ -1822,7 +1553,7 @@ body {
 
 .vik-choose-right-item-text {
     font-weight: 500 !important;
-    color: var(--text-dark) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
     flex: 1;
 }
@@ -1857,7 +1588,6 @@ body {
 }
 
 .vik-cta-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: #fff !important;
     line-height: 1.2 !important;
@@ -1886,7 +1616,6 @@ body {
     padding: 16px 36px;
     border: none;
     cursor: pointer;
-    font-family: var(--font-body) !important;
     font-size: 12px !important;
     font-weight: 600 !important;
     letter-spacing: 1.2px;
@@ -1963,7 +1692,6 @@ body {
 }
 
 .vik-about-heading {
-    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -2012,7 +1740,7 @@ body {
 
 .vik-about-text {
     font-weight: 300 !important;
-    color: var(--text-body) !important;
+    color: var(--navy) !important;
     margin: 0 !important;
 }
 
@@ -2122,7 +1850,6 @@ body {
 }
 
 .vik-lux-faq-intro {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     font-weight: 300 !important;
     color: rgba(39, 68, 114, 0.7) !important;
@@ -2151,8 +1878,7 @@ body {
     align-items: center;
     padding: 22px 8px;
     gap: 18px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 500 !important;
     color: #274472 !important;
     line-height: 1.45 !important;
@@ -2173,18 +1899,259 @@ body {
 }
 
 .vik-lux-faq-a-inner {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 1.75 !important;
     color: rgba(39, 68, 114, 0.82) !important;
     font-weight: 300 !important;
 }
 
-/* ========================================
-   RESPONSIVE — TABLET (≤1023px)
-   ======================================== */
-@media (max-width: 1023px) {
 
+/* ========================================
+   PREMIUM IMAGE GALLERY
+   ======================================== */
+.vik-gallery-section {
+    background: var(--bg-white);
+    padding: 80px 20px;
+}
+
+.vik-gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vik-gallery-heading {
+    font-weight: 500 !important;
+    color: var(--navy) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 18px !important;
+    letter-spacing: -0.01em;
+}
+
+.vik-gallery-accent-line {
+    width: 40px;
+    height: 2px;
+    background: var(--navy);
+    margin: 18px auto 24px;
+}
+
+.vik-gallery-intro {
+    font-weight: 300 !important;
+    color: var(--navy) !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.vik-premium-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 24px;
+    margin-top: 50px;
+}
+
+.vik-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 320px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.vik-gallery-item:hover {
+    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+}
+
+.vik-item-large {
+    grid-column: span 2;
+}
+
+.vik-item-tall {
+    grid-row: span 2;
+    height: 664px;
+}
+
+.vik-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.vik-gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.vik-gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.85) 0%, transparent 60%);
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.vik-gallery-item:hover .vik-gallery-overlay {
+    opacity: 1;
+}
+
+.vik-gallery-overlay span {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(20px);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.vik-gallery-item:hover .vik-gallery-overlay span {
+    transform: translateY(0);
+}
+
+
+@media (min-width: 1024px) {
+    .vik-riv_hero_main_h1 {
+        font-size: 60px !important;
+    }
+
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
+        font-size: 48px !important;
+    }
+
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
+        font-size: 18px !important;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+    .vik-riv_hero_main_h1 {
+        font-size: 32px !important;
+    }
+
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
+        font-size: 28px !important;
+        text-align: center;
+    }
+
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
+        font-size: 17px !important;
+    }
+    .vik-content-section,
+    .vik-cta-section,
+    .vik-lux-video-section {
+        padding: 50px 15px;
+    }
+    .vik-riv_hero_viewport {
+        padding: 120px 20px 80px 20px;
+        min-height: 90vh;
+    }
+
+    .vik-riv_hero_main_h1 {
+        font-size: 32px !important;
+    }
     .vik-real-diff-grid,
     .vik-choose-grid,
     .vik-about-content {
@@ -2285,12 +2252,6 @@ body {
     .vik-lux-video-header .vik-lux-h2 {
         font-size: 28px !important;
     }
-}
-
-/* ========================================
-   RESPONSIVE — MOBILE (≤767px)
-   ======================================== */
-@media (max-width: 767px) {
     .vik-lux-faq-q {
         font-size: 15px !important;
         padding: 18px 6px;
@@ -2470,12 +2431,110 @@ body {
     .vik-lux-video-wrapper {
         border-radius: 6px;
     }
+    .vik-premium-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .vik-item-large {
+        grid-column: span 2;
+    }
+
+    .vik-item-tall {
+        grid-row: span 2;
+        height: 655px; /* (320 * 2) + 15 */
+    }
+    .vik-premium-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .vik-gallery-item {
+        height: 280px;
+    }
+
+    .vik-item-large, .vik-item-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 280px;
+    }
+
+    .vik-gallery-section {
+        padding: 60px 15px;
+    }
 }
 
+
 /* ========================================
-   RESPONSIVE — SMALL MOBILE (≤480px)
+   RESPONSIVE — MOBILE (max-width: 480px)
    ======================================== */
 @media (max-width: 480px) {
+    .vik-riv_hero_main_h1 {
+        font-size: 26px !important;
+    }
+
+    .vik-intro-heading,
+    .vik-trust-heading,
+    .vik-comparison-heading,
+    .vik-real-diff-heading,
+    .vik-pricing-heading,
+    .vik-best-for-heading,
+    .vik-mistake-heading,
+    .vik-choose-heading,
+    .vik-expert-heading,
+    .vik-choose-right-heading,
+    .vik-cta-heading,
+    .vik-about-heading,
+    .vik-lux-h2,
+    .vik-lux-faq-header .vik-lux-h2 {
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .vik-content-section p,
+    .vik-riv_hero_sub_p,
+    .vik-river-qa-main,
+    .vik-river-qa-detail,
+    .vik-intro-main-text,
+    .vik-intro-option p,
+    .vik-intro-closing,
+    .vik-trust-intro,
+    .vik-trust-point-content p,
+    .vik-comparison-cell-feature,
+    .vik-comparison-cell,
+    .vik-real-diff-text,
+    .vik-real-diff-list-item p,
+    .vik-real-diff-conclusion,
+    .vik-pricing-conclusion,
+    .vik-mistake-main-text,
+    .vik-mistake-subtext,
+    .vik-mistake-option-text,
+    .vik-mistake-conclusion,
+    .vik-choose-intro,
+    .vik-choose-list-text,
+    .vik-expert-intro,
+    .vik-expert-category-text,
+    .vik-expert-insight-text,
+    .vik-expert-insight-badge span,
+    .vik-choose-right-main-text,
+    .vik-choose-right-subtext,
+    .vik-choose-right-item-text,
+    .vik-cta-subtext,
+    .vik-about-intro,
+    .vik-about-text,
+    .vik-about-credential-text,
+    .vik-about-brand-text,
+    .vik-lux-faq-intro,
+    .vik-lux-faq-a-inner {
+        font-size: 16px !important;
+    }
+    .vik-riv_hero_viewport {
+        padding: 100px 10px 60px 10px;
+    }
+
+    .vik-riv_hero_main_h1 {
+        font-size: 26px !important;
+    }
     .vik-lux-faq-q {
         font-size: 14px !important;
     }
@@ -2593,150 +2652,5 @@ body {
 
     .vik-lux-video-header .vik-lux-h2 {
         font-size: 22px !important;
-    }
-}
-
-/* ========================================
-   PREMIUM IMAGE GALLERY
-   ======================================== */
-.vik-gallery-section {
-    background: var(--bg-white);
-    padding: 80px 20px;
-}
-
-.vik-gallery-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.vik-gallery-heading {
-    font-family: var(--font-display) !important;
-    font-weight: 500 !important;
-    color: var(--navy) !important;
-    line-height: 1.2 !important;
-    margin-bottom: 18px !important;
-    letter-spacing: -0.01em;
-}
-
-.vik-gallery-accent-line {
-    width: 40px;
-    height: 2px;
-    background: var(--navy);
-    margin: 18px auto 24px;
-}
-
-.vik-gallery-intro {
-    font-weight: 300 !important;
-    color: var(--text-body) !important;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.vik-premium-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
-    grid-gap: 24px;
-    margin-top: 50px;
-}
-
-.vik-gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    height: 320px;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s ease;
-}
-
-.vik-gallery-item:hover {
-    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.2);
-    transform: translateY(-5px);
-}
-
-.vik-item-large {
-    grid-column: span 2;
-}
-
-.vik-item-tall {
-    grid-row: span 2;
-    height: 664px;
-}
-
-.vik-gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.vik-gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.vik-gallery-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(39, 68, 114, 0.85) 0%, transparent 60%);
-    opacity: 0;
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: flex-end;
-    padding: 30px;
-}
-
-.vik-gallery-item:hover .vik-gallery-overlay {
-    opacity: 1;
-}
-
-.vik-gallery-overlay span {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transform: translateY(20px);
-    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.vik-gallery-item:hover .vik-gallery-overlay span {
-    transform: translateY(0);
-}
-
-@media (max-width: 1023px) {
-    .vik-premium-gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-    }
-
-    .vik-item-large {
-        grid-column: span 2;
-    }
-
-    .vik-item-tall {
-        grid-row: span 2;
-        height: 655px; /* (320 * 2) + 15 */
-    }
-}
-
-@media (max-width: 767px) {
-    .vik-premium-gallery-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-    }
-
-    .vik-gallery-item {
-        height: 280px;
-    }
-
-    .vik-item-large, .vik-item-tall {
-        grid-column: span 1;
-        grid-row: span 1;
-        height: 280px;
-    }
-
-    .vik-gallery-section {
-        padding: 60px 15px;
     }
 }

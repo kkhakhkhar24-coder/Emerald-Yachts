@@ -16,15 +16,15 @@
 
   0%,
   100% {
-    background-image: url('../../assets/FourthPage/FourthPage2.jpeg');
+    background-image: url('../../assets/FourthPage/FourthPage2.webp');
   }
 
   33% {
-    background-image: url('../../assets/FourthPage/FourthPage1.jpg');
+    background-image: url('../../assets/FourthPage/FourthPage1.webp');
   }
 
   66% {
-    background-image: url('../../assets/FourthPage/FourthPage3.jpg');
+    background-image: url('../../assets/FourthPage/FourthPage3.webp');
   }
 }
 
@@ -943,7 +943,7 @@
 /* SECTION 6 */
 .Yachts_ship_section {
   position: relative;
-  background: url("../../assets/FourthPage/FourthPage4.jpg") center/cover no-repeat;
+  background: url("../../assets/FourthPage/FourthPage4.webp") center/cover no-repeat;
   padding: 60px 20px;
   text-align: center;
   overflow: hidden;

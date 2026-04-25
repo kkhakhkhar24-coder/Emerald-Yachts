@@ -2710,259 +2710,194 @@ h3 {
 }
 
 /* ========================================
-   SECTION 11: EXPERT FAQs
-   Accordion layout using Navy and Gold
+   SECTION 11: FAQ FIX (CLEAN SLATE)
    ======================================== */
 
-.lux-bg-white {
-    background-color: #ffffff;
-}
-
 .lux-inner.lux-narrow-faq {
-    width: 100%;
+    max-width: 1200px !important;
+    /* margin: 0 auto !important; */
+    width: 100% !important;
+    padding: 0 20px !important;
+    background: transparent !important;
 }
 
-/* Centered Header */
+/* --- Header & Title --- */
 .lux-faq-header {
-    text-align: center;
-    margin-bottom: 60px;
+    text-align: center !important;
+    margin-bottom: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background: none !important;
+    /* Removes any solid blue boxes */
 }
 
-.lux-faq-header .lux-h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #274472;
-    /* Navy Blue */
-    margin: 25px auto 0 !important;
+.lux-faq-section-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 42px !important;
+    font-weight: 500 !important;
+    color: #274472 !important;
+    /* Force Navy Text */
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    text-shadow: none !important;
+    position: relative !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
-/* --- Accordion Styling --- */
+.lux-faq-header .lux-h2 {
+    position: relative !important;
+    inset: auto !important;
+    /* Clears any 'top/left' from hero */
+    transform: none !important;
+    font-size: 42px !important;
+    line-height: 1.2 !important;
+    /* Fixes the squashed lines */
+    margin-bottom: 10px !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    color: #274472 !important;
+}
+
+/* The Signature Navy Bar */
+.lux-navy-divider-center {
+    width: 55px !important;
+    height: 3px !important;
+    background-color: #274472 !important;
+    margin: 22px auto !important;
+    border-radius: 2px !important;
+    display: block !important;
+}
+
+.lux-faq-intro-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    color: #274472 !important;
+    opacity: 0.75 !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    background: none !important;
+}
+
+/* --- FAQ List Container --- */
 .lux-faq-list {
-    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    border-top: 1px solid rgba(39, 68, 114, 0.1) !important;
+    margin-top: 10px !important;
+    width: 100% !important;
 }
 
-/* Emerald-style FAQ overrides (matching DrakePassagePage) */
-.lux-faq-list.emerald-style {
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
-    text-align: left;
+.lux-faq-item {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1) !important;
+    cursor: pointer !important;
+    transition: background 0.25s ease !important;
 }
 
-.lux-faq-item.emerald-faq-item {
-    border-top: 1px solid #e4e9ee;
-    padding: 20px 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: transparent;
+.lux-faq-item:hover {
+    background: rgba(231, 243, 245, 0.55) !important;
 }
 
-.lux-faq-item.emerald-faq-item:last-child {
-    border-bottom: 1px solid #e4e9ee;
-}
-
-.lux-faq-item.emerald-faq-item:hover {
-    background-color: transparent;
-}
-
-.lux-faq-item.emerald-faq-item:hover .emerald-faq-question {
-    color: #1a3a6d;
-}
-
-.lux-faq-question.emerald-faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.lux-faq-q {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 24px 10px !important;
+    gap: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 17px !important;
-    font-weight: 600;
-    color: #2f4a6d;
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 0;
+    font-weight: 500 !important;
+    color: #274472 !important;
 }
 
-.lux-faq-icon.emerald-faq-icon {
-    font-size: 22px;
-    font-weight: 300;
-    color: #2f4a6d;
+.lux-faq-icon {
+    color: #274472;
+    flex-shrink: 0;
     transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.lux-faq-answer.emerald-faq-answer {
-    margin: 0;
-    padding: 0;
+/* --- Answer Content --- */
+.lux-faq-a {
+    padding: 0 10px 24px 10px !important;
 }
 
-.lux-a-inner {
-    padding: 14px 0 0 0;
+.lux-faq-a-inner {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px !important;
-    line-height: 1.7 !important;
-    color: #274472cc;
-    font-weight: 300 !important;
-    opacity: 1;
-}
-
-.lux-faq-item {
-    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.lux-faq-item:hover {
-    background-color: rgb(231, 243, 245);
-    /* Light Navy Blue hover */
-}
-
-.lux-faq-question {
-    padding: 28px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.lux-q-text {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    color: #274472;
-    /* Navy Hash */
-    line-height: 1.4 !important;
-    text-align: left;
-    width: fit-content;
-}
-
-.lux-faq-icon {
-    color: #274472;
-    /* Gold Hash */
-    font-size: 20px !important;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.lux-faq-item.lux-open .lux-faq-icon {
-    transform: rotate(180deg);
-}
-
-/* --- Answer Animation --- */
-.lux-faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.lux-faq-item.lux-open .lux-faq-answer {
-    max-height: 500px;
-    /* Sufficient height for text */
-    transition: max-height 0.8s ease-in-out;
-}
-
-.lux-a-inner {
-    padding: 0 10px 35px 10px;
-}
-
-.lux-a-inner .lux-section-p {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px !important;
-    line-height: 1.7 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
     color: rgba(39, 68, 114, 0.85) !important;
     font-weight: 300 !important;
-    margin-bottom: 0;
-    text-align: left;
 }
 
-/* Highlight the question when open */
-.lux-faq-item.lux-open .lux-q-text {
-    width: fit-content;
-    color: #274472;
-    /* Navy Blue */
+@keyframes lux-faqFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .lux-faq-header .lux-h2 {
-        font-size: 24px !important;
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lux-faq-section-title {
+        font-size: 30px !important;
     }
 
-    .lux-h1 {
-        font-size: 32px !important;
+    .lux-faq-header .lux-h2 {
+        font-size: 30px !important;
     }
 
-    .lux-h2 {
-        font-size: 24px !important;
-    }
-
-    .lux-section-p {
-        font-size: 17px !important;
-    }
-
-    .lux-q-text {
-        width: fit-content;
-        font-size: 16px !important;
-    }
-
-    .lux-a-inner .lux-section-p {
-        font-size: 17px !important;
-    }
-
-    .lux-faq-question {
-        padding: 22px 5px;
-    }
-
-    /* Emerald-style FAQ mobile responsive */
-    .lux-faq-question.emerald-faq-question {
-        padding: 5px 0;
-    }
-
-    .lux-a-inner {
-        padding: 14px 0 0 0;
-    }
-
-    .lux-inner.lux-narrow-faq {
+    .lux-faq-intro-text {
+        font-size: 14px !important;
         padding: 0 15px;
+    }
+
+    .lux-faq-q {
+        padding: 20px 8px;
+        font-size: 15px !important;
+    }
+
+    .lux-faq-header {
+        margin-bottom: 35px;
     }
 }
 
 @media (max-width: 480px) {
-    .lux-h1 {
-        font-size: 24px !important;
-    }
-
-    .lux-h2 {
-        font-size: 24px !important;
-    }
-
-    .lux-section-p {
-        font-size: 16px !important;
-    }
-
     .lux-faq-header .lux-h2 {
-        font-size: 24px !important;
+        font-size: 26px !important;
+        line-height: 1.3 !important;
     }
 
-    /* Emerald-style FAQ mobile */
-    .lux-faq-item.emerald-faq-item {
-        padding: 15px 0;
-    }
-
-    .lux-faq-icon.emerald-faq-icon {
-        font-size: 20px;
-    }
-
-    .lux-q-text {
+    .lux-faq-q {
         font-size: 15px !important;
+        gap: 15px;
     }
 
-    .lux-a-inner {
-        font-size: 16px !important;
+    .lux-faq-a-inner {
+        font-size: 14px !important;
     }
 
-    .lux-inner.lux-narrow-faq {
-        padding: 0 10px;
+    .lux-navy-divider-center {
+        margin: 18px auto;
     }
 }
 
@@ -2973,11 +2908,10 @@ h3 {
 
 .lux-final-cta-section {
     position: relative;
-    padding: 60px 20px;
+    padding: 100px 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2990,7 +2924,10 @@ h3 {
 .lux-cta-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0.10) 100%);
+    /* This creates a 60% to 80% black wash over the image */
+    background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.75) 100%);
     z-index: 1;
 }
 
@@ -2999,26 +2936,28 @@ h3 {
     width: 100%;
     position: relative;
     z-index: 2;
+    /* Ensures text stays ABOVE the black layer */
 }
 
 /* Specific white H2 for the dark background */
 .lux-h2-white {
     font-family: 'Playfair Display', serif !important;
-    font-size: 60px !important;
+    font-size: 52px !important;
     font-weight: 500 !important;
-    color: #ffffff;
+    color: #ffffff !important;
     line-height: 1.1 !important;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* Extra pop for the text */
 }
 
 .lux-h2-white::after {
     content: "";
     display: block;
-    width: 80px;
+    width: 60px;
     height: 3px;
     background-color: #ffffff;
-    /* Navy Blue */
-    margin: 30px auto 0;
+    margin: 25px auto 0;
     border-radius: 2px;
 }
 
@@ -3030,19 +2969,19 @@ h3 {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 19px !important;
     line-height: 1.6 !important;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95) !important;
     font-weight: 300 !important;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 40px !important;
 }
 
 /* --- CTA Button Styling --- */
 .lux-cta-btn-primary {
-    padding: 22px 50px;
-    background-color: #274472;
-    /* Navy Blue Hash */
-    color: #ffffff;
-    border: 1px solid #274472;
+    padding: 20px 45px;
+    background-color: #ffffff;
+    /* White button on black layer looks better */
+    color: #274472;
+    border: none;
     border-radius: 4px;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
@@ -3050,14 +2989,13 @@ h3 {
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
     cursor: pointer;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .lux-cta-btn-primary:hover {
-    background-color: #ffffff;
-    color: #274472;
-    border-color: #ffffff;
+    background-color: #274472;
+    color: #ffffff;
     transform: translateY(-5px);
 }
 
@@ -3102,6 +3040,7 @@ h3 {
     }
 
     .lux-final-cta-section {
+        min-height: auto;
         padding: 80px 20px;
     }
 }

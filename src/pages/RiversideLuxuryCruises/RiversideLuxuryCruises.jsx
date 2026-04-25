@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import "./RiversideLuxuryCruises.css";
 import Navbar from "../../components/Navbar/Navbar";
 import {
   Calendar,
   MapPin,
-  ChevronDown,
-  ChevronUp,
   Award,
   Users,
   Star,
@@ -17,17 +15,17 @@ import {
   Minus,
 } from "lucide-react";
 import ProfileImage from "../../assets/image.jpg";
-import ImageGellery1 from "../../assets/RiversideLuxuryCruises/Riversideimage1.jpg";
-import ImageGellery2 from "../../assets/RiversideLuxuryCruises/Riversideimage2.jpg";
-import ImageGellery3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.jpg";
-import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.jpg";
-import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.jpg";
-import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.jpg";
-import ImageGellery8 from "../../assets/RiversideLuxuryCruises/Riversideimage8.jpg";
-import ImageGellery9 from "../../assets/RiversideLuxuryCruises/Riversideimage9.jpg";
-import ImageGellery10 from "../../assets/RiversideLuxuryCruises/Riversideimage10.jpg";
-import ImageGellery11 from "../../assets/RiversideLuxuryCruises/Riversideimage11.jpg";
-import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.jpeg";
+import ImageGellery4 from "../../assets/RiversideLuxuryCruises/Riversideimage4.webp";
+import ImageGellery5 from "../../assets/RiversideLuxuryCruises/Riversideimage5.webp";
+import ImageGellery6 from "../../assets/RiversideLuxuryCruises/Riversideimage6.webp";
+import ImageGellery8 from "../../assets/RiversideLuxuryCruises/Riversideimage8.webp";
+import ImageGellery9 from "../../assets/RiversideLuxuryCruises/Riversideimage9.webp";
+import ImageGellery10 from "../../assets/RiversideLuxuryCruises/Riversideimage10.webp";
+import ImageGellery11 from "../../assets/RiversideLuxuryCruises/Riversideimage11.webp";
+import RiversideHeroShot from "../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.webp";
+import RiversideHero1 from "../../assets/RiversideLuxuryCruises/Riversideimage1.webp";
+import RiversideHero2 from "../../assets/RiversideLuxuryCruises/Riversideimage2.webp";
+import RiversideHero3 from "../../assets/RiversideLuxuryCruises/Riversideimage3.webp";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -287,6 +285,15 @@ function FAQ() {
 
 const RiversideLuxuryCruises = () => {
   const [showQuickTake, setShowQuickTake] = useState(false);
+  const [current, setCurrent] = useState(0);
+  const heroImages = [RiversideHeroShot, RiversideHero1, RiversideHero2, RiversideHero3];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
 
   return (
     <div className="riv_page_main_container">
@@ -307,6 +314,16 @@ const RiversideLuxuryCruises = () => {
 
       {/* HERO SECTION */}
       <section className="riv_hero_section">
+        {heroImages.map((img, index) => (
+          <div
+            key={index}
+            className={`riv_hero_bg ${index === current ? "active" : ""}`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
+        <div className="riv_hero_overlay"></div>
+
         <div className="riv_hero_content">
           <span className="riv_hero_eyebrow">Boutique River Cruise Guide</span>
           <h1 className="riv_hero_main_h1">
@@ -329,19 +346,23 @@ const RiversideLuxuryCruises = () => {
           <div
             className={`riv_hero_details ${showQuickTake ? "expanded" : ""}`}
           >
-            <p className="riv_hero_note">
-              Riverside Luxury Cruises is ideal for experienced travelers and
-              luxury clients seeking a quieter, more refined onboard experience
-              than traditional river cruise lines.
-            </p>
+            {showQuickTake && (
+              <p className="riv_hero_note">
+                Riverside Luxury Cruises is ideal for experienced travelers and
+                luxury clients seeking a quieter, more refined onboard
+                experience than traditional river cruise lines.
+              </p>
+            )}
           </div>
 
-          <button
-            className="riv_hero_read_more"
-            onClick={() => setShowQuickTake(!showQuickTake)}
-          >
-            {showQuickTake ? "Read Less" : "Read More"}
-          </button>
+          <div className="riv_readmore_wrapper">
+            <button
+              className="riv_hero_read_more"
+              onClick={() => setShowQuickTake(!showQuickTake)}
+            >
+              {showQuickTake ? "Read Less" : "Read More"}
+            </button>
+          </div>
 
           <div className="riv_hero_btns">
             <button className="riv_btn_primary">View Riverside Pricing</button>
@@ -713,21 +734,21 @@ const RiversideLuxuryCruises = () => {
       </section>
 
       {/* ===== VIDEO SECTION: RIVERSIDE EXPERIENCE ===== */}
-      <section className="lux-section lux-bg-white lux-video-section">
-        <div className="lux-container-wide">
-          <div className="lux-video-header">
-            <h2 className="lux-h2">Experience Riverside Luxury Cruises</h2>
-            <div className="lux-navy-divider-center"></div>
-            <p className="lux-video-subtitle">
+      <section className="riv_video-section">
+        <div className="riv_container_wide">
+          <div className="riv_video_header">
+            <h2 className="riv_h2">Experience Riverside Luxury Cruises</h2>
+            <div className="riv_navy_divider_center"></div>
+            <p className="riv_video_subtitle">
               Discover the refined elegance and spacious comfort that defines
               Riverside Luxury Cruises. See why experienced travelers choose
               Riverside for their European river cruise experience.
             </p>
           </div>
 
-          <div className="lux-video-wrapper">
+          <div className="riv_video_wrapper">
             <video
-              className="lux-video-player"
+              className="riv_video_player"
               controls
               autoPlay
               muted
@@ -928,7 +949,6 @@ const RiversideLuxuryCruises = () => {
       </section>
 
       {/* ===== RIVERSIDE EXPERIENCE IMAGE SHOWCASE ===== */}
-      {/* ===== CENTERED SHOWCASE WITH HOVER OVERLAY ===== */}
       <section className="riv_showcase_modern_reveal">
         <div className="riv_container_main">
           {/* HEADER (OUTSIDE IMAGE) */}

@@ -15,22 +15,22 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
-import hero1 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr1.jpg";
-import hero2 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr2.jpg";
-import hero3 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr3.jpg";
+import hero1 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr1.webp";
+import hero2 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr2.webp";
+import hero3 from "../../assets/EmeraldVSRitzCarltonYacht/Evcr3.webp";
 
-import ExpertInsight from "../../assets/EmeraldVSRitzCarltonYacht/Expert1.jpg";
-import ExpertInsight2 from "../../assets/EmeraldVSRitzCarltonYacht/Expert2.jpg";
-import ExpertInsight3 from "../../assets/EmeraldVSRitzCarltonYacht/Expert3.jpg";
-import CTA_BG from "../../assets/EmeraldVSRitzCarltonYacht/Experice.jpg";
-import RitzImg from "../../assets/EmeraldVSRitzCarltonYacht/Ritzcarton.jpg";
-import Slider1 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider1.jpg";
-import Slider2 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider2.jpg";
-import Slider3 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider3.jpg";
-import Slider4 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider4.jpg";
-import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.jpg";
-import Slider6 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider6.jpg";
-import Slider7 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider7.jpg";
+import ExpertInsight from "../../assets/EmeraldVSRitzCarltonYacht/Expert1.webp";
+import ExpertInsight2 from "../../assets/EmeraldVSRitzCarltonYacht/Expert2.webp";
+import ExpertInsight3 from "../../assets/EmeraldVSRitzCarltonYacht/Expert3.webp";
+import CTA_BG from "../../assets/EmeraldVSRitzCarltonYacht/Experice.webp";
+import RitzImg from "../../assets/EmeraldVSRitzCarltonYacht/Ritzcarton.webp";
+import Slider1 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider1.webp";
+import Slider2 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider2.webp";
+import Slider3 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider3.webp";
+import Slider4 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider4.webp";
+import Slider5 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider5.webp";
+import Slider6 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider6.webp";
+import Slider7 from "../../assets/EmeraldVSRitzCarltonYacht/EmeraldSlider7.webp";
 
 const EmeraldVsRitzCarltonPage = () => {
   const [current, setCurrent] = useState(0);

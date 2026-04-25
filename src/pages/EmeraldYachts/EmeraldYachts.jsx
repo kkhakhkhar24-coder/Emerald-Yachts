@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
 import {
@@ -24,9 +24,9 @@ import Logo4 from "../../assets/HomePage/Logo4.webp";
 import Logo5 from "../../assets/HomePage/Logo5.png";
 import Logo6 from "../../assets/HomePage/Logo6.png";
 import Logo7 from "../../assets/HomePage/Logo7.png";
-import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
-import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
-import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
+import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.webp";
+import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.webp";
+import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.webp";
 import Coastal_Cruising from "../../assets/HomePage/Coastal_Cruising.jpeg";
 import Refined_Luxury from "../../assets/HomePage/Refined_Luxury.jpeg";
 import Curated_Journeys from "../../assets/HomePage/Curated_Journeys.jpeg";

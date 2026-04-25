@@ -5,19 +5,19 @@
 import React, { useState, useEffect } from "react";
 import "./EmeraldAzzurraVsEmeraldSakara.css";
 import Navbar from "../../components/Navbar/Navbar";
-import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.jpg";
-import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.jpg";
-import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.jpg";
-import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.jpg";
+import EmeraldAzzurraVsEmeraldSakara1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara1.webp";
+import EmeraldAzzurraVsEmeraldSakara2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara2.webp";
+import EmeraldAzzurraVsEmeraldSakara3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara3.webp";
+import EmeraldAzzurraVsEmeraldSakara4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/EmeraldAzzurraVsEmeraldSakara4.webp";
 import myImage from "../../assets/image.jpg";
 import { Helmet } from "react-helmet-async";
-import ImageGellery1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery1.jpg";
-import ImageGellery2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery2.jpg";
-import ImageGellery3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery3.jpg";
-import ImageGellery4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery4.jpg";
-import ImageGellery5 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery5.jpg";
-import EmeraldAzzurraImg from "../../assets/EmeraldAzzurraVsEmeraldSakara/Emerald Azzurra.jpg";
-import EmeraldSakaraImg from "../../assets/EmeraldAzzurraVsEmeraldSakara/Emerald Sakara.jpg";
+import ImageGellery1 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery1.webp";
+import ImageGellery2 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery2.webp";
+import ImageGellery3 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery3.webp";
+import ImageGellery4 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery4.webp";
+import ImageGellery5 from "../../assets/EmeraldAzzurraVsEmeraldSakara/ImageGellery5.webp";
+import EmeraldAzzurraImg from "../../assets/EmeraldAzzurraVsEmeraldSakara/Emerald Azzurra.webp";
+import EmeraldSakaraImg from "../../assets/EmeraldAzzurraVsEmeraldSakara/Emerald Sakara.webp";
 
 // Lucide React Icons
 import {
@@ -40,8 +40,6 @@ import {
   Activity as BsActivity,
   Award as BsAward,
   CalendarCheck as BsCalendarCheck,
-  Crown,
-  Gem,
   Sun,
   Waves,
   KeyRound,
@@ -756,7 +754,10 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
                   { name: "Owner's Suite", icon: <CircleUser size={20} /> },
                   { name: "Yacht Suite", icon: <TbYacht size={20} /> },
                   { name: "Terrace Suite", icon: <Sun size={20} /> },
-                  { name: "Deluxe Balcony Suite", icon: <Sparkles size={20} /> },
+                  {
+                    name: "Deluxe Balcony Suite",
+                    icon: <Sparkles size={20} />,
+                  },
                   { name: "Balcony Suite", icon: <DoorOpen size={20} /> },
                   { name: "Oceanview Stateroom", icon: <Waves size={20} /> },
                 ].map((s, i) => (
@@ -966,7 +967,8 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
             Why Work With Trips & Ships?
           </h2>
           <p className="Sakara_why_trips_intro">
-            Luxury yacht cruising is not a simple booking. Angela Hughes and the <br />
+            Luxury yacht cruising is not a simple booking. Angela Hughes and the{" "}
+            <br />
             Trips & Ships Luxury Travel team help clients make the right
             decision from the start.
           </p>
