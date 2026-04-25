@@ -15,7 +15,7 @@ import {
   AlertTriangle,
   Compass,
 } from "lucide-react";
-import "./BestTimeJapan.css";
+import "./Besttimejapan.css";
 import myimage from "../../assets/image.webp";
 import BTJimage1 from "../../assets/BestTimeJapan/BTJimage1.webp";
 import BTJimage2 from "../../assets/BestTimeJapan/BTJimage2.webp";
