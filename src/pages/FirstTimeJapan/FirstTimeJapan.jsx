@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
 import {
@@ -20,6 +20,8 @@ import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
 import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
 import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
 import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
+import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
+import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
 import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
 
 /* ===== INLINE FAQ ACCORDION ===== */
@@ -47,6 +49,17 @@ const FTJapanFAQ = ({ items }) => {
 
 const FirstTimeJapan = () => {
   const [readMore, setReadMore] = useState(false);
+  const [current, setCurrent] = useState(0);
+
+  const images = [Jhero1, Jhero2, Jhero3];
+
+  useEffect(() => {
+    const heroSlider = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(heroSlider);
+  }, [images.length]);
 
   const faqItems = [
     {
@@ -200,11 +213,21 @@ const FirstTimeJapan = () => {
             ],
           })}
         </script>
+        {/* Preload first hero image for better performance */}
+        <link rel="preload" as="image" href={images[0]} />
       </Helmet>
       <Navbar />
 
       {/* ===== HERO ===== */}
       <section className="FTJapan_hero_section">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`FTJapan_hero_bg ${index === current ? "active" : ""}`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
         <div className="FTJapan_hero_overlay"></div>
         <div className="FTJapan_hero_content">
           <h1>First-Time Japan Itinerary: The Perfect 10–14 Day Japan Trip</h1>

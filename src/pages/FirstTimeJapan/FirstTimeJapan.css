@@ -19,23 +19,24 @@
   justify-content: center;
   padding: 120px 40px 100px;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  animation: FTJapan_bgSlide 18s infinite ease-in-out;
 }
 
-/* Smooth background slide animation */
-@keyframes FTJapan_bgSlide {
-  0%,
-  100% {
-    background-image: url("../../assets/FirstTimeJapan/Jhero1.webp");
-  }
-  33% {
-    background-image: url("../../assets/FirstTimeJapan/Jhero2.webp");
-  }
-  66% {
-    background-image: url("../../assets/FirstTimeJapan/Jhero3.webp");
-  }
+.FTJapan_hero_bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 8s linear;
+  z-index: 0;
+  will-change: opacity, transform;
+  transform: scale(1.1);
+}
+
+.FTJapan_hero_bg.active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
 }
 
 .FTJapan_hero_overlay {
@@ -47,7 +48,7 @@
     rgba(0, 0, 0, 0.6) 40%,
     rgba(0, 0, 0, 0.4) 100%
   );
-  z-index: 1;
+  z-index: 2;
 }
 
 .FTJapan_hero_section::after {
@@ -66,7 +67,7 @@
   animation: FTJapan_particles 60s linear infinite;
   opacity: 0.3;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 @keyframes FTJapan_particles {
@@ -80,7 +81,7 @@
 
 .FTJapan_hero_content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 850px;
   text-align: center;
   color: var(--ftjapan-white);
