@@ -114,6 +114,14 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/japan-travel-cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Japan Travel Cost
+              </NavLink>
+
+              <NavLink
                 to="/best-time-to-visit-japan"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -248,6 +256,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               First Time Japan Itinerary
+            </NavLink>
+
+            <NavLink
+              to="/japan-travel-cost"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Japan Travel Cost
             </NavLink>
 
             <NavLink

@@ -76,28 +76,26 @@ function FAQComponent() {
   ];
 
   return (
-    <div className="lux-faq-list emerald-style">
-      {faqData.map((item, index) => (
+    <div className="lux-faq-list">
+      {faqData.map((item, i) => (
         <div
-          key={index}
-          className={`lux-faq-item emerald-faq-item${openIndex === index ? " lux-open emerald-faq-item--open" : ""}`}
-          onClick={() => setOpenIndex(openIndex === index ? null : index)}
+          key={i}
+          className={`lux-faq-item${openIndex === i ? " lux-open" : ""}`}
+          onClick={() => setOpenIndex(openIndex === i ? null : i)}
         >
-          <div className="lux-faq-question emerald-faq-question">
-            <span className="lux-q-text">{item.q}</span>
-            <span className="lux-faq-icon emerald-faq-icon">
-              {openIndex === index ? (
-                <Minus size={20} strokeWidth={1.5} />
+          <div className="lux-faq-q">
+            <span>{item.q}</span>
+            <span className="lux-faq-icon">
+              {openIndex === i ? (
+                <Minus size={18} strokeWidth={1.5} />
               ) : (
-                <Plus size={20} strokeWidth={1.5} />
+                <Plus size={18} strokeWidth={1.5} />
               )}
             </span>
           </div>
-          {openIndex === index && (
-            <div className="lux-faq-answer emerald-faq-answer">
-              <div className="lux-a-inner">
-                <p className="lux-section-p">{item.a}</p>
-              </div>
+          {openIndex === i && (
+            <div className="lux-faq-a">
+              <div className="lux-faq-a-inner">{item.a}</div>
             </div>
           )}
         </div>
@@ -1080,12 +1078,16 @@ function LuxuryTravel() {
         </div>
       </section>
 
-      {/* ===== SECTION 11: EXPERT FAQs — Detailed answers to common Scenic Eclipse planning questions ===== */}
+      {/* ===== SECTION 11: EXPERT FAQs ===== */}
       <section className="lux-section lux-bg-white">
         <div className="lux-inner lux-narrow-faq">
-          {/* Centered Header Wrapper */}
           <div className="lux-faq-header">
-            <h2 className="lux-h2">Scenic Eclipse FAQs — Expert Answers</h2>
+            {/* Changed class name below to lux-faq-section-title */}
+            <h2 className="lux-faq-section-title">Scenic Eclipse FAQs</h2>
+            <div className="lux-navy-divider-center"></div>
+            <p className="lux-faq-intro-text">
+              Expert answers to common discovery yacht planning and expedition questions.
+            </p>
           </div>
 
           <FAQComponent />
