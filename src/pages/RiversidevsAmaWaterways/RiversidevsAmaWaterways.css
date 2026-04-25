@@ -1887,9 +1887,37 @@
         gap: 12px;
     }
 
+    .rva-table-scroll {
+        margin: 0 -15px;
+        padding: 5px 15px 25px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rva-table-scroll::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .rva-table-scroll::-webkit-scrollbar-track {
+        background: rgba(39, 68, 114, 0.05);
+        border-radius: 10px;
+    }
+
+    .rva-table-scroll::-webkit-scrollbar-thumb {
+        background: rgba(39, 68, 114, 0.15);
+        border-radius: 10px;
+    }
+
+    .rva-table {
+        min-width: 650px; /* Reduced slightly to fit better on tablets but still force scroll on mobile */
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
     .rva-table th,
     .rva-table td {
-        padding: 14px 16px;
+        padding: 15px 18px;
+        font-size: 14px !important;
     }
 
     .rva-table th:nth-child(2),

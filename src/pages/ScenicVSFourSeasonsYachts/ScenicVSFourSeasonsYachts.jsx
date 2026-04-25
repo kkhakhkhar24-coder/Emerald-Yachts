@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./ScenicVSFourSeasonsYachts.css";
 import {
@@ -96,6 +96,16 @@ function FAQ() {
 }
 
 function ScenicVSFourSeasonsYachts() {
+  const [current, setCurrent] = useState(0);
+  const images = [heroImage1, heroImage2, heroImage3];
+
+  useEffect(() => {
+    const heroSlider = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(heroSlider);
+  }, [images.length]);
+
   return (
     <>
       <Helmet>
@@ -114,20 +124,24 @@ function ScenicVSFourSeasonsYachts() {
           name="title"
           content="Scenic vs Four Seasons Yachts: Which Luxury Yacht Is Best?"
         />
+        <link rel="preload" as="image" href={images[0]} />
       </Helmet>
 
       {/* Navbar */}
       <Navbar />
 
       {/* SECTION 1: HERO */}
-      <section
-        className="svf-hero"
-        style={{
-          "--h1": `url(${heroImage1})`,
-          "--h2": `url(${heroImage2})`,
-          "--h3": `url(${heroImage3})`,
-        }}
-      >
+      <section className="svf-hero">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`svf-hero-bg ${index === current ? "active" : ""}`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
+        <div className="svf-hero-overlay"></div>
+
         <div className="svf-hero-inner">
           <span className="svf-eyebrow">Expert Comparison Guide</span>
           <h1 className="svf-h1">
@@ -588,7 +602,10 @@ function ScenicVSFourSeasonsYachts() {
                 margin: "20px auto 0",
               }}
             >
-              Experience a new era of luxury at sea where legendary service meets the horizon. Four Seasons Yachts invites you to embark on a grand voyage, bringing the world-class sophistication of the Four Seasons brand to the seas.
+              Experience a new era of luxury at sea where legendary service
+              meets the horizon. Four Seasons Yachts invites you to embark on a
+              grand voyage, bringing the world-class sophistication of the Four
+              Seasons brand to the seas.
             </p>
           </div>
           <div className="svf-video-wrapper">
@@ -636,10 +653,14 @@ function ScenicVSFourSeasonsYachts() {
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Iconic Destinations</span>
+                    <span className="svf-gallery-badge">
+                      Iconic Destinations
+                    </span>
                     <h3>The Timeless Beauty of Mont Saint-Michel</h3>
                     <p>
-                      Step into one of France’s most iconic landmarks, where history, architecture, and atmosphere come together in a truly unforgettable coastal setting.
+                      Step into one of France’s most iconic landmarks, where
+                      history, architecture, and atmosphere come together in a
+                      truly unforgettable coastal setting.
                     </p>
                   </div>
                 </div>
@@ -674,7 +695,11 @@ function ScenicVSFourSeasonsYachts() {
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">Cultural Journeys</span>
                     <h3>Ancient Athens & The Acropolis</h3>
-                    <p>Discover the origins of Western civilization as you explore Athens and the Acropolis, guided by immersive experiences that bring history to life.</p>
+                    <p>
+                      Discover the origins of Western civilization as you
+                      explore Athens and the Acropolis, guided by immersive
+                      experiences that bring history to life.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -692,7 +717,9 @@ function ScenicVSFourSeasonsYachts() {
                     <span className="svf-gallery-badge">Coastal Escapes</span>
                     <h3>Ireland’s Dramatic Atlantic Coastline</h3>
                     <p>
-                      Experience the raw beauty of Ireland’s Cliffs of Moher, where dramatic ocean views and sweeping landscapes create unforgettable moments along your curated journey.
+                      Experience the raw beauty of Ireland’s Cliffs of Moher,
+                      where dramatic ocean views and sweeping landscapes create
+                      unforgettable moments along your curated journey.
                     </p>
                   </div>
                 </div>
