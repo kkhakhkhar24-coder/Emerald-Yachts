@@ -5,7 +5,6 @@ import "./LuxuryYachtCruises.css";
 import ProfilePicture from "../../assets/image.jpg";
 import {
   Check,
-  AlertCircle,
   Anchor,
   Ship,
   Sparkles,
@@ -16,9 +15,6 @@ import {
   Building2,
   Palette,
   Circle,
-  Flag,
-  Waves,
-  Layers,
   Star,
   Navigation,
   Diamond,
@@ -36,6 +32,11 @@ import ImageGallery6 from "../../assets/LuxuryYachtCruises/ImageGallery6.jpg";
 import EmeraldKaia from "../../assets/LuxuryYachtCruises/Emerald Kaia.jpg";
 import RitzCart from "../../assets/LuxuryYachtCruises/Ritzcart.jpg";
 import AmaDante from "../../assets/LuxuryYachtCruises/AmaDante_Yachts.jpg";
+import heroImage1 from "../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_Santo_Stefano_23262.jpg";
+import heroImage2 from "../../assets/LuxuryYachtCruises/Ritzcarton.jpg";
+import heroImage3 from "../../assets/LuxuryYachtCruises/AmaBella.jpg";
+
+const heroImages = [heroImage1, heroImage2, heroImage3];
 
 function useFadeIn() {
   const ref = useRef(null);
@@ -150,6 +151,15 @@ function FAQ() {
 }
 
 export default function YachtCruisesPage() {
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeroIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -161,6 +171,7 @@ export default function YachtCruisesPage() {
           name="description"
           content="Compare the best luxury yacht cruises. Ritz-Carlton, Aman, Scenic, Emerald, Four Seasons, and Orient Express with pricing, inclusions, and expert guidance from Angela Hughes."
         />
+        <link rel="preload" as="image" href={heroImages[0]} />
 
         {/* WebPage Schema */}
         <script type="application/ld+json">
@@ -402,6 +413,15 @@ export default function YachtCruisesPage() {
 
       {/* ===== HERO SECTION ===== */}
       <section className="luxury-hero">
+        {heroImages.map((img, index) => (
+          <div
+            key={index}
+            className={`luxury-hero-bg ${
+              index === currentHeroIndex ? "active" : ""
+            }`}
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        ))}
         <div className="luxury-hero-content">
           <span className="luxury-hero-eyebrow">Yacht Cruise Planning</span>
           <h1>Luxury Yacht Cruises</h1>

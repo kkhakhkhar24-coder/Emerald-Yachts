@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./JapanTravelCost.css";
 import { Helmet } from "react-helmet-async";
-import heroImage1 from "../../assets/TripToJapan/Hero1.jpg";
-import heroImage2 from "../../assets/TripToJapan/Hero2.jpg";
-import heroImage3 from "../../assets/TripToJapan/Hero3.jpg";
+import heroImage1 from "../../assets/JapanTravelCost/Hero1.webp";
+import heroImage2 from "../../assets/JapanTravelCost/Hero2.webp";
+import heroImage3 from "../../assets/JapanTravelCost/Hero3.webp";
+import JAPAN_ATMOSPHERE from "../../assets/JapanTravelCost/JAPAN_ATMOSPHERE.webp";
 import {
     Compass,
     Plus,
@@ -25,24 +26,16 @@ import {
     Ship,
     Plane,
     Star,
-    Gem,
     Bed,
     Utensils,
     Coffee,
     Car,
-    Scale,
     TrendingUp,
     AlertTriangle,
     Check,
     UserCheck,
-    ChevronDown,
-    ChevronUp,
-    Calculator,
-    MessageSquare,
     Award,
     Lightbulb,
-    Link,
-    HelpCircle,
     ShieldCheck,
     Timer,
     Landmark
@@ -50,6 +43,9 @@ import {
 
 function JapanTravelCost() {
     const [showAnswer, setShowAnswer] = useState(false);
+    const [currentHero, setCurrentHero] = useState(0);
+
+    const heroImages = [heroImage1, heroImage2, heroImage3];
 
     const budgetRef = useRef(null);
 
@@ -76,10 +72,15 @@ function JapanTravelCost() {
 
         const cleanBudget = animateBars(budgetRef.current, ".jtc-budget-bar");
 
+        const heroTimer = setInterval(() => {
+            setCurrentHero((prev) => (prev + 1) % heroImages.length);
+        }, 5000);
+
         return () => {
             cleanBudget();
+            clearInterval(heroTimer);
         };
-    }, []);
+    }, [heroImages.length]);
 
     return (
         <>
@@ -91,19 +92,21 @@ function JapanTravelCost() {
                     name="description"
                     content="An expert breakdown of Japan travel costs, planning, and luxury vs value."
                 />
+                {/* Preload first hero image for better performance */}
+                <link rel="preload" as="image" href={heroImages[0]} />
             </Helmet>
 
             <Navbar />
 
             {/* SECTION 1: HERO */}
-            <section
-                className="jtc-hero"
-                style={{
-                    "--h1": `url(${heroImage1})`,
-                    "--h2": `url(${heroImage2})`,
-                    "--h3": `url(${heroImage3})`,
-                }}
-            >
+            <section className="jtc-hero">
+                {heroImages.map((img, index) => (
+                    <div
+                        key={index}
+                        className={`jtc-hero-bg ${index === currentHero ? "active" : ""}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    ></div>
+                ))}
                 <div className="jtc-hero-overlay"></div>
 
                 <div className="jtc-inner jtc-hero-inner">
@@ -179,9 +182,11 @@ function JapanTravelCost() {
                     <div className="jtc-media-spread">
                         <div className="jtc-media-img-box">
                             <img
-                                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop"
+                                src={JAPAN_ATMOSPHERE}
                                 alt="Tokyo Skyline at Night"
                                 className="jtc-fluid-img"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <div className="jtc-media-video-box">
@@ -784,6 +789,8 @@ function JapanTravelCost() {
                                 src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2070&auto=format&fit=crop"
                                 alt="Sushi Fine Dining"
                                 className="jtc-fluid-img"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
 

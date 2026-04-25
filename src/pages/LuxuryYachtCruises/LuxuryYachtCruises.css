@@ -1,38 +1,6 @@
 /* ========================================
    LUXURY YACHT CRUISES - ORGANIZED CSS
-   Structure: Section-by-section with responsive styles grouped together
-   Generated: 10/4/2026, 2:29:40 am
-   Note: NO CSS properties changed, only reorganized
    ======================================== */
-
-/* ========================================
-   ROOT VARIABLES & GLOBAL STYLES
-   ======================================== */
-
-:root {
-    /* Color Palette */
-    --navy: #274472;
-    --navy-light: #274472cc;
-
-    /* Background Variations */
-    --bg-white: #ffffff;
-    --bg-soft: rgb(231, 243, 245);
-    --bg-dark: #0f1c2e;
-    --bg-dark2: #1c2f4a;
-
-    /* Font Families */
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Montserrat', sans-serif;
-}
-
-/* Base Body Setup */
-body {
-    font-family: var(--font-body) !important;
-    color: var(--navy);
-    background: var(--bg-white);
-    overflow-x: hidden;
-    font-size: 18px;
-}
 
 /* Global Typography */
 .luxury-hero h1,
@@ -145,7 +113,6 @@ body {
 }
 
 .luxury-section-p-clean {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     line-height: 1.8 !important;
     color: #274472;
@@ -160,7 +127,6 @@ body {
 
 .luxury-section-number {
     display: block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
     font-weight: 700 !important;
     color: #274472;
@@ -170,7 +136,6 @@ body {
 }
 
 .luxury-h1 {
-    font-family: 'Playfair Display', serif !important;
     font-size: 60px !important;
     font-weight: 400 !important;
     line-height: 1.1 !important;
@@ -178,7 +143,6 @@ body {
 }
 
 .luxury-h2 {
-    font-family: 'Playfair Display', serif !important;
     font-size: 48px !important;
     font-weight: 500 !important;
     color: #274472 !important;
@@ -187,7 +151,6 @@ body {
 }
 
 .luxury-p {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     font-weight: 300 !important;
     color: #274472 !important;
@@ -212,10 +175,28 @@ body {
     padding: 140px 20px 100px;
     position: relative;
     text-align: center;
+    background-color: #0f1c2e; /* Fallback bg */
+    overflow: hidden;
+}
+
+.luxury-hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    animation: yacht-bgSlide 18s infinite ease-in-out;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 2s ease-in-out, transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform;
+    z-index: 0;
+}
+
+.luxury-hero-bg.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .luxury-hero::before {
@@ -239,22 +220,6 @@ body {
     opacity: 0.3;
     pointer-events: none;
     z-index: 1;
-}
-
-@keyframes yacht-bgSlide {
-
-    0%,
-    100% {
-        background-image: url('../../assets/LuxuryYachtCruises/SSC_RA_Italy_Porto_Santo_Stefano_23262.jpg');
-    }
-
-    33% {
-        background-image: url('../../assets/LuxuryYachtCruises/Ritzcarton.jpg');
-    }
-
-    66% {
-        background-image: url('../../assets/LuxuryYachtCruises/AmaBella.jpg');
-    }
 }
 
 @keyframes yacht-snowfall {
@@ -288,7 +253,6 @@ body {
 }
 
 .luxury-hero h1 {
-    font-family: 'Playfair Display', serif !important;
     font-weight: 400 !important;
     line-height: 1.1 !important;
     color: #ffffff;
@@ -305,17 +269,16 @@ body {
     text-transform: uppercase !important;
     margin-bottom: 24px;
     display: block;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 .luxury-hero-sub {
+    font-family: var(--font-display) !important;
     font-size: 18px !important;
     font-style: italic !important;
     color: rgba(255, 255, 255, 0.9) !important;
     margin-bottom: 35px;
     font-weight: 300 !important;
     letter-spacing: 0.5px !important;
-    font-family: 'Playfair Display', serif !important;
 }
 
 .luxury-hero-lead {
@@ -327,7 +290,6 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Feature Cards */
@@ -417,12 +379,12 @@ body {
 }
 
 .luxury-hero-read-more {
+    font-family: var(--font-display) !important;
     display: inline-block;
     background: transparent;
     border: none;
     color: #ffffff;
     padding: 6px 0;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 11px !important;
     font-weight: 700 !important;
     letter-spacing: 2px !important;
@@ -445,6 +407,7 @@ body {
 }
 
 .luxury-btn-primary {
+    font-family: var(--font-body) !important;
     background: #ffffff;
     color: #000000;
     padding: 18px 44px;
@@ -456,7 +419,6 @@ body {
     letter-spacing: 1.5px !important;
     transition: all 0.3s ease;
     border-radius: 4px;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 .luxury-btn-primary:hover {
@@ -467,6 +429,7 @@ body {
 }
 
 .luxury-btn-secondary {
+    font-family: var(--font-body) !important;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #fff;
@@ -478,7 +441,6 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase !important;
     border-radius: 4px;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 .luxury-btn-secondary:hover {
@@ -699,7 +661,6 @@ body {
 }
 
 .luxury-strip-header .luxury-h2 {
-    font-family: 'Playfair Display', serif !important;
     font-size: 48px !important;
     font-weight: 500 !important;
     color: #274472 !important;
@@ -855,7 +816,7 @@ body {
 }
 
 .luxury-strip-new-brand {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 22px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -868,7 +829,6 @@ body {
 }
 
 .luxury-strip-new-tagline {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     color: #274472;
     opacity: 0.7;
@@ -887,7 +847,6 @@ body {
 }
 
 .luxury-strip-new-price {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px !important;
     font-weight: 700 !important;
     color: #274472;
@@ -953,7 +912,6 @@ body {
 }
 
 .luxury-strip-brand {
-    font-family: 'Playfair Display', serif !important;
     font-size: 20px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -962,7 +920,6 @@ body {
 }
 
 .luxury-strip-desc {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
     color: #274472;
     opacity: 0.6;
@@ -982,14 +939,12 @@ body {
 }
 
 .luxury-strip-price {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     color: #274472;
 }
 
 .luxury-strip-unit {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
     text-transform: uppercase !important;
     letter-spacing: 1px;
@@ -1084,7 +1039,6 @@ body {
 }
 
 .luxury-intro-lead {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px !important;
     font-weight: 400 !important;
     color: #274472 !important;
@@ -1158,7 +1112,7 @@ body {
 }
 
 .luxury-intro-card-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 500 !important;
     color: #ffffff !important;
@@ -1212,7 +1166,6 @@ body {
     align-items: center;
     gap: 12px;
     color: rgba(255, 255, 255, 0.85);
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     letter-spacing: 0.5px !important;
@@ -1246,7 +1199,6 @@ body {
 }
 
 .luxury-lead-text {
-    font-family: 'Playfair Display', serif !important;
     font-size: 26px !important;
     line-height: 1.4 !important;
     color: #274472;
@@ -1274,7 +1226,6 @@ body {
 }
 
 .luxury-highlight-text {
-    font-family: 'Playfair Display', serif !important;
     font-size: 22px !important;
     font-weight: 500 !important;
 }
@@ -1294,7 +1245,6 @@ body {
 }
 
 .luxury-visual-label {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
@@ -1437,7 +1387,6 @@ body {
 
 /* Tier Label */
 .luxury-pricing-tier {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     letter-spacing: 2px !important;
@@ -1465,7 +1414,6 @@ body {
 
 /* Brand Name */
 .luxury-pricing-brand {
-    font-family: 'Playfair Display', serif !important;
     font-size: 22px !important;
     font-weight: 500 !important;
     color: #274472 !important;
@@ -1484,7 +1432,6 @@ body {
 }
 
 .luxury-pricing-currency {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 28px !important;
     font-weight: 600 !important;
     color: #274472 !important;
@@ -1493,7 +1440,6 @@ body {
 }
 
 .luxury-pricing-value {
-    font-family: 'Playfair Display', serif !important;
     font-size: 56px !important;
     font-weight: 600 !important;
     color: #274472 !important;
@@ -1507,7 +1453,6 @@ body {
 
 /* Period */
 .luxury-pricing-period {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     color: #64748b !important;
@@ -1613,7 +1558,7 @@ body {
 }
 
 .luxury-pricing-card h3 {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 22px !important;
     color: #274472;
     margin: 0 0 12px 0 !important;
@@ -1626,7 +1571,6 @@ body {
 }
 
 .luxury-pricing-brand {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: #64748b;
     margin: 0 0 20px 0 !important;
@@ -1638,7 +1582,6 @@ body {
 }
 
 .luxury-pricing-amount {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 28px !important;
     color: #274472;
     font-weight: 700 !important;
@@ -1651,7 +1594,6 @@ body {
 }
 
 .luxury-pricing-unit {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
     color: #64748b;
     margin: 0 !important;
@@ -1687,7 +1629,6 @@ body {
 }
 
 .luxury-pricing-footer .luxury-section-p-clean {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     font-weight: 500 !important;
     color: #274472 !important;
@@ -1796,7 +1737,6 @@ body {
 }
 
 .luxury-mistakes-eyebrow {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 12px !important;
     font-weight: 600 !important;
     letter-spacing: 3px !important;
@@ -1833,7 +1773,7 @@ body {
 }
 
 .luxury-mistakes-truth {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 36px !important;
     font-weight: 600 !important;
     color: #274472 !important;
@@ -1933,7 +1873,6 @@ body {
 }
 
 .luxury-assumption-text {
-    font-family: 'Playfair Display', serif !important;
     font-size: 26px !important;
     line-height: 1.4 !important;
     color: #274472;
@@ -1956,7 +1895,6 @@ body {
 }
 
 .luxury-impact-word {
-    font-family: 'Playfair Display', serif !important;
     font-size: 24px !important;
     font-weight: 600 !important;
     font-style: italic !important;
@@ -1987,7 +1925,6 @@ body {
 }
 
 .luxury-card-num {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 11px !important;
     font-weight: 700 !important;
     color: #274472;
@@ -1996,7 +1933,6 @@ body {
 }
 
 .luxury-correction-card .luxury-p {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     color: #274472 !important;
     font-weight: 400 !important;
@@ -2018,7 +1954,6 @@ body {
 }
 
 .luxury-alignment-inner .luxury-p {
-    font-family: 'Playfair Display', serif !important;
     font-size: 20px !important;
     font-style: italic !important;
     font-weight: 500 !important;
@@ -2271,7 +2206,6 @@ body {
 }
 
 .luxury-brand-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
     color: #64748b;
     line-height: 1.7;
@@ -2333,7 +2267,6 @@ body {
 
 .luxury-brand-number {
     display: block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 12px !important;
     font-weight: 700 !important;
     color: #3b82f6;
@@ -2343,7 +2276,7 @@ body {
 }
 
 .luxury-brand-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -2396,7 +2329,6 @@ body {
 /* .luxury-brand-dot is no longer used - replaced with Lucide Sparkles icon */
 
 .luxury-brand-feature-text {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: #475569;
     line-height: 1.6 !important;
@@ -2554,7 +2486,6 @@ body {
 
 .luxury-scenario-label {
     display: block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -2565,7 +2496,7 @@ body {
 }
 
 .luxury-scenario-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 20px !important;
     color: #274472;
     font-weight: 600 !important;
@@ -2582,7 +2513,6 @@ body {
 
 .luxury-rec-tag {
     display: block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 9px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -2592,7 +2522,7 @@ body {
 }
 
 .luxury-recommendation-box .luxury-p {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 22px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -2746,7 +2676,6 @@ body {
 }
 
 .luxury-vs-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
     color: #64748b;
     line-height: 1.7;
@@ -2767,7 +2696,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Playfair Display', serif !important;
     font-size: 200px !important;
     font-weight: 700 !important;
     color: #274472;
@@ -2823,7 +2751,6 @@ body {
 }
 
 .luxury-card-indicator {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -2838,7 +2765,7 @@ body {
 }
 
 .luxury-card-h3 {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 32px !important;
     color: #274472;
     font-weight: 600 !important;
@@ -2889,7 +2816,6 @@ body {
 }
 
 .luxury-vs-list li .luxury-p {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: #475569;
     line-height: 1.6 !important;
@@ -3044,7 +2970,6 @@ body {
 
 .luxury-authority-label {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 11px !important;
     font-weight: 700 !important;
     color: #274472;
@@ -3055,7 +2980,6 @@ body {
 }
 
 .luxury-authority-title {
-    font-family: 'Playfair Display', serif !important;
     font-size: 48px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -3064,7 +2988,6 @@ body {
 }
 
 .luxury-authority-role {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     color: #64748b;
@@ -3084,7 +3007,6 @@ body {
 }
 
 .luxury-authority-text {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     color: #475569;
     line-height: 1.8 !important;
@@ -3130,7 +3052,7 @@ body {
 }
 
 .luxury-insight-text {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 17px !important;
     color: #274472;
     line-height: 1.6 !important;
@@ -3155,7 +3077,7 @@ body {
 }
 
 .luxury-stat-number {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 32px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -3163,7 +3085,6 @@ body {
 }
 
 .luxury-stat-label {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 12px !important;
     font-weight: 600 !important;
     color: #64748b;
@@ -3307,7 +3228,6 @@ body {
 }
 
 .luxury-gallery-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
     color: #64748b;
     line-height: 1.8;
@@ -3487,7 +3407,7 @@ body {
 }
 
 .luxury-gallery-h3 {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 32px !important;
     font-weight: 700 !important;
     color: #ffffff !important;
@@ -3498,7 +3418,6 @@ body {
 }
 
 .luxury-gallery-item-p {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.6 !important;
@@ -3708,7 +3627,6 @@ body {
 }
 
 .luxury-video-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
     color: #cbd5e1 !important;
     line-height: 1.7 !important;
@@ -3793,7 +3711,6 @@ body {
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
     margin-bottom: 14px;
-    font-family: 'Montserrat', sans-serif !important;
     border-radius: 30px;
     border: 1px solid rgba(96, 165, 250, 0.3);
     backdrop-filter: blur(10px);
@@ -3804,7 +3721,6 @@ body {
     color: #e2e8f0 !important;
     line-height: 1.7 !important;
     margin: 0;
-    font-family: 'Montserrat', sans-serif !important;
     font-weight: 300 !important;
     opacity: 0.95;
     max-width: 700px;
@@ -3911,7 +3827,6 @@ body {
 }
 
 .luxury-faq-intro {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     font-weight: 300 !important;
     color: rgba(39, 68, 114, 0.7) !important;
@@ -3940,7 +3855,6 @@ body {
     align-items: center;
     padding: 22px 8px;
     gap: 18px;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     font-weight: 500 !important;
     color: #274472 !important;
@@ -3962,7 +3876,6 @@ body {
 }
 
 .luxury-faq-a-inner {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 17px !important;
     line-height: 1.75 !important;
     color: rgba(39, 68, 114, 0.82) !important;
@@ -4081,7 +3994,6 @@ body {
 }
 
 .luxury-cta-top-line {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px !important;
     color: #ffffff !important;
     margin-bottom: 24px !important;
@@ -4092,7 +4004,6 @@ body {
 }
 
 .luxury-cta-main-title {
-    font-family: 'Playfair Display', serif !important;
     font-size: 48px !important;
     font-weight: 600 !important;
     color: #ffffff !important;
@@ -4102,7 +4013,7 @@ body {
 }
 
 .luxury-cta-bottom-line {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 22px !important;
     font-style: italic !important;
     color: #ffffff !important;
@@ -4216,7 +4127,6 @@ body {
 }
 
 .luxury-brand-highlight-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     color: #274472;
     font-weight: 300 !important;
@@ -4276,7 +4186,7 @@ body {
 }
 
 .luxury-highlight-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 600 !important;
     color: #274472;
@@ -4285,7 +4195,6 @@ body {
 }
 
 .luxury-highlight-desc {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: #274472;
     font-weight: 300 !important;

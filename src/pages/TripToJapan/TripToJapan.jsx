@@ -3,34 +3,49 @@ import "../TripToJapan/TripToJapan.css";
 import { MapPin, Calendar, DollarSign, Compass, Clock, Star, ArrowRight, Sparkles, Flower, Leaf, Sun, Snowflake, Wallet, Gem, Building, Plane, Users, Train, Ship, Search, Utensils, CheckCircle, LayoutList, ShieldCheck, Building2, Trees, AlertCircle, Landmark, Flame, RotateCcw, TrendingUp, Luggage, CalendarOff, HeartCrack, Gauge, Hotel, Scale, Footprints, BatteryCharging, Moon, Sunrise, UtensilsCrossed, Timer, GitBranch } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import profilePicture from "../../assets/image.jpg";
-import heroImage1 from "../../assets/TripToJapan/Hero1.jpg";
-import heroImage2 from "../../assets/TripToJapan/Hero2.jpg";
-import heroImage3 from "../../assets/TripToJapan/Hero3.jpg";
-import planningJapan from "../../assets/TripToJapan/Planning_Japan.jpg";
-import decisions4 from "../../assets/TripToJapan/4_Decisions.jpg";
-import bestTime from "../../assets/TripToJapan/Best_Time_Visit_Japan.jpg";
-import buildItinerary from "../../assets/TripToJapan/Build_Itinerary.jpg";
+import heroImage1 from "../../assets/TripToJapan/Hero1.webp";
+import heroImage2 from "../../assets/TripToJapan/Hero2.webp";
+import heroImage3 from "../../assets/TripToJapan/Hero3.webp";
+import planningJapan from "../../assets/TripToJapan/Planning_Japan.webp";
+import decisions4 from "../../assets/TripToJapan/4_Decisions.webp";
+import bestTime from "../../assets/TripToJapan/Best_Time_Visit_Japan.webp";
+import buildItinerary from "../../assets/TripToJapan/Build_Itinerary.webp";
+
+import { useState, useEffect } from "react";
 
 function TripToJapan() {
+    const [currentHero, setCurrentHero] = useState(0);
+    const heroImages = [heroImage1, heroImage2, heroImage3];
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentHero((prev) => (prev + 1) % heroImages.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [heroImages.length]);
+
     return (
         <>
             <Helmet>
                 <title>Plan Your Trip to Japan: The Complete Guide | Angela Hughes</title>
                 <meta name="description" content="Complete guide to planning your Japan trip. Learn timing, itineraries, costs, and expert tips from Angela Hughes for an unforgettable Japanese experience." />
                 <meta name="keywords" content="Japan trip planning, visit Japan, Japan travel guide, Tokyo Kyoto Osaka, Japan itinerary, Japan travel costs, best time to visit Japan" />
+                {/* Preload first hero image for better performance */}
+                <link rel="preload" as="image" href={heroImages[0]} />
             </Helmet>
 
             <Navbar />
 
             {/* ── HERO ─────────────────────────────────────────────── */}
-            <section
-                className="jpn-hero"
-                style={{
-                    "--jpn-h1": `url('${heroImage1}')`,
-                    "--jpn-h2": `url('${heroImage2}')`,
-                    "--jpn-h3": `url('${heroImage3}')`,
-                }}
-            >
+            <section className="jpn-hero">
+                {heroImages.map((img, index) => (
+                    <div
+                        key={index}
+                        className={`jpn-hero-bg ${index === currentHero ? "active" : ""}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    ></div>
+                ))}
+                <div className="jpn-hero-overlay"></div>
                 <div className="jpn-hero-inner">
                     <span className="jpn-eyebrow">Expert Travel Guide</span>
 
@@ -132,6 +147,8 @@ function TripToJapan() {
                                     src={planningJapan} 
                                     alt="Luxury Ryokan Interior in Japan" 
                                     className="jpn-section-image"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <p className="jpn-p jpn-mb-md">Japan is not a plug-and-play destination.</p>
@@ -192,6 +209,8 @@ function TripToJapan() {
                                 src={decisions4} 
                                 alt="Tokyo Skyline at Blue Hour" 
                                 className="jpn-section-image"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <div className="jpn-decisions-grid">
@@ -248,6 +267,8 @@ function TripToJapan() {
                                     src={bestTime} 
                                     alt="Cherry Blossoms in Japan" 
                                     className="jpn-section-image"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <p className="jpn-p jpn-step1-intro">Japan changes dramatically by season.</p>
@@ -430,6 +451,8 @@ function TripToJapan() {
                                     src={buildItinerary} 
                                     alt="Arashiyama Bamboo Forest" 
                                     className="jpn-section-image"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <p className="jpn-p jpn-step4-intro">This is where most trips succeed or fail.</p>
@@ -875,7 +898,7 @@ function TripToJapan() {
                             </div>
                             <div className="jpn-expert-new-image-side">
                                 <div className="jpn-expert-new-image-container">
-                                    <img src={profilePicture} alt="Angela Hughes" className="jpn-expert-new-main-img" />
+                                    <img src={profilePicture} alt="Angela Hughes" className="jpn-expert-new-main-img" loading="lazy" decoding="async" />
                                 </div>
                             </div>
                         </div>

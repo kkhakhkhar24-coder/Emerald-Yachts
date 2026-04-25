@@ -66,15 +66,15 @@
    SHARED TYPOGRAPHY
    ============================================================ */
 .jtc-h1 {
-    font-family: 'Playfair Display', serif !important;
     color: #ffffff !important;
+    font-weight: 700;
     line-height: 1.1 !important;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
 }
 
 .jtc-h2 {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.1 !important;
@@ -82,7 +82,6 @@
 }
 
 .jtc-p {
-    font-family: 'Montserrat', sans-serif !important;
     font-weight: 300 !important;
     line-height: 1.75 !important;
     color: var(--navy) !important;
@@ -215,11 +214,25 @@
     justify-content: center;
     position: relative;
     text-align: center;
-    background-color: var(--bg-dark);
+    overflow: hidden;
+}
+
+.jtc-hero-bg {
+    position: absolute;
+    inset: 0;
     background-size: cover;
     background-position: center;
-    animation: jtcSlide 18s infinite ease-in-out;
-    overflow: hidden;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 10s linear;
+    z-index: 0;
+    will-change: opacity, transform;
+    transform: scale(1.1);
+}
+
+.jtc-hero-bg.active {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
 }
 
 .jtc-hero::after {
@@ -247,21 +260,6 @@
     }
 }
 
-@keyframes jtcSlide {
-
-    0%,
-    100% {
-        background-image: var(--h1);
-    }
-
-    33% {
-        background-image: var(--h2);
-    }
-
-    66% {
-        background-image: var(--h3);
-    }
-}
 
 /* Hero Padding - Desktop */
 @media (min-width: 1025px) {
@@ -315,7 +313,6 @@
 
 .jtc-eyebrow {
     color: var(--bg-soft) !important;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 11px !important;
     letter-spacing: 4px;
     font-weight: 700;
@@ -354,8 +351,9 @@
 }
 
 .jtc-snippet-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 30px 40px;
     border-left: 4px solid var(--bg-soft);
     text-align: left;
@@ -365,7 +363,6 @@
 
 .jtc-snippet-label {
     color: var(--bg-soft) !important;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 10px !important;
     font-weight: 700;
     letter-spacing: 2px;
@@ -380,10 +377,10 @@
 }
 
 .jtc-hero-toggle {
+    font-family: var(--font-body);
     background: transparent;
     border: none;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -401,12 +398,12 @@
 }
 
 .jtc-btn-primary {
+    font-family: var(--font-body);
     background: #ffffff !important;
     color: var(--navy) !important;
     padding: 16px 45px;
     border: none;
     border-radius: 4px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -521,7 +518,6 @@
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -604,7 +600,7 @@
 }
 
 .jtc-itin-row-price .jtc-price {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-display) !important;
     font-size: 18px;
     font-weight: 700;
     color: var(--navy);
@@ -680,7 +676,7 @@
 }
 
 .jtc-card-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -700,7 +696,6 @@
 }
 
 .jtc-price-val {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 24px;
     font-weight: 700;
     color: var(--navy);
@@ -708,7 +703,6 @@
 }
 
 .jtc-price-sub {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -804,7 +798,7 @@
 }
 
 .jtc-h3-alt {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 26px !important;
     color: var(--navy);
     margin: 0 0 30px;
@@ -827,7 +821,7 @@
 }
 
 .jtc-sticky-desc {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 18px !important;
     line-height: 1.7 !important;
     color: var(--navy);
@@ -1083,7 +1077,6 @@
 }
 
 .jtc-strip-name {
-    font-family: 'Playfair Display', serif !important;
     font-size: 22px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1096,7 +1089,6 @@
 }
 
 .jtc-strip-desc {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     color: rgba(39, 68, 114, 0.55) !important;
@@ -1114,7 +1106,6 @@
 }
 
 .jtc-strip-price {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px !important;
     font-weight: 700 !important;
     color: var(--navy) !important;
@@ -1301,7 +1292,6 @@
 }
 
 .jtc-itin-name {
-    font-family: 'Playfair Display', serif !important;
     font-size: 22px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1319,7 +1309,6 @@
 
 .jtc-itin-price-badge {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 700 !important;
     color: var(--navy) !important;
@@ -1489,7 +1478,7 @@
 }
 
 .jtc-budget-name {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 20px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1498,7 +1487,6 @@
 }
 
 .jtc-budget-pct {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     color: var(--navy) !important;
@@ -1668,7 +1656,6 @@
     max-width: 800px;
     margin: 0 auto 50px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     font-weight: 300 !important;
     line-height: 1.7 !important;
@@ -1751,7 +1738,6 @@
 
 /* Class Name */
 .jtc-flight-new-class {
-    font-family: 'Playfair Display', serif !important;
     font-size: 26px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -1765,7 +1751,6 @@
 
 /* Price */
 .jtc-flight-new-price {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 32px !important;
     font-weight: 700 !important;
     color: var(--navy) !important;
@@ -1779,7 +1764,6 @@
 
 /* Label */
 .jtc-flight-new-label {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
     font-weight: 400 !important;
     color: var(--navy) !important;
@@ -1996,28 +1980,6 @@
     }
 }
 
-/* ============================================================
-   SECTIONS 8-23: OPTIMIZED STYLES
-   ============================================================ */
-
-/* --- SECTION 8: HOTELS IN JAPAN --- */
-/* --- SECTION 9: RYOKAN EXPERIENCE --- */
-/* --- SECTION 10: TRANSPORTATION COSTS --- */
-/* --- SECTION 11: FOOD AND DINING COSTS --- */
-/* --- SECTION 12: TOURS AND EXPERIENCES --- */
-/* --- SECTION 13: IS JAPAN EXPENSIVE? --- */
-/* --- SECTION 14: WHAT DRIVES THE COST --- */
-/* --- SECTION 15: COST EXAMPLES --- */
-/* --- SECTION 16: MISTAKES --- */
-/* --- SECTION 17: CLIENT INSIGHTS --- */
-/* --- SECTION 18: IS JAPAN WORTH IT? --- */
-/* --- SECTION 19: EXPERT TAKE --- */
-/* --- SECTION 20: REMEMBER ONE THING --- */
-/* --- SECTION 21: CTA --- */
-/* --- SECTION 22: WHERE TO GO NEXT --- */
-/* --- SECTION 23: FAQ --- */
-
-/* --- SHARED COMPONENTS (Sections 8-23) --- */
 .jtc-content-box {
     max-width: 1000px;
     margin: 0 auto;
@@ -2031,7 +1993,7 @@
 }
 
 .jtc-h3 {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 24px !important;
     font-weight: 500 !important;
     color: var(--navy);
@@ -2327,6 +2289,20 @@
     }
 }
 
+.jtc-food-gallery {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.12);
+}
+
+.jtc-food-gallery img {
+    border-radius: 16px;
+    width: 100%;
+    display: block;
+}
+
 /* --- COMPARISON CARD (Section 13) --- */
 .jtc-comparison-card {
     background: var(--bg-white);
@@ -2391,14 +2367,12 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: var(--navy);
     opacity: 0.8;
 }
 
 .jtc-inv-value {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     font-weight: 600 !important;
     color: var(--navy);
@@ -2413,7 +2387,6 @@
 }
 
 .jtc-total-label {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     font-weight: 700 !important;
     text-transform: uppercase;
@@ -2422,7 +2395,6 @@
 }
 
 .jtc-total-amount {
-    font-family: 'Playfair Display', serif !important;
     font-size: 24px !important;
     font-weight: 700 !important;
     color: var(--navy);
@@ -2590,7 +2562,6 @@
     border-top: 1px solid rgba(39, 68, 114, 0.1);
     font-size: 18px;
     color: var(--navy);
-    font-family: 'Playfair Display', serif !important;
 }
 
 @media (max-width: 900px) {
@@ -2644,7 +2615,6 @@
     color: #ffffff !important;
     stroke: #ffffff !important;
     fill: none;
-    /* Ensure icons don't fill unless intended */
 }
 
 .jtc-editorial-box {
@@ -2817,7 +2787,6 @@
 }
 
 .jtc-cta-item span {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     font-weight: 600 !important;
     color: var(--navy);
@@ -2888,7 +2857,6 @@
 }
 
 .jtc-price-main {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 28px !important;
     font-weight: 700 !important;
     color: var(--navy);
@@ -3046,7 +3014,6 @@
 
 .jtc-warning-icon {
     color: #dc2626;
-    /* Alert Red */
     flex-shrink: 0;
 }
 
@@ -3109,7 +3076,6 @@
 }
 
 .jtc-price-tag {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px !important;
     font-weight: 700 !important;
     color: var(--navy);
@@ -3475,7 +3441,7 @@
 }
 
 .jtc-pb-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 32px !important;
     color: #ffffff !important;
     line-height: 1.3 !important;
@@ -3484,7 +3450,6 @@
 }
 
 .jtc-pb-desc {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     color: rgba(255, 255, 255, 0.85) !important;
     line-height: 1.6 !important;
@@ -3571,7 +3536,6 @@
 }
 
 .jtc-pcta-title {
-    font-family: 'Playfair Display', serif !important;
     font-size: 42px !important;
     color: #ffffff !important;
     line-height: 1.15 !important;
@@ -3580,7 +3544,6 @@
 }
 
 .jtc-pcta-subtitle {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     color: rgba(255, 255, 255, 0.85) !important;
     margin-bottom: 35px;
@@ -3588,13 +3551,13 @@
 }
 
 .jtc-pcta-btn {
+    font-family: var(--font-body) !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: #ffffff;
     color: var(--navy);
     padding: 18px 40px;
-    font-family: 'Montserrat', sans-serif !important;
     font-weight: 700 !important;
     font-size: 14px !important;
     text-transform: uppercase;
@@ -3624,7 +3587,6 @@
 }
 
 .jtc-pcta-help-text {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     color: var(--navy) !important;
     font-weight: 700 !important;
@@ -3654,7 +3616,6 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 17px !important;
     color: var(--navy) !important;
     line-height: 1.5 !important;
@@ -3793,7 +3754,6 @@
 }
 
 .jtc-pn-text {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     color: var(--navy) !important;
     font-weight: 600 !important;
@@ -3881,7 +3841,6 @@
 }
 
 .jtc-el-number {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px !important;
     color: var(--navy);
     opacity: 0.5;
@@ -3890,7 +3849,7 @@
 }
 
 .jtc-el-title {
-    font-family: 'Playfair Display', serif !important;
+    font-family: var(--font-display) !important;
     font-size: 32px !important;
     color: var(--navy) !important;
     font-weight: 500 !important;
@@ -3956,7 +3915,6 @@
     align-items: center;
     padding: 22px 8px;
     gap: 18px;
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
@@ -3978,7 +3936,6 @@
 }
 
 .jtc-faq-a-inner {
-    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     line-height: 1.75 !important;
     color: rgba(39, 68, 114, 0.82) !important;
@@ -4245,7 +4202,6 @@
     align-items: flex-start;
     gap: 15px;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.4;
 }
