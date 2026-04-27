@@ -22,6 +22,7 @@ import TripToJapan from "./pages/TripToJapan/TripToJapan";
 import FirstTimeJapan from "./pages/FirstTimeJapan/FirstTimeJapan";
 import BestTimeJapan from "./pages/BestTimeVisitJapan/Besttimejapan";
 import JapanTravelCost from "./pages/JapanTravelCost/JapanTravelCost";
+import LuxuryTravelToJapan from "./pages/LuxuryTravelJapan/LuxuryTravelToJapan";
 
 function App() {
   return (
@@ -84,6 +85,10 @@ function App() {
             element={<DistinctiveVoyageSailings />}
           ></Route>
           <Route path="/trip-to-japan" element={<TripToJapan />}></Route>
+          <Route
+            path="/luxury-travel-to-japan"
+            element={<LuxuryTravelToJapan />}
+          ></Route>
           <Route
             path="/first-time-japan-itinerary"
             element={<FirstTimeJapan />}

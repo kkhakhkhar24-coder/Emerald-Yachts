@@ -102,6 +102,13 @@ const Navbar = () => {
                 Distinctive Voyage Sailings
               </NavLink>
 
+              <NavLink
+                to="/luxury-travel-to-japan"
+                className="nav-dropdown-single"
+              >
+                Luxury travel to Japan
+              </NavLink>
+
               <NavLink to="/trip-to-japan" className="nav-dropdown-single">
                 Trip To Japan
               </NavLink>
@@ -240,6 +247,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Distinctive Voyage Sailings
+            </NavLink>
+
+            <NavLink
+              to="/luxury-travel-to-japan"
+              className="nav-dropdown-single"
+            >
+              Luxury travel to Japan
             </NavLink>
 
             <NavLink
