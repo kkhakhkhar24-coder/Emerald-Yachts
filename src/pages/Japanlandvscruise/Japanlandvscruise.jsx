@@ -49,6 +49,29 @@ import Herobg1 from "../../assets/Japanlandvscruise/Japanlandvscruise1.jpg";
 import Herobg2 from "../../assets/Japanlandvscruise/Japanlandvscruise2.jpg";
 import Herobg3 from "../../assets/Japanlandvscruise/Japanlandvscruise3.jpg";
 
+/* ===== INLINE FAQ ACCORDION (BEST TIME JAPAN STYLE) ===== */
+const BTJapanFAQ = ({ items }) => {
+  const [open, setOpen] = useState(null);
+
+  return (
+    <div className="BTJapan_faq_list">
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className="BTJapan_faq_item"
+          onClick={() => setOpen(open === i ? null : i)}
+        >
+          <div className="BTJapan_faq_question">
+            <span>{item.q}</span>
+            <span className="BTJapan_faq_icon">{open === i ? "−" : "+"}</span>
+          </div>
+          {open === i && <p className="BTJapan_faq_answer">{item.a}</p>}
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const Japanlandvscruise = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [readMore, setReadMore] = useState(false);
@@ -1103,28 +1126,5 @@ const Japanlandvscruise = () => {
     </>
   );
 }
-
-/* ===== INLINE FAQ ACCORDION (BEST TIME JAPAN STYLE) ===== */
-const BTJapanFAQ = ({ items }) => {
-  const [open, setOpen] = useState(null);
-
-  return (
-    <div className="BTJapan_faq_list">
-      {items.map((item, i) => (
-        <div
-          key={i}
-          className="BTJapan_faq_item"
-          onClick={() => setOpen(open === i ? null : i)}
-        >
-          <div className="BTJapan_faq_question">
-            <span>{item.q}</span>
-            <span className="BTJapan_faq_icon">{open === i ? "−" : "+"}</span>
-          </div>
-          {open === i && <p className="BTJapan_faq_answer">{item.a}</p>}
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default Japanlandvscruise;

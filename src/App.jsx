@@ -22,6 +22,7 @@ import TripToJapan from "./pages/TripToJapan/TripToJapan";
 import FirstTimeJapan from "./pages/FirstTimeJapan/FirstTimeJapan";
 import BestTimeJapan from "./pages/BestTimeVisitJapan/Besttimejapan";
 import JapanTravelCost from "./pages/JapanTravelCost/JapanTravelCost";
+import Japanlandvscruise from "./pages/Japanlandvscruise/Japanlandvscruise";
 import LuxuryTravelToJapan from "./pages/LuxuryTravelJapan/LuxuryTravelToJapan";
 import AzamaraCruisesGuide from "./pages/AzamaraCruisesGuide/AzamaraCruisesGuide";
 
