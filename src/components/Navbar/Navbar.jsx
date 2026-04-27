@@ -137,6 +137,14 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/japan-land-vs-cruise"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Japan Land vs Cruise
+              </NavLink>
+
+              <NavLink
                 to="/azamara-cruises-guide-2026-2027"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -295,6 +303,14 @@ const Navbar = () => {
             >
               Best Time to Visit Japan
             </NavLink>
+
+            <NavLink
+                to="/japan-land-vs-cruise"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Japan Land vs Cruise
+              </NavLink>
 
             <NavLink
               to="/azamara-cruises-guide-2026-2027"

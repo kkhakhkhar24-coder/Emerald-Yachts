@@ -18,39 +18,36 @@ import {
   Moon,
   Sun,
   Heart,
-  AlertTriangle,
   XCircle,
   TrendingUp,
   Train,
   HelpCircle,
   Lightbulb,
   AlertCircle,
-  Eye,
-  Info,
   ChevronRight,
-  Plus,
   Globe,
   Anchor,
   RotateCcw,
   CheckCircle,
-  Map
+  Map,
+  Building2,
+  Mountain,
+  BookOpen,
+  ShieldAlert,
+  Route,
+  Target,
+  Layout,
+  Search,
+  Coffee,
+  List,
+  Landmark
 } from 'lucide-react';
 import Navbar from '../../components/Navbar/Navbar';
 import "./Japanlandvscruise.css";
-
-// Import Assets
-// import HeroBg from "../../assets/Japan/japan_hero.png";
-// import LandImg from "../../assets/Japan/japan_land.png";
-// import CruiseImg from "../../assets/Japan/japan_cruise.png";
 import AngelaImg from "../../assets/image.jpg";
-
-
 import Herobg1 from "../../assets/Japanlandvscruise/Japanlandvscruise1.jpg";
 import Herobg2 from "../../assets/Japanlandvscruise/Japanlandvscruise2.jpg";
-import Herobg3 from "../../assets/Japanlandvscruise/Japanlandvscruise3.jpg";  
-
-
-
+import Herobg3 from "../../assets/Japanlandvscruise/Japanlandvscruise3.jpg";
 
 const Japanlandvscruise = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -221,18 +218,16 @@ const Japanlandvscruise = () => {
             Most travelers think they want to see Japan. What they actually want is to feel it.
           </p>
 
-          {readMore && (
-            <div className="japan-hero-details">
-              <p className="japan-hero-lead">
-                If you are deciding between a land itinerary and a cruise in Japan, the real question is not which one is better. It is which one is better for how you want to experience the country.
-              </p>
-              <p className="japan-hero-lead">
-                After living in Japan and designing custom trips there for years, I can tell you this: one gives you depth, the other gives you ease. The right choice depends on your priorities.
-              </p>
-            </div>
-          )}
+          <div className={`japan-hero-details ${readMore ? 'expanded' : ''}`}>
+            <p className="japan-hero-lead">
+              If you are deciding between a land itinerary and a cruise in Japan, the real question is not which one is better. It is which one is better for how you want to experience the country.
+            </p>
+            <p className="japan-hero-lead">
+              After living in Japan and designing custom trips there for years, I can tell you this: one gives you depth, the other gives you ease. The right choice depends on your priorities.
+            </p>
+          </div>
 
-          <button 
+          <button
             className="japan-hero-read-more"
             onClick={() => setReadMore(!readMore)}
           >
@@ -273,7 +268,7 @@ const Japanlandvscruise = () => {
             </aside>
 
             <div className="japan-expert-content">
-              <h2 className="japan-h2">Plan Your Japan Trip With an Expert</h2>
+              <h2 className="japan-h2-expert">Plan Your Japan Trip With an Expert</h2>
               <p className="japan-section-p">
                 Japan is one of the most complex destinations in the world to plan well. The difference between a good trip and an exceptional one comes down to structure, timing, and access.
               </p>
@@ -289,7 +284,7 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* Comparison Question Section - Gallery Asymmetric Layout */}
-      <section className="japan-section japan-bg-white" style={{ overflow: 'visible' }}>
+      <section className="japan-section japan-bg-white jlc-overflow-visible">
         <div className="japan-inner">
           <div className="japan-gallery-split">
             {/* Background Accent Element */}
@@ -297,29 +292,29 @@ const Japanlandvscruise = () => {
 
             <div className="japan-gallery-images">
               <div className="japan-main-frame">
-                 <img src={Herobg2} alt="Japan Scene" className="japan-gallery-img-main" />
-                 <div className="japan-vertical-label">Editorial Insight</div>
+                <img src={Herobg2} alt="Japan Scene" className="japan-gallery-img-main" />
+                <div className="japan-vertical-label">Editorial Insight</div>
               </div>
               <div className="japan-sub-frame">
-                 <img src={Herobg3} alt="Japan Detail" className="japan-gallery-img-sub" />
+                <img src={Herobg3} alt="Japan Detail" className="japan-gallery-img-sub" />
               </div>
             </div>
 
             <div className="japan-floating-insight">
               <span className="japan-expert-tag">The Expert Verdict</span>
-              <h2 className="japan-h2" style={{ marginTop: '20px', fontSize: '42px' }}>Is It Better to Travel Japan by Land or Cruise?</h2>
-              
-              <div className="japan-editorial-p" style={{ marginTop: '30px' }}>
-                <p className="japan-section-p" style={{ color: '#ffffff' }}>
+              <h2 className="japan-h2 jlc-insight-title">Is It Better to Travel Japan by Land or Cruise?</h2>
+
+              <div className="japan-editorial-p jlc-insight-p-wrap">
+                <p className="japan-section-p jlc-text-white">
                   For most travelers, <strong>Japan is better experienced by land</strong> because it allows deeper cultural immersion, better food access, and more time in key cities like Tokyo and Kyoto.
                 </p>
-                <p className="japan-section-p" style={{ color: 'rgba(255,255,255,0.8)' }}>
+                <p className="japan-section-p jlc-text-white-muted">
                   A cruise is a good option for travelers who prioritize convenience, prefer a slower pace, or want to combine Japan with other Asian destinations.
                 </p>
               </div>
 
               <div className="japan-asymmetric-quote">
-                 <p>"The choice isn't about which is better—it's about which layer of Japan you want to peel back."</p>
+                <p>"The choice isn't about which is better—it's about which layer of Japan you want to peel back."</p>
               </div>
             </div>
           </div>
@@ -329,38 +324,32 @@ const Japanlandvscruise = () => {
       {/* Quick Answer Section - Enhanced UI with Feature Cards */}
       <section className="japan-section japan-bg-navy">
         <div className="japan-inner">
-          <h2 className="japan-h2 japan-h2-centered" style={{ color: '#ffffff' }}>Japan Land vs Cruise (Quick Expert Answer)</h2>
-          <div className="japan-choice-grid" style={{ marginTop: '60px' }}>
+          <h2 className="japan-h2 japan-h2-centered jlc-text-white">Japan Land vs Cruise </h2>
+          <div className="japan-choice-grid jlc-mt-60">
             <div className="japan-choice-card land">
-              <h3 style={{ color: '#1a2a44' }}>Choose Land Travel if you want:</h3>
+              <h3 className="jlc-text-navy-dark">Choose Land Travel if you want:</h3>
               <ul className="japan-choice-list">
-                <li><CheckCircle size={22} className="japan-expert-icon" /> Cultural depth</li>
-                <li><CheckCircle size={22} className="japan-expert-icon" /> Time in Tokyo, Kyoto, and Osaka</li>
-                <li><CheckCircle size={22} className="japan-expert-icon" /> Better food experiences</li>
-                <li><CheckCircle size={22} className="japan-expert-icon" /> Flexibility and customization</li>
-                <li><CheckCircle size={22} className="japan-expert-icon" /> A stronger first trip</li>
+                <li><BookOpen size={22} className="japan-expert-icon" /> Cultural depth</li>
+                <li><MapPin size={22} className="japan-expert-icon" /> Time in Tokyo, Kyoto, and Osaka</li>
+                <li><Utensils size={22} className="japan-expert-icon" /> Better food experiences</li>
+                <li><Compass size={22} className="japan-expert-icon" /> Flexibility and customization</li>
+                <li><Star size={22} className="japan-expert-icon" /> A stronger first trip</li>
               </ul>
             </div>
             <div className="japan-choice-card cruise">
               <h3>Choose a Cruise if you want:</h3>
               <ul className="japan-choice-list">
-                <li><CheckCircle size={22} style={{ color: '#c9a84c' }} /> Simplicity</li>
-                <li><CheckCircle size={22} style={{ color: '#c9a84c' }} /> A relaxed pace</li>
-                <li><CheckCircle size={22} style={{ color: '#c9a84c' }} /> To unpack once</li>
-                <li><CheckCircle size={22} style={{ color: '#c9a84c' }} /> A multi-country itinerary</li>
-                <li><CheckCircle size={22} style={{ color: '#c9a84c' }} /> A familiar travel format</li>
+                <li><Zap size={22} className="jlc-text-white" /> Simplicity</li>
+                <li><Clock size={22} className="jlc-text-white" /> A relaxed pace</li>
+                <li><Layers size={22} className="jlc-text-white" /> To unpack once</li>
+                <li><Globe size={22} className="jlc-text-white" /> A multi-country itinerary</li>
+                <li><Ship size={22} className="jlc-text-white" /> A familiar travel format</li>
               </ul>
             </div>
           </div>
-          <div className="japan-inner-narrow" style={{ marginTop: '60px' }}>
-            <div style={{ 
-              padding: '30px', 
-              background: 'rgba(255,255,255,0.05)', 
-              border: '1px solid rgba(255,255,255,0.1)', 
-              textAlign: 'center',
-              borderRadius: '2px'
-            }}>
-              <p className="japan-section-p" style={{ margin: 0, fontWeight: '500', color: '#ffffff' }}>
+          <div className="japan-inner-narrow jlc-mt-60">
+            <div className="jlc-summary-box">
+              <p className="japan-section-p jlc-summary-text">
                 For most first-time travelers, land travel is the better choice.
               </p>
             </div>
@@ -369,21 +358,21 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* 10 Second Summary */}
-      <section className="japan-section japan-bg-cream">
-        <div className="japan-inner-narrow" style={{ textAlign: 'center' }}>
+      <section className="japan-section japan-bg-soft">
+        <div className="japan-inner-narrow jlc-text-center">
           <h2 className="japan-h2 japan-h2-centered">If You Only Have 10 Seconds</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '40px' }}>
-            <div className="japan-expert-card" style={{ padding: '25px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <div className="jlc-summary-list">
+            <div className="japan-expert-card jlc-summary-item">
               <Zap size={24} className="japan-expert-icon" />
-              <p className="japan-section-p" style={{ margin: 0 }}><strong>Choose land travel</strong> if Japan is your main focus.</p>
+              <p className="japan-section-p jlc-m-0"><strong>Choose land travel</strong> if Japan is your main focus.</p>
             </div>
-            <div className="japan-expert-card" style={{ padding: '25px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <div className="japan-expert-card jlc-summary-item">
               <Clock size={24} className="japan-expert-icon" />
-              <p className="japan-section-p" style={{ margin: 0 }}><strong>Choose a cruise</strong> if you want ease and a broader Asia experience.</p>
+              <p className="japan-section-p jlc-m-0"><strong>Choose a cruise</strong> if you want ease and a broader Asia experience.</p>
             </div>
-            <div className="japan-expert-card" style={{ padding: '25px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <div className="japan-expert-card jlc-summary-item">
               <Star size={24} className="japan-expert-icon" />
-              <p className="japan-section-p" style={{ margin: 0 }}><strong>Choose both</strong> if you want the best balance.</p>
+              <p className="japan-section-p jlc-m-0"><strong>Choose both</strong> if you want the best balance.</p>
             </div>
           </div>
         </div>
@@ -444,98 +433,97 @@ const Japanlandvscruise = () => {
         </div>
       </section>
 
-      {/* Detailed Better When Sections - Card Layout */}
       <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
-          <div style={{ marginBottom: '80px' }}>
-            <h2 className="japan-h2 japan-h2-centered">When Land Is Clearly Better</h2>
-            <div className="japan-trust-grid" style={{ marginTop: '40px' }}>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Users size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>First-time visitors</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>The essential introduction to Japan's core.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Calendar size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Trips under 14 days</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Maximizing every moment in key cities.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Utensils size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Food-focused</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Unrivaled access to local culinary scenes.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Map size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Cultural immersion</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Deep engagement with Japanese heritage.</p>
-              </div>
+          <h2 className="japan-h2 japan-h2-centered">When Land Is Clearly Better</h2>
+          <div className="japan-trust-grid jlc-mt-40">
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Users size={22} /></div>
+              <h4 className="jlc-mb-10">First-time visitors</h4>
+              <p className="japan-section-p jlc-stat-p">The essential introduction to Japan's core.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Calendar size={22} /></div>
+              <h4 className="jlc-mb-10">Trips under 14 days</h4>
+              <p className="japan-section-p jlc-stat-p">Maximizing every moment in key cities.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Utensils size={22} /></div>
+              <h4 className="jlc-mb-10">Food-focused</h4>
+              <p className="japan-section-p jlc-stat-p">Unrivaled access to local culinary scenes.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Map size={22} /></div>
+              <h4 className="jlc-mb-10">Cultural immersion</h4>
+              <p className="japan-section-p jlc-stat-p">Deep engagement with Japanese heritage.</p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <h2 className="japan-h2 japan-h2-centered">When a Cruise Is Clearly Better</h2>
-            <div className="japan-trust-grid" style={{ marginTop: '40px' }}>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><RotateCcw size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Repeat travelers</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Exploring regional ports and outer islands.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Globe size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Multi-country</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Seamlessly combining Japan with Asia.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Zap size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Travel ease</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>Unpack once and enjoy the journey.</p>
-              </div>
-              <div className="japan-trust-point">
-                <div className="japan-trust-icon-box"><Anchor size={22} /></div>
-                <h4 style={{ marginBottom: '10px' }}>Cruise-loyal</h4>
-                <p className="japan-section-p" style={{ fontSize: '14px', marginBottom: 0 }}>For those who love the cruise lifestyle.</p>
-              </div>
+      <section className="japan-section japan-bg-white">
+        <div className="japan-inner">
+          <h2 className="japan-h2 japan-h2-centered">When a Cruise Is Clearly Better</h2>
+          <div className="japan-trust-grid jlc-mt-40">
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><RotateCcw size={22} /></div>
+              <h4 className="jlc-mb-10">Repeat travelers</h4>
+              <p className="japan-section-p jlc-stat-p">Exploring regional ports and outer islands.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Globe size={22} /></div>
+              <h4 className="jlc-mb-10">Multi-country</h4>
+              <p className="japan-section-p jlc-stat-p">Seamlessly combining Japan with Asia.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Zap size={22} /></div>
+              <h4 className="jlc-mb-10">Travel ease</h4>
+              <p className="japan-section-p jlc-stat-p">Unpack once and enjoy the journey.</p>
+            </div>
+            <div className="japan-trust-point">
+              <div className="japan-trust-icon-box"><Anchor size={22} /></div>
+              <h4 className="jlc-mb-10">Cruise-loyal</h4>
+              <p className="japan-section-p jlc-stat-p">For those who love the cruise lifestyle.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Itinerary Examples Section */}
-      <section className="japan-section japan-bg-white">
+      <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">What the Itineraries Look Like</h2>
-          <div className="japan-choice-grid" style={{ marginTop: '60px' }}>
+          <div className="japan-choice-grid jlc-mt-60">
             <div className="japan-choice-card land">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-                <Calendar size={28} className="japan-expert-icon" />
-                <h3 style={{ margin: 0, color: '#1a2a44' }}>What a Japan Land Trip Looks Like</h3>
+              <div className="jlc-card-header-flex">
+                <Calendar size={28} className="japan-expert-icon-calender" />
+                <h3 className="jlc-card-header-title-land">What a Japan Land Trip Looks Like</h3>
               </div>
               <ul className="japan-choice-list">
-                <li><Check size={18} className="japan-expert-icon" /> 3 nights in Tokyo</li>
-                <li><Check size={18} className="japan-expert-icon" /> 3 nights in Kyoto</li>
-                <li><Check size={18} className="japan-expert-icon" /> 2 nights in Hakone</li>
-                <li><Check size={18} className="japan-expert-icon" /> 2 nights in Osaka</li>
+                <li><Zap size={18} className="japan-expert-icon" /> 3 nights in Tokyo</li>
+                <li><Sun size={18} className="japan-expert-icon" /> 3 nights in Kyoto</li>
+                <li><Mountain size={18} className="japan-expert-icon" /> 2 nights in Hakone</li>
+                <li><Utensils size={18} className="japan-expert-icon" /> 2 nights in Osaka</li>
               </ul>
-              <p className="japan-section-p" style={{ fontSize: '16px', marginTop: '20px' }}>
+              <p className="japan-section-p jlc-card-p">
                 This structure allows you to move through the country and experience it properly.
                 If you are planning your route, start with our first-time Japan itinerary.
               </p>
             </div>
             <div className="japan-choice-card cruise">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-                <Ship size={28} style={{ color: '#60a5fa' }} />
-                <h3 style={{ margin: 0 }}>What a Japan Cruise Itinerary Looks Like</h3>
+              <div className="jlc-card-header-flex">
+                <Ship size={28} className="jlc-text-blue-light-japan-cruise" />
+                <h3 className="jlc-m-0">What a Japan Cruise Itinerary Looks Like</h3>
               </div>
               <ul className="japan-choice-list">
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Tokyo embarkation</li>
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Shimizu</li>
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Osaka or Kobe</li>
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Hiroshima</li>
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Busan, South Korea</li>
-                <li><Check size={18} style={{ color: '#60a5fa' }} /> Return to Tokyo</li>
+                <li><Anchor size={18} className="jlc-text-blue-light" /> Tokyo embarkation</li>
+                <li><Mountain size={18} className="jlc-text-blue-light" /> Shimizu</li>
+                <li><Utensils size={18} className="jlc-text-blue-light" /> Osaka or Kobe</li>
+                <li><Map size={18} className="jlc-text-blue-light" /> Hiroshima</li>
+                <li><Globe size={18} className="jlc-text-blue-light" /> Busan, South Korea</li>
+                <li><RotateCcw size={18} className="jlc-text-blue-light" /> Return to Tokyo</li>
               </ul>
-              <p className="japan-section-p" style={{ fontSize: '16px', marginTop: '20px', color: 'rgba(255,255,255,0.8)' }}>
+              <p className="japan-section-p jlc-card-p-cruise">
                 Cruises provide structure but limit depth in each destination.
               </p>
             </div>
@@ -544,37 +532,37 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* Cost Comparison Section - Improved Grid UI */}
-      <section className="japan-section japan-bg-soft">
+      <section className="japan-section japan-bg-white">
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">Quick Cost Comparison</h2>
-          <div className="japan-choice-grid" style={{ marginTop: '60px' }}>
-            <div className="japan-expert-card" style={{ padding: '40px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '25px' }}>
-                <div className="japan-trust-icon-box" style={{ margin: 0 }}><DollarSign size={24} /></div>
-                <h4 style={{ margin: 0, fontSize: '22px', fontFamily: 'Playfair Display' }}>Land Travel</h4>
+          <div className="japan-choice-grid jlc-mt-60">
+            <div className="japan-expert-card jlc-p-40">
+              <div className="jlc-cost-header-flex">
+                <div className="japan-trust-icon-box jlc-m-0"><DollarSign size={24} /></div>
+                <h4 className="jlc-cost-title">Land Travel</h4>
               </div>
-              <p className="japan-section-p" style={{ fontSize: '28px', fontWeight: '600', marginBottom: '15px', color: '#1a2a44' }}>
-                $6,000 – $12,000 <span style={{ fontSize: '14px', fontWeight: '400', opacity: 0.6 }}>/ person</span>
+              <p className="japan-section-p jlc-cost-amount">
+                $6,000 – $12,000 <span className="jlc-cost-unit">/ person</span>
               </p>
-              <p className="japan-section-p" style={{ fontSize: '16px', margin: 0, fontWeight: '500' }}>
+              <p className="japan-section-p jlc-cost-desc">
                 Land gives you complete control over your budget and experiences.
               </p>
             </div>
-            <div className="japan-expert-card" style={{ padding: '40px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '25px' }}>
-                <div className="japan-trust-icon-box" style={{ margin: 0 }}><Layers size={24} /></div>
-                <h4 style={{ margin: 0, fontSize: '22px', fontFamily: 'Playfair Display' }}>Cruise Travel</h4>
+            <div className="japan-expert-card jlc-p-40">
+              <div className="jlc-cost-header-flex">
+                <div className="japan-trust-icon-box jlc-m-0"><Layers size={24} /></div>
+                <h4 className="jlc-cost-title">Cruise Travel</h4>
               </div>
-              <p className="japan-section-p" style={{ fontSize: '28px', fontWeight: '600', marginBottom: '15px', color: '#1a2a44' }}>
-                $5,000 – $15,000+ <span style={{ fontSize: '14px', fontWeight: '400', opacity: 0.6 }}>/ person</span>
+              <p className="japan-section-p jlc-cost-amount">
+                $5,000 – $15,000+ <span className="jlc-cost-unit">/ person</span>
               </p>
-              <p className="japan-section-p" style={{ fontSize: '16px', margin: 0, fontWeight: '500' }}>
+              <p className="japan-section-p jlc-cost-desc">
                 Cruises offer predictable, bundled pricing with luxury inclusions.
               </p>
             </div>
           </div>
-          <div className="japan-inner-narrow" style={{ marginTop: '40px', textAlign: 'center' }}>
-            <p className="japan-section-p" style={{ fontStyle: 'italic' }}>
+          <div className="japan-inner-narrow jlc-footer-note">
+            <p className="japan-section-p jlc-italic">
               For a deeper breakdown, see our Japan travel cost guide.
             </p>
           </div>
@@ -582,28 +570,34 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* Gain and Miss Section */}
-      <section className="japan-section japan-bg-white">
+      <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">What You Gain and What You Miss</h2>
-          <div className="japan-choice-grid" style={{ marginTop: '60px' }}>
-            <div className="japan-choice-card" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-              <h3 style={{ color: '#1a2a44' }}>On land, you gain:</h3>
+          <div className="japan-choice-grid jlc-mt-60">
+            <div className="japan-choice-card jlc-card-light-border">
+              <div className="jlc-card-header-flex">
+                <MapPin size={24} className="jlc-text-navy" />
+                <h3 className="jlc-text-navy-dark-m0">On land, you gain:</h3>
+              </div>
               <ul className="japan-choice-list">
-                <li><Check size={18} className="japan-expert-icon" /> Late-night Tokyo</li>
-                <li><Check size={18} className="japan-expert-icon" /> Kyoto early mornings</li>
-                <li><Check size={18} className="japan-expert-icon" /> Street food in Osaka</li>
-                <li><Check size={18} className="japan-expert-icon" /> Ryokan stays and cultural immersion</li>
+                <li><Moon size={18} className="japan-expert-icon" /> Late-night Tokyo</li>
+                <li><Sun size={18} className="japan-expert-icon" /> Kyoto early mornings</li>
+                <li><Utensils size={18} className="japan-expert-icon" /> Street food in Osaka</li>
+                <li><Coffee size={18} className="japan-expert-icon" /> Ryokan stays and cultural immersion</li>
               </ul>
             </div>
-            <div className="japan-choice-card" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-              <h3 style={{ color: '#1a2a44' }}>On a cruise, you gain:</h3>
+            <div className="japan-choice-card jlc-card-light-border">
+              <div className="jlc-card-header-flex">
+                <Ship size={24} className="jlc-text-navy" />
+                <h3 className="jlc-text-navy-dark-m0">On a cruise, you gain:</h3>
+              </div>
               <ul className="japan-choice-list">
-                <li><Check size={18} className="japan-expert-icon" /> Ease</li>
-                <li><Check size={18} className="japan-expert-icon" /> Structure</li>
-                <li><Check size={18} className="japan-expert-icon" /> Simplicity</li>
+                <li><Zap size={18} className="japan-expert-icon" /> Ease</li>
+                <li><Layers size={18} className="japan-expert-icon" /> Structure</li>
+                <li><CheckCircle size={18} className="japan-expert-icon" /> Simplicity</li>
               </ul>
-              <div style={{ marginTop: '30px', padding: '20px', background: '#fff5f5', borderRadius: '8px', borderLeft: '4px solid #f87171' }}>
-                <p style={{ margin: 0, fontSize: '16px', color: '#991b1b', fontWeight: '500' }}>
+              <div className="jlc-miss-note">
+                <p className="japan-section-p jlc-miss-note-p">
                   But you may miss the small moments that define Japan.
                 </p>
               </div>
@@ -612,176 +606,274 @@ const Japanlandvscruise = () => {
         </div>
       </section>
 
-      {/* What Cruises Don't Show You */}
-      <section className="japan-section japan-bg-soft">
-        <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div className="japan-expert-content">
-              <h2 className="japan-h2">What Cruises Don’t Show You</h2>
-              <p className="japan-section-p">Cruises give you access to ports, not the full experience of Japan.</p>
-              <div style={{ marginTop: '30px', display: 'flex', flexDirection: 'column', gap: '25px' }}>
-                <div style={{ display: 'flex', gap: '20px' }}>
-                  <div className="japan-trust-icon-box" style={{ margin: 0, flexShrink: 0 }}><Moon size={20} /></div>
-                  <p className="japan-section-p" style={{ margin: 0 }}>At night in Tokyo</p>
-                </div>
-                <div style={{ display: 'flex', gap: '20px' }}>
-                  <div className="japan-trust-icon-box" style={{ margin: 0, flexShrink: 0 }}><Sun size={20} /></div>
-                  <p className="japan-section-p" style={{ margin: 0 }}>Early morning in Kyoto</p>
-                </div>
-                <div style={{ display: 'flex', gap: '20px' }}>
-                  <div className="japan-trust-icon-box" style={{ margin: 0, flexShrink: 0 }}><MapPin size={20} /></div>
-                  <p className="japan-section-p" style={{ margin: 0 }}>In neighborhoods far from cruise ports</p>
-                </div>
-              </div>
-              <div className="japan-highlight-box" style={{ marginTop: '40px' }}>
-                <p className="japan-section-p" style={{ fontWeight: '600', fontStyle: 'italic' }}>Many of the most meaningful moments happen in these times and places.</p>
-              </div>
-            </div>
 
-          </div>
-        </div>
-      </section>
 
-      {/* Selection Guides: Who Should Choose */}
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div>
-              <h2 className="japan-h2">Who Should Choose Land Travel</h2>
-              <ul className="japan-choice-list" style={{ marginTop: '30px' }}>
-                <li><Check size={20} className="japan-expert-icon" /> First-time visitors</li>
-                <li><Check size={20} className="japan-expert-icon" /> Food lovers</li>
-                <li><Heart size={20} className="japan-expert-icon" /> Couples and honeymooners</li>
-                <li><Check size={20} className="japan-expert-icon" /> Travelers seeking depth</li>
-                <li><Check size={20} className="japan-expert-icon" /> Those wanting flexibility</li>
-              </ul>
+          <h2 className="japan-h2 japan-h2-centered">What Cruises Don't Show You</h2>
+          <p className="japan-section-p jlc-miss-intro">
+            Cruises give you access to ports, not the full experience of Japan.
+          </p>
+          <div className="jlc-cruises-miss-grid">
+            <div className="jlc-miss-card">
+              <div className="jlc-miss-icon-wrap">
+                <Moon size={28} />
+              </div>
+              <div className="jlc-miss-content">
+                <h4 className="jlc-miss-title">Nighttime Tokyo</h4>
+                <p className="japan-section-p jlc-m-0">
+                  At night in Tokyo, the city truly comes alive — neon-lit alleys, izakayas, late-night ramen counters. Cruise ports close before the magic starts.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="japan-h2">Who Should Choose a Japan Cruise</h2>
-              <ul className="japan-choice-list" style={{ marginTop: '30px' }}>
-                <li><Ship size={20} style={{ color: '#60a5fa' }} /> Travelers who love cruising</li>
-                <li><Ship size={20} style={{ color: '#60a5fa' }} /> Those wanting minimal logistics</li>
-                <li><Ship size={20} style={{ color: '#60a5fa' }} /> Travelers combining multiple countries</li>
-                <li><Ship size={20} style={{ color: '#60a5fa' }} /> Those who prefer a slower pace</li>
-              </ul>
+            <div className="jlc-miss-card">
+              <div className="jlc-miss-icon-wrap">
+                <Sun size={28} />
+              </div>
+              <div className="jlc-miss-content">
+                <h4 className="jlc-miss-title">Early Morning Kyoto</h4>
+                <p className="japan-section-p jlc-m-0">
+                  Early morning in Kyoto before crowds arrive — temples in silence, mist over the gardens — is only accessible from a land base.
+                </p>
+              </div>
+            </div>
+            <div className="jlc-miss-card">
+              <div className="jlc-miss-icon-wrap">
+                <MapPin size={28} />
+              </div>
+              <div className="jlc-miss-content">
+                <h4 className="jlc-miss-title">Hidden Neighborhoods</h4>
+                <p className="japan-section-p jlc-m-0">
+                  In neighborhoods far from cruise ports, real daily life unfolds — covered shotengai, local cafes, and moments that never appear in guides.
+                </p>
+              </div>
+            </div>
+            <div className="jlc-miss-highlight">
+              <p className="japan-section-p jlc-miss-quote">
+                "Many of the most meaningful moments happen in these times and places."
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="japan-expert-grid" style={{ marginTop: '80px' }}>
-            <div>
-              <h2 className="japan-h2">Who Should Not Choose a Japan Cruise</h2>
-              <ul className="japan-choice-list" style={{ marginTop: '30px' }}>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> Travelers seeking deep immersion</li>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> First-time visitors with limited time</li>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> Food-focused travelers</li>
+
+
+
+      <section className="japan-section japan-bg-soft">
+        <div className="japan-inner">
+          <h2 className="japan-h2 japan-h2-centered">Who Should Choose Each Option</h2>
+          <div className="jlc-who-grid">
+            {/* Land Travel */}
+            <div className="jlc-who-card jlc-who-land">
+              <div className="jlc-who-header">
+                <div className="jlc-who-icon"><Building2 size={24} /></div>
+                <h3 className="jlc-who-title">Choose Land Travel</h3>
+              </div>
+              <ul className="jlc-who-list">
+                <li><Building2 size={18} /><span>First-time visitors</span></li>
+                <li><Heart size={18} /><span>Couples and honeymooners</span></li>
+                <li><Utensils size={18} /><span>Food lovers</span></li>
+                <li><Search size={18} /><span>Travelers seeking depth</span></li>
+                <li><Compass size={18} /><span>Those wanting flexibility</span></li>
               </ul>
             </div>
-            <div>
-              <h2 className="japan-h2">Who Should Not Choose Land Travel</h2>
-              <ul className="japan-choice-list" style={{ marginTop: '30px' }}>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> Travelers who want minimal planning</li>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> Those who prefer structured travel</li>
-                <li><XCircle size={20} style={{ color: '#ef4444' }} /> Travelers strongly committed to cruising</li>
+            {/* Cruise */}
+            <div className="jlc-who-card jlc-who-cruise">
+              <div className="jlc-who-header">
+                <div className="jlc-who-icon jlc-who-icon-cruise"><Ship size={24} /></div>
+                <h3 className="jlc-who-title jlc-text-white">Choose a Japan Cruise</h3>
+              </div>
+              <ul className="jlc-who-list jlc-who-list-cruise">
+                <li><Ship size={18} /><span>Travelers who love cruising</span></li>
+                <li><Zap size={18} /><span>Those wanting minimal logistics</span></li>
+                <li><Globe size={18} /><span>Travelers combining multiple countries</span></li>
+                <li><Clock size={18} /><span>Those who prefer a slower pace</span></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
+
+
+      <section className="japan-section japan-bg-white">
+        <div className="japan-inner">
+          <h2 className="japan-h2 japan-h2-centered">Who Should Not Choose Each Option</h2>
+          <div className="jlc-who-grid jlc-mt-48">
+            <div className="jlc-not-card">
+              <div className="jlc-not-header">
+                <XCircle size={22} className="jlc-text-navy" />
+                <h3 className="jlc-not-title">Who Should Not Choose a Japan Cruise</h3>
+              </div>
+              <ul className="jlc-not-list">
+                <li><BookOpen size={18} className="jlc-not-list-icon-inline" /><span>Travelers seeking deep immersion</span></li>
+                <li><Clock size={18} className="jlc-not-list-icon-inline" /><span>First-time visitors with limited time</span></li>
+                <li><Utensils size={18} className="jlc-not-list-icon-inline" /><span>Food-focused travelers</span></li>
+              </ul>
+            </div>
+            <div className="jlc-not-card">
+              <div className="jlc-not-header">
+                <XCircle size={22} className="jlc-text-navy" />
+                <h3 className="jlc-not-title">Who Should Not Choose Land Travel</h3>
+              </div>
+              <ul className="jlc-not-list">
+                <li><Layout size={18} className="jlc-not-list-icon-inline" /><span>Travelers who want minimal planning</span></li>
+                <li><List size={18} className="jlc-not-list-icon-inline" /><span>Those who prefer structured travel</span></li>
+                <li><Ship size={18} className="jlc-not-list-icon-inline" /><span>Travelers strongly committed to cruising</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Why Land Travel Wins */}
-      <section className="japan-section japan-bg-navy" style={{ textAlign: 'center' }}>
+      <section className="japan-section japan-bg-navy jlc-text-center">
         <div className="japan-inner-narrow">
-          <h2 className="japan-h2" style={{ color: '#ffffff' }}>Why Land Travel Usually Wins in Japan</h2>
-          <p className="japan-section-p" style={{ color: 'rgba(255,255,255,0.8)', marginTop: '30px' }}>
+          <h2 className="japan-h2 jlc-text-white">Why Land Travel Usually Wins in Japan</h2>
+          <p className="japan-section-p jlc-wins-p">
             Japan is designed for land travel. Its trains, neighborhoods, and pacing are meant to be experienced on the ground.
           </p>
-          <div style={{ marginTop: '40px', padding: '40px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
-            <h3 style={{ fontSize: '28px', color: '#ffffff', fontFamily: 'Playfair Display', margin: 0 }}>
+          <div className="jlc-wins-box">
+            <h3 className="jlc-wins-h3">
               Cruises show you Japan. Land travel lets you experience it.
             </h3>
           </div>
         </div>
       </section>
 
-      {/* Cost/Expense Comparison Deep Dive */}
-      <section className="japan-section japan-bg-cream">
-        <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div className="japan-expert-content">
-              <h2 className="japan-h2">Is Japan Land Travel or Cruise More Expensive?</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginTop: '40px' }}>
-                <div style={{ display: 'flex', gap: '20px' }}>
-                  <TrendingUp size={24} className="japan-expert-icon" />
-                  <div>
-                    <p className="japan-section-p" style={{ fontWeight: '600', margin: 0 }}>Land travel is flexible and scalable</p>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '20px' }}>
-                  <Zap size={24} className="japan-expert-icon" />
-                  <div>
-                    <p className="japan-section-p" style={{ fontWeight: '600', margin: 0 }}>Cruises offer predictable pricing</p>
-                  </div>
-                </div>
-              </div>
-              <p className="japan-section-p" style={{ marginTop: '30px' }}>
-                Land typically delivers better value for Japan-focused trips, while cruises work well for multi-country itineraries.
-              </p>
-              <p className="japan-section-p">
-                Timing also matters. See our best time to visit Japan guide for more.
-              </p>
-            </div>
 
-          </div>
-        </div>
-      </section>
 
-      {/* Final Verdict for First-Timers */}
-      <section className="japan-section japan-bg-white">
-        <div className="japan-inner">
-          <h2 className="japan-h2 japan-h2-centered">Land vs Cruise for First-Time Travelers</h2>
-          <div className="japan-inner-narrow" style={{ marginTop: '40px', textAlign: 'center' }}>
-            <p className="japan-section-p" style={{ fontSize: '20px', fontWeight: '500' }}>
-              For most first-time visitors, land travel is the better option.
-            </p>
-            <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '12px', marginTop: '40px' }}>
-              <p className="japan-section-p" style={{ fontWeight: '600', color: '#1a2a44', marginBottom: '20px' }}>It allows access to:</p>
-              <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '40px' }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ width: '12px', height: '12px', background: '#274472', borderRadius: '50%', margin: '0 auto 15px' }}></div>
-                  <p style={{ margin: 0, fontWeight: '600' }}>Tokyo</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ width: '12px', height: '12px', background: '#274472', borderRadius: '50%', margin: '0 auto 15px' }}></div>
-                  <p style={{ margin: 0, fontWeight: '600' }}>Kyoto</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ width: '12px', height: '12px', background: '#274472', borderRadius: '50%', margin: '0 auto 15px' }}></div>
-                  <p style={{ margin: 0, fontWeight: '600' }}>Osaka</p>
-                </div>
-              </div>
-              <p className="japan-section-p" style={{ marginTop: '40px', color: '#64748b' }}>Cultural experiences beyond port stops</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Worried About Complexity */}
+
+
       <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div className="japan-expert-content">
-              <h2 className="japan-h2">What If I’m Worried Land Travel Is Too Complicated?</h2>
+          <div className="jlc-cost-wrapper">
+            <div className="jlc-cost-left">
+              <span className="jlc-step-label">Cost Comparison</span>
+              <h2 className="japan-h2 jlc-mt-16">Is Japan Land Travel or Cruise More Expensive?</h2>
               <p className="japan-section-p">
-                Japan can feel complex to plan, but when structured correctly, it runs smoother than almost anywhere in the world.
+                Land typically delivers better value for Japan-focused trips, while cruises work well for multi-country itineraries.
               </p>
-              <div className="japan-highlight-box" style={{ marginTop: '30px' }}>
-                <p className="japan-section-p" style={{ fontWeight: '600' }}>
-                  The key is not avoiding land travel. It is planning it properly.
+              <div className="jlc-cost-footer">
+                <p className="japan-section-p jlc-cost-footer-p">
+                  Timing also matters. See our best time to visit Japan guide for more.
                 </p>
               </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <HelpCircle size={80} style={{ color: '#274472', opacity: 0.2 }} />
+            <div className="jlc-cost-right">
+              <div className="jlc-cost-point">
+                <div className="jlc-cost-point-icon">
+                  <TrendingUp size={24} />
+                </div>
+                <div className="jlc-cost-point-text">
+                  <span className="jlc-cost-point-label">Land Travel</span>
+                  <p className="jlc-cost-point-title">Land travel is flexible and scalable</p>
+                </div>
+              </div>
+              <div className="jlc-cost-point">
+                <div className="jlc-cost-point-icon">
+                  <Zap size={24} />
+                </div>
+                <div className="jlc-cost-point-text">
+                  <span className="jlc-cost-point-label">Cruise Travel</span>
+                  <p className="jlc-cost-point-title">Cruises offer predictable pricing</p>
+                </div>
+              </div>
+              <div className="jlc-cost-verdict">
+                <p className="japan-section-p">
+                  Land typically delivers better value for Japan-focused trips, while cruises work well for multi-country itineraries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="japan-section japan-bg-white">
+        <div className="japan-inner">
+          <h2 className="japan-h2 japan-h2-centered">Land vs Cruise for First-Time Travelers</h2>
+          <div className="jlc-first-timer-box">
+            <div className="jlc-winner-badge">The Expert Pick</div>
+            <div className="jlc-ft-grid">
+              <div className="jlc-ft-content">
+                <h3 className="jlc-ft-title">The Better Option: Land Travel</h3>
+                <p className="japan-section-p jlc-ft-p">
+                  For most first-time visitors, land travel is the better option. It allows you to move deep into the heart of Japan's most iconic cities at your own pace.
+                </p>
+                <div className="jlc-ft-highlight">
+                  <p className="japan-section-p jlc-ft-highlight-p">
+                    Access cultural experiences far beyond port stops.
+                  </p>
+                </div>
+              </div>
+              <div className="jlc-ft-cities">
+                <div className="jlc-city-item">
+                  <div className="jlc-city-icon"><Building2 size={24} /></div>
+                  <div className="jlc-city-info">
+                    <h4>Tokyo</h4>
+                    <p>The energy of the capital</p>
+                  </div>
+                </div>
+                <div className="jlc-city-item">
+                  <div className="jlc-city-icon"><Sun size={24} /></div>
+                  <div className="jlc-city-info">
+                    <h4>Kyoto</h4>
+                    <p>The heart of Japanese tradition</p>
+                  </div>
+                </div>
+                <div className="jlc-city-item">
+                  <div className="jlc-city-icon"><Utensils size={24} /></div>
+                  <div className="jlc-city-info">
+                    <h4>Osaka</h4>
+                    <p>The ultimate food destination</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="japan-section japan-bg-soft">
+        <div className="japan-inner">
+          <div className="jlc-worry-wrapper">
+            <div className="jlc-worry-visual">
+              <div className="jlc-worry-big-icon">
+                <HelpCircle size={120} />
+              </div>
+              <div className="jlc-worry-stat">
+                <p className="jlc-worry-stat-num">✓</p>
+                <p className="jlc-worry-stat-label">Smoother than almost anywhere in the world — when structured correctly.</p>
+              </div>
+            </div>
+            <div className="jlc-worry-content">
+              <span className="jlc-step-label">Common Concern</span>
+              <h2 className="japan-h2 jlc-mt-16">What If I'm Worried Land Travel Is Too Complicated?</h2>
+              <p className="japan-section-p">
+                Japan can feel complex to plan, but when structured correctly, it runs smoother than almost anywhere in the world.
+              </p>
+              <div className="jlc-worry-highlight">
+                <p className="japan-section-p jlc-worry-highlight-p">
+                  The key is not avoiding land travel. It is planning it properly.
+                </p>
+              </div>
+              <div className="jlc-worry-steps">
+                <div className="jlc-worry-step">
+                  <div className="jlc-worry-step-num">01</div>
+                  <p className="japan-section-p jlc-m-0">Start with the right structure and route</p>
+                </div>
+                <div className="jlc-worry-step">
+                  <div className="jlc-worry-step-num">02</div>
+                  <p className="japan-section-p jlc-m-0">Book hotels and key experiences early</p>
+                </div>
+                <div className="jlc-worry-step">
+                  <div className="jlc-worry-step-num">03</div>
+                  <p className="japan-section-p jlc-m-0">Work with an expert who knows Japan deeply</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -791,20 +883,26 @@ const Japanlandvscruise = () => {
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">The Smartest Way to Do Japan for Many Travelers</h2>
-          <div className="japan-inner-narrow" style={{ marginTop: '40px', textAlign: 'center' }}>
-            <p className="japan-section-p" style={{ fontSize: '18px' }}>For many travelers, the best structure is:</p>
-            <div className="japan-choice-grid" style={{ marginTop: '40px' }}>
-              <div className="japan-expert-card" style={{ padding: '40px' }}>
-                <h3 style={{ fontSize: '22px', fontFamily: 'Playfair Display', marginBottom: '15px' }}>Land first</h3>
-                <p className="japan-section-p" style={{ margin: 0 }}>(Tokyo and Kyoto)</p>
+          <div className="japan-inner-narrow jlc-hybrid-intro">
+            <p className="japan-section-p jlc-fs-18">For many travelers, the best structure is:</p>
+            <div className="japan-choice-grid jlc-mt-40">
+              <div className="japan-expert-card jlc-p-40">
+                <div className="jlc-hybrid-header">
+                  <Train size={24} className="jlc-text-navy" />
+                  <h3 className="jlc-hybrid-title">Land first</h3>
+                </div>
+                <p className="japan-section-p jlc-m-0">(Tokyo and Kyoto)</p>
               </div>
-              <div className="japan-expert-card" style={{ padding: '40px' }}>
-                <h3 style={{ fontSize: '22px', fontFamily: 'Playfair Display', marginBottom: '15px' }}>Cruise second</h3>
-                <p className="japan-section-p" style={{ margin: 0 }}>(regional exploration)</p>
+              <div className="japan-expert-card jlc-p-40">
+                <div className="jlc-hybrid-header">
+                  <Ship size={24} className="jlc-text-navy" />
+                  <h3 className="jlc-hybrid-title">Cruise second</h3>
+                </div>
+                <p className="japan-section-p jlc-m-0">(regional exploration)</p>
               </div>
             </div>
-            <div style={{ marginTop: '40px', padding: '30px', background: '#f0f9ff', borderRadius: '12px', border: '1px solid #bae6fd' }}>
-              <p className="japan-section-p" style={{ margin: 0, fontWeight: '600', color: '#0369a1' }}>
+            <div className="jlc-hybrid-footer">
+              <p className="japan-section-p jlc-hybrid-footer-p">
                 This gives you depth first, then ease.
               </p>
             </div>
@@ -816,71 +914,75 @@ const Japanlandvscruise = () => {
       <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">Mistakes That Can Impact Your Trip</h2>
-          <div className="japan-choice-grid" style={{ marginTop: '60px' }}>
-            <div className="japan-trust-point" style={{ textAlign: 'left' }}>
-              <AlertCircle size={24} style={{ color: '#ef4444', marginBottom: '20px' }} />
-              <p className="japan-section-p" style={{ fontWeight: '600' }}>Choosing convenience over experience</p>
+          <div className="japan-choice-grid jlc-mt-60">
+            <div className="japan-trust-point jlc-text-left">
+              <AlertCircle size={24} className="jlc-mistake-icon" />
+              <p className="japan-section-p jlc-fw-600">Choosing convenience over experience</p>
             </div>
-            <div className="japan-trust-point" style={{ textAlign: 'left' }}>
-              <AlertCircle size={24} style={{ color: '#ef4444', marginBottom: '20px' }} />
-              <p className="japan-section-p" style={{ fontWeight: '600' }}>Underestimating how much time cities require</p>
+            <div className="japan-trust-point jlc-text-left">
+              <AlertCircle size={24} className="jlc-mistake-icon" />
+              <p className="japan-section-p jlc-fw-600">Underestimating how much time cities require</p>
             </div>
-            <div className="japan-trust-point" style={{ textAlign: 'left' }}>
-              <AlertCircle size={24} style={{ color: '#ef4444', marginBottom: '20px' }} />
-              <p className="japan-section-p" style={{ fontWeight: '600' }}>Not planning enough land time</p>
+            <div className="japan-trust-point jlc-text-left">
+              <AlertCircle size={24} className="jlc-mistake-icon" />
+              <p className="japan-section-p jlc-fw-600">Not planning enough land time</p>
             </div>
-            <div className="japan-trust-point" style={{ textAlign: 'left' }}>
-              <AlertCircle size={24} style={{ color: '#ef4444', marginBottom: '20px' }} />
-              <p className="japan-section-p" style={{ fontWeight: '600' }}>Misunderstanding cruise limitations</p>
+            <div className="japan-trust-point jlc-text-left">
+              <AlertCircle size={24} className="jlc-mistake-icon" />
+              <p className="japan-section-p jlc-fw-600">Misunderstanding cruise limitations</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Client Trends (What I See Every Year) */}
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div className="japan-expert-content">
-              <h2 className="japan-h2">What I See With Clients Every Year</h2>
-              <p className="japan-section-p">Every year, I see travelers:</p>
-              <div style={{ marginTop: '30px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                  <Eye size={20} className="japan-expert-icon" />
-                  <p className="japan-section-p" style={{ margin: 0 }}>Choose cruises thinking they will fully experience Japan</p>
-                </div>
-                <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                  <Eye size={20} className="japan-expert-icon" />
-                  <p className="japan-section-p" style={{ margin: 0 }}>Miss key experiences due to limited port time</p>
-                </div>
-                <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                  <Eye size={20} className="japan-expert-icon" />
-                  <p className="japan-section-p" style={{ margin: 0 }}>Realize they wanted more depth</p>
-                </div>
-              </div>
-              <div style={{ marginTop: '40px', paddingTop: '30px', borderTop: '1px solid #e2e8f0' }}>
-                <p className="japan-section-p" style={{ fontWeight: '600', color: '#1a2a44' }}>
-                  The difference is not the destination. It is how you experience it.
+          <div className="jlc-clients-wrapper">
+            <div className="jlc-clients-left">
+              <span className="jlc-step-label">Expert Observations</span>
+              <h2 className="japan-h2 jlc-mt-16">What I See With Clients Every Year</h2>
+              <p className="japan-section-p">Every year, I see the same patterns repeat. The difference is not the destination. It is how you experience it.</p>
+              <div className="jlc-clients-verdict">
+                <p className="japan-section-p jlc-clients-verdict-p">
+                  "The difference is not the destination. It is how you experience it."
                 </p>
               </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ width: '100%', height: '100%', minHeight: '300px', background: '#f8fafc', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px' }}>
-                <Lightbulb size={64} style={{ color: '#f59e0b', opacity: 0.5 }} />
+            <div className="jlc-clients-right">
+              <div className="jlc-observation-card">
+                <div className="jlc-obs-num">01</div>
+                <div className="jlc-obs-icon"><Search size={20} /></div>
+                <p className="japan-section-p jlc-m-0">Choose cruises thinking they will fully experience Japan</p>
+              </div>
+              <div className="jlc-observation-card">
+                <div className="jlc-obs-num">02</div>
+                <div className="jlc-obs-icon"><Clock size={20} /></div>
+                <p className="japan-section-p jlc-m-0">Miss key experiences due to limited port time</p>
+              </div>
+              <div className="jlc-observation-card">
+                <div className="jlc-obs-num">03</div>
+                <div className="jlc-obs-icon"><TrendingUp size={20} /></div>
+                <p className="japan-section-p jlc-m-0">Realize they wanted more depth</p>
+              </div>
+              <div className="jlc-obs-lightbulb">
+                <Lightbulb size={32} className="jlc-text-amber" />
+                <p className="japan-section-p jlc-m-0">Understanding the trade-offs before you book changes everything.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+
+
       {/* Personal Take Section */}
-      <section className="japan-section japan-bg-navy" style={{ textAlign: 'center' }}>
+      <section className="japan-section japan-bg-navy jlc-text-center">
         <div className="japan-inner-narrow">
-          <h2 className="japan-h2" style={{ color: '#ffffff' }}>My Personal Take After Living in Japan</h2>
-          <p className="japan-section-p" style={{ color: 'rgba(255,255,255,0.8)', fontSize: '20px', marginTop: '30px' }}>
+          <h2 className="japan-h2 jlc-text-white">My Personal Take <br /> After Living in Japan</h2>
+          <p className="japan-section-p jlc-take-p1">
             If Japan is your focus, land travel almost always delivers more.
           </p>
-          <p className="japan-section-p" style={{ color: '#ffffff', fontWeight: '500', marginTop: '20px' }}>
+          <p className="japan-section-p jlc-take-p2">
             It allows you to move intentionally and experience the country in layers.
           </p>
         </div>
@@ -889,16 +991,16 @@ const Japanlandvscruise = () => {
       {/* If You Only Remember One Thing */}
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
-          <div className="japan-inner-narrow" style={{ background: '#fdfbf7', padding: '60px', borderRadius: '12px', border: '2px solid #e2e8f0', textAlign: 'center' }}>
-            <h2 className="japan-h2" style={{ marginBottom: '40px' }}>If You Only Remember One Thing</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-              <div style={{ padding: '30px', background: '#ffffff', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
-                <p className="japan-section-p" style={{ margin: 0, fontSize: '20px', fontWeight: '600', color: '#1a2a44' }}>
+          <div className="japan-inner-narrow jlc-remember-box">
+            <h2 className="japan-h2 jlc-mb-40">If You Only Remember One Thing</h2>
+            <div className="jlc-remember-list">
+              <div className="jlc-remember-item">
+                <p className="japan-section-p jlc-remember-text">
                   Choose land travel if Japan is the main event.
                 </p>
               </div>
-              <div style={{ padding: '30px', background: '#ffffff', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
-                <p className="japan-section-p" style={{ margin: 0, fontSize: '20px', fontWeight: '600', color: '#1a2a44' }}>
+              <div className="jlc-remember-item">
+                <p className="japan-section-p jlc-remember-text">
                   Choose a cruise if Japan is part of a larger journey.
                 </p>
               </div>
@@ -907,51 +1009,69 @@ const Japanlandvscruise = () => {
         </div>
       </section>
 
-
-
-
-
-
-      {/* Plan Your Japan Trip the Right Way */}
-      <section className="japan-section japan-bg-cream">
+      <section className="japan-section japan-bg-soft">
         <div className="japan-inner">
-          <div className="japan-expert-grid">
-            <div className="japan-expert-content">
-              <h2 className="japan-h2">Plan Your Japan Trip the Right Way</h2>
-              <p className="japan-section-p">We help you:</p>
-              <ul className="japan-choice-list" style={{ marginTop: '30px' }}>
-                <li><Check size={20} className="japan-expert-icon" /> Choose the right structure</li>
-                <li><Check size={20} className="japan-expert-icon" /> Avoid costly mistakes</li>
-                <li><Check size={20} className="japan-expert-icon" /> Build a seamless itinerary</li>
-                <li><Check size={20} className="japan-expert-icon" /> Align your trip with your goals</li>
-              </ul>
-              <button className="japan-btn-primary" style={{ marginTop: '40px' }}>Plan My Japan Trip</button>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ padding: '60px', background: '#ffffff', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', textAlign: 'center' }}>
-                <Award size={64} style={{ color: '#274472', marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '24px', fontFamily: 'Playfair Display', color: '#1a2a44' }}>Expert Guided Planning</h3>
+          <div className="jlc-plan-wrapper">
+            <div className="jlc-plan-left">
+              <div className="jlc-plan-award-box">
+                <Award size={64} className="jlc-text-navy" />
+                <h3 className="jlc-plan-award-title">Expert Guided Planning</h3>
+                <p className="japan-section-p jlc-plan-award-subtitle">Trips &amp; Ships Luxury Travel</p>
+                <div className="jlc-plan-badge">40+ Years Experience</div>
               </div>
+            </div>
+            <div className="jlc-plan-right">
+              <span className="jlc-step-label">Ready to Start</span>
+              <h2 className="japan-h2 jlc-mt-16">Plan Your Japan Trip the Right Way</h2>
+              <p className="japan-section-p">We help you:</p>
+              <ul className="jlc-plan-list">
+                <li>
+                  <div className="jlc-plan-list-icon"><Layout size={18} /></div>
+                  <span>Choose the right structure</span>
+                </li>
+                <li>
+                  <div className="jlc-plan-list-icon"><ShieldAlert size={18} /></div>
+                  <span>Avoid costly mistakes</span>
+                </li>
+                <li>
+                  <div className="jlc-plan-list-icon"><Route size={18} /></div>
+                  <span>Build a seamless itinerary</span>
+                </li>
+                <li>
+                  <div className="jlc-plan-list-icon"><Target size={18} /></div>
+                  <span>Align your trip with your goals</span>
+                </li>
+              </ul>
+              <button className="japan-btn-primary jlc-mt-40">Plan My Japan Trip</button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Where to Go Next */}
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
-          <h2 className="japan-h2 japan-h2-centered">Where to Go Next</h2>
-          <div className="japan-trust-grid" style={{ marginTop: '60px' }}>
+          <div className="jlc-next-header">
+            <h2 className="japan-h2 japan-h2-centered">Where to Go Next</h2>
+            <p className="japan-section-p jlc-next-subtitle">Continue your journey with our most popular Japan planning resources.</p>
+          </div>
+
+          <div className="jlc-next-grid">
             {[
-              "Best Time to Visit Japan",
-              "Japan Travel Cost Guide",
-              "First Time Japan Itinerary",
-              "Tokyo Travel Guide",
-              "Kyoto Travel Guide"
-            ].map((link, idx) => (
-              <div key={idx} className="japan-trust-point" style={{ textAlign: 'left', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
-                <p style={{ margin: 0 }}>{link}</p>
-                <ChevronRight size={18} style={{ opacity: 0.3 }} />
+              { title: "Best Time to Visit Japan", icon: <Calendar size={24} /> },
+              { title: "Japan Travel Cost Guide", icon: <DollarSign size={24} /> },
+              { title: "First Time Japan Itinerary", icon: <Map size={24} /> },
+              { title: "Tokyo Travel Guide", icon: <Building2 size={24} /> },
+              { title: "Kyoto Travel Guide", icon: <Landmark size={24} /> }
+            ].map((item, idx) => (
+              <div key={idx} className="jlc-next-step-card">
+                <div className="jlc-next-step-num">{idx + 1}</div>
+                <div className="jlc-next-step-content">
+                  <div className="jlc-next-step-icon">{item.icon}</div>
+                  <h3 className="jlc-next-step-title">{item.title}</h3>
+                </div>
+                <div className="jlc-next-step-arrow">
+                  <ChevronRight size={20} />
+                </div>
               </div>
             ))}
           </div>
@@ -959,43 +1079,52 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="japan-section japan-bg-soft">
-        <div className="japan-inner">
-          <h2 className="japan-h2 japan-h2-centered">FAQ</h2>
-          <div className="japan-inner-narrow" style={{ marginTop: '60px' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {[
-                { q: "Is Japan better by land or cruise?", a: "Land travel is better for most travelers due to deeper cultural immersion." },
-                { q: "Is a Japan cruise worth it?", a: "Yes, especially for travelers who value convenience and multi-country travel." },
-                { q: "Should I travel Japan by train or cruise?", a: "Train-based travel is usually better for experiencing Japan." },
-                { q: "Is a cruise good for a first trip?", a: "It can be, but land travel is typically more immersive." },
-                { q: "Can I combine land and cruise?", a: "Yes, and it is often the best approach." },
-                { q: "Do cruises visit major cities?", a: "They visit nearby ports but do not provide the same depth." },
-                { q: "Is land travel difficult?", a: "It requires planning but is very rewarding." },
-                { q: "What is the best way to see Japan?", a: "A land itinerary covering Tokyo, Kyoto, and Osaka." },
-                { q: "Are cruises cheaper?", a: "Not always. It depends on travel style and timing." },
-                { q: "Do I need a travel advisor?", a: "Highly recommended." },
-                { q: "How many days do I need?", a: "10 to 14 days is ideal." },
-                { q: "What is the biggest mistake travelers make?", a: "Choosing convenience over experience without understanding the trade-offs." }
-              ].map((item, idx) => (
-                <div key={idx} className="japan-expert-card" style={{ padding: '30px' }}>
-                  <div style={{ display: 'flex', gap: '20px' }}>
-                    <div style={{ flexShrink: 0, width: '32px', height: '32px', background: '#274472', color: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', fontWeight: 'bold' }}>
-                      {idx + 1}
-                    </div>
-                    <div>
-                      <h4 style={{ margin: '0 0 10px 0', fontSize: '18px', fontFamily: 'Montserrat', fontWeight: '700', color: '#1a2a44' }}>{item.q}</h4>
-                      <p className="japan-section-p" style={{ margin: 0 }}>{item.a}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="BTJapan_faq_section japan-bg-soft">
+        <div className="BTJapan_faq_inner">
+          <h2 className="japan-h2 japan-h2-centered">Frequently Asked Questions</h2>
+          <BTJapanFAQ
+            items={[
+              { q: "Is Japan better by land or cruise?", a: "Land travel is better for most travelers due to deeper cultural immersion." },
+              { q: "Is a Japan cruise worth it?", a: "Yes, especially for travelers who value convenience and multi-country travel." },
+              { q: "Should I travel Japan by train or cruise?", a: "Train-based travel is usually better for experiencing Japan." },
+              { q: "Is a cruise good for a first trip?", a: "It can be, but land travel is typically more immersive." },
+              { q: "Can I combine land and cruise?", a: "Yes, and it is often the best approach." },
+              { q: "Do cruises visit major cities?", a: "They visit nearby ports but do not provide the same depth." },
+              { q: "Is land travel difficult?", a: "It requires planning but is very rewarding." },
+              { q: "What is the best way to see Japan?", a: "A land itinerary covering Tokyo, Kyoto, and Osaka." },
+              { q: "Are cruises cheaper?", a: "Not always. It depends on travel style and timing." },
+              { q: "Do I need a travel advisor?", a: "Highly recommended." },
+              { q: "How many days do I need?", a: "10 to 14 days is ideal." },
+              { q: "What is the biggest mistake travelers make?", a: "Choosing convenience over experience without understanding the trade-offs." }
+            ]}
+          />
         </div>
       </section>
     </>
   );
 }
+
+/* ===== INLINE FAQ ACCORDION (BEST TIME JAPAN STYLE) ===== */
+const BTJapanFAQ = ({ items }) => {
+  const [open, setOpen] = useState(null);
+
+  return (
+    <div className="BTJapan_faq_list">
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className="BTJapan_faq_item"
+          onClick={() => setOpen(open === i ? null : i)}
+        >
+          <div className="BTJapan_faq_question">
+            <span>{item.q}</span>
+            <span className="BTJapan_faq_icon">{open === i ? "−" : "+"}</span>
+          </div>
+          {open === i && <p className="BTJapan_faq_answer">{item.a}</p>}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Japanlandvscruise;

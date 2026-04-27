@@ -102,6 +102,10 @@ function App() {
             path="/best-time-to-visit-japan"
             element={<BestTimeJapan />}
           ></Route>
+           <Route
+            path="/japan-land-vs-cruise"
+            element={<Japanlandvscruise />}
+          ></Route>
           <Route
             path="/azamara-cruises-guide-2026-2027"
             element={<AzamaraCruisesGuide />}
