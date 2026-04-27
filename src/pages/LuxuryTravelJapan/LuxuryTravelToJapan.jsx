@@ -337,10 +337,7 @@ const LuxuryTravelToJapan = () => {
               <p>
                 Our role is not simply to book your trip. It is to design the right Japan experience for you.
               </p>
-              <div
-                className="LTJapan_hero_buttons"
-                style={{ justifyContent: "flex-start", marginTop: "30px" }}
-              >
+              <div className="LTJapan_expert_buttons">
                 <button className="LTJapan_cta_primary_btn">
                   Schedule a Consultation
                 </button>

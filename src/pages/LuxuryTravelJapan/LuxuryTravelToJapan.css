@@ -315,6 +315,12 @@
   box-shadow: 0 30px 70px rgba(39, 68, 114, 0.15);
 }
 
+.LTJapan_expert_buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
 .LTJapan_cta_primary_btn {
   background: var(--btjapan-navy);
   color: var(--btjapan-white);
@@ -1981,6 +1987,9 @@
     gap: 40px;
     text-align: center;
   }
+  .LTJapan_expert_buttons {
+    justify-content: center;
+  }
   .LTJapan_expert_credentials {
     grid-template-columns: 1fr;
     text-align: left;
@@ -2102,6 +2111,10 @@
   .LTJapan_seasons_detail_grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .LTJapan_expert_content h2::after{
+    margin: 12px auto 0px;
+  }
+
 }
 
 @media (max-width: 480px) {
