@@ -1,3 +1,4 @@
+// App.jsx — routes updated April 2026
 import EmeraldYachts from "../src/pages/EmeraldYachts/EmeraldYachts";
 import DrakePassagePage from "../src/pages/DrakePassagePage/DrakePassagePage";
 import ScenicVSSilversea from "../src/pages/ScenicVSSilversea/ScenicVSSilversea";
