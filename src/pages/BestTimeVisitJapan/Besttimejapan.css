@@ -582,11 +582,12 @@
 
 .BTJapan_glance_td {
   padding: 24px 28px;
-  font-size: 1rem;
+  font-size: 1rem !important;
   line-height: 1.55;
   font-weight: 300;
   color: var(--btjapan-navy-light);
   border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    border-right: 1px solid rgba(39, 68, 114, 0.12);
   vertical-align: middle;
 }
 
@@ -598,6 +599,7 @@
   text-transform: uppercase;
   border-right: 2px solid rgba(39, 68, 114, 0.12);
 }
+
 
 .BTJapan_glance_row:last-child .BTJapan_glance_td {
   border-bottom: none;
