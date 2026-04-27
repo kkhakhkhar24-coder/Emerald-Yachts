@@ -108,7 +108,7 @@
 .jpn-h2 {
     font-size: 48px;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 500 !important;
     margin: 0 0 20px 0;
     letter-spacing: -0.01em;
     color: #274472;
@@ -1096,8 +1096,9 @@
 }
 
 .jpn-decision-title {
+    font-family: var(--font-display) !important;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: #274472;
     margin: 0 0 14px 0;
     transition: color 0.3s;
@@ -1658,7 +1659,7 @@
 
 .jpn-price-amount {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 700 !important;
     color: #ffffff;
     margin: 12px 0;
 }
@@ -2638,10 +2639,10 @@
 }
 
 .jpn-flow-statement {
-    background: linear-gradient(135deg, rgba(39, 68, 114, 0.10), rgba(28, 47, 74, 0.08));
+    background: #274472;
     padding: 28px 32px;
     border-radius: 14px;
-    border-left: 4px solid #274472;
+    border-left: 4px solid #6b93bd;
     text-align: center;
 }
 
@@ -5352,7 +5353,7 @@
 
 .jpn-expert-new-role {
     font-size: 18px;
-    color: #555;
+    color: #274472;
     margin: 0;
     font-weight: 500;
 }
@@ -5371,7 +5372,7 @@
     align-items: center;
     gap: 16px;
     font-size: 18px;
-    color: #333;
+    color: #274472;
     line-height: 1.6;
 }
 
@@ -5568,7 +5569,7 @@
 
 .jpn-where-start-subtitle {
     font-size: 20px;
-    color: #4a5568;
+    color: #274472;
     margin-top: 24px;
     line-height: 1.6;
 }
