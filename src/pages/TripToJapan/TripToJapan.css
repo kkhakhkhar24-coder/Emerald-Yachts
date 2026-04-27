@@ -229,7 +229,8 @@
 .jpn-hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.65); /* Black layer for better text readability */
+    background: rgba(0, 0, 0, 0.65);
+    /* Black layer for better text readability */
     z-index: 2;
 }
 
@@ -737,6 +738,7 @@
 }
 
 .jpn-tip-text {
+    font-family: var(--font-display) !important;
     font-size: 17px;
     color: #274472;
     margin: 0;
@@ -848,7 +850,7 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #edf2f7;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -2647,6 +2649,7 @@
 }
 
 .jpn-statement-text {
+    font-family: var(--font-display) !important;
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
@@ -5396,6 +5399,7 @@
 }
 
 .jpn-expert-new-text {
+    font-family: var(--font-display) !important;
     font-size: 18px;
     color: #ffffff;
     line-height: 1.8;

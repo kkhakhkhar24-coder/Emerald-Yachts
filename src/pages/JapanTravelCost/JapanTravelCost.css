@@ -82,6 +82,8 @@
 }
 
 .jtc-p {
+    font-family: var(--font-display) !important;
+    font-style: normal !important;
     font-weight: 300 !important;
     line-height: 1.75 !important;
     color: var(--navy) !important;

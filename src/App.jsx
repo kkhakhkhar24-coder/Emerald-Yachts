@@ -23,6 +23,7 @@ import FirstTimeJapan from "./pages/FirstTimeJapan/FirstTimeJapan";
 import BestTimeJapan from "./pages/BestTimeVisitJapan/Besttimejapan";
 import JapanTravelCost from "./pages/JapanTravelCost/JapanTravelCost";
 import LuxuryTravelToJapan from "./pages/LuxuryTravelJapan/LuxuryTravelToJapan";
+import AzamaraCruisesGuide from "./pages/AzamaraCruisesGuide/AzamaraCruisesGuide";
 
 function App() {
   return (
@@ -100,6 +101,10 @@ function App() {
           <Route
             path="/best-time-to-visit-japan"
             element={<BestTimeJapan />}
+          ></Route>
+          <Route
+            path="/azamara-cruises-guide-2026-2027"
+            element={<AzamaraCruisesGuide />}
           ></Route>
         </Routes>
       </BrowserRouter>

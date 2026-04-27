@@ -1,0 +1,2288 @@
+/* Azamara Cruises Guide Styles */
+
+/* Color Palette */
+:root {
+    --navy: #274472;
+    --navy-light: #274472cc;
+    --bg-white: #ffffff;
+    --bg-soft: rgb(231, 243, 245);
+    --bg-dark: #0f1c2e;
+    --bg-dark2: #1c2f4a;
+}
+
+/* Base Section Styles */
+.azamara-section {
+    padding: 60px 20px;
+}
+
+.azamara-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography */
+.azamara-h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.azamara-h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--navy);
+}
+
+.azamara-h2-white {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.azamara-h3 {
+    font-family: var(--font-display) !important;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700 !important;
+    margin: 0 0 18px 0;
+    color: var(--navy);
+}
+
+.azamara-h3-white {
+    font-family: var(--font-display) !important;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700 !important;
+    margin: 0 0 18px 0;
+    color: #ffffff;
+}
+
+.azamara-p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+}
+
+.azamara-p-white {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin: 0 0 16px 0;
+}
+
+.azamara-mb-md {
+    margin-bottom: 24px;
+}
+
+.azamara-mt-md {
+    margin-top: 24px;
+}
+
+.azamara-mt-sm {
+    margin-top: 12px;
+}
+
+.azamara-subtitle {
+    font-family: var(--font-display) !important;
+    font-weight: 500 !important;
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.azamara-conclusion {
+    font-family: var(--font-display) !important;
+    font-weight: 500 !important;
+    margin-top: 32px;
+}
+
+.azamara-flex-center {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Responsive Typography and Padding */
+@media (max-width: 1024px) {
+    .azamara-section {
+        padding: 50px 15px;
+    }
+
+    .azamara-h1 {
+        font-size: 32px;
+    }
+
+    .azamara-h2,
+    .azamara-h2-white {
+        font-size: 28px;
+    }
+
+    .azamara-h3,
+    .azamara-h3-white {
+        font-size: 24px;
+    }
+
+    .azamara-p,
+    .azamara-p-white {
+        font-size: 17px;
+    }
+
+    .azamara-subtitle {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-section {
+        padding: 50px 15px;
+    }
+
+    .azamara-h1 {
+        font-size: 26px;
+    }
+
+    .azamara-h2,
+    .azamara-h2-white {
+        font-size: 24px;
+    }
+
+    .azamara-h3,
+    .azamara-h3-white {
+        font-size: 22px;
+    }
+
+    .azamara-p,
+    .azamara-p-white {
+        font-size: 16px;
+    }
+}
+
+/* Background Colors */
+.azamara-bg-white {
+    background: var(--bg-white);
+}
+
+.azamara-bg-soft {
+    background: var(--bg-soft);
+}
+
+.azamara-bg-dark {
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.azamara-bg-dark2 {
+    background: var(--bg-dark2);
+    position: relative;
+    overflow: hidden;
+}
+
+.azamara-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark2) 100%);
+    z-index: 0;
+}
+
+.azamara-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.85);
+    z-index: 1;
+}
+
+.azamara-relative {
+    position: relative;
+    z-index: 2;
+}
+
+/* Bar Separator */
+.azamara-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--navy);
+    margin-bottom: 32px;
+}
+
+.azamara-bar-white {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin-bottom: 32px;
+}
+
+/* Left-aligned bar (for side-heading layouts) */
+.azamara-bar-left {
+    width: 60px;
+    height: 4px;
+    background: var(--navy);
+    margin: 18px 0 32px 0;
+    border-radius: 2px;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.azamara-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.azamara-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.azamara-hero-bg.active {
+    opacity: 1;
+}
+
+.azamara-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.7);
+    z-index: 1;
+}
+
+.azamara-hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.azamara-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.azamara-hero-lead {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.azamara-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 24px;
+}
+
+.azamara-expanded {
+    max-height: 1000px;
+}
+
+.azamara-snippet-card {
+    background: rgba(39, 68, 114, 0.3);
+    border-left: 4px solid var(--navy);
+    padding: 24px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.azamara-snippet-label {
+    display: inline-block;
+    background: var(--navy);
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.azamara-white-text {
+    color: #ffffff;
+}
+
+.azamara-hero-toggle {
+    background: transparent;
+    border: 2px solid var(--navy);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.azamara-hero-toggle:hover {
+    background: var(--navy);
+}
+
+.azamara-hero-btns {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.azamara-btn-primary {
+    background: var(--navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.azamara-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.azamara-hero-white {
+    color: #ffffff;
+}
+
+.azamara-hero-subtext {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* Hero Section Responsive */
+@media (max-width: 1024px) {
+    .azamara-hero-inner {
+        padding: 50px 15px;
+    }
+
+    .azamara-hero-lead {
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-hero {
+        min-height: 100vh;
+    }
+
+    .azamara-hero-inner {
+        padding: 40px 15px;
+    }
+
+    .azamara-hero-lead {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .azamara-snippet-card {
+        padding: 20px;
+    }
+
+    .azamara-btn-primary {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .azamara-hero {
+        min-height: 100vh;
+    }
+
+    .azamara-hero-inner {
+        padding: 30px 15px;
+    }
+
+    .azamara-hero-btns {
+        width: 100%;
+    }
+
+    .azamara-btn-primary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   WORTH IT SECTION — Editorial Split Layout
+   ============================================================ */
+
+/* Outer split: sticky heading left | panels right */
+.azamara-worth-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.azamara-worth-heading {
+    position: sticky;
+    top: 100px;
+}
+
+.azamara-worth-heading .azamara-h2 {
+    margin-bottom: 0;
+}
+
+.azamara-worth-intro {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 24px 0 12px;
+    line-height: 1.5;
+}
+
+.azamara-worth-body {
+    color: var(--navy-light);
+}
+
+/* Two stacked verdict panels */
+.azamara-worth-panels {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.azamara-verdict-panel {
+    border-radius: 16px;
+    padding: 36px;
+    border: 1.5px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.azamara-verdict-panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.10);
+}
+
+/* YES panel — bg-soft with navy accents */
+.azamara-verdict-yes {
+    background: var(--bg-soft);
+    border-color: var(--navy-light);
+}
+
+.azamara-verdict-yes .azamara-verdict-header {
+    color: var(--navy);
+}
+
+.azamara-verdict-yes .azamara-h3 {
+    color: var(--navy);
+}
+
+.azamara-verdict-yes .azamara-verdict-icon {
+    color: var(--navy);
+}
+
+.azamara-verdict-yes .azamara-verdict-list li svg {
+    color: var(--navy);
+    transition: color 0.2s ease;
+}
+
+.azamara-verdict-yes .azamara-verdict-list li {
+    color: var(--navy);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.azamara-verdict-yes .azamara-verdict-list li:hover {
+    background: var(--navy);
+    color: var(--bg-white);
+}
+
+.azamara-verdict-yes .azamara-verdict-list li:hover svg {
+    color: var(--bg-white);
+}
+
+.azamara-verdict-yes .azamara-verdict-footer p {
+    font-family: var(--font-display) !important;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+/* NO panel — dark navy with white text */
+.azamara-verdict-no {
+    background: var(--bg-dark2);
+    border-color: var(--navy);
+}
+
+.azamara-verdict-no .azamara-verdict-header {
+    color: var(--bg-white);
+}
+
+.azamara-verdict-no .azamara-h3 {
+    color: var(--bg-white);
+}
+
+.azamara-verdict-no .azamara-verdict-icon {
+    color: var(--bg-white);
+}
+
+.azamara-verdict-no .azamara-verdict-list li svg {
+    color: var(--bg-white);
+}
+
+.azamara-verdict-no .azamara-verdict-list li {
+    color: var(--bg-white);
+    background: var(--navy);
+}
+
+.azamara-verdict-no .azamara-verdict-list li:hover {
+    background: var(--bg-dark);
+}
+
+.azamara-verdict-no .azamara-verdict-footer {
+    border-top-color: var(--navy-light);
+}
+
+.azamara-verdict-no .azamara-verdict-footer p {
+    font-family: var(--font-display) !important;
+    color: var(--bg-white);
+    font-weight: 500;
+}
+
+/* Panel internals */
+.azamara-verdict-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.azamara-verdict-header .azamara-h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.azamara-verdict-icon {
+    flex-shrink: 0;
+}
+
+.azamara-verdict-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.azamara-verdict-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--navy);
+    background: var(--bg-white);
+    padding: 13px 18px;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.azamara-verdict-list li:hover {
+    background: var(--bg-soft);
+}
+
+.azamara-verdict-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 18px;
+}
+
+.azamara-verdict-footer .azamara-p {
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Responsive — worth layout */
+@media (max-width: 1024px) {
+    .azamara-worth-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .azamara-worth-heading {
+        position: static;
+        text-align: center;
+    }
+
+    .azamara-bar-left {
+        margin: 18px auto 32px auto;
+    }
+
+    .azamara-verdict-panel {
+        padding: 28px;
+    }
+
+    .azamara-verdict-header .azamara-h3 {
+        font-size: 22px;
+    }
+
+    .azamara-verdict-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-verdict-panel {
+        padding: 24px;
+    }
+
+    .azamara-verdict-list li {
+        font-size: 15px;
+        padding: 11px 14px;
+    }
+}
+
+/* ============================================================
+   DIFFERENT SECTION (Waterfall Masonry Layout)
+   ============================================================ */
+
+.azamara-waterfall-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+.azamara-waterfall-col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Offset second column on desktop for waterfall effect */
+.azamara-col-offset {
+    margin-top: 64px;
+}
+
+.azamara-waterfall-card {
+    background: var(--bg-white);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    text-align: center;
+}
+
+.azamara-waterfall-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.12);
+}
+
+.azamara-waterfall-card.azamara-bg-navy {
+    background: var(--navy);
+    border: none;
+}
+
+.azamara-waterfall-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--bg-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    margin: 0 auto 24px auto;
+}
+
+.azamara-waterfall-icon.azamara-icon-white {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--bg-white);
+}
+
+.azamara-waterfall-card .azamara-h3,
+.azamara-waterfall-card .azamara-h3-white {
+    margin-bottom: 16px;
+}
+
+.azamara-waterfall-card .azamara-p,
+.azamara-waterfall-card .azamara-p-white {
+    margin-bottom: 0;
+}
+
+.azamara-waterfall-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.azamara-waterfall-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--navy);
+    line-height: 1.5;
+}
+
+.azamara-waterfall-list li svg {
+    color: var(--navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.azamara-different-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-bar-center {
+    width: 60px;
+    height: 4px;
+    background: var(--navy);
+    margin: 0 auto 32px auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .azamara-waterfall-container {
+        gap: 24px;
+    }
+
+    .azamara-waterfall-col {
+        gap: 24px;
+    }
+
+    .azamara-col-offset {
+        margin-top: 40px;
+    }
+
+    .azamara-waterfall-card {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-waterfall-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .azamara-col-offset {
+        margin-top: 0;
+    }
+
+    .azamara-waterfall-card {
+        padding: 24px;
+    }
+}
+
+/* ============================================================
+   WHO SHOULD BOOK (New Split Layout)
+   ============================================================ */
+
+.azamara-who-split-layout {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.azamara-who-content {
+    position: sticky;
+    top: 120px;
+}
+
+.azamara-who-bg-icon {
+    color: var(--bg-soft);
+    position: absolute;
+    bottom: -40px;
+    left: -20px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.azamara-who-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.azamara-who-card-offset {
+    transform: translateY(40px);
+}
+
+.azamara-who-card {
+    background: var(--bg-soft);
+    border-radius: 16px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.azamara-who-card:hover {
+    background: var(--bg-white);
+    border-color: rgba(39, 68, 114, 0.1);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.08);
+    transform: translateY(-5px);
+}
+
+.azamara-who-card.azamara-who-card-offset:hover {
+    transform: translateY(35px);
+}
+
+.azamara-who-card-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--navy);
+    color: var(--bg-white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(39, 68, 114, 0.2);
+}
+
+.azamara-who-card-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .azamara-who-split-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .azamara-who-content {
+        position: static;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .azamara-who-bg-icon {
+        display: none;
+    }
+
+    .azamara-who-card-offset {
+        transform: translateY(0);
+    }
+
+    .azamara-who-card.azamara-who-card-offset:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-who-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .azamara-who-card {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .azamara-who-card-icon {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .azamara-who-card-text {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   NOT IDEAL SECTION (New Dark Glass Layout)
+   ============================================================ */
+
+.azamara-not-fit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-not-fit-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-not-fit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.azamara-not-fit-card {
+    background: rgba(28, 47, 74, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    transition: all 0.3s ease;
+}
+
+.azamara-not-fit-card:hover {
+    background: rgba(28, 47, 74, 0.7);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.azamara-not-fit-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e2e8f0;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.azamara-not-fit-card:hover .azamara-not-fit-icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.azamara-not-fit-text {
+    font-size: 18px;
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.azamara-not-fit-wrapper .azamara-bar-center {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto 32px auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .azamara-not-fit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .azamara-not-fit-card {
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .azamara-not-fit-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .azamara-not-fit-text {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   BEST ITINERARIES (New Editorial List)
+   ============================================================ */
+
+.azamara-dest-split {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.azamara-sticky-col {
+    position: sticky;
+    top: 120px;
+}
+
+.azamara-dest-list-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.azamara-dest-card {
+    background: var(--bg-white);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    border-left: 6px solid transparent;
+}
+
+.azamara-dest-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.12);
+    border-left-color: var(--navy);
+    background: #f8fafc;
+}
+
+.azamara-dest-number {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 140px;
+    font-family: var(--font-display) !important;
+    font-weight: 800;
+    color: rgba(39, 68, 114, 0.04);
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+    transition: all 0.4s ease;
+}
+
+.azamara-dest-card:hover .azamara-dest-number {
+    color: rgba(39, 68, 114, 0.08);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.azamara-dest-arrow {
+    margin-left: auto;
+    color: var(--navy);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.4s ease;
+}
+
+.azamara-dest-card:hover .azamara-dest-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.azamara-dest-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--bg-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.azamara-dest-content {
+    position: relative;
+    z-index: 1;
+}
+
+.azamara-dest-content .azamara-h3 {
+    margin-bottom: 12px;
+}
+
+.azamara-dest-content .azamara-p {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .azamara-dest-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .azamara-sticky-col {
+        position: static;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .azamara-sticky-col .azamara-bar-left {
+        margin: 18px auto 32px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-dest-card {
+        padding: 24px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .azamara-dest-card:hover {
+        transform: translateX(5px);
+    }
+
+    .azamara-dest-arrow {
+        display: none;
+    }
+
+    .azamara-dest-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .azamara-dest-number {
+        font-size: 100px;
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+        top: 50%;
+    }
+}
+
+/* ============================================================
+   SHIPS OVERVIEW (New Two-Panel Layout)
+   ============================================================ */
+
+.azamara-ships-two-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.15);
+}
+
+/* LEFT PANEL - Dark navy with ships */
+.azamara-ships-panel-left {
+    background: var(--bg-dark);
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.azamara-ships-panel-left::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.2);
+    pointer-events: none;
+}
+
+.azamara-ships-panel-left .azamara-bar-white {
+    margin-bottom: 24px;
+}
+
+.azamara-ships-fleet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.azamara-ship-name-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+.azamara-ship-name-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.azamara-ship-name-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e2e8f0;
+    flex-shrink: 0;
+}
+
+.azamara-ship-name-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e2e8f0;
+    letter-spacing: 0.3px;
+}
+
+/* RIGHT PANEL - White with onboard features */
+.azamara-ships-panel-right {
+    background: var(--bg-white);
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.azamara-ships-panel-right .azamara-bar-left {
+    margin-bottom: 24px;
+}
+
+.azamara-onboard-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 8px;
+}
+
+.azamara-onboard-feature {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.azamara-onboard-feature:last-child {
+    border-bottom: none;
+}
+
+.azamara-onboard-feature:hover {
+    padding-left: 12px;
+}
+
+.azamara-onboard-feature-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--bg-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.azamara-onboard-feature:hover .azamara-onboard-feature-icon {
+    background: var(--navy);
+    color: var(--bg-white);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.2);
+}
+
+.azamara-onboard-feature-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--navy);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .azamara-ships-two-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .azamara-ships-panel-left,
+    .azamara-ships-panel-right {
+        padding: 40px 24px;
+    }
+
+    .azamara-ships-fleet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .azamara-ships-panel-left,
+    .azamara-ships-panel-right {
+        text-align: center;
+    }
+
+    .azamara-ship-name-card {
+        justify-content: center;
+    }
+
+    .azamara-onboard-feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .azamara-onboard-feature:hover {
+        padding-left: 0;
+    }
+
+    .azamara-onboard-feature-text {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   COMPARISON TABLE
+   ============================================================ */
+
+.azamara-comparison-wrapper {
+    background: var(--bg-white);
+    border-radius: 24px;
+    padding: 60px 48px;
+    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.08);
+    margin: 40px 0;
+}
+
+.azamara-comparison-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.azamara-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.05);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.azamara-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-white);
+    min-width: 700px;
+}
+
+.azamara-comparison-table th {
+    background: var(--bg-dark);
+    color: #ffffff;
+    padding: 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.azamara-comparison-table th:last-child {
+    border-right: none;
+}
+
+.azamara-comparison-table th:nth-child(2) {
+    background: var(--navy);
+}
+
+.azamara-comparison-table td {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    border-right: 1px solid rgba(39, 68, 114, 0.04);
+    font-size: 17px;
+    color: #4a5568;
+    transition: background 0.3s ease;
+}
+
+.azamara-comparison-table td:first-child {
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--bg-soft);
+}
+
+.azamara-comparison-table td:nth-child(2) {
+    font-weight: 600;
+    color: var(--navy);
+    background: rgba(39, 68, 114, 0.03);
+}
+
+.azamara-comparison-table tr:hover td {
+    background: rgba(39, 68, 114, 0.06);
+}
+
+.azamara-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Comparison Table Section Responsive */
+@media (max-width: 768px) {
+    .azamara-comparison-wrapper {
+        padding: 40px 24px;
+    }
+
+    .azamara-comparison-table th,
+    .azamara-comparison-table td {
+        padding: 16px;
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   PRICING (Dark Glassmorphism)
+   ============================================================ */
+
+.azamara-pricing-glass-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
+}
+
+.azamara-pricing-header-glass {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-pricing-header-glass .azamara-h2-white {
+    color: #ffffff;
+}
+
+.azamara-price-hero-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.azamara-price-hero-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #94a3b8;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.azamara-price-hero-amount {
+    font-size: 64px;
+    font-family: var(--font-display) !important;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 16px;
+    text-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.azamara-price-hero-amount span {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 16px;
+}
+
+.azamara-price-hero-note {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 32px;
+}
+
+.azamara-price-hero-higher {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 24px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.azamara-pricing-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.azamara-glass-panel {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.azamara-glass-h3 {
+    font-family: var(--font-display) !important;
+    font-weight: 600 !important;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.azamara-value-glass-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.azamara-value-glass-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.azamara-value-glass-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.azamara-overspend-glass-p {
+    font-size: 17px;
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+.azamara-overspend-glass-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.azamara-overspend-glass-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 20px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.azamara-advisor-glass-note {
+    font-family: var(--font-display) !important;
+    font-weight: 600 !important;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .azamara-pricing-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-price-hero-amount {
+        font-size: 40px;
+    }
+
+    .azamara-price-hero-amount span {
+        font-size: 24px;
+        margin: 0 8px;
+    }
+
+    .azamara-price-hero-card {
+        padding: 32px 24px;
+    }
+
+    .azamara-glass-panel {
+        padding: 32px 24px;
+    }
+}
+
+/* ============================================================
+   ALTERNATIVES (Gallery Row Layout)
+   ============================================================ */
+
+.azamara-alternatives-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-alternatives-4col-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.azamara-alt-gallery-card {
+    background: var(--bg-white);
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.azamara-alt-gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.azamara-alt-gallery-icon-wrap {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    margin-bottom: 24px;
+    transition: all 0.4s ease;
+}
+
+.azamara-alt-gallery-card:hover .azamara-alt-gallery-icon-wrap {
+    background: var(--navy);
+    color: var(--bg-white);
+    transform: scale(1.05);
+}
+
+.azamara-alt-gallery-title {
+    font-family: var(--font-display) !important;
+    font-size: 24px;
+    font-weight: 600 !important;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.azamara-alt-gallery-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--navy);
+    opacity: 0.2;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.azamara-alt-gallery-card:hover .azamara-alt-gallery-divider {
+    width: 60px;
+    opacity: 0.5;
+}
+
+.azamara-alt-gallery-desc {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Alternatives Gallery Responsive */
+@media (max-width: 1024px) {
+    .azamara-alternatives-4col-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-alternatives-4col-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .azamara-alt-gallery-card {
+        padding: 32px 20px;
+    }
+}
+
+/* ============================================================
+   RECOMMEND SECTION (Editorial Profile Feature)
+   ============================================================ */
+
+.azamara-recommend-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.azamara-editorial-profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Left Side: Profile Image */
+.azamara-editorial-profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.azamara-editorial-img-wrapper {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.azamara-editorial-img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(39, 68, 114, 0.15);
+    border-radius: 200px 200px 0 0;
+    z-index: 0;
+}
+
+.azamara-editorial-img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 200px 200px 0 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.azamara-editorial-name {
+    font-family: var(--font-display) !important;
+    font-size: 32px;
+    font-weight: 600 !important;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.azamara-editorial-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #64748b;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.azamara-editorial-award {
+    font-size: 15px;
+    color: var(--navy);
+    font-style: italic;
+    background: var(--bg-soft);
+    padding: 12px 20px;
+    border-radius: 24px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* Right Side: Quote and Details */
+.azamara-editorial-profile-right {
+    position: relative;
+}
+
+.azamara-editorial-quote-mark {
+    font-family: var(--font-display) !important;
+    font-size: 160px;
+    line-height: 0;
+    color: rgba(39, 68, 114, 0.05);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    z-index: 0;
+}
+
+.azamara-editorial-massive-quote {
+    font-family: var(--font-display) !important;
+    font-size: 28px;
+    font-weight: 400 !important;
+    color: var(--navy);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.azamara-editorial-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--navy);
+    margin-bottom: 40px;
+    opacity: 0.2;
+}
+
+.azamara-editorial-use-cases {
+    margin-bottom: 40px;
+}
+
+.azamara-editorial-use-label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.azamara-editorial-use-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.azamara-editorial-use-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    color: var(--navy);
+    font-weight: 500;
+}
+
+.azamara-editorial-use-list li svg {
+    color: var(--navy);
+    opacity: 0.5;
+}
+
+.azamara-editorial-conclusion-box {
+    background: var(--bg-soft);
+    border-left: 4px solid var(--navy);
+    padding: 24px 32px;
+    border-radius: 0 16px 16px 0;
+}
+
+.azamara-editorial-conclusion-box p {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.azamara-editorial-conclusion-box p:last-child {
+    font-family: var(--font-display) !important;
+    font-weight: 500 !important;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .azamara-editorial-profile-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .azamara-editorial-quote-mark {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-editorial-massive-quote {
+        font-size: 24px;
+    }
+
+    .azamara-editorial-use-list li {
+        font-size: 16px;
+    }
+
+    .azamara-editorial-conclusion-box {
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   PLAN SECTION (Premium Invitation)
+   ============================================================ */
+
+.azamara-plan-premium-wrapper {
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.azamara-plan-premium-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.azamara-plan-premium-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.azamara-plan-premium-step:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.azamara-plan-step-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.azamara-plan-step-title {
+    font-family: var(--font-display) !important;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.azamara-plan-step-desc {
+    font-size: 16px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.azamara-plan-step-arrow {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.azamara-plan-premium-cta {
+    text-align: center;
+}
+
+.azamara-btn-premium-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    color: var(--navy);
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+.azamara-btn-premium-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.25);
+    background: var(--bg-soft);
+}
+
+/* Plan Premium Responsive */
+@media (max-width: 1024px) {
+    .azamara-plan-premium-steps {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .azamara-plan-premium-step {
+        width: 100%;
+        min-height: 260px;
+        justify-content: center;
+    }
+
+    .azamara-plan-step-arrow {
+        transform: rotate(90deg);
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-btn-premium-white {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   FAQ SECTION (JapanTravelCost Style)
+   ============================================================ */
+
+.azamara-faq-simple-wrapper {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.azamara-faq-item-simple {
+    border-bottom: 1px solid #cbd5e1;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.azamara-faq-q-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    padding: 12px 0;
+    line-height: 1.4;
+}
+
+.azamara-faq-icon-simple {
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+.azamara-faq-a-simple {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    animation: azamaraFadeIn 0.3s ease forwards;
+}
+
+.azamara-faq-a-inner-simple {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+@keyframes azamaraFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ Responsive */
+@media (max-width: 768px) {
+    .azamara-faq-q-simple {
+        font-size: 16px;
+    }
+
+    .azamara-faq-a-inner-simple {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN - GENERAL
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .azamara-section {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-section {
+        padding: 50px 15px;
+    }
+}
+
+/* ============================================================
+   SECTION IMAGES STYLES
+   ============================================================ */
+
+/* Waterfall card images - LARGER SIZE */
+.azamara-waterfall-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.15);
+}
+
+.azamara-waterfall-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.azamara-waterfall-card:hover .azamara-waterfall-image img {
+    transform: scale(1.05);
+}
+
+/* Ships panel image */
+.azamara-ships-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.azamara-ships-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.azamara-ships-panel-left:hover .azamara-ships-image img {
+    transform: scale(1.03);
+}
+
+/* Destination card images */
+.azamara-dest-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.15);
+}
+
+.azamara-dest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.azamara-dest-card:hover .azamara-dest-image img {
+    transform: scale(1.08);
+}
+
+/* Responsive images */
+@media (max-width: 1024px) {
+    .azamara-waterfall-image {
+        height: 200px;
+    }
+
+    .azamara-ships-image {
+        height: 200px;
+    }
+
+    .azamara-dest-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-waterfall-image {
+        height: 180px;
+    }
+
+    .azamara-ships-image {
+        height: 180px;
+    }
+
+    .azamara-dest-image {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 16px;
+    }
+
+    .azamara-dest-card {
+        flex-wrap: wrap;
+    }
+
+    .azamara-dest-card .azamara-dest-icon {
+        order: -1;
+    }
+}

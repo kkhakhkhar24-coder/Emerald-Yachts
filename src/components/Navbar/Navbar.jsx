@@ -135,6 +135,14 @@ const Navbar = () => {
               >
                 Best Time to Visit Japan
               </NavLink>
+
+              <NavLink
+                to="/azamara-cruises-guide-2026-2027"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Cruises Guide 2026-2027
+              </NavLink>
             </div>
           </div>
         </div>
@@ -286,6 +294,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best Time to Visit Japan
+            </NavLink>
+
+            <NavLink
+              to="/azamara-cruises-guide-2026-2027"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Cruises Guide 2026-2027
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
