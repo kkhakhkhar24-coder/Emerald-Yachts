@@ -23,7 +23,7 @@ import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
 import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
 import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
 import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
-import Ftjapan5 from "../../assets/LuxurttravelToJapan/Ftjapan5.webp";
+import Ftjapan5 from "../../assets/LuxurtTravelToJapan/Ftjapan5.webp";
 import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
 import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
 import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
