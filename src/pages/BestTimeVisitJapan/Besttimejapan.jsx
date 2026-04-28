@@ -560,6 +560,31 @@ const BestTimeJapan = () => {
         </div>
       </section>
 
+      {/* ===== VIDEO SECTION ===== */}
+      <section className="BTJapan_video_section">
+        <div className="BTJapan_video_inner">
+          <div className="BTJapan_video_header">
+            <span className="BTJapan_section_badge">Visual Journey</span>
+            <h2>Experience Japan in Motion</h2>
+            <p>
+              Explore the beauty and rhythm of Japan across the seasons through
+              our curated cinematic journey.
+            </p>
+          </div>
+          <div className="BTJapan_video_container">
+            <div className="BTJapan_video_wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/ap7H2ULX0vA?si=m_S5x3X3yR1z4q5D"
+                title="Japan Travel Guide"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== JAPAN BY MONTH ===== */}
       <section className="BTJapan_months_section">
         <div className="BTJapan_months_inner">

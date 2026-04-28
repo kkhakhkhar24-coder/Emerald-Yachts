@@ -2171,6 +2171,72 @@
   opacity: 0.7;
 }
 
+/* ================= VIDEO SECTION ================= */
+.BTJapan_video_section {
+  padding: 80px 20px;
+  background: var(--btjapan-white);
+  text-align: center;
+}
+
+.BTJapan_video_inner {
+  max-width: var(--btjapan-section-max);
+  margin: 0 auto;
+}
+
+.BTJapan_video_header {
+  margin-bottom: 50px;
+}
+
+.BTJapan_video_header h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--btjapan-navy);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.BTJapan_video_header h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--btjapan-navy);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.BTJapan_video_header p {
+  font-size: 1.1rem;
+  color: var(--btjapan-navy-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.BTJapan_video_container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(47, 74, 109, 0.15);
+  border: 1px solid rgba(47, 74, 109, 0.08);
+  background: #000;
+}
+
+.BTJapan_video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.BTJapan_video_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .BTJapan_cta_main_grid {
@@ -2374,6 +2440,12 @@
 }
 
 @media (max-width: 768px) {
+  .BTJapan_video_section {
+    padding: 60px 20px;
+  }
+  .BTJapan_video_header h2 {
+    font-size: 32px;
+  }
   .BTJapan_hero_section {
     padding: 110px 15px 50px;
   }
