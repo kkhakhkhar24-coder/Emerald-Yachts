@@ -851,6 +851,66 @@ function AzamaraCruisesGuide() {
                 </div>
             </section>
 
+            {/* ── AZAMARA VIDEO FEATURE ──────────────────────────────────────────────────────────── */}
+            <section className="azamara-video-section">
+                <div className="azamara-video-bg-overlay"></div>
+                <div className="azamara-inner azamara-relative">
+                    <div className="azamara-video-split">
+
+                        {/* LEFT — Copy Panel */}
+                        <div className="azamara-video-copy">
+                            <span className="azamara-video-eyebrow">
+                                <Sparkles size={14} strokeWidth={2} />
+                                Azamara Forward
+                            </span>
+                            <h2 className="azamara-video-heading">
+                                A New Era <br />for the Fleet
+                            </h2>
+                            <div className="azamara-video-bar"></div>
+                            <p className="azamara-video-desc">
+                                Azamara Forward marks the next chapter in our onboard experience — bringing thoughtful enhancements across the fleet, inspired by our small-ship heritage and commitment to destination immersion.
+                            </p>
+
+                            <ul className="azamara-video-features">
+                                <li>
+                                    <div className="azamara-video-feat-icon"><Ship size={18} strokeWidth={1.8} /></div>
+                                    <span>Fleet-wide refinements across all four ships</span>
+                                </li>
+                                <li>
+                                    <div className="azamara-video-feat-icon"><Compass size={18} strokeWidth={1.8} /></div>
+                                    <span>Enhanced destination-focused programming</span>
+                                </li>
+                                <li>
+                                    <div className="azamara-video-feat-icon"><Gem size={18} strokeWidth={1.8} /></div>
+                                    <span>Elevated onboard spaces and guest experience</span>
+                                </li>
+                            </ul>
+
+                            <div className="azamara-video-tag">
+                                <Anchor size={14} strokeWidth={2} />
+                                <span>Official Azamara Cruises</span>
+                            </div>
+                        </div>
+
+                        {/* RIGHT — Video Panel */}
+                        <div className="azamara-video-player-wrap">
+                            <div className="azamara-video-glow"></div>
+                            <div className="azamara-video-frame">
+                                <iframe
+                                    className="azamara-youtube-iframe"
+                                    src="https://www.youtube.com/embed/6lwQ6EiHI_g?rel=0&modestbranding=1&color=white"
+                                    title="Azamara Forward | A New Era for the Fleet"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
             {/* ── READY TO PLAN (Premium Invitation) ────────────────────────────────────────────── */}
             <section className="azamara-section azamara-bg-dark2">
                 <div className="azamara-bg-pattern"></div>
