@@ -1157,7 +1157,7 @@ const AzamaraVSVikingCruise = () => {
             <h2 className="AzaVik-verdict-h2">
               Our Verdict: Azamara vs Viking
             </h2>
-            <div className="AzaVik-verdict-accent"></div>
+            <div className="AzaVik-accent-line"></div>
           </div>
           <div className="AzaVik-verdict-content">
             <p className="AzaVik-verdict-main-text">

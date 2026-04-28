@@ -2341,20 +2341,13 @@
 }
 
 .AzaVik-verdict-h2 {
-  font-size: 44px !important;
+  font-size: 48px !important;
   color: var(--navy) !important;
   font-weight: 500 !important;
   line-height: 1.1 !important;
   font-family: var(--font-display) !important;
 }
 
-.AzaVik-verdict-accent {
-  width: 80px;
-  height: 3px;
-  background: var(--navy);
-  margin: 20px auto 0;
-  opacity: 0.2;
-}
 
 .AzaVik-verdict-content {
   max-width: 800px;
@@ -2420,7 +2413,7 @@
 }
 
 .AzaVik-mistake-impact-h2 {
-  font-size: 52px !important;
+  font-size: 48px !important;
   color: #fff !important;
   font-weight: 500 !important;
   line-height: 1.1 !important;
