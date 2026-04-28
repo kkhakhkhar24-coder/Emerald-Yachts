@@ -2286,3 +2286,317 @@
         order: -1;
     }
 }
+
+/* ============================================================
+   VIDEO FEATURE SECTION — Premium Cinematic Split Layout
+   ============================================================ */
+
+.azamara-video-section {
+    position: relative;
+    background: linear-gradient(150deg, #0b2032 0%, #0e2c41 45%, #152d40 100%);
+    padding: 100px 20px;
+    /* NOTE: overflow must NOT be hidden/auto/scroll — it would break position:sticky on children */
+}
+
+/* Subtle diagonal grid pattern overlay — clipped via inset so it never bleeds */
+.azamara-video-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(39, 68, 114, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(39, 68, 114, 0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.azamara-video-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 65% 50%, rgba(39, 68, 114, 0.22) 0%, transparent 70%);
+    z-index: 0;
+}
+
+/* Split container */
+.azamara-video-split {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 72px;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+
+/* ── LEFT COPY PANEL ── */
+.azamara-video-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.azamara-video-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.35);
+    border: 1px solid rgba(39, 68, 114, 0.6);
+    color: #93c5fd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 100px;
+    width: fit-content;
+    margin-bottom: 28px;
+}
+
+.azamara-video-heading {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+}
+
+.azamara-video-bar {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 0;
+    margin-bottom: 28px;
+}
+
+.azamara-video-desc {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #94a3b8;
+    margin: 0 0 36px 0;
+    max-width: 440px;
+}
+
+/* Feature list */
+.azamara-video-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 36px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.azamara-video-features li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.azamara-video-feat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(39, 68, 114, 0.4);
+    border: 1px solid rgba(147, 197, 253, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #93c5fd;
+    flex-shrink: 0;
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.azamara-video-features li:hover .azamara-video-feat-icon {
+    background: rgba(39, 68, 114, 0.7);
+    border-color: rgba(147, 197, 253, 0.5);
+}
+
+/* Bottom tag */
+.azamara-video-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(39, 68, 114, 0.35);
+    padding-top: 20px;
+}
+
+/* ── RIGHT VIDEO PANEL — sticky so video stays in view while user reads left content ── */
+.azamara-video-player-wrap {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    /* grid must use align-items:start (already set) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ambient glow behind video */
+.azamara-video-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(ellipse at center, rgba(39, 68, 114, 0.55) 0%, transparent 70%);
+    filter: blur(32px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Video frame */
+.azamara-video-frame {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(39, 68, 114, 0.6);
+    box-shadow:
+        0 0 0 1px rgba(147, 197, 253, 0.08),
+        0 20px 60px rgba(0, 0, 0, 0.55),
+        0 4px 16px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    background: #000;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.azamara-video-frame:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(147, 197, 253, 0.35);
+    box-shadow:
+        0 0 0 1px rgba(147, 197, 253, 0.15),
+        0 28px 80px rgba(0, 0, 0, 0.6),
+        0 8px 24px rgba(39, 68, 114, 0.3);
+}
+
+.azamara-youtube-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 18px;
+}
+
+/* Bottom video label */
+.azamara-video-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+    .azamara-video-section {
+        padding: 80px 20px;
+    }
+
+    .azamara-video-split {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+
+    .azamara-video-heading {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 900px) {
+    .azamara-video-split {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    /* Disable sticky when stacked vertically */
+    .azamara-video-player-wrap {
+        position: static;
+    }
+
+    .azamara-video-copy {
+        align-items: center;
+        text-align: center;
+    }
+
+    .azamara-video-eyebrow {
+        align-self: center;
+    }
+
+    .azamara-video-bar {
+        margin: 0 auto 28px auto;
+    }
+
+    .azamara-video-desc {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .azamara-video-features {
+        align-items: flex-start;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .azamara-video-tag {
+        align-self: center;
+    }
+
+    .azamara-video-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azamara-video-section {
+        padding: 60px 15px;
+    }
+
+    .azamara-video-heading {
+        font-size: 34px;
+    }
+
+    .azamara-video-frame {
+        border-radius: 14px;
+    }
+
+    .azamara-youtube-iframe {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .azamara-video-heading {
+        font-size: 28px;
+    }
+
+    .azamara-video-desc {
+        font-size: 16px;
+    }
+
+    .azamara-video-frame {
+        border-radius: 10px;
+    }
+
+    .azamara-youtube-iframe {
+        border-radius: 8px;
+    }
+}
