@@ -159,6 +159,14 @@ const Navbar = () => {
               >
                 Azamara Vs Viking Ocean Cruises
               </NavLink>
+
+              <NavLink
+                to="/azamara-cabins-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Cabins Guide
+              </NavLink>
             </div>
           </div>
         </div>
@@ -334,6 +342,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Azamara Vs Viking Ocean Cruises
+            </NavLink>
+
+            <NavLink
+              to="/azamara-cabins-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Cabins Guide
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

@@ -27,6 +27,7 @@ import Japanlandvscruise from "./pages/Japanlandvscruise/Japanlandvscruise";
 import LuxuryTravelToJapan from "./pages/LuxuryTravelJapan/LuxuryTravelToJapan";
 import AzamaraCruisesGuide from "./pages/AzamaraCruisesGuide/AzamaraCruisesGuide";
 import AzamaraVSVikingCruise from "./pages/AzamaraVSVikingCruise/AzamaraVSVikingCruise";
+import AzamaraCabinsGuide from "./pages/AzamaraCabinsGuide/AzamaraCabinsGuide";
 
 function App() {
   return (
@@ -105,7 +106,7 @@ function App() {
             path="/best-time-to-visit-japan"
             element={<BestTimeJapan />}
           ></Route>
-           <Route
+          <Route
             path="/japan-land-vs-cruise"
             element={<Japanlandvscruise />}
           ></Route>
@@ -113,9 +114,13 @@ function App() {
             path="/azamara-cruises-guide-2026-2027"
             element={<AzamaraCruisesGuide />}
           ></Route>
-           <Route
+          <Route
             path="/azamara-vs-viking-ocean-cruises"
             element={<AzamaraVSVikingCruise />}
+          ></Route>
+          <Route
+            path="/azamara-cabins-guide"
+            element={<AzamaraCabinsGuide />}
           ></Route>
         </Routes>
       </BrowserRouter>
