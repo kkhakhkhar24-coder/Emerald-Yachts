@@ -1,19 +1,15 @@
 import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { 
-    Anchor, 
-    Star, 
-    TrendingUp, 
-    AlertTriangle, 
-    MapPin, 
-    Users, 
-    ChevronDown, 
-    ChevronUp, 
-    Award, 
-    ArrowRight, 
-    Compass, 
-    Plus, 
-    Minus, 
+import {
+    Anchor,
+    Star,
+    TrendingUp,
+    MapPin,
+    Users,
+    Award,
+    Compass,
+    Plus,
+    Minus,
     Sparkles,
     AlertCircle,
     CheckCircle2,
@@ -21,78 +17,74 @@ import {
     LayoutGrid,
     Wind,
     Sun,
-    Maximize,
     Heart,
     DollarSign,
     Zap,
-    Scale,
-    XCircle,
-    CheckCircle,
     ShieldAlert,
     ChevronRight,
-    Volume2,
-    Waves,
     Target,
     Quote,
     Gem,
-    Octagon,
-    EyeOff,
-    Navigation,
-    EarOff,
-    WavesIcon,
-    ArrowDownToLine,
     Activity,
-    ShieldCheck,
     Ship,
-    Map,
     Play
 } from "lucide-react";
 import "./AzamaraCabinsGuide.css";
 
 // Hero Images
-import heroImage1 from "../../assets/AzamaraCruisesGuide/Hero1.webp";
-import heroImage2 from "../../assets/AzamaraCruisesGuide/Hero2.webp";
-import heroImage3 from "../../assets/AzamaraCruisesGuide/Hero3.webp";
+import heroImage1 from "../../assets/AzamaraCabinsGuide/Hero1.webp";
+import heroImage2 from "../../assets/AzamaraCabinsGuide/Hero2.webp";
+import heroImage3 from "../../assets/AzamaraCabinsGuide/Hero3.webp";
 
 // Profile Image
 import profileImg from "../../assets/image.jpg";
 
+// Category Images
+import socialVibesImg from "../../assets/AzamaraCabinsGuide/Social_Vibes.webp";
+import cruisePortsImg from "../../assets/AzamaraCabinsGuide/Cruise_Ports.webp";
+import scenicCityImg from "../../assets/AzamaraCabinsGuide/Scenic_City_Views.webp";
+import culturalLandmarksImg from "../../assets/AzamaraCabinsGuide/Cultural_Landmarks.webp";
+import fineDiningImg from "../../assets/AzamaraCabinsGuide/Fine_Dining_Experience.webp";
+import casualDiningImg from "../../assets/AzamaraCabinsGuide/Casual_Dining.webp";
+import balconyViewImg from "../../assets/AzamaraCabinsGuide/Cruise_balcony_view.webp";
+import shipViewImg from "../../assets/AzamaraCabinsGuide/Ship_View.webp";
+
 const cabinCategories = [
-    { 
-        type: "Interior", 
-        bestFor: "Budget-focused travelers", 
-        summary: "Lowest cost, no natural light",
-        img: "https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=800" 
+    {
+        type: "Nightlife & Social Vibes",
+        bestFor: "Social travelers",
+        summary: "Fun evenings, music, and lively onboard atmosphere",
+        img: socialVibesImg
     },
-    { 
-        type: "Oceanview", 
-        bestFor: "Balanced travelers", 
-        summary: "Natural light without balcony cost",
-        img: "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=800" 
+    {
+        type: "Cruise Ports & Destinations",
+        bestFor: "Explorers",
+        summary: "Easy access to beautiful cities and scenic harbors",
+        img: cruisePortsImg
     },
-    { 
-        type: "Veranda", 
-        bestFor: "Most couples", 
-        summary: "Best mix of comfort and value",
-        img: "https://images.unsplash.com/photo-1548574505-12c0a1f4f6c0?q=80&w=800" 
+    {
+        type: "Scenic City Views",
+        bestFor: "Sightseeing lovers",
+        summary: "Panoramic skyline and stunning waterfront views",
+        img: scenicCityImg
     },
-    { 
-        type: "Veranda Plus", 
-        bestFor: "Step-up travelers", 
-        summary: "Balcony plus added benefits",
-        img: "https://images.unsplash.com/photo-1517176102644-782ed7138671?q=80&w=800" 
+    {
+        type: "Cultural Landmarks",
+        bestFor: "History enthusiasts",
+        summary: "Iconic architecture and rich cultural experiences",
+        img: culturalLandmarksImg
     },
-    { 
-        type: "Club Continent Suite", 
-        bestFor: "Premium travelers", 
-        summary: "More space and suite experience",
-        img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800" 
+    {
+        type: "Fine Dining Experience",
+        bestFor: "Food lovers",
+        summary: "Elegant dining with premium service and cuisine",
+        img: fineDiningImg
     },
-    { 
-        type: "Luxury Suites", 
-        bestFor: "Top-tier luxury", 
-        summary: "Highest-end experience (Ocean & Owner's)",
-        img: "https://images.unsplash.com/photo-1582719478250-c89cae4df85b?q=80&w=800" 
+    {
+        type: "Buffet & Casual Dining",
+        bestFor: "Relaxed travelers",
+        summary: "Quick, casual meals with a wide variety of options",
+        img: casualDiningImg
     }
 ];
 
@@ -147,7 +139,7 @@ export default function AzamaraCabins() {
             <Navbar />
 
             {/* ── 1. HERO SECTION ── */}
-            <section className="acg-hero">
+            <section className="acg-section acg-hero">
                 {heroImages.map((img, index) => (
                     <div
                         key={index}
@@ -214,6 +206,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-picks-header">
                         <h2 className="acg-h2">Best Azamara Cabins Ranked (Quick Picks)</h2>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                         <p className="acg-p acg-mt-sm">If you just want the answer:</p>
                     </div>
 
@@ -238,7 +231,7 @@ export default function AzamaraCabins() {
                     <div className="acg-wrong-editorial">
                         <div className="acg-wrong-left">
                             <h2 className="acg-h2">What Most People Get Wrong When Choosing an Azamara Cabin</h2>
-                            <div className="acg-wrong-accent-line"></div>
+                            <div className="acg-wrong-accent-line acg-light acg-center"></div>
                         </div>
                         <div className="acg-wrong-right">
                             <p className="acg-p">Most travelers focus only on size and price.</p>
@@ -263,6 +256,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-cat-header">
                         <h2 className="acg-h2">Azamara Cabin Categories Explained</h2>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                     </div>
 
                     <div className="acg-cat-grid-v2">
@@ -293,6 +287,7 @@ export default function AzamaraCabins() {
                         <div className="acg-v-v2-left">
                             <div className="acg-v-header">
                                 <h2 className="acg-h2">Why Veranda Is the Sweet Spot</h2>
+                                <div className="acg-wrong-accent-line acg-center"></div>
                                 <p className="acg-p acg-mt-sm">For most clients, Veranda is where the experience starts to feel right.</p>
                             </div>
 
@@ -317,7 +312,7 @@ export default function AzamaraCabins() {
 
                         <div className="acg-v-v2-right">
                             <div className="acg-v-img-frame">
-                                <img src="https://images.unsplash.com/photo-1548574505-12c0a1f4f6c0?q=80&w=1200" alt="Cruise balcony view" className="acg-v-img" />
+                                <img src={balconyViewImg} alt="Cruise balcony view" className="acg-v-img" />
                                 <div className="acg-v-img-accent"></div>
                             </div>
                         </div>
@@ -330,6 +325,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-cost-header">
                         <h2 className="acg-h2">How Much More Do Azamara Cabins Cost?</h2>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                         <p className="acg-p acg-mt-sm">While pricing varies by sailing, here is a realistic range:</p>
                     </div>
 
@@ -379,6 +375,7 @@ export default function AzamaraCabins() {
                     <div className="acg-up-matrix-container">
                         <div className="acg-up-matrix-header">
                             <h2 className="acg-h2">Is It Worth Upgrading Your Azamara Cabin?</h2>
+                            <div className="acg-wrong-accent-line acg-center"></div>
                             <p className="acg-p acg-mt-sm">A strategic look at value vs. necessity.</p>
                         </div>
 
@@ -442,12 +439,12 @@ export default function AzamaraCabins() {
                         <div className="acg-v3-sidebar">
                             <div className="acg-v3-title-wrap">
                                 <h2 className="acg-h2">Azamara Cabins to Avoid</h2>
-                                <div className="acg-v3-accent"></div>
+                                <div className="acg-wrong-accent-line acg-center"></div>
                             </div>
                             <p className="acg-p">This is one of the most important sections of our guide. Strategic booking starts with knowing what to skip.</p>
-                            
+
                             <div className="acg-v3-sidebar-img-wrap acg-mt-sm">
-                                <img src="https://images.unsplash.com/photo-1548574505-12c0a1f4f6c0?q=80&w=600" alt="Ship view" className="acg-v3-sidebar-img" />
+                                <img src={shipViewImg} alt="Ship view" className="acg-v3-sidebar-img" />
                             </div>
                         </div>
 
@@ -488,6 +485,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-loc-v8-header">
                         <h2 className="acg-h2">Where Cabin Location Matters</h2>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                         <p className="acg-p acg-mt-sm">Category is only half the decision. Location matters.</p>
                     </div>
 
@@ -525,6 +523,7 @@ export default function AzamaraCabins() {
                     <div className="acg-ships-v3-technical">
                         <div className="acg-v3-top-editorial">
                             <h2 className="acg-h2">Ship Differences That Matter</h2>
+                            <div className="acg-wrong-accent-line acg-center"></div>
                             <p className="acg-p acg-mt-sm">Not all Azamara ships feel identical.</p>
                         </div>
 
@@ -567,7 +566,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-scen-v8-top">
                         <h2 className="acg-h2">Real Client Scenarios: What We Recommend</h2>
-                        <div className="acg-scen-v8-underline"></div>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                     </div>
 
                     <div className="acg-scen-v8-grid">
@@ -597,6 +596,7 @@ export default function AzamaraCabins() {
                         <div className="acg-v2-honest-left">
                             <div className="acg-v2-honest-badge">Expert Perspective</div>
                             <h2 className="acg-h2">Our Honest Take on Azamara Cabins</h2>
+                            <div className="acg-wrong-accent-line acg-center"></div>
                             <p className="acg-p acg-mt-sm">After decades in the industry, we do not push clients into the highest category.</p>
                             <p className="acg-p">We guide them to the right one.</p>
                         </div>
@@ -632,7 +632,7 @@ export default function AzamaraCabins() {
                     <div className="acg-mistake-v3-editorial">
                         <div className="acg-v3-mistake-left">
                             <h2 className="acg-h2">The Biggest Mistake You Can Make</h2>
-                            <div className="acg-v3-warn-accent"></div>
+                            <div className="acg-wrong-accent-line acg-light"></div>
                             <p className="acg-p-display acg-mt-sm">The biggest mistake is assuming all cabins are interchangeable.</p>
                             <div className="acg-v3-negation-wrap">
                                 <span className="acg-v3-negation-text">They are not.</span>
@@ -665,7 +665,7 @@ export default function AzamaraCabins() {
             </section>
 
             {/* ── VIDEO FEATURE SECTION ── */}
-            <section className="acg-video-feature">
+            <section className="acg-section acg-video-feature">
                 <div className="acg-video-feature-overlay"></div>
                 <div className="acg-container acg-relative">
                     <div className="acg-video-split">
@@ -675,9 +675,9 @@ export default function AzamaraCabins() {
                                 Onboard Experience
                             </span>
                             <h2 className="acg-h2">Take a Closer Look <br /> at Your Next Cabin</h2>
-                            <div className="acg-video-bar"></div>
+                            <div className="acg-wrong-accent-line"></div>
                             <p className="acg-p">
-                                Witness the detailed craftsmanship and thoughtful design of Azamara's staterooms and suites. 
+                                Witness the detailed craftsmanship and thoughtful design of Azamara's staterooms and suites.
                                 This visual tour highlights why choosing the right category is the foundation of a great cruise.
                             </p>
                         </div>
@@ -718,15 +718,16 @@ export default function AzamaraCabins() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="acg-v3-advisory-main">
                             <h2 className="acg-h2">Why We Help Clients Choose the Right Cabin</h2>
+                            <div className="acg-wrong-accent-line acg-center"></div>
                             <div className="acg-v3-manifesto">
                                 <Quote className="acg-v3-quote-icon" size={40} />
                                 <p className="acg-p-display acg-bold">We do not just book cabins.</p>
                                 <p className="acg-p">We help clients navigate the complexity of choice to find the perfect fit.</p>
                             </div>
-                            
+
                             <div className="acg-v3-value-grid">
                                 {[
                                     { label: "Selection", text: "choose the right category" },
@@ -753,7 +754,7 @@ export default function AzamaraCabins() {
                         <div className="acg-v4-cta-left">
                             <div className="acg-v4-invitation">
                                 <h2 className="acg-h2">Not Sure Which Cabin Is Right for You?</h2>
-                                <div className="acg-v4-accent-line"></div>
+                                <div className="acg-wrong-accent-line acg-light"></div>
                                 <p className="acg-p-display">Reach out and we will walk you through it.</p>
                                 <button className="acg-btn-primary acg-mt-sm">Help Me Choose My Cabin</button>
                             </div>
@@ -789,7 +790,7 @@ export default function AzamaraCabins() {
                 <div className="acg-container">
                     <div className="acg-faq-header-v2">
                         <h2 className="acg-h2">Azamara Cabins Guide FAQs</h2>
-                        <div className="acg-faq-bar"></div>
+                        <div className="acg-wrong-accent-line acg-center"></div>
                     </div>
 
                     <div className="acg-faq-simple-wrapper">
