@@ -151,6 +151,14 @@ const Navbar = () => {
               >
                 Azamara Cruises Guide 2026-2027
               </NavLink>
+
+              <NavLink
+                to="/azamara-vs-viking-ocean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Vs Viking Ocean Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -305,12 +313,12 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/japan-land-vs-cruise"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Japan Land vs Cruise
-              </NavLink>
+              to="/japan-land-vs-cruise"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Japan Land vs Cruise
+            </NavLink>
 
             <NavLink
               to="/azamara-cruises-guide-2026-2027"
@@ -318,6 +326,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Azamara Cruises Guide 2026-2027
+            </NavLink>
+
+            <NavLink
+              to="/azamara-vs-viking-ocean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Vs Viking Ocean Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
