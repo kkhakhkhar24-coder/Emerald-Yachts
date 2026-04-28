@@ -383,7 +383,7 @@ export default function AzamaraCabins() {
                             <div className="acg-up-matrix-card">
                                 <div className="acg-up-card-zone-left">
                                     <div className="acg-up-zone-header">
-                                        <Gem className="acg-up-icon" />
+                                        <Gem className="acg-up-icon" color="rgb(231, 243, 245)" />
                                         <h3 className="acg-h3">The Case for Upgrading</h3>
                                     </div>
                                     <div className="acg-up-zone-items">
@@ -403,7 +403,7 @@ export default function AzamaraCabins() {
 
                                 <div className="acg-up-card-zone-right">
                                     <div className="acg-up-zone-header">
-                                        <Anchor className="acg-up-icon" />
+                                        <Anchor className="acg-up-icon" color="#274472" />
                                         <h3 className="acg-h3">Stick to Basics if:</h3>
                                     </div>
                                     <div className="acg-up-zone-items">
