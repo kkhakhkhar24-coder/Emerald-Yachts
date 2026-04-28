@@ -870,26 +870,6 @@ function AzamaraCruisesGuide() {
                             <p className="azamara-video-desc">
                                 Azamara Forward marks the next chapter in our onboard experience — bringing thoughtful enhancements across the fleet, inspired by our small-ship heritage and commitment to destination immersion.
                             </p>
-
-                            <ul className="azamara-video-features">
-                                <li>
-                                    <div className="azamara-video-feat-icon"><Ship size={18} strokeWidth={1.8} /></div>
-                                    <span>Fleet-wide refinements across all four ships</span>
-                                </li>
-                                <li>
-                                    <div className="azamara-video-feat-icon"><Compass size={18} strokeWidth={1.8} /></div>
-                                    <span>Enhanced destination-focused programming</span>
-                                </li>
-                                <li>
-                                    <div className="azamara-video-feat-icon"><Gem size={18} strokeWidth={1.8} /></div>
-                                    <span>Elevated onboard spaces and guest experience</span>
-                                </li>
-                            </ul>
-
-                            <div className="azamara-video-tag">
-                                <Anchor size={14} strokeWidth={2} />
-                                <span>Official Azamara Cruises</span>
-                            </div>
                         </div>
 
                         {/* RIGHT — Video Panel */}
