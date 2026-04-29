@@ -169,6 +169,14 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/azamara-alaska-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Alaska Cruises
+              </NavLink>
+
+              <NavLink
                 to="/azamara-cabins-alaska-guide"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -358,6 +366,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Azamara Cabins Guide
+            </NavLink>
+
+            <NavLink
+              to="/azamara-alaska-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Alaska Cruises
             </NavLink>
 
             <NavLink

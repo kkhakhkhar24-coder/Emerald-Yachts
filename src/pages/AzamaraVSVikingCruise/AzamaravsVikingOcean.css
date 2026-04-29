@@ -1640,13 +1640,6 @@
 }
 
 /* ========================================
-   RESPONSIVE — TABLET  (max-width: 768px)
-   ======================================== */
-
-/* ========================================
-   RESPONSIVE — MOBILE  (max-width: 480px)
-   ======================================== */
-/* ========================================
    MISCONCEPTIONS / EXPERT CALLOUT
    ======================================== */
 .AzaVik-misconception-wrap {
@@ -2714,6 +2707,9 @@
   .AzaVik-intro-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+  .AzaVik-hero-content h1{
+    font-size: 32px !important;
   }
 
   .AzaVik-intro-card {
