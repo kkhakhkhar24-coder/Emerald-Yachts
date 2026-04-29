@@ -565,21 +565,52 @@ const BestTimeJapan = () => {
         <div className="BTJapan_video_inner">
           <div className="BTJapan_video_header">
             <span className="BTJapan_section_badge">Visual Journey</span>
-            <h2>Experience Japan in Motion</h2>
+            <h2>A Visual Symphony of Seasons</h2>
             <p>
-              Explore the beauty and rhythm of Japan across the seasons through
-              our curated cinematic journey.
+              Witness the breathtaking transformation of Japan's landscapes, from the delicate cherry blossoms of spring to the silent, snow-draped beauty of winter.
             </p>
           </div>
-          <div className="BTJapan_video_container">
-            <div className="BTJapan_video_wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/ap7H2ULX0vA?si=m_S5x3X3yR1z4q5D"
-                title="Japan Travel Guide"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          <div className="BTJapan_video_grid">
+            {/* VIDEO CARD 1 */}
+            <div className="BTJapan_video_card">
+              <div className="BTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/ap7H2ULX0vA?si=m_S5x3X3yR1z4q5D"
+                  title="Winter's Silent Beauty"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <h3 className="BTJapan_video_card_title">Winter's Silent Beauty</h3>
+            </div>
+            
+            {/* VIDEO CARD 2 */}
+            <div className="BTJapan_video_card">
+              <div className="BTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/OShhce4kPrk"
+                  title="Vibrant Autumn Traditions"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <h3 className="BTJapan_video_card_title">Vibrant Autumn Traditions</h3>
+            </div>
+
+            {/* VIDEO CARD 3 */}
+            <div className="BTJapan_video_card">
+              <div className="BTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/YQ9OK36hZ9k"
+                  title="The Magic of Sakura Season"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <h3 className="BTJapan_video_card_title">Cherry Blossom Season</h3>
             </div>
           </div>
         </div>
@@ -1061,7 +1092,7 @@ const BestTimeJapan = () => {
         {/* Background Layer */}
         <div className="BTJapan_cta_bg_wrapper">
           <img
-            src={BTJimage3}
+            src={BTJhero2}
             alt="Atmospheric Japan"
             className="BTJapan_parallax_bg"
           />

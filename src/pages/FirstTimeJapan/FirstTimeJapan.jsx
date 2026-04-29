@@ -23,6 +23,7 @@ import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
 import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
 import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
 import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
+import Ftjapan5 from "../../assets/FirstTimeJapan/Ftjapan5.webp";
 
 /* ===== INLINE FAQ ACCORDION ===== */
 const FTJapanFAQ = ({ items }) => {
@@ -459,9 +460,17 @@ const FirstTimeJapan = () => {
               </div>
             </div>
 
-            {/* RIGHT IMAGE */}
+            {/* RIGHT VIDEO */}
             <div className="FTJapan_summary_image_container">
-              <img src={Ftjapan1} alt="Scenic Japan view" />
+              <div className="FTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/P6Y-8jfpImQ"
+                  title="Japan Travel Guide Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -627,7 +636,7 @@ const FirstTimeJapan = () => {
               {[
                 {
                   title: "Tokyo Energy",
-                  img: Jhero1,
+                  img: Ftjapan5,
                   desc: "Modernity and tradition collide.",
                 },
                 {

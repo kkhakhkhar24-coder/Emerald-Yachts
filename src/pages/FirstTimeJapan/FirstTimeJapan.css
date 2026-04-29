@@ -27,7 +27,9 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 2s ease-in-out, transform 8s linear;
+  transition:
+    opacity 2s ease-in-out,
+    transform 8s linear;
   z-index: 0;
   will-change: opacity, transform;
   transform: scale(1.1);
@@ -283,9 +285,10 @@
 
 .FTJapan_summary_grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 60px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
   align-items: center;
+  width: 100%;
 }
 
 .FTJapan_summary_text_content h2 {
@@ -340,10 +343,28 @@
 
 .FTJapan_summary_image_container {
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin-top: 20vh;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: var(--ftjapan-navy);
+}
+
+.FTJapan_video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.FTJapan_video_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .FTJapan_summary_image_container img {
@@ -352,10 +373,6 @@
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
-}
-
-.FTJapan_summary_image_container:hover img {
-  transform: scale(1.05);
 }
 
 /* ================= QUICK ANSWER V2 ================= */
@@ -870,14 +887,13 @@
 }
 .FTJapan_tip_num {
   font-size: 3rem;
-    font-weight: 800;
-    color: rgba(39, 68, 114, 0.12);
-    line-height: 1;
-    font-family: var(--font-display);
-    letter-spacing: -2px;
-    transition: color 0.4s ease;
+  font-weight: 800;
+  color: rgba(39, 68, 114, 0.12);
+  line-height: 1;
+  font-family: var(--font-display);
+  letter-spacing: -2px;
+  transition: color 0.4s ease;
 }
-
 
 .FTJapan_pacing_inner {
   max-width: var(--ftjapan-section-max);
@@ -925,7 +941,7 @@
   border: 1px solid #e0e8f0;
 }
 
-.FTJapan_tip_card:hover .FTJapan_tip_num{
+.FTJapan_tip_card:hover .FTJapan_tip_num {
   color: var(--ftjapan-white);
 }
 
@@ -947,7 +963,7 @@
 }
 
 .FTJapan_tip_card h3 {
-  font-family: var(--font-display) !important; 
+  font-family: var(--font-display) !important;
   font-size: 20px !important;
   font-weight: 500 !important;
   color: var(--ftjapan-navy);
@@ -2007,7 +2023,6 @@
   color: var(--ftjapan-navy);
 }
 
-
 .FTJapan_faq_icon {
   font-size: 22px;
   font-weight: 300;
@@ -2063,6 +2078,9 @@
 @media (max-width: 768px) {
   .FTJapan_hero_section {
     padding: 110px 15px 50px;
+  }
+  .FTJapan_summary_image_container{
+    margin-top: 0px;
   }
   .FTJapan_hero_content h1 {
     font-size: 32px;
