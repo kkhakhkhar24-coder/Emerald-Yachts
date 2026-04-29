@@ -30,6 +30,9 @@ import AzamaraVSVikingCruise from "./pages/AzamaraVSVikingCruise/AzamaraVSViking
 import AzamaraCabinsGuide from "./pages/AzamaraCabinsGuide/AzamaraCabinsGuide";
 import AzamaraCabinsAlaskaGuide from "./pages/AzamaraCabinsAlaskaGuide/AzamaraCabinsAlaskaGuide";
 import AzamaraAlaskaCruises from "./pages/AzamaraAlaskaCruises/AzamaraAlaskaCruises";
+import WorldCruises20272029 from "./pages/WorldCruises2027-2029/WorldCruises";
+import WorldCruises from "./pages/WorldCruises2027-2029/WorldCruises";
+
 
 function App() {
   return (
@@ -131,6 +134,10 @@ function App() {
           <Route
             path="/azamara-cabins-alaska-guide"
             element={<AzamaraCabinsAlaskaGuide />}
+          ></Route>
+          <Route
+            path="/world-cruises"
+            element={<WorldCruises />}
           ></Route>
         </Routes>
       </BrowserRouter>
