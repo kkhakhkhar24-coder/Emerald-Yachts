@@ -133,6 +133,33 @@ function TripToJapan() {
                 </div>
             </section>
 
+            {/* ── Video Guide Section ───────────────────────────── */}
+            <section className="jpn-section jpn-video-section jpn-bg-dark">
+                <div className="jpn-inner">
+                    <div className="jpn-video-layout">
+                        <div className="jpn-video-info" style={{ textAlign: "center", maxWidth: "100%" }}>
+                            <span className="jpn-eyebrow" style={{ color: "rgba(255, 255, 255, 0.7)" }}>Expert Visual Guide</span>
+                            <h2 className="jpn-h2-white">Planning Your Japan Adventure</h2>
+                            <div className="jpn-bar-white"></div>
+                            <p className="jpn-p-white jpn-mb-md">
+                                Sometimes seeing the journey is as important as reading about it. Watch this comprehensive guide to understand the flow, the feelings, and the logistics of a perfectly planned Japan trip.
+                            </p>
+                        </div>
+                        <div className="jpn-video-display">
+                            <div className="jpn-video-container-new">
+                                <iframe
+                                    src="https://www.youtube.com/embed/Cn0P0hWZT6Q"
+                                    title="Japan Travel Guide"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ── Why Planning Japan Is Different ──────────────────── */}
             <section className="jpn-section jpn-section-different jpn-bg-soft">
                 <div className="jpn-inner">
@@ -143,9 +170,9 @@ function TripToJapan() {
                         </div>
                         <div className="jpn-different-content">
                             <div className="jpn-section-image-wrap">
-                                <img 
-                                    src={planningJapan} 
-                                    alt="Luxury Ryokan Interior in Japan" 
+                                <img
+                                    src={planningJapan}
+                                    alt="Luxury Ryokan Interior in Japan"
                                     className="jpn-section-image"
                                     loading="lazy"
                                     decoding="async"
@@ -205,9 +232,9 @@ function TripToJapan() {
                         </div>
                         <p className="jpn-p jpn-decisions-intro">Every Japan trip comes down to four core decisions:</p>
                         <div className="jpn-section-image-wrap">
-                            <img 
-                                src={decisions4} 
-                                alt="Tokyo Skyline at Blue Hour" 
+                            <img
+                                src={decisions4}
+                                alt="Tokyo Skyline at Blue Hour"
                                 className="jpn-section-image"
                                 loading="lazy"
                                 decoding="async"
@@ -263,9 +290,9 @@ function TripToJapan() {
                         </div>
                         <div className="jpn-side-content">
                             <div className="jpn-section-image-wrap">
-                                <img 
-                                    src={bestTime} 
-                                    alt="Cherry Blossoms in Japan" 
+                                <img
+                                    src={bestTime}
+                                    alt="Cherry Blossoms in Japan"
                                     className="jpn-section-image"
                                     loading="lazy"
                                     decoding="async"
@@ -447,9 +474,9 @@ function TripToJapan() {
                     <div className="jpn-side-layout jpn-reverse-layout">
                         <div className="jpn-side-content">
                             <div className="jpn-section-image-wrap">
-                                <img 
-                                    src={buildItinerary} 
-                                    alt="Arashiyama Bamboo Forest" 
+                                <img
+                                    src={buildItinerary}
+                                    alt="Arashiyama Bamboo Forest"
                                     className="jpn-section-image"
                                     loading="lazy"
                                     decoding="async"

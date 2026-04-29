@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
 import {
     Anchor,
@@ -120,6 +121,91 @@ const scenarios = [
 ];
 
 export default function AzamaraCabins() {
+
+    const schemaData = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/azamara-cabins-guide/",
+                url: "https://www.tripsandships.com/azamara-cabins-guide/",
+                name: "Azamara Cabins Guide: Best Rooms, Suites, and Which Cabin to Book",
+                description: "Complete Azamara Cabins Guide with expert recommendations on the best cabins, suites, pricing differences, and which rooms to avoid.",
+                isPartOf: { "@type": "WebSite", name: "Trips & Ships Luxury Travel", url: "https://www.tripsandships.com/" },
+                about: { "@type": "Thing", name: "Azamara cabins and suites" },
+                primaryImageOfPage: {
+                    "@type": "ImageObject",
+                    url: "https://www.tripsandships.com/wp-content/uploads/azamara-cabins-guide.jpg"
+                },
+                author: { "@type": "Person", name: "Angela Hughes" }
+            },
+            {
+                "@type": "Article",
+                headline: "Azamara Cabins Guide: Best Rooms, Suites, and Which Cabin to Book",
+                description: "Complete Azamara Cabins Guide with expert recommendations on the best cabins, suites, pricing differences, and which rooms to avoid.",
+                author: {
+                    "@type": "Person",
+                    name: "Angela Hughes",
+                    url: "https://www.tripsandships.com/about-angela-hughes/"
+                },
+                publisher: {
+                    "@type": "Organization",
+                    name: "Trips & Ships Luxury Travel",
+                    logo: {
+                        "@type": "ImageObject",
+                        url: "https://www.tripsandships.com/wp-content/uploads/your-logo.png"
+                    }
+                },
+                mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": "https://www.tripsandships.com/azamara-cabins-guide/"
+                },
+                image: "https://www.tripsandships.com/wp-content/uploads/azamara-cabins-guide.jpg",
+                datePublished: "2026-04-22",
+                dateModified: "2026-04-22"
+            },
+            {
+                "@type": "Person",
+                name: "Angela Hughes",
+                jobTitle: "CEO",
+                worksFor: { "@type": "Organization", name: "Trips & Ships Luxury Travel" },
+                url: "https://www.tripsandships.com/about-angela-hughes/",
+                sameAs: [
+                    "https://www.linkedin.com/in/your-linkedin-url",
+                    "https://www.instagram.com/tripsandships",
+                    "https://www.tiktok.com/@tripsandships"
+                ],
+                description: "Angela Hughes is the CEO of Trips & Ships Luxury Travel and a luxury travel expert specializing in cruises, small ship voyages, and premium travel experiences."
+            },
+            {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", position: 2, name: "Cruises", item: "https://www.tripsandships.com/cruises/" },
+                    { "@type": "ListItem", position: 3, name: "Small Ship Cruises", item: "https://www.tripsandships.com/small-ship-cruises-guide/" },
+                    { "@type": "ListItem", position: 4, name: "Azamara Cruises Guide", item: "https://www.tripsandships.com/azamara-cruises-guide/" },
+                    { "@type": "ListItem", position: 5, name: "Azamara Cabins Guide", item: "https://www.tripsandships.com/azamara-cabins-guide/" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                mainEntity: [
+                    { "@type": "Question", name: "What is the best cabin on Azamara?", acceptedAnswer: { "@type": "Answer", text: "For most travelers, a Veranda Stateroom offers the best balance of comfort and value." } },
+                    { "@type": "Question", name: "Is a balcony worth it on Azamara?", acceptedAnswer: { "@type": "Answer", text: "Yes, for many travelers it significantly enhances the experience." } },
+                    { "@type": "Question", name: "What is Veranda Plus?", acceptedAnswer: { "@type": "Answer", text: "Veranda Plus is a step above standard balcony cabins with added benefits." } },
+                    { "@type": "Question", name: "Are Azamara suites worth it?", acceptedAnswer: { "@type": "Answer", text: "They are worth it for travelers who value space, service, and a more premium experience." } },
+                    { "@type": "Question", name: "What is a Club Continent Suite?", acceptedAnswer: { "@type": "Answer", text: "A Club Continent Suite is a premium suite category offering more space and an upgraded experience." } },
+                    { "@type": "Question", name: "Does Azamara have interior cabins?", acceptedAnswer: { "@type": "Answer", text: "Yes, Interior cabins are the most affordable option." } },
+                    { "@type": "Question", name: "Which cabin is best for motion sensitivity?", acceptedAnswer: { "@type": "Answer", text: "Midship cabins on lower decks are typically best." } },
+                    { "@type": "Question", name: "Are any cabins obstructed?", acceptedAnswer: { "@type": "Answer", text: "Yes, some Oceanview cabins may have obstructed views." } },
+                    { "@type": "Question", name: "Is Oceanview or Veranda better?", acceptedAnswer: { "@type": "Answer", text: "Veranda is generally preferred for the added space and balcony." } },
+                    { "@type": "Question", name: "Which cabin is best for couples?", acceptedAnswer: { "@type": "Answer", text: "Veranda cabins are the most popular choice." } },
+                    { "@type": "Question", name: "Which cabin is best for a special occasion?", acceptedAnswer: { "@type": "Answer", text: "Suites, especially Ocean Suites or higher, are typically best for a special occasion." } },
+                    { "@type": "Question", name: "Should I upgrade my cabin?", acceptedAnswer: { "@type": "Answer", text: "Only if it aligns with how you plan to use the space." } }
+                ]
+            }
+        ]
+    };
     const [openFaq, setOpenFaq] = useState(null);
     const [showAnswer, setShowAnswer] = useState(false);
     const [currentHero, setCurrentHero] = useState(0);
@@ -136,6 +222,12 @@ export default function AzamaraCabins() {
 
     return (
         <div className="acg-root">
+            <Helmet>
+                <title>Azamara Cabins Guide: Best Rooms, Suites, and Which Cabin to Book</title>
+                <meta name="title" content="Azamara Cabins Guide: Best Rooms, Suites, and Which Cabin to Book" />
+                <meta name="description" content="Complete Azamara Cabins Guide with expert recommendations on the best cabins, suites, pricing differences, and which rooms to avoid." />
+                <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+            </Helmet>
             <Navbar />
 
             {/* ── 1. HERO SECTION ── */}

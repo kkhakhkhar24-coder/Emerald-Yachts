@@ -532,7 +532,7 @@
     width: 48px;
     height: 3px;
     background: #ffffff;
-    margin: 18px auto 0;
+    margin: 24px auto 24px;
     border-radius: 2px;
 }
 
@@ -5780,5 +5780,158 @@
     .jpn-section-image-wrap {
         border-radius: 16px;
         margin-bottom: 24px;
+    }
+}
+
+/* ============================================================
+   VIDEO SECTION
+   ============================================================ */
+
+.jpn-h2-white {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.jpn-p-white {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 16px 0;
+}
+
+@media (max-width: 1024px) {
+    .jpn-h2-white {
+        font-size: 28px;
+    }
+
+    .jpn-p-white {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jpn-h2-white {
+        font-size: 24px;
+    }
+
+    .jpn-p-white {
+        font-size: 16px;
+    }
+}
+
+.jpn-video-section {
+    position: relative;
+    padding: 60px 20px;
+    background: #0c1829;
+    overflow: hidden;
+}
+
+.jpn-video-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.jpn-video-info {
+    max-width: 500px;
+}
+
+.jpn-video-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.jpn-video-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.jpn-highlight-icon {
+    color: #6b93bd;
+}
+
+.jpn-video-display {
+    position: relative;
+}
+
+.jpn-video-container-new {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.jpn-video-container-new iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Add a subtle glow behind the video */
+.jpn-video-display::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.4) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: blur(40px);
+}
+
+@media (max-width: 1024px) {
+    .jpn-video-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+
+    .jpn-video-info {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .jpn-bar-left {
+        margin: 18px auto 0 !important;
+    }
+
+    .jpn-video-highlights {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .jpn-video-section {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jpn-video-section {
+        padding: 50px 15px;
+    }
+
+    .jpn-video-container-new {
+        border-radius: 12px;
     }
 }
