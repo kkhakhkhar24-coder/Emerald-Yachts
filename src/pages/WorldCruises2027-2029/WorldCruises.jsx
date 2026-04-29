@@ -1102,7 +1102,7 @@ function WorldCruisesGuide() {
             <section className="worldcruises-faq-section-new">
                 <div className="worldcruises-faq-inner-new">
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <h2 className="worldcruises-h2">World Cruise FAQs<br />(What Clients Actually Ask Before They Book)</h2>
+                        <h2 className="worldcruises-h2">World Cruise FAQs<br /></h2>
                         <div className="worldcruises-bar worldcruises-bar-center"></div>
                     </div>
 
