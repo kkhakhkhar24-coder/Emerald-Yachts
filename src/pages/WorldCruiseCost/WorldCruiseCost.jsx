@@ -440,34 +440,31 @@ export default function WorldCruiseCost() {
                 </div>
             </section>
 
-            {/* COST SCENARIOS (v44) */}
-            <section className="wcc-section wcc-scenarios-v44">
-                <div className="wcc-container wcc-v44-inner">
-                    <h2 className="wcc-h2 wcc-v44-h2">Sample Cost Scenarios</h2>
-                    
-                    <div className="wcc-v44-grid">
+            {/* COST SCENARIOS (v46 - SLICK DASHBOARD) */}
+            <section className="wcc-section wcc-scenarios-v46">
+                <div className="wcc-container wcc-v46-inner">
+                    <h2 className="wcc-h2 wcc-v46-h2">Sample Cost Scenarios</h2>
+
+                    <div className="wcc-v46-grid">
                         {[
-                            { tier: "Premium Entry", base: "$29,000", range: "$40,000 to $50,000", progress: 50 },
-                            { tier: "Luxury Inclusive", base: "$78,000", range: "$85,000 to $100,000", progress: 75 },
-                            { tier: "Ultra Luxury", base: "$180,000", range: "$200,000+", progress: 100 }
+                            { tier: "Premium Entry", base: "$29,000", range: "$40,000 to $50,000", theme: "light" },
+                            { tier: "Luxury Inclusive", base: "$78,000", range: "$85,000 to $100,000", theme: "soft" },
+                            { tier: "Ultra Luxury", base: "$180,000", range: "$200,000+", theme: "dark" }
                         ].map((item, i) => (
-                            <div key={i} className="wcc-v44-card">
-                                <div className="wcc-v44-card-header">
-                                    <span className="wcc-v44-tier">{item.tier}</span>
+                            <div key={i} className={`wcc-v46-row wcc-v46-${item.theme}`}>
+                                <div className="wcc-v46-tier-box">
+                                    <span className="wcc-v46-tier-name">{item.tier}</span>
                                 </div>
-                                <div className="wcc-v44-price-flow">
-                                    <div className="wcc-v44-price-box">
-                                        <span className="wcc-v44-label">Base</span>
-                                        <span className="wcc-v44-val">{item.base}</span>
+                                <div className="wcc-v46-price-group">
+                                    <div className="wcc-v46-price-block">
+                                        <span className="wcc-v46-label">Base</span>
+                                        <span className="wcc-v46-value">{item.base}</span>
                                     </div>
-                                    <div className="wcc-v44-price-arrow">→</div>
-                                    <div className="wcc-v44-price-box">
-                                        <span className="wcc-v44-label">Total Estimate</span>
-                                        <span className="wcc-v44-val wcc-v44-highlight">{item.range}</span>
+                                    <div className="wcc-v46-arrow">→</div>
+                                    <div className="wcc-v46-price-block">
+                                        <span className="wcc-v46-label">Total Estimate</span>
+                                        <span className="wcc-v46-value wcc-v46-highlight">{item.range}</span>
                                     </div>
-                                </div>
-                                <div className="wcc-v44-progress-track">
-                                    <div className="wcc-v44-progress-bar" style={{ width: `${item.progress}%` }} />
                                 </div>
                             </div>
                         ))}

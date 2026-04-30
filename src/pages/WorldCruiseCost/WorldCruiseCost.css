@@ -2283,21 +2283,22 @@
         font-size: 28px;
     }
 }
+
 /* ============================================================
-   12. COST SCENARIOS (v44 - PROGRESS CARDS)
+   12. COST SCENARIOS (v46 - SLICK DASHBOARD)
    ============================================================ */
 
-.wcc-scenarios-v44 {
+.wcc-scenarios-v46 {
     background: var(--wcc-bg-white);
     padding: 60px 20px;
 }
 
-.wcc-v44-inner {
-    max-width: 1200px;
+.wcc-v46-inner {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.wcc-v44-h2 {
+.wcc-v46-h2 {
     color: var(--wcc-navy);
     font-size: 48px;
     font-weight: 800;
@@ -2305,121 +2306,125 @@
     text-align: center;
 }
 
-.wcc-v44-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.wcc-v44-card {
-    background: var(--wcc-bg-soft);
-    padding: 40px;
-    border-radius: 30px;
-    border: 1px solid rgba(39, 68, 114, 0.05);
+.wcc-v46-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    transition: all 0.4s ease;
-}
-
-.wcc-v44-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
-}
-
-.wcc-v44-tier {
-    font-size: 16px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--wcc-navy);
-    opacity: 0.6;
-}
-
-.wcc-v44-price-flow {
-    display: flex;
-    align-items: center;
     gap: 20px;
 }
 
-.wcc-v44-price-box {
+.wcc-v46-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 30px 50px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.wcc-v46-row:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.08);
+}
+
+/* Row Themes */
+.wcc-v46-light {
+    background: #ffffff;
+}
+
+.wcc-v46-soft {
+    background: var(--wcc-bg-soft);
+}
+
+.wcc-v46-dark {
+    background: var(--wcc-bg-dark2);
+    color: #ffffff !important;
+}
+
+.wcc-v46-tier-name {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wcc-v46-price-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.wcc-v46-price-block {
     display: flex;
     flex-direction: column;
 }
 
-.wcc-v44-label {
+.wcc-v46-label {
     font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--wcc-navy);
-    opacity: 0.5;
-    margin-bottom: 4px;
-}
-
-.wcc-v44-val {
-    font-size: 20px;
     font-weight: 700;
-    color: var(--wcc-navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    margin-bottom: 6px;
 }
 
-.wcc-v44-highlight {
+.wcc-v46-value {
     font-size: 24px;
-    color: var(--wcc-navy);
+    font-weight: 700;
+}
+
+.wcc-v46-highlight {
+    font-size: 32px;
     font-weight: 900;
 }
 
-.wcc-v44-price-arrow {
-    font-size: 24px;
-    color: var(--wcc-navy);
+.wcc-v46-dark .wcc-v46-value,
+.wcc-v46-dark .wcc-v46-highlight,
+.wcc-v46-dark .wcc-v46-label {
+    color: #ffffff !important;
+}
+
+.wcc-v46-arrow {
+    font-size: 30px;
     opacity: 0.3;
 }
 
-.wcc-v44-progress-track {
-    height: 8px;
-    background: rgba(39, 68, 114, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.wcc-v44-progress-bar {
-    height: 100%;
-    background: var(--wcc-navy);
-    border-radius: 4px;
-}
-
-/* v44 — Tablet */
+/* v46 — Tablet */
 @media (max-width: 1024px) {
-    .wcc-scenarios-v44 {
-        padding: 50px 15px;
-    }
-
-    .wcc-v44-grid {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .wcc-v44-h2 {
+    .wcc-v46-h2 {
         font-size: 28px;
     }
+
+    .wcc-v46-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px;
+        gap: 24px;
+    }
+
+    .wcc-v46-price-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .wcc-v46-arrow {
+        transform: rotate(90deg);
+    }
 }
 
-/* v44 — Mobile */
+/* v46 — Mobile */
 @media (max-width: 768px) {
-    .wcc-v44-h2 {
+    .wcc-v46-h2 {
         font-size: 24px;
     }
 
-    .wcc-v44-card {
-        padding: 30px;
+    .wcc-v46-value {
+        font-size: 20px;
     }
 
-    .wcc-v44-val {
-        font-size: 18px;
-    }
-
-    .wcc-v44-highlight {
-        font-size: 22px;
+    .wcc-v46-highlight {
+        font-size: 24px;
     }
 }
 
