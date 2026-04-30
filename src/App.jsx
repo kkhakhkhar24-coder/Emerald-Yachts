@@ -32,6 +32,7 @@ import AzamaraCabinsAlaskaGuide from "./pages/AzamaraCabinsAlaskaGuide/AzamaraCa
 import AzamaraAlaskaCruises from "./pages/AzamaraAlaskaCruises/AzamaraAlaskaCruises";
 import WorldCruises20272029 from "./pages/WorldCruises2027-2029/WorldCruises";
 import WorldCruises from "./pages/WorldCruises2027-2029/WorldCruises";
+import WorldCruiseCost from "./pages/WorldCruiseCost/WorldCruiseCost";
 
 
 function App() {
@@ -138,6 +139,10 @@ function App() {
           <Route
             path="/world-cruises"
             element={<WorldCruises />}
+          ></Route>
+          <Route
+            path="/world-cruise-cost"
+            element={<WorldCruiseCost />}
           ></Route>
         </Routes>
       </BrowserRouter>

@@ -184,13 +184,21 @@ const Navbar = () => {
                 Azamara Cabins Alaska Guide
               </NavLink>
 
-               <NavLink
-              to="/world-cruises"
-              className="nav-dropdown-single"
-              onClick={toggleMenu}
-            >
-              World Cruises
-            </NavLink>
+              <NavLink
+                to="/world-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                World Cruises
+              </NavLink>
+
+              <NavLink
+                to="/world-cruise-cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                World Cruise Cost
+              </NavLink>
             </div>
           </div>
         </div>
@@ -391,13 +399,21 @@ const Navbar = () => {
             >
               Azamara Cabins Alaska Guide
             </NavLink>
-            
+
             <NavLink
               to="/world-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               World Cruises
+            </NavLink>
+
+            <NavLink
+              to="/world-cruise-cost"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              World Cruise Cost
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
