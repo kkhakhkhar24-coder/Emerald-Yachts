@@ -1,0 +1,1557 @@
+/* Regent Seven Seas Guide Styles */
+
+/* ============================================================
+   COLOR PALETTE (mirrors WorldCruises design system)
+   ============================================================ */
+:root {
+    --rss-navy: #274472;
+    --rss-navy-light: #274472cc;
+    --rss-bg-white: #ffffff;
+    --rss-bg-soft: rgb(231, 243, 245);
+    --rss-bg-dark: #0f1c2e;
+    --rss-bg-dark2: #1c2f4a;
+}
+
+/* ============================================================
+   BASE SECTION & INNER
+   ============================================================ */
+.regent-section {
+    padding: 60px 20px;
+}
+
+.regent-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.regent-h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.regent-h1-years {
+    color: #93c5fd;
+    display: block;
+    font-size: 52px;
+}
+
+.regent-h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--rss-navy);
+}
+
+.regent-h2-white {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.regent-h3 {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700 !important;
+    margin: 0 0 18px 0;
+    color: var(--rss-navy);
+}
+
+.regent-h3-white {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700 !important;
+    margin: 0 0 18px 0;
+    color: #ffffff;
+}
+
+.regent-p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+}
+
+.regent-p-white {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin: 0 0 16px 0;
+}
+
+/* ============================================================
+   BACKGROUNDS
+   ============================================================ */
+.regent-bg-white {
+    background: var(--rss-bg-white);
+}
+
+.regent-bg-soft {
+    background: var(--rss-bg-soft);
+}
+
+.regent-bg-dark {
+    background: var(--rss-bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.regent-bg-dark2 {
+    background: var(--rss-bg-dark2);
+    position: relative;
+    overflow: hidden;
+}
+
+.regent-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--rss-bg-dark) 0%, var(--rss-bg-dark2) 100%);
+    z-index: 0;
+}
+
+.regent-relative {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================================================
+   BARS / SEPARATORS
+   ============================================================ */
+.regent-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--rss-navy);
+    margin-bottom: 32px;
+    border-radius: 2px;
+}
+
+.regent-bar-white {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin-bottom: 32px;
+    border-radius: 2px;
+}
+
+.regent-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================================
+   EYEBROW
+   ============================================================ */
+.regent-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.regent-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.regent-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.regent-hero-bg.active {
+    opacity: 1;
+}
+
+.regent-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.regent-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.regent-hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.regent-hero-lead {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ============================================================
+   HERO CTA CARD
+   ============================================================ */
+.regent-cta-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 36px 40px;
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.regent-cta-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+}
+
+.regent-cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.regent-cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.regent-cta-feature svg {
+    color: #93c5fd;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.regent-btn-primary {
+    background: var(--rss-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.regent-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.regent-btn-outline {
+    background: transparent;
+    color: var(--rss-navy);
+    border: 2px solid var(--rss-navy);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.regent-btn-outline:hover {
+    background: var(--rss-navy);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.regent-btn-outline-white {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.regent-btn-outline-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.regent-hero-subtext {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+/* ============================================================
+   INTRO / TWO-COLUMN LAYOUT
+   ============================================================ */
+.regent-intro-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.regent-intro-heading {
+    position: sticky;
+    top: 100px;
+}
+
+.regent-intro-highlight {
+    background: var(--rss-bg-soft);
+    border-left: 4px solid var(--rss-navy);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-top: 24px;
+    font-size: 17px;
+    font-style: italic;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+.regent-inclusion-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.regent-inclusion-row:last-of-type {
+    border-bottom: none;
+}
+
+.regent-inclusion-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--rss-bg-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rss-navy);
+    flex-shrink: 0;
+}
+
+.regent-inclusion-label {
+    font-size: 17px;
+    color: #2d3748;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   SNAPSHOT GRID
+   ============================================================ */
+.regent-snapshot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.regent-snapshot-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.regent-snapshot-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--rss-navy);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.1);
+}
+
+.regent-snapshot-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--rss-bg-soft);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rss-navy);
+    margin: 0 auto 14px;
+    transition: all 0.3s ease;
+}
+
+.regent-snapshot-card:hover .regent-snapshot-icon {
+    background: var(--rss-navy);
+    color: #ffffff;
+}
+
+.regent-snapshot-label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin: 0 0 8px 0;
+}
+
+.regent-snapshot-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* ============================================================
+   PRICING SECTION
+   ============================================================ */
+.regent-pricing-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.regent-pricing-section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    margin: 0 0 20px 0;
+}
+
+.regent-pricing-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: background 0.2s ease;
+}
+
+.regent-pricing-row:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.regent-pricing-row-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--rss-navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.regent-pricing-row-label {
+    flex: 1;
+    font-size: 16px;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.regent-pricing-row-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #93c5fd;
+    white-space: nowrap;
+}
+
+.regent-pricing-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background: var(--rss-navy);
+    border-radius: 12px;
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.regent-pricing-conclusion {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.regent-pricing-conclusion-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--rss-navy);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.regent-pricing-insight {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(147, 197, 253, 0.08);
+    border: 1px solid rgba(147, 197, 253, 0.2);
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 8px;
+}
+
+.regent-pricing-insight svg {
+    color: #93c5fd;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.regent-pricing-insight p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   SUITE CATEGORIES
+   ============================================================ */
+.regent-suites-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.regent-suite-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.regent-suite-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--rss-navy);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.regent-suite-card.featured {
+    background: var(--rss-navy);
+    border-color: var(--rss-navy);
+    color: #ffffff;
+}
+
+.regent-suite-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--rss-bg-soft);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rss-navy);
+    margin: 0 auto 16px;
+    transition: all 0.3s ease;
+}
+
+.regent-suite-card.featured .regent-suite-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.regent-suite-card:not(.featured):hover .regent-suite-icon {
+    background: var(--rss-navy);
+    color: #ffffff;
+}
+
+.regent-suite-level {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.regent-suite-card.featured .regent-suite-level {
+    color: #ffffff;
+}
+
+.regent-suite-experience {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.regent-suite-card.featured .regent-suite-experience {
+    color: #cbd5e1;
+}
+
+.regent-suite-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 12px;
+}
+
+.regent-suite-insight {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background: var(--rss-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 12px;
+    padding: 20px 24px;
+}
+
+.regent-suite-insight svg {
+    color: var(--rss-navy);
+    flex-shrink: 0;
+}
+
+.regent-suite-insight p {
+    font-size: 16px;
+    font-style: italic;
+    color: #2d3748;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   COMPARISON TABLE
+   ============================================================ */
+.regent-table-container {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(39, 68, 114, 0.08);
+}
+
+.regent-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.regent-comparison-table thead {
+    background: var(--rss-navy);
+    color: #ffffff;
+}
+
+.regent-comparison-table thead th {
+    padding: 18px 24px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.regent-table-th-regent {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.regent-comparison-table tbody tr {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.2s ease;
+}
+
+.regent-comparison-table tbody tr:hover {
+    background: var(--rss-bg-soft);
+}
+
+.regent-comparison-table tbody td {
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #2d3748;
+    vertical-align: middle;
+}
+
+.regent-table-feature {
+    font-weight: 700;
+    color: var(--rss-navy) !important;
+    width: 200px;
+}
+
+.regent-table-regent-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #065f46 !important;
+    font-weight: 600;
+}
+
+.regent-table-check {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.regent-table-x {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+.regent-table-competitor-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #64748b !important;
+}
+
+/* ============================================================
+   ROUTE FLOW
+   ============================================================ */
+.regent-route-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.regent-route-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.regent-route-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+    border-color: rgba(147, 197, 253, 0.3);
+}
+
+.regent-route-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    font-family: monospace;
+}
+
+.regent-route-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--rss-navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.regent-route-region {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+}
+
+.regent-route-detail {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   WHO SHOULD BOOK
+   ============================================================ */
+.regent-travelers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.regent-traveler-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.regent-traveler-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--rss-navy);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.regent-traveler-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--rss-bg-soft);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rss-navy);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.regent-traveler-card:hover .regent-traveler-icon {
+    background: var(--rss-navy);
+    color: #ffffff;
+}
+
+.regent-traveler-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.regent-traveler-desc {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   BOOKING STRATEGY
+   ============================================================ */
+.regent-booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.regent-booking-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.regent-booking-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.regent-booking-step:hover {
+    transform: translateX(6px);
+    border-color: var(--rss-navy);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.08);
+}
+
+.regent-booking-step-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    opacity: 0.3;
+    line-height: 1;
+    flex-shrink: 0;
+    font-family: monospace;
+    min-width: 48px;
+}
+
+.regent-booking-step-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    margin: 0 0 6px 0;
+}
+
+.regent-booking-step-desc {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   HIDDEN ADVANTAGES
+   ============================================================ */
+.regent-advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.regent-advantage-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.regent-advantage-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-4px);
+    border-color: rgba(147, 197, 253, 0.3);
+}
+
+.regent-advantage-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--rss-navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.regent-advantage-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+}
+
+.regent-advantage-desc {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   EXPERT AUTHORITY SECTION
+   ============================================================ */
+.regent-expert-section {
+    background: linear-gradient(180deg, #ffffff 0%, var(--rss-bg-soft) 100%);
+    padding: 60px 20px;
+}
+
+.regent-expert-layout {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.regent-expert-portrait-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.regent-expert-portrait {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 3.5 / 4.5;
+    border-radius: 200px 40px 200px 40px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(39, 68, 114, 0.2);
+    background: #ffffff;
+    z-index: 2;
+}
+
+.regent-expert-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.regent-expert-portrait:hover img {
+    transform: scale(1.05);
+}
+
+.regent-expert-portrait::after {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 200px 40px 200px 40px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.regent-expert-badge {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 110px;
+    height: 110px;
+    background: var(--rss-navy);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffffff;
+    z-index: 10;
+    font-family: serif;
+}
+
+.regent-expert-badge span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.regent-expert-badge strong {
+    font-size: 28px;
+    display: block;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.regent-expert-quote {
+    font-family: serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--rss-navy);
+    line-height: 1.5;
+    margin-bottom: 32px;
+    padding-left: 28px;
+    border-left: 4px solid rgba(165, 174, 189, 0.7);
+    font-weight: 400;
+}
+
+.regent-expert-quote-sig {
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    color: #64748b;
+    margin-top: 12px;
+}
+
+.regent-expert-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.regent-expert-cred {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.regent-expert-cred:hover {
+    transform: translateX(6px);
+    border-color: var(--rss-navy);
+}
+
+.regent-expert-cred-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--rss-bg-soft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rss-navy);
+    flex-shrink: 0;
+}
+
+.regent-expert-cred p {
+    font-size: 15px;
+    color: #2d3748;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   CRUISE LINES COMPARISON GRID
+   ============================================================ */
+.regent-lines-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.regent-line-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.regent-line-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+}
+
+.regent-line-card-featured {
+    background: var(--rss-navy);
+    border-color: var(--rss-navy);
+}
+
+.regent-line-card-featured .regent-line-name,
+.regent-line-card-featured .regent-line-positioning {
+    color: #ffffff !important;
+}
+
+.regent-line-card-featured .regent-line-positioning {
+    color: #cbd5e1 !important;
+}
+
+.regent-line-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.regent-line-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--rss-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.regent-line-positioning {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   IS IT WORTH IT
+   ============================================================ */
+.regent-worth-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.regent-worth-reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.regent-worth-reason {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.regent-worth-reason:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(147, 197, 253, 0.3);
+}
+
+.regent-worth-reason-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--rss-navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.regent-worth-reason p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.regent-cta-section-inner {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.regent-cta-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.regent-faq-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.regent-faq-inner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.regent-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.regent-faq-item {
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 14px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: #ffffff;
+}
+
+.regent-faq-item:hover {
+    border-color: var(--rss-navy);
+    background: var(--rss-bg-soft);
+}
+
+.regent-faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.regent-faq-question span:first-child {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--rss-navy);
+    line-height: 1.4;
+}
+
+.regent-faq-icon {
+    color: var(--rss-navy);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.regent-faq-answer {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 16px 0 0 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1200px) {
+    .regent-suites-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .regent-intro-layout,
+    .regent-pricing-layout,
+    .regent-booking-layout,
+    .regent-worth-layout,
+    .regent-expert-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .regent-intro-heading {
+        position: static;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-worth-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-expert-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .regent-expert-portrait-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .regent-expert-quote {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .regent-section,
+    .regent-expert-section,
+    .regent-faq-section {
+        padding: 50px 15px !important;
+    }
+
+    .regent-h1 {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+    }
+
+    .regent-h1-years {
+        font-size: 30px !important;
+    }
+
+    .regent-h2,
+    .regent-h2-white {
+        font-size: 28px !important;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-worth-reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-cta-features {
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        margin: 0 auto 28px;
+    }
+
+    .regent-cta-card {
+        padding: 28px 20px;
+    }
+
+    .regent-hero-inner {
+        padding: 60px 16px;
+    }
+
+    .regent-cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regent-pricing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-travelers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-expert-badge {
+        width: 90px;
+        height: 90px;
+        top: 20px;
+        left: -10px;
+        border-width: 3px;
+    }
+
+    .regent-expert-badge strong {
+        font-size: 22px;
+    }
+
+    .regent-expert-badge span {
+        font-size: 9px;
+    }
+
+    .regent-table-container {
+        overflow-x: auto;
+    }
+
+    .regent-comparison-table thead th,
+    .regent-comparison-table tbody td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .regent-advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .regent-h1 {
+        font-size: 28px !important;
+    }
+
+    .regent-h2,
+    .regent-h2-white {
+        font-size: 24px !important;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-route-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: 1fr;
+    }
+}

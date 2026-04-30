@@ -419,10 +419,10 @@ function WorldCruisesGuide() {
                         <div className="worldcruises-trust-portrait-wrap">
                             <div className="worldcruises-trust-portrait">
                                 <img src={image} alt="Angela Hughes - World Cruise Expert" />
-                                <div className="worldcruises-trust-experience-badge">
-                                    <Compass size={16} />
-                                    <span>40+ Years Experience</span>
-                                </div>
+                            </div>
+                            <div className="worldcruises-trust-experience-badge">
+                                <strong>40+</strong>
+                                <span>Years Experience</span>
                             </div>
                         </div>
 

@@ -371,14 +371,13 @@
 .worldcruises-trust-portrait {
     position: relative;
     width: 100%;
-    max-width: 380px;
+    max-width: 340px;
     aspect-ratio: 3.5 / 4.5;
-    border-radius: 190px 40px 190px 40px;
-    /* Modern Asymmetric Leaf Shape */
+    border-radius: 200px 40px 200px 40px;
     overflow: hidden;
-    box-shadow: 0 40px 100px rgba(39, 68, 114, 0.15);
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 40px 100px rgba(39, 68, 114, 0.2);
     background: #ffffff;
+    z-index: 2;
 }
 
 .worldcruises-trust-portrait img {
@@ -390,63 +389,87 @@
 }
 
 .worldcruises-trust-portrait:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-
-/* Secondary decoration - elegant line */
+/* Luxury Architectural Frame */
+.worldcruises-trust-portrait::after {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 200px 40px 200px 40px;
+    z-index: -1;
+    pointer-events: none;
+}
 
 .worldcruises-trust-experience-badge {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(15, 28, 46, 0.95);
-    backdrop-filter: blur(8px);
-    padding: 10px 18px;
-    border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 20px;
+    left: -20px;
+    right: auto;
+    width: 110px;
+    height: 110px;
+    background: var(--wc-navy);
     color: #ffffff;
+    border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    font-size: 13px;
-    white-space: nowrap;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffffff;
+    z-index: 10;
+    font-family: serif;
 }
 
-.worldcruises-trust-experience-badge svg {
-    color: var(--wc-navy-light);
+.worldcruises-trust-experience-badge span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.worldcruises-trust-intro {
-    max-width: 650px;
+.worldcruises-trust-experience-badge strong {
+    font-size: 28px;
+    display: block;
+    line-height: 1;
+    margin-bottom: 2px;
 }
 
 .worldcruises-trust-statement {
     font-family: serif;
-    font-size: 32px;
+    font-size: 26px;
     font-style: italic;
     color: var(--wc-navy);
     line-height: 1.3;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     position: relative;
-    padding-left: 24px;
-    border-left: 3px solid var(--wc-navy);
+    padding-left: 30px;
+    border-left: 4px solid rgb(165, 174, 189) !important;
     font-weight: 400;
 }
 
 .worldcruises-trust-highlight {
     background: #ffffff;
-    border: 1px solid rgba(39, 68, 114, 0.1);
-    border-radius: 16px;
-    padding: 24px;
-    margin-top: 32px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    padding: 30px;
+    margin-top: 40px;
     display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    transition: all 0.3s ease;
+}
+
+.worldcruises-trust-highlight:hover {
+    transform: translateY(-5px);
+    border-color: rgb(39,68,114);
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.08);
 }
 
 .worldcruises-trust-highlight p {
@@ -520,56 +543,7 @@
     margin: 0;
 }
 
-@media (max-width: 1150px) {
-    .worldcruises-trust-top {
-        grid-template-columns: 1fr;
-        gap: 60px;
-        text-align: center;
-    }
 
-    .worldcruises-trust-portrait-wrap {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .worldcruises-trust-intro {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: left;
-    }
-}
-
-@media (max-width: 768px) {
-    .worldcruises-trust-statement {
-        font-size: 26px;
-        line-height: 1.4;
-        padding-left: 20px;
-    }
-    
-    .worldcruises-trust-portrait {
-        max-width: 320px;
-    }
-}
-
-@media (max-width: 480px) {
-    .worldcruises-trust-portrait {
-        max-width: 290px;
-    }
-    
-    .worldcruises-trust-experience-badge {
-        font-size: 11px;
-        padding: 8px 16px;
-    }
-    
-    .worldcruises-trust-statement {
-        font-size: 22px;
-    }
-    
-    .worldcruises-trust-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* ============================================================
    WHAT IS A WORLD CRUISE (PREMIUM IMAGE REDESIGN)
@@ -1804,32 +1778,101 @@
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-    .worldcruises-section {
+
+    .worldcruises-section,
+    .worldcruises-pinnacle-gallery,
+    .worldcruises-trust-premium,
+    .worldcruises-whatis-premium,
+    .worldcruises-roi-premium,
+    .worldcruises-inventory-premium,
+    .worldcruises-faq-section-new {
         padding: 50px 15px;
     }
 
     .worldcruises-h1 {
-        font-size: 36px;
+        font-size: 60px !important;
     }
 
     .worldcruises-h2,
-    .worldcruises-h2-white {
-        font-size: 30px;
-    }
-
-    .worldcruises-h3,
-    .worldcruises-h3-white {
-        font-size: 24px;
+    .worldcruises-h2-white,
+    .worldcruises-pinnacle-gallery-text h2,
+    .worldcruises-pinnacle-luxury h2,
+    .worldcruises-faq-inner-new h2 {
+        font-size: 48px !important;
     }
 
     .worldcruises-p,
-    .worldcruises-p-white {
-        font-size: 17px;
+    .worldcruises-p-white,
+    .worldcruises-hero-lead,
+    .worldcruises-hero-subtext,
+    .worldcruises-lifestyle-item p,
+    .worldcruises-pinnacle-gallery-quote p,
+    .worldcruises-trust-highlight p,
+    .worldcruises-trust-desc,
+    .worldcruises-expect-text,
+    .worldcruises-roi-stat-label,
+    .worldcruises-roi-stat-desc,
+    .worldcruises-inventory-desc,
+    .worldcruises-faq-a-inner,
+    .worldcruises-faq-q-new button {
+        font-size: 18px !important;
+    }
+
+    .worldcruises-inventory-title {
+        font-size: 22px !important;
+    }
+
+    .worldcruises-expect-title {
+        font-size: 20px !important;
+    }
+
+    .worldcruises-trust-statement {
+        font-size: 32px !important;
+        margin-bottom: 30px;
+    }
+
+    .worldcruises-trust-experience-badge {
+        width: 90px;
+        height: 90px;
+        top: 20px;
+        left: -10px;
+        right: auto;
+        border-width: 3px;
+    }
+
+    .worldcruises-trust-experience-badge strong {
+        font-size: 22px;
+    }
+
+    .worldcruises-trust-experience-badge span {
+        font-size: 9px;
+    }
+
+    .worldcruises-trust-top {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .worldcruises-trust-portrait-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .worldcruises-trust-intro {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
     }
 
     .worldcruises-intro-layout,
     .worldcruises-choose-layout,
-    .worldcruises-cabin-layout {
+    .worldcruises-cabin-layout,
+    .worldcruises-whatis-layout,
+    .worldcruises-roi-layout,
+    .worldcruises-inventory-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -1859,21 +1902,87 @@
     .worldcruises-nofit-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .worldcruises-pinnacle-gallery-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .worldcruises-pinnacle-panels {
+        width: 100%;
+        height: 500px;
+        flex: none;
+    }
+
+    .worldcruises-pinnacle-gallery-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .worldcruises-pinnacle-gallery-quote {
+        text-align: left;
+        max-width: 600px;
+        margin: 40px auto 0;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .worldcruises-section,
+    .worldcruises-pinnacle-gallery,
+    .worldcruises-trust-premium,
+    .worldcruises-whatis-premium,
+    .worldcruises-roi-premium,
+    .worldcruises-inventory-premium,
+    .worldcruises-faq-section-new {
+        padding: 50px 15px !important;
+    }
+
     .worldcruises-h1 {
-        font-size: 28px;
+        font-size: 32px !important;
+        line-height: 1.15 !important;
     }
 
     .worldcruises-h2,
-    .worldcruises-h2-white {
-        font-size: 24px;
+    .worldcruises-h2-white,
+    .worldcruises-pinnacle-gallery-text h2,
+    .worldcruises-pinnacle-luxury h2,
+    .worldcruises-faq-inner-new h2 {
+        font-size: 28px !important;
     }
 
-    .worldcruises-h3,
-    .worldcruises-h3-white {
-        font-size: 20px;
+    .worldcruises-p,
+    .worldcruises-p-white,
+    .worldcruises-hero-lead,
+    .worldcruises-hero-subtext,
+    .worldcruises-lifestyle-item p,
+    .worldcruises-pinnacle-gallery-quote p,
+    .worldcruises-trust-highlight p,
+    .worldcruises-trust-desc,
+    .worldcruises-expect-text,
+    .worldcruises-roi-stat-label,
+    .worldcruises-roi-stat-desc,
+    .worldcruises-inventory-desc,
+    .worldcruises-faq-a-inner,
+    .worldcruises-faq-q-new button {
+        font-size: 17px !important;
+    }
+
+    .worldcruises-inventory-title {
+        font-size: 20px !important;
+    }
+
+    .worldcruises-expect-title {
+        font-size: 18px !important;
+    }
+
+    .worldcruises-trust-statement {
+        font-size: 26px !important;
+        padding-left: 20px;
+    }
+
+    .worldcruises-trust-portrait {
+        max-width: 320px;
     }
 
     .worldcruises-hero-inner {
@@ -1886,16 +1995,37 @@
 
     .worldcruises-cta-features {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 14px;
+        width: max-content;
+        margin: 0 auto 28px;
     }
 
     .worldcruises-trust-grid,
     .worldcruises-stats-grid,
     .worldcruises-lifestyle-grid,
     .worldcruises-cost-grid,
-    .worldcruises-nofit-grid {
+    .worldcruises-nofit-grid,
+    .worldcruises-expect-grid {
         grid-template-columns: 1fr;
+    }
+
+    .worldcruises-inventory-grid {
+        display: block !important;
+    }
+
+    .worldcruises-inventory-card {
+        margin-bottom: 20px;
+    }
+
+    .worldcruises-inventory-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .worldcruises-whatis-img {
+        border-radius: 40px !important;
+        height: 350px !important;
+        object-fit: cover;
     }
 
     .worldcruises-lines-grid {
@@ -1923,6 +2053,159 @@
 
     .worldcruises-stat-number {
         font-size: 40px;
+    }
+
+    .worldcruises-pinnacle-panels {
+        height: 400px;
+        gap: 10px;
+    }
+
+    .worldcruises-pinnacle-panel {
+        border-radius: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .worldcruises-section,
+    .worldcruises-pinnacle-gallery,
+    .worldcruises-trust-premium,
+    .worldcruises-whatis-premium,
+    .worldcruises-roi-premium,
+    .worldcruises-inventory-premium,
+    .worldcruises-faq-section-new {
+        padding: 50px 15px !important;
+    }
+
+    .worldcruises-h1 {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+    }
+
+    .worldcruises-h2,
+    .worldcruises-h2-white,
+    .worldcruises-pinnacle-gallery-text h2,
+    .worldcruises-pinnacle-luxury h2,
+    .worldcruises-faq-inner-new h2 {
+        font-size: 24px !important;
+    }
+
+    .worldcruises-p,
+    .worldcruises-p-white,
+    .worldcruises-hero-lead,
+    .worldcruises-hero-subtext,
+    .worldcruises-lifestyle-item p,
+    .worldcruises-pinnacle-gallery-quote p,
+    .worldcruises-trust-highlight p,
+    .worldcruises-trust-desc,
+    .worldcruises-expect-text,
+    .worldcruises-roi-stat-label,
+    .worldcruises-roi-stat-desc,
+    .worldcruises-inventory-desc,
+    .worldcruises-faq-a-inner,
+    .worldcruises-faq-q-new button {
+        font-size: 16px !important;
+    }
+
+    .worldcruises-inventory-title {
+        font-size: 18px !important;
+    }
+
+    .worldcruises-inventory-grid {
+        display: block !important;
+    }
+
+    .worldcruises-inventory-card {
+        margin-bottom: 20px;
+    }
+
+    .worldcruises-inventory-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .worldcruises-expect-title {
+        font-size: 17px !important;
+    }
+
+    .worldcruises-trust-statement {
+        font-size: 22px !important;
+    }
+
+    .worldcruises-trust-experience-badge {
+        width: 80px;
+        height: 80px;
+        top: 15px;
+        left: -10px;
+        right: auto;
+        padding: 10px;
+    }
+
+    .worldcruises-trust-experience-badge strong {
+        font-size: 20px;
+    }
+
+    .worldcruises-trust-experience-badge span {
+        font-size: 8px;
+    }
+
+    .worldcruises-trust-portrait {
+        max-width: 300px;
+        border-radius: 150px 30px 150px 30px;
+    }
+
+    .worldcruises-trust-portrait-wrap {
+        padding: 20px;
+    }
+
+    .worldcruises-hero-inner {
+        padding: 40px 15px;
+    }
+
+    .worldcruises-cta-card {
+        padding: 24px 15px;
+    }
+
+    .worldcruises-cta-features {
+        width: 100%;
+        max-width: 280px;
+        align-items: flex-start;
+    }
+
+    .worldcruises-cta-feature {
+        text-align: left;
+    }
+
+    .worldcruises-cta-card-title {
+        font-size: 18px;
+    }
+
+    .worldcruises-btn-primary {
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .worldcruises-pinnacle-panels {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .worldcruises-pinnacle-panel {
+        height: 250px !important;
+        width: 100%;
+        border-radius: 20px !important;
+    }
+
+    .worldcruises-pinnacle-panel:nth-child(1),
+    .worldcruises-pinnacle-panel:nth-child(2),
+    .worldcruises-pinnacle-panel:nth-child(3) {
+        height: 250px !important;
+    }
+
+    .worldcruises-pinnacle-side-label {
+        display: none;
     }
 }
 
@@ -2318,7 +2601,7 @@
 }
 
 .worldcruises-faq-inner-new h2 {
-    font-size: 48px ;
+    font-size: 48px;
     font-weight: 700;
     color: var(--wc-navy);
     margin-bottom: 40px;
@@ -2634,19 +2917,19 @@
 }
 
 .worldcruises-pinnacle-gallery-container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
 }
 
 .worldcruises-pinnacle-panels {
-    flex: 1.2;
+    flex: 1;
     display: flex;
     align-items: flex-end;
     gap: 15px;
-    height: 600px;
+    height: 520px;
     position: relative;
 }
 
@@ -2667,18 +2950,18 @@
 }
 
 .worldcruises-pinnacle-panel:nth-child(1) {
-    height: 80%;
-    border-radius: 100px 0 0 100px;
+    height: 75%;
+    border-radius: 120px 0 0 120px;
 }
 
 .worldcruises-pinnacle-panel:nth-child(2) {
     height: 100%;
-    border-radius: 100px 100px 0 0;
+    border-radius: 120px 120px 0 0;
 }
 
 .worldcruises-pinnacle-panel:nth-child(3) {
-    height: 70%;
-    border-radius: 0 100px 100px 0;
+    height: 65%;
+    border-radius: 0 120px 120px 0;
 }
 
 .worldcruises-pinnacle-panels:hover .worldcruises-pinnacle-panel {
@@ -2707,7 +2990,7 @@
 }
 
 .worldcruises-pinnacle-gallery-text {
-    flex: 0.8;
+    flex: 1;
 }
 
 .worldcruises-pinnacle-gallery-text h2 {
@@ -2742,21 +3025,7 @@
     line-height: 1.4;
 }
 
-@media (max-width: 1100px) {
-    .worldcruises-pinnacle-gallery-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .worldcruises-pinnacle-panels {
-        width: 100%;
-        height: 450px;
-    }
-
-    .worldcruises-pinnacle-gallery-quote {
-        text-align: left;
-    }
-}
 
 /* ============================================================
    COMPARE WORLD CRUISE LINES (PREMIUM TABLE)
@@ -2878,7 +3147,7 @@
 
 @media (max-width: 768px) {
     .worldcruises-comparison-premium {
-        padding: 80px 20px;
+        padding: 50px 15px;
     }
 }
 
@@ -2888,7 +3157,9 @@
     color: var(--wc-navy);
     line-height: 1.3;
     margin: 0;
-}/* ============================================================
+}
+
+/* ============================================================
    TRUST WATERMARK (UNIQUE BACKGROUND)
    ============================================================ */
 .worldcruises-trust-watermark {
@@ -2904,11 +3175,17 @@
 }
 
 @keyframes WCTrustRotate {
-    from { transform: translate(-50%, -50%) rotate(0deg); }
-    to { transform: translate(-50%, -50%) rotate(360deg); }
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 .worldcruises-trust-portrait-wrap {
     position: relative;
-    padding: 40px; /* Space for watermark overflow */
+    padding: 40px;
+    /* Space for watermark overflow */
 }
