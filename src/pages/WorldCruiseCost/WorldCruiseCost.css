@@ -1,0 +1,3066 @@
+/* ============================================================
+   WorldCruiseCost.css — Prefix: wcc-
+   ============================================================ */
+
+/* ── CSS VARIABLES ── */
+:root {
+    --wcc-navy: #274472;
+    --wcc-navy-light: #274472cc;
+    --wcc-bg-white: #ffffff;
+    --wcc-bg-soft: rgb(231, 243, 245);
+    --wcc-bg-dark: #0f1c2e;
+    --wcc-bg-dark2: #1c2f4a;
+    --wcc-text-body: #2d3a4a;
+    --wcc-text-muted: #5a6a7a;
+    --wcc-radius: 12px;
+    --wcc-radius-lg: 20px;
+    --wcc-shadow: 0 4px 24px rgba(39, 68, 114, 0.08);
+    --wcc-shadow-lg: 0 12px 40px rgba(39, 68, 114, 0.15);
+    --wcc-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── BASE ── */
+.wcc-root {
+    color: var(--wcc-text-body);
+    background: var(--wcc-bg-white);
+    margin: 0;
+    padding: 0;
+}
+
+.wcc-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wcc-section {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+/* Desktop typography */
+.wcc-h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.15;
+}
+
+.wcc-h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.wcc-p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Tablet typography */
+@media (max-width: 1024px) {
+    .wcc-section {
+        padding: 50px 15px;
+    }
+
+    .wcc-h1 {
+        font-size: 32px;
+    }
+
+    .wcc-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-p {
+        font-size: 17px;
+    }
+}
+
+/* Mobile typography */
+@media (max-width: 768px) {
+    .wcc-h1 {
+        font-size: 26px;
+    }
+
+    .wcc-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-p {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   1. HERO SECTION
+   ============================================================ */
+
+.wcc-section.wcc-hero {
+    padding: 0;
+}
+
+.wcc-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Sliding background images */
+.wcc-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 10s linear;
+    z-index: 0;
+    transform: scale(1.1);
+}
+
+.wcc-hero-bg.active {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+/* Dark gradient overlay */
+.wcc-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(15, 28, 46, 0.92) 0%,
+            rgba(15, 28, 46, 0.55) 50%,
+            rgba(15, 28, 46, 0.92) 100%);
+    z-index: 2;
+}
+
+/* Inner content */
+.wcc-hero-inner {
+    max-width: 920px;
+    width: 100%;
+    padding: 140px 20px 80px;
+    position: relative;
+    z-index: 3;
+    animation: wcc-fadeInUp 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Eyebrow label */
+.wcc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wcc-bg-soft);
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: rgba(231, 243, 245, 0.08);
+    border: 1px solid rgba(231, 243, 245, 0.18);
+    border-radius: 50px;
+    padding: 8px 20px;
+    margin-bottom: 28px;
+}
+
+/* ── Split-line H1 block ── */
+.wcc-h1-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+/* Pretext line above H1 */
+.wcc-h1-thin {
+    display: block;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+/* Bold H1 headline */
+.wcc-h1-hero {
+    color: #ffffff;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    margin: 0 0 24px;
+    letter-spacing: -1px;
+}
+
+/* Decorative accent rule with center dot */
+.wcc-hero-accent-rule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.wcc-hero-rule-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(231, 243, 245, 0.35);
+    display: block;
+}
+
+.wcc-hero-rule-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--wcc-bg-soft);
+    display: block;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px rgba(231, 243, 245, 0.6);
+}
+
+/* Subtitle below accent rule */
+.wcc-hero-subtitle {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ── CTA Card: horizontal two-column layout ── */
+.wcc-hero-cta-card {
+    background: rgba(255, 255, 255, 0.065);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-top: 4px solid var(--wcc-bg-soft);
+    border-radius: var(--wcc-radius-lg);
+    width: 100%;
+    max-width: 860px;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Left column: profile */
+.wcc-hero-cta-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 36px 40px;
+    gap: 10px;
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.wcc-hero-profile-img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--wcc-bg-soft);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    flex-shrink: 0;
+    margin-bottom: 4px;
+}
+
+.wcc-hero-cta-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+
+.wcc-hero-cta-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    display: block;
+}
+
+/* Vertical glass divider */
+.wcc-hero-cta-divider {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+/* Right column: features + button */
+.wcc-hero-cta-right {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 36px 44px;
+    flex: 1;
+    align-items: flex-start;
+}
+
+/* Feature list: vertical stack */
+.wcc-hero-cta-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.wcc-hero-cta-feat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(231, 243, 245, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wcc-hero-cta-feat svg {
+    flex-shrink: 0;
+    color: var(--wcc-bg-soft);
+    opacity: 0.85;
+}
+
+/* CTA Button */
+.wcc-hero-cta-btn {
+    display: inline-block;
+    background: var(--wcc-bg-soft);
+    color: var(--wcc-navy);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 36px;
+    border-radius: 50px;
+    transition: var(--wcc-transition);
+    box-shadow: 0 8px 24px rgba(231, 243, 245, 0.12);
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+.wcc-hero-cta-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(231, 243, 245, 0.22);
+}
+
+/* Entrance animation */
+@keyframes wcc-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero — Tablet */
+@media (max-width: 1024px) {
+    .wcc-hero-inner {
+        padding: 110px 15px 60px;
+        max-width: 720px;
+    }
+
+    .wcc-h1-thin {
+        font-size: 20px;
+    }
+
+    .wcc-hero-subtitle {
+        font-size: 13px;
+    }
+
+    /* Stack card vertically at tablet */
+    .wcc-hero-cta-card {
+        flex-direction: column;
+        max-width: 560px;
+    }
+
+    .wcc-hero-cta-left {
+        padding: 30px 30px 20px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .wcc-hero-cta-divider {
+        width: 100%;
+        height: 1px;
+        align-self: auto;
+    }
+
+    .wcc-hero-cta-right {
+        padding: 22px 30px 30px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .wcc-hero-cta-features {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .wcc-hero-cta-btn {
+        align-self: center;
+    }
+
+    .wcc-hero-profile-img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Hero — Mobile */
+@media (max-width: 768px) {
+    .wcc-hero-inner {
+        padding: 100px 15px 50px;
+    }
+
+    .wcc-eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+        padding: 7px 16px;
+    }
+
+    .wcc-h1-thin {
+        font-size: 17px;
+    }
+
+    .wcc-hero-accent-rule {
+        width: 160px;
+    }
+
+    .wcc-hero-subtitle {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .wcc-hero-cta-left {
+        padding: 24px 20px 16px;
+    }
+
+    .wcc-hero-cta-right {
+        padding: 16px 20px 24px;
+        gap: 18px;
+    }
+
+    .wcc-hero-cta-name {
+        font-size: 16px;
+    }
+
+    .wcc-hero-cta-feat {
+        font-size: 13px;
+    }
+
+    .wcc-hero-cta-btn {
+        font-size: 12px;
+        padding: 13px 28px;
+        letter-spacing: 1.4px;
+    }
+
+    .wcc-hero-profile-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ============================================================
+   2. INTRO — WHAT A WORLD CRUISE REALLY COSTS
+   ============================================================ */
+
+.wcc-intro {
+    background: var(--wcc-bg-white);
+}
+
+.wcc-intro-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+/* ── Left column ── */
+.wcc-intro-left {
+    position: sticky;
+    top: 80px;
+}
+
+.wcc-intro-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--wcc-navy);
+    background: rgba(39, 68, 114, 0.07);
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.wcc-intro-h2 {
+    color: var(--wcc-navy);
+    margin-bottom: 0;
+}
+
+.wcc-intro-rule {
+    width: 56px;
+    height: 4px;
+    background: var(--wcc-navy);
+    border-radius: 2px;
+    margin: 22px 0 32px;
+}
+
+/* Pull-quote block */
+.wcc-intro-pull {
+    background: var(--wcc-bg-soft);
+    border-left: 4px solid var(--wcc-navy);
+    border-radius: 0 12px 12px 0;
+    padding: 28px 28px 28px 32px;
+}
+
+.wcc-intro-quote-mark {
+    display: block;
+    font-size: 72px;
+    line-height: 0.5;
+    color: var(--wcc-navy);
+    opacity: 0.15;
+    font-family: Georgia, serif;
+    margin-bottom: 18px;
+}
+
+.wcc-intro-pull-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--wcc-navy);
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
+}
+
+/* ── Right column ── */
+.wcc-intro-right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+/* "How much does a world cruise cost?" */
+.wcc-intro-question {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    line-height: 1.4;
+    margin: 0 0 22px;
+}
+
+.wcc-intro-body {
+    color: #2d3a4a;
+    line-height: 1.75;
+    margin: 0 0 18px;
+}
+
+/* Thin horizontal rule */
+.wcc-intro-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(39, 68, 114, 0.1);
+    margin: 8px 0 22px;
+}
+
+/* Final emphasis line */
+.wcc-intro-emphasis {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    line-height: 1.4;
+    margin: 0;
+    border-left: 4px solid var(--wcc-navy);
+    padding-left: 18px;
+}
+
+/* Intro — Tablet */
+@media (max-width: 1024px) {
+    .wcc-intro-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .wcc-intro-left {
+        position: static;
+        text-align: center;
+    }
+
+    .wcc-intro-label {
+        display: inline-block;
+    }
+
+    .wcc-intro-rule {
+        margin: 22px auto 32px;
+    }
+
+    .wcc-intro-pull {
+        text-align: left;
+    }
+
+    .wcc-intro-question {
+        font-size: 20px;
+    }
+
+    .wcc-intro-pull-text {
+        font-size: 17px;
+    }
+
+    .wcc-intro-emphasis {
+        font-size: 18px;
+    }
+}
+
+/* Intro — Mobile */
+@media (max-width: 768px) {
+    .wcc-intro-inner {
+        gap: 30px;
+    }
+
+    .wcc-intro-left {
+        text-align: center;
+    }
+
+    .wcc-intro-rule {
+        margin: 22px auto 32px;
+    }
+
+    .wcc-intro-pull {
+        padding: 22px 20px 22px 24px;
+        text-align: left;
+    }
+
+    .wcc-intro-quote-mark {
+        font-size: 56px;
+        margin-bottom: 12px;
+    }
+
+    .wcc-intro-pull-text {
+        font-size: 16px;
+    }
+
+    .wcc-intro-question {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .wcc-intro-emphasis {
+        font-size: 16px;
+        padding-left: 14px;
+    }
+}
+
+/* ============================================================
+   3. WHY THIS GUIDE IS DIFFERENT
+   ============================================================ */
+
+.wcc-why {
+    background: var(--wcc-bg-dark);
+}
+
+.wcc-why-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+/* ── Top header ── */
+.wcc-why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.wcc-why-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--wcc-bg-soft);
+    background: rgba(231, 243, 245, 0.08);
+    border: 1px solid rgba(231, 243, 245, 0.15);
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.wcc-why-h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.wcc-why-rule {
+    width: 56px;
+    height: 4px;
+    background: var(--wcc-bg-soft);
+    border-radius: 2px;
+    margin: 22px auto;
+}
+
+.wcc-why-lead {
+    color: rgba(255, 255, 255, 0.65);
+    font-style: italic;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* ── Body: two columns ── */
+.wcc-why-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left: bio text */
+.wcc-why-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wcc-why-bio-text {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.wcc-why-basis-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--wcc-bg-soft);
+    margin: 8px 0 0;
+    opacity: 0.8;
+}
+
+/* Right: numbered credential items */
+.wcc-why-creds {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.wcc-why-cred-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.wcc-why-cred-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.wcc-why-cred-num {
+    font-size: 38px;
+    font-weight: 800;
+    color: rgba(231, 243, 245, 0.12);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 56px;
+    font-variant-numeric: tabular-nums;
+}
+
+.wcc-why-cred-item:hover .wcc-why-cred-num {
+    color: var(--wcc-bg-soft);
+    transition: color 0.3s ease;
+}
+
+.wcc-why-cred-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.4;
+}
+
+/* Why — Tablet */
+@media (max-width: 1024px) {
+    .wcc-why-body {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .wcc-why-inner {
+        gap: 40px;
+    }
+
+    .wcc-why-cred-text {
+        font-size: 17px;
+    }
+
+    .wcc-why-bio-text {
+        font-size: 17px;
+    }
+}
+
+/* Why — Mobile */
+@media (max-width: 768px) {
+    .wcc-why-inner {
+        gap: 32px;
+    }
+
+    .wcc-why-cred-item {
+        gap: 16px;
+        padding: 18px 0;
+    }
+
+    .wcc-why-cred-num {
+        font-size: 28px;
+        width: 42px;
+    }
+
+    .wcc-why-cred-text {
+        font-size: 16px;
+    }
+
+    .wcc-why-bio-text {
+        font-size: 16px;
+    }
+
+    .wcc-why-basis-label {
+        font-size: 13px;
+    }
+}
+
+/* ============================================================
+   4. TYPICAL WORLD CRUISE PRICE RANGES
+   ============================================================ */
+
+.wcc-pricing {
+    background: var(--wcc-bg-dark2);
+}
+
+.wcc-pricing-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* ── Header ── */
+.wcc-pricing-header {
+    text-align: center;
+}
+
+.wcc-pricing-h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.wcc-pricing-rule {
+    width: 56px;
+    height: 4px;
+    background: var(--wcc-bg-soft);
+    border-radius: 2px;
+    margin: 22px auto 0;
+}
+
+/* ── Stacked rows container ── */
+.wcc-pricing-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* ── Single row ── */
+.wcc-pricing-row {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    transition: background 0.25s ease;
+    border-radius: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wcc-pricing-row:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.wcc-pricing-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Ultra Luxury highlighted row */
+.wcc-pricing-row--ultra {
+    background: rgba(231, 243, 245, 0.05);
+    border-top: 1px solid rgba(231, 243, 245, 0.12) !important;
+    border-bottom: 1px solid rgba(231, 243, 245, 0.12) !important;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.wcc-pricing-row--ultra:hover {
+    background: rgba(231, 243, 245, 0.08);
+}
+
+/* Large ghost number */
+.wcc-pricing-row-num {
+    font-size: 42px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.08);
+    line-height: 1;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    transition: color 0.25s ease;
+}
+
+.wcc-pricing-row:hover .wcc-pricing-row-num {
+    color: rgba(231, 243, 245, 0.25);
+}
+
+.wcc-pricing-row--ultra .wcc-pricing-row-num {
+    color: rgba(231, 243, 245, 0.18);
+}
+
+/* Left: tier name + bar */
+.wcc-pricing-row-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wcc-pricing-row-tier {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1;
+}
+
+.wcc-pricing-row--ultra .wcc-pricing-row-tier {
+    color: var(--wcc-bg-soft);
+    letter-spacing: 3px;
+}
+
+.wcc-pricing-row-bar-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+    overflow: hidden;
+    max-width: 360px;
+}
+
+.wcc-pricing-row-bar-fill {
+    height: 100%;
+    background: rgba(231, 243, 245, 0.3);
+    border-radius: 3px;
+}
+
+.wcc-pricing-row--ultra .wcc-pricing-row-bar-fill {
+    background: var(--wcc-bg-soft);
+}
+
+/* Right: price + suffix */
+.wcc-pricing-row-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.wcc-pricing-row-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.wcc-pricing-row--ultra .wcc-pricing-row-price {
+    color: var(--wcc-bg-soft);
+    font-size: 30px;
+}
+
+.wcc-pricing-row-suffix {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Pricing — Tablet */
+@media (max-width: 1024px) {
+    .wcc-pricing-row {
+        grid-template-columns: 52px 1fr auto;
+        gap: 20px;
+        padding: 24px 10px;
+    }
+
+    .wcc-pricing-row-num {
+        font-size: 32px;
+    }
+
+    .wcc-pricing-row-price {
+        font-size: 22px;
+    }
+
+    .wcc-pricing-row--ultra .wcc-pricing-row-price {
+        font-size: 24px;
+    }
+
+    .wcc-pricing-inner {
+        gap: 36px;
+    }
+}
+
+/* Pricing — Mobile */
+@media (max-width: 768px) {
+    .wcc-pricing-row {
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px 14px;
+        padding: 20px 8px;
+    }
+
+    /* Move price to span under tier name on mobile */
+    .wcc-pricing-row-right {
+        grid-column: 2;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .wcc-pricing-row-num {
+        font-size: 24px;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+
+    .wcc-pricing-row-price {
+        font-size: 20px;
+    }
+
+    .wcc-pricing-row--ultra .wcc-pricing-row-price {
+        font-size: 22px;
+    }
+
+    .wcc-pricing-row-bar-track {
+        max-width: 100%;
+    }
+
+    .wcc-pricing-inner {
+        gap: 28px;
+    }
+}
+
+/* ============================================================
+   5. WHY A $100,000 WORLD CRUISE IS NOT WHAT IT SOUNDS LIKE
+   ============================================================ */
+
+.wcc-value {
+    background: var(--wcc-bg-white);
+}
+
+.wcc-value-inner {
+    max-width: 1200px;
+}
+
+/* ── Main Layout ── */
+.wcc-value-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* ── Left Column ── */
+.wcc-value-left {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wcc-value-h2 {
+    color: var(--wcc-navy);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Cost Breakdown */
+.wcc-cost-breakdown {
+    background: var(--wcc-bg-soft);
+    border: 1px solid var(--wcc-navy);
+    border-radius: 20px;
+    padding: 40px;
+    color: var(--wcc-navy);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-cost-context {
+    font-size: 16px;
+    color: #5a6a7a;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.wcc-cost-calculation {
+    display: flex;
+    flex-direction: column;
+}
+
+.wcc-cost-amount {
+    display: flex;
+    align-items: baseline;
+    color: var(--wcc-navy);
+}
+
+.wcc-currency {
+    font-size: 28px;
+    font-weight: 300;
+    margin-right: 4px;
+    color: var(--wcc-navy);
+}
+
+.wcc-number {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -3px;
+    color: var(--wcc-navy);
+}
+
+.wcc-cost-period {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+/* ── Right Column ── */
+.wcc-value-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Inclusions Card */
+.wcc-inclusions-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.03);
+}
+
+.wcc-inclusions-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wcc-navy);
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.wcc-inclusions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 30px;
+}
+
+.wcc-inclusion-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    transition: var(--wcc-transition);
+}
+
+.wcc-inclusion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--wcc-shadow);
+}
+
+.wcc-inclusion-check {
+    width: 32px;
+    height: 32px;
+    background: var(--wcc-navy);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.wcc-inclusion-check svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Reality Check Card */
+.wcc-reality-card {
+    background: var(--wcc-bg-dark2);
+    border-radius: 20px;
+    padding: 32px;
+    color: #ffffff;
+    border: none;
+}
+
+.wcc-reality-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    background: var(--wcc-bg-soft);
+    color: var(--wcc-navy);
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+
+.wcc-reality-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Verdict Card */
+.wcc-verdict-card {
+    background: var(--wcc-navy);
+    border-radius: 20px;
+    padding: 36px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+}
+
+.wcc-verdict-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.wcc-verdict-highlight {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 8px;
+}
+
+.wcc-verdict-highlight strong {
+    font-weight: 900;
+    color: var(--wcc-bg-soft);
+}
+
+/* ── Tablet Responsive (max-width: 1024px) ── */
+@media (max-width: 1024px) {
+    .wcc-value-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .wcc-value-left {
+        position: static;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .wcc-cost-breakdown {
+        padding: 32px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wcc-cost-amount {
+        justify-content: center;
+    }
+
+    .wcc-cost-context {
+        font-size: 17px;
+    }
+
+    .wcc-number {
+        font-size: 90px;
+    }
+
+    .wcc-currency {
+        font-size: 40px;
+    }
+
+    .wcc-cost-period {
+        font-size: 17px;
+    }
+
+    .wcc-inclusions-card {
+        padding: 32px;
+    }
+
+    .wcc-inclusions-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .wcc-inclusion-item {
+        font-size: 17px;
+        padding: 10px 14px;
+    }
+
+    .wcc-reality-card {
+        padding: 28px;
+    }
+
+    .wcc-reality-text {
+        font-size: 17px;
+    }
+
+    .wcc-verdict-card {
+        padding: 32px;
+    }
+
+    .wcc-verdict-card p {
+        font-size: 17px;
+    }
+
+    .wcc-verdict-highlight {
+        font-size: 18px;
+    }
+}
+
+/* ── Mobile Responsive (max-width: 768px) ── */
+@media (max-width: 768px) {
+    .wcc-value-layout {
+        gap: 32px;
+        grid-template-columns: 1fr;
+    }
+
+    .wcc-value-left {
+        gap: 24px;
+        text-align: center;
+        position: static;
+    }
+
+    .wcc-cost-breakdown {
+        padding: 24px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wcc-cost-context {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .wcc-cost-calculation {
+        padding: 0;
+        align-items: center;
+    }
+
+    .wcc-cost-amount {
+        justify-content: center;
+    }
+
+    .wcc-number {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+
+    .wcc-currency {
+        font-size: 28px;
+    }
+
+    .wcc-cost-period {
+        font-size: 16px;
+    }
+
+    .wcc-value-right {
+        gap: 24px;
+    }
+
+    .wcc-inclusions-card {
+        padding: 24px 20px;
+    }
+
+    .wcc-inclusions-title {
+        margin-bottom: 20px;
+    }
+
+    .wcc-inclusions-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .wcc-inclusion-item {
+        font-size: 16px;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .wcc-inclusion-check {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+    }
+
+    .wcc-inclusion-check svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .wcc-reality-card {
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .wcc-reality-badge {
+        font-size: 9px;
+        padding: 5px 12px;
+        margin-bottom: 14px;
+    }
+
+    .wcc-reality-text {
+        font-size: 16px;
+    }
+
+    .wcc-verdict-card {
+        padding: 28px 20px;
+        text-align: center;
+    }
+
+    .wcc-verdict-card p {
+        font-size: 16px;
+    }
+
+    .wcc-verdict-highlight {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+}
+
+/* ============================================================
+   6. WHAT YOU ARE ACTUALLY PAYING FOR EACH DAY (v22 - PILLARS)
+   ============================================================ */
+
+.wcc-breakdown-v22 {
+    background: var(--wcc-bg-soft);
+    padding: 60px 20px;
+}
+
+.wcc-v22-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wcc-v22-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.wcc-v22-h2 {
+    font-size: 48px;
+    color: var(--wcc-navy);
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.wcc-v22-h2 span {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--wcc-navy-light);
+}
+
+.wcc-v22-p {
+    font-size: 18px;
+    color: var(--wcc-navy);
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wcc-v22-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.wcc-v22-card {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-v22-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.12);
+}
+
+.wcc-v22-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--wcc-navy);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.wcc-v22-card:hover .wcc-v18-accent,
+.wcc-v22-card:hover .wcc-v22-accent {
+    transform: scaleX(1);
+}
+
+.wcc-v22-icon {
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+    transition: transform 0.5s ease;
+}
+
+.wcc-v22-card:hover .wcc-v22-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.wcc-v22-cat {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--wcc-navy);
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+
+.wcc-v22-val {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    line-height: 1.3;
+}
+
+.wcc-v22-number {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--wcc-navy);
+    opacity: 0.03;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.wcc-v22-card:hover .wcc-v22-number {
+    opacity: 0.08;
+    bottom: -10px;
+}
+
+/* v22 — Tablet */
+@media (max-width: 1024px) {
+    .wcc-breakdown-v22 {
+        padding: 50px 15px;
+    }
+
+    .wcc-v22-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-v22-p {
+        font-size: 17px;
+    }
+
+    .wcc-v22-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .wcc-v22-card:nth-child(5) {
+        grid-column: span 2;
+    }
+}
+
+/* v22 — Mobile */
+@media (max-width: 768px) {
+    .wcc-v22-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-v22-p {
+        font-size: 16px;
+    }
+
+    .wcc-v22-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wcc-v22-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .wcc-v22-card {
+        padding: 40px 20px;
+    }
+
+}
+
+/* ============================================================
+   7. REAL COST COMPARISON BY CRUISE LINE (v24 - PREMIUM)
+   ============================================================ */
+
+.wcc-comparison-v24 {
+    background: var(--wcc-bg-white);
+    padding: 60px 20px;
+}
+
+.wcc-v24-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wcc-v24-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wcc-v24-h2 {
+    font-size: 48px;
+    color: var(--wcc-navy);
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.wcc-v24-rule {
+    width: 60px;
+    height: 4px;
+    background: var(--wcc-navy);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.wcc-v24-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-v24-card {
+    background: var(--wcc-bg-soft);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    flex: 1 1 320px;
+    max-width: 360px;
+    min-height: 400px;
+    text-align: left;
+}
+
+.wcc-v24-card:hover {
+    background: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.1);
+    border-color: var(--wcc-navy-light);
+}
+
+.wcc-v24-card-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.wcc-v24-icon-box {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    color: var(--wcc-navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-v24-line-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+    margin: 0;
+    text-align: left;
+}
+
+.wcc-v24-price-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+}
+
+.wcc-v24-label {
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wcc-navy);
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.wcc-v24-price-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    margin: 0;
+}
+
+.wcc-v24-desc {
+    font-size: 18px;
+    color: var(--wcc-navy);
+    opacity: 0.8;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.wcc-v24-card-footer {
+    margin-top: 30px;
+}
+
+.wcc-v24-footer-line {
+    width: 30px;
+    height: 2px;
+    background: var(--wcc-navy);
+    opacity: 0.1;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+.wcc-v24-card:hover .wcc-v24-footer-line {
+    width: 100%;
+    opacity: 0.3;
+}
+
+/* Ledger — Tablet */
+@media (max-width: 1024px) {
+    .wcc-comparison-v24 {
+        padding: 50px 15px;
+    }
+
+    .wcc-v24-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-v24-desc {
+        font-size: 17px;
+    }
+
+    .wcc-v24-grid {
+        gap: 20px;
+    }
+
+    .wcc-v24-card {
+        flex: 1 1 340px;
+        max-width: 480px;
+        min-height: auto;
+    }
+}
+
+/* Ledger — Mobile */
+@media (max-width: 768px) {
+    .wcc-v24-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-v24-desc {
+        font-size: 16px;
+    }
+
+    .wcc-v24-grid {
+        flex-direction: column;
+    }
+
+    .wcc-v24-card {
+        flex: 1 1 100%;
+        padding: 30px 20px;
+    }
+
+    .wcc-v24-price-text {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   8. THE BIGGEST PRICING MISTAKE (v26 - DARK WARNING)
+   ============================================================ */
+
+.wcc-mistake-v26 {
+    background: var(--wcc-bg-dark);
+    padding: 60px 20px;
+}
+
+.wcc-v26-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-v26-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.wcc-v26-mistake-card {
+    color: #ffffff;
+}
+
+.wcc-v26-badge {
+    display: inline-block;
+    background: #ff4d4d;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.wcc-v26-h2 {
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.wcc-v26-main-point {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--wcc-bg-soft);
+    line-height: 1.3;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--wcc-bg-soft);
+    padding-left: 30px;
+}
+
+.wcc-v26-verdict {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.wcc-v26-details-card {
+    background: rgba(28, 47, 74, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.wcc-v26-h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.wcc-v26-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.wcc-v26-list-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 18px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wcc-v26-list-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--wcc-bg-soft);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wcc-v26-list-icon {
+    color: var(--wcc-bg-soft);
+    display: flex;
+    align-items: center;
+}
+
+.wcc-v26-list-item span {
+    font-family: var(--font-display) !important;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* v26 — Tablet */
+@media (max-width: 1024px) {
+    .wcc-mistake-v26 {
+        padding: 50px 15px;
+    }
+
+    .wcc-v26-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .wcc-v26-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-v26-main-point {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .wcc-v26-details-card {
+        padding: 40px;
+    }
+
+    .wcc-v26-list-item span {
+        font-size: 17px;
+    }
+}
+
+/* v26 — Mobile */
+@media (max-width: 768px) {
+    .wcc-v26-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-v26-list-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .wcc-v26-badge {
+        margin-bottom: 20px;
+    }
+
+    .wcc-v26-list-item span {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   9. INCLUSION COMPARISON (v32 - PREMIUM SPLIT)
+   ============================================================ */
+
+.wcc-inclusion-v32 {
+    background: var(--wcc-bg-white);
+    padding: 60px 20px;
+}
+
+.wcc-v32-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-v32-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wcc-v32-h2 {
+    font-size: 48px;
+    color: var(--wcc-navy);
+    font-weight: 800;
+}
+
+.wcc-v32-split {
+    display: flex;
+    background: var(--wcc-bg-soft);
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(39, 68, 114, 0.08);
+    min-height: 320px;
+}
+
+.wcc-v32-panel {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    cursor: default;
+}
+
+.wcc-v32-inclusive {
+    background: var(--wcc-bg-dark);
+    color: #ffffff !important;
+}
+
+.wcc-v32-entry {
+    background: var(--wcc-bg-soft);
+    color: var(--wcc-navy) !important;
+}
+
+.wcc-v32-icon {
+    margin-bottom: 20px;
+}
+
+.wcc-v32-inclusive .wcc-v32-icon {
+    color: var(--wcc-bg-soft);
+}
+
+.wcc-v32-entry .wcc-v32-icon {
+    color: var(--wcc-navy);
+}
+
+.wcc-v32-title {
+    font-family: var(--font-display) !important;
+    font-size: 24px;
+    font-weight: 800 !important;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: inherit;
+}
+
+.wcc-v32-desc {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 400px;
+    color: inherit;
+    opacity: 0.9;
+}
+
+/* Hover Effect: Panels expand slightly without dimming */
+@media (min-width: 1025px) {
+    .wcc-v32-split .wcc-v32-panel:hover {
+        flex: 1.15;
+    }
+}
+
+/* v32 — Tablet */
+@media (max-width: 1024px) {
+    .wcc-inclusion-v32 {
+        padding: 50px 15px;
+    }
+
+    .wcc-v32-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-v32-split {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .wcc-v32-panel {
+        padding: 60px 20px;
+    }
+
+    .wcc-v32-desc {
+        font-size: 17px;
+    }
+}
+
+/* v32 — Mobile */
+@media (max-width: 768px) {
+    .wcc-v32-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-v32-desc {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   10. FINANCIAL ROADMAP & SCENARIO LAB
+   ============================================================ */
+
+.wcc-budgeting {
+    background: var(--wcc-bg-soft);
+    padding: 60px 20px;
+}
+
+.wcc-budgeting-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-budgeting-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+}
+
+/* ── Checklist ── */
+.wcc-budget-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+}
+
+.wcc-budget-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.wcc-budget-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.wcc-budget-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--wcc-navy);
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.wcc-budget-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.wcc-budget-text strong {
+    font-size: 18px;
+    /* Desktop P */
+    color: var(--wcc-navy);
+    margin-bottom: 4px;
+}
+
+.wcc-budget-text span {
+    font-size: 16px;
+    color: #5a6a7a;
+    opacity: 0.8;
+}
+
+.wcc-budget-buffer {
+    background: #ffffff;
+    padding: 24px 32px;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-buffer-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--wcc-navy);
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.wcc-buffer-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+}
+
+/* ── Scenario Lab ── */
+.wcc-scenario-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+}
+
+.wcc-scenario-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.wcc-scenario-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.wcc-scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.wcc-scenario-tier {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wcc-navy);
+    opacity: 0.6;
+}
+
+.wcc-scenario-total {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+}
+
+.wcc-scenario-bar-bg {
+    height: 8px;
+    background: var(--wcc-bg-soft);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.wcc-scenario-bar-fill {
+    height: 100%;
+    background: var(--wcc-navy);
+    border-radius: 4px;
+}
+
+.wcc-scenario-footer {
+    font-size: 14px;
+    color: #5a6a7a;
+    font-weight: 500;
+}
+
+/* Budgeting — Tablet */
+@media (max-width: 1024px) {
+    .wcc-budgeting {
+        padding: 50px 15px;
+    }
+
+    .wcc-budgeting-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .wcc-budget-h2,
+    .wcc-scenario-h2 {
+        font-size: 28px;
+        /* Tablet H2 */
+    }
+
+    .wcc-budget-text strong,
+    .wcc-scenario-total {
+        font-size: 17px;
+        /* Tablet P style */
+    }
+}
+
+/* Budgeting — Mobile */
+@media (max-width: 768px) {
+
+    .wcc-budget-h2,
+    .wcc-scenario-h2 {
+        font-size: 24px;
+        /* Mobile H2 */
+    }
+
+    .wcc-budget-text strong,
+    .wcc-scenario-total {
+        font-size: 16px;
+        /* Mobile P style */
+    }
+
+    .wcc-buffer-value {
+        font-size: 24px;
+    }
+}
+
+/* ============================================================
+   10. EXPERT COUNSEL & MARKET DYNAMICS
+   ============================================================ */
+
+.wcc-counsel {
+    background: var(--wcc-bg-white);
+    padding: 60px 20px;
+}
+
+.wcc-counsel-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-counsel-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ── Angela's Message ── */
+.wcc-angela-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.wcc-quote-icon {
+    color: var(--wcc-navy);
+    opacity: 0.1;
+    margin-bottom: -20px;
+}
+
+.wcc-angela-quote {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+    line-height: 1.3;
+    margin-bottom: 32px;
+    font-style: italic;
+    border-left: 8px solid var(--wcc-bg-soft);
+    padding-left: 32px;
+}
+
+.wcc-angela-p {
+    font-size: 18px;
+    /* Desktop P */
+    color: #5a6a7a;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.wcc-angela-verdict {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    padding: 24px 32px;
+    background: var(--wcc-bg-soft);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ── Market Dynamics ── */
+.wcc-market-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+}
+
+.wcc-dynamic-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.wcc-dynamic-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: #f8fbfb;
+    border-radius: 16px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.wcc-dynamic-step:hover {
+    transform: translateX(10px);
+    background: var(--wcc-bg-soft);
+}
+
+.wcc-step-icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    color: var(--wcc-navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-step-title {
+    font-size: 18px;
+    /* Desktop P */
+    font-weight: 700;
+    color: var(--wcc-navy);
+}
+
+/* Counsel — Tablet */
+@media (max-width: 1024px) {
+    .wcc-counsel {
+        padding: 50px 15px;
+    }
+
+    .wcc-counsel-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .wcc-angela-h2,
+    .wcc-market-h2 {
+        font-size: 28px;
+        /* Tablet H2 */
+    }
+
+    .wcc-angela-quote {
+        font-size: 24px;
+    }
+
+    .wcc-angela-p,
+    .wcc-step-title {
+        font-size: 17px;
+        /* Tablet P */
+    }
+}
+
+/* Counsel — Mobile */
+@media (max-width: 768px) {
+
+    .wcc-angela-h2,
+    .wcc-market-h2 {
+        font-size: 24px;
+        /* Mobile H2 */
+    }
+
+    .wcc-angela-quote {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .wcc-angela-p,
+    .wcc-step-title {
+        font-size: 16px;
+        /* Mobile P */
+    }
+
+    .wcc-angela-verdict {
+        font-size: 17px;
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   11. STRATEGIC ADVANTAGE & ROI
+   ============================================================ */
+
+.wcc-strategy {
+    background: var(--wcc-bg-soft);
+    padding: 60px 20px;
+}
+
+.wcc-strategy-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-strategy-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+}
+
+/* ── Versus Table ── */
+.wcc-strategy-h2,
+.wcc-roi-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+}
+
+.wcc-versus-table {
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+}
+
+.wcc-versus-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--wcc-navy);
+    padding: 24px 40px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wcc-versus-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 24px 40px;
+    align-items: center;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.wcc-versus-row:last-child {
+    border-bottom: none;
+}
+
+.wcc-versus-direct {
+    color: #5a6a7a;
+    font-size: 18px;
+    /* Desktop P */
+    opacity: 0.8;
+}
+
+.wcc-versus-divider {
+    width: 1px;
+    height: 30px;
+    background: rgba(39, 68, 114, 0.1);
+    margin: 0 30px;
+}
+
+.wcc-versus-us {
+    color: var(--wcc-navy);
+    font-size: 18px;
+    /* Desktop P */
+    font-weight: 700;
+}
+
+/* ── ROI Box ── */
+.wcc-roi-intro {
+    font-size: 18px;
+    /* Desktop P */
+    color: #5a6a7a;
+    margin-bottom: 24px;
+}
+
+.wcc-roi-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.wcc-roi-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--wcc-navy);
+    font-weight: 600;
+}
+
+.wcc-roi-check {
+    color: #274472;
+    font-weight: 900;
+}
+
+.wcc-roi-summary {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--wcc-navy);
+    line-height: 1.5;
+}
+
+/* Strategy — Tablet */
+@media (max-width: 1024px) {
+    .wcc-strategy {
+        padding: 50px 15px;
+    }
+
+    .wcc-strategy-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .wcc-strategy-h2,
+    .wcc-roi-h2 {
+        font-size: 28px;
+        /* Tablet H2 */
+    }
+
+    .wcc-versus-direct,
+    .wcc-versus-us,
+    .wcc-roi-intro {
+        font-size: 17px;
+        /* Tablet P */
+    }
+}
+
+/* Strategy — Mobile */
+@media (max-width: 768px) {
+
+    .wcc-strategy-h2,
+    .wcc-roi-h2 {
+        font-size: 24px;
+        /* Mobile H2 */
+    }
+
+    .wcc-versus-header {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .wcc-versus-row {
+        padding: 20px;
+    }
+
+    .wcc-versus-direct,
+    .wcc-versus-us,
+    .wcc-roi-intro {
+        font-size: 16px;
+        /* Mobile P */
+    }
+
+    .wcc-roi-list {
+        grid-template-columns: 1fr;
+    }
+
+    .wcc-roi-summary {
+        font-size: 17px;
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   12. LEGACY OF EXCELLENCE (BIO)
+   ============================================================ */
+
+.wcc-legacy {
+    background: var(--wcc-bg-white);
+    padding: 60px 20px;
+}
+
+.wcc-legacy-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-legacy-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ── Stats Grid ── */
+.wcc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.wcc-stat-card {
+    background: var(--wcc-bg-soft);
+    padding: 32px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.wcc-stat-label {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wcc-navy);
+    margin-bottom: 12px;
+    opacity: 0.6;
+}
+
+.wcc-stat-val {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--wcc-navy);
+    margin: 0;
+}
+
+/* ── Profile Spread ── */
+.wcc-profile-spread {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.wcc-profile-photo {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+.wcc-profile-photo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.wcc-photo-caption {
+    padding: 20px;
+    background: var(--wcc-bg-soft);
+    color: var(--wcc-navy);
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+.wcc-profile-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.wcc-profile-intro {
+    font-size: 18px;
+    /* Desktop P */
+    color: #5a6a7a;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.wcc-accolades {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.wcc-accolade-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    color: var(--wcc-navy);
+    font-weight: 700;
+}
+
+.wcc-accolade-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--wcc-navy);
+    border-radius: 50%;
+}
+
+/* ── Agency Focus ── */
+.wcc-agency-focus {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    padding: 60px;
+    background: var(--wcc-bg-soft);
+    border-radius: 40px;
+}
+
+.wcc-agency-h2 {
+    font-size: 32px;
+    color: var(--wcc-navy);
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.wcc-agency-p {
+    font-size: 18px;
+    /* Desktop P */
+    color: #5a6a7a;
+    line-height: 1.6;
+}
+
+.wcc-agency-perks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wcc-perk-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 20px;
+}
+
+.wcc-perk-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.wcc-perk-card p {
+    font-size: 15px;
+    color: #5a6a7a;
+    margin: 0;
+}
+
+/* ── Work CTA ── */
+.wcc-work-cta {
+    text-align: center;
+    padding: 80px 40px;
+    background: var(--wcc-bg-dark);
+    border-radius: 40px;
+    color: #ffffff;
+}
+
+.wcc-work-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.wcc-work-p {
+    font-size: 18px;
+    /* Desktop P */
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.wcc-work-btn {
+    padding: 20px 48px;
+    font-size: 18px;
+    font-weight: 800;
+    background: #ffffff;
+    color: var(--wcc-navy);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wcc-work-btn:hover {
+    transform: scale(1.05);
+    background: var(--wcc-bg-soft);
+}
+
+/* Legacy — Tablet */
+@media (max-width: 1024px) {
+    .wcc-legacy {
+        padding: 50px 15px;
+    }
+
+    .wcc-legacy-h2,
+    .wcc-profile-h2,
+    .wcc-work-h2 {
+        font-size: 28px;
+        /* Tablet H2 */
+    }
+
+    .wcc-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wcc-profile-spread {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .wcc-profile-photo img {
+        height: 400px;
+    }
+
+    .wcc-agency-focus {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .wcc-profile-intro,
+    .wcc-agency-p,
+    .wcc-work-p {
+        font-size: 17px;
+        /* Tablet P */
+    }
+}
+
+/* Legacy — Mobile */
+@media (max-width: 768px) {
+
+    .wcc-legacy-h2,
+    .wcc-profile-h2,
+    .wcc-work-h2 {
+        font-size: 24px;
+        /* Mobile H2 */
+    }
+
+    .wcc-profile-intro,
+    .wcc-agency-p,
+    .wcc-work-p {
+        font-size: 16px;
+        /* Mobile P */
+    }
+
+    .wcc-work-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   13. WORLD CRUISE COST FAQS
+   ============================================================ */
+
+.wcc-faq {
+    background: var(--wcc-bg-soft);
+    padding: 60px 20px;
+}
+
+.wcc-faq-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wcc-faq-h2 {
+    font-size: 48px;
+    /* Desktop H2 */
+    color: var(--wcc-navy);
+    margin-bottom: 24px;
+}
+
+.wcc-faq-rule {
+    width: 60px;
+    height: 4px;
+    background: var(--wcc-navy);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.wcc-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.wcc-faq-item {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.wcc-faq-q {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--wcc-navy);
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.wcc-faq-a {
+    font-size: 18px;
+    /* Desktop P */
+    color: #5a6a7a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* FAQ — Tablet */
+@media (max-width: 1024px) {
+    .wcc-faq {
+        padding: 50px 15px;
+
+        .wcc-faq-h2 {
+            font-size: 28px;
+            /* Tablet H2 */
+        }
+    }
+
+    .wcc-faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wcc-faq-a {
+        font-size: 17px;
+        /* Tablet P */
+    }
+}
+
+/* FAQ — Mobile */
+@media (max-width: 768px) {
+    .wcc-faq-h2 {
+        font-size: 24px;
+        /* Mobile H2 */
+    }
+
+    .wcc-faq-q {
+        font-size: 18px;
+    }
+
+    .wcc-faq-a {
+        font-size: 16px;
+        /* Mobile P */
+    }
+}
