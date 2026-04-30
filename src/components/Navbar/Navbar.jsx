@@ -199,6 +199,14 @@ const Navbar = () => {
               >
                 World Cruise Cost
               </NavLink>
+
+              <NavLink
+                to="/regent-seven-seas-world-cruise-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Regent Seven Seas World Cruise Guide
+              </NavLink>
             </div>
           </div>
         </div>
@@ -415,6 +423,14 @@ const Navbar = () => {
             >
               World Cruise Cost
             </NavLink>
+
+            <NavLink
+                to="/regent-seven-seas-world-cruise-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Regent Seven Seas World Cruise Guide
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

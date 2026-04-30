@@ -30,10 +30,9 @@ import AzamaraVSVikingCruise from "./pages/AzamaraVSVikingCruise/AzamaraVSViking
 import AzamaraCabinsGuide from "./pages/AzamaraCabinsGuide/AzamaraCabinsGuide";
 import AzamaraCabinsAlaskaGuide from "./pages/AzamaraCabinsAlaskaGuide/AzamaraCabinsAlaskaGuide";
 import AzamaraAlaskaCruises from "./pages/AzamaraAlaskaCruises/AzamaraAlaskaCruises";
-import WorldCruises20272029 from "./pages/WorldCruises2027-2029/WorldCruises";
 import WorldCruises from "./pages/WorldCruises2027-2029/WorldCruises";
 import WorldCruiseCost from "./pages/WorldCruiseCost/WorldCruiseCost";
-
+import RegentSevenSeasWorldCruiseGuide from "./pages/RegentSevenSeasWorldCruiseGuide/RegentSevenSeas";
 
 function App() {
   return (
@@ -143,6 +142,10 @@ function App() {
           <Route
             path="/world-cruise-cost"
             element={<WorldCruiseCost />}
+          ></Route>
+          <Route
+            path="/regent-seven-seas-world-cruise-guide"
+            element={<RegentSevenSeasWorldCruiseGuide />}
           ></Route>
         </Routes>
       </BrowserRouter>
