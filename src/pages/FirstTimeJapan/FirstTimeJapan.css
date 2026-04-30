@@ -1,6 +1,6 @@
 /* ================= CSS VARIABLES ================= */
 :root {
-  --ftjapan-navy: #2f4a6d;
+  --ftjapan-navy: #274472;
   --ftjapan-navy-light: #274472cc;
   --ftjapan-bg-light: #eef2f5;
   --ftjapan-bg-teal: rgb(231, 243, 245);
@@ -1223,17 +1223,26 @@
 
 .FTJapan_landcruise_image_container {
   width: 100%;
-  height: 400px;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+  background: #000;
 }
 
-.FTJapan_landcruise_image_container img {
+.FTJapan_video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.FTJapan_video_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  border: none;
 }
 
 /* ================= CUSTOMIZE SECTION ================= */
@@ -1649,8 +1658,8 @@
 
 /* ================= REMEMBER SECTION ================= */
 .FTJapan_remember_section {
-  background: var(--ftjapan-bg-teal);
-  padding: 80px 20px;
+  background: var(--ftjapan-white);
+  padding: 60px 20px;
   text-align: center;
 }
 

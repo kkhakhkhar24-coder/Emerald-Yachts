@@ -791,9 +791,17 @@ const FirstTimeJapan = () => {
               </div>
             </div>
 
-            {/* RIGHT IMAGE */}
+            {/* RIGHT VIDEO */}
             <div className="FTJapan_landcruise_image_container">
-              <img src={Ftjapan4} alt="Japan Land vs Cruise" />
+              <div className="FTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/wcfIXwwCaU0"
+                  title="Japan Land vs Cruise"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

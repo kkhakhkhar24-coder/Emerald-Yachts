@@ -1,11 +1,3 @@
-/* ============================================================
-   JAPAN LAND VS CRUISE — SECTION-WISE CLEAN CSS
-   ============================================================ */
-
-/* ============================================================
-   SECTION 1: FONTS & CSS VARIABLES
-   ============================================================ */
-
 :root {
   --navy: #274472;
   --navy-deep: #0c1829;
@@ -15,21 +7,6 @@
   --soft: #f7f9fc;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-h3 {
-  font-size: 22px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
 
 /* ============================================================
    SECTION 2: HERO
@@ -52,7 +29,9 @@ h4 {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 2s ease-in-out, transform 10s ease-out;
+  transition:
+    opacity 2s ease-in-out,
+    transform 10s ease-out;
   z-index: 0;
   transform: scale(1.08);
 }
@@ -65,7 +44,12 @@ h4 {
 .japan-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(0, 0, 0, 0.85) 0%, rgba(12, 24, 41, 0.70) 50%, rgba(0, 0, 0, 0.50) 100%);
+  background: linear-gradient(
+    160deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(12, 24, 41, 0.7) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   z-index: 1;
 }
 
@@ -92,17 +76,15 @@ h4 {
 
 .japan-hero-eyebrow {
   display: block;
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   letter-spacing: 5px;
   font-weight: 700;
-  color: rgba(231, 243, 245, 0.80);
+  color: rgba(231, 243, 245, 0.8);
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 .japan-h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 60px;
   line-height: 1.1;
   font-weight: 700;
@@ -113,19 +95,20 @@ h4 {
 }
 
 .japan-hero-lead {
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
   max-width: 780px;
   margin: 0 auto 20px;
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.8;
 }
 
 .japan-hero-details {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+  transition:
+    max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease;
   opacity: 0;
 }
 
@@ -142,18 +125,17 @@ h4 {
   border: none;
   color: rgba(255, 255, 255, 0.85);
   padding: 6px 0;
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: opacity 0.25s;
 }
 
 .japan-hero-read-more:hover {
-  opacity: 0.60;
+  opacity: 0.6;
 }
 
 .japan-hero-btns {
@@ -163,7 +145,6 @@ h4 {
   gap: 14px;
   margin-top: 16px;
 }
-
 
 /* ============================================================
    SECTION 3: BUTTONS
@@ -177,13 +158,16 @@ h4 {
   padding: 16px 44px;
   border: none;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
-  transition: background 0.28s, color 0.28s, transform 0.28s, box-shadow 0.28s;
+  transition:
+    background 0.28s,
+    color 0.28s,
+    transform 0.28s,
+    box-shadow 0.28s;
   text-decoration: none;
 }
 
@@ -208,13 +192,11 @@ h4 {
   color: #ffffff;
 }
 
-
 /* ============================================================
    SECTION 4: SECTION LAYOUT & TYPOGRAPHY
    ============================================================ */
 .japan-section {
   padding: 60px 20px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .japan-bg-white {
@@ -247,9 +229,8 @@ h4 {
 }
 
 .japan-h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -258,9 +239,8 @@ h4 {
 
 .japan-h2-expert {
   color: var(--navy);
-  font-family: 'Playfair Display', serif;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 20px;
   letter-spacing: -0.01em;
@@ -290,18 +270,15 @@ h4 {
 }
 
 .japan-section-p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 1.8;
-  color: #4a5568;
+  color: var(--navy);
   font-weight: 400;
-  margin-bottom: 16px;
 }
 
 .japan-bg-navy .japan-section-p {
   color: rgba(255, 255, 255, 0.85);
 }
-
 
 /* ============================================================
    SECTION 5: EXPERT PROFILE
@@ -325,12 +302,14 @@ h4 {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
   border: 1px solid #edf2f7;
   border-top: 3px solid #274472;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .japan-expert-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 .japan-expert-image-wrap {
@@ -340,7 +319,7 @@ h4 {
   overflow: hidden;
   margin-bottom: 20px;
   border: 3px solid rgba(39, 68, 114, 0.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .japan-expert-image {
@@ -350,14 +329,13 @@ h4 {
 }
 
 .japan-expert-name {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 22px;
   color: #274472;
   margin-bottom: 6px;
 }
 
 .japan-expert-title {
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   color: #718096;
   font-weight: 700;
@@ -376,9 +354,8 @@ h4 {
 }
 
 .japan-expert-stats li {
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #475569;
+  color: var(--navy);
   margin-bottom: 14px;
   display: flex;
   align-items: flex-start;
@@ -386,7 +363,9 @@ h4 {
   line-height: 1.5;
   padding-bottom: 14px;
   border-bottom: 1px solid #f7f9fc;
-  transition: color var(--transition), padding-left var(--transition);
+  transition:
+    color var(--transition),
+    padding-left var(--transition);
 }
 
 .japan-expert-stats li:last-child {
@@ -416,12 +395,12 @@ h4 {
 }
 
 
-.japan-expert-content h2 {
-  font-family: 'Playfair Display', serif;
-}
-
 .japan-highlight-box {
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.05), rgba(107, 147, 189, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.05),
+    rgba(107, 147, 189, 0.05)
+  );
   padding: 24px 28px;
   border-left: 4px solid #274472;
   border-radius: 0 10px 10px 0;
@@ -430,7 +409,11 @@ h4 {
 }
 
 .japan-highlight-box:hover {
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
 }
 
 .japan-highlight-box p {
@@ -438,7 +421,6 @@ h4 {
   font-style: italic;
   color: #274472;
 }
-
 
 /* ============================================================
    SECTION 6: GALLERY ASYMMETRIC LAYOUT
@@ -522,7 +504,6 @@ h4 {
   top: 50%;
   left: -36px;
   transform: rotate(-90deg) translateY(-50%);
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 9px;
   text-transform: uppercase;
@@ -554,7 +535,6 @@ h4 {
 }
 
 .japan-expert-tag {
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -567,26 +547,24 @@ h4 {
 }
 
 .japan-editorial-p p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   line-height: 1.8;
 }
 
 .japan-asymmetric-quote {
   margin-top: 36px;
-  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 28px;
 }
 
 .japan-asymmetric-quote p {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 19px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin: 0;
 }
-
 
 /* ============================================================
    SECTION 7: CHOICE CARDS
@@ -601,15 +579,16 @@ h4 {
 .japan-choice-card {
   padding: 40px 36px;
   border-radius: 16px;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   position: relative;
   overflow: hidden;
   color: #274472;
-
 }
 
 .japan-choice-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -629,7 +608,6 @@ h4 {
   background: #ffffff;
   border: 1px solid #edf2f7;
   border-top: 3px solid #274472;
-
 }
 
 .japan-choice-card.land:hover {
@@ -642,7 +620,6 @@ h4 {
   background: linear-gradient(135deg, #274472 0%, #1a365d 100%);
   color: #ffffff;
   border-top: none;
-
 }
 
 .japan-choice-card.cruise:hover {
@@ -650,21 +627,15 @@ h4 {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* .jlc-text-navy-dark h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  margin-bottom: 28px;
-  line-height: 1.3;
-} */
-
 
 .cruise h3 {
-  font-family: 'Playfair Display', serif !important;
+  font-family: var(--font-display) !important;
   font-size: 22px !important;
   margin-bottom: 50px !important;
   margin-top: 0px !important;
   line-height: 1.3 !important;
   color: white !important;
+  font-weight: 500 !important;
 }
 
 .japan-choice-list {
@@ -678,16 +649,17 @@ h4 {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  transition: padding-left var(--transition), color var(--transition);
+  transition:
+    padding-left var(--transition),
+    color var(--transition);
 }
 
 .japan-choice-card.cruise .japan-choice-list li {
   border-bottom-color: rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .japan-choice-list li:last-child {
@@ -718,10 +690,11 @@ h4 {
 }
 
 .jlc-card-header-title-land {
-  color: #1a2a44;
+  color: var(--navy);
   font-size: 22px !important;
-  font-family: 'Playfair Display', serif !important;
+  font-family: var(--font-display) !important;
   line-height: 1.3;
+  font-weight: 500 !important;
 }
 
 .jlc-card-p {
@@ -734,7 +707,6 @@ h4 {
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
-
 
 /* ============================================================
    SECTION 8: COMPARISON TABLE
@@ -758,7 +730,6 @@ h4 {
   color: #ffffff;
   padding: 24px 28px;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2.5px;
@@ -768,7 +739,6 @@ h4 {
 .japan-comparison-table td {
   padding: 20px 28px;
   border-bottom: 1px solid #f1f5f9;
-  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: #1e293b;
   transition: background var(--transition);
@@ -819,7 +789,6 @@ h4 {
   color: #5b21b6;
 }
 
-
 /* ============================================================
    SECTION 9: TRUST / FEATURE GRID
    ============================================================ */
@@ -835,14 +804,16 @@ h4 {
   border: 1px solid #edf2f7;
   border-radius: 16px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   cursor: default;
   position: relative;
   overflow: hidden;
 }
 
 .japan-trust-point::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -856,7 +827,7 @@ h4 {
 
 .japan-trust-point:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 12px 32px rgba(39, 68, 114, 0.1);
 }
 
 .japan-trust-point:hover::before {
@@ -866,7 +837,11 @@ h4 {
 .japan-trust-icon-box {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   color: #274472;
   display: flex;
   align-items: center;
@@ -874,7 +849,9 @@ h4 {
   border-radius: 12px;
   margin-bottom: 16px;
   flex-shrink: 0;
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
 }
 
 .japan-trust-point:hover .japan-trust-icon-box {
@@ -882,7 +859,6 @@ h4 {
   color: #ffffff;
   transform: scale(1.05) rotate(5deg);
 }
-
 
 /* ============================================================
    SECTION 10: SPECIAL CARD CONTEXTS
@@ -895,7 +871,7 @@ h4 {
 
 .japan-bg-cream .japan-expert-card:hover {
   transform: translateX(6px);
-  box-shadow: 0 12px 32px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 12px 32px rgba(39, 68, 114, 0.1);
 }
 
 .japan-choice-grid .japan-expert-card {
@@ -919,12 +895,29 @@ h4 {
 
 .japan-bg-soft .japan-expert-card:hover {
   transform: translateX(4px);
-  box-shadow: 0 8px 24px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 8px 24px rgba(39, 68, 114, 0.1);
 }
 
 .japan-bg-soft .japan-trust-point {
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+}
+
+.japan-trust-point-first {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 28px 24px;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
 }
 
 .japan-bg-soft .japan-trust-point:hover {
@@ -933,23 +926,20 @@ h4 {
   box-shadow: 0 12px 32px rgba(39, 68, 114, 0.12);
 }
 
-
 /* ============================================================
    SECTION 11: STEP LABEL
    ============================================================ */
 .jlc-step-label {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #6b93bd;
   padding: 8px 20px;
-  background: rgba(107, 147, 189, 0.10);
+  background: rgba(107, 147, 189, 0.1);
   border-radius: 100px;
 }
-
 
 /* ============================================================
    SECTION 12: QUICK SUMMARY BOX (NAVY)
@@ -982,7 +972,6 @@ h4 {
   gap: 20px;
 }
 
-
 /* ============================================================
    SECTION 13: WHAT CRUISES DON'T SHOW YOU
    ============================================================ */
@@ -1007,13 +996,15 @@ h4 {
   gap: 20px;
   align-items: flex-start;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .jlc-miss-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1027,7 +1018,7 @@ h4 {
 
 .jlc-miss-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
 }
 
 .jlc-miss-card:hover::before {
@@ -1038,13 +1029,19 @@ h4 {
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   color: #274472;
   flex-shrink: 0;
-  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jlc-miss-card:hover .jlc-miss-icon-wrap {
@@ -1058,7 +1055,7 @@ h4 {
 }
 
 .jlc-miss-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 20px;
   font-weight: 600;
   color: #274472;
@@ -1104,7 +1101,6 @@ h4 {
   font-weight: 500;
 }
 
-
 /* ============================================================
    SECTION 14: WHO SHOULD / SHOULDN'T CHOOSE
    ============================================================ */
@@ -1118,7 +1114,9 @@ h4 {
 .jlc-who-card {
   border-radius: 20px;
   padding: 40px 36px;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jlc-who-land {
@@ -1153,7 +1151,11 @@ h4 {
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1187,7 +1189,6 @@ h4 {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #475569;
   padding: 14px 0;
@@ -1229,13 +1230,15 @@ h4 {
   border-radius: 16px;
   padding: 36px 32px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .jlc-not-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1280,7 +1283,6 @@ h4 {
 }
 
 .jlc-not-list li {
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4a5568;
   padding: 14px 0;
@@ -1288,7 +1290,9 @@ h4 {
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: padding-left 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
+  transition:
+    padding-left 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s;
   line-height: 1.5;
 }
 
@@ -1313,7 +1317,6 @@ h4 {
   padding-left: 5px;
 }
 
-
 /* ============================================================
    SECTION 15: WHY LAND WINS (NAVY)
    ============================================================ */
@@ -1332,10 +1335,9 @@ h4 {
 .jlc-wins-h3 {
   font-size: 28px;
   color: #ffffff;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   margin: 0;
 }
-
 
 /* ============================================================
    SECTION 16: COST COMPARISON
@@ -1381,13 +1383,15 @@ h4 {
   border-radius: 16px;
   padding: 28px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .jlc-cost-point::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1401,7 +1405,7 @@ h4 {
 
 .jlc-cost-point:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
 }
 
 .jlc-cost-point:hover::before {
@@ -1412,13 +1416,20 @@ h4 {
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   color: #274472;
   flex-shrink: 0;
-  transition: background 0.3s, transform 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    color 0.3s;
 }
 
 .jlc-cost-point:hover .jlc-cost-point-icon {
@@ -1432,7 +1443,6 @@ h4 {
 }
 
 .jlc-cost-point-label {
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1443,7 +1453,7 @@ h4 {
 }
 
 .jlc-cost-point-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 20px;
   font-weight: 600;
   color: #274472;
@@ -1464,7 +1474,7 @@ h4 {
 }
 
 .jlc-cost-verdict .japan-section-p {
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   font-size: 16px;
 }
@@ -1482,14 +1492,14 @@ h4 {
   margin: 0;
   font-weight: 600 !important;
   font-size: 22px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
 }
 
 .jlc-cost-amount {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #1a2a44;
+  color: var(--navy);
 }
 
 .jlc-cost-unit {
@@ -1508,7 +1518,6 @@ h4 {
   margin-top: 40px;
   text-align: center;
 }
-
 
 /* ============================================================
    SECTION 17: FIRST-TIME TRAVELERS BOX
@@ -1532,7 +1541,6 @@ h4 {
   color: #ffffff;
   padding: 10px 45px;
   transform: rotate(45deg);
-  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1555,7 +1563,7 @@ h4 {
 }
 
 .jlc-ft-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 22px !important;
   color: #274472 !important;
   text-align: left !important;
@@ -1563,10 +1571,9 @@ h4 {
   margin-bottom: 20px;
 }
 
-
 .jlc-ft-p {
   font-size: 18px;
-  color: #4a5568;
+  color: var(--navy);
   line-height: 1.6;
 }
 
@@ -1598,7 +1605,9 @@ h4 {
   background: #f8fafc;
   border-radius: 16px;
   border: 1px solid #edf2f7;
-  transition: transform 0.3s ease, border-color 0.3s;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s;
 }
 
 .jlc-city-item:hover {
@@ -1620,7 +1629,7 @@ h4 {
 }
 
 .jlc-city-info h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 18px;
   font-weight: 600;
   color: #274472;
@@ -1628,12 +1637,10 @@ h4 {
 }
 
 .jlc-city-info p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #718096;
   margin: 0;
 }
-
 
 /* ============================================================
    SECTION 18: WORRY / COMPLICATED SECTION
@@ -1656,13 +1663,19 @@ h4 {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.06),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   color: #274472;
   opacity: 0.4;
-  transition: opacity 0.3s, transform 0.3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .jlc-worry-wrapper:hover .jlc-worry-big-icon {
@@ -1679,7 +1692,7 @@ h4 {
 }
 
 .jlc-worry-stat-num {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 36px;
   font-weight: 700;
   color: #ffffff;
@@ -1687,7 +1700,6 @@ h4 {
 }
 
 .jlc-worry-stat-label {
-  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.75);
   margin: 0;
@@ -1700,7 +1712,11 @@ h4 {
 }
 
 .jlc-worry-highlight {
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.06));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.06),
+    rgba(107, 147, 189, 0.06)
+  );
   padding: 24px 28px;
   border-left: 4px solid #274472;
   border-radius: 0 10px 10px 0;
@@ -1709,7 +1725,11 @@ h4 {
 }
 
 .jlc-worry-highlight:hover {
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.10), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.1),
+    rgba(107, 147, 189, 0.08)
+  );
 }
 
 .jlc-worry-highlight-p {
@@ -1734,17 +1754,19 @@ h4 {
   border-radius: 12px;
   padding: 18px 22px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jlc-worry-step:hover {
   transform: translateX(6px);
-  box-shadow: 0 6px 20px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 6px 20px rgba(39, 68, 114, 0.1);
   border-color: #6b93bd;
 }
 
 .jlc-worry-step-num {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
   color: rgba(39, 68, 114, 0.15);
@@ -1756,7 +1778,6 @@ h4 {
 .jlc-worry-step:hover .jlc-worry-step-num {
   color: rgba(39, 68, 114, 0.3);
 }
-
 
 /* ============================================================
    SECTION 19: HYBRID SECTION
@@ -1776,10 +1797,9 @@ h4 {
 
 .jlc-hybrid-title {
   font-size: 22px !important;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   margin: 0;
   font-weight: 500 !important;
-
 }
 
 .jlc-hybrid-footer {
@@ -1795,7 +1815,6 @@ h4 {
   font-weight: 600;
   color: #0369a1;
 }
-
 
 /* ============================================================
    SECTION 20: CLIENTS / EXPERT OBSERVATIONS
@@ -1813,7 +1832,11 @@ h4 {
 }
 
 .jlc-clients-verdict {
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(107, 147, 189, 0.06));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.06),
+    rgba(107, 147, 189, 0.06)
+  );
   border-left: 4px solid #274472;
   border-radius: 0 12px 12px 0;
   padding: 24px 28px;
@@ -1824,7 +1847,7 @@ h4 {
   font-weight: 600;
   color: #274472;
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 20px;
   font-style: italic;
 }
@@ -1844,13 +1867,15 @@ h4 {
   border-radius: 14px;
   padding: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .jlc-observation-card::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1864,7 +1889,7 @@ h4 {
 
 .jlc-observation-card:hover {
   transform: translateX(6px);
-  box-shadow: 0 8px 28px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 8px 28px rgba(39, 68, 114, 0.1);
   border-color: #6b93bd;
 }
 
@@ -1873,7 +1898,7 @@ h4 {
 }
 
 .jlc-obs-num {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 28px;
   font-weight: 700;
   color: rgba(39, 68, 114, 0.12);
@@ -1890,13 +1915,20 @@ h4 {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   color: #274472;
   flex-shrink: 0;
-  transition: background 0.3s, transform 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    color 0.3s;
 }
 
 .jlc-observation-card:hover .jlc-obs-icon {
@@ -1919,7 +1951,6 @@ h4 {
   color: rgba(255, 255, 255, 0.88);
   margin: 0;
 }
-
 
 /* ============================================================
    SECTION 21: PERSONAL TAKE & REMEMBER ONE THING
@@ -1964,7 +1995,6 @@ h4 {
   color: #1a2a44;
 }
 
-
 /* ============================================================
    SECTION 22: PLAN YOUR TRIP (CTA)
    ============================================================ */
@@ -1993,7 +2023,9 @@ h4 {
   padding: 52px 36px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(39, 68, 114, 0.08);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-top: 3px solid #274472;
 }
 
@@ -2003,7 +2035,7 @@ h4 {
 }
 
 .jlc-plan-award-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 22px !important;
   font-weight: 600 !important;
   color: #274472;
@@ -2019,13 +2051,12 @@ h4 {
 .jlc-plan-badge {
   display: inline-block;
   margin-top: 16px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #6b93bd;
-  background: rgba(107, 147, 189, 0.10);
+  background: rgba(107, 147, 189, 0.1);
   padding: 6px 16px;
   border-radius: 100px;
 }
@@ -2043,7 +2074,6 @@ h4 {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   color: #4a5568;
   background: #ffffff;
@@ -2051,13 +2081,16 @@ h4 {
   border-radius: 12px;
   padding: 18px 22px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s;
   line-height: 1.5;
 }
 
 .jlc-plan-list li:hover {
   transform: translateX(6px);
-  box-shadow: 0 8px 24px rgba(39, 68, 114, 0.10);
+  box-shadow: 0 8px 24px rgba(39, 68, 114, 0.1);
   border-color: #6b93bd;
   color: #274472;
 }
@@ -2066,13 +2099,20 @@ h4 {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(39, 68, 114, 0.08), rgba(107, 147, 189, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(39, 68, 114, 0.08),
+    rgba(107, 147, 189, 0.08)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   color: #274472;
   flex-shrink: 0;
-  transition: background 0.3s, color 0.3s, transform 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.3s;
 }
 
 .jlc-plan-list li:hover .jlc-plan-list-icon {
@@ -2080,7 +2120,6 @@ h4 {
   color: #ffffff;
   transform: scale(1.1) rotate(5deg);
 }
-
 
 /* ============================================================
    SECTION 23: WHERE TO GO NEXT (ROADMAP)
@@ -2118,7 +2157,7 @@ h4 {
 }
 
 .jlc-next-step-num {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: 54px;
   font-weight: 900;
   color: #1a2a44;
@@ -2152,9 +2191,8 @@ h4 {
 }
 
 .jlc-next-step-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px !important;
+  font-weight: 600 !important;
   color: #1a2a44;
   margin: 0;
   transition: color 0.3s;
@@ -2189,7 +2227,6 @@ h4 {
   color: #ffffff;
 }
 
-
 /* ============================================================
    SECTION 24: FAQ
    ============================================================ */
@@ -2221,11 +2258,9 @@ h4 {
 .jlc-faq-q {
   margin: 0 0 10px 0;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #1a2a44;
 }
-
 
 /* ============================================================
    SECTION 25: UTILITY CLASSES
@@ -2243,9 +2278,10 @@ h4 {
 }
 
 .jlc-text-navy-dark {
-  color: #1a2a44;
+  color: var(--navy);
+  font-weight: 500 !important;
   font-size: 22px !important;
-  font-family: 'Playfair Display', serif !important;
+  font-family: var(--font-display) !important;
   line-height: 1.3 !important;
   margin-bottom: 50px !important;
 }
@@ -2253,7 +2289,7 @@ h4 {
 .jlc-text-navy-dark-m0 {
   font-family: var(--font-display) !important;
   font-weight: 500 !important;
-  color: #1a2a44;
+  color: var(--navy);
   margin: 0;
   font-size: 22px !important;
 }
@@ -2263,7 +2299,7 @@ h4 {
 }
 
 .jlc-text-blue-light {
-  color: white
+  color: white;
 }
 
 .jlc-text-blue-light-japan-cruise {
@@ -2296,9 +2332,8 @@ h4 {
 }
 
 .jlc-m-0 {
-  color: #1a2a44;
+  color: var(--navy);
   font-size: 18px !important;
-  font-family: var(--font-body) !important;
   line-height: 1.3 !important;
   margin-top: 12px;
   font-weight: 300 !important;
@@ -2385,7 +2420,6 @@ h4 {
   margin-top: 30px;
 }
 
-
 /* ============================================================
    SECTION 26: RESPONSIVE — DESKTOP ≤ 1024px
    ============================================================ */
@@ -2464,7 +2498,6 @@ h4 {
     gap: 40px;
   }
 }
-
 
 /* ============================================================
    SECTION 27: RESPONSIVE — TABLET ≤ 768px
@@ -2577,7 +2610,6 @@ h4 {
     padding: 28px 22px;
   }
 }
-
 
 /* ============================================================
    SECTION 28: RESPONSIVE — MOBILE ≤ 480px
@@ -2808,23 +2840,29 @@ h4 {
 }
 
 @keyframes jlcFadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
   .BTJapan_faq_section {
     padding: 60px 15px;
   }
-  
+
   .BTJapan_faq_inner h2 {
     font-size: 32px !important;
   }
-  
+
   .BTJapan_faq_question {
     font-size: 16px;
   }
-  
+
   .BTJapan_faq_answer {
     font-size: 15px;
   }

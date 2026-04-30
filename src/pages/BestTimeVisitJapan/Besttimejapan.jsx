@@ -567,7 +567,9 @@ const BestTimeJapan = () => {
             <span className="BTJapan_section_badge">Visual Journey</span>
             <h2>A Visual Symphony of Seasons</h2>
             <p>
-              Witness the breathtaking transformation of Japan's landscapes, from the delicate cherry blossoms of spring to the silent, snow-draped beauty of winter.
+              Witness the breathtaking transformation of Japan's landscapes,
+              from the delicate cherry blossoms of spring to the silent,
+              snow-draped beauty of winter.
             </p>
           </div>
           <div className="BTJapan_video_grid">
@@ -582,9 +584,11 @@ const BestTimeJapan = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <h3 className="BTJapan_video_card_title">Winter's Silent Beauty</h3>
+              <h3 className="BTJapan_video_card_title">
+                Winter's Silent Beauty
+              </h3>
             </div>
-            
+
             {/* VIDEO CARD 2 */}
             <div className="BTJapan_video_card">
               <div className="BTJapan_video_wrapper">
@@ -596,7 +600,9 @@ const BestTimeJapan = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <h3 className="BTJapan_video_card_title">Vibrant Autumn Traditions</h3>
+              <h3 className="BTJapan_video_card_title">
+                Vibrant Autumn Traditions
+              </h3>
             </div>
 
             {/* VIDEO CARD 3 */}
@@ -610,7 +616,9 @@ const BestTimeJapan = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <h3 className="BTJapan_video_card_title">Cherry Blossom Season</h3>
+              <h3 className="BTJapan_video_card_title">
+                Cherry Blossom Season
+              </h3>
             </div>
           </div>
         </div>
@@ -781,7 +789,15 @@ const BestTimeJapan = () => {
         <div className="BTJapan_landcruise_inner">
           <div className="BTJapan_landcruise_grid">
             <div className="BTJapan_landcruise_image_container">
-              <img src={BTJimage2} alt="Japan spring and fall comparison" />
+              <div className="BTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/3TO9V80IxTE"
+                  title="Japan Spring vs Fall"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
             <div className="BTJapan_landcruise_text">
               <span className="BTJapan_section_badge">Spring vs Fall</span>
@@ -979,25 +995,59 @@ const BestTimeJapan = () => {
         </div>
       </section>
 
-      {/* ===== IF YOU ONLY REMEMBER ONE THING ===== */}
-      <section className="BTJapan_remember_section">
-        <div className="BTJapan_remember_inner">
-          <span className="BTJapan_section_badge">Key Takeaway</span>
-          <h2>If You Only Remember One Thing</h2>
-          <div className="BTJapan_remember_grid">
-            <div className="BTJapan_remember_item">
-              <span className="BTJapan_remember_label">Iconic Japan</span>
-              <p className="BTJapan_remember_text">Go in April.</p>
+      {/* ===== SAMPLE TRIPS BY SEASON ===== */}
+      <section className="BTJapan_cost_section">
+        <div className="BTJapan_cost_inner">
+          <span className="BTJapan_section_badge">Trip Ideas</span>
+          <h2>Sample Japan Trips Based on Season</h2>
+          <div className="BTJapan_cost_layout">
+            <div className="BTJapan_cost_cards">
+              {[
+                {
+                  season: "Spring",
+                  icon: <Flower2 size={28} />,
+                  destinations: "Tokyo, Kyoto, Hakone",
+                  highlight: "Cherry blossoms & iconic scenery",
+                },
+                {
+                  season: "Summer",
+                  icon: <Sun size={28} />,
+                  destinations: "Osaka, Kyoto, Nara",
+                  highlight: "Festivals, food, culture",
+                },
+                {
+                  season: "Fall",
+                  icon: <Leaf size={28} />,
+                  destinations: "Tokyo, Kyoto, Nikko",
+                  highlight: "Peak foliage & refined experience",
+                },
+                {
+                  season: "Winter",
+                  icon: <Snowflake size={28} />,
+                  destinations: "Tokyo, Hokkaido, Ryokan",
+                  highlight: "Snow, skiing, and onsen",
+                },
+              ].map((item, i) => (
+                <div className="BTJapan_cost_card" key={i}>
+                  <div className="BTJapan_cost_icon">{item.icon}</div>
+                  <div className="BTJapan_cost_season">{item.season}</div>
+                  <div className="BTJapan_cost_destinations">
+                    {item.destinations}
+                  </div>
+                  <p className="BTJapan_cost_highlight">{item.highlight}</p>
+                </div>
+              ))}
             </div>
-            <div className="BTJapan_remember_item BTJapan_remember_item--highlight">
-              <span className="BTJapan_remember_label">Best Overall</span>
-              <p className="BTJapan_remember_text">Go in May or October.</p>
-            </div>
-            <div className="BTJapan_remember_item">
-              <span className="BTJapan_remember_label">
-                Value & Flexibility
-              </span>
-              <p className="BTJapan_remember_text">Go in winter.</p>
+            <div className="BTJapan_cost_video_container">
+              <div className="BTJapan_video_wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/gFLmmRHGTkg"
+                  title="Japan Seasonal Travel Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -1042,47 +1092,26 @@ const BestTimeJapan = () => {
         </div>
       </section>
 
-      {/* ===== SAMPLE TRIPS BY SEASON ===== */}
-      <section className="BTJapan_cost_section">
-        <div className="BTJapan_cost_inner">
-          <span className="BTJapan_section_badge">Trip Ideas</span>
-          <h2>Sample Japan Trips Based on Season</h2>
-          <div className="BTJapan_cost_cards">
-            {[
-              {
-                season: "Spring",
-                icon: <Flower2 size={28} />,
-                destinations: "Tokyo, Kyoto, Hakone",
-                highlight: "Cherry blossoms & iconic scenery",
-              },
-              {
-                season: "Summer",
-                icon: <Sun size={28} />,
-                destinations: "Osaka, Kyoto, Nara",
-                highlight: "Festivals, food, culture",
-              },
-              {
-                season: "Fall",
-                icon: <Leaf size={28} />,
-                destinations: "Tokyo, Kyoto, Nikko",
-                highlight: "Peak foliage & refined experience",
-              },
-              {
-                season: "Winter",
-                icon: <Snowflake size={28} />,
-                destinations: "Tokyo, Hokkaido, Ryokan",
-                highlight: "Snow, skiing, and onsen",
-              },
-            ].map((item, i) => (
-              <div className="BTJapan_cost_card" key={i}>
-                <div className="BTJapan_cost_icon">{item.icon}</div>
-                <div className="BTJapan_cost_season">{item.season}</div>
-                <div className="BTJapan_cost_destinations">
-                  {item.destinations}
-                </div>
-                <p className="BTJapan_cost_highlight">{item.highlight}</p>
-              </div>
-            ))}
+      {/* ===== IF YOU ONLY REMEMBER ONE THING ===== */}
+      <section className="BTJapan_remember_section">
+        <div className="BTJapan_remember_inner">
+          <span className="BTJapan_section_badge">Key Takeaway</span>
+          <h2>If You Only Remember One Thing</h2>
+          <div className="BTJapan_remember_grid">
+            <div className="BTJapan_remember_item">
+              <span className="BTJapan_remember_label">Iconic Japan</span>
+              <p className="BTJapan_remember_text">Go in April.</p>
+            </div>
+            <div className="BTJapan_remember_item BTJapan_remember_item--highlight">
+              <span className="BTJapan_remember_label">Best Overall</span>
+              <p className="BTJapan_remember_text">Go in May or October.</p>
+            </div>
+            <div className="BTJapan_remember_item">
+              <span className="BTJapan_remember_label">
+                Value & Flexibility
+              </span>
+              <p className="BTJapan_remember_text">Go in winter.</p>
+            </div>
           </div>
         </div>
       </section>

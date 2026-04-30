@@ -10,12 +10,21 @@ import {
   Leaf,
   Snowflake,
   Flower2,
+  CheckCircle2,
+  Quote,
+  Search,
+  Target,
+  Map,
+  Settings2,
+  ShieldCheck,
+  Briefcase,
+  Headphones,
+  UserCheck,
+  Crown,
 } from "lucide-react";
 import "./LuxuryTravelToJapan.css";
 import myimage from "../../assets/image.webp";
 import BTJimage1 from "../../assets/BestTimeJapan/BTJimage1.webp";
-import BTJimage2 from "../../assets/BestTimeJapan/BTJimage2.webp";
-import BTJimage3 from "../../assets/BestTimeJapan/BTJimage3.webp";
 import BTJhero1 from "../../assets/BestTimeJapan/BTJhero1.webp";
 import BTJhero2 from "../../assets/BestTimeJapan/BTJhero2.webp";
 import BTJhero3 from "../../assets/BestTimeJapan/BTJhero3.webp";
@@ -23,7 +32,6 @@ import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
 import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
 import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
 import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
-import Ftjapan5 from "../../assets/LuxurtTravelToJapan/Ftjapan5.webp";
 import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
 import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
 import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
@@ -159,8 +167,7 @@ const LuxuryTravelToJapan = () => {
                 },
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id":
-                    "https://www.tripsandships.com/luxury-japan-travel",
+                  "@id": "https://www.tripsandships.com/luxury-japan-travel",
                 },
                 datePublished: "2026-04-27",
                 dateModified: "2026-04-27",
@@ -266,17 +273,17 @@ const LuxuryTravelToJapan = () => {
               Schedule a Consultation
             </button>
           </div>
-        </div>  
+        </div>
       </section>
 
-            {/* ===== WHY JAPAN IS COMPLEX ===== */}
+      {/* ===== WHY JAPAN IS COMPLEX ===== */}
       <section className="LTJapan_about_section">
         <div className="LTJapan_about_inner">
           <div className="LTJapan_about_flex">
             <div className="LTJapan_about_image_container">
               <div className="LTJapan_about_video_wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/OShhce4kPrk?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/lF9iLEA0IZY?start=61"
                   title="Why Japan Is One of the Most Complex Luxury Destinations to Plan"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -292,25 +299,27 @@ const LuxuryTravelToJapan = () => {
               </h2>
               <div className="LTJapan_about_text_scroll">
                 <p>
-                  Japan may be safe, efficient, and modern, but that does not make it
-                  simple. Many travelers underestimate how nuanced Japan is until they
-                  begin planning. Hotel inventory can be extremely limited at top
-                  luxury properties. The best ryokan often book many months in
-                  advance. Train systems are efficient but can be confusing to
-                  navigate strategically. Dining reservations for sought after
-                  restaurants may require insider access or advanced planning.
-                  Seasonal demand swings dramatically impact pricing, crowds, and
-                  availability.
+                  Japan may be safe, efficient, and modern, but that does not
+                  make it simple. Many travelers underestimate how nuanced Japan
+                  is until they begin planning. Hotel inventory can be extremely
+                  limited at top luxury properties. The best ryokan often book
+                  many months in advance. Train systems are efficient but can be
+                  confusing to navigate strategically. Dining reservations for
+                  sought after restaurants may require insider access or
+                  advanced planning. Seasonal demand swings dramatically impact
+                  pricing, crowds, and availability.
                 </p>
                 <p>
                   More importantly, Japan is a destination where pacing matters
-                  immensely. Trying to fit too much into a trip, staying in the wrong
-                  neighborhood, underestimating transfer times, or choosing the wrong
-                  touring style can significantly diminish the experience.
+                  immensely. Trying to fit too much into a trip, staying in the
+                  wrong neighborhood, underestimating transfer times, or
+                  choosing the wrong touring style can significantly diminish
+                  the experience.
                 </p>
                 <p>
-                  The difference between a good Japan itinerary and an exceptional one
-                  is rarely where you go. It is how well the journey is designed.
+                  The difference between a good Japan itinerary and an
+                  exceptional one is rarely where you go. It is how well the
+                  journey is designed.
                 </p>
               </div>
             </div>
@@ -320,53 +329,96 @@ const LuxuryTravelToJapan = () => {
 
       {/* ===== PLAN YOUR TRIP WITH AN EXPERT ===== */}
       <section className="LTJapan_expert_section">
+        <div className="LTJapan_expert_bg_pattern"></div>
         <div className="LTJapan_expert_inner">
           <div className="LTJapan_expert_flex">
             <div className="LTJapan_expert_content">
-              <span className="LTJapan_section_badge">Why Trust Us</span>
+              <span className="LTJapan_section_badge">Expertise Matters</span>
               <h2>Why Trust Trips and Ships to Plan Your Japan Journey</h2>
-              <p>
-                Japan is one of the most nuanced destinations in the world to plan well, which is why expertise matters.
-              </p>
-              <p>
-                Our founder, Angela Hughes, lived in Japan and has traveled extensively throughout the country. Combined with more than 40 years in luxury travel and a team of experienced advisors, that firsthand destination knowledge allows us to design Japan journeys with a level of insight most agencies simply cannot offer.
-              </p>
-              <p>
-                We understand not only where to go, but how Japan flows. We know how to balance iconic highlights with authentic cultural experiences, how to pace itineraries correctly, and how to avoid the common planning mistakes that often impact first time travelers.
-              </p>
-              <p>
-                Our role is not simply to book your trip. It is to design the right Japan experience for you.
-              </p>
+
+              <div className="LTJapan_expert_intro_box">
+                <Quote className="LTJapan_expert_quote_icon" size={32} />
+                <p className="LTJapan_expert_lead">
+                  Japan is one of the most nuanced destinations in the world to
+                  plan well, which is why expertise matters.
+                </p>
+              </div>
+
+              <div className="LTJapan_expert_bio">
+                <p>
+                  Our founder, <strong>Angela Hughes</strong>, lived in Japan
+                  and has traveled extensively throughout the country. Combined
+                  with more than 40 years in luxury travel and a team of
+                  experienced advisors, that firsthand destination knowledge
+                  allows us to design Japan journeys with a level of insight
+                  most agencies simply cannot offer.
+                </p>
+              </div>
+
+              <div className="LTJapan_expert_features">
+                <div className="LTJapan_expert_feature_item">
+                  <CheckCircle2 className="LTJapan_feature_icon" size={18} />
+                  <p>
+                    We understand not only where to go, but how Japan flows.
+                  </p>
+                </div>
+                <div className="LTJapan_expert_feature_item">
+                  <CheckCircle2 className="LTJapan_feature_icon" size={18} />
+                  <p>
+                    We know how to balance iconic highlights with authentic
+                    cultural experiences, how to pace itineraries correctly, and
+                    how to avoid the common planning mistakes that often impact
+                    first time travelers.
+                  </p>
+                </div>
+              </div>
+
+              <div className="LTJapan_expert_mission_card">
+                <p>
+                  Our role is not simply to book your trip. It is to design the
+                  right Japan experience for you.
+                </p>
+              </div>
+
               <div className="LTJapan_expert_buttons">
                 <button className="LTJapan_cta_primary_btn">
                   Schedule a Consultation
                 </button>
               </div>
             </div>
+
             <div className="LTJapan_expert_image_container">
               <div className="LTJapan_expert_image_wrapper">
+                <div className="LTJapan_expert_image_decoration"></div>
                 <img
                   src={myimage}
                   alt="Angela Hughes — Luxury Japan Travel Expert at Trips & Ships"
                   className="LTJapan_expert_image"
                 />
+                <div className="LTJapan_expert_info_badge">
+                  <span className="LTJapan_badge_name">Angela Hughes</span>
+                  <span className="LTJapan_badge_role">
+                    Japan Specialist & CEO
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      
       {/* ===== COMMON MISTAKES ===== */}
       <section className="LTJapan_mistakes_v2_section">
         <div className="LTJapan_mistakes_v2_inner">
-
           {/* Header */}
           <div className="LTJapan_mistakes_v2_header">
-            <span className="LTJapan_section_badge LTJapan_mistakes_badge">Avoid This</span>
+            <span className="LTJapan_section_badge LTJapan_mistakes_badge">
+              Avoid This
+            </span>
             <h2>Common Mistakes Travelers Make Planning Japan</h2>
             <p className="LTJapan_mistakes_v2_intro">
-              Japan is one of the easiest destinations in the world to underestimate.
+              Japan is one of the easiest destinations in the world to
+              underestimate.
             </p>
           </div>
 
@@ -387,8 +439,8 @@ const LuxuryTravelToJapan = () => {
               <p>
                 We regularly see travelers wait too long to book luxury hotels
                 and ryokan, only to discover that the best properties are sold
-                out. Many also underestimate how far in advance top
-                restaurants, guides, and cultural experiences must be secured.
+                out. Many also underestimate how far in advance top restaurants,
+                guides, and cultural experiences must be secured.
               </p>
             </div>
           </div>
@@ -399,7 +451,6 @@ const LuxuryTravelToJapan = () => {
               Japan rewards thoughtful planning. It punishes rushed planning.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -417,27 +468,27 @@ const LuxuryTravelToJapan = () => {
               {
                 title: "Private Custom Touring",
                 desc: "Ideal for travelers seeking the highest level of personalization, flexibility, and immersion. Private touring allows for fully customized pacing, expert guides, and tailored experiences.",
-                img: BTJimage1,
+                icon: <UserCheck size={28} />,
               },
               {
                 title: "Escorted Luxury Touring",
                 desc: "A structured and elevated option for travelers who prefer guided travel with premium service and built in logistics.",
-                img: Ftjapan2,
+                icon: <Crown size={28} />,
               },
               {
                 title: "Small Group Touring",
                 desc: "A more social and efficient way to experience Japan while still benefiting from guided structure.",
-                img: Ftjapan5,
+                icon: <Users size={28} />,
               },
               {
                 title: "Luxury Cruising",
                 desc: "An excellent option for travelers who value convenience and want to experience Japan with minimal unpacking and easy logistics.",
-                img: BTJimage3,
+                icon: <Ship size={28} />,
               },
               {
                 title: "Hybrid Land and Cruise",
                 desc: "One of the most strategic options for many travelers, combining the depth of land touring with the ease of cruising.",
-                img: BTJimage2,
+                icon: <Compass size={28} />,
                 highlight: true,
               },
             ].map((item, index) => (
@@ -447,10 +498,8 @@ const LuxuryTravelToJapan = () => {
                   item.highlight ? "LTJapan_v2_card--highlight" : ""
                 }`}
               >
-                <div className="LTJapan_v2_image">
-                  <img src={item.img} alt={item.title} />
-                </div>
                 <div className="LTJapan_v2_content">
+                  <div className="LTJapan_v2_icon_wrap">{item.icon}</div>
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
                 </div>
@@ -530,7 +579,6 @@ const LuxuryTravelToJapan = () => {
         </div>
       </section>
 
-      
       {/* ===== HOW MUCH DOES IT COST ===== */}
       <section className="LTJapan_cost_section">
         <div className="LTJapan_cost_inner">
@@ -586,40 +634,58 @@ const LuxuryTravelToJapan = () => {
             pricing and require the most advance planning.
           </p>
         </div>
-      </section>
-
-            {/* ===== BEST TIME TO VISIT ===== */}
+      </section>      {/* ===== BEST TIME TO VISIT & SEASONAL VIDEOS ===== */}
       <section className="LTJapan_timing_impact_section">
         <div className="LTJapan_timing_impact_inner">
           <span className="LTJapan_section_badge">When to Go</span>
           <h2>Best Time to Visit Japan</h2>
+          <p className="LTJapan_section_intro">
+            Experience Japan's seasonal transitions through our curated guides and cinematic highlights.
+          </p>
           <div className="LTJapan_timing_grid">
             {[
               {
-                icon: <Flower2 size={26} />,
+                icon: <Flower2 size={24} />,
                 title: "Cherry Blossom Season",
                 desc: "The most iconic and visually stunning time to visit, though also the busiest and most expensive.",
+                video: "https://www.youtube.com/embed/-CKjzQy9Fjc",
               },
               {
-                icon: <Sun size={26} />,
-                title: "Summer",
+                icon: <Sun size={24} />,
+                title: "Summer Session",
                 desc: "Festival season with vibrant cultural energy, fireworks, and local celebrations. Heat and humidity can be significant.",
+                video: "https://www.youtube.com/embed/OShhce4kPrk",
               },
               {
-                icon: <Leaf size={26} />,
+                icon: <Leaf size={24} />,
                 title: "Fall Foliage",
                 desc: "For many travelers, the most beautiful season in Japan with exceptional colors and slightly fewer crowds than spring.",
+                video: "https://www.youtube.com/embed/Bi9Ui7DpuC4",
               },
               {
-                icon: <Snowflake size={26} />,
-                title: "Winter",
+                icon: <Snowflake size={24} />,
+                title: "Winter Season",
                 desc: "Ideal for ski travelers, snow lovers, and those seeking onsen and mountain escapes in places like Hokkaido.",
+                video: "https://www.youtube.com/embed/f_nFR046uTw",
               },
             ].map((item, i) => (
               <div className="LTJapan_timing_card" key={i}>
-                <div className="LTJapan_timing_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+                <div className="LTJapan_timing_video_wrapper">
+                  <iframe
+                    src={item.video}
+                    title={item.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="LTJapan_timing_content">
+                  <div className="LTJapan_timing_header">
+                    <div className="LTJapan_timing_icon">{item.icon}</div>
+                    <h3>{item.title}</h3>
+                  </div>
+                  <p>{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -704,16 +770,54 @@ const LuxuryTravelToJapan = () => {
           </div>
           <div className="LTJapan_process_grid">
             {[
-              { step: "01", title: "Consultation", desc: "We begin by understanding your travel goals, style, and budget." },
-              { step: "02", title: "Strategy", desc: "We determine the ideal route, pacing, and overall trip structure." },
-              { step: "03", title: "Itinerary Design", desc: "We build your custom Japan journey." },
-              { step: "04", title: "Refinement", desc: "We collaborate with you to perfect the itinerary." },
-              { step: "05", title: "Booking and Logistics", desc: "We secure all accommodations, guides, transportation, and experiences." },
-              { step: "06", title: "Pre Departure Preparation", desc: "We prepare you thoroughly for travel." },
-              { step: "07", title: "In Travel Support", desc: "We remain available while you travel." },
+              {
+                step: "01",
+                title: "Consultation",
+                desc: "We begin by understanding your travel goals, style, and budget.",
+                icon: <Search size={24} />,
+              },
+              {
+                step: "02",
+                title: "Strategy",
+                desc: "We determine the ideal route, pacing, and overall trip structure.",
+                icon: <Target size={24} />,
+              },
+              {
+                step: "03",
+                title: "Itinerary Design",
+                desc: "We build your custom Japan journey.",
+                icon: <Map size={24} />,
+              },
+              {
+                step: "04",
+                title: "Refinement",
+                desc: "We collaborate with you to perfect the itinerary.",
+                icon: <Settings2 size={24} />,
+              },
+              {
+                step: "05",
+                title: "Booking and Logistics",
+                desc: "We secure all accommodations, guides, transportation, and experiences.",
+                icon: <ShieldCheck size={24} />,
+              },
+              {
+                step: "06",
+                title: "Pre Departure Preparation",
+                desc: "We prepare you thoroughly for travel.",
+                icon: <Briefcase size={24} />,
+              },
+              {
+                step: "07",
+                title: "In Travel Support",
+                desc: "We remain available while you travel.",
+                icon: <Headphones size={24} />,
+              },
             ].map((item, i) => (
               <div className="LTJapan_process_card" key={i}>
-                <span className="LTJapan_process_number">{item.step}</span>
+                <div className="LTJapan_process_top">
+                  <div className="LTJapan_process_icon_wrap">{item.icon}</div>
+                  <span className="LTJapan_process_number">{item.step}</span>
+                </div>
                 <div className="LTJapan_process_content">
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
@@ -755,7 +859,6 @@ const LuxuryTravelToJapan = () => {
         </div>
       </section>
 
-
       {/* ===== FAQ ===== */}
       <section className="LTJapan_faq_section">
         <div className="LTJapan_faq_inner">
@@ -768,22 +871,23 @@ const LuxuryTravelToJapan = () => {
 
       {/* ===== CTA + INQUIRY FORM ===== */}
       <section className="LTJapan_cta_form_section">
-        <div className="LTJapan_cta_form_bg">
-          <img src={BTJimage3} alt="Luxury Japan" className="LTJapan_cta_form_bgimg" />
-          <div className="LTJapan_cta_form_overlay" />
-        </div>
         <div className="LTJapan_cta_form_inner LTJapan_cta_form_inner--centered">
           <span className="LTJapan_cta_form_badge">Get Started</span>
           <h2 className="LTJapan_cta_form_title">
             Plan Your Luxury Japan Journey With Expert Guidance
           </h2>
           <p className="LTJapan_cta_form_sub">
-            Work with a team that understands how to design Japan properly, from pacing and routing to luxury accommodations, guides, and authentic experiences.
+            Work with a team that understands how to design Japan properly, from
+            pacing and routing to luxury accommodations, guides, and authentic
+            experiences.
           </p>
           <blockquote className="LTJapan_cta_form_quote">
-            The difference between an average Japan trip and an extraordinary one often comes down to planning.
+            The difference between an average Japan trip and an extraordinary
+            one often comes down to planning.
           </blockquote>
-          <p className="LTJapan_cta_form_cta_text">Let us help you build it right.</p>
+          <p className="LTJapan_cta_form_cta_text">
+            Let us help you build it right.
+          </p>
           <button className="LTJapan_form_submit_btn LTJapan_inquiry_btn">
             Inquiry Form Here
           </button>

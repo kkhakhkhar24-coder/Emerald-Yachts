@@ -938,19 +938,19 @@ const Japanlandvscruise = () => {
         <div className="japan-inner">
           <h2 className="japan-h2 japan-h2-centered">Mistakes That Can Impact Your Trip</h2>
           <div className="japan-choice-grid jlc-mt-60">
-            <div className="japan-trust-point jlc-text-left">
+            <div className="japan-trust-point-first jlc-text-left">
               <AlertCircle size={24} className="jlc-mistake-icon" />
               <p className="japan-section-p jlc-fw-600">Choosing convenience over experience</p>
             </div>
-            <div className="japan-trust-point jlc-text-left">
+            <div className="japan-trust-point-first jlc-text-left">
               <AlertCircle size={24} className="jlc-mistake-icon" />
               <p className="japan-section-p jlc-fw-600">Underestimating how much time cities require</p>
             </div>
-            <div className="japan-trust-point jlc-text-left">
+            <div className="japan-trust-point-first jlc-text-left">
               <AlertCircle size={24} className="jlc-mistake-icon" />
               <p className="japan-section-p jlc-fw-600">Not planning enough land time</p>
             </div>
-            <div className="japan-trust-point jlc-text-left">
+            <div className="japan-trust-point-first jlc-text-left">
               <AlertCircle size={24} className="jlc-mistake-icon" />
               <p className="japan-section-p jlc-fw-600">Misunderstanding cruise limitations</p>
             </div>
@@ -1087,7 +1087,6 @@ const Japanlandvscruise = () => {
               { title: "Kyoto Travel Guide", icon: <Landmark size={24} /> }
             ].map((item, idx) => (
               <div key={idx} className="jlc-next-step-card">
-                <div className="jlc-next-step-num">{idx + 1}</div>
                 <div className="jlc-next-step-content">
                   <div className="jlc-next-step-icon">{item.icon}</div>
                   <h3 className="jlc-next-step-title">{item.title}</h3>
