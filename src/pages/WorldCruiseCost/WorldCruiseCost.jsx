@@ -408,60 +408,72 @@ export default function WorldCruiseCost() {
                 </div>
             </section>
 
-            {/* BUDGETING & SCENARIOS */}
-            <section className="wcc-section wcc-budgeting">
-                <div className="wcc-container wcc-budgeting-inner">
-                    <div className="wcc-budgeting-grid">
-                        <div className="wcc-still-budget">
-                            <h2 className="wcc-h2 wcc-budget-h2">What You Still Need to Budget</h2>
-                            <div className="wcc-budget-checklist">
-                                {[
-                                    { item: "Insurance", desc: "Critical for 3-6 month journeys" },
-                                    { item: "Pre & Post Cruise Hotels", desc: "Luxury arrival programs" },
-                                    { item: "Premium Excursions", desc: "Private tours and overland events" },
-                                    { item: "Shopping & Personal", desc: "Onboard boutiques & local treasures" },
-                                    { item: "Upgraded Airfare", desc: "Ensuring comfort across continents" }
-                                ].map((obj, i) => (
-                                    <div key={i} className="wcc-budget-item">
-                                        <div className="wcc-budget-dot" />
-                                        <div className="wcc-budget-text">
-                                            <strong>{obj.item}</strong>
-                                            <span>{obj.desc}</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="wcc-budget-buffer">
-                                <div className="wcc-buffer-label">Typical Buffer</div>
-                                <div className="wcc-buffer-value">10% to 25%</div>
+            {/* BUDGETING (v42 - MODERN EDITORIAL) */}
+            <section className="wcc-section wcc-budgeting-v42">
+                <div className="wcc-container wcc-v42-inner">
+                    <div className="wcc-v42-grid">
+                        {/* LEFT: TITLE & BUFFER */}
+                        <div className="wcc-v42-content">
+                            <h2 className="wcc-h2 wcc-v42-h2">What You Still Need to Budget</h2>
+                            <div className="wcc-v42-buffer-strip">
+                                <span className="wcc-v42-buffer-label">Typical buffer</span>
+                                <span className="wcc-v42-buffer-value">10% to 25%</span>
                             </div>
                         </div>
 
-                        <div className="wcc-scenarios">
-                            <h2 className="wcc-h2 wcc-scenario-h2">Sample Cost Scenarios</h2>
-                            <div className="wcc-scenario-list">
-                                {[
-                                    { tier: "Premium Entry", base: "$29,000", total: "$40,000 – $50,000", pct: 70 },
-                                    { tier: "Luxury Inclusive", base: "$78,000", total: "$85,000 – $100,000", pct: 85 },
-                                    { tier: "Ultra Luxury", base: "$180,000", total: "$200,000+", pct: 100 }
-                                ].map((item, i) => (
-                                    <div key={i} className="wcc-scenario-card">
-                                        <div className="wcc-scenario-header">
-                                            <span className="wcc-scenario-tier">{item.tier}</span>
-                                            <span className="wcc-scenario-total">{item.total}</span>
-                                        </div>
-                                        <div className="wcc-scenario-bar-bg">
-                                            <div className="wcc-scenario-bar-fill" style={{ width: `${item.pct}%` }} />
-                                        </div>
-                                        <div className="wcc-scenario-footer">Base Fare: {item.base}</div>
-                                    </div>
-                                ))}
-                            </div>
+                        {/* RIGHT: CHIPS/PILLS */}
+                        <div className="wcc-v42-list">
+                            {[
+                                "Insurance",
+                                "Pre and post cruise hotels",
+                                "Premium excursions",
+                                "Shopping",
+                                "Upgraded airfare"
+                            ].map((item, i) => (
+                                <div key={i} className="wcc-v42-chip">
+                                    <div className="wcc-v42-chip-dot" />
+                                    <span className="wcc-v42-chip-text">{item}</span>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* COST SCENARIOS (v44) */}
+            <section className="wcc-section wcc-scenarios-v44">
+                <div className="wcc-container wcc-v44-inner">
+                    <h2 className="wcc-h2 wcc-v44-h2">Sample Cost Scenarios</h2>
+                    
+                    <div className="wcc-v44-grid">
+                        {[
+                            { tier: "Premium Entry", base: "$29,000", range: "$40,000 to $50,000", progress: 50 },
+                            { tier: "Luxury Inclusive", base: "$78,000", range: "$85,000 to $100,000", progress: 75 },
+                            { tier: "Ultra Luxury", base: "$180,000", range: "$200,000+", progress: 100 }
+                        ].map((item, i) => (
+                            <div key={i} className="wcc-v44-card">
+                                <div className="wcc-v44-card-header">
+                                    <span className="wcc-v44-tier">{item.tier}</span>
+                                </div>
+                                <div className="wcc-v44-price-flow">
+                                    <div className="wcc-v44-price-box">
+                                        <span className="wcc-v44-label">Base</span>
+                                        <span className="wcc-v44-val">{item.base}</span>
+                                    </div>
+                                    <div className="wcc-v44-price-arrow">→</div>
+                                    <div className="wcc-v44-price-box">
+                                        <span className="wcc-v44-label">Total Estimate</span>
+                                        <span className="wcc-v44-val wcc-v44-highlight">{item.range}</span>
+                                    </div>
+                                </div>
+                                <div className="wcc-v44-progress-track">
+                                    <div className="wcc-v44-progress-bar" style={{ width: `${item.progress}%` }} />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             {/* EXPERT COUNSEL & MARKET DYNAMICS */}
             <section className="wcc-section wcc-counsel">
                 <div className="wcc-container wcc-counsel-inner">

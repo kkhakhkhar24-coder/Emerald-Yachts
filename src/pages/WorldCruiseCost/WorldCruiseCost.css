@@ -2140,128 +2140,195 @@
 }
 
 /* ============================================================
-   10. FINANCIAL ROADMAP & SCENARIO LAB
+   11. BUDGETING (v42 - MODERN EDITORIAL)
    ============================================================ */
 
-.wcc-budgeting {
+.wcc-budgeting-v42 {
     background: var(--wcc-bg-soft);
     padding: 60px 20px;
 }
 
-.wcc-budgeting-inner {
+.wcc-v42-inner {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.wcc-budgeting-grid {
+.wcc-v42-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
+    align-items: center;
 }
 
-/* ── Checklist ── */
-.wcc-budget-h2 {
+.wcc-v42-h2 {
+    color: var(--wcc-navy);
     font-size: 48px;
-    /* Desktop H2 */
-    color: var(--wcc-navy);
-    margin-bottom: 40px;
-}
-
-.wcc-budget-checklist {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
-}
-
-.wcc-budget-item {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.wcc-budget-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--wcc-navy);
-    border-radius: 50%;
-    margin-top: 8px;
-    flex-shrink: 0;
-}
-
-.wcc-budget-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.wcc-budget-text strong {
-    font-size: 18px;
-    /* Desktop P */
-    color: var(--wcc-navy);
-    margin-bottom: 4px;
-}
-
-.wcc-budget-text span {
-    font-size: 16px;
-    color: #5a6a7a;
-    opacity: 0.8;
-}
-
-.wcc-budget-buffer {
-    background: #ffffff;
-    padding: 24px 32px;
-    border-radius: 20px;
-    display: inline-flex;
-    flex-direction: column;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
-}
-
-.wcc-buffer-label {
-    font-size: 11px;
     font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--wcc-navy);
-    opacity: 0.5;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
+    line-height: 1.1;
 }
 
-.wcc-buffer-value {
+.wcc-v42-buffer-strip {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.wcc-v42-buffer-label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wcc-navy);
+    opacity: 0.6;
+}
+
+.wcc-v42-buffer-value {
     font-size: 32px;
     font-weight: 800;
     color: var(--wcc-navy);
 }
 
-/* ── Scenario Lab ── */
-.wcc-scenario-h2 {
-    font-size: 48px;
-    /* Desktop H2 */
-    color: var(--wcc-navy);
-    margin-bottom: 40px;
+.wcc-v42-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.wcc-scenario-list {
+.wcc-v42-chip {
+    background: #ffffff;
+    padding: 16px 28px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.05);
+    border: 1px solid rgba(39, 68, 114, 0.03);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wcc-v42-chip:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.1);
+    border-color: var(--wcc-navy);
+}
+
+.wcc-v42-chip-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--wcc-navy);
+    border-radius: 50%;
+}
+
+.wcc-v42-chip-text {
+    font-size: 18px;
+    color: var(--wcc-navy);
+    font-weight: 600;
+}
+
+/* v42 — Tablet */
+@media (max-width: 1024px) {
+    .wcc-budgeting-v42 {
+        padding: 50px 15px;
+    }
+
+    .wcc-v42-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .wcc-v42-content {
+        text-align: center;
+    }
+
+    .wcc-v42-h2 {
+        font-size: 28px;
+    }
+
+    .wcc-v42-buffer-strip {
+        justify-content: center;
+        border-top: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .wcc-v42-list {
+        justify-content: center;
+    }
+}
+
+/* v42 — Mobile */
+@media (max-width: 768px) {
+    .wcc-v42-h2 {
+        font-size: 24px;
+    }
+
+    .wcc-v42-chip {
+        padding: 12px 20px;
+    }
+
+    .wcc-v42-chip-text {
+        font-size: 16px;
+    }
+
+    .wcc-v42-buffer-strip {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .wcc-v42-buffer-value {
+        font-size: 28px;
+    }
+}
+/* ============================================================
+   12. COST SCENARIOS (v44 - PROGRESS CARDS)
+   ============================================================ */
+
+.wcc-scenarios-v44 {
+    background: var(--wcc-bg-white);
+    padding: 60px 20px;
+}
+
+.wcc-v44-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wcc-v44-h2 {
+    color: var(--wcc-navy);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.wcc-v44-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.wcc-v44-card {
+    background: var(--wcc-bg-soft);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
+    transition: all 0.4s ease;
 }
 
-.wcc-scenario-card {
-    background: #ffffff;
-    padding: 32px;
-    border-radius: 24px;
-    border: 1px solid rgba(39, 68, 114, 0.05);
+.wcc-v44-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
 }
 
-.wcc-scenario-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 20px;
-}
-
-.wcc-scenario-tier {
-    font-size: 14px;
+.wcc-v44-tier {
+    font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -2269,73 +2336,90 @@
     opacity: 0.6;
 }
 
-.wcc-scenario-total {
-    font-size: 24px;
+.wcc-v44-price-flow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wcc-v44-price-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.wcc-v44-label {
+    font-size: 11px;
     font-weight: 800;
+    text-transform: uppercase;
+    color: var(--wcc-navy);
+    opacity: 0.5;
+    margin-bottom: 4px;
+}
+
+.wcc-v44-val {
+    font-size: 20px;
+    font-weight: 700;
     color: var(--wcc-navy);
 }
 
-.wcc-scenario-bar-bg {
+.wcc-v44-highlight {
+    font-size: 24px;
+    color: var(--wcc-navy);
+    font-weight: 900;
+}
+
+.wcc-v44-price-arrow {
+    font-size: 24px;
+    color: var(--wcc-navy);
+    opacity: 0.3;
+}
+
+.wcc-v44-progress-track {
     height: 8px;
-    background: var(--wcc-bg-soft);
+    background: rgba(39, 68, 114, 0.1);
     border-radius: 4px;
-    margin-bottom: 16px;
     overflow: hidden;
 }
 
-.wcc-scenario-bar-fill {
+.wcc-v44-progress-bar {
     height: 100%;
     background: var(--wcc-navy);
     border-radius: 4px;
 }
 
-.wcc-scenario-footer {
-    font-size: 14px;
-    color: #5a6a7a;
-    font-weight: 500;
-}
-
-/* Budgeting — Tablet */
+/* v44 — Tablet */
 @media (max-width: 1024px) {
-    .wcc-budgeting {
+    .wcc-scenarios-v44 {
         padding: 50px 15px;
     }
 
-    .wcc-budgeting-grid {
+    .wcc-v44-grid {
         grid-template-columns: 1fr;
-        gap: 60px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
-    .wcc-budget-h2,
-    .wcc-scenario-h2 {
+    .wcc-v44-h2 {
         font-size: 28px;
-        /* Tablet H2 */
-    }
-
-    .wcc-budget-text strong,
-    .wcc-scenario-total {
-        font-size: 17px;
-        /* Tablet P style */
     }
 }
 
-/* Budgeting — Mobile */
+/* v44 — Mobile */
 @media (max-width: 768px) {
-
-    .wcc-budget-h2,
-    .wcc-scenario-h2 {
+    .wcc-v44-h2 {
         font-size: 24px;
-        /* Mobile H2 */
     }
 
-    .wcc-budget-text strong,
-    .wcc-scenario-total {
-        font-size: 16px;
-        /* Mobile P style */
+    .wcc-v44-card {
+        padding: 30px;
     }
 
-    .wcc-buffer-value {
-        font-size: 24px;
+    .wcc-v44-val {
+        font-size: 18px;
+    }
+
+    .wcc-v44-highlight {
+        font-size: 22px;
     }
 }
 
