@@ -216,12 +216,7 @@ function RegentSevenSeas() {
                             Unlike most competitors, Regent removes nearly every friction point in travel — leaving clients free to experience the world without operational stress over a 4–5 month journey.
                         </p>
 
-                        <div className="regent-intro-photo-main">
-                            <img src="/luxury_cruise_lifestyle.png" alt="Regent Luxury Lifestyle" />
-                        </div>
-                        <div className="regent-intro-photo-inset">
-                            <img src="/azamara_interior.png" alt="Regent Suite Interior" />
-                        </div>
+                        
                     </div>
 
                     <div className="regent-intro-body">
