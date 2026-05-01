@@ -1,11 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './RegentSevenSeas.css'
 import image from "../../assets/image.webp";
-import cruiseView from '../../assets/AzamaraCabinsGuide/Cruise_balcony_view.webp'
-import luxuryRefined from '../../assets/HomePage/Refined_Luxury.jpeg'
-import singaporeSkyline from '../../assets/DistinctiveVoyageSailings/singapore-marina-bay-sands-skyline-luxury-travel.png'
-import cruiseSuite from '../../assets/SecondPage/Suite.webp'
-import casualDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
+// import cruiseView from '../../assets/AzamaraCabinsGuide/Cruise_balcony_view.webp'
+// import luxuryRefined from '../../assets/HomePage/Refined_Luxury.jpeg'
+// import singaporeSkyline from '../../assets/DistinctiveVoyageSailings/singapore-marina-bay-sands-skyline-luxury-travel.png'
+// import cruiseSuite from '../../assets/SecondPage/Suite.webp'
+// import casualDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
 
 import {
     Ship, MapPin, Star, Clock, DollarSign, Users, CheckCircle, XCircle,
@@ -166,9 +166,8 @@ function RegentSevenSeas() {
                     </span>
 
                     <h1 className="regent-h1">
-                        Regent Seven Seas<br />
-                        World Cruise Guide<br />
-                        <span className="regent-h1-years">2026–2029</span>
+                        Regent Seven Seas World Cruise
+                        <span className="regent-h1-years">Guide (2026–2029)</span>
                     </h1>
 
                     {/* <p className="regent-hero-lead">
@@ -216,6 +215,13 @@ function RegentSevenSeas() {
                         <p className="regent-p">
                             Unlike most competitors, Regent removes nearly every friction point in travel — leaving clients free to experience the world without operational stress over a 4–5 month journey.
                         </p>
+
+                        <div className="regent-intro-photo-main">
+                            <img src="/luxury_cruise_lifestyle.png" alt="Regent Luxury Lifestyle" />
+                        </div>
+                        <div className="regent-intro-photo-inset">
+                            <img src="/azamara_interior.png" alt="Regent Suite Interior" />
+                        </div>
                     </div>
 
                     <div className="regent-intro-body">
@@ -235,6 +241,10 @@ function RegentSevenSeas() {
 
                         <div className="regent-intro-highlight">
                             No constant decision-making, no surprise costs, and no operational stress over a 4–5 month journey.
+                        </div>
+
+                        <div className="regent-intro-photo-sub">
+                            <img src="/luxury_river_cruise_1.png" alt="Luxury Travel Experience" />
                         </div>
                     </div>
                 </div>

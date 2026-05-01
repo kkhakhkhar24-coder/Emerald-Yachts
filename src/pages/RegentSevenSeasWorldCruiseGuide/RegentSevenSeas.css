@@ -39,7 +39,7 @@
 }
 
 .regent-h1-years {
-    color: #93c5fd;
+    color: white;
     display: block;
     font-size: 52px;
 }
@@ -358,40 +358,171 @@
     top: 100px;
 }
 
-.regent-intro-highlight {
-    background: var(--rss-bg-soft);
-    border-left: 4px solid var(--rss-navy);
-    border-radius: 0 8px 8px 0;
-    padding: 20px 24px;
-    margin-top: 24px;
-    font-size: 17px;
-    font-style: italic;
-    color: #2d3748;
-    line-height: 1.7;
+/* New: Animated Signature Bar */
+.regent-intro-heading .regent-bar {
+    width: 60px;
+    height: 3px;
+    background: var(--rss-navy);
+    margin: 24px 0 32px;
+    position: relative;
+    overflow: hidden;
 }
 
+.regent-intro-heading .regent-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    animation: bar-shine 3s infinite;
+}
+
+@keyframes bar-shine {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* New: Moving Lens Shine for Photos */
+.regent-intro-photo-main {
+    margin-top: 40px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.15);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.regent-intro-photo-main::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.regent-intro-photo-main:hover::after {
+    opacity: 1;
+    animation: lens-flare 1.5s ease-out forwards;
+}
+
+@keyframes lens-flare {
+    from {
+        transform: translate(-20%, -20%) scale(0.5);
+    }
+
+    to {
+        transform: translate(10%, 10%) scale(1.2);
+    }
+}
+
+.regent-intro-photo-main:hover {
+    transform: translateY(-10px);
+}
+
+.regent-intro-photo-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 1.2s ease;
+}
+
+.regent-intro-photo-main:hover img {
+    transform: scale(1.05);
+}
+
+/* New: Magazine Overlap Effect */
+.regent-intro-photo-inset {
+    width: 65%;
+    margin-top: -100px;
+    margin-left: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 10px solid var(--rss-bg-white);
+    box-shadow: 0 25px 50px rgba(39, 68, 114, 0.2);
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.regent-intro-photo-inset:hover {
+    transform: scale(1.05) translateX(-15px);
+}
+
+.regent-intro-photo-inset img {
+    width: 100%;
+    height: 240px;
+    display: block;
+    object-fit: cover;
+}
+
+/* New: Architectural Inclusions */
 .regent-inclusion-row {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 16px 0;
     border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.regent-inclusion-row:last-of-type {
-    border-bottom: none;
+.regent-inclusion-row::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--rss-navy);
+    transition: width 0.4s ease;
+    z-index: 1;
+}
+
+.regent-inclusion-row:hover::before {
+    width: 100%;
+}
+
+.regent-inclusion-row:hover {
+    padding-left: 16px;
+    background: linear-gradient(90deg, var(--rss-bg-soft), transparent);
 }
 
 .regent-inclusion-icon {
     width: 44px;
     height: 44px;
-    background: var(--rss-bg-soft);
-    border-radius: 12px;
+    background: var(--rss-bg-white);
+    border: 1px solid var(--rss-bg-soft);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--rss-navy);
     flex-shrink: 0;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.regent-inclusion-row:hover .regent-inclusion-icon {
+    background: var(--rss-navy);
+    color: var(--rss-bg-white);
+    transform: rotate(360deg);
 }
 
 .regent-inclusion-label {
@@ -399,6 +530,50 @@
     color: #2d3748;
     font-weight: 500;
     line-height: 1.4;
+}
+
+/* Premium Highlight Callout */
+.regent-intro-highlight {
+    background: var(--rss-bg-white);
+    border: 1px solid var(--rss-bg-soft);
+    border-left: 4px solid var(--rss-navy);
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--rss-navy);
+    line-height: 1.7;
+    position: relative;
+    box-shadow: 10px 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.regent-intro-highlight::after {
+    content: 'REGENT EXCLUSIVE';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--rss-navy);
+    color: white;
+    font-size: 9px;
+    font-style: normal;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.regent-intro-photo-sub {
+    margin-top: 24px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.regent-intro-photo-sub img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
 }
 
 /* ============================================================
@@ -1379,6 +1554,7 @@
 }
 
 @media (max-width: 1024px) {
+
     .regent-intro-layout,
     .regent-pricing-layout,
     .regent-booking-layout,
@@ -1430,6 +1606,7 @@
 }
 
 @media (max-width: 768px) {
+
     .regent-section,
     .regent-expert-section,
     .regent-faq-section {
