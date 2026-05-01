@@ -1,33 +1,8 @@
 /* ============================================================
    AzamaraCabinsGuide.css — Prefix: acg-
    ============================================================ */
-
-:root {
-    /* Color Palette */
-    --navy: #274472;
-    --navy-light: #274472cc;
-
-    /* Background Variations */
-    --bg-white: #ffffff;
-    --bg-soft: rgb(231, 243, 245);
-    --bg-dark: #0f1c2e;
-    --bg-dark2: #1c2f4a;
-
-    /* Shared Tokens */
-    --text-body: #2d3a4a;
-    --text-muted: #5a6a7a;
-    --radius: 12px;
-    --radius-lg: 20px;
-    --shadow: 0 4px 24px rgba(39, 68, 114, 0.08);
-    --shadow-lg: 0 12px 40px rgba(39, 68, 114, 0.15);
-    --transition: 0.3s cubic-bezier(.4, 0, .2, 1);
-}
-
-/* ============================================================
-   BASE LAYOUT & GLOBAL TYPOGRAPHY
-   ============================================================ */
 .acg-root {
-    color: var(--text-body);
+    color: #2d3a4a;
     background: var(--bg-white);
     margin: 0;
     padding: 0;
@@ -47,7 +22,7 @@
 .acg-h1,
 .acg-h2,
 .acg-h3 {
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -645,7 +620,7 @@
 .acg-v-pillar-v2 {
     background: var(--bg-white);
     padding: 30px 25px;
-    border-radius: var(--radius);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -776,7 +751,7 @@
 
 .acg-cost-node .acg-h3 {
     font-family: var(--font-display) !important;
-    font-size: 20px;
+    font-size: 20px !important;
     color: var(--navy);
 }
 
@@ -1042,7 +1017,7 @@
 
 
 .acg-v3-sidebar-img-wrap {
-    border-radius: var(--radius);
+    border-radius:12px;
     overflow: hidden;
     box-shadow: var(--shadow);
 }
@@ -1219,7 +1194,7 @@
 
     .acg-v3-takeaway {
         padding: 25px;
-        border-radius: var(--radius);
+        border-radius: 12px;
     }
 
     .acg-v3-takeaway-head {
@@ -1665,7 +1640,7 @@
 .acg-v2-honest-item {
     background: var(--bg-soft);
     padding: 30px;
-    border-radius: var(--radius);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -2065,6 +2040,11 @@
     gap: 12px;
 }
 
+.acg-v3-profile-details h3 {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
 .acg-v3-expert-title {
     font-size: 15px;
     color: var(--text-muted);
@@ -2415,7 +2395,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--navy);
     padding: 12px 0;
     line-height: 1.4;

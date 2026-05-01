@@ -14,13 +14,22 @@ import {
   Bus,
   Calendar,
   Check,
-  XCircle 
+  XCircle,
 } from "lucide-react";
 import "./WorldCruiseCost.css";
 
-import heroImage1 from "../../assets/AzamaraCabinsAlaskaGuide/Hero1.webp";
-import heroImage2 from "../../assets/AzamaraCabinsAlaskaGuide/Hero2.webp";
-import heroImage3 from "../../assets/AzamaraCabinsAlaskaGuide/Hero3.webp";
+import heroImage1 from "../../assets/WorldCruiseCost/Hero1.webp";
+import heroImage2 from "../../assets/WorldCruiseCost/Hero2.webp";
+import heroImage3 from "../../assets/WorldCruiseCost/Hero3.webp";
+import priceImg1 from "../../assets/WorldCruiseCost/Mainstream_Entry.webp";
+import priceImg2 from "../../assets/WorldCruiseCost/Premium_Market.webp";
+import priceImg3 from "../../assets/WorldCruiseCost/Luxury_world_cruise.jpg";
+import priceImg4 from "../../assets/WorldCruiseCost/Ritzcart.jpg";
+import dailyImg1 from "../../assets/WorldCruiseCost/Luxury_suite.webp";
+import dailyImg2 from "../../assets/WorldCruiseCost/Dining.webp";
+import dailyImg3 from "../../assets/WorldCruiseCost/Travel_Experience.jpg";
+import dailyImg4 from "../../assets/WorldCruiseCost/Enriching_shore.webp";
+import dailyImg5 from "../../assets/WorldCruiseCost/Fine_Dining_Experience.webp";
 import myimage from "../../assets/image.webp";
 import profileImg from "../../assets/image.webp";
 
@@ -29,18 +38,18 @@ const LTJapanFAQ = ({ items }) => {
   const [open, setOpen] = useState(null);
 
   return (
-    <div className="LTJapan_faq_list">
+    <div className="wcc_faq_list">
       {items.map((item, i) => (
         <div
           key={i}
-          className="LTJapan_faq_item"
+          className="wcc_faq_item"
           onClick={() => setOpen(open === i ? null : i)}
         >
-          <div className="LTJapan_faq_question">
+          <div className="wcc_faq_question">
             <span>{item.q}</span>
-            <span className="LTJapan_faq_icon">{open === i ? "−" : "+"}</span>
+            <span className="wcc_faq_icon">{open === i ? "−" : "+"}</span>
           </div>
-          {open === i && <p className="LTJapan_faq_answer">{item.a}</p>}
+          {open === i && <p className="wcc_faq_answer">{item.a}</p>}
         </div>
       ))}
     </div>
@@ -219,7 +228,7 @@ export default function WorldCruiseCost() {
       </section>
 
       {/* WHAT A WORLD CRUISE REALLY COSTS */}
-      <section className="wcc-section wcc-intro">
+      <section className="wcc-section wcc-why">
         <div className="wcc-container wcc-intro-inner">
           {/* Left: heading + pull quote */}
           <div className="wcc-intro-left">
@@ -257,7 +266,7 @@ export default function WorldCruiseCost() {
       </section>
 
       {/* WHY THIS GUIDE IS DIFFERENT */}
-      <section className="wcc-section wcc-why">
+      <section className="wcc-section">
         <div className="wcc-container wcc-why-inner">
           {/* Top header */}
           <div className="wcc-why-header">
@@ -307,63 +316,57 @@ export default function WorldCruiseCost() {
       </section>
 
       {/* TYPICAL WORLD CRUISE PRICE RANGES */}
-      <section className="wcc-section wcc-pricing">
-        <div className="wcc-container wcc-pricing-inner">
-          <div className="wcc-pricing-header">
-            <h2 className="wcc-h2 wcc-pricing-h2">
+      <section className="wcc-section wcc-pricing-v3">
+        <div className="wcc-container">
+          <div className="wcc-pricing-header-v3">
+            <h2 className="wcc-h2 wcc-pricing-v3-h2">
               Typical World Cruise Price Ranges
             </h2>
-            <div className="wcc-pricing-rule" />
+            <div className="wcc-why-rule" />
           </div>
 
-          <div className="wcc-pricing-rows">
+          <div className="wcc-pricing-grid-v3">
             {[
               {
                 tier: "Mainstream Entry",
-                price: "$18,000 – $40,000",
+                price: "$18,000 to $40,000",
                 suffix: "per person",
-                bar: 20,
+                img: priceImg1,
               },
               {
                 tier: "Premium",
-                price: "$25,000 – $65,000",
+                price: "$25,000 to $65,000",
                 suffix: "per person",
-                bar: 42,
+                img: priceImg2,
               },
               {
                 tier: "Luxury",
-                price: "$60,000 – $150,000",
+                price: "$60,000 to $150,000",
                 suffix: "per person",
-                bar: 68,
+                img: priceImg3,
               },
               {
                 tier: "Ultra Luxury Suites",
-                price: "$150,000 – $500,000+",
-                suffix: "",
-                bar: 100,
+                price: "$150,000 to $500,000+",
+                suffix: "per person",
+                img: priceImg4,
               },
             ].map((item, i) => (
-              <div
-                className={`wcc-pricing-row ${i === 3 ? "wcc-pricing-row--ultra" : ""}`}
-                key={i}
-              >
-                <span className="wcc-pricing-row-num">0{i + 1}</span>
-                <div className="wcc-pricing-row-left">
-                  <span className="wcc-pricing-row-tier">{item.tier}</span>
-                  <div className="wcc-pricing-row-bar-track">
-                    <div
-                      className="wcc-pricing-row-bar-fill"
-                      style={{ width: `${item.bar}%` }}
-                    />
-                  </div>
+              <div className="wcc-pricing-card-v3" key={i}>
+                <div className="wcc-pricing-card-image">
+                  <img src={item.img} alt={item.tier} />
+                  <div className="wcc-pricing-card-overlay" />
+                  <div className="wcc-pricing-tier-badge">{item.tier}</div>
                 </div>
-                <div className="wcc-pricing-row-right">
-                  <span className="wcc-pricing-row-price">{item.price}</span>
-                  {item.suffix && (
-                    <span className="wcc-pricing-row-suffix">
-                      {item.suffix}
-                    </span>
-                  )}
+                <div className="wcc-pricing-card-content">
+                  <div className="wcc-pricing-value-box">
+                    <span className="wcc-pricing-price">{item.price}</span>
+                    <span className="wcc-pricing-suffix">{item.suffix}</span>
+                  </div>
+                  <div className="wcc-pricing-card-footer">
+                    <CheckCircle2 size={16} />
+                    <span>Estimated Range</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -461,57 +464,57 @@ export default function WorldCruiseCost() {
       </section>
 
       {/* WHAT YOU ARE ACTUALLY PAYING FOR EACH DAY */}
-      <section className="wcc-section wcc-breakdown-v22">
-        <div className="wcc-container wcc-v22-inner">
-          <div className="wcc-v22-header">
-            <h2 className="wcc-h2 wcc-v22-h2">
+      <section className="wcc-section wcc-daily-cost-v3">
+        <div className="wcc-container">
+          <div className="wcc-daily-header-v3">
+            <h2 className="wcc-h2 wcc-daily-h2-v3">
               What You Are Actually <br />
               <span>Paying For Each Day</span>
             </h2>
-            <p className="wcc-v22-p">
+            <div className="wcc-why-rule" />
+            <p className="wcc-daily-p-v3">
               A transparent look at the value included in your daily world
               cruise investment.
             </p>
           </div>
 
-          <div className="wcc-v22-grid">
+          <div className="wcc-daily-grid-v3">
             {[
               {
                 cat: "Accommodation",
                 val: "Luxury suite or stateroom",
-                icon: <Ship size={40} />,
+                img: dailyImg1,
               },
               {
                 cat: "Dining",
-                val: "Multiple restaurants",
-                icon: <CalendarCheck size={40} />,
+                val: "Multiple fine dining restaurants",
+                img: dailyImg2,
               },
               {
                 cat: "Transportation",
-                val: "Global travel",
-                icon: <Globe size={40} />,
+                val: "Seamless global travel between ports",
+                img: dailyImg3,
               },
               {
                 cat: "Experiences",
-                val: "Shore excursions",
-                icon: <Ship size={40} />,
+                val: "Enriching shore excursions & events",
+                img: dailyImg4,
               },
               {
                 cat: "Service",
-                val: "Full onboard staff",
-                icon: <CalendarCheck size={40} />,
+                val: "Full onboard staff & personalized care",
+                img: dailyImg5,
               },
             ].map((item, i) => (
-              <div key={i} className="wcc-v22-card">
-                <div className="wcc-v22-accent" />
-                <div className="wcc-v22-content">
-                  <div className="wcc-v22-icon">{item.icon}</div>
-                  <div className="wcc-v22-text">
-                    <span className="wcc-v22-cat">{item.cat}</span>
-                    <h3 className="wcc-v22-val">{item.val}</h3>
-                  </div>
+              <div className="wcc-daily-card-v3" key={i}>
+                <div className="wcc-daily-card-image">
+                  <img src={item.img} alt={item.cat} />
+                  <div className="wcc-daily-card-overlay" />
                 </div>
-                <div className="wcc-v22-number">0{i + 1}</div>
+                <div className="wcc-daily-card-content">
+                  <span className="wcc-daily-cat-v3">{item.cat}</span>
+                  <h3 className="wcc-daily-val-v3">{item.val}</h3>
+                </div>
               </div>
             ))}
           </div>
@@ -525,8 +528,10 @@ export default function WorldCruiseCost() {
             <h2 className="wcc-h2 wcc-comp-h2-v3">
               Real Cost Comparison by Cruise Line
             </h2>
+            <div className="wcc-why-rule" />
             <p className="wcc-comp-lead-v3">
-              Understanding the spectrum of investment across leading luxury operators.
+              Understanding the spectrum of investment across leading luxury
+              operators.
             </p>
           </div>
 
@@ -588,12 +593,14 @@ export default function WorldCruiseCost() {
                 The Biggest Pricing <br />
                 Mistake Travelers Make
               </h2>
+                <div className="wcc-intro-rule" />
               <div className="wcc-mistake-point-v3">
                 <span className="wcc-mistake-accent-line" />
                 <p>Comparing base fares instead of total cost.</p>
               </div>
               <p className="wcc-mistake-sub-v3">
-                This is the single most expensive error in luxury travel planning.
+                This is the single most expensive error in luxury travel
+                planning.
               </p>
             </div>
 
@@ -633,6 +640,7 @@ export default function WorldCruiseCost() {
             <h2 className="wcc-h2 wcc-v32-h2">
               What Is Included vs What Is Not
             </h2>
+            <div className="wcc-why-rule" />
           </div>
 
           <div className="wcc-v32-split">
@@ -669,6 +677,7 @@ export default function WorldCruiseCost() {
               <h2 className="wcc-h2 wcc-v42-h2">
                 What You Still Need to Budget
               </h2>
+                <div className="wcc-intro-rule" />
               <div className="wcc-v42-buffer-strip">
                 <span className="wcc-v42-buffer-label">Typical buffer</span>
                 <span className="wcc-v42-buffer-value">10% to 25%</span>
@@ -700,6 +709,7 @@ export default function WorldCruiseCost() {
           <div className="wcc-v46-header">
             <span className="wcc-v46-badge">Investment Tiers</span>
             <h2 className="wcc-h2 wcc-v46-h2">Sample Cost Scenarios</h2>
+            <div className="wcc-why-rule" />
             <p className="wcc-v46-subtitle">
               Comparing entry-level premium vs. fully inclusive ultra-luxury
               suites
@@ -782,6 +792,7 @@ export default function WorldCruiseCost() {
                 <h2 className="wcc-expert-title-v3">
                   What I Tell My Clients About World Cruise Pricing
                 </h2>
+                  <div className="wcc-intro-rule" />
               </div>
 
               <div className="wcc-quote-frame-v3">
@@ -866,11 +877,11 @@ export default function WorldCruiseCost() {
             <span className="wcc-strat-badge-v3">The Strategic Choice</span>
             <h2 className="wcc-h2 wcc-strat-h2-v3">
               Booking Direct vs. Working With Us
-
             </h2>
+            <div className="wcc-why-rule" />
             <p className="wcc-strat-lead-v3">
-              There is a profound difference between securing a cabin and architecting a
-              global legacy voyage.
+              There is a profound difference between securing a cabin and
+              architecting a global legacy voyage.
             </p>
           </div>
 
@@ -901,7 +912,9 @@ export default function WorldCruiseCost() {
                   Independent logistics management
                 </li>
               </ul>
-              <div className="wcc-vs-status-v3 direct-status">Transactional Path</div>
+              <div className="wcc-vs-status-v3 direct-status">
+                Transactional Path
+              </div>
             </div>
 
             {/* The Bridge/VS */}
@@ -919,7 +932,9 @@ export default function WorldCruiseCost() {
                 <div className="wcc-vs-card-icon managed-icon">
                   <CheckCircle2 size={24} />
                 </div>
-                <h3 className="wcc-vs-card-title">Trips & Ships Luxury Travel</h3>
+                <h3 className="wcc-vs-card-title">
+                  Trips & Ships Luxury Travel
+                </h3>
               </div>
               <ul className="wcc-vs-feature-list">
                 <li>
@@ -939,7 +954,9 @@ export default function WorldCruiseCost() {
                   White-glove logistical orchestration
                 </li>
               </ul>
-              <div className="wcc-vs-status-v3 managed-status">Strategic Advantage</div>
+              <div className="wcc-vs-status-v3 managed-status">
+                Strategic Advantage
+              </div>
             </div>
           </div>
         </div>
@@ -950,6 +967,7 @@ export default function WorldCruiseCost() {
         <div className="wcc-container wcc-roi-inner-v3">
           <div className="wcc-roi-content-v3">
             <h2 className="wcc-h2 wcc-roi-h2-v3">The ROI of a World Cruise</h2>
+            <div className="wcc-why-rule" />
             <p className="wcc-roi-p-v3">
               Replicating this independently requires significant logistical
               investment. Our architecture maximizes your return on life.
@@ -986,15 +1004,16 @@ export default function WorldCruiseCost() {
           <div className="wcc-legacy-grid-v2">
             {/* Image Column */}
             <div className="wcc-legacy-media">
+              <div className="wcc-legacy-frame-deco" />
               <div className="wcc-legacy-photo-wrap">
                 <img
                   src={myimage}
                   alt="Angela Hughes"
                   className="wcc-legacy-img"
                 />
-                <div className="wcc-legacy-badge">Expert Perspective</div>
               </div>
               <div className="wcc-legacy-caption-v2">
+                <div className="wcc-caption-accent" />
                 <p>
                   Angela Hughes onboard during a Crystal Cruise world cruise
                   segment
@@ -1004,8 +1023,11 @@ export default function WorldCruiseCost() {
 
             {/* Content Column */}
             <div className="wcc-legacy-info">
-              <span className="wcc-legacy-pre">Legacy of Excellence</span>
-              <h2 className="wcc-legacy-name">About Angela Hughes</h2>
+              <div className="wcc-legacy-header">
+                <span className="wcc-legacy-pre">Legacy of Excellence</span>
+                <h2 className="wcc-legacy-name">About Angela Hughes</h2>
+                <div className="wcc-legacy-h2-underline" />
+              </div>
 
               <p className="wcc-legacy-bio">
                 Angela Hughes is the CEO of Trips & Ships Luxury Travel and
@@ -1026,7 +1048,7 @@ export default function WorldCruiseCost() {
                   ].map((milestone, i) => (
                     <div key={i} className="wcc-milestone-row">
                       <div className="wcc-milestone-check">
-                        <Check size={14} />
+                        <Check size={14} strokeWidth={3} />
                       </div>
                       <span className="wcc-milestone-text">{milestone}</span>
                     </div>
@@ -1035,13 +1057,17 @@ export default function WorldCruiseCost() {
               </div>
 
               <div className="wcc-legacy-footer">
-                <div className="wcc-legacy-experience">
-                  <span className="wcc-exp-num">40+</span>
-                  <span className="wcc-exp-label">Years Experience</span>
-                </div>
-                <div className="wcc-legacy-experience">
-                  <span className="wcc-exp-num">140+</span>
-                  <span className="wcc-exp-label">Global Advisors</span>
+                <div className="wcc-legacy-stats-grid">
+                  <div className="wcc-stat-card">
+                    <span className="wcc-stat-num">40+</span>
+                    <span className="wcc-stat-label">Years Experience</span>
+                    <div className="wcc-stat-glow" />
+                  </div>
+                  <div className="wcc-stat-card">
+                    <span className="wcc-stat-num">140+</span>
+                    <span className="wcc-stat-label">Global Advisors</span>
+                    <div className="wcc-stat-glow" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1054,58 +1080,75 @@ export default function WorldCruiseCost() {
         <div className="wcc-container">
           <div className="wcc-agency-dashboard">
             <div className="wcc-agency-intro-box">
+              <div className="wcc-agency-badge">The Agency</div>
               <h2 className="wcc-h2 wcc-agency-v3-h2">
-                About Trips & Ships Luxury Travel
+                About Trips & Ships <br />
+                <span>Luxury Travel</span>
               </h2>
+                <div className="wcc-intro-rule" />
               <p className="wcc-agency-v3-p">
                 Trips & Ships Luxury Travel is a premier luxury agency with over
-                140 advisors worldwide.
+                140 advisors worldwide, dedicated to architecting unparalleled
+                global journeys.
               </p>
             </div>
 
             <div className="wcc-agency-perks-v3">
               <div className="wcc-perk-v3-card">
-                <div className="wcc-perk-v3-icon">
-                  <Ship size={24} />
+                <div className="wcc-perk-v3-card-bg" />
+                <div className="wcc-perk-v3-content">
+                  <div className="wcc-perk-v3-icon">
+                    <Ship size={24} />
+                  </div>
+                  <h3>The agency specializes in:</h3>
+                  <ul className="wcc-perk-v3-list">
+                    <li>Luxury cruise planning</li>
+                    <li>Global itineraries</li>
+                    <li>Multi-generational travel</li>
+                  </ul>
                 </div>
-                <h3>The agency specializes in:</h3>
-                <ul className="wcc-perk-v3-list">
-                  <li>Luxury cruise planning</li>
-                  <li>Global itineraries</li>
-                  <li>Multi-generational travel</li>
-                </ul>
               </div>
 
               <div className="wcc-perk-v3-card">
-                <div className="wcc-perk-v3-icon">
-                  <Globe size={24} />
+                <div className="wcc-perk-v3-card-bg" />
+                <div className="wcc-perk-v3-content">
+                  <div className="wcc-perk-v3-icon">
+                    <Globe size={24} />
+                  </div>
+                  <h3>Exclusive Network Access:</h3>
+                  <p className="wcc-perk-v3-subtext">
+                    As part of Travel Leaders Network, we provide:
+                  </p>
+                  <ul className="wcc-perk-v3-list">
+                    <li>Preferred inventory</li>
+                    <li>Exclusive amenities</li>
+                    <li>Global supplier relationships</li>
+                  </ul>
                 </div>
-                <h3>Exclusive Network Access:</h3>
-                <p className="wcc-perk-v3-subtext">
-                  As part of Travel Leaders Network, we provide:
-                </p>
-                <ul className="wcc-perk-v3-list">
-                  <li>Preferred inventory</li>
-                  <li>Exclusive amenities</li>
-                  <li>Global supplier relationships</li>
-                </ul>
               </div>
             </div>
           </div>
 
           <div className="wcc-consult-cta-v3">
+            <div className="wcc-consult-mesh" />
             <div className="wcc-consult-v3-content">
+              <span className="wcc-consult-label">Private Consultation</span>
               <h2 className="wcc-h2 wcc-consult-v3-h2">
                 Work With Angela Hughes
               </h2>
               <p className="wcc-consult-v3-p">
                 We help clients understand real cost, compare options, and make
-                the right decision.
+                the right decision for their legacy voyage.
               </p>
             </div>
-            <button className="wcc-button wcc-consult-v3-btn">
-              Schedule a Consultation
-            </button>
+            <div className="wcc-consult-v3-action">
+              <button className="wcc-button wcc-consult-v3-btn">
+                Schedule a Consultation
+              </button>
+              <span className="wcc-btn-note">
+                Complimentary initial discovery call
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -1115,6 +1158,7 @@ export default function WorldCruiseCost() {
         <div className="wcc-container wcc-faq-inner">
           <div className="wcc-faq-header">
             <h2 className="wcc-h2 wcc-faq-h2">World Cruise Cost FAQs</h2>
+            <div className="wcc-why-rule" />
           </div>
           <LTJapanFAQ items={faqItems} />
         </div>
