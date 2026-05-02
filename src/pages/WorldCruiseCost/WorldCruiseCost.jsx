@@ -15,19 +15,24 @@ import {
   Calendar,
   Check,
   XCircle,
+  Bed,
+  Utensils,
+  Compass,
+  Camera,
+  Users,
 } from "lucide-react";
 import "./WorldCruiseCost.css";
 
 import heroImage1 from "../../assets/WorldCruiseCost/Hero1.webp";
-import heroImage2 from "../../assets/WorldCruiseCost/Hero2.jpg";
+import heroImage2 from "../../assets/WorldCruiseCost/Hero2.webp";
 import heroImage3 from "../../assets/WorldCruiseCost/Hero3.webp";
 import priceImg1 from "../../assets/WorldCruiseCost/Mainstream_Entry.webp";
 import priceImg2 from "../../assets/WorldCruiseCost/Premium_Market.webp";
-import priceImg3 from "../../assets/WorldCruiseCost/Luxury_world_cruise.jpg";
-import priceImg4 from "../../assets/WorldCruiseCost/Ritzcart.jpg";
+import priceImg3 from "../../assets/WorldCruiseCost/Luxury_world_cruise.webp";
+import priceImg4 from "../../assets/WorldCruiseCost/Ritzcart.webp";
 import dailyImg1 from "../../assets/WorldCruiseCost/Luxury_suite.webp";
 import dailyImg2 from "../../assets/WorldCruiseCost/Dining.webp";
-import dailyImg3 from "../../assets/WorldCruiseCost/Travel_Experience.jpg";
+import dailyImg3 from "../../assets/WorldCruiseCost/Travel_Experience.webp";
 import dailyImg4 from "../../assets/WorldCruiseCost/Enriching_shore.webp";
 import dailyImg5 from "../../assets/WorldCruiseCost/Fine_Dining_Experience.webp";
 import myimage from "../../assets/image.webp";
@@ -136,7 +141,6 @@ export default function WorldCruiseCost() {
     <div className="wcc-root">
       <Helmet>
         <title>
-     
           How Much Does a World Cruise Cost? The 2027–2029 Pricing Guide
         </title>
         <meta
@@ -147,6 +151,167 @@ export default function WorldCruiseCost() {
           name="description"
           content="Get realistic world cruise pricing for 2027–2029. Expert guidance from Angela Hughes on luxury cruise costs, budgeting, and finding the right voyage."
         />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "headline": "How Much Does a World Cruise Cost?",
+                "author": {
+                  "@type": "Person",
+                  "name": "Angela Hughes",
+                  "jobTitle": "CEO",
+                  "worksFor": {
+                    "@type": "Organization",
+                    "name": "Trips & Ships Luxury Travel"
+                  }
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Trips & Ships Luxury Travel"
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Trips & Ships Luxury Travel"
+              },
+              {
+                "@type": "Person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does a world cruise cost on average?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most world cruises fall somewhere between about $25,000 and $150,000 per person, with top suite experiences going much higher depending on cruise line, inclusions, and itinerary length."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the cheapest way to do a world cruise?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The cheapest advertised fare is not always the cheapest overall option. Lower entry fares often come with more separate costs for air, excursions, dining, and gratuities."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is included in a luxury world cruise fare?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Luxury world cruise fares may include air, transfers, excursions, specialty dining, drinks, Wi-Fi, gratuities, laundry, visa support, and shipboard credit depending on the line."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are excursions included on world cruises?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sometimes. On fully inclusive products, many are. On lower entry products, they may be mostly extra."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to budget for airfare separately?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sometimes yes. Some cruise lines package or promote air, while others treat it separately."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much extra spending money should I plan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A practical planning range is often 10% to 25% beyond fare depending on line and personal travel style."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why are some world cruises so much more expensive?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Because they may include far more of the total travel experience, along with better accommodations, stronger service, and a more seamless long-term lifestyle onboard."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a luxury world cruise really worth the money?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For the right traveler, yes. It can be one of the most efficient and comfortable ways to see the world over an extended period."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do world cruise prices go up over time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "They can. Inventory, category sellouts, launch timing, and promotions all affect pricing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When should I book a world cruise for the best pricing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "As early as possible. The best combinations of inventory and launch perks often happen well before final payment season."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What deposit is required for a world cruise?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It varies by cruise line. Some cruise lines require a percentage-based nonrefundable deposit for world cruise bookings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is travel insurance extra?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, and it should be part of the full budget conversation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are gratuities included?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sometimes. This varies significantly by operator."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do solo travelers pay more?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Often yes, because many fares are built on double occupancy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What world cruise line gives the best value?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "That depends on whether you value the lowest entry point, the strongest inclusions, or the most seamless long-term experience."
+                }
+              }
+            ]
+          }
+          `}
+        </script>
       </Helmet>
       <Navbar />
 
@@ -229,7 +394,7 @@ export default function WorldCruiseCost() {
       </section>
 
       {/* WHAT A WORLD CRUISE REALLY COSTS */}
-      <section className="wcc-section wcc-why">
+      <section className="wcc-section">
         <div className="wcc-container wcc-intro-inner">
           {/* Left: heading + pull quote */}
           <div className="wcc-intro-left">
@@ -266,51 +431,60 @@ export default function WorldCruiseCost() {
         </div>
       </section>
 
-      {/* WHY THIS GUIDE IS DIFFERENT */}
-      <section className="wcc-section">
-        <div className="wcc-container wcc-why-inner">
-          {/* Top header */}
-          <div className="wcc-why-header">
-            <div className="wcc-why-label">About This Guide</div>
-            <h2 className="wcc-h2 wcc-why-h2">
-              Why This World Cruise Cost Guide Is Different
-            </h2>
-            <div className="wcc-why-rule" />
-            <p className="wcc-p wcc-why-lead">
-              This is not a generic pricing article.
-            </p>
-          </div>
-
-          {/* Body grid: bio left, credentials right */}
-          <div className="wcc-why-body">
-            <div className="wcc-why-bio">
-              <p className="wcc-p wcc-why-bio-text">
-                I have spent over 40 years in the travel industry and have
-                personally traveled on multiple world cruise segments across
-                different cruise lines.
-              </p>
-              <p className="wcc-p wcc-why-bio-text">
-                I have worked directly with cruise line executives, reviewed
-                pricing structures across operators, and guided clients through
-                six-figure travel decisions.
-              </p>
-              <p className="wcc-p wcc-why-basis-label">
-                This guide is based on:
-              </p>
+      <section className="wcc-section wcc-why-v4">
+        <div className="wcc-container">
+          <div className="wcc-why-grid-v4">
+            {/* Left: Expert Card */}
+            <div className="wcc-why-profile-card">
+              <div className="wcc-profile-info">
+                <div className="wcc-why-label">About This Guide</div>
+                <h2 className="wcc-h2 wcc-why-h2">
+                  Why This World Cruise Cost Guide Is Different
+                </h2>
+                <div className="wcc-why-rule" />
+                
+                <div className="wcc-why-bio-v4">
+                  <p className="wcc-why-bio-text">
+                    I have spent over 40 years in the travel industry and have
+                    personally traveled on multiple world cruise segments across
+                    different cruise lines.
+                  </p>
+                  <p className="wcc-why-bio-text">
+                    I have worked directly with cruise line executives, reviewed
+                    pricing structures across operators, and guided clients through
+                    six-figure travel decisions.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="wcc-why-creds">
-              {[
-                { text: "Real client bookings" },
-                { text: "Firsthand cruise experience" },
-                { text: "Direct relationships with cruise lines" },
-                { text: "Current market pricing behavior" },
-              ].map((item, i) => (
-                <div className="wcc-why-cred-item" key={i}>
-                  <span className="wcc-why-cred-num">0{i + 1}</span>
-                  <span className="wcc-why-cred-text">{item.text}</span>
-                </div>
-              ))}
+            {/* Right: Credentials List */}
+            <div className="wcc-why-credentials-v4">
+              <div className="wcc-why-creds-header">
+                <p className="wcc-why-basis-label">This guide is based on:</p>
+                <p className="wcc-why-lead">
+                  This is not a generic pricing article.
+                </p>
+              </div>
+
+              <div className="wcc-why-creds-grid">
+                {[
+                  { text: "Real client bookings", icon: <Users size={24} /> },
+                  { text: "Firsthand cruise experience", icon: <Ship size={24} /> },
+                  { text: "Direct relationships with cruise lines", icon: <Globe size={24} /> },
+                  { text: "Current market pricing behavior", icon: <TrendingUp size={24} /> },
+                ].map((item, i) => (
+                  <div className="wcc-why-cred-card" key={i}>
+                    <div className="wcc-why-cred-icon-box">
+                      {item.icon}
+                    </div>
+                    <div className="wcc-why-cred-content">
+                      <span className="wcc-why-cred-num-v4">0{i + 1}</span>
+                      <span className="wcc-why-cred-text">{item.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -485,36 +659,51 @@ export default function WorldCruiseCost() {
                 cat: "Accommodation",
                 val: "Luxury suite or stateroom",
                 img: dailyImg1,
+                icon: <Bed size={20} />,
               },
               {
                 cat: "Dining",
                 val: "Multiple fine dining restaurants",
                 img: dailyImg2,
+                icon: <Utensils size={20} />,
               },
               {
                 cat: "Transportation",
                 val: "Seamless global travel between ports",
                 img: dailyImg3,
+                icon: <Compass size={20} />,
               },
               {
                 cat: "Experiences",
                 val: "Enriching shore excursions & events",
                 img: dailyImg4,
+                icon: <Camera size={20} />,
               },
               {
                 cat: "Service",
                 val: "Full onboard staff & personalized care",
                 img: dailyImg5,
+                icon: <Users size={20} />,
               },
             ].map((item, i) => (
               <div className="wcc-daily-card-v3" key={i}>
                 <div className="wcc-daily-card-image">
                   <img src={item.img} alt={item.cat} />
                   <div className="wcc-daily-card-overlay" />
+                  <div className="wcc-daily-icon-box">
+                    {item.icon}
+                  </div>
+                  <span className="wcc-daily-number">0{i + 1}</span>
                 </div>
                 <div className="wcc-daily-card-content">
-                  <span className="wcc-daily-cat-v3">{item.cat}</span>
-                  <h3 className="wcc-daily-val-v3">{item.val}</h3>
+                  <div className="wcc-daily-text-group">
+                    <span className="wcc-daily-cat-v3">{item.cat}</span>
+                    <h3 className="wcc-daily-val-v3">{item.val}</h3>
+                  </div>
+                  <div className="wcc-daily-card-footer">
+                    <div className="wcc-daily-footer-line" />
+                    <CheckCircle2 size={14} className="wcc-daily-footer-check" />
+                  </div>
                 </div>
               </div>
             ))}
@@ -536,49 +725,55 @@ export default function WorldCruiseCost() {
             </p>
           </div>
 
-          <div className="wcc-comp-grid-v3">
-            {[
-              {
-                line: "Regent Seven Seas Cruises",
-                price: "$70,000 to $150,000+",
-                desc: "Fully inclusive. Higher upfront, fewer surprises.",
-              },
-              {
-                line: "Silversea Cruises",
-                price: "$65,000 to $140,000+",
-                desc: "Luxury with more exploratory itineraries.",
-              },
-              {
-                line: "Viking Ocean Cruises",
-                price: "$50,000 to $90,000+",
-                desc: "Strong value positioning with packaged inclusions.",
-              },
-              {
-                line: "Cunard Line",
-                price: "$25,000 to $75,000+",
-                desc: "Classic, traditional world voyage experience.",
-              },
-              {
-                line: "Azamara Cruises",
-                price: "$35,000 to $80,000+",
-                desc: "Destination-focused itineraries with strong inclusion positioning.",
-              },
-            ].map((item, i) => (
-              <div key={i} className="wcc-comp-card-v3">
-                <div className="wcc-comp-card-body">
-                  <h3 className="wcc-comp-line-name">{item.line}</h3>
-                  <div className="wcc-comp-price-tag">
-                    <span className="wcc-comp-from">Typical Investment</span>
-                    <strong className="wcc-comp-value">{item.price}</strong>
-                  </div>
-                  <p className="wcc-comp-desc">{item.desc}</p>
+          <div className="wcc-comp-marquee-container">
+            <div className="wcc-comp-marquee-track">
+              {[...Array(2)].map((_, idx) => (
+                <div key={idx} className="wcc-comp-marquee-group">
+                  {[
+                    {
+                      line: "Regent Seven Seas Cruises",
+                      price: "$70,000 to $150,000+",
+                      desc: "Fully inclusive. Higher upfront, fewer surprises.",
+                    },
+                    {
+                      line: "Silversea Cruises",
+                      price: "$65,000 to $140,000+",
+                      desc: "Luxury with more exploratory itineraries.",
+                    },
+                    {
+                      line: "Viking Ocean Cruises",
+                      price: "$50,000 to $90,000+",
+                      desc: "Strong value positioning with packaged inclusions.",
+                    },
+                    {
+                      line: "Cunard Line",
+                      price: "$25,000 to $75,000+",
+                      desc: "Classic, traditional world voyage experience.",
+                    },
+                    {
+                      line: "Azamara Cruises",
+                      price: "$35,000 to $80,000+",
+                      desc: "Destination-focused itineraries with strong inclusion positioning.",
+                    },
+                  ].map((item, i) => (
+                    <div key={i} className="wcc-comp-card-v3">
+                      <div className="wcc-comp-card-body">
+                        <h3 className="wcc-comp-line-name">{item.line}</h3>
+                        <div className="wcc-comp-price-tag">
+                          <span className="wcc-comp-from">Typical Investment</span>
+                          <strong className="wcc-comp-value">{item.price}</strong>
+                        </div>
+                        <p className="wcc-comp-desc">{item.desc}</p>
+                      </div>
+                      <div className="wcc-comp-card-footer">
+                        <div className="wcc-comp-dot" />
+                        <span className="wcc-comp-note">Per Person</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="wcc-comp-card-footer">
-                  <div className="wcc-comp-dot" />
-                  <span className="wcc-comp-note">Per Person</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -1149,108 +1344,6 @@ export default function WorldCruiseCost() {
               <span className="wcc-btn-note">
                 Complimentary initial discovery call
               </span>
-            </div>
-          </div>
-        </div>
-      </section>
-    {/* FEATURED CRUISES */}
-      <section className="wcc-section wcc-featured">
-        <div className="wcc-container wcc-featured-inner">
-          {/* Section header with mesh + eyebrow */}
-          <div className="wcc-featured-header">
-            <span className="wcc-eyebrow">Featured World Cruises</span>
-            <h2 className="wcc-h2 wcc-featured-h2">Featured World Cruises</h2>
-            <div className="wcc-why-rule" />
-          </div>
-
-          {/* Grid */}
-          <div className="wcc-featured-grid">
-            {/* Card 1: Oceania */}
-            <div className="wcc-featured-card">
-              <div
-                className="wcc-featured-card-bg"
-                style={{ backgroundImage: `url(${myimage})` }}
-              />
-              <div className="wcc-featured-card-overlay" />
-              <div className="wcc-featured-card-content">
-                <h3 className="wcc-featured-card-title">2026-2027 Oceania</h3>
-                <div className="wcc-featured-card-details">
-                  <div>
-                    <strong>Duration:</strong> 200 Days
-                  </div>
-                  <div>
-                    <strong>Start:</strong> San Francisco
-                  </div>
-                  <div>
-                    <strong>End:</strong> Miami
-                  </div>
-                </div>
-                <ul className="wcc-featured-card-list">
-                  <li>✓ 48 States and 3 Oceans</li>
-                  <li>✓ Round-trip airfare</li>
-                  <li>✓ 100% gratuities</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 2: Holland America */}
-            <div className="wcc-featured-card">
-              <div
-                className="wcc-featured-card-bg"
-                style={{ backgroundImage: `url(${myimage})` }}
-              />
-              <div className="wcc-featured-card-overlay" />
-              <div className="wcc-featured-card-content">
-                <h3 className="wcc-featured-card-title">
-                  2026 Holland America
-                </h3>
-                <div className="wcc-featured-card-details">
-                  <div>
-                    <strong>Duration:</strong> 127 Days
-                  </div>
-                  <div>
-                    <strong>Start:</strong> Fort Lauderdale
-                  </div>
-                  <div>
-                    <strong>End:</strong> Fort Lauderdale
-                  </div>
-                </div>
-                <ul className="wcc-featured-card-list">
-                  <li>✓ 41 Countries</li>
-                  <li>✓ Business class airfare</li>
-                  <li>✓ Prepaid gratuities</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 3: Silversea */}
-            <div className="wcc-featured-card">
-              <div
-                className="wcc-featured-card-bg"
-                style={{ backgroundImage: `url(${myimage})` }}
-              />
-              <div className="wcc-featured-card-overlay" />
-              <div className="wcc-featured-card-content">
-                <h3 className="wcc-featured-card-title">
-                  2026-2027 Silversea
-                </h3>
-                <div className="wcc-featured-card-details">
-                  <div>
-                    <strong>Duration:</strong> 167 Days
-                  </div>
-                  <div>
-                    <strong>Start:</strong> Vancouver
-                  </div>
-                  <div>
-                    <strong>End:</strong> Fort Lauderdale
-                  </div>
-                </div>
-                <ul className="wcc-featured-card-list">
-                  <li>✓ 72 Destinations</li>
-                  <li>✓ Airfare + hotel</li>
-                  <li>✓Butler service</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
