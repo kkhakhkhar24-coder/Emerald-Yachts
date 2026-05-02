@@ -19,7 +19,7 @@ import {
 import "./WorldCruiseCost.css";
 
 import heroImage1 from "../../assets/WorldCruiseCost/Hero1.webp";
-import heroImage2 from "../../assets/WorldCruiseCost/Hero2.webp";
+import heroImage2 from "../../assets/WorldCruiseCost/Hero2.jpg";
 import heroImage3 from "../../assets/WorldCruiseCost/Hero3.webp";
 import priceImg1 from "../../assets/WorldCruiseCost/Mainstream_Entry.webp";
 import priceImg2 from "../../assets/WorldCruiseCost/Premium_Market.webp";
@@ -136,6 +136,7 @@ export default function WorldCruiseCost() {
     <div className="wcc-root">
       <Helmet>
         <title>
+     
           How Much Does a World Cruise Cost? The 2027–2029 Pricing Guide
         </title>
         <meta
@@ -633,7 +634,7 @@ export default function WorldCruiseCost() {
         </div>
       </section>
 
-      {/* INCLUSION COMPARISON (v32) */}
+      {/* INCLUSION COMPARISON (v32)*/}
       <section className="wcc-section wcc-inclusion-v32">
         <div className="wcc-container wcc-v32-inner">
           <div className="wcc-v32-header">
@@ -1148,6 +1149,108 @@ export default function WorldCruiseCost() {
               <span className="wcc-btn-note">
                 Complimentary initial discovery call
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    {/* FEATURED CRUISES */}
+      <section className="wcc-section wcc-featured">
+        <div className="wcc-container wcc-featured-inner">
+          {/* Section header with mesh + eyebrow */}
+          <div className="wcc-featured-header">
+            <span className="wcc-eyebrow">Featured World Cruises</span>
+            <h2 className="wcc-h2 wcc-featured-h2">Featured World Cruises</h2>
+            <div className="wcc-why-rule" />
+          </div>
+
+          {/* Grid */}
+          <div className="wcc-featured-grid">
+            {/* Card 1: Oceania */}
+            <div className="wcc-featured-card">
+              <div
+                className="wcc-featured-card-bg"
+                style={{ backgroundImage: `url(${myimage})` }}
+              />
+              <div className="wcc-featured-card-overlay" />
+              <div className="wcc-featured-card-content">
+                <h3 className="wcc-featured-card-title">2026-2027 Oceania</h3>
+                <div className="wcc-featured-card-details">
+                  <div>
+                    <strong>Duration:</strong> 200 Days
+                  </div>
+                  <div>
+                    <strong>Start:</strong> San Francisco
+                  </div>
+                  <div>
+                    <strong>End:</strong> Miami
+                  </div>
+                </div>
+                <ul className="wcc-featured-card-list">
+                  <li>✓ 48 States and 3 Oceans</li>
+                  <li>✓ Round-trip airfare</li>
+                  <li>✓ 100% gratuities</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 2: Holland America */}
+            <div className="wcc-featured-card">
+              <div
+                className="wcc-featured-card-bg"
+                style={{ backgroundImage: `url(${myimage})` }}
+              />
+              <div className="wcc-featured-card-overlay" />
+              <div className="wcc-featured-card-content">
+                <h3 className="wcc-featured-card-title">
+                  2026 Holland America
+                </h3>
+                <div className="wcc-featured-card-details">
+                  <div>
+                    <strong>Duration:</strong> 127 Days
+                  </div>
+                  <div>
+                    <strong>Start:</strong> Fort Lauderdale
+                  </div>
+                  <div>
+                    <strong>End:</strong> Fort Lauderdale
+                  </div>
+                </div>
+                <ul className="wcc-featured-card-list">
+                  <li>✓ 41 Countries</li>
+                  <li>✓ Business class airfare</li>
+                  <li>✓ Prepaid gratuities</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 3: Silversea */}
+            <div className="wcc-featured-card">
+              <div
+                className="wcc-featured-card-bg"
+                style={{ backgroundImage: `url(${myimage})` }}
+              />
+              <div className="wcc-featured-card-overlay" />
+              <div className="wcc-featured-card-content">
+                <h3 className="wcc-featured-card-title">
+                  2026-2027 Silversea
+                </h3>
+                <div className="wcc-featured-card-details">
+                  <div>
+                    <strong>Duration:</strong> 167 Days
+                  </div>
+                  <div>
+                    <strong>Start:</strong> Vancouver
+                  </div>
+                  <div>
+                    <strong>End:</strong> Fort Lauderdale
+                  </div>
+                </div>
+                <ul className="wcc-featured-card-list">
+                  <li>✓ 72 Destinations</li>
+                  <li>✓ Airfare + hotel</li>
+                  <li>✓Butler service</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
