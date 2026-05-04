@@ -207,6 +207,14 @@ const Navbar = () => {
               >
                 Regent Seven Seas World Cruise Guide
               </NavLink>
+
+              <NavLink
+                to="/luxury-kenya-safari-micato"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Kenya Safari Micato
+              </NavLink>
             </div>
           </div>
         </div>
@@ -430,6 +438,15 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Regent Seven Seas World Cruise Guide
+              </NavLink>
+
+              
+              <NavLink
+                to="/luxury-kenya-safari-micato"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Kenya Safari Micato
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

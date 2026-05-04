@@ -33,6 +33,7 @@ import AzamaraAlaskaCruises from "./pages/AzamaraAlaskaCruises/AzamaraAlaskaCrui
 import WorldCruises from "./pages/WorldCruises2027-2029/WorldCruises";
 import WorldCruiseCost from "./pages/WorldCruiseCost/WorldCruiseCost";
 import RegentSevenSeasWorldCruiseGuide from "./pages/RegentSevenSeasWorldCruiseGuide/RegentSevenSeas";
+import KenyaSafariMicato from "./pages/KenyaSafariwithMicatoSafaris/Kenyasafarimicato";
 
 function App() {
   return (
@@ -146,6 +147,10 @@ function App() {
           <Route
             path="/regent-seven-seas-world-cruise-guide"
             element={<RegentSevenSeasWorldCruiseGuide />}
+          ></Route>
+          <Route
+            path="/luxury-kenya-safari-micato"
+            element={<KenyaSafariMicato />}
           ></Route>
         </Routes>
       </BrowserRouter>
