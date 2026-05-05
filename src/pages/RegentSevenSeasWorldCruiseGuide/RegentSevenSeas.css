@@ -81,7 +81,7 @@
 .regent-p {
     font-size: 18px;
     line-height: 1.8;
-    color: #4a5568;
+    color: var(--rss-navy);
     margin: 0 0 16px 0;
 }
 
@@ -1013,7 +1013,7 @@
 
 .regent-suite-experience {
     font-size: 14px;
-    color: #64748b;
+    color: var(--rss-navy);
     line-height: 1.6;
     margin: 0;
 }
@@ -1052,9 +1052,9 @@
 }
 
 .regent-suite-insight p {
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
-    color: #2d3748;
+    color: var(--rss-navy);
     margin: 0;
     line-height: 1.6;
 }
@@ -2202,8 +2202,8 @@
 }
 
 .regent-ledger-title {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 20px !important;
+    font-weight: 700 !important;
     color: #ffffff;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -2932,7 +2932,7 @@
 
 .regent-expert-cred p {
     font-size: 15px;
-    color: #2d3748;
+    color: var(--rss-navy);
     margin: 0;
     font-weight: 500;
     line-height: 1.4;
@@ -3920,9 +3920,9 @@
 }
 
 .regent-strategy-spotlight-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #64748b;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: var(--rss-navy);
     margin: 0;
     font-family: serif;
     transition: all 0.4s ease;
@@ -3949,7 +3949,7 @@
 .regent-strategy-spotlight-desc {
     font-size: 16px;
     line-height: 1.6;
-    color: #4a5568;
+    color: var(--rss-navy);
     margin: 12px 0 0 0;
 }
 
