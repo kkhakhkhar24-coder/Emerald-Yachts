@@ -4,11 +4,11 @@ import { MapPin, Calendar, DollarSign, Compass, Clock, Star, ArrowRight, Sparkle
 import { Helmet } from "react-helmet-async";
 import profilePicture from "../../assets/image.jpg";
 import heroImage1 from "../../assets/TripToJapan/Hero1.webp";
-import heroImage2 from "../../assets/TripToJapan/Hero2.webp";
+import heroImage2 from "../../assets/TripToJapan/Tokyo_Japan.jpg";
 import heroImage3 from "../../assets/TripToJapan/Hero3.webp";
 import planningJapan from "../../assets/TripToJapan/Planning_Japan.webp";
 import decisions4 from "../../assets/TripToJapan/4_Decisions.webp";
-import bestTime from "../../assets/TripToJapan/Best_Time_Visit_Japan.webp";
+import bestTime from "../../assets/TripToJapan/angela-hughes-himeji-castle-cherry-blossoms-japan-luxury-travel-expert.jpg";
 import buildItinerary from "../../assets/TripToJapan/Build_Itinerary.webp";
 
 import { useState, useEffect } from "react";

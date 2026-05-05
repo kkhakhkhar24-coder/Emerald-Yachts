@@ -24,17 +24,17 @@ import {
 } from "lucide-react";
 import "./LuxuryTravelToJapan.css";
 import myimage from "../../assets/image.webp";
-import BTJimage1 from "../../assets/BestTimeJapan/BTJimage1.webp";
-import BTJhero1 from "../../assets/BestTimeJapan/BTJhero1.webp";
-import BTJhero2 from "../../assets/BestTimeJapan/BTJhero2.webp";
-import BTJhero3 from "../../assets/BestTimeJapan/BTJhero3.webp";
-import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
-import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
-import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
-import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
-import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
-import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
-import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
+import BTJimage1 from "../../assets/LuxurtTravelToJapan/BTJimage1.webp";
+import BTJhero1 from "../../assets/LuxurtTravelToJapan/BTJhero1.webp";
+import BTJhero2 from "../../assets/LuxurtTravelToJapan/BTJhero2.webp";
+import BTJhero3 from "../../assets/LuxurtTravelToJapan/angela-hughes-himeji-castle-japan-historic-landmark-luxury-travel.jpg";
+import Ftjapan1 from "../../assets/LuxurtTravelToJapan/Ftjapan1.webp";
+import Ftjapan2 from "../../assets/LuxurtTravelToJapan/Ftjapan2.webp";
+import Ftjapan3 from "../../assets/LuxurtTravelToJapan/angela-hughes-himeji-castle-sakura-japan-luxury-travel-itinerary.jpg";
+import Ftjapan4 from "../../assets/LuxurtTravelToJapan/Ftjapan4.webp";
+import Jhero1 from "../../assets/LuxurtTravelToJapan/angela-hughes-sensoji-temple-tokyo-japan-cultural-landmark.jpg";
+import Jhero2 from "../../assets/LuxurtTravelToJapan/angela-hughes-kyoto-gion-geisha-street-pagoda-japan-travel-expert.jpg";
+import Jhero3 from "../../assets/LuxurtTravelToJapan/Jhero3.webp";
 
 /* ===== INLINE FAQ ACCORDION ===== */
 const BTJapanFAQ = ({ items }) => {
@@ -220,9 +220,7 @@ const LuxuryTravelToJapan = () => {
         </script>
         <link rel="preload" as="image" href={images[0]} />
       </Helmet>
-
       <Navbar />
-
       {/* ===== HERO ===== */}
       <section className="LTJapan_hero_section">
         {images.map((img, index) => (
@@ -275,7 +273,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== WHY JAPAN IS COMPLEX ===== */}
       <section className="LTJapan_about_section">
         <div className="LTJapan_about_inner">
@@ -326,7 +323,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== PLAN YOUR TRIP WITH AN EXPERT ===== */}
       <section className="LTJapan_expert_section">
         <div className="LTJapan_expert_bg_pattern"></div>
@@ -406,7 +402,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== COMMON MISTAKES ===== */}
       <section className="LTJapan_mistakes_v2_section">
         <div className="LTJapan_mistakes_v2_inner">
@@ -453,7 +448,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== BEST WAYS TO EXPERIENCE JAPAN ===== */}
       <section className="LTJapan_quick_answer_v2_section">
         <div className="LTJapan_quick_answer_v2_inner">
@@ -508,7 +502,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== TRAVEL STYLE OVERVIEW TABLE ===== */}
       <section className="LTJapan_glance">
         <div className="LTJapan_glance_inner">
@@ -578,7 +571,6 @@ const LuxuryTravelToJapan = () => {
           </p>
         </div>
       </section>
-
       {/* ===== HOW MUCH DOES IT COST ===== */}
       <section className="LTJapan_cost_section">
         <div className="LTJapan_cost_inner">
@@ -634,13 +626,15 @@ const LuxuryTravelToJapan = () => {
             pricing and require the most advance planning.
           </p>
         </div>
-      </section>      {/* ===== BEST TIME TO VISIT & SEASONAL VIDEOS ===== */}
+      </section>{" "}
+      {/* ===== BEST TIME TO VISIT & SEASONAL VIDEOS ===== */}
       <section className="LTJapan_timing_impact_section">
         <div className="LTJapan_timing_impact_inner">
           <span className="LTJapan_section_badge">When to Go</span>
           <h2>Best Time to Visit Japan</h2>
           <p className="LTJapan_section_intro">
-            Experience Japan's seasonal transitions through our curated guides and cinematic highlights.
+            Experience Japan's seasonal transitions through our curated guides
+            and cinematic highlights.
           </p>
           <div className="LTJapan_timing_grid">
             {[
@@ -691,7 +685,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== TOP DESTINATIONS ===== */}
       <section className="LTJapan_seasons_section">
         <div className="LTJapan_seasons_inner">
@@ -710,46 +703,54 @@ const LuxuryTravelToJapan = () => {
                 title: "Tokyo",
                 desc: "A dynamic global capital blending innovation, luxury, and culture.",
                 img: Jhero1,
+                alt: "Sensoji Temple in Tokyo Japan with Buddha statue at sunset curated cultural travel experience by Angela Hughes",
               },
               {
                 title: "Kyoto",
                 desc: "The heart of traditional Japan with temples, gardens, and timeless atmosphere.",
                 img: Jhero2,
+                alt: "Geisha walking in Gion Kyoto with pagoda view authentic Japan experience curated by Angela Hughes",
               },
               {
                 title: "Osaka",
                 desc: "Japan’s culinary capital known for vibrant street food and urban energy.",
                 img: Jhero3,
+                alt: "Osaka street food district with neon lights and busy nightlife",
               },
               {
                 title: "Hakone",
                 desc: "Luxury ryokan, mountain scenery, and onsen retreats.",
                 img: Ftjapan1,
+                alt: "Hakone hot spring ryokan with mountain views and relaxing onsen",
               },
               {
                 title: "Nara",
                 desc: "Historic temples and traditional charm beyond the standard route.",
                 img: Ftjapan2,
+                alt: "Nara park with free roaming deer and historic temple in background",
               },
               {
                 title: "Kanazawa",
                 desc: "A refined cultural city known for gardens, preserved districts, and artisan heritage.",
                 img: Ftjapan3,
+                alt: "Himeji Castle surrounded by sakura cherry blossoms in Japan part of a luxury itinerary designed by Angela Hughes",
               },
               {
                 title: "Hokkaido",
                 desc: "Japan’s northern escape for skiing, nature, and seasonal beauty.",
                 img: Ftjapan4,
+                alt: "Hokkaido snowy mountains with ski resort and winter landscape",
               },
               {
                 title: "Okinawa",
                 desc: "Japan’s tropical island luxury destination.",
                 img: BTJimage1,
+                alt: "Okinawa beach with clear blue water and tropical island scenery",
               },
             ].map((dest, i) => (
               <div className="LTJapan_season_detail_card" key={i}>
                 <div className="LTJapan_season_detail_image">
-                  <img src={dest.img} alt={dest.title} />
+                  <img src={dest.img} alt={dest.alt} />
                 </div>
                 <div className="LTJapan_season_detail_content">
                   <h3>{dest.title}</h3>
@@ -760,7 +761,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== HOW WE DESIGN YOUR JOURNEY ===== */}
       <section className="LTJapan_regret_section">
         <div className="LTJapan_regret_inner">
@@ -827,7 +827,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== CLIENT INSIGHTS ===== */}
       <section className="LTJapan_insights_section">
         <div className="LTJapan_insights_inner">
@@ -858,7 +857,6 @@ const LuxuryTravelToJapan = () => {
           </div>
         </div>
       </section>
-
       {/* ===== FAQ ===== */}
       <section className="LTJapan_faq_section">
         <div className="LTJapan_faq_inner">
@@ -868,7 +866,6 @@ const LuxuryTravelToJapan = () => {
           <BTJapanFAQ items={faqItems} />
         </div>
       </section>
-
       {/* ===== CTA + INQUIRY FORM ===== */}
       <section className="LTJapan_cta_form_section">
         <div className="LTJapan_cta_form_inner LTJapan_cta_form_inner--centered">

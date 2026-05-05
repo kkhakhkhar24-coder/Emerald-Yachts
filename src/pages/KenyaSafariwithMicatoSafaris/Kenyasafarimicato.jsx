@@ -18,9 +18,6 @@ import {
 import "./Kenyasafarimicato.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/AzamaravsVikingOcean/hero1.webp";
-import HeroImage2 from "../../assets/AzamaravsVikingOcean/hero2.webp";
-import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import { Helmet } from "react-helmet-async";
 
@@ -420,7 +417,11 @@ function FAQ() {
 /* ── Main Component ──────────────────────────────────────────────── */
 const KenyaSafariMicato = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [HeroImage1, HeroImage2, HeroImage3];
+  const images = [
+    "https://specials-images.forbesimg.com/imageserve/61a11bdb7afd3d7797865eb5/960x0.jpg", // Safari Jeep in Savannah
+    "https://images.unsplash.com/photo-1581852017103-68ac65514cf7?auto=format&fit=crop&w=1920&q=80", // Majestic Elephant
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1920&q=80", // Giraffes in Maasai Mara
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -456,9 +457,6 @@ const KenyaSafariMicato = () => {
         ))}
         <div className="KenSafari-hero-overlay" />
         <div className="KenSafari-hero-content">
-          <span className="KenSafari-hero-eyebrow">
-            <Compass size={14} /> Expert-Designed Safaris
-          </span>
           <h1 className="KenSafari-hero-h1">
             Luxury Kenya Safari
             <br />
@@ -854,29 +852,32 @@ const KenyaSafariMicato = () => {
             </h2>
             <div className="KenSafari-accent-line" />
           </div>
-          <div className="KenSafari-video-wrapper">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/r-CNSFClNqk"
-              title="Micato Safaris Kenya"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="KenSafari-video-iframe"
-            />
+          <div className="KenSafari-video-grid">
+            <div className="KenSafari-video-item">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r-CNSFClNqk"
+                title="Micato Safaris Kenya"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="KenSafari-video-iframe"
+              />
+            </div>
+            <div className="KenSafari-video-item">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/GPzdZVVD5-4"
+                title="Micato Safaris Experience"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="KenSafari-video-iframe"
+              />
+            </div>
           </div>
-          {/* <p className="KenSafari-video-note">
-            View the full Micato Safaris channel at{" "}
-            <a
-              href="https://www.youtube.com/@micatosafaris/videos"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="KenSafari-video-link"
-            >
-              youtube.com/@micatosafaris
-            </a>
-          </p> */}
         </div>
       </section>
 
@@ -989,7 +990,7 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
-            {/* ── FAQ ───────────────────────────────────────────────────── */}
+      {/* ── FAQ ───────────────────────────────────────────────────── */}
       <section
         className="KenSafari-section KenSafari-bg-soft"
         id="KenSafari-faq"

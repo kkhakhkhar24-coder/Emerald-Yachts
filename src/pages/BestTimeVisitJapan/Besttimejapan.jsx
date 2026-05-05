@@ -17,12 +17,12 @@ import {
 } from "lucide-react";
 import "./Besttimejapan.css";
 import myimage from "../../assets/image.webp";
-import BTJimage1 from "../../assets/BestTimeJapan/BTJimage1.webp";
+import BTJimage1 from "../../assets/BestTimeJapan/angela-hughes-himeji-castle-sakura-japan-luxury-travel-itinerary.jpg";
 import BTJimage2 from "../../assets/BestTimeJapan/BTJimage2.webp";
 import BTJimage3 from "../../assets/BestTimeJapan/BTJimage3.webp";
 import BTJhero1 from "../../assets/BestTimeJapan/BTJhero1.webp";
 import BTJhero2 from "../../assets/BestTimeJapan/BTJhero2.webp";
-import BTJhero3 from "../../assets/BestTimeJapan/BTJhero3.webp";
+import BTJhero3 from "../../assets/BestTimeJapan/angela-hughes-kiyomizu-dera-kyoto-autumn-foliage-japan-luxury-travel.jpg";
 
 /* ===== INLINE FAQ ACCORDION ===== */
 const BTJapanFAQ = ({ items }) => {
@@ -338,7 +338,7 @@ const BestTimeJapan = () => {
           <div className="BTJapan_v2_grid">
             <div className="BTJapan_v2_card">
               <div className="BTJapan_v2_image">
-                <img src={BTJimage1} alt="Cherry blossoms in Japan" />
+                <img src={BTJimage1} alt="Himeji Castle surrounded by sakura cherry blossoms in Japan part of a luxury itinerary designed by Angela Hughes" />
               </div>
               <div className="BTJapan_v2_content">
                 <p>Late March to early April for cherry blossoms</p>
@@ -916,12 +916,6 @@ const BestTimeJapan = () => {
                   travelers try to move too quickly through Japan during peak
                   periods and feel overwhelmed.
                 </p>
-              </div>
-            </div>
-            <div className="BTJapan_regret_image_container">
-              <div className="BTJapan_regret_image_wrapper">
-                <img src={BTJimage1} alt="Japan Travel Planning" />
-                <div className="BTJapan_regret_badge">Expert Guidance</div>
               </div>
             </div>
           </div>

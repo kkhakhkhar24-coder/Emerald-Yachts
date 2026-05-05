@@ -1514,14 +1514,15 @@
 }
 
 .BTJapan_regret_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .BTJapan_regret_text {
-  text-align: left;
+  text-align: center;
 }
 
 .BTJapan_regret_text h2 {

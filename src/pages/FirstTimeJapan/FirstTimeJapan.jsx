@@ -17,12 +17,11 @@ import {
 import "./FirstTimeJapan.css";
 import myimage from "../../assets/image.webp";
 import Ftjapan1 from "../../assets/FirstTimeJapan/Ftjapan1.webp";
-import Ftjapan2 from "../../assets/FirstTimeJapan/Ftjapan2.webp";
+import Ftjapan2 from "../../assets/FirstTimeJapan/angela-hughes-kyoto-gion-geisha-street-pagoda-japan-travel-expert.jpg";
 import Ftjapan3 from "../../assets/FirstTimeJapan/Ftjapan3.webp";
 import Jhero1 from "../../assets/FirstTimeJapan/Jhero1.webp";
 import Jhero2 from "../../assets/FirstTimeJapan/Jhero2.webp";
 import Jhero3 from "../../assets/FirstTimeJapan/Jhero3.webp";
-import Ftjapan4 from "../../assets/FirstTimeJapan/Ftjapan4.webp";
 import Ftjapan5 from "../../assets/FirstTimeJapan/Ftjapan5.webp";
 
 /* ===== INLINE FAQ ACCORDION ===== */
@@ -132,182 +131,181 @@ const FirstTimeJapan = () => {
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              "headline": "First-Time Japan Itinerary: The Perfect 10–14 Day Japan Trip",
-              "description": "Plan your first trip to Japan with this expert 10–14 day itinerary. Discover where to go, how long to stay, and how to structure the perfect trip.",
-              "author": {
+              headline:
+                "First-Time Japan Itinerary: The Perfect 10–14 Day Japan Trip",
+              description:
+                "Plan your first trip to Japan with this expert 10–14 day itinerary. Discover where to go, how long to stay, and how to structure the perfect trip.",
+              author: {
                 "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO",
-                "worksFor": {
+                name: "Angela Hughes",
+                jobTitle: "CEO",
+                worksFor: {
                   "@type": "Organization",
-                  "name": "Trips & Ships Luxury Travel"
-                }
+                  name: "Trips & Ships Luxury Travel",
+                },
               },
-              "publisher": {
+              publisher: {
                 "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "logo": {
+                name: "Trips & Ships Luxury Travel",
+                logo: {
                   "@type": "ImageObject",
-                  "url": "https://www.tripsandships.com/logo.png"
-                }
+                  url: "https://www.tripsandships.com/logo.png",
+                },
               },
-              "mainEntityOfPage": {
+              mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/first-time-japan-itinerary"
+                "@id":
+                  "https://www.tripsandships.com/first-time-japan-itinerary",
               },
-              "datePublished": "2026-04-18",
-              "dateModified": "2026-04-18"
+              datePublished: "2026-04-18",
+              dateModified: "2026-04-18",
             },
             {
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [
+              mainEntity: [
                 {
                   "@type": "Question",
-                  "name": "What is the best itinerary for a first trip to Japan?",
-                  "acceptedAnswer": {
+                  name: "What is the best itinerary for a first trip to Japan?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "A 10 to 14 day itinerary including Tokyo, Kyoto, Osaka, and optionally one slower destination like Hakone or Nara is ideal for a first trip to Japan."
-                  }
+                    text: "A 10 to 14 day itinerary including Tokyo, Kyoto, Osaka, and optionally one slower destination like Hakone or Nara is ideal for a first trip to Japan.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "How many days do I need in Japan for a first trip?",
-                  "acceptedAnswer": {
+                  name: "How many days do I need in Japan for a first trip?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Most first-time travelers need 10 to 14 days in Japan to balance major cities, cultural experiences, and reasonable pacing."
-                  }
+                    text: "Most first-time travelers need 10 to 14 days in Japan to balance major cities, cultural experiences, and reasonable pacing.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Should I start in Tokyo or Kyoto?",
-                  "acceptedAnswer": {
+                  name: "Should I start in Tokyo or Kyoto?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Most first-time itineraries start in Tokyo and move west to Kyoto and Osaka for the most efficient travel flow."
-                  }
+                    text: "Most first-time itineraries start in Tokyo and move west to Kyoto and Osaka for the most efficient travel flow.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Is Osaka worth visiting on a first trip to Japan?",
-                  "acceptedAnswer": {
+                  name: "Is Osaka worth visiting on a first trip to Japan?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Yes. Osaka is worth visiting for its food culture, energy, and contrast with Tokyo and Kyoto."
-                  }
+                    text: "Yes. Osaka is worth visiting for its food culture, energy, and contrast with Tokyo and Kyoto.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Should I add Hakone to my first Japan itinerary?",
-                  "acceptedAnswer": {
+                  name: "Should I add Hakone to my first Japan itinerary?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Yes, if you want a slower stop with a ryokan and onsen experience. Hakone is one of the best additions to a first Japan itinerary."
-                  }
+                    text: "Yes, if you want a slower stop with a ryokan and onsen experience. Hakone is one of the best additions to a first Japan itinerary.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Is Japan easy to travel for first-time visitors?",
-                  "acceptedAnswer": {
+                  name: "Is Japan easy to travel for first-time visitors?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Japan can feel complex at first, but with proper planning it is one of the smoothest and most rewarding countries to travel."
-                  }
+                    text: "Japan can feel complex at first, but with proper planning it is one of the smoothest and most rewarding countries to travel.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Should I use trains in Japan?",
-                  "acceptedAnswer": {
+                  name: "Should I use trains in Japan?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Yes. Trains are usually the most efficient and practical way to move between major destinations on a first trip to Japan."
-                  }
+                    text: "Yes. Trains are usually the most efficient and practical way to move between major destinations on a first trip to Japan.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Is Japan expensive for first-time travelers?",
-                  "acceptedAnswer": {
+                  name: "Is Japan expensive for first-time travelers?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Japan can be done at different price points. Costs depend on timing, hotels, transportation, and whether the trip is mid-range or luxury."
-                  }
+                    text: "Japan can be done at different price points. Costs depend on timing, hotels, transportation, and whether the trip is mid-range or luxury.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Can I do Japan without a guide?",
-                  "acceptedAnswer": {
+                  name: "Can I do Japan without a guide?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Yes, but private guides and well-structured planning can significantly improve the experience, especially on a first trip."
-                  }
+                    text: "Yes, but private guides and well-structured planning can significantly improve the experience, especially on a first trip.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "What is the biggest mistake when planning a first trip to Japan?",
-                  "acceptedAnswer": {
+                  name: "What is the biggest mistake when planning a first trip to Japan?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "The biggest mistake is trying to do too much in too little time and moving too quickly between destinations."
-                  }
+                    text: "The biggest mistake is trying to do too much in too little time and moving too quickly between destinations.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Should I cruise Japan on my first trip?",
-                  "acceptedAnswer": {
+                  name: "Should I cruise Japan on my first trip?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "For most first-time visitors, land travel is better than cruising because it offers deeper access to Tokyo, Kyoto, Osaka, and the overall culture."
-                  }
+                    text: "For most first-time visitors, land travel is better than cruising because it offers deeper access to Tokyo, Kyoto, Osaka, and the overall culture.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Do I need a travel advisor for Japan?",
-                  "acceptedAnswer": {
+                  name: "Do I need a travel advisor for Japan?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "A travel advisor is highly recommended for Japan because timing, pacing, hotel selection, and logistics make a major difference in the quality of the trip."
-                  }
-                }
-              ]
+                    text: "A travel advisor is highly recommended for Japan because timing, pacing, hotel selection, and logistics make a major difference in the quality of the trip.",
+                  },
+                },
+              ],
             },
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
-              "itemListElement": [
+              itemListElement: [
                 {
                   "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://www.tripsandships.com"
+                  position: 1,
+                  name: "Home",
+                  item: "https://www.tripsandships.com",
                 },
                 {
                   "@type": "ListItem",
-                  "position": 2,
-                  "name": "Japan Travel",
-                  "item": "https://www.tripsandships.com/luxury-japan-travel"
+                  position: 2,
+                  name: "Japan Travel",
+                  item: "https://www.tripsandships.com/luxury-japan-travel",
                 },
                 {
                   "@type": "ListItem",
-                  "position": 3,
-                  "name": "First-Time Japan Itinerary",
-                  "item": "https://www.tripsandships.com/first-time-japan-itinerary"
-                }
-              ]
+                  position: 3,
+                  name: "First-Time Japan Itinerary",
+                  item: "https://www.tripsandships.com/first-time-japan-itinerary",
+                },
+              ],
             },
             {
               "@context": "https://schema.org",
               "@type": "TravelAgency",
-              "name": "Trips & Ships Luxury Travel",
-              "url": "https://www.tripsandships.com",
-              "logo": "https://www.tripsandships.com/logo.png",
-              "sameAs": [
-                "https://www.instagram.com/tripsandships"
-              ]
+              name: "Trips & Ships Luxury Travel",
+              url: "https://www.tripsandships.com",
+              logo: "https://www.tripsandships.com/logo.png",
+              sameAs: ["https://www.instagram.com/tripsandships"],
             },
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Angela Hughes",
-              "jobTitle": "CEO",
-              "worksFor": {
+              name: "Angela Hughes",
+              jobTitle: "CEO",
+              worksFor: {
                 "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel"
+                name: "Trips & Ships Luxury Travel",
               },
-              "url": "https://www.tripsandships.com/about-angela-hughes",
-              "sameAs": [
-                "https://www.instagram.com/tripsandships"
-              ]
-            }
+              url: "https://www.tripsandships.com/about-angela-hughes",
+              sameAs: ["https://www.instagram.com/tripsandships"],
+            },
           ])}
         </script>
         <link rel="preload" as="image" href={images[0]} />
@@ -638,26 +636,30 @@ const FirstTimeJapan = () => {
                   title: "Tokyo Energy",
                   img: Ftjapan5,
                   desc: "Modernity and tradition collide.",
+                  alt: "Tokyo city skyline at night with neon lights and busy urban streets",
                 },
                 {
                   title: "Kyoto Culture",
                   img: Ftjapan2,
                   desc: "Timeless temples and serene gardens.",
+                  alt: "Geisha walking in Gion Kyoto with pagoda view authentic Japan experience curated by Angela Hughes",
                 },
                 {
                   title: "Osaka Flavors",
                   img: Ftjapan3,
                   desc: "The world's greatest food scene.",
+                  alt: "Osaka street food market with bright neon signs and local dishes",
                 },
                 {
                   title: "Regional Depth",
                   img: Ftjapan1,
                   desc: "Quieter moments in Hakone or Nara.",
+                  alt: "Peaceful Japanese landscape with traditional temple and natural surroundings in Hakone or Nara",
                 },
               ].map((card, i) => (
                 <div className="FTJapan_experience_card" key={i}>
                   <div className="FTJapan_experience_card_image">
-                    <img src={card.img} alt={card.title} />
+                    <img src={card.img} alt={card.alt} />
                   </div>
                   <div className="FTJapan_experience_card_body">
                     <h3>{card.title}</h3>

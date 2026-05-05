@@ -24,10 +24,20 @@
 }
 
 /* ── Backgrounds ──────────────────────────────────────────────── */
-.KenSafari-bg-white { background: var(--bg-white); }
-.KenSafari-bg-soft  { background: var(--bg-soft); }
-.KenSafari-bg-dark  { background: var(--bg-dark); position: relative; overflow: hidden; }
-.KenSafari-bg-dark2 { background: var(--bg-dark2); }
+.KenSafari-bg-white {
+  background: var(--bg-white);
+}
+.KenSafari-bg-soft {
+  background: var(--bg-soft);
+}
+.KenSafari-bg-dark {
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+.KenSafari-bg-dark2 {
+  background: var(--bg-dark2);
+}
 
 /* ── Shared Typography & Utilities ──────────────────────────────── */
 .KenSafari-section-header {
@@ -81,18 +91,32 @@
 
 /* ── Animations ───────────────────────────────────────────────── */
 @keyframes KenSafari-fade-up {
-  from { opacity: 0; transform: translateY(40px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes KenSafari-ken-burns {
-  0%   { transform: scale(1); }
-  100% { transform: scale(1.12); }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.12);
+  }
 }
 
 @keyframes KenSafari-particles {
-  0%   { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(100px) rotate(5deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -114,7 +138,9 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 2s ease-in-out, transform 8s linear;
+  transition:
+    opacity 2s ease-in-out,
+    transform 8s linear;
   z-index: 0;
   will-change: opacity, transform;
   transform: scale(1.1);
@@ -145,7 +171,11 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
   background-size: 50px 50px;
   animation: KenSafari-particles 60s linear infinite;
   opacity: 0.3;
@@ -167,17 +197,17 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 7px 18px;
   border-radius: 100px;
   backdrop-filter: blur(4px);
-  background: rgba(255,255,255,0.07);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .KenSafari-hero-h1 {
@@ -187,14 +217,14 @@
   line-height: 1.1 !important;
   letter-spacing: -0.02em;
   margin: 0 0 28px 0;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   animation: KenSafari-fade-up 1s ease-out 0.2s both;
 }
 
 .KenSafari-hero-sub {
   font-size: 18px !important;
   font-weight: 300 !important;
-  color: rgba(255,255,255,0.88) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
   line-height: 1.7 !important;
   max-width: 760px;
   margin: 0 auto 24px;
@@ -225,19 +255,19 @@
   border: none;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   margin-bottom: 16px;
 }
 
 .KenSafari-hero-cta:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   background: #f0f6ff;
 }
 
 .KenSafari-hero-cta-note {
   font-size: 14px !important;
-  color: rgba(255,255,255,0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
   font-style: italic;
   margin: 0;
 }
@@ -263,7 +293,9 @@
   letter-spacing: -0.01em;
 }
 
-.KenSafari-intro-spacing { margin-bottom: 40px !important; }
+.KenSafari-intro-spacing {
+  margin-bottom: 40px !important;
+}
 
 .KenSafari-intro-cards {
   display: grid;
@@ -283,7 +315,7 @@
   gap: 20px;
   text-align: center;
   border: 1px solid rgba(39, 68, 114, 0.08);
-  box-shadow: 
+  box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 2px 4px -1px rgba(0, 0, 0, 0.03);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -351,8 +383,8 @@
 }
 
 .KenSafari-micato-card {
-  background: var(--bg-soft, rgb(231,243,245));
-  border: 1px solid rgba(39,68,114,0.07);
+  background: var(--bg-soft, rgb(231, 243, 245));
+  border: 1px solid rgba(39, 68, 114, 0.07);
   border-radius: 20px;
   padding: 36px 30px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -360,7 +392,7 @@
 
 .KenSafari-micato-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 50px rgba(39,68,114,0.1);
+  box-shadow: 0 24px 50px rgba(39, 68, 114, 0.1);
   background: #ffffff;
 }
 
@@ -384,7 +416,7 @@
 }
 
 .KenSafari-micato-card-dark .KenSafari-micato-icon {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .KenSafari-micato-title {
@@ -448,7 +480,11 @@
   left: -30px;
   width: 160px;
   height: 160px;
-  background: radial-gradient(circle, var(--navy, #274472) 1px, transparent 1px);
+  background: radial-gradient(
+    circle,
+    var(--navy, #274472) 1px,
+    transparent 1px
+  );
   background-size: 12px 12px;
   opacity: 0.2;
   z-index: -1;
@@ -580,17 +616,6 @@
   margin: 0 !important;
 }
 
-@media (max-width: 992px) {
-  .KenSafari-why-split-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  .KenSafari-why-split-image-wrap {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
-
 /* ═══════════════════════════════════════════════════════════════════
    PRICING
    ═══════════════════════════════════════════════════════════════════ */
@@ -625,7 +650,10 @@
   color: #ffffff;
 }
 
-.KenSafari-pricing-range svg { flex-shrink: 0; margin-top: 4px; }
+.KenSafari-pricing-range svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
 
 .KenSafari-price-value {
   display: block;
@@ -638,7 +666,7 @@
 .KenSafari-price-label {
   display: block;
   font-size: 13px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -647,16 +675,16 @@
 
 .KenSafari-pricing-note {
   font-size: 15px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-style: italic;
   margin: 0;
 }
 
 .KenSafari-pricing-includes {
-  background: var(--bg-soft, rgb(231,243,245));
+  background: var(--bg-soft, rgb(231, 243, 245));
   border-radius: 24px;
   padding: 40px 36px;
-  border: 1px solid rgba(39,68,114,0.06);
+  border: 1px solid rgba(39, 68, 114, 0.06);
 }
 
 .KenSafari-pricing-includes-title {
@@ -691,11 +719,14 @@
 }
 
 .KenSafari-pricing-list li:hover {
-  border-color: rgba(39,68,114,0.15);
-  box-shadow: 0 4px 12px rgba(39,68,114,0.06);
+  border-color: rgba(39, 68, 114, 0.15);
+  box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
 }
 
-.KenSafari-pricing-list li svg { color: var(--navy, #274472); flex-shrink: 0; }
+.KenSafari-pricing-list li svg {
+  color: var(--navy, #274472);
+  flex-shrink: 0;
+}
 
 /* ═══════════════════════════════════════════════════════════════════
    WHAT CAN GO WRONG — Dark Section
@@ -709,8 +740,8 @@
 }
 
 .KenSafari-wrong-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 28px 24px;
   display: flex;
@@ -721,12 +752,12 @@
 }
 
 .KenSafari-wrong-card:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .KenSafari-wrong-card-highlight {
-  background: rgba(255,255,255,0.12) !important;
-  border-color: rgba(255,255,255,0.2) !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
   grid-column: span 3;
   justify-content: center;
   align-items: center;
@@ -740,7 +771,7 @@
 
 .KenSafari-wrong-text {
   font-size: 16px !important;
-  color: rgba(255,255,255,0.85) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   line-height: 1.5 !important;
   margin: 0;
   font-weight: 400;
@@ -760,65 +791,94 @@
    DESTINATIONS
    ═══════════════════════════════════════════════════════════════════ */
 .KenSafari-dest-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 900px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto 0;
 }
 
 .KenSafari-dest-card {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 24px;
-  background: var(--bg-soft, rgb(231,243,245));
-  border: 1px solid rgba(39,68,114,0.06);
-  border-radius: 16px;
-  padding: 28px 32px;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-  cursor: default;
+  flex-direction: column;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
 }
 
 .KenSafari-dest-card:hover {
-  box-shadow: 0 10px 32px rgba(39,68,114,0.1);
-  transform: translateX(4px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+  border-color: rgba(39, 68, 114, 0.15);
 }
 
 .KenSafari-dest-number {
-  font-size: 44px;
-  font-weight: 800;
-  color: rgba(39,68,114,0.12);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(39, 68, 114, 0.03);
   line-height: 1;
-  flex-shrink: 0;
-  min-width: 64px;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.KenSafari-dest-card:hover .KenSafari-dest-number {
+  color: rgba(39, 68, 114, 0.06);
 }
 
 .KenSafari-dest-icon {
-  width: 54px;
-  height: 54px;
-  background: var(--navy, #274472);
-  color: #ffffff;
-  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-soft, rgb(231, 243, 245));
+  color: var(--navy, #274472);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
 }
 
-.KenSafari-dest-content { flex: 1; }
+.KenSafari-dest-card:hover .KenSafari-dest-icon {
+  background: var(--navy, #274472);
+  color: #ffffff;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.KenSafari-dest-content {
+  position: relative;
+  z-index: 1;
+}
 
 .KenSafari-dest-title {
-  font-size: 22px !important;
+  font-size: 24px !important;
   font-weight: 700 !important;
   color: var(--navy, #274472) !important;
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
 }
 
 .KenSafari-dest-text {
-  font-size: 16px !important;
-  color: #274472cc !important;
+  font-size: 17px !important;
+  color: #475569 !important;
   line-height: 1.6 !important;
   margin: 0;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 992px) {
+  .KenSafari-dest-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 600px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -834,7 +894,7 @@
 
 .KenSafari-compare-card {
   background: #ffffff;
-  border: 1px solid rgba(39,68,114,0.08);
+  border: 1px solid rgba(39, 68, 114, 0.08);
   border-radius: 20px;
   padding: 36px 30px;
   text-align: center;
@@ -844,7 +904,7 @@
 
 .KenSafari-compare-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(39,68,114,0.1);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
 }
 
 .KenSafari-compare-featured {
@@ -854,7 +914,7 @@
 
 .KenSafari-compare-badge {
   display: inline-block;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
@@ -879,13 +939,13 @@
 .KenSafari-compare-divider {
   width: 40px;
   height: 2px;
-  background: rgba(39,68,114,0.2);
+  background: rgba(39, 68, 114, 0.2);
   margin: 16px auto;
   border-radius: 2px;
 }
 
 .KenSafari-compare-featured .KenSafari-compare-divider {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .KenSafari-compare-desc {
@@ -896,7 +956,7 @@
 }
 
 .KenSafari-compare-featured .KenSafari-compare-desc {
-  color: rgba(255,255,255,0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -912,7 +972,7 @@
 
 .KenSafari-includes-card {
   background: var(--bg-white);
-  border: 1px solid rgba(39,68,114,0.06);
+  border: 1px solid rgba(39, 68, 114, 0.06);
   border-radius: 16px;
   padding: 32px 28px;
   display: flex;
@@ -923,7 +983,7 @@
 
 .KenSafari-includes-card:hover {
   background: #ffffff;
-  box-shadow: 0 8px 28px rgba(39,68,114,0.09);
+  box-shadow: 0 8px 28px rgba(39, 68, 114, 0.09);
   transform: translateY(-3px);
 }
 
@@ -943,16 +1003,28 @@
 /* ═══════════════════════════════════════════════════════════════════
    VIDEO SECTION
    ═══════════════════════════════════════════════════════════════════ */
-.KenSafari-video-wrapper {
+.KenSafari-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.KenSafari-video-item {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  margin: 40px auto 20px;
   aspect-ratio: 16 / 9;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(39,68,114,0.15);
-  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.KenSafari-video-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(39, 68, 114, 0.18);
 }
 
 .KenSafari-video-iframe {
@@ -989,7 +1061,7 @@
 }
 
 .KenSafari-testimonial-quote-icon {
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
   margin-bottom: 24px;
 }
 
@@ -1004,13 +1076,11 @@
 
 .KenSafari-testimonial-attr {
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-
-
 
 /* ════════════════════════════/* ── FAQ ───────────────────────────────────────────────────── */
 .KenSafari-faq-intro {
@@ -1109,20 +1179,20 @@
 .KenSafari-help-card {
   position: relative;
   z-index: 1;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 40px;
   padding: 80px 40px;
   max-width: 1100px;
   margin: 0 auto;
-  box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
-.KenSafari-help-header { 
-  margin-bottom: 40px; 
+.KenSafari-help-header {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1132,7 +1202,7 @@
   display: block;
   font-size: 11px !important;
   font-weight: 700 !important;
-  color: rgba(255,255,255,0.65) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 16px;
@@ -1150,7 +1220,7 @@
 .KenSafari-help-accent {
   width: 80px;
   height: 3px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
 }
 
@@ -1162,13 +1232,13 @@
 .KenSafari-help-intro {
   font-size: 20px !important;
   line-height: 1.75 !important;
-  color: rgba(255,255,255,0.88) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
   margin-bottom: 24px !important;
   font-weight: 300 !important;
 }
 
-.KenSafari-help-btn-container { 
-  margin-top: 40px; 
+.KenSafari-help-btn-container {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -1188,12 +1258,12 @@
   align-items: center;
   gap: 12px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .KenSafari-help-cta-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   background: #f0f6ff;
 }
 
@@ -1265,66 +1335,136 @@
   font-weight: 300 !important;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   RESPONSIVE — Desktop (≥1024px)
-   ═══════════════════════════════════════════════════════════════════ */
 @media (min-width: 1024px) {
-  .KenSafari-hero-h1  { font-size: 64px !important; }
+  .KenSafari-hero-h1 {
+    font-size: 64px !important;
+  }
   .KenSafari-h2,
-  .KenSafari-h2-white { font-size: 48px !important; }
+  .KenSafari-h2-white {
+    font-size: 48px !important;
+  }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   RESPONSIVE — Tablet (max-width: 1024px)
-   ═══════════════════════════════════════════════════════════════════ */
-@media (max-width: 1024px) {
-  .KenSafari-section       { padding: 60px 20px; }
-  .KenSafari-hero-section  { padding: 100px 30px 80px; }
-  .KenSafari-help-card     { padding: 50px 40px; }
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .KenSafari-why-split-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .KenSafari-why-split-image-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .KenSafari-section {
+    padding: 60px 20px;
+  }
+  .KenSafari-hero-section {
+    padding: 100px 30px 80px;
+  }
+  .KenSafari-help-card {
+    padding: 50px 40px;
+  }
 
   .KenSafari-h2,
-  .KenSafari-h2-white      { font-size: 34px !important; }
+  .KenSafari-h2-white {
+    font-size: 34px !important;
+  }
 
-  .KenSafari-micato-grid   { grid-template-columns: repeat(2, 1fr); }
-  .KenSafari-creds-grid    { grid-template-columns: repeat(3, 1fr); }
-  .KenSafari-wrong-grid    { grid-template-columns: repeat(2, 1fr); }
-  .KenSafari-wrong-card-highlight { grid-column: span 2; }
+  .KenSafari-micato-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .KenSafari-creds-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .KenSafari-wrong-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .KenSafari-wrong-card-highlight {
+    grid-column: span 2;
+  }
 
   .KenSafari-expert-profile-split {
     grid-template-columns: 300px 1fr;
     gap: 50px;
   }
 
-  .KenSafari-help-grid     { grid-template-columns: 1fr; gap: 40px; }
-  .KenSafari-pricing-grid  { grid-template-columns: 1fr; }
-  .KenSafari-compare-grid  { grid-template-columns: repeat(3, 1fr); }
-  .KenSafari-includes-grid { grid-template-columns: repeat(2, 1fr); }
-}
+  .KenSafari-help-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .KenSafari-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-compare-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .KenSafari-includes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .KenSafari-section {
+    padding: 50px 16px;
+  }
+  .KenSafari-hero-section {
+    padding: 80px 20px 60px;
+  }
+  .KenSafari-intro-text {
+    font-size: 17px !important;
+  }
 
-/* ═══════════════════════════════════════════════════════════════════
-   RESPONSIVE — Mobile (max-width: 768px)
-   ═══════════════════════════════════════════════════════════════════ */
-@media (max-width: 768px) {
-  .KenSafari-section       { padding: 50px 16px; }
-  .KenSafari-hero-section  { padding: 80px 20px 60px; }
-
-  .KenSafari-hero-h1       { font-size: 36px !important; }
-  .KenSafari-hero-sub      { font-size: 16px !important; }
-  .KenSafari-hero-cta      { font-size: 13px !important; padding: 16px 24px; flex-direction: column; gap: 8px; text-align: center; }
+  .KenSafari-hero-h1 {
+    font-size: 36px !important;
+  }
+  .KenSafari-hero-sub {
+    font-size: 16px !important;
+  }
+  .KenSafari-hero-cta {
+    font-size: 13px !important;
+    padding: 16px 24px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 
   .KenSafari-h2,
-  .KenSafari-h2-white      { font-size: 26px !important; }
+  .KenSafari-h2-white,
+  .KenSafari-why-h2 {
+    font-size: 26px !important;
+  }
 
-  .KenSafari-intro-cards   { grid-template-columns: 1fr; }
-  .KenSafari-micato-grid   { grid-template-columns: 1fr; }
-  .KenSafari-creds-grid    { grid-template-columns: 1fr; gap: 16px; }
-  .KenSafari-wrong-grid    { grid-template-columns: 1fr; }
-  .KenSafari-wrong-card-highlight { grid-column: span 1; }
-  .KenSafari-compare-grid  { grid-template-columns: 1fr; }
-  .KenSafari-includes-grid { grid-template-columns: 1fr; }
+  .KenSafari-intro-cards {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-micato-grid {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-creds-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .KenSafari-wrong-grid {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-wrong-card-highlight {
+    grid-column: span 1;
+  }
+  .KenSafari-compare-grid {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-includes-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .KenSafari-dest-card     { flex-wrap: wrap; gap: 14px; padding: 20px 20px; }
-  .KenSafari-dest-number   { font-size: 32px; min-width: auto; }
+  .KenSafari-dest-card {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 20px 20px;
+  }
+  .KenSafari-dest-number {
+    font-size: 32px;
+    min-width: auto;
+  }
 
   .KenSafari-expert-profile-split {
     grid-template-columns: 1fr;
@@ -1332,22 +1472,88 @@
     text-align: center;
   }
 
-  .KenSafari-expert-left   { position: static; max-width: 280px; margin: 0 auto; }
-  .KenSafari-expert-name   { font-size: 32px !important; }
-  .KenSafari-expert-signature { justify-content: center; }
-  .KenSafari-quote-icon-wrap { display: flex; justify-content: center; }
+  .KenSafari-expert-left {
+    position: static;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .KenSafari-expert-name {
+    font-size: 32px !important;
+  }
+  .KenSafari-expert-signature {
+    justify-content: center;
+  }
+  .KenSafari-quote-icon-wrap {
+    display: flex;
+    justify-content: center;
+  }
 
-  .KenSafari-help-section  { padding: 70px 16px; }
-  .KenSafari-help-card     { padding: 36px 24px; border-radius: 24px; }
-  .KenSafari-help-h2       { font-size: 28px !important; }
+  .KenSafari-help-section {
+    padding: 70px 16px;
+  }
+  .KenSafari-help-card {
+    padding: 36px 24px;
+    border-radius: 24px;
+  }
+  .KenSafari-help-h2 {
+    font-size: 28px !important;
+  }
 
-  .KenSafari-pricing-main  { padding: 36px 28px; }
-  .KenSafari-price-value   { font-size: 30px; }
+  .KenSafari-pricing-main {
+    padding: 36px 28px;
+  }
+  .KenSafari-price-value {
+    font-size: 30px;
+  }
 
-  .KenSafari-testimonial-text { font-size: 19px !important; }
+  .KenSafari-testimonial-text {
+    font-size: 19px !important;
+  }
 
-  .KenSafari-video-wrapper { border-radius: 16px; margin-top: 28px; }
+  .KenSafari-video-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 600px;
+  }
 
-  .KenSafari-faq-q         { font-size: 16px !important; padding: 18px 20px; }
-  .KenSafari-faq-a         { padding: 0 20px 18px; }
+  .KenSafari-video-item {
+    border-radius: 16px;
+  }
+
+  .KenSafari-faq-q {
+    font-size: 16px !important;
+    padding: 18px 20px;
+  }
+  .KenSafari-faq-a {
+    padding: 0 20px 18px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .KenSafari-hero-h1 {
+    font-size: 26px !important;
+  }
+  .KenSafari-h2,
+  .KenSafari-h2-white,
+  .KenSafari-why-h2, .KenSafari-help-h2 {
+    font-size: 24px !important;
+  }
+  .KenSafari-body-text, .KenSafari-why-intro-text, .KenSafari-help-intro{
+    font-size: 16px !important;
+  }
+  .KenSafari-dest-card{
+    flex-direction: column;
+  }
+  .KenSafari-dest-number{
+    display: none;
+  }
+  .KenSafari-dest-text{
+    text-align: center;
+  }
+  .KenSafari-help-cta-btn {
+    padding: 17px 24px;
+  }
 }
