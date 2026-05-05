@@ -12,13 +12,23 @@ import {
     ArrowRight, Compass, Sparkles, Anchor, Calendar, ShieldCheck, Gem,
     TrendingUp, ChevronRight, Crown, Plane, Phone, Plus, Minus,
     Globe, LayoutList, Hotel, Wallet, AlertCircle, Home,
-    Award, Heart, Utensils, Navigation, Shield, Sun, Activity, Music
+    Award, Heart, Utensils, Navigation, Shield, Sun, Activity, Music,
+    CalendarClock, ConciergeBell, Gift
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import hero1 from '../../assets/HomePage/HomePage1.webp'
 import hero2 from '../../assets/SecondPage/SecondPage2.webp'
 import hero3 from '../../assets/SecondPage/SecondPage6.webp'
+
+import route1 from '../../assets/SecondPage/SecondPage1.webp'
+import route2 from '../../assets/SecondPage/SecondPage2.webp'
+import route3 from '../../assets/SecondPage/SecondPage3.webp'
+import route4 from '../../assets/SecondPage/SecondPage5.webp'
+import route5 from '../../assets/SecondPage/SecondPage6.webp'
+import route6 from '../../assets/SecondPage/SecondPage7.webp'
+import route7 from '../../assets/SecondPage/SecondPage8.webp'
+import route8 from '../../assets/SecondPage/SecondPage9.webp'
 
 function RegentSevenSeas() {
     const [currentHero, setCurrentHero] = useState(0)
@@ -32,6 +42,9 @@ function RegentSevenSeas() {
     }, [heroImages.length])
 
     const [activeFaq, setActiveFaq] = useState(null)
+    const [activeTraveler, setActiveTraveler] = useState(0)
+    const [activeStrategy, setActiveStrategy] = useState(0)
+    const [activeAdvantage, setActiveAdvantage] = useState(0)
 
     const toggleFaq = (index) => {
         setActiveFaq(activeFaq === index ? null : index)
@@ -62,14 +75,14 @@ function RegentSevenSeas() {
     ]
 
     const routeStops = [
-        { region: 'Mediterranean', detail: 'Italy, Greece, France', icon: <Anchor size={20} /> },
-        { region: 'Africa', detail: 'Cape Town, Namibia', icon: <Globe size={20} /> },
-        { region: 'Middle East', detail: 'Cultural immersion ports', icon: <MapPin size={20} /> },
-        { region: 'Southeast Asia', detail: 'Regional depth & culture', icon: <Compass size={20} /> },
-        { region: 'Japan', detail: 'Iconic bucket-list destination', icon: <Star size={20} /> },
-        { region: 'Australia & New Zealand', detail: 'Southern Pacific highlights', icon: <Sun size={20} /> },
-        { region: 'South America', detail: 'Continent exploration', icon: <Navigation size={20} /> },
-        { region: 'Caribbean', detail: 'Final return journey', icon: <Ship size={20} /> },
+        { region: 'Mediterranean', detail: 'Italy, Greece, France', icon: <Anchor size={20} />, img: route1 },
+        { region: 'Africa', detail: 'Cape Town, Namibia', icon: <Globe size={20} />, img: route2 },
+        { region: 'Middle East', detail: 'Cultural immersion ports', icon: <MapPin size={20} />, img: route3 },
+        { region: 'Southeast Asia', detail: 'Regional depth & culture', icon: <Compass size={20} />, img: route4 },
+        { region: 'Japan', detail: 'Iconic bucket-list destination', icon: <Star size={20} />, img: route5 },
+        { region: 'Australia & New Zealand', detail: 'Southern Pacific highlights', icon: <Sun size={20} />, img: route6 },
+        { region: 'South America', detail: 'Continent exploration', icon: <Navigation size={20} />, img: route7 },
+        { region: 'Caribbean', detail: 'Final return journey', icon: <Ship size={20} />, img: route8 },
     ]
 
     const idealTravelers = [
@@ -200,50 +213,64 @@ function RegentSevenSeas() {
             </section>
 
             {/* ── INTRO / WHAT MAKES REGENT DIFFERENT ──────────────────────────── */}
-            <section className="regent-section regent-bg-white">
-                <div className="regent-inner regent-intro-layout">
-                    <div className="regent-intro-heading">
-                        <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)' }}>
-                            <Crown size={14} />
-                            Ultra-Luxury, Fully All-Inclusive
-                        </span>
-                        <h2 className="regent-h2">The Most Complete Luxury World Cruise Experience Available</h2>
-                        <div className="regent-bar"></div>
-                        <p className="regent-p">
-                            Regent Seven Seas Cruises has redefined what a world cruise should be. This is not simply a long voyage. It is a fully integrated, door-to-door luxury lifestyle experience designed for travelers who want to see the world without sacrificing comfort, consistency, or service.
-                        </p>
-                        <p className="regent-p">
-                            Unlike most competitors, Regent removes nearly every friction point in travel — leaving clients free to experience the world without operational stress over a 4–5 month journey.
-                        </p>
-
-                        
-                    </div>
-
-                    <div className="regent-intro-body">
-                        {[
-                            { icon: <Plane size={20} />, label: 'Business or First Class Air included' },
-                            { icon: <Compass size={20} />, label: 'Unlimited Shore Excursions in every port' },
-                            { icon: <Hotel size={20} />, label: 'Pre- and Post-Cruise Luxury Hotel Programs' },
-                            { icon: <Navigation size={20} />, label: 'Door-to-Door Transfers and Luggage Handling' },
-                            { icon: <Utensils size={20} />, label: 'Michelin-level dining included across all venues' },
-                            { icon: <Globe size={20} />, label: 'Gratuities, WiFi, and valet laundry included' },
-                        ].map((item, i) => (
-                            <div key={i} className="regent-inclusion-row">
-                                <div className="regent-inclusion-icon">{item.icon}</div>
-                                <span className="regent-inclusion-label">{item.label}</span>
+            <section className="regent-section regent-split-wrap-small">
+                <div className="regent-inner">
+                    <div className="regent-split-container-small">
+                        <div className="regent-split-visual-small">
+                            <div className="regent-split-img-wrap-small">
+                                <div className="regent-split-img"></div>
+                                <div className="regent-split-overlay"></div>
+                                <div className="regent-split-badge-small">
+                                    <Crown size={16} />
+                                    <span>The Gold Standard</span>
+                                </div>
                             </div>
-                        ))}
-
-                        <div className="regent-intro-highlight">
-                            No constant decision-making, no surprise costs, and no operational stress over a 4–5 month journey.
                         </div>
 
-                        <div className="regent-intro-photo-sub">
-                            <img src="/luxury_river_cruise_1.png" alt="Luxury Travel Experience" />
+                        <div className="regent-split-content-small">
+                            <div className="regent-split-header-small">
+                                <span className="regent-eyebrow">
+                                    <Crown size={14} />
+                                    Ultra-Luxury Lifestyle
+                                </span>
+                                <h2 className="regent-h2">The Most Complete Luxury World Cruise Experience Available</h2>
+                                <div className="regent-bar"></div>
+                                <p className="regent-p">
+                                    Regent Seven Seas Cruises has redefined what a world cruise should be.
+                                </p>
+                                <p className="regent-p">
+                                    This is not simply a long voyage. It is a fully integrated, door-to-door luxury lifestyle experience designed for travelers who want to see the world without sacrificing comfort, consistency, or service.
+                                </p>
+                                <p className="regent-p" style={{ fontWeight: '600', color: 'var(--rss-navy)', marginTop: '24px' }}>
+                                    Unlike most competitors, Regent removes nearly every friction point in travel:
+                                </p>
+                            </div>
+
+                            <div className="regent-split-list-small">
+                                {[
+                                    { icon: <Plane size={18} />, label: 'Business or First Class Air included' },
+                                    { icon: <Compass size={18} />, label: 'Unlimited Shore Excursions in every port' },
+                                    { icon: <Hotel size={18} />, label: 'Pre- and Post-Cruise Luxury Hotel Programs' },
+                                    { icon: <Navigation size={18} />, label: 'Door-to-Door Transfers and Luggage Handling' },
+                                    { icon: <Utensils size={18} />, label: 'Michelin-level dining included across all venues' },
+                                    { icon: <Globe size={18} />, label: 'Gratuities, WiFi, and valet laundry included' },
+                                ].map((pillar, i) => (
+                                    <div key={i} className="regent-split-item-compact">
+                                        <div className="regent-split-icon-compact">{pillar.icon}</div>
+                                        <span className="regent-split-label-compact">{pillar.label}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="regent-split-conclusion-small">
+                                <span className="regent-conclusion-highlight">What this means for your client:</span>
+                                <p>No constant decision-making, no surprise costs, and no operational stress over a 4–5 month journey.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* ── SNAPSHOT TABLE ────────────────────────────────────────────────── */}
             <section className="regent-section regent-bg-soft">
@@ -356,135 +383,85 @@ function RegentSevenSeas() {
                     </div>
                 </div>
             </section>
-
             {/* ── REGENT vs COMPETITORS ────────────────────────────────────────── */}
-            {/* <section className="regent-section regent-bg-soft">
+            {/* ── THE SIGNATURE DOMINANCE LEDGER (Comparison Overview) ───────────── */}
+            <section className="regent-section regent-ledger-wrap">
                 <div className="regent-inner">
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-                        <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)', justifyContent: 'center' }}>
-                            <CheckCircle size={14} />
-                            The Difference
+                    <div className="regent-ledger-header">
+                        <span className="regent-eyebrow">
+                            <Sparkles size={14} />
+                            The Industry Benchmark
                         </span>
-                        <h2 className="regent-h2" style={{ textAlign: 'center' }}>What Makes Regent World Cruises Different</h2>
+                        <h2 className="regent-h2">What Makes Regent World Cruises Different</h2>
                         <div className="regent-bar regent-bar-center"></div>
                     </div>
 
-                    <div className="regent-table-container">
-                        <table className="regent-comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>Feature</th>
-                                    <th>
-                                        <span className="regent-table-th-regent">
-                                            <Crown size={14} />
-                                            Regent
-                                        </span>
-                                    </th>
-                                    <th>Most Competitors</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {comparisonRows.map((row, i) => (
-                                    <tr key={i}>
-                                        <td className="regent-table-feature">{row.feature}</td>
-                                        <td className="regent-table-regent-cell">
-                                            <span className="regent-table-check"><CheckCircle size={15} /></span>
-                                            {row.regent}
-                                        </td>
-                                        <td className="regent-table-competitor-cell">
-                                            <span className="regent-table-x"><XCircle size={15} /></span>
-                                            {row.competitors}
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                    <div className="regent-ledger-stack">
+                        {[
+                            { feature: 'Shore Excursions', regent: 'Unlimited Included', others: 'Pay per excursion', icon: <Compass size={24} /> },
+                            { feature: 'Airfare', regent: 'Included', others: 'Not included', icon: <Plane size={24} /> },
+                            { feature: 'Dining', regent: 'All specialty included', others: 'Limited', icon: <Utensils size={24} /> },
+                            { feature: 'Experience', regent: 'Seamless', others: 'Fragmented', icon: <LayoutList size={24} /> },
+                            { feature: 'Client Feel', regent: 'Effortless luxury', others: 'Managed travel', icon: <Heart size={24} /> },
+                        ].map((item, i) => (
+                            <div key={i} className="regent-ledger-blade">
+                                <div className="regent-ledger-info">
+                                    <div className="regent-ledger-icon">{item.icon}</div>
+                                    <h3 className="regent-ledger-title">{item.feature}</h3>
+                                </div>
+
+                                <div className="regent-ledger-comparison">
+                                    <div className="regent-ledger-side is-regent">
+                                        <div className="regent-ledger-tag">Regent Standard</div>
+                                        <p className="regent-ledger-text">{item.regent}</p>
+                                    </div>
+
+                                    <div className="regent-ledger-vs">VS</div>
+
+                                    <div className="regent-ledger-side is-others">
+                                        <div className="regent-ledger-tag">Typical Tier</div>
+                                        <p className="regent-ledger-text">{item.others}</p>
+                                    </div>
+                                </div>
+                                <div className="regent-ledger-glow"></div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </section> */}
+            </section>
+
 
             {/* ── ROUTE FLOW ───────────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-dark2">
-                <div className="regent-bg-pattern"></div>
+            <section className="regent-section regent-route-section">
+                <div className="regent-bg-pattern-dark"></div>
                 <div className="regent-inner regent-relative">
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-                        <span className="regent-eyebrow" style={{ color: '#94a3b8', justifyContent: 'center' }}>
-                            <Compass size={14} />
+                    <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+                        <span className="regent-eyebrow" style={{ color: '#93c5fd', justifyContent: 'center' }}>
+                            <Compass size={14} className="regent-spin-slow" />
                             A Strategic Global Pattern
                         </span>
                         <h2 className="regent-h2-white" style={{ textAlign: 'center' }}>Typical World Cruise Route Flow</h2>
-                        <div className="regent-bar-white regent-bar-center"></div>
-                        <p className="regent-p-white" style={{ maxWidth: '680px', margin: '0 auto 48px', textAlign: 'center' }}>
+                        <div className="regent-bar-premium regent-bar-center"></div>
+                        <p className="regent-p-white" style={{ maxWidth: '750px', margin: '0 auto', textAlign: 'center', opacity: 0.9 }}>
                             While itineraries change yearly, most Regent world cruises follow a strategic global pattern curated to balance bucket-list destinations, cultural depth, and comfortable pacing.
                         </p>
                     </div>
 
-                    <div className="regent-route-grid">
-                        {routeStops.map((stop, i) => (
-                            <div key={i} className="regent-route-card">
-                                <div className="regent-route-num">{String(i + 1).padStart(2, '0')}</div>
-                                <div className="regent-route-icon">{stop.icon}</div>
-                                <p className="regent-route-region">{stop.region}</p>
-                                <p className="regent-route-detail">{stop.detail}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── WHO SHOULD BOOK ──────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-white">
-                <div className="regent-inner">
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-                        <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)', justifyContent: 'center' }}>
-                            <Users size={14} />
-                            Ideal Clients
-                        </span>
-                        <h2 className="regent-h2" style={{ textAlign: 'center' }}>Who Should Book a Regent World Cruise</h2>
-                        <div className="regent-bar regent-bar-center"></div>
-                    </div>
-
-                    <div className="regent-travelers-grid">
-                        {idealTravelers.map((traveler, i) => (
-                            <div key={i} className="regent-traveler-card">
-                                <div className="regent-traveler-icon">{traveler.icon}</div>
-                                <div>
-                                    <p className="regent-traveler-title">{traveler.title}</p>
-                                    <p className="regent-traveler-desc">{traveler.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── BOOKING STRATEGY ─────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-soft">
-                <div className="regent-inner">
-                    <div className="regent-booking-layout">
-                        <div>
-                            <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)' }}>
-                                <Calendar size={14} />
-                                Critical for Advisors & Clients
-                            </span>
-                            <h2 className="regent-h2">Booking Strategy</h2>
-                            <div className="regent-bar"></div>
-                            <p className="regent-p">
-                                Timing matters more than anything. World cruises sell out in days or weeks. Top suites sell out immediately. Repeat guests often pre-book before general availability opens.
-                            </p>
-                        </div>
-
-                        <div className="regent-booking-steps">
-                            {[
-                                { num: '01', title: 'Register Interest Early', desc: 'Secure your position before public release opens to the market.' },
-                                { num: '02', title: 'Work with an Advisor', desc: 'Access allocation and exclusive inventory not available through direct booking.' },
-                                { num: '03', title: 'Secure Deposit Quickly', desc: 'Top suites and prime categories disappear within days of release.' },
-                            ].map((step, i) => (
-                                <div key={i} className="regent-booking-step">
-                                    <div className="regent-booking-step-num">{step.num}</div>
-                                    <div>
-                                        <p className="regent-booking-step-title">{step.title}</p>
-                                        <p className="regent-booking-step-desc">{step.desc}</p>
+                    <div className="regent-route-scroll-container">
+                        <div className="regent-route-cinematic-track">
+                            {[...routeStops, ...routeStops].map((stop, i) => (
+                                <div key={i} className="regent-route-cinematic-card">
+                                    <div className="regent-route-image-container">
+                                        <img src={stop.img} alt={stop.region} className="regent-route-image" />
+                                        <div className="regent-route-overlay"></div>
+                                    </div>
+                                    <div className="regent-route-content">
+                                        <div className="regent-route-header">
+                                            <div className="regent-route-icon-box">{stop.icon}</div>
+                                        </div>
+                                        <h3 className="regent-route-title">{stop.region}</h3>
+                                        <p className="regent-route-info">{stop.detail}</p>
+                                        <div className="regent-route-path-line"></div>
                                     </div>
                                 </div>
                             ))}
@@ -493,27 +470,177 @@ function RegentSevenSeas() {
                 </div>
             </section>
 
-            {/* ── HIDDEN ADVANTAGES ────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-dark">
-                <div className="regent-bg-pattern"></div>
-                <div className="regent-inner regent-relative">
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-                        <span className="regent-eyebrow" style={{ color: '#94a3b8', justifyContent: 'center' }}>
+            {/* ── WHO SHOULD BOOK ──────────────────────────────────────────────── */}
+            {/* ── THE SIGNATURE PORTRAIT PROFILES (Traveler Archetypes) ─────────── */}
+            <section className="regent-section regent-profiles-wrap">
+                <div className="regent-inner">
+                    <div className="regent-profiles-header">
+                        <span className="regent-eyebrow">
+                            <Users size={14} />
+                            Curated for the Discerning
+                        </span>
+                        <h2 className="regent-h2">Who Should Book a Regent World Cruise</h2>
+                        <div className="regent-bar regent-bar-center"></div>
+                        <p className="regent-profiles-intro">This product is ideal for:</p>
+                    </div>
+
+                    <div className="regent-profiles-grid">
+                        {[
+                            { title: 'High-net-worth travelers seeking simplicity', icon: <Crown size={24} />, num: '01' },
+                            { title: 'Retired or semi-retired clients', icon: <Clock size={24} />, num: '02' },
+                            { title: 'Entrepreneurs taking extended lifestyle travel', icon: <TrendingUp size={24} />, num: '03' },
+                            { title: 'Clients comparing private jet journeys', icon: <Plane size={24} />, num: '04' },
+                            { title: 'Repeat luxury cruisers seeking a “next level” experience', icon: <Gem size={24} />, num: '05' },
+                        ].map((item, i) => (
+                            <div key={i} className="regent-profile-card">
+                                <span className="regent-profile-number">{item.num}</span>
+                                <div className="regent-profile-icon-frame">
+                                    {item.icon}
+                                </div>
+                                <p className="regent-profile-text">{item.title}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="regent-section regent-strategy-spotlight">
+                <div className="regent-inner">
+                    <div className="regent-strategy-spotlight-card">
+                        <div className="regent-strategy-spotlight-visual">
+                            {[
+                                'https://images.unsplash.com/photo-1548574505-12caf0050b5b?q=80&w=1200&auto=format&fit=crop',
+                                'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop',
+                                'https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1200&auto=format&fit=crop'
+                            ].map((img, i) => (
+                                <div
+                                    key={i}
+                                    className={`regent-strategy-spotlight-img ${activeStrategy === i ? 'active' : ''}`}
+                                >
+                                    <img src={img} alt="Strategy" />
+                                    <div className="regent-strategy-spotlight-overlay"></div>
+                                </div>
+                            ))}
+                            <div className="regent-strategy-spotlight-caption">
+                                <h2 className="regent-strategy-spotlight-h2">Booking Strategy</h2>
+                                <div className="regent-bar-premium"></div>
+                            </div>
+                        </div>
+
+                        <div className="regent-strategy-spotlight-content">
+                            <div className="regent-strategy-spotlight-list">
+                                {[
+                                    {
+                                        num: '01',
+                                        title: 'Register Interest Early',
+                                        desc: 'Secure your position before public release opens to the market.',
+                                        icon: <CalendarClock size={20} />,
+                                        tag: 'Priority Release'
+                                    },
+                                    {
+                                        num: '02',
+                                        title: 'Work with an Advisor',
+                                        desc: 'Access allocation and exclusive inventory not available through direct booking.',
+                                        icon: <ShieldCheck size={20} />,
+                                        tag: 'Concierge Access'
+                                    },
+                                    {
+                                        num: '03',
+                                        title: 'Secure Deposit Quickly',
+                                        desc: 'Top suites and prime categories disappear within days of release.',
+                                         icon: <Gem size={20} />,
+                                        tag: 'Suite Security'
+                                    },
+                                ].map((step, i) => (
+                                    <div
+                                        key={i}
+                                        className={`regent-strategy-spotlight-item ${activeStrategy === i ? 'active' : ''}`}
+                                        onMouseEnter={() => setActiveStrategy(i)}
+                                        onClick={() => setActiveStrategy(i)}
+                                    >
+
+                                        <div className="regent-strategy-spotlight-item-main">
+                                            <div className="regent-strategy-spotlight-icon-wrap">
+                                                {step.icon}
+                                                <span className="regent-strategy-spotlight-num">{step.num}</span>
+                                            </div>
+                                            <div className="regent-strategy-spotlight-text">
+                                                <div className="regent-strategy-spotlight-top">
+                                                    <h3 className="regent-strategy-spotlight-title">{step.title}</h3>
+                                                    <span className="regent-strategy-spotlight-tag">{step.tag}</span>
+                                                </div>
+                                                <div className="regent-strategy-spotlight-reveal">
+                                                    <p className="regent-strategy-spotlight-desc">{step.desc}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="regent-strategy-spotlight-footer">
+                                <p>Timing matters more than anything. World cruises sell out in days or weeks. Top suites sell out immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── THE SIGNATURE MINIMALIST BLADE LIST (Hidden Advantages) ─────────── */}
+            <section className="regent-section regent-simple-wrap">
+                <div className="regent-inner">
+                    <div className="regent-simple-header">
+                        <span className="regent-eyebrow">
                             <Sparkles size={14} />
                             Real Differentiators
                         </span>
-                        <h2 className="regent-h2-white" style={{ textAlign: 'center' }}>Hidden Advantages That Drive Client Satisfaction</h2>
-                        <div className="regent-bar-white regent-bar-center"></div>
+                        <h2 className="regent-h2-white">Hidden Advantages That Drive Client Satisfaction</h2>
+                        <div className="regent-bar-premium"></div>
                     </div>
 
-                    <div className="regent-advantages-grid">
-                        {hiddenAdvantages.map((adv, i) => (
-                            <div key={i} className="regent-advantage-card">
-                                <div className="regent-advantage-icon">{adv.icon}</div>
-                                <div>
-                                    <p className="regent-advantage-title">{adv.title}</p>
-                                    <p className="regent-advantage-desc">{adv.desc}</p>
+                    <div className="regent-simple-list">
+                        {[
+                            {
+                                title: 'Priority access to limited excursions',
+                                desc: 'First access to limited and high-demand shore excursions in every port.',
+                                icon: <Award size={20} />,
+                                meta: 'Priority'
+                            },
+                            {
+                                title: 'Exclusive onboard events only for world cruise guests',
+                                desc: 'World cruise guests enjoy private gala dinners and shoreside events.',
+                                icon: <Sparkles size={20} />,
+                                meta: 'Exclusive'
+                            },
+                            {
+                                title: 'Strong onboard community and repeat clientele',
+                                desc: 'Repeat clientele build lasting connections over the 5-month voyage.',
+                                icon: <Users size={20} />,
+                                meta: 'Network'
+                            },
+                            {
+                                title: 'Multi-night destination immersions',
+                                desc: 'Extended stays in key destinations for genuine cultural depth.',
+                                icon: <MapPin size={20} />,
+                                meta: 'Immersive'
+                            },
+                            {
+                                title: 'Seamless logistics across 4–5 months',
+                                desc: 'Every detail managed so clients never feel the weight of planning.',
+                                icon: <ShieldCheck size={20} />,
+                                meta: 'Seamless'
+                            },
+                        ].map((adv, i) => (
+                            <div key={i} className="regent-simple-blade">
+                                <div className="regent-simple-num">0{i + 1}</div>
+                                <div className="regent-simple-content">
+                                    <div className="regent-simple-top">
+                                        <h3 className="regent-simple-title">{adv.title}</h3>
+                                        <span className="regent-simple-meta">{adv.meta}</span>
+                                    </div>
+                                    <p className="regent-simple-desc">{adv.desc}</p>
                                 </div>
+                                <div className="regent-simple-icon">{adv.icon}</div>
                             </div>
                         ))}
                     </div>
@@ -589,71 +716,67 @@ function RegentSevenSeas() {
                 </div>
             </section>
 
-            {/* ── IS IT WORTH IT ───────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-dark2">
-                <div className="regent-bg-pattern"></div>
-                <div className="regent-inner regent-relative">
-                    <div className="regent-worth-layout">
-                        <div>
-                            <span className="regent-eyebrow" style={{ color: '#94a3b8' }}>
-                                <ShieldCheck size={14} />
-                                The Bottom Line
-                            </span>
-                            <h2 className="regent-h2-white">Is a Regent World Cruise Worth It?</h2>
-                            <div className="regent-bar-white"></div>
-                            <p className="regent-p-white" style={{ fontSize: '20px' }}>
-                                For the right traveler, the answer is simple: <strong style={{ color: '#ffffff' }}>Yes.</strong>
-                            </p>
-                        </div>
-
-                        <div className="regent-worth-reasons">
-                            {[
-                                { icon: <Crown size={20} />, label: 'Predictable luxury' },
-                                { icon: <ShieldCheck size={20} />, label: 'Seamless execution' },
-                                { icon: <Globe size={20} />, label: 'Global access without stress' },
-                                { icon: <TrendingUp size={20} />, label: 'Exceptional long-term value' },
-                            ].map((reason, i) => (
-                                <div key={i} className="regent-worth-reason">
-                                    <div className="regent-worth-reason-icon">{reason.icon}</div>
-                                    <p>{reason.label}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ── CTA SECTION ──────────────────────────────────────────────────── */}
-            <section className="regent-section regent-bg-soft">
+            {/* ── THE SIGNATURE VALUE TRACKER (Worth Analysis) ───────────────── */}
+            <section className="regent-section regent-tracker-wrap">
                 <div className="regent-inner">
-                    <div className="regent-cta-section-inner">
-                        <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)', justifyContent: 'center' }}>
-                            <Phone size={14} />
-                            Work With Us
+                    <div className="regent-tracker-header">
+                        <span className="regent-eyebrow">
+                            <TrendingUp size={14} />
+                            Investment Appraisal
                         </span>
-                        <h2 className="regent-h2" style={{ textAlign: 'center' }}>Work With Trips &amp; Ships Luxury Travel</h2>
-                        <div className="regent-bar regent-bar-center"></div>
-                        <p className="regent-p" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 32px' }}>
-                            We secure inventory, design your journey, and manage every detail — so you arrive at the world, not at the logistics.
-                        </p>
-                        <div className="regent-cta-actions">
-                            <button className="regent-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </button>
-                            <button className="regent-btn-outline">
-                                <LayoutList size={18} />
-                                Request World Cruise Options
-                            </button>
-                        </div>
+                        <h2 className="regent-h2-white">Is a Regent World Cruise Worth It?</h2>
+                        <p className="regent-tracker-verdict">Yes — because it delivers:</p>
+                        <div className="regent-bar-premium"></div>
+                    </div>
+
+                    <div className="regent-tracker-container">
+                        <div className="regent-tracker-line"></div>
+                        
+                        {[
+                            {
+                                pillar: 'Predictable Luxury',
+                                desc: 'Every detail of your six-star experience is pre-planned and included, from fine dining to premium spirits.'
+                            },
+                            {
+                                pillar: 'Seamless Execution',
+                                desc: 'From luggage handling to complex transfers, the entire world voyage operates with absolute precision.'
+                            },
+                            {
+                                pillar: 'Global Access Without Stress',
+                                desc: 'Visit the world’s most iconic and remote destinations without ever worrying about logistics or safety.'
+                            },
+                            {
+                                pillar: 'Exceptional Long-Term Value',
+                                desc: 'While the investment is significant, the all-inclusive per-diem offers unparalleled value for a 5-month journey.'
+                            },
+                        ].map((item, i) => (
+                            <div key={i} className={`regent-tracker-milestone ${i % 2 === 0 ? 'is-left' : 'is-right'}`}>
+                                <div className="regent-tracker-node-box">
+                                    <div className="regent-tracker-node">
+                                        <div className="regent-tracker-dot"></div>
+                                    </div>
+                                    <div className="regent-tracker-num">0{i + 1}</div>
+                                </div>
+                                <div className="regent-tracker-content">
+                                    <h3 className="regent-tracker-title">{item.pillar}</h3>
+                                    <p className="regent-tracker-desc">{item.desc}</p>
+                                    <div className="regent-tracker-indicator">
+                                        <div className="regent-tracker-bar"></div>
+                                        <span className="regent-tracker-meta">Verified Value Pillar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
+
+
 
             {/* ── FAQ SECTION ──────────────────────────────────────────────────── */}
             <section className="regent-faq-section">
                 <div className="regent-faq-inner">
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <div style={{ textAlign: 'center'}}>
                         <span className="regent-eyebrow" style={{ color: 'var(--rss-navy)', justifyContent: 'center' }}>
                             <AlertCircle size={14} />
                             AEO Optimized
@@ -672,7 +795,7 @@ function RegentSevenSeas() {
                                 <div className="regent-faq-question">
                                     <span>{faq.question}</span>
                                     <span className="regent-faq-icon">
-                                        {activeFaq === index ? <Minus size={18} /> : <Plus size={18} />}
+                                        {activeFaq === index ? "−" : "+"}
                                     </span>
                                 </div>
                                 {activeFaq === index && (
