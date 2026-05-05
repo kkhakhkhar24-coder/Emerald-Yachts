@@ -34,6 +34,7 @@ import WorldCruises from "./pages/WorldCruises2027-2029/WorldCruises";
 import WorldCruiseCost from "./pages/WorldCruiseCost/WorldCruiseCost";
 import RegentSevenSeasWorldCruiseGuide from "./pages/RegentSevenSeasWorldCruiseGuide/RegentSevenSeas";
 import KenyaSafariMicato from "./pages/KenyaSafariwithMicatoSafaris/Kenyasafarimicato";
+import KenyaVsTanzaniaSafari from "./pages/KenyaVsTanzaniaSafari/KenyaVsTanzaniaSafari";
 
 function App() {
   return (
@@ -151,6 +152,10 @@ function App() {
           <Route
             path="/luxury-kenya-safari-micato"
             element={<KenyaSafariMicato />}
+          ></Route>
+          <Route
+            path="/kenya-vs-tanzania-safari"
+            element={<KenyaVsTanzaniaSafari />}
           ></Route>
         </Routes>
       </BrowserRouter>

@@ -215,6 +215,14 @@ const Navbar = () => {
               >
                 Luxury Kenya Safari Micato
               </NavLink>
+
+              <NavLink
+                to="/kenya-vs-tanzania-safari"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Kenya Vs Tanzania Safari
+              </NavLink>
             </div>
           </div>
         </div>
@@ -433,21 +441,29 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/regent-seven-seas-world-cruise-guide"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Regent Seven Seas World Cruise Guide
-              </NavLink>
+              to="/regent-seven-seas-world-cruise-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Regent Seven Seas World Cruise Guide
+            </NavLink>
 
-              
-              <NavLink
-                to="/luxury-kenya-safari-micato"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Luxury Kenya Safari Micato
-              </NavLink>
+
+            <NavLink
+              to="/luxury-kenya-safari-micato"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Kenya Safari Micato
+            </NavLink>
+
+            <NavLink
+              to="/kenya-vs-tanzania-safari"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Kenya Vs Tanzania Safari
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
