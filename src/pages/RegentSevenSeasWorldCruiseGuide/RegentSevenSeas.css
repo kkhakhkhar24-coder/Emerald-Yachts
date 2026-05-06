@@ -333,23 +333,6 @@
     font-style: italic;
 }
 
-@media (max-width: 1024px) {
-    .regent-split-container-small {
-        flex-direction: column;
-        gap: 40px;
-        height: auto;
-    }
-
-    .regent-split-visual-small {
-        height: 400px;
-        width: 100%;
-    }
-
-    .regent-split-content-small {
-        overflow-y: visible;
-        padding-right: 0;
-    }
-}
 
 
 
@@ -1200,30 +1183,6 @@
     border-color: var(--rss-navy);
 }
 
-@media (max-width: 1024px) {
-
-    .regent-arena-header-row,
-    .regent-arena-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 0;
-    }
-
-    .regent-arena-header-row {
-        display: none;
-    }
-
-    .regent-arena-feature-cell {
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-
-    .regent-arena-regent-cell,
-    .regent-arena-others-cell {
-        padding: 24px;
-    }
-}
 
 /* ============================================================
    ROUTE FLOW
@@ -1446,12 +1405,6 @@
     }
 }
 
-@media (max-width: 640px) {
-    .regent-route-cinematic-card {
-        height: 340px;
-        width: 260px;
-    }
-}
 
 /* ============================================================
    SIGNATURE ICON-FOCAL SHOWCASE (Tabbed Discovery)
@@ -1730,32 +1683,8 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 1200px) {
-    .regent-pillars-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-    .p-stagger-2,
-    .p-stagger-3 {
-        margin-top: 0;
-    }
-}
 
-@media (max-width: 768px) {
-    .regent-pillars-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-pillar-card {
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .regent-pillars-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .regent-focal-placeholder {
     display: flex;
@@ -1769,32 +1698,6 @@
     border-radius: 20px;
 }
 
-@media (max-width: 768px) {
-    .regent-focal-nav {
-        gap: 16px;
-    }
-
-    .regent-focal-btn {
-        width: 80px;
-    }
-
-    .regent-focal-icon-wrap {
-        width: 60px;
-        height: 60px;
-    }
-
-    .regent-focal-card {
-        padding: 32px;
-    }
-
-    .regent-focal-card-title {
-        font-size: 24px;
-    }
-
-    .regent-focal-card-desc {
-        font-size: 16px;
-    }
-}
 
 /* ============================================================
    WHO SHOULD BOOK (Spotlight Showcase)
@@ -1899,26 +1802,7 @@
     transform: translateX(-10px);
 }
 
-@media (max-width: 1280px) {
-    .regent-profiles-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media (max-width: 768px) {
-    .regent-profiles-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .regent-profile-card {
-        padding: 40px 24px;
-    }
-
-    .regent-profile-number {
-        font-size: 80px;
-    }
-}
 
 /* ============================================================
    SIGNATURE ASYMMETRIC PROTOCOL (Architectural Comparison)
@@ -2076,39 +1960,7 @@
     opacity: 1;
 }
 
-@media (max-width: 1024px) {
-    .regent-protocol-identity {
-        flex: 0 0 120px;
-    }
 
-    .regent-protocol-box.regent {
-        flex: 1.2;
-    }
-}
-
-@media (max-width: 768px) {
-    .regent-protocol-row {
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-        margin-bottom: 30px;
-    }
-
-    .regent-protocol-identity {
-        flex: none;
-        border-right: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        padding-right: 0;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-
-    .regent-protocol-box {
-        flex: none !important;
-        width: 100%;
-        padding: 20px;
-    }
-}
 
 /* ============================================================
    SIGNATURE ARCHITECTURAL LEDGER (Documentarian Discovery)
@@ -2242,15 +2094,6 @@
     padding-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .regent-ledger-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-ledger-card {
-        padding: 40px 32px;
-    }
-}
 
 /* ============================================================
    SIGNATURE SPLIT-SCREEN DISCOVERY (Editorial Discovery)
@@ -2491,22 +2334,7 @@
     margin: 0;
 }
 
-@media (max-width: 1024px) {
-    .regent-landscape-comparison {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
 
-@media (max-width: 768px) {
-    .regent-landscape-regent-card {
-        padding: 40px;
-    }
-
-    .regent-landscape-regent-name {
-        font-size: 32px;
-    }
-}
 
 .regent-adv-item {
     padding: 32px;
@@ -2597,28 +2425,7 @@
     width: 100%;
 }
 
-@media (max-width: 1200px) {
-    .regent-adv-content-side {
-        padding: 60px;
-    }
-}
 
-@media (max-width: 1024px) {
-    .regent-adv-split {
-        flex-direction: column;
-        min-height: auto;
-    }
-
-    .regent-adv-visual {
-        height: 400px;
-        flex: none;
-    }
-
-    .regent-adv-content-side {
-        padding: 40px 24px;
-        flex: none;
-    }
-}
 
 /* ============================================================
    SEAMLESS INFINITE MARQUEE (Compact Auto-Scroll)
@@ -2745,42 +2552,8 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .regent-marquee-card {
-        flex: 0 0 240px;
-        height: 340px;
-    }
-
-    .regent-marquee-title {
-        font-size: 18px;
-    }
-}
 
 /* Mobile Adjustments */
-@media (max-width: 1024px) {
-    .regent-journey-block {
-        grid-template-columns: 1fr !important;
-        min-height: auto;
-    }
-
-    .regent-journey-image-wrap {
-        height: 350px;
-        order: 1 !important;
-    }
-
-    .regent-journey-text-card {
-        padding: 40px 32px;
-        order: 2 !important;
-    }
-
-    .regent-journey-card-title {
-        font-size: 32px;
-    }
-
-    .regent-journey-num-bg {
-        font-size: 180px;
-    }
-}
 
 /* ============================================================
    EXPERT AUTHORITY SECTION
@@ -3199,32 +2972,6 @@
     color: #93c5fd;
 }
 
-@media (max-width: 900px) {
-    .regent-tracker-line {
-        left: 20px;
-        transform: none;
-    }
-    
-    .regent-tracker-milestone {
-        width: 100%;
-        margin-left: 0 !important;
-        justify-content: flex-start !important;
-        margin-bottom: 60px;
-    }
-    
-    .regent-tracker-node-box {
-        left: 10px !important;
-        right: auto !important;
-        flex-direction: row !important;
-    }
-    
-    .regent-tracker-content {
-        max-width: 100%;
-        margin-left: 60px !important;
-        margin-right: 0 !important;
-        padding: 30px;
-    }
-}
 
 /* ============================================================
    HIDDEN ADVANTAGES (Signature Floating Jewel Grid)
@@ -3342,30 +3089,6 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-    .regent-simple-blade {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 30px 0;
-    }
-    
-    .regent-simple-num {
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
-    
-    .regent-simple-icon {
-        position: absolute;
-        top: 30px;
-        right: 0;
-    }
-    
-    .regent-simple-top {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-}
 
 .regent-orbital-item:hover .regent-orbital-card {
     background: rgba(255, 255, 255, 0.06);
@@ -3419,88 +3142,8 @@
     margin: 0;
 }
 
-@media (max-width: 900px) {
-    .regent-orbital-thread {
-        left: 20px;
-        transform: none;
-    }
-    
-    .regent-orbital-item {
-        width: 100%;
-        margin-left: 0 !important;
-        justify-content: flex-start !important;
-        margin-bottom: 60px;
-    }
-    
-    .regent-orbital-node {
-        left: 10px !important;
-        right: auto !important;
-    }
-    
-    .regent-orbital-content-box {
-        max-width: 100%;
-        padding-left: 60px;
-        padding-right: 20px;
-    }
-    
-    .regent-orbital-number {
-        font-size: 100px;
-        top: -30px;
-    }
-    
-    .regent-orbital-card {
-        padding: 40px 30px;
-    }
-    
-    .regent-orbital-title {
-        font-size: 24px;
-    }
-}
 
-@media (max-width: 1024px) {
-    .regent-advantages-icons-strip {
-        overflow-x: auto;
-        padding-bottom: 20px;
-        justify-content: flex-start;
-        gap: 30px;
-    }
 
-    .regent-advantages-view-panel {
-        padding: 40px;
-    }
-
-    .regent-advantages-view-title {
-        font-size: 32px;
-    }
-
-    .regent-advantages-view-number {
-        display: none;
-    }
-
-    .regent-advantages-viewer {
-        height: auto;
-        min-height: 400px;
-    }
-}
-
-@media (max-width: 640px) {
-    .regent-advantages-icon-tab {
-        padding: 0 10px;
-    }
-
-    .regent-advantages-tab-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .regent-advantages-view-title {
-        font-size: 24px;
-    }
-
-    .regent-advantages-view-desc {
-        font-size: 16px;
-    }
-}
 
 .regent-worth-reason p {
     font-size: 16px;
@@ -3602,184 +3245,13 @@
     color: var(--rss-navy-light);
 }
 
-@media (max-width: 768px) {
-    .regent-faq-section {
-        padding: 60px 15px !important;
-    }
-    .regent-faq-question {
-        font-size: 17px;
-    }
-    .regent-faq-answer {
-        font-size: 15px;
-    }
-}
 
 
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (max-width: 1200px) {
-    .regent-suites-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-    .regent-route-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
 
-@media (max-width: 1024px) {
-
-    .regent-intro-layout,
-    .regent-pricing-layout,
-    .regent-booking-layout,
-    .regent-worth-layout,
-    .regent-expert-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .regent-intro-heading {
-        position: static;
-    }
-
-    .regent-snapshot-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .regent-suites-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-route-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-lines-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-worth-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-expert-layout {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .regent-expert-portrait-wrap {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .regent-expert-quote {
-        text-align: left;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .regent-section,
-    .regent-expert-section,
-    .regent-faq-section {
-        padding: 50px 15px !important;
-    }
-
-    .regent-h1 {
-        font-size: 36px !important;
-        line-height: 1.15 !important;
-    }
-
-    .regent-h1-years {
-        font-size: 30px !important;
-    }
-
-    .regent-h2,
-    .regent-h2-white {
-        font-size: 28px !important;
-    }
-
-    .regent-snapshot-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-suites-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-route-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-lines-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .regent-worth-reasons {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-cta-features {
-        flex-direction: column;
-        align-items: flex-start;
-        width: max-content;
-        margin: 0 auto 28px;
-    }
-
-    .regent-cta-card {
-        padding: 28px 20px;
-    }
-
-    .regent-hero-inner {
-        padding: 60px 16px;
-    }
-
-    .regent-cta-actions {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .regent-pricing-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-travelers-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-expert-badge {
-        width: 90px;
-        height: 90px;
-        top: 20px;
-        left: -10px;
-        border-width: 3px;
-    }
-
-    .regent-expert-badge strong {
-        font-size: 22px;
-    }
-
-    .regent-expert-badge span {
-        font-size: 9px;
-    }
-
-    .regent-table-container {
-        overflow-x: auto;
-    }
-
-    .regent-comparison-table thead th,
-    .regent-comparison-table tbody td {
-        padding: 12px 14px;
-        font-size: 14px;
-    }
-
-    .regent-advantages-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* ============================================================
    BOOKING STRATEGY (Signature Card Spotlight)
@@ -3983,174 +3455,12 @@
     font-style: italic;
 }
 
-@media (max-width: 1024px) {
-    .regent-strategy-spotlight {
-        padding: 60px 20px;
-    }
-
-    .regent-strategy-spotlight-card {
-        flex-direction: column;
-        height: auto;
-        border-radius: 24px;
-    }
-
-    .regent-strategy-spotlight-visual {
-        height: 350px;
-        flex: none;
-    }
-
-    .regent-strategy-spotlight-content {
-        padding: 48px 40px;
-        flex: none;
-    }
-
-    .regent-strategy-spotlight-caption {
-        top: 40px;
-        left: 40px;
-    }
-
-    .regent-strategy-spotlight-h2 {
-        font-size: 28px;
-    }
-
-    .regent-strategy-spotlight-item.active .regent-strategy-spotlight-reveal {
-        max-height: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .regent-strategy-spotlight-visual {
-        height: 300px;
-    }
-
-    .regent-strategy-spotlight-content {
-        padding: 40px 24px;
-    }
-
-    .regent-strategy-spotlight-item {
-        padding: 24px 0;
-    }
-
-    .regent-strategy-spotlight-item-main {
-        gap: 20px;
-    }
-
-    .regent-strategy-spotlight-title {
-        font-size: 22px;
-    }
-
-    .regent-strategy-spotlight-icon-wrap {
-        width: 44px;
-        height: 44px;
-    }
-}
-
-@media (max-width: 640px) {
-    .regent-strategy-spotlight {
-        padding: 40px 15px;
-    }
-
-    .regent-strategy-spotlight-visual {
-        height: 240px;
-    }
-
-    .regent-strategy-spotlight-caption {
-        top: 30px;
-        left: 30px;
-    }
-
-    .regent-strategy-spotlight-h2 {
-        font-size: 24px;
-    }
-
-    .regent-strategy-spotlight-tag {
-        display: none;
-    }
-
-    .regent-strategy-spotlight-title {
-        font-size: 19px;
-    }
-
-    .regent-strategy-spotlight-desc {
-        font-size: 14px;
-        margin-top: 8px;
-    }
-
-    .regent-strategy-spotlight-footer {
-        margin-top: 30px;
-        padding-top: 24px;
-    }
-}
 
 
-@media (max-width: 1200px) {
-    .regent-strategy-split-container {
-        height: auto;
-        flex-direction: column;
-    }
 
-    .regent-strategy-split-visual {
-        height: 400px;
-    }
 
-    .regent-strategy-split-content {
-        padding: 40px 20px;
-    }
 
-    .regent-strategy-split-indicator {
-        left: 0;
-        width: 4px;
-    }
 
-    .regent-strategy-split-item.active {
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 640px) {
-    .regent-strategy-split-title {
-        font-size: 24px;
-    }
-
-    .regent-strategy-split-visual {
-        height: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .regent-h1 {
-        font-size: 28px !important;
-    }
-    .regent-tracker-header{
-        margin: 0px;
-    }
-    .regent-expert-quote, .regent-p-white, .regent-p, .regent-faq-question{
-        font-size: 16px;
-    }
-
-    .regent-h2,
-    .regent-h2-white {
-        font-size: 24px !important;
-    }
-
-    .regent-snapshot-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-suites-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-route-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .regent-lines-grid {
-        grid-template-columns: 1fr;
-        max-width: 900px;
-        margin: 0 auto 80px;
-    }
-}
 
 .regent-horizon-container {
     display: flex;
@@ -4449,7 +3759,596 @@
     font-weight: 600;
 }
 
-@media (max-width: 1024px) {
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+    .regent-split-container-small {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+
+    .regent-split-visual-small {
+        height: 400px;
+        width: 100%;
+    }
+
+    .regent-split-content-small {
+        overflow-y: visible;
+        padding-right: 0;
+    }
+    .regent-arena-header-row,
+    .regent-arena-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .regent-arena-header-row {
+        display: none;
+    }
+
+    .regent-arena-feature-cell {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .regent-arena-regent-cell,
+    .regent-arena-others-cell {
+        padding: 24px;
+    }
+    .regent-route-cinematic-card {
+        height: 340px;
+        width: 260px;
+    }
+    .regent-pillars-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .p-stagger-2,
+    .p-stagger-3 {
+        margin-top: 0;
+    }
+    .regent-pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-pillar-card {
+        padding: 40px 20px;
+    }
+    .regent-focal-nav {
+        gap: 16px;
+    }
+
+    .regent-focal-btn {
+        width: 80px;
+    }
+
+    .regent-focal-icon-wrap {
+        width: 60px;
+        height: 60px;
+    }
+
+    .regent-focal-card {
+        padding: 32px;
+    }
+
+    .regent-focal-card-title {
+        font-size: 24px;
+    }
+
+    .regent-focal-card-desc {
+        font-size: 16px;
+    }
+    .regent-profiles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .regent-profiles-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .regent-profile-card {
+        padding: 40px 24px;
+    }
+
+    .regent-profile-number {
+        font-size: 80px;
+    }
+    .regent-protocol-identity {
+        flex: 0 0 120px;
+    }
+
+    .regent-protocol-box.regent {
+        flex: 1.2;
+    }
+    .regent-protocol-row {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .regent-protocol-identity {
+        flex: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding-right: 0;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .regent-protocol-box {
+        flex: none !important;
+        width: 100%;
+        padding: 20px;
+    }
+    .regent-ledger-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-ledger-card {
+        padding: 40px 32px;
+    }
+    .regent-landscape-comparison {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .regent-landscape-regent-card {
+        padding: 40px;
+    }
+
+    .regent-landscape-regent-name {
+        font-size: 32px;
+    }
+    .regent-adv-content-side {
+        padding: 60px;
+    }
+    .regent-adv-split {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .regent-adv-visual {
+        height: 400px;
+        flex: none;
+    }
+
+    .regent-adv-content-side {
+        padding: 40px 24px;
+        flex: none;
+    }
+    .regent-marquee-card {
+        flex: 0 0 240px;
+        height: 340px;
+    }
+
+    .regent-marquee-title {
+        font-size: 18px;
+    }
+    .regent-journey-block {
+        grid-template-columns: 1fr !important;
+        min-height: auto;
+    }
+
+    .regent-journey-image-wrap {
+        height: 350px;
+        order: 1 !important;
+    }
+
+    .regent-journey-text-card {
+        padding: 40px 32px;
+        order: 2 !important;
+    }
+
+    .regent-journey-card-title {
+        font-size: 32px;
+    }
+
+    .regent-journey-num-bg {
+        font-size: 180px;
+    }
+    .regent-tracker-line {
+        left: 20px;
+        transform: none;
+    }
+    
+    .regent-tracker-milestone {
+        width: 100%;
+        margin-left: 0 !important;
+        justify-content: flex-start !important;
+        margin-bottom: 60px;
+    }
+    
+    .regent-tracker-node-box {
+        left: 10px !important;
+        right: auto !important;
+        flex-direction: row !important;
+    }
+    
+    .regent-tracker-content {
+        max-width: 100%;
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+        padding: 30px;
+    }
+    .regent-simple-blade {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0;
+    }
+    
+    .regent-simple-num {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .regent-simple-icon {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    
+    .regent-simple-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .regent-orbital-thread {
+        left: 20px;
+        transform: none;
+    }
+    
+    .regent-orbital-item {
+        width: 100%;
+        margin-left: 0 !important;
+        justify-content: flex-start !important;
+        margin-bottom: 60px;
+    }
+    
+    .regent-orbital-node {
+        left: 10px !important;
+        right: auto !important;
+    }
+    
+    .regent-orbital-content-box {
+        max-width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+    
+    .regent-orbital-number {
+        font-size: 100px;
+        top: -30px;
+    }
+    
+    .regent-orbital-card {
+        padding: 40px 30px;
+    }
+    
+    .regent-orbital-title {
+        font-size: 24px;
+    }
+    .regent-advantages-icons-strip {
+        overflow-x: auto;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .regent-advantages-view-panel {
+        padding: 40px;
+    }
+
+    .regent-advantages-view-title {
+        font-size: 32px;
+    }
+
+    .regent-advantages-view-number {
+        display: none;
+    }
+
+    .regent-advantages-viewer {
+        height: auto;
+        min-height: 400px;
+    }
+    .regent-advantages-icon-tab {
+        padding: 0 10px;
+    }
+
+    .regent-advantages-tab-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .regent-advantages-view-title {
+        font-size: 24px;
+    }
+
+    .regent-advantages-view-desc {
+        font-size: 16px;
+    }
+    .regent-faq-section {
+        padding: 60px 15px !important;
+    }
+    .regent-faq-question {
+        font-size: 17px;
+    }
+    .regent-faq-answer {
+        font-size: 15px;
+    }
+    .regent-suites-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .regent-intro-layout,
+    .regent-pricing-layout,
+    .regent-booking-layout,
+    .regent-worth-layout,
+    .regent-expert-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .regent-intro-heading {
+        position: static;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-worth-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-expert-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .regent-expert-portrait-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .regent-expert-quote {
+        text-align: left;
+    }
+    .regent-section,
+    .regent-expert-section,
+    .regent-faq-section {
+        padding: 50px 15px !important;
+    }
+
+    .regent-h1 {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+    }
+
+    .regent-h1-years {
+        font-size: 30px !important;
+    }
+
+    .regent-h2,
+    .regent-h2-white {
+        font-size: 28px !important;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-route-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .regent-worth-reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-cta-features {
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        margin: 0 auto 28px;
+    }
+
+    .regent-cta-card {
+        padding: 28px 20px;
+    }
+
+    .regent-hero-inner {
+        padding: 60px 16px;
+    }
+
+    .regent-cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regent-pricing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-travelers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-expert-badge {
+        width: 90px;
+        height: 90px;
+        top: 20px;
+        left: -10px;
+        border-width: 3px;
+    }
+
+    .regent-expert-badge strong {
+        font-size: 22px;
+    }
+
+    .regent-expert-badge span {
+        font-size: 9px;
+    }
+
+    .regent-table-container {
+        overflow-x: auto;
+    }
+
+    .regent-comparison-table thead th,
+    .regent-comparison-table tbody td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .regent-advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    .regent-strategy-spotlight {
+        padding: 60px 20px;
+    }
+
+    .regent-strategy-spotlight-card {
+        flex-direction: column;
+        height: auto;
+        border-radius: 24px;
+    }
+
+    .regent-strategy-spotlight-visual {
+        height: 350px;
+        flex: none;
+    }
+
+    .regent-strategy-spotlight-content {
+        padding: 48px 40px;
+        flex: none;
+    }
+
+    .regent-strategy-spotlight-caption {
+        top: 40px;
+        left: 40px;
+    }
+
+    .regent-strategy-spotlight-h2 {
+        font-size: 28px;
+    }
+
+    .regent-strategy-spotlight-item.active .regent-strategy-spotlight-reveal {
+        max-height: 200px;
+    }
+    .regent-strategy-spotlight-visual {
+        height: 300px;
+    }
+
+    .regent-strategy-spotlight-content {
+        padding: 40px 24px;
+    }
+
+    .regent-strategy-spotlight-item {
+        padding: 24px 0;
+    }
+
+    .regent-strategy-spotlight-item-main {
+        gap: 20px;
+    }
+
+    .regent-strategy-spotlight-title {
+        font-size: 22px;
+    }
+
+    .regent-strategy-spotlight-icon-wrap {
+        width: 44px;
+        height: 44px;
+    }
+    .regent-strategy-spotlight {
+        padding: 40px 15px;
+    }
+
+    .regent-strategy-spotlight-visual {
+        height: 240px;
+    }
+
+    .regent-strategy-spotlight-caption {
+        top: 30px;
+        left: 30px;
+    }
+
+    .regent-strategy-spotlight-h2 {
+        font-size: 24px;
+    }
+
+    .regent-strategy-spotlight-tag {
+        display: none;
+    }
+
+    .regent-strategy-spotlight-title {
+        font-size: 19px;
+    }
+
+    .regent-strategy-spotlight-desc {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .regent-strategy-spotlight-footer {
+        margin-top: 30px;
+        padding-top: 24px;
+    }
+    .regent-strategy-split-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .regent-strategy-split-visual {
+        height: 400px;
+    }
+
+    .regent-strategy-split-content {
+        padding: 40px 20px;
+    }
+
+    .regent-strategy-split-indicator {
+        left: 0;
+        width: 4px;
+    }
+
+    .regent-strategy-split-item.active {
+        padding-left: 20px;
+    }
+    .regent-strategy-split-title {
+        font-size: 24px;
+    }
+
+    .regent-strategy-split-visual {
+        height: 300px;
+    }
     .regent-ledger-blade {
         grid-template-columns: 1fr;
         gap: 32px;
@@ -4468,5 +4367,47 @@
 
     .regent-ledger-vs {
         display: none;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
+    .regent-pillars-grid {
+        grid-template-columns: 1fr;
+    }
+    .regent-h1 {
+        font-size: 28px !important;
+    }
+    .regent-tracker-header{
+        margin: 0px;
+    }
+    .regent-expert-quote, .regent-p-white, .regent-p, .regent-faq-question{
+        font-size: 16px;
+    }
+    
+
+    .regent-h2,
+    .regent-h2-white {
+        font-size: 24px !important;
+    }
+
+    .regent-snapshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-suites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-route-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .regent-lines-grid {
+        grid-template-columns: 1fr;
+        max-width: 900px;
+        margin: 0 auto 80px;
     }
 }

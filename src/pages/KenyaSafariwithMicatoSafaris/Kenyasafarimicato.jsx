@@ -610,6 +610,32 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
+      {/* ── VIDEO SECTION ─────────────────────────────────────────── */}
+      <section className="KenSafari-section KenSafari-bg-soft">
+        <div className="KenSafari-container">
+          <div className="KenSafari-section-header">
+            <h2 className="KenSafari-h2">
+              Experience Kenya with Micato Safaris
+            </h2>
+            <div className="KenSafari-accent-line" />
+          </div>
+          <div className="KenSafari-video-grid">
+            <div className="KenSafari-video-item">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r-CNSFClNqk"
+                title="Micato Safaris Kenya"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="KenSafari-video-iframe"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── WHY TRIPS & SHIPS ─────────────────────────────────────── */}
       <section className="KenSafari-why-split-section">
         <div className="KenSafari-container">
@@ -843,28 +869,14 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
-      {/* ── VIDEO SECTION ─────────────────────────────────────────── */}
+      {/* ── VIDEO SECTION 2 ─────────────────────────────────────────── */}
       <section className="KenSafari-section KenSafari-bg-soft">
         <div className="KenSafari-container">
           <div className="KenSafari-section-header">
-            <h2 className="KenSafari-h2">
-              Experience Kenya with Micato Safaris
-            </h2>
+            <h2 className="KenSafari-h2">The Micato Safari Experience</h2>
             <div className="KenSafari-accent-line" />
           </div>
           <div className="KenSafari-video-grid">
-            <div className="KenSafari-video-item">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/r-CNSFClNqk"
-                title="Micato Safaris Kenya"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="KenSafari-video-iframe"
-              />
-            </div>
             <div className="KenSafari-video-item">
               <iframe
                 width="100%"
@@ -983,9 +995,7 @@ const KenyaSafariMicato = () => {
               part of the trip was seamless, and it completely changed how we
               travel.
             </blockquote>
-            <div className="KenSafari-testimonial-attr">
-              — Client Experience
-            </div>
+            <div className="KenSafari-testimonial-attr">— Elizabeth Hope</div>
           </div>
         </div>
       </section>
