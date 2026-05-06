@@ -128,24 +128,23 @@ function RegentSevenSeas() {
 
     const schemaData = {
         "@context": "https://schema.org",
-        "@graph": [
+        "@type": "FAQPage",
+        "mainEntity": [
             {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "@type": "Question",
+                "name": "How much does a Regent world cruise cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Regent world cruises typically range from $85,000 to over $250,000 per person depending on suite category."
+                }
             },
             {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO"
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": faqs.map(f => ({
-                    "@type": "Question",
-                    "name": f.question,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-                }))
+                "@type": "Question",
+                "name": "What is included in a Regent world cruise?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Airfare, unlimited shore excursions, dining, gratuities, WiFi, transfers, and luxury accommodations are all included."
+                }
             }
         ]
     }

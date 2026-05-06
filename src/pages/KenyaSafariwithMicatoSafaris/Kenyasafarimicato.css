@@ -1327,17 +1327,6 @@
   background: rgba(231, 243, 245, 0.55);
 }
 
-.KenSafari-faq-q {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 8px;
-  gap: 18px;
-  font-weight: 500 !important;
-  color: #274472 !important;
-  line-height: 1.45 !important;
-}
 
 .KenSafari-faq-icon {
   color: #274472;

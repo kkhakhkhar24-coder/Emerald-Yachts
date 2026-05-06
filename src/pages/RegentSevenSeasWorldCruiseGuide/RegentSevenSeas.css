@@ -1,8 +1,5 @@
 /* Regent Seven Seas Guide Styles */
 
-/* ============================================================
-   COLOR PALETTE (mirrors WorldCruises design system)
-   ============================================================ */
 :root {
     --rss-navy: #274472;
     --rss-navy-light: #274472cc;
@@ -12,9 +9,6 @@
     --rss-bg-dark2: #1c2f4a;
 }
 
-/* ============================================================
-   BASE SECTION & INNER
-   ============================================================ */
 .regent-section {
     padding: 60px 20px;
 }
