@@ -182,33 +182,6 @@ function RegentSevenSeas() {
                         Regent Seven Seas World Cruise
                         <span className="regent-h1-years">Guide (2026–2029)</span>
                     </h1>
-
-                    {/* <p className="regent-hero-lead">
-                        The Most Complete Luxury World Cruise Experience Available
-                    </p> */}
-
-                    {/* <div className="regent-cta-card">
-                        <p className="regent-cta-card-title">Plan Your Regent World Cruise with Angela Hughes</p>
-                        <div className="regent-cta-features">
-                            <span className="regent-cta-feature">
-                                <CheckCircle size={16} />
-                                Private consultation
-                            </span>
-                            <span className="regent-cta-feature">
-                                <Gem size={16} />
-                                Suite selection guidance
-                            </span>
-                            <span className="regent-cta-feature">
-                                <TrendingUp size={16} />
-                                Early inventory access
-                            </span>
-                        </div>
-                        <button className="regent-btn-primary">
-                            <Phone size={18} strokeWidth={2} />
-                            Let's Discuss!
-                        </button>
-                        <p className="regent-hero-subtext">Schedule your private consultation with Angela Hughes</p>
-                    </div> */}
                 </div>
             </section>
 

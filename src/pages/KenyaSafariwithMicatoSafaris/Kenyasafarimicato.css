@@ -11,7 +11,7 @@
 }
 
 .KenSafari-container {
-  max-width: var(--section-max, 1200px);
+  max-width: var(--section-max);
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -47,7 +47,7 @@
 
 .KenSafari-h2 {
   font-weight: 500 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   line-height: 1.2 !important;
   letter-spacing: -0.01em;
   margin-bottom: 0;
@@ -66,7 +66,7 @@
 .KenSafari-accent-line {
   width: 60px;
   height: 3px;
-  background: var(--navy, #274472);
+  background: var(--navy);
   margin: 18px auto 0;
   border-radius: 2px;
 }
@@ -81,7 +81,7 @@
 
 .KenSafari-body-text {
   font-weight: 300 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   line-height: 1.75 !important;
   max-width: 780px;
   margin: 0 auto;
@@ -245,7 +245,7 @@
   align-items: center;
   gap: 12px;
   background: #ffffff;
-  color: var(--navy, #274472);
+  color: var(--navy);
   font-size: 15px !important;
   font-weight: 700 !important;
   text-transform: uppercase;
@@ -285,7 +285,7 @@
 .KenSafari-intro-text {
   font-size: 22px !important;
   font-weight: 300 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   line-height: 1.6 !important;
   max-width: 850px;
   margin: 0 auto;
@@ -357,7 +357,7 @@
 }
 
 .KenSafari-intro-card:hover .KenSafari-intro-card-icon {
-  background: var(--navy, #274472);
+  background: var(--navy);
   color: #ffffff;
   transform: scale(1.1) rotate(-5deg);
 }
@@ -397,7 +397,7 @@
 }
 
 .KenSafari-micato-card-dark {
-  background: var(--navy, #274472) !important;
+  background: var(--navy) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +406,7 @@
 .KenSafari-micato-icon {
   width: 52px;
   height: 52px;
-  background: var(--navy, #274472);
+  background: var(--navy);
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -422,7 +422,7 @@
 .KenSafari-micato-title {
   font-size: 20px !important;
   font-weight: 700 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0 0 12px 0;
 }
 
@@ -448,7 +448,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 .KenSafari-why-split-section {
   padding: 60px 20px;
-  background: var(--bg-soft, rgb(231, 243, 245));
+  background: var(--bg-white);
   overflow: hidden;
 }
 
@@ -480,11 +480,7 @@
   left: -30px;
   width: 160px;
   height: 160px;
-  background: radial-gradient(
-    circle,
-    var(--navy, #274472) 1px,
-    transparent 1px
-  );
+  background: radial-gradient(circle, var(--navy) 1px, transparent 1px);
   background-size: 12px 12px;
   opacity: 0.2;
   z-index: -1;
@@ -514,7 +510,7 @@
 .KenSafari-why-h2 {
   font-size: 44px !important;
   line-height: 1.1 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0 !important;
   font-weight: 500 !important;
 }
@@ -522,7 +518,7 @@
 .KenSafari-why-line {
   width: 50px;
   height: 3px;
-  background: var(--navy, #274472);
+  background: var(--navy);
   margin-top: 20px;
   border-radius: 2px;
 }
@@ -553,7 +549,7 @@
 .KenSafari-why-stat-num {
   font-size: 32px;
   font-weight: 800;
-  color: var(--navy, #274472);
+  color: var(--navy);
   line-height: 1;
 }
 
@@ -577,14 +573,14 @@
   align-items: center;
   gap: 12px;
   font-size: 16px;
-  color: var(--navy, #274472);
+  color: var(--navy);
   font-weight: 400;
 }
 
 .KenSafari-why-feature-icon {
   width: 24px;
   height: 24px;
-  background: var(--navy, #274472);
+  background: var(--navy);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -597,7 +593,7 @@
   background: #ffffff;
   padding: 24px 30px;
   border-radius: 20px;
-  border-left: 4px solid var(--navy, #274472);
+  border-left: 4px solid var(--navy);
   position: relative;
   box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
 }
@@ -611,7 +607,7 @@
   font-size: 16px !important;
   font-weight: 500 !important;
   font-style: italic;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   line-height: 1.5 !important;
   margin: 0 !important;
 }
@@ -621,7 +617,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 .KenSafari-pricing-section {
   padding: 60px 20px;
-  background: #ffffff;
+  background: var(--bg-soft);
 }
 
 .KenSafari-pricing-grid {
@@ -634,13 +630,32 @@
 }
 
 .KenSafari-pricing-main {
-  background: var(--navy, #274472);
-  border-radius: 24px;
-  padding: 48px 40px;
+  background: linear-gradient(135deg, #1c2f4a 0%, #274472 100%);
+  border-radius: 32px;
+  padding: 60px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(28, 47, 74, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.KenSafari-pricing-main::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
 }
 
 .KenSafari-pricing-range {
@@ -657,20 +672,22 @@
 
 .KenSafari-price-value {
   display: block;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 800;
   color: #ffffff;
   line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .KenSafari-price-label {
   display: block;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.65);
-  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-top: 6px;
+  letter-spacing: 0.12em;
+  margin-top: 10px;
 }
 
 .KenSafari-pricing-note {
@@ -681,16 +698,17 @@
 }
 
 .KenSafari-pricing-includes {
-  background: var(--bg-soft, rgb(231, 243, 245));
-  border-radius: 24px;
-  padding: 40px 36px;
-  border: 1px solid rgba(39, 68, 114, 0.06);
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 48px 40px;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.06);
 }
 
 .KenSafari-pricing-includes-title {
   font-size: 18px !important;
   font-weight: 600 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0 0 24px 0;
   line-height: 1.4;
 }
@@ -707,15 +725,22 @@
 .KenSafari-pricing-list li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   font-size: 17px;
-  color: var(--navy, #274472);
-  font-weight: 400;
-  background: #ffffff;
-  padding: 14px 18px;
-  border-radius: 12px;
+  color: var(--navy);
+  font-weight: 500;
+  background: var(--bg-soft, rgb(231, 243, 245));
+  padding: 18px 24px;
+  border-radius: 16px;
   border: 1px solid transparent;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.KenSafari-pricing-list li:hover {
+  transform: translateX(8px);
+  background: #ffffff;
+  border-color: rgba(39, 68, 114, 0.15);
+  box-shadow: 0 10px 25px rgba(39, 68, 114, 0.1);
 }
 
 .KenSafari-pricing-list li:hover {
@@ -724,7 +749,7 @@
 }
 
 .KenSafari-pricing-list li svg {
-  color: var(--navy, #274472);
+  color: var(--navy);
   flex-shrink: 0;
 }
 
@@ -836,8 +861,8 @@
 .KenSafari-dest-icon {
   width: 60px;
   height: 60px;
-  background: var(--bg-soft, rgb(231, 243, 245));
-  color: var(--navy, #274472);
+  background: var(--bg-soft);
+  color: var(--navy);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -847,7 +872,7 @@
 }
 
 .KenSafari-dest-card:hover .KenSafari-dest-icon {
-  background: var(--navy, #274472);
+  background: var(--navy);
   color: #ffffff;
   transform: scale(1.1) rotate(5deg);
 }
@@ -860,7 +885,7 @@
 .KenSafari-dest-title {
   font-size: 24px !important;
   font-weight: 700 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0 0 12px 0;
   letter-spacing: -0.01em;
 }
@@ -908,7 +933,7 @@
 }
 
 .KenSafari-compare-featured {
-  background: var(--navy, #274472) !important;
+  background: var(--navy) !important;
   border-color: transparent !important;
 }
 
@@ -928,7 +953,7 @@
 .KenSafari-compare-title {
   font-size: 22px !important;
   font-weight: 700 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0 0 0 0;
 }
 
@@ -988,14 +1013,14 @@
 }
 
 .KenSafari-includes-icon {
-  color: var(--navy, #274472);
+  color: var(--navy);
   flex-shrink: 0;
 }
 
 .KenSafari-includes-text {
   font-size: 17px !important;
   font-weight: 600 !important;
-  color: var(--navy, #274472) !important;
+  color: var(--navy) !important;
   margin: 0;
   line-height: 1.4;
 }
@@ -1005,9 +1030,9 @@
    ═══════════════════════════════════════════════════════════════════ */
 .KenSafari-video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 32px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 40px auto 0;
 }
 
@@ -1044,7 +1069,7 @@
 }
 
 .KenSafari-video-link {
-  color: var(--navy, #274472);
+  color: var(--navy);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -1085,7 +1110,7 @@
 /* ════════════════════════════/* ── FAQ ───────────────────────────────────────────────────── */
 .KenSafari-faq-intro {
   font-weight: 300 !important;
-  color: var(--navy, #274472);
+  color: var(--navy);
   margin-top: 16px !important;
   text-align: center;
   font-style: italic;
@@ -1245,7 +1270,7 @@
 
 .KenSafari-help-cta-btn {
   background: #ffffff;
-  color: var(--navy, #274472);
+  color: var(--navy);
   border: none;
   padding: 18px 40px;
   border-radius: 100px;
@@ -1280,7 +1305,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 .KenSafari-faq-intro {
   font-weight: 300 !important;
-  color: var(--navy, #274472);
+  color: var(--navy);
   margin-top: 16px !important;
   text-align: center;
   font-style: italic;
@@ -1538,19 +1563,22 @@
   }
   .KenSafari-h2,
   .KenSafari-h2-white,
-  .KenSafari-why-h2, .KenSafari-help-h2 {
+  .KenSafari-why-h2,
+  .KenSafari-help-h2 {
     font-size: 24px !important;
   }
-  .KenSafari-body-text, .KenSafari-why-intro-text, .KenSafari-help-intro{
+  .KenSafari-body-text,
+  .KenSafari-why-intro-text,
+  .KenSafari-help-intro {
     font-size: 16px !important;
   }
-  .KenSafari-dest-card{
+  .KenSafari-dest-card {
     flex-direction: column;
   }
-  .KenSafari-dest-number{
+  .KenSafari-dest-number {
     display: none;
   }
-  .KenSafari-dest-text{
+  .KenSafari-dest-text {
     text-align: center;
   }
   .KenSafari-help-cta-btn {
