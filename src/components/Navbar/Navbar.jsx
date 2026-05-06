@@ -223,6 +223,14 @@ const Navbar = () => {
               >
                 Kenya Vs Tanzania Safari
               </NavLink>
+
+              <NavLink
+                to="/best-time-great-migration-safari"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Time Great Migration Safari
+              </NavLink>
             </div>
           </div>
         </div>
@@ -463,6 +471,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Kenya Vs Tanzania Safari
+            </NavLink>
+
+            <NavLink
+              to="/best-time-great-migration-safari"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Time Great Migration Safari
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

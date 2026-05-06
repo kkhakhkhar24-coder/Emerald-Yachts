@@ -35,6 +35,7 @@ import WorldCruiseCost from "./pages/WorldCruiseCost/WorldCruiseCost";
 import RegentSevenSeasWorldCruiseGuide from "./pages/RegentSevenSeasWorldCruiseGuide/RegentSevenSeas";
 import KenyaSafariMicato from "./pages/KenyaSafariwithMicatoSafaris/Kenyasafarimicato";
 import KenyaVsTanzaniaSafari from "./pages/KenyaVsTanzaniaSafari/KenyaVsTanzaniaSafari";
+import BestTimeGreatMigrationSafari from "./pages/BestTimeGreatMigrationSafari/BestTimeGreatMigrationSafari";
 
 function App() {
   return (
@@ -156,6 +157,10 @@ function App() {
           <Route
             path="/kenya-vs-tanzania-safari"
             element={<KenyaVsTanzaniaSafari />}
+          ></Route>
+          <Route
+            path="/best-time-great-migration-safari"
+            element={<BestTimeGreatMigrationSafari />}
           ></Route>
         </Routes>
       </BrowserRouter>
