@@ -11,7 +11,6 @@
 
 /* ── ROOT ─────────────────────────────────────────────────── */
 .kvts-root {
-    font-family: "Inter", "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
     color: #2d3a4a;
     background: #ffffff;
     margin: 0;
@@ -3071,8 +3070,34 @@
     }
 }
 
-@media (max-width: 768px) {
-    .kvt-video-frame {
-        border-radius: 20px;
-    }
+/* ── SECTION IMAGES ────────────────────────────────────────── */
+.kvts-section-img-wrap {
+    margin-top: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.1);
+}
+
+.kvts-section-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+    transition: transform 0.5s ease;
+}
+
+.kvts-section-img-wrap:hover .kvts-section-img {
+    transform: scale(1.03);
+}
+
+.kvts-section-img-wide {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.15);
+    margin: 40px 0;
 }

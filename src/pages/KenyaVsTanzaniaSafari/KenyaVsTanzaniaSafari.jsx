@@ -429,7 +429,6 @@ export default function KenyaVsTanzaniaSafari() {
                                 ))}
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -520,7 +519,6 @@ export default function KenyaVsTanzaniaSafari() {
                                 ))}
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -572,9 +570,7 @@ export default function KenyaVsTanzaniaSafari() {
                                 <li><CheckCircle2 size={18} /> <span>A broader understanding of the ecosystem and migration</span></li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
@@ -601,6 +597,9 @@ export default function KenyaVsTanzaniaSafari() {
                             <div className="kvts-why-kenya-sticky">
                                 <h2 className="kvts-h2">WHY KENYA MAY BE THE BETTER CHOICE</h2>
                                 <div className="kvts-why-kenya-accent"></div>
+                                <div className="kvts-section-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2072&auto=format&fit=crop" alt="Kenya Safari Elephant" className="kvts-section-img" />
+                                </div>
                             </div>
                         </div>
 
@@ -635,8 +634,8 @@ export default function KenyaVsTanzaniaSafari() {
                 <div className="kvts-container">
                     <div className="kvts-why-tanzania-header">
                         <h2 className="kvts-h2">WHY TANZANIA MAY BE THE BETTER CHOICE</h2>
-                        <div className="kvts-why-tanzania-accent"></div>
                     </div>
+
                     <div className="kvts-why-tanzania-grid">
                         <div className="kvts-why-tanzania-card">
                             <div className="kvts-why-tanzania-icon"><Sparkles size={28} /></div>
@@ -745,7 +744,6 @@ export default function KenyaVsTanzaniaSafari() {
                             </div>
                             <p>Tanzania offers migration viewing across multiple regions of the Serengeti and can be experienced at different times of year depending on herd movement, including calving season early in the year.</p>
                         </div>
-
                     </div>
 
                     {/* Professional Advisor Takeaway */}
@@ -754,14 +752,12 @@ export default function KenyaVsTanzaniaSafari() {
                             <p>If your entire trip is built around the migration, timing matters more than destination.</p>
                         </div>
                     </div>
-
                 </div>
             </section>
 
             {/* ── 11. KENYA VS TANZANIA FOR LUXURY TRAVELERS (STICKY SIDE-BY-SIDE) ── */}
             <section className="kvt-lux-sticky-section">
                 <div className="kvt-lux-sticky-container">
-
                     <div className="kvt-lux-sticky-wrapper">
                         {/* Left Side: Sticky Manifesto */}
                         <div className="kvt-lux-sticky-left">
@@ -773,13 +769,15 @@ export default function KenyaVsTanzaniaSafari() {
                                         Luxury safari is not about <span className="kvt-lux-sticky-bold">thread count</span> or lodge design.
                                     </p>
                                 </div>
+                                <div className="kvts-section-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?q=80&w=2070&auto=format&fit=crop" alt="Majestic Lion Safari" className="kvts-section-img" />
+                                </div>
                             </div>
                         </div>
 
                         {/* Right Side: Scrollable Content (Clean Look) */}
                         <div className="kvt-lux-sticky-right">
                             <div className="kvt-lux-clean-wrap">
-
                                 <div className="kvt-lux-clean-intro">
                                     <h3 className="kvt-lux-clean-label">The True Luxury Equation</h3>
                                     <div className="kvt-lux-clean-list">
@@ -813,11 +811,9 @@ export default function KenyaVsTanzaniaSafari() {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -858,9 +854,7 @@ export default function KenyaVsTanzaniaSafari() {
             {/* ── 12. KENYA VS TANZANIA SAFARI COST (NARRATIVE VS VALUE V7) ── */}
             <section className="kvt-cost-v7-section">
                 <div className="kvt-cost-v7-container">
-
                     <div className="kvt-cost-v7-split">
-
                         {/* Left: The Value */}
                         <div className="kvt-cost-v7-value">
                             <div className="kvt-cost-v7-price-card">
@@ -877,6 +871,9 @@ export default function KenyaVsTanzaniaSafari() {
                                 <p className="kvt-cost-v7-verdict-p">
                                     The difference in price between Kenya and Tanzania is often less important than <span className="kvt-cost-v7-high">how the itinerary is structured.</span>
                                 </p>
+                            </div>
+                            <div className="kvts-section-img-wrap kvts-mt-md">
+                                <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?q=80&w=2070&auto=format&fit=crop" alt="Safari Zebras" className="kvts-section-img" />
                             </div>
                         </div>
 
@@ -907,7 +904,6 @@ export default function KenyaVsTanzaniaSafari() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -984,7 +980,6 @@ export default function KenyaVsTanzaniaSafari() {
                             );
                         })}
                     </div>
-
                 </div>
             </section>
 
@@ -1017,12 +1012,9 @@ export default function KenyaVsTanzaniaSafari() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
-
         </div>
     );
 }
