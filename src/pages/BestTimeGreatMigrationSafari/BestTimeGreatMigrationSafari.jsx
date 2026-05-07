@@ -665,6 +665,32 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section className="btgms-section btgms-video-section">
+        <div className="btgms-container">
+          <div className="btgms-video-wrapper">
+            <div className="btgms-video-content">
+              <h2 className="btgms-h2">Experience the Great Migration</h2>
+              <p className="btgms-p">
+                Witness the raw power and dramatic river crossings of the
+                world's most spectacular wildlife movement. This is what you are
+                planning for.
+              </p>
+            </div>
+            <div className="btgms-video-container">
+              <iframe
+                src="https://www.youtube.com/embed/rRuycZKjFzo"
+                title="Great Migration Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* VISUAL TABLE */}
       <section className="btgms-section btgms-glance">
         <div className="btgms-container">
@@ -869,6 +895,32 @@ export default function BestTimeGreatMigrationSafari() {
           </div>
         </div>
       </section>
+
+      {/* VIDEO SECTION - STRATEGY */}
+      <section className="btgms-section btgms-video-section">
+        <div className="btgms-container">
+          <div className="btgms-video-wrapper">
+            <div className="btgms-video-content">
+              <h2 className="btgms-h2">The Strategy Behind the Safari</h2>
+              <p className="btgms-p">
+                Go behind the scenes to see how we align every detail—from camp
+                placement to guide expertise—to ensure you are in the right
+                place at the right time.
+              </p>
+            </div>
+            <div className="btgms-video-container">
+              <iframe
+                src="https://www.youtube.com/embed/M753pgZrNS4"
+                title="Safari Strategy Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* COST BY SEASON */}
       <section className="btgms-section btgms-cost">

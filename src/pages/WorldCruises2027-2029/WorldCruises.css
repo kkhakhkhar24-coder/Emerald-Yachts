@@ -2086,7 +2086,7 @@
     .worldcruises-h2-white,
     .worldcruises-pinnacle-gallery-text h2,
     .worldcruises-pinnacle-luxury h2,
-    .worldcruises-faq-inner-new h2 {
+    .worldcruises-faq-inner-new h2{
         font-size: 24px !important;
     }
 
@@ -2103,7 +2103,7 @@
     .worldcruises-roi-stat-desc,
     .worldcruises-inventory-desc,
     .worldcruises-faq-a-inner,
-    .worldcruises-faq-q-new button {
+    .worldcruises-faq-q-new button, .worldcruises-faq-question-new, .worldcruises-roi-panel-body p {
         font-size: 16px !important;
     }
 

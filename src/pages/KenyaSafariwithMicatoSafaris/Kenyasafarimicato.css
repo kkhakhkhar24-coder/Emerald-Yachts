@@ -754,155 +754,359 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   WHAT CAN GO WRONG — Dark Section
+/* ═══════════════════════════════════════════════════════════════════
+   WHAT CAN GO WRONG — Premium Light Editorial
    ═══════════════════════════════════════════════════════════════════ */
-.KenSafari-wrong-grid {
+
+/* ── Section shell ── */
+.KenSafari-wrong-section {
+  position: relative;
+  padding: 60px 20px;
+  background: var(--bg-white);
+  overflow: hidden;
+}
+
+/* subtle pattern overlay */
+.KenSafari-wrong-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--navy-border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ── Header ── */
+.KenSafari-wrong-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.KenSafari-wrong-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+  padding: 8px 18px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+/* ── Cards grid ── */
+.KenSafari-wrong-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1100px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.KenSafari-wrong-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 28px 24px;
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  backdrop-filter: blur(6px);
-  transition: background 0.2s ease;
-}
-
-.KenSafari-wrong-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.KenSafari-wrong-card-highlight {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
-  grid-column: span 3;
-  justify-content: center;
-  align-items: center;
-}
-
-.KenSafari-wrong-icon {
-  color: #f87171;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.KenSafari-wrong-text {
-  font-size: 16px !important;
-  color: rgba(255, 255, 255, 0.85) !important;
-  line-height: 1.5 !important;
-  margin: 0;
-  font-weight: 400;
-}
-
-.KenSafari-wrong-highlight-text {
-  font-size: 20px !important;
-  color: #ffffff !important;
-  font-weight: 600 !important;
-  font-style: italic;
-  text-align: center;
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   DESTINATIONS
-   ═══════════════════════════════════════════════════════════════════ */
-.KenSafari-dest-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 40px auto 0;
-}
-
-.KenSafari-dest-card {
+/* ── Individual risk card ── */
+.KenSafari-wrisk-card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background: #ffffff;
-  border: 1px solid rgba(39, 68, 114, 0.08);
+  align-items: center;
+  gap: 24px;
+  padding: 32px 36px;
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
   border-radius: 24px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all var(--transition);
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
 }
 
-.KenSafari-dest-card:hover {
+.KenSafari-wrisk-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
-  border-color: rgba(39, 68, 114, 0.15);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-light);
 }
 
-.KenSafari-dest-number {
+/* Ghost index number */
+.KenSafari-wrisk-num {
   position: absolute;
   top: -10px;
-  right: -10px;
-  font-size: 120px;
+  right: 18px;
+  font-size: 80px;
   font-weight: 900;
-  color: rgba(39, 68, 114, 0.03);
+  color: var(--navy-soft);
   line-height: 1;
   pointer-events: none;
-  transition: color 0.3s ease;
+  user-select: none;
+  transition: color var(--transition);
 }
 
-.KenSafari-dest-card:hover .KenSafari-dest-number {
-  color: rgba(39, 68, 114, 0.06);
+.KenSafari-wrisk-card:hover .KenSafari-wrisk-num {
+  color: var(--navy-border);
 }
 
-.KenSafari-dest-icon {
-  width: 60px;
-  height: 60px;
-  background: var(--bg-soft);
-  color: var(--navy);
-  border-radius: 16px;
+/* Warning icon wrap */
+.KenSafari-wrisk-icon-wrap {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  transition: all 0.3s ease;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: 16px;
+  color: #ef4444;
+  transition: all var(--transition);
 }
 
-.KenSafari-dest-card:hover .KenSafari-dest-icon {
-  background: var(--navy);
+.KenSafari-wrisk-card:hover .KenSafari-wrisk-icon-wrap {
+  background: #ef4444;
   color: #ffffff;
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(-5deg);
 }
 
-.KenSafari-dest-content {
+/* Risk label text */
+.KenSafari-wrisk-label {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
   position: relative;
   z-index: 1;
 }
 
-.KenSafari-dest-title {
-  font-size: 24px !important;
-  font-weight: 700 !important;
+/* ── Closing quote banner ── */
+.KenSafari-wrong-banner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.KenSafari-wrong-banner-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--navy-border), transparent);
+}
+
+.KenSafari-wrong-banner-text {
+  font-size: 22px !important;
+  font-weight: 500 !important;
   color: var(--navy) !important;
-  margin: 0 0 12px 0;
+  font-style: italic;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  max-width: 600px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .KenSafari-wrong-cards {
+    grid-template-columns: 1fr;
+  }
+  .KenSafari-wrong-banner {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .KenSafari-wrong-banner-line {
+    width: 80px;
+    flex: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DESTINATIONS — Premium Photo Cards
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Section shell ── */
+.KenSafari-dest-section {
+  padding: 60px 20px;
+  background: var(--bg-dark);
+}
+
+.KenSafari-dest-section .KenSafari-h2 {
+  color: #ffffff !important;
+}
+
+.KenSafari-dest-section .KenSafari-accent-line {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.KenSafari-dest-section .KenSafari-body-text {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ── Grid ── */
+.KenSafari-dest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 48px auto 0;
+}
+
+/* ── Photo card ── */
+.KenSafari-dest-card {
+  position: relative;
+  height: 400px;
+  border-radius: 28px;
+  overflow: hidden;
+  cursor: default;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.55s cubic-bezier(0.165, 0.84, 0.44, 1),
+              box-shadow 0.55s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* photo zoom on hover via pseudo-element */
+.KenSafari-dest-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 0;
+}
+
+.KenSafari-dest-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+.KenSafari-dest-card:hover::before {
+  transform: scale(1.06);
+}
+
+/* ── Dark gradient overlay ── */
+.KenSafari-dest-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.55) 55%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  z-index: 1;
+  transition: background 0.4s ease;
+}
+
+.KenSafari-dest-card:hover .KenSafari-dest-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.82) 100%
+  );
+}
+
+/* ── Ghost number (top-right) ── */
+.KenSafari-dest-number {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+  letter-spacing: -0.04em;
+  transition: color 0.35s ease;
+}
+
+.KenSafari-dest-card:hover .KenSafari-dest-number {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+/* ── Bottom body (icon + text) ── */
+.KenSafari-dest-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 36px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  z-index: 2;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+/* ── Icon pill ── */
+.KenSafari-dest-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease;
+  margin-bottom: 4px;
+}
+
+.KenSafari-dest-card:hover .KenSafari-dest-icon {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* ── Card content text ── */
+.KenSafari-dest-content {
+  flex: 1;
+}
+
+.KenSafari-dest-title {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 0 8px 0 !important;
   letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .KenSafari-dest-text {
-  font-size: 17px !important;
-  color: #475569 !important;
-  line-height: 1.6 !important;
-  margin: 0;
-  font-weight: 400 !important;
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  font-weight: 300 !important;
 }
 
-@media (max-width: 992px) {
+/* ── Responsive ── */
+@media (max-width: 768px) {
   .KenSafari-dest-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
-    max-width: 600px;
+    gap: 20px;
+  }
+  .KenSafari-dest-card {
+    height: 340px;
+  }
+  .KenSafari-dest-body {
+    padding: 24px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .KenSafari-dest-section {
+    padding: 72px 16px;
+  }
+  .KenSafari-dest-card {
+    height: 300px;
   }
 }
 
@@ -1326,7 +1530,6 @@
 .KenSafari-faq-item:hover {
   background: rgba(231, 243, 245, 0.55);
 }
-
 
 .KenSafari-faq-icon {
   color: #274472;

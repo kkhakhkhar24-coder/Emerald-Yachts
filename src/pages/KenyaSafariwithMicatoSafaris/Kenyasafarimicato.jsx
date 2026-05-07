@@ -767,16 +767,20 @@ const KenyaSafariMicato = () => {
       </section>
 
       {/* ── WHAT CAN GO WRONG ─────────────────────────────────────── */}
-      <section className="KenSafari-section KenSafari-bg-dark">
-        <div className="KenSafari-container">
-          <div className="KenSafari-section-header">
-            <h2 className="KenSafari-h2-white">
+      <section className="KenSafari-wrong-section">
+        <div className="KenSafari-wrong-pattern" />
+        
+        <div className="KenSafari-container" style={{ position: "relative", zIndex: 1 }}>
+          {/* Header */}
+          <div className="KenSafari-wrong-header">
+            <h2 className="KenSafari-h2">
               What Can Go Wrong on a Kenya Safari
             </h2>
-            <div className="KenSafari-accent-line-white" />
+            <div className="KenSafari-accent-line" />
           </div>
 
-          <div className="KenSafari-wrong-grid">
+          {/* Staggered cards grid */}
+          <div className="KenSafari-wrong-cards">
             {[
               "Poor guide selection",
               "Incorrect camp location",
@@ -784,26 +788,31 @@ const KenyaSafariMicato = () => {
               "Poor timing for wildlife movement",
               "Inexperienced operators",
             ].map((risk, i) => (
-              <div key={i} className="KenSafari-wrong-card">
-                <div className="KenSafari-wrong-icon">
-                  <AlertTriangle size={22} strokeWidth={1.5} />
+              <div key={i} className="KenSafari-wrisk-card">
+                <span className="KenSafari-wrisk-num">0{i + 1}</span>
+                <div className="KenSafari-wrisk-icon-wrap">
+                  <AlertTriangle size={24} strokeWidth={1.5} />
                 </div>
-                <p className="KenSafari-wrong-text">{risk}</p>
+                <p className="KenSafari-wrisk-label">{risk}</p>
               </div>
             ))}
-            <div className="KenSafari-wrong-card KenSafari-wrong-card-highlight">
-              <p className="KenSafari-wrong-highlight-text">
-                The difference between the right guide and the wrong guide can
-                define the entire experience.
-              </p>
-            </div>
+          </div>
+
+          {/* Closing quote banner */}
+          <div className="KenSafari-wrong-banner">
+            <div className="KenSafari-wrong-banner-line" />
+            <p className="KenSafari-wrong-banner-text">
+              The difference between the right guide and the wrong guide can
+              define the entire experience.
+            </p>
+            <div className="KenSafari-wrong-banner-line" />
           </div>
         </div>
       </section>
 
       {/* ── BEST DESTINATIONS ─────────────────────────────────────── */}
       <section
-        className="KenSafari-section KenSafari-bg-white"
+        className="KenSafari-dest-section"
         id="KenSafari-destinations"
       >
         <div className="KenSafari-container">
@@ -816,55 +825,88 @@ const KenyaSafariMicato = () => {
           </div>
 
           <div className="KenSafari-dest-grid">
-            <div className="KenSafari-dest-card">
+
+            {/* 01 — Maasai Mara */}
+            <div
+              className="KenSafari-dest-card"
+              style={{ backgroundImage: "url('https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/09/07223907/maasai-mara.jpg')" }}
+            >
+              <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">01</span>
-              <div className="KenSafari-dest-icon">
-                <MapPin size={30} strokeWidth={1.5} />
-              </div>
-              <div className="KenSafari-dest-content">
-                <h3 className="KenSafari-dest-title">Maasai Mara</h3>
-                <p className="KenSafari-dest-text">
-                  Big Five sightings and the Great Migration. Guide quality is
-                  critical.
-                </p>
+              <div className="KenSafari-dest-body">
+                <div className="KenSafari-dest-icon">
+                  <MapPin size={24} strokeWidth={1.5} />
+                </div>
+                <div className="KenSafari-dest-content">
+                  <h3 className="KenSafari-dest-title">Maasai Mara</h3>
+                  <p className="KenSafari-dest-text">
+                    Big Five sightings and the Great Migration. Guide quality is
+                    critical.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="KenSafari-dest-card">
+
+            {/* 02 — Laikipia Conservancies */}
+            <div
+              className="KenSafari-dest-card"
+              style={{ backgroundImage: "url('https://www.africanmeccasafaris.com/wp-content/uploads/olmalolaikipia5.jpg')" }}
+            >
+              <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">02</span>
-              <div className="KenSafari-dest-icon">
-                <Star size={30} strokeWidth={1.5} />
-              </div>
-              <div className="KenSafari-dest-content">
-                <h3 className="KenSafari-dest-title">Laikipia Conservancies</h3>
-                <p className="KenSafari-dest-text">
-                  Exclusive, less crowded, highly curated experiences.
-                </p>
+              <div className="KenSafari-dest-body">
+                <div className="KenSafari-dest-icon">
+                  <Star size={24} strokeWidth={1.5} />
+                </div>
+                <div className="KenSafari-dest-content">
+                  <h3 className="KenSafari-dest-title">Laikipia Conservancies</h3>
+                  <p className="KenSafari-dest-text">
+                    Exclusive, less crowded, highly curated experiences.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="KenSafari-dest-card">
+
+            {/* 03 — Amboseli National Park */}
+            <div
+              className="KenSafari-dest-card"
+              style={{ backgroundImage: "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/02/14/aa/caption.jpg?w=1200&h=-1&s=1')" }}
+            >
+              <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">03</span>
-              <div className="KenSafari-dest-icon">
-                <Camera size={30} strokeWidth={1.5} />
-              </div>
-              <div className="KenSafari-dest-content">
-                <h3 className="KenSafari-dest-title">Amboseli National Park</h3>
-                <p className="KenSafari-dest-text">
-                  Known for large elephant herds and Kilimanjaro views.
-                </p>
+              <div className="KenSafari-dest-body">
+                <div className="KenSafari-dest-icon">
+                  <Camera size={24} strokeWidth={1.5} />
+                </div>
+                <div className="KenSafari-dest-content">
+                  <h3 className="KenSafari-dest-title">Amboseli National Park</h3>
+                  <p className="KenSafari-dest-text">
+                    Known for large elephant herds and Kilimanjaro views.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="KenSafari-dest-card">
+
+            {/* 04 — Samburu */}
+            <div
+              className="KenSafari-dest-card"
+              style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ383GNe5HdAYa_-5biVLSaHJxRCyuXAyMxvQ&s')" }}
+            >
+              <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">04</span>
-              <div className="KenSafari-dest-icon">
-                <Compass size={30} strokeWidth={1.5} />
-              </div>
-              <div className="KenSafari-dest-content">
-                <h3 className="KenSafari-dest-title">Samburu</h3>
-                <p className="KenSafari-dest-text">
-                  Unique species and fewer crowds.
-                </p>
+              <div className="KenSafari-dest-body">
+                <div className="KenSafari-dest-icon">
+                  <Compass size={24} strokeWidth={1.5} />
+                </div>
+                <div className="KenSafari-dest-content">
+                  <h3 className="KenSafari-dest-title">Samburu</h3>
+                  <p className="KenSafari-dest-text">
+                    Unique species and fewer crowds.
+                  </p>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
