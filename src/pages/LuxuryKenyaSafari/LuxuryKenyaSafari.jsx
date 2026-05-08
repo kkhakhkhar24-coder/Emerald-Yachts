@@ -33,6 +33,14 @@ function LuxuryKenyaSafari() {
     }, [heroImages.length])
 
     const [activeFaq, setActiveFaq] = useState(null)
+    const [activeRegion, setActiveRegion] = useState(0)
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setActiveRegion((prev) => (prev + 1) % 5) // Based on 5 regions
+        }, 6000)
+        return () => clearInterval(timer)
+    }, [])
 
     const toggleFaq = (index) => {
         setActiveFaq(activeFaq === index ? null : index)
@@ -43,19 +51,19 @@ function LuxuryKenyaSafari() {
             name: 'MAASAI MARA',
             intro: 'The Maasai Mara remains Kenya’s most iconic safari region for a reason.',
             knownFor: ['dense wildlife populations', 'predator sightings', 'Great Migration river crossings', 'classic East Africa scenery'],
-            worksWellFor: 'first time safari travelers, photographers, honeymooners, and travelers wanting the classic luxury safari experience.',
+            worksWellFor: 'This region works particularly well for first time safari travelers, photographers, honeymooners, and travelers wanting the classic luxury safari experience.',
             tier: 'iconic'
         },
         {
             name: 'AMBOSELI',
             intro: 'Amboseli National Park is known for massive elephant herds and extraordinary views of Mount Kilimanjaro.',
-            worksWellFor: 'photography, families, and travelers wanting iconic Kenya landscapes.',
+            worksWellFor: 'This region works particularly well for photography, families, and travelers wanting iconic Kenya landscapes.',
             tier: 'iconic'
         },
         {
             name: 'SAMBURU',
             intro: 'Samburu National Reserve feels completely different from the Maasai Mara. Travelers move from sweeping grasslands into dramatic northern terrain with unique wildlife species not commonly seen in southern Kenya.',
-            worksWellFor: 'travelers wanting a more layered and less predictable Kenya safari experience.',
+            worksWellFor: 'This region appeals strongly to travelers wanting a more layered and less predictable Kenya safari experience.',
             tier: 'specialist'
         },
         {
@@ -347,57 +355,91 @@ function LuxuryKenyaSafari() {
                 </div>
             </section>
 
-            {/* ── NARRATIVE AUTHORITY SECTION ────────────────────────────────────────── */}
-            <section className="kenya-narrative-authority">
-                <div className="kenya-narrative-container">
-                    <div className="kenya-narrative-visual">
-                        <img src={kenyaNarrative} alt="Kenya Safari Landscape" className="kenya-narrative-img" />
-                        <div className="kenya-narrative-stat">
-                            <span className="kenya-stat-num">#1</span>
-                            <span className="kenya-stat-label">Global Safari<br />Benchmark</span>
+            {/* ── GLOBAL EXCELLENCE BENCHMARK (WOW UI) ────────────────────────────────── */}
+            <section className="kenya-wow-section">
+                <div className="kenya-wow-bg-text">BENCHMARK</div>
+                <div className="kenya-wow-container">
+                    <div className="kenya-wow-header">
+                        <span className="kenya-wow-eyebrow">Strategic Analysis · Global Authority</span>
+                        <h2 className="kenya-wow-h2">
+                            <span className="kenya-wow-h2-top">Why Kenya Remains</span>
+                            <span className="kenya-wow-h2-bottom">One of the Best Safari Destinations in the World</span>
+                        </h2>
+                    </div>
+
+                    <div className="kenya-wow-main">
+                        <div className="kenya-wow-content">
+                            <p className="kenya-wow-lead">
+                                Kenya remains one of the strongest safari destinations in Africa for several reasons.
+                            </p>
+
+                            <div className="kenya-wow-tiles">
+                                <div className="kenya-wow-tile">
+                                    <div className="kenya-wow-tile-icon"><Star size={24} /></div>
+                                    <div className="kenya-wow-tile-body">
+                                        <h3>Exceptional Wildlife Density</h3>
+                                        <p>Wildlife density is exceptional, particularly in and around the Maasai Mara, delivering consistent world-class sightings.</p>
+                                    </div>
+                                </div>
+                                <div className="kenya-wow-tile">
+                                    <div className="kenya-wow-tile-icon"><ShieldCheck size={24} /></div>
+                                    <div className="kenya-wow-tile-body">
+                                        <h3>Superior Infrastructure</h3>
+                                        <p>Highly developed systems including strong internal flight networks, experienced safari operators, and Africa's most respected guides.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="kenya-wow-visual">
+                            <div className="kenya-wow-image-frame">
+                                <img src={kenyaNarrative} alt="Kenya Safari Landscape" />
+                                <div className="kenya-wow-seal">
+                                    <Award size={32} />
+                                    <div className="kenya-wow-seal-text">
+                                        <strong>#1</strong>
+                                        <span>Global Benchmark</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="kenya-narrative-content">
-                        <div className="kenya-narrative-header">
-                            <span className="kenya-narrative-eyebrow">Strategic Analysis</span>
-                            <h2 className="kenya-narrative-h2">WHY KENYA REMAINS ONE OF THE BEST SAFARI DESTINATIONS IN THE WORLD</h2>
-                            <p className="kenya-narrative-lead">
-                                Kenya remains one of the strongest safari destinations in Africa for several reasons.
-                            </p>
-                        </div>
-
-                        <div className="kenya-narrative-grid">
-                            <div className="kenya-narrative-pillar">
-                                <div className="kenya-pillar-num">01</div>
-                                <div className="kenya-pillar-body">
-                                    <h3>Exceptional Wildlife Density</h3>
-                                    <p>Wildlife density is exceptional, particularly in and around the Maasai Mara, delivering consistent world-class sightings.</p>
+                    {/* Full Width Matrix Section */}
+                    <div className="kenya-wow-matrix-section">
+                        <div className="kenya-wow-matrix">
+                            <h4 className="kenya-wow-matrix-title">KENYA WORKS EXCEPTIONALLY WELL FOR:</h4>
+                            <div className="kenya-wow-matrix-grid">
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>First time safari travelers</span>
+                                </div>
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>Luxury honeymooners</span>
+                                </div>
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>Photographers</span>
+                                </div>
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>Families</span>
+                                </div>
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>Multi generational travelers</span>
+                                </div>
+                                <div className="kenya-wow-matrix-item">
+                                    <CheckCircle size={14} className="kenya-wow-item-icon" />
+                                    <span>Repeat Africa travelers</span>
                                 </div>
                             </div>
-
-                            <div className="kenya-narrative-pillar">
-                                <div className="kenya-pillar-num">02</div>
-                                <div className="kenya-pillar-body">
-                                    <h3>Superior Infrastructure</h3>
-                                    <p>Highly developed systems including strong internal flight networks, experienced safari operators, excellent conservation areas, and Africa's most respected guides.</p>
-                                </div>
-                            </div>
                         </div>
+                    </div>
 
-                        <div className="kenya-narrative-target-section">
-                            <p className="kenya-target-label">KENYA WORKS EXCEPTIONALLY WELL FOR:</p>
-                            <div className="kenya-target-tags">
-                                <span>First time safari travelers</span>
-                                <span>Luxury honeymooners</span>
-                                <span>Photographers</span>
-                                <span>Families</span>
-                                <span>Multi generational travelers</span>
-                                <span>Repeat Africa travelers</span>
-                            </div>
-                        </div>
-
-                        <div className="kenya-narrative-footer">
+                    <div className="kenya-wow-footer-section">
+                        <div className="kenya-wow-footer">
                             <p>The pacing can feel easier than some neighboring countries while still delivering extraordinary wildlife experiences.</p>
                         </div>
                     </div>
@@ -410,7 +452,7 @@ function LuxuryKenyaSafari() {
                     <div className="kenya-truth-content">
                         <span className="kenya-truth-eyebrow">Managing Expectations</span>
                         <h2 className="kenya-truth-h2">WHAT KENYA SAFARI IS NOT</h2>
-                        
+
                         <div className="kenya-truth-negatives">
                             <div className="kenya-truth-neg-item">
                                 <span className="kenya-neg-slash">/</span>
@@ -447,118 +489,144 @@ function LuxuryKenyaSafari() {
                 </div>
             </section>
 
-            {/* ── COMPARATIVE DUALITY SECTION ────────────────────────────────────────── */}
-            <section className="kenya-duality-section">
-                <div className="kenya-duality-header">
-                    <span className="kenya-duality-eyebrow">The Regional Benchmark</span>
-                    <h2 className="kenya-duality-h2">WHAT MAKES KENYA DIFFERENT FROM TANZANIA</h2>
-                    <p className="kenya-duality-lead">
-                        Kenya and Tanzania share ecosystems, wildlife movement, and migration patterns, but the experience feels very different.
-                    </p>
+            {/* ── SIGNATURE DUALITY DOSSIER (KENYA VS TANZANIA) ───────────────────────── */}
+            <section className="kenya-vs-section">
+                <div className="kenya-vs-bg-watermark">COMPARISON</div>
+
+                <div className="kenya-vs-header">
+                    <span className="kenya-vs-eyebrow">Strategic Analysis</span>
+                    <h2 className="kenya-vs-h2">WHAT MAKES KENYA DIFFERENT FROM TANZANIA</h2>
                 </div>
 
-                <div className="kenya-duality-split">
-                    <div className="kenya-duality-side kenya-side">
-                        <div className="kenya-side-label">THE KENYA EXPERIENCE</div>
-                        <div className="kenya-duality-list">
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Easier logistics</p>
+                <div className="kenya-vs-container">
+                    <div className="kenya-vs-split">
+                        <div className="kenya-vs-emblem">VS</div>
+
+                        {/* Kenya Column */}
+                        <div className="kenya-vs-col kenya-focus">
+                            <div className="kenya-vs-branding">
+                                <span className="kenya-vs-num">01</span>
+                                <h3 className="kenya-vs-title">THE KENYA EXPERIENCE</h3>
                             </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Shorter transfer times</p>
+                            <div className="kenya-vs-points">
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Easier logistics</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Shorter transfer times</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Concentrated wildlife viewing</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Strong conservancy systems</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Shorter high impact itineraries</p>
+                                </div>
                             </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Concentrated wildlife viewing</p>
+                        </div>
+
+                        {/* Tanzania Column */}
+                        <div className="kenya-vs-col tanzania-focus">
+                            <div className="kenya-vs-branding">
+                                <span className="kenya-vs-num">02</span>
+                                <h3 className="kenya-vs-title">THE TANZANIA EXPERIENCE</h3>
                             </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Strong conservancy systems</p>
-                            </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Shorter high impact itineraries</p>
+                            <div className="kenya-vs-points">
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Larger landscapes</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>More expansive routing</p>
+                                </div>
+                                <div className="kenya-vs-point">
+                                    <span className="kenya-vs-bullet"></span>
+                                    <p>Longer immersive journeys</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="kenya-duality-side tanzania-side">
-                        <div className="kenya-side-label">THE TANZANIA EXPERIENCE</div>
-                        <div className="kenya-duality-list">
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Larger landscapes</p>
-                            </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>More expansive routing</p>
-                            </div>
-                            <div className="kenya-duality-item">
-                                <span className="kenya-item-dot"></span>
-                                <p>Longer immersive journeys</p>
-                            </div>
+                    <div className="kenya-vs-conclusion">
+                        <div className="kenya-vs-conclusion-inner">
+                            <h4>Neither is universally better.</h4>
+                            <p>The right choice depends on timing, travel style, and expectations.</p>
                         </div>
-                    </div>
-                </div>
-
-                <div className="kenya-duality-pivot">
-                    <div className="kenya-pivot-inner">
-                        <h3 className="kenya-pivot-h3">Neither is universally better.</h3>
-                        <p className="kenya-pivot-text">
-                            The right choice depends on timing, travel style, and expectations.
-                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* ── GEOGRAPHIC FOLIO SECTION (REGIONS) ────────────────────────────────────── */}
-            <section className="kenya-regions-folio">
+            {/* ── THE REGIONAL SHOWCASE SLIDER (REGIONS) ────────────────────────────────── */}
+            <section className="kenya-regions-sector">
                 <div className="kenya-inner">
-                    <div className="kenya-folio-header">
-                        <span className="kenya-folio-eyebrow">The Regional Strategy</span>
-                        <h2 className="kenya-folio-h2">BEST LUXURY SAFARI REGIONS IN KENYA</h2>
-                        <p className="kenya-folio-lead">
-                            Kenya's regions each deliver completely different experiences. Where you stay defines what you see and how the safari feels.
-                        </p>
+                    <div className="collection-header">
+                        <span className="collection-eyebrow">The Regional Strategy</span>
+                        <h2 className="collection-h2">BEST LUXURY SAFARI REGIONS</h2>
+                        <div className="collection-line"></div>
                     </div>
 
-                    <div className="kenya-folio-stack">
+                    <div className="regions-slider-wrap">
                         {regions.map((region, i) => (
-                            <div key={i} className={`kenya-folio-card kenya-tier-${region.tier}`}>
-                                <div className="kenya-folio-card-inner">
-                                    <div className="kenya-folio-main">
-                                        <div className="kenya-folio-title-wrap">
-                                            <span className="kenya-folio-index">0{i + 1}</span>
-                                            <h3 className="kenya-folio-name">{region.name}</h3>
-                                        </div>
-                                        <p className="kenya-folio-intro">{region.intro}</p>
-                                        
+                            <div 
+                                key={i} 
+                                className={`region-slide ${i === activeRegion ? 'active' : ''} ${i < activeRegion ? 'prev' : ''} ${i > activeRegion ? 'next' : ''}`}
+                            >
+                                <div className={`region-dossier tier-${region.tier}`}>
+                                    <div className="region-meta">
+                                        <span className="region-num">0{i + 1}</span>
+                                        <span className="region-tier-tag">{region.tier}</span>
+                                    </div>
+                                    
+                                    <div className="region-main-content">
+                                        <h3 className="region-name">{region.name}</h3>
+                                        <p className="region-intro-text">{region.intro}</p>
+
                                         {region.knownFor && (
-                                            <div className="kenya-folio-known">
-                                                <span className="kenya-folio-sublabel">KNOWN FOR:</span>
-                                                <ul className="kenya-folio-list">
+                                            <div className="region-known-block">
+                                                <span className="region-sublabel">SIGNATURE FEATURES:</span>
+                                                <div className="region-tag-cloud">
                                                     {region.knownFor.map((item, idx) => (
-                                                        <li key={idx}>{item}</li>
+                                                        <span key={idx} className="region-tag">{item}</span>
                                                     ))}
-                                                </ul>
+                                                </div>
                                             </div>
                                         )}
-                                        
+
+                                        <div className="region-suitability">
+                                            <span className="region-sublabel">EXPERT SUITABILITY:</span>
+                                            <p className="region-suitability-text">{region.worksWellFor}</p>
+                                        </div>
+
                                         {region.conclusion && (
-                                            <p className="kenya-folio-conclusion">{region.conclusion}</p>
+                                            <p className="region-conclusion-quote">{region.conclusion}</p>
                                         )}
                                     </div>
-
-                                    {region.worksWellFor && (
-                                        <div className="kenya-folio-works">
-                                            <span className="kenya-folio-sublabel">WORKS PARTICULARLY WELL FOR:</span>
-                                            <p className="kenya-folio-works-text">{region.worksWellFor}</p>
-                                        </div>
-                                    )}
                                 </div>
                             </div>
+                        ))}
+                    </div>
+
+                    {/* Slider Progress Controls */}
+                    <div className="regions-controls">
+                        {regions.map((_, i) => (
+                            <button 
+                                key={i} 
+                                className={`region-dot ${i === activeRegion ? 'active' : ''}`}
+                                onClick={() => setActiveRegion(i)}
+                            >
+                                <span className="dot-label">0{i + 1}</span>
+                                <div className="dot-bar">
+                                    <div className="dot-fill" style={{ width: i === activeRegion ? '100%' : '0%' }}></div>
+                                </div>
+                            </button>
                         ))}
                     </div>
 
@@ -577,107 +645,134 @@ function LuxuryKenyaSafari() {
             </section>
 
             {/* ── THE STRATEGIC CHOICE (LUXURY & PLACEMENT) ──────────────────────────────── */}
-            <section className="kenya-editorial-spread">
-                <div className="kenya-inner">
-                    <div className="kenya-editorial-grid">
-                        <div className="kenya-editorial-block kenya-bg-navy">
-                            <span className="kenya-editorial-eyebrow">The Luxury Paradox</span>
-                            <h2 className="kenya-editorial-h2-white">WHY LUXURY CHANGES THE SAFARI EXPERIENCE</h2>
-                            <p className="kenya-editorial-p-white">
+            {/* ── THE STRATEGIC OVERLAY (LUXURY & PLACEMENT) ──────────────────────────────── */}
+            <section className="kenya-strategy-blueprint">
+                <div className="strategy-bg-watermark">POSITIONING</div>
+                <div className="strategy-container">
+                    <div className="strategy-visual-wrap">
+                        
+                        {/* Card 01: The Luxury Paradox */}
+                        <div className="strategy-card card-dark-glass">
+                            <div className="strategy-marker">SECTION // 01</div>
+                            <span className="strategy-eyebrow">The Luxury Paradox</span>
+                            <h2 className="strategy-h2">WHY LUXURY CHANGES THE SAFARI EXPERIENCE</h2>
+                            <p className="strategy-p">
                                 Luxury safari is not simply about beautiful rooms. It is often operational rather than cosmetic.
                             </p>
-                            <div className="kenya-editorial-list-white">
-                                <p className="kenya-list-label">LUXURY OFTEN CHANGES:</p>
-                                <ul>
-                                    <li>Wildlife access</li>
-                                    <li>Guide quality</li>
-                                    <li>Conservancy access</li>
-                                    <li>Flexibility</li>
-                                    <li>Transfer efficiency</li>
-                                    <li>Crowd levels</li>
-                                </ul>
+                            <div className="strategy-detail">
+                                <span className="strategy-label">LUXURY OFTEN CHANGES:</span>
+                                <div className="strategy-grid">
+                                    <div className="strategy-item">Wildlife access</div>
+                                    <div className="strategy-item">Guide quality</div>
+                                    <div className="strategy-item">Conservancy access</div>
+                                    <div className="strategy-item">Flexibility</div>
+                                    <div className="strategy-item">Transfer efficiency</div>
+                                    <div className="strategy-item">Crowd levels</div>
+                                </div>
                             </div>
-                            <p className="kenya-editorial-footer-white">
-                                Safari is one of the few trips in the world where where you sleep can completely change what you see.
-                            </p>
+                            <div className="strategy-footer">
+                                <p>"Safari is one of the few trips in the world where where you sleep can completely change what you see."</p>
+                            </div>
                         </div>
 
-                        <div className="kenya-editorial-block kenya-border-navy">
-                            <span className="kenya-editorial-eyebrow">Strategic Positioning</span>
-                            <h2 className="kenya-editorial-h2">WHY CAMP PLACEMENT MATTERS MORE THAN CAMP BRAND</h2>
-                            <p className="kenya-editorial-p">
+                        {/* Card 02: Strategic Positioning */}
+                        <div className="strategy-card card-light-solid">
+                            <div className="strategy-marker">TACTICAL // 02</div>
+                            <span className="strategy-eyebrow">Strategic Positioning</span>
+                            <h2 className="strategy-h2">WHY CAMP PLACEMENT MATTERS MORE THAN BRAND</h2>
+                            <p className="strategy-p">
                                 Many travelers focus almost entirely on camp photography. But in safari planning, camp location often matters far more than aesthetics.
                             </p>
-                            <div className="kenya-editorial-highlight">
+                            <div className="strategy-quote">
                                 "The wrong camp in the right region can still create the wrong safari."
                             </div>
-                            <div className="kenya-editorial-list">
-                                <p className="kenya-list-label">POSITIONING AFFECTS:</p>
-                                <ul>
-                                    <li>Wildlife access</li>
-                                    <li>Migration timing</li>
-                                    <li>Drive times</li>
-                                    <li>Crowd density</li>
-                                    <li>Safari rhythm</li>
-                                </ul>
+                            <div className="strategy-detail">
+                                <span className="strategy-label">POSITIONING AFFECTS:</span>
+                                <div className="strategy-grid">
+                                    <div className="strategy-item">Wildlife access</div>
+                                    <div className="strategy-item">Migration timing</div>
+                                    <div className="strategy-item">Drive times</div>
+                                    <div className="strategy-item">Crowd density</div>
+                                    <div className="strategy-item">Safari rhythm</div>
+                                </div>
                             </div>
-                            <p className="kenya-editorial-footer">
-                                This is one of the biggest mistakes travelers make when booking safari without experienced guidance.
-                            </p>
+                            <div className="strategy-footer">
+                                <p>This is one of the biggest mistakes travelers make when booking safari without experienced guidance.</p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
             {/* ── THE SAFARI SOUL (DAILY LIFE & WAKING UP) ───────────────────────────────── */}
-            <section className="kenya-soul-spread">
-                <div className="kenya-soul-bg"></div>
-                <div className="kenya-inner kenya-relative">
-                    <div className="kenya-soul-layout">
-                        <div className="kenya-soul-content">
-                            <span className="kenya-soul-eyebrow">The Rhythm of the Bush</span>
-                            <h2 className="kenya-soul-h2">WHAT DAILY LIFE ON SAFARI ACTUALLY LOOKS LIKE</h2>
-                            <p className="kenya-soul-p">
-                                Most days begin before sunrise with coffee quietly delivered to your tent while camp is still dark. Vehicles leave early because wildlife activity is strongest in the cooler morning hours.
-                            </p>
-                            <p className="kenya-soul-p">
-                                Afternoons are slower. Travelers often spend time reading, watching wildlife from camp, or simply sitting quietly overlooking the plains. Evenings return to lanterns, fire pits, storytelling, and silence under enormous African skies.
-                            </p>
-                            <div className="kenya-soul-quote">
-                                "Safari changes the way people think about silence."
+            {/* ── THE ATMOSPHERIC IMMERSION (SAFARI SOUL) ───────────────────────────────── */}
+            <section className="kenya-soul-immersion">
+                <div className="soul-watermark">IMMERSION</div>
+                <div className="kenya-inner">
+                    <div className="soul-header">
+                        <span className="soul-eyebrow">The Rhythm of the Bush</span>
+                        <h2 className="soul-h2">THE DAILY SAFARI RHYTHM</h2>
+                    </div>
+
+                    <div className="soul-layout">
+                        <div className="soul-narrative">
+                            
+                            <div className="soul-block">
+                                <span className="soul-time">DAWN // 05:30 AM</span>
+                                <p className="soul-p">Most days begin before sunrise with coffee quietly delivered to your tent while camp is still dark. Vehicles leave early because wildlife activity is strongest in the cooler morning hours.</p>
                             </div>
-                            <p className="kenya-soul-footer">
+
+                            <div className="soul-quote-box">
+                                <div className="soul-quote-inner">
+                                    "Safari changes the way people think about silence."
+                                </div>
+                            </div>
+
+                            <div className="soul-block">
+                                <span className="soul-time">AFTERNOON // 01:00 PM</span>
+                                <p className="soul-p">Afternoons are slower. Travelers often spend time reading, watching wildlife from camp, or simply sitting quietly overlooking the plains. Evenings return to lanterns, fire pits, storytelling, and silence under enormous African skies.</p>
+                            </div>
+
+                            <div className="soul-conclusion">
                                 Many travelers arrive expecting constant activity. Instead, safari often becomes one of the most emotionally grounding trips they have ever taken.
-                            </p>
+                            </div>
                         </div>
 
-                        <div className="kenya-soul-feature">
-                            <div className="kenya-soul-feature-inner">
-                                <h3 className="kenya-feature-h3">Waking Up in the Maasai Mara</h3>
-                                <p className="kenya-feature-p">
-                                    Before sunrise, camp is quiet except for distant wildlife moving through darkness. Lanterns flicker outside tents while the sky slowly changes color across the plains.
-                                </p>
-                                <p className="kenya-feature-p">
-                                    There are mornings when elephants walk directly through camp. Evenings where lions can be heard after dinner.
-                                </p>
-                                <div className="kenya-feature-tag">
-                                    Luxury in Kenya is not disconnected from nature. The best camps make travelers feel immersed inside it.
-                                </div>
+                        {/* Sticky Feature Card */}
+                        <div className="soul-feature-card">
+                            <h3 className="soul-feature-h3">Waking Up in the Mara</h3>
+                            <p className="soul-feature-p">
+                                Before sunrise, camp is quiet except for distant wildlife moving through darkness. Lanterns flicker outside tents while the sky slowly changes color across the plains.
+                            </p>
+                            <p className="soul-feature-p">
+                                There are mornings when elephants walk directly through camp. Evenings where lions can be heard after dinner.
+                            </p>
+                            <div className="soul-feature-seal">
+                                Luxury in Kenya is not disconnected from nature. The best camps make travelers feel immersed inside it.
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── THE LOGISTICS BLUEPRINT (USA & NAIROBI) ─────────────────────────────────── */}
-            <section className="kenya-logistics-spread">
+            {/* ── THE LOGISTICS DOSSIER (USA & NAIROBI) ───────────────────────────────── */}
+            <section className="kenya-logistics-dossier">
                 <div className="kenya-inner">
-                    <div className="kenya-logistics-grid">
-                        <div className="kenya-logistics-card">
-                            <h2 className="kenya-logistics-h2">PLANNING FROM THE UNITED STATES</h2>
-                            <div className="kenya-logistics-flights">
-                                <span className="kenya-logistics-label">PRIMARY GATEWAYS:</span>
-                                <div className="kenya-gateway-tags">
+                    <div className="logistics-header">
+                        <span className="logistics-eyebrow">The Tactical Blueprint</span>
+                        <h2 className="logistics-h2">LOGISTICS & ARRIVAL</h2>
+                    </div>
+
+                    <div className="logistics-grid">
+                        
+                        {/* USA Planning Card */}
+                        <div className="logistics-card dossier-usa">
+                            <div className="dossier-marker">NAIROBI VIA USA</div>
+                            <h3 className="logistics-card-h3">PLANNING FROM THE UNITED STATES</h3>
+                            <div className="logistics-gateways">
+                                <span className="logistics-label">PRIMARY GATEWAYS:</span>
+                                <div className="gateway-cluster">
                                     <span>New York</span>
                                     <span>Atlanta</span>
                                     <span>Washington DC</span>
@@ -685,71 +780,75 @@ function LuxuryKenyaSafari() {
                                     <span>Miami</span>
                                 </div>
                             </div>
-                            <p className="kenya-logistics-p">
+                            <p className="logistics-p">
                                 Flights typically connect through Europe, the Middle East, or African gateways before arriving in Nairobi.
                             </p>
-                            <div className="kenya-logistics-ideal">
-                                <Clock size={20} />
+                            <div className="logistics-highlight">
+                                <Clock size={20} className="logistics-icon" />
                                 <span>7 to 10 days is ideal for most luxury travelers.</span>
                             </div>
                         </div>
 
-                        <div className="kenya-logistics-card kenya-bg-soft">
-                            <h2 className="kenya-logistics-h2">LUXURY NAIROBI BEFORE SAFARI</h2>
-                            <p className="kenya-logistics-p">
+                        {/* Card 02: Nairobi Hub */}
+                        <div className="logistics-card dossier-nairobi">
+                            <div className="dossier-marker">THE ARRIVAL EXPERIENCE</div>
+                            <h3 className="logistics-card-h3">THE NAIROBI HUB</h3>
+                            <p className="logistics-p">
                                 Nairobi is often treated as simply an arrival point, but for luxury travelers it can become an important part of the experience.
                             </p>
-                            <div className="kenya-logistics-experiences">
-                                <span className="kenya-logistics-label">POPULAR LUXURY EXPERIENCES:</span>
-                                <ul>
-                                    <li>Giraffe Manor</li>
-                                    <li>Hemingways Nairobi</li>
-                                    <li>Karen Blixen experiences</li>
-                                    <li>Private cultural touring</li>
-                                    <li>Fine dining experiences</li>
-                                </ul>
+                            <div className="logistics-special">
+                                <span className="logistics-label">POPULAR LUXURY EXPERIENCES:</span>
+                                <div className="gateway-cluster">
+                                    <span>Giraffe Manor</span>
+                                    <span>Hemingways Nairobi</span>
+                                    <span>Karen Blixen experiences</span>
+                                    <span>Private cultural touring</span>
+                                    <span>Fine dining</span>
+                                </div>
                             </div>
-                            <p className="kenya-logistics-footer">
-                                Spending one or two nights in Nairobi before safari often creates a much smoother transition into East Africa.
-                            </p>
+                            <div className="logistics-quote">
+                                "Spending one or two nights in Nairobi before safari often creates a much smoother transition into East Africa."
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── THE INTELLIGENT TRAVELER (WORRIES & TIMING) ───────────────────────────── */}
-            <section className="kenya-traveler-spread">
+            <section className="kenya-traveler-intel">
                 <div className="kenya-inner">
-                    <div className="kenya-traveler-header">
-                        <h2 className="kenya-traveler-h2">THE INTELLIGENT TRAVELER'S PERSPECTIVE</h2>
-                        <div className="kenya-bar-center"></div>
+                    <div className="traveler-header">
+                        <span className="traveler-eyebrow">The Expert Perspective</span>
+                        <h2 className="traveler-h2">THE INTELLIGENT TRAVELER</h2>
                     </div>
 
-                    <div className="kenya-traveler-grid">
-                        <div className="kenya-traveler-card">
-                            <div className="kenya-traveler-icon"><ShieldCheck size={32} /></div>
-                            <h3 className="kenya-traveler-h3">Common Concerns</h3>
-                            <p className="kenya-traveler-p">Many first time safari travelers worry about safety, bugs, bush flights, bathrooms, malaria, food quality, medical care, and comfort levels.</p>
-                            <div className="kenya-traveler-reality">
-                                <span className="kenya-reality-label">THE REALITY:</span>
+                    <div className="traveler-grid">
+                        {/* Concerns Card */}
+                        <div className="traveler-card card-outlined">
+                            <div className="traveler-icon-wrap"><ShieldCheck size={32} /></div>
+                            <h3 className="traveler-card-h3">Common Concerns</h3>
+                            <p className="traveler-p">Many first time safari travelers worry about safety, bugs, bush flights, bathrooms, malaria, food quality, medical care, and comfort levels.</p>
+                            <div className="traveler-reality">
+                                <span className="traveler-label">THE REALITY:</span>
                                 <p>Luxury safari camps today are often highly sophisticated operations with exceptional hospitality and comfort. Many travelers are surprised by how refined the experience feels.</p>
                             </div>
                         </div>
 
-                        <div className="kenya-traveler-card kenya-bg-dark text-white">
-                            <div className="kenya-traveler-icon"><Calendar size={32} style={{ color: '#93c5fd' }} /></div>
-                            <h3 className="kenya-traveler-h3">The Migration Myth</h3>
-                            <p className="kenya-traveler-p">The Great Migration is extraordinary, but peak river crossing season is not automatically the best safari for every traveler.</p>
-                            <div className="kenya-traveler-list">
-                                <span className="kenya-list-label">DURING PEAK SEASON:</span>
-                                <ul>
-                                    <li>Pricing is highest</li>
-                                    <li>Camps sell out far in advance</li>
-                                    <li>Vehicle density can increase</li>
-                                    <li>Safari pacing can feel more intense</li>
-                                </ul>
+                        {/* Migration Myth Card */}
+                        <div className="traveler-card card-filled">
+                            <div className="traveler-icon-wrap"><Calendar size={32} /></div>
+                            <h3 className="traveler-card-h3">The Migration Myth</h3>
+                            <p className="traveler-p">The Great Migration is extraordinary, but peak river crossing season is not automatically the best safari for every traveler.</p>
+                            <div className="traveler-stats">
+                                <span className="traveler-label">CONSIDERATIONS:</span>
+                                <div className="traveler-stats-grid">
+                                    <div className="stat-item">Pricing is highest</div>
+                                    <div className="stat-item">Camps sell out early</div>
+                                    <div className="stat-item">Vehicle density increases</div>
+                                    <div className="stat-item">Intense safari pacing</div>
+                                </div>
                             </div>
-                            <p className="kenya-traveler-alternative">
+                            <p className="traveler-alternative">
                                 The best safari is not always the most famous season. It is the season that best matches the traveler. Some prefer January–March or the Green Season.
                             </p>
                         </div>
@@ -759,159 +858,158 @@ function LuxuryKenyaSafari() {
 
 
 
-            {/* ── BEST TIME TO VISIT ────────────────────────────────────────────────────── */}
-            <section className="kenya-section kenya-bg-dark">
-                <div className="kenya-bg-pattern"></div>
-                <div className="kenya-inner kenya-relative">
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <span className="kenya-eyebrow">
-                            <Calendar size={14} />
-                            Timing Your Safari
-                        </span>
-                        <h2 className="kenya-h2-white">Best Time for a Luxury Kenya Safari</h2>
-                        <div className="kenya-bar-white kenya-bar-center"></div>
+            {/* ── STRATEGIC TIMING (SEASONS - WOW UI) ─────────────────────────────────── */}
+            <section className="kenya-seasons-timing">
+                <div className="kenya-inner">
+                    <div className="seasons-header">
+                        <span className="seasons-eyebrow">The Expert Schedule</span>
+                        <h2 className="seasons-h2">BEST TIME TO VISIT KENYA</h2>
                     </div>
 
-                    <div className="kenya-seasons-grid">
-                        <div className="kenya-season-card kenya-season-peak">
-                            <div className="kenya-season-icon"><Binoculars size={28} /></div>
-                            <h3 className="kenya-season-title">July – October</h3>
-                            <p className="kenya-season-desc">Peak Great Migration season in the Maasai Mara. Best for river crossings, predator activity, and first time safari travelers.</p>
-                            <ul className="kenya-season-list">
-                                <li><CheckCircle size={14} /> River crossings</li>
-                                <li><CheckCircle size={14} /> Predator activity</li>
-                                <li><CheckCircle size={14} /> First-time travelers</li>
-                            </ul>
+                    <div className="seasons-grid">
+                        <div className="season-card">
+                            <div className="season-icon"><Binoculars size={32} /></div>
+                            <span className="season-months">JULY – OCTOBER</span>
+                            <h3 className="season-title">Peak Migration</h3>
+                            <p className="season-p">Peak Great Migration season in the Maasai Mara. Best for river crossings, predator activity, and first time safari travelers.</p>
+                            <div className="season-highlights">
+                                <span>River crossings</span>
+                                <span>Predator activity</span>
+                                <span>First-time travelers</span>
+                            </div>
                         </div>
 
-                        <div className="kenya-season-card kenya-season-excellent">
-                            <div className="kenya-season-icon"><Star size={28} /></div>
-                            <h3 className="kenya-season-title">January – March</h3>
-                            <p className="kenya-season-desc">Excellent wildlife viewing with fewer crowds. Best for photographers, repeat safari travelers, and luxury value seekers.</p>
-                            <ul className="kenya-season-list">
-                                <li><CheckCircle size={14} /> Photographers</li>
-                                <li><CheckCircle size={14} /> Fewer crowds</li>
-                                <li><CheckCircle size={14} /> Repeat travelers</li>
-                            </ul>
+                        <div className="season-card">
+                            <div className="season-icon"><Star size={32} /></div>
+                            <span className="season-months">JANUARY – MARCH</span>
+                            <h3 className="season-title">The Secret Season</h3>
+                            <p className="season-p">Excellent wildlife viewing with fewer crowds. Best for photographers, repeat safari travelers, and luxury value seekers.</p>
+                            <div className="season-highlights">
+                                <span>Photographers</span>
+                                <span>Fewer crowds</span>
+                                <span>Repeat travelers</span>
+                            </div>
                         </div>
 
-                        <div className="kenya-season-card kenya-season-green">
-                            <div className="kenya-season-icon"><TreePine size={28} /></div>
-                            <h3 className="kenya-season-title">April – May</h3>
-                            <p className="kenya-season-desc">Green season with lower pricing, dramatic scenery, and fewer tourists. Requires flexibility with weather.</p>
-                            <ul className="kenya-season-list">
-                                <li><CheckCircle size={14} /> Lower pricing</li>
-                                <li><CheckCircle size={14} /> Dramatic scenery</li>
-                                <li><CheckCircle size={14} /> Fewer tourists</li>
-                            </ul>
+                        <div className="season-card">
+                            <div className="season-icon"><TreePine size={32} /></div>
+                            <span className="season-months">APRIL – MAY</span>
+                            <h3 className="season-title">The Green Season</h3>
+                            <p className="season-p">Green season with lower pricing, dramatic scenery, and fewer tourists. Requires flexibility with weather.</p>
+                            <div className="season-highlights">
+                                <span>Lower pricing</span>
+                                <span>Dramatic scenery</span>
+                                <span>Fewer tourists</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="kenya-migration-note">
-                        <p className="kenya-migration-title">The Great Migration in Kenya</p>
-                        <p className="kenya-p-white">River crossings in the Maasai Mara typically occur between July and October, though movement is never guaranteed. This is where positioning matters. The difference between being properly positioned and poorly positioned can define the entire safari experience.</p>
+                    <div className="migration-ledger">
+                        <h4 className="migration-h4">THE MIGRATION LEDGER</h4>
+                        <p className="migration-p">
+                            River crossings in the Maasai Mara typically occur between July and October, though movement is never guaranteed. This is where positioning matters. The difference between being properly positioned and poorly positioned can define the entire safari experience.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* ── PRICING TABLE ─────────────────────────────────────────────────────────── */}
-            <section className="kenya-comparison-premium">
+            {/* ── INVESTMENT LEDGER (PRICING - WOW UI) ──────────────────────────────────── */}
+            <section className="kenya-pricing-investment">
                 <div className="kenya-inner">
-                    <div className="kenya-comparison-header">
-                        <h2 className="kenya-h2">Luxury Kenya Safari Cost</h2>
-                        <div className="kenya-bar kenya-bar-center"></div>
-                        <p className="kenya-p" style={{ maxWidth: '720px', margin: '0 auto' }}>
+                    <div className="pricing-header">
+                        <h2 className="pricing-h2">LUXURY SAFARI INVESTMENT</h2>
+                        <p className="pricing-lead">
                             Luxury Kenya safari pricing varies significantly based on season, camp level, private versus shared safari, internal flights, migration timing, and conservancy access.
                         </p>
                     </div>
 
-                    <div className="kenya-table-container">
-                        <table className="kenya-premium-table">
+                    <div className="pricing-ledger">
+                        <table className="ledger-table">
                             <thead>
                                 <tr>
-                                    <th>Safari Level</th>
-                                    <th>Experience</th>
-                                    <th>Typical Investment</th>
+                                    <th>SAFARI LEVEL</th>
+                                    <th>THE EXPERIENCE</th>
+                                    <th style={{ textAlign: 'right' }}>TYPICAL INVESTMENT</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {pricing.map((row, i) => (
                                     <tr key={i}>
-                                        <td className="kenya-level-cell">
-                                            <span className={`kenya-tier-badge kenya-tier-${row.tier}`}>{row.level}</span>
+                                        <td className="level-cell">
+                                            <span className={`tier-badge tier-${row.tier}`}>{row.level}</span>
                                         </td>
-                                        <td>{row.experience}</td>
-                                        <td className="kenya-investment-cell">{row.investment}</td>
+                                        <td className="exp-cell">{row.experience}</td>
+                                        <td className="inv-cell">{row.investment}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
 
-                    <div className="kenya-pricing-detail-grid">
-                        <div className="kenya-pricing-detail-card">
-                            <p className="kenya-pricing-detail-amount">~$25,000 Per Couple</p>
-                            <p className="kenya-pricing-detail-title">Entry Luxury Level</p>
-                            <ul className="kenya-pricing-detail-list">
-                                <li><CheckCircle size={14} /> Upscale camps</li>
-                                <li><CheckCircle size={14} /> Shared game drives</li>
-                                <li><CheckCircle size={14} /> Internal flights</li>
-                                <li><CheckCircle size={14} /> Shorter itineraries</li>
-                            </ul>
-                            <p className="kenya-pricing-detail-note">Excellent first luxury safari level.</p>
-                        </div>
-                        <div className="kenya-pricing-detail-card kenya-pricing-featured">
-                            <p className="kenya-pricing-detail-amount">~$50,000 Per Couple</p>
-                            <p className="kenya-pricing-detail-title">Premium Level</p>
-                            <ul className="kenya-pricing-detail-list">
-                                <li><CheckCircle size={14} /> Stronger camp positioning</li>
-                                <li><CheckCircle size={14} /> Luxury conservancies</li>
-                                <li><CheckCircle size={14} /> Private guiding options</li>
-                                <li><CheckCircle size={14} /> More refined routing</li>
-                            </ul>
-                            <p className="kenya-pricing-detail-note">This is where safari becomes dramatically more personalized.</p>
-                        </div>
-                        <div className="kenya-pricing-detail-card">
-                            <p className="kenya-pricing-detail-amount">$100,000+ Per Couple</p>
-                            <p className="kenya-pricing-detail-title">Ultra Luxury Level</p>
-                            <ul className="kenya-pricing-detail-list">
-                                <li><CheckCircle size={14} /> Private charter aircraft</li>
-                                <li><CheckCircle size={14} /> Exclusive use villas</li>
-                                <li><CheckCircle size={14} /> Elite conservancies</li>
-                                <li><CheckCircle size={14} /> Private photography guides</li>
-                            </ul>
-                            <p className="kenya-pricing-detail-note">At this level, safari becomes almost entirely tailored around the traveler.</p>
+                    <div className="investment-breakdown">
+                        <div className="investment-card">
+                            <span className="inv-amount">~$50,000</span>
+                            <span className="inv-label">PER COUPLE // PREMIUM LEVEL</span>
+                            <div className="inv-features">
+                                <span>Stronger Positioning</span>
+                                <span>Luxury Conservancies</span>
+                                <span>Private Guiding</span>
+                                <span>Refined Routing</span>
+                            </div>
+                            <p className="inv-note">This is where safari becomes dramatically more personalized.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── BEST LUXURY CAMPS ─────────────────────────────────────────────────────── */}
-            <section className="kenya-section kenya-bg-soft">
+            {/* ── MUSEUM COLLECTION (CAMPS - WOW UI) ──────────────────────────────────── */}
+            <section className="kenya-collection-selection">
                 <div className="kenya-inner">
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <span className="kenya-eyebrow" style={{ justifyContent: 'center' }}>
-                            <Gem size={14} />
-                            Where to Stay
-                        </span>
-                        <h2 className="kenya-h2">Best Luxury Safari Camps in Kenya</h2>
-                        <div className="kenya-bar kenya-bar-center"></div>
-                        <p className="kenya-p" style={{ maxWidth: '680px', margin: '0 auto' }}>
-                            Beautiful camp photography does not always create the best safari experience. Camp location often matters far more than aesthetics.
-                        </p>
+                    <div className="collection-header">
+                        <span className="collection-eyebrow">The Expert Selection</span>
+                        <h2 className="collection-h2">THE KENYA CAMP COLLECTION</h2>
+                        <div className="collection-line"></div>
                     </div>
 
-                    <div className="kenya-camps-grid">
-                        {camps.map((camp, i) => (
-                            <div key={i} className="kenya-camp-card">
-                                <div className="kenya-camp-number">{String(i + 1).padStart(2, '0')}</div>
-                                <h3 className="kenya-camp-name">{camp.name}</h3>
-                                <p className="kenya-camp-desc">{camp.desc}</p>
+                    <div className="collection-grid">
+                        <div className="collection-tier-block">
+                            <div className="tier-header">
+                                <span className="tier-label">ULTRA LUXURY</span>
+                                <div className="tier-accent"></div>
                             </div>
-                        ))}
+                            <div className="tier-camps">
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Angama Mara</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Segera Retreat</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Arijiju</span></div>
+                            </div>
+                        </div>
+
+                        <div className="collection-tier-block">
+                            <div className="tier-header">
+                                <span className="tier-label">ICONIC HERITAGE</span>
+                                <div className="tier-accent"></div>
+                            </div>
+                            <div className="tier-camps">
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Cottar's 1920s Camp</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Mara Plains Camp</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">ol Donyo Lodge</span></div>
+                            </div>
+                        </div>
+
+                        <div className="collection-tier-block">
+                            <div className="tier-header">
+                                <span className="tier-label">BOUTIQUE LUXURY</span>
+                                <div className="tier-accent"></div>
+                            </div>
+                            <div className="tier-camps">
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Sala's Camp</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Solio Lodge</span></div>
+                                <div className="collection-card"><div className="card-dot"></div><span className="camp-name">Sasaab</span></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="kenya-camp-warning">
+                    <div className="kenya-camp-warning" style={{ marginTop: '100px' }}>
                         <div className="kenya-camp-warning-inner">
                             <ShieldCheck size={22} style={{ color: 'var(--kenya-navy)', flexShrink: 0 }} />
                             <div>
