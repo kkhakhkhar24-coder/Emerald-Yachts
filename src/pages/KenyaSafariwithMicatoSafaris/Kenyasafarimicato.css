@@ -374,73 +374,151 @@
 /* ═══════════════════════════════════════════════════════════════════
    WHY MICATO — 6-column masonry grid
    ═══════════════════════════════════════════════════════════════════ */
-.KenSafari-micato-grid {
+/* ── WHY MICATO — 2 Rows, 3 Columns ── */
+.KenSafari-micato-bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.KenSafari-micato-card {
-  background: var(--bg-soft, rgb(231, 243, 245));
-  border: 1px solid rgba(39, 68, 114, 0.07);
-  border-radius: 20px;
-  padding: 36px 30px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.KenSafari-micato-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 50px rgba(39, 68, 114, 0.1);
+.KenSafari-micato-item {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   background: #ffffff;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-height: 280px; /* Ensure uniform height for the grid */
 }
 
-.KenSafari-micato-card-dark {
+.KenSafari-micato-item-inner {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.KenSafari-micato-statement-card {
   background: var(--navy) !important;
+  color: #ffffff;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+/* Card Styling Refinements */
+.KenSafari-micato-item-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.03;
+  transition: opacity 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.KenSafari-micato-item:hover .KenSafari-micato-item-bg {
+  opacity: 0.08;
+  transform: scale(1.05);
+}
+
+.KenSafari-micato-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px -12px rgba(39, 68, 114, 0.15);
+  border-color: rgba(39, 68, 114, 0.2);
 }
 
 .KenSafari-micato-icon {
-  width: 52px;
-  height: 52px;
-  background: var(--navy);
-  border-radius: 14px;
+  width: 56px;
+  height: 56px;
+  background: rgba(39, 68, 114, 0.05);
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  margin-bottom: 20px;
+  color: var(--navy);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
 }
 
-.KenSafari-micato-card-dark .KenSafari-micato-icon {
-  background: rgba(255, 255, 255, 0.15);
+.KenSafari-micato-item:hover .KenSafari-micato-icon {
+  background: var(--navy);
+  color: #ffffff;
+  transform: rotate(-10deg) scale(1.1);
 }
 
 .KenSafari-micato-title {
-  font-size: 20px !important;
+  font-size: 24px !important;
   font-weight: 700 !important;
   color: var(--navy) !important;
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.01em;
 }
 
 .KenSafari-micato-text {
-  font-size: 16px !important;
-  line-height: 1.65 !important;
-  color: #274472cc !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  color: rgba(39, 68, 114, 0.7) !important;
   margin: 0;
+  font-weight: 400 !important;
+}
+
+/* Specific Card Backgrounds (Visual Hints) */
+.KenSafari-micato-guiding .KenSafari-micato-item-bg {
+  background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80');
+}
+
+.KenSafari-micato-camps .KenSafari-micato-item-bg {
+  background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80');
+}
+
+/* Statement Card Styling */
+.KenSafari-micato-statement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.KenSafari-micato-quote-icon {
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .KenSafari-micato-statement {
-  font-size: 18px !important;
+  font-size: 22px !important;
   font-weight: 500 !important;
   color: #ffffff !important;
-  line-height: 1.6 !important;
+  line-height: 1.4 !important;
   font-style: italic;
-  text-align: center;
-  margin: 0;
+  margin: 0 !important;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .KenSafari-micato-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .KenSafari-micato-bento {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .KenSafari-micato-item {
+    min-height: auto;
+  }
+  .KenSafari-micato-item-inner {
+    padding: 30px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -1113,52 +1191,114 @@
 /* ═══════════════════════════════════════════════════════════════════
    HOW MICATO COMPARES
    ═══════════════════════════════════════════════════════════════════ */
+/* ── HOW MICATO COMPARES — Premium Editorial Grid ── */
+/* ── HOW MICATO COMPARES — Luxury Editorial UI ── */
 .KenSafari-compare-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1000px;
+  gap: 40px;
+  max-width: 1240px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .KenSafari-compare-card {
   background: #ffffff;
-  border: 1px solid rgba(39, 68, 114, 0.08);
-  border-radius: 20px;
-  padding: 36px 30px;
-  text-align: center;
-  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 40px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 
+    0 4px 6px -1px rgba(39, 68, 114, 0.05),
+    0 10px 30px -10px rgba(39, 68, 114, 0.08);
+  border: 1px solid rgba(39, 68, 114, 0.05);
 }
 
 .KenSafari-compare-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+  transform: translateY(-12px);
+  box-shadow: 
+    0 30px 60px -15px rgba(39, 68, 114, 0.15),
+    0 10px 20px -10px rgba(39, 68, 114, 0.1);
 }
 
-.KenSafari-compare-featured {
-  background: var(--navy) !important;
-  border-color: transparent !important;
+.KenSafari-compare-image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.KenSafari-compare-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.KenSafari-compare-card:hover .KenSafari-compare-img {
+  transform: scale(1.1);
+}
+
+/* Floating Badge */
+.KenSafari-compare-badge-wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 }
 
 .KenSafari-compare-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(39, 68, 114, 0.9); /* Navy with slight transparency */
+  backdrop-filter: blur(8px);
   color: #ffffff;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 5px 14px;
+  letter-spacing: 0.15em;
+  padding: 8px 24px;
   border-radius: 100px;
-  margin-bottom: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+/* Featured Micato Accent */
+.KenSafari-compare-featured .KenSafari-compare-badge {
+  background: var(--navy); /* Gold accent */
+  color: #ffffff;
+  border: none;
+}
+
+.KenSafari-compare-card-content {
+  padding: 36px 32px 48px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #ffffff;
+}
+
+.KenSafari-compare-featured .KenSafari-compare-card-content {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.KenSafari-compare-header {
+  margin-bottom: 24px;
 }
 
 .KenSafari-compare-title {
-  font-size: 22px !important;
+  font-size: 26px !important;
   font-weight: 700 !important;
   color: var(--navy) !important;
-  margin: 0 0 0 0;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+  line-height: 1.2 !important;
 }
 
 .KenSafari-compare-featured .KenSafari-compare-title {
@@ -1167,25 +1307,54 @@
 
 .KenSafari-compare-divider {
   width: 40px;
-  height: 2px;
-  background: rgba(39, 68, 114, 0.2);
-  margin: 16px auto;
-  border-radius: 2px;
+  height: 3px;
+  background: rgba(39, 68, 114, 0.1);
+  margin: auto;
+  border-radius: 100px;
 }
 
 .KenSafari-compare-featured .KenSafari-compare-divider {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--navy);
+}
+
+.KenSafari-compare-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.KenSafari-compare-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.KenSafari-compare-check {
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
 .KenSafari-compare-desc {
-  font-size: 15px !important;
-  color: #274472cc !important;
+  font-size: 16px !important;
+  color: #64748b !important;
   line-height: 1.6 !important;
-  margin: 0;
+  margin: 0 !important;
+  font-weight: 400 !important;
 }
 
 .KenSafari-compare-featured .KenSafari-compare-desc {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+
+@media (max-width: 1100px) {
+  .KenSafari-compare-grid {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 500px;
+    gap: 48px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════

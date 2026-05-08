@@ -539,6 +539,7 @@ const KenyaSafariMicato = () => {
       >
         <div className="KenSafari-container">
           <div className="KenSafari-section-header">
+            <span className="KenSafari-why-eyebrow">Unmatched Excellence</span>
             <h2 className="KenSafari-h2">Why We Recommend Micato Safaris</h2>
             <div className="KenSafari-accent-line" />
             <p className="KenSafari-body-text" style={{ marginTop: "20px" }}>
@@ -547,64 +548,93 @@ const KenyaSafariMicato = () => {
             </p>
           </div>
 
-          <div className="KenSafari-micato-grid">
-            <div className="KenSafari-micato-card">
-              <div className="KenSafari-micato-icon">
-                <Award size={28} strokeWidth={1.5} />
+          <div className="KenSafari-micato-bento">
+            {/* Card 1: Elite Guiding */}
+            <div className="KenSafari-micato-item KenSafari-micato-guiding">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-icon">
+                  <Award size={28} strokeWidth={1.5} />
+                </div>
+                <h3 className="KenSafari-micato-title">Elite Guiding</h3>
+                <p className="KenSafari-micato-text">
+                  The guide determines the overall experience. Micato's guides are
+                  among the most skilled in Kenya.
+                </p>
+                <div className="KenSafari-micato-item-bg" />
               </div>
-              <h3 className="KenSafari-micato-title">Elite Guiding</h3>
-              <p className="KenSafari-micato-text">
-                The guide determines the overall experience. Micato's guides are
-                among the most skilled in Kenya.
-              </p>
             </div>
-            <div className="KenSafari-micato-card">
-              <div className="KenSafari-micato-icon">
-                <MapPin size={28} strokeWidth={1.5} />
+
+            {/* Card 2: Relationships */}
+            <div className="KenSafari-micato-item KenSafari-micato-relationships">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-icon">
+                  <MapPin size={28} strokeWidth={1.5} />
+                </div>
+                <h3 className="KenSafari-micato-title">Deep-Rooted Relationships</h3>
+                <p className="KenSafari-micato-text">
+                  Decades of relationships in Kenya give Micato access and
+                  influence that newer operators simply cannot match.
+                </p>
+                <div className="KenSafari-micato-item-bg" />
               </div>
-              <h3 className="KenSafari-micato-title">
-                Deep-Rooted Relationships
-              </h3>
-              <p className="KenSafari-micato-text">
-                Decades of relationships in Kenya give Micato access and
-                influence that newer operators simply cannot match.
-              </p>
             </div>
-            <div className="KenSafari-micato-card">
-              <div className="KenSafari-micato-icon">
-                <Shield size={28} strokeWidth={1.5} />
+
+            {/* Card 3: Logistics */}
+            <div className="KenSafari-micato-item KenSafari-micato-logistics">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-icon">
+                  <Shield size={28} strokeWidth={1.5} />
+                </div>
+                <h3 className="KenSafari-micato-title">Seamless Logistics</h3>
+                <p className="KenSafari-micato-text">
+                  Every internal flight, transfer, and camp transition is managed
+                  with precision from start to finish.
+                </p>
+                <div className="KenSafari-micato-item-bg" />
               </div>
-              <h3 className="KenSafari-micato-title">Seamless Logistics</h3>
-              <p className="KenSafari-micato-text">
-                Every internal flight, transfer, and camp transition is managed
-                with precision from start to finish.
-              </p>
             </div>
-            <div className="KenSafari-micato-card">
-              <div className="KenSafari-micato-icon">
-                <Star size={28} strokeWidth={1.5} />
+
+            {/* Card 4: Camp Access */}
+            <div className="KenSafari-micato-item KenSafari-micato-camps">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-icon">
+                  <Star size={28} strokeWidth={1.5} />
+                </div>
+                <h3 className="KenSafari-micato-title">Premier Camp Access</h3>
+                <p className="KenSafari-micato-text">
+                  Access to the best camps in the most strategic locations across
+                  Kenya's top wildlife regions.
+                </p>
+                <div className="KenSafari-micato-item-bg" />
               </div>
-              <h3 className="KenSafari-micato-title">Premier Camp Access</h3>
-              <p className="KenSafari-micato-text">
-                Access to the best camps in the most strategic locations across
-                Kenya's top wildlife regions.
-              </p>
             </div>
-            <div className="KenSafari-micato-card">
-              <div className="KenSafari-micato-icon">
-                <Check size={28} strokeWidth={1.5} />
+
+            {/* Card 5: Consistent Delivery */}
+            <div className="KenSafari-micato-item KenSafari-micato-delivery">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-icon">
+                  <Check size={28} strokeWidth={1.5} />
+                </div>
+                <h3 className="KenSafari-micato-title">Consistent Delivery</h3>
+                <p className="KenSafari-micato-text">
+                  Consistent delivery across every itinerary. Micato is not
+                  competing with mid-market companies — it sits at the top.
+                </p>
+                <div className="KenSafari-micato-item-bg" />
               </div>
-              <h3 className="KenSafari-micato-title">Consistent Delivery</h3>
-              <p className="KenSafari-micato-text">
-                Consistent delivery across every itinerary. Micato is not
-                competing with mid-market companies — it sits at the top.
-              </p>
             </div>
-            <div className="KenSafari-micato-card KenSafari-micato-card-dark">
-              <p className="KenSafari-micato-statement">
-                Micato is not competing with mid-market safari companies. It
-                sits at the top of the luxury safari space.
-              </p>
+
+            {/* Card 6: Statement */}
+            <div className="KenSafari-micato-item KenSafari-micato-statement-card">
+              <div className="KenSafari-micato-item-inner">
+                <div className="KenSafari-micato-statement-content">
+                   <Quote size={32} className="KenSafari-micato-quote-icon" />
+                   <p className="KenSafari-micato-statement">
+                    Micato is not competing with mid-market safari companies. It
+                    sits at the top of the luxury safari space.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -951,30 +981,71 @@ const KenyaSafariMicato = () => {
           </div>
 
           <div className="KenSafari-compare-grid">
+            {/* Micato Safaris - Featured */}
             <div className="KenSafari-compare-card KenSafari-compare-featured">
-              <div className="KenSafari-compare-badge">Our Recommendation</div>
-              <h3 className="KenSafari-compare-title">Micato Safaris</h3>
-              <div className="KenSafari-compare-divider" />
-              <p className="KenSafari-compare-desc">
-                Known for consistency and guiding excellence. Especially strong
-                in Kenya.
-              </p>
+              <div className="KenSafari-compare-image-wrap">
+                <img src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/10/07223911/custom-safari-service-900x701.jpg" alt="Micato Safari Service" className="KenSafari-compare-img" />
+              </div>
+              <div className="KenSafari-compare-badge-wrap">
+                <span className="KenSafari-compare-badge">Our Primary Recommendation</span>
+              </div>
+              <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-header">
+                  <h3 className="KenSafari-compare-title">Micato Safaris</h3>
+                  <div className="KenSafari-compare-divider" />
+                </div>
+                <div className="KenSafari-compare-body">
+                  <div className="KenSafari-compare-highlight">
+                    <Check size={18} strokeWidth={2.5} className="KenSafari-compare-check" />
+                    <p className="KenSafari-compare-desc">
+                      Known for consistency and guiding excellence.
+                    </p>
+                  </div>
+                  <div className="KenSafari-compare-highlight">
+                    <Check size={18} strokeWidth={2.5} className="KenSafari-compare-check" />
+                    <p className="KenSafari-compare-desc">
+                      Especially strong in Kenya.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="KenSafari-compare-card-accent" />
             </div>
+
+            {/* Abercrombie & Kent */}
             <div className="KenSafari-compare-card">
-              <h3 className="KenSafari-compare-title">
-                Abercrombie &amp; Kent
-              </h3>
-              <div className="KenSafari-compare-divider" />
-              <p className="KenSafari-compare-desc">
-                Global luxury operator with structured itineraries.
-              </p>
+              <div className="KenSafari-compare-image-wrap">
+                <img src="https://storage.googleapis.com/stateless-www-live-traveldailymedia/2025/08/acbe2d97-ak_campaign_01-1500x780-1.jpg" alt="Abercrombie & Kent Safari" className="KenSafari-compare-img" />
+              </div>
+              <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-header">
+                  <h3 className="KenSafari-compare-title">Abercrombie & Kent</h3>
+                  <div className="KenSafari-compare-divider" />
+                </div>
+                <div className="KenSafari-compare-body">
+                  <p className="KenSafari-compare-desc">
+                    Global luxury operator with structured itineraries.
+                  </p>
+                </div>
+              </div>
             </div>
+
+            {/* &Beyond */}
             <div className="KenSafari-compare-card">
-              <h3 className="KenSafari-compare-title">&amp;Beyond</h3>
-              <div className="KenSafari-compare-divider" />
-              <p className="KenSafari-compare-desc">
-                Strong camp portfolio and conservation focus.
-              </p>
+              <div className="KenSafari-compare-image-wrap">
+                <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Kenya-Suyian-Lodge-Aerial-View-1_Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg" alt="&Beyond Safari" className="KenSafari-compare-img" />
+              </div>
+              <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-header">
+                  <h3 className="KenSafari-compare-title">&Beyond</h3>
+                  <div className="KenSafari-compare-divider" />
+                </div>
+                <div className="KenSafari-compare-body">
+                  <p className="KenSafari-compare-desc">
+                    Strong camp portfolio and conservation focus.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
