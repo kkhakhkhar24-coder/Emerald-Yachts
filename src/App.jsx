@@ -36,6 +36,7 @@ import RegentSevenSeasWorldCruiseGuide from "./pages/RegentSevenSeasWorldCruiseG
 import KenyaSafariMicato from "./pages/KenyaSafariwithMicatoSafaris/Kenyasafarimicato";
 import KenyaVsTanzaniaSafari from "./pages/KenyaVsTanzaniaSafari/KenyaVsTanzaniaSafari";
 import BestTimeGreatMigrationSafari from "./pages/BestTimeGreatMigrationSafari/BestTimeGreatMigrationSafari";
+import LuxuryKenyaSafari from "./pages/LuxuryKenyaSafari/LuxuryKenyaSafari";
 
 function App() {
   return (
@@ -161,6 +162,11 @@ function App() {
           <Route
             path="/best-time-great-migration-safari"
             element={<BestTimeGreatMigrationSafari />}
+          ></Route>
+
+          <Route
+            path="/luxury-kenya-safari"
+            element={<LuxuryKenyaSafari />}
           ></Route>
         </Routes>
       </BrowserRouter>
