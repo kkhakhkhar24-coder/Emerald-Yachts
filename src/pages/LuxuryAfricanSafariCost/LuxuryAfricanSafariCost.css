@@ -1,0 +1,3454 @@
+/* Luxury African Safari Cost CSS */
+
+:root {
+    --navy: #274472;
+    --navy-light: #274472cc;
+    --bg-white: #ffffff;
+    --bg-soft: rgb(231, 243, 245);
+    --bg-dark: #0f1c2e;
+    --bg-dark2: #1c2f4a;
+    --accent: #d4a373;
+    /* Subtle gold/tan accent for safari feel */
+    --text-main: #333333;
+    --text-light: #666666;
+}
+
+.lasc-root {
+    font-family: var(--font-body), sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.lasc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lasc-section {
+    padding: 60px 20px;
+}
+
+@media (max-width: 1024px) {
+    .lasc-section {
+        padding: 50px 15px;
+    }
+}
+
+/* Typography Base */
+.lasc-h1 {
+    font-family: var(--font-display), serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.lasc-h2 {
+    font-family: var(--font-display), serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.lasc-h3 {
+    font-family: var(--font-display), serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.lasc-p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--text-main);
+}
+
+.lasc-p-display {
+    font-family: var(--font-display), serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+@media (max-width: 1024px) {
+    .lasc-h1 {
+        font-size: 32px;
+    }
+
+    .lasc-h2 {
+        font-size: 28px;
+    }
+
+    .lasc-p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-h1 {
+        font-size: 26px;
+    }
+
+    .lasc-h2 {
+        font-size: 24px;
+    }
+
+    .lasc-p {
+        font-size: 16px;
+    }
+}
+
+/* Common Components */
+.lasc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-soft);
+    color: var(--navy);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.lasc-icon-left {
+    margin-right: 8px;
+}
+
+.lasc-btn-primary {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    padding: 18px 36px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.lasc-btn-primary:hover {
+    background: var(--bg-dark2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lasc-btn-secondary {
+    background: transparent;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lasc-btn-secondary:hover {
+    background: var(--navy);
+    color: white;
+}
+
+.lasc-bg-soft {
+    background-color: var(--bg-soft);
+}
+
+.lasc-bg-dark {
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+.lasc-bg-dark .lasc-h2,
+.lasc-bg-dark .lasc-h3,
+.lasc-bg-dark .lasc-p {
+    color: white;
+}
+
+.lasc-mt-sm {
+    margin-top: 10px;
+}
+
+.lasc-mt-md {
+    margin-top: 30px;
+}
+
+.lasc-bold {
+    font-weight: 700;
+}
+
+/* ── 1. HERO SECTION ── */
+.lasc-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 140px 20px 100px !important;
+    /* Increased padding to ensure no content is under navbar or clipped at bottom */
+}
+
+.lasc-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 10s linear;
+    z-index: 0;
+    transform: scale(1.1);
+}
+
+.lasc-hero-bg.active {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.lasc-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 28, 46, 0.6) 0%, rgba(15, 28, 46, 0.2) 50%, rgba(15, 28, 46, 0.6) 100%);
+    z-index: 2;
+}
+
+.lasc-hero-inner {
+    max-width: 900px;
+    position: relative;
+    z-index: 3;
+    animation: lasc-fadeInUp 1s ease-out;
+}
+
+.lasc-h1-hero {
+    color: #ffffff !important;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px !important;
+    font-size: 56px !important;
+    /* Slightly smaller for better fit */
+}
+
+.lasc-hero-text {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.lasc-hero-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    opacity: 0.9;
+    color: white;
+    line-height: 1.6;
+}
+
+.lasc-hero-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lasc-hero-details.expanded {
+    max-height: 1200px;
+    margin-top: 30px;
+}
+
+.lasc-snippet-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid var(--bg-soft);
+    border-radius: 12px;
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.lasc-snippet-header {
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
+}
+
+.lasc-snippet-title {
+    font-family: var(--font-display), serif;
+    color: var(--bg-soft) !important;
+    font-size: 26px !important;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lasc-accent-icon {
+    color: var(--bg-soft);
+    flex-shrink: 0;
+}
+
+.lasc-snippet-intro {
+    color: white !important;
+    font-size: 19px !important;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.lasc-snippet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.lasc-snippet-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lasc-feature-icon {
+    color: var(--bg-soft);
+    background: rgba(231, 243, 245, 0.1);
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.lasc-feature-text span {
+    display: block;
+    color: var(--bg-soft);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+.lasc-feature-text p {
+    color: white !important;
+    font-size: 15px !important;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+.lasc-expert-takeaway {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 3px solid var(--bg-soft);
+}
+
+.lasc-expert-badge {
+    display: inline-block;
+    background: var(--bg-soft);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.lasc-expert-quote {
+    color: white !important;
+    font-size: 17px !important;
+    font-style: italic;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.lasc-hero-toggle {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 4px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.lasc-hero-btns {
+    margin-top: 20px;
+}
+
+.lasc-cta-subtext {
+    margin-top: 15px;
+    font-size: 15px;
+    font-style: italic;
+    color: #ffffff;
+    /* Explicit white for visibility */
+    opacity: 0.9;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.lasc-hero .lasc-btn-primary {
+    background: #ffffff !important;
+    color: var(--navy) !important;
+}
+
+.lasc-hero .lasc-btn-primary:hover {
+    background: var(--bg-soft) !important;
+}
+
+.lasc-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes lasc-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-hero {
+        padding: 100px 15px 60px !important;
+        min-height: 100vh;
+        /* Reverted to 100vh but ensure it can grow */
+        height: auto;
+    }
+
+    .lasc-h1-hero {
+        font-size: 28px !important;
+        /* Slightly smaller for mobile */
+    }
+
+    .lasc-hero-text p {
+        font-size: 16px !important;
+    }
+
+    .lasc-snippet-card {
+        padding: 30px 20px;
+    }
+
+    .lasc-snippet-title {
+        font-size: 22px !important;
+    }
+
+    .lasc-snippet-intro {
+        font-size: 16px !important;
+    }
+
+    .lasc-snippet-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lasc-expert-quote {
+        font-size: 15px !important;
+    }
+
+    .lasc-hero-btns .lasc-btn-primary {
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
+
+/* ── 2. CONTINUOUS MARQUEE ── */
+.lasc-media-marquee {
+    background: var(--bg-soft);
+    padding: 15px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.lasc-media-marquee::before,
+.lasc-media-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.lasc-media-marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-soft), transparent);
+}
+
+.lasc-media-marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-soft), transparent);
+}
+
+.lasc-marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: lasc-marquee-scroll 30s linear infinite;
+}
+
+.lasc-marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding-right: 150px;
+    /* Crucial for seamless loop */
+}
+
+.lasc-marquee-content img {
+    height: 100px;
+    width: auto;
+    filter: none;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.lasc-marquee-content img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes lasc-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-media-marquee {
+        padding: 10px 0;
+    }
+
+    .lasc-marquee-content {
+        gap: 80px;
+        padding-right: 80px;
+    }
+
+    .lasc-marquee-content img {
+        height: 50px;
+    }
+}
+
+/* ── 3. WHY LUXURY AFRICAN SAFARIS COST MORE ── */
+.lasc-why-more {
+    background: var(--bg-white);
+    padding: 60px 20px;
+    /* Desktop padding */
+}
+
+.lasc-why-more-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-h2 {
+    color: var(--navy);
+    font-size: 48px;
+    /* Desktop h2 */
+    margin-bottom: 30px;
+    font-family: var(--font-display);
+    line-height: 1.2;
+}
+
+.lasc-p {
+    color: var(--bg-dark2);
+    font-size: 18px;
+    /* Desktop p */
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.lasc-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.lasc-why-intro-box {
+    position: sticky;
+    top: 100px;
+}
+
+.lasc-operational-layers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.lasc-layer-item {
+    background: var(--bg-soft);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.lasc-layer-item:hover {
+    background: var(--bg-white);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.05);
+    transform: translateY(-3px);
+    border-color: var(--navy);
+}
+
+.lasc-layer-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.lasc-layer-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-dark);
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+
+.lasc-layer-num {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--navy);
+    opacity: 0.05;
+    font-family: var(--font-display);
+    line-height: 1;
+}
+
+/* ── 5. CONCLUSION (Minimalist Side-by-Side Pill) ── */
+.lasc-conclusion-container {
+    max-width: 1000px;
+    /* Custom container width */
+    margin: 60px auto 0;
+    padding-bottom: 20px;
+}
+
+.lasc-pill-callout {
+    background: var(--bg-white);
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--bg-soft);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.05);
+}
+
+.lasc-pill-title {
+    font-size: 26px;
+    /* Scaled back up for full width */
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    text-align: right;
+    font-family: var(--font-display);
+}
+
+.lasc-pill-divider {
+    width: 1px;
+    height: 30px;
+    background: var(--bg-soft);
+    flex-shrink: 0;
+}
+
+.lasc-pill-text {
+    font-size: 18px;
+    /* Scaled back up for full width */
+    color: var(--bg-dark);
+    line-height: 1.6;
+    font-family: var(--font-body);
+    max-width: 600px;
+}
+
+/* Responsive for Full-Width Pill */
+@media (max-width: 1024px) {
+    .lasc-pill-callout {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .lasc-pill-title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .lasc-pill-divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .lasc-pill-text {
+        font-size: 16px;
+    }
+}
+
+.lasc-conclusion-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive for Why Cost More Section */
+@media (max-width: 1024px) {
+    .lasc-why-more {
+        padding: 50px 15px;
+        /* Tablet/Mobile padding */
+    }
+
+    .lasc-h2 {
+        font-size: 28px;
+        /* Tablet h2 */
+    }
+
+    .lasc-p {
+        font-size: 17px;
+        /* Tablet p */
+    }
+
+    .lasc-why-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .lasc-why-intro-box {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .lasc-conclusion-card {
+        padding: 30px;
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lasc-conclusion-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-h2 {
+        font-size: 26px;
+        /* Mobile h2 adjusted to user's 24px-26px range */
+    }
+
+    .lasc-p {
+        font-size: 16px;
+        /* Mobile p */
+    }
+
+    .lasc-operational-layers {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .lasc-layer-item {
+        padding: 15px;
+    }
+}
+
+/* ── 4. PRICING BREAKDOWN (Minimalist Side-by-Side Frames Design) ── */
+.lasc-frames-section {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+    /* Desktop padding */
+}
+
+.lasc-frames-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-frames-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lasc-frames-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.lasc-frame-panel {
+    background: var(--bg-white);
+    padding: 45px 35px;
+    border-left: 6px solid var(--navy);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.lasc-frame-panel:hover {
+    transform: translateX(10px);
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+}
+
+.lasc-frame-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.lasc-frame-icon {
+    color: var(--navy);
+}
+
+.lasc-frame-tier {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lasc-frame-desc {
+    font-size: 17px;
+    color: var(--bg-dark2);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.lasc-frame-price-box {
+    background: var(--bg-soft);
+    padding: 20px 25px;
+    border-radius: 4px;
+}
+
+.lasc-frame-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--navy);
+    font-family: var(--font-display);
+}
+
+.lasc-frame-unit {
+    display: block;
+    font-size: 13px;
+    color: var(--bg-dark2);
+    margin-top: 4px;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+/* Responsive for Minimalist Side-by-Side Frames */
+@media (max-width: 1024px) {
+    .lasc-frames-section {
+        padding: 50px 15px;
+        /* Tablet padding */
+    }
+
+    .lasc-h2-pricing {
+        font-size: 28px;
+        /* Tablet h2 */
+    }
+
+    .lasc-p-breakdown {
+        font-size: 17px;
+        /* Tablet p */
+    }
+
+    .lasc-frames-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-frames-section {
+        padding: 50px 15px;
+        /* Mobile padding */
+    }
+
+    .lasc-h2-pricing {
+        font-size: 24px;
+        /* Mobile h2 */
+    }
+
+    .lasc-p-breakdown {
+        font-size: 16px;
+        /* Mobile p */
+    }
+
+    .lasc-frames-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-frame-panel {
+        padding: 35px 25px;
+    }
+}
+
+/* ── 5. BUDGET EXAMPLES (Safari Itinerary Ledger Design) ── */
+.lasc-ledger-budget-section {
+    background: var(--bg-white);
+    padding: 60px 20px;
+    /* Desktop padding */
+}
+
+.lasc-ledger-budget-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-ledger-budget-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lasc-ledger-budget-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.lasc-ledger-budget-card {
+    background: var(--bg-white);
+    border: 1px solid var(--bg-soft);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.lasc-ledger-budget-card:hover {
+    border-color: var(--navy-light);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+}
+
+.lasc-ledger-budget-card--featured {
+    border-color: var(--navy-light);
+}
+
+.lasc-ledger-budget-head {
+    padding: 40px 30px 25px;
+    background: var(--bg-soft);
+}
+
+.lasc-ledger-budget-meta {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-light);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.lasc-ledger-budget-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--navy);
+    font-family: var(--font-display);
+}
+
+.lasc-ledger-budget-content {
+    padding: 40px 30px;
+    flex-grow: 1;
+}
+
+.lasc-ledger-budget-content--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.lasc-ledger-budget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lasc-ledger-budget-list li {
+    font-size: 17px;
+    color: var(--bg-dark2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.lasc-ledger-budget-check {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.lasc-ledger-budget-price-box {
+    padding: 30px;
+    border-top: 1px solid var(--bg-soft);
+}
+
+.lasc-ledger-budget-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--navy-light);
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.lasc-ledger-budget-value {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--navy);
+    font-family: var(--font-display);
+}
+
+.lasc-ledger-budget-unit {
+    font-size: 14px;
+    color: var(--bg-dark2);
+    opacity: 0.6;
+}
+
+/* Wide Card Adjustments */
+.lasc-ledger-budget-card--wide {
+    margin-top: 40px;
+}
+
+/* Responsive for Budget Ledger */
+@media (max-width: 1024px) {
+    .lasc-ledger-budget-section {
+        padding: 50px 15px;
+        /* Tablet padding */
+    }
+
+    .lasc-ledger-budget-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .lasc-ledger-budget-content--flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-ledger-budget-section {
+        padding: 50px 15px;
+        /* Mobile padding */
+    }
+
+    .lasc-ledger-budget-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-ledger-budget-title {
+        font-size: 22px;
+    }
+
+    .lasc-ledger-budget-list li {
+        font-size: 16px;
+    }
+
+    .lasc-ledger-budget-head,
+    .lasc-ledger-budget-content,
+    .lasc-ledger-budget-price-box {
+        padding: 30px 20px;
+    }
+}
+
+/* ── 6. WHY EXPENSIVE (Architectural Pillar Grid Design) ── */
+.lasc-why-section {
+    background: var(--bg-dark);
+    padding: 60px 20px;
+    /* Desktop padding */
+}
+
+.lasc-why-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-why-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.lasc-why-content .lasc-h2 {
+    font-size: 48px;
+    /* Desktop h2 */
+    color: var(--bg-white);
+    margin-bottom: 25px;
+}
+
+.lasc-why-content .lasc-p {
+    font-size: 18px;
+    /* Desktop p */
+    color: var(--bg-soft);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.lasc-why-pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.lasc-why-pillar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(231, 243, 245, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lasc-why-pillar:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--navy-light);
+    transform: translateY(-5px);
+}
+
+.lasc-why-pillar-icon {
+    color: var(--bg-soft);
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.lasc-why-pillar-text {
+    font-size: 15px;
+    /* Slightly smaller for 5 cols */
+    color: var(--bg-white);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.lasc-sleek-box {
+    margin-top: 80px;
+    background: var(--bg-dark2);
+    padding: 25px 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.lasc-sleek-line {
+    width: 40px;
+    height: 1px;
+    background: var(--bg-soft);
+    margin: 20px 0;
+    opacity: 0.6;
+}
+
+.lasc-sleek-text {
+    font-size: 18px;
+    color: var(--bg-soft);
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    margin: 0;
+}
+
+.lasc-sleek-main {
+    font-size: 32px;
+    color: var(--bg-white);
+    font-weight: 800;
+    font-family: var(--font-display);
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Tablet for Why Expensive */
+@media (max-width: 1024px) {
+    .lasc-why-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-why-content .lasc-h2 {
+        font-size: 28px;
+        /* Tablet h2 */
+    }
+
+    .lasc-why-content .lasc-p {
+        font-size: 17px;
+        /* Tablet p */
+    }
+
+    .lasc-why-pillar-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .lasc-sleek-box {
+        padding: 20px 15px;
+        margin-top: 60px;
+    }
+
+    .lasc-sleek-main {
+        font-size: 26px;
+    }
+}
+
+/* Mobile for Why Expensive */
+@media (max-width: 768px) {
+    .lasc-why-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-why-pillar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-why-content .lasc-h2 {
+        font-size: 24px;
+        /* Mobile h2 */
+    }
+
+    .lasc-why-content .lasc-p {
+        font-size: 16px;
+        /* Mobile p */
+    }
+
+    .lasc-why-content {
+        margin-bottom: 40px;
+    }
+
+    .lasc-sleek-box {
+        padding: 20px 15px;
+        margin-top: 50px;
+        border-radius: 12px;
+    }
+
+    .lasc-sleek-main {
+        font-size: 22px;
+    }
+
+    .lasc-sleek-text {
+        font-size: 16px;
+    }
+}
+
+/* ── 7. WHAT CHEAP SAFARIS MISS (Modular Grid Ledger Design) ── */
+.lasc-miss-section {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+}
+
+.lasc-miss-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-miss-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.lasc-miss-eyebrow {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.lasc-miss-header .lasc-h2 {
+    margin-bottom: 20px;
+}
+
+.lasc-miss-header .lasc-p {
+    margin-bottom: 10px;
+}
+
+.lasc-p-small {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lasc-miss-ledger {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.lasc-miss-ledger-item {
+    background: var(--bg-white);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    transition: all 0.3s ease;
+}
+
+.lasc-miss-ledger-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy-light);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.lasc-miss-ledger-icon {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.05);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.lasc-miss-ledger-text {
+    font-size: 17px;
+    /* This is the specific ledger text size, I'll keep it at 17-18 for readability */
+    font-weight: 600;
+    color: var(--bg-dark);
+}
+
+.lasc-split-callout {
+    background: var(--bg-dark);
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 35px 50px;
+    gap: 40px;
+    position: relative;
+    border-left: 4px solid var(--navy);
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.1);
+}
+
+.lasc-split-callout-left {
+    flex: 1.2;
+}
+
+.lasc-split-callout-left .lasc-p {
+    color: var(--bg-white);
+    opacity: 0.9;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.lasc-accent-text {
+    color: var(--bg-soft);
+    font-weight: 700;
+}
+
+.lasc-split-callout-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(231, 243, 245, 0.15);
+    flex-shrink: 0;
+}
+
+.lasc-split-callout-right {
+    flex: 0.8;
+}
+
+.lasc-split-callout-right .lasc-p-display {
+    color: var(--bg-soft);
+    font-weight: 700;
+    margin: 0;
+    font-family: var(--font-display);
+}
+
+/* Responsive for Modular Grid Ledger & Split Callout */
+@media (max-width: 1024px) {
+    .lasc-miss-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-miss-ledger {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .lasc-split-callout {
+        max-width: 100%;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .lasc-split-callout-left .lasc-p {
+        font-size: 17px;
+        /* Tablet p 17px */
+    }
+
+    .lasc-split-callout-right .lasc-p-display {
+        font-size: 19px;
+        /* Slightly larger for display p */
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-miss-ledger {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-split-callout {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .lasc-split-callout-left .lasc-p {
+        font-size: 16px;
+        /* Mobile p 16px */
+    }
+
+    .lasc-split-callout-divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .lasc-split-callout-right .lasc-p-display {
+        font-size: 18px;
+        /* Mobile display p */
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-operational-main {
+        padding: 35px 20px;
+    }
+
+    .lasc-operational-title {
+        font-size: 24px;
+    }
+
+    .lasc-operational-main .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-operational-main .lasc-p-display {
+        font-size: 18px;
+    }
+
+    .lasc-operational-footer {
+        gap: 15px;
+    }
+
+    .lasc-operational-line {
+        width: 40px;
+    }
+}
+
+/* ── 8. KENYA VS TANZANIA (Modernist Architectural Ledger Design) ── */
+.lasc-ledger-section {
+    background: var(--bg-white);
+    padding: 60px 20px;
+}
+
+.lasc-ledger-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-ledger-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.lasc-ledger-eyebrow {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-light);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.lasc-ledger-header-line {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 30px auto 0 auto;
+}
+
+.lasc-ledger-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.lasc-ledger-sheet {
+    flex: 1;
+    background: var(--bg-soft);
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.lasc-ledger-sheet:hover {
+    transform: translateY(-10px);
+}
+
+.lasc-sheet-dark {
+    background: var(--navy);
+}
+
+.lasc-ledger-sheet-inner {
+    background: var(--bg-white);
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 2px;
+}
+
+.lasc-sheet-dark .lasc-ledger-sheet-inner {
+    background: var(--bg-dark);
+    color: var(--bg-white);
+}
+
+.lasc-ledger-sheet-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lasc-ledger-icon-wrap {
+    width: 54px;
+    height: 54px;
+    background: var(--bg-soft);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.lasc-sheet-dark .lasc-ledger-icon-wrap {
+    background: var(--bg-dark2);
+    color: var(--bg-soft);
+}
+
+.lasc-ledger-sheet-head .lasc-h3 {
+    font-size: 28px;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.lasc-sheet-dark .lasc-h3 {
+    color: var(--bg-white);
+    text-align: left;
+}
+
+.lasc-ledger-sheet-body {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.lasc-ledger-label {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--navy-light);
+    margin: 0;
+    opacity: 0.8;
+}
+
+.lasc-sheet-dark .lasc-ledger-label {
+    color: var(--bg-soft);
+}
+
+.lasc-ledger-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lasc-ledger-list li {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--bg-dark2);
+}
+
+.lasc-sheet-dark .lasc-ledger-list li {
+    color: var(--bg-white);
+}
+
+.lasc-ledger-list li svg {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.lasc-sheet-dark .lasc-ledger-list li svg {
+    color: var(--bg-soft);
+}
+
+.lasc-ledger-insight {
+    padding: 25px;
+    background: var(--bg-soft);
+    border-radius: 4px;
+    position: relative;
+}
+
+.lasc-sheet-dark .lasc-ledger-insight {
+    background: var(--bg-dark2);
+}
+
+.lasc-ledger-insight-tag {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--navy);
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+.lasc-sheet-dark .lasc-ledger-insight-tag {
+    background: var(--bg-soft);
+    color: var(--navy);
+}
+
+.lasc-ledger-insight .lasc-p {
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--bg-dark2);
+}
+
+.lasc-sheet-dark .lasc-ledger-insight .lasc-p {
+    color: var(--bg-white);
+    opacity: 0.8;
+}
+
+/* ── Premium Floating CTA Bar ── */
+.lasc-premium-cta {
+    background: var(--bg-soft);
+    padding: 40px 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.04);
+}
+
+.lasc-premium-cta-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lasc-premium-cta-tag {
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--navy-light);
+    letter-spacing: 3px;
+    opacity: 0.6;
+}
+
+.lasc-premium-cta-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--navy);
+    margin: 0;
+}
+
+.lasc-premium-cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: var(--navy);
+    color: var(--bg-white);
+    padding: 18px 35px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lasc-premium-cta-btn:hover {
+    background: var(--bg-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.2);
+}
+
+.lasc-premium-cta-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.lasc-premium-cta-btn:hover .lasc-premium-cta-icon {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive for Ledger Design */
+@media (max-width: 1024px) {
+    .lasc-ledger-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-ledger-header .lasc-h2 {
+        font-size: 28px;
+    }
+
+    .lasc-ledger-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lasc-ledger-sheet-inner {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .lasc-ledger-sheet-head .lasc-h3 {
+        font-size: 26px;
+    }
+
+    .lasc-ledger-sheet-body {
+        gap: 25px;
+    }
+
+    .lasc-ledger-sheet-body .lasc-p {
+        font-size: 17px;
+    }
+
+    .lasc-premium-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+        gap: 35px;
+    }
+
+    .lasc-premium-cta-title {
+        font-size: 20px;
+    }
+
+    .lasc-premium-cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-ledger-header .lasc-h2 {
+        font-size: 24px;
+    }
+
+    .lasc-ledger-sheet-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .lasc-ledger-sheet-head .lasc-h3 {
+        font-size: 22px;
+    }
+
+    .lasc-ledger-list li {
+        font-size: 16px;
+    }
+
+    .lasc-ledger-sheet-body .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-premium-cta {
+        padding: 40px 20px;
+    }
+
+    .lasc-premium-cta-title {
+        font-size: 18px;
+    }
+}
+
+.lasc-region-eyebrow {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.lasc-region-header .lasc-h2 {
+    font-size: 48px;
+    color: var(--navy);
+    margin-bottom: 25px;
+}
+
+.lasc-region-header-line {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 0 auto;
+}
+
+.lasc-region-spread {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+.lasc-region-card {
+    background: var(--bg-soft);
+    position: relative;
+    padding: 2px;
+    /* For accent border effect */
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lasc-region-card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--navy) 0%, transparent 50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.lasc-region-card-content {
+    background: var(--bg-white);
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lasc-region-card-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--bg-soft);
+    padding-bottom: 30px;
+}
+
+.lasc-region-icon-wrapper {
+    background: var(--navy);
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.lasc-region-card-head .lasc-h3 {
+    font-size: 26px;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.lasc-region-subhead {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.lasc-region-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.lasc-region-list li {
+    font-size: 18px;
+    color: var(--bg-dark2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.lasc-region-list-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--navy);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.lasc-region-context {
+    margin-top: auto;
+    padding: 25px;
+    background: var(--bg-soft);
+    display: flex;
+    gap: 15px;
+    border-left: 3px solid var(--navy);
+}
+
+.lasc-region-info-icon {
+    color: var(--navy);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.lasc-region-context p {
+    font-size: 16px;
+    color: var(--navy);
+    margin: 0;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.lasc-region-card--alt .lasc-region-icon-wrapper {
+    background: var(--bg-dark);
+}
+
+.lasc-region-card--alt .lasc-region-card-accent {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, transparent 50%);
+}
+
+.lasc-region-footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.lasc-region-cta-spread {
+    background: var(--bg-soft);
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.lasc-region-cta-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lasc-region-cta-icon {
+    color: var(--navy);
+}
+
+.lasc-region-cta-text .lasc-p {
+    font-size: 18px;
+    margin: 0;
+    color: var(--bg-dark2);
+    font-weight: 600;
+}
+
+.lasc-region-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--navy);
+    color: white;
+    padding: 18px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.lasc-region-action:hover {
+    background: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(15, 28, 46, 0.15);
+}
+
+/* Responsive for Signature Regional Spread */
+@media (max-width: 1024px) {
+    .lasc-region-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-region-header .lasc-h2 {
+        font-size: 28px;
+    }
+
+    .lasc-region-spread {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .lasc-region-card-content {
+        padding: 40px 30px;
+    }
+
+    .lasc-region-cta-spread {
+        flex-direction: column;
+        padding: 40px 30px;
+        text-align: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .lasc-region-action {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-region-header .lasc-h2 {
+        font-size: 24px;
+    }
+
+    .lasc-region-card-head .lasc-h3 {
+        font-size: 22px;
+    }
+
+    .lasc-region-list li {
+        font-size: 16px;
+    }
+
+    .lasc-region-cta-text .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-region-action {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+}
+
+/* ── 9. BEST VALUE TIMES (Dark Luxury Timeline) ── */
+.lasc-value-section {
+    background: var(--bg-dark);
+    padding: 60px 20px;
+}
+
+.lasc-value-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.lasc-value-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.lasc-value-header .lasc-h2 {
+    color: var(--bg-white);
+}
+
+.lasc-value-header .lasc-p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 18px;
+}
+
+/* Timeline wrapper */
+.lasc-timeline {
+    position: relative;
+}
+
+.lasc-timeline-spine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--navy-light), transparent);
+    transform: translateX(-50%);
+}
+
+/* Each row */
+.lasc-tl-row {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.lasc-tl-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Card */
+.lasc-tl-card {
+    background: var(--bg-dark2);
+    border: 1px solid rgba(39, 68, 114, 0.4);
+    padding: 40px 45px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.lasc-tl-card:hover {
+    border-color: var(--navy-light);
+    background: rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.lasc-tl-month {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.lasc-tl-card .lasc-h3 {
+    font-size: 22px;
+    color: var(--bg-white);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.lasc-tl-card .lasc-p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.65;
+}
+
+/* Node / dot */
+.lasc-tl-node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.lasc-tl-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid var(--bg-soft);
+    box-shadow: 0 0 0 4px rgba(39, 68, 114, 0.35);
+}
+
+/* Left-side card (JAN–MAR, NOVEMBER): card | node | spacer */
+.lasc-tl-row--left .lasc-tl-card {
+    text-align: right;
+}
+
+.lasc-tl-row--left .lasc-tl-month {
+    text-align: right;
+}
+
+/* Right-side card (JUNE): spacer | node | card */
+.lasc-tl-row--right .lasc-tl-card {
+    text-align: left;
+}
+
+.lasc-tl-row--right .lasc-tl-month {
+    text-align: left;
+}
+
+/* Tablet — collapse to single column */
+@media (max-width: 1024px) {
+    .lasc-value-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-value-header {
+        margin-bottom: 60px;
+    }
+
+    .lasc-value-header .lasc-p {
+        font-size: 17px;
+    }
+
+    .lasc-timeline-spine {
+        left: 28px;
+        transform: none;
+    }
+
+    .lasc-tl-row,
+    .lasc-tl-row--left,
+    .lasc-tl-row--right {
+        grid-template-columns: 56px 1fr;
+        grid-template-rows: auto;
+    }
+
+    .lasc-tl-row--left .lasc-tl-card,
+    .lasc-tl-row--right .lasc-tl-card {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .lasc-tl-row--left .lasc-tl-node,
+    .lasc-tl-row--right .lasc-tl-node {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .lasc-tl-row--left .lasc-tl-spacer,
+    .lasc-tl-row--right .lasc-tl-spacer {
+        display: none;
+    }
+
+    .lasc-tl-card {
+        padding: 30px 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-tl-card .lasc-h3 {
+        font-size: 20px;
+    }
+
+    .lasc-tl-card .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-tl-card {
+        padding: 25px 20px;
+    }
+}
+
+/* ── 10. MOST EXPENSIVE TIMES (Peak Alert Design - Soft BG) ── */
+.lasc-peak-section {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+}
+
+.lasc-peak-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lasc-peak-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.lasc-peak-header .lasc-h2 {
+    color: var(--navy);
+    margin-bottom: 18px;
+}
+
+.lasc-peak-header .lasc-p {
+    color: var(--text-light);
+    font-size: 18px;
+}
+
+.lasc-peak-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.lasc-peak-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-left: 4px solid var(--navy);
+    padding-left: 40px;
+}
+
+.lasc-peak-period {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--navy);
+    text-transform: uppercase;
+}
+
+.lasc-peak-left .lasc-h3 {
+    color: var(--navy);
+    font-size: 26px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.lasc-peak-left .lasc-p {
+    color: var(--text-main);
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.lasc-peak-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lasc-peak-pill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    padding: 24px 30px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.05);
+}
+
+.lasc-peak-pill:hover {
+    border-color: var(--navy);
+    transform: translateX(8px);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.1);
+}
+
+.lasc-peak-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.lasc-peak-pill-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.lasc-peak-pill-label {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.lasc-peak-pill-sub {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-peak-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-peak-header {
+        margin-bottom: 50px;
+    }
+
+    .lasc-peak-header .lasc-p {
+        font-size: 17px;
+    }
+
+    .lasc-peak-body {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lasc-peak-left {
+        padding-left: 25px;
+    }
+
+    .lasc-peak-left .lasc-h3 {
+        font-size: 22px;
+    }
+
+    .lasc-peak-left .lasc-p {
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-peak-pill {
+        padding: 20px 20px;
+    }
+
+    .lasc-peak-left .lasc-h3 {
+        font-size: 20px;
+    }
+
+    .lasc-peak-left .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-peak-pill-sub {
+        font-size: 13px;
+    }
+}
+
+/* ── 11. FAMILY & HONEYMOON (Luxury Canvas Design) ── */
+.lasc-canvas-section {
+    padding: 60px 20px;
+    background: var(--bg-white);
+}
+
+.lasc-canvas-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.lasc-canvas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.lasc-canvas-card {
+    padding: 60px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.lasc-canvas-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 70px rgba(15, 28, 46, 0.1);
+}
+
+.lasc-canvas-card--family {
+    background: var(--bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.lasc-canvas-card--honeymoon {
+    background: var(--bg-dark);
+    color: white;
+}
+
+.lasc-canvas-tag {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--navy-light);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.lasc-canvas-card--honeymoon .lasc-canvas-tag {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.lasc-canvas-card .lasc-h2 {
+    font-size: 40px; /* Adjusting for card layout */
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.lasc-canvas-card--family .lasc-h2 {
+    color: var(--navy);
+}
+
+.lasc-canvas-card--honeymoon .lasc-h2 {
+    color: white;
+}
+
+.lasc-canvas-card .lasc-p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.lasc-canvas-card--honeymoon .lasc-p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lasc-canvas-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lasc-canvas-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.lasc-canvas-icon {
+    color: var(--navy);
+}
+
+.lasc-canvas-card--honeymoon .lasc-canvas-icon {
+    color: var(--navy-light);
+}
+
+.lasc-canvas-footer {
+    margin-top: auto;
+    padding-top: 40px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lasc-canvas-card--honeymoon .lasc-canvas-footer {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.lasc-canvas-price-label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy-light);
+}
+
+.lasc-canvas-price-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.lasc-canvas-card--honeymoon .lasc-canvas-price-value {
+    color: white;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-canvas-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-canvas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-canvas-card {
+        padding: 45px 30px;
+    }
+
+    .lasc-canvas-card .lasc-h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-canvas-card .lasc-h2 {
+        font-size: 28px;
+    }
+
+    .lasc-canvas-card .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-canvas-price-value {
+        font-size: 18px;
+    }
+}
+
+/* ── 12. COMMON MISTAKES (Value Protection Grid) ── */
+.lasc-mistakes-section {
+    padding: 60px 20px;
+    background: var(--bg-dark2);
+}
+
+.lasc-mistakes-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lasc-mistakes-header {
+    text-align: center;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lasc-mistakes-header .lasc-h2 {
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.lasc-mistakes-header .lasc-h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: var(--navy-light);
+    border-radius: 2px;
+}
+
+.lasc-mistakes-header .lasc-p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.lasc-mistakes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.lasc-mistake-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lasc-mistake-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.lasc-mistake-icon-wrap {
+    color: #ff6b6b; /* Soft error red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.lasc-mistake-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.lasc-mistakes-footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+.lasc-mistakes-footer .lasc-p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-mistakes-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-mistakes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-mistake-card {
+        padding: 20px 25px;
+    }
+
+    .lasc-mistake-text {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-mistakes-header .lasc-h2 {
+        font-size: 24px;
+    }
+
+    .lasc-mistakes-header .lasc-p {
+        font-size: 16px;
+    }
+}
+
+/* ── 13. WHO THIS GUIDE IS FOR (Archetype Grid) ── */
+.lasc-audience-section {
+    padding: 60px 20px;
+    background: var(--bg-white);
+    border-top: 1px solid var(--bg-soft);
+}
+
+.lasc-audience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-audience-header {
+    text-align: center;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lasc-audience-header .lasc-h2 {
+    color: var(--navy);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.lasc-audience-header .lasc-h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--navy-light);
+    border-radius: 2px;
+}
+
+.lasc-audience-header .lasc-p {
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lasc-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.lasc-audience-card {
+    background: var(--bg-soft);
+    padding: 40px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+.lasc-audience-card:hover {
+    background: var(--bg-white);
+    border-color: var(--navy-light);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+}
+
+.lasc-audience-icon {
+    color: var(--navy);
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.lasc-audience-card:hover .lasc-audience-icon {
+    background: var(--navy);
+    color: white;
+    transform: scale(1.1);
+}
+
+.lasc-audience-text {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-audience-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .lasc-audience-header .lasc-h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-audience-card {
+        padding: 30px 20px;
+    }
+
+    .lasc-audience-header .lasc-h2 {
+        font-size: 26px;
+    }
+
+    .lasc-audience-text {
+        font-size: 16px;
+    }
+}
+
+/* ── 14. HOW WE DESIGN SAFARIS DIFFERENTLY (Strategic Spread) ── */
+.lasc-design-section {
+    padding: 60px 20px;
+    background: var(--bg-dark);
+}
+
+.lasc-design-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-design-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.lasc-design-header .lasc-h2 {
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.lasc-design-header .lasc-h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--navy-light);
+    border-radius: 2px;
+}
+
+.lasc-design-header .lasc-p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+}
+
+.lasc-design-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.lasc-design-subtitle {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.lasc-design-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lasc-design-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.lasc-design-icon {
+    color: var(--navy-light);
+}
+
+.lasc-vision-card {
+    background: var(--bg-dark2);
+    padding: 60px;
+    border-radius: 4px;
+    position: relative;
+    border-left: 1px solid rgba(39, 68, 114, 0.3);
+}
+
+.lasc-vision-quote {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.lasc-vision-sub {
+    font-size: 18px;
+    color: var(--navy-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lasc-vision-accent {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--navy-light), transparent);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-design-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-design-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .lasc-vision-card {
+        padding: 40px;
+    }
+
+    .lasc-vision-quote {
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-design-header .lasc-h2 {
+        font-size: 26px;
+    }
+
+    .lasc-design-list li {
+        font-size: 16px;
+    }
+
+    .lasc-vision-quote {
+        font-size: 20px;
+    }
+}
+
+/* ── 14. ABOUT ── */
+.lasc-about-card {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.lasc-about-img {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+}
+
+.lasc-about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.lasc-recognition-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.lasc-recognition-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.lasc-rec-icon {
+    color: var(--navy);
+}
+
+@media (max-width: 992px) {
+    .lasc-about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lasc-recognition-list li {
+        justify-content: center;
+    }
+}
+
+/* ── 15. FAQ ── */
+.lasc-faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lasc-faq-item {
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.lasc-faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+/* ── 16. FAQ SECTION ── */
+.lasc-faq-header-v2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.lasc-faq-simple-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-faq-item-simple {
+    border-bottom: 1px solid #cbd5e1;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lasc-faq-item-simple.lasc-open {
+    border-bottom-color: var(--navy);
+}
+
+.lasc-faq-q-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    padding: 12px 0;
+    line-height: 1.4;
+}
+
+.lasc-faq-icon-simple {
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+.lasc-faq-a-simple {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    animation: lascFadeIn 0.3s ease forwards;
+}
+
+.lasc-faq-a-inner-simple {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+@keyframes lascFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-faq-q-simple {
+        font-size: 16px;
+    }
+
+    .lasc-faq-a-inner-simple {
+        font-size: 16px;
+    }
+}
+
+/* ── 17. FINAL CTA (Soft Blue Editorial) ── */
+.lasc-final-cta-v5 {
+    padding: 100px 20px;
+    background: var(--bg-soft);
+}
+
+.lasc-cta-blue-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.lasc-final-cta-v5 .lasc-cta-tag {
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.lasc-final-cta-v5 .lasc-h2 {
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 35px;
+}
+
+.lasc-final-cta-v5 .lasc-p-display {
+    color: var(--bg-dark);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.lasc-cta-blue-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.lasc-final-cta-v5 .lasc-p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.lasc-final-cta-v5 .lasc-btn-primary {
+    background: var(--navy);
+    color: white;
+    padding: 22px 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.lasc-final-cta-v5 .lasc-btn-primary:hover {
+    background: var(--bg-dark);
+    transform: translateX(10px);
+}
+
+@media (max-width: 1024px) {
+    .lasc-cta-blue-inner {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .lasc-final-cta-v5 .lasc-btn-primary {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasc-final-cta-v5 {
+        padding: 60px 15px;
+    }
+
+    .lasc-final-cta-v5 .lasc-p-display {
+        font-size: 20px;
+    }
+}
+
+/* ── 17. INTERNAL LINKS ── */
+.lasc-internal-links {
+    padding: 60px 20px;
+}
+
+.lasc-link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.lasc-link-item {
+    background: var(--bg-soft);
+    color: var(--navy);
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.lasc-link-item:hover {
+    background: var(--navy);
+    color: white;
+}
+
+/* ── 15. ABOUT ANGELA HUGHES (Luxury Profiler) ── */
+.lasc-about-section {
+    padding: 60px 20px;
+    background: var(--bg-soft);
+}
+
+.lasc-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lasc-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.lasc-about-image-wrap {
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+}
+
+.lasc-about-portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 40px 80px rgba(15, 28, 46, 0.15);
+}
+
+.lasc-about-image-accent {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    border-bottom: 3px solid var(--navy);
+    border-right: 3px solid var(--navy);
+    z-index: -1;
+}
+
+.lasc-about-content .lasc-h2 {
+    color: var(--navy);
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+.lasc-about-content .lasc-p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.lasc-recognition-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.lasc-recognition-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.lasc-award-badge {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: var(--bg-white);
+    padding: 20px 25px;
+    border-radius: 4px;
+    border-left: 3px solid var(--navy-light);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.lasc-award-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.lasc-award-badge span {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+.lasc-about-signature {
+    padding-top: 30px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.lasc-signature-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.lasc-signature-sub {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .lasc-about-section {
+        padding: 50px 15px;
+    }
+
+    .lasc-about-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .lasc-about-image-wrap {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .lasc-about-content .lasc-h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lasc-about-content .lasc-h2 {
+        font-size: 28px;
+    }
+
+    .lasc-about-content .lasc-p {
+        font-size: 16px;
+    }
+
+    .lasc-signature-text {
+        font-size: 18px;
+    }
+}

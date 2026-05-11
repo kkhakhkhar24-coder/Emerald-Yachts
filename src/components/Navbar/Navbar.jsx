@@ -239,6 +239,14 @@ const Navbar = () => {
               >
                 Luxury Kenya Safari
               </NavLink>
+
+              <NavLink
+                to="/luxury-african-safari-cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury African Safari Cost
+              </NavLink>
             </div>
           </div>
         </div>
@@ -495,6 +503,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Luxury Kenya Safari
+            </NavLink>
+
+            <NavLink
+              to="/luxury-african-safari-cost"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury African Safari Cost
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
