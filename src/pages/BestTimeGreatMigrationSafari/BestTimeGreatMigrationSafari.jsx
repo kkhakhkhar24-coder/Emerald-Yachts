@@ -26,7 +26,12 @@ import TravelWeeklyLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_W
 import TravelPulseLogo from "../../assets/BestTimeGreatMigrationSafari/TravelPulse.webp";
 import InsiderReportLogo from "../../assets/BestTimeGreatMigrationSafari/Insider_Travel_Report.webp";
 import TravelAgeWestLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Age_West.webp";
-import AboutImage from "../../assets/image.webp";
+import Safari1 from "../../assets/BestTimeGreatMigrationSafari/Safari1.jpg"
+import Safari2 from "../../assets/BestTimeGreatMigrationSafari/Safari2.jpg"
+import Safari3 from "../../assets/BestTimeGreatMigrationSafari/Safari3.jpg"
+import CTAImage from "../../assets/BestTimeGreatMigrationSafari/Consultation.jpg"
+import Planning from "../../assets/BestTimeGreatMigrationSafari/Maasai_Mara.jpg"
+import AboutImage from "../../assets/Angela_Hughes.jpg"
 
 import "./BestTimeGreatMigrationSafari.css";
 
@@ -413,10 +418,7 @@ export default function BestTimeGreatMigrationSafari() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [currentHero, setCurrentHero] = useState(0);
 
-  const heroImages = [
-    "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=2000",
-    "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=2000",
-  ];
+  const heroImages = [Safari1, Safari2, Safari3];
 
   useEffect(() => {
     const heroTimer = setInterval(() => {
@@ -520,9 +522,6 @@ export default function BestTimeGreatMigrationSafari() {
               <button className="btgms-btn-primary">
                 Schedule a 15-Minute Great Migration Strategy Call
               </button>
-              <button className="btgms-btn-outline">
-                If your trip depends on timing, you need to get this right.
-              </button>
             </div>
           </div>
         </div>
@@ -532,103 +531,36 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-as-seen">
         <div className="btgms-container">
           <span className="btgms-seen-label-top">AS SEEN IN</span>
-          <div className="btgms-seen-bento">
-            <div className="btgms-seen-box">
-              <img
-                src={TravelWeeklyLogo}
-                alt="Travel Weekly"
-                className="btgms-seen-logo"
-              />
-              <span className="btgms-seen-text">Travel Weekly</span>
-            </div>
-            <div className="btgms-seen-box">
-              <img
-                src={TravelPulseLogo}
-                alt="TravelPulse"
-                className="btgms-seen-logo"
-              />
-              <span className="btgms-seen-text">TravelPulse</span>
-            </div>
-            <div className="btgms-seen-box">
-              <img
-                src={InsiderReportLogo}
-                alt="Insider Travel Report"
-                className="btgms-seen-logo"
-              />
-              <span className="btgms-seen-text">Insider Travel Report</span>
-            </div>
-            <div className="btgms-seen-box">
-              <img
-                src={TravelAgeWestLogo}
-                alt="Travel Age West"
-                className="btgms-seen-logo"
-              />
-              <span className="btgms-seen-text">Travel Age West</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY TRUST THIS GUIDE */}
-      <section className="btgms-section btgms-trust">
-        <div className="btgms-container">
-          <div className="btgms-trust-header-centered">
-            <h2 className="btgms-h2">Why Trust This Guide</h2>
-            <p className="btgms-p">
-              Angela Hughes brings real, on-the-ground experience to safari
-              planning, backed by decades of leadership and industry
-              recognition.
-            </p>
-          </div>
-          
-          <div className="btgms-trust-bento">
-            <div className="btgms-trust-main">
-              <div className="btgms-trust-cards">
-                {[
-                  { label: "40+ Years", text: "In the travel industry", icon: Compass },
-                  { label: "121+ Countries", text: "Traveled worldwide", icon: Globe },
-                  { label: "10+ Safaris", text: "Across Africa in recent years", icon: MapPin },
-                  { label: "CEO", text: "Trips & Ships Luxury Travel", icon: Award }
-                ].map((item, i) => (
-                  <div className="btgms-trust-card-v2" key={i}>
-                    <div className="btgms-trust-card-icon">
-                      <item.icon size={24} />
-                    </div>
-                    <div className="btgms-trust-card-info">
-                      <strong>{item.label}</strong>
-                      <span>{item.text}</span>
-                    </div>
+          <div className="btgms-seen-slider">
+            <div className="btgms-seen-track">
+              {[
+                { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                { logo: TravelPulseLogo, name: "TravelPulse" },
+                { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                { logo: TravelAgeWestLogo, name: "Travel Age West" },
+              ]
+                .concat([
+                  { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                  { logo: TravelPulseLogo, name: "TravelPulse" },
+                  { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                  { logo: TravelAgeWestLogo, name: "Travel Age West" },
+                ])
+                .map((item, index) => (
+                  <div key={index} className="btgms-seen-box">
+                    <img
+                      src={item.logo}
+                      alt={item.name}
+                      className="btgms-seen-logo"
+                    />
+                    <span className="btgms-seen-text">{item.name}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            <div className="btgms-trust-sidebar">
-              <div className="btgms-recognition-card">
-                <h3 className="btgms-h3">Industry Recognition</h3>
-                <ul className="btgms-recognition-list">
-                  <li>
-                    <CheckCircle2 size={18} />
-                    <span>Luxury Travel Influencer of the Year by Travel Leaders Network</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 size={18} />
-                    <span>Most Influential Women in Travel by TravelPulse</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 size={18} />
-                    <span>Multiple Magellan Awards from Travel Weekly</span>
-                  </li>
-                </ul>
-                <div className="btgms-recognition-footer">
-                  <Sparkles size={20} />
-                  <p>This is experience built over decades.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
       {/* WHAT IT ACTUALLY IS */}
       <section className="btgms-section btgms-definition">
@@ -657,7 +589,7 @@ export default function BestTimeGreatMigrationSafari() {
             </div>
             <div className="btgms-def-image">
               <img
-                src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1000"
+                src={Planning}
                 alt="Wildlife Movement"
               />
             </div>
@@ -849,7 +781,7 @@ export default function BestTimeGreatMigrationSafari() {
             <div className="btgms-design-image-container">
               <div className="btgms-design-image-wrapper">
                 <img
-                  src="https://images.unsplash.com/photo-1547448415-e9f5b28e570d?auto=format&fit=crop&q=80&w=1500"
+                  src={CTAImage}
                   alt="Safari Strategy Planning"
                   className="btgms-design-main-img"
                 />
@@ -954,7 +886,7 @@ export default function BestTimeGreatMigrationSafari() {
               <DollarSign size={40} className="btgms-price-icon" />
               <div className="btgms-price-content">
                 <span className="btgms-price-label">AVERAGE COST</span>
-                <span className="btgms-price-value">$1,000 – $2,500+ PER PERSON / PER DAY</span>
+                <span className="btgms-price-value">$1,500 – $3,000+ PER PERSON / PER DAY</span>
               </div>
             </div>
           </div>
@@ -984,45 +916,71 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
-      {/* ABOUT ANGELA */}
-      <section className="btgms-section btgms-about">
+      {/* WHY TRUST THIS GUIDE */}
+      <section className="btgms-section btgms-trust-compact">
         <div className="btgms-container">
-          <div className="btgms-about-grid">
-            <div className="btgms-about-image-wrapper">
-              <div className="btgms-about-image-frame">
+          <div className="btgms-trust-layout">
+            <div className="btgms-trust-image-side">
+              <div className="btgms-about-img-frame">
                 <img src={AboutImage} alt="Angela Hughes" className="btgms-about-img" />
-                <div className="btgms-about-image-accent"></div>
+                <div className="btgms-about-experience-badge">40+ YEARS</div>
               </div>
             </div>
-            <div className="btgms-about-content">
-              <div className="btgms-about-header">
-                <span className="btgms-eyebrow">The Voice of Experience</span>
-                <h2 className="btgms-h2">About Angela Hughes</h2>
-                <div className="btgms-about-subtitle">Founder & Luxury Travel Specialist</div>
-              </div>
-              <div className="btgms-about-body">
-                <p className="btgms-p">
-                  Angela Hughes is one of the most recognized voices in luxury
-                  travel. She has spent decades designing high-end itineraries across
-                  Africa and around the world, working directly with top safari
-                  operators and camps.
-                </p>
-                <p className="btgms-p">
-                  Her work has been recognized across the industry through
-                  multiple awards and global media features.
-                </p>
-                <div className="btgms-about-quote-block">
-                  <Quote size={40} className="btgms-quote-icon-large" />
-                  <p className="btgms-p-display">
-                    Clients do not work with Angela Hughes to book travel. They work
-                    with her to get it right.
+            
+            <div className="btgms-trust-content-side">
+              <div className="btgms-trust-header">
+                <span className="btgms-trust-eyebrow">ABOUT ANGELA HUGHES</span>
+                <h2 className="btgms-h2">Why Trust This Guide</h2>
+                <div className="btgms-trust-description">
+                  <p className="btgms-p-small">
+                    Angela Hughes is one of the most recognized voices in luxury travel. 
+                    She has spent decades designing high-end itineraries across Africa and around the world, 
+                    working directly with top safari operators and camps.
                   </p>
+                  <p className="btgms-p-small">
+                    Her work has been recognized across the industry through multiple awards 
+                    and global media features. Clients do not work with Angela Hughes to book travel. 
+                    They work with her to get it right.
+                  </p>
+                </div>
+              </div>
+
+              <div className="btgms-trust-stats-grid">
+                {[
+                  { label: "40+ Years", text: "In the travel industry", icon: Compass },
+                  { label: "121+ Countries", text: "Traveled worldwide", icon: Globe },
+                  { label: "10+ Safaris", text: "Across Africa in recent years", icon: MapPin },
+                  { label: "CEO", text: "Trips & Ships Luxury Travel", icon: Award }
+                ].map((item, i) => (
+                  <div className="btgms-trust-stat-card" key={i}>
+                    <div className="btgms-stat-icon-wrap">
+                      <item.icon size={20} />
+                    </div>
+                    <div className="btgms-stat-text">
+                      <strong>{item.label}</strong>
+                      <span>{item.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="btgms-recognition-compact">
+                <h3 className="btgms-h3">Industry Recognition</h3>
+                <ul className="btgms-recognition-list-small">
+                  <li><CheckCircle2 size={16} /> <span>Luxury Travel Influencer of the Year by Travel Leaders Network</span></li>
+                  <li><CheckCircle2 size={16} /> <span>Most Influential Women in Travel by TravelPulse</span></li>
+                  <li><CheckCircle2 size={16} /> <span>Multiple Magellan Awards from Travel Weekly</span></li>
+                </ul>
+                <div className="btgms-recognition-footer-compact">
+                   <Sparkles size={18} />
+                   <p>This is experience built over decades.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* FAQ */}
       <section className="btgms-section btgms-faq">
@@ -1049,6 +1007,8 @@ export default function BestTimeGreatMigrationSafari() {
           </div>
         </div>
       </section>
+
+      
 
       {/* FINAL CTA */}
       <section className="btgms-section btgms-final-cta">

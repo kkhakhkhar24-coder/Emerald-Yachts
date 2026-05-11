@@ -5,12 +5,14 @@ import { Compass, Plus, Minus, Sparkles, Globe, Map, Briefcase, Award, Star, Che
 import { Helmet } from "react-helmet-async";
 import "./KenyaVsTanzaniaSafari.css";
 
-import profileImg from "../../assets/image.jpg";
+import profileImg from "../../assets/Angela_Hughes.jpg";
+import TanzaniaImage1 from "../../assets/KenyaVsTanzaniaSafari/Tanzania1.jpg"
+import TanzaniaImage2 from "../../assets/KenyaVsTanzaniaSafari/Tanzania2.jpg"
+import TanzaniaImage3 from "../../assets/KenyaVsTanzaniaSafari/Tanzania3.jpg"
+import TanzaniaImage4 from "../../assets/KenyaVsTanzaniaSafari/Tanzania4.jpg"
+import KenyaImage from "../../assets/KenyaVsTanzaniaSafari/Kenya.jpg"
+import Luxury from "../../assets/KenyaVsTanzaniaSafari/LuxuryTravel.jpg"
 
-// Hero Images (Unsplash High-Res)
-const heroImage1 = "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop";
-const heroImage2 = "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2071&auto=format&fit=crop";
-const heroImage3 = "https://images.unsplash.com/photo-1566296524462-e0a341bf65e6?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 const schemaData = {
     "@context": "https://schema.org",
@@ -238,7 +240,7 @@ export default function KenyaVsTanzaniaSafari() {
 
     const [showContent, setShowContent] = useState(false);
     const [currentBg, setCurrentBg] = useState(0);
-    const heroImages = [heroImage1, heroImage2, heroImage3];
+    const heroImages = [TanzaniaImage1, TanzaniaImage2, TanzaniaImage3];
 
     const [openFaq, setOpenFaq] = useState(null);
 
@@ -336,10 +338,6 @@ export default function KenyaVsTanzaniaSafari() {
                 <div className="kvts-hero-overlay"></div>
 
                 <div className="kvts-container kvts-hero-inner">
-                    <span className="kvts-eyebrow">
-                        <Compass size={14} style={{ marginRight: "8px" }} />
-                        Expert Safari Analysis
-                    </span>
 
                     <h1 className="kvts-h1 kvts-h1-hero">
                         Kenya vs Tanzania Safari <br /> Which Is Best for Luxury Travelers?
@@ -598,7 +596,7 @@ export default function KenyaVsTanzaniaSafari() {
                                 <h2 className="kvts-h2">WHY KENYA MAY BE THE BETTER CHOICE</h2>
                                 <div className="kvts-why-kenya-accent"></div>
                                 <div className="kvts-section-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2072&auto=format&fit=crop" alt="Kenya Safari Elephant" className="kvts-section-img" />
+                                    <img src={KenyaImage} alt="Kenya Safari Elephant" className="kvts-section-img" />
                                 </div>
                             </div>
                         </div>
@@ -770,7 +768,7 @@ export default function KenyaVsTanzaniaSafari() {
                                     </p>
                                 </div>
                                 <div className="kvts-section-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?q=80&w=2070&auto=format&fit=crop" alt="Majestic Lion Safari" className="kvts-section-img" />
+                                    <img src={Luxury} alt="Majestic Lion Safari" className="kvts-section-img" />
                                 </div>
                             </div>
                         </div>
@@ -873,7 +871,7 @@ export default function KenyaVsTanzaniaSafari() {
                                 </p>
                             </div>
                             <div className="kvts-section-img-wrap kvts-mt-md">
-                                <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?q=80&w=2070&auto=format&fit=crop" alt="Safari Zebras" className="kvts-section-img" />
+                                <img src={TanzaniaImage4} alt="Safari Zebras" className="kvts-section-img" />
                             </div>
                         </div>
 

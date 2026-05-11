@@ -17,8 +17,15 @@ import {
 } from "lucide-react";
 import "./Kenyasafarimicato.css";
 import Navbar from "../../components/Navbar/Navbar";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/Angela_Hughes.jpg";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
+import KenyaSafariImage1 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya1.jpg";
+import KenyaSafariImage2 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya2.jpg";
+import KenyaSafariImage3 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya3.jpg";
+import MaasaiMara from "../../assets/KenyaSafariwithMicatoSafaris/Maasai_Mara.jpg";
+import Conservancies from "../../assets/KenyaSafariwithMicatoSafaris/Conservancies.jpg";
+import Park from "../../assets/KenyaSafariwithMicatoSafaris/Park.jpg";
+import Samburu from "../../assets/KenyaSafariwithMicatoSafaris/Samburu.jpg";
 import { Helmet } from "react-helmet-async";
 
 /* ── Schema ──────────────────────────────────────────────────────── */
@@ -417,11 +424,7 @@ function FAQ() {
 /* ── Main Component ──────────────────────────────────────────────── */
 const KenyaSafariMicato = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [
-    "https://specials-images.forbesimg.com/imageserve/61a11bdb7afd3d7797865eb5/960x0.jpg", // Safari Jeep in Savannah
-    "https://images.unsplash.com/photo-1581852017103-68ac65514cf7?auto=format&fit=crop&w=1920&q=80", // Majestic Elephant
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1920&q=80", // Giraffes in Maasai Mara
-  ];
+  const images = [KenyaSafariImage1,KenyaSafariImage2,KenyaSafariImage3 ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -859,7 +862,7 @@ const KenyaSafariMicato = () => {
             {/* 01 — Maasai Mara */}
             <div
               className="KenSafari-dest-card"
-              style={{ backgroundImage: "url('https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/09/07223907/maasai-mara.jpg')" }}
+              style={{ backgroundImage: `url(${MaasaiMara})` }}
             >
               <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">01</span>
@@ -880,7 +883,7 @@ const KenyaSafariMicato = () => {
             {/* 02 — Laikipia Conservancies */}
             <div
               className="KenSafari-dest-card"
-              style={{ backgroundImage: "url('https://www.africanmeccasafaris.com/wp-content/uploads/olmalolaikipia5.jpg')" }}
+              style={{ backgroundImage: `url(${Conservancies})` }}
             >
               <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">02</span>
@@ -900,7 +903,7 @@ const KenyaSafariMicato = () => {
             {/* 03 — Amboseli National Park */}
             <div
               className="KenSafari-dest-card"
-              style={{ backgroundImage: "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/02/14/aa/caption.jpg?w=1200&h=-1&s=1')" }}
+              style={{ backgroundImage: `url(${Park})` }}
             >
               <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">03</span>
@@ -920,7 +923,7 @@ const KenyaSafariMicato = () => {
             {/* 04 — Samburu */}
             <div
               className="KenSafari-dest-card"
-              style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ383GNe5HdAYa_-5biVLSaHJxRCyuXAyMxvQ&s')" }}
+              style={{ backgroundImage: `url(${Samburu})` }}
             >
               <div className="KenSafari-dest-overlay" />
               <span className="KenSafari-dest-number">04</span>
