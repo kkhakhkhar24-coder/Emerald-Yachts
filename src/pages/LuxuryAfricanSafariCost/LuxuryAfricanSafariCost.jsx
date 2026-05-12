@@ -56,6 +56,16 @@ import logo6 from "../../assets/LuxuryAfricanSafariCost/Travel_Age_West.webp";
 import logo7 from "../../assets/LuxuryAfricanSafariCost/Travelmarket_Report.webp";
 import logo8 from "../../assets/LuxuryAfricanSafariCost/Insider_Travel_Report.webp";
 
+// Local Images
+import imgWhyCostsMore from "../../assets/LuxuryAfricanSafariCost/MOST_TRAVEL.jpg";
+import imgKenya from "../../assets/LuxuryAfricanSafariCost/KENYA.jpg";
+import imgTanzania from "../../assets/LuxuryAfricanSafariCost/TANZANIA.jpg";
+import imgHoneymoon from "../../assets/LuxuryAfricanSafariCost/HONEYMOON.jpg";
+import imgCalving from "../../assets/LuxuryAfricanSafariCost/JAN_MAR.jpg";
+import imgJune from "../../assets/LuxuryAfricanSafariCost/JUNE.jpg";
+import imgNovember from "../../assets/LuxuryAfricanSafariCost/NOVEMBER.jpg";
+
+const imgFamily = "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=800&q=80";
 
 export default function LuxuryAfricanSafariCost() {
     const toggleFaq = (index) => {
@@ -540,123 +550,84 @@ export default function LuxuryAfricanSafariCost() {
                 </div>
             </section>
 
-            {/* ── WHY LUXURY AFRICAN SAFARIS COST MORE ── */}
+            {/* ── 3. WHY LUXURY AFRICAN SAFARIS COST MORE ── */}
             <section className="lasc-why-more">
                 <div className="lasc-why-more-inner">
-                    <div className="lasc-why-grid">
-                        <div className="lasc-why-intro-box">
+                    <div className="lasc-why-split">
+                        <div className="lasc-why-content-side">
                             <h2 className="lasc-h2">WHY LUXURY AFRICAN SAFARIS COST MORE THAN MOST TRAVEL</h2>
-                            <p className="lasc-p">This is where many travelers are surprised.</p>
+                            <div className="lasc-accent-line"></div>
                             <p className="lasc-p">Unlike traditional vacations, luxury safaris involve layered operational costs that most travelers never see. These include:</p>
-                        </div>
 
-                        <div className="lasc-operational-layers">
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">01</span>
-                                <Plane size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">remote bush flights</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">02</span>
-                                <ShieldCheck size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">conservation and park fees</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">03</span>
-                                <Binoculars size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">highly trained guides and trackers</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">04</span>
-                                <Activity size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">private safari vehicles</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">05</span>
-                                <Navigation size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">migration-based camp positioning</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">06</span>
-                                <Users size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">staffing ratios in remote locations</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">07</span>
-                                <Plane size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">charter aircraft</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">08</span>
-                                <Zap size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">fuel and logistics transported into isolated areas</span>
-                            </div>
-                            <div className="lasc-layer-item">
-                                <span className="lasc-layer-num">09</span>
-                                <LayoutGrid size={24} className="lasc-layer-icon" />
-                                <span className="lasc-layer-text">small camp inventory with limited occupancy</span>
+                            <div className="lasc-operational-layers-v2">
+                                {[
+                                    { num: "01", text: "remote bush flights", icon: <Plane size={20} /> },
+                                    { num: "02", text: "conservation and park fees", icon: <ShieldCheck size={20} /> },
+                                    { num: "03", text: "highly trained guides", icon: <Binoculars size={20} /> },
+                                    { num: "04", text: "private safari vehicles", icon: <Activity size={20} /> },
+                                    { num: "05", text: "migration-based positioning", icon: <Navigation size={20} /> },
+                                    { num: "06", text: "small camp inventory", icon: <LayoutGrid size={20} /> }
+                                ].map((layer, idx) => (
+                                    <div className="lasc-layer-pill" key={idx}>
+                                        <span className="lasc-layer-pill-num">{layer.num}</span>
+                                        <span className="lasc-layer-pill-text">{layer.text}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
-                    </div>
-                    <div className="lasc-conclusion-container">
-                        <div className="lasc-pill-callout">
-                            <div className="lasc-pill-title">
-                                Luxury safari pricing is not built like mass tourism.
-                            </div>
-                            <div className="lasc-pill-divider"></div>
-                            <div className="lasc-pill-text">
-                                It is built around access, positioning, expertise, and conservation.
-                            </div>
+                        <div className="lasc-why-image-side">
+                            <img src={imgWhyCostsMore} alt="Luxury Safari Experience" className="lasc-split-img" />
+                            <div className="lasc-img-overlay-text">Built around access & expertise</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── PRICING BREAKDOWN (Architectural Columns Design) ── */}
-            <section className="lasc-frames-section">
-                <div className="lasc-frames-inner">
-                    <div className="lasc-frames-header">
-                        <h2 className="lasc-h2-pricing">WHAT DOES A LUXURY SAFARI ACTUALLY COST?</h2>
-                        <p className="lasc-p-breakdown">LUXURY SAFARI PRICING BREAKDOWN</p>
+            {/* ── 4. WHAT DOES A LUXURY SAFARI ACTUALLY COST? (New Look) ── */}
+            <section className="lasc-pricing-v3">
+                <div className="lasc-container">
+                    <div className="lasc-pricing-header-v3">
+                        <h2 className="lasc-h2">What Does a Luxury Safari Actually Cost?</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                     </div>
 
-                    <div className="lasc-frames-grid">
+                    <div className="lasc-pricing-grid-v3">
                         {/* Entry Luxury */}
-                        <div className="lasc-frame-panel">
-                            <div className="lasc-frame-head">
-                                <ShieldCheck className="lasc-frame-icon" size={24} strokeWidth={1.5} />
-                                <h3 className="lasc-frame-tier">Entry Luxury</h3>
+                        <div className="lasc-pricing-card-v3">
+                            <div className="lasc-card-header-v3">
+                                <ShieldCheck className="lasc-card-icon-v3" size={24} />
+                                <h3 className="lasc-h3">Entry Luxury</h3>
                             </div>
-                            <p className="lasc-frame-desc">Shared safari, regional flights, upscale camps</p>
-                            <div className="lasc-frame-price-box">
-                                <div className="lasc-frame-price">$12,000–18,000</div>
-                                <span className="lasc-frame-unit">per couple</span>
+                            <p className="lasc-p">Shared safari, regional flights, upscale camps</p>
+                            <div className="lasc-card-price-v3">
+                                <div className="lasc-price-value-v3">$12,000–18,000</div>
+                                <span className="lasc-price-unit-v3">per couple</span>
                             </div>
                         </div>
 
                         {/* Premium Luxury */}
-                        <div className="lasc-frame-panel lasc-frame-panel--featured">
-                            <div className="lasc-frame-head">
-                                <Crown className="lasc-frame-icon" size={24} strokeWidth={1.5} />
-                                <h3 className="lasc-frame-tier">Premium Luxury</h3>
+                        <div className="lasc-pricing-card-v3 lasc-pricing-card-v3--featured">
+                            <div className="lasc-card-header-v3">
+                                <Crown className="lasc-card-icon-v3" size={24} />
+                                <h3 className="lasc-h3">Premium Luxury</h3>
                             </div>
-                            <p className="lasc-frame-desc">Luxury camps, excellent guides, strategic routing</p>
-                            <div className="lasc-frame-price-box">
-                                <div className="lasc-frame-price">$25,000–45,000</div>
-                                <span className="lasc-frame-unit">per couple</span>
+                            <p className="lasc-p">Luxury camps, excellent guides, strategic routing</p>
+                            <div className="lasc-card-price-v3">
+                                <div className="lasc-price-value-v3">$25,000–45,000</div>
+                                <span className="lasc-price-unit-v3">per couple</span>
                             </div>
                         </div>
 
                         {/* Ultra Luxury */}
-                        <div className="lasc-frame-panel">
-                            <div className="lasc-frame-head">
-                                <Diamond className="lasc-frame-icon" size={24} strokeWidth={1.5} />
-                                <h3 className="lasc-frame-tier">Ultra Luxury</h3>
+                        <div className="lasc-pricing-card-v3">
+                            <div className="lasc-card-header-v3">
+                                <Diamond className="lasc-card-icon-v3" size={24} />
+                                <h3 className="lasc-h3">Ultra Luxury</h3>
                             </div>
-                            <p className="lasc-frame-desc">Private charters, Singita-level properties, exclusive-use experiences</p>
-                            <div className="lasc-frame-price-box">
-                                <div className="lasc-frame-price">$50,000–250,000+</div>
-                                <span className="lasc-frame-unit">per couple</span>
+                            <p className="lasc-p">Private charters, Singita-level properties, exclusive-use experiences</p>
+                            <div className="lasc-card-price-v3">
+                                <div className="lasc-price-value-v3">$50,000–250,000+</div>
+                                <span className="lasc-price-unit-v3">per couple</span>
                             </div>
                         </div>
                     </div>
@@ -664,94 +635,92 @@ export default function LuxuryAfricanSafariCost() {
             </section>
 
             {/* ── 5. BUDGET EXAMPLES (Safari Itinerary Ledger Design) ── */}
-            <section className="lasc-ledger-budget-section">
-                <div className="lasc-ledger-budget-inner">
-                    <div className="lasc-ledger-budget-header">
+            {/* ── 5. REAL LUXURY SAFARI BUDGET EXAMPLES (New Look) ── */}
+            <section className="lasc-budgets-v2">
+                <div className="lasc-container">
+                    <div className="lasc-budgets-header-v2">
                         <h2 className="lasc-h2">Real Luxury Safari Budget Examples</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                     </div>
 
-                    <div className="lasc-ledger-budget-grid">
+                    <div className="lasc-budgets-grid-v2">
                         {/* Kenya Safari */}
-                        <div className="lasc-ledger-budget-card">
-                            <div className="lasc-ledger-budget-head">
-                                <div className="lasc-ledger-budget-meta">7-DAY EXPERIENCE</div>
-                                <h3 className="lasc-ledger-budget-title">Kenya Luxury Safari</h3>
+                        <div className="lasc-budget-card-v2">
+                            <div className="lasc-budget-card-top-v2">
+                                <span className="lasc-budget-meta-v2">7-DAY EXPERIENCE</span>
+                                <h3 className="lasc-h3">Kenya Luxury Safari</h3>
                             </div>
-                            <div className="lasc-ledger-budget-content">
-                                <ul className="lasc-ledger-budget-list">
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> luxury tented camp</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> internal flights</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> shared game drives</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> premium safari guides</li>
+                            <div className="lasc-budget-card-body-v2">
+                                <ul className="lasc-budget-list-v2">
+                                    <li><Check size={16} /> luxury tented camp</li>
+                                    <li><Check size={16} /> internal flights</li>
+                                    <li><Check size={16} /> shared game drives</li>
+                                    <li><Check size={16} /> premium safari guides</li>
                                 </ul>
                             </div>
-                            <div className="lasc-ledger-budget-price-box">
-                                <span className="lasc-ledger-budget-label">ESTIMATED COST</span>
-                                <div className="lasc-ledger-budget-value">$18,000–28,000</div>
-                                <span className="lasc-ledger-budget-unit">per couple</span>
+                            <div className="lasc-budget-card-footer-v2">
+                                <div className="lasc-budget-price-v2">$18,000–28,000</div>
+                                <span className="lasc-budget-unit-v2">per couple</span>
                             </div>
                         </div>
 
                         {/* Migration Safari */}
-                        <div className="lasc-ledger-budget-card lasc-ledger-budget-card--featured">
-                            <div className="lasc-ledger-budget-head">
-                                <div className="lasc-ledger-budget-meta">10-DAY EXPERIENCE</div>
-                                <h3 className="lasc-ledger-budget-title">Great Migration Safari</h3>
+                        <div className="lasc-budget-card-v2 lasc-budget-card-v2--featured">
+                            <div className="lasc-budget-card-top-v2">
+                                <span className="lasc-budget-meta-v2">10-DAY EXPERIENCE</span>
+                                <h3 className="lasc-h3">Great Migration Safari</h3>
                             </div>
-                            <div className="lasc-ledger-budget-content">
-                                <ul className="lasc-ledger-budget-list">
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> two luxury camps</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> migration season timing</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> charter or bush flights</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> private safari vehicle</li>
+                            <div className="lasc-budget-card-body-v2">
+                                <ul className="lasc-budget-list-v2">
+                                    <li><Check size={16} /> two luxury camps</li>
+                                    <li><Check size={16} /> migration season timing</li>
+                                    <li><Check size={16} /> charter or bush flights</li>
+                                    <li><Check size={16} /> private safari vehicle</li>
                                 </ul>
                             </div>
-                            <div className="lasc-ledger-budget-price-box">
-                                <span className="lasc-ledger-budget-label">ESTIMATED COST</span>
-                                <div className="lasc-ledger-budget-value">$35,000–60,000+</div>
-                                <span className="lasc-ledger-budget-unit">per couple</span>
+                            <div className="lasc-budget-card-footer-v2">
+                                <div className="lasc-budget-price-v2">$35,000–60,000+</div>
+                                <span className="lasc-budget-unit-v2">per couple</span>
                             </div>
                         </div>
 
                         {/* Kenya + Zanzibar */}
-                        <div className="lasc-ledger-budget-card">
-                            <div className="lasc-ledger-budget-head">
-                                <div className="lasc-ledger-budget-meta">ITINERARY PAIRING</div>
-                                <h3 className="lasc-ledger-budget-title">Kenya + Zanzibar</h3>
+                        <div className="lasc-budget-card-v2">
+                            <div className="lasc-budget-card-top-v2">
+                                <span className="lasc-budget-meta-v2">ITINERARY PAIRING</span>
+                                <h3 className="lasc-h3">Kenya + Zanzibar</h3>
                             </div>
-                            <div className="lasc-ledger-budget-content">
-                                <ul className="lasc-ledger-budget-list">
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> luxury bush camp</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> boutique beach resort</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> all transfers included</li>
-                                    <li><Check size={16} className="lasc-ledger-budget-check" /> guided island excursions</li>
+                            <div className="lasc-budget-card-body-v2">
+                                <ul className="lasc-budget-list-v2">
+                                    <li><Check size={16} /> luxury bush camp</li>
+                                    <li><Check size={16} /> boutique beach resort</li>
+                                    <li><Check size={16} /> all transfers included</li>
+                                    <li><Check size={16} /> guided island excursions</li>
                                 </ul>
                             </div>
-                            <div className="lasc-ledger-budget-price-box">
-                                <span className="lasc-ledger-budget-label">ESTIMATED COST</span>
-                                <div className="lasc-ledger-budget-value">$25,000–45,000+</div>
-                                <span className="lasc-ledger-budget-unit">per couple</span>
+                            <div className="lasc-budget-card-footer-v2">
+                                <div className="lasc-budget-price-v2">$25,000–45,000+</div>
+                                <span className="lasc-budget-unit-v2">per couple</span>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Ultra Luxury Wide Card */}
-                    <div className="lasc-ledger-budget-card lasc-ledger-budget-card--wide lasc-mt-md">
-                        <div className="lasc-ledger-budget-head">
-                            <div className="lasc-ledger-budget-meta">ULTRA LUXURY EXPEDITION</div>
-                            <h3 className="lasc-ledger-budget-title">Ultra Luxury East Africa Safari</h3>
-                        </div>
-                        <div className="lasc-ledger-budget-content lasc-ledger-budget-content--flex">
-                            <ul className="lasc-ledger-budget-list">
-                                <li><Check size={16} className="lasc-ledger-budget-check" /> private charter aircraft</li>
-                                <li><Check size={16} className="lasc-ledger-budget-check" /> exclusive-use camps</li>
-                                <li><Check size={16} className="lasc-ledger-budget-check" /> Singita or ultra-premium operators</li>
-                                <li><Check size={16} className="lasc-ledger-budget-check" /> multiple countries</li>
-                            </ul>
-                            <div className="lasc-ledger-budget-price-box">
-                                <span className="lasc-ledger-budget-label">ESTIMATED COST</span>
-                                <div className="lasc-ledger-budget-value">$80,000–250,000+</div>
-                                <span className="lasc-ledger-budget-unit">starting price</span>
+                        {/* Ultra Luxury Safari */}
+                        <div className="lasc-budget-card-v2">
+                            <div className="lasc-budget-card-top-v2">
+                                <span className="lasc-budget-meta-v2">ULTRA LUXURY EXPEDITION</span>
+                                <h3 className="lasc-h3">Ultra Luxury East Africa Safari</h3>
+                            </div>
+                            <div className="lasc-budget-card-body-v2">
+                                <ul className="lasc-budget-list-v2">
+                                    <li><Check size={16} /> private charter aircraft</li>
+                                    <li><Check size={16} /> exclusive-use camps</li>
+                                    <li><Check size={16} /> Singita or ultra-premium operators</li>
+                                    <li><Check size={16} /> multiple countries</li>
+                                </ul>
+                            </div>
+                            <div className="lasc-budget-card-footer-v2">
+                                <div className="lasc-budget-price-v2">$80,000–250,000+</div>
+                                <span className="lasc-budget-unit-v2">starting price</span>
                             </div>
                         </div>
                     </div>
@@ -763,6 +732,7 @@ export default function LuxuryAfricanSafariCost() {
                 <div className="lasc-why-inner">
                     <div className="lasc-why-content">
                         <h2 className="lasc-h2">Why Are African Safaris So Expensive?</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">This is one of the most searched safari questions online. The answer is not simple because safaris are not simple operations. A luxury safari may involve:</p>
                     </div>
 
@@ -803,6 +773,7 @@ export default function LuxuryAfricanSafariCost() {
                     <div className="lasc-miss-header">
                         <div className="lasc-miss-eyebrow">OPERATIONAL RISKS</div>
                         <h2 className="lasc-h2">WHAT CHEAP SAFARIS OFTEN MISS</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">This is where many travelers make expensive mistakes trying to save money.</p>
                         <p className="lasc-p-small">Lower-cost safaris often involve:</p>
                     </div>
@@ -858,7 +829,7 @@ export default function LuxuryAfricanSafariCost() {
                 </div>
             </section>
 
-            {/* ── 8. KENYA VS TANZANIA (Modernist Architectural Ledger Design) ── */}
+            {/* ── 8. KENYA VS TANZANIA ── */}
             <section className="lasc-ledger-section">
                 <div className="lasc-ledger-inner">
                     <div className="lasc-ledger-header">
@@ -867,53 +838,38 @@ export default function LuxuryAfricanSafariCost() {
                         <div className="lasc-ledger-header-line"></div>
                     </div>
 
-                    <div className="lasc-ledger-grid">
-                        {/* Kenya Ledger Sheet */}
-                        <div className="lasc-ledger-sheet lasc-sheet-light">
-                            <div className="lasc-ledger-sheet-inner">
-                                <div className="lasc-ledger-sheet-head">
-                                    <div className="lasc-ledger-icon-wrap">
-                                        <Navigation size={28} strokeWidth={1.5} />
-                                    </div>
-                                    <h3 className="lasc-h3">Kenya Luxury <br /> Safari Pricing</h3>
-                                </div>
-                                <div className="lasc-ledger-sheet-body">
-                                    <p className="lasc-ledger-label">IDEAL SELECTION FOR:</p>
-                                    <ul className="lasc-ledger-list">
-                                        <li><ArrowRight size={16} /> shorter luxury safaris</li>
-                                        <li><ArrowRight size={16} /> first-time safari travelers</li>
-                                        <li><ArrowRight size={16} /> Maasai Mara focus</li>
-                                    </ul>
-                                    <div className="lasc-ledger-insight">
-                                        <div className="lasc-ledger-insight-tag">INSIGHT</div>
-                                        <p className="lasc-p">Kenya often offers slightly more efficient logistics, which can impact overall pricing.</p>
-                                    </div>
-                                </div>
+                    <div className="lasc-comparison-visual-grid">
+                        {/* Kenya Card */}
+                        <div className="lasc-comparison-card">
+                            <div className="lasc-comparison-img-wrap">
+                                <img src={imgKenya} alt="Kenya Safari" />
+                                <div className="lasc-comparison-tag">KENYA</div>
+                            </div>
+                            <div className="lasc-comparison-content">
+                                <h3 className="lasc-h3">Efficiency & Access</h3>
+                                <p className="lasc-p">Ideal for shorter luxury safaris and first-time travelers with a Maasai Mara focus.</p>
+                                <ul className="lasc-comparison-list">
+                                    <li><ArrowRight size={14} /> Efficient bush flight logistics</li>
+                                    <li><ArrowRight size={14} /> Iconic savanna landscapes</li>
+                                    <li><ArrowRight size={14} /> High-end boutique camps</li>
+                                </ul>
                             </div>
                         </div>
 
-                        {/* Tanzania Ledger Sheet */}
-                        <div className="lasc-ledger-sheet lasc-sheet-dark">
-                            <div className="lasc-ledger-sheet-inner">
-                                <div className="lasc-ledger-sheet-head">
-                                    <div className="lasc-ledger-icon-wrap">
-                                        <Binoculars size={28} strokeWidth={1.5} />
-                                    </div>
-                                    <h3 className="lasc-h3">Tanzania Luxury <br /> Safari Pricing</h3>
-                                </div>
-                                <div className="lasc-ledger-sheet-body">
-                                    <p className="lasc-ledger-label">TYPICALLY INVOLVES:</p>
-                                    <ul className="lasc-ledger-list">
-                                        <li><ArrowRight size={16} /> longer distances</li>
-                                        <li><ArrowRight size={16} /> multiple ecosystems</li>
-                                        <li><ArrowRight size={16} /> bush flight logistics</li>
-                                        <li><ArrowRight size={16} /> extended itineraries</li>
-                                    </ul>
-                                    <div className="lasc-ledger-insight">
-                                        <div className="lasc-ledger-insight-tag">SEASONAL</div>
-                                        <p className="lasc-p">Costs often increase during Great Migration season periods.</p>
-                                    </div>
-                                </div>
+                        {/* Tanzania Card */}
+                        <div className="lasc-comparison-card lasc-card-dark">
+                            <div className="lasc-comparison-img-wrap">
+                                <img src={imgTanzania} alt="Tanzania Safari" />
+                                <div className="lasc-comparison-tag">TANZANIA</div>
+                            </div>
+                            <div className="lasc-comparison-content">
+                                <h3 className="lasc-h3">Immersion & Scale</h3>
+                                <p className="lasc-p">Typically involves longer distances and multiple ecosystems across the Serengeti.</p>
+                                <ul className="lasc-comparison-list">
+                                    <li><ArrowRight size={14} /> Diverse wildlife corridors</li>
+                                    <li><ArrowRight size={14} /> Ngorongoro Crater access</li>
+                                    <li><ArrowRight size={14} /> Extended safari itineraries</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -937,54 +893,72 @@ export default function LuxuryAfricanSafariCost() {
                 </div>
             </section>
 
-            {/* ── 9. BEST VALUE TIMES (Dark Luxury Timeline) ── */}
-            <section className="lasc-value-section">
-                <div className="lasc-value-inner">
-                    <div className="lasc-value-header">
+            {/* ── 8.5. SIGNATURE VIDEO: THE GREAT MIGRATION ── */}
+            <section className="lasc-migration-architectural">
+                <div className="lasc-migration-container">
+                    <div className="lasc-migration-text-column">
+                        <span className="lasc-migration-eyebrow">A VISUAL JOURNEY</span>
+                        <h2 className="lasc-h2">THE GREAT MIGRATION EXPERIENCE</h2>
+                        <div className="lasc-accent-line"></div>
+                        <p className="lasc-p">The Great Migration is the heartbeat of the African savanna. Witnessing this spectacle requires an itinerary designed with precision, placing you in the right place at the exact moment of the crossing.</p>
+                    </div>
+                    <div className="lasc-migration-video-column">
+                        <div className="lasc-video-wrapper-architectural">
+                            <iframe
+                                src="https://www.youtube.com/embed/jST68PUiHu8"
+                                title="The Great Migration Experience"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── 9. BEST VALUE TIMES FOR A LUXURY SAFARI (New Look) ── */}
+            <section className="lasc-value-v2">
+                <div className="lasc-container">
+                    <div className="lasc-value-header-v2">
                         <h2 className="lasc-h2">BEST VALUE TIMES FOR A LUXURY SAFARI</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">Luxury safari does not always mean peak season. Some of the best value periods include:</p>
                     </div>
 
-                    <div className="lasc-timeline">
-                        <div className="lasc-timeline-spine"></div>
-
+                    <div className="lasc-value-grid-v2">
                         {/* January–March */}
-                        <div className="lasc-tl-row lasc-tl-row--left">
-                            <div className="lasc-tl-card">
-                                <div className="lasc-tl-month">JAN – MAR</div>
+                        <div className="lasc-value-card-v2">
+                            <div className="lasc-value-card-img-v2">
+                                <img src={imgCalving} alt="Calving Season" />
+                                <div className="lasc-value-tag-v2">JAN – MAR</div>
+                            </div>
+                            <div className="lasc-value-card-content-v2">
                                 <h3 className="lasc-h3">Calving season in Tanzania</h3>
-                                <p className="lasc-p">Strong wildlife activity with excellent photography opportunities</p>
+                                <p className="lasc-p">Strong wildlife activity with excellent photography opportunities.</p>
                             </div>
-                            <div className="lasc-tl-node">
-                                <div className="lasc-tl-dot"></div>
-                            </div>
-                            <div className="lasc-tl-spacer"></div>
                         </div>
 
                         {/* June */}
-                        <div className="lasc-tl-row lasc-tl-row--right">
-                            <div className="lasc-tl-spacer"></div>
-                            <div className="lasc-tl-node">
-                                <div className="lasc-tl-dot"></div>
+                        <div className="lasc-value-card-v2">
+                            <div className="lasc-value-card-img-v2">
+                                <img src={imgJune} alt="Early Migration" />
+                                <div className="lasc-value-tag-v2">JUNE</div>
                             </div>
-                            <div className="lasc-tl-card">
-                                <div className="lasc-tl-month">JUNE</div>
+                            <div className="lasc-value-card-content-v2">
                                 <h3 className="lasc-h3">Early migration movement</h3>
-                                <p className="lasc-p">Fewer crowds than peak river crossing season</p>
+                                <p className="lasc-p">Fewer crowds than peak river crossing season with lush landscapes.</p>
                             </div>
                         </div>
 
                         {/* November */}
-                        <div className="lasc-tl-row lasc-tl-row--left">
-                            <div className="lasc-tl-card">
-                                <div className="lasc-tl-month">NOVEMBER</div>
+                        <div className="lasc-value-card-v2">
+                            <div className="lasc-value-card-img-v2">
+                                <img src={imgNovember} alt="Value Season" />
+                                <div className="lasc-value-tag-v2">NOVEMBER</div>
+                            </div>
+                            <div className="lasc-value-card-content-v2">
                                 <h3 className="lasc-h3">Lower crowds and transitional pricing</h3>
-                                <p className="lasc-p">Excellent overall value for luxury travelers</p>
+                                <p className="lasc-p">Excellent overall value for luxury travelers before holiday peak.</p>
                             </div>
-                            <div className="lasc-tl-node">
-                                <div className="lasc-tl-dot"></div>
-                            </div>
-                            <div className="lasc-tl-spacer"></div>
                         </div>
                     </div>
                 </div>
@@ -1034,60 +1008,57 @@ export default function LuxuryAfricanSafariCost() {
                 </div>
             </section>
 
-            {/* ── 11. FAMILY & HONEYMOON (Luxury Canvas Design) ── */}
-            <section className="lasc-canvas-section">
-                <div className="lasc-canvas-container">
-                    <div className="lasc-canvas-grid">
+            {/* ── 11. EXPERIENCE GUIDES (New Look) ── */}
+            <section className="lasc-exp-v3">
+                <div className="lasc-container">
+                    <div className="lasc-exp-grid-v3">
                         {/* Family Card */}
-                        <div className="lasc-canvas-card lasc-canvas-card--family">
-                            <div className="lasc-canvas-tag">EXPERIENCE GUIDE</div>
-                            <h2 className="lasc-h2">Luxury Family Safari Cost</h2>
-                            <p className="lasc-p">Luxury family safaris require different planning than couples travel. Factors include:</p>
-                            
-                            <ul className="lasc-canvas-list">
-                                <li><Home size={18} className="lasc-canvas-icon" /> larger family tents or villas</li>
-                                <li><Users size={18} className="lasc-canvas-icon" /> private vehicles</li>
-                                <li><Activity size={18} className="lasc-canvas-icon" /> pacing for children</li>
-                                <li><Target size={18} className="lasc-canvas-icon" /> guide selection</li>
-                                <li><ShieldCheck size={18} className="lasc-canvas-icon" /> safety and age requirements</li>
-                            </ul>
-
-                            <div className="lasc-canvas-footer">
-                                <span className="lasc-canvas-price-label">Typical range:</span>
-                                <span className="lasc-canvas-price-value">$30,000–80,000+ depending on family size and routing.</span>
+                        <div className="lasc-exp-card-v3" style={{ backgroundImage: `url(${imgFamily})` }}>
+                            <div className="lasc-exp-overlay-v3"></div>
+                            <div className="lasc-exp-content-v3">
+                                <span className="lasc-exp-eyebrow-v3">EXPERIENCE GUIDE</span>
+                                <h2 className="lasc-h2">LUXURY FAMILY SAFARI COST</h2>
+                                <p className="lasc-p">Luxury family safaris require different planning than couples travel.</p>
+                                <ul className="lasc-exp-list-v3">
+                                    <li>larger family tents or villas</li>
+                                    <li>private vehicles</li>
+                                    <li>pacing for children</li>
+                                    <li>guide selection</li>
+                                    <li>safety and age requirements</li>
+                                </ul>
+                                <div className="lasc-exp-price-v3">Typical range: $30,000–80,000+</div>
                             </div>
                         </div>
 
                         {/* Honeymoon Card */}
-                        <div className="lasc-canvas-card lasc-canvas-card--honeymoon">
-                            <div className="lasc-canvas-tag">EXPERIENCE GUIDE</div>
-                            <h2 className="lasc-h2">Luxury Safari Honeymoon Cost</h2>
-                            <p className="lasc-p">Luxury safari honeymoons remain one of the most extraordinary travel experiences in the world. Popular combinations include:</p>
-                            
-                            <ul className="lasc-canvas-list">
-                                <li><Heart size={18} className="lasc-canvas-icon" /> Kenya + Seychelles</li>
-                                <li><Sparkles size={18} className="lasc-canvas-icon" /> Tanzania + Zanzibar</li>
-                                <li><MapPin size={18} className="lasc-canvas-icon" /> South Africa + Victoria Falls</li>
-                            </ul>
-
-                            <div className="lasc-canvas-footer">
-                                <span className="lasc-canvas-price-label">Typical luxury honeymoon safari range:</span>
-                                <span className="lasc-canvas-price-value">$25,000–75,000+ per couple.</span>
+                        <div className="lasc-exp-card-v3" style={{ backgroundImage: `url(${imgHoneymoon})` }}>
+                            <div className="lasc-exp-overlay-v3"></div>
+                            <div className="lasc-exp-content-v3">
+                                <span className="lasc-exp-eyebrow-v3">EXPERIENCE GUIDE</span>
+                                <h2 className="lasc-h2">LUXURY SAFARI HONEYMOON COST</h2>
+                                <p className="lasc-p">Luxury safari honeymoons remain one of the most extraordinary travel experiences in the world.</p>
+                                <ul className="lasc-exp-list-v3">
+                                    <li>Kenya + Seychelles</li>
+                                    <li>Tanzania + Zanzibar</li>
+                                    <li>South Africa + Victoria Falls</li>
+                                </ul>
+                                <div className="lasc-exp-price-v3">Typical range: $25,000–75,000+ per couple</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── 12. COMMON MISTAKES (Value Protection Grid) ── */}
-            <section className="lasc-mistakes-section">
-                <div className="lasc-mistakes-container">
-                    <div className="lasc-mistakes-header">
-                        <h2 className="lasc-h2">Most Common Safari Pricing Mistakes</h2>
+            {/* ── 12. MOST COMMON SAFARI PRICING MISTAKES (New Look) ── */}
+            <section className="lasc-mistakes-v2">
+                <div className="lasc-container">
+                    <div className="lasc-mistakes-header-v2">
+                        <h2 className="lasc-h2">MOST COMMON SAFARI PRICING MISTAKES</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">This is where travelers often overspend or misunderstand value.</p>
                     </div>
 
-                    <div className="lasc-mistakes-grid">
+                    <div className="lasc-mistakes-grid-v2">
                         {[
                             "underestimating internal flight costs",
                             "choosing camps too far apart",
@@ -1096,30 +1067,31 @@ export default function LuxuryAfricanSafariCost() {
                             "skipping private guides",
                             "choosing based on price instead of routing"
                         ].map((mistake, i) => (
-                            <div className="lasc-mistake-card" key={i}>
-                                <div className="lasc-mistake-icon-wrap">
-                                    <XCircle size={20} strokeWidth={1.5} />
+                            <div className="lasc-mistake-card-v2" key={i}>
+                                <div className="lasc-mistake-icon-v2">
+                                    <XCircle size={22} strokeWidth={1.5} />
                                 </div>
-                                <span className="lasc-mistake-text">{mistake}</span>
+                                <span className="lasc-mistake-text-v2">{mistake}</span>
                             </div>
                         ))}
                     </div>
 
-                    <div className="lasc-mistakes-footer">
+                    <div className="lasc-mistakes-footer-v2">
                         <p className="lasc-p">The wrong design creates expensive disappointment.</p>
                     </div>
                 </div>
             </section>
 
-            {/* ── 13. WHO THIS GUIDE IS FOR (Archetype Grid) ── */}
-            <section className="lasc-audience-section">
-                <div className="lasc-audience-container">
-                    <div className="lasc-audience-header">
+            {/* ── 13. WHO THIS GUIDE IS FOR (New Look) ── */}
+            <section className="lasc-audience-v2">
+                <div className="lasc-container">
+                    <div className="lasc-audience-header-v2">
                         <h2 className="lasc-h2">Who This Guide Is For</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">This guide is designed for:</p>
                     </div>
 
-                    <div className="lasc-audience-grid">
+                    <div className="lasc-audience-grid-v2">
                         {[
                             { text: "luxury travelers researching Africa", icon: <Diamond size={24} strokeWidth={1.5} /> },
                             { text: "first-time safari travelers", icon: <Compass size={24} strokeWidth={1.5} /> },
@@ -1128,87 +1100,80 @@ export default function LuxuryAfricanSafariCost() {
                             { text: "travelers considering Kenya vs Tanzania", icon: <MapPin size={24} strokeWidth={1.5} /> },
                             { text: "travelers planning Great Migration safaris", icon: <Sparkles size={24} strokeWidth={1.5} /> }
                         ].map((item, i) => (
-                            <div className="lasc-audience-card" key={i}>
-                                <div className="lasc-audience-icon">{item.icon}</div>
-                                <span className="lasc-audience-text">{item.text}</span>
+                            <div className="lasc-audience-card-v2" key={i}>
+                                <div className="lasc-audience-icon-v2">{item.icon}</div>
+                                <span className="lasc-audience-text-v2">{item.text}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ── 14. HOW WE DESIGN SAFARIS DIFFERENTLY (Strategic Spread) ── */}
-            <section className="lasc-design-section">
-                <div className="lasc-design-container">
-                    <div className="lasc-design-header">
-                        <h2 className="lasc-h2">How We Design Safaris Differently</h2>
+            {/* ── 14. HOW WE DESIGN SAFARIS DIFFERENTLY (New Look v2) ── */}
+            <section className="lasc-design-v4">
+                <div className="lasc-container">
+                    <div className="lasc-design-header-v4">
+                        <h2 className="lasc-h2">HOW WE DESIGN SAFARIS DIFFERENTLY</h2>
+                        <div className="lasc-accent-line lasc-accent-line--center"></div>
                         <p className="lasc-p">This is where safari planning becomes strategic.</p>
                     </div>
 
-                    <div className="lasc-design-content">
-                        <div className="lasc-design-left">
-                            <h3 className="lasc-design-subtitle">We focus on:</h3>
-                            <ul className="lasc-design-list">
-                                {[
-                                    "camp placement over branding",
-                                    "wildlife movement over marketing",
-                                    "routing efficiency",
-                                    "strong guide partnerships",
-                                    "balancing experience with logistics"
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <Zap size={18} className="lasc-design-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div className="lasc-design-right">
-                            <div className="lasc-vision-card">
-                                <p className="lasc-vision-quote">"Luxury safari is not about booking a room."</p>
-                                <p className="lasc-vision-sub">It is about engineering an experience.</p>
-                                <div className="lasc-vision-accent"></div>
+                    <div className="lasc-design-grid-v4">
+                        {[
+                            { title: "Camp Placement", text: "Over branding" },
+                            { title: "Wildlife Movement", text: "Over marketing" },
+                            { title: "Routing", text: "Efficiency & Logic" },
+                            { title: "Guide Partnerships", text: "Elite expertise" },
+                            { title: "Experience", text: "Balanced with logistics" }
+                        ].map((item, idx) => (
+                            <div className="lasc-design-card-v4" key={idx}>
+                                <div className="lasc-design-card-index-v4">0{idx + 1}</div>
+                                <h3 className="lasc-h3">{item.title}</h3>
+                                <p className="lasc-p">{item.text}</p>
                             </div>
+                        ))}
+                    </div>
+
+                    <div className="lasc-design-quote-card-v4">
+                        <div className="lasc-design-quote-wrap-v4">
+                            <p className="lasc-design-quote-v4">
+                                "Luxury safari is not about booking a room. It is about engineering an experience."
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── 15. ABOUT ANGELA HUGHES (Luxury Profiler) ── */}
-            <section className="lasc-about-section">
-                <div className="lasc-about-container">
-                    <div className="lasc-about-grid">
-                        <div className="lasc-about-image-wrap">
-                            <img src={profileImg} alt="Angela Hughes" className="lasc-about-portrait" />
-                            <div className="lasc-about-image-accent"></div>
+            {/* ── 15. ABOUT ANGELA HUGHES (New Look) ── */}
+            <section className="lasc-about-v2">
+                <div className="lasc-container">
+                    <div className="lasc-about-grid-v2">
+                        <div className="lasc-about-portrait-v2">
+                            <div className="lasc-about-image-inner-v2">
+                                <img src={profileImg} alt="Angela Hughes" />
+                                <div className="lasc-about-frame-v2"></div>
+                            </div>
                         </div>
 
-                        <div className="lasc-about-content">
-                            <div className="lasc-about-header">
-                                <h2 className="lasc-h2">About Angela Hughes</h2>
+                        <div className="lasc-about-details-v2">
+                            <div className="lasc-about-header-v2">
+                                <h2 className="lasc-h2">ABOUT ANGELA HUGHES</h2>
+                                <div className="lasc-accent-line"></div>
                                 <p className="lasc-p">Angela Hughes is one of the most recognized voices in luxury travel. She has spent decades designing complex, high-end itineraries across Africa and around the world, working directly with top safari operators, camps, and on-the-ground teams. Her work has been recognized across the industry.</p>
                             </div>
 
-                            <div className="lasc-recognition-wrap">
-                                <h3 className="lasc-recognition-title">Industry Recognition</h3>
-                                <div className="lasc-recognition-grid">
-                                    {[
-                                        "Named Luxury Travel Influencer of the Year by Travel Leaders Network",
-                                        "Recognized as one of the Most Influential Women in Travel by TravelPulse",
-                                        "Winner of multiple Magellan Awards from Travel Weekly"
-                                    ].map((award, i) => (
-                                        <div className="lasc-award-badge" key={i}>
-                                            <Award size={20} className="lasc-award-icon" />
-                                            <span>{award}</span>
-                                        </div>
-                                    ))}
-                                </div>
+                            <div className="lasc-about-recognition-v2">
+                                <h3 className="lasc-h3">Industry Recognition</h3>
+                                <ul className="lasc-about-list-v2">
+                                    <li>Named Luxury Travel Influencer of the Year by Travel Leaders Network</li>
+                                    <li>Recognized as one of the Most Influential Women in Travel by TravelPulse</li>
+                                    <li>Winner of multiple Magellan Awards from Travel Weekly</li>
+                                </ul>
                             </div>
 
-                            <div className="lasc-about-signature">
-                                <p className="lasc-signature-text">Clients do not work with Angela Hughes to simply book travel.</p>
-                                <p className="lasc-signature-sub">They work with her to get it right.</p>
+                            <div className="lasc-about-footer-v2">
+                                <p className="lasc-p">Clients do not work with Angela Hughes to simply book travel.</p>
+                                <p className="lasc-p-bold">They work with her to get it right.</p>
                             </div>
                         </div>
                     </div>
