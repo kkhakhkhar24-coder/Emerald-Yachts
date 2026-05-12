@@ -540,7 +540,7 @@
    PINNACLE GALLERY SECTION
    ============================================================ */
 .kenya-pinnacle-gallery {
-  background: #ffffff;
+  background: var(--kenya-bg-soft);
   padding: 60px 20px;
   overflow: hidden;
 }
@@ -2419,8 +2419,8 @@
    FAQ SECTION
    ============================================================ */
 .kenya-faq-section {
-  background: var(--kenya-bg-soft);
-  padding: 80px 20px;
+  background: var(--kenya-bg-white);
+  padding: 60px 20px;
 }
 
 .kenya-faq-inner {
@@ -5776,32 +5776,83 @@
 
 .angela-photo-wrap {
   position: relative;
+  padding: 40px 40px 40px 10px;
+}
+
+/* Radial glow backdrop */
+.angela-photo-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 40% 50%,
+    rgba(39, 68, 114, 0.07) 0%,
+    transparent 70%
+  );
+  border-radius: 20px;
+  z-index: 0;
 }
 
 .angela-image-container {
   position: relative;
   z-index: 2;
-  border-radius: 4px;
-  overflow: visible;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 30px 80px rgba(39, 68, 114, 0.18),
+    0 0 0 1px rgba(39, 68, 114, 0.06);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.angela-image-container:hover {
+  box-shadow:
+    0 50px 120px rgba(39, 68, 114, 0.28),
+    0 0 0 1px rgba(39, 68, 114, 0.1);
+  transform: translateY(-6px);
 }
 
 .angela-image {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 16px;
   display: block;
-  box-shadow: 0 40px 100px rgba(39, 68, 114, 0.15);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.angela-accent-box {
+.angela-image-container:hover .angela-image {
+  transform: scale(1.04);
+}
+
+/* Floating authority badge */
+.angela-photo-wrap::after {
+  content: "40+ Years Experience";
   position: absolute;
-  top: -30px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  border-top: 4px solid var(--kenya-navy);
-  border-left: 4px solid var(--kenya-navy);
-  z-index: 1;
+  bottom: 30px;
+  right: 10px;
+  background: var(--kenya-navy);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  z-index: 10;
+  box-shadow: 0 8px 24px rgba(39, 68, 114, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.angela-photo-wrap:hover::after {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4);
+}
+
+
+.angela-image-container:hover .angela-accent-box {
+  opacity: 1;
+  transform: translate(-4px, -4px);
 }
 
 .angela-eyebrow {
@@ -5815,7 +5866,7 @@
 }
 
 .angela-h2 {
-  font-size: 42px;
+  font-size: 48px;
   font-family: serif;
   color: var(--kenya-navy);
   line-height: 1.1;
@@ -5906,15 +5957,9 @@
     margin: 0 auto;
   }
 
-  .angela-h2 {
-    font-size: 32px;
-  }
+
 }
 
-
-.angela-h2 {
-  font-size: 32px;
-}
 
 /* ============================================================
    GLOBAL TYPOGRAPHY RESPONSIVENESS
@@ -7444,3 +7489,209 @@
     font-size: 14px;
   }
 }
+
+/* ============================================================
+   ABOUT ANGELA HUGHES — ENHANCED BIO (EXPERTISE MARKERS & READ MORE)
+   ============================================================ */
+
+.kenya-angela-markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.kenya-angela-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(39, 68, 114, 0.06);
+  border: 1px solid rgba(39, 68, 114, 0.12);
+  color: var(--kenya-navy);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.kenya-angela-marker svg {
+  opacity: 0.7;
+}
+
+/* Expandable bio container */
+.kenya-angela-expandable {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s ease;
+}
+
+.kenya-angela-expandable.expanded {
+  max-height: 600px;
+  opacity: 1;
+  margin-bottom: 16px;
+}
+
+.kenya-angela-expand-p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--kenya-navy-light);
+  margin: 0;
+}
+
+/* Read More button */
+.kenya-angela-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid var(--kenya-navy-light);
+  color: var(--kenya-navy);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.kenya-angela-read-more:hover {
+  background: var(--kenya-navy);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(39, 68, 114, 0.15);
+}
+
+@media (max-width: 768px) {
+  .kenya-angela-markers {
+    gap: 8px;
+  }
+
+  .kenya-angela-marker {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .kenya-angela-expand-p {
+    font-size: 16px;
+  }
+}
+
+/* ============================================================
+   KENYA SAFARI — VIDEO FEATURE SECTION
+   ============================================================ */
+.kenya-video-feature-section {
+  background: var(--kenya-bg-white);
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Centered header above video */
+.kenya-video-full-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.kenya-video-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.kenya-video-h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--kenya-navy);
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+}
+
+.kenya-video-divider {
+  width: 60px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+/* Full-width video container */
+.kenya-video-full-frame {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.kenya-video-glow-ring {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.07) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.kenya-video-frame-wrap {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow:
+    0 50px 100px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.kenya-video-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .kenya-video-h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-video-feature-section {
+    padding: 60px 15px;
+  }
+
+  .kenya-video-h2 {
+    font-size: 28px;
+  }
+
+  .kenya-video-frame-wrap {
+    border-radius: 16px;
+  }
+}
+
+

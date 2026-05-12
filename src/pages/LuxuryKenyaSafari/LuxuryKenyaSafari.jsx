@@ -50,6 +50,8 @@ import {
   Wind,
   Plane,
   ShieldAlert,
+  ChevronDown,
+  Navigation,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useState, useEffect } from "react";
@@ -70,6 +72,7 @@ function LuxuryKenyaSafari() {
   }, [heroImages.length]);
 
   const [activeFaq, setActiveFaq] = useState(null);
+  const [showBioFull, setShowBioFull] = useState(false);
   const [activeRegion, setActiveRegion] = useState(0);
 
   useEffect(() => {
@@ -685,6 +688,31 @@ function LuxuryKenyaSafari() {
         </div>
       </section>
 
+      
+      {/* SPECIALIZATION */}
+      <section className="btgms-section btgms-specialization">
+        <div className="btgms-container">
+          <h2 className="btgms-h2">
+            Experts in African Safari & Expedition Travel
+          </h2>
+          <p className="btgms-p">
+            Angela Hughes and Trips & Ships Luxury Travel specialize in custom
+            luxury African safaris and expedition travel throughout Kenya,
+            Tanzania, Botswana, South Africa, Zimbabwe, Rwanda, Uganda, and
+            beyond. With firsthand safari experience across Africa, decades of
+            luxury travel expertise, and relationships with some of the world’s
+            most respected safari partners, Angela and her team help travelers
+            navigate the details that transform a safari from simply beautiful
+            to deeply meaningful. From witnessing the Great Migration to
+            designing multi generational journeys, gorilla trekking experiences,
+            conservation focused travel, and luxury safari itineraries tailored
+            to individual travel styles, Trips & Ships Luxury Travel provides
+            concierge level guidance for travelers seeking a highly personalized
+            Africa experience.
+          </p>
+        </div>
+      </section>
+
       {/* ── WHY TRAVELERS FALL IN LOVE ───────────────────────────────────────────── */}
       <section className="kenya-pinnacle-gallery">
         <div className="kenya-pinnacle-gallery-container">
@@ -747,6 +775,7 @@ function LuxuryKenyaSafari() {
           </div>
         </div>
       </section>
+
 
       {/* ── GLOBAL EXCELLENCE BENCHMARK (WOW UI) ────────────────────────────────── */}
       <section className="kenya-wow-section">
@@ -1268,7 +1297,32 @@ function LuxuryKenyaSafari() {
         </div>
       </section>
 
-      {/* ── THE ATMOSPHERIC IMMERSION (SAFARI SOUL) ───────────────────────────────── */}
+      {/* ── KENYA SAFARI VIDEO FEATURE ──────────────────────────────────────────── */}
+      <section className="kenya-video-feature-section">
+        <div className="kenya-inner">
+          <div className="kenya-video-full-header">
+            <h2 className="kenya-video-h2">
+              Experience Kenya Through the Lens
+            </h2>
+            <div class="itinerary-bar"></div>
+          </div>
+
+          <div className="kenya-video-full-frame">
+            <div className="kenya-video-glow-ring"></div>
+            <div className="kenya-video-frame-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/WkYDd6tLLYE?rel=0&modestbranding=1"
+                title="Kenya Luxury Safari Experience"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="kenya-video-iframe"
+              ></iframe>
+            </div>
+            </div>
+          </div>
+      </section>
+
+
       <section className="kenya-soul-immersion">
         <div className="kenya-inner">
           <div className="soul-header-folio">
@@ -1361,6 +1415,130 @@ function LuxuryKenyaSafari() {
                   </p>
                   <p className="p-main">
                     The best camps make travelers feel immersed inside it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* ── ABOUT ANGELA HUGHES (PROFILE - WOW UI) ───────────────────────────────── */}
+      <section className="kenya-about-angela">
+        <div className="kenya-inner">
+          <div className="angela-grid">
+            {/* Left: Photo */}
+            <div className="angela-photo-wrap">
+              <div className="angela-image-container">
+                <img
+                  src={angelaHughes}
+                  alt="Angela Hughes - Luxury Travel Designer"
+                  className="angela-image"
+                />
+                <div className="angela-accent-box"></div>
+              </div>
+            </div>
+
+            {/* Right: Content */}
+            <div className="angela-content">
+              <div className="angela-content-inner">
+                <h2 className="angela-h2">About Angela Hughes</h2>
+                <div className="angela-divider"></div>
+
+                {/* Expertise Markers */}
+                <div className="kenya-angela-markers">
+                  <div className="kenya-angela-marker">
+                    <Award size={16} />
+                    <span>Award Winning</span>
+                  </div>
+                  <div className="kenya-angela-marker">
+                    <Navigation size={16} />
+                    <span>121+ Countries</span>
+                  </div>
+                  <div className="kenya-angela-marker">
+                    <Zap size={16} />
+                    <span>Geography Professor</span>
+                  </div>
+                </div>
+
+                <div className="angela-bio">
+                  <p>
+                    Angela Hughes is one of the most recognized voices in luxury
+                    travel. She has spent decades designing complex luxury
+                    itineraries across Africa and around the world.
+                  </p>
+                </div>
+
+                <div className={`kenya-angela-expandable ${showBioFull ? "expanded" : ""}`}>
+                  <p className="kenya-angela-expand-p">
+                    Luxury safari planning requires far more than choosing a
+                    lodge or deciding between Kenya and Tanzania. The timing of
+                    the migration, regional weather patterns, wildlife movement,
+                    flight logistics, conservation access, guide quality, and
+                    pacing of the itinerary all shape the overall experience.
+                    As a professor of Travel and Tourism and Geography, award
+                    winning luxury travel advisor, and one of the most
+                    recognized voices in luxury travel media today, Angela
+                    Hughes brings both destination knowledge and real world
+                    safari experience to the planning process. Having traveled
+                    extensively throughout Africa and more than 121 countries
+                    worldwide, Angela works closely with trusted luxury safari
+                    partners to help clients select the right destination, camp
+                    style, safari pacing, and seasonal timing based on their
+                    goals, comfort level, and travel investment.
+                  </p>
+                </div>
+
+                <button
+                  className="kenya-angela-read-more"
+                  onClick={() => setShowBioFull(!showBioFull)}
+                >
+                  {showBioFull ? "Read Less" : "Read More About Angela"}
+                  <ChevronDown
+                    size={16}
+                    style={{
+                      transform: showBioFull ? "rotate(180deg)" : "rotate(0deg)",
+                      transition: "transform 0.4s ease",
+                    }}
+                  />
+                </button>
+
+                <div className="angela-recognition">
+                  <span className="recognition-label">
+                    Industry Recognition
+                  </span>
+                  <ul className="recognition-list">
+                    <li>
+                      <Award size={18} className="recognition-icon" />
+                      <span>
+                        Named Luxury Travel Influencer of the Year by Travel
+                        Leaders Network
+                      </span>
+                    </li>
+                    <li>
+                      <Award size={18} className="recognition-icon" />
+                      <span>
+                        Recognized as one of the Most Influential Women in
+                        Travel by TravelPulse
+                      </span>
+                    </li>
+                    <li>
+                      <Award size={18} className="recognition-icon" />
+                      <span>
+                        Winner of multiple Magellan Awards from Travel Weekly
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="angela-manifesto">
+                  <p className="manifesto-p">
+                    Clients do not work with Angela Hughes to simply book
+                    travel.
+                    <br />
+                    <span className="manifesto-bold">
+                      They work with her to get it right.
+                    </span>
                   </p>
                 </div>
               </div>
@@ -2264,79 +2442,6 @@ function LuxuryKenyaSafari() {
         </div>
       </section>
 
-      {/* ── ABOUT ANGELA HUGHES (PROFILE - WOW UI) ───────────────────────────────── */}
-      <section className="kenya-about-angela">
-        <div className="kenya-inner">
-          <div className="angela-grid">
-            {/* Left: Photo */}
-            <div className="angela-photo-wrap">
-              <div className="angela-image-container">
-                <img
-                  src={angelaHughes}
-                  alt="Angela Hughes - Luxury Travel Designer"
-                  className="angela-image"
-                />
-                <div className="angela-accent-box"></div>
-              </div>
-            </div>
-
-            {/* Right: Content */}
-            <div className="angela-content">
-              <div className="angela-content-inner">
-                <h2 className="angela-h2">About Angela Hughes</h2>
-                <div className="angela-divider"></div>
-
-                <div className="angela-bio">
-                  <p>
-                    Angela Hughes is one of the most recognized voices in luxury
-                    travel. She has spent decades designing complex luxury
-                    itineraries across Africa and around the world.
-                  </p>
-                </div>
-
-                <div className="angela-recognition">
-                  <span className="recognition-label">
-                    Industry Recognition
-                  </span>
-                  <ul className="recognition-list">
-                    <li>
-                      <Award size={18} className="recognition-icon" />
-                      <span>
-                        Named Luxury Travel Influencer of the Year by Travel
-                        Leaders Network
-                      </span>
-                    </li>
-                    <li>
-                      <Award size={18} className="recognition-icon" />
-                      <span>
-                        Recognized as one of the Most Influential Women in
-                        Travel by TravelPulse
-                      </span>
-                    </li>
-                    <li>
-                      <Award size={18} className="recognition-icon" />
-                      <span>
-                        Winner of multiple Magellan Awards from Travel Weekly
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="angela-manifesto">
-                  <p className="manifesto-p">
-                    Clients do not work with Angela Hughes to simply book
-                    travel.
-                    <br />
-                    <span className="manifesto-bold">
-                      They work with her to get it right.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── FAQ ───────────────────────────────────────────────────────────────────── */}
       <section className="kenya-faq-section">
@@ -2369,7 +2474,7 @@ function LuxuryKenyaSafari() {
       </section>
 
       {/* ── FINAL CTA ─────────────────────────────────────────────────────────────── */}
-      <section className="kenya-section kenya-bg-dark2">
+      {/* <section className="kenya-section kenya-bg-dark2">
         <div className="kenya-bg-pattern"></div>
         <div className="kenya-inner kenya-relative">
           <div className="kenya-cta-section-inner">
@@ -2415,6 +2520,43 @@ function LuxuryKenyaSafari() {
                 Request Kenya Safari Options
               </button>
             </div>
+          </div>
+        </div>
+      </section> */}
+            <section className="btgms-section btgms-final-cta-v3"  style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${africa2})`,
+        }}>
+        <div className="btgms-container">
+          <div className="btgms-final-card-premium">
+            <div className="btgms-final-card-content">
+              <h2 className="btgms-final-title">
+                Ready to begin planning your Africa journey?
+              </h2>
+
+              <div className="btgms-final-divider"></div>
+
+              <p className="btgms-final-text">
+                Schedule a consultation with Trips & Ships Luxury Travel to
+                design a custom luxury safari experience built around your
+                interests, travel style, timeline, and investment level. Whether
+                you are planning your first safari, a multi generational family
+                adventure, a honeymoon, a photography focused journey, or an
+                expedition across East or Southern Africa, our team can help
+                guide you through every step of the planning process with
+                personalized recommendations, destination expertise, and
+                concierge level support.
+              </p>
+
+              <div className="btgms-final-actions">
+                <button className="btgms-btn-luxury">
+                  <span>Plan My Luxury Safari</span>
+                  <ArrowRight size={20} className="btgms-btn-icon" />
+                </button>
+              </div>
+            </div>
+
+            {/* Decorative Background Elements */}
+            <div className="btgms-card-glow"></div>
           </div>
         </div>
       </section>

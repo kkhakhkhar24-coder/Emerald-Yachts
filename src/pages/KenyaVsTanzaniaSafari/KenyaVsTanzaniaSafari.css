@@ -1924,12 +1924,11 @@
 }
 
 .kvts-migration-clean-label {
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--navy-light);
-  opacity: 0.7;
+  color: var(--navy);
 }
 
 .kvts-migration-clean-card p {
@@ -2510,8 +2509,8 @@
 }
 
 .kvt-cost-v7-factors-h3 {
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 18px !important;
+  font-weight: 800 !important;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--navy);

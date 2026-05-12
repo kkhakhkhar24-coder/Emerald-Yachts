@@ -1278,13 +1278,6 @@ export default function KenyaVsTanzaniaSafari() {
                   </span>
                 </p>
               </div>
-              <div className="kvts-section-img-wrap kvts-mt-md">
-                <img
-                  src={TanzaniaImage4}
-                  alt="Safari Zebras"
-                  className="kvts-section-img"
-                />
-              </div>
             </div>
 
             {/* Right: The Logic */}
