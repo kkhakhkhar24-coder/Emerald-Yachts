@@ -1322,7 +1322,39 @@ export default function LuxuryAfricanSafariCost() {
         </div>
       </section>
 
+
+
+
+      {/* ── 9.5. CINEMATIC PREVIEW: SINGITA ── */}
+      <section className="lasc-video-cinematic-section">
+        <div className="lasc-container">
+          <div className="lasc-video-cinematic-centered">
+            <div className="lasc-video-cinematic-header">
+              <h2 className="lasc-h2">SINGITA: THE PINNACLE OF THE AFRICAN SAFARI</h2>
+              <div className="lasc-accent-line lasc-accent-line--center"></div>
+
+              <p className="lasc-p">
+                For those seeking the absolute peak of African hospitality, Singita remains the gold standard. 
+                Integrating conservation, community, and world-class design, a Singita safari is more than a journey—it is an immersion into the soul of the continent.
+              </p>
+            </div>
+            <div className="lasc-video-cinematic-media-full">
+              <div className="lasc-video-wrapper-premium">
+                <iframe
+                  src="https://www.youtube.com/embed/jhsQZI1YY9g"
+                  title="Singita Lodge Africa Safari"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* ── 10. MOST EXPENSIVE TIMES (Peak Alert Design) ── */}
+
       <section className="lasc-peak-section">
         <div className="lasc-peak-inner">
           <div className="lasc-peak-header">
