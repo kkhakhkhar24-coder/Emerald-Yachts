@@ -1052,17 +1052,6 @@ function LuxuryKenyaSafari() {
 
       {/* ── THE REGIONAL SHOWCASE SLIDER (REGIONS) ────────────────────────────────── */}
       <section className="kenya-regions-sector">
-        <div className="kenya-regions-bg-master">
-          {regions.map((region, i) => (
-            <div
-              key={i}
-              className={`region-bg-master-img ${i === activeRegion ? "active" : ""}`}
-              style={{ backgroundImage: `url(${region.image})` }}
-            />
-          ))}
-          <div className="region-bg-master-overlay" />
-        </div>
-
         <div className="kenya-inner">
           <div className="collection-header">
             <h2 className="collection-h2">
@@ -1079,28 +1068,24 @@ function LuxuryKenyaSafari() {
                   className={`region-folio-card ${i === activeRegion ? "active" : ""}`}
                 >
                   <div className="folio-header">
-                    <div className="folio-meta">
-                      <span className="folio-index">REGION 0{i + 1}</span>
-                      <div className="folio-tier-badge">{region.tier}</div>
-                    </div>
+                    <span className="folio-index">REGION 0{i + 1}</span>
+                    <h3 className="folio-title">{region.name}</h3>
                   </div>
 
                   <div className="folio-body">
-                    <h3 className="folio-title">{region.name}</h3>
                     <p className="folio-intro">{region.intro}</p>
 
                     {region.knownFor && (
                       <div className="folio-feature-block">
-                        <span className="folio-sublabel">
-                          SIGNATURE FEATURES:
-                        </span>
-                        <div className="folio-tags">
-                          {region.knownFor.map((tag, idx) => (
-                            <span key={idx} className="folio-tag">
-                              {tag}
-                            </span>
+                        <span className="folio-sublabel">KNOWN FOR:</span>
+                        <ul className="folio-feature-list">
+                          {region.knownFor.map((item, idx) => (
+                            <li key={idx}>
+                              <CheckCircle size={14} className="feature-icon" />
+                              <span>{item}</span>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       </div>
                     )}
 
@@ -1114,9 +1099,10 @@ function LuxuryKenyaSafari() {
                     </div>
                   </div>
 
-                  <div className="folio-footer">
-                    <button className="folio-cta-btn">
-                      Explore {region.name} <ArrowRight size={16} />
+                  <div className="folio-footer-minimal">
+                    <div className="folio-cta-line"></div>
+                    <button className="folio-luxury-cta">
+                      Explore Experience <ArrowRight size={18} />
                     </button>
                   </div>
                 </div>
@@ -1935,8 +1921,8 @@ function LuxuryKenyaSafari() {
           </div>
         </div>
 
-        <div className="camps-infinite-slider">
-          <div className="camps-slider-track">
+        <div className="camps-editorial-slider">
+          <div className="camps-editorial-track">
             {[
               {
                 id: "01",
@@ -1944,8 +1930,6 @@ function LuxuryKenyaSafari() {
                 desc: "Angama Mara appeals strongly to travelers wanting cinematic scenery, elevated design, and direct access to the Mara Triangle.",
                 suitability:
                   "The camp works particularly well for honeymooners, couples, and first time luxury safari travelers wanting a refined but iconic Kenya safari experience.",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGr3yDOhOsyouc_qBMo11czcoqqiJCzWU54A&s",
               },
               {
                 id: "02",
@@ -1953,8 +1937,6 @@ function LuxuryKenyaSafari() {
                 desc: "Mara Plains is known for exceptional guiding and wildlife positioning.",
                 suitability:
                   "This camp appeals strongly to experienced safari travelers, photographers, and travelers prioritizing wildlife access over flashy design.",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirZ96momXRbudJ1QoiG8y4O1JqOZbsehwlA&s",
               },
               {
                 id: "03",
@@ -1962,8 +1944,6 @@ function LuxuryKenyaSafari() {
                 desc: "Cottar’s delivers one of the strongest classic East Africa safari atmospheres in Kenya.",
                 suitability:
                   "This camp works particularly well for travelers wanting heritage, storytelling, and old world safari character.",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR30ORvFjn1dpfp58wVw-I9SnA-l_q4THrJow&s",
               },
               {
                 id: "04",
@@ -1971,8 +1951,6 @@ function LuxuryKenyaSafari() {
                 desc: "Segera combines ultra luxury safari with conservation, art, wellness, and privacy.",
                 suitability:
                   "This is one of Kenya’s most sophisticated safari experiences.",
-                image:
-                  "https://media-cdn.tripadvisor.com/media/photo-s/07/8b/b4/a7/segera-retreat.jpg",
               },
               {
                 id: "05",
@@ -1980,8 +1958,6 @@ function LuxuryKenyaSafari() {
                 desc: "ol Donyo is known for privacy, horseback safari experiences, and extraordinary Kilimanjaro views.",
                 suitability:
                   "This camp appeals strongly to honeymooners and travelers wanting a quieter, highly immersive safari.",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlWyOh5GQ8JsodBY_kpeXyfzzCiD84tRUuA&s",
               },
             ]
               .concat([
@@ -1991,8 +1967,6 @@ function LuxuryKenyaSafari() {
                   desc: "Angama Mara appeals strongly to travelers wanting cinematic scenery, elevated design, and direct access to the Mara Triangle.",
                   suitability:
                     "The camp works particularly well for honeymooners, couples, and first time luxury safari travelers wanting a refined but iconic Kenya safari experience.",
-                  image:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGr3yDOhOsyouc_qBMo11czcoqqiJCzWU54A&s",
                 },
                 {
                   id: "02",
@@ -2000,8 +1974,6 @@ function LuxuryKenyaSafari() {
                   desc: "Mara Plains is known for exceptional guiding and wildlife positioning.",
                   suitability:
                     "This camp appeals strongly to experienced safari travelers, photographers, and travelers prioritizing wildlife access over flashy design.",
-                  image:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirZ96momXRbudJ1QoiG8y4O1JqOZbsehwlA&s",
                 },
                 {
                   id: "03",
@@ -2009,8 +1981,6 @@ function LuxuryKenyaSafari() {
                   desc: "Cottar’s delivers one of the strongest classic East Africa safari atmospheres in Kenya.",
                   suitability:
                     "This camp works particularly well for travelers wanting heritage, storytelling, and old world safari character.",
-                  image:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR30ORvFjn1dpfp58wVw-I9SnA-l_q4THrJow&s",
                 },
                 {
                   id: "04",
@@ -2018,8 +1988,6 @@ function LuxuryKenyaSafari() {
                   desc: "Segera combines ultra luxury safari with conservation, art, wellness, and privacy.",
                   suitability:
                     "This is one of Kenya’s most sophisticated safari experiences.",
-                  image:
-                    "https://media-cdn.tripadvisor.com/media/photo-s/07/8b/b4/a7/segera-retreat.jpg",
                 },
                 {
                   id: "05",
@@ -2027,17 +1995,11 @@ function LuxuryKenyaSafari() {
                   desc: "ol Donyo is known for privacy, horseback safari experiences, and extraordinary Kilimanjaro views.",
                   suitability:
                     "This camp appeals strongly to honeymooners and travelers wanting a quieter, highly immersive safari.",
-                  image:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlWyOh5GQ8JsodBY_kpeXyfzzCiD84tRUuA&s",
                 },
               ])
               .map((camp, index) => (
                 <div key={index} className="camp-folio-card">
-                  <div className="camp-folio-image">
-                    <img src={camp.image} alt={camp.name} />
-                    <div className="camp-folio-overlay"></div>
-                    <span className="camp-folio-num">{camp.id}</span>
-                  </div>
+                  <span className="camp-folio-num">{camp.id}</span>
                   <div className="camp-folio-content">
                     <h3 className="camp-folio-title">{camp.name}</h3>
                     <p className="camp-folio-desc">{camp.desc}</p>
@@ -2045,7 +2007,7 @@ function LuxuryKenyaSafari() {
                       <span className="suitability-label">
                         EXPERT SUITABILITY
                       </span>
-                      <p>{camp.suitability}</p>
+                      <p className="suitability-text">{camp.suitability}</p>
                     </div>
                   </div>
                 </div>
