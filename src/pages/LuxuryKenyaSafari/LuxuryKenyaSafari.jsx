@@ -1,13 +1,20 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./LuxuryKenyaSafari.css";
-import kenyaNarrative from "../../assets/LuxuryKenyaSafari/kenya_narrative.png";
-import kenyaLeopard from "../../assets/LuxuryKenyaSafari/kenya_leopard_dusk.png";
 import TravelWeeklyLogo from "../../assets/LuxuryKenyaSafari/Travel_Weekly.webp";
 import TravelPulseLogo from "../../assets/LuxuryKenyaSafari/TravelPulse.webp";
 import InsiderReportLogo from "../../assets/LuxuryKenyaSafari/Insider_Travel_Report.webp";
 import TravelAgeWestLogo from "../../assets/LuxuryKenyaSafari/Travel_Age_West.webp";
 import angelaHughes from "../../assets/Angela_Hughes.jpg";
-import maraDawn from "../../assets/LuxuryKenyaSafari/maasai_mara_dawn.png";
+
+import africa1 from "../../assets/LuxuryKenyaSafari/africa1.jpg";
+import africa2 from "../../assets/LuxuryKenyaSafari/africa2.jpg";
+import africa3 from "../../assets/LuxuryKenyaSafari/africa3.jpg";
+import africa4 from "../../assets/LuxuryKenyaSafari/africa4.jpg";
+import africa5 from "../../assets/LuxuryKenyaSafari/africa5.jpg";
+import africa6 from "../../assets/LuxuryKenyaSafari/africa6.jpg";
+import africa7 from "../../assets/LuxuryKenyaSafari/africa7.jpg";
+import africa8 from "../../assets/LuxuryKenyaSafari/africa8.jpg";
+
 
 import {
   MapPin,
@@ -51,8 +58,8 @@ function LuxuryKenyaSafari() {
   const [currentHero, setCurrentHero] = useState(0);
   const [showFullHero, setShowFullHero] = useState(false);
   const heroImages = [
-    "https://www.andbeyond.com/wp-content/uploads/sites/5/guest-area-with-golden-sunrise-at-andbeyond-bateleur-camp-on-a-luxury-kenya-safari1.jpg",
-    "https://www.virginlimitededition.com/media/y1opsiei/mahali-mzuri-fire-pit-at-night.jpg?width=1500&height=780&quality=70&v=1dc48d7a71aeb40",
+    africa1,
+    africa2,
   ];
 
   useEffect(() => {
@@ -90,8 +97,7 @@ function LuxuryKenyaSafari() {
       worksWellFor:
         "first time safari travelers, photographers, honeymooners, and travelers wanting the classic luxury safari experience.",
       tier: "Iconic Heritage",
-      image:
-        "https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/09/07223907/maasai-mara.jpg",
+      image: africa1,
     },
     {
       name: "AMBOSELI",
@@ -100,8 +106,7 @@ function LuxuryKenyaSafari() {
       worksWellFor:
         "photography, families, and travelers wanting iconic Kenya landscapes.",
       tier: "Elephant Empire",
-      image:
-        "https://www.andbeyond.com/wp-content/uploads/sites/5/elephant-bull-front-of-kilimanjaro-amboseli.jpg",
+      image: africa2,
     },
     {
       name: "SAMBURU",
@@ -110,8 +115,7 @@ function LuxuryKenyaSafari() {
       worksWellFor:
         "travelers wanting a more layered and less predictable Kenya safari experience.",
       tier: "Northern Frontier",
-      image:
-        "https://images.squarespace-cdn.com/content/v1/609d274b1bf1ca3944208968/0382b6ee-d5c3-4efb-a5c1-8f41c7f69024/Samburu+Morans+looking+out+over+the+Sarara+valley+_+Photo+by+SImon+Pocock_web.jpg",
+      image: africa3,
     },
     {
       name: "LAIKIPIA",
@@ -127,8 +131,7 @@ function LuxuryKenyaSafari() {
       worksWellFor:
         "experienced safari travelers gravitate after their first East Africa safari.",
       tier: "Private Exclusive",
-      image:
-        "https://www.micato.com/wp-content/uploads/2018/09/the-laikipia-plateau-1.jpg",
+      image: africa4,
     },
     {
       name: "LEWA CONSERVANCY",
@@ -141,8 +144,7 @@ function LuxuryKenyaSafari() {
         "exceptional guiding",
       ],
       tier: "Conservation Elite",
-      image:
-        "https://www.andbeyond.com/wp-content/uploads/sites/5/Visit-Lewa-Downs-Conservancy.jpg",
+      image: africa5,
     },
   ];
 
@@ -584,7 +586,7 @@ function LuxuryKenyaSafari() {
               images people carry in their minds of East Africa often come from
               here. Endless golden grasslands. Acacia trees stretched across the
               horizon. Elephants moving quietly through morning mist. Lions
-              crossing the savanna at sunrise. Luxury tented camps glowing under
+              crossing the savanna at sunrise.Luxury tented camps <br /> glowing under
               lantern light at night.
             </p>
 
@@ -619,7 +621,7 @@ function LuxuryKenyaSafari() {
                   countries, and extensive safari experience across Africa,
                   Angela Hughes works with travelers to design Kenya safaris
                   based on timing, wildlife movement, routing, and camp
-                  placement rather than generic itineraries.
+                  placement <br /> rather than generic itineraries.
                 </p>
                 <p className="kenya-hero-lead">
                   Because in Kenya, where you stay matters just as much as where
@@ -690,21 +692,21 @@ function LuxuryKenyaSafari() {
             <div className="kenya-pinnacle-side-label">EST. 1984</div>
             <div className="kenya-pinnacle-panel">
               <img
-                src="https://naicef.com/wp-content/uploads/2025/08/Why-visit-Kenya_-reasons-to-visit-kenya_-Visit-Kenya-Africa_-Kenya-travel-for-first-time-visitors_-K-1.jpg"
+                src={africa3}
                 alt="Luxury Safari Interior"
                 loading="lazy"
               />
             </div>
             <div className="kenya-pinnacle-panel">
               <img
-                src="https://egyptunitedtours.com/wp-content/uploads/2025/11/Romantic-Activities-and-Experiences-scaled.webp"
+                src={africa4}
                 alt="Safari Landscape"
                 loading="lazy"
               />
             </div>
             <div className="kenya-pinnacle-panel">
               <img
-                src="https://katakenya.org/wp-content/uploads/2025/06/Header-image-Kenya-zebras.webp"
+                src={africa5}
                 alt="Safari Camp"
                 loading="lazy"
               />
@@ -797,7 +799,7 @@ function LuxuryKenyaSafari() {
 
             <div className="kenya-wow-visual">
               <div className="kenya-wow-image-frame">
-                <img src={kenyaNarrative} alt="Kenya Safari Landscape" />
+                <img src={africa6} alt="Kenya Safari Landscape" />
                 <div className="kenya-wow-seal">
                   <Award size={32} />
                   <div className="kenya-wow-seal-text">
@@ -905,7 +907,7 @@ function LuxuryKenyaSafari() {
 
           <div className="kenya-truth-visual">
             <img
-              src={kenyaLeopard}
+              src={africa7}
               alt="Leopard at Dusk"
               className="kenya-truth-img"
             />
@@ -1325,7 +1327,7 @@ function LuxuryKenyaSafari() {
       <section className="kenya-mara-awakening">
         <div className="awakening-bg">
           <img
-            src={maraDawn}
+            src={africa2}
             alt="Maasai Mara Dawn"
             className="awakening-img"
           />
@@ -1654,7 +1656,7 @@ function LuxuryKenyaSafari() {
             <div className="cost-factors-image-v2">
               <div className="cost-image-wrapper">
                 <img
-                  src="https://i0.wp.com/meektrailssafaris.com/wp-content/uploads/2026/03/tour-companies-in-Kenya.jpg?resize=980%2C735&ssl=1"
+                  src={africa8}
                   alt="Kenya Safari Tour"
                   className="cost-main-img"
                 />

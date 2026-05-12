@@ -109,11 +109,9 @@
 .kenya-bg-pattern {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    var(--kenya-bg-dark) 0%,
-    var(--kenya-bg-dark2) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--kenya-bg-dark) 0%,
+      var(--kenya-bg-dark2) 100%);
   z-index: 0;
 }
 
@@ -226,11 +224,11 @@
 }
 
 .kenya-hero-lead {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.9);
   max-width: 800px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -364,7 +362,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
 }
 
 .kenya-read-more-btn {
@@ -394,7 +392,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
   animation: fadeInDown 0.8s ease forwards;
 }
 
@@ -429,6 +427,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -483,6 +482,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-50% - 15px));
   }
@@ -1024,10 +1024,10 @@
    ATMOSPHERIC TRUTH SECTION (WHAT IS NOT)
    ============================================================ */
 .kenya-truth-section {
-  background: #05080c;
+  background: var(--kenya-bg-soft);
   padding: 120px 0;
   overflow: hidden;
-  color: #ffffff;
+  color: var(--kenya-navy);
 }
 
 .kenya-truth-container {
@@ -1061,7 +1061,7 @@
   line-height: 0.95;
   margin-bottom: 60px;
   letter-spacing: -0.04em;
-  color: #ffffff;
+  color: var(--kenya-navy);
   font-family: serif;
 }
 
@@ -1085,7 +1085,7 @@
 
 .kenya-truth-neg-item p {
   font-size: 18px;
-  color: #cbd5e1;
+  color: #4a5568;
   margin: 0;
   line-height: 1.5;
   font-weight: 300;
@@ -1093,13 +1093,13 @@
 
 .kenya-truth-philosophical {
   padding-left: 40px;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(39, 68, 114, 0.15);
   margin-bottom: 60px;
 }
 
 .kenya-philosophy-lead {
   font-size: 24px;
-  color: #ffffff;
+  color: var(--kenya-navy);
   line-height: 1.4;
   margin-bottom: 24px;
   font-style: italic;
@@ -1107,12 +1107,12 @@
 
 .kenya-philosophy-body {
   font-size: 17px;
-  color: #94a3b8;
+  color: #4a5568;
   line-height: 1.8;
 }
 
 .kenya-truth-conclusion {
-  background: linear-gradient(90deg, #1e293b, transparent);
+  background: linear-gradient(90deg, rgba(39, 68, 114, 0.08), transparent);
   padding: 24px 32px;
   border-radius: 0 4px 4px 0;
 }
@@ -1120,7 +1120,7 @@
 .kenya-truth-conclusion p {
   font-size: 19px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--kenya-navy);
   margin: 0;
   letter-spacing: -0.01em;
 }
@@ -1142,13 +1142,6 @@
 .kenya-truth-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    #05080c 0%,
-    transparent 40%,
-    transparent 60%,
-    #05080c 100%
-  );
 }
 
 @media (max-width: 1024px) {
@@ -1464,12 +1457,10 @@
 .region-bg-master-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(15, 28, 46, 0.95) 0%,
-    rgba(15, 28, 46, 0.85) 40%,
-    rgba(15, 28, 46, 0.6) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(15, 28, 46, 0.95) 0%,
+      rgba(15, 28, 46, 0.85) 40%,
+      rgba(15, 28, 46, 0.6) 100%);
   backdrop-filter: blur(8px);
   z-index: 1;
 }
@@ -1530,6 +1521,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1828,6 +1820,7 @@
   line-height: 1.1;
   font-family: var(--font-display);
 }
+
 .conservancy-h2 {
   margin-bottom: 30px;
 }
@@ -3346,13 +3339,11 @@
 .awakening-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    var(--kenya-bg-dark) 0%,
-    rgba(15, 28, 46, 0.4) 40%,
-    rgba(15, 28, 46, 0.4) 60%,
-    var(--kenya-bg-dark) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--kenya-bg-dark) 0%,
+      rgba(15, 28, 46, 0.4) 40%,
+      rgba(15, 28, 46, 0.4) 60%,
+      var(--kenya-bg-dark) 100%);
   backdrop-filter: blur(10px);
 }
 
@@ -3476,7 +3467,8 @@
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  color: var(--kenya-navy); /* Dark text on light BG */
+  color: var(--kenya-navy);
+  /* Dark text on light BG */
   font-family: serif;
 }
 
@@ -3576,6 +3568,7 @@
     padding: 40px;
     gap: 50px;
   }
+
   .arrival-h2 {
     font-size: 32px;
   }
@@ -3593,7 +3586,8 @@
 }
 
 .nairobi-editorial-section {
-  padding-top: 0 !important; /* Tighten space between the two logistics sections */
+  padding-top: 0 !important;
+  /* Tighten space between the two logistics sections */
 }
 
 .nairobi-h2 {
@@ -3681,9 +3675,11 @@
     padding: 40px;
     gap: 50px;
   }
+
   .nairobi-h2 {
     font-size: 32px;
   }
+
   .nairobi-editorial-section {
     padding-top: 60px !important;
   }
@@ -3992,10 +3988,12 @@
   .kenya-migration-editorial {
     padding: 50px 30px;
   }
+
   .kenya-migration-comparison-grid {
     grid-template-columns: 1fr;
     gap: 60px;
   }
+
   .kenya-migration-h2 {
     font-size: 32px;
   }
@@ -4135,6 +4133,7 @@
     grid-template-columns: 1fr;
     gap: 60px;
   }
+
   .kenya-cost-h2 {
     font-size: 36px;
   }
@@ -4525,9 +4524,11 @@
   .design-strategic-grid {
     grid-template-columns: 1fr;
   }
+
   .design-footer-premium {
     padding: 40px 20px;
   }
+
   .design-footer-main {
     font-size: 24px;
   }
@@ -4829,6 +4830,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-50% - 15px));
   }
@@ -4877,11 +4879,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(15, 28, 46, 0.4)
-  );
+  background: linear-gradient(to bottom,
+      transparent 50%,
+      rgba(15, 28, 46, 0.4));
 }
 
 .camp-folio-num {
@@ -5371,6 +5371,7 @@
 }
 
 @media (max-width: 1024px) {
+
   .kenya-editorial-grid,
   .kenya-soul-layout,
   .kenya-logistics-grid,
@@ -5412,12 +5413,14 @@
 .lifestyle-panel {
   position: relative;
   height: 800px;
-  border-radius: 12px; /* Smoother corners */
+  border-radius: 12px;
+  /* Smoother corners */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 30px; /* Reduced to balance with internal content padding */
+  padding: 30px;
+  /* Reduced to balance with internal content padding */
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -5437,11 +5440,11 @@
 }
 
 .honeymoon-bg {
-  background-image: url("https://www.masaimara.travel/images/kenya-honeymoon-safaris-mobile.jpg");
+  background-image: url("../../assets/LuxuryKenyaSafari/africa1.jpg");
 }
 
 .family-bg {
-  background-image: url("https://egyptunitedtours.com/wp-content/uploads/2025/11/Romantic-Activities-and-Experiences-scaled.webp");
+  background-image: url("../../assets/LuxuryKenyaSafari/africa3.jpg");
 }
 
 .lifestyle-panel:hover .panel-image-bg {
@@ -5451,13 +5454,11 @@
 .panel-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(15, 28, 46, 0.95) 0%,
-    rgba(15, 28, 46, 0.7) 40%,
-    rgba(15, 28, 46, 0.3) 70%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(15, 28, 46, 0.95) 0%,
+      rgba(15, 28, 46, 0.7) 40%,
+      rgba(15, 28, 46, 0.3) 70%,
+      transparent 100%);
   z-index: 1;
 }
 
@@ -5466,8 +5467,10 @@
   z-index: 2;
   color: #ffffff;
   padding: 40px;
-  background: rgba(15, 28, 46, 0.4); /* Increased opacity */
-  backdrop-filter: blur(12px); /* Increased blur */
+  background: rgba(15, 28, 46, 0.4);
+  /* Increased opacity */
+  backdrop-filter: blur(12px);
+  /* Increased blur */
   -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -5591,11 +5594,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(39, 68, 114, 0.05) 1px,
-    transparent 0
-  );
+  background-image: radial-gradient(circle at 1px 1px,
+      rgba(39, 68, 114, 0.05) 1px,
+      transparent 0);
   background-size: 40px 40px;
   opacity: 0.8;
   pointer-events: none;
@@ -5604,7 +5605,8 @@
 .kenya-wisdom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0; /* Merged aesthetic */
+  gap: 0;
+  /* Merged aesthetic */
   max-width: 1200px;
   margin: 0 auto;
   border: 1px solid rgba(39, 68, 114, 0.1);
@@ -5906,5 +5908,1539 @@
 
   .angela-h2 {
     font-size: 32px;
+  }
+}
+
+
+.angela-h2 {
+  font-size: 32px;
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY RESPONSIVENESS
+   ============================================================ */
+
+/* 1024px Breakpoint (Large Tablet / Small Desktop) */
+@media (max-width: 1024px) {
+  .kenya-h1 {
+    font-size: 60px;
+  }
+
+  .kenya-h2,
+  .kenya-h2-white {
+    font-size: 48px;
+  }
+
+  .kenya-p,
+  .kenya-p-white,
+  .kenya-hero-lead {
+    font-size: 18px;
+  }
+}
+
+/* 768px Breakpoint (Tablet) */
+@media (max-width: 768px) {
+  .kenya-h1 {
+    font-size: 32px;
+  }
+
+  .kenya-h2,
+  .kenya-h2-white {
+    font-size: 28px;
+  }
+
+  .kenya-p,
+  .kenya-p-white,
+  .kenya-hero-lead {
+    font-size: 17px;
+  }
+
+  .kenya-hero-inner {
+    padding: 60px 20px;
+  }
+}
+
+/* 480px Breakpoint (Mobile) */
+@media (max-width: 480px) {
+  .kenya-h1 {
+    font-size: 26px;
+  }
+
+  .kenya-h2,
+  .kenya-h2-white {
+    font-size: 24px;
+  }
+
+  .kenya-p,
+  .kenya-p-white,
+  .kenya-hero-lead {
+    font-size: 16px;
+  }
+
+  .kenya-hero-inner {
+    padding: 40px 15px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: AS SEEN IN
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-seen-in-premium {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-seen-in-premium {
+    padding: 40px 20px;
+  }
+
+  .kenya-seen-box {
+    width: 240px;
+    padding: 20px 30px;
+  }
+
+  .kenya-seen-logo {
+    height: 70px;
+  }
+
+  .kenya-seen-text {
+    font-size: 14px;
+  }
+
+  .kenya-seen-label-top {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-seen-in-premium {
+    padding: 30px 15px;
+  }
+
+  .kenya-seen-box {
+    width: 200px;
+    padding: 15px 25px;
+  }
+
+  .kenya-seen-logo {
+    height: 60px;
+  }
+
+  .kenya-seen-text {
+    font-size: 13px;
+  }
+
+  .kenya-seen-label-top {
+    margin-bottom: 20px;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: KENYA CHANGES PEOPLE
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-pinnacle-gallery-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-pinnacle-gallery-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .kenya-pinnacle-panels {
+    height: 400px;
+    width: 100%;
+  }
+
+  .kenya-pinnacle-gallery-text h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .kenya-pinnacle-gallery-quote {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .kenya-pinnacle-gallery-quote::before {
+    display: none;
+  }
+
+  .kenya-pinnacle-gallery-quote p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-pinnacle-panels {
+    height: 300px;
+  }
+
+  .kenya-pinnacle-gallery-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .kenya-pinnacle-gallery-quote p {
+    font-size: 18px;
+  }
+
+  .kenya-pinnacle-eyebrow {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: BEST SAFARI DESTINATIONS (WOW UI)
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-wow-main {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .kenya-wow-visual {
+    position: relative;
+    top: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .kenya-wow-h2-bottom {
+    font-size: 60px;
+  }
+
+  .kenya-wow-lead {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-wow-container {
+    padding: 0 20px;
+  }
+
+  .kenya-wow-header {
+    margin-bottom: 60px;
+  }
+
+  .kenya-wow-h2-top {
+    font-size: 18px;
+  }
+
+  .kenya-wow-h2-bottom {
+    font-size: 32px;
+  }
+
+  .kenya-wow-lead {
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+
+  .kenya-wow-tiles {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .kenya-wow-tile {
+    padding: 30px;
+  }
+
+  .kenya-wow-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kenya-wow-footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-wow-h2-top {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  .kenya-wow-h2-bottom {
+    font-size: 26px;
+  }
+
+  .kenya-wow-lead {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .kenya-wow-tile {
+    padding: 25px 20px;
+  }
+
+  .kenya-wow-tile-body h3 {
+    font-size: 20px;
+  }
+
+  .kenya-wow-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kenya-wow-seal {
+    bottom: -15px;
+    left: -15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .kenya-wow-eyebrow {
+    letter-spacing: 0.3em;
+    font-size: 12px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: WHAT KENYA SAFARI IS NOT
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-truth-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .kenya-truth-visual {
+    width: 100%;
+    margin-left: 0;
+    height: 500px;
+  }
+
+  .kenya-truth-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-truth-section {
+    padding: 80px 0;
+  }
+
+  .kenya-truth-container {
+    padding: 0 20px;
+  }
+
+  .kenya-truth-h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .kenya-truth-neg-item p {
+    font-size: 16px;
+  }
+
+  .kenya-philosophy-lead {
+    font-size: 20px;
+  }
+
+  .kenya-truth-visual {
+    height: 400px;
+  }
+
+  .kenya-truth-philosophical {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-truth-section {
+    padding: 60px 0;
+  }
+
+  .kenya-truth-h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .kenya-truth-negatives {
+    margin-bottom: 50px;
+  }
+
+  .kenya-truth-philosophical {
+    margin-bottom: 40px;
+  }
+
+  .kenya-truth-conclusion {
+    padding: 20px;
+  }
+
+  .kenya-truth-conclusion p {
+    font-size: 16px;
+  }
+
+  .kenya-truth-visual {
+    height: 300px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: KENYA VS TANZANIA
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-vs-section {
+    padding: 100px 20px;
+  }
+
+  .kenya-vs-h2 {
+    font-size: 48px;
+  }
+
+  .kenya-vs-split {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-vs-section {
+    padding: 60px 0;
+  }
+
+  .kenya-vs-h2 {
+    font-size: 28px;
+  }
+
+  .kenya-vs-lead {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .kenya-vs-col {
+    padding: 40px 20px;
+  }
+
+  .kenya-vs-title {
+    font-size: 20px;
+  }
+
+  .kenya-vs-point p {
+    font-size: 16px;
+  }
+
+  .kenya-vs-conclusion-inner {
+    padding: 40px 20px;
+  }
+
+  .kenya-vs-conclusion-inner h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-vs-h2 {
+    font-size: 24px;
+  }
+
+  .kenya-vs-lead {
+    font-size: 16px;
+  }
+
+  .kenya-vs-point-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .kenya-vs-conclusion-inner {
+    padding: 30px 15px;
+  }
+
+  .kenya-vs-conclusion-inner h4 {
+    font-size: 20px;
+  }
+
+  .kenya-vs-conclusion-inner p {
+    font-size: 15px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: BEST LUXURY SAFARI REGIONS
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .regions-display-modern {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .regions-side-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .folio-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-regions-sector {
+    padding: 80px 0;
+    min-height: auto;
+  }
+
+  .region-folio-card {
+    padding: 40px 25px;
+  }
+
+  .folio-title {
+    font-size: 32px;
+  }
+
+  .folio-intro {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .folio-suitability-text {
+    font-size: 16px;
+  }
+
+  .collection-header {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-regions-sector {
+    padding: 60px 0;
+  }
+
+  .region-folio-card {
+    padding: 30px 20px;
+  }
+
+  .folio-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .folio-intro {
+    font-size: 16px;
+  }
+
+  .folio-meta {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .folio-index {
+    font-size: 12px;
+  }
+
+  .folio-cta-btn {
+    padding: 15px 30px;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: KENYA’S CONSERVANCIES MATTER
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .conservancy-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-conservancy-premium {
+    padding: 60px 0;
+  }
+
+  .conservancy-h2 {
+    font-size: 28px;
+  }
+
+  .conservancy-intro-simple {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .conservancy-list-minimal {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-conservancy-premium {
+    padding: 40px 0;
+  }
+
+  .conservancy-h2 {
+    font-size: 24px;
+  }
+
+  .conservancy-intro-simple {
+    font-size: 16px;
+  }
+
+  .conservancy-minimal-item {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: STRATEGIC OVERLAY (LUXURY & PLACEMENT)
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .strategy-folio-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .folio-dossier {
+    min-height: auto;
+    padding: 60px 40px;
+  }
+
+  .dossier-h2,
+  .dossier-h21 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-strategy-blueprint {
+    padding: 80px 0;
+  }
+
+  .folio-dossier {
+    padding: 40px 25px;
+  }
+
+  .dossier-h2,
+  .dossier-h21 {
+    font-size: 28px;
+  }
+
+  .dossier-p,
+  .dossier-p1 {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .breakdown-grid-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .dossier-insight-callout {
+    padding: 30px 20px;
+  }
+
+  .dossier-insight-callout p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-strategy-blueprint {
+    padding: 60px 0;
+  }
+
+  .dossier-h2,
+  .dossier-h21 {
+    font-size: 24px;
+  }
+
+  .dossier-p,
+  .dossier-p1 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .item-label {
+    font-size: 13px;
+  }
+
+  .dossier-quote p {
+    font-size: 18px;
+  }
+
+  .dossier-header {
+    margin-bottom: 40px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: WHAT DAILY LIFE ON SAFARI ACTUALLY LOOKS LIKE
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .soul-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-soul-immersion {
+    padding: 60px 0;
+  }
+
+  .soul-header-folio {
+    margin-bottom: 60px;
+  }
+
+  .soul-h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .soul-card-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .soul-moment-card {
+    padding: 30px;
+  }
+
+  .moment-time {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .moment-p {
+    font-size: 16px;
+  }
+
+  .soul-grounding-block {
+    padding: 60px 20px;
+    margin: 0 20px;
+  }
+
+  .grounding-p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .soul-quote-minimal {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .soul-h2 {
+    font-size: 24px;
+  }
+
+  .soul-moment-card {
+    padding: 25px 20px;
+  }
+
+  .moment-time {
+    font-size: 18px;
+  }
+
+  .moment-index {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+
+  .soul-grounding-block {
+    padding: 40px 15px;
+  }
+
+  .grounding-p {
+    font-size: 16px;
+  }
+
+  .soul-quote-minimal {
+    font-size: 20px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: WHAT IT FEELS LIKE TO WAKE UP IN THE MAASAI MARA
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .awakening-h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-mara-awakening {
+    padding: 80px 0;
+  }
+
+  .awakening-h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .awakening-grid-premium {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .awakening-narrative p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .awakening-philosophy-box {
+    padding: 40px 25px;
+  }
+
+  .philosophy-inner-text .p-main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-mara-awakening {
+    padding: 60px 0;
+  }
+
+  .awakening-h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .awakening-narrative p {
+    font-size: 16px;
+  }
+
+  .awakening-philosophy-box {
+    padding: 30px 20px;
+  }
+
+  .philosophy-inner-text .p-main {
+    font-size: 20px;
+  }
+
+  .philosophy-inner-text .p-accent {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: PLANNING A LUXURY KENYA SAFARI FROM THE UNITED STATES
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .logistics-h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-logistics-dossier {
+    padding: 60px 0;
+  }
+
+  .logistics-header {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .logistics-h2 {
+    font-size: 28px;
+  }
+
+  .logistics-arrival-editorial {
+    padding: 40px 20px;
+    margin: 0 20px;
+    gap: 40px;
+  }
+
+  .arrival-h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .arrival-p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .gateway-grid-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .logistics-h2 {
+    font-size: 24px;
+  }
+
+  .logistics-arrival-editorial {
+    padding: 30px 20px;
+  }
+
+  .arrival-p {
+    font-size: 16px;
+  }
+
+  .timeline-text {
+    font-size: 15px;
+  }
+
+  .tactical-h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: LUXURY NAIROBI & TRAVELER WORRIES
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  .nairobi-h2,
+  .kenya-worries-h2 {
+    font-size: 48px;
+  }
+
+  .kenya-worries-editorial {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nairobi-experience-editorial {
+    padding: 40px 20px;
+    margin: 0 20px;
+  }
+
+  .nairobi-h2,
+  .kenya-worries-h2 {
+    font-size: 28px;
+  }
+
+  .nairobi-p {
+    font-size: 17px;
+  }
+
+  .nairobi-conclusion-box {
+    padding: 25px 20px;
+  }
+
+  .nairobi-conclusion-text {
+    font-size: 17px;
+  }
+
+  .kenya-worries-reality-section {
+    padding: 60px 0;
+  }
+
+  .kenya-worries-h2 {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .kenya-reality-box {
+    padding: 30px 20px;
+    margin: 0 20px 40px;
+  }
+
+  .kenya-reality-p {
+    font-size: 17px;
+  }
+
+  .kenya-concerns-block {
+    padding: 0 20px;
+  }
+
+  .kenya-concerns-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .nairobi-h2,
+  .kenya-worries-h2 {
+    font-size: 24px;
+  }
+
+  .nairobi-p {
+    font-size: 16px;
+  }
+
+  .nairobi-conclusion-text {
+    font-size: 16px;
+  }
+
+  .kenya-reality-p {
+    font-size: 16px;
+  }
+
+  .kenya-reality-highlight {
+    font-size: 18px;
+  }
+
+  .kenya-concerns-h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: SEASONS & MIGRATION INTEL
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  .seasons-h2,
+  .migration-h2 {
+    font-size: 48px;
+  }
+
+  .seasons-triptych {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-seasons-timing {
+    padding: 60px 0;
+  }
+
+  .seasons-header-folio {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+
+  .seasons-h2,
+  .migration-h2 {
+    font-size: 28px;
+  }
+
+  .season-card-minimal {
+    padding: 40px 25px;
+    margin: 0 20px;
+  }
+
+  .season-meta {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .season-p-main {
+    font-size: 17px;
+  }
+
+  .migration-intel-header {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .migration-lead {
+    font-size: 17px;
+  }
+
+  .migration-dual-perspective {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+
+  .migration-card {
+    padding: 40px 20px;
+  }
+
+  .perspective-list li {
+    font-size: 16px;
+  }
+
+  .quote-p {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .seasons-h2,
+  .migration-h2 {
+    font-size: 24px;
+  }
+
+  .season-meta {
+    font-size: 16px;
+  }
+
+  .season-p-main {
+    font-size: 16px;
+  }
+
+  .migration-lead {
+    font-size: 16px;
+  }
+
+  .perspective-h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .quote-p {
+    font-size: 18px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: SAFARI COST & INVESTMENT TIERS
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  .cost-h2-v2,
+  .tiers-h2 {
+    font-size: 48px;
+  }
+
+  .tiers-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-cost-factors-section-v2 {
+    padding: 60px 0;
+  }
+
+  .cost-header-v2 {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .cost-h2-v2,
+  .tiers-h2 {
+    font-size: 28px;
+  }
+
+  .cost-p-lead-v2 {
+    font-size: 17px;
+  }
+
+  .drivers-h3-v2 {
+    padding: 0 20px;
+  }
+
+  .drivers-grid-v2 {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .cost-main-img {
+    height: 350px;
+    border-radius: 0;
+  }
+
+  .kenya-investment-tiers {
+    padding: 60px 0;
+  }
+
+  .tiers-header {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .tier-card {
+    padding: 40px 25px;
+    margin: 0 20px;
+  }
+
+  .tier-price {
+    font-size: 32px;
+  }
+
+  .tier-list li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .cost-h2-v2,
+  .tiers-h2 {
+    font-size: 24px;
+  }
+
+  .cost-p-lead-v2 {
+    font-size: 16px;
+  }
+
+  .driver-item-v2 {
+    padding: 15px;
+  }
+
+  .driver-label-v2 {
+    font-size: 14px;
+  }
+
+  .tier-price {
+    font-size: 28px;
+  }
+
+  .tier-footer p {
+    font-size: 14px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: BEST CAMPS & OVERHYPED WARNING
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  .camps-h2,
+  .alert-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .camps-editorial-header {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+
+  .camps-h2,
+  .alert-h2 {
+    font-size: 28px;
+  }
+
+  .camp-folio-card {
+    width: 320px;
+  }
+
+  .camp-folio-content {
+    padding: 25px;
+  }
+
+  .camp-folio-title {
+    font-size: 24px !important;
+  }
+
+  .expert-alert-box {
+    padding: 60px 25px;
+    margin: 0 20px;
+  }
+
+  .alert-lead {
+    font-size: 18px;
+  }
+
+  .alert-ul li {
+    gap: 15px;
+  }
+
+  .alert-li-content strong {
+    font-size: 17px;
+  }
+
+  .conclusion-card-v3 {
+    padding: 30px 20px;
+  }
+
+  .conclusion-p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .camps-h2,
+  .alert-h2 {
+    font-size: 24px;
+  }
+
+  .camp-folio-card {
+    width: 280px;
+  }
+
+  .camp-folio-image {
+    height: 200px;
+  }
+
+  .expert-alert-box {
+    padding: 40px 20px;
+  }
+
+  .alert-badge {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .alert-li-content strong {
+    font-size: 16px;
+  }
+
+  .alert-li-content span {
+    font-size: 14px;
+  }
+
+  .conclusion-p {
+    font-size: 16px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: ITINERARY, LIFESTYLE & WISDOM
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  .itinerary-h2,
+  .panel-h2,
+  .kenya-wisdom-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .itinerary-h2,
+  .panel-h2,
+  .kenya-wisdom-h2 {
+    font-size: 28px;
+  }
+
+  .itinerary-grid-horizontal {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .itinerary-card-v3 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+  }
+
+  .card-connector {
+    display: none;
+  }
+
+  .lifestyle-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lifestyle-panel {
+    height: auto;
+    min-height: 600px;
+  }
+
+  .panel-content {
+    padding: 30px 20px;
+  }
+
+  .kenya-wisdom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kenya-wisdom-col {
+    padding: 60px 25px;
+  }
+
+  .kenya-wisdom-p {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .kenya-list-label {
+    margin-bottom: 20px;
+  }
+
+  .kenya-wisdom-list li span {
+    font-size: 16px;
+  }
+
+  .kenya-wisdom-quote-box {
+    padding: 30px;
+  }
+
+  .kenya-wisdom-quote {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .itinerary-h2,
+  .panel-h2,
+  .kenya-wisdom-h2 {
+    font-size: 24px;
+  }
+
+  .itinerary-lead {
+    font-size: 16px;
+  }
+
+  .lifestyle-panel {
+    min-height: 500px;
+  }
+
+  .panel-p {
+    font-size: 16px;
+  }
+
+  .features-list li {
+    font-size: 14px;
+  }
+
+  .kenya-wisdom-col {
+    padding: 40px 20px;
+  }
+
+  .kenya-wisdom-p {
+    font-size: 16px;
+  }
+
+  .kenya-wisdom-list li span {
+    font-size: 15px;
+  }
+
+  .kenya-wisdom-quote {
+    font-size: 18px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: HOW WE DESIGN
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .design-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .design-header-premium {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+
+  .design-h2 {
+    font-size: 28px;
+  }
+
+  .design-strategic-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .design-card {
+    padding: 30px;
+  }
+
+  .design-footer-premium {
+    margin-top: 60px;
+    padding: 40px 20px;
+  }
+
+  .design-footer-main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .design-h2 {
+    font-size: 24px;
+  }
+
+  .design-card {
+    padding: 25px;
+  }
+
+  .design-step-title {
+    font-size: 16px !important;
+  }
+
+  .design-footer-lead {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+
+  .design-footer-main {
+    font-size: 20px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+   SECTION SPECIFIC RESPONSIVENESS: FAQ SECTION
+   ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .kenya-faq-section .kenya-h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kenya-faq-section {
+    padding: 60px 20px;
+  }
+
+  .kenya-faq-section .kenya-h2 {
+    font-size: 28px;
+  }
+
+  .kenya-faq-question {
+    font-size: 16px;
+  }
+
+  .kenya-faq-answer {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kenya-faq-section .kenya-h2 {
+    font-size: 24px;
+  }
+
+  .kenya-faq-question {
+    font-size: 15px;
+  }
+
+  .kenya-faq-answer {
+    font-size: 14px;
   }
 }
