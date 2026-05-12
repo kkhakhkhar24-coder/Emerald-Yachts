@@ -13,12 +13,13 @@ import {
   CheckCircle2,
   DollarSign,
   Target,
-  Globe ,
+  Globe,
   ShieldCheck,
   Quote,
   Sun,
   CloudSun,
-  TrendingDown
+  TrendingDown,
+  ArrowRight,
 } from "lucide-react";
 
 // AS SEEN IN LOGOS
@@ -26,12 +27,12 @@ import TravelWeeklyLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_W
 import TravelPulseLogo from "../../assets/BestTimeGreatMigrationSafari/TravelPulse.webp";
 import InsiderReportLogo from "../../assets/BestTimeGreatMigrationSafari/Insider_Travel_Report.webp";
 import TravelAgeWestLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Age_West.webp";
-import Safari1 from "../../assets/BestTimeGreatMigrationSafari/Safari1.jpg"
-import Safari2 from "../../assets/BestTimeGreatMigrationSafari/Safari2.jpg"
-import Safari3 from "../../assets/BestTimeGreatMigrationSafari/Safari3.jpg"
-import CTAImage from "../../assets/BestTimeGreatMigrationSafari/Consultation.jpg"
-import Planning from "../../assets/BestTimeGreatMigrationSafari/Maasai_Mara.jpg"
-import AboutImage from "../../assets/Angela_Hughes.jpg"
+import Safari1 from "../../assets/BestTimeGreatMigrationSafari/Safari1.jpg";
+import Safari2 from "../../assets/BestTimeGreatMigrationSafari/Safari2.jpg";
+import Safari3 from "../../assets/BestTimeGreatMigrationSafari/Safari3.jpg";
+import CTAImage from "../../assets/BestTimeGreatMigrationSafari/Consultation.jpg";
+import Planning from "../../assets/BestTimeGreatMigrationSafari/Maasai_Mara.png";
+import AboutImage from "../../assets/Angela_Hughes.jpg";
 
 import "./BestTimeGreatMigrationSafari.css";
 
@@ -416,6 +417,7 @@ export default function BestTimeGreatMigrationSafari() {
   ];
 
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showTrustMore, setShowTrustMore] = useState(false);
   const [currentHero, setCurrentHero] = useState(0);
 
   const heroImages = [Safari1, Safari2, Safari3];
@@ -455,7 +457,6 @@ export default function BestTimeGreatMigrationSafari() {
         <div className="btgms-hero-overlay"></div>
 
         <div className="btgms-container btgms-hero-inner">
-
           <h1 className="btgms-h1 btgms-h1-hero">
             Best Time to See the Great Migration: Month-by-Month Safari Guide
           </h1>
@@ -497,27 +498,28 @@ export default function BestTimeGreatMigrationSafari() {
             </div>
           </div>
 
-          <button
-            className="btgms-hero-toggle"
-            onClick={() => setShowAnswer(!showAnswer)}
-          >
-            <span className="btgms-flex-center">
-              {showAnswer ? (
-                <Minus size={14} style={{ marginRight: "6px" }} />
-              ) : (
-                <Plus size={14} style={{ marginRight: "6px" }} />
-              )}
-              {showAnswer ? "Hide Expert Take" : "View Expert Take"}
-            </span>
-          </button>
-
           <div className="btgms-hero-cta-box">
             <h2 className="btgms-hero-cta-title">
-              Schedule a 15-Minute Great Migration Strategy Call
+              Schedule a 15-Minute Great Migration <br /> Strategy Call
             </h2>
             <p className="btgms-hero-cta-subtext">
               If your trip depends on timing, you need to get this right.
             </p>
+
+            <button
+              className="btgms-hero-toggle"
+              onClick={() => setShowAnswer(!showAnswer)}
+            >
+              <span className="btgms-flex-center">
+                {showAnswer ? (
+                  <Minus size={14} style={{ marginRight: "6px" }} />
+                ) : (
+                  <Plus size={14} style={{ marginRight: "6px" }} />
+                )}
+                {showAnswer ? "Read Less" : "Read More"}
+              </span>
+            </button>
+
             <div className="btgms-hero-btns">
               <button className="btgms-btn-primary">
                 Schedule a 15-Minute Great Migration Strategy Call
@@ -560,7 +562,29 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
-
+      {/* SPECIALIZATION */}
+      <section className="btgms-section btgms-specialization">
+        <div className="btgms-container">
+          <h2 className="btgms-h2">
+            Experts in African Safari & Expedition Travel
+          </h2>
+          <p className="btgms-p">
+            Angela Hughes and Trips & Ships Luxury Travel specialize in custom
+            luxury African safaris and expedition travel throughout Kenya,
+            Tanzania, Botswana, South Africa, Zimbabwe, Rwanda, Uganda, and
+            beyond. With firsthand safari experience across Africa, decades of
+            luxury travel expertise, and relationships with some of the world’s
+            most respected safari partners, Angela and her team help travelers
+            navigate the details that transform a safari from simply beautiful
+            to deeply meaningful. From witnessing the Great Migration to
+            designing multi generational journeys, gorilla trekking experiences,
+            conservation focused travel, and luxury safari itineraries tailored
+            to individual travel styles, Trips & Ships Luxury Travel provides
+            concierge level guidance for travelers seeking a highly personalized
+            Africa experience.
+          </p>
+        </div>
+      </section>
 
       {/* WHAT IT ACTUALLY IS */}
       <section className="btgms-section btgms-definition">
@@ -588,10 +612,7 @@ export default function BestTimeGreatMigrationSafari() {
               </p>
             </div>
             <div className="btgms-def-image">
-              <img
-                src={Planning}
-                alt="Wildlife Movement"
-              />
+              <img src={Planning} alt="Wildlife Movement" />
             </div>
           </div>
         </div>
@@ -611,7 +632,9 @@ export default function BestTimeGreatMigrationSafari() {
             </div>
             <div className="btgms-video-container">
               <iframe
-                src="https://www.youtube.com/embed/rRuycZKjFzo"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/nsBBl4jCyqQ"
                 title="Great Migration Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -621,7 +644,6 @@ export default function BestTimeGreatMigrationSafari() {
           </div>
         </div>
       </section>
-
 
       {/* VISUAL TABLE */}
       <section className="btgms-section btgms-glance">
@@ -684,6 +706,145 @@ export default function BestTimeGreatMigrationSafari() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+            {/* WHY TRUST THIS GUIDE */}
+      <section className="btgms-section btgms-trust-compact">
+        <div className="btgms-container">
+          <div className="btgms-trust-layout">
+            <div className="btgms-trust-image-side">
+              <div className="btgms-about-img-frame">
+                <img
+                  src={AboutImage}
+                  alt="Angela Hughes"
+                  className="btgms-about-img"
+                />
+              </div>
+
+              <div className="btgms-trust-stats-grid">
+                {[
+                  {
+                    label: "40+ Years",
+                    text: "In the travel industry",
+                    icon: Compass,
+                  },
+                  {
+                    label: "121+ Countries",
+                    text: "Traveled worldwide",
+                    icon: Globe,
+                  },
+                  {
+                    label: "10+ Safaris",
+                    text: "Across Africa in recent years",
+                    icon: MapPin,
+                  },
+                  {
+                    label: "CEO",
+                    text: "Trips & Ships Luxury Travel",
+                    icon: Award,
+                  },
+                ].map((item, i) => (
+                  <div className="btgms-trust-stat-card" key={i}>
+                    <div className="btgms-stat-icon-wrap">
+                      <item.icon size={20} />
+                    </div>
+                    <div className="btgms-stat-text">
+                      <strong>{item.label}</strong>
+                      <span>{item.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="btgms-trust-content-side">
+              <div className="btgms-trust-header">
+                <span className="btgms-trust-eyebrow">ABOUT ANGELA HUGHES</span>
+                <h2 className="btgms-h2">Why Trust This Guide</h2>
+                <div className="btgms-trust-description">
+                  <p className="btgms-p-small">
+                    Angela Hughes is one of the most recognized voices in luxury
+                    travel. She has spent decades designing high-end itineraries
+                    across Africa and around the world, working directly with
+                    top safari operators and camps.
+                  </p>
+                  <p className="btgms-p-small">
+                    Her work has been recognized across the industry through
+                    multiple awards and global media features. Clients do not
+                    work with Angela Hughes to book travel. They work with her
+                    to get it right.
+                  </p>
+                  <p className="btgms-p-small">
+                    Luxury safari planning requires far more than choosing a
+                    lodge or deciding between Kenya and Tanzania. The timing of
+                    the migration, regional weather patterns, wildlife movement,
+                    flight logistics, conservation access, guide quality, and
+                    pacing of the itinerary all shape the overall experience. As
+                    a professor of Travel and Tourism and Geography, award
+                    winning luxury travel advisor, and one of the most
+                    recognized voices in luxury travel media today, Angela
+                    Hughes brings both destination knowledge and real world
+                    safari experience to the planning process.
+                  </p>
+
+                  <div
+                    className={`btgms-trust-expandable ${
+                      showTrustMore ? "expanded" : ""
+                    }`}
+                  >
+                    <div className="btgms-trust-expandable-inner">
+                      <p className="btgms-p-small">
+                        Having traveled extensively throughout Africa and more
+                        than 121 countries worldwide, Angela works closely with
+                        trusted luxury safari partners to help clients select
+                        the right destination, camp style, safari pacing, and
+                        seasonal timing based on their goals, comfort level, and
+                        travel investment.
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    className="btgms-trust-toggle"
+                    onClick={() => setShowTrustMore(!showTrustMore)}
+                  >
+                    <span>{showTrustMore ? "Read Less" : "Read More"}</span>
+                    {showTrustMore ? (
+                      <Minus size={14} style={{ marginLeft: "8px" }} />
+                    ) : (
+                      <Plus size={14} style={{ marginLeft: "8px" }} />
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              <div className="btgms-recognition-compact">
+                <h3 className="btgms-h3">Industry Recognition</h3>
+                <ul className="btgms-recognition-list-small">
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>
+                      Luxury Travel Influencer of the Year by Travel Leaders
+                      Network
+                    </span>
+                  </li>
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>Most Influential Women in Travel by TravelPulse</span>
+                  </li>
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>Multiple Magellan Awards from Travel Weekly</span>
+                  </li>
+                </ul>
+                <div className="btgms-recognition-footer-compact">
+                  <Sparkles size={18} />
+                  <p>This is experience built over decades.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -853,7 +1014,6 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
-
       {/* COST BY SEASON */}
       <section className="btgms-section btgms-cost">
         <div className="btgms-container">
@@ -870,7 +1030,9 @@ export default function BestTimeGreatMigrationSafari() {
               <CloudSun size={32} className="btgms-cost-icon" />
               <div className="btgms-cost-text">
                 <h3 className="btgms-h3">Calving Season</h3>
-                <p className="btgms-p">High value with strong wildlife activity</p>
+                <p className="btgms-p">
+                  High value with strong wildlife activity
+                </p>
               </div>
             </div>
             <div className="btgms-cost-item">
@@ -886,7 +1048,9 @@ export default function BestTimeGreatMigrationSafari() {
               <DollarSign size={40} className="btgms-price-icon" />
               <div className="btgms-price-content">
                 <span className="btgms-price-label">AVERAGE COST</span>
-                <span className="btgms-price-value">$1,500 – $3,000+ PER PERSON / PER DAY</span>
+                <span className="btgms-price-value">
+                  $1,500 – $3,000+ PER PERSON / PER DAY
+                </span>
               </div>
             </div>
           </div>
@@ -916,70 +1080,6 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
-      {/* WHY TRUST THIS GUIDE */}
-      <section className="btgms-section btgms-trust-compact">
-        <div className="btgms-container">
-          <div className="btgms-trust-layout">
-            <div className="btgms-trust-image-side">
-              <div className="btgms-about-img-frame">
-                <img src={AboutImage} alt="Angela Hughes" className="btgms-about-img" />
-                <div className="btgms-about-experience-badge">40+ YEARS</div>
-              </div>
-            </div>
-            
-            <div className="btgms-trust-content-side">
-              <div className="btgms-trust-header">
-                <span className="btgms-trust-eyebrow">ABOUT ANGELA HUGHES</span>
-                <h2 className="btgms-h2">Why Trust This Guide</h2>
-                <div className="btgms-trust-description">
-                  <p className="btgms-p-small">
-                    Angela Hughes is one of the most recognized voices in luxury travel. 
-                    She has spent decades designing high-end itineraries across Africa and around the world, 
-                    working directly with top safari operators and camps.
-                  </p>
-                  <p className="btgms-p-small">
-                    Her work has been recognized across the industry through multiple awards 
-                    and global media features. Clients do not work with Angela Hughes to book travel. 
-                    They work with her to get it right.
-                  </p>
-                </div>
-              </div>
-
-              <div className="btgms-trust-stats-grid">
-                {[
-                  { label: "40+ Years", text: "In the travel industry", icon: Compass },
-                  { label: "121+ Countries", text: "Traveled worldwide", icon: Globe },
-                  { label: "10+ Safaris", text: "Across Africa in recent years", icon: MapPin },
-                  { label: "CEO", text: "Trips & Ships Luxury Travel", icon: Award }
-                ].map((item, i) => (
-                  <div className="btgms-trust-stat-card" key={i}>
-                    <div className="btgms-stat-icon-wrap">
-                      <item.icon size={20} />
-                    </div>
-                    <div className="btgms-stat-text">
-                      <strong>{item.label}</strong>
-                      <span>{item.text}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="btgms-recognition-compact">
-                <h3 className="btgms-h3">Industry Recognition</h3>
-                <ul className="btgms-recognition-list-small">
-                  <li><CheckCircle2 size={16} /> <span>Luxury Travel Influencer of the Year by Travel Leaders Network</span></li>
-                  <li><CheckCircle2 size={16} /> <span>Most Influential Women in Travel by TravelPulse</span></li>
-                  <li><CheckCircle2 size={16} /> <span>Multiple Magellan Awards from Travel Weekly</span></li>
-                </ul>
-                <div className="btgms-recognition-footer-compact">
-                   <Sparkles size={18} />
-                   <p>This is experience built over decades.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       {/* FAQ */}
@@ -1008,24 +1108,39 @@ export default function BestTimeGreatMigrationSafari() {
         </div>
       </section>
 
-      
-
       {/* FINAL CTA */}
-      <section className="btgms-section btgms-final-cta">
+      <section className="btgms-section btgms-final-cta-v3">
         <div className="btgms-container">
-          <div className="btgms-final-card">
-            <h2 className="btgms-h2">
-              Schedule a 15-Minute Great Migration Consultation
-            </h2>
-            <p className="btgms-p-display">
-              If your safari depends on timing, you need to get it right.
-            </p>
-            <p className="btgms-p">
-              Angela Hughes, recognized across the industry for her expertise
-              and influence in luxury travel, designs migration safaris based on
-              real movement patterns, not assumptions.
-            </p>
-            <button className="btgms-btn-primary">Get Started Now</button>
+          <div className="btgms-final-card-premium">
+            <div className="btgms-final-card-content">
+              <h2 className="btgms-final-title">
+                Ready to begin planning your Africa journey?
+              </h2>
+
+              <div className="btgms-final-divider"></div>
+
+              <p className="btgms-final-text">
+                Schedule a consultation with Trips & Ships Luxury Travel to
+                design a custom luxury safari experience built around your
+                interests, travel style, timeline, and investment level. Whether
+                you are planning your first safari, a multi generational family
+                adventure, a honeymoon, a photography focused journey, or an
+                expedition across East or Southern Africa, our team can help
+                guide you through every step of the planning process with
+                personalized recommendations, destination expertise, and
+                concierge level support.
+              </p>
+
+              <div className="btgms-final-actions">
+                <button className="btgms-btn-luxury">
+                  <span>Plan My Luxury Safari</span>
+                  <ArrowRight size={20} className="btgms-btn-icon" />
+                </button>
+              </div>
+            </div>
+
+            {/* Decorative Background Elements */}
+            <div className="btgms-card-glow"></div>
           </div>
         </div>
       </section>

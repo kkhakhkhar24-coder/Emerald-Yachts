@@ -14,11 +14,13 @@ import {
   Compass,
   Camera,
   Phone,
+  Globe,
+  CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 import "./Kenyasafarimicato.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/Angela_Hughes.jpg";
-import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import KenyaSafariImage1 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya1.jpg";
 import KenyaSafariImage2 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya2.jpg";
 import KenyaSafariImage3 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya3.jpg";
@@ -424,7 +426,7 @@ function FAQ() {
 /* ── Main Component ──────────────────────────────────────────────── */
 const KenyaSafariMicato = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [KenyaSafariImage1,KenyaSafariImage2,KenyaSafariImage3 ];
+  const images = [KenyaSafariImage1, KenyaSafariImage2, KenyaSafariImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -488,7 +490,7 @@ const KenyaSafariMicato = () => {
 
       {/* ── NOT ALL SAFARIS EQUAL ─────────────────────────────────── */}
       <section
-        className="KenSafari-section KenSafari-bg-soft"
+        className="KenSafari-section KenSafari-bg-white"
         id="KenSafari-overview"
       >
         <div className="KenSafari-container">
@@ -535,6 +537,33 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
+      {/* SPECIALIZATION */}
+      <section
+        className="btgms-section btgms-specialization"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="btgms-container">
+          <h2 className="btgms-h2">
+            Experts in African Safari & Expedition Travel
+          </h2>
+          <p className="btgms-p">
+            Angela Hughes and Trips & Ships Luxury Travel specialize in custom
+            luxury African safaris and expedition travel throughout Kenya,
+            Tanzania, Botswana, South Africa, Zimbabwe, Rwanda, Uganda, and
+            beyond. With firsthand safari experience across Africa, decades of
+            luxury travel expertise, and relationships with some of the world’s
+            most respected safari partners, Angela and her team help travelers
+            navigate the details that transform a safari from simply beautiful
+            to deeply meaningful. From witnessing the Great Migration to
+            designing multi generational journeys, gorilla trekking experiences,
+            conservation focused travel, and luxury safari itineraries tailored
+            to individual travel styles, Trips & Ships Luxury Travel provides
+            concierge level guidance for travelers seeking a highly personalized
+            Africa experience.
+          </p>
+        </div>
+      </section>
+
       {/* ── WHY MICATO ───────────────────────────────────────────── */}
       <section
         className="KenSafari-section KenSafari-bg-white"
@@ -560,8 +589,8 @@ const KenyaSafariMicato = () => {
                 </div>
                 <h3 className="KenSafari-micato-title">Elite Guiding</h3>
                 <p className="KenSafari-micato-text">
-                  The guide determines the overall experience. Micato's guides are
-                  among the most skilled in Kenya.
+                  The guide determines the overall experience. Micato's guides
+                  are among the most skilled in Kenya.
                 </p>
                 <div className="KenSafari-micato-item-bg" />
               </div>
@@ -573,7 +602,9 @@ const KenyaSafariMicato = () => {
                 <div className="KenSafari-micato-icon">
                   <MapPin size={28} strokeWidth={1.5} />
                 </div>
-                <h3 className="KenSafari-micato-title">Deep-Rooted Relationships</h3>
+                <h3 className="KenSafari-micato-title">
+                  Deep-Rooted Relationships
+                </h3>
                 <p className="KenSafari-micato-text">
                   Decades of relationships in Kenya give Micato access and
                   influence that newer operators simply cannot match.
@@ -590,8 +621,8 @@ const KenyaSafariMicato = () => {
                 </div>
                 <h3 className="KenSafari-micato-title">Seamless Logistics</h3>
                 <p className="KenSafari-micato-text">
-                  Every internal flight, transfer, and camp transition is managed
-                  with precision from start to finish.
+                  Every internal flight, transfer, and camp transition is
+                  managed with precision from start to finish.
                 </p>
                 <div className="KenSafari-micato-item-bg" />
               </div>
@@ -605,8 +636,8 @@ const KenyaSafariMicato = () => {
                 </div>
                 <h3 className="KenSafari-micato-title">Premier Camp Access</h3>
                 <p className="KenSafari-micato-text">
-                  Access to the best camps in the most strategic locations across
-                  Kenya's top wildlife regions.
+                  Access to the best camps in the most strategic locations
+                  across Kenya's top wildlife regions.
                 </p>
                 <div className="KenSafari-micato-item-bg" />
               </div>
@@ -631,8 +662,8 @@ const KenyaSafariMicato = () => {
             <div className="KenSafari-micato-item KenSafari-micato-statement-card">
               <div className="KenSafari-micato-item-inner">
                 <div className="KenSafari-micato-statement-content">
-                   <Quote size={32} className="KenSafari-micato-quote-icon" />
-                   <p className="KenSafari-micato-statement">
+                  <Quote size={32} className="KenSafari-micato-quote-icon" />
+                  <p className="KenSafari-micato-statement">
                     Micato is not competing with mid-market safari companies. It
                     sits at the top of the luxury safari space.
                   </p>
@@ -664,83 +695,6 @@ const KenyaSafariMicato = () => {
                 allowFullScreen
                 className="KenSafari-video-iframe"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHY TRIPS & SHIPS ─────────────────────────────────────── */}
-      <section className="KenSafari-why-split-section">
-        <div className="KenSafari-container">
-          <div className="KenSafari-why-split-grid">
-            <div className="KenSafari-why-split-image-wrap">
-              <img
-                src={AboutImage}
-                alt="Luxury Travel Experience"
-                className="KenSafari-why-split-img"
-              />
-              <div className="KenSafari-why-image-accent" />
-            </div>
-
-            <div className="KenSafari-why-split-content">
-              <div className="KenSafari-why-header">
-                <span className="KenSafari-why-eyebrow">
-                  The Trips & Ships Advantage
-                </span>
-                <h2 className="KenSafari-why-h2">
-                  Why Clients Choose Trips &amp; Ships Luxury Travel
-                </h2>
-                <div className="KenSafari-why-line" />
-              </div>
-
-              <p className="KenSafari-why-intro-text">
-                Clients work with Angela Hughes because experience matters. We
-                don't just book trips; we design legacies.
-              </p>
-
-              <div className="KenSafari-why-stats-grid">
-                <div className="KenSafari-why-stat">
-                  <span className="KenSafari-why-stat-num">40+</span>
-                  <span className="KenSafari-why-stat-label">
-                    Years of Industry Leadership
-                  </span>
-                </div>
-                <div className="KenSafari-why-stat">
-                  <span className="KenSafari-why-stat-num">121+</span>
-                  <span className="KenSafari-why-stat-label">
-                    Countries Explored First-Hand
-                  </span>
-                </div>
-                <div className="KenSafari-why-stat">
-                  <span className="KenSafari-why-stat-num">10+</span>
-                  <span className="KenSafari-why-stat-label">
-                    Post-COVID African Safaris
-                  </span>
-                </div>
-              </div>
-
-              <div className="KenSafari-why-features">
-                <div className="KenSafari-why-feature">
-                  <div className="KenSafari-why-feature-icon">
-                    <Check size={16} strokeWidth={3} />
-                  </div>
-                  <span>Deep knowledge of Kenya and East Africa</span>
-                </div>
-                <div className="KenSafari-why-feature">
-                  <div className="KenSafari-why-feature-icon">
-                    <Check size={16} strokeWidth={3} />
-                  </div>
-                  <span>Strong operator preferences by destination</span>
-                </div>
-              </div>
-
-              <div className="KenSafari-why-quote">
-                <Quote size={20} className="KenSafari-why-quote-icon" />
-                <p>
-                  Clients do not hire Angela Hughes to book travel. They hire
-                  her to get it right.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -802,8 +756,11 @@ const KenyaSafariMicato = () => {
       {/* ── WHAT CAN GO WRONG ─────────────────────────────────────── */}
       <section className="KenSafari-wrong-section">
         <div className="KenSafari-wrong-pattern" />
-        
-        <div className="KenSafari-container" style={{ position: "relative", zIndex: 1 }}>
+
+        <div
+          className="KenSafari-container"
+          style={{ position: "relative", zIndex: 1 }}
+        >
           {/* Header */}
           <div className="KenSafari-wrong-header">
             <h2 className="KenSafari-h2">
@@ -843,11 +800,128 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
-      {/* ── BEST DESTINATIONS ─────────────────────────────────────── */}
+      {/* ── WHY TRIPS & SHIPS — Premium Editorial Layout ────────────────── */}
       <section
-        className="KenSafari-dest-section"
-        id="KenSafari-destinations"
+        className="btgms-trust-compact"
+        style={{
+          background: "var(--bg-soft)",
+        }}
       >
+        <div className="btgms-container">
+          <div className="btgms-trust-layout">
+            <div className="btgms-trust-image-side">
+              <div className="btgms-about-img-frame">
+                <img
+                  src={AboutImage}
+                  alt="Angela Hughes"
+                  className="btgms-about-img"
+                />
+              </div>
+
+              <div className="btgms-trust-stats-grid">
+                {[
+                  {
+                    label: "40+ Years",
+                    text: "In the travel industry",
+                    icon: Compass,
+                  },
+                  {
+                    label: "121+ Countries",
+                    text: "Traveled worldwide",
+                    icon: Globe,
+                  },
+                  {
+                    label: "10+ Safaris",
+                    text: "Across Africa in recent years",
+                    icon: MapPin,
+                  },
+                  {
+                    label: "CEO",
+                    text: "Trips & Ships Luxury Travel",
+                    icon: Award,
+                  },
+                ].map((item, i) => (
+                  <div className="btgms-trust-stat-card" key={i}>
+                    <div className="btgms-stat-icon-wrap">
+                      <item.icon size={20} />
+                    </div>
+                    <div className="btgms-stat-text">
+                      <strong>{item.label}</strong>
+                      <span>{item.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="btgms-trust-content-side">
+              <div className="btgms-trust-header">
+                <span className="btgms-trust-eyebrow">
+                  THE TRIPS & SHIPS ADVANTAGE
+                </span>
+                <h2 className="btgms-h2">
+                  Why Clients Choose Trips &amp; Ships Luxury Travel
+                </h2>
+                <div className="btgms-trust-description">
+                  <p className="btgms-p-small">
+                    Clients work with Angela Hughes because experience matters.
+                    We don't just book trips; we design legacies.
+                  </p>
+
+                  <p className="btgms-p-small">
+                    Luxury safari planning requires far more than choosing a
+                    lodge or deciding between Kenya and Tanzania. The timing of
+                    the migration, regional weather patterns, wildlife movement,
+                    flight logistics, conservation access, guide quality, and
+                    pacing of the itinerary all shape the overall experience.
+                  </p>
+
+                  <p className="btgms-p-small">
+                    As a professor of Travel and Tourism and Geography, award
+                    winning luxury travel advisor, and one of the most
+                    recognized voices in luxury travel media today, Angela
+                    Hughes brings both destination knowledge and real world
+                    safari experience to the planning process. Having traveled
+                    extensively throughout Africa and more than 121 countries
+                    worldwide, Angela works closely with trusted luxury safari
+                    partners to help clients select the right destination, camp
+                    style, safari pacing, and seasonal timing based on their
+                    goals, comfort level, and travel investment.
+                  </p>
+                </div>
+              </div>
+
+              <div className="btgms-recognition-compact">
+                <h3 className="btgms-h3">Industry Recognition</h3>
+                <ul className="btgms-recognition-list-small">
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>
+                      Luxury Travel Influencer of the Year by Travel Leaders
+                      Network
+                    </span>
+                  </li>
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>Most Influential Women in Travel by TravelPulse</span>
+                  </li>
+                  <li>
+                    <CheckCircle2 size={16} />{" "}
+                    <span>Multiple Magellan Awards from Travel Weekly</span>
+                  </li>
+                </ul>
+                <div className="btgms-recognition-footer-compact">
+                  <Sparkles size={18} />
+                  <p>This is experience built over decades.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── BEST DESTINATIONS ─────────────────────────────────────── */}
+      <section className="KenSafari-dest-section" id="KenSafari-destinations">
         <div className="KenSafari-container">
           <div className="KenSafari-section-header">
             <h2 className="KenSafari-h2">Best Kenya Safari Destinations</h2>
@@ -858,7 +932,6 @@ const KenyaSafariMicato = () => {
           </div>
 
           <div className="KenSafari-dest-grid">
-
             {/* 01 — Maasai Mara */}
             <div
               className="KenSafari-dest-card"
@@ -892,7 +965,9 @@ const KenyaSafariMicato = () => {
                   <Star size={24} strokeWidth={1.5} />
                 </div>
                 <div className="KenSafari-dest-content">
-                  <h3 className="KenSafari-dest-title">Laikipia Conservancies</h3>
+                  <h3 className="KenSafari-dest-title">
+                    Laikipia Conservancies
+                  </h3>
                   <p className="KenSafari-dest-text">
                     Exclusive, less crowded, highly curated experiences.
                   </p>
@@ -912,7 +987,9 @@ const KenyaSafariMicato = () => {
                   <Camera size={24} strokeWidth={1.5} />
                 </div>
                 <div className="KenSafari-dest-content">
-                  <h3 className="KenSafari-dest-title">Amboseli National Park</h3>
+                  <h3 className="KenSafari-dest-title">
+                    Amboseli National Park
+                  </h3>
                   <p className="KenSafari-dest-text">
                     Known for large elephant herds and Kilimanjaro views.
                   </p>
@@ -939,7 +1016,6 @@ const KenyaSafariMicato = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -956,7 +1032,7 @@ const KenyaSafariMicato = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/GPzdZVVD5-4"
+                src="https://www.youtube.com/embed/jhsQZI1YY9g"
                 title="Micato Safaris Experience"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -987,10 +1063,16 @@ const KenyaSafariMicato = () => {
             {/* Micato Safaris - Featured */}
             <div className="KenSafari-compare-card KenSafari-compare-featured">
               <div className="KenSafari-compare-image-wrap">
-                <img src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/10/07223911/custom-safari-service-900x701.jpg" alt="Micato Safari Service" className="KenSafari-compare-img" />
+                <img
+                  src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/10/07223911/custom-safari-service-900x701.jpg"
+                  alt="Micato Safari Service"
+                  className="KenSafari-compare-img"
+                />
               </div>
               <div className="KenSafari-compare-badge-wrap">
-                <span className="KenSafari-compare-badge">Our Primary Recommendation</span>
+                <span className="KenSafari-compare-badge">
+                  Our Primary Recommendation
+                </span>
               </div>
               <div className="KenSafari-compare-card-content">
                 <div className="KenSafari-compare-header">
@@ -999,13 +1081,21 @@ const KenyaSafariMicato = () => {
                 </div>
                 <div className="KenSafari-compare-body">
                   <div className="KenSafari-compare-highlight">
-                    <Check size={18} strokeWidth={2.5} className="KenSafari-compare-check" />
+                    <Check
+                      size={18}
+                      strokeWidth={2.5}
+                      className="KenSafari-compare-check"
+                    />
                     <p className="KenSafari-compare-desc">
                       Known for consistency and guiding excellence.
                     </p>
                   </div>
                   <div className="KenSafari-compare-highlight">
-                    <Check size={18} strokeWidth={2.5} className="KenSafari-compare-check" />
+                    <Check
+                      size={18}
+                      strokeWidth={2.5}
+                      className="KenSafari-compare-check"
+                    />
                     <p className="KenSafari-compare-desc">
                       Especially strong in Kenya.
                     </p>
@@ -1018,11 +1108,17 @@ const KenyaSafariMicato = () => {
             {/* Abercrombie & Kent */}
             <div className="KenSafari-compare-card">
               <div className="KenSafari-compare-image-wrap">
-                <img src="https://storage.googleapis.com/stateless-www-live-traveldailymedia/2025/08/acbe2d97-ak_campaign_01-1500x780-1.jpg" alt="Abercrombie & Kent Safari" className="KenSafari-compare-img" />
+                <img
+                  src="https://storage.googleapis.com/stateless-www-live-traveldailymedia/2025/08/acbe2d97-ak_campaign_01-1500x780-1.jpg"
+                  alt="Abercrombie & Kent Safari"
+                  className="KenSafari-compare-img"
+                />
               </div>
               <div className="KenSafari-compare-card-content">
                 <div className="KenSafari-compare-header">
-                  <h3 className="KenSafari-compare-title">Abercrombie & Kent</h3>
+                  <h3 className="KenSafari-compare-title">
+                    Abercrombie & Kent
+                  </h3>
                   <div className="KenSafari-compare-divider" />
                 </div>
                 <div className="KenSafari-compare-body">
@@ -1036,7 +1132,11 @@ const KenyaSafariMicato = () => {
             {/* &Beyond */}
             <div className="KenSafari-compare-card">
               <div className="KenSafari-compare-image-wrap">
-                <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Kenya-Suyian-Lodge-Aerial-View-1_Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg" alt="&Beyond Safari" className="KenSafari-compare-img" />
+                <img
+                  src="https://www.andbeyond.com/wp-content/uploads/sites/5/Kenya-Suyian-Lodge-Aerial-View-1_Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg"
+                  alt="&Beyond Safari"
+                  className="KenSafari-compare-img"
+                />
               </div>
               <div className="KenSafari-compare-card-content">
                 <div className="KenSafari-compare-header">
@@ -1134,48 +1234,44 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
-      {/* ── HOW WE HELP (CTA) ─────────────────────────────────────── */}
-      <section className="KenSafari-help-section">
-        <div className="KenSafari-help-bg-wrap">
-          <img
-            src={CTAImage}
-            alt="Luxury Kenya Safari"
-            className="KenSafari-help-bg-img"
-          />
-          <div className="KenSafari-help-overlay" />
-        </div>
+      {/* FINAL CTA */}
+      <section
+        className="btgms-section btgms-final-cta-v3"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${KenyaSafariImage3})`,
+        }}
+      >
+        <div className="btgms-container">
+          <div className="btgms-final-card-premium">
+            <div className="btgms-final-card-content">
+              <h2 className="btgms-final-title">
+                Ready to begin planning your Africa journey?
+              </h2>
 
-        <div className="KenSafari-container">
-          <div className="KenSafari-help-card">
-            <div className="KenSafari-help-content">
-              <div className="KenSafari-help-header">
-                <span className="KenSafari-help-eyebrow">
-                  Personalized Planning
-                </span>
-                <h2 className="KenSafari-help-h2">
-                  Start Planning Your Luxury Kenya Safari
-                </h2>
-                <div className="KenSafari-help-accent" />
-              </div>
+              <div className="btgms-final-divider"></div>
 
-              <div className="KenSafari-help-centered-content">
-                <p className="KenSafari-help-intro">
-                  If you are planning a luxury Kenya safari and want it done
-                  right the first time, experience matters.
-                </p>
-                <p className="KenSafari-help-intro">
-                  With over four decades in the industry, Angela Hughes and
-                  Trips & Ships Luxury Travel design safari experiences that are
-                  executed at the highest level.
-                </p>
-                <div className="KenSafari-help-btn-container">
-                  <button className="KenSafari-help-cta-btn">
-                    Schedule a 15-Minute Luxury Safari Consultation
-                    <ArrowRight size={18} />
-                  </button>
-                </div>
+              <p className="btgms-final-text">
+                Schedule a consultation with Trips & Ships Luxury Travel to
+                design a custom luxury safari experience built around your
+                interests, travel style, timeline, and investment level. Whether
+                you are planning your first safari, a multi generational family
+                adventure, a honeymoon, a photography focused journey, or an
+                expedition across East or Southern Africa, our team can help
+                guide you through every step of the planning process with
+                personalized recommendations, destination expertise, and
+                concierge level support.
+              </p>
+
+              <div className="btgms-final-actions">
+                <button className="btgms-btn-luxury">
+                  <span>Plan My Luxury Safari</span>
+                  <ArrowRight size={20} className="btgms-btn-icon" />
+                </button>
               </div>
             </div>
+
+            {/* Decorative Background Elements */}
+            <div className="btgms-card-glow"></div>
           </div>
         </div>
       </section>
