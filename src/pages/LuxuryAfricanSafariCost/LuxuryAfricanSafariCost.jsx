@@ -1604,68 +1604,48 @@ export default function LuxuryAfricanSafariCost() {
       </section>
 
 
-      {/* ── 15. INTERNAL LINKING STRATEGY (V8 - Architectural Command Ribbon) ── */}
-      <section className="lasc-internal-links-v8">
-        <div className="lasc-container">
-          <div className="lasc-links-header-v8">
-            <h2 className="lasc-h2">INTERNAL LINKING STRATEGY</h2>
-            <div className="lasc-accent-line lasc-accent-line--center"></div>
+      {/* ── 15. INTERNAL LINKING STRATEGY (V8) ── */}
+<section className="lasc-internal-links-v8">
+      <div className="lasc-container-v8">
+        <div className="lasc-header-v8">
+          <h2 className="lasc-h2-v8">INTERNAL LINKING STRATEGY</h2>
+          <div className="lasc-accent-v8"></div>
+        </div>
+
+        <div className="lasc-grid-v8">
+          <Link to="/best-time-great-migration-safari" className="lasc-card-v8">
+            <Calendar size={32} className="lasc-icon-v8" />
+            <span className="lasc-text-v8">Great Migration Month-by-Month Guide</span>
+            <ArrowRight size={20} className="lasc-arrow-v8" />
+          </Link>
+
+          <Link to="/kenya-vs-tanzania-safari" className="lasc-card-v8">
+            <Compass size={32} className="lasc-icon-v8" />
+            <span className="lasc-text-v8">Kenya vs Tanzania Safari</span>
+            <ArrowRight size={20} className="lasc-arrow-v8" />
+          </Link>
+
+          <Link to="/luxury-kenya-safari" className="lasc-card-v8">
+            <MapPin size={32} className="lasc-icon-v8" />
+            <span className="lasc-text-v8">Kenya Luxury Safari</span>
+            <ArrowRight size={20} className="lasc-arrow-v8" />
+          </Link>
+
+          <div className="lasc-card-v8">
+            <ShieldCheck size={32} className="lasc-icon-v8" />
+            <span className="lasc-text-v8">Tanzania Luxury Safari</span>
+            <ArrowRight size={20} className="lasc-arrow-v8" />
           </div>
 
-          <div className="lasc-command-ribbon">
-            <Link
-              to="/best-time-great-migration-safari"
-              className="lasc-ribbon-btn"
-            >
-              <div className="lasc-ribbon-btn-inner">
-                <Calendar size={20} className="lasc-ribbon-btn-icon" />
-                <span className="lasc-ribbon-btn-text">
-                  Great Migration Month-by-Month Guide
-                </span>
-                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
-              </div>
-            </Link>
-
-            <Link to="/kenya-vs-tanzania-safari" className="lasc-ribbon-btn">
-              <div className="lasc-ribbon-btn-inner">
-                <Compass size={20} className="lasc-ribbon-btn-icon" />
-                <span className="lasc-ribbon-btn-text">
-                  Kenya vs Tanzania Safari
-                </span>
-                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
-              </div>
-            </Link>
-
-            <Link to="/luxury-kenya-safari" className="lasc-ribbon-btn">
-              <div className="lasc-ribbon-btn-inner">
-                <MapPin size={20} className="lasc-ribbon-btn-icon" />
-                <span className="lasc-ribbon-btn-text">Kenya Luxury Safari</span>
-                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
-              </div>
-            </Link>
-
-            <div className="lasc-ribbon-btn">
-              <div className="lasc-ribbon-btn-inner">
-                <ShieldCheck size={20} className="lasc-ribbon-btn-icon" />
-                <span className="lasc-ribbon-btn-text">
-                  Tanzania Luxury Safari
-                </span>
-                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
-              </div>
-            </div>
-
-            <div className="lasc-ribbon-btn">
-              <div className="lasc-ribbon-btn-inner">
-                <Sparkles size={20} className="lasc-ribbon-btn-icon" />
-                <span className="lasc-ribbon-btn-text">
-                  Best Time for Safari in Africa
-                </span>
-                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
-              </div>
-            </div>
+          <div className="lasc-card-v8">
+            <Sparkles size={32} className="lasc-icon-v8" />
+            <span className="lasc-text-v8">Best Time for Safari in Africa</span>
+            <ArrowRight size={20} className="lasc-arrow-v8" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
       <section className="lasc-section lasc-faq">
         <div className="lasc-container">
           <div className="lasc-faq-header-v2">

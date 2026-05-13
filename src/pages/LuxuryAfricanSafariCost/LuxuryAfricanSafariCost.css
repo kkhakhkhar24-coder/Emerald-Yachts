@@ -3967,159 +3967,154 @@
     }
 }
 
-/* ── 15. INTERNAL LINKING STRATEGY (V8 - Architectural Command Ribbon) ── */
+/* ── INTERNAL LINKING STRATEGY SECTION ── */
 .lasc-internal-links-v8 {
-    background-color: var(--bg-white);
-    padding: 100px 20px;
+    background-color: #ffffff;
+    padding: 60px 20px; /* Desktop Padding */
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.lasc-links-header-v8 {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.lasc-command-ribbon {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 15px;
-    max-width: 1400px;
+.lasc-container-v8 {
+    max-width: 1350px;
     margin: 0 auto;
-    flex-wrap: nowrap;
 }
 
-.lasc-ribbon-btn {
-    flex: 1;
-    text-decoration: none;
-    background: var(--bg-soft);
-    padding: 35px 20px;
-    border-radius: 12px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(39, 68, 114, 0.05);
-    position: relative;
-    overflow: hidden;
+.lasc-header-v8 {
+    text-align: center;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.lasc-ribbon-btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--navy);
-    transform: scaleY(0);
-    transition: transform 0.4s ease;
-    transform-origin: bottom;
+.lasc-h2-v8 {
+    color: #274472;
+    font-size: 48px; /* Desktop H2 */
+    font-weight: 800;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.02em;
 }
 
-.lasc-ribbon-btn:hover {
-    background: var(--bg-white);
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(15, 28, 46, 0.1);
-    border-color: var(--navy-light);
+.lasc-accent-v8 {
+    width: 60px;
+    height: 4px;
+    background-color: #274472;
+    border-radius: 2px;
 }
 
-.lasc-ribbon-btn:hover::before {
-    transform: scaleY(1);
+/* Grid Design */
+.lasc-grid-v8 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
 
-.lasc-ribbon-btn-inner {
+.lasc-card-v8 {
+    text-decoration: none;
+    background-color: rgb(231, 243, 245); /* bg-soft */
+    padding: 40px 20px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    flex-grow: 1;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.lasc-ribbon-btn-icon {
-    color: var(--navy);
-    transition: transform 0.4s ease;
+.lasc-icon-v8 {
+    color: #274472;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-.lasc-ribbon-btn:hover .lasc-ribbon-btn-icon {
-    transform: scale(1.2) rotate(10deg);
-}
-
-.lasc-ribbon-btn-text {
-    font-family: var(--font-display);
-    font-size: 16px;
+.lasc-text-v8 {
+    color: #274472;
+    font-size: 18px; /* Desktop P */
     font-weight: 700;
-    color: var(--navy);
     line-height: 1.4;
-    transition: all 0.4s ease;
+    margin-bottom: auto;
 }
 
-.lasc-ribbon-btn-arrow {
-    color: var(--navy-light);
-    opacity: 0.3;
-    transition: all 0.4s ease;
-    margin-top: auto;
-    padding-top: 20px;
+.lasc-arrow-v8 {
+    color: #274472cc; /* navy-light */
+    margin-top: 25px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.lasc-ribbon-btn:hover .lasc-ribbon-btn-arrow {
-    opacity: 1;
-    color: var(--navy);
+/* Hover State */
+.lasc-card-v8:hover {
+    background-color: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.12);
+    border-color: #274472;
+}
+
+.lasc-card-v8:hover .lasc-icon-v8 {
+    transform: scale(1.1);
+}
+
+.lasc-card-v8:hover .lasc-arrow-v8 {
     transform: translateX(5px);
+    color: #274472;
 }
 
-/* Tablet */
+/* ── TABLET RESPONSIVE ── */
 @media (max-width: 1024px) {
     .lasc-internal-links-v8 {
-        padding: 80px 15px;
+        padding: 50px 15px; /* All other Padding */
     }
 
-    .lasc-command-ribbon {
-        flex-wrap: wrap;
-        gap: 20px;
+    .lasc-h2-v8 {
+        font-size: 28px; /* Tablet H2 */
     }
 
-    .lasc-ribbon-btn {
-        flex: 0 0 calc(50% - 10px);
-        padding: 25px 15px;
+    .lasc-text-v8 {
+        font-size: 17px; /* Tablet P */
     }
 
-    .lasc-ribbon-btn:last-child {
-        flex: 0 0 100%;
+    .lasc-grid-v8 {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .lasc-links-header-v8 .lasc-h2 {
-        font-size: 28px;
+    
+    .lasc-card-v8:last-child {
+        grid-column: span 2;
     }
 }
 
-/* Mobile */
+/* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
-    .lasc-links-header-v8 .lasc-h2 {
-        font-size: 24px;
+    .lasc-h2-v8 {
+        font-size: 24px; /* Mobile H2 */
     }
 
-    .lasc-ribbon-btn {
-        flex: 0 0 100%;
-        padding: 20px;
+    .lasc-text-v8 {
+        font-size: 16px; /* Mobile P */
     }
 
-    .lasc-ribbon-btn-inner {
+    .lasc-grid-v8 {
+        grid-template-columns: 1fr;
+    }
+
+    .lasc-card-v8 {
+        grid-column: span 1 !important;
         flex-direction: row;
         text-align: left;
-        gap: 20px;
+        padding: 25px;
+        gap: 15px;
     }
 
-    .lasc-ribbon-btn-icon {
+    .lasc-icon-v8 {
         margin-bottom: 0;
-        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
     }
 
-    .lasc-ribbon-btn-text {
-        font-size: 15px;
-    }
-
-    .lasc-ribbon-btn-arrow {
+    .lasc-arrow-v8 {
+        margin-top: 0;
         margin-left: auto;
-        padding-top: 0;
     }
 }
