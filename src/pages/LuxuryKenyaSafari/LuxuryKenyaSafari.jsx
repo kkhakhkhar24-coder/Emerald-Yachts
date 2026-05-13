@@ -14,6 +14,7 @@ import africa5 from "../../assets/LuxuryKenyaSafari/africa5.jpg";
 import africa6 from "../../assets/LuxuryKenyaSafari/africa6.jpg";
 import africa7 from "../../assets/LuxuryKenyaSafari/africa7.jpg";
 import africa8 from "../../assets/LuxuryKenyaSafari/africa8.jpg";
+import Aafrica_28 from "../../assets/LuxuryKenyaSafari/Aafrica_28.jpg";
 
 
 import {
@@ -55,6 +56,7 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function LuxuryKenyaSafari() {
   const [currentHero, setCurrentHero] = useState(0);
@@ -62,6 +64,7 @@ function LuxuryKenyaSafari() {
   const heroImages = [
     africa1,
     africa2,
+    Aafrica_28,
   ];
 
   useEffect(() => {
@@ -1050,8 +1053,18 @@ function LuxuryKenyaSafari() {
         </div>
       </section>
 
+
+
       {/* ── THE REGIONAL SHOWCASE SLIDER (REGIONS) ────────────────────────────────── */}
       <section className="kenya-regions-sector">
+        {regions.map((region, i) => (
+          <div
+            key={`bg-${i}`}
+            className={`region-bg-image ${i === activeRegion ? "active" : ""}`}
+            style={{ backgroundImage: `url(${region.image})` }}
+          />
+        ))}
+        <div className="region-overlay-dark" />
         <div className="kenya-inner">
           <div className="collection-header">
             <h2 className="collection-h2">
@@ -1363,51 +1376,58 @@ function LuxuryKenyaSafari() {
         </div>
       </section>
 
-      {/* ── SENSE OF PLACE: WAKING UP IN THE MARA ────────────────────────────────── */}
-      <section className="kenya-mara-awakening">
-        <div className="awakening-bg">
-          <img
-            src={africa2}
-            alt="Maasai Mara Dawn"
-            className="awakening-img"
-          />
-          <div className="awakening-overlay"></div>
-        </div>
-
+      {/* ── SENSE OF PLACE: WAKING UP IN THE MARA (MAGAZINE SPREAD DESIGN) ───────── */}
+      <section className="kenya-mara-awakening-v2">
         <div className="kenya-inner">
-          <div className="awakening-content">
-            <h2 className="awakening-h2">
-              WHAT IT FEELS LIKE TO WAKE UP <br />
-              IN THE MAASAI MARA
-            </h2>
-
-            <div className="awakening-grid-premium">
-              <div className="awakening-narrative">
-                <p>
-                  Before sunrise, camp is quiet except for distant wildlife
-                  moving through darkness. Lanterns flicker outside tents while
-                  the sky slowly changes color across the plains.
-                </p>
-                <p>
-                  There are mornings when elephants walk directly through camp.
-                  Evenings where lions can be heard after dinner.
-                </p>
+          <div className="awakening-split-grid">
+            <div className="awakening-visual-col">
+              <div className="awakening-main-img-wrap">
+                <img src={africa2} alt="Maasai Mara" className="awakening-main-img" />
+                <div className="awakening-img-label">05:30 AM / DAWN IN THE MARA</div>
               </div>
+              <div className="awakening-secondary-img-wrap">
+                <img src={africa8} alt="Safari Detail" className="awakening-secondary-img" />
+              </div>
+            </div>
 
-              <div className="awakening-philosophy-box">
-                <div className="philosophy-inner-text">
-                  <p className="p-accent">
-                    Luxury in Kenya is not disconnected from nature.
+            <div className="awakening-text-col">
+              <span className="awakening-eyebrow-v2">SENSE OF PLACE</span>
+              <h2 className="awakening-h2-v2">
+                What it feels like <br />
+                <span className="h2-v2-accent">To Wake Up</span> <br />
+                in the Maasai Mara
+              </h2>
+              
+              <div className="awakening-narrative-v2">
+                <p className="narrative-lead-v2">
+                  Before sunrise, camp is quiet except for distant wildlife
+                  moving through darkness.
+                </p>
+                <div className="narrative-columns-v2">
+                  <p>
+                    Lanterns flicker outside tents while the sky slowly changes
+                    color across the plains. There are mornings when elephants
+                    walk directly through camp.
                   </p>
-                  <p className="p-main">
-                    The best camps make travelers feel immersed inside it.
+                  <p>
+                    Evenings where lions can be heard after dinner. Luxury in
+                    Kenya is not disconnected from nature. The best camps make
+                    travelers feel immersed inside it.
                   </p>
                 </div>
+              </div>
+
+              <div className="awakening-quote-block-v2">
+                <div className="quote-line-v2" />
+                <p>"Safari changes the way people think about silence."</p>
+                <span className="quote-author-v2">— TRIPS & SHIPS PHILOSOPHY</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
             {/* ── ABOUT ANGELA HUGHES (PROFILE - WOW UI) ───────────────────────────────── */}
       <section className="kenya-about-angela">
@@ -1532,6 +1552,8 @@ function LuxuryKenyaSafari() {
           </div>
         </div>
       </section>
+
+
 
       {/* ── LOGISTICS: INTERNATIONAL ARRIVAL ───────────────────────────────── */}
       <section className="kenya-logistics-dossier">
@@ -2400,6 +2422,31 @@ function LuxuryKenyaSafari() {
                 It is about creating rhythm, positioning, and immersion.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CONSOLIDATED INTERNAL LINKS: THE SAFARI INTELLIGENCE DUO ────────────── */}
+      <section className="kenya-resource-duo">
+        <div className="kenya-inner">
+          <div className="resource-duo-grid">
+            <Link to="/kenya-vs-tanzania-safari" className="resource-card">
+              <div className="resource-card-content">
+                <span className="resource-tag">COMPARISON GUIDE</span>
+                <h3 className="resource-h3">Kenya vs Tanzania Safari</h3>
+                <p className="resource-p">Trying to decide between the two? Read which is best for luxury travelers.</p>
+                <span className="resource-cta">Read Guide <ChevronRight size={16} /></span>
+              </div>
+            </Link>
+
+            <Link to="/best-time-great-migration-safari" className="resource-card">
+              <div className="resource-card-content">
+                <span className="resource-tag">MIGRATION GUIDE</span>
+                <h3 className="resource-h3">The Great Migration Guide</h3>
+                <p className="resource-p">Everything you need to know about timing and location for the migration.</p>
+                <span className="resource-cta">Read Guide <ChevronRight size={16} /></span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
