@@ -1453,7 +1453,6 @@
   z-index: 1;
 }
 
-
 .collection-header {
   position: relative;
   z-index: 5;
@@ -2607,7 +2606,6 @@
   color: #ffffff;
 }
 
-
 /* ============================================================
    STRATEGIC OVERLAY (INTELLIGENCE BLUEPRINT - WOW UI)
    ============================================================ */
@@ -3228,7 +3226,7 @@
   .awakening-split-grid {
     gap: 60px;
   }
-  
+
   .awakening-h2-v2 {
     font-size: 40px;
   }
@@ -3243,7 +3241,7 @@
     grid-template-columns: 1fr;
     gap: 80px;
   }
-  
+
   .awakening-visual-col {
     max-width: 500px;
     margin: 0 auto;
@@ -3270,7 +3268,7 @@
   .awakening-h2-v2 {
     font-size: 24px;
   }
-  
+
   .narrative-columns-v2 {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -3284,10 +3282,6 @@
     font-size: 22px;
   }
 }
-
-
-
-
 
 /* ============================================================
    PREMIUM TRAVEL DOSSIER (LOGISTICS - WOW UI)
@@ -4830,7 +4824,7 @@
   .camp-folio-card {
     width: 280px;
   }
-  .camp-folio-suitability{
+  .camp-folio-suitability {
     margin-top: 0px;
   }
 }
@@ -5841,6 +5835,50 @@
   .angela-photo-wrap {
     max-width: 500px;
     margin: 0 auto;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .angela-image {
+    height: 420px;
+  }
+
+  .angela-h2 {
+    font-size: 32px;
+  }
+
+  .angela-recognition {
+    padding: 30px 20px;
+  }
+
+  .angela-photo-wrap::after {
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .angela-photo-wrap {
+    padding: 20px 0;
+  }
+
+  .angela-image {
+    height: 380px;
+  }
+
+  .angela-h2 {
+    font-size: 28px;
+  }
+
+  .angela-bio {
+    font-size: 16px;
+  }
+
+  .recognition-list li {
+    font-size: 14px;
   }
 }
 
@@ -6277,8 +6315,20 @@
   .kenya-vs-h2 {
     font-size: 24px;
   }
+  .kenya-vs-title,
+  .angela-h2,
+  .migration-intel-h3,
+  .alert-h2,
+  .itinerary-h2,
+  .panel-h2,
+  .kenya-wisdom-h2 {
+    font-size: 24px !important;
+  }
 
-  .kenya-vs-lead {
+  .kenya-vs-lead,
+  .conservancy-quote-main,
+  .intel-main-text p,
+  .intel-positioning .p-position {
     font-size: 16px;
   }
 
@@ -6291,7 +6341,8 @@
     padding: 30px 15px;
   }
 
-  .kenya-vs-conclusion-inner h4 {
+  .kenya-vs-conclusion-inner h4,
+  .conservancy-quote-highlight {
     font-size: 20px;
   }
 
@@ -7221,8 +7272,17 @@
 @media (max-width: 480px) {
   .itinerary-h2,
   .panel-h2,
-  .kenya-wisdom-h2 {
+  .kenya-wisdom-h2, .collection-h2 {
     font-size: 24px;
+  }
+  .collection-header{
+    margin-bottom: 0px;
+  }
+  .regions-display-modern{
+    padding: 20px;
+  }
+  .folio-feature-list{
+    grid-template-columns: 1fr;
   }
 
   .itinerary-lead {
@@ -7231,6 +7291,7 @@
 
   .lifestyle-panel {
     min-height: 500px;
+    padding: 20px;
   }
 
   .panel-p {
@@ -7666,7 +7727,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .resource-card {
     padding: 30px;
   }
@@ -7676,9 +7737,8 @@
   .kenya-resource-duo {
     padding: 40px 15px;
   }
-  
+
   .resource-h3 {
     font-size: 20px;
   }
 }
-
