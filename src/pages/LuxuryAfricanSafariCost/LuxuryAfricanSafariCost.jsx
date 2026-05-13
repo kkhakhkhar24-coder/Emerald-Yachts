@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 import {
   Compass,
   DollarSign,
@@ -602,7 +603,7 @@ export default function LuxuryAfricanSafariCost() {
       </section>
 
       {/* SPECIALIZATION */}
-      <section className="btgms-section btgms-specialization"   style={{ backgroundColor: "var(--bg-soft)" }}>
+      <section className="btgms-section btgms-specialization" style={{ backgroundColor: "var(--bg-soft)" }}>
         <div className="btgms-container">
           <h2 className="btgms-h2">
             Experts in African Safari & Expedition Travel
@@ -1217,7 +1218,7 @@ export default function LuxuryAfricanSafariCost() {
         </div>
       </section>
 
-            {/* ── 15. ABOUT ANGELA HUGHES (New Look) ── */}
+      {/* ── 15. ABOUT ANGELA HUGHES (New Look) ── */}
       <section className="lasc-about-v2">
         <div className="lasc-container">
           <div className="lasc-about-grid-v2">
@@ -1334,7 +1335,7 @@ export default function LuxuryAfricanSafariCost() {
               <div className="lasc-accent-line lasc-accent-line--center"></div>
 
               <p className="lasc-p">
-                For those seeking the absolute peak of African hospitality, Singita remains the gold standard. 
+                For those seeking the absolute peak of African hospitality, Singita remains the gold standard.
                 Integrating conservation, community, and world-class design, a Singita safari is more than a journey—it is an immersion into the soul of the continent.
               </p>
             </div>
@@ -1603,7 +1604,68 @@ export default function LuxuryAfricanSafariCost() {
       </section>
 
 
-      {/* ── 16. FAQ SECTION ── */}
+      {/* ── 15. INTERNAL LINKING STRATEGY (V8 - Architectural Command Ribbon) ── */}
+      <section className="lasc-internal-links-v8">
+        <div className="lasc-container">
+          <div className="lasc-links-header-v8">
+            <h2 className="lasc-h2">INTERNAL LINKING STRATEGY</h2>
+            <div className="lasc-accent-line lasc-accent-line--center"></div>
+          </div>
+
+          <div className="lasc-command-ribbon">
+            <Link
+              to="/best-time-great-migration-safari"
+              className="lasc-ribbon-btn"
+            >
+              <div className="lasc-ribbon-btn-inner">
+                <Calendar size={20} className="lasc-ribbon-btn-icon" />
+                <span className="lasc-ribbon-btn-text">
+                  Great Migration Month-by-Month Guide
+                </span>
+                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
+              </div>
+            </Link>
+
+            <Link to="/kenya-vs-tanzania-safari" className="lasc-ribbon-btn">
+              <div className="lasc-ribbon-btn-inner">
+                <Compass size={20} className="lasc-ribbon-btn-icon" />
+                <span className="lasc-ribbon-btn-text">
+                  Kenya vs Tanzania Safari
+                </span>
+                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
+              </div>
+            </Link>
+
+            <Link to="/luxury-kenya-safari" className="lasc-ribbon-btn">
+              <div className="lasc-ribbon-btn-inner">
+                <MapPin size={20} className="lasc-ribbon-btn-icon" />
+                <span className="lasc-ribbon-btn-text">Kenya Luxury Safari</span>
+                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
+              </div>
+            </Link>
+
+            <div className="lasc-ribbon-btn">
+              <div className="lasc-ribbon-btn-inner">
+                <ShieldCheck size={20} className="lasc-ribbon-btn-icon" />
+                <span className="lasc-ribbon-btn-text">
+                  Tanzania Luxury Safari
+                </span>
+                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
+              </div>
+            </div>
+
+            <div className="lasc-ribbon-btn">
+              <div className="lasc-ribbon-btn-inner">
+                <Sparkles size={20} className="lasc-ribbon-btn-icon" />
+                <span className="lasc-ribbon-btn-text">
+                  Best Time for Safari in Africa
+                </span>
+                <ArrowRight size={14} className="lasc-ribbon-btn-arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="lasc-section lasc-faq">
         <div className="lasc-container">
           <div className="lasc-faq-header-v2">
