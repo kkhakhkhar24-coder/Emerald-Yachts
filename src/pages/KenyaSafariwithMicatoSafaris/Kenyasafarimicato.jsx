@@ -572,6 +572,7 @@ const KenyaSafariMicato = () => {
           <h2 className="btgms-h2">
             Experts in African Safari & Expedition Travel
           </h2>
+                    <div className="btgms-accent-line"></div>
           <p className="btgms-p">
             Angela Hughes and Trips & Ships Luxury Travel specialize in custom
             luxury African safaris and expedition travel throughout Kenya,
@@ -597,7 +598,6 @@ const KenyaSafariMicato = () => {
       >
         <div className="KenSafari-container">
           <div className="KenSafari-section-header">
-            <span className="KenSafari-why-eyebrow">Unmatched Excellence</span>
             <h2 className="KenSafari-h2">Why We Recommend Micato Safaris</h2>
             <div className="KenSafari-accent-line" />
             <p className="KenSafari-body-text" style={{ marginTop: "20px" }}>
@@ -618,7 +618,7 @@ const KenyaSafariMicato = () => {
                   The guide determines the overall experience. Micato's guides
                   are among the most skilled in Kenya.
                 </p>
-                <div className="KenSafari-micato-item-bg" />
+          
               </div>
             </div>
 
@@ -665,7 +665,7 @@ const KenyaSafariMicato = () => {
                   Access to the best camps in the most strategic locations
                   across Kenya's top wildlife regions.
                 </p>
-                <div className="KenSafari-micato-item-bg" />
+         
               </div>
             </div>
 

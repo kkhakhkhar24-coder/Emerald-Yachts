@@ -434,6 +434,7 @@ export default function KenyaVsTanzaniaSafari() {
           <h2 className="btgms-h2">
             Experts in African Safari & Expedition Travel
           </h2>
+                    <div className="btgms-accent-line" ></div>
           <p className="btgms-p">
             Angela Hughes and Trips & Ships Luxury Travel specialize in custom
             luxury African safaris and expedition travel throughout Kenya,

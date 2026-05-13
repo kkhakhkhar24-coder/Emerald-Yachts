@@ -500,8 +500,9 @@ export default function BestTimeGreatMigrationSafari() {
 
           <div className="btgms-hero-cta-box">
             <h2 className="btgms-hero-cta-title">
-              Schedule a 15-Minute Great Migration <br /> Strategy Call
+              READY TO PLAN YOUR MIGRATION SAFARI?
             </h2>
+            <div className="btgms-accent-line-white"></div>
             <p className="btgms-hero-cta-subtext">
               If your trip depends on timing, you need to get this right.
             </p>
@@ -562,6 +563,7 @@ export default function BestTimeGreatMigrationSafari() {
           <h2 className="btgms-h2">
             Experts in African Safari & Expedition Travel
           </h2>
+          <div className="btgms-accent-line"></div>
           <p className="btgms-p">
             Angela Hughes and Trips & Ships Luxury Travel specialize in custom
             luxury African safaris and expedition travel throughout Kenya,
@@ -586,6 +588,7 @@ export default function BestTimeGreatMigrationSafari() {
           <div className="btgms-def-flex">
             <div className="btgms-def-text">
               <h2 className="btgms-h2">What The Great Migration Actually Is</h2>
+              <div className="btgms-accent-line"></div>
               <p className="btgms-p">
                 The Great Migration is not a single event. It is a circular
                 movement driven by rainfall and grazing patterns.
@@ -618,6 +621,7 @@ export default function BestTimeGreatMigrationSafari() {
           <div className="btgms-video-wrapper">
             <div className="btgms-video-content">
               <h2 className="btgms-h2">Experience the Great Migration</h2>
+              <div className="btgms-accent-line"></div>
               <p className="btgms-p">
                 Witness the raw power and dramatic river crossings of the
                 world's most spectacular wildlife movement. This is what you are
@@ -643,6 +647,7 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-section btgms-glance">
         <div className="btgms-container">
           <h2 className="btgms-h2">Great Migration at a Glance</h2>
+          <div className="btgms-accent-line"></div>
           <div className="btgms-table-container">
             <div className="btgms-table-wrap">
               <table className="btgms-table">
@@ -676,6 +681,7 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-section btgms-months">
         <div className="btgms-container">
           <h2 className="btgms-h2">Great Migration Month-by-Month</h2>
+          <div className="btgms-accent-line" style={{ background: "#fff" }}></div>
           <div className="btgms-months-timeline">
             {monthByMonth.map((m, i) => (
               <div className="btgms-month-row" key={i}>
@@ -757,6 +763,7 @@ export default function BestTimeGreatMigrationSafari() {
               <div className="btgms-trust-header">
                 <span className="btgms-trust-eyebrow">ABOUT ANGELA HUGHES</span>
                 <h2 className="btgms-h2">Why Trust This Guide</h2>
+                <div className="btgms-accent-line" style={{ marginLeft: "9vw", marginBottom: "20px" }}></div>
                 <div className="btgms-trust-description">
                   <p className="btgms-p-small">
                     Angela Hughes is one of the most recognized voices in luxury
@@ -849,6 +856,7 @@ export default function BestTimeGreatMigrationSafari() {
           <div className="btgms-where-grid">
             <div className="btgms-where-content">
               <h2 className="btgms-h2">Where to Go Based on Timing</h2>
+              <div className="btgms-accent-line"></div>
               <div className="btgms-where-cards">
                 <div className="btgms-where-card">
                   <MapPin className="btgms-where-icon" size={24} />
@@ -903,6 +911,7 @@ export default function BestTimeGreatMigrationSafari() {
         <div className="btgms-container">
           <div className="btgms-truth-header">
             <h2 className="btgms-h2">The Truth About the Great Migration</h2>
+            <div className="btgms-accent-line" style={{ background: "#fff" }}></div>
             <p className="btgms-p-display">
               This is where expectations need to be reset.
             </p>
@@ -949,6 +958,7 @@ export default function BestTimeGreatMigrationSafari() {
             <div className="btgms-design-content">
               <span className="btgms-eyebrow">DESIGN PHILOSOPHY</span>
               <h2 className="btgms-h2">How We Design Migration Safaris</h2>
+              <div className="btgms-accent-line"></div>
               <p className="btgms-p-display">
                 This is where most trips are won or lost.
               </p>
@@ -989,6 +999,7 @@ export default function BestTimeGreatMigrationSafari() {
           <div className="btgms-video-wrapper">
             <div className="btgms-video-content">
               <h2 className="btgms-h2">The Strategy Behind the Safari</h2>
+              <div className="btgms-accent-line"></div>
               <p className="btgms-p">
                 Go behind the scenes to see how we align every detail—from camp
                 placement to guide expertise—to ensure you are in the right
@@ -1012,6 +1023,7 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-section btgms-cost">
         <div className="btgms-container">
           <h2 className="btgms-h2">Cost by Season</h2>
+          <div className="btgms-accent-line"></div>
           <div className="btgms-cost-grid">
             <div className="btgms-cost-item">
               <Sun size={32} className="btgms-cost-icon" />
@@ -1055,6 +1067,7 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-section btgms-for">
         <div className="btgms-container">
           <h2 className="btgms-h2">Who This Is For</h2>
+          <div className="btgms-accent-line"></div>
           <div className="btgms-for-grid">
             {[
               { text: "First-time safari travelers", icon: Compass },
@@ -1080,6 +1093,7 @@ export default function BestTimeGreatMigrationSafari() {
       <section className="btgms-section btgms-faq">
         <div className="btgms-container">
           <h2 className="btgms-h2">FAQ: Best Time for the Great Migration</h2>
+          <div className="btgms-accent-line"></div>
           <div className="btgms-faq-list">
             {faqs.map((faq, i) => (
               <div
@@ -1108,7 +1122,7 @@ export default function BestTimeGreatMigrationSafari() {
           <div className="btgms-final-card-premium">
             <div className="btgms-final-card-content">
               <h2 className="btgms-final-title">
-                Ready to begin planning your Africa journey?
+                Get the Migration Safari Right.
               </h2>
 
               <div className="btgms-final-divider"></div>

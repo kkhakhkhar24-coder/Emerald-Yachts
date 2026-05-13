@@ -698,6 +698,7 @@ function LuxuryKenyaSafari() {
           <h2 className="btgms-h2">
             Experts in African Safari & Expedition Travel
           </h2>
+          <div class="itinerary-bar"></div>
           <p className="btgms-p">
             Angela Hughes and Trips & Ships Luxury Travel specialize in custom
             luxury African safaris and expedition travel throughout Kenya,
@@ -749,6 +750,7 @@ function LuxuryKenyaSafari() {
               Why Travelers Fall In Love With Kenya
             </span>
             <h2>Kenya Changes People.</h2>
+             <div class="kenya-wisdom-decor1"></div>
             <p className="kenya-p">
               There is something about the rhythm of safari life that slows the
               world down. Mornings begin before sunrise with coffee quietly
@@ -790,6 +792,7 @@ function LuxuryKenyaSafari() {
                 One of the Best Safari Destinations in the World
               </span>
             </h2>
+             <div class="kenya-wisdom-decor"  style={{ background: "#fff" }}></div>
           </div>
 
           <div className="kenya-wow-main">
@@ -894,7 +897,8 @@ function LuxuryKenyaSafari() {
         <div className="kenya-truth-container">
           <div className="kenya-truth-content">
             <span className="kenya-truth-eyebrow">Managing Expectations</span>
-            <h2 className="kenya-truth-h2">WHAT KENYA SAFARI IS NOT</h2>
+            <h2 className="kenya-truth-h2">WHAT KENYA <br /> SAFARI IS NOT</h2>
+                 <div class="kenya-wisdom-decor"></div>
 
             <div className="kenya-truth-negatives">
               <div className="kenya-truth-neg-item">
@@ -1204,6 +1208,7 @@ function LuxuryKenyaSafari() {
                   WHY LUXURY CHANGES THE <br />
                   <span className="dossier-highlight">SAFARI EXPERIENCE</span>
                 </h2>
+                <div class="kenya-wisdom-decor"  style={{ background: "#fff" }}></div>
                 <p className="dossier-p">
                   Luxury safari is not simply about beautiful rooms. It is often
                   operational rather than cosmetic—shifting the very nature of
@@ -1254,6 +1259,7 @@ function LuxuryKenyaSafari() {
                   WHY CAMP PLACEMENT MATTERS <br />
                   <span className="dossier-highlight">MORE THAN BRAND</span>
                 </h2>
+                <div class="kenya-wisdom-decor"></div>
                 <p className="dossier-p1">
                   Many travelers focus almost entirely on camp photography. But
                   in safari planning, camp location often matters far more than
@@ -1563,6 +1569,7 @@ function LuxuryKenyaSafari() {
               <h2 className="arrival-h2">
                 PLANNING A LUXURY KENYA SAFARI FROM THE UNITED STATES
               </h2>
+              <div class="kenya-wisdom-decor1"></div>
               <p className="arrival-p">
                 Flights typically connect through Europe, the Middle East, or
                 African gateways before arriving in Nairobi.
@@ -1599,6 +1606,7 @@ function LuxuryKenyaSafari() {
           <div className="nairobi-experience-editorial">
             <div className="nairobi-content-block">
               <h2 className="nairobi-h2">LUXURY NAIROBI BEFORE SAFARI</h2>
+                 <div class="kenya-wisdom-decor1"></div>
               <p className="nairobi-p">
                 Nairobi is often treated as simply an arrival point, but for
                 luxury travelers it can become an important part of the
@@ -1637,6 +1645,7 @@ function LuxuryKenyaSafari() {
               <h2 className="kenya-worries-h2">
                 WHAT FIRST TIME KENYA SAFARI TRAVELERS ARE OFTEN WORRIED ABOUT
               </h2>
+                 <div class="kenya-wisdom-decor1"></div>
               <div className="kenya-reality-box">
                 <span className="kenya-reality-label">THE REALITY</span>
                 <p className="kenya-reality-p">
@@ -1804,7 +1813,8 @@ function LuxuryKenyaSafari() {
             {/* Left: Content */}
             <div className="cost-factors-content-v2">
               <div className="cost-header-v2">
-                <h2 className="cost-h2-v2">LUXURY KENYA SAFARI COST</h2>
+                <h2 className="cost-h2-v2">LUXURY KENYA <br /> SAFARI COST</h2>
+                 <div class="kenya-wisdom-decor"></div>
                 <div className="itinerary-bar-left"></div>
                 <p className="cost-p-lead-v2">
                   Luxury Kenya safari pricing is not fixed. It is a highly
@@ -2048,6 +2058,7 @@ function LuxuryKenyaSafari() {
                 <span>EXPERT ALERT</span>
               </div>
               <h2 className="alert-h2">WHY SOME CAMPS ARE OVERHYPED</h2>
+              <div class="itinerary-bar"></div>
               <p className="alert-lead">
                 Beautiful camp photography does not always create the best
                 safari experience.
@@ -2183,6 +2194,7 @@ function LuxuryKenyaSafari() {
                 <h2 className="panel-h2">
                   WHY KENYA IS A TOP HONEYMOON DESTINATION
                 </h2>
+                <div class="kenya-wisdom-decor"  style={{ background: "#fff" }}></div>
                 <p className="panel-p">
                   Few trips combine adventure, intimacy, and emotional
                   connection the way safari does. Many couples describe it as
@@ -2232,6 +2244,10 @@ function LuxuryKenyaSafari() {
                 <h2 className="panel-h2">
                   WHY KENYA WORKS SO WELL FOR FAMILIES
                 </h2>
+                <div
+                  class="kenya-wisdom-decor"
+                  style={{ background: "#fff" }}
+                ></div>
                 <p className="panel-p">
                   Luxury safari can become one of the most meaningful family
                   trips travelers ever take. Children often become deeply
