@@ -28,6 +28,8 @@ import MaasaiMara from "../../assets/KenyaSafariwithMicatoSafaris/Maasai_Mara.jp
 import Conservancies from "../../assets/KenyaSafariwithMicatoSafaris/Conservancies.jpg";
 import Park from "../../assets/KenyaSafariwithMicatoSafaris/Park.jpg";
 import Samburu from "../../assets/KenyaSafariwithMicatoSafaris/Samburu.jpg";
+import KenyaSafariImage4 from "../../assets/KenyaSafariwithMicatoSafaris/Kenya4.jpg";
+import KenyaTravel from "../../assets/KenyaSafariwithMicatoSafaris/KenyaTravel.jpg";
 import { Helmet } from "react-helmet-async";
 
 /* ── Schema ──────────────────────────────────────────────────────── */
@@ -488,49 +490,73 @@ const KenyaSafariMicato = () => {
         </div>
       </section>
 
-      {/* ── NOT ALL SAFARIS EQUAL ─────────────────────────────────── */}
+   {/* ── NOT ALL SAFARIS EQUAL ─────────────────────────────────── */}
       <section
         className="KenSafari-section KenSafari-bg-white"
         id="KenSafari-overview"
       >
         <div className="KenSafari-container">
-          <div className="KenSafari-section-header">
-            <h2 className="KenSafari-h2">
-              Why Kenya Safaris Are Not All Created Equal
-            </h2>
-            <div className="KenSafari-accent-line" />
-          </div>
-          <div className="KenSafari-intro-wrapper">
-            <p className="KenSafari-intro-text KenSafari-intro-spacing">
-              Kenya is one of the most iconic safari destinations in the world.
-              It is also one of the easiest places to get wrong.
-            </p>
-            <div className="KenSafari-intro-cards">
-              <div className="KenSafari-intro-card">
-                <div className="KenSafari-intro-card-icon">
-                  <AlertTriangle size={26} strokeWidth={1.5} />
-                </div>
-                <p className="KenSafari-intro-card-text">
-                  We are in an industry with no real barrier to entry. Anyone
-                  can say they sell travel. Anyone can say they "do" Africa.
-                </p>
+          <div className="KenSafari-intro-split">
+            {/* Left Column: Content */}
+            <div className="KenSafari-intro-content">
+              <div className="KenSafari-section-header KenSafari-intro-header">
+                <h2 className="KenSafari-h2">
+                  Why Kenya Safaris Are Not All Created Equal
+                </h2>
+                <div className="KenSafari-accent-line" />
               </div>
-              <div className="KenSafari-intro-card">
-                <div className="KenSafari-intro-card-icon">
-                  <Users size={26} strokeWidth={1.5} />
+              
+              <p className="KenSafari-intro-text KenSafari-intro-spacing">
+                Kenya is one of the most iconic safari destinations in the world.
+                It is also one of the easiest places to get wrong.
+              </p>
+
+              <div className="KenSafari-intro-cards-vertical">
+                <div className="KenSafari-intro-card-v">
+                  <div className="KenSafari-intro-card-icon-v">
+                    <AlertTriangle size={22} strokeWidth={1.5} />
+                  </div>
+                  <p className="KenSafari-intro-card-text-v">
+                    We are in an industry with no real barrier to entry. Anyone
+                    can say they sell travel. Anyone can say they "do" Africa.
+                  </p>
                 </div>
-                <p className="KenSafari-intro-card-text">
-                  After COVID, even more operators entered the market, creating
-                  a wide gap between average and exceptional safari experiences.
-                </p>
+                
+                <div className="KenSafari-intro-card-v">
+                  <div className="KenSafari-intro-card-icon-v">
+                    <Users size={22} strokeWidth={1.5} />
+                  </div>
+                  <p className="KenSafari-intro-card-text-v">
+                    After COVID, even more operators entered the market, creating
+                    a wide gap between average and exceptional safari experiences.
+                  </p>
+                </div>
+
+                <div className="KenSafari-intro-card-v KenSafari-intro-card-accent-v">
+                  <div className="KenSafari-intro-card-icon-v">
+                    <Star size={22} strokeWidth={1.5} />
+                  </div>
+                  <p className="KenSafari-intro-card-text-v">
+                    The difference becomes clear once you are on the ground.
+                  </p>
+                </div>
               </div>
-              <div className="KenSafari-intro-card KenSafari-intro-card-accent">
-                <div className="KenSafari-intro-card-icon">
-                  <Star size={26} strokeWidth={1.5} />
+            </div>
+
+            {/* Right Column: Visuals */}
+            <div className="KenSafari-intro-visual">
+              <div className="KenSafari-intro-image-group">
+                <div className="KenSafari-intro-img-frame KenSafari-intro-img-1">
+                  <img src={KenyaTravel} alt="Luxury Kenya Safari" />
+                  <div className="KenSafari-img-badge">
+                    <Sparkles size={14} />
+                    <span>Exceptional Standards</span>
+                  </div>
                 </div>
-                <p className="KenSafari-intro-card-text">
-                  The difference becomes clear once you are on the ground.
-                </p>
+                <div className="KenSafari-intro-img-frame KenSafari-intro-img-2">
+                  <img src={KenyaSafariImage4} alt="Kenya Wildlife" />
+                </div>
+                <div className="KenSafari-intro-decorative-blob" />
               </div>
             </div>
           </div>
@@ -1062,19 +1088,15 @@ const KenyaSafariMicato = () => {
           <div className="KenSafari-compare-grid">
             {/* Micato Safaris - Featured */}
             <div className="KenSafari-compare-card KenSafari-compare-featured">
-              <div className="KenSafari-compare-image-wrap">
-                <img
-                  src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/10/07223911/custom-safari-service-900x701.jpg"
-                  alt="Micato Safari Service"
-                  className="KenSafari-compare-img"
-                />
-              </div>
               <div className="KenSafari-compare-badge-wrap">
                 <span className="KenSafari-compare-badge">
                   Our Primary Recommendation
                 </span>
               </div>
               <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-icon-header">
+                  <Award size={42} strokeWidth={1} />
+                </div>
                 <div className="KenSafari-compare-header">
                   <h3 className="KenSafari-compare-title">Micato Safaris</h3>
                   <div className="KenSafari-compare-divider" />
@@ -1082,8 +1104,8 @@ const KenyaSafariMicato = () => {
                 <div className="KenSafari-compare-body">
                   <div className="KenSafari-compare-highlight">
                     <Check
-                      size={18}
-                      strokeWidth={2.5}
+                      size={20}
+                      strokeWidth={3}
                       className="KenSafari-compare-check"
                     />
                     <p className="KenSafari-compare-desc">
@@ -1092,8 +1114,8 @@ const KenyaSafariMicato = () => {
                   </div>
                   <div className="KenSafari-compare-highlight">
                     <Check
-                      size={18}
-                      strokeWidth={2.5}
+                      size={20}
+                      strokeWidth={3}
                       className="KenSafari-compare-check"
                     />
                     <p className="KenSafari-compare-desc">
@@ -1107,14 +1129,10 @@ const KenyaSafariMicato = () => {
 
             {/* Abercrombie & Kent */}
             <div className="KenSafari-compare-card">
-              <div className="KenSafari-compare-image-wrap">
-                <img
-                  src="https://storage.googleapis.com/stateless-www-live-traveldailymedia/2025/08/acbe2d97-ak_campaign_01-1500x780-1.jpg"
-                  alt="Abercrombie & Kent Safari"
-                  className="KenSafari-compare-img"
-                />
-              </div>
               <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-icon-header">
+                  <Globe size={42} strokeWidth={1} />
+                </div>
                 <div className="KenSafari-compare-header">
                   <h3 className="KenSafari-compare-title">
                     Abercrombie & Kent
@@ -1131,14 +1149,10 @@ const KenyaSafariMicato = () => {
 
             {/* &Beyond */}
             <div className="KenSafari-compare-card">
-              <div className="KenSafari-compare-image-wrap">
-                <img
-                  src="https://www.andbeyond.com/wp-content/uploads/sites/5/Kenya-Suyian-Lodge-Aerial-View-1_Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg"
-                  alt="&Beyond Safari"
-                  className="KenSafari-compare-img"
-                />
-              </div>
               <div className="KenSafari-compare-card-content">
+                <div className="KenSafari-compare-icon-header">
+                  <Shield size={42} strokeWidth={1} />
+                </div>
                 <div className="KenSafari-compare-header">
                   <h3 className="KenSafari-compare-title">&Beyond</h3>
                   <div className="KenSafari-compare-divider" />

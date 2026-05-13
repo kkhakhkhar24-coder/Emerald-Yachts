@@ -418,14 +418,8 @@ export default function KenyaVsTanzaniaSafari() {
             className="kvts-hero-toggle"
             onClick={() => setShowContent(!showContent)}
           >
-            <span className="kvts-flex-center">
-              {showContent ? (
-                <Minus size={14} style={{ marginRight: "6px" }} />
-              ) : (
-                <Plus size={14} style={{ marginRight: "6px" }} />
-              )}
-              {showContent ? "Read Less" : "Read More"}
-            </span>
+            {showContent ? "Read Less" : "Read More"}
+            {showContent ? <Minus size={16} /> : <Plus size={16} />}
           </button>
 
           <div className="kvts-hero-btns">

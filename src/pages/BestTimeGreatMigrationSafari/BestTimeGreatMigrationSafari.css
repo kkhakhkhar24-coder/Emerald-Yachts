@@ -304,17 +304,26 @@
 
 .btgms-hero-toggle {
   background: transparent;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
-  font-size: 11px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 4px;
+  transition: all 0.3s ease;
   margin-bottom: 30px;
-  transition: 0.3s ease;
+}
+
+.btgms-hero-toggle:hover {
+  background: #ffffff;
+  color: var(--navy);
+  border-color: #ffffff;
 }
 
 @keyframes btgms-fadeInUp {
@@ -2628,14 +2637,14 @@
     font-size: 26px;
   }
   .btgms-h2,
-  .btgms-hero-cta-title {
+  .btgms-hero-cta-title, .btgms-final-title {
     font-size: 24px !important;
   }
   .btgms-hero-cta-subtext,
   .btgms-def-text .btgms-p-display,
   .btgms-about-body .btgms-p,
   .btgms-about-subtitle,
-  .btgms-faq-question, .btgms-p-small {
+  .btgms-faq-question, .btgms-p-small, .btgms-final-text {
     font-size: 16px !important;
   }
   .btgms-hero-cta-box {
@@ -2644,6 +2653,9 @@
   .btgms-recognition-compact {
     padding: 20px;
   }
+      .btgms-btn-luxury {
+        padding: 12px 30px;
+      }
   .btgms-seen-bento,
   .btgms-trust-cards,
   .btgms-where-cards,

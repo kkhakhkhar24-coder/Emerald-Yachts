@@ -510,14 +510,8 @@ export default function BestTimeGreatMigrationSafari() {
               className="btgms-hero-toggle"
               onClick={() => setShowAnswer(!showAnswer)}
             >
-              <span className="btgms-flex-center">
-                {showAnswer ? (
-                  <Minus size={14} style={{ marginRight: "6px" }} />
-                ) : (
-                  <Plus size={14} style={{ marginRight: "6px" }} />
-                )}
-                {showAnswer ? "Read Less" : "Read More"}
-              </span>
+              {showAnswer ? "Read Less" : "Read More"}
+              {showAnswer ? <Minus size={16} /> : <Plus size={16} />}
             </button>
 
             <div className="btgms-hero-btns">
