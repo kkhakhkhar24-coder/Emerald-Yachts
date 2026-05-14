@@ -150,13 +150,11 @@ function JapanTravelCost() {
           >
             {showAnswer ? (
               <span className="jtc-flex-center">
-                <Minus size={14} style={{ marginRight: "5px" }} /> Hide Quick
-                Answer
+                <Minus size={14} style={{ marginRight: "5px" }} /> Read Less
               </span>
             ) : (
               <span className="jtc-flex-center">
-                <Plus size={14} style={{ marginRight: "5px" }} /> View Quick
-                Answer
+                <Plus size={14} style={{ marginRight: "5px" }} /> Read More
               </span>
             )}
           </button>

@@ -50,6 +50,10 @@ import Herobg2 from "../../assets/Japanlandvscruise/Japanlandvscruise2.jpg";
 import Herobg4 from "../../assets/Japanlandvscruise/Japanlandvscruise3.jpg";
 import Japanlandvscruise3 from "../../assets/Japanlandvscruise/angela-hughes-arashiyama-bamboo-forest-kyoto-japan-walking-path.jpg";
 import Herobg3 from "../../assets/Japanlandvscruise/angela-hughes-miyajima-floating-torii-gate-itsukushima-shrine-japan.jpg";
+import JapanLand1 from "../../assets/Japanlandvscruise/angela-hughes-kyoto-gion-geisha-street-pagoda-japan-travel-expert.jpg";
+import JapanLand2 from "../../assets/Japanlandvscruise/Nighttokyo.webp";
+import JapanLand3 from "../../assets/Japanlandvscruise/Neighborhoods.webp";
+import LandTravel from "../../assets/Japanlandvscruise/Ftjapan3.webp";
 
 /* ===== INLINE FAQ ACCORDION (BEST TIME JAPAN STYLE) ===== */
 const BTJapanFAQ = ({ items }) => {
@@ -766,6 +770,25 @@ const Japanlandvscruise = () => {
         </div>
       </section>
 
+      {/* Video Breakdown Section */}
+      <section className="japan-section japan-bg-white">
+        <div className="japan-inner">
+          <div className="jlc-video-gallery-grid">
+            <div className="jlc-video-card">
+              <div className="jlc-video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/aEdW_QVjA0o"
+                  title="Japan Travel Experience 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Cost Comparison Section - Improved Grid UI */}
       <section className="japan-section japan-bg-white">
         <div className="japan-inner">
@@ -881,42 +904,48 @@ const Japanlandvscruise = () => {
           </p>
           <div className="jlc-cruises-miss-grid">
             <div className="jlc-miss-card">
-              <div className="jlc-miss-icon-wrap">
-                <Moon size={28} />
+              <div className="jlc-miss-image-wrap">
+                <img src={JapanLand2} alt="Nighttime Tokyo" />
               </div>
-              <div className="jlc-miss-content">
-                <h4 className="jlc-miss-title">Nighttime Tokyo</h4>
-                <p className="japan-section-p jlc-m-0">
-                  At night in Tokyo, the city truly comes alive — neon-lit
-                  alleys, izakayas, late-night ramen counters. Cruise ports
-                  close before the magic starts.
-                </p>
-              </div>
-            </div>
-            <div className="jlc-miss-card">
-              <div className="jlc-miss-icon-wrap">
-                <Sun size={28} />
-              </div>
-              <div className="jlc-miss-content">
-                <h4 className="jlc-miss-title">Early Morning Kyoto</h4>
-                <p className="japan-section-p jlc-m-0">
-                  Early morning in Kyoto before crowds arrive — temples in
-                  silence, mist over the gardens — is only accessible from a
-                  land base.
-                </p>
+              <div className="jlc-miss-card-body">
+                <div className="jlc-miss-content">
+                  <h4 className="jlc-miss-title">Nighttime Tokyo</h4>
+                  <p className="japan-section-p jlc-m-0">
+                    At night in Tokyo, the city truly comes alive — neon-lit
+                    alleys, izakayas, late-night ramen counters. Cruise ports
+                    close before the magic starts.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="jlc-miss-card">
-              <div className="jlc-miss-icon-wrap">
-                <MapPin size={28} />
+              <div className="jlc-miss-image-wrap">
+                <img src={JapanLand1} alt="Early Morning Kyoto" />
               </div>
-              <div className="jlc-miss-content">
-                <h4 className="jlc-miss-title">Hidden Neighborhoods</h4>
-                <p className="japan-section-p jlc-m-0">
-                  In neighborhoods far from cruise ports, real daily life
-                  unfolds — covered shotengai, local cafes, and moments that
-                  never appear in guides.
-                </p>
+              <div className="jlc-miss-card-body">
+                <div className="jlc-miss-content">
+                  <h4 className="jlc-miss-title">Early Morning Kyoto</h4>
+                  <p className="japan-section-p jlc-m-0">
+                    Early morning in Kyoto before crowds arrive — temples in
+                    silence, mist over the gardens — is only accessible from a
+                    land base.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="jlc-miss-card">
+              <div className="jlc-miss-image-wrap">
+                <img src={JapanLand3} alt="Hidden Neighborhoods" />
+              </div>
+              <div className="jlc-miss-card-body">
+                <div className="jlc-miss-content">
+                  <h4 className="jlc-miss-title">Hidden Neighborhoods</h4>
+                  <p className="japan-section-p jlc-m-0">
+                    In neighborhoods far from cruise ports, real daily life
+                    unfolds — covered shotengai, local cafes, and moments that
+                    never appear in guides.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="jlc-miss-highlight">
@@ -1054,19 +1083,28 @@ const Japanlandvscruise = () => {
       </section>
 
       {/* Why Land Travel Wins */}
-      <section className="japan-section japan-bg-navy jlc-text-center">
-        <div className="japan-inner-narrow">
-          <h2 className="japan-h2 jlc-text-white">
-            Why Land Travel Usually Wins in Japan
-          </h2>
-          <p className="japan-section-p jlc-wins-p">
-            Japan is designed for land travel. Its trains, neighborhoods, and
-            pacing are meant to be experienced on the ground.
-          </p>
-          <div className="jlc-wins-box">
-            <h3 className="jlc-wins-h3">
-              Cruises show you Japan. Land travel lets you experience it.
-            </h3>
+      <section className="japan-section japan-bg-navy">
+        <div className="japan-inner">
+          <div className="jlc-wins-flex">
+            <div className="jlc-wins-content">
+              <h2 className="japan-h2 jlc-text-white">
+                Why Land Travel Usually Wins in Japan
+              </h2>
+              <p className="japan-section-p jlc-wins-p">
+                Japan is designed for land travel. Its trains, neighborhoods, and
+                pacing are meant to be experienced on the ground.
+              </p>
+              <div className="jlc-wins-box">
+                <h3 className="jlc-wins-h3">
+                  Cruises show you Japan. Land travel lets you experience it.
+                </h3>
+              </div>
+            </div>
+            <div className="jlc-wins-image-container">
+              <div className="jlc-wins-image-wrapper">
+                <img src={LandTravel} alt="Land Travel in Japan" className="jlc-wins-image" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1134,17 +1172,6 @@ const Japanlandvscruise = () => {
                 <iframe
                   src="https://www.youtube.com/embed/-UYTjU6ZoK4"
                   title="Japan Travel Experience 1"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="jlc-video-card">
-              <div className="jlc-video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/aEdW_QVjA0o"
-                  title="Japan Travel Experience 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

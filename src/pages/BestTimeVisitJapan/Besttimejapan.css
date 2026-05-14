@@ -287,24 +287,41 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  position: relative;
+  padding: 40px;
 }
+
+
 
 .BTJapan_expert_image_wrapper {
   max-width: 500px;
   width: 100%;
-  border-radius: 24px;
-  overflow: hidden;
+  border-radius: 30px;
+  overflow: hidden; 
   background: var(--btjapan-white);
-  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.1);
-  border: 1px solid rgba(39, 68, 114, 0.05);
+  box-shadow: 0 30px 60px rgba(39, 68, 114, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.BTJapan_expert_image_wrapper:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 45px 90px rgba(39, 68, 114, 0.2);
 }
 
 .BTJapan_expert_image {
   width: 100%;
-  height: auto;
+  height: 550px;
   display: block;
   object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.BTJapan_expert_image_wrapper:hover .BTJapan_expert_image {
+  transform: scale(1.05);
 }
 
 .BTJapan_cta_primary_btn {
@@ -1667,10 +1684,10 @@
 
 /* ================= INSIGHTS SECTION ================= */
 .BTJapan_insights_section {
-  background: radial-gradient(circle at center, #274472 0%, #1a2e4a 100%);
+  background: var(--btjapan-white);
   padding: 60px 20px;
   text-align: center;
-  color: var(--btjapan-white);
+  color: var(--btjapan-navy);
   position: relative;
   overflow: hidden;
 }
@@ -1682,7 +1699,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6zM36 4V0h-2v4h-4v2h4v4h2V6h4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23274472' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6zM36 4V0h-2v4h-4v2h4v4h2V6h4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   z-index: 1;
 }
 
@@ -1694,27 +1711,78 @@
 }
 
 .BTJapan_insights_header {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .BTJapan_insights_header h2 {
   font-size: 48px;
   font-weight: 500;
-  color: var(--btjapan-white);
+  color: var(--btjapan-navy);
   margin-bottom: 20px;
   line-height: 1.1;
   letter-spacing: -0.5px;
 }
 
+.BTJapan_insights_main_flex {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.BTJapan_insights_left_content {
+  flex: 1.2;
+}
+
+.BTJapan_insights_right_image {
+  flex: 0.8;
+  position: relative;
+}
+
+.BTJapan_insight_image_wrapper {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  transition: all 0.5s ease;
+  background: var(--btjapan-white);
+}
+
+.BTJapan_insight_image_wrapper:hover {
+  transform: translateY(-10px);
+  border-color: var(--btjapan-navy);
+}
+
+.BTJapan_insight_img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.BTJapan_insights_right_image::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background: var(--btjapan-bg-teal);
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(40px);
+  z-index: -1;
+}
+
 .BTJapan_insights_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .BTJapan_insight_card {
   background: transparent;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(39, 68, 114, 0.1);
   padding: 30px 40px;
   text-align: left;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1725,9 +1793,9 @@
 }
 
 .BTJapan_insight_card:hover {
-  border-left-color: var(--btjapan-white);
-  transform: translateX(10px);
-  background: rgba(255, 255, 255, 0.03);
+  border-left-color: var(--btjapan-navy);
+  transform: translateX(15px);
+  background: var(--btjapan-bg-light);
 }
 
 .BTJapan_insight_card p {
@@ -1735,7 +1803,7 @@
   font-style: italic;
   font-size: 1.4rem;
   line-height: 1.6;
-  color: var(--btjapan-white);
+  color: var(--btjapan-navy);
   opacity: 0.9;
   font-weight: 400;
   margin: 0;
@@ -1743,7 +1811,7 @@
 
 .BTJapan_insight_card--highlight {
   border-left-width: 3px;
-  border-left-color: rgba(255, 255, 255, 0.6);
+  border-left-color: var(--btjapan-navy);
 }
 
 .BTJapan_insight_card--highlight p {
@@ -1759,13 +1827,13 @@
   left: 40px;
   width: 40px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(39, 68, 114, 0.1);
   transition: width 0.3s ease;
 }
 
 .BTJapan_insight_card:hover::after {
   width: 100px;
-  background: var(--btjapan-white);
+  background: var(--btjapan-navy);
 }
 
 /* ================= QUOTE SECTION ================= */
@@ -2468,8 +2536,18 @@
 @media (max-width: 1024px) {
   .BTJapan_expert_flex {
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
     text-align: center;
+  }
+  .BTJapan_expert_image_container {
+    padding: 20px;
+    order: -1; /* Image on top for mobile */
+  }
+  .BTJapan_expert_image_container::before {
+    transform: translate(15px, -15px);
+  }
+  .BTJapan_expert_image {
+    height: 450px;
   }
   .BTJapan_cost_layout {
     grid-template-columns: 1fr;
@@ -2487,6 +2565,20 @@
   }
   .BTJapan_cost_cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .BTJapan_insights_main_flex {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  .BTJapan_insights_header {
+    text-align: center;
+  }
+  .BTJapan_insight_image_wrapper {
+    transform: rotate(0deg);
+  }
+  .BTJapan_insight_img {
+    height: 450px;
   }
 }
 
@@ -2627,12 +2719,15 @@
     padding: 40px 25px;
     text-align: center;
     border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+  }
+  .BTJapan_insight_img {
+    height: 350px;
   }
 
   .BTJapan_insight_card:hover {
     transform: translateY(-5px);
-    border-top-color: var(--btjapan-white);
+    border-top-color: var(--btjapan-navy);
   }
 
   .BTJapan_insight_card::after {

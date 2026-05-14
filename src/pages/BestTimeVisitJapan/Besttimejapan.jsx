@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import "./Besttimejapan.css";
 import myimage from "../../assets/image.webp";
+import AngelaJapan from "../../assets/BestTimeJapan/AngelaJapan.jpg";
 import BTJimage1 from "../../assets/BestTimeJapan/angela-hughes-himeji-castle-sakura-japan-luxury-travel-itinerary.jpg";
 import BTJimage2 from "../../assets/BestTimeJapan/BTJimage2.webp";
 import BTJimage3 from "../../assets/BestTimeJapan/BTJimage3.webp";
@@ -946,29 +947,43 @@ const BestTimeJapan = () => {
       {/* ===== CLIENT INSIGHTS GRID ===== */}
       <section className="BTJapan_insights_section">
         <div className="BTJapan_insights_inner">
-          <div className="BTJapan_insights_header">
-            <span className="BTJapan_section_badge">Expert Perspective</span>
-            <h2>My Personal Take After Living in Japan</h2>
-          </div>
+          <div className="BTJapan_insights_main_flex">
+            <div className="BTJapan_insights_left_content">
+              <div className="BTJapan_insights_header">
+                <span className="BTJapan_section_badge">Expert Perspective</span>
+                <h2>My Personal Take After Living in Japan</h2>
+              </div>
 
-          <div className="BTJapan_insights_grid">
-            <div className="BTJapan_insight_card">
-              <p>
-                If I had to choose, it would not be peak cherry blossom season.
-                It would be May or October.
-              </p>
+              <div className="BTJapan_insights_grid">
+                <div className="BTJapan_insight_card">
+                  <p>
+                    If I had to choose, it would not be peak cherry blossom season.
+                    It would be May or October.
+                  </p>
+                </div>
+                <div className="BTJapan_insight_card">
+                  <p>
+                    You still get beauty, but you gain something more important:
+                    access, ease, and flow.
+                  </p>
+                </div>
+                <div className="BTJapan_insight_card BTJapan_insight_card--highlight">
+                  <p>
+                    Japan is not just about what you see. It is about how you
+                    experience it.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="BTJapan_insight_card">
-              <p>
-                You still get beauty, but you gain something more important:
-                access, ease, and flow.
-              </p>
-            </div>
-            <div className="BTJapan_insight_card BTJapan_insight_card--highlight">
-              <p>
-                Japan is not just about what you see. It is about how you
-                experience it.
-              </p>
+
+            <div className="BTJapan_insights_right_image">
+              <div className="BTJapan_insight_image_wrapper">
+                <img
+                  src={AngelaJapan}
+                  alt="Angela Hughes - Japan Travel Expert"
+                  className="BTJapan_insight_img"
+                />
+              </div>
             </div>
           </div>
         </div>

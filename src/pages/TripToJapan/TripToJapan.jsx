@@ -12,6 +12,7 @@ import bestTime from "../../assets/TripToJapan/angela-hughes-himeji-castle-cherr
 import buildItinerary from "../../assets/TripToJapan/Build_Itinerary.webp";
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function TripToJapan() {
     const [currentHero, setCurrentHero] = useState(0);
@@ -80,7 +81,7 @@ function TripToJapan() {
                             if (d) d.classList.toggle("jpn-expanded");
                         }}
                     >
-                        View Quick Answer
+                        Read More
                     </button>
 
                     <div className="jpn-hero-btns">
@@ -943,7 +944,7 @@ function TripToJapan() {
                     </div>
 
                     <div className="jpn-where-start-grid">
-                        <a href="#" className="jpn-where-start-card">
+                        <Link to="/best-time-to-visit-japan" className="jpn-where-start-card">
                             <div className="jpn-where-start-card-accent"></div>
                             <div className="jpn-where-start-card-icon">
                                 <Calendar size={28} strokeWidth={1.5} />
@@ -953,8 +954,8 @@ function TripToJapan() {
                             <div className="jpn-where-start-card-arrow">
                                 <ArrowRight size={18} strokeWidth={2} />
                             </div>
-                        </a>
-                        <a href="#" className="jpn-where-start-card">
+                        </Link>
+                        <Link to="/japan-travel-cost" className="jpn-where-start-card">
                             <div className="jpn-where-start-card-accent"></div>
                             <div className="jpn-where-start-card-icon">
                                 <DollarSign size={28} strokeWidth={1.5} />
@@ -964,8 +965,8 @@ function TripToJapan() {
                             <div className="jpn-where-start-card-arrow">
                                 <ArrowRight size={18} strokeWidth={2} />
                             </div>
-                        </a>
-                        <a href="#" className="jpn-where-start-card">
+                        </Link>
+                        <Link to="/japan-land-vs-cruise" className="jpn-where-start-card">
                             <div className="jpn-where-start-card-accent"></div>
                             <div className="jpn-where-start-card-icon">
                                 <Compass size={28} strokeWidth={1.5} />
@@ -975,8 +976,8 @@ function TripToJapan() {
                             <div className="jpn-where-start-card-arrow">
                                 <ArrowRight size={18} strokeWidth={2} />
                             </div>
-                        </a>
-                        <a href="#" className="jpn-where-start-card">
+                        </Link>
+                        <Link to="/first-time-japan-itinerary" className="jpn-where-start-card">
                             <div className="jpn-where-start-card-accent"></div>
                             <div className="jpn-where-start-card-icon">
                                 <MapPin size={28} strokeWidth={1.5} />
@@ -986,7 +987,7 @@ function TripToJapan() {
                             <div className="jpn-where-start-card-arrow">
                                 <ArrowRight size={18} strokeWidth={2} />
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

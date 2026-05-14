@@ -10,6 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import LuxuryTravel from "./pages/LuxuryTravel/LuxuryTravel";
 import ScenicVSFourSeasonsYachts from "./pages/ScenicVSFourSeasonsYachts/ScenicVSFourSeasonsYachts";
 import EmeraldVsRitzCarltonPage from "./pages/EmeraldVSRitzCarltonYacht/Emeraldvsritzcarlton";
@@ -43,6 +44,7 @@ function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<OrientExpress />}></Route>
           <Route path="/emerald-yachts" element={<EmeraldYachts />}></Route>
