@@ -94,6 +94,196 @@ function JapanTravelCost() {
         />
         {/* Preload first hero image for better performance */}
         <link rel="preload" as="image" href={heroImages[0]} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.tripsandships.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png",
+                "sameAs": [
+                  "https://www.instagram.com/tripsandships",
+                  "https://www.linkedin.com/company/trips-and-ships-luxury-travel"
+                ]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO and Luxury Travel Advisor",
+                "worksFor": {
+                  "@id": "https://www.tripsandships.com/#organization"
+                },
+                "url": "https://www.luxurytraveluniversity.com",
+                "sameAs": [
+                  "https://www.linkedin.com",
+                  "https://www.instagram.com/tripsandships"
+                ],
+                "description": "Angela Hughes is a luxury travel expert with over 40 years of experience and CEO of Trips & Ships Luxury Travel. She lived in Japan and specializes in designing custom Japan itineraries."
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/japan-travel-cost-guide",
+                "url": "https://www.tripsandships.com/japan-travel-cost-guide",
+                "name": "Japan Travel Cost Guide (2026)",
+                "isPartOf": {
+                  "@id": "https://www.tripsandships.com/#website"
+                },
+                "about": {
+                  "@id": "https://www.tripsandships.com/#angela-hughes"
+                },
+                "primaryImageOfPage": {
+                  "@type": "ImageObject",
+                  "url": "https://www.tripsandships.com/japan.jpg"
+                },
+                "datePublished": "2026-04-18",
+                "dateModified": "2026-04-18",
+                "breadcrumb": {
+                  "@id": "https://www.tripsandships.com/japan-travel-cost-guide#breadcrumb"
+                }
+              },
+              {
+                "@type": "Article",
+                "@id": "https://www.tripsandships.com/japan-travel-cost-guide#article",
+                "headline": "Japan Travel Cost Guide (2026): How Much Does a Trip to Japan Really Cost?",
+                "author": {
+                  "@id": "https://www.tripsandships.com/#angela-hughes"
+                },
+                "publisher": {
+                  "@id": "https://www.tripsandships.com/#organization"
+                },
+                "datePublished": "2026-04-18",
+                "dateModified": "2026-04-18",
+                "mainEntityOfPage": {
+                  "@id": "https://www.tripsandships.com/japan-travel-cost-guide"
+                },
+                "articleSection": "Travel Cost Guide",
+                "keywords": [
+                  "Japan travel cost",
+                  "cost of trip to Japan",
+                  "Japan travel budget",
+                  "how much does Japan cost",
+                  "Japan trip price breakdown",
+                  "Japan travel pricing guide",
+                  "Japan vacation cost per person"
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.tripsandships.com/japan-travel-cost-guide#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.tripsandships.com"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Japan Travel",
+                    "item": "https://www.tripsandships.com/luxury-japan-travel"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Japan Travel Cost Guide",
+                    "item": "https://www.tripsandships.com/japan-travel-cost-guide"
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://www.tripsandships.com/japan-travel-cost-guide#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How much does a trip to Japan cost?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Most travelers spend between $6,000 and $10,000 per person for a well-planned 10 to 14 day trip to Japan."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is Japan expensive to visit?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Japan can be moderately expensive, but it offers strong value due to high service quality, safety, and efficient infrastructure."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the cheapest time to visit Japan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "January, February, and early June are typically the cheapest times to visit Japan due to lower demand."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How much should I budget for 10 days in Japan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A comfortable 10 day trip to Japan typically costs between $5,000 and $8,000 per person."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the most expensive part of a Japan trip?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Hotels and flights are usually the most expensive parts of a trip to Japan."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are trains expensive in Japan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Trains in Japan can be expensive, but they are fast, efficient, and reliable."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is food expensive in Japan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Food in Japan ranges from very affordable to high-end, with excellent value at all levels."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How far in advance should I book a Japan trip?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "It is recommended to book a Japan trip 6 to 12 months in advance, especially for peak seasons."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is Japan cheaper than Europe?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Japan can be similar or slightly cheaper than Europe when planned strategically."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do I need a travel advisor for Japan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A travel advisor is highly recommended for Japan due to the complexity of planning transportation, timing, and experiences."
+                    }
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Navbar />
