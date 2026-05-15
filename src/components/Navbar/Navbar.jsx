@@ -254,6 +254,15 @@ const Navbar = () => {
               >
                 Best African Safari for First-Timers
               </NavLink>
+
+                <NavLink
+                to="/best-country-for-luxury-safari-in-africa/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Safari in Africa</NavLink>
+
+                
             </div>
           </div>
         </div>
