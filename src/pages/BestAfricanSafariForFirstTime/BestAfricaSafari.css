@@ -1,0 +1,1862 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Best African Safari for First Timers — Bafs Styles
+   All class names prefixed with Bafs-
+   ═══════════════════════════════════════════════════════════════════ */
+:root {
+  --section-max: 1200px;
+}
+/* ── Page Wrapper ─────────────────────────────────────────────── */
+.Bafs-page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.Bafs-container {
+  max-width: var(--section-max);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.Bafs-section {
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Backgrounds ──────────────────────────────────────────────── */
+.Bafs-bg-white {
+  background: var(--bg-white);
+}
+.Bafs-bg-soft {
+  background: var(--bg-soft);
+}
+.Bafs-bg-dark {
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+.Bafs-bg-dark2 {
+  background: var(--bg-dark2);
+}
+
+/* ── Shared Typography & Utilities ──────────────────────────────── */
+.Bafs-section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.Bafs-h2 {
+  font-weight: 500 !important;
+  color: var(--navy) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  font-size: 48px;
+}
+
+.Bafs-h2-white {
+  font-weight: 500 !important;
+  color: var(--bg-white) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  font-size: 48px;
+}
+
+.Bafs-accent-line {
+  width: 60px;
+  height: 3px;
+  background: var(--navy);
+  margin: 18px auto 0;
+  border-radius: 2px;
+}
+
+.Bafs-accent-line-white {
+  width: 60px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 18px auto 0;
+  border-radius: 2px;
+}
+
+.Bafs-body-text {
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.75 !important;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.Bafs-body-text-white {
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.75 !important;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ── Animations ───────────────────────────────────────────────── */
+@keyframes Bafs-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Bafs-ken-burns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes Bafs-particles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(5deg);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px 100px;
+  overflow: hidden;
+}
+
+.Bafs-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition:
+    opacity 2s ease-in-out,
+    transform 8s linear;
+  z-index: 0;
+  will-change: opacity, transform;
+  transform: scale(1.1);
+}
+
+.Bafs-hero-bg.active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.Bafs-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.84) 0%,
+    rgba(0, 0, 0, 0.62) 40%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
+  z-index: 2;
+}
+
+.Bafs-hero-section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 50px 50px;
+  animation: Bafs-particles 60s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.Bafs-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 860px;
+  text-align: center;
+  color: var(--bg-white);
+  animation: Bafs-fade-up 1s ease-out;
+  padding: 0 16px;
+}
+
+.Bafs-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 7px 18px;
+  border-radius: 100px;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.Bafs-hero-h1 {
+  font-size: 60px !important;
+  font-weight: 500 !important;
+  color: var(--bg-white) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px 0;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  animation: Bafs-fade-up 1s ease-out 0.2s both;
+}
+
+.Bafs-hero-sub {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.7 !important;
+  max-width: 760px;
+  margin: 0 auto 24px;
+  animation: Bafs-fade-up 1s ease-out 0.4s both;
+}
+
+.Bafs-hero-statement {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: var(--bg-white) !important;
+  font-style: italic;
+  margin: 0 0 36px 0;
+  opacity: 0.9;
+}
+
+.Bafs-read-more-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--bg-white);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 100px;
+  margin: 0 auto 32px;
+  backdrop-filter: blur(8px);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.Bafs-read-more-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Bafs-hero-expanded-content {
+  animation: Bafs-fade-up 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.Bafs-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-white);
+  color: var(--navy);
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 18px 40px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}
+
+.Bafs-hero-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  background: #f0f6ff;
+}
+
+.Bafs-hero-cta-note {
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-style: italic;
+  margin: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BENEFITS GRID
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.Bafs-benefit-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(39, 68, 114, 0.07);
+  box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.Bafs-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
+  border-color: rgba(39, 68, 114, 0.15);
+}
+
+.Bafs-benefit-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(39, 68, 114, 0.06);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.Bafs-benefit-text {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--navy) !important;
+  line-height: 1.4 !important;
+  margin: 0;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DESTINATION CARDS
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-destination-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.Bafs-destination-card {
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  box-shadow: 0 8px 40px rgba(39, 68, 114, 0.07);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.Bafs-destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(39, 68, 114, 0.13);
+}
+
+.Bafs-destination-img {
+  position: relative;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px;
+}
+
+.Bafs-destination-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.1) 60%
+  );
+}
+
+.Bafs-destination-name {
+  position: relative;
+  z-index: 1;
+  color: var(--bg-white);
+  font-size: 34px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.Bafs-destination-body {
+  padding: 32px;
+}
+
+.Bafs-destination-desc {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.75 !important;
+  margin: 0 0 24px 0;
+}
+
+.Bafs-destination-ideal {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: var(--navy) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+}
+
+.Bafs-destination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Bafs-destination-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px !important;
+  color: var(--navy) !important;
+  font-weight: 400 !important;
+}
+
+.Bafs-list-check {
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+/* ── Comparison Table ── */
+.Bafs-table-wrap {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.Bafs-table-container {
+  overflow-x: auto;
+  border-radius: 32px;
+  box-shadow: 0 30px 70px rgba(39, 68, 114, 0.1);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  background: var(--bg-white);
+}
+
+.Bafs-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-white);
+  min-width: 800px;
+}
+
+.Bafs-th {
+  padding: 32px 40px;
+  text-align: left;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--navy);
+}
+
+.Bafs-th-feature {
+  background: var(--bg-dark2);
+  color: var(--bg-white) !important;
+  width: 30%;
+}
+
+.Bafs-th-kenya,
+.Bafs-th-tanzania {
+  background: var(--navy);
+  text-align: center;
+  border-left: 1px solid var(--navy-border);
+  color: #fff;
+}
+
+.Bafs-td {
+  padding: 24px 40px;
+  font-size: 16px !important;
+  color: var(--navy) !important;
+  font-weight: 400 !important;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+  transition: all 0.2s ease;
+}
+
+.Bafs-td-feature {
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  background: rgba(39, 68, 114, 0.015);
+  border-right: 1px solid rgba(39, 68, 114, 0.05);
+}
+.Bafs-td:not(.Bafs-td-feature) {
+  text-align: center;
+  border-left: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.Bafs-compare-table tr:hover .Bafs-td {
+  background-color: rgba(231, 243, 245, 0.4);
+}
+
+.Bafs-compare-table tr:last-child .Bafs-td {
+  border-bottom: none;
+}
+
+.Bafs-tr-even {
+  background: var(--bg-white);
+}
+
+.Bafs-tr-odd {
+  background: #fcfdfe;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   WILDLIFE SECTION
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── Wildlife Section ── */
+.Bafs-wildlife-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.Bafs-wildlife-col {
+  background: var(--bg-white);
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--navy-border);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05);
+}
+
+.Bafs-wildlife-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.1);
+  border-color: var(--navy);
+}
+
+.Bafs-wildlife-card-img {
+  height: 280px;
+  background-size: cover;
+  background-position: center 20%;
+  position: relative;
+}
+
+.Bafs-wildlife-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(15, 28, 46, 0.2));
+}
+
+.Bafs-wildlife-card-body {
+  padding: 32px;
+  flex-grow: 1;
+}
+
+.Bafs-wildlife-col-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy) !important;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Bafs-wildlife-col-title::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background: rgba(39, 68, 114, 0.1);
+}
+
+.Bafs-wildlife-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Bafs-wildlife-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--navy);
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  opacity: 0.85;
+}
+
+.Bafs-wildlife-icon {
+  color: var(--navy); /* A sophisticated gold/tan for wildlife icons */
+  flex-shrink: 0;
+}
+
+.Bafs-wildlife-quote-card {
+  background: var(--bg-dark2);
+  border-radius: 32px;
+  padding: 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(28, 47, 74, 0.15);
+}
+
+.Bafs-wildlife-quote-icon {
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 28px;
+}
+
+.Bafs-wildlife-quote-text {
+  font-size: 19px !important;
+  font-weight: 300 !important;
+  color: var(--bg-white) !important;
+  line-height: 1.8 !important;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PRICING & COSTS
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-factors-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+  max-width: 860px;
+  margin: 32px auto 0;
+}
+
+.Bafs-factor-tag {
+  background: var(--bg-white);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: var(--navy) !important;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 4px 12px rgba(39, 68, 114, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.Bafs-factor-tag:hover {
+  border-color: var(--bg-white);
+  transform: translateY(-2px);
+}
+
+.Bafs-factor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--navy);
+  border-radius: 50%;
+}
+
+.Bafs-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  align-items: stretch; /* Ensure cards are same height */
+}
+
+.Bafs-pricing-card {
+  background: var(--bg-white);
+  border-radius: 32px;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 10px 40px rgba(39, 68, 114, 0.05);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.Bafs-pricing-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 70px rgba(39, 68, 114, 0.12);
+}
+
+.Bafs-pricing-card-inner {
+  padding: 56px 40px;
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Bafs-pricing-featured {
+  background: var(
+    --bg-dark2
+  ); /* Slightly lighter/richer than pure var(--navy) */
+  border-color: var(--bg-dark2);
+  transform: scale(1.04);
+  z-index: 2;
+  box-shadow: 0 40px 100px rgba(28, 47, 74, 0.25);
+}
+
+.Bafs-pricing-featured:hover {
+  transform: scale(1.04) translateY(-12px);
+}
+
+.Bafs-pricing-featured .Bafs-pricing-tier {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.Bafs-pricing-featured .Bafs-pricing-amount {
+  color: var(--bg-white) !important;
+}
+
+.Bafs-pricing-featured .Bafs-pricing-per {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.Bafs-pricing-featured .Bafs-pricing-divider {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.Bafs-pricing-featured .Bafs-pricing-desc {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.Bafs-pricing-featured .Bafs-pricing-icon {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: var(--bg-white) !important;
+}
+
+.Bafs-pricing-badge {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-dark);
+  color: var(--bg-white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.Bafs-pricing-icon {
+  width: 64px;
+  height: 64px;
+  background: #f8fafc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.Bafs-pricing-tier {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: rgba(39, 68, 114, 0.6) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 12px 0;
+}
+
+.Bafs-pricing-amount {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  color: var(--navy) !important;
+  letter-spacing: -0.01em;
+  line-height: 1.1 !important;
+  margin: 0;
+}
+
+.Bafs-pricing-per {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: rgba(39, 68, 114, 0.5) !important;
+  margin: 12px 0 0 0;
+}
+
+.Bafs-pricing-divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(39, 68, 114, 0.08);
+  margin: 32px 0;
+}
+
+.Bafs-pricing-desc {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.8 !important;
+  margin: 0;
+  opacity: 0.85;
+  text-align: left; /* Editorial alignment */
+}
+.Bafs-pricing-card-glow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Cost Note */
+.Bafs-cost-note {
+  background: var(--bg-white);
+  border-radius: 24px;
+  padding: 48px;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  box-shadow: 0 4px 24px rgba(39, 68, 114, 0.05);
+  text-align: center;
+}
+
+.Bafs-cost-note-title {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  margin: 0 0 20px 0;
+}
+
+.Bafs-cost-note-text {
+  font-size: 17px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.75 !important;
+  margin: 0;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   WHY SO EXPENSIVE
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-expensive-split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.Bafs-expensive-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Bafs-expensive-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+  margin: 32px 0 40px;
+  padding: 32px;
+  background: var(--navy-soft);
+  border-radius: 24px;
+  border: 1px solid var(--navy-border);
+}
+
+.Bafs-expensive-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--navy) !important;
+}
+
+.Bafs-expensive-check {
+  color: var(--bg-dark2);
+  flex-shrink: 0;
+}
+
+.Bafs-expensive-highlight {
+  background: var(--bg-white);
+  padding: 48px;
+  border-radius: 32px;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.Bafs-expensive-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--navy);
+}
+
+.Bafs-expensive-highlight-title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Bafs-expensive-highlight-icon {
+  color: var(--navy);
+}
+
+.Bafs-expensive-highlight-text {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.8 !important;
+  opacity: 0.9;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   VIDEO SECTION
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(39, 68, 114, 0.2);
+  border: 1px solid var(--navy-border);
+  background: #000;
+  animation: Bafs-fade-up 1s ease-out;
+}
+ 
+.Bafs-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+ 
+/* ═══════════════════════════════════════════════════════════════════
+   COMMON MISTAKES
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-mistakes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.Bafs-mistake-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  padding: 36px 28px;
+  backdrop-filter: blur(8px);
+  transition: all 0.35s ease;
+}
+
+.Bafs-mistake-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.Bafs-mistake-number {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.12) !important;
+  line-height: 1 !important;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.Bafs-mistake-title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--bg-white) !important;
+  margin: 0 0 14px 0;
+  line-height: 1.3 !important;
+}
+
+.Bafs-mistake-desc {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  line-height: 1.7 !important;
+  margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HOW MANY DAYS
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-days-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.Bafs-days-recs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.Bafs-days-rec-item {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  background: rgba(39, 68, 114, 0.04);
+  border-radius: 16px;
+  padding: 18px 24px;
+  border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.Bafs-days-rec-label {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: var(--navy) !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.Bafs-days-rec-desc {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: var(--navy) !important;
+  opacity: 0.75;
+}
+
+.Bafs-days-extensions {
+  background: var(--navy);
+  border-radius: 24px;
+  padding: 40px;
+  color: var(--bg-white);
+}
+
+.Bafs-days-ext-title {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--bg-white) !important;
+  margin: 0 0 10px 0;
+}
+
+.Bafs-days-ext-sub {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin: 0 0 24px 0;
+}
+
+.Bafs-days-ext-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.Bafs-days-ext-item:last-of-type {
+  border-bottom: none;
+}
+
+.Bafs-days-ext-icon {
+  color: rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.Bafs-days-ext-note {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-style: italic;
+  margin: 24px 0 0 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   MICATO BENTO
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-micato-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+.Bafs-micato-item {
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.Bafs-micato-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.14);
+}
+
+.Bafs-micato-item-inner {
+  padding: 36px 30px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Bafs-micato-guiding {
+  background: var(--navy);
+  grid-column: 1;
+}
+
+.Bafs-micato-logistics {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 4px 20px var(--navy-soft);
+  grid-column: 2;
+}
+
+.Bafs-micato-itineraries {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 4px 20px var(--navy-soft);
+  grid-column: 3;
+}
+
+.Bafs-micato-personalized {
+  background: rgba(39, 68, 114, 0.05);
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  grid-column: 1;
+}
+
+.Bafs-micato-statement-card {
+  background: #f8f9fc;
+  border: 1px solid rgba(39, 68, 114, 0.07);
+  grid-column: 2 / 4;
+  display: flex;
+  align-items: center;
+}
+
+.Bafs-micato-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-white);
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.Bafs-micato-logistics .Bafs-micato-icon,
+.Bafs-micato-itineraries .Bafs-micato-icon,
+.Bafs-micato-personalized .Bafs-micato-icon {
+  background: rgba(39, 68, 114, 0.07);
+  color: var(--navy);
+}
+
+.Bafs-micato-title {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 0 0 14px 0;
+}
+
+.Bafs-micato-logistics .Bafs-micato-title,
+.Bafs-micato-itineraries .Bafs-micato-title,
+.Bafs-micato-personalized .Bafs-micato-title {
+  color: var(--navy) !important;
+}
+
+.Bafs-micato-text {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.7 !important;
+  margin: 0;
+}
+
+.Bafs-micato-logistics .Bafs-micato-text,
+.Bafs-micato-itineraries .Bafs-micato-text,
+.Bafs-micato-personalized .Bafs-micato-text {
+  color: rgba(39, 68, 114, 0.8) !important;
+}
+
+.Bafs-micato-item-bg {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: rgba(39, 68, 114, 0.03);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* ── Why Micato Split ── */
+.Bafs-micato-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Bafs-micato-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Bafs-micato-body-text {
+  font-size: 17px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.8 !important;
+  margin: 0;
+  text-align: left;
+}
+
+.Bafs-micato-gallery {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bafs-micato-img-card {
+  position: absolute;
+  width: 75%;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(39, 68, 114, 0.15);
+  border: 4px solid var(--bg-white);
+  transition: all 0.5s ease;
+}
+
+.Bafs-micato-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Bafs-micato-img-1 {
+  z-index: 2;
+  transform: translateX(-40px) translateY(-20px);
+}
+
+.Bafs-micato-img-2 {
+  z-index: 1;
+  transform: translateX(40px) translateY(20px) scale(0.95);
+  opacity: 0.8;
+}
+
+.Bafs-micato-gallery:hover .Bafs-micato-img-1 {
+  transform: translateX(-50px) translateY(-30px) rotate(-2deg);
+}
+
+.Bafs-micato-gallery:hover .Bafs-micato-img-2 {
+  transform: translateX(50px) translateY(30px) rotate(2deg) scale(1);
+  opacity: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   ABOUT
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── About Split ── */
+.Bafs-about-split {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.Bafs-about-img-wrap {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.Bafs-about-img {
+  width: 100%;
+  aspect-ratio: 1; /* Square portrait for a more modern look */
+  border-radius: 32px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 40px 100px rgba(39, 68, 114, 0.15);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Bafs-about-img-accent {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid var(--navy-border);
+  border-radius: 32px;
+  z-index: 1;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Bafs-about-img-wrap:hover .Bafs-about-img {
+  transform: translateY(-8px);
+}
+
+.Bafs-about-img-wrap:hover .Bafs-about-img-accent {
+  transform: translate(10px, -10px);
+  border-color: var(--navy);
+}
+
+.Bafs-about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Bafs-about-header {
+  margin-bottom: 32px;
+}
+
+.Bafs-about-eyebrow {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.Bafs-about-text {
+  font-size: 17px !important;
+  font-weight: 300 !important;
+  color: var(--navy) !important;
+  line-height: 1.8 !important;
+  margin: 0 0 24px 0;
+  opacity: 0.9;
+}
+
+.Bafs-about-stats {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Bafs-about-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  background: var(--bg-white);
+  padding: 24px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
+  transition: all 0.3s ease;
+}
+
+.Bafs-about-stat:hover {
+  transform: translateY(-5px);
+  border-color: var(--navy);
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.1);
+}
+
+.Bafs-about-stat-number {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: var(--navy) !important;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.Bafs-about-stat-label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  line-height: 1.4 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SPECIALIST CTA
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-specialist-wrap {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.Bafs-specialist-quote-icon {
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.Bafs-specialist-title {
+  font-size: 38px !important;
+  font-weight: 500 !important;
+  color: var(--bg-white) !important;
+  margin: 0 0 8px 0;
+  line-height: 1.2 !important;
+}
+
+.Bafs-specialist-text {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 1.75 !important;
+  margin: 24px 0 0 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   FAQ
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-faq-intro {
+  font-weight: 300 !important;
+  color: var(--navy);
+  margin-top: 16px !important;
+  text-align: center;
+  font-style: italic;
+}
+
+.Bafs-faq-list {
+  max-width: 860px;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.Bafs-faq-item {
+  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+  background: transparent;
+}
+
+.Bafs-faq-item:hover {
+  background: rgba(231, 243, 245, 0.55);
+}
+
+.Bafs-faq-q {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8px;
+  gap: 18px;
+  font-weight: 500 !important;
+  color: var(--navy) !important;
+  line-height: 1.45 !important;
+}
+
+.Bafs-faq-icon {
+  color: var(--navy);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.Bafs-faq-item.Bafs-open .Bafs-faq-icon {
+  transform: rotate(180deg);
+}
+
+.Bafs-faq-a {
+  padding: 0 8px 22px;
+}
+
+.Bafs-faq-a-inner {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  color: rgba(39, 68, 114, 0.82) !important;
+  font-weight: 300 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   FINAL CTA
+   ═══════════════════════════════════════════════════════════════════ */
+.Bafs-final-cta-section {
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+.Bafs-final-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(3px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 40px;
+  padding: 80px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.Bafs-final-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.Bafs-final-title {
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  color: var(--bg-white) !important;
+  line-height: 1.15 !important;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.01em;
+}
+
+.Bafs-final-divider {
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0 auto 32px;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.Bafs-final-text {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 1.8 !important;
+  margin: 0 0 40px 0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Bafs-final-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 60px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.Bafs-final-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 400 !important;
+}
+
+.Bafs-final-check {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.Bafs-final-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.Bafs-btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-white);
+  color: var(--navy);
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 22px 56px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Bafs-btn-luxury:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background: #f0f6ff;
+}
+
+.Bafs-btn-icon {
+  transition: transform 0.3s ease;
+}
+
+.Bafs-btn-luxury:hover .Bafs-btn-icon {
+  transform: translateX(4px);
+}
+
+.Bafs-card-glow {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .Bafs-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Bafs-micato-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Bafs-micato-statement-card {
+    grid-column: 1 / 3;
+  }
+
+  .Bafs-micato-guiding,
+  .Bafs-micato-logistics,
+  .Bafs-micato-itineraries,
+  .Bafs-micato-personalized {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .Bafs-h2,
+  .Bafs-h2-white, .Bafs-specialist-title {
+    font-size: 26px !important;
+  }
+
+  .Bafs-hero-h1 {
+    font-size: 32px !important;
+  }
+  .Bafs-hero-sub, .Bafs-body-text{
+    font-size: 17px !important;
+  }
+  .Bafs-expensive-split{
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .Bafs-about-header{
+    margin-bottom: 0px;
+  }
+
+  .Bafs-intro-split,
+  .Bafs-days-split,
+  .Bafs-about-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .Bafs-intro-visual {
+    height: 340px;
+  }
+
+  .Bafs-intro-header {
+    text-align: center;
+  }
+
+  .Bafs-intro-header .Bafs-accent-line {
+    margin: 18px auto 0;
+  }
+
+  .Bafs-intro-content .Bafs-intro-text {
+    text-align: center;
+    margin: 0 0 32px 0 !important;
+  }
+
+  .Bafs-destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-mistakes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Bafs-wildlife-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .Bafs-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Bafs-micato-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-micato-statement-card {
+    grid-column: 1;
+  }
+
+  .Bafs-about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-about-img-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .Bafs-final-card {
+    padding: 48px 32px;
+  }
+
+  .Bafs-final-title {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Bafs-hero-h1 {
+    font-size: 26px !important;
+  }
+  .Bafs-hero-sub, .Bafs-body-text, .Bafs-about-text, .Bafs-micato-body-text, .Bafs-specialist-text, .Bafs-faq-q, .Bafs-final-text{
+    font-size: 16px !important;
+  }
+  .Bafs-h2, .Bafs-h2-white, .Bafs-specialist-title{
+    font-size: 24px !important;
+  }
+  .Bafs-pricing-card-inner {
+    padding: 33px 38px;
+  }
+  .Bafs-pricing-amount {
+    font-size: 32px !important;
+  }
+  .Bafs-pricing-card-inner {
+    padding: 33px 38px;
+  }
+  .Bafs-days-recs{
+    margin-top: 25px;
+  }
+  .Bafs-expensive-list, .Bafs-micato-split, .Bafs-final-list-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-hero-section {
+    padding: 100px 20px 80px;
+  }
+
+  .Bafs-section, .Bafs-final-cta-section {
+    padding: 60px 16px;
+  }
+  .Bafs-btn-luxury{
+    padding: 16px 20px;
+  }
+
+  .Bafs-h2,
+  .Bafs-h2-white {
+    font-size: 28px;
+  }
+
+  .Bafs-mistakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Bafs-about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Bafs-days-split {
+    grid-template-columns: 1fr;
+  }
+
+  .Bafs-hero-cta {
+    font-size: 13px !important;
+    padding: 16px 28px;
+  }
+}
