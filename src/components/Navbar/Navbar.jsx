@@ -247,6 +247,13 @@ const Navbar = () => {
               >
                 Luxury African Safari Cost
               </NavLink>
+              <NavLink
+                to="/best-african-safari-for-first-timers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best African Safari for First-Timers
+              </NavLink>
             </div>
           </div>
         </div>
@@ -472,7 +479,6 @@ const Navbar = () => {
               Regent Seven Seas World Cruise Guide
             </NavLink>
 
-
             <NavLink
               to="/luxury-kenya-safari-micato"
               className="nav-dropdown-single"
@@ -511,6 +517,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Luxury African Safari Cost
+            </NavLink>
+
+            <NavLink
+              to="/best-african-safari-for-first-timers"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best African Safari for First-Timers
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

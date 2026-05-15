@@ -39,6 +39,7 @@ import KenyaVsTanzaniaSafari from "./pages/KenyaVsTanzaniaSafari/KenyaVsTanzania
 import BestTimeGreatMigrationSafari from "./pages/BestTimeGreatMigrationSafari/BestTimeGreatMigrationSafari";
 import LuxuryKenyaSafari from "./pages/LuxuryKenyaSafari/LuxuryKenyaSafari";
 import LuxuryAfricanSafariCost from "./pages/LuxuryAfricanSafariCost/LuxuryAfricanSafariCost";
+import BestAfricaSafari from "./pages/BestAfricanSafariForFirstTime/BestAfricaSafari";
 
 function App() {
   return (
@@ -174,6 +175,10 @@ function App() {
           <Route
             path="/luxury-african-safari-cost"
             element={<LuxuryAfricanSafariCost />}
+          ></Route>
+           <Route
+            path="/best-african-safari-for-first-timers"
+            element={<BestAfricaSafari />}
           ></Route>
         </Routes>
       </BrowserRouter>
