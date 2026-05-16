@@ -305,14 +305,18 @@
   }
 
   .lsa-truth-title-luxe {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 480px) {
-  .lsa-truth-title-luxe {
-    font-size: 28px;
+  .lsa-truth-title-luxe, .lsa-eastafrica-title {
+    font-size: 24px !important;
   }
+  .lsa-truth-body-luxe p{
+    font-size: 16px;
+  }
+
 
   .lsa-truth-blockquote-luxe {
     font-size: 17px;
@@ -603,9 +607,12 @@
     grid-template-columns: 1fr;
     gap: 12px;
   }
+  .lsa-eastafrica-description, .lsa-viewer-description{
+    font-size: 17px !important;
+  }
 
   .lsa-eastafrica-title {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .lsa-eastafrica-experience-badge {
@@ -631,7 +638,7 @@
   }
 
   .lsa-footer-quote {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -912,48 +919,87 @@
 @media (max-width: 1024px) {
   .lsa-about-museum-layout {
     grid-template-columns: 1fr;
-    gap: 80px;
+    gap: 40px;
   }
 
-  .lsa-expert-stats {
-    right: 20px;
-    flex-direction: row;
-  }
-
-  .lsa-about-title-museum {
-    font-size: 48px;
-  }
-
-  .lsa-museum-img {
-    height: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .lsa-about {
-    padding: 60px 20px;
+  .lsa-about-visual {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .lsa-expert-stats {
     position: relative;
     right: 0;
-    margin-top: -40px;
+    margin-top: -30px;
+    flex-direction: row;
     justify-content: center;
+    gap: 15px;
+  }
+
+  .lsa-about-title-museum {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .lsa-about-divider-museum {
+    margin: 0 auto 40px;
+  }
+
+  .lsa-about-text-museum {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .lsa-museum-img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lsa-about {
+    padding: 60px 15px;
+  }
+
+  .lsa-museum-frame {
+    padding: 15px;
+  }
+
+  .lsa-museum-img {
+    height: 400px;
+  }
+
+  .lsa-about-title-museum {
+    font-size: 32px;
+  }
+
+  .lsa-about-divider-museum {
+    width: 80px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .lsa-about-title-museum {
-    font-size: 38px;
+    font-size: 28px;
+  }
+
+  .lsa-museum-img {
+    height: 320px;
+  }
+
+  .lsa-expert-stats {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
   }
 
   .lsa-stat-pill-luxe {
-    min-width: 140px;
-    padding: 15px 20px;
+    min-width: 100%;
+    padding: 12px 20px;
   }
 
   .lsa-pill-val {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -1204,7 +1250,7 @@
 
 @media (max-width: 480px) {
   .lsa-destinations-heading {
-    font-size: 32px;
+    font-size: 24px !important;
   }
 
   .lsa-viewer-tagline {
@@ -1427,8 +1473,21 @@
     padding: 60px 20px;
   }
 
-  .lsa-micato-title {
-    font-size: 34px;
+  .lsa-micato-title, .lsa-specialist-title-editorial, .lsa-about-title-museum {
+    font-size: 26px !important;
+  }
+  .lsa-specialist-editorial-layout{
+    gap: 0px !important;
+  }
+  .lsa-specialist-intro-text{
+    font-size: 17px !important;
+    margin-top: 15px;
+  }
+  .lsa-insight-highlight{
+    font-size: 20px !important;
+  }
+  .lsa-p-drop{
+    font-size: 17px !important;
   }
 }
 
@@ -1686,102 +1745,7 @@
 /* ============================================================
    8. ABOUT
    ============================================================ */
-.lsa-about {
-  padding: 60px 20px;
-  background: var(--bg-soft);
-}
 
-.lsa-about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.lsa-about-grid {
-  display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 70px;
-  align-items: center;
-}
-
-.lsa-about-image-col {
-  position: relative;
-}
-
-.lsa-about-img-frame {
-  position: relative;
-  padding: 14px;
-  background: var(--bg-white);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-
-.lsa-about-img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  display: block;
-  border-radius: 2px;
-}
-
-.lsa-about-text-col {
-  padding-right: 10px;
-}
-
-.lsa-about-eyebrow {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--navy-light);
-  margin-bottom: 14px;
-}
-
-.lsa-about-heading {
-  font-family: var(--font-display);
-  font-size: 38px;
-  font-weight: 600;
-  color: var(--navy);
-  margin-bottom: 16px;
-}
-
-.lsa-about-rule {
-  width: 60px;
-  height: 3px;
-  background: var(--navy);
-  margin-bottom: 26px;
-  border-radius: 2px;
-}
-
-.lsa-about-para {
-  font-size: 17px;
-  color: var(--navy);
-  margin-bottom: 18px;
-  line-height: 1.75;
-}
-
-.lsa-about-awards {
-  margin-top: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.lsa-about-award-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 15px;
-  color: var(--navy);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.lsa-about-star {
-  color: var(--navy);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
 
 /* ============================================================
    9. FAQ
@@ -1921,9 +1885,7 @@
     padding: 36px 30px;
   }
 
-  .lsa-destinations-heading {
-    font-size: 36px;
-  }
+
 
   /* Comparison */
   .lsa-comparison-heading {
@@ -1957,28 +1919,7 @@
     font-size: 32px;
   }
 
-  /* About */
-  .lsa-about-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
 
-  .lsa-about-img-frame {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
-  .lsa-about-text-col {
-    padding-right: 0;
-  }
-
-  .lsa-about-heading {
-    font-size: 32px;
-  }
-
-  .lsa-about-img {
-    height: 440px;
-  }
 
   /* FAQ */
   .lsa-faq-heading {
@@ -2210,67 +2151,7 @@
     font-size: 26px;
   }
 
-  .lsa-comparison-table,
-  .lsa-comparison-table thead,
-  .lsa-comparison-table tbody,
-  .lsa-comparison-table th,
-  .lsa-comparison-table td,
-  .lsa-comparison-table tr {
-    display: block;
-    min-width: unset;
-  }
 
-  .lsa-comparison-table {
-    min-width: unset;
-  }
-
-  .lsa-comparison-table thead {
-    display: none;
-  }
-
-  .lsa-tr {
-    margin-bottom: 24px;
-    background: var(--bg-white);
-    border: 2px solid var(--bg-soft);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-
-  .lsa-tr:hover {
-    background: var(--bg-white);
-  }
-
-  .lsa-td {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-    text-align: right;
-    border-bottom: 1px solid var(--bg-soft);
-    font-size: 15px;
-    padding: 13px 16px;
-  }
-
-  .lsa-td:last-child {
-    border-bottom: none;
-  }
-
-  .lsa-td::before {
-    content: attr(data-label);
-    font-weight: 800;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--navy-light);
-    text-align: left;
-    flex-shrink: 0;
-    padding-top: 2px;
-  }
-
-  .lsa-td-country {
-    font-weight: 700;
-    font-size: 15px;
-  }
 
   /* Specialist */
   .lsa-specialist {
@@ -2303,26 +2184,7 @@
     font-size: 36px;
   }
 
-  /* About */
-  .lsa-about {
-    padding: 60px 20px;
-  }
 
-  .lsa-about-heading {
-    font-size: 26px;
-  }
-
-  .lsa-about-para {
-    font-size: 16px;
-  }
-
-  .lsa-about-img {
-    height: 360px;
-  }
-
-  .lsa-about-img-frame {
-    max-width: 100%;
-  }
 
   /* FAQ */
   .lsa-faq {
@@ -2511,13 +2373,14 @@
     padding: 60px 20px;
   }
 
-  .lsa-destinations-heading {
-    font-size: 22px;
-  }
+
 
   .lsa-destinations-intro {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 28px;
+  }
+  .lsa-viewer-description {
+    font-size: 16px !important;
   }
 
   .lsa-destinations-tab {
@@ -2559,8 +2422,8 @@
     padding: 60px 20px;
   }
 
-  .lsa-comparison-heading {
-    font-size: 22px;
+  .lsa-comparison-heading, .lsa-micato-title, .lsa-specialist-title-editorial, .lsa-about-title-museum {
+    font-size: 24px !important;
   }
 
   .lsa-td {
@@ -2568,9 +2431,7 @@
     padding: 11px 14px;
   }
 
-  .lsa-td::before {
-    font-size: 10px;
-  }
+
 
   /* Specialist */
   .lsa-specialist {
@@ -2597,31 +2458,15 @@
   .lsa-specialist-stat-num {
     font-size: 30px;
   }
+  .lsa-specialist-intro-text, .lsa-insight-highlight, .lsa-specialist-detail-text, .lsa-about-text-museum p{
+    font-size: 16px !important;
+  }
 
   .lsa-specialist-stat-label {
     font-size: 11px;
   }
 
-  /* About */
-  .lsa-about {
-    padding: 60px 20px;
-  }
 
-  .lsa-about-heading {
-    font-size: 22px;
-  }
-
-  .lsa-about-para {
-    font-size: 15px;
-  }
-
-  .lsa-about-img {
-    height: 280px;
-  }
-
-  .lsa-about-award-item {
-    font-size: 14px;
-  }
 
   /* FAQ */
   .lsa-faq {
@@ -2629,11 +2474,11 @@
   }
 
   .lsa-faq-heading {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .lsa-faq-question {
-    font-size: 15px;
+    font-size: 16px;
     padding: 16px 0;
     gap: 12px;
   }
@@ -2667,4 +2512,5 @@
     font-size: 10px;
     letter-spacing: 2px;
   }
+
 }
