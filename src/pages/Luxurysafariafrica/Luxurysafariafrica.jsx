@@ -21,6 +21,11 @@ import Safari2 from "../../assets/BestTimeGreatMigrationSafari/Safari2.jpg";
 import Safari3 from "../../assets/BestTimeGreatMigrationSafari/Safari3.jpg";
 import AboutImage from "../../assets/Angela_Hughes.jpg";
 
+import TravelWeeklyLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Weekly.webp";
+import TravelPulseLogo from "../../assets/BestTimeGreatMigrationSafari/TravelPulse.webp";
+import InsiderReportLogo from "../../assets/BestTimeGreatMigrationSafari/Insider_Travel_Report.webp";
+import TravelAgeWestLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Age_West.webp";
+
 import Kenya1 from "../../assets/LuxuryKenyaSafari/africa1.jpg";
 import Kenya3 from "../../assets/LuxuryKenyaSafari/africa3.jpg";
 
@@ -217,24 +222,259 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "TravelAgency",
+      "@id": "https://www.tripsandships.com/#organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "founder": {
+        "@id": "https://www.tripsandships.com/#angela-hughes"
+      },
+      "areaServed": [
+        "Africa",
+        "Kenya",
+        "Tanzania",
+        "Botswana",
+        "South Africa",
+        "Rwanda",
+        "Namibia"
+      ],
+      "knowsAbout": [
+        "Luxury African Safaris",
+        "Kenya Safaris",
+        "Tanzania Safaris",
+        "Botswana Safaris",
+        "South Africa Safaris",
+        "Rwanda Gorilla Trekking",
+        "Namibia Safaris",
+        "Great Migration Safaris",
+        "Micato Safaris",
+        "Luxury Safari Planning"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tripsandships.com/#angela-hughes",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO of Trips & Ships Luxury Travel and Founder of Luxury Travel University",
+      "url": "https://www.tripsandships.com",
+      "sameAs": [
+        "https://www.luxurytraveluniversity.com"
+      ],
+      "knowsAbout": [
+        "Luxury Travel",
+        "Luxury African Safaris",
+        "East Africa Safaris",
+        "Kenya Safaris",
+        "Tanzania Safaris",
+        "Luxury Safari Planning",
+        "Expedition Travel",
+        "Luxury Cruises"
+      ],
+      "affiliation": {
+        "@id": "https://www.tripsandships.com/#organization"
+      }
+    },
+    {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/best-country-luxury-safari-africa/#webpage",
-      url: "https://www.tripsandships.com/best-country-luxury-safari-africa/",
-      name: "What Is the Best Country for Luxury Safari in Africa?",
-      description:
-        "Discover the best African safari destinations for luxury travel. Expert comparison of Kenya, Tanzania, Botswana, South Africa, Rwanda, and Namibia for first time and experienced safari travelers.",
-      isPartOf: { "@id": "https://www.tripsandships.com/#website" },
+      "@id": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/#webpage",
+      "url": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/",
+      "name": "What Is the Best Country for Luxury Safari in Africa? | Luxury Safari Guide 2026",
+      "description": "Discover the best countries for luxury safari in Africa including Kenya, Tanzania, Botswana, South Africa, Rwanda, and Namibia. Compare safari experiences, wildlife, migration, luxury camps, and expert planning advice from Angela Hughes of Trips & Ships Luxury Travel.",
+      "author": {
+        "@id": "https://www.tripsandships.com/#angela-hughes"
+      },
+      "publisher": {
+        "@id": "https://www.tripsandships.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Luxury African Safaris"
+        },
+        {
+          "@type": "Place",
+          "name": "Kenya"
+        },
+        {
+          "@type": "Place",
+          "name": "Tanzania"
+        },
+        {
+          "@type": "Place",
+          "name": "Botswana"
+        },
+        {
+          "@type": "Place",
+          "name": "South Africa"
+        },
+        {
+          "@type": "Place",
+          "name": "Rwanda"
+        },
+        {
+          "@type": "Place",
+          "name": "Namibia"
+        },
+        {
+          "@type": "Organization",
+          "name": "Micato Safaris"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/#faq"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsandships.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Luxury African Safaris",
+          "item": "https://www.tripsandships.com/luxury-african-safaris/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Best Country for Luxury Safari in Africa",
+          "item": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/best-country-luxury-safari-africa/#faq",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-  ],
+      "@id": "https://www.tripsandships.com/best-country-for-luxury-safari-in-africa/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best country for safari in Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most first time luxury safari travelers, Kenya and Tanzania remain the strongest safari destinations because of their wildlife density, luxury safari infrastructure, guiding quality, and iconic landscapes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Kenya or Tanzania better for safari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both Kenya and Tanzania are exceptional safari destinations. Kenya is particularly strong for conservancies and family safaris, while Tanzania is famous for the Serengeti, Ngorongoro Crater, and Great Migration experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best African safari for first timers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kenya and Tanzania are generally considered the best safari destinations for first time travelers because they offer extraordinary wildlife, excellent guides, luxury camps, and relatively seamless safari logistics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a luxury African safari cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luxury African safaris typically range from approximately $8,000 to more than $30,000 per person depending on destination, camp level, seasonality, flights, and level of customization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are African safaris so expensive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Safari pricing reflects conservation fees, highly trained guides, remote logistics, luxury camps, charter flights, wildlife preservation, and low density tourism models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best month for safari in Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best safari timing depends on destination and travel goals. East Africa offers exceptional wildlife viewing throughout much of the year, while Great Migration timing changes seasonally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Great Migration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Great Migration is the annual movement of millions of wildebeest and zebra across the Serengeti and Maasai Mara ecosystems in Tanzania and Kenya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which African country has the best wildlife?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kenya and Tanzania are widely considered among the best wildlife destinations in Africa because of their massive ecosystems, exceptional predator populations, and iconic safari landscapes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the most luxurious safari destination in Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Botswana is often considered one of the most exclusive and luxurious safari destinations in Africa because of its remote camps, low density tourism model, and conservation focused approach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which African safari is best for families?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kenya is one of the strongest safari destinations for families because of its conservancies, guiding quality, family friendly camps, and ease of logistics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which African safari is best for honeymooners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tanzania is exceptionally popular for luxury honeymoon safaris because of the Serengeti, ultra luxury camps, romantic landscapes, and the ability to combine safari with Zanzibar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is South Africa good for safari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. South Africa is excellent for safari, particularly for travelers wanting to combine wildlife experiences with Cape Town, luxury lodges, wine country, and easier travel logistics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Botswana worth the cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For travelers seeking ultra luxury wilderness experiences, exceptional guiding, privacy, and exclusivity, Botswana is absolutely worth considering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best luxury safari company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are several outstanding safari companies throughout Africa. Trips & Ships Luxury Travel often recommends trusted luxury safari partners such as Micato Safaris based on the traveler’s destination, travel style, budget, and desired level of luxury."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use a safari travel advisor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. African safaris involve complex logistics, migration timing, camp selection, wildlife movement, internal flights, and destination expertise. Working with a luxury safari specialist can dramatically improve the overall experience."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 export default function LuxurySafariAfrica() {
@@ -258,10 +498,10 @@ export default function LuxurySafariAfrica() {
   return (
     <div className="lsa-root">
       <Helmet>
-        <title>What Is the Best Country for Luxury Safari in Africa? | Trips & Ships</title>
+        <title>What Is the Best Country for Luxury Safari in Africa? | Luxury Safari Guide 2026</title>
         <meta
           name="description"
-          content="Discover the best African safari destinations for luxury travel. Expert comparison of Kenya, Tanzania, Botswana, South Africa, Rwanda, and Namibia."
+          content="Discover the best countries for luxury safari in Africa including Kenya, Tanzania, Botswana, South Africa, Rwanda, and Namibia. Compare safari experiences, wildlife, migration, luxury camps, and expert planning advice from Angela Hughes of Trips & Ships Luxury Travel."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -289,6 +529,40 @@ export default function LuxurySafariAfrica() {
             The best African safari destination depends entirely on the type of traveler you are and the type of experience you are hoping to have.
           </p>
 
+        </div>
+      </section>
+
+      
+      {/* AS SEEN IN */}
+      <section className="btgms-as-seen">
+        <div className="btgms-container">
+          <span className="btgms-seen-label-top">AS SEEN IN</span>
+          <div className="btgms-seen-slider">
+            <div className="btgms-seen-track">
+              {[
+                { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                { logo: TravelPulseLogo, name: "TravelPulse" },
+                { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                { logo: TravelAgeWestLogo, name: "Travel Age West" },
+              ]
+                .concat([
+                  { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                  { logo: TravelPulseLogo, name: "TravelPulse" },
+                  { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                  { logo: TravelAgeWestLogo, name: "Travel Age West" },
+                ])
+                .map((item, index) => (
+                  <div key={index} className="btgms-seen-box">
+                    <img
+                      src={item.logo}
+                      alt={item.name}
+                      className="btgms-seen-logo"
+                    />
+                    <span className="btgms-seen-text">{item.name}</span>
+                  </div>
+                ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -552,6 +826,39 @@ export default function LuxurySafariAfrica() {
                   A luxury safari should feel seamless, immersive, and deeply personal from beginning to end.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CINEMATIC VIDEO SHOWCASE ── */}
+      <section className="lsa-showcase-video-section">
+        <div className="lsa-showcase-video-container">
+          <div className="lsa-showcase-video-header">
+            <span className="lsa-showcase-video-eyebrow">Cinematic Showcase</span>
+            <h2 className="lsa-showcase-video-title">
+              Experience the Magic: Luxury Kenya Safari
+            </h2>
+            <div className="lsa-showcase-video-divider"></div>
+            <p className="lsa-showcase-video-subtitle">
+              Embark on an immersive visual journey through Kenya's most legendary wildlife reserves, private conservancies, and ultra-luxury camps with Abercrombie & Kent.
+            </p>
+          </div>
+          <div className="lsa-showcase-video-wrapper">
+            <div className="lsa-showcase-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/QwH980rZTiI?rel=0&modestbranding=1"
+                className="lsa-showcase-iframe"
+                title="Abercrombie & Kent Luxury Kenya Safari Experiences"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              <div className="lsa-showcase-video-glow"></div>
+            </div>
+            <div className="lsa-showcase-video-caption">
+              <span className="lsa-caption-brand">Abercrombie & Kent</span>
+              <span className="lsa-caption-text">Featured Luxury Safari Expedition</span>
             </div>
           </div>
         </div>

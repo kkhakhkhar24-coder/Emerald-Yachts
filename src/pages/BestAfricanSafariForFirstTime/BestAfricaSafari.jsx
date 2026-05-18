@@ -31,6 +31,11 @@ import BafricaImage5 from "../../assets/BestAfricanSafariForFirstTime/Hippos.jpg
 import BafricaImage6 from "../../assets/BestAfricanSafariForFirstTime/KenyaTravel.jpg";
 import BafricaImage7 from "../../assets/BestAfricanSafariForFirstTime/Kenya2.jpg";
 import Park from "../../assets/BestAfricanSafariForFirstTime/Park.jpg";
+
+import TravelWeeklyLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Weekly.webp";
+import TravelPulseLogo from "../../assets/BestTimeGreatMigrationSafari/TravelPulse.webp";
+import InsiderReportLogo from "../../assets/BestTimeGreatMigrationSafari/Insider_Travel_Report.webp";
+import TravelAgeWestLogo from "../../assets/BestTimeGreatMigrationSafari/Travel_Age_West.webp";
 import { Helmet } from "react-helmet-async";
 
 /* ── Schema ──────────────────────────────────────────────────────── */
@@ -405,6 +410,40 @@ const BestAfricaSafari = () => {
               </button>
             </div>
           )}
+        </div>
+      </section>
+
+      
+      {/* AS SEEN IN */}
+      <section className="btgms-as-seen">
+        <div className="btgms-container">
+          <span className="btgms-seen-label-top">AS SEEN IN</span>
+          <div className="btgms-seen-slider">
+            <div className="btgms-seen-track">
+              {[
+                { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                { logo: TravelPulseLogo, name: "TravelPulse" },
+                { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                { logo: TravelAgeWestLogo, name: "Travel Age West" },
+              ]
+                .concat([
+                  { logo: TravelWeeklyLogo, name: "Travel Weekly" },
+                  { logo: TravelPulseLogo, name: "TravelPulse" },
+                  { logo: InsiderReportLogo, name: "Insider Travel Report" },
+                  { logo: TravelAgeWestLogo, name: "Travel Age West" },
+                ])
+                .map((item, index) => (
+                  <div key={index} className="btgms-seen-box">
+                    <img
+                      src={item.logo}
+                      alt={item.name}
+                      className="btgms-seen-logo"
+                    />
+                    <span className="btgms-seen-text">{item.name}</span>
+                  </div>
+                ))}
+            </div>
+          </div>
         </div>
       </section>
 
