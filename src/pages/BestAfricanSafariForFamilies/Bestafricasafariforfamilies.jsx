@@ -24,7 +24,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/Angela_Hughes.jpg";
 import BafricaImage1 from "../../assets/Bestafricasafariforfamilies/Bestafrica1.jpg";
 import BafricaImage2 from "../../assets/Bestafricasafariforfamilies/Bestafrica2.jpg";
-import BafricaImage3 from "../../assets/Bestafricasafariforfamilies/Bestafrica3.jpg";
 import BafricaImage8 from "../../assets/Bestafricasafariforfamilies/Bestafrica4.jpg";
 import BafricaImage4 from "../../assets/Bestafricasafariforfamilies/Cheetahs.jpg";
 import BafricaImage5 from "../../assets/Bestafricasafariforfamilies/Hippos.jpg";
