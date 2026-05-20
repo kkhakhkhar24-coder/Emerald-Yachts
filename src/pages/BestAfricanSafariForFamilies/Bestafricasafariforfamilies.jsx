@@ -19,7 +19,7 @@ import {
     ChevronUp,
     Heart,
 } from "lucide-react";
-import "./BestAfricaSafariForFamilies.css"; // Lfsg- prefix styles
+import "./BestAfricaSafariForFamilies.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/Angela_Hughes.jpg";
 import BafricaImage1 from "../../assets/Bestafricasafariforfamilies/Bestafrica1.jpg";
