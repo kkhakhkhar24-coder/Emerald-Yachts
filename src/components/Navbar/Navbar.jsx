@@ -255,14 +255,22 @@ const Navbar = () => {
                 Best African Safari for First-Timers
               </NavLink>
 
-                <NavLink
+              <NavLink
                 to="/best-country-for-luxury-safari-in-africa/"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Luxury Safari in Africa</NavLink>
 
-                
+              <NavLink
+                to="/best-african-safari-for-families/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best African Safari for Families</NavLink>
+
+
+
             </div>
           </div>
         </div>
@@ -535,6 +543,14 @@ const Navbar = () => {
             >
               Best African Safari for First-Timers
             </NavLink>
+
+            <NavLink
+              to="/best-african-safari-for-families/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best African Safari for Families</NavLink>
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>
