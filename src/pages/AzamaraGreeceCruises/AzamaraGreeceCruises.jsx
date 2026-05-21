@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './AzamaraMediterraneanCruises.css'
+// import './AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
 import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
@@ -52,67 +52,75 @@ function MediterraneanCruises() {
 
     const mediItineraries = [
         {
-            title: 'Greece & Greek Isles Cruises',
-            bestFor: ['First-time Mediterranean cruisers', 'Couples', 'Scenic island experiences', 'Cultural travelers'],
-            highlights: ['Santorini', 'Mykonos', 'Rhodes', 'Crete', 'Athens']
+            title: 'Santorini & Mykonos Cruises',
+            bestFor: ['First-time Greece cruisers', 'Couples', 'Scenic island experiences', 'Luxury honeymoon travelers'],
+            highlights: ['Santorini sunsets', 'Mykonos nightlife', 'Boutique coastal villages', 'Iconic Aegean scenery']
         },
         {
-            title: 'Italy Intensive Cruises',
-            bestFor: ['Food and wine lovers', 'History enthusiasts', 'Luxury cultural travel'],
-            highlights: ['Rome', 'Florence', 'Sicily', 'Amalfi Coast', 'Venice']
+            title: 'Greece Intensive Cruises',
+            bestFor: ['Cultural travelers', 'History enthusiasts', 'Multi-island exploration'],
+            highlights: ['Athens', 'Rhodes', 'Crete', 'Patmos', 'Nafplio']
         },
         {
-            title: 'Croatia & Adriatic Voyages',
-            bestFor: ['Boutique luxury seekers', 'Yacht-style atmosphere lovers', 'Scenic coastal exploration'],
-            highlights: ['Dubrovnik', 'Split', 'Kotor', 'Montenegro', 'Slovenia']
+            title: 'Greece & Turkey Voyages',
+            bestFor: ['Experienced Mediterranean travelers', 'History lovers', 'Luxury cultural immersion'],
+            highlights: ['Greek Isles', 'Istanbul', 'Ephesus', 'Kusadasi', 'Ancient Mediterranean sites']
         },
         {
-            title: 'Spain & Western Mediterranean Cruises',
-            bestFor: ['Culinary travelers', 'Art and architecture enthusiasts', 'Sophisticated European cruising'],
-            highlights: ['Barcelona', 'Valencia', 'Nice', 'Marseille', 'Palma de Mallorca']
+            title: 'Adriatic & Greek Isles Cruises',
+            bestFor: ['Boutique luxury seekers', 'Scenic cruising enthusiasts', 'Travelers wanting multiple Mediterranean regions'],
+            highlights: ['Croatia', 'Montenegro', 'Greece', 'Adriatic coastal towns']
         }
     ]
 
     const mediFaqs = [
-        { question: 'Are Azamara Mediterranean cruises worth it?', answer: 'Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service.' },
-        { question: 'What makes Azamara different in the Mediterranean?', answer: 'Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports.' },
-        { question: 'Which Azamara Mediterranean itinerary is best?', answer: 'Greek Isles and Italy-intensive itineraries are especially popular among luxury travelers.' },
+        { question: 'Are Azamara Greece cruises worth it?', answer: 'Yes. Azamara offers immersive Greek Isles experiences with smaller ships, longer port stays, and boutique luxury service.' },
+        { question: 'Does Azamara visit Santorini and Mykonos?', answer: 'Yes. Santorini and Mykonos are among Azamara’s most popular Greek Isles destinations.' },
+        { question: 'Which Azamara Greece itinerary is best?', answer: 'Santorini and Mykonos itineraries remain especially popular for luxury travelers and first-time Greece cruisers.' },
         { question: 'Is Azamara considered luxury?', answer: 'Azamara is considered an upper-premium boutique cruise line with many luxury-level features.' },
-        { question: 'Are Azamara Mediterranean cruises all inclusive?', answer: 'Azamara includes gratuities, select beverages, cultural events, and various onboard amenities.' },
-        { question: 'Which Mediterranean destinations does Azamara do best?', answer: 'Greece, Italy, Croatia, Spain, and immersive Adriatic itineraries are standout strengths.' },
-        { question: 'Is Azamara good for couples?', answer: 'Yes. The intimate atmosphere and destination-focused experience appeal strongly to couples.' },
-        { question: 'When should travelers book Mediterranean cruises?', answer: 'Luxury Mediterranean cruises should ideally be booked 9–18 months in advance.' },
+        { question: 'Are Azamara Greece cruises all inclusive?', answer: 'Azamara includes gratuities, select beverages, cultural events, and various onboard amenities.' },
+        { question: 'What Greek islands does Azamara visit?', answer: 'Common ports include Santorini, Mykonos, Rhodes, Crete, Patmos, and Corfu.' },
+        { question: 'Is Azamara good for couples?', answer: 'Yes. The intimate atmosphere and immersive itineraries make Azamara highly appealing for couples.' },
+        { question: 'When should travelers book Greece cruises?', answer: 'Luxury Greece cruises should ideally be booked 9–18 months in advance.' },
         { question: 'Does Azamara attract younger travelers?', answer: 'While Azamara primarily attracts experienced travelers, younger affluent travelers increasingly appreciate immersive cruising.' },
-        { question: 'Which Azamara ship is best for Mediterranean cruises?', answer: 'Azamara Journey and Azamara Onward are especially popular for Mediterranean itineraries.' },
-        { question: 'Is Azamara better than Oceania in the Mediterranean?', answer: 'Azamara emphasizes destination immersion while Oceania is particularly known for culinary experiences.' },
-        { question: 'What is the dress code on Azamara Mediterranean cruises?', answer: 'Azamara maintains a relaxed luxury atmosphere with resort-casual elegance.' },
-        { question: 'Are Azamara shore excursions worth it?', answer: 'Many travelers value Azamara\'s curated cultural excursions and immersive local experiences.' },
-        { question: 'Why use a luxury cruise advisor for Mediterranean cruises?', answer: 'Luxury advisors help travelers maximize value, secure preferred accommodations, and select the best itineraries.' }
+        { question: 'Which Azamara ship is best for Greece cruises?', answer: 'Azamara Journey and Azamara Onward are especially popular for Greek Isles itineraries.' },
+        { question: 'Is Azamara better than Oceania for Greece cruises?', answer: 'Azamara emphasizes destination immersion while Oceania is particularly known for culinary experiences.' },
+        { question: 'What is the dress code on Azamara Greece cruises?', answer: 'Azamara maintains a relaxed luxury atmosphere with resort-casual elegance.' },
+        { question: 'Are Azamara shore excursions worth it?', answer: 'Many travelers value Azamara’s curated cultural excursions and authentic local experiences.' },
+        { question: 'Why use a luxury cruise advisor for Greece cruises?', answer: 'Luxury advisors help travelers maximize value, secure preferred accommodations, and select the best itineraries.' }
     ]
 
 
 
     const mediMistakes = [
         {
-            title: 'Choosing the Wrong Season',
-            desc: 'Mediterranean cruising varies dramatically by season.',
+            title: 'Visiting During Peak Crowds',
+            desc: 'July and August can become extremely crowded and hot throughout the Greek Isles.',
             bullets: [
-                'Summer offers energy and nightlife',
-                'Spring and fall offer fewer crowds and milder weather'
+                'Better weather',
+                'Fewer crowds',
+                'Improved sightseeing',
+                'More relaxed experiences'
             ]
         },
         {
-            title: 'Underestimating Port Intensity',
-            desc: 'Many Mediterranean itineraries involve extensive walking, stairs, and active touring.'
+            title: 'Choosing Large Ships',
+            desc: 'Mega ships can limit destination access and create overcrowded port experiences.'
         },
         {
             title: 'Waiting Too Long to Book Suites',
-            desc: 'Premium Mediterranean sailings and suites often sell out 9–18 months in advance.'
+            desc: 'Luxury suites and premium Greece itineraries frequently sell out 9–18 months in advance.'
         },
         {
-            title: 'Choosing Large Ships for Boutique Destinations',
-            desc: 'Large ships often cannot access smaller Mediterranean ports that make Azamara itineraries unique.'
-        }
+            title: 'Underestimating Walking & Terrain',
+            desc: 'Greek island ports often involve:',
+            bullets: [
+                'Hills',
+                'Cobblestone streets',
+                'Stairs',
+                'Active touring'
+            ]
+        },
     ]
 
     const mediSchemaData = {
@@ -216,7 +224,8 @@ function MediterraneanCruises() {
                         <span>Boutique Luxury Mediterranean Cruising</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Azamara Mediterranean Cruises: Boutique Luxury Across Europe's Most Iconic Destinations
+                        Azamara Greece Cruises: Boutique Luxury Through the Greek Isles
+
                     </h1>
                 </div>
             </section>
@@ -231,58 +240,64 @@ function MediterraneanCruises() {
                         {/* Title & Core editorial intro */}
                         <div className="medi-premium-editorial-block">
                             <span className="medi-premium-mini-badge">EXCLUSIVELY IMMERSIVE</span>
-                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Mediterranean Cruising</h2>
+                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Greece Cruises</h2>
                             <div className="medi-premium-separator"></div>
 
                             <p className="medi-premium-lead-text">
-                                For sophisticated travelers seeking immersive European experiences without the crowds of mega ships, Azamara Mediterranean Cruises have become one of the most respected names in boutique luxury cruising.
+                                For travelers seeking immersive island experiences, cultural depth, and boutique luxury cruising, Azamara Greece Cruises have become one of the most respected options in Mediterranean travel.
                             </p>
 
                             <div className="medi-immersion-list-wrapper">
                                 <p className="medi-immersion-lead-in">
-                                    Unlike traditional cruise lines that rush from port to port, Azamara focuses on meaningful destination immersion through:
+                                    Unlike larger cruise lines focused on high-volume tourism, Azamara emphasizes:
+
                                 </p>
                                 <div className="medi-immersion-cards-grid">
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Clock size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Longer stays</span>
+                                        <span className="medi-immersion-card-title">Smaller ship intimacy</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Sun size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Overnight port experiences</span>
+                                        <span className="medi-immersion-card-title">Longer stays in port
+                                        </span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Ship size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Smaller ship intimacy</span>
+                                        <span className="medi-immersion-card-title">Authentic Greek island experiences
+                                        </span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Sparkles size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Curated cultural programming</span>
+                                        <span className="medi-immersion-card-title">Destination immersion
+                                        </span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Anchor size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Access to boutique Mediterranean ports</span>
+                                        <span className="medi-immersion-card-title">Personalized luxury service
+                                        </span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Crown size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Personalized luxury service</span>
+                                        <span className="medi-immersion-card-title">Curated cultural exploration
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -303,13 +318,14 @@ function MediterraneanCruises() {
                                 </div>
 
                                 <p className="medi-premium-expert-desc">
-                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Mediterranean cruise experience based on decades of firsthand luxury travel expertise.
+                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Greece cruise experience using decades of firsthand luxury travel expertise.
+
                                 </p>
 
                                 <div className="medi-premium-expert-quote-box">
                                     <span className="medi-quote-mark">“</span>
                                     <p className="medi-premium-expert-quote-text">
-                                        With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into luxury Mediterranean cruising.
+                                        With more than 40 years in the travel industry, visits to over 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes brings a level of luxury cruise insight few advisors worldwide can match.
                                     </p>
                                 </div>
                             </div>
@@ -333,10 +349,10 @@ function MediterraneanCruises() {
 
                     {/* Header/Intro Block */}
                     <div className="medi-excel-header-block">
-                        <h2 className="medi-excel-main-title">Why Azamara Excels in the Mediterranean</h2>
+                        <h2 className="medi-excel-main-title">Why Azamara Excels in Greece</h2>
                         <div className="medi-excel-separator"></div>
                         <p className="medi-excel-lead-paragraph">
-                            The Mediterranean is one of the world’s most competitive luxury cruise markets.
+                            The Greek Isles remain one of the world’s most desired luxury cruise destinations.
                         </p>
                     </div>
 
@@ -347,45 +363,38 @@ function MediterraneanCruises() {
                         <div className="medi-excel-column">
                             <div className="medi-excel-card">
                                 <h3 className="medi-excel-card-heading">
-                                    However, Azamara has carved out a unique niche by focusing on:
+                                    However, many travelers quickly discover that large cruise ships often create:
                                 </h3>
                                 <ul className="medi-excel-list">
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Compass size={18} />
                                         </div>
-                                        <span>Destination immersion</span>
+                                        <span>Crowded ports
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Ship size={18} />
                                         </div>
-                                        <span>Boutique ship experiences</span>
+                                        <span>Limited destination access
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Clock size={18} />
                                         </div>
-                                        <span>Extended time in port</span>
+                                        <span>Short port times
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Sparkles size={18} />
                                         </div>
-                                        <span>Cultural authenticity</span>
+                                        <span>Less authentic experiences
+                                        </span>
                                     </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Anchor size={18} />
-                                        </div>
-                                        <span>Smaller ship access</span>
-                                    </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Crown size={18} />
-                                        </div>
-                                        <span>Relaxed luxury</span>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -394,45 +403,46 @@ function MediterraneanCruises() {
                         <div className="medi-excel-column">
                             <div className="medi-excel-card">
                                 <h3 className="medi-excel-card-heading">
-                                    This appeals strongly to experienced luxury travelers seeking:
+                                    Its boutique-sized ships allow travelers to experience Greece with:
+
                                 </h3>
                                 <ul className="medi-excel-list">
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Gem size={18} />
                                         </div>
-                                        <span>Cultural depth</span>
+                                        <span>More intimacy
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <MapPin size={18} />
                                         </div>
-                                        <span>Walkable historic ports</span>
+                                        <span>Longer exploration time
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Utensils size={18} />
                                         </div>
-                                        <span>Culinary experiences</span>
+                                        <span>Cultural immersion
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Globe size={18} />
                                         </div>
-                                        <span>Local immersion</span>
+                                        <span>Relaxed sophistication
+                                        </span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Star size={18} />
                                         </div>
-                                        <span>Sophisticated onboard atmosphere</span>
+                                        <span>Scenic island access
+                                        </span>
                                     </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Users size={18} />
-                                        </div>
-                                        <span>Fewer crowds</span>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -457,7 +467,7 @@ function MediterraneanCruises() {
                 <div className="medi-diff-container">
                     <div className="medi-diff-header-block">
                         <span className="medi-diff-eyebrow-tag">DISTINCTIVE CRUISE STYLE</span>
-                        <h2 className="medi-diff-main-title">What Makes Azamara Mediterranean Cruises Different?</h2>
+                        <h2 className="medi-diff-main-title">What Makes Azamara Greece Cruises Different?</h2>
                         <div className="medi-diff-separator"></div>
                     </div>
 
@@ -469,26 +479,37 @@ function MediterraneanCruises() {
                                 <div className="medi-diff-icon-box">
                                     <Clock size={24} />
                                 </div>
-                                <h3 className="medi-diff-card-title">Extended Port Stays</h3>
+                                <h3 className="medi-diff-card-title">Extended Time in Port
+                                </h3>
                             </div>
                             <p className="medi-diff-card-text">
-                                Azamara is especially known for late-night departures and overnight stays in iconic Mediterranean destinations including:
+                                Azamara is known for extended stays and overnight experiences in iconic Greek destinations including:
+
                             </p>
                             <div className="medi-diff-destination-chips">
-                                <span className="medi-diff-chip">Venice</span>
-                                <span className="medi-diff-chip">Barcelona</span>
-                                <span className="medi-diff-chip">Santorini</span>
-                                <span className="medi-diff-chip">Dubrovnik</span>
-                                <span className="medi-diff-chip">Istanbul</span>
-                                <span className="medi-diff-chip">Amalfi Coast ports</span>
+                                <span className="medi-diff-chip">Santorini
+                                </span>
+                                <span className="medi-diff-chip">Mykonos
+                                </span>
+                                <span className="medi-diff-chip">Rhodes
+                                </span>
+                                <span className="medi-diff-chip">Crete
+                                </span>
+                                <span className="medi-diff-chip">Athens</span>
+
                             </div>
                             <p className="medi-diff-card-text-secondary">
-                                This allows travelers to experience:
+                                This allows travelers to enjoy:
+
                             </p>
                             <ul className="medi-diff-experience-list">
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Evening dining ashore</span>
+                                    <span>Sunset dining</span>
+                                </li>
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Evening exploration</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
@@ -496,15 +517,12 @@ function MediterraneanCruises() {
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Sunset sightseeing</span>
+                                    <span>Fewer daytime crowds
+                                    </span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Cultural performances</span>
-                                </li>
-                                <li>
-                                    <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Reduced daytime tourist crowds</span>
+                                    <span>Authentic cultural experiences</span>
                                 </li>
                             </ul>
                         </div>
@@ -526,11 +544,13 @@ function MediterraneanCruises() {
                             </div>
 
                             <p className="medi-diff-card-text">
-                                Azamara’s boutique ships accommodate roughly 700 guests, allowing access to ports larger cruise ships cannot easily reach.
+                                With ships carrying approximately 700 guests, Azamara can access boutique ports and create a more relaxed luxury atmosphere.
+
                             </p>
                             <div className="medi-diff-quote-wrapper">
                                 <p className="medi-diff-quote-text">
-                                    This creates a more intimate and relaxed luxury experience.
+                                    Travelers avoid the overwhelming environment often associated with mega ships.
+
                                 </p>
                             </div>
                         </div>
@@ -544,7 +564,7 @@ function MediterraneanCruises() {
                                 <h3 className="medi-diff-card-title">Destination Immersion Focus</h3>
                             </div>
                             <p className="medi-diff-card-text">
-                                Azamara emphasizes:
+                                Azamara focuses heavily on:
                             </p>
                             <ul className="medi-diff-focus-list-premium">
                                 <li>
@@ -557,21 +577,26 @@ function MediterraneanCruises() {
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">03</span>
-                                    <span>Regional experiences</span>
+                                    <span>Historic exploration
+
+                                    </span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">04</span>
-                                    <span>Enrichment programming</span>
+                                    <span>Authentic shore excursions
+                                    </span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">05</span>
-                                    <span>Curated shore excursions</span>
+                                    <span>Enrichment programming
+                                    </span>
                                 </li>
                             </ul>
 
                             <div className="medi-diff-conclusion-box">
                                 <p className="medi-diff-conclusion-text">
-                                    For travelers prioritizing meaningful travel over onboard spectacle, this approach is highly appealing.
+                                    For sophisticated travelers, this creates a far more meaningful Greek Isles experience.
+
                                 </p>
                             </div>
                         </div>
@@ -585,7 +610,8 @@ function MediterraneanCruises() {
                 <div className="medi-itinerary-showcase-container">
                     <div className="medi-itinerary-showcase-header">
                         <span className="medi-itinerary-eyebrow">CURATED JOURNEYS</span>
-                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Mediterranean Itineraries</h2>
+                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Greece Cruise Itineraries
+                        </h2>
                         <div className="medi-itinerary-showcase-separator"></div>
                     </div>
 
@@ -691,27 +717,28 @@ function MediterraneanCruises() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Why Mediterranean Small-Ship Cruising Continues <br />to Grow
+                                    Why Greece Remains One of the World’s Most Desired Luxury Cruise Destinations
+
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
 
                             <p className="medi-editorial-lead-para">
-                                According to Angela Hughes, sophisticated travelers increasingly prefer boutique Mediterranean cruise experiences over mega-ship tourism.
+                                According to Angela Hughes, Greece continues to attract sophisticated travelers because it combines
                             </p>
 
                             <div className="medi-priorities-box">
                                 <p className="medi-priorities-intro">
-                                    After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees travelers prioritizing:
+                                    After visiting more than 121 countries and spending decades planning luxury cruises worldwide, Angela consistently recommends small-ship cruising for travelers wanting a deeper Greek Isles experience.
                                 </p>
                                 <div className="medi-priorities-grid-pills">
                                     {[
-                                        'Authenticity',
-                                        'Flexibility',
-                                        'Destination immersion',
-                                        'Personalized service',
-                                        'Fewer crowds',
-                                        'Cultural connection'
+                                        'Natural beauty',
+                                        'Ancient history',
+                                        'Culinary experiences',
+                                        'Island culture',
+                                        'Luxury hospitality',
+                                        'Walkable destinations'
                                     ].map((item, idx) => (
                                         <div key={idx} className="medi-priority-pill-item">
                                             <CheckCircle size={15} className="medi-priority-check" />
@@ -722,18 +749,18 @@ function MediterraneanCruises() {
                             </div>
 
                             <p className="medi-editorial-body-para">
-                                As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers navigate increasingly complex cruise choices with real-world expertise rather than generic online recommendations.
+                                As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers navigate increasingly complex cruise options with real-world expertise rather than generic online advice.
                             </p>
 
                             <div className="medi-expertise-section-box">
-                                <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                <span className="medi-expertise-intro-label">Her expertise includes:</span>
                                 <div className="medi-expertise-horizontal-strip">
                                     {[
                                         { title: 'Luxury cruises', icon: Ship },
-                                        { title: 'Expedition travel', icon: Compass },
-                                        { title: 'River cruising', icon: Anchor },
-                                        { title: 'Safaris', icon: Globe },
-                                        { title: 'Premium global travel planning', icon: Sparkles }
+                                        { title: 'Mediterranean travel', icon: Compass },
+                                        { title: 'Expedition voyages', icon: Anchor },
+                                        { title: 'River cruising', icon: Globe },
+                                        { title: 'Global premium travel planning', icon: Sparkles }
                                     ].map((item, idx) => {
                                         const IconComponent = item.icon
                                         return (
@@ -782,25 +809,25 @@ function MediterraneanCruises() {
                                 </div>
                                 <div className="medi-luxury-feature">
                                     <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Elevated itineraries</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Longer stays in port</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
                                     <span>Relaxed sophistication</span>
+                                </div>
+                                <div className="medi-luxury-feature">
+                                    <CheckCircle size={20} className="medi-feature-check-icon" />
+                                    <span>Authentic itineraries</span>
+                                </div>
+                                <div className="medi-luxury-feature">
+                                    <CheckCircle size={20} className="medi-feature-check-icon" />
+                                    <span>Longer port stays</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="medi-luxury-comparison-note">
                             <p className="medi-luxury-paragraph">
-                                However, travelers expecting ultra-luxury experiences comparable to Seabourn, Silversea Cruises, or Regent Seven Seas Cruises should understand Azamara delivers a more approachable and destination-centric luxury style.
+                                Travelers expecting ultra-luxury experiences similar to: Seabourn, Regent Seven Seas Cruises, Silversea Cruises should understand Azamara offers a more approachable and culturally immersive luxury style.
                             </p>
                             <p className="medi-luxury-paragraph">
-                                For many experienced travelers, that balance is exactly the appeal.
+                                For many experienced travelers, this creates the perfect balance.
                             </p>
                         </div>
                     </div>
@@ -821,7 +848,7 @@ function MediterraneanCruises() {
                     <div className="medi-mistakes-slider-header">
                         <span className="medi-mistakes-eyebrow">AVOID CRUISE PITFALLS</span>
                         <h2 className="medi-mistakes-slider-title">
-                            Common Mistakes Travelers Make When Booking Mediterranean Cruises
+                            Common Mistakes Travelers Make When Booking Greece Cruises
                         </h2>
                         <div className="medi-mistakes-slider-separator"></div>
                     </div>
@@ -896,7 +923,7 @@ function MediterraneanCruises() {
             {/* WHO SHOULD CHOOSE */}
             <section className="medi-audience-section">
                 <div className="medi-audience-container">
-                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Who Should Choose Azamara Mediterranean Cruises?</h2>
+                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Who Should Choose Azamara Greece Cruises?</h2>
                     <div className="medi-heading-separator-bar medi-bar-centered"></div>
 
                     <div className="medi-audience-split-layout">
@@ -925,19 +952,19 @@ function MediterraneanCruises() {
                                     <div className="medi-audience-icon-wrapper best">
                                         <MapPin size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Destination-focused cruisers</span>
+                                    <span>Luxury cultural travelers</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper best">
                                         <Crown size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Luxury travelers seeking intimacy</span>
+                                    <span>Greek Isles enthusiasts</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper best">
                                         <Globe size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Cultural explorers</span>
+                                    <span>Boutique cruise lovers</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper best">
@@ -955,13 +982,13 @@ function MediterraneanCruises() {
                                     <div className="medi-audience-icon-wrapper not-ideal">
                                         <Baby size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Families wanting extensive kids programs</span>
+                                    <span>Families seeking extensive kids programs</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper not-ideal">
                                         <Moon size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Travelers seeking nonstop nightlife</span>
+                                    <span>Travelers wanting nonstop nightlife onboard</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper not-ideal">
@@ -985,7 +1012,7 @@ function MediterraneanCruises() {
                         <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar custom-bar"></div>
                         <p className="medi-work-intro-para">
-                            Luxury Mediterranean cruise planning has become increasingly complex.
+                            Luxury Greece cruise planning has become increasingly specialized.
                         </p>
                     </div>
 
@@ -1006,27 +1033,27 @@ function MediterraneanCruises() {
                                 <ul className="medi-pillar-list">
                                     <li>
                                         <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Avoid costly itinerary mistakes</span>
+                                        <span>Select the best islands and itineraries</span>
                                     </li>
                                     <li>
                                         <Calendar size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Select the best sailing season</span>
+                                        <span>Choose ideal travel seasons</span>
                                     </li>
                                     <li>
                                         <Crown size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Choose ideal suite categories</span>
-                                    </li>
-                                    <li>
-                                        <Gem size={18} className="medi-pillar-list-icon icon-theme" />
                                         <span>Access exclusive amenities</span>
                                     </li>
                                     <li>
+                                        <Gem size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Secure premium suites</span>
+                                    </li>
+                                    <li>
                                         <Compass size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Navigate luxury promotions strategically</span>
+                                        <span>Avoid common cruise mistakes</span>
                                     </li>
                                     <li>
                                         <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Match destinations to travel goals</span>
+                                        <span>Match cruise styles to travel goals</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1039,12 +1066,12 @@ function MediterraneanCruises() {
                             </div>
                             <div className="medi-timeline-card">
                                 <div className="medi-card-step-badge">STEP 02</div>
-                                <h3 className="medi-pillar-title">Angela Hughes is globally recognized for luxury travel expertise through:</h3>
+                                <h3 className="medi-pillar-title">Angela Hughes is internationally recognized for luxury travel expertise through:</h3>
                                 <div className="medi-pillar-line-bar"></div>
                                 <ul className="medi-pillar-list">
                                     <li>
                                         <Mic size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Travel industry speaking engagements</span>
+                                        <span>Industry speaking engagements</span>
                                     </li>
                                     <li>
                                         <FileText size={18} className="medi-pillar-list-icon icon-theme" />
@@ -1056,7 +1083,7 @@ function MediterraneanCruises() {
                                     </li>
                                     <li>
                                         <Globe size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>International media recognition</span>
+                                        <span>Media recognition</span>
                                     </li>
                                     <li>
                                         <GraduationCap size={18} className="medi-pillar-list-icon icon-theme" />
@@ -1082,7 +1109,7 @@ function MediterraneanCruises() {
                                     </li>
                                     <li>
                                         <Anchor size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>River cruising</span>
+                                        <span>Mediterranean travel</span>
                                     </li>
                                     <li>
                                         <Compass size={18} className="medi-pillar-list-icon icon-theme" />
@@ -1090,11 +1117,11 @@ function MediterraneanCruises() {
                                     </li>
                                     <li>
                                         <Star size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Safaris</span>
+                                        <span>River cruising</span>
                                     </li>
                                     <li>
                                         <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Premium European travel</span>
+                                        <span>Premium global travel experiences</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1166,58 +1193,6 @@ function MediterraneanCruises() {
                 </div>
             </section>
 
-            {/* CTA SECTION */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Ready to Experience the Mediterranean with Azamara?</h2>
-                        <div className="medi-cta-separator-white"></div>
-
-                        <p className="medi-cta-paragraph-white">
-                            Luxury Mediterranean cruising is no longer simply about transportation between ports — it is about authentic experiences, cultural immersion, personalized service, and seamless planning.
-                        </p>
-
-                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            With over four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Mediterranean experience.
-                        </p>
-
-                        <div className="medi-cta-considerations-box">
-                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
-                            <ul className="medi-cta-considerations-list">
-                                {[
-                                    "Greek Isles cruising",
-                                    "Italy-intensive voyages",
-                                    "Adriatic exploration",
-                                    "Boutique European luxury travel",
-                                    "Extended Mediterranean itineraries"
-                                ].map((item, idx) => (
-                                    <li key={idx} className="medi-cta-considerations-item">
-                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                            Trips & Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
-                        </p>
-
-                        <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </button>
-                            <button className="medi-secondary-outline-button">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">
                 <div className="medi-faq-container">
@@ -1244,6 +1219,58 @@ function MediterraneanCruises() {
                                 )}
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA SECTION */}
+            <section className="medi-cta-main-section">
+                <div className="medi-cta-bg-pattern-layer"></div>
+                <div className="medi-cta-content-relative">
+                    <div className="medi-cta-inner-wrapper">
+                        <h2 className="medi-cta-heading-white">Ready to Experience the Greek Isles with Azamara?</h2>
+                        <div className="medi-cta-separator-white"></div>
+
+                        <p className="medi-cta-paragraph-white">
+                            Luxury Greece cruising is about more than beautiful scenery — it is about authentic island culture, immersive exploration, personalized service, and seamless travel planning.
+                        </p>
+
+                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                            With more than four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Greece cruise experience.
+                        </p>
+
+                        <div className="medi-cta-considerations-box">
+                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
+                            <ul className="medi-cta-considerations-list">
+                                {[
+                                    "Santorini and Mykonos cruises",
+                                    "Cultural Greek Isles itineraries",
+                                    "Boutique Mediterranean voyages",
+                                    "Luxury island-hopping experiences",
+                                    "Extended Mediterranean exploration"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="medi-cta-considerations-item">
+                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
+                            Trips & Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
+                        </p>
+
+                        <div className="medi-cta-button-group">
+                            <button className="medi-primary-cta-button">
+                                <Phone size={18} />
+                                Schedule a Consultation
+                            </button>
+                            <button className="medi-secondary-outline-button">
+                                <LayoutList size={18} />
+                                Request Itinerary Options
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
