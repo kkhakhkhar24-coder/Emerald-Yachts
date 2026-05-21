@@ -6,18 +6,21 @@ import italyCruise from '../../assets/HomePage/Refined_Luxury.jpeg'
 import croatiaCoast from '../../assets/DistinctiveVoyageSailings/singapore-marina-bay-sands-skyline-luxury-travel.png'
 import luxurySuite from '../../assets/SecondPage/Suite.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
+import spainCruise from '../../assets/AzamaraCabinsGuide/Scenic_City_Views.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone, Plus, Minus,
-    Globe, LayoutList, Heart, Utensils, Sun, Award
+    Globe, LayoutList, Heart, Utensils, Sun, Award,
+    Baby, Moon, Music,
+    Mic, FileText, GraduationCap
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/HomePage/HomePage1.webp'
-import hero2 from '../../assets/SecondPage/SecondPage2.webp'
-import hero3 from '../../assets/SecondPage/SecondPage6.webp'
+import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
+import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
+import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -31,6 +34,17 @@ function MediterraneanCruises() {
     }, [mediHeroImages.length])
 
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
+    const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
+    const [mediActiveMistake, setMediActiveMistake] = useState(0)
+    const [isMediSliderHovered, setIsMediSliderHovered] = useState(false)
+
+    useEffect(() => {
+        if (isMediSliderHovered) return
+        const interval = setInterval(() => {
+            setMediActiveMistake((prev) => (prev + 1) % 4)
+        }, 5000)
+        return () => clearInterval(interval)
+    }, [isMediSliderHovered])
 
     const mediToggleFaq = (index) => {
         setMediActiveFaq(mediActiveFaq === index ? null : index)
@@ -76,18 +90,29 @@ function MediterraneanCruises() {
         { question: 'Why use a luxury cruise advisor for Mediterranean cruises?', answer: 'Luxury advisors help travelers maximize value, secure preferred accommodations, and select the best itineraries.' }
     ]
 
-    const mediDifferentiators = [
-        { icon: Clock, title: 'Extended Port Stays', desc: 'Late-night departures and overnight stays in iconic destinations like Venice, Barcelona, and Santorini' },
-        { icon: Ship, title: 'Smaller Ship Access', desc: 'Boutique ships with ~700 guests access ports larger cruise ships cannot reach' },
-        { icon: Compass, title: 'Destination Immersion', desc: 'Emphasis on local culture, culinary exploration, and authentic regional experiences' },
-        { icon: Heart, title: 'Intimate Experience', desc: 'Relaxed luxury atmosphere with personalized service and sophisticated ambiance' }
-    ]
+
 
     const mediMistakes = [
-        { title: 'Choosing the Wrong Season', desc: 'Mediterranean cruising varies dramatically by season. Summer offers energy and nightlife, while spring and fall offer fewer crowds and milder weather.' },
-        { title: 'Underestimating Port Intensity', desc: 'Many Mediterranean itineraries involve extensive walking, stairs, and active touring.' },
-        { title: 'Waiting Too Long to Book Suites', desc: 'Premium Mediterranean sailings and suites often sell out 9–18 months in advance.' },
-        { title: 'Choosing Large Ships for Boutique Destinations', desc: 'Large ships often cannot access smaller Mediterranean ports that make Azamara itineraries unique.' }
+        {
+            title: 'Choosing the Wrong Season',
+            desc: 'Mediterranean cruising varies dramatically by season.',
+            bullets: [
+                'Summer offers energy and nightlife',
+                'Spring and fall offer fewer crowds and milder weather'
+            ]
+        },
+        {
+            title: 'Underestimating Port Intensity',
+            desc: 'Many Mediterranean itineraries involve extensive walking, stairs, and active touring.'
+        },
+        {
+            title: 'Waiting Too Long to Book Suites',
+            desc: 'Premium Mediterranean sailings and suites often sell out 9–18 months in advance.'
+        },
+        {
+            title: 'Choosing Large Ships for Boutique Destinations',
+            desc: 'Large ships often cannot access smaller Mediterranean ports that make Azamara itineraries unique.'
+        }
     ]
 
     const mediSchemaData = {
@@ -193,175 +218,541 @@ function MediterraneanCruises() {
                     <h1 className="medi-hero-main-title">
                         Azamara Mediterranean Cruises: Boutique Luxury Across Europe's Most Iconic Destinations
                     </h1>
-                    <p className="medi-hero-subtitle-text">
-                        Discover immersive European experiences without the crowds of mega ships through Azamara's destination-focused approach
-                    </p>
-                    <div className="medi-hero-cta-container">
-                        <div className="medi-cta-title-text">Start Planning Your Mediterranean Journey</div>
-                        <div className="medi-cta-subtitle-text">
-                            Work with recognized luxury cruise experts to design your perfect Mediterranean experience
-                        </div>
-                        <div className="medi-cta-features-row">
-                            <div className="medi-cta-feature-item">
-                                <CheckCircle size={18} />
-                                <span>Extended Port Stays</span>
-                            </div>
-                            <div className="medi-cta-feature-item">
-                                <CheckCircle size={18} />
-                                <span>Boutique Ship Experience</span>
-                            </div>
-                            <div className="medi-cta-feature-item">
-                                <CheckCircle size={18} />
-                                <span>Cultural Immersion</span>
-                            </div>
-                        </div>
-                        <button className="medi-primary-cta-button">
-                            <Phone size={18} />
-                            Schedule Consultation
-                        </button>
-                        <div className="medi-hero-disclaimer-text">Expert guidance • 40+ years experience • 121+ countries visited</div>
-                    </div>
                 </div>
             </section>
 
-            {/* INTRO SECTION */}
-            <section className="medi-intro-section">
+            {/* PREMIUM INTRO SECTION */}
+            <section className="medi-intro-section medi-premium-intro-section">
+                <div className="medi-premium-intro-glow-one"></div>
+                <div className="medi-premium-intro-glow-two"></div>
                 <div className="medi-intro-container">
-                    <div className="medi-intro-grid-layout">
-                        <div className="medi-intro-heading-column">
-                            <h2 className="medi-section-heading">Discover Why Luxury Travelers Choose Azamara for Mediterranean Cruising</h2>
-                            <div className="medi-heading-separator-bar"></div>
-                        </div>
-                        <div className="medi-intro-content-column">
-                            <p className="medi-body-paragraph">
+                    <div className="medi-premium-intro-grid">
+
+                        {/* Title & Core editorial intro */}
+                        <div className="medi-premium-editorial-block">
+                            <span className="medi-premium-mini-badge">EXCLUSIVELY IMMERSIVE</span>
+                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Mediterranean Cruising</h2>
+                            <div className="medi-premium-separator"></div>
+
+                            <p className="medi-premium-lead-text">
                                 For sophisticated travelers seeking immersive European experiences without the crowds of mega ships, Azamara Mediterranean Cruises have become one of the most respected names in boutique luxury cruising.
                             </p>
-                            <p className="medi-body-paragraph">
-                                Unlike traditional cruise lines that rush from port to port, Azamara focuses on meaningful destination immersion through longer stays, overnight port experiences, smaller ship intimacy, curated cultural programming, access to boutique Mediterranean ports, and personalized luxury service.
-                            </p>
-                            <p className="medi-body-paragraph">
-                                At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Mediterranean cruise experience based on decades of firsthand luxury travel expertise.
-                            </p>
-                            <div className="medi-intro-highlight-box">
-                                With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into luxury Mediterranean cruising.
+
+                            <div className="medi-immersion-list-wrapper">
+                                <p className="medi-immersion-lead-in">
+                                    Unlike traditional cruise lines that rush from port to port, Azamara focuses on meaningful destination immersion through:
+                                </p>
+                                <div className="medi-immersion-cards-grid">
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Clock size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Longer stays</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Sun size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Overnight port experiences</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Ship size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Smaller ship intimacy</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Sparkles size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Curated cultural programming</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Anchor size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Access to boutique Mediterranean ports</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Crown size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Personalized luxury service</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        {/* Signature Expert Block */}
+                        <div className="medi-premium-signature-panel">
+                            <div className="medi-premium-signature-glow"></div>
+                            <div className="medi-premium-signature-content">
+                                <div className="medi-expert-profile-row">
+                                    <div className="medi-expert-avatar-frame">
+                                        <Star size={24} className="medi-star-accent" />
+                                    </div>
+                                    <div>
+                                        <span className="medi-expert-card-subtitle">LIFETIME ADVISOR</span>
+                                        <h3 className="medi-expert-card-title">Angela Hughes</h3>
+                                    </div>
+                                </div>
+
+                                <p className="medi-premium-expert-desc">
+                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Mediterranean cruise experience based on decades of firsthand luxury travel expertise.
+                                </p>
+
+                                <div className="medi-premium-expert-quote-box">
+                                    <span className="medi-quote-mark">“</span>
+                                    <p className="medi-premium-expert-quote-text">
+                                        With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into luxury Mediterranean cruising.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
             {/* WHY AZAMARA EXCELS */}
-            <section className="medi-excellence-section">
-                <div className="medi-excellence-container">
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <h2 className="medi-section-heading">Why Azamara Excels in the Mediterranean</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                        <p className="medi-body-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                            The Mediterranean is one of the world's most competitive luxury cruise markets. However, Azamara has carved out a unique niche by focusing on authentic European exploration.
+            <section className="medi-excel-section">
+                {/* Visual coordinate watermarks for premium destination-themed look */}
+                <div className="medi-excel-coord coord-tl">MEDITERRANEAN EXPLORATION // AZAMARA</div>
+                <div className="medi-excel-coord coord-tr">37.9838° N, 23.7275° E</div>
+                <div className="medi-excel-coord coord-bl">41.9028° N, 12.4964° E</div>
+                <div className="medi-excel-coord coord-br">43.7001° N, 7.2620° E</div>
+
+                <div className="medi-excel-glow-one"></div>
+                <div className="medi-excel-glow-two"></div>
+                <div className="medi-excel-container">
+
+                    {/* Header/Intro Block */}
+                    <div className="medi-excel-header-block">
+                        <h2 className="medi-excel-main-title">Why Azamara Excels in the Mediterranean</h2>
+                        <div className="medi-excel-separator"></div>
+                        <p className="medi-excel-lead-paragraph">
+                            The Mediterranean is one of the world’s most competitive luxury cruise markets.
                         </p>
                     </div>
 
-                    <div className="medi-differentiators-grid">
-                        {mediDifferentiators.map((item, idx) => (
-                            <div key={idx} className="medi-differentiator-card">
-                                <div className="medi-card-icon-wrapper">
-                                    <item.icon size={32} />
-                                </div>
-                                <h3 className="medi-card-title">{item.title}</h3>
-                                <p className="medi-card-description">{item.desc}</p>
+                    {/* Content Grid */}
+                    <div className="medi-excel-grid">
+
+                        {/* Column 1: Focusing On */}
+                        <div className="medi-excel-column">
+                            <div className="medi-excel-card">
+                                <h3 className="medi-excel-card-heading">
+                                    However, Azamara has carved out a unique niche by focusing on:
+                                </h3>
+                                <ul className="medi-excel-list">
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Compass size={18} />
+                                        </div>
+                                        <span>Destination immersion</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Ship size={18} />
+                                        </div>
+                                        <span>Boutique ship experiences</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Clock size={18} />
+                                        </div>
+                                        <span>Extended time in port</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Sparkles size={18} />
+                                        </div>
+                                        <span>Cultural authenticity</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Anchor size={18} />
+                                        </div>
+                                        <span>Smaller ship access</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Crown size={18} />
+                                        </div>
+                                        <span>Relaxed luxury</span>
+                                    </li>
+                                </ul>
                             </div>
-                        ))}
+                        </div>
+
+                        {/* Column 2: Appeals to */}
+                        <div className="medi-excel-column">
+                            <div className="medi-excel-card">
+                                <h3 className="medi-excel-card-heading">
+                                    This appeals strongly to experienced luxury travelers seeking:
+                                </h3>
+                                <ul className="medi-excel-list">
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Gem size={18} />
+                                        </div>
+                                        <span>Cultural depth</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <MapPin size={18} />
+                                        </div>
+                                        <span>Walkable historic ports</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Utensils size={18} />
+                                        </div>
+                                        <span>Culinary experiences</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Globe size={18} />
+                                        </div>
+                                        <span>Local immersion</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Star size={18} />
+                                        </div>
+                                        <span>Sophisticated onboard atmosphere</span>
+                                    </li>
+                                    <li className="medi-excel-list-item">
+                                        <div className="medi-excel-icon-wrapper">
+                                            <Users size={18} />
+                                        </div>
+                                        <span>Fewer crowds</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {/* Footer Statement */}
+                    <div className="medi-excel-footer-block">
+                        <div className="medi-excel-footer-badge">
+                            <Sparkles size={20} />
+                        </div>
+                        <p className="medi-excel-footer-paragraph">
+                            Rather than overwhelming guests with massive onboard entertainment complexes, Azamara prioritizes authentic European exploration.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            {/* WHAT MAKES AZAMARA DIFFERENT */}
+            <section className="medi-diff-section">
+                <div className="medi-diff-container">
+                    <div className="medi-diff-header-block">
+                        <span className="medi-diff-eyebrow-tag">DISTINCTIVE CRUISE STYLE</span>
+                        <h2 className="medi-diff-main-title">What Makes Azamara Mediterranean Cruises Different?</h2>
+                        <div className="medi-diff-separator"></div>
+                    </div>
+
+                    <div className="medi-diff-grid">
+
+                        {/* Pillar 1: Extended Port Stays */}
+                        <div className="medi-diff-card medi-diff-card-navy">
+                            <div className="medi-diff-icon-header">
+                                <div className="medi-diff-icon-box">
+                                    <Clock size={24} />
+                                </div>
+                                <h3 className="medi-diff-card-title">Extended Port Stays</h3>
+                            </div>
+                            <p className="medi-diff-card-text">
+                                Azamara is especially known for late-night departures and overnight stays in iconic Mediterranean destinations including:
+                            </p>
+                            <div className="medi-diff-destination-chips">
+                                <span className="medi-diff-chip">Venice</span>
+                                <span className="medi-diff-chip">Barcelona</span>
+                                <span className="medi-diff-chip">Santorini</span>
+                                <span className="medi-diff-chip">Dubrovnik</span>
+                                <span className="medi-diff-chip">Istanbul</span>
+                                <span className="medi-diff-chip">Amalfi Coast ports</span>
+                            </div>
+                            <p className="medi-diff-card-text-secondary">
+                                This allows travelers to experience:
+                            </p>
+                            <ul className="medi-diff-experience-list">
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Evening dining ashore</span>
+                                </li>
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Local nightlife</span>
+                                </li>
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Sunset sightseeing</span>
+                                </li>
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Cultural performances</span>
+                                </li>
+                                <li>
+                                    <CheckCircle size={16} className="medi-diff-list-icon" />
+                                    <span>Reduced daytime tourist crowds</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Pillar 2: Smaller Ship Access */}
+                        <div className="medi-diff-card medi-diff-card-white">
+                            <div className="medi-diff-icon-header">
+                                <div className="medi-diff-icon-box">
+                                    <Ship size={24} />
+                                </div>
+                                <h3 className="medi-diff-card-title">Smaller Ship Access</h3>
+                            </div>
+
+                            <div className="medi-diff-ship-stat-box">
+                                <div className="medi-diff-stat-ring">
+                                    <div className="medi-diff-stat-num">700</div>
+                                </div>
+                                <div className="medi-diff-stat-label">GUESTS CAPACITY</div>
+                            </div>
+
+                            <p className="medi-diff-card-text">
+                                Azamara’s boutique ships accommodate roughly 700 guests, allowing access to ports larger cruise ships cannot easily reach.
+                            </p>
+                            <div className="medi-diff-quote-wrapper">
+                                <p className="medi-diff-quote-text">
+                                    This creates a more intimate and relaxed luxury experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Pillar 3: Destination Immersion Focus */}
+                        <div className="medi-diff-card medi-diff-card-soft">
+                            <div className="medi-diff-icon-header">
+                                <div className="medi-diff-icon-box">
+                                    <Compass size={24} />
+                                </div>
+                                <h3 className="medi-diff-card-title">Destination Immersion Focus</h3>
+                            </div>
+                            <p className="medi-diff-card-text">
+                                Azamara emphasizes:
+                            </p>
+                            <ul className="medi-diff-focus-list-premium">
+                                <li>
+                                    <span className="medi-diff-list-num">01</span>
+                                    <span>Local culture</span>
+                                </li>
+                                <li>
+                                    <span className="medi-diff-list-num">02</span>
+                                    <span>Culinary exploration</span>
+                                </li>
+                                <li>
+                                    <span className="medi-diff-list-num">03</span>
+                                    <span>Regional experiences</span>
+                                </li>
+                                <li>
+                                    <span className="medi-diff-list-num">04</span>
+                                    <span>Enrichment programming</span>
+                                </li>
+                                <li>
+                                    <span className="medi-diff-list-num">05</span>
+                                    <span>Curated shore excursions</span>
+                                </li>
+                            </ul>
+
+                            <div className="medi-diff-conclusion-box">
+                                <p className="medi-diff-conclusion-text">
+                                    For travelers prioritizing meaningful travel over onboard spectacle, this approach is highly appealing.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
-            {/* ITINERARIES WITH IMAGE */}
-            <section className="medi-itineraries-premium-section">
-                <div className="medi-itineraries-layout-container">
-                    <div className="medi-itineraries-image-panels">
-                        <div className="medi-image-panel medi-panel-one">
-                            <img src={greeceCruise} alt="Greece cruise" />
-                        </div>
-                        <div className="medi-image-panel medi-panel-two">
-                            <img src={italyCruise} alt="Italy cruise" />
-                        </div>
-                        <div className="medi-image-panel medi-panel-three">
-                            <img src={croatiaCoast} alt="Croatia coast" />
-                        </div>
-                        <div className="medi-side-vertical-label">DESTINATIONS</div>
+            {/* ITINERARIES SHOWCASE */}
+            <section className="medi-itinerary-showcase-section">
+                <div className="medi-itinerary-showcase-container">
+                    <div className="medi-itinerary-showcase-header">
+                        <span className="medi-itinerary-eyebrow">CURATED JOURNEYS</span>
+                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Mediterranean Itineraries</h2>
+                        <div className="medi-itinerary-showcase-separator"></div>
                     </div>
 
-                    <div className="medi-itineraries-text-content">
-                        <h2 className="medi-itineraries-main-heading">Best Azamara Mediterranean Itineraries</h2>
-                        <div className="medi-heading-separator-bar"></div>
+                    <div className="medi-itinerary-dashboard">
+                        {/* Left Side: Navigation Tabs */}
+                        <div className="medi-itinerary-tabs">
+                            {mediItineraries.map((itinerary, idx) => (
+                                <button
+                                    key={idx}
+                                    className={`medi-itinerary-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`}
+                                    onClick={() => setMediSelectedItinerary(idx)}
+                                >
+                                    <span className="medi-itinerary-tab-number">0{idx + 1}</span>
+                                    <div className="medi-itinerary-tab-meta">
+                                        <span className="medi-itinerary-tab-title">{itinerary.title}</span>
+                                    </div>
+                                    <ChevronRight size={18} className="medi-itinerary-tab-arrow" />
+                                </button>
+                            ))}
+                        </div>
 
-                        {mediItineraries.map((itinerary, idx) => (
-                            <div key={idx} className="medi-itinerary-block">
-                                <h3 className="medi-itinerary-title">{itinerary.title}</h3>
-                                <div className="medi-itinerary-best-for">
-                                    <strong>Best For:</strong>
-                                    <ul className="medi-itinerary-list">
-                                        {itinerary.bestFor.map((item, i) => (
-                                            <li key={i}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="medi-itinerary-highlights">
-                                    <strong>Highlights:</strong> {itinerary.highlights.join(', ')}
+                        {/* Right Side: Showcase Content View */}
+                        <div className="medi-itinerary-showcase-card">
+                            <div className="medi-itinerary-showcase-image-wrapper">
+                                <img
+                                    src={
+                                        mediSelectedItinerary === 0 ? greeceCruise :
+                                            mediSelectedItinerary === 1 ? italyCruise :
+                                                mediSelectedItinerary === 2 ? croatiaCoast : spainCruise
+                                    }
+                                    alt={mediItineraries[mediSelectedItinerary].title}
+                                    className="medi-itinerary-showcase-img"
+                                />
+                                <div className="medi-itinerary-showcase-img-overlay"></div>
+                                <span className="medi-itinerary-showcase-badge">RECOMMENDED VOYAGE</span>
+                            </div>
+
+                            <div className="medi-itinerary-showcase-body">
+                                <h3 className="medi-itinerary-showcase-title">{mediItineraries[mediSelectedItinerary].title}</h3>
+
+                                <div className="medi-itinerary-details-grid">
+                                    <div className="medi-itinerary-details-col">
+                                        <h4 className="medi-itinerary-details-heading">Best For:</h4>
+                                        <ul className="medi-itinerary-details-list">
+                                            {mediItineraries[mediSelectedItinerary].bestFor.map((item, i) => (
+                                                <li key={i}>
+                                                    <Sparkles size={14} className="medi-itinerary-detail-icon" />
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    <div className="medi-itinerary-details-col">
+                                        <h4 className="medi-itinerary-details-heading">Highlights:</h4>
+                                        <div className="medi-itinerary-details-chips">
+                                            {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
+                                                <span key={i} className="medi-itinerary-details-chip">
+                                                    <MapPin size={12} className="medi-itinerary-chip-icon" />
+                                                    <span>{item}</span>
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* EXPERT INSIGHT */}
-            <section className="medi-expert-section">
-                <div className="medi-expert-container">
-                    <div className="medi-expert-layout-grid">
-                        <div className="medi-expert-portrait-area">
-                            <div className="medi-portrait-frame">
-                                <img src={azamaraShip} alt="Angela Hughes" />
+            <section className="medi-expert-editorial-section">
+                <div className="medi-expert-editorial-container">
+                    <div className="medi-expert-editorial-card">
+
+                        {/* Left Side: Editorial Portrait and Floating Stat Badge */}
+                        <div className="medi-editorial-portrait-block">
+                            <div className="medi-editorial-image-frame">
+                                <img src={azamaraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <div className="medi-editorial-gradient-layer"></div>
                             </div>
-                            <div className="medi-expert-watermark-icon">
-                                <Award size={400} />
+
+                            {/* Differentiated floating stat board using roots colors */}
+                            <div className="medi-editorial-floating-stat">
+                                <div className="medi-stat-tile">
+                                    <span className="medi-stat-number">40+</span>
+                                    <span className="medi-stat-label">Years Experience</span>
+                                </div>
+                                <div className="medi-stat-divider"></div>
+                                <div className="medi-stat-tile">
+                                    <span className="medi-stat-number">121+</span>
+                                    <span className="medi-stat-label">Countries Visited</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="medi-expert-text-area">
-                            <div className="medi-expert-badge-label">Expert Insight</div>
-                            <h2 className="medi-expert-main-heading">Angela Hughes on Mediterranean Small-Ship Cruising</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                        {/* Right Side: Editorial Text & Structured Lists */}
+                        <div className="medi-editorial-content-block">
+                            <div className="medi-editorial-header">
+                                <div className="medi-editorial-eyebrow-container">
+                                    <Award size={18} className="medi-editorial-icon-badge" />
+                                    <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                </div>
+                                <h2 className="medi-editorial-title">
+                                    Why Mediterranean Small-Ship Cruising Continues <br />to Grow
+                                </h2>
+                                <div className="medi-editorial-accent-bar"></div>
+                            </div>
 
-                            <p className="medi-expert-paragraph">
+                            <p className="medi-editorial-lead-para">
                                 According to Angela Hughes, sophisticated travelers increasingly prefer boutique Mediterranean cruise experiences over mega-ship tourism.
                             </p>
-                            <p className="medi-expert-paragraph">
-                                After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees travelers prioritizing authenticity, flexibility, destination immersion, personalized service, fewer crowds, and cultural connection.
+
+                            <div className="medi-priorities-box">
+                                <p className="medi-priorities-intro">
+                                    After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees travelers prioritizing:
+                                </p>
+                                <div className="medi-priorities-grid-pills">
+                                    {[
+                                        'Authenticity',
+                                        'Flexibility',
+                                        'Destination immersion',
+                                        'Personalized service',
+                                        'Fewer crowds',
+                                        'Cultural connection'
+                                    ].map((item, idx) => (
+                                        <div key={idx} className="medi-priority-pill-item">
+                                            <CheckCircle size={15} className="medi-priority-check" />
+                                            <span>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <p className="medi-editorial-body-para">
+                                As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers navigate increasingly complex cruise choices with real-world expertise rather than generic online recommendations.
                             </p>
 
-                            <div className="medi-credentials-list">
-                                <div className="medi-credential-item">
-                                    <Star className="medi-credential-icon" size={20} />
-                                    <span>CEO of Trips & Ships Luxury Travel</span>
-                                </div>
-                                <div className="medi-credential-item">
-                                    <Star className="medi-credential-icon" size={20} />
-                                    <span>Founder of Luxury Travel University</span>
-                                </div>
-                                <div className="medi-credential-item">
-                                    <Star className="medi-credential-icon" size={20} />
-                                    <span>2024 Luxury Travel Influencer of the Year</span>
-                                </div>
-                                <div className="medi-credential-item">
-                                    <Star className="medi-credential-icon" size={20} />
-                                    <span>Travel Leaders Network Advisory Board</span>
+                            <div className="medi-expertise-section-box">
+                                <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                <div className="medi-expertise-horizontal-strip">
+                                    {[
+                                        { title: 'Luxury cruises', icon: Ship },
+                                        { title: 'Expedition travel', icon: Compass },
+                                        { title: 'River cruising', icon: Anchor },
+                                        { title: 'Safaris', icon: Globe },
+                                        { title: 'Premium global travel planning', icon: Sparkles }
+                                    ].map((item, idx) => {
+                                        const IconComponent = item.icon
+                                        return (
+                                            <div key={idx} className="medi-expertise-pills-row">
+                                                <div className="medi-expertise-pill-icon-box">
+                                                    <IconComponent size={14} />
+                                                </div>
+                                                <span className="medi-expertise-pill-text">{item.title}</span>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
+
 
             {/* IS AZAMARA LUXURY */}
             <section className="medi-luxury-definition-section">
@@ -420,21 +811,83 @@ function MediterraneanCruises() {
                 </div>
             </section>
 
-            {/* COMMON MISTAKES */}
-            <section className="medi-mistakes-section">
-                <div className="medi-mistakes-container">
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <h2 className="medi-section-heading">Common Mistakes Travelers Make When Booking Mediterranean Cruises</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+            {/* COMMON MISTAKES AUTO-SLIDER */}
+            <section
+                className="medi-mistakes-slider-section"
+                onMouseEnter={() => setIsMediSliderHovered(true)}
+                onMouseLeave={() => setIsMediSliderHovered(false)}
+            >
+                <div className="medi-mistakes-slider-container">
+                    <div className="medi-mistakes-slider-header">
+                        <span className="medi-mistakes-eyebrow">AVOID CRUISE PITFALLS</span>
+                        <h2 className="medi-mistakes-slider-title">
+                            Common Mistakes Travelers Make When Booking Mediterranean Cruises
+                        </h2>
+                        <div className="medi-mistakes-slider-separator"></div>
                     </div>
 
-                    <div className="medi-mistakes-grid">
-                        {mediMistakes.map((mistake, idx) => (
-                            <div key={idx} className="medi-mistake-card">
-                                <div className="medi-mistake-number">{String(idx + 1).padStart(2, '0')}</div>
-                                <h3 className="medi-mistake-title">{mistake.title}</h3>
-                                <p className="medi-mistake-description">{mistake.desc}</p>
-                            </div>
+                    <div className="medi-mistakes-carousel-wrapper">
+                        {/* Left Arrow */}
+                        <button
+                            className="medi-slider-nav-btn btn-left"
+                            onClick={() => setMediActiveMistake((prev) => (prev === 0 ? mediMistakes.length - 1 : prev - 1))}
+                            aria-label="Previous slide"
+                        >
+                            <ChevronRight size={24} style={{ transform: 'rotate(180deg)' }} />
+                        </button>
+
+                        {/* Slider Card Viewport */}
+                        <div className="medi-slider-card-viewport">
+                            {mediMistakes.map((mistake, idx) => {
+                                const isActive = mediActiveMistake === idx
+                                return (
+                                    <div
+                                        key={idx}
+                                        className={`medi-mistakes-slider-card ${isActive ? 'active' : ''}`}
+                                    >
+                                        <div className="medi-mistake-slide-header">
+                                            <span className="medi-mistake-card-num">0{idx + 1}</span>
+                                            <h3 className="medi-mistake-card-title">{mistake.title}</h3>
+                                        </div>
+
+                                        <div className="medi-mistake-slide-body">
+                                            <p className="medi-mistake-card-description">{mistake.desc}</p>
+
+                                            {mistake.bullets && mistake.bullets.length > 0 && (
+                                                <ul className="medi-mistake-card-bullets-list">
+                                                    {mistake.bullets.map((bullet, bulletIdx) => (
+                                                        <li key={bulletIdx} className="medi-mistake-card-bullet-item">
+                                                            <CheckCircle size={16} className="medi-mistake-bullet-check" />
+                                                            <span>{bullet}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                        {/* Right Arrow */}
+                        <button
+                            className="medi-slider-nav-btn btn-right"
+                            onClick={() => setMediActiveMistake((prev) => (prev === mediMistakes.length - 1 ? 0 : prev + 1))}
+                            aria-label="Next slide"
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+                    </div>
+
+                    {/* Progress Indicator Dots */}
+                    <div className="medi-slider-progress-dots">
+                        {mediMistakes.map((_, idx) => (
+                            <button
+                                key={idx}
+                                className={`medi-slider-dot ${mediActiveMistake === idx ? 'active' : ''}`}
+                                onClick={() => setMediActiveMistake(idx)}
+                                aria-label={`Go to slide ${idx + 1}`}
+                            />
                         ))}
                     </div>
                 </div>
@@ -450,22 +903,72 @@ function MediterraneanCruises() {
                         <div className="medi-audience-column medi-best-for-column">
                             <h3 className="medi-audience-column-heading">Best For</h3>
                             <ul className="medi-audience-list">
-                                <li>Experienced travelers</li>
-                                <li>Couples</li>
-                                <li>Empty nesters</li>
-                                <li>Destination-focused cruisers</li>
-                                <li>Luxury travelers seeking intimacy</li>
-                                <li>Cultural explorers</li>
-                                <li>Travelers avoiding mega ships</li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Compass size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Experienced travelers</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Heart size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Couples</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Sun size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Empty nesters</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <MapPin size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Destination-focused cruisers</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Crown size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Luxury travelers seeking intimacy</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Globe size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Cultural explorers</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Ship size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Travelers avoiding mega ships</span>
+                                </li>
                             </ul>
                         </div>
 
                         <div className="medi-audience-column medi-not-ideal-column">
                             <h3 className="medi-audience-column-heading">Not Ideal For</h3>
                             <ul className="medi-audience-list">
-                                <li>Families wanting extensive kids programs</li>
-                                <li>Travelers seeking nonstop nightlife</li>
-                                <li>Guests prioritizing large-scale entertainment</li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper not-ideal">
+                                        <Baby size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Families wanting extensive kids programs</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper not-ideal">
+                                        <Moon size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Travelers seeking nonstop nightlife</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper not-ideal">
+                                        <Music size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Guests prioritizing large-scale entertainment</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -475,50 +978,190 @@ function MediterraneanCruises() {
             {/* WHY WORK WITH US */}
             <section className="medi-work-with-us-section">
                 <div className="medi-work-with-us-container">
-                    <div className="medi-work-with-us-content">
-                        <h2 className="medi-section-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
-                        <div className="medi-heading-separator-bar"></div>
 
-                        <p className="medi-body-paragraph">
-                            Luxury Mediterranean cruise planning has become increasingly complex. Working with experienced luxury advisors helps travelers:
+                    {/* Header Block */}
+                    <div className="medi-work-header-card">
+                        <span className="medi-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
+                        <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
+                        <div className="medi-heading-separator-bar custom-bar"></div>
+                        <p className="medi-work-intro-para">
+                            Luxury Mediterranean cruise planning has become increasingly complex.
                         </p>
+                    </div>
 
-                        <div className="medi-benefits-grid">
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Avoid costly itinerary mistakes</span>
+                    {/* Stepped Timeline Journey */}
+                    <div className="medi-work-timeline-flow">
+                        {/* The Central Glowing Line */}
+                        <div className="medi-timeline-line"></div>
+
+                        {/* Pillar 1: Advisor Benefits (Left Aligned) */}
+                        <div className="medi-timeline-step step-left">
+                            <div className="medi-timeline-node">
+                                <Compass size={18} />
                             </div>
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Select the best sailing season</span>
-                            </div>
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Choose ideal suite categories</span>
-                            </div>
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Access exclusive amenities</span>
-                            </div>
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Navigate luxury promotions strategically</span>
-                            </div>
-                            <div className="medi-benefit-item">
-                                <CheckCircle size={24} className="medi-benefit-icon" />
-                                <span>Match destinations to travel goals</span>
+                            <div className="medi-timeline-card">
+                                <div className="medi-card-step-badge">STEP 01</div>
+                                <h3 className="medi-pillar-title">Working with experienced luxury advisors helps travelers:</h3>
+                                <div className="medi-pillar-line-bar"></div>
+                                <ul className="medi-pillar-list">
+                                    <li>
+                                        <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Avoid costly itinerary mistakes</span>
+                                    </li>
+                                    <li>
+                                        <Calendar size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Select the best sailing season</span>
+                                    </li>
+                                    <li>
+                                        <Crown size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Choose ideal suite categories</span>
+                                    </li>
+                                    <li>
+                                        <Gem size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Access exclusive amenities</span>
+                                    </li>
+                                    <li>
+                                        <Compass size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Navigate luxury promotions strategically</span>
+                                    </li>
+                                    <li>
+                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Match destinations to travel goals</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div className="medi-recognition-box">
-                            <p className="medi-body-paragraph">
-                                Angela Hughes is globally recognized for luxury travel expertise through travel industry speaking engagements, weekly travel columns, advisory board leadership, international media recognition, and Luxury Travel University training programs.
-                            </p>
+                        {/* Pillar 2: Global Recognition (Right Aligned) */}
+                        <div className="medi-timeline-step step-right">
+                            <div className="medi-timeline-node">
+                                <Award size={18} />
+                            </div>
+                            <div className="medi-timeline-card">
+                                <div className="medi-card-step-badge">STEP 02</div>
+                                <h3 className="medi-pillar-title">Angela Hughes is globally recognized for luxury travel expertise through:</h3>
+                                <div className="medi-pillar-line-bar"></div>
+                                <ul className="medi-pillar-list">
+                                    <li>
+                                        <Mic size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Travel industry speaking engagements</span>
+                                    </li>
+                                    <li>
+                                        <FileText size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Weekly travel columns</span>
+                                    </li>
+                                    <li>
+                                        <Award size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Advisory board leadership</span>
+                                    </li>
+                                    <li>
+                                        <Globe size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>International media recognition</span>
+                                    </li>
+                                    <li>
+                                        <GraduationCap size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Luxury Travel University training programs</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Pillar 3: Specializations (Left Aligned) */}
+                        <div className="medi-timeline-step step-left">
+                            <div className="medi-timeline-node">
+                                <Ship size={18} />
+                            </div>
+                            <div className="medi-timeline-card">
+                                <div className="medi-card-step-badge">STEP 03</div>
+                                <h3 className="medi-pillar-title">Trips & Ships Luxury Travel specializes in:</h3>
+                                <div className="medi-pillar-line-bar"></div>
+                                <ul className="medi-pillar-list">
+                                    <li>
+                                        <Ship size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Luxury cruises</span>
+                                    </li>
+                                    <li>
+                                        <Anchor size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>River cruising</span>
+                                    </li>
+                                    <li>
+                                        <Compass size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Expedition voyages</span>
+                                    </li>
+                                    <li>
+                                        <Star size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Safaris</span>
+                                    </li>
+                                    <li>
+                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Premium European travel</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="medi-work-with-us-visual">
-                        <img src={destinationDining} alt="Luxury travel planning" className="medi-visual-image" />
+                </div>
+            </section>
+
+            {/* ANGELA HUGHES AUTHORITY BOX */}
+            <section className="medi-authority-section">
+                <div className="medi-authority-container">
+
+                    {/* Header Block */}
+                    <div className="medi-authority-header-block">
+                        <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Angela Hughes Authority Box</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
+                    <div className="medi-prestige-plaque-wrapper">
+                        {/* Left Side: The Identity Board */}
+                        <div className="medi-prestige-identity-card">
+                            <div className="medi-prestige-seal-ring">
+                                <span className="medi-prestige-initials">AH</span>
+                            </div>
+                            <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
+                            <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
+                            <div className="medi-prestige-role-pill">CEO of Trips & Ships Luxury Travel</div>
+
+                            <div className="medi-prestige-meta-box">
+                                <div className="medi-prestige-meta-line"></div>
+                                <span className="medi-prestige-meta-text">Est. 1986 | Global Authority</span>
+                            </div>
+                        </div>
+
+                        {/* Right Side: Cascading Accolade Cards */}
+                        <div className="medi-prestige-credentials-column">
+                            <div className="medi-prestige-list">
+                                {[
+                                    { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
+                                    { text: "40+ years luxury travel expertise", icon: Clock, category: "EXPERIENCE" },
+                                    { text: "Traveled to 121+ countries", icon: Globe, category: "EXPLORATION" },
+                                    { text: "Global luxury travel speaker", icon: Mic, category: "SPEAKING" },
+                                    { text: "Weekly travel columnist", icon: FileText, category: "MEDIA" },
+                                    { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
+                                    { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
+                                    { text: "Named among the Most Influential Women in Travel in 2026", icon: Crown, category: "PRESTIGE" },
+                                    { text: "Featured in global travel publications", icon: Sparkles, category: "RECOGNITION" },
+                                    { text: "Luxury cruise and expedition specialist", icon: Ship, category: "SPECIALTY" }
+                                ].map((accolade, idx) => {
+                                    const IconComp = accolade.icon;
+                                    return (
+                                        <div key={idx} className="medi-prestige-item-card">
+                                            <div className="medi-prestige-item-accent-bar"></div>
+                                            <div className="medi-prestige-item-icon-box">
+                                                <IconComp size={16} />
+                                            </div>
+                                            <div className="medi-prestige-item-content">
+                                                <span className="medi-prestige-item-category">{accolade.category}</span>
+                                                <h4 className="medi-prestige-item-text">{accolade.text}</h4>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -530,9 +1173,37 @@ function MediterraneanCruises() {
                     <div className="medi-cta-inner-wrapper">
                         <h2 className="medi-cta-heading-white">Ready to Experience the Mediterranean with Azamara?</h2>
                         <div className="medi-cta-separator-white"></div>
+
                         <p className="medi-cta-paragraph-white">
                             Luxury Mediterranean cruising is no longer simply about transportation between ports — it is about authentic experiences, cultural immersion, personalized service, and seamless planning.
                         </p>
+
+                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                            With over four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Mediterranean experience.
+                        </p>
+
+                        <div className="medi-cta-considerations-box">
+                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
+                            <ul className="medi-cta-considerations-list">
+                                {[
+                                    "Greek Isles cruising",
+                                    "Italy-intensive voyages",
+                                    "Adriatic exploration",
+                                    "Boutique European luxury travel",
+                                    "Extended Mediterranean itineraries"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="medi-cta-considerations-item">
+                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
+                            Trips & Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
+                        </p>
+
                         <div className="medi-cta-button-group">
                             <button className="medi-primary-cta-button">
                                 <Phone size={18} />

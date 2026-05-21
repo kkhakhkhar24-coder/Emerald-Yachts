@@ -12,7 +12,7 @@ import {
     Quote,
     AlertTriangle,
 } from "lucide-react";
-import "./AzamaraShipComparison.css";
+import "./Azamarashipcomparison.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/AzamaravsVikingOcean/hero1.webp";
