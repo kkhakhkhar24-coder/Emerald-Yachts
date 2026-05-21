@@ -15,18 +15,16 @@ import {
 import "./Azamarashipcomparison.css";
 import Navbar from "../../components/Navbar/Navbar";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/AzamaravsVikingOcean/hero1.webp";
+import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
 import HeroImage2 from "../../assets/AzamaravsVikingOcean/hero2.webp";
 import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import ImageGallery1 from "../../assets/AzamaravsVikingOcean/gallery1.webp";
 import ImageGallery2 from "../../assets/AzamaravsVikingOcean/gallery2.webp";
-import ImageGallery3 from "../../assets/AzamaravsVikingOcean/gallery3.webp";
-import ImageGallery4 from "../../assets/AzamaravsVikingOcean/gallery4.webp";
-// import OnwardImage from "../../assets/AzamaravsVikingOcean/onward.webp";
-// import JourneyImage from "../../assets/AzamaravsVikingOcean/journey.webp";
-// import QuestImage from "../../assets/AzamaravsVikingOcean/quest.webp";
-// import PursuitImage from "../../assets/AzamaravsVikingOcean/pursuit.webp";
+import OnwardImage from "../../assets/Azamarashipcomparison/Azamara-Onward-lux-urycruise-ship.webp";
+import JourneyImage from "../../assets/Azamarashipcomparison/Azamara-Journey-suite-balcony.webp";
+import QuestImage from "../../assets/Azamarashipcomparison/Azamara-Quest.webp";
+import PursuitImage from "../../assets/Azamarashipcomparison/Azamara-night.webp";
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {
@@ -206,6 +204,7 @@ function FAQ() {
 
 const AzamaraShipComparison = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [readMore, setReadMore] = useState(false);
     const images = [HeroImage1, HeroImage2, HeroImage3];
 
     useEffect(() => {
@@ -250,15 +249,6 @@ const AzamaraShipComparison = () => {
                     <p className="Asc-hero-sub">
                         Discover the Best Azamara Ship for Your Luxury Travel Style
                     </p>
-                    <div className="Asc-hero-slide-dots">
-                        {images.map((_, i) => (
-                            <button
-                                key={i}
-                                className={`Asc-dot${i === currentSlide ? " active" : ""}`}
-                                onClick={() => setCurrentSlide(i)}
-                            />
-                        ))}
-                    </div>
                 </div>
             </section>
 
@@ -283,12 +273,26 @@ const AzamaraShipComparison = () => {
                                 <p className="Asc-intro-text Asc-intro-spacing">
                                     The answer depends entirely on your travel style, destinations, suite preferences, and onboard priorities.
                                 </p>
-                                <p className="Asc-intro-text Asc-intro-spacing">
-                                    At Trips &amp; Ships Luxury Travel, luxury cruise specialist Angela Hughes helps discerning travelers select the ideal Azamara experience based on decades of global luxury travel expertise.
-                                </p>
-                                <p className="Asc-intro-text">
-                                    With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes brings a level of luxury cruise expertise few advisors worldwide can match.
-                                </p>
+
+                                {readMore && (
+                                    <>
+                                        <p className="Asc-intro-text Asc-intro-spacing">
+                                            At Trips &amp; Ships Luxury Travel, luxury cruise specialist Angela Hughes helps discerning travelers select the ideal Azamara experience based on decades of global luxury travel expertise.
+                                        </p>
+                                        <p className="Asc-intro-text">
+                                            With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes brings a level of luxury cruise expertise few advisors worldwide can match.
+                                        </p>
+                                    </>
+                                )}
+
+                                <div className="Scenic_readmore_wrapper">
+                                    <button
+                                        className="Scenic_readmore_btn"
+                                        onClick={() => setReadMore(!readMore)}
+                                    >
+                                        {readMore ? "Read Less" : "Read More"}
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -408,7 +412,7 @@ const AzamaraShipComparison = () => {
                         {/* JOURNEY */}
                         <div className="Asc-ship-card">
                             <div className="Asc-ship-image-wrap">
-                                {/* <img src={JourneyImage} alt="Azamara Journey luxury cruise ship" className="Asc-ship-img" /> */}
+                                <img src={JourneyImage} alt="Azamara Journey luxury cruise ship" className="Asc-ship-img" />
                                 <div className="Asc-ship-badge">Azamara Journey</div>
                             </div>
                             <div className="Asc-ship-body">
@@ -439,7 +443,7 @@ const AzamaraShipComparison = () => {
                         {/* QUEST */}
                         <div className="Asc-ship-card">
                             <div className="Asc-ship-image-wrap">
-                                {/* <img src={QuestImage} alt="Azamara Quest cruise ship" className="Asc-ship-img" /> */}
+                                <img src={QuestImage} alt="Azamara Quest cruise ship" className="Asc-ship-img" />
                                 <div className="Asc-ship-badge">Azamara Quest</div>
                             </div>
                             <div className="Asc-ship-body">
@@ -469,7 +473,7 @@ const AzamaraShipComparison = () => {
                         {/* PURSUIT */}
                         <div className="Asc-ship-card">
                             <div className="Asc-ship-image-wrap">
-                                {/* <img src={PursuitImage} alt="Azamara Pursuit cruise ship" className="Asc-ship-img" /> */}
+                                <img src={PursuitImage} alt="Azamara Pursuit cruise ship" className="Asc-ship-img" />
                                 <div className="Asc-ship-badge">Azamara Pursuit</div>
                             </div>
                             <div className="Asc-ship-body">
@@ -499,7 +503,7 @@ const AzamaraShipComparison = () => {
                         <div className="Asc-ship-card Asc-ship-card-featured">
                             <div className="Asc-ship-featured-tag">Newest Ship</div>
                             <div className="Asc-ship-image-wrap">
-                                {/* <img src={OnwardImage} alt="Azamara Onward luxury cruise ship" className="Asc-ship-img" /> */}
+                                <img src={OnwardImage} alt="Azamara Onward luxury cruise ship" className="Asc-ship-img" />
                                 <div className="Asc-ship-badge">Azamara Onward</div>
                             </div>
                             <div className="Asc-ship-body">
@@ -542,7 +546,7 @@ const AzamaraShipComparison = () => {
                             </span>
 
                             <h2 className="Asc-expert-title">
-                                Why Small-Ship Luxury Matters More Than Ever
+                                Why Small-Ship Luxury Matters <br /> More Than Ever
                             </h2>
 
                             <div className="Asc-expert-divider"></div>
@@ -575,32 +579,6 @@ const AzamaraShipComparison = () => {
                                     </div>
                                 </div>
 
-                                <div className="Asc-expert-card">
-                                    <h3 className="Asc-expert-card-title">
-                                        Her expertise spans:
-                                    </h3>
-
-                                    <div className="Asc-expert-list">
-                                        {[
-                                            { icon: <Ship size={18} />, label: "Luxury cruising" },
-                                            { icon: <Ship size={18} />, label: "River cruising" },
-                                            { icon: <MapPin size={18} />, label: "Expedition travel" },
-                                            { icon: <MapPin size={18} />, label: "African safaris" },
-                                            { icon: <Star size={18} />, label: "Global premium travel planning" },
-                                        ].map((item, i) => (
-                                            <div className="Asc-expert-list-item" key={i}>
-                                                <span className="Asc-expert-list-icon">{item.icon}</span>
-                                                <span className="Asc-expert-list-label">{item.label}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            {/* RIGHT SIDE */}
-                            <div className="Asc-expert-right">
-
                                 <div className="Asc-quote-card">
 
                                     <div className="Asc-quote-icon">
@@ -623,6 +601,33 @@ const AzamaraShipComparison = () => {
                                     </div>
 
                                 </div>
+
+                            </div>
+
+                            {/* RIGHT SIDE */}
+                            <div className="Asc-expert-right">
+                                <div className="Asc-expert-card">
+                                    <h3 className="Asc-expert-card-title">
+                                        Her expertise spans:
+                                    </h3>
+
+                                    <div className="Asc-expert-list">
+                                        {[
+                                            { icon: <Ship size={18} />, label: "Luxury cruising" },
+                                            { icon: <Ship size={18} />, label: "River cruising" },
+                                            { icon: <MapPin size={18} />, label: "Expedition travel" },
+                                            { icon: <MapPin size={18} />, label: "African safaris" },
+                                            { icon: <Star size={18} />, label: "Global premium travel planning" },
+                                        ].map((item, i) => (
+                                            <div className="Asc-expert-list-item" key={i}>
+                                                <span className="Asc-expert-list-icon">{item.icon}</span>
+                                                <span className="Asc-expert-list-label">{item.label}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+
 
                                 <div className="Asc-expert-bio-box">
                                     <div className="Asc-expert-bio-badge">Global Speaker & Advisor</div>
@@ -651,26 +656,30 @@ const AzamaraShipComparison = () => {
                     <div className="Asc-best-grid">
                         <div className="Asc-best-card Asc-best-primary">
                             <div className="Asc-best-icon"><Award size={24} /></div>
-                            <span className="Asc-best-category">Best Overall</span>
                             <h3 className="Asc-best-ship">Azamara Onward</h3>
+                            <span className="Asc-best-category">Best Overall</span>
+
                             <p className="Asc-best-desc">Ideal for travelers wanting the freshest onboard experience.</p>
                         </div>
                         <div className="Asc-best-card">
                             <div className="Asc-best-icon"><MapPin size={24} /></div>
-                            <span className="Asc-best-category">Best for Destination Immersion</span>
                             <h3 className="Asc-best-ship">Azamara Pursuit</h3>
+                            <span className="Asc-best-category">Best for Destination Immersion</span>
+
                             <p className="Asc-best-desc">Outstanding exotic itineraries and adventure-focused routes.</p>
                         </div>
                         <div className="Asc-best-card">
                             <div className="Asc-best-icon"><Users size={24} /></div>
-                            <span className="Asc-best-category">Best for First-Time Azamara Guests</span>
                             <h3 className="Asc-best-ship">Azamara Journey</h3>
+                            <span className="Asc-best-category">Best for First-Time Azamara Guests</span>
+
                             <p className="Asc-best-desc">Balanced, welcoming, and highly consistent.</p>
                         </div>
                         <div className="Asc-best-card">
                             <div className="Asc-best-icon"><Ship size={24} /></div>
-                            <span className="Asc-best-category">Best for Extended Voyages</span>
                             <h3 className="Asc-best-ship">Azamara Quest</h3>
+                            <span className="Asc-best-category">Best for Extended Voyages</span>
+
                             <p className="Asc-best-desc">Excellent world cruise and longer itinerary reputation.</p>
                         </div>
                     </div>
@@ -926,7 +935,7 @@ const AzamaraShipComparison = () => {
                             <div className="Asc-authority-badge">Angela Hughes Authority Box</div>
                             <h2 className="Asc-authority-title">Meet Angela Hughes</h2>
                             <div className="Asc-authority-line"></div>
-                            
+
                             <ul className="Asc-authority-list">
                                 {[
                                     "CEO of Trips & Ships Luxury Travel",
@@ -953,7 +962,7 @@ const AzamaraShipComparison = () => {
 
                         {/* RIGHT COLUMN: IMAGE */}
                         <div className="Asc-authority-image-wrapper">
-                            <div 
+                            <div
                                 className="Asc-authority-image"
                                 style={{ backgroundImage: `url(${AboutImage})` }}
                                 role="img"
