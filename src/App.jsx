@@ -42,6 +42,7 @@ import LuxuryAfricanSafariCost from "./pages/LuxuryAfricanSafariCost/LuxuryAfric
 import BestAfricaSafari from "./pages/BestAfricanSafariForFirstTime/BestAfricaSafari";
 import LuxurySafariAfrica from "./pages/Luxurysafariafrica/Luxurysafariafrica";
 import BestAfricanSafariForFamilies from "./pages/BestAfricanSafariForFamilies/Bestafricasafariforfamilies";
+import AzamaraShipComparison from "./pages/AzamaraShipComparison/Azamarashipcomparison";
 
 function App() {
   return (
@@ -192,6 +193,12 @@ function App() {
             path="/best-african-safari-for-families/"
             element={<BestAfricanSafariForFamilies />}
           />
+
+          <Route
+            path="/azamara-ship-comparison"
+            element={<AzamaraShipComparison />}
+          />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
