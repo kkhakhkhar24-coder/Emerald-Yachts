@@ -27,12 +27,11 @@ import BafricaImage2 from "../../assets/Bestafricasafariforfamilies/Bestafrica2.
 import BafricaImage8 from "../../assets/Bestafricasafariforfamilies/Bestafrica4.jpg";
 import BafricaImage4 from "../../assets/Bestafricasafariforfamilies/Cheetahs.jpg";
 import BafricaImage5 from "../../assets/Bestafricasafariforfamilies/Hippos.jpg";
-import BafricaImage6 from "../../assets/Bestafricasafariforfamilies/KenyaTravel.jpg";
-import BafricaImage7 from "../../assets/Bestafricasafariforfamilies/Kenya2.jpg";
+import BafricaImage6 from "../../assets/Bestafricasafariforfamilies/mictofamiles.jpg"
 import BafricaImage9 from "../../assets/Bestafricasafariforfamilies/safari-lunch.webp";
-import BafricaImage10 from "../../assets/Bestafricasafariforfamilies/Consultation.jpg";
-import BafricaImage11 from "../../assets/Bestafricasafariforfamilies/Teenagers.png";
-import BafricaImage12 from "../../assets/Bestafricasafariforfamilies/family.jpg";
+import BafricaImage10 from "../../assets/Bestafricasafariforfamilies/family.jpg";
+import BafricaImage11 from "../../assets/Bestafricasafariforfamilies/young.jpg"
+import BafricaImage12 from "../../assets/Bestafricasafariforfamilies/Teenagers.jpg"
 import BafricaImage13 from "../../assets/Bestafricasafariforfamilies/SafariCamps.jpg";
 import Park from "../../assets/Bestafricasafariforfamilies/Park.jpg";
 
