@@ -270,6 +270,13 @@ const Navbar = () => {
                 Best African Safari for Families</NavLink>
 
 
+              <NavLink
+                to="/azamara-mediterranean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Mediterranean Cruises</NavLink>
+
 
             </div>
           </div>
@@ -550,6 +557,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best African Safari for Families</NavLink>
+
+
+            <NavLink
+              to="/azamara-mediterranean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Mediterranean Cruises</NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>

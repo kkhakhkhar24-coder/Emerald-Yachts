@@ -47,8 +47,10 @@
   transition: all 0.3s ease;
   position: relative;
   text-transform: uppercase;
-  display: inline-block; /* Natural height */
-  padding: 8px 0; /* Creates space for underline */
+  display: inline-block;
+  /* Natural height */
+  padding: 8px 0;
+  /* Creates space for underline */
   line-height: 1;
 }
 
@@ -56,7 +58,8 @@
 .nav-dropdown-trigger::after {
   content: "";
   position: absolute;
-  bottom: 0px; /* Always at the bottom of the padded area */
+  bottom: 0px;
+  /* Always at the bottom of the padded area */
   left: 0;
   width: 0;
   height: 2px;

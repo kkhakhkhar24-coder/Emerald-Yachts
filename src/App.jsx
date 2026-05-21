@@ -43,6 +43,7 @@ import BestAfricaSafari from "./pages/BestAfricanSafariForFirstTime/BestAfricaSa
 import LuxurySafariAfrica from "./pages/Luxurysafariafrica/Luxurysafariafrica";
 import BestAfricanSafariForFamilies from "./pages/BestAfricanSafariForFamilies/Bestafricasafariforfamilies";
 import AzamaraShipComparison from "./pages/AzamaraShipComparison/Azamarashipcomparison";
+import AzamaraMediterraneanCruises from "./pages/AzamaraMediterraneanCruises/AzamaraMediterraneanCruises";
 
 function App() {
   return (
@@ -199,6 +200,10 @@ function App() {
             element={<AzamaraShipComparison />}
           />
 
+          <Route
+            path="/azamara-mediterranean-cruises"
+            element={<AzamaraMediterraneanCruises />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
