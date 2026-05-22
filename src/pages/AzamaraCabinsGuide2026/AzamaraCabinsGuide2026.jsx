@@ -6,8 +6,14 @@ import azamaraShip from "../../assets/image.webp"
 // import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
 // import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-// import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import spainCruise from '../../assets/AzamaraCabinsGuide/Social_Vibes.webp'
+import room1 from '../../assets/AzamaravsVikingOcean/gallery1.webp'
+import room2 from '../../assets/AzamaravsVikingOcean/gallery2.webp'
+import room3 from '../../assets/AzamaravsVikingOcean/gallery3.webp'
+import room4 from '../../assets/AzamaravsVikingOcean/onboard2.webp'
 
+import room5 from '../../assets/AzamaraCabinsGuide/Social_Vibes.webp'
+// import room6 from '../../assets/AzamaravsVikingOcean/viking.webp'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
@@ -21,13 +27,13 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-// import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-// import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/AzamaraAlaskaCruises/Onboard_ entertainment.webp'
+import hero2 from '../../assets/AzamaraAlaskaCruises/Small_Ship.webp'
+import hero3 from '../../assets/AzamaraCruisesGuide/Cultural_Integration.webp'
 
 function AzamaraCabinsGuide2026() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1,hero2,hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -566,15 +572,18 @@ function AzamaraCabinsGuide2026() {
                         {/* Right Side: Showcase Content View */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                { <img
                                     src={
-                                        mediSelectedItinerary === 0 ? greeceCruise :
-                                            mediSelectedItinerary === 1 ? italyCruise :
+                                        mediSelectedItinerary === 0 ? room1:
+                                            mediSelectedItinerary === 1 ? room2 :
+                                            mediSelectedItinerary === 2 ? room3 :
+                                            mediSelectedItinerary === 3 ? room4 :
+                                            mediSelectedItinerary === 4 ? room5 :
                                                 croatiaCoast // Placeholder, can be mapped to specific cabin images
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                /> }
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">EXPERT SELECTION</span>
                             </div>
