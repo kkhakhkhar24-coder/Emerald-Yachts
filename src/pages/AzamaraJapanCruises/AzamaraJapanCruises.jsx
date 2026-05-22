@@ -260,24 +260,16 @@ function AzamaraJapanCruises() {
     return (
         <>
             <Helmet>
-                <title>
-                    Azamara Japan Cruises 2026 | Luxury Japan Cruise Guide
-
-
-                </title>
+                <title>Azamara Japan Cruises 2026 | Luxury Japan Cruise Guide</title>
                 <meta
                     name="title"
-                    content="Azamara Japan Cruises Guide 2026 | Expert Luxury Cruise Insights
-
-"
+                    content="Azamara Japan Cruises Guide 2026 | Expert Luxury Cruise Insights"
                 />
                 <meta
                     name="description"
-                    content="Explore Azamara Japan Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Japan itineraries, boutique luxury ships, cultural experiences, and personalized cruise planning for 2026.
-"
+                    content="Explore Azamara Japan Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Japan itineraries, boutique luxury ships, cultural experiences, and personalized cruise planning for 2026."
                 />
-                <meta name="keywords" content="Azamara Japan Cruises, Luxury Japan cruises, Small ship Japan cruises,  Boutique Japan cruise line
-" />
+                <meta name="keywords" content="Azamara Japan Cruises, Luxury Japan cruises, Small ship Japan cruises, Boutique Japan cruise line" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>

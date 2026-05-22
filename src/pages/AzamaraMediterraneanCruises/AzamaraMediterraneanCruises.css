@@ -3980,8 +3980,7 @@
     }
 }
 
-
-/* INCLUDED SECTION */
+/* WHAT IS INCLUDED ON AZAMARA CRUISES */
 
 .azw-included-section {
     padding: 110px 20px;
@@ -4002,12 +4001,12 @@
 .azw-included-tag {
     display: inline-block;
     padding: 10px 18px;
-    background: rgba(15, 23, 42, 0.08);
+    background: rgba(39, 68, 114, 0.08);
     border-radius: 50px;
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--medi-navy);
     margin-bottom: 22px;
 }
 
@@ -4015,14 +4014,14 @@
     font-size: 52px;
     line-height: 1.1;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--medi-navy);
     margin-bottom: 22px;
 }
 
 .azw-included-line {
     width: 90px;
     height: 4px;
-    background: #0f172a;
+    background: var(--medi-navy);
     margin: 0 auto 30px;
     border-radius: 50px;
 }
@@ -4050,19 +4049,19 @@
     align-items: center;
     gap: 18px;
     transition: 0.3s ease;
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.08);
 }
 
 .azw-included-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.08);
 }
 
 .azw-included-icon {
     width: 54px;
     height: 54px;
     border-radius: 16px;
-    background: #0f172a;
+    background: var(--medi-navy);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4073,8 +4072,250 @@
 .azw-included-card span {
     font-size: 17px;
     font-weight: 600;
-    color: #0f172a;
+    color: var(--medi-navy);
     line-height: 1.5;
+}
+
+/* ============================================================
+   IS AZAMARA WORTH THE MONEY SECTION
+   ============================================================ */
+
+.azw-worth-section {
+    padding: 100px 20px;
+    background: var(--medi-bg-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.azw-worth-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.azw-worth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.azw-worth-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    margin-bottom: 50px;
+}
+
+/* Panel Cards */
+.azw-worth-panel {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 42px 38px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    box-shadow: 0 10px 36px rgba(15, 28, 46, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.azw-worth-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 55px rgba(15, 28, 46, 0.1);
+}
+
+.azw-worth-panel-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--medi-navy) 0%, #3b82f6 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+.azw-worth-panel-bar.azw-bar-alt {
+    background: linear-gradient(90deg, #94a3b8 0%, #64748b 100%);
+}
+
+/* Panel Header */
+.azw-worth-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.azw-worth-panel-icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.azw-icon-positive {
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--medi-navy);
+}
+
+.azw-icon-alt {
+    background: rgba(100, 116, 139, 0.1);
+    color: #64748b;
+}
+
+.azw-worth-panel-heading {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* List Items */
+.azw-worth-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 26px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.azw-worth-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #334155;
+    padding: 11px 16px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.02);
+    transition: all 0.3s ease;
+}
+
+.azw-worth-item:hover {
+    background: rgba(39, 68, 114, 0.06);
+    transform: translateX(4px);
+}
+
+.azw-worth-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.azw-dot-navy {
+    background: var(--medi-navy);
+    box-shadow: 0 0 0 3px rgba(39, 68, 114, 0.15);
+}
+
+.azw-dot-slate {
+    background: #94a3b8;
+    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.2);
+}
+
+/* Verdict Badges */
+.azw-worth-verdict {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--medi-navy);
+    background: rgba(39, 68, 114, 0.06);
+}
+
+.azw-worth-verdict span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.azw-worth-verdict svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.azw-worth-verdict.azw-verdict-alt {
+    background: rgba(100, 116, 139, 0.08);
+    border-left-color: #94a3b8;
+}
+
+.azw-worth-verdict.azw-verdict-alt span {
+    color: #475569;
+}
+
+.azw-worth-verdict.azw-verdict-alt svg {
+    color: #64748b;
+}
+
+/* Bottom Banner */
+.azw-worth-bottom-banner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 36px;
+    background: var(--medi-navy);
+    border-radius: 16px;
+    box-shadow: 0 14px 44px rgba(39, 68, 114, 0.2);
+}
+
+.azw-worth-banner-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+}
+
+.azw-worth-banner-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Worth Section Responsive */
+@media (max-width: 992px) {
+    .azw-worth-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .azw-worth-section {
+        padding: 80px 16px;
+    }
+
+    .azw-worth-panel {
+        padding: 30px 22px;
+    }
+
+    .azw-worth-bottom-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 26px 22px;
+    }
+
+    .azw-worth-banner-text {
+        font-size: 16px;
+    }
 }
 
 /* LUXURY SECTION */
@@ -4097,19 +4338,19 @@
 .azw-luxury-tag {
     display: inline-block;
     padding: 10px 18px;
-    background: rgba(15, 23, 42, 0.08);
+    background: rgba(39, 68, 114, 0.08);
     border-radius: 50px;
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--medi-navy);
     margin-bottom: 22px;
 }
 
 .azw-luxury-title {
     font-size: 52px;
     line-height: 1.1;
-    color: #0f172a;
+    color: var(--medi-navy);
     font-weight: 700;
     margin-bottom: 22px;
 }
@@ -4117,7 +4358,7 @@
 .azw-luxury-line {
     width: 90px;
     height: 4px;
-    background: #0f172a;
+    background: var(--medi-navy);
     margin: 0 auto 30px;
     border-radius: 50px;
 }
@@ -4142,7 +4383,7 @@
     padding: 42px;
     border-radius: 30px;
     background: white;
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.08);
 }
 
 .azw-luxury-card-top {
@@ -4150,7 +4391,7 @@
     align-items: center;
     gap: 14px;
     margin-bottom: 30px;
-    color: #0f172a;
+    color: var(--medi-navy);
 }
 
 .azw-luxury-card-top h3 {
@@ -4166,7 +4407,7 @@
 
 .azw-luxury-list li {
     padding: 16px 0;
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
     font-size: 18px;
     color: #334155;
     font-weight: 500;
