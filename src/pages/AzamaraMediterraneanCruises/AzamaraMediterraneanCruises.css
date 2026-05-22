@@ -4727,3 +4727,389 @@
         justify-content: center;
     }
 }
+
+/* Custom Veranda Worth Section */
+.medi-veranda-worth-section {
+    position: relative;
+    background: #ffffff !important;
+    padding: 100px 20px !important;
+    overflow: hidden;
+    color: #1e293b !important;
+}
+
+.medi-veranda-worth-section .medi-itinerary-eyebrow {
+    color: var(--medi-navy) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-main-title {
+    color: #0f1c2e !important;
+}
+
+.medi-veranda-worth-section .medi-excel-lead-paragraph {
+    color: #475569 !important;
+}
+
+.medi-veranda-worth-section .medi-veranda-subtitle {
+    color: var(--medi-navy) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card {
+    background: var(--medi-bg-soft) !important;
+    border: 1px solid rgba(39, 68, 114, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 50px 40px !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(215, 235, 238, 0.8) !important;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
+    border-color: rgba(39, 68, 114, 0.3) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card-heading {
+    color: #0f1c2e !important;
+}
+
+.medi-veranda-worth-section .medi-excel-list-item span {
+    color: #334155 !important;
+}
+
+.medi-veranda-worth-section .medi-excel-icon-wrapper {
+    background: rgba(39, 68, 114, 0.08) !important;
+    color: var(--medi-navy) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-icon-wrapper svg {
+    color: var(--medi-navy) !important;
+}
+
+.medi-veranda-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
+    top: -200px;
+    left: -150px;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.medi-veranda-worth-callout {
+    background: rgba(39, 68, 114, 0.04) !important;
+    border: 1px solid rgba(39, 68, 114, 0.1) !important;
+    border-left: 4px solid var(--medi-navy) !important;
+    border-radius: 0 12px 12px 0 !important;
+    color: #1e293b !important;
+    max-width: 100% !important;
+    margin: 40px auto 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding: 24px 32px !important;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02) !important;
+}
+
+.medi-veranda-worth-callout span {
+    color: #334155 !important;
+}
+
+.medi-veranda-worth-callout-icon-box {
+    background: rgba(39, 68, 114, 0.08) !important;
+    padding: 12px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.medi-veranda-worth-callout-icon-box svg {
+    color: var(--medi-navy) !important;
+}
+
+/* Custom Suites Worth Section */
+.medi-suites-worth-section {
+    position: relative;
+    background: #ffffff !important;
+    padding: 100px 20px !important;
+    overflow: hidden;
+    color: #1e293b !important;
+}
+
+.medi-suites-worth-section .medi-itinerary-eyebrow {
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-excel-main-title {
+    color: #0f1c2e !important;
+}
+
+.medi-suites-worth-section .medi-excel-lead-paragraph {
+    color: #475569 !important;
+}
+
+.medi-suites-worth-section .medi-suites-subtitle {
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-excel-card {
+    background: var(--medi-bg-soft) !important;
+    border: 1px solid rgba(39, 68, 114, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 50px 40px !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.medi-suites-worth-section .medi-excel-card:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(215, 235, 238, 0.8) !important;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
+    border-color: rgba(39, 68, 114, 0.3) !important;
+}
+
+.medi-suites-worth-section .medi-excel-card-heading {
+    color: #0f1c2e !important;
+}
+
+.medi-suites-worth-section .medi-excel-list-item span {
+    color: #334155 !important;
+}
+
+.medi-suites-worth-section .medi-excel-icon-wrapper {
+    background: rgba(39, 68, 114, 0.08) !important;
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-excel-icon-wrapper svg {
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-callout {
+    background: rgba(39, 68, 114, 0.04) !important;
+    border: 1px solid rgba(39, 68, 114, 0.1) !important;
+    border-left: 4px solid var(--medi-navy) !important;
+    border-radius: 0 12px 12px 0 !important;
+    color: #1e293b !important;
+    max-width: 100% !important;
+    margin: 40px auto 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding: 24px 32px !important;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02) !important;
+}
+
+.medi-suites-worth-callout span {
+    color: #334155 !important;
+}
+
+.medi-suites-worth-callout-icon-box {
+    background: rgba(39, 68, 114, 0.08) !important;
+    padding: 12px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.medi-suites-worth-callout-icon-box svg {
+    color: var(--medi-navy) !important;
+}
+
+/* Container & Section */
+.suites-worth-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.suites-worth-bg-accent {
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(30, 41, 59, 0.03) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Header */
+.suites-worth-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.suites-worth-eyebrow {
+    letter-spacing: 3px;
+    color: var(--medi-navy);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.suites-worth-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--medi-navy);
+    /* Brand Navy */
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.suites-worth-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin: 0 auto;
+}
+
+/* Main Comparison Card */
+.suites-worth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+/* Left Side (Luxury) */
+.suites-card-luxury {
+    padding: 50px;
+    background: #ffffff;
+    border-right: 1px solid #f1f5f9;
+}
+
+.suites-icon-box {
+    width: 40px;
+    height: 40px;
+    background: rgba(30, 41, 59, 0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.suites-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.suites-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.suites-list-icon {
+    color: var(--medi-navy);
+    display: flex;
+}
+
+/* Right Side (Strategic) */
+.suites-card-strategic {
+    padding: 50px;
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.suites-quote-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    opacity: 0.1;
+}
+
+.suites-strategic-label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.suites-strategic-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #e2e8f0;
+    font-style: italic;
+}
+
+.suites-highlight {
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom Callout */
+.suites-floating-callout {
+    max-width: 800px;
+    margin: -30px auto 0;
+    background: #fff;
+    border-radius: 100px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    border: 1px solid #f1f5f9;
+}
+
+.suites-callout-icon {
+    background: var(--medi-navy);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.suites-callout-text {
+    margin: 0;
+    font-size: 1rem;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .suites-worth-grid {
+        border-radius: 16px;
+    }
+
+    .suites-card-luxury,
+    .suites-card-strategic {
+        padding: 30px;
+    }
+
+    .suites-floating-callout {
+        border-radius: 20px;
+        margin: 20px 20px 0;
+        padding: 20px;
+    }
+}
