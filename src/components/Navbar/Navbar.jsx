@@ -291,6 +291,14 @@ const Navbar = () => {
               >
                 Azamara Japan Cruises</NavLink>
 
+
+              <NavLink
+                to="/azamara-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Worth It</NavLink>
+
             </div>
           </div>
         </div>
@@ -592,6 +600,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Azamara Japan Cruises</NavLink>
+
+            <NavLink
+              to="/azamara-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Worth It</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
