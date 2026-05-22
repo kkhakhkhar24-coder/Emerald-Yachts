@@ -1,12 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import greeceCruise from '../../assets/Japanlandvscruise/Japanlandvscruise1.jpg'
+import italyCruise from '../../assets/Japanlandvscruise/Neighborhoods.webp'
+import croatiaCoast from '../../assets/FirstTimeJapan/Jhero1.webp'
+import luxurySuite from '../../assets/AzamaravsVikingOcean/viking.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import spainCruise from '../../assets/FirstTimeJapan/Jhero2.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -19,9 +19,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/JapanTravelCost/Hero1.webp'
+import hero2 from '../../assets/JapanTravelCost/Hero2.webp'
+import hero3 from '../../assets/JapanTravelCost/Hero3.webp'
 
 function AzamaraJapanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)

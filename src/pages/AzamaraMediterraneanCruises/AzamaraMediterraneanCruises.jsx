@@ -1,12 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
-import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.webp'
+import italyCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
+import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp'
+import spainCruise from '../../assets/AzamaraMediterraneanCruises/Angela Hughes luxury cruise expert.webp'
+import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -18,9 +17,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/AzamaraMediterraneanCruises/hero1.jpg'
+import hero2 from '../../assets/AzamaraMediterraneanCruises/hero2.jpg'
+import hero3 from '../../assets/AzamaraMediterraneanCruises/hero3.jpg'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)

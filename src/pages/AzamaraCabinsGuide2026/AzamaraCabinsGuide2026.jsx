@@ -1,12 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+// import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
+// import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
+// import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
+// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+// import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -21,13 +21,13 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+// import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
+// import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
+// import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
 
 function AzamaraCabinsGuide2026() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = [hero1, hero2, hero3]
+    const mediHeroImages = []
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -566,7 +566,7 @@ function AzamaraCabinsGuide2026() {
                         {/* Right Side: Showcase Content View */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                <img
+                                {/* <img
                                     src={
                                         mediSelectedItinerary === 0 ? greeceCruise :
                                             mediSelectedItinerary === 1 ? italyCruise :
@@ -574,7 +574,7 @@ function AzamaraCabinsGuide2026() {
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                />
+                                /> */}
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">EXPERT SELECTION</span>
                             </div>
@@ -710,7 +710,7 @@ function AzamaraCabinsGuide2026() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        <img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" />
+                        {/* <img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" /> */}
                     </div>
                 </div>
             </section>

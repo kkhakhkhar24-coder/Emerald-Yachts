@@ -1,12 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Marseilles_122.webp'
+import italyCruise from '../../assets/Japanlandvscruise/angela-hughes-miyajima-floating-torii-gate-itsukushima-shrine-japan.jpg'
+import croatiaCoast from '../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg'
+import luxurySuite from '../../assets/AzamaraAlaskaCruises/gallery1.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import spainCruise from '../../assets/AzamaraCabinsGuide/Ship_View.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -19,9 +19,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/Azamarashipcomparison/Azamara-Journey-suite-balcony.webp'
+import hero2 from '../../assets/AzamaravsVikingOcean/ChoseViking.webp'
+import hero3 from '../../assets/Azamarashipcomparison/Regentsea.jpg'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)

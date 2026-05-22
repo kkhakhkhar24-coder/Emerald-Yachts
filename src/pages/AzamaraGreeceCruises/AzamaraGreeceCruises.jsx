@@ -1,12 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import greeceCruise from '../../assets/AzamaraGreeceCruises/best-mykonos-greece-harbor-waterfront-travel.webp'
+import italyCruise from '../../assets/AzamaraGreeceCruises/luxury-family-vacation-greek-islands-sunset-retreat.webp'
+import croatiaCoast from '../../assets/AzamaraGreeceCruises/luxury-athens-parthenon-night-tour-greece.webp'
+import luxurySuite from '../../assets/AzamaraCabinsGuide/Cruise_balcony_view.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import spainCruise from '../../assets/AzamaraGreeceCruises/luxury-greek-island-coastal-village-sailing-vacation.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -18,9 +18,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/AzamaraGreeceCruises/mykonos-old-port-fishing-boats-waterfront-greece.webp'
+import hero2 from '../../assets/AzamaraGreeceCruises/luxury-zakynthos-coastline-yacht-excursion-greece.webp'
+import hero3 from '../../assets/AzamaraGreeceCruises/luxury-santorini-oia-sunset-view-greece-travel.webp'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
