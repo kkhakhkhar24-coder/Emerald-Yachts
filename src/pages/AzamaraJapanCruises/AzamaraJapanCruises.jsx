@@ -1265,13 +1265,11 @@ function AzamaraJapanCruises() {
                         <div className="medi-cta-separator-white"></div>
 
                         <p className="medi-cta-paragraph-white">
-                            Luxury Japan cruising is about more than simply visiting ports — it is about cultural immersion,
-                            authentic experiences, and seamless planning.
+                            Luxury Japan cruising is about more than simply visiting ports — it is about cultural immersion, authentic experiences, personalized service, and seamless planning.
                         </p>
 
                         <p className="medi-cta-paragraph-white">
-                            With over four decades of travel expertise, Angela Hughes and the Trips & Ships Luxury Travel team
-                            help you confidently navigate the Rising Sun.
+                            With over four decades of travel expertise and global recognition, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Japan cruise experience.
                         </p>
 
                         <div className="medi-cta-considerations-box">
@@ -1285,12 +1283,16 @@ function AzamaraJapanCruises() {
                                     "Extended Asia cruise experiences"
                                 ].map((item, idx) => (
                                     <li key={idx} className="medi-cta-considerations-item">
-                                        <Check size={20} className="medi-cta-considerations-icon" strokeWidth={3} />
+                                        <CheckCircle size={20} className="medi-cta-considerations-icon" />
                                         <span>{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
+
+                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '600', color: '#ffffff' }}>
+                            Expert guidance backed by real-world luxury travel expertise.
+                        </p>
 
                         <div className="medi-cta-button-group">
                             <button className="medi-primary-cta-button">
@@ -1299,12 +1301,12 @@ function AzamaraJapanCruises() {
                             </button>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
-                                Request Itineraries
+                                Request Itinerary Options
                             </button>
                         </div>
 
-                        <p className="medi-cta-paragraph-white" style={{ fontSize: '14px', marginTop: '40px', opacity: 0.6, letterSpacing: '0.05em' }}>
-                            TRIPS & SHIPS LUXURY TRAVEL — GLOBAL RECOGNITION IN PREMIUM CRUISE PLANNING
+                        <p className="medi-cta-paragraph-white" style={{ fontSize: '14px', marginTop: '40px', opacity: 0.6 }}>
+                            Trips & Ships Luxury Travel — Certified Boutique Cruise Specialists
                         </p>
                     </div>
                 </div>
