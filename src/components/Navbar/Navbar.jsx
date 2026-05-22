@@ -299,6 +299,13 @@ const Navbar = () => {
               >
                 Azamara Worth It</NavLink>
 
+              <NavLink
+                to="/azamara-cabins-guide-2026"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Cabins Guide 2026</NavLink>
+
             </div>
           </div>
         </div>
@@ -607,6 +614,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Azamara Worth It</NavLink>
+
+            <NavLink
+              to="/azamara-cabins-guide-2026"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Cabins Guide 2026</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
