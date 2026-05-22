@@ -14,7 +14,8 @@ import {
     ChevronRight, Crown, Phone, Plus, Minus,
     Globe, LayoutList, Heart, Utensils, Sun, Award,
     Baby, Moon, Music,
-    Mic, FileText, GraduationCap
+    Mic, FileText, GraduationCap,
+    Shield
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -52,26 +53,26 @@ function BestCabinsOnAzamara() {
 
     const mediItineraries = [
         {
-            title: 'Greece & Greek Isles Cruises',
-            bestFor: ['First-time Mediterranean cruisers', 'Couples', 'Scenic island experiences', 'Cultural travelers'],
-            highlights: ['Santorini', 'Mykonos', 'Rhodes', 'Crete', 'Athens']
-        },
-        {
-            title: 'Italy Intensive Cruises',
-            bestFor: ['Food and wine lovers', 'History enthusiasts', 'Luxury cultural travel'],
-            highlights: ['Rome', 'Florence', 'Sicily', 'Amalfi Coast', 'Venice']
-        },
-        {
-            title: 'Croatia & Adriatic Voyages',
-            bestFor: ['Boutique luxury seekers', 'Yacht-style atmosphere lovers', 'Scenic coastal exploration'],
-            highlights: ['Dubrovnik', 'Split', 'Kotor', 'Montenegro', 'Slovenia']
-        },
-        {
-            title: 'Spain & Western Mediterranean Cruises',
-            bestFor: ['Culinary travelers', 'Art and architecture enthusiasts', 'Sophisticated European cruising'],
-            highlights: ['Barcelona', 'Valencia', 'Nice', 'Marseille', 'Palma de Mallorca']
+            title: "World Owner’s Suite",
+            bestFor: [
+                "Luxury-focused travelers",
+                "Special celebrations",
+                "Honeymoons",
+                "Anniversary cruises",
+                "Extended voyages"
+            ],
+            highlights: [
+                "Expansive living areas",
+                "Oversized balconies",
+                "Butler service",
+                "Luxury bathroom finishes",
+                "Concierge support",
+                "Priority dining reservations",
+                "Personalized onboard service"
+            ],
+            description: "These suites represent Azamara’s highest level of onboard luxury. Travelers prioritizing space and premium service often consider them worth the investment."
         }
-    ]
+    ];
 
     const mediFaqs = [
         { question: 'Are Azamara Mediterranean cruises worth it?', answer: 'Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service.' },
@@ -260,59 +261,59 @@ function BestCabinsOnAzamara() {
 
                         {/* Title & Core editorial intro */}
                         <div className="medi-premium-editorial-block">
-                            <span className="medi-premium-mini-badge">EXCLUSIVELY IMMERSIVE</span>
-                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Mediterranean Cruising</h2>
+                            <span className="medi-premium-mini-badge">EXPERT CABIN GUIDE</span>
+                            <h2 className="medi-premium-heading">Why Cabin Selection Matters on Azamara</h2>
                             <div className="medi-premium-separator"></div>
 
                             <p className="medi-premium-lead-text">
-                                For sophisticated travelers seeking immersive European experiences without the crowds of mega ships, Azamara Mediterranean Cruises have become one of the most respected names in boutique luxury cruising.
+                                For travelers planning a luxury cruise with Azamara, choosing the right cabin can significantly influence the overall experience.
                             </p>
 
                             <div className="medi-immersion-list-wrapper">
                                 <p className="medi-immersion-lead-in">
-                                    Unlike traditional cruise lines that rush from port to port, Azamara focuses on meaningful destination immersion through:
+                                    While Azamara is celebrated for boutique ships and destination immersion, the right cabin selection dramatically improves:
                                 </p>
                                 <div className="medi-immersion-cards-grid">
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
-                                            <Clock size={20} />
+                                            <Heart size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Longer stays</span>
+                                        <span className="medi-immersion-card-title">Comfort</span>
+                                    </div>
+
+                                    <div className="medi-immersion-card-item">
+                                        <div className="medi-immersion-icon-box">
+                                            <Shield size={20} />
+                                        </div>
+                                        <span className="medi-immersion-card-title">Privacy</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Sun size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Overnight port experiences</span>
+                                        <span className="medi-immersion-card-title">Scenic enjoyment</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
-                                            <Ship size={20} />
+                                            <MapPin size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Smaller ship intimacy</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Sparkles size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Curated cultural programming</span>
+                                        <span className="medi-immersion-card-title">Convenience</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Anchor size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Access to boutique Mediterranean ports</span>
+                                        <span className="medi-immersion-card-title">Relaxation onboard</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
-                                            <Crown size={20} />
+                                            <Sparkles size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Personalized luxury service</span>
+                                        <span className="medi-immersion-card-title">Boutique luxury</span>
                                     </div>
                                 </div>
                             </div>
@@ -333,18 +334,128 @@ function BestCabinsOnAzamara() {
                                 </div>
 
                                 <p className="medi-premium-expert-desc">
-                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Mediterranean cruise experience based on decades of firsthand luxury travel expertise.
+                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers compare Azamara cabin categories and identify the best accommodations based on itinerary, budget, and travel style.
                                 </p>
 
                                 <div className="medi-premium-expert-quote-box">
                                     <span className="medi-quote-mark">“</span>
                                     <p className="medi-premium-expert-quote-text">
-                                        With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into luxury Mediterranean cruising.
+                                        With more than 40 years of luxury travel expertise and visits to over 121 countries, Angela Hughes provides practical cruise insights far beyond generic online reviews.
                                     </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
 
+            {/* UNDERSTANDING AZAMARA CABIN CATEGORIES */}
+            <section className="medi-excellence-section">
+                <div className="medi-excellence-container">
+                    <div className="medi-excel-header-block" style={{ textAlign: 'center', marginBottom: '40px' }}>
+                        <span className="medi-diff-eyebrow-tag">ACCOMMODATION OVERVIEW</span>
+                        <h2 className="medi-section-heading">Understanding Azamara Cabin Categories</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="medi-body-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                            Because Azamara ships are smaller and more intimate than mega ships, even standard accommodations feel more refined and personalized. However, some cabin categories clearly stand out depending on traveler priorities.
+                        </p>
+                    </div>
+
+                    <div className="medi-differentiator-card" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+                        <h3 className="medi-card-title" style={{ marginBottom: '30px' }}>
+                            Azamara ships feature several primary accommodation categories:
+                        </h3>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
+                            {['Inside Staterooms', 'Oceanview Staterooms', 'Veranda Staterooms', 'Club Continent Suites', 'Spa Suites', 'Ocean Suites', 'World Owner’s Suites'].map((cat, idx) => (
+                                <span key={idx} className="medi-itinerary-details-chip">
+                                    <CheckCircle size={16} className="medi-itinerary-chip-icon" />
+                                    <span>{cat}</span>
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* BEST OVERALL CABIN */}
+            <section className="medi-cta-main-section">
+                <div className="medi-cta-bg-pattern-layer"></div>
+                <div className="medi-cta-content-relative medi-intro-container">
+                    <div className="medi-excel-header-block" style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span className="medi-diff-eyebrow-tag" style={{ color: '#93c5fd' }}>TOP RECOMMENDATION</span>
+                        <h2 className="medi-section-heading" style={{ color: '#ffffff' }}>Best Overall Cabin on Azamara: Veranda Staterooms</h2>
+                        <div className="medi-cta-separator-white"></div>
+                        <p className="medi-cta-paragraph-white" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+                            For many luxury travelers, veranda staterooms offer the ideal balance between price, comfort, and scenic access.
+                        </p>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginBottom: '40px' }}>
+
+                        {/* Column 1 */}
+                        <div style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', padding: '30px', borderRadius: '16px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+                                <div style={{ background: 'rgba(147, 197, 253, 0.1)', color: '#93c5fd', padding: '10px', borderRadius: '10px' }}>
+                                    <Heart size={24} />
+                                </div>
+                                <h3 className="medi-card-title" style={{ color: '#ffffff', margin: 0, fontSize: '22px' }}>Why Travelers Love Them</h3>
+                            </div>
+                            <ul className="medi-excel-list">
+                                {['Price value', 'Exceptional comfort', 'Unobstructed scenic access', 'Relaxed luxury atmosphere', 'Private outdoor space'].map((item, idx) => (
+                                    <li key={idx} className="medi-excel-list-item">
+                                        <CheckCircle size={18} style={{ color: '#93c5fd', flexShrink: 0 }} />
+                                        <span style={{ fontSize: '16px', color: '#e2e8f0' }}>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Column 2 */}
+                        <div style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', padding: '30px', borderRadius: '16px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+                                <div style={{ background: 'rgba(147, 197, 253, 0.1)', color: '#93c5fd', padding: '10px', borderRadius: '10px' }}>
+                                    <Sparkles size={24} />
+                                </div>
+                                <h3 className="medi-card-title" style={{ color: '#ffffff', margin: 0, fontSize: '22px' }}>Features Include</h3>
+                            </div>
+                            <ul className="medi-excel-list">
+                                {['Private balcony', 'Floor-to-ceiling glass doors', 'Sitting area', 'Premium bedding', 'Modern bathrooms', 'Comfortable cabin layouts'].map((item, idx) => (
+                                    <li key={idx} className="medi-excel-list-item">
+                                        <CheckCircle size={18} style={{ color: '#93c5fd', flexShrink: 0 }} />
+                                        <span style={{ fontSize: '16px', color: '#e2e8f0' }}>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Column 3 */}
+                        <div style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', padding: '30px', borderRadius: '16px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+                                <div style={{ background: 'rgba(147, 197, 253, 0.1)', color: '#93c5fd', padding: '10px', borderRadius: '10px' }}>
+                                    <MapPin size={24} />
+                                </div>
+                                <h3 className="medi-card-title" style={{ color: '#ffffff', margin: 0, fontSize: '22px' }}>Valuable On</h3>
+                            </div>
+                            <ul className="medi-excel-list">
+                                {['Japan cruises', 'Mediterranean itineraries', 'Scenic coastal sailings', 'Norway voyages', 'Alaska-style scenic routes'].map((item, idx) => (
+                                    <li key={idx} className="medi-excel-list-item">
+                                        <CheckCircle size={18} style={{ color: '#93c5fd', flexShrink: 0 }} />
+                                        <span style={{ fontSize: '16px', color: '#e2e8f0' }}>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    {/* Bottom Highlight Box */}
+                    <div style={{ background: 'rgba(147, 197, 253, 0.1)', border: '1px solid rgba(147, 197, 253, 0.2)', borderLeft: '4px solid #93c5fd', borderRadius: '0 12px 12px 0', color: '#ffffff', maxWidth: '100%', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '24px', padding: '24px 32px' }}>
+                        <div style={{ background: 'rgba(147, 197, 253, 0.15)', padding: '12px', borderRadius: '50%' }}>
+                            <Star size={32} style={{ color: '#93c5fd', flexShrink: 0 }} />
+                        </div>
+                        <span style={{ fontSize: '18px', fontWeight: '500', lineHeight: '1.6', color: '#e2e8f0' }}>
+                            Travelers who enjoy relaxing privately while enjoying ocean views consistently rate veranda cabins among the best choices on Azamara.
+                        </span>
                     </div>
                 </div>
             </section>
@@ -610,12 +721,12 @@ function BestCabinsOnAzamara() {
                 </div>
             </section>
 
-            {/* ITINERARIES SHOWCASE */}
+            {/* BEST LUXURY CABIN SHOWCASE */}
             <section className="medi-itinerary-showcase-section">
                 <div className="medi-itinerary-showcase-container">
                     <div className="medi-itinerary-showcase-header">
-                        <span className="medi-itinerary-eyebrow">CURATED JOURNEYS</span>
-                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Mediterranean Itineraries</h2>
+                        <span className="medi-itinerary-eyebrow">ACCOMMODATION SHOWCASE</span>
+                        <h2 className="medi-itinerary-showcase-heading">Best Luxury Cabin on Azamara</h2>
                         <div className="medi-itinerary-showcase-separator"></div>
                     </div>
 
@@ -640,17 +751,9 @@ function BestCabinsOnAzamara() {
                         {/* Right Side: Showcase Content View */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
-                                    src={
-                                        mediSelectedItinerary === 0 ? greeceCruise :
-                                            mediSelectedItinerary === 1 ? italyCruise :
-                                                mediSelectedItinerary === 2 ? croatiaCoast : spainCruise
-                                    }
-                                    alt={mediItineraries[mediSelectedItinerary].title}
-                                    className="medi-itinerary-showcase-img"
-                                /> */}
+                                {/* Placeholder for cabin image - keeping overlay/badge design */}
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
-                                <span className="medi-itinerary-showcase-badge">RECOMMENDED VOYAGE</span>
+                                <span className="medi-itinerary-showcase-badge">ULTIMATE LUXURY</span>
                             </div>
 
                             <div className="medi-itinerary-showcase-body">
@@ -670,7 +773,7 @@ function BestCabinsOnAzamara() {
                                     </div>
 
                                     <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">Highlights:</h4>
+                                        <h4 className="medi-itinerary-details-heading">Premium Features:</h4>
                                         <div className="medi-itinerary-details-chips">
                                             {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
                                                 <span key={i} className="medi-itinerary-details-chip">
@@ -680,6 +783,13 @@ function BestCabinsOnAzamara() {
                                             ))}
                                         </div>
                                     </div>
+                                </div>
+
+                                {/* Added description paragraph using standard spacing to fit design */}
+                                <div style={{ marginTop: '20px' }}>
+                                    <p style={{ fontSize: '0.95rem', opacity: 0.9, lineHeight: '1.6', color: '#4b5563' }}>
+                                        {mediItineraries[mediSelectedItinerary].description}
+                                    </p>
                                 </div>
                             </div>
                         </div>
