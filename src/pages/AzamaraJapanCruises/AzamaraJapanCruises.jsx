@@ -241,7 +241,7 @@ function AzamaraJapanCruises() {
     return (
         <>
             <Helmet>
-                <title>Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights</title>
+                <title>Azamara Japan Cruises | Expert Luxury Cruise Insights</title>
                 <meta name="description" content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026." />
                 <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
                 <script type="application/ld+json">
