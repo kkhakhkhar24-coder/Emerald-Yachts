@@ -4,7 +4,7 @@ import azamaraShip from "../../assets/image.webp"
 // import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 // import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 // import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import luxurySuite from '../../assets/AzamaraCabinsGuide/Scenic_City_Views.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
 import spainCruise from '../../assets/AzamaraCabinsGuide/Social_Vibes.webp'
 import room1 from '../../assets/AzamaravsVikingOcean/gallery1.webp'
@@ -719,7 +719,7 @@ function AzamaraCabinsGuide2026() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        {/* <img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" /> */}
+                        { <img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" /> }
                     </div>
                 </div>
             </section>
