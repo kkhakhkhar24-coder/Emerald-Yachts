@@ -46,6 +46,7 @@ import AzamaraShipComparison from "./pages/AzamaraShipComparison/Azamarashipcomp
 import AzamaraMediterraneanCruises from "./pages/AzamaraMediterraneanCruises/AzamaraMediterraneanCruises";
 import AzamaravsRegentSevenSeas from "./pages/AzamaravsRegentSevenSeas/AzamaravsRegentSevenSeas";
 import AzamaraGreeceCruises from "./pages/AzamaraGreeceCruises/AzamaraGreeceCruises";
+import AzamaraJapanCruises from "./pages/AzamaraJapanCruises/AzamaraJapanCruises";
 
 
 function App() {
@@ -216,6 +217,11 @@ function App() {
           <Route
             path="/azamara-greece-cruises"
             element={<AzamaraGreeceCruises />}
+          />
+
+          <Route
+            path="/azamara-japan-cruises"
+            element={<AzamaraJapanCruises />}
           />
         </Routes>
       </BrowserRouter>

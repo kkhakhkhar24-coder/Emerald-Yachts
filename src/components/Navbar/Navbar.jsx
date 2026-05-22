@@ -284,7 +284,12 @@ const Navbar = () => {
               >
                 Azamara Greece Cruises</NavLink>
 
-
+              <NavLink
+                to="/azamara-japan-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Japan Cruises</NavLink>
 
             </div>
           </div>
@@ -581,6 +586,12 @@ const Navbar = () => {
             >
               Azamara Greece Cruises</NavLink>
 
+            <NavLink
+              to="/azamara-japan-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Japan Cruises</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
