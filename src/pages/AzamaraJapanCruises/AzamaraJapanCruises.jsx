@@ -1229,73 +1229,55 @@ function AzamaraJapanCruises() {
                 </div>
             </section>
 
-            {/* CTA SECTION - JAPAN PREMIUM EDITION */}
-            <section className="medi-cta-japan-premium">
-                <div className="medi-cta-overlay-glow"></div>
-                <div className="medi-cta-container">
-                    <div className="medi-cta-glass-card">
+            {/* CTA SECTION */}
+            <section className="medi-cta-main-section">
+                <div className="medi-cta-bg-pattern-layer"></div>
+                <div className="medi-cta-content-relative">
+                    <div className="medi-cta-inner-wrapper">
+                        <h2 className="medi-cta-heading-white">Ready to Experience <br /> Japan with Azamara?</h2>
+                        <div className="medi-cta-separator-white"></div>
 
-                        {/* Authority Badge */}
-                        <div className="medi-cta-badge">
-                            <div className="medi-cta-badge-line"></div>
-                            <span className="medi-cta-badge-text">Trips & Ships Luxury Travel Exclusive</span>
-                            <div className="medi-cta-badge-line"></div>
-                        </div>
+                        <p className="medi-cta-paragraph-white">
+                            Luxury Japan cruising is about more than simply visiting ports — it is about cultural immersion,
+                            authentic experiences, and seamless planning.
+                        </p>
 
-                        <h2 className="medi-cta-heading-premium">
-                            Ready to Experience <br />
-                            <span className="medi-accent-text">Japan</span> with Azamara?
-                        </h2>
+                        <p className="medi-cta-paragraph-white">
+                            With over four decades of travel expertise, Angela Hughes and the Trips & Ships Luxury Travel team
+                            help you confidently navigate the Rising Sun.
+                        </p>
 
-                        <div className="medi-cta-lead-container">
-                            <p className="medi-cta-lead-para">
-                                Luxury Japan cruising is about more than simply visiting ports—it’s a deep immersion into
-                                the traditions of the Rising Sun, curated with seamless expert planning.
-                            </p>
-                            <div className="medi-expert-signature-box">
-                                <span className="medi-signature-name">Angela Hughes</span>
-                                <span className="medi-signature-title">Master Luxury Cruise Advisor</span>
-                            </div>
-                        </div>
-
-                        {/* Immersion Pills - Better than a vertical list */}
-                        <div className="medi-cta-immersion-wrapper">
-                            <p className="medi-immersion-label">Expert Planning For:</p>
-                            <div className="medi-immersion-pills">
+                        <div className="medi-cta-considerations-box">
+                            <span className="medi-cta-considerations-title">Exclusive Expert Guidance For:</span>
+                            <ul className="medi-cta-considerations-list">
                                 {[
-                                    "Cherry Blossom Cruises",
-                                    "Cultural Japan Itineraries",
-                                    "Boutique Asia Voyages",
-                                    "Small-Ship Exploration",
-                                    "Extended Asia Experiences"
+                                    "Cherry blossom cruises",
+                                    "Cultural Japan itineraries",
+                                    "Boutique Asia voyages",
+                                    "Luxury small-ship exploration",
+                                    "Extended Asia cruise experiences"
                                 ].map((item, idx) => (
-                                    <div key={idx} className="medi-immersion-pill">
-                                        <CheckCircle size={14} className="pill-icon" />
-                                        {item}
-                                    </div>
+                                    <li key={idx} className="medi-cta-considerations-item">
+                                        <Check size={20} className="medi-cta-considerations-icon" strokeWidth={3} />
+                                        <span>{item}</span>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </div>
 
-                        <div className="medi-cta-action-footer">
-                            <p className="medi-cta-final-text">
-                                Schedule a personalized Japan luxury cruise consultation today.
-                            </p>
-
-                            <div className="medi-cta-button-row">
-                                <button className="medi-btn-primary-gold">
-                                    <Phone size={18} />
-                                    Schedule Consultation
-                                </button>
-                                <button className="medi-btn-outline-white">
-                                    <LayoutList size={18} />
-                                    Request Options
-                                </button>
-                            </div>
+                        <div className="medi-cta-button-group">
+                            <button className="medi-primary-cta-button">
+                                <Phone size={18} />
+                                Schedule a Consultation
+                            </button>
+                            <button className="medi-secondary-outline-button">
+                                <LayoutList size={18} />
+                                Request Itineraries
+                            </button>
                         </div>
 
-                        <p className="medi-cta-trust-footer">
-                            Trusted by luxury travelers globally for over four decades.
+                        <p className="medi-cta-paragraph-white" style={{ fontSize: '14px', marginTop: '40px', opacity: 0.6, letterSpacing: '0.05em' }}>
+                            TRIPS & SHIPS LUXURY TRAVEL — GLOBAL RECOGNITION IN PREMIUM CRUISE PLANNING
                         </p>
                     </div>
                 </div>
