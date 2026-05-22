@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './AzamaraJapanCruises.css'
+import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
 import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
@@ -52,68 +52,119 @@ function AzamaraJapanCruises() {
 
     const mediItineraries = [
         {
-            title: 'Greece & Greek Isles Cruises',
-            bestFor: ['First-time Mediterranean cruisers', 'Couples', 'Scenic island experiences', 'Cultural travelers'],
-            highlights: ['Santorini', 'Mykonos', 'Rhodes', 'Crete', 'Athens']
+            title: "Japan Intensive Cruises",
+            bestFor: ["First-time Japan travelers", "Cultural enthusiasts", "Luxury exploration"],
+            highlights: ["Tokyo", "Kyoto access", "Osaka", "Hiroshima", "Kanazawa"]
         },
         {
-            title: 'Italy Intensive Cruises',
-            bestFor: ['Food and wine lovers', 'History enthusiasts', 'Luxury cultural travel'],
-            highlights: ['Rome', 'Florence', 'Sicily', 'Amalfi Coast', 'Venice']
+            title: "Cherry Blossom Season Cruises",
+            bestFor: ["Scenic travelers", "Photographers", "Spring luxury travel"],
+            highlights: ["Sakura season", "Traditional gardens", "Scenic coastal cruising", "Seasonal festivals"]
         },
         {
-            title: 'Croatia & Adriatic Voyages',
-            bestFor: ['Boutique luxury seekers', 'Yacht-style atmosphere lovers', 'Scenic coastal exploration'],
-            highlights: ['Dubrovnik', 'Split', 'Kotor', 'Montenegro', 'Slovenia']
+            title: "Japan & South Korea Voyages",
+            bestFor: ["Experienced Asia travelers", "Multi-country exploration", "Cultural immersion"],
+            highlights: ["Tokyo", "Busan", "Nagasaki", "Fukuoka", "Seoul access"]
         },
         {
-            title: 'Spain & Western Mediterranean Cruises',
-            bestFor: ['Culinary travelers', 'Art and architecture enthusiasts', 'Sophisticated European cruising'],
-            highlights: ['Barcelona', 'Valencia', 'Nice', 'Marseille', 'Palma de Mallorca']
+            title: "Japan & Northern Asia Cruises",
+            bestFor: ["Adventure-focused luxury travelers", "Unique Asia itineraries", "Extended cultural exploration"],
+            highlights: ["Hokkaido", "Northern Japan", "Scenic coastal regions", "Historic ports"]
         }
-    ]
+    ];
 
     const mediFaqs = [
-        { question: 'Are Azamara Mediterranean cruises worth it?', answer: 'Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service.' },
-        { question: 'What makes Azamara different in the Mediterranean?', answer: 'Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports.' },
-        { question: 'Which Azamara Mediterranean itinerary is best?', answer: 'Greek Isles and Italy-intensive itineraries are especially popular among luxury travelers.' },
-        { question: 'Is Azamara considered luxury?', answer: 'Azamara is considered an upper-premium boutique cruise line with many luxury-level features.' },
-        { question: 'Are Azamara Mediterranean cruises all inclusive?', answer: 'Azamara includes gratuities, select beverages, cultural events, and various onboard amenities.' },
-        { question: 'Which Mediterranean destinations does Azamara do best?', answer: 'Greece, Italy, Croatia, Spain, and immersive Adriatic itineraries are standout strengths.' },
-        { question: 'Is Azamara good for couples?', answer: 'Yes. The intimate atmosphere and destination-focused experience appeal strongly to couples.' },
-        { question: 'When should travelers book Mediterranean cruises?', answer: 'Luxury Mediterranean cruises should ideally be booked 9–18 months in advance.' },
-        { question: 'Does Azamara attract younger travelers?', answer: 'While Azamara primarily attracts experienced travelers, younger affluent travelers increasingly appreciate immersive cruising.' },
-        { question: 'Which Azamara ship is best for Mediterranean cruises?', answer: 'Azamara Journey and Azamara Onward are especially popular for Mediterranean itineraries.' },
-        { question: 'Is Azamara better than Oceania in the Mediterranean?', answer: 'Azamara emphasizes destination immersion while Oceania is particularly known for culinary experiences.' },
-        { question: 'What is the dress code on Azamara Mediterranean cruises?', answer: 'Azamara maintains a relaxed luxury atmosphere with resort-casual elegance.' },
-        { question: 'Are Azamara shore excursions worth it?', answer: 'Many travelers value Azamara\'s curated cultural excursions and immersive local experiences.' },
-        { question: 'Why use a luxury cruise advisor for Mediterranean cruises?', answer: 'Luxury advisors help travelers maximize value, secure preferred accommodations, and select the best itineraries.' }
-    ]
-
+        {
+            question: 'Are Azamara Japan cruises worth it?',
+            answer: 'Yes. Azamara offers immersive Japan experiences with boutique ships, longer port stays, and culturally focused itineraries.'
+        },
+        {
+            question: 'Does Azamara cruise Japan during cherry blossom season?',
+            answer: 'Yes. Select Azamara itineraries operate during Japan’s famous cherry blossom season.'
+        },
+        {
+            question: 'Which Azamara Japan itinerary is best?',
+            answer: 'Japan intensive itineraries featuring Tokyo, Kyoto access, and cultural destinations are especially popular.'
+        },
+        {
+            question: 'Is Azamara considered luxury?',
+            answer: 'Azamara is considered an upper-premium boutique cruise line with many luxury-level features.'
+        },
+        {
+            question: 'Are Azamara Japan cruises all inclusive?',
+            answer: 'Azamara includes gratuities, select beverages, cultural programming, and various onboard amenities.'
+        },
+        {
+            question: 'What ports does Azamara visit in Japan?',
+            answer: 'Common ports include Tokyo, Osaka, Hiroshima, Nagasaki, Kanazawa, Kobe, and Fukuoka.'
+        },
+        {
+            question: 'Is Azamara good for cultural travelers?',
+            answer: 'Yes. Azamara’s destination-focused itineraries strongly appeal to culturally curious luxury travelers.'
+        },
+        {
+            question: 'When should travelers book Japan cruises?',
+            answer: 'Luxury Japan cruises should ideally be booked 9–18 months in advance, especially for cherry blossom season.'
+        },
+        {
+            question: 'Does Azamara attract younger travelers?',
+            answer: 'While Azamara primarily attracts experienced travelers, younger affluent travelers increasingly appreciate immersive cruising.'
+        },
+        {
+            question: 'Which Azamara ship is best for Japan cruises?',
+            answer: 'Azamara Pursuit and Azamara Onward are especially popular for Asia itineraries.'
+        },
+        {
+            question: 'Is Azamara better than Oceania for Japan cruises?',
+            answer: 'Azamara emphasizes destination immersion while Oceania is particularly known for culinary experiences.'
+        },
+        {
+            question: 'What is the dress code on Azamara Japan cruises?',
+            answer: 'Azamara maintains a relaxed luxury atmosphere with elegant resort-casual attire.'
+        },
+        {
+            question: 'Are Azamara shore excursions worth it?',
+            answer: 'Many travelers value Azamara’s curated cultural excursions and authentic local experiences.'
+        },
+        {
+            question: 'Why use a luxury cruise advisor for Japan cruises?',
+            answer: 'Luxury advisors help travelers maximize value, navigate complex itineraries, and select the best cultural experiences.'
+        }
+    ];
 
 
     const mediMistakes = [
         {
-            title: 'Choosing the Wrong Season',
-            desc: 'Mediterranean cruising varies dramatically by season.',
+            title: 'Ignoring Seasonal Timing',
+            desc: 'Japan changes dramatically by season. Popular periods include:',
             bullets: [
-                'Summer offers energy and nightlife',
-                'Spring and fall offer fewer crowds and milder weather'
+                'Cherry blossom season',
+                'Autumn foliage season',
+                'Summer festivals'
             ]
         },
         {
-            title: 'Underestimating Port Intensity',
-            desc: 'Many Mediterranean itineraries involve extensive walking, stairs, and active touring.'
+            title: 'Waiting Too Long to Book',
+            desc: 'Luxury Japan itineraries often sell out quickly, especially during cherry blossom season.'
         },
         {
-            title: 'Waiting Too Long to Book Suites',
-            desc: 'Premium Mediterranean sailings and suites often sell out 9–18 months in advance.'
+            title: 'Underestimating Walking & Touring',
+            desc: 'Japan itineraries can involve:',
+            bullets: [
+                'Extensive walking',
+                'Train transfers',
+                'Historic districts',
+                'Active sightseeing'
+            ]
         },
         {
-            title: 'Choosing Large Ships for Boutique Destinations',
-            desc: 'Large ships often cannot access smaller Mediterranean ports that make Azamara itineraries unique.'
+            title: 'Choosing Large Mega Ships',
+            desc: 'Large ships may offer less immersive and more crowded port experiences.',
+            bullets: [
+                'Boutique ships often provide a more culturally connected experience.'
+            ]
         }
-    ]
+    ];
 
     const mediSchemaData = {
         "@context": "https://schema.org",
@@ -213,10 +264,10 @@ function AzamaraJapanCruises() {
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag">
                         <Anchor size={16} />
-                        <span>Boutique Luxury Mediterranean Cruising</span>
+                        <span>Boutique Luxury Japan Cruising</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Azamara Mediterranean Cruises: Boutique Luxury Across Europe's Most Iconic Destinations
+                        Azamara Japan Cruises: Boutique Luxury Through Japan’s Most Fascinating Destinations
                     </h1>
                 </div>
             </section>
@@ -231,58 +282,58 @@ function AzamaraJapanCruises() {
                         {/* Title & Core editorial intro */}
                         <div className="medi-premium-editorial-block">
                             <span className="medi-premium-mini-badge">EXCLUSIVELY IMMERSIVE</span>
-                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Mediterranean Cruising</h2>
+                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Choose Azamara for Japan Cruises</h2>
                             <div className="medi-premium-separator"></div>
 
                             <p className="medi-premium-lead-text">
-                                For sophisticated travelers seeking immersive European experiences without the crowds of mega ships, Azamara Mediterranean Cruises have become one of the most respected names in boutique luxury cruising.
+                                For travelers seeking immersive cultural experiences, refined luxury, and destination-focused cruising, Azamara Japan Cruises have become one of the most compelling ways to explore Japan.
                             </p>
 
                             <div className="medi-immersion-list-wrapper">
                                 <p className="medi-immersion-lead-in">
-                                    Unlike traditional cruise lines that rush from port to port, Azamara focuses on meaningful destination immersion through:
+                                    Unlike larger cruise lines focused primarily on onboard entertainment, Azamara emphasizes:
                                 </p>
                                 <div className="medi-immersion-cards-grid">
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Clock size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Longer stays</span>
+                                        <span className="medi-immersion-card-title">Cultural immersion</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Sun size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Overnight port experiences</span>
+                                        <span className="medi-immersion-card-title">Boutique ship intimacy</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Ship size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Smaller ship intimacy</span>
+                                        <span className="medi-immersion-card-title">Longer stays in port</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Sparkles size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Curated cultural programming</span>
+                                        <span className="medi-immersion-card-title">Authentic local experiences</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Anchor size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Access to boutique Mediterranean ports</span>
+                                        <span className="medi-immersion-card-title">Personalized luxury service</span>
                                     </div>
 
                                     <div className="medi-immersion-card-item">
                                         <div className="medi-immersion-icon-box">
                                             <Crown size={20} />
                                         </div>
-                                        <span className="medi-immersion-card-title">Personalized luxury service</span>
+                                        <span className="medi-immersion-card-title">Curated destination exploration</span>
                                     </div>
                                 </div>
                             </div>
@@ -303,13 +354,13 @@ function AzamaraJapanCruises() {
                                 </div>
 
                                 <p className="medi-premium-expert-desc">
-                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Mediterranean cruise experience based on decades of firsthand luxury travel expertise.
+                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers select the ideal Japan cruise experience using decades of firsthand luxury travel expertise.
                                 </p>
 
                                 <div className="medi-premium-expert-quote-box">
                                     <span className="medi-quote-mark">“</span>
                                     <p className="medi-premium-expert-quote-text">
-                                        With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into luxury Mediterranean cruising.
+                                        With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes brings a rare level of expertise to luxury Asia cruising.
                                     </p>
                                 </div>
                             </div>
@@ -322,10 +373,10 @@ function AzamaraJapanCruises() {
             {/* WHY AZAMARA EXCELS */}
             <section className="medi-excel-section">
                 {/* Visual coordinate watermarks for premium destination-themed look */}
-                <div className="medi-excel-coord coord-tl">MEDITERRANEAN EXPLORATION // AZAMARA</div>
-                <div className="medi-excel-coord coord-tr">37.9838° N, 23.7275° E</div>
-                <div className="medi-excel-coord coord-bl">41.9028° N, 12.4964° E</div>
-                <div className="medi-excel-coord coord-br">43.7001° N, 7.2620° E</div>
+                <div className="medi-excel-coord coord-tl">JAPAN EXPLORATION // AZAMARA</div>
+                <div className="medi-excel-coord coord-tr">35.6764° N, 139.6500° E</div>
+                <div className="medi-excel-coord coord-bl">35.0116° N, 135.7681° E</div>
+                <div className="medi-excel-coord coord-br">34.6937° N, 135.5023° E</div>
 
                 <div className="medi-excel-glow-one"></div>
                 <div className="medi-excel-glow-two"></div>
@@ -333,105 +384,87 @@ function AzamaraJapanCruises() {
 
                     {/* Header/Intro Block */}
                     <div className="medi-excel-header-block">
-                        <h2 className="medi-excel-main-title">Why Azamara Excels in the Mediterranean</h2>
+                        <h2 className="medi-excel-main-title">Why Azamara Excels in Japan</h2>
                         <div className="medi-excel-separator"></div>
                         <p className="medi-excel-lead-paragraph">
-                            The Mediterranean is one of the world’s most competitive luxury cruise markets.
+                            Japan is one of the world’s most fascinating and culturally layered cruise destinations.
                         </p>
                     </div>
 
                     {/* Content Grid */}
                     <div className="medi-excel-grid">
 
-                        {/* Column 1: Focusing On */}
+                        {/* Column 1: Focusing On (Challenges) */}
                         <div className="medi-excel-column">
                             <div className="medi-excel-card">
                                 <h3 className="medi-excel-card-heading">
-                                    However, Azamara has carved out a unique niche by focusing on:
+                                    However, many travelers quickly discover that navigating Japan independently can feel overwhelming due to:
                                 </h3>
                                 <ul className="medi-excel-list">
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Compass size={18} />
                                         </div>
-                                        <span>Destination immersion</span>
+                                        <span>Language barriers</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Ship size={18} />
                                         </div>
-                                        <span>Boutique ship experiences</span>
+                                        <span>Transportation complexity</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Clock size={18} />
                                         </div>
-                                        <span>Extended time in port</span>
+                                        <span>Seasonal planning</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Sparkles size={18} />
                                         </div>
-                                        <span>Cultural authenticity</span>
-                                    </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Anchor size={18} />
-                                        </div>
-                                        <span>Smaller ship access</span>
-                                    </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Crown size={18} />
-                                        </div>
-                                        <span>Relaxed luxury</span>
+                                        <span>Regional cultural differences</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        {/* Column 2: Appeals to */}
+                        {/* Column 2: Appeals to (Solutions) */}
                         <div className="medi-excel-column">
                             <div className="medi-excel-card">
                                 <h3 className="medi-excel-card-heading">
-                                    This appeals strongly to experienced luxury travelers seeking:
+                                    Azamara helps simplify luxury Japan travel through carefully curated itineraries that combine:
                                 </h3>
                                 <ul className="medi-excel-list">
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Gem size={18} />
                                         </div>
-                                        <span>Cultural depth</span>
+                                        <span>Convenience</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <MapPin size={18} />
                                         </div>
-                                        <span>Walkable historic ports</span>
+                                        <span>Cultural depth</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Utensils size={18} />
                                         </div>
-                                        <span>Culinary experiences</span>
+                                        <span>Boutique luxury</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Globe size={18} />
                                         </div>
-                                        <span>Local immersion</span>
+                                        <span>Scenic cruising</span>
                                     </li>
                                     <li className="medi-excel-list-item">
                                         <div className="medi-excel-icon-wrapper">
                                             <Star size={18} />
                                         </div>
-                                        <span>Sophisticated onboard atmosphere</span>
-                                    </li>
-                                    <li className="medi-excel-list-item">
-                                        <div className="medi-excel-icon-wrapper">
-                                            <Users size={18} />
-                                        </div>
-                                        <span>Fewer crowds</span>
+                                        <span>Expert destination access</span>
                                     </li>
                                 </ul>
                             </div>
@@ -445,7 +478,7 @@ function AzamaraJapanCruises() {
                             <Sparkles size={20} />
                         </div>
                         <p className="medi-excel-footer-paragraph">
-                            Rather than overwhelming guests with massive onboard entertainment complexes, Azamara prioritizes authentic European exploration.
+                            For sophisticated travelers seeking meaningful exploration rather than rushed tourism, Azamara delivers an ideal balance.
                         </p>
                     </div>
 
@@ -457,65 +490,65 @@ function AzamaraJapanCruises() {
                 <div className="medi-diff-container">
                     <div className="medi-diff-header-block">
                         <span className="medi-diff-eyebrow-tag">DISTINCTIVE CRUISE STYLE</span>
-                        <h2 className="medi-diff-main-title">What Makes Azamara Mediterranean Cruises Different?</h2>
+                        <h2 className="medi-diff-main-title">What Makes Azamara Japan Cruises Different?</h2>
                         <div className="medi-diff-separator"></div>
                     </div>
 
                     <div className="medi-diff-grid">
 
-                        {/* Pillar 1: Extended Port Stays */}
+                        {/* Pillar 1: Longer Time in Port */}
                         <div className="medi-diff-card medi-diff-card-navy">
                             <div className="medi-diff-icon-header">
                                 <div className="medi-diff-icon-box">
                                     <Clock size={24} />
                                 </div>
-                                <h3 className="medi-diff-card-title">Extended Port Stays</h3>
+                                <h3 className="medi-diff-card-title">Longer Time in Port</h3>
                             </div>
                             <p className="medi-diff-card-text">
-                                Azamara is especially known for late-night departures and overnight stays in iconic Mediterranean destinations including:
+                                Azamara is known for extended stays and immersive port experiences throughout Japan.
                             </p>
                             <div className="medi-diff-destination-chips">
-                                <span className="medi-diff-chip">Venice</span>
-                                <span className="medi-diff-chip">Barcelona</span>
-                                <span className="medi-diff-chip">Santorini</span>
-                                <span className="medi-diff-chip">Dubrovnik</span>
-                                <span className="medi-diff-chip">Istanbul</span>
-                                <span className="medi-diff-chip">Amalfi Coast ports</span>
+                                <span className="medi-diff-chip">Tokyo</span>
+                                <span className="medi-diff-chip">Osaka</span>
+                                <span className="medi-diff-chip">Kyoto</span>
+                                <span className="medi-diff-chip">Hiroshima</span>
+                                <span className="medi-diff-chip">Nagasaki</span>
+                                <span className="medi-diff-chip">Shimizu</span>
                             </div>
                             <p className="medi-diff-card-text-secondary">
-                                This allows travelers to experience:
+                                This allows travelers to enjoy:
                             </p>
                             <ul className="medi-diff-experience-list">
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Evening dining ashore</span>
+                                    <span>Evening cultural performances</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Local nightlife</span>
+                                    <span>Local dining experiences</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Sunset sightseeing</span>
+                                    <span>Historic district exploration</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Cultural performances</span>
+                                    <span>Seasonal festivals</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={16} className="medi-diff-list-icon" />
-                                    <span>Reduced daytime tourist crowds</span>
+                                    <span>Reduced daytime crowds</span>
                                 </li>
                             </ul>
                         </div>
 
-                        {/* Pillar 2: Smaller Ship Access */}
+                        {/* Pillar 2: Boutique Small-Ship Experience */}
                         <div className="medi-diff-card medi-diff-card-white">
                             <div className="medi-diff-icon-header">
                                 <div className="medi-diff-icon-box">
                                     <Ship size={24} />
                                 </div>
-                                <h3 className="medi-diff-card-title">Smaller Ship Access</h3>
+                                <h3 className="medi-diff-card-title">Boutique Small-Ship Experience</h3>
                             </div>
 
                             <div className="medi-diff-ship-stat-box">
@@ -526,52 +559,52 @@ function AzamaraJapanCruises() {
                             </div>
 
                             <p className="medi-diff-card-text">
-                                Azamara’s boutique ships accommodate roughly 700 guests, allowing access to ports larger cruise ships cannot easily reach.
+                                Azamara ships carry approximately 700 guests, creating a more intimate and relaxed luxury atmosphere compared to mega ships.
                             </p>
                             <div className="medi-diff-quote-wrapper">
                                 <p className="medi-diff-quote-text">
-                                    This creates a more intimate and relaxed luxury experience.
+                                    Smaller ships also provide access to unique ports throughout Japan and Asia.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Pillar 3: Destination Immersion Focus */}
+                        {/* Pillar 3: Deep Cultural Immersion */}
                         <div className="medi-diff-card medi-diff-card-soft">
                             <div className="medi-diff-icon-header">
                                 <div className="medi-diff-icon-box">
                                     <Compass size={24} />
                                 </div>
-                                <h3 className="medi-diff-card-title">Destination Immersion Focus</h3>
+                                <h3 className="medi-diff-card-title">Deep Cultural Immersion</h3>
                             </div>
                             <p className="medi-diff-card-text">
-                                Azamara emphasizes:
+                                Azamara places heavy emphasis on:
                             </p>
                             <ul className="medi-diff-focus-list-premium">
                                 <li>
                                     <span className="medi-diff-list-num">01</span>
-                                    <span>Local culture</span>
+                                    <span>Japanese culture</span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">02</span>
-                                    <span>Culinary exploration</span>
+                                    <span>Culinary experiences</span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">03</span>
-                                    <span>Regional experiences</span>
+                                    <span>Historic exploration</span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">04</span>
-                                    <span>Enrichment programming</span>
+                                    <span>Local traditions</span>
                                 </li>
                                 <li>
                                     <span className="medi-diff-list-num">05</span>
-                                    <span>Curated shore excursions</span>
+                                    <span>Enrichment programming</span>
                                 </li>
                             </ul>
 
                             <div className="medi-diff-conclusion-box">
                                 <p className="medi-diff-conclusion-text">
-                                    For travelers prioritizing meaningful travel over onboard spectacle, this approach is highly appealing.
+                                    For travelers seeking authentic cultural connection, this creates a far richer experience than traditional cruise tourism.
                                 </p>
                             </div>
                         </div>
@@ -585,7 +618,7 @@ function AzamaraJapanCruises() {
                 <div className="medi-itinerary-showcase-container">
                     <div className="medi-itinerary-showcase-header">
                         <span className="medi-itinerary-eyebrow">CURATED JOURNEYS</span>
-                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Mediterranean Itineraries</h2>
+                        <h2 className="medi-itinerary-showcase-heading">Best Azamara Japan Cruise Itineraries</h2>
                         <div className="medi-itinerary-showcase-separator"></div>
                     </div>
 
@@ -612,7 +645,7 @@ function AzamaraJapanCruises() {
                             <div className="medi-itinerary-showcase-image-wrapper">
                                 <img
                                     src={
-                                        mediSelectedItinerary === 0 ? greeceCruise :
+                                        mediSelectedItinerary === 0 ? greeceCruise : // You can replace these variable names with Japan images
                                             mediSelectedItinerary === 1 ? italyCruise :
                                                 mediSelectedItinerary === 2 ? croatiaCoast : spainCruise
                                     }
@@ -691,27 +724,27 @@ function AzamaraJapanCruises() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Why Mediterranean Small-Ship Cruising Continues <br />to Grow
+                                    Why Japan Has Become One of the Fastest Growing <br />Luxury Cruise Destinations
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
 
                             <p className="medi-editorial-lead-para">
-                                According to Angela Hughes, sophisticated travelers increasingly prefer boutique Mediterranean cruise experiences over mega-ship tourism.
+                                According to Angela Hughes, sophisticated travelers increasingly view Japan as one of the most rewarding destinations for immersive luxury travel.
                             </p>
 
                             <div className="medi-priorities-box">
                                 <p className="medi-priorities-intro">
-                                    After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees travelers prioritizing:
+                                    After more than four decades in global travel and visits to over 121 countries, Angela consistently sees travelers drawn to Japan for:
                                 </p>
                                 <div className="medi-priorities-grid-pills">
                                     {[
-                                        'Authenticity',
-                                        'Flexibility',
-                                        'Destination immersion',
-                                        'Personalized service',
-                                        'Fewer crowds',
-                                        'Cultural connection'
+                                        'Exceptional hospitality',
+                                        'Rich culture',
+                                        'Culinary excellence',
+                                        'Safety',
+                                        'Scenic beauty',
+                                        'Historic traditions'
                                     ].map((item, idx) => (
                                         <div key={idx} className="medi-priority-pill-item">
                                             <CheckCircle size={15} className="medi-priority-check" />
@@ -722,7 +755,7 @@ function AzamaraJapanCruises() {
                             </div>
 
                             <p className="medi-editorial-body-para">
-                                As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers navigate increasingly complex cruise choices with real-world expertise rather than generic online recommendations.
+                                As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers navigate increasingly complex Asia cruise planning with real-world expertise rather than generic online advice.
                             </p>
 
                             <div className="medi-expertise-section-box">
@@ -731,8 +764,8 @@ function AzamaraJapanCruises() {
                                     {[
                                         { title: 'Luxury cruises', icon: Ship },
                                         { title: 'Expedition travel', icon: Compass },
+                                        { title: 'Cultural travel experiences', icon: Globe },
                                         { title: 'River cruising', icon: Anchor },
-                                        { title: 'Safaris', icon: Globe },
                                         { title: 'Premium global travel planning', icon: Sparkles }
                                     ].map((item, idx) => {
                                         const IconComponent = item.icon
@@ -762,7 +795,8 @@ function AzamaraJapanCruises() {
                         <h2 className="medi-luxury-heading">Is Azamara Truly Luxury?</h2>
 
                         <p className="medi-luxury-paragraph">
-                            Azamara is best described as "Boutique upper-premium luxury with strong destination immersion."
+                            Azamara is best described as: <br />
+                            <strong>“Boutique upper-premium luxury with strong cultural immersion.”</strong>
                         </p>
 
                         <div className="medi-luxury-appreciated-box">
@@ -778,29 +812,29 @@ function AzamaraJapanCruises() {
                                 </div>
                                 <div className="medi-luxury-feature">
                                     <CheckCircle size={20} className="medi-feature-check-icon" />
+                                    <span>Relaxed sophistication</span>
+                                </div>
+                                <div className="medi-luxury-feature">
+                                    <CheckCircle size={20} className="medi-feature-check-icon" />
                                     <span>Intimate ship atmosphere</span>
                                 </div>
                                 <div className="medi-luxury-feature">
                                     <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Elevated itineraries</span>
+                                    <span>Destination-focused itineraries</span>
                                 </div>
                                 <div className="medi-luxury-feature">
                                     <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Longer stays in port</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Relaxed sophistication</span>
+                                    <span>Extended port stays</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="medi-luxury-comparison-note">
                             <p className="medi-luxury-paragraph">
-                                However, travelers expecting ultra-luxury experiences comparable to Seabourn, Silversea Cruises, or Regent Seven Seas Cruises should understand Azamara delivers a more approachable and destination-centric luxury style.
+                                Travelers expecting ultra-luxury experiences similar to <strong>Seabourn, Regent Seven Seas Cruises,</strong> or <strong>Silversea Cruises</strong> should understand Azamara offers a more approachable and culturally immersive luxury experience.
                             </p>
                             <p className="medi-luxury-paragraph">
-                                For many experienced travelers, that balance is exactly the appeal.
+                                For many sophisticated travelers, this creates the ideal balance between comfort and exploration.
                             </p>
                         </div>
                     </div>
@@ -821,7 +855,7 @@ function AzamaraJapanCruises() {
                     <div className="medi-mistakes-slider-header">
                         <span className="medi-mistakes-eyebrow">AVOID CRUISE PITFALLS</span>
                         <h2 className="medi-mistakes-slider-title">
-                            Common Mistakes Travelers Make When Booking Mediterranean Cruises
+                            Common Mistakes Travelers Make When Booking <br /> Japan Cruises
                         </h2>
                         <div className="medi-mistakes-slider-separator"></div>
                     </div>
@@ -896,7 +930,7 @@ function AzamaraJapanCruises() {
             {/* WHO SHOULD CHOOSE */}
             <section className="medi-audience-section">
                 <div className="medi-audience-container">
-                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Who Should Choose Azamara Mediterranean Cruises?</h2>
+                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Who Should Choose Azamara Japan Cruises?</h2>
                     <div className="medi-heading-separator-bar medi-bar-centered"></div>
 
                     <div className="medi-audience-split-layout">
@@ -911,39 +945,39 @@ function AzamaraJapanCruises() {
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper best">
-                                        <Heart size={20} className="medi-audience-icon" />
-                                    </div>
-                                    <span>Couples</span>
-                                </li>
-                                <li>
-                                    <div className="medi-audience-icon-wrapper best">
-                                        <Sun size={20} className="medi-audience-icon" />
-                                    </div>
-                                    <span>Empty nesters</span>
-                                </li>
-                                <li>
-                                    <div className="medi-audience-icon-wrapper best">
-                                        <MapPin size={20} className="medi-audience-icon" />
-                                    </div>
-                                    <span>Destination-focused cruisers</span>
-                                </li>
-                                <li>
-                                    <div className="medi-audience-icon-wrapper best">
-                                        <Crown size={20} className="medi-audience-icon" />
-                                    </div>
-                                    <span>Luxury travelers seeking intimacy</span>
-                                </li>
-                                <li>
-                                    <div className="medi-audience-icon-wrapper best">
                                         <Globe size={20} className="medi-audience-icon" />
                                     </div>
                                     <span>Cultural explorers</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper best">
+                                        <Heart size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Couples</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <MapPin size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Luxury travelers seeking immersion</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Crown size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Asia cruise enthusiasts</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
                                         <Ship size={20} className="medi-audience-icon" />
                                     </div>
                                     <span>Travelers avoiding mega ships</span>
+                                </li>
+                                <li>
+                                    <div className="medi-audience-icon-wrapper best">
+                                        <Sun size={20} className="medi-audience-icon" />
+                                    </div>
+                                    <span>Sophisticated international travelers</span>
                                 </li>
                             </ul>
                         </div>
@@ -961,13 +995,13 @@ function AzamaraJapanCruises() {
                                     <div className="medi-audience-icon-wrapper not-ideal">
                                         <Moon size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Travelers seeking nonstop nightlife</span>
+                                    <span>Travelers prioritizing nonstop nightlife onboard</span>
                                 </li>
                                 <li>
                                     <div className="medi-audience-icon-wrapper not-ideal">
                                         <Music size={20} className="medi-audience-icon" />
                                     </div>
-                                    <span>Guests prioritizing large-scale entertainment</span>
+                                    <span>Guests seeking large-scale entertainment complexes</span>
                                 </li>
                             </ul>
                         </div>
@@ -982,10 +1016,10 @@ function AzamaraJapanCruises() {
                     {/* Header Block */}
                     <div className="medi-work-header-card">
                         <span className="medi-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
-                        <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading white-heading">Why Travelers Work with <br /> Trips & Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar custom-bar"></div>
                         <p className="medi-work-intro-para">
-                            Luxury Mediterranean cruise planning has become increasingly complex.
+                            Luxury Japan cruise planning has become increasingly specialized.
                         </p>
                     </div>
 
@@ -1005,28 +1039,28 @@ function AzamaraJapanCruises() {
                                 <div className="medi-pillar-line-bar"></div>
                                 <ul className="medi-pillar-list">
                                     <li>
-                                        <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Avoid costly itinerary mistakes</span>
+                                        <Calendar size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Select ideal sailing seasons</span>
                                     </li>
                                     <li>
-                                        <Calendar size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Select the best sailing season</span>
+                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Choose culturally immersive itineraries</span>
                                     </li>
                                     <li>
                                         <Crown size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Choose ideal suite categories</span>
+                                        <span>Secure premium suites</span>
                                     </li>
                                     <li>
                                         <Gem size={18} className="medi-pillar-list-icon icon-theme" />
                                         <span>Access exclusive amenities</span>
                                     </li>
                                     <li>
-                                        <Compass size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Navigate luxury promotions strategically</span>
+                                        <Ship size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Navigate complex Asia cruise logistics</span>
                                     </li>
                                     <li>
-                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Match destinations to travel goals</span>
+                                        <Compass size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Match travel goals with the right cruise experience</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1039,12 +1073,12 @@ function AzamaraJapanCruises() {
                             </div>
                             <div className="medi-timeline-card">
                                 <div className="medi-card-step-badge">STEP 02</div>
-                                <h3 className="medi-pillar-title">Angela Hughes is globally recognized for luxury travel expertise through:</h3>
+                                <h3 className="medi-pillar-title">Angela Hughes is internationally recognized for luxury travel expertise through:</h3>
                                 <div className="medi-pillar-line-bar"></div>
                                 <ul className="medi-pillar-list">
                                     <li>
                                         <Mic size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Travel industry speaking engagements</span>
+                                        <span>Industry speaking engagements</span>
                                     </li>
                                     <li>
                                         <FileText size={18} className="medi-pillar-list-icon icon-theme" />
@@ -1081,26 +1115,25 @@ function AzamaraJapanCruises() {
                                         <span>Luxury cruises</span>
                                     </li>
                                     <li>
-                                        <Anchor size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>River cruising</span>
+                                        <Globe size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Asia travel</span>
                                     </li>
                                     <li>
                                         <Compass size={18} className="medi-pillar-list-icon icon-theme" />
                                         <span>Expedition voyages</span>
                                     </li>
                                     <li>
-                                        <Star size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Safaris</span>
+                                        <Anchor size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>River cruising</span>
                                     </li>
                                     <li>
-                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Premium European travel</span>
+                                        <Star size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Premium global travel experiences</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -1166,31 +1199,61 @@ function AzamaraJapanCruises() {
                 </div>
             </section>
 
+            {/* FAQ SECTION */}
+            <section className="medi-faq-main-section">
+                <div className="medi-faq-container">
+                    <div style={{ textAlign: 'center' }}>
+                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
+                    <div className="medi-faq-list-wrapper">
+                        {mediFaqs.map((faq, index) => (
+                            <div
+                                key={index}
+                                className="medi-faq-individual-item"
+                                onClick={() => mediToggleFaq(index)}
+                            >
+                                <div className="medi-faq-question-row">
+                                    <span>{index + 1}. {faq.question}</span>
+                                    <span className="medi-faq-toggle-icon">
+                                        {mediActiveFaq === index ? "−" : "+"}
+                                    </span>
+                                </div>
+                                {mediActiveFaq === index && (
+                                    <p className="medi-faq-answer-text">{faq.answer}</p>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* CTA SECTION */}
             <section className="medi-cta-main-section">
                 <div className="medi-cta-bg-pattern-layer"></div>
                 <div className="medi-cta-content-relative">
                     <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Ready to Experience the Mediterranean with Azamara?</h2>
+                        <h2 className="medi-cta-heading-white">Ready to Experience <br /> Japan with Azamara?</h2>
                         <div className="medi-cta-separator-white"></div>
 
                         <p className="medi-cta-paragraph-white">
-                            Luxury Mediterranean cruising is no longer simply about transportation between ports — it is about authentic experiences, cultural immersion, personalized service, and seamless planning.
+                            Luxury Japan cruising is about more than simply visiting ports — it is about cultural immersion, authentic experiences, personalized service, and seamless planning.
                         </p>
 
                         <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            With over four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Mediterranean experience.
+                            With over four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Japan cruise experience.
                         </p>
 
                         <div className="medi-cta-considerations-box">
                             <span className="medi-cta-considerations-title">Whether you are considering:</span>
                             <ul className="medi-cta-considerations-list">
                                 {[
-                                    "Greek Isles cruising",
-                                    "Italy-intensive voyages",
-                                    "Adriatic exploration",
-                                    "Boutique European luxury travel",
-                                    "Extended Mediterranean itineraries"
+                                    "Cherry blossom cruises",
+                                    "Cultural Japan itineraries",
+                                    "Boutique Asia voyages",
+                                    "Luxury small-ship exploration",
+                                    "Extended Asia cruise experiences"
                                 ].map((item, idx) => (
                                     <li key={idx} className="medi-cta-considerations-item">
                                         <CheckCircle size={16} className="medi-cta-considerations-icon" />
@@ -1214,36 +1277,10 @@ function AzamaraJapanCruises() {
                                 Request Itinerary Options
                             </button>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* FAQ SECTION */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    </div>
-
-                    <div className="medi-faq-list-wrapper">
-                        {mediFaqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className="medi-faq-individual-item"
-                                onClick={() => mediToggleFaq(index)}
-                            >
-                                <div className="medi-faq-question-row">
-                                    <span>{faq.question}</span>
-                                    <span className="medi-faq-toggle-icon">
-                                        {mediActiveFaq === index ? "−" : "+"}
-                                    </span>
-                                </div>
-                                {mediActiveFaq === index && (
-                                    <p className="medi-faq-answer-text">{faq.answer}</p>
-                                )}
-                            </div>
-                        ))}
+                        <p className="medi-cta-paragraph-white" style={{ fontSize: '0.9rem', marginTop: '20px', opacity: 0.8 }}>
+                            Schedule a personalized Japan luxury cruise consultation with Trips & Ships Luxury Travel today.
+                        </p>
                     </div>
                 </div>
             </section>
