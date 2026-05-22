@@ -175,23 +175,53 @@ function MediterraneanCruises() {
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": mediFaqs.slice(0, 5).map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara Mediterranean cruises worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What makes Azamara different in the Mediterranean?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara considered luxury?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                        }
                     }
-                }))
+                ]
             }
         ]
     }
 
+
     return (
         <>
             <Helmet>
-                <title>Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights</title>
-                <meta name="description" content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026." />
+                <title>
+                    Azamara Mediterranean Cruises 2026 | Luxury Small Ship Mediterranean Cruise Guide
+
+                </title>
+                <meta
+                    name="title"
+                    content="Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights
+"
+                />
+                <meta
+                    name="description"
+                    content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026."
+                />
                 <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}

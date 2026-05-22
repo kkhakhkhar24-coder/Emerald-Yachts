@@ -197,9 +197,9 @@ function AzamaraJapanCruises() {
             },
             {
                 "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
+                "name": "Azamara Japan Cruises",
+                "url": "https://www.tripsandships.com/azamara-japan-cruises",
+                "description": "Expert Azamara Japan cruise guide for luxury travelers."
             },
             {
                 "@type": "BreadcrumbList",
@@ -213,41 +213,75 @@ function AzamaraJapanCruises() {
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/mediterranean-cruises"
+                        "name": "Asia Cruises",
+                        "item": "https://www.tripsandships.com/asia-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
+                        "name": "Azamara Japan Cruises",
+                        "item": "https://www.tripsandships.com/azamara-japan-cruises"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": mediFaqs.slice(0, 5).map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara Japan cruises worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Azamara offers immersive Japan experiences with boutique ships, longer port stays, and culturally focused itineraries."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Azamara cruise Japan during cherry blossom season?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Select Azamara itineraries operate during Japan’s famous cherry blossom season."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara considered luxury?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                        }
                     }
-                }))
+                ]
             }
         ]
     }
 
+
     return (
         <>
             <Helmet>
-                <title>Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights</title>
-                <meta name="description" content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026." />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                <title>
+                    Azamara Japan Cruises 2026 | Luxury Japan Cruise Guide
+
+
+                </title>
+                <meta
+                    name="title"
+                    content="Azamara Japan Cruises Guide 2026 | Expert Luxury Cruise Insights
+
+"
+                />
+                <meta
+                    name="description"
+                    content="Explore Azamara Japan Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Japan itineraries, boutique luxury ships, cultural experiences, and personalized cruise planning for 2026.
+"
+                />
+                <meta name="keywords" content="Azamara Japan Cruises, Luxury Japan cruises, Small ship Japan cruises,  Boutique Japan cruise line
+" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
-            </Helmet>
+            </Helmet >
 
             <Navbar />
 

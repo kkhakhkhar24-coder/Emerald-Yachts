@@ -128,6 +128,63 @@
     z-index: 2;
 }
 
+.medi-cta-considerations-title {
+    display: block;
+    text-align: center;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px;
+    color: #e8e8e9 !important;
+    letter-spacing: 0.5px;
+}
+
+.medi-cta-considerations-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 24px 28px 26px;
+    min-width: 180px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.medi-cta-considerations-box:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px);
+}
+
+.medi-cta-considerations-list {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    list-style: none;
+    padding: 0;
+    color: var(--medi-bg-white)
+}
+
+.medi-cta-considerations-icon {
+    color: #93c5fd;
+    margin-top: -14px;
+
+    font-size: 28px;
+}
+
+.medi-cta-considerations-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e8e8e9;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
 /* ============================================================
    BARS / SEPARATORS
    ============================================================ */

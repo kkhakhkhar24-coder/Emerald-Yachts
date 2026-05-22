@@ -154,9 +154,9 @@ function MediterraneanCruises() {
             },
             {
                 "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
+                "name": "Azamara Greece Cruises",
+                "url": "https://www.tripsandships.com/azamara-greece-cruises",
+                "description": "Expert Azamara Greece cruise guide for luxury travelers."
             },
             {
                 "@type": "BreadcrumbList",
@@ -176,31 +176,64 @@ function MediterraneanCruises() {
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
+                        "name": "Azamara Greece Cruises",
+                        "item": "https://www.tripsandships.com/azamara-greece-cruises"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": mediFaqs.slice(0, 5).map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara Greece cruises worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Azamara offers immersive Greek Isles experiences with smaller ships, longer port stays, and boutique luxury service."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Azamara visit Santorini and Mykonos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Santorini and Mykonos are among Azamara’s most popular Greek Isles destinations."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara considered luxury?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                        }
                     }
-                }))
+                ]
             }
         ]
     }
 
+
     return (
         <>
             <Helmet>
-                <title>Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights</title>
-                <meta name="description" content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026." />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                <title>
+                    Azamara Greece Cruises 2026 | Luxury Greek Isles Cruise Guide
+
+
+                </title>
+                <meta
+                    name="title"
+                    content="Azamara Greece Cruises Guide 2026 | Expert Luxury Cruise Insights
+
+           "
+                />
+                <meta
+                    name="description"
+                    content="Explore Azamara Greece Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Greek Isles itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026.
+"
+                />
+                <meta name="keywords" content="Azamara Greece Cruises, Azamara Greek Isles cruises, Luxury Greece cruises,  Small ship Greece cruises" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
