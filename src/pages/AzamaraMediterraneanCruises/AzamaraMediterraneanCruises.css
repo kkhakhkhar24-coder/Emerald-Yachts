@@ -1,8 +1,9 @@
 /* Azamara Mediterranean Cruises Styles */
 
 /* ============================================================
-   COLOR PALETTE
+   ROOT VARIABLES
    ============================================================ */
+
 :root {
     --medi-navy: #274472;
     --medi-navy-light: #274472cc;
@@ -15,32 +16,46 @@
 }
 
 /* ============================================================
-   BASE SECTION & CONTAINER
+   SHARED TYPOGRAPHY & UTILITIES
    ============================================================ */
-.medi-intro-section,
-.medi-excellence-section,
-.medi-expert-section,
-.medi-luxury-definition-section,
-.medi-mistakes-section,
-.medi-audience-section,
-.medi-work-with-us-section {
-    padding: 60px 20px;
+
+.medi-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--medi-navy);
 }
 
-.medi-intro-container,
-.medi-excellence-container,
-.medi-expert-container,
-.medi-luxury-definition-container,
-.medi-mistakes-container,
-.medi-audience-container,
-.medi-work-with-us-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.medi-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 32px;
+}
+
+.medi-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+    .medi-section-heading {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-section-heading {
+        font-size: 28px !important;
+    }
 }
 
 /* ============================================================
-   TYPOGRAPHY
+   HERO SECTION
    ============================================================ */
+
 .medi-hero-main-title {
     font-size: 60px;
     line-height: 1.1;
@@ -52,164 +67,6 @@
     max-width: 900px;
 }
 
-.medi-section-heading {
-    font-size: 48px !important;
-    line-height: 1.2;
-    font-weight: 500 !important;
-    margin: 0 0 20px 0;
-    letter-spacing: -0.01em;
-    color: var(--medi-navy);
-}
-
-.medi-card-title,
-.medi-itinerary-title,
-.medi-mistake-title,
-.medi-audience-column-heading {
-    font-size: 30px;
-    line-height: 1.3;
-    font-weight: 700 !important;
-    margin: 0 0 18px 0;
-    color: var(--medi-navy);
-}
-
-.medi-body-paragraph,
-.medi-card-description,
-.medi-expert-paragraph,
-.medi-luxury-paragraph {
-    font-size: 18px !important;
-    line-height: 1.8;
-    color: var(--medi-navy) !important;
-    margin: 0 0 16px 0;
-    font-weight: 500 !important;
-}
-
-.medi-cta-paragraph-white {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #e2e8f0;
-    margin: 0 0 16px 0;
-}
-
-/* ============================================================
-   BACKGROUNDS
-   ============================================================ */
-.medi-intro-section,
-.medi-mistakes-section,
-.medi-faq-main-section {
-    background: var(--medi-bg-white);
-}
-
-.medi-excellence-section,
-.medi-audience-section {
-    background: var(--medi-bg-soft);
-}
-
-.medi-expert-section {
-    background: linear-gradient(180deg, #ffffff 0%, var(--medi-bg-soft) 100%);
-    position: relative;
-}
-
-.medi-cta-main-section {
-    background: var(--medi-bg-dark2);
-    position: relative;
-    overflow: hidden;
-    padding: 60px 20px;
-}
-
-.medi-cta-bg-pattern-layer {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
-    z-index: 0;
-}
-
-.medi-cta-content-relative {
-    position: relative;
-    z-index: 2;
-}
-
-.medi-cta-considerations-title {
-    display: block;
-    text-align: center;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    margin-bottom: 20px;
-    color: #e8e8e9 !important;
-    letter-spacing: 0.5px;
-}
-
-.medi-cta-considerations-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 24px 28px 26px;
-    min-width: 180px;
-    transition: all 0.25s ease;
-    cursor: pointer;
-    margin-bottom: 25px;
-}
-
-.medi-cta-considerations-box:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-4px);
-}
-
-.medi-cta-considerations-list {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-    margin-bottom: 36px;
-    list-style: none;
-    padding: 0;
-    color: var(--medi-bg-white)
-}
-
-.medi-cta-considerations-icon {
-    color: #93c5fd;
-    margin-top: -14px;
-
-    font-size: 28px;
-}
-
-.medi-cta-considerations-text {
-    font-size: 15px;
-    font-weight: 600;
-    color: #e8e8e9;
-    text-align: center;
-    margin-top: 14px;
-}
-
-
-/* ============================================================
-   BARS / SEPARATORS
-   ============================================================ */
-.medi-heading-separator-bar {
-    width: 60px;
-    height: 4px;
-    background: var(--medi-navy);
-    margin-bottom: 32px;
-}
-
-.medi-cta-separator-white {
-    width: 60px;
-    height: 4px;
-    background: #ffffff;
-    margin: 0 auto 20px;
-}
-
-.medi-bar-centered {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
 .medi-hero-section {
     position: relative;
     min-height: 100vh;
@@ -1984,366 +1841,38 @@
     .medi-hero-main-title {
         font-size: 48px;
     }
-
-    .medi-section-heading {
-        font-size: 40px;
-    }
-
-    .medi-intro-grid-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .medi-intro-heading-column {
-        position: static;
-    }
-
-    .medi-differentiators-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .medi-itineraries-layout-container {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .medi-itineraries-image-panels {
-        height: 400px;
-        width: 100%;
-    }
-
-    .medi-itineraries-main-heading {
-        font-size: 42px;
-        text-align: center;
-    }
-
-    .medi-expert-layout-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .medi-expert-portrait-area {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .medi-luxury-definition-container {
-        flex-direction: column;
-        gap: 40px;
-        height: auto;
-    }
-
-    .medi-luxury-content-wrapper {
-        overflow-y: visible;
-        height: auto;
-        padding-right: 0;
-    }
-
-    .medi-luxury-visual-wrapper {
-        flex: 1;
-        max-width: 500px;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    .medi-luxury-main-image {
-        height: auto;
-        object-fit: contain;
-    }
-
-    .medi-luxury-features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .medi-mistakes-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .medi-audience-split-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .medi-work-with-us-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .medi-cta-heading-white {
-        font-size: 38px;
-    }
 }
 
-/* ============================================================
-   RESPONSIVE DESIGN - MOBILE (max-width: 767px)
-   ============================================================ */
 @media (max-width: 767px) {
     .medi-hero-main-title {
         font-size: 32px;
         margin-bottom: 24px;
     }
-
-    .medi-hero-subtitle-text {
-        font-size: 16px;
-        margin-bottom: 32px;
-    }
-
-    .medi-hero-cta-container {
-        padding: 28px 24px;
-    }
-
-    .medi-cta-title-text {
-        font-size: 18px;
-    }
-
-    .medi-cta-subtitle-text {
-        font-size: 14px;
-    }
-
-    .medi-cta-features-row {
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-    }
-
-    .medi-primary-cta-button,
-    .medi-secondary-outline-button {
-        width: 100%;
-        justify-content: center;
-        padding: 14px 24px;
-        font-size: 15px;
-    }
-
-    .medi-section-heading {
-        font-size: 32px;
-    }
-
-    .medi-intro-section,
-    .medi-excellence-section,
-    .medi-expert-section,
-    .medi-luxury-definition-section,
-    .medi-mistakes-section,
-    .medi-audience-section,
-    .medi-work-with-us-section {
-        padding: 40px 16px;
-    }
-
-    .medi-intro-grid-layout {
-        gap: 32px;
-    }
-
-    .medi-body-paragraph,
-    .medi-card-description,
-    .medi-expert-paragraph,
-    .medi-luxury-paragraph {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    .medi-intro-highlight-box {
-        font-size: 15px;
-        padding: 16px 20px;
-    }
-
-    .medi-differentiators-grid {
-        gap: 20px;
-    }
-
-    .medi-differentiator-card {
-        padding: 24px;
-    }
-
-    .medi-card-icon-wrapper {
-        width: 56px;
-        height: 56px;
-    }
-
-    .medi-card-title {
-        font-size: 22px;
-    }
-
-    .medi-itineraries-premium-section {
-        padding: 40px 16px;
-    }
-
-    .medi-itineraries-image-panels {
-        height: 300px;
-        gap: 10px;
-    }
-
-    .medi-image-panel.medi-panel-one {
-        border-radius: 60px 0 0 60px;
-    }
-
-    .medi-image-panel.medi-panel-two {
-        border-radius: 60px 60px 0 0;
-    }
-
-    .medi-image-panel.medi-panel-three {
-        border-radius: 0 60px 60px 0;
-    }
-
-    .medi-side-vertical-label {
-        display: none;
-    }
-
-    .medi-itineraries-main-heading {
-        font-size: 28px;
-        margin-bottom: 32px;
-    }
-
-    .medi-itinerary-block {
-        margin-bottom: 32px;
-        padding-bottom: 32px;
-    }
-
-    .medi-itinerary-title {
-        font-size: 20px;
-    }
-
-    .medi-expert-badge-label {
-        font-size: 11px;
-        padding: 6px 16px;
-    }
-
-    .medi-expert-main-heading {
-        font-size: 28px;
-    }
-
-    .medi-expert-paragraph {
-        font-size: 16px;
-    }
-
-    .medi-credentials-list {
-        gap: 12px;
-        margin-top: 24px;
-    }
-
-    .medi-credential-item {
-        padding: 12px 16px;
-        font-size: 14px;
-    }
-
-    .medi-luxury-heading {
-        font-size: 36px;
-        margin-bottom: 32px;
-    }
-
-    .medi-luxury-eyebrow-label {
-        font-size: 11px;
-        letter-spacing: 0.2em;
-    }
-
-    .medi-luxury-subheading {
-        font-size: 18px;
-    }
-
-    .medi-luxury-appreciated-box {
-        padding: 24px;
-        margin: 32px 0;
-    }
-
-    .medi-luxury-features-grid {
-        gap: 12px;
-    }
-
-    .medi-luxury-feature {
-        font-size: 14px;
-    }
-
-    .medi-luxury-comparison-note {
-        padding: 20px;
-    }
-
-    .medi-mistakes-grid {
-        gap: 20px;
-    }
-
-    .medi-mistake-card {
-        padding: 24px;
-    }
-
-    .medi-mistake-number {
-        font-size: 36px;
-        top: 16px;
-        right: 16px;
-    }
-
-    .medi-mistake-title {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .medi-mistake-description {
-        font-size: 15px;
-    }
-
-    .medi-audience-split-layout {
-        gap: 24px;
-    }
-
-    .medi-audience-column {
-        padding: 28px 24px;
-    }
-
-    .medi-audience-column-heading {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .medi-audience-list li {
-        padding: 10px 8px;
-        margin: 4px -8px;
-        font-size: 15px;
-    }
-
-    .medi-work-with-us-container {
-        gap: 32px;
-    }
-
-    .medi-cta-main-section {
-        padding: 50px 16px;
-    }
-
-    .medi-cta-heading-white {
-        font-size: 28px;
-        margin-bottom: 16px;
-    }
-
-    .medi-cta-paragraph-white {
-        font-size: 16px;
-        margin-bottom: 32px;
-    }
-
-    .medi-cta-button-group {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .medi-cta-button-group button {
-        width: 100%;
-    }
-
-    .medi-faq-main-section {
-        padding: 60px 16px;
-    }
-
-    .medi-faq-individual-item {
-        padding: 20px 0;
-    }
-
-    .medi-faq-answer-text {
-        font-size: 15px;
-        padding-right: 0;
-        margin-top: 12px;
-    }
 }
 
 /* ============================================================
-   PREMIUM INTRO SECTION (EXCLUSIVE STYLING)
+   PREMIUM INTRO SECTION
    ============================================================ */
+
+.medi-intro-section {
+    padding: 60px 20px;
+}
+
+.medi-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medi-intro-section {
+    background: var(--medi-bg-white);
+}
+
+@media (max-width: 767px) {
+    .medi-intro-section {
+        padding: 40px 16px;
+    }
+}
+
 .medi-premium-intro-section {
     position: relative;
     background: linear-gradient(135deg, #ffffff 0%, var(--medi-bg-soft) 100%) !important;
@@ -2486,7 +2015,6 @@
     line-height: 1.4;
 }
 
-/* SIGNATURE EXPERT PANEL */
 .medi-premium-signature-panel {
     position: relative;
     background: #ffffff;
@@ -2584,7 +2112,6 @@
     font-style: italic;
 }
 
-/* RESPONSIVE PREMIUM INTRO */
 @media (max-width: 1024px) {
     .medi-premium-intro-grid {
         grid-template-columns: 1fr;
@@ -2621,8 +2148,9 @@
 }
 
 /* ============================================================
-   WHY AZAMARA EXCELS SECTION (EXCLUSIVE PREMIUM DARK THEME)
+   WHY AZAMARA EXCELS SECTION
    ============================================================ */
+
 .medi-excel-section {
     position: relative;
     background: linear-gradient(135deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%) !important;
@@ -2631,7 +2159,6 @@
     color: #ffffff;
 }
 
-/* Coordinates styled in ultra-subtle transparent white/soft-blue for rich destination branding */
 .medi-excel-coord {
     position: absolute;
     font-size: 11px;
@@ -2850,9 +2377,133 @@
     font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+    .medi-excel-coord {
+        display: none;
+    }
+
+    .medi-excel-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .medi-excel-main-title {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-excel-section {
+        padding: 70px 16px !important;
+    }
+
+    .medi-excel-main-title {
+        font-size: 28px !important;
+    }
+
+    .medi-excel-lead-paragraph {
+        font-size: 17px !important;
+    }
+
+    .medi-excel-card {
+        padding: 30px 24px;
+    }
+
+    .medi-excel-footer-block {
+        padding: 24px 20px;
+    }
+
+    .medi-excel-footer-paragraph {
+        font-size: 17px !important;
+    }
+}
+
+.medi-veranda-worth-section .medi-excel-main-title {
+    color: #0f1c2e !important;
+}
+
+.medi-veranda-worth-section .medi-excel-lead-paragraph {
+    color: #475569 !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card {
+    background: var(--medi-bg-soft) !important;
+    border: 1px solid rgba(39, 68, 114, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 50px 40px !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(215, 235, 238, 0.8) !important;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
+    border-color: rgba(39, 68, 114, 0.3) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-card-heading {
+    color: #0f1c2e !important;
+}
+
+.medi-veranda-worth-section .medi-excel-list-item span {
+    color: #334155 !important;
+}
+
+.medi-veranda-worth-section .medi-excel-icon-wrapper {
+    background: rgba(39, 68, 114, 0.08) !important;
+    color: var(--medi-navy) !important;
+}
+
+.medi-veranda-worth-section .medi-excel-icon-wrapper svg {
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-excel-main-title {
+    color: #0f1c2e !important;
+}
+
+.medi-suites-worth-section .medi-excel-lead-paragraph {
+    color: #475569 !important;
+}
+
+.medi-suites-worth-section .medi-excel-card {
+    background: var(--medi-bg-soft) !important;
+    border: 1px solid rgba(39, 68, 114, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 50px 40px !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.medi-suites-worth-section .medi-excel-card:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(215, 235, 238, 0.8) !important;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
+    border-color: rgba(39, 68, 114, 0.3) !important;
+}
+
+.medi-suites-worth-section .medi-excel-card-heading {
+    color: #0f1c2e !important;
+}
+
+.medi-suites-worth-section .medi-excel-list-item span {
+    color: #334155 !important;
+}
+
+.medi-suites-worth-section .medi-excel-icon-wrapper {
+    background: rgba(39, 68, 114, 0.08) !important;
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-excel-icon-wrapper svg {
+    color: var(--medi-navy) !important;
+}
+
 /* ============================================================
-   WHAT MAKES AZAMARA DIFFERENT SECTION (PREMIUM THREE-COLUMN)
+   WHAT MAKES AZAMARA DIFFERENT SECTION
    ============================================================ */
+
 .medi-diff-section {
     position: relative;
     background: linear-gradient(180deg, var(--medi-bg-soft) 0%, #ffffff 100%);
@@ -2934,7 +2585,6 @@
     color: #ffffff !important;
     font-size: 15px;
     font-weight: 600;
-
 }
 
 .medi-diff-card-navy .medi-diff-card-text {
@@ -3212,21 +2862,7 @@
     font-style: italic;
 }
 
-/* RESPONSIVE WHY AZAMARA EXCELS & DIFFERENT SECTION */
 @media (max-width: 1024px) {
-    .medi-excel-coord {
-        display: none;
-    }
-
-    .medi-excel-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .medi-excel-main-title {
-        font-size: 34px !important;
-    }
-
     .medi-diff-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -3238,30 +2874,6 @@
 }
 
 @media (max-width: 767px) {
-    .medi-excel-section {
-        padding: 70px 16px !important;
-    }
-
-    .medi-excel-main-title {
-        font-size: 28px !important;
-    }
-
-    .medi-excel-lead-paragraph {
-        font-size: 17px !important;
-    }
-
-    .medi-excel-card {
-        padding: 30px 24px;
-    }
-
-    .medi-excel-footer-block {
-        padding: 24px 20px;
-    }
-
-    .medi-excel-footer-paragraph {
-        font-size: 17px !important;
-    }
-
     .medi-diff-section {
         padding: 70px 16px;
     }
@@ -3276,8 +2888,1600 @@
 }
 
 /* ============================================================
-   WHY WORK WITH US SECTION (EXQUISITE VERTICAL TIMELINE STYLING)
+   BEST ITINERARIES SHOWCASE SECTION
    ============================================================ */
+
+.medi-itinerary-showcase-section {
+    background: var(--medi-bg-white);
+    padding: 80px 20px;
+    position: relative;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.medi-itinerary-showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medi-itinerary-showcase-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.medi-itinerary-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--medi-navy);
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.medi-itinerary-showcase-heading {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: serif;
+    color: var(--medi-navy);
+    margin: 0 0 16px 0;
+}
+
+.medi-itinerary-showcase-separator {
+    width: 80px;
+    height: 3px;
+    background: var(--medi-navy);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.medi-itinerary-dashboard {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.medi-itinerary-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.medi-itinerary-tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 28px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.medi-itinerary-tab-btn:hover {
+    background: rgba(39, 68, 114, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.06);
+}
+
+.medi-itinerary-tab-btn.active {
+    background: var(--medi-navy);
+    border-color: var(--medi-navy);
+    color: #ffffff;
+    transform: translateX(8px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.15);
+}
+
+.medi-itinerary-tab-number {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin-right: 16px;
+}
+
+.medi-itinerary-tab-btn.active .medi-itinerary-tab-number {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.medi-itinerary-tab-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.medi-itinerary-tab-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--medi-navy);
+    transition: color 0.3s ease;
+}
+
+.medi-itinerary-tab-btn.active .medi-itinerary-tab-title {
+    color: #ffffff;
+}
+
+.medi-itinerary-tab-arrow {
+    color: var(--medi-navy);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.medi-itinerary-tab-btn.active .medi-itinerary-tab-arrow {
+    color: #ffffff;
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.medi-itinerary-showcase-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-itinerary-showcase-image-wrapper {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+
+.medi-itinerary-showcase-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-itinerary-showcase-card:hover .medi-itinerary-showcase-img {
+    transform: scale(1.05);
+}
+
+.medi-itinerary-showcase-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, rgba(15, 28, 46, 0) 100%);
+    z-index: 1;
+}
+
+.medi-itinerary-showcase-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.2);
+}
+
+.medi-itinerary-showcase-body {
+    padding: 45px;
+    z-index: 2;
+    position: relative;
+}
+
+.medi-itinerary-showcase-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 30px 0;
+    letter-spacing: -0.01em;
+}
+
+.medi-itinerary-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 45px;
+}
+
+.medi-itinerary-details-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.medi-itinerary-details-heading {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--medi-navy);
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--medi-bg-soft);
+}
+
+.medi-itinerary-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.medi-itinerary-details-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.medi-itinerary-detail-icon {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.medi-itinerary-details-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.medi-itinerary-details-chip {
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.medi-itinerary-details-chip:hover {
+    background: var(--medi-navy);
+    border-color: var(--medi-navy);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(39, 68, 114, 0.12);
+}
+
+.medi-itinerary-chip-icon {
+    color: var(--medi-navy);
+    transition: color 0.3s ease;
+}
+
+.medi-itinerary-details-chip:hover .medi-itinerary-chip-icon {
+    color: #ffffff;
+}
+
+@media (max-width: 992px) {
+    .medi-itinerary-dashboard {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .medi-itinerary-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 12px;
+        gap: 12px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .medi-itinerary-tab-btn {
+        padding: 16px 20px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        min-width: 220px;
+        justify-content: center;
+    }
+
+    .medi-itinerary-tab-btn.active {
+        transform: none;
+    }
+
+    .medi-itinerary-tab-arrow {
+        display: none;
+    }
+
+    .medi-itinerary-showcase-image-wrapper {
+        height: 280px;
+    }
+
+    .medi-itinerary-showcase-body {
+        padding: 30px;
+    }
+
+    .medi-itinerary-showcase-title {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .medi-itinerary-details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .medi-itinerary-showcase-heading {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-itinerary-showcase-heading {
+        font-size: 28px !important;
+    }
+}
+
+.medi-veranda-worth-section .medi-itinerary-eyebrow {
+    color: var(--medi-navy) !important;
+}
+
+.medi-suites-worth-section .medi-itinerary-eyebrow {
+    color: var(--medi-navy) !important;
+}
+
+/* ============================================================
+   EXPERT INSIGHT SECTION
+   ============================================================ */
+
+.medi-expert-editorial-section {
+    padding: 90px 20px;
+    background: linear-gradient(180deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.medi-expert-editorial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.medi-expert-editorial-card {
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 60px;
+    align-items: center;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 30px 70px rgba(15, 28, 46, 0.05);
+    position: relative;
+}
+
+.medi-editorial-portrait-block {
+    position: relative;
+    width: 100%;
+}
+
+.medi-editorial-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.medi-editorial-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.medi-expert-editorial-card:hover .medi-editorial-image-frame img {
+    transform: scale(1.03);
+}
+
+.medi-editorial-gradient-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(37, 68, 114, 0.35) 0%, transparent 100%);
+    z-index: 1;
+}
+
+.medi-editorial-floating-stat {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--medi-navy);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.25);
+    z-index: 3;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-expert-editorial-card:hover .medi-editorial-floating-stat {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.3);
+}
+
+.medi-stat-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.medi-stat-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.medi-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+}
+
+.medi-stat-divider {
+    width: 1px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.medi-editorial-content-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.medi-editorial-eyebrow-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.medi-editorial-icon-badge {
+    color: var(--medi-navy);
+    opacity: 0.8;
+}
+
+.medi-editorial-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--medi-navy);
+    opacity: 0.9;
+}
+
+.medi-editorial-title {
+    font-size: 48px;
+    font-weight: 500 !important;
+    font-family: serif;
+    color: var(--medi-navy);
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.01em;
+}
+
+.medi-editorial-accent-bar {
+    width: 60px;
+    height: 3px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.medi-editorial-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2d3748;
+    margin: 0 0 24px 0;
+    font-weight: 500;
+}
+
+.medi-priorities-box {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.medi-priorities-intro {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 18px 0;
+}
+
+.medi-priorities-grid-pills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.medi-priority-pill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.medi-priority-pill-item:hover {
+    border-color: var(--medi-navy);
+    color: var(--medi-navy);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
+}
+
+.medi-priority-check {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.medi-editorial-body-para {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #4a5568;
+    margin: 0 0 32px 0;
+}
+
+.medi-expertise-section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.medi-expertise-intro-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--medi-navy);
+    opacity: 0.8;
+}
+
+.medi-expertise-horizontal-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.medi-expertise-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-soft);
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.medi-expertise-pills-row:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(39, 68, 114, 0.12);
+}
+
+.medi-expertise-pill-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+    .medi-expert-editorial-card {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .medi-editorial-floating-stat {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: -24px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
+    }
+
+    .medi-editorial-title {
+        font-size: 28px;
+    }
+
+    .medi-priorities-grid-pills {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* ============================================================
+   LUXURY DEFINITION SECTION
+   ============================================================ */
+
+.medi-luxury-definition-section {
+    padding: 60px 20px;
+}
+
+.medi-luxury-definition-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medi-luxury-paragraph {
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: var(--medi-navy) !important;
+    margin: 0 0 16px 0;
+    font-weight: 500 !important;
+}
+
+.medi-luxury-definition-section {
+    background: var(--bg-white);
+}
+
+.medi-luxury-definition-container {
+    display: flex;
+    gap: 80px;
+    align-items: stretch;
+    height: 560px;
+}
+
+.medi-luxury-content-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 28px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-track {
+    background: var(--bg-soft);
+    border-radius: 4px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-thumb {
+    background: var(--navy-light);
+    border-radius: 4px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--navy);
+}
+
+.medi-luxury-eyebrow-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--navy);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.medi-luxury-heading {
+    font-size: 56px;
+    line-height: 1.1;
+    color: var(--navy);
+    font-family: serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.medi-luxury-appreciated-box {
+    margin: 40px 0;
+    padding: 32px;
+    background: var(--bg-soft);
+    border-radius: 12px;
+}
+
+.medi-luxury-subheading {
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.medi-luxury-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.medi-luxury-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--text-body);
+    font-weight: 500;
+}
+
+.medi-feature-check-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.medi-luxury-comparison-note {
+    margin-top: 32px;
+    padding: 24px;
+    border-left: 4px solid var(--navy);
+    background: var(--bg-soft);
+    border-radius: 0 8px 8px 0;
+}
+
+.medi-luxury-visual-wrapper {
+    flex: 0 0 480px;
+    position: relative;
+    height: 100%;
+}
+
+.medi-luxury-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(39, 68, 114, 0.15);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-luxury-main-image:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+    .medi-luxury-definition-container {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+
+    .medi-luxury-content-wrapper {
+        overflow-y: visible;
+        height: auto;
+        padding-right: 0;
+    }
+
+    .medi-luxury-visual-wrapper {
+        flex: 1;
+        max-width: 500px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .medi-luxury-main-image {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .medi-luxury-features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-luxury-definition-section {
+        padding: 40px 16px;
+    }
+
+    .medi-luxury-paragraph {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .medi-luxury-heading {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .medi-luxury-eyebrow-label {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+    }
+
+    .medi-luxury-subheading {
+        font-size: 18px;
+    }
+
+    .medi-luxury-appreciated-box {
+        padding: 24px;
+        margin: 32px 0;
+    }
+
+    .medi-luxury-features-grid {
+        gap: 12px;
+    }
+
+    .medi-luxury-feature {
+        font-size: 14px;
+    }
+
+    .medi-luxury-comparison-note {
+        padding: 20px;
+    }
+}
+
+.medi-luxury-definition-section {
+    background: var(--bg-soft);
+    padding: 100px 20px;
+}
+
+.medi-luxury-definition-container {
+    background: var(--bg-white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 600px;
+    /* Perfect height to make left side scrollable */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--navy-border);
+}
+
+.medi-luxury-content-wrapper {
+    flex: 1.15;
+    padding: 50px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-track {
+    background: var(--bg-soft);
+    border-radius: 3px;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-thumb {
+    background: var(--navy-light);
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.medi-luxury-content-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--navy);
+}
+
+.medi-luxury-eyebrow-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    color: var(--navy);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.medi-luxury-heading {
+    font-size: 38px;
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.25;
+    margin: 0 0 24px 0;
+}
+
+.medi-luxury-content-wrapper .medi-luxury-paragraph {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    color: var(--text-body) !important;
+    font-weight: 400 !important;
+    margin-bottom: 20px;
+    font-family: var(--font-body), sans-serif;
+}
+
+.medi-luxury-appreciated-box {
+    background: var(--navy-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: 16px;
+    padding: 28px;
+    margin: 30px 0;
+}
+
+.medi-luxury-subheading {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 18px 0;
+    font-family: var(--font-body), sans-serif;
+    letter-spacing: -0.01em;
+}
+
+.medi-luxury-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+}
+
+.medi-luxury-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--text-body);
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.medi-luxury-feature:hover {
+    transform: translateX(4px);
+}
+
+.medi-feature-check-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(39, 68, 114, 0.1));
+}
+
+.medi-luxury-comparison-note {
+    border-left: 3px solid var(--navy);
+    padding-left: 24px;
+    margin-top: 30px;
+}
+
+.medi-luxury-comparison-note .medi-luxury-paragraph {
+    font-style: italic;
+}
+
+.medi-luxury-visual-wrapper {
+    flex: 0.85;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.medi-luxury-visual-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(39, 68, 114, 0.1) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.medi-luxury-main-image {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-luxury-definition-container:hover .medi-luxury-main-image {
+    transform: scale(1.04);
+}
+
+@media (max-width: 1024px) {
+    .medi-luxury-definition-section {
+        padding: 60px 16px;
+    }
+
+    .medi-luxury-definition-container {
+        flex-direction: column;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .medi-luxury-visual-wrapper {
+        width: 100%;
+        height: 360px;
+        order: -1;
+        /* Mobile preference: Image at the top of content */
+    }
+
+    .medi-luxury-content-wrapper {
+        padding: 40px 24px;
+        height: auto;
+        overflow-y: visible;
+        /* Disable scroll nesting on mobile/tablet */
+    }
+
+    .medi-luxury-heading {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .medi-luxury-features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .medi-luxury-appreciated-box {
+        padding: 20px;
+        margin: 24px 0;
+    }
+
+    .medi-luxury-comparison-note {
+        padding-left: 18px;
+        margin-top: 24px;
+    }
+}
+
+/* ============================================================
+   COMMON MISTAKES SLIDER SECTION
+   ============================================================ */
+
+.medi-mistakes-slider-section {
+    background: var(--medi-bg-dark);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.medi-mistakes-slider-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.medi-mistakes-slider-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.medi-mistakes-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--medi-bg-white);
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.medi-mistakes-slider-title {
+    font-size: 42px;
+    font-weight: 500;
+    font-family: serif;
+    color: var(--medi-bg-white);
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.medi-mistakes-slider-separator {
+    width: 80px;
+    height: 3px;
+    background: var(--medi-navy);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.medi-mistakes-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.medi-slider-card-viewport {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medi-mistakes-slider-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 45px 50px;
+    box-shadow: 0 20px 45px rgba(15, 28, 46, 0.06);
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.medi-mistakes-slider-card.active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    pointer-events: auto;
+    position: relative;
+}
+
+.medi-mistake-slide-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.medi-mistake-card-num {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    opacity: 0.15;
+    font-family: monospace;
+}
+
+.medi-mistake-card-title {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: var(--medi-navy);
+    margin: 0;
+}
+
+.medi-mistake-slide-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.medi-mistake-card-description {
+    font-size: 17px !important;
+    line-height: 1.7;
+    color: var(--medi-navy) !important;
+    margin: 0;
+    font-weight: 400 !important;
+}
+
+.medi-mistake-card-bullets-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.medi-mistake-card-bullet-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.medi-mistake-bullet-check {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.medi-slider-nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+    flex-shrink: 0;
+}
+
+.medi-slider-nav-btn:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+    border-color: var(--medi-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.15);
+}
+
+.medi-slider-nav-btn:active {
+    transform: translateY(0);
+}
+
+.medi-slider-progress-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.medi-slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-slider-dot.active {
+    background: var(--medi-navy);
+    width: 28px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .medi-mistakes-slider-section {
+        padding: 70px 16px;
+    }
+
+    .medi-mistakes-slider-title {
+        font-size: 28px !important;
+    }
+
+    .medi-mistakes-carousel-wrapper {
+        gap: 15px;
+    }
+
+    .medi-mistakes-slider-card {
+        padding: 30px 24px;
+    }
+
+    .medi-mistake-card-title {
+        font-size: 20px;
+    }
+
+    .medi-slider-nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ============================================================
+   WHO SHOULD CHOOSE SECTION
+   ============================================================ */
+
+.medi-audience-section {
+    padding: 60px 20px;
+}
+
+.medi-audience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medi-audience-column-heading {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700 !important;
+    margin: 0 0 18px 0;
+    color: var(--medi-navy);
+}
+
+.medi-audience-section {
+    background: var(--medi-bg-soft);
+}
+
+.medi-audience-split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.medi-audience-column {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+}
+
+.medi-best-for-column {
+    border-top: 4px solid var(--navy);
+}
+
+.medi-not-ideal-column {
+    border-top: 4px solid var(--text-muted);
+}
+
+.medi-audience-column-heading {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: var(--navy);
+}
+
+.medi-audience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medi-audience-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    margin: 4px -16px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-body);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-audience-list li:hover {
+    background: var(--navy-soft);
+    padding-left: 20px;
+    color: var(--navy);
+}
+
+.medi-audience-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.medi-audience-icon-wrapper.best {
+    background: var(--bg-soft);
+    color: var(--navy);
+}
+
+.medi-audience-icon-wrapper.not-ideal {
+    background: var(--navy-soft);
+    color: var(--text-muted);
+}
+
+.medi-audience-list li:hover .medi-audience-icon-wrapper.best {
+    background: var(--navy);
+    color: var(--bg-white);
+    transform: scale(1.08);
+}
+
+.medi-audience-list li:hover .medi-audience-icon-wrapper.not-ideal {
+    background: var(--text-muted);
+    color: var(--bg-white);
+    transform: scale(1.08);
+}
+
+@media (max-width: 1024px) {
+    .medi-audience-split-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-audience-section {
+        padding: 40px 16px;
+    }
+
+    .medi-audience-split-layout {
+        gap: 24px;
+    }
+
+    .medi-audience-column {
+        padding: 28px 24px;
+    }
+
+    .medi-audience-column-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .medi-audience-list li {
+        padding: 10px 8px;
+        margin: 4px -8px;
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   WHY WORK WITH US SECTION
+   ============================================================ */
+
+.medi-work-with-us-section {
+    padding: 60px 20px;
+}
+
+.medi-work-with-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medi-work-with-us-section {
+    background: var(--bg-dark);
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.medi-work-with-us-section::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    top: -200px;
+    left: -200px;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.medi-work-with-us-section::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(231, 243, 245, 0.04) 0%, rgba(0, 0, 0, 0) 75%);
+    bottom: -150px;
+    right: -150px;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.medi-work-with-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.medi-work-header-card {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.medi-work-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    color: var(--bg-soft);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.medi-work-header-card .white-heading {
+    color: var(--bg-white);
+    font-family: serif;
+    font-size: 42px;
+    margin: 0 0 16px 0;
+}
+
+.medi-heading-separator-bar.custom-bar {
+    width: 80px;
+    height: 3px;
+    background: var(--bg-white) !important;
+    margin: 0 auto 24px;
+    border-radius: 2px;
+}
+
+.medi-work-intro-para {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    margin: 0;
+}
+
+.medi-pillar-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-white);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.medi-pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.medi-pillar-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+.medi-pillar-list li:hover {
+    color: var(--bg-white);
+    transform: translateX(4px);
+}
+
+.medi-pillar-list-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.medi-pillar-list-icon {
+    color: var(--bg-soft);
+}
+
+.medi-pillar-list-icon.icon-gold {
+    color: var(--bg-soft);
+}
+
+.medi-pillar-list-icon.icon-navy {
+    color: var(--bg-soft);
+}
+
+@media (max-width: 1024px) {
+    .medi-work-with-us-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-work-with-us-section {
+        padding: 40px 16px;
+    }
+
+    .medi-work-with-us-container {
+        gap: 32px;
+    }
+}
+
 .medi-work-with-us-section {
     background: linear-gradient(180deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
     position: relative;
@@ -3320,7 +4524,6 @@
     z-index: 2;
 }
 
-/* Header Card */
 .medi-work-header-card {
     text-align: center;
     max-width: 800px;
@@ -3361,7 +4564,6 @@
     margin: 0;
 }
 
-/* Stepped Timeline Flow */
 .medi-work-timeline-flow {
     position: relative;
     max-width: 1050px;
@@ -3369,7 +4571,6 @@
     padding: 20px 0;
 }
 
-/* The Central Line */
 .medi-timeline-line {
     position: absolute;
     top: 40px;
@@ -3384,7 +4585,6 @@
     z-index: 1;
 }
 
-/* Steps */
 .medi-timeline-step {
     position: relative;
     width: 100%;
@@ -3405,7 +4605,6 @@
     justify-content: flex-end;
 }
 
-/* Timeline Nodes */
 .medi-timeline-node {
     position: absolute;
     left: 50%;
@@ -3440,7 +4639,6 @@
     transform: rotate(15deg);
 }
 
-/* Timeline Cards */
 .medi-timeline-card {
     position: relative;
     width: 44%;
@@ -3459,7 +4657,6 @@
     box-shadow: 0 30px 60px rgba(39, 68, 114, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.08);
 }
 
-/* Timeline Card Connector Arrow */
 .medi-timeline-card::after {
     content: '';
     position: absolute;
@@ -3482,7 +4679,6 @@
     border-color: transparent var(--bg-dark2) transparent transparent;
 }
 
-/* Step Badges */
 .medi-card-step-badge {
     display: inline-block;
     font-size: 11px;
@@ -3497,7 +4693,6 @@
     border: 1px solid var(--navy-border);
 }
 
-/* Pillar Content styling */
 .medi-pillar-title {
     font-size: 20px;
     line-height: 1.45;
@@ -3519,7 +4714,6 @@
     width: 80px;
 }
 
-/* Lists styling */
 .medi-pillar-list {
     list-style: none;
     padding: 0;
@@ -3559,7 +4753,6 @@
     font-weight: 400;
 }
 
-/* Responsive Media Queries for Timeline */
 @media (max-width: 900px) {
     .medi-work-with-us-section {
         padding: 70px 16px;
@@ -3613,8 +4806,9 @@
 }
 
 /* ============================================================
-   ANGELA HUGHES AUTHORITY BOX (PRESTIGE EDITORIAL PLAQUE STYLE)
+   ANGELA HUGHES AUTHORITY BOX SECTION
    ============================================================ */
+
 .medi-authority-section {
     background: var(--bg-soft);
     position: relative;
@@ -3644,7 +4838,6 @@
     z-index: 2;
 }
 
-/* Header Styling */
 .medi-authority-header-block {
     text-align: center;
     margin-bottom: 60px;
@@ -3682,7 +4875,6 @@
     background: linear-gradient(to bottom, var(--navy), var(--navy-light));
 }
 
-/* Identity Card Block (Dark, elegant slate background - optimized dimensions) */
 .medi-prestige-identity-card {
     flex: 0 0 350px;
     background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark2) 100%);
@@ -3788,7 +4980,6 @@
     text-transform: uppercase;
 }
 
-/* Credentials Column - Scrollable Style */
 .medi-prestige-credentials-column {
     flex: 1;
     padding: 40px;
@@ -3797,7 +4988,6 @@
     height: 100%;
 }
 
-/* Customized Premium Scrollbar styling using variables */
 .medi-prestige-credentials-column::-webkit-scrollbar {
     width: 6px;
 }
@@ -3909,7 +5099,6 @@
     color: var(--navy);
 }
 
-/* Responsive Styling - Adapted for Scrollable layout */
 @media (max-width: 992px) {
     .medi-prestige-plaque-wrapper {
         flex-direction: column;
@@ -3939,791 +5128,196 @@
 }
 
 /* ============================================================
-   IS AZAMARA TRULY LUXURY? SECTION SPECIFIC STYLES
+   CTA SECTION
    ============================================================ */
-.medi-luxury-definition-section {
-    background: var(--bg-soft);
-    padding: 100px 20px;
-}
 
-.medi-luxury-definition-container {
-    background: var(--bg-white);
-    border-radius: 24px;
-    box-shadow: var(--shadow-lg);
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 600px;
-    /* Perfect height to make left side scrollable */
-    overflow: hidden;
-    position: relative;
-    border: 1px solid var(--navy-border);
-}
-
-.medi-luxury-content-wrapper {
-    flex: 1.15;
-    padding: 50px;
-    overflow-y: auto;
-    height: 100%;
-}
-
-/* Beautiful custom scrollbar for left side content */
-.medi-luxury-content-wrapper::-webkit-scrollbar {
-    width: 6px;
-}
-
-.medi-luxury-content-wrapper::-webkit-scrollbar-track {
-    background: var(--bg-soft);
-    border-radius: 3px;
-}
-
-.medi-luxury-content-wrapper::-webkit-scrollbar-thumb {
-    background: var(--navy-light);
-    border-radius: 3px;
-    transition: background 0.3s ease;
-}
-
-.medi-luxury-content-wrapper::-webkit-scrollbar-thumb:hover {
-    background: var(--navy);
-}
-
-/* Eyebrow and typography overrides */
-.medi-luxury-eyebrow-label {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    color: var(--navy);
-    margin-bottom: 12px;
-    text-transform: uppercase;
-}
-
-.medi-luxury-heading {
-    font-size: 38px;
-    font-family: var(--font-display), serif;
-    font-weight: 500;
-    color: var(--navy);
-    line-height: 1.25;
-    margin: 0 0 24px 0;
-}
-
-/* Overriding the generic medi-luxury-paragraph style with custom visual balance */
-.medi-luxury-content-wrapper .medi-luxury-paragraph {
-    font-size: 16px !important;
-    line-height: 1.75 !important;
-    color: var(--text-body) !important;
-    font-weight: 400 !important;
-    margin-bottom: 20px;
-    font-family: var(--font-body), sans-serif;
-}
-
-/* Luxury highlights box styling */
-.medi-luxury-appreciated-box {
-    background: var(--navy-soft);
-    border: 1px solid var(--navy-border);
-    border-radius: 16px;
-    padding: 28px;
-    margin: 30px 0;
-}
-
-.medi-luxury-subheading {
+.medi-cta-paragraph-white {
     font-size: 18px;
-    font-weight: 600;
-    color: var(--navy);
-    margin: 0 0 18px 0;
-    font-family: var(--font-body), sans-serif;
-    letter-spacing: -0.01em;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin: 0 0 16px 0;
 }
 
-.medi-luxury-features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 24px;
-}
-
-.medi-luxury-feature {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14.5px;
-    color: var(--text-body);
-    font-weight: 500;
-    transition: transform 0.3s ease;
-}
-
-.medi-luxury-feature:hover {
-    transform: translateX(4px);
-}
-
-.medi-feature-check-icon {
-    color: var(--navy);
-    flex-shrink: 0;
-    filter: drop-shadow(0 2px 4px rgba(39, 68, 114, 0.1));
-}
-
-/* Comparison section styling */
-.medi-luxury-comparison-note {
-    border-left: 3px solid var(--navy);
-    padding-left: 24px;
-    margin-top: 30px;
-}
-
-.medi-luxury-comparison-note .medi-luxury-paragraph {
-    font-style: italic;
-}
-
-/* Right-side Visual adjustments */
-.medi-luxury-visual-wrapper {
-    flex: 0.85;
+.medi-cta-main-section {
+    background: var(--medi-bg-dark2);
     position: relative;
     overflow: hidden;
-    height: 100%;
+    padding: 60px 20px;
 }
 
-.medi-luxury-visual-wrapper::after {
-    content: '';
+.medi-cta-bg-pattern-layer {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(39, 68, 114, 0.1) 0%, transparent 100%);
-    pointer-events: none;
-    z-index: 1;
+    background: linear-gradient(135deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    z-index: 0;
 }
 
-.medi-luxury-main-image {
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.medi-luxury-definition-container:hover .medi-luxury-main-image {
-    transform: scale(1.04);
-}
-
-/* ============================================================
-   RESPONSIVE LAYOUT FOR LUXURY SECTION
-   ============================================================ */
-@media (max-width: 1024px) {
-    .medi-luxury-definition-section {
-        padding: 60px 16px;
-    }
-
-    .medi-luxury-definition-container {
-        flex-direction: column;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .medi-luxury-visual-wrapper {
-        width: 100%;
-        height: 360px;
-        order: -1;
-        /* Mobile preference: Image at the top of content */
-    }
-
-    .medi-luxury-content-wrapper {
-        padding: 40px 24px;
-        height: auto;
-        overflow-y: visible;
-        /* Disable scroll nesting on mobile/tablet */
-    }
-
-    .medi-luxury-heading {
-        font-size: 32px;
-        margin-bottom: 18px;
-    }
-
-    .medi-luxury-features-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .medi-luxury-appreciated-box {
-        padding: 20px;
-        margin: 24px 0;
-    }
-
-    .medi-luxury-comparison-note {
-        padding-left: 18px;
-        margin-top: 24px;
-    }
-}
-
-/* WHAT IS INCLUDED ON AZAMARA CRUISES */
-
-.azw-included-section {
-    padding: 110px 20px;
-    background: #f8fafc;
+.medi-cta-content-relative {
     position: relative;
+    z-index: 2;
 }
 
-.azw-included-container {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.azw-included-header {
+.medi-cta-considerations-title {
+    display: block;
     text-align: center;
-    margin-bottom: 70px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px;
+    color: #e8e8e9 !important;
+    letter-spacing: 0.5px;
 }
 
-.azw-included-tag {
-    display: inline-block;
-    padding: 10px 18px;
-    background: rgba(39, 68, 114, 0.08);
-    border-radius: 50px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: var(--medi-navy);
-    margin-bottom: 22px;
-}
-
-.azw-included-title {
-    font-size: 52px;
-    line-height: 1.1;
-    font-weight: 700;
-    color: var(--medi-navy);
-    margin-bottom: 22px;
-}
-
-.azw-included-line {
-    width: 90px;
-    height: 4px;
-    background: var(--medi-navy);
-    margin: 0 auto 30px;
-    border-radius: 50px;
-}
-
-.azw-included-intro,
-.azw-included-subtext {
-    max-width: 850px;
-    margin: 0 auto 14px;
-    font-size: 19px;
-    line-height: 1.8;
-    color: #475569;
-}
-
-.azw-included-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.azw-included-card {
-    background: white;
-    border-radius: 24px;
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    transition: 0.3s ease;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-}
-
-.azw-included-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.08);
-}
-
-.azw-included-icon {
-    width: 54px;
-    height: 54px;
-    border-radius: 16px;
-    background: var(--medi-navy);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-shrink: 0;
-}
-
-.azw-included-card span {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--medi-navy);
-    line-height: 1.5;
-}
-
-/* ============================================================
-   CABIN CATEGORIES SECTION
-   ============================================================ */
-.azc-categories-section {
-    padding: 100px 20px;
-    background: #ffffff;
-    position: relative;
-    overflow: hidden;
-}
-
-.azc-categories-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.azc-intro-text {
-    font-size: 18px;
-    color: #475569;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    line-height: 1.7;
-}
-
-.azc-categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.azc-category-card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 20px 24px;
-    background: linear-gradient(145deg, #ffffff, #f8fafc);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
-    transition: all 0.3s ease;
-}
-
-.azc-category-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(15, 28, 46, 0.06);
-    border-color: rgba(39, 68, 114, 0.15);
-}
-
-.azc-category-icon {
-    color: var(--medi-navy);
-    flex-shrink: 0;
-}
-
-.azc-category-card span {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--medi-navy);
-}
-
-.azc-conclusion-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    background: rgba(39, 68, 114, 0.04);
-    border-left: 4px solid var(--medi-navy);
-    padding: 24px 30px;
-    border-radius: 0 16px 16px 0;
-    margin-top: 20px;
-}
-
-.azc-conclusion-icon {
-    color: var(--medi-navy);
-    flex-shrink: 0;
-    margin-top: 3px;
-}
-
-.azc-conclusion-box p {
-    margin: 0;
-    font-size: 17px;
-    color: #334155;
-    line-height: 1.6;
-    font-weight: 500;
-}
-
-/* ============================================================
-   IS AZAMARA WORTH THE MONEY SECTION
-   ============================================================ */
-
-.azw-worth-section {
-    padding: 100px 20px;
-    background: var(--medi-bg-soft);
-    position: relative;
-    overflow: hidden;
-}
-
-.azw-worth-section::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 380px;
-    height: 380px;
-    background: radial-gradient(circle, rgba(39, 68, 114, 0.04) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.azw-worth-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.azw-worth-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 36px;
-    margin-bottom: 50px;
-}
-
-/* Panel Cards */
-.azw-worth-panel {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 42px 38px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(39, 68, 114, 0.07);
-    box-shadow: 0 10px 36px rgba(15, 28, 46, 0.05);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.azw-worth-panel:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 55px rgba(15, 28, 46, 0.1);
-}
-
-.azw-worth-panel-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, var(--medi-navy) 0%, #3b82f6 100%);
-    border-radius: 20px 20px 0 0;
-}
-
-.azw-worth-panel-bar.azw-bar-alt {
-    background: linear-gradient(90deg, #94a3b8 0%, #64748b 100%);
-}
-
-/* Panel Header */
-.azw-worth-panel-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
-}
-
-.azw-worth-panel-icon-circle {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.azw-icon-positive {
-    background: rgba(39, 68, 114, 0.08);
-    color: var(--medi-navy);
-}
-
-.azw-icon-alt {
-    background: rgba(100, 116, 139, 0.1);
-    color: #64748b;
-}
-
-.azw-worth-panel-heading {
-    font-size: 21px;
-    font-weight: 600;
-    color: var(--medi-navy);
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* List Items */
-.azw-worth-items {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 26px 0;
+.medi-cta-considerations-box {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 24px 28px 26px;
+    min-width: 180px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    margin-bottom: 25px;
 }
 
-.azw-worth-item {
+.medi-cta-considerations-box:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px);
+}
+
+.medi-cta-considerations-list {
     display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    list-style: none;
+    padding: 0;
+    color: var(--medi-bg-white);
+}
+
+.medi-cta-considerations-icon {
+    color: #93c5fd;
+    margin-top: -14px;
+    font-size: 28px;
+}
+
+.medi-cta-separator-white {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto 20px;
+}
+
+.medi-primary-cta-button {
+    background: var(--medi-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    gap: 14px;
-    font-size: 17px;
-    font-weight: 500;
-    color: #334155;
-    padding: 11px 16px;
-    border-radius: 10px;
-    background: rgba(39, 68, 114, 0.02);
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.medi-primary-cta-button:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.medi-secondary-outline-button {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     transition: all 0.3s ease;
 }
 
-.azw-worth-item:hover {
-    background: rgba(39, 68, 114, 0.06);
-    transform: translateX(4px);
+.medi-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
-.azw-worth-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.azw-dot-navy {
-    background: var(--medi-navy);
-    box-shadow: 0 0 0 3px rgba(39, 68, 114, 0.15);
-}
-
-.azw-dot-slate {
-    background: #94a3b8;
-    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.2);
-}
-
-/* Verdict Badges */
-.azw-worth-verdict {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 20px;
-    border-radius: 12px;
-    border-left: 4px solid var(--medi-navy);
-    background: rgba(39, 68, 114, 0.06);
-}
-
-.azw-worth-verdict span {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--medi-navy);
-}
-
-.azw-worth-verdict svg {
-    color: var(--medi-navy);
-    flex-shrink: 0;
-}
-
-.azw-worth-verdict.azw-verdict-alt {
-    background: rgba(100, 116, 139, 0.08);
-    border-left-color: #94a3b8;
-}
-
-.azw-worth-verdict.azw-verdict-alt span {
-    color: #475569;
-}
-
-.azw-worth-verdict.azw-verdict-alt svg {
-    color: #64748b;
-}
-
-/* Bottom Banner */
-.azw-worth-bottom-banner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 900px;
+.medi-cta-inner-wrapper {
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 30px 36px;
-    background: var(--medi-navy);
-    border-radius: 16px;
-    box-shadow: 0 14px 44px rgba(39, 68, 114, 0.2);
 }
 
-.azw-worth-banner-icon {
-    width: 48px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+.medi-cta-heading-white {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
     color: #ffffff;
 }
 
-.azw-worth-banner-text {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #e2e8f0;
-    margin: 0;
-    font-weight: 500;
-}
-
-/* Worth Section Responsive */
-@media (max-width: 992px) {
-    .azw-worth-columns {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .azw-worth-section {
-        padding: 80px 16px;
-    }
-
-    .azw-worth-panel {
-        padding: 30px 22px;
-    }
-
-    .azw-worth-bottom-banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 26px 22px;
-    }
-
-    .azw-worth-banner-text {
-        font-size: 16px;
-    }
-}
-
-/* LUXURY SECTION */
-
-.azw-luxury-section {
-    padding: 120px 20px;
-    background: linear-gradient(to bottom, #ffffff, #f1f5f9);
-}
-
-.azw-luxury-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.azw-luxury-header {
+.medi-cta-paragraph-white {
+    max-width: 600px;
+    margin: 0 auto 40px;
     text-align: center;
-    margin-bottom: 80px;
 }
 
-.azw-luxury-tag {
-    display: inline-block;
-    padding: 10px 18px;
-    background: rgba(39, 68, 114, 0.08);
-    border-radius: 50px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: var(--medi-navy);
-    margin-bottom: 22px;
-}
-
-.azw-luxury-title {
-    font-size: 52px;
-    line-height: 1.1;
-    color: var(--medi-navy);
-    font-weight: 700;
-    margin-bottom: 22px;
-}
-
-.azw-luxury-line {
-    width: 90px;
-    height: 4px;
-    background: var(--medi-navy);
-    margin: 0 auto 30px;
-    border-radius: 50px;
-}
-
-.azw-luxury-intro,
-.azw-luxury-subtext {
-    max-width: 850px;
-    margin: 0 auto 14px;
-    font-size: 19px;
-    line-height: 1.8;
-    color: #475569;
-}
-
-.azw-luxury-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    margin-bottom: 60px;
-}
-
-.azw-luxury-card {
-    padding: 42px;
-    border-radius: 30px;
-    background: white;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-}
-
-.azw-luxury-card-top {
+.medi-cta-button-group {
     display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 30px;
-    color: var(--medi-navy);
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.azw-luxury-card-top h3 {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.azw-luxury-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.azw-luxury-list li {
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
-    font-size: 18px;
-    color: #334155;
-    font-weight: 500;
-}
-
-.azw-luxury-footer {
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.azw-luxury-footer p {
-    font-size: 19px;
-    line-height: 1.9;
-    color: #475569;
-    margin-bottom: 18px;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 992px) {
-
-    .azw-included-grid,
-    .azw-luxury-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .azw-included-title,
-    .azw-luxury-title {
-        font-size: 40px;
+@media (max-width: 1024px) {
+    .medi-cta-heading-white {
+        font-size: 38px;
     }
 }
 
-@media (max-width: 768px) {
-
-    .azw-included-section,
-    .azw-luxury-section {
-        padding: 80px 16px;
+@media (max-width: 767px) {
+    .medi-primary-cta-button,
+    .medi-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 15px;
     }
 
-    .azw-included-title,
-    .azw-luxury-title {
-        font-size: 32px;
+    .medi-cta-main-section {
+        padding: 50px 16px;
     }
 
-    .azw-included-intro,
-    .azw-luxury-intro,
-    .azw-luxury-subtext,
-    .azw-included-subtext {
-        font-size: 17px;
+    .medi-cta-heading-white {
+        font-size: 28px;
+        margin-bottom: 16px;
     }
 
-    .azw-included-card,
-    .azw-luxury-card {
-        padding: 28px;
+    .medi-cta-paragraph-white {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .medi-cta-button-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .medi-cta-button-group button {
+        width: 100%;
     }
 }
-
-/* ============================================================
-   CTA SECTION: LUXURY MARITIME REFINEMENT (NO GREEN)
-   ============================================================ */
 
 .medi-cta-main-section {
     position: relative;
@@ -4733,7 +5327,6 @@
     overflow: hidden;
 }
 
-/* Creating depth with a radial glow using dark navy variants */
 .medi-cta-bg-pattern-layer {
     position: absolute;
     inset: 0;
@@ -4782,7 +5375,6 @@
     opacity: 0.9;
 }
 
-/* The Considerations Box: Floating Glassmorphism Card */
 .medi-cta-considerations-box {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(231, 243, 245, 0.15);
@@ -4807,7 +5399,6 @@
     opacity: 0.8;
 }
 
-/* Grid layout for the list to look more organized */
 .medi-cta-considerations-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -4839,7 +5430,6 @@
     margin-top: 40px;
 }
 
-/* Primary Button: High Contrast/Premium */
 .medi-primary-cta-button {
     background: var(--medi-bg-white) !important;
     color: var(--medi-bg-dark) !important;
@@ -4857,7 +5447,6 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Secondary Button: Clean Outline */
 .medi-secondary-outline-button {
     background: transparent !important;
     color: var(--medi-bg-white) !important;
@@ -4874,7 +5463,6 @@
     border-color: var(--medi-bg-white) !important;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 900px) {
     .medi-cta-considerations-list {
         grid-template-columns: 1fr;
@@ -4883,6 +5471,12 @@
 
     .medi-cta-heading-white {
         font-size: 38px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-cta-heading-white {
+        font-size: 28px !important;
     }
 }
 
@@ -4898,383 +5492,134 @@
     }
 }
 
-/* Custom Veranda Worth Section */
-.medi-veranda-worth-section {
-    position: relative;
-    background: #ffffff !important;
-    padding: 100px 20px !important;
-    overflow: hidden;
-    color: #1e293b !important;
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+
+.medi-faq-main-section {
+    background: var(--medi-bg-white);
 }
 
-.medi-veranda-worth-section .medi-itinerary-eyebrow {
-    color: var(--medi-navy) !important;
+.medi-faq-main-section {
+    padding: 80px 20px;
 }
 
-.medi-veranda-worth-section .medi-excel-main-title {
-    color: #0f1c2e !important;
-}
-
-.medi-veranda-worth-section .medi-excel-lead-paragraph {
-    color: #475569 !important;
-}
-
-.medi-veranda-worth-section .medi-veranda-subtitle {
-    color: var(--medi-navy) !important;
-}
-
-.medi-veranda-worth-section .medi-excel-card {
-    background: var(--medi-bg-soft) !important;
-    border: 1px solid rgba(39, 68, 114, 0.15) !important;
-    border-radius: 20px !important;
-    padding: 50px 40px !important;
-    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
-    transition: all 0.3s ease !important;
-}
-
-.medi-veranda-worth-section .medi-excel-card:hover {
-    transform: translateY(-5px) !important;
-    background: rgba(215, 235, 238, 0.8) !important;
-    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
-    border-color: rgba(39, 68, 114, 0.3) !important;
-}
-
-.medi-veranda-worth-section .medi-excel-card-heading {
-    color: #0f1c2e !important;
-}
-
-.medi-veranda-worth-section .medi-excel-list-item span {
-    color: #334155 !important;
-}
-
-.medi-veranda-worth-section .medi-excel-icon-wrapper {
-    background: rgba(39, 68, 114, 0.08) !important;
-    color: var(--medi-navy) !important;
-}
-
-.medi-veranda-worth-section .medi-excel-icon-wrapper svg {
-    color: var(--medi-navy) !important;
-}
-
-.medi-veranda-glow {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(39, 68, 114, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
-    top: -200px;
-    left: -150px;
-    z-index: 0;
-    pointer-events: none;
-    filter: blur(80px);
-}
-
-.medi-veranda-worth-callout {
-    background: rgba(39, 68, 114, 0.04) !important;
-    border: 1px solid rgba(39, 68, 114, 0.1) !important;
-    border-left: 4px solid var(--medi-navy) !important;
-    border-radius: 0 12px 12px 0 !important;
-    color: #1e293b !important;
-    max-width: 100% !important;
-    margin: 40px auto 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 24px !important;
-    padding: 24px 32px !important;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02) !important;
-}
-
-.medi-veranda-worth-callout span {
-    color: #334155 !important;
-}
-
-.medi-veranda-worth-callout-icon-box {
-    background: rgba(39, 68, 114, 0.08) !important;
-    padding: 12px !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.medi-veranda-worth-callout-icon-box svg {
-    color: var(--medi-navy) !important;
-}
-
-/* Custom Suites Worth Section */
-.medi-suites-worth-section {
-    position: relative;
-    background: #ffffff !important;
-    padding: 100px 20px !important;
-    overflow: hidden;
-    color: #1e293b !important;
-}
-
-.medi-suites-worth-section .medi-itinerary-eyebrow {
-    color: var(--medi-navy) !important;
-}
-
-.medi-suites-worth-section .medi-excel-main-title {
-    color: #0f1c2e !important;
-}
-
-.medi-suites-worth-section .medi-excel-lead-paragraph {
-    color: #475569 !important;
-}
-
-.medi-suites-worth-section .medi-suites-subtitle {
-    color: var(--medi-navy) !important;
-}
-
-.medi-suites-worth-section .medi-excel-card {
-    background: var(--medi-bg-soft) !important;
-    border: 1px solid rgba(39, 68, 114, 0.15) !important;
-    border-radius: 20px !important;
-    padding: 50px 40px !important;
-    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05) !important;
-    transition: all 0.3s ease !important;
-}
-
-.medi-suites-worth-section .medi-excel-card:hover {
-    transform: translateY(-5px) !important;
-    background: rgba(215, 235, 238, 0.8) !important;
-    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1) !important;
-    border-color: rgba(39, 68, 114, 0.3) !important;
-}
-
-.medi-suites-worth-section .medi-excel-card-heading {
-    color: #0f1c2e !important;
-}
-
-.medi-suites-worth-section .medi-excel-list-item span {
-    color: #334155 !important;
-}
-
-.medi-suites-worth-section .medi-excel-icon-wrapper {
-    background: rgba(39, 68, 114, 0.08) !important;
-    color: var(--medi-navy) !important;
-}
-
-.medi-suites-worth-section .medi-excel-icon-wrapper svg {
-    color: var(--medi-navy) !important;
-}
-
-.medi-suites-worth-callout {
-    background: rgba(39, 68, 114, 0.04) !important;
-    border: 1px solid rgba(39, 68, 114, 0.1) !important;
-    border-left: 4px solid var(--medi-navy) !important;
-    border-radius: 0 12px 12px 0 !important;
-    color: #1e293b !important;
-    max-width: 100% !important;
-    margin: 40px auto 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 24px !important;
-    padding: 24px 32px !important;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02) !important;
-}
-
-.medi-suites-worth-callout span {
-    color: #334155 !important;
-}
-
-.medi-suites-worth-callout-icon-box {
-    background: rgba(39, 68, 114, 0.08) !important;
-    padding: 12px !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.medi-suites-worth-callout-icon-box svg {
-    color: var(--medi-navy) !important;
-}
-
-/* Container & Section */
-.suites-worth-section {
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden;
-    background: #f8fafc;
-}
-
-.suites-worth-bg-accent {
-    position: absolute;
-    top: -10%;
-    right: -5%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(30, 41, 59, 0.03) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-/* Header */
-.suites-worth-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.suites-worth-eyebrow {
-    letter-spacing: 3px;
-    color: var(--medi-navy);
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 12px;
-}
-
-.suites-worth-title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    color: var(--medi-navy);
-    /* Brand Navy */
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.suites-worth-divider {
-    width: 60px;
-    height: 4px;
-    background: var(--medi-navy);
+.medi-faq-container {
+    max-width: 900px;
     margin: 0 auto;
 }
 
-/* Main Comparison Card */
-.suites-worth-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-    background: #fff;
+.medi-faq-list-wrapper {
+    margin-top: 50px;
 }
 
-/* Left Side (Luxury) */
-.suites-card-luxury {
-    padding: 50px;
-    background: #ffffff;
-    border-right: 1px solid #f1f5f9;
+.medi-faq-individual-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.suites-icon-box {
-    width: 40px;
-    height: 40px;
-    background: rgba(30, 41, 59, 0.05);
-    border-radius: 10px;
+.medi-faq-individual-item:hover {
+    background: rgba(39, 68, 114, 0.02);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.medi-faq-question-row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--medi-navy);
-}
-
-.suites-list {
-    list-style: none;
-    padding: 0;
-    margin: 24px 0 0 0;
-}
-
-.suites-list-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    color: #334155;
-    font-weight: 500;
-}
-
-.suites-list-icon {
-    color: var(--medi-navy);
-    display: flex;
-}
-
-/* Right Side (Strategic) */
-.suites-card-strategic {
-    padding: 50px;
-    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
-
-.suites-quote-icon {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    opacity: 0.1;
-}
-
-.suites-strategic-label {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 24px;
-    color: #94a3b8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.suites-strategic-text {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #e2e8f0;
-    font-style: italic;
-}
-
-.suites-highlight {
-    color: #fff;
-    font-weight: 700;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Bottom Callout */
-.suites-floating-callout {
-    max-width: 800px;
-    margin: -30px auto 0;
-    background: #fff;
-    border-radius: 100px;
-    padding: 20px 40px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
-    border: 1px solid #f1f5f9;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--medi-navy);
 }
 
-.suites-callout-icon {
-    background: var(--medi-navy);
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.medi-faq-toggle-icon {
+    font-size: 28px;
+    color: var(--medi-navy);
     flex-shrink: 0;
+    font-weight: 300;
 }
 
-.suites-callout-text {
-    margin: 0;
-    font-size: 1rem;
-    color: #1e293b;
-    font-weight: 500;
+.medi-faq-answer-text {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4a5568;
+    padding-right: 50px;
 }
 
-/* Responsive Fixes */
-@media (max-width: 768px) {
-    .suites-worth-grid {
-        border-radius: 16px;
+@media (max-width: 767px) {
+    .medi-faq-main-section {
+        padding: 60px 16px;
     }
 
-    .suites-card-luxury,
-    .suites-card-strategic {
-        padding: 30px;
+    .medi-faq-individual-item {
+        padding: 20px 0;
+    }
+
+    .medi-faq-answer-text {
+        font-size: 15px;
+        padding-right: 0;
+        margin-top: 12px;
+    }
+}
+
+/* ============================================================
+   SECTION SPACING NORMALIZATION
+   ============================================================ */
+
+.medi-premium-intro-section,
+.medi-excel-section,
+.medi-diff-section,
+.medi-itinerary-showcase-section,
+.medi-expert-editorial-section,
+.medi-luxury-definition-section,
+.medi-mistakes-slider-section,
+.medi-audience-section,
+.medi-work-with-us-section,
+.medi-authority-section,
+.medi-cta-main-section,
+.medi-faq-main-section {
+    margin: 0;
+    padding: 88px 20px !important;
+}
+
+@media (max-width: 1024px) {
+    .medi-premium-intro-section,
+    .medi-excel-section,
+    .medi-diff-section,
+    .medi-itinerary-showcase-section,
+    .medi-expert-editorial-section,
+    .medi-luxury-definition-section,
+    .medi-mistakes-slider-section,
+    .medi-audience-section,
+    .medi-work-with-us-section,
+    .medi-authority-section,
+    .medi-cta-main-section,
+    .medi-faq-main-section {
+        padding: 72px 16px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .medi-premium-intro-section,
+    .medi-excel-section,
+    .medi-diff-section,
+    .medi-itinerary-showcase-section,
+    .medi-expert-editorial-section,
+    .medi-luxury-definition-section,
+    .medi-mistakes-slider-section,
+    .medi-audience-section,
+    .medi-work-with-us-section,
+    .medi-authority-section,
+    .medi-cta-main-section,
+    .medi-faq-main-section {
+        padding: 56px 16px !important;
     }
 
     .suites-floating-callout {
