@@ -1085,6 +1085,176 @@
     }
 }
 
+/* Mediterranean growth insight responsive tune-up */
+.medi-growth-insight-section .medi-expert-editorial-card {
+    grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+    gap: 44px;
+    padding: 44px;
+}
+
+.medi-growth-insight-section .medi-editorial-content-block,
+.medi-growth-insight-section .medi-editorial-header,
+.medi-growth-insight-section .medi-priority-pill-item,
+.medi-growth-insight-section .medi-expertise-pills-row {
+    min-width: 0;
+}
+
+.medi-growth-insight-section .medi-editorial-title {
+    max-width: 660px;
+    letter-spacing: 0;
+    overflow-wrap: break-word;
+}
+
+.medi-growth-insight-section .medi-priorities-grid-pills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.medi-growth-insight-section .medi-priority-pill-item span,
+.medi-growth-insight-section .medi-expertise-pill-text {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1120px) {
+    .medi-growth-insight-section .medi-expert-editorial-card {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-portrait-block {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .medi-growth-insight-section .medi-editorial-title {
+        max-width: none;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .medi-growth-title-break {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .medi-growth-insight-section {
+        padding: 72px 20px;
+    }
+
+    .medi-growth-insight-section .medi-expert-editorial-card {
+        padding: 34px;
+        border-radius: 20px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .medi-growth-insight-section .medi-priorities-grid-pills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .medi-growth-insight-section {
+        padding: 56px 16px;
+    }
+
+    .medi-growth-insight-section .medi-expert-editorial-card {
+        gap: 28px;
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-image-frame {
+        aspect-ratio: 16 / 11;
+        border-radius: 16px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-floating-stat {
+        gap: 14px;
+        margin: -22px 12px 0;
+        padding: 16px;
+    }
+
+    .medi-growth-insight-section .medi-stat-tile {
+        flex: 1 1 0;
+        min-width: 96px;
+    }
+
+    .medi-growth-insight-section .medi-stat-label {
+        white-space: normal;
+        line-height: 1.25;
+    }
+
+    .medi-growth-insight-section .medi-editorial-eyebrow-container {
+        align-items: flex-start;
+    }
+
+    .medi-growth-insight-section .medi-editorial-eyebrow {
+        line-height: 1.45;
+        letter-spacing: 0.08em;
+    }
+
+    .medi-growth-insight-section .medi-editorial-title {
+        font-size: 31px;
+        line-height: 1.18;
+    }
+
+    .medi-growth-insight-section .medi-priorities-box {
+        padding: 20px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .medi-growth-insight-section .medi-priorities-grid-pills {
+        grid-template-columns: 1fr;
+    }
+
+    .medi-growth-insight-section .medi-expertise-pills-row {
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .medi-growth-insight-section {
+        padding: 48px 12px;
+    }
+
+    .medi-growth-insight-section .medi-expert-editorial-card {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-title {
+        font-size: 28px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-lead-para {
+        font-size: 16px;
+    }
+
+    .medi-growth-insight-section .medi-editorial-floating-stat {
+        gap: 10px;
+        margin: -18px 6px 0;
+        padding: 14px 12px;
+    }
+
+    .medi-growth-insight-section .medi-stat-divider {
+        display: none;
+    }
+
+    .medi-growth-insight-section .medi-priority-pill-item {
+        align-items: flex-start;
+        border-radius: 16px;
+        padding: 11px 14px;
+    }
+}
+
 
 /* ============================================================
    LUXURY DEFINITION SECTION
