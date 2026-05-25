@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
+import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 import azamaraShip from "../../assets/image.webp"
 import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Marseilles_122.webp'
