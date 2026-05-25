@@ -73,21 +73,39 @@ function FirstTimeLuxuryTravelers() {
     ];
 
     const mediFaqs = [
-        { question: 'Are Azamara Mediterranean cruises worth it?', answer: 'Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service.' },
-        { question: 'What makes Azamara different in the Mediterranean?', answer: 'Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports.' },
-        { question: 'Which Azamara Mediterranean itinerary is best?', answer: 'Greek Isles and Italy-intensive itineraries are especially popular among luxury travelers.' },
-        { question: 'Is Azamara considered luxury?', answer: 'Azamara is considered an upper-premium boutique cruise line with many luxury-level features.' },
-        { question: 'Are Azamara Mediterranean cruises all inclusive?', answer: 'Azamara includes gratuities, select beverages, cultural events, and various onboard amenities.' },
-        { question: 'Which Mediterranean destinations does Azamara do best?', answer: 'Greece, Italy, Croatia, Spain, and immersive Adriatic itineraries are standout strengths.' },
-        { question: 'Is Azamara good for couples?', answer: 'Yes. The intimate atmosphere and destination-focused experience appeal strongly to couples.' },
-        { question: 'When should travelers book Mediterranean cruises?', answer: 'Luxury Mediterranean cruises should ideally be booked 9–18 months in advance.' },
-        { question: 'Does Azamara attract younger travelers?', answer: 'While Azamara primarily attracts experienced travelers, younger affluent travelers increasingly appreciate immersive cruising.' },
-        { question: 'Which Azamara ship is best for Mediterranean cruises?', answer: 'Azamara Journey and Azamara Onward are especially popular for Mediterranean itineraries.' },
-        { question: 'Is Azamara better than Oceania in the Mediterranean?', answer: 'Azamara emphasizes destination immersion while Oceania is particularly known for culinary experiences.' },
-        { question: 'What is the dress code on Azamara Mediterranean cruises?', answer: 'Azamara maintains a relaxed luxury atmosphere with resort-casual elegance.' },
-        { question: 'Are Azamara shore excursions worth it?', answer: 'Many travelers value Azamara\'s curated cultural excursions and immersive local experiences.' },
-        { question: 'Why use a luxury cruise advisor for Mediterranean cruises?', answer: 'Luxury advisors help travelers maximize value, secure preferred accommodations, and select the best itineraries.' }
-    ]
+        {
+            question: 'Should you book Explora through a travel advisor?',
+            answer: 'For many luxury travelers, yes. Travel advisors help with suite selection, itinerary planning, exclusive amenities, and personalized support.'
+        },
+        {
+            question: 'Is it cheaper to book Explora through a travel advisor?',
+            answer: 'Pricing is often similar, but advisors may provide added amenities, onboard credits, or greater overall value.'
+        },
+        {
+            question: 'What does a luxury cruise advisor do?',
+            answer: 'Luxury cruise advisors help travelers compare cruise lines, select suites, coordinate logistics, and personalize the entire travel experience.'
+        },
+        {
+            question: 'Can travel advisors get better Explora perks?',
+            answer: 'Some luxury advisors have access to exclusive amenities, promotions, hosted experiences, or preferred partner benefits.'
+        },
+        {
+            question: 'Do travel advisors help with suite selection?',
+            answer: 'Yes. Advisors help travelers evaluate deck location, suite categories, privacy, and overall value.'
+        },
+        {
+            question: 'Why use a travel advisor for luxury cruises?',
+            answer: 'Luxury cruising involves more specialized planning than standard vacations, especially regarding suites, itineraries, and international logistics.'
+        },
+        {
+            question: 'Are travel advisors worth it for Explora Journeys?',
+            answer: 'For many travelers — especially first-time luxury cruisers — the expertise and personalized support can significantly improve the experience.'
+        },
+        {
+            question: 'Can travel advisors help with cruise itinerary planning?',
+            answer: 'Absolutely. Advisors help travelers match itineraries with travel style, destination interests, and preferred onboard atmosphere.'
+        }
+    ];
 
 
     const mediMistakes = [
@@ -1849,133 +1867,99 @@ function FirstTimeLuxuryTravelers() {
             </section>
 
             {/* WHY WORK WITH US */}
-<section className="medi-work-with-us-section">
-    <div className="medi-work-with-us-container">
+            <section className="medi-work-with-us-section">
+                <div className="medi-work-with-us-container">
 
-        {/* Header Block */}
-        <div className="medi-work-header-card">
-            <span className="medi-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
-            <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
-            <div className="medi-heading-separator-bar custom-bar"></div>
-            <p className="medi-work-intro-para">
-                Luxury travel planning has become increasingly specialized.
-            </p>
-        </div>
+                    {/* Header Block */}
+                    <div className="medi-work-header-card">
+                        <span className="medi-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
+                        <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
+                        <div className="medi-heading-separator-bar custom-bar"></div>
+                        <p className="medi-work-intro-para">
+                            Luxury travel planning has become increasingly specialized.
+                        </p>
+                    </div>
 
-        {/* Stepped Timeline Journey */}
-        <div className="medi-work-timeline-flow">
-            {/* The Central Glowing Line */}
-            <div className="medi-timeline-line"></div>
+                    {/* Stepped Timeline Journey */}
+                    <div className="medi-work-timeline-flow">
+                        {/* The Central Glowing Line */}
+                        <div className="medi-timeline-line"></div>
 
-            {/* Pillar 1: Advisor Benefits (Left Aligned) */}
-            <div className="medi-timeline-step step-left">
-                <div className="medi-timeline-node">
-                    <Compass size={18} />
-                </div>
-                <div className="medi-timeline-card">
-                    <div className="medi-card-step-badge">STEP 01</div>
-                    <h3 className="medi-pillar-title">Experienced advisors help travelers:</h3>
-                    <div className="medi-pillar-line-bar"></div>
-                    <ul className="medi-pillar-list">
-                        <li>
-                            <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Compare luxury cruise lines accurately</span>
-                        </li>
-                        <li>
-                            <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Match itineraries to lifestyle</span>
-                        </li>
-                        <li>
-                            <Crown size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Secure ideal suite categories</span>
-                        </li>
-                        <li>
-                            <Gem size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Access exclusive amenities</span>
-                        </li>
-                        <li>
-                            <Globe size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Simplify international logistics</span>
-                        </li>
-                        <li>
-                            <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Maximize luxury travel value</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                        {/* Pillar 1: Advisor Benefits (Left Aligned) */}
+                        <div className="medi-timeline-step step-left">
+                            <div className="medi-timeline-node">
+                                <Compass size={18} />
+                            </div>
+                            <div className="medi-timeline-card">
+                                <div className="medi-card-step-badge">STEP 01</div>
+                                <h3 className="medi-pillar-title">Experienced advisors help travelers:</h3>
+                                <div className="medi-pillar-line-bar"></div>
+                                <ul className="medi-pillar-list">
+                                    <li>
+                                        <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Compare luxury cruise lines accurately</span>
+                                    </li>
+                                    <li>
+                                        <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Match itineraries to lifestyle</span>
+                                    </li>
+                                    <li>
+                                        <Crown size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Secure ideal suite categories</span>
+                                    </li>
+                                    <li>
+                                        <Gem size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Access exclusive amenities</span>
+                                    </li>
+                                    <li>
+                                        <Globe size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Simplify international logistics</span>
+                                    </li>
+                                    <li>
+                                        <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Maximize luxury travel value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-            {/* Pillar 2: Global Recognition (Right Aligned) */}
-            <div className="medi-timeline-step step-right">
-                <div className="medi-timeline-node">
-                    <Award size={18} />
-                </div>
-                <div className="medi-timeline-card">
-                    <div className="medi-card-step-badge">STEP 02</div>
-                    <h3 className="medi-pillar-title">Angela Hughes is internationally recognized for luxury travel expertise through:</h3>
-                    <div className="medi-pillar-line-bar"></div>
-                    <ul className="medi-pillar-list">
-                        <li>
-                            <Mic size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Industry speaking engagements</span>
-                        </li>
-                        <li>
-                            <FileText size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Weekly travel columns</span>
-                        </li>
-                        <li>
-                            <Award size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Advisory board leadership</span>
-                        </li>
-                        <li>
-                            <Globe size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>International media recognition</span>
-                        </li>
-                        <li>
-                            <GraduationCap size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Luxury Travel University training</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                        {/* Pillar 2: Specializations (Right Aligned) */}
+                        <div className="medi-timeline-step step-right">
+                            <div className="medi-timeline-node">
+                                <Ship size={18} />
+                            </div>
+                            <div className="medi-timeline-card">
+                                <div className="medi-card-step-badge">STEP 02</div>
+                                <h3 className="medi-pillar-title">Trips & Ships Luxury Travel specializes in:</h3>
+                                <div className="medi-pillar-line-bar"></div>
+                                <ul className="medi-pillar-list">
+                                    <li>
+                                        <Ship size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Ultra-luxury cruises</span>
+                                    </li>
+                                    <li>
+                                        <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Boutique ship experiences</span>
+                                    </li>
+                                    <li>
+                                        <Compass size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Expedition cruising</span>
+                                    </li>
+                                    <li>
+                                        <Heart size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Personalized luxury travel</span>
+                                    </li>
+                                    <li>
+                                        <Globe size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Global premium travel planning</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            {/* Pillar 3: Specializations (Left Aligned) */}
-            <div className="medi-timeline-step step-left">
-                <div className="medi-timeline-node">
-                    <Ship size={18} />
                 </div>
-                <div className="medi-timeline-card">
-                    <div className="medi-card-step-badge">STEP 03</div>
-                    <h3 className="medi-pillar-title">Trips & Ships Luxury Travel specializes in:</h3>
-                    <div className="medi-pillar-line-bar"></div>
-                    <ul className="medi-pillar-list">
-                        <li>
-                            <Ship size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Ultra-luxury cruises</span>
-                        </li>
-                        <li>
-                            <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Boutique ship experiences</span>
-                        </li>
-                        <li>
-                            <Compass size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Expedition cruising</span>
-                        </li>
-                        <li>
-                            <Heart size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Personalized luxury travel</span>
-                        </li>
-                        <li>
-                            <Globe size={18} className="medi-pillar-list-icon icon-theme" />
-                            <span>Global premium travel planning</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+            </section>
 
             {/* ANGELA HUGHES AUTHORITY BOX */}
             <section className="medi-authority-section">
@@ -1984,7 +1968,7 @@ function FirstTimeLuxuryTravelers() {
                     {/* Header Block */}
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Angela Hughes Authority Box</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Meet Angela Hughes</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
@@ -1995,7 +1979,7 @@ function FirstTimeLuxuryTravelers() {
                                 <span className="medi-prestige-initials">AH</span>
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
-                            <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
+                            <h3 className="medi-prestige-name">Angela Hughes</h3>
                             <div className="medi-prestige-role-pill">CEO of Trips & Ships Luxury Travel</div>
 
                             <div className="medi-prestige-meta-box">
@@ -2011,12 +1995,11 @@ function FirstTimeLuxuryTravelers() {
                                     { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
                                     { text: "40+ years luxury travel expertise", icon: Clock, category: "EXPERIENCE" },
                                     { text: "Traveled to 121+ countries", icon: Globe, category: "EXPLORATION" },
-                                    { text: "Global luxury travel speaker", icon: Mic, category: "SPEAKING" },
+                                    { text: "International luxury travel speaker", icon: Mic, category: "SPEAKING" },
                                     { text: "Weekly travel columnist", icon: FileText, category: "MEDIA" },
                                     { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
                                     { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
                                     { text: "Named among the Most Influential Women in Travel in 2026", icon: Crown, category: "PRESTIGE" },
-                                    { text: "Featured in global travel publications", icon: Sparkles, category: "RECOGNITION" },
                                     { text: "Luxury cruise and expedition specialist", icon: Ship, category: "SPECIALTY" }
                                 ].map((accolade, idx) => {
                                     const IconComp = accolade.icon;
@@ -2034,58 +2017,6 @@ function FirstTimeLuxuryTravelers() {
                                     )
                                 })}
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA SECTION */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Ready to Experience the Mediterranean with Azamara?</h2>
-                        <div className="medi-cta-separator-white"></div>
-
-                        <p className="medi-cta-paragraph-white">
-                            Luxury Mediterranean cruising is no longer simply about transportation between ports — it is about authentic experiences, cultural immersion, personalized service, and seamless planning.
-                        </p>
-
-                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            With over four decades of luxury travel expertise and global recognition in premium cruise planning, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal Azamara Mediterranean experience.
-                        </p>
-
-                        <div className="medi-cta-considerations-box">
-                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
-                            <ul className="medi-cta-considerations-list">
-                                {[
-                                    "Greek Isles cruising",
-                                    "Italy-intensive voyages",
-                                    "Adriatic exploration",
-                                    "Boutique European luxury travel",
-                                    "Extended Mediterranean itineraries"
-                                ].map((item, idx) => (
-                                    <li key={idx} className="medi-cta-considerations-item">
-                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                            Trips & Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
-                        </p>
-
-                        <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </button>
-                            <button className="medi-secondary-outline-button">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -2120,6 +2051,64 @@ function FirstTimeLuxuryTravelers() {
                     </div>
                 </div>
             </section>
+
+            {/* CTA SECTION */}
+<section className="medi-cta-main-section">
+    <div className="medi-cta-bg-pattern-layer"></div>
+    <div className="medi-cta-content-relative">
+        <div className="medi-cta-inner-wrapper">
+            <h2 className="medi-cta-heading-white">Ready to Plan Your Explora Journeys Experience?</h2>
+            <div className="medi-cta-separator-white"></div>
+
+            <p className="medi-cta-paragraph-white">
+                Luxury cruising is deeply personal. For travelers seeking contemporary luxury, spacious suites, wellness-focused experiences, boutique ship atmospheres, and personalized service, working with an experienced luxury cruise advisor can dramatically improve the overall travel experience.
+            </p>
+
+            <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                With over four decades of luxury travel expertise, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently compare luxury cruise lines, select ideal suites, and design highly personalized luxury vacations involving sophisticated travel planning and seamless international coordination.
+            </p>
+
+            <div className="medi-cta-considerations-box">
+                <span className="medi-cta-considerations-title">Whether you are considering:</span>
+                <ul className="medi-cta-considerations-list">
+                    {[
+                        "Mediterranean luxury cruises",
+                        "Caribbean voyages",
+                        "Boutique ship experiences",
+                        "Wellness-focused travel",
+                        "Ultra-luxury cruising"
+                    ].map((item, idx) => (
+                        <li key={idx} className="medi-cta-considerations-item">
+                            <CheckCircle size={16} className="medi-cta-considerations-icon" />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
+                Trips & Ships Luxury Travel provides expert guidance backed by real-world luxury travel expertise.
+            </p>
+
+            <div className="medi-cta-button-group">
+                <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
+                    <Phone size={18} />
+                    Schedule a Personalized Luxury Cruise Consultation Today
+                </button>
+            </div>
+
+            {/* Industry Resource Links */}
+            <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
+                <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Globe size={14} /> Explora Journeys Official Website
+                </span>
+                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
+                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
+                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
+            </div>
+        </div>
+    </div>
+</section>
         </>
     )
 }
