@@ -22,7 +22,7 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import hero1 from '../../assets/BestCabinsOnAzamara/Azamara-night.webp'
 import hero2 from '../../assets/BestCabinsOnAzamara/AzamaraNorway.webp'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Italy Luxury cruise.webp'
+import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
 import cabinimg from "../../assets/AzamaraAlaskaCruises/Hero1.webp"
 
 function BestCabinsOnAzamara() {

@@ -579,7 +579,7 @@ function AzamaraCabinsGuide2026() {
                                                 mediSelectedItinerary === 2 ? room3 :
                                                     mediSelectedItinerary === 3 ? room4 :
                                                         mediSelectedItinerary === 4 ? room5 :
-                                                            croatiaCoast // Placeholder, can be mapped to specific cabin images
+                                                            spainCruise // Placeholder, can be mapped to specific cabin images
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
