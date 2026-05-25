@@ -687,7 +687,7 @@ function MediterraneanCruises() {
             </section>
 
             {/* EXPERT INSIGHT */}
-            <section id="mediterranean-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+            <section className="medi-expert-editorial-section">
                 <div className="medi-expert-editorial-container">
                     <div className="medi-expert-editorial-card">
 
@@ -720,7 +720,7 @@ function MediterraneanCruises() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Why Mediterranean Small-Ship Cruising Continues <br className="medi-growth-title-break" />to Grow
+                                    Why Mediterranean Small-Ship Cruising Continues <br />to Grow
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
