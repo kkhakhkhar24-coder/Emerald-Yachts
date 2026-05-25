@@ -312,6 +312,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best Cabins on Azamara</NavLink>
+
+              <NavLink
+                to="/best-explora-cruises-for-first-time-luxury-travelers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Explora Cruises for First-Time Luxury Travelers</NavLink>
             </div>
           </div>
         </div>
@@ -634,6 +641,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best Cabins on Azamara</NavLink>
+
+            <NavLink
+              to="/best-explora-cruises-for-first-time-luxury-travelers"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Explora Cruises for First-Time Luxury Travelers</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

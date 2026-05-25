@@ -50,6 +50,7 @@ import AzamaraJapanCruises from "./pages/AzamaraJapanCruises/AzamaraJapanCruises
 import AzamaraWorthIt from "./pages/AzamaraWorthIt/AzamaraWorthIt";
 import AzamaraCabinsGuide2026 from "./pages/AzamaraCabinsGuide2026/AzamaraCabinsGuide2026";
 import BestCabinsOnAzamara from "./pages/BestCabinsOnAzamara/BestCabinsOnAzamara";
+import FirstTimeLuxuryTravelers from "./pages/FirstTimeLuxuryTravelers/FirstTimeLuxuryTravelers";
 
 
 function App() {
@@ -240,6 +241,11 @@ function App() {
           <Route
             path="/best-cabins-on-azamara"
             element={<BestCabinsOnAzamara />}
+          />
+
+          <Route
+            path="/best-explora-cruises-for-first-time-luxury-travelers"
+            element={<FirstTimeLuxuryTravelers />}
           />
 
         </Routes>
