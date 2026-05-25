@@ -319,6 +319,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best Explora Cruises for First-Time Luxury Travelers</NavLink>
+
+              <NavLink
+                to="/best-suites-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Suites on Explora Journeys</NavLink>
             </div>
           </div>
         </div>
@@ -648,6 +655,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best Explora Cruises for First-Time Luxury Travelers</NavLink>
+
+            <NavLink
+              to="/best-suites-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Suites on Explora Journeys</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
