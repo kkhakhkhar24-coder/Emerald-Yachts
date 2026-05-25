@@ -74,36 +74,36 @@ function FirstTimeLuxuryTravelers() {
 
     const mediFaqs = [
         {
-            question: 'Should you book Explora through a travel advisor?',
-            answer: 'For many luxury travelers, yes. Travel advisors help with suite selection, itinerary planning, exclusive amenities, and personalized support.'
+            question: 'What is the best Explora cruise for first-time travelers?',
+            answer: 'Mediterranean and Caribbean voyages are among the most popular choices because they combine relaxation, scenic cruising, and immersive destinations.'
         },
         {
-            question: 'Is it cheaper to book Explora through a travel advisor?',
-            answer: 'Pricing is often similar, but advisors may provide added amenities, onboard credits, or greater overall value.'
+            question: 'Is Explora Journeys truly luxury?',
+            answer: 'Yes. Explora Journeys is considered an ultra-luxury cruise brand with spacious suites, premium inclusions, and highly personalized service.'
         },
         {
-            question: 'What does a luxury cruise advisor do?',
-            answer: 'Luxury cruise advisors help travelers compare cruise lines, select suites, coordinate logistics, and personalize the entire travel experience.'
+            question: 'Are Explora cruises all inclusive?',
+            answer: 'Explora includes many premium amenities including dining, beverages, gratuities, Wi-Fi, and wellness experiences.'
         },
         {
-            question: 'Can travel advisors get better Explora perks?',
-            answer: 'Some luxury advisors have access to exclusive amenities, promotions, hosted experiences, or preferred partner benefits.'
+            question: 'What type of travelers choose Explora Journeys?',
+            answer: 'Explora appeals primarily to sophisticated travelers seeking relaxed luxury, wellness, fine dining, and boutique ship experiences.'
         },
         {
-            question: 'Do travel advisors help with suite selection?',
-            answer: 'Yes. Advisors help travelers evaluate deck location, suite categories, privacy, and overall value.'
+            question: 'How does Explora compare to Seabourn?',
+            answer: 'Explora emphasizes modern lifestyle luxury and contemporary design, while Seabourn leans more toward traditional luxury cruising.'
         },
         {
-            question: 'Why use a travel advisor for luxury cruises?',
-            answer: 'Luxury cruising involves more specialized planning than standard vacations, especially regarding suites, itineraries, and international logistics.'
+            question: 'Is Explora better than Silversea?',
+            answer: 'They appeal to different traveler styles. Explora focuses on relaxed modern luxury, while Silversea is particularly known for expedition expertise and classic ultra-luxury traditions.'
         },
         {
-            question: 'Are travel advisors worth it for Explora Journeys?',
-            answer: 'For many travelers — especially first-time luxury cruisers — the expertise and personalized support can significantly improve the experience.'
+            question: 'Are Explora suites spacious?',
+            answer: 'Yes. Explora Journeys offers some of the largest entry-level suites in luxury cruising.'
         },
         {
-            question: 'Can travel advisors help with cruise itinerary planning?',
-            answer: 'Absolutely. Advisors help travelers match itineraries with travel style, destination interests, and preferred onboard atmosphere.'
+            question: 'Which Explora itinerary is best for beginners?',
+            answer: 'Mediterranean voyages are often ideal for first-time luxury cruisers because of the combination of culture, scenery, and port variety.'
         }
     ];
 
@@ -1772,7 +1772,7 @@ function FirstTimeLuxuryTravelers() {
             </section>
 
             {/* EXPERT INSIGHT */}
-            <section id="mediterranean-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+            <section id="explora-expert-insight" className="medi-expert-editorial-section medi-growth-insight-section">
                 <div className="medi-expert-editorial-container">
                     <div className="medi-expert-editorial-card">
 
@@ -1783,6 +1783,7 @@ function FirstTimeLuxuryTravelers() {
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
+                            {/* Authority stats remain relevant to Angela Hughes personally */}
                             <div className="medi-editorial-floating-stat">
                                 <div className="medi-stat-tile">
                                     <span className="medi-stat-number">40+</span>
@@ -1876,7 +1877,7 @@ function FirstTimeLuxuryTravelers() {
                         <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar custom-bar"></div>
                         <p className="medi-work-intro-para">
-                            Luxury travel planning has become increasingly specialized.
+                            Luxury cruise planning has become increasingly specialized.
                         </p>
                     </div>
 
@@ -1892,32 +1893,32 @@ function FirstTimeLuxuryTravelers() {
                             </div>
                             <div className="medi-timeline-card">
                                 <div className="medi-card-step-badge">STEP 01</div>
-                                <h3 className="medi-pillar-title">Experienced advisors help travelers:</h3>
+                                <h3 className="medi-pillar-title">Working with experienced advisors helps travelers:</h3>
                                 <div className="medi-pillar-line-bar"></div>
                                 <ul className="medi-pillar-list">
                                     <li>
                                         <CheckCircle size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Compare luxury cruise lines accurately</span>
+                                        <span>Compare cruise lines accurately</span>
                                     </li>
                                     <li>
                                         <MapPin size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Match itineraries to lifestyle</span>
-                                    </li>
-                                    <li>
-                                        <Crown size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Secure ideal suite categories</span>
+                                        <span>Identify ideal itineraries</span>
                                     </li>
                                     <li>
                                         <Gem size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Maximize onboard value</span>
+                                    </li>
+                                    <li>
+                                        <Crown size={18} className="medi-pillar-list-icon icon-theme" />
+                                        <span>Secure premium suite locations</span>
+                                    </li>
+                                    <li>
+                                        <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
                                         <span>Access exclusive amenities</span>
                                     </li>
                                     <li>
                                         <Globe size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Simplify international logistics</span>
-                                    </li>
-                                    <li>
-                                        <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Maximize luxury travel value</span>
+                                        <span>Navigate international travel logistics</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1939,15 +1940,15 @@ function FirstTimeLuxuryTravelers() {
                                     </li>
                                     <li>
                                         <Sparkles size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Boutique ship experiences</span>
+                                        <span>Boutique ship cruising</span>
                                     </li>
                                     <li>
                                         <Compass size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Expedition cruising</span>
+                                        <span>Expedition travel</span>
                                     </li>
                                     <li>
                                         <Heart size={18} className="medi-pillar-list-icon icon-theme" />
-                                        <span>Personalized luxury travel</span>
+                                        <span>Personalized luxury experiences</span>
                                     </li>
                                     <li>
                                         <Globe size={18} className="medi-pillar-list-icon icon-theme" />
@@ -2053,62 +2054,62 @@ function FirstTimeLuxuryTravelers() {
             </section>
 
             {/* CTA SECTION */}
-<section className="medi-cta-main-section">
-    <div className="medi-cta-bg-pattern-layer"></div>
-    <div className="medi-cta-content-relative">
-        <div className="medi-cta-inner-wrapper">
-            <h2 className="medi-cta-heading-white">Ready to Plan Your Explora Journeys Experience?</h2>
-            <div className="medi-cta-separator-white"></div>
+            <section className="medi-cta-main-section">
+                <div className="medi-cta-bg-pattern-layer"></div>
+                <div className="medi-cta-content-relative">
+                    <div className="medi-cta-inner-wrapper">
+                        <h2 className="medi-cta-heading-white">Ready to Experience Explora Journeys?</h2>
+                        <div className="medi-cta-separator-white"></div>
 
-            <p className="medi-cta-paragraph-white">
-                Luxury cruising is deeply personal. For travelers seeking contemporary luxury, spacious suites, wellness-focused experiences, boutique ship atmospheres, and personalized service, working with an experienced luxury cruise advisor can dramatically improve the overall travel experience.
-            </p>
+                        <p className="medi-cta-paragraph-white">
+                            Luxury cruising is deeply personal. For travelers seeking <strong>contemporary elegance, spacious suites, wellness-focused travel, boutique luxury, personalized service, relaxed sophistication, and destination immersion</strong>, Explora Journeys offers one of the most compelling introductions to modern ultra-luxury cruising.
+                        </p>
 
-            <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                With over four decades of luxury travel expertise, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently compare luxury cruise lines, select ideal suites, and design highly personalized luxury vacations involving sophisticated travel planning and seamless international coordination.
-            </p>
+                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                            With over four decades of luxury travel expertise, Angela Hughes and the team at Trips & Ships Luxury Travel help travelers confidently select the ideal luxury cruise experience based on their travel style and expectations.
+                        </p>
 
-            <div className="medi-cta-considerations-box">
-                <span className="medi-cta-considerations-title">Whether you are considering:</span>
-                <ul className="medi-cta-considerations-list">
-                    {[
-                        "Mediterranean luxury cruises",
-                        "Caribbean voyages",
-                        "Boutique ship experiences",
-                        "Wellness-focused travel",
-                        "Ultra-luxury cruising"
-                    ].map((item, idx) => (
-                        <li key={idx} className="medi-cta-considerations-item">
-                            <CheckCircle size={16} className="medi-cta-considerations-icon" />
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                        <div className="medi-cta-considerations-box">
+                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
+                            <ul className="medi-cta-considerations-list">
+                                {[
+                                    "Mediterranean luxury cruises",
+                                    "Caribbean voyages",
+                                    "Boutique ship experiences",
+                                    "Wellness-focused travel",
+                                    "Ultra-luxury ocean cruising"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="medi-cta-considerations-item">
+                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-            <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                Trips & Ships Luxury Travel provides expert guidance backed by real-world luxury travel expertise.
-            </p>
+                        <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
+                            Trips & Ships Luxury Travel provides expert guidance backed by real-world luxury travel expertise.
+                        </p>
 
-            <div className="medi-cta-button-group">
-                <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
-                    <Phone size={18} />
-                    Schedule a Personalized Luxury Cruise Consultation Today
-                </button>
-            </div>
+                        <div className="medi-cta-button-group">
+                            <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
+                                <Phone size={18} />
+                                Schedule a Personalized Luxury Cruise Consultation Today
+                            </button>
+                        </div>
 
-            {/* Industry Resource Links */}
-            <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <Globe size={14} /> Explora Journeys Official Website
-                </span>
-                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
-                <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-            </div>
-        </div>
-    </div>
-</section>
+                        {/* Industry Resource Links */}
+                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
+                            <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                <Globe size={14} /> Explora Journeys Official Website
+                            </span>
+                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
+                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
+                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
