@@ -1805,11 +1805,34 @@
     flex-shrink: 0;
 }
 
+@media (max-width: 1200px) {
+    .medi-expert-editorial-card {
+        grid-template-columns: 380px 1fr;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .medi-editorial-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .medi-priorities-grid-pills {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 992px) {
     .medi-expert-editorial-card {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 30px;
+    }
+
+    .medi-editorial-portrait-block {
+        max-width: 380px;
+        margin: 0 auto 20px auto;
     }
 
     .medi-editorial-floating-stat {
@@ -1826,9 +1849,53 @@
         font-size: 28px;
     }
 
+    .medi-editorial-title br {
+        display: none;
+    }
+
     .medi-priorities-grid-pills {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .medi-expert-editorial-card {
+        padding: 20px 16px;
+        gap: 30px;
+        border-radius: 16px;
+    }
+
+    .medi-priorities-box {
+        padding: 16px 20px;
+        margin-bottom: 20px;
+    }
+
+    .medi-editorial-lead-para {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .medi-editorial-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .medi-editorial-floating-stat {
+        padding: 12px 16px;
+        gap: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -20px;
+    }
+
+    .medi-stat-number {
+        font-size: 22px;
+    }
+
+    .medi-stat-label {
+        font-size: 10px;
     }
 }
 
@@ -2378,7 +2445,7 @@
 
 .medi-mistake-card-bullet-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     font-size: 15px;
     color: #4a5568;
@@ -2388,6 +2455,7 @@
 .medi-mistake-bullet-check {
     color: var(--medi-navy);
     flex-shrink: 0;
+    margin-top: 3px;
 }
 
 .medi-slider-nav-btn {
@@ -2442,6 +2510,12 @@
     border-radius: 5px;
 }
 
+@media (max-width: 1024px) {
+    .medi-mistakes-slider-title {
+        font-size: 34px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .medi-mistakes-slider-section {
         padding: 70px 16px;
@@ -2452,7 +2526,18 @@
     }
 
     .medi-mistakes-carousel-wrapper {
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 25px;
+        column-gap: 16px;
+    }
+
+    .medi-slider-card-viewport {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        width: 100%;
+        min-height: 250px;
     }
 
     .medi-mistakes-slider-card {
@@ -2460,7 +2545,63 @@
     }
 
     .medi-mistake-card-title {
-        font-size: 20px;
+        font-size: 20px !important;
+    }
+
+    .medi-slider-nav-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .medi-slider-nav-btn.btn-left {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: end;
+    }
+
+    .medi-slider-nav-btn.btn-right {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+    }
+}
+
+@media (max-width: 480px) {
+    .medi-mistakes-slider-title {
+        font-size: 24px !important;
+    }
+
+    .medi-mistakes-slider-card {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+
+    .medi-mistake-slide-header {
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .medi-mistake-card-num {
+        font-size: 24px;
+    }
+
+    .medi-mistake-card-title {
+        font-size: 18px !important;
+    }
+
+    .medi-mistake-card-description {
+        font-size: 15px !important;
+        line-height: 1.6;
+    }
+
+    .medi-mistake-card-bullets-list {
+        margin-top: 16px;
+        gap: 10px;
+    }
+
+    .medi-mistake-card-bullet-item {
+        font-size: 14px;
+        gap: 10px;
     }
 
     .medi-slider-nav-btn {
@@ -3418,6 +3559,82 @@
     }
 }
 
+@media (max-width: 767px) {
+    .medi-authority-header-block {
+        margin-bottom: 40px;
+    }
+
+    .medi-authority-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        margin-bottom: 12px;
+    }
+
+    .medi-prestige-plaque-wrapper {
+        border-radius: 20px;
+    }
+
+    .medi-prestige-identity-card {
+        padding: 28px 18px;
+    }
+
+    .medi-prestige-seal-ring {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+    }
+
+    .medi-prestige-initials {
+        font-size: 22px;
+    }
+
+    .medi-prestige-name {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+    }
+
+    .medi-prestige-role-pill {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-bottom: 18px;
+    }
+
+    .medi-prestige-meta-text {
+        font-size: 11px;
+    }
+
+    .medi-prestige-credentials-column {
+        padding: 20px 16px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .medi-prestige-list {
+        gap: 12px;
+    }
+
+    .medi-prestige-item-card {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 12px;
+    }
+
+    .medi-prestige-item-icon-box {
+        width: 34px;
+        height: 34px;
+    }
+
+    .medi-prestige-item-category {
+        font-size: 9px;
+    }
+
+    .medi-prestige-item-text {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+}
+
 /* ============================================================
    CTA SECTION
    ============================================================ */
@@ -3578,6 +3795,7 @@
 }
 
 @media (max-width: 767px) {
+
     .medi-primary-cta-button,
     .medi-secondary-outline-button {
         width: 100%;
@@ -3875,12 +4093,16 @@
 .medi-work-with-us-section,
 .medi-authority-section,
 .medi-cta-main-section,
-.medi-faq-main-section {
+.medi-faq-main-section,
+.azw-included-section,
+.azw-worth-section,
+.azc-categories-section {
     margin: 0;
     padding: 88px 20px !important;
 }
 
 @media (max-width: 1024px) {
+
     .medi-premium-intro-section,
     .medi-excel-section,
     .medi-diff-section,
@@ -3892,12 +4114,16 @@
     .medi-work-with-us-section,
     .medi-authority-section,
     .medi-cta-main-section,
-    .medi-faq-main-section {
+    .medi-faq-main-section,
+    .azw-included-section,
+    .azw-worth-section,
+    .azc-categories-section {
         padding: 72px 16px !important;
     }
 }
 
 @media (max-width: 767px) {
+
     .medi-premium-intro-section,
     .medi-excel-section,
     .medi-diff-section,
@@ -3909,7 +4135,983 @@
     .medi-work-with-us-section,
     .medi-authority-section,
     .medi-cta-main-section,
-    .medi-faq-main-section {
+    .medi-faq-main-section,
+    .azw-included-section,
+    .azw-worth-section,
+    .azc-categories-section {
         padding: 56px 16px !important;
+    }
+}
+
+/* ============================================================
+   PAGE: AzamaraWorthIt
+   SECTIONS: What Is Included on Azamara Cruises? & Is Azamara Worth the Money?
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Section 1: What Is Included on Azamara Cruises?
+   ------------------------------------------------------------ */
+
+.azw-included-section {
+    background: linear-gradient(180deg, var(--medi-bg-white) 0%, var(--medi-bg-soft) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.azw-included-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.azw-included-intro {
+    font-size: 18px;
+    line-height: 1.65;
+    color: #4a5568;
+    max-width: 760px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.azw-included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.azw-included-card {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.04);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.azw-included-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--medi-navy);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+}
+
+.azw-included-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.azw-included-card:hover .azw-included-icon {
+    background: var(--medi-navy);
+    color: var(--medi-bg-white);
+    transform: scale(1.05) rotate(3deg);
+}
+
+.azw-included-card span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    line-height: 1.4;
+}
+
+.azw-included-header {
+    display: flex;
+    justify-content: center;
+}
+
+.azw-included-subtext {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--medi-navy);
+    font-weight: 600;
+    text-align: center;
+    background: rgba(39, 68, 114, 0.04);
+    padding: 16px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+/* ------------------------------------------------------------
+   Section 2: Is Azamara Worth the Money?
+   ------------------------------------------------------------ */
+
+.azw-worth-section {
+    background: linear-gradient(180deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.azw-worth-section .medi-section-heading {
+    color: var(--medi-bg-white) !important;
+}
+
+.azw-worth-section .medi-heading-separator-bar {
+    background: var(--medi-bg-white);
+}
+
+.azw-worth-section .medi-itinerary-eyebrow {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.azw-worth-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.azw-worth-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.azw-worth-panel {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(10, 20, 35, 0.2);
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.azw-worth-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(10, 20, 35, 0.3);
+}
+
+.azw-worth-panel-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--medi-navy);
+}
+
+.azw-worth-panel-bar.azw-bar-alt {
+    background: #718096;
+}
+
+.azw-worth-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.azw-worth-panel-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.azw-icon-positive {
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--medi-navy);
+}
+
+.azw-icon-alt {
+    background: rgba(113, 128, 150, 0.1);
+    color: #718096;
+}
+
+.azw-worth-panel-heading {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.azw-worth-panel-alt .azw-worth-panel-heading {
+    color: #2d3748;
+}
+
+.azw-worth-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.azw-worth-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.azw-worth-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.azw-dot-navy {
+    background: var(--medi-navy);
+}
+
+.azw-dot-slate {
+    background: #718096;
+}
+
+.azw-worth-verdict {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.azw-verdict-positive {
+    background: rgba(39, 68, 114, 0.05);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.azw-verdict-alt {
+    background: rgba(113, 128, 150, 0.05);
+    color: #4a5568;
+    border: 1px solid rgba(113, 128, 150, 0.08);
+}
+
+.azw-worth-bottom-banner {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 15px 35px rgba(10, 20, 35, 0.2);
+}
+
+.azw-worth-banner-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--medi-bg-white);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.azw-worth-banner-text {
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ------------------------------------------------------------
+   Responsive Breakpoints for Section 1 & Section 2
+   ------------------------------------------------------------ */
+
+@media (max-width: 992px) {
+    .azw-included-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .azw-worth-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azw-worth-bottom-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azw-included-intro {
+        font-size: 16px;
+    }
+
+    .azw-worth-panel {
+        padding: 30px 24px;
+    }
+
+    .azw-worth-banner-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .azw-included-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .azw-included-card {
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .azw-included-subtext {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+/* ============================================================
+   PAGE: AzamaraCabinsGuide2026
+   SECTION: Understanding Azamara Cabin Categories
+   ============================================================ */
+
+.azc-categories-section {
+    background: linear-gradient(180deg, var(--medi-bg-white) 0%, var(--medi-bg-soft) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.azc-categories-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.azc-intro-text {
+    font-size: 18px;
+    line-height: 1.65;
+    color: #4a5568;
+    max-width: 760px;
+    margin: 0 auto 40px auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+.azc-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.azc-category-card {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.04);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.azc-category-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--medi-navy);
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.08);
+}
+
+.azc-category-icon {
+    color: var(--medi-navy);
+    background: rgba(39, 68, 114, 0.08);
+    border-radius: 50%;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.azc-category-card:hover .azc-category-icon {
+    background: var(--medi-navy);
+    color: var(--medi-bg-white);
+    transform: scale(1.05);
+}
+
+.azc-category-card span {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    line-height: 1.4;
+}
+
+.azc-conclusion-box {
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 16px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: inset 0 2px 4px rgba(39, 68, 114, 0.02);
+}
+
+.azc-conclusion-icon {
+    color: var(--medi-navy);
+    background: var(--medi-bg-white);
+    border-radius: 50%;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.08);
+}
+
+.azc-conclusion-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--medi-navy);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Responsive Breakpoints for azc-categories-section
+   ------------------------------------------------------------ */
+
+@media (max-width: 992px) {
+    .azc-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .azc-conclusion-box {
+        gap: 16px;
+        padding: 20px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .azc-intro-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .azc-conclusion-box p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .azc-categories-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .azc-category-card {
+        padding: 16px 20px;
+        gap: 12px;
+    }
+
+    .azc-conclusion-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   PAGE: AzamaraCabinsGuide2026
+   SECTION: Best Cabin Locations on Azamara Ships
+   ============================================================ */
+
+.azc-locations-layout {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 1200px !important;
+    gap: 32px !important;
+}
+
+.medi-advisor-tip-box {
+    margin-top: 24px;
+    padding: 16px;
+    background: rgba(39, 68, 114, 0.05);
+    border-left: 3px solid var(--medi-navy);
+    border-radius: 4px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.medi-advisor-tip-icon {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.medi-advisor-tip-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Responsive Breakpoints for azc-locations-layout
+   ------------------------------------------------------------ */
+
+@media (max-width: 1100px) {
+    .azc-locations-layout {
+        gap: 24px !important;
+    }
+
+    .azc-locations-layout .medi-audience-column {
+        padding: 30px 20px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .azc-locations-layout {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+}
+
+/* ============================================================
+   PAGE: AzamaraCabinsGuide2026
+   SECTION: What Is Included in Azamara Cabins?
+   ============================================================ */
+
+.azc-inc-cabins-section {
+    background: var(--medi-bg-white) !important;
+}
+
+.azc-inc-cabins-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    align-items: stretch;
+    height: 600px;
+}
+
+.azc-inc-cabins-box {
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.azc-inc-cabins-group {
+    margin-bottom: 35px;
+}
+
+.azc-inc-cabins-group:last-child {
+    margin-bottom: 0;
+}
+
+.azc-inc-cabins-subtitle {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: var(--medi-navy);
+    margin: 0 0 16px 0;
+    letter-spacing: -0.01em;
+}
+
+/* ------------------------------------------------------------
+   Responsive Breakpoints for azc-inc-cabins-section
+   ------------------------------------------------------------ */
+
+@media (max-width: 1024px) {
+    .azc-inc-cabins-container {
+        flex-direction: column !important;
+        gap: 40px !important;
+        height: auto !important;
+    }
+
+    .azc-inc-cabins-container .medi-luxury-visual-wrapper {
+        flex: 1 !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+        height: 350px !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .azc-inc-cabins-section .medi-luxury-features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .azc-inc-cabins-container .medi-luxury-visual-wrapper {
+        height: 250px !important;
+    }
+}
+
+/* ============================================================
+   PAGE: AzamaraCabinsGuide2026
+   SECTION: Expert Insight from Angela Hughes
+   ============================================================ */
+
+.medi-editorial-list-classic {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.medi-editorial-list-classic li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.medi-editorial-list-classic li:hover {
+    border-color: var(--medi-navy);
+    color: var(--medi-navy);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
+}
+
+.medi-editorial-list-icon {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------
+   Responsive Breakpoints for medi-editorial-list-classic
+   ------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    .medi-editorial-list-classic {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.azc-expert-section {
+    background: var(--medi-bg-soft) !important;
+}
+
+/* ============================================================
+   PAGE: BestCabinsOnAzamara
+   ============================================================ */
+
+/* ============================================================
+   SUITES WORTH SECTION
+   ============================================================ */
+
+.suites-worth-section {
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #f8fafc;
+    /* Light professional slate */
+}
+
+/* Background Decoration */
+.suites-worth-bg-accent {
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(15, 28, 46, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Container */
+.medi-excel-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+/* Header */
+.suites-worth-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.suites-worth-eyebrow {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--medi-navy, #0f1c2e);
+    margin-bottom: 12px;
+}
+
+.suites-worth-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--medi-navy, #0f1c2e);
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.suites-worth-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy, #0f1c2e);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Grid Layout */
+.suites-worth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(15, 28, 46, 0.05);
+}
+
+/* Left Side: Luxury Card */
+.suites-card-luxury {
+    padding: 60px;
+    background: #ffffff;
+    border-right: 1px solid #f1f5f9;
+}
+
+.suites-icon-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(15, 28, 46, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy, #0f1c2e);
+}
+
+.suites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suites-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.suites-list-icon {
+    display: flex;
+    color: var(--medi-navy, #0f1c2e);
+    flex-shrink: 0;
+}
+
+/* Right Side: Strategic Card */
+.suites-card-strategic {
+    padding: 60px;
+    background: linear-gradient(145deg, #1e293b 0%, #0f1c2e 100%);
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suites-quote-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    opacity: 0.15;
+    color: #ffffff;
+}
+
+.suites-strategic-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+.suites-strategic-text {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: italic;
+    color: #f1f5f9;
+    margin: 0;
+}
+
+.suites-highlight {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Floating Callout */
+.suites-floating-callout {
+    max-width: 850px;
+    margin: -35px auto 0;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.12);
+    border: 1px solid #f1f5f9;
+    position: relative;
+    z-index: 10;
+}
+
+.suites-callout-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--medi-navy, #0f1c2e);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.suites-callout-text {
+    margin: 0;
+    font-size: 16px;
+    color: #1e293b;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .suites-worth-title {
+        font-size: 36px;
+    }
+
+    .suites-card-luxury,
+    .suites-card-strategic {
+        padding: 45px;
+    }
+
+    .suites-strategic-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .suites-worth-grid {
+        grid-template-columns: 1fr;
+        /* Stack on Tablet */
+    }
+
+    .suites-card-luxury {
+        border-right: none;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .suites-floating-callout {
+        margin: 30px 20px 0 20px;
+        border-radius: 20px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .suites-worth-section {
+        padding: 70px 15px;
+    }
+
+    .suites-worth-title {
+        font-size: 28px;
+    }
+
+    .suites-card-luxury,
+    .suites-card-strategic {
+        padding: 35px 25px;
+    }
+
+    .suites-strategic-text {
+        font-size: 18px;
+    }
+
+    .suites-quote-icon {
+        top: 20px;
+        right: 20px;
+        width: 30px;
+    }
+
+    .suites-floating-callout {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .suites-worth-eyebrow {
+        font-size: 11px;
+    }
+
+    .suites-worth-title {
+        font-size: 24px;
+    }
+
+    .suites-callout-text {
+        font-size: 14px;
     }
 }

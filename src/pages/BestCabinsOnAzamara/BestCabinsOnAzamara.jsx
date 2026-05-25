@@ -695,7 +695,7 @@ function BestCabinsOnAzamara() {
                         <span className="medi-itinerary-eyebrow">CABIN UPGRADE GUIDE</span>
                         <h2 className="medi-excel-main-title">Are Azamara Veranda Cabins Worth It?</h2>
                         <div className="medi-excel-separator"></div>
-                        <h3 className="medi-veranda-subtitle" style={{ fontSize: '1.5rem', fontWeight: '600', margin: '16px 0 8px' }}>
+                        <h3 className="medi-veranda-subtitle">
                             For most travelers, yes.
                         </h3>
                         <p className="medi-excel-lead-paragraph">
@@ -703,15 +703,15 @@ function BestCabinsOnAzamara() {
                         </p>
                     </div>
 
-                    <div className="medi-excel-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
+                    <div className="medi-excel-grid bco-veranda-grid">
                         {/* Column 1: General Benefits */}
                         <div className="medi-excel-column">
-                            <div className="medi-excel-card" style={{ height: '100%' }}>
-                                <h3 className="medi-excel-card-heading" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <div className="medi-excel-card bco-veranda-card">
+                                <h3 className="medi-excel-card-heading bco-veranda-card-heading">
                                     <Sparkles size={20} />
                                     Benefits Include:
                                 </h3>
-                                <ul className="medi-excel-list" style={{ marginTop: '20px' }}>
+                                <ul className="medi-excel-list bco-veranda-list">
                                     {[
                                         'Private outdoor space',
                                         'Scenic relaxation',
@@ -736,15 +736,15 @@ function BestCabinsOnAzamara() {
 
                         {/* Column 2: Scenic Itineraries */}
                         <div className="medi-excel-column">
-                            <div className="medi-excel-card" style={{ height: '100%' }}>
-                                <h3 className="medi-excel-card-heading" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <div className="medi-excel-card bco-veranda-card">
+                                <h3 className="medi-excel-card-heading bco-veranda-card-heading">
                                     <Globe size={20} />
                                     Scenic Itinerary Value:
                                 </h3>
-                                <p style={{ fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6', color: '#475569' }}>
+                                <p className="bco-veranda-desc">
                                     Travelers on scenic itineraries especially appreciate having private balcony access during:
                                 </p>
-                                <ul className="medi-excel-list">
+                                <ul className="medi-excel-list bco-veranda-list">
                                     {[
                                         'Coastal sailings',
                                         'Cherry blossom cruises',
@@ -771,7 +771,7 @@ function BestCabinsOnAzamara() {
                         <div className="medi-veranda-worth-callout-icon-box">
                             <Crown size={32} style={{ flexShrink: 0 }} />
                         </div>
-                        <span style={{ fontSize: '18px', fontWeight: '500', lineHeight: '1.6' }}>
+                        <span className="medi-veranda-worth-callout-text">
                             Many experienced cruisers consider balcony cabins one of the most worthwhile upgrades.
                         </span>
                     </div>

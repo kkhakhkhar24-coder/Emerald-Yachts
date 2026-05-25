@@ -641,7 +641,7 @@ function AzamaraCabinsGuide2026() {
                     <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Best Cabin Locations on Azamara Ships</h2>
                     <div className="medi-heading-separator-bar medi-bar-centered"></div>
 
-                    <div className="medi-audience-split-layout">
+                    <div className="medi-audience-split-layout azc-locations-layout">
                         {cabinLocations.map((location, idx) => {
                             const IconComponent = location.icon;
                             const isAvoidColumn = location.title.toLowerCase().includes("avoid");
@@ -724,16 +724,15 @@ function AzamaraCabinsGuide2026() {
                 </div>
             </section>
 
-            {/* WHAT IS INCLUDED IN AZAMARA CABINS */}
-            <section className="medi-luxury-definition-section" style={{ backgroundColor: '#ffffff' }}>
-                <div className="medi-luxury-definition-container" style={{ flexDirection: 'row-reverse' }}>
+            <section className="medi-luxury-definition-section azc-inc-cabins-section">
+                <div className="medi-luxury-definition-container azc-inc-cabins-container">
                     <div className="medi-luxury-content-wrapper">
                         <h2 className="medi-luxury-heading">What Is Included in Azamara Cabins?</h2>
 
-                        <div className="medi-luxury-appreciated-box" style={{ background: 'transparent', padding: '0', boxShadow: 'none' }}>
+                        <div className="medi-luxury-appreciated-box azc-inc-cabins-box">
                             {whatsIncluded.map((included, idx) => (
-                                <div key={idx} style={{ marginBottom: '30px' }}>
-                                    <h4 style={{ fontWeight: 'bold', marginBottom: '15px', color: '#1e293b', fontSize: '18px' }}>{included.category}</h4>
+                                <div key={idx} className="azc-inc-cabins-group">
+                                    <h4 className="azc-inc-cabins-subtitle">{included.category}</h4>
                                     <div className="medi-luxury-features-grid">
                                         {included.items.map((item, iIdx) => (
                                             <div key={iIdx} className="medi-luxury-feature">
@@ -820,7 +819,7 @@ function AzamaraCabinsGuide2026() {
             </section>
 
             {/* EXPERT INSIGHT */}
-            <section className="medi-expert-editorial-section">
+            <section className="medi-expert-editorial-section azc-expert-section">
                 <div className="medi-expert-editorial-container">
                     <div className="medi-expert-editorial-card">
 
