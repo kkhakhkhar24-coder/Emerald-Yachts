@@ -5,7 +5,7 @@ import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Greec
 import italyCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
 import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp'
 import spainCruise from '../../assets/AzamaraMediterraneanCruises/Angela Hughes luxury cruise expert.webp'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
+// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -541,7 +541,7 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4', // Taller, narrower aspect ratio for a smaller footprint
                             backgroundColor: '#f1f5f9'
                         }}>
-                            <img
+                            {/* <img
                                 src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800"
                                 alt="Luxury Suite Placeholder"
                                 style={{
@@ -550,7 +550,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            />
+                            /> */}
                         </div>
 
                         {/* Subtle Brand Accent behind image */}
@@ -858,7 +858,7 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4',
                             backgroundColor: '#f1f5f9'
                         }}>
-                            <img
+                            {/* <img
                                 src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800"
                                 alt="Fine Dining Experience"
                                 style={{
@@ -867,7 +867,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            />
+                            /> */}
                         </div>
 
                         {/* Visual Accent behind image */}
@@ -917,7 +917,7 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4',
                             backgroundColor: '#f1f5f9'
                         }}>
-                            <img
+                            {/* <img
                                 src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800"
                                 alt="Mediterranean Coastline"
                                 style={{
@@ -926,7 +926,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            />
+                            /> */}
                         </div>
 
                         {/* Visual Accent behind image */}
@@ -1070,7 +1070,7 @@ function FirstTimeLuxuryTravelers() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                <img
+                                {/* <img
                                     src={
                                         mediSelectedItinerary === 0
                                             ? "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80&w=800"
@@ -1078,7 +1078,7 @@ function FirstTimeLuxuryTravelers() {
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                />
+                                /> */}
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">RECOMMENDED VOYAGE</span>
                             </div>
@@ -1272,7 +1272,7 @@ function FirstTimeLuxuryTravelers() {
 
                     <div className="medi-luxury-visual-wrapper">
                         {/* Ensure you use an Explora Journeys image variable here if available */}
-                        <img src={luxurySuite} alt="Explora Journeys luxury suite" className="medi-luxury-main-image" />
+                        {/* <img src={luxurySuite} alt="Explora Journeys luxury suite" className="medi-luxury-main-image" /> */}
                     </div>
                 </div>
             </section>
