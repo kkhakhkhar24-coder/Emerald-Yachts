@@ -33,7 +33,7 @@ import hero3 from '../../assets/AzamaraCruisesGuide/Cultural_Integration.webp'
 
 function AzamaraCabinsGuide2026() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = [hero1,hero2,hero3]
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -572,18 +572,18 @@ function AzamaraCabinsGuide2026() {
                         {/* Right Side: Showcase Content View */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                { <img
+                                {<img
                                     src={
-                                        mediSelectedItinerary === 0 ? room1:
+                                        mediSelectedItinerary === 0 ? room1 :
                                             mediSelectedItinerary === 1 ? room2 :
-                                            mediSelectedItinerary === 2 ? room3 :
-                                            mediSelectedItinerary === 3 ? room4 :
-                                            mediSelectedItinerary === 4 ? room5 :
-                                                croatiaCoast // Placeholder, can be mapped to specific cabin images
+                                                mediSelectedItinerary === 2 ? room3 :
+                                                    mediSelectedItinerary === 3 ? room4 :
+                                                        mediSelectedItinerary === 4 ? room5 :
+                                                            croatiaCoast // Placeholder, can be mapped to specific cabin images
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> }
+                                />}
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">EXPERT SELECTION</span>
                             </div>
@@ -719,7 +719,7 @@ function AzamaraCabinsGuide2026() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        { <img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" /> }
+                        {<img src={luxurySuite} alt="Azamara luxury suite" className="medi-luxury-main-image" />}
                     </div>
                 </div>
             </section>
@@ -1037,6 +1037,40 @@ function AzamaraCabinsGuide2026() {
                     </div>
                 </div>
             </section>
+
+
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/zUXLHzdlNJc"
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+
 
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">

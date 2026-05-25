@@ -1362,6 +1362,41 @@ function MediterraneanCruises() {
                 </div>
             </section>
 
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Jt-O2KW5w2M"
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">
                 <div className="medi-faq-container">

@@ -6824,3 +6824,291 @@
         font-size: 14px;
     }
 }
+
+/* ============================================================
+   PAGE: BestCabinsOnAzamara
+   SECTION: Are Azamara Veranda Cabins Worth It?
+   ============================================================ */
+
+/* --- Section wrapper & background --- */
+.medi-veranda-worth-section {
+    position: relative;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 50%, #e7f3f5 100%);
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.medi-veranda-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+    top: -200px;
+    right: -150px;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.medi-veranda-worth-section .medi-excel-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Section header overrides --- */
+.medi-veranda-worth-section .medi-itinerary-eyebrow {
+    color: var(--medi-navy);
+    background: rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+}
+
+.medi-veranda-worth-section .medi-excel-separator {
+    background: linear-gradient(90deg, transparent 0%, var(--medi-navy) 50%, transparent 100%);
+}
+
+/* --- Subtitle "For most travelers, yes." --- */
+.medi-veranda-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 16px 0 8px;
+    line-height: 1.3;
+}
+
+/* --- Two-column grid layout for this section --- */
+.bco-veranda-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+/* --- Card styling --- */
+.bco-veranda-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Card heading with inline icon --- */
+.bco-veranda-card-heading {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+/* --- List spacing tweak --- */
+.bco-veranda-list {
+    margin-top: 0;
+}
+
+/* --- Description paragraph in scenic itinerary card --- */
+.bco-veranda-desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* --- Bottom callout box --- */
+.medi-veranda-worth-callout {
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-left: 4px solid var(--medi-navy);
+    border-radius: 0 16px 16px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 32px;
+    transition: all 0.3s ease;
+}
+
+.medi-veranda-worth-callout:hover {
+    background: rgba(39, 68, 114, 0.07);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateX(4px);
+}
+
+.medi-veranda-worth-callout-icon-box {
+    background: rgba(39, 68, 114, 0.08);
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.medi-veranda-worth-callout:hover .medi-veranda-worth-callout-icon-box {
+    background: var(--medi-navy);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.medi-veranda-worth-callout-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #334155;
+}
+
+/* ============================================================
+   PAGE: BestCabinsOnAzamara
+   SECTION: Are Azamara Veranda Cabins Worth It? — RESPONSIVE
+   ============================================================ */
+
+/* --- Tablet (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+    .medi-veranda-worth-section {
+        padding: 80px 20px;
+    }
+
+    .bco-veranda-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .medi-veranda-subtitle {
+        font-size: 1.35rem;
+    }
+
+    .medi-veranda-worth-section .medi-excel-card {
+        padding: 40px 32px !important;
+    }
+}
+
+/* --- Mobile landscape / small tablet (max-width: 768px) --- */
+@media (max-width: 768px) {
+    .medi-veranda-worth-section {
+        padding: 70px 16px;
+    }
+
+    .medi-veranda-glow {
+        width: 400px;
+        height: 400px;
+        top: -150px;
+        right: -100px;
+    }
+
+    .medi-veranda-worth-section .medi-excel-main-title {
+        font-size: 28px !important;
+    }
+
+    .medi-veranda-subtitle {
+        font-size: 1.2rem;
+        margin: 12px 0 6px;
+    }
+
+    .medi-veranda-worth-section .medi-excel-card {
+        padding: 30px 24px !important;
+        border-radius: 16px !important;
+    }
+
+    .bco-veranda-card-heading {
+        font-size: 13px !important;
+        gap: 10px !important;
+        padding-bottom: 18px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .bco-veranda-desc {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+
+    .medi-veranda-worth-callout {
+        padding: 20px 24px;
+        gap: 18px;
+        border-radius: 0 14px 14px 0;
+    }
+
+    .medi-veranda-worth-callout-text {
+        font-size: 16px;
+    }
+
+    .medi-veranda-worth-callout-icon-box {
+        padding: 10px;
+    }
+
+    .medi-veranda-worth-callout-icon-box svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* --- Mobile portrait (max-width: 600px) --- */
+@media (max-width: 600px) {
+    .medi-veranda-worth-section {
+        padding: 56px 14px;
+    }
+
+    .medi-veranda-worth-section .medi-excel-main-title {
+        font-size: 24px !important;
+    }
+
+    .medi-veranda-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .medi-veranda-worth-section .medi-excel-lead-paragraph {
+        font-size: 15px !important;
+    }
+
+    .medi-veranda-worth-callout {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+        padding: 20px;
+        border-left: none;
+        border-top: 4px solid var(--medi-navy);
+        border-radius: 0 0 14px 14px;
+    }
+}
+
+/* --- Small mobile (max-width: 480px) --- */
+@media (max-width: 480px) {
+    .medi-veranda-worth-section {
+        padding: 48px 12px;
+    }
+
+    .medi-veranda-glow {
+        display: none;
+    }
+
+    .medi-veranda-worth-section .medi-excel-main-title {
+        font-size: 22px !important;
+    }
+
+    .medi-veranda-subtitle {
+        font-size: 1rem;
+    }
+
+    .medi-veranda-worth-section .medi-excel-card {
+        padding: 24px 18px !important;
+        border-radius: 14px !important;
+    }
+
+    .bco-veranda-card-heading {
+        font-size: 12px !important;
+        gap: 8px !important;
+        padding-bottom: 14px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .medi-veranda-worth-callout-text {
+        font-size: 14px;
+    }
+
+    .medi-veranda-worth-callout-icon-box svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* --- PAGE: BestCabinsOnAzamara overrides --- */
+.bco-mistake-desc {
+    color: #ffffff !important;
+}

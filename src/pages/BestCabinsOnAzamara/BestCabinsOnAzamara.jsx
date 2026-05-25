@@ -20,13 +20,14 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.jpg'
-// import hero2 from '../../assets/AzamaraMediterraneanCruises/Luxury Mediterranean small ship cruise.jpg'
-// import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Mediterranean cruise ship.jpg'
+import hero1 from '../../assets/BestCabinsOnAzamara/Azamara-night.webp'
+import hero2 from '../../assets/BestCabinsOnAzamara/AzamaraNorway.webp'
+import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Italy Luxury cruise.webp'
+import cabinimg from "../../assets/AzamaraAlaskaCruises/Hero1.webp"
 
 function BestCabinsOnAzamara() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -512,7 +513,7 @@ function BestCabinsOnAzamara() {
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
                                 {/* Placeholder for cabin image - keeping overlay/badge design */}
-                                <div className="medi-itinerary-showcase-img-overlay"></div>
+                                <div className="medi-itinerary-showcase-img-overlay"><img src={cabinimg} alt="" /></div>
                                 <span className="medi-itinerary-showcase-badge">ULTIMATE LUXURY</span>
                             </div>
 
@@ -692,7 +693,6 @@ function BestCabinsOnAzamara() {
                 <div className="medi-veranda-glow"></div>
                 <div className="medi-excel-container">
                     <div className="medi-excel-header-block">
-                        <span className="medi-itinerary-eyebrow">CABIN UPGRADE GUIDE</span>
                         <h2 className="medi-excel-main-title">Are Azamara Veranda Cabins Worth It?</h2>
                         <div className="medi-excel-separator"></div>
                         <h3 className="medi-veranda-subtitle">
@@ -1058,7 +1058,7 @@ function BestCabinsOnAzamara() {
                         </span>
 
                         {/* MAIN TITLE: Deep Navy Blue */}
-                        <h2 className="medi-mistakes-slider-title" style={{ color: '#0f1c2e', marginBottom: '15px', fontWeight: '800' }}>
+                        <h2 className="medi-mistakes-slider-title" style={{ color: 'var(--medi-navy)', marginBottom: '15px', fontWeight: '500' }}>
                             Common Mistakes Travelers Make When Choosing Azamara Cabins
                         </h2>
 
@@ -1099,7 +1099,7 @@ function BestCabinsOnAzamara() {
                                         </div>
 
                                         <div className="medi-mistake-slide-body" style={{ marginTop: '20px' }}>
-                                            <p className="medi-mistake-card-description" style={{ color: '#ffffff', opacity: 0.9, lineHeight: '1.7', fontSize: '1.05rem' }}>
+                                            <p className="medi-mistake-card-description bco-mistake-desc" style={{ color: '#ffffff', opacity: 0.9, lineHeight: '1.7', fontSize: '1.05rem' }}>
                                                 {mistake.desc}
                                             </p>
                                         </div>
@@ -1329,6 +1329,40 @@ function BestCabinsOnAzamara() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/rv_Kv5ExJVc"
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+
+
 
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">
