@@ -340,6 +340,15 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Explora FAQ Before Booking</NavLink>
+
+              <NavLink
+                to="/explora-journeys-vs-silversea"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Journeys Vs Silversea</NavLink>
+
+
             </div>
           </div>
         </div>
@@ -690,6 +699,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Explora FAQ Before Booking</NavLink>
+
+            <NavLink
+              to="/explora-journeys-vs-silversea"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Journeys Vs Silversea</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
