@@ -52,6 +52,7 @@ import AzamaraCabinsGuide2026 from "./pages/AzamaraCabinsGuide2026/AzamaraCabins
 import BestCabinsOnAzamara from "./pages/BestCabinsOnAzamara/BestCabinsOnAzamara";
 import FirstTimeLuxuryTravelers from "./pages/FirstTimeLuxuryTravelers/FirstTimeLuxuryTravelers";
 import BestSuitesExploraJourneys from "./pages/BestSuitesExploraJourneys/BestSuitesExploraJourneys";
+import BookExplora from "./pages/BookExplora/BookExplora";
 
 
 function App() {
@@ -252,6 +253,11 @@ function App() {
           <Route
             path="/best-suites-on-explora-journeys"
             element={<BestSuitesExploraJourneys />}
+          />
+
+          <Route
+            path="/should-you-book-explora-through-a-travel-advisor"
+            element={<BookExplora />}
           />
 
         </Routes>
