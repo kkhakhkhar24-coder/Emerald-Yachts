@@ -327,13 +327,14 @@ const Navbar = () => {
               >
                 Best Suites on Explora Journeys</NavLink>
 
-                <NavLink
+              <NavLink
                 to="/should-you-book-explora-through-a-travel-advisor"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
-              ></NavLink>
+              >
+                Should You Book Explora Through a Travel Advisor?</NavLink>
 
-                <NavLink
+              <NavLink
                 to="/explora-faq-before-booking"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -676,19 +677,19 @@ const Navbar = () => {
             >
               Best Suites on Explora Journeys</NavLink>
 
-               <NavLink
-                to="/should-you-book-explora-through-a-travel-advisor"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Should You Book Explora Through a Travel Advisor?</NavLink>
+            <NavLink
+              to="/should-you-book-explora-through-a-travel-advisor"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Should You Book Explora Through a Travel Advisor?</NavLink>
 
-                 <NavLink
-                to="/explora-faq-before-booking"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora FAQ Before Booking</NavLink>
+            <NavLink
+              to="/explora-faq-before-booking"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora FAQ Before Booking</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
