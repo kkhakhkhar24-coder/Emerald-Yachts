@@ -331,8 +331,14 @@ const Navbar = () => {
                 to="/should-you-book-explora-through-a-travel-advisor"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
+              ></NavLink>
+
+                <NavLink
+                to="/explora-faq-before-booking"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
               >
-                Should You Book Explora Through a Travel Advisor?</NavLink>
+                Explora FAQ Before Booking</NavLink>
             </div>
           </div>
         </div>
@@ -676,6 +682,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Should You Book Explora Through a Travel Advisor?</NavLink>
+
+                 <NavLink
+                to="/explora-faq-before-booking"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora FAQ Before Booking</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
