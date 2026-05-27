@@ -1,11 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.webp'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Angela Hughes luxury cruise expert.webp'
-import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
+import Silversea_Journeys from '../../assets/ExploraJourneysVsSilversea/Silversea_Journeys.webp'
+import Explora_Journeys from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
+import Suites_Comparison from '../../assets/ExploraJourneysVsSilversea/Suites_Comparison.webp'
+import Explora_Atmosphere from '../../assets/ExploraJourneysVsSilversea/Explora_Atmosphere.jpeg'
+import Silversea_Atmosphere from '../../assets/ExploraJourneysVsSilversea/Silversea_Atmosphere.webp'
 
 import {
   Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -24,9 +24,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/hero1.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/hero2.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/hero3.jpg'
+import hero1 from '../../assets/ExploraJourneysVsSilversea/Hero_1.webp'
+import hero2 from '../../assets/ExploraJourneysVsSilversea/Hero_2.webp'
+import hero3 from '../../assets/ExploraJourneysVsSilversea/Hero_3.webp'
 
 function ExploraJourneysVsSilversea() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -168,9 +168,9 @@ function ExploraJourneysVsSilversea() {
       },
       {
         "@type": "WebPage",
-        "name": "Azamara Mediterranean Cruises",
-        "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-        "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
+        "name": "Explora Journeys vs Silversea",
+        "url": "https://www.tripsandships.com/explora-journeys-vs-silversea",
+        "description": "Expert comparison guide between Explora Journeys and Silversea luxury cruises."
       },
       {
         "@type": "BreadcrumbList",
@@ -184,14 +184,14 @@ function ExploraJourneysVsSilversea() {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Mediterranean Cruises",
-            "item": "https://www.tripsandships.com/mediterranean-cruises"
+            "name": "Luxury Cruises",
+            "item": "https://www.tripsandships.com/luxury-cruises"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Azamara Mediterranean Cruises",
-            "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
+            "name": "Explora Journeys vs Silversea",
+            "item": "https://www.tripsandships.com/explora-journeys-vs-silversea"
           }
         ]
       },
@@ -200,26 +200,66 @@ function ExploraJourneysVsSilversea() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Are Azamara Mediterranean cruises worth it?",
+            "name": "Is Explora better than Silversea?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service."
+              "text": "Neither is universally better. Explora emphasizes contemporary lifestyle luxury, while Silversea focuses more on traditional ultra-luxury service and expedition travel."
             }
           },
           {
             "@type": "Question",
-            "name": "What makes Azamara different in the Mediterranean?",
+            "name": "Which is more luxurious: Explora or Silversea?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports."
+              "text": "Both are considered ultra-luxury cruise lines, but their luxury style differs significantly."
             }
           },
           {
             "@type": "Question",
-            "name": "Is Azamara considered luxury?",
+            "name": "What is the difference between Explora and Silversea?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+              "text": "Explora focuses on modern wellness-oriented luxury and spacious suites, while Silversea emphasizes butler service, expedition cruising, and traditional luxury hospitality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cruise line has better suites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explora generally offers larger and more contemporary suites, while Silversea is known for personalized butler service and traditional luxury accommodations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Silversea more formal than Explora?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Silversea typically feels more traditional and formal compared with Explora’s relaxed luxury atmosphere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cruise line is better for first-time luxury cruisers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many first-time luxury travelers prefer Explora because of its relaxed atmosphere, modern design, and approachable luxury experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Explora and Silversea all inclusive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both include many luxury amenities such as dining, beverages, Wi-Fi, and gratuities, although specific inclusions vary by itinerary and suite category."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cruise line has better itineraries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explora excels in lifestyle-focused luxury itineraries, while Silversea offers broader global exploration and expedition opportunities."
             }
           }
         ]
@@ -231,20 +271,16 @@ function ExploraJourneysVsSilversea() {
   return (
     <>
       <Helmet>
-        <title>
-          Azamara Mediterranean Cruises 2026 | Luxury Small Ship Mediterranean Cruise Guide
-
-        </title>
+        <title>Explora Journeys vs Silversea | Which Luxury Cruise Line Is Better in 2026?</title>
         <meta
           name="title"
-          content="Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights
-"
+          content="Explora Journeys vs Silversea | Luxury Cruise Comparison Guide 2026"
         />
         <meta
           name="description"
-          content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026."
+          content="Compare Explora Journeys vs Silversea in this expert luxury cruise guide for 2026. Discover differences in suites, dining, service, itineraries, luxury level, pricing, atmosphere, inclusions, and which cruise line best fits your travel style with insights from Angela Hughes of Trips & Ships Luxury Travel."
         />
-        <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+        <meta name="keywords" content="Explora Journeys vs Silversea, Explora vs Silversea, Silversea luxury cruise review, Explora Journeys review, Best luxury cruise line, Ultra luxury cruise comparison, Silversea vs Explora, Luxury small ship cruises, Explora cruise experience, Silversea cruise experience, Boutique luxury cruises, Is Explora better than Silversea, Explora Journeys vs Silversea cruises, Which luxury cruise line is best, Explora vs Silversea suites, Silversea vs Explora dining, Explora Journeys luxury cruise review, Silversea cruise reviews 2026, Best ultra luxury cruise line, Explora vs Silversea for couples, Which cruise line has better suites, Luxury cruise advisor, Ultra luxury cruise consultant, Luxury travel expert, Small ship cruise specialist, Luxury cruise planning services, Luxury travel agency, Boutique cruise expert" />
         <script type="application/ld+json">
           {JSON.stringify(mediSchemaData)}
         </script>
@@ -377,14 +413,14 @@ function ExploraJourneysVsSilversea() {
 
       {/* OVERVIEW: EXPLORA VS SILVERSEA SECTION */}
       <section style={{
-        padding: '90px 20px',
+        padding: '100px 20px',
         backgroundColor: '#ffffff',
         fontFamily: 'sans-serif'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
           {/* Header Block */}
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <span style={{
               color: '#3b82f6',
               fontWeight: '700',
@@ -394,10 +430,10 @@ function ExploraJourneysVsSilversea() {
               display: 'block',
               marginBottom: '10px'
             }}>
-              Comparison Guide
+              The Brand Profiles
             </span>
             <h2 style={{
-              fontSize: 'clamp(28px, 5vw, 42px)',
+              fontSize: 'clamp(30px, 5vw, 42px)',
               color: '#0f1c2e',
               fontWeight: '700',
               marginBottom: '20px',
@@ -406,14 +442,14 @@ function ExploraJourneysVsSilversea() {
             }}>
               Overview: Explora Journeys vs Silversea
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Comparison Grid */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '30px',
+            gap: '40px',
             justifyContent: 'center'
           }}>
 
@@ -422,55 +458,68 @@ function ExploraJourneysVsSilversea() {
               flex: '1 1 500px',
               minWidth: '320px',
               backgroundColor: '#f8fafc',
-              padding: '50px 40px',
               borderRadius: '30px',
               border: '1px solid #e2e8f0',
               display: 'flex',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              overflow: 'hidden', // Ensures image follows border radius
+              boxShadow: '0 20px 40px rgba(15, 28, 46, 0.04)'
             }}>
-              <div style={{ marginBottom: '30px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
-                    <Sparkles size={24} />
+              {/* Added Image Header */}
+              <div style={{ width: '100%', height: '280px', overflow: 'hidden', position: 'relative' }}>
+                <img
+                  src={Explora_Journeys}
+                  alt="Explora Journeys Sleek Modern Ship"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, transparent 50%)' }}></div>
+              </div>
+
+              <div style={{ padding: '40px' }}>
+                <div style={{ marginBottom: '30px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
+                      <Sparkles size={22} />
+                    </div>
+                    <h3 style={{ fontSize: '26px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Explora Journeys</h3>
                   </div>
-                  <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Explora Journeys</h3>
+                  <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7' }}>
+                    A newer ultra-luxury lifestyle cruise brand created by the MSC Group, redefining luxury with a modern, unhurried approach.
+                  </p>
                 </div>
-                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.6' }}>
-                  Explora Journeys is a newer ultra-luxury lifestyle cruise brand created by the MSC Group.
-                </p>
-              </div>
 
-              <div style={{ flex: 1 }}>
-                <span style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '20px' }}>The Brand Emphasizes:</span>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {[
-                    { text: "Contemporary European luxury", icon: <Globe size={18} /> },
-                    { text: "Wellness-focused travel", icon: <Heart size={18} /> },
-                    { text: "Spacious suites", icon: <Maximize size={18} /> },
-                    { text: "Relaxed sophistication", icon: <Moon size={18} /> },
-                    { text: "Lifestyle-oriented cruising", icon: <Compass size={18} /> },
-                    { text: "Modern ship design", icon: <Ship size={18} /> }
-                  ].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '16px', color: '#334155' }}>
-                      <div style={{ color: '#3b82f6', display: 'flex' }}>{item.icon}</div>
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '20px' }}>The Brand Emphasizes:</span>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      { text: "Contemporary European luxury", icon: <Globe size={18} /> },
+                      { text: "Wellness-focused travel", icon: <Heart size={18} /> },
+                      { text: "Spacious suites", icon: <Maximize size={18} /> },
+                      { text: "Relaxed sophistication", icon: <Moon size={18} /> },
+                      { text: "Lifestyle-oriented cruising", icon: <Compass size={18} /> },
+                      { text: "Modern ship design", icon: <Ship size={18} /> }
+                    ].map((item, i) => (
+                      <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '16px', color: '#334155', fontWeight: '500' }}>
+                        <div style={{ color: '#3b82f6', display: 'flex' }}>{item.icon}</div>
+                        {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              {/* Quote Callout */}
-              <div style={{
-                marginTop: '40px',
-                padding: '25px',
-                backgroundColor: '#0f1c2e',
-                borderRadius: '20px',
-                textAlign: 'center'
-              }}>
-                <span style={{ fontSize: '12px', fontWeight: '700', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '8px' }}>Traveler Description</span>
-                <p style={{ fontSize: '18px', color: '#ffffff', margin: 0, fontFamily: 'serif', fontWeight: '500' }}>
-                  “A luxury boutique hotel at sea.”
-                </p>
+                {/* Quote Callout */}
+                <div style={{
+                  marginTop: '40px',
+                  padding: '25px',
+                  backgroundColor: '#0f1c2e',
+                  borderRadius: '20px',
+                  textAlign: 'center',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+                }}>
+                  <p style={{ fontSize: '19px', color: '#ffffff', margin: 0, fontFamily: 'serif', fontStyle: 'italic', fontWeight: '500' }}>
+                    “A luxury boutique hotel at sea.”
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -479,59 +528,161 @@ function ExploraJourneysVsSilversea() {
               flex: '1 1 500px',
               minWidth: '320px',
               backgroundColor: '#ffffff',
-              padding: '50px 40px',
+              padding: '0', // Removing padding here to let image go to edges
               borderRadius: '30px',
               border: '1px solid #e2e8f0',
-              boxShadow: '0 20px 40px rgba(15, 28, 46, 0.04)',
+              boxShadow: '0 25px 50px -12px rgba(15, 28, 46, 0.08)',
               display: 'flex',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              overflow: 'hidden'
             }}>
-              <div style={{ marginBottom: '30px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(15, 28, 46, 0.05)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f1c2e' }}>
-                    <Award size={24} />
+              {/* Added Image Header */}
+              <div style={{ width: '100%', height: '280px', overflow: 'hidden', position: 'relative' }}>
+                <img
+                  src={Silversea_Journeys}
+                  alt="Silversea Classic Luxury Ship"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, transparent 50%)' }}></div>
+              </div>
+
+              <div style={{ padding: '40px' }}>
+                <div style={{ marginBottom: '30px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(15, 28, 46, 0.05)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f1c2e' }}>
+                      <Award size={22} />
+                    </div>
+                    <h3 style={{ fontSize: '26px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Silversea</h3>
                   </div>
-                  <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Silversea</h3>
+                  <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7' }}>
+                    One of the most established names in ultra-luxury cruising, renowned for its personalized butler service and global reach.
+                  </p>
                 </div>
-                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.6' }}>
-                  Silversea is one of the most established names in ultra-luxury cruising.
-                </p>
-              </div>
 
-              <div style={{ flex: 1 }}>
-                <span style={{ fontSize: '12px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '20px' }}>The Brand Is Known For:</span>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {[
-                    { text: "Personalized service", icon: <Users size={18} /> },
-                    { text: "Butler service", icon: <Crown size={18} /> },
-                    { text: "Expedition cruising", icon: <Compass size={18} /> },
-                    { text: "Global itineraries", icon: <Anchor size={18} /> },
-                    { text: "Traditional ultra-luxury structure", icon: <Ship size={18} /> },
-                    { text: "Destination depth", icon: <MapPin size={18} /> }
-                  ].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '16px', color: '#334155' }}>
-                      <div style={{ color: '#0f1c2e', display: 'flex' }}>{item.icon}</div>
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '20px' }}>The Brand Is Known For:</span>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      { text: "Personalized butler service", icon: <Users size={18} /> },
+                      { text: "Classic fine dining", icon: <Utensils size={18} /> },
+                      { text: "Expedition cruising expertise", icon: <Compass size={18} /> },
+                      { text: "Global destination depth", icon: <MapPin size={18} /> },
+                      { text: "Traditional ultra-luxury structure", icon: <Ship size={18} /> },
+                      { text: "Heritage of excellence", icon: <Crown size={18} /> }
+                    ].map((item, i) => (
+                      <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '16px', color: '#334155', fontWeight: '500' }}>
+                        <div style={{ color: '#0f1c2e', opacity: 0.6, display: 'flex' }}>{item.icon}</div>
+                        {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              {/* Conclusion Callout */}
-              <div style={{
-                marginTop: '40px',
-                padding: '25px',
-                backgroundColor: '#f1f5f9',
-                borderRadius: '20px',
-                borderLeft: '4px solid #0f1c2e'
-              }}>
-                <p style={{ fontSize: '15px', color: '#1e293b', margin: 0, lineHeight: '1.6', fontWeight: '500' }}>
-                  Silversea appeals strongly to experienced luxury travelers seeking refined and immersive travel experiences.
-                </p>
+                {/* Conclusion Callout */}
+                <div style={{
+                  marginTop: '40px',
+                  padding: '25px',
+                  backgroundColor: '#f1f5f9',
+                  borderRadius: '20px',
+                  borderLeft: '5px solid #0f1c2e'
+                }}>
+                  <p style={{ fontSize: '15px', color: '#1e293b', margin: 0, lineHeight: '1.6', fontWeight: '500' }}>
+                    Appealing strongly to experienced luxury travelers seeking refined, structured, and immersive travel experiences.
+                  </p>
+                </div>
               </div>
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* EXPLORA JOURNEYS BRAND VIDEO SECTION */}
+      <section style={{
+        padding: '100px 20px',
+        backgroundColor: '#0f1c2e', // Deep Navy Background
+        fontFamily: 'sans-serif',
+        textAlign: 'center',
+        overflow: 'hidden',
+        position: 'relative'
+      }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+          {/* FIXED: Horizontal Accent Line Above Text */}
+          <div style={{
+            width: '60px',
+            height: '3px',
+            backgroundColor: '#3b82f6', // Azure Blue accent
+            margin: '0 auto 25px auto',
+            borderRadius: '10px'
+          }}></div>
+
+          {/* Header Block */}
+          <div style={{ marginBottom: '50px' }}>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#ffffff', // High contrast white
+              fontWeight: '700',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.2'
+            }}>
+              The Making of a Beautiful Ship
+            </h2>
+            <p style={{
+              fontSize: 'clamp(16px, 2vw, 19px)',
+              color: '#cbd5e1', // Light slate blue for readability
+              maxWidth: '850px',
+              margin: '0 auto',
+              lineHeight: '1.7',
+              fontWeight: '400'
+            }}>
+              Go behind the scenes to discover the visionary design and European craftsmanship that define Explora Journeys. See how every detail is consciously curated to stir the soul and create the ultimate <span style={{ color: '#ffffff', fontWeight: '600' }}>"Ocean State of Mind."</span>
+            </p>
+          </div>
+
+          {/* Video Player Container */}
+          <div style={{
+            position: 'relative',
+            borderRadius: '30px',
+            overflow: 'hidden',
+            backgroundColor: '#000',
+            boxShadow: '0 40px 100px rgba(0,0,0,0.5)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            aspectRatio: '16/9'
+          }}>
+            {/* The Video Embed - Official Explora Journeys Design Video */}
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/qx_9Nt6kYpI"
+              title="Explora Journeys: The Making of a Beautiful Ship"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%'
+              }}
+            ></iframe>
+          </div>
+
+          {/* Bottom Label */}
+          <p style={{
+            marginTop: '40px',
+            fontSize: '13px',
+            color: '#3b82f6',
+            fontWeight: '700',
+            textTransform: 'uppercase',
+            letterSpacing: '2px',
+            opacity: 0.8
+          }}>
+            Explora Journeys: Design Sails the World
+          </p>
+
         </div>
       </section>
 
@@ -683,29 +834,29 @@ function ExploraJourneysVsSilversea() {
         </div>
       </section>
 
-      {/* SUITES COMPARISON - EXPLORA JOURNEYS HIGHLIGHT */}
+      {/* SUITES COMPARISON - EXPLORA JOURNEYS VISUAL HIGHLIGHT */}
       <section style={{
-        padding: '90px 20px',
+        padding: '100px 20px',
         backgroundColor: '#ffffff',
         fontFamily: 'sans-serif'
       }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
           {/* Header Block */}
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <span style={{
               color: '#3b82f6',
               fontWeight: '700',
               fontSize: '13px',
               textTransform: 'uppercase',
-              letterSpacing: '2px',
+              letterSpacing: '3px',
               display: 'block',
               marginBottom: '10px'
             }}>
               Accommodation Analysis
             </span>
             <h2 style={{
-              fontSize: 'clamp(28px, 5vw, 42px)',
+              fontSize: 'clamp(30px, 5vw, 42px)',
               color: '#0f1c2e',
               fontWeight: '700',
               marginBottom: '20px',
@@ -717,86 +868,116 @@ function ExploraJourneysVsSilversea() {
             <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
-          {/* Explora Suite Detail Card */}
+          {/* Main Comparison Card - Split Layout */}
           <div style={{
             backgroundColor: '#f8fafc',
-            borderRadius: '30px',
+            borderRadius: '40px',
             overflow: 'hidden',
             border: '1px solid #e2e8f0',
-            boxShadow: '0 20px 40px rgba(15, 28, 46, 0.05)'
+            boxShadow: '0 30px 60px rgba(15, 28, 46, 0.08)',
+            display: 'flex',
+            flexWrap: 'wrap', // Responsive stacking
+            alignItems: 'stretch'
           }}>
-            {/* Top Branding Bar */}
+
+            {/* LEFT SIDE: LARGE SUITE IMAGE */}
             <div style={{
-              backgroundColor: '#0f1c2e',
-              padding: '20px 40px',
-              color: '#ffffff',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '15px'
+              flex: '1 1 500px',
+              minHeight: '400px',
+              position: 'relative',
+              overflow: 'hidden'
             }}>
-              <Sparkles size={20} style={{ color: '#3b82f6' }} />
-              <span style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '0.5px' }}>Explora Journeys Suites</span>
+              <img
+                src={Suites_Comparison}
+                alt="Explora Journeys Luxury Suite"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+              {/* Floating Label on Image */}
+              <div style={{
+                position: 'absolute',
+                top: '30px',
+                left: '30px',
+                backgroundColor: 'rgba(15, 28, 46, 0.9)',
+                padding: '12px 20px',
+                borderRadius: '12px',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255,255,255,0.1)'
+              }}>
+                <span style={{ color: '#ffffff', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                  The Home at Sea
+                </span>
+              </div>
             </div>
 
-            <div style={{ padding: '50px 40px' }}>
-              <p style={{ fontSize: '18px', color: '#334155', fontWeight: '500', marginBottom: '35px', lineHeight: '1.6' }}>
-                Explora offers some of the largest standard accommodations in luxury cruising, prioritizing a <span style={{ color: '#0f1c2e', fontWeight: '700' }}>residential feeling</span> over traditional cruise layouts.
+            {/* RIGHT SIDE: CONTENT DETAILS */}
+            <div style={{ flex: '1 1 500px', padding: '60px 50px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
+                  <Sparkles size={22} />
+                </div>
+                <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Explora Journeys Suites</h3>
+              </div>
+
+              <p style={{ fontSize: '18px', color: '#475569', lineHeight: '1.7', marginBottom: '35px' }}>
+                Explora offers some of the largest standard accommodations in luxury cruising, prioritizing a <span style={{ color: '#0f1c2e', fontWeight: '700' }}>residential feeling</span> over traditional layouts.
               </p>
 
-              {/* Features Grid */}
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                gap: '30px',
-                marginBottom: '50px'
-              }}>
-                {/* Left Column: Features */}
-                <div>
-                  <h4 style={{ fontSize: '14px', fontWeight: '700', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>
-                    Features Include:
-                  </h4>
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                    {[
-                      "Oceanfront suites throughout",
-                      "Private terraces",
-                      "Heated bathroom floors",
-                      "Walk-in wardrobes",
-                      "Floor-to-ceiling windows",
-                      "Contemporary European interiors"
-                    ].map((item, i) => (
-                      <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px', fontSize: '16px', color: '#475569' }}>
-                        <div style={{ width: '6px', height: '6px', backgroundColor: '#3b82f6', borderRadius: '50%' }}></div>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Right Column: Emphasis */}
-                <div style={{ backgroundColor: '#ffffff', padding: '30px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>
-                  <h4 style={{ fontSize: '14px', fontWeight: '700', color: '#0f1c2e', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>
-                    Suite Emphasis:
-                  </h4>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                    {[
-                      { text: "Residential comfort", icon: <Home size={18} /> },
-                      { text: "Spacious layouts", icon: <Maximize size={18} /> },
-                      { text: "Outdoor living", icon: <Sun size={18} /> },
-                      { text: "Wellness design", icon: <Heart size={18} /> }
-                    ].map((point, i) => (
-                      <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        <div style={{ color: '#3b82f6' }}>{point.icon}</div>
-                        <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', lineHeight: '1.3' }}>{point.text}</span>
-                      </div>
-                    ))}
-                  </div>
+              {/* Features List */}
+              <div style={{ marginBottom: '40px' }}>
+                <h4 style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}>
+                  Standard Features Include:
+                </h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px' }}>
+                  {[
+                    "Oceanfront views",
+                    "Private terraces",
+                    "Heated bathroom floors",
+                    "Walk-in wardrobes",
+                    "Floor-to-ceiling windows",
+                    "European interiors"
+                  ].map((item, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} />
+                      <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 
-              {/* Closing Fact */}
-              <div style={{ textAlign: 'center', borderTop: '1px solid #e2e8f0', paddingTop: '30px' }}>
-                <p style={{ fontSize: '15px', color: '#64748b', margin: 0, fontStyle: 'italic' }}>
-                  *Explora Journeys was intentionally designed to provide a "Home at Sea" experience through architectural suite planning.
+              {/* SUITE EMPHASIS BOX - PROPER ONE ROW DESIGN */}
+              <div style={{
+                backgroundColor: '#ffffff',
+                padding: '25px',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.02)'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  gap: '20px'
+                }}>
+                  {[
+                    { text: "Residential comfort", icon: <Home size={18} /> },
+                    { text: "Spacious layouts", icon: <Maximize size={18} /> },
+                    { text: "Outdoor living", icon: <Sun size={18} /> },
+                    { text: "Wellness design", icon: <Heart size={18} /> }
+                  ].map((point, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <div style={{ color: '#3b82f6', display: 'flex' }}>{point.icon}</div>
+                      <span style={{ fontSize: '13px', fontWeight: '700', color: '#1e293b', whiteSpace: 'nowrap' }}>{point.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Footer Fact */}
+              <div style={{ marginTop: '35px', paddingTop: '25px', borderTop: '1px solid #e2e8f0' }}>
+                <p style={{ fontSize: '14px', color: '#94a3b8', margin: 0, fontStyle: 'italic', lineHeight: '1.5' }}>
+                  *Architecturally designed to provide an unhurried "Home at Sea" experience through thoughtful spatial planning.
                 </p>
               </div>
             </div>
@@ -1097,6 +1278,106 @@ function ExploraJourneysVsSilversea() {
         </div>
       </section>
 
+      {/* VIDEO SECTION 2: SILVERSEA HERITAGE EXPERIENCE */}
+      <section style={{
+        padding: '100px 20px',
+        backgroundColor: '#f1f5f9', // Soft Luxury Slate Background
+        fontFamily: 'sans-serif',
+        overflow: 'hidden'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            gap: '60px',
+            justifyContent: 'center'
+          }}>
+
+            {/* LEFT SIDE: CONTENT */}
+            <div style={{ flex: '1 1 500px', minWidth: '320px' }}>
+              {/* Horizontal Accent Line */}
+              <div style={{
+                width: '50px',
+                height: '3px',
+                backgroundColor: '#3b82f6',
+                marginBottom: '25px',
+                borderRadius: '10px'
+              }}></div>
+
+              <span style={{
+                color: '#3b82f6',
+                fontWeight: '700',
+                fontSize: '13px',
+                textTransform: 'uppercase',
+                letterSpacing: '2px',
+                display: 'block',
+                marginBottom: '15px'
+              }}>
+                Heritage Excellence
+              </span>
+
+              <h2 style={{
+                fontSize: 'clamp(28px, 4vw, 40px)',
+                color: '#0f1c2e',
+                fontWeight: '700',
+                lineHeight: '1.2',
+                marginBottom: '25px',
+                letterSpacing: '-0.02em'
+              }}>
+                The Art of Silversea: <br /> Defining Ultra-Luxury
+              </h2>
+
+              <p style={{ fontSize: '17px', color: '#475569', lineHeight: '1.8', maxWidth: '550px' }}>
+                Discover a world of timeless flavors, unrivaled comfort, and unmatched access.
+                From hidden harbors to coveted cities, see how Silversea elevates the journey
+                of a lifetime through personalized butler service and traditional refinement.
+              </p>
+            </div>
+
+            {/* RIGHT SIDE: VIDEO PLAYER */}
+            <div style={{ flex: '1 1 500px', minWidth: '320px', position: 'relative' }}>
+              {/* Decorative background element */}
+              <div style={{
+                position: 'absolute',
+                top: '-20px',
+                right: '-20px',
+                width: '100px',
+                height: '100px',
+                borderTop: '4px solid rgba(15, 28, 46, 0.1)',
+                borderRight: '4px solid rgba(15, 28, 46, 0.1)',
+                borderRadius: '0 30px 0 0',
+                zIndex: 0
+              }}></div>
+
+              <div style={{
+                position: 'relative',
+                borderRadius: '30px',
+                overflow: 'hidden',
+                boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.25)',
+                aspectRatio: '16/9',
+                backgroundColor: '#000',
+                border: '1px solid #ffffff',
+                zIndex: 1
+              }}>
+                {/* The Video Embed - Updated with Silversea Brand Video */}
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/24iVCAq-lq8"
+                  title="Silversea: To Finding More"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', top: 0, left: 0 }}
+                ></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* DINING COMPARISON SECTION */}
       <section style={{
         padding: '90px 20px',
@@ -1371,29 +1652,29 @@ function ExploraJourneysVsSilversea() {
         </div>
       </section>
 
-      {/* ATMOSPHERE & ONBOARD EXPERIENCE SECTION */}
+      {/* ATMOSPHERE & ONBOARD EXPERIENCE SECTION - REFINED WITH IMAGERY */}
       <section style={{
-        padding: '90px 20px',
-        backgroundColor: '#e6edf7',
+        padding: '100px 20px',
+        backgroundColor: '#e6edf7', // Original soft blue background
         fontFamily: 'sans-serif'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
           {/* Header Block */}
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <span style={{
               color: '#3b82f6',
               fontWeight: '700',
               fontSize: '13px',
               textTransform: 'uppercase',
-              letterSpacing: '2px',
+              letterSpacing: '3px',
               display: 'block',
               marginBottom: '10px'
             }}>
               The Onboard DNA
             </span>
             <h2 style={{
-              fontSize: 'clamp(28px, 5vw, 42px)',
+              fontSize: 'clamp(30px, 5vw, 42px)',
               color: '#0f1c2e',
               fontWeight: '700',
               marginBottom: '20px',
@@ -1419,46 +1700,56 @@ function ExploraJourneysVsSilversea() {
               minWidth: '320px',
               backgroundColor: '#0f1c2e',
               borderRadius: '30px',
-              padding: '50px 40px',
+              overflow: 'hidden', // Crops the top image
               color: '#ffffff',
-              boxShadow: '0 20px 40px rgba(15, 28, 46, 0.15)',
+              boxShadow: '0 25px 50px -12px rgba(15, 28, 46, 0.2)',
               display: 'flex',
               flexDirection: 'column',
               border: '1px solid rgba(255, 255, 255, 0.05)'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
-                <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(59, 130, 246, 0.2)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
-                  <Sparkles size={24} />
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0 }}>Explora Atmosphere</h3>
+              {/* Lifestyle Image Header */}
+              <div style={{ width: '100%', height: '220px', position: 'relative' }}>
+                <img
+                  src={Explora_Atmosphere}
+                  alt="Explora Wellness Atmosphere"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, #0f1c2e)' }}></div>
               </div>
 
-              {/* Sub-section: Explora Feels */}
-              <div style={{ marginBottom: '30px' }}>
-                <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Environment Feels:</span>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {["Contemporary", "Relaxed", "Wellness-focused", "Quietly luxurious", "Sophisticated but informal"].map((tag, i) => (
-                    <span key={i} style={{ padding: '6px 14px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '50px', fontSize: '14px', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.1)' }}>{tag}</span>
-                  ))}
+              <div style={{ padding: '30px 40px 40px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(59, 130, 246, 0.2)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
+                    <Sparkles size={22} />
+                  </div>
+                  <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0 }}>Explora Atmosphere</h3>
                 </div>
-              </div>
 
-              {/* Sub-section: Travelers Appreciate */}
-              <div style={{ flex: 1 }}>
-                <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>Travelers Appreciate:</span>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {[
-                    "No crowded spaces",
-                    "No loud announcements",
-                    "No overly formal environment",
-                    "Spacious social areas"
-                  ].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '16px', color: '#cbd5e1' }}>
-                      <CheckCircle size={16} style={{ color: '#3b82f6' }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <div style={{ marginBottom: '25px' }}>
+                  <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Environment Feels:</span>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {["Contemporary", "Relaxed", "Wellness-focused", "Quietly luxurious", "Sophisticated but informal"].map((tag, i) => (
+                      <span key={i} style={{ padding: '6px 12px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '50px', fontSize: '13px', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.1)', whiteSpace: 'nowrap' }}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>Travelers Appreciate:</span>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      "No crowded spaces",
+                      "No loud onboard announcements",
+                      "No overly formal environments",
+                      "Spacious social areas"
+                    ].map((item, i) => (
+                      <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '15px', color: '#cbd5e1' }}>
+                        <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -1468,45 +1759,56 @@ function ExploraJourneysVsSilversea() {
               minWidth: '320px',
               backgroundColor: '#f8fafc',
               borderRadius: '30px',
-              padding: '50px 40px',
+              overflow: 'hidden',
               color: '#0f1c2e',
               border: '1px solid #e2e8f0',
               display: 'flex',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              boxShadow: '0 20px 40px rgba(15, 28, 46, 0.05)'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
-                <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(15, 28, 46, 0.05)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f1c2e' }}>
-                  <Anchor size={24} />
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Silversea Atmosphere</h3>
+              {/* Lifestyle Image Header */}
+              <div style={{ width: '100%', height: '220px', position: 'relative' }}>
+                <img
+                  src={Silversea_Atmosphere}
+                  alt="Silversea Traditional Hospitality"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, #f8fafc)' }}></div>
               </div>
 
-              {/* Sub-section: Silversea Feels */}
-              <div style={{ marginBottom: '30px' }}>
-                <span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Environment Feels:</span>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {["Refined", "Traditional", "Personalized", "Destination-focused", "Intimate"].map((tag, i) => (
-                    <span key={i} style={{ padding: '6px 14px', backgroundColor: '#ffffff', borderRadius: '50px', fontSize: '14px', color: '#334155', border: '1px solid #e2e8f0' }}>{tag}</span>
-                  ))}
+              <div style={{ padding: '30px 40px 40px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                  <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(15, 28, 46, 0.05)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f1c2e' }}>
+                    <Anchor size={22} />
+                  </div>
+                  <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Silversea Atmosphere</h3>
                 </div>
-              </div>
 
-              {/* Sub-section: Experience Emphasis */}
-              <div style={{ flex: 1 }}>
-                <span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Experience Emphasizes:</span>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {[
-                    "Service excellence",
-                    "Cultural enrichment",
-                    "Expedition expertise",
-                    "Traditional luxury hospitality"
-                  ].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '16px', color: '#475569' }}>
-                      <CheckCircle size={16} style={{ color: '#0f1c2e', opacity: 0.2 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <div style={{ marginBottom: '25px' }}>
+                  <span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Environment Feels:</span>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {["Refined", "Traditional", "Personalized", "Destination-focused", "Intimate"].map((tag, i) => (
+                      <span key={i} style={{ padding: '6px 12px', backgroundColor: '#ffffff', borderRadius: '50px', fontSize: '13px', color: '#334155', border: '1px solid #e2e8f0', whiteSpace: 'nowrap' }}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginBottom: '15px' }}>The Experience Emphasizes:</span>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {[
+                      "Service excellence & Butler attention",
+                      "Cultural enrichment programming",
+                      "Expedition expertise & Remote reach",
+                      "Traditional luxury hospitality"
+                    ].map((item, i) => (
+                      <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '15px', color: '#475569' }}>
+                        <CheckCircle size={16} style={{ color: '#0f1c2e', opacity: 0.2, flexShrink: 0 }} />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
