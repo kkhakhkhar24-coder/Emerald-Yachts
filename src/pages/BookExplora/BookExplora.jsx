@@ -1787,228 +1787,228 @@ function BookExplora() {
 
 
             {/* ── FINAL CTA SECTION: THE EXPLORA EXPERIENCE ── */}
-<section className="medi-cta-main-section" style={{ 
-    padding: 'clamp(80px, 12vw, 150px) 0',
-    backgroundColor: '#0f1c2e', // Deep Luxury Navy
-    position: 'relative',
-    overflow: 'hidden',
-    fontFamily: 'sans-serif'
-}}>
-    {/* Subtle Background Pattern Layer */}
-    <div className="medi-cta-bg-pattern-layer" style={{ opacity: 0.3 }}></div>
-
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', zIndex: 2 }}>
-        
-        {/* 1. TOP MINI TAG */}
-        <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-            <div style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                padding: '10px 24px',
-                borderRadius: '100px',
-                background: 'rgba(59, 130, 246, 0.12)',
-                border: '1px solid rgba(59, 130, 246, 0.2)',
-                backdropFilter: 'blur(10px)',
-                color: '#3b82f6',
-                fontSize: '11px',
-                fontWeight: '800',
-                letterSpacing: '0.25em',
-                textTransform: 'uppercase'
+            <section className="medi-cta-main-section" style={{
+                padding: 'clamp(80px, 12vw, 150px) 0',
+                backgroundColor: '#0f1c2e', // Deep Luxury Navy
+                position: 'relative',
+                overflow: 'hidden',
+                fontFamily: 'sans-serif'
             }}>
-                The Ocean State of Mind
-            </div>
-        </div>
+                {/* Subtle Background Pattern Layer */}
+                <div className="medi-cta-bg-pattern-layer" style={{ opacity: 0.3 }}></div>
 
-        {/* 2. HERO TITLE */}
-        <h2 style={{
-            maxWidth: '900px',
-            margin: '0 auto 20px',
-            lineHeight: '1.1',
-            fontSize: 'clamp(34px, 7vw, 68px)',
-            fontWeight: '700',
-            letterSpacing: '-0.03em',
-            color: '#ffffff',
-            textAlign: 'center'
-        }}>
-            Ready to Experience <br style={{ display: 'none' }} /> Explora Journeys?
-        </h2>
+                <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', zIndex: 2 }}>
 
-        <div style={{
-            width: '60px',
-            height: '3px',
-            background: '#3b82f6',
-            margin: '0 auto 40px',
-            borderRadius: '10px'
-        }}></div>
-
-        <p style={{
-            maxWidth: '800px',
-            margin: '0 auto 60px',
-            fontSize: 'clamp(17px, 2.5vw, 20px)',
-            lineHeight: '1.8',
-            color: '#cbd5e1',
-            textAlign: 'center',
-            fontWeight: '400'
-        }}>
-            Luxury cruising is deeply personal. Discover a contemporary interpretation of life at sea designed for those who value space, wellness, and unhurried discovery.
-        </p>
-
-        {/* 3. EXPERIENCE CARDS GRID */}
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '20px',
-            marginBottom: '100px'
-        }}>
-            {[
-                'Contemporary elegance',
-                'Spacious suites',
-                'Wellness-focused travel',
-                'Boutique luxury',
-                'Personalized service',
-                'Relaxed sophistication',
-                'Destination immersion'
-            ].map((item, idx) => (
-                <div
-                    key={idx}
-                    style={{
-                        background: 'rgba(255,255,255,0.03)',
-                        border: '1px solid rgba(255,255,255,0.08)',
-                        borderRadius: idx % 2 === 0 ? '24px 8px 24px 8px' : '8px 24px 8px 24px',
-                        padding: '30px',
-                        minHeight: '130px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        transition: 'all 0.3s ease'
-                    }}
-                >
-                    <span style={{ fontSize: '13px', fontWeight: '800', color: '#3b82f6', opacity: 0.8 }}>0{idx + 1}</span>
-                    <h4 style={{ fontSize: '18px', color: '#ffffff', margin: 0, fontWeight: '600', lineHeight: '1.4' }}>{item}</h4>
-                </div>
-            ))}
-        </div>
-
-        {/* 4. FLOATING GLASS PANEL - EXPERT INSIGHT */}
-        <div style={{
-            position: 'relative',
-            padding: 'clamp(35px, 6vw, 65px)',
-            borderRadius: '40px',
-            background: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.1)',
-            backdropFilter: 'blur(20px)',
-            marginBottom: '60px',
-            overflow: 'hidden'
-        }}>
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 450px), 1fr))',
-                gap: '50px',
-                alignItems: 'center'
-            }}>
-                <div>
-                    <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.25', color: '#ffffff', marginBottom: '20px', fontWeight: '600' }}>
-                        A compelling introduction to modern luxury.
-                    </h3>
-                    <p style={{ margin: 0, lineHeight: '1.8', color: '#cbd5e1', fontSize: '16px' }}>
-                        With over four decades of expertise, Angela Hughes and her team help you navigate the sophisticated world of ultra-luxury cruising to find your perfect match.
-                    </p>
-                </div>
-
-                <div style={{ display: 'grid', gap: '12px' }}>
-                    {[
-                        'Strategic Suite Selection',
-                        'Itinerary & Lifestyle Matching',
-                        'Exclusive Onboard Amenities',
-                        'Seamless Global Coordination'
-                    ].map((item, idx) => (
-                        <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '14px 20px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.05)' }}>
-                            <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffffff' }}>
-                                <CheckCircle size={12} />
-                            </div>
-                            <span style={{ color: '#ffffff', fontSize: '15px', fontWeight: '500' }}>{item}</span>
+                    {/* 1. TOP MINI TAG */}
+                    <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+                        <div style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            padding: '10px 24px',
+                            borderRadius: '100px',
+                            background: 'rgba(59, 130, 246, 0.12)',
+                            border: '1px solid rgba(59, 130, 246, 0.2)',
+                            backdropFilter: 'blur(10px)',
+                            color: '#3b82f6',
+                            fontSize: '11px',
+                            fontWeight: '800',
+                            letterSpacing: '0.25em',
+                            textTransform: 'uppercase'
+                        }}>
+                            The Ocean State of Mind
                         </div>
-                    ))}
+                    </div>
+
+                    {/* 2. HERO TITLE */}
+                    <h2 style={{
+                        maxWidth: '900px',
+                        margin: '0 auto 20px',
+                        lineHeight: '1.1',
+                        fontSize: 'clamp(34px, 7vw, 68px)',
+                        fontWeight: '700',
+                        letterSpacing: '-0.03em',
+                        color: '#ffffff',
+                        textAlign: 'center'
+                    }}>
+                        Ready to Experience <br style={{ display: 'none' }} /> Explora Journeys?
+                    </h2>
+
+                    <div style={{
+                        width: '60px',
+                        height: '3px',
+                        background: '#3b82f6',
+                        margin: '0 auto 40px',
+                        borderRadius: '10px'
+                    }}></div>
+
+                    <p style={{
+                        maxWidth: '800px',
+                        margin: '0 auto 60px',
+                        fontSize: 'clamp(17px, 2.5vw, 20px)',
+                        lineHeight: '1.8',
+                        color: '#cbd5e1',
+                        textAlign: 'center',
+                        fontWeight: '400'
+                    }}>
+                        Luxury cruising is deeply personal. Discover a contemporary interpretation of life at sea designed for those who value space, wellness, and unhurried discovery.
+                    </p>
+
+                    {/* 3. EXPERIENCE CARDS GRID */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                        gap: '20px',
+                        marginBottom: '100px'
+                    }}>
+                        {[
+                            'Contemporary elegance',
+                            'Spacious suites',
+                            'Wellness-focused travel',
+                            'Boutique luxury',
+                            'Personalized service',
+                            'Relaxed sophistication',
+                            'Destination immersion'
+                        ].map((item, idx) => (
+                            <div
+                                key={idx}
+                                style={{
+                                    background: 'rgba(255,255,255,0.03)',
+                                    border: '1px solid rgba(255,255,255,0.08)',
+                                    borderRadius: idx % 2 === 0 ? '24px 8px 24px 8px' : '8px 24px 8px 24px',
+                                    padding: '30px',
+                                    minHeight: '130px',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'space-between',
+                                    transition: 'all 0.3s ease'
+                                }}
+                            >
+                                <span style={{ fontSize: '13px', fontWeight: '800', color: '#3b82f6', opacity: 0.8 }}>0{idx + 1}</span>
+                                <h4 style={{ fontSize: '18px', color: '#ffffff', margin: 0, fontWeight: '600', lineHeight: '1.4' }}>{item}</h4>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* 4. FLOATING GLASS PANEL - EXPERT INSIGHT */}
+                    <div style={{
+                        position: 'relative',
+                        padding: 'clamp(35px, 6vw, 65px)',
+                        borderRadius: '40px',
+                        background: 'rgba(255,255,255,0.04)',
+                        border: '1px solid rgba(255,255,255,0.1)',
+                        backdropFilter: 'blur(20px)',
+                        marginBottom: '60px',
+                        overflow: 'hidden'
+                    }}>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 450px), 1fr))',
+                            gap: '50px',
+                            alignItems: 'center'
+                        }}>
+                            <div>
+                                <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.25', color: '#ffffff', marginBottom: '20px', fontWeight: '600' }}>
+                                    A compelling introduction to modern luxury.
+                                </h3>
+                                <p style={{ margin: 0, lineHeight: '1.8', color: '#cbd5e1', fontSize: '16px' }}>
+                                    With over four decades of expertise, Angela Hughes and her team help you navigate the sophisticated world of ultra-luxury cruising to find your perfect match.
+                                </p>
+                            </div>
+
+                            <div style={{ display: 'grid', gap: '12px' }}>
+                                {[
+                                    'Strategic Suite Selection',
+                                    'Itinerary & Lifestyle Matching',
+                                    'Exclusive Onboard Amenities',
+                                    'Seamless Global Coordination'
+                                ].map((item, idx) => (
+                                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '14px 20px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                        <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffffff' }}>
+                                            <CheckCircle size={12} />
+                                        </div>
+                                        <span style={{ color: '#ffffff', fontSize: '15px', fontWeight: '500' }}>{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 5. REFINED ACTION CARD - THE DIRECT CTA */}
+                    <div style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        gap: '40px',
+                        background: '#ffffff',
+                        borderRadius: '40px',
+                        padding: 'clamp(35px, 6vw, 60px)',
+                        boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.2)',
+                        border: '1px solid #f1f5f9',
+                        marginBottom: '60px',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        textAlign: 'left'
+                    }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', background: 'linear-gradient(90deg, #3b82f6 0%, #0f1c2e 100%)' }}></div>
+
+                        <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
+                                <div style={{ width: '25px', height: '1px', backgroundColor: '#3b82f6' }}></div>
+                                <span style={{ fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#3b82f6' }}>Expert selection</span>
+                            </div>
+                            <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.2', color: '#0f1c2e', margin: 0, fontWeight: '700', letterSpacing: '-0.02em' }}>
+                                Expert guidance backed by real-world luxury travel expertise.
+                            </h3>
+                            <p style={{ fontSize: '16px', color: '#64748b', marginTop: '15px', lineHeight: '1.6' }}>
+                                Connect with our specialized advisors to ensure your luxury cruise is flawlessly curated.
+                            </p>
+                        </div>
+
+                        <div style={{ flex: '0 1 400px', width: '100%' }}>
+                            <button style={{
+                                width: '100%',
+                                padding: '22px 40px',
+                                fontSize: '14px',
+                                fontWeight: '800',
+                                textTransform: 'uppercase',
+                                letterSpacing: '2px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                borderRadius: '100px',
+                                background: '#0f1c2e',
+                                color: '#ffffff',
+                                border: 'none',
+                                cursor: 'pointer',
+                                boxShadow: '0 10px 25px rgba(15, 28, 46, 0.2)',
+                                transition: 'transform 0.3s ease'
+                            }}>
+                                <Phone size={18} style={{ marginRight: '12px', color: '#3b82f6' }} />
+                                Schedule Consultation
+                            </button>
+                            <p style={{ textAlign: 'center', fontSize: '11px', color: '#94a3b8', marginTop: '15px', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: '700' }}>
+                                Priority Access for 2026 Voyages
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 6. FOOTER RESOURCE PILLS */}
+                    <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px', opacity: 0.7 }}>
+                        {[
+                            'Official Brand Partner',
+                            'CLIA Accredited',
+                            'Travel Leaders Network',
+                            'Condé Nast Rated'
+                        ].map((item, idx) => (
+                            <div key={idx} style={{ padding: '10px 22px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff', fontSize: '12px', fontWeight: '500', letterSpacing: '0.05em' }}>
+                                {item}
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
-            </div>
-        </div>
-
-        {/* 5. REFINED ACTION CARD - THE DIRECT CTA */}
-        <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '40px',
-            background: '#ffffff',
-            borderRadius: '40px',
-            padding: 'clamp(35px, 6vw, 60px)',
-            boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.2)',
-            border: '1px solid #f1f5f9',
-            marginBottom: '60px',
-            position: 'relative',
-            overflow: 'hidden',
-            textAlign: 'left'
-        }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', background: 'linear-gradient(90deg, #3b82f6 0%, #0f1c2e 100%)' }}></div>
-
-            <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
-                    <div style={{ width: '25px', height: '1px', backgroundColor: '#3b82f6' }}></div>
-                    <span style={{ fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#3b82f6' }}>Expert selection</span>
-                </div>
-                <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.2', color: '#0f1c2e', margin: 0, fontWeight: '700', letterSpacing: '-0.02em' }}>
-                    Expert guidance backed by real-world luxury travel expertise.
-                </h3>
-                <p style={{ fontSize: '16px', color: '#64748b', marginTop: '15px', lineHeight: '1.6' }}>
-                    Connect with our specialized advisors to ensure your luxury cruise is flawlessly curated.
-                </p>
-            </div>
-
-            <div style={{ flex: '0 1 400px', width: '100%' }}>
-                <button style={{
-                    width: '100%',
-                    padding: '22px 40px',
-                    fontSize: '14px',
-                    fontWeight: '800',
-                    textTransform: 'uppercase',
-                    letterSpacing: '2px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    borderRadius: '100px',
-                    background: '#0f1c2e',
-                    color: '#ffffff',
-                    border: 'none',
-                    cursor: 'pointer',
-                    boxShadow: '0 10px 25px rgba(15, 28, 46, 0.2)',
-                    transition: 'transform 0.3s ease'
-                }}>
-                    <Phone size={18} style={{ marginRight: '12px', color: '#3b82f6' }} />
-                    Schedule Consultation
-                </button>
-                <p style={{ textAlign: 'center', fontSize: '11px', color: '#94a3b8', marginTop: '15px', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: '700' }}>
-                    Priority Access for 2026 Voyages
-                </p>
-            </div>
-        </div>
-
-        {/* 6. FOOTER RESOURCE PILLS */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px', opacity: 0.7 }}>
-            {[
-                'Official Brand Partner',
-                'CLIA Accredited',
-                'Travel Leaders Network',
-                'Condé Nast Rated'
-            ].map((item, idx) => (
-                <div key={idx} style={{ padding: '10px 22px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff', fontSize: '12px', fontWeight: '500', letterSpacing: '0.05em' }}>
-                    {item}
-                </div>
-            ))}
-        </div>
-
-    </div>
-</section>
+            </section>
 
 
         </>
