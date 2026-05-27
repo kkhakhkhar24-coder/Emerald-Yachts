@@ -1,11 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.webp'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Angela Hughes luxury cruise expert.webp'
-// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -26,9 +21,15 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect, Activity } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/hero1.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/hero2.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/hero3.jpg'
+import hero1 from '../../assets/BestSuitesExploraJourneys/explora-journeys-canada-new-england-fall-cruise.webp'
+import hero2 from '../../assets/BestSuitesExploraJourneys/explora-I-infinity-pool-ocean-wake-view.webp'
+import hero3 from '../../assets/BestSuitesExploraJourneys/EXPLORA III-IV CR 17.webp'
+import suiteImg0 from '../../assets/BestSuitesExploraJourneys/explora-journeys-ocean-grand-terrace-suite-balcony.webp'
+import suiteImg1 from '../../assets/BestSuitesExploraJourneys/xplora-III-outdoor-sky-lounge-ocean-deck.webp'
+import suiteImg2 from '../../assets/BestSuitesExploraJourneys/explora-journeys-deluxe-penthouse-suite-bedroom.webp'
+import suiteImg3 from '../../assets/BestSuitesExploraJourneys/explora-III-serenity-residence-luxury-oceanfront-suite.webp'
+import suiteImg4 from '../../assets/BestSuitesExploraJourneys/EXPLORA III-IV - The Conservatory Pool & Bar (1).webp'
+import residance from '../../assets/BestSuitesExploraJourneys/explora-journeys-retreat-residence-luxury-suite-living-room.webp'
 
 function BestSuitesExploraJourneys() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -196,9 +197,9 @@ function BestSuitesExploraJourneys() {
             },
             {
                 "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
+                "name": "Best Suites on Explora Journeys",
+                "url": "https://www.tripsandships.com/best-suites-on-explora-journeys",
+                "description": "Expert guide to the best suites and residences on Explora Journeys."
             },
             {
                 "@type": "BreadcrumbList",
@@ -212,14 +213,14 @@ function BestSuitesExploraJourneys() {
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/mediterranean-cruises"
+                        "name": "Luxury Cruises",
+                        "item": "https://www.tripsandships.com/luxury-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
+                        "name": "Best Suites on Explora Journeys",
+                        "item": "https://www.tripsandships.com/best-suites-on-explora-journeys"
                     }
                 ]
             },
@@ -228,26 +229,26 @@ function BestSuitesExploraJourneys() {
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Are Azamara Mediterranean cruises worth it?",
+                        "name": "What are the best suites on Explora Journeys?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service."
+                            "text": "Ocean Residences and Cocoon Residences are considered among the best suites on Explora Journeys because of their spacious layouts, luxury amenities, and personalized service."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "What makes Azamara different in the Mediterranean?",
+                        "name": "Are Explora suites spacious?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports."
+                            "text": "Yes. Explora Journeys offers some of the most spacious standard suites in luxury cruising."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Is Azamara considered luxury?",
+                        "name": "Are Explora suites worth the money?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                            "text": "For travelers seeking spacious accommodations, contemporary luxury, and personalized service, Explora suites often deliver excellent value."
                         }
                     }
                 ]
@@ -256,23 +257,30 @@ function BestSuitesExploraJourneys() {
     }
 
 
+
     return (
         <>
             <Helmet>
                 <title>
-                    Azamara Mediterranean Cruises 2026 | Luxury Small Ship Mediterranean Cruise Guide
+                    Best Suites on Explora Journeys | Ultimate Luxury Suite Guide 2026
+
 
                 </title>
                 <meta
                     name="title"
-                    content="Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights
+                    content="Best Suites on Explora Journeys in 2026 | Luxury Suite Expert Guide
+
 "
                 />
                 <meta
                     name="description"
-                    content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026."
+                    content="Discover the best suites on Explora Journeys for luxury travelers in 2026. Explore Ocean Residences, Penthouses, Cocoon Residences, suite categories, amenities, concierge benefits, and expert recommendations from Angela Hughes of Trips & Ships Luxury Travel.
+"
                 />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                <meta name="keywords" content="Best Suites on Explora Journeys
+, Explora Journeys suites
+,  Explora luxury suites, Explora Ocean Residences
+" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
@@ -685,8 +693,20 @@ function BestSuitesExploraJourneys() {
 
                         {/* Right Side: Showcase Content View */}
                         <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* Background image logic preserved via overlay/classes */}
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{ position: 'relative', height: '380px', overflow: 'hidden' }}>
+                                <img
+                                    src={[suiteImg0, suiteImg1, suiteImg2, suiteImg3, suiteImg4][mediSelectedItinerary]}
+                                    alt={mediItineraries[mediSelectedItinerary].title}
+                                    style={{
+                                        position: 'absolute',
+                                        inset: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        display: 'block',
+                                        transition: 'transform 0.6s ease'
+                                    }}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">PREMIUM SELECTION</span>
                             </div>
@@ -809,7 +829,7 @@ function BestSuitesExploraJourneys() {
                                 backgroundColor: '#f1f5f9'
                             }}>
                                 <img
-                                    src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1000"
+                                    src={residance}
                                     alt="Owner's Residence Luxury Interior"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
@@ -1248,6 +1268,41 @@ function BestSuitesExploraJourneys() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/DrVZU5FXIqM"
+
+
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+
 
             {/* DECK SELECTION GUIDE SECTION - FIXED */}
             <section style={{
@@ -1744,6 +1799,40 @@ function BestSuitesExploraJourneys() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/2BcVrN5QYfM"
+
+
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
 
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">

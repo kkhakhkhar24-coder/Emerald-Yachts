@@ -1,11 +1,14 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import azamaraShip from "../../assets/image.webp"
-import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Greece cruise itinerary.webp'
-import italyCruise from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
-import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp'
-import spainCruise from '../../assets/AzamaraMediterraneanCruises/Angela Hughes luxury cruise expert.webp'
-// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Azamara Truly Luxury.webp'
+
+import FirstTimeLuxury from '../../assets/FirstTimeLuxuryTravelers/EXPLORA III-IV CR 17.webp'
+import CulinaryExperiences from '../../assets/FirstTimeLuxuryTravelers/EXPLORA III-IV - Anthology.webp'
+import ExploraCruises from '../../assets/FirstTimeLuxuryTravelers/EXPLORA III-IV CR 16.webp'
+import CaribbeanLuxuryCruises from '../../assets/FirstTimeLuxuryTravelers/EXPLORA II sailing in Miami.webp'
+import NorthernEurope from '../../assets/FirstTimeLuxuryTravelers/greenland-expedition-cruise-arctic-luxury-voyage.webp'
+import LuxurySuite from '../../assets/FirstTimeLuxuryTravelers/luxury-couple-relaxing-on-explora-journeys-pool-deck.webp'
+
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -25,9 +28,9 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect, Activity } from 'react'
-import hero1 from '../../assets/AzamaraMediterraneanCruises/hero1.jpg'
-import hero2 from '../../assets/AzamaraMediterraneanCruises/hero2.jpg'
-import hero3 from '../../assets/AzamaraMediterraneanCruises/hero3.jpg'
+import hero1 from '../../assets/FirstTimeLuxuryTravelers/greenland-expedition-cruise-arctic-luxury-voyage.webp'
+import hero2 from '../../assets/FirstTimeLuxuryTravelers/explora-I-exterior-ship-view-greek-islands.webp'
+import hero3 from '../../assets/FirstTimeLuxuryTravelers/EXPLORA II sailing in Miami.webp'
 
 function FirstTimeLuxuryTravelers() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -173,9 +176,9 @@ function FirstTimeLuxuryTravelers() {
             },
             {
                 "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
+                "name": "Best Explora Cruises for First-Time Luxury Travelers",
+                "url": "https://www.tripsandships.com/best-explora-cruises-for-first-time-luxury-travelers",
+                "description": "Expert guide to the best Explora Journeys cruises for first-time luxury travelers."
             },
             {
                 "@type": "BreadcrumbList",
@@ -189,14 +192,14 @@ function FirstTimeLuxuryTravelers() {
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/mediterranean-cruises"
+                        "name": "Luxury Cruises",
+                        "item": "https://www.tripsandships.com/luxury-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
+                        "name": "Best Explora Cruises for First-Time Luxury Travelers",
+                        "item": "https://www.tripsandships.com/best-explora-cruises-for-first-time-luxury-travelers"
                     }
                 ]
             },
@@ -205,26 +208,26 @@ function FirstTimeLuxuryTravelers() {
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Are Azamara Mediterranean cruises worth it?",
+                        "name": "What is the best Explora cruise for first-time travelers?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service."
+                            "text": "Mediterranean and Caribbean voyages are among the best Explora cruises for first-time luxury travelers because they combine immersive destinations with relaxed luxury."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "What makes Azamara different in the Mediterranean?",
+                        "name": "Is Explora Journeys truly luxury?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports."
+                            "text": "Yes. Explora Journeys is considered an ultra-luxury cruise line with spacious suites, premium inclusions, and personalized service."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Is Azamara considered luxury?",
+                        "name": "Are Explora cruises all inclusive?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                            "text": "Explora Journeys includes many luxury amenities including dining, beverages, gratuities, Wi-Fi, and wellness experiences."
                         }
                     }
                 ]
@@ -233,23 +236,31 @@ function FirstTimeLuxuryTravelers() {
     }
 
 
+
     return (
         <>
             <Helmet>
                 <title>
-                    Azamara Mediterranean Cruises 2026 | Luxury Small Ship Mediterranean Cruise Guide
+                    Best Explora Cruises for First-Time Luxury Travelers | Expert Guide 2026
+
 
                 </title>
                 <meta
                     name="title"
-                    content="Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights
+                    content="Best Explora Cruises for First-Time Luxury Travelers in 2026
+
 "
                 />
                 <meta
                     name="description"
-                    content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026."
+                    content="Discover the best Explora Journeys cruises for first-time luxury travelers. Learn which itineraries, suites, destinations, and onboard experiences deliver the ideal introduction to ultra-luxury cruising in 2026 with expert insights from Angela Hughes of Trips & Ships Luxury Travel.
+"
                 />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                <meta name="keywords" content="Best Explora Cruises for First-Time Luxury Travelers
+, Explora Journeys review
+, Best Explora itineraries
+, Explora Journeys for beginners
+" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
@@ -541,8 +552,8 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4', // Taller, narrower aspect ratio for a smaller footprint
                             backgroundColor: '#f1f5f9'
                         }}>
-                            {/* <img
-                                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800"
+                            <img
+                                src={FirstTimeLuxury}
                                 alt="Luxury Suite Placeholder"
                                 style={{
                                     width: '100%',
@@ -550,7 +561,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            /> */}
+                            />
                         </div>
 
                         {/* Subtle Brand Accent behind image */}
@@ -858,8 +869,8 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4',
                             backgroundColor: '#f1f5f9'
                         }}>
-                            {/* <img
-                                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800"
+                            <img
+                                src={CulinaryExperiences}
                                 alt="Fine Dining Experience"
                                 style={{
                                     width: '100%',
@@ -867,7 +878,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            /> */}
+                            />
                         </div>
 
                         {/* Visual Accent behind image */}
@@ -917,8 +928,8 @@ function FirstTimeLuxuryTravelers() {
                             aspectRatio: '3/4',
                             backgroundColor: '#f1f5f9'
                         }}>
-                            {/* <img
-                                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800"
+                            <img
+                                src={ExploraCruises}
                                 alt="Mediterranean Coastline"
                                 style={{
                                     width: '100%',
@@ -926,7 +937,7 @@ function FirstTimeLuxuryTravelers() {
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
-                            /> */}
+                            />
                         </div>
 
                         {/* Visual Accent behind image */}
@@ -1070,15 +1081,15 @@ function FirstTimeLuxuryTravelers() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                <img
                                     src={
                                         mediSelectedItinerary === 0
-                                            ? "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80&w=800"
-                                            : "https://images.unsplash.com/photo-1520106212299-d99c443e4568?auto=format&fit=crop&q=80&w=800"
+                                            ? CaribbeanLuxuryCruises
+                                            : NorthernEurope
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">RECOMMENDED VOYAGE</span>
                             </div>
@@ -1272,7 +1283,7 @@ function FirstTimeLuxuryTravelers() {
 
                     <div className="medi-luxury-visual-wrapper">
                         {/* Ensure you use an Explora Journeys image variable here if available */}
-                        {/* <img src={luxurySuite} alt="Explora Journeys luxury suite" className="medi-luxury-main-image" /> */}
+                        <img src={LuxurySuite} alt="Explora Journeys luxury suite" className="medi-luxury-main-image" />
                     </div>
                 </div>
             </section>
@@ -1582,6 +1593,36 @@ function FirstTimeLuxuryTravelers() {
                         </p>
                     </div>
 
+                </div>
+            </section>
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/2nuohDzg2Oo"
+
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
                 </div>
             </section>
 
@@ -2022,6 +2063,39 @@ function FirstTimeLuxuryTravelers() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/C_BMby4dyDE"
+
+
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+
 
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">
