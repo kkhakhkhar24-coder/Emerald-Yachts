@@ -24,6 +24,8 @@ function ExploraJourneys() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [hero1, hero2, hero3]
 
+    const [exploraActiveTab, setExploraActiveTab] = useState(0);
+
     useEffect(() => {
         const mediTimer = setInterval(() => {
             setMediCurrentHero((prev) => (prev + 1) % mediHeroImages.length)
@@ -151,154 +153,77 @@ function ExploraJourneys() {
         }
     ];
 
+    {/* 1. DATA ARRAY - Place this before the return statement */ }
     const exploraComparisonSections = [
         {
             tabTitle: "Dress Code",
-            eyebrow: "STYLE & VIBE",
+            eyebrow: "Style Standards",
             title: "What Is the Dress Code on Explora?",
-            leftTitle: "Elegant Resort Casual Attire",
-            leftItems: [
-                "Stylish resort attire",
-                "Smart casual evening wear",
-                "Relaxed luxury fashion"
-            ],
-            rightTitle: "Understated Sophistication",
-            rightItems: [
-                "No formal nights",
-                "No tuxedos required",
-                "No strict dress requirements"
-            ],
-            bottomText: "This appeals strongly to modern luxury travelers who prefer understated sophistication."
+            leftTitle: "What to Wear",
+            leftItems: ["Stylish resort attire", "Smart casual evening wear", "Relaxed luxury fashion"],
+            rightTitle: "What is Avoided",
+            rightItems: ["Formal nights", "Tuxedos", "Strict dress requirements"],
+            bottomText: "Explora Journeys maintains a relaxed luxury atmosphere best described as 'Elegant resort casual.' This appeals strongly to travelers who prefer understated sophistication."
         },
         {
-            tabTitle: "vs Seabourn",
-            eyebrow: "MODERN VS TRADITIONAL LUXURY",
+            tabTitle: "Explora vs Seabourn",
+            eyebrow: "Brand Comparison",
             title: "How Does Explora Compare to Seabourn?",
             leftTitle: "Explora Journeys",
-            leftItems: [
-                "Modern luxury",
-                "Wellness-focused travel",
-                "Spacious suites",
-                "Contemporary design",
-                "Relaxed sophistication"
-            ],
+            leftItems: ["Modern luxury", "Wellness-focused travel", "Spacious suites", "Contemporary design", "Relaxed sophistication"],
             rightTitle: "Seabourn",
-            rightItems: [
-                "Traditional luxury cruising",
-                "Classic onboard atmosphere",
-                "Expedition expertise",
-                "More traditional luxury rituals"
-            ],
+            rightItems: ["Traditional luxury cruising", "Classic onboard atmosphere", "Expedition expertise", "Traditional luxury rituals"],
             bottomText: "Both deliver exceptional service and boutique ship experiences, but the atmosphere differs considerably."
         },
         {
-            tabTitle: "vs Silversea",
-            eyebrow: "LIFESTYLE VS CLASSIC",
+            tabTitle: "Explora vs Silversea",
+            eyebrow: "Brand Comparison",
             title: "How Does Explora Compare to Silversea?",
             leftTitle: "Explora Journeys",
-            leftItems: [
-                "Contemporary interiors",
-                "Spacious accommodations",
-                "Lifestyle-focused luxury",
-                "Younger affluent demographic"
-            ],
+            leftItems: ["Contemporary interiors", "Spacious accommodations", "Lifestyle-focused luxury", "Younger affluent demographic"],
             rightTitle: "Silversea",
-            rightItems: [
-                "Expedition voyages",
-                "Butler service",
-                "Global itineraries",
-                "Traditional ultra-luxury structure"
-            ],
+            rightItems: ["Expedition voyages", "Butler service", "Global itineraries", "Traditional ultra-luxury structure"],
             bottomText: "Travelers often choose based on personal travel style rather than overall quality."
         },
         {
-            tabTitle: "Guest Style",
-            eyebrow: "IDEAL TRAVELER PROFILE",
+            tabTitle: "Ideal Travelers",
+            eyebrow: "Persona Matching",
             title: "What Type of Travelers Choose Explora?",
-            leftTitle: "Explora appeals strongly to:",
-            leftItems: [
-                "Couples",
-                "Sophisticated professionals",
-                "Luxury hotel travelers",
-                "Wellness-focused travelers",
-                "Food and wine enthusiasts",
-                "Experienced international travelers",
-                "Travelers avoiding mega ships"
-            ],
-            rightTitle: "Explora may not be ideal for:",
-            rightItems: [
-                "Families seeking water parks",
-                "Travelers wanting nightlife-heavy environments",
-                "Guests prioritizing Broadway-style entertainment",
-                "Travelers seeking highly formal luxury traditions"
-            ]
+            leftTitle: "Explora Appeals To:",
+            leftItems: ["Couples & Professionals", "Luxury hotel travelers", "Wellness-focused travelers", "Food and wine enthusiasts", "Travelers avoiding mega ships"],
+            rightTitle: "May Not Be Ideal For:",
+            rightItems: ["Families seeking water parks", "Nightlife-heavy environments", "Broadway-style entertainment", "Highly formal luxury traditions"],
+            bottomText: "Explora is designed for sophisticated international travelers seeking an unhurried, residential feeling at sea."
         },
         {
-            tabTitle: "Cruise Value",
-            eyebrow: "VALUE OF ULTRA-LUXURY",
+            tabTitle: "Value Analysis",
+            eyebrow: "Investment Insight",
             title: "Are Explora Cruises Worth the Money?",
-            leftTitle: "Explora Journeys delivers value through:",
-            leftItems: [
-                "Spacious suites",
-                "Premium inclusions",
-                "Personalized service",
-                "Boutique ship atmosphere",
-                "Wellness-focused luxury",
-                "Sophisticated dining experiences"
-            ],
-            rightTitle: "Travelers who prioritize:",
-            rightItems: [
-                "Relaxed luxury",
-                "Contemporary elegance",
-                "Ocean wellness",
-                "Quiet sophistication",
-                "Personalized travel experiences"
-            ],
-            bottomText: "often consider Explora an excellent value within the ultra-luxury cruise market."
+            leftTitle: "Explora Delivers Value Through:",
+            leftItems: ["Spacious suites", "Premium inclusions", "Personalized service", "Boutique ship atmosphere", "Wellness-focused luxury"],
+            rightTitle: "Traveler Priorities:",
+            rightItems: ["Relaxed luxury", "Contemporary elegance", "Ocean wellness", "Quiet sophistication", "Personalized experiences"],
+            bottomText: "For many travelers, Explora Journeys represents an excellent value within the ultra-luxury market."
         },
         {
             tabTitle: "Best Itineraries",
-            eyebrow: "CURATED DESTINATIONS",
+            eyebrow: "Destination Guide",
             title: "Which Explora Itineraries Are Best?",
-            leftTitle: "Mediterranean Voyages",
-            leftItems: [
-                "Culinary travel",
-                "Historic cities",
-                "Scenic coastal cruising",
-                "Cultural immersion"
-            ],
-            rightTitle: "Caribbean Cruises",
-            rightItems: [
-                "Relaxation",
-                "Warm-weather escapes",
-                "Wellness-focused travel",
-                "Luxury beach experiences"
-            ],
-            extraTitle: "Northern Europe & Scandinavia",
-            extraItems: [
-                "Scenic cruising",
-                "Cultural depth",
-                "Nature-focused travel",
-                "Cooler climates"
-            ]
+            leftTitle: "Mediterranean & Caribbean",
+            leftItems: ["Culinary travel & Historic cities", "Scenic coastal cruising", "Warm-weather escapes", "Wellness-focused travel"],
+            rightTitle: "Northern Europe",
+            rightItems: ["Scenic cruising & Nature", "Cultural depth", "Cooler climates", "Photography opportunities"],
+            bottomText: "Explora itineraries are specifically designed to showcase the brand's elegant outdoor spaces and boutique ports."
         },
         {
             tabTitle: "Advisor Benefits",
-            eyebrow: "EXPERT LUXURY PLANNING",
-            title: "Should You Book Explora Through a Travel Advisor?",
-            leftTitle: "Luxury cruise advisors help travelers:",
-            leftItems: [
-                "Compare suite categories",
-                "Select ideal itineraries",
-                "Access exclusive amenities",
-                "Coordinate international logistics",
-                "Match cruise style with travel preferences",
-                "Simplify luxury cruise planning"
-            ],
-            rightTitle: "Advisor Benefits",
-            rightItems: [
-                "Experienced advisors also help travelers avoid costly booking mistakes and maximize overall value."
-            ]
+            eyebrow: "Booking Strategy",
+            title: "Should You Book Through an Advisor?",
+            leftTitle: "Advisors Help Travelers:",
+            leftItems: ["Compare suite categories", "Select ideal itineraries", "Access exclusive amenities", "Coordinate international logistics"],
+            rightTitle: "Strategic Advantages:",
+            rightItems: ["Match style with preferences", "Simplify luxury planning", "Avoid costly booking mistakes", "Maximize overall value"],
+            bottomText: "Luxury cruise planning has become increasingly specialized; experienced advisors help ensure your voyage aligns with your lifestyle."
         }
     ];
 
@@ -306,25 +231,38 @@ function ExploraJourneys() {
     const mediMistakes = [
         {
             title: 'Choosing Based Only on Price',
-            desc: 'Luxury cruising is highly experience-driven. Travelers should evaluate ship atmosphere, suite categories, included amenities, itinerary pacing, wellness offerings, and destination immersion — not just the sticker price.',
+            desc: 'Luxury cruising is highly experience-driven. Travelers should evaluate:',
             bullets: [
-                'Compare suites, not just fares',
-                "Evaluate what's included versus what costs extra"
+                'Ship atmosphere',
+                'Suite categories',
+                'Included amenities',
+                'Itinerary pacing',
+                'Wellness offerings',
+                'Destination immersion'
             ]
         },
         {
             title: 'Booking Too Late',
-            desc: 'Popular Explora voyages and premium suites often sell out 9–18 months in advance, especially Mediterranean summer sailings, holiday cruises, and longer itineraries.'
+            desc: 'Popular Explora voyages and premium suites often sell out early, especially:',
+            bullets: [
+                'Mediterranean summer sailings',
+                'Holiday cruises',
+                'Longer itineraries',
+                'Wellness-focused voyages'
+            ]
         },
         {
             title: 'Underestimating Suite Selection',
-            desc: 'Suite location and category significantly influence the onboard experience. Deck positioning, motion sensitivity, balcony size, and privacy preferences all matter.'
-        },
-        {
-            title: 'Overlooking Wellness Offerings',
-            desc: "Explora's wellness-focused amenities — thermal spa, fitness classes, mindful dining — are core to the experience. Travelers who ignore these miss a major part of what makes Explora distinctive."
+            desc: 'Suite location and category significantly influence the onboard experience. Experienced advisors help travelers evaluate:',
+            bullets: [
+                'Deck positioning',
+                'Motion sensitivity',
+                'Balcony size',
+                'Privacy preferences',
+                'Lifestyle priorities'
+            ]
         }
-    ]
+    ];
 
     const exploraSchemaData = {
         "@context": "https://schema.org",
@@ -752,507 +690,151 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* WHAT MAKES EXPLORA DIFFERENT */}
-            <section className="medi-diff-section">
-                <div className="medi-diff-container">
+            {/* IS EXPLORA JOURNEYS TRULY LUXURY - LIGHT NAVY THEME */}
+            <section style={{
+                padding: '80px 20px',
+                backgroundColor: '#e6edf7', // UPDATED: Light Navy / Steel Blue background
+                fontFamily: 'sans-serif'
+            }}>
+                {/* Inner Container */}
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
-                    {/* HEADER */}
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">
-                            MODERN ULTRA-LUXURY CRUISING
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '13px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            display: 'block',
+                            marginBottom: '10px'
+                        }}>
+                            Defining the Standard
                         </span>
-
-                        <h2 className="medi-diff-main-title">
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: '#0f1c2e',
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
                             Is Explora Journeys Truly Luxury?
                         </h2>
-
-                        <div className="medi-diff-separator"></div>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
 
-                    {/* HERO CENTER PANEL */}
-                    <div
-                        style={{
-                            position: 'relative',
-                            background: 'linear-gradient(135deg, #1f3555 0%, #274472 100%)',
-                            borderRadius: '38px',
-                            padding: '70px 60px',
-                            overflow: 'hidden',
-                            marginBottom: '38px'
-                        }}
-                    >
+                    {/* HERO IMPACT PANEL - Deep Navy "Yes" Banner */}
+                    <div style={{
+                        position: 'relative',
+                        background: 'linear-gradient(135deg, #0f1c2e 0%, #1e293b 100%)',
+                        borderRadius: '30px',
+                        padding: 'clamp(40px, 8vw, 70px) 30px',
+                        textAlign: 'center',
+                        color: '#ffffff',
+                        boxShadow: '0 25px 50px -12px rgba(15, 28, 46, 0.25)',
+                        marginBottom: '40px',
+                        overflow: 'hidden',
+                        border: '1px solid rgba(255, 255, 255, 0.05)'
+                    }}>
+                        {/* Subtle Abstract Background Decoration */}
+                        <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '200px', height: '200px', borderRadius: '50%', background: 'rgba(255,255,255,0.03)' }}></div>
 
-                        {/* Decorative Shapes */}
-                        <div
-                            style={{
-                                position: 'absolute',
-                                width: '340px',
-                                height: '340px',
+                        <div style={{ position: 'relative', zIndex: 2 }}>
+                            <div style={{
+                                width: '70px',
+                                height: '70px',
+                                backgroundColor: 'rgba(59, 130, 246, 0.2)',
                                 borderRadius: '50%',
-                                background: 'rgba(255,255,255,0.05)',
-                                top: '-160px',
-                                right: '-100px'
-                            }}
-                        ></div>
-
-                        <div
-                            style={{
-                                position: 'absolute',
-                                width: '220px',
-                                height: '220px',
-                                borderRadius: '50%',
-                                background: 'rgba(255,255,255,0.04)',
-                                bottom: '-80px',
-                                left: '-80px'
-                            }}
-                        ></div>
-
-                        <div
-                            style={{
-                                position: 'relative',
-                                zIndex: 2,
-                                textAlign: 'center',
-                                maxWidth: '980px',
-                                margin: '0 auto'
-                            }}
-                        >
-
-                            <span
-                                style={{
-                                    display: 'inline-flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    width: '84px',
-                                    height: '84px',
-                                    borderRadius: '50%',
-                                    background: 'rgba(255,255,255,0.08)',
-                                    border: '1px solid rgba(255,255,255,0.12)',
-                                    color: '#ffffff',
-                                    fontSize: '34px',
-                                    fontWeight: '700',
-                                    marginBottom: '28px'
-                                }}
-                            >
-                                ✓
-                            </span>
-
-                            <h3
-                                style={{
-                                    fontSize: '64px',
-                                    lineHeight: '1.1',
-                                    color: '#ffffff',
-                                    margin: '0 0 24px 0',
-                                    fontWeight: '600',
-                                    letterSpacing: '-0.03em'
-                                }}
-                            >
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                margin: '0 auto 25px',
+                                border: '1px solid rgba(59, 130, 246, 0.3)'
+                            }}>
+                                <CheckCircle size={32} style={{ color: '#3b82f6' }} />
+                            </div>
+                            <h3 style={{ fontSize: 'clamp(40px, 10vw, 64px)', fontWeight: '700', margin: '0 0 15px 0', letterSpacing: '-0.03em', color: '#fff' }}>
                                 Yes.
                             </h3>
-
-                            <p
-                                style={{
-                                    fontSize: '22px',
-                                    lineHeight: '1.9',
-                                    color: 'rgba(255,255,255,0.88)',
-                                    margin: 0,
-                                    maxWidth: '900px'
-                                }}
-                            >
-                                Explora Journeys is widely considered an ultra-luxury cruise line.
+                            <p style={{ fontSize: 'clamp(17px, 3vw, 20px)', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: '1.6', color: '#fff' }}>
+                                Explora Journeys is widely considered an ultra-luxury cruise line, redefining the market with a modern, European-inspired approach.
                             </p>
-
                         </div>
-
                     </div>
 
-                    {/* MAIN GRID */}
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: '1fr 1fr',
-                            gap: '34px',
-                            marginBottom: '34px'
-                        }}
-                    >
+                    {/* DETAILS GRID */}
+                    <div style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '30px'
+                    }}>
 
-                        {/* LEFT SIDE */}
-                        <div
-                            style={{
-                                background: '#ffffff',
-                                borderRadius: '34px',
-                                padding: '42px',
-                                border: '1px solid rgba(39,68,114,0.08)',
-                                boxShadow: '0 18px 50px rgba(15,28,46,0.05)',
-                                transition: 'all 0.35s ease',
-                                cursor: 'pointer'
-                            }}
-
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'translateY(-8px)';
-                                e.currentTarget.style.boxShadow = '0 30px 60px rgba(15,28,46,0.10)';
-                            }}
-
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'translateY(0px)';
-                                e.currentTarget.style.boxShadow = '0 18px 50px rgba(15,28,46,0.05)';
-                            }}
-                        >
-
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '16px',
-                                    marginBottom: '34px'
-                                }}
-                            >
-
-                                <div
-                                    style={{
-                                        width: '70px',
-                                        height: '70px',
-                                        borderRadius: '22px',
-                                        background: '#eef5f7',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center'
-                                    }}
-                                >
-                                    <Crown size={34} color="#274472" />
-                                </div>
-
-                                <div>
-
-                                    <span
-                                        style={{
-                                            display: 'block',
-                                            fontSize: '12px',
-                                            fontWeight: '700',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '0.12em',
-                                            color: '#274472',
-                                            opacity: 0.7,
-                                            marginBottom: '6px'
-                                        }}
-                                    >
-                                        Luxury Features Include
-                                    </span>
-
-                                    <h3
-                                        style={{
-                                            margin: 0,
-                                            fontSize: '34px',
-                                            lineHeight: '1.3',
-                                            color: '#274472',
-                                            fontWeight: '600'
-                                        }}
-                                    >
-                                        Ultra-Luxury Features
-                                    </h3>
-
-                                </div>
-
+                        {/* LEFT CARD: FEATURES */}
+                        <div style={{
+                            flex: '1 1 450px',
+                            minWidth: '320px',
+                            backgroundColor: '#ffffff', // Clean white pops against light navy bg
+                            borderRadius: '30px',
+                            padding: '40px',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
+                        }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
+                                <Crown size={28} style={{ color: '#0f1c2e' }} />
+                                <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Ultra-Luxury Features</h3>
                             </div>
 
-                            <div
-                                style={{
-                                    display: 'grid',
-                                    gap: '18px'
-                                }}
-                            >
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                                 {[
                                     'Oceanfront suites throughout the ship',
                                     'Spacious private terraces',
                                     'High crew-to-guest ratios',
                                     'Personalized service',
-                                    'Premium dining',
+                                    'Premium dining and beverages',
                                     'Elegant contemporary design',
                                     'Wellness-focused amenities'
                                 ].map((item, idx) => (
-                                    <div
-                                        key={idx}
-                                        style={{
-                                            display: 'flex',
-                                            alignItems: 'flex-start',
-                                            gap: '18px',
-                                            padding: '20px',
-                                            borderRadius: '20px',
-                                            background: '#f8fbfd',
-                                            border: '1px solid rgba(39,68,114,0.05)',
-                                            transition: 'all 0.3s ease'
-                                        }}
-                                    >
-
-                                        <div
-                                            style={{
-                                                width: '42px',
-                                                height: '42px',
-                                                minWidth: '42px',
-                                                borderRadius: '14px',
-                                                background: '#274472',
-                                                color: '#ffffff',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                fontWeight: '700',
-                                                fontSize: '14px'
-                                            }}
-                                        >
-                                            0{idx + 1}
+                                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                        <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#0f1c2e', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontWeight: '700', flexShrink: 0 }}>
+                                            {idx + 1}
                                         </div>
-
-                                        <span
-                                            style={{
-                                                fontSize: '17px',
-                                                lineHeight: '1.7',
-                                                color: '#274472',
-                                                fontWeight: '500'
-                                            }}
-                                        >
-                                            {item}
-                                        </span>
-
+                                        <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
                                     </div>
                                 ))}
                             </div>
-
                         </div>
 
-                        {/* RIGHT SIDE */}
-                        <div
-                            style={{
-                                background: '#ffffff',
-                                borderRadius: '34px',
-                                overflow: 'hidden',
-                                border: '1px solid rgba(39,68,114,0.08)',
-                                boxShadow: '0 18px 50px rgba(15,28,46,0.05)'
-                            }}
-                        >
+                        {/* RIGHT CARD: PHILOSOPHY */}
+                        <div style={{
+                            flex: '1 1 450px',
+                            minWidth: '320px',
+                            backgroundColor: '#ffffff',
+                            borderRadius: '30px',
+                            padding: '40px',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.02)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#0f1c2e', marginBottom: '25px' }}>Modern Luxury Philosophy</h3>
 
-                            {/* TOP */}
-                            <div
-                                style={{
-                                    background: 'linear-gradient(135deg, #274472 0%, #1f3555 100%)',
-                                    padding: '48px 42px',
-                                    position: 'relative',
-                                    overflow: 'hidden'
-                                }}
-                            >
-
-                                <div
-                                    style={{
-                                        position: 'absolute',
-                                        width: '220px',
-                                        height: '220px',
-                                        borderRadius: '50%',
-                                        background: 'rgba(255,255,255,0.05)',
-                                        top: '-100px',
-                                        right: '-80px'
-                                    }}
-                                ></div>
-
-                                <div
-                                    style={{
-                                        position: 'relative',
-                                        zIndex: 2
-                                    }}
-                                >
-
-                                    <span
-                                        style={{
-                                            display: 'inline-block',
-                                            fontSize: '12px',
-                                            fontWeight: '700',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '0.12em',
-                                            color: 'rgba(255,255,255,0.72)',
-                                            marginBottom: '18px'
-                                        }}
-                                    >
-                                        Explora Emphasizes
-                                    </span>
-
-                                    <h3
-                                        style={{
-                                            fontSize: '38px',
-                                            lineHeight: '1.25',
-                                            color: '#ffffff',
-                                            margin: 0,
-                                            fontWeight: '600'
-                                        }}
-                                    >
-                                        Contemporary Luxury Philosophy
-                                    </h3>
-
-                                </div>
-
+                            <p style={{ fontSize: '14px', color: '#64748b', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '1px', marginBottom: '20px' }}>Explora Emphasizes:</p>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '35px' }}>
+                                {['Modern luxury', 'Relaxed sophistication', 'Quiet social spaces', 'Wellness travel'].map((chip, idx) => (
+                                    <span key={idx} style={{ padding: '8px 16px', backgroundColor: '#f1f5f9', borderRadius: '50px', fontSize: '13px', fontWeight: '600', color: '#0f1c2e', border: '1px solid #e2e8f0' }}>{chip}</span>
+                                ))}
                             </div>
 
-                            {/* MIDDLE */}
-                            <div
-                                style={{
-                                    padding: '40px'
-                                }}
-                            >
-
-                                {/* Emphasizes */}
-                                <div
-                                    style={{
-                                        marginBottom: '38px'
-                                    }}
-                                >
-
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            flexWrap: 'wrap',
-                                            gap: '14px'
-                                        }}
-                                    >
-                                        {[
-                                            'Modern luxury',
-                                            'Relaxed sophistication',
-                                            'Contemporary interiors',
-                                            'Quiet social spaces',
-                                            'Wellness-oriented travel'
-                                        ].map((item, idx) => (
-                                            <div
-                                                key={idx}
-                                                style={{
-                                                    padding: '14px 20px',
-                                                    borderRadius: '40px',
-                                                    background: '#eef5f7',
-                                                    color: '#274472',
-                                                    fontSize: '15px',
-                                                    fontWeight: '600',
-                                                    transition: 'all 0.3s ease',
-                                                    cursor: 'pointer'
-                                                }}
-
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-4px)';
-                                                    e.currentTarget.style.background = '#274472';
-                                                    e.currentTarget.style.color = '#ffffff';
-                                                }}
-
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0px)';
-                                                    e.currentTarget.style.background = '#eef5f7';
-                                                    e.currentTarget.style.color = '#274472';
-                                                }}
-                                            >
-                                                {item}
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                </div>
-
-                                {/* Rather Than */}
-                                <div
-                                    style={{
-                                        padding: '34px',
-                                        borderRadius: '26px',
-                                        background: '#f8fbfd',
-                                        border: '1px solid rgba(39,68,114,0.05)',
-                                        marginBottom: '34px'
-                                    }}
-                                >
-
-                                    <span
-                                        style={{
-                                            display: 'block',
-                                            fontSize: '13px',
-                                            fontWeight: '700',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '0.10em',
-                                            color: '#274472',
-                                            marginBottom: '24px'
-                                        }}
-                                    >
-                                        Rather than:
-                                    </span>
-
-                                    <div
-                                        style={{
-                                            display: 'grid',
-                                            gap: '18px'
-                                        }}
-                                    >
-                                        {[
-                                            'Ultra-formal evenings',
-                                            'Traditional cruise entertainment',
-                                            'Large-scale onboard attractions'
-                                        ].map((item, idx) => (
-                                            <div
-                                                key={idx}
-                                                style={{
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    gap: '16px'
-                                                }}
-                                            >
-
-                                                <div
-                                                    style={{
-                                                        width: '38px',
-                                                        height: '38px',
-                                                        borderRadius: '12px',
-                                                        background: '#ffffff',
-                                                        border: '1px solid rgba(39,68,114,0.08)',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        justifyContent: 'center',
-                                                        color: '#274472',
-                                                        fontWeight: '700'
-                                                    }}
-                                                >
-                                                    —
-                                                </div>
-
-                                                <span
-                                                    style={{
-                                                        fontSize: '17px',
-                                                        color: '#274472',
-                                                        lineHeight: '1.6',
-                                                        fontWeight: '500'
-                                                    }}
-                                                >
-                                                    {item}
-                                                </span>
-
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Bottom Quote */}
-                                <div
-                                    style={{
-                                        background: '#274472',
-                                        borderRadius: '24px',
-                                        padding: '34px'
-                                    }}
-                                >
-                                    <p
-                                        style={{
-                                            margin: 0,
-                                            fontSize: '18px',
-                                            lineHeight: '1.9',
-                                            color: 'rgba(255,255,255,0.92)',
-                                            fontWeight: '500'
-                                        }}
-                                    >
-                                        For many affluent travelers, this contemporary approach feels more aligned with current luxury travel preferences.
-                                    </p>
-
-                                </div>
-
+                            <div style={{ marginTop: 'auto', padding: '25px', backgroundColor: '#0f1c2e', borderRadius: '20px' }}>
+                                <p style={{ fontSize: '15px', color: '#ffffff', lineHeight: '1.7', margin: 0, textAlign: 'center', fontWeight: '400' }}>
+                                    "For many affluent travelers, this contemporary approach feels more aligned with <span style={{ color: '#3b82f6', fontWeight: '700' }}>current luxury travel preferences</span> than traditional formal cruising."
+                                </p>
                             </div>
-
                         </div>
 
                     </div>
-
                 </div>
             </section>
 
@@ -1704,213 +1286,226 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* EXPLORA VS SILVERSEA COMPARISON GUIDE */}
+            {/* EXPLORA SELECTION GUIDE - REDESIGNED & FIXED */}
             <section style={{
                 padding: '80px 20px',
-                background: '#f1f5f9', // Professional light slate background
+                background: '#f8fafc', // Soft professional grey
                 fontFamily: 'sans-serif'
             }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
 
-                    {/* 1. HEADER */}
+                    {/* SECTION HEADER */}
                     <div style={{ textAlign: 'center', marginBottom: '50px' }}>
                         <span style={{
                             display: 'inline-flex',
-                            padding: '10px 20px',
+                            padding: '8px 20px',
                             borderRadius: '50px',
                             background: 'rgba(59, 130, 246, 0.1)',
                             color: '#3b82f6',
                             fontSize: '12px',
                             fontWeight: '800',
-                            letterSpacing: '0.15em',
+                            letterSpacing: '2px',
                             textTransform: 'uppercase',
-                            marginBottom: '20px'
+                            marginBottom: '15px'
                         }}>
-                            Ultra-Luxury Comparison Guide
+                            Expert Advisory
                         </span>
                         <h2 style={{
-                            fontSize: 'clamp(26px, 5vw, 42px)',
+                            fontSize: 'clamp(28px, 5vw, 42px)',
                             color: '#0f1c2e',
                             margin: '0',
                             fontWeight: '700',
-                            lineHeight: '1.2',
                             letterSpacing: '-0.02em'
                         }}>
-                            Comparing the Explora & Silversea Experience
+                            Explora Journeys Selection Guide
                         </h2>
                     </div>
 
-                    {/* 2. TABS - Explicit Visibility Fix */}
+                    {/* SCROLLABLE TABS CONTAINER */}
                     <div style={{
                         display: 'flex',
-                        gap: '15px',
+                        gap: '12px',
                         overflowX: 'auto',
-                        paddingBottom: '20px',
-                        marginBottom: '40px',
+                        padding: '10px 5px 25px',
+                        marginBottom: '30px',
                         scrollbarWidth: 'none',
-                        msOverflowStyle: 'none'
+                        msOverflowStyle: 'none',
+                        WebkitOverflowScrolling: 'touch'
                     }}>
                         {exploraComparisonSections.map((section, index) => {
-                            const isActive = mediSelectedItinerary === index;
+                            const isActive = exploraActiveTab === index;
                             return (
                                 <button
                                     key={index}
-                                    onClick={() => setMediSelectedItinerary(index)}
+                                    onClick={() => setExploraActiveTab(index)}
                                     style={{
-                                        minWidth: '240px',
-                                        padding: '25px',
-                                        borderRadius: '24px',
-                                        border: isActive ? '2px solid #0f1c2e' : '1px solid #cbd5e1',
+                                        minWidth: '200px',
+                                        padding: '20px',
+                                        borderRadius: '20px',
+                                        border: '1px solid',
+                                        borderColor: isActive ? '#0f1c2e' : '#e2e8f0',
                                         background: isActive ? '#0f1c2e' : '#ffffff',
+                                        color: isActive ? '#ffffff' : '#0f1c2e',
                                         cursor: 'pointer',
-                                        transition: 'all 0.3s ease',
-                                        textAlign: 'left',
+                                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                                        textAlign: 'center',
                                         flexShrink: 0,
-                                        boxShadow: isActive ? '0 20px 40px rgba(15,28,46,0.2)' : '0 4px 10px rgba(0,0,0,0.02)'
+                                        boxShadow: isActive ? '0 15px 30px rgba(15,28,46,0.15)' : '0 4px 10px rgba(0,0,0,0.02)',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        gap: '8px'
                                     }}
                                 >
-                                    <div style={{
-                                        fontSize: '12px',
-                                        marginBottom: '10px',
+                                    <span style={{
+                                        fontSize: '11px',
                                         fontWeight: '800',
-                                        // FIXED: Explicit color for active state
-                                        color: isActive ? '#3b82f6' : '#64748b'
+                                        color: isActive ? '#3b82f6' : '#94a3b8'
                                     }}>
                                         0{index + 1}
-                                    </div>
-                                    <h3 style={{
-                                        margin: '0',
-                                        fontSize: '18px',
+                                    </span>
+                                    <span style={{
+                                        fontSize: '15px',
                                         fontWeight: '700',
-                                        lineHeight: '1.3',
-                                        // FIXED: Explicit color for active state
-                                        color: isActive ? '#ffffff' : '#0f1c2e'
+                                        lineHeight: '1.2'
                                     }}>
                                         {section.tabTitle}
-                                    </h3>
+                                    </span>
                                 </button>
                             );
                         })}
                     </div>
 
-                    {/* 3. ACTIVE CONTENT CARD */}
-                    <div style={{
-                        background: '#ffffff',
-                        borderRadius: '32px',
-                        padding: 'clamp(30px, 6vw, 60px)',
-                        boxShadow: '0 40px 100px -20px rgba(15, 23, 42, 0.1)',
-                        border: '1px solid rgba(15, 28, 46, 0.05)'
-                    }}>
-
-                        {/* TOP TITLE WITHIN CARD */}
-                        <div style={{ marginBottom: '45px', textAlign: 'center' }}>
-                            <span style={{
-                                color: '#3b82f6',
-                                fontWeight: '700',
-                                fontSize: '13px',
-                                textTransform: 'uppercase',
-                                letterSpacing: '2px'
-                            }}>
-                                {exploraComparisonSections[mediSelectedItinerary]?.eyebrow}
-                            </span>
-                            <h2 style={{
-                                fontSize: 'clamp(24px, 4vw, 36px)',
-                                color: '#0f1c2e',
-                                marginTop: '10px',
-                                fontWeight: '700',
-                                letterSpacing: '-0.01em'
-                            }}>
-                                {exploraComparisonSections[mediSelectedItinerary]?.title}
-                            </h2>
-                            <div style={{ width: '40px', height: '3px', backgroundColor: '#3b82f6', margin: '20px auto 0', borderRadius: '10px' }}></div>
-                        </div>
-
-                        {/* RESPONSIVE COMPARISON GRID */}
+                    {/* ACTIVE CONTENT MAIN CARD */}
+                    {exploraComparisonSections[exploraActiveTab] && (
                         <div style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                            gap: '30px'
+                            background: '#ffffff',
+                            borderRadius: '32px',
+                            padding: 'clamp(30px, 5vw, 60px)',
+                            boxShadow: '0 40px 100px -20px rgba(15, 23, 42, 0.1)',
+                            border: '1px solid rgba(15, 28, 46, 0.05)',
+                            position: 'relative'
                         }}>
-                            {/* EXPLORA COLUMN */}
-                            <div style={{ background: '#f8fafc', borderRadius: '24px', padding: '40px', border: '1px solid #f1f5f9' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
-                                    <div style={{ color: '#3b82f6' }}><Sparkles size={22} /></div>
-                                    <h3 style={{ fontSize: '22px', color: '#0f1c2e', margin: 0, fontWeight: '700' }}>
-                                        {exploraComparisonSections[mediSelectedItinerary]?.leftTitle}
-                                    </h3>
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                                    {exploraComparisonSections[mediSelectedItinerary]?.leftItems?.map((item, idx) => (
-                                        <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: '#fff', padding: '16px 20px', borderRadius: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
-                                            <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
-                                            <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
+
+                            {/* CARD HEADER */}
+                            <div style={{ marginBottom: '50px', textAlign: 'center' }}>
+                                <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px' }}>
+                                    {exploraComparisonSections[exploraActiveTab].eyebrow}
+                                </span>
+                                <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: '#0f1c2e', marginTop: '12px', fontWeight: '700', letterSpacing: '-0.01em' }}>
+                                    {exploraComparisonSections[exploraActiveTab].title}
+                                </h2>
+                                <div style={{ width: '40px', height: '3px', backgroundColor: '#3b82f6', margin: '20px auto 0', borderRadius: '10px' }}></div>
                             </div>
 
-                            {/* SILVERSEA COLUMN */}
-                            <div style={{ background: '#f8fafc', borderRadius: '24px', padding: '40px', border: '1px solid #f1f5f9' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
-                                    <div style={{ color: '#0f1c2e' }}><Anchor size={22} /></div>
-                                    <h3 style={{ fontSize: '22px', color: '#0f1c2e', margin: 0, fontWeight: '700' }}>
-                                        {exploraComparisonSections[mediSelectedItinerary]?.rightTitle}
-                                    </h3>
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                                    {exploraComparisonSections[mediSelectedItinerary]?.rightItems?.map((item, idx) => (
-                                        <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: '#fff', padding: '16px 20px', borderRadius: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
-                                            <CheckCircle size={18} style={{ color: '#0f1c2e', opacity: 0.3, flexShrink: 0 }} />
-                                            <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
+                            {/* RESPONSIVE COMPARISON GRID */}
+                            <div style={{
+                                display: 'grid',
+                                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                                gap: '30px'
+                            }}>
+                                {/* LEFT COLUMN PANEL */}
+                                <div style={{
+                                    background: '#f8fafc',
+                                    borderRadius: '24px',
+                                    padding: '35px',
+                                    border: '1px solid #f1f5f9',
+                                    display: 'flex',
+                                    flexDirection: 'column'
+                                }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '30px' }}>
+                                        <div style={{ width: '36px', height: '36px', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
+                                            <Sparkles size={20} />
                                         </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* EXTRA COLUMN IF EXISTS (For Itineraries) */}
-                            {exploraComparisonSections[mediSelectedItinerary]?.extraItems && (
-                                <div style={{ background: '#f8fafc', borderRadius: '24px', padding: '40px', border: '1px solid #f1f5f9' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
-                                        <div style={{ color: '#3b82f6' }}><Sparkles size={22} /></div>
-                                        <h3 style={{ fontSize: '22px', color: '#0f1c2e', margin: 0, fontWeight: '700' }}>
-                                            {exploraComparisonSections[mediSelectedItinerary]?.extraTitle}
+                                        <h3 style={{ fontSize: '20px', color: '#0f1c2e', margin: 0, fontWeight: '700' }}>
+                                            {exploraComparisonSections[exploraActiveTab].leftTitle}
                                         </h3>
                                     </div>
-                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                                        {exploraComparisonSections[mediSelectedItinerary]?.extraItems?.map((item, idx) => (
-                                            <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: '#fff', padding: '16px 20px', borderRadius: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
-                                                <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
+
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        {exploraComparisonSections[exploraActiveTab].leftItems.map((item, idx) => (
+                                            <div key={idx} style={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '12px',
+                                                background: '#ffffff',
+                                                padding: '14px 18px',
+                                                borderRadius: '12px',
+                                                border: '1px solid rgba(15, 28, 46, 0.03)',
+                                                boxShadow: '0 2px 5px rgba(0,0,0,0.01)'
+                                            }}>
+                                                <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} />
                                                 <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
-                            )}
-                        </div>
 
-                        {/* BOTTOM VERDICT NOTE */}
-                        {exploraComparisonSections[mediSelectedItinerary]?.bottomText && (
+                                {/* RIGHT COLUMN PANEL */}
+                                <div style={{
+                                    background: '#f8fafc',
+                                    borderRadius: '24px',
+                                    padding: '35px',
+                                    border: '1px solid #f1f5f9',
+                                    display: 'flex',
+                                    flexDirection: 'column'
+                                }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '30px' }}>
+                                        <div style={{ width: '36px', height: '36px', background: 'rgba(15, 28, 46, 0.05)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f1c2e' }}>
+                                            <Anchor size={20} />
+                                        </div>
+                                        <h3 style={{ fontSize: '20px', color: '#0f1c2e', margin: 0, fontWeight: '700' }}>
+                                            {exploraComparisonSections[exploraActiveTab].rightTitle}
+                                        </h3>
+                                    </div>
+
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        {exploraComparisonSections[exploraActiveTab].rightItems.map((item, idx) => (
+                                            <div key={idx} style={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '12px',
+                                                background: '#ffffff',
+                                                padding: '14px 18px',
+                                                borderRadius: '12px',
+                                                border: '1px solid rgba(15, 28, 46, 0.03)',
+                                                boxShadow: '0 2px 5px rgba(0,0,0,0.01)'
+                                            }}>
+                                                {/* Smart Icon Logic: Red minus for "Not Ideal" (Tab Index 3), Grey circle for others */}
+                                                {exploraActiveTab === 3 ? (
+                                                    <Minus size={16} style={{ color: '#ef4444', flexShrink: 0 }} />
+                                                ) : (
+                                                    <div style={{ width: '6px', height: '6px', background: '#cbd5e1', borderRadius: '50%', flexShrink: 0, marginLeft: '5px', marginRight: '5px' }}></div>
+                                                )}
+                                                <span style={{ fontSize: '15px', color: '#334155', fontWeight: '500' }}>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* BOTTOM SUMMARY FOOTER */}
                             <div style={{
-                                marginTop: '40px',
-                                padding: '35px 40px',
+                                marginTop: '50px',
+                                padding: '30px 40px',
                                 borderRadius: '24px',
                                 background: '#0f1c2e',
                                 textAlign: 'center',
                                 boxShadow: '0 20px 40px rgba(15,28,46,0.1)'
                             }}>
-                                <p style={{ margin: '0 auto', color: '#ffffff', fontSize: '17px', lineHeight: '1.7', fontWeight: '400', maxWidth: '850px' }}>
-                                    {exploraComparisonSections[mediSelectedItinerary]?.bottomText}
+                                <p style={{ margin: '0 auto', color: '#ffffff', fontSize: '17px', lineHeight: '1.7', fontWeight: '400', maxWidth: '850px', opacity: 0.9 }}>
+                                    {exploraComparisonSections[exploraActiveTab].bottomText}
                                 </p>
                             </div>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
             </section>
 
             {/* VIDEO SECTION 2: SILVERSEA HERITAGE EXPERIENCE */}
             <section style={{
                 padding: '100px 20px',
-                backgroundColor: '#f1f5f9', // Soft Luxury Slate Background
+                backgroundColor: '#0f1c2e', // Luxury Navy Background
                 fontFamily: 'sans-serif',
                 overflow: 'hidden'
             }}>
@@ -1948,7 +1543,7 @@ function ExploraJourneys() {
 
                             <h2 style={{
                                 fontSize: 'clamp(28px, 4vw, 40px)',
-                                color: '#0f1c2e',
+                                color: '#ffffff', // Contrast White
                                 fontWeight: '700',
                                 lineHeight: '1.2',
                                 marginBottom: '25px',
@@ -1957,7 +1552,7 @@ function ExploraJourneys() {
                                 The Art of Silversea: <br /> Defining Ultra-Luxury
                             </h2>
 
-                            <p style={{ fontSize: '17px', color: '#475569', lineHeight: '1.8', maxWidth: '550px' }}>
+                            <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.8', maxWidth: '550px' }}>
                                 Discover a world of timeless flavors, unrivaled comfort, and unmatched access.
                                 From hidden harbors to coveted cities, see how Silversea elevates the journey
                                 of a lifetime through personalized butler service and traditional refinement.
@@ -1973,8 +1568,8 @@ function ExploraJourneys() {
                                 right: '-20px',
                                 width: '100px',
                                 height: '100px',
-                                borderTop: '4px solid rgba(15, 28, 46, 0.1)',
-                                borderRight: '4px solid rgba(15, 28, 46, 0.1)',
+                                borderTop: '4px solid rgba(255, 255, 255, 0.15)', // Light border for dark background
+                                borderRight: '4px solid rgba(255, 255, 255, 0.15)',
                                 borderRadius: '0 30px 0 0',
                                 zIndex: 0
                             }}></div>
@@ -1983,7 +1578,7 @@ function ExploraJourneys() {
                                 position: 'relative',
                                 borderRadius: '30px',
                                 overflow: 'hidden',
-                                boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.25)',
+                                boxShadow: '0 30px 60px -15px rgba(0, 0, 0, 0.4)', // Darker shadow for depth
                                 aspectRatio: '16/9',
                                 backgroundColor: '#000',
                                 border: '1px solid #ffffff',
@@ -2013,78 +1608,212 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* COMMON MISTAKES SLIDER */}
+            {/* COMMON MISTAKES SLIDER - FULLY RESPONSIVE */}
             <section
                 className="medi-mistakes-section"
                 onMouseEnter={() => setIsMediSliderHovered(true)}
                 onMouseLeave={() => setIsMediSliderHovered(false)}
+                style={{
+                    padding: 'clamp(50px, 10vw, 100px) 15px',
+                    backgroundColor: '#f1f5f9',
+                    fontFamily: 'sans-serif',
+                    overflow: 'hidden'
+                }}
             >
-                <div className="medi-mistakes-container">
-                    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                        <h2 className="medi-section-heading">Common Mistakes Travelers Make Before Booking Explora</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                {/* Responsive Utility CSS */}
+                <style>{`
+        @media (max-width: 768px) {
+            .medi-mistakes-slider-wrapper {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+            .medi-slider-nav-btn {
+                display: none !important; /* Hide side arrows on mobile for better space */
+            }
+            .medi-mistake-card-content {
+                padding: 30px 20px !important;
+            }
+        }
+    `}</style>
+
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: 'clamp(30px, 8vw, 60px)' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '12px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            display: 'block',
+                            marginBottom: '10px'
+                        }}>
+                            Expert Selection Guide
+                        </span>
+                        <h2 style={{
+                            fontSize: 'clamp(24px, 5vw, 40px)',
+                            color: '#0f1c2e',
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2',
+                            padding: '0 10px'
+                        }}>
+                            Common Mistakes Travelers Make Before Booking Explora
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
 
-                    <div className="medi-mistakes-slider-wrapper">
-                        {/* Left Arrow */}
+                    <div
+                        className="medi-mistakes-slider-wrapper"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            position: 'relative',
+                            gap: '20px'
+                        }}
+                    >
+                        {/* Left Arrow - Desktop Only */}
                         <button
-                            className="medi-slider-nav-btn btn-left"
+                            className="medi-slider-nav-btn"
                             onClick={() => setMediActiveMistake((prev) => (prev === 0 ? mediMistakes.length - 1 : prev - 1))}
-                            aria-label="Previous slide"
+                            style={{
+                                width: '50px',
+                                height: '50px',
+                                borderRadius: '50%',
+                                border: '1px solid #cbd5e1',
+                                backgroundColor: '#ffffff',
+                                color: '#0f1c2e',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                cursor: 'pointer',
+                                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+                                zIndex: 10,
+                                flexShrink: 0
+                            }}
                         >
                             <ChevronRight size={24} style={{ transform: 'rotate(180deg)' }} />
                         </button>
 
-                        <div className="medi-mistakes-slides-track">
+                        {/* Slider Viewport */}
+                        <div style={{
+                            flex: '1',
+                            maxWidth: '850px',
+                            position: 'relative',
+                            display: 'grid', // Uses grid to maintain layout height
+                            gridTemplateColumns: '1fr'
+                        }}>
                             {mediMistakes.map((mistake, idx) => {
-                                const isActive = mediActiveMistake === idx
+                                const isActive = mediActiveMistake === idx;
                                 return (
                                     <div
                                         key={idx}
-                                        className={`medi-mistakes-slider-card ${isActive ? 'active' : ''}`}
+                                        className="medi-mistake-card-content"
+                                        style={{
+                                            gridArea: '1 / 1 / 2 / 1', // Stacks cards on top of each other
+                                            opacity: isActive ? 1 : 0,
+                                            visibility: isActive ? 'visible' : 'hidden',
+                                            transform: isActive ? 'translateX(0)' : 'translateX(30px)',
+                                            transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+                                            backgroundColor: '#ffffff',
+                                            borderRadius: '24px',
+                                            padding: 'clamp(25px, 5vw, 50px)',
+                                            boxShadow: isActive ? '0 30px 60px -12px rgba(15, 28, 46, 0.12)' : 'none',
+                                            border: '1px solid rgba(15, 28, 46, 0.05)',
+                                            zIndex: isActive ? 2 : 1
+                                        }}
                                     >
-                                        <div className="medi-mistake-slide-header">
-                                            <span className="medi-mistake-card-num">0{idx + 1}</span>
-                                            <h3 className="medi-mistake-card-title">{mistake.title}</h3>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                                            <span style={{
+                                                fontSize: '12px',
+                                                fontWeight: '800',
+                                                color: '#3b82f6',
+                                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                                padding: '4px 10px',
+                                                borderRadius: '6px'
+                                            }}>
+                                                0{idx + 1}
+                                            </span>
+                                            <h3 style={{ fontSize: 'clamp(18px, 3vw, 26px)', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>
+                                                {mistake.title}
+                                            </h3>
                                         </div>
 
-                                        <div className="medi-mistake-slide-body">
-                                            <p className="medi-mistake-card-description">{mistake.desc}</p>
+                                        <div style={{ minHeight: '100px' }}>
+                                            <p style={{ fontSize: 'clamp(15px, 2vw, 17px)', color: '#475569', lineHeight: '1.6', marginBottom: '20px' }}>
+                                                {mistake.desc}
+                                            </p>
 
                                             {mistake.bullets && mistake.bullets.length > 0 && (
-                                                <ul className="medi-mistake-card-bullets-list">
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    padding: 0,
+                                                    margin: 0,
+                                                    display: 'grid',
+                                                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
+                                                    gap: '12px'
+                                                }}>
                                                     {mistake.bullets.map((bullet, bulletIdx) => (
-                                                        <li key={bulletIdx} className="medi-mistake-card-bullet-item">
-                                                            <CheckCircle size={16} className="medi-mistake-bullet-check" />
-                                                            <span>{bullet}</span>
+                                                        <li key={bulletIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                                                            <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0, marginTop: '2px' }} />
+                                                            <span style={{ fontSize: '14px', color: '#1e293b', fontWeight: '500', lineHeight: '1.4' }}>{bullet}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
                                             )}
                                         </div>
                                     </div>
-                                )
+                                );
                             })}
                         </div>
 
-                        {/* Right Arrow */}
+                        {/* Right Arrow - Desktop Only */}
                         <button
-                            className="medi-slider-nav-btn btn-right"
+                            className="medi-slider-nav-btn"
                             onClick={() => setMediActiveMistake((prev) => (prev === mediMistakes.length - 1 ? 0 : prev + 1))}
-                            aria-label="Next slide"
+                            style={{
+                                width: '50px',
+                                height: '50px',
+                                borderRadius: '50%',
+                                border: '1px solid #cbd5e1',
+                                backgroundColor: '#ffffff',
+                                color: '#0f1c2e',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                cursor: 'pointer',
+                                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+                                zIndex: 10,
+                                flexShrink: 0
+                            }}
                         >
                             <ChevronRight size={24} />
                         </button>
                     </div>
 
-                    {/* Progress Dots */}
-                    <div className="medi-slider-progress-dots">
+                    {/* Progress Dots / Mobile Nav */}
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        gap: '10px',
+                        marginTop: 'clamp(30px, 8vw, 50px)'
+                    }}>
                         {mediMistakes.map((_, idx) => (
                             <button
                                 key={idx}
-                                className={`medi-slider-dot ${mediActiveMistake === idx ? 'active' : ''}`}
                                 onClick={() => setMediActiveMistake(idx)}
-                                aria-label={`Go to slide ${idx + 1}`}
+                                style={{
+                                    width: mediActiveMistake === idx ? '30px' : '12px',
+                                    height: '10px',
+                                    borderRadius: '10px',
+                                    backgroundColor: mediActiveMistake === idx ? '#3b82f6' : '#cbd5e1',
+                                    border: 'none',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s ease'
+                                }}
                             />
                         ))}
                     </div>

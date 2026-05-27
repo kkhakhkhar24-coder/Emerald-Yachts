@@ -901,161 +901,147 @@ function BookExplora() {
                 </div>
             </section>
 
-
-
-
-            {/* ── FIRST-TIME LUXURY CRUISERS SECTION ────────── */}
-            <section className="medi-itinerary-showcase-section">
-                <div className="medi-itinerary-showcase-container">
+            {/* ── FIRST-TIME LUXURY CRUISERS SECTION - LIGHT NAVY THEME ────────── */}
+            <section className="medi-itinerary-showcase-section" style={{
+                padding: 'clamp(40px, 8vw, 90px) 15px',
+                backgroundColor: '#eef5fb' // NEW: Light Navy / Ice Blue background
+            }}>
+                <div className="medi-itinerary-showcase-container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
                     {/* Header */}
-                    <div className="medi-itinerary-showcase-header">
-                        <span className="medi-itinerary-eyebrow">
+                    <div className="medi-itinerary-showcase-header" style={{ textAlign: 'center', marginBottom: 'clamp(30px, 6vw, 60px)' }}>
+                        <span className="medi-itinerary-eyebrow" style={{
+                            display: 'inline-block',
+                            padding: '8px 16px',
+                            background: '#ffffff', // White badge on light navy background
+                            color: '#274472',
+                            fontSize: '11px',
+                            fontWeight: '800',
+                            letterSpacing: '0.15em',
+                            textTransform: 'uppercase',
+                            borderRadius: '40px',
+                            marginBottom: '15px',
+                            boxShadow: '0 2px 5px rgba(0,0,0,0.05)'
+                        }}>
                             FIRST-TIME LUXURY CRUISE GUIDANCE
                         </span>
 
-                        <h2 className="medi-itinerary-showcase-heading">
+                        <h2 className="medi-itinerary-showcase-heading" style={{
+                            fontSize: 'clamp(24px, 4vw, 42px)',
+                            color: '#0f1c2e',
+                            fontWeight: '700',
+                            lineHeight: '1.2',
+                            margin: '0 auto'
+                        }}>
                             Are Travel Advisors Worth It for First-Time Luxury Cruisers?
                         </h2>
 
-                        <div className="medi-itinerary-showcase-separator"></div>
+                        <div className="medi-itinerary-showcase-separator" style={{ width: '60px', height: '4px', background: '#3b82f6', margin: '20px auto 0', borderRadius: '10px' }}></div>
                     </div>
 
                     {/* Main Layout */}
                     <div
                         style={{
                             display: 'grid',
-                            gridTemplateColumns: '1.05fr 1fr',
-                            gap: '36px',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 500px), 1fr))',
+                            gap: '30px',
                             alignItems: 'stretch'
                         }}
                     >
 
-                        {/* LEFT FEATURE PANEL */}
+                        {/* LEFT FEATURE PANEL - (Already Dark Navy Gradient, pops against Light Navy bg) */}
                         <div
                             style={{
-                                background: 'linear-gradient(135deg, #274472 0%, #1c2f4a 100%)',
-                                borderRadius: '24px',
-                                padding: '50px',
+                                background: 'linear-gradient(135deg, #0f1c2e 0%, #1e293b 100%)',
+                                borderRadius: '30px',
+                                padding: 'clamp(30px, 5vw, 50px)',
                                 position: 'relative',
                                 overflow: 'hidden',
                                 display: 'flex',
                                 flexDirection: 'column',
-                                justifyContent: 'space-between',
-                                minHeight: '100%'
+                                justifyContent: 'center',
+                                boxShadow: '0 25px 50px rgba(15, 28, 46, 0.2)'
                             }}
                         >
-
                             {/* Decorative Glow */}
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    width: '320px',
-                                    height: '320px',
-                                    borderRadius: '50%',
-                                    background: 'rgba(255,255,255,0.05)',
-                                    top: '-120px',
-                                    right: '-120px'
-                                }}
-                            ></div>
+                            <div style={{
+                                position: 'absolute',
+                                width: '320px',
+                                height: '320px',
+                                borderRadius: '50%',
+                                background: 'rgba(59, 130, 246, 0.08)',
+                                top: '-120px',
+                                right: '-120px'
+                            }}></div>
 
-                            <div
-                                style={{
-                                    position: 'relative',
-                                    zIndex: 2
-                                }}
-                            >
-
-                                <span
-                                    style={{
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '8px',
-                                        padding: '10px 18px',
-                                        background: 'rgba(255,255,255,0.08)',
-                                        border: '1px solid rgba(255,255,255,0.12)',
-                                        borderRadius: '40px',
-                                        color: '#ffffff',
-                                        fontSize: '12px',
-                                        fontWeight: '700',
-                                        letterSpacing: '0.08em',
-                                        textTransform: 'uppercase',
-                                        marginBottom: '28px'
-                                    }}
-                                >
+                            <div style={{ position: 'relative', zIndex: 2 }}>
+                                <span style={{
+                                    display: 'inline-flex',
+                                    padding: '10px 18px',
+                                    background: 'rgba(255,255,255,0.08)',
+                                    border: '1px solid rgba(255,255,255,0.12)',
+                                    borderRadius: '40px',
+                                    color: '#ffffff',
+                                    fontSize: '11px',
+                                    fontWeight: '700',
+                                    textTransform: 'uppercase',
+                                    marginBottom: '25px'
+                                }}>
                                     Luxury Cruise Planning
                                 </span>
 
-                                <h3
-                                    style={{
-                                        fontSize: '42px',
-                                        lineHeight: '1.15',
-                                        color: '#ffffff',
-                                        fontWeight: '600',
-                                        margin: '0 0 26px 0'
-                                    }}
-                                >
+                                <h3 style={{
+                                    fontSize: 'clamp(28px, 5vw, 42px)',
+                                    lineHeight: '1.15',
+                                    color: '#ffffff',
+                                    fontWeight: '600',
+                                    margin: '0 0 20px 0'
+                                }}>
                                     For many travelers, absolutely.
                                 </h3>
 
-                                <p
-                                    style={{
-                                        fontSize: '18px',
-                                        lineHeight: '1.9',
-                                        color: 'rgba(255,255,255,0.82)',
-                                        margin: 0
-                                    }}
-                                >
+                                <p style={{
+                                    fontSize: 'clamp(16px, 2vw, 18px)',
+                                    lineHeight: '1.7',
+                                    color: '#cbd5e1',
+                                    margin: 0
+                                }}>
                                     First-time luxury cruisers often feel overwhelmed by the many decisions involved in planning a premium cruise experience. An experienced advisor simplifies the process while helping travelers feel more confident in their decisions.
                                 </p>
-
                             </div>
 
-                            {/* Bottom Stat Pills */}
-                            <div
-                                style={{
-                                    position: 'relative',
-                                    zIndex: 2,
-                                    marginTop: '40px',
-                                    display: 'flex',
-                                    flexWrap: 'wrap',
-                                    gap: '14px'
-                                }}
-                            >
+                            <div style={{
+                                position: 'relative',
+                                zIndex: 2,
+                                marginTop: '40px',
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                gap: '10px'
+                            }}>
                                 {[
                                     'Better expectations',
                                     'Higher satisfaction',
-                                    'Smoother travel experiences',
-                                    'More personalized luxury vacations'
+                                    'Smoother travel',
+                                    'Personalized vacations'
                                 ].map((item, i) => (
-                                    <div
-                                        key={i}
-                                        style={{
-                                            background: 'rgba(255,255,255,0.08)',
-                                            border: '1px solid rgba(255,255,255,0.12)',
-                                            backdropFilter: 'blur(10px)',
-                                            color: '#ffffff',
-                                            padding: '12px 18px',
-                                            borderRadius: '40px',
-                                            fontSize: '14px',
-                                            fontWeight: '600'
-                                        }}
-                                    >
+                                    <div key={i} style={{
+                                        background: 'rgba(255,255,255,0.1)',
+                                        border: '1px solid rgba(255,255,255,0.15)',
+                                        backdropFilter: 'blur(10px)',
+                                        color: '#ffffff',
+                                        padding: '10px 16px',
+                                        borderRadius: '40px',
+                                        fontSize: '13px',
+                                        fontWeight: '600'
+                                    }}>
                                         {item}
                                     </div>
                                 ))}
                             </div>
-
                         </div>
 
                         {/* RIGHT CONTENT CARDS */}
-                        <div
-                            style={{
-                                display: 'grid',
-                                gap: '22px'
-                            }}
-                        >
-
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                             {[
                                 'Cruise line comparisons',
                                 'Suite terminology',
@@ -1067,76 +1053,58 @@ function BookExplora() {
                                 <div
                                     key={i}
                                     style={{
-                                        background: '#ffffff',
-                                        border: '1px solid rgba(39,68,114,0.08)',
-                                        borderRadius: '20px',
-                                        padding: '24px 28px',
+                                        background: '#ffffff', // Crisp white cards pop against light navy bg
+                                        border: '1px solid #e2e8f0',
+                                        borderRadius: '24px',
+                                        padding: 'clamp(15px, 3vw, 24px)',
                                         display: 'flex',
                                         alignItems: 'center',
-                                        gap: '20px',
-                                        boxShadow: '0 12px 30px rgba(15,28,46,0.04)',
+                                        gap: 'clamp(12px, 3vw, 20px)',
+                                        boxShadow: '0 10px 20px rgba(15,28,46,0.03)',
                                         transition: 'all 0.3s ease'
                                     }}
                                 >
-
                                     {/* Number */}
-                                    <div
-                                        style={{
-                                            width: '54px',
-                                            height: '54px',
-                                            minWidth: '54px',
-                                            borderRadius: '16px',
-                                            background: '#e7f3f5',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            color: '#274472',
-                                            fontSize: '18px',
-                                            fontWeight: '700'
-                                        }}
-                                    >
+                                    <div style={{
+                                        width: 'clamp(40px, 8vw, 54px)',
+                                        height: 'clamp(40px, 8vw, 54px)',
+                                        minWidth: 'clamp(40px, 8vw, 54px)',
+                                        borderRadius: '12px',
+                                        background: '#f1f5f9',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#0f1c2e',
+                                        fontSize: 'clamp(14px, 2vw, 18px)',
+                                        fontWeight: '800'
+                                    }}>
                                         0{i + 1}
                                     </div>
 
-                                    {/* Content */}
                                     <div>
-
-                                        <span
-                                            style={{
-                                                display: 'block',
-                                                fontSize: '13px',
-                                                fontWeight: '700',
-                                                textTransform: 'uppercase',
-                                                letterSpacing: '0.08em',
-                                                color: '#274472',
-                                                opacity: 0.7,
-                                                marginBottom: '6px'
-                                            }}
-                                        >
-                                            First-Time Cruiser Challenge
+                                        <span style={{
+                                            display: 'block',
+                                            fontSize: '11px',
+                                            fontWeight: '800',
+                                            textTransform: 'uppercase',
+                                            color: '#3b82f6', // Azure Blue accent
+                                            marginBottom: '4px'
+                                        }}>
+                                            Selection Factor
                                         </span>
-
-                                        <h4
-                                            style={{
-                                                margin: 0,
-                                                fontSize: '20px',
-                                                lineHeight: '1.5',
-                                                color: '#274472',
-                                                fontWeight: '600'
-                                            }}
-                                        >
+                                        <h4 style={{
+                                            margin: 0,
+                                            fontSize: 'clamp(15px, 2.5vw, 18px)',
+                                            color: '#1e293b',
+                                            fontWeight: '600'
+                                        }}>
                                             {item}
                                         </h4>
-
                                     </div>
-
                                 </div>
                             ))}
-
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
@@ -1405,406 +1373,166 @@ function BookExplora() {
 
 
             {/* ── WHO SHOULD BOOK EXPLORA ───────────────────────────────────── */}
-            {/* ── EXPLORA VS BOOKING ONLINE YOURSELF ───────────────────────────────────── */}
-            <section className="medi-audience-section">
-                <div className="medi-audience-container">
+            {/* ── EXPLORA VS BOOKING ONLINE YOURSELF - LIGHT NAVY THEME ── */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#e6edf7', // NEW: Light Navy / Steel Blue background
+                fontFamily: 'sans-serif'
+            }}>
+                {/* PROPER CONTAINER: Limits width and centers the content */}
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
-                    {/* Header */}
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <span
-                            style={{
-                                display: 'inline-block',
-                                fontSize: '13px',
-                                fontWeight: '700',
-                                letterSpacing: '0.18em',
-                                textTransform: 'uppercase',
-                                color: '#274472',
-                                marginBottom: '16px'
-                            }}
-                        >
-                            LUXURY CRUISE BOOKING COMPARISON
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
+                        <span style={{
+                            color: '#274472',
+                            fontWeight: '800',
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px',
+                            display: 'block',
+                            marginBottom: '15px',
+                            opacity: 0.8
+                        }}>
+                            Booking Strategy
                         </span>
-
-                        <h2
-                            className="medi-section-heading"
-                            style={{
-                                textAlign: 'center',
-                                marginBottom: '18px'
-                            }}
-                        >
-                            Explora vs Booking Online Yourself
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: '#0f1c2e',
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Explora vs. Booking Online Yourself
                         </h2>
-
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
 
-                    {/* Split Layout */}
-                    <div
-                        className="medi-audience-split-layout"
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: '1fr 1fr',
-                            gap: '32px',
-                            alignItems: 'stretch'
-                        }}
-                    >
+                    {/* COMPARISON GRID */}
+                    <div style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '30px',
+                        justifyContent: 'center'
+                    }}>
 
-                        {/* LEFT SIDE */}
-                        <div
-                            style={{
-                                background: '#ffffff',
-                                borderRadius: '28px',
-                                padding: '42px',
-                                border: '1px solid rgba(39,68,114,0.08)',
-                                boxShadow: '0 18px 45px rgba(15,28,46,0.05)',
-                                position: 'relative',
-                                overflow: 'hidden',
-                                transition: 'all 0.35s ease',
-                                cursor: 'pointer'
-                            }}
-
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'translateY(-8px)';
-                                e.currentTarget.style.boxShadow = '0 30px 60px rgba(15,28,46,0.10)';
-                            }}
-
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'translateY(0px)';
-                                e.currentTarget.style.boxShadow = '0 18px 45px rgba(15,28,46,0.05)';
-                            }}
-                        >
-
-                            {/* Top Glow */}
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    width: '220px',
-                                    height: '220px',
-                                    borderRadius: '50%',
-                                    background: 'rgba(39,68,114,0.04)',
-                                    top: '-90px',
-                                    right: '-90px'
-                                }}
-                            ></div>
-
-                            <div style={{ position: 'relative', zIndex: 2 }}>
-
-                                <div
-                                    style={{
-                                        width: '72px',
-                                        height: '72px',
-                                        borderRadius: '22px',
-                                        background: '#eef5f7',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        marginBottom: '28px'
-                                    }}
-                                >
-                                    <Globe size={34} color="#274472" />
+                        {/* LEFT CARD: BOOKING DIRECTLY (The Standard Way) */}
+                        <div style={{
+                            flex: '1 1 480px',
+                            minWidth: '320px',
+                            backgroundColor: '#ffffff', // Crisp white pops against light navy bg
+                            borderRadius: '32px',
+                            padding: 'clamp(30px, 5vw, 50px)',
+                            border: '1px solid #e2e8f0',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            boxShadow: '0 10px 20px rgba(15,28,46,0.03)'
+                        }}>
+                            <div style={{ marginBottom: '35px' }}>
+                                <div style={{
+                                    width: '56px',
+                                    height: '56px',
+                                    backgroundColor: '#f1f8f9',
+                                    borderRadius: '16px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: '#274472',
+                                    marginBottom: '25px'
+                                }}>
+                                    <Globe size={28} />
                                 </div>
+                                <h3 style={{ fontSize: '26px', fontWeight: '700', color: '#0f1c2e', margin: '0 0 12px 0' }}>Booking Directly Online</h3>
+                                <p style={{ fontSize: '14px', color: '#64748b', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>Best for travelers who:</p>
+                            </div>
 
-                                <h3
-                                    style={{
-                                        fontSize: '34px',
-                                        color: '#274472',
-                                        margin: '0 0 12px 0',
-                                        fontWeight: '600'
-                                    }}
-                                >
-                                    Booking Directly Online
-                                </h3>
-
-                                <p
-                                    style={{
-                                        fontSize: '17px',
-                                        lineHeight: '1.8',
-                                        color: '#5c6b7a',
-                                        marginBottom: '32px'
-                                    }}
-                                >
-                                    Best for travelers who:
-                                </p>
-
-                                {/* Best For */}
-                                <div
-                                    style={{
-                                        display: 'grid',
-                                        gap: '18px',
-                                        marginBottom: '40px'
-                                    }}
-                                >
-                                    {[
-                                        'Already know exactly what they want',
-                                        'Have significant luxury cruise experience',
-                                        'Prefer fully self-managed travel planning'
-                                    ].map((item, i) => (
-                                        <div
-                                            key={i}
-                                            style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '16px'
-                                            }}
-                                        >
-
-                                            <div
-                                                style={{
-                                                    width: '44px',
-                                                    height: '44px',
-                                                    minWidth: '44px',
-                                                    borderRadius: '14px',
-                                                    background: '#eef5f7',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    color: '#274472',
-                                                    fontSize: '15px',
-                                                    fontWeight: '700'
-                                                }}
-                                            >
-                                                0{i + 1}
-                                            </div>
-
-                                            <span
-                                                style={{
-                                                    fontSize: '17px',
-                                                    color: '#274472',
-                                                    lineHeight: '1.6',
-                                                    fontWeight: '500'
-                                                }}
-                                            >
-                                                {item}
-                                            </span>
-
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '18px', flex: 1 }}>
+                                {[
+                                    'Already know exactly what they want',
+                                    'Have significant luxury cruise experience',
+                                    'Prefer fully self-managed travel planning'
+                                ].map((item, idx) => (
+                                    <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '15px' }}>
+                                        <div style={{ width: '22px', height: '22px', borderRadius: '50%', backgroundColor: '#f1f8f9', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#274472', fontSize: '11px', fontWeight: '800', flexShrink: 0, marginTop: '2px' }}>
+                                            0{idx + 1}
                                         </div>
-                                    ))}
-                                </div>
-
-                                {/* Challenges */}
-                                <div
-                                    style={{
-                                        background: '#f8fbfd',
-                                        borderRadius: '20px',
-                                        padding: '28px',
-                                        border: '1px solid rgba(39,68,114,0.06)'
-                                    }}
-                                >
-
-                                    <h4
-                                        style={{
-                                            fontSize: '14px',
-                                            fontWeight: '700',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '0.08em',
-                                            color: '#274472',
-                                            margin: '0 0 22px 0'
-                                        }}
-                                    >
-                                        Potential Challenges:
-                                    </h4>
-
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            flexWrap: 'wrap',
-                                            gap: '12px'
-                                        }}
-                                    >
-                                        {[
-                                            'Limited personalized guidance',
-                                            'Less strategic suite selection',
-                                            'Difficulty comparing luxury lines objectively',
-                                            'Increased planning responsibility'
-                                        ].map((item, i) => (
-                                            <div
-                                                key={i}
-                                                style={{
-                                                    padding: '12px 18px',
-                                                    background: '#ffffff',
-                                                    borderRadius: '40px',
-                                                    border: '1px solid rgba(39,68,114,0.08)',
-                                                    fontSize: '14px',
-                                                    color: '#274472',
-                                                    fontWeight: '600'
-                                                }}
-                                            >
-                                                {item}
-                                            </div>
-                                        ))}
+                                        <span style={{ fontSize: '16px', color: '#475569', lineHeight: '1.5', fontWeight: '500' }}>{item}</span>
                                     </div>
-
-                                </div>
-
+                                ))}
                             </div>
 
+                            {/* Challenges Sub-box */}
+                            <div style={{ marginTop: '40px', padding: '25px', backgroundColor: '#f8fafc', borderRadius: '20px', border: '1px solid #e2e8f0' }}>
+                                <p style={{ fontSize: '12px', fontWeight: '800', color: '#0f1c2e', textTransform: 'uppercase', marginBottom: '12px', letterSpacing: '1px' }}>Potential Challenges:</p>
+                                <p style={{ fontSize: '14px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>
+                                    Limited personalized guidance, less strategic suite selection, and increased responsibility for managing complex international logistics.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* RIGHT SIDE */}
-                        <div
-                            style={{
-                                background: 'linear-gradient(135deg, #274472 0%, #1c2f4a 100%)',
-                                borderRadius: '28px',
-                                padding: '42px',
-                                position: 'relative',
-                                overflow: 'hidden',
-                                transition: 'all 0.35s ease',
-                                cursor: 'pointer'
-                            }}
+                        {/* RIGHT CARD: THE ADVISOR ADVANTAGE (The Premium Way) */}
+                        <div style={{
+                            flex: '1 1 480px',
+                            minWidth: '320px',
+                            backgroundColor: '#0f1c2e', // Deep Navy Card
+                            borderRadius: '32px',
+                            padding: 'clamp(30px, 5vw, 50px)',
+                            color: '#ffffff',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            boxShadow: '0 30px 60px rgba(15, 28, 46, 0.2)',
+                            position: 'relative',
+                            overflow: 'hidden',
+                            border: '1px solid rgba(255, 255, 255, 0.05)'
+                        }}>
+                            {/* Subtle background glow */}
+                            <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '300px', height: '300px', background: 'radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%)', borderRadius: '50%' }}></div>
 
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'translateY(-8px)';
-                                e.currentTarget.style.boxShadow = '0 30px 70px rgba(15,28,46,0.18)';
-                            }}
-
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'translateY(0px)';
-                                e.currentTarget.style.boxShadow = 'none';
-                            }}
-                        >
-
-                            {/* Decorative Circle */}
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    width: '260px',
-                                    height: '260px',
-                                    borderRadius: '50%',
-                                    background: 'rgba(255,255,255,0.05)',
-                                    top: '-100px',
-                                    right: '-100px'
-                                }}
-                            ></div>
-
-                            <div style={{ position: 'relative', zIndex: 2 }}>
-
-                                <div
-                                    style={{
-                                        width: '72px',
-                                        height: '72px',
-                                        borderRadius: '22px',
-                                        background: 'rgba(255,255,255,0.08)',
-                                        border: '1px solid rgba(255,255,255,0.12)',
+                            <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', height: '100%' }}>
+                                <div style={{ marginBottom: '35px' }}>
+                                    <div style={{
+                                        width: '56px',
+                                        height: '56px',
+                                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                                        borderRadius: '16px',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
-                                        marginBottom: '28px'
-                                    }}
-                                >
-                                    <Crown size={34} color="#ffffff" />
+                                        color: '#3b82f6',
+                                        marginBottom: '25px'
+                                    }}>
+                                        <Crown size={28} />
+                                    </div>
+                                    <h3 style={{ fontSize: '26px', fontWeight: '700', color: '#ffffff', margin: '0 0 12px 0' }}>Via Luxury Cruise Advisor</h3>
+                                    <p style={{ fontSize: '14px', color: '#3b82f6', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>Best for travelers seeking:</p>
                                 </div>
 
-                                <h3
-                                    style={{
-                                        fontSize: '34px',
-                                        color: '#ffffff',
-                                        margin: '0 0 12px 0',
-                                        fontWeight: '600'
-                                    }}
-                                >
-                                    Booking Through a Luxury Cruise Advisor
-                                </h3>
-
-                                <p
-                                    style={{
-                                        fontSize: '17px',
-                                        lineHeight: '1.8',
-                                        color: 'rgba(255,255,255,0.78)',
-                                        marginBottom: '32px'
-                                    }}
-                                >
-                                    Best for travelers seeking:
-                                </p>
-
-                                {/* Benefits */}
-                                <div
-                                    style={{
-                                        display: 'grid',
-                                        gap: '18px',
-                                        marginBottom: '42px'
-                                    }}
-                                >
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px', flex: 1 }}>
                                     {[
-                                        'Personalized recommendations',
-                                        'VIP-level planning support',
-                                        'Luxury expertise',
-                                        'Better itinerary matching',
-                                        'Seamless travel coordination',
-                                        'Long-term travel relationships'
-                                    ].map((item, i) => (
-                                        <div
-                                            key={i}
-                                            style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '16px'
-                                            }}
-                                        >
-
-                                            <div
-                                                style={{
-                                                    width: '44px',
-                                                    height: '44px',
-                                                    minWidth: '44px',
-                                                    borderRadius: '14px',
-                                                    background: 'rgba(255,255,255,0.08)',
-                                                    border: '1px solid rgba(255,255,255,0.12)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    color: '#ffffff',
-                                                    fontSize: '15px',
-                                                    fontWeight: '700'
-                                                }}
-                                            >
-                                                0{i + 1}
-                                            </div>
-
-                                            <span
-                                                style={{
-                                                    fontSize: '17px',
-                                                    color: '#ffffff',
-                                                    lineHeight: '1.6',
-                                                    fontWeight: '500'
-                                                }}
-                                            >
-                                                {item}
-                                            </span>
-
+                                        'Personalized suite & deck recommendations',
+                                        'VIP-level planning & concierge support',
+                                        'Exclusive luxury cruise expertise',
+                                        'Strategic itinerary & amenity matching',
+                                        'Seamless coordination of international travel'
+                                    ].map((item, idx) => (
+                                        <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '15px' }}>
+                                            <CheckCircle size={20} style={{ color: '#3b82f6', flexShrink: 0, marginTop: '2px' }} />
+                                            <span style={{ fontSize: '16px', color: '#e2e8f0', lineHeight: '1.5', fontWeight: '400' }}>{item}</span>
                                         </div>
                                     ))}
                                 </div>
 
-                                {/* Bottom Highlight */}
-                                <div
-                                    style={{
-                                        background: 'rgba(255,255,255,0.06)',
-                                        border: '1px solid rgba(255,255,255,0.10)',
-                                        borderRadius: '22px',
-                                        padding: '30px'
-                                    }}
-                                >
-
-                                    <p
-                                        style={{
-                                            margin: 0,
-                                            fontSize: '17px',
-                                            lineHeight: '1.9',
-                                            color: 'rgba(255,255,255,0.90)',
-                                            fontWeight: '500'
-                                        }}
-                                    >
-                                        For many affluent travelers, the time savings and expertise alone justify working with an advisor.
+                                {/* Verdict Box */}
+                                <div style={{ marginTop: '40px', padding: '25px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                    <p style={{ fontSize: '15px', color: '#cbd5e1', margin: 0, lineHeight: '1.7', textAlign: 'center', fontStyle: 'italic' }}>
+                                        "For many affluent travelers, the time savings and specialized expertise alone justify the choice to work with an advisor."
                                     </p>
-
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
-
                 </div>
             </section>
 
@@ -2058,427 +1786,229 @@ function BookExplora() {
             </section>
 
 
-            {/* ── CTA SECTION ──────────────────────────────────────────────── */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
+            {/* ── FINAL CTA SECTION: THE EXPLORA EXPERIENCE ── */}
+<section className="medi-cta-main-section" style={{ 
+    padding: 'clamp(80px, 12vw, 150px) 0',
+    backgroundColor: '#0f1c2e', // Deep Luxury Navy
+    position: 'relative',
+    overflow: 'hidden',
+    fontFamily: 'sans-serif'
+}}>
+    {/* Subtle Background Pattern Layer */}
+    <div className="medi-cta-bg-pattern-layer" style={{ opacity: 0.3 }}></div>
 
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', zIndex: 2 }}>
+        
+        {/* 1. TOP MINI TAG */}
+        <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+            <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '10px 24px',
+                borderRadius: '100px',
+                background: 'rgba(59, 130, 246, 0.12)',
+                border: '1px solid rgba(59, 130, 246, 0.2)',
+                backdropFilter: 'blur(10px)',
+                color: '#3b82f6',
+                fontSize: '11px',
+                fontWeight: '800',
+                letterSpacing: '0.25em',
+                textTransform: 'uppercase'
+            }}>
+                The Ocean State of Mind
+            </div>
+        </div>
 
-                        {/* TOP MINI TAG */}
-                        <div
-                            style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '10px',
-                                padding: '12px 22px',
-                                borderRadius: '60px',
-                                background: 'rgba(255,255,255,0.08)',
-                                border: '1px solid rgba(255,255,255,0.10)',
-                                backdropFilter: 'blur(10px)',
-                                color: '#ffffff',
-                                fontSize: '12px',
-                                fontWeight: '700',
-                                letterSpacing: '0.14em',
-                                textTransform: 'uppercase',
-                                marginBottom: '28px'
-                            }}
-                        >
-                            MODERN ULTRA-LUXURY CRUISING
-                        </div>
+        {/* 2. HERO TITLE */}
+        <h2 style={{
+            maxWidth: '900px',
+            margin: '0 auto 20px',
+            lineHeight: '1.1',
+            fontSize: 'clamp(34px, 7vw, 68px)',
+            fontWeight: '700',
+            letterSpacing: '-0.03em',
+            color: '#ffffff',
+            textAlign: 'center'
+        }}>
+            Ready to Experience <br style={{ display: 'none' }} /> Explora Journeys?
+        </h2>
 
-                        {/* HERO TITLE */}
-                        <h2
-                            className="medi-cta-heading-white"
-                            style={{
-                                maxWidth: '980px',
-                                margin: '0 auto 24px',
-                                lineHeight: '1.08',
-                                fontSize: '72px',
-                                fontWeight: '600',
-                                letterSpacing: '-0.03em'
-                            }}
-                        >
-                            Ready to Experience Explora Journeys?
-                        </h2>
+        <div style={{
+            width: '60px',
+            height: '3px',
+            background: '#3b82f6',
+            margin: '0 auto 40px',
+            borderRadius: '10px'
+        }}></div>
 
-                        <div
-                            style={{
-                                width: '90px',
-                                height: '4px',
-                                borderRadius: '10px',
-                                background: 'rgba(255,255,255,0.85)',
-                                margin: '0 auto 34px'
-                            }}
-                        ></div>
+        <p style={{
+            maxWidth: '800px',
+            margin: '0 auto 60px',
+            fontSize: 'clamp(17px, 2.5vw, 20px)',
+            lineHeight: '1.8',
+            color: '#cbd5e1',
+            textAlign: 'center',
+            fontWeight: '400'
+        }}>
+            Luxury cruising is deeply personal. Discover a contemporary interpretation of life at sea designed for those who value space, wellness, and unhurried discovery.
+        </p>
 
-                        {/* INTRO */}
-                        <p
-                            className="medi-cta-paragraph-white"
-                            style={{
-                                maxWidth: '820px',
-                                margin: '0 auto 70px',
-                                fontSize: '21px',
-                                lineHeight: '1.9',
-                                opacity: 0.92
-                            }}
-                        >
-                            Luxury cruising is deeply personal.
-                        </p>
-
-                        {/* UNIQUE CURVED EXPERIENCE CARDS */}
-                        <div
-                            style={{
-                                display: 'grid',
-                                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                                gap: '24px',
-                                marginBottom: '90px'
-                            }}
-                        >
-                            {[
-                                'Contemporary elegance',
-                                'Spacious suites',
-                                'Wellness-focused travel',
-                                'Boutique luxury',
-                                'Personalized service',
-                                'Relaxed sophistication',
-                                'Destination immersion'
-                            ].map((item, idx) => (
-                                <div
-                                    key={idx}
-                                    style={{
-                                        position: 'relative',
-                                        background: 'rgba(255,255,255,0.06)',
-                                        border: '1px solid rgba(255,255,255,0.10)',
-                                        borderRadius: idx % 2 === 0
-                                            ? '60px 24px 60px 24px'
-                                            : '24px 60px 24px 60px',
-                                        padding: '34px 28px',
-                                        minHeight: '180px',
-                                        overflow: 'hidden',
-                                        transition: 'all 0.4s ease',
-                                        cursor: 'pointer'
-                                    }}
-
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-10px) rotate(-1deg)';
-                                        e.currentTarget.style.background = 'rgba(255,255,255,0.11)';
-                                        e.currentTarget.style.boxShadow = '0 30px 50px rgba(0,0,0,0.18)';
-                                    }}
-
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0px) rotate(0deg)';
-                                        e.currentTarget.style.background = 'rgba(255,255,255,0.06)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                    }}
-                                >
-
-                                    {/* Decorative Circle */}
-                                    <div
-                                        style={{
-                                            position: 'absolute',
-                                            width: '110px',
-                                            height: '110px',
-                                            borderRadius: '50%',
-                                            background: 'rgba(255,255,255,0.05)',
-                                            top: '-30px',
-                                            right: '-20px'
-                                        }}
-                                    ></div>
-
-                                    <div
-                                        style={{
-                                            position: 'relative',
-                                            zIndex: 2
-                                        }}
-                                    >
-
-                                        <span
-                                            style={{
-                                                display: 'inline-flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                width: '46px',
-                                                height: '46px',
-                                                borderRadius: '50%',
-                                                background: 'rgba(255,255,255,0.10)',
-                                                color: '#ffffff',
-                                                fontWeight: '700',
-                                                fontSize: '15px',
-                                                marginBottom: '28px'
-                                            }}
-                                        >
-                                            0{idx + 1}
-                                        </span>
-
-                                        <h4
-                                            style={{
-                                                fontSize: '24px',
-                                                lineHeight: '1.45',
-                                                color: '#ffffff',
-                                                margin: 0,
-                                                fontWeight: '600'
-                                            }}
-                                        >
-                                            {item}
-                                        </h4>
-
-                                    </div>
-
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* FLOATING GLASS PANEL */}
-                        <div
-                            style={{
-                                position: 'relative',
-                                maxWidth: '1120px',
-                                margin: '0 auto 90px',
-                                padding: '55px',
-                                borderRadius: '38px',
-                                background: 'rgba(255,255,255,0.08)',
-                                border: '1px solid rgba(255,255,255,0.12)',
-                                backdropFilter: 'blur(18px)',
-                                overflow: 'hidden'
-                            }}
-                        >
-
-                            {/* Background Accent */}
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    width: '340px',
-                                    height: '340px',
-                                    borderRadius: '50%',
-                                    background: 'rgba(255,255,255,0.04)',
-                                    top: '-160px',
-                                    right: '-100px'
-                                }}
-                            ></div>
-
-                            <div
-                                style={{
-                                    position: 'relative',
-                                    zIndex: 2,
-                                    display: 'grid',
-                                    gridTemplateColumns: '1.1fr 0.9fr',
-                                    gap: '50px',
-                                    alignItems: 'center'
-                                }}
-                            >
-
-                                {/* LEFT CONTENT */}
-                                <div>
-
-                                    <h3
-                                        style={{
-                                            fontSize: '42px',
-                                            lineHeight: '1.25',
-                                            color: '#ffffff',
-                                            margin: '0 0 26px 0',
-                                            fontWeight: '600'
-                                        }}
-                                    >
-                                        Explora Journeys offers one of the most compelling introductions to modern ultra-luxury cruising.
-                                    </h3>
-
-                                    <p
-                                        className="medi-cta-paragraph-white"
-                                        style={{
-                                            margin: 0,
-                                            lineHeight: '1.9',
-                                            opacity: 0.88
-                                        }}
-                                    >
-                                        With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help travelers confidently select the ideal luxury cruise experience based on their travel style and expectations.
-                                    </p>
-
-                                </div>
-
-                                {/* RIGHT LIST */}
-                                <div
-                                    style={{
-                                        display: 'grid',
-                                        gap: '18px'
-                                    }}
-                                >
-                                    {[
-                                        'Mediterranean luxury cruises',
-                                        'Caribbean voyages',
-                                        'Boutique ship experiences',
-                                        'Wellness-focused travel',
-                                        'Ultra-luxury ocean cruising'
-                                    ].map((item, idx) => (
-                                        <div
-                                            key={idx}
-                                            style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '18px',
-                                                padding: '20px 22px',
-                                                borderRadius: '20px',
-                                                background: 'rgba(255,255,255,0.06)',
-                                                border: '1px solid rgba(255,255,255,0.08)'
-                                            }}
-                                        >
-
-                                            <div
-                                                style={{
-                                                    width: '42px',
-                                                    height: '42px',
-                                                    borderRadius: '14px',
-                                                    background: 'rgba(255,255,255,0.10)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    color: '#ffffff',
-                                                    fontWeight: '700'
-                                                }}
-                                            >
-                                                ✓
-                                            </div>
-
-                                            <span
-                                                style={{
-                                                    color: '#ffffff',
-                                                    fontSize: '17px',
-                                                    lineHeight: '1.6'
-                                                }}
-                                            >
-                                                {item}
-                                            </span>
-
-                                        </div>
-                                    ))}
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        {/* BOTTOM ACTION AREA */}
-                        <div
-                            style={{
-                                display: 'grid',
-                                gridTemplateColumns: '1fr auto',
-                                gap: '30px',
-                                alignItems: 'center',
-                                background: '#ffffff',
-                                borderRadius: '34px',
-                                padding: '42px',
-                                marginBottom: '60px'
-                            }}
-                        >
-
-                            {/* LEFT */}
-                            <div>
-
-                                <span
-                                    style={{
-                                        display: 'block',
-                                        fontSize: '13px',
-                                        fontWeight: '700',
-                                        textTransform: 'uppercase',
-                                        letterSpacing: '0.12em',
-                                        color: '#274472',
-                                        opacity: 0.7,
-                                        marginBottom: '16px'
-                                    }}
-                                >
-                                    Luxury Cruise Expertise
-                                </span>
-
-                                <h3
-                                    style={{
-                                        fontSize: '36px',
-                                        lineHeight: '1.35',
-                                        color: '#274472',
-                                        margin: 0,
-                                        fontWeight: '600',
-                                        maxWidth: '760px'
-                                    }}
-                                >
-                                    Trips &amp; Ships Luxury Travel provides expert guidance backed by real-world luxury travel expertise.
-                                </h3>
-
-                            </div>
-
-                            {/* RIGHT */}
-                            <button
-                                className="medi-primary-cta-button"
-                                style={{
-                                    minWidth: '340px',
-                                    minHeight: '70px',
-                                    fontSize: '16px',
-                                    justifyContent: 'center',
-                                    transition: 'all 0.35s ease'
-                                }}
-
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(-5px)';
-                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.18)';
-                                }}
-
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(0px)';
-                                    e.currentTarget.style.boxShadow = 'none';
-                                }}
-                            >
-                                <Phone size={18} />
-                                Schedule a Personalized Luxury Cruise Consultation Today
-                            </button>
-
-                        </div>
-
-                        {/* FLOATING LINKS */}
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                flexWrap: 'wrap',
-                                gap: '18px'
-                            }}
-                        >
-                            {[
-                                'Explora Journeys Official Website',
-                                'Cruise Lines International Association (CLIA)',
-                                'Condé Nast Traveler',
-                                'Travel Leaders Network'
-                            ].map((item, idx) => (
-                                <div
-                                    key={idx}
-                                    style={{
-                                        padding: '14px 24px',
-                                        borderRadius: '100px',
-                                        background: 'rgba(255,255,255,0.06)',
-                                        border: '1px solid rgba(255,255,255,0.10)',
-                                        color: 'rgba(255,255,255,0.88)',
-                                        fontSize: '14px',
-                                        fontWeight: '600',
-                                        letterSpacing: '0.02em',
-                                        transition: 'all 0.35s ease',
-                                        cursor: 'pointer'
-                                    }}
-
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-4px)';
-                                        e.currentTarget.style.background = 'rgba(255,255,255,0.12)';
-                                    }}
-
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0px)';
-                                        e.currentTarget.style.background = 'rgba(255,255,255,0.06)';
-                                    }}
-                                >
-                                    {item}
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
+        {/* 3. EXPERIENCE CARDS GRID */}
+        <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gap: '20px',
+            marginBottom: '100px'
+        }}>
+            {[
+                'Contemporary elegance',
+                'Spacious suites',
+                'Wellness-focused travel',
+                'Boutique luxury',
+                'Personalized service',
+                'Relaxed sophistication',
+                'Destination immersion'
+            ].map((item, idx) => (
+                <div
+                    key={idx}
+                    style={{
+                        background: 'rgba(255,255,255,0.03)',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                        borderRadius: idx % 2 === 0 ? '24px 8px 24px 8px' : '8px 24px 8px 24px',
+                        padding: '30px',
+                        minHeight: '130px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        transition: 'all 0.3s ease'
+                    }}
+                >
+                    <span style={{ fontSize: '13px', fontWeight: '800', color: '#3b82f6', opacity: 0.8 }}>0{idx + 1}</span>
+                    <h4 style={{ fontSize: '18px', color: '#ffffff', margin: 0, fontWeight: '600', lineHeight: '1.4' }}>{item}</h4>
                 </div>
-            </section>
+            ))}
+        </div>
+
+        {/* 4. FLOATING GLASS PANEL - EXPERT INSIGHT */}
+        <div style={{
+            position: 'relative',
+            padding: 'clamp(35px, 6vw, 65px)',
+            borderRadius: '40px',
+            background: 'rgba(255,255,255,0.04)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(20px)',
+            marginBottom: '60px',
+            overflow: 'hidden'
+        }}>
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 450px), 1fr))',
+                gap: '50px',
+                alignItems: 'center'
+            }}>
+                <div>
+                    <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.25', color: '#ffffff', marginBottom: '20px', fontWeight: '600' }}>
+                        A compelling introduction to modern luxury.
+                    </h3>
+                    <p style={{ margin: 0, lineHeight: '1.8', color: '#cbd5e1', fontSize: '16px' }}>
+                        With over four decades of expertise, Angela Hughes and her team help you navigate the sophisticated world of ultra-luxury cruising to find your perfect match.
+                    </p>
+                </div>
+
+                <div style={{ display: 'grid', gap: '12px' }}>
+                    {[
+                        'Strategic Suite Selection',
+                        'Itinerary & Lifestyle Matching',
+                        'Exclusive Onboard Amenities',
+                        'Seamless Global Coordination'
+                    ].map((item, idx) => (
+                        <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '14px 20px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.05)' }}>
+                            <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffffff' }}>
+                                <CheckCircle size={12} />
+                            </div>
+                            <span style={{ color: '#ffffff', fontSize: '15px', fontWeight: '500' }}>{item}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
+        {/* 5. REFINED ACTION CARD - THE DIRECT CTA */}
+        <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: '40px',
+            background: '#ffffff',
+            borderRadius: '40px',
+            padding: 'clamp(35px, 6vw, 60px)',
+            boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.2)',
+            border: '1px solid #f1f5f9',
+            marginBottom: '60px',
+            position: 'relative',
+            overflow: 'hidden',
+            textAlign: 'left'
+        }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', background: 'linear-gradient(90deg, #3b82f6 0%, #0f1c2e 100%)' }}></div>
+
+            <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
+                    <div style={{ width: '25px', height: '1px', backgroundColor: '#3b82f6' }}></div>
+                    <span style={{ fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#3b82f6' }}>Expert selection</span>
+                </div>
+                <h3 style={{ fontSize: 'clamp(24px, 4vw, 34px)', lineHeight: '1.2', color: '#0f1c2e', margin: 0, fontWeight: '700', letterSpacing: '-0.02em' }}>
+                    Expert guidance backed by real-world luxury travel expertise.
+                </h3>
+                <p style={{ fontSize: '16px', color: '#64748b', marginTop: '15px', lineHeight: '1.6' }}>
+                    Connect with our specialized advisors to ensure your luxury cruise is flawlessly curated.
+                </p>
+            </div>
+
+            <div style={{ flex: '0 1 400px', width: '100%' }}>
+                <button style={{
+                    width: '100%',
+                    padding: '22px 40px',
+                    fontSize: '14px',
+                    fontWeight: '800',
+                    textTransform: 'uppercase',
+                    letterSpacing: '2px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: '100px',
+                    background: '#0f1c2e',
+                    color: '#ffffff',
+                    border: 'none',
+                    cursor: 'pointer',
+                    boxShadow: '0 10px 25px rgba(15, 28, 46, 0.2)',
+                    transition: 'transform 0.3s ease'
+                }}>
+                    <Phone size={18} style={{ marginRight: '12px', color: '#3b82f6' }} />
+                    Schedule Consultation
+                </button>
+                <p style={{ textAlign: 'center', fontSize: '11px', color: '#94a3b8', marginTop: '15px', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: '700' }}>
+                    Priority Access for 2026 Voyages
+                </p>
+            </div>
+        </div>
+
+        {/* 6. FOOTER RESOURCE PILLS */}
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px', opacity: 0.7 }}>
+            {[
+                'Official Brand Partner',
+                'CLIA Accredited',
+                'Travel Leaders Network',
+                'Condé Nast Rated'
+            ].map((item, idx) => (
+                <div key={idx} style={{ padding: '10px 22px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff', fontSize: '12px', fontWeight: '500', letterSpacing: '0.05em' }}>
+                    {item}
+                </div>
+            ))}
+        </div>
+
+    </div>
+</section>
 
 
         </>

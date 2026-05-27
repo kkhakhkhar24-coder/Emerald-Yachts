@@ -1281,7 +1281,7 @@ function ExploraJourneysVsSilversea() {
       {/* VIDEO SECTION 2: SILVERSEA HERITAGE EXPERIENCE */}
       <section style={{
         padding: '100px 20px',
-        backgroundColor: '#f1f5f9', // Soft Luxury Slate Background
+        backgroundColor: '#0f1c2e', // Luxury Navy Background
         fontFamily: 'sans-serif',
         overflow: 'hidden'
       }}>
@@ -1319,7 +1319,7 @@ function ExploraJourneysVsSilversea() {
 
               <h2 style={{
                 fontSize: 'clamp(28px, 4vw, 40px)',
-                color: '#0f1c2e',
+                color: '#ffffff', // Contrast White
                 fontWeight: '700',
                 lineHeight: '1.2',
                 marginBottom: '25px',
@@ -1328,7 +1328,7 @@ function ExploraJourneysVsSilversea() {
                 The Art of Silversea: <br /> Defining Ultra-Luxury
               </h2>
 
-              <p style={{ fontSize: '17px', color: '#475569', lineHeight: '1.8', maxWidth: '550px' }}>
+              <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.8', maxWidth: '550px' }}>
                 Discover a world of timeless flavors, unrivaled comfort, and unmatched access.
                 From hidden harbors to coveted cities, see how Silversea elevates the journey
                 of a lifetime through personalized butler service and traditional refinement.
@@ -1344,8 +1344,8 @@ function ExploraJourneysVsSilversea() {
                 right: '-20px',
                 width: '100px',
                 height: '100px',
-                borderTop: '4px solid rgba(15, 28, 46, 0.1)',
-                borderRight: '4px solid rgba(15, 28, 46, 0.1)',
+                borderTop: '4px solid rgba(255, 255, 255, 0.15)', // Light border for dark background
+                borderRight: '4px solid rgba(255, 255, 255, 0.15)',
                 borderRadius: '0 30px 0 0',
                 zIndex: 0
               }}></div>
@@ -1354,7 +1354,7 @@ function ExploraJourneysVsSilversea() {
                 position: 'relative',
                 borderRadius: '30px',
                 overflow: 'hidden',
-                boxShadow: '0 30px 60px -15px rgba(15, 28, 46, 0.25)',
+                boxShadow: '0 30px 60px -15px rgba(0, 0, 0, 0.4)', // Darker shadow for depth
                 aspectRatio: '16/9',
                 backgroundColor: '#000',
                 border: '1px solid #ffffff',
