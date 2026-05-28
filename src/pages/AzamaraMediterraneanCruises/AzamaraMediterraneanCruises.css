@@ -7112,3 +7112,47 @@
 .bco-mistake-desc {
     color: #ffffff !important;
 }
+
+/* ============================================================
+   RESPONSIVE DESIGN: CENTER ALL SECTION HEADINGS
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    /* Main H2/H3 Section Headings */
+    .medi-premium-heading,
+    .medi-excel-main-title,
+    .medi-diff-main-title,
+    .medi-itinerary-showcase-heading,
+    .medi-luxury-heading,
+    .medi-section-heading,
+    .medi-mistakes-slider-title,
+    .medi-editorial-title,
+    .medi-cta-heading-white,
+    .medi-intro-section h2,
+    .medi-excel-section h2,
+    .medi-diff-section h2,
+    .medi-itinerary-showcase-section h2,
+    .medi-video-section h2,
+    .medi-expert-editorial-section h2,
+    .medi-prestige-plaque-wrapper h2,
+    .medi-faq-main-section h2,
+    .medi-cta-main-section h2,
+    section h2,
+    h2[style] {
+        text-align: center !important;
+    }
+
+    /* Ensure heading separators / accent bars are also centered when headings are centered */
+    .medi-premium-separator,
+    .medi-excel-separator,
+    .medi-diff-separator,
+    .medi-itinerary-showcase-separator,
+    .medi-heading-separator-bar,
+    .medi-mistakes-slider-separator,
+    .medi-editorial-accent-bar,
+    .medi-cta-separator-white {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        background: linear-gradient(90deg, transparent 0%, var(--medi-navy) 50%, transparent 100%) !important;
+    }
+}

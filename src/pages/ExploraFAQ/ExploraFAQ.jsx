@@ -12,7 +12,8 @@ import {
     ChevronRight, Crown, Phone, Plus, Minus,
     Globe, LayoutList, Heart, Utensils, Sun, Award,
     Baby, Moon, Music,
-    Mic, FileText, GraduationCap, Waves
+    Mic, FileText, GraduationCap, Waves,
+    Maximize
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -439,100 +440,143 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* PREMIUM INTRO SECTION */}
+            {/* ── PREMIUM INTRO SECTION - FIXED HOVER & ALIGNMENT ── */}
             <section className="medi-intro-section medi-premium-intro-section">
+                {/* STYLE BLOCK: Handles the hover interaction for icons */}
+                <style>{`
+        .medi-immersion-card-item:hover .medi-immersion-icon-box {
+            background-color: #274472 !important;
+            border-color: #274472 !important;
+            transform: scale(1.1);
+        }
+        /* This forces the Lucide icon (SVG) to turn white on hover */
+        .medi-immersion-card-item:hover .medi-immersion-icon-box svg {
+            stroke: #ffffff !important;
+        }
+    `}</style>
+
                 <div className="medi-premium-intro-glow-one"></div>
                 <div className="medi-premium-intro-glow-two"></div>
                 <div className="medi-intro-container">
-                    <div className="medi-premium-intro-grid">
+                    <div className="medi-premium-intro-grid" style={{
+                        display: 'grid',
+                        gridTemplateColumns: window.innerWidth <= 1024 ? '1fr' : '1.2fr 0.8fr',
+                        gap: '60px',
+                        alignItems: 'start'
+                    }}>
 
-                        {/* Title & Core editorial intro */}
-                        <div className="medi-premium-editorial-block">
-                            <span className="medi-premium-mini-badge">MODERN ULTRA-LUXURY</span>
-                            <h2 className="medi-premium-heading">Discover Why Luxury Travelers Are Choosing Explora Journeys</h2>
-                            <div className="medi-premium-separator"></div>
+                        {/* Left Column: Editorial intro */}
+                        <div className="medi-premium-editorial-block" style={{
+                            textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: window.innerWidth <= 1024 ? 'center' : 'flex-start'
+                        }}>
+                            {/* EYEBROW BADGE - Responsive Centering */}
+                            <span className="medi-premium-mini-badge" style={{
+                                display: 'inline-block',
+                                fontSize: '12px',
+                                fontWeight: '700',
+                                color: '#274472',
+                                letterSpacing: '0.25em',
+                                textTransform: 'uppercase',
+                                marginBottom: '16px',
+                                borderLeft: window.innerWidth <= 1024 ? 'none' : '2px solid #274472',
+                                paddingLeft: window.innerWidth <= 1024 ? '0' : '10px'
+                            }}>
+                                MODERN ULTRA-LUXURY
+                            </span>
 
-                            <p className="medi-premium-lead-text">
-                                Explora Journeys has quickly become one of the most discussed names in ultra-luxury cruising. Created by the MSC Group, Explora was specifically designed to bring a modern, lifestyle-focused approach to the world of high-end ocean travel.
+                            <h2 className="medi-premium-heading" style={{
+                                color: '#274472',
+                                fontSize: 'clamp(28px, 5vw, 48px)',
+                                lineHeight: '1.2',
+                                margin: '0 0 20px 0'
+                            }}>
+                                Discover Why Luxury Travelers Are Choosing Explora Journeys
+                            </h2>
+
+                            <div className="medi-premium-separator" style={{
+                                width: '80px',
+                                height: '3px',
+                                background: `linear-gradient(90deg, #274472 0%, transparent 100%)`,
+                                marginBottom: '36px',
+                                margin: window.innerWidth <= 1024 ? '0 auto 36px' : '0 0 36px'
+                            }}></div>
+
+                            <p className="medi-premium-lead-text" style={{
+                                fontSize: '18px',
+                                lineHeight: '1.8',
+                                color: '#475569',
+                                marginBottom: '40px'
+                            }}>
+                                Explora Journeys has quickly become one of the most discussed names in ultra-luxury cruising. Created by the MSC Group, Explora was specifically designed to bring a modern, lifestyle-focused approach to high-end ocean travel.
                             </p>
 
-                            <div className="medi-immersion-list-wrapper">
-                                <p className="medi-immersion-lead-in">
-                                    Unlike traditional luxury cruise lines, Explora Journeys was built around a philosophy emphasizing:
+                            <div className="medi-immersion-list-wrapper" style={{ width: '100%' }}>
+                                <p className="medi-immersion-lead-in" style={{
+                                    fontSize: '17px',
+                                    color: '#1e293b',
+                                    marginBottom: '24px',
+                                    fontWeight: '600'
+                                }}>
+                                    Explora Journeys emphasizes a philosophy of:
                                 </p>
-                                <div className="medi-immersion-cards-grid">
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Sparkles size={20} />
+                                <div className="medi-immersion-cards-grid" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
+                                    gap: '20px',
+                                    textAlign: 'left'
+                                }}>
+                                    {[
+                                        { t: "Spacious oceanfront suites", i: <Maximize size={20} /> },
+                                        { t: "Wellness-focused travel", i: <Sun size={20} /> },
+                                        { t: "Boutique ship atmosphere", i: <Ship size={20} /> },
+                                        { t: "Culinary excellence", i: <Utensils size={20} /> },
+                                        { t: "Relaxed sophistication", i: <Crown size={20} /> },
+                                        { t: "Contemporary elegance", i: <Anchor size={20} /> }
+                                    ].map((item, idx) => (
+                                        <div key={idx} className="medi-immersion-card-item">
+                                            {/* FIXED: Removed hardcoded color here, allowing the style block above to work */}
+                                            <div className="medi-immersion-icon-box" style={{
+                                                transition: 'all 0.3s ease',
+                                                color: '#274472'
+                                            }}>
+                                                {item.i}
+                                            </div>
+                                            <span className="medi-immersion-card-title" style={{ color: '#1e293b' }}>{item.t}</span>
                                         </div>
-                                        <span className="medi-immersion-card-title">Spacious oceanfront suites</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Sun size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Wellness-focused travel</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Ship size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Boutique ship atmosphere</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Utensils size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Culinary excellence</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Crown size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Relaxed sophistication</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Anchor size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Contemporary European elegance</span>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
 
                         {/* Signature Expert Block */}
-                        <div className="medi-premium-signature-panel">
-                            <div className="medi-premium-signature-glow"></div>
+                        <div className="medi-premium-signature-panel" style={{
+                            marginTop: window.innerWidth <= 1024 ? '40px' : '0',
+                            borderLeftColor: '#274472'
+                        }}>
                             <div className="medi-premium-signature-content">
                                 <div className="medi-expert-profile-row">
-                                    <div className="medi-expert-avatar-frame">
+                                    <div className="medi-expert-avatar-frame" style={{ background: '#274472' }}>
                                         <Star size={24} className="medi-star-accent" />
                                     </div>
                                     <div>
                                         <span className="medi-expert-card-subtitle">LIFETIME ADVISOR</span>
-                                        <h3 className="medi-expert-card-title">Angela Hughes</h3>
+                                        <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
                                     </div>
                                 </div>
-
-                                <p className="medi-premium-expert-desc">
-                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers determine whether Explora aligns with their travel style, expectations, and luxury preferences.
+                                <p className="medi-premium-expert-desc" style={{ color: '#475569' }}>
+                                    At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers determine whether Explora aligns with their travel style.
                                 </p>
-
                                 <div className="medi-premium-expert-quote-box">
-                                    <span className="medi-quote-mark">"</span>
-                                    <p className="medi-premium-expert-quote-text">
-                                        With more than 40 years in luxury travel, visits to over 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year, Angela Hughes offers unmatched insight into whether Explora Journeys is right for you.
+                                    <span className="medi-quote-mark" style={{ color: '#274472' }}>"</span>
+                                    <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
+                                        With more than 40 years in luxury travel, Angela Hughes offers unmatched insight into the world of ultra-luxury cruising.
                                     </p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -552,7 +596,7 @@ function ExploraJourneys() {
                     <div style={{ marginBottom: '50px' }}>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
-                            color: '#0f1c2e', // Dark Slate Blue for contrast
+                            color: "#274472",
                             fontWeight: '700',
                             marginBottom: '20px',
                             letterSpacing: '-0.02em',
@@ -714,7 +758,7 @@ function ExploraJourneys() {
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
-                            color: '#0f1c2e',
+                            color: "#274472",
                             fontWeight: '700',
                             marginBottom: '20px',
                             letterSpacing: '-0.02em',
@@ -722,7 +766,7 @@ function ExploraJourneys() {
                         }}>
                             Is Explora Journeys Truly Luxury?
                         </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
 
                     {/* HERO IMPACT PANEL - Deep Navy "Yes" Banner */}
@@ -1074,34 +1118,51 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* IS EXPLORA TRULY LUXURY */}
+            {/* ── IS EXPLORA GOOD FOR FIRST-TIME LUXURY CRUISERS? ── */}
             <section className="medi-luxury-definition-section">
                 <div className="medi-luxury-definition-container">
 
                     <div className="medi-luxury-content-wrapper">
 
-                        {/* TOP HEADER */}
-                        <span className="medi-luxury-eyebrow-label">
-                            FIRST-TIME LUXURY CRUISING
-                        </span>
+                        {/* BLOCK 1: ADVISORY OVERVIEW */}
+                        <div style={{ textAlign: window.innerWidth <= 1024 ? 'center' : 'left' }}>
+                            <span className="medi-luxury-eyebrow-label" style={{
+                                textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                                display: 'block',
+                                width: '100%',
+                                color: '#274472',
+                                fontWeight: '700',
+                                letterSpacing: '0.25em'
+                            }}>
+                                FIRST-TIME LUXURY CRUISING
+                            </span>
 
-                        <h2 className="medi-luxury-heading">
-                            Is Explora Good for First-Time Luxury Cruisers?
-                        </h2>
+                            <h2 className="medi-luxury-heading" style={{
+                                color: '#274472', // Brand Navy
+                                textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                                fontSize: 'clamp(28px, 5vw, 42px)',
+                                lineHeight: '1.2',
+                                marginTop: '12px'
+                            }}>
+                                Is Explora Good for First-Time Luxury Cruisers?
+                            </h2>
 
-                        <p className="medi-luxury-paragraph">
-                            Absolutely.
-                        </p>
+                            <p className="medi-luxury-paragraph" style={{ fontWeight: '700', fontSize: '20px' }}>
+                                Absolutely.
+                            </p>
 
-                        <p className="medi-luxury-paragraph">
-                            Explora is particularly appealing for travelers new to luxury cruising because of its:
-                        </p>
+                            <p className="medi-luxury-paragraph">
+                                Explora is particularly appealing for travelers new to luxury cruising because of its:
+                            </p>
+                        </div>
 
                         {/* FEATURE GRID */}
-                        <div className="medi-luxury-appreciated-box">
-
-                            <div className="medi-luxury-features-grid">
-
+                        <div className="medi-luxury-appreciated-box" style={{ backgroundColor: '#f8fafc' }}>
+                            <div className="medi-luxury-features-grid" style={{
+                                display: 'grid',
+                                gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
+                                gap: '15px'
+                            }}>
                                 {[
                                     'Relaxed atmosphere',
                                     'Contemporary luxury style',
@@ -1110,179 +1171,104 @@ function ExploraJourneys() {
                                     'Less formal environment',
                                     'Boutique ship size'
                                 ].map((feature, i) => (
-                                    <div
-                                        key={i}
-                                        className="medi-luxury-feature"
-                                    >
-
-                                        <CheckCircle
-                                            size={20}
-                                            className="medi-feature-check-icon"
-                                        />
-
-                                        <span>{feature}</span>
-
+                                    <div key={i} className="medi-luxury-feature">
+                                        <CheckCircle size={18} style={{ color: '#274472' }} className="medi-feature-check-icon" />
+                                        <span style={{ color: '#475569' }}>{feature}</span>
                                     </div>
                                 ))}
-
                             </div>
-
                         </div>
 
                         {/* TRANSITION TEXT */}
-                        <div className="medi-luxury-comparison-note">
-
-                            <p className="medi-luxury-paragraph">
+                        <div className="medi-luxury-comparison-note" style={{ borderLeftColor: '#274472', textAlign: window.innerWidth <= 1024 ? 'center' : 'left' }}>
+                            <p className="medi-luxury-paragraph" style={{ marginBottom: '20px' }}>
                                 Travelers transitioning from:
                             </p>
 
-                            <div className="medi-luxury-features-grid">
-
-                                {[
-                                    'Luxury resorts',
-                                    'Boutique hotels',
-                                    'Premium cruises'
-                                ].map((feature, i) => (
-                                    <div
-                                        key={i}
-                                        className="medi-luxury-feature"
-                                    >
-
-                                        <CheckCircle
-                                            size={20}
-                                            className="medi-feature-check-icon"
-                                        />
-
-                                        <span>{feature}</span>
-
+                            <div className="medi-luxury-features-grid" style={{
+                                display: 'grid',
+                                gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(3, 1fr)',
+                                gap: '10px'
+                            }}>
+                                {['Luxury resorts', 'Boutique hotels', 'Premium cruises'].map((feature, i) => (
+                                    <div key={i} className="medi-luxury-feature" style={{ justifyContent: window.innerWidth <= 1024 ? 'center' : 'flex-start' }}>
+                                        <CheckCircle size={18} style={{ color: '#274472' }} className="medi-feature-check-icon" />
+                                        <span style={{ fontSize: '14px' }}>{feature}</span>
                                     </div>
                                 ))}
-
                             </div>
 
-                            <p className="medi-luxury-paragraph" style={{ marginTop: '24px' }}>
+                            <p className="medi-luxury-paragraph" style={{ marginTop: '24px', fontSize: '15px', fontStyle: 'italic' }}>
                                 often find Explora to be a comfortable and approachable introduction to ultra-luxury cruising.
                             </p>
-
                         </div>
 
-                        {/* SECOND BLOCK */}
-                        <div
-                            className="medi-luxury-appreciated-box"
-                            style={{ marginTop: '40px' }}
-                        >
+                        {/* BLOCK 2: DRESS CODE */}
+                        <div className="medi-luxury-appreciated-box" style={{ marginTop: '40px', backgroundColor: '#ffffff', border: '1px solid #e2e8f0' }}>
 
-                            <span className="medi-luxury-eyebrow-label">
+                            <span className="medi-luxury-eyebrow-label" style={{
+                                textAlign: 'center',
+                                display: 'block',
+                                width: '100%',
+                                color: '#64748b'
+                            }}>
                                 RELAXED LUXURY STYLE
                             </span>
 
-                            <h2
-                                className="medi-luxury-heading"
-                                style={{ marginTop: '12px' }}
-                            >
+                            <h2 className="medi-luxury-heading" style={{
+                                textAlign: 'center',
+                                color: '#274472',
+                                fontSize: 'clamp(26px, 4vw, 36px)',
+                                marginTop: '12px'
+                            }}>
                                 What Is the Dress Code on Explora?
                             </h2>
 
-                            <p className="medi-luxury-paragraph">
+                            <p className="medi-luxury-paragraph" style={{ textAlign: 'center' }}>
                                 Explora Journeys maintains a relaxed luxury atmosphere.
                             </p>
 
-                            <p className="medi-luxury-paragraph">
-                                The onboard dress code is best described as:
-                            </p>
-
-                            <div
-                                style={{
-                                    background: 'linear-gradient(135deg, #274472 0%, #1f3555 100%)',
-                                    padding: '28px',
-                                    borderRadius: '24px',
-                                    textAlign: 'center',
-                                    margin: '30px 0'
-                                }}
-                            >
-                                <h3
-                                    style={{
-                                        color: '#ffffff',
-                                        fontSize: '32px',
-                                        margin: '0',
-                                        fontWeight: '600',
-                                        lineHeight: '1.3'
-                                    }}
-                                >
+                            <div style={{
+                                background: 'linear-gradient(135deg, #274472 0%, #1f3555 100%)',
+                                padding: '30px 20px',
+                                borderRadius: '24px',
+                                textAlign: 'center',
+                                margin: '30px 0',
+                                boxShadow: '0 10px 25px rgba(31, 53, 85, 0.15)'
+                            }}>
+                                <h3 style={{ color: '#ffffff', fontSize: 'clamp(24px, 4vw, 32px)', margin: '0', fontWeight: '600' }}>
                                     “Elegant resort casual.”
                                 </h3>
                             </div>
 
-                            <p className="medi-luxury-paragraph">
-                                Travelers generally wear:
-                            </p>
-
-                            <div className="medi-luxury-features-grid">
-
-                                {[
-                                    'Stylish resort attire',
-                                    'Smart casual evening wear',
-                                    'Relaxed luxury fashion'
-                                ].map((feature, i) => (
-                                    <div
-                                        key={i}
-                                        className="medi-luxury-feature"
-                                    >
-
-                                        <CheckCircle
-                                            size={20}
-                                            className="medi-feature-check-icon"
-                                        />
-
-                                        <span>{feature}</span>
-
-                                    </div>
-                                ))}
-
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+                                {/* Clothing List */}
+                                <div>
+                                    <p className="medi-luxury-paragraph" style={{ fontWeight: '700', fontSize: '14px', textTransform: 'uppercase', color: '#274472' }}>What to Wear:</p>
+                                    {['Stylish resort attire', 'Smart casual evening', 'Relaxed luxury fashion'].map((item, i) => (
+                                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                                            <CheckCircle size={16} style={{ color: '#274472' }} />
+                                            <span style={{ fontSize: '14px' }}>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                {/* Avoid List */}
+                                <div>
+                                    <p className="medi-luxury-paragraph" style={{ fontWeight: '700', fontSize: '14px', textTransform: 'uppercase', color: '#64748b' }}>Not Emphasized:</p>
+                                    {['Formal nights', 'Tuxedos', 'Strict requirements'].map((item, i) => (
+                                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                                            <div style={{ width: '16px', height: '2px', background: '#cbd5e1' }}></div>
+                                            <span style={{ fontSize: '14px', color: '#64748b' }}>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
-                            <p
-                                className="medi-luxury-paragraph"
-                                style={{ marginTop: '30px' }}
-                            >
-                                Explora does not emphasize:
-                            </p>
-
-                            <div className="medi-luxury-features-grid">
-
-                                {[
-                                    'Formal nights',
-                                    'Tuxedos',
-                                    'Strict dress requirements'
-                                ].map((feature, i) => (
-                                    <div
-                                        key={i}
-                                        className="medi-luxury-feature"
-                                    >
-
-                                        <CheckCircle
-                                            size={20}
-                                            className="medi-feature-check-icon"
-                                        />
-
-                                        <span>{feature}</span>
-
-                                    </div>
-                                ))}
-
-                            </div>
-
-                            <p
-                                className="medi-luxury-paragraph"
-                                style={{ marginTop: '28px' }}
-                            >
+                            <p className="medi-luxury-paragraph" style={{ marginTop: '30px', textAlign: 'center', fontSize: '15px', color: '#64748b' }}>
                                 This appeals strongly to modern luxury travelers who prefer understated sophistication.
                             </p>
-
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
@@ -1312,7 +1298,7 @@ function ExploraJourneys() {
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
-                            color: '#0f1c2e',
+                            color: "#274472",
                             margin: '0',
                             fontWeight: '700',
                             letterSpacing: '-0.02em'
@@ -1392,7 +1378,7 @@ function ExploraJourneys() {
                                 <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px' }}>
                                     {exploraComparisonSections[exploraActiveTab].eyebrow}
                                 </span>
-                                <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: '#0f1c2e', marginTop: '12px', fontWeight: '700', letterSpacing: '-0.01em' }}>
+                                <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: "#274472", marginTop: '12px', fontWeight: '700', letterSpacing: '-0.01em' }}>
                                     {exploraComparisonSections[exploraActiveTab].title}
                                 </h2>
                                 <div style={{ width: '40px', height: '3px', backgroundColor: '#3b82f6', margin: '20px auto 0', borderRadius: '10px' }}></div>
@@ -1502,94 +1488,142 @@ function ExploraJourneys() {
                 </div>
             </section>
 
-            {/* VIDEO SECTION 2: SILVERSEA HERITAGE EXPERIENCE */}
-            <section style={{
-                padding: '100px 20px',
-                backgroundColor: '#0f1c2e', // Luxury Navy Background
+            {/* VIDEO SECTION 2: SILVERSEA HERITAGE EXPERIENCE - FULLY RESPONSIVE */}
+            <section className="silversea-video-section" style={{
+                padding: 'clamp(60px, 10vw, 100px) 20px',
+                backgroundColor: '#0f1c2e', // Deep Navy
                 fontFamily: 'sans-serif',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                position: 'relative'
             }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        alignItems: 'center',
-                        gap: '60px',
-                        justifyContent: 'center'
-                    }}>
+                {/* Robust Responsive CSS */}
+                <style>{`
+        .ss-flex-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ss-content-side {
+            flex: 1 1 450px;
+            min-width: 300px;
+        }
+        .ss-video-side {
+            flex: 1 1 550px;
+            min-width: 300px;
+            width: 100%;
+        }
+        .ss-video-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Strictly maintains 16:9 for centered play button */
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            background-color: #000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 2;
+        }
+        
+        /* Mobile Specific Layout */
+        @media (max-width: 992px) {
+            .ss-content-side {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 1;
+            }
+            .ss-video-side {
+                order: 2;
+            }
+            .ss-horizontal-line {
+                margin: 0 auto 25px !important;
+            }
+            .ss-video-decor {
+                right: 0 !important;
+                top: -15px !important;
+                width: 60px !important;
+                height: 60px !important;
+            }
+        }
+    `}</style>
 
-                        {/* LEFT SIDE: CONTENT */}
-                        <div style={{ flex: '1 1 500px', minWidth: '320px' }}>
-                            {/* Horizontal Accent Line */}
-                            <div style={{
-                                width: '50px',
-                                height: '3px',
-                                backgroundColor: '#3b82f6',
-                                marginBottom: '25px',
-                                borderRadius: '10px'
-                            }}></div>
+                <div className="ss-flex-wrapper">
 
-                            <span style={{
-                                color: '#3b82f6',
-                                fontWeight: '700',
-                                fontSize: '13px',
-                                textTransform: 'uppercase',
-                                letterSpacing: '2px',
-                                display: 'block',
-                                marginBottom: '15px'
-                            }}>
-                                Heritage Excellence
-                            </span>
+                    {/* LEFT SIDE: CONTENT */}
+                    <div className="ss-content-side">
+                        {/* Horizontal Accent Line */}
+                        <div className="ss-horizontal-line" style={{
+                            width: '50px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6',
+                            marginBottom: '25px',
+                            borderRadius: '10px'
+                        }}></div>
 
-                            <h2 style={{
-                                fontSize: 'clamp(28px, 4vw, 40px)',
-                                color: '#ffffff', // Contrast White
-                                fontWeight: '700',
-                                lineHeight: '1.2',
-                                marginBottom: '25px',
-                                letterSpacing: '-0.02em'
-                            }}>
-                                The Art of Silversea: <br /> Defining Ultra-Luxury
-                            </h2>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '13px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            display: 'block',
+                            marginBottom: '15px'
+                        }}>
+                            Heritage Excellence
+                        </span>
 
-                            <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.8', maxWidth: '550px' }}>
-                                Discover a world of timeless flavors, unrivaled comfort, and unmatched access.
-                                From hidden harbors to coveted cities, see how Silversea elevates the journey
-                                of a lifetime through personalized butler service and traditional refinement.
-                            </p>
-                        </div>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: '#ffffff',
+                            fontWeight: '700',
+                            lineHeight: '1.2',
+                            marginBottom: '25px',
+                            letterSpacing: '-0.02em'
+                        }}>
+                            The Art of Silversea: <br /> Defining Ultra-Luxury
+                        </h2>
 
-                        {/* RIGHT SIDE: VIDEO PLAYER */}
-                        <div style={{ flex: '1 1 500px', minWidth: '320px', position: 'relative' }}>
+                        <p style={{
+                            fontSize: '17px',
+                            color: '#e2e8f0',
+                            lineHeight: '1.8',
+                            maxWidth: '550px',
+                            margin: 0
+                        }}>
+                            Discover a world of timeless flavors, unrivaled comfort, and unmatched access.
+                            From hidden harbors to coveted cities, see how Silversea elevates the journey
+                            of a lifetime through personalized butler service and traditional refinement.
+                        </p>
+                    </div>
+
+                    {/* RIGHT SIDE: VIDEO PLAYER */}
+                    <div className="ss-video-side">
+                        <div style={{ position: 'relative', width: '100%' }}>
+
                             {/* Decorative background element */}
-                            <div style={{
+                            <div className="ss-video-decor" style={{
                                 position: 'absolute',
                                 top: '-20px',
                                 right: '-20px',
                                 width: '100px',
                                 height: '100px',
-                                borderTop: '4px solid rgba(255, 255, 255, 0.15)', // Light border for dark background
-                                borderRight: '4px solid rgba(255, 255, 255, 0.15)',
+                                borderTop: '4px solid rgba(255, 255, 255, 0.1)',
+                                borderRight: '4px solid rgba(255, 255, 255, 0.1)',
                                 borderRadius: '0 30px 0 0',
-                                zIndex: 0
+                                zIndex: 1
                             }}></div>
 
-                            <div style={{
-                                position: 'relative',
-                                borderRadius: '30px',
-                                overflow: 'hidden',
-                                boxShadow: '0 30px 60px -15px rgba(0, 0, 0, 0.4)', // Darker shadow for depth
-                                aspectRatio: '16/9',
-                                backgroundColor: '#000',
-                                border: '1px solid #ffffff',
-                                zIndex: 1
-                            }}>
-                                {/* The Video Embed - Google Drive Video */}
+                            <div className="ss-video-frame">
                                 <iframe
                                     width="100%"
                                     height="100%"
                                     src="https://drive.google.com/file/d/17GNBgyXBsqL-dbDurk8HvFMatGs9KU9B/preview"
-                                    title="Explora Journeys Experience"
+                                    title="Silversea Luxury Experience"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
@@ -1603,8 +1637,8 @@ function ExploraJourneys() {
                                 ></iframe>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </section>
 
@@ -1653,7 +1687,7 @@ function ExploraJourneys() {
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(24px, 5vw, 40px)',
-                            color: '#0f1c2e',
+                            color: "#274472",
                             fontWeight: '700',
                             marginBottom: '20px',
                             letterSpacing: '-0.02em',

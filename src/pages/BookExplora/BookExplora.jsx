@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
+import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import angelaHughes from "../../assets/image.webp"
 
 
@@ -253,92 +253,143 @@ function BookExplora() {
 
             {/* ── PREMIUM INTRO SECTION ────────────────────────────────────── */}
             <section className="medi-intro-section medi-premium-intro-section">
+                {/* Style block for icon hover effect */}
+                <style>{`
+        .medi-immersion-card-item:hover .medi-immersion-icon-box {
+            background-color: #274472 !important;
+            border-color: #274472 !important;
+            transform: scale(1.1);
+        }
+        .medi-immersion-card-item:hover .medi-immersion-icon-box svg {
+            stroke: #ffffff !important;
+        }
+    `}</style>
+
                 <div className="medi-premium-intro-glow-one"></div>
                 <div className="medi-premium-intro-glow-two"></div>
                 <div className="medi-intro-container">
-                    <div className="medi-premium-intro-grid">
+                    <div className="medi-premium-intro-grid" style={{
+                        display: 'grid',
+                        gridTemplateColumns: window.innerWidth <= 1024 ? '1fr' : '1.2fr 0.8fr',
+                        gap: '60px',
+                        alignItems: 'start'
+                    }}>
 
                         {/* Left: Editorial intro */}
-                        <div className="medi-premium-editorial-block">
-                            <span className="medi-premium-mini-badge">EXPERT LUXURY GUIDANCE</span>
-                            <h2 className="medi-premium-heading">Why More Luxury Travelers Are Using Cruise Advisors for Explora Journeys</h2>
-                            <div className="medi-premium-separator"></div>
+                        <div className="medi-premium-editorial-block" style={{
+                            textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: window.innerWidth <= 1024 ? 'center' : 'flex-start'
+                        }}>
+                            {/* EYEBROW BADGE - Centered responsive */}
+                            <span className="medi-premium-mini-badge" style={{
+                                display: 'inline-block',
+                                fontSize: '12px',
+                                fontWeight: '700',
+                                color: '#274472',
+                                letterSpacing: '0.25em',
+                                textTransform: 'uppercase',
+                                marginBottom: '16px',
+                                // Logic to remove the side line on mobile for better centering
+                                borderLeft: window.innerWidth <= 1024 ? 'none' : '2px solid #274472',
+                                paddingLeft: window.innerWidth <= 1024 ? '0' : '10px'
+                            }}>
+                                EXPERT LUXURY GUIDANCE
+                            </span>
 
-                            <p className="medi-premium-lead-text">
+                            {/* HEADING - Centered responsive */}
+                            <h2 className="medi-premium-heading" style={{
+                                color: '#274472', // Brand Navy
+                                fontSize: 'clamp(28px, 5vw, 48px)',
+                                lineHeight: '1.2',
+                                margin: '0 0 20px 0',
+                                textAlign: window.innerWidth <= 1024 ? 'center' : 'left'
+                            }}>
+                                Why More Luxury Travelers Are Using Cruise Advisors for Explora Journeys
+                            </h2>
+
+                            <div className="medi-premium-separator" style={{
+                                width: '80px',
+                                height: '3px',
+                                background: `linear-gradient(90deg, #274472 0%, transparent 100%)`,
+                                marginBottom: '36px',
+                                // Centers the separator on mobile
+                                margin: window.innerWidth <= 1024 ? '0 auto 36px' : '0 0 36px'
+                            }}></div>
+
+                            <p className="medi-premium-lead-text" style={{
+                                fontSize: '18px',
+                                lineHeight: '1.8',
+                                color: '#475569',
+                                marginBottom: '40px',
+                                textAlign: window.innerWidth <= 1024 ? 'center' : 'left'
+                            }}>
                                 Luxury cruising has become significantly more sophisticated in recent years. Today's travelers face increasingly complex decisions — and for ultra-luxury lines like Explora Journeys, the question is no longer "Should I use a travel advisor?" but rather: "Can I realistically maximize a luxury cruise experience without one?"
                             </p>
 
-                            <div className="medi-immersion-list-wrapper">
-                                <p className="medi-immersion-lead-in">
+                            <div className="medi-immersion-list-wrapper" style={{ width: '100%' }}>
+                                <p className="medi-immersion-lead-in" style={{
+                                    fontSize: '17px',
+                                    color: '#1e293b',
+                                    marginBottom: '24px',
+                                    fontWeight: '600',
+                                    textAlign: window.innerWidth <= 1024 ? 'center' : 'left'
+                                }}>
                                     Today's travelers face complex decisions involving:
                                 </p>
-                                <div className="medi-immersion-cards-grid">
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Gem size={20} />
+                                <div className="medi-immersion-cards-grid" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
+                                    gap: '20px',
+                                    textAlign: 'left' // Keep text in small cards left aligned
+                                }}>
+                                    {[
+                                        { t: "Suite categories", i: <Gem size={20} /> },
+                                        { t: "Ship comparisons", i: <Ship size={20} /> },
+                                        { t: "Destination selection", i: <MapPin size={20} /> },
+                                        { t: "Shore excursions", i: <Compass size={20} /> },
+                                        { t: "International logistics", i: <Globe size={20} /> },
+                                        { t: "Pre- & post-cruise planning", i: <Crown size={20} /> }
+                                    ].map((item, idx) => (
+                                        <div key={idx} className="medi-immersion-card-item">
+                                            <div className="medi-immersion-icon-box" style={{
+                                                transition: 'all 0.3s ease',
+                                                color: '#274472'
+                                            }}>
+                                                {item.i}
+                                            </div>
+                                            <span className="medi-immersion-card-title" style={{ color: '#1e293b' }}>{item.t}</span>
                                         </div>
-                                        <span className="medi-immersion-card-title">Suite categories</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Ship size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Ship comparisons</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <MapPin size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Destination selection</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Compass size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Shore excursions</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Globe size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">International logistics</span>
-                                    </div>
-
-                                    <div className="medi-immersion-card-item">
-                                        <div className="medi-immersion-icon-box">
-                                            <Crown size={20} />
-                                        </div>
-                                        <span className="medi-immersion-card-title">Pre- &amp; post-cruise planning</span>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
 
                         {/* Right: Signature Expert Block */}
-                        <div className="medi-premium-signature-panel">
+                        <div className="medi-premium-signature-panel" style={{
+                            marginTop: window.innerWidth <= 1024 ? '40px' : '0',
+                            borderLeft: '4px solid #274472'
+                        }}>
                             <div className="medi-premium-signature-glow"></div>
                             <div className="medi-premium-signature-content">
                                 <div className="medi-expert-profile-row">
-                                    <div className="medi-expert-avatar-frame">
+                                    <div className="medi-expert-avatar-frame" style={{ backgroundColor: '#274472' }}>
                                         <Star size={24} className="medi-star-accent" />
                                     </div>
                                     <div>
                                         <span className="medi-expert-card-subtitle">LUXURY CRUISE EXPERT</span>
-                                        <h3 className="medi-expert-card-title">Angela Hughes</h3>
+                                        <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
                                     </div>
                                 </div>
 
-                                <p className="medi-premium-expert-desc">
+                                <p className="medi-premium-expert-desc" style={{ color: '#475569' }}>
                                     At Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate the complexities of modern luxury cruising while ensuring their Explora experience aligns perfectly with their travel style and expectations.
                                 </p>
 
                                 <div className="medi-premium-expert-quote-box">
-                                    <span className="medi-quote-mark">"</span>
-                                    <p className="medi-premium-expert-quote-text">
+                                    <span className="medi-quote-mark" style={{ color: '#274472' }}>"</span>
+                                    <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
                                         With more than 40 years in luxury travel and firsthand experience across 121+ countries, Angela Hughes provides personalized luxury cruise planning backed by real-world expertise.
                                     </p>
                                 </div>
@@ -928,7 +979,7 @@ function BookExplora() {
 
                         <h2 className="medi-itinerary-showcase-heading" style={{
                             fontSize: 'clamp(24px, 4vw, 42px)',
-                            color: '#0f1c2e',
+                            color: "#274472",
                             fontWeight: '700',
                             lineHeight: '1.2',
                             margin: '0 auto'
@@ -1203,52 +1254,82 @@ function BookExplora() {
                 </div>
             </section>
 
-            {/* ── IS IT CHEAPER TO BOOK THROUGH AN ADVISOR? ────────────────── */}
+            {/* ── IS IT CHEAPER TO BOOK THROUGH AN ADVISOR? - RESPONSIVE CENTERING ── */}
             <section className="medi-luxury-definition-section">
                 <div className="medi-luxury-definition-container">
                     <div className="medi-luxury-content-wrapper">
-                        <span className="medi-luxury-eyebrow-label">PRICING &amp; VALUE</span>
-                        <h2 className="medi-luxury-heading">Is It Cheaper to Book Explora Through a Travel Advisor?</h2>
 
-                        <p className="medi-luxury-paragraph">
+                        {/* EYEBROW - Centered on mobile */}
+                        <span className="medi-luxury-eyebrow-label" style={{
+                            textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                            display: 'block',
+                            width: '100%',
+                            letterSpacing: '0.25em',
+                            fontSize: '12px',
+                            fontWeight: '700',
+                            color: '#274472',
+                            marginBottom: '15px'
+                        }}>
+                            PRICING &amp; VALUE
+                        </span>
+
+                        {/* HEADING - Brand Navy + Centered on mobile */}
+                        <h2 className="medi-luxury-heading" style={{
+                            color: '#274472', // Brand Navy
+                            textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                            fontSize: 'clamp(28px, 5vw, 48px)', // Responsive scaling
+                            lineHeight: '1.2',
+                            fontWeight: '600',
+                            marginBottom: '35px'
+                        }}>
+                            Is It Cheaper to Book Explora Through a Travel Advisor?
+                        </h2>
+
+                        <p className="medi-luxury-paragraph" style={{
+                            textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                            fontSize: '17px',
+                            lineHeight: '1.75',
+                            color: '#475569'
+                        }}>
                             In many cases, pricing is identical to booking directly with the cruise line. However, experienced luxury advisors may provide additional onboard value, suite upgrade opportunities, exclusive amenities, and better overall itinerary strategy.
                         </p>
 
-                        <div className="medi-luxury-appreciated-box">
-                            <h3 className="medi-luxury-subheading">The true value often comes from:</h3>
-                            <div className="medi-luxury-features-grid">
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Better travel decisions</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Improved suite selection</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Avoiding costly mistakes</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Enhanced overall experience</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>Exclusive onboard credits</span>
-                                </div>
-                                <div className="medi-luxury-feature">
-                                    <CheckCircle size={20} className="medi-feature-check-icon" />
-                                    <span>More personalized service</span>
-                                </div>
+                        <div className="medi-luxury-appreciated-box" style={{ padding: '30px', backgroundColor: '#f8fafc' }}>
+                            <h3 className="medi-luxury-subheading" style={{
+                                textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+                                color: '#274472',
+                                fontSize: '20px',
+                                fontWeight: '700',
+                                marginBottom: '20px'
+                            }}>
+                                The true value often comes from:
+                            </h3>
+                            <div className="medi-luxury-features-grid" style={{
+                                display: 'grid',
+                                gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
+                                gap: '15px'
+                            }}>
+                                {[
+                                    "Better travel decisions",
+                                    "Improved suite selection",
+                                    "Avoiding costly mistakes",
+                                    "Enhanced overall experience",
+                                    "Exclusive onboard credits",
+                                    "More personalized service"
+                                ].map((item, idx) => (
+                                    <div key={idx} className="medi-luxury-feature" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <CheckCircle size={18} className="medi-feature-check-icon" style={{ color: '#274472' }} />
+                                        <span style={{ fontSize: '15px', color: '#475569', fontWeight: '500' }}>{item}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
-                        <div className="medi-luxury-comparison-note">
-                            <p className="medi-luxury-paragraph">
+                        <div className="medi-luxury-comparison-note" style={{ borderLeftColor: '#274472' }}>
+                            <p className="medi-luxury-paragraph" style={{ fontSize: '15px', fontStyle: 'italic', color: '#475569' }}>
                                 Many travelers are surprised to learn that booking through a luxury advisor does not necessarily cost more — and can sometimes provide greater overall value through preferred partner benefits and VIP amenities.
                             </p>
-                            <p className="medi-luxury-paragraph">
+                            <p className="medi-luxury-paragraph" style={{ fontSize: '15px', fontStyle: 'italic', color: '#475569', marginTop: '10px' }}>
                                 For luxury travelers, expertise often matters more than small price differences.
                             </p>
                         </div>
@@ -1359,7 +1440,6 @@ function BookExplora() {
                             width="100%"
                             height="100%"
                             src="https://www.youtube.com/embed/qx_9Nt6kYpI"
-
                             title="Experience the Mediterranean with Azamara"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1398,7 +1478,7 @@ function BookExplora() {
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
-                            color: '#0f1c2e',
+                            color: "#274472",
                             fontWeight: '700',
                             marginBottom: '20px',
                             letterSpacing: '-0.02em',
@@ -1741,9 +1821,6 @@ function BookExplora() {
                             width="100%"
                             height="100%"
                             src="https://www.youtube.com/embed/6jg3MVXjjuo"
-
-
-
                             title="Experience the Mediterranean with Azamara"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

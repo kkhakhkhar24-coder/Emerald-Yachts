@@ -309,104 +309,146 @@ function ExploraJourneysVsSilversea() {
         </div>
       </section>
 
-      {/* PREMIUM INTRO SECTION */}
+      {/* PREMIUM INTRO SECTION - FIXED HOVER & ALIGNMENT */}
       <section className="medi-intro-section medi-premium-intro-section">
+        {/* STYLE BLOCK: Handles the hover interaction for icons */}
+        <style>{`
+        .medi-immersion-card-item:hover .medi-immersion-icon-box {
+            background-color: #274472 !important;
+            border-color: #274472 !important;
+            transform: scale(1.1);
+        }
+        /* This forces the Lucide icon (SVG) to turn white on hover */
+        .medi-immersion-card-item:hover .medi-immersion-icon-box svg {
+            stroke: #ffffff !important;
+        }
+    `}</style>
+
         <div className="medi-premium-intro-glow-one"></div>
         <div className="medi-premium-intro-glow-two"></div>
         <div className="medi-intro-container">
-          <div className="medi-premium-intro-grid">
+          <div className="medi-premium-intro-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: window.innerWidth <= 1024 ? '1fr' : '1.2fr 0.8fr',
+            gap: '60px',
+            alignItems: 'start'
+          }}>
 
-            {/* Title & Core editorial intro */}
-            <div className="medi-premium-editorial-block">
-              <span className="medi-premium-mini-badge">ULTRA-LUXURY COMPARISON</span>
-              <h2 className="medi-premium-heading">Why Travelers Compare Explora and Silversea</h2>
-              <div className="medi-premium-separator"></div>
+            {/* Left: Editorial intro */}
+            <div className="medi-premium-editorial-block" style={{
+              textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: window.innerWidth <= 1024 ? 'center' : 'flex-start'
+            }}>
+              {/* EYEBROW BADGE - Responsive Centering */}
+              <span className="medi-premium-mini-badge" style={{
+                display: 'inline-block',
+                fontSize: '12px',
+                fontWeight: '700',
+                color: '#274472',
+                letterSpacing: '0.25em',
+                textTransform: 'uppercase',
+                marginBottom: '16px',
+                borderLeft: window.innerWidth <= 1024 ? 'none' : '2px solid #274472',
+                paddingLeft: window.innerWidth <= 1024 ? '0' : '10px'
+              }}>
+                ULTRA-LUXURY COMPARISON
+              </span>
 
-              <p className="medi-premium-lead-text">
+              {/* HEADING - Brand Navy + Centered on mobile */}
+              <h2 className="medi-premium-heading" style={{
+                color: '#274472',
+                fontSize: 'clamp(28px, 5vw, 48px)',
+                lineHeight: '1.2',
+                margin: '0 0 20px 0'
+              }}>
+                Why Travelers Compare Explora and Silversea
+              </h2>
+
+              <div className="medi-premium-separator" style={{
+                width: '80px',
+                height: '3px',
+                background: `#3b82f6`,
+                marginBottom: '36px',
+                margin: window.innerWidth <= 1024 ? '0 auto 36px' : '0 0 36px'
+              }}></div>
+
+              <p className="medi-premium-lead-text" style={{
+                fontSize: '18px',
+                lineHeight: '1.8',
+                color: '#475569',
+                marginBottom: '40px'
+              }}>
                 As ultra-luxury cruising continues to evolve, travelers increasingly compare Explora Journeys and Silversea when searching for sophisticated small-ship cruise experiences.
               </p>
 
-              <div className="medi-immersion-list-wrapper">
-                <p className="medi-immersion-lead-in">
+              <div className="medi-immersion-list-wrapper" style={{ width: '100%' }}>
+                <p className="medi-immersion-lead-in" style={{
+                  fontSize: '17px',
+                  color: '#1e293b',
+                  marginBottom: '24px',
+                  fontWeight: '600'
+                }}>
                   Both cruise lines appeal to travelers seeking:
                 </p>
-                <div className="medi-immersion-cards-grid">
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Crown size={20} />
+                <div className="medi-immersion-cards-grid" style={{
+                  display: 'grid',
+                  gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
+                  gap: '20px',
+                  textAlign: 'left'
+                }}>
+                  {[
+                    { t: "Personalized service", i: <Crown size={20} /> },
+                    { t: "Boutique atmospheres", i: <Ship size={20} /> },
+                    { t: "Luxury accommodations", i: <Heart size={20} /> },
+                    { t: "Focused itineraries", i: <Compass size={20} /> },
+                    { t: "Fine dining", i: <Utensils size={20} /> },
+                    { t: "Smaller capacities", i: <Users size={20} /> }
+                  ].map((item, idx) => (
+                    <div key={idx} className="medi-immersion-card-item">
+                      {/* REMOVED hardcoded color here to let the style block work */}
+                      <div className="medi-immersion-icon-box" style={{ transition: 'all 0.3s ease' }}>
+                        {item.i}
+                      </div>
+                      <span className="medi-immersion-card-title" style={{ color: '#1e293b' }}>{item.t}</span>
                     </div>
-                    <span className="medi-immersion-card-title">Personalized service</span>
-                  </div>
-
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Ship size={20} />
-                    </div>
-                    <span className="medi-immersion-card-title">Boutique atmospheres</span>
-                  </div>
-
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Heart size={20} />
-                    </div>
-                    <span className="medi-immersion-card-title">Luxury accommodations</span>
-                  </div>
-
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Compass size={20} />
-                    </div>
-                    <span className="medi-immersion-card-title">Focused itineraries</span>
-                  </div>
-
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Utensils size={20} />
-                    </div>
-                    <span className="medi-immersion-card-title">Fine dining</span>
-                  </div>
-
-                  <div className="medi-immersion-card-item">
-                    <div className="medi-immersion-icon-box">
-                      <Users size={20} />
-                    </div>
-                    <span className="medi-immersion-card-title">Smaller capacities</span>
-                  </div>
+                  ))}
                 </div>
               </div>
 
-              <p className="medi-premium-lead-text" style={{ marginTop: '24px' }}>
+              <p className="medi-premium-lead-text" style={{ marginTop: '24px', fontSize: '18px', color: '#475569' }}>
                 However, the overall cruise experience between Explora Journeys and Silversea feels surprisingly different.
               </p>
             </div>
 
             {/* Signature Expert Block */}
-            <div className="medi-premium-signature-panel">
+            <div className="medi-premium-signature-panel" style={{
+              marginTop: window.innerWidth <= 1024 ? '40px' : '0',
+              borderLeftColor: '#274472'
+            }}>
               <div className="medi-premium-signature-glow"></div>
               <div className="medi-premium-signature-content">
                 <div className="medi-expert-profile-row">
-                  <div className="medi-expert-avatar-frame">
+                  <div className="medi-expert-avatar-frame" style={{ background: '#274472' }}>
                     <Star size={24} className="medi-star-accent" />
                   </div>
                   <div>
                     <span className="medi-expert-card-subtitle">LIFETIME ADVISOR</span>
-                    <h3 className="medi-expert-card-title">Angela Hughes</h3>
+                    <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
                   </div>
                 </div>
-
-                <p className="medi-premium-expert-desc">
-                  At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers determine which luxury cruise line best matches their: Travel personality, Luxury expectations, Preferred atmosphere, Destination priorities, Wellness interests, and Cruise experience level.
+                <p className="medi-premium-expert-desc" style={{ color: '#475569' }}>
+                  At Trips & Ships Luxury Travel, luxury cruise expert Angela Hughes helps travelers determine which luxury cruise line best matches their unique lifestyle and expectations.
                 </p>
-
                 <div className="medi-premium-expert-quote-box">
-                  <span className="medi-quote-mark">“</span>
-                  <p className="medi-premium-expert-quote-text">
-                    With more than 40 years in luxury travel and firsthand experience across 121+ countries, Angela Hughes brings real-world expertise to luxury cruise planning and ultra-premium travel experiences.
+                  <span className="medi-quote-mark" style={{ color: '#274472' }}>“</span>
+                  <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
+                    With more than 40 years in luxury travel, Angela Hughes brings real-world expertise to ultra-premium travel planning and luxury cruise experiences.
                   </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -434,7 +476,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(30px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -607,16 +649,6 @@ function ExploraJourneysVsSilversea() {
         position: 'relative'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-
-          {/* FIXED: Horizontal Accent Line Above Text */}
-          <div style={{
-            width: '60px',
-            height: '3px',
-            backgroundColor: '#3b82f6', // Azure Blue accent
-            margin: '0 auto 25px auto',
-            borderRadius: '10px'
-          }}></div>
-
           {/* Header Block */}
           <div style={{ marginBottom: '50px' }}>
             <h2 style={{
@@ -629,6 +661,16 @@ function ExploraJourneysVsSilversea() {
             }}>
               The Making of a Beautiful Ship
             </h2>
+
+            {/* FIXED: Horizontal Accent Line Above Text */}
+            <div style={{
+              width: '60px',
+              height: '3px',
+              backgroundColor: '#3b82f6', // Azure Blue accent
+              margin: '0 auto 25px auto',
+              borderRadius: '10px'
+            }}></div>
+
             <p style={{
               fontSize: 'clamp(16px, 2vw, 19px)',
               color: '#cbd5e1', // Light slate blue for readability
@@ -669,20 +711,6 @@ function ExploraJourneysVsSilversea() {
               }}
             ></iframe>
           </div>
-
-          {/* Bottom Label */}
-          <p style={{
-            marginTop: '40px',
-            fontSize: '13px',
-            color: '#3b82f6',
-            fontWeight: '700',
-            textTransform: 'uppercase',
-            letterSpacing: '2px',
-            opacity: 0.8
-          }}>
-            Explora Journeys: Design Sails the World
-          </p>
-
         </div>
       </section>
 
@@ -709,7 +737,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -857,7 +885,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(30px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1008,7 +1036,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1167,7 +1195,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1401,7 +1429,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1409,7 +1437,7 @@ function ExploraJourneysVsSilversea() {
             }}>
               Dining Comparison
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Comparison Board */}
@@ -1437,7 +1465,7 @@ function ExploraJourneysVsSilversea() {
                 <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(59, 130, 246, 0.2)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
                   <Utensils size={24} />
                 </div>
-                <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0 }}>Explora Journeys Dining</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0, color: '#ffffff' }}>Explora Journeys Dining</h3>
               </div>
 
               <div style={{ flex: 1 }}>
@@ -1550,7 +1578,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(26px, 5vw, 38px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '15px',
               letterSpacing: '-0.02em',
@@ -1675,7 +1703,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(30px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1722,7 +1750,7 @@ function ExploraJourneysVsSilversea() {
                   <div style={{ width: '40px', height: '40px', backgroundColor: 'rgba(59, 130, 246, 0.2)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
                     <Sparkles size={22} />
                   </div>
-                  <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0 }}>Explora Atmosphere</h3>
+                  <h3 style={{ fontSize: '24px', fontWeight: '700', margin: 0, color: '#ffffff' }}>Explora Atmosphere</h3>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
@@ -1838,7 +1866,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(26px, 5vw, 38px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -1962,11 +1990,10 @@ function ExploraJourneysVsSilversea() {
             borderRadius: '24px',
             color: '#ffffff'
           }}>
-            <p style={{ fontSize: '17px', lineHeight: '1.6', margin: 0, fontWeight: '400' }}>
+            <p style={{ fontSize: '17px', lineHeight: '1.6', margin: 0, fontWeight: '400', color: '#ffffff' }}>
               Whether you prefer the unhurried "Ocean State of Mind" or the personalized precision of a butler-led voyage, <span style={{ color: '#3b82f6', fontWeight: '700' }}>both lines provide an exceptional entry point</span> into the world of ultra-luxury cruising.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -1993,7 +2020,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -2001,7 +2028,7 @@ function ExploraJourneysVsSilversea() {
             }}>
               Itinerary Comparison
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Comparison Grid */}
@@ -2134,7 +2161,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -2142,7 +2169,7 @@ function ExploraJourneysVsSilversea() {
             }}>
               Which Cruise Line Has Better Itineraries?
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Comparison Grid */}
@@ -2267,7 +2294,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -2412,7 +2439,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -2420,7 +2447,7 @@ function ExploraJourneysVsSilversea() {
             }}>
               Pricing Comparison
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Pricing Factors Bar */}
@@ -2549,7 +2576,7 @@ function ExploraJourneysVsSilversea() {
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 5vw, 42px)',
-              color: '#0f1c2e',
+              color: "#274472",
               fontWeight: '700',
               marginBottom: '20px',
               letterSpacing: '-0.02em',
@@ -2557,7 +2584,7 @@ function ExploraJourneysVsSilversea() {
             }}>
               Which Line Best Suits Your Travel Style?
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           {/* Comparison Grid */}
@@ -2682,7 +2709,7 @@ function ExploraJourneysVsSilversea() {
             <span className="medi-mistakes-eyebrow" style={{ color: '#3b82f6', fontWeight: '700', letterSpacing: '2px' }}>
               AVOID CRUISE PITFALLS
             </span>
-            <h2 className="medi-mistakes-slider-title" style={{ color: '#0f1c2e', fontWeight: '700' }}>
+            <h2 className="medi-mistakes-slider-title" style={{ color: "#274472", fontWeight: '700' }}>
               Common Mistakes Travelers Make When Comparing Luxury Cruise Lines
             </h2>
             <div className="medi-mistakes-slider-separator" style={{ backgroundColor: '#3b82f6', margin: '0 auto' }}></div>
