@@ -151,83 +151,115 @@ function MediterraneanCruises() {
     ];
 
     const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.tripsandships.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/mediterranean-cruises"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": mediFaqs.slice(0, 5).map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
-                    }
-                }))
-            }
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "logo": "https://www.tripsandships.com/PNG%20image.png",
+      "sameAs": [
+        "https://www.facebook.com/tripsandships/",
+        "https://www.instagram.com/tripsandshipsluxurytravel"
+      ]
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+    },
+    {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO of Trips & Ships Luxury Travel",
+      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "Is Azamara Worth It?",
+      "url": "https://www.tripsandships.com/is-azamara-worth-it",
+      "description": "Expert Azamara luxury cruise review and insights for sophisticated travelers."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsandships.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Luxury Cruises",
+          "item": "https://www.tripsandships.com/luxury-cruises"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Is Azamara Worth It?",
+          "item": "https://www.tripsandships.com/is-azamara-worth-it"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Azamara worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Azamara is highly regarded for boutique luxury cruising, destination immersion, and longer stays in port."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Azamara considered luxury?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Azamara all inclusive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Azamara includes gratuities, select beverages, cultural experiences, and various onboard amenities."
+          }
+        }
+      ]
     }
+  ]
+}
+
+
 
     return (
         <>
             <Helmet>
-                <title>Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights</title>
-                <meta name="description" content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026." />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                 <title>Is Azamara Worth It? | Honest Luxury Cruise Review 2026
+</title>
+                <meta
+                    name="title"
+                    content="Is Azamara Worth It in 2026? | Expert Luxury Cruise Insights
+"
+                />
+                <meta
+                    name="description"
+                    content="Wondering if Azamara is worth it? Discover expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Explore Azamara’s boutique cruise experience, inclusions, itineraries, luxury level, pros and cons, and whether Azamara delivers value for sophisticated travelers in 2026.
+"
+                />
+                <meta name="keywords" content="Is Azamara Worth It
+, Azamara review, Azamara luxury cruise review
+, Is Azamara luxury" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
@@ -693,6 +725,37 @@ function MediterraneanCruises() {
                         <p className="azw-included-subtext">
                             Compared to some cruise lines with extensive add-on charges, Azamara offers a more inclusive experience.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+                {/* VIDEO SHOWCASE SECTION */}
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Y0dt7AYocos"
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
                     </div>
                 </div>
             </section>

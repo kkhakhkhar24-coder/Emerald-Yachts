@@ -264,83 +264,115 @@ function AzamaraCabinsGuide2026() {
     ]
 
     const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "Azamara Cabins Guide",
-                "url": "https://www.tripsandships.com/azamara-cabins-guide",
-                "description": "Expert guide to Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.tripsandships.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Luxury Cruises",
-                        "item": "https://www.tripsandships.com/luxury-cruises"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Azamara Cabins Guide",
-                        "item": "https://www.tripsandships.com/azamara-cabins-guide"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": mediFaqs.slice(0, 5).map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
-                    }
-                }))
-            }
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "logo": "https://www.tripsandships.com/PNG%20image.png",
+      "sameAs": [
+        "https://www.facebook.com/tripsandships/",
+        "https://www.instagram.com/tripsandshipsluxurytravel"
+      ]
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+    },
+    {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO of Trips & Ships Luxury Travel",
+      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "Azamara Cabins Guide",
+      "url": "https://www.tripsandships.com/azamara-cabins-guide",
+      "description": "Expert guide to Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsandships.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Luxury Cruises",
+          "item": "https://www.tripsandships.com/luxury-cruises"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Azamara Cabins Guide",
+          "item": "https://www.tripsandships.com/azamara-cabins-guide"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Azamara cabin is best?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veranda staterooms are often considered the best balance of luxury, comfort, and value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Azamara suites worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Azamara suites provide more space, premium amenities, concierge services, and elevated luxury experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Azamara cabins have balconies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veranda staterooms and suites include private balconies."
+          }
+        }
+      ]
     }
+  ]
+}
+
 
     return (
         <>
             <Helmet>
-                <title>Azamara Cabins Guide 2026 | Best Cabins & Suites Explained</title>
-                <meta name="description" content="Discover the ultimate Azamara Cabins Guide with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Explore Azamara cabin categories, suite options, veranda staterooms, best cabin locations, luxury amenities, and expert cruise planning advice for 2026." />
-                <meta name="keywords" content="Azamara Cabins Guide, Azamara cabins, Azamara suites, Azamara veranda cabins, Azamara stateroom guide, Best Azamara cabins, Azamara cabin categories, Azamara suite experience, Small ship luxury cruise cabins" />
+                <title>Azamara Cabins Guide 2026 | Best Cabins & Suites Explained
+</title>
+                <meta
+                    name="title"
+                    content="Azamara Cabins Guide 2026 | Expert Luxury Cruise Cabin Insights
+"
+                />
+                <meta
+                    name="description"
+                    content="Discover the ultimate Azamara Cabins Guide with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Explore Azamara cabin categories, suite options, veranda staterooms, best cabin locations, luxury amenities, and expert cruise planning advice for 2026.
+"
+                />
+                <meta name="keywords" content="Azamara Cabins Guide
+, Azamara cabins
+, Azamara suites
+,Azamara veranda cabins" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
@@ -502,6 +534,37 @@ function AzamaraCabinsGuide2026() {
                         <p>
                             Because Azamara ships are boutique-sized, even standard accommodations tend to feel more intimate and personalized compared to larger mega ships.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+              {/* VIDEO SHOWCASE SECTION */}
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/WzNzHlJxxwg"
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
                     </div>
                 </div>
             </section>

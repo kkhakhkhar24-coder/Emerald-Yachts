@@ -139,113 +139,121 @@ function BestCabinsOnAzamara() {
     ];
 
     const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "Azamara Mediterranean Cruises",
-                "url": "https://www.tripsandships.com/azamara-mediterranean-cruises",
-                "description": "Expert Azamara Mediterranean cruise guide for luxury travelers."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.tripsandships.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/mediterranean-cruises"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Azamara Mediterranean Cruises",
-                        "item": "https://www.tripsandships.com/azamara-mediterranean-cruises"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Are Azamara Mediterranean cruises worth it?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Azamara offers immersive Mediterranean experiences with smaller ships, longer port stays, and boutique luxury service."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What makes Azamara different in the Mediterranean?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Azamara focuses heavily on destination immersion, overnight stays, and smaller boutique ports."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Azamara considered luxury?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
-                        }
-                    }
-                ]
-            }
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "logo": "https://www.tripsandships.com/PNG%20image.png",
+      "sameAs": [
+        "https://www.facebook.com/tripsandships/",
+        "https://www.instagram.com/tripsandshipsluxurytravel"
+      ]
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsandships.com",
+      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+    },
+    {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO of Trips & Ships Luxury Travel",
+      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "Best Cabins on Azamara",
+      "url": "https://www.tripsandships.com/best-cabins-on-azamara",
+      "description": "Expert guide to the best Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsandships.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Luxury Cruises",
+          "item": "https://www.tripsandships.com/luxury-cruises"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Best Cabins on Azamara",
+          "item": "https://www.tripsandships.com/best-cabins-on-azamara"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which cabin is best on Azamara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veranda staterooms are widely considered the best overall combination of luxury, comfort, and value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Azamara veranda cabins worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many travelers consider private balconies highly worthwhile, especially on scenic itineraries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Azamara suites worth the money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For travelers prioritizing luxury space and personalized service, Azamara suites can provide excellent value."
+          }
+        }
+      ]
     }
+  ]
+}
+
+
 
 
     return (
         <>
             <Helmet>
                 <title>
-                    Azamara Mediterranean Cruises 2026 | Luxury Small Ship Mediterranean Cruise Guide
+Best Cabins on Azamara 2026 | Expert Luxury Cruise Cabin Guide
 
                 </title>
                 <meta
                     name="title"
-                    content="Azamara Mediterranean Cruises Guide 2026 | Expert Luxury Cruise Insights
+                    content="Best Cabins on Azamara | Luxury Cruise Cabin Guide 2026
+
 "
                 />
                 <meta
                     name="description"
-                    content="Explore Azamara Mediterranean Cruises with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover immersive Mediterranean itineraries, boutique luxury ships, extended port stays, and personalized cruise planning for 2026."
+                    content="Discover the best cabins on Azamara with expert luxury cruise insights from Angela Hughes, CEO of Trips & Ships Luxury Travel. Explore the top Azamara suites, veranda staterooms, ideal cabin locations, and expert recommendations for luxury cruising in 2026.
+"
                 />
-                <meta name="keywords" content="Azamara Mediterranean Cruises, Luxury Mediterranean cruises, Azamara Europe cruises, Small ship Mediterranean cruises" />
+                <meta name="keywords" content="Best Cabins on Azamara
+, Best Azamara cabins
+, Azamara suites
+, Best Azamara staterooms
+s" />
                 <script type="application/ld+json">
                     {JSON.stringify(mediSchemaData)}
                 </script>
@@ -640,6 +648,38 @@ function BestCabinsOnAzamara() {
                         <span style={{ fontSize: '18px', fontWeight: '500', lineHeight: '1.6', color: '#e2e8f0' }}>
                             These cabins experience less noticeable movement during rougher seas. Experienced cruise advisors often prioritize these locations for travelers new to cruising.
                         </span>
+                    </div>
+                </div>
+            </section>
+
+
+              {/* VIDEO SHOWCASE SECTION */}
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
+                        border: '1px solid rgba(39, 68, 114, 0.1)',
+                        aspectRatio: '16/9',
+                        background: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/gF5XBSByguQ"
+                            title="Experience the Mediterranean with Azamara"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
                     </div>
                 </div>
             </section>
