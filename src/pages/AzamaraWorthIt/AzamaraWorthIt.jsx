@@ -1,13 +1,14 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
-import azamaraShip from "../../assets/image.webp"
+import azamaraShip from "../../assets/Media (3).jpg"
 import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Marseilles_122.webp'
 import italyCruise from '../../assets/Japanlandvscruise/angela-hughes-miyajima-floating-torii-gate-itsukushima-shrine-japan.jpg'
 import croatiaCoast from '../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg'
 import luxurySuite from '../../assets/AzamaraAlaskaCruises/gallery1.webp'
 import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
 import spainCruise from '../../assets/AzamaraCabinsGuide/Ship_View.webp'
+import Profile_AH from '../../assets/Profile_AH.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -23,6 +24,11 @@ import { useState, useEffect } from 'react'
 import hero1 from '../../assets/Azamarashipcomparison/Azamara-Journey-suite-balcony.webp'
 import hero2 from '../../assets/AzamaravsVikingOcean/ChoseViking.webp'
 import hero3 from '../../assets/Azamarashipcomparison/Regentsea.jpg'
+import worthImg1 from '../../assets/AzamaraWorthIt/Kusadasi_Ephesus_AzamazingCelebration_JLP_020.jpg'
+import worthImg2 from '../../assets/AzamaraWorthIt/Singapore_TeaHouse_031.jpg'
+import worthImg3 from '../../assets/AzamaraWorthIt/StPetersburg2_PeterAndPaul_036.jpg'
+import worthTypeImg1 from '../../assets/AzamaraWorthIt/Napier_Aerial_GannetSafari_JLP_0101.jpg'
+import worthTypeImg2 from '../../assets/AzamaraWorthIt/Napier_GannetSafari_JLP_0003_VSCO.jpg'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -72,48 +78,66 @@ function MediterraneanCruises() {
 
     const mediFaqs = [
         {
-            question: 'Is Azamara worth it?',
-            answer: 'Yes, particularly for travelers seeking cultural immersion, boutique ships, and destination-focused luxury cruising.'
+            question: 'Is Azamara worth it for luxury travelers?',
+            answer: 'Yes. Azamara is worth it for travelers who value destination immersion, longer port stays, and a relaxed boutique luxury experience.'
         },
         {
-            question: 'Is Azamara considered luxury?',
-            answer: 'Azamara is considered an upper-premium boutique cruise line with many luxury-level features.'
+            question: 'What makes Azamara different from other luxury cruise lines?',
+            answer: 'Azamara focuses on destination-rich itineraries, longer stays in port, and culturally immersive travel rather than large-scale onboard entertainment.'
         },
         {
-            question: 'Is Azamara all inclusive?',
-            answer: 'Azamara includes gratuities, select beverages, cultural experiences, and several onboard amenities.'
+            question: 'Is Azamara considered a true luxury cruise line?',
+            answer: 'Azamara is considered upper-premium boutique luxury, offering high-quality service and experiences, but not ultra-luxury like Seabourn or Silversea.'
         },
         {
-            question: 'What type of travelers choose Azamara?',
-            answer: 'Azamara appeals primarily to sophisticated travelers, couples, and culturally curious explorers.'
+            question: 'Who is Azamara best suited for?',
+            answer: 'Azamara is ideal for experienced travelers, couples, and cultural explorers who prefer immersive travel over resort-style cruising.'
         },
         {
-            question: 'Is Azamara better than Viking?',
-            answer: 'Azamara emphasizes immersive port experiences and boutique cruising, while Viking Cruises focuses heavily on destination enrichment and Scandinavian-inspired design.'
+            question: 'Does Azamara offer all-inclusive benefits?',
+            answer: 'Yes. Azamara includes gratuities, select beverages, dining, and onboard entertainment in its fares.'
         },
         {
-            question: 'How does Azamara compare to Oceania?',
-            answer: 'Azamara prioritizes destination immersion, while Oceania is particularly known for culinary excellence.'
+            question: 'Are Azamara ships small or large?',
+            answer: 'Azamara operates small to mid-sized ships, allowing access to unique ports and a more intimate onboard atmosphere.'
         },
         {
-            question: 'Are Azamara shore excursions worth it?',
-            answer: 'Many travelers value Azamara’s curated cultural experiences and local immersion opportunities.'
+            question: 'Is Azamara good for first-time cruisers?',
+            answer: 'Yes, especially for travelers who prefer a quieter, more destination-focused luxury experience.'
         },
         {
-            question: 'What are the best Azamara itineraries?',
-            answer: 'Mediterranean, Japan, and culturally immersive Asia itineraries remain among the most popular.'
+            question: 'What kind of destinations does Azamara visit?',
+            answer: 'Azamara sails to Europe, Asia, South America, the Caribbean, and smaller boutique ports around the world.'
         },
         {
-            question: 'Does Azamara attract younger travelers?',
-            answer: 'While Azamara traditionally attracts experienced travelers, younger affluent travelers increasingly appreciate immersive small-ship cruising.'
+            question: 'Are Azamara cruises good value for money?',
+            answer: 'Yes. Many travelers consider Azamara strong value due to longer port stays and included amenities.'
         },
         {
-            question: 'Is Azamara formal?',
-            answer: 'No. Azamara maintains a relaxed luxury atmosphere with elegant resort-casual dress standards.'
+            question: 'How does Azamara compare to mainstream cruise lines?',
+            answer: 'Azamara offers a more intimate, culturally focused experience compared to larger cruise lines that emphasize entertainment and onboard activities.'
+        },
+        {
+            question: 'Does Azamara include shore excursions?',
+            answer: 'Some packages may include offers or credits, but shore excursions are typically optional and not fully included.'
+        },
+        {
+            question: 'Is Azamara good for couples?',
+            answer: 'Yes. Azamara’s relaxed atmosphere and cultural itineraries make it popular among couples seeking meaningful travel experiences.'
+        },
+        {
+            question: 'What is the onboard experience like on Azamara?',
+            answer: 'The onboard experience is relaxed, elegant, and focused on enrichment rather than large-scale entertainment.'
+        },
+        {
+            question: 'When is the best time to sail with Azamara?',
+            answer: 'The best time depends on destination, but spring and autumn are especially popular for cultural itineraries.'
+        },
+        {
+            question: 'Why do travelers choose Azamara over other cruise lines?',
+            answer: 'Travelers choose Azamara for its destination focus, boutique atmosphere, and slower, more immersive travel style.'
         }
     ];
-
-
     const mediMistakes = [
         {
             title: 'Expecting Mega-Ship Entertainment',
@@ -151,102 +175,102 @@ function MediterraneanCruises() {
     ];
 
     const mediSchemaData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "logo": "https://www.tripsandships.com/PNG%20image.png",
-      "sameAs": [
-        "https://www.facebook.com/tripsandships/",
-        "https://www.instagram.com/tripsandshipsluxurytravel"
-      ]
-    },
-    {
-      "@type": "TravelAgency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-    },
-    {
-      "@type": "Person",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO of Trips & Ships Luxury Travel",
-      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "name": "Is Azamara Worth It?",
-      "url": "https://www.tripsandships.com/is-azamara-worth-it",
-      "description": "Expert Azamara luxury cruise review and insights for sophisticated travelers."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsandships.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Luxury Cruises",
-          "item": "https://www.tripsandships.com/luxury-cruises"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Is Azamara Worth It?",
-          "item": "https://www.tripsandships.com/is-azamara-worth-it"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Azamara worth it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Azamara is highly regarded for boutique luxury cruising, destination immersion, and longer stays in port."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Azamara considered luxury?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Azamara all inclusive?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Azamara includes gratuities, select beverages, cultural experiences, and various onboard amenities."
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ]
+            },
+            {
+                "@type": "TravelAgency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+            },
+            {
+                "@type": "Person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Trips & Ships Luxury Travel"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "name": "Is Azamara Worth It?",
+                "url": "https://www.tripsandships.com/is-azamara-worth-it",
+                "description": "Expert Azamara luxury cruise review and insights for sophisticated travelers."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Luxury Cruises",
+                        "item": "https://www.tripsandships.com/luxury-cruises"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Is Azamara Worth It?",
+                        "item": "https://www.tripsandships.com/is-azamara-worth-it"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Azamara is highly regarded for boutique luxury cruising, destination immersion, and longer stays in port."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara considered luxury?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara is considered an upper-premium boutique cruise line with many luxury-level features."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Azamara all inclusive?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Azamara includes gratuities, select beverages, cultural experiences, and various onboard amenities."
+                        }
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
 
 
 
     return (
         <>
             <Helmet>
-                 <title>Is Azamara Worth It? | Honest Luxury Cruise Review 2026
-</title>
+                <title>Is Azamara Worth It? | Honest Luxury Cruise Review 2026
+                </title>
                 <meta
                     name="title"
                     content="Is Azamara Worth It in 2026? | Expert Luxury Cruise Insights
@@ -518,6 +542,94 @@ function MediterraneanCruises() {
 
                     </div>
 
+                    {/* Two-image row */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr',
+                        gap: '20px',
+                        margin: '48px 0 8px'
+                    }}>
+                        <div style={{
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            boxShadow: '0 12px 40px rgba(0,0,0,0.45)',
+                            aspectRatio: '4/3'
+                        }}>
+                            <img
+                                src={worthTypeImg1}
+                                alt="Azamara Napier Gannet Safari aerial view – New Zealand destination"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.5s ease'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute', inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,18,35,0.78) 0%, transparent 55%)'
+                            }} />
+                            <div style={{ position: 'absolute', bottom: '18px', left: '20px' }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: 'rgba(147,197,253,0.18)',
+                                    backdropFilter: 'blur(8px)',
+                                    border: '1px solid rgba(147,197,253,0.35)',
+                                    borderRadius: '30px',
+                                    padding: '6px 16px',
+                                    color: '#e2e8f0',
+                                    fontSize: '0.8rem',
+                                    fontWeight: '600',
+                                    letterSpacing: '0.04em'
+                                }}>Napier, New Zealand</span>
+                            </div>
+                        </div>
+
+                        <div style={{
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            boxShadow: '0 12px 40px rgba(0,0,0,0.45)',
+                            aspectRatio: '4/3'
+                        }}>
+                            <img
+                                src={worthTypeImg2}
+                                alt="Azamara Napier Gannet Safari coastal experience – New Zealand"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.5s ease'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute', inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,18,35,0.78) 0%, transparent 55%)'
+                            }} />
+                            <div style={{ position: 'absolute', bottom: '18px', left: '20px' }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: 'rgba(147,197,253,0.18)',
+                                    backdropFilter: 'blur(8px)',
+                                    border: '1px solid rgba(147,197,253,0.35)',
+                                    borderRadius: '30px',
+                                    padding: '6px 16px',
+                                    color: '#e2e8f0',
+                                    fontSize: '0.8rem',
+                                    fontWeight: '600',
+                                    letterSpacing: '0.04em'
+                                }}>Gannet Safari, Napier</span>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Footer Statement */}
                     <div className="medi-excel-footer-block">
                         <div className="medi-excel-footer-badge">
@@ -670,6 +782,138 @@ function MediterraneanCruises() {
                 </div>
             </section>
 
+            {/* WHAT MAKES AZAMARA DIFFERENT - MOSAIC IMAGE GALLERY */}
+            <section style={{ background: '#0f1c2e', padding: '70px 24px' }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Section Label */}
+                    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+                        <span style={{
+                            display: 'inline-block',
+                            fontSize: '0.72rem',
+                            fontWeight: '700',
+                            letterSpacing: '0.18em',
+                            color: '#93c5fd',
+                            textTransform: 'uppercase',
+                            borderBottom: '2px solid #93c5fd',
+                            paddingBottom: '4px'
+                        }}>Azamara In the World</span>
+                    </div>
+
+                    {/* Asymmetric Mosaic Grid */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1.4fr 1fr',
+                        gridTemplateRows: '240px 240px',
+                        gap: '16px'
+                    }}>
+                        {/* Large left image — spans 2 rows */}
+                        <div style={{
+                            gridRow: '1 / 3',
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            boxShadow: '0 16px 48px rgba(0,0,0,0.5)'
+                        }}>
+                            <img
+                                src={worthImg1}
+                                alt="Azamara AzAmazing Celebration Kusadasi Ephesus"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.5s ease' }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            {/* Gradient + Label */}
+                            <div style={{
+                                position: 'absolute', inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,18,35,0.82) 0%, rgba(10,18,35,0.1) 55%, transparent 100%)'
+                            }} />
+                            <div style={{ position: 'absolute', bottom: '24px', left: '24px' }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: 'rgba(147,197,253,0.18)',
+                                    backdropFilter: 'blur(8px)',
+                                    border: '1px solid rgba(147,197,253,0.35)',
+                                    borderRadius: '30px',
+                                    padding: '7px 20px',
+                                    color: '#e2e8f0',
+                                    fontSize: '0.85rem',
+                                    fontWeight: '600',
+                                    letterSpacing: '0.04em'
+                                }}>AzAmazing Celebration</span>
+                            </div>
+                        </div>
+
+                        {/* Top right image */}
+                        <div style={{
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            boxShadow: '0 16px 48px rgba(0,0,0,0.5)'
+                        }}>
+                            <img
+                                src={worthImg2}
+                                alt="Singapore Tea House Azamara destination"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.5s ease' }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute', inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,18,35,0.78) 0%, transparent 60%)'
+                            }} />
+                            <div style={{ position: 'absolute', bottom: '18px', left: '20px' }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: 'rgba(147,197,253,0.18)',
+                                    backdropFilter: 'blur(8px)',
+                                    border: '1px solid rgba(147,197,253,0.35)',
+                                    borderRadius: '30px',
+                                    padding: '6px 16px',
+                                    color: '#e2e8f0',
+                                    fontSize: '0.8rem',
+                                    fontWeight: '600',
+                                    letterSpacing: '0.04em'
+                                }}>Singapore</span>
+                            </div>
+                        </div>
+
+                        {/* Bottom right image */}
+                        <div style={{
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            boxShadow: '0 16px 48px rgba(0,0,0,0.5)'
+                        }}>
+                            <img
+                                src={worthImg3}
+                                alt="St Petersburg Peter and Paul Fortress Azamara cruise"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.5s ease' }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute', inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,18,35,0.78) 0%, transparent 60%)'
+                            }} />
+                            <div style={{ position: 'absolute', bottom: '18px', left: '20px' }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: 'rgba(147,197,253,0.18)',
+                                    backdropFilter: 'blur(8px)',
+                                    border: '1px solid rgba(147,197,253,0.35)',
+                                    borderRadius: '30px',
+                                    padding: '6px 16px',
+                                    color: '#e2e8f0',
+                                    fontSize: '0.8rem',
+                                    fontWeight: '600',
+                                    letterSpacing: '0.04em'
+                                }}>St. Petersburg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* WHAT IS INCLUDED ON AZAMARA CRUISES */}
             <section className="azw-included-section">
                 <div className="azw-included-container">
@@ -729,7 +973,7 @@ function MediterraneanCruises() {
                 </div>
             </section>
 
-                {/* VIDEO SHOWCASE SECTION */}
+            {/* VIDEO SHOWCASE SECTION */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
@@ -1379,7 +1623,18 @@ function MediterraneanCruises() {
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1540,12 +1795,7 @@ function MediterraneanCruises() {
                             </button>
                         </div>
 
-                        {/* External Resource Links */}
-                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
-                        </div>
+                     
                     </div>
                 </div>
             </section>

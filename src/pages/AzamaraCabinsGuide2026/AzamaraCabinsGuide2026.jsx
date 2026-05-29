@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
-import azamaraShip from "../../assets/image.webp"
+import azamaraShip from "../../assets/Media (2).jpg"
 // import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 // import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
 // import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
@@ -11,9 +11,13 @@ import room1 from '../../assets/AzamaravsVikingOcean/gallery1.webp'
 import room2 from '../../assets/AzamaravsVikingOcean/gallery2.webp'
 import room3 from '../../assets/AzamaravsVikingOcean/gallery3.webp'
 import room4 from '../../assets/AzamaravsVikingOcean/onboard2.webp'
+import Profile_AH from '../../assets/Profile_AH.jpg'
+
+
 
 import room5 from '../../assets/AzamaraCabinsGuide/Social_Vibes.webp'
-// import room6 from '../../assets/AzamaravsVikingOcean/viking.webp'
+import room6 from '../../assets/AzamaraCabinsGuide2026/Picton_Aerial_MarlboroughSounds_JLP_0059.jpg'
+import room7 from '../../assets/AzamaraCabinsGuide2026/Picton_Aerial_MarlboroughSounds_JLP_0041.jpg'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
@@ -185,16 +189,66 @@ function AzamaraCabinsGuide2026() {
     ];
 
     const mediFaqs = [
-        { question: 'Which Azamara cabin is best?', answer: 'Veranda staterooms are often considered the best balance of luxury, comfort, and value.' },
-        { question: 'Are Azamara suites worth it?', answer: 'Yes, particularly for travelers prioritizing additional space, premium amenities, and personalized service.' },
-        { question: 'Do Azamara cabins have balconies?', answer: 'Veranda staterooms and suites include private balconies.' },
-        { question: 'Which deck is best on Azamara?', answer: 'Midship cabins on higher decks are often preferred for stability and scenic views.' },
-        { question: 'Are Azamara cabins small?', answer: 'Azamara cabins are generally comparable to other boutique luxury cruise lines and prioritize efficient comfort.' },
-        { question: 'What is the difference between veranda cabins and suites?', answer: 'Suites provide significantly more space, upgraded amenities, concierge services, and additional luxury inclusions.' },
-        { question: 'Which Azamara cabin should I avoid?', answer: 'Some travelers prefer avoiding cabins near elevators, service areas, or directly below pool decks due to potential noise.' },
-        { question: 'Is Azamara good for couples?', answer: 'Yes. Azamara strongly appeals to couples seeking immersive luxury travel and relaxed boutique cruising.' },
-        { question: 'Are Azamara cabins updated?', answer: 'Azamara ships have undergone modernization updates designed to maintain a contemporary boutique luxury atmosphere.' },
-        { question: 'Are Azamara veranda cabins worth the extra cost?', answer: 'For scenic itineraries and travelers valuing private outdoor space, many consider veranda cabins highly worthwhile.' }
+        {
+            question: 'What are the different types of cabins on Azamara Cruises?',
+            answer: 'Azamara offers Interior Staterooms, Oceanview Staterooms, Veranda Staterooms, and Suites, each offering varying levels of space and amenities.'
+        },
+        {
+            question: 'Which is the best cabin type on Azamara?',
+            answer: 'Club Suites are the best overall, offering extra space, priority services, and enhanced luxury amenities.'
+        },
+        {
+            question: 'What is the difference between Azamara Interior and Oceanview cabins?',
+            answer: 'Interior cabins have no windows, while Oceanview cabins offer natural light and sea views.'
+        },
+        {
+            question: 'Are Azamara Veranda cabins worth it?',
+            answer: 'Yes. Veranda cabins are popular because they include a private balcony and a more premium cruise experience.'
+        },
+        {
+            question: 'What is included in Azamara Suites?',
+            answer: 'Suites include larger living space, butler service, priority boarding, and enhanced onboard benefits.'
+        },
+        {
+            question: 'Which cabin is best for first-time Azamara cruisers?',
+            answer: 'Veranda Staterooms are ideal for first-time guests due to their balance of comfort, views, and value.'
+        },
+        {
+            question: 'Do all Azamara cabins have balconies?',
+            answer: 'No. Only Veranda cabins and Suites include private balconies.'
+        },
+        {
+            question: 'What is the most affordable cabin on Azamara?',
+            answer: 'Interior Staterooms are the most budget-friendly option while still offering quality service and comfort.'
+        },
+        {
+            question: 'Are Azamara cabins spacious compared to other cruise lines?',
+            answer: 'Azamara cabins are well-designed but smaller than some luxury lines; Suites offer significantly more space.'
+        },
+        {
+            question: 'Which deck is best for Azamara cabins?',
+            answer: 'Midship decks are preferred for stability, convenience, and reduced motion at sea.'
+        },
+        {
+            question: 'Do Azamara suites include butler service?',
+            answer: 'Yes. Most suite categories include personalized butler service and added luxury perks.'
+        },
+        {
+            question: 'What is the difference between Veranda and Veranda Plus cabins?',
+            answer: 'Veranda Plus includes extra perks like beverage packages, internet credits, and additional onboard benefits.'
+        },
+        {
+            question: 'Are Azamara cabins good for long cruises?',
+            answer: 'Yes. Suites and Veranda cabins are especially comfortable for longer itineraries.'
+        },
+        {
+            question: 'Which cabin is best for couples?',
+            answer: 'Veranda cabins and Suites are most popular with couples due to privacy and ocean views.'
+        },
+        {
+            question: 'How do I choose the right Azamara cabin?',
+            answer: 'Consider your budget, travel style, desired space, and whether a balcony or suite experience is important to you.'
+        }
     ];
 
     const mediMistakes = [
@@ -264,101 +318,101 @@ function AzamaraCabinsGuide2026() {
     ]
 
     const mediSchemaData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "logo": "https://www.tripsandships.com/PNG%20image.png",
-      "sameAs": [
-        "https://www.facebook.com/tripsandships/",
-        "https://www.instagram.com/tripsandshipsluxurytravel"
-      ]
-    },
-    {
-      "@type": "TravelAgency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-    },
-    {
-      "@type": "Person",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO of Trips & Ships Luxury Travel",
-      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "name": "Azamara Cabins Guide",
-      "url": "https://www.tripsandships.com/azamara-cabins-guide",
-      "description": "Expert guide to Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsandships.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Luxury Cruises",
-          "item": "https://www.tripsandships.com/luxury-cruises"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Azamara Cabins Guide",
-          "item": "https://www.tripsandships.com/azamara-cabins-guide"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which Azamara cabin is best?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Veranda staterooms are often considered the best balance of luxury, comfort, and value."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Azamara suites worth it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Azamara suites provide more space, premium amenities, concierge services, and elevated luxury experiences."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do Azamara cabins have balconies?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Veranda staterooms and suites include private balconies."
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ]
+            },
+            {
+                "@type": "TravelAgency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+            },
+            {
+                "@type": "Person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Trips & Ships Luxury Travel"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "name": "Azamara Cabins Guide",
+                "url": "https://www.tripsandships.com/azamara-cabins-guide",
+                "description": "Expert guide to Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Luxury Cruises",
+                        "item": "https://www.tripsandships.com/luxury-cruises"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Azamara Cabins Guide",
+                        "item": "https://www.tripsandships.com/azamara-cabins-guide"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Which Azamara cabin is best?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Veranda staterooms are often considered the best balance of luxury, comfort, and value."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara suites worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Azamara suites provide more space, premium amenities, concierge services, and elevated luxury experiences."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do Azamara cabins have balconies?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Veranda staterooms and suites include private balconies."
+                        }
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
 
 
     return (
         <>
             <Helmet>
                 <title>Azamara Cabins Guide 2026 | Best Cabins & Suites Explained
-</title>
+                </title>
                 <meta
                     name="title"
                     content="Azamara Cabins Guide 2026 | Expert Luxury Cruise Cabin Insights
@@ -538,7 +592,7 @@ function AzamaraCabinsGuide2026() {
                 </div>
             </section>
 
-              {/* VIDEO SHOWCASE SECTION */}
+            {/* VIDEO SHOWCASE SECTION */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
@@ -642,7 +696,8 @@ function AzamaraCabinsGuide2026() {
                                                 mediSelectedItinerary === 2 ? room3 :
                                                     mediSelectedItinerary === 3 ? room4 :
                                                         mediSelectedItinerary === 4 ? room5 :
-                                                            spainCruise // Placeholder, can be mapped to specific cabin images
+                                                            mediSelectedItinerary === 5 ? room6 :
+                                                                room7
                                     }
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
@@ -1056,7 +1111,18 @@ function AzamaraCabinsGuide2026() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                               <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
@@ -1210,15 +1276,7 @@ function AzamaraCabinsGuide2026() {
                             </button>
                         </div>
 
-                        {/* Resource Links Block */}
-                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                <Globe size={14} /> Azamara Cruises Official Website
-                            </span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-                        </div>
+                     
                     </div>
                 </div>
             </section>

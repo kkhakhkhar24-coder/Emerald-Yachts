@@ -1,12 +1,9 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
-import azamaraShip from "../../assets/image.webp"
-// import greeceCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-// import italyCruise from '../../assets/AzamaraMediterraneanCruises/Lofoten Links - Gimsøysand, Norway by Kevin Murray.jpg'
-// import croatiaCoast from '../../assets/AzamaraMediterraneanCruises/Ship_Oslo_003.jpg'
-// import luxurySuite from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
-// import destinationDining from '../../assets/AzamaraCabinsGuide/Casual_Dining.webp'
-// import spainCruise from '../../assets/AzamaraMediterraneanCruises/Tauranga_Rotorua_TePuia_Geyser_JLP_0144.jpg'
+import azamaraShip from "../../assets/Media (1).jpg"
+import Profile_AH from '../../assets/Profile_AH.jpg'
+
+
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -18,12 +15,20 @@ import {
     Shield,
     Quote
 } from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async' 
 import { useState, useEffect } from 'react'
 import hero1 from '../../assets/BestCabinsOnAzamara/Azamara-night.webp'
 import hero2 from '../../assets/BestCabinsOnAzamara/AzamaraNorway.webp'
 import hero3 from '../../assets/AzamaraMediterraneanCruises/Azamara Italy luxury cruise.webp'
 import cabinimg from "../../assets/AzamaraAlaskaCruises/Hero1.webp"
+import cabinGallery1 from '../../assets/BestCabinsOnAzamara/Onboard_Embarkation_004.webp'
+import cabinGallery2 from '../../assets/BestCabinsOnAzamara/Singapore_GardensByTheBay_252.webp'
+import cabinGallery3 from '../../assets/BestCabinsOnAzamara/Singapore_RiverCruise_035 (1).webp'
+import suiteSlide1 from '../../assets/BestCabinsOnAzamara/Azamara-night.webp'
+import suiteSlide2 from '../../assets/BestCabinsOnAzamara/AzamaraNorway.webp'
+import suiteSlide3 from '../../assets/BestCabinsOnAzamara/Napier_GannetSafari_JLP_0344_VSCO.webp'
+import suiteSlide4 from '../../assets/BestCabinsOnAzamara/Tauranga_Rotorua_TePuia_Geyser_JLP_0069.webp'
+import suiteSlide5 from '../../assets/BestCabinsOnAzamara/Tauranga_Rotorua_TePuia_Haka_JLP_0426.webp'
 
 function BestCabinsOnAzamara() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -40,6 +45,24 @@ function BestCabinsOnAzamara() {
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
     const [mediActiveMistake, setMediActiveMistake] = useState(0)
     const [isMediSliderHovered, setIsMediSliderHovered] = useState(false)
+    const [suiteSliderIndex, setSuiteSliderIndex] = useState(0)
+    const [isSuiteSliderHovered, setIsSuiteSliderHovered] = useState(false)
+
+    const suiteSliderImages = [
+        { src: suiteSlide1, caption: 'Azamara Night Sailing' },
+        { src: suiteSlide2, caption: 'Norwegian Fjords' },
+        { src: suiteSlide3, caption: 'Exclusive Shore Experiences' },
+        { src: suiteSlide4, caption: 'Scenic Destinations' },
+        { src: suiteSlide5, caption: 'Cultural Immersion' },
+    ]
+
+    useEffect(() => {
+        if (isSuiteSliderHovered) return
+        const suiteTimer = setInterval(() => {
+            setSuiteSliderIndex((prev) => (prev + 1) % suiteSliderImages.length)
+        }, 3500)
+        return () => clearInterval(suiteTimer)
+    }, [isSuiteSliderHovered, suiteSliderImages.length])
 
     useEffect(() => {
         if (isMediSliderHovered) return
@@ -78,44 +101,64 @@ function BestCabinsOnAzamara() {
 
     const mediFaqs = [
         {
-            question: 'Which cabin is best on Azamara?',
-            answer: 'Veranda staterooms are widely considered the best overall combination of luxury, comfort, and value.'
+            question: 'What are the best cabins on Azamara Cruises?',
+            answer: 'The best cabins on Azamara are Club Veranda cabins and Club Suites, offering the ideal balance of comfort, views, and luxury amenities.'
         },
         {
-            question: 'Are Azamara veranda cabins worth it?',
-            answer: 'Yes. Many travelers consider private balconies highly worthwhile, especially on scenic itineraries.'
+            question: 'Which Azamara cabin is best for first-time cruisers?',
+            answer: 'Club Veranda cabins are the best choice for first-time guests due to their private balcony and overall value.'
         },
         {
-            question: 'Which deck is best on Azamara?',
-            answer: 'Midship cabins on higher decks are often preferred for stability, views, and convenience.'
+            question: 'Are Azamara suites worth the upgrade?',
+            answer: 'Yes. Suites offer significantly more space, priority services, and enhanced onboard amenities, making them ideal for luxury travelers.'
         },
         {
-            question: 'Are Azamara suites worth the money?',
-            answer: 'For travelers prioritizing luxury space and personalized service, Azamara suites can provide excellent value.'
+            question: 'What is the difference between Interior and Oceanview cabins on Azamara?',
+            answer: 'Interior cabins have no windows, while Oceanview cabins provide natural light and sea views.'
         },
         {
-            question: 'What cabins should travelers avoid on Azamara?',
-            answer: 'Some travelers avoid cabins near elevators, service areas, or directly below pool decks due to potential noise.'
+            question: 'Do Azamara cabins have balconies?',
+            answer: 'Only Club Veranda cabins and Suites include private balconies; Interior and Oceanview cabins do not.'
         },
         {
-            question: 'Are Azamara cabins small?',
-            answer: 'Azamara cabins are designed efficiently for boutique luxury cruising and are comparable to other premium small-ship cruise lines.'
+            question: 'What is included in Azamara Club Suites?',
+            answer: 'Club Suites include spacious layouts, butler service, priority embarkation, and upgraded onboard benefits.'
         },
         {
-            question: 'Which Azamara suite is best?',
-            answer: 'World Owner’s Suites represent the highest level of luxury accommodations onboard.'
+            question: 'Which cabin is best for couples on Azamara?',
+            answer: 'Veranda cabins and Suites are most popular with couples due to privacy, views, and comfort.'
         },
         {
-            question: 'Is Azamara good for couples?',
-            answer: 'Yes. Azamara strongly appeals to couples seeking immersive luxury travel and relaxed boutique cruising.'
+            question: 'Are Azamara cabins small compared to other cruise lines?',
+            answer: 'They are cozy but well-designed; Suites and Veranda cabins offer more space and comfort.'
         },
         {
-            question: 'Are Azamara cabins updated?',
-            answer: 'Azamara ships have undergone modernization updates to maintain a contemporary boutique luxury atmosphere.'
+            question: 'What is the most affordable cabin on Azamara?',
+            answer: 'Interior cabins are the most budget-friendly option while still offering Azamara’s premium service.'
         },
         {
-            question: 'Is a suite necessary on Azamara?',
-            answer: 'Not necessarily. Many travelers find veranda cabins offer the ideal balance between comfort and value.'
+            question: 'Which deck is best for Azamara cabins?',
+            answer: 'Midship cabins on middle decks are preferred for stability, convenience, and smoother sailing.'
+        },
+        {
+            question: 'What is the difference between Club Veranda and Club Veranda Plus?',
+            answer: 'Club Veranda Plus includes extra perks like beverage packages, Wi-Fi credits, and additional amenities.'
+        },
+        {
+            question: 'Do Azamara suites include butler service?',
+            answer: 'Yes, most suite categories include personalized butler service and premium attention.'
+        },
+        {
+            question: 'Are Azamara cabins good for long cruises?',
+            answer: 'Yes. Veranda cabins and Suites are especially comfortable for extended itineraries.'
+        },
+        {
+            question: 'Which cabin offers the best value on Azamara?',
+            answer: 'Club Veranda cabins offer the best overall value for luxury, comfort, and views.'
+        },
+        {
+            question: 'How do I choose the right Azamara cabin?',
+            answer: 'Consider your budget, desired space, balcony preference, and how much time you plan to spend in your cabin.'
         }
     ];
 
@@ -139,94 +182,94 @@ function BestCabinsOnAzamara() {
     ];
 
     const mediSchemaData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "logo": "https://www.tripsandships.com/PNG%20image.png",
-      "sameAs": [
-        "https://www.facebook.com/tripsandships/",
-        "https://www.instagram.com/tripsandshipsluxurytravel"
-      ]
-    },
-    {
-      "@type": "TravelAgency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsandships.com",
-      "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-    },
-    {
-      "@type": "Person",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO of Trips & Ships Luxury Travel",
-      "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "name": "Best Cabins on Azamara",
-      "url": "https://www.tripsandships.com/best-cabins-on-azamara",
-      "description": "Expert guide to the best Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsandships.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Luxury Cruises",
-          "item": "https://www.tripsandships.com/luxury-cruises"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Best Cabins on Azamara",
-          "item": "https://www.tripsandships.com/best-cabins-on-azamara"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which cabin is best on Azamara?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Veranda staterooms are widely considered the best overall combination of luxury, comfort, and value."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Azamara veranda cabins worth it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many travelers consider private balconies highly worthwhile, especially on scenic itineraries."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Azamara suites worth the money?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For travelers prioritizing luxury space and personalized service, Azamara suites can provide excellent value."
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ]
+            },
+            {
+                "@type": "TravelAgency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+            },
+            {
+                "@type": "Person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Trips & Ships Luxury Travel"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "name": "Best Cabins on Azamara",
+                "url": "https://www.tripsandships.com/best-cabins-on-azamara",
+                "description": "Expert guide to the best Azamara cabins, suites, veranda staterooms, and luxury cruise accommodations."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Luxury Cruises",
+                        "item": "https://www.tripsandships.com/luxury-cruises"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Best Cabins on Azamara",
+                        "item": "https://www.tripsandships.com/best-cabins-on-azamara"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Which cabin is best on Azamara?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Veranda staterooms are widely considered the best overall combination of luxury, comfort, and value."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara veranda cabins worth it?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Many travelers consider private balconies highly worthwhile, especially on scenic itineraries."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Azamara suites worth the money?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "For travelers prioritizing luxury space and personalized service, Azamara suites can provide excellent value."
+                        }
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
 
 
 
@@ -235,7 +278,7 @@ function BestCabinsOnAzamara() {
         <>
             <Helmet>
                 <title>
-Best Cabins on Azamara 2026 | Expert Luxury Cruise Cabin Guide
+                    Best Cabins on Azamara 2026 | Expert Luxury Cruise Cabin Guide
 
                 </title>
                 <meta
@@ -402,6 +445,125 @@ s" />
                                     <span>{cat}</span>
                                 </span>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* CABIN CATEGORIES IMAGE GALLERY */}
+            <section style={{ background: '#f8fafc', padding: '60px 20px' }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                        gap: '24px'
+                    }}>
+                        {/* Image 1 */}
+                        <div style={{
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            boxShadow: '0 8px 32px rgba(15,28,46,0.13)',
+                            position: 'relative',
+                            aspectRatio: '4/3',
+                            background: '#0f1c2e'
+                        }}>
+                            <img
+                                src={cabinGallery1}
+                                alt="Azamara onboard embarkation experience"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.4s ease'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                padding: '20px 20px 16px',
+                                background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 100%)'
+                            }}>
+                                <span style={{ color: '#ffffff', fontSize: '0.95rem', fontWeight: '600', letterSpacing: '0.02em' }}>
+                                    Onboard Experience
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Image 2 */}
+                        <div style={{
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            boxShadow: '0 8px 32px rgba(15,28,46,0.13)',
+                            position: 'relative',
+                            aspectRatio: '4/3',
+                            background: '#0f1c2e'
+                        }}>
+                            <img
+                                src={cabinGallery2}
+                                alt="Singapore Gardens by the Bay Azamara cruise destination"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.4s ease'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                padding: '20px 20px 16px',
+                                background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 100%)'
+                            }}>
+                                <span style={{ color: '#ffffff', fontSize: '0.95rem', fontWeight: '600', letterSpacing: '0.02em' }}>
+                                    Destination Immersion
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Image 3 */}
+                        <div style={{
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            boxShadow: '0 8px 32px rgba(15,28,46,0.13)',
+                            position: 'relative',
+                            aspectRatio: '4/3',
+                            background: '#0f1c2e'
+                        }}>
+                            <img
+                                src={cabinGallery3}
+                                alt="Singapore River Cruise Azamara scenic sailing"
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.4s ease'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                            />
+                            <div style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                padding: '20px 20px 16px',
+                                background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 100%)'
+                            }}>
+                                <span style={{ color: '#ffffff', fontSize: '0.95rem', fontWeight: '600', letterSpacing: '0.02em' }}>
+                                    Scenic Sailing
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -653,7 +815,7 @@ s" />
             </section>
 
 
-              {/* VIDEO SHOWCASE SECTION */}
+            {/* VIDEO SHOWCASE SECTION */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
@@ -724,6 +886,92 @@ s" />
                         <span style={{ fontSize: '18px', fontWeight: '500', lineHeight: '1.6', color: '#e2e8f0' }}>
                             For many travelers, Club Continent Suites provide the "sweet spot" between affordability and premium luxury.
                         </span>
+                    </div>
+
+                    {/* AUTO IMAGE SLIDER */}
+                    <div
+                        style={{ position: 'relative', maxWidth: '900px', margin: '50px auto 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', userSelect: 'none' }}
+                        onMouseEnter={() => setIsSuiteSliderHovered(true)}
+                        onMouseLeave={() => setIsSuiteSliderHovered(false)}
+                    >
+                        {/* Slides */}
+                        {suiteSliderImages.map((slide, idx) => (
+                            <div
+                                key={idx}
+                                style={{
+                                    position: idx === 0 ? 'relative' : 'absolute',
+                                    top: 0, left: 0, width: '100%', height: '100%',
+                                    opacity: suiteSliderIndex === idx ? 1 : 0,
+                                    transition: 'opacity 0.8s ease-in-out',
+                                    zIndex: suiteSliderIndex === idx ? 1 : 0,
+                                }}
+                            >
+                                <img
+                                    src={slide.src}
+                                    alt={slide.caption}
+                                    style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
+                                />
+                                {/* Caption overlay */}
+                                <div style={{
+                                    position: 'absolute', bottom: 0, left: 0, right: 0,
+                                    padding: '40px 30px 24px',
+                                    background: 'linear-gradient(to top, rgba(10,18,35,0.9) 0%, transparent 100%)'
+                                }}>
+                                    <span style={{ color: '#ffffff', fontSize: '1.05rem', fontWeight: '600', letterSpacing: '0.03em' }}>
+                                        {slide.caption}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+
+                        {/* Prev Arrow */}
+                        <button
+                            onClick={() => setSuiteSliderIndex((prev) => (prev - 1 + suiteSliderImages.length) % suiteSliderImages.length)}
+                            style={{
+                                position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)',
+                                zIndex: 10, background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(6px)',
+                                border: '1px solid rgba(255,255,255,0.25)', borderRadius: '50%',
+                                width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                cursor: 'pointer', color: '#ffffff', fontSize: '20px', transition: 'background 0.2s'
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.3)'}
+                            onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
+                        >&#8249;</button>
+
+                        {/* Next Arrow */}
+                        <button
+                            onClick={() => setSuiteSliderIndex((prev) => (prev + 1) % suiteSliderImages.length)}
+                            style={{
+                                position: 'absolute', right: '16px', top: '50%', transform: 'translateY(-50%)',
+                                zIndex: 10, background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(6px)',
+                                border: '1px solid rgba(255,255,255,0.25)', borderRadius: '50%',
+                                width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                cursor: 'pointer', color: '#ffffff', fontSize: '20px', transition: 'background 0.2s'
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.3)'}
+                            onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
+                        >&#8250;</button>
+
+                        {/* Dot Indicators */}
+                        <div style={{
+                            position: 'absolute', bottom: '16px', right: '20px',
+                            zIndex: 10, display: 'flex', gap: '8px', alignItems: 'center'
+                        }}>
+                            {suiteSliderImages.map((_, idx) => (
+                                <button
+                                    key={idx}
+                                    onClick={() => setSuiteSliderIndex(idx)}
+                                    style={{
+                                        width: suiteSliderIndex === idx ? '24px' : '8px',
+                                        height: '8px',
+                                        borderRadius: '4px',
+                                        background: suiteSliderIndex === idx ? '#93c5fd' : 'rgba(255,255,255,0.45)',
+                                        border: 'none', cursor: 'pointer', padding: 0,
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -906,6 +1154,53 @@ s" />
                     </div>
                 </div>
             </section>
+
+            {/* DECK GUIDE IMAGE BANNER */}
+            <div style={{ width: '100%', position: 'relative', overflow: 'hidden', maxHeight: '460px', lineHeight: 0 }}>
+                <img
+                    src={suiteSlide2}
+                    alt="Azamara ship deck scenic view"
+                    style={{
+                        width: '100%',
+                        height: '460px',
+                        objectFit: 'cover',
+                        display: 'block',
+                        filter: 'brightness(0.82)'
+                    }}
+                />
+                {/* Top fade */}
+                <div style={{
+                    position: 'absolute', top: 0, left: 0, right: 0, height: '80px',
+                    background: 'linear-gradient(to bottom, rgba(15,28,46,0.7) 0%, transparent 100%)'
+                }} />
+                {/* Bottom fade */}
+                <div style={{
+                    position: 'absolute', bottom: 0, left: 0, right: 0, height: '120px',
+                    background: 'linear-gradient(to top, rgba(15,28,46,0.75) 0%, transparent 100%)'
+                }} />
+                {/* Caption */}
+                <div style={{
+                    position: 'absolute', bottom: '32px', left: '50%',
+                    transform: 'translateX(-50%)',
+                    textAlign: 'center', zIndex: 2
+                }}>
+                    <span style={{
+                        color: '#ffffff',
+                        fontSize: '1.15rem',
+                        fontWeight: '600',
+                        letterSpacing: '0.04em',
+                        textShadow: '0 2px 12px rgba(0,0,0,0.5)',
+                        background: 'rgba(255,255,255,0.08)',
+                        backdropFilter: 'blur(6px)',
+                        border: '1px solid rgba(255,255,255,0.18)',
+                        borderRadius: '30px',
+                        padding: '10px 28px',
+                        display: 'inline-block'
+                    }}>
+                        Azamara — Where Every Deck Tells a Story
+                    </span>
+                </div>
+            </div>
 
             {/* ARE AZAMARA SUITES WORTH THE MONEY? */}
             <section className="suites-worth-section">
@@ -1312,7 +1607,7 @@ s" />
                     {/* Header Block */}
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Work with Trips & Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Work with Trips & Ships <br /> Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p style={{ textAlign: 'center', color: '#64748b', marginTop: '15px', fontSize: '1.1rem' }}>
                             Luxury cruise planning has become increasingly specialized.
@@ -1323,7 +1618,19 @@ s" />
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                {/* <span className="medi-prestige-initials">AH</span> */}
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1479,13 +1786,8 @@ s" />
                             </button>
                         </div>
 
-                        {/* Industry Resource Links */}
-                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Azamara Cruises Official Website</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-                        </div>
+                       
+                       
                     </div>
                 </div>
             </section>
