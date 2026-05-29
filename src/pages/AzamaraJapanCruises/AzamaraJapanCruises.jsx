@@ -22,6 +22,8 @@ import { useState, useEffect } from 'react'
 import hero1 from '../../assets/JapanTravelCost/Hero1.webp'
 import hero2 from '../../assets/JapanTravelCost/Hero2.webp'
 import hero3 from '../../assets/JapanTravelCost/Hero3.webp'
+import Profile_AH from '../../assets/AzamaraJapanCruises/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraJapanCruises/Profile_Picture_AH.jpg'
 
 function AzamaraJapanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -718,7 +720,7 @@ function AzamaraJapanCruises() {
             </section>
 
 
-                {/* VIDEO SHOWCASE SECTION */}
+            {/* VIDEO SHOWCASE SECTION */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <h2 className="medi-section-heading">Experience the Japan with Azamara</h2>
@@ -757,7 +759,7 @@ function AzamaraJapanCruises() {
                         {/* Left Side: Editorial Portrait and Floating Stat Badge */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={azamaraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -1211,7 +1213,18 @@ function AzamaraJapanCruises() {
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
@@ -1288,11 +1301,6 @@ function AzamaraJapanCruises() {
                     </div>
                 </div>
             </section>
-
-
-
-
-
 
             {/* FAQ SECTION */}
             <section className="medi-faq-main-section">

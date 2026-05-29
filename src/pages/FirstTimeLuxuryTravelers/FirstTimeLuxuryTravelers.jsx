@@ -8,6 +8,13 @@ import ExploraCruises from '../../assets/FirstTimeLuxuryTravelers/EXPLORA III-IV
 import CaribbeanLuxuryCruises from '../../assets/FirstTimeLuxuryTravelers/EXPLORA II sailing in Miami.webp'
 import NorthernEurope from '../../assets/FirstTimeLuxuryTravelers/greenland-expedition-cruise-arctic-luxury-voyage.webp'
 import LuxurySuite from '../../assets/FirstTimeLuxuryTravelers/luxury-couple-relaxing-on-explora-journeys-pool-deck.webp'
+import Profile_AH from '../../assets/FirstTimeLuxuryTravelers/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/FirstTimeLuxuryTravelers/Profile_Picture_AH.jpg'
+import Image_1 from '../../assets/FirstTimeLuxuryTravelers/Image_1.webp'
+import Image_2 from '../../assets/FirstTimeLuxuryTravelers/Image_2.webp'
+import Image_3 from '../../assets/FirstTimeLuxuryTravelers/Image_3.webp'
+import Image_4 from '../../assets/FirstTimeLuxuryTravelers/Image_4.webp'
+import Image_5 from '../../assets/FirstTimeLuxuryTravelers/Image_5.webp'
 
 
 import {
@@ -107,6 +114,26 @@ function FirstTimeLuxuryTravelers() {
         {
             question: 'Which Explora itinerary is best for beginners?',
             answer: 'Mediterranean voyages are often ideal for first-time luxury cruisers because of the combination of culture, scenery, and port variety.'
+        },
+        {
+            question: 'Are Explora Cruises good for first-time luxury travelers?',
+            answer: 'Yes. Explora Journeys is designed for modern luxury travelers, offering a relaxed, residential-style experience that is ideal for first-time luxury cruisers.'
+        },
+        {
+            question: 'Why choose Explora Cruises for a first luxury cruise?',
+            answer: 'Explora combines boutique ship intimacy with ultra-modern design, spacious suites, and a calm, uncrowded atmosphere perfect for new luxury travelers.'
+        },
+        {
+            question: 'Is Explora Journeys considered ultra luxury?',
+            answer: 'Yes. Explora Journeys is positioned as ultra-luxury with premium service, spacious accommodations, and curated destination experiences.'
+        },
+        {
+            question: 'What makes Explora Cruises different from other luxury cruise lines?',
+            answer: 'Explora focuses on a “hotel at sea” concept with larger suites, fewer guests, wellness experiences, and slower, more immersive travel.'
+        },
+        {
+            question: 'Which Explora ship is best for first-time luxury travelers?',
+            answer: 'Both EXPLORA I and EXPLORA II are excellent, offering similar luxury standards, modern design, and curated itineraries.'
         }
     ];
 
@@ -1272,6 +1299,124 @@ function FirstTimeLuxuryTravelers() {
                 </div>
             </section>
 
+            {/* ── COMPACT SEAMLESS VISUAL GALLERY - FULLY RESPONSIVE ── */}
+            <section className="gallery-section-wrapper" style={{
+                padding: 'clamp(50px, 8vw, 100px) 20px',
+                backgroundColor: '#0f1c2e',
+                fontFamily: 'sans-serif',
+                overflow: 'hidden'
+            }}>
+                {/* Responsive Grid Logic */}
+                <style>{`
+        .bento-grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 160px;
+            gap: 12px;
+            width: 100%;
+        }
+        .bento-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .bento-item:hover .bento-img {
+            transform: scale(1.08);
+        }
+
+        /* Tablet Breakpoint (2 Columns) */
+        @media (max-width: 992px) {
+            .bento-grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 180px;
+            }
+            .item-1 { grid-column: span 2; grid-row: span 2; }
+            .item-2 { grid-column: span 1; grid-row: span 1; }
+            .item-3 { grid-column: span 1; grid-row: span 1; }
+            .item-4 { grid-column: span 1; grid-row: span 1; }
+            .item-5 { grid-column: span 1; grid-row: span 1; }
+        }
+
+        /* Mobile Breakpoint (1 Column) */
+        @media (max-width: 600px) {
+            .bento-grid-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 240px;
+                gap: 15px;
+            }
+            .bento-item {
+                grid-column: span 1 !important;
+                grid-row: span 1 !important;
+            }
+        }
+    `}</style>
+
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: 'clamp(30px, 5vw, 50px)' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px',
+                            display: 'block',
+                            marginBottom: '10px'
+                        }}>
+                            Visual Immersion
+                        </span>
+                        <h2 style={{
+                            fontSize: 'clamp(24px, 5vw, 42px)',
+                            color: '#ffffff',
+                            fontWeight: '700',
+                            marginBottom: '15px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            The Ocean State of Mind
+                        </h2>
+                        <div style={{ width: '60px', height: '3px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    </div>
+
+                    {/* BENTO GRID */}
+                    <div className="bento-grid-container">
+                        {/* Image 1: Feature */}
+                        <div className="bento-item item-1" style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
+                            <img src={Image_1} alt="Luxury Ship" className="bento-img" />
+                        </div>
+
+                        {/* Image 2: Lifestyle */}
+                        <div className="bento-item item-2" style={{ gridColumn: 'span 1', gridRow: 'span 1' }}>
+                            <img src={Image_2} alt="Relaxation" className="bento-img" />
+                        </div>
+
+                        {/* Image 3: Culinary */}
+                        <div className="bento-item item-3" style={{ gridColumn: 'span 1', gridRow: 'span 1' }}>
+                            <img src={Image_3} alt="Dining" className="bento-img" />
+                        </div>
+
+                        {/* Image 4: Suite Detail */}
+                        <div className="bento-item item-4" style={{ gridColumn: 'span 1', gridRow: 'span 1' }}>
+                            <img src={Image_4} alt="Suite" className="bento-img" />
+                        </div>
+
+                        {/* Image 5: Wide Destination */}
+                        <div className="bento-item item-5" style={{ gridColumn: 'span 2', gridRow: 'span 1' }}>
+                            <img src={Image_5} alt="Destination" className="bento-img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* IS EXPLORA LUXURY - RESPONSIVE CENTERING FIX */}
             <section className="medi-luxury-definition-section">
                 <div className="medi-luxury-definition-container">
@@ -1875,7 +2020,7 @@ function FirstTimeLuxuryTravelers() {
                         {/* Left Side: Editorial Portrait and Floating Stat Badge */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={azamaraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -2054,7 +2199,6 @@ function FirstTimeLuxuryTravelers() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -2073,7 +2217,20 @@ function FirstTimeLuxuryTravelers() {
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                {/* FIXED: Replaced initials with Profile Image */}
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        // This ensures the face doesn't rotate if the ring has a spin animation
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -2119,7 +2276,6 @@ function FirstTimeLuxuryTravelers() {
                 </div>
             </section>
 
-
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
@@ -2137,8 +2293,6 @@ function FirstTimeLuxuryTravelers() {
                             width="100%"
                             height="100%"
                             src="https://www.youtube.com/embed/C_BMby4dyDE"
-
-
                             title="Experience the Mediterranean with Azamara"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -2225,16 +2379,6 @@ function FirstTimeLuxuryTravelers() {
                                 <Phone size={18} />
                                 Schedule a Personalized Luxury Cruise Consultation Today
                             </button>
-                        </div>
-
-                        {/* Industry Resource Links */}
-                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                <Globe size={14} /> Explora Journeys Official Website
-                            </span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
                         </div>
                     </div>
                 </div>

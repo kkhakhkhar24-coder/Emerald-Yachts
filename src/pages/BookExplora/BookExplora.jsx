@@ -1,9 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import angelaHughes from "../../assets/image.webp"
-
-
-
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
@@ -24,6 +21,14 @@ import benefitImg2 from '../../assets/BookExplora/explora-III-helios-pool-luxury
 import benefitImg3 from '../../assets/BookExplora/EXPLORA III - Crema Cafe.webp'
 import benefitImg4 from '../../assets/BookExplora/EXPLORA III-IV - Fil Rouge.webp'
 import exploraLuxury from '../../assets/BookExplora/EXPLORA III-IV CR 17 .webp'
+import Profile_AH from '../../assets/BookExplora/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/BookExplora/Profile_Picture_AH.jpg'
+import Image_1 from '../../assets/BookExplora/Image_1.webp'
+import Image_2 from '../../assets/BookExplora/Image_2.webp'
+import Image_3 from '../../assets/BookExplora/Image_3.webp'
+import Image_4 from '../../assets/BookExplora/Image_4.webp'
+import Image_5 from '../../assets/BookExplora/Image_5.webp'
+import Image_6 from '../../assets/BookExplora/Image_6.webp'
 
 function BookExplora() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -78,15 +83,67 @@ function BookExplora() {
     ]
 
     const mediFaqs = [
-        { question: 'Should you book Explora through a travel advisor?', answer: 'For many luxury travelers, yes. Travel advisors help with suite selection, itinerary planning, exclusive amenities, and personalized support.' },
-        { question: 'Is it cheaper to book Explora through a travel advisor?', answer: 'Pricing is often similar, but advisors may provide added amenities, onboard credits, or greater overall value.' },
-        { question: 'What does a luxury cruise advisor do?', answer: 'Luxury cruise advisors help travelers compare cruise lines, select suites, coordinate logistics, and personalize the entire travel experience.' },
-        { question: 'Can travel advisors get better Explora perks?', answer: 'Some luxury advisors have access to exclusive amenities, promotions, hosted experiences, or preferred partner benefits.' },
-        { question: 'Do travel advisors help with suite selection?', answer: 'Yes. Advisors help travelers evaluate deck location, suite categories, privacy, and overall value.' },
-        { question: 'Why use a travel advisor for luxury cruises?', answer: 'Luxury cruising involves more specialized planning than standard vacations, especially regarding suites, itineraries, and international logistics.' },
-        { question: 'Are travel advisors worth it for Explora Journeys?', answer: 'For many travelers — especially first-time luxury cruisers — the expertise and personalized support can significantly improve the experience.' },
-        { question: 'Can travel advisors help with cruise itinerary planning?', answer: 'Absolutely. Advisors help travelers match itineraries with travel style, destination interests, and preferred onboard atmosphere.' }
-    ]
+        {
+            question: 'Should you book Explora Journeys through a travel advisor?',
+            answer: 'Yes. Booking through a travel advisor can provide better value, personalized planning, and expert guidance on suites, itineraries, and onboard experiences.'
+        },
+        {
+            question: 'What are the benefits of using a travel advisor for Explora Journeys?',
+            answer: 'Travel advisors help you choose the best suite, secure added perks, manage bookings, and tailor your cruise to your travel style.'
+        },
+        {
+            question: 'Is it cheaper to book Explora Journeys through a travel advisor?',
+            answer: 'Often yes. Advisors may offer exclusive promotions, added amenities, or better value packages not always available directly.'
+        },
+        {
+            question: 'Can a travel advisor help choose the best Explora suite?',
+            answer: 'Yes. Advisors can recommend the best suite category based on your budget, preferences, and travel goals.'
+        },
+        {
+            question: 'Do travel advisors have access to special deals for Explora Journeys?',
+            answer: 'Many luxury travel advisors have access to exclusive offers, onboard credits, and VIP amenities.'
+        },
+        {
+            question: 'Why not book Explora Journeys directly online?',
+            answer: 'While you can book directly, you may miss out on personalized recommendations, upgrades, and additional value-added services.'
+        },
+        {
+            question: 'What kind of support does a travel advisor provide before the cruise?',
+            answer: 'They assist with itinerary planning, documentation, transfers, pre-cruise hotels, and special requests.'
+        },
+        {
+            question: 'Do travel advisors help during the cruise as well?',
+            answer: 'Yes. Many advisors provide ongoing support and act as a point of contact for changes or special needs.'
+        },
+        {
+            question: 'Can a travel advisor help with shore excursions on Explora Journeys?',
+            answer: 'Yes. Advisors can recommend the best excursions based on your interests and destination style.'
+        },
+        {
+            question: 'Is it better to book luxury cruises like Explora Journeys with an expert?',
+            answer: 'Yes. Luxury cruises involve multiple suite categories and itineraries, and expert guidance helps maximize your experience.'
+        },
+        {
+            question: 'Do travel advisors charge extra for booking Explora Journeys?',
+            answer: 'Usually no. Most advisors are compensated by the cruise line, so you typically pay the same price or better.'
+        },
+        {
+            question: 'Can a travel advisor customize my Explora Journeys itinerary?',
+            answer: 'Yes. Advisors can help personalize pre- and post-cruise stays, flights, and onboard experiences.'
+        },
+        {
+            question: 'What mistakes do travelers make when booking Explora Journeys alone?',
+            answer: 'Common mistakes include choosing the wrong suite, missing promotions, or not optimizing itinerary selection.'
+        },
+        {
+            question: 'Who should use a travel advisor for Explora Journeys?',
+            answer: 'First-time luxury cruisers, couples, and travelers wanting a stress-free, optimized booking experience benefit most.'
+        },
+        {
+            question: 'Why is Explora Journeys ideal for advisor-led bookings?',
+            answer: 'Because of its premium pricing, suite variety, and curated experiences, expert guidance ensures the best overall value and experience.'
+        }
+    ];
 
     const mediMistakes = [
         {
@@ -1167,7 +1224,7 @@ function BookExplora() {
                         {/* Left: Portrait + Stats */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={angelaHughes} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -1423,34 +1480,110 @@ function BookExplora() {
                 </div>
             </section>
 
-            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+            {/* ── VISUAL IMMERSION: THE LIFESTYLE GALLERY ── */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#ffffff',
+                fontFamily: 'sans-serif'
+            }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
-                    <div style={{
-                        maxWidth: '900px',
-                        margin: '0 auto',
-                        borderRadius: '20px',
-                        overflow: 'hidden',
-                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
-                        border: '1px solid rgba(39, 68, 114, 0.1)',
-                        aspectRatio: '16/9',
-                        background: '#000'
-                    }}>
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/qx_9Nt6kYpI"
-                            title="Experience the Mediterranean with Azamara"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                            style={{ display: 'block' }}
-                        ></iframe>
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px',
+                            display: 'block',
+                            marginBottom: '15px'
+                        }}>
+                            The Home at Sea
+                        </span>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: '#274472', // Your Brand Navy
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Effortless Elegance: The Explora Journeys Visual Experience
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
+
+                    {/* SEAMLESS BENTO GRID */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gridAutoRows: '240px',
+                        gap: '16px',
+                        width: '100%'
+                    }}>
+                        {/* Image 1: Main Feature (Spans 2 cols, 2 rows) */}
+                        <div style={{ gridColumn: 'span 2', gridRow: 'span 2', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_1} alt="Explora Journeys Exterior" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 2: Pool Deck (Spans 2 cols, 1 row) */}
+                        <div style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_2} alt="Helios Pool Deck" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 3: Culinary (Spans 1 col, 1 row) */}
+                        <div style={{ gridColumn: 'span 1', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_3} alt="Fil Rouge Dining" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 4: Interior (Spans 1 col, 1 row) */}
+                        <div style={{ gridColumn: 'span 1', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_4} alt="Explora Luxury Suite" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 5: Cafe (Spans 2 cols, 1 row) */}
+                        <div style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_5} alt="Crema Cafe" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 6: Destination (Spans 2 cols, 1 row) */}
+                        <div style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.05)' }}>
+                            <img src={Image_6} alt="Explora Panama Canal" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+                    </div>
+
+                    <style>{`
+                        @media (max-width: 992px) {
+                            div[style*="grid-template-columns: repeat(4, 1fr)"] {
+                                grid-template-columns: repeat(2, 1fr) !important;
+                                grid-auto-rows: 200px !important;
+                            }
+                        }
+                        @media (max-width: 600px) {
+                            div[style*="grid-template-columns: repeat(4, 1fr)"] {
+                                grid-template-columns: 1fr !important;
+                                grid-auto-rows: 250px !important;
+                            }
+                            div[style*="grid-column: span 2"] {
+                                grid-column: span 1 !important;
+                            }
+                        }
+                    `}</style>
                 </div>
             </section>
-
 
             {/* ── WHO SHOULD BOOK EXPLORA ───────────────────────────────────── */}
             {/* ── EXPLORA VS BOOKING ONLINE YOURSELF - LIGHT NAVY THEME ── */}
@@ -1756,7 +1889,18 @@ function BookExplora() {
                         {/* Left: Identity Card */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -2069,25 +2213,8 @@ function BookExplora() {
                             </p>
                         </div>
                     </div>
-
-                    {/* 6. FOOTER RESOURCE PILLS */}
-                    <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px', opacity: 0.7 }}>
-                        {[
-                            'Official Brand Partner',
-                            'CLIA Accredited',
-                            'Travel Leaders Network',
-                            'Condé Nast Rated'
-                        ].map((item, idx) => (
-                            <div key={idx} style={{ padding: '10px 22px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff', fontSize: '12px', fontWeight: '500', letterSpacing: '0.05em' }}>
-                                {item}
-                            </div>
-                        ))}
-                    </div>
-
                 </div>
             </section>
-
-
         </>
     )
 }

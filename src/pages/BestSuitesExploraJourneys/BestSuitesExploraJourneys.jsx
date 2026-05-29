@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
-import azamaraShip from "../../assets/image.webp"
+import Profile_Picture_AH from "../../assets/BestSuitesExploraJourneys/Profile_Picture_AH.jpg"
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect, Activity } from 'react'
-import hero1 from '../../assets/BestSuitesExploraJourneys/explora-journeys-canada-new-england-fall-cruise.webp'
+import hero1 from '../../assets/BestSuitesExploraJourneys/EXPLORA_sailing_in_Miami.webp'
 import hero2 from '../../assets/BestSuitesExploraJourneys/explora-I-infinity-pool-ocean-wake-view.webp'
 import hero3 from '../../assets/BestSuitesExploraJourneys/EXPLORA III-IV CR 17.webp'
 import suiteImg0 from '../../assets/BestSuitesExploraJourneys/explora-journeys-ocean-grand-terrace-suite-balcony.webp'
@@ -30,6 +30,13 @@ import suiteImg2 from '../../assets/BestSuitesExploraJourneys/explora-journeys-d
 import suiteImg3 from '../../assets/BestSuitesExploraJourneys/explora-III-serenity-residence-luxury-oceanfront-suite.webp'
 import suiteImg4 from '../../assets/BestSuitesExploraJourneys/EXPLORA III-IV - The Conservatory Pool & Bar (1).webp'
 import residance from '../../assets/BestSuitesExploraJourneys/explora-journeys-retreat-residence-luxury-suite-living-room.webp'
+import Profile_AH from '../../assets/BestSuitesExploraJourneys/Profile_AH.jpg'
+import Image_1 from '../../assets/BestSuitesExploraJourneys/Image_1.webp'
+import Image_2 from '../../assets/BestSuitesExploraJourneys/Image_2.webp'
+import Image_3 from '../../assets/BestSuitesExploraJourneys/Image_3.webp'
+import Image_4 from '../../assets/BestSuitesExploraJourneys/Image_4.webp'
+import Image_5 from '../../assets/BestSuitesExploraJourneys/Image_5.webp'
+import Image_6 from '../../assets/BestSuitesExploraJourneys/Image_6.webp'
 
 function BestSuitesExploraJourneys() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -105,35 +112,63 @@ function BestSuitesExploraJourneys() {
     const mediFaqs = [
         {
             question: 'What are the best suites on Explora Journeys?',
-            answer: 'Ocean Residences and Cocoon Residences are widely considered among the best suites because of their space, privacy, and premium amenities.'
+            answer: 'The best suites on Explora Journeys are Ocean Residences, Owner’s Residences, and Cove Residences, offering the highest level of space, luxury, and privacy.'
         },
         {
-            question: 'Are Explora suites spacious?',
-            answer: 'Yes. Explora Journeys offers some of the largest standard accommodations in luxury cruising.'
+            question: 'What is the difference between Ocean Suites and Ocean Residences?',
+            answer: 'Ocean Suites are luxurious entry-level suites, while Ocean Residences offer significantly more space, upgraded amenities, and enhanced butler-style service.'
         },
         {
-            question: 'What is included in Explora Ocean Residences?',
-            answer: 'Ocean Residences typically include expanded living areas, premium concierge services, enhanced amenities, and luxury oceanfront positioning.'
+            question: 'Which suite category is most popular on Explora Journeys?',
+            answer: 'Ocean Suites are the most popular due to their modern design, spacious layout, and excellent value within the luxury segment.'
         },
         {
-            question: 'Which Explora suite is best for couples?',
-            answer: 'Ocean Penthouses and Ocean Residences are especially popular with couples seeking privacy and elevated luxury experiences.'
+            question: 'Are Explora suites larger than traditional cruise cabins?',
+            answer: 'Yes. Even entry-level suites on Explora Journeys are significantly larger than standard cruise ship cabins, with residential-style layouts.'
         },
         {
-            question: 'Are Explora suites worth the money?',
-            answer: 'For travelers prioritizing space, luxury design, personalized service, and wellness-focused travel, Explora suites often deliver exceptional value.'
+            question: 'Do all Explora suites have a balcony?',
+            answer: 'Yes. All suites include a private terrace or balcony, designed to enhance the “home at sea” experience.'
         },
         {
-            question: 'Does Explora Journeys offer butler service?',
-            answer: 'Higher suite categories and residences may include dedicated butler-style or enhanced concierge services.'
+            question: 'What is special about the Owner’s Residence on Explora?',
+            answer: 'The Owner’s Residence is the most exclusive suite, offering expansive living space, premium amenities, and ultra-personalized service.'
         },
         {
-            question: 'Which deck is best on Explora Journeys?',
-            answer: 'Mid-ship decks are often preferred for stability and convenience, while higher decks offer premium positioning and enhanced views.'
+            question: 'Are Explora suites good for couples?',
+            answer: 'Yes. Suites are designed with open layouts, luxury bedding, and private terraces, making them ideal for couples.'
         },
         {
-            question: 'What is the difference between Explora suites and residences?',
-            answer: 'Residences are significantly larger and include expanded living space, additional luxury amenities, and more personalized services.'
+            question: 'Which suite is best for first-time Explora travelers?',
+            answer: 'Ocean Suites and Ocean Penthouses are ideal for first-time guests who want luxury, comfort, and great value.'
+        },
+        {
+            question: 'What amenities are included in Explora suites?',
+            answer: 'Suites include luxury bedding, spacious bathrooms, private terraces, premium toiletries, and high-end in-suite dining options.'
+        },
+        {
+            question: 'What is the difference between Ocean Terrace and Ocean Penthouse Suites?',
+            answer: 'Ocean Terrace Suites offer entry luxury, while Ocean Penthouses provide larger living space, upgraded design, and enhanced amenities.'
+        },
+        {
+            question: 'Are Explora suites all-inclusive?',
+            answer: 'Yes. Most suite experiences include dining, beverages, wellness access, and curated onboard services.'
+        },
+        {
+            question: 'Do Explora suites include butler service?',
+            answer: 'Higher-category suites such as Ocean Penthouses and Residences include enhanced butler-style services.'
+        },
+        {
+            question: 'Which deck is best for suites on Explora Journeys?',
+            answer: 'Mid to higher decks are preferred for better ocean views, smoother sailing, and easier access to amenities.'
+        },
+        {
+            question: 'Are Explora suites good for long cruises?',
+            answer: 'Yes. The residential-style design makes them ideal for longer, immersive luxury journeys.'
+        },
+        {
+            question: 'Why are Explora suites considered “residential at sea”?',
+            answer: 'Because they are designed like modern luxury apartments with spacious layouts, minimalist design, and home-like comfort.'
         }
     ];
 
@@ -582,6 +617,125 @@ function BestSuitesExploraJourneys() {
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            {/* ── THE RESIDENTIAL COLLECTION: VISUAL GALLERY ── */}
+            <section className="res-gallery-section" style={{
+                padding: 'clamp(60px, 10vw, 100px) 20px',
+                backgroundColor: '#ffffff',
+                fontFamily: 'sans-serif',
+                overflow: 'hidden'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    {/* CSS for proper Grid Stacking */}
+                    <style>{`
+            .bento-grid-seamless {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 220px;
+                gap: 16px;
+                width: 100%;
+            }
+
+            @media (max-width: 992px) {
+                .bento-grid-seamless {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-auto-rows: 200px;
+                }
+                /* Resetting spans for 2-column layout to avoid empty holes */
+                .bento-item-1 { grid-column: span 2 !important; grid-row: span 2 !important; }
+                .bento-item-2 { grid-column: span 2 !important; grid-row: span 1 !important; }
+                .bento-item-3 { grid-column: span 1 !important; grid-row: span 1 !important; }
+                .bento-item-4 { grid-column: span 1 !important; grid-row: span 1 !important; }
+                .bento-item-5 { grid-column: span 2 !important; grid-row: span 1 !important; }
+                .bento-item-6 { grid-column: span 2 !important; grid-row: span 1 !important; }
+            }
+
+            @media (max-width: 600px) {
+                .bento-grid-seamless {
+                    grid-template-columns: 1fr;
+                    grid-auto-rows: 250px;
+                    gap: 12px;
+                }
+                .bento-item-1, .bento-item-2, .bento-item-3, .bento-item-4, .bento-item-5, .bento-item-6 {
+                    grid-column: span 1 !important;
+                    grid-row: span 1 !important;
+                }
+            }
+        `}</style>
+
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vw, 60px)' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '700',
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px',
+                            display: 'block',
+                            marginBottom: '15px'
+                        }}>
+                            Design Gallery
+                        </span>
+                        <h2 style={{
+                            fontSize: 'clamp(26px, 5vw, 42px)',
+                            color: '#274472',
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Visualizing Your Home at Sea
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    </div>
+
+                    {/* SEAMLESS BENTO GRID */}
+                    <div className="bento-grid-seamless">
+                        {/* Image 1: Main Suite Life */}
+                        <div className="bento-item-1" style={{ gridColumn: 'span 2', gridRow: 'span 2', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_1} alt="Suite Ocean View" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 2: Terrace Detail */}
+                        <div className="bento-item-2" style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_2} alt="Private Terrace" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 3: Interior Design */}
+                        <div className="bento-item-3" style={{ gridColumn: 'span 1', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_3} alt="Bedroom Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 4: Bathroom/Wellness */}
+                        <div className="bento-item-4" style={{ gridColumn: 'span 1', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_4} alt="Wellness Suite" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 5: Residence Living */}
+                        <div className="bento-item-5" style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_5} alt="Residence Space" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+
+                        {/* Image 6: Lounge/Social */}
+                        <div className="bento-item-6" style={{ gridColumn: 'span 2', gridRow: 'span 1', borderRadius: '24px', overflow: 'hidden', border: '1px solid #f1f5f9' }}>
+                            <img src={Image_6} alt="Lounge Area" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease', display: 'block' }}
+                                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'} />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1313,40 +1467,91 @@ function BestSuitesExploraJourneys() {
                 </div>
             </section>
 
-
-            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+            {/* ── EXPLORA JOURNEYS BRAND IMMERSION VIDEO SECTION ── */}
+            <section className="medi-video-section" style={{
+                background: '#f8fafc', // Premium light slate
+                padding: 'clamp(60px, 10vw, 110px) 20px',
+                textAlign: 'center',
+                position: 'relative',
+                fontFamily: 'sans-serif'
+            }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* Header Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: '#274472', // Brand Navy
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Explora Journeys: Redefining the Ocean Experience
+                        </h2>
 
+                        {/* Horizontal Accent Line Above Text */}
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6', // Azure Blue accent
+                            margin: '0 auto 25px auto',
+                            borderRadius: '10px'
+                        }}></div>
+
+                        <p style={{
+                            fontSize: 'clamp(16px, 2vw, 18px)',
+                            color: '#475569',
+                            maxWidth: '800px',
+                            margin: '0 auto',
+                            lineHeight: '1.7',
+                            fontWeight: '400'
+                        }}>
+                            Immerse yourself in a modern interpretation of luxury travel. Discover how Explora Journeys combines the intimacy of a boutique hotel with the unhurried spirit of the sea to create the ultimate
+                            <span style={{ color: '#274472', fontWeight: '600' }}> "Ocean State of Mind."</span>
+                        </p>
+                    </div>
+
+                    {/* PREMIUM VIDEO DISPLAY FRAME */}
                     <div style={{
-                        maxWidth: '900px',
+                        position: 'relative',
+                        maxWidth: '1000px',
                         margin: '0 auto',
-                        borderRadius: '20px',
-                        overflow: 'hidden',
-                        boxShadow: '0 20px 40px rgba(15, 28, 46, 0.12)',
-                        border: '1px solid rgba(39, 68, 114, 0.1)',
-                        aspectRatio: '16/9',
-                        background: '#000'
+                        background: '#ffffff',
+                        padding: '12px', // Creates the "Physical Frame" look
+                        borderRadius: '40px',
+                        boxShadow: '0 30px 70px -15px rgba(15, 28, 46, 0.15)',
+                        border: '1px solid #e2e8f0'
                     }}>
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/DrVZU5FXIqM"
-
-
-
-                            title="Experience the Mediterranean with Azamara"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                            style={{ display: 'block' }}
-                        ></iframe>
+                        <div style={{
+                            position: 'relative',
+                            borderRadius: '28px', // Inner rounding
+                            overflow: 'hidden',
+                            aspectRatio: '16/9',
+                            backgroundColor: '#000',
+                            transform: 'translateZ(0)' // Fixes Safari rounding glitches
+                        }}>
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/DrVZU5FXIqM"
+                                title="Explora Journeys: A New Era of Luxury"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                                style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    border: 'none'
+                                }}
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
-
-
-
 
             {/* DECK SELECTION GUIDE SECTION - FIXED */}
             <section style={{
@@ -1601,7 +1806,7 @@ function BestSuitesExploraJourneys() {
                         {/* Left Side: Editorial Portrait and Floating Stat Badge */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={azamaraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -1798,7 +2003,19 @@ function BestSuitesExploraJourneys() {
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                {/* FIXED: Replaced initials with Profile Image */}
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -2079,16 +2296,6 @@ function BestSuitesExploraJourneys() {
                                 <Phone size={18} />
                                 Schedule a Personalized Luxury Cruise Consultation Today
                             </button>
-                        </div>
-
-                        {/* Industry Resource Links */}
-                        <div style={{ marginTop: '40px', display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', opacity: 0.8, fontSize: '0.85rem' }}>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                <Globe size={14} /> Explora Journeys Official Website
-                            </span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>CLIA</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Condé Nast Traveler</span>
-                            <span className="medi-cta-paragraph-white" style={{ margin: 0 }}>Travel Leaders Network</span>
                         </div>
                     </div>
                 </div>

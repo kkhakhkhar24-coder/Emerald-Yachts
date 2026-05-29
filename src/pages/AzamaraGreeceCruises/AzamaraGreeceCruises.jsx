@@ -21,6 +21,8 @@ import { useState, useEffect } from 'react'
 import hero1 from '../../assets/AzamaraGreeceCruises/mykonos-old-port-fishing-boats-waterfront-greece.webp'
 import hero2 from '../../assets/AzamaraGreeceCruises/luxury-zakynthos-coastline-yacht-excursion-greece.webp'
 import hero3 from '../../assets/AzamaraGreeceCruises/luxury-santorini-oia-sunset-view-greece-travel.webp'
+import Profile_AH from '../../assets/AzamaraGreeceCruises/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraGreeceCruises/Profile_Picture_AH.jpg'
 
 function MediterraneanCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -583,7 +585,6 @@ function MediterraneanCruises() {
                             <div className="medi-diff-quote-wrapper">
                                 <p className="medi-diff-quote-text">
                                     Travelers avoid the overwhelming environment often associated with mega ships.
-
                                 </p>
                             </div>
                         </div>
@@ -724,7 +725,7 @@ function MediterraneanCruises() {
                         {/* Left Side: Editorial Portrait and Floating Stat Badge */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={azamaraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -751,7 +752,6 @@ function MediterraneanCruises() {
                                 </div>
                                 <h2 className="medi-editorial-title">
                                     Why Greece Remains One of the World’s Most Desired Luxury Cruise Destinations
-
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
@@ -1036,7 +1036,7 @@ function MediterraneanCruises() {
             </section>
 
 
-                {/* VIDEO SHOWCASE SECTION */}
+            {/* VIDEO SHOWCASE SECTION */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     {/* <h2 className="medi-section-heading">Experience the Japan with Azamara</h2> */}
@@ -1211,7 +1211,18 @@ function MediterraneanCruises() {
                         {/* Left Side: The Identity Board */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
