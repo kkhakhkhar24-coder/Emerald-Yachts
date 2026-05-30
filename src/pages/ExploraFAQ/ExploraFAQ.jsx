@@ -20,6 +20,8 @@ import { useState, useEffect } from 'react'
 import hero1 from '../../assets/ExploraFAQ/Hero_1.webp'
 import hero2 from '../../assets/ExploraFAQ/Hero_2.webp'
 import hero3 from '../../assets/ExploraFAQ/Hero_3.webp'
+import Profile_Picture_AH from "../../assets/ExploraFAQ/Profile_Picture_AH.jpg"
+import Profile_AH from '../../assets/ExploraFAQ/Profile_AH.jpg'
 
 function ExploraJourneys() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -1031,7 +1033,7 @@ function ExploraJourneys() {
                         {/* Left Side: Portrait and Floating Stat Badge */}
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={exploraShip} alt="Angela Hughes - Luxury Cruise Expert" />
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
 
@@ -1966,7 +1968,18 @@ function ExploraJourneys() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <span className="medi-prestige-initials">AH</span>
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
