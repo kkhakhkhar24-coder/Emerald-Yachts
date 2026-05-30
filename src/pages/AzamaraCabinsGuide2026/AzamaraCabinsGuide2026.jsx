@@ -15,9 +15,9 @@ import Profile_AH from '../../assets/Profile_AH.jpg'
 
 
 
-import room5 from '../../assets/AzamaraCabinsGuide/Social_Vibes.webp'
-import room6 from '../../assets/AzamaraCabinsGuide2026/Picton_Aerial_MarlboroughSounds_JLP_0059.jpg'
-import room7 from '../../assets/AzamaraCabinsGuide2026/Picton_Aerial_MarlboroughSounds_JLP_0041.jpg'
+import room5 from '../../assets/AzamaraCabinsGuide2026/explora-journeys-luxury-ocean-wellness-spa-relaxation-room.jpg'
+import room6 from '../../assets/AzamaraCabinsGuide2026/luxury-oceanfront-suite-explora-journeys-interior.jpg'
+import room7 from '../../assets/AzamaraCabinsGuide2026/explora-journeys-serenity-residence-private-whirlpool-suite.jpg'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
