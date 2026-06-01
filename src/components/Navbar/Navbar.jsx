@@ -348,6 +348,13 @@ const Navbar = () => {
               >
                 Explora Journeys Vs Silversea</NavLink>
 
+              <NavLink
+                to="/hx-expeditions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions</NavLink>
+
 
             </div>
           </div>
@@ -706,6 +713,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Explora Journeys Vs Silversea</NavLink>
+
+            <NavLink
+              to="/hx-expeditions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

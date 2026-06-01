@@ -55,6 +55,7 @@ import BestSuitesExploraJourneys from "./pages/BestSuitesExploraJourneys/BestSui
 import BookExplora from "./pages/BookExplora/BookExplora";
 import ExploraFAQ from "./pages/ExploraFAQ/ExploraFAQ";
 import ExploraJourneysVsSilversea from "./pages/ExploraJourneysVsSilversea/ExploraJourneysVsSilversea";
+import HXExpeditionsCruises from "./pages/HXExpeditionsCruises/HXExpeditionsCruises";
 
 function App() {
   return (
@@ -269,6 +270,11 @@ function App() {
           <Route
             path="/explora-journeys-vs-silversea"
             element={<ExploraJourneysVsSilversea />}
+          />
+
+          <Route
+            path="/hx-expeditions"
+            element={<HXExpeditionsCruises />}
           />
 
         </Routes>
