@@ -138,30 +138,182 @@ function HXExpeditions() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com",
+        "logo": "https://www.tripsandships.com/PNG%20image.png",
+        "sameAs": [
+          "https://www.facebook.com/tripsandships/",
+          "https://www.instagram.com/tripsandshipsluxurytravel"
+        ]
+      },
+      {
         "@type": "TravelAgency",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com",
-        "image": "https://www.tripsandships.com/hx-expeditions-hero.jpg",
-        "description": "Expert HX Expedition cruise specialists providing personalized planning for Antarctica, Arctic, and Galápagos voyages."
+        "description": "Luxury travel agency specializing in expedition cruises, Antarctica travel, Arctic voyages, and premium adventure experiences."
       },
       {
         "@type": "Person",
         "name": "Angela Hughes",
         "jobTitle": "CEO of Trips & Ships Luxury Travel",
-        "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" }
+        "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Trips & Ships Luxury Travel"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "name": "HX Expeditions Cruises",
+        "url": "https://www.tripsandships.com/hx-expeditions",
+        "description": "Expert guide to HX Expeditions cruises including Antarctica, Svalbard, Greenland, Galápagos, Alaska and Norway expedition travel."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Luxury Cruises",
+            "item": "https://www.tripsandships.com/luxury-cruises"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "HX Expeditions Cruises",
+            "item": "https://www.tripsandships.com/hx-expeditions"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "What is HX Expeditions best known for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX Expeditions is best known for small ship expedition cruises focused on exploration, wildlife, science and remote destinations."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Is HX Expeditions the same as Hurtigruten Expeditions?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, HX is the new brand name for Hurtigruten Expeditions, focusing specifically on their global expedition fleet." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX is the expedition cruise brand formerly known as Hurtigruten Expeditions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does HX Expeditions sail?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX sails to Antarctica, Svalbard, Greenland, the Galápagos, Alaska, Norway, Iceland, South America and other remote regions."
+            }
           },
           {
             "@type": "Question",
             "name": "Is HX Expeditions a luxury cruise line?",
-            "acceptedAnswer": { "@type": "Answer", "text": "HX focuses on 'Expedition Comfort.' While the ships are modern and upscale, the focus is on science, wildlife, and exploration rather than traditional white-glove luxury." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX focuses more on expedition comfort and immersive exploration than traditional ultra luxury cruising."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which HX ship is best for Antarctica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MS Roald Amundsen and MS Fridtjof Nansen are among the most popular HX Antarctica ships."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best HX Expeditions cruise for first timers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Galápagos and classic Antarctica Peninsula itineraries are excellent for first time expedition travelers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does HX Expeditions go to Svalbard?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. HX offers multiple Arctic itineraries to Svalbard and the High Arctic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does HX Expeditions go to the Galápagos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. HX operates the MS Santa Cruz II in the Galápagos Islands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included on an HX Expeditions cruise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inclusions vary, but generally include accommodations, meals, lectures and many expedition activities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are HX Expeditions cruises good for older travelers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many older travelers enjoy expedition cruising, although moderate mobility is important."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How physically active are HX expedition cruises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Activity levels vary by itinerary, but most include walking, Zodiac boarding and outdoor exploration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I pack for an HX Antarctica or Arctic cruise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Layered clothing, waterproof outerwear and cold weather accessories are essential."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When is the best time to cruise Antarctica with HX?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "December and January are typically ideal for first time Antarctica travelers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When is the best time to cruise Svalbard with HX?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "July and August are excellent for wildlife and midnight sun experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why book HX Expeditions through Trips & Ships Luxury Travel instead of direct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trips & Ships Luxury Travel provides expert expedition guidance, itinerary matching and personalized planning support."
+            }
           }
         ]
       }
@@ -171,9 +323,19 @@ function HXExpeditions() {
   return (
     <>
       <Helmet>
-        <title>HX Expeditions Cruises | Antarctica, Arctic & Galápagos Specialists</title>
-        <meta name="description" content="Explore HX Expeditions (formerly Hurtigruten) with expert guidance from Trips & Ships Luxury Travel. Plan your Antarctica, Svalbard, Greenland, or Galápagos adventure today." />
-        <script type="application/ld+json">{JSON.stringify(hxSchemaData)}</script>
+        <title>HX Expeditions Cruises | Antarctica, Arctic, Galápagos and Small Ship Expedition Travel</title>
+        <meta
+          name="title"
+          content="HX Expeditions Cruises | Luxury Expedition Cruise Experts"
+        />
+        <meta
+          name="description"
+          content="Explore HX Expeditions with Trips & Ships Luxury Travel. Compare Antarctica, Svalbard, Greenland, Galápagos, Alaska and Norway expedition cruises with expert guidance."
+        />
+        <meta name="keywords" content="HX Expeditions Cruises, HX expedition cruises, Luxury expedition cruises, Antarctica cruises, Arctic expedition cruises, Galápagos expedition cruises, Small ship expedition cruises, Polar cruises, Expedition travel, Best HX Expeditions cruises for first timers, HX Antarctica cruises, HX Arctic cruises, HX Galápagos cruises, Small ship expedition travel, Luxury expedition cruise advisor, Best expedition cruises for wildlife, HX cruise ships explained, Expedition cruises USA, Antarctica cruise expert, Arctic expedition specialist, Luxury expedition travel agency, Small ship cruise advisor, HX Expeditions, Hurtigruten Expeditions, HX Cruises" />
+        <script type="application/ld+json">
+          {JSON.stringify(hxSchemaData)}
+        </script>
       </Helmet>
 
       <Navbar />
