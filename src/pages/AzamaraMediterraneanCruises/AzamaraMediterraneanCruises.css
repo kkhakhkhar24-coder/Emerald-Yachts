@@ -7156,3 +7156,248 @@
         background: linear-gradient(90deg, transparent 0%, var(--medi-navy) 50%, transparent 100%) !important;
     }
 }
+
+
+/* ==========================================================================
+   HXExpeditionsCruises Page - 320px Responsive Fixes
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+    /* --- HXExpeditionsCruises - Hero Section --- */
+    .medi-hero-section {
+        min-height: 50vh !important;
+    }
+    .medi-hero-content-wrapper {
+        padding: 0 10px !important;
+    }
+    .medi-hero-main-title {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+    }
+    .medi-hero-eyebrow-tag {
+        font-size: 11px !important;
+        padding: 6px 12px !important;
+        gap: 6px !important;
+    }
+    .medi-hero-eyebrow-tag svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    /* --- HXExpeditionsCruises - Premium Intro Section --- */
+    .medi-intro-section,
+    .medi-premium-intro-section {
+        padding: 50px 10px !important;
+    }
+    .medi-intro-container {
+        padding: 0 !important;
+    }
+    .medi-premium-intro-grid {
+        gap: 30px !important;
+    }
+    .medi-premium-heading {
+        font-size: 24px !important;
+    }
+    .medi-premium-lead-text {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+    .medi-immersion-cards-grid {
+        gap: 12px !important;
+    }
+    .medi-immersion-card-title {
+        font-size: 14px !important;
+    }
+    .medi-premium-signature-panel {
+        padding: 20px 14px !important;
+        border-radius: 16px !important;
+    }
+    .medi-premium-signature-content {
+        padding: 0 !important;
+    }
+    .medi-premium-expert-desc {
+        font-size: 14px !important;
+    }
+    .medi-premium-expert-quote-text {
+        font-size: 14px !important;
+    }
+    .medi-expert-card-title {
+        font-size: 18px !important;
+    }
+
+    /* --- HXExpeditionsCruises - Best HX For First Timers (Itinerary Showcase Section) --- */
+    .medi-itinerary-showcase-section {
+        padding: 50px 10px !important;
+    }
+    .medi-itinerary-showcase-container {
+        padding: 0 !important;
+    }
+    .medi-itinerary-showcase-heading {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+    }
+    .medi-itinerary-dashboard {
+        gap: 16px !important;
+    }
+    .medi-itinerary-tabs {
+        gap: 8px !important;
+    }
+    .medi-itinerary-tab-btn {
+        padding: 10px 12px !important;
+        font-size: 14px !important;
+    }
+    .medi-itinerary-tab-number {
+        font-size: 12px !important;
+        min-width: 28px !important;
+    }
+    .medi-itinerary-tab-title {
+        font-size: 13px !important;
+    }
+    .medi-itinerary-showcase-card {
+        border-radius: 16px !important;
+        overflow: hidden !important;
+    }
+    .medi-itinerary-showcase-body {
+        padding: 18px 14px !important;
+    }
+    .medi-itinerary-showcase-title {
+        font-size: 18px !important;
+    }
+    .medi-itinerary-details-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    .medi-itinerary-details-chip {
+        font-size: 12px !important;
+        padding: 4px 8px !important;
+    }
+
+    /* --- HXExpeditionsCruises - What Expedition Travel Feels Like (Audience Section) --- */
+    .medi-audience-section {
+        padding: 50px 10px !important;
+    }
+    .medi-audience-container {
+        padding: 0 !important;
+    }
+    .medi-section-heading {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+    }
+    .medi-audience-split-layout {
+        gap: 20px !important;
+    }
+    .medi-audience-column {
+        padding: 20px 14px !important;
+        border-radius: 16px !important;
+    }
+    .medi-audience-column-heading {
+        font-size: 16px !important;
+    }
+    .medi-audience-list li {
+        font-size: 14px !important;
+        gap: 10px !important;
+    }
+    .medi-audience-icon-wrapper {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+    }
+    .medi-audience-icon-wrapper svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* --- HXExpeditionsCruises - Angela Hughes Authority Section --- */
+    .medi-authority-section {
+        padding: 50px 10px !important;
+    }
+    .medi-authority-container {
+        padding: 0 !important;
+    }
+    .medi-authority-eyebrow {
+        font-size: 11px !important;
+        letter-spacing: 1.5px !important;
+    }
+    .medi-prestige-plaque-wrapper {
+        gap: 24px !important;
+    }
+    .medi-prestige-identity-card {
+        padding: 24px 14px !important;
+        border-radius: 16px !important;
+    }
+    .medi-prestige-seal-ring {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .medi-prestige-name {
+        font-size: 20px !important;
+    }
+    .medi-prestige-role-pill {
+        font-size: 12px !important;
+        padding: 6px 14px !important;
+    }
+    .medi-prestige-credentials-column {
+        padding: 0 !important;
+    }
+    .medi-prestige-item-card {
+        padding: 12px 10px !important;
+        border-radius: 12px !important;
+    }
+    .medi-prestige-item-text {
+        font-size: 13px !important;
+    }
+    .medi-prestige-item-category {
+        font-size: 10px !important;
+    }
+    .medi-prestige-item-icon-box {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+    }
+
+    /* --- HXExpeditionsCruises - FAQ Section --- */
+    .medi-faq-main-section {
+        padding: 50px 10px !important;
+    }
+    .medi-faq-container {
+        padding: 0 !important;
+    }
+    .medi-faq-question-row span {
+        font-size: 14px !important;
+    }
+    .medi-faq-individual-item {
+        padding: 14px 12px !important;
+        border-radius: 12px !important;
+    }
+    .medi-faq-answer-text {
+        font-size: 14px !important;
+    }
+
+    /* --- HXExpeditionsCruises - CTA Section --- */
+    .medi-cta-main-section {
+        padding: 50px 10px !important;
+    }
+    .medi-cta-inner-wrapper {
+        padding: 30px 14px !important;
+    }
+    .medi-cta-heading-white {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+    }
+    .medi-cta-paragraph-white {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+    .medi-primary-cta-button {
+        font-size: 14px !important;
+        padding: 14px 20px !important;
+        border-radius: 12px !important;
+    }
+    .medi-cta-considerations-list {
+        gap: 12px 16px !important;
+    }
+    .medi-cta-considerations-item {
+        font-size: 13px !important;
+    }
+}

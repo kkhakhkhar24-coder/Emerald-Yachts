@@ -362,6 +362,13 @@ const Navbar = () => {
               >
                 HX Expeditions Antarctica Cruises</NavLink>
 
+              <NavLink
+                to="/hx-expeditions-svalbard-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions Svalbard Cruises</NavLink>
+
             </div>
           </div>
         </div>
@@ -727,12 +734,19 @@ const Navbar = () => {
             >
               HX Expeditions Cruises</NavLink>
 
-              <NavLink
-                to="/hx-expeditions-antarctica-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                HX Expeditions Antarctica Cruises</NavLink>
+            <NavLink
+              to="/hx-expeditions-antarctica-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions Antarctica Cruises</NavLink>
+
+            <NavLink
+              to="/hx-expeditions-svalbard-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions Svalbard Cruises</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
