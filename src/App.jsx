@@ -58,6 +58,7 @@ import ExploraJourneysVsSilversea from "./pages/ExploraJourneysVsSilversea/Explo
 import HXExpeditionsCruises from "./pages/HXExpeditionsCruises/HXExpeditionsCruises";
 import Hxexpeditionsantarctica from "./pages/Hxexpeditionsantarctica/Hxexpeditionsantarctica";
 import HXExpeditionsSvalbardCruises from "./pages/HXExpeditionsSvalbardCruises/HXExpeditionsSvalbardCruises";
+import Hxexpeditionsgreenland from "./pages/Hxexpeditionsgreenland/Hxexpeditionsgreenland";
 
 function App() {
   return (
@@ -287,6 +288,11 @@ function App() {
           <Route
             path="/hx-expeditions-svalbard-cruises"
             element={<HXExpeditionsSvalbardCruises />}
+          />
+
+          <Route
+            path="/hx-expeditions-greenland-cruises"
+            element={<Hxexpeditionsgreenland />}
           />
 
         </Routes>

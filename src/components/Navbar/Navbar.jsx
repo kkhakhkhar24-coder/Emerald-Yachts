@@ -369,6 +369,13 @@ const Navbar = () => {
               >
                 HX Expeditions Svalbard Cruises</NavLink>
 
+              <NavLink
+                to="/hx-expeditions-greenland-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions Greenland Cruises</NavLink>
+
             </div>
           </div>
         </div>
@@ -747,6 +754,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               HX Expeditions Svalbard Cruises</NavLink>
+
+               <NavLink
+                to="/hx-expeditions-greenland-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions Greenland Cruises</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

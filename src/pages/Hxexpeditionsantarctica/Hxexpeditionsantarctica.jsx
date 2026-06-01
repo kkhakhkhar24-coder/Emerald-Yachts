@@ -23,7 +23,7 @@ import { useState, useEffect } from 'react'
 // import hero2 from '../../assets/HXExpeditions/hero2.jpg'
 // import hero3 from '../../assets/HXExpeditions/hero3.jpg'
 
-function HXExpeditionsAntarctica() {
+function HXExpeditionsAntarctica() {    
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = []
 
@@ -38,6 +38,21 @@ function HXExpeditionsAntarctica() {
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
     const [mediActiveMistake, setMediActiveMistake] = useState(0)
     const [isMediSliderHovered, setIsMediSliderHovered] = useState(false)
+    const [antarcticaHoveredCard, setAntarcticaHoveredCard] = useState(null)
+    const [activeAntarcticaTab, setActiveAntarcticaTab] = useState(0)
+    const [isMobileViewport, setIsMobileViewport] = useState(false)
+    const [expHoverCard1, setExpHoverCard1] = useState(false)
+    const [expHoverCard2, setExpHoverCard2] = useState(false)
+    const [isIntroExpanded, setIsIntroExpanded] = useState(false)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileViewport(window.innerWidth < 992)
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     useEffect(() => {
         if (isMediSliderHovered) return
@@ -238,12 +253,31 @@ function HXExpeditionsAntarctica() {
 
             {/* ── PREMIUM INTRO ── */}
             <section className="medi-intro-section medi-premium-intro-section">
+                <style>{`
+                    .medi-premium-editorial-block::-webkit-scrollbar {
+                        width: 6px;
+                    }
+                    .medi-premium-editorial-block::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+                    .medi-premium-editorial-block::-webkit-scrollbar-thumb {
+                        background: rgba(39, 68, 114, 0.2);
+                        border-radius: 3px;
+                    }
+                    .medi-premium-editorial-block::-webkit-scrollbar-thumb:hover {
+                        background: rgba(39, 68, 114, 0.4);
+                    }
+                `}</style>
                 <div className="medi-premium-intro-glow-one"></div>
                 <div className="medi-premium-intro-glow-two"></div>
                 <div className="medi-intro-container">
                     <div className="medi-premium-intro-grid">
 
-                        <div className="medi-premium-editorial-block">
+                        <div className="medi-premium-editorial-block" style={{
+                            maxHeight: isMobileViewport ? 'none' : '650px',
+                            overflowY: isMobileViewport ? 'visible' : 'auto',
+                            paddingRight: isMobileViewport ? '0' : '20px',
+                        }}>
                             <span className="medi-premium-mini-badge">ONCE IN A LIFETIME EXPEDITION</span>
                             <h2 className="medi-premium-heading">Antarctica Is Not Just Another Cruise Destination</h2>
                             <div className="medi-premium-separator"></div>
@@ -252,13 +286,51 @@ function HXExpeditionsAntarctica() {
                                 Antarctica changes travelers. For many guests, it becomes the single most unforgettable travel experience of their lives. Towering glaciers, massive icebergs, penguin colonies, breaching whales and the silence of the White Continent create a type of travel experience few destinations on Earth can match.
                             </p>
 
-                            <p className="medi-premium-lead-text">
-                                HX Expeditions Antarctica cruises are designed for travelers who want true exploration, not simply scenic cruising from a distance. These voyages focus on immersive expedition travel with Zodiac landings, wildlife encounters, educational programming and flexible daily exploration shaped by weather and ice conditions.
-                            </p>
+                            <div style={{
+                                maxHeight: isIntroExpanded ? '1000px' : '0px',
+                                opacity: isIntroExpanded ? 1 : 0,
+                                overflow: 'hidden',
+                                transition: 'max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in-out',
+                            }}>
+                                <p className="medi-premium-lead-text">
+                                    HX Expeditions Antarctica cruises are designed for travelers who want true exploration, not simply scenic cruising from a distance. These voyages focus on immersive expedition travel with Zodiac landings, wildlife encounters, educational programming and flexible daily exploration shaped by weather and ice conditions.
+                                </p>
 
-                            <p className="medi-premium-lead-text">
-                                At Trips & Ships Luxury Travel, we help travelers navigate the complexities of Antarctica expedition planning so they choose the right itinerary, ship, season and expedition style based on their comfort level, travel goals and expectations.
-                            </p>
+                                <p className="medi-premium-lead-text">
+                                    At Trips & Ships Luxury Travel, we help travelers navigate the complexities of Antarctica expedition planning so they choose the right itinerary, ship, season and expedition style based on their comfort level, travel goals and expectations.
+                                </p>
+                            </div>
+
+                            <button
+                                onClick={() => setIsIntroExpanded(!isIntroExpanded)}
+                                style={{
+                                    background: 'none',
+                                    border: 'none',
+                                    color: '#1a5fa8',
+                                    fontFamily: 'var(--font-body)',
+                                    fontSize: '0.9rem',
+                                    fontWeight: '700',
+                                    letterSpacing: '1px',
+                                    textTransform: 'uppercase',
+                                    cursor: 'pointer',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '6px',
+                                    padding: '8px 0',
+                                    marginBottom: '20px',
+                                    transition: 'color 0.2s ease',
+                                    outline: 'none'
+                                }}
+                            >
+                                <span>{isIntroExpanded ? 'Read Less' : 'Read More'}</span>
+                                <ChevronRight 
+                                    size={16} 
+                                    style={{ 
+                                        transform: isIntroExpanded ? 'rotate(90deg)' : 'none', 
+                                        transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)' 
+                                    }} 
+                                />
+                            </button>
 
                             <div className="medi-immersion-list-wrapper">
                                 <p className="medi-immersion-lead-in">
@@ -388,231 +460,1049 @@ function HXExpeditionsAntarctica() {
             </section>
 
             {/* ── WHAT MAKES HX DIFFERENT ── */}
-            <section className="medi-diff-section">
-                <div className="medi-diff-container">
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">EXPEDITION EXCELLENCE</span>
-                        <h2 className="medi-diff-main-title">Understanding The Drake Passage & Antarctica Expedition Travel</h2>
-                        <div className="medi-diff-separator"></div>
-                    </div>
+            {/* ── WHAT MAKES HX DIFFERENT ── */}
+            <section style={{
+                background: 'linear-gradient(180deg, var(--bg-light) 0%, var(--bg-light2) 100%)',
+                backgroundImage: 'radial-gradient(var(--navy-border) 1px, transparent 1px)',
+                backgroundSize: '32px 32px',
+                borderTop: '1px solid var(--navy-border)',
+                borderBottom: '1px solid var(--navy-border)',
+                padding: isMobileViewport ? '60px 16px' : '100px 24px',
+                position: 'relative',
+                overflow: 'hidden',
+                width: '100%',
+                boxSizing: 'border-box'
+            }}>
+                {/* Polar Glowing Auras using root colors */}
+                <div style={{
+                    position: 'absolute',
+                    top: '5%',
+                    left: '5%',
+                    width: '350px',
+                    height: '350px',
+                    borderRadius: '50%',
+                    // background: 'radial-gradient(circle, var(--navy-light) 0%, transparent 70%)',
+                    filter: 'blur(60px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }}></div>
+                <div style={{
+                    position: 'absolute',
+                    bottom: '10%',
+                    right: '5%',
+                    width: '400px',
+                    height: '400px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, var(--navy-soft) 0%, transparent 70%)',
+                    filter: 'blur(70px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }}></div>
 
-                    <div className="medi-diff-grid">
+                <div style={{
+                    maxWidth: '1200px',
+                    margin: '0 auto',
+                    position: 'relative',
+                    zIndex: 2,
+                    width: '100%',
+                    boxSizing: 'border-box'
+                }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
+                        gap: '40px',
+                        width: '100%',
+                        boxSizing: 'border-box',
+                        alignItems: 'start'
+                    }}>
+                        {/* Left Column: Navigation Console */}
+                        <div style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '24px',
+                            position: isMobileViewport ? 'static' : 'sticky',
+                            top: '100px',
+                            zIndex: 5
+                        }}>
+                            <div style={{ textAlign: isMobileViewport ? 'center' : 'left' }}>
+                                <div style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '8px',
+                                    // background: 'var(--navy-soft)',
+                                    // border: '1px solid var(--navy-border)',
+                                    padding: '6px 16px',
+                                    borderRadius: '100px',
+                                    marginBottom: '16px'
+                                }}>
+                                    <Compass size={14}  />
+                                    <span style={{
+                                        // color: 'var(--bg-soft)',
+                                        fontSize: '11px',
+                                        fontWeight: '700',
+                                        letterSpacing: '2px',
+                                        textTransform: 'uppercase'
+                                    }}>
+                                        EXPEDITION DATA DECK
+                                    </span>
+                                </div>
+                                <h2 style={{
+                                    // color: 'var(--navy-light)',
+                                    // fontSize: isMobileViewport ? '1.6rem' : 'clamp(1.9rem, 3.5vw, 2.6rem)',
+                                    fontWeight: '500',
+                                    lineHeight: '1.25',
+                                    margin: '0 0 16px 0',
+                                    fontFamily: 'var(--font-display)',
+                                    // textShadow: '0 2px 16px rgba(0,0,0,0.5)',
+                                    wordBreak: 'break-word',
+                                    overflowWrap: 'break-word'
+                                }}>
+                                    Understanding The Drake Passage & Antarctica Expedition Travel
+                                </h2>
+                                <p style={{
+                                    // color: 'var(--bg-soft)',
+                                    fontSize: '0.95rem',
+                                    margin: '0 0 24px 0',
+                                    lineHeight: '1.6',
+                                    fontWeight: '400'
+                                }}>
+                                    Select a topic below to explore the essential elements of an Antarctic polar voyage.
+                                </p>
+                            </div>
 
-                        {/* Card 1: Drake Passage */}
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Waves size={24} /></div>
-                                <h3 className="medi-diff-card-title">Understanding The Drake Passage</h3>
-                            </div>
-                            <p className="medi-diff-card-text">
-                                The Drake Passage is one of the biggest concerns for first time Antarctica travelers. Located between South America and Antarctica, this ocean crossing can vary dramatically depending on weather conditions.
-                            </p>
-                            <p className="medi-diff-card-text-secondary">Travelers often hear two phrases:</p>
-                            <div className="medi-diff-destination-chips">
-                                <span className="medi-diff-chip">The Drake Lake (calm crossing)</span>
-                                <span className="medi-diff-chip">The Drake Shake (rough crossing)</span>
-                            </div>
-                            <p className="medi-diff-card-text-secondary">
-                                Most Antarctica itineraries spend two days crossing in each direction. Modern HX expedition ships feature:
-                            </p>
-                            <ul className="medi-diff-experience-list">
+                            {/* Tab Buttons Stack */}
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: isMobileViewport ? 'row' : 'column',
+                                gap: '12px',
+                                overflowX: isMobileViewport ? 'auto' : 'visible',
+                                paddingBottom: isMobileViewport ? '12px' : '0',
+                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
+                            }}>
                                 {[
-                                    'Advanced stabilizers',
-                                    'Polar navigation technology',
-                                    'Fly-cruise options available'
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <CheckCircle size={16} className="medi-diff-list-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                                    { number: '01', title: 'The Drake Passage', desc: 'Ocean crossing details' },
+                                    { number: '02', title: 'HX Polar Ships', desc: 'MS Amundsen & MS Nansen' },
+                                    { number: '03', title: 'Wildlife Sightings', desc: 'Penguins, whales & seals' }
+                                ].map((tab, idx) => {
+                                    const isActive = activeAntarcticaTab === idx;
+                                    return (
+                                        <button
+                                            key={idx}
+                                            onClick={() => setActiveAntarcticaTab(idx)}
+                                            style={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'space-between',
+                                                padding: '20px 24px',
+                                                background: isActive ? 'var(--bg-dark2)' : 'transparent',
+                                                border: isActive ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
+                                                borderRadius: '16px',
+                                                cursor: 'pointer',
+                                                textAlign: 'left',
+                                                width: isMobileViewport ? '260px' : '100%',
+                                                flexShrink: 0,
+                                                scrollSnapAlign: 'start',
+                                                transform: isActive && !isMobileViewport ? 'translateX(8px)' : 'translateX(0)',
+                                                boxShadow: isActive ? 'var(--shadow-lg)' : 'none',
+                                                transition: 'var(--transition)',
+                                                outline: 'none'
+                                            }}
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                                <span style={{
+                                                    fontSize: '1.25rem',
+                                                    fontWeight: '800',
+                                                    color: isActive ? 'var(--bg-white)' : 'var(--text-muted)',
+                                                    fontFamily: 'monospace'
+                                                }}>
+                                                    {tab.number}
+                                                </span>
+                                                <div>
+                                                    <div style={{
+                                                        fontSize: '0.95rem',
+                                                        fontWeight: '700',
+                                                        color: isActive ? 'var(--bg-white)' : 'var(--text-muted)'
+                                                    }}>
+                                                        {tab.title}
+                                                    </div>
+                                                    {!isMobileViewport && (
+                                                        <div style={{
+                                                            fontSize: '0.75rem',
+                                                            color: isActive ? 'var(--bg-soft)' : 'var(--text-muted)',
+                                                            marginTop: '4px'
+                                                        }}>
+                                                            {tab.desc}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div style={{
+                                                width: '8px',
+                                                height: '8px',
+                                                borderRadius: '50%',
+                                                background: isActive ? 'var(--bg-soft)' : 'var(--navy-border)',
+                                                boxShadow: isActive ? '0 0 10px var(--bg-soft)' : 'none',
+                                                transition: 'var(--transition)'
+                                            }} />
+                                        </button>
+                                    );
+                                })}
+                            </div>
                         </div>
 
-                        {/* Card 2: HX Ships */}
-                        <div className="medi-diff-card medi-diff-card-white">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Ship size={24} /></div>
-                                <h3 className="medi-diff-card-title">HX Antarctica Ships</h3>
+                        {/* Right Column: Console Screen */}
+                        <div style={{
+                            background: 'var(--bg-dark2)',
+                            border: '1px solid var(--navy-border)',
+                            borderRadius: '24px',
+                            padding: isMobileViewport ? '24px' : '48px',
+                            boxShadow: 'var(--shadow-lg)',
+                            minHeight: '450px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            position: 'relative',
+                            overflow: 'hidden',
+                            boxSizing: 'border-box'
+                        }}>
+                            {/* Sleek coordinate grid background overlay */}
+                            <div style={{
+                                position: 'absolute',
+                                bottom: '24px',
+                                right: '28px',
+                                color: 'var(--navy-soft)',
+                                fontFamily: 'monospace',
+                                fontSize: '11px',
+                                fontWeight: '700',
+                                letterSpacing: '2px',
+                                pointerEvents: 'none',
+                                zIndex: 1
+                            }}>
+                                ANTARCTICA EXPEDITION // 60.0000° S, 65.0000° W
                             </div>
 
-                            {/* MS Roald Amundsen */}
-                            <div style={{ marginBottom: '20px' }}>
-                                <div className="medi-diff-ship-stat-box">
-                                    <div className="medi-diff-stat-ring">
-                                        <div className="medi-diff-stat-num" style={{ fontSize: '11px', fontWeight: 700 }}>HYBRID</div>
+                            <div style={{ position: 'relative', zIndex: 2 }}>
+                                {activeAntarcticaTab === 0 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px',
+                                                height: '48px',
+                                                borderRadius: '12px',
+                                                background: 'var(--navy-soft)',
+                                                border: '1px solid var(--navy-border)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}>
+                                                <Waves size={22} color="var(--bg-soft)" />
+                                            </div>
+                                            <h3 style={{
+                                                color: 'var(--bg-white)',
+                                                fontSize: '1.4rem',
+                                                fontWeight: '700',
+                                                margin: 0
+                                            }}>
+                                                Understanding The Drake Passage
+                                            </h3>
+                                        </div>
+                                        <p style={{
+                                            color: 'var(--bg-soft)',
+                                            fontSize: '1rem',
+                                            lineHeight: '1.7',
+                                            margin: '0 0 28px 0',
+                                            fontWeight: '300'
+                                        }}>
+                                            The Drake Passage is one of the biggest concerns for first time Antarctica travelers. Located between South America and Antarctica, this ocean crossing can vary dramatically depending on weather conditions.
+                                        </p>
+
+                                        <div style={{ marginBottom: '28px' }}>
+                                            <p style={{
+                                                fontSize: '0.75rem',
+                                                fontWeight: '700',
+                                                color: 'var(--text-muted)',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '1.5px',
+                                                margin: '0 0 12px 0'
+                                            }}>
+                                                Travelers often hear two phrases:
+                                            </p>
+                                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+                                                <div style={{
+                                                    background: 'var(--navy-soft)',
+                                                    border: '1px solid var(--navy-border)',
+                                                    padding: '12px 20px',
+                                                    borderRadius: '12px',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '10px'
+                                                }}>
+                                                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--bg-soft)' }} />
+                                                    <span style={{ color: 'var(--bg-white)', fontSize: '0.9rem', fontWeight: '600' }}>
+                                                        The Drake Lake (calm crossing)
+                                                    </span>
+                                                </div>
+                                                <div style={{
+                                                    background: 'var(--bg-dark)',
+                                                    border: '1px solid var(--navy-border)',
+                                                    padding: '12px 20px',
+                                                    borderRadius: '12px',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '10px'
+                                                }}>
+                                                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--text-muted)' }} />
+                                                    <span style={{ color: 'var(--bg-soft)', fontSize: '0.9rem', fontWeight: '600' }}>
+                                                        The Drake Shake (rough crossing)
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <p style={{
+                                                fontSize: '0.75rem',
+                                                fontWeight: '700',
+                                                color: 'var(--text-muted)',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '1.5px',
+                                                margin: '0 0 14px 0'
+                                            }}>
+                                                Most Antarctica itineraries spend two days crossing in each direction. Modern HX expedition ships feature:
+                                            </p>
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                padding: 0,
+                                                margin: 0,
+                                                display: 'grid',
+                                                gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr',
+                                                gap: '14px'
+                                            }}>
+                                                {[
+                                                    'Advanced stabilizers',
+                                                    'Polar navigation technology',
+                                                    'Fly-cruise options available'
+                                                ].map((item, i) => (
+                                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                        <CheckCircle size={16} color="var(--bg-soft)" style={{ flexShrink: 0 }} />
+                                                        <span style={{ color: 'var(--bg-white)', fontSize: '0.92rem' }}>{item}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="medi-diff-stat-label">MS ROALD AMUNDSEN</div>
-                                </div>
-                                <p className="medi-diff-card-text">
-                                    One of the world's first hybrid powered expedition ships featuring modern Scandinavian design and advanced expedition technology.
-                                </p>
-                                <p className="medi-diff-card-text-secondary">Best for:</p>
-                                <ul className="medi-diff-experience-list">
-                                    {['Comfortable expedition travel', 'Modern amenities', 'Eco conscious travelers'].map((item, i) => (
-                                        <li key={i}><CheckCircle size={16} className="medi-diff-list-icon" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
+                                )}
 
-                            {/* MS Fridtjof Nansen */}
-                            <div>
-                                <div className="medi-diff-quote-wrapper">
-                                    <p className="medi-diff-quote-text" style={{ fontWeight: 600, marginBottom: '8px' }}>MS Fridtjof Nansen</p>
-                                    <p className="medi-diff-quote-text">
-                                        A sister ship to Roald Amundsen offering immersive expedition experiences with modern comfort.
-                                    </p>
-                                </div>
-                                <p className="medi-diff-card-text-secondary" style={{ marginTop: '10px' }}>Best for:</p>
-                                <ul className="medi-diff-experience-list">
-                                    {['Travelers wanting expedition comfort', 'Educational enrichment', 'Polar exploration'].map((item, i) => (
-                                        <li key={i}><CheckCircle size={16} className="medi-diff-list-icon" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
+                                {activeAntarcticaTab === 1 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px',
+                                                height: '48px',
+                                                borderRadius: '12px',
+                                                background: 'var(--navy-soft)',
+                                                border: '1px solid var(--navy-border)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}>
+                                                <Ship size={22} color="var(--bg-soft)" />
+                                            </div>
+                                            <h3 style={{
+                                                color: 'var(--bg-white)',
+                                                fontSize: '1.4rem',
+                                                fontWeight: '700',
+                                                margin: 0
+                                            }}>
+                                                HX Antarctica Ships
+                                            </h3>
+                                        </div>
+
+                                        <div style={{
+                                            display: 'grid',
+                                            gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr',
+                                            gap: '32px'
+                                        }}>
+                                            {/* MS Roald Amundsen */}
+                                            <div style={{
+                                                background: 'var(--bg-dark)',
+                                                border: '1px solid var(--navy-border)',
+                                                borderRadius: '16px',
+                                                padding: '24px'
+                                            }}>
+                                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                                                    <span style={{
+                                                        background: 'var(--navy-soft)',
+                                                        border: '1px solid var(--navy-border)',
+                                                        color: 'var(--bg-soft)',
+                                                        padding: '4px 8px',
+                                                        borderRadius: '6px',
+                                                        fontSize: '9px',
+                                                        fontWeight: '800',
+                                                        letterSpacing: '1px',
+                                                        textTransform: 'uppercase'
+                                                    }}>
+                                                        HYBRID
+                                                    </span>
+                                                    <h4 style={{
+                                                        color: 'var(--bg-white)',
+                                                        fontSize: '0.95rem',
+                                                        fontWeight: '700',
+                                                        margin: 0
+                                                    }}>
+                                                        MS ROALD AMUNDSEN
+                                                    </h4>
+                                                </div>
+                                                <p style={{
+                                                    color: 'var(--bg-soft)',
+                                                    fontSize: '0.88rem',
+                                                    lineHeight: '1.6',
+                                                    margin: '0 0 16px 0',
+                                                    fontWeight: '300'
+                                                }}>
+                                                    One of the world's first hybrid powered expedition ships featuring modern Scandinavian design and advanced expedition technology.
+                                                </p>
+                                                <p style={{
+                                                    fontSize: '0.7rem',
+                                                    fontWeight: '700',
+                                                    color: 'var(--text-muted)',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '1px',
+                                                    margin: '0 0 8px 0'
+                                                }}>
+                                                    Best for:
+                                                </p>
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    padding: 0,
+                                                    margin: 0,
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    gap: '8px'
+                                                }}>
+                                                    {['Comfortable expedition travel', 'Modern amenities', 'Eco conscious travelers'].map((item, i) => (
+                                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                                            <CheckCircle size={13} color="var(--bg-soft)" style={{ flexShrink: 0 }} />
+                                                            <span style={{ color: 'var(--bg-white)', fontSize: '0.85rem' }}>{item}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+
+                                            {/* MS Fridtjof Nansen */}
+                                            <div style={{
+                                                background: 'var(--bg-dark)',
+                                                border: '1px solid var(--navy-border)',
+                                                borderRadius: '16px',
+                                                padding: '24px'
+                                            }}>
+                                                <h4 style={{
+                                                    color: 'var(--bg-white)',
+                                                    fontSize: '0.95rem',
+                                                    fontWeight: '700',
+                                                    margin: '0 0 12px 0'
+                                                }}>
+                                                    MS Fridtjof Nansen
+                                                </h4>
+                                                <p style={{
+                                                    color: 'var(--bg-soft)',
+                                                    fontSize: '0.88rem',
+                                                    lineHeight: '1.6',
+                                                    margin: '0 0 16px 0',
+                                                    fontWeight: '300'
+                                                }}>
+                                                    A sister ship to Roald Amundsen offering immersive expedition experiences with modern comfort.
+                                                </p>
+                                                <p style={{
+                                                    fontSize: '0.7rem',
+                                                    fontWeight: '700',
+                                                    color: 'var(--text-muted)',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '1px',
+                                                    margin: '0 0 8px 0'
+                                                }}>
+                                                    Best for:
+                                                </p>
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    padding: 0,
+                                                    margin: 0,
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    gap: '8px'
+                                                }}>
+                                                    {['Travelers wanting expedition comfort', 'Educational enrichment', 'Polar exploration'].map((item, i) => (
+                                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                                            <CheckCircle size={13} color="var(--bg-soft)" style={{ flexShrink: 0 }} />
+                                                            <span style={{ color: 'var(--bg-white)', fontSize: '0.85rem' }}>{item}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {activeAntarcticaTab === 2 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px',
+                                                height: '48px',
+                                                borderRadius: '12px',
+                                                background: 'var(--navy-soft)',
+                                                border: '1px solid var(--navy-border)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}>
+                                                <Camera size={22} color="var(--bg-soft)" />
+                                            </div>
+                                            <h3 style={{
+                                                color: 'var(--bg-white)',
+                                                fontSize: '1.4rem',
+                                                fontWeight: '700',
+                                                margin: 0
+                                            }}>
+                                                Antarctica Wildlife Experiences
+                                            </h3>
+                                        </div>
+                                        <p style={{
+                                            color: 'var(--bg-soft)',
+                                            fontSize: '1rem',
+                                            lineHeight: '1.7',
+                                            margin: '0 0 24px 0',
+                                            fontWeight: '300'
+                                        }}>
+                                            Wildlife is one of the biggest reasons travelers choose Antarctica expeditions. Common sightings may include:
+                                        </p>
+
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            padding: 0,
+                                            margin: 0,
+                                            display: 'grid',
+                                            gridTemplateColumns: isMobileViewport ? '1fr 1fr' : '1fr 1fr 1fr',
+                                            gap: '14px',
+                                            marginBottom: '28px'
+                                        }}>
+                                            {[
+                                                'Gentoo penguins',
+                                                'Chinstrap penguins',
+                                                'Adelie penguins',
+                                                'Humpback whales',
+                                                'Orcas',
+                                                'Leopard seals',
+                                                'Crabeater seals',
+                                                'Albatross',
+                                                'Massive seabird colonies',
+                                            ].map((item, i) => (
+                                                <li key={i} style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '10px',
+                                                    background: 'var(--bg-dark)',
+                                                    border: '1px solid var(--navy-border)',
+                                                    padding: '12px 14px',
+                                                    borderRadius: '10px'
+                                                }}>
+                                                    <span style={{
+                                                        background: 'var(--navy-soft)',
+                                                        border: '1px solid var(--navy-border)',
+                                                        color: 'var(--bg-soft)',
+                                                        padding: '2px 6px',
+                                                        borderRadius: '4px',
+                                                        fontSize: '0.7rem',
+                                                        fontWeight: '700',
+                                                        fontFamily: 'monospace'
+                                                    }}>
+                                                        0{i + 1}
+                                                    </span>
+                                                    <span style={{ color: 'var(--bg-white)', fontSize: '0.85rem', fontWeight: '500' }}>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        <div style={{
+                                            background: 'var(--navy-soft)',
+                                            borderLeft: '3px solid var(--bg-soft)',
+                                            padding: '16px',
+                                            borderRadius: '0 12px 12px 0'
+                                        }}>
+                                            <p style={{
+                                                color: 'var(--bg-white)',
+                                                fontSize: '0.85rem',
+                                                fontStyle: 'italic',
+                                                margin: 0,
+                                                lineHeight: '1.5'
+                                            }}>
+                                                Wildlife encounters vary by itinerary, season and weather conditions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
-
-                        {/* Card 3: Wildlife */}
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Camera size={24} /></div>
-                                <h3 className="medi-diff-card-title">Antarctica Wildlife Experiences</h3>
-                            </div>
-                            <p className="medi-diff-card-text">
-                                Wildlife is one of the biggest reasons travelers choose Antarctica expeditions. Common sightings may include:
-                            </p>
-                            <ul className="medi-diff-focus-list-premium">
-                                {[
-                                    'Gentoo penguins',
-                                    'Chinstrap penguins',
-                                    'Adelie penguins',
-                                    'Humpback whales',
-                                    'Orcas',
-                                    'Leopard seals',
-                                    'Crabeater seals',
-                                    'Albatross',
-                                    'Massive seabird colonies',
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <span className="medi-diff-list-num">0{i + 1}</span>
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="medi-diff-conclusion-box">
-                                <p className="medi-diff-conclusion-text">
-                                    Wildlife encounters vary by itinerary, season and weather conditions.
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
 
             {/* ── WHAT EXPEDITION TRAVEL FEELS LIKE (NEW SECTION — inline styled) ── */}
             <section style={{
-                background: 'linear-gradient(135deg, #0f1c2e 0%, #1a2f4a 60%, #0f1c2e 100%)',
-                padding: '80px 20px',
+                backgroundImage: 'radial-gradient(var(--navy-border) 1.5px, transparent 1.5px), linear-gradient(180deg, var(--bg-dark) 0%, #080f1a 100%)',
+                backgroundSize: '40px 40px, 100% 100%',
+                padding: isMobileViewport ? '80px 16px' : '120px 24px',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                width: '100%',
+                boxSizing: 'border-box',
+                borderTop: '1px solid var(--navy-border)',
+                borderBottom: '1px solid var(--navy-border)'
             }}>
-                <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                {/* Dynamic auroral glows in the background using root colors */}
+                <div style={{
+                    position: 'absolute',
+                    top: '-10%',
+                    left: '15%',
+                    width: '500px',
+                    height: '500px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(39, 68, 114, 0.15) 0%, transparent 70%)',
+                    filter: 'blur(100px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+                <div style={{
+                    position: 'absolute',
+                    bottom: '-10%',
+                    right: '10%',
+                    width: '600px',
+                    height: '600px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(231, 243, 245, 0.04) 0%, transparent 75%)',
+                    filter: 'blur(120px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+
+                {/* Cyber line indicators */}
+                <div style={{
+                    position: 'absolute',
+                    top: '40px',
+                    left: '0',
+                    width: '100%',
+                    height: '1px',
+                    background: 'linear-gradient(90deg, transparent 0%, var(--navy-border) 50%, transparent 100%)',
+                    zIndex: 1
+                }} />
+
+                <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
+                    
+                    {/* HUD console header */}
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: '16px',
+                        borderBottom: '1px solid var(--navy-border)',
+                        paddingBottom: '12px'
+                    }}>
+                       
                         <span style={{
-                            display: 'inline-block', background: 'rgba(255,255,255,0.08)',
-                            color: '#94b4d4', fontSize: '11px', fontWeight: 700, letterSpacing: '3px',
-                            padding: '6px 18px', borderRadius: '20px', marginBottom: '16px'
+                            fontFamily: 'monospace',
+                            fontSize: '11px',
+                            color: 'var(--bg-soft)',
+                            letterSpacing: '2px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px'
                         }}>
+                           
+                           
+                        </span>
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            background: 'var(--navy-soft)',
+                            border: '1px solid var(--navy-border)',
+                            color: 'var(--bg-soft)',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '3px',
+                            padding: '8px 20px',
+                            borderRadius: '100px',
+                            marginBottom: '20px',
+                            textTransform: 'uppercase'
+                        }}>
+                            <Compass size={12} color="var(--bg-soft)" />
                             EXPEDITION REALITY
                         </span>
-                        <h2 style={{ color: '#ffffff', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, margin: '0 0 16px' }}>
+                        <h2 style={{
+                            color: 'var(--bg-white)',
+                            fontSize: 'clamp(2rem, 3.8vw, 2.8rem)',
+                            fontWeight: '800',
+                            margin: '0 0 20px',
+                            fontFamily: 'var(--font-display)',
+                            lineHeight: '1.2',
+                            letterSpacing: '-0.5px'
+                        }}>
                             What Antarctica Expedition Travel Actually Feels Like
                         </h2>
-                        <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, #3b7fc4, #94b4d4)', borderRadius: '2px', margin: '0 auto 20px' }}></div>
-                        <p style={{ color: '#94b4d4', fontSize: '1rem', maxWidth: '650px', margin: '0 auto' }}>
+                        <p style={{
+                            color: 'var(--bg-soft)',
+                            fontSize: '1.15rem',
+                            maxWidth: '700px',
+                            margin: '0 auto',
+                            fontWeight: '300',
+                            lineHeight: '1.7',
+                            opacity: 0.95
+                        }}>
                             Expedition cruising feels very different from mainstream luxury cruising.
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : '1.1fr 0.9fr',
+                        gap: '40px',
+                        alignItems: 'stretch',
+                        width: '100%',
+                        boxSizing: 'border-box'
+                    }}>
 
                         {/* You Should Expect */}
-                        <div style={{
-                            background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
-                            borderRadius: '16px', padding: '32px'
-                        }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                                <div style={{
-                                    width: '40px', height: '40px', borderRadius: '50%',
-                                    background: 'linear-gradient(135deg, #3b7fc4, #1a5fa8)',
-                                    display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
-                                }}>
-                                    <CheckCircle size={20} color="#fff" />
-                                </div>
-                                <h3 style={{ color: '#ffffff', fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>You Should Expect</h3>
+                        <div
+                            onMouseEnter={() => setExpHoverCard1(true)}
+                            onMouseLeave={() => setExpHoverCard1(false)}
+                            style={{
+                                background: expHoverCard1 
+                                    ? 'linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%)' 
+                                    : 'linear-gradient(135deg, rgba(28, 47, 74, 0.45) 0%, rgba(15, 28, 46, 0.6) 100%)',
+                                border: expHoverCard1 ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
+                                borderRadius: '24px',
+                                padding: isMobileViewport ? '32px 20px' : '48px 40px',
+                                boxShadow: expHoverCard1 ? 'var(--shadow-lg)' : 'var(--shadow)',
+                                transform: expHoverCard1 ? 'translateY(-6px)' : 'translateY(0)',
+                                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                boxSizing: 'border-box'
+                            }}
+                        >
+                            {/* Corner marks simulating ship radar instrumentation */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '12px',
+                                right: '12px',
+                                display: 'flex',
+                                gap: '4px'
+                            }}>
+                                <div style={{ width: '4px', height: '4px', background: 'var(--bg-soft)', opacity: 0.3 }} />
+                                <div style={{ width: '4px', height: '4px', background: 'var(--bg-soft)', opacity: 0.5 }} />
+                                <div style={{ width: '4px', height: '4px', background: 'var(--bg-soft)', opacity: expHoverCard1 ? 1 : 0.7, boxShadow: expHoverCard1 ? '0 0 6px var(--bg-soft)' : 'none' }} />
                             </div>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginBottom: '36px' }}>
+                                <div style={{
+                                    width: '50px',
+                                    height: '50px',
+                                    borderRadius: '14px',
+                                    background: 'var(--navy-soft)',
+                                    border: '1px solid var(--navy-border)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    flexShrink: 0,
+                                    boxShadow: expHoverCard1 ? '0 0 15px rgba(231, 243, 245, 0.1)' : 'none'
+                                }}>
+                                    <CheckCircle size={24} color="var(--bg-soft)" />
+                                </div>
+                                <div>
+                                    <span style={{
+                                        fontSize: '10px',
+                                        fontWeight: '700',
+                                        color: 'var(--bg-soft)',
+                                        letterSpacing: '1.5px',
+                                        textTransform: 'uppercase',
+                                        opacity: 0.8
+                                    }}>
+                                        CORE ADVENTURE ELEMENTS
+                                    </span>
+                                    <h3 style={{ 
+                                        color: 'var(--bg-white)', 
+                                        fontSize: '1.5rem', 
+                                        fontWeight: '800', 
+                                        margin: 0,
+                                        fontFamily: 'var(--font-body)',
+                                        letterSpacing: '-0.3px'
+                                    }}>
+                                        You Should Expect
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* The Expectation List */}
+                            <ul style={{
+                                listStyle: 'none',
+                                padding: 0,
+                                margin: 0,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '14px'
+                            }}>
                                 {[
-                                    'Flexible schedules',
-                                    'Early wildlife announcements',
-                                    'Zodiac boarding',
-                                    'Outdoor exploration',
-                                    'Expedition briefings',
-                                    'Casual atmosphere',
-                                    'Destination focused programming'
-                                ].map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                        <CheckCircle size={16} color="#3b7fc4" style={{ flexShrink: 0 }} />
-                                        <span style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>{item}</span>
-                                    </li>
-                                ))}
+                                    { text: 'Flexible schedules', icon: Calendar },
+                                    { text: 'Early wildlife announcements', icon: Wind },
+                                    { text: 'Zodiac boarding', icon: Waves },
+                                    { text: 'Outdoor exploration', icon: Snowflake },
+                                    { text: 'Expedition briefings', icon: FileText },
+                                    { text: 'Casual atmosphere', icon: Heart },
+                                    { text: 'Destination focused programming', icon: Compass }
+                                ].map((item, i) => {
+                                    const Icon = item.icon;
+                                    return (
+                                        <li 
+                                            key={i} 
+                                            style={{ 
+                                                display: 'flex', 
+                                                alignItems: 'center',
+                                                justifyContent: 'space-between',
+                                                padding: '16px 20px',
+                                                background: 'rgba(255, 255, 255, 0.02)',
+                                                border: '1px solid var(--navy-border)',
+                                                borderRadius: '16px',
+                                                width: '100%',
+                                                boxSizing: 'border-box'
+                                            }}
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                                <div style={{
+                                                    background: 'var(--navy-soft)',
+                                                    border: '1px solid var(--navy-border)',
+                                                    color: 'var(--bg-soft)',
+                                                    borderRadius: '10px',
+                                                    width: '38px',
+                                                    height: '38px',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    flexShrink: 0
+                                                }}>
+                                                    <Icon size={18} color="var(--bg-soft)" />
+                                                </div>
+                                                <span style={{
+                                                    color: 'var(--bg-white)',
+                                                    fontSize: '0.98rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    {item.text}
+                                                </span>
+                                            </div>
+                                            <div style={{
+                                                width: '6px',
+                                                height: '6px',
+                                                borderRadius: '50%',
+                                                background: '#10b981',
+                                                boxShadow: '0 0 8px #10b981',
+                                                flexShrink: 0
+                                            }} />
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </div>
 
                         {/* You Should Not Expect */}
-                        <div style={{
-                            background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)',
-                            borderRadius: '16px', padding: '32px'
-                        }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                                <div style={{
-                                    width: '40px', height: '40px', borderRadius: '50%',
-                                    background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)',
-                                    display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
-                                }}>
-                                    <Minus size={20} color="#f87171" />
-                                </div>
-                                <h3 style={{ color: '#ffffff', fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>You Should Not Expect</h3>
-                            </div>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                {[
-                                    'Casinos',
-                                    'Broadway style entertainment',
-                                    'Large scale nightlife',
-                                    'Formal cruise environments'
-                                ].map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                        <div style={{
-                                            width: '16px', height: '16px', borderRadius: '50%',
-                                            background: 'rgba(239,68,68,0.2)', border: '1px solid rgba(239,68,68,0.4)',
-                                            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+                        <div
+                            onMouseEnter={() => setExpHoverCard2(true)}
+                            onMouseLeave={() => setExpHoverCard2(false)}
+                            style={{
+                                background: expHoverCard2 
+                                    ? 'linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%)'
+                                    : 'linear-gradient(135deg, rgba(28, 47, 74, 0.35) 0%, rgba(15, 28, 46, 0.5) 100%)',
+                                border: expHoverCard2 ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
+                                borderRadius: '24px',
+                                padding: isMobileViewport ? '32px 20px' : '48px 40px',
+                                boxShadow: expHoverCard2 ? 'var(--shadow-lg)' : 'var(--shadow)',
+                                transform: expHoverCard2 ? 'translateY(-6px)' : 'translateY(0)',
+                                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-between',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                boxSizing: 'border-box'
+                            }}
+                        >
+                            <div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginBottom: '36px' }}>
+                                    <div style={{
+                                        width: '50px',
+                                        height: '50px',
+                                        borderRadius: '14px',
+                                        background: 'var(--navy-soft)',
+                                        border: '1px solid var(--navy-border)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        flexShrink: 0
+                                    }}>
+                                        <Minus size={24} color="var(--text-muted)" />
+                                    </div>
+                                    <div>
+                                        <span style={{
+                                            fontSize: '10px',
+                                            fontWeight: '700',
+                                            color: 'var(--text-muted)',
+                                            letterSpacing: '1.5px',
+                                            textTransform: 'uppercase'
                                         }}>
-                                            <Minus size={10} color="#f87171" />
-                                        </div>
-                                        <span style={{ color: '#94a3b8', fontSize: '0.95rem' }}>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                                            ABSENT FROM EXPEDITION
+                                        </span>
+                                        <h3 style={{ 
+                                            color: 'var(--bg-white)', 
+                                            fontSize: '1.5rem', 
+                                            fontWeight: '800', 
+                                            margin: 0,
+                                            fontFamily: 'var(--font-body)',
+                                            letterSpacing: '-0.3px'
+                                        }}>
+                                            You Should Not Expect
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <ul style={{
+                                    listStyle: 'none',
+                                    padding: 0,
+                                    margin: 0,
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '14px',
+                                    marginBottom: '40px'
+                                }}>
+                                    {[
+                                        { text: 'Casinos', icon: Music },
+                                        { text: 'Broadway style entertainment', icon: Mic },
+                                        { text: 'Large scale nightlife', icon: Moon },
+                                        { text: 'Formal cruise environments', icon: Crown }
+                                    ].map((item, i) => {
+                                        const Icon = item.icon;
+                                        return (
+                                            <li 
+                                                key={i} 
+                                                style={{ 
+                                                    display: 'flex', 
+                                                    alignItems: 'center',
+                                                    justifyContent: 'space-between',
+                                                    padding: '16px 20px',
+                                                    background: 'rgba(255, 255, 255, 0.01)',
+                                                    border: '1px solid var(--navy-border)',
+                                                    borderRadius: '16px',
+                                                    width: '100%',
+                                                    boxSizing: 'border-box',
+                                                    opacity: 0.8
+                                                }}
+                                            >
+                                                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                                    <div style={{
+                                                        background: 'var(--navy-soft)',
+                                                        border: '1px solid var(--navy-border)',
+                                                        color: 'var(--text-muted)',
+                                                        borderRadius: '10px',
+                                                        width: '38px',
+                                                        height: '38px',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        flexShrink: 0
+                                                    }}>
+                                                        <Icon size={18} color="var(--text-muted)" />
+                                                    </div>
+                                                    <span style={{
+                                                        color: 'var(--text-muted)',
+                                                        fontSize: '0.98rem',
+                                                        fontWeight: '500',
+                                                        textDecoration: 'line-through',
+                                                        textDecorationColor: 'rgba(90, 106, 122, 0.4)'
+                                                    }}>
+                                                        {item.text}
+                                                    </span>
+                                                </div>
+                                                <div style={{
+                                                    width: '6px',
+                                                    height: '6px',
+                                                    borderRadius: '50%',
+                                                    background: '#ef4444',
+                                                    boxShadow: '0 0 6px rgba(239, 68, 68, 0.6)',
+                                                    flexShrink: 0,
+                                                    opacity: 0.5
+                                                }} />
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </div>
+                            
+                            {/* Premium styled quote block */}
                             <div style={{
-                                marginTop: '28px', padding: '16px', borderRadius: '10px',
-                                background: 'rgba(59,127,196,0.1)', border: '1px solid rgba(59,127,196,0.2)'
+                                marginTop: 'auto',
+                                padding: '24px',
+                                borderRadius: '20px',
+                                background: 'linear-gradient(135deg, rgba(39, 68, 114, 0.2) 0%, rgba(39, 68, 114, 0.05) 100%)',
+                                borderLeft: '4px solid var(--bg-soft)',
+                                borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+                                borderRight: '1px solid rgba(255, 255, 255, 0.05)',
+                                borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                transition: 'var(--transition)'
                             }}>
-                                <p style={{ color: '#94b4d4', fontSize: '0.9rem', margin: 0, fontStyle: 'italic' }}>
-                                    Antarctica is the main attraction.
+                                <div style={{
+                                    position: 'absolute',
+                                    right: '16px',
+                                    bottom: '0px',
+                                    fontSize: '90px',
+                                    color: 'var(--bg-soft)',
+                                    opacity: 0.07,
+                                    fontFamily: 'Georgia, serif',
+                                    lineHeight: '1',
+                                    pointerEvents: 'none'
+                                }}>
+                                    ”
+                                </div>
+                                <span style={{
+                                    fontFamily: 'monospace',
+                                    fontSize: '10px',
+                                    color: 'var(--bg-soft)',
+                                    letterSpacing: '2px',
+                                    display: 'block',
+                                    marginBottom: '8px',
+                                    textTransform: 'uppercase',
+                                    fontWeight: '600'
+                                }}>
+                                    THE CORE PRINCIPLE
+                                </span>
+                                <p style={{
+                                    color: 'var(--bg-white)',
+                                    fontSize: '1.2rem',
+                                    margin: 0,
+                                    fontFamily: 'var(--font-display)',
+                                    fontStyle: 'italic',
+                                    lineHeight: '1.5',
+                                    fontWeight: '400'
+                                }}>
+                                    "Antarctica is the main attraction."
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -642,20 +1532,26 @@ function HXExpeditionsAntarctica() {
                                 icon: Snowflake,
                                 color: '#3b7fc4',
                                 bg: '#e8f0fb',
+                                fontSize: '0.95rem',
+                                fontWeight: 600,
                                 items: ['Snow covered landscapes', 'Ice scenery', 'Photography', 'Penguin courtship season']
                             },
                             {
                                 months: 'December & January',
                                 icon: Sun,
-                                color: '#f59e0b',
+                                color: '#3b7fc4',
                                 bg: '#fef3c7',
+                                fontSize: '0.95rem',
+                                fontWeight: 600,
                                 items: ['First time travelers', 'Long daylight hours', 'Active wildlife', 'Milder conditions', 'Penguin chicks']
                             },
                             {
                                 months: 'February & March',
                                 icon: Waves,
-                                color: '#059669',
+                                color: '#3b7fc4',
                                 bg: '#d1fae5',
+                                fontSize: '0.95rem',
+                                fontWeight: 600,
                                 items: ['Whale watching', 'Marine wildlife', 'Slightly lower pricing', 'Photography opportunities']
                             }
                         ].map(({ months, icon: Icon, color, bg, items }, i) => (
@@ -667,9 +1563,9 @@ function HXExpeditionsAntarctica() {
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
                                     <div style={{
                                         width: '44px', height: '44px', borderRadius: '12px',
-                                        background: bg, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+                                        background: '#e8f0fb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                                     }}>
-                                        <Icon size={22} color={color} />
+                                        <Icon size={22} color="#1a5fa8" />
                                     </div>
                                     <h3 style={{ color: '#0f1c2e', fontSize: '1rem', fontWeight: 700, margin: 0 }}>{months}</h3>
                                 </div>
@@ -1001,95 +1897,7 @@ function HXExpeditionsAntarctica() {
                 </div>
             </section>
 
-            {/* ── WHY WORK WITH US ── */}
-            <section className="medi-work-with-us-section">
-                <div className="medi-work-with-us-container">
-
-                    <div className="medi-work-header-card">
-                        <span className="medi-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
-                        <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips & Ships Luxury Travel</h2>
-                        <div className="medi-heading-separator-bar custom-bar"></div>
-                        <p className="medi-work-intro-para">
-                            Antarctica expedition planning involves complex logistics, ship differences, and itinerary choices where expert guidance matters significantly.
-                        </p>
-                    </div>
-
-                    <div className="medi-work-timeline-flow">
-                        <div className="medi-timeline-line"></div>
-
-                        <div className="medi-timeline-step step-left">
-                            <div className="medi-timeline-node"><Compass size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 01</div>
-                                <h3 className="medi-pillar-title">Angela Hughes and the Trips & Ships team specialize in matching travelers with the right expedition based on:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        { icon: CheckCircle, text: 'Travel style' },
-                                        { icon: Calendar, text: 'Comfort expectations' },
-                                        { icon: MapPin, text: 'Destination priorities' },
-                                        { icon: Gem, text: 'Budget and time available' },
-                                        { icon: Compass, text: 'Expedition goals' },
-                                        { icon: Crown, text: 'Ship selection guidance' },
-                                    ].map(({ icon: Icon, text }, i) => (
-                                        <li key={i}>
-                                            <Icon size={18} className="medi-pillar-list-icon icon-theme" />
-                                            <span>{text}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="medi-timeline-step step-right">
-                            <div className="medi-timeline-node"><Award size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 02</div>
-                                <h3 className="medi-pillar-title">Angela Hughes is globally recognized for luxury travel expertise through:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        { icon: Mic, text: 'Travel industry speaking engagements' },
-                                        { icon: FileText, text: 'Weekly travel columns' },
-                                        { icon: Award, text: 'Advisory board leadership' },
-                                        { icon: Globe, text: 'International media recognition' },
-                                        { icon: GraduationCap, text: 'Luxury Travel University training programs' },
-                                    ].map(({ icon: Icon, text }, i) => (
-                                        <li key={i}>
-                                            <Icon size={18} className="medi-pillar-list-icon icon-theme" />
-                                            <span>{text}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="medi-timeline-step step-left">
-                            <div className="medi-timeline-node"><Ship size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 03</div>
-                                <h3 className="medi-pillar-title">Trips & Ships Luxury Travel specializes in:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        { icon: Compass, text: 'Expedition cruising' },
-                                        { icon: Ship, text: 'Luxury cruises' },
-                                        { icon: Anchor, text: 'River cruising' },
-                                        { icon: Star, text: 'Safaris' },
-                                        { icon: MapPin, text: 'Premium global travel planning' },
-                                    ].map(({ icon: Icon, text }, i) => (
-                                        <li key={i}>
-                                            <Icon size={18} className="medi-pillar-list-icon icon-theme" />
-                                            <span>{text}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+          
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ── */}
             <section className="medi-authority-section">
