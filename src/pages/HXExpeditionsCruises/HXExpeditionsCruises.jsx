@@ -18,7 +18,7 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import hero1 from '../../assets/HXExpeditionsCruises/Hero_1.webp'
 import hero2 from '../../assets/HXExpeditionsCruises/Hero_2.jpg'
 import hero3 from '../../assets/HXExpeditionsCruises/Hero_3.webp'
-import profileAH from '../../assets/Profile_AH.jpg'
+import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
 import Galápagos from '../../assets/HXExpeditionsCruises/Galápagos.jpg'
 import Norway_Alaska from '../../assets/HXExpeditionsCruises/Norway_Alaska.jpg'
 import Greenland from '../../assets/HXExpeditionsCruises/Greenland.jpg'
@@ -1630,7 +1630,7 @@ function HXExpeditions() {
           <div className="medi-authority-header-block">
             <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
             <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>
-              Why Travelers Trust Angela Hughes & Trips & Ships Luxury Travel
+              Why Travelers Trust Angela Hughes <br /> Trips & Ships Luxury Travel
             </h2>
             <div className="medi-heading-separator-bar medi-bar-centered"></div>
             <p style={{

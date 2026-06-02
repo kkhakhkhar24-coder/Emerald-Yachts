@@ -37,7 +37,7 @@ import itiPetermannPenguins from '../../assets/Hxexpeditionsantarctica/20251223_
 import itiYalourCruising from '../../assets/Hxexpeditionsantarctica/20260102_Antarctica_Yalour Island_Cruising_KayFochtmann.jpg'
 import itiDscPolar from '../../assets/Hxexpeditionsantarctica/DSC09923_V1RGB.jpg'
 
-function HXExpeditionsAntarctica() {    
+function HXExpeditionsAntarctica() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [hero1, hero2, hero3]
 
@@ -58,7 +58,7 @@ function HXExpeditionsAntarctica() {
     const [expHoverCard1, setExpHoverCard1] = useState(false)
     const [expHoverCard2, setExpHoverCard2] = useState(false)
     const [isIntroExpanded, setIsIntroExpanded] = useState(false)
-    
+
     // Gallery States
     const [activeGalleryTab, setActiveGalleryTab] = useState('all')
     const [lightboxIndex, setLightboxIndex] = useState(null)
@@ -285,183 +285,183 @@ function HXExpeditionsAntarctica() {
     ]
 
     const hxSchemaData =
-{
-  "@context": "https://schema.org",
-  "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
-      "name": "HX Expeditions Antarctica Cruises",
-      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
-      "description": "Explore HX Expeditions Antarctica cruises with expert guidance from Trips & Ships Luxury Travel. Learn about Drake Passage crossings, wildlife, ships, seasons and Antarctica cruise planning.",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com"
-    },
-    {
-      "@type": "TravelAgency",
-      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com",
-      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO",
-      "worksFor": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-    },
-    {
-      "@type": "Article",
-      "headline": "HX Expeditions Antarctica Cruises",
-      "description": "Complete guide to HX Expeditions Antarctica cruises including Drake Passage crossings, wildlife, ships, itineraries and planning advice.",
-      "author": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
-      },
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
-      }
-    },
-    {
-      "@type": "Service",
-      "name": "Antarctica Cruise Planning",
-      "provider": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "serviceType": "Antarctica Cruise Planning",
-      "description": "Expert Antarctica cruise planning services including HX Expeditions recommendations, itinerary guidance and expedition travel consulting."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsshipsluxurytravel.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "HX Expeditions",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "HX Expeditions Antarctica Cruises",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Antarctica worth it for first time expedition travelers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Antarctica is widely considered one of the world's most extraordinary expedition destinations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How rough is the Drake Passage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Conditions vary greatly. Some crossings are calm while others can be rough depending on weather."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What wildlife can you see in Antarctica?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Penguins, whales, seals and seabirds are among the most common wildlife sightings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best month for Antarctica cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "December and January are generally best for first time travelers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are HX Antarctica cruises luxury cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do Antarctica cruises include Zodiac landings?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Most HX Antarctica itineraries include regular Zodiac landings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How cold is Antarctica during cruise season?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Temperatures are often milder than expected, generally ranging from about 20°F to 40°F."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you need to be physically fit for Antarctica cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Moderate mobility is important for Zodiac boarding and shore landings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I pack for Antarctica?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Layered waterproof clothing, thermal gear, gloves and proper footwear are essential."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Antarctica landings guaranteed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Weather and ice conditions always determine landing safety."
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
+                "name": "HX Expeditions Antarctica Cruises",
+                "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
+                "description": "Explore HX Expeditions Antarctica cruises with expert guidance from Trips & Ships Luxury Travel. Learn about Drake Passage crossings, wildlife, ships, seasons and Antarctica cruise planning.",
+                "inLanguage": "en-US",
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com"
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com",
+                "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO",
+                "worksFor": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+            },
+            {
+                "@type": "Article",
+                "headline": "HX Expeditions Antarctica Cruises",
+                "description": "Complete guide to HX Expeditions Antarctica cruises including Drake Passage crossings, wildlife, ships, itineraries and planning advice.",
+                "author": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Antarctica Cruise Planning",
+                "provider": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "serviceType": "Antarctica Cruise Planning",
+                "description": "Expert Antarctica cruise planning services including HX Expeditions recommendations, itinerary guidance and expedition travel consulting."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsshipsluxurytravel.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "HX Expeditions",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "HX Expeditions Antarctica Cruises",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Antarctica worth it for first time expedition travelers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Antarctica is widely considered one of the world's most extraordinary expedition destinations."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How rough is the Drake Passage?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Conditions vary greatly. Some crossings are calm while others can be rough depending on weather."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What wildlife can you see in Antarctica?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Penguins, whales, seals and seabirds are among the most common wildlife sightings."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is the best month for Antarctica cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "December and January are generally best for first time travelers."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are HX Antarctica cruises luxury cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do Antarctica cruises include Zodiac landings?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Most HX Antarctica itineraries include regular Zodiac landings."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How cold is Antarctica during cruise season?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Temperatures are often milder than expected, generally ranging from about 20°F to 40°F."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you need to be physically fit for Antarctica cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Moderate mobility is important for Zodiac boarding and shore landings."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What should I pack for Antarctica?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Layered waterproof clothing, thermal gear, gloves and proper footwear are essential."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Antarctica landings guaranteed?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Weather and ice conditions always determine landing safety."
+                        }
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
 
 
     return (
         <>
             <Helmet>
                 <title>HX Expeditions Antarctica Cruises | Drake Passage, Wildlife & First Timer Guide
-</title>
+                </title>
                 <meta name="title" content="HX Expeditions Antarctica Cruises | Luxury Antarctica Expedition Experts
 " />
                 <meta name="description" content="Explore HX Expeditions Antarctica cruises with expert guidance from Trips & Ships Luxury Travel. Learn about Drake Passage crossings, wildlife, ships, seasons and Antarctica cruise planning." />
@@ -566,12 +566,12 @@ function HXExpeditionsAntarctica() {
                                 }}
                             >
                                 <span>{isIntroExpanded ? 'Read Less' : 'Read More'}</span>
-                                <ChevronRight 
-                                    size={16} 
-                                    style={{ 
-                                        transform: isIntroExpanded ? 'rotate(90deg)' : 'none', 
-                                        transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)' 
-                                    }} 
+                                <ChevronRight
+                                    size={16}
+                                    style={{
+                                        transform: isIntroExpanded ? 'rotate(90deg)' : 'none',
+                                        transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+                                    }}
                                 />
                             </button>
 
@@ -778,7 +778,7 @@ function HXExpeditionsAntarctica() {
                                     borderRadius: '100px',
                                     marginBottom: '16px'
                                 }}>
-                                    <Compass size={14}  />
+                                    <Compass size={14} />
                                     <span style={{
                                         // color: 'var(--bg-soft)',
                                         fontSize: '11px',
@@ -1635,7 +1635,7 @@ function HXExpeditionsAntarctica() {
                 }} />
 
                 <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
-                    
+
                     {/* Header Block */}
                     <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                         <span style={{
@@ -1718,8 +1718,8 @@ function HXExpeditionsAntarctica() {
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: isMobileViewport 
-                            ? '1fr' 
+                        gridTemplateColumns: isMobileViewport
+                            ? '1fr'
                             : 'repeat(auto-fill, minmax(320px, 1fr))',
                         gap: '24px',
                         width: '100%',
@@ -1739,7 +1739,7 @@ function HXExpeditionsAntarctica() {
                                         loading="lazy"
                                     />
                                 </div>
-                                
+
                                 {/* Category badge displayed on image */}
                                 <div className="gallery-category-badge">
                                     {item.category === 'drake' && <Waves size={12} />}
@@ -1968,7 +1968,7 @@ function HXExpeditionsAntarctica() {
                 }} />
 
                 <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
-                    
+
                     {/* HUD console header */}
                     <div style={{
                         display: 'flex',
@@ -1978,7 +1978,7 @@ function HXExpeditionsAntarctica() {
                         borderBottom: '1px solid var(--navy-border)',
                         paddingBottom: '12px'
                     }}>
-                       
+
                         <span style={{
                             fontFamily: 'monospace',
                             fontSize: '11px',
@@ -1988,8 +1988,8 @@ function HXExpeditionsAntarctica() {
                             alignItems: 'center',
                             gap: '6px'
                         }}>
-                           
-                           
+
+
                         </span>
                     </div>
 
@@ -2050,8 +2050,8 @@ function HXExpeditionsAntarctica() {
                             onMouseEnter={() => setExpHoverCard1(true)}
                             onMouseLeave={() => setExpHoverCard1(false)}
                             style={{
-                                background: expHoverCard1 
-                                    ? 'linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%)' 
+                                background: expHoverCard1
+                                    ? 'linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%)'
                                     : 'linear-gradient(135deg, rgba(28, 47, 74, 0.45) 0%, rgba(15, 28, 46, 0.6) 100%)',
                                 border: expHoverCard1 ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
                                 borderRadius: '24px',
@@ -2105,10 +2105,10 @@ function HXExpeditionsAntarctica() {
                                     }}>
                                         CORE ADVENTURE ELEMENTS
                                     </span>
-                                    <h3 style={{ 
-                                        color: 'var(--bg-white)', 
-                                        fontSize: '1.5rem', 
-                                        fontWeight: '800', 
+                                    <h3 style={{
+                                        color: 'var(--bg-white)',
+                                        fontSize: '1.5rem',
+                                        fontWeight: '800',
                                         margin: 0,
                                         fontFamily: 'var(--font-body)',
                                         letterSpacing: '-0.3px'
@@ -2138,10 +2138,10 @@ function HXExpeditionsAntarctica() {
                                 ].map((item, i) => {
                                     const Icon = item.icon;
                                     return (
-                                        <li 
-                                            key={i} 
-                                            style={{ 
-                                                display: 'flex', 
+                                        <li
+                                            key={i}
+                                            style={{
+                                                display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'space-between',
                                                 padding: '16px 20px',
@@ -2194,7 +2194,7 @@ function HXExpeditionsAntarctica() {
                             onMouseEnter={() => setExpHoverCard2(true)}
                             onMouseLeave={() => setExpHoverCard2(false)}
                             style={{
-                                background: expHoverCard2 
+                                background: expHoverCard2
                                     ? 'linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%)'
                                     : 'linear-gradient(135deg, rgba(28, 47, 74, 0.35) 0%, rgba(15, 28, 46, 0.5) 100%)',
                                 border: expHoverCard2 ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
@@ -2236,10 +2236,10 @@ function HXExpeditionsAntarctica() {
                                         }}>
                                             ABSENT FROM EXPEDITION
                                         </span>
-                                        <h3 style={{ 
-                                            color: 'var(--bg-white)', 
-                                            fontSize: '1.5rem', 
-                                            fontWeight: '800', 
+                                        <h3 style={{
+                                            color: 'var(--bg-white)',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '800',
                                             margin: 0,
                                             fontFamily: 'var(--font-body)',
                                             letterSpacing: '-0.3px'
@@ -2266,10 +2266,10 @@ function HXExpeditionsAntarctica() {
                                     ].map((item, i) => {
                                         const Icon = item.icon;
                                         return (
-                                            <li 
-                                                key={i} 
-                                                style={{ 
-                                                    display: 'flex', 
+                                            <li
+                                                key={i}
+                                                style={{
+                                                    display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'space-between',
                                                     padding: '16px 20px',
@@ -2320,7 +2320,7 @@ function HXExpeditionsAntarctica() {
                                     })}
                                 </ul>
                             </div>
-                            
+
                             {/* Premium styled quote block */}
                             <div style={{
                                 marginTop: 'auto',
@@ -2775,12 +2775,12 @@ function HXExpeditionsAntarctica() {
             </section>
 
 
-                    {/* ── VIDEO SHOWCASE ── */}
+            {/* ── VIDEO SHOWCASE ── */}
             <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                   
+
                     <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                   
+
                     <div style={{
                         maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden',
                         boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)',
@@ -2800,14 +2800,14 @@ function HXExpeditionsAntarctica() {
                 </div>
             </section>
 
-          
+
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ── */}
             <section className="medi-authority-section">
                 <div className="medi-authority-container">
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes & Trips & Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes <br /> Trips & Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 

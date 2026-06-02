@@ -19,19 +19,17 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
-import profileAH from '../../assets/Profile_AH.jpg'
-import hero1 from '../../assets/HXExpeditionsCruises/Hero_1.webp'
-import hero2 from '../../assets/HXExpeditionsCruises/Hero_2.jpg'
-import hero3 from '../../assets/HXExpeditionsCruises/Hero_3.webp'
-import MS_Fram from '../../assets/HXExpeditionsCruises/Galápagos.jpg'
-import MS_Roald_Amundsen from '../../assets/HXExpeditionsCruises/Antarctica.jpg'
-import MS_Spitsbergen from '../../assets/HXExpeditionsCruises/Svalbard.jpg'
-import Image1 from '../../assets/HXExpeditionsCruises/Image_1.jpg'
-import Image2 from '../../assets/HXExpeditionsCruises/Image_2.jpg'
-import Image3 from '../../assets/HXExpeditionsCruises/Image_3.jpg'
-import Image4 from '../../assets/HXExpeditionsCruises/Image_4.jpg'
-import Image5 from '../../assets/HXExpeditionsCruises/Image_5.jpg'
-import Image6 from '../../assets/HXExpeditionsCruises/Image_6.jpg'
+import profileAH from '../../assets/HXExpeditionsGalápagosCruises/Profile_AH.jpg'
+import hero1 from '../../assets/HXExpeditionsGalápagosCruises/Hero_1.jpg'
+import hero2 from '../../assets/HXExpeditionsGalápagosCruises/Hero_2.jpg'
+import hero3 from '../../assets/HXExpeditionsGalápagosCruises/Hero_3.jpg'
+import MS_Santa from '../../assets/HXExpeditionsGalápagosCruises/MS_Santa_Cruz_II.jpg'
+import Image1 from '../../assets/HXExpeditionsGalápagosCruises/Image_1.jpg'
+import Image2 from '../../assets/HXExpeditionsGalápagosCruises/Image_2.jpg'
+import Image3 from '../../assets/HXExpeditionsGalápagosCruises/Image_3.jpg'
+import Image4 from '../../assets/HXExpeditionsGalápagosCruises/Image_4.jpg'
+import Image5 from '../../assets/HXExpeditionsGalápagosCruises/Image_5.jpg'
+import Image6 from '../../assets/HXExpeditionsGalápagosCruises/Image_6.jpg'
 
 function HXExpeditionsGalapagosCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -62,7 +60,7 @@ function HXExpeditionsGalapagosCruises() {
 
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
 
-    const hxItineraryImages = [MS_Fram, MS_Spitsbergen, MS_Roald_Amundsen]
+    const hxItineraryImages = []
 
     const MS_Santa_Cruz_II_Placeholder = ""; // This will show the dark blue background until you add an image
 
@@ -544,7 +542,7 @@ function HXExpeditionsGalapagosCruises() {
                 </div>
             </section>
 
-            {/* ── SVALBARD: A HIGH ARCTIC VISUAL NARRATIVE ── */}
+            {/* ── GALÁPAGOS: A LIVING VISUAL NARRATIVE ── */}
             <section style={{
                 padding: 'clamp(60px, 10vw, 100px) 20px',
                 backgroundColor: '#0f1c2e',
@@ -622,7 +620,6 @@ function HXExpeditionsGalapagosCruises() {
         `}</style>
 
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    {/* Section Header */}
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <span style={{
                             color: '#3b82f6',
@@ -633,7 +630,7 @@ function HXExpeditionsGalapagosCruises() {
                             display: 'block',
                             marginBottom: '15px'
                         }}>
-                            Visual Narrative
+                            A Living Gallery
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
@@ -642,65 +639,63 @@ function HXExpeditionsGalapagosCruises() {
                             marginBottom: '20px',
                             letterSpacing: '-0.02em'
                         }}>
-                            Svalbard: The Spirit of High Arctic Discovery
+                            Galápagos: Discovery in Darwin’s Footsteps
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
 
-                    {/* Airtight Bento Grid */}
                     <div className="hx-bento-grid">
-
-                        {/* Image 1: Active Discovery (Large 2x2) */}
+                        {/* Image 1: Hidden Coves (Large 2x2) */}
                         <div className="hx-bento-item item-large" style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
-                            <img src={Image1} alt="Active Discovery" className="hx-bento-img" />
+                            <img src={Image6} alt="Hidden Coves" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Active Discovery</span>
-                                <p className="hx-overlay-subtitle">Immersive exploration from the waterline of the world’s remote frontiers.</p>
+                                <span className="hx-overlay-title">Hidden Coves</span>
+                                <p className="hx-overlay-subtitle">Navigating dramatic volcanic cliffs by Panga for intimate coastal access.</p>
                             </div>
                         </div>
 
-                        {/* Image 2: Glacial Immersion (Top Right) */}
+                        {/* Image 2: Avian Rituals (Top Right) */}
                         <div className="hx-bento-item item-standard">
-                            <img src={Image2} alt="Glacial Immersion" className="hx-bento-img" />
+                            <img src={Image5} alt="Avian Rituals" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Glacial Immersion</span>
-                                <p className="hx-overlay-subtitle">Unrivaled relaxation at the very edge of the Great Ice.</p>
+                                <span className="hx-overlay-title">Avian Rituals</span>
+                                <p className="hx-overlay-subtitle">Witnessing the unique and fearless behaviors of iconic local species.</p>
                             </div>
                         </div>
 
-                        {/* Image 3: Celestial Wonders (Middle Right) */}
+                        {/* Image 3: Through the Lens (Middle Right) */}
                         <div className="hx-bento-item item-standard">
-                            <img src={Image3} alt="Ocean Wellness" className="hx-bento-img" />
+                            <img src={Image2} alt="Through the Lens" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Ocean Wellness</span>
-                                <p className="hx-overlay-subtitle">Rejuvenating mind and body in the world’s purest air.</p>
+                                <span className="hx-overlay-title">Through the Lens</span>
+                                <p className="hx-overlay-subtitle">Immersive wildlife photography in a landscape where nature knows no fear.</p>
                             </div>
                         </div>
 
-                        {/* Image 4: Culinary Artistry (Bottom Left under large) */}
+                        {/* Image 4: Island Footsteps (Bottom Left under large) */}
                         <div className="hx-bento-item item-standard">
-                            <img src={Image4} alt="Residential Comfort" className="hx-bento-img" />
+                            <img src={Image1} alt="Island Footsteps" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Residential Comfort</span>
-                                <p className="hx-overlay-subtitle">Scandinavian-designed suites tailored for Arctic rest and reflection.</p>
+                                <span className="hx-overlay-title">Island Footsteps</span>
+                                <p className="hx-overlay-subtitle">Guided discovery across the diverse ecosystems of a living laboratory.</p>
                             </div>
                         </div>
 
-                        {/* Image 5: Gourmet Vistas (Bottom Middle) */}
+                        {/* Image 5: The Expedition Flagship (Bottom Middle) */}
                         <div className="hx-bento-item item-standard">
-                            <img src={Image5} alt="Gourmet Vistas" className="hx-bento-img" />
+                            <img src={Image4} alt="The Expedition Flagship" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Gourmet Vistas</span>
-                                <p className="hx-overlay-subtitle">Exceptional cuisine paired with floor-to-ceiling glacial landscapes.</p>
+                                <span className="hx-overlay-title">The Expedition Flagship</span>
+                                <p className="hx-overlay-subtitle">Advanced small-ship design purpose-built for the Galápagos wilderness.</p>
                             </div>
                         </div>
 
-                        {/* Image 6: Epicurean Artistry (Wide Bottom) */}
+                        {/* Image 6: Twilight Sophistication (Wide Bottom) */}
                         <div className="hx-bento-item item-wide" style={{ gridColumn: 'span 4', gridRow: 'span 1' }}>
-                            <img src={Image6} alt="Epicurean Artistry" className="hx-bento-img" />
+                            <img src={Image3} alt="Twilight Sophistication" className="hx-bento-img" />
                             <div className="hx-bento-overlay">
-                                <span className="hx-overlay-title">Epicurean Artistry</span>
-                                <p className="hx-overlay-subtitle">Handcrafted flavors inspired by the regions we explore.</p>
+                                <span className="hx-overlay-title">Twilight Sophistication</span>
+                                <p className="hx-overlay-subtitle">Reflections and curated refreshments under the golden Equatorial sun.</p>
                             </div>
                         </div>
                     </div>
@@ -843,10 +838,10 @@ function HXExpeditionsGalapagosCruises() {
                 </div>
             </section>
 
-            {/* ── VIDEO SECTION 01: THE ARCTIC IN MOTION ── */}
+            {/* ── VIDEO SECTION 01: THE GALÁPAGOS IN MOTION ── */}
             <section style={{
                 padding: 'clamp(60px, 10vw, 100px) 20px',
-                backgroundColor: '#0f1c2e',
+                backgroundColor: '#0f1c2e', // Matching brand navy
                 fontFamily: 'sans-serif'
             }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -862,7 +857,7 @@ function HXExpeditionsGalapagosCruises() {
                             display: 'block',
                             marginBottom: '15px'
                         }}>
-                            High Latitude Exploration
+                            Evolution in Motion
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
@@ -872,7 +867,7 @@ function HXExpeditionsGalapagosCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            Arctic Immersion: Svalbard in Motion
+                            A Cinematic Lens on Darwin’s Laboratory
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{
@@ -883,7 +878,7 @@ function HXExpeditionsGalapagosCruises() {
                             maxWidth: '850px',
                             margin: '25px auto 0'
                         }}>
-                            Seeing Svalbard is one thing; experiencing the silent power of a hybrid ship navigating sea ice and the thrill of a Zodiac landing is another. Watch how the High Arctic transforms through the lens of an HX expedition, where groundbreaking technology meets the raw beauty of the North Pole's doorstep.
+                            Experiencing the Galápagos is a journey into the history of life itself. Watch how HX Expeditions navigates this protected archipelago, combining low-impact small ship access with the deep expertise of local naturalists. See the moments that define a scientific adventure in the heart of the Pacific.
                         </p>
                     </div>
 
@@ -900,8 +895,8 @@ function HXExpeditionsGalapagosCruises() {
                         <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube-nocookie.com/embed/bKc925akhrQ"
-                            title="HX Expeditions Svalbard Experience"
+                            src="https://www.youtube.com/embed/r2E17sd4We8" // Replace with a Galápagos ship/destination video
+                            title="HX Expeditions Galápagos Experience"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -1085,7 +1080,7 @@ function HXExpeditionsGalapagosCruises() {
                             <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
                                 {/* Replace with your Santa Cruz II image asset when ready */}
                                 <img
-                                    src={MS_Santa_Cruz_II_Placeholder} // Ensure you define/import this or use a placeholder
+                                    src={MS_Santa} // Ensure you define/import this or use a placeholder
                                     alt="MS Santa Cruz II"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
                                 />
@@ -1619,7 +1614,7 @@ function HXExpeditionsGalapagosCruises() {
                 </div>
             </section>
 
-            {/* ── VIDEO SECTION 02: WILDLIFE & EMOTIONAL IMPACT ── */}
+            {/* ── VIDEO SECTION 02: GALÁPAGOS WILDLIFE & EMOTIONAL IMPACT ── */}
             <section style={{
                 padding: '80px 20px',
                 backgroundColor: '#f8fafc',
@@ -1638,7 +1633,7 @@ function HXExpeditionsGalapagosCruises() {
                             display: 'block',
                             marginBottom: '15px'
                         }}>
-                            Wildlife & Wilderness
+                            Wildlife & Conservation
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(28px, 5vw, 42px)',
@@ -1648,7 +1643,7 @@ function HXExpeditionsGalapagosCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            The Realm of the Ice King
+                            The Archipelago in Motion
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{
@@ -1659,7 +1654,7 @@ function HXExpeditionsGalapagosCruises() {
                             maxWidth: '800px',
                             margin: '25px auto 0'
                         }}>
-                            In Svalbard, the environment dictates the journey. Watch the silent, breathtaking moments of Arctic wildlife in their natural habitat—from the king of the north, the polar bear, to the massive walrus colonies of the high-latitude fjords. This is the heart of the expedition experience.
+                            In the Galápagos, the animals dictate the pace of the day. Watch the breathtaking moments of wildlife encounters where species show no fear of humans—from the ancient giant tortoise to the marine iguanas of the volcanic shores. This is the heart of an expedition that transforms your understanding of the natural world.
                         </p>
                     </div>
 
@@ -1675,8 +1670,8 @@ function HXExpeditionsGalapagosCruises() {
                         <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube-nocookie.com/embed/z11RmkKT8b0"
-                            title="Wildlife Encounters in Svalbard"
+                            src="https://www.youtube.com/embed/4tdL2-h5HTI" // Replace with a Galápagos specific HX video
+                            title="Wildlife Discovery in the Galápagos"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -1713,7 +1708,7 @@ function HXExpeditionsGalapagosCruises() {
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
                         <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>
-                            Why Travelers Trust Angela Hughes & Trips & Ships Luxury Travel
+                            Why Travelers Trust Angela Hughes <br /> Trips & Ships Luxury Travel
                         </h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p style={{

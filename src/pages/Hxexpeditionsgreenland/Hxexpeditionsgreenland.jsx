@@ -93,7 +93,7 @@ function GreenlandHighlightsSection() {
             settlements: ['Nuuk', 'Ilulissat', 'Sisimiut', 'Qeqertarsuaq', 'Ittoqqortoormiit', 'Smaller Arctic settlements'],
             quote: 'Many travelers find the cultural interactions just as memorable as the landscapes themselves.',
             fontWeight: 500,
-            
+
         },
     ]
 
@@ -640,183 +640,183 @@ function HXExpeditionsGreenland() {
     ]
 
 
-const greenlandSchemaData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
-      "name": "HX Expeditions Greenland Cruises",
-      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
-      "description": "Explore HX Expeditions Greenland cruises with expert guidance from Trips & Ships Luxury Travel. Discover icebergs, Inuit culture, Arctic scenery and remote Greenland communities.",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntity": {
-        "@type": "Article",
-        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com"
-    },
-    {
-      "@type": "TravelAgency",
-      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com",
-      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO",
-      "worksFor": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-    },
-    {
-      "@type": "Article",
-      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article",
-      "headline": "HX Expeditions Greenland Cruises",
-      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
-      "description": "Complete guide to HX Expeditions Greenland cruises including icebergs, Inuit culture, fjords, wildlife, ships and Arctic expedition planning.",
-      "image": "https://www.tripsshipsluxurytravel.com/images/hx-expeditions-greenland-cruise.jpg",
-      "author": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
-      },
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
-      }
-    },
-    {
-      "@type": "Service",
-      "name": "Greenland Cruise Planning",
-      "provider": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "serviceType": "Greenland Expedition Cruise Planning",
-      "description": "Expert Greenland expedition cruise planning services including HX Expeditions recommendations, Arctic itinerary guidance and personalized travel consulting."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsshipsluxurytravel.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "HX Expeditions",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "HX Expeditions Greenland Cruises",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Greenland worth visiting?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Greenland offers one of the world's most unique Arctic expedition experiences."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you see icebergs in Greenland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Greenland is famous for its enormous icebergs and glacier filled fjords."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What wildlife can you see in Greenland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Whales, seals, seabirds, Arctic foxes and occasionally polar bears may be seen depending on the itinerary."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best month for Greenland cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "July and August are often ideal for wildlife, scenery and accessibility."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Inuit culture in Greenland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Greenlandic Inuit culture is deeply connected to Arctic traditions, hunting, storytelling and community life."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Greenland cruises cold?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, but summer Arctic temperatures are often milder than travelers expect."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are HX Greenland cruises luxury cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do Greenland cruises include Zodiac landings?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most expedition itineraries include Zodiac excursions and exploration opportunities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I pack for Greenland cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Layered thermal clothing, waterproof outerwear and sturdy footwear are essential."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you see whales in Greenland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Whale sightings are common during parts of the Greenland cruise season."
-          }
-        }
-      ]
-    }
-  ]
-};
+    const greenlandSchemaData = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+                "name": "HX Expeditions Greenland Cruises",
+                "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+                "description": "Explore HX Expeditions Greenland cruises with expert guidance from Trips & Ships Luxury Travel. Discover icebergs, Inuit culture, Arctic scenery and remote Greenland communities.",
+                "inLanguage": "en-US",
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntity": {
+                    "@type": "Article",
+                    "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com"
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com",
+                "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO",
+                "worksFor": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+            },
+            {
+                "@type": "Article",
+                "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article",
+                "headline": "HX Expeditions Greenland Cruises",
+                "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+                "description": "Complete guide to HX Expeditions Greenland cruises including icebergs, Inuit culture, fjords, wildlife, ships and Arctic expedition planning.",
+                "image": "https://www.tripsshipsluxurytravel.com/images/hx-expeditions-greenland-cruise.jpg",
+                "author": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Greenland Cruise Planning",
+                "provider": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "serviceType": "Greenland Expedition Cruise Planning",
+                "description": "Expert Greenland expedition cruise planning services including HX Expeditions recommendations, Arctic itinerary guidance and personalized travel consulting."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsshipsluxurytravel.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "HX Expeditions",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "HX Expeditions Greenland Cruises",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Greenland worth visiting?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolutely. Greenland offers one of the world's most unique Arctic expedition experiences."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can you see icebergs in Greenland?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Greenland is famous for its enormous icebergs and glacier filled fjords."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What wildlife can you see in Greenland?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Whales, seals, seabirds, Arctic foxes and occasionally polar bears may be seen depending on the itinerary."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is the best month for Greenland cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "July and August are often ideal for wildlife, scenery and accessibility."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is Inuit culture in Greenland?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Greenlandic Inuit culture is deeply connected to Arctic traditions, hunting, storytelling and community life."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Greenland cruises cold?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, but summer Arctic temperatures are often milder than travelers expect."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are HX Greenland cruises luxury cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do Greenland cruises include Zodiac landings?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Most expedition itineraries include Zodiac excursions and exploration opportunities."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What should I pack for Greenland cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Layered thermal clothing, waterproof outerwear and sturdy footwear are essential."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can you see whales in Greenland?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Whale sightings are common during parts of the Greenland cruise season."
+                        }
+                    }
+                ]
+            }
+        ]
+    };
 
 
 
@@ -824,7 +824,7 @@ const greenlandSchemaData = {
         <>
             <Helmet>
                 <title>HX Expeditions Greenland Cruises | Icebergs, Inuit Culture & Arctic Exploration
-</title>
+                </title>
                 <meta name="title" content="HX Expeditions Greenland Cruises | Luxury Arctic Expedition Experts
 " />
                 <meta name="description" content="Explore HX Expeditions Greenland cruises with expert guidance from Trips & Ships Luxury Travel. Discover icebergs, Inuit culture, Arctic scenery and remote Greenland communities.
@@ -943,7 +943,7 @@ const greenlandSchemaData = {
                         gap: '60px',
                         alignItems: 'center'
                     }} className="medi-premium-intro-grid">
-                        
+
                         {/* Text Content Block */}
                         <div>
                             <span style={{
@@ -977,7 +977,7 @@ const greenlandSchemaData = {
                                 background: 'linear-gradient(90deg, var(--navy) 0%, transparent 100%)',
                                 marginBottom: '28px'
                             }}></div>
-                            
+
                             <p style={{
                                 fontSize: '1.15rem',
                                 color: 'var(--text-body)',
@@ -988,7 +988,7 @@ const greenlandSchemaData = {
                             }}>
                                 Greenland delivers a style of travel that feels raw, remote and profoundly authentic.
                             </p>
-                            
+
                             <p style={{
                                 fontSize: '1rem',
                                 color: 'var(--text-muted)',
@@ -1049,7 +1049,7 @@ const greenlandSchemaData = {
                                         boxShadow: '0 4px 12px rgba(39, 68, 114, 0.01)',
                                         transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
                                     }}
-                                    className="medi-immersion-card-item"
+                                        className="medi-immersion-card-item"
                                     >
                                         <div style={{
                                             width: '42px',
@@ -1064,7 +1064,7 @@ const greenlandSchemaData = {
                                             border: '1px solid rgba(39, 68, 114, 0.12)',
                                             transition: 'all 0.3s ease'
                                         }}
-                                        className="medi-immersion-icon-box"
+                                            className="medi-immersion-icon-box"
                                         >
                                             <Icon size={20} />
                                         </div>
@@ -1506,7 +1506,7 @@ const greenlandSchemaData = {
                 }} />
 
                 <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
-                    
+
                     {/* Header Block */}
                     <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                         <span style={{
@@ -1589,8 +1589,8 @@ const greenlandSchemaData = {
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: isMobileViewport 
-                            ? '1fr' 
+                        gridTemplateColumns: isMobileViewport
+                            ? '1fr'
                             : 'repeat(auto-fill, minmax(320px, 1fr))',
                         gap: '24px',
                         width: '100%',
@@ -1610,7 +1610,7 @@ const greenlandSchemaData = {
                                         loading="lazy"
                                     />
                                 </div>
-                                
+
                                 {/* Category badge displayed on image */}
                                 <div className="greenland-gallery-category-badge">
                                     {item.category === 'scenery' && <Snowflake size={12} />}
@@ -1917,7 +1917,7 @@ const greenlandSchemaData = {
                 </div>
             </section>
 
-       
+
 
             {/* ── EXPERT INSIGHT ── */}
             <section id="greenland-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
@@ -2272,9 +2272,9 @@ const greenlandSchemaData = {
                             boxShadow: '0 20px 40px rgba(15,28,46,0.1)',
                             border: '1px solid rgba(39,68,114,0.1)'
                         }}>
-                            <img 
-                                src={imgZodiacIce} 
-                                alt="Zodiac Cruising among Baffin Bay Icebergs" 
+                            <img
+                                src={imgZodiacIce}
+                                alt="Zodiac Cruising among Baffin Bay Icebergs"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -2343,9 +2343,9 @@ const greenlandSchemaData = {
                             boxShadow: '0 20px 40px rgba(15,28,46,0.1)',
                             border: '1px solid rgba(39,68,114,0.1)'
                         }}>
-                            <img 
-                                src={imgPerformance} 
-                                alt="Inuit Cultural Performance in Uummannaq" 
+                            <img
+                                src={imgPerformance}
+                                alt="Inuit Cultural Performance in Uummannaq"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -2535,12 +2535,12 @@ const greenlandSchemaData = {
                 </div>
             </section>
 
-             {/* ── VIDEO SHOWCASE ── */}
+            {/* ── VIDEO SHOWCASE ── */}
             <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    
+
                     <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    
+
                     <div style={{
                         maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden',
                         boxShadow: '0 20px 40px rgba(15,28,46,0.12)',
@@ -2566,7 +2566,7 @@ const greenlandSchemaData = {
                 <div className="medi-authority-container">
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes & Trips & Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes <br /> Trips & Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 

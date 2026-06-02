@@ -18,7 +18,7 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
-import profileAH from '../../assets/Profile_AH.jpg'
+import profileAH from '../../assets/HXExpeditionsSvalbardCruises/Profile_AH.jpg'
 import hero1 from '../../assets/HXExpeditionsSvalbardCruises/Hero_1.jpg'
 import hero2 from '../../assets/HXExpeditionsSvalbardCruises/Hero_2.jpg'
 import hero3 from '../../assets/HXExpeditionsSvalbardCruises/Hero_3.jpg'
@@ -1705,7 +1705,7 @@ function HXExpeditionsSvalbardCruises() {
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
                         <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>
-                            Why Travelers Trust Angela Hughes & Trips & Ships Luxury Travel
+                            Why Travelers Trust Angela Hughes <br /> Trips & Ships Luxury Travel
                         </h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p style={{
