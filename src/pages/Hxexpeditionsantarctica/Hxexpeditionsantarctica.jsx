@@ -1,13 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
-// import angelajShip from "../../assets/image.webp"
-// import antarcticaPeninsula from '../../assets/HXExpeditions/antarctica-peninsula.webp'
-// import southGeorgia from '../../assets/HXExpeditions/south-georgia.webp'
-// import falklands from '../../assets/HXExpeditions/falklands-antarctica.webp'
-// import extendedPolar from '../../assets/HXExpeditions/extended-polar.webp'
-// import luxurySuite from '../../assets/HXExpeditions/hx-ship-suite.webp'
 import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_Picture_AH from '../../assets/Media (3).jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -15,17 +8,38 @@ import {
     ChevronRight, Crown, Phone, Plus, Minus,
     Globe, LayoutList, Heart, Utensils, Sun, Award,
     Baby, Moon, Music,
-    Mic, FileText, GraduationCap, Waves, Snowflake, Camera, Wind
+    Mic, FileText, GraduationCap, Waves, Snowflake, Camera, Wind,
+    X, ZoomIn
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/HXExpeditions/hero1.jpg'
-// import hero2 from '../../assets/HXExpeditions/hero2.jpg'
-// import hero3 from '../../assets/HXExpeditions/hero3.jpg'
+import hero1 from '../../assets/Hxexpeditionsantarctica/Antarctica_Orne Harbour_KayFochtmann.jpg'
+import hero2 from '../../assets/Hxexpeditionsantarctica/Antarctica_Damoy Point_KayFochtmann-3.jpg'
+import hero3 from '../../assets/Hxexpeditionsantarctica/Antarctica_YuriChoufour.jpg'
+
+// Gallery Images
+import drakePassageSunset from '../../assets/Hxexpeditionsantarctica/20251222_Drake Passage_Sunset_Guest_KayFochtmann.jpg'
+import deceptionIsland from '../../assets/Hxexpeditionsantarctica/Deception_Island_Antarctica_HX_36640.jpg'
+import seaIceLanding from '../../assets/Hxexpeditionsantarctica/20191119_SEA ICE LANDING_2756_PRINT_BYANDREAKLAUSSNER.jpg'
+import whalersBay from '../../assets/Hxexpeditionsantarctica/20260116_Antarctica_Deception Island_Whalers Bay_KayFochtmann-6.jpg'
+import msNansenAerial from '../../assets/Hxexpeditionsantarctica/Aerial_photo_MS_Fridtjof_Nansen_HX_34605_Photo_Espen_Mills_v2RGB.jpg'
+import msAmundsenSuite from '../../assets/Hxexpeditionsantarctica/md-expedition-suite-ms-roald-amundsen_v1RGB.jpg'
+import msAmundsenSuite2 from '../../assets/Hxexpeditionsantarctica/md-expedition-suite-ms-roald-amundsen-2_v1RGB.jpg'
+import cabin716 from '../../assets/Hxexpeditionsantarctica/20191023_CABIN 716_2884_BYANDREAKLAUSSNER.jpg'
+import cabin576 from '../../assets/Hxexpeditionsantarctica/20191024_CABIN 576_2921_BYANDREAKLAUSSNER.jpg'
+import penguinsAntarctica from '../../assets/Hxexpeditionsantarctica/penguins-in-antarctica.webp'
+import whaleDiving from '../../assets/Hxexpeditionsantarctica/whale-diving-antarctica.webp'
+import sealOnIce from '../../assets/Hxexpeditionsantarctica/seal-on-antarctic-ice.webp'
+
+// Itinerary Section Images (unused assets)
+import itiOrneIslands from '../../assets/Hxexpeditionsantarctica/20251206_Antarctica_Orne Islands_KayFochtmann.jpg'
+import itiPetermannPenguins from '../../assets/Hxexpeditionsantarctica/20251223_Antarctica_Petermann Island_Gentoo Penguins_KayFochtmann-3.jpg'
+import itiYalourCruising from '../../assets/Hxexpeditionsantarctica/20260102_Antarctica_Yalour Island_Cruising_KayFochtmann.jpg'
+import itiDscPolar from '../../assets/Hxexpeditionsantarctica/DSC09923_V1RGB.jpg'
 
 function HXExpeditionsAntarctica() {    
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -44,6 +58,116 @@ function HXExpeditionsAntarctica() {
     const [expHoverCard1, setExpHoverCard1] = useState(false)
     const [expHoverCard2, setExpHoverCard2] = useState(false)
     const [isIntroExpanded, setIsIntroExpanded] = useState(false)
+    
+    // Gallery States
+    const [activeGalleryTab, setActiveGalleryTab] = useState('all')
+    const [lightboxIndex, setLightboxIndex] = useState(null)
+
+    const galleryItems = [
+        {
+            category: 'drake',
+            categoryName: 'The Drake Passage',
+            img: drakePassageSunset,
+            title: 'Drake Passage Sunset',
+            desc: 'A serene sunset over the Drake Passage, showcasing its calmer "Drake Lake" conditions.'
+        },
+        {
+            category: 'drake',
+            categoryName: 'The Drake Passage',
+            img: deceptionIsland,
+            title: 'Deception Island Entrance',
+            desc: 'Sailing through Neptune\'s Bellows into the volcanic caldera of Deception Island.'
+        },
+        {
+            category: 'drake',
+            categoryName: 'The Drake Passage',
+            img: seaIceLanding,
+            title: 'Polar Sea Ice Navigation',
+            desc: 'Navigating through thick sea ice fields in the early polar season.'
+        },
+        {
+            category: 'drake',
+            categoryName: 'The Drake Passage',
+            img: whalersBay,
+            title: 'Whalers Bay Landscape',
+            desc: 'The rugged volcanic black sands and icy ruins at Deception Island\'s Whalers Bay.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: msNansenAerial,
+            title: 'MS Fridtjof Nansen',
+            desc: 'An aerial view of the state-of-the-art hybrid-powered polar expedition vessel.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: msAmundsenSuite,
+            title: 'Expedition Suite Interior',
+            desc: 'Scandinavian-inspired design on MS Roald Amundsen featuring premium comfort and materials.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: msAmundsenSuite2,
+            title: 'Suite Balcony View',
+            desc: 'Modern cabin layout with large panoramic windows and private balcony access.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: cabin716,
+            title: 'Deck 7 Cabin 716',
+            desc: 'Comfortable and stylishly appointed mid-ship cabin on the polar deck.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: cabin576,
+            title: 'Deck 5 Cabin 576',
+            desc: 'Elegant cabin design on Deck 5 optimized for polar explorers.'
+        },
+        {
+            category: 'wildlife',
+            categoryName: 'Wildlife Sightings',
+            img: penguinsAntarctica,
+            title: 'Gentoo Penguins',
+            desc: 'A colony of curious penguins gathering on the rocky shores of the Antarctic Peninsula.'
+        },
+        {
+            category: 'wildlife',
+            categoryName: 'Wildlife Sightings',
+            img: whaleDiving,
+            title: 'Humpback Whale Dive',
+            desc: 'A humpback whale showing its fluke before diving into the cold Southern Ocean.'
+        },
+        {
+            category: 'wildlife',
+            categoryName: 'Wildlife Sightings',
+            img: sealOnIce,
+            title: 'Leopard Seal',
+            desc: 'A leopard seal resting peacefully on a floating ice floe.'
+        }
+    ]
+
+    const filteredGalleryItems = galleryItems.filter(
+        (item) => activeGalleryTab === 'all' || item.category === activeGalleryTab
+    )
+
+    useEffect(() => {
+        if (lightboxIndex === null) return;
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowLeft') {
+                setLightboxIndex((prev) => (prev === 0 ? filteredGalleryItems.length - 1 : prev - 1));
+            } else if (e.key === 'ArrowRight') {
+                setLightboxIndex((prev) => (prev === filteredGalleryItems.length - 1 ? 0 : prev + 1));
+            } else if (e.key === 'Escape') {
+                setLightboxIndex(null);
+            }
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [lightboxIndex, filteredGalleryItems.length]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -71,6 +195,8 @@ function HXExpeditionsAntarctica() {
     const mediItineraries = [
         {
             title: 'Classic Antarctica Peninsula',
+            img: itiOrneIslands,
+            imgAlt: 'Antarctica Orne Islands – classic peninsula scenery',
             bestFor: [
                 'First time travelers',
                 'Best balance of expedition depth',
@@ -81,6 +207,8 @@ function HXExpeditionsAntarctica() {
         },
         {
             title: 'Antarctica & South Georgia',
+            img: itiPetermannPenguins,
+            imgAlt: 'Gentoo penguins at Petermann Island, Antarctica',
             bestFor: [
                 'Travelers wanting deeper exploration',
                 'Wildlife photography lovers',
@@ -91,6 +219,8 @@ function HXExpeditionsAntarctica() {
         },
         {
             title: 'Falklands + Antarctica',
+            img: itiYalourCruising,
+            imgAlt: 'Cruising near Yalour Islands, Antarctica',
             bestFor: [
                 'Travelers wanting multiple ecosystems',
                 'History enthusiasts',
@@ -101,6 +231,8 @@ function HXExpeditionsAntarctica() {
         },
         {
             title: 'Extended Polar Expeditions',
+            img: itiDscPolar,
+            imgAlt: 'Dramatic polar wilderness scenery in Antarctica',
             bestFor: [
                 'Seasoned expedition travelers',
                 'Travelers with flexible schedules',
@@ -152,79 +284,190 @@ function HXExpeditionsAntarctica() {
         }
     ]
 
-    const hxSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "HX Expeditions Antarctica Cruises",
-                "url": "https://www.tripsandships.com/hx-expeditions-antarctica",
-                "description": "Expert HX Expeditions Antarctica cruise guide for luxury travelers from Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsandships.com/expedition-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "HX Expeditions Antarctica", "item": "https://www.tripsandships.com/hx-expeditions-antarctica" }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is Antarctica worth it for first time expedition travelers?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Antarctica is widely considered one of the world's most extraordinary expedition destinations." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What wildlife can you see in Antarctica?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Penguins, whales, seals and seabirds are among the most common wildlife sightings." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How far in advance should Antarctica cruises be booked?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Ideally 12 to 18 months in advance for best cabin selection and pricing." }
-                    }
-                ]
-            }
-        ]
+    const hxSchemaData =
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
+      "name": "HX Expeditions Antarctica Cruises",
+      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises",
+      "description": "Explore HX Expeditions Antarctica cruises with expert guidance from Trips & Ships Luxury Travel. Learn about Drake Passage crossings, wildlife, ships, seasons and Antarctica cruise planning.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com"
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com",
+      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+    },
+    {
+      "@type": "Article",
+      "headline": "HX Expeditions Antarctica Cruises",
+      "description": "Complete guide to HX Expeditions Antarctica cruises including Drake Passage crossings, wildlife, ships, itineraries and planning advice.",
+      "author": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+      },
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Antarctica Cruise Planning",
+      "provider": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "serviceType": "Antarctica Cruise Planning",
+      "description": "Expert Antarctica cruise planning services including HX Expeditions recommendations, itinerary guidance and expedition travel consulting."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsshipsluxurytravel.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "HX Expeditions",
+          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "HX Expeditions Antarctica Cruises",
+          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-antarctica-cruises"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Antarctica worth it for first time expedition travelers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Antarctica is widely considered one of the world's most extraordinary expedition destinations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How rough is the Drake Passage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conditions vary greatly. Some crossings are calm while others can be rough depending on weather."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What wildlife can you see in Antarctica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Penguins, whales, seals and seabirds are among the most common wildlife sightings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best month for Antarctica cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "December and January are generally best for first time travelers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are HX Antarctica cruises luxury cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Antarctica cruises include Zodiac landings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most HX Antarctica itineraries include regular Zodiac landings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How cold is Antarctica during cruise season?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Temperatures are often milder than expected, generally ranging from about 20°F to 40°F."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need to be physically fit for Antarctica cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Moderate mobility is important for Zodiac boarding and shore landings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I pack for Antarctica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Layered waterproof clothing, thermal gear, gloves and proper footwear are essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Antarctica landings guaranteed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Weather and ice conditions always determine landing safety."
+          }
+        }
+      ]
     }
+  ]
+}
+
 
     return (
         <>
             <Helmet>
-                <title>HX Expeditions Antarctica Cruises 2026 | Expert Polar Expedition Guide | Trips & Ships</title>
-                <meta name="title" content="HX Expeditions Antarctica Cruises 2026 | Expert Polar Expedition Guide" />
-                <meta name="description" content="Plan your HX Expeditions Antarctica cruise with expert guidance from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover the best itineraries, ships, seasons, and wildlife encounters for 2026." />
-                <meta name="keywords" content="HX Expeditions Antarctica, Antarctica expedition cruise, polar expedition travel, Antarctica wildlife cruise, Drake Passage cruise, luxury Antarctica travel" />
+                <title>HX Expeditions Antarctica Cruises | Drake Passage, Wildlife & First Timer Guide
+</title>
+                <meta name="title" content="HX Expeditions Antarctica Cruises | Luxury Antarctica Expedition Experts
+" />
+                <meta name="description" content="Explore HX Expeditions Antarctica cruises with expert guidance from Trips & Ships Luxury Travel. Learn about Drake Passage crossings, wildlife, ships, seasons and Antarctica cruise planning." />
+                <meta name="keywords" content="HX Expeditions Antarctica Cruises, Antarctica expedition cruises
+, HX Antarctica cruises
+, Antarctica luxury expedition, Drake Passage cruise, Antarctica small ship cruises" />
                 <script type="application/ld+json">{JSON.stringify(hxSchemaData)}</script>
             </Helmet>
 
@@ -1047,6 +1290,634 @@ function HXExpeditionsAntarctica() {
                 </div>
             </section>
 
+            {/* ── EXPEDITION PHOTO GALLERY SECTION ── */}
+            <section className="antarctica-gallery-section" style={{
+                backgroundImage: 'radial-gradient(rgba(39, 68, 114, 0.15) 1px, transparent 1px), linear-gradient(180deg, var(--bg-dark2) 0%, #030810 100%)',
+                backgroundSize: '32px 32px, 100% 100%',
+                borderTop: '1px solid var(--navy-border)',
+                borderBottom: '1px solid var(--navy-border)',
+                padding: isMobileViewport ? '60px 16px' : '100px 24px',
+                position: 'relative',
+                overflow: 'hidden',
+                width: '100%',
+                boxSizing: 'border-box'
+            }}>
+                <style>{`
+                    /* Southern Lights Animation */
+                    @keyframes auroraPulse {
+                        0% {
+                            transform: scale(1) translate(0, 0) rotate(0deg);
+                            opacity: 0.1;
+                        }
+                        50% {
+                            transform: scale(1.1) translate(20px, -15px) rotate(3deg);
+                            opacity: 0.2;
+                            filter: hue-rotate(15deg);
+                        }
+                        100% {
+                            transform: scale(0.95) translate(-10px, 10px) rotate(-3deg);
+                            opacity: 0.1;
+                        }
+                    }
+
+                    .aurora-glow-1 {
+                        animation: auroraPulse 14s infinite alternate ease-in-out;
+                    }
+                    .aurora-glow-2 {
+                        animation: auroraPulse 18s infinite alternate ease-in-out-reverse;
+                    }
+
+                    /* Glass Floating control dock for filters */
+                    .gallery-filter-dock {
+                        background: rgba(15, 28, 46, 0.45);
+                        backdrop-filter: blur(16px);
+                        -webkit-backdrop-filter: blur(16px);
+                        border: 1px solid rgba(39, 68, 114, 0.4);
+                        border-radius: 100px;
+                        padding: 6px;
+                        display: inline-flex;
+                        gap: 6px;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+                    }
+
+                    @media (max-width: 768px) {
+                        .gallery-filter-dock {
+                            border-radius: 20px;
+                            padding: 10px;
+                            width: 100%;
+                            max-width: 480px;
+                        }
+                    }
+
+                    .gallery-tab-btn {
+                        background: transparent;
+                        border: 1px solid transparent;
+                        color: var(--text-muted);
+                        padding: 10px 24px;
+                        border-radius: 100px;
+                        font-size: 0.88rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        outline: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                    .gallery-tab-btn:hover {
+                        color: var(--bg-white);
+                        background: rgba(255, 255, 255, 0.04);
+                    }
+                    .gallery-tab-btn.active {
+                        background: var(--bg-soft);
+                        border-color: rgba(255, 255, 255, 0.1);
+                        color: var(--bg-dark2);
+                        box-shadow: 0 4px 16px rgba(231, 243, 245, 0.25);
+                    }
+
+                    /* Smooth card entrance when switching tabs */
+                    @keyframes cardEntrance {
+                        from {
+                            opacity: 0;
+                            transform: translateY(20px) scale(0.96);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0) scale(1);
+                        }
+                    }
+
+                    /* Premium Card Design with Frosted Glass Footer */
+                    .gallery-card {
+                        position: relative;
+                        border-radius: 24px;
+                        overflow: hidden;
+                        border: 1px solid rgba(39, 68, 114, 0.4);
+                        background: rgba(15, 28, 46, 0.3);
+                        cursor: pointer;
+                        transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                        animation: cardEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+                    }
+
+                    .gallery-card:hover {
+                        transform: translateY(-6px);
+                        border-color: var(--bg-soft);
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(231, 243, 245, 0.12);
+                    }
+
+                    .gallery-image-wrapper {
+                        position: relative;
+                        width: 100%;
+                        aspect-ratio: 4/3;
+                        overflow: hidden;
+                    }
+
+                    .gallery-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+
+                    .gallery-card:hover .gallery-image {
+                        transform: scale(1.08);
+                    }
+
+                    /* Category Badge on Image */
+                    .gallery-category-badge {
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        background: rgba(3, 8, 16, 0.55);
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        color: var(--bg-soft);
+                        padding: 6px 12px;
+                        border-radius: 30px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        z-index: 4;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        pointer-events: none;
+                        transition: all 0.3s ease;
+                    }
+
+                    .gallery-card:hover .gallery-category-badge {
+                        background: rgba(231, 243, 245, 0.95);
+                        color: var(--bg-dark2);
+                        border-color: var(--bg-soft);
+                        box-shadow: 0 4px 12px rgba(231, 243, 245, 0.2);
+                    }
+
+                    /* Glass Details Footer Overlay */
+                    .gallery-card-footer {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: linear-gradient(to top, rgba(3, 8, 16, 0.98) 0%, rgba(3, 8, 16, 0.8) 60%, rgba(3, 8, 16, 0) 100%);
+                        padding: 24px;
+                        z-index: 3;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        border-top: 1px solid transparent;
+                    }
+
+                    .gallery-card:hover .gallery-card-footer {
+                        background: rgba(3, 8, 16, 0.96);
+                        backdrop-filter: blur(16px);
+                        -webkit-backdrop-filter: blur(16px);
+                        border-top: 1px solid rgba(255, 255, 255, 0.06);
+                    }
+
+                    .gallery-card-title {
+                        color: var(--bg-white);
+                        font-size: 1.15rem;
+                        font-weight: 700;
+                        margin: 0;
+                        font-family: var(--font-body);
+                        transition: color 0.3s ease;
+                    }
+
+                    .gallery-card:hover .gallery-card-title {
+                        color: var(--bg-soft);
+                    }
+
+                    .gallery-card-desc {
+                        max-height: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        margin: 0;
+                        font-size: 0.82rem;
+                        color: var(--text-muted);
+                        line-height: 1.5;
+                    }
+
+                    .gallery-card:hover .gallery-card-desc {
+                        max-height: 80px;
+                        opacity: 1;
+                        margin-top: 10px;
+                    }
+
+                    /* Zoom Hover Indicator */
+                    .gallery-zoom-indicator {
+                        position: absolute;
+                        top: 16px;
+                        right: 16px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: rgba(3, 8, 16, 0.55);
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--bg-soft);
+                        opacity: 0;
+                        transform: scale(0.8);
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        z-index: 4;
+                    }
+
+                    .gallery-card:hover .gallery-zoom-indicator {
+                        opacity: 1;
+                        transform: scale(1);
+                        background: var(--bg-soft);
+                        color: var(--bg-dark2);
+                        border-color: var(--bg-soft);
+                        box-shadow: 0 4px 12px rgba(231, 243, 245, 0.2);
+                    }
+
+                    /* Lightbox Premium Styling */
+                    .lightbox-overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(3, 8, 16, 0.96);
+                        backdrop-filter: blur(20px);
+                        -webkit-backdrop-filter: blur(20px);
+                        z-index: 99999;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+
+                    /* Floating Lightbox Navigation Buttons */
+                    .lightbox-nav-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: rgba(3, 8, 16, 0.6);
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                        border-radius: 50%;
+                        width: 52px;
+                        height: 52px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        cursor: pointer;
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        z-index: 1000000;
+                        outline: none;
+                        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+                    }
+                    .lightbox-nav-btn:hover {
+                        background: var(--bg-soft);
+                        color: var(--bg-dark2);
+                        border-color: var(--bg-soft);
+                        transform: translateY(-50%) scale(1.1);
+                        box-shadow: 0 0 20px rgba(231, 243, 245, 0.4);
+                    }
+                    .lightbox-nav-btn:active {
+                        transform: translateY(-50%) scale(0.95);
+                    }
+                    .lightbox-nav-btn.btn-prev {
+                        left: -80px;
+                    }
+                    .lightbox-nav-btn.btn-next {
+                        right: -80px;
+                    }
+                    @media (max-width: 1100px) {
+                        .lightbox-nav-btn.btn-prev {
+                            left: 16px;
+                        }
+                        .lightbox-nav-btn.btn-next {
+                            right: 16px;
+                        }
+                    }
+                `}</style>
+
+                {/* Animated Auroral glows simulating Southern Lights */}
+                <div className="aurora-glow-1" style={{
+                    position: 'absolute',
+                    top: '-10%',
+                    right: '10%',
+                    width: '500px',
+                    height: '500px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(39, 68, 114, 0.2) 0%, transparent 70%)',
+                    filter: 'blur(100px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+                <div className="aurora-glow-2" style={{
+                    position: 'absolute',
+                    bottom: '-10%',
+                    left: '5%',
+                    width: '500px',
+                    height: '500px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(231, 243, 245, 0.05) 0%, transparent 70%)',
+                    filter: 'blur(110px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+
+                <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
+                    
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                        <span style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            background: 'rgba(255, 255, 255, 0.08)',
+                            border: '1px solid rgba(255, 255, 255, 0.15)',
+                            color: '#e7f3f5',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '3px',
+                            padding: '8px 20px',
+                            borderRadius: '100px',
+                            marginBottom: '20px',
+                            textTransform: 'uppercase'
+                        }}>
+                            <Camera size={12} color="#e7f3f5" />
+                            Visualizing the Expedition
+                        </span>
+                        <h2 style={{
+                            color: '#ffffff',
+                            fontSize: 'clamp(2rem, 3.8vw, 2.8rem)',
+                            fontWeight: '800',
+                            margin: '0 0 16px',
+                            fontFamily: 'var(--font-display)',
+                            lineHeight: '1.2',
+                            letterSpacing: '-0.5px'
+                        }}>
+                            Antarctica Expedition Photo Gallery
+                        </h2>
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            background: 'var(--bg-soft)',
+                            margin: '0 auto 20px',
+                            borderRadius: '2px'
+                        }} />
+                        <p style={{
+                            color: '#cbd5e1',
+                            fontSize: '1.1rem',
+                            maxWidth: '700px',
+                            margin: '0 auto',
+                            fontWeight: '300',
+                            lineHeight: '1.7',
+                            opacity: 0.95
+                        }}>
+                            Explore high-definition captures of the voyage, modern polar vessel details, and incredible polar wildlife encounters.
+                        </p>
+                    </div>
+
+                    {/* Glass Floating Control Dock for Filter Tabs */}
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginBottom: '50px'
+                    }}>
+                        <div className="gallery-filter-dock">
+                            {[
+                                { id: 'all', label: 'All Photos', icon: <Globe size={14} /> },
+                                { id: 'drake', label: 'The Drake Passage', icon: <Waves size={14} /> },
+                                { id: 'ships', label: 'HX Polar Ships', icon: <Ship size={14} /> },
+                                { id: 'wildlife', label: 'Wildlife Sightings', icon: <Camera size={14} /> }
+                            ].map(tab => (
+                                <button
+                                    key={tab.id}
+                                    className={`gallery-tab-btn ${activeGalleryTab === tab.id ? 'active' : ''}`}
+                                    onClick={() => {
+                                        setActiveGalleryTab(tab.id);
+                                        setLightboxIndex(null); // Close lightbox when tab changes to avoid indices shifting
+                                    }}
+                                >
+                                    {tab.icon}
+                                    <span>{tab.label}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Grid */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport 
+                            ? '1fr' 
+                            : 'repeat(auto-fill, minmax(320px, 1fr))',
+                        gap: '24px',
+                        width: '100%',
+                        boxSizing: 'border-box'
+                    }}>
+                        {filteredGalleryItems.map((item, idx) => (
+                            <div
+                                key={`${item.title}-${activeGalleryTab}`} // Changing key based on tab forces React to remount, triggering CSS animation
+                                className="gallery-card"
+                                onClick={() => setLightboxIndex(idx)}
+                            >
+                                <div className="gallery-image-wrapper">
+                                    <img
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="gallery-image"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                
+                                {/* Category badge displayed on image */}
+                                <div className="gallery-category-badge">
+                                    {item.category === 'drake' && <Waves size={12} />}
+                                    {item.category === 'ships' && <Ship size={12} />}
+                                    {item.category === 'wildlife' && <Camera size={12} />}
+                                    <span>{item.categoryName}</span>
+                                </div>
+
+                                {/* Zoom hover button */}
+                                <div className="gallery-zoom-indicator">
+                                    <ZoomIn size={16} />
+                                </div>
+
+                                {/* Glass Details Footer */}
+                                <div className="gallery-card-footer">
+                                    <h3 className="gallery-card-title">
+                                        {item.title}
+                                    </h3>
+                                    <p className="gallery-card-desc">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Lightbox Modal */}
+                {lightboxIndex !== null && (
+                    <div
+                        className="lightbox-overlay"
+                        onClick={() => setLightboxIndex(null)}
+                    >
+                        <div
+                            style={{
+                                position: 'relative',
+                                maxWidth: '900px',
+                                width: '100%',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center'
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            {/* Close button */}
+                            <button
+                                onClick={() => setLightboxIndex(null)}
+                                style={{
+                                    position: 'absolute',
+                                    top: '-55px',
+                                    right: '0',
+                                    background: 'rgba(255, 255, 255, 0.08)',
+                                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                                    borderRadius: '50%',
+                                    width: '42px',
+                                    height: '42px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: 'white',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s ease',
+                                    outline: 'none',
+                                    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                                    zIndex: 10
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.25)'
+                                    e.currentTarget.style.transform = 'scale(1.05)'
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'
+                                    e.currentTarget.style.transform = 'scale(1)'
+                                }}
+                            >
+                                <X size={20} />
+                            </button>
+
+                            {/* Left Navigation Arrow */}
+                            <button
+                                className="lightbox-nav-btn btn-prev"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setLightboxIndex(prev => (prev === 0 ? filteredGalleryItems.length - 1 : prev - 1));
+                                }}
+                                aria-label="Previous image"
+                            >
+                                <ChevronRight size={24} style={{ transform: 'rotate(180deg)' }} />
+                            </button>
+
+                            {/* Right Navigation Arrow */}
+                            <button
+                                className="lightbox-nav-btn btn-next"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setLightboxIndex(prev => (prev === filteredGalleryItems.length - 1 ? 0 : prev + 1));
+                                }}
+                                aria-label="Next image"
+                            >
+                                <ChevronRight size={24} />
+                            </button>
+
+                            {/* Lightbox Image Frame */}
+                            <div style={{
+                                position: 'relative',
+                                maxWidth: '100%',
+                                maxHeight: '70vh',
+                                borderRadius: '24px',
+                                overflow: 'hidden',
+                                border: '1px solid rgba(255, 255, 255, 0.1)',
+                                boxShadow: '0 30px 70px rgba(0, 0, 0, 0.8)'
+                            }}>
+                                <img
+                                    src={filteredGalleryItems[lightboxIndex].img}
+                                    alt={filteredGalleryItems[lightboxIndex].title}
+                                    style={{
+                                        maxWidth: '100%',
+                                        maxHeight: '70vh',
+                                        display: 'block',
+                                        objectFit: 'contain'
+                                    }}
+                                />
+                            </div>
+
+                            {/* Caption details panel */}
+                            <div style={{
+                                marginTop: '24px',
+                                textAlign: 'center',
+                                maxWidth: '650px',
+                                background: 'rgba(15, 28, 46, 0.5)',
+                                backdropFilter: 'blur(10px)',
+                                border: '1px solid rgba(255, 255, 255, 0.06)',
+                                padding: '20px 30px',
+                                borderRadius: '20px',
+                                boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                            }}>
+                                <span style={{
+                                    fontSize: '10px',
+                                    fontWeight: '700',
+                                    color: 'var(--bg-soft)',
+                                    letterSpacing: '2px',
+                                    textTransform: 'uppercase',
+                                    marginBottom: '8px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '6px',
+                                    fontFamily: 'monospace'
+                                }}>
+                                    {filteredGalleryItems[lightboxIndex].category === 'drake' && <Waves size={12} />}
+                                    {filteredGalleryItems[lightboxIndex].category === 'ships' && <Ship size={12} />}
+                                    {filteredGalleryItems[lightboxIndex].category === 'wildlife' && <Camera size={12} />}
+                                    <span>{filteredGalleryItems[lightboxIndex].categoryName}</span>
+                                </span>
+                                <h3 style={{
+                                    color: 'var(--bg-white)',
+                                    fontSize: '1.4rem',
+                                    fontWeight: '700',
+                                    margin: '0 0 8px 0',
+                                    fontFamily: 'var(--font-body)'
+                                }}>
+                                    {filteredGalleryItems[lightboxIndex].title}
+                                </h3>
+                                <p style={{
+                                    color: 'var(--text-muted)',
+                                    fontSize: '0.92rem',
+                                    lineHeight: '1.6',
+                                    margin: 0,
+                                    fontWeight: '400'
+                                }}>
+                                    {filteredGalleryItems[lightboxIndex].desc}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </section>
+
             {/* ── WHAT EXPEDITION TRAVEL FEELS LIKE (NEW SECTION — inline styled) ── */}
             <section style={{
                 backgroundImage: 'radial-gradient(var(--navy-border) 1.5px, transparent 1.5px), linear-gradient(180deg, var(--bg-dark) 0%, #080f1a 100%)',
@@ -1599,7 +2470,7 @@ function HXExpeditionsAntarctica() {
                     }}>
                         <iframe
                             width="100%" height="100%"
-                            src="https://www.youtube.com/embed/qUpr3evauEc"
+                            src="https://www.youtube.com/embed/pKKV8tPotDQ"
                             title="Experience Antarctica with HX Expeditions"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1639,15 +2510,21 @@ function HXExpeditionsAntarctica() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
-                                    src={
-                                        mediSelectedItinerary === 0 ? antarcticaPeninsula :
-                                            mediSelectedItinerary === 1 ? southGeorgia :
-                                                mediSelectedItinerary === 2 ? falklands : extendedPolar
-                                    }
-                                    alt={mediItineraries[mediSelectedItinerary].title}
+                                <img
+                                    key={mediSelectedItinerary}
+                                    src={mediItineraries[mediSelectedItinerary].img}
+                                    alt={mediItineraries[mediSelectedItinerary].imgAlt}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        objectPosition: 'center',
+                                        display: 'block',
+                                        transition: 'opacity 0.5s ease',
+                                        borderRadius: '0'
+                                    }}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">RECOMMENDED VOYAGE</span>
                             </div>
@@ -1893,6 +2770,32 @@ function HXExpeditionsAntarctica() {
                                 ))}
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+                    {/* ── VIDEO SHOWCASE ── */}
+            <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                   
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                   
+                    <div style={{
+                        maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)',
+                        aspectRatio: '16/9', background: '#000'
+                    }}>
+                        <iframe
+                            width="100%" height="100%"
+                            src="https://www.youtube.com/embed/1Cw9rh_kzYs"
+                            title="Experience Antarctica with HX Expeditions"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
                     </div>
                 </div>
             </section>

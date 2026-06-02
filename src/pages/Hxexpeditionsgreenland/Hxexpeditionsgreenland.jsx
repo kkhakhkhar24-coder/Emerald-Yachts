@@ -1,11 +1,4 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
-// import greenlandShip from "../../assets/image.webp"
-// import greenlandItinerary1 from '../../assets/HXGreenland/greenland-west-coast.webp'
-// import greenlandItinerary2 from '../../assets/HXGreenland/greenland-east-coast.webp'
-// import greenlandItinerary3 from '../../assets/HXGreenland/greenland-complete.webp'
-// import greenlandItinerary4 from '../../assets/HXGreenland/greenland-iceland.webp'
-// import luxurySuite from '../../assets/HXGreenland/hx-greenland-ship.webp'
 import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
@@ -15,13 +8,37 @@ import {
     ChevronRight, Crown, Phone, Plus, Minus,
     Globe, LayoutList, Heart, Utensils, Sun, Award,
     Baby, Moon, Music,
-    Mic, FileText, GraduationCap, Camera, Snowflake, Waves, Wind, Mountain
+    Mic, FileText, GraduationCap, Camera, Snowflake, Waves, Wind, Mountain,
+    X, ZoomIn
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/HXGreenland/hero1.jpg'
-// import hero2 from '../../assets/HXGreenland/hero2.jpg'
-// import hero3 from '../../assets/HXGreenland/hero3.jpg'
+import hero1 from '../../assets/Hxexpeditionsgreenland/MS_Fram_Greenland_HX_00624_v1RGB.jpg'
+import hero2 from '../../assets/Hxexpeditionsgreenland/Greenland_Kvanefjord_HX_43483_v1RGB.jpg'
+import hero3 from '../../assets/Hxexpeditionsgreenland/BaffinBay_Savissivik_ZodiacTown_TedGatlin_5481.jpg'
+
+// Gallery Images (unused assets)
+import galIceChannel from '../../assets/Hxexpeditionsgreenland/- Lemaire Channel - 019 - Espen Mills Espen Mills.jpg'
+import galKayaking from '../../assets/Hxexpeditionsgreenland/2 - Kayaking, Orne Harbour - 012 - Espen Mills Espen Mills.jpg'
+import galBasaltCliffs from '../../assets/Hxexpeditionsgreenland/3 - Cruising, Spert Island - 013 - Espen Mills Espen Mills.jpg'
+import galExplorerLounge from '../../assets/Hxexpeditionsgreenland/Explorer Lounge - MS Fram - 04 - Espen Mills.jpg'
+import galCabinSuite from '../../assets/Hxexpeditionsgreenland/Cabin 634 - Q2 - MS Fram - 01 - Espen Mills_V2RGB.jpg'
+import galDining from '../../assets/Hxexpeditionsgreenland/Lindstrøm - MS Fram - 02 - Espen Mills.jpg'
+import galFjordscape from '../../assets/Hxexpeditionsgreenland/DSCF2729.jpg'
+import galMidnightSun from '../../assets/Hxexpeditionsgreenland/_DSF4538.jpg'
+import galLandings from '../../assets/Hxexpeditionsgreenland/_Antarctica_SeaIceLanding_ZodiacsGentoos_TedGatlin_1170.jpg'
+import galReflections from '../../assets/Hxexpeditionsgreenland/_Antarctica_SeaIceLanding_ZodiacReflection_TedGatlin_1186.jpg'
+
+// Exhaustive additional gallery images
+import galCabin543 from '../../assets/Hxexpeditionsgreenland/Cabin 543 - MG - MS Fram - 06 - Espen Mills.jpg'
+import galExplorerLounge9 from '../../assets/Hxexpeditionsgreenland/Explorer Lounge - MS Fram - 09 - Espen Mills.jpg'
+import galReception from '../../assets/Hxexpeditionsgreenland/Reception - MS Fram - 03 - Espen Mills.jpg'
+import galHeimaey from '../../assets/Hxexpeditionsgreenland/_Iceland_Heimaey_KayFochtmann-11.jpg'
+import galHeritage from '../../assets/Hxexpeditionsgreenland/_VALPARAISO_0283_PRINT_BYANDREAKLAUSSNER.jpg'
+
+// Newly added Baffin Bay images
+import imgZodiacIce from '../../assets/Hxexpeditionsgreenland/20250913_BaffinBay_Savissivik_ZodiacIce_TedGatlin_5604.jpg'
+import imgPerformance from '../../assets/Hxexpeditionsgreenland/20250915_BaffinBay_Uummannaq_Performance_TedGatlin_5821.jpg'
 
 /* ─── Greenland Highlights — Tab Panel Layout ─── */
 function GreenlandHighlightsSection() {
@@ -391,7 +408,7 @@ function GreenlandHighlightsSection() {
 
 function HXExpeditionsGreenland() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -404,6 +421,147 @@ function HXExpeditionsGreenland() {
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
     const [mediActiveMistake, setMediActiveMistake] = useState(0)
     const [isMediSliderHovered, setIsMediSliderHovered] = useState(false)
+
+    // Gallery States
+    const [activeGalleryTab, setActiveGalleryTab] = useState('all')
+    const [lightboxIndex, setLightboxIndex] = useState(null)
+    const [isMobileViewport, setIsMobileViewport] = useState(false)
+
+    const galleryItems = [
+        {
+            category: 'scenery',
+            categoryName: 'Scenery & Icebergs',
+            img: galIceChannel,
+            title: 'Sailing through Arctic Channels',
+            desc: 'MS Fram carefully navigating narrow, ice-filled waterways along remote Arctic coasts.'
+        },
+        {
+            category: 'adventure',
+            categoryName: 'Adventure & Landings',
+            img: galKayaking,
+            title: 'Glacial Sea Kayaking',
+            desc: 'An intimate, silent excursion paddling between floating growlers and towering ice structures.'
+        },
+        {
+            category: 'adventure',
+            categoryName: 'Adventure & Landings',
+            img: galBasaltCliffs,
+            title: 'Basalt Cliffs Expedition',
+            desc: 'Zodiac boats navigating narrow stone labyrinths and dramatic basalt cliffs.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galExplorerLounge,
+            title: 'Panoramic Explorer Lounge',
+            desc: 'Relaxing indoor observation areas with floor-to-ceiling windows to enjoy the passing scenery.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galCabinSuite,
+            title: 'Nordic Explorer Suite',
+            desc: 'Premium suite cabin accommodations featuring stylish Scandinavian design and expansive sea views.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galDining,
+            title: 'Lindstrøm Fine Dining',
+            desc: 'Elegant onboard dining serving modern interpretations of traditional Arctic and Nordic dishes.'
+        },
+        {
+            category: 'scenery',
+            categoryName: 'Scenery & Icebergs',
+            img: galFjordscape,
+            title: 'Dramatic Arctic Fjordscape',
+            desc: 'Towering granite mountains reflecting in the glassy, ice-dotted waters of Greenlandic fjords.'
+        },
+        {
+            category: 'scenery',
+            categoryName: 'Scenery & Icebergs',
+            img: galMidnightSun,
+            title: 'Golden Hour Polar Glow',
+            desc: 'The spectacular midsummer midnight sun casting warm, low-angle light across massive ice fields.'
+        },
+        {
+            category: 'adventure',
+            categoryName: 'Adventure & Landings',
+            img: galLandings,
+            title: 'Expedition Shore Landing',
+            desc: 'Safely stepping ashore in custom Zodiac landing crafts to explore untamed, roadless landscapes.'
+        },
+        {
+            category: 'adventure',
+            categoryName: 'Adventure & Landings',
+            img: galReflections,
+            title: 'Mirror-Like Arctic Waters',
+            desc: 'Glass-like ocean reflections creating beautiful visual alignment during an early morning outing.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galCabin543,
+            title: 'Nordic Grand Suite',
+            desc: 'Expedition suite accommodation providing maximum space, warmth, and relaxation after Arctic adventures.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galExplorerLounge9,
+            title: 'Observation Deck Lounge',
+            desc: 'An expansive communal deck space designed for scenic viewing and connecting with fellow polar travelers.'
+        },
+        {
+            category: 'ships',
+            categoryName: 'HX Polar Ships',
+            img: galReception,
+            title: 'Onboard Guest Services',
+            desc: 'A dedicated, warm timber reception area to ensure seamless organization of landing schedules.'
+        },
+        {
+            category: 'scenery',
+            categoryName: 'Scenery & Icebergs',
+            img: galHeimaey,
+            title: 'Sub-Arctic Cliffs of Heimaey',
+            desc: 'Dramatic sea cliffs and bird-nesting outcroppings typical of sub-Arctic volcanic routes.'
+        },
+        {
+            category: 'adventure',
+            categoryName: 'Adventure & Landings',
+            img: galHeritage,
+            title: 'Expedition Heritage Records',
+            desc: 'Historical polar travel records, journals, and navigation charts celebrating legendary exploration history.'
+        }
+    ]
+
+    const filteredGalleryItems = galleryItems.filter(
+        (item) => activeGalleryTab === 'all' || item.category === activeGalleryTab
+    )
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileViewport(window.innerWidth < 992)
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    useEffect(() => {
+        if (lightboxIndex === null) return;
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowLeft') {
+                setLightboxIndex((prev) => (prev === 0 ? filteredGalleryItems.length - 1 : prev - 1));
+            } else if (e.key === 'ArrowRight') {
+                setLightboxIndex((prev) => (prev === filteredGalleryItems.length - 1 ? 0 : prev + 1));
+            } else if (e.key === 'Escape') {
+                setLightboxIndex(null);
+            }
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [lightboxIndex, filteredGalleryItems.length]);
 
     useEffect(() => {
         if (isMediSliderHovered) return
@@ -481,79 +639,198 @@ function HXExpeditionsGreenland() {
         }
     ]
 
-    const greenlandSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "HX Expeditions Greenland Cruises",
-                "url": "https://www.tripsandships.com/hx-expeditions-greenland",
-                "description": "Expert HX Expeditions Greenland cruise guide for luxury travelers from Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsandships.com/expedition-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "HX Expeditions Greenland", "item": "https://www.tripsandships.com/hx-expeditions-greenland" }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is Greenland worth visiting?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Greenland offers one of the world's most unique Arctic expedition experiences." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is the best month for Greenland cruises?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "July and August are often ideal for wildlife, scenery and accessibility." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How far in advance should Greenland cruises be booked?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Ideally 12 to 18 months in advance for best availability and pricing." }
-                    }
-                ]
-            }
-        ]
+
+const greenlandSchemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+      "name": "HX Expeditions Greenland Cruises",
+      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+      "description": "Explore HX Expeditions Greenland cruises with expert guidance from Trips & Ships Luxury Travel. Discover icebergs, Inuit culture, Arctic scenery and remote Greenland communities.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      },
+      "mainEntity": {
+        "@type": "Article",
+        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com"
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com",
+      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises#article",
+      "headline": "HX Expeditions Greenland Cruises",
+      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises",
+      "description": "Complete guide to HX Expeditions Greenland cruises including icebergs, Inuit culture, fjords, wildlife, ships and Arctic expedition planning.",
+      "image": "https://www.tripsshipsluxurytravel.com/images/hx-expeditions-greenland-cruise.jpg",
+      "author": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+      },
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Greenland Cruise Planning",
+      "provider": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "serviceType": "Greenland Expedition Cruise Planning",
+      "description": "Expert Greenland expedition cruise planning services including HX Expeditions recommendations, Arctic itinerary guidance and personalized travel consulting."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsshipsluxurytravel.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "HX Expeditions",
+          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "HX Expeditions Greenland Cruises",
+          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-greenland-cruises"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Greenland worth visiting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Greenland offers one of the world's most unique Arctic expedition experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you see icebergs in Greenland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Greenland is famous for its enormous icebergs and glacier filled fjords."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What wildlife can you see in Greenland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whales, seals, seabirds, Arctic foxes and occasionally polar bears may be seen depending on the itinerary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best month for Greenland cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "July and August are often ideal for wildlife, scenery and accessibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Inuit culture in Greenland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Greenlandic Inuit culture is deeply connected to Arctic traditions, hunting, storytelling and community life."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Greenland cruises cold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but summer Arctic temperatures are often milder than travelers expect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are HX Greenland cruises luxury cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Greenland cruises include Zodiac landings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most expedition itineraries include Zodiac excursions and exploration opportunities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I pack for Greenland cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Layered thermal clothing, waterproof outerwear and sturdy footwear are essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you see whales in Greenland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Whale sightings are common during parts of the Greenland cruise season."
+          }
+        }
+      ]
     }
+  ]
+};
+
+
 
     return (
         <>
             <Helmet>
-                <title>HX Expeditions Greenland Cruises 2026 | Expert Arctic Expedition Guide | Trips & Ships</title>
-                <meta name="title" content="HX Expeditions Greenland Cruises 2026 | Expert Arctic Expedition Guide" />
-                <meta name="description" content="Discover HX Expeditions Greenland cruises with expert guidance from Angela Hughes, CEO of Trips & Ships Luxury Travel. Explore icebergs, fjords, Inuit culture and Arctic wildlife on the world's most remote expedition." />
-                <meta name="keywords" content="HX Expeditions Greenland, Greenland expedition cruise, Arctic cruise, Ilulissat Icefjord cruise, Greenland wildlife cruise, luxury Arctic travel" />
+                <title>HX Expeditions Greenland Cruises | Icebergs, Inuit Culture & Arctic Exploration
+</title>
+                <meta name="title" content="HX Expeditions Greenland Cruises | Luxury Arctic Expedition Experts
+" />
+                <meta name="description" content="Explore HX Expeditions Greenland cruises with expert guidance from Trips & Ships Luxury Travel. Discover icebergs, Inuit culture, Arctic scenery and remote Greenland communities.
+" />
+                <meta name="keywords" content="HX Expeditions Greenland Cruises,Greenland expedition cruises, Greenland luxury cruises, Greenland small ship cruises, HX Greenland cruises
+" />
                 <script type="application/ld+json">{JSON.stringify(greenlandSchemaData)}</script>
             </Helmet>
 
@@ -884,6 +1161,637 @@ function HXExpeditionsGreenland() {
             {/* ── GREENLAND HIGHLIGHTS — REDESIGNED ── */}
             <GreenlandHighlightsSection />
 
+            {/* ── GREENLAND PHOTO GALLERY SECTION ── */}
+            <section className="greenland-gallery-section" style={{
+                backgroundImage: 'radial-gradient(rgba(39, 68, 114, 0.15) 1px, transparent 1px), linear-gradient(180deg, var(--bg-dark, #0f1c2e) 0%, #050a12 100%)',
+                backgroundSize: '32px 32px, 100% 100%',
+                borderTop: '1px solid rgba(255,255,255,0.08)',
+                borderBottom: '1px solid rgba(255,255,255,0.08)',
+                padding: isMobileViewport ? '60px 16px' : '100px 24px',
+                position: 'relative',
+                overflow: 'hidden',
+                width: '100%',
+                boxSizing: 'border-box'
+            }}>
+                <style>{`
+                    /* Northern Lights (Aurora Borealis) Animation */
+                    @keyframes auroraBorealisPulse {
+                        0% {
+                            transform: scale(1) translate(0, 0) rotate(0deg);
+                            opacity: 0.08;
+                        }
+                        50% {
+                            transform: scale(1.15) translate(25px, -15px) rotate(4deg);
+                            opacity: 0.22;
+                            filter: hue-rotate(25deg);
+                        }
+                        100% {
+                            transform: scale(0.9) translate(-10px, 15px) rotate(-4deg);
+                            opacity: 0.08;
+                        }
+                    }
+
+                    .aurora-green-1 {
+                        animation: auroraBorealisPulse 15s infinite alternate ease-in-out;
+                    }
+                    .aurora-green-2 {
+                        animation: auroraBorealisPulse 20s infinite alternate ease-in-out-reverse;
+                    }
+
+                    /* Glass Floating control dock for filters */
+                    .greenland-gallery-filter-dock {
+                        background: rgba(15, 28, 46, 0.55);
+                        backdrop-filter: blur(16px);
+                        -webkit-backdrop-filter: blur(16px);
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        border-radius: 100px;
+                        padding: 6px;
+                        display: inline-flex;
+                        gap: 6px;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+                    }
+
+                    @media (max-width: 768px) {
+                        .greenland-gallery-filter-dock {
+                            border-radius: 20px;
+                            padding: 10px;
+                            width: 100%;
+                            max-width: 480px;
+                        }
+                    }
+
+                    .greenland-gallery-tab-btn {
+                        background: transparent;
+                        border: 1px solid transparent;
+                        color: rgba(255, 255, 255, 0.6);
+                        padding: 10px 24px;
+                        border-radius: 100px;
+                        font-size: 0.88rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        outline: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                    .greenland-gallery-tab-btn:hover {
+                        color: #ffffff;
+                        background: rgba(255, 255, 255, 0.05);
+                    }
+                    .greenland-gallery-tab-btn.active {
+                        background: #ffffff;
+                        border-color: rgba(255, 255, 255, 0.15);
+                        color: #0f1c2e;
+                        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.25);
+                    }
+
+                    /* Smooth card entrance when switching tabs */
+                    @keyframes cardEntranceGreenland {
+                        from {
+                            opacity: 0;
+                            transform: translateY(20px) scale(0.96);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0) scale(1);
+                        }
+                    }
+
+                    /* Premium Card Design with Frosted Glass Footer */
+                    .greenland-gallery-card {
+                        position: relative;
+                        border-radius: 24px;
+                        overflow: hidden;
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        background: rgba(15, 28, 46, 0.4);
+                        cursor: pointer;
+                        transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+                        animation: cardEntranceGreenland 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+                    }
+
+                    .greenland-gallery-card:hover {
+                        transform: translateY(-6px);
+                        border-color: rgba(255, 255, 255, 0.25);
+                        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.08);
+                    }
+
+                    .greenland-gallery-image-wrapper {
+                        position: relative;
+                        width: 100%;
+                        aspect-ratio: 4/3;
+                        overflow: hidden;
+                    }
+
+                    .greenland-gallery-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-image {
+                        transform: scale(1.08);
+                    }
+
+                    /* Category Badge on Image */
+                    .greenland-gallery-category-badge {
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        background: rgba(3, 8, 16, 0.65);
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        color: #e7f3f5;
+                        padding: 6px 14px;
+                        border-radius: 30px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        z-index: 4;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        pointer-events: none;
+                        transition: all 0.3s ease;
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-category-badge {
+                        background: #ffffff;
+                        color: #0f1c2e;
+                        border-color: #ffffff;
+                        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+                    }
+
+                    /* Glass Details Footer Overlay */
+                    .greenland-gallery-card-footer {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: linear-gradient(to top, rgba(3, 8, 16, 0.98) 0%, rgba(3, 8, 16, 0.8) 60%, rgba(3, 8, 16, 0) 100%);
+                        padding: 24px;
+                        z-index: 3;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        border-top: 1px solid transparent;
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-card-footer {
+                        background: rgba(3, 8, 16, 0.96);
+                        backdrop-filter: blur(16px);
+                        -webkit-backdrop-filter: blur(16px);
+                        border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    }
+
+                    .greenland-gallery-card-title {
+                        color: #ffffff;
+                        font-size: 1.15rem;
+                        font-weight: 700;
+                        margin: 0;
+                        font-family: var(--font-body);
+                        transition: color 0.3s ease;
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-card-title {
+                        color: #e7f3f5;
+                    }
+
+                    .greenland-gallery-card-desc {
+                        max-height: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        margin: 0;
+                        font-size: 0.82rem;
+                        color: rgba(255, 255, 255, 0.6);
+                        line-height: 1.5;
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-card-desc {
+                        max-height: 80px;
+                        opacity: 1;
+                        margin-top: 10px;
+                    }
+
+                    /* Zoom Hover Indicator */
+                    .greenland-gallery-zoom-indicator {
+                        position: absolute;
+                        top: 16px;
+                        right: 16px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: rgba(3, 8, 16, 0.65);
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #e7f3f5;
+                        opacity: 0;
+                        transform: scale(0.8);
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        z-index: 4;
+                    }
+
+                    .greenland-gallery-card:hover .greenland-gallery-zoom-indicator {
+                        opacity: 1;
+                        transform: scale(1);
+                        background: #ffffff;
+                        color: #0f1c2e;
+                        border-color: #ffffff;
+                        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+                    }
+
+                    /* Lightbox Premium Styling */
+                    .greenland-lightbox-overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(3, 8, 16, 0.97);
+                        backdrop-filter: blur(20px);
+                        -webkit-backdrop-filter: blur(20px);
+                        z-index: 99999;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        animation: fadeInGreenland 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+
+                    @keyframes fadeInGreenland {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+
+                    /* Floating Lightbox Navigation Buttons */
+                    .greenland-lightbox-nav-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: rgba(3, 8, 16, 0.7);
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                        border-radius: 50%;
+                        width: 52px;
+                        height: 52px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        cursor: pointer;
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                        z-index: 1000000;
+                        outline: none;
+                        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+                    }
+                    .greenland-lightbox-nav-btn:hover {
+                        background: #ffffff;
+                        color: #0f1c2e;
+                        border-color: #ffffff;
+                        transform: translateY(-50%) scale(1.1);
+                        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+                    }
+                    .greenland-lightbox-nav-btn:active {
+                        transform: translateY(-50%) scale(0.95);
+                    }
+                    .greenland-lightbox-nav-btn.btn-prev {
+                        left: -80px;
+                    }
+                    .greenland-lightbox-nav-btn.btn-next {
+                        right: -80px;
+                    }
+                    @media (max-width: 1100px) {
+                        .greenland-lightbox-nav-btn.btn-prev {
+                            left: 16px;
+                        }
+                        .greenland-lightbox-nav-btn.btn-next {
+                            right: 16px;
+                        }
+                    }
+                `}</style>
+
+                {/* Animated Northern Lights glows */}
+                <div className="aurora-green-1" style={{
+                    position: 'absolute',
+                    top: '-15%',
+                    right: '15%',
+                    width: '600px',
+                    height: '600px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, transparent 70%)',
+                    filter: 'blur(100px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+                <div className="aurora-green-2" style={{
+                    position: 'absolute',
+                    bottom: '-15%',
+                    left: '5%',
+                    width: '600px',
+                    height: '600px',
+                    borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%)',
+                    filter: 'blur(110px)',
+                    pointerEvents: 'none',
+                    zIndex: 1
+                }} />
+
+                <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2, width: '100%', boxSizing: 'border-box' }}>
+                    
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                        <span style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            background: 'rgba(255, 255, 255, 0.08)',
+                            border: '1px solid rgba(255, 255, 255, 0.15)',
+                            color: '#e7f3f5',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '3px',
+                            padding: '8px 20px',
+                            borderRadius: '100px',
+                            marginBottom: '20px',
+                            textTransform: 'uppercase'
+                        }}>
+                            <Camera size={12} color="#e7f3f5" />
+                            Visualizing the Expedition
+                        </span>
+                        <h2 style={{
+                            color: '#ffffff',
+                            fontSize: 'clamp(2rem, 3.8vw, 2.8rem)',
+                            fontWeight: '800',
+                            margin: '0 0 16px',
+                            fontFamily: 'var(--font-display)',
+                            lineHeight: '1.2',
+                            letterSpacing: '-0.5px'
+                        }}>
+                            Greenland Expedition Photo Gallery
+                        </h2>
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            background: '#e7f3f5',
+                            margin: '0 auto 20px',
+                            borderRadius: '2px'
+                        }} />
+                        <p style={{
+                            color: '#cbd5e1',
+                            fontSize: '1.1rem',
+                            maxWidth: '700px',
+                            margin: '0 auto',
+                            fontWeight: '300',
+                            lineHeight: '1.7',
+                            opacity: 0.95
+                        }}>
+                            Explore high-definition captures of the Arctic landscape, custom HX polar exploration vessels, and thrilling wilderness landings.
+                        </p>
+                    </div>
+
+                    {/* Glass Floating Control Dock for Filter Tabs */}
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginBottom: '50px'
+                    }}>
+                        <div className="greenland-gallery-filter-dock">
+                            {[
+                                { id: 'all', label: 'All Photos', icon: <Globe size={14} /> },
+                                { id: 'scenery', label: 'Scenery & Icebergs', icon: <Snowflake size={14} /> },
+                                { id: 'ships', label: 'HX Polar Ships', icon: <Ship size={14} /> },
+                                { id: 'adventure', label: 'Adventure & Landings', icon: <Camera size={14} /> }
+                            ].map(tab => (
+                                <button
+                                    key={tab.id}
+                                    className={`greenland-gallery-tab-btn ${activeGalleryTab === tab.id ? 'active' : ''}`}
+                                    onClick={() => {
+                                        setActiveGalleryTab(tab.id);
+                                        setLightboxIndex(null); // Close lightbox when tab changes to avoid indices shifting
+                                    }}
+                                >
+                                    {tab.icon}
+                                    <span>{tab.label}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Grid */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport 
+                            ? '1fr' 
+                            : 'repeat(auto-fill, minmax(320px, 1fr))',
+                        gap: '24px',
+                        width: '100%',
+                        boxSizing: 'border-box'
+                    }}>
+                        {filteredGalleryItems.map((item, idx) => (
+                            <div
+                                key={`${item.title}-${activeGalleryTab}`} // Changing key based on tab forces React to remount, triggering CSS animation
+                                className="greenland-gallery-card"
+                                onClick={() => setLightboxIndex(idx)}
+                            >
+                                <div className="greenland-gallery-image-wrapper">
+                                    <img
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="greenland-gallery-image"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                
+                                {/* Category badge displayed on image */}
+                                <div className="greenland-gallery-category-badge">
+                                    {item.category === 'scenery' && <Snowflake size={12} />}
+                                    {item.category === 'ships' && <Ship size={12} />}
+                                    {item.category === 'adventure' && <Camera size={12} />}
+                                    <span>{item.categoryName}</span>
+                                </div>
+
+                                {/* Zoom hover button */}
+                                <div className="greenland-gallery-zoom-indicator">
+                                    <ZoomIn size={16} />
+                                </div>
+
+                                {/* Glass Details Footer */}
+                                <div className="greenland-gallery-card-footer">
+                                    <h3 className="greenland-gallery-card-title">
+                                        {item.title}
+                                    </h3>
+                                    <p className="greenland-gallery-card-desc">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Lightbox Modal */}
+                {lightboxIndex !== null && (
+                    <div
+                        className="greenland-lightbox-overlay"
+                        onClick={() => setLightboxIndex(null)}
+                    >
+                        <div
+                            style={{
+                                position: 'relative',
+                                maxWidth: '900px',
+                                width: '100%',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center'
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            {/* Close button */}
+                            <button
+                                onClick={() => setLightboxIndex(null)}
+                                style={{
+                                    position: 'absolute',
+                                    top: '-55px',
+                                    right: '0',
+                                    background: 'rgba(255, 255, 255, 0.08)',
+                                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                                    borderRadius: '50%',
+                                    width: '42px',
+                                    height: '42px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: 'white',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s ease',
+                                    outline: 'none',
+                                    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                                    zIndex: 10
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.25)'
+                                    e.currentTarget.style.transform = 'scale(1.05)'
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'
+                                    e.currentTarget.style.transform = 'scale(1)'
+                                }}
+                            >
+                                <X size={20} />
+                            </button>
+
+                            {/* Left Navigation Arrow */}
+                            <button
+                                className="greenland-lightbox-nav-btn btn-prev"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setLightboxIndex(prev => (prev === 0 ? filteredGalleryItems.length - 1 : prev - 1));
+                                }}
+                                aria-label="Previous image"
+                            >
+                                <ChevronRight size={24} style={{ transform: 'rotate(180deg)' }} />
+                            </button>
+
+                            {/* Right Navigation Arrow */}
+                            <button
+                                className="greenland-lightbox-nav-btn btn-next"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setLightboxIndex(prev => (prev === filteredGalleryItems.length - 1 ? 0 : prev + 1));
+                                }}
+                                aria-label="Next image"
+                            >
+                                <ChevronRight size={24} />
+                            </button>
+
+                            {/* Lightbox Image Container */}
+                            <div style={{
+                                width: '100%',
+                                borderRadius: '24px',
+                                overflow: 'hidden',
+                                border: '1px solid rgba(255, 255, 255, 0.15)',
+                                background: '#030810',
+                                boxShadow: '0 24px 60px rgba(0,0,0,0.8)'
+                            }}>
+                                <div style={{
+                                    width: '100%',
+                                    aspectRatio: '16/10',
+                                    maxHeight: '70vh',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    background: '#000',
+                                    position: 'relative'
+                                }}>
+                                    <img
+                                        src={filteredGalleryItems[lightboxIndex].img}
+                                        alt={filteredGalleryItems[lightboxIndex].title}
+                                        style={{
+                                            maxWidth: '100%',
+                                            maxHeight: '100%',
+                                            objectFit: 'contain',
+                                            display: 'block'
+                                        }}
+                                    />
+                                </div>
+                                <div style={{
+                                    background: 'rgba(15, 28, 46, 0.95)',
+                                    padding: '24px 32px',
+                                    borderTop: '1px solid rgba(255,255,255,0.08)'
+                                }}>
+                                    <div style={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                        marginBottom: '8px'
+                                    }}>
+                                        <h3 style={{
+                                            color: '#ffffff',
+                                            margin: 0,
+                                            fontSize: '1.25rem',
+                                            fontWeight: '700',
+                                            fontFamily: 'var(--font-body)'
+                                        }}>
+                                            {filteredGalleryItems[lightboxIndex].title}
+                                        </h3>
+                                        <span style={{
+                                            fontSize: '0.78rem',
+                                            color: '#e7f3f5',
+                                            fontWeight: '600',
+                                            background: 'rgba(255,255,255,0.08)',
+                                            padding: '4px 12px',
+                                            borderRadius: '20px',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '1px'
+                                        }}>
+                                            {filteredGalleryItems[lightboxIndex].categoryName}
+                                        </span>
+                                    </div>
+                                    <p style={{
+                                        color: '#cbd5e1',
+                                        margin: 0,
+                                        fontSize: '0.9rem',
+                                        lineHeight: '1.6',
+                                        fontWeight: '300'
+                                    }}>
+                                        {filteredGalleryItems[lightboxIndex].desc}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </section>
+
             {/* ── NEW SECTION: INUIT CULTURAL EXPERIENCES (inline CSS) ── */}
             <section style={{
                 background: 'linear-gradient(135deg, #0f1c2e 0%, #152638 50%, #0f1c2e 100%)',
@@ -997,7 +1905,7 @@ function HXExpeditionsGreenland() {
                     }}>
                         <iframe
                             width="100%" height="100%"
-                            src="https://www.youtube.com/embed/qUpr3evauEc"
+                            src="https://www.youtube.com/embed/YhsofzgzlEA"
                             title="Experience Greenland with HX Expeditions"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1339,6 +2247,173 @@ function HXExpeditionsGreenland() {
                 </div>
             </section>
 
+            {/* ── NEW LANDSCAPE BANNERS: SEASONS OF GREENLAND ── */}
+            <section style={{
+                padding: '0 20px 80px',
+                background: '#f8fafc',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                <div style={{
+                    maxWidth: '1100px',
+                    margin: '0 auto'
+                }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr',
+                        gap: '30px'
+                    }}>
+                        {/* Card 1: Baffin Bay Zodiac Ice Cruising */}
+                        <div style={{
+                            position: 'relative',
+                            borderRadius: '24px',
+                            overflow: 'hidden',
+                            aspectRatio: '16/10',
+                            boxShadow: '0 20px 40px rgba(15,28,46,0.1)',
+                            border: '1px solid rgba(39,68,114,0.1)'
+                        }}>
+                            <img 
+                                src={imgZodiacIce} 
+                                alt="Zodiac Cruising among Baffin Bay Icebergs" 
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.8s ease'
+                                }}
+                                className="greenland-seasonal-banner-img"
+                            />
+                            <div style={{
+                                position: 'absolute',
+                                top: 0, left: 0, right: 0, bottom: 0,
+                                background: 'linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, rgba(15, 28, 46, 0.4) 60%, rgba(15, 28, 46, 0.1) 100%)',
+                                display: 'flex',
+                                alignItems: 'flex-end',
+                                padding: '30px',
+                                zIndex: 2
+                            }}>
+                                <div>
+                                    <span style={{
+                                        display: 'inline-block',
+                                        background: 'rgba(255, 255, 255, 0.2)',
+                                        backdropFilter: 'blur(8px)',
+                                        WebkitBackdropFilter: 'blur(8px)',
+                                        color: '#ffffff',
+                                        fontSize: '9px',
+                                        fontWeight: '700',
+                                        letterSpacing: '2px',
+                                        padding: '4px 12px',
+                                        borderRadius: '20px',
+                                        marginBottom: '12px',
+                                        textTransform: 'uppercase',
+                                        border: '1px solid rgba(255,255,255,0.1)'
+                                    }}>
+                                        SAVISSIVIK EXPEDITION
+                                    </span>
+                                    <h3 style={{
+                                        color: '#ffffff',
+                                        fontFamily: 'var(--font-display)',
+                                        fontSize: 'clamp(1.2rem, 2vw, 1.6rem)',
+                                        fontWeight: '600',
+                                        lineHeight: '1.3',
+                                        margin: '0 0 8px'
+                                    }}>
+                                        Zodiac Cruising in Baffin Bay
+                                    </h3>
+                                    <p style={{
+                                        color: '#cbd5e1',
+                                        fontSize: '0.88rem',
+                                        lineHeight: '1.5',
+                                        margin: 0,
+                                        fontWeight: '300'
+                                    }}>
+                                        Navigate deep between colossal icebergs and glassy, reflection-filled waters in custom-built Zodiac craft.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Card 2: Cultural Performance at Uummannaq */}
+                        <div style={{
+                            position: 'relative',
+                            borderRadius: '24px',
+                            overflow: 'hidden',
+                            aspectRatio: '16/10',
+                            boxShadow: '0 20px 40px rgba(15,28,46,0.1)',
+                            border: '1px solid rgba(39,68,114,0.1)'
+                        }}>
+                            <img 
+                                src={imgPerformance} 
+                                alt="Inuit Cultural Performance in Uummannaq" 
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    transition: 'transform 0.8s ease'
+                                }}
+                                className="greenland-seasonal-banner-img"
+                            />
+                            <div style={{
+                                position: 'absolute',
+                                top: 0, left: 0, right: 0, bottom: 0,
+                                background: 'linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, rgba(15, 28, 46, 0.4) 60%, rgba(15, 28, 46, 0.1) 100%)',
+                                display: 'flex',
+                                alignItems: 'flex-end',
+                                padding: '30px',
+                                zIndex: 2
+                            }}>
+                                <div>
+                                    <span style={{
+                                        display: 'inline-block',
+                                        background: 'rgba(255, 255, 255, 0.2)',
+                                        backdropFilter: 'blur(8px)',
+                                        WebkitBackdropFilter: 'blur(8px)',
+                                        color: '#ffffff',
+                                        fontSize: '9px',
+                                        fontWeight: '700',
+                                        letterSpacing: '2px',
+                                        padding: '4px 12px',
+                                        borderRadius: '20px',
+                                        marginBottom: '12px',
+                                        textTransform: 'uppercase',
+                                        border: '1px solid rgba(255,255,255,0.1)'
+                                    }}>
+                                        UUMMANNAQ CULTURE
+                                    </span>
+                                    <h3 style={{
+                                        color: '#ffffff',
+                                        fontFamily: 'var(--font-display)',
+                                        fontSize: 'clamp(1.2rem, 2vw, 1.6rem)',
+                                        fontWeight: '600',
+                                        lineHeight: '1.3',
+                                        margin: '0 0 8px'
+                                    }}>
+                                        Traditional Inuit Performances
+                                    </h3>
+                                    <p style={{
+                                        color: '#cbd5e1',
+                                        fontSize: '0.88rem',
+                                        lineHeight: '1.5',
+                                        margin: 0,
+                                        fontWeight: '300'
+                                    }}>
+                                        Experience Greenlandic drum dances, storytelling, and local cultural performances in remote coastal settlements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <style>{`
+                    .greenland-seasonal-banner-img:hover {
+                        transform: scale(1.03);
+                    }
+                `}</style>
+            </section>
+
             {/* ── COMMON MISTAKES SLIDER ── */}
             <section
                 className="medi-mistakes-slider-section"
@@ -1460,7 +2535,31 @@ function HXExpeditionsGreenland() {
                 </div>
             </section>
 
-         
+             {/* ── VIDEO SHOWCASE ── */}
+            <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    
+                    <div style={{
+                        maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden',
+                        boxShadow: '0 20px 40px rgba(15,28,46,0.12)',
+                        border: '1px solid rgba(39,68,114,0.1)',
+                        aspectRatio: '16/9', background: '#000'
+                    }}>
+                        <iframe
+                            width="100%" height="100%"
+                            src="https://www.youtube.com/embed/WrIEeRZxVq8"
+                            title="Experience Greenland with HX Expeditions"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ── */}
             <section className="medi-authority-section">
