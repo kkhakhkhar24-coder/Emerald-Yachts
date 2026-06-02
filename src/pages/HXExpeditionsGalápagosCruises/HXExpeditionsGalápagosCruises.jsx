@@ -12,7 +12,8 @@ import {
     Camera,
     Snowflake,
     Sun,
-    Check
+    Check,
+    Waves
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -32,7 +33,7 @@ import Image4 from '../../assets/HXExpeditionsSvalbardCruises/Image_4.jpg'
 import Image5 from '../../assets/HXExpeditionsSvalbardCruises/Image_5.jpg'
 import Image6 from '../../assets/HXExpeditionsSvalbardCruises/Image_6.jpg'
 
-function HXExpeditionsSvalbardCruises() {
+function HXExpeditionsGalapagosCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [hero1, hero2, hero3]
 
@@ -62,6 +63,8 @@ function HXExpeditionsSvalbardCruises() {
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
 
     const hxItineraryImages = [MS_Fram, MS_Spitsbergen, MS_Roald_Amundsen]
+
+    const MS_Santa_Cruz_II_Placeholder = ""; // This will show the dark blue background until you add an image
 
     const hxArcticShips = [
         {
@@ -96,66 +99,66 @@ function HXExpeditionsSvalbardCruises() {
         }
     ];
 
-    const svalbardFaqs = [
+    const galapagosFaqs = [
         {
-            question: "Can you see polar bears in Svalbard?",
-            answer: "Yes. Svalbard is one of the best places in the world to potentially see polar bears in the wild."
+            question: "Is the Galápagos worth visiting?",
+            answer: "Absolutely. The Galápagos is widely considered one of the world’s greatest wildlife destinations, offering a unique opportunity to witness evolution in real-time."
         },
         {
-            question: "What is the best month for Svalbard cruises?",
-            answer: "July and August are often ideal for wildlife activity and milder Arctic conditions."
+            question: "What wildlife can you see in the Galápagos?",
+            answer: "Travelers commonly see giant tortoises, sea lions, marine iguanas, penguins, blue-footed boobies, and a vast array of unique bird and marine life."
         },
         {
-            question: "Is Svalbard worth visiting?",
-            answer: "Absolutely. Svalbard offers one of the world’s most unique Arctic expedition experiences."
+            question: "What is MS Santa Cruz II like?",
+            answer: "MS Santa Cruz II is a comfortable small expedition ship specifically designed for Galápagos exploration, balancing modern amenities with a focus on environmental responsibility."
         },
         {
-            question: "What wildlife can you see in Svalbard?",
-            answer: "Polar bears, walrus, whales, Arctic foxes, seals and seabirds are common wildlife highlights."
+            question: "What is the best month for Galápagos cruises?",
+            answer: "The Galápagos is a year-round destination. The warm season (December–May) offers calmer seas, while the cool season (June–November) brings more active marine life."
         },
         {
-            question: "What is the midnight sun?",
-            answer: "The midnight sun occurs when the Arctic experiences continuous daylight during summer months."
+            question: "Are Galápagos cruises good for first timers?",
+            answer: "Yes. Because the wildlife is so accessible and the waters are generally protected, it is an excellent entry point for travelers new to expedition-style travel."
         },
         {
-            question: "Are Svalbard cruises cold?",
-            answer: "Yes, but summer temperatures are often milder than many travelers expect."
+            question: "Are HX Galápagos cruises luxury cruises?",
+            answer: "HX focuses on 'Expedition Comfort.' The ships are modern and upscale, but the priority is immersive discovery and scientific education rather than traditional white-glove luxury."
         },
         {
-            question: "Are HX Arctic cruises luxury cruises?",
-            answer: "HX focuses more on expedition comfort and exploration than traditional ultra luxury cruising."
+            question: "What should I pack for the Galápagos?",
+            answer: "Lightweight, breathable clothing, high-SPF sun protection, swimwear, sturdy walking shoes, and a light jacket for cooler evenings are essential."
         },
         {
-            question: "Do Svalbard cruises include Zodiac landings?",
-            answer: "Most expedition cruises include Zodiac excursions and exploration opportunities."
+            question: "Do Galápagos cruises include snorkeling?",
+            answer: "Yes. Most HX itineraries include multiple snorkeling opportunities to see sea turtles, sea lions, and tropical fish."
         },
         {
-            question: "What should I pack for Svalbard cruises?",
-            answer: "Layered thermal clothing, waterproof outerwear and cold weather accessories are essential."
+            question: "Can you see sea lions in the Galápagos?",
+            answer: "Yes. Sea lion encounters are one of the most frequent and playful highlights of any Galápagos expedition."
         },
         {
-            question: "Can you see whales in Svalbard?",
-            answer: "Yes. Depending on the season, travelers may see humpback whales, belugas and other marine wildlife."
+            question: "Are Galápagos cruises physically demanding?",
+            answer: "Most travelers need only moderate mobility for walking excursions on uneven terrain and boarding Zodiacs from the water."
         },
         {
-            question: "Do you need to be physically fit for Arctic cruises?",
-            answer: "Moderate mobility is important for Zodiac boarding and outdoor exploration."
+            question: "Is the Galápagos safe for travelers?",
+            answer: "Yes. The Galápagos is a highly regulated National Park and is considered very safe for international tourism."
         },
         {
-            question: "Are Arctic expedition cruises safe?",
-            answer: "Yes. Professional expedition teams and strict safety standards make Arctic cruises very safe."
+            question: "How long should a Galápagos cruise be?",
+            answer: "Most travelers find that 5 to 10 days provides the ideal balance of island variety and relaxation."
         },
         {
-            question: "How far in advance should Svalbard cruises be booked?",
-            answer: "Ideally 12 to 18 months ahead for best cabin availability and pricing."
+            question: "Can you see whales in the Galápagos?",
+            answer: "Whale sightings are possible, especially during the cooler months (June–November) when nutrient-rich currents attract marine mammals."
         },
         {
-            question: "What makes Svalbard different from Alaska cruises?",
-            answer: "Svalbard offers a much more remote and wildlife focused High Arctic expedition experience."
+            question: "Why are small ships better in the Galápagos?",
+            answer: "Small ships access more remote landing areas, have less environmental impact, and provide a more intimate, educational atmosphere."
         },
         {
-            question: "Why should I use a travel advisor for Arctic expeditions?",
-            answer: "Expert guidance helps travelers choose the right ship, season, itinerary and expedition style."
+            question: "Why should I use a travel advisor for Galápagos cruises?",
+            answer: "Expert guidance from Trips & Ships Luxury Travel helps you navigate complex National Park regulations and choose the perfect ship and season for your interests."
         }
     ];
 
@@ -234,7 +237,7 @@ function HXExpeditionsSvalbardCruises() {
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": svalbardFaqs.map(faq => ({
+                "mainEntity": galapagosFaqs.map(faq => ({
                     "@type": "Question",
                     "name": faq.question,
                     "acceptedAnswer": {
@@ -270,16 +273,16 @@ function HXExpeditionsSvalbardCruises() {
                 <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag">
-                        <Compass size={16} />
-                        <span>Polar Bears, Arctic Wildlife & Midnight Sun Expeditions</span>
+                        <Microscope size={16} />
+                        <span>Darwin’s Living Laboratory & Small Ship Discovery</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        HX Expeditions Svalbard Cruises
+                        HX Expeditions Galápagos Cruises
                     </h1>
                 </div>
             </section>
 
-            {/* PREMIUM INTRO SECTION - SVALBARD EXPEDITION FULL CONTENT */}
+            {/* PREMIUM INTRO SECTION - GALÁPAGOS EXPEDITION FULL CONTENT */}
             <section className="medi-intro-section medi-premium-intro-section">
                 {/* STYLE BLOCK: Handles the hover interaction for icons */}
                 <style>{`
@@ -321,7 +324,7 @@ function HXExpeditionsSvalbardCruises() {
                                 borderLeft: window.innerWidth <= 1024 ? 'none' : '2px solid #274472',
                                 paddingLeft: window.innerWidth <= 1024 ? '0' : '10px'
                             }}>
-                                HIGH ARCTIC DISCOVERY
+                                DARWIN'S LIVING LABORATORY
                             </span>
 
                             {/* HEADING */}
@@ -331,7 +334,7 @@ function HXExpeditionsSvalbardCruises() {
                                 lineHeight: '1.2',
                                 margin: '0 0 20px 0'
                             }}>
-                                Explore One Of The World’s Last Great Wilderness Regions
+                                Experience One Of The World’s Greatest Wildlife Destinations
                             </h2>
 
                             <div className="medi-premium-separator" style={{
@@ -343,14 +346,17 @@ function HXExpeditionsSvalbardCruises() {
                             }}></div>
 
                             <p className="medi-premium-lead-text" style={{ fontSize: '18px', lineHeight: '1.8', color: '#475569', marginBottom: '24px' }}>
-                                Svalbard is one of the most extraordinary expedition cruise destinations on Earth. Located far above the Arctic Circle between mainland Norway and the North Pole, this remote Arctic archipelago delivers dramatic glaciers, towering ice formations, wildlife rich fjords and some of the planet’s best opportunities to see polar bears in the wild.
+                                The Galápagos Islands are one of the most remarkable wildlife destinations on Earth. Located off the coast of Ecuador, this protected archipelago offers travelers the opportunity to encounter giant tortoises, blue footed boobies, marine iguanas, sea lions and countless other species found nowhere else in the world.
                             </p>
 
                             <p className="medi-premium-lead-text" style={{ fontSize: '18px', lineHeight: '1.8', color: '#475569', marginBottom: '24px' }}>
-                                HX Expeditions Svalbard cruises are designed for travelers who want true Arctic exploration rather than traditional sightseeing cruises. These journeys focus on immersive small ship experiences, Zodiac landings, wildlife encounters and expert led expedition travel deep into the High Arctic.
+                                For travelers seeking immersive nature focused exploration, HX Expeditions Galápagos cruises deliver an experience far beyond traditional cruising. These journeys combine small ship exploration, expert naturalist guidance and extraordinary wildlife encounters in one of the planet’s most protected ecosystems.
                             </p>
 
                             <div className="medi-immersion-list-wrapper" style={{ width: '100%', marginBottom: '24px' }}>
+                                <p className="medi-immersion-lead-in" style={{ fontSize: '17px', color: '#1e293b', marginBottom: '24px', fontWeight: '600' }}>
+                                    Immersion Through Discovery:
+                                </p>
                                 <div className="medi-immersion-cards-grid" style={{
                                     display: 'grid',
                                     gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)',
@@ -358,10 +364,10 @@ function HXExpeditionsSvalbardCruises() {
                                     textAlign: 'left'
                                 }}>
                                     {[
-                                        { t: "Polar Bear Viewing", i: <Compass size={20} /> },
-                                        { t: "Glacial Exploration", i: <Anchor size={20} /> },
-                                        { t: "Wildlife Encounters", i: <MapPin size={20} /> },
-                                        { t: "Expert-Led Travel", i: <GraduationCap size={20} /> }
+                                        { t: "Expert Naturalists", i: <GraduationCap size={20} /> },
+                                        { t: "Wildlife Immersion", i: <Microscope size={20} /> },
+                                        { t: "Conservation Focus", i: <Heart size={20} /> },
+                                        { t: "Small Ship Access", i: <Ship size={20} /> }
                                     ].map((item, idx) => (
                                         <div key={idx} className="medi-immersion-card-item">
                                             <div className="medi-immersion-icon-box" style={{ transition: 'all 0.3s ease' }}>
@@ -374,7 +380,7 @@ function HXExpeditionsSvalbardCruises() {
                             </div>
 
                             <p className="medi-premium-lead-text" style={{ fontSize: '18px', lineHeight: '1.8', color: '#475569' }}>
-                                For many luxury travelers, Svalbard becomes a transformational expedition experience combining adventure, wildlife and remote exploration in a way few destinations can match.
+                                Unlike large cruise vacations, Galápagos expedition cruises are built around destination immersion, conservation and up close exploration.
                             </p>
                         </div>
 
@@ -390,17 +396,17 @@ function HXExpeditionsSvalbardCruises() {
                                         <Star size={24} className="medi-star-accent" />
                                     </div>
                                     <div>
-                                        <span className="medi-expert-card-subtitle">ARCTIC AUTHORITY</span>
+                                        <span className="medi-expert-card-subtitle">GALÁPAGOS AUTHORITY</span>
                                         <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
                                     </div>
                                 </div>
                                 <p className="medi-premium-expert-desc" style={{ color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>
-                                    At Trips & Ships Luxury Travel, we help travelers select the right Arctic expedition itinerary, ship and season based on wildlife goals, comfort expectations and desired expedition depth.
+                                    At Trips & Ships Luxury Travel, we help travelers choose the right Galápagos itinerary, season and cabin experience based on wildlife priorities, activity levels and comfort expectations.
                                 </p>
                                 <div className="medi-premium-expert-quote-box">
                                     <span className="medi-quote-mark" style={{ color: '#274472' }}>“</span>
                                     <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
-                                        With more than 40 years in the travel industry and travel experience across 121+ countries, Angela Hughes and the Trips & Ships Luxury Travel team provide expert Arctic cruise guidance travelers can trust.
+                                        With more than 40 years in the travel industry and travel experience across 121+ countries, Angela Hughes and the Trips & Ships Luxury Travel team provide trusted luxury expedition expertise travelers can rely on.
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +415,7 @@ function HXExpeditionsSvalbardCruises() {
                 </div>
             </section>
 
-            {/* WHY SVALBARD IS THE BEST ARCTIC DESTINATION */}
+            {/* WHY THE GALÁPAGOS IS DIFFERENT FROM ANYWHERE ELSE */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
@@ -424,7 +430,7 @@ function HXExpeditionsSvalbardCruises() {
                             display: 'block',
                             marginBottom: '10px'
                         }}>
-                            Arctic Destination Profile
+                            Galápagos Destination Profile
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(30px, 5vw, 42px)',
@@ -434,7 +440,7 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            Why Svalbard Is One Of The Best <br /> Arctic Expedition Destinations
+                            Why The Galápagos Is Different <br /> From Anywhere Else
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
@@ -448,7 +454,7 @@ function HXExpeditionsSvalbardCruises() {
                             marginBottom: '30px',
                             textAlign: 'center'
                         }}>
-                            Svalbard offers a rare combination of:
+                            The Galápagos Islands inspired Charles Darwin’s theory of evolution and remain one of the world’s most biologically unique environments. Travelers regularly encounter:
                         </p>
 
                         <div style={{
@@ -457,13 +463,15 @@ function HXExpeditionsSvalbardCruises() {
                             gap: '20px'
                         }}>
                             {[
-                                { t: "Polar bear viewing opportunities", i: <Compass size={20} /> },
-                                { t: "Massive glaciers", i: <Anchor size={20} /> },
-                                { t: "Arctic wildlife", i: <Users size={20} /> },
-                                { t: "Remote landscapes", i: <Globe size={20} /> },
-                                { t: "Midnight sun experiences", i: <Sun size={20} /> },
-                                { t: "Small ship expedition access", i: <Ship size={20} /> },
-                                { t: "Extraordinary photography", i: <Sparkles size={20} /> }
+                                { t: "Giant tortoises", i: <Clock size={20} /> },
+                                { t: "Blue footed boobies", i: <Camera size={20} /> },
+                                { t: "Marine iguanas", i: <Sun size={20} /> },
+                                { t: "Sea lions", i: <Heart size={20} /> },
+                                { t: "Frigatebirds", i: <Compass size={20} /> },
+                                { t: "Penguins", i: <Snowflake size={20} /> },
+                                { t: "Hammerhead sharks", i: <Gem size={20} /> },
+                                { t: "Dolphins", i: <Music size={20} /> },
+                                { t: "Sea turtles", i: <Waves size={20} /> }
                             ].map((item, idx) => (
                                 <div key={idx} style={{
                                     display: 'flex',
@@ -499,12 +507,12 @@ function HXExpeditionsSvalbardCruises() {
                             boxShadow: '0 20px 40px rgba(15, 28, 46, 0.1)'
                         }}>
                             <h3 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '20px', color: '#3b82f6' }}>
-                                Genuinely Remote Exploration
+                                Accessibility of the Wildlife
                             </h3>
                             <p style={{ fontSize: '16px', lineHeight: '1.8', color: '#cbd5e1', margin: 0 }}>
-                                Unlike larger cruise destinations, Svalbard remains genuinely remote and lightly visited.
-                                Small expedition ships can navigate into narrow fjords, ice edges, and isolated Arctic
-                                environments that are completely inaccessible to larger vessels.
+                                What makes the Galápagos so extraordinary is the accessibility of the wildlife.
+                                Wildlife in the Galápagos often shows little fear of humans, creating unusually
+                                close and memorable encounters. The destinations themselves become the experience.
                             </p>
                         </div>
 
@@ -529,7 +537,7 @@ function HXExpeditionsSvalbardCruises() {
                                 borderLeft: '4px solid #3b82f6',
                                 paddingLeft: '20px'
                             }}>
-                                "For travelers seeking authentic expedition travel, Svalbard represents one of the purest Arctic experiences available."
+                                "For many travelers, the Galápagos becomes one of the most emotionally impactful wildlife experiences in the world."
                             </p>
                         </div>
                     </div>
@@ -699,7 +707,7 @@ function HXExpeditionsSvalbardCruises() {
                 </div>
             </section>
 
-            {/* WHY CHOOSE HX EXPEDITIONS FOR SVALBARD SECTION */}
+            {/* WHY CHOOSE HX EXPEDITIONS FOR GALÁPAGOS SECTION */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#e6edf7', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
@@ -724,7 +732,7 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            Why Choose HX Expeditions For Svalbard Cruises?
+                            Why Choose HX Expeditions For Galápagos Cruises?
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{
@@ -735,7 +743,7 @@ function HXExpeditionsSvalbardCruises() {
                             lineHeight: '1.7',
                             fontWeight: '500'
                         }}>
-                            HX Expeditions has decades of polar expedition experience and operates purpose-built expedition ships designed specifically for Arctic exploration.
+                            HX Expeditions combines expedition expertise with environmentally conscious small ship exploration in one of the world's most delicate ecosystems.
                         </p>
                     </div>
 
@@ -756,20 +764,20 @@ function HXExpeditionsSvalbardCruises() {
                         }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '25px' }}>
                                 <div style={{ width: '48px', height: '48px', borderRadius: '14px', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <Compass size={24} style={{ color: '#3b82f6' }} />
+                                    <Microscope size={24} style={{ color: '#3b82f6' }} />
                                 </div>
-                                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>The Experience Focus</h3>
+                                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>Wildlife & Immersion</h3>
                             </div>
 
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {[
-                                    "Wildlife encounters",
-                                    "Polar education",
-                                    "Expedition landings",
-                                    "Science focused enrichment",
-                                    "Flexible daily exploration",
-                                    "Small group experiences",
-                                    "Arctic immersion"
+                                    "Wildlife immersion",
+                                    "Conservation education",
+                                    "Guided island landings",
+                                    "Expert naturalist lectures",
+                                    "Zodiac exploration",
+                                    "Snorkeling experiences",
+                                    "Small group excursions"
                                 ].map((item, i) => (
                                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '16px', color: '#475569', fontWeight: '500' }}>
                                         <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
@@ -778,7 +786,7 @@ function HXExpeditionsSvalbardCruises() {
                             </ul>
                         </div>
 
-                        {/* Pillar 2: Adaptive Itineraries */}
+                        {/* Pillar 2: Responsible Tourism */}
                         <div style={{
                             backgroundColor: '#ffffff',
                             borderRadius: window.innerWidth <= 360 ? '18px' : '30px',
@@ -788,21 +796,21 @@ function HXExpeditionsSvalbardCruises() {
                         }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '25px' }}>
                                 <div style={{ width: '48px', height: '48px', borderRadius: '14px', backgroundColor: '#0f1c2e', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <Anchor size={24} style={{ color: '#ffffff' }} />
+                                    <Globe size={24} style={{ color: '#ffffff' }} />
                                 </div>
-                                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>Adaptive Itineraries</h3>
+                                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>Regulated Discovery</h3>
                             </div>
 
                             <p style={{ fontSize: '16px', color: '#64748b', lineHeight: '1.6', marginBottom: '20px' }}>
-                                Unlike conventional cruises, expedition itineraries are often adjusted based on current environmental factors:
+                                The Galápagos National Park strictly limits visitor access and regulates tourism to ensure the protection of the archipelago:
                             </p>
 
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {[
-                                    "Sea ice conditions",
-                                    "Wildlife sightings",
-                                    "Weather patterns",
-                                    "Expedition opportunities"
+                                    "Regulated visitor access",
+                                    "Sustainable tourism practices",
+                                    "Strict conservation protocols",
+                                    "Environmental impact monitoring"
                                 ].map((item, i) => (
                                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '16px', color: '#475569', fontWeight: '600' }}>
                                         <div style={{ width: '6px', height: '6px', backgroundColor: '#3b82f6', borderRadius: '50%' }}></div>
@@ -813,7 +821,7 @@ function HXExpeditionsSvalbardCruises() {
 
                             <div style={{ marginTop: '25px', padding: '20px', backgroundColor: '#f8fafc', borderRadius: '16px', borderLeft: '4px solid #0f1c2e' }}>
                                 <p style={{ fontSize: '15px', color: '#0f1c2e', fontWeight: '600', margin: 0, lineHeight: '1.5' }}>
-                                    This creates a far more authentic and unpredictable connection to the Arctic.
+                                    "Small ship expedition travel is one of the best ways to responsibly experience the islands."
                                 </p>
                             </div>
                         </div>
@@ -829,7 +837,7 @@ function HXExpeditionsSvalbardCruises() {
                         boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
                     }}>
                         <p style={{ fontSize: '19px', color: '#ffffff', lineHeight: '1.7', margin: 0, fontWeight: '700', fontStyle: 'italic' }}>
-                            "This flexibility creates a far more dynamic and immersive Arctic experience."
+                            "HX itineraries are designed to maximize wildlife encounters while supporting sustainable tourism practices."
                         </p>
                     </div>
                 </div>
@@ -903,9 +911,9 @@ function HXExpeditionsSvalbardCruises() {
                 </div>
             </section>
 
-            {/* THE MIDNIGHT SUN EXPERIENCE SECTION */}
+            {/* WILDLIFE EXPERIENCES IN THE GALÁPAGOS - 4-4 GRID DESIGN */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
-                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
                     {/* Header Block */}
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
@@ -918,7 +926,7 @@ function HXExpeditionsSvalbardCruises() {
                             display: 'block',
                             marginBottom: '10px'
                         }}>
-                            Arctic Phenomena
+                            Wildlife Destinations
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(30px, 5vw, 42px)',
@@ -928,7 +936,7 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            The Midnight Sun Experience
+                            Wildlife Experiences In The Galápagos
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{
@@ -939,11 +947,11 @@ function HXExpeditionsSvalbardCruises() {
                             lineHeight: '1.6',
                             fontWeight: '500'
                         }}>
-                            One of the most magical aspects of summer Svalbard cruises is the midnight sun.
+                            Wildlife is the defining reason travelers visit the Galápagos Islands.
                         </p>
                     </div>
 
-                    {/* Feature Grid */}
+                    {/* 4-4 BALANCED GRID */}
                     <div style={{ marginBottom: '60px' }}>
                         <p style={{
                             fontSize: '16px',
@@ -954,46 +962,60 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '1px',
                             marginBottom: '40px'
                         }}>
-                            During Arctic summer, the sun never fully sets, creating:
+                            Depending on the itinerary and season, guests may experience:
                         </p>
 
                         <div style={{
                             display: 'grid',
-                            gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(auto-fit, minmax(200px, 1fr))',
-                            gap: '20px'
+                            // Desktop: 4 columns | Tablet: 2 columns | Mobile: 1 column
+                            gridTemplateColumns: window.innerWidth > 1024 ? 'repeat(4, 1fr)' : window.innerWidth > 640 ? 'repeat(2, 1fr)' : '1fr',
+                            gap: '25px'
                         }}>
                             {[
-                                { t: "Extended exploration hours", i: <Clock size={20} /> },
-                                { t: "Extraordinary photography lighting", i: <Sparkles size={20} /> },
-                                { t: "Continuous daylight", i: <Sun size={20} /> },
-                                { t: "Unique Arctic scenery", i: <Globe size={20} /> },
-                                { t: "Flexible wildlife opportunities", i: <Compass size={20} /> }
+                                { t: "Snorkeling with sea lions", i: <Waves size={22} /> },
+                                { t: "Giant tortoise encounters", i: <Clock size={22} /> },
+                                { t: "Penguin sightings", i: <Snowflake size={22} /> },
+                                { t: "Birdwatching excursions", i: <Compass size={22} /> },
+                                { t: "Marine iguana colonies", i: <Sun size={22} /> },
+                                { t: "Sea turtle sightings", i: <Anchor size={22} /> },
+                                { t: "Dolphin encounters", i: <Music size={22} /> },
+                                { t: "Reef shark sightings", i: <Gem size={22} /> }
                             ].map((item, idx) => (
                                 <div key={idx} style={{
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
                                     textAlign: 'center',
-                                    padding: '30px 20px',
+                                    padding: '35px 25px',
                                     backgroundColor: '#f8fafc',
-                                    borderRadius: '20px',
+                                    borderRadius: '24px',
                                     border: '1px solid #e2e8f0',
-                                    transition: 'all 0.3s ease'
-                                }}>
+                                    transition: 'all 0.3s ease',
+                                    boxShadow: '0 4px 15px rgba(0,0,0,0.02)'
+                                }}
+                                    className="hx-wildlife-card"
+                                >
                                     <div style={{
                                         color: '#3b82f6',
-                                        marginBottom: '15px',
-                                        backgroundColor: '#eff6ff',
-                                        width: '50px',
-                                        height: '50px',
-                                        borderRadius: '50%',
+                                        marginBottom: '20px',
+                                        backgroundColor: '#ffffff',
+                                        width: '56px',
+                                        height: '56px',
+                                        borderRadius: '16px',
                                         display: 'flex',
                                         alignItems: 'center',
-                                        justifyContent: 'center'
+                                        justifyContent: 'center',
+                                        boxShadow: '0 10px 20px rgba(59, 130, 246, 0.1)'
                                     }}>
                                         {item.i}
                                     </div>
-                                    <span style={{ fontSize: '15px', fontWeight: '700', color: '#0f1c2e', lineHeight: '1.4' }}>
+                                    <span style={{
+                                        fontSize: '16px',
+                                        fontWeight: '700',
+                                        color: '#0f1c2e',
+                                        lineHeight: '1.4',
+                                        maxWidth: '180px'
+                                    }}>
                                         {item.t}
                                     </span>
                                 </div>
@@ -1012,40 +1034,144 @@ function HXExpeditionsSvalbardCruises() {
                         position: 'relative',
                         overflow: 'hidden'
                     }}>
-                        {/* Visual glow effect */}
-                        <div style={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            width: '100%',
-                            height: '100%',
-                            background: 'radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%)',
-                            zIndex: 0
-                        }}></div>
-
                         <div style={{ position: 'relative', zIndex: 1 }}>
                             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                                <Sparkles size={32} style={{ color: '#3b82f6' }} />
+                                <Camera size={32} style={{ color: '#3b82f6' }} />
                             </div>
                             <p style={{
                                 fontSize: 'clamp(18px, 3vw, 24px)',
                                 color: '#ffffff',
                                 fontWeight: '600',
                                 lineHeight: '1.5',
-                                margin: '0 auto',
+                                margin: '0 auto 20px',
                                 maxWidth: '900px',
                                 fontFamily: 'serif',
                                 fontStyle: 'italic'
                             }}>
-                                "The golden Arctic light during late evening hours creates some of the most beautiful expedition photography conditions in the world."
+                                "The islands are often described as one of the best wildlife photography destinations in the world."
+                            </p>
+                            <p style={{
+                                fontSize: '16px',
+                                color: '#cbd5e1',
+                                lineHeight: '1.7',
+                                margin: '0 auto',
+                                maxWidth: '850px'
+                            }}>
+                                Because the Galápagos ecosystem is highly protected, expedition experiences feel intimate, authentic and educational rather than commercialized.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* BEST TIME TO CRUISE SVALBARD - SEASONAL ANALYSIS */}
+            {/* HX GALÁPAGOS SHIP SPOTLIGHT - MS SANTA CRUZ II */}
+            <section className="medi-itinerary-showcase-section">
+                <div className="medi-itinerary-showcase-container">
+
+                    <div className="medi-itinerary-showcase-header">
+                        <span className="medi-itinerary-eyebrow">
+                            THE GALÁPAGOS FLEET
+                        </span>
+                        <h2 className="medi-itinerary-showcase-heading">
+                            HX Expedition Ships In The Galápagos
+                        </h2>
+                        <div className="medi-itinerary-showcase-separator"></div>
+                    </div>
+
+                    <div className="medi-itinerary-dashboard" style={{ display: 'block' }}>
+                        <div className="medi-itinerary-showcase-card" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+                            {/* SHIP IMAGE WRAPPER */}
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
+                                {/* Replace with your Santa Cruz II image asset when ready */}
+                                <img
+                                    src={MS_Santa_Cruz_II_Placeholder} // Ensure you define/import this or use a placeholder
+                                    alt="MS Santa Cruz II"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
+                                />
+                                <div className="medi-itinerary-showcase-img-overlay"></div>
+                                <span className="medi-itinerary-showcase-badge">
+                                    FEATURED EXPEDITION VESSEL
+                                </span>
+                            </div>
+
+                            <div className="medi-itinerary-showcase-body">
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                                    <Ship size={28} style={{ color: '#3b82f6' }} />
+                                    <h3 className="medi-itinerary-showcase-title" style={{ margin: 0 }}>
+                                        MS Santa Cruz II
+                                    </h3>
+                                </div>
+
+                                <p style={{ color: '#475569', fontSize: '16px', marginBottom: '25px', lineHeight: '1.7' }}>
+                                    HX Expeditions operates the MS Santa Cruz II in the Galápagos Islands, a purpose-built small expedition ship specifically designed for Galápagos exploration.
+                                </p>
+
+                                <div className="medi-itinerary-details-grid">
+                                    {/* LEFT COLUMN: FEATURES */}
+                                    <div className="medi-itinerary-details-col">
+                                        <h4 className="medi-itinerary-details-heading">
+                                            The MS Santa Cruz II offers:
+                                        </h4>
+                                        <ul className="medi-itinerary-details-list">
+                                            {[
+                                                "Small ship access",
+                                                "Comfortable expedition accommodations",
+                                                "Observation decks",
+                                                "Naturalist led excursions",
+                                                "Zodiac operations",
+                                                "Educational programming",
+                                                "Sustainable expedition practices"
+                                            ].map((item, i) => (
+                                                <li key={i}>
+                                                    <CheckCircle size={14} className="medi-itinerary-detail-icon" />
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    {/* RIGHT COLUMN: AUDIENCE FIT */}
+                                    <div className="medi-itinerary-details-col">
+                                        <h4 className="medi-itinerary-details-heading">
+                                            Best For:
+                                        </h4>
+                                        <div className="medi-itinerary-details-chips">
+                                            {[
+                                                "Wildlife lovers",
+                                                "First time expedition travelers",
+                                                "Nature photographers",
+                                                "Small ship cruise enthusiasts",
+                                                "Travelers seeking educational exploration"
+                                            ].map((item, i) => (
+                                                <span key={i} className="medi-itinerary-details-chip">
+                                                    <Sparkles size={12} className="medi-itinerary-chip-icon" />
+                                                    <span>{item}</span>
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* ADVANTAGE CALLOUT */}
+                                <div style={{
+                                    marginTop: '30px',
+                                    padding: '20px 25px',
+                                    backgroundColor: '#f8fafc',
+                                    borderRadius: '15px',
+                                    borderLeft: '4px solid #0f1c2e'
+                                }}>
+                                    <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.6', margin: 0 }}>
+                                        <strong>The Small Ship Advantage:</strong> Unlike large ocean cruise ships, the smaller size of MS Santa Cruz II allows travelers to access more remote landing areas and create a more personal onboard atmosphere.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* BEST TIME TO CRUISE THE GALÁPAGOS - SEASONAL ANALYSIS */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#e6edf7', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
@@ -1070,34 +1196,46 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            Best Time To Cruise Svalbard
+                            Best Time To Cruise The Galápagos
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{
+                            fontSize: '19px',
+                            color: '#475569',
+                            maxWidth: '800px',
+                            margin: '30px auto 0',
+                            lineHeight: '1.6',
+                            fontWeight: '500'
+                        }}>
+                            The Galápagos is a year-round destination, but conditions and wildlife activity vary throughout the year.
+                        </p>
                     </div>
 
-                    {/* Seasonal Grid */}
+                    {/* Seasonal Grid - Adjusted for 2 columns */}
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(3, 1fr)',
+                        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr',
                         gap: '30px',
-                        marginBottom: '50px'
+                        marginBottom: '50px',
+                        maxWidth: '900px',
+                        margin: '0 auto 50px auto'
                     }}>
 
-                        {/* May & June */}
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '40px', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
+                        {/* December To May */}
+                        <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '40px', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.02)' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
                                 <div style={{ width: '44px', height: '44px', borderRadius: '12px', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
-                                    <Snowflake size={22} />
+                                    <Sun size={22} />
                                 </div>
-                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>May & June</h3>
+                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>December To May</h3>
                             </div>
-                            <p style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>Best For:</p>
+                            <p style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>The Warm Season:</p>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1 }}>
                                 {[
-                                    "Dramatic ice scenery",
-                                    "Snow covered landscapes",
-                                    "Polar bear opportunities",
-                                    "Crisp Arctic conditions"
+                                    "Warmer weather",
+                                    "Calmer seas",
+                                    "Excellent snorkeling visibility",
+                                    "Lush green landscapes"
                                 ].map((item, i) => (
                                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#475569', fontWeight: '500' }}>
                                         <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
@@ -1106,7 +1244,7 @@ function HXExpeditionsSvalbardCruises() {
                             </ul>
                         </div>
 
-                        {/* July & August */}
+                        {/* June To November */}
                         <div style={{
                             backgroundColor: '#0f1c2e',
                             borderRadius: '24px',
@@ -1115,48 +1253,23 @@ function HXExpeditionsSvalbardCruises() {
                             display: 'flex',
                             flexDirection: 'column',
                             boxShadow: '0 20px 40px rgba(15, 28, 46, 0.2)',
-                            transform: window.innerWidth > 1024 ? 'scale(1.05)' : 'none',
                             zIndex: 1
                         }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
                                 <div style={{ width: '44px', height: '44px', borderRadius: '12px', backgroundColor: 'rgba(59, 130, 246, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
-                                    <Sun size={22} />
+                                    <Waves size={22} />
                                 </div>
-                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#ffffff', margin: 0 }}>July & August</h3>
+                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#ffffff', margin: 0 }}>June To November</h3>
                             </div>
-                            <p style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>Best For:</p>
+                            <p style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>The Cool Season:</p>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1 }}>
                                 {[
-                                    "Wildlife activity",
-                                    "Milder temperatures",
-                                    "Accessible fjords",
-                                    "Midnight sun experiences",
-                                    "Whale sightings"
+                                    "Active marine wildlife",
+                                    "Cooler, comfortable temperatures",
+                                    "Peak whale sighting opportunities",
+                                    "Stronger nutrient-rich waters"
                                 ].map((item, i) => (
                                     <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#cbd5e1', fontWeight: '500' }}>
-                                        <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* September */}
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '40px', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '25px' }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '12px', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6' }}>
-                                    <Camera size={22} />
-                                </div>
-                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>September</h3>
-                            </div>
-                            <p style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px' }}>Best For:</p>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1 }}>
-                                {[
-                                    "Autumn Arctic colors",
-                                    "Photography",
-                                    "Fewer ships",
-                                    "Late season wildlife"
-                                ].map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#475569', fontWeight: '500' }}>
                                         <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
                                     </li>
                                 ))}
@@ -1175,124 +1288,21 @@ function HXExpeditionsSvalbardCruises() {
                         boxShadow: '0 4px 20px rgba(0,0,0,0.02)'
                     }}>
                         <p style={{ fontSize: '17px', color: '#274472', fontWeight: '700', lineHeight: '1.6', margin: 0, fontStyle: 'italic' }}>
-                            "Different departures offer dramatically different Arctic experiences, making expert planning especially important."
+                            "Wildlife experiences change seasonally, which is why itinerary planning matters significantly."
                         </p>
                     </div>
 
                 </div>
             </section>
 
-            {/* HX ARCTIC SHIPS SHOWCASE - INTERACTIVE DASHBOARD */}
-            <section className="medi-itinerary-showcase-section">
-                <div className="medi-itinerary-showcase-container">
-
-                    <div className="medi-itinerary-showcase-header">
-                        <span className="medi-itinerary-eyebrow">
-                            THE ARCTIC FLEET
-                        </span>
-                        <h2 className="medi-itinerary-showcase-heading">
-                            HX Expedition Ships In The Arctic
-                        </h2>
-                        <div className="medi-itinerary-showcase-separator"></div>
-                    </div>
-
-                    <div className="medi-itinerary-dashboard">
-                        {/* LEFT SIDE: SHIP SELECTION TABS */}
-                        <div className="medi-itinerary-tabs">
-                            {hxArcticShips.map((ship, idx) => (
-                                <button
-                                    key={idx}
-                                    className={`medi-itinerary-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`}
-                                    onClick={() => setMediSelectedItinerary(idx)}
-                                >
-                                    <span className="medi-itinerary-tab-number">
-                                        0{idx + 1}
-                                    </span>
-                                    <div className="medi-itinerary-tab-meta">
-                                        <span className="medi-itinerary-tab-title">
-                                            {ship.title}
-                                        </span>
-                                    </div>
-                                    <ChevronRight size={18} className="medi-itinerary-tab-arrow" />
-                                </button>
-                            ))}
-                        </div>
-
-                        {/* RIGHT SIDE: SHIP DETAIL CARD */}
-                        <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
-                                {/* Image Placeholder - Will show if you add paths to hxItineraryImages array */}
-                                {hxItineraryImages[mediSelectedItinerary] ? (
-                                    <img
-                                        src={hxItineraryImages[mediSelectedItinerary]}
-                                        alt={hxArcticShips[mediSelectedItinerary].title}
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
-                                    />
-                                ) : (
-                                    <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                        <Ship size={80} color="rgba(255,255,255,0.1)" />
-                                    </div>
-                                )}
-                                <div className="medi-itinerary-showcase-img-overlay"></div>
-                                <span className="medi-itinerary-showcase-badge">
-                                    VESSEL SPOTLIGHT
-                                </span>
-                            </div>
-
-                            <div className="medi-itinerary-showcase-body">
-                                <h3 className="medi-itinerary-showcase-title">
-                                    {hxArcticShips[mediSelectedItinerary].title}
-                                </h3>
-
-                                <p style={{ color: '#475569', fontSize: '16px', marginBottom: '25px', lineHeight: '1.7' }}>
-                                    {hxArcticShips[mediSelectedItinerary].description}
-                                </p>
-
-                                <div className="medi-itinerary-details-grid">
-                                    {/* LEFT COLUMN: BEST FOR */}
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">
-                                            Best For:
-                                        </h4>
-                                        <ul className="medi-itinerary-details-list">
-                                            {hxArcticShips[mediSelectedItinerary].bestFor.map((item, i) => (
-                                                <li key={i}>
-                                                    <Sparkles size={14} className="medi-itinerary-detail-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    {/* RIGHT COLUMN: TECHNICAL HIGHLIGHTS */}
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">
-                                            Vessel Highlights:
-                                        </h4>
-                                        <div className="medi-itinerary-details-chips">
-                                            {hxArcticShips[mediSelectedItinerary].highlights.map((item, i) => (
-                                                <span key={i} className="medi-itinerary-details-chip">
-                                                    <Check size={12} className="medi-itinerary-chip-icon" />
-                                                    <span>{item}</span>
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* WHAT EXPEDITION TRAVEL ACTUALLY FEELS LIKE */}
+            {/* WHAT GALÁPAGOS EXPLORATION ACTUALLY FEELS LIKE */}
             <section className="medi-audience-section">
                 <div className="medi-audience-container">
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <h2 className="medi-section-heading">What Arctic Expedition Travel Actually Feels Like</h2>
+                        <h2 className="medi-section-heading">What Small Ship Galápagos Exploration Feels Like</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p style={{ fontSize: '18px', color: '#475569', maxWidth: '800px', margin: '20px auto 0', lineHeight: '1.6' }}>
-                            Svalbard expedition cruising feels very different from mainstream cruising.
+                            Galápagos expedition cruising feels very different from traditional cruise vacations.
                         </p>
                     </div>
 
@@ -1302,13 +1312,13 @@ function HXExpeditionsSvalbardCruises() {
                             <h3 className="medi-audience-column-heading">Travelers should expect:</h3>
                             <ul className="medi-audience-list">
                                 {[
-                                    { t: "Flexible schedules", i: <Clock size={20} /> },
-                                    { t: "Wildlife focused exploration", i: <Compass size={20} /> },
-                                    { t: "Zodiac cruising", i: <Ship size={20} /> },
-                                    { t: "Expedition briefings", i: <GraduationCap size={20} /> },
-                                    { t: "Outdoor experiences", i: <MapPin size={20} /> },
-                                    { t: "Casual onboard atmosphere", i: <Users size={20} /> },
-                                    { t: "Educational programming", i: <Globe size={20} /> }
+                                    { t: "Guided wildlife walks", i: <MapPin size={20} /> },
+                                    { t: "Zodiac excursions", i: <Ship size={20} /> },
+                                    { t: "Snorkeling opportunities", i: <Waves size={20} /> },
+                                    { t: "Educational lectures", i: <GraduationCap size={20} /> },
+                                    { t: "Small group experiences", i: <Users size={20} /> },
+                                    { t: "Nature focused itineraries", i: <Globe size={20} /> },
+                                    { t: "Flexible wildlife exploration", i: <Compass size={20} /> }
                                 ].map((item, idx) => (
                                     <li key={idx}>
                                         <div className="medi-audience-icon-wrapper best">
@@ -1326,9 +1336,9 @@ function HXExpeditionsSvalbardCruises() {
                             <ul className="medi-audience-list">
                                 {[
                                     { t: "Casinos", i: <CircleDollarSign size={20} /> },
-                                    { t: "Formal cruise nights", i: <Crown size={20} /> },
-                                    { t: "Broadway entertainment", i: <Music size={20} /> },
-                                    { t: "Large ship nightlife", i: <Moon size={20} /> }
+                                    { t: "Large scale entertainment", i: <Music size={20} /> },
+                                    { t: "Formal cruise nightlife", i: <Crown size={20} /> },
+                                    { t: "Massive cruise ship crowds", i: <Users size={20} /> }
                                 ].map((item, idx) => (
                                     <li key={idx}>
                                         <div className="medi-audience-icon-wrapper not-ideal">
@@ -1349,7 +1359,7 @@ function HXExpeditionsSvalbardCruises() {
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
                             }}>
                                 <p style={{ fontSize: '18px', color: '#0f1c2e', fontWeight: '800', margin: 0, fontStyle: 'italic' }}>
-                                    "The Arctic itself is the experience."
+                                    "The wildlife and destination become the experience."
                                 </p>
                             </div>
                         </div>
@@ -1357,7 +1367,7 @@ function HXExpeditionsSvalbardCruises() {
                 </div>
             </section>
 
-            {/* COMMON SVALBARD CRUISE MISTAKES SECTION */}
+            {/* COMMON GALÁPAGOS CRUISE MISTAKES SECTION */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
@@ -1381,7 +1391,7 @@ function HXExpeditionsSvalbardCruises() {
                             marginBottom: '20px',
                             letterSpacing: '-0.02em'
                         }}>
-                            Common Svalbard Cruise Mistakes
+                            Common Galápagos Cruise Mistakes
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
@@ -1401,7 +1411,7 @@ function HXExpeditionsSvalbardCruises() {
                             marginBottom: '40px',
                             textAlign: 'center'
                         }}>
-                            Many travelers make avoidable mistakes when planning Arctic expeditions including:
+                            Many travelers make avoidable mistakes when planning Galápagos cruises including:
                         </p>
 
                         {/* Mistakes List Grid */}
@@ -1412,12 +1422,12 @@ function HXExpeditionsSvalbardCruises() {
                             marginBottom: '40px'
                         }}>
                             {[
-                                "Choosing the wrong season",
-                                "Underestimating Arctic weather",
+                                "Choosing the wrong itinerary length",
+                                "Underestimating activity levels",
                                 "Booking based only on price",
-                                "Not understanding expedition style travel",
-                                "Packing incorrectly",
-                                "Waiting too long to reserve cabins"
+                                "Not understanding ship differences",
+                                "Waiting too long to reserve cabins",
+                                "Choosing large ship experiences over true expedition ships"
                             ].map((mistake, idx) => (
                                 <div key={idx} style={{
                                     display: 'flex',
@@ -1434,9 +1444,7 @@ function HXExpeditionsSvalbardCruises() {
                                         color: '#475569',
                                         fontWeight: '500',
                                         lineHeight: '1.4'
-                                    }}>
-                                        {mistake}
-                                    </span>
+                                    }}>{mistake}</span>
                                 </div>
                             ))}
                         </div>
@@ -1457,14 +1465,14 @@ function HXExpeditionsSvalbardCruises() {
                                 fontWeight: '700',
                                 letterSpacing: '0.01em'
                             }}>
-                                Svalbard expedition planning benefits enormously from expert guidance.
+                                Expert guidance can dramatically improve the Galápagos experience.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* BEST FOR / NOT BEST FOR SECTION - BRAND THEME */}
+            {/* BEST FOR / NOT BEST FOR SECTION - GALÁPAGOS BRAND THEME */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
@@ -1489,7 +1497,7 @@ function HXExpeditionsSvalbardCruises() {
                             letterSpacing: '-0.02em',
                             lineHeight: '1.2'
                         }}>
-                            Is A Svalbard Expedition Right For You?
+                            Is A Galápagos Expedition Right For You?
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
@@ -1527,10 +1535,10 @@ function HXExpeditionsSvalbardCruises() {
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {[
                                     "Wildlife lovers",
-                                    "Adventure travelers",
-                                    "Photography enthusiasts",
-                                    "Experienced luxury travelers",
-                                    "Expedition focused travelers"
+                                    "Nature photographers",
+                                    "Adventure minded travelers",
+                                    "Educational travel enthusiasts",
+                                    "Small ship cruise travelers"
                                 ].map((item, i) => (
                                     <li key={i} style={{
                                         display: 'flex',
@@ -1574,9 +1582,9 @@ function HXExpeditionsSvalbardCruises() {
 
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {[
-                                    "Travelers wanting traditional cruise entertainment",
-                                    "Guests seeking beach style vacations",
-                                    "Travelers uncomfortable with flexible itineraries"
+                                    "Travelers seeking traditional cruise entertainment",
+                                    "Guests wanting large ship nightlife",
+                                    "Travelers looking for resort style vacations"
                                 ].map((item, i) => (
                                     <li key={i} style={{
                                         display: 'flex',
@@ -1602,7 +1610,7 @@ function HXExpeditionsSvalbardCruises() {
                                 borderLeft: '4px solid #0f1c2e'
                             }}>
                                 <p style={{ fontSize: '15px', color: '#0f1c2e', fontWeight: '700', margin: 0, lineHeight: '1.6' }}>
-                                    Expedition travel is unique. We ensure your expectations align with the reality of the High Arctic.
+                                    Galápagos cruising is built around nature immersion. We ensure your expectations align with the rules of the National Park.
                                 </p>
                             </div>
                         </div>
@@ -1716,12 +1724,12 @@ function HXExpeditionsSvalbardCruises() {
                             color: '#475569',
                             lineHeight: '1.6'
                         }}>
-                            Angela Hughes is one of the luxury travel industry’s most respected travel advisors and educators.
+                            Angela Hughes is one of the luxury travel industry’s most respected advisors and educators.
                         </p>
                     </div>
 
                     <div className="medi-prestige-plaque-wrapper">
-                        {/* Left Side: The Identity Board */}
+                        {/* Left Side: Identity Card */}
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
                                 <img
@@ -1794,22 +1802,22 @@ function HXExpeditionsSvalbardCruises() {
                             margin: 0,
                             fontStyle: 'italic'
                         }}>
-                            "Angela and her team specialize in helping travelers choose the right expedition experiences based on comfort expectations, travel style and destination priorities."
+                            "Angela and her team specialize in helping travelers choose the right expedition experiences based on travel style, wildlife priorities and comfort expectations."
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* FAQ SECTION - UPDATED WITH SVALBARD CONTENT */}
+            {/* FAQ SECTION - UPDATED FOR GALÁPAGOS */}
             <section className="medi-faq-main-section">
                 <div className="medi-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">HX Expeditions Svalbard: <br /> Frequently Asked Questions</h2>
+                        <h2 className="medi-section-heading">HX Expeditions Galápagos: <br /> Frequently Asked Questions</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
                     <div className="medi-faq-list-wrapper">
-                        {svalbardFaqs.map((faq, index) => (
+                        {galapagosFaqs.map((faq, index) => (
                             <div
                                 key={index}
                                 className="medi-faq-individual-item"
@@ -1833,36 +1841,36 @@ function HXExpeditionsSvalbardCruises() {
                 </div>
             </section>
 
-            {/* STRONG CTA SECTION - SVALBARD FINAL CONVERSION */}
+            {/* STRONG CTA SECTION - GALÁPAGOS FINAL CONVERSION */}
             <section className="medi-cta-main-section">
                 <div className="medi-cta-bg-pattern-layer"></div>
                 <div className="medi-cta-content-relative">
                     <div className="medi-cta-inner-wrapper">
                         <h2 className="medi-cta-heading-white">
-                            Ready To Explore The Arctic With HX Expeditions?
+                            Ready To Explore The Galápagos With <br /> HX Expeditions?
                         </h2>
                         <div className="medi-cta-separator-white"></div>
 
                         <p className="medi-cta-paragraph-white">
-                            Svalbard is one of the world’s most unforgettable expedition cruise destinations.
+                            The Galápagos Islands deliver one of the world’s most unforgettable wildlife experiences.
                         </p>
 
                         <p className="medi-cta-paragraph-white" style={{ fontWeight: '700', color: '#ffffff', margin: '0 auto 24px' }}>
-                            Choosing the right itinerary, season and ship can dramatically impact your Arctic experience.
+                            Choosing the right ship, itinerary and season can dramatically shape your expedition.
                         </p>
 
                         <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '850px', margin: '0 auto 24px' }}>
-                            Trips & Ships Luxury Travel helps travelers confidently plan extraordinary HX Expeditions Svalbard cruises with expert personalized guidance.
+                            Trips & Ships Luxury Travel helps travelers confidently plan extraordinary HX Expeditions Galápagos cruises with personalized expert guidance.
                         </p>
 
                         <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#3b82f6', margin: '0 auto 36px', maxWidth: '850px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                            Contact Trips & Ships Luxury Travel today to begin planning your Arctic expedition.
+                            Contact Trips & Ships Luxury Travel today to begin planning your Galápagos expedition.
                         </p>
 
                         <div className="medi-cta-button-group">
                             <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
                                 <Phone size={18} />
-                                Schedule a Personalized Arctic Expedition Consultation Today
+                                Schedule a Personalized Galápagos Expedition Consultation Today
                             </button>
                         </div>
                     </div>
@@ -1872,4 +1880,4 @@ function HXExpeditionsSvalbardCruises() {
     )
 }
 
-export default HXExpeditionsSvalbardCruises
+export default HXExpeditionsGalapagosCruises

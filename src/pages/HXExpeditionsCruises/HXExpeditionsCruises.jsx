@@ -15,15 +15,25 @@ import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/HXExpeditions/Hero_Antarctica.webp'
-// import hero2 from '../../assets/HXExpeditions/Hero_Svalbard.webp'
-// import hero3 from '../../assets/HXExpeditions/Hero_Galapagos.webp'
+import hero1 from '../../assets/HXExpeditionsCruises/Hero_1.webp'
+import hero2 from '../../assets/HXExpeditionsCruises/Hero_2.jpg'
+import hero3 from '../../assets/HXExpeditionsCruises/Hero_3.webp'
 import profileAH from '../../assets/Profile_AH.jpg'
-// import hxShipMain from '../../assets/HXExpeditions/HX_Ship_Exterior.jpg'
+import Galápagos from '../../assets/HXExpeditionsCruises/Galápagos.jpg'
+import Norway_Alaska from '../../assets/HXExpeditionsCruises/Norway_Alaska.jpg'
+import Greenland from '../../assets/HXExpeditionsCruises/Greenland.jpg'
+import Antarctica from '../../assets/HXExpeditionsCruises/Antarctica.jpg'
+import Svalbard from '../../assets/HXExpeditionsCruises/Svalbard.jpg'
+import Image1 from '../../assets/HXExpeditionsCruises/Image_1.jpg'
+import Image2 from '../../assets/HXExpeditionsCruises/Image_2.jpg'
+import Image3 from '../../assets/HXExpeditionsCruises/Image_3.jpg'
+import Image4 from '../../assets/HXExpeditionsCruises/Image_4.jpg'
+import Image5 from '../../assets/HXExpeditionsCruises/Image_5.jpg'
+import Image6 from '../../assets/HXExpeditionsCruises/Image_6.jpg'
 
 function HXExpeditions() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
-  const mediHeroImages = []
+  const mediHeroImages = [hero1, hero2, hero3]
 
   useEffect(() => {
     const mediTimer = setInterval(() => {
@@ -69,7 +79,7 @@ function HXExpeditions() {
   const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0);
 
   // 2. Define image placeholders
-  const hxItineraryImages = ["", "", "", "", ""];
+  const hxItineraryImages = [Antarctica, Svalbard, Greenland, Galápagos, Norway_Alaska];
 
   const hxFaqs = [
     {
@@ -684,6 +694,166 @@ function HXExpeditions() {
         </div>
       </section>
 
+      {/* ── THE SPIRIT OF MODERN EXPLORATION: AIRTIGHT BENTO GRID ── */}
+      <section style={{
+        padding: 'clamp(60px, 10vw, 100px) 20px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'sans-serif',
+        overflow: 'hidden'
+      }}>
+        <style>{`
+          .hx-bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 220px;
+            gap: 15px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          .hx-bento-item {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: #1e293b;
+          }
+          .hx-bento-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+          }
+          .hx-bento-item:hover .hx-bento-img {
+            transform: scale(1.1);
+          }
+          .hx-bento-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+          }
+          .hx-bento-item:hover .hx-bento-overlay {
+            opacity: 1;
+          }
+          .hx-overlay-title {
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #3b82f6;
+          }
+
+          /* Responsive Breakpoints to prevent empty spaces on all screens */
+          @media (max-width: 1024px) {
+            .hx-bento-grid {
+              grid-template-columns: repeat(2, 1fr);
+              grid-auto-rows: 200px;
+            }
+            /* Reset spans for 2-column layout */
+            .item-large { grid-column: span 2; grid-row: span 2; }
+            .item-wide { grid-column: span 2; grid-row: span 1; }
+            .item-standard { grid-column: span 1; grid-row: span 1; }
+          }
+
+          @media (max-width: 600px) {
+            .hx-bento-grid {
+              grid-template-columns: 1fr;
+              grid-auto-rows: 250px;
+            }
+            .hx-bento-item { grid-column: span 1 !important; grid-row: span 1 !important; }
+          }
+        `}</style>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Header Block */}
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '700',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>
+              Visual Narrative
+            </span>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#ffffff',
+              fontWeight: '800',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em'
+            }}>
+              The Spirit of Modern Exploration
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+          </div>
+
+          {/* Airtight Grid */}
+          <div className="hx-bento-grid">
+
+            {/* Image 1: The Fleet Exterior (Top Left) */}
+            <div className="hx-bento-item item-large" style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
+              <img src={Image1} alt="Active Discovery" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Active Discovery</span>
+                <p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Guided exploration across untouched volcanic frontiers.</p>
+              </div>
+            </div>
+
+            {/* Image 2: Arctic Wildlife (Top Right) */}
+            <div className="hx-bento-item item-standard">
+              <img src={Image2} alt="Polar Immersion" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Polar Immersion</span>
+              </div>
+            </div>
+
+            {/* Image 3: Science Center (Middle Right) */}
+            <div className="hx-bento-item item-standard">
+              <img src={Image3} alt="Celestial Wonders" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Celestial Wonders</span>
+              </div>
+            </div>
+
+            {/* Image 4: Zodiac Exploration (Middle Bottom Left) */}
+            <div className="hx-bento-item item-standard">
+              <img src={Image4} alt="Culinary Artistry" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Culinary Artistry</span>
+              </div>
+            </div>
+
+            {/* Image 5: Remote Landscape (Middle Bottom Right) */}
+            <div className="hx-bento-item item-standard">
+              <img src={Image5} alt="Epicurean Views" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Epicurean Views</span>
+              </div>
+            </div>
+
+            {/* Image 6: Scandinavian Interior (Full Bottom Width) */}
+            <div className="hx-bento-item item-wide" style={{ gridColumn: 'span 4', gridRow: 'span 1' }}>
+              <img src={Image6} alt="Scandinavian Serenity" className="hx-bento-img" />
+              <div className="hx-bento-overlay">
+                <span className="hx-overlay-title">Scandinavian Serenity</span>
+                <p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Refined comfort in our Scandi-chic social spaces.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHERE HX EXPEDITIONS SAILS SECTION */}
       <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#e6edf7', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -976,6 +1146,70 @@ function HXExpeditions() {
               </div>
             ))}
 
+          </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO SECTION 01: THE MODERN FLEET ── */}
+      <section style={{
+        padding: '80px 20px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+          {/* Header Block */}
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '700',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>
+              Fleet Spotlight
+            </span>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#ffffff',
+              fontWeight: '800',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.2'
+            }}>
+              A New Era of Sustainable Exploration
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{
+              color: '#cbd5e1',
+              fontSize: '18px',
+              marginTop: '25px',
+              lineHeight: '1.7'
+            }}>
+              Witness the world’s first hybrid-powered expedition fleet in action. Combining advanced Norwegian engineering with Scandinavian comfort, our ships are designed to be silent, sustainable windows into the most pristine environments on Earth.
+            </p>
+          </div>
+
+          {/* Video Player */}
+          <div style={{
+            borderRadius: '30px',
+            overflow: 'hidden',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.5)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            aspectRatio: '16/9',
+            backgroundColor: '#000'
+          }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube-nocookie.com/embed/87FBanAlUPo"
+              title="HX Expeditions Fleet Experience"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -1303,6 +1537,70 @@ function HXExpeditions() {
         </div>
       </section>
 
+      {/* ── VIDEO SECTION 02: DESTINATION IMMERSION ── */}
+      <section style={{
+        padding: '80px 20px',
+        backgroundColor: '#f8fafc',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+          {/* Header Block */}
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '700',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>
+              Immersive Destinations
+            </span>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#274472',
+              fontWeight: '800',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.2'
+            }}>
+              The World’s Most Remote Frontiers
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{
+              color: '#475569',
+              fontSize: '18px',
+              marginTop: '25px',
+              lineHeight: '1.7'
+            }}>
+              From the icy silence of Antarctica to the volcanic energy of the Galápagos, true expedition travel is about the moments that happen off the ship. See the wildlife encounters and Zodiac landings that make HX journeys a life-changing experience.
+            </p>
+          </div>
+
+          {/* Video Player */}
+          <div style={{
+            borderRadius: '30px',
+            overflow: 'hidden',
+            boxShadow: '0 25px 50px rgba(15, 28, 46, 0.15)',
+            border: '1px solid #e2e8f0',
+            aspectRatio: '16/9',
+            backgroundColor: '#000'
+          }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube-nocookie.com/embed/apY0io_tpno"
+              title="HX Expeditions Destination Experience"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* ANGELA HUGHES AUTHORITY SECTION - ROTATING RING / STATIC IMAGE */}
       <section className="medi-authority-section">
         {/* CSS for the rotating effect */}
@@ -1505,7 +1803,7 @@ function HXExpeditions() {
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                gap: '20px 30px', // 20px vertical, 30px horizontal gap
+                gap: '20px 30px',
                 maxWidth: '1000px'
               }}>
                 {[
@@ -1517,9 +1815,9 @@ function HXExpeditions() {
                 ].map((item, idx) => (
                   <li key={idx} className="medi-cta-considerations-item" style={{
                     display: 'flex',
-                    alignItems: 'center', // Perfect vertical alignment
+                    alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '10px',          // Consistent space between icon and text
+                    gap: '10px',
                     color: '#ffffff',
                     fontSize: '16px',
                     fontWeight: '500'
@@ -1530,7 +1828,7 @@ function HXExpeditions() {
                       style={{
                         color: '#3b82f6',
                         flexShrink: 0,
-                        marginTop: '-1px' // Optical adjustment for perfect center
+                        marginTop: '-1px'
                       }}
                     />
                     <span style={{ lineHeight: '1' }}>{item}</span>
