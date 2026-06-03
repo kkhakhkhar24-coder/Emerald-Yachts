@@ -62,6 +62,8 @@ import Hxexpeditionsgreenland from "./pages/Hxexpeditionsgreenland/Hxexpeditions
 import HXExpeditionsGalápagosCruises from "./pages/HXExpeditionsGalápagosCruises/HXExpeditionsGalápagosCruises";
 import Hxvsvikingexpeditions from "./pages/Hxvsvikingexpeditions/Hxvsvikingexpeditions";
 import HXExpeditionsVsSilverseaExpeditions from "./pages/HXExpeditionsVsSilverseaExpeditions/HXExpeditionsVsSilverseaExpeditions";
+import BestHXExpeditions from "./pages/BestHXExpeditions/Besthxexpeditions";
+
 
 function App() {
   return (
@@ -311,6 +313,11 @@ function App() {
           <Route
             path="/hx-expeditions-vs-silversea-expeditions"
             element={<HXExpeditionsVsSilverseaExpeditions />}
+          />
+
+          <Route
+            path="/best-hx-expeditions-cruises-for-first-timers"
+            element={<BestHXExpeditions />}
           />
         </Routes>
       </BrowserRouter>

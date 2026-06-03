@@ -396,6 +396,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 HX Expeditions vs Silversea Expeditions</NavLink>
+
+              <NavLink
+                to="/best-hx-expeditions-cruises-for-first-timers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best HX Expeditions Cruises for First-Timers</NavLink>
             </div>
           </div>
         </div>
@@ -802,6 +809,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               HX Expeditions vs Silversea Expeditions</NavLink>
+
+               <NavLink
+                to="/best-hx-expeditions-cruises-for-first-timers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best HX Expeditions Cruises for First-Timers</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
