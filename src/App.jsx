@@ -62,7 +62,7 @@ import Hxexpeditionsgreenland from "./pages/Hxexpeditionsgreenland/Hxexpeditions
 import HXExpeditionsGalápagosCruises from "./pages/HXExpeditionsGalápagosCruises/HXExpeditionsGalápagosCruises";
 import Hxvsvikingexpeditions from "./pages/Hxvsvikingexpeditions/Hxvsvikingexpeditions";
 import HXExpeditionsVsSilverseaExpeditions from "./pages/HXExpeditionsVsSilverseaExpeditions/HXExpeditionsVsSilverseaExpeditions";
-import BestHXExpeditions from "./pages/BestHXExpeditions/Besthxexpeditions";
+import BestHXExpeditions from "./pages/Besthxexpeditions/Besthxexpeditions";
 
 
 function App() {
