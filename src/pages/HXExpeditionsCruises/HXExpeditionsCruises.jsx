@@ -30,6 +30,20 @@ import Image3 from '../../assets/HXExpeditionsCruises/Image_3.jpg'
 import Image4 from '../../assets/HXExpeditionsCruises/Image_4.jpg'
 import Image5 from '../../assets/HXExpeditionsCruises/Image_5.jpg'
 import Image6 from '../../assets/HXExpeditionsCruises/Image_6.jpg'
+import Video1 from '../../assets/HXExpeditionsCruises/Video1.mp4'
+import Video2 from '../../assets/HXExpeditionsCruises/Video2.mp4'
+import Video3 from '../../assets/HXExpeditionsCruises/Video3.mp4'
+import AH1 from '../../assets/HXExpeditionsCruises/AH1.jpg'
+import AH2 from '../../assets/HXExpeditionsCruises/AH2.jpg'
+import AH3 from '../../assets/HXExpeditionsCruises/AH3.jpg'
+import AH4 from '../../assets/HXExpeditionsCruises/AH4.jpg'
+import AH5 from '../../assets/HXExpeditionsCruises/AH5.jpg'
+import Antarctica_overview from '../../assets/HXExpeditionsCruises/Antarctica_Orne_Islands.jpg'
+import Galápagos_overview from '../../assets/HXExpeditionsCruises/Gal_pagos_Islands.jpg'
+import Greenland_overview from '../../assets/HXExpeditionsCruises/Greenland_ZodiacTown.jpg'
+import Svalbard_overview from '../../assets/HXExpeditionsCruises/SvalbardImage.jpg'
+import Norway_Alaska_overview from '../../assets/HXExpeditionsCruises/Norway_AlaskaImage.jpg'
+
 
 function HXExpeditions() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -1036,6 +1050,117 @@ function HXExpeditions() {
         </div>
       </section>
 
+      {/* ── CINEMATIC DESTINATION GALLERY ── */}
+      <section style={{
+        padding: '0',
+        fontFamily: 'sans-serif',
+        overflow: 'hidden'
+      }}>
+        <style>{`
+          .hx-parallax-strip {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            min-height: 420px;
+          }
+          .hx-parallax-panel {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            min-height: 420px;
+          }
+          .hx-parallax-panel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease;
+            filter: brightness(0.65);
+          }
+          .hx-parallax-panel:hover img {
+            transform: scale(1.15);
+            filter: brightness(0.85);
+          }
+          .hx-parallax-panel-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.98) 0%, rgba(15, 28, 46, 0.75) 35%, rgba(15, 28, 46, 0.3) 55%, transparent 75%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 35px 25px;
+            color: #ffffff;
+            z-index: 2;
+          }
+          .hx-parallax-panel-overlay h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin: 0 0 8px;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+          }
+          .hx-parallax-panel-overlay p {
+            font-size: 13px;
+            color: #cbd5e1;
+            margin: 0;
+            line-height: 1.5;
+            opacity: 1;
+            text-align: center;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+          }
+          .hx-parallax-panel-overlay .hx-dest-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #60a5fa;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+          }
+          @media (max-width: 1024px) {
+            .hx-parallax-strip {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+          @media (max-width: 768px) {
+            .hx-parallax-strip {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+          @media (max-width: 500px) {
+            .hx-parallax-strip {
+              grid-template-columns: 1fr;
+            }
+            .hx-parallax-panel {
+              min-height: 300px;
+            }
+          }
+        `}</style>
+        <div className="hx-parallax-strip">
+          {[
+            { img: Antarctica_overview, name: 'Antarctica', tag: 'The White Continent', desc: 'Penguin colonies, massive ice shelves and Drake Passage crossings await.' },
+            { img: Svalbard_overview, name: 'Svalbard', tag: 'High Arctic', desc: 'Search for polar bears amid midnight sun and glacier scenery.' },
+            { img: Greenland_overview, name: 'Greenland', tag: 'Ice & Culture', desc: 'Massive icebergs, Inuit communities and dramatic fjord landscapes.' },
+            { img: Galápagos_overview, name: 'Galápagos', tag: 'Living Laboratory', desc: 'Walk among giant tortoises and marine iguanas in this evolutionary wonderland.' },
+            { img: Norway_Alaska_overview, name: 'Norway & Alaska', tag: 'Coastal Discovery', desc: 'Scenic fjords, glaciers and wildlife from the comfort of a small ship.' }
+          ].map((dest, idx) => (
+            <div key={idx} className="hx-parallax-panel">
+              <img src={dest.img} alt={dest.name} loading="lazy" />
+              <div className="hx-parallax-panel-overlay">
+                <span className="hx-dest-tag">{dest.tag}</span>
+                <h3>{dest.name}</h3>
+                <p>{dest.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* HX EXPEDITION SHIPS - STANDARDIZED 5-CARD LAYOUT */}
       <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -1429,6 +1554,163 @@ function HXExpeditions() {
         </div>
       </section>
 
+      {/* ── IMMERSIVE VISUAL STORYTELLING STRIP ── */}
+      <section style={{
+        padding: 'clamp(60px, 10vw, 100px) 20px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'sans-serif',
+        overflow: 'hidden'
+      }}>
+        <style>{`
+          .hx-video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          .hx-video-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            aspect-ratio: 9 / 16;
+            background: #0b1320;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer;
+          }
+          .hx-video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+          }
+          .hx-video-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+          .hx-video-card:hover video {
+            transform: scale(1.05);
+          }
+          .hx-video-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 24px;
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%);
+            color: #fff;
+            z-index: 2;
+            transition: all 0.4s ease;
+          }
+          .hx-video-card:hover .hx-video-overlay {
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.98) 0%, rgba(15, 28, 46, 0.6) 70%, transparent 100%);
+          }
+          .hx-video-overlay span {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #3b82f6;
+            display: block;
+            margin-bottom: 8px;
+            transition: transform 0.4s ease;
+          }
+          .hx-video-overlay h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffffff;
+            line-height: 1.4;
+            transition: transform 0.4s ease;
+          }
+          .hx-video-card:hover .hx-video-overlay span,
+          .hx-video-card:hover .hx-video-overlay h4 {
+            transform: translateY(-4px);
+          }
+          @media (max-width: 900px) {
+            .hx-video-grid {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 16px;
+            }
+          }
+          @media (max-width: 600px) {
+            .hx-video-grid {
+              grid-template-columns: 1fr;
+              gap: 20px;
+            }
+            .hx-video-card {
+              aspect-ratio: 4 / 5;
+            }
+          }
+        `}</style>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Header */}
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '700',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>
+              Visual Journal
+            </span>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#ffffff',
+              fontWeight: '800',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em'
+            }}>
+              Moments That Define Expedition Travel
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{
+              color: '#cbd5e1',
+              fontSize: '18px',
+              marginTop: '25px',
+              lineHeight: '1.7',
+              maxWidth: '700px',
+              margin: '25px auto 0'
+            }}>
+              From zodiac landings on untouched shores to wildlife encounters that leave lasting impressions — these are the experiences that make expedition cruising extraordinary.
+            </p>
+          </div>
+
+          {/* 3-Video Autoplay Row */}
+          <div className="hx-video-grid">
+            <div className="hx-video-card">
+              <video src={Video1} autoPlay loop muted playsInline />
+              <div className="hx-video-overlay">
+                <span>Active Exploration</span>
+                <h4>Tundra Trekking & Hiking</h4>
+              </div>
+            </div>
+            <div className="hx-video-card">
+              <video src={Video2} autoPlay loop muted playsInline />
+              <div className="hx-video-overlay">
+                <span>Scenic Balcony Views</span>
+                <h4>Iceberg & Glacier Viewing</h4>
+              </div>
+            </div>
+            <div className="hx-video-card">
+              <video src={Video3} autoPlay loop muted playsInline />
+              <div className="hx-video-overlay">
+                <span>Expedition Vessels</span>
+                <h4>Sailing on MS Spitsbergen</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* COMMON EXPEDITION CRUISE MISTAKES SECTION */}
       <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -1723,6 +2005,195 @@ function HXExpeditions() {
             }}>
               "Angela and her team specialize in helping travelers navigate the complexities of luxury expedition travel with highly personalized guidance."
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ANGELA'S EXPEDITION JOURNAL ── */}
+      <section style={{
+        padding: '80px 20px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'sans-serif',
+        overflow: 'hidden'
+      }}>
+        <style>{`
+          .hx-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 280px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+          }
+          .hx-gallery-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: #0b1320;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer;
+          }
+          .hx-gallery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+          }
+          .hx-gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+          .hx-gallery-card:hover img {
+            transform: scale(1.05);
+          }
+          .hx-gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 24px;
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%);
+            color: #fff;
+            z-index: 2;
+            transition: all 0.4s ease;
+          }
+          .hx-gallery-card:hover .hx-gallery-overlay {
+            background: linear-gradient(to top, rgba(15, 28, 46, 0.98) 0%, rgba(15, 28, 46, 0.6) 70%, transparent 100%);
+          }
+          .hx-gallery-overlay span {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #3b82f6;
+            display: block;
+            margin-bottom: 6px;
+            transition: transform 0.4s ease;
+          }
+          .hx-gallery-overlay h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffffff;
+            line-height: 1.4;
+            transition: transform 0.4s ease;
+          }
+          .hx-gallery-card:hover .hx-gallery-overlay span,
+          .hx-gallery-card:hover .hx-gallery-overlay h4 {
+            transform: translateY(-4px);
+          }
+          
+          .hx-gcard-1 { grid-column: span 1; grid-row: span 2; }
+          .hx-gcard-2 { grid-column: span 1; grid-row: span 1; }
+          .hx-gcard-3 { grid-column: span 1; grid-row: span 2; }
+          .hx-gcard-4 { grid-column: span 1; grid-row: span 1; }
+          .hx-gcard-5 { grid-column: span 3; grid-row: span 1; }
+
+          @media (max-width: 900px) {
+            .hx-gallery-grid {
+              grid-template-columns: repeat(2, 1fr);
+              grid-auto-rows: 240px;
+              gap: 16px;
+            }
+            .hx-gcard-1 { grid-column: span 1; grid-row: span 2; }
+            .hx-gcard-2 { grid-column: span 1; grid-row: span 1; }
+            .hx-gcard-3 { grid-column: span 1; grid-row: span 2; }
+            .hx-gcard-4 { grid-column: span 1; grid-row: span 1; }
+            .hx-gcard-5 { grid-column: span 2; grid-row: span 1; }
+          }
+          @media (max-width: 600px) {
+            .hx-gallery-grid {
+              grid-template-columns: 1fr;
+              grid-auto-rows: auto;
+              gap: 20px;
+            }
+            .hx-gallery-card {
+              aspect-ratio: 4 / 3;
+            }
+            .hx-gcard-1, .hx-gcard-2, .hx-gcard-3, .hx-gcard-4, .hx-gcard-5 {
+              grid-column: span 1;
+              grid-row: span 1;
+            }
+          }
+        `}</style>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Header */}
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '700',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>
+              Real-World Authority
+            </span>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              color: '#ffffff',
+              fontWeight: '800',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em'
+            }}>
+              On Location: Angela's Expedition Journal
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{
+              color: '#cbd5e1',
+              fontSize: '18px',
+              marginTop: '25px',
+              lineHeight: '1.7',
+              maxWidth: '750px',
+              margin: '25px auto 0'
+            }}>
+              True luxury expedition travel requires firsthand experience. See highlights from Angela Hughes's personal voyages exploring polar regions, glaciers, and remote shores.
+            </p>
+          </div>
+
+          {/* Bento Grid */}
+          <div className="hx-gallery-grid">
+            <div className="hx-gallery-card hx-gcard-1">
+              <img src={AH1} alt="Angela Hughes sitting on rocks" loading="lazy" />
+              <div className="hx-gallery-overlay">
+                <span>Active Exploration</span>
+                <h4>Polar Tundra Trekking</h4>
+              </div>
+            </div>
+            <div className="hx-gallery-card hx-gcard-2">
+              <img src={AH3} alt="Glacier kayaking" loading="lazy" />
+              <div className="hx-gallery-overlay">
+                <span>Glacier Kayaking</span>
+                <h4>Paddling Near Ice Walls</h4>
+              </div>
+            </div>
+            <div className="hx-gallery-card hx-gcard-3">
+              <img src={AH2} alt="Angela Hughes wildlife spotting" loading="lazy" />
+              <div className="hx-gallery-overlay">
+                <span>Wildlife Spotting</span>
+                <h4>Scouting Polar Horizons</h4>
+              </div>
+            </div>
+            <div className="hx-gallery-card hx-gcard-4">
+              <img src={AH5} alt="Expedition vessel Spitsbergen" loading="lazy" />
+              <div className="hx-gallery-overlay">
+                <span>Expedition Fleet</span>
+                <h4>Small Ship Navigation</h4>
+              </div>
+            </div>
+            <div className="hx-gallery-card hx-gcard-5">
+              <img src={AH4} alt="Angela Hughes on Greenland coast" loading="lazy" />
+              <div className="hx-gallery-overlay">
+                <span>Greenland Coast</span>
+                <h4>Fjord and Icefield Explorations</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>

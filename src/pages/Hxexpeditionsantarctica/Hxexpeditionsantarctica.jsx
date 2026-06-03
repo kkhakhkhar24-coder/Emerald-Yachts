@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
+import Profile_AH from '../../assets/Hxexpeditionsantarctica/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/Media (3).jpg'
 
 import {
