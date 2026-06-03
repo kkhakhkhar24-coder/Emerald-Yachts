@@ -182,8 +182,8 @@ function HXExpeditionsGalapagosCruises() {
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
                 "url": "https://www.tripsandships.com",
-                "image": "https://www.tripsandships.com/hx-expeditions-svalbard-cruise.jpg",
-                "description": "Expert HX Expedition Svalbard cruise specialists providing personalized planning for Arctic, polar bear and midnight sun voyages."
+                "image": "https://www.tripsandships.com/hx-expeditions-galapagos-cruise.jpg",
+                "description": "Explore HX Expeditions Galápagos cruises with expert guidance from Trips & Ships Luxury Travel. Discover wildlife encounters, small ship exploration and the MS Santa Cruz II experience."
             },
             {
                 "@type": "Person",
@@ -198,14 +198,14 @@ function HXExpeditionsGalapagosCruises() {
             },
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/hx-expeditions-svalbard-cruises#webpage",
-                "url": "https://www.tripsandships.com/hx-expeditions-svalbard-cruises",
-                "name": "HX Expeditions Svalbard Cruises",
-                "description": "Explore HX Expeditions Svalbard cruises with expert guidance from Trips & Ships Luxury Travel. Discover polar bears, Arctic wildlife, midnight sun voyages and luxury small ship exploration."
+                "@id": "https://www.tripsandships.com/hx-expeditions-galapagos-cruises#webpage",
+                "url": "https://www.tripsandships.com/hx-expeditions-galapagos-cruises",
+                "name": "HX Expeditions Galápagos Cruises",
+                "description": "Explore HX Expeditions Galápagos cruises with expert guidance from Trips & Ships Luxury Travel. Discover wildlife encounters, small ship exploration and the MS Santa Cruz II experience."
             },
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://www.tripsandships.com/hx-expeditions-svalbard-cruises#breadcrumb",
+                "@id": "https://www.tripsandships.com/hx-expeditions-galapagos-cruises#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
@@ -228,8 +228,8 @@ function HXExpeditionsGalapagosCruises() {
                     {
                         "@type": "ListItem",
                         "position": 4,
-                        "name": "Svalbard Cruises",
-                        "item": "https://www.tripsandships.com/hx-expeditions-svalbard-cruises"
+                        "name": "Galápagos Cruises",
+                        "item": "https://www.tripsandships.com/hx-expeditions-galapagos-cruises"
                     }
                 ]
             },
@@ -250,10 +250,10 @@ function HXExpeditionsGalapagosCruises() {
     return (
         <>
             <Helmet>
-                <title>HX Expeditions Svalbard Cruises | Polar Bears, Arctic Wildlife & Small Ship Exploration</title>
-                <meta name="title" content="HX Expeditions Svalbard Cruises | Luxury Arctic Expedition Experts" />
-                <meta name="description" content="Explore HX Expeditions Svalbard cruises with expert guidance from Trips & Ships Luxury Travel. Discover polar bears, Arctic wildlife, midnight sun voyages and luxury small ship exploration." />
-                <meta name="keywords" content="HX Expeditions Svalbard Cruises, Svalbard expedition cruises, Arctic expedition cruises, Polar bear cruises, Small ship Arctic cruises" />
+                <title>HX Expeditions Galápagos Cruises | Wildlife, Small Ship Exploration & MS Santa Cruz II</title>
+                <meta name="title" content="HX Expeditions Galápagos Cruises | Luxury Expedition Cruise Experts" />
+                <meta name="description" content="Explore HX Expeditions Galápagos cruises with expert guidance from Trips & Ships Luxury Travel. Discover wildlife encounters, small ship exploration and the MS Santa Cruz II experience." />
+                <meta name="keywords" content="HX Expeditions Galápagos Cruises, Galápagos expedition cruises, MS Santa Cruz II, Small ship Galápagos cruises, Galápagos wildlife cruises, HX Galápagos cruises, Galápagos luxury cruises, Galápagos Islands expedition cruises, Ecuador expedition cruises, Best Galápagos cruises for wildlife, Is MS Santa Cruz II worth it, Best time for Galápagos cruises, Small ship Galápagos expedition cruises, What wildlife can you see in the Galápagos, Luxury Galápagos cruise travel advisor, Galápagos cruises for first timers, Galápagos expedition cruises with snorkeling, Galápagos cruises USA, Luxury Galápagos travel advisor, Galápagos cruise expert, Ecuador expedition specialist, Small ship Galápagos travel agency" />
                 <script type="application/ld+json">{JSON.stringify(hxSchemaData)}</script>
             </Helmet>
 

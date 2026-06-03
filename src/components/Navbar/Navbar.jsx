@@ -390,6 +390,12 @@ const Navbar = () => {
               >
                 HX Expeditions vs Viking Expeditions</NavLink>
 
+              <NavLink
+                to="/hx-expeditions-vs-silversea-expeditions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions vs Silversea Expeditions</NavLink>
             </div>
           </div>
         </div>
@@ -783,12 +789,19 @@ const Navbar = () => {
             >
               HX Expeditions Galapagos Cruises</NavLink>
 
-               <NavLink
-                to="/hx-expeditions-vs-viking-expeditions"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                HX Expeditions vs Viking Expeditions</NavLink>
+            <NavLink
+              to="/hx-expeditions-vs-viking-expeditions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions vs Viking Expeditions</NavLink>
+
+            <NavLink
+              to="/hx-expeditions-vs-silversea-expeditions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions vs Silversea Expeditions</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
