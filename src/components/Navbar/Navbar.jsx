@@ -382,6 +382,14 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 HX Expeditions Galapagos Cruises</NavLink>
+
+              <NavLink
+                to="/hx-expeditions-vs-viking-expeditions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions vs Viking Expeditions</NavLink>
+
             </div>
           </div>
         </div>
@@ -774,6 +782,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               HX Expeditions Galapagos Cruises</NavLink>
+
+               <NavLink
+                to="/hx-expeditions-vs-viking-expeditions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions vs Viking Expeditions</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
