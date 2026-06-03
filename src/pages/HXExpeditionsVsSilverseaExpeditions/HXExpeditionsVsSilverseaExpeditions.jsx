@@ -34,13 +34,13 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/HXvsViking/hero1.jpg'
-// import hero2 from '../../assets/HXvsViking/hero2.jpg'
-// import hero3 from '../../assets/HXvsViking/hero3.jpg'
+import hero1 from '../../assets/HXExpeditionsVsSilverseaExpeditions/Hero_1.jpg'
+import hero2 from '../../assets/HXExpeditionsVsSilverseaExpeditions/Hero_2.jpg'
+import hero3 from '../../assets/HXExpeditionsVsSilverseaExpeditions/Hero_3.webp'
 
 function HXExpeditionsVsSilverseaExpeditions() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
-  const mediHeroImages = []
+  const mediHeroImages = [hero1, hero2, hero3]
 
   useEffect(() => {
     const mediTimer = setInterval(() => {
@@ -1714,20 +1714,20 @@ function HXExpeditionsVsSilverseaExpeditions() {
             </p>
 
             {/* DIRECT ACTION CONTACT BAR */}
-            <div style={{ 
-                margin: '40px auto', 
-                padding: '20px 30px', 
-                backgroundColor: 'rgba(255,255,255,0.05)', 
-                borderRadius: '50px', 
-                border: '1px solid rgba(255,255,255,0.1)',
-                display: 'inline-block'
+            <div style={{
+              margin: '40px auto',
+              padding: '20px 30px',
+              backgroundColor: 'rgba(255,255,255,0.05)',
+              borderRadius: '50px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              display: 'inline-block'
             }}>
-              <span style={{ 
-                  color: '#3b82f6', 
-                  fontSize: '15px', 
-                  fontWeight: '700', 
-                  textTransform: 'uppercase', 
-                  letterSpacing: '1px' 
+              <span style={{
+                color: '#3b82f6',
+                fontSize: '15px',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '1px'
               }}>
                 Contact Trips & Ships Luxury Travel today to begin planning your expedition adventure.
               </span>
