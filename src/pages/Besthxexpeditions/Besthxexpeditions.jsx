@@ -1,24 +1,33 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
-// import Profile_AH from "../../assets/image.webp"
+import Profile_AH from "../../assets/Media (3).jpg"
+import Profile_AH_image from "../../assets/Media (2).jpg"
 
-// ── HX Expedition images – swap paths to your actual assets ──────────────
-// import heroImg1 from '../../assets/BestHXExpeditions/hero1.jpg'
-// import heroImg2 from '../../assets/BestHXExpeditions/hero2.jpg'
-// import heroImg3 from '../../assets/BestHXExpeditions/hero3.jpg'
 
-// import antarcticaImg from '../../assets/BestHXExpeditions/antarctica-expedition.webp'
-// import galapagosImg from '../../assets/BestHXExpeditions/galapagos-expedition.webp'
-// import svalbardImg from '../../assets/BestHXExpeditions/svalbard-expedition.webp'
-// import greenlandImg from '../../assets/BestHXExpeditions/greenland-expedition.webp'
+import heroImg1 from '../../assets/Besthxexpeditions/_CebacoIsland_Panama_Fram_YuriChoufour-10-98.webp'
+import heroImg2 from '../../assets/Besthxexpeditions/ANDREA KLAUSSNER - 20220703_CAMP FRIEDA_8854_BYANDREAKLAUSSNER-2.webp'
+import heroImg3 from '../../assets/Besthxexpeditions/ANDREA KLAUSSNER - 20220706_IVITTUUT_9417_BYANDREAKLAUSSNER.webp'
 
-// import roaldAmundsenImg from '../../assets/BestHXExpeditions/ms-roald-amundsen.webp'
-// import fridtjofNansenImg from '../../assets/BestHXExpeditions/ms-fridtjof-nansen.webp'
-// import santaCruzImg from '../../assets/BestHXExpeditions/ms-santa-cruz-ii.webp'
-// import spitsbergenImg from '../../assets/BestHXExpeditions/ms-spitsbergen.webp'
+import antarcticaImg from '../../assets/Besthxexpeditions/antarticacruise.jpg'
+import galapagosImg from '../../assets/Besthxexpeditions/galapagoscruise.webp'
+import svalbardImg from '../../assets/Besthxexpeditions/svalbardcruise.jpg'
+import greenlandImg from '../../assets/Besthxexpeditions/greenlandcruise.jpg'
 
-// import zodiacLandingImg from '../../assets/BestHXExpeditions/zodiac-landing.webp'
-// import wildlifeImg from '../../assets/BestHXExpeditions/expedition-wildlife.webp'
+import roaldAmundsenImg from '../../assets/Besthxexpeditions/amundsen.webp'
+import fridtjofNansenImg from '../../assets/Besthxexpeditions/nansencruise.webp'
+import santaCruzImg from '../../assets/Besthxexpeditions/santacruise.jpg'
+import spitsbergenImg from '../../assets/Besthxexpeditions/spitsbergen.webp'
+
+import antarcticaImg1 from '../../assets/Besthxexpeditions/antarcticaImg1.jpg'
+import zodiacLandingImg1 from '../../assets/Besthxexpeditions/zodiacLandingImg1.webp'
+import svalbardImg1 from '../../assets/Besthxexpeditions/svalbardImg1.webp'
+import galapagosImg1 from '../../assets/Besthxexpeditions/galapagosImg1.webp'
+import greenlandImg1 from '../../assets/Besthxexpeditions/greenlandImg1.webp'
+import wildlifeImg1 from '../../assets/Besthxexpeditions/wildlifeImg1.webp'
+
+import Gal_pagos_Islands from '../../assets/Besthxexpeditions/Gal_pagos_Islands.jpg'
+
+
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -35,7 +44,7 @@ function BestHXExpeditions() {
 
     // ── Hero slider ────────────────────────────────────────────────────────
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [heroImg1, heroImg2, heroImg3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -63,6 +72,18 @@ function BestHXExpeditions() {
     // ── Ship tabs (new section) ────────────────────────────────────────────
     const [activeShip, setActiveShip] = useState(0)
 
+    // ── What To Expect tabs ───────────────────────────────────────────────
+    const [activeExpectTab, setActiveExpectTab] = useState(0)
+
+    // ── Mobile viewport ──────────────────────────────────────────────────
+    const [isMobileViewport, setIsMobileViewport] = useState(false)
+    useEffect(() => {
+        const handleResize = () => setIsMobileViewport(window.innerWidth < 992)
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
     // ─────────────────────────────────────────────────────────────────────
     // DATA
     // ─────────────────────────────────────────────────────────────────────
@@ -70,7 +91,7 @@ function BestHXExpeditions() {
     const mediItineraries = [
         {
             title: 'Antarctica Cruises',
-            // img: antarcticaImg,
+            img: antarcticaImg,
             badge: 'MOST POPULAR',
             bestFor: ['Bucket list travelers', 'Wildlife lovers', 'Dramatic scenery seekers', 'Travelers wanting the iconic expedition experience'],
             highlights: ['Penguin colonies', 'Whale sightings', 'Icebergs', 'Zodiac landings', 'Glacier scenery'],
@@ -78,7 +99,7 @@ function BestHXExpeditions() {
         },
         {
             title: 'Galápagos Cruises',
-            // img: galapagosImg,
+            img: galapagosImg,
             badge: 'EASIEST FOR BEGINNERS',
             bestFor: ['Wildlife lovers', 'Warmer weather travelers', 'Softer expedition experiences', 'First time expedition cruisers nervous about polar travel'],
             highlights: ['Incredible wildlife encounters', 'Easy Zodiac landings', 'Snorkeling opportunities', 'Educational naturalist programs', 'Smaller ship atmosphere'],
@@ -86,7 +107,7 @@ function BestHXExpeditions() {
         },
         {
             title: 'Svalbard Cruises',
-            // img: svalbardImg,
+            img: svalbardImg,
             badge: 'TRUE ARCTIC EXPERIENCE',
             bestFor: ['Arctic wildlife lovers', 'Polar bear enthusiasts', 'Travelers seeking remote Arctic exploration'],
             highlights: ['Polar bears', 'Walrus', 'Arctic foxes', 'Massive glaciers', 'Midnight sun'],
@@ -94,7 +115,7 @@ function BestHXExpeditions() {
         },
         {
             title: 'Greenland Cruises',
-            // img: greenlandImg,
+            img: greenlandImg,
             badge: 'SCENIC ARCTIC',
             bestFor: ['Scenic travelers', 'Cultural exploration', 'Iceberg photography', 'Travelers wanting less crowded Arctic experiences'],
             highlights: ['Massive icebergs', 'Inuit culture', 'Remote villages', 'Dramatic fjords', 'Arctic scenery'],
@@ -105,25 +126,25 @@ function BestHXExpeditions() {
     const ships = [
         {
             name: 'MS Roald Amundsen',
-            // img: roaldAmundsenImg,
+            img: roaldAmundsenImg,
             bestFor: ['Antarctica', 'Modern comfort', 'First time polar travelers'],
             note: "HX's hybrid powered ships have become particularly popular with first time expedition travelers seeking modern comfort."
         },
         {
             name: 'MS Fridtjof Nansen',
-            // img: fridtjofNansenImg,
+            img: fridtjofNansenImg,
             bestFor: ['Arctic exploration', 'Hybrid expedition travel', 'Comfortable expedition experiences'],
             note: 'A sister ship to Roald Amundsen, offering the same hybrid technology with excellent expedition programming.'
         },
         {
             name: 'MS Santa Cruz II',
-            // img: santaCruzImg,
+            img: santaCruzImg,
             bestFor: ['Galápagos wildlife', 'Smaller ship atmosphere', 'Beginner expedition travelers'],
             note: 'The MS Santa Cruz II is purpose-built for Galápagos exploration with expert naturalist guides onboard.'
         },
         {
             name: 'MS Spitsbergen',
-            // img: spitsbergenImg,
+            img: spitsbergenImg,
             bestFor: ['Arctic wildlife', 'More traditional expedition atmosphere'],
             note: 'MS Spitsbergen offers a classic expedition vessel experience for those seeking a more traditional atmosphere.'
         }
@@ -175,33 +196,186 @@ function BestHXExpeditions() {
         { question: 'Why use a travel advisor for expedition cruises?', answer: 'Expedition cruising involves major differences in ship style, destinations and activity levels where expert guidance is extremely valuable.' }
     ]
 
-    const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"]
-            },
-            { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences." },
-            { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-            { "@type": "WebPage", "name": "Best HX Expeditions Cruises for First Timers", "url": "https://www.tripsandships.com/best-hx-expeditions-cruises-for-first-timers", "description": "Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel." },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsandships.com/expedition-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Best HX Expeditions for First Timers", "item": "https://www.tripsandships.com/best-hx-expeditions-cruises-for-first-timers" }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": mediFaqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
-            }
-        ]
+    const mediSchemaData = 
+ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+      "name": "Best HX Expeditions Cruises for First Timers",
+      "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+      "description": "Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      },
+      "mainEntity": {
+        "@type": "Article",
+        "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com"
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+      "name": "Trips & Ships Luxury Travel",
+      "url": "https://www.tripsshipsluxurytravel.com",
+      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article",
+      "headline": "Best HX Expeditions Cruises for First Timers",
+      "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+      "description": "Expert guide to the best HX Expeditions cruises for first timers including Antarctica, Galápagos, Greenland and Svalbard expedition cruise recommendations.",
+      "image": "https://www.tripsshipsluxurytravel.com/images/best-hx-expeditions-for-first-timers.jpg",
+      "author": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+      },
+      "publisher": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "HX Expedition Cruise Planning",
+      "provider": {
+        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+      },
+      "serviceType": "Expedition Cruise Consulting",
+      "description": "Personalized expedition cruise planning services helping travelers choose the best HX Expeditions itinerary, destination and ship for their first expedition cruise."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tripsshipsluxurytravel.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "HX Expeditions",
+          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Best HX Expeditions Cruises for First Timers",
+          "item": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best HX Expeditions cruise for first timers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For many travelers, Antarctica and the Galápagos are the best first HX expedition cruises because they offer exceptional wildlife, memorable scenery and well-developed expedition programs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Antarctica good for a first expedition cruise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Antarctica is one of the world's most iconic expedition destinations and is often the top choice for first-time expedition travelers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which HX destination is easiest for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Galápagos is generally considered the easiest and most approachable expedition destination due to warmer weather, predictable operations and exceptional wildlife."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are HX expedition cruises physically demanding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Moderate mobility is helpful because Zodiac boarding, shore landings and walking excursions are common on many HX expeditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should first time expedition travelers expect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expect wildlife encounters, educational programming, Zodiac excursions, flexible itineraries and outdoor exploration focused on destination immersion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Drake Passage rough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be. Conditions vary significantly depending on weather and sea state, ranging from calm crossings to rougher experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which HX ship is best for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MS Roald Amundsen and MS Santa Cruz II are among the best HX ships for beginners because they combine comfort, expedition expertise and excellent destination experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are expedition cruises good for older travelers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many older travelers enjoy expedition cruises, although activity levels and mobility requirements should be considered carefully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included on HX expedition cruises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most HX cruises include accommodations, meals, educational lectures, expedition activities and onboard enrichment programs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Galápagos a good first expedition cruise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Galápagos offers incredible wildlife encounters, easy logistics and a beginner-friendly expedition experience."
+          }
+        }
+      ]
     }
+  ]
+};
+
+
 
     // ─────────────────────────────────────────────────────────────────────
     // RENDER
@@ -209,10 +383,15 @@ function BestHXExpeditions() {
     return (
         <>
             <Helmet>
-                <title>Best HX Expeditions Cruises for First Timers | Antarctica, Arctic &amp; Galápagos Guide</title>
-                <meta name="title" content="Best HX Expeditions Cruises for Beginners | Expert Planning Guide" />
+                <title>Best HX Expeditions Cruises for First Timers | Antarctica, Arctic & Galápagos Guide
+
+</title>
+                <meta name="title" content="Best HX Expeditions Cruises for Beginners | Expert Planning Guide
+" />
                 <meta name="description" content="Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel." />
-                <meta name="keywords" content="Best HX Expeditions cruises for first timers, HX expedition cruises, beginner expedition cruises, Antarctica expedition cruises, Arctic expedition cruises" />
+                <meta name="keywords" content="Best HX Expeditions Cruises for First Timers
+, HX expedition cruises
+, beginner expedition cruises, Antarctica expedition cruises, Arctic expedition cruises" />
                 <script type="application/ld+json">{JSON.stringify(mediSchemaData)}</script>
             </Helmet>
 
@@ -226,7 +405,7 @@ function BestHXExpeditions() {
                     <div
                         key={idx}
                         className={`medi-hero-background ${mediCurrentHero === idx ? 'medi-active' : ''}`}
-                        // style={{ backgroundImage: `url(${img})` }}
+                        style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
@@ -420,11 +599,11 @@ function BestHXExpeditions() {
                         {/* Right showcase */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                <img
                                     src={mediItineraries[mediSelectedItinerary].img}
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">
                                     {mediItineraries[mediSelectedItinerary].badge}
@@ -560,7 +739,7 @@ function BestHXExpeditions() {
                     {/* Ship showcase card */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center', background: 'rgba(255,255,255,0.04)', borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                         <div style={{ height: '420px', overflow: 'hidden', position: 'relative' }}>
-                            {/* <img src={ships[activeShip].img} alt={ships[activeShip].name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                            <img src={ships[activeShip].img} alt={ships[activeShip].name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, #0f1c2e)' }} />
                         </div>
                         <div style={{ padding: '48px 48px 48px 0' }}>
@@ -582,79 +761,313 @@ function BestHXExpeditions() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                WHAT TO EXPECT  (medi-diff-section)
+                WHAT TO EXPECT  — Premium tabbed design
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-diff-section">
-                <div className="medi-diff-container">
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">EXPEDITION REALITY CHECK</span>
-                        <h2 className="medi-diff-main-title">What To Expect On Your First Expedition Cruise</h2>
-                        <div className="medi-diff-separator"></div>
-                    </div>
+            <section style={{
+                background: 'linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-white) 100%)',
+                backgroundImage: 'radial-gradient(var(--navy-border) 1px, transparent 1px)',
+                backgroundSize: '32px 32px',
+                borderTop: '1px solid var(--navy-border)',
+                borderBottom: '1px solid var(--navy-border)',
+                padding: isMobileViewport ? '60px 16px' : '100px 24px',
+                position: 'relative',
+                overflow: 'hidden',
+                width: '100%',
+                boxSizing: 'border-box'
+            }}>
+                {/* Glowing auras */}
+                <div style={{
+                    position: 'absolute', top: '5%', left: '5%',
+                    width: '350px', height: '350px', borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(39,68,114,0.12) 0%, transparent 70%)',
+                    filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1
+                }} />
+                <div style={{
+                    position: 'absolute', bottom: '10%', right: '5%',
+                    width: '400px', height: '400px', borderRadius: '50%',
+                    background: 'radial-gradient(circle, rgba(39,68,114,0.10) 0%, transparent 70%)',
+                    filter: 'blur(70px)', pointerEvents: 'none', zIndex: 1
+                }} />
 
-                    <div className="medi-diff-grid">
+                <div style={{
+                    maxWidth: '1200px', margin: '0 auto',
+                    position: 'relative', zIndex: 2,
+                    width: '100%', boxSizing: 'border-box'
+                }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
+                        gap: '40px',
+                        width: '100%', boxSizing: 'border-box',
+                        alignItems: 'start'
+                    }}>
 
-                        {/* Card 1: Travelers should expect */}
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Compass size={24} /></div>
-                                <h3 className="medi-diff-card-title">Travelers Should Expect</h3>
-                            </div>
-                            <p className="medi-diff-card-text">Expedition cruising feels very different from mainstream cruising.</p>
-                            <ul className="medi-diff-experience-list">
-                                {['Zodiac landings','Flexible itineraries','Outdoor exploration','Casual atmosphere','Educational lectures','Wildlife focused days','Early mornings for sightings'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={16} className="medi-diff-list-icon" /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Card 2: Should NOT expect */}
-                        <div className="medi-diff-card medi-diff-card-white">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Moon size={24} /></div>
-                                <h3 className="medi-diff-card-title">Travelers Should Not Expect</h3>
-                            </div>
-                            <div className="medi-diff-ship-stat-box">
-                                <div className="medi-diff-stat-ring">
-                                    <div className="medi-diff-stat-num" style={{ fontSize: '16px', lineHeight: '1.2' }}>ADV</div>
+                        {/* ── Left: sticky navigation console ── */}
+                        <div style={{
+                            display: 'flex', flexDirection: 'column', gap: '24px',
+                            position: isMobileViewport ? 'static' : 'sticky',
+                            top: '100px', zIndex: 5
+                        }}>
+                            <div style={{ textAlign: isMobileViewport ? 'center' : 'left' }}>
+                                <div style={{
+                                    display: 'inline-flex', alignItems: 'center', gap: '8px',
+                                    padding: '6px 16px', borderRadius: '100px',
+                                    background: 'rgba(39,68,114,0.08)',
+                                    border: '1px solid rgba(39,68,114,0.15)',
+                                    marginBottom: '16px'
+                                }}>
+                                    <Compass size={14} color="#274472" />
+                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', color: '#274472' }}>
+                                        EXPEDITION REALITY CHECK
+                                    </span>
                                 </div>
-                                <div className="medi-diff-stat-label">ADVENTURE FIRST</div>
-                            </div>
-                            <p className="medi-diff-card-text">The destination itself becomes the entertainment.</p>
-                            <ul className="medi-diff-experience-list">
-                                {['Casinos','Broadway shows','Large ship nightlife','Massive entertainment venues'].map((item, i) => (
-                                    <li key={i}>
-                                        <span style={{ color: '#ef4444', marginRight: '8px', fontWeight: 700 }}>✕</span>
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="medi-diff-quote-wrapper">
-                                <p className="medi-diff-quote-text">The destination itself becomes the entertainment.</p>
-                            </div>
-                        </div>
-
-                        {/* Card 3: Expedition focus */}
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Camera size={24} /></div>
-                                <h3 className="medi-diff-card-title">The HX Expedition Philosophy</h3>
-                            </div>
-                            <p className="medi-diff-card-text">HX emphasizes:</p>
-                            <ul className="medi-diff-focus-list-premium">
-                                {['Science focused experiences','Expert expedition leadership','Strong onboard organization','Beginner friendly atmosphere','Educational programming'].map((item, i) => (
-                                    <li key={i}>
-                                        <span className="medi-diff-list-num">0{i + 1}</span>
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="medi-diff-conclusion-box">
-                                <p className="medi-diff-conclusion-text">
-                                    For travelers prioritizing exploration over onboard spectacle, this approach is highly appealing.
+                                <h2 style={{
+                                    fontWeight: '500', lineHeight: '1.25',
+                                    margin: '0 0 16px 0',
+                                    fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
+                                    color: '#0f1c2e',
+                                    wordBreak: 'break-word', overflowWrap: 'break-word'
+                                }}>
+                                    What To Expect On Your First Expedition Cruise
+                                </h2>
+                                <p style={{
+                                    fontSize: '0.95rem', margin: '0 0 24px 0',
+                                    lineHeight: '1.6', fontWeight: '400', color: '#475569'
+                                }}>
+                                    Select a topic below to explore what first-time expedition travelers should know.
                                 </p>
                             </div>
+
+                            {/* Tab buttons */}
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: isMobileViewport ? 'row' : 'column',
+                                gap: '12px',
+                                overflowX: isMobileViewport ? 'auto' : 'visible',
+                                paddingBottom: isMobileViewport ? '12px' : '0',
+                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
+                            }}>
+                                {[
+                                    { number: '01', title: 'Travelers Should Expect', desc: 'Wildlife, landings & outdoor life' },
+                                    { number: '02', title: 'Travelers Should Not Expect', desc: 'What expedition cruising is not' },
+                                    { number: '03', title: 'The HX Expedition Philosophy', desc: 'Science, leadership & exploration' }
+                                ].map((tab, idx) => {
+                                    const isActive = activeExpectTab === idx
+                                    return (
+                                        <button
+                                            key={idx}
+                                            onClick={() => setActiveExpectTab(idx)}
+                                            style={{
+                                                display: 'flex', alignItems: 'center',
+                                                justifyContent: 'space-between',
+                                                padding: '20px 24px',
+                                                background: isActive ? '#0f1c2e' : 'transparent',
+                                                border: isActive ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(39,68,114,0.2)',
+                                                borderRadius: '16px', cursor: 'pointer',
+                                                textAlign: 'left',
+                                                width: isMobileViewport ? '260px' : '100%',
+                                                flexShrink: 0,
+                                                scrollSnapAlign: 'start',
+                                                transform: isActive && !isMobileViewport ? 'translateX(8px)' : 'translateX(0)',
+                                                boxShadow: isActive ? '0 8px 32px rgba(15,28,46,0.18)' : 'none',
+                                                transition: 'all 0.3s ease',
+                                                outline: 'none'
+                                            }}
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                                <span style={{
+                                                    fontSize: '1.25rem', fontWeight: '800',
+                                                    color: isActive ? '#93c5fd' : '#94a3b8',
+                                                    fontFamily: 'monospace'
+                                                }}>{tab.number}</span>
+                                                <div>
+                                                    <div style={{
+                                                        fontSize: '0.95rem', fontWeight: '700',
+                                                        color: isActive ? '#ffffff' : '#334155'
+                                                    }}>{tab.title}</div>
+                                                    {!isMobileViewport && (
+                                                        <div style={{
+                                                            fontSize: '0.75rem',
+                                                            color: isActive ? '#94a3b8' : '#94a3b8',
+                                                            marginTop: '4px'
+                                                        }}>{tab.desc}</div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div style={{
+                                                width: '8px', height: '8px', borderRadius: '50%',
+                                                background: isActive ? '#93c5fd' : 'rgba(39,68,114,0.3)',
+                                                boxShadow: isActive ? '0 0 10px #93c5fd' : 'none',
+                                                transition: 'all 0.3s ease'
+                                            }} />
+                                        </button>
+                                    )
+                                })}
+                            </div>
                         </div>
+
+                        {/* ── Right: dark content panel ── */}
+                        <div style={{
+                            background: '#0f1c2e',
+                            border: '1px solid rgba(39,68,114,0.3)',
+                            borderRadius: '24px',
+                            padding: isMobileViewport ? '24px' : '48px',
+                            boxShadow: '0 20px 60px rgba(15,28,46,0.25)',
+                            minHeight: '450px',
+                            display: 'flex', flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            position: 'relative', overflow: 'hidden',
+                            boxSizing: 'border-box'
+                        }}>
+                            {/* Watermark */}
+                            <div style={{
+                                position: 'absolute', bottom: '24px', right: '28px',
+                                color: 'rgba(39,68,114,0.4)', fontFamily: 'monospace',
+                                fontSize: '11px', fontWeight: '700', letterSpacing: '2px',
+                                pointerEvents: 'none', zIndex: 1
+                            }}>HX EXPEDITIONS // FIRST TIMER GUIDE</div>
+
+                            <div style={{ position: 'relative', zIndex: 2 }}>
+
+                                {/* ── Tab 01: Travelers Should Expect ── */}
+                                {activeExpectTab === 0 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                background: 'rgba(39,68,114,0.4)',
+                                                border: '1px solid rgba(39,68,114,0.5)',
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                            }}>
+                                                <Compass size={22} color="#93c5fd" />
+                                            </div>
+                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                                Travelers Should Expect
+                                            </h3>
+                                        </div>
+
+                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                                            Expedition cruising feels very different from mainstream cruising.
+                                        </p>
+
+                                        <ul className="medi-diff-experience-list" style={{ marginBottom: '20px' }}>
+                                            {['Zodiac landings', 'Flexible itineraries', 'Outdoor exploration', 'Casual atmosphere', 'Educational lectures', 'Wildlife focused days', 'Early mornings for sightings'].map((item, i) => (
+                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                    <CheckCircle size={16} className="medi-diff-list-icon" style={{ color: '#93c5fd', flexShrink: 0 }} />
+                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>The destination itself becomes the entertainment on every expedition cruise.</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* ── Tab 02: Travelers Should NOT Expect ── */}
+                                {activeExpectTab === 1 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                background: 'rgba(39,68,114,0.4)',
+                                                border: '1px solid rgba(39,68,114,0.5)',
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                            }}>
+                                                <Moon size={22} color="#93c5fd" />
+                                            </div>
+                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                                Travelers Should Not Expect
+                                            </h3>
+                                        </div>
+
+                                        <div style={{
+                                            background: 'rgba(39,68,114,0.2)',
+                                            border: '1px solid rgba(39,68,114,0.3)',
+                                            borderRadius: '16px', padding: '20px 24px',
+                                            marginBottom: '24px',
+                                            display: 'flex', alignItems: 'center', gap: '20px'
+                                        }}>
+                                            <div style={{
+                                                width: '56px', height: '56px', borderRadius: '50%',
+                                                border: '2px solid #93c5fd',
+                                                background: 'rgba(255,255,255,0.03)',
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                flexShrink: 0
+                                            }}>
+                                                <span style={{ fontSize: '10px', fontWeight: 700, color: '#ffffff', textAlign: 'center', lineHeight: 1.1 }}>ADV</span>
+                                            </div>
+                                            <span style={{ color: '#93c5fd', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase' }}>ADVENTURE FIRST</span>
+                                        </div>
+
+                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6', fontWeight: 700 }}>The following are not part of expedition cruising:</p>
+
+                                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                            {['Casinos', 'Broadway shows', 'Large ship nightlife', 'Massive entertainment venues'].map((item, i) => (
+                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                    <span style={{
+                                                        width: '22px', height: '22px', borderRadius: '50%',
+                                                        background: 'rgba(239,68,68,0.15)',
+                                                        border: '1px solid rgba(239,68,68,0.4)',
+                                                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                        flexShrink: 0, color: '#ef4444', fontWeight: 700, fontSize: '13px'
+                                                    }}>✕</span>
+                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>The destination itself becomes the entertainment.</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* ── Tab 03: HX Expedition Philosophy ── */}
+                                {activeExpectTab === 2 && (
+                                    <div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                            <div style={{
+                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                background: 'rgba(39,68,114,0.4)',
+                                                border: '1px solid rgba(39,68,114,0.5)',
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                            }}>
+                                                <Camera size={22} color="#93c5fd" />
+                                            </div>
+                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                                The HX Expedition Philosophy
+                                            </h3>
+                                        </div>
+
+                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6', fontWeight: 700 }}>HX emphasizes:</p>
+
+                                        <ul className="medi-diff-focus-list-premium" style={{ marginBottom: '20px' }}>
+                                            {['Science focused experiences', 'Expert expedition leadership', 'Strong onboard organization', 'Beginner friendly atmosphere', 'Educational programming'].map((item, i) => (
+                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                                                    <span style={{
+                                                        minWidth: '32px', height: '32px', borderRadius: '8px',
+                                                        background: 'rgba(39,68,114,0.4)',
+                                                        border: '1px solid rgba(39,68,114,0.5)',
+                                                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                        fontSize: '0.75rem', fontWeight: 800,
+                                                        color: '#93c5fd', fontFamily: 'monospace'
+                                                    }}>0{i + 1}</span>
+                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>For travelers prioritizing exploration over onboard spectacle, this approach is highly appealing.</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -673,19 +1086,19 @@ function BestHXExpeditions() {
                     </div>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
                         {[
-                            // { img: `antarcticaImg`, caption: 'First time Antarctica expedition cruise', span: 'row' },
-                            // { img: zodiacLandingImg, caption: 'HX expedition travelers boarding Zodiac', span: '' },
-                            // { img: svalbardImg,caption: 'Polar bear during Svalbard expedition', span: '' },
-                            // { img: galapagosImg,caption: 'Galápagos wildlife expedition cruise', span: '' },
-                            // { img: greenlandImg,caption: 'Greenland icebergs expedition',span: '' },
-                            // { img: wildlifeImg,caption: 'Beginner expedition cruise travelers', span: '' },
+                            { img: antarcticaImg1, caption: 'First time Antarctica expedition cruise', span: 'row' },
+                            { img: zodiacLandingImg1, caption: 'HX expedition travelers boarding Zodiac', span: '' },
+                            { img: svalbardImg1,caption: 'Polar bear during Svalbard expedition', span: '' },
+                            { img: galapagosImg1,caption: 'Galápagos wildlife expedition cruise', span: '' },
+                            { img: greenlandImg1,caption: 'Greenland icebergs expedition',span: '' },
+                            { img: wildlifeImg1,caption: 'Beginner expedition cruise travelers', span: '' },
                         ].map((item, i) => (
                             <div key={i} style={{
                                 position: 'relative', borderRadius: '14px', overflow: 'hidden',
                                 height: i === 0 ? '400px' : '230px',
                                 gridRow: i === 0 ? 'span 2' : '',
                             }}>
-                                {/* <img src={item.img} alt={item.caption} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} /> */}
+                                <img src={item.img} alt={item.caption} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.75), transparent)', padding: '20px 16px 14px' }}>
                                     <span style={{ color: '#ffffff', fontSize: '13px', fontWeight: '500' }}>{item.caption}</span>
                                 </div>
@@ -704,7 +1117,7 @@ function BestHXExpeditions() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_AH} alt="Angela Hughes – Luxury Expedition Expert" /> */}
+                                <img src={Profile_AH} alt="Angela Hughes – Luxury Expedition Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -727,7 +1140,8 @@ function BestHXExpeditions() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Why Expedition Cruise Guidance <br className="medi-growth-title-break" />Matters More Than Ever
+                                    Expert Insight from 
+                                  <br className="medi-growth-title-break" />Angela Hughes
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
@@ -780,6 +1194,34 @@ function BestHXExpeditions() {
                 </div>
             </section>
 
+
+ {/* ════════════════════════════════════════════════════════════
+                VIDEO
+            ════════════════════════════════════════════════════════════ */}
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <h2 className="medi-section-heading">Experience HX Expeditions</h2>
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    <p style={{ color: '#475569', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto 40px', lineHeight: '1.6' }}>
+                        Watch this curated showcase of authentic expedition adventures, stunning wildlife encounters and remote destinations that await aboard HX Expeditions.
+                    </p>
+                    <div style={{ maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)', aspectRatio: '16/9', background: '#000' }}>
+                        <iframe
+                            width="100%" height="100%"
+                            src="https://www.youtube.com/embed/qg6IWVuv2nQ"
+                            title="Experience HX Expeditions"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        />
+                    </div>
+                </div>
+            </section>
+
+
+
             {/* ════════════════════════════════════════════════════════════
                 IS HX LUXURY  (medi-luxury-definition-section)
             ════════════════════════════════════════════════════════════ */}
@@ -816,7 +1258,7 @@ function BestHXExpeditions() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        {/* <img src={zodiacLandingImg} alt="HX expedition Zodiac landing" className="medi-luxury-main-image" /> */}
+                        <img src={Gal_pagos_Islands} alt="HX expedition Zodiac landing" className="medi-luxury-main-image" />
                     </div>
                 </div>
             </section>
@@ -935,88 +1377,6 @@ function BestHXExpeditions() {
                 </div>
             </section>
 
-            {/* ════════════════════════════════════════════════════════════
-                WHY WORK WITH US  (medi-work-with-us-section)
-            ════════════════════════════════════════════════════════════ */}
-            <section className="medi-work-with-us-section">
-                <div className="medi-work-with-us-container">
-
-                    <div className="medi-work-header-card">
-                        <span className="medi-work-eyebrow">ELITE EXPEDITION ADVISOR ADVANTAGE</span>
-                        <h2 className="medi-section-heading white-heading">Why Travelers Work with Trips &amp; Ships Luxury Travel</h2>
-                        <div className="medi-heading-separator-bar custom-bar"></div>
-                        <p className="medi-work-intro-para">
-                            Expedition cruise planning involves major differences in ship style, destinations and activity levels where expert guidance is extremely valuable.
-                        </p>
-                    </div>
-
-                    <div className="medi-work-timeline-flow">
-                        <div className="medi-timeline-line"></div>
-
-                        <div className="medi-timeline-step step-left">
-                            <div className="medi-timeline-node"><Compass size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 01</div>
-                                <h3 className="medi-pillar-title">Working with experienced expedition advisors helps travelers:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        [CheckCircle, 'Choose the right first expedition destination'],
-                                        [Calendar,    'Select the best season for their goals'],
-                                        [Crown,       'Match ship to destination and comfort level'],
-                                        [Gem,         'Access exclusive amenities and pricing'],
-                                        [Compass,     'Avoid costly beginner planning mistakes'],
-                                        [MapPin,      'Match destinations to wildlife interests'],
-                                    ].map(([Icon, text], i) => (
-                                        <li key={i}><Icon size={18} className="medi-pillar-list-icon icon-theme" /><span>{text}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="medi-timeline-step step-right">
-                            <div className="medi-timeline-node"><Award size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 02</div>
-                                <h3 className="medi-pillar-title">Angela Hughes is globally recognized for luxury travel expertise through:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        [Mic,          'Travel industry speaking engagements'],
-                                        [FileText,     'Weekly travel columns'],
-                                        [Award,        'Advisory board leadership'],
-                                        [Globe,        'International media recognition'],
-                                        [GraduationCap,'Luxury Travel University training programs'],
-                                    ].map(([Icon, text], i) => (
-                                        <li key={i}><Icon size={18} className="medi-pillar-list-icon icon-theme" /><span>{text}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="medi-timeline-step step-left">
-                            <div className="medi-timeline-node"><Ship size={18} /></div>
-                            <div className="medi-timeline-card">
-                                <div className="medi-card-step-badge">STEP 03</div>
-                                <h3 className="medi-pillar-title">Trips &amp; Ships Luxury Travel specializes in:</h3>
-                                <div className="medi-pillar-line-bar"></div>
-                                <ul className="medi-pillar-list">
-                                    {[
-                                        [Ship,    'Luxury cruises'],
-                                        [Anchor,  'River cruising'],
-                                        [Compass, 'Expedition voyages'],
-                                        [Star,    'Safaris'],
-                                        [MapPin,  'Premium global travel planning'],
-                                    ].map(([Icon, text], i) => (
-                                        <li key={i}><Icon size={18} className="medi-pillar-list-icon icon-theme" /><span>{text}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
 
             {/* ════════════════════════════════════════════════════════════
                 ANGELA HUGHES AUTHORITY  (medi-authority-section)
@@ -1026,18 +1386,18 @@ function BestHXExpeditions() {
 
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes &amp; Trips &amp; Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes <br /> Trips &amp; Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img
-                                    src={Profile_AH}
+                                <img
+                                    src={Profile_AH_image}
                                     alt="Angela Hughes"
                                     style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }}
-                                /> */}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
@@ -1093,7 +1453,7 @@ function BestHXExpeditions() {
                     <div style={{ maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)', aspectRatio: '16/9', background: '#000' }}>
                         <iframe
                             width="100%" height="100%"
-                            src="https://www.youtube.com/embed/qUpr3evauEc"
+                            src="https://www.youtube.com/embed/GxZwFr4SNBY"
                             title="Experience HX Expeditions"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1101,41 +1461,6 @@ function BestHXExpeditions() {
                             allowFullScreen
                             style={{ display: 'block' }}
                         />
-                    </div>
-                </div>
-            </section>
-
-            {/* ════════════════════════════════════════════════════════════
-                INTERNAL LINKING BUTTONS  ← NEW SECTION (inline CSS)
-            ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#0f1c2e', padding: '60px 20px' }}>
-                <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-                    <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#93c5fd', display: 'block', marginBottom: '24px' }}>
-                        EXPLORE MORE HX DESTINATIONS
-                    </span>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', justifyContent: 'center' }}>
-                        {[
-                            { label: 'Antarctica Cruises',   href: '/hx-expeditions-antarctica-cruises',  icon: <Snowflake size={16} /> },
-                            { label: 'Svalbard Cruises',     href: '/hx-expeditions-svalbard-cruises',    icon: <Wind size={16} /> },
-                            { label: 'Greenland Cruises',    href: '/hx-expeditions-greenland-cruises',   icon: <Globe size={16} /> },
-                            { label: 'Galápagos Cruises',    href: '/hx-expeditions-galapagos-cruises',   icon: <Sun size={16} /> },
-                            { label: 'Antarctica vs Arctic', href: '/antarctica-vs-arctic-expeditions',   icon: <Compass size={16} /> },
-                            { label: 'Contact Us',           href: '/contact',                             icon: <Phone size={16} /> },
-                        ].map((link, i) => (
-                            <a key={i} href={link.href} style={{
-                                display: 'inline-flex', alignItems: 'center', gap: '8px',
-                                padding: '12px 24px', borderRadius: '30px',
-                                border: '2px solid rgba(39,68,114,0.6)',
-                                background: 'rgba(39,68,114,0.15)',
-                                color: '#e2e8f0', fontSize: '14px', fontWeight: '600',
-                                textDecoration: 'none', transition: 'all 0.25s ease'
-                            }}
-                                onMouseEnter={e => { e.currentTarget.style.background = '#274472'; e.currentTarget.style.borderColor = '#274472' }}
-                                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(39,68,114,0.15)'; e.currentTarget.style.borderColor = 'rgba(39,68,114,0.6)' }}
-                            >
-                                {link.icon}{link.label}
-                            </a>
-                        ))}
                     </div>
                 </div>
             </section>
@@ -1173,7 +1498,7 @@ function BestHXExpeditions() {
                 <div className="medi-cta-bg-pattern-layer"></div>
                 <div className="medi-cta-content-relative">
                     <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Ready To Plan Your First HX Expedition Cruise?</h2>
+                        <h2 className="medi-cta-heading-white">Ready To Plan Your First <br /> HX  Expedition Cruise?</h2>
                         <div className="medi-cta-separator-white"></div>
 
                         <p className="medi-cta-paragraph-white">

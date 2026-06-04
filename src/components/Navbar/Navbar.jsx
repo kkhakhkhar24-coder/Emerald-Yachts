@@ -403,6 +403,14 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best HX Expeditions Cruises for First-Timers</NavLink>
+
+              <NavLink
+                to="/hx-expeditions-ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions Ships</NavLink>
+
             </div>
           </div>
         </div>
@@ -816,6 +824,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best HX Expeditions Cruises for First-Timers</NavLink>
+
+                 <NavLink
+                to="/hx-expeditions-ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                HX Expeditions Ships</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
