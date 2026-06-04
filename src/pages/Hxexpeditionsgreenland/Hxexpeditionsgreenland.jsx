@@ -9,7 +9,8 @@ import {
     Globe, LayoutList, Heart, Utensils, Sun, Award,
     Baby, Moon, Music,
     Mic, FileText, GraduationCap, Camera, Snowflake, Waves, Wind, Mountain,
-    X, ZoomIn
+    X, ZoomIn,
+    Check
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -100,12 +101,7 @@ function GreenlandHighlightsSection() {
     const current = tabs[activeTab]
 
     return (
-        <section style={{
-            background: 'var(--bg-soft)',
-            padding: '100px 20px',
-            position: 'relative',
-            overflow: 'hidden',
-        }}>
+        <section className="gl-highlights-section">
             {/* Subtle background decoration */}
             <div style={{
                 position: 'absolute', top: 0, right: 0,
@@ -123,7 +119,14 @@ function GreenlandHighlightsSection() {
             <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
 
                 {/* Section header */}
-                <div style={{ marginBottom: '56px' }}>
+                <div style={{
+                    marginBottom: '56px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    padding: '0 16px'
+                }}>
                     <span style={{
                         display: 'inline-block',
                         background: 'var(--navy)',
@@ -156,7 +159,7 @@ function GreenlandHighlightsSection() {
                 }} className="gl-highlights-grid">
 
                     {/* Left: Tab selector */}
-                    <div style={{
+                    <div className="gl-tab-selector-container" style={{
                         background: 'var(--bg-dark)',
                         padding: '40px 0',
                         display: 'flex',
@@ -170,6 +173,7 @@ function GreenlandHighlightsSection() {
                                 <button
                                     key={i}
                                     onClick={() => setActiveTab(i)}
+                                    className={`gl-tab-button ${isActive ? 'active' : ''}`}
                                     style={{
                                         background: isActive ? 'rgba(231,243,245,0.10)' : 'transparent',
                                         border: 'none',
@@ -210,7 +214,7 @@ function GreenlandHighlightsSection() {
                         })}
 
                         {/* Decorative bottom tag */}
-                        <div style={{
+                        <div className="gl-tab-bottom-tag" style={{
                             marginTop: 'auto', padding: '24px 28px 10px',
                             borderTop: '1px solid rgba(255,255,255,0.06)',
                         }}>
@@ -223,7 +227,7 @@ function GreenlandHighlightsSection() {
                     </div>
 
                     {/* Right: Content panel */}
-                    <div style={{ padding: '48px 52px', display: 'flex', flexDirection: 'column', gap: '28px' }}>
+                    <div className="gl-content-panel" style={{ padding: '48px 52px', display: 'flex', flexDirection: 'column', gap: '28px' }}>
 
                         {/* Tab 0: Icebergs */}
                         {activeTab === 0 && (
@@ -339,7 +343,7 @@ function GreenlandHighlightsSection() {
                                     textTransform: 'uppercase', color: 'var(--text-muted)',
                                     fontFamily: 'var(--font-body)', margin: '0 0 16px',
                                 }}>Communities often visited:</p>
-                                <div style={{
+                                <div className="gl-settlements-grid" style={{
                                     display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
                                     gap: '10px', marginBottom: '32px',
                                 }}>
@@ -395,8 +399,61 @@ function GreenlandHighlightsSection() {
                 </div>
 
                 <style>{`
-                    @media (max-width: 768px) {
+                    .gl-highlights-section {
+                        background: var(--bg-soft);
+                        padding: 100px 20px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    
+                    @media (max-width: 992px) {
+                        .gl-highlights-section {
+                            padding: 60px 16px !important;
+                        }
                         .gl-highlights-grid {
+                            grid-template-columns: 1fr !important;
+                        }
+                        .gl-tab-selector-container {
+                            flex-direction: row !important;
+                            padding: 16px 20px !important;
+                            gap: 8px !important;
+                            overflow-x: auto;
+                            -webkit-overflow-scrolling: touch;
+                            scrollbar-width: none;
+                        }
+                        .gl-tab-selector-container::-webkit-scrollbar {
+                            display: none;
+                        }
+                        .gl-tab-button {
+                            width: auto !important;
+                            flex: 0 0 auto;
+                            border-left: none !important;
+                            border-bottom: 4px solid transparent !important;
+                            padding: 14px 20px !important;
+                            gap: 10px !important;
+                        }
+                        .gl-tab-button.active {
+                            border-bottom: 4px solid var(--bg-soft) !important;
+                            background: rgba(231,243,245,0.10) !important;
+                        }
+                        .gl-tab-bottom-tag {
+                            display: none !important;
+                        }
+                        .gl-content-panel {
+                            padding: 32px 24px !important;
+                            gap: 20px !important;
+                        }
+                        .gl-settlements-grid {
+                            grid-template-columns: repeat(2, 1fr) !important;
+                        }
+                    }
+                    
+                    @media (max-width: 640px) {
+                        .gl-content-panel {
+                            padding: 24px 16px !important;
+                            gap: 16px !important;
+                        }
+                        .gl-settlements-grid {
                             grid-template-columns: 1fr !important;
                         }
                     }
@@ -915,10 +972,53 @@ function HXExpeditionsGreenland() {
                 background: '#f8fafc',
                 borderTop: '1px solid rgba(39, 68, 114, 0.08)',
                 borderBottom: '1px solid rgba(39, 68, 114, 0.08)',
-                padding: '80px 20px',
+                padding: isMobileViewport ? '60px 16px' : '100px 24px',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
+                {/* Localized Responsive Logic */}
+                <style>{`
+        .greenland-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .greenland-advantages-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .greenland-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .greenland-text-side {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .greenland-advantages-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on Tablet */
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .greenland-advantages-list {
+                grid-template-columns: 1fr; /* 1 column on Mobile */
+            }
+            .greenland-separator {
+                margin: 0 auto 28px !important;
+            }
+        }
+    `}</style>
+
+                {/* Decorative Glow */}
                 <div style={{
                     position: 'absolute',
                     top: '10%',
@@ -937,15 +1037,10 @@ function HXExpeditionsGreenland() {
                     position: 'relative',
                     zIndex: 2
                 }}>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: '1.1fr 0.9fr',
-                        gap: '60px',
-                        alignItems: 'center'
-                    }} className="medi-premium-intro-grid">
+                    <div className="greenland-grid">
 
                         {/* Text Content Block */}
-                        <div>
+                        <div className="greenland-text-side">
                             <span style={{
                                 display: 'inline-block',
                                 background: 'rgba(39, 68, 114, 0.06)',
@@ -966,12 +1061,12 @@ function HXExpeditionsGreenland() {
                                 fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)',
                                 fontWeight: '500',
                                 lineHeight: '1.25',
-                                margin: '0 0 20px 0',
+                                margin: '0 0 16px 0',
                                 fontFamily: 'var(--font-display)'
                             }}>
                                 Why Greenland Is One Of The World’s Most Extraordinary Expedition Destinations
                             </h2>
-                            <div style={{
+                            <div className="greenland-separator" style={{
                                 width: '80px',
                                 height: '3px',
                                 background: 'linear-gradient(90deg, var(--navy) 0%, transparent 100%)',
@@ -1019,23 +1114,20 @@ function HXExpeditionsGreenland() {
                                 textTransform: 'uppercase',
                                 letterSpacing: '1.5px',
                                 marginBottom: '20px',
-                                fontFamily: 'var(--font-body)'
+                                fontFamily: 'var(--font-body)',
+                                textAlign: isMobileViewport ? 'center' : 'left'
                             }}>
                                 Unlike more commercial cruise destinations, Greenland offers:
                             </p>
-                            <div style={{
-                                display: 'grid',
-                                gridTemplateColumns: '1fr',
-                                gap: '14px'
-                            }}>
+                            <div className="greenland-advantages-list">
                                 {[
-                                    { icon: Mountain, label: 'Vast untouched Arctic scenery' },
+                                    { icon: Ship, label: 'Vast untouched Arctic scenery' },
                                     { icon: Snowflake, label: 'Towering icebergs' },
                                     { icon: Waves, label: 'Deep fjord systems' },
                                     { icon: Globe, label: 'Inuit cultural experiences' },
                                     { icon: MapPin, label: 'Remote settlements' },
                                     { icon: Ship, label: 'Small ship exploration' },
-                                    { icon: Camera, label: 'Extraordinary photography opportunities' },
+                                    { icon: Camera, label: 'Extraordinary photography' },
                                     { icon: Star, label: 'Wildlife rich Arctic waters' }
                                 ].map(({ icon: Icon, label }, i) => (
                                     <div key={i} style={{
@@ -1047,7 +1139,7 @@ function HXExpeditionsGreenland() {
                                         padding: '16px 20px',
                                         borderRadius: '16px',
                                         boxShadow: '0 4px 12px rgba(39, 68, 114, 0.01)',
-                                        transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
+                                        transition: 'all 0.3s ease'
                                     }}
                                         className="medi-immersion-card-item"
                                     >
@@ -1062,17 +1154,17 @@ function HXExpeditionsGreenland() {
                                             color: 'var(--navy)',
                                             flexShrink: 0,
                                             border: '1px solid rgba(39, 68, 114, 0.12)',
-                                            transition: 'all 0.3s ease'
                                         }}
                                             className="medi-immersion-icon-box"
                                         >
                                             <Icon size={20} />
                                         </div>
                                         <span style={{
-                                            fontSize: '0.95rem',
+                                            fontSize: '0.9rem',
                                             fontWeight: '600',
                                             color: 'var(--text-body)',
-                                            fontFamily: 'var(--font-body)'
+                                            fontFamily: 'var(--font-body)',
+                                            lineHeight: '1.3'
                                         }}>{label}</span>
                                     </div>
                                 ))}
@@ -1213,12 +1305,36 @@ function HXExpeditionsGreenland() {
                         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255,255,255,0.05);
                     }
 
+                    .greenland-gallery-filter-wrapper {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
                     @media (max-width: 768px) {
+                        .greenland-gallery-filter-wrapper {
+                            padding: 0 16px;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                        }
                         .greenland-gallery-filter-dock {
-                            border-radius: 20px;
-                            padding: 10px;
-                            width: 100%;
-                            max-width: 480px;
+                            border-radius: 100px !important;
+                            padding: 6px !important;
+                            width: auto !important;
+                            max-width: 100% !important;
+                            display: flex !important;
+                            flex-wrap: nowrap !important;
+                            overflow-x: auto !important;
+                            -webkit-overflow-scrolling: touch !important;
+                            justify-content: flex-start !important;
+                            scrollbar-width: none !important;
+                        }
+                        .greenland-gallery-filter-dock::-webkit-scrollbar {
+                            display: none !important;
+                        }
+                        .greenland-gallery-tab-btn {
+                            flex: 0 0 auto !important;
+                            padding: 8px 16px !important;
+                            font-size: 0.8rem !important;
                         }
                     }
 
@@ -1559,7 +1675,7 @@ function HXExpeditionsGreenland() {
                     </div>
 
                     {/* Glass Floating Control Dock for Filter Tabs */}
-                    <div style={{
+                    <div className="greenland-gallery-filter-wrapper" style={{
                         display: 'flex',
                         justifyContent: 'center',
                         marginBottom: '50px'
@@ -2012,13 +2128,32 @@ function HXExpeditionsGreenland() {
                 </div>
             </section>
 
-            {/* ── NEW SECTION: WHAT GREENLAND EXPEDITION TRAVEL ACTUALLY FEELS LIKE (inline CSS) ── */}
+            {/* ── NEW SECTION: WHAT GREENLAND EXPEDITION TRAVEL ACTUALLY FEELS LIKE ── */}
             <section style={{
                 background: 'linear-gradient(135deg, #0a1628 0%, #0f2040 60%, #0a1628 100%)',
-                padding: '80px 20px',
+                padding: isMobileViewport ? '60px 16px' : '100px 20px',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
+                <style>{`
+        .reality-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            width: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .reality-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .reality-card {
+                padding: 30px 20px !important;
+            }
+        }
+    `}</style>
+
                 <div style={{
                     position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
                     backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59,127,196,0.07) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(148,180,212,0.05) 0%, transparent 50%)',
@@ -2026,7 +2161,7 @@ function HXExpeditionsGreenland() {
                 }} />
 
                 <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <div style={{ textAlign: 'center', marginBottom: '52px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: isMobileViewport ? '40px' : '52px' }}>
                         <span style={{
                             display: 'inline-block',
                             background: 'rgba(59,127,196,0.15)',
@@ -2039,7 +2174,7 @@ function HXExpeditionsGreenland() {
                         </span>
                         <h2 style={{
                             color: '#ffffff',
-                            fontSize: 'clamp(1.6rem, 3vw, 2.4rem)',
+                            fontSize: 'clamp(1.8rem, 4vw, 2.6rem)',
                             fontWeight: 700, margin: '0 0 16px', lineHeight: 1.2
                         }}>
                             What Greenland Expedition Travel Actually Feels Like
@@ -2054,13 +2189,13 @@ function HXExpeditionsGreenland() {
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+                    <div className="reality-grid">
 
                         {/* Travelers Should Expect */}
-                        <div style={{
+                        <div className="reality-card" style={{
                             background: 'rgba(59,127,196,0.07)',
                             border: '1px solid rgba(59,127,196,0.2)',
-                            borderRadius: '20px', padding: '36px'
+                            borderRadius: '24px', padding: '40px'
                         }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '28px' }}>
                                 <div style={{
@@ -2071,9 +2206,9 @@ function HXExpeditionsGreenland() {
                                 }}>
                                     <CheckCircle size={22} color="#fff" />
                                 </div>
-                                <h3 style={{ color: '#ffffff', fontSize: '1.15rem', fontWeight: 700, margin: 0 }}>Travelers Should Expect</h3>
+                                <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>Expectations</h3>
                             </div>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
                                 {[
                                     'Flexible itineraries',
                                     'Zodiac excursions',
@@ -2091,34 +2226,34 @@ function HXExpeditionsGreenland() {
                                             border: '1px solid rgba(59,127,196,0.4)',
                                             display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                                         }}>
-                                            <CheckCircle size={13} color="#3b7fc4" />
+                                            <Check size={12} color="#3b7fc4" />
                                         </div>
-                                        <span style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>{item}</span>
+                                        <span style={{ color: '#cbd5e1', fontSize: '1rem', fontWeight: '500' }}>{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
                         {/* Travelers Should Not Expect */}
-                        <div style={{
+                        <div className="reality-card" style={{
                             background: 'rgba(255,255,255,0.03)',
                             border: '1px solid rgba(255,255,255,0.08)',
-                            borderRadius: '20px', padding: '36px',
+                            borderRadius: '24px', padding: '40px',
                             display: 'flex', flexDirection: 'column', justifyContent: 'space-between'
                         }}>
                             <div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '28px' }}>
                                     <div style={{
                                         width: '46px', height: '46px', borderRadius: '50%',
-                                        background: 'rgba(239,68,68,0.12)',
-                                        border: '1px solid rgba(239,68,68,0.25)',
+                                        background: 'rgba(255,255,255,0.05)',
+                                        border: '1px solid rgba(255,255,255,0.2)',
                                         display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                                     }}>
-                                        <Minus size={22} color="#f87171" />
+                                        <Minus size={22} color="#94b4d4" />
                                     </div>
-                                    <h3 style={{ color: '#ffffff', fontSize: '1.15rem', fontWeight: 700, margin: 0 }}>Travelers Should Not Expect</h3>
+                                    <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>Not Expected</h3>
                                 </div>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
                                     {[
                                         'Casinos',
                                         'Broadway entertainment',
@@ -2128,27 +2263,30 @@ function HXExpeditionsGreenland() {
                                         <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                             <div style={{
                                                 width: '22px', height: '22px', borderRadius: '50%',
-                                                background: 'rgba(239,68,68,0.1)',
-                                                border: '1px solid rgba(239,68,68,0.25)',
+                                                background: 'rgba(255,255,255,0.05)',
+                                                border: '1px solid rgba(255,255,255,0.1)',
                                                 display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                                             }}>
-                                                <Minus size={12} color="#f87171" />
+                                                <Minus size={12} color="#94a3b8" />
                                             </div>
-                                            <span style={{ color: '#94a3b8', fontSize: '0.95rem' }}>{item}</span>
+                                            <span style={{ color: '#94a3b8', fontSize: '1rem' }}>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
+
+                            {/* Visual Conclusion Box */}
                             <div style={{
-                                marginTop: '32px', padding: '20px 24px',
+                                marginTop: '40px', padding: '24px',
                                 background: 'linear-gradient(135deg, rgba(59,127,196,0.12), rgba(59,127,196,0.06))',
                                 border: '1px solid rgba(59,127,196,0.2)',
-                                borderRadius: '12px'
+                                borderRadius: '16px',
+                                textAlign: 'center'
                             }}>
                                 <p style={{
-                                    color: '#94b4d4', fontSize: '1rem',
+                                    color: '#ffffff', fontSize: '1.1rem',
                                     margin: 0, fontStyle: 'italic',
-                                    fontWeight: 500, lineHeight: 1.6
+                                    fontWeight: 600, lineHeight: 1.5
                                 }}>
                                     "Greenland itself becomes the experience."
                                 </p>
@@ -2647,36 +2785,126 @@ function HXExpeditionsGreenland() {
                 </div>
             </section>
 
-            {/* ── CTA ── */}
-            <section className="medi-cta-main-section">
+            {/* ── FINAL CONVERSION: CTA SECTION ── */}
+            <section className="medi-cta-main-section" style={{
+                position: 'relative',
+                padding: isMobileViewport ? '60px 0' : '100px 0',
+                overflow: 'hidden'
+            }}>
+                <style>{`
+        .cta-inner-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .cta-btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        /* Responsive Logic for Buttons and Spacing */
+        @media (max-width: 768px) {
+            .cta-inner-content {
+                padding: 0 20px;
+            }
+            .cta-btn-group {
+                flex-direction: column; /* Stacks buttons on mobile */
+                align-items: center;
+                gap: 12px;
+            }
+            .cta-btn-group button {
+                width: 100%; /* Full width buttons for thumb-access */
+                max-width: 350px;
+                justify-content: center;
+            }
+            .cta-selection-box {
+                padding: 24px 16px !important;
+            }
+        }
+    `}</style>
+
                 <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Ready To Explore Greenland With HX Expeditions?</h2>
-                        <div className="medi-cta-separator-white"></div>
 
-                        <p className="medi-cta-paragraph-white">
-                            Greenland is one of the most fascinating and remote expedition cruise destinations in the world. Choosing the right itinerary, ship and season can dramatically shape your Arctic experience.
+                <div className="cta-inner-content">
+                    <h2 className="medi-cta-heading-white" style={{
+                        fontSize: 'clamp(24px, 5vw, 42px)',
+                        lineHeight: '1.2',
+                        marginBottom: '20px'
+                    }}>
+                        Ready To Explore Greenland With HX Expeditions?
+                    </h2>
+
+                    <div className="medi-cta-separator-white" style={{ margin: '0 auto 30px' }}></div>
+
+                    <p className="medi-cta-paragraph-white" style={{ fontSize: '18px', lineHeight: '1.7', marginBottom: '24px' }}>
+                        Greenland is one of the most fascinating and remote expedition cruise destinations in the world. <strong>Choosing the right itinerary, ship and season can dramatically shape your Arctic experience.</strong>
+                    </p>
+
+                    <p className="medi-cta-paragraph-white" style={{ opacity: 0.9, fontSize: '16px', maxWidth: '750px', margin: '0 auto 32px' }}>
+                        Trips & Ships Luxury Travel helps travelers confidently plan unforgettable HX Expeditions Greenland cruises with personalized expert guidance.
+                    </p>
+
+                    {/* Highlighted Selection/Consideration Box */}
+                    <div className="cta-selection-box" style={{
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '20px',
+                        padding: '30px',
+                        marginBottom: '40px',
+                        backdropFilter: 'blur(10px)'
+                    }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontSize: '14px',
+                            fontWeight: '800',
+                            textTransform: 'uppercase',
+                            letterSpacing: '1px',
+                            display: 'block',
+                            marginBottom: '10px'
+                        }}>
+                            Direct Expert Access
+                        </span>
+                        <p style={{
+                            color: '#ffffff',
+                            fontSize: '17px',
+                            fontWeight: '600',
+                            margin: 0,
+                            lineHeight: '1.5'
+                        }}>
+                            Contact Trips & Ships Luxury Travel today to begin planning your Greenland expedition.
                         </p>
+                    </div>
 
-                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            Trips & Ships Luxury Travel helps travelers confidently plan unforgettable HX Expeditions Greenland cruises with personalized expert guidance.
-                        </p>
+                    {/* Responsive Button Group */}
+                    <div className="cta-btn-group">
+                        <button className="medi-primary-cta-button" style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px',
+                            padding: '16px 32px'
+                        }}>
+                            <Phone size={18} />
+                            Schedule a Consultation
+                        </button>
 
-                        <div className="medi-cta-considerations-box">
-                            <span className="medi-cta-considerations-title">Contact Trips & Ships Luxury Travel today to begin planning your Greenland expedition.</span>
-                        </div>
-
-                        <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </button>
-                            <button className="medi-secondary-outline-button">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
+                        <button className="medi-secondary-outline-button" style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px',
+                            padding: '16px 32px',
+                            background: 'transparent',
+                            border: '1px solid #ffffff',
+                            color: '#ffffff'
+                        }}>
+                            <LayoutList size={18} />
+                            Request Itinerary Options
+                        </button>
                     </div>
                 </div>
             </section>

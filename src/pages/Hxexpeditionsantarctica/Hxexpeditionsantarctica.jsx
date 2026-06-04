@@ -703,7 +703,6 @@ function HXExpeditionsAntarctica() {
             </section>
 
             {/* ── WHAT MAKES HX DIFFERENT ── */}
-            {/* ── WHAT MAKES HX DIFFERENT ── */}
             <section style={{
                 background: 'linear-gradient(180deg, var(--bg-light) 0%, var(--bg-light2) 100%)',
                 backgroundImage: 'radial-gradient(var(--navy-border) 1px, transparent 1px)',
@@ -716,6 +715,26 @@ function HXExpeditionsAntarctica() {
                 width: '100%',
                 boxSizing: 'border-box'
             }}>
+                <style>{`
+                    .drake-passage-tabs::-webkit-scrollbar {
+                        height: 5px;
+                    }
+                    .drake-passage-tabs::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+                    .drake-passage-tabs::-webkit-scrollbar-thumb {
+                        background: rgba(39, 68, 114, 0.3);
+                        border-radius: 3px;
+                    }
+                    .drake-passage-tabs::-webkit-scrollbar-thumb:hover {
+                        background: rgba(39, 68, 114, 0.5);
+                    }
+                    @media (max-width: 600px) {
+                        .drake-passage-wildlife-grid {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                `}</style>
                 {/* Polar Glowing Auras using root colors */}
                 <div style={{
                     position: 'absolute',
@@ -750,7 +769,7 @@ function HXExpeditionsAntarctica() {
                     width: '100%',
                     boxSizing: 'border-box'
                 }}>
-                    <div style={{
+                    <div className="drake-passage-grid" style={{
                         display: 'grid',
                         gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
                         gap: '40px',
@@ -765,7 +784,10 @@ function HXExpeditionsAntarctica() {
                             gap: '24px',
                             position: isMobileViewport ? 'static' : 'sticky',
                             top: '100px',
-                            zIndex: 5
+                            zIndex: 5,
+                            minWidth: 0,
+                            maxWidth: '100%',
+                            boxSizing: 'border-box'
                         }}>
                             <div style={{ textAlign: isMobileViewport ? 'center' : 'left' }}>
                                 <div style={{
@@ -814,13 +836,16 @@ function HXExpeditionsAntarctica() {
                             </div>
 
                             {/* Tab Buttons Stack */}
-                            <div style={{
+                            <div className="drake-passage-tabs" style={{
                                 display: 'flex',
                                 flexDirection: isMobileViewport ? 'row' : 'column',
                                 gap: '12px',
                                 overflowX: isMobileViewport ? 'auto' : 'visible',
                                 paddingBottom: isMobileViewport ? '12px' : '0',
-                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
+                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none',
+                                maxWidth: '100%',
+                                minWidth: 0,
+                                boxSizing: 'border-box'
                             }}>
                                 {[
                                     { number: '01', title: 'The Drake Passage', desc: 'Ocean crossing details' },
@@ -1220,7 +1245,7 @@ function HXExpeditionsAntarctica() {
                                             Wildlife is one of the biggest reasons travelers choose Antarctica expeditions. Common sightings may include:
                                         </p>
 
-                                        <ul style={{
+                                        <ul className="drake-passage-wildlife-grid" style={{
                                             listStyle: 'none',
                                             padding: 0,
                                             margin: 0,

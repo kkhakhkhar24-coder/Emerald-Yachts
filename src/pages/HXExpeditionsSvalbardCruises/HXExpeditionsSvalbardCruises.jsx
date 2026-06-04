@@ -60,6 +60,16 @@ function HXExpeditionsSvalbardCruises() {
     }
 
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
+    const [isMobileViewport, setIsMobileViewport] = useState(false)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileViewport(window.innerWidth < 992)
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     const hxItineraryImages = [MS_Fram, MS_Spitsbergen, MS_Roald_Amundsen]
 
@@ -291,6 +301,19 @@ function HXExpeditionsSvalbardCruises() {
         .medi-immersion-card-item:hover .medi-immersion-icon-box svg {
             stroke: #ffffff !important;
         }
+        .medi-premium-editorial-block::-webkit-scrollbar {
+            width: 6px;
+        }
+        .medi-premium-editorial-block::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .medi-premium-editorial-block::-webkit-scrollbar-thumb {
+            background: rgba(39, 68, 114, 0.2);
+            border-radius: 3px;
+        }
+        .medi-premium-editorial-block::-webkit-scrollbar-thumb:hover {
+            background: rgba(39, 68, 114, 0.4);
+        }
     `}</style>
 
                 <div className="medi-premium-intro-glow-one"></div>
@@ -304,6 +327,9 @@ function HXExpeditionsSvalbardCruises() {
                     }}>
                         {/* Left: Editorial intro */}
                         <div className="medi-premium-editorial-block" style={{
+                            maxHeight: isMobileViewport ? 'none' : '650px',
+                            overflowY: isMobileViewport ? 'visible' : 'auto',
+                            paddingRight: isMobileViewport ? '0' : '20px',
                             textAlign: window.innerWidth <= 1024 ? 'center' : 'left',
                             display: 'flex',
                             flexDirection: 'column',

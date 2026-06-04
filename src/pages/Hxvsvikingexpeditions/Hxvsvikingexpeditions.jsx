@@ -108,191 +108,191 @@ function HXvsVikingExpeditions() {
             desc: 'Both Antarctica and Arctic regions have narrow optimal seasons. Traveling outside peak season can mean reduced wildlife sightings, more challenging weather, and fewer landing opportunities.'
         }
     ]
-   
-const hxVsVikingSchemaData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
-      "name": "HX Expeditions vs Viking Expeditions",
-      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
-      "description": "Compare HX Expeditions vs Viking Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, ships, destinations, wildlife experiences and expedition style.",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntity": {
-        "@type": "Article",
-        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions#article"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com"
-    },
-    {
-      "@type": "TravelAgency",
-      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com",
-      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO",
-      "worksFor": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-    },
-    {
-      "@type": "Article",
-      "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions#article",
-      "headline": "HX Expeditions vs Viking Expeditions",
-      "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
-      "description": "Expert comparison of HX Expeditions and Viking Expeditions including luxury, ships, destinations, wildlife experiences and expedition styles.",
-      "image": "https://www.tripsshipsluxurytravel.com/images/hx-vs-viking-expeditions.jpg",
-      "author": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
-      },
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions"
-      }
-    },
-    {
-      "@type": "Service",
-      "name": "Expedition Cruise Planning",
-      "provider": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "serviceType": "Luxury Expedition Cruise Consulting",
-      "description": "Expert expedition cruise planning and comparison services helping travelers choose the best expedition cruise line for their travel style and destination goals."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsshipsluxurytravel.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "HX Expeditions",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "HX Expeditions vs Viking Expeditions",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is HX Expeditions better than Viking Expeditions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on travel style. HX is generally more expedition focused, while Viking emphasizes refined luxury."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which is more luxurious, Viking or HX?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Viking typically offers a more traditional luxury atmosphere onboard."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which expedition line is better for Antarctica?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HX is often stronger for active expedition immersion, while Viking appeals to travelers prioritizing luxury comfort."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Viking go to the Galápagos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. HX operates Galápagos expeditions while Viking currently does not."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which expedition line is better for wildlife?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HX is generally more wildlife and exploration focused."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are HX cruises more adventurous than Viking?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. HX typically offers a more expedition intensive atmosphere."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which cruise line has smaller expedition ships?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HX includes smaller expedition ships such as MS Spitsbergen and MS Santa Cruz II."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is included on HX vs Viking cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Both include accommodations, meals and expedition programming, though inclusions vary by itinerary."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which expedition line is better for first time expedition travelers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Viking may feel more approachable for luxury focused travelers, while HX is excellent for adventure minded first timers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are Viking expedition cruises luxury cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Viking expedition cruises strongly emphasize luxury comfort and refined onboard experiences."
-          }
-        }
-      ]
-    }
-  ]
-};
+
+    const hxVsVikingSchemaData = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
+                "name": "HX Expeditions vs Viking Expeditions",
+                "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
+                "description": "Compare HX Expeditions vs Viking Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, ships, destinations, wildlife experiences and expedition style.",
+                "inLanguage": "en-US",
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntity": {
+                    "@type": "Article",
+                    "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions#article"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com"
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com",
+                "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO",
+                "worksFor": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+            },
+            {
+                "@type": "Article",
+                "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions#article",
+                "headline": "HX Expeditions vs Viking Expeditions",
+                "url": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions",
+                "description": "Expert comparison of HX Expeditions and Viking Expeditions including luxury, ships, destinations, wildlife experiences and expedition styles.",
+                "image": "https://www.tripsshipsluxurytravel.com/images/hx-vs-viking-expeditions.jpg",
+                "author": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Expedition Cruise Planning",
+                "provider": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "serviceType": "Luxury Expedition Cruise Consulting",
+                "description": "Expert expedition cruise planning and comparison services helping travelers choose the best expedition cruise line for their travel style and destination goals."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsshipsluxurytravel.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "HX Expeditions",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "HX Expeditions vs Viking Expeditions",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions-vs-viking-expeditions"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is HX Expeditions better than Viking Expeditions?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "It depends on travel style. HX is generally more expedition focused, while Viking emphasizes refined luxury."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which is more luxurious, Viking or HX?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Viking typically offers a more traditional luxury atmosphere onboard."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which expedition line is better for Antarctica?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HX is often stronger for active expedition immersion, while Viking appeals to travelers prioritizing luxury comfort."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Viking go to the Galápagos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. HX operates Galápagos expeditions while Viking currently does not."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which expedition line is better for wildlife?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HX is generally more wildlife and exploration focused."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are HX cruises more adventurous than Viking?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. HX typically offers a more expedition intensive atmosphere."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which cruise line has smaller expedition ships?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HX includes smaller expedition ships such as MS Spitsbergen and MS Santa Cruz II."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is included on HX vs Viking cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Both include accommodations, meals and expedition programming, though inclusions vary by itinerary."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which expedition line is better for first time expedition travelers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Viking may feel more approachable for luxury focused travelers, while HX is excellent for adventure minded first timers."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Viking expedition cruises luxury cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Viking expedition cruises strongly emphasize luxury comfort and refined onboard experiences."
+                        }
+                    }
+                ]
+            }
+        ]
+    };
 
 
     return (
         <>
             <Helmet>
                 <title>HX Expeditions vs Viking Expeditions | Which Expedition Cruise Line Is Better?
-</title>
+                </title>
                 <meta name="title" content="HX Expeditions vs Viking Expeditions | Expert Luxury Cruise Comparison
 " />
                 <meta name="description" content="Compare HX Expeditions vs Viking Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, ships, destinations, wildlife experiences and expedition style.
@@ -530,110 +530,167 @@ const hxVsVikingSchemaData = {
                 </div>
             </section>
 
-            {/* ── NEW: SHIP IMAGE SHOWCASE — HX vs Viking side by side (inline CSS) ── */}
-            <section style={{ background: 'var(--medi-bg-soft)', padding: '80px 20px' }}>
+            {/* ── SHIP IMAGE SHOWCASE — HX vs Viking Side-by-Side ── */}
+            <section style={{
+                background: 'var(--medi-bg-soft)',
+                padding: isMobileViewport ? '60px 0' : '100px 0',
+                overflow: 'hidden'
+            }}>
+                <style>{`
+        .ship-showcase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .ship-card {
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(15, 28, 46, 0.05);
+            border: 1px solid rgba(39, 68, 114, 0.1);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(15, 28, 46, 0.1);
+        }
+
+        .ship-card-image-box {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .ship-card-content {
+            padding: 32px;
+            flex-grow: 1;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 991px) {
+            .ship-showcase-grid {
+                grid-template-columns: 1fr; /* Stack vertically on tablet/mobile */
+                max-width: 600px; /* Keep cards from getting too wide and awkward */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ship-card-content {
+                padding: 24px;
+            }
+            .ship-card-image-box {
+                height: 200px;
+            }
+            .ship-showcase-grid {
+                padding: 0 16px;
+            }
+        }
+    `}</style>
+
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: isMobileViewport ? '40px' : '52px', padding: '0 20px' }}>
                         <span style={{
-                            display: 'inline-block', background: 'rgba(39,68,114,0.1)',
-                            color: 'var(--medi-navy)', fontSize: '11px', fontWeight: 700,
-                            letterSpacing: '3px', padding: '6px 18px',
-                            borderRadius: '20px', marginBottom: '16px'
+                            display: 'inline-block',
+                            background: 'rgba(39,68,114,0.1)',
+                            color: 'var(--medi-navy)',
+                            fontSize: '11px',
+                            fontWeight: 800,
+                            letterSpacing: '3px',
+                            padding: '8px 20px',
+                            borderRadius: '50px',
+                            marginBottom: '16px',
+                            textTransform: 'uppercase'
                         }}>SHIPS & ONBOARD EXPERIENCE</span>
-                        <h2 className="medi-section-heading">HX Ships vs Viking Expedition Ships</h2>
+                        <h2 className="medi-section-heading" style={{ fontSize: 'clamp(24px, 4vw, 36px)' }}>
+                            HX Ships vs Viking Expedition Ships
+                        </h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
-                        {/* HX Ships */}
-                        <div style={{
-                            background: '#ffffff', borderRadius: '20px',
-                            overflow: 'hidden',
-                            boxShadow: '0 4px 24px rgba(39,68,114,0.1)',
-                            border: '1px solid rgba(39,68,114,0.1)'
-                        }}>
-                            <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
+                    <div className="ship-showcase-grid">
+                        {/* HX Ships Card */}
+                        <div className="ship-card">
+                            <div className="ship-card-image-box">
                                 <img src={hxShipImg} alt="HX Expedition Ship"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{
                                     position: 'absolute', inset: 0,
-                                    background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 60%)'
+                                    background: 'linear-gradient(to top, rgba(15,28,46,0.8) 0%, transparent 60%)'
                                 }} />
                                 <div style={{
-                                    position: 'absolute', bottom: '16px', left: '20px',
-                                    background: 'var(--medi-navy)',
-                                    color: '#fff', fontSize: '0.75rem', fontWeight: 700,
-                                    letterSpacing: '2px', padding: '5px 14px', borderRadius: '20px'
+                                    position: 'absolute', bottom: '20px', left: '24px',
+                                    background: '#274472', // HX Brand Color
+                                    color: '#fff', fontSize: '11px', fontWeight: 800,
+                                    letterSpacing: '2px', padding: '6px 16px', borderRadius: '50px'
                                 }}>HX EXPEDITIONS</div>
                             </div>
-                            <div style={{ padding: '28px' }}>
-                                <p style={{ color: '#475569', fontSize: '0.82rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '12px' }}>
-                                    HX ships are purpose built for expedition exploration. Highlights include:
+                            <div className="ship-card-content">
+                                <p style={{ color: '#0f172a', fontSize: '13px', fontWeight: 800, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '16px' }}>
+                                    Designed for Deep Discovery:
                                 </p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                                    {['Hybrid powered ships', 'Science centers', 'Expedition lounges', 'Casual atmosphere', 'Strong expedition team integration'].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                            <CheckCircle size={15} style={{ color: 'var(--medi-navy)', flexShrink: 0 }} />
-                                            <span style={{ color: '#374151', fontSize: '0.9rem' }}>{item}</span>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                    {['Hybrid powered ships', 'Working Science Centers', 'Expedition observation lounges', 'Casual, unhurried atmosphere', 'Deep integration with Scientists'].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                                            <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0, marginTop: '2px' }} />
+                                            <span style={{ color: '#475569', fontSize: '15px', lineHeight: '1.4' }}>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
-                                <p style={{ color: '#64748b', fontSize: '0.82rem', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '12px' }}>Popular HX ships include:</p>
+                                <p style={{ color: '#1e293b', fontSize: '12px', fontWeight: 800, textTransform: 'uppercase', marginBottom: '12px' }}>Vessels include:</p>
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                                    {['MS Roald Amundsen', 'MS Fridtjof Nansen', 'MS Fram', 'MS Spitsbergen', 'MS Santa Cruz II'].map((ship, i) => (
+                                    {['Roald Amundsen', 'Fridtjof Nansen', 'MS Fram'].map((ship, i) => (
                                         <span key={i} style={{
-                                            background: 'var(--medi-bg-soft)',
-                                            color: 'var(--medi-navy)',
-                                            fontSize: '0.78rem', fontWeight: 600,
-                                            padding: '4px 12px', borderRadius: '20px',
-                                            border: '1px solid rgba(39,68,114,0.15)'
+                                            background: '#f1f5f9', color: '#274472', fontSize: '12px', fontWeight: 700,
+                                            padding: '6px 14px', borderRadius: '10px', border: '1px solid #e2e8f0'
                                         }}>{ship}</span>
                                     ))}
                                 </div>
                             </div>
                         </div>
 
-                        {/* Viking Ships */}
-                        <div style={{
-                            background: '#ffffff', borderRadius: '20px',
-                            overflow: 'hidden',
-                            boxShadow: '0 4px 24px rgba(39,68,114,0.1)',
-                            border: '1px solid rgba(39,68,114,0.1)'
-                        }}>
-                            <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
+                        {/* Viking Ships Card */}
+                        <div className="ship-card">
+                            <div className="ship-card-image-box">
                                 <img src={vikingShipImg} alt="Viking Expedition Ship"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{
                                     position: 'absolute', inset: 0,
-                                    background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 60%)'
+                                    background: 'linear-gradient(to top, rgba(15,28,46,0.8) 0%, transparent 60%)'
                                 }} />
                                 <div style={{
-                                    position: 'absolute', bottom: '16px', left: '20px',
-                                    background: 'var(--medi-bg-dark2)',
-                                    color: '#fff', fontSize: '0.75rem', fontWeight: 700,
-                                    letterSpacing: '2px', padding: '5px 14px', borderRadius: '20px'
+                                    position: 'absolute', bottom: '20px', left: '24px',
+                                    background: '#0f172a', // Viking Deep Navy
+                                    color: '#fff', fontSize: '11px', fontWeight: 800,
+                                    letterSpacing: '2px', padding: '6px 16px', borderRadius: '50px'
                                 }}>VIKING EXPEDITIONS</div>
                             </div>
-                            <div style={{ padding: '28px' }}>
-                                <p style={{ color: '#475569', fontSize: '0.82rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '12px' }}>
-                                    Viking expedition ships emphasize:
+                            <div className="ship-card-content">
+                                <p style={{ color: '#0f172a', fontSize: '13px', fontWeight: 800, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '16px' }}>
+                                    Designed for Refined Exploration:
                                 </p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                                    {['Elegant Scandinavian interiors', 'Refined dining', 'Spacious suites', 'Quiet luxury atmosphere', 'Sophisticated public spaces'].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                            <CheckCircle size={15} style={{ color: 'var(--medi-navy)', flexShrink: 0 }} />
-                                            <span style={{ color: '#374151', fontSize: '0.9rem' }}>{item}</span>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                    {['Residential Scandi-interiors', 'The Hangar (Enclosed marina)', 'Refined Nordic spa access', 'Quiet, adult-focused luxury', 'Expansive Nordic balconies'].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                                            <CheckCircle size={18} style={{ color: '#274472', flexShrink: 0, marginTop: '2px' }} />
+                                            <span style={{ color: '#475569', fontSize: '15px', lineHeight: '1.4' }}>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
                                 <div style={{
-                                    background: 'var(--medi-bg-soft)',
-                                    borderLeft: '3px solid var(--medi-navy)',
-                                    borderRadius: '0 8px 8px 0',
-                                    padding: '14px 18px'
+                                    background: '#f8fafc',
+                                    borderLeft: '4px solid #274472',
+                                    borderRadius: '8px',
+                                    padding: '16px'
                                 }}>
-                                    <p style={{ color: '#374151', fontSize: '0.88rem', margin: 0, fontStyle: 'italic', lineHeight: 1.6 }}>
-                                        Viking tends to feel more upscale from a traditional luxury cruise perspective.
+                                    <p style={{ color: '#475569', fontSize: '14px', margin: 0, fontStyle: 'italic', lineHeight: 1.5 }}>
+                                        Viking delivers a more familiar "upscale hotel" feel compared to HX's scientific expedition focus.
                                     </p>
                                 </div>
                             </div>
@@ -722,117 +779,180 @@ const hxVsVikingSchemaData = {
                 </div>
             </section>
 
-            {/* ── NEW: DESTINATIONS — image grid (inline CSS) ── */}
-            <section style={{ background: '#ffffff', padding: '80px 20px' }}>
-                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            {/* ── DESTINATIONS COMPARISON: RESPONSIVE REFACTORED ── */}
+            <section style={{
+                background: '#ffffff',
+                padding: isMobileViewport ? '60px 0' : '100px 0',
+                overflow: 'hidden'
+            }}>
+                <style>{`
+        .dest-comparison-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .dest-image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .dest-card {
+            position: relative;
+            height: 180px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .chip-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 991px) {
+            .dest-image-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2x2 on Tablet/Mobile */
+            }
+            .dest-card {
+                height: 160px; /* Slightly shorter for mobile balance */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dest-comparison-container {
+                padding: 0 16px;
+            }
+            .dest-image-grid {
+                gap: 10px;
+            }
+            .dest-card {
+                height: 140px;
+            }
+            .dest-label {
+                font-size: 0.75rem !important;
+            }
+        }
+    `}</style>
+
+                <div className="dest-comparison-container">
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'center', marginBottom: isMobileViewport ? '40px' : '52px' }}>
                         <span style={{
-                            display: 'inline-block', background: 'rgba(39,68,114,0.1)',
-                            color: 'var(--medi-navy)', fontSize: '11px', fontWeight: 700,
-                            letterSpacing: '3px', padding: '6px 18px', borderRadius: '20px', marginBottom: '16px'
+                            display: 'inline-block',
+                            background: 'rgba(59, 130, 246, 0.1)', // Light Azure
+                            color: '#274472',
+                            fontSize: '11px',
+                            fontWeight: 800,
+                            letterSpacing: '3px',
+                            padding: '8px 20px',
+                            borderRadius: '50px',
+                            marginBottom: '16px',
+                            textTransform: 'uppercase'
                         }}>WHERE THEY SAIL</span>
-                        <h2 className="medi-section-heading">Destinations Comparison</h2>
+                        <h2 className="medi-section-heading" style={{ fontSize: 'clamp(24px, 4vw, 36px)' }}>
+                            Destinations Comparison
+                        </h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    {/* HX Destinations — image strip */}
-                    <div style={{ marginBottom: '48px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+                    {/* HX Destinations Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                             <div style={{
-                                width: '36px', height: '36px', borderRadius: '50%',
-                                background: 'var(--medi-navy)',
+                                width: '40px', height: '40px', borderRadius: '50%',
+                                background: '#274472',
                                 display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                             }}>
-                                <Compass size={18} color="#fff" />
+                                <Compass size={20} color="#fff" />
                             </div>
-                            <h3 style={{ color: 'var(--medi-navy)', fontSize: '1.15rem', fontWeight: 700, margin: 0 }}>
-                                HX Expeditions Destinations — HX sails to:
+                            <h3 style={{ color: '#274472', fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>
+                                HX Expeditions: Global Reach
                             </h3>
                         </div>
 
-                        {/* 4-image grid for HX */}
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '16px' }}>
+                        {/* 4-Image Adaptive Grid */}
+                        <div className="dest-image-grid">
                             {[
                                 { img: antarcticaImg, label: 'Antarctica' },
                                 { img: galapagosImg, label: 'Galápagos' },
                                 { img: greenlandImg, label: 'Greenland' },
                                 { img: svalbardImg, label: 'Svalbard' },
                             ].map(({ img, label }, i) => (
-                                <div key={i} style={{
-                                    position: 'relative', height: '180px',
-                                    borderRadius: '14px', overflow: 'hidden',
-                                    boxShadow: '0 4px 16px rgba(39,68,114,0.12)'
-                                }}>
-                                    <img src={img} alt={label}
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <div key={i} className="dest-card">
+                                    <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     <div style={{
                                         position: 'absolute', inset: 0,
-                                        background: 'linear-gradient(to top, rgba(15,28,46,0.75) 0%, transparent 55%)'
+                                        background: 'linear-gradient(to top, rgba(15,28,46,0.8) 0%, transparent 60%)'
                                     }} />
-                                    <span style={{
-                                        position: 'absolute', bottom: '12px', left: '14px',
-                                        color: '#fff', fontSize: '0.82rem', fontWeight: 700
+                                    <span className="dest-label" style={{
+                                        position: 'absolute', bottom: '15px', left: '15px',
+                                        color: '#fff', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.5px'
                                     }}>{label}</span>
                                 </div>
                             ))}
                         </div>
 
-                        {/* remaining HX destinations as chips */}
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                        {/* HX Chips */}
+                        <div className="chip-container">
                             {['Alaska', 'Iceland', 'Norway', 'Patagonia', 'Northwest Passage', 'British Isles'].map((dest, i) => (
                                 <span key={i} style={{
-                                    display: 'inline-flex', alignItems: 'center', gap: '5px',
-                                    background: 'var(--medi-bg-soft)', color: 'var(--medi-navy)',
-                                    fontSize: '0.82rem', fontWeight: 600,
-                                    padding: '6px 14px', borderRadius: '20px',
-                                    border: '1px solid rgba(39,68,114,0.15)'
+                                    display: 'inline-flex', alignItems: 'center', gap: '6px',
+                                    background: '#f8fafc', color: '#475569',
+                                    fontSize: '0.8rem', fontWeight: 700,
+                                    padding: '8px 16px', borderRadius: '50px',
+                                    border: '1px solid #e2e8f0'
                                 }}>
-                                    <MapPin size={11} />{dest}
+                                    <MapPin size={12} color="#3b82f6" /> {dest}
                                 </span>
                             ))}
                         </div>
                     </div>
 
                     {/* Divider */}
-                    <div style={{ height: '1px', background: 'rgba(39,68,114,0.12)', margin: '0 0 40px' }} />
+                    <div style={{ height: '1px', background: '#e2e8f0', margin: '0 0 50px' }} />
 
-                    {/* Viking Destinations */}
+                    {/* Viking Destinations Block */}
                     <div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                             <div style={{
-                                width: '36px', height: '36px', borderRadius: '50%',
-                                background: 'var(--medi-bg-dark2)',
+                                width: '40px', height: '40px', borderRadius: '50%',
+                                background: '#0f172a',
                                 display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
                             }}>
-                                <Globe size={18} color="#fff" />
+                                <Globe size={20} color="#fff" />
                             </div>
-                            <h3 style={{ color: 'var(--medi-navy)', fontSize: '1.15rem', fontWeight: 700, margin: 0 }}>
-                                Viking Expeditions Destinations — Viking focuses on:
+                            <h3 style={{ color: '#274472', fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>
+                                Viking Expeditions: Key Focus
                             </h3>
                         </div>
 
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '16px' }}>
+                        <div className="chip-container" style={{ marginBottom: '24px' }}>
                             {['Antarctica', 'Arctic regions', 'Great Lakes', 'North America', 'Europe', 'South America'].map((dest, i) => (
                                 <span key={i} style={{
-                                    display: 'inline-flex', alignItems: 'center', gap: '5px',
-                                    background: 'var(--medi-bg-dark)',
-                                    color: '#94a3b8',
-                                    fontSize: '0.82rem', fontWeight: 600,
-                                    padding: '6px 14px', borderRadius: '20px',
-                                    border: '1px solid rgba(39,68,114,0.3)'
+                                    display: 'inline-flex', alignItems: 'center', gap: '6px',
+                                    background: '#0f172a', color: '#94a3b8',
+                                    fontSize: '0.8rem', fontWeight: 700,
+                                    padding: '8px 16px', borderRadius: '50px'
                                 }}>
-                                    <MapPin size={11} />{dest}
+                                    <MapPin size={12} /> {dest}
                                 </span>
                             ))}
                         </div>
 
                         <div style={{
-                            padding: '16px 20px',
-                            background: 'var(--medi-bg-soft)',
-                            borderLeft: '4px solid var(--medi-navy)',
-                            borderRadius: '0 8px 8px 0'
+                            padding: '20px 24px',
+                            background: '#f8fafc',
+                            borderLeft: '4px solid #274472',
+                            borderRadius: '0 12px 12px 0',
+                            boxShadow: '0 4px 10px rgba(0,0,0,0.02)'
                         }}>
-                            <p style={{ color: '#374151', fontSize: '0.9rem', margin: 0, fontStyle: 'italic', lineHeight: 1.6 }}>
+                            <p style={{ color: '#475569', fontSize: '15px', margin: 0, fontStyle: 'italic', lineHeight: 1.6 }}>
                                 HX generally offers more remote and wildlife focused expedition diversity, particularly in the Galápagos and High Arctic.
                             </p>
                         </div>
@@ -889,7 +1009,7 @@ const hxVsVikingSchemaData = {
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
-                        gap: '40px',
+                        gap: isMobileViewport ? '28px' : '40px',
                         width: '100%',
                         boxSizing: 'border-box',
                         alignItems: 'start'
@@ -923,6 +1043,7 @@ const hxVsVikingSchemaData = {
                                     </span>
                                 </div>
                                 <h2 style={{
+                                    fontSize: isMobileViewport ? 'clamp(2rem, 10vw, 2.75rem)' : '48px',
                                     fontWeight: '500',
                                     lineHeight: '1.25',
                                     margin: '0 0 16px 0',
@@ -936,7 +1057,8 @@ const hxVsVikingSchemaData = {
                                     fontSize: '0.95rem',
                                     margin: '0 0 24px 0',
                                     lineHeight: '1.6',
-                                    fontWeight: '400'
+                                    fontWeight: '400',
+                                    color: 'var(--text-muted)'
                                 }}>
                                     Select a topic below to explore the detailed comparison between HX and Viking expeditions.
                                 </p>
@@ -949,7 +1071,9 @@ const hxVsVikingSchemaData = {
                                 gap: '12px',
                                 overflowX: isMobileViewport ? 'auto' : 'visible',
                                 paddingBottom: isMobileViewport ? '12px' : '0',
-                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
+                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none',
+                                WebkitOverflowScrolling: 'touch',
+                                maxWidth: '100%'
                             }}>
                                 {[
                                     { number: '01', title: 'Wildlife & Exploration Style', desc: 'Comparing adventure & landing focus' },
@@ -965,13 +1089,14 @@ const hxVsVikingSchemaData = {
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'space-between',
-                                                padding: '20px 24px',
+                                                padding: isMobileViewport ? '18px 16px' : '20px 24px',
                                                 background: isActive ? 'var(--bg-dark2)' : 'transparent',
                                                 border: isActive ? '1px solid var(--bg-soft)' : '1px solid var(--navy-border)',
-                                                borderRadius: '16px',
+                                                borderRadius: '8px',
                                                 cursor: 'pointer',
                                                 textAlign: 'left',
-                                                width: isMobileViewport ? '260px' : '100%',
+                                                width: isMobileViewport ? 'min(260px, calc(100vw - 48px))' : '100%',
+                                                maxWidth: '100%',
                                                 flexShrink: 0,
                                                 scrollSnapAlign: 'start',
                                                 transform: isActive && !isMobileViewport ? 'translateX(8px)' : 'translateX(0)',
@@ -980,7 +1105,7 @@ const hxVsVikingSchemaData = {
                                                 outline: 'none'
                                             }}
                                         >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', minWidth: 0 }}>
                                                 <span style={{
                                                     fontSize: '1.25rem',
                                                     fontWeight: '800',
@@ -989,11 +1114,13 @@ const hxVsVikingSchemaData = {
                                                 }}>
                                                     {tab.number}
                                                 </span>
-                                                <div>
+                                                <div style={{ minWidth: 0 }}>
                                                     <div style={{
                                                         fontSize: '0.95rem',
                                                         fontWeight: '700',
-                                                        color: isActive ? 'var(--bg-white)' : 'var(--text-muted)'
+                                                        color: isActive ? 'var(--bg-white)' : 'var(--text-muted)',
+                                                        overflowWrap: 'break-word',
+                                                        lineHeight: '1.35'
                                                     }}>
                                                         {tab.title}
                                                     </div>
@@ -1014,7 +1141,8 @@ const hxVsVikingSchemaData = {
                                                 borderRadius: '50%',
                                                 background: isActive ? 'var(--bg-soft)' : 'var(--navy-border)',
                                                 boxShadow: isActive ? '0 0 10px var(--bg-soft)' : 'none',
-                                                transition: 'var(--transition)'
+                                                transition: 'var(--transition)',
+                                                flexShrink: 0
                                             }} />
                                         </button>
                                     );
@@ -1026,10 +1154,10 @@ const hxVsVikingSchemaData = {
                         <div style={{
                             background: 'var(--bg-dark2)',
                             border: '1px solid var(--navy-border)',
-                            borderRadius: '24px',
-                            padding: isMobileViewport ? '24px' : '48px',
+                            borderRadius: isMobileViewport ? '16px' : '24px',
+                            padding: isMobileViewport ? '20px' : '48px',
                             boxShadow: 'var(--shadow-lg)',
-                            minHeight: '450px',
+                            minHeight: isMobileViewport ? 'auto' : '450px',
                             display: 'flex',
                             flexDirection: 'column',
                             justifyContent: 'space-between',
@@ -1048,32 +1176,43 @@ const hxVsVikingSchemaData = {
                                 fontWeight: '700',
                                 letterSpacing: '2px',
                                 pointerEvents: 'none',
-                                zIndex: 1
+                                zIndex: 1,
+                                display: isMobileViewport ? 'none' : 'block'
                             }}>
                                 HX VS VIKING // EXPEDITION COMPARISON
                             </div>
 
-                            <div style={{ position: 'relative', zIndex: 2 }}>
+                            <div style={{ position: 'relative', zIndex: 2, minWidth: 0 }}>
                                 {activeComparisonTab === 0 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: isMobileViewport ? 'flex-start' : 'center',
+                                            gap: isMobileViewport ? '12px' : '16px',
+                                            marginBottom: isMobileViewport ? '22px' : '28px',
+                                            minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px',
-                                                height: '48px',
-                                                borderRadius: '12px',
+                                                width: isMobileViewport ? '42px' : '48px',
+                                                height: isMobileViewport ? '42px' : '48px',
+                                                borderRadius: '8px',
                                                 background: 'var(--navy-soft)',
                                                 border: '1px solid var(--navy-border)',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center'
+                                                justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
                                                 <Camera size={22} color="var(--bg-soft)" />
                                             </div>
                                             <h3 style={{
                                                 color: 'var(--bg-white)',
-                                                fontSize: '1.4rem',
+                                                fontSize: isMobileViewport ? '1.18rem' : '1.4rem',
                                                 fontWeight: '700',
-                                                margin: 0
+                                                margin: 0,
+                                                lineHeight: '1.25',
+                                                minWidth: 0,
+                                                overflowWrap: 'break-word'
                                             }}>
                                                 Wildlife & Exploration Style
                                             </h3>
@@ -1109,24 +1248,34 @@ const hxVsVikingSchemaData = {
 
                                 {activeComparisonTab === 1 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: isMobileViewport ? 'flex-start' : 'center',
+                                            gap: isMobileViewport ? '12px' : '16px',
+                                            marginBottom: isMobileViewport ? '22px' : '28px',
+                                            minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px',
-                                                height: '48px',
-                                                borderRadius: '12px',
+                                                width: isMobileViewport ? '42px' : '48px',
+                                                height: isMobileViewport ? '42px' : '48px',
+                                                borderRadius: '8px',
                                                 background: 'var(--navy-soft)',
                                                 border: '1px solid var(--navy-border)',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center'
+                                                justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
                                                 <Crown size={22} color="var(--bg-soft)" />
                                             </div>
                                             <h3 style={{
                                                 color: 'var(--bg-white)',
-                                                fontSize: '1.4rem',
+                                                fontSize: isMobileViewport ? '1.18rem' : '1.4rem',
                                                 fontWeight: '700',
-                                                margin: 0
+                                                margin: 0,
+                                                lineHeight: '1.25',
+                                                minWidth: 0,
+                                                overflowWrap: 'break-word'
                                             }}>
                                                 Luxury Comparison
                                             </h3>
@@ -1170,31 +1319,41 @@ const hxVsVikingSchemaData = {
 
                                 {activeComparisonTab === 2 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: isMobileViewport ? 'flex-start' : 'center',
+                                            gap: isMobileViewport ? '12px' : '16px',
+                                            marginBottom: isMobileViewport ? '22px' : '28px',
+                                            minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px',
-                                                height: '48px',
-                                                borderRadius: '12px',
+                                                width: isMobileViewport ? '42px' : '48px',
+                                                height: isMobileViewport ? '42px' : '48px',
+                                                borderRadius: '8px',
                                                 background: 'var(--navy-soft)',
                                                 border: '1px solid var(--navy-border)',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center'
+                                                justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
                                                 <Ship size={22} color="var(--bg-soft)" />
                                             </div>
                                             <h3 style={{
                                                 color: 'var(--bg-white)',
-                                                fontSize: '1.4rem',
+                                                fontSize: isMobileViewport ? '1.18rem' : '1.4rem',
                                                 fontWeight: '700',
-                                                margin: 0
+                                                margin: 0,
+                                                lineHeight: '1.25',
+                                                minWidth: 0,
+                                                overflowWrap: 'break-word'
                                             }}>
                                                 Onboard Atmosphere
                                             </h3>
                                         </div>
 
-                                        <div style={{ display: 'grid', gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr', gap: '24px', marginBottom: '20px' }}>
-                                            <div style={{ background: 'var(--bg-dark)', border: '1px solid var(--navy-border)', borderRadius: '16px', padding: '24px' }}>
+                                        <div style={{ display: 'grid', gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr', gap: isMobileViewport ? '16px' : '24px', marginBottom: '20px' }}>
+                                            <div style={{ background: 'var(--bg-dark)', border: '1px solid var(--navy-border)', borderRadius: '8px', padding: isMobileViewport ? '18px' : '24px', minWidth: 0 }}>
                                                 <div style={{ borderRadius: '10px', overflow: 'hidden', marginBottom: '14px', height: '140px' }}>
                                                     <img src={hxInteriorImg} alt="HX Expeditions interior"
                                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -1203,7 +1362,7 @@ const hxVsVikingSchemaData = {
                                                 <p className="medi-diff-card-text" style={{ color: 'var(--bg-soft)', fontSize: '0.88rem', lineHeight: '1.6', margin: 0 }}>Science centers, expedition lounges, and a destination-driven atmosphere where exploration comes first.</p>
                                             </div>
 
-                                            <div style={{ background: 'var(--bg-dark)', border: '1px solid var(--navy-border)', borderRadius: '16px', padding: '24px' }}>
+                                            <div style={{ background: 'var(--bg-dark)', border: '1px solid var(--navy-border)', borderRadius: '8px', padding: isMobileViewport ? '18px' : '24px', minWidth: 0 }}>
                                                 <div style={{ borderRadius: '10px', overflow: 'hidden', marginBottom: '14px', height: '140px' }}>
                                                     <img src={vikingInteriorImg} alt="Viking Expeditions interior"
                                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -1220,8 +1379,7 @@ const hxVsVikingSchemaData = {
                 </div>
             </section>
 
-
-   {/* ── VIDEO SHOWCASE ── */}
+            {/* ── VIDEO SHOWCASE ── */}
             <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <h2 className="medi-section-heading">Experience Antarctica with HX Expeditions</h2>
@@ -1430,8 +1588,8 @@ const hxVsVikingSchemaData = {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                 Expert Insight from
-   <br className="medi-growth-title-break" /> Angela Hughes
+                                    Expert Insight from
+                                    <br className="medi-growth-title-break" /> Angela Hughes
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
@@ -1640,7 +1798,7 @@ const hxVsVikingSchemaData = {
                 </div>
             </section>
 
-         
+
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ── */}
             <section className="medi-authority-section">
@@ -1698,7 +1856,7 @@ const hxVsVikingSchemaData = {
                 </div>
             </section>
 
-   {/* ── VIDEO SHOWCASE ── */}
+            {/* ── VIDEO SHOWCASE ── */}
             <section className="medi-video-section" style={{ background: '#ffffff', padding: '80px 20px', textAlign: 'center' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <h2 className="medi-section-heading">Experience Antarctica with HX Expeditions</h2>

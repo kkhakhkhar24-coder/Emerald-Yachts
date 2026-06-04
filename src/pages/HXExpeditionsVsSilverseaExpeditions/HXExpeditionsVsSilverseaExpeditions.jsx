@@ -1,19 +1,15 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
+import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import profileAH from '../../assets/HXExpeditionsVsSilverseaExpeditions/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
-// // ── Replace these with your actual image assets ──
-// import hxShipImg from '../../assets/HXvsViking/hx-ship.webp'
-// import vikingShipImg from '../../assets/HXvsViking/viking-ship.webp'
-// import antarcticaImg from '../../assets/HXvsViking/antarctica.webp'
-// import arcticImg from '../../assets/HXvsViking/arctic.webp'
-// import wildlifeImg from '../../assets/HXvsViking/wildlife.webp'
-// import galapagosImg from '../../assets/HXvsViking/galapagos.webp'
-// import svalbardImg from '../../assets/HXvsViking/svalbard.webp'
-// import greenlandImg from '../../assets/HXvsViking/greenland.webp'
-// import hxInteriorImg from '../../assets/HXvsViking/hx-interior.webp'
-// import vikingInteriorImg from '../../assets/HXvsViking/viking-interior.webp'
+import HX_Philosophy from '../../assets/HXExpeditionsVsSilverseaExpeditions/HX_Philosophy.jpg'
+import Silversea_Philosophy from '../../assets/HXExpeditionsVsSilverseaExpeditions/Silversea_Philosophy.webp'
+import Luxury_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Luxury_HX.jpg'
+import Suites_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Suites_HX.jpg'
+import Wildlife_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Wildlife_HX.jpg'
+import Antarctica_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Antarctica_HX.jpg'
+import Antarctica_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Antarctica_Silversea.webp'
+import Arctic_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Arctic_HX.jpg'
 
 import {
   Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -64,6 +60,17 @@ function HXExpeditionsVsSilverseaExpeditions() {
   const mediToggleFaq = (index) => {
     setMediActiveFaq(mediActiveFaq === index ? null : index)
   }
+
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileViewport(window.innerWidth < 992)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const comparisonFaqs = [
     {
@@ -156,9 +163,13 @@ function HXExpeditionsVsSilverseaExpeditions() {
     "@graph": [
       {
         "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com",
-        "logo": "https://www.tripsandships.com/PNG%20image.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/PNG%20image.png"
+        },
         "sameAs": [
           "https://www.facebook.com/tripsandships/",
           "https://www.instagram.com/tripsandshipsluxurytravel"
@@ -166,50 +177,64 @@ function HXExpeditionsVsSilverseaExpeditions() {
       },
       {
         "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com",
-        "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
+        "image": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions.jpg",
+        "description": "Expert guide comparing HX Expeditions and Silversea Expeditions cruises, focusing on luxury levels, expedition style, ships, and itineraries."
       },
       {
         "@type": "Person",
+        "@id": "https://www.tripsandships.com/#person",
         "name": "Angela Hughes",
         "jobTitle": "CEO of Trips & Ships Luxury Travel",
-        "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-        "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" }
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Trips & Ships Luxury Travel"
+        },
+        "description": "Angela Hughes is one of the luxury travel industry's most respected travel advisors and educators."
       },
       {
         "@type": "WebPage",
-        "name": "HX Expeditions vs Viking Expeditions",
-        "url": "https://www.tripsandships.com/hx-vs-viking-expeditions",
-        "description": "Expert comparison of HX Expeditions and Viking Expeditions from Trips & Ships Luxury Travel."
+        "@id": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions#webpage",
+        "url": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions",
+        "name": "HX Expeditions vs Silversea Expeditions Cruises",
+        "description": "Compare HX Expeditions vs Silversea Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, expedition style, ships, Antarctica cruises and Arctic exploration."
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-          { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsandships.com/expedition-cruises" },
-          { "@type": "ListItem", "position": 3, "name": "HX vs Viking Expeditions", "item": "https://www.tripsandships.com/hx-vs-viking-expeditions" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Expedition Cruises",
+            "item": "https://www.tripsandships.com/expedition-cruises"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "HX Expeditions vs Silversea Expeditions",
+            "item": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions"
+          }
         ]
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Is HX Expeditions better than Viking Expeditions?",
-            "acceptedAnswer": { "@type": "Answer", "text": "It depends on travel style. HX is generally more expedition focused, while Viking emphasizes refined luxury." }
-          },
-          {
-            "@type": "Question",
-            "name": "Which expedition line is better for Antarctica?",
-            "acceptedAnswer": { "@type": "Answer", "text": "HX is often stronger for active expedition immersion, while Viking appeals to travelers prioritizing luxury comfort." }
-          },
-          {
-            "@type": "Question",
-            "name": "Which expedition line is better for wildlife?",
-            "acceptedAnswer": { "@type": "Answer", "text": "HX is generally more wildlife and exploration focused." }
+        "mainEntity": comparisonFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
           }
-        ]
+        }))
       }
     ]
   }
@@ -217,10 +242,10 @@ function HXExpeditionsVsSilverseaExpeditions() {
   return (
     <>
       <Helmet>
-        <title>HX Expeditions vs Viking Expeditions 2026 | Expert Expedition Cruise Comparison | Trips & Ships</title>
-        <meta name="title" content="HX Expeditions vs Viking Expeditions 2026 | Expert Expedition Cruise Comparison" />
-        <meta name="description" content="Compare HX Expeditions and Viking Expeditions with expert guidance from Angela Hughes, CEO of Trips & Ships Luxury Travel. Discover which expedition cruise line matches your travel style." />
-        <meta name="keywords" content="HX Expeditions vs Viking Expeditions, expedition cruise comparison, HX vs Viking Antarctica, best expedition cruise line, luxury polar cruise comparison" />
+        <title>HX Expeditions vs Silversea Expeditions | Which Luxury Expedition Cruise Line Is Better?</title>
+        <meta name="title" content="HX Expeditions vs Silversea Expeditions | Expert Cruise Comparison" />
+        <meta name="description" content="Compare HX Expeditions vs Silversea Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, expedition style, ships, Antarctica cruises and Arctic exploration." />
+        <meta name="keywords" content="HX Expeditions vs Silversea Expeditions, Silversea Expeditions comparison, HX vs Silversea cruises, Luxury expedition cruises, Antarctica expedition cruises, Arctic expedition cruises, Small ship expedition cruises, Expedition cruise comparison" />
         <script type="application/ld+json">{JSON.stringify(vsSchemaData)}</script>
       </Helmet>
 
@@ -280,6 +305,19 @@ function HXExpeditionsVsSilverseaExpeditions() {
               border: 1px solid #e2e8f0;
               box-shadow: 0 15px 30px rgba(0,0,0,0.05);
           }
+          .medi-premium-editorial-block::-webkit-scrollbar {
+              width: 6px;
+          }
+          .medi-premium-editorial-block::-webkit-scrollbar-track {
+              background: transparent;
+          }
+          .medi-premium-editorial-block::-webkit-scrollbar-thumb {
+              background: rgba(39, 68, 114, 0.2);
+              border-radius: 3px;
+          }
+          .medi-premium-editorial-block::-webkit-scrollbar-thumb:hover {
+              background: rgba(39, 68, 114, 0.4);
+          }
         `}</style>
 
         <div className="medi-premium-intro-glow-one"></div>
@@ -293,7 +331,11 @@ function HXExpeditionsVsSilverseaExpeditions() {
           }}>
 
             {/* Left: Editorial Comparison Intro */}
-            <div className="medi-premium-editorial-block">
+            <div className="medi-premium-editorial-block" style={{
+              maxHeight: isMobileViewport ? 'none' : '650px',
+              overflowY: isMobileViewport ? 'visible' : 'auto',
+              paddingRight: isMobileViewport ? '0' : '20px',
+            }}>
               <span className="medi-premium-mini-badge" style={{
                 display: 'inline-block',
                 fontSize: '12px',
@@ -565,7 +607,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             }}>
               {/* IMAGE PLACEHOLDER: Recommend a photo of a Science Center or Zodiac Landing */}
               <div style={{ width: '100%', height: '280px', backgroundColor: '#0f1c2e', position: 'relative' }}>
-                <img src="" alt="HX Expedition Discovery" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={HX_Philosophy} alt="HX Expedition Discovery" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.8), transparent)' }}></div>
                 <div style={{ position: 'absolute', bottom: '20px', left: '25px', color: '#fff', fontSize: '12px', fontWeight: '800', letterSpacing: '1px' }}>SCIENCE & DISCOVERY</div>
               </div>
@@ -606,7 +648,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             }}>
               {/* IMAGE PLACEHOLDER: Recommend a photo of Butler service or a Luxury Suite */}
               <div style={{ width: '100%', height: '280px', backgroundColor: '#1e293b', position: 'relative' }}>
-                <img src="" alt="Silversea Luxury Refinement" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={Silversea_Philosophy} alt="Silversea Luxury Refinement" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.8), transparent)' }}></div>
                 <div style={{ position: 'absolute', bottom: '20px', left: '25px', color: '#fff', fontSize: '12px', fontWeight: '800', letterSpacing: '1px' }}>ULTRA-LUXURY COMFORT</div>
               </div>
@@ -635,6 +677,48 @@ function HXExpeditionsVsSilverseaExpeditions() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO SECTION 01: THE SPIRIT OF HX ── */}
+      <section style={{
+        padding: '80px 20px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+              The Explorer’s Perspective
+            </span>
+            <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+              HX Expeditions: The Science of Discovery
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>
+              Step inside the world of HX, where the journey is defined by active exploration and scientific curiosity. From the state-of-the-art hybrid fleet to the expert-led Zodiac landings, witness how HX transforms the traditional cruise into a deep, meaningful immersion into the world’s most fragile ecosystems.
+            </p>
+          </div>
+
+          <div style={{
+            borderRadius: '30px',
+            overflow: 'hidden',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.5)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            aspectRatio: '16/9',
+            backgroundColor: '#000'
+          }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube-nocookie.com/embed/UwU8ApkVKoc" // HX Specific Video
+              title="The HX Expedition Experience"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -671,7 +755,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
               boxShadow: '0 30px 60px rgba(0,0,0,0.1)',
               zIndex: 1
             }}>
-              <img src="" alt="HX Scandi Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
+              <img src={Luxury_HX} alt="HX Scandi Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
             </div>
 
             {/* Content Card HX - Overlapping */}
@@ -771,6 +855,48 @@ function HXExpeditionsVsSilverseaExpeditions() {
         </div>
       </section>
 
+      {/* ── VIDEO SECTION 02: THE REFINEMENT OF SILVERSEA ── */}
+      <section style={{
+        padding: '80px 20px',
+        backgroundColor: '#ffffff',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+              The Luxury Perspective
+            </span>
+            <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+              Silversea: Unrivaled Elegance at the Edge of the World
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>
+              Experience the pinnacle of polar luxury. Silversea Expeditions seamlessly blends the thrill of the Arctic and Antarctica with white-glove service and all-suite refinement. Discover what it means to return from a day on the ice to the warmth of a butler-led suite and gourmet world-class cuisine.
+            </p>
+          </div>
+
+          <div style={{
+            borderRadius: '30px',
+            overflow: 'hidden',
+            boxShadow: '0 30px 60px rgba(15, 28, 46, 0.15)',
+            border: '1px solid #e2e8f0',
+            aspectRatio: '16/9',
+            backgroundColor: '#000'
+          }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube-nocookie.com/embed/24iVCAq-lq8" // Silversea Specific Video
+              title="The Silversea Expedition Experience"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* ── SHIPS & SUITES COMPARISON ── */}
       <section style={{ padding: '100px 20px', backgroundColor: '#f8fafc', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -798,7 +924,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             }}>
               Ships & Suites Comparison
             </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#0f1c2e', margin: '0 auto', borderRadius: '10px' }}></div>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
           </div>
 
           <div style={{
@@ -819,7 +945,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             }}>
               {/* IMAGE: Suggest a shot of MS Roald Amundsen navigating ice */}
               <div style={{ width: '100%', height: '300px', backgroundColor: '#0f1c2e', position: 'relative' }}>
-                <img src="" alt="HX Expedition Ship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={Suites_HX} alt="HX Expedition Ship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', bottom: '20px', left: '25px', background: '#3b82f6', color: '#fff', padding: '5px 15px', borderRadius: '50px', fontSize: '11px', fontWeight: '800', letterSpacing: '1px' }}>ACTIVE EXPLORATION</div>
               </div>
 
@@ -925,7 +1051,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
           }}>
             {/* Image Side */}
             <div style={{ flex: '1.4', position: 'relative', minHeight: '400px' }}>
-              <img src="" alt="HX Active Expedition" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
+              <img src={Wildlife_HX} alt="HX Active Expedition" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 50%, rgba(255,255,255,0.1) 100%)' }}></div>
             </div>
 
@@ -1042,7 +1168,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             >
               {/* IMAGE: Suggest a photo of a guest standing on the actual Antarctic ice */}
               <div style={{ width: '100%', height: '350px', backgroundColor: '#0f1c2e' }}>
-                <img src="" alt="HX Antarctica Experience" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={Antarctica_HX} alt="HX Antarctica Experience" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(15, 28, 46, 0.2)' }}></div>
               </div>
 
@@ -1084,7 +1210,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             >
               {/* IMAGE: Suggest a photo of the Silversea ship anchored near a glacier with a butler on deck */}
               <div style={{ width: '100%', height: '350px', backgroundColor: '#1e293b' }}>
-                <img src="" alt="Silversea Antarctica Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={Antarctica_Silversea} alt="Silversea Antarctica Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
 
               <div style={{ padding: '40px', textAlign: 'center' }}>
@@ -1181,7 +1307,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
                 boxShadow: '0 30px 60px rgba(15, 28, 46, 0.1)',
                 border: '1px solid #e2e8f0'
               }}>
-                <img src="" alt="Arctic Svalbard Wildlife" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
+                <img src={Arctic_HX} alt="Arctic Svalbard Wildlife" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#0f1c2e' }} />
               </div>
             </div>
 
