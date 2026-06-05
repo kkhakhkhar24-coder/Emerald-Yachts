@@ -411,6 +411,12 @@ const Navbar = () => {
               >
                 HX Expeditions Ships</NavLink>
 
+              <NavLink
+                to="/disney-cruise-for-adults-without-kids"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise for Adults Without Kids</NavLink>
             </div>
           </div>
         </div>
@@ -818,19 +824,26 @@ const Navbar = () => {
             >
               HX Expeditions vs Silversea Expeditions</NavLink>
 
-               <NavLink
-                to="/best-hx-expeditions-cruises-for-first-timers"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Best HX Expeditions Cruises for First-Timers</NavLink>
+            <NavLink
+              to="/best-hx-expeditions-cruises-for-first-timers"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best HX Expeditions Cruises for First-Timers</NavLink>
 
-                 <NavLink
-                to="/hx-expeditions-ships"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                HX Expeditions Ships</NavLink>
+            <NavLink
+              to="/hx-expeditions-ships"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              HX Expeditions Ships</NavLink>
+
+            <NavLink
+              to="/disney-cruise-for-adults-without-kids"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise for Adults Without Kids</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

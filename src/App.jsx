@@ -64,6 +64,7 @@ import Hxvsvikingexpeditions from "./pages/Hxvsvikingexpeditions/Hxvsvikingexped
 import HXExpeditionsVsSilverseaExpeditions from "./pages/HXExpeditionsVsSilverseaExpeditions/HXExpeditionsVsSilverseaExpeditions";
 import BestHXExpeditions from "./pages/Besthxexpeditions/Besthxexpeditions";
 import Hxexpeditionsships from "./pages/Hxexpeditionsships/Hxexpeditionsships";
+import DisneyCruiseAdultsWithoutKids from "./pages/DisneyCruiseAdultsWithoutKids/DisneyCruiseAdultsWithoutKids";
 
 
 function App() {
@@ -324,6 +325,11 @@ function App() {
           <Route
             path="/hx-expeditions-ships"
             element={<Hxexpeditionsships />}
+          />
+
+          <Route
+            path="/disney-cruise-for-adults-without-kids"
+            element={<DisneyCruiseAdultsWithoutKids />}
           />
         </Routes>
       </BrowserRouter>
