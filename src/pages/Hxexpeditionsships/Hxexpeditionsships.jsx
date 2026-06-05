@@ -1,27 +1,37 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
-// import Profile_AH from '../../assets/HXExpeditionsShips/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/HXExpeditionsShips/Profile_Picture_AH.jpg'
+import Profile_AH from '../../assets/Media (2).jpg'
+import Profile_Picture_AH from '../../assets/Media (1).jpg'
+
+
+import MSAmundsen from '../../assets/Hxexpeditionsships/MS Amundsen.webp'
+import MSNansen from '../../assets/Hxexpeditionsships/MS Nansen.webp'
+import MSFarm from '../../assets/Hxexpeditionsships/MS Farm.webp'
+import MSSpitsbergen from '../../assets/Hxexpeditionsships/MS Spitsbergen.webp'
+import MSSanta from '../../assets/Hxexpeditionsships/MS Santa.webp'
+
+import MSAmundsen1 from '../../assets/Hxexpeditionsships/MS Roald Amundsen1.webp'
+import MSNansen1 from '../../assets/Hxexpeditionsships/MS Fridtjof Nansen1.webp'
+import MSFarm1 from '../../assets/Hxexpeditionsships/MS Fram1.webp'
+import MSSpitsbergen1 from '../../assets/Hxexpeditionsships/MS Spitsbergen1.webp'
+import MSSanta1 from '../../assets/Hxexpeditionsships/MS Santa Cruz 1.webp'
 
 // ── Ship images (swap to real asset paths) ────────────────────────────────
-// import roaldAmundsenImg  from '../../assets/HXExpeditionsShips/ms-roald-amundsen.webp'
-// import fridtjofNansenImg from '../../assets/HXExpeditionsShips/ms-fridtjof-nansen.webp'
-// import framImg           from '../../assets/HXExpeditionsShips/ms-fram.webp'
-// import spitsbergenImg    from '../../assets/HXExpeditionsShips/ms-spitsbergen.webp'
-// import santaCruzImg      from '../../assets/HXExpeditionsShips/ms-santa-cruz-ii.webp'
+import roaldAmundsenImg  from '../../assets/Hxexpeditionsships/roaldAmundsenImg.webp'
+import fridtjofNansenImg from '../../assets/Hxexpeditionsships/fridtjofNansenImg.webp'
+import framImg from '../../assets/Hxexpeditionsships/framImg.webp'
+import santaCruzImg from '../../assets/Hxexpeditionsships/santaCruzImg.webp'
 
 // ── Supporting images ────────────────────────────────────────────────────
-// import cabinInteriorImg  from '../../assets/HXExpeditionsShips/hx-expedition-cabins.webp'
-// import zodiacImg         from '../../assets/HXExpeditionsShips/zodiac-operations.webp'
-// import wildlifeImg       from '../../assets/HXExpeditionsShips/expedition-wildlife.webp'
-// import antarcticaImg     from '../../assets/HXExpeditionsShips/antarctica-expedition.webp'
-// import svalbardImg       from '../../assets/HXExpeditionsShips/svalbard-expedition.webp'
-// import galapagosImg      from '../../assets/HXExpeditionsShips/galapagos-expedition.webp'
+import cabinInteriorImg from '../../assets/Hxexpeditionsships/cabinInteriorImg.webp'
+import zodiacImg from '../../assets/Hxexpeditionsships/zodiacImg.webp'
+
+import cabinsuite from '../../assets/Hxexpeditionsships/suite balcony.webp'
+import luxury from '../../assets/Hxexpeditionsships/ship Luxurious.webp'
 
 // ── Hero images ──────────────────────────────────────────────────────────
-// import hero1 from '../../assets/HXExpeditionsShips/hero1.jpg'
-// import hero2 from '../../assets/HXExpeditionsShips/hero2.jpg'
-// import hero3 from '../../assets/HXExpeditionsShips/hero3.jpg'
+import hero1 from '../../assets/Hxexpeditionsships/hero1.webp'
+import hero2 from '../../assets/Hxexpeditionsships/hero2.webp'
+import hero3 from '../../assets/Hxexpeditionsships/hero3.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -38,7 +48,7 @@ function HXExpeditionsShips() {
 
     // ── Hero slider ────────────────────────────────────────────────────────
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -87,35 +97,35 @@ function HXExpeditionsShips() {
     const mediItineraries = [
         {
             title: 'MS Roald Amundsen',
-            // img: roaldAmundsenImg,
+            img: MSAmundsen,
             badge: 'FLAGSHIP HYBRID SHIP',
             bestFor: ['Antarctica first timers', 'Travelers wanting modern comfort', 'Guests preferring larger expedition ships', 'Travelers wanting balcony cabins', 'Expedition travelers seeking more amenities'],
             highlights: ['Large observation lounges', 'Science center', 'Infinity pool', 'Wellness area', 'Multiple dining venues']
         },
         {
             title: 'MS Fridtjof Nansen',
-            // img: fridtjofNansenImg,
+            img: MSNansen,
             badge: 'BEST FOR FIRST TIMERS',
             bestFor: ['First time expedition cruisers', 'Antarctica and Greenland travelers', 'Travelers wanting comfortable expedition experiences', 'Guests who appreciate modern ship design'],
             highlights: ['Hybrid expedition technology', 'Science Centre lectures', 'Spacious balcony cabins', 'Modern Scandinavian interiors', 'Strong expedition staff']
         },
         {
             title: 'MS Fram',
-            // img: framImg,
+            img: MSFarm,
             badge: 'CLASSIC EXPEDITION',
             bestFor: ['Experienced expedition travelers', 'Guests prioritizing expedition atmosphere', 'Arctic enthusiasts', 'Travelers preferring smaller passenger counts'],
             highlights: ['Traditional expedition atmosphere', 'Casual onboard vibe', 'Intimate setting', 'Antarctica & Arctic routes', 'Expedition focused programming']
         },
         {
             title: 'MS Spitsbergen',
-            // img: spitsbergenImg,
+            img: MSSpitsbergen,
             badge: 'INTIMATE ARCTIC',
             bestFor: ['Svalbard expeditions', 'Arctic wildlife lovers', 'Smaller ship enthusiasts', 'Polar photography travelers'],
             highlights: ['Small intimate ship', 'Svalbard & Arctic routes', 'Casual expedition atmosphere', 'Wildlife focused itineraries', 'Relaxed onboard setting']
         },
         {
             title: 'MS Santa Cruz II',
-            // img: santaCruzImg,
+            img: MSSanta,
             badge: 'GALÁPAGOS SPECIALIST',
             bestFor: ['Wildlife lovers', 'Warm weather expedition travel', 'Galápagos exploration', 'First time expedition travelers', 'Educational travel'],
             highlights: ['Dedicated Galápagos ship', 'Expert naturalist guides', 'Small ship atmosphere', 'Warm weather expedition', 'Incredible wildlife access']
@@ -710,13 +720,128 @@ function HXExpeditionsShips() {
                 </div>
             </section>
 
-            {/* ════════════════════════════════════════════════════════════
-                SHIP IMAGE GALLERY  ← NEW SECTION (inline CSS)
-            ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#ffffff', padding: '80px 20px' }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '44px' }}>
-                        <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#274472', opacity: 0.75, display: 'block', marginBottom: '10px' }}>
+            <section className="hx-gallery-section">
+                <style dangerouslySetInnerHTML={{ __html: `
+                    .hx-gallery-section {
+                        background: #ffffff;
+                        padding: 80px 20px;
+                    }
+                    .hx-gallery-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+                    .hx-gallery-header {
+                        text-align: center;
+                        margin-bottom: 44px;
+                    }
+                    .hx-gallery-subtitle {
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: 0.25em;
+                        text-transform: uppercase;
+                        color: #274472;
+                        opacity: 0.75;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    .hx-gallery-grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-auto-rows: 260px;
+                        gap: 14px;
+                    }
+                    .hx-gallery-item {
+                        border-radius: 14px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+                    .hx-gallery-item:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 12px 30px rgba(15,28,46,0.15);
+                    }
+                    .hx-gallery-item:first-child {
+                        grid-column: span 2;
+                    }
+                    .hx-gallery-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        transition: transform 0.5s ease;
+                    }
+                    .hx-gallery-item:hover .hx-gallery-img {
+                        transform: scale(1.04);
+                    }
+                    .hx-gallery-overlay {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: linear-gradient(to top, rgba(15,28,46,0.85), transparent);
+                        padding: 18px 14px 12px;
+                        transition: background 0.3s ease;
+                    }
+                    .hx-gallery-item:hover .hx-gallery-overlay {
+                        background: linear-gradient(to top, rgba(15,28,46,0.92), transparent);
+                    }
+                    .hx-gallery-caption {
+                        color: #ffffff;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                    .hx-gallery-grid-row2 {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 14px;
+                        margin-top: 14px;
+                    }
+                    .hx-gallery-grid-row2 .hx-gallery-item {
+                        height: 240px;
+                    }
+
+                    /* Responsive styling */
+                    @media (max-width: 991px) {
+                        .hx-gallery-section {
+                            padding: 60px 16px;
+                        }
+                        .hx-gallery-grid {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-auto-rows: 240px;
+                            gap: 12px;
+                        }
+                        .hx-gallery-item:first-child {
+                            grid-column: span 1;
+                        }
+                        .hx-gallery-grid-row2 {
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 12px;
+                            margin-top: 12px;
+                        }
+                    }
+
+                    @media (max-width: 575px) {
+                        .hx-gallery-section {
+                            padding: 40px 12px;
+                        }
+                        .hx-gallery-grid {
+                            grid-template-columns: 1fr;
+                            grid-auto-rows: 200px;
+                            gap: 10px;
+                        }
+                        .hx-gallery-item:first-child {
+                            grid-column: span 1;
+                        }
+                        .hx-gallery-grid-row2 {
+                            grid-template-columns: 1fr;
+                            gap: 10px;
+                            margin-top: 10px;
+                        }
+                    }
+                `}} />
+                <div className="hx-gallery-container">
+                    <div className="hx-gallery-header">
+                        <span className="hx-gallery-subtitle">
                             HX FLEET IMAGERY
                         </span>
                         <h2 className="medi-section-heading">HX Ships &amp; Expedition Experiences</h2>
@@ -724,38 +849,35 @@ function HXExpeditionsShips() {
                     </div>
 
                     {/* 6-image mosaic */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateRows: 'repeat(2, 260px)', gap: '14px' }}>
+                    <div className="hx-gallery-grid">
                         {[
-                            // { img: roaldAmundsenImg,  alt: 'MS Roald Amundsen in Antarctica',           span: '1 / span 1 / 1 / span 2' },
-                            // { img: fridtjofNansenImg, alt: 'MS Fridtjof Nansen expedition ship',        span: '' },
-                            // { img: cabinInteriorImg,  alt: 'HX expedition suite balcony',               span: '' },
-                            // { img: framImg,           alt: 'MS Fram in Arctic waters',                  span: '' },
-                            // { img: santaCruzImg,      alt: 'MS Santa Cruz II in the Galápagos',         span: '' },
-                            // { img: zodiacImg,         alt: 'Expedition travelers onboard HX ship',      span: '' },
+                            { img: roaldAmundsenImg,  alt: 'MS Roald Amundsen in Antarctica',           span: '1 / span 1 / 1 / span 2' },
+                            { img: fridtjofNansenImg, alt: 'MS Fridtjof Nansen expedition ship',        span: '' },
+                            { img: cabinInteriorImg,  alt: 'HX expedition suite balcony',               span: '' },
+                            { img: framImg,           alt: 'MS Fram in Arctic waters',                  span: '' },
+                            { img: santaCruzImg,      alt: 'MS Santa Cruz II in the Galápagos',         span: '' },
+                            { img: zodiacImg,         alt: 'Expedition travelers onboard HX ship',      span: '' },
                         ].map((item, i) => (
-                            <div key={i} style={{
-                                borderRadius: '14px', overflow: 'hidden', position: 'relative',
-                                gridColumn: i === 0 ? 'span 2' : '',
-                            }}>
-                                <img src={item.img} alt={item.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.75), transparent)', padding: '18px 14px 12px' }}>
-                                    <span style={{ color: '#ffffff', fontSize: '13px', fontWeight: '500' }}>{item.alt}</span>
+                            <div key={i} className="hx-gallery-item">
+                                <img src={item.img} alt={item.alt} className="hx-gallery-img" />
+                                <div className="hx-gallery-overlay">
+                                    <span className="hx-gallery-caption">{item.alt}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     {/* Row 2: 3 remaining images */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px', marginTop: '14px' }}>
+                    <div className="hx-gallery-grid-row2">
                         {[
                             // { img: spitsbergenImg, alt: 'MS Spitsbergen Arctic expedition' },
                             // { img: antarcticaImg,  alt: 'MS Roald Amundsen in Antarctica' },
                             // { img: galapagosImg,   alt: 'Galápagos wildlife expedition cruise' },
                         ].map((item, i) => (
-                            <div key={i} style={{ borderRadius: '14px', overflow: 'hidden', position: 'relative', height: '240px' }}>
-                                <img src={item.img} alt={item.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.75), transparent)', padding: '18px 14px 12px' }}>
-                                    <span style={{ color: '#ffffff', fontSize: '13px', fontWeight: '500' }}>{item.alt}</span>
+                            <div key={i} className="hx-gallery-item">
+                                <img src={item.img} alt={item.alt} className="hx-gallery-img" />
+                                <div className="hx-gallery-overlay">
+                                    <span className="hx-gallery-caption">{item.alt}</span>
                                 </div>
                             </div>
                         ))}
@@ -766,89 +888,354 @@ function HXExpeditionsShips() {
             {/* ════════════════════════════════════════════════════════════
                 WHAT HX SHIPS FEEL LIKE  — tab-panel layout
             ════════════════════════════════════════════════════════════ */}
-            <section style={{
-                background: 'linear-gradient(180deg, var(--medi-bg-soft, #f0f4f8) 0%, #ffffff 100%)',
-                backgroundImage: 'radial-gradient(rgba(39,68,114,0.08) 1px, transparent 1px)',
-                backgroundSize: '32px 32px',
-                borderTop: '1px solid rgba(39,68,114,0.12)',
-                borderBottom: '1px solid rgba(39,68,114,0.12)',
-                padding: isMobileViewport ? '60px 16px' : '100px 24px',
-                position: 'relative',
-                overflow: 'hidden',
-                width: '100%',
-                boxSizing: 'border-box'
-            }}>
-                {/* Ambient glow blobs */}
-                <div style={{
-                    position: 'absolute', top: '5%', left: '5%',
-                    width: '350px', height: '350px', borderRadius: '50%',
-                    background: 'radial-gradient(circle, rgba(39,68,114,0.12) 0%, transparent 70%)',
-                    filter: 'blur(60px)', pointerEvents: 'none',
-                }} />
-                <div style={{
-                    position: 'absolute', bottom: '10%', right: '5%',
-                    width: '400px', height: '400px', borderRadius: '50%',
-                    background: 'radial-gradient(circle, rgba(39,68,114,0.10) 0%, transparent 70%)',
-                    filter: 'blur(70px)', pointerEvents: 'none',
-                }} />
+            <section className="hx-onboard-section">
+                <style dangerouslySetInnerHTML={{ __html: `
+                    .hx-onboard-section {
+                        background: linear-gradient(180deg, var(--medi-bg-soft, #f0f4f8) 0%, #ffffff 100%);
+                        background-image: radial-gradient(rgba(39,68,114,0.08) 1px, transparent 1px);
+                        background-size: 32px 32px;
+                        border-top: 1px solid rgba(39,68,114,0.12);
+                        border-bottom: 1px solid rgba(39,68,114,0.12);
+                        padding: 100px 24px;
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                    .hx-onboard-glow-1 {
+                        position: absolute;
+                        top: 5%;
+                        left: 5%;
+                        width: 350px;
+                        height: 350px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, rgba(39,68,114,0.12) 0%, transparent 70%);
+                        filter: blur(60px);
+                        pointer-events: none;
+                    }
+                    .hx-onboard-glow-2 {
+                        position: absolute;
+                        bottom: 10%;
+                        right: 5%;
+                        width: 400px;
+                        height: 400px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, rgba(39,68,114,0.10) 0%, transparent 70%);
+                        filter: blur(70px);
+                        pointer-events: none;
+                    }
+                    .hx-onboard-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 2;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                    .hx-onboard-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1.6fr;
+                        gap: 40px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        align-items: start;
+                    }
+                    .hx-onboard-sidebar {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        position: sticky;
+                        top: 100px;
+                        z-index: 5;
+                    }
+                    .hx-onboard-sidebar-header {
+                        text-align: left;
+                    }
+                    .hx-onboard-badge {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 6px 16px;
+                        border-radius: 100px;
+                        margin-bottom: 16px;
+                        background: rgba(39,68,114,0.10);
+                        border: 1px solid rgba(39,68,114,0.18);
+                    }
+                    .hx-onboard-badge span {
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: #274472;
+                    }
+                    .hx-onboard-title {
+                        font-weight: 600;
+                        line-height: 1.25;
+                        margin: 0 0 16px 0;
+                        font-size: clamp(1.6rem, 3vw, 2.2rem);
+                        color: #0f1c2e;
+                        word-break: break-word;
+                        overflow-wrap: break-word;
+                    }
+                    .hx-onboard-desc {
+                        font-size: 0.95rem;
+                        margin: 0 0 24px 0;
+                        line-height: 1.6;
+                        color: #475569;
+                    }
+                    .hx-onboard-tabs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+                    .hx-onboard-tab-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px 24px;
+                        background: transparent;
+                        border: 1px solid rgba(39,68,114,0.2);
+                        border-radius: 16px;
+                        cursor: pointer;
+                        text-align: left;
+                        width: 100%;
+                        box-sizing: border-box;
+                        transition: all 0.25s ease;
+                        outline: none;
+                    }
+                    .hx-onboard-tab-btn:hover {
+                        border-color: rgba(39,68,114,0.4);
+                        background: rgba(39,68,114,0.03);
+                    }
+                    .hx-onboard-tab-btn.active {
+                        background: #0f1c2e;
+                        border-color: rgba(39,68,114,0.5);
+                        transform: translateX(8px);
+                        box-shadow: 0 8px 32px rgba(15,28,46,0.18);
+                    }
+                    .hx-onboard-tab-content-flex {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                    }
+                    .hx-onboard-tab-num {
+                        font-size: 1.25rem;
+                        font-weight: 800;
+                        color: #94a3b8;
+                        font-family: monospace;
+                        transition: color 0.25s ease;
+                    }
+                    .hx-onboard-tab-btn.active .hx-onboard-tab-num {
+                        color: #ffffff;
+                    }
+                    .hx-onboard-tab-title {
+                        font-size: 0.95rem;
+                        font-weight: 700;
+                        color: #475569;
+                        transition: color 0.25s ease;
+                    }
+                    .hx-onboard-tab-btn.active .hx-onboard-tab-title {
+                        color: #ffffff;
+                    }
+                    .hx-onboard-tab-desc {
+                        font-size: 0.75rem;
+                        color: #94a3b8;
+                        margin-top: 4px;
+                        transition: color 0.25s ease;
+                    }
+                    .hx-onboard-tab-btn.active .hx-onboard-tab-desc {
+                        color: #93c5fd;
+                    }
+                    .hx-onboard-tab-dot {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: rgba(39,68,114,0.3);
+                        transition: all 0.25s ease;
+                    }
+                    .hx-onboard-tab-btn.active .hx-onboard-tab-dot {
+                        background: #93c5fd;
+                        box-shadow: 0 0 10px #93c5fd;
+                    }
+                    .hx-onboard-panel {
+                        background: #0f1c2e;
+                        border: 1px solid rgba(39,68,114,0.35);
+                        border-radius: 24px;
+                        padding: 48px;
+                        box-shadow: 0 8px 40px rgba(15,28,46,0.22);
+                        min-height: 450px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        position: relative;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                    }
+                    .hx-onboard-watermark {
+                        position: absolute;
+                        bottom: 24px;
+                        right: 28px;
+                        color: rgba(39,68,114,0.4);
+                        font-family: monospace;
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        pointer-events: none;
+                    }
+                    .hx-onboard-panel-header {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        margin-bottom: 28px;
+                    }
+                    .hx-onboard-panel-icon-box {
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 12px;
+                        background: rgba(39,68,114,0.4);
+                        border: 1px solid rgba(39,68,114,0.5);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .hx-onboard-panel-title {
+                        color: #ffffff;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    .hx-onboard-panel-lead {
+                        color: #94a3b8;
+                        font-size: 0.95rem;
+                        margin-bottom: 20px;
+                        line-height: 1.6;
+                    }
+                    .hx-onboard-panel-list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+                    .hx-onboard-panel-list-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                    }
+                    .hx-onboard-panel-list-item-text {
+                        color: #e2e8f0;
+                        font-size: 0.92rem;
+                    }
+                    .hx-onboard-note-box {
+                        margin-top: 16px;
+                        padding-top: 16px;
+                        border-top: 1px solid rgba(255,255,255,0.08);
+                    }
+                    .hx-onboard-note-text {
+                        color: #93c5fd;
+                        font-style: italic;
+                        font-size: 0.9rem;
+                        margin: 0;
+                    }
 
-                <div style={{
-                    maxWidth: '1200px',
-                    margin: '0 auto',
-                    position: 'relative',
-                    zIndex: 2,
-                    width: '100%',
-                    boxSizing: 'border-box'
-                }}>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
-                        gap: '40px',
-                        width: '100%',
-                        boxSizing: 'border-box',
-                        alignItems: 'start'
-                    }}>
+                    /* Responsive Styling */
+                    @media (max-width: 991px) {
+                        .hx-onboard-section {
+                            padding: 60px 16px;
+                        }
+                        .hx-onboard-grid {
+                            grid-template-columns: 1fr;
+                            gap: 30px;
+                        }
+                        .hx-onboard-sidebar {
+                            position: static;
+                            top: auto;
+                        }
+                        .hx-onboard-sidebar-header {
+                            text-align: center;
+                        }
+                        .hx-onboard-tabs {
+                            flex-direction: row;
+                            overflow-x: auto;
+                            padding-bottom: 12px;
+                            scroll-snap-type: x mandatory;
+                            -webkit-overflow-scrolling: touch;
+                        }
+                        .hx-onboard-tabs::-webkit-scrollbar {
+                            height: 5px;
+                        }
+                        .hx-onboard-tabs::-webkit-scrollbar-track {
+                            background: rgba(39, 68, 114, 0.05);
+                            border-radius: 3px;
+                        }
+                        .hx-onboard-tabs::-webkit-scrollbar-thumb {
+                            background: rgba(39, 68, 114, 0.2);
+                            border-radius: 3px;
+                        }
+                        .hx-onboard-tab-btn {
+                            width: 260px;
+                            flex-shrink: 0;
+                            scroll-snap-align: start;
+                        }
+                        .hx-onboard-tab-btn.active {
+                            transform: none;
+                        }
+                        .hx-onboard-tab-desc {
+                            display: none;
+                        }
+                        .hx-onboard-panel {
+                            padding: 32px;
+                            min-height: auto;
+                        }
+                    }
+
+                    @media (max-width: 600px) {
+                        .hx-onboard-tabs {
+                            flex-direction: column;
+                            overflow-x: visible;
+                            scroll-snap-type: none;
+                        }
+                        .hx-onboard-tab-btn {
+                            width: 100%;
+                            padding: 16px 20px;
+                        }
+                        .hx-onboard-tab-desc {
+                            display: block;
+                        }
+                        .hx-onboard-panel {
+                            padding: 24px;
+                            border-radius: 20px;
+                        }
+                        .hx-onboard-watermark {
+                            display: none;
+                        }
+                    }
+                `}} />
+                {/* Ambient glow blobs */}
+                <div className="hx-onboard-glow-1" />
+                <div className="hx-onboard-glow-2" />
+
+                <div className="hx-onboard-container">
+                    <div className="hx-onboard-grid">
 
                         {/* ── LEFT: sticky nav ── */}
-                        <div style={{
-                            display: 'flex', flexDirection: 'column', gap: '24px',
-                            position: isMobileViewport ? 'static' : 'sticky', top: '100px', zIndex: 5,
-                        }}>
-                            <div style={{ textAlign: isMobileViewport ? 'center' : 'left' }}>
-                                <div style={{
-                                    display: 'inline-flex', alignItems: 'center', gap: '8px',
-                                    padding: '6px 16px', borderRadius: '100px', marginBottom: '16px',
-                                    background: 'rgba(39,68,114,0.10)',
-                                    border: '1px solid rgba(39,68,114,0.18)',
-                                }}>
+                        <div className="hx-onboard-sidebar">
+                            <div className="hx-onboard-sidebar-header">
+                                <div className="hx-onboard-badge">
                                     <Compass size={14} color="#274472" />
-                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', color: '#274472' }}>
-                                        ONBOARD EXPERIENCE
-                                    </span>
+                                    <span>ONBOARD EXPERIENCE</span>
                                 </div>
-                                <h2 style={{
-                                    fontWeight: '600', lineHeight: '1.25',
-                                    margin: '0 0 16px 0', fontSize: 'clamp(1.6rem,3vw,2.2rem)',
-                                    color: '#0f1c2e',
-                                    wordBreak: 'break-word',
-                                    overflowWrap: 'break-word'
-                                }}>
+                                <h2 className="hx-onboard-title">
                                     What HX Ships Feel Like Onboard
                                 </h2>
-                                <p style={{ fontSize: '0.95rem', margin: '0 0 24px 0', lineHeight: '1.6', color: '#475569' }}>
+                                <p className="hx-onboard-desc">
                                     Select a topic below to explore what the HX expedition experience is really like.
                                 </p>
                             </div>
 
                             {/* Tab buttons */}
-                            <div style={{
-                                display: 'flex',
-                                flexDirection: isMobileViewport ? 'row' : 'column',
-                                gap: '12px',
-                                overflowX: isMobileViewport ? 'auto' : 'visible',
-                                paddingBottom: isMobileViewport ? '12px' : '0',
-                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
-                            }}>
+                            <div className="hx-onboard-tabs">
                                 {[
                                     { number: '01', title: 'Travelers Should Expect',     desc: 'Casual, educational, exploration-first' },
                                     { number: '02', title: 'Travelers Should Not Expect', desc: 'What HX ships don\'t offer' },
@@ -859,46 +1246,22 @@ function HXExpeditionsShips() {
                                         <button
                                             key={idx}
                                             onClick={() => setMediActiveOnboardTab(idx)}
-                                            style={{
-                                                display: 'flex', alignItems: 'center',
-                                                justifyContent: 'space-between',
-                                                padding: '20px 24px',
-                                                background: isActive ? '#0f1c2e' : 'transparent',
-                                                border: isActive ? '1px solid rgba(39,68,114,0.5)' : '1px solid rgba(39,68,114,0.2)',
-                                                borderRadius: '16px', cursor: 'pointer',
-                                                textAlign: 'left', width: isMobileViewport ? '260px' : '100%',
-                                                flexShrink: 0,
-                                                scrollSnapAlign: 'start',
-                                                transform: isActive && !isMobileViewport ? 'translateX(8px)' : 'translateX(0)',
-                                                boxShadow: isActive ? '0 8px 32px rgba(15,28,46,0.18)' : 'none',
-                                                transition: 'all 0.25s ease', outline: 'none',
-                                            }}
+                                            className={`hx-onboard-tab-btn ${isActive ? 'active' : ''}`}
                                         >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                                                <span style={{
-                                                    fontSize: '1.25rem', fontWeight: '800',
-                                                    color: isActive ? '#ffffff' : '#94a3b8',
-                                                    fontFamily: 'monospace',
-                                                }}>
+                                            <div className="hx-onboard-tab-content-flex">
+                                                <span className="hx-onboard-tab-num">
                                                     {tab.number}
                                                 </span>
                                                 <div>
-                                                    <div style={{ fontSize: '0.95rem', fontWeight: '700', color: isActive ? '#ffffff' : '#475569' }}>
+                                                    <div className="hx-onboard-tab-title">
                                                         {tab.title}
                                                     </div>
-                                                    {!isMobileViewport && (
-                                                        <div style={{ fontSize: '0.75rem', color: isActive ? '#93c5fd' : '#94a3b8', marginTop: '4px' }}>
-                                                            {tab.desc}
-                                                        </div>
-                                                    )}
+                                                    <div className="hx-onboard-tab-desc">
+                                                        {tab.desc}
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div style={{
-                                                width: '8px', height: '8px', borderRadius: '50%',
-                                                background: isActive ? '#93c5fd' : 'rgba(39,68,114,0.3)',
-                                                boxShadow: isActive ? '0 0 10px #93c5fd' : 'none',
-                                                transition: 'all 0.25s ease',
-                                            }} />
+                                            <div className="hx-onboard-tab-dot" />
                                         </button>
                                     )
                                 })}
@@ -906,23 +1269,9 @@ function HXExpeditionsShips() {
                         </div>
 
                         {/* ── RIGHT: content panel ── */}
-                        <div style={{
-                            background: '#0f1c2e',
-                            border: '1px solid rgba(39,68,114,0.35)',
-                            borderRadius: '24px', padding: isMobileViewport ? '24px' : '48px',
-                            boxShadow: '0 8px 40px rgba(15,28,46,0.22)',
-                            minHeight: '450px',
-                            display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-                            position: 'relative', overflow: 'hidden',
-                            boxSizing: 'border-box'
-                        }}>
+                        <div className="hx-onboard-panel">
                             {/* Watermark label */}
-                            <div style={{
-                                position: 'absolute', bottom: '24px', right: '28px',
-                                color: 'rgba(39,68,114,0.4)', fontFamily: 'monospace',
-                                fontSize: '11px', fontWeight: '700', letterSpacing: '2px',
-                                pointerEvents: 'none',
-                            }}>
+                            <div className="hx-onboard-watermark">
                                 HX EXPEDITIONS // ONBOARD EXPERIENCE
                             </div>
 
@@ -931,34 +1280,30 @@ function HXExpeditionsShips() {
                                 {/* ── Tab 0: Travelers Should Expect ── */}
                                 {mediActiveOnboardTab === 0 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
-                                            <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
-                                                background: 'rgba(39,68,114,0.4)', border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            }}>
+                                        <div className="hx-onboard-panel-header">
+                                            <div className="hx-onboard-panel-icon-box">
                                                 <Compass size={22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                            <h3 className="hx-onboard-panel-title">
                                                 Travelers Should Expect
                                             </h3>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                                        <p className="hx-onboard-panel-lead">
                                             HX ships feel very different from mainstream cruise ships.
                                         </p>
 
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <ul className="hx-onboard-panel-list">
                                             {['Casual atmosphere', 'Educational lectures', 'Expedition briefings', 'Wildlife discussions', 'Relaxed dress codes', 'Outdoor exploration focus'].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                <li key={i} className="hx-onboard-panel-list-item">
                                                     <CheckCircle size={16} style={{ color: '#93c5fd', flexShrink: 0 }} />
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                    <span className="hx-onboard-panel-list-item-text">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-                                            <p style={{ color: '#93c5fd', fontStyle: 'italic', fontSize: '0.9rem', margin: 0 }}>
+                                        <div className="hx-onboard-note-box">
+                                            <p className="hx-onboard-note-text">
                                                 The expedition atmosphere is the defining feature of every HX voyage.
                                             </p>
                                         </div>
@@ -968,15 +1313,11 @@ function HXExpeditionsShips() {
                                 {/* ── Tab 1: Travelers Should Not Expect ── */}
                                 {mediActiveOnboardTab === 1 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
-                                            <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
-                                                background: 'rgba(39,68,114,0.4)', border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            }}>
+                                        <div className="hx-onboard-panel-header">
+                                            <div className="hx-onboard-panel-icon-box">
                                                 <Moon size={22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                            <h3 className="hx-onboard-panel-title">
                                                 Travelers Should Not Expect
                                             </h3>
                                         </div>
@@ -996,21 +1337,21 @@ function HXExpeditionsShips() {
                                             <span style={{ color: '#93c5fd', fontSize: '11px', fontWeight: '700', letterSpacing: '2px' }}>EXPEDITION FIRST</span>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                                        <p className="hx-onboard-panel-lead">
                                             The destinations themselves become the primary entertainment.
                                         </p>
 
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <ul className="hx-onboard-panel-list">
                                             {['Casinos', 'Broadway entertainment', 'Large ship nightlife', 'Formal cruise culture'].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                <li key={i} className="hx-onboard-panel-list-item">
                                                     <span style={{ color: '#ef4444', fontWeight: 700, fontSize: '16px', flexShrink: 0 }}>✕</span>
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                    <span className="hx-onboard-panel-list-item-text">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-                                            <p style={{ color: '#93c5fd', fontStyle: 'italic', fontSize: '0.9rem', margin: 0 }}>
+                                        <div className="hx-onboard-note-box">
+                                            <p className="hx-onboard-note-text">
                                                 The destinations themselves become the primary entertainment.
                                             </p>
                                         </div>
@@ -1020,24 +1361,20 @@ function HXExpeditionsShips() {
                                 {/* ── Tab 2: Key Ship Differences ── */}
                                 {mediActiveOnboardTab === 2 && (
                                     <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
-                                            <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
-                                                background: 'rgba(39,68,114,0.4)', border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            }}>
+                                        <div className="hx-onboard-panel-header">
+                                            <div className="hx-onboard-panel-icon-box">
                                                 <Ship size={22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
+                                            <h3 className="hx-onboard-panel-title">
                                                 Key Ship Differences
                                             </h3>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                                        <p className="hx-onboard-panel-lead">
                                             The fleet divides into two distinct styles:
                                         </p>
 
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                                        <ul className="hx-onboard-panel-list" style={{ gap: '14px' }}>
                                             {[
                                                 'Hybrid flagships – modern, larger, more amenities',
                                                 'Classic ships – smaller, more intimate, expedition focused',
@@ -1045,20 +1382,20 @@ function HXExpeditionsShips() {
                                                 'All ships: casual dress code, relaxed atmosphere',
                                                 'All ships: destination is the entertainment',
                                             ].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                                                <li key={i} className="hx-onboard-panel-list-item" style={{ gap: '14px' }}>
                                                     <span style={{
                                                         background: 'rgba(39,68,114,0.5)', color: '#93c5fd',
                                                         fontSize: '11px', fontWeight: '800',
                                                         padding: '4px 10px', borderRadius: '6px',
                                                         flexShrink: 0, fontFamily: 'monospace',
                                                     }}>0{i + 1}</span>
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                    <span className="hx-onboard-panel-list-item-text">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-                                            <p style={{ color: '#93c5fd', fontStyle: 'italic', fontSize: '0.9rem', margin: 0 }}>
+                                        <div className="hx-onboard-note-box">
+                                            <p className="hx-onboard-note-text">
                                                 For travelers prioritizing exploration over onboard spectacle, HX delivers a highly authentic experience.
                                             </p>
                                         </div>
@@ -1075,31 +1412,219 @@ function HXExpeditionsShips() {
             {/* ════════════════════════════════════════════════════════════
                 WHICH HX SHIP FITS YOUR TRAVEL STYLE  ← NEW SECTION (inline CSS)
             ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#0f1c2e', padding: '80px 20px', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 50%, rgba(39,68,114,0.35) 0%, transparent 65%)', pointerEvents: 'none' }} />
-                <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-                        <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#93c5fd', display: 'block', marginBottom: '12px' }}>
+            <section className="hx-matching-section">
+                <style dangerouslySetInnerHTML={{ __html: `
+                    .hx-matching-section {
+                        background: #0f1c2e;
+                        padding: 80px 20px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .hx-matching-bg-glow {
+                        position: absolute;
+                        inset: 0;
+                        background: radial-gradient(ellipse at 30% 50%, rgba(39,68,114,0.35) 0%, transparent 65%);
+                        pointer-events: none;
+                    }
+                    .hx-matching-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .hx-matching-header {
+                        text-align: center;
+                        margin-bottom: 56px;
+                    }
+                    .hx-matching-subtitle {
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: 0.25em;
+                        text-transform: uppercase;
+                        color: #93c5fd;
+                        display: block;
+                        margin-bottom: 12px;
+                    }
+                    .hx-matching-title {
+                        font-size: clamp(1.8rem, 4vw, 2.5rem);
+                        font-weight: 500;
+                        color: #ffffff;
+                        margin: 0 0 20px;
+                        line-height: 1.2;
+                    }
+                    .hx-matching-divider {
+                        width: 56px;
+                        height: 4px;
+                        background: #274472;
+                        margin: 0 auto;
+                    }
+                    .hx-matching-selector-row {
+                        display: flex;
+                        gap: 12px;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin-bottom: 44px;
+                    }
+                    .hx-matching-selector-btn {
+                        padding: 10px 22px;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        transition: all 0.25s ease;
+                        border: 2px solid rgba(255,255,255,0.15);
+                        background: transparent;
+                        color: #94a3b8;
+                        outline: none;
+                    }
+                    .hx-matching-selector-btn:hover {
+                        border-color: rgba(255,255,255,0.3);
+                        color: #ffffff;
+                    }
+                    .hx-matching-selector-btn.active {
+                        border-color: #274472;
+                        background: #274472;
+                        color: #ffffff;
+                    }
+                    .hx-matching-card {
+                        display: none;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 32px;
+                        align-items: center;
+                        background: rgba(255,255,255,0.04);
+                        border-radius: 20px;
+                        overflow: hidden;
+                        border: 1px solid rgba(255,255,255,0.08);
+                    }
+                    .hx-matching-card.active {
+                        display: grid;
+                    }
+                    .hx-matching-img-wrapper {
+                        height: 420px;
+                        overflow: hidden;
+                        position: relative;
+                    }
+                    .hx-matching-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                    .hx-matching-img-overlay {
+                        position: absolute;
+                        inset: 0;
+                        background: linear-gradient(to right, transparent 55%, #0f1c2e);
+                    }
+                    .hx-matching-content {
+                        padding: 48px 48px 48px 0;
+                    }
+                    .hx-matching-card-title {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #ffffff;
+                        margin-bottom: 20px;
+                        line-height: 1.3;
+                    }
+                    .hx-matching-card-accent {
+                        width: 40px;
+                        height: 3px;
+                        background: #274472;
+                        margin-bottom: 24px;
+                    }
+                    .hx-matching-card-list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+                    .hx-matching-card-list-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        color: #e2e8f0;
+                        font-size: 15px;
+                    }
+                    .hx-matching-card-note {
+                        color: #94a3b8;
+                        font-size: 14px;
+                        line-height: 1.7;
+                        font-style: italic;
+                        border-left: 3px solid #274472;
+                        padding-left: 14px;
+                        margin: 0;
+                    }
+
+                    /* Responsive Styling */
+                    @media (max-width: 991px) {
+                        .hx-matching-section {
+                            padding: 60px 16px;
+                        }
+                        .hx-matching-header {
+                            margin-bottom: 40px;
+                        }
+                        .hx-matching-card {
+                            grid-template-columns: 1fr;
+                            gap: 0;
+                        }
+                        .hx-matching-img-wrapper {
+                            height: 320px;
+                        }
+                        .hx-matching-img-overlay {
+                            background: linear-gradient(to top, #0f1c2e 0%, transparent 60%);
+                        }
+                        .hx-matching-content {
+                            padding: 32px 24px;
+                        }
+                    }
+
+                    @media (max-width: 575px) {
+                        .hx-matching-section {
+                            padding: 40px 12px;
+                        }
+                        .hx-matching-selector-row {
+                            gap: 8px;
+                            margin-bottom: 30px;
+                        }
+                        .hx-matching-selector-btn {
+                            padding: 8px 16px;
+                            font-size: 13px;
+                        }
+                        .hx-matching-img-wrapper {
+                            height: 240px;
+                        }
+                        .hx-matching-content {
+                            padding: 24px 16px;
+                        }
+                        .hx-matching-card-title {
+                            font-size: 20px;
+                            margin-bottom: 16px;
+                        }
+                        .hx-matching-card-list-item {
+                            font-size: 14px;
+                        }
+                    }
+                `}} />
+                <div className="hx-matching-bg-glow" />
+                <div className="hx-matching-container">
+                    <div className="hx-matching-header">
+                        <span className="hx-matching-subtitle">
                             SHIP MATCHING GUIDE
                         </span>
-                        <h2 style={{ fontSize: '40px', fontWeight: '500', color: '#ffffff', margin: '0 0 20px', lineHeight: '1.2' }}>
+                        <h2 className="hx-matching-title">
                             Which HX Ship Fits Your Travel Style?
                         </h2>
-                        <div style={{ width: '56px', height: '4px', background: '#274472', margin: '0 auto' }} />
+                        <div className="hx-matching-divider" />
                     </div>
 
                     {/* Selector buttons */}
-                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '44px' }}>
+                    <div className="hx-matching-selector-row">
                         {['MS Roald Amundsen', 'MS Fridtjof Nansen', 'MS Fram', 'MS Spitsbergen', 'MS Santa Cruz II'].map((name, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => setActiveShipStyle(idx)}
-                                style={{
-                                    padding: '10px 22px', borderRadius: '30px', cursor: 'pointer', fontSize: '14px', fontWeight: '600', transition: 'all 0.25s ease',
-                                    border: `2px solid ${activeShipStyle === idx ? '#274472' : 'rgba(255,255,255,0.15)'}`,
-                                    background: activeShipStyle === idx ? '#274472' : 'transparent',
-                                    color: activeShipStyle === idx ? '#ffffff' : '#94a3b8',
-                                }}
+                                className={`hx-matching-selector-btn ${activeShipStyle === idx ? 'active' : ''}`}
                             >{name}</button>
                         ))}
                     </div>
@@ -1108,59 +1633,54 @@ function HXExpeditionsShips() {
                     {[
                         {
                             title: 'Choose MS Roald Amundsen If You Want:',
-                            // img: roaldAmundsenImg,
+                            img: MSAmundsen1,
                             points: ['Modern luxury', 'Antarctica comfort', 'Balcony cabins', 'Larger ship amenities'],
                             note: 'MS Roald Amundsen was the world\'s first hybrid powered expedition cruise ship and remains one of HX\'s flagship vessels.'
                         },
                         {
                             title: 'Choose MS Fridtjof Nansen If You Want:',
-                            // img: fridtjofNansenImg,
+                            img: MSNansen1,
                             points: ['Beginner friendly expedition travel', 'Hybrid ship technology', 'Comfortable polar cruising'],
                             note: 'MS Fridtjof Nansen is the sister ship to Roald Amundsen and features hybrid expedition technology and modern Scandinavian interiors.'
                         },
                         {
                             title: 'Choose MS Fram If You Want:',
-                            // img: framImg,
+                            img: MSFarm1,
                             points: ['Traditional expedition atmosphere', 'More intimate experience', 'Strong expedition focus'],
                             note: 'MS Fram offers a more classic expedition experience and carries fewer guests than the newer hybrid ships.'
                         },
                         {
                             title: 'Choose MS Spitsbergen If You Want:',
-                            // img: spitsbergenImg,
+                            img: MSSpitsbergen1,
                             points: ['Smaller Arctic exploration', 'Polar wildlife focus', 'Casual expedition atmosphere'],
                             note: 'MS Spitsbergen is one of HX\'s smaller expedition ships and feels particularly suited for Arctic itineraries and wildlife focused travel.'
                         },
                         {
                             title: 'Choose MS Santa Cruz II If You Want:',
-                            // img: santaCruzImg,
+                            img: MSSanta1,
                             points: ['Galápagos wildlife', 'Warm weather expedition travel', 'Softer adventure experiences'],
                             note: 'MS Santa Cruz II is HX\'s Galápagos expedition vessel and operates in one of the world\'s most wildlife rich destinations.'
                         },
                     ].map((ship, idx) => (
                         <div
                             key={idx}
-                            style={{
-                                display: activeShipStyle === idx ? 'grid' : 'none',
-                                gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center',
-                                background: 'rgba(255,255,255,0.04)', borderRadius: '20px', overflow: 'hidden',
-                                border: '1px solid rgba(255,255,255,0.08)'
-                            }}
+                            className={`hx-matching-card ${activeShipStyle === idx ? 'active' : ''}`}
                         >
-                            <div style={{ height: '420px', overflow: 'hidden', position: 'relative' }}>
-                                <img src={ship.img} alt={ship.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 55%, #0f1c2e)' }} />
+                            <div className="hx-matching-img-wrapper">
+                                <img src={ship.img} alt={ship.title} className="hx-matching-img" />
+                                <div className="hx-matching-img-overlay" />
                             </div>
-                            <div style={{ padding: '48px 48px 48px 0' }}>
-                                <h3 style={{ fontSize: '24px', fontWeight: '500', color: '#ffffff', marginBottom: '20px', lineHeight: '1.3' }}>{ship.title}</h3>
-                                <div style={{ width: '40px', height: '3px', background: '#274472', marginBottom: '24px' }} />
-                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                            <div className="hx-matching-content">
+                                <h3 className="hx-matching-card-title">{ship.title}</h3>
+                                <div className="hx-matching-card-accent" />
+                                <ul className="hx-matching-card-list">
                                     {ship.points.map((pt, pi) => (
-                                        <li key={pi} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#e2e8f0', fontSize: '15px' }}>
+                                        <li key={pi} className="hx-matching-card-list-item">
                                             <CheckCircle size={15} style={{ color: '#10b981', flexShrink: 0 }} />{pt}
                                         </li>
                                     ))}
                                 </ul>
-                                <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7', fontStyle: 'italic', borderLeft: '3px solid #274472', paddingLeft: '14px' }}>{ship.note}</p>
+                                <p className="hx-matching-card-note">{ship.note}</p>
                             </div>
                         </div>
                     ))}
@@ -1170,9 +1690,147 @@ function HXExpeditionsShips() {
             {/* ════════════════════════════════════════════════════════════
                 CABINS & SUITES GUIDE  ← NEW SECTION (inline CSS)
             ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#f8fafc', padding: '80px 20px' }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '52px' }}>
+            <section className="hx-cabins-section">
+                <style dangerouslySetInnerHTML={{ __html: `
+                    .hx-cabins-section {
+                        background: #f8fafc;
+                        padding: 80px 20px;
+                    }
+                    .hx-cabins-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+                    .hx-cabins-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 28px;
+                        align-items: start;
+                    }
+                    .hx-cabins-img-wrapper {
+                        border-radius: 20px;
+                        overflow: hidden;
+                        height: 480px;
+                        position: relative;
+                        box-shadow: 0 8px 40px rgba(15,28,46,0.15);
+                    }
+                    .hx-cabins-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        transition: transform 0.5s ease;
+                    }
+                    .hx-cabins-img-wrapper:hover .hx-cabins-img {
+                        transform: scale(1.03);
+                    }
+                    .hx-cabins-caption-box {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: linear-gradient(to top, rgba(15,28,46,0.85), transparent);
+                        padding: 32px 28px 24px;
+                    }
+                    .hx-cabins-caption-box p:first-child {
+                        color: #ffffff;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin: 0;
+                        line-height: 1.5;
+                    }
+                    .hx-cabins-caption-box p:last-child {
+                        color: #93c5fd;
+                        font-size: 13px;
+                        margin: 6px 0 0;
+                    }
+                    .hx-cabins-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                    .hx-cabins-card {
+                        background: #ffffff;
+                        border-radius: 14px;
+                        padding: 24px 28px;
+                        border: 1px solid rgba(39,68,114,0.1);
+                        display: flex;
+                        gap: 18px;
+                        align-items: flex-start;
+                        transition: transform 0.25s ease, box-shadow 0.25s ease;
+                    }
+                    .hx-cabins-card:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 6px 20px rgba(39,68,114,0.06);
+                    }
+                    .hx-cabins-card-icon {
+                        width: 44px;
+                        height: 44px;
+                        background: #e7f3f5;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #274472;
+                        flex-shrink: 0;
+                    }
+                    .hx-cabins-card-title {
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: #0f1c2e;
+                        margin: 0 0 8px;
+                    }
+                    .hx-cabins-card-desc {
+                        font-size: 14px;
+                        color: #475569;
+                        line-height: 1.7;
+                        margin: 0;
+                    }
+
+                    /* Responsive Styling */
+                    @media (max-width: 991px) {
+                        .hx-cabins-section {
+                            padding: 60px 16px;
+                        }
+                        .hx-cabins-grid {
+                            grid-template-columns: 1fr;
+                            gap: 32px;
+                        }
+                        .hx-cabins-img-wrapper {
+                            height: 380px;
+                        }
+                        .hx-cabins-caption-box {
+                            padding: 24px 20px 18px;
+                        }
+                    }
+                    @media (max-width: 575px) {
+                        .hx-cabins-section {
+                            padding: 40px 12px;
+                        }
+                        .hx-cabins-img-wrapper {
+                            height: 260px;
+                        }
+                        .hx-cabins-caption-box {
+                            padding: 18px 16px 12px;
+                        }
+                        .hx-cabins-caption-box p:first-child {
+                            font-size: 16px;
+                        }
+                        .hx-cabins-caption-box p:last-child {
+                            font-size: 12px;
+                        }
+                        .hx-cabins-card {
+                            padding: 18px 20px;
+                            gap: 14px;
+                        }
+                        .hx-cabins-card-icon {
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 8px;
+                        }
+                    }
+                `}} />
+                <div className="hx-cabins-container">
+                    <div className="hx-cabins-header" style={{ textAlign: 'center', marginBottom: '52px' }}>
                         <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#274472', opacity: 0.75, display: 'block', marginBottom: '10px' }}>
                             ACCOMMODATION GUIDE
                         </span>
@@ -1180,18 +1838,18 @@ function HXExpeditionsShips() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px', alignItems: 'start' }}>
+                    <div className="hx-cabins-grid">
                         {/* Left: image */}
-                        <div style={{ borderRadius: '20px', overflow: 'hidden', height: '480px', position: 'relative', boxShadow: '0 8px 40px rgba(15,28,46,0.15)' }}>
-                            {/* <img src={cabinInteriorImg} alt="HX expedition cabins interior" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
-                            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.85), transparent)', padding: '32px 28px 24px' }}>
-                                <p style={{ color: '#ffffff', fontSize: '18px', fontWeight: '500', margin: 0, lineHeight: '1.5' }}>HX expedition suite balcony</p>
-                                <p style={{ color: '#93c5fd', fontSize: '13px', margin: '6px 0 0' }}>Modern Scandinavian design influences</p>
+                        <div className="hx-cabins-img-wrapper">
+                            <img src={cabinsuite} alt="HX expedition cabins interior" className="hx-cabins-img" />
+                            <div className="hx-cabins-caption-box">
+                                <p>HX expedition suite balcony</p>
+                                <p>Modern Scandinavian design influences</p>
                             </div>
                         </div>
 
                         {/* Right: cabin breakdown by ship */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                        <div className="hx-cabins-list">
                             {[
                                 {
                                     ship: 'MS Roald Amundsen &amp; MS Fridtjof Nansen',
@@ -1214,13 +1872,13 @@ function HXExpeditionsShips() {
                                     desc: 'Cabins are designed for comfort and practicality within the Galápagos environment. This ship delivers a very different experience from polar expedition ships due to climate, wildlife and destination style.'
                                 },
                             ].map((item, i) => (
-                                <div key={i} style={{ background: '#ffffff', borderRadius: '14px', padding: '24px 28px', border: '1px solid rgba(39,68,114,0.1)', display: 'flex', gap: '18px', alignItems: 'flex-start' }}>
-                                    <div style={{ width: '44px', height: '44px', background: '#e7f3f5', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#274472', flexShrink: 0 }}>
+                                <div key={i} className="hx-cabins-card">
+                                    <div className="hx-cabins-card-icon">
                                         {item.icon}
                                     </div>
-                                    <div>
-                                        <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#0f1c2e', margin: '0 0 8px' }} dangerouslySetInnerHTML={{ __html: item.ship }} />
-                                        <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
+                                    <div className="hx-cabins-card-content">
+                                        <h4 className="hx-cabins-card-title" dangerouslySetInnerHTML={{ __html: item.ship }} />
+                                        <p className="hx-cabins-card-desc">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -1228,6 +1886,34 @@ function HXExpeditionsShips() {
                     </div>
                 </div>
             </section>
+
+
+ {/* ════════════════════════════════════════════════════════════
+                VIDEO  (inline CSS – same as reference)
+            ════════════════════════════════════════════════════════════ */}
+            <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <h2 className="medi-section-heading">Experience HX Expeditions</h2>
+                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    <p style={{ color: '#475569', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto 40px', lineHeight: '1.6' }}>
+                        Watch this curated showcase of authentic expedition adventures, stunning wildlife encounters and remote destinations aboard HX expedition ships.
+                    </p>
+                    <div style={{ maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)', aspectRatio: '16/9', background: '#000' }}>
+                        <iframe
+                            width="100%" height="100%"
+                            src="https://www.youtube.com/embed/eu5Fo91KMdg"
+                            title="Experience HX Expeditions"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{ display: 'block' }}
+                        />
+                    </div>
+                </div>
+            </section>
+
+
 
             {/* ════════════════════════════════════════════════════════════
                 EXPERT INSIGHT  (medi-expert-editorial-section)
@@ -1238,7 +1924,7 @@ function HXExpeditionsShips() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Expedition Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Expedition Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -1351,7 +2037,7 @@ function HXExpeditionsShips() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        {/* <img src={wildlifeImg} alt="Expedition travelers onboard HX ship" className="medi-luxury-main-image" /> */}
+                        <img src={luxury} alt="Expedition travelers onboard HX ship" className="medi-luxury-main-image" />
                     </div>
                 </div>
             </section>
@@ -1488,7 +2174,7 @@ function HXExpeditionsShips() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} /> */}
+                                <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
@@ -1544,7 +2230,7 @@ function HXExpeditionsShips() {
                     <div style={{ maxWidth: '900px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,28,46,0.12)', border: '1px solid rgba(39,68,114,0.1)', aspectRatio: '16/9', background: '#000' }}>
                         <iframe
                             width="100%" height="100%"
-                            src="https://www.youtube.com/embed/qUpr3evauEc"
+                            src="https://www.youtube.com/embed/EXqJhi-mC84"
                             title="Experience HX Expeditions"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
