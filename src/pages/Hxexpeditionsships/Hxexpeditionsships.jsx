@@ -891,11 +891,12 @@ function HXExpeditionsShips() {
             <section className="hx-onboard-section">
                 <style dangerouslySetInnerHTML={{ __html: `
                     .hx-onboard-section {
+                        --navy-rgb: 39, 68, 114;
                         background: linear-gradient(180deg, var(--medi-bg-soft, #f0f4f8) 0%, #ffffff 100%);
-                        background-image: radial-gradient(rgba(39,68,114,0.08) 1px, transparent 1px);
+                        background-image: radial-gradient(rgba(var(--navy-rgb), 0.08) 1px, transparent 1px);
                         background-size: 32px 32px;
-                        border-top: 1px solid rgba(39,68,114,0.12);
-                        border-bottom: 1px solid rgba(39,68,114,0.12);
+                        border-top: 1px solid rgba(var(--navy-rgb), 0.12);
+                        border-bottom: 1px solid rgba(var(--navy-rgb), 0.12);
                         padding: 100px 24px;
                         position: relative;
                         overflow: hidden;
@@ -909,7 +910,7 @@ function HXExpeditionsShips() {
                         width: 350px;
                         height: 350px;
                         border-radius: 50%;
-                        background: radial-gradient(circle, rgba(39,68,114,0.12) 0%, transparent 70%);
+                        background: radial-gradient(circle, rgba(var(--navy-rgb), 0.12) 0%, transparent 70%);
                         filter: blur(60px);
                         pointer-events: none;
                     }
@@ -920,7 +921,7 @@ function HXExpeditionsShips() {
                         width: 400px;
                         height: 400px;
                         border-radius: 50%;
-                        background: radial-gradient(circle, rgba(39,68,114,0.10) 0%, transparent 70%);
+                        background: radial-gradient(circle, rgba(var(--navy-rgb), 0.10) 0%, transparent 70%);
                         filter: blur(70px);
                         pointer-events: none;
                     }
@@ -958,22 +959,22 @@ function HXExpeditionsShips() {
                         padding: 6px 16px;
                         border-radius: 100px;
                         margin-bottom: 16px;
-                        background: rgba(39,68,114,0.10);
-                        border: 1px solid rgba(39,68,114,0.18);
+                        background: rgba(var(--navy-rgb), 0.10);
+                        border: 1px solid rgba(var(--navy-rgb), 0.18);
                     }
                     .hx-onboard-badge span {
                         font-size: 11px;
                         font-weight: 700;
                         letter-spacing: 2px;
                         text-transform: uppercase;
-                        color: #274472;
+                        color: var(--navy);
                     }
                     .hx-onboard-title {
                         font-weight: 600;
                         line-height: 1.25;
                         margin: 0 0 16px 0;
                         font-size: clamp(1.6rem, 3vw, 2.2rem);
-                        color: #0f1c2e;
+                        color: var(--navy);
                         word-break: break-word;
                         overflow-wrap: break-word;
                     }
@@ -994,7 +995,7 @@ function HXExpeditionsShips() {
                         justify-content: space-between;
                         padding: 20px 24px;
                         background: transparent;
-                        border: 1px solid rgba(39,68,114,0.2);
+                        border: 1px solid rgba(var(--navy-rgb), 0.2);
                         border-radius: 16px;
                         cursor: pointer;
                         text-align: left;
@@ -1004,12 +1005,12 @@ function HXExpeditionsShips() {
                         outline: none;
                     }
                     .hx-onboard-tab-btn:hover {
-                        border-color: rgba(39,68,114,0.4);
-                        background: rgba(39,68,114,0.03);
+                        border-color: rgba(var(--navy-rgb), 0.4);
+                        background: rgba(var(--navy-rgb), 0.03);
                     }
                     .hx-onboard-tab-btn.active {
                         background: #0f1c2e;
-                        border-color: rgba(39,68,114,0.5);
+                        border-color: rgba(var(--navy-rgb), 0.5);
                         transform: translateX(8px);
                         box-shadow: 0 8px 32px rgba(15,28,46,0.18);
                     }
@@ -1050,7 +1051,7 @@ function HXExpeditionsShips() {
                         width: 8px;
                         height: 8px;
                         border-radius: 50%;
-                        background: rgba(39,68,114,0.3);
+                        background: rgba(var(--navy-rgb), 0.3);
                         transition: all 0.25s ease;
                     }
                     .hx-onboard-tab-btn.active .hx-onboard-tab-dot {
@@ -1059,7 +1060,7 @@ function HXExpeditionsShips() {
                     }
                     .hx-onboard-panel {
                         background: #0f1c2e;
-                        border: 1px solid rgba(39,68,114,0.35);
+                        border: 1px solid rgba(var(--navy-rgb), 0.35);
                         border-radius: 24px;
                         padding: 48px;
                         box-shadow: 0 8px 40px rgba(15,28,46,0.22);
@@ -1075,7 +1076,7 @@ function HXExpeditionsShips() {
                         position: absolute;
                         bottom: 24px;
                         right: 28px;
-                        color: rgba(39,68,114,0.4);
+                        color: rgba(var(--navy-rgb), 0.4);
                         font-family: monospace;
                         font-size: 11px;
                         font-weight: 700;
@@ -1092,8 +1093,8 @@ function HXExpeditionsShips() {
                         width: 48px;
                         height: 48px;
                         border-radius: 12px;
-                        background: rgba(39,68,114,0.4);
-                        border: 1px solid rgba(39,68,114,0.5);
+                        background: rgba(var(--navy-rgb), 0.4);
+                        border: 1px solid rgba(var(--navy-rgb), 0.5);
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -1166,11 +1167,11 @@ function HXExpeditionsShips() {
                             height: 5px;
                         }
                         .hx-onboard-tabs::-webkit-scrollbar-track {
-                            background: rgba(39, 68, 114, 0.05);
+                            background: rgba(var(--navy-rgb), 0.05);
                             border-radius: 3px;
                         }
                         .hx-onboard-tabs::-webkit-scrollbar-thumb {
-                            background: rgba(39, 68, 114, 0.2);
+                            background: rgba(var(--navy-rgb), 0.2);
                             border-radius: 3px;
                         }
                         .hx-onboard-tab-btn {
@@ -1223,7 +1224,7 @@ function HXExpeditionsShips() {
                         <div className="hx-onboard-sidebar">
                             <div className="hx-onboard-sidebar-header">
                                 <div className="hx-onboard-badge">
-                                    <Compass size={14} color="#274472" />
+                                    <Compass size={14} color="var(--navy)" />
                                     <span>ONBOARD EXPERIENCE</span>
                                 </div>
                                 <h2 className="hx-onboard-title">
@@ -2167,13 +2168,13 @@ function HXExpeditionsShips() {
                 <div className="medi-authority-container">
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes &amp; Trips &amp; Ships Luxury Travel</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes <br /> Trips &amp; Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
-                            <div className="medi-prestige-seal-ring">
+                            <div className="medi-prestige-seal-ring" style={{ animation: 'none' }}>
                                 <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
