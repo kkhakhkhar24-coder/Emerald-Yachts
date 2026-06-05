@@ -3,13 +3,17 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import profileAH from '../../assets/HXExpeditionsVsSilverseaExpeditions/Profile_AH.jpg'
 
 import HX_Philosophy from '../../assets/HXExpeditionsVsSilverseaExpeditions/HX_Philosophy.jpg'
-import Silversea_Philosophy from '../../assets/HXExpeditionsVsSilverseaExpeditions/Silversea_Philosophy.webp'
+import Silversea_Philosophy from '../../assets/HXExpeditionsVsSilverseaExpeditions/Silversea_Philosophy.jpg'
+import Silversea_Luxury from '../../assets/HXExpeditionsVsSilverseaExpeditions/Luxury_Silversea.jpg'
 import Luxury_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Luxury_HX.jpg'
 import Suites_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Suites_HX.jpg'
+import Suites_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Suites_Silversea.jpg'
 import Wildlife_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Wildlife_HX.jpg'
+import Wildlife_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Wildlife_Silversea.jpg'
 import Antarctica_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Antarctica_HX.jpg'
-import Antarctica_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Antarctica_Silversea.webp'
+import Antarctica_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Antarctica_Silversea.jpg'
 import Arctic_HX from '../../assets/HXExpeditionsVsSilverseaExpeditions/Arctic_HX.jpg'
+import Arctic_Silversea from '../../assets/HXExpeditionsVsSilverseaExpeditions/Arctic_Silversea.jpg'
 
 import {
   Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -162,79 +166,269 @@ function HXExpeditionsVsSilverseaExpeditions() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://www.tripsandships.com/#organization",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.tripsandships.com/PNG%20image.png"
+        "@type": "WebPage",
+        "@id":
+          "https://www.tripsandshipsluxurytravel.com/hx-expeditions-vs-silversea-expeditions",
+        "url":
+          "https://www.tripsandshipsluxurytravel.com/hx-expeditions-vs-silversea-expeditions",
+        "name": "HX Expeditions vs Silversea Expeditions",
+        "headline":
+          "HX Expeditions vs Silversea Expeditions | Which Luxury Expedition Cruise Line Is Better?",
+        "description":
+          "Compare HX Expeditions vs Silversea Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, expedition style, ships, Antarctica cruises and Arctic exploration.",
+        "author": {
+          "@id": "#angela-hughes"
         },
-        "sameAs": [
-          "https://www.facebook.com/tripsandships/",
-          "https://www.instagram.com/tripsandshipsluxurytravel"
-        ]
+        "publisher": {
+          "@id": "#trips-ships"
+        }
       },
+
       {
         "@type": "TravelAgency",
-        "@id": "https://www.tripsandships.com/#travelagency",
+        "@id": "#trips-ships",
         "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com",
-        "image": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions.jpg",
-        "description": "Expert guide comparing HX Expeditions and Silversea Expeditions cruises, focusing on luxury levels, expedition style, ships, and itineraries."
+        "url": "https://www.tripsandshipsluxurytravel.com",
+        "description":
+          "Luxury travel agency specializing in expedition cruises, Antarctica cruises, Arctic expeditions and luxury cruise vacations.",
+        "founder": {
+          "@id": "#angela-hughes"
+        }
       },
+
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandshipsluxurytravel.com"
+      },
+
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/#person",
+        "@id": "#angela-hughes",
         "name": "Angela Hughes",
-        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "jobTitle": "CEO",
         "worksFor": {
-          "@type": "Organization",
-          "name": "Trips & Ships Luxury Travel"
+          "@id": "#trips-ships"
         },
-        "description": "Angela Hughes is one of the luxury travel industry's most respected travel advisors and educators."
+        "description":
+          "Luxury travel expert, founder of Luxury Travel University, expedition cruise specialist and travel advisor with more than 40 years of industry experience."
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions#webpage",
-        "url": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions",
-        "name": "HX Expeditions vs Silversea Expeditions Cruises",
-        "description": "Compare HX Expeditions vs Silversea Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, expedition style, ships, Antarctica cruises and Arctic exploration."
-      },
+
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.tripsandships.com"
+            "item": "https://www.tripsandshipsluxurytravel.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Expedition Cruises",
-            "item": "https://www.tripsandships.com/expedition-cruises"
+            "name": "HX Expeditions",
+            "item":
+              "https://www.tripsandshipsluxurytravel.com/hx-expeditions"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "HX Expeditions vs Silversea Expeditions",
-            "item": "https://www.tripsandships.com/hx-expeditions-vs-silversea-expeditions"
+            "item":
+              "https://www.tripsandshipsluxurytravel.com/hx-expeditions-vs-silversea-expeditions"
           }
         ]
       },
+
+      {
+        "@type": "Article",
+        "headline": "HX Expeditions vs Silversea Expeditions",
+        "description":
+          "Expert comparison of HX Expeditions and Silversea Expeditions covering luxury, Antarctica cruises, Arctic cruises, ships, suites and expedition experiences.",
+        "author": {
+          "@id": "#angela-hughes"
+        },
+        "publisher": {
+          "@id": "#trips-ships"
+        },
+        "keywords": [
+          "HX Expeditions vs Silversea Expeditions",
+          "Silversea Expeditions comparison",
+          "HX vs Silversea cruises",
+          "Luxury Expedition Cruises",
+          "Antarctica Expedition Cruises",
+          "Arctic Expedition Cruises",
+          "Expedition Cruise Comparison",
+          "Luxury Cruise Advisor",
+          "Best Expedition Cruises"
+        ]
+      },
+
       {
         "@type": "FAQPage",
-        "mainEntity": comparisonFaqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is HX Expeditions better than Silversea Expeditions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on travel style. HX is generally more expedition focused, while Silversea emphasizes ultra luxury."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is more luxurious, Silversea or HX?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Silversea is significantly more luxurious from a traditional luxury cruise perspective."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition line is better for Antarctica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX is often stronger for active exploration, while Silversea excels in luxury comfort."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Silversea more luxury focused than HX?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Silversea strongly prioritizes luxury service and upscale accommodations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition cruise line is better for wildlife?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are strong, but HX often feels more wildlife and exploration focused."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are HX cruises more adventurous than Silversea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. HX typically delivers a more expedition-intensive atmosphere with stronger emphasis on exploration and active expedition experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition line has better cabins?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Silversea generally offers larger suites, butler service and a more luxurious accommodation experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included on HX vs Silversea cruises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Silversea includes more luxury amenities and premium services, while HX focuses heavily on expedition inclusions and exploration activities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition line is better for older travelers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both can work well for older travelers, but activity levels and mobility requirements should be considered carefully."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Silversea ultra luxury?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Silversea is widely recognized as one of the world's leading ultra-luxury cruise brands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition line is better for first-time expedition cruisers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Silversea may appeal more to travelers seeking luxury and comfort, while HX is often preferred by adventure-minded travelers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cruise line is better for the Arctic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX is often favored for deeper Arctic expedition experiences, while Silversea combines Arctic exploration with elevated luxury service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the atmosphere onboard Silversea expeditions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Silversea expedition voyages feature an elegant, refined atmosphere with personalized service and luxury accommodations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HX more expedition focused?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. HX prioritizes exploration, wildlife encounters, science programs and immersive expedition experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why use a luxury travel advisor for expedition cruises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An experienced luxury travel advisor can help match travelers with the right expedition cruise line, ship and itinerary based on travel style and exploration goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the biggest differences between HX Expeditions and Silversea Expeditions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX focuses more on expedition immersion and exploration, while Silversea combines expedition cruising with ultra-luxury accommodations and butler service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Silversea offer butler service on expedition cruises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Silversea expedition guests enjoy butler service in every suite."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HX better for wildlife photography?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many wildlife photographers prefer HX because of its strong expedition focus and immersive wildlife viewing opportunities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which expedition cruise line is best for Antarctica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HX is often preferred by travelers seeking active Antarctic exploration, while Silversea is favored by those wanting luxury accommodations alongside expedition experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I choose HX or Silversea for an expedition cruise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose HX if expedition immersion and adventure are your priorities. Choose Silversea if luxury, personalized service and premium accommodations are most important."
+            }
           }
-        }))
+        ]
       }
     ]
   }
@@ -243,9 +437,23 @@ function HXExpeditionsVsSilverseaExpeditions() {
     <>
       <Helmet>
         <title>HX Expeditions vs Silversea Expeditions | Which Luxury Expedition Cruise Line Is Better?</title>
-        <meta name="title" content="HX Expeditions vs Silversea Expeditions | Expert Cruise Comparison" />
         <meta name="description" content="Compare HX Expeditions vs Silversea Expeditions with expert insights from Trips & Ships Luxury Travel. Discover differences in luxury, expedition style, ships, Antarctica cruises and Arctic exploration." />
-        <meta name="keywords" content="HX Expeditions vs Silversea Expeditions, Silversea Expeditions comparison, HX vs Silversea cruises, Luxury expedition cruises, Antarctica expedition cruises, Arctic expedition cruises, Small ship expedition cruises, Expedition cruise comparison" />
+        <link rel="canonical" href="https://www.tripsandshipsluxurytravel.com/hx-expeditions-vs-silversea-expeditions" />
+        <meta name="keywords" content="HX Expeditions vs Silversea Expeditions, Silversea Expeditions comparison, HX vs Silversea cruises, luxury expedition cruises, Antarctica expedition cruises, Arctic expedition cruises, expedition cruise comparison" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="HX Expeditions vs Silversea Expeditions | Expert Cruise Comparison" />
+        <meta property="og:description" content="Discover the key differences between HX Expeditions and Silversea Expeditions, including luxury, expedition style, Antarctica cruises, Arctic voyages and onboard experiences." />
+        <meta property="og:url" content="https://www.tripsandshipsluxurytravel.com/hx-expeditions-vs-silversea-expeditions" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://www.tripsandshipsluxurytravel.com/images/hx-vs-silversea-expeditions.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="HX Expeditions vs Silversea Expeditions" />
+        <meta name="twitter:description" content="Compare luxury, expedition style, Antarctica cruises, Arctic exploration, ships and suites." />
+        <meta name="twitter:image" content="https://www.tripsandshipsluxurytravel.com/images/hx-vs-silversea-expeditions.jpg" />
+
         <script type="application/ld+json">{JSON.stringify(vsSchemaData)}</script>
       </Helmet>
 
@@ -811,7 +1019,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
               boxShadow: '0 30px 60px rgba(15,28,46,0.2)',
               zIndex: 1
             }}>
-              <img src="" alt="Silversea Formal Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
+              <img src={Silversea_Luxury} alt="Silversea Formal Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
             </div>
 
             {/* Content Card Silversea - Overlapping */}
@@ -967,7 +1175,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
 
                 <div style={{ background: '#f1f5f9', padding: '25px', borderRadius: '20px', borderLeft: '4px solid #3b82f6' }}>
                   <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.6', margin: 0 }}>
-                    HX ships are designed specifically for **active exploration** and expedition operations, prioritizing destination access and scientific research.
+                    HX ships are designed specifically for active exploration and expedition operations, prioritizing destination access and scientific research.
                   </p>
                 </div>
               </div>
@@ -985,7 +1193,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
             }}>
               {/* IMAGE: Suggest a shot of a Silversea Veranda Suite or Silver Endeavour balcony */}
               <div style={{ width: '100%', height: '300px', backgroundColor: '#1e293b', position: 'relative' }}>
-                <img src="" alt="Silversea Luxury Suite" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={Suites_Silversea} alt="Silversea Luxury Suite" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', bottom: '20px', left: '25px', background: '#0f1c2e', color: '#fff', padding: '5px 15px', borderRadius: '50px', fontSize: '11px', fontWeight: '800', letterSpacing: '1px' }}>ULTRA-LUXURY HARDWARE</div>
               </div>
 
@@ -1089,7 +1297,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
           }}>
             {/* Image Side */}
             <div style={{ flex: '1.4', position: 'relative', minHeight: '400px' }}>
-              <img src="" alt="Silversea Refined Discovery" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
+              <img src={Wildlife_Silversea} alt="Silversea Refined Discovery" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to left, transparent 50%, rgba(15,28,46,0.5) 100%)' }}></div>
             </div>
 
@@ -1351,7 +1559,7 @@ function HXExpeditionsVsSilverseaExpeditions() {
                 boxShadow: '0 30px 60px rgba(15, 28, 46, 0.15)',
                 border: '1px solid #e2e8f0'
               }}>
-                <img src="" alt="Silversea Luxury Arctic" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
+                <img src={Arctic_Silversea} alt="Silversea Luxury Arctic" style={{ width: '100%', height: '100%', objectFit: 'cover', backgroundColor: '#1e293b' }} />
               </div>
             </div>
 

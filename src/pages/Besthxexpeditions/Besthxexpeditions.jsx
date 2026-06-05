@@ -77,8 +77,12 @@ function BestHXExpeditions() {
 
     // ── Mobile viewport ──────────────────────────────────────────────────
     const [isMobileViewport, setIsMobileViewport] = useState(false)
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200)
     useEffect(() => {
-        const handleResize = () => setIsMobileViewport(window.innerWidth < 992)
+        const handleResize = () => {
+            setIsMobileViewport(window.innerWidth < 992)
+            setWindowWidth(window.innerWidth)
+        }
         handleResize()
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
@@ -196,184 +200,184 @@ function BestHXExpeditions() {
         { question: 'Why use a travel advisor for expedition cruises?', answer: 'Expedition cruising involves major differences in ship style, destinations and activity levels where expert guidance is extremely valuable.' }
     ]
 
-    const mediSchemaData = 
- {
-  "@context": "https://schema.org",
-  "@graph": [
+    const mediSchemaData =
     {
-      "@type": "WebPage",
-      "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
-      "name": "Best HX Expeditions Cruises for First Timers",
-      "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
-      "description": "Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel.",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntity": {
-        "@type": "Article",
-        "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.tripsshipsluxurytravel.com/#organization",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com"
-    },
-    {
-      "@type": "TravelAgency",
-      "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
-      "name": "Trips & Ships Luxury Travel",
-      "url": "https://www.tripsshipsluxurytravel.com",
-      "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
-      "name": "Angela Hughes",
-      "jobTitle": "CEO",
-      "worksFor": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-    },
-    {
-      "@type": "Article",
-      "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article",
-      "headline": "Best HX Expeditions Cruises for First Timers",
-      "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
-      "description": "Expert guide to the best HX Expeditions cruises for first timers including Antarctica, Galápagos, Greenland and Svalbard expedition cruise recommendations.",
-      "image": "https://www.tripsshipsluxurytravel.com/images/best-hx-expeditions-for-first-timers.jpg",
-      "author": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
-      },
-      "publisher": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
-      }
-    },
-    {
-      "@type": "Service",
-      "name": "HX Expedition Cruise Planning",
-      "provider": {
-        "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
-      },
-      "serviceType": "Expedition Cruise Consulting",
-      "description": "Personalized expedition cruise planning services helping travelers choose the best HX Expeditions itinerary, destination and ship for their first expedition cruise."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.tripsshipsluxurytravel.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "HX Expeditions",
-          "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Best HX Expeditions Cruises for First Timers",
-          "item": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the best HX Expeditions cruise for first timers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For many travelers, Antarctica and the Galápagos are the best first HX expedition cruises because they offer exceptional wildlife, memorable scenery and well-developed expedition programs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Antarctica good for a first expedition cruise?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Antarctica is one of the world's most iconic expedition destinations and is often the top choice for first-time expedition travelers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which HX destination is easiest for beginners?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The Galápagos is generally considered the easiest and most approachable expedition destination due to warmer weather, predictable operations and exceptional wildlife."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are HX expedition cruises physically demanding?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Moderate mobility is helpful because Zodiac boarding, shore landings and walking excursions are common on many HX expeditions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should first time expedition travelers expect?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Expect wildlife encounters, educational programming, Zodiac excursions, flexible itineraries and outdoor exploration focused on destination immersion."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Drake Passage rough?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It can be. Conditions vary significantly depending on weather and sea state, ranging from calm crossings to rougher experiences."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which HX ship is best for beginners?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "MS Roald Amundsen and MS Santa Cruz II are among the best HX ships for beginners because they combine comfort, expedition expertise and excellent destination experiences."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are expedition cruises good for older travelers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many older travelers enjoy expedition cruises, although activity levels and mobility requirements should be considered carefully."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is included on HX expedition cruises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most HX cruises include accommodations, meals, educational lectures, expedition activities and onboard enrichment programs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Galápagos a good first expedition cruise?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The Galápagos offers incredible wildlife encounters, easy logistics and a beginner-friendly expedition experience."
-          }
-        }
-      ]
-    }
-  ]
-};
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+                "name": "Best HX Expeditions Cruises for First Timers",
+                "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+                "description": "Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel.",
+                "inLanguage": "en-US",
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntity": {
+                    "@type": "Article",
+                    "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com"
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsshipsluxurytravel.com",
+                "description": "Luxury travel agency specializing in cruise vacations, expedition cruises and personalized travel planning."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO",
+                "worksFor": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
+            },
+            {
+                "@type": "Article",
+                "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers#article",
+                "headline": "Best HX Expeditions Cruises for First Timers",
+                "url": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers",
+                "description": "Expert guide to the best HX Expeditions cruises for first timers including Antarctica, Galápagos, Greenland and Svalbard expedition cruise recommendations.",
+                "image": "https://www.tripsshipsluxurytravel.com/images/best-hx-expeditions-for-first-timers.jpg",
+                "author": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "HX Expedition Cruise Planning",
+                "provider": {
+                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                },
+                "serviceType": "Expedition Cruise Consulting",
+                "description": "Personalized expedition cruise planning services helping travelers choose the best HX Expeditions itinerary, destination and ship for their first expedition cruise."
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsshipsluxurytravel.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "HX Expeditions",
+                        "item": "https://www.tripsshipsluxurytravel.com/hx-expeditions"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Best HX Expeditions Cruises for First Timers",
+                        "item": "https://www.tripsshipsluxurytravel.com/best-hx-expeditions-cruises-for-first-timers"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is the best HX Expeditions cruise for first timers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "For many travelers, Antarctica and the Galápagos are the best first HX expedition cruises because they offer exceptional wildlife, memorable scenery and well-developed expedition programs."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Antarctica good for a first expedition cruise?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Antarctica is one of the world's most iconic expedition destinations and is often the top choice for first-time expedition travelers."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which HX destination is easiest for beginners?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The Galápagos is generally considered the easiest and most approachable expedition destination due to warmer weather, predictable operations and exceptional wildlife."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are HX expedition cruises physically demanding?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Moderate mobility is helpful because Zodiac boarding, shore landings and walking excursions are common on many HX expeditions."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What should first time expedition travelers expect?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Expect wildlife encounters, educational programming, Zodiac excursions, flexible itineraries and outdoor exploration focused on destination immersion."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is the Drake Passage rough?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "It can be. Conditions vary significantly depending on weather and sea state, ranging from calm crossings to rougher experiences."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which HX ship is best for beginners?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "MS Roald Amundsen and MS Santa Cruz II are among the best HX ships for beginners because they combine comfort, expedition expertise and excellent destination experiences."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are expedition cruises good for older travelers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Many older travelers enjoy expedition cruises, although activity levels and mobility requirements should be considered carefully."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is included on HX expedition cruises?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Most HX cruises include accommodations, meals, educational lectures, expedition activities and onboard enrichment programs."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is the Galápagos a good first expedition cruise?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The Galápagos offers incredible wildlife encounters, easy logistics and a beginner-friendly expedition experience."
+                        }
+                    }
+                ]
+            }
+        ]
+    };
 
 
 
@@ -385,7 +389,7 @@ function BestHXExpeditions() {
             <Helmet>
                 <title>Best HX Expeditions Cruises for First Timers | Antarctica, Arctic & Galápagos Guide
 
-</title>
+                </title>
                 <meta name="title" content="Best HX Expeditions Cruises for Beginners | Expert Planning Guide
 " />
                 <meta name="description" content="Discover the best HX Expeditions cruises for first timers. Compare Antarctica, Svalbard, Greenland and Galápagos expeditions with expert guidance from Trips & Ships Luxury Travel." />
@@ -674,10 +678,10 @@ function BestHXExpeditions() {
                             </thead>
                             <tbody>
                                 {[
-                                    { dest: 'Antarctica',  bestFor: 'Bucket list adventure',        diff: 'Moderate',             wildlife: 'Penguins & whales', weather: 'Cold',        icon: <Snowflake size={16} /> },
-                                    { dest: 'Galápagos',   bestFor: 'Easy first expedition',        diff: 'Easy',                 wildlife: 'Dense wildlife',    weather: 'Warm',        icon: <Sun size={16} /> },
-                                    { dest: 'Svalbard',    bestFor: 'Polar bears & Arctic exploration', diff: 'Moderate to advanced', wildlife: 'Arctic wildlife',  weather: 'Cold',        icon: <Wind size={16} /> },
-                                    { dest: 'Greenland',   bestFor: 'Scenic Arctic exploration',    diff: 'Moderate',             wildlife: 'Icebergs & culture', weather: 'Cold',       icon: <Globe size={16} /> },
+                                    { dest: 'Antarctica', bestFor: 'Bucket list adventure', diff: 'Moderate', wildlife: 'Penguins & whales', weather: 'Cold', icon: <Snowflake size={16} /> },
+                                    { dest: 'Galápagos', bestFor: 'Easy first expedition', diff: 'Easy', wildlife: 'Dense wildlife', weather: 'Warm', icon: <Sun size={16} /> },
+                                    { dest: 'Svalbard', bestFor: 'Polar bears & Arctic exploration', diff: 'Moderate to advanced', wildlife: 'Arctic wildlife', weather: 'Cold', icon: <Wind size={16} /> },
+                                    { dest: 'Greenland', bestFor: 'Scenic Arctic exploration', diff: 'Moderate', wildlife: 'Icebergs & culture', weather: 'Cold', icon: <Globe size={16} /> },
                                 ].map((row, i) => (
                                     <tr key={i} style={{ background: i % 2 === 0 ? '#ffffff' : '#f8fafc' }}>
                                         <td style={{ padding: '16px 20px', fontWeight: '600', color: '#0f1c2e', display: 'flex', alignItems: 'center', gap: '10px', minWidth: '160px' }}>
@@ -687,7 +691,7 @@ function BestHXExpeditions() {
                                         <td style={{ padding: '16px 20px' }}>
                                             <span style={{
                                                 background: row.diff === 'Easy' ? '#dcfce7' : row.diff === 'Moderate' ? '#fef9c3' : '#fee2e2',
-                                                color:      row.diff === 'Easy' ? '#166534' : row.diff === 'Moderate' ? '#854d0e' : '#991b1b',
+                                                color: row.diff === 'Easy' ? '#166534' : row.diff === 'Moderate' ? '#854d0e' : '#991b1b',
                                                 fontSize: '12px', fontWeight: '700', padding: '4px 12px', borderRadius: '20px', whiteSpace: 'nowrap'
                                             }}>{row.diff}</span>
                                         </td>
@@ -704,57 +708,230 @@ function BestHXExpeditions() {
             {/* ════════════════════════════════════════════════════════════
                 WHICH HX SHIP IS BEST  ← NEW SECTION (inline CSS)
             ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#0f1c2e', padding: '80px 20px', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 20% 50%, rgba(39,68,114,0.35) 0%, transparent 60%)', pointerEvents: 'none' }} />
-                <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <div style={{ textAlign: 'center', marginBottom: '52px' }}>
-                        <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#93c5fd', display: 'block', marginBottom: '10px' }}>
-                            FLEET GUIDE
-                        </span>
-                        <h2 style={{ fontSize: '40px', fontWeight: '500', color: '#ffffff', margin: '0 0 20px', lineHeight: '1.2' }}>
+            <section style={{
+                background: '#0f1c2e',
+                padding: 'clamp(48px, 8vw, 80px) clamp(16px, 3vw, 20px)',
+                position: 'relative',
+                overflow: 'visible'
+            }}>
+                <div style={{
+                    position: 'absolute', inset: 0,
+                    background: 'radial-gradient(ellipse at 20% 50%, rgba(39,68,114,0.35) 0%, transparent 60%)',
+                    pointerEvents: 'none'
+                }} />
+                <div style={{
+                    maxWidth: '1200px', margin: '0 auto',
+                    position: 'relative', zIndex: 1,
+                    minWidth: 0, overflow: 'visible'
+                }}>
+                    {/* ── Header ── */}
+                    <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 5vw, 52px)', minWidth: 0 }}>
+                        <span style={{
+                            fontSize: isMobileViewport ? '10px' : '12px',
+                            fontWeight: 700, letterSpacing: '0.25em',
+                            textTransform: 'uppercase', color: '#93c5fd',
+                            display: 'block', marginBottom: '10px'
+                        }}>FLEET GUIDE</span>
+                        <h2 style={{
+                            fontSize: isMobileViewport
+                                ? 'clamp(1.6rem, 6vw, 2.2rem)'
+                                : 'clamp(2rem, 3.5vw, 40px)',
+                            fontWeight: 500, color: '#ffffff',
+                            margin: '0 0 20px', lineHeight: 1.2,
+                            fontFamily: 'var(--font-display)',
+                            overflowWrap: 'break-word', wordBreak: 'break-word'
+                        }}>
                             Which HX Ship Is Best For First Timers?
                         </h2>
-                        <div style={{ width: '56px', height: '4px', background: '#274472', margin: '0 auto' }} />
+                        <div style={{
+                            width: '56px', height: '4px',
+                            background: '#274472', margin: '0 auto'
+                        }} />
                     </div>
 
-                    {/* Ship selector tabs */}
-                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '40px' }}>
-                        {ships.map((ship, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => setActiveShip(idx)}
-                                style={{
-                                    padding: '10px 22px',
-                                    borderRadius: '30px',
-                                    border: `2px solid ${activeShip === idx ? '#274472' : 'rgba(255,255,255,0.15)'}`,
-                                    background: activeShip === idx ? '#274472' : 'transparent',
-                                    color: activeShip === idx ? '#ffffff' : '#94a3b8',
-                                    fontSize: '14px', fontWeight: '600', cursor: 'pointer',
-                                    transition: 'all 0.25s ease'
-                                }}
-                            >{ship.name}</button>
-                        ))}
-                    </div>
-
-                    {/* Ship showcase card */}
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center', background: 'rgba(255,255,255,0.04)', borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
-                        <div style={{ height: '420px', overflow: 'hidden', position: 'relative' }}>
-                            <img src={ships[activeShip].img} alt={ships[activeShip].name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, #0f1c2e)' }} />
+                    {/* ── Ship Selector Tabs ── */}
+                    {isMobileViewport ? (
+                        /* Mobile: horizontal scroll */
+                        <div style={{ position: 'relative', marginBottom: '28px' }}>
+                            <div style={{
+                                position: 'absolute', top: 0, right: 0, bottom: 0,
+                                width: '28px', background: 'linear-gradient(to left, #0f1c2e 0%, transparent 100%)',
+                                pointerEvents: 'none', zIndex: 3, borderRadius: '0 30px 30px 0'
+                            }} />
+                            <div style={{
+                                display: 'flex', gap: '10px',
+                                overflowX: 'auto', overflowY: 'hidden',
+                                paddingBottom: '4px',
+                                scrollSnapType: 'x mandatory',
+                                WebkitOverflowScrolling: 'touch',
+                                scrollbarWidth: 'none',
+                                paddingLeft: '0', paddingRight: '36px'
+                            }}>
+                                {ships.map((ship, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => setActiveShip(idx)}
+                                        style={{
+                                            padding: '10px 18px',
+                                            borderRadius: '30px',
+                                            border: `2px solid ${activeShip === idx ? '#274472' : 'rgba(255,255,255,0.15)'}`,
+                                            background: activeShip === idx ? '#274472' : 'transparent',
+                                            color: activeShip === idx ? '#ffffff' : '#94a3b8',
+                                            fontSize: '13px', fontWeight: 600,
+                                            cursor: 'pointer', transition: 'all 0.25s ease',
+                                            outline: 'none', whiteSpace: 'nowrap',
+                                            flexShrink: 0, scrollSnapAlign: 'start'
+                                        }}
+                                    >{ship.name}</button>
+                                ))}
+                            </div>
                         </div>
-                        <div style={{ padding: '48px 48px 48px 0' }}>
-                            <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '0.2em', color: '#93c5fd', textTransform: 'uppercase', display: 'block', marginBottom: '12px' }}>FEATURED SHIP</span>
-                            <h3 style={{ fontSize: '28px', fontWeight: '500', color: '#ffffff', marginBottom: '20px' }}>{ships[activeShip].name}</h3>
-                            <div style={{ width: '40px', height: '3px', background: '#274472', marginBottom: '24px' }} />
-                            <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#93c5fd', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Best For:</h4>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    ) : (
+                        /* Desktop: centered wrap */
+                        <div style={{
+                            display: 'flex', gap: '12px',
+                            justifyContent: 'center', flexWrap: 'wrap',
+                            marginBottom: 'clamp(28px, 4vw, 40px)'
+                        }}>
+                            {ships.map((ship, idx) => (
+                                <button
+                                    key={idx}
+                                    onClick={() => setActiveShip(idx)}
+                                    style={{
+                                        padding: '10px 22px',
+                                        borderRadius: '30px',
+                                        border: `2px solid ${activeShip === idx ? '#274472' : 'rgba(255,255,255,0.15)'}`,
+                                        background: activeShip === idx ? '#274472' : 'transparent',
+                                        color: activeShip === idx ? '#ffffff' : '#94a3b8',
+                                        fontSize: '14px', fontWeight: 600,
+                                        cursor: 'pointer', transition: 'all 0.25s ease', outline: 'none'
+                                    }}
+                                >{ship.name}</button>
+                            ))}
+                        </div>
+                    )}
+
+                    {/* ── Ship Showcase Card ── */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1fr',
+                        gap: '0px',
+                        alignItems: 'stretch',
+                        background: 'rgba(255,255,255,0.04)',
+                        borderRadius: isMobileViewport ? '16px' : '20px',
+                        overflow: 'visible',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                        minWidth: 0
+                    }}>
+                        {/* Image */}
+                        <div style={{
+                            height: isMobileViewport ? 'clamp(220px, 50vw, 300px)' : 'clamp(320px, 30vw, 420px)',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            borderRadius: isMobileViewport ? '16px 16px 0 0' : '20px 0 0 20px'
+                        }}>
+                            <img
+                                src={ships[activeShip].img}
+                                alt={ships[activeShip].name}
+                                loading="lazy"
+                                style={{
+                                    width: '100%', height: '100%',
+                                    objectFit: 'cover', display: 'block'
+                                }}
+                            />
+                            {/* Desktop: right fade into dark bg */}
+                            {!isMobileViewport && (
+                                <div style={{
+                                    position: 'absolute', inset: 0,
+                                    background: 'linear-gradient(to right, transparent 50%, rgba(15,28,46,0.9) 100%)'
+                                }} />
+                            )}
+                            {/* Mobile: bottom fade */}
+                            {isMobileViewport && (
+                                <div style={{
+                                    position: 'absolute', inset: 0,
+                                    background: 'linear-gradient(to top, rgba(15,28,46,0.6) 0%, transparent 50%)'
+                                }} />
+                            )}
+                        </div>
+
+                        {/* Content */}
+                        <div style={{
+                            padding: isMobileViewport
+                                ? '24px 20px 28px 20px'
+                                : 'clamp(28px, 3.5vw, 48px) clamp(24px, 3vw, 48px) clamp(28px, 3.5vw, 48px) clamp(20px, 2.5vw, 0px)',
+                            minWidth: 0,
+                            overflow: 'visible',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            boxSizing: 'border-box'
+                        }}>
+                            <span style={{
+                                fontSize: isMobileViewport ? '9px' : '11px',
+                                fontWeight: 700, letterSpacing: '0.2em',
+                                color: '#93c5fd', textTransform: 'uppercase',
+                                display: 'block', marginBottom: '10px',
+                                whiteSpace: 'nowrap'
+                            }}>FEATURED SHIP</span>
+
+                            <h3 style={{
+                                fontSize: isMobileViewport
+                                    ? 'clamp(1.3rem, 5.5vw, 1.6rem)'
+                                    : 'clamp(1.5rem, 2.5vw, 28px)',
+                                fontWeight: 500, color: '#ffffff',
+                                marginBottom: '16px', lineHeight: 1.2,
+                                overflowWrap: 'break-word', wordBreak: 'break-word'
+                            }}>{ships[activeShip].name}</h3>
+
+                            <div style={{
+                                width: '40px', height: '3px',
+                                background: '#274472', marginBottom: '18px'
+                            }} />
+
+                            <h4 style={{
+                                fontSize: isMobileViewport ? '11px' : '14px',
+                                fontWeight: 600, color: '#93c5fd',
+                                marginBottom: '10px', textTransform: 'uppercase',
+                                letterSpacing: '0.1em',
+                                overflowWrap: 'break-word', wordBreak: 'break-word'
+                            }}>Best For:</h4>
+
+                            <ul style={{
+                                listStyle: 'none', padding: 0,
+                                margin: '0 0 18px',
+                                display: 'flex', flexDirection: 'column',
+                                gap: isMobileViewport ? '8px' : '10px',
+                                minWidth: 0
+                            }}>
                                 {ships[activeShip].bestFor.map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#e2e8f0', fontSize: '15px' }}>
-                                        <CheckCircle size={15} style={{ color: '#10b981', flexShrink: 0 }} />{item}
+                                    <li key={i} style={{
+                                        display: 'flex', alignItems: 'flex-start',
+                                        gap: '10px', color: '#e2e8f0',
+                                        fontSize: isMobileViewport ? '0.88rem' : '15px',
+                                        lineHeight: 1.4, minWidth: 0
+                                    }}>
+                                        <CheckCircle
+                                            size={isMobileViewport ? 14 : 15}
+                                            style={{ color: '#10b981', flexShrink: 0, marginTop: '2px' }}
+                                        />
+                                        <span style={{
+                                            minWidth: 0,
+                                            overflowWrap: 'break-word',
+                                            wordBreak: 'break-word'
+                                        }}>{item}</span>
                                     </li>
                                 ))}
                             </ul>
-                            <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7', fontStyle: 'italic' }}>{ships[activeShip].note}</p>
+
+                            <p style={{
+                                color: '#94a3b8',
+                                fontSize: isMobileViewport ? '0.84rem' : '14px',
+                                lineHeight: 1.7, fontStyle: 'italic',
+                                margin: 0,
+                                overflowWrap: 'break-word',
+                                wordBreak: 'break-word'
+                            }}>{ships[activeShip].note}</p>
                         </div>
                     </div>
                 </div>
@@ -769,7 +946,7 @@ function BestHXExpeditions() {
                 backgroundSize: '32px 32px',
                 borderTop: '1px solid var(--navy-border)',
                 borderBottom: '1px solid var(--navy-border)',
-                padding: isMobileViewport ? '60px 16px' : '100px 24px',
+                padding: 'clamp(40px, 8vw, 100px) clamp(16px, 3vw, 24px)',
                 position: 'relative',
                 overflow: 'hidden',
                 width: '100%',
@@ -778,13 +955,15 @@ function BestHXExpeditions() {
                 {/* Glowing auras */}
                 <div style={{
                     position: 'absolute', top: '5%', left: '5%',
-                    width: '350px', height: '350px', borderRadius: '50%',
+                    width: 'clamp(150px, 25vw, 350px)', height: 'clamp(150px, 25vw, 350px)',
+                    borderRadius: '50%',
                     background: 'radial-gradient(circle, rgba(39,68,114,0.12) 0%, transparent 70%)',
                     filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1
                 }} />
                 <div style={{
                     position: 'absolute', bottom: '10%', right: '5%',
-                    width: '400px', height: '400px', borderRadius: '50%',
+                    width: 'clamp(180px, 30vw, 400px)', height: 'clamp(180px, 30vw, 400px)',
+                    borderRadius: '50%',
                     background: 'radial-gradient(circle, rgba(39,68,114,0.10) 0%, transparent 70%)',
                     filter: 'blur(70px)', pointerEvents: 'none', zIndex: 1
                 }} />
@@ -796,278 +975,495 @@ function BestHXExpeditions() {
                 }}>
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: isMobileViewport ? '1fr' : '1fr 1.6fr',
-                        gap: '40px',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : 'minmax(0, 1fr) minmax(0, 1.6fr)',
+                        gap: isMobileViewport ? '24px' : 'clamp(24px, 3vw, 40px)',
                         width: '100%', boxSizing: 'border-box',
                         alignItems: 'start'
                     }}>
 
                         {/* ── Left: sticky navigation console ── */}
                         <div style={{
-                            display: 'flex', flexDirection: 'column', gap: '24px',
+                            display: 'flex', flexDirection: 'column', gap: '20px',
                             position: isMobileViewport ? 'static' : 'sticky',
-                            top: '100px', zIndex: 5
+                            top: '100px', zIndex: 5, minWidth: 0
                         }}>
-                            <div style={{ textAlign: isMobileViewport ? 'center' : 'left' }}>
+                            <div style={{
+                                textAlign: isMobileViewport ? 'center' : 'left', minWidth: 0
+                            }}>
                                 <div style={{
                                     display: 'inline-flex', alignItems: 'center', gap: '8px',
                                     padding: '6px 16px', borderRadius: '100px',
                                     background: 'rgba(39,68,114,0.08)',
                                     border: '1px solid rgba(39,68,114,0.15)',
-                                    marginBottom: '16px'
+                                    marginBottom: '14px'
                                 }}>
                                     <Compass size={14} color="#274472" />
-                                    <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', color: '#274472' }}>
-                                        EXPEDITION REALITY CHECK
-                                    </span>
+                                    <span style={{
+                                        fontSize: isMobileViewport ? '9px' : '11px',
+                                        fontWeight: 700, letterSpacing: '2px',
+                                        textTransform: 'uppercase', color: '#274472',
+                                        whiteSpace: 'nowrap'
+                                    }}>EXPEDITION REALITY CHECK</span>
                                 </div>
                                 <h2 style={{
-                                    fontWeight: '500', lineHeight: '1.25',
-                                    margin: '0 0 16px 0',
-                                    fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
-                                    color: '#0f1c2e',
+                                    fontWeight: '500', lineHeight: 1.25,
+                                    margin: '0 0 14px 0',
+                                    fontSize: isMobileViewport
+                                        ? 'clamp(1.6rem, 7vw, 2.2rem)'
+                                        : 'clamp(1.8rem, 2.5vw, 2.2rem)',
+                                    color: '#274472',
+                                    fontFamily: 'var(--font-display)',
                                     wordBreak: 'break-word', overflowWrap: 'break-word'
                                 }}>
                                     What To Expect On Your First Expedition Cruise
                                 </h2>
                                 <p style={{
-                                    fontSize: '0.95rem', margin: '0 0 24px 0',
-                                    lineHeight: '1.6', fontWeight: '400', color: '#475569'
+                                    fontSize: isMobileViewport ? '0.9rem' : '0.95rem',
+                                    margin: '0 0 20px 0', lineHeight: 1.6,
+                                    fontWeight: '400', color: '#475569',
+                                    overflowWrap: 'break-word', wordBreak: 'break-word'
                                 }}>
                                     Select a topic below to explore what first-time expedition travelers should know.
                                 </p>
                             </div>
 
-                            {/* Tab buttons */}
-                            <div style={{
-                                display: 'flex',
-                                flexDirection: isMobileViewport ? 'row' : 'column',
-                                gap: '12px',
-                                overflowX: isMobileViewport ? 'auto' : 'visible',
-                                paddingBottom: isMobileViewport ? '12px' : '0',
-                                scrollSnapType: isMobileViewport ? 'x mandatory' : 'none'
-                            }}>
-                                {[
-                                    { number: '01', title: 'Travelers Should Expect', desc: 'Wildlife, landings & outdoor life' },
-                                    { number: '02', title: 'Travelers Should Not Expect', desc: 'What expedition cruising is not' },
-                                    { number: '03', title: 'The HX Expedition Philosophy', desc: 'Science, leadership & exploration' }
-                                ].map((tab, idx) => {
-                                    const isActive = activeExpectTab === idx
-                                    return (
-                                        <button
-                                            key={idx}
-                                            onClick={() => setActiveExpectTab(idx)}
-                                            style={{
-                                                display: 'flex', alignItems: 'center',
-                                                justifyContent: 'space-between',
-                                                padding: '20px 24px',
-                                                background: isActive ? '#0f1c2e' : 'transparent',
-                                                border: isActive ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(39,68,114,0.2)',
-                                                borderRadius: '16px', cursor: 'pointer',
-                                                textAlign: 'left',
-                                                width: isMobileViewport ? '260px' : '100%',
-                                                flexShrink: 0,
-                                                scrollSnapAlign: 'start',
-                                                transform: isActive && !isMobileViewport ? 'translateX(8px)' : 'translateX(0)',
-                                                boxShadow: isActive ? '0 8px 32px rgba(15,28,46,0.18)' : 'none',
-                                                transition: 'all 0.3s ease',
-                                                outline: 'none'
-                                            }}
-                                        >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                                                <span style={{
-                                                    fontSize: '1.25rem', fontWeight: '800',
-                                                    color: isActive ? '#93c5fd' : '#94a3b8',
-                                                    fontFamily: 'monospace'
-                                                }}>{tab.number}</span>
-                                                <div>
-                                                    <div style={{
-                                                        fontSize: '0.95rem', fontWeight: '700',
-                                                        color: isActive ? '#ffffff' : '#334155'
-                                                    }}>{tab.title}</div>
-                                                    {!isMobileViewport && (
+                            {/* ── Mobile: Horizontal scroll pills ── */}
+                            {isMobileViewport ? (
+                                <div style={{ position: 'relative' }}>
+                                    <div style={{
+                                        position: 'absolute', top: 0, right: 0, bottom: '8px',
+                                        width: '32px',
+                                        background: 'linear-gradient(to left, var(--bg-soft) 0%, transparent 100%)',
+                                        pointerEvents: 'none', zIndex: 3, borderRadius: '0 16px 16px 0'
+                                    }} />
+                                    <div style={{
+                                        display: 'flex', gap: '10px',
+                                        overflowX: 'auto', overflowY: 'hidden',
+                                        paddingBottom: '8px',
+                                        scrollSnapType: 'x mandatory',
+                                        WebkitOverflowScrolling: 'touch',
+                                        scrollbarWidth: 'none',
+                                        paddingLeft: '0', paddingRight: '40px'
+                                    }}>
+                                        {[
+                                            { number: '01', title: 'Should Expect' },
+                                            { number: '02', title: 'Should Not Expect' },
+                                            { number: '03', title: 'HX Philosophy' }
+                                        ].map((tab, idx) => {
+                                            const isActive = activeExpectTab === idx;
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => setActiveExpectTab(idx)}
+                                                    style={{
+                                                        display: 'flex', alignItems: 'center', gap: '8px',
+                                                        padding: '12px 16px',
+                                                        background: isActive ? '#0f1c2e' : 'rgba(39,68,114,0.06)',
+                                                        border: isActive
+                                                            ? '1px solid rgba(255,255,255,0.08)'
+                                                            : '1px solid rgba(39,68,114,0.15)',
+                                                        borderRadius: '14px', cursor: 'pointer',
+                                                        textAlign: 'left', flexShrink: 0,
+                                                        scrollSnapAlign: 'start',
+                                                        boxShadow: isActive ? '0 6px 24px rgba(15,28,46,0.18)' : 'none',
+                                                        transition: 'all 0.25s ease', outline: 'none',
+                                                        whiteSpace: 'nowrap'
+                                                    }}
+                                                >
+                                                    <span style={{
+                                                        fontSize: '0.8rem', fontWeight: '800',
+                                                        color: isActive ? '#93c5fd' : '#94a3b8',
+                                                        fontFamily: 'monospace', flexShrink: 0
+                                                    }}>{tab.number}</span>
+                                                    <span style={{
+                                                        fontSize: '0.82rem', fontWeight: '700',
+                                                        color: isActive ? '#ffffff' : '#334155',
+                                                        lineHeight: 1.3
+                                                    }}>{tab.title}</span>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            ) : (
+                                /* ── Desktop: Vertical stacked buttons ── */
+                                <div style={{
+                                    display: 'flex', flexDirection: 'column',
+                                    gap: '10px', minWidth: 0
+                                }}>
+                                    {[
+                                        { number: '01', title: 'Travelers Should Expect', desc: 'Wildlife, landings & outdoor life' },
+                                        { number: '02', title: 'Travelers Should Not Expect', desc: 'What expedition cruising is not' },
+                                        { number: '03', title: 'The HX Expedition Philosophy', desc: 'Science, leadership & exploration' }
+                                    ].map((tab, idx) => {
+                                        const isActive = activeExpectTab === idx;
+                                        return (
+                                            <button
+                                                key={idx}
+                                                onClick={() => setActiveExpectTab(idx)}
+                                                style={{
+                                                    display: 'flex', alignItems: 'center',
+                                                    justifyContent: 'space-between',
+                                                    padding: 'clamp(14px, 1.5vw, 20px) clamp(14px, 2vw, 24px)',
+                                                    background: isActive ? '#0f1c2e' : 'transparent',
+                                                    border: isActive
+                                                        ? '1px solid rgba(255,255,255,0.08)'
+                                                        : '1px solid rgba(39,68,114,0.2)',
+                                                    borderRadius: '16px', cursor: 'pointer',
+                                                    textAlign: 'left', width: '100%',
+                                                    transform: isActive ? 'translateX(6px)' : 'translateX(0)',
+                                                    boxShadow: isActive ? '0 8px 32px rgba(15,28,46,0.18)' : 'none',
+                                                    transition: 'all 0.3s ease', outline: 'none',
+                                                    minWidth: 0
+                                                }}
+                                            >
+                                                <div style={{
+                                                    display: 'flex', alignItems: 'center',
+                                                    gap: '14px', minWidth: 0, flex: '1 1 0%'
+                                                }}>
+                                                    <span style={{
+                                                        fontSize: 'clamp(1rem, 1.1vw, 1.25rem)',
+                                                        fontWeight: '800',
+                                                        color: isActive ? '#93c5fd' : '#94a3b8',
+                                                        fontFamily: 'monospace', flexShrink: 0
+                                                    }}>{tab.number}</span>
+                                                    <div style={{ minWidth: 0, flex: '1 1 0%' }}>
                                                         <div style={{
-                                                            fontSize: '0.75rem',
-                                                            color: isActive ? '#94a3b8' : '#94a3b8',
-                                                            marginTop: '4px'
+                                                            fontSize: 'clamp(0.82rem, 0.95vw, 0.95rem)',
+                                                            fontWeight: '700',
+                                                            color: isActive ? '#ffffff' : '#334155',
+                                                            overflowWrap: 'break-word', wordBreak: 'break-word',
+                                                            lineHeight: 1.35
+                                                        }}>{tab.title}</div>
+                                                        <div style={{
+                                                            fontSize: 'clamp(0.68rem, 0.75vw, 0.75rem)',
+                                                            color: '#94a3b8', marginTop: '3px',
+                                                            overflowWrap: 'break-word', wordBreak: 'break-word'
                                                         }}>{tab.desc}</div>
-                                                    )}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div style={{
-                                                width: '8px', height: '8px', borderRadius: '50%',
-                                                background: isActive ? '#93c5fd' : 'rgba(39,68,114,0.3)',
-                                                boxShadow: isActive ? '0 0 10px #93c5fd' : 'none',
-                                                transition: 'all 0.3s ease'
-                                            }} />
-                                        </button>
-                                    )
-                                })}
-                            </div>
+                                                <div style={{
+                                                    width: '8px', height: '8px', borderRadius: '50%',
+                                                    background: isActive ? '#93c5fd' : 'rgba(39,68,114,0.3)',
+                                                    boxShadow: isActive ? '0 0 10px #93c5fd' : 'none',
+                                                    transition: 'all 0.3s ease',
+                                                    flexShrink: 0, marginLeft: '12px'
+                                                }} />
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            )}
                         </div>
 
                         {/* ── Right: dark content panel ── */}
                         <div style={{
                             background: '#0f1c2e',
                             border: '1px solid rgba(39,68,114,0.3)',
-                            borderRadius: '24px',
-                            padding: isMobileViewport ? '24px' : '48px',
+                            borderRadius: isMobileViewport ? '16px' : '24px',
+                            padding: isMobileViewport
+                                ? '20px 18px 44px 18px'
+                                : 'clamp(28px, 3.5vw, 48px)',
+                            paddingBottom: isMobileViewport ? '48px' : undefined,
                             boxShadow: '0 20px 60px rgba(15,28,46,0.25)',
-                            minHeight: '450px',
                             display: 'flex', flexDirection: 'column',
-                            justifyContent: 'space-between',
-                            position: 'relative', overflow: 'hidden',
-                            boxSizing: 'border-box'
+                            position: 'relative', overflow: 'visible',
+                            boxSizing: 'border-box', minWidth: 0, width: '100%'
                         }}>
                             {/* Watermark */}
                             <div style={{
-                                position: 'absolute', bottom: '24px', right: '28px',
+                                position: 'absolute',
+                                bottom: isMobileViewport ? '14px' : '24px',
+                                right: isMobileViewport ? '16px' : '28px',
                                 color: 'rgba(39,68,114,0.4)', fontFamily: 'monospace',
-                                fontSize: '11px', fontWeight: '700', letterSpacing: '2px',
-                                pointerEvents: 'none', zIndex: 1
+                                fontSize: isMobileViewport ? '7px' : '11px',
+                                fontWeight: 700,
+                                letterSpacing: isMobileViewport ? '1px' : '2px',
+                                pointerEvents: 'none', zIndex: 1,
+                                opacity: isMobileViewport ? 0.5 : 1,
+                                whiteSpace: 'nowrap'
                             }}>HX EXPEDITIONS // FIRST TIMER GUIDE</div>
 
-                            <div style={{ position: 'relative', zIndex: 2 }}>
+                            <div style={{
+                                position: 'relative', zIndex: 2,
+                                minWidth: 0, overflow: 'visible', width: '100%'
+                            }}>
 
-                                {/* ── Tab 01: Travelers Should Expect ── */}
+                                {/* ══════════ Tab 01: Should Expect ══════════ */}
                                 {activeExpectTab === 0 && (
-                                    <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                    <div style={{ minWidth: 0 }}>
+                                        <div style={{
+                                            display: 'flex', alignItems: 'center',
+                                            gap: isMobileViewport ? '10px' : '16px',
+                                            marginBottom: isMobileViewport ? '16px' : '28px', minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                width: isMobileViewport ? '38px' : '48px',
+                                                height: isMobileViewport ? '38px' : '48px',
+                                                borderRadius: isMobileViewport ? '10px' : '12px',
                                                 background: 'rgba(39,68,114,0.4)',
                                                 border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
-                                                <Compass size={22} color="#93c5fd" />
+                                                <Compass size={isMobileViewport ? 18 : 22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
-                                                Travelers Should Expect
-                                            </h3>
+                                            <h3 style={{
+                                                color: '#ffffff',
+                                                fontSize: isMobileViewport
+                                                    ? 'clamp(1.05rem, 5vw, 1.2rem)'
+                                                    : 'clamp(1.2rem, 1.5vw, 1.4rem)',
+                                                fontWeight: '700', margin: 0, lineHeight: 1.3,
+                                                minWidth: 0, overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>Travelers Should Expect</h3>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                                        <p style={{
+                                            color: '#94a3b8',
+                                            fontSize: isMobileViewport ? '0.88rem' : '0.95rem',
+                                            marginBottom: '18px', lineHeight: 1.6,
+                                            overflowWrap: 'break-word', wordBreak: 'break-word'
+                                        }}>
                                             Expedition cruising feels very different from mainstream cruising.
                                         </p>
 
-                                        <ul className="medi-diff-experience-list" style={{ marginBottom: '20px' }}>
+                                        <ul style={{
+                                            listStyle: 'none', padding: 0,
+                                            margin: '0 0 18px', minWidth: 0
+                                        }}>
                                             {['Zodiac landings', 'Flexible itineraries', 'Outdoor exploration', 'Casual atmosphere', 'Educational lectures', 'Wildlife focused days', 'Early mornings for sightings'].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                                    <CheckCircle size={16} className="medi-diff-list-icon" style={{ color: '#93c5fd', flexShrink: 0 }} />
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                <li key={i} style={{
+                                                    display: 'flex', alignItems: 'flex-start',
+                                                    gap: isMobileViewport ? '10px' : '12px',
+                                                    padding: '4px 0', minWidth: 0
+                                                }}>
+                                                    <CheckCircle
+                                                        size={isMobileViewport ? 14 : 16}
+                                                        style={{ color: '#93c5fd', flexShrink: 0, marginTop: '2px' }}
+                                                    />
+                                                    <span style={{
+                                                        color: '#e2e8f0',
+                                                        fontSize: isMobileViewport ? '0.85rem' : '0.92rem',
+                                                        lineHeight: 1.45, minWidth: 0,
+                                                        overflowWrap: 'break-word', wordBreak: 'break-word'
+                                                    }}>{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>The destination itself becomes the entertainment on every expedition cruise.</p>
+                                        <div style={{
+                                            marginTop: '12px', paddingTop: '14px',
+                                            borderTop: '1px solid rgba(255,255,255,0.1)', minWidth: 0
+                                        }}>
+                                            <p style={{
+                                                color: '#94a3b8', fontStyle: 'italic',
+                                                fontSize: isMobileViewport ? '0.83rem' : '0.88rem',
+                                                lineHeight: 1.6, margin: 0,
+                                                overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>The destination itself becomes the entertainment on every expedition cruise.</p>
                                         </div>
                                     </div>
                                 )}
 
-                                {/* ── Tab 02: Travelers Should NOT Expect ── */}
+                                {/* ══════════ Tab 02: Should NOT Expect ══════════ */}
                                 {activeExpectTab === 1 && (
-                                    <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                    <div style={{ minWidth: 0 }}>
+                                        <div style={{
+                                            display: 'flex', alignItems: 'center',
+                                            gap: isMobileViewport ? '10px' : '16px',
+                                            marginBottom: isMobileViewport ? '16px' : '28px', minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                width: isMobileViewport ? '38px' : '48px',
+                                                height: isMobileViewport ? '38px' : '48px',
+                                                borderRadius: isMobileViewport ? '10px' : '12px',
                                                 background: 'rgba(39,68,114,0.4)',
                                                 border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
-                                                <Moon size={22} color="#93c5fd" />
+                                                <Moon size={isMobileViewport ? 18 : 22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
-                                                Travelers Should Not Expect
-                                            </h3>
+                                            <h3 style={{
+                                                color: '#ffffff',
+                                                fontSize: isMobileViewport
+                                                    ? 'clamp(1.05rem, 5vw, 1.2rem)'
+                                                    : 'clamp(1.2rem, 1.5vw, 1.4rem)',
+                                                fontWeight: '700', margin: 0, lineHeight: 1.3,
+                                                minWidth: 0, overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>Travelers Should Not Expect</h3>
                                         </div>
 
+                                        {/* ADV badge */}
                                         <div style={{
                                             background: 'rgba(39,68,114,0.2)',
                                             border: '1px solid rgba(39,68,114,0.3)',
-                                            borderRadius: '16px', padding: '20px 24px',
-                                            marginBottom: '24px',
-                                            display: 'flex', alignItems: 'center', gap: '20px'
+                                            borderRadius: isMobileViewport ? '12px' : '16px',
+                                            padding: isMobileViewport ? '14px 16px' : '20px 24px',
+                                            marginBottom: '20px',
+                                            display: 'flex', alignItems: 'center',
+                                            gap: isMobileViewport ? '12px' : '20px', minWidth: 0
                                         }}>
                                             <div style={{
-                                                width: '56px', height: '56px', borderRadius: '50%',
+                                                width: isMobileViewport ? '44px' : '56px',
+                                                height: isMobileViewport ? '44px' : '56px',
+                                                borderRadius: '50%',
                                                 border: '2px solid #93c5fd',
                                                 background: 'rgba(255,255,255,0.03)',
                                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                                                 flexShrink: 0
                                             }}>
-                                                <span style={{ fontSize: '10px', fontWeight: 700, color: '#ffffff', textAlign: 'center', lineHeight: 1.1 }}>ADV</span>
+                                                <span style={{
+                                                    fontSize: isMobileViewport ? '8px' : '10px',
+                                                    fontWeight: 700, color: '#ffffff',
+                                                    textAlign: 'center', lineHeight: 1.1
+                                                }}>ADV</span>
                                             </div>
-                                            <span style={{ color: '#93c5fd', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase' }}>ADVENTURE FIRST</span>
+                                            <span style={{
+                                                color: '#93c5fd',
+                                                fontSize: isMobileViewport ? '0.72rem' : '0.8rem',
+                                                fontWeight: 700, letterSpacing: '2px',
+                                                textTransform: 'uppercase', whiteSpace: 'nowrap'
+                                            }}>ADVENTURE FIRST</span>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6', fontWeight: 700 }}>The following are not part of expedition cruising:</p>
+                                        <p style={{
+                                            color: '#94a3b8',
+                                            fontSize: isMobileViewport ? '0.87rem' : '0.95rem',
+                                            marginBottom: '14px', lineHeight: 1.6, fontWeight: 700,
+                                            overflowWrap: 'break-word', wordBreak: 'break-word',
+                                            margin: '0 0 14px 0'
+                                        }}>The following are not part of expedition cruising:</p>
 
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <ul style={{
+                                            listStyle: 'none', padding: 0,
+                                            margin: '0 0 18px', minWidth: 0
+                                        }}>
                                             {['Casinos', 'Broadway shows', 'Large ship nightlife', 'Massive entertainment venues'].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                                <li key={i} style={{
+                                                    display: 'flex', alignItems: 'flex-start',
+                                                    gap: isMobileViewport ? '10px' : '12px',
+                                                    padding: '5px 0', minWidth: 0
+                                                }}>
                                                     <span style={{
-                                                        width: '22px', height: '22px', borderRadius: '50%',
+                                                        width: isMobileViewport ? '20px' : '22px',
+                                                        height: isMobileViewport ? '20px' : '22px',
+                                                        borderRadius: '50%',
                                                         background: 'rgba(239,68,68,0.15)',
                                                         border: '1px solid rgba(239,68,68,0.4)',
                                                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                                        flexShrink: 0, color: '#ef4444', fontWeight: 700, fontSize: '13px'
+                                                        flexShrink: 0, color: '#ef4444',
+                                                        fontWeight: 700,
+                                                        fontSize: isMobileViewport ? '11px' : '13px'
                                                     }}>✕</span>
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                    <span style={{
+                                                        color: '#e2e8f0',
+                                                        fontSize: isMobileViewport ? '0.85rem' : '0.92rem',
+                                                        lineHeight: 1.45, minWidth: 0,
+                                                        overflowWrap: 'break-word', wordBreak: 'break-word'
+                                                    }}>{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>The destination itself becomes the entertainment.</p>
+                                        <div style={{
+                                            marginTop: '12px', paddingTop: '14px',
+                                            borderTop: '1px solid rgba(255,255,255,0.1)', minWidth: 0
+                                        }}>
+                                            <p style={{
+                                                color: '#94a3b8', fontStyle: 'italic',
+                                                fontSize: isMobileViewport ? '0.83rem' : '0.88rem',
+                                                lineHeight: 1.6, margin: 0,
+                                                overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>The destination itself becomes the entertainment.</p>
                                         </div>
                                     </div>
                                 )}
 
-                                {/* ── Tab 03: HX Expedition Philosophy ── */}
+                                {/* ══════════ Tab 03: HX Philosophy ══════════ */}
                                 {activeExpectTab === 2 && (
-                                    <div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '28px' }}>
+                                    <div style={{ minWidth: 0 }}>
+                                        <div style={{
+                                            display: 'flex', alignItems: 'center',
+                                            gap: isMobileViewport ? '10px' : '16px',
+                                            marginBottom: isMobileViewport ? '16px' : '28px', minWidth: 0
+                                        }}>
                                             <div style={{
-                                                width: '48px', height: '48px', borderRadius: '12px',
+                                                width: isMobileViewport ? '38px' : '48px',
+                                                height: isMobileViewport ? '38px' : '48px',
+                                                borderRadius: isMobileViewport ? '10px' : '12px',
                                                 background: 'rgba(39,68,114,0.4)',
                                                 border: '1px solid rgba(39,68,114,0.5)',
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
+                                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                flexShrink: 0
                                             }}>
-                                                <Camera size={22} color="#93c5fd" />
+                                                <Camera size={isMobileViewport ? 18 : 22} color="#93c5fd" />
                                             </div>
-                                            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: '700', margin: 0 }}>
-                                                The HX Expedition Philosophy
-                                            </h3>
+                                            <h3 style={{
+                                                color: '#ffffff',
+                                                fontSize: isMobileViewport
+                                                    ? 'clamp(1.05rem, 5vw, 1.2rem)'
+                                                    : 'clamp(1.2rem, 1.5vw, 1.4rem)',
+                                                fontWeight: '700', margin: 0, lineHeight: 1.3,
+                                                minWidth: 0, overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>The HX Expedition Philosophy</h3>
                                         </div>
 
-                                        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6', fontWeight: 700 }}>HX emphasizes:</p>
+                                        <p style={{
+                                            color: '#94a3b8',
+                                            fontSize: isMobileViewport ? '0.87rem' : '0.95rem',
+                                            marginBottom: '14px', lineHeight: 1.6, fontWeight: 700,
+                                            overflowWrap: 'break-word', wordBreak: 'break-word',
+                                            margin: '0 0 14px 0'
+                                        }}>HX emphasizes:</p>
 
-                                        <ul className="medi-diff-focus-list-premium" style={{ marginBottom: '20px' }}>
+                                        <ul style={{
+                                            listStyle: 'none', padding: 0,
+                                            margin: '0 0 18px', minWidth: 0
+                                        }}>
                                             {['Science focused experiences', 'Expert expedition leadership', 'Strong onboard organization', 'Beginner friendly atmosphere', 'Educational programming'].map((item, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                                                <li key={i} style={{
+                                                    display: 'flex', alignItems: 'flex-start',
+                                                    gap: isMobileViewport ? '10px' : '14px',
+                                                    padding: '5px 0', minWidth: 0
+                                                }}>
                                                     <span style={{
-                                                        minWidth: '32px', height: '32px', borderRadius: '8px',
+                                                        minWidth: isMobileViewport ? '28px' : '32px',
+                                                        height: isMobileViewport ? '28px' : '32px',
+                                                        borderRadius: isMobileViewport ? '6px' : '8px',
                                                         background: 'rgba(39,68,114,0.4)',
                                                         border: '1px solid rgba(39,68,114,0.5)',
                                                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                                        fontSize: '0.75rem', fontWeight: 800,
-                                                        color: '#93c5fd', fontFamily: 'monospace'
+                                                        fontSize: isMobileViewport ? '0.68rem' : '0.75rem',
+                                                        fontWeight: 800, color: '#93c5fd',
+                                                        fontFamily: 'monospace', flexShrink: 0
                                                     }}>0{i + 1}</span>
-                                                    <span style={{ color: '#e2e8f0', fontSize: '0.92rem' }}>{item}</span>
+                                                    <span style={{
+                                                        color: '#e2e8f0',
+                                                        fontSize: isMobileViewport ? '0.85rem' : '0.92rem',
+                                                        lineHeight: 1.45, minWidth: 0,
+                                                        overflowWrap: 'break-word', wordBreak: 'break-word'
+                                                    }}>{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
 
-                                        <div className="medi-diff-conclusion-box" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                                            <p className="medi-diff-conclusion-text" style={{ color: '#94a3b8', fontStyle: 'italic' }}>For travelers prioritizing exploration over onboard spectacle, this approach is highly appealing.</p>
+                                        <div style={{
+                                            marginTop: '12px', paddingTop: '14px',
+                                            borderTop: '1px solid rgba(255,255,255,0.1)', minWidth: 0
+                                        }}>
+                                            <p style={{
+                                                color: '#94a3b8', fontStyle: 'italic',
+                                                fontSize: isMobileViewport ? '0.83rem' : '0.88rem',
+                                                lineHeight: 1.6, margin: 0,
+                                                overflowWrap: 'break-word', wordBreak: 'break-word'
+                                            }}>For travelers prioritizing exploration over onboard spectacle, this approach is highly appealing.</p>
                                         </div>
                                     </div>
                                 )}
 
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -1075,35 +1471,121 @@ function BestHXExpeditions() {
             {/* ════════════════════════════════════════════════════════════
                 IMAGE GALLERY STRIP  ← NEW SECTION (inline CSS)
             ════════════════════════════════════════════════════════════ */}
-            <section style={{ background: '#ffffff', padding: '70px 20px' }}>
+            <section style={{
+                background: '#ffffff',
+                padding: 'clamp(48px, 6vw, 70px) clamp(16px, 3vw, 20px)',
+                overflow: 'visible'
+            }}>
+                <style>{`
+        .gal-card { position: relative; overflow: hidden; cursor: pointer; }
+        .gal-card img { transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .gal-card:hover img { transform: scale(1.06); }
+        .gal-cap { transition: opacity 0.3s ease, transform 0.3s ease; }
+        .gal-card:hover .gal-cap { opacity: 1 !important; transform: translateY(0) !important; }
+    `}</style>
+
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                        <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#274472', opacity: 0.7, display: 'block', marginBottom: '10px' }}>
-                            EXPEDITION IMAGERY
-                        </span>
-                        <h2 className="medi-section-heading">Experience HX Expeditions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    {/* ── Header ── */}
+                    <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
+                        <span style={{
+                            fontSize: 'clamp(9px, 1.2vw, 12px)', fontWeight: 700,
+                            letterSpacing: '0.25em', textTransform: 'uppercase',
+                            color: '#274472', opacity: 0.7, display: 'block', marginBottom: '10px'
+                        }}>EXPEDITION IMAGERY</span>
+                        <h2 style={{
+                            fontSize: 'clamp(1.5rem, 4vw, 2.25rem)',
+                            fontWeight: 500, color: '#274472',
+                            margin: '0', lineHeight: 1.25,
+                            fontFamily: 'var(--font-display)',
+                            overflowWrap: 'break-word', wordBreak: 'break-word'
+                        }}>Experience HX Expeditions</h2>
+                        <div style={{
+                            width: '50px', height: '3px',
+                            background: '#274472', margin: '16px auto 0',
+                            borderRadius: '2px'
+                        }} />
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+
+                    {/* ── Grid Container ── */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isMobileViewport ? '1fr' : 'repeat(3, 1fr)',
+                        gridTemplateAreas: isMobileViewport
+                            ? undefined
+                            : '"hero hero zodiac" "hero hero svalbard" "galapagos greenland wildlife"',
+                        gridAutoRows: isMobileViewport ? undefined : 'clamp(160px, 20vw, 220px)',
+                        gap: isMobileViewport ? '10px' : '12px'
+                    }}>
                         {[
-                            { img: antarcticaImg1, caption: 'First time Antarctica expedition cruise', span: 'row' },
-                            { img: zodiacLandingImg1, caption: 'HX expedition travelers boarding Zodiac', span: '' },
-                            { img: svalbardImg1,caption: 'Polar bear during Svalbard expedition', span: '' },
-                            { img: galapagosImg1,caption: 'Galápagos wildlife expedition cruise', span: '' },
-                            { img: greenlandImg1,caption: 'Greenland icebergs expedition',span: '' },
-                            { img: wildlifeImg1,caption: 'Beginner expedition cruise travelers', span: '' },
-                        ].map((item, i) => (
-                            <div key={i} style={{
-                                position: 'relative', borderRadius: '14px', overflow: 'hidden',
-                                height: i === 0 ? '400px' : '230px',
-                                gridRow: i === 0 ? 'span 2' : '',
-                            }}>
-                                <img src={item.img} alt={item.caption} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.75), transparent)', padding: '20px 16px 14px' }}>
-                                    <span style={{ color: '#ffffff', fontSize: '13px', fontWeight: '500' }}>{item.caption}</span>
+                            { img: antarcticaImg1, caption: 'First time Antarctica expedition cruise', area: 'hero', featured: true },
+                            { img: zodiacLandingImg1, caption: 'HX expedition travelers boarding Zodiac', area: 'zodiac' },
+                            { img: svalbardImg1, caption: 'Polar bear during Svalbard expedition', area: 'svalbard' },
+                            { img: galapagosImg1, caption: 'Galápagos wildlife expedition cruise', area: 'galapagos' },
+                            { img: greenlandImg1, caption: 'Greenland icebergs expedition', area: 'greenland' },
+                            { img: wildlifeImg1, caption: 'Beginner expedition cruise travelers', area: 'wildlife' }
+                        ].map((item, i) => {
+                            const isHero = item.featured && !isMobileViewport;
+
+                            return (
+                                <div
+                                    key={i}
+                                    className="gal-card"
+                                    style={{
+                                        gridArea: isMobileViewport ? undefined : item.area,
+                                        borderRadius: isMobileViewport ? '12px' : '14px',
+                                        boxShadow: isHero
+                                            ? '0 8px 32px rgba(15,28,46,0.12)'
+                                            : '0 2px 16px rgba(15,28,46,0.08)',
+                                        aspectRatio: isMobileViewport ? '16 / 10' : undefined
+                                    }}
+                                >
+                                    <img
+                                        src={item.img}
+                                        alt={item.caption}
+                                        loading="lazy"
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                                    />
+                                    <div
+                                        className="gal-cap"
+                                        style={{
+                                            position: 'absolute', bottom: 0, left: 0, right: 0,
+                                            background: isHero
+                                                ? 'linear-gradient(to top, rgba(15,28,46,0.9) 0%, rgba(15,28,46,0.3) 40%, transparent 100%)'
+                                                : 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, rgba(15,28,46,0.15) 70%, transparent 100%)',
+                                            padding: isHero
+                                                ? 'clamp(28px, 3.5vw, 48px) clamp(16px, 2vw, 24px) clamp(16px, 1.5vw, 20px)'
+                                                : isMobileViewport
+                                                    ? 'clamp(20px, 4vw, 32px) 14px 12px'
+                                                    : 'clamp(20px, 2.5vw, 30px) clamp(12px, 1.5vw, 18px) clamp(10px, 1.2vw, 14px)',
+                                            opacity: isMobileViewport ? 0.95 : 0.85,
+                                            transform: 'translateY(2px)'
+                                        }}
+                                    >
+                                        {isHero && (
+                                            <span style={{
+                                                display: 'inline-block',
+                                                fontSize: '0.65rem', fontWeight: 700,
+                                                letterSpacing: '0.15em', textTransform: 'uppercase',
+                                                color: '#93c5fd', marginBottom: '6px',
+                                                background: 'rgba(147, 197, 253, 0.12)',
+                                                padding: '3px 10px', borderRadius: '4px'
+                                            }}>Featured</span>
+                                        )}
+                                        <span style={{
+                                            color: '#ffffff',
+                                            fontSize: isHero
+                                                ? 'clamp(0.95rem, 1.1vw, 1.1rem)'
+                                                : isMobileViewport
+                                                    ? '0.82rem'
+                                                    : 'clamp(0.8rem, 0.9vw, 0.9rem)',
+                                            fontWeight: isHero ? 600 : 500,
+                                            lineHeight: 1.4, display: 'block',
+                                            overflowWrap: 'break-word', wordBreak: 'break-word'
+                                        }}>{item.caption}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </section>
@@ -1140,8 +1622,8 @@ function BestHXExpeditions() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Expert Insight from 
-                                  <br className="medi-growth-title-break" />Angela Hughes
+                                    Expert Insight from
+                                    <br className="medi-growth-title-break" />Angela Hughes
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
@@ -1155,7 +1637,7 @@ function BestHXExpeditions() {
                                     Angela consistently helps first timers evaluate:
                                 </p>
                                 <div className="medi-priorities-grid-pills">
-                                    {['Comfort level','Activity level','Wildlife interests','Travel experience','Adventure tolerance','Budget'].map((item, idx) => (
+                                    {['Comfort level', 'Activity level', 'Wildlife interests', 'Travel experience', 'Adventure tolerance', 'Budget'].map((item, idx) => (
                                         <div key={idx} className="medi-priority-pill-item">
                                             <CheckCircle size={15} className="medi-priority-check" />
                                             <span>{item}</span>
@@ -1195,7 +1677,7 @@ function BestHXExpeditions() {
             </section>
 
 
- {/* ════════════════════════════════════════════════════════════
+            {/* ════════════════════════════════════════════════════════════
                 VIDEO
             ════════════════════════════════════════════════════════════ */}
             <section className="medi-video-section" style={{ background: '#f8fafc', padding: '80px 20px', textAlign: 'center', position: 'relative' }}>
@@ -1238,7 +1720,7 @@ function BestHXExpeditions() {
                         <div className="medi-luxury-appreciated-box">
                             <h3 className="medi-luxury-subheading">HX Expeditions Is Best For:</h3>
                             <div className="medi-luxury-features-grid">
-                                {['First time expedition travelers','Wildlife enthusiasts','Curious travelers','Nature photographers','Travelers seeking educational experiences','Bucket list adventurers','Older travelers with moderate mobility','Those wanting all-inclusive-style pricing'].map((f, i) => (
+                                {['First time expedition travelers', 'Wildlife enthusiasts', 'Curious travelers', 'Nature photographers', 'Travelers seeking educational experiences', 'Bucket list adventurers', 'Older travelers with moderate mobility', 'Those wanting all-inclusive-style pricing'].map((f, i) => (
                                     <div key={i} className="medi-luxury-feature">
                                         <CheckCircle size={20} className="medi-feature-check-icon" />
                                         <span>{f}</span>
@@ -1381,55 +1863,129 @@ function BestHXExpeditions() {
             {/* ════════════════════════════════════════════════════════════
                 ANGELA HUGHES AUTHORITY  (medi-authority-section)
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-authority-section">
-                <div className="medi-authority-container">
+            <section className="medi-authority-section" style={{
+                padding: windowWidth < 480 ? '40px 12px' : windowWidth < 768 ? '60px 16px' : windowWidth < 992 ? '80px 20px' : '100px 24px'
+            }}>
+                <div className="medi-authority-container" style={{
+                    padding: windowWidth < 480 ? '0' : undefined
+                }}>
 
-                    <div className="medi-authority-header-block">
-                        <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Trust Angela Hughes <br /> Trips &amp; Ships Luxury Travel</h2>
+                    <div className="medi-authority-header-block" style={{
+                        marginBottom: windowWidth < 768 ? '32px' : '50px'
+                    }}>
+                        <span className="medi-authority-eyebrow" style={{
+                            fontSize: windowWidth < 768 ? '11px' : undefined,
+                            letterSpacing: windowWidth < 768 ? '1.5px' : undefined
+                        }}>ELITE INDUSTRY LEADERSHIP</span>
+                        <h2 className="medi-section-heading" style={{
+                            textAlign: 'center',
+                            fontSize: windowWidth < 480 ? '22px' : windowWidth < 768 ? '26px' : '36px',
+                            lineHeight: 1.25
+                        }}>Why Travelers Trust Angela Hughes <br /> Trips &amp; Ships Luxury Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="medi-prestige-plaque-wrapper">
-                        <div className="medi-prestige-identity-card">
-                            <div className="medi-prestige-seal-ring">
+                    <div className="medi-prestige-plaque-wrapper" style={{
+                        borderRadius: windowWidth < 480 ? '16px' : '24px',
+                        display: 'flex',
+                        flexDirection: windowWidth < 992 ? 'column' : 'row',
+                        gap: windowWidth < 480 ? '24px' : undefined
+                    }}>
+                        <div className="medi-prestige-identity-card" style={{
+                            padding: windowWidth < 480 ? '30px 16px' : windowWidth < 768 ? '40px 24px' : '50px 40px',
+                            flex: windowWidth < 992 ? '1 0 auto' : '0 0 380px'
+                        }}>
+                            <div className="medi-prestige-seal-ring" style={{
+                                width: windowWidth < 768 ? '80px' : '100px',
+                                height: windowWidth < 768 ? '80px' : '100px',
+                                animation: 'none',
+                                border: 'none',
+                                position: 'relative',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                marginBottom: windowWidth < 768 ? '16px' : '24px'
+                            }}>
+                                {/* Spinning dashed border */}
+                                <div style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    borderRadius: '50%',
+                                    border: '2px dashed rgba(255, 255, 255, 0.25)',
+                                    animation: 'slow-spin 30s linear infinite',
+                                    boxSizing: 'border-box',
+                                    pointerEvents: 'none'
+                                }} />
+                                {/* Static image */}
                                 <img
                                     src={Profile_AH_image}
                                     alt="Angela Hughes"
-                                    style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }}
+                                    style={{
+                                        width: '76%',
+                                        height: '76%',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        position: 'relative',
+                                        zIndex: 1
+                                    }}
                                 />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
-                            <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
-                            <div className="medi-prestige-role-pill">CEO of Trips &amp; Ships Luxury Travel</div>
+                            <h3 className="medi-prestige-name" style={{
+                                fontSize: windowWidth < 480 ? '20px' : windowWidth < 768 ? '22px' : '28px'
+                            }}>Meet Angela Hughes</h3>
+                            <div className="medi-prestige-role-pill" style={{
+                                fontSize: windowWidth < 768 ? '12px' : '13px',
+                                padding: windowWidth < 768 ? '6px 12px' : '6px 14px',
+                                marginBottom: windowWidth < 768 ? '16px' : '24px'
+                            }}>CEO of Trips &amp; Ships Luxury Travel</div>
                             <div className="medi-prestige-meta-box">
                                 <div className="medi-prestige-meta-line"></div>
                                 <span className="medi-prestige-meta-text">Est. 1986 | Global Authority</span>
                             </div>
                         </div>
 
-                        <div className="medi-prestige-credentials-column">
+                        <div className="medi-prestige-credentials-column" style={{
+                            padding: windowWidth < 480 ? '20px 12px' : windowWidth < 768 ? '30px 16px' : '40px',
+                            height: windowWidth < 992 ? '400px' : '100%'
+                        }}>
                             <div className="medi-prestige-list">
                                 {[
-                                    { text: "CEO of Trips & Ships Luxury Travel",                          icon: Crown,         category: "LEADERSHIP" },
-                                    { text: "Founder of Luxury Travel University",                          icon: GraduationCap, category: "EDUCATION" },
-                                    { text: "More than 40 years in the travel industry",                    icon: Clock,         category: "EXPERIENCE" },
-                                    { text: "Traveled to more than 121 countries",                          icon: Globe,         category: "EXPLORATION" },
-                                    { text: "Global luxury travel speaker and trainer",                     icon: Mic,           category: "SPEAKING" },
-                                    { text: "Weekly industry columnist",                                    icon: FileText,      category: "MEDIA" },
-                                    { text: "Travel Leaders Network Advisory Board member",                 icon: Users,         category: "LEADERSHIP" },
-                                    { text: "2024 Luxury Travel Influencer of the Year",                   icon: Award,         category: "HONOR" },
+                                    { text: "CEO of Trips & Ships Luxury Travel", icon: Crown, category: "LEADERSHIP" },
+                                    { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
+                                    { text: "More than 40 years in the travel industry", icon: Clock, category: "EXPERIENCE" },
+                                    { text: "Traveled to more than 121 countries", icon: Globe, category: "EXPLORATION" },
+                                    { text: "Global luxury travel speaker and trainer", icon: Mic, category: "SPEAKING" },
+                                    { text: "Weekly industry columnist", icon: FileText, category: "MEDIA" },
+                                    { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
+                                    { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
                                     { text: "Named one of the Most Influential Women in Travel in 2026 by TravelPulse", icon: Crown, category: "PRESTIGE" },
-                                    { text: "Luxury cruise and expedition specialist",                      icon: Ship,          category: "SPECIALTY" },
+                                    { text: "Luxury cruise and expedition specialist", icon: Ship, category: "SPECIALTY" },
                                 ].map((accolade, idx) => {
                                     const IconComp = accolade.icon
                                     return (
-                                        <div key={idx} className="medi-prestige-item-card">
+                                        <div key={idx} className="medi-prestige-item-card" style={{
+                                            padding: windowWidth < 480 ? '10px 12px' : windowWidth < 768 ? '12px 16px' : '16px 24px',
+                                            gap: windowWidth < 480 ? '10px' : '14px',
+                                            borderRadius: windowWidth < 480 ? '10px' : '14px'
+                                        }}>
                                             <div className="medi-prestige-item-accent-bar"></div>
-                                            <div className="medi-prestige-item-icon-box"><IconComp size={16} /></div>
+                                            <div className="medi-prestige-item-icon-box" style={{
+                                                width: windowWidth < 768 ? '32px' : '40px',
+                                                height: windowWidth < 768 ? '32px' : '40px',
+                                                minWidth: windowWidth < 768 ? '32px' : '40px'
+                                            }}><IconComp size={16} /></div>
                                             <div className="medi-prestige-item-content">
-                                                <span className="medi-prestige-item-category">{accolade.category}</span>
-                                                <h4 className="medi-prestige-item-text">{accolade.text}</h4>
+                                                <span className="medi-prestige-item-category" style={{
+                                                    fontSize: windowWidth < 768 ? '9px' : '10px'
+                                                }}>{accolade.category}</span>
+                                                <h4 className="medi-prestige-item-text" style={{
+                                                    fontSize: windowWidth < 480 ? '12px' : windowWidth < 768 ? '13px' : '15px'
+                                                }}>{accolade.text}</h4>
                                             </div>
                                         </div>
                                     )
@@ -1512,7 +2068,7 @@ function BestHXExpeditions() {
                         <div className="medi-cta-considerations-box">
                             <span className="medi-cta-considerations-title">Whether you are considering:</span>
                             <ul className="medi-cta-considerations-list">
-                                {['Antarctica expedition cruises','Svalbard Arctic adventures','Greenland scenic cruises','Galápagos wildlife expeditions','HX expedition cruises for beginners'].map((item, idx) => (
+                                {['Antarctica expedition cruises', 'Svalbard Arctic adventures', 'Greenland scenic cruises', 'Galápagos wildlife expeditions', 'HX expedition cruises for beginners'].map((item, idx) => (
                                     <li key={idx} className="medi-cta-considerations-item">
                                         <CheckCircle size={16} className="medi-cta-considerations-icon" />
                                         <span>{item}</span>
