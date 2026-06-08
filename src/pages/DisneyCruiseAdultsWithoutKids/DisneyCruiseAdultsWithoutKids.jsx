@@ -1,15 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, ChevronLeft, Crown, Phone,
+    Sparkles, Anchor, Calendar, Gem,
+    ChevronRight, Crown, Phone,
     Globe, Heart, Utensils, Award,
-    Maximize, Home, Hotel, GlassWater, Wifi,
-    CircleDollarSign, UserCheck, GraduationCap, Mic, FileText, Microscope, FlaskConical,
-    Music,
-    Moon,
-    Minus,
-    Sun, X, Wine, Castle, Camera, Film, Theater, Waves
+    CircleDollarSign, GraduationCap, Mic, FileText,
+    Music, Moon, Minus, Sun, X, Wine, Castle, Theater, Waves
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -26,14 +22,6 @@ import WaterCoaster from '../../assets/DisneyCruiseAdultsWithoutKids/WaterCoaste
 import KilimanjaroSafaris from '../../assets/DisneyCruiseAdultsWithoutKids/KilimanjaroSafaris.jpg'
 import SeasonalCharacters from '../../assets/DisneyCruiseAdultsWithoutKids/SeasonalCharacters.jpg'
 import InternationalFlowerGarden from '../../assets/DisneyCruiseAdultsWithoutKids/InternationalFlowerGarden.jpg'
-// import Video1 from '../../assets/DisneyCruiseAdults/Video1.mp4'
-// import Video2 from '../../assets/DisneyCruiseAdults/Video2.mp4'
-// import Video3 from '../../assets/DisneyCruiseAdults/Video3.mp4'
-// import AH1 from '../../assets/DisneyCruiseAdults/AH1.jpg'
-// import AH2 from '../../assets/DisneyCruiseAdults/AH2.jpg'
-// import AH3 from '../../assets/DisneyCruiseAdults/AH3.jpg'
-// import AH4 from '../../assets/DisneyCruiseAdults/AH4.jpg'
-// import AH5 from '../../assets/DisneyCruiseAdults/AH5.jpg'
 import Caribbean from '../../assets/DisneyCruiseAdultsWithoutKids/Caribbean.jpg'
 import Mediterranean from '../../assets/DisneyCruiseAdultsWithoutKids/Mediterranean.jpg'
 import Alaska from '../../assets/DisneyCruiseAdultsWithoutKids/Alaska.jpg'
