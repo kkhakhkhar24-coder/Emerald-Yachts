@@ -424,6 +424,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 What Luxury Travelers Get Wrong About Disney Cruise Line</NavLink>
+
+              <NavLink
+                to="/is-disney-cruise-line-worth-the-money"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Disney Cruise Line Worth the Money</NavLink>
             </div>
           </div>
         </div>
@@ -852,12 +859,19 @@ const Navbar = () => {
             >
               Disney Cruise for Adults Without Kids</NavLink>
 
-               <NavLink
-                to="/what-luxury-travelers-get-wrong-about-disney-cruise-line"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                What Luxury Travelers Get Wrong About Disney Cruise Line</NavLink>
+            <NavLink
+              to="/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Luxury Travelers Get Wrong About Disney Cruise Line</NavLink>
+
+            <NavLink
+              to="/is-disney-cruise-line-worth-the-money"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Disney Cruise Line Worth the Money</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
