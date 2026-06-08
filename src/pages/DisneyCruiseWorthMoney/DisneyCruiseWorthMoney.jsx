@@ -756,7 +756,7 @@ function DisneyCruiseWorthMoney() {
                         <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>Take a tour of the dining, entertainment, and design details that justify Disney's premium pricing.</p>
                     </div>
                     <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
-                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/dqTTojTija8" title="Disney Cruise Line Value Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/" title="Disney Cruise Line Value Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </section>
