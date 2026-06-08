@@ -67,6 +67,7 @@ import Hxexpeditionsships from "./pages/Hxexpeditionsships/Hxexpeditionsships";
 import DisneyCruiseAdultsWithoutKids from "./pages/DisneyCruiseAdultsWithoutKids/DisneyCruiseAdultsWithoutKids";
 import Disneyluxurycruise from "./pages/Disneyluxurycruise/Disneyluxurycruise";
 import DisneyCruiseWorthMoney from "./pages/DisneyCruiseWorthMoney/DisneyCruiseWorthMoney";
+import DisneyvsRoyalCaribbean from "./pages/Disneyvsroyalcaribbean/Disneyvsroyalcaribbean";
 
 
 function App() {
@@ -342,6 +343,11 @@ function App() {
           <Route
             path="/is-disney-cruise-line-worth-the-money"
             element={<DisneyCruiseWorthMoney />}
+          />
+
+           <Route
+            path="/disney-cruise-vs-royal-caribbean"
+            element={<DisneyvsRoyalCaribbean />}
           />
         </Routes>
       </BrowserRouter>

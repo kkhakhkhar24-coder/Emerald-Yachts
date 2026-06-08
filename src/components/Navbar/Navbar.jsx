@@ -431,6 +431,14 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Is Disney Cruise Line Worth the Money</NavLink>
+
+                  <NavLink
+                to="/disney-cruise-vs-royal-caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise vs Royal Caribbean
+              </NavLink>
             </div>
           </div>
         </div>
@@ -872,6 +880,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Is Disney Cruise Line Worth the Money</NavLink>
+
+                <NavLink
+                to="/disney-cruise-vs-royal-caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise vs Royal Caribbean
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
