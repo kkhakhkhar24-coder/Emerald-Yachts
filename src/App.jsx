@@ -65,7 +65,7 @@ import HXExpeditionsVsSilverseaExpeditions from "./pages/HXExpeditionsVsSilverse
 import BestHXExpeditions from "./pages/Besthxexpeditions/Besthxexpeditions";
 import Hxexpeditionsships from "./pages/Hxexpeditionsships/Hxexpeditionsships";
 import DisneyCruiseAdultsWithoutKids from "./pages/DisneyCruiseAdultsWithoutKids/DisneyCruiseAdultsWithoutKids";
-import Disneyluxurycruise from "./pages/DisneyLuxuryCruise/DisneyLuxuryCruise";
+import Disneyluxurycruise from "./pages/Disneyluxurycruise/Disneyluxurycruise";
 
 
 function App() {
