@@ -16,16 +16,16 @@ import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/DisneyCruiseAdults/Hero_1.webp'
-// import hero2 from '../../assets/DisneyCruiseAdults/Hero_2.jpg'
-// import hero3 from '../../assets/DisneyCruiseAdults/Hero_3.webp'
-// import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
-// import Image1 from '../../assets/DisneyCruiseAdults/QuietCove.jpg'
-// import Image2 from '../../assets/DisneyCruiseAdults/AdultLounges.jpg'
-// import Image3 from '../../assets/DisneyCruiseAdults/SensesSpa.jpg'
-// import Image4 from '../../assets/DisneyCruiseAdults/PaloDining.jpg'
-// import Image5 from '../../assets/DisneyCruiseAdults/RemyDining.jpg'
-// import Image6 from '../../assets/DisneyCruiseAdults/AdultDeck.jpg'
+import hero1 from '../../assets/DisneyCruiseAdultsWithoutKids/Hero1.jpg'
+import hero2 from '../../assets/DisneyCruiseAdultsWithoutKids/Hero2.jpg'
+import hero3 from '../../assets/DisneyCruiseAdultsWithoutKids/Hero3.jpg'
+import profileAH from '../../assets/DisneyCruiseAdultsWithoutKids/Profile_AH.jpg'
+import HavingFunNight from '../../assets/DisneyCruiseAdultsWithoutKids/HavingFunNight.jpg'
+import QuietSanctuaries from '../../assets/DisneyCruiseAdultsWithoutKids/QuietSanctuaries.jpg'
+import WaterCoaster from '../../assets/DisneyCruiseAdultsWithoutKids/WaterCoaster.jpg'
+import KilimanjaroSafaris from '../../assets/DisneyCruiseAdultsWithoutKids/KilimanjaroSafaris.jpg'
+import SeasonalCharacters from '../../assets/DisneyCruiseAdultsWithoutKids/SeasonalCharacters.jpg'
+import InternationalFlowerGarden from '../../assets/DisneyCruiseAdultsWithoutKids/InternationalFlowerGarden.jpg'
 // import Video1 from '../../assets/DisneyCruiseAdults/Video1.mp4'
 // import Video2 from '../../assets/DisneyCruiseAdults/Video2.mp4'
 // import Video3 from '../../assets/DisneyCruiseAdults/Video3.mp4'
@@ -34,16 +34,16 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 // import AH3 from '../../assets/DisneyCruiseAdults/AH3.jpg'
 // import AH4 from '../../assets/DisneyCruiseAdults/AH4.jpg'
 // import AH5 from '../../assets/DisneyCruiseAdults/AH5.jpg'
-// import Caribbean from '../../assets/DisneyCruiseAdults/Caribbean.jpg'
-// import Mediterranean from '../../assets/DisneyCruiseAdults/Mediterranean.jpg'
-// import Alaska from '../../assets/DisneyCruiseAdults/Alaska.jpg'
-// import Transatlantic from '../../assets/DisneyCruiseAdults/Transatlantic.jpg'
-// import CastawayCay from '../../assets/DisneyCruiseAdults/CastawayCay.jpg'
-// import DisneyLookout from '../../assets/DisneyCruiseAdults/DisneyLookoutCay.jpg'
+import Caribbean from '../../assets/DisneyCruiseAdultsWithoutKids/Caribbean.jpg'
+import Mediterranean from '../../assets/DisneyCruiseAdultsWithoutKids/Mediterranean.jpg'
+import Alaska from '../../assets/DisneyCruiseAdultsWithoutKids/Alaska.jpg'
+import Transatlantic from '../../assets/DisneyCruiseAdultsWithoutKids/Transatlantic.jpg'
+import CastawayCay from '../../assets/DisneyCruiseAdultsWithoutKids/CastawayCay.png'
+import DisneyLookout from '../../assets/DisneyCruiseAdultsWithoutKids/LookoutCayLighthousePoint.jpeg'
 
 function DisneyCruiseAdultsWithoutKids() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3];
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -69,7 +69,7 @@ function DisneyCruiseAdultsWithoutKids() {
         setMediActiveFaq(mediActiveFaq === index ? null : index)
     }
 
-    const disneyCruiseImages = [];
+    const disneyCruiseImages = [Caribbean, Mediterranean, Alaska, Transatlantic];
 
     const disneyFaqs = [
         {
@@ -443,84 +443,230 @@ function DisneyCruiseAdultsWithoutKids() {
                 </div>
             </section>
 
-            {/* ═══════════════ ADULT-ONLY AREAS BENTO GRID ═══════════════ */}
-            <section style={{ padding: 'clamp(60px, 10vw, 100px) 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif', overflow: 'hidden' }}>
+            {/* ═══════════════ ADULT-ONLY EXPERIENCES: RESPONSIVE LEFT-ALIGNED MOSAIC ═══════════════ */}
+            <section style={{
+                padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)',
+                backgroundColor: '#0a1120',
+                fontFamily: 'sans-serif',
+                overflow: 'hidden'
+            }}>
                 <style>{`
-          .dis-bento-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 15px; width: 100%; max-width: 1200px; margin: 0 auto; }
-          .dis-bento-item { position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); background-color: #1e293b; }
-          .dis-bento-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
-          .dis-bento-item:hover .dis-bento-img { transform: scale(1.1); }
-          .dis-bento-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; color: #ffffff; opacity: 0; transition: opacity 0.4s ease; }
-          .dis-bento-item:hover .dis-bento-overlay { opacity: 1; }
-          .dis-overlay-title { font-size: 14px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #3b82f6; }
-          @media (max-width: 1024px) {
-            .dis-bento-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
-            .dis-item-large { grid-column: span 2; grid-row: span 2; }
-            .dis-item-wide { grid-column: span 2; grid-row: span 1; }
-            .dis-item-standard { grid-column: span 1; grid-row: span 1; }
-          }
-          @media (max-width: 600px) {
-            .dis-bento-grid { grid-template-columns: 1fr; grid-auto-rows: 250px; }
-            .dis-bento-item { grid-column: span 1 !important; grid-row: span 1 !important; }
-          }
-        `}</style>
+        .dis-modern-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 420px; 
+            gap: 24px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
 
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
-                            Exclusive Spaces
-                        </span>
-                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em' }}>
-                            Adult-Only Areas on Disney Cruise Ships
-                        </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '750px', margin: '25px auto 0' }}>
-                            One of the biggest misconceptions about Disney cruises is that adults are surrounded by children everywhere. Disney intentionally designed its ships with numerous adults-only areas.
-                        </p>
+        .dis-modern-item {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            background-color: #000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .dis-modern-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s ease;
+        }
+
+        /* Portrait positioning for specific images */
+        .dis-img-characters { object-position: top center !important; }
+        .dis-img-safari { object-position: center center; }
+
+        .dis-modern-overlay {
+            position: absolute;
+            inset: 0;
+            /* Gradient deepens at the bottom left for maximum text contrast */
+            background: linear-gradient(to top, 
+                rgba(10, 17, 32, 1) 0%,      
+                rgba(10, 17, 32, 0.85) 30%,   
+                rgba(10, 17, 32, 0.2) 60%,    
+                transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start; /* Ensures all content starts from the left */
+            padding: clamp(24px, 5vw, 45px) clamp(20px, 4vw, 35px);
+            color: #ffffff;
+            z-index: 2;
+            text-align: left; /* Explicit left alignment */
+        }
+
+        @media (hover: hover) {
+            .dis-modern-item:hover .dis-modern-img {
+                transform: scale(1.08);
+                filter: brightness(0.7);
+            }
+        }
+
+        .dis-modern-tag {
+            font-size: clamp(10px, 2vw, 11px);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #60a5fa;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            width: 100%; /* Ensures alignment across full width */
+        }
+
+        .dis-modern-title {
+            font-size: clamp(20px, 3vw, 24px);
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            line-height: 1.2;
+            color: #ffffff;
+            text-align: left;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
+            width: 100%;
+        }
+
+        .dis-modern-desc {
+            font-size: clamp(14px, 2vw, 15px);
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 400;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px; /* Prevents text from stretching too far on wide cards */
+        }
+
+        /* TABLET: 2 Columns */
+        @media (max-width: 1024px) {
+            .dis-modern-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                grid-auto-rows: 380px;
+            }
+        }
+
+        /* MOBILE: 1 Column */
+        @media (max-width: 650px) {
+            .dis-modern-grid { 
+                grid-template-columns: 1fr; 
+                grid-auto-rows: 340px; 
+                gap: 16px;
+            }
+            .dis-modern-overlay {
+                padding: 30px 20px;
+            }
+            .dis-modern-title {
+                text-align: left !important;
+            }
+            .dis-modern-desc {
+                max-width: 100%; /* Allows full width on mobile */
+            }
+        }
+
+        /* SMALL MOBILE */
+        @media (max-width: 380px) {
+            .dis-modern-grid { grid-auto-rows: 310px; }
+            .dis-modern-title { font-size: 19px; }
+        }
+    `}</style>
+
+                {/* Section Header (Centered as requested) */}
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(50px, 8vw, 80px)' }}>
+                    <span style={{
+                        color: '#3b82f6',
+                        fontWeight: '800',
+                        fontSize: 'clamp(11px, 2vw, 13px)',
+                        textTransform: 'uppercase',
+                        letterSpacing: '5px',
+                        display: 'block',
+                        marginBottom: '12px'
+                    }}>
+                        Exclusive Experiences
+                    </span>
+                    <h2 style={{
+                        fontSize: 'clamp(30px, 5vw, 48px)',
+                        color: '#ffffff',
+                        fontWeight: '800',
+                        marginBottom: '20px',
+                        letterSpacing: '-0.02em',
+                        lineHeight: 1.15
+                    }}>
+                        The Sophisticated Side of Disney
+                    </h2>
+                    <div style={{
+                        width: '60px',
+                        height: '4px',
+                        backgroundColor: '#3b82f6',
+                        margin: '0 auto',
+                        borderRadius: '10px'
+                    }}></div>
+                </div>
+
+                <div className="dis-modern-grid">
+
+                    {/* 1. SEASONAL STORYTELLING */}
+                    <div className="dis-modern-item">
+                        <img src={SeasonalCharacters} alt="Seasonal Events" className="dis-modern-img dis-img-characters" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Immersive</span>
+                            <h3 className="dis-modern-title">Seasonal Storytelling</h3>
+                            <p className="dis-modern-desc">Exclusive holiday themed cruises featuring sophisticated parties and immersive magic.</p>
+                        </div>
                     </div>
 
-                    <div className="dis-bento-grid">
-                        <div className="dis-bento-item dis-item-large" style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
-                            <img src='' alt="Quiet Cove Pool" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Quiet Cove Pool</span>
-                                <p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Reserved exclusively for adults with relaxing atmosphere, comfortable loungers, poolside service, hot tubs, and peaceful sun decks.</p>
-                            </div>
-                        </div>
-                        <div className="dis-bento-item dis-item-standard">
-                            <img src='' alt="Adult-Only Lounges" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Nightlife Districts</span>
-                                <p style={{ margin: '5px 0 0', fontSize: '13px', color: '#cbd5e1' }}>Cocktail lounges, piano bars, wine bars, and nightclubs designed for adults.</p>
-                            </div>
-                        </div>
-                        <div className="dis-bento-item dis-item-standard">
-                            <img src='' alt="Senses Spa" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Senses Spa</span>
-                                <p style={{ margin: '5px 0 0', fontSize: '13px', color: '#cbd5e1' }}>Massages, couples treatments, thermal suites, and wellness therapies.</p>
-                            </div>
-                        </div>
-                        <div className="dis-bento-item dis-item-standard">
-                            <img src='' alt="Palo Restaurant" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Palo Dining</span>
-                            </div>
-                        </div>
-                        <div className="dis-bento-item dis-item-standard">
-                            <img src='' alt="Remy Restaurant" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Remy Fine Dining</span>
-                            </div>
-                        </div>
-                        <div className="dis-bento-item dis-item-wide" style={{ gridColumn: 'span 4', gridRow: 'span 1' }}>
-                            <img src='' alt="Adult Deck Areas" className="dis-bento-img" />
-                            <div className="dis-bento-overlay">
-                                <span className="dis-overlay-title">Adult-Only Retreats</span>
-                                <p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Many adult guests spend entire sea days enjoying Quiet Cove and the surrounding adults-only spaces.</p>
-                            </div>
+                    {/* 2. NIGHTLIFE DISTRICTS */}
+                    <div className="dis-modern-item">
+                        <img src={HavingFunNight} alt="Nightlife" className="dis-modern-img" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Social</span>
+                            <h3 className="dis-modern-title">Nightlife Districts</h3>
+                            <p className="dis-modern-desc">Sophisticated lounges and cocktail bars designed for adults to relax and connect.</p>
                         </div>
                     </div>
+
+                    {/* 3. QUIET SANCTUARIES */}
+                    <div className="dis-modern-item">
+                        <img src={QuietSanctuaries} alt="Retreats" className="dis-modern-img" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Relaxation</span>
+                            <h3 className="dis-modern-title">Quiet Sanctuaries</h3>
+                            <p className="dis-modern-desc">Dedicated adult-exclusive pool decks and serene escapes from the family zones.</p>
+                        </div>
+                    </div>
+
+                    {/* 4. KILIMANJARO SAFARIS */}
+                    <div className="dis-modern-item">
+                        <img src={KilimanjaroSafaris} alt="Safari" className="dis-modern-img dis-img-safari" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Exploration</span>
+                            <h3 className="dis-modern-title">Kilimanjaro Safaris</h3>
+                            <p className="dis-modern-desc">World-class access to exotic wildlife and nature excursions across the globe.</p>
+                        </div>
+                    </div>
+
+                    {/* 5. PREMIUM THRILLS */}
+                    <div className="dis-modern-item">
+                        <img src={WaterCoaster} alt="Thrills" className="dis-modern-img" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Adventure</span>
+                            <h3 className="dis-modern-title">Premium Thrills</h3>
+                            <p className="dis-modern-desc">High-tech water coasters that combine storytelling with unmatched ocean views.</p>
+                        </div>
+                    </div>
+
+                    {/* 6. INTERNATIONAL FLOWER GARDEN */}
+                    <div className="dis-modern-item">
+                        <img src={InternationalFlowerGarden} alt="Artistry" className="dis-modern-img" />
+                        <div className="dis-modern-overlay">
+                            <span className="dis-modern-tag">Design</span>
+                            <h3 className="dis-modern-title">Flower Garden</h3>
+                            <p className="dis-modern-desc">Appreciate the horticulture and artistry that make Disney vessels floating masterpieces.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -627,14 +773,14 @@ function DisneyCruiseAdultsWithoutKids() {
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '50px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
-                            World-Class Entertainment
+                            A New Era of Magic
                         </span>
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-                            Disney Entertainment Isn't Just for Kids
+                            Define Your Own Disney Adventure
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>
-                            Disney is known for entertainment, but adults often become some of the biggest fans onboard. From Broadway-style productions and live music to first-run movies and deck parties, the entertainment quality rivals major theater performances.
+                            Experience 100 years of classic Disney storytelling reimagined for the sea. From the heroism of Marvel to the wonder of Pixar, the Disney Adventure offers a sophisticated yet thrilling escape where "adventure" is defined by world-class entertainment and legendary service.
                         </p>
                     </div>
 
@@ -642,8 +788,8 @@ function DisneyCruiseAdultsWithoutKids() {
                         <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube-nocookie.com/embed/"
-                            title="Disney Cruise Line Entertainment"
+                            src="https://www.youtube.com/embed/543xUxaIGYY"
+                            title="Disney Adventure Reveal"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -653,9 +799,9 @@ function DisneyCruiseAdultsWithoutKids() {
                     {/* Entertainment Types Grid */}
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(3, 1fr)', gap: '20px', marginTop: '40px' }}>
                         {[
-                            { title: "Broadway-Style Productions", desc: "Stage productions that rival major theater performances.", icon: <Theater size={22} /> },
-                            { title: "Live Music Venues", desc: "Jazz, piano performances, acoustic sets, and dance music.", icon: <Music size={22} /> },
-                            { title: "First-Run Movies", desc: "Disney, Pixar, Marvel, and Star Wars films in onboard theaters.", icon: <Film size={22} /> }
+                            { title: "Epic Marvel Heroism", desc: "Step into the MCU with high-tech attractions and character encounters.", icon: <Star size={22} /> },
+                            { title: "Pixar & Beyond", desc: "Whimsical experiences that bring your favorite Toy Story and Coco moments to life.", icon: <Sparkles size={22} /> },
+                            { title: "100 Years of Stories", desc: "A celebration of a century of magic, from Steamboat Willie to Moana.", icon: <Theater size={22} /> }
                         ].map((item, i) => (
                             <div key={i} style={{ padding: '24px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.08)', textAlign: 'center' }}>
                                 <div style={{ color: '#3b82f6', marginBottom: '14px', display: 'flex', justifyContent: 'center' }}>{item.icon}</div>
@@ -675,14 +821,14 @@ function DisneyCruiseAdultsWithoutKids() {
           .dis-island-panel img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease; filter: brightness(0.65); }
           .dis-island-panel:hover img { transform: scale(1.15); filter: brightness(0.85); }
           .dis-island-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 28, 46, 0.98) 0%, rgba(15, 28, 46, 0.75) 35%, rgba(15, 28, 46, 0.3) 55%, transparent 75%); display: flex; flex-direction: column; justify-content: flex-end; padding: 40px 30px; color: #ffffff; z-index: 2; }
-          .dis-island-overlay h3 { font-size: 26px; font-weight: 800; margin: 0 0 10px; color: #ffffff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
+          .dis-island-overlay h3 { font-size: 26px; font-weight: 800; margin: 0 0 10px; color: #ffffff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); text-align: left !important;}
           .dis-island-overlay p { font-size: 15px; color: #cbd5e1; margin: 0; line-height: 1.6; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); }
           .dis-island-overlay .dis-island-tag { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #60a5fa; margin-bottom: 10px; }
           @media (max-width: 768px) { .dis-island-strip { grid-template-columns: 1fr; } .dis-island-panel { min-height: 300px; } }
         `}</style>
                 <div className="dis-island-strip">
                     <div className="dis-island-panel">
-                        <img src='' alt="Castaway Cay" loading="lazy" />
+                        <img src={CastawayCay} alt="Castaway Cay" loading="lazy" />
                         <div className="dis-island-overlay">
                             <span className="dis-island-tag">Private Island</span>
                             <h3>Castaway Cay</h3>
@@ -690,7 +836,7 @@ function DisneyCruiseAdultsWithoutKids() {
                         </div>
                     </div>
                     <div className="dis-island-panel">
-                        <img src='' alt="Lookout Cay at Lighthouse Point" loading="lazy" />
+                        <img src={DisneyLookout} alt="Lookout Cay at Lighthouse Point" loading="lazy" />
                         <div className="dis-island-overlay">
                             <span className="dis-island-tag">New Destination</span>
                             <h3>Lookout Cay at Lighthouse Point</h3>
@@ -963,7 +1109,7 @@ function DisneyCruiseAdultsWithoutKids() {
                             Setting The Record Straight
                         </span>
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: "#274472", fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em' }}>
-                            Common Misconceptions About Disney Cruises for Adults
+                            Common Misconceptions About <br /> Disney Cruises for Adults
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
@@ -1003,22 +1149,22 @@ function DisneyCruiseAdultsWithoutKids() {
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '50px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
-                            Ship Tour
+                            Blockbuster Summer
                         </span>
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-                            Explore the Disney Ships
+                            From the Big Screen to the Big Blue
                         </h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>
-                            Take a closer look at the adult-focused spaces, dining venues, and design details that make Disney ships feel surprisingly sophisticated.
+                            Whether you're traveling to a galaxy far, far away or sailing across the ocean with Moana, Disney Cruise Line brings the blockbuster magic of the summer to the high seas. Discover how your favorite stories from Star Wars, Toy Story, and Marvel become immersive shipboard realities.
                         </p>
                     </div>
                     <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(15, 28, 46, 0.15)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
                         <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube-nocookie.com/embed/"
-                            title="Disney Cruise Line Ship Tour"
+                            src="https://www.youtube.com/embed/fkp938cwBNk"
+                            title="Disney Blockbuster Summer"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -1051,7 +1197,7 @@ function DisneyCruiseAdultsWithoutKids() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <img src='' alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                                <img src={profileAH} alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1157,7 +1303,7 @@ function DisneyCruiseAdultsWithoutKids() {
                 <div className="medi-cta-content-relative">
                     <div className="medi-cta-inner-wrapper">
                         <h2 className="medi-cta-heading-white">
-                            Ready To Plan Your Adults-Only Disney Cruise?
+                            Ready To Plan Your Adults-Only <br /> Disney Cruise?
                         </h2>
                         <div className="medi-cta-separator-white"></div>
 
