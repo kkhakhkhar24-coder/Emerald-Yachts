@@ -417,6 +417,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Disney Cruise for Adults Without Kids</NavLink>
+
+              <NavLink
+                to="/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Luxury Travelers Get Wrong About Disney Cruise Line</NavLink>
             </div>
           </div>
         </div>
@@ -844,6 +851,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Disney Cruise for Adults Without Kids</NavLink>
+
+               <NavLink
+                to="/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Luxury Travelers Get Wrong About Disney Cruise Line</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

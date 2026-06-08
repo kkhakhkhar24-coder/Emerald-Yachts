@@ -65,6 +65,7 @@ import HXExpeditionsVsSilverseaExpeditions from "./pages/HXExpeditionsVsSilverse
 import BestHXExpeditions from "./pages/Besthxexpeditions/Besthxexpeditions";
 import Hxexpeditionsships from "./pages/Hxexpeditionsships/Hxexpeditionsships";
 import DisneyCruiseAdultsWithoutKids from "./pages/DisneyCruiseAdultsWithoutKids/DisneyCruiseAdultsWithoutKids";
+import Disneyluxurycruise from "./pages/DisneyLuxuryCruise/DisneyLuxuryCruise";
 
 
 function App() {
@@ -330,6 +331,11 @@ function App() {
           <Route
             path="/disney-cruise-for-adults-without-kids"
             element={<DisneyCruiseAdultsWithoutKids />}
+          />
+
+          <Route
+            path="/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+            element={<Disneyluxurycruise />}
           />
         </Routes>
       </BrowserRouter>
