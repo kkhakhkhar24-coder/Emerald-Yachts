@@ -1,14 +1,11 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone,
+    Ship, Star, Clock, Users, CheckCircle,
+    Sparkles, Anchor, Gem, Crown, Phone,
     Globe, Heart, Utensils, Award,
     CircleDollarSign, GraduationCap, Mic, FileText,
-    Music, Moon, Minus, Sun, X, Wine, Castle, Film, Theater, Waves,
-    Shield, CheckSquare, XCircle,
-    Check,
-    Info
+    Sun, X, Wine, Castle, Theater, Waves,
+    Shield, CheckSquare, XCircle, Check, Info
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -110,16 +107,51 @@ function DisneyCruiseWorthMoney() {
             {/* ═══════════════ HERO SECTION ═══════════════ */}
             <section className="medi-hero-section">
                 {mediHeroImages.map((img, idx) => (
-                    <div key={idx} className={`medi-hero-background ${mediCurrentHero === idx ? 'medi-active' : ''}`} style={{ backgroundImage: `url(${img})` }} />
+                    <div
+                        key={idx}
+                        className={`medi-hero-background ${mediCurrentHero === idx ? 'medi-active' : ''}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+
+                    {/* Eyebrow Tag: Matched to the reference page's premium tracking */}
+                    <div className="medi-hero-eyebrow-tag" style={{
+                        fontSize: '13px',
+                        fontWeight: '700',
+                        letterSpacing: '0.25em', // Matches the 'Beyond the Family' badge style
+                        textTransform: 'uppercase',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px'
+                    }}>
                         <CircleDollarSign size={16} />
                         <span>Honest Value Guide for Families & Adults</span>
                     </div>
-                    <h1 className="medi-hero-main-title">Is Disney Cruise Line<br />Worth the Money?</h1>
-                    <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(16px, 2.5vw, 20px)', maxWidth: '700px', margin: '20px auto 0', lineHeight: '1.6', textAlign: 'center' }}>
+
+                    {/* Main Title: Matched to the reference page's "Sophisticated Side" header style */}
+                    <h1 className="medi-hero-main-title" style={{
+                        fontSize: 'clamp(32px, 7vw, 64px)', // Aggressive responsive scale
+                        fontWeight: '800',                  // Extra Bold like the reference
+                        lineHeight: '1.1',                  // Tight leading for premium look
+                        letterSpacing: '-0.02em',           // Signature negative tracking
+                        margin: '20px 0 0',
+                        textShadow: '0 2px 15px rgba(0,0,0,0.3)'
+                    }}>
+                        Is Disney Cruise Line<br />Worth the Money?
+                    </h1>
+
+                    {/* Description: Matched exactly to the reference page para style */}
+                    <p style={{
+                        color: 'rgba(255,255,255,0.85)',
+                        fontSize: 'clamp(16px, 2.5vw, 20px)', // Direct font-size match
+                        maxWidth: '700px',
+                        margin: '24px auto 0',
+                        lineHeight: '1.6',                  // Standard reference line height
+                        textAlign: 'center',
+                        fontWeight: '400'
+                    }}>
                         A complete breakdown of pricing, inclusions, and value to help you decide if a Disney cruise is right for your budget.
                     </p>
                 </div>
@@ -489,187 +521,187 @@ function DisneyCruiseWorthMoney() {
             </section>
 
             {/* ═══════════════ THE VALUE AUDIT: WORTH IT VS NOT ═══════════════ */}
-<section style={{ 
-    padding: 'clamp(70px, 10vw, 110px) clamp(16px, 5vw, 40px)', 
-    backgroundColor: '#f1f5f9', // Light neutral background to make cards pop
-    fontFamily: 'sans-serif' 
-}}>
-    <div style={{ maxWidth: '1150px', margin: '0 auto' }}>
-        
-        {/* Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <span style={{ 
-                color: '#3b82f6', 
-                fontWeight: '800', 
-                fontSize: '12px', 
-                textTransform: 'uppercase', 
-                letterSpacing: '3px', 
-                display: 'block', 
-                marginBottom: '15px' 
+            <section style={{
+                padding: 'clamp(70px, 10vw, 110px) clamp(16px, 5vw, 40px)',
+                backgroundColor: '#f1f5f9', // Light neutral background to make cards pop
+                fontFamily: 'sans-serif'
             }}>
-                Planning Perspective
-            </span>
-            <h2 style={{ 
-                fontSize: 'clamp(28px, 4vw, 42px)', 
-                color: "", 
-                fontWeight: '800', 
-                letterSpacing: '-0.02em',
-                lineHeight: 1.2
-            }}>
-                Is a Disney Cruise the Right Investment?
-            </h2>
-            <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '25px auto' }}></div>
-        </div>
+                <div style={{ maxWidth: '1150px', margin: '0 auto' }}>
 
-        <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1fr', 
-            gap: '30px',
-            alignItems: 'stretch'
-        }}>
-            
-            {/* CARD 1: THE GOLD STANDARD (WORTH IT) */}
-            <div style={{ 
-                backgroundColor: '#ffffff', 
-                borderRadius: '30px', 
-                padding: 'clamp(30px, 5vw, 50px)', 
-                boxShadow: '0 20px 50px rgba(15, 28, 46, 0.08)',
-                border: '1px solid #e2e8f0',
-                position: 'relative',
-                overflow: 'hidden'
-            }}>
-                {/* Visual Accent */}
-                <div style={{ 
-                    position: 'absolute', 
-                    top: 0, 
-                    right: 0, 
-                    width: '120px', 
-                    height: '120px', 
-                    background: 'radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent)', 
-                    zIndex: 0 
-                }}></div>
-
-                <div style={{ position: 'relative', zIndex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '35px' }}>
-                        <div style={{ 
-                            width: '45px', 
-                            height: '45px', 
-                            borderRadius: '12px', 
-                            backgroundColor: '#eff6ff', 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            justifyContent: 'center',
-                            color: '#3b82f6'
+                    {/* Section Header */}
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{
+                            color: '#3b82f6',
+                            fontWeight: '800',
+                            fontSize: '12px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px',
+                            display: 'block',
+                            marginBottom: '15px'
                         }}>
-                            <CheckCircle size={24} />
-                        </div>
-                        <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>
-                            Absolutely Worth the Money
-                        </h3>
+                            Planning Perspective
+                        </span>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 4vw, 42px)',
+                            color: "",
+                            fontWeight: '800',
+                            letterSpacing: '-0.02em',
+                            lineHeight: 1.2
+                        }}>
+                            Is a Disney Cruise the Right Investment?
+                        </h2>
+                        <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '25px auto' }}></div>
                     </div>
 
-                    <p style={{ fontSize: '15px', color: '#64748b', marginBottom: '30px', lineHeight: '1.6' }}>
-                        Disney Cruise Line offers a specialized, high-tier experience that provides exceptional value for:
-                    </p>
-
-                    <div style={{ display: 'grid', gap: '16px' }}>
-                        {[
-                            "Disney fans & enthusiasts",
-                            "Families with young children",
-                            "Multi-generational travelers",
-                            "First-time cruisers",
-                            "Couples who enjoy Disney experiences",
-                            "Travelers prioritizing service & entertainment",
-                            "Guests seeking premium family vacations"
-                        ].map((item, i) => (
-                            <div key={i} style={{ 
-                                display: 'flex', 
-                                alignItems: 'center', 
-                                gap: '12px', 
-                                padding: '12px 18px', 
-                                backgroundColor: '#f8fafc', 
-                                borderRadius: '12px',
-                                border: '1px solid #f1f5f9'
-                            }}>
-                                <Check size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
-                                <span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{item}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* CARD 2: THE ALTERNATIVE AUDIT (NOT WORTH IT) */}
-            <div style={{ 
-                backgroundColor: '#0f1c2e', 
-                borderRadius: '30px', 
-                padding: 'clamp(30px, 5vw, 50px)', 
-                boxShadow: '0 25px 60px rgba(15, 28, 46, 0.2)',
-                color: '#ffffff',
-                display: 'flex',
-                flexDirection: 'column'
-            }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '35px' }}>
-                    <div style={{ 
-                        width: '45px', 
-                        height: '45px', 
-                        borderRadius: '12px', 
-                        backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        justifyContent: 'center',
-                        color: '#94a3b8'
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1fr',
+                        gap: '30px',
+                        alignItems: 'stretch'
                     }}>
-                        <Info size={24} />
-                    </div>
-                    <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>
-                        May Not Be the Best Value
-                    </h3>
-                </div>
 
-                <p style={{ fontSize: '15px', color: '#94a3b8', marginBottom: '30px', lineHeight: '1.6' }}>
-                    Disney focuses on immersive storytelling and family service. It may not be the ideal fit for travelers seeking:
-                </p>
-
-                <div style={{ display: 'grid', gap: '12px', flexGrow: 1 }}>
-                    {[
-                        "Onboard Casinos",
-                        "Large nightlife & club scenes",
-                        "Budget-focused vacations",
-                        "Strictly adults-only environments",
-                        "Party-focused cruise vibes",
-                        "Lowest possible cruise pricing"
-                    ].map((item, i) => (
-                        <div key={i} style={{ 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            gap: '12px', 
-                            padding: '10px 0', 
-                            borderBottom: '1px solid rgba(255,255,255,0.05)'
+                        {/* CARD 1: THE GOLD STANDARD (WORTH IT) */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '30px',
+                            padding: 'clamp(30px, 5vw, 50px)',
+                            boxShadow: '0 20px 50px rgba(15, 28, 46, 0.08)',
+                            border: '1px solid #e2e8f0',
+                            position: 'relative',
+                            overflow: 'hidden'
                         }}>
-                            <X size={16} style={{ color: '#64748b', flexShrink: 0 }} />
-                            <span style={{ fontSize: '15px', fontWeight: '500', color: '#cbd5e1' }}>{item}</span>
+                            {/* Visual Accent */}
+                            <div style={{
+                                position: 'absolute',
+                                top: 0,
+                                right: 0,
+                                width: '120px',
+                                height: '120px',
+                                background: 'radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent)',
+                                zIndex: 0
+                            }}></div>
+
+                            <div style={{ position: 'relative', zIndex: 1 }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '35px' }}>
+                                    <div style={{
+                                        width: '45px',
+                                        height: '45px',
+                                        borderRadius: '12px',
+                                        backgroundColor: '#eff6ff',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#3b82f6'
+                                    }}>
+                                        <CheckCircle size={24} />
+                                    </div>
+                                    <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: 0 }}>
+                                        Absolutely Worth the Money
+                                    </h3>
+                                </div>
+
+                                <p style={{ fontSize: '15px', color: '#64748b', marginBottom: '30px', lineHeight: '1.6' }}>
+                                    Disney Cruise Line offers a specialized, high-tier experience that provides exceptional value for:
+                                </p>
+
+                                <div style={{ display: 'grid', gap: '16px' }}>
+                                    {[
+                                        "Disney fans & enthusiasts",
+                                        "Families with young children",
+                                        "Multi-generational travelers",
+                                        "First-time cruisers",
+                                        "Couples who enjoy Disney experiences",
+                                        "Travelers prioritizing service & entertainment",
+                                        "Guests seeking premium family vacations"
+                                    ].map((item, i) => (
+                                        <div key={i} style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '12px',
+                                            padding: '12px 18px',
+                                            backgroundColor: '#f8fafc',
+                                            borderRadius: '12px',
+                                            border: '1px solid #f1f5f9'
+                                        }}>
+                                            <Check size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
+                                            <span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                    ))}
-                </div>
 
-                {/* Recommendation Box */}
-                <div style={{ 
-                    marginTop: '40px', 
-                    padding: '20px', 
-                    backgroundColor: 'rgba(59, 130, 246, 0.1)', 
-                    borderRadius: '15px', 
-                    borderLeft: '4px solid #3b82f6' 
-                }}>
-                    <p style={{ fontSize: '14px', lineHeight: '1.5', margin: 0, color: '#e2e8f0' }}>
-                        <strong>Expert Verdict:</strong> If these priorities are at the top of your list, other cruise lines like Virgin Voyages or Royal Caribbean may offer a better return on your investment.
-                    </p>
-                </div>
-            </div>
+                        {/* CARD 2: THE ALTERNATIVE AUDIT (NOT WORTH IT) */}
+                        <div style={{
+                            backgroundColor: '#0f1c2e',
+                            borderRadius: '30px',
+                            padding: 'clamp(30px, 5vw, 50px)',
+                            boxShadow: '0 25px 60px rgba(15, 28, 46, 0.2)',
+                            color: '#ffffff',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '35px' }}>
+                                <div style={{
+                                    width: '45px',
+                                    height: '45px',
+                                    borderRadius: '12px',
+                                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: '#94a3b8'
+                                }}>
+                                    <Info size={24} />
+                                </div>
+                                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>
+                                    May Not Be the Best Value
+                                </h3>
+                            </div>
 
-        </div>
-    </div>
-</section>
+                            <p style={{ fontSize: '15px', color: '#94a3b8', marginBottom: '30px', lineHeight: '1.6' }}>
+                                Disney focuses on immersive storytelling and family service. It may not be the ideal fit for travelers seeking:
+                            </p>
+
+                            <div style={{ display: 'grid', gap: '12px', flexGrow: 1 }}>
+                                {[
+                                    "Onboard Casinos",
+                                    "Large nightlife & club scenes",
+                                    "Budget-focused vacations",
+                                    "Strictly adults-only environments",
+                                    "Party-focused cruise vibes",
+                                    "Lowest possible cruise pricing"
+                                ].map((item, i) => (
+                                    <div key={i} style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                        padding: '10px 0',
+                                        borderBottom: '1px solid rgba(255,255,255,0.05)'
+                                    }}>
+                                        <X size={16} style={{ color: '#64748b', flexShrink: 0 }} />
+                                        <span style={{ fontSize: '15px', fontWeight: '500', color: '#cbd5e1' }}>{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Recommendation Box */}
+                            <div style={{
+                                marginTop: '40px',
+                                padding: '20px',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                borderRadius: '15px',
+                                borderLeft: '4px solid #3b82f6'
+                            }}>
+                                <p style={{ fontSize: '14px', lineHeight: '1.5', margin: 0, color: '#e2e8f0' }}>
+                                    <strong>Expert Verdict:</strong> If these priorities are at the top of your list, other cruise lines like Virgin Voyages or Royal Caribbean may offer a better return on your investment.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
             {/* ═══════════════ DISNEY VS ROYAL CARIBBEAN ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>

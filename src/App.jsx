@@ -68,6 +68,7 @@ import DisneyCruiseAdultsWithoutKids from "./pages/DisneyCruiseAdultsWithoutKids
 import Disneyluxurycruise from "./pages/Disneyluxurycruise/Disneyluxurycruise";
 import DisneyCruiseWorthMoney from "./pages/DisneyCruiseWorthMoney/DisneyCruiseWorthMoney";
 import DisneyvsRoyalCaribbean from "./pages/Disneyvsroyalcaribbean/Disneyvsroyalcaribbean";
+import DisneyConciergeWorthIt from "./pages/DisneyConciergeWorthIt/DisneyConciergeWorthIt";
 
 
 function App() {
@@ -345,9 +346,14 @@ function App() {
             element={<DisneyCruiseWorthMoney />}
           />
 
-           <Route
+          <Route
             path="/disney-cruise-vs-royal-caribbean"
             element={<DisneyvsRoyalCaribbean />}
+          />
+
+          <Route
+            path="/is-disney-concierge-worth-it"
+            element={<DisneyConciergeWorthIt />}
           />
         </Routes>
       </BrowserRouter>
