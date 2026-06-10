@@ -468,6 +468,36 @@ function DisneyVsRoyalCaribbean() {
                 </div>
             </section>
 
+            {/* ── VIDEO SECTION 1: THE DISNEY STANDARD OF MAGIC ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#ffffff', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#274472', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                            Immersive Storytelling
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            The Magic of Connection
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '800px', margin: '25px auto 0' }}>
+                            Disney Cruise Line is defined by "The Dream." Beyond the ships, it is the ability to step into beloved narratives where every deck party, character encounter, and fireworks display is choreographed to create lifelong family bonds. Experience the unique emotional ROI that consistently places Disney at the top of family guest satisfaction.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(39, 68, 114, 0.15)', border: '1px solid rgba(39, 68, 114, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/pGjDzfXoOg0"
+                            title="Disney Cruise Line Magic"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* ── EXCEL SECTION: FAMILY EXPERIENCE COMPARISON ── */}
             <section className="medi-excel-section">
                 <div className="medi-excel-coord coord-tl">FAMILY CRUISE COMPARISON // DISNEY VS ROYAL CARIBBEAN</div>
@@ -686,6 +716,36 @@ function DisneyVsRoyalCaribbean() {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* ── VIDEO SECTION 2: THE SCALE OF INNOVATION ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#f8fafc', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                            Thrill & Adventure
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            Redefining the Mega-Ship Experience
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '800px', margin: '25px auto 0' }}>
+                            Royal Caribbean is the global leader in cruise innovation. From the "Icon" and "Oasis" classes to the upcoming "Legend of the Seas," discover a world where high-tech water parks, surf simulators, and Broadway-caliber aqua shows meet global destinations. This is the ultimate choice for families seeking an active, high-energy vacation.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(15, 28, 46, 0.12)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/u9W81GtRoa8"
+                            title="Royal Caribbean Innovation"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>

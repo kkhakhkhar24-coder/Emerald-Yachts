@@ -278,6 +278,36 @@ function DisneyCruiseWorthMoney() {
                 </div>
             </section>
 
+            {/* ── VIDEO SECTION 1: THE EMOTIONAL VALUE ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.25em', display: 'block', marginBottom: '15px' }}>
+                            The Intangible ROI
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 45px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.1' }}>
+                            Measuring Value in Memories
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '30px', lineHeight: '1.8', maxWidth: '800px', margin: '30px auto 0' }}>
+                            Is a Disney Cruise worth it? For many, the answer lies in the "Emotional Return on Investment." Watch as the Mowry siblings experience the pure, unscripted joy that Disney specializes in. This standard of entertainment and family connection is a hallmark of the Disney brand—ensuring that every dollar spent translates into a lifelong memory.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(15, 28, 46, 0.15)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/yw922nyPxZs"
+                            title="Disney Emotional Value"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* ═══════════════ WHERE THE EXTRA MONEY GOES: PREMIUM REDESIGN ═══════════════ */}
             <section style={{
                 padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)',
@@ -699,6 +729,36 @@ function DisneyCruiseWorthMoney() {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* ── VIDEO SECTION 2: THE QUALITY BENCHMARK ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#f8fafc', fontFamily: 'sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.25em', display: 'block', marginBottom: '15px' }}>
+                            The Quality Benchmark
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 45px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.1' }}>
+                            World-Class Design & Sophistication
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '30px', lineHeight: '1.8', maxWidth: '800px', margin: '30px auto 0' }}>
+                            When you pay a premium for Disney, you are paying for an industry-leading standard of design, theming, and luxury. Take a tour of the sophisticated accommodations and attention to detail that Disney provides across its properties. This same commitment to excellence—from high-end suites to immersive dining—is exactly what justifies the premium price tag of a Disney Cruise.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(15, 28, 46, 0.12)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/YK8ONY07TKE"
+                            title="Disney Luxury Standards"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>

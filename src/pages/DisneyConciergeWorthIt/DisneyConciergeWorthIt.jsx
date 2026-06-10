@@ -417,6 +417,36 @@ function DisneyConciergeWorthIt() {
                 </div>
             </section>
 
+            {/* ── VIDEO SECTION 1: THE DISNEY EXPERIENCE ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#ffffff', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#274472', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.25em', display: 'block', marginBottom: '15px' }}>
+                            The Narrative of Magic
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 45px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.1' }}>
+                            Beyond the Ship: A Living Story
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '30px', lineHeight: '1.8', maxWidth: '850px', margin: '30px auto 0' }}>
+                            While both lines sail the same oceans, Disney Cruise Line specializes in immersive storytelling that begins the moment you step into the atrium. From character encounters that feel like personal moments to Broadway-caliber stage shows and fireworks at sea, witness how Disney creates an emotional connection that defines the "premium" family vacation.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(39, 68, 114, 0.15)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/VYIy0rn8ZqY"
+                            title="Disney Cruise Line Magic"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* ═══════════════ PRIORITY ACTIVITY BOOKING: LUXURY REDESIGN ═══════════════ */}
             <section className="medi-priority-booking-section" style={{
                 padding: 'clamp(60px, 10vw, 110px) clamp(16px, 5vw, 40px)',
@@ -1133,17 +1163,68 @@ function DisneyConciergeWorthIt() {
                 </div>
             </section>
 
-            {/* ═══════════════ VIDEO SECTION ═══════════════ */}
-            <section style={{ padding: '80px 20px', backgroundColor: '#f8fafc', fontFamily: 'sans-serif' }}>
+            {/* ═══════════════ VIDEO SECTION: SEE THE DIFFERENCE ═══════════════ */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#f8fafc', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>Concierge Experience</span>
-                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px' }}>See the Concierge Difference</h2>
+
+                        {/* Eyebrow: Luxury Tracking match */}
+                        <span style={{
+                            color: '#274472',
+                            fontWeight: '700',
+                            fontSize: '13px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.25em',
+                            display: 'block',
+                            marginBottom: '15px'
+                        }}>
+                            The Concierge Advantage
+                        </span>
+
+                        {/* Heading: Extra-Bold and Tight Spacing match */}
+                        <h2 style={{
+                            fontSize: 'clamp(30px, 5vw, 45px)',
+                            color: '#274472',
+                            fontWeight: '800',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.1'
+                        }}>
+                            See the Concierge Difference
+                        </h2>
+
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>Take a tour of the exclusive spaces, suites, and services that define the Disney Concierge experience.</p>
+
+                        <p style={{
+                            color: '#475569',
+                            fontSize: '18px',
+                            marginTop: '30px',
+                            lineHeight: '1.8',
+                            maxWidth: '820px',
+                            margin: '30px auto 0'
+                        }}>
+                            Take a tour of the exclusive spaces, signature suites, and personalized services that define the Disney Concierge experience. Witness the attention to detail and luxury standards that justify the premium for travelers seeking a seamless and exclusive vacation.
+                        </p>
                     </div>
-                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(15, 28, 46, 0.15)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
-                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/" title="Disney Concierge Experience" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+                    {/* Iframe with Fixed ID: S265L-CqK_4 (Cruise Concierge Tour) */}
+                    <div style={{
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        boxShadow: '0 30px 60px rgba(39, 68, 114, 0.12)',
+                        border: '1px solid #e2e8f0',
+                        aspectRatio: '16/9',
+                        backgroundColor: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/h_CXjOBfhU4"
+                            title="Disney Concierge Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>

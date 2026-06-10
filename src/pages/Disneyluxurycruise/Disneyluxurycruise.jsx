@@ -8,7 +8,7 @@ import Navbar from '../../components/Navbar/Navbar'
 
 // ── SECTION IMAGES (replace with your actual imports) ────────────────────────
 // import disneyShipImg      from '../../assets/DisneyLuxuryCruise/disney-ship.webp'
-import adultDiningImg     from '../../assets/DisneyLuxuryCruise/adult-dining.png'
+import adultDiningImg from '../../assets/DisneyLuxuryCruise/adult-dining.png'
 // import conciergeImg       from '../../assets/DisneyLuxuryCruise/concierge-suite.webp'
 // import multigenerImg      from '../../assets/DisneyLuxuryCruise/multigenerational.webp'
 // import entertainmentImg   from '../../assets/DisneyLuxuryCruise/entertainment.webp'
@@ -16,7 +16,7 @@ import adultDiningImg     from '../../assets/DisneyLuxuryCruise/adult-dining.png
 // import mediterImg         from '../../assets/DisneyLuxuryCruise/mediterranean.webp'
 // import northernEuropeImg  from '../../assets/DisneyLuxuryCruise/northern-europe.webp'
 // import caribbeanImg       from '../../assets/DisneyLuxuryCruise/caribbean.webp'
-import Profile_AH         from '../../assets/Media (2).jpg'
+import Profile_AH from '../../assets/Media (2).jpg'
 import Profile_Picture_AH from '../../assets/Media (1).jpg'
 
 import {
@@ -197,27 +197,27 @@ const disneyItineraries = [
 ]
 
 const comparisonRows = [
-    { category: 'Family Focus',           disney: 'Excellent',       luxury: 'Limited',  disneyTop: false },
-    { category: 'Children\'s Programs',   disney: 'Industry Leading',luxury: 'Minimal',  disneyTop: true  },
-    { category: 'Multigenerational Travel',disney: 'Exceptional',    luxury: 'Moderate', disneyTop: true  },
-    { category: 'Adult-Only Spaces',      disney: 'Good',            luxury: 'Excellent',disneyTop: false },
-    { category: 'Entertainment',          disney: 'Outstanding',     luxury: 'Moderate', disneyTop: true  },
-    { category: 'Cultural Enrichment',    disney: 'Moderate',        luxury: 'Strong',   disneyTop: false },
-    { category: 'Service',                disney: 'Excellent',       luxury: 'Excellent',disneyTop: false },
-    { category: 'Family Luxury',          disney: 'Exceptional',     luxury: 'Varies',   disneyTop: true  },
-    { category: 'Educational Experiences',disney: 'Moderate',        luxury: 'Strong',   disneyTop: false },
-    { category: 'Value for Families',     disney: 'Excellent',       luxury: 'Moderate', disneyTop: true  }
+    { category: 'Family Focus', disney: 'Excellent', luxury: 'Limited', disneyTop: false },
+    { category: 'Children\'s Programs', disney: 'Industry Leading', luxury: 'Minimal', disneyTop: true },
+    { category: 'Multigenerational Travel', disney: 'Exceptional', luxury: 'Moderate', disneyTop: true },
+    { category: 'Adult-Only Spaces', disney: 'Good', luxury: 'Excellent', disneyTop: false },
+    { category: 'Entertainment', disney: 'Outstanding', luxury: 'Moderate', disneyTop: true },
+    { category: 'Cultural Enrichment', disney: 'Moderate', luxury: 'Strong', disneyTop: false },
+    { category: 'Service', disney: 'Excellent', luxury: 'Excellent', disneyTop: false },
+    { category: 'Family Luxury', disney: 'Exceptional', luxury: 'Varies', disneyTop: true },
+    { category: 'Educational Experiences', disney: 'Moderate', luxury: 'Strong', disneyTop: false },
+    { category: 'Value for Families', disney: 'Excellent', luxury: 'Moderate', disneyTop: true }
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  COMPONENT
 // ─────────────────────────────────────────────────────────────────────────────
 function DisneyLuxuryCruise() {
-    const [currentHero, setCurrentHero]           = useState(0)
-    const [activeFaq, setActiveFaq]               = useState(null)
+    const [currentHero, setCurrentHero] = useState(0)
+    const [activeFaq, setActiveFaq] = useState(null)
     const [selectedItinerary, setSelectedItinerary] = useState(0)
-    const [activeMistake, setActiveMistake]       = useState(0)
-    const [isSliderHovered, setIsSliderHovered]   = useState(false)
+    const [activeMistake, setActiveMistake] = useState(0)
+    const [isSliderHovered, setIsSliderHovered] = useState(false)
     const [activeOnboardTab, setActiveOnboardTab] = useState(0)
 
     const heroImages = []
@@ -239,9 +239,9 @@ function DisneyLuxuryCruise() {
         <>
             <Helmet>
                 <title>What Luxury Travelers Get Wrong About Disney Cruise Line | Luxury Cruise Insights</title>
-                <meta name="title"       content="Why Luxury Travelers Should Reconsider Disney Cruise Line" />
+                <meta name="title" content="Why Luxury Travelers Should Reconsider Disney Cruise Line" />
                 <meta name="description" content="Many luxury travelers overlook Disney Cruise Line because of its family-focused reputation. Discover what affluent travelers often misunderstand about Disney's service, accommodations, dining, destinations, and premium experiences." />
-                <meta name="keywords"    content="What Luxury Travelers Get Wrong About Disney Cruise Line, Disney Cruise Luxury Experience, Luxury Disney Cruise, Disney Cruise Concierge Level, Premium Family Cruises" />
+                <meta name="keywords" content="What Luxury Travelers Get Wrong About Disney Cruise Line, Disney Cruise Luxury Experience, Luxury Disney Cruise, Disney Cruise Concierge Level, Premium Family Cruises" />
                 <script type="application/ld+json">{JSON.stringify(disneySchemaData)}</script>
             </Helmet>
 
@@ -255,7 +255,7 @@ function DisneyLuxuryCruise() {
                     <div
                         key={idx}
                         className={`medi-hero-background ${currentHero === idx ? 'medi-active' : ''}`}
-                        // style={{ backgroundImage: `url(${img})` }}
+                    // style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
@@ -307,11 +307,11 @@ function DisneyLuxuryCruise() {
                                 </p>
                                 <div className="medi-immersion-cards-grid">
                                     {[
-                                        { icon: Star,         label: 'Exceptional service' },
-                                        { icon: Award,        label: 'Outstanding guest satisfaction' },
-                                        { icon: Crown,        label: 'Premium accommodations' },
-                                        { icon: Sparkles,     label: 'Industry-leading entertainment' },
-                                        { icon: Heart,        label: 'Family-focused luxury' },
+                                        { icon: Star, label: 'Exceptional service' },
+                                        { icon: Award, label: 'Outstanding guest satisfaction' },
+                                        { icon: Crown, label: 'Premium accommodations' },
+                                        { icon: Sparkles, label: 'Industry-leading entertainment' },
+                                        { icon: Heart, label: 'Family-focused luxury' },
                                     ].map(({ icon: Icon, label }, i) => (
                                         <div key={i} className="medi-immersion-card-item">
                                             <div className="medi-immersion-icon-box"><Icon size={20} /></div>
@@ -340,7 +340,7 @@ function DisneyLuxuryCruise() {
                                     With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year, Angela Hughes offers unmatched insight into premium family cruising.
                                 </p>
 
-                             
+
 
                                 <div className="medi-premium-expert-quote-box">
                                     <span className="medi-quote-mark">"</span>
@@ -361,7 +361,8 @@ function DisneyLuxuryCruise() {
                    Uses medi-luxury-definition-section pattern
             ══════════════════════════════════════════════════════ */}
             <section className="medi-adults-only-section">
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                     .medi-adults-only-section {
                         background: #ffffff;
                         padding: 100px 24px;
@@ -521,7 +522,7 @@ function DisneyLuxuryCruise() {
                             <Users size={14} style={{ marginRight: '2px' }} />
                             <span>Mistake #2</span>
                         </div>
-                        
+
                         <h2 className="medi-adults-only-heading">Believing Disney Is Only for Children</h2>
 
                         <p className="medi-adults-only-paragraph">
@@ -595,9 +596,9 @@ function DisneyLuxuryCruise() {
                                 <ul className="medi-excel-list">
                                     {[
                                         { icon: Compass, text: 'Anticipate guest needs' },
-                                        { icon: Heart,   text: 'Personalize interactions' },
-                                        { icon: Sparkles,text: 'Create memorable moments' },
-                                        { icon: Star,    text: 'Deliver consistent hospitality' },
+                                        { icon: Heart, text: 'Personalize interactions' },
+                                        { icon: Sparkles, text: 'Create memorable moments' },
+                                        { icon: Star, text: 'Deliver consistent hospitality' },
                                     ].map(({ icon: Icon, text }, i) => (
                                         <li key={i} className="medi-excel-list-item">
                                             <div className="medi-excel-icon-wrapper"><Icon size={18} /></div>
@@ -612,10 +613,10 @@ function DisneyLuxuryCruise() {
                                 <h3 className="medi-excel-card-heading">For luxury travelers, this means:</h3>
                                 <ul className="medi-excel-list">
                                     {[
-                                        { icon: Award,       text: 'Hospitality that rivals premium cruise lines' },
-                                        { icon: Users,       text: 'Families return for the service as much as entertainment' },
+                                        { icon: Award, text: 'Hospitality that rivals premium cruise lines' },
+                                        { icon: Users, text: 'Families return for the service as much as entertainment' },
                                         { icon: CheckCircle, text: 'Expectations consistently exceeded' },
-                                        { icon: Crown,       text: 'Staff who remember names, preferences, and details' },
+                                        { icon: Crown, text: 'Staff who remember names, preferences, and details' },
                                     ].map(({ icon: Icon, text }, i) => (
                                         <li key={i} className="medi-excel-list-item">
                                             <div className="medi-excel-icon-wrapper"><Icon size={18} /></div>
@@ -641,7 +642,8 @@ function DisneyLuxuryCruise() {
                 5. MISTAKE #4 #5 #6 — TAB PANEL SECTION
             ══════════════════════════════════════════════════════ */}
             <section className="hx-onboard-section">
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                     .hx-onboard-section {
                         --navy-rgb: 39, 68, 114;
                         background: linear-gradient(180deg, var(--medi-bg-soft, #f0f4f8) 0%, #ffffff 100%);
@@ -876,9 +878,9 @@ function DisneyLuxuryCruise() {
 
                             <div className="hx-onboard-tabs">
                                 {[
-                                    { number: '01', title: 'Thinking Luxury = Adults-Only',           desc: 'Disney elevates the family experience' },
-                                    { number: '02', title: 'Overlooking Concierge Level',             desc: 'Premium Disney experiences for affluent families' },
-                                    { number: '03', title: 'Ignoring Multigenerational Strength',     desc: 'Disney\'s fastest-growing luxury segment' },
+                                    { number: '01', title: 'Thinking Luxury = Adults-Only', desc: 'Disney elevates the family experience' },
+                                    { number: '02', title: 'Overlooking Concierge Level', desc: 'Premium Disney experiences for affluent families' },
+                                    { number: '03', title: 'Ignoring Multigenerational Strength', desc: 'Disney\'s fastest-growing luxury segment' },
                                 ].map((tab, idx) => {
                                     const isActive = activeOnboardTab === idx
                                     return (
@@ -1020,6 +1022,36 @@ function DisneyLuxuryCruise() {
                 </div>
             </section>
 
+            {/* ── VIDEO SECTION 1: THE EMOTIONAL LUXURY OF CONNECTION ── */}
+            <section style={{ padding: '80px 24px', backgroundColor: '#ffffff', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#274472', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                            The Emotional ROI
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            Rediscovering the Sense of Wonder
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '800px', margin: '25px auto 0' }}>
+                            Luxury is often defined by the "unbuyable" moments. Watch as the Mowry siblings illustrate why Disney remains the leader in multigenerational travel. For affluent families, the true premium value of a Disney vacation isn't just the stateroom—it is the rare ability for adults to disconnect from the world and reconnect with their family through genuine, shared joy.
+                        </p>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(39, 68, 114, 0.15)', border: '1px solid rgba(39, 68, 114, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/GUgMMNmQ5XM"
+                            title="Disney Generational Connection"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
 
             {/* ══════════════════════════════════════════════════════
                 6. MISTAKE #7 — COMPARING TO WRONG CRUISE LINES
@@ -1151,10 +1183,10 @@ function DisneyLuxuryCruise() {
                                 <div className="medi-expertise-horizontal-strip">
                                     {[
                                         { title: 'Family luxury cruising', icon: Heart },
-                                        { title: 'Disney Cruise Line',     icon: Star },
-                                        { title: 'Luxury cruise lines',    icon: Crown },
-                                        { title: 'River cruising',         icon: Anchor },
-                                        { title: 'Premium global travel',  icon: Sparkles },
+                                        { title: 'Disney Cruise Line', icon: Star },
+                                        { title: 'Luxury cruise lines', icon: Crown },
+                                        { title: 'River cruising', icon: Anchor },
+                                        { title: 'Premium global travel', icon: Sparkles },
                                     ].map((item, idx) => {
                                         const IconComponent = item.icon
                                         return (
@@ -1256,7 +1288,8 @@ function DisneyLuxuryCruise() {
                 8. MISTAKE #9 — ENTERTAINMENT (THEATER SPOTLIGHT CUSTOM UI)
             ══════════════════════════════════════════════════════ */}
             <section className="medi-entertainment-section">
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                     .medi-entertainment-section {
                         background: linear-gradient(135deg, var(--medi-bg-dark, #0f1c2e) 0%, var(--medi-bg-dark2, #1c2f4a) 100%);
                         position: relative;
@@ -1460,7 +1493,7 @@ function DisneyLuxuryCruise() {
                         color: #f1f5f9;
                     }
                 ` }} />
-                
+
                 {/* Visual Glow Blobs using root colors */}
                 <div className="medi-ent-spotlight-one"></div>
                 <div className="medi-ent-spotlight-two"></div>
@@ -1477,7 +1510,7 @@ function DisneyLuxuryCruise() {
                         <p className="medi-entertainment-paragraph">
                             Luxury travelers sometimes dismiss entertainment as unimportant. Yet Disney's entertainment is consistently regarded as among the best at sea. Even travelers who aren't devoted Disney fans are often impressed by the quality.
                         </p>
-                        
+
                         <div className="medi-entertainment-quote-box">
                             <p className="medi-entertainment-quote-text">
                                 Professional performances rival major theater productions. Immersive storytelling is a hallmark of the Disney brand. This is entertainment that even non-Disney fans consistently praise.
@@ -1516,6 +1549,73 @@ function DisneyLuxuryCruise() {
                 </div>
             </section>
 
+            {/* ── VIDEO SECTION 2: THE SOPHISTICATION OF STORYTELLING ── */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#f8fafc', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+
+                        {/* Eyebrow: Matches the luxury tracking of the reference page */}
+                        <span style={{
+                            color: '#274472',
+                            fontWeight: '700',
+                            fontSize: '13px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.25em',
+                            display: 'block',
+                            marginBottom: '15px'
+                        }}>
+                            Technical Masterpieces
+                        </span>
+
+                        {/* Heading: Matches the extra-bold, tight-spaced luxury style */}
+                        <h2 style={{
+                            fontSize: 'clamp(30px, 5vw, 45px)',
+                            color: '#274472',
+                            fontWeight: '800',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.1'
+                        }}>
+                            Immersive Production Value
+                        </h2>
+
+                        {/* Accent Bar */}
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+
+                        <p style={{
+                            color: '#475569',
+                            fontSize: '18px',
+                            marginTop: '30px',
+                            lineHeight: '1.8',
+                            maxWidth: '820px',
+                            margin: '30px auto 0',
+                            fontWeight: '400'
+                        }}>
+                            A common mistake luxury travelers make is dismissing Disney entertainment as "just for kids." In reality, Disney utilizes "movie-set" quality engineering and cinematic production values that rival high-end theater. Witness the level of immersive detail and storytelling sophistication that carries over into every lounge, restaurant, and stage production aboard the Disney fleet.
+                        </p>
+                    </div>
+
+                    {/* Video Frame: Styled with a softer, sophisticated shadow for the light background */}
+                    <div style={{
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        boxShadow: '0 30px 60px rgba(39, 68, 114, 0.12)',
+                        border: '1px solid #e2e8f0',
+                        aspectRatio: '16/9',
+                        backgroundColor: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/R5ZxZmd-k-o"
+                            title="Disney Immersive Production"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
 
             {/* ══════════════════════════════════════════════════════
                 9. MISTAKE #10 — LUXURY IS PERSONAL
@@ -1699,12 +1799,12 @@ function DisneyLuxuryCruise() {
                             <h3 className="medi-audience-column-heading">Best Choice If You Are:</h3>
                             <ul className="medi-audience-list">
                                 {[
-                                    { icon: Baby,        text: 'Traveling with children' },
-                                    { icon: Heart,       text: 'Traveling with grandchildren' },
-                                    { icon: Users,       text: 'Planning a multigenerational vacation' },
-                                    { icon: Sparkles,    text: 'Celebrating a milestone' },
-                                    { icon: Crown,       text: 'Seeking premium family experiences' },
-                                    { icon: Star,        text: 'Looking for exceptional service' },
+                                    { icon: Baby, text: 'Traveling with children' },
+                                    { icon: Heart, text: 'Traveling with grandchildren' },
+                                    { icon: Users, text: 'Planning a multigenerational vacation' },
+                                    { icon: Sparkles, text: 'Celebrating a milestone' },
+                                    { icon: Crown, text: 'Seeking premium family experiences' },
+                                    { icon: Star, text: 'Looking for exceptional service' },
                                     { icon: CheckCircle, text: 'Wanting stress-free family travel' },
                                 ].map(({ icon: Icon, text }, i) => (
                                     <li key={i}>
@@ -1721,10 +1821,10 @@ function DisneyLuxuryCruise() {
                             <h3 className="medi-audience-column-heading">May Prefer Other Luxury Lines If You:</h3>
                             <ul className="medi-audience-list">
                                 {[
-                                    { icon: Moon,    text: 'Prefer adults-only environments' },
-                                    { icon: Globe,   text: 'Prioritize destination immersion over entertainment' },
-                                    { icon: Gem,     text: 'Want ultra-luxury inclusions' },
-                                    { icon: Award,   text: 'Seek highly formal luxury experiences' },
+                                    { icon: Moon, text: 'Prefer adults-only environments' },
+                                    { icon: Globe, text: 'Prioritize destination immersion over entertainment' },
+                                    { icon: Gem, text: 'Want ultra-luxury inclusions' },
+                                    { icon: Award, text: 'Seek highly formal luxury experiences' },
                                     { icon: Compass, text: 'Rarely travel with family' },
                                 ].map(({ icon: Icon, text }, i) => (
                                     <li key={i}>
@@ -1851,16 +1951,16 @@ function DisneyLuxuryCruise() {
                         <div className="medi-prestige-credentials-column">
                             <div className="medi-prestige-list">
                                 {[
-                                    { text: 'Founder of Luxury Travel University',                    icon: GraduationCap, category: 'EDUCATION'   },
-                                    { text: '40+ years luxury travel expertise',                      icon: Clock,         category: 'EXPERIENCE'  },
-                                    { text: 'Traveled to 121+ countries',                             icon: Globe,         category: 'EXPLORATION' },
-                                    { text: 'Global luxury travel speaker',                           icon: Mic,           category: 'SPEAKING'    },
-                                    { text: 'Weekly travel columnist',                                icon: FileText,      category: 'MEDIA'       },
-                                    { text: 'Travel Leaders Network Advisory Board member',           icon: Users,         category: 'LEADERSHIP'  },
-                                    { text: '2024 Luxury Travel Influencer of the Year',              icon: Award,         category: 'HONOR'       },
-                                    { text: 'Named among the Most Influential Women in Travel in 2026',icon: Crown,        category: 'PRESTIGE'    },
-                                    { text: 'Featured in global travel publications',                 icon: Sparkles,      category: 'RECOGNITION' },
-                                    { text: 'Luxury cruise and expedition specialist',                icon: Ship,          category: 'SPECIALTY'   },
+                                    { text: 'Founder of Luxury Travel University', icon: GraduationCap, category: 'EDUCATION' },
+                                    { text: '40+ years luxury travel expertise', icon: Clock, category: 'EXPERIENCE' },
+                                    { text: 'Traveled to 121+ countries', icon: Globe, category: 'EXPLORATION' },
+                                    { text: 'Global luxury travel speaker', icon: Mic, category: 'SPEAKING' },
+                                    { text: 'Weekly travel columnist', icon: FileText, category: 'MEDIA' },
+                                    { text: 'Travel Leaders Network Advisory Board member', icon: Users, category: 'LEADERSHIP' },
+                                    { text: '2024 Luxury Travel Influencer of the Year', icon: Award, category: 'HONOR' },
+                                    { text: 'Named among the Most Influential Women in Travel in 2026', icon: Crown, category: 'PRESTIGE' },
+                                    { text: 'Featured in global travel publications', icon: Sparkles, category: 'RECOGNITION' },
+                                    { text: 'Luxury cruise and expedition specialist', icon: Ship, category: 'SPECIALTY' },
                                 ].map((accolade, idx) => {
                                     const IconComp = accolade.icon
                                     return (
@@ -1887,7 +1987,8 @@ function DisneyLuxuryCruise() {
                 14. FINAL THOUGHTS — editorial section (Asymmetrical layout)
             ══════════════════════════════════════════════════════ */}
             <section className="medi-final-thoughts-section">
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                     .medi-final-thoughts-section {
                         background: linear-gradient(180deg, var(--medi-bg-soft, #f0f4f8) 0%, #ffffff 100%);
                         padding: 100px 24px;
@@ -2028,7 +2129,7 @@ function DisneyLuxuryCruise() {
                             <Compass size={14} style={{ marginRight: '2px' }} />
                             <span>Final Thoughts</span>
                         </div>
-                        
+
                         <h2 className="medi-final-thoughts-heading">
                             Disney Isn't Trying to Be a Traditional Luxury Cruise Line
                         </h2>
