@@ -69,7 +69,8 @@ import Disneyluxurycruise from "./pages/Disneyluxurycruise/Disneyluxurycruise";
 import DisneyCruiseWorthMoney from "./pages/DisneyCruiseWorthMoney/DisneyCruiseWorthMoney";
 import DisneyvsRoyalCaribbean from "./pages/Disneyvsroyalcaribbean/Disneyvsroyalcaribbean";
 import DisneyConciergeWorthIt from "./pages/DisneyConciergeWorthIt/DisneyConciergeWorthIt";
-
+import Bestdisneycruiseshipforadults from "./pages/Bestdisneycruiseshipforadults/Bestdisneycruiseshipforadults";
+import Disneyvscelebritycruises from "./pages/Disneyvscelebritycruises/Disneyvscelebritycruises";
 
 function App() {
   return (
@@ -354,6 +355,16 @@ function App() {
           <Route
             path="/is-disney-concierge-worth-it"
             element={<DisneyConciergeWorthIt />}
+          />
+
+          <Route
+            path="/best-disney-cruise-ship-for-adults"
+            element={<Bestdisneycruiseshipforadults />}
+          />
+
+          <Route
+            path="/disney-cruise-vs-celebrity-cruises"
+            element={<Disneyvscelebritycruises />}
           />
         </Routes>
       </BrowserRouter>

@@ -447,6 +447,23 @@ const Navbar = () => {
               >
                 Is Disney Concierge Worth It?
               </NavLink>
+
+              <NavLink
+                to="/best-disney-cruise-ship-for-adults"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Disney Cruise Ship for Adults
+              </NavLink>
+            
+            <NavLink
+              to="/disney-cruise-vs-celebrity-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise vs Celebrity Cruises
+            </NavLink>
+
             </div>
           </div>
         </div>
@@ -903,6 +920,22 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Is Disney Concierge Worth It?
+            </NavLink>
+
+             <NavLink
+                to="/best-disney-cruise-ship-for-adults"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Disney Cruise Ship for Adults
+              </NavLink>
+
+              <NavLink
+              to="/disney-cruise-vs-celebrity-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise vs Celebrity Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
