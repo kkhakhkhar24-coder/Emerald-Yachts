@@ -503,6 +503,14 @@ const Navbar = () => {
               >
                 Best Disney Cruise Cabins
               </NavLink>
+
+              <NavLink
+                to="/disney-cruise-booking-timeline"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Booking Timeline
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1016,6 +1024,14 @@ const Navbar = () => {
             >
               Best Disney Cruise Cabins
             </NavLink>
+
+             <NavLink
+                to="/disney-cruise-booking-timeline"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Booking Timeline
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

@@ -336,29 +336,36 @@ function BestDisneyCruiseShipForAdults() {
                                         With over 40 years in the travel industry, visits to more than 121 countries, and recognition as the 2024 Luxury Travel Influencer of the Year by Travel Leaders Network, Angela Hughes offers unmatched insight into Disney and luxury cruise experiences.
                                     </p>
                                 </div>
-
-                                {/* Why Adults Love Disney Cruises */}
-                                <div style={{ marginTop: '24px' }}>
-                                    <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--medi-navy)', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Why Adults Love Disney Cruises</p>
-                                    <div className="medi-immersion-cards-grid">
-                                        {[
-                                            { icon: <Users size={18} />, label: 'Adult-only pools' },
-                                            { icon: <Sun size={18} />, label: 'Quiet sundecks' },
-                                            { icon: <Utensils size={18} />, label: 'Fine dining' },
-                                            { icon: <Crown size={18} />, label: 'Premium lounges' },
-                                            { icon: <Music size={18} />, label: 'Broadway-style entertainment' },
-                                            { icon: <Sparkles size={18} />, label: 'Luxury spas' },
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-immersion-card-item">
-                                                <div className="medi-immersion-icon-box">{item.icon}</div>
-                                                <span className="medi-immersion-card-title">{item.label}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* Why Adults Love Disney Cruises — standalone section */}
+            <section className="medi-itinerary-showcase-section" style={{ paddingTop: '8px' }}>
+                <div className="medi-itinerary-showcase-container">
+                    <div className="medi-itinerary-showcase-header" style={{ marginBottom: '24px' }}>
+                        <span className="medi-itinerary-eyebrow">ADULT FAVORITES</span>
+                        <h2 className="medi-itinerary-showcase-heading">Why Adults Love Disney Cruises</h2>
+                        <div className="medi-itinerary-showcase-separator"></div>
+                    </div>
+
+                    <div className="medi-immersion-cards-grid">
+                        {[
+                            { icon: <Users size={18} />, label: 'Adult-only pools' },
+                            { icon: <Sun size={18} />, label: 'Quiet sundecks' },
+                            { icon: <Utensils size={18} />, label: 'Fine dining' },
+                            { icon: <Crown size={18} />, label: 'Premium lounges' },
+                            { icon: <Music size={18} />, label: 'Broadway-style entertainment' },
+                            { icon: <Sparkles size={18} />, label: 'Luxury spas' },
+                        ].map((item, idx) => (
+                            <div key={idx} className="medi-immersion-card-item">
+                                <div className="medi-immersion-icon-box">{item.icon}</div>
+                                <span className="medi-immersion-card-title">{item.label}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
