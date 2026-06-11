@@ -74,7 +74,7 @@ import Disneyvscelebritycruises from "./pages/Disneyvscelebritycruises/Disneyvsc
 import DisneyWishVsDisneyTreasure from "./pages/DisneyWishVsDisneyTreasure/DisneyWishVsDisneyTreasure";
 import CastawayCayVsLookoutCay from "./pages/CastawayCayVsLookoutCay/CastawayCayVsLookoutCay";
 import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExplained/DisneyConciergeBenefitsExplained";
-import DisneyCruiseDiningGuide from "./pages/DisneyCruiseDiningGuide/Disneycruisediningguide";
+import DisneyCruiseDiningGuide from "./pages/Disneycruisediningguide/Disneycruisediningguide";
 
 function App() {
   return (
