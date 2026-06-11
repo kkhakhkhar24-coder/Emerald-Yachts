@@ -71,6 +71,9 @@ import DisneyvsRoyalCaribbean from "./pages/Disneyvsroyalcaribbean/Disneyvsroyal
 import DisneyConciergeWorthIt from "./pages/DisneyConciergeWorthIt/DisneyConciergeWorthIt";
 import Bestdisneycruiseshipforadults from "./pages/Bestdisneycruiseshipforadults/Bestdisneycruiseshipforadults";
 import Disneyvscelebritycruises from "./pages/Disneyvscelebritycruises/Disneyvscelebritycruises";
+import DisneyWishVsDisneyTreasure from "./pages/DisneyWishVsDisneyTreasure/DisneyWishVsDisneyTreasure";
+import CastawayCayVsLookoutCay from "./pages/CastawayCayVsLookoutCay/CastawayCayVsLookoutCay";
+import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExplained/DisneyConciergeBenefitsExplained";
 
 function App() {
   return (
@@ -365,6 +368,21 @@ function App() {
           <Route
             path="/disney-cruise-vs-celebrity-cruises"
             element={<Disneyvscelebritycruises />}
+          />
+
+          <Route
+            path="/disney-wish-vs-disney-treasure"
+            element={<DisneyWishVsDisneyTreasure />}
+          />
+
+          <Route
+            path="/castaway-cay-vs-lookout-cay"
+            element={<CastawayCayVsLookoutCay />}
+          />
+
+          <Route
+            path="/disney-concierge-benefits-explained"
+            element={<DisneyConciergeBenefitsExplained />}
           />
         </Routes>
       </BrowserRouter>
