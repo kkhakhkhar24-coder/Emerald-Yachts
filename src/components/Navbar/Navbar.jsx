@@ -488,6 +488,14 @@ const Navbar = () => {
                 Disney Concierge Benefits Explained
               </NavLink>
 
+              <NavLink
+                to="/disney-cruise-dining-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Dining Guide
+              </NavLink>
+
             </div>
           </div>
         </div>
@@ -985,6 +993,14 @@ const Navbar = () => {
             >
               Disney Concierge Benefits Explained
             </NavLink>
+
+             <NavLink
+                to="/disney-cruise-dining-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Dining Guide
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

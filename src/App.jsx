@@ -74,6 +74,7 @@ import Disneyvscelebritycruises from "./pages/Disneyvscelebritycruises/Disneyvsc
 import DisneyWishVsDisneyTreasure from "./pages/DisneyWishVsDisneyTreasure/DisneyWishVsDisneyTreasure";
 import CastawayCayVsLookoutCay from "./pages/CastawayCayVsLookoutCay/CastawayCayVsLookoutCay";
 import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExplained/DisneyConciergeBenefitsExplained";
+import DisneyCruiseDiningGuide from "./pages/DisneyCruiseDiningGuide/Disneycruisediningguide";
 
 function App() {
   return (
@@ -383,6 +384,11 @@ function App() {
           <Route
             path="/disney-concierge-benefits-explained"
             element={<DisneyConciergeBenefitsExplained />}
+          />
+
+          <Route
+            path="/disney-cruise-dining-guide"
+            element={<DisneyCruiseDiningGuide />}
           />
         </Routes>
       </BrowserRouter>

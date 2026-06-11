@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
 
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
+    Ship, MapPin, Star, Clock, Users , CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, ChevronLeft, Crown, Phone, Plus, Minus,
     Globe, LayoutList, Heart, Utensils, Sun, Award,
@@ -40,7 +40,7 @@ function DisneyVsCelebrityCruises() {
     /* FAQ accordion */
     const [activeFaq, setActiveFaq] = useState(null)
 
-    /* comparison tab (ship overview) */
+    /* comparison tab (ship overview) */ 
     const [activeTab, setActiveTab] = useState(0)
 
     /* detail comparison section active item */
@@ -361,11 +361,7 @@ function DisneyVsCelebrityCruises() {
                         {/* Card panel */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
-                                    src={activeTab === 0 ? DISNEY_SHIP_IMG : CELEBRITY_SHIP_IMG}
-                                    alt={activeTab === 0 ? 'Disney Cruise Line' : 'Celebrity Cruises'}
-                                    className="medi-itinerary-showcase-img"
-                                /> */}
+                                {/*    */}
                                 <div className="medi-itinerary-showcase-img-overlay" />
                                 <span className="medi-itinerary-showcase-badge">
                                     {activeTab === 0 ? 'Best for Families' : 'Best for Adults'}
@@ -385,7 +381,7 @@ function DisneyVsCelebrityCruises() {
                                                 ? 'Disney Cruise Line operates a growing fleet known for exceptional service, family entertainment, and immersive storytelling. Disney attracts families, couples, Disney enthusiasts, and multi-generational travelers.'
                                                 : 'Celebrity Cruises is known for contemporary luxury and elevated travel experiences. Celebrity primarily attracts adults, couples, retirees, and luxury travelers.'}
                                         </p>
-                                    </div>
+                                    </div> 
                                     <div className="medi-itinerary-details-col">
                                         <p className="medi-itinerary-details-heading">Popular Ships</p>
                                         <div className="medi-itinerary-details-chips">
