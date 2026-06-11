@@ -496,6 +496,13 @@ const Navbar = () => {
                 Disney Cruise Dining Guide
               </NavLink>
 
+              <NavLink
+                to="/best-disney-cruise-cabins"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Disney Cruise Cabins
+              </NavLink>
             </div>
           </div>
         </div>
@@ -994,13 +1001,21 @@ const Navbar = () => {
               Disney Concierge Benefits Explained
             </NavLink>
 
-             <NavLink
-                to="/disney-cruise-dining-guide"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Disney Cruise Dining Guide
-              </NavLink>
+            <NavLink
+              to="/disney-cruise-dining-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise Dining Guide
+            </NavLink>
+
+            <NavLink
+              to="/best-disney-cruise-cabins"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Disney Cruise Cabins
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

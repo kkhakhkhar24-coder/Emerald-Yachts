@@ -75,6 +75,7 @@ import DisneyWishVsDisneyTreasure from "./pages/DisneyWishVsDisneyTreasure/Disne
 import CastawayCayVsLookoutCay from "./pages/CastawayCayVsLookoutCay/CastawayCayVsLookoutCay";
 import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExplained/DisneyConciergeBenefitsExplained";
 import DisneyCruiseDiningGuide from "./pages/Disneycruisediningguide/Disneycruisediningguide";
+import BestDisneyCruiseCabins from "./pages/BestDisneyCruiseCabins/BestDisneyCruiseCabins";
 
 function App() {
   return (
@@ -389,6 +390,11 @@ function App() {
           <Route
             path="/disney-cruise-dining-guide"
             element={<DisneyCruiseDiningGuide />}
+          />
+
+          <Route
+            path="/best-disney-cruise-cabins"
+            element={<BestDisneyCruiseCabins />}
           />
         </Routes>
       </BrowserRouter>
