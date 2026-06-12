@@ -105,7 +105,7 @@ function DisneyCruiseWorthMoney() {
             <Navbar />
 
             {/* ═══════════════ HERO SECTION ═══════════════ */}
-            <section className="medi-hero-section">
+            <section cl ssName="medi-hero-section">
                 {mediHeroImages.map((img, idx) => (
                     <div
                         key={idx}

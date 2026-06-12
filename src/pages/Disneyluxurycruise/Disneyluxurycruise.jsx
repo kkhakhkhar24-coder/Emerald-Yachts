@@ -7,7 +7,7 @@ import hero2 from '../../assets/Disneyluxurycruise/disney-wish-grand-hall-atrium
 import hero3 from '../../assets/Disneyluxurycruise/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg'
 
 // ── SECTION IMAGES (replace with your actual imports) ────────────────────────
-import adultDiningImg from '../../assets/DisneyLuxuryCruise/adult-dining.png'
+import adultDiningImg from '../../assets/DisneyLuxuryCruise/family-with-woody-toy-story-land-disney-hollywood-studios.jpg'
 import alaskaImg from '../../assets/DisneyLuxuryCruise/20250727_001_Alaska_LecontGlacier_OscarFarrera.jpg'
 import mediterImg from '../../assets/DisneyLuxuryCruise/Boutique Mediterranean cruise experience.webp'
 import northernEuropeImg from '../../assets/DisneyLuxuryCruise/Northern_Europe.jpg'
@@ -19,6 +19,10 @@ import disneyChristmas from '../../assets/DisneyLuxuryCruise/disney-cruise-chris
 import disneyCharacters from '../../assets/DisneyLuxuryCruise/disney-cruise-line-live-theater-stage-show-characters.png'
 import disneyPalo from '../../assets/DisneyLuxuryCruise/disney-wish-palo-steakhouse-adults-only-fine-dining-table.jpg'
 import disneylive from '../../assets/DisneyLuxuryCruise/pride-lands-live-show-disney-destiny.jpg'
+import disneymoments from '../../assets/DisneyLuxuryCruise/child-posing-with-te-fiti-journey-of-water-inspired-by-moana-epcot.jpg'
+import disneymoments2 from '../../assets/DisneyLuxuryCruise/disney-cruise-ship-grand-atrium-family-vacation-onboard-entertainment-experience.jpg'
+import family_water_park from '../../assets/DisneyLuxuryCruise/family-floating-lazy-river-disney-water-park-orlando-florida-summer-vacation.jpg'
+import family_in_rome from '../../assets/DisneyLuxuryCruise/family-visiting-colosseum-rome-italy-vacation.jpg'
 
 
 import {
@@ -1849,6 +1853,173 @@ function DisneyLuxuryCruise() {
                 </div>
             </section>
 
+            {/* ══════════════════════════════════════════════════════
+    NEW LOOK: LUXURY DEFINED BY MOMENTS (MAX VISIBILITY)
+══════════════════════════════════════════════════════ */}
+            <section style={{
+                padding: 'clamp(60px, 10vw, 120px) 24px',
+                backgroundColor: '#ffffff',
+                fontFamily: 'Inter, sans-serif',
+                overflow: 'hidden'
+            }}>
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+        .medi-editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .medi-editorial-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #0a1120;
+            height: 550px;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Asymmetrical Layout Rules */
+        .grid-item-1 { grid-column: span 7; }
+        .grid-item-2 { grid-column: span 5; }
+        .grid-item-3 { grid-column: span 5; }
+        .grid-item-4 { grid-column: span 7; }
+
+        .medi-editorial-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 1.2s ease;
+        }
+
+        /* LAYERED SCRIM FOR TEXT VISIBILITY */
+        .medi-editorial-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, 
+                rgba(15, 28, 46, 0.95) 0%, 
+                rgba(15, 28, 46, 0.7) 25%, 
+                rgba(15, 28, 46, 0.2) 50%, 
+                transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            z-index: 2;
+        }
+
+        .medi-editorial-item:hover .medi-editorial-img {
+            transform: scale(1.08);
+        }
+
+        .medi-editorial-tag {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #60a5fa; /* Vibrant blue for high visibility */
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .medi-editorial-title {
+            font-size: clamp(22px, 2.5vw, 32px);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin: 0;
+            text-align: left;
+            letter-spacing: -0.02em;
+            /* Extra shadow layers to lift text from image */
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        .medi-editorial-divider {
+            width: 40px;
+            height: 2px;
+            background-color: #3b82f6;
+            margin-top: 20px;
+            transition: width 0.4s ease;
+        }
+
+        .medi-editorial-item:hover .medi-editorial-divider {
+            width: 80px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 { grid-column: span 12; }
+            .medi-editorial-item { height: 450px; }
+            .medi-editorial-overlay { padding: 30px; }
+        }
+    `}} />
+
+                {/* Section Header */}
+                <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+                    <span style={{
+                        color: '#3b82f6',
+                        fontWeight: '800',
+                        fontSize: '13px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '6px',
+                        display: 'block',
+                        marginBottom: '15px'
+                    }}>
+                        The Visual Narrative
+                    </span>
+                    <h2 style={{
+                        fontSize: 'clamp(32px, 5vw, 48px)',
+                        color: '#274472',
+                        fontWeight: '800',
+                        marginBottom: '20px',
+                        letterSpacing: '-0.03em',
+                        lineHeight: 1.1
+                    }}>
+                        Luxury is a Collection of Moments
+                    </h2>
+                    <div style={{ width: '80px', height: '4px', backgroundColor: '#274472', margin: '0 auto', borderRadius: '10px' }}></div>
+                </div>
+
+                <div className="medi-editorial-grid">
+                    {/* 1. Global Heritage */}
+                    <div className="medi-editorial-item grid-item-1">
+                        <img src={family_in_rome} alt="Global Exploration" className="medi-editorial-img" />
+                        <div className="medi-editorial-overlay">
+                            <span className="medi-editorial-tag">Global Heritage</span>
+                            <h3 className="medi-editorial-title">World-Class Destination<br />Immersion</h3>
+                        </div>
+                    </div>
+
+                    {/* 2. Nautical Elegance */}
+                    <div className="medi-editorial-item grid-item-2">
+                        <img src={disneymoments2} alt="Ship Architecture" className="medi-editorial-img" />
+                        <div className="medi-editorial-overlay">
+                            <span className="medi-editorial-tag">Nautical Elegance</span>
+                            <h3 className="medi-editorial-title">Award-Winning Ship<br />Architecture</h3>
+                        </div>
+                    </div>
+
+                    {/* 3. Seamless Magic */}
+                    <div className="medi-editorial-item grid-item-3">
+                        <img src={disneymoments} alt="Pre-Cruise Magic" className="medi-editorial-img" />
+                        <div className="medi-editorial-overlay">
+                            <span className="medi-editorial-tag">Seamless Magic</span>
+                            <h3 className="medi-editorial-title">Integrated Land & Sea<br />Experiences</h3>
+                        </div>
+                    </div>
+
+                    {/* 4. Pure Joy */}
+                    <div className="medi-editorial-item grid-item-4">
+                        <img src={family_water_park} alt="Family Fun" className="medi-editorial-img" />
+                        <div className="medi-editorial-overlay">
+                            <span className="medi-editorial-tag">Pure Joy</span>
+                            <h3 className="medi-editorial-title">The Highest Standard of<br />Recreation</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* ══════════════════════════════════════════════════════
                 12. COMPARISON TABLE — new inline section, same palette
