@@ -2,22 +2,24 @@ import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
 
 // ── HERO IMAGES (replace with your actual imports) ───────────────────────────
-// import hero1 from '../../assets/DisneyLuxuryCruise/hero1.jpg'
-// import hero2 from '../../assets/DisneyLuxuryCruise/hero2.jpg'
-// import hero3 from '../../assets/DisneyLuxuryCruise/hero3.jpg'
+import hero1 from '../../assets/Disneyluxurycruise/disney-cruise-norwegian-fjord-scenic-cruise-geirangerfjord-norway.jpeg'
+import hero2 from '../../assets/Disneyluxurycruise/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.jpg'
+import hero3 from '../../assets/Disneyluxurycruise/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg'
 
 // ── SECTION IMAGES (replace with your actual imports) ────────────────────────
-// import disneyShipImg      from '../../assets/DisneyLuxuryCruise/disney-ship.webp'
 import adultDiningImg from '../../assets/DisneyLuxuryCruise/adult-dining.png'
-// import conciergeImg       from '../../assets/DisneyLuxuryCruise/concierge-suite.webp'
-// import multigenerImg      from '../../assets/DisneyLuxuryCruise/multigenerational.webp'
-// import entertainmentImg   from '../../assets/DisneyLuxuryCruise/entertainment.webp'
-// import alaskaImg          from '../../assets/DisneyLuxuryCruise/alaska.webp'
-// import mediterImg         from '../../assets/DisneyLuxuryCruise/mediterranean.webp'
-// import northernEuropeImg  from '../../assets/DisneyLuxuryCruise/northern-europe.webp'
-// import caribbeanImg       from '../../assets/DisneyLuxuryCruise/caribbean.webp'
-import Profile_AH from '../../assets/Media (2).jpg'
+import alaskaImg from '../../assets/DisneyLuxuryCruise/20250727_001_Alaska_LecontGlacier_OscarFarrera.jpg'
+import mediterImg from '../../assets/DisneyLuxuryCruise/Boutique Mediterranean cruise experience.webp'
+import northernEuropeImg from '../../assets/DisneyLuxuryCruise/Northern_Europe.jpg'
+import caribbeanImg from '../../assets/DisneyLuxuryCruise/Caribbean.jpg'
+import Profile_AH from '../../assets/DisneyLuxuryCruise/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/Media (1).jpg'
+import disneyAlaska from '../../assets/DisneyLuxuryCruise/disney-cruise-alaska-glacier-view-inside-passage.jpg'
+import disneyChristmas from '../../assets/DisneyLuxuryCruise/disney-cruise-christmas-atrium-tree.jpg'
+import disneyCharacters from '../../assets/DisneyLuxuryCruise/disney-cruise-line-live-theater-stage-show-characters.png'
+import disneyPalo from '../../assets/DisneyLuxuryCruise/disney-wish-palo-steakhouse-adults-only-fine-dining-table.jpg'
+import disneylive from '../../assets/DisneyLuxuryCruise/pride-lands-live-show-disney-destiny.jpg'
+
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -171,28 +173,28 @@ const disneyItineraries = [
         desc: 'Featuring glaciers, wildlife, and educational experiences.',
         bestFor: ['Families seeking wildlife experiences', 'Educational travelers', 'Grandparents with grandchildren', 'Nature & adventure lovers'],
         highlights: ['Glaciers', 'Wildlife sightings', 'Scenic fjords', 'Sitka', 'Ketchikan'],
-        // image: alaskaImg
+        image: alaskaImg
     },
     {
         title: 'Mediterranean Cruises',
         desc: 'Combining culture, history, and family exploration.',
         bestFor: ['Cultural explorers', 'History enthusiasts', 'Affluent families', 'Multigenerational groups'],
         highlights: ['Barcelona', 'Rome', 'Santorini', 'Athens', 'Florence'],
-        // image: mediterImg
+        image: mediterImg
     },
     {
         title: 'Northern Europe',
         desc: 'Offering rich cultural and educational opportunities.',
         bestFor: ['Educational families', 'Cultural travelers', 'Grandparents with grandchildren', 'History enthusiasts'],
         highlights: ['Scandinavia', 'Iceland', 'British Isles', 'Amsterdam', 'Baltic ports'],
-        // image: northernEuropeImg
+        image: northernEuropeImg
     },
     {
         title: 'Caribbean & Bahamas',
         desc: 'Ideal for family relaxation and recreation.',
         bestFor: ['Family relaxation seekers', 'Beach lovers', 'First-time cruisers', 'Multigenerational groups'],
         highlights: ['Castaway Cay', 'Nassau', 'St. Thomas', 'St. Maarten', 'Grand Cayman'],
-        // image: caribbeanImg
+        image: caribbeanImg
     }
 ]
 
@@ -220,7 +222,7 @@ function DisneyLuxuryCruise() {
     const [isSliderHovered, setIsSliderHovered] = useState(false)
     const [activeOnboardTab, setActiveOnboardTab] = useState(0)
 
-    const heroImages = []
+    const heroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -255,7 +257,7 @@ function DisneyLuxuryCruise() {
                     <div
                         key={idx}
                         className={`medi-hero-background ${currentHero === idx ? 'medi-active' : ''}`}
-                    // style={{ backgroundImage: `url(${img})` }}
+                        style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
@@ -1052,7 +1054,6 @@ function DisneyLuxuryCruise() {
                 </div>
             </section>
 
-
             {/* ══════════════════════════════════════════════════════
                 6. MISTAKE #7 — COMPARING TO WRONG CRUISE LINES
             ══════════════════════════════════════════════════════ */}
@@ -1240,11 +1241,11 @@ function DisneyLuxuryCruise() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                <img
                                     src={disneyItineraries[selectedItinerary].image}
                                     alt={disneyItineraries[selectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">FEATURED ITINERARY</span>
                             </div>
@@ -1912,6 +1913,124 @@ function DisneyLuxuryCruise() {
                 </div>
             </section>
 
+            {/* ══════════════════════════════════════════════════════
+                NEW SECTION: THE VISUAL STANDARD OF LUXURY
+            ══════════════════════════════════════════════════════ */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#ffffff', fontFamily: 'Inter, sans-serif' }}>
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                    .medi-gallery-grid {
+                        display: grid;
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-rows: repeat(2, 250px);
+                        gap: 20px;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+                    .medi-gallery-item {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 16px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                        background-color: #0f1c2e;
+                    }
+                    .medi-gallery-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+                        opacity: 0.9;
+                    }
+                    .medi-gallery-item:hover .medi-gallery-img {
+                        transform: scale(1.08);
+                        opacity: 1;
+                    }
+                    .medi-gallery-overlay {
+                        position: absolute;
+                        inset: 0;
+                        background: linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, transparent 60%);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding: 24px;
+                        opacity: 0;
+                        transition: opacity 0.4s ease;
+                    }
+                    .medi-gallery-item:hover .medi-gallery-overlay {
+                        opacity: 1;
+                    }
+                    .medi-gallery-label {
+                        color: #93c5fd;
+                        font-size: 0.7rem;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        margin-bottom: 4px;
+                    }
+                    .medi-gallery-caption {
+                        color: #ffffff;
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                    
+                    /* Custom Layout Shaping */
+                    .item-1 { grid-column: span 3; }
+                    .item-2 { grid-column: span 3; }
+                    .item-3 { grid-column: span 2; }
+                    .item-4 { grid-column: span 2; }
+                    .item-5 { grid-column: span 2; }
+
+                    @media (max-width: 991px) {
+                        .medi-gallery-grid {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: auto;
+                        }
+                        .medi-gallery-item { grid-column: span 1 !important; height: 280px; }
+                        .item-5 { grid-column: span 2 !important; }
+                    }
+                    @media (max-width: 600px) {
+                        .medi-gallery-grid { grid-template-columns: 1fr; }
+                        .medi-gallery-item { grid-column: span 1 !important; height: 320px; }
+                    }
+                `}} />
+
+                <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <span style={{ color: '#274472', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                        Visual Portfolio
+                    </span>
+                    <h2 style={{ fontSize: 'clamp(30px, 5vw, 46px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.1' }}>
+                        The Refined Aesthetic of Disney
+                    </h2>
+                    <div style={{ width: '80px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                </div>
+
+                <div className="medi-gallery-grid">
+                    {/* Image 1: Concierge Lounge Space */}
+                    <div className="medi-gallery-item item-1">
+                        <img src={disneyAlaska} alt="Disney Luxury Lounge" className="medi-gallery-img" />
+                    </div>
+
+                    {/* Image 2: Fine Dining Detail */}
+                    <div className="medi-gallery-item item-2">
+                        <img src={disneyChristmas} alt="Epicurean Dining" className="medi-gallery-img" />
+                    </div>
+
+                    {/* Image 3: Ocean View Verandah */}
+                    <div className="medi-gallery-item item-3">
+                        <img src={disneyCharacters} alt="Private Balcony" className="medi-gallery-img" />
+                    </div>
+
+                    {/* Image 4: Quiet Cove Pool */}
+                    <div className="medi-gallery-item item-4">
+                        <img src={disneyPalo} alt="Adult Retreat" className="medi-gallery-img" />
+                    </div>
+
+                    {/* Image 5: Nautical Design Details */}
+                    <div className="medi-gallery-item item-5">
+                        <img src={disneylive} alt="Nautical Interior" className="medi-gallery-img" />
+                    </div>
+                </div>
+            </section>
 
             {/* ══════════════════════════════════════════════════════
                 13. ANGELA HUGHES AUTHORITY BOX
@@ -1929,7 +2048,7 @@ function DisneyLuxuryCruise() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img
+                                <img
                                     src={Profile_AH}
                                     alt="Angela Hughes"
                                     style={{
@@ -1937,7 +2056,7 @@ function DisneyLuxuryCruise() {
                                         objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)',
                                         animation: 'reverse-spin 30s linear infinite'
                                     }}
-                                /> */}
+                                />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
