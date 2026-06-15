@@ -12,29 +12,24 @@ import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/DisneyCruiseWorthTheMoney/Hero_1.webp'
-// import hero2 from '../../assets/DisneyCruiseWorthTheMoney/Hero_2.jpg'
-// import hero3 from '../../assets/DisneyCruiseWorthTheMoney/Hero_3.webp'
-// import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
-// import Image1 from '../../assets/DisneyCruiseWorthTheMoney/Image_1.jpg'
-// import Image2 from '../../assets/DisneyCruiseWorthTheMoney/Image_2.jpg'
-// import Image3 from '../../assets/DisneyCruiseWorthTheMoney/Image_3.jpg'
-// import Image4 from '../../assets/DisneyCruiseWorthTheMoney/Image_4.jpg'
-// import Image5 from '../../assets/DisneyCruiseWorthTheMoney/Image_5.jpg'
-// import Image6 from '../../assets/DisneyCruiseWorthTheMoney/Image_6.jpg'
-// import Video1 from '../../assets/DisneyCruiseWorthTheMoney/Video1.mp4'
-// import Video2 from '../../assets/DisneyCruiseWorthTheMoney/Video2.mp4'
-// import Video3 from '../../assets/DisneyCruiseWorthTheMoney/Video3.mp4'
-// import AH1 from '../../assets/DisneyCruiseWorthTheMoney/AH1.jpg'
-// import AH2 from '../../assets/DisneyCruiseWorthTheMoney/AH2.jpg'
-// import AH3 from '../../assets/DisneyCruiseWorthTheMoney/AH3.jpg'
-// import AH4 from '../../assets/DisneyCruiseWorthTheMoney/AH4.jpg'
-// import AH5 from '../../assets/DisneyCruiseWorthTheMoney/AH5.jpg'
+import hero1 from '../../assets/DisneyCruiseWorthMoney/disney-castaway-cay-private-island-aerial-drone-view-cruise.jpg'
+import hero2 from '../../assets/DisneyCruiseWorthMoney/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg'
+import hero3 from '../../assets/DisneyCruiseWorthMoney/disney-castaway-cay-private-island-aerial-drone-view-cruise-ship.jpg'
+import profileAH from '../../assets/DisneyCruiseWorthMoney/Profile_AH.jpg'
+import Image1 from '../../assets/DisneyCruiseWorthMoney/family-viewing-bratislava-castle-slovakia-multigenerational-europe-vacation.jpg'
+import Image2 from '../../assets/DisneyCruiseWorthMoney/disney-cruise-alaska-shore-excursion-skagway-train-family.jpg'
+import Image3 from '../../assets/DisneyCruiseWorthMoney/disney-wonder-alaska-cruise-tracy-arm-fjord-excursion.jpg'
+import Image4 from '../../assets/DisneyCruiseWorthMoney/disney-very-merrytime-cruise-mickey-minnie-holiday-characters.jpg'
+import Image5 from '../../assets/DisneyCruiseWorthMoney/disney-destiny-cask-cannon-pub-pirates-theme-bar.jpg'
+import Image6 from '../../assets/DisneyCruiseWorthMoney/sleeping-beauty-castle-disneyland-paris-fairytale-theme-park-vacation-france.jpg'
+import Cruises_Cost from '../../assets/DisneyCruiseWorthMoney/disney-destiny-cruise-line-ship-ocean-sunset.jpg'
+import disneyWishSarabiLounge from '../../assets/DisneyCruiseWorthMoney/disney-wish-sarabi-lounge-modern-interior-decor-seating.jpg'
+import disneylandHotel from '../../assets/DisneyCruiseWorthMoney/disneyland-hotel-monorail-water-slides-family-friendly-hotel-anaheim-california.jpg'
 
 
 function DisneyCruiseWorthMoney() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -105,52 +100,83 @@ function DisneyCruiseWorthMoney() {
             <Navbar />
 
             {/* ═══════════════ HERO SECTION ═══════════════ */}
-            <section className="medi-hero-section">
+            <section className="medi-hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
                 {mediHeroImages.map((img, idx) => (
                     <div
                         key={idx}
                         className={`medi-hero-background ${mediCurrentHero === idx ? 'medi-active' : ''}`}
-                        style={{ backgroundImage: `url(${img})` }}
+                        style={{
+                            backgroundImage: `url(${img})`,
+                            transition: 'opacity 1.5s ease-in-out' // Smooth crossfade
+                        }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
 
-                    {/* Eyebrow Tag: Matched to the reference page's premium tracking */}
+                {/* Refined Scrim for better text contrast */}
+                <div className="medi-hero-overlay-layer" style={{
+                    background: 'linear-gradient(to bottom, rgba(15, 28, 46, 0.3) 0%, rgba(15, 28, 46, 0.7) 100%)',
+                    position: 'absolute',
+                    inset: 0,
+                    zIndex: 1
+                }}></div>
+
+                <div className="medi-hero-content-wrapper" style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: '85vh',
+                    padding: '0 24px',
+                    position: 'relative',
+                    zIndex: 10,
+                    textAlign: 'center'
+                }}>
+
+                    {/* Eyebrow Tag: Luxury Badge Styling */}
                     <div className="medi-hero-eyebrow-tag" style={{
-                        fontSize: '13px',
-                        fontWeight: '700',
-                        letterSpacing: '0.25em', // Matches the 'Beyond the Family' badge style
+                        fontSize: '12px',
+                        fontWeight: '800',
+                        letterSpacing: '0.3em',
                         textTransform: 'uppercase',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '8px'
+                        gap: '10px',
+                        color: '#ffffff',
+                        marginBottom: '24px',
+                        backgroundColor: 'rgba(59, 130, 246, 0.15)', // Glassmorphism effect
+                        padding: '10px 20px',
+                        borderRadius: '50px',
+                        border: '1px solid rgba(59, 130, 246, 0.3)',
+                        backdropFilter: 'blur(8px)',
+                        WebkitBackdropFilter: 'blur(8px)'
                     }}>
-                        <CircleDollarSign size={16} />
-                        <span>Honest Value Guide for Families & Adults</span>
+                        <CircleDollarSign size={16} style={{ color: '#60a5fa' }} />
+                        <span>Honest Value Guide</span>
                     </div>
 
-                    {/* Main Title: Matched to the reference page's "Sophisticated Side" header style */}
+                    {/* Main Title: High-End Editorial Typography */}
                     <h1 className="medi-hero-main-title" style={{
-                        fontSize: 'clamp(32px, 7vw, 64px)', // Aggressive responsive scale
-                        fontWeight: '800',                  // Extra Bold like the reference
-                        lineHeight: '1.1',                  // Tight leading for premium look
-                        letterSpacing: '-0.02em',           // Signature negative tracking
-                        margin: '20px 0 0',
-                        textShadow: '0 2px 15px rgba(0,0,0,0.3)'
+                        fontSize: 'clamp(42px, 8vw, 82px)', // Larger, more impactful scale
+                        fontWeight: '900',                  // Extra Heavy
+                        lineHeight: '0.95',                 // Tight editorial leading
+                        letterSpacing: '-0.04em',           // Aggressive negative tracking
+                        color: '#ffffff',
+                        margin: '0',
+                        textShadow: '0 4px 30px rgba(0,0,0,0.5)'
                     }}>
-                        Is Disney Cruise Line<br />Worth the Money?
+                        Is Disney Cruise Line<br />
+                        <span style={{ color: '#60a5fa' }}>Worth the Money?</span>
                     </h1>
 
-                    {/* Description: Matched exactly to the reference page para style */}
+                    {/* Description: Premium Sub-header Styling */}
                     <p style={{
-                        color: 'rgba(255,255,255,0.85)',
-                        fontSize: 'clamp(16px, 2.5vw, 20px)', // Direct font-size match
-                        maxWidth: '700px',
-                        margin: '24px auto 0',
-                        lineHeight: '1.6',                  // Standard reference line height
-                        textAlign: 'center',
-                        fontWeight: '400'
+                        color: 'rgba(255,255,255,0.9)',
+                        fontSize: 'clamp(17px, 2.5vw, 22px)',
+                        maxWidth: '750px',
+                        margin: '32px auto 0',
+                        lineHeight: '1.6',
+                        fontWeight: '500',
+                        textShadow: '0 2px 10px rgba(0,0,0,0.3)'
                     }}>
                         A complete breakdown of pricing, inclusions, and value to help you decide if a Disney cruise is right for your budget.
                     </p>
@@ -213,30 +239,110 @@ function DisneyCruiseWorthMoney() {
             {/* ═══════════════ WHY DISNEY COSTS MORE ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 12px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header */}
                     <div style={{ textAlign: 'center', marginBottom: '70px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>The Premium Positioning</span>
                         <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: "#274472", fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em' }}>Why Disney Cruises Cost More</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>Before deciding if Disney is worth the money, it's important to understand why the cruise line charges premium pricing.</p>
                     </div>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px' }}>
-                        <div style={{ flex: '1 1 280px' }}>
-                            <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 360 ? '1fr' : 'repeat(auto-fit, minmax(220px, 1fr))', gap: window.innerWidth <= 360 ? '12px' : '20px' }}>
+
+                    {/* Content Grid with Image Integration */}
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'stretch' }}>
+
+                        {/* Left Column: Value Factors Grid */}
+                        <div style={{ flex: '1 1 300px' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)', gap: '16px' }}>
                                 {["Service quality", "Entertainment", "Ship design", "Guest experience", "Family programming", "Technology", "Dining experiences", "Character interactions"].map((item, i) => (
-                                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
-                                        <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
+                                    <div key={i} style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                        padding: '16px',
+                                        backgroundColor: '#f8fafc',
+                                        borderRadius: '12px',
+                                        border: '1px solid #e2e8f0',
+                                        transition: 'transform 0.2s ease',
+                                        // Optional: Slight hover effect for interactivity
+                                        cursor: 'default'
+                                    }}
+                                        onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+                                        onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                                    >
+                                        <div style={{
+                                            backgroundColor: '#eff6ff',
+                                            borderRadius: '50%',
+                                            padding: '4px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}>
+                                            <CheckCircle size={16} style={{ color: '#3b82f6' }} />
+                                        </div>
                                         <span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{item}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div style={{ flex: '1 1 280px' }}>
-                            <div style={{ backgroundColor: '#0f1c2e', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', borderRadius: window.innerWidth <= 360 ? '20px' : '30px', color: '#ffffff' }}>
-                                <h3 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '20px', color: '#3b82f6' }}>Strategy Over Price</h3>
-                                <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#cbd5e1', marginBottom: '25px' }}>Unlike many cruise lines that compete primarily on price, Disney focuses on delivering a premium vacation experience.</p>
-                                <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#cbd5e1' }}>As a result, travelers often pay more upfront but receive additional value in several areas.</p>
+
+                        {/* Right Column: Image Placeholder + Text Overlay */}
+                        <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column' }}>
+                            <div style={{
+                                position: 'relative',
+                                borderRadius: '24px',
+                                overflow: 'hidden',
+                                boxShadow: '0 20px 40px rgba(15, 28, 46, 0.1)',
+                                height: '100%',
+                                minHeight: '400px'
+                            }}>
+
+                                {/* IMAGE PLACEHOLDER */}
+                                {/* Replace this div with your <img /> tag */}
+                                <div style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    backgroundColor: '#cbd5e1', // Light grey background for placeholder
+                                    backgroundImage: 'linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0), linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0)',
+                                    backgroundSize: '20px 20px',
+                                    backgroundPosition: '0 0, 10px 10px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: '#64748b',
+                                    fontWeight: '800',
+                                    fontSize: '18px',
+                                    letterSpacing: '1px',
+                                    textTransform: 'uppercase'
+                                }}>
+                                    <img src={Cruises_Cost} alt="Cruises_Cost" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                </div>
+
+                                {/* Dark Gradient Overlay for Readability */}
+                                <div style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    background: 'linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 50%, transparent 100%)',
+                                    zIndex: 1
+                                }}></div>
+
+                                {/* Content Overlay */}
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '0',
+                                    left: '0',
+                                    width: '100%',
+                                    padding: '40px',
+                                    zIndex: 2,
+                                    color: '#ffffff'
+                                }}>
+                                    <h3 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '15px', color: '#60a5fa' }}>Strategy Over Price</h3>
+                                    <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#e2e8f0', marginBottom: '20px' }}>Unlike many cruise lines that compete primarily on price, Disney focuses on delivering a premium vacation experience.</p>
+                                    <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#cbd5e1' }}>As a result, travelers often pay more upfront but receive additional value in several areas.</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -263,16 +369,16 @@ function DisneyCruiseWorthMoney() {
                     </div>
                     <div className="inc-grid">
                         <div className="inc-item inc-large" style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
-                            <img src='' alt="Main Dining" />
-                            <div className="inc-overlay"><span className="inc-title">Main Dining</span><p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Guests rotate through multiple themed restaurants throughout the voyage.</p></div>
+                            <img src={Image1} alt="World-Class Heritage" />
+                            <div className="inc-overlay"><span className="inc-title">World-Class Heritage</span><p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Global Cultural Immersion</p></div>
                         </div>
-                        <div className="inc-item"><img src='' alt="Broadway Entertainment" /><div className="inc-overlay"><span className="inc-title">Broadway Entertainment</span></div></div>
-                        <div className="inc-item"><img src='' alt="Character Experiences" /><div className="inc-overlay"><span className="inc-title">Character Experiences</span></div></div>
-                        <div className="inc-item"><img src='' alt="Youth Programs" /><div className="inc-overlay"><span className="inc-title">Youth Programs</span></div></div>
-                        <div className="inc-item"><img src='' alt="Pools and Recreation" /><div className="inc-overlay"><span className="inc-title">Pools & Recreation</span></div></div>
+                        <div className="inc-item"><img src={Image6} alt="The Icon of Imagination" /><div className="inc-overlay"><span className="inc-title">The Icon of Imagination</span></div></div>
+                        <div className="inc-item"><img src={Image3} alt="Majestic Frontiers" /><div className="inc-overlay"><span className="inc-title">Majestic Frontiers</span></div></div>
+                        <div className="inc-item"><img src={Image2} alt="Meaningful Discovery" /><div className="inc-overlay"><span className="inc-title">Meaningful Discovery</span></div></div>
+                        <div className="inc-item"><img src={Image4} alt="Celebration Redefined" /><div className="inc-overlay"><span className="inc-title">Celebration Redefined</span></div></div>
                         <div className="inc-item inc-wide" style={{ gridColumn: 'span 4' }}>
-                            <img src='' alt="Private Island Access" />
-                            <div className="inc-overlay"><span className="inc-title">Private Island Access</span><p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Most itineraries include beach access and many island activities at no extra charge.</p></div>
+                            <img src={Image5} alt="Refined Sanctuaries" />
+                            <div className="inc-overlay"><span className="inc-title">Refined Sanctuaries</span><p style={{ margin: '5px 0 0', fontSize: '14px', color: '#cbd5e1' }}>Sophisticated Adult Retreats</p></div>
                         </div>
                     </div>
                 </div>
@@ -807,33 +913,141 @@ function DisneyCruiseWorthMoney() {
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
+
                         {/* Disney vs Luxury */}
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-                            <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#274472', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}><Gem size={24} style={{ color: '#3b82f6' }} /> Disney vs Luxury Lines</h3>
-                            <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Disney's pricing occasionally approaches luxury territory. However, luxury lines often include:</p>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                {["Premium beverages", "Gratuities", "Shore excursions", "Butler service", "All-inclusive experiences"].map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><CheckCircle size={16} style={{ color: '#94a3b8', flexShrink: 0 }} /> {item}</li>
-                                ))}
-                            </ul>
-                            <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
-                                <p style={{ fontSize: '14px', color: '#475569', margin: 0, fontStyle: 'italic' }}>Disney generally focuses on family experiences rather than traditional luxury.</p>
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: window.innerWidth <= 360 ? '18px' : '30px',
+                            padding: '0',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            overflow: 'hidden'
+                        }}>
+                            {/* Image Header */}
+                            <div style={{ position: 'relative', height: '250px', backgroundColor: '#0f172a' }}>
+                                <img src={disneyWishSarabiLounge} alt="Disney vs Luxury" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+
+                                {/* Deepened Scrim for Text Visibility */}
+                                <div style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    background: 'linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%)',
+                                    zIndex: 1
+                                }}></div>
+
+                                {/* Title Overlay */}
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '0',
+                                    left: '0',
+                                    width: '100%',
+                                    padding: '25px 30px',
+                                    zIndex: 2,
+                                    color: '#ffffff'
+                                }}>
+                                    <h3 style={{
+                                        fontSize: '22px',
+                                        fontWeight: '800',
+                                        margin: 0,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                        textShadow: '0 2px 10px rgba(0,0,0,0.5)', // Added shadow
+                                        color: '#fff'
+                                    }}>
+                                        <Gem size={24} style={{ color: '#60a5fa' }} /> Disney vs Luxury Lines
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* Content Body */}
+                            <div style={{ padding: window.innerWidth <= 360 ? '24px 20px' : '30px', flexGrow: 1 }}>
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Disney's pricing occasionally approaches luxury territory. However, luxury lines often include:</p>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                    {["Premium beverages", "Gratuities", "Shore excursions", "Butler service", "All-inclusive experiences"].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
+                                            <div style={{ backgroundColor: '#f0f9ff', borderRadius: '50%', padding: '2px', display: 'flex' }}>
+                                                <CheckCircle size={16} style={{ color: '#3b82f6' }} />
+                                            </div>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div style={{ marginTop: '25px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
+                                    <p style={{ fontSize: '14px', color: '#475569', margin: 0, fontStyle: 'italic' }}>Disney generally focuses on family experiences rather than traditional luxury.</p>
+                                </div>
                             </div>
                         </div>
 
                         {/* Hidden Costs */}
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-                            <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#274472', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}><CircleDollarSign size={24} style={{ color: '#ef4444' }} /> Hidden Costs to Consider</h3>
-                            <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>While Disney includes many amenities, some expenses remain extra:</p>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                {["Alcoholic beverages", "Specialty dining (Palo & Remy)", "Spa treatments", "Shore excursions", "Internet packages"].map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><XCircle size={16} style={{ color: '#ef4444', flexShrink: 0 }} /> {item}</li>
-                                ))}
-                            </ul>
-                            <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', borderLeft: '3px solid #ef4444' }}>
-                                <p style={{ fontSize: '14px', color: '#475569', margin: 0, fontStyle: 'italic' }}>Understanding these costs helps travelers accurately compare value.</p>
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: window.innerWidth <= 360 ? '18px' : '30px',
+                            padding: '0',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            overflow: 'hidden'
+                        }}>
+                            {/* Image Header */}
+                            <div style={{ position: 'relative', height: '250px', backgroundColor: '#0f172a' }}>
+                                <img src={disneylandHotel} alt="Hidden Costs" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+
+                                {/* Deepened Scrim for Text Visibility */}
+                                <div style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    background: 'linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%)',
+                                    zIndex: 1
+                                }}></div>
+
+                                {/* Title Overlay */}
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '0',
+                                    left: '0',
+                                    width: '100%',
+                                    padding: '25px 30px',
+                                    zIndex: 2,
+                                    color: '#ffffff'
+                                }}>
+                                    <h3 style={{
+                                        fontSize: '22px',
+                                        fontWeight: '800',
+                                        margin: 0,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                        textShadow: '0 2px 10px rgba(0,0,0,0.5)', // Added shadow
+                                        color: '#fff'
+                                    }}>
+                                        <CircleDollarSign size={24} style={{ color: '#f87171' }} /> Hidden Costs to Consider
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* Content Body */}
+                            <div style={{ padding: window.innerWidth <= 360 ? '24px 20px' : '30px', flexGrow: 1 }}>
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>While Disney includes many amenities, some expenses remain extra:</p>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                    {["Alcoholic beverages", "Specialty dining (Palo & Remy)", "Spa treatments", "Shore excursions", "Internet packages"].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
+                                            <div style={{ backgroundColor: '#fef2f2', borderRadius: '50%', padding: '2px', display: 'flex' }}>
+                                                <XCircle size={16} style={{ color: '#ef4444' }} />
+                                            </div>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div style={{ marginTop: '25px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', borderLeft: '3px solid #ef4444' }}>
+                                    <p style={{ fontSize: '14px', color: '#475569', margin: 0, fontStyle: 'italic' }}>Understanding these costs helps travelers accurately compare value.</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -848,7 +1062,7 @@ function DisneyCruiseWorthMoney() {
                         <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>Take a tour of the dining, entertainment, and design details that justify Disney's premium pricing.</p>
                     </div>
                     <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
-                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/" title="Disney Cruise Line Value Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Y5tR4SB12FM" title="Disney Cruise Line Value Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </section>
@@ -909,7 +1123,7 @@ function DisneyCruiseWorthMoney() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <img src='' alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                                <img src={profileAH} alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>

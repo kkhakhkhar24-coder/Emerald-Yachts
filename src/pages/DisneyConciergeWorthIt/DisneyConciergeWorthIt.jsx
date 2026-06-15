@@ -1,45 +1,34 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone,
+    Compass, Sparkles, Anchor, Calendar, Gem, Crown, Phone,
     Globe, Heart, Utensils, Award,
-    CircleDollarSign, GraduationCap, Mic, FileText,
-    Music, Moon, Minus, Sun, X, Wine, Castle, Film, Theater, Waves,
-    Shield, CheckSquare, XCircle, Key, Coffee, Sofa, Bath,
-    DoorOpen, ConciergeBell, UsersRound, Armchair,
-    TrendingUp,
-    Info,
-    AlertCircle
+    CircleDollarSign, GraduationCap, Mic, FileText, Sun, X,
+    XCircle, Key, Sofa, DoorOpen, TrendingUp, Info
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/DisneyConciergeWorthIt/Hero_1.webp'
-// import hero2 from '../../assets/DisneyConciergeWorthIt/Hero_2.jpg'
-// import hero3 from '../../assets/DisneyConciergeWorthIt/Hero_3.webp'
-// import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
-// import Image1 from '../../assets/DisneyConciergeWorthIt/ConciergeLounge.jpg'
-// import Image2 from '../../assets/DisneyConciergeWorthIt/PriorityBoarding.jpg'
-// import Image3 from '../../assets/DisneyConciergeWorthIt/ConciergeSuite.jpg'
-// import Image4 from '../../assets/DisneyConciergeWorthIt/SunDeck.jpg'
-// import Image5 from '../../assets/DisneyConciergeWorthIt/ConciergeService.jpg'
-// import Image6 from '../../assets/DisneyConciergeWorthIt/RoyalSuite.jpg'
-// import Video1 from '../../assets/DisneyConciergeWorthIt/Video1.mp4'
-// import Video2 from '../../assets/DisneyConciergeWorthIt/Video2.mp4'
-// import Video3 from '../../assets/DisneyConciergeWorthIt/Video3.mp4'
-// import AH1 from '../../assets/DisneyConciergeWorthIt/AH1.jpg'
-// import AH2 from '../../assets/DisneyConciergeWorthIt/AH2.jpg'
-// import AH3 from '../../assets/DisneyConciergeWorthIt/AH3.jpg'
-// import AH4 from '../../assets/DisneyConciergeWorthIt/AH4.jpg'
-// import AH5 from '../../assets/DisneyConciergeWorthIt/AH5.jpg'
-
+import hero1 from '../../assets/DisneyConciergeWorthIt/disney-jollywood-nights-holiday-selfie-couple-walt-disney-world-christmas-event.jpg'
+import hero2 from '../../assets/DisneyConciergeWorthIt/bled-castle-overlooking-lake-bled-slovenia-family-travel-destination.jpg'
+import hero3 from '../../assets/DisneyConciergeWorthIt/disney-wish-palo-steakhouse-adults-only-fine-dining-table.jpg'
+import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
+import Image1 from '../../assets/DisneyConciergeWorthIt/disney-wish-sarabi-lounge-interior-modern-wood-architecture.jpg'
+import Image2 from '../../assets/DisneyConciergeWorthIt/kids-in-princess-dresses-at-sleeping-beauty-castle-disneyland-family-trip.jpg'
+import Image3 from '../../assets/DisneyConciergeWorthIt/mickeys-very-merry-christmas-party-magic-kingdom-holiday-celebration-disney-world.jpg'
+import Image4 from '../../assets/DisneyConciergeWorthIt/orlando-water-park-family-lazy-river-nighttime-adventure.jpg'
+import Image5 from '../../assets/DisneyConciergeWorthIt/disney-cruise-line-adults-only-lounge-nightlife-couple.jpg'
+import DisneyCruiseDocked from '../../assets/DisneyConciergeWorthIt/disney-cruise-line-ship-docked-at-lookout-cay-lighthouse-point-bahamas-pier.jpg'
+import KidPortholeView from '../../assets/DisneyConciergeWorthIt/kids-enjoying-ocean-view-porthole-disney-cruise-family-vacation.jpg'
+import WorldOfMarvel from '../../assets/DisneyConciergeWorthIt/worlds-of-marvel-restaurant-spider-man.jpg'
+import DisneyWish from '../../assets/DisneyConciergeWorthIt/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg'
+import DisneyWishLunaLounge from '../../assets/DisneyConciergeWorthIt/disney-wish-luna-lounge-family-entertainment-live-band.jpg'
 
 function DisneyConciergeWorthIt() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -379,38 +368,38 @@ function DisneyConciergeWorthIt() {
                     </div>
                     <div className="ben-grid">
                         <div className="ben-item ben-large">
-                            <img src='' alt="Concierge Lounge" />
+                            <img src={Image1} alt="A Royal Welcome to the Triton Class" />
                             <div className="ben-overlay">
-                                <span className="ben-title">Concierge Lounge Access</span>
-                                <p className="ben-desc">Complimentary snacks, specialty coffee, soft drinks, dedicated concierge staff, comfortable seating, and private relaxation space. Many guests use the lounge multiple times per day.</p>
+                                <span className="ben-title">Luminous Design</span>
+                                <p className="ben-desc">A Royal Welcome to the Triton Class</p>
                             </div>
                         </div>
                         <div className="ben-item">
-                            <img src='' alt="Priority Boarding" />
+                            <img src={Image2} alt="Living the Narrative" />
                             <div className="ben-overlay">
-                                <span className="ben-title">Priority Boarding</span>
-                                <p className="ben-desc">Less waiting, earlier access to the ship, more time to explore, and a faster start to your vacation.</p>
+                                <span className="ben-title">Living the Narrative</span>
+                                <p className="ben-desc">Where Dreams Become Shipboard Realities</p>
                             </div>
                         </div>
                         <div className="ben-item">
-                            <img src='' alt="Concierge Service" />
+                            <img src={Image3} alt="Evening Enchantment" />
                             <div className="ben-overlay">
-                                <span className="ben-title">Dedicated Concierge Team</span>
-                                <p className="ben-desc">Assistance with dining reservations, spa bookings, shore excursions, special requests, and celebration planning.</p>
+                                <span className="ben-title">Evening Enchantment</span>
+                                <p className="ben-desc">Curated Moments for Social Connection</p>
                             </div>
                         </div>
                         <div className="ben-item">
-                            <img src='' alt="Exclusive Sun Deck" />
+                            <img src={Image4} alt="Unmatched Recreation" />
                             <div className="ben-overlay">
-                                <span className="ben-title">Exclusive Sun Deck</span>
-                                <p className="ben-desc">Additional seating, less crowded spaces, premium views, and a relaxing atmosphere—especially valuable during sea days.</p>
+                                <span className="ben-title">Unmatched Recreation</span>
+                                <p className="ben-desc">High-Energy Adventures for All Ages</p>
                             </div>
                         </div>
                         <div className="ben-item">
-                            <img src='' alt="Priority Tendering" />
+                            <img src={Image5} alt="Priority Tendering" />
                             <div className="ben-overlay">
-                                <span className="ben-title">Priority Tendering</span>
-                                <p className="ben-desc">Faster arrival at destinations and reduced waiting times at ports requiring tender transportation.</p>
+                                <span className="ben-title">Refined Sanctuaries</span>
+                                <p className="ben-desc">Elegant Escapes Tailored for Adults</p>
                             </div>
                         </div>
                     </div>
@@ -570,46 +559,89 @@ function DisneyConciergeWorthIt() {
                 </div>
             </section>
 
-            {/* ═══════════════ CONCIERGE ACCOMMODATIONS & EXCLUSIVE PERKS ═══════════════ */}
+            {/* ═══════════════ CONCIERGE ACCOMMODATIONS & EXCLUSIVE PERKS (FIXED HEIGHT) ═══════════════ */}
             <section className="medi-concierge-luxury-section" style={{
                 padding: 'clamp(70px, 10vw, 120px) 0',
-                backgroundColor: '#dce6f5', // Light Navy Blue Background
+                backgroundColor: '#dce6f5',
                 fontFamily: 'sans-serif',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
                 <style>{`
-        .concierge-light-glass { 
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(39, 68, 114, 0.2);
-            backdrop-filter: blur(10px);
-        }
-        .concierge-light-glass:hover { 
-            transform: translateY(-8px); 
-            border-color: #274472; 
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 20px 40px rgba(39, 68, 114, 0.15);
-        }
-        .concierge-premium-card {
+        .perk-editorial-card {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr; /* Refined ratio for a sleeker look */
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(39, 68, 114, 0.08);
             transition: all 0.4s ease;
+            height: 320px; /* FIXED SLIM HEIGHT FOR DESKTOP */
+            margin-bottom: 24px;
+        }
+        .perk-editorial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(39, 68, 114, 0.12);
+        }
+        .perk-image-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .perk-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .perk-editorial-card:hover .perk-image-box img {
+            transform: scale(1.05);
+        }
+        .perk-content-box {
+            padding: clamp(24px, 4vw, 40px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .stateroom-luxury-card {
             background: #ffffff;
             border-radius: 30px;
-            padding: 45px 35px;
-            text-align: center;
+            overflow: hidden;
             border: 1px solid #e2e8f0;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex;
+            flex-direction: column;
         }
-        .concierge-premium-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 25px 60px rgba(39, 68, 114, 0.15);
+        .stateroom-luxury-card:hover {
+            transform: scale(1.02);
             border-color: #274472;
+            box-shadow: 0 20px 50px rgba(39, 68, 114, 0.12);
+        }
+        .card-image-box {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        .card-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 991px) {
+            .perk-editorial-card { 
+                grid-template-columns: 1fr; 
+                height: auto; /* Allow height to expand on mobile */
+            }
+            .perk-image-box { height: 220px; }
         }
     `}</style>
 
                 <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 clamp(16px, 5vw, 40px)' }}>
 
                     {/* SECTION HEADER */}
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <span style={{
                             display: 'inline-block', fontSize: '12px', fontWeight: '800', color: '#274472',
                             letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: '16px',
@@ -622,52 +654,48 @@ function DisneyConciergeWorthIt() {
                         }}>Staterooms & Exclusive Perks</h2>
 
                         <div style={{ width: '80px', height: '4px', backgroundColor: '#274472', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '850px', margin: '30px auto 0', lineHeight: '1.6' }}>
+                        <p style={{ fontSize: '18px', color: '#475569', maxWidth: '850px', margin: '30px auto 0', lineHeight: '1.6' }}>
                             A Disney Concierge stay represents the highest tier of nautical luxury, designed for those who prioritize absolute convenience.
                         </p>
                     </div>
 
-                    {/* TOP ROW: EXCLUSIVE PERKS (FROSTED LIGHT NAVY CARDS) */}
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr',
-                        gap: '30px',
-                        marginBottom: '60px'
-                    }}>
-                        {/* Priority Tendering */}
-                        <div className="concierge-light-glass" style={{ padding: '45px', borderRadius: '30px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '25px' }}>
-                                <div style={{
-                                    color: '#ffffff', backgroundColor: '#274472',
-                                    padding: '14px', borderRadius: '15px', display: 'flex'
-                                }}>
-                                    <Anchor size={28} />
-                                </div>
-                                <h3 style={{ fontSize: '24px', fontWeight: '800', margin: 0, color: '#1e293b' }}>Priority Tendering</h3>
+                    {/* TOP ROW: EXCLUSIVE PERKS (SLIM EDITORIAL CARDS) */}
+                    <div style={{ maxWidth: '1000px', margin: '0 auto 60px auto' }}>
+
+                        {/* Perk 1: Priority Tendering */}
+                        <div className="perk-editorial-card">
+                            <div className="perk-image-box">
+                                <img src={DisneyCruiseDocked} alt="Priority Access" />
                             </div>
-                            <p style={{ color: '#475569', fontSize: '17px', lineHeight: '1.7', margin: 0 }}>
-                                Receive expedited access at ports requiring tender transportation. Skip the lines and be among the first to explore every destination on your itinerary.
-                            </p>
+                            <div className="perk-content-box">
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
+                                    <Anchor size={22} style={{ color: '#3b82f6' }} />
+                                    <h3 style={{ fontSize: '20px', fontWeight: '800', margin: 0, color: '#1e293b' }}>Priority Tendering</h3>
+                                </div>
+                                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.6', margin: 0 }}>
+                                    Receive expedited access at ports requiring tender transportation. Skip the lines and be among the first to explore every destination on your itinerary.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Exclusive Sun Deck */}
-                        <div className="concierge-light-glass" style={{ padding: '45px', borderRadius: '30px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '25px' }}>
-                                <div style={{
-                                    color: '#ffffff', backgroundColor: '#274472',
-                                    padding: '14px', borderRadius: '15px', display: 'flex'
-                                }}>
-                                    <Sun size={28} />
+                        {/* Perk 2: Exclusive Sun Deck */}
+                        <div className="perk-editorial-card" style={{ gridTemplateColumns: window.innerWidth <= 991 ? '1fr' : '1.1fr 0.9fr' }}>
+                            <div className="perk-content-box" style={{ order: window.innerWidth <= 991 ? 2 : 1 }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
+                                    <Sun size={22} style={{ color: '#3b82f6' }} />
+                                    <h3 style={{ fontSize: '20px', fontWeight: '800', margin: 0, color: '#1e293b' }}>Exclusive Sun Deck</h3>
                                 </div>
-                                <h3 style={{ fontSize: '24px', fontWeight: '800', margin: 0, color: '#1e293b' }}>Exclusive Sun Deck</h3>
+                                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.6', margin: 0 }}>
+                                    A private oasis reserved solely for Concierge guests. Enjoy premium lounge seating, dedicated service, and breathtaking panoramic ocean views away from the main crowds.
+                                </p>
                             </div>
-                            <p style={{ color: '#475569', fontSize: '17px', lineHeight: '1.7', margin: 0 }}>
-                                A private deck reserved solely for Concierge guests. Enjoy plush lounge seating, dedicated service, and breathtaking panoramic ocean views.
-                            </p>
+                            <div className="perk-image-box" style={{ order: window.innerWidth <= 991 ? 1 : 2 }}>
+                                <img src={KidPortholeView} alt="Concierge Sun Deck" />
+                            </div>
                         </div>
                     </div>
 
-                    {/* BOTTOM ROW: ACCOMMODATIONS GRID (WHITE CARDS FOR HIGH READABILITY) */}
+                    {/* BOTTOM ROW: ACCOMMODATIONS GALLERY (VERTICAL CARDS) */}
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: window.innerWidth <= 650 ? '1fr' : window.innerWidth <= 1024 ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)',
@@ -676,42 +704,57 @@ function DisneyConciergeWorthIt() {
                         {[
                             {
                                 t: "Family Verandah Staterooms",
-                                d: "The ideal balance of luxury and value, offering the full range of Concierge services in a stateroom designed for family comfort.",
-                                i: <DoorOpen size={24} />
+                                d: "The ideal balance of luxury and value, offering the full range of Concierge services in a room designed for family comfort.",
+                                i: <DoorOpen size={20} />,
+                                img: WorldOfMarvel
                             },
                             {
                                 t: "One-Bedroom Concierge Suites",
-                                d: "Expansive suites featuring a separate master bedroom, living area, and dining table—the perfect choice for those seeking extra privacy.",
-                                i: <Sofa size={24} />
+                                d: "Expansive suites featuring a separate master bedroom, living area, and dining table—the perfect choice for extra privacy.",
+                                i: <Sofa size={20} />,
+                                img: DisneyWish
                             },
                             {
                                 t: "The Royal Suites",
-                                d: "The most luxurious accommodations in the fleet. Large verandas, multiple bathrooms, and high-end finishes throughout every room.",
-                                i: <Crown size={24} />
+                                d: "The most luxurious accommodations in the fleet. Large verandas, multiple bathrooms, and high-end finishes throughout.",
+                                i: <Crown size={20} />,
+                                img: DisneyWishLunaLounge
                             }
                         ].map((suite, idx) => (
-                            <div key={idx} className="concierge-premium-card">
-                                <div style={{
-                                    width: '64px', height: '64px', borderRadius: '16px',
-                                    backgroundColor: '#e8f0fe', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                    margin: '0 auto 24px', color: '#274472'
-                                }}>{suite.i}</div>
-                                <h4 style={{ color: '#1e293b', fontSize: '20px', fontWeight: '800', marginBottom: '16px', lineHeight: '1.3' }}>{suite.t}</h4>
-                                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.6', margin: 0 }}>{suite.d}</p>
+                            <div key={idx} className="stateroom-luxury-card">
+                                <div className="card-image-box">
+                                    <img src={suite.img} alt={suite.t} loading="lazy" />
+                                    <div style={{
+                                        position: 'absolute', top: '15px', left: '15px',
+                                        background: '#274472', color: '#fff',
+                                        fontSize: '9px', fontWeight: '800', padding: '5px 10px',
+                                        borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '1px'
+                                    }}>Signature Suite</div>
+                                </div>
+                                <div style={{ padding: '30px', textAlign: 'center' }}>
+                                    <div style={{
+                                        width: '44px', height: '44px', borderRadius: '12px',
+                                        backgroundColor: '#e8f0fe', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                        margin: '0 auto 18px', color: '#274472'
+                                    }}>{suite.i}</div>
+                                    <h4 style={{ color: '#1e293b', fontSize: '19px', fontWeight: '800', marginBottom: '12px' }}>{suite.t}</h4>
+                                    <p style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', margin: 0 }}>{suite.d}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
 
-                    {/* EXPERT TIP - CLEAN BORDERED FOOTER */}
+                    {/* EXPERT TIP FOOTER */}
                     <div style={{
-                        marginTop: '50px', padding: '30px', backgroundColor: 'rgba(39, 68, 114, 0.08)', borderRadius: '25px',
+                        marginTop: '50px', padding: '30px', backgroundColor: '#ffffff', borderRadius: '25px',
                         border: '1px solid rgba(39, 68, 114, 0.2)', textAlign: 'center', display: 'flex',
                         flexDirection: window.innerWidth <= 600 ? 'column' : 'row',
-                        alignItems: 'center', justifyContent: 'center', gap: '20px'
+                        alignItems: 'center', justifyContent: 'center', gap: '20px',
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.03)'
                     }}>
                         <Ship size={24} style={{ color: '#274472' }} />
                         <p style={{ fontSize: '16px', color: '#1e293b', fontWeight: '700', margin: 0 }}>
-                            Planning Note: <span style={{ fontWeight: '400', color: '#475569' }}>Concierge inventory is limited. For the best selection, we recommend booking as soon as itineraries are released—often 15+ months in advance.</span>
+                            Planning Note: <span style={{ fontWeight: '400', color: '#475569' }}>Concierge inventory is limited. We recommend booking as soon as itineraries are released.</span>
                         </p>
                     </div>
                 </div>
@@ -1500,7 +1543,7 @@ function DisneyConciergeWorthIt() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <img src='' alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                                <img src={profileAH} alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
