@@ -4,18 +4,17 @@ import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 // ── Replace these with your actual image assets ──
-// import disneyShipImg from '../../assets/DisneyVsRC/disney-ship.webp'
-// import rcShipImg from '../../assets/DisneyVsRC/rc-ship.webp'
-// import disneyCharacterImg from '../../assets/DisneyVsRC/disney-characters.webp'
-// import rcAttractionImg from '../../assets/DisneyVsRC/rc-attractions.webp'
-// import disneyDiningImg from '../../assets/DisneyVsRC/disney-dining.webp'
-// import rcDiningImg from '../../assets/DisneyVsRC/rc-dining.webp'
-// import castavayCayImg from '../../assets/DisneyVsRC/castawaycay.webp'
-// import cocoCayImg from '../../assets/DisneyVsRC/cococay.webp'
-// import disneyEntertainImg from '../../assets/DisneyVsRC/disney-entertainment.webp'
-// import rcEntertainImg from '../../assets/DisneyVsRC/rc-entertainment.webp'
-// import familyImg from '../../assets/DisneyVsRC/family-cruise.webp'
-// import teensImg from '../../assets/DisneyVsRC/teens-cruise.webp'
+import disneyShipImg from '../../assets/Disneyvsroyalcaribbean/disney-cruise-line-caribbean-cruise-vacation-tropical-island-port-ocean-view.jpg'
+import rcShipImg from '../../assets/Disneyvsroyalcaribbean/disney-cruise-line-vacation-packages-special-offers.webp'
+
+import disneyDiningImg from '../../assets/Disneyvsroyalcaribbean/disney-wish-enchante-restaurant-luxury-booth-seating-adults.webp'
+import rcDiningImg from '../../assets//Disneyvsroyalcaribbean/disney-wish-oceaneer-club-kids-space-interactive-slide.webp'
+import castavayCayImg from '../../assets/Disneyvsroyalcaribbean/caribbean-beach-hammock-relaxation-family-island-vacation-shore-excursion.webp'
+import cocoCayImg from '../../assets/Disneyvsroyalcaribbean/kids-splash-zone-water-play-disney-cruise-ship-family-vacation.webp'
+import disneyEntertainImg from '../../assets/Disneyvsroyalcaribbean/disney-cruise-vibe-teen-club-foosball-youth-activities.webp'
+import rcEntertainImg from '../../assets/Disneyvsroyalcaribbean/disney-wish-palo-steakhouse-adult-exclusive-restaurant-layout.webp'
+import familyImg from '../../assets/Disneyvsroyalcaribbean/children-meeting-olaf-at-frozen-themed-disney-cruise-event.webp'
+import teensImg from '../../assets/Disneyvsroyalcaribbean/disney-wish-atrium-oceaneer-club-secret-entrance-slide.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -27,13 +26,13 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-// import hero1 from '../../assets/DisneyVsRC/hero1.jpg'
-// import hero2 from '../../assets/DisneyVsRC/hero2.jpg'
-// import hero3 from '../../assets/DisneyVsRC/hero3.jpg'
+import hero1 from '../../assets/Disneyvsroyalcaribbean/disney-cruise-inside-passage-alaska-fjord-glacier-scenery.webp'
+import hero2 from '../../assets/Disneyvsroyalcaribbean/best-disney-cruise-caribbean-family-beach-vacation-excursion.webp'
+import hero3 from '../../assets/Disneyvsroyalcaribbean/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.webp'
 
 function DisneyVsRoyalCaribbean() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -364,8 +363,8 @@ function DisneyVsRoyalCaribbean() {
                             border: '1px solid rgba(39,68,114,0.1)'
                         }}>
                             <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
-                                {/* <img src={disneyShipImg} alt="Disney Cruise Line ship"
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                <img src={disneyShipImg} alt="Disney Cruise Line ship"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 55%)' }} />
                                 <div style={{
                                     position: 'absolute', bottom: '16px', left: '20px',
@@ -418,8 +417,8 @@ function DisneyVsRoyalCaribbean() {
                             border: '1px solid rgba(39,68,114,0.1)'
                         }}>
                             <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
-                                {/* <img src={rcShipImg} alt="Royal Caribbean ship"
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                <img src={rcShipImg} alt="Royal Caribbean ship"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 55%)' }} />
                                 <div style={{
                                     position: 'absolute', bottom: '16px', left: '20px',
@@ -583,8 +582,8 @@ function DisneyVsRoyalCaribbean() {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px', marginBottom: '48px' }}>
                         {/* Disney Family */}
                         <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', height: '360px', boxShadow: '0 8px 32px rgba(39,68,114,0.15)' }}>
-                            {/* <img src={familyImg} alt="Disney family cruise experience"
-                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                            <img src={familyImg} alt="Disney family cruise experience"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 50%)' }} />
                             <div style={{ position: 'absolute', bottom: '24px', left: '24px', right: '24px' }}>
                                 <div style={{ background: navy, display: 'inline-block', color: '#fff', fontSize: '0.72rem', fontWeight: 700, letterSpacing: '2px', padding: '4px 12px', borderRadius: '20px', marginBottom: '10px' }}>DISNEY CRUISE LINE</div>
@@ -595,8 +594,8 @@ function DisneyVsRoyalCaribbean() {
 
                         {/* Royal Caribbean Teens */}
                         <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', height: '360px', boxShadow: '0 8px 32px rgba(39,68,114,0.15)' }}>
-                            {/* <img src={teensImg} alt="Royal Caribbean teens activities"
-                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                            <img src={teensImg} alt="Royal Caribbean teens activities"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 50%)' }} />
                             <div style={{ position: 'absolute', bottom: '24px', left: '24px', right: '24px' }}>
                                 <div style={{ background: navyDark2, display: 'inline-block', color: '#fff', fontSize: '0.72rem', fontWeight: 700, letterSpacing: '2px', padding: '4px 12px', borderRadius: '20px', marginBottom: '10px' }}>ROYAL CARIBBEAN</div>
@@ -764,11 +763,11 @@ function DisneyVsRoyalCaribbean() {
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                             {[
-                                // { img: disneyDiningImg, label: 'Disney Themed Dining', sub: 'Rotational dining with your serving team following you through themed restaurants' },
-                                // { img: rcDiningImg, label: 'Royal Caribbean Specialty Dining', sub: 'Greater dining variety with multiple specialty restaurant options' }
+                                { img: disneyDiningImg, label: 'Disney Themed Dining', sub: 'Rotational dining with your serving team following you through themed restaurants' },
+                                { img: rcDiningImg, label: 'Royal Caribbean Specialty Dining', sub: 'Greater dining variety with multiple specialty restaurant options' }
                             ].map(({ img, label, sub }, i) => (
                                 <div key={i} style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', height: '220px', boxShadow: '0 4px 20px rgba(39,68,114,0.12)' }}>
-                                    {/* <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                    <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.82) 0%, transparent 50%)' }} />
                                     <div style={{ position: 'absolute', bottom: '16px', left: '18px', right: '18px' }}>
                                         <p style={{ color: '#fff', fontSize: '0.9rem', fontWeight: 700, margin: '0 0 4px' }}>{label}</p>
@@ -789,11 +788,11 @@ function DisneyVsRoyalCaribbean() {
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                             {[
-                                // { img: disneyEntertainImg, label: 'Disney Entertainment', sub: 'Broadway-caliber productions, character appearances, deck parties and fireworks at sea' },
-                                // { img: rcEntertainImg, label: 'Royal Caribbean Entertainment', sub: 'Aqua shows, ice skating, Broadway musicals, live music and comedy clubs' }
+                                { img: disneyEntertainImg, label: 'Disney Entertainment', sub: 'Broadway-caliber productions, character appearances, deck parties and fireworks at sea' },
+                                { img: rcEntertainImg, label: 'Royal Caribbean Entertainment', sub: 'Aqua shows, ice skating, Broadway musicals, live music and comedy clubs' }
                             ].map(({ img, label, sub }, i) => (
                                 <div key={i} style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', height: '220px', boxShadow: '0 4px 20px rgba(39,68,114,0.12)' }}>
-                                    {/* <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                    <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.82) 0%, transparent 50%)' }} />
                                     <div style={{ position: 'absolute', bottom: '16px', left: '18px', right: '18px' }}>
                                         <p style={{ color: '#fff', fontSize: '0.9rem', fontWeight: 700, margin: '0 0 4px' }}>{label}</p>
@@ -814,11 +813,11 @@ function DisneyVsRoyalCaribbean() {
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                             {[
-                                // { img: castavayCayImg, label: 'Castaway Cay & Lookout Cay', sub: 'Relaxation, family activities, character interactions and beautiful beaches' },
-                                // { img: cocoCayImg, label: 'Perfect Day at CocoCay', sub: 'Massive water park, thrill rides, zip lines and adventure attractions' }
+                                { img: castavayCayImg, label: 'Castaway Cay & Lookout Cay', sub: 'Relaxation, family activities, character interactions and beautiful beaches' },
+                                { img: cocoCayImg, label: 'Perfect Day at CocoCay', sub: 'Massive water park, thrill rides, zip lines and adventure attractions' }
                             ].map(({ img, label, sub }, i) => (
                                 <div key={i} style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', height: '240px', boxShadow: '0 4px 20px rgba(39,68,114,0.12)' }}>
-                                    {/* <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                    <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,28,46,0.82) 0%, transparent 50%)' }} />
                                     <div style={{ position: 'absolute', bottom: '16px', left: '18px', right: '18px' }}>
                                         <p style={{ color: '#fff', fontSize: '0.95rem', fontWeight: 700, margin: '0 0 5px' }}>{label}</p>

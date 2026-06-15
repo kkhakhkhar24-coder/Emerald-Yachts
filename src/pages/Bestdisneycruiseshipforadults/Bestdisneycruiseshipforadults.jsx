@@ -4,25 +4,25 @@ import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 // Disney Ship Hero Images — place in src/assets/BestDisneyCruise/
-// import hero1 from '../../assets/BestDisneyCruise/hero1.jpg'
-// import hero2 from '../../assets/BestDisneyCruise/hero2.jpg'
-// import hero3 from '../../assets/BestDisneyCruise/hero3.jpg'
+import hero1 from '../../assets/Bestdisneycruiseshipforadults/couple-walking-on-beach-near-disney-cruise-ship.webp'
+import hero2 from '../../assets/Bestdisneycruiseshipforadults/adults-relaxing-at-disney-cruise-pool-bar-with-tropical-drinks.webp'
+import hero3 from '../../assets/Bestdisneycruiseshipforadults/adults-only-pool-lounge-area-on-disney-cruise-ship.webp'
 
 // Ship Feature Images
-// import disneyTreasure from '../../assets/BestDisneyCruise/disney-treasure.jpg'
-// import disneyWish from '../../assets/BestDisneyCruise/disney-wish.jpg'
-// import disneyFantasy from '../../assets/BestDisneyCruise/disney-fantasy.jpg'
-// import disneyDream from '../../assets/BestDisneyCruise/disney-dream.jpg'
-// import disneyWonder from '../../assets/BestDisneyCruise/disney-wonder.jpg'
-// import quietCovePool from '../../assets/BestDisneyCruise/quiet-cove-pool.jpg'
-// import sensesSpa from '../../assets/BestDisneyCruise/senses-spa.jpg'
-// import paloRestaurant from '../../assets/BestDisneyCruise/palo-restaurant.jpg'
-// import enchante from '../../assets/BestDisneyCruise/enchante.jpg'
-// import adultLounge from '../../assets/BestDisneyCruise/adult-lounge.jpg'
-// import mediterraneanCruise from '../../assets/BestDisneyCruise/mediterranean-cruise.jpg'
-// import alaskaCruise from '../../assets/BestDisneyCruise/alaska-cruise.jpg'
-// import caribbeanCruise from '../../assets/BestDisneyCruise/caribbean-cruise.jpg'
-// import tranAtlantic from '../../assets/BestDisneyCruise/transatlantic-cruise.jpg'
+import disneyTreasure from '../../assets/Bestdisneycruiseshipforadults/disney-treasure-adults-only-lounge-ocean-view.webp'
+import disneyWish from '../../assets/Bestdisneycruiseshipforadults/romantic-couple-cruise-ship-cocktails-adult-vacation-onboard-experience.webp'
+import disneyFantasy from '../../assets/Bestdisneycruiseshipforadults/disney-wish-aquamouse-water-coaster-ride-family-vacation.webp'
+import disneyDream from '../../assets/Bestdisneycruiseshipforadults/senses-spa-relaxation-disney-cruise.webp'
+import disneyWonder from '../../assets/Bestdisneycruiseshipforadults/disney-cruise-alaska-itinerary-couples-vacation-deck-view.webp'
+import quietCovePool from '../../assets/Bestdisneycruiseshipforadults/disney-cruise-quiet-cove-pool-adults-only-deck.webp'
+import sensesSpa from '../../assets/Bestdisneycruiseshipforadults/disney-wish-quiet-cove-infinity-pool-adults-only-sunset.webp'
+import paloRestaurant from '../../assets/Bestdisneycruiseshipforadults/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.webp'
+import enchante from '../../assets/Bestdisneycruiseshipforadults/Disney Treasure Periscope Pub.webp'
+import adultLounge from '../../assets/Bestdisneycruiseshipforadults/adult-piano-lounge-disney-cruise-nightlife-live-music-cocktail-bar.webp'
+import mediterraneanCruise from '../../assets/Bestdisneycruiseshipforadults/hero2.jpg'
+import alaskaCruise from '../../assets/Bestdisneycruiseshipforadults/disney-cruise-alaska-glacier-view-inside-passage.webp'
+import caribbeanCruise from '../../assets/Bestdisneycruiseshipforadults/disney-cruise-ship-at-caribbean-island-with-water-sports.webp'
+import tranAtlantic from '../../assets/Bestdisneycruiseshipforadults/disney-cruise-quiet-cove-pool-deck-adults-only-relaxation.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -37,7 +37,7 @@ import { useState, useEffect } from 'react'
 
 function BestDisneyCruiseShipForAdults() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -67,35 +67,35 @@ function BestDisneyCruiseShipForAdults() {
         {
             title: 'Disney Treasure',
             badge: '#1 Overall Adult Experience',
-            // img: disneyTreasure,
+            img: disneyTreasure,
             bestFor: ['Couples', 'Luxury travelers', 'Disney fans', 'Empty nesters', 'First-time Disney cruisers'],
             highlights: ['Elevated Dining', 'Premium Lounges', 'Adult Entertainment', 'Modern Design']
         },
         {
             title: 'Disney Wish',
             badge: 'Best for Couples',
-            // img: disneyWish,
+            img: disneyWish,
             bestFor: ['Honeymooners', 'Anniversary travelers', 'Romantic couples', 'Luxury suite seekers'],
             highlights: ['Palo Steakhouse', 'Enchanté', 'Quiet Cove', 'Elegant Suites']
         },
         {
             title: 'Disney Fantasy',
             badge: 'Best Adult Entertainment',
-            // img: disneyFantasy,
+            img: disneyFantasy,
             bestFor: ['Nightlife seekers', 'Entertainment lovers', 'Mature travelers', 'Caribbean itinerary fans'],
             highlights: ['Multiple Themed Lounges', 'Live Music', 'Nightclubs', 'Broadway Productions']
         },
         {
             title: 'Disney Dream',
             badge: 'Best for Relaxation',
-            // img: disneyDream,
+            img: disneyDream,
             bestFor: ['First-time cruisers', 'Relaxation seekers', 'Short getaway travelers', 'Spa enthusiasts'],
             highlights: ['Quiet Cove Pool', 'Excellent Spa', 'Adult Restaurants', 'Elegant Atmosphere']
         },
         {
             title: 'Disney Wonder',
             badge: 'Best for Alaska',
-            // img: disneyWonder,
+            img: disneyWonder,
             bestFor: ['Nature enthusiasts', 'Adventure travelers', 'Alaska itinerary seekers', 'Non-Disney fans'],
             highlights: ['Glacier Viewing', 'Nature Excursions', 'Educational Programming', 'Scenic Routes']
         }
@@ -595,35 +595,35 @@ function BestDisneyCruiseShipForAdults() {
                     }}>
                         {[
                             {
-                                // img: quietCovePool,
+                                img: quietCovePool,
                                 icon: <Sun size={22} />,
                                 title: 'Quiet Cove Pool',
                                 desc: 'Available exclusively for adults.',
                                 features: ['Pool', 'Hot tubs', 'Lounge chairs', 'Bar service']
                             },
                             {
-                                // img: sensesSpa,
+                                img: sensesSpa,
                                 icon: <Sparkles size={22} />,
                                 title: 'Senses Spa',
                                 desc: "Disney's luxury spa experience includes:",
                                 features: ['Massages', 'Couples treatments', 'Thermal suites', 'Hydrotherapy']
                             },
                             {
-                                // img: paloRestaurant,
+                                img: paloRestaurant,
                                 icon: <Utensils size={22} />,
                                 title: 'Palo',
                                 desc: 'An upscale Italian-inspired dining venue. Popular for:',
                                 features: ['Brunch', 'Romantic dinners', 'Wine pairings']
                             },
                             {
-                                // img: enchante,
+                                img: enchante,
                                 icon: <Crown size={22} />,
                                 title: 'Enchanté',
                                 desc: "Disney's most luxurious restaurant. Designed for adults seeking a fine dining experience.",
                                 features: ['Fine dining', 'Exclusive menu', 'Premium wines']
                             },
                             {
-                                // img: adultLounge,
+                                img: adultLounge,
                                 icon: <Music size={22} />,
                                 title: 'Adult Lounges',
                                 desc: 'Disney ships feature:',
@@ -723,25 +723,25 @@ function BestDisneyCruiseShipForAdults() {
                     }}>
                         {[
                             {
-                                // img: mediterraneanCruise,
+                                img: mediterraneanCruise,
                                 region: 'Mediterranean Cruises',
                                 desc: 'Perfect for culture, history, and food lovers.',
                                 icon: <Globe size={20} />
                             },
                             {
-                                // img: alaskaCruise,
+                                img: alaskaCruise,
                                 region: 'Alaska Cruises',
                                 desc: 'Ideal for nature enthusiasts.',
                                 icon: <Compass size={20} />
                             },
                             {
-                                // img: tranAtlantic,
+                                img: tranAtlantic,
                                 region: 'Transatlantic Cruises',
                                 desc: 'Excellent for relaxation and sea days.',
                                 icon: <Anchor size={20} />
                             },
                             {
-                                // img: caribbeanCruise,
+                                img: caribbeanCruise,
                                 region: 'Caribbean Cruises',
                                 desc: 'Great balance of beaches and onboard activities.',
                                 icon: <Sun size={20} />
