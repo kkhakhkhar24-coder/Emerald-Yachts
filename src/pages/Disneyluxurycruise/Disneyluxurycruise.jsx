@@ -2,9 +2,9 @@ import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
 
 // ── HERO IMAGES (replace with your actual imports) ───────────────────────────
-import hero1 from '../../assets/Disneyluxurycruise/disney-cruise-norwegian-fjord-scenic-cruise-geirangerfjord-norway.jpeg'
-import hero2 from '../../assets/Disneyluxurycruise/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.jpg'
-import hero3 from '../../assets/Disneyluxurycruise/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg'
+import hero1 from '../../assets/DisneyLuxuryCruise/disney-cruise-norwegian-fjord-scenic-cruise-geirangerfjord-norway.jpeg'
+import hero2 from '../../assets/DisneyLuxuryCruise/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.jpg'
+import hero3 from '../../assets/DisneyLuxuryCruise/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg'
 
 // ── SECTION IMAGES (replace with your actual imports) ────────────────────────
 import adultDiningImg from '../../assets/DisneyLuxuryCruise/family-with-woody-toy-story-land-disney-hollywood-studios.jpg'
