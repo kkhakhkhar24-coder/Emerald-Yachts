@@ -1,29 +1,32 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone,
-    Globe, Heart, Utensils, Award,
-    CircleDollarSign, GraduationCap, Mic, FileText,
-    Music, Moon, Minus, Sun, X, Wine, Castle, Film, Theater, Waves,
-    Shield, CheckSquare, XCircle, Key, Coffee, Sofa, Bath,
-    DoorOpen, ConciergeBell, UsersRound, Armchair,
-    TrendingUp, Info, AlertCircle, Wand2, Sword,
-    TreePalm, Umbrella, Shrimp, Bike, Fish, Sailboat, UtensilsCrossed
+    Star, Clock, Users, CheckCircle,
+    Compass, Sparkles, Anchor, Crown, Phone, Globe, Heart, Award,
+    GraduationCap, Mic, FileText, Sun, Waves, Info, Wand2,
+    Umbrella, Bike, UtensilsCrossed
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/CastawayVsLookout/Hero_1.webp'
-// import hero2 from '../../assets/CastawayVsLookout/Hero_2.jpg'
-// import hero3 from '../../assets/CastawayVsLookout/Hero_3.webp'
-// import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
+import hero1 from '../../assets/CastawayCayVsLookoutCay/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg'
+import hero2 from '../../assets/CastawayCayVsLookoutCay/disney-cruise-ship-at-castaway-cay-bahamas-tropical-island-view.jpeg'
+import hero3 from '../../assets/CastawayCayVsLookoutCay/couple-walking-on-castaway-cay-beach-disney-cruise-romantic-getaway.jpg'
+import GalleryMickeyMinnie from '../../assets/CastawayCayVsLookoutCay/disney-castaway-cay-mickey-minnie-mouse-beach-characters.jpg'
+import GalleryTurquoiseBeach from '../../assets/CastawayCayVsLookoutCay/disney-castaway-cay-private-island-turquoise-water-beach-vacation.jpg'
+import GalleryDonaldDaisy from '../../assets/CastawayCayVsLookoutCay/disney-cruise-beach-characters-donald-daisy-duck-castaway-cay.jpg'
+import GalleryFamilyBeach from '../../assets/CastawayCayVsLookoutCay/family-beach-day-at-castaway-cay-disney-cruise-private-island-bahamas.jpg'
+import GalleryFestive from '../../assets/CastawayCayVsLookoutCay/mickey-mouse-christmas-tree-disney-cruise.jpg'
+import GalleryHammock from '../../assets/CastawayCayVsLookoutCay/relaxing-in-hammock-at-castaway-cay-disney-cruise-private-island.jpg'
+import AtmosphereCastaway from '../../assets/CastawayCayVsLookoutCay/disney-cruise-line-castaway-cay-family-beach-sandcastle.jpg'
+import ProsCastaway from '../../assets/CastawayCayVsLookoutCay/disney-castaway-cay-island-beach-view-kids.jpg'
+import ProsLookout from '../../assets/CastawayCayVsLookoutCay/mother-and-son-playing-on-castaway-cay-beach-disney-private-island-bahamas.jpeg'
+import profileAH from '../../assets/CastawayCayVsLookoutCay/Profile_AH.jpg'
 
 function CastawayCayVsLookoutCay() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const mediTimer = setInterval(() => {
@@ -216,6 +219,18 @@ function CastawayCayVsLookoutCay() {
                         <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: "#274472", fontWeight: '900', marginBottom: '20px', letterSpacing: '-0.03em', lineHeight: '1.1' }}>Atmosphere & Beach Comparison</h2>
                         <div style={{ width: '80px', height: '4px', backgroundColor: '#274472', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
+                    {/* SIDE-BY-SIDE ISLAND IMAGES */}
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: '24px', marginBottom: '50px' }}>
+                        <div style={{ borderRadius: '24px', overflow: 'hidden', position: 'relative', aspectRatio: '16/9', backgroundColor: '#e2e8f0', boxShadow: '0 8px 25px rgba(0,0,0,0.08)' }}>
+                            <img src={AtmosphereCastaway} alt="Castaway Cay Beach" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: '#274472', color: '#fff', padding: '5px 14px', borderRadius: '6px', fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>Castaway Cay</div>
+                        </div>
+                        <div style={{ borderRadius: '24px', overflow: 'hidden', position: 'relative', aspectRatio: '16/9', backgroundColor: '#e2e8f0', boxShadow: '0 8px 25px rgba(0,0,0,0.08)' }}>
+                            <img src={hero3} alt="Lookout Cay Beach" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: '#274472', color: '#fff', padding: '5px 14px', borderRadius: '6px', fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>Lookout Cay</div>
+                        </div>
+                    </div>
+
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: '30px' }}>
                         <div className="concierge-light-glass" style={{ padding: '45px', borderRadius: '30px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '25px' }}>
@@ -241,6 +256,41 @@ function CastawayCayVsLookoutCay() {
                     <div style={{ marginTop: '50px', padding: '30px', backgroundColor: 'rgba(39, 68, 114, 0.08)', borderRadius: '25px', border: '1px solid rgba(39, 68, 114, 0.2)', textAlign: 'center', display: 'flex', flexDirection: window.innerWidth <= 600 ? 'column' : 'row', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
                         <Award size={24} style={{ color: '#27472' }} />
                         <p style={{ fontSize: '16px', color: '#1e293b', fontWeight: '700', margin: 0 }}>Winner: <span style={{ fontWeight: '400', color: '#475569' }}>Families prefer Castaway Cay. Beach lovers prefer Lookout Cay.</span></p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ UPPER VIDEO SECTION: CASTAWAY CAY VIRTUAL TOUR ═══════════════ */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#0f1c2e', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#38bdf8', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                            Islands in Motion
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            Castaway Cay: Virtual Tour & Walkthrough
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#38bdf8', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '820px', margin: '25px auto 0' }}>
+                            Step onto the classic shores of Disney's signature private island paradise. This walkthrough showcases the family-friendly amenities, calm swimming lagoons, snorkeling trails, and the exclusive adult-only escape at Serenity Bay.
+                        </p>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center', marginTop: '25px' }}>
+                            {["Family Lagoon", "Serenity Bay Tour", "Snorkeling Trails"].map(t => (
+                                <span key={t} style={{ padding: '8px 18px', backgroundColor: '#274472', borderRadius: '50px', fontSize: '13px', fontWeight: '700', color: '#ffffff', border: '1px solid rgba(255, 255, 255, 0.1)' }}>{t}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0, 0, 0, 0.3)', border: '1px solid rgba(255, 255, 255, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/8khCiqT-aFI"
+                            title="Castaway Cay Overview & Tour"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>
@@ -358,6 +408,124 @@ function CastawayCayVsLookoutCay() {
                 </div>
             </section>
 
+            {/* ═══════════════ IMAGE GALLERY: ISLAND EXPERIENCES ═══════════════ */}
+            <section style={{ padding: '80px 20px', backgroundColor: '#dce6f5', fontFamily: 'sans-serif' }}>
+                <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '15px' }}>Visual Discovery</span>
+                        <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: '#274472', fontWeight: '800', letterSpacing: '-0.02em', lineHeight: '1.1' }}>A Gallery of Island Magic</h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '20px auto', borderRadius: '10px' }}></div>
+                    </div>
+
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : window.innerWidth <= 1024 ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)',
+                        gap: '20px'
+                    }}>
+                        <style>{`
+                            .island-gallery-item {
+                                position: relative;
+                                border-radius: 20px;
+                                overflow: hidden;
+                                aspect-ratio: 4/3;
+                                background-color: #f1f5f9;
+                                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                            }
+                            .island-gallery-img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+                            }
+                            .island-gallery-item:hover .island-gallery-img {
+                                transform: scale(1.1);
+                            }
+                            .island-gallery-overlay {
+                                position: absolute;
+                                inset: 0;
+                                background: linear-gradient(to top, rgba(15, 28, 46, 0.8) 0%, transparent 50%);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                padding: 25px;
+                                opacity: 0;
+                                transition: opacity 0.4s ease;
+                            }
+                            .island-gallery-item:hover .island-gallery-overlay {
+                                opacity: 1;
+                            }
+                            .island-gallery-label {
+                                color: #3b82f6;
+                                font-size: 10px;
+                                font-weight: 800;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                margin-bottom: 5px;
+                            }
+                            .island-gallery-caption {
+                                color: #ffffff;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+                        `}</style>
+
+                        {/* Gallery 1: Mickey & Minnie Beach - Castaway Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryMickeyMinnie} alt="Mickey & Minnie at Castaway Cay Beach" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">CASTAWAY CAY</span>
+                                <span className="island-gallery-caption">Mickey & Minnie Beach Characters</span>
+                            </div>
+                        </div>
+
+                        {/* Gallery 2: Turquoise Beach - Lookout Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryTurquoiseBeach} alt="Turquoise Water Beach at Lookout Cay" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">LOOKOUT CAY</span>
+                                <span className="island-gallery-caption">Stunning Turquoise Waters</span>
+                            </div>
+                        </div>
+
+                        {/* Gallery 3: Donald & Daisy - Castaway Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryDonaldDaisy} alt="Donald & Daisy Duck at Castaway Cay" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">CASTAWAY CAY</span>
+                                <span className="island-gallery-caption">Donald & Daisy Beach Encounter</span>
+                            </div>
+                        </div>
+
+                        {/* Gallery 4: Family Beach Day - Castaway Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryFamilyBeach} alt="Family Beach Day at Castaway Cay" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">CASTAWAY CAY</span>
+                                <span className="island-gallery-caption">Family Beach Day</span>
+                            </div>
+                        </div>
+
+                        {/* Gallery 5: Festive Celebration - Lookout Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryFestive} alt="Festive Celebration on Disney Cruise" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">LOOKOUT CAY</span>
+                                <span className="island-gallery-caption">Festive Island Celebrations</span>
+                            </div>
+                        </div>
+
+                        {/* Gallery 6: Hammock Relaxation - Castaway Cay */}
+                        <div className="island-gallery-item">
+                            <img src={GalleryHammock} alt="Relaxing in Hammock at Castaway Cay" className="island-gallery-img" />
+                            <div className="island-gallery-overlay">
+                                <span className="island-gallery-label">CASTAWAY CAY</span>
+                                <span className="island-gallery-caption">Hammock Island Relaxation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ═══════════════ PROS & CONS SECTION ═══════════════ */}
             <section style={{ padding: 'clamp(60px, 10vw, 100px) clamp(16px, 5vw, 40px)', backgroundColor: '#1e293b', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -365,6 +533,20 @@ function CastawayCayVsLookoutCay() {
                         <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', color: "#ffffff", fontWeight: '800', letterSpacing: '-0.02em', marginBottom: '15px' }}>The Pros & Cons</h2>
                         <p style={{ color: '#38bdf8', fontSize: '16px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px' }}>Honest Assessment</p>
                     </div>
+                    {/* SIDE-BY-SIDE PROS & CONS IMAGES */}
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: '24px', marginBottom: '50px' }}>
+                        <div style={{ borderRadius: '24px', overflow: 'hidden', position: 'relative', aspectRatio: '16/9', backgroundColor: 'rgba(255,255,255,0.05)', boxShadow: '0 8px 25px rgba(0,0,0,0.2)' }}>
+                            <img src={ProsCastaway} alt="Castaway Cay Highlights" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 50%)' }} />
+                            <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: 'rgba(56,189,248,0.2)', color: '#38bdf8', padding: '5px 14px', borderRadius: '6px', fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid rgba(56,189,248,0.3)' }}>Castaway Cay</div>
+                        </div>
+                        <div style={{ borderRadius: '24px', overflow: 'hidden', position: 'relative', aspectRatio: '16/9', backgroundColor: 'rgba(255,255,255,0.05)', boxShadow: '0 8px 25px rgba(0,0,0,0.2)' }}>
+                            <img src={ProsLookout} alt="Lookout Cay Highlights" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 50%)' }} />
+                            <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: 'rgba(56,189,248,0.2)', color: '#38bdf8', padding: '5px 14px', borderRadius: '6px', fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid rgba(56,189,248,0.3)' }}>Lookout Cay</div>
+                        </div>
+                    </div>
+
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: '40px', position: 'relative' }}>
                         {window.innerWidth > 768 && <div style={{ position: 'absolute', left: '50%', top: '0', bottom: '0', width: '1px', background: 'rgba(255,255,255,0.1)' }}></div>}
                         <div style={{ paddingRight: window.innerWidth > 768 ? '30px' : '0' }}>
@@ -467,9 +649,44 @@ function CastawayCayVsLookoutCay() {
                 </div>
             </section>
 
+            {/* ═══════════════ LOWER VIDEO SECTION: LOOKOUT CAY JUNKANOO CELEBRATION ═══════════════ */}
+            <section style={{ padding: '100px 24px', backgroundColor: '#dce6f5', fontFamily: 'Inter, sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#274472', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                            Bahamian Culture
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            Lookout Cay: Junkanoo Celebration
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7', maxWidth: '820px', margin: '25px auto 0' }}>
+                            Go behind the scenes of Disney's newest private destination. Discover how local Bahamian artists, historians, and musicians brought the rich tradition of Junkanoo to life, creating an authentic, immersive cultural celebration at Lighthouse Point.
+                        </p>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center', marginTop: '25px' }}>
+                            {["Junkanoo Costumes", "Bahamian Music", "Lighthouse Point Art"].map(t => (
+                                <span key={t} style={{ padding: '8px 18px', backgroundColor: '#274472', borderRadius: '50px', fontSize: '13px', fontWeight: '700', color: '#ffffff' }}>{t}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(39, 68, 114, 0.15)', border: '1px solid rgba(39, 68, 114, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/J29yXxshmlA"
+                            title="Lookout Cay: Junkanoo Celebration"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* ═══════════════ ANGELA HUGHES AUTHORITY ═══════════════ */}
             <section className="medi-authority-section">
-                <style>{`@keyframes prestige-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } } @keyframes prestige-reverse-spin { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } .medi-prestige-seal-ring { animation: prestige-spin 25s linear infinite; border: 2px dashed rgba(255,255,255,0.4) !important; display: flex; align-items: center; justify-content: center; } .medi-prestige-static-img { animation: prestige-reverse-spin 25s linear infinite; }`}</style>
+                <style>{`@keyframes prestige-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
                 <div className="medi-authority-container">
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
@@ -479,8 +696,16 @@ function CastawayCayVsLookoutCay() {
                     </div>
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
-                            <div className="medi-prestige-seal-ring">
-                                <img src='' alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                            <div className="medi-prestige-seal-ring" style={{ animation: 'none', border: 'none', position: 'relative', width: '100px', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <div style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    borderRadius: '50%',
+                                    border: '2px dashed rgba(255, 255, 255, 0.4)',
+                                    animation: 'prestige-spin 25s linear infinite',
+                                    pointerEvents: 'none'
+                                }} />
+                                <img src={profileAH} alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)', animation: 'none', position: 'relative', zIndex: 1 }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>

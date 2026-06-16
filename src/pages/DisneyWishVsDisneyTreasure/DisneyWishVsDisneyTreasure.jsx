@@ -11,21 +11,25 @@ import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/DisneyWishVsTreasure/Hero_1.webp'
-// import hero2 from '../../assets/DisneyWishVsTreasure/Hero_2.jpg'
-// import hero3 from '../../assets/DisneyWishVsTreasure/Hero_3.webp'
+import hero1 from '../../assets/DisneyWishVsDisneyTreasure/disney-treasure-cruise-ship-sailing-ocean.jpg'
+import hero2 from '../../assets/DisneyWishVsDisneyTreasure/best-disney-cruise-caribbean-family-beach-vacation-excursion.jpg'
+import hero3 from '../../assets/DisneyWishVsDisneyTreasure/aerial-view-disney-cruise-ship-top-deck-pools-open-ocean.jpg'
 import profileAH from '../../assets/HXExpeditionsCruises/Profile_AH.jpg'
-// import WishImg from '../../assets/DisneyWishVsTreasure/Wish.jpg'
-// import TreasureImg from '../../assets/DisneyWishVsTreasure/Treasure.jpg'
-// import DiningWish from '../../assets/DisneyWishVsTreasure/DiningWish.jpg'
-// import DiningTreasure from '../../assets/DisneyWishVsTreasure/DiningTreasure.jpg'
-// import EntertainmentWish from '../../assets/DisneyWishVsTreasure/EntertainmentWish.jpg'
-// import EntertainmentTreasure from '../../assets/DisneyWishVsTreasure/EntertainmentTreasure.jpg'
+import EnchanteRestaurant from '../../assets/DisneyWishVsDisneyTreasure/disney-wish-enchante-restaurant-luxury-booth-seating-adults.jpg'
+import AdventuresByDisney from '../../assets/DisneyWishVsDisneyTreasure/kayaking-under-pont-du-gard-roman-aqueduct-provence-france-adventures-by-disney.jpg'
+import MarvelDayAtSea from '../../assets/DisneyWishVsDisneyTreasure/marvel-superheroes-on-disney-cruise-ship-marvel-day-at-sea.jpg'
+import AulaniResort from '../../assets/DisneyWishVsDisneyTreasure/aulani-disney-resort-ocean-view-hotel-room-kapolei-oahu-hawaii-beachfront-family-stay.jpg'
+import AvengersCampus from '../../assets/DisneyWishVsDisneyTreasure/avengers-campus-guardians-of-the-galaxy-mission-breakout-disney-california-adventure-anaheim.jpg'
+import MagicKingdomFireworks from '../../assets/DisneyWishVsDisneyTreasure/cinderella-castle-fireworks-show-magic-kingdom-orlando-nighttime-spectacular.jpg'
+import DisneyWishTheme from '../../assets/DisneyWishVsDisneyTreasure/disney-hollywood-studios-christmas-tree-holiday-lights-show-orlando-florida.jpg'
+import DisneyTreasureTheme from '../../assets/DisneyWishVsDisneyTreasure/rhone-river-valley-vineyard-wine-tasting-tour-france-travel.jpg'
+import QuickCompWish from '../../assets/DisneyWishVsDisneyTreasure/disneyland-hotel-monorail-water-slides-family-friendly-hotel-anaheim-california.jpg'
+import QuickCompTreasure from '../../assets/DisneyWishVsDisneyTreasure/family-enjoying-ocean-views-from-disney-cruise-ship-deck-at-sunset.jpg'
 
 
 function DisneyWishVsDisneyTreasure() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
-  const mediHeroImages = []
+  const mediHeroImages = [hero1, hero2, hero3]
 
   useEffect(() => {
     const mediTimer = setInterval(() => {
@@ -664,59 +668,66 @@ function DisneyWishVsDisneyTreasure() {
             <div style={{
               backgroundColor: '#0f172a',
               borderRadius: '30px',
-              padding: 'clamp(30px, 5vw, 50px)',
+              overflow: 'hidden',
               border: '2px solid rgba(255,255,255,0.1)',
               position: 'relative'
             }}>
-              <div style={{
-                position: 'absolute',
-                top: '20px',
-                right: '30px',
-                backgroundColor: 'rgba(255,255,255,0.1)',
-                color: '#cbd5e1',
-                fontSize: '10px',
-                fontWeight: '900',
-                padding: '4px 12px',
-                borderRadius: '100px',
-                textTransform: 'uppercase'
-              }}>Maiden Voyage 2022</div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '40px' }}>
-                <div style={{
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}>
-                  <Wand2 size={24} color="#cbd5e1" />
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Disney Wish</h3>
+              <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <img src={QuickCompWish} alt="Disney Wish" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0f172a 0%, transparent 60%)' }} />
               </div>
 
-              <div style={{ display: 'grid', gap: '12px' }}>
-                {[
-                  { l: "Theme", v: "Fairytale & Enchantment" },
-                  { l: "Grand Hall", v: "Cinderella" },
-                  { l: "Home Port", v: "Port Canaveral" },
-                  { l: "Typical Itineraries", v: "Bahamas & Caribbean" },
-                  { l: "Ideal For", v: "First-Time Disney Cruisers" },
-                  { l: "Adult Experiences", v: "Excellent" },
-                  { l: "Dining Themes", v: "Frozen & Marvel" }
-                ].map((row, i) => (
-                  <div key={i} style={{
-                    padding: '16px 0',
-                    borderBottom: '1px solid rgba(255,255,255,0.06)',
+              <div style={{ padding: 'clamp(30px, 5vw, 50px)', position: 'relative' }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '-15px',
+                  right: '30px',
+                  backgroundColor: 'rgba(255,255,255,0.1)',
+                  color: '#cbd5e1',
+                  fontSize: '10px',
+                  fontWeight: '900',
+                  padding: '4px 12px',
+                  borderRadius: '100px',
+                  textTransform: 'uppercase'
+                }}>Maiden Voyage 2022</div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '40px' }}>
+                  <div style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '50%',
+                    backgroundColor: 'rgba(255,255,255,0.1)',
                     display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    justifyContent: 'center'
                   }}>
-                    <span style={{ fontSize: '12px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px' }}>{row.l}</span>
-                    <span style={{ fontSize: '15px', color: '#ffffff', fontWeight: '600', textAlign: 'right', paddingLeft: '10px' }}>{row.v}</span>
+                    <Wand2 size={24} color="#cbd5e1" />
                   </div>
-                ))}
+                  <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Disney Wish</h3>
+                </div>
+
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  {[
+                    { l: "Theme", v: "Fairytale & Enchantment" },
+                    { l: "Grand Hall", v: "Cinderella" },
+                    { l: "Home Port", v: "Port Canaveral" },
+                    { l: "Typical Itineraries", v: "Bahamas & Caribbean" },
+                    { l: "Ideal For", v: "First-Time Disney Cruisers" },
+                    { l: "Adult Experiences", v: "Excellent" },
+                    { l: "Dining Themes", v: "Frozen & Marvel" }
+                  ].map((row, i) => (
+                    <div key={i} style={{
+                      padding: '16px 0',
+                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center'
+                    }}>
+                      <span style={{ fontSize: '12px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px' }}>{row.l}</span>
+                      <span style={{ fontSize: '15px', color: '#ffffff', fontWeight: '600', textAlign: 'right', paddingLeft: '10px' }}>{row.v}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -724,63 +735,69 @@ function DisneyWishVsDisneyTreasure() {
             <div style={{
               backgroundColor: '#0f172a',
               borderRadius: '30px',
-              padding: 'clamp(30px, 5vw, 50px)',
+              overflow: 'hidden',
               border: '2px solid #38bdf8',
               boxShadow: '0 20px 50px rgba(56, 189, 248, 0.15)',
               position: 'relative'
             }}>
-              <div style={{
-                position: 'absolute',
-                top: '20px',
-                right: '30px',
-                backgroundColor: '#38bdf8',
-                color: '#0f172a',
-                fontSize: '10px',
-                fontWeight: '900',
-                padding: '4px 12px',
-                borderRadius: '100px',
-                textTransform: 'uppercase'
-              }}>Maiden Voyage 2024</div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '40px' }}>
-                <div style={{
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  backgroundColor: '#38bdf8',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}>
-                  <Compass size={24} color="#ffffff" />
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Disney Treasure</h3>
+              <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <img src={QuickCompTreasure} alt="Disney Treasure" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0f172a 0%, transparent 60%)' }} />
               </div>
 
-              <div style={{ display: 'grid', gap: '12px' }}>
-                {[
-                  { l: "Theme", v: "Adventure & Exploration" },
-                  { l: "Grand Hall", v: "Aladdin" },
-                  { l: "Home Port", v: "Port Canaveral" },
-                  { l: "Typical Itineraries", v: "Caribbean & Longer Voyages" },
-                  { l: "Ideal For", v: "Repeat Disney Guests" },
-                  { l: "Adult Experiences", v: "Enhanced Adult Offerings" },
-                  { l: "Dining Themes", v: "Coco & Adventure Themes" }
-                ].map((row, i) => (
-                  <div key={i} style={{
-                    padding: '16px 0',
-                    borderBottom: '1px solid rgba(255,255,255,0.06)',
+              <div style={{ padding: 'clamp(30px, 5vw, 50px)', position: 'relative' }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '-15px',
+                  right: '30px',
+                  backgroundColor: '#38bdf8',
+                  color: '#0f172a',
+                  fontSize: '10px',
+                  fontWeight: '900',
+                  padding: '4px 12px',
+                  borderRadius: '100px',
+                  textTransform: 'uppercase'
+                }}>Maiden Voyage 2024</div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '40px' }}>
+                  <div style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '50%',
+                    backgroundColor: '#38bdf8',
                     display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    justifyContent: 'center'
                   }}>
-                    <span style={{ fontSize: '12px', fontWeight: '800', color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '1px' }}>{row.l}</span>
-                    <span style={{ fontSize: '15px', color: '#ffffff', fontWeight: '600', textAlign: 'right', paddingLeft: '10px' }}>{row.v}</span>
+                    <Compass size={24} color="#ffffff" />
                   </div>
-                ))}
+                  <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Disney Treasure</h3>
+                </div>
+
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  {[
+                    { l: "Theme", v: "Adventure & Exploration" },
+                    { l: "Grand Hall", v: "Aladdin" },
+                    { l: "Home Port", v: "Port Canaveral" },
+                    { l: "Typical Itineraries", v: "Caribbean & Longer Voyages" },
+                    { l: "Ideal For", v: "Repeat Disney Guests" },
+                    { l: "Adult Experiences", v: "Enhanced Adult Offerings" },
+                    { l: "Dining Themes", v: "Coco & Adventure Themes" }
+                  ].map((row, i) => (
+                    <div key={i} style={{
+                      padding: '16px 0',
+                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center'
+                    }}>
+                      <span style={{ fontSize: '12px', fontWeight: '800', color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '1px' }}>{row.l}</span>
+                      <span style={{ fontSize: '15px', color: '#ffffff', fontWeight: '600', textAlign: 'right', paddingLeft: '10px' }}>{row.v}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -895,57 +912,57 @@ function DisneyWishVsDisneyTreasure() {
                 }
             `}</style>
 
-            {/* Gallery Image 1: AquaMouse */}
+            {/* Gallery Image 1: Enchanté Restaurant */}
             <div className="gallery-item">
-              <img src="" alt="AquaMouse" className="gallery-img" />
+              <img src={EnchanteRestaurant} alt="Enchanté Restaurant" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">THRILLS AT SEA</span>
-                <span className="gallery-caption">The AquaMouse Water Attraction</span>
+                <span className="gallery-label">GOURMET DINING</span>
+                <span className="gallery-caption">Enchanté Restaurant</span>
               </div>
             </div>
 
-            {/* Gallery Image 2: Kids Club */}
+            {/* Gallery Image 2: Adventures by Disney */}
             <div className="gallery-item">
-              <img src="" alt="Kids Club" className="gallery-img" />
+              <img src={AdventuresByDisney} alt="Adventures by Disney" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">IMAGINATION</span>
-                <span className="gallery-caption">Award-Winning Youth Spaces</span>
+                <span className="gallery-label">EUROPEAN ADVENTURES</span>
+                <span className="gallery-caption">Adventures by Disney</span>
               </div>
             </div>
 
-            {/* Gallery Image 3: Adult Lounge */}
+            {/* Gallery Image 3: Marvel Day at Sea */}
             <div className="gallery-item">
-              <img src="" alt="Adult Lounge" className="gallery-img" />
+              <img src={MarvelDayAtSea} alt="Marvel Day at Sea" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">ADULT EXCLUSIVES</span>
-                <span className="gallery-caption">Themed Lounges & Nightlife</span>
+                <span className="gallery-label">SUPERHERO ADVENTURES</span>
+                <span className="gallery-caption">Marvel Day at Sea</span>
               </div>
             </div>
 
-            {/* Gallery Image 4: Stateroom Detail */}
+            {/* Gallery Image 4: Aulani Resort */}
             <div className="gallery-item">
-              <img src="" alt="Stateroom" className="gallery-img" />
+              <img src={AulaniResort} alt="Aulani Resort" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">LUXURY LIVING</span>
-                <span className="gallery-caption">Refined Family Staterooms</span>
+                <span className="gallery-label">BEACHFRONT LUXURY</span>
+                <span className="gallery-caption">Aulani Resort</span>
               </div>
             </div>
 
-            {/* Gallery Image 5: Castaway Cay */}
+            {/* Gallery Image 5: Avengers Campus */}
             <div className="gallery-item">
-              <img src="" alt="Private Island" className="gallery-img" />
+              <img src={AvengersCampus} alt="Avengers Campus" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">DESTINATIONS</span>
-                <span className="gallery-caption">Visits to Disney's Castaway Cay</span>
+                <span className="gallery-label">THEME PARK THRILLS</span>
+                <span className="gallery-caption">Avengers Campus</span>
               </div>
             </div>
 
-            {/* Gallery Image 6: Pool Deck */}
+            {/* Gallery Image 6: Magic Kingdom Fireworks */}
             <div className="gallery-item">
-              <img src="" alt="Pool Deck" className="gallery-img" />
+              <img src={MagicKingdomFireworks} alt="Magic Kingdom Fireworks" className="gallery-img" />
               <div className="gallery-overlay">
-                <span className="gallery-label">RELAXATION</span>
-                <span className="gallery-caption">Expansive Pool Decks & Views</span>
+                <span className="gallery-label">NIGHTTIME MAGIC</span>
+                <span className="gallery-caption">Magic Kingdom Spectacular</span>
               </div>
             </div>
           </div>
@@ -1057,7 +1074,7 @@ function DisneyWishVsDisneyTreasure() {
             <div className="concierge-light-glass" style={{ borderRadius: '30px' }}>
               <div className="card-image-wrapper">
                 {/* PLACEHOLDER 1: Disney Wish Grand Hall Image */}
-                <img src="https://images.unsplash.com/photo-1540759786422-c60d5ecd4888?auto=format&fit=crop&q=80&w=800" alt="Disney Wish Grand Hall" />
+                <img src={DisneyWishTheme} alt="Disney Wish Grand Hall" />
                 <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: '#274472', color: '#fff', padding: '5px 12px', borderRadius: '5px', fontSize: '11px', fontWeight: 'bold' }}>CINDERELLA THEME</div>
               </div>
 
@@ -1091,7 +1108,7 @@ function DisneyWishVsDisneyTreasure() {
             <div className="concierge-light-glass" style={{ borderRadius: '30px' }}>
               <div className="card-image-wrapper">
                 {/* PLACEHOLDER 2: Disney Treasure Grand Hall Image */}
-                <img src="" alt="Disney Treasure Grand Hall" />
+                <img src={DisneyTreasureTheme} alt="Disney Treasure Grand Hall" />
                 <div style={{ position: 'absolute', bottom: '15px', left: '20px', background: '#274472', color: '#fff', padding: '5px 12px', borderRadius: '5px', fontSize: '11px', fontWeight: 'bold' }}>ALADDIN THEME</div>
               </div>
 

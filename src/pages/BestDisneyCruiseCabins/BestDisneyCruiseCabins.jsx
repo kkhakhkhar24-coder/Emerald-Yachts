@@ -3,7 +3,8 @@ import {
   MapPin, Star, Clock, Users, CheckCircle,
   Sparkles, ChevronRight, Crown, Phone,
   Globe, Heart, Award, CircleDollarSign, GraduationCap, Mic, FileText,
-  Moon, Sun, Castle, Bed, Eye, Key, Maximize, ShieldAlert, Volume2, Navigation, Compass, DoorOpen
+  Sun, Castle, Bed, Eye, Maximize, Compass, DoorOpen,
+  Check, UsersRound, Bath, Armchair, Waves, Ship, Music, AlertCircle,
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -12,25 +13,32 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 // ═══════════════════════════════════════════════════════════════
 // Image Placeholders — Replace with your actual image paths
 // ═══════════════════════════════════════════════════════════════
-// import hero1 from '../../assets/DisneyCruiseCabins/Hero1.jpg'
-// import hero2 from '../../assets/DisneyCruiseCabins/Hero2.jpg'
-// import hero3 from '../../assets/DisneyCruiseCabins/Hero3.jpg'
-// import profileAH from '../../assets/DisneyCruiseAdultsWithoutKids/Profile_AH.jpg'
-// import verandahView from '../../assets/DisneyCruiseCabins/VerandahView.jpg'
-// import familyCabin from '../../assets/DisneyCruiseCabins/FamilyCabin.jpg'
-// import couplesBalcony from '../../assets/DisneyCruiseCabins/CouplesBalcony.jpg'
-// import insideCabin from '../../assets/DisneyCruiseCabins/InsideCabin.jpg'
-// import oceanviewCabin from '../../assets/DisneyCruiseCabins/OceanviewCabin.jpg'
-// import alaskaCabin from '../../assets/DisneyCruiseCabins/AlaskaView.jpg'
-// import caribbeanCabin from '../../assets/DisneyCruiseCabins/CaribbeanView.jpg'
-// import conciergeSuite from '../../assets/DisneyCruiseCabins/ConciergeSuite.jpg'
-// import royalSuite from '../../assets/DisneyCruiseCabins/RoyalSuite.jpg'
-// import wishCabin from '../../assets/DisneyCruiseCabins/WishCabin.jpg'
-// import treasureCabin from '../../assets/DisneyCruiseCabins/TreasureCabin.jpg'
+import hero1 from '../../assets/BestDisneyCruiseCabins/disney-cruise-alaska-glacier-view-inside-passage.jpg'
+import hero2 from '../../assets/BestDisneyCruiseCabins/disney-wish-cruise-ship-bahamas-itinerary-sunset-view.jpg'
+import hero3 from '../../assets/BestDisneyCruiseCabins/disney-wonder-alaska-cruise-tracy-arm-fjord-excursion.jpg'
+
+// Cabin Category Gallery Images
+import cabinImg1 from '../../assets/BestDisneyCruiseCabins/captain-mickey-minnie-mouse-characters-disney-cruise-deck.jpg'
+import cabinImg2 from '../../assets/BestDisneyCruiseCabins/disney-cruise-line-atrium-interior-father-son-family-vacation.jpg'
+import cabinImg3 from '../../assets/BestDisneyCruiseCabins/aladdin-and-jasmine-magic-carpet-statue-disney-treasure.jpg'
+import cabinImg4 from '../../assets/BestDisneyCruiseCabins/disney-cruise-alaska-itinerary-family-watching-ship-mountains.jpg'
+import cabinImg5 from '../../assets/BestDisneyCruiseCabins/disney-cruise-alaska-excursion-lumberjack-goofy-character-greeting.jpg'
+import cabinImg6 from '../../assets/BestDisneyCruiseCabins/disney-cruise-line-live-theater-hercules-musical-show.jpg'
+
+// Cabin Comparison Images
+import insideImg from '../../assets/BestDisneyCruiseCabins/disney-wish-sarabi-lounge-interior-modern-wood-architecture.jpg'
+import oceanviewImg from '../../assets/BestDisneyCruiseCabins/disney-castaway-cay-private-island-aerial-drone-view-cruise-ship.jpg'
+import verandahImg from '../../assets/BestDisneyCruiseCabins/aulani-disney-resort-ocean-view-hotel-room-kapolei-oahu-hawaii-beachfront-family-stay.jpg'
+import conciergeImg from '../../assets/BestDisneyCruiseCabins/aulani-disney-resort-luxury-ocean-view-villa-living-room-kapolei-oahu-hawaii-family-vacation.jpg'
+
+// Cabin Highlights Images
+import wishCabinImg from '../../assets/BestDisneyCruiseCabins/disney-cruise-frozen-dining-adventure-elsa-restaurant-show.jpg'
+import treasureCabinImg from '../../assets/BestDisneyCruiseCabins/disney-cruise-alaska-shore-excursion-skagway-train-family.jpg'
+import profileAH from '../../assets/BestDisneyCruiseCabins/profile_AH.jpg'
 
 function BestDisneyCruiseCabins() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
-  const mediHeroImages = [];
+  const mediHeroImages = [hero1, hero2, hero3];
 
   useEffect(() => {
     const mediTimer = setInterval(() => {
@@ -56,7 +64,7 @@ function BestDisneyCruiseCabins() {
     setMediActiveFaq(mediActiveFaq === index ? null : index)
   }
 
-  const cabinComparisonImages = [];
+  const cabinComparisonImages = [insideImg, oceanviewImg, verandahImg, conciergeImg];
 
   const cabinFaqs = [
     {
@@ -381,6 +389,36 @@ function BestDisneyCruiseCabins() {
         </div>
       </section>
 
+      {/* ── VIDEO SECTION 1: HOW TO CHOOSE YOUR CABIN ── */}
+      <section style={{ padding: '100px 24px', backgroundColor: '#dce6f5', fontFamily: 'Inter, sans-serif' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{ color: '#274472', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+              Expert Cabin Guide
+            </span>
+            <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+              How to Choose Your Perfect Disney Cruise Cabin
+            </h2>
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{ color: '#475569', fontSize: '18px', lineHeight: '1.7', maxWidth: '820px', margin: '25px auto 0' }}>
+              Choosing the right stateroom is one of the most important decisions for your Disney cruise. Learn how to match cabin categories to your family size, budget, and itinerary for the best onboard experience.
+            </p>
+          </div>
+
+          <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(39, 68, 114, 0.15)', border: '1px solid rgba(39, 68, 114, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/-zr5PSUOp-U"
+              title="How to Choose Your Perfect Disney Cruise Cabin"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════════ BEST CABINS MOSAIC GRID ═══════════════ */}
       <section style={{
         padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)',
@@ -524,11 +562,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 1. BEST OVERALL — VERANDAH */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Overall Disney Cruise Cabin — Verandah Stateroom" className="cabin-modern-img" />
+            <img src={cabinImg1} alt="Captain Mickey & Minnie on Disney Cruise Deck" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">Best Overall</span>
               <h3 className="cabin-modern-title">Deluxe Family Oceanview with Verandah</h3>
-              <p className="cabin-modern-desc">The ideal balance of value, comfort, and experience. Private balcony, ocean views, fresh sea air, and additional living space.</p>
+              <p className="cabin-modern-desc">Step onto the deck and meet Captain Mickey and Minnie — the quintessential Disney cruise moment. Verandah cabins offer the ideal balance of value, comfort, and private outdoor space.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Families</span>
                 <span className="cabin-modern-badge-pill">Couples</span>
@@ -539,11 +577,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 2. BEST FOR FAMILIES */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Disney Cruise Cabin for Families" className="cabin-modern-img" />
+            <img src={cabinImg2} alt="Father and Son in Disney Cruise Atrium" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">For Families</span>
               <h3 className="cabin-modern-title">Deluxe Family Verandah Stateroom</h3>
-              <p className="cabin-modern-desc">Split bathrooms, extra sleeping space, and exceptional storage solutions designed specifically for families and multi-generational groups.</p>
+              <p className="cabin-modern-desc">From the stunning atrium to your spacious stateroom, family cabins feature split bathrooms, extra sleeping space, and exceptional storage designed for busy families.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Split Bath</span>
                 <span className="cabin-modern-badge-pill">Extra Storage</span>
@@ -553,11 +591,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 3. BEST FOR COUPLES */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Disney Cruise Cabin for Couples" className="cabin-modern-img" />
+            <img src={cabinImg3} alt="Aladdin and Jasmine Magic Carpet Statue on Disney Treasure" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">For Couples</span>
               <h3 className="cabin-modern-title">Deluxe Oceanview with Verandah</h3>
-              <p className="cabin-modern-desc">Private outdoor space for romantic sunsets, morning coffee views, and ocean breezes. Couples often spend significant time on their balcony.</p>
+              <p className="cabin-modern-desc">The Disney Treasure's Aladdin-themed décor sets a romantic tone. Enjoy private balcony sunsets, morning coffee with ocean views, and enchanting themed experiences throughout the ship.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Honeymoons</span>
                 <span className="cabin-modern-badge-pill">Anniversaries</span>
@@ -567,11 +605,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 4. BEST BUDGET — INSIDE */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Budget Disney Cruise Cabin — Inside Stateroom" className="cabin-modern-img" />
+            <img src={cabinImg4} alt="Family Watching Mountains from Disney Cruise Alaska" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">Budget Pick</span>
               <h3 className="cabin-modern-title">Deluxe Inside Stateroom</h3>
-              <p className="cabin-modern-desc">Among the best inside cabins in cruising. Select ships feature Magical Portholes with real-time ocean views and Disney character appearances.</p>
+              <p className="cabin-modern-desc">Watch breathtaking Alaskan mountain scenery even from inside staterooms on select decks. Inside cabins offer outstanding value with Magical Portholes featuring real-time ocean views.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Lowest Price</span>
                 <span className="cabin-modern-badge-pill">Magical Porthole</span>
@@ -581,11 +619,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 5. BEST FOR ALASKA */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Disney Cruise Cabin for Alaska" className="cabin-modern-img" />
+            <img src={cabinImg5} alt="Goofy Lumberjack Character Greeting on Alaska Excursion" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">Alaska Pick</span>
               <h3 className="cabin-modern-title">Verandah Stateroom for Alaska</h3>
-              <p className="cabin-modern-desc">Private access to glacier views, wildlife sightings, mountain scenery, and scenic cruising days. Many Alaska cruisers consider a balcony essential.</p>
+              <p className="cabin-modern-desc">Meet Goofy as a lumberjack on thrilling Alaska shore excursions. Back onboard, your verandah provides private glacier views, wildlife sightings, and scenic cruising from the comfort of your cabin.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Glacier Views</span>
                 <span className="cabin-modern-badge-pill">Wildlife</span>
@@ -595,11 +633,11 @@ function BestDisneyCruiseCabins() {
 
           {/* 6. BEST FOR CARIBBEAN */}
           <div className="cabin-modern-item">
-            <img src='' alt="Best Disney Cruise Cabin for Caribbean" className="cabin-modern-img" />
+            <img src={cabinImg6} alt="Live Hercules Theater Show on Disney Cruise" className="cabin-modern-img" />
             <div className="cabin-modern-overlay">
               <span className="cabin-modern-tag">Caribbean Pick</span>
               <h3 className="cabin-modern-title">Oceanview or Verandah Stateroom</h3>
-              <p className="cabin-modern-desc">Caribbean itineraries involve more time outdoors. Oceanview cabins offer excellent value, while verandahs provide sunrise views and tropical scenery.</p>
+              <p className="cabin-modern-desc">Between spectacular live shows like Hercules and tropical port days, Caribbean itineraries mean more time exploring. Oceanview cabins offer excellent value for guests who spend most of their day enjoying entertainment and shore excursions.</p>
               <div className="cabin-modern-badges">
                 <span className="cabin-modern-badge-pill">Sunrise Views</span>
                 <span className="cabin-modern-badge-pill">Tropical</span>
@@ -610,173 +648,438 @@ function BestDisneyCruiseCabins() {
         </div>
       </section>
 
-      {/* ═══════════════ CONCIERGE & ROYAL SUITES ═══════════════ */}
-      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      {/* ═══════════════ CONCIERGE & ROYAL SUITES: ACCOMMODATION SHOWCASE ═══════════════ */}
+      <section style={{
+        padding: 'clamp(70px, 10vw, 120px) 24px',
+        backgroundColor: '#ffffff',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
 
+          {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
-              Luxury Accommodations
-            </span>
-            <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: "#274472", fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-              Disney Concierge & Royal Suites
-            </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-            <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>
-              For travelers seeking the pinnacle of Disney Cruise Line accommodations, Concierge and Royal Suites deliver an unmatched onboard experience.
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '800',
+              fontSize: '13px',
+              textTransform: 'uppercase',
+              letterSpacing: '3px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>Elite Accommodations</span>
+
+            <h2 style={{
+              fontSize: 'clamp(32px, 5vw, 48px)',
+              color: "#274472",
+              fontWeight: '900',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.1',
+              marginBottom: '20px'
+            }}>Best Disney Concierge Cabins</h2>
+
+            <div style={{ width: '80px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <p style={{ fontSize: '19px', color: '#475569', maxWidth: '850px', margin: '30px auto 0', lineHeight: '1.7' }}>
+              For travelers seeking the pinnacle of luxury, Disney’s suite collection provides the perfect blend of space, privacy, and exclusive service.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-            {/* One-Bedroom Concierge Suite */}
-            <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-              <div style={{ backgroundColor: '#0f1c2e', padding: '30px', textAlign: 'center' }}>
-                <Key size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} />
-                <h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>One-Bedroom Concierge Suite</h4>
-                <p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Best Concierge Option</p>
-              </div>
-              <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>
-                  Often considered the ideal Concierge option, featuring a separate bedroom, living room, expanded bathroom, and premium amenities.
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1fr',
+            gap: '30px'
+          }}>
+
+            {/* ── CARD 1: ONE-BEDROOM SUITE (The Ideal Choice) ── */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              borderRadius: '40px',
+              padding: 'clamp(30px, 5vw, 50px)',
+              border: '1px solid #e2e8f0',
+              display: 'flex',
+              flexDirection: 'column',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
+            }}>
+              <div style={{ marginBottom: '35px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                  <div style={{ backgroundColor: '#e8f0fe', padding: '12px', borderRadius: '14px', color: '#274472' }}>
+                    <DoorOpen size={26} />
+                  </div>
+                  <h3 style={{ fontSize: '26px', fontWeight: '800', color: '#1e293b', margin: 0 }}>One-Bedroom Concierge Suite</h3>
+                </div>
+                <p style={{ color: '#475569', fontSize: '16px', lineHeight: '1.6', margin: 0 }}>
+                  Often considered the <strong>ideal Concierge option</strong>, providing a significant upgrade in space and comfort.
                 </p>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {["Concierge Lounge access", "Priority boarding", "Dedicated concierge service", "Exclusive sun deck access", "Priority booking windows"].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
-                      <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
-                    </li>
+              </div>
+
+              {/* Feature & Benefit Split */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginBottom: '40px' }}>
+                <div>
+                  <h4 style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>Room Features</h4>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '10px' }}>
+                    {["Separate bedroom", "Living room", "Expanded bathroom", "Premium amenities"].map((f, i) => (
+                      <li key={i} style={{ fontSize: '14px', color: '#1e293b', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#3b82f6' }}></div> {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 style={{ fontSize: '12px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>Included Benefits</h4>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '10px' }}>
+                    {["Lounge access", "Priority boarding", "Exclusive sun deck", "Priority booking"].map((b, i) => (
+                      <li key={i} style={{ fontSize: '14px', color: '#475569', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <Check size={14} style={{ color: '#3b82f6' }} /> {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Best For Section */}
+              <div style={{ marginTop: 'auto', paddingTop: '30px', borderTop: '1px solid #e2e8f0' }}>
+                <span style={{ fontSize: '13px', fontWeight: '700', color: '#1e293b', display: 'block', marginBottom: '15px' }}>Best For:</span>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                  {["Luxury travelers", "Special celebrations", "Honeymooners", "Multi-gen families"].map((tag, i) => (
+                    <span key={i} style={{ padding: '6px 14px', backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '50px', fontSize: '12px', fontWeight: '700', color: '#475569' }}>{tag}</span>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
 
-            {/* Royal Suite */}
-            <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-              <div style={{ background: 'linear-gradient(135deg, #0f1c2e 0%, #1a365d 100%)', padding: '30px', textAlign: 'center' }}>
-                <Crown size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} />
-                <h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Concierge Royal Suites</h4>
-                <p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Most Luxurious</p>
-              </div>
-              <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>
-                  The most prestigious accommodations in the Disney fleet. These suites rival luxury hotel suites found around the world.
+            {/* ── CARD 2: ROYAL SUITE (The Ultimate Luxury) ── */}
+            <div style={{
+              backgroundColor: '#0f1c2e',
+              padding: 'clamp(30px, 5vw, 50px)',
+              borderRadius: '40px',
+              color: '#ffffff',
+              boxShadow: '0 25px 60px rgba(15, 28, 46, 0.3)',
+              display: 'flex',
+              flexDirection: 'column',
+              border: '1px solid rgba(255,255,255,0.1)'
+            }}>
+              <div style={{ marginBottom: '35px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                  <div style={{ backgroundColor: 'rgba(59, 130, 246, 0.2)', padding: '12px', borderRadius: '14px', color: '#60a5fa' }}>
+                    <Crown size={26} />
+                  </div>
+                  <h3 style={{ fontSize: '26px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Concierge Royal Suites</h3>
+                </div>
+                <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: '1.6', margin: 0 }}>
+                  The <strong>most prestigious address</strong> in the Disney fleet, rivaling 5-star hotel suites found around the world.
                 </p>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {["Massive living areas", "Multiple bathrooms", "Premium furnishings", "Expansive verandahs", "Full concierge service"].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
-                      <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
-                    </li>
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(255,255,255,0.03)', padding: '30px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '40px' }}>
+                <h4 style={{ fontSize: '12px', fontWeight: '800', color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}>Masterpiece Features</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  {[
+                    { t: "Massive Living Areas", i: <UsersRound size={16} /> },
+                    { t: "Multiple Bathrooms", i: <Bath size={16} /> },
+                    { t: "Premium Furnishings", i: <Armchair size={16} /> },
+                    { t: "Expansive Verandahs", i: <Waves size={16} /> }
+                  ].map((item, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <div style={{ color: '#38bdf8' }}>{item.i}</div>
+                      <span style={{ fontSize: '14px', fontWeight: '600', color: '#ffffff' }}>{item.t}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
+              </div>
+
+              {/* Best For Section */}
+              <div style={{ marginTop: 'auto', paddingTop: '30px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                <span style={{ fontSize: '13px', fontWeight: '700', color: '#38bdf8', display: 'block', marginBottom: '15px' }}>Designed For:</span>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                  {["VIP travelers", "Special occasions", "Luxury enthusiasts"].map((tag, i) => (
+                    <span key={i} style={{ padding: '8px 18px', backgroundColor: 'rgba(56, 189, 248, 0.15)', borderRadius: '50px', fontSize: '12px', fontWeight: '800', color: '#ffffff', letterSpacing: '0.5px' }}>{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* ═══════════════ BEST CABIN BY TRAVELER TYPE ═══════════════ */}
-      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      {/* ═══════════════ BEST CABIN BY TRAVELER TYPE: BALANCED STRATEGIC GRID ═══════════════ */}
+      <section style={{
+        padding: 'clamp(70px, 10vw, 120px) 24px',
+        backgroundColor: '#f1f5f9',
+        fontFamily: 'sans-serif'
+      }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
 
-          <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
-              Personalized Recommendations
-            </span>
-            <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: "#274472", fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-              Best Disney Cruise Cabins by Traveler Type
-            </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+          {/* Section Header - Center Aligned */}
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '800',
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '3px',
+              display: 'block'
+            }}>Personalized Recommendations</span>
+
+            <h2 style={{
+              fontSize: 'clamp(32px, 5vw, 44px)',
+              color: "#274472",
+              fontWeight: '900',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.1',
+              marginTop: '15px'
+            }}>Best Cabins by Traveler Type</h2>
+
+            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '20px auto', borderRadius: '10px' }}></div>
+            <p style={{ fontSize: '18px', color: '#475569', maxWidth: '800px', margin: '25px auto 0', lineHeight: '1.7' }}>
+              Every traveler has a different priority. We've analyzed the Disney fleet to match specific guest needs with the ideal stateroom category.
+            </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : window.innerWidth <= 900 ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
+          {/* Balanced Grid: 3 on Top, 2 on Bottom to fill the space perfectly */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(6, 1fr)',
+            gap: '24px'
+          }}>
             {[
-              { type: "First-Time Cruisers", rec: "Deluxe Oceanview Verandah", desc: "Offers the complete Disney cruise experience with a private balcony.", icon: <Compass size={24} /> },
-              { type: "Families with Young Children", rec: "Deluxe Family Verandah Stateroom", desc: "Extra space, split bathrooms, and family-friendly design.", icon: <Users size={24} /> },
-              { type: "Couples", rec: "Deluxe Oceanview Verandah", desc: "Romantic private outdoor space for sunsets and morning coffee.", icon: <Heart size={24} /> },
-              { type: "Luxury Travelers", rec: "One-Bedroom Concierge Suite", desc: "Excellent balance of luxury, service, and VIP benefits.", icon: <Crown size={24} /> },
-              { type: "Budget Travelers", rec: "Deluxe Inside Stateroom", desc: "Outstanding value with comfortable, family-friendly design.", icon: <CircleDollarSign size={24} /> }
+              {
+                type: "First-Time Cruisers",
+                rec: "Deluxe Oceanview Verandah",
+                desc: "Offers the complete Disney cruise experience with private outdoor space and fresh sea air.",
+                icon: <Ship size={24} />,
+                span: isMobileViewport ? 'span 6' : 'span 2'
+              },
+              {
+                type: "Families with Young Children",
+                rec: "Deluxe Family Verandah",
+                desc: "Engineered with extra square footage and a split-bath design to handle the needs of a busy family.",
+                icon: <Users size={24} />,
+                span: isMobileViewport ? 'span 6' : 'span 2'
+              },
+              {
+                type: "Couples",
+                rec: "Deluxe Oceanview Verandah",
+                desc: "A romantic and practical choice for enjoying private sunsets and quiet morning coffee at sea.",
+                icon: <Heart size={24} />,
+                span: isMobileViewport ? 'span 6' : 'span 2'
+              },
+              {
+                type: "Luxury Travelers",
+                rec: "One-Bedroom Concierge Suite",
+                desc: "The gold standard for travelers seeking the highest tier of personalized service and exclusive amenities.",
+                icon: <Crown size={24} />,
+                span: isMobileViewport ? 'span 6' : 'span 3' // Fills half the bottom row
+              },
+              {
+                type: "Budget Travelers",
+                rec: "Deluxe Inside Stateroom",
+                desc: "Outstanding value that provides the full Disney standard of quality and service at the most accessible price point.",
+                icon: <CircleDollarSign size={24} />,
+                span: isMobileViewport ? 'span 6' : 'span 3' // Fills half the bottom row
+              }
             ].map((item, i) => (
-              <div key={i} style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)', textAlign: 'center' }}>
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', color: '#3b82f6' }}>
+              <div key={i} style={{
+                gridColumn: item.span,
+                backgroundColor: '#ffffff',
+                borderRadius: '30px',
+                padding: '45px 35px',
+                border: '1px solid #e2e8f0',
+                boxShadow: '0 10px 30px rgba(15, 28, 46, 0.02)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center',
+                transition: 'all 0.3s ease',
+                height: '100%'
+              }}>
+                {/* Icon Box */}
+                <div style={{
+                  width: '54px',
+                  height: '54px',
+                  borderRadius: '12px',
+                  backgroundColor: '#f0f9ff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: '25px',
+                  color: '#3b82f6',
+                  border: '1px solid #e0f2fe'
+                }}>
                   {item.icon}
                 </div>
-                <p style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '2px', margin: '0 0 8px' }}>{item.type}</p>
-                <h3 style={{ fontSize: '19px', fontWeight: '800', color: '#0f1c2e', marginBottom: '12px' }}>{item.rec}</h3>
-                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
+
+                <span style={{
+                  fontSize: '11px',
+                  fontWeight: '800',
+                  color: '#3b82f6',
+                  textTransform: 'uppercase',
+                  letterSpacing: '2px',
+                  marginBottom: '10px'
+                }}>{item.type}</span>
+
+                <h3 style={{
+                  fontSize: '19px',
+                  fontWeight: '800',
+                  color: '#0f1c2e',
+                  marginBottom: '15px',
+                  lineHeight: '1.2',
+                  letterSpacing: '-0.01em'
+                }}>
+                  <span style={{ color: '#64748b', fontSize: '13px', display: 'block', marginBottom: '4px', fontWeight: '600' }}>Recommended:</span>
+                  {item.rec}
+                </h3>
+
+                <p style={{
+                  fontSize: '15px',
+                  color: '#475569',
+                  lineHeight: '1.6',
+                  margin: 0,
+                  flexGrow: 1
+                }}>{item.desc}</p>
+
+                <div style={{ width: '40px', height: '2px', backgroundColor: '#e2e8f0', marginTop: '25px' }}></div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════ CABINS TO AVOID + BEST LOCATION ═══════════════ */}
-      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      {/* ═══════════════ EXPERT ADVISORY: CABIN SELECTION & LOCATION ═══════════════ */}
+      <section style={{
+        padding: 'clamp(70px, 10vw, 120px) 24px',
+        backgroundColor: '#0f1c2e',
+        fontFamily: 'Inter, sans-serif'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+          {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
-              Practical Guidance
-            </span>
-            <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-              Cabins to Avoid & Best Locations
-            </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+            <span style={{
+              color: '#3b82f6',
+              fontWeight: '800',
+              fontSize: '13px',
+              textTransform: 'uppercase',
+              letterSpacing: '4px',
+              display: 'block',
+              marginBottom: '15px'
+            }}>Expert Strategic Guidance</span>
+
+            <h2 style={{
+              fontSize: 'clamp(32px, 5vw, 48px)',
+              color: '#ffffff',
+              fontWeight: '900',
+              letterSpacing: '-0.03em',
+              lineHeight: '1.1'
+            }}>Best Locations & Cabins to Avoid</h2>
+
+            <div style={{ width: '80px', height: '4px', backgroundColor: '#3b82f6', margin: '24px auto', borderRadius: '10px' }}></div>
+            <p style={{ fontSize: '19px', color: '#94a3b8', maxWidth: '800px', margin: '0 auto', lineHeight: '1.7' }}>
+              Positioning is everything. While Disney cabins are among the best at sea, selecting the right location can dramatically impact your comfort and sleep quality.
+            </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px', marginBottom: '40px' }}>
-            {/* Cabins to Avoid */}
-            <div style={{ backgroundColor: 'rgba(239, 68, 68, 0.06)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '1px solid rgba(239, 68, 68, 0.15)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}>
-                <div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <ShieldAlert size={24} style={{ color: '#ef4444' }} />
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1fr',
+            gap: '40px'
+          }}>
+
+            {/* ── LEFT COLUMN: THE ADVISORY (CABINS TO AVOID) ── */}
+            <div style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.03)',
+              padding: 'clamp(30px, 5vw, 50px)',
+              borderRadius: '40px',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '40px' }}>
+                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', padding: '12px', borderRadius: '14px', color: '#cbd5e1' }}>
+                  <AlertCircle size={26} />
                 </div>
-                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Cabins to Avoid</h3>
+                <h3 style={{ fontSize: '26px', fontWeight: '800', color: '#ffffff', margin: 0, letterSpacing: '-0.01em' }}>Areas to Consider Avoiding</h3>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+
+              <div style={{ display: 'grid', gap: '30px' }}>
                 {[
-                  { title: "Near Elevators", desc: "Potential for additional hallway traffic and noise.", icon: <Users size={18} /> },
-                  { title: "Below Pool Decks", desc: "Possible noise from above during morning and daytime hours.", icon: <Volume2 size={18} /> },
-                  { title: "Near Nightclubs", desc: "Late-night activity may impact light sleepers.", icon: <Moon size={18} /> },
-                  { title: "Far Forward or Aft", desc: "Guests sensitive to motion may prefer midship locations.", icon: <Navigation size={18} /> }
+                  { t: "Near Elevators", d: "High hallway traffic can lead to additional noise and conversation outside your door.", i: <Users size={18} /> },
+                  { t: "Below Pool Decks", d: "Potential for noise from chair movement or deck cleaning during early morning hours.", i: <Waves size={18} /> },
+                  { t: "Near Nightclubs", d: "Late-night bass and activity may impact light sleepers in nearby cabins.", i: <Music size={18} /> },
+                  { t: "Far Forward or Aft", d: "Guests sensitive to motion may feel the ship's movement more in these extreme ends.", i: <Compass size={18} /> }
                 ].map((item, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', paddingBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-                    <div style={{ width: '36px', height: '36px', borderRadius: '10px', backgroundColor: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: '#ef4444' }}>
-                      {item.icon}
-                    </div>
+                  <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                    <div style={{ color: '#64748b', marginTop: '4px' }}>{item.i}</div>
                     <div>
-                      <span style={{ fontSize: '16px', fontWeight: '700', color: '#ffffff', display: 'block', marginBottom: '4px' }}>{item.title}</span>
-                      <span style={{ fontSize: '15px', color: '#94a3b8', lineHeight: '1.5' }}>{item.desc}</span>
+                      <h4 style={{ fontSize: '18px', fontWeight: '800', color: '#ffffff', marginBottom: '6px' }}>{item.t}</h4>
+                      <p style={{ fontSize: '15px', color: '#94a3b8', lineHeight: '1.6', margin: 0 }}>{item.d}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Best Location */}
-            <div style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '2px solid rgba(59, 130, 246, 0.3)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}>
-                <div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <MapPin size={24} style={{ color: '#ffffff' }} />
+            {/* ── RIGHT COLUMN: THE RECOMMENDATION (BEST LOCATION) ── */}
+            <div style={{
+              backgroundColor: 'rgba(59, 130, 246, 0.08)',
+              padding: 'clamp(30px, 5vw, 50px)',
+              borderRadius: '40px',
+              border: '2px solid rgba(59, 130, 246, 0.3)',
+              display: 'flex',
+              flexDirection: 'column',
+              boxShadow: '0 25px 60px rgba(0, 0, 0, 0.3)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '35px' }}>
+                <div style={{ backgroundColor: '#3b82f6', padding: '12px', borderRadius: '14px', color: '#ffffff' }}>
+                  <MapPin size={26} />
                 </div>
-                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Best Location: Midship</h3>
+                <h3 style={{ fontSize: '26px', fontWeight: '800', color: '#ffffff', margin: 0, letterSpacing: '-0.01em' }}>The Ideal Choice: Midship</h3>
               </div>
-              <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.7', marginBottom: '30px' }}>
-                Many experienced cruisers consider midship cabins ideal because they offer the most comfortable experience on the ship.
+
+              <p style={{ color: '#e2e8f0', fontSize: '17px', lineHeight: '1.8', marginBottom: '30px' }}>
+                Many experienced cruisers consider midship cabins the <strong>"Gold Standard"</strong> because they offer the most stable and convenient orientation on the ship.
               </p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                {["Less motion sensitivity", "Easy access to amenities", "Convenient navigation", "Central to dining and entertainment"].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px', fontSize: '16px', fontWeight: '500', color: '#e2e8f0' }}>
-                    <CheckCircle size={18} style={{ color: '#3b82f6' }} /> {item}
+
+              <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 40px 0', display: 'grid', gap: '15px' }}>
+                {[
+                  "Significantly less motion sensitivity",
+                  "Easy, centralized access to all ship amenities",
+                  "Convenient and fast navigation to dining rooms",
+                  "Direct access to midship elevator banks"
+                ].map((text, i) => (
+                  <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '16px', fontWeight: '500', color: '#ffffff' }}>
+                    <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} /> {text}
                   </li>
                 ))}
               </ul>
-              <div style={{ marginTop: '30px', padding: '20px', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderRadius: '16px', borderLeft: '4px solid #3b82f6' }}>
-                <p style={{ fontSize: '16px', fontWeight: '700', color: '#ffffff', margin: '0 0 6px' }}>
-                  Best Overall Location
-                </p>
-                <p style={{ fontSize: '15px', color: '#cbd5e1', margin: 0, lineHeight: '1.5' }}>
-                  Midship Verandah Stateroom — the combination of location and cabin type that most experienced Disney cruisers recommend.
-                </p>
+
+              {/* Final Selection Highlight */}
+              <div style={{
+                marginTop: 'auto',
+                padding: '30px',
+                backgroundColor: '#3b82f6',
+                borderRadius: '24px',
+                textAlign: 'center',
+                boxShadow: '0 15px 30px rgba(59, 130, 246, 0.2)'
+              }}>
+                <span style={{ fontSize: '12px', fontWeight: '900', color: '#0f1c2e', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '8px' }}>Best Overall Selection</span>
+                <h4 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Midship Verandah Stateroom</h4>
               </div>
             </div>
+
+          </div>
+
+          {/* ADVISOR CALLOUT */}
+          <div style={{
+            marginTop: '50px',
+            padding: '30px',
+            backgroundColor: 'rgba(255, 255, 255, 0.02)',
+            borderRadius: '24px',
+            border: '1px solid rgba(255, 255, 255, 0.05)',
+            textAlign: 'center'
+          }}>
+            <p style={{ fontSize: '17px', color: '#cbd5e1', fontWeight: '600', margin: 0, fontStyle: 'italic' }}>
+              "Every ship deck plan is unique. At Trips & Ships Luxury Travel, we meticulously analyze cabin placements to ensure your stay is peaceful and perfectly situated."
+            </p>
           </div>
         </div>
       </section>
@@ -873,7 +1176,7 @@ function BestDisneyCruiseCabins() {
       </section>
 
       {/* ═══════════════ DISNEY WISH & TREASURE HIGHLIGHTS ═══════════════ */}
-      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#dce6f5', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
@@ -890,8 +1193,8 @@ function BestDisneyCruiseCabins() {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px', marginBottom: '50px' }}>
-            <div style={{ borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-              <img src='' alt="Disney Wish Cabin" style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
+            <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
+              <img src={wishCabinImg} alt="Disney Wish Cabin" style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
               <div style={{ padding: '30px' }}>
                 <h4 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: '0 0 10px' }}>Disney Wish</h4>
                 <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>
@@ -899,8 +1202,8 @@ function BestDisneyCruiseCabins() {
                 </p>
               </div>
             </div>
-            <div style={{ borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-              <img src='' alt="Disney Treasure Cabin" style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
+            <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
+              <img src={treasureCabinImg} alt="Disney Treasure Cabin" style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
               <div style={{ padding: '30px' }}>
                 <h4 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', margin: '0 0 10px' }}>Disney Treasure</h4>
                 <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>
@@ -927,31 +1230,30 @@ function BestDisneyCruiseCabins() {
         </div>
       </section>
 
-      {/* ═══════════════ VIDEO SECTION ═══════════════ */}
-      <section style={{ padding: '80px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
+      {/* ── VIDEO SECTION 2: THE TRITON-CLASS EVOLUTION ── */}
+      <section style={{ padding: '100px 24px', backgroundColor: '#0f172a', fontFamily: 'Inter, sans-serif' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
-              Cabin Tour
+            <span style={{ color: '#38bdf8', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+              Next-Generation Ships
             </span>
             <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-              Explore Disney Cruise Staterooms
+              Disney Wish & Treasure: The Triton-Class Evolution
             </h2>
             <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-            <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>
-              Take a closer look at what makes Disney Cruise Line staterooms some of the most thoughtfully designed cabins at sea — from clever storage solutions to split bathrooms and magical touches.
+            <p style={{ color: '#cbd5e1', fontSize: '18px', lineHeight: '1.7', maxWidth: '820px', margin: '25px auto 0' }}>
+              The Disney Wish and Disney Treasure represent the pinnacle of Disney's naval engineering. From the first-of-its-kind AquaMouse water attraction to the infusion of high-tech storytelling in every lounge, see how this class of ship has redefined the premium family cruise.
             </p>
           </div>
 
-          {/* REPLACE YouTube embed URL with your actual Disney cabin tour video */}
-          <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
+          <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/REPLACE_WITH_DISNEY_CABIN_TOUR_VIDEO_ID"
-              title="Disney Cruise Cabin Tour"
+              src="https://www.youtube.com/embed/oMJIrnbdpvM"
+              title="Disney Wish & Treasure: The Triton-Class Evolution"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>
@@ -982,7 +1284,7 @@ function BestDisneyCruiseCabins() {
           <div className="medi-prestige-plaque-wrapper">
             <div className="medi-prestige-identity-card">
               <div className="medi-prestige-seal-ring">
-                <img src='' alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                <img src={profileAH} alt="Angela Hughes" className="medi-prestige-static-img" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
               </div>
               <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
               <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1056,7 +1358,7 @@ function BestDisneyCruiseCabins() {
       </section>
 
       {/* ═══════════════ FINAL VERDICT ═══════════════ */}
-      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+      <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#dce6f5', fontFamily: 'sans-serif' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
             <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
