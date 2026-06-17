@@ -34,7 +34,7 @@ import conciergeImg from '../../assets/BestDisneyCruiseCabins/aulani-disney-reso
 // Cabin Highlights Images
 import wishCabinImg from '../../assets/BestDisneyCruiseCabins/disney-cruise-frozen-dining-adventure-elsa-restaurant-show.jpg'
 import treasureCabinImg from '../../assets/BestDisneyCruiseCabins/disney-cruise-alaska-shore-excursion-skagway-train-family.jpg'
-import profileAH from '../../assets/BestDisneyCruiseCabins/profile_AH.jpg'
+import profileAH from '../../assets/BestDisneyCruiseCabins/Profile_AH.jpg'
 
 function BestDisneyCruiseCabins() {
   const [mediCurrentHero, setMediCurrentHero] = useState(0)
