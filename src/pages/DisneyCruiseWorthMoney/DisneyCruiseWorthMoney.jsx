@@ -71,18 +71,81 @@ function DisneyCruiseWorthMoney() {
     const schemaData = {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "logo": "https://www.tripsandships.com/PNG%20image.png", "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"] },
-            { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in Disney Cruise Line planning, family cruises, and premium vacation experiences." },
-            { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-            { "@type": "WebPage", "name": "Is Disney Cruise Line Worth the Money?", "url": "https://www.tripsandships.com/is-disney-cruise-line-worth-the-money", "description": "Honest review comparing Disney Cruise Line pricing, dining, entertainment, and value to determine if a Disney cruise is worth the cost." },
             {
-                "@type": "BreadcrumbList", "itemListElement": [
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/is-disney-cruise-line-worth-the-money",
+                "url": "https://www.tripsandships.com/is-disney-cruise-line-worth-the-money",
+                "name": "Is Disney Cruise Line Worth the Money?",
+                "headline": "Is Disney Cruise Line Worth the Money? Honest Review for Families & Adults",
+                "description": "Wondering if Disney Cruise Line is worth the money? Compare pricing, dining, entertainment, service, destinations, and value to determine whether a Disney cruise is right for you.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "#trips-ships",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "description": "Luxury travel agency specializing in Disney Cruise Line planning, family cruises, and premium vacation experiences.",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ],
+                "founder": { "@id": "#angela-hughes" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com"
+            },
+            {
+                "@type": "Person",
+                "@id": "#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
                     { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
                     { "@type": "ListItem", "position": 3, "name": "Is Disney Cruise Line Worth the Money?", "item": "https://www.tripsandships.com/is-disney-cruise-line-worth-the-money" }
                 ]
             },
-            { "@type": "FAQPage", "mainEntity": disneyWorthFaqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } })) }
+            {
+                "@type": "Article",
+                "headline": "Is Disney Cruise Line Worth the Money? A Complete Value Breakdown",
+                "description": "Honest review comparing Disney Cruise Line pricing, dining, entertainment, service, and value against other cruise lines to help you decide if Disney is worth the cost.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" },
+                "keywords": [
+                    "Is Disney Cruise Line Worth the Money",
+                    "Disney Cruise Value",
+                    "Disney Cruise Cost",
+                    "Disney Cruise Worth It",
+                    "Disney Cruise Reviews",
+                    "Disney Cruise Line Pricing",
+                    "Is Disney Cruise worth the extra cost",
+                    "Why is Disney Cruise so expensive",
+                    "Disney Cruise value compared to other cruise lines",
+                    "Is Disney Cruise worth it for families"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": disneyWorthFaqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            }
         ]
     }
 
@@ -342,7 +405,6 @@ function DisneyCruiseWorthMoney() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>

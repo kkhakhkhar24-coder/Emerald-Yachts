@@ -71,18 +71,81 @@ function DisneyConciergeWorthIt() {
     const schemaData = {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "logo": "https://www.tripsandships.com/PNG%20image.png", "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"] },
-            { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in Disney Cruise Line Concierge Level planning, VIP cruise experiences, and premium family vacations." },
-            { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-            { "@type": "WebPage", "name": "Is Disney Concierge Worth It?", "url": "https://www.tripsandships.com/is-disney-concierge-worth-it", "description": "Complete guide to Disney Cruise Concierge Level. Learn about perks, priority booking, exclusive lounges, and whether the upgrade is worth the cost." },
             {
-                "@type": "BreadcrumbList", "itemListElement": [
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/is-disney-concierge-worth-it",
+                "url": "https://www.tripsandships.com/is-disney-concierge-worth-it",
+                "name": "Is Disney Concierge Worth It?",
+                "headline": "Is Disney Concierge Worth It? Disney Cruise Concierge Level Review",
+                "description": "Wondering if Disney Cruise Concierge is worth it? Learn about Concierge Level perks, priority booking, exclusive lounges, concierge service, and whether the upgrade makes sense for your cruise.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "#trips-ships",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "description": "Luxury travel agency specializing in Disney Cruise Line Concierge Level planning, VIP cruise experiences, and premium family vacations.",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ],
+                "founder": { "@id": "#angela-hughes" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com"
+            },
+            {
+                "@type": "Person",
+                "@id": "#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
                     { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
                     { "@type": "ListItem", "position": 3, "name": "Is Disney Concierge Worth It?", "item": "https://www.tripsandships.com/is-disney-concierge-worth-it" }
                 ]
             },
-            { "@type": "FAQPage", "mainEntity": disneyConciergeFaqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } })) }
+            {
+                "@type": "Article",
+                "headline": "Is Disney Concierge Worth It? A Complete Guide to Disney Cruise Line Concierge Level",
+                "description": "Complete guide to Disney Cruise Concierge Level covering perks, priority boarding, exclusive lounges, concierge staterooms, cost analysis, and who benefits most from the upgrade.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" },
+                "keywords": [
+                    "Is Disney Concierge Worth It",
+                    "Disney Cruise Concierge Level",
+                    "Disney Concierge Review",
+                    "Disney Cruise Concierge Benefits",
+                    "Disney Concierge Lounge",
+                    "Disney Cruise VIP Experience",
+                    "Is Disney Cruise Concierge worth the money",
+                    "Disney Concierge Level benefits",
+                    "Disney Concierge vs standard stateroom",
+                    "Should I upgrade to Disney Concierge"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": disneyConciergeFaqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            }
         ]
     }
 

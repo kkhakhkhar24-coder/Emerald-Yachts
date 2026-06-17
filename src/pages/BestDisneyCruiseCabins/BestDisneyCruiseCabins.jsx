@@ -132,58 +132,67 @@ function BestDisneyCruiseCabins() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com",
-        "logo": "https://www.tripsandships.com/PNG%20image.png",
-        "sameAs": [
-          "https://www.facebook.com/tripsandships/",
-          "https://www.instagram.com/tripsandshipsluxurytravel"
-        ]
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/best-disney-cruise-cabins",
+        "url": "https://www.tripsandships.com/best-disney-cruise-cabins",
+        "name": "Best Disney Cruise Cabins",
+        "headline": "Best Disney Cruise Cabins | Which Disney Cruise Room Should You Book?",
+        "description": "Discover the best Disney Cruise cabins for families, couples, first-time cruisers, and luxury travelers. Compare inside, oceanview, verandah, concierge, and suite accommodations.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" }
       },
       {
         "@type": "TravelAgency",
+        "@id": "#trips-ships",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com",
-        "description": "Luxury travel agency specializing in Disney Cruise Line cabin recommendations, stateroom guides, and Disney cruise planning for families, couples, and luxury travelers."
+        "logo": "https://www.tripsandships.com/PNG%20image.png",
+        "description": "Luxury travel agency specializing in Disney Cruise Line cabin recommendations, stateroom guides, and Disney cruise planning for families, couples, and luxury travelers.",
+        "sameAs": [
+          "https://www.facebook.com/tripsandships/",
+          "https://www.instagram.com/tripsandshipsluxurytravel"
+        ],
+        "founder": { "@id": "#angela-hughes" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com"
       },
       {
         "@type": "Person",
+        "@id": "#angela-hughes",
         "name": "Angela Hughes",
         "jobTitle": "CEO of Trips & Ships Luxury Travel",
         "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Trips & Ships Luxury Travel"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "name": "Best Disney Cruise Cabins",
-        "url": "https://www.tripsandships.com/best-disney-cruise-cabins",
-        "description": "Discover the best Disney Cruise cabins for families, couples, first-time cruisers, and luxury travelers. Compare inside, oceanview, verandah, concierge, and suite accommodations."
+        "worksFor": { "@id": "#trips-ships" }
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.tripsandships.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Disney Cruise Planning",
-            "item": "https://www.tripsandships.com/disney-cruise-planning"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Best Disney Cruise Cabins",
-            "item": "https://www.tripsandships.com/best-disney-cruise-cabins"
-          }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+          { "@type": "ListItem", "position": 2, "name": "Disney Cruise Planning", "item": "https://www.tripsandships.com/disney-cruise-planning" },
+          { "@type": "ListItem", "position": 3, "name": "Best Disney Cruise Cabins", "item": "https://www.tripsandships.com/best-disney-cruise-cabins" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": "Best Disney Cruise Cabins: How to Choose the Perfect Room for Your Vacation",
+        "description": "Complete guide to choosing the best Disney Cruise cabins including inside, oceanview, verandah, concierge, and royal suite accommodations for families, couples, and luxury travelers.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" },
+        "keywords": [
+          "Best Disney Cruise Cabins",
+          "Best Disney Cruise Rooms",
+          "Disney Cruise Cabin Guide",
+          "Disney Cruise Staterooms",
+          "Disney Cruise Verandah Rooms",
+          "Disney Cruise Concierge Suites",
+          "Best cabins on Disney Cruise Line",
+          "Which Disney cruise room should I book",
+          "Disney cruise cabin recommendations",
+          "Best Disney cruise rooms for families"
         ]
       },
       {

@@ -67,18 +67,81 @@ function CastawayCayVsLookoutCay() {
     const schemaData = {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "logo": "https://www.tripsandships.com/PNG%20image.png", "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"] },
-            { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in Disney Cruise Line private island comparisons, Castaway Cay reviews, Lookout Cay guides, and premium family vacations." },
-            { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-            { "@type": "WebPage", "name": "Castaway Cay vs Lookout Cay", "url": "https://www.tripsandships.com/castaway-cay-vs-lookout-cay", "description": "Compare Castaway Cay vs Lookout Cay including beaches, dining, activities, family experiences, adults-only areas, and overall value." },
             {
-                "@type": "BreadcrumbList", "itemListElement": [
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/castaway-cay-vs-lookout-cay",
+                "url": "https://www.tripsandships.com/castaway-cay-vs-lookout-cay",
+                "name": "Castaway Cay vs Lookout Cay",
+                "headline": "Castaway Cay vs Lookout Cay | Which Disney Island Is Better?",
+                "description": "Compare Castaway Cay vs Lookout Cay including beaches, dining, activities, family experiences, adults-only areas, transportation, and overall value to determine which Disney destination is right for your cruise.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "#trips-ships",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "description": "Luxury travel agency specializing in Disney Cruise Line private island comparisons, Castaway Cay reviews, Lookout Cay guides, and premium family vacations.",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ],
+                "founder": { "@id": "#angela-hughes" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com"
+            },
+            {
+                "@type": "Person",
+                "@id": "#angela-hughes",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "worksFor": { "@id": "#trips-ships" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
                     { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
                     { "@type": "ListItem", "position": 3, "name": "Castaway Cay vs Lookout Cay", "item": "https://www.tripsandships.com/castaway-cay-vs-lookout-cay" }
                 ]
             },
-            { "@type": "FAQPage", "mainEntity": islandFaqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } })) }
+            {
+                "@type": "Article",
+                "headline": "Castaway Cay vs Lookout Cay: Which Disney Island Experience Is Better?",
+                "description": "Complete comparison of Castaway Cay vs Lookout Cay covering beaches, dining, activities, family experiences, adult areas, transportation, culture, and overall value.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" },
+                "keywords": [
+                    "Castaway Cay vs Lookout Cay",
+                    "Disney Castaway Cay",
+                    "Disney Lookout Cay",
+                    "Castaway Cay vs Lookout Cay at Lighthouse Point",
+                    "Disney Private Island Comparison",
+                    "Disney Cruise Island Destinations",
+                    "Is Castaway Cay better than Lookout Cay",
+                    "Which Disney private island is best",
+                    "Lookout Cay vs Castaway Cay for families",
+                    "Disney Cruise private island comparison"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": islandFaqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            }
         ]
     }
 

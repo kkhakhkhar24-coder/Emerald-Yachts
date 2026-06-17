@@ -62,18 +62,81 @@ function DisneyWishVsDisneyTreasure() {
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "logo": "https://www.tripsandships.com/PNG%20image.png", "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"] },
-      { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in Disney Cruise Line comparisons, Disney Wish reviews, Disney Treasure reviews, and premium family vacations." },
-      { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-      { "@type": "WebPage", "name": "Disney Wish vs Disney Treasure", "url": "https://www.tripsandships.com/disney-wish-vs-disney-treasure", "description": "Compare Disney Wish vs Disney Treasure including dining, entertainment, staterooms, itineraries, and value to determine which Disney cruise ship is right for you." },
       {
-        "@type": "BreadcrumbList", "itemListElement": [
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/disney-wish-vs-disney-treasure",
+        "url": "https://www.tripsandships.com/disney-wish-vs-disney-treasure",
+        "name": "Disney Wish vs Disney Treasure",
+        "headline": "Disney Wish vs Disney Treasure | Which Disney Cruise Ship Is Better?",
+        "description": "Compare Disney Wish vs Disney Treasure including dining, entertainment, staterooms, itineraries, adult experiences, family activities, and value to determine which Disney cruise ship is right for you.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "#trips-ships",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com",
+        "logo": "https://www.tripsandships.com/PNG%20image.png",
+        "description": "Luxury travel agency specializing in Disney Cruise Line comparisons, Disney Wish reviews, Disney Treasure reviews, and premium family vacations.",
+        "sameAs": [
+          "https://www.facebook.com/tripsandships/",
+          "https://www.instagram.com/tripsandshipsluxurytravel"
+        ],
+        "founder": { "@id": "#angela-hughes" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "#angela-hughes",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+        "worksFor": { "@id": "#trips-ships" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
           { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
           { "@type": "ListItem", "position": 3, "name": "Disney Wish vs Disney Treasure", "item": "https://www.tripsandships.com/disney-wish-vs-disney-treasure" }
         ]
       },
-      { "@type": "FAQPage", "mainEntity": wishVsTreasureFaqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } })) }
+      {
+        "@type": "Article",
+        "headline": "Disney Wish vs Disney Treasure: Which Disney Cruise Ship Should You Choose?",
+        "description": "Complete comparison of Disney Wish vs Disney Treasure covering ship design, entertainment, dining, adult experiences, staterooms, family activities, itineraries, and pricing.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" },
+        "keywords": [
+          "Disney Wish vs Disney Treasure",
+          "Disney Treasure vs Disney Wish",
+          "Best Disney Cruise Ship",
+          "Disney Cruise Ship Comparison",
+          "Disney Wish Review",
+          "Disney Treasure Review",
+          "Disney Wish or Disney Treasure",
+          "Which is better Disney Wish or Disney Treasure",
+          "Disney Wish vs Disney Treasure for families",
+          "Disney Cruise ship comparison guide"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": wishVsTreasureFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
     ]
   }
 

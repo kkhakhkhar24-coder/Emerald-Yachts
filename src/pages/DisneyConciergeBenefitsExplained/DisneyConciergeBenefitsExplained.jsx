@@ -84,18 +84,81 @@ function DisneyConciergeBenefitsExplained() {
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "logo": "https://www.tripsandships.com/PNG%20image.png", "sameAs": ["https://www.facebook.com/tripsandships/", "https://www.instagram.com/tripsandshipsluxurytravel"] },
-      { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com", "description": "Luxury travel agency specializing in Disney Cruise Line Concierge Level planning, benefits breakdowns, and premium VIP cruise experiences." },
-      { "@type": "Person", "name": "Angela Hughes", "jobTitle": "CEO of Trips & Ships Luxury Travel", "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.", "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" } },
-      { "@type": "WebPage", "name": "Disney Concierge Benefits Explained", "url": "https://www.tripsandships.com/disney-concierge-benefits-explained", "description": "Learn everything included with Disney Cruise Line Concierge Level, from priority boarding and concierge lounges to exclusive sun decks, dining assistance, and VIP perks." },
       {
-        "@type": "BreadcrumbList", "itemListElement": [
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/disney-concierge-benefits-explained",
+        "url": "https://www.tripsandships.com/disney-concierge-benefits-explained",
+        "name": "Disney Concierge Benefits Explained",
+        "headline": "Disney Concierge Benefits Explained | Complete Disney Cruise Concierge Guide",
+        "description": "Learn everything included with Disney Cruise Line Concierge Level, from priority boarding and concierge lounges to exclusive sun decks, dining assistance, and VIP perks.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "#trips-ships",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com",
+        "logo": "https://www.tripsandships.com/PNG%20image.png",
+        "description": "Luxury travel agency specializing in Disney Cruise Line Concierge Level planning, benefits breakdowns, and premium VIP cruise experiences.",
+        "sameAs": [
+          "https://www.facebook.com/tripsandships/",
+          "https://www.instagram.com/tripsandshipsluxurytravel"
+        ],
+        "founder": { "@id": "#angela-hughes" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "#angela-hughes",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+        "worksFor": { "@id": "#trips-ships" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
           { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
           { "@type": "ListItem", "position": 3, "name": "Disney Concierge Benefits Explained", "item": "https://www.tripsandships.com/disney-concierge-benefits-explained" }
         ]
       },
-      { "@type": "FAQPage", "mainEntity": conciergeFaqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } })) }
+      {
+        "@type": "Article",
+        "headline": "Disney Concierge Benefits Explained: Everything You Need to Know Before Upgrading",
+        "description": "Complete guide to Disney Cruise Line Concierge Level benefits including priority boarding, concierge lounges, dedicated hosts, exclusive sun decks, stateroom enhancements, and VIP perks.",
+        "author": { "@id": "#angela-hughes" },
+        "publisher": { "@id": "#trips-ships" },
+        "keywords": [
+          "Disney Concierge Benefits Explained",
+          "Disney Cruise Concierge Benefits",
+          "Disney Concierge Level Perks",
+          "Disney Cruise VIP Experience",
+          "Disney Concierge Lounge",
+          "Disney Cruise Concierge Guide",
+          "What are Disney Concierge benefits",
+          "Disney Cruise Concierge perks explained",
+          "Disney Concierge Level guide",
+          "Disney Concierge worth the upgrade"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": conciergeFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
     ]
   }
 

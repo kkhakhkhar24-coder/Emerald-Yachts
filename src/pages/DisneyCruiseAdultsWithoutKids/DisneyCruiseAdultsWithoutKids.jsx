@@ -114,58 +114,67 @@ function DisneyCruiseAdultsWithoutKids() {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
+                "@type": "WebPage",
+                "@id": "https://www.tripsandships.com/disney-cruise-for-adults-without-kids",
+                "url": "https://www.tripsandships.com/disney-cruise-for-adults-without-kids",
+                "name": "Disney Cruise for Adults Without Kids",
+                "headline": "Disney Cruise for Adults Without Kids | Is Disney Cruise Line Worth It for Adults?",
+                "description": "Discover whether a Disney Cruise is worth it for adults without children. Explore adult-only spaces, luxury dining, entertainment, and romantic experiences on Disney Cruise Line.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" }
             },
             {
                 "@type": "TravelAgency",
+                "@id": "#trips-ships",
                 "name": "Trips & Ships Luxury Travel",
                 "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in Disney Cruise Line, adults-only Disney cruise experiences, honeymoon cruises, and premium couple travel."
+                "logo": "https://www.tripsandships.com/PNG%20image.png",
+                "description": "Luxury travel agency specializing in Disney Cruise Line, adults-only Disney cruise experiences, honeymoon cruises, and premium couple travel.",
+                "sameAs": [
+                    "https://www.facebook.com/tripsandships/",
+                    "https://www.instagram.com/tripsandshipsluxurytravel"
+                ],
+                "founder": { "@id": "#angela-hughes" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "Person",
+                "@id": "#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO of Trips & Ships Luxury Travel",
                 "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "name": "Disney Cruise for Adults Without Kids",
-                "url": "https://www.tripsandships.com/disney-cruise-for-adults-without-kids",
-                "description": "Discover whether a Disney Cruise is worth it for adults without children. Explore adult-only spaces, luxury dining, entertainment, and romantic experiences on Disney Cruise Line."
+                "worksFor": { "@id": "#trips-ships" }
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.tripsandships.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Luxury Cruises",
-                        "item": "https://www.tripsandships.com/luxury-cruises"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Disney Cruise for Adults Without Kids",
-                        "item": "https://www.tripsandships.com/disney-cruise-for-adults-without-kids"
-                    }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Luxury Cruises", "item": "https://www.tripsandships.com/luxury-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Disney Cruise for Adults Without Kids", "item": "https://www.tripsandships.com/disney-cruise-for-adults-without-kids" }
+                ]
+            },
+            {
+                "@type": "Article",
+                "headline": "Disney Cruise for Adults Without Kids",
+                "description": "Expert guide to Disney Cruise Line for adults without children, covering adult-only spaces, luxury dining, entertainment, destinations, and why couples choose Disney Cruise Line.",
+                "author": { "@id": "#angela-hughes" },
+                "publisher": { "@id": "#trips-ships" },
+                "keywords": [
+                    "Disney Cruise for Adults Without Kids",
+                    "Disney Cruise Adults Only",
+                    "Disney Cruise for Couples",
+                    "Disney Cruise Without Children",
+                    "Adult Disney Cruise Experience",
+                    "Disney Cruise for Honeymoon",
+                    "Is Disney Cruise worth it for adults",
+                    "Best Disney cruise for couples",
+                    "Adults-only areas on Disney Cruise Line",
+                    "Disney Cruise Line adult only"
                 ]
             },
             {
