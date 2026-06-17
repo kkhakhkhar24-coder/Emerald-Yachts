@@ -76,84 +76,220 @@ function DisneyVsRoyalCaribbean() {
         { question: 'Which cruise line should first-time cruisers choose?', answer: 'Families with young children often prefer Disney, while travelers seeking value, variety, and activities frequently choose Royal Caribbean.' }
     ]
 
-    const mediMistakes = [
-        {
-            title: 'Choosing Based Only on Price',
-            desc: 'Disney Cruise Line is generally more expensive, but the experience is fundamentally different. Judging purely on cost without evaluating what each line includes leads to mismatched expectations.',
-            bullets: [
-                'Disney: premium immersive experience included in fare',
-                'Royal Caribbean: strong value with optional extras'
-            ]
-        },
-        {
-            title: 'Not Matching the Line to Your Family Age',
-            desc: 'Disney excels for children ages 3–12 while Royal Caribbean wins for teens and multi-generational groups. Booking without considering your children\'s ages often leads to disappointment.'
-        },
-        {
-            title: 'Underestimating Royal Caribbean Ship Size',
-            desc: 'Royal Caribbean\'s largest ships are enormous. Travelers expecting an intimate experience may feel overwhelmed by the scale, crowds, and complexity of navigating a mega ship.'
-        },
-        {
-            title: 'Ignoring the Private Island Difference',
-            desc: 'Disney\'s Castaway Cay and Lookout Cay offer a relaxed, family-focused beach day. Royal Caribbean\'s CocoCay is an adventure park at sea. Choosing the wrong one for your style matters.'
+  
+  const disneyroyal = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Disney Cruise vs Royal Caribbean: Which Cruise Line Is Best for Your Family?",
+    "description": "Compare Disney Cruise Line and Royal Caribbean to find the best family cruise. Explore pricing, entertainment, dining, kids clubs, private islands, adult experiences, and overall value.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/disney-cruise-vs-royal-caribbean"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Disney Cruise more expensive than Royal Caribbean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney Cruise Line is typically more expensive than Royal Caribbean for comparable itineraries and cabin categories."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is better for toddlers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Cruise Line is generally considered better for toddlers because of character experiences and family-focused programming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is better for teenagers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Royal Caribbean usually wins for teens due to its adventure attractions, sports activities, and larger teen spaces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Disney have casinos onboard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Disney Cruise Line does not operate casinos on its ships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Royal Caribbean have casinos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most Royal Caribbean ships feature casinos for adult guests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both offer excellent dining, but Royal Caribbean provides more specialty dining choices while Disney focuses on themed family dining experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Disney Cruise worth the extra cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Disney fans and families with young children, many travelers feel the additional cost is justified by the unique experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better kids clubs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney is widely regarded as having some of the best kids clubs at sea."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Royal Caribbean offer character experiences?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not in the same way as Disney. Royal Caribbean focuses more on activities and entertainment than character interactions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has larger ships?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Royal Caribbean operates some of the largest cruise ships in the world."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the cruise fare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both include accommodations, meals, entertainment, and many onboard activities, though specialty options may cost extra."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better private islands?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney offers a more relaxed beach experience, while Royal Caribbean's Perfect Day at CocoCay focuses on thrills and adventure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Disney cruises good for adults without children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney offers adult-only dining, lounges, pools, and spa facilities, though the atmosphere remains family-oriented."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line offers more destinations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Royal Caribbean offers a larger fleet and a wider variety of itineraries worldwide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line should first-time cruisers choose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Families with young children often prefer Disney, while travelers seeking value, variety, and activities frequently choose Royal Caribbean."
+        }
+      }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Disney Cruise Line",
+        "item": "https://www.tripsandships.com/disney-cruise-line"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Disney Cruise vs Royal Caribbean",
+        "item": "https://www.tripsandships.com/disney-cruise-vs-royal-caribbean"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disney Cruise vs Royal Caribbean: Which Cruise Line Is Best for Your Family?",
+    "url": "https://www.tripsandships.com/disney-cruise-vs-royal-caribbean",
+    "description": "Compare Disney Cruise Line and Royal Caribbean to determine which cruise line best fits your family's travel style, budget, entertainment preferences, and vacation goals."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
 
-    const disneySchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "WebPage",
-                "name": "Disney Cruise vs Royal Caribbean",
-                "url": "https://www.tripsandships.com/disney-cruise-vs-royal-caribbean",
-                "description": "Expert comparison of Disney Cruise Line and Royal Caribbean from Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Cruise Comparisons", "item": "https://www.tripsandships.com/cruise-comparisons" },
-                    { "@type": "ListItem", "position": 3, "name": "Disney Cruise vs Royal Caribbean", "item": "https://www.tripsandships.com/disney-cruise-vs-royal-caribbean" }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is Disney Cruise more expensive than Royal Caribbean?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Disney Cruise Line is typically more expensive than Royal Caribbean for comparable itineraries and cabin categories." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which cruise line is better for teenagers?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Royal Caribbean usually wins for teens due to its adventure attractions, sports activities, and larger teen spaces." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which cruise line has better kids clubs?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Disney is widely regarded as having some of the best kids clubs at sea." }
-                    }
-                ]
-            }
-        ]
-    }
 
     // theme shortcuts (css variables)
     const navy = 'var(--medi-navy)'
@@ -168,7 +304,7 @@ function DisneyVsRoyalCaribbean() {
                 <meta name="title" content="Disney Cruise vs Royal Caribbean 2026 | Family Cruise Comparison Guide" />
                 <meta name="description" content="Compare Disney Cruise Line and Royal Caribbean with expert guidance from Trips & Ships Luxury Travel. Discover which cruise line is best for your family's travel style, budget, and vacation priorities." />
                 <meta name="keywords" content="Disney Cruise vs Royal Caribbean, Disney Cruise Line comparison, Royal Caribbean family cruise, best family cruise line, Disney vs Royal Caribbean 2026" />
-                <script type="application/ld+json">{JSON.stringify(disneySchemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(disneyroyal)}</script>
             </Helmet>
 
             <Navbar />

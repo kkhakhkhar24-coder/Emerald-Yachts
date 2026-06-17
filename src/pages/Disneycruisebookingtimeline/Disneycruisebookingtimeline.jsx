@@ -137,20 +137,211 @@ function DisneyCruiseBookingTimeline() {
         { q: 'What is the most important deadline before sailing?', a: 'Completing online check-in and ensuring final payment has been made are among the most critical pre-cruise deadlines.' }
     ]
 
-    const schemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com" },
-            {
-                "@type": "FAQPage",
-                "mainEntity": faqs.map(f => ({
-                    "@type": "Question",
-                    "name": f.q,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.a }
-                }))
-            }
-        ]
-    }
+  const cruisebooking = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Disney Cruise Booking Timeline: When to Book, Reserve, and Plan Your Disney Cruise Vacation",
+    "description": "Learn the complete Disney Cruise booking timeline, including when to reserve cruises, excursions, dining, onboard activities, transportation, and more.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/disney-cruise-booking-timeline"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book a Disney Cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Booking 12–24 months in advance often provides the best pricing and cabin selection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Disney Cruise pricing go up over time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In many cases, yes. Disney Cruise Line often uses demand-based pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When can I book excursions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Booking windows typically open between 75 and 123 days before sailing depending on your Castaway Club status."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When can first-time cruisers make reservations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most first-time guests can book activities approximately 75 days before sailing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Castaway Club?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Cruise Line's loyalty program that offers early booking privileges and other benefits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I complete online check-in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As soon as your check-in window opens, usually around 30–40 days before departure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I reserve Palo before sailing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Palo reservations become available during your booking window."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if excursions sell out?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Additional availability sometimes opens closer to sailing or once onboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is final payment due?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Final payment deadlines vary by itinerary and stateroom category."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I arrive the day before my cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many travelers choose to arrive one day early to avoid travel delays."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I book flights?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally 6–9 months before departure for the best selection and pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I modify reservations after booking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, depending on availability and Disney Cruise Line policies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What documents are required for embarkation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Requirements vary by itinerary, but passports are strongly recommended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I purchase travel insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many travelers choose travel insurance to protect against unexpected disruptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the most important deadline before sailing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Completing online check-in and ensuring final payment has been made are among the most critical pre-cruise deadlines."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Disney Cruise Line",
+        "item": "https://www.tripsandships.com/disney-cruise-line"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Disney Cruise Booking Timeline",
+        "item": "https://www.tripsandships.com/disney-cruise-booking-timeline"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
 
     // ── Timeline phases data ──────────────────────────────────────────────────
     const timelinePhases = [
@@ -383,7 +574,7 @@ function DisneyCruiseBookingTimeline() {
                 <title>Disney Cruise Booking Timeline 2026 | Complete Planning Guide &amp; Key Dates</title>
                 <meta name="description" content="Learn the complete Disney Cruise booking timeline, including when to reserve cruises, excursions, dining, onboard activities, transportation, and more. Includes 15 FAQs." />
                 <meta name="keywords" content="Disney Cruise Booking Timeline, Disney cruise planning timeline, Disney cruise booking guide, when to book Disney cruise, Disney cruise reservations" />
-                <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(cruisebooking)}</script>
             </Helmet>
 
             <Navbar />

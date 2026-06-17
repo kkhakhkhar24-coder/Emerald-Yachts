@@ -181,67 +181,229 @@ function DisneyCruisePackingList() {
         { label: 'Disney Extras', icon: Sparkles, items: ['Pirate Night costumes', 'Autograph books', 'Door magnets', 'Disney ears'] }
     ]
 
-    const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "Article",
-                "headline": "Disney Cruise Packing List: Everything You Need for a Smooth Sailing Vacation",
-                "author": { "@type": "Person", "name": "Angela Hughes" }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Disney Cruise Line", "item": "https://www.tripsandships.com/disney-cruise-line" },
-                    { "@type": "ListItem", "position": 3, "name": "Disney Cruise Packing List", "item": "https://www.tripsandships.com/disney-cruise-packing-list" }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": mediFaqs.map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-                }))
-            }
-        ]
-    }
+const cruisepacking = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Disney Cruise Packing List: The Ultimate Disney Cruise Line Packing Guide",
+    "description": "Planning a Disney Cruise? Discover the ultimate Disney Cruise packing list with essentials for adults, kids, toddlers, Pirate Night, Castaway Cay, excursions, and embarkation day.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/disney-cruise-packing-list"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should I pack for a Disney Cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You should pack travel documents, casual clothing, swimwear, medications, electronics, sunscreen, Pirate Night attire, and beach essentials."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a passport for a Disney Cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A passport is strongly recommended, although some closed-loop cruises may allow alternative documentation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I bring for Pirate Night?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most guests bring pirate costumes, themed shirts, hats, eye patches, and accessories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are formal clothes required on Disney Cruise Line?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Disney Cruise Line generally follows a cruise-casual dress code, although specialty restaurants encourage more polished attire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I bring beach towels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney provides towels for pool and beach use, so bringing your own is optional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Disney Cruise staterooms have hair dryers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney staterooms include hair dryers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I decorate my Disney Cruise door?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Magnetic decorations are permitted and very popular among Disney cruisers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I bring a refillable water bottle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A refillable bottle can help you stay hydrated throughout the cruise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I pack for Castaway Cay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pack sunscreen, sunglasses, hats, water shoes, swimsuits, and a waterproof phone pouch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is motion sickness medicine necessary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Even if you don't usually experience motion sickness, it's wise to pack medication just in case."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Disney ships provide toiletries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Basic toiletries are provided, but many guests prefer bringing their favorite products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What electronics should I bring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bring phones, chargers, cameras, power banks, tablets, and any devices needed during travel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do laundry onboard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney ships offer self-service laundry facilities and laundry services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the most forgotten item on a Disney Cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Portable chargers, sunscreen, medications, and Pirate Night accessories are among the most commonly forgotten items."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many outfits should I pack for a 7-night Disney Cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most travelers pack one daytime outfit per day, several evening outfits, multiple swimsuits, and one Pirate Night costume or themed outfit."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Disney Cruise Line",
+        "item": "https://www.tripsandships.com/disney-cruise-line"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Disney Cruise Packing List",
+        "item": "https://www.tripsandships.com/disney-cruise-packing-list"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disney Cruise Packing List: The Ultimate Disney Cruise Line Packing Guide",
+    "url": "https://www.tripsandships.com/disney-cruise-packing-list",
+    "description": "Complete Disney Cruise packing guide covering embarkation day, Pirate Night, Castaway Cay, family essentials, travel documents, electronics, and cruise vacation must-haves."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
 
+
+   
     return (
         <>
             <Helmet>
-                <title>Disney Cruise Packing List 2026 | Complete Guide for Adults, Kids & Families</title>
-                <meta name="title" content="Disney Cruise Packing List 2026 | Complete Guide for Adults, Kids & Families" />
-                <meta name="description" content="The complete Disney Cruise packing list for embarkation day, Pirate Night, Castaway Cay, character experiences, and onboard activities. Everything you need for a smooth sailing vacation." />
-                <meta name="keywords" content="Disney Cruise Packing List, what to pack for Disney Cruise, Pirate Night outfit, Castaway Cay packing list, Disney Cruise essentials" />
-                <script type="application/ld+json">{JSON.stringify(mediSchemaData)}</script>
+                <title>Disney Cruise Packing List (2026 Guide) | What to Pack for a Disney Cruise</title>
+                <meta name="title" content="Disney Cruise Packing List: Everything You Need to Bring" />
+                <meta name="description" content="Planning a Disney Cruise? Discover the ultimate Disney Cruise packing list with essentials for adults, kids, toddlers, Pirate Night, Castaway Cay, excursions, and embarkation day." />
+                <meta name="keywords" content="Disney Cruise Packing List, Disney Cruise Packing Guide, Disney Cruise Checklist, Disney Cruise Packing Guide, Disney Cruise essentials" />
+                <script type="application/ld+json">{JSON.stringify(cruisepacking)}</script>
             </Helmet>
 
             <Navbar />

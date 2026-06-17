@@ -38,49 +38,179 @@ import { useState, useEffect } from 'react'
 // ─────────────────────────────────────────────────────────────────────────────
 //  SCHEMA
 // ─────────────────────────────────────────────────────────────────────────────
-const disneySchemaData = {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
+
+    const disneyluxury = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What Luxury Travelers Get Wrong About Disney Cruise Line",
+        "description": "Many luxury travelers overlook Disney Cruise Line because of its family-focused reputation. Discover what affluent travelers often misunderstand about Disney's service, accommodations, dining, destinations, and premium experiences.",
+        "author": {
+          "@type": "Person",
+          "name": "Angela Hughes",
+          "jobTitle": "CEO",
+          "worksFor": {
             "@type": "Organization",
-            "name": "Trips & Ships Luxury Travel",
-            "url": "https://www.tripsandships.com",
-            "logo": "https://www.tripsandships.com/PNG%20image.png",
-            "sameAs": [
-                "https://www.facebook.com/tripsandships/",
-                "https://www.instagram.com/tripsandshipsluxurytravel"
-            ]
+            "name": "Trips & Ships Luxury Travel"
+          }
         },
-        { "@type": "TravelAgency", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com" },
-        {
-            "@type": "Person", "name": "Angela Hughes",
-            "jobTitle": "CEO of Trips & Ships Luxury Travel",
-            "worksFor": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" }
+        "publisher": {
+          "@type": "Organization",
+          "name": "Trips & Ships Luxury Travel",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tripsandships.com/logo.png"
+          }
         },
-        {
-            "@type": "WebPage",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.tripsandships.com/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+        },
+        "datePublished": "2026-06-17",
+        "dateModified": "2026-06-17"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Disney Cruise Line considered luxury?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disney is generally categorized as a premium cruise line rather than an ultra-luxury cruise line, but many aspects of the experience meet or exceed luxury traveler expectations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Disney Cruise Line more expensive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disney commands premium pricing due to exceptional service, entertainment, family programming, guest satisfaction, and strong demand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Disney worth it for affluent families?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For many affluent families, Disney provides exceptional value because it successfully serves multiple generations simultaneously."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there adult-only areas on Disney ships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Disney offers adult-only restaurants, lounges, pools, and spa facilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Disney suitable for grandparents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Disney is widely regarded as one of the best cruise options for grandparents traveling with grandchildren."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Disney compare to luxury cruise lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disney excels in family experiences and entertainment, while traditional luxury lines often focus more heavily on destination immersion and adults-only environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Concierge Level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disney Concierge is the cruise line's premium experience, offering enhanced service, exclusive spaces, and priority access."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Disney itinerary appeals most to luxury travelers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alaska, Mediterranean, and Northern Europe itineraries are often especially attractive to affluent travelers seeking educational and cultural experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can adults enjoy Disney without children?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, though Disney is fundamentally family-focused. Adults who appreciate Disney storytelling and entertainment often enjoy the experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Disney only for Disney fans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Many travelers choose Disney primarily for service, family travel convenience, and overall experience rather than brand loyalty."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Disney Cruise Line",
+            "item": "https://www.tripsandships.com/disney-cruise-line"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
             "name": "What Luxury Travelers Get Wrong About Disney Cruise Line",
-            "url": "https://www.tripsandships.com/what-luxury-travelers-get-wrong-about-disney-cruise-line",
-            "description": "Many luxury travelers overlook Disney Cruise Line because of its family-focused reputation. Discover what affluent travelers often misunderstand about Disney."
+            "item": "https://www.tripsandships.com/what-luxury-travelers-get-wrong-about-disney-cruise-line"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "What Luxury Travelers Get Wrong About Disney Cruise Line",
+        "url": "https://www.tripsandships.com/what-luxury-travelers-get-wrong-about-disney-cruise-line",
+        "description": "Many luxury travelers overlook Disney Cruise Line because of its family-focused reputation. Learn why Disney offers premium service, concierge accommodations, exceptional entertainment, and multigenerational travel experiences."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com",
+        "logo": "https://www.tripsandships.com/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/tripsandships"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Trips & Ships Luxury Travel"
         },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                { "@type": "ListItem", "position": 2, "name": "Luxury Cruise Insights", "item": "https://www.tripsandships.com/luxury-cruise-insights" },
-                { "@type": "ListItem", "position": 3, "name": "What Luxury Travelers Get Wrong About Disney Cruise Line", "item": "https://www.tripsandships.com/what-luxury-travelers-get-wrong-about-disney-cruise-line" }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                { "@type": "Question", "name": "Is Disney Cruise Line considered luxury?", "acceptedAnswer": { "@type": "Answer", "text": "Disney is generally categorized as a premium cruise line rather than an ultra-luxury cruise line, but many aspects of the experience meet or exceed luxury traveler expectations." } },
-                { "@type": "Question", "name": "Why is Disney Cruise Line more expensive?", "acceptedAnswer": { "@type": "Answer", "text": "Disney commands premium pricing due to exceptional service, entertainment, family programming, guest satisfaction, and strong demand." } },
-                { "@type": "Question", "name": "Is Disney worth it for affluent families?", "acceptedAnswer": { "@type": "Answer", "text": "For many affluent families, Disney provides exceptional value because it successfully serves multiple generations simultaneously." } }
-            ]
-        }
-    ]
-}
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "sameAs": [
+          "https://www.instagram.com/tripsandships"
+        ]
+      }
+    ];
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  DATA
@@ -248,7 +378,7 @@ function DisneyLuxuryCruise() {
                 <meta name="title" content="Why Luxury Travelers Should Reconsider Disney Cruise Line" />
                 <meta name="description" content="Many luxury travelers overlook Disney Cruise Line because of its family-focused reputation. Discover what affluent travelers often misunderstand about Disney's service, accommodations, dining, destinations, and premium experiences." />
                 <meta name="keywords" content="What Luxury Travelers Get Wrong About Disney Cruise Line, Disney Cruise Luxury Experience, Luxury Disney Cruise, Disney Cruise Concierge Level, Premium Family Cruises" />
-                <script type="application/ld+json">{JSON.stringify(disneySchemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(disneyluxury)}</script>
             </Helmet>
 
             <Navbar />

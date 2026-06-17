@@ -147,48 +147,260 @@ function BestDisneyCruiseShipForAdults() {
         }
     ]
 
-    const mediSchemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "logo": "https://www.tripsandships.com/PNG%20image.png",
-                "sameAs": [
-                    "https://www.facebook.com/tripsandships/",
-                    "https://www.instagram.com/tripsandshipsluxurytravel"
-                ]
-            },
-            {
-                "@type": "TravelAgency",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences."
-            },
-            {
-                "@type": "Person",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO of Trips & Ships Luxury Travel",
-                "description": "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Trips & Ships Luxury Travel"
-                }
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": mediFaqs.map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
-                    }
-                }))
-            }
-        ]
-    }
+const cruiseshipadults = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Best Disney Cruise Ship for Adults (2026 Guide)",
+    "description": "Discover the best Disney cruise ship for adults, couples, empty nesters, and luxury travelers. Compare Disney Treasure, Disney Wish, Disney Fantasy, Disney Dream, and Disney Wonder.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/best-disney-cruise-ship-for-adults"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best Disney cruise ship for adults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Treasure is currently considered the best overall Disney ship for adults due to its luxury features, dining options, and modern design."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney ship is best for couples?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Wish is often ranked as the most romantic Disney cruise ship."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can adults cruise Disney without children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Thousands of adults sail Disney Cruise Line every year without children."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Disney have adult-only areas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every Disney ship features adult-exclusive spaces including pools, lounges, restaurants, and spa areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney cruise has the best nightlife?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Fantasy offers the strongest lineup of adult nightlife and lounge experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Disney Cruise Line luxurious?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Cruise Line is considered a premium cruise brand with exceptional service and high-quality accommodations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Disney have casinos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Disney Cruise Line does not operate casinos on its ships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Palo on Disney Cruise Line?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Palo is Disney's adults-only specialty restaurant featuring Italian-inspired cuisine."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Enchanté?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enchanté is Disney's most upscale fine dining experience available on select Disney ships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Disney cruises worth it for adults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many adults consider Disney cruises worth the premium pricing because of the service, dining, entertainment, and adult-only amenities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney ship is newest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Treasure is among Disney Cruise Line's newest ships and incorporates many of the brand's latest innovations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney ship is best for Alaska?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Wonder is widely considered the best Disney ship for Alaska itineraries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Disney Wish better than Disney Dream?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For couples and luxury travelers, Disney Wish generally offers more modern amenities and upgraded dining experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Disney cruises crowded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney ships typically feel less crowded than many mainstream cruise lines due to thoughtful design and passenger flow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What age group enjoys Disney cruises most?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney cruises attract travelers of all ages, including families, couples, retirees, and solo travelers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney cruise has the best food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Treasure and Disney Wish are frequently praised for their dining venues and culinary experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can adults use the Disney spa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Senses Spa is designed primarily for adult guests and offers a full range of wellness treatments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney cruise is best for first-time cruisers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Dream is often recommended for first-time Disney cruisers because of its shorter itineraries and balanced onboard experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Disney cruises good for honeymooners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Disney Wish and Disney Treasure are especially popular among honeymoon couples."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best Disney cruise ship for luxury travelers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Treasure currently offers the most luxurious overall experience within the Disney Cruise Line fleet."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Disney Cruise Line",
+        "item": "https://www.tripsandships.com/disney-cruise-line"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Best Disney Cruise Ship for Adults",
+        "item": "https://www.tripsandships.com/best-disney-cruise-ship-for-adults"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Best Disney Cruise Ship for Adults (2026 Guide)",
+    "url": "https://www.tripsandships.com/best-disney-cruise-ship-for-adults",
+    "description": "Compare Disney Treasure, Disney Wish, Disney Fantasy, Disney Dream, and Disney Wonder to find the best Disney cruise ship for adults, couples, empty nesters, and luxury travelers."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
+
+
 
     return (
         <>
@@ -197,7 +409,7 @@ function BestDisneyCruiseShipForAdults() {
                 <meta name="title" content="Best Disney Cruise Ship for Adults in 2026 | Complete Disney Cruise Line Guide" />
                 <meta name="description" content="Discover the best Disney cruise ship for adults, couples, empty nesters, and luxury travelers. Compare Disney Wish, Disney Treasure, Disney Dream, Disney Fantasy, and more." />
                 <meta name="keywords" content="Best Disney Cruise Ship for Adults, Disney Cruise for Adults, Best Disney Ship for Couples, Disney Cruise Without Kids, Disney Wish for Adults, Disney Treasure Review" />
-                <script type="application/ld+json">{JSON.stringify(mediSchemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(cruiseshipadults)}</script>
             </Helmet>
 
             <Navbar />

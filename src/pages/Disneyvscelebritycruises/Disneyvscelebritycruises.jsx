@@ -166,30 +166,261 @@ function DisneyVsCelebrityCruises() {
         { type: 'Adventure Travelers', winner: 'Celebrity' },
     ]
 
-    const schemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
-            },
-            {
-                "@type": "WebPage",
-                "name": "Disney Cruise vs Celebrity Cruises",
-                "url": "https://www.tripsandships.com/disney-cruise-vs-celebrity-cruises",
-                "description": "Compare Disney Cruise Line and Celebrity Cruises for families, couples, adults, dining, entertainment, pricing, cabins, destinations, and overall value."
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": faqs.slice(0, 5).map(f => ({
-                    "@type": "Question",
-                    "name": f.question,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-                }))
-            }
-        ]
-    }
+
+const disneycelebrity = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Disney Cruise vs Celebrity Cruises: Which Cruise Line Is Better in 2026?",
+    "description": "Compare Disney Cruise Line and Celebrity Cruises for families, couples, adults, dining, entertainment, pricing, cabins, destinations, and overall value.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/disney-cruise-vs-celebrity-cruises"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Disney Cruise Line better than Celebrity Cruises?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Neither is universally better. Disney excels for families, while Celebrity is generally preferred by adults and luxury travelers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is better for adults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises offers a more adult-oriented atmosphere with upscale dining and nightlife."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is better for families?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Cruise Line is widely considered the best family cruise line in the world."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Disney Cruise Line have casinos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Disney ships do not feature casinos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Celebrity Cruises have casinos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Celebrity ships include onboard casinos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises generally receives higher ratings for culinary experiences and specialty dining."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Disney Cruise Line more expensive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, Disney cruises are priced higher than comparable Celebrity sailings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better entertainment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney Cruise Line is known for industry-leading entertainment and Broadway-style productions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Disney cruises only for families?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Many adults and couples sail Disney without children."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better cabins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity offers more modern accommodations and luxury suite experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Celebrity's Retreat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Retreat is Celebrity's luxury suite-class experience featuring exclusive amenities, premium accommodations, and personalized services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is better for honeymooners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises is often preferred for honeymoons because of its romantic atmosphere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better private islands?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Disney's Castaway Cay is considered one of the best private island experiences in cruising."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line offers more destinations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises serves a larger variety of international destinations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is best for first-time cruisers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Families often prefer Disney, while adults frequently choose Celebrity for their first cruise experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line has better nightlife?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises offers more extensive nightlife and evening entertainment options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line is more luxurious?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Celebrity Cruises is generally considered the more luxurious brand overall."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Celebrity Cruises good for children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but Disney offers significantly more family-focused programming and activities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cruise line offers better value?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For adults, Celebrity usually provides better value due to pricing and included amenities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I choose Disney or Celebrity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose Disney for family-centered vacations and immersive entertainment. Choose Celebrity for luxury, dining, relaxation, and adult-focused travel."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cruise Comparisons",
+        "item": "https://www.tripsandships.com/cruise-comparisons"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Disney Cruise vs Celebrity Cruises",
+        "item": "https://www.tripsandships.com/disney-cruise-vs-celebrity-cruises"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disney Cruise vs Celebrity Cruises: Which Cruise Line Is Better in 2026?",
+    "url": "https://www.tripsandships.com/disney-cruise-vs-celebrity-cruises",
+    "description": "Compare Disney Cruise Line and Celebrity Cruises across family experiences, dining, entertainment, pricing, cabins, destinations, and luxury travel value."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
+
+
 
     return (
         <>
@@ -198,7 +429,7 @@ function DisneyVsCelebrityCruises() {
                 <meta name="title" content="Disney Cruise Line vs Celebrity Cruises: Which Is Best for You?" />
                 <meta name="description" content="Compare Disney Cruise Line and Celebrity Cruises for families, couples, adults, dining, entertainment, pricing, cabins, destinations, and overall value." />
                 <meta name="keywords" content="Disney Cruise vs Celebrity Cruises, Celebrity vs Disney Cruise, Best Cruise Line for Families, Best Cruise Line for Adults" />
-                <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(disneycelebrity)}</script>
             </Helmet>
 
             <Navbar />

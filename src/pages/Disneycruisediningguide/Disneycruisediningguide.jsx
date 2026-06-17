@@ -122,28 +122,226 @@ function DisneyCruiseDiningGuide() {
         { q: 'Which Disney ship has the best dining?', a: 'The Disney Wish and Disney Treasure currently offer the newest and most immersive dining experiences, while Disney Dream and Disney Fantasy remain guest favorites for classic Disney dining.' }
     ]
 
-    const schemaData = {
-        "@context": "https://schema.org",
-        "@graph": [
-            { "@type": "Organization", "name": "Trips & Ships Luxury Travel", "url": "https://www.tripsandships.com" },
-            {
-                "@type": "FAQPage",
-                "mainEntity": faqs.map(f => ({
-                    "@type": "Question",
-                    "name": f.q,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.a }
-                }))
-            }
-        ]
-    }
 
+const cruisedining = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Disney Cruise Dining Guide: Everything You Need to Know About Dining on Disney Cruise Line",
+    "description": "Discover everything about Disney Cruise Line dining, including rotational dining, specialty restaurants, room service, dietary accommodations, dining plans, and answers to the most frequently asked questions.",
+    "author": {
+      "@type": "Person",
+      "name": "Angela Hughes",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trips & Ships Luxury Travel"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tripsandships.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tripsandships.com/disney-cruise-dining-guide"
+    },
+    "datePublished": "2026-06-17",
+    "dateModified": "2026-06-17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is food included on a Disney cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most dining venues, room service, snacks, and beverages are included in your cruise fare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is rotational dining?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rotational dining allows guests to experience different restaurants each evening while keeping the same serving team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need dining reservations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Main dining rooms are assigned automatically. Specialty restaurants require reservations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is room service free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Room service is complimentary, though gratuities are customary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are drinks included?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Soft drinks at beverage stations are included. Alcoholic beverages cost extra."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Disney accommodate food allergies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney Cruise Line is known for excellent allergy and dietary accommodation services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Palo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Palo is Disney's adults-only Italian specialty restaurant available on most ships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Enchanté worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many guests consider Enchanté one of the best fine dining experiences available at sea."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there vegan options?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disney offers vegan and plant-based menu selections."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can kids order from the adult menu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, yes. Disney is very flexible with dining requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Disney rotational dining work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Guests rotate between themed restaurants while their serving team follows them each night."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are character meals included?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most onboard character dining experiences are included in your cruise fare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Animator's Palate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Animator's Palate is Disney's signature restaurant featuring animation-themed interactive dining."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I request a dining time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Guests can request either early or late dining, subject to availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Disney ship has the best dining?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Disney Wish and Disney Treasure currently offer the newest and most immersive dining experiences, while Disney Dream and Disney Fantasy remain guest favorites for classic Disney dining."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.tripsandships.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Disney Cruise Line",
+        "item": "https://www.tripsandships.com/disney-cruise-line"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Disney Cruise Dining Guide",
+        "item": "https://www.tripsandships.com/disney-cruise-dining-guide"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disney Cruise Dining Guide: Everything You Need to Know About Dining on Disney Cruise Line",
+    "url": "https://www.tripsandships.com/disney-cruise-dining-guide",
+    "description": "Complete Disney Cruise Line dining guide covering rotational dining, restaurants, character meals, room service, dietary accommodations, specialty dining, and dining tips."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Trips & Ships Luxury Travel",
+    "url": "https://www.tripsandships.com",
+    "logo": "https://www.tripsandships.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Trips & Ships Luxury Travel"
+    },
+    "url": "https://www.tripsandships.com/about-angela-hughes",
+    "sameAs": [
+      "https://www.instagram.com/tripsandships"
+    ]
+  }
+]
     return (
         <>
             <Helmet>
                 <title>Disney Cruise Dining Guide 2026 | Restaurants, Rotational Dining &amp; FAQs</title>
                 <meta name="description" content="Discover everything about Disney Cruise Line dining, including rotational dining, specialty restaurants, room service, dietary accommodations, dining plans, and answers to the most frequently asked questions." />
                 <meta name="keywords" content="Disney Cruise Dining Guide, Disney Cruise Line dining, Disney cruise restaurants, Disney rotational dining, Disney cruise food guide" />
-                <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(cruisedining)}</script>
             </Helmet>
 
             <Navbar />
