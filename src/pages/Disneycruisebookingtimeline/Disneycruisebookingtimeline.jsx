@@ -6,7 +6,7 @@ import {
     Calendar, CheckCircle, Clock, Star, Crown, Phone,
     ChevronRight, Globe, LayoutList, Sparkles, Compass,
     MapPin, Gem, Award, Ship, Heart, Users, ArrowRight,
-    Anchor, FileText, AlertCircle, Plane, Hotel, CreditCard
+    Anchor, FileText, AlertCircle, Plane, Hotel, CreditCard,GraduationCap,Mic
 } from 'lucide-react'
 
 // ── Hero images ──────────────────────────────────────────────────────────────
@@ -14,6 +14,24 @@ import {
 // import hero2 from '../../assets/DisneyCruiseBookingTimeline/hero2.jpg'
 // import hero3 from '../../assets/DisneyCruiseBookingTimeline/hero3.jpg'
 
+
+import image1 from '../../assets/Disneycruisebookingtimeline/disney-cruise-norwegian-fjords-scenic-cruise-waterfalls-mountains.jpeg'
+import image2 from '../../assets/Disneycruisebookingtimeline/disney-cruise-sunset-ocean-voyage-luxury-family-cruise-experience.jpg'
+import image3 from '../../assets/Disneycruisebookingtimeline/disney-magic-cruise-ship-at-port.jpeg'
+import image4 from '../../assets/Disneycruisebookingtimeline/disney-treasure-grand-hall-luxury-cruise-ship-atrium-interior-design.jpg'
+import image5 from '../../assets/Disneycruisebookingtimeline/disney-cruise-ship-docked-at-castaway-cay-aerial-view.jpg'
+import image6 from '../../assets/Disneycruisebookingtimeline/disney-wish-arendelle-frozen-dining-adventure-live-show-stage.jpeg'
+import image7 from '../../assets/Disneycruisebookingtimeline/disney-wish-enchante-restaurant-luxury-booth-seating-adults (2).jpg'
+import image8 from '../../assets/Disneycruisebookingtimeline/disney-wish-grand-hall-atrium-mickey-mouse-family-portrait.jpg'
+import image9  from '../../assets/Disneycruisebookingtimeline/castaway-cay-pirates-in-the-caribbean-family-beach-activity-disney-cruise.jpg'
+import image10 from '../../assets/Disneycruisebookingtimeline/disney-castaway-cay-private-island-character-meet-greet-family-beach.jpg'
+import image11 from '../../assets/Disneycruisebookingtimeline/disney-cruise-funnel-vision-outdoor-movie-deck-family.jpg'
+import image12 from '../../assets/Disneycruisebookingtimeline/disney-cruise-line-deluxe-oceanview-stateroom-with-private-verandah.jpg'
+import image13 from '../../assets/Disneycruisebookingtimeline/disney-cruise-oceaneer-club-family-cruise-kids-entertainment-onboard.jpg'
+import image14 from '../../assets/Disneycruisebookingtimeline/disney-cruise-royal-suite-multigenerational-family-luxury-travel.jpg'
+import image15 from '../../assets/Disneycruisebookingtimeline/disney-cruise-vibe-teen-club-outdoor-sun-deck.jpg'
+import image16 from '../../assets/Disneycruisebookingtimeline/disney-wish-1923-restaurant-animation-themed-fine-dining.jpeg'
+import image17 from '../../assets/Disneycruisebookingtimeline/haunted-mansion-parlor-guests-disney-cruise.webp'
 // ── Section images ───────────────────────────────────────────────────────────
 // import bookingEarly      from '../../assets/DisneyCruiseBookingTimeline/booking-early.jpg'
 // import conciergeGuests   from '../../assets/DisneyCruiseBookingTimeline/concierge-guests.jpg'
@@ -23,14 +41,14 @@ import {
 // import packingImg        from '../../assets/DisneyCruiseBookingTimeline/packing.jpg'
 // import embarkationDay    from '../../assets/DisneyCruiseBookingTimeline/embarkation-day.jpg'
 // import transportImg      from '../../assets/DisneyCruiseBookingTimeline/transport.jpg'
-// import Profile_AH        from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_AH from '../../assets/Media (2).jpg'
+import Profile_Picture_AH from '../../assets/Media (3).jpg'
 
 function DisneyCruiseBookingTimeline() {
 
     // ── Hero rotation ─────────────────────────────────────────────────────────
     const [currentHero, setCurrentHero] = useState(0)
-    const heroImages = []
+    const heroImages = [image1, image2, image3]
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
         return () => clearInterval(t)
@@ -40,9 +58,29 @@ function DisneyCruiseBookingTimeline() {
     const [activeFaq, setActiveFaq] = useState(null)
     const toggleFaq = i => setActiveFaq(activeFaq === i ? null : i)
 
+    // ── Priority slider state ──────────────────────────────────────────────────
+    const [activePriorityTab, setActivePriorityTab] = useState(0)
+
     // ── Mistakes slider ───────────────────────────────────────────────────────
     const [activeSlide, setActiveSlide] = useState(0)
     const [sliderHovered, setSliderHovered] = useState(false)
+
+    // ── Checklist state ────────────────────────────────────────────────────────
+    const [checklist, setChecklist] = useState([
+        { id: 0, task: 'Book Cruise', timing: '12–24 months before', icon: <Ship size={18} />, done: true },
+        { id: 1, task: 'Reserve Flights', timing: '6–9 months before', icon: <Plane size={18} />, done: true },
+        { id: 2, task: 'Book Excursions', timing: '75–123 days before', icon: <MapPin size={18} />, done: true },
+        { id: 3, task: 'Reserve Adult Dining', timing: 'Booking window opens', icon: <Crown size={18} />, done: true },
+        { id: 4, task: 'Complete Final Payment', timing: 'Prior to deadline', icon: <CreditCard size={18} />, done: true },
+        { id: 5, task: 'Complete Online Check-In', timing: 'Approximately 30–40 days before', icon: <FileText size={18} />, done: false },
+        { id: 6, task: 'Pack', timing: '1–2 weeks before sailing', icon: <Sparkles size={18} />, done: false },
+        { id: 7, task: 'Embark', timing: 'Cruise Day', icon: <Anchor size={18} />, done: false }
+    ])
+    const toggleChecklistItem = (id) => {
+        setChecklist(prev => prev.map(item => item.id === id ? { ...item, done: !item.done } : item))
+    }
+    const completedChecklistCount = checklist.filter(item => item.done).length
+    const checklistProgressPercent = Math.round((completedChecklistCount / checklist.length) * 100)
     useEffect(() => {
         if (sliderHovered) return
         const t = setInterval(() => setActiveSlide(p => (p + 1) % mistakes.length), 5000)
@@ -121,7 +159,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Book Your Cruise',
             icon: <Calendar size={22} />,
             color: 'var(--medi-navy)',
-            // img: bookingEarly,
+            img: image1,
             badge: 'FIRST PRIORITY',
             intro: 'The best time to book a Disney Cruise is often as early as possible. Disney Cruise Line pricing generally increases as ships fill up.',
             subheading: 'Benefits of booking early include:',
@@ -139,7 +177,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Monitor Promotions',
             icon: <Star size={22} />,
             color: 'var(--medi-navy)',
-                // img: castawayClub,
+                img: image2,
             badge: 'SAVINGS WATCH',
             intro: 'After booking, keep an eye on:',
             bullets: [
@@ -156,7 +194,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Plan Transportation',
             icon: <Plane size={22} />,
             color: 'var(--medi-navy)',
-            // img: transportImg,
+            img: image3,
             badge: 'LOGISTICS',
             intro: 'Now is the time to begin arranging:',
             bullets: [
@@ -171,7 +209,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Concierge Guests',
             icon: <Crown size={22} />,
             color: 'var(--medi-navy)',
-            // img: conciergeGuests,
+            img: image4,
             badge: 'PREMIUM ACCESS',
             intro: 'Guests staying in Concierge-level accommodations receive the earliest booking windows. Concierge guests can reserve:',
             bullets: [
@@ -188,7 +226,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Castaway Club Booking Windows',
             icon: <Anchor size={22} />,
             color: 'var(--medi-navy)',
-            // img: castawayClub,
+            img: image5,
             badge: 'LOYALTY REWARDS',
             intro: 'Returning Disney cruisers receive early access based on loyalty status.',
             tiers: [
@@ -204,7 +242,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'First-Time Guests',
             icon: <Sparkles size={22} />,
             color: 'var(--medi-navy)',
-            // img: excursionBooking,
+            img: image6,
             badge: 'FIRST-TIMERS',
             intro: 'Most first-time Disney cruisers can begin making reservations around 75 days before embarkation. Popular items include:',
             bullets: [
@@ -221,7 +259,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Finalize Plans',
             icon: <CheckCircle size={22} />,
             color: 'var(--medi-navy)',
-            // img: transportImg,
+            img: image7,
             badge: 'REVIEW & CONFIRM',
             intro: 'At this stage:',
             bullets: [
@@ -238,7 +276,7 @@ function DisneyCruiseBookingTimeline() {
             title: 'Make Final Payments',
             icon: <CreditCard size={22} />,
             color: 'var(--medi-navy)',
-            // img: onlineCheckIn,
+            img: image8,
             badge: 'PAYMENT DUE',
             intro: 'For most Disney cruises, final payment deadlines occur well before departure. Missing payment deadlines could result in cancellation. Review:',
             bullets: [
@@ -583,32 +621,25 @@ function DisneyCruiseBookingTimeline() {
                             border: '1px solid rgba(255,255,255,0.1)',
                             borderRadius: '20px', overflow: 'hidden'
                         }}>
-                            {/* Phase image */}
-                            <div style={{ position: 'relative', height: '260px' }}>
-                                <img
-                                    src={timelinePhases[selectedPhase].img}
-                                    alt={timelinePhases[selectedPhase].title}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                                />
-                                <div style={{
-                                    position: 'absolute', inset: 0,
-                                    background: 'linear-gradient(to top, rgba(15,28,46,0.92) 0%, rgba(15,28,46,0.3) 60%, transparent 100%)'
-                                }}></div>
-                                <div style={{ position: 'absolute', bottom: '20px', left: '24px', right: '24px' }}>
-                                    <span style={{
-                                        display: 'inline-block',
-                                        background: '#93c5fd', color: 'var(--medi-bg-dark)',
-                                        borderRadius: '6px', padding: '4px 12px',
-                                        fontSize: '11px', fontWeight: '800', letterSpacing: '0.08em',
-                                        marginBottom: '8px'
-                                    }}>{timelinePhases[selectedPhase].badge}</span>
-                                    <h3 style={{ color: '#ffffff', fontSize: '22px', fontWeight: '700', margin: 0 }}>
-                                        {timelinePhases[selectedPhase].window}
-                                    </h3>
-                                    <p style={{ color: '#93c5fd', fontSize: '16px', fontWeight: '600', margin: '4px 0 0' }}>
-                                        {timelinePhases[selectedPhase].title}
-                                    </p>
-                                </div>
+                            {/* Phase header (text only, no image card) */}
+                            <div style={{
+                                padding: '32px 32px 20px 32px',
+                                borderBottom: '1px solid rgba(255,255,255,0.08)',
+                                background: 'rgba(255,255,255,0.02)'
+                            }}>
+                                <span style={{
+                                    display: 'inline-block',
+                                    background: '#93c5fd', color: 'var(--medi-bg-dark)',
+                                    borderRadius: '6px', padding: '4px 12px',
+                                    fontSize: '11px', fontWeight: '800', letterSpacing: '0.08em',
+                                    marginBottom: '8px'
+                                }}>{timelinePhases[selectedPhase].badge}</span>
+                                <h3 style={{ color: '#ffffff', fontSize: '24px', fontWeight: '700', margin: 0 }}>
+                                    {timelinePhases[selectedPhase].window}
+                                </h3>
+                                <p style={{ color: '#93c5fd', fontSize: '18px', fontWeight: '600', margin: '4px 0 0' }}>
+                                    {timelinePhases[selectedPhase].title}
+                                </p>
                             </div>
 
                             {/* Phase content */}
@@ -740,86 +771,437 @@ function DisneyCruiseBookingTimeline() {
                         </p>
                     </div>
 
-                    <div className="medi-diff-grid">
-
-                        {/* Card 1: Concierge */}
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Crown size={24} /></div>
-                                <h3 className="medi-diff-card-title">Concierge Guests</h3>
-                            </div>
-                            <p className="medi-diff-card-text">120–130 Days Before Sailing</p>
-                            <p className="medi-diff-card-text">
-                                Guests staying in Concierge-level accommodations receive the earliest booking windows. Concierge guests can reserve:
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                        gap: '40px',
+                        maxWidth: '1200px',
+                        margin: '0 auto',
+                        alignItems: 'start'
+                    }}>
+                        {/* Sticky Left Column: Overview Panel */}
+                        <div style={{
+                            background: 'linear-gradient(135deg, var(--medi-navy) 0%, #172a45 100%)',
+                            borderRadius: '24px',
+                            padding: '40px 32px',
+                            boxShadow: '0 15px 35px rgba(15,28,46,0.25)',
+                            position: 'sticky',
+                            top: '100px',
+                            color: '#ffffff',
+                            border: '1px solid rgba(255,255,255,0.08)'
+                        }}>
+                            <span style={{
+                                display: 'inline-block',
+                                background: 'rgba(147,197,253,0.12)',
+                                border: '1px solid rgba(147,197,253,0.25)',
+                                borderRadius: '20px', padding: '6px 16px',
+                                color: '#93c5fd', fontSize: '11px', fontWeight: '700',
+                                letterSpacing: '0.1em', marginBottom: '24px',
+                                textTransform: 'uppercase'
+                            }}>Access Priority Guide</span>
+                            <h3 style={{ fontSize: '24px', fontWeight: '700', lineHeight: '1.4', margin: '0 0 16px 0', color: '#ffffff' }}>
+                                Booking priority is determined by stateroom class & loyalty level
+                            </h3>
+                            <p style={{ color: '#cbd5e1', fontSize: '15px', lineHeight: '1.7', margin: '0 0 28px 0' }}>
+                                Disney Cruise Line rewards repeat travelers and premium guests with early access booking windows. Planning according to your window yields the highest success rates for specialty reservations.
                             </p>
-                            <ul className="medi-diff-experience-list">
-                                {['Shore excursions', 'Adult dining', 'Beverage tastings', 'Spa appointments', 'Select onboard activities'].map((item, i) => (
-                                    <li key={i}>
-                                        <CheckCircle size={16} className="medi-diff-list-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <p className="medi-diff-card-text-secondary">These premium booking windows offer significant advantages for popular experiences.</p>
-                        </div>
-
-                        {/* Card 2: Castaway Club */}
-                        <div className="medi-diff-card medi-diff-card-white">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Anchor size={24} /></div>
-                                <h3 className="medi-diff-card-title">Castaway Club Members</h3>
-                            </div>
-                            <p className="medi-diff-card-text">105–123 Days Before Sailing</p>
-                            <p className="medi-diff-card-text">Returning Disney cruisers receive early access based on loyalty status:</p>
-                            <ul className="medi-diff-focus-list-premium">
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                                 {[
-                                    { num: '01', label: 'Pearl Members', days: '~123 days' },
-                                    { num: '02', label: 'Platinum Members', days: '~120 days' },
-                                    { num: '03', label: 'Gold Members', days: '~105 days' },
-                                    { num: '04', label: 'Silver Members', days: '~90 days' }
-                                ].map((tier, i) => (
-                                    <li key={i} style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                                        <span className="medi-diff-list-num">{tier.num}</span>
-                                        <span style={{ flex: 1 }}>{tier.label}</span>
-                                        <span style={{ color: '#93c5fd', fontSize: '13px', fontWeight: '600' }}>{tier.days}</span>
-                                    </li>
+                                    'Unlock early access to Palo dining',
+                                    'Secure preferred Port Adventures',
+                                    'Maximize Castaway Club perks'
+                                ].map((bullet, i) => (
+                                    <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                                        <div style={{
+                                            width: '24px', height: '24px', borderRadius: '50%',
+                                            background: 'rgba(147,197,253,0.15)', display: 'flex',
+                                            alignItems: 'center', justifyContent: 'center', color: '#93c5fd',
+                                            flexShrink: 0
+                                        }}>
+                                            <CheckCircle size={14} />
+                                        </div>
+                                        <span style={{ color: '#e2e8f0', fontSize: '14px', fontWeight: '500' }}>{bullet}</span>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
+                            <div style={{
+                                marginTop: '36px',
+                                background: 'rgba(255,255,255,0.03)',
+                                border: '1px solid rgba(255,255,255,0.08)',
+                                borderRadius: '16px',
+                                padding: '20px'
+                            }}>
+                                <p style={{ color: '#93c5fd', fontSize: '13px', fontWeight: '600', letterSpacing: '0.05em', margin: '0 0 6px 0', textTransform: 'uppercase' }}>
+                                    Planning Tip
+                                </p>
+                                <p style={{ color: '#cbd5e1', fontSize: '13px', lineHeight: '1.6', margin: 0, fontStyle: 'italic' }}>
+                                    Excursions and specialty dining slots are limited. Complete booking as soon as your window opens.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Card 3: First-Time Guests */}
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Sparkles size={24} /></div>
-                                <h3 className="medi-diff-card-title">First-Time Guests</h3>
-                            </div>
-                            <p className="medi-diff-card-text">75–90 Days Before Sailing</p>
-                            <p className="medi-diff-card-text">
-                                Most first-time Disney cruisers can begin making reservations around 75 days before embarkation. Popular items include:
-                            </p>
-                            <ul className="medi-diff-focus-list-premium">
+                        {/* Right Column: Interactive Slider Container */}
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            
+                            {/* Segmented Slide Tabs */}
+                            <div style={{
+                                display: 'flex',
+                                background: 'rgba(39,68,114,0.04)',
+                                borderRadius: '12px',
+                                padding: '6px',
+                                marginBottom: '20px',
+                                border: '1px solid rgba(39,68,114,0.08)',
+                                gap: '8px'
+                            }}>
                                 {[
-                                    { num: '01', label: 'Port Adventures' },
-                                    { num: '02', label: 'Palo Brunch' },
-                                    { num: '03', label: 'Palo Dinner' },
-                                    { num: '04', label: 'Enchanté' },
-                                    { num: '05', label: 'Beverage Tastings' },
-                                    { num: '06', label: 'Spa Treatments' }
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <span className="medi-diff-list-num">{item.num}</span>
-                                        <span>{item.label}</span>
-                                    </li>
+                                    { id: 0, label: 'Concierge Guests', badge: '120–130d' },
+                                    { id: 1, label: 'Castaway Club', badge: '105–123d' },
+                                    { id: 2, label: 'First-Time Guests', badge: '75–90d' }
+                                ].map((tab) => (
+                                    <button
+                                        key={tab.id}
+                                        onClick={() => setActivePriorityTab(tab.id)}
+                                        style={{
+                                            flex: 1,
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            padding: '10px 14px',
+                                            borderRadius: '8px',
+                                            border: 'none',
+                                            cursor: 'pointer',
+                                            transition: 'all 0.25s ease',
+                                            background: activePriorityTab === tab.id ? 'var(--medi-navy)' : 'transparent',
+                                            color: activePriorityTab === tab.id ? '#ffffff' : 'var(--medi-navy)'
+                                        }}
+                                    >
+                                        <span style={{ fontSize: '13px', fontWeight: '700' }}>{tab.label}</span>
+                                        <span style={{
+                                            fontSize: '10px',
+                                            fontWeight: '600',
+                                            opacity: 0.8,
+                                            marginTop: '2px',
+                                            color: activePriorityTab === tab.id ? '#cbd5e1' : '#64748b'
+                                        }}>{tab.badge}</span>
+                                    </button>
                                 ))}
-                            </ul>
-                            <div className="medi-diff-conclusion-box">
-                                <p className="medi-diff-conclusion-text">Excursions often sell out quickly — book as soon as your window opens.</p>
+                            </div>
+
+                            {/* Active Card Content */}
+                            <div style={{ minHeight: '340px' }}>
+                                {activePriorityTab === 0 && (
+                                    <div style={{
+                                        background: '#ffffff',
+                                        border: '1px solid rgba(39,68,114,0.08)',
+                                        borderRadius: '20px',
+                                        padding: '32px',
+                                        boxShadow: '0 4px 25px rgba(39,68,114,0.04)',
+                                        display: 'flex',
+                                        flexWrap: 'wrap',
+                                        gap: '28px',
+                                        alignItems: 'start'
+                                    }}>
+                                        <div style={{ position: 'relative', width: '180px', height: '180px', borderRadius: '14px', overflow: 'hidden', flexShrink: 0, flexGrow: 1, minWidth: '150px' }}>
+                                            <img src={image4} alt="Concierge" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                            <div style={{
+                                                position: 'absolute', top: '12px', left: '12px',
+                                                background: 'rgba(39,68,114,0.95)', color: '#ffffff',
+                                                borderRadius: '6px', padding: '4px 10px', fontSize: '11px',
+                                                fontWeight: '700', letterSpacing: '0.05em', boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
+                                            }}>
+                                                120–130 DAYS
+                                            </div>
+                                        </div>
+                                        <div style={{ flex: '1 1 300px' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                                                <div style={{
+                                                    width: '36px', height: '36px', borderRadius: '8px',
+                                                    background: 'rgba(39,68,114,0.06)', display: 'flex',
+                                                    alignItems: 'center', justifyContent: 'center', color: 'var(--medi-navy)'
+                                                }}>
+                                                    <Crown size={20} />
+                                                </div>
+                                                <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>
+                                                    Concierge Guests
+                                                </h3>
+                                            </div>
+                                            <p style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', margin: '0 0 16px 0' }}>
+                                                Guests staying in Concierge-level accommodations receive the earliest booking windows. Concierge guests can reserve:
+                                            </p>
+                                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 16px', marginBottom: '16px' }}>
+                                                {['Shore excursions', 'Adult dining', 'Beverage tastings', 'Spa appointments', 'Select onboard activities'].map((item, i) => (
+                                                    <div key={i} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                                        <CheckCircle size={14} style={{ color: 'var(--medi-navy)', flexShrink: 0 }} />
+                                                        <span style={{ color: '#334155', fontSize: '13px', fontWeight: '500' }}>{item}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <p style={{ color: '#64748b', fontSize: '13px', fontStyle: 'italic', margin: 0, borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '12px' }}>
+                                                These premium booking windows offer significant advantages for popular experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {activePriorityTab === 1 && (
+                                    <div style={{
+                                        background: '#ffffff',
+                                        border: '1px solid rgba(39,68,114,0.08)',
+                                        borderRadius: '20px',
+                                        padding: '32px',
+                                        boxShadow: '0 4px 25px rgba(39,68,114,0.04)',
+                                        display: 'flex',
+                                        flexWrap: 'wrap',
+                                        gap: '28px',
+                                        alignItems: 'start'
+                                    }}>
+                                        <div style={{ position: 'relative', width: '180px', height: '180px', borderRadius: '14px', overflow: 'hidden', flexShrink: 0, flexGrow: 1, minWidth: '150px' }}>
+                                            <img src={image5} alt="Castaway Club" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                            <div style={{
+                                                position: 'absolute', top: '12px', left: '12px',
+                                                background: 'rgba(39,68,114,0.95)', color: '#ffffff',
+                                                borderRadius: '6px', padding: '4px 10px', fontSize: '11px',
+                                                fontWeight: '700', letterSpacing: '0.05em', boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
+                                            }}>
+                                                105–123 DAYS
+                                            </div>
+                                        </div>
+                                        <div style={{ flex: '1 1 300px' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                                                <div style={{
+                                                    width: '36px', height: '36px', borderRadius: '8px',
+                                                    background: 'rgba(39,68,114,0.06)', display: 'flex',
+                                                    alignItems: 'center', justifyContent: 'center', color: 'var(--medi-navy)'
+                                                }}>
+                                                    <Anchor size={20} />
+                                                </div>
+                                                <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>
+                                                    Castaway Club Members
+                                                </h3>
+                                            </div>
+                                            <p style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', margin: '0 0 16px 0' }}>
+                                                Returning Disney cruisers receive early access based on loyalty status:
+                                            </p>
+                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                                {[
+                                                    { num: '01', label: 'Pearl Members', days: '~123 days' },
+                                                    { num: '02', label: 'Platinum Members', days: '~120 days' },
+                                                    { num: '03', label: 'Gold Members', days: '~105 days' },
+                                                    { num: '04', label: 'Silver Members', days: '~90 days' }
+                                                ].map((tier, i) => (
+                                                    <div key={i} style={{
+                                                        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                                                        padding: '10px 14px', background: 'rgba(39,68,114,0.03)',
+                                                        borderRadius: '8px', border: '1px solid rgba(39,68,114,0.05)'
+                                                    }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                                            <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--medi-navy)' }}>{tier.num}</span>
+                                                            <span style={{ fontSize: '13px', fontWeight: '600', color: '#334155' }}>{tier.label}</span>
+                                                        </div>
+                                                        <span style={{ color: 'var(--medi-navy)', fontSize: '12px', fontWeight: '700' }}>{tier.days}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {activePriorityTab === 2 && (
+                                    <div style={{
+                                        background: '#ffffff',
+                                        border: '1px solid rgba(39,68,114,0.08)',
+                                        borderRadius: '20px',
+                                        padding: '32px',
+                                        boxShadow: '0 4px 25px rgba(39,68,114,0.04)',
+                                        display: 'flex',
+                                        flexWrap: 'wrap',
+                                        gap: '28px',
+                                        alignItems: 'start'
+                                    }}>
+                                        <div style={{ position: 'relative', width: '180px', height: '180px', borderRadius: '14px', overflow: 'hidden', flexShrink: 0, flexGrow: 1, minWidth: '150px' }}>
+                                            <img src={image6} alt="First-Time Guests" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                            <div style={{
+                                                position: 'absolute', top: '12px', left: '12px',
+                                                background: 'rgba(39,68,114,0.95)', color: '#ffffff',
+                                                borderRadius: '6px', padding: '4px 10px', fontSize: '11px',
+                                                fontWeight: '700', letterSpacing: '0.05em', boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
+                                            }}>
+                                                75–90 DAYS
+                                            </div>
+                                        </div>
+                                        <div style={{ flex: '1 1 300px' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                                                <div style={{
+                                                    width: '36px', height: '36px', borderRadius: '8px',
+                                                    background: 'rgba(39,68,114,0.06)', display: 'flex',
+                                                    alignItems: 'center', justifyContent: 'center', color: 'var(--medi-navy)'
+                                                }}>
+                                                    <Sparkles size={20} />
+                                                </div>
+                                                <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>
+                                                    First-Time Guests
+                                                </h3>
+                                            </div>
+                                            <p style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', margin: '0 0 16px 0' }}>
+                                                Most first-time Disney cruisers can begin making reservations around 75 days before embarkation. Popular items include:
+                                            </p>
+                                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 16px', marginBottom: '16px' }}>
+                                                {[
+                                                    { num: '01', label: 'Port Adventures' },
+                                                    { num: '02', label: 'Palo Brunch' },
+                                                    { num: '03', label: 'Palo Dinner' },
+                                                    { num: '04', label: 'Enchanté' },
+                                                    { num: '05', label: 'Beverage Tastings' },
+                                                    { num: '06', label: 'Spa Treatments' }
+                                                ].map((item, i) => (
+                                                    <div key={i} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                                        <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--medi-navy)' }}>{item.num}</span>
+                                                        <span style={{ color: '#334155', fontSize: '13px', fontWeight: '500' }}>{item.label}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div style={{
+                                                background: 'rgba(39,68,114,0.03)',
+                                                border: '1px solid rgba(39,68,114,0.06)',
+                                                borderRadius: '10px', padding: '12px 16px'
+                                            }}>
+                                                <p style={{ color: 'var(--medi-navy)', fontSize: '13px', fontWeight: '600', margin: 0, fontStyle: 'italic' }}>
+                                                    Excursions often sell out quickly — book as soon as your window opens.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Slider Navigation chevrons */}
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', padding: '0 4px' }}>
+                                <button
+                                    onClick={() => setActivePriorityTab(p => Math.max(0, p - 1))}
+                                    disabled={activePriorityTab === 0}
+                                    style={{
+                                        display: 'flex', alignItems: 'center', gap: '6px',
+                                        background: 'none', border: '1px solid rgba(39,68,114,0.15)',
+                                        borderRadius: '8px', padding: '8px 16px',
+                                        color: activePriorityTab === 0 ? '#cbd5e1' : 'var(--medi-navy)',
+                                        cursor: activePriorityTab === 0 ? 'default' : 'pointer',
+                                        fontSize: '13px', fontWeight: '600', transition: 'all 0.2s'
+                                    }}
+                                >
+                                    <ChevronRight size={14} style={{ transform: 'rotate(180deg)' }} />
+                                    Prev Tier
+                                </button>
+                                <span style={{ fontSize: '13px', color: '#64748b', fontWeight: '500' }}>
+                                    {activePriorityTab + 1} / 3
+                                </span>
+                                <button
+                                    onClick={() => setActivePriorityTab(p => Math.min(2, p + 1))}
+                                    disabled={activePriorityTab === 2}
+                                    style={{
+                                        display: 'flex', alignItems: 'center', gap: '6px',
+                                        background: activePriorityTab === 2 ? 'none' : 'var(--medi-navy)',
+                                        border: activePriorityTab === 2 ? '1px solid rgba(39,68,114,0.15)' : '1px solid var(--medi-navy)',
+                                        borderRadius: '8px', padding: '8px 16px',
+                                        color: activePriorityTab === 2 ? '#cbd5e1' : '#ffffff',
+                                        cursor: activePriorityTab === 2 ? 'default' : 'pointer',
+                                        fontSize: '13px', fontWeight: '600', transition: 'all 0.2s'
+                                    }}
+                                >
+                                    Next Tier
+                                    <ChevronRight size={14} />
+                                </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
+
+    {/* ════════════════════════════════════════════════════════
+                IMAGE GALLERY
+            ════════════════════════════════════════════════════════ */}
+            {/* ════════════════════════════════════════════════════════
+                IMAGE GALLERY - Visual Highlights Showcase
+            ════════════════════════════════════════════════════════ */}
+            <section style={{
+                background: 'var(--medi-bg-white)',
+                padding: '80px 20px',
+                borderTop: '1px solid rgba(39,68,114,0.1)'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                        <span style={{
+                            display: 'inline-block', background: 'rgba(39,68,114,0.1)',
+                            borderRadius: '20px', padding: '6px 16px', color: 'var(--medi-navy)',
+                            fontSize: '12px', fontWeight: '700', letterSpacing: '0.08em', marginBottom: '16px'
+                        }}>PHOTO SHOWCASE</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Explore the Disney Cruise Experience</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p style={{ color: '#64748b', fontSize: '17px', maxWidth: '600px', margin: '0 auto' }}>
+                            A visual preview of the stunning views, luxury amenities, and magical experiences awaiting you onboard.
+                        </p>
+                    </div>
+
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gridAutoRows: '240px',
+                        gap: '16px'
+                    }}>
+                        {[
+                            // { img: image1,  tall: true },
+                            // { img: image2,  tall: false },
+                            // { img: image3,  tall: false },
+                            // { img: image4,  tall: true },
+                            // { img: image5,  tall: false },
+                            // { img: image6,  tall: true },
+                            { img: image7,  tall: true },
+                            { img: image8,  tall: false },
+                            { img: image9,  tall: false },
+                            { img: image10, tall: true },
+                            { img: image11, tall: false },
+                            { img: image12, tall: false },
+                            { img: image13, tall: true },
+                            { img: image14, tall: false },
+                            { img: image15, tall: false },
+                            { img: image16, tall: true }
+                        ].map((item, idx) => (
+                            <div
+                                key={idx}
+                                style={{
+                                    gridRow: item.tall ? 'span 2' : 'span 1',
+                                    borderRadius: '16px',
+                                    overflow: 'hidden',
+                                    boxShadow: '0 4px 20px rgba(39,68,114,0.07)',
+                                    border: '1px solid rgba(39,68,114,0.08)',
+                                    transition: 'all 0.35s ease',
+                                    position: 'relative'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(-4px) scale(1.01)'
+                                    e.currentTarget.style.boxShadow = '0 16px 40px rgba(39,68,114,0.14)'
+                                    e.currentTarget.style.zIndex = '2'
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(0) scale(1)'
+                                    e.currentTarget.style.boxShadow = '0 4px 20px rgba(39,68,114,0.07)'
+                                    e.currentTarget.style.zIndex = '1'
+                                }}
+                            >
+                                <img
+                                    src={item.img}
+                                    alt={`Disney Cruise Experience Highlight ${idx + 1}`}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.5s ease' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.06)'}
+                                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
             {/* ════════════════════════════════════════════════════════
                 ONLINE CHECK-IN — image-split editorial
@@ -829,11 +1211,11 @@ function DisneyCruiseBookingTimeline() {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
                         {/* Image */}
                         <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.4)', position: 'relative' }}>
-                            {/* <img
-                                src={onlineCheckIn}
+                            <img
+                                src={image2}
                                 alt="Disney Cruise online check-in"
                                 style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
-                            /> */}
+                            />
                             <div style={{
                                 position: 'absolute', bottom: '24px', left: '24px',
                                 background: 'rgba(15,28,46,0.92)', backdropFilter: 'blur(8px)',
@@ -853,7 +1235,7 @@ function DisneyCruiseBookingTimeline() {
                                 padding: '6px 16px', color: '#93c5fd',
                                 fontSize: '12px', fontWeight: '700', letterSpacing: '0.08em', marginBottom: '20px'
                             }}>CRITICAL DEADLINE</span>
-                            <h2 className="medi-section-heading" style={{ color: '#ffffff' }}>Complete Online Check-In</h2>
+                            <h2 className="medi-section-heading" style={{ color: '#ffffff' }}>Complete Online <br /> Check-In</h2>
                             <div className="medi-heading-separator-bar" style={{ background: '#93c5fd' }}></div>
                             <p style={{ color: '#cbd5e1', fontSize: '17px', lineHeight: '1.8', marginBottom: '20px' }}>
                                 Online check-in is one of the most important steps.
@@ -886,55 +1268,197 @@ function DisneyCruiseBookingTimeline() {
             </section>
 
             {/* ════════════════════════════════════════════════════════
-                PLANNING CHECKLIST  (new section – inline CSS)
+                PLANNING CHECKLIST
             ════════════════════════════════════════════════════════ */}
-            <section style={{ background: 'var(--medi-bg-soft)', padding: '80px 20px' }}>
-                <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-                        <span style={{
-                            display: 'inline-block', background: 'rgba(39,68,114,0.1)',
-                            borderRadius: '20px', padding: '6px 16px', color: 'var(--medi-navy)',
-                            fontSize: '12px', fontWeight: '700', letterSpacing: '0.08em', marginBottom: '16px'
-                        }}>QUICK REFERENCE</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Disney Cruise Planning Checklist</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    </div>
+            <section style={{ 
+                background: 'linear-gradient(180deg, var(--medi-bg-soft) 0%, #ffffff 100%)', 
+                padding: '100px 20px',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                {/* Background decorative elements */}
+                <div style={{
+                    position: 'absolute', top: '10%', right: '-100px',
+                    width: '300px', height: '300px', borderRadius: '50%',
+                    background: 'rgba(39,68,114,0.03)', filter: 'blur(50px)', pointerEvents: 'none'
+                }}></div>
+                <div style={{
+                    position: 'absolute', bottom: '10%', left: '-100px',
+                    width: '350px', height: '350px', borderRadius: '50%',
+                    background: 'rgba(147,197,253,0.08)', filter: 'blur(60px)', pointerEvents: 'none'
+                }}></div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-                        {[
-                            { task: 'Book Cruise', timing: '12–24 months before', icon: <Ship size={18} />, done: true },
-                            { task: 'Reserve Flights', timing: '6–9 months before', icon: <Plane size={18} />, done: true },
-                            { task: 'Book Excursions', timing: '75–123 days before', icon: <MapPin size={18} />, done: true },
-                            { task: 'Reserve Adult Dining', timing: 'Booking window opens', icon: <Crown size={18} />, done: true },
-                            { task: 'Complete Final Payment', timing: 'Prior to deadline', icon: <CreditCard size={18} />, done: true },
-                            { task: 'Complete Online Check-In', timing: 'Approximately 30–40 days before', icon: <FileText size={18} />, done: true },
-                            { task: 'Pack', timing: '1–2 weeks before sailing', icon: <Sparkles size={18} />, done: true },
-                            { task: 'Embark', timing: 'Cruise Day', icon: <Anchor size={18} />, done: true }
-                        ].map((item, i) => (
-                            <div key={i} style={{
-                                display: 'flex', alignItems: 'center', gap: '16px',
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.3fr', gap: '64px', alignItems: 'start' }}>
+                        
+                        {/* Left Column: Title, Progress & Image */}
+                        <div style={{ position: 'sticky', top: '100px' }}>
+                            <span style={{
+                                display: 'inline-block', background: 'rgba(39,68,114,0.08)',
+                                borderRadius: '20px', padding: '6px 16px', color: 'var(--medi-navy)',
+                                fontSize: '11px', fontWeight: '800', letterSpacing: '0.15em', marginBottom: '16px',
+                                textTransform: 'uppercase'
+                            }}>Interactive Checklist</span>
+                            
+                            <h2 className="medi-section-heading" style={{ margin: '0 0 16px 0', fontSize: 'clamp(28px, 4vw, 38px)' }}>
+                                Disney Cruise Planning Checklist
+                            </h2>
+                            <div className="medi-heading-separator-bar" style={{ margin: '0 0 28px 0' }}></div>
+                            
+                            <p style={{ color: '#64748b', fontSize: '16px', lineHeight: '1.7', margin: '0 0 32px 0' }}>
+                                Use this interactive tracker to map out your pre-cruise milestones. Click on any item to mark it off as you complete your preparations.
+                            </p>
+
+                            {/* Progress Tracker Card */}
+                            <div style={{
                                 background: '#ffffff',
-                                border: '1px solid rgba(39,68,114,0.1)',
-                                borderRadius: '12px', padding: '18px 20px',
-                                boxShadow: '0 2px 12px rgba(39,68,114,0.06)'
+                                border: '1px solid rgba(39,68,114,0.08)',
+                                borderRadius: '20px',
+                                padding: '24px 28px',
+                                boxShadow: '0 10px 30px rgba(39,68,114,0.05)',
+                                marginBottom: '36px',
+                                position: 'relative',
+                                overflow: 'hidden'
                             }}>
-                                <div style={{
-                                    width: '44px', height: '44px', flexShrink: 0,
-                                    background: 'var(--medi-bg-soft)', borderRadius: '10px',
-                                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                    color: 'var(--medi-navy)'
-                                }}>
-                                    {item.icon}
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                                    <span style={{ fontSize: '14px', fontWeight: '700', color: 'var(--medi-navy)' }}>Pre-Cruise Progress</span>
+                                    <span style={{ fontSize: '18px', fontWeight: '800', color: 'var(--medi-navy)' }}>{checklistProgressPercent}%</span>
                                 </div>
-                                <div style={{ flex: 1, minWidth: 0 }}>
-                                    <div style={{ fontSize: '15px', fontWeight: '700', color: 'var(--medi-navy)', marginBottom: '3px' }}>
-                                        {item.task}
-                                    </div>
-                                    <div style={{ fontSize: '13px', color: '#64748b' }}>✓ {item.timing}</div>
+                                
+                                {/* Progress Bar Container */}
+                                <div style={{ width: '100%', height: '8px', background: 'var(--medi-bg-soft)', borderRadius: '10px', overflow: 'hidden', marginBottom: '16px' }}>
+                                    <div style={{
+                                        width: `${checklistProgressPercent}%`,
+                                        height: '100%',
+                                        background: 'linear-gradient(90deg, var(--medi-navy) 0%, #3b82f6 100%)',
+                                        borderRadius: '10px',
+                                        transition: 'width 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+                                    }}></div>
                                 </div>
-                                <CheckCircle size={18} style={{ color: 'var(--medi-navy)', flexShrink: 0 }} />
+
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <CheckCircle size={16} style={{ color: checklistProgressPercent === 100 ? '#10b981' : '#93c5fd' }} />
+                                    <span style={{ fontSize: '13px', color: '#475569', fontWeight: '500' }}>
+                                        {checklistProgressPercent === 100 
+                                            ? "Perfect! You are fully prepared to set sail!" 
+                                            : `${completedChecklistCount} of 8 steps completed. Keep going!`}
+                                    </span>
+                                </div>
                             </div>
-                        ))}
+
+                            {/* Image with overlay caption */}
+                            <div style={{ 
+                                borderRadius: '24px', 
+                                overflow: 'hidden', 
+                                boxShadow: '0 15px 35px rgba(0,0,0,0.12)', 
+                                height: '280px',
+                                position: 'relative'
+                            }}>
+                                <img src={image3} alt="Disney Cruise Ship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <div style={{
+                                    position: 'absolute', inset: 0,
+                                    background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, rgba(15,28,46,0.3) 60%, transparent 100%)',
+                                    display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
+                                    padding: '24px'
+                                }}>
+                                    <p style={{ color: '#ffffff', fontSize: '15px', fontWeight: '600', margin: 0, letterSpacing: '0.02em', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
+                                        "A seamless voyage starts with beautiful preparation."
+                                    </p>
+                                    <span style={{ color: '#93c5fd', fontSize: '12px', fontWeight: '500', marginTop: '4px' }}>
+                                        Trips & Ships Luxury Travel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Column: Timeline Checklist List */}
+                        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '16px', paddingLeft: '24px' }}>
+                            {/* Vertical line behind timeline */}
+                            <div style={{
+                                position: 'absolute', left: '46px', top: '24px', bottom: '24px',
+                                width: '2px', background: 'linear-gradient(180deg, var(--medi-navy) 0%, rgba(39,68,114,0.1) 100%)',
+                                pointerEvents: 'none'
+                            }}></div>
+
+                            {checklist.map((item) => {
+                                return (
+                                    <div
+                                        key={item.id}
+                                        onClick={() => toggleChecklistItem(item.id)}
+                                        style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '20px',
+                                            background: '#ffffff',
+                                            border: item.done ? '1px solid rgba(39,68,114,0.15)' : '1px solid rgba(39,68,114,0.06)',
+                                            borderRadius: '16px',
+                                            padding: '16px 20px',
+                                            boxShadow: item.done ? '0 4px 15px rgba(39,68,114,0.03)' : '0 10px 25px rgba(39,68,114,0.05)',
+                                            cursor: 'pointer',
+                                            transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                                            position: 'relative',
+                                            zIndex: 2,
+                                            transform: 'translateY(0)'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-2px)'
+                                            e.currentTarget.style.boxShadow = '0 12px 30px rgba(39,68,114,0.08)'
+                                            e.currentTarget.style.borderColor = 'rgba(39,68,114,0.2)'
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)'
+                                            e.currentTarget.style.boxShadow = item.done ? '0 4px 15px rgba(39,68,114,0.03)' : '0 10px 25px rgba(39,68,114,0.05)'
+                                            e.currentTarget.style.borderColor = item.done ? 'rgba(39,68,114,0.15)' : 'rgba(39,68,114,0.06)'
+                                        }}
+                                    >
+                                        {/* Left check circle & connection dot */}
+                                        <div style={{
+                                            width: '24px', height: '24px', borderRadius: '50%',
+                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            flexShrink: 0, zIndex: 3
+                                        }}>
+                                            {item.done ? (
+                                                <CheckCircle size={22} style={{ color: 'var(--medi-navy)', fill: 'rgba(147,197,253,0.15)', transition: 'all 0.2s' }} />
+                                            ) : (
+                                                <div style={{
+                                                    width: '20px', height: '20px', borderRadius: '50%',
+                                                    border: '2px solid #cbd5e1', background: '#ffffff', transition: 'all 0.2s'
+                                                }}></div>
+                                            )}
+                                        </div>
+
+                                        {/* Icon Box */}
+                                        <div style={{
+                                            width: '44px', height: '44px', borderRadius: '12px',
+                                            background: item.done ? 'rgba(39,68,114,0.06)' : 'var(--medi-bg-soft)',
+                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            color: item.done ? 'var(--medi-navy)' : '#64748b',
+                                            flexShrink: 0,
+                                            transition: 'all 0.25s'
+                                        }}>
+                                            {item.icon}
+                                        </div>
+
+                                        {/* Text info */}
+                                        <div style={{ flex: 1, minWidth: 0 }}>
+                                            <div style={{
+                                                fontSize: '16px', fontWeight: '700',
+                                                color: item.done ? '#475569' : 'var(--medi-navy)',
+                                                textDecoration: item.done ? 'line-through rgba(71,85,105,0.4)' : 'none',
+                                                transition: 'all 0.25s'
+                                            }}>{item.task}</div>
+                                            <div style={{
+                                                fontSize: '13px',
+                                                color: item.done ? '#94a3b8' : '#64748b',
+                                                marginTop: '2px',
+                                                fontWeight: '500'
+                                            }}>{item.timing}</div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -948,10 +1472,10 @@ function DisneyCruiseBookingTimeline() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes — Luxury Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Disney Cruise Norwegian Fjords" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
-                            <div className="medi-editorial-floating-stat">
+                            <div className="medi-editorial-floating-stat" >
                                 <span className="medi-editorial-stat-number">40+</span>
                                 <span className="medi-editorial-stat-label">Years of Cruise Expertise</span>
                             </div>
@@ -959,7 +1483,7 @@ function DisneyCruiseBookingTimeline() {
 
                         <div className="medi-editorial-text-block">
                             <span className="medi-editorial-eyebrow-label">EXPERT INSIGHT</span>
-                            <h2 className="medi-editorial-title">Why the Booking Timeline Matters</h2>
+                            <h2 className="medi-editorial-title">Why the Booking <br /> Timeline Matters</h2>
                             <div className="medi-editorial-accent-bar"></div>
                             <p className="medi-editorial-body-text">
                                 A Disney Cruise vacation begins long before embarkation day. Understanding the booking timeline helps ensure you secure the most popular activities, preferred dining reservations, ideal arrival times, and the best possible cruise experience.
@@ -1094,50 +1618,99 @@ function DisneyCruiseBookingTimeline() {
                             </ul>
                         </div>
                     </div>
+                    {/* Visual Callout Banner using image7 */}
+                    <div style={{ marginTop: '48px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', height: '280px', position: 'relative' }}>
+                        <img src={image17} alt="Disney Cruise dining experience" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <div style={{
+                            position: 'absolute',
+                            inset: 0,
+                            background: 'linear-gradient(to right, rgba(15,28,46,0.9) 30%, rgba(15,28,46,0.3) 70%, transparent 100%)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            padding: '40px'
+                        }}>
+                            <div style={{ maxWidth: '450px' }}>
+                                <h4 style={{ color: '#ffffff', fontSize: '20px', fontWeight: '700', marginBottom: '8px' }}>Exclusive Onboard Dining &amp; Shows</h4>
+                                <p style={{ color: '#cbd5e1', fontSize: '14px', lineHeight: '1.6', margin: 0 }}>
+                                    From adults-only fine dining at Enchanté to Broadway-caliber family shows, early planning ensures you don't miss out on premium experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
          
 
-            {/* ════════════════════════════════════════════════════════
-                AUTHORITY / PRESTIGE
-            ════════════════════════════════════════════════════════ */}
+          {/* ============================================================
+                ANGELA HUGHES AUTHORITY BOX
+            ============================================================ */}
             <section className="medi-authority-section">
                 <div className="medi-authority-container">
+                    <div className="medi-authority-header-block">
+                        <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Angela Hughes Authority Box</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" className="medi-prestige-photo" /> */}
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
                             </div>
-                            <span className="medi-prestige-name">Angela Hughes</span>
-                            <span className="medi-prestige-role-pill">CEO, Trips &amp; Ships Luxury Travel</span>
-                            <p className="medi-prestige-tagline">"Planning the magic before you board"</p>
+                            <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
+                            <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
+                            <div className="medi-prestige-role-pill">CEO of Trips &amp; Ships Luxury Travel</div>
+                            <div className="medi-prestige-meta-box">
+                                <div className="medi-prestige-meta-line"></div>
+                                <span className="medi-prestige-meta-text">Est. 1986 | Global Authority</span>
+                            </div>
                         </div>
+
                         <div className="medi-prestige-credentials-column">
-                            {[
-                                { category: 'EXPERIENCE', text: '40+ years in the luxury travel industry', icon: Award },
-                                { category: 'GLOBAL REACH', text: 'Visited over 121 countries worldwide', icon: Globe },
-                                { category: 'DISNEY EXPERTISE', text: 'Expert in Disney Cruise Line planning and timelines', icon: Calendar },
-                                { category: 'CLIENT TRUST', text: 'Hundreds of families guided through every booking window', icon: Heart },
-                                { category: 'RECOGNITION', text: 'International media and advisory board recognition', icon: Star }
-                            ].map((accolade, i) => {
-                                const IconComp = accolade.icon
-                                return (
-                                    <div key={i} className="medi-prestige-item-card">
-                                        <div className="medi-prestige-item-icon-box">
-                                            <IconComp size={16} />
+                            <div className="medi-prestige-list">
+                                {[
+                                    { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
+                                    { text: "40+ years luxury travel expertise", icon: Clock, category: "EXPERIENCE" },
+                                    { text: "Traveled to 121+ countries", icon: Globe, category: "EXPLORATION" },
+                                    { text: "Global luxury travel speaker", icon: Mic, category: "SPEAKING" },
+                                    { text: "Weekly travel columnist", icon: FileText, category: "MEDIA" },
+                                    { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
+                                    { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
+                                    { text: "Named among the Most Influential Women in Travel in 2026", icon: Crown, category: "PRESTIGE" },
+                                    { text: "Featured in global travel publications", icon: Sparkles, category: "RECOGNITION" },
+                                    { text: "Luxury cruise and expedition specialist", icon: Ship, category: "SPECIALTY" }
+                                ].map((accolade, idx) => {
+                                    const IconComp = accolade.icon;
+                                    return (
+                                        <div key={idx} className="medi-prestige-item-card">
+                                            <div className="medi-prestige-item-accent-bar"></div>
+                                            <div className="medi-prestige-item-icon-box"><IconComp size={16} /></div>
+                                            <div className="medi-prestige-item-content">
+                                                <span className="medi-prestige-item-category">{accolade.category}</span>
+                                                <h4 className="medi-prestige-item-text">{accolade.text}</h4>
+                                            </div>
                                         </div>
-                                        <div className="medi-prestige-item-content">
-                                            <span className="medi-prestige-item-category">{accolade.category}</span>
-                                            <h4 className="medi-prestige-item-text">{accolade.text}</h4>
-                                        </div>
-                                    </div>
-                                )
-                            })}
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+        
 
             {/* ════════════════════════════════════════════════════════
                 FAQ SECTION
@@ -1148,6 +1721,7 @@ function DisneyCruiseBookingTimeline() {
                         <h2 className="medi-section-heading">Frequently Asked Questions</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
+
                     <div className="medi-faq-list-wrapper">
                         {faqs.map((faq, index) => (
                             <div

@@ -1,5 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
+import Profile_AH from '../../assets/DisneyLuxuryCruise/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/Media (1).jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users , CheckCircle,
@@ -12,25 +14,34 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
-/* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports like the Azamara page
-   e.g. import disneyHero1 from '../../assets/Disney/hero1.jpg'
-──────────────────────────────────────────────────────────────── */
-// const DISNEY_SHIP_IMG   = 'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=900&q=80'
-// const CELEBRITY_SHIP_IMG= 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-// const DINING_IMG        = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80'
-// const ENTERTAINMENT_IMG = 'https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=900&q=80'
-// const FAMILY_IMG        = 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?w=900&q=80'
-// const LUXURY_IMG        = 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80'
-// const CASTAWAY_IMG      = 'https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?w=900&q=80'
-// const DESTINATIONS_IMG  = 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=900&q=80'
+import disneyIntroImg from '../../assets/Disneyvsroyalcaribbean/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.webp'
+import celebrityIntroImg from '../../assets/DisneyConciergeWorthIt/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg'
+import disneyShipIntroImg from '../../assets/Disneycruisebookingtimeline/disney-cruise-ship-docked-at-castaway-cay-aerial-view.jpg'
+import celebrityShipIntroImg from '../../assets/Disneyvscelebritycruises/family-enjoying-ocean-views-from-disney-cruise-ship-deck-at-sunset.webp'
+
+
+import hero1 from '../../assets/Disneyvscelebritycruises/disney-castaway-cay-mickey-minnie-mouse-beach-characters.jpg'
+import hero2 from '../../assets/Disneyvscelebritycruises/isney-wish-the-rose-lounge-adults-only-luxury-seating.jpg'
+import hero3 from '../../assets/Disneyvscelebritycruises/Disney Treasure Skipper Society.jpg'
+import fleetImg1 from '../../assets/Disneyvscelebritycruises/disney-cruise-frozen-dining-adventure-elsa-restaurant-show.jpg'
+import fleetImg2 from '../../assets/Disneyvscelebritycruises/disney-cruise-line-deck-activities-goofy-pluto-characters-family.jpg'
+import unusedImg1 from '../../assets/Disneyvscelebritycruises/child-hugging-mickey-mouse-magic-kingdom-disney-world-family-vacation.jpg'
+import unusedImg2 from '../../assets/Disneyvscelebritycruises/disney-cruise-castaway-cay-beach-family-vacation-minnie-mouse.jpg'
+import unusedImg3 from '../../assets/Disneyvscelebritycruises/disney-cruise-line-family-deck-party-goofy-character.jpg'
+import unusedImg4 from '../../assets/Disneyvscelebritycruises/disney-cruise-line-live-theater-hercules-musical-show.jpg'
+import unusedImg5 from '../../assets/Disneyvscelebritycruises/disney-cruise-wonderland-cinema-movie-theater.jpg'
+import unusedImg6 from '../../assets/Disneyvscelebritycruises/disney-destiny-cruise-incredibles-themed-sweet-shop-dessert.jpg'
+import unusedImg7 from '../../assets/Disneyvscelebritycruises/disney-wish-sarabi-lounge-family-entertainment-venue-stage.jpg'
+import unusedImg8 from '../../assets/Disneyvscelebritycruises/disney-wish-sarabi-lounge-interior-decor-modern-seating.jpg'
+
+
 
 /* ════════════════════════════════════════════════════════════ */
 
 function DisneyVsCelebrityCruises() {
 
     /* hero carousel */
-    const heroImages = []
+    const heroImages = [hero1,hero2,hero3]
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -248,74 +259,233 @@ function DisneyVsCelebrityCruises() {
             </section>
 
             {/* ══════════════════════════════════
-                INTRO / OVERVIEW TWO-COLUMN
+                INTRO / OVERVIEW — SPLIT-PANEL CARD LAYOUT WITH IMAGES
             ══════════════════════════════════ */}
-            <section className="medi-intro-section medi-premium-intro-section">
-                <div className="medi-intro-container">
-                    <div className="medi-intro-grid-layout">
+            <section style={{
+                background: 'var(--medi-bg-soft)',
+                padding: '90px 24px'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* Badge, Title & Separator */}
+                    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                        <span style={{
+                            display: 'inline-block',
+                            background: 'rgba(39, 68, 114, 0.1)',
+                            borderRadius: '30px',
+                            padding: '6px 16px',
+                            color: 'var(--medi-navy)',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '0.15em',
+                            textTransform: 'uppercase',
+                            marginBottom: '16px'
+                        }}>
+                            COMPLETE COMPARISON
+                        </span>
 
-                        {/* Sticky heading column */}
-                        <div className="medi-intro-heading-column">
-                            <span className="medi-premium-mini-badge">COMPLETE COMPARISON</span>
-                            <h2 className="medi-section-heading">Disney Cruise vs Celebrity Cruises: A Detailed Comparison</h2>
-                            <div className="medi-heading-separator-bar" />
-                            <div className="medi-intro-highlight-box">
-                                "Choosing between Disney Cruise Line and Celebrity Cruises can be surprisingly difficult — both deliver premium experiences, excellent service, quality dining, and beautiful ships. However, they cater to very different travelers."
+                        <h2 className="medi-section-heading" style={{ margin: '0 0 16px 0', textAlign: 'center' }}>
+                            Disney Cruise vs Celebrity Cruises: A Detailed Comparison
+                        </h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
+                    {/* Central Quote Block */}
+                    <div style={{
+                        maxWidth: '900px',
+                        margin: '0 auto 40px',
+                        background: 'var(--medi-bg-white)',
+                        borderLeft: '4px solid var(--medi-navy)',
+                        borderRadius: '0 16px 16px 0',
+                        padding: '28px 32px',
+                        boxShadow: '0 8px 30px rgba(39, 68, 114, 0.05)'
+                    }}>
+                        <p style={{
+                            fontSize: '18px',
+                            color: 'var(--medi-navy)',
+                            lineHeight: '1.7',
+                            fontStyle: 'italic',
+                            margin: 0
+                        }}>
+                            "Choosing between Disney Cruise Line and Celebrity Cruises can be surprisingly difficult — both deliver premium experiences, excellent service, quality dining, and beautiful ships. However, they cater to very different travelers."
+                        </p>
+                    </div>
+
+                    {/* Bridge Statement */}
+                    <p style={{
+                        fontSize: '16px',
+                        color: 'var(--medi-navy-light)',
+                        textAlign: 'center',
+                        maxWidth: '700px',
+                        margin: '0 auto 56px',
+                        lineHeight: '1.8'
+                    }}>
+                        The right choice depends entirely on your travel style, budget, and vacation goals.
+                    </p>
+
+                    {/* Side-by-Side Photo Cards */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                        gap: '32px',
+                        alignItems: 'stretch'
+                    }}>
+                        {/* Disney Column */}
+                        <div style={{
+                            background: 'var(--medi-bg-white)',
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            border: '1px solid rgba(39, 68, 114, 0.1)',
+                            boxShadow: '0 10px 30px rgba(39, 68, 114, 0.06)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            {/* Card Image */}
+                            <div style={{ position: 'relative', height: '280px', overflow: 'hidden' }}>
+                                <img
+                                    src={disneyIntroImg}
+                                    alt="Disney Cruise Line Grand Hall Atrium"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '20px',
+                                    left: '20px',
+                                    background: 'var(--medi-navy)',
+                                    color: '#ffffff',
+                                    padding: '8px 20px',
+                                    borderRadius: '30px',
+                                    fontSize: '13px',
+                                    fontWeight: '700',
+                                    letterSpacing: '0.05em'
+                                }}>
+                                    DISNEY CRUISE LINE
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Content column */}
-                        <div className="medi-intro-content-column">
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '20px' }}>
-                                Disney Cruise Line focuses on immersive family experiences, world-class entertainment, and Disney-themed magic. Celebrity Cruises focuses on modern luxury, upscale dining, sophisticated design, and adult-oriented experiences.
-                            </p>
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '32px' }}>
-                                The right choice depends entirely on your travel style, budget, and vacation goals.
-                            </p>
+                            {/* Card Body */}
+                            <div style={{ padding: '36px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                                <p style={{
+                                    fontSize: '16px',
+                                    color: 'var(--medi-navy)',
+                                    lineHeight: '1.8',
+                                    marginBottom: '28px',
+                                    fontWeight: '500'
+                                }}>
+                                    Disney Cruise Line focuses on immersive family experiences, world-class entertainment, and Disney-themed magic.
+                                </p>
 
-                            {/* Two verdict boxes */}
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-                                {/* Disney */}
                                 <div style={{
                                     background: 'var(--medi-bg-soft)',
-                                    border: '1px solid rgba(39,68,114,0.12)',
                                     borderRadius: '16px',
-                                    padding: '28px 24px'
+                                    padding: '24px',
+                                    marginTop: 'auto'
                                 }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'var(--medi-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                                            <Star size={20} />
-                                        </div>
-                                        <h3 style={{ fontSize: '16px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>Choose Disney If You Want</h3>
-                                    </div>
-                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                    <h3 style={{
+                                        fontSize: '15px',
+                                        fontWeight: '700',
+                                        color: 'var(--medi-navy)',
+                                        margin: '0 0 16px 0',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '8px'
+                                    }}>
+                                        <Star size={16} />
+                                        Choose Disney If You Want
+                                    </h3>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                         {['Family-focused vacations', 'Disney characters & entertainment', 'Multi-generational travel', 'Broadway-style productions', 'Exceptional children\'s programs', 'Immersive themed experiences'].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#374151' }}>
-                                                <CheckCircle size={15} style={{ color: 'var(--medi-green)', flexShrink: 0 }} />
-                                                {item}
+                                            <li key={i} style={{
+                                                display: 'flex',
+                                                alignItems: 'flex-start',
+                                                gap: '10px',
+                                                fontSize: '14px',
+                                                color: 'var(--medi-navy)',
+                                                lineHeight: '1.4'
+                                            }}>
+                                                <CheckCircle size={15} style={{ color: 'var(--medi-green)', marginTop: '2px', flexShrink: 0 }} />
+                                                <span>{item}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
 
-                                {/* Celebrity */}
+                        {/* Celebrity Column */}
+                        <div style={{
+                            background: 'var(--medi-bg-white)',
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            border: '1px solid rgba(39, 68, 114, 0.1)',
+                            boxShadow: '0 10px 30px rgba(39, 68, 114, 0.06)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            {/* Card Image */}
+                            <div style={{ position: 'relative', height: '280px', overflow: 'hidden' }}>
+                                <img
+                                    src={celebrityIntroImg}
+                                    alt="Celebrity Cruises Luxury Adult Only Lounge"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
                                 <div style={{
-                                    background: 'var(--medi-bg-dark)',
-                                    border: '1px solid rgba(255,255,255,0.07)',
-                                    borderRadius: '16px',
-                                    padding: '28px 24px'
+                                    position: 'absolute',
+                                    bottom: '20px',
+                                    left: '20px',
+                                    background: 'var(--medi-bg-dark2)',
+                                    color: '#ffffff',
+                                    padding: '8px 20px',
+                                    borderRadius: '30px',
+                                    fontSize: '13px',
+                                    fontWeight: '700',
+                                    letterSpacing: '0.05em'
                                 }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                                            <Crown size={20} />
-                                        </div>
-                                        <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#ffffff', margin: 0 }}>Choose Celebrity If You Want</h3>
-                                    </div>
-                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                    CELEBRITY CRUISES
+                                </div>
+                            </div>
+
+                            {/* Card Body */}
+                            <div style={{ padding: '36px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                                <p style={{
+                                    fontSize: '16px',
+                                    color: 'var(--medi-navy)',
+                                    lineHeight: '1.8',
+                                    marginBottom: '28px',
+                                    fontWeight: '500'
+                                }}>
+                                    Celebrity Cruises focuses on modern luxury, upscale dining, sophisticated design, and adult-oriented experiences.
+                                </p>
+
+                                <div style={{
+                                    background: 'var(--medi-bg-dark2)',
+                                    borderRadius: '16px',
+                                    padding: '24px',
+                                    marginTop: 'auto'
+                                }}>
+                                    <h3 style={{
+                                        fontSize: '15px',
+                                        fontWeight: '700',
+                                        color: '#ffffff',
+                                        margin: '0 0 16px 0',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '8px'
+                                    }}>
+                                        <Crown size={16} style={{ color: '#ffffff' }} />
+                                        Choose Celebrity If You Want
+                                    </h3>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                         {['Modern luxury', 'Adult-focused atmosphere', 'Fine dining', 'Premium nightlife', 'Contemporary design', 'Better value for adults'].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#cbd5e1' }}>
-                                                <CheckCircle size={15} style={{ color: 'var(--medi-green)', flexShrink: 0 }} />
-                                                {item}
+                                            <li key={i} style={{
+                                                display: 'flex',
+                                                alignItems: 'flex-start',
+                                                gap: '10px',
+                                                fontSize: '14px',
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                lineHeight: '1.4'
+                                            }}>
+                                                <CheckCircle size={15} style={{ color: 'var(--medi-green)', marginTop: '2px', flexShrink: 0 }} />
+                                                <span>{item}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -361,7 +531,11 @@ function DisneyVsCelebrityCruises() {
                         {/* Card panel */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/*    */}
+                                <img
+                                    src={activeTab === 0 ? fleetImg2 : fleetImg1}
+                                    alt={activeTab === 0 ? 'Disney Cruise Line' : 'Celebrity Cruises'}
+                                    className="medi-itinerary-showcase-img"
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay" />
                                 <span className="medi-itinerary-showcase-badge">
                                     {activeTab === 0 ? 'Best for Families' : 'Best for Adults'}
@@ -579,6 +753,142 @@ function DisneyVsCelebrityCruises() {
             </section>
 
             {/* ══════════════════════════════════
+                IMAGE GALLERY
+            ══════════════════════════════════ */}
+            <section style={{
+                background: '#f8fafc',
+                padding: '80px 24px',
+                borderBottom: '1px solid rgba(39, 68, 114, 0.1)'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span className="medi-itinerary-eyebrow">GALLERY</span>
+                        <h2 className="medi-section-heading" style={{ margin: '0 0 16px 0', textAlign: 'center' }}>
+                            Onboard Experiences & Highlights
+                        </h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered" />
+                    </div>
+
+                    <div className="medi-gallery-grid" style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                        gap: '24px',
+                        marginTop: '30px'
+                    }}>
+                        {[
+                            {
+                                img: unusedImg1,
+                                alt: "Mickey Mouse Meet & Greet",
+                                title: "Mickey Mouse Interaction",
+                                desc: "Creating unforgettable family moments with Disney character interactions."
+                            },
+                            {
+                                img: unusedImg2,
+                                alt: "Castaway Cay Beach",
+                                title: "Minnie Mouse at Castaway Cay",
+                                desc: "Relaxing on white sand shores with Minnie Mouse and tropical island views."
+                            },
+                            {
+                                img: unusedImg3,
+                                alt: "Family Deck Party",
+                                title: "High-Energy Deck Parties",
+                                desc: "Lively open-air character deck celebrations for the whole family."
+                            },
+                            {
+                                img: unusedImg4,
+                                alt: "Live Theater & Shows",
+                                title: "Broadway-Style Stage Productions",
+                                desc: "Spectacular Disney theatrical musicals and live musical show performances."
+                            },
+                            {
+                                img: unusedImg5,
+                                alt: "Wonderland Cinema",
+                                title: "Wonderland Cinema Theater",
+                                desc: "Premium onboard movie theater experiences showcasing first-run Disney films."
+                            },
+                            {
+                                img: unusedImg6,
+                                alt: "Incredibles Sweet Shop",
+                                title: "Jack-Jack's Cookie & Sweet Shop",
+                                desc: "Indulge in delicious themed treats, desserts, and custom confectionery."
+                            },
+                            {
+                                img: unusedImg7,
+                                alt: "Sarabi Lounge Entertainment",
+                                title: "Sarabi Family Lounge Stage",
+                                desc: "Dynamic stage hosting daily activities, trivia games, and evening family entertainment."
+                            },
+                            {
+                                img: unusedImg8,
+                                alt: "Sarabi Lounge Modern Decor",
+                                title: "Sarabi Lounge Modern Seating",
+                                desc: "Sleek, double-deck venue design offering comfortable seating and great views."
+                            }
+                        ].map((item, idx) => (
+                            <div key={idx} className="medi-gallery-item" style={{
+                                borderRadius: '16px',
+                                overflow: 'hidden',
+                                boxShadow: '0 10px 30px rgba(39, 68, 114, 0.06)',
+                                background: '#fff',
+                                border: '1px solid rgba(39, 68, 114, 0.1)',
+                                position: 'relative',
+                                height: '300px'
+                            }}>
+                                <img
+                                    src={item.img}
+                                    alt={item.alt}
+                                    className="medi-gallery-img"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover'
+                                    }}
+                                />
+                                <div className="medi-gallery-overlay" style={{
+                                    position: 'absolute',
+                                    bottom: 0,
+                                    left: 0,
+                                    right: 0,
+                                    background: 'linear-gradient(to top, rgba(15, 28, 46, 0.95), rgba(15, 28, 46, 0.4) 60%, rgba(15, 28, 46, 0) 100%)',
+                                    padding: '20px',
+                                    color: '#fff',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'flex-end',
+                                    height: '50%',
+                                    transform: 'translateY(0)',
+                                    transition: 'transform 0.3s ease'
+                                }}>
+                                    <h4 style={{ color: '#fff', margin: '0 0 6px 0', fontSize: '18px', fontWeight: '600' }}>
+                                        {item.title}
+                                    </h4>
+                                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', margin: 0, fontSize: '13px', lineHeight: '1.4' }}>
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <style>{`
+                    .medi-gallery-item {
+                        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+                    }
+                    .medi-gallery-item:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 20px 40px rgba(39, 68, 114, 0.15) !important;
+                    }
+                    .medi-gallery-img {
+                        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+                    }
+                    .medi-gallery-item:hover .medi-gallery-img {
+                        transform: scale(1.06);
+                    }
+                `}</style>
+            </section>
+
+            {/* ══════════════════════════════════
                 PRICING  (dark excel-style section)
             ══════════════════════════════════ */}
             <section className="medi-excel-section">
@@ -648,60 +958,290 @@ function DisneyVsCelebrityCruises() {
             {/* ══════════════════════════════════
                 SHIPS / DESIGN  (differentiators grid)
             ══════════════════════════════════ */}
-            <section className="medi-diff-section">
-                <div className="medi-diff-container">
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">SHIPS & DESIGN</span>
-                        <h2 className="medi-diff-main-title">Which Cruise Line Has Better Ships?</h2>
-                        <div className="medi-diff-separator" />
+            {/* ══════════════════════════════════
+                SHIPS / DESIGN — PREMIUM CARD LAYOUT WITH SHIPS IMAGES
+            ══════════════════════════════════ */}
+            {/* ══════════════════════════════════
+                SHIPS / DESIGN — PREMIUM ALTERNATING SHOWCASE
+            ══════════════════════════════════ */}
+            <section style={{
+                background: 'var(--medi-bg-white)',
+                padding: '100px 24px',
+                borderTop: '1px solid rgba(39, 68, 114, 0.1)',
+                borderBottom: '1px solid rgba(39, 68, 114, 0.1)'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* Section Header */}
+                    <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+                        <span style={{
+                            display: 'inline-block',
+                            background: 'var(--medi-bg-soft)',
+                            borderRadius: '30px',
+                            padding: '6px 16px',
+                            color: 'var(--medi-navy)',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '0.15em',
+                            textTransform: 'uppercase',
+                            marginBottom: '16px'
+                        }}>
+                            SHIPS & DESIGN
+                        </span>
+                        <h2 className="medi-section-heading" style={{ margin: '0 0 16px 0', textAlign: 'center' }}>
+                            Which Cruise Line Has Better Ships?
+                        </h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="medi-diff-grid">
-                        {/* Disney ships */}
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Star size={26} /></div>
-                                <h3 className="medi-diff-card-title">Disney Cruise Line Ships</h3>
+                    {/* Alternating Rows Container */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
+                        
+                        {/* Row 1: Disney (Image Left, Text Right) */}
+                        <div style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '48px',
+                            alignItems: 'center'
+                        }}>
+                            {/* Image Part */}
+                            <div style={{
+                                flex: '1 1 450px',
+                                height: '360px',
+                                borderRadius: '24px',
+                                overflow: 'hidden',
+                                boxShadow: '0 12px 35px rgba(39, 68, 114, 0.08)',
+                                border: '1px solid rgba(39, 68, 114, 0.1)',
+                                position: 'relative'
+                            }}>
+                                <img
+                                    src={disneyShipIntroImg}
+                                    alt="Disney Cruise Line Ship"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '20px',
+                                    left: '20px',
+                                    background: 'var(--medi-navy)',
+                                    color: '#ffffff',
+                                    fontSize: '11px',
+                                    fontWeight: '800',
+                                    letterSpacing: '0.08em',
+                                    padding: '6px 16px',
+                                    borderRadius: '30px'
+                                }}>
+                                    TRADITIONAL ELEGANCE
+                                </div>
                             </div>
-                            <ul className="medi-diff-feature-list">
-                                {['Themed environments throughout', 'Family-friendly design', 'Character experience spaces', 'Spectacular entertainment venues', 'Innovative attractions onboard'].map((f, i) => (
-                                    <li key={i} className="medi-diff-feature-item">
-                                        <CheckCircle size={16} className="medi-diff-check-icon" />
-                                        <span>{f}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="medi-diff-newest-block">
-                                <span className="medi-diff-newest-label">Newest Ships</span>
-                                <div className="medi-diff-newest-chips">
-                                    {['Disney Treasure', 'Disney Wish'].map((s, i) => (
-                                        <span key={i} className="medi-diff-ship-chip"><Ship size={13} />{s}</span>
+
+                            {/* Text Part */}
+                            <div style={{ flex: '1.2 1 500px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+                                    <div style={{
+                                        width: '44px',
+                                        height: '44px',
+                                        borderRadius: '12px',
+                                        background: 'var(--medi-navy)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#ffffff'
+                                    }}>
+                                        <Star size={22} />
+                                    </div>
+                                    <h3 style={{ fontSize: '24px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>
+                                        Disney Cruise Line Ships
+                                    </h3>
+                                </div>
+
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px 0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                    {['Themed environments throughout', 'Family-friendly design', 'Character experience spaces', 'Spectacular entertainment venues', 'Innovative attractions onboard'].map((f, i) => (
+                                        <li key={i} style={{
+                                            display: 'flex',
+                                            alignItems: 'flex-start',
+                                            gap: '10px',
+                                            fontSize: '15px',
+                                            color: 'var(--medi-navy)',
+                                            lineHeight: '1.5'
+                                        }}>
+                                            <CheckCircle size={16} style={{ color: 'var(--medi-green)', marginTop: '3px', flexShrink: 0 }} />
+                                            <span>{f}</span>
+                                        </li>
                                     ))}
+                                </ul>
+
+                                <div style={{
+                                    background: 'var(--medi-bg-soft)',
+                                    padding: '16px 24px',
+                                    borderRadius: '16px',
+                                    border: '1px solid rgba(39, 68, 114, 0.08)'
+                                }}>
+                                    <span style={{
+                                        display: 'block',
+                                        fontSize: '12px',
+                                        fontWeight: '700',
+                                        color: 'var(--medi-navy-light)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.05em',
+                                        marginBottom: '8px'
+                                    }}>
+                                        Newest Ships
+                                    </span>
+                                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                                        {['Disney Treasure', 'Disney Wish'].map((s, i) => (
+                                            <span key={i} style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                gap: '6px',
+                                                background: 'var(--medi-bg-white)',
+                                                border: '1px solid rgba(39, 68, 114, 0.1)',
+                                                padding: '5px 12px',
+                                                borderRadius: '30px',
+                                                fontSize: '13px',
+                                                color: 'var(--medi-navy)',
+                                                fontWeight: '600'
+                                            }}>
+                                                <Ship size={12} />
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Celebrity ships */}
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Crown size={26} /></div>
-                                <h3 className="medi-diff-card-title">Celebrity Cruises Ships — Winner</h3>
-                            </div>
-                            <p className="medi-diff-card-intro">Celebrity's Edge-Class ships are among the most innovative in cruising.</p>
-                            <ul className="medi-diff-feature-list">
-                                {['Infinite verandas', 'Modern contemporary architecture', 'Luxury suite experiences', 'Rooftop gardens', 'Contemporary premium interiors'].map((f, i) => (
-                                    <li key={i} className="medi-diff-feature-item">
-                                        <CheckCircle size={16} className="medi-diff-check-icon" />
-                                        <span>{f}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="medi-diff-newest-block">
-                                <span className="medi-diff-newest-label">Newest Ships</span>
-                                <div className="medi-diff-newest-chips">
-                                    {['Celebrity Ascent', 'Celebrity Beyond'].map((s, i) => (
-                                        <span key={i} className="medi-diff-ship-chip"><Ship size={13} />{s}</span>
+                        {/* Row 2: Celebrity (Text Left, Image Right on Desktop) */}
+                        <div style={{
+                            display: 'flex',
+                            flexWrap: 'wrap-reverse',
+                            gap: '48px',
+                            alignItems: 'center'
+                        }}>
+                            {/* Text Part */}
+                            <div style={{ flex: '1.2 1 500px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                                    <div style={{
+                                        width: '44px',
+                                        height: '44px',
+                                        borderRadius: '12px',
+                                        background: 'var(--medi-bg-dark2)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#ffffff'
+                                    }}>
+                                        <Crown size={22} />
+                                    </div>
+                                    <h3 style={{ fontSize: '24px', fontWeight: '700', color: 'var(--medi-navy)', margin: 0 }}>
+                                        Celebrity Cruises Ships — Winner
+                                    </h3>
+                                    <span style={{
+                                        background: 'var(--medi-green)',
+                                        color: '#ffffff',
+                                        fontSize: '11px',
+                                        fontWeight: '800',
+                                        letterSpacing: '0.05em',
+                                        padding: '4px 10px',
+                                        borderRadius: '12px',
+                                        marginLeft: '4px'
+                                    }}>
+                                        WINNER
+                                    </span>
+                                </div>
+
+                                <p style={{
+                                    fontSize: '15px',
+                                    color: 'var(--medi-navy-light)',
+                                    lineHeight: '1.6',
+                                    margin: '0 0 20px 0',
+                                    fontWeight: '500'
+                                }}>
+                                    Celebrity's Edge-Class ships are among the most innovative in cruising.
+                                </p>
+
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px 0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                    {['Infinite verandas', 'Modern contemporary architecture', 'Luxury suite experiences', 'Rooftop gardens', 'Contemporary premium interiors'].map((f, i) => (
+                                        <li key={i} style={{
+                                            display: 'flex',
+                                            alignItems: 'flex-start',
+                                            gap: '10px',
+                                            fontSize: '15px',
+                                            color: 'var(--medi-navy)',
+                                            lineHeight: '1.5'
+                                        }}>
+                                            <CheckCircle size={16} style={{ color: 'var(--medi-green)', marginTop: '3px', flexShrink: 0 }} />
+                                            <span>{f}</span>
+                                        </li>
                                     ))}
+                                </ul>
+
+                                <div style={{
+                                    background: 'var(--medi-bg-soft)',
+                                    padding: '16px 24px',
+                                    borderRadius: '16px',
+                                    border: '1px solid rgba(39, 68, 114, 0.08)'
+                                }}>
+                                    <span style={{
+                                        display: 'block',
+                                        fontSize: '12px',
+                                        fontWeight: '700',
+                                        color: 'var(--medi-navy-light)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.05em',
+                                        marginBottom: '8px'
+                                    }}>
+                                        Newest Ships
+                                    </span>
+                                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                                        {['Celebrity Ascent', 'Celebrity Beyond'].map((s, i) => (
+                                            <span key={i} style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                gap: '6px',
+                                                background: 'var(--medi-bg-white)',
+                                                border: '1px solid rgba(39, 68, 114, 0.1)',
+                                                padding: '5px 12px',
+                                                borderRadius: '30px',
+                                                fontSize: '13px',
+                                                color: 'var(--medi-navy)',
+                                                fontWeight: '600'
+                                            }}>
+                                                <Ship size={12} />
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Image Part */}
+                            <div style={{
+                                flex: '1 1 450px',
+                                height: '360px',
+                                borderRadius: '24px',
+                                overflow: 'hidden',
+                                boxShadow: '0 12px 35px rgba(39, 68, 114, 0.08)',
+                                border: '1px solid rgba(39, 68, 114, 0.1)',
+                                position: 'relative'
+                            }}>
+                                <img
+                                    src={celebrityShipIntroImg}
+                                    alt="Celebrity Cruise Ship"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: '20px',
+                                    left: '20px',
+                                    background: 'var(--medi-bg-dark2)',
+                                    color: '#ffffff',
+                                    fontSize: '11px',
+                                    fontWeight: '800',
+                                    letterSpacing: '0.08em',
+                                    padding: '6px 16px',
+                                    borderRadius: '30px'
+                                }}>
+                                    MODERN INNOVATION
                                 </div>
                             </div>
                         </div>
@@ -757,57 +1297,187 @@ function DisneyVsCelebrityCruises() {
             {/* ══════════════════════════════════
                 PROS & CONS  (new premium cards)
             ══════════════════════════════════ */}
-            <section style={{ background: '#fff', padding: '90px 20px' }}>
+            <section style={{
+                background: 'var(--medi-bg-soft)',
+                padding: '90px 24px',
+                borderTop: '1px solid rgba(39, 68, 114, 0.1)',
+                borderBottom: '1px solid rgba(39, 68, 114, 0.1)'
+            }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-                        <span className="medi-itinerary-eyebrow">PROS & CONS</span>
-                        <h2 className="medi-section-heading">Strengths and Weaknesses</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered" />
+                    {/* Header */}
+                    <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+                        <span style={{
+                            display: 'inline-block',
+                            background: 'var(--medi-bg-white)',
+                            border: '1px solid rgba(39, 68, 114, 0.15)',
+                            borderRadius: '30px',
+                            padding: '6px 16px',
+                            color: 'var(--medi-navy)',
+                            fontSize: '11px',
+                            fontWeight: '700',
+                            letterSpacing: '0.15em',
+                            textTransform: 'uppercase',
+                            marginBottom: '16px'
+                        }}>
+                            PROS & CONS
+                        </span>
+                        <h2 className="medi-section-heading" style={{ margin: '0 0 16px 0', textAlign: 'center' }}>
+                            Strengths and Weaknesses
+                        </h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+                    {/* Comparison Cards Grid */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr',
+                        gap: '40px'
+                    }}>
                         {[
                             {
                                 name: 'Disney Cruise Line',
                                 icon: <Star size={22} />,
+                                themeColor: 'var(--medi-navy)',
                                 pros: ['Best family experience in cruising', 'Disney entertainment & productions', 'Exceptional personalized service', 'Character interactions & immersion', 'Broadway-caliber stage shows'],
                                 cons: ['Higher pricing across all categories', 'Fewer adult-focused experiences', 'Limited nightlife options', 'No casino onboard']
                             },
                             {
                                 name: 'Celebrity Cruises',
                                 icon: <Crown size={22} />,
+                                themeColor: 'var(--medi-bg-dark2)',
                                 pros: ['Modern luxury design & ships', 'Best-in-class dining experiences', 'Adult-oriented atmosphere', 'More global destinations', 'Better overall value for adults'],
                                 cons: ['Less family programming', 'Fewer activities for children', 'Less immersive theming', 'Entertainment less spectacular']
                             }
                         ].map((cl, ci) => (
-                            <div key={ci} style={{ borderRadius: '20px', border: '1px solid rgba(39,68,114,0.1)', overflow: 'hidden', boxShadow: '0 8px 30px rgba(15,28,46,0.05)' }}>
-                                {/* Header */}
-                                <div style={{ background: 'var(--medi-navy)', padding: '24px 32px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                    <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
+                            <div key={ci} style={{
+                                background: 'var(--medi-bg-white)',
+                                borderRadius: '24px',
+                                border: '1px solid rgba(39, 68, 114, 0.15)',
+                                overflow: 'hidden',
+                                boxShadow: '0 15px 35px rgba(39, 68, 114, 0.05)',
+                                transition: 'transform 0.3s ease'
+                            }}>
+                                {/* Card Header Bar */}
+                                <div style={{
+                                    background: cl.themeColor,
+                                    padding: '24px 32px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '16px'
+                                }}>
+                                    <div style={{
+                                        width: '44px',
+                                        height: '44px',
+                                        borderRadius: '12px',
+                                        background: 'rgba(255, 255, 255, 0.15)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#ffffff'
+                                    }}>
                                         {cl.icon}
                                     </div>
-                                    <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#fff', margin: 0 }}>{cl.name}</h3>
+                                    <h3 style={{
+                                        fontSize: '20px',
+                                        fontWeight: '700',
+                                        color: '#ffffff',
+                                        margin: 0,
+                                        letterSpacing: '-0.01em'
+                                    }}>
+                                        {cl.name}
+                                    </h3>
                                 </div>
 
-                                <div style={{ padding: '28px 32px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-                                    <div>
-                                        <p style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--medi-green)', marginBottom: '14px' }}>Pros</p>
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                {/* Card Body Split Grid */}
+                                <div style={{
+                                    padding: '32px',
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                                    gap: '24px'
+                                }}>
+                                    {/* Strengths (Pros) Panel */}
+                                    <div style={{
+                                        background: 'rgba(16, 185, 129, 0.04)',
+                                        border: '1px solid rgba(16, 185, 129, 0.15)',
+                                        borderRadius: '20px',
+                                        padding: '28px 24px'
+                                    }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px',
+                                            marginBottom: '20px'
+                                        }}>
+                                            <span style={{
+                                                fontSize: '12px',
+                                                fontWeight: '800',
+                                                letterSpacing: '0.1em',
+                                                textTransform: 'uppercase',
+                                                color: 'var(--medi-green)',
+                                                background: 'rgba(16, 185, 129, 0.1)',
+                                                padding: '4px 10px',
+                                                borderRadius: '8px'
+                                            }}>
+                                                Strengths
+                                            </span>
+                                        </div>
+                                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                             {cl.pros.map((p, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '14px', color: '#374151', lineHeight: '1.5' }}>
-                                                    <CheckCircle size={15} style={{ color: 'var(--medi-green)', flexShrink: 0, marginTop: '2px' }} />
-                                                    {p}
+                                                <li key={i} style={{
+                                                    display: 'flex',
+                                                    alignItems: 'flex-start',
+                                                    gap: '10px',
+                                                    fontSize: '14px',
+                                                    color: 'var(--medi-navy)',
+                                                    lineHeight: '1.5',
+                                                    fontWeight: '500'
+                                                }}>
+                                                    <CheckCircle size={16} style={{ color: 'var(--medi-green)', flexShrink: 0, marginTop: '3px' }} />
+                                                    <span>{p}</span>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
-                                    <div>
-                                        <p style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--medi-red)', marginBottom: '14px' }}>Cons</p>
-                                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+
+                                    {/* Weaknesses (Cons) Panel */}
+                                    <div style={{
+                                        background: 'rgba(239, 68, 68, 0.04)',
+                                        border: '1px solid rgba(239, 68, 68, 0.15)',
+                                        borderRadius: '20px',
+                                        padding: '28px 24px'
+                                    }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '8px',
+                                            marginBottom: '20px'
+                                        }}>
+                                            <span style={{
+                                                fontSize: '12px',
+                                                fontWeight: '800',
+                                                letterSpacing: '0.1em',
+                                                textTransform: 'uppercase',
+                                                color: 'var(--medi-red)',
+                                                background: 'rgba(239, 68, 68, 0.1)',
+                                                padding: '4px 10px',
+                                                borderRadius: '8px'
+                                            }}>
+                                                Weaknesses
+                                            </span>
+                                        </div>
+                                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                             {cl.cons.map((c, i) => (
-                                                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '14px', color: '#374151', lineHeight: '1.5' }}>
-                                                    <Minus size={15} style={{ color: 'var(--medi-red)', flexShrink: 0, marginTop: '2px' }} />
-                                                    {c}
+                                                <li key={i} style={{
+                                                    display: 'flex',
+                                                    alignItems: 'flex-start',
+                                                    gap: '10px',
+                                                    fontSize: '14px',
+                                                    color: 'var(--medi-navy)',
+                                                    lineHeight: '1.5',
+                                                    fontWeight: '500'
+                                                }}>
+                                                    <Minus size={16} style={{ color: 'var(--medi-red)', flexShrink: 0, marginTop: '3px' }} />
+                                                    <span>{c}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -827,7 +1497,7 @@ function DisneyVsCelebrityCruises() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={FAMILY_IMG} alt="Cruise service comparison" /> */}
+                                <img src={Profile_Picture_AH} alt="Cruise service comparison" />
                                 <div className="medi-editorial-gradient-layer" />
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -884,34 +1554,7 @@ function DisneyVsCelebrityCruises() {
                 </div>
             </section>
 
-            {/* ══════════════════════════════════
-                FAQ
-            ══════════════════════════════════ */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered" />
-                    </div>
-                    <div className="medi-faq-list-wrapper">
-                        {faqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className="medi-faq-individual-item"
-                                onClick={() => setActiveFaq(activeFaq === index ? null : index)}
-                            >
-                                <div className="medi-faq-question-row">
-                                    <span>{faq.question}</span>
-                                    <span className="medi-faq-toggle-icon">{activeFaq === index ? '−' : '+'}</span>
-                                </div>
-                                {activeFaq === index && (
-                                    <p className="medi-faq-answer-text">{faq.answer}</p>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+          
 
             {/* ══════════════════════════════════
                 FINAL VERDICT  (new section — inline css)
@@ -977,6 +1620,106 @@ function DisneyVsCelebrityCruises() {
                     </div>
                 </div>
             </section>
+
+
+             {/* ============================================================
+                ANGELA HUGHES AUTHORITY BOX
+            ============================================================ */}
+            <section className="medi-authority-section">
+                <div className="medi-authority-container">
+                    <div className="medi-authority-header-block">
+                        <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Angela Hughes Authority Box</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
+                    <div className="medi-prestige-plaque-wrapper">
+                        <div className="medi-prestige-identity-card">
+                            <div className="medi-prestige-seal-ring">
+                                <img
+                                    src={Profile_AH}
+                                    alt="Angela Hughes"
+                                    style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        borderRadius: '50%',
+                                        objectFit: 'cover',
+                                        border: '2px solid rgba(255,255,255,0.2)',
+                                        animation: 'reverse-spin 30s linear infinite'
+                                    }}
+                                />
+                            </div>
+                            <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
+                            <h3 className="medi-prestige-name">Meet Angela Hughes</h3>
+                            <div className="medi-prestige-role-pill">CEO of Trips &amp; Ships Luxury Travel</div>
+                            <div className="medi-prestige-meta-box">
+                                <div className="medi-prestige-meta-line"></div>
+                                <span className="medi-prestige-meta-text">Est. 1986 | Global Authority</span>
+                            </div>
+                        </div>
+
+                        <div className="medi-prestige-credentials-column">
+                            <div className="medi-prestige-list">
+                                {[
+                                    { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
+                                    { text: "40+ years luxury travel expertise", icon: Clock, category: "EXPERIENCE" },
+                                    { text: "Traveled to 121+ countries", icon: Globe, category: "EXPLORATION" },
+                                    { text: "Global luxury travel speaker", icon: Mic, category: "SPEAKING" },
+                                    { text: "Weekly travel columnist", icon: FileText, category: "MEDIA" },
+                                    { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
+                                    { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
+                                    { text: "Named among the Most Influential Women in Travel in 2026", icon: Crown, category: "PRESTIGE" },
+                                    { text: "Featured in global travel publications", icon: Sparkles, category: "RECOGNITION" },
+                                    { text: "Luxury cruise and expedition specialist", icon: Ship, category: "SPECIALTY" }
+                                ].map((accolade, idx) => {
+                                    const IconComp = accolade.icon;
+                                    return (
+                                        <div key={idx} className="medi-prestige-item-card">
+                                            <div className="medi-prestige-item-accent-bar"></div>
+                                            <div className="medi-prestige-item-icon-box"><IconComp size={16} /></div>
+                                            <div className="medi-prestige-item-content">
+                                                <span className="medi-prestige-item-category">{accolade.category}</span>
+                                                <h4 className="medi-prestige-item-text">{accolade.text}</h4>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+  {/* ══════════════════════════════════
+                FAQ
+            ══════════════════════════════════ */}
+            <section className="medi-faq-main-section">
+                <div className="medi-faq-container">
+                    <div style={{ textAlign: 'center' }}>
+                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered" />
+                    </div>
+                    <div className="medi-faq-list-wrapper">
+                        {faqs.map((faq, index) => (
+                            <div
+                                key={index}
+                                className="medi-faq-individual-item"
+                                onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                            >
+                                <div className="medi-faq-question-row">
+                                    <span>{faq.question}</span>
+                                    <span className="medi-faq-toggle-icon">{activeFaq === index ? '−' : '+'}</span>
+                                </div>
+                                {activeFaq === index && (
+                                    <p className="medi-faq-answer-text">{faq.answer}</p>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
             {/* ══════════════════════════════════
                 CTA

@@ -77,6 +77,7 @@ import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExp
 import DisneyCruiseDiningGuide from "./pages/Disneycruisediningguide/Disneycruisediningguide";
 import BestDisneyCruiseCabins from "./pages/BestDisneyCruiseCabins/BestDisneyCruiseCabins";
 import Disneycruisebookingtimeline from "./pages/Disneycruisebookingtimeline/Disneycruisebookingtimeline";
+import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruisepackinglist"
 
 function App() {
   return (
@@ -402,6 +403,13 @@ function App() {
             path="/disney-cruise-booking-timeline"
             element={<Disneycruisebookingtimeline />}
           />
+
+<Route
+            path="/disney-cruise-packing-list"
+            element={< Disneycruisepackinglist/>}
+          />
+
+          
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

@@ -708,6 +708,7 @@
     bottom: -20px;
     left: -20px;
     background: var(--medi-navy);
+    color:#ffffff;
     border-radius: 16px;
     padding: 20px 24px;
     display: flex;

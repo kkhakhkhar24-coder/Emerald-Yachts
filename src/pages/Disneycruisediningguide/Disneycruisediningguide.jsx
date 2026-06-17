@@ -11,26 +11,27 @@ import {
 } from 'lucide-react'
 
 // ── Hero images (replace with your actual asset paths) ──────────────────────
-// import hero1 from '../../assets/DisneyCruiseDining/hero1.jpg'
-// import hero2 from '../../assets/DisneyCruiseDining/hero2.jpg'
-// import hero3 from '../../assets/DisneyCruiseDining/hero3.jpg'
+import hero1 from '../../assets/Disneycruisediningguide/Disney Treasure Plaza De Coco.webp'
+import hero2 from '../../assets/Disneycruisediningguide/disney-wish-palo-steakhouse-adults-only-fine-dining-table.webp'
+import hero3 from '../../assets/Disneycruisediningguide/disney-wish-oceaneer-club-mickey-minnie-captains-deck-kids.webp'
 
 // ── Section images ───────────────────────────────────────────────────────────
-// import rotationalDining from '../../assets/DisneyCruiseDining/rotational-dining.jpg'
-// import arendelleRestaurant from '../../assets/DisneyCruiseDining/arendelle-restaurant.jpg'
-// import animatorsPalate from '../../assets/DisneyCruiseDining/animators-palate.jpg'
-// import paloRestaurant from '../../assets/DisneyCruiseDining/palo-restaurant.jpg'
-// import enchante from '../../assets/DisneyCruiseDining/enchante.jpg'
-// import characterDining from '../../assets/DisneyCruiseDining/character-dining.jpg'
-// import kidsMenu from '../../assets/DisneyCruiseDining/kids-menu.jpg'
-// import roomService from '../../assets/DisneyCruiseDining/room-service.jpg'
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import rotationalDining from '../../assets/Disneycruisediningguide/sanctum-lounge-disney-destiny.webp'
+import arendelleRestaurant from '../../assets/Disneycruisediningguide/disney-wish-the-rose-lounge-adults-only-luxury-seating (2).webp'
+import animatorsPalate from '../../assets/Disneycruisediningguide/disney-wish-sarabi-lounge-modern-stage-family-entertainment.webp'
+import paloRestaurant from '../../assets/Disneycruisediningguide/disney-wish-palo-steakhouse-adult-exclusive-restaurant-layout.webp'
+import enchante from '../../assets/Disneycruisediningguide/disney-wish-palo-steakhouse-oceanview-table-setting.webp'
+import characterDining from '../../assets/Disneycruisediningguide/disney-cruise-christmas-holiday-mickey-minnie-mouse.webp'
+import kidsMenu from '../../assets/Disneycruisediningguide/disney-wish-keg-compass-pub-sports-bar-counter.webp'
+import paloRestaurant1 from '../../assets/Disneycruisediningguide/disney-wish-the-rose-lounge-adults-only-luxury-booths.webp'
+import roomService from '../../assets/Disneycruisediningguide/Disney Treasure Funnel Suite.webp'
+import Profile_AH from '../../assets/DisneyLuxuryCruise/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/Media (1).jpg'
 
 function DisneyCruiseDiningGuide() {
     // ── Hero rotation ─────────────────────────────────────────────────────────
     const [currentHero, setCurrentHero] = useState(0)
-    const heroImages = []
+    const heroImages = [hero1, hero2, hero3]
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
         return () => clearInterval(t)
@@ -295,11 +296,11 @@ function DisneyCruiseDiningGuide() {
                     }}>
                         {/* Image */}
                         <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden' }}>
-                            {/* <img
+                            <img
                                 src={rotationalDining}
                                 alt="Disney Rotational Dining"
                                 style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }}
-                            /> */}
+                            />
                             <div style={{
                                 position: 'absolute', bottom: '24px', left: '24px',
                                 background: 'rgba(15,28,46,0.9)', backdropFilter: 'blur(8px)',
@@ -395,7 +396,7 @@ function DisneyCruiseDiningGuide() {
                         {/* Ship Content Card */}
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                <img
                                     src={
                                         selectedShip === 0 ? arendelleRestaurant :
                                         selectedShip === 1 ? enchante :
@@ -403,7 +404,7 @@ function DisneyCruiseDiningGuide() {
                                     }
                                     alt={ships[selectedShip].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">FEATURED SHIP</span>
                             </div>
@@ -573,11 +574,11 @@ function DisneyCruiseDiningGuide() {
                         </div>
                         {/* Image */}
                         <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(15,28,46,0.15)' }}>
-                            {/* <img
+                            <img
                                 src={characterDining}
                                 alt="Disney character dining experience"
                                 style={{ width: '100%', height: '520px', objectFit: 'cover', display: 'block' }}
-                            /> */}
+                            />
                         </div>
                     </div>
                 </div>
@@ -607,7 +608,7 @@ function DisneyCruiseDiningGuide() {
                             border: '1px solid rgba(39,68,114,0.08)'
                         }}>
                             <div style={{ position: 'relative', height: '260px' }}>
-                                {/* <img src={kidsMenu} alt="Disney cruise kids dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                <img src={kidsMenu} alt="Disney cruise kids dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{
                                     position: 'absolute', inset: 0,
                                     background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 60%)'
@@ -654,7 +655,7 @@ function DisneyCruiseDiningGuide() {
                             border: '1px solid rgba(39,68,114,0.08)'
                         }}>
                             <div style={{ position: 'relative', height: '260px' }}>
-                                {/* <img src={paloRestaurant} alt="Palo Disney adults dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                                <img src={paloRestaurant1} alt="Palo Disney adults dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 <div style={{
                                     position: 'absolute', inset: 0,
                                     background: 'linear-gradient(to top, rgba(15,28,46,0.85) 0%, transparent 60%)'
@@ -725,11 +726,11 @@ function DisneyCruiseDiningGuide() {
                         </div>
                         {/* Image */}
                         <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.4)' }}>
-                            {/* <img
+                            <img
                                 src={roomService}
                                 alt="Disney cruise room service"
                                 style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
-                            /> */}
+                            />
                         </div>
                     </div>
                 </div>
@@ -744,7 +745,7 @@ function DisneyCruiseDiningGuide() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes — Luxury Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes — Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -968,7 +969,7 @@ function DisneyCruiseDiningGuide() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" className="medi-prestige-photo" /> */}
+                                <img src={Profile_AH} alt="Angela Hughes" className="medi-prestige-photo" />
                             </div>
                             <span className="medi-prestige-name">Angela Hughes</span>
                             <span className="medi-prestige-role-pill">CEO, Trips &amp; Ships Luxury Travel</span>

@@ -511,6 +511,17 @@ const Navbar = () => {
               >
                 Disney Cruise Booking Timeline
               </NavLink>
+
+               <NavLink
+                to="/disney-cruise-packing-list"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Packing List
+              </NavLink>
+
+
+              
             </div>
           </div>
         </div>
