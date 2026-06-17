@@ -79,6 +79,7 @@ import BestDisneyCruiseCabins from "./pages/BestDisneyCruiseCabins/BestDisneyCru
 import Disneycruisebookingtimeline from "./pages/Disneycruisebookingtimeline/Disneycruisebookingtimeline";
 import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruisepackinglist"
 import VikingRhineRiverCruises from "./pages/VikingRhineRiverCruises/VikingRhineRiverCruises";
+import VikingChristmasMarketCruises from "./pages/VikingChristmasMarketCruises/VikingChristmasMarketCruises";
 
 function App() {
   return (
@@ -413,6 +414,11 @@ function App() {
           <Route
             path="/viking-rhine-river-cruises"
             element={< VikingRhineRiverCruises />}
+          />
+
+          <Route
+            path="/viking-christmas-market-cruises"
+            element={< VikingChristmasMarketCruises />}
           />
 
         </Routes>
