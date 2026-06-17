@@ -78,6 +78,7 @@ import DisneyCruiseDiningGuide from "./pages/Disneycruisediningguide/Disneycruis
 import BestDisneyCruiseCabins from "./pages/BestDisneyCruiseCabins/BestDisneyCruiseCabins";
 import Disneycruisebookingtimeline from "./pages/Disneycruisebookingtimeline/Disneycruisebookingtimeline";
 import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruisepackinglist"
+import VikingRhineRiverCruises from "./pages/VikingRhineRiverCruises/VikingRhineRiverCruises";
 
 function App() {
   return (
@@ -404,12 +405,16 @@ function App() {
             element={<Disneycruisebookingtimeline />}
           />
 
-<Route
+          <Route
             path="/disney-cruise-packing-list"
-            element={< Disneycruisepackinglist/>}
+            element={< Disneycruisepackinglist />}
           />
 
-          
+          <Route
+            path="/viking-rhine-river-cruises"
+            element={< VikingRhineRiverCruises />}
+          />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

@@ -512,7 +512,7 @@ const Navbar = () => {
                 Disney Cruise Booking Timeline
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/disney-cruise-packing-list"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -520,8 +520,13 @@ const Navbar = () => {
                 Disney Cruise Packing List
               </NavLink>
 
-
-              
+              <NavLink
+                to="/viking-rhine-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Rhine River Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1036,14 +1041,29 @@ const Navbar = () => {
               Best Disney Cruise Cabins
             </NavLink>
 
-             <NavLink
-                to="/disney-cruise-booking-timeline"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Disney Cruise Booking Timeline
-              </NavLink>
+            <NavLink
+              to="/disney-cruise-booking-timeline"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise Booking Timeline
+            </NavLink>
 
+            <NavLink
+              to="/disney-cruise-packing-list"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise Packing List
+            </NavLink>
+
+            <NavLink
+              to="/viking-rhine-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Rhine River Cruises
+            </NavLink>
             <span className="mobile-dropdown-divider"></span>
           </div>
         </div>
