@@ -611,7 +611,7 @@ const cruisepacking = [
                                 {packingCategories[mediSelectedCategory].intro}
                             </p>
 
-                            {/* Packing Checklist Items */}
+                           
                             {packingCategories[mediSelectedCategory].subgroups ? (
                                 <div className="disney-packing-subgroups-wrapper">
                                     {packingCategories[mediSelectedCategory].subgroups.map((sub, si) => (
