@@ -562,11 +562,11 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
-                to="/viking-vs-ama-waterways"
+                to="/viking-vs-amawaterways"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Viking vs Ama Waterways
+                Viking vs AmaWaterways
               </NavLink>
             </div>
           </div>
@@ -1139,6 +1139,13 @@ const Navbar = () => {
               Viking Iceland Cruises
             </NavLink>
 
+            <NavLink
+              to="/viking-vs-amawaterways"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking vs AmaWaterways
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
