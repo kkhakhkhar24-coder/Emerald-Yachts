@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 
-import './VikingMediterraneanCruises.css'
+import './VikingMediterraneancruises.css'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
