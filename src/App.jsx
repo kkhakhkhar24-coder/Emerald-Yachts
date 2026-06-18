@@ -81,6 +81,7 @@ import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruis
 import VikingRhineRiverCruises from "./pages/VikingRhineRiverCruises/VikingRhineRiverCruises";
 import VikingChristmasMarketCruises from "./pages/VikingChristmasMarketCruises/VikingChristmasMarketCruises";
 import Vikingmediterraneancruises from "./pages/Vikingmediterraneancruises/Vikingmediterraneancruises"
+import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises"
 
 function App() {
   return (
@@ -425,6 +426,11 @@ function App() {
            <Route
             path="/viking-mediterranean-cruises"
             element={< Vikingmediterraneancruises />}
+          />
+
+          <Route
+            path="/viking-alaska-cruises"
+            element={< Vikingalaskacruises />}
           />
 
 
