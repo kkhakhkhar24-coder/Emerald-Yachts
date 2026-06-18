@@ -9,9 +9,25 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
+// Image imports from various cruise folders
+import heroBg from '../../assets/VikingRhineRiverCruises/RhineGorge.jpg'
+import heroBg2 from '../../assets/Vikingmediterraneancruises/Exterior_2026-04-13_19-02-40.jpg'
+import heroBg3 from '../../assets/VikingIcelandCruises/Amsterdam, The Netherlands_2026-04-13_18-45-34.jpg'
+import vikingShipImg from '../../assets/VikingRhineRiverCruises/VikingLongships.jpg'
+import amaShipPlaceholderImg from '../../assets/Vikingmediterraneancruises/Exterior_2026-04-13_19-02-39.jpg'
+import vikingDiningImg from '../../assets/Vikingalaskacruises/The Restaurant_2026-04-13_18-49-21.jpg'
+import amaDiningPlaceholderImg from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-26.jpg'
+import vikingExcursionImg from '../../assets/VikingRhineRiverCruises/Cologne.jpg'
+import amaExcursionImg from '../../assets/Vikingalaskacruises/Budapest, Hungary_2026-04-13_18-46-22.jpg'
+import wellnessActiveImg from '../../assets/Vikingmediterraneancruises/Infinity Pool_2026-04-13_18-48-12.jpg'
+import angelaHughesImg from '../../assets/Angela_Hughes.jpg'
+
 function VikingVsAmaWaterways() {
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
     const [isMobileViewport, setIsMobileViewport] = useState(false)
+    const [currentHero, setCurrentHero] = useState(0)
+
+    const heroImages = [heroBg, heroBg2, heroBg3]
 
     useEffect(() => {
         const handleResize = () => { setIsMobileViewport(window.innerWidth < 992) }
@@ -19,6 +35,11 @@ function VikingVsAmaWaterways() {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
+
+    useEffect(() => {
+        const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
+        return () => clearInterval(t)
+    }, [heroImages.length])
 
     const mediToggleFaq = (index) => { setMediActiveFaq(mediActiveFaq === index ? null : index) }
 
@@ -81,6 +102,13 @@ function VikingVsAmaWaterways() {
 
             {/* ═══════════════ HERO SECTION ═══════════════ */}
             <section className="medi-hero-section">
+                {heroImages.map((img, idx) => (
+                    <div
+                        key={idx}
+                        className={`medi-hero-background ${currentHero === idx ? 'medi-active' : ''}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    />
+                ))}
                 <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag"><Anchor size={16} /><span>River Cruise Comparison, Ships, Dining & Experiences</span></div>
@@ -124,7 +152,15 @@ function VikingVsAmaWaterways() {
                         <div className="medi-premium-signature-panel" style={{ marginTop: window.innerWidth <= 1024 ? '40px' : '0', borderLeftColor: '#274472' }}>
                             <div className="medi-premium-signature-glow"></div>
                             <div className="medi-premium-signature-content">
-                                <div className="medi-expert-profile-row"><div className="medi-expert-avatar-frame" style={{ background: '#274472' }}><Star size={24} className="medi-star-accent" /></div><div><span className="medi-expert-card-subtitle">CRUISE EXPERT</span><h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3></div></div>
+                                <div className="medi-expert-profile-row">
+                                    <div className="medi-expert-avatar-frame" style={{ background: '#274472', overflow: 'hidden' }}>
+                                        <img src={angelaHughesImg} alt="Angela Hughes" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    </div>
+                                    <div>
+                                        <span className="medi-expert-card-subtitle">CRUISE EXPERT</span>
+                                        <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
+                                    </div>
+                                </div>
                                 <p className="medi-premium-expert-desc" style={{ color: '#475569', lineHeight: '1.7' }}>At Trips & Ships Luxury Travel, we help travelers compare river cruise lines objectively to find the perfect match for their travel style, budget, and expectations.</p>
                                 <div className="medi-premium-expert-quote-box"><span className="medi-quote-mark" style={{ color: '#274472' }}>"</span><p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>With more than 40 years in the travel industry, Angela Hughes helps travelers navigate the differences between Viking and AmaWaterways to select the ideal river cruise experience.</p></div>
                             </div>
@@ -166,10 +202,16 @@ function VikingVsAmaWaterways() {
                     </div>
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
                         <div style={{ backgroundColor: 'rgba(59,130,246,0.08)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '2px solid rgba(59,130,246,0.3)' }}>
+                            <div style={{ width: '100%', height: '220px', borderRadius: '16px', overflow: 'hidden', marginBottom: '24px' }}>
+                                <img src={vikingShipImg} alt="Viking Longship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}><div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Ship size={24} style={{ color: '#fff' }} /></div><h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Viking Longships</h3></div>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>{[{ l: 'Passengers', v: '~190 guests' }, { l: 'Design', v: 'Scandinavian d\u00e9cor' }, { l: 'Cabin Types', v: 'Standard to Explorer Suites' }, { l: 'Key Feature', v: 'Aquavit Terrace' }, { l: 'Windows', v: 'Floor-to-ceiling' }].map((r, i) => (<div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}><span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span><span style={{ fontSize: '16px', color: '#e2e8f0', fontWeight: '500' }}>{r.v}</span></div>))}</div>
                         </div>
                         <div style={{ backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                            <div style={{ width: '100%', height: '220px', borderRadius: '16px', overflow: 'hidden', marginBottom: '24px' }}>
+                                <img src={amaShipPlaceholderImg} alt="AmaWaterways Ship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}><div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Crown size={24} style={{ color: '#94a3b8' }} /></div><h3 style={{ fontSize: '22px', fontWeight: '800', color: '#cbd5e1', margin: 0 }}>AmaWaterways Ships</h3></div>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>{[{ l: 'Passengers', v: '~150\u2013170 guests' }, { l: 'Design', v: 'Boutique luxury' }, { l: 'Cabin Types', v: 'Twin-balcony cabins' }, { l: 'Key Feature', v: 'Heated pools' }, { l: 'Cabin Size', v: 'Larger average space' }].map((r, i) => (<div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}><span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span><span style={{ fontSize: '16px', color: '#94a3b8', fontWeight: '500' }}>{r.v}</span></div>))}</div>
                         </div>
@@ -191,10 +233,16 @@ function VikingVsAmaWaterways() {
                     <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
                         <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
                             <div style={{ backgroundColor: '#0f1c2e', padding: '30px', textAlign: 'center' }}><Utensils size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} /><h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Viking Dining</h4><p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Regional Cuisine</p></div>
+                            <div style={{ width: '100%', height: '200px', overflow: 'hidden' }}>
+                                <img src={vikingDiningImg} alt="Viking Dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}><p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Viking focuses on destination-inspired menus with open seating and casual elegance.</p><ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{['Regional cuisine', 'Destination-inspired menus', 'Open seating', 'Casual elegance'].map((item, i) => (<li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}</li>))}</ul></div>
                         </div>
                         <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
                             <div style={{ background: 'linear-gradient(135deg, #0f1c2e 0%, #1a365d 100%)', padding: '30px', textAlign: 'center' }}><Wine size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} /><h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>AmaWaterways Dining</h4><p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Gourmet Excellence</p></div>
+                            <div style={{ width: '100%', height: '200px', overflow: 'hidden' }}>
+                                <img src={amaDiningPlaceholderImg} alt="AmaWaterways Dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}><p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Ama is often considered one of the best culinary experiences in river cruising.</p><ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{['Multiple dining venues', "The Chef's Table specialty restaurant", 'Locally inspired cuisine', 'Extensive wine offerings', 'Gourmet presentations'].map((item, i) => (<li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}</li>))}</ul></div>
                         </div>
                     </div>
@@ -217,14 +265,20 @@ function VikingVsAmaWaterways() {
                             { title: 'Viking Excursions', desc: 'Walking tours, historical visits, and cultural experiences included in every port.', items: ['Walking tours', 'Historical visits', 'Cultural experiences'], icon: <MapPin size={24} />, w: false },
                             { title: 'AmaWaterways Excursions', desc: 'Multiple choices per port including walking, hiking, biking, and cultural options.', items: ['Walking & hiking', 'Biking experiences', 'Multiple choices per port'], icon: <Bike size={24} />, w: true },
                             { title: 'Wellness & Active', desc: 'AmaWaterways excels with wellness hosts, fitness classes, and guided bike tours.', items: ['Guided bike tours', 'Wellness hosts', 'Fitness classes'], icon: <Heart size={24} />, w: true }
-                        ].map((item, i) => (
-                            <div key={i} style={{ backgroundColor: item.w ? '#0f1c2e' : '#f8fafc', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '35px', border: '1px solid ' + (item.w ? 'rgba(59,130,246,0.3)' : '#e2e8f0'), color: item.w ? '#ffffff' : '#1e293b' }}>
-                                <div style={{ color: '#3b82f6', marginBottom: '14px', display: 'flex', justifyContent: 'flex-start' }}>{item.icon}</div>
-                                <h3 style={{ fontSize: '20px', fontWeight: '800', marginBottom: '12px', color: item.w ? '#ffffff' : '#0f1c2e' }}>{item.title}</h3>
-                                <p style={{ fontSize: '15px', lineHeight: '1.7', margin: '0 0 18px', color: item.w ? '#cbd5e1' : '#475569' }}>{item.desc}</p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{item.items.map((f, j) => (<li key={j} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: item.w ? '#e2e8f0' : '#1e293b' }}><CheckCircle size={14} style={{ color: '#3b82f6', flexShrink: 0 }} /> {f}</li>))}</ul>
-                            </div>
-                        ))}
+                        ].map((item, i) => {
+                            const excursionImages = [vikingExcursionImg, amaExcursionImg, wellnessActiveImg];
+                            return (
+                                <div key={i} style={{ backgroundColor: item.w ? '#0f1c2e' : '#f8fafc', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '35px', border: '1px solid ' + (item.w ? 'rgba(59,130,246,0.3)' : '#e2e8f0'), color: item.w ? '#ffffff' : '#1e293b' }}>
+                                    <div style={{ width: '100%', height: '160px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                        <img src={excursionImages[i]} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    </div>
+                                    <div style={{ color: '#3b82f6', marginBottom: '14px', display: 'flex', justifyContent: 'flex-start' }}>{item.icon}</div>
+                                    <h3 style={{ fontSize: '20px', fontWeight: '800', marginBottom: '12px', color: item.w ? '#ffffff' : '#0f1c2e' }}>{item.title}</h3>
+                                    <p style={{ fontSize: '15px', lineHeight: '1.7', margin: '0 0 18px', color: item.w ? '#cbd5e1' : '#475569' }}>{item.desc}</p>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{item.items.map((f, j) => (<li key={j} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: item.w ? '#e2e8f0' : '#1e293b' }}><CheckCircle size={14} style={{ color: '#3b82f6', flexShrink: 0 }} /> {f}</li>))}</ul>
+                                </div>
+                            );
+                        })}
                     </div>
                     <div style={{ marginTop: '30px', padding: window.innerWidth <= 360 ? '20px 14px' : '25px 30px', backgroundColor: '#f8fafc', borderRadius: window.innerWidth <= 360 ? '14px' : '20px', borderLeft: '5px solid #3b82f6' }}>
                         <p style={{ fontSize: '17px', color: '#0f1c2e', fontWeight: '700', margin: 0 }}><strong>Winner: AmaWaterways</strong> — Broader range of activities, especially for active travelers.</p>
