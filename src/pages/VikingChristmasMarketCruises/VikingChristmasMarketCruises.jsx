@@ -487,7 +487,7 @@ function VikingChristmasMarketCruises() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section>/
 
             {/* ═══════════════ FINAL CTA ═══════════════ */}
             <section className="medi-cta-main-section" id="viking-xmas-cta">

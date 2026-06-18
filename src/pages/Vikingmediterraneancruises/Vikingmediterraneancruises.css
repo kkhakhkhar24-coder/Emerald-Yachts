@@ -665,7 +665,7 @@
     font-weight: 700;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--medi-green);
+    color: #3b82f6;
     margin-bottom: 16px;
 }
 
@@ -680,7 +680,7 @@
 .vmc-separated-accent-bar {
     width: 60px;
     height: 3px;
-    background: var(--medi-green);
+    background: #3b82f6;
     border-radius: 2px;
 }
 
@@ -717,7 +717,7 @@
     height: 38px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.06);
-    color: var(--medi-green);
+    color: #3b82f6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -726,7 +726,7 @@
 }
 
 .vmc-separated-card:hover .vmc-separated-card-icon {
-    background: var(--medi-green);
+    background: #3b82f6;
     color: var(--medi-bg-white);
     transform: scale(1.05);
 }
@@ -752,70 +752,306 @@
 }
 
 /* ----------------------------------------------------------
-   WHAT MAKES VIKING DIFFERENT (OVERRIDE STYLES)
+   WHAT MAKES VIKING DIFFERENT (REDESIGNED ASYMMETRIC GRID)
 ---------------------------------------------------------- */
-.vmc-diff-custom-override {
-    background: var(--medi-bg-soft) !important;
-    padding: 100px 20px !important;
+/* ----------------------------------------------------------
+   WHAT MAKES VIKING DIFFERENT (MODERN 3-COLUMN EQUAL HEIGHT)
+---------------------------------------------------------- */
+.vmc-modern-diff-section {
+    background: linear-gradient(180deg, var(--medi-bg-soft) 0%, rgba(244, 246, 249, 0.4) 100%);
+    padding: 100px 20px;
 }
 
-.vmc-diff-custom-override .medi-diff-grid {
-    gap: 32px !important;
+.vmc-modern-diff-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.vmc-diff-custom-override .medi-diff-card {
-    border-radius: 20px !important;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05) !important;
-    border: 1px solid rgba(39, 68, 114, 0.08) !important;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+.vmc-modern-diff-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
 }
 
-.vmc-diff-custom-override .medi-diff-card:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.12) !important;
-    border-color: var(--medi-navy) !important;
+.vmc-modern-diff-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #3b82f6;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
-.vmc-diff-custom-override .medi-diff-card-navy {
-    background: var(--medi-navy) !important;
-    border: none !important;
-    color: var(--medi-bg-white) !important;
+.vmc-modern-diff-title {
+    font-family: 'Playfair Display', 'Didot', serif;
+    font-size: 38px;
+    line-height: 1.3;
+    color: var(--medi-navy);
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.vmc-diff-custom-override .medi-diff-card-white {
-    background: var(--medi-bg-white) !important;
-    color: var(--medi-navy) !important;
+.vmc-modern-diff-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.vmc-diff-custom-override .medi-diff-card-soft {
-    background: var(--medi-bg-soft) !important;
-    color: var(--medi-navy) !important;
+.vmc-modern-diff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
 }
 
-.vmc-diff-custom-override .medi-diff-stat-ring {
-    border-color: var(--medi-navy) !important;
-    background: rgba(39, 68, 114, 0.05) !important;
-    box-shadow: inset 0 0 15px rgba(39, 68, 114, 0.1) !important;
+.vmc-modern-diff-card {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(59, 130, 246, 0.08);
+    border-radius: 24px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.vmc-diff-custom-override .medi-diff-stat-num {
-    color: var(--medi-navy) !important;
-    font-weight: 700 !important;
+.vmc-modern-diff-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.25);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.06);
 }
 
-.vmc-diff-custom-override .medi-diff-list-icon {
-    color: var(--medi-green) !important;
+.vmc-modern-diff-card-bg-number {
+    position: absolute;
+    right: 24px;
+    top: 10px;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: rgba(59, 130, 246, 0.04);
+    line-height: 1;
+    pointer-events: none;
+    transition: all 0.4s ease;
 }
 
-.vmc-diff-custom-override .medi-diff-card-navy .medi-diff-list-icon {
-    color: var(--medi-green) !important;
+.vmc-modern-diff-card:hover .vmc-modern-diff-card-bg-number {
+    transform: scale(1.05);
+    color: rgba(59, 130, 246, 0.07);
 }
 
-.vmc-diff-custom-override .medi-diff-list-num {
-    background: var(--medi-navy) !important;
-    color: var(--medi-bg-white) !important;
+.vmc-modern-diff-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
 }
 
+.vmc-modern-diff-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--medi-navy);
+    color: #fff;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.vmc-modern-diff-card:hover .vmc-modern-diff-icon-box {
+    background: #3b82f6;
+    color: #fff;
+    transform: rotate(6deg);
+}
+
+.vmc-modern-diff-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+}
+
+.vmc-modern-diff-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.vmc-modern-diff-card-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0 0 24px 0;
+}
+
+.vmc-modern-diff-divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0) 100%);
+    margin-bottom: 24px;
+}
+
+.vmc-modern-diff-list-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 16px 0;
+}
+
+.vmc-modern-diff-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vmc-modern-diff-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+.vmc-modern-diff-list-icon {
+    color: #3b82f6;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.vmc-modern-diff-stat-wheel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(39, 68, 114, 0.02);
+    border: 2px dashed rgba(59, 130, 246, 0.15);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.vmc-modern-diff-card:hover .vmc-modern-diff-stat-wheel {
+    background: rgba(59, 130, 246, 0.02);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.vmc-modern-diff-stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--medi-navy);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.vmc-modern-diff-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #3b82f6;
+    text-transform: uppercase;
+}
+
+.vmc-modern-diff-quote-box {
+    background: rgba(39, 68, 114, 0.03);
+    border-left: 3px solid var(--medi-navy);
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin-top: auto;
+}
+
+.vmc-modern-diff-quote-text {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--medi-navy);
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.vmc-modern-diff-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.vmc-modern-diff-pillar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-soft);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.vmc-modern-diff-pillar-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.08);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.vmc-modern-diff-alert-box {
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px dashed rgba(59, 130, 246, 0.2);
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #1e3a8a;
+    line-height: 1.4;
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .vmc-modern-diff-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vmc-modern-diff-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .vmc-modern-diff-section {
+        padding: 80px 16px;
+    }
+
+    .vmc-modern-diff-title {
+        font-size: 32px;
+    }
+}
 
 /* ----------------------------------------------------------
    TOP DESTINATIONS (OVERRIDE STYLES)
@@ -894,10 +1130,12 @@
         grid-template-columns: 1fr !important;
         gap: 40px !important;
     }
+
     .vmc-destinations-custom-override .medi-luxury-visual-wrapper {
         position: relative !important;
         top: 0 !important;
     }
+
     .vmc-destinations-custom-override .medi-luxury-main-image {
         height: 400px !important;
     }
@@ -905,71 +1143,170 @@
 
 
 /* ----------------------------------------------------------
-   WHO SHOULD / WHO SHOULD NOT TAKE VIKING (REDESIGN)
+   WHO SHOULD / WHO SHOULD NOT TAKE VIKING (LUXURY REDESIGN)
 ---------------------------------------------------------- */
 .vmc-traveler-section {
-    background: var(--medi-bg-white) !important;
-    padding: 100px 20px !important;
+    background: #fcfcfd !important;
+    padding: 120px 20px !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.vmc-traveler-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vmc-traveler-header {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
 .vmc-traveler-grid {
-    gap: 36px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
 }
 
 .vmc-traveler-card {
-    border-radius: 24px !important;
-    padding: 44px !important;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    position: relative;
+    border-radius: 32px;
+    padding: 60px 45px 45px !important;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-.vmc-traveler-card:hover {
-    transform: translateY(-6px) !important;
+/* Status Badges */
+.vmc-status-badge {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
 
-.vmc-traveler-card.yes {
-    background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 100%) !important;
-    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.15) !important;
+/* Perfect For Card - Deep Luxury */
+.vmc-card-premium {
+    background: #0f1c2e !important;
+    /* Deepest Navy */
+    color: white !important;
+    box-shadow: 0 30px 60px rgba(15, 28, 46, 0.18) !important;
 }
 
-.vmc-traveler-card.no {
-    background: var(--medi-bg-white) !important;
-    border: 1px solid rgba(39, 68, 114, 0.08) !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03) !important;
+.vmc-card-premium .vmc-status-badge {
+    color: #93c5fd;
 }
 
-.vmc-traveler-card.no:hover {
-    border-color: var(--medi-navy) !important;
-    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08) !important;
+.vmc-card-premium .vmc-icon-box {
+    background: rgba(147, 197, 253, 0.1);
+    color: #93c5fd;
 }
 
+/* Alternatives Card - Professional Slate */
+.vmc-card-outline {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+    margin-top: 40px;
+    /* Staggered effect */
+}
+
+.vmc-card-outline .vmc-status-badge {
+    color: #64748b;
+}
+
+.vmc-card-outline .vmc-icon-box {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* Headings */
 .vmc-traveler-card-heading {
-    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px !important;
     font-weight: 700 !important;
-    margin-bottom: 28px !important;
+    margin-bottom: 35px !important;
 }
 
+.vmc-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lists */
 .vmc-traveler-list {
-    gap: 16px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: grid;
+    gap: 20px;
 }
 
 .vmc-traveler-list li {
-    font-size: 15.5px !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    transition: all 0.2s ease !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.vmc-traveler-card:hover .vmc-traveler-list li {
-    transform: translateX(4px);
+.vmc-dot {
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
 }
 
-.vmc-traveler-list svg {
-    margin-top: 0 !important;
+.vmc-x-dot {
+    width: 8px;
+    height: 2px;
+    background: #cbd5e1;
+    margin-top: 11px;
+    flex-shrink: 0;
 }
 
-@media (max-width: 767px) {
+/* Advisory Footer */
+.vmc-advisory-note {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.vmc-advisory-note p {
+    font-size: 14px;
+    color: #64748b;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .vmc-traveler-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .vmc-card-outline {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
     .vmc-traveler-card {
-        padding: 30px !important;
+        padding: 50px 25px 30px !important;
+    }
+
+    .vmc-status-badge {
+        left: 25px;
     }
 }

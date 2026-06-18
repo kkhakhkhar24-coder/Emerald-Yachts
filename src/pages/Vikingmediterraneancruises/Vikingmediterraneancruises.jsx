@@ -406,70 +406,115 @@ function VikingMediterraneanCruises() {
             </section>
 
             {/* ══════════════════════════════════
-                WHAT MAKES VIKING DIFFERENT
+                WHAT MAKES VIKING DIFFERENT (MODERN REDESIGN)
             ══════════════════════════════════ */}
-            <section className="medi-diff-section vmc-diff-custom-override">
-                <div className="medi-diff-container">
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">DESTINATION IMMERSION</span>
-                        <h2 className="medi-diff-main-title">What Makes Viking Mediterranean Cruises Different?</h2>
-                        <div className="medi-diff-separator"></div>
+            <section className="vmc-modern-diff-section">
+                <div className="vmc-modern-diff-container">
+                    <div className="vmc-modern-diff-header">
+                        <span className="vmc-modern-diff-eyebrow">DESTINATION IMMERSION</span>
+                        <h2 className="vmc-modern-diff-title">What Makes Viking Mediterranean Cruises Different?</h2>
+                        <p className="vmc-modern-diff-subtitle">
+                            Unlike large resort-style ships that focus heavily on onboard attractions, Viking emphasizes the destinations themselves. Every detail is curated for the curious traveler seeking deep cultural enrichment.
+                        </p>
                     </div>
 
-                    <div className="medi-diff-grid">
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Clock size={24} /></div>
-                                <h3 className="medi-diff-card-title">Longer Port Stays</h3>
-                            </div>
-                            <p className="medi-diff-card-text">
-                                Viking's philosophy centers around cultural exploration. Rather than spending days at sea, Viking itineraries are designed to maximize time in port. More time exploring destinations.
-                            </p>
-                            <p className="medi-diff-card-text-secondary">Guests enjoy:</p>
-                            <ul className="medi-diff-experience-list">
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Overnight Visits — select itineraries include overnight stays in major cities</span></li>
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Enrichment Programs — experts provide lectures and destination insights</span></li>
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Included Excursions — every port includes at least one complimentary excursion</span></li>
-                            </ul>
-                        </div>
-
-                        <div className="medi-diff-card medi-diff-card-white">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Ship size={24} /></div>
-                                <h3 className="medi-diff-card-title">Smaller Ships</h3>
-                            </div>
-                            <div className="medi-diff-ship-stat-box">
-                                <div className="medi-diff-stat-ring">
-                                    <div className="medi-diff-stat-num">930</div>
+                    <div className="vmc-modern-diff-grid">
+                        
+                        {/* Card 1 */}
+                        <div className="vmc-modern-diff-card">
+                            <span className="vmc-modern-diff-card-bg-number">01</span>
+                            <div className="vmc-modern-diff-card-header">
+                                <div className="vmc-modern-diff-icon-box">
+                                    <Clock size={22} />
                                 </div>
-                                <div className="medi-diff-stat-label">GUESTS CAPACITY</div>
+                                <h3 className="vmc-modern-diff-card-title">Longer Port Stays</h3>
                             </div>
-                            <p className="medi-diff-card-text">
-                                Viking Ocean ships typically accommodate around 930 guests, creating a more intimate experience than mega-ship cruising.
-                            </p>
-                            <div className="medi-diff-quote-wrapper">
-                                <p className="medi-diff-quote-text">A boutique-scale alternative to traditional resort-style cruising.</p>
+                            <div className="vmc-modern-diff-card-body">
+                                <p className="vmc-modern-diff-card-text">
+                                    Viking's philosophy centers around cultural exploration. Rather than spending days at sea, Viking itineraries are designed to maximize time in port. More time exploring destinations.
+                                </p>
+                                <div className="vmc-modern-diff-divider"></div>
+                                <h4 className="vmc-modern-diff-list-title">Guests enjoy:</h4>
+                                <ul className="vmc-modern-diff-list">
+                                    <li>
+                                        <CheckCircle size={15} className="vmc-modern-diff-list-icon" />
+                                        <span><strong>Overnight Visits:</strong> Select itineraries include overnight stays in major cities.</span>
+                                    </li>
+                                    <li>
+                                        <CheckCircle size={15} className="vmc-modern-diff-list-icon" />
+                                        <span><strong>Enrichment Programs:</strong> Experts provide lectures and destination insights.</span>
+                                    </li>
+                                    <li>
+                                        <CheckCircle size={15} className="vmc-modern-diff-list-icon" />
+                                        <span><strong>Included Excursions:</strong> Every port includes at least one complimentary excursion.</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Compass size={24} /></div>
-                                <h3 className="medi-diff-card-title">Cultural Exploration</h3>
+                        {/* Card 2 */}
+                        <div className="vmc-modern-diff-card">
+                            <span className="vmc-modern-diff-card-bg-number">02</span>
+                            <div className="vmc-modern-diff-card-header">
+                                <div className="vmc-modern-diff-icon-box">
+                                    <Ship size={22} />
+                                </div>
+                                <h3 className="vmc-modern-diff-card-title">Smaller Ships</h3>
                             </div>
-                            <p className="medi-diff-card-text">Viking's philosophy centers around:</p>
-                            <ul className="medi-diff-focus-list-premium">
-                                <li><span className="medi-diff-list-num">01</span><span>Enrichment programs</span></li>
-                                <li><span className="medi-diff-list-num">02</span><span>Included excursions</span></li>
-                                <li><span className="medi-diff-list-num">03</span><span>Overnight city visits</span></li>
-                                <li><span className="medi-diff-list-num">04</span><span>Smaller, walkable ports</span></li>
-                            </ul>
-                            <div className="medi-diff-conclusion-box">
-                                <p className="medi-diff-conclusion-text">
-                                    Every port includes at least one complimentary excursion.
+                            <div className="vmc-modern-diff-card-body">
+                                <div className="vmc-modern-diff-stat-wheel">
+                                    <span className="vmc-modern-diff-stat-number">930</span>
+                                    <span className="vmc-modern-diff-stat-label">Guests Capacity</span>
+                                </div>
+                                <p className="vmc-modern-diff-card-text">
+                                    Viking Ocean ships typically accommodate around 930 guests, creating a more intimate experience than mega-ship cruising.
                                 </p>
+                                <div className="vmc-modern-diff-quote-box">
+                                    <p className="vmc-modern-diff-quote-text">
+                                        “A boutique-scale alternative to traditional resort-style cruising.”
+                                    </p>
+                                </div>
                             </div>
                         </div>
+
+                        {/* Card 3 */}
+                        <div className="vmc-modern-diff-card">
+                            <span className="vmc-modern-diff-card-bg-number">03</span>
+                            <div className="vmc-modern-diff-card-header">
+                                <div className="vmc-modern-diff-icon-box">
+                                    <Compass size={22} />
+                                </div>
+                                <h3 className="vmc-modern-diff-card-title">Cultural Exploration</h3>
+                            </div>
+                            <div className="vmc-modern-diff-card-body">
+                                <p className="vmc-modern-diff-card-text">
+                                    Viking’s destination-focused philosophy ensures that every aspect of the voyage connects you deeply to local culture.
+                                </p>
+                                <div className="vmc-modern-diff-divider"></div>
+                                <div className="vmc-modern-diff-pillars-grid">
+                                    <div className="vmc-modern-diff-pillar-item">
+                                        <span className="vmc-modern-diff-pillar-num">01</span>
+                                        <span>Enrichment</span>
+                                    </div>
+                                    <div className="vmc-modern-diff-pillar-item">
+                                        <span className="vmc-modern-diff-pillar-num">02</span>
+                                        <span>Excursions</span>
+                                    </div>
+                                    <div className="vmc-modern-diff-pillar-item">
+                                        <span className="vmc-modern-diff-pillar-num">03</span>
+                                        <span>Overnights</span>
+                                    </div>
+                                    <div className="vmc-modern-diff-pillar-item">
+                                        <span className="vmc-modern-diff-pillar-num">04</span>
+                                        <span>Walkable Ports</span>
+                                    </div>
+                                </div>
+                                <div className="vmc-modern-diff-alert-box">
+                                    <p>Every port includes at least one complimentary excursion to introduce you to local art, history, and cuisine.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -873,39 +918,56 @@ function VikingMediterraneanCruises() {
             </section>
 
             {/* ══════════════════════════════════
-                WHO SHOULD / SHOULD NOT TAKE A VIKING CRUISE
-                (new section, own CSS to avoid colliding with shared
-                .medi-audience-* component used elsewhere on the site)
-            ══════════════════════════════════ */}
-            <section className="vmc-traveler-section">
-                <div className="vmc-traveler-container">
-                    <div className="vmc-traveler-header">
-                        <span className="medi-itinerary-eyebrow">IS VIKING RIGHT FOR YOU?</span>
-                        <h2 className="medi-section-heading">Who Should Take a Viking Mediterranean Cruise?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    </div>
+    WHO SHOULD / SHOULD NOT TAKE A VIKING CRUISE
+══════════════════════════════════ */}
+<section className="vmc-traveler-section">
+    <div className="vmc-traveler-container">
+        <div className="vmc-traveler-header">
+            <span className="medi-itinerary-eyebrow">THE EXPERT VERDICT</span>
+            <h2 className="medi-section-heading">Is Viking Right For Your Style?</h2>
+            <div className="medi-heading-separator-bar medi-bar-centered"></div>
+        </div>
 
-                    <div className="vmc-traveler-grid">
-                        <div className="vmc-traveler-card yes">
-                            <h3 className="vmc-traveler-card-heading"><CheckCircle size={20} /> Viking Is Perfect For</h3>
-                            <ul className="vmc-traveler-list">
-                                {['Couples', 'Retirees', 'Empty nesters', 'Luxury travelers', 'Cultural explorers', 'First-time Mediterranean visitors', 'Food and wine enthusiasts'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={17} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
+        <div className="vmc-traveler-grid">
+            {/* THE "YES" CARD */}
+            <div className="vmc-traveler-card vmc-card-premium">
+                <div className="vmc-status-badge">THE IDEAL CHOICE</div>
+                <h3 className="vmc-traveler-card-heading">
+                    <div className="vmc-icon-box"><CheckCircle size={24} /></div>
+                    Viking is Perfect For:
+                </h3>
+                <ul className="vmc-traveler-list">
+                    {['Romantic Couples', 'Lifelong Learners & Retirees', 'Empty Nesters', 'Cultural Explorers', 'First-time Mediterranean visitors', 'Food and wine enthusiasts'].map((item, i) => (
+                        <li key={i}>
+                            <div className="vmc-dot"></div>
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
-                        <div className="vmc-traveler-card no">
-                            <h3 className="vmc-traveler-card-heading"><X size={20} /> Who May Prefer Another Cruise Line</h3>
-                            <ul className="vmc-traveler-list">
-                                {['Families with young children', 'Travelers seeking casinos', 'Guests wanting waterslides and attractions', 'Nightlife-focused cruisers'].map((item, i) => (
-                                    <li key={i}><X size={17} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            {/* THE "NO" CARD */}
+            <div className="vmc-traveler-card vmc-card-outline">
+                <div className="vmc-status-badge">CONSIDER ALTERNATIVES</div>
+                <h3 className="vmc-traveler-card-heading">
+                    <div className="vmc-icon-box"><X size={24} /></div>
+                    Viking May Not Be Ideal For:
+                </h3>
+                <ul className="vmc-traveler-list">
+                    {['Families with young children (Adults only)', 'Travelers seeking onboard casinos', 'Guests wanting waterparks & thrill rides', 'Groups looking for late-night clubbing scenes'].map((item, i) => (
+                        <li key={i}>
+                            <div className="vmc-x-dot"></div>
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+                <div className="vmc-advisory-note">
+                    <p>Viking maintains a serene, "no-gimmicks" environment focused on the destination.</p>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
             {/* ══════════════════════════════════
                 WHY BOOK THROUGH TRIPS & SHIPS

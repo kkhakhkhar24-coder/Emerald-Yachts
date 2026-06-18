@@ -375,15 +375,31 @@ function VikingAlaskaCruises() {
                             <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '20px' }}>
                                 Alaska is one of the world's most spectacular cruise destinations. For travelers seeking a refined, adults-only cruise vacation, Viking Alaska Cruises offer an exceptional way to explore the Last Frontier.
                             </p>
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '24px' }}>
+                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '0px' }}>
                                 Whether you're hoping to witness humpback whales, explore glacier-filled fjords, learn about Alaska Native culture, or simply enjoy breathtaking scenery from your veranda, Viking delivers a sophisticated Alaska cruise experience.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                            <p style={{ fontSize: '15px', fontWeight: '600', color: 'var(--medi-navy)', marginBottom: '16px' }}>
+            {/* ══════════════════════════════════
+                WHY CHOOSE VIKING (SEPARATED FEATURE BLOCK)
+            ══════════════════════════════════ */}
+            <section className="vak-why-viking-separated-section">
+                <div className="vak-why-viking-separated-container">
+                    <div className="vak-why-viking-separated-grid">
+                        
+                        <div className="vak-why-viking-left-panel">
+                            <span className="vak-separated-eyebrow">The Viking Difference</span>
+                            <p className="vak-separated-intro-text">
                                 Viking has become one of the most respected names in premium and luxury cruising. Travelers choose Viking Alaska Cruises because of:
                             </p>
+                            <div className="vak-separated-accent-bar"></div>
+                        </div>
 
-                            <div className="vak-why-grid">
+                        <div className="vak-why-viking-right-panel">
+                            <div className="vak-why-viking-horizontal-grid">
                                 {[
                                     [Heart, 'Adults-only atmosphere'],
                                     [MapPin, 'Destination-focused itineraries'],
@@ -397,19 +413,22 @@ function VikingAlaskaCruises() {
                                     [Utensils, 'Included specialty dining'],
                                     [Award, 'Exceptional service'],
                                 ].map(([Icon, text], i) => (
-                                    <div key={i} className="vak-why-card">
-                                        <div className="vak-why-icon-box">
-                                            <Icon size={20} />
+                                    <div key={i} className="vak-separated-card">
+                                        <div className="vak-separated-card-icon">
+                                            <Icon size={18} />
                                         </div>
-                                        <p className="vak-why-text">{text}</p>
+                                        <span className="vak-separated-card-text">{text}</span>
                                     </div>
                                 ))}
                             </div>
-
-                            <p style={{ fontSize: '15px', color: '#4a5568', lineHeight: '1.7', marginTop: '24px' }}>
-                                For travelers seeking culture and exploration rather than onboard attractions, Viking is an outstanding choice.
-                            </p>
                         </div>
+
+                    </div>
+
+                    <div className="vak-why-viking-footer-panel">
+                        <p className="vak-separated-footnote">
+                            For travelers seeking culture and exploration rather than onboard attractions, Viking is an outstanding choice.
+                        </p>
                     </div>
                 </div>
             </section>

@@ -10,46 +10,129 @@
 /* ----------------------------------------------------------
    WHY CHOOSE VIKING — CHECKMARK GRID (intro section helper)
 ---------------------------------------------------------- */
-.vak-why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-top: 24px;
+/* ----------------------------------------------------------
+   WHY CHOOSE VIKING (SEPARATED FEATURE BLOCK)
+---------------------------------------------------------- */
+.vak-why-viking-separated-section {
+    background: linear-gradient(135deg, var(--medi-navy) 0%, #101c2c 100%);
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.vak-why-card {
-    background: var(--medi-bg-soft);
-    border-radius: 14px;
-    padding: 20px;
+.vak-why-viking-separated-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.vak-why-viking-separated-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vak-why-viking-left-panel {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease;
+    justify-content: center;
 }
 
-.vak-why-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 28px rgba(39, 68, 114, 0.1);
+.vak-separated-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #3b82f6;
+    margin-bottom: 16px;
 }
 
-.vak-why-icon-box {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: var(--medi-navy);
+.vak-separated-intro-text {
+    font-size: 20px;
+    font-weight: 500;
     color: #ffffff;
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+}
+
+.vak-separated-accent-bar {
+    width: 60px;
+    height: 3px;
+    background: #3b82f6;
+    border-radius: 2px;
+}
+
+.vak-why-viking-right-panel {
+    width: 100%;
+}
+
+.vak-why-viking-horizontal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.vak-separated-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.vak-separated-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.vak-separated-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: all 0.3s ease;
 }
 
-.vak-why-text {
+.vak-separated-card:hover .vak-separated-card-icon {
+    background: #3b82f6;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.vak-separated-card-text {
     font-size: 14px;
     font-weight: 600;
-    color: var(--medi-navy);
-    margin: 0;
+    color: #e2e8f0;
     line-height: 1.4;
+    margin: 0;
+}
+
+.vak-why-viking-footer-panel {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.vak-separated-footnote {
+    font-size: 15px;
+    color: #94a3b8;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* ----------------------------------------------------------

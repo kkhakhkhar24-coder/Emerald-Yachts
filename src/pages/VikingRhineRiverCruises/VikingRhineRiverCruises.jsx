@@ -12,17 +12,27 @@ import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/VikingRhineRiverCruises/rhine-river-hero-1.jpg'
-// import hero2 from '../../assets/VikingRhineRiverCruises/rhine-river-hero-2.jpg'
-// import hero3 from '../../assets/VikingRhineRiverCruises/rhine-river-hero-3.jpg'
+import hero1 from '../../assets/VikingRhineRiverCruises/hero-budapest.jpg'
+import hero2 from '../../assets/VikingRhineRiverCruises/hero-expedition-ship-1.jpg'
+import hero3 from '../../assets/VikingRhineRiverCruises/hero-expedition-ship-2.jpg'
+import rhineGetawayImg from '../../assets/VikingRhineRiverCruises/RhineGetaway.jpg'
+import grandEuropeanImg from '../../assets/VikingRhineRiverCruises/GrandEuropeanTour.jpg'
+import citiesOfLightImg from '../../assets/VikingRhineRiverCruises/CitiesofLight.jpg'
+import amsterdamImg from '../../assets/VikingRhineRiverCruises/Amsterdam.jpg'
+import cologneImg from '../../assets/VikingRhineRiverCruises/Cologne.jpg'
+import koblenzImg from '../../assets/VikingRhineRiverCruises/Koblenz.jpg'
+import strasbourgImg from '../../assets/VikingRhineRiverCruises/Strasbourg.jpg'
+import baselImg from '../../assets/VikingRhineRiverCruises/Basel.jpg'
+import rhineGorgeImg from '../../assets/VikingRhineRiverCruises/RhineGorge.jpg'
+import vikingLongshipImg from '../../assets/VikingRhineRiverCruises/VikingLongships.jpg'
 // import longshipImg from '../../assets/VikingRhineRiverCruises/viking-longship.jpg'
 
 function VikingRhineRiverCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [
-        // hero1,
-        // hero2,
-        // hero3
+        hero1,
+        hero2,
+        hero3
     ]
 
     useEffect(() => {
@@ -33,6 +43,8 @@ function VikingRhineRiverCruises() {
             return () => clearInterval(mediTimer)
         }
     }, [mediHeroImages.length])
+
+    const vikingItineraryImages = [rhineGetawayImg, grandEuropeanImg, citiesOfLightImg]
 
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
@@ -474,6 +486,9 @@ function VikingRhineRiverCruises() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
+                                {vikingItineraryImages[mediSelectedItinerary] && (
+                                    <img src={vikingItineraryImages[mediSelectedItinerary]} alt={["Rhine Getaway", "Grand European Tour", "Cities of Light"][mediSelectedItinerary]} style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
+                                )}
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">ITINERARY SPOTLIGHT</span>
                             </div>
@@ -584,6 +599,9 @@ function VikingRhineRiverCruises() {
                         border: 1px solid rgba(255, 255, 255, 0.1);
                         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
                     }
+                    .viking-dest-item:hover .viking-dest-img {
+                        transform: scale(1.08);
+                    }
                     .viking-dest-overlay {
                         position: absolute;
                         inset: 0;
@@ -617,14 +635,15 @@ function VikingRhineRiverCruises() {
 
                 <div className="viking-dest-grid">
                     {[
-                        { tag: "Netherlands", title: "Amsterdam", desc: "Canal cruises, museums, historic architecture, and local markets. Many Rhine cruises begin or end here." },
-                        { tag: "Germany", title: "Cologne", desc: "Home to the famous Cologne Cathedral, one of Europe's most impressive Gothic landmarks. Old Town, beer halls, and riverfront promenades." },
-                        { tag: "Germany", title: "Koblenz", desc: "Where the Rhine and Moselle Rivers meet. Historic fortresses, scenic viewpoints, and wine culture." },
-                        { tag: "France", title: "Strasbourg", desc: "Half-timbered houses, French cuisine, Alsatian culture, and Gothic architecture. One of the Rhine's most beautiful destinations." },
-                        { tag: "Switzerland", title: "Basel", desc: "A popular embarkation city known for museums, historic Old Town, Swiss culture, and easy access to the Alps." },
-                        { tag: "UNESCO Heritage", title: "Rhine Gorge", desc: "Hilltop castles, vineyards, medieval villages, and dramatic river scenery. The most photographed section of any European river cruise." }
+                        { tag: "Netherlands", title: "Amsterdam", desc: "Canal cruises, museums, historic architecture, and local markets. Many Rhine cruises begin or end here.", img: amsterdamImg },
+                        { tag: "Germany", title: "Cologne", desc: "Home to the famous Cologne Cathedral, one of Europe's most impressive Gothic landmarks. Old Town, beer halls, and riverfront promenades.", img: cologneImg },
+                        { tag: "Germany", title: "Koblenz", desc: "Where the Rhine and Moselle Rivers meet. Historic fortresses, scenic viewpoints, and wine culture.", img: koblenzImg },
+                        { tag: "France", title: "Strasbourg", desc: "Half-timbered houses, French cuisine, Alsatian culture, and Gothic architecture. One of the Rhine's most beautiful destinations.", img: strasbourgImg },
+                        { tag: "Switzerland", title: "Basel", desc: "A popular embarkation city known for museums, historic Old Town, Swiss culture, and easy access to the Alps.", img: baselImg },
+                        { tag: "UNESCO Heritage", title: "Rhine Gorge", desc: "Hilltop castles, vineyards, medieval villages, and dramatic river scenery. The most photographed section of any European river cruise.", img: rhineGorgeImg }
                     ].map((dest, idx) => (
                         <div key={idx} className="viking-dest-item">
+                            <img src={dest.img} alt={dest.title} className="viking-dest-img" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, transition: 'transform 0.8s ease' }} />
                             <div className="viking-dest-overlay">
                                 <span className="viking-dest-tag">{dest.tag}</span>
                                 <h3 className="viking-dest-title">{dest.title}</h3>
@@ -639,7 +658,7 @@ function VikingRhineRiverCruises() {
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
-                    {/* Ship Image Placeholder */}
+                    {/* Ship Image */}
                     <div style={{
                         width: '100%',
                         height: window.innerWidth <= 600 ? '220px' : '360px',
@@ -649,21 +668,14 @@ function VikingRhineRiverCruises() {
                         position: 'relative',
                         backgroundColor: '#0f1c2e'
                     }}>
-                        {/* <img src={longshipImg} alt="Viking Longship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
-                        <div style={{
-                            width: '100%', height: '100%',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            background: 'linear-gradient(135deg, #1a365d 0%, #0f1c2e 100%)',
-                            color: '#3b82f6', fontSize: '14px', fontWeight: '600',
-                            letterSpacing: '2px', textTransform: 'uppercase'
-                        }}>viking-longship.jpg</div>
+                        <img src={vikingLongshipImg} alt="Viking Longship" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         <div style={{
                             position: 'absolute', bottom: 0, left: 0, right: 0,
                             background: 'linear-gradient(to top, rgba(15,28,46,0.95) 0%, transparent 100%)',
                             padding: '30px', color: '#ffffff', zIndex: 2
                         }}>
                             <span style={{ fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '3px', color: '#60a5fa', display: 'block', marginBottom: '8px' }}>The Ship Experience</span>
-                            <h2 style={{ fontSize: 'clamp(26px, 4vw, 38px)', fontWeight: '700', margin: 0, letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                            <h2 style={{ color: '#ffffff', fontSize: 'clamp(26px, 4vw, 38px)', fontWeight: '700', margin: 0, letterSpacing: '-0.02em', lineHeight: '1.2' }}>
                                 Viking Longships
                             </h2>
                         </div>
