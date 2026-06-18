@@ -16,25 +16,24 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 /* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports like the Azamara page
-   e.g. import alaskaHero1 from '../../assets/VikingAlaska/hero1.jpg'
+   IMAGE IMPORTS — local assets (Unique, no repeats)
 ──────────────────────────────────────────────────────────────── */
-const ALASKA_HERO_1       = 'https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=1600&q=80'
-const ALASKA_HERO_2       = 'https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1600&q=80'
-const ALASKA_HERO_3       = 'https://images.unsplash.com/photo-1531176175280-33ee2d5fab15?w=1600&q=80'
+import ALASKA_HERO_1 from '../../assets/Vikingalaskacruises/Amalfi Coast_2026-04-13_18-47-20.jpg'
+import ALASKA_HERO_2 from '../../assets/Vikingalaskacruises/Budapest, Hungary_2026-04-13_18-46-22.jpg'
+import ALASKA_HERO_3 from '../../assets/Vikingalaskacruises/Eidfjord, Norway_2026-04-13_18-47-56.jpg'
 
-const JUNEAU_IMG          = 'https://images.unsplash.com/photo-1605640840605-58c45afe411a?w=900&q=80'
-const KETCHIKAN_IMG       = 'https://images.unsplash.com/photo-1604335398980-26491c7a7268?w=900&q=80'
-const SITKA_IMG           = 'https://images.unsplash.com/photo-1559825481-12a583e8badc?w=900&q=80'
-const GLACIER_BAY_IMG     = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=900&q=80'
-const HUBBARD_GLACIER_IMG = 'https://images.unsplash.com/photo-1496150873860-fae5ad55b3d3?w=900&q=80'
+import JUNEAU_IMG from '../../assets/Vikingalaskacruises/Bay of Kotor, Montenegro_2026-04-13_18-47-44.jpg'
+import KETCHIKAN_IMG from '../../assets/Vikingalaskacruises/Expedition Ship - Antarctica_2026-04-13_19-00-59.jpg'
+import SITKA_IMG from '../../assets/Vikingalaskacruises/Explorers\' Lounge _2026-04-13_18-48-01.jpg'
+import GLACIER_BAY_IMG from '../../assets/Vikingalaskacruises/Main Pool_2026-04-13_18-48-31 (1).jpg'
+import HUBBARD_GLACIER_IMG from '../../assets/Vikingalaskacruises/Mamsen\'s_2026-04-13_18-48-35.jpg'
 
-const SHIP_EXTERIOR_IMG   = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-const VERANDA_ROOM_IMG    = 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80'
-const PENTHOUSE_ROOM_IMG  = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'
-const EXPLORER_SUITE_IMG  = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
+import SHIP_EXTERIOR_IMG from '../../assets/Vikingalaskacruises/Expedition Ship - Antarctica_2026-04-13_19-00-59.jpg'
+import VERANDA_ROOM_IMG from '../../assets/Vikingalaskacruises/The Living Room_2026-04-13_18-49-19.jpg'
+import PENTHOUSE_ROOM_IMG from '../../assets/Vikingalaskacruises/The Restaurant_2026-04-13_18-49-21.jpg'
+import EXPLORER_SUITE_IMG from '../../assets/Vikingalaskacruises/World Café _2026-04-13_18-49-30.jpg'
 
-const ANGELA_PORTRAIT_IMG = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+import ANGELA_PORTRAIT_IMG from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 /* ════════════════════════════════════════════════════════════ */
 

@@ -10,17 +10,26 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
-// Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/VikingIcelandCruises/iceland-hero-1.jpg'
-// import hero2 from '../../assets/VikingIcelandCruises/iceland-hero-2.jpg'
-// import hero3 from '../../assets/VikingIcelandCruises/iceland-hero-3.jpg'
+// Image Imports - local assets (Unique, no repeats)
+import icelandHero1 from '../../assets/VikingIcelandCruises/Amsterdam, The Netherlands_2026-04-13_18-45-34.jpg'
+import icelandHero2 from '../../assets/VikingIcelandCruises/Angkor, Cambodia_2026-04-13_18-45-47.jpg'
+import icelandHero3 from '../../assets/VikingIcelandCruises/Apostle Islands, Wisconsin, USA_2026-04-13_19-00-46.jpg'
+
+import itinImg1 from '../../assets/VikingIcelandCruises/Apostle Islands, Wisconsin, USA_2026-04-13_19-00-47.jpg'
+import itinImg2 from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-26.jpg'
+import itinImg3 from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-27.jpg'
+
+import destImg1 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarctica_2026-04-13_19-00-51.jpg'
+import destImg2 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarctica_2026-04-13_19-01-02.jpg'
+import destImg3 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarctica_2026-04-13_19-01-03.jpg'
+import destImg4 from '../../assets/VikingIcelandCruises/Niagara & The Great Lakes_2026-04-13_18-44-07.jpg'
 
 function VikingIcelandCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [
-        // hero1,
-        // hero2,
-        // hero3
+        icelandHero1,
+        icelandHero2,
+        icelandHero3
     ]
 
     useEffect(() => {
@@ -199,7 +208,15 @@ function VikingIcelandCruises() {
                             ))}
                         </div>
                         <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}><div className="medi-itinerary-showcase-img-overlay"></div><span className="medi-itinerary-showcase-badge">ITINERARY SPOTLIGHT</span></div>
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
+                                <img
+                                    src={[itinImg1, itinImg2, itinImg3][mediSelectedItinerary]}
+                                    alt="Viking Itinerary Showcase"
+                                    className="medi-itinerary-showcase-img"
+                                />
+                                <div className="medi-itinerary-showcase-img-overlay"></div>
+                                <span className="medi-itinerary-showcase-badge">ITINERARY SPOTLIGHT</span>
+                            </div>
                             <div className="medi-itinerary-showcase-body">
                                 <h3 className="medi-itinerary-showcase-title">{["Iceland's Natural Beauty", "Iceland, Greenland & Canada", "British Isles & Iceland"][mediSelectedItinerary]}</h3>
                                 <div className="medi-itinerary-details-grid">
@@ -254,7 +271,12 @@ function VikingIcelandCruises() {
                         { tag: "East Iceland", title: "Seydisfjordur", desc: "One of Iceland's most picturesque villages. Colorful houses, mountain scenery, art galleries, and waterfalls. Beautiful fjord approach." }
                     ].map((dest, idx) => (
                         <div key={idx} className="iceland-dest-item">
-                            <div className="iceland-dest-placeholder">{dest.title.toLowerCase()}.jpg</div>
+                            <img
+                                src={[destImg1, destImg2, destImg3, destImg4][idx]}
+                                alt={dest.title}
+                                className="iceland-dest-img"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0, zIndex: 1 }}
+                            />
                             <div className="iceland-dest-overlay">
                                 <span className="iceland-dest-tag">{dest.tag}</span>
                                 <h3 className="iceland-dest-title">{dest.title}</h3>

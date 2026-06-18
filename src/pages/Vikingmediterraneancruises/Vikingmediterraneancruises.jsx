@@ -15,24 +15,25 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 /* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports like the Azamara page
-   e.g. import vikingHero1 from '../../assets/Viking/hero1.jpg'
+   IMAGE IMPORTS — local assets (Unique, no repeats)
 ──────────────────────────────────────────────────────────────── */
-const VIKING_HERO_1 = 'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=1600&q=80'
-const VIKING_HERO_2 = 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80'
-const VIKING_HERO_3 = 'https://images.unsplash.com/photo-1469796466635-455ede028aca?w=1600&q=80'
+import VIKING_HERO_1 from '../../assets/Vikingmediterraneancruises/Exterior_2026-04-13_19-02-39.jpg'
+import VIKING_HERO_2 from '../../assets/Vikingmediterraneancruises/Flam, Norway_2026-04-13_18-48-05.jpg'
+import VIKING_HERO_3 from '../../assets/Vikingmediterraneancruises/Aerial Mountains_2026-04-13_18-47-18.jpg'
 
-const ITALY_IMG = 'https://images.unsplash.com/photo-1499678329028-101435549a4e?w=900&q=80'
-const GREECE_IMG = 'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=900&q=80'
-const CROATIA_IMG = 'https://images.unsplash.com/photo-1555990538-ceba70a39cb6?w=900&q=80'
-const SPAIN_IMG = 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=900&q=80'
+import MED_ODYSSEY_IMG from '../../assets/Vikingmediterraneancruises/Papeete, French Polynesia_2026-04-13_18-48-51.jpg'
+import EMPIRES_MED_IMG from '../../assets/Vikingmediterraneancruises/Infinity Pool_2026-04-13_18-48-12.jpg'
+import ITALIAN_SOJOURN_IMG from '../../assets/Vikingmediterraneancruises/Expedition Ship - Welland Canal_2026-04-13_19-01-06.jpg'
+import GREEK_ODYSSEY_IMG from '../../assets/Vikingmediterraneancruises/New York City, USA_2026-04-13_18-48-46.jpg'
+import IBERIAN_EXPLORER_IMG from '../../assets/Vikingmediterraneancruises/Exterior_2026-04-13_19-02-40.jpg'
 
-const SHIP_EXTERIOR_IMG = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-const VERANDA_ROOM_IMG = 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80'
-const PENTHOUSE_ROOM_IMG = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'
-const EXPLORER_SUITE_IMG = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
+import DESTINATIONS_MAIN_IMG from '../../assets/Vikingmediterraneancruises/Expedition Ship - Antarctica_2026-04-13_19-01-01.jpg'
 
-const ANGELA_PORTRAIT_IMG = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+import VERANDA_ROOM_IMG from '../../assets/Vikingmediterraneancruises/Nordic Junior Suite_2026-04-13_19-01-22.jpg'
+import PENTHOUSE_ROOM_IMG from '../../assets/Vikingmediterraneancruises/Expedition Ship - Antarctica_2026-04-13_19-01-00.jpg'
+import EXPLORER_SUITE_IMG from '../../assets/Vikingmediterraneancruises/Expedition Ship - Antarctica_2026-04-13_19-00-58.jpg'
+
+import ANGELA_PORTRAIT_IMG from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 /* ════════════════════════════════════════════════════════════ */
 
@@ -53,31 +54,31 @@ function VikingMediterraneanCruises() {
             title: 'Mediterranean Odyssey',
             desc: 'One of Viking\'s most requested Mediterranean voyages. This itinerary offers a broad introduction to the Mediterranean.',
             ports: ['Barcelona', 'Marseille', 'Florence', 'Rome', 'Naples', 'Sicily', 'Valletta', 'Athens'],
-            img: ITALY_IMG
+            img: MED_ODYSSEY_IMG
         },
         {
             title: 'Empires of the Mediterranean',
             desc: 'Perfect for travelers interested in history and culture. Guests experience centuries of history spanning multiple civilizations.',
             ports: ['Venice', 'Dubrovnik', 'Kotor', 'Athens', 'Santorini', 'Ephesus', 'Istanbul'],
-            img: CROATIA_IMG
+            img: EMPIRES_MED_IMG
         },
         {
             title: 'Italian Sojourn',
             desc: 'Ideal for travelers focused on Italy. This itinerary combines art, cuisine, history, and coastal beauty.',
             ports: ['Venice', 'Florence', 'Rome', 'Naples', 'Sicily'],
-            img: ITALY_IMG
+            img: ITALIAN_SOJOURN_IMG
         },
         {
             title: 'Greek Odyssey',
             desc: 'A favorite among first-time Mediterranean cruisers. Guests experience iconic Greek islands and ancient history.',
             ports: ['Athens', 'Mykonos', 'Santorini', 'Rhodes', 'Crete'],
-            img: GREECE_IMG
+            img: GREEK_ODYSSEY_IMG
         },
         {
             title: 'Iberian Explorer',
             desc: 'Focused on Spain and Portugal. Perfect for food, wine, and culture enthusiasts.',
             ports: ['Lisbon', 'Porto', 'Seville', 'Malaga', 'Barcelona'],
-            img: SPAIN_IMG
+            img: IBERIAN_EXPLORER_IMG
         },
     ]
 
@@ -681,7 +682,7 @@ function VikingMediterraneanCruises() {
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        <img src={GREECE_IMG} alt="Viking Mediterranean destinations" className="medi-luxury-main-image" />
+                        <img src={DESTINATIONS_MAIN_IMG} alt="Viking Mediterranean destinations" className="medi-luxury-main-image" />
                     </div>
                 </div>
             </section>
