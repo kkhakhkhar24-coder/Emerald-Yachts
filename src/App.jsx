@@ -82,6 +82,8 @@ import VikingRhineRiverCruises from "./pages/VikingRhineRiverCruises/VikingRhine
 import VikingChristmasMarketCruises from "./pages/VikingChristmasMarketCruises/VikingChristmasMarketCruises";
 import Vikingmediterraneancruises from "./pages/Vikingmediterraneancruises/Vikingmediterraneancruises"
 import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises"
+import VikingIcelandCruises from "./pages/VikingIcelandCruises/VikingIcelandCruises"
+import VikingVsAmaWaterways from "./pages/VikingVsAmaWaterways/VikingVsAmaWaterways";
 
 function App() {
   return (
@@ -423,7 +425,7 @@ function App() {
             element={< VikingChristmasMarketCruises />}
           />
 
-           <Route
+          <Route
             path="/viking-mediterranean-cruises"
             element={< Vikingmediterraneancruises />}
           />
@@ -433,7 +435,15 @@ function App() {
             element={< Vikingalaskacruises />}
           />
 
+          <Route
+            path="/viking-iceland-cruises"
+            element={< VikingIcelandCruises />}
+          />
 
+          <Route
+            path="/viking-vs-amawaterways"
+            element={< VikingVsAmaWaterways />}
+          />
 
         </Routes>
       </BrowserRouter>

@@ -553,6 +553,21 @@ const Navbar = () => {
                 Viking Alaska Cruises
               </NavLink>
 
+              <NavLink
+                to="/viking-iceland-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Iceland Cruises
+              </NavLink>
+
+              <NavLink
+                to="/viking-vs-ama-waterways"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Ama Waterways
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1109,12 +1124,22 @@ const Navbar = () => {
 
 
             <NavLink
-                to="/viking-alaska-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking Alaska Cruises
-              </NavLink>
+              to="/viking-alaska-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Alaska Cruises
+            </NavLink>
+
+            <NavLink
+              to="/viking-iceland-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Iceland Cruises
+            </NavLink>
+
+
             <span className="mobile-dropdown-divider"></span>
           </div>
         </div>
