@@ -1,0 +1,975 @@
+/* ============================================================
+   VikingMediterraneanCruises — NEW SECTION STYLES
+   Reuses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   INCLUDED VS EXTRA COSTS SECTION
+---------------------------------------------------------- */
+.vmc-costs-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vmc-costs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vmc-costs-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-costs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.vmc-costs-card {
+    border-radius: 16px;
+    padding: 36px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    background: var(--medi-bg-white);
+    transition: all 0.3s ease;
+}
+
+.vmc-costs-card:hover {
+    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.1);
+    transform: translateY(-4px);
+}
+
+.vmc-costs-card.included {
+    border-color: rgba(16, 185, 129, 0.25);
+    background: rgba(16, 185, 129, 0.04);
+}
+
+.vmc-costs-card.extra {
+    border-color: rgba(239, 68, 68, 0.2);
+    background: rgba(239, 68, 68, 0.03);
+}
+
+.vmc-costs-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 24px 0;
+}
+
+.vmc-costs-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vmc-costs-card.included .vmc-costs-icon-box {
+    background: var(--medi-green);
+    color: #ffffff;
+}
+
+.vmc-costs-card.extra .vmc-costs-icon-box {
+    background: var(--medi-red);
+    color: #ffffff;
+}
+
+.vmc-costs-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.vmc-costs-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.vmc-costs-list svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vmc-costs-card.included .vmc-costs-list svg {
+    color: var(--medi-green);
+}
+
+.vmc-costs-card.extra .vmc-costs-list svg {
+    color: var(--medi-red);
+}
+
+@media (max-width: 900px) {
+    .vmc-costs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   STATEROOMS & SUITES SECTION
+---------------------------------------------------------- */
+.vmc-staterooms-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.vmc-staterooms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vmc-staterooms-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-staterooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.vmc-stateroom-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.vmc-stateroom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.14);
+}
+
+.vmc-stateroom-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.vmc-stateroom-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vmc-stateroom-card:hover .vmc-stateroom-image-wrap img {
+    transform: scale(1.06);
+}
+
+.vmc-stateroom-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.vmc-stateroom-body {
+    padding: 26px 24px;
+}
+
+.vmc-stateroom-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 14px 0;
+}
+
+.vmc-stateroom-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vmc-stateroom-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.vmc-stateroom-features svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 992px) {
+    .vmc-staterooms-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .vmc-staterooms-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   DINING SECTION (Restaurant Cards)
+---------------------------------------------------------- */
+.vmc-dining-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vmc-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vmc-dining-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-dining-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.vmc-dining-card {
+    background: var(--medi-bg-soft);
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.vmc-dining-card:hover {
+    background: var(--medi-navy);
+    transform: translateY(-4px);
+}
+
+.vmc-dining-icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--medi-bg-white);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px auto;
+    transition: all 0.3s ease;
+}
+
+.vmc-dining-card:hover .vmc-dining-icon-box {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.vmc-dining-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 8px 0;
+    transition: color 0.3s ease;
+}
+
+.vmc-dining-card:hover .vmc-dining-card-title {
+    color: #ffffff;
+}
+
+.vmc-dining-card-text {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.vmc-dining-card:hover .vmc-dining-card-text {
+    color: #cbd5e1;
+}
+
+@media (max-width: 992px) {
+    .vmc-dining-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .vmc-dining-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   BEST TIME TO CRUISE — SEASON TIMELINE
+---------------------------------------------------------- */
+.vmc-season-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vmc-season-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vmc-season-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-season-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.vmc-season-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.vmc-season-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px 26px;
+    transition: all 0.3s ease;
+}
+
+.vmc-season-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-4px);
+}
+
+.vmc-season-card.best {
+    border-color: var(--medi-green);
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.vmc-season-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.vmc-season-card.best .vmc-season-icon-box {
+    background: var(--medi-green);
+}
+
+.vmc-season-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.vmc-season-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--medi-green);
+    background: rgba(16, 185, 129, 0.15);
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin-bottom: 14px;
+}
+
+.vmc-season-text {
+    font-size: 14.5px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .vmc-season-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   POPULAR ITINERARIES — NEW HORIZONTAL CHIP CARDS
+   (used for the five named Viking voyages)
+---------------------------------------------------------- */
+.vmc-voyages-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.vmc-voyages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vmc-voyages-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-voyages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.vmc-voyage-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 30px 28px;
+    border-left: 4px solid var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.vmc-voyage-card:hover {
+    box-shadow: 0 12px 36px rgba(39, 68, 114, 0.1);
+    transform: translateX(4px);
+}
+
+.vmc-voyage-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.vmc-voyage-desc {
+    font-size: 14.5px;
+    color: #64748b;
+    margin: 0 0 18px 0;
+    line-height: 1.6;
+}
+
+.vmc-voyage-ports {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vmc-voyage-port-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+@media (max-width: 900px) {
+    .vmc-voyages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   WHO SHOULD / WHO SHOULD NOT TAKE A VIKING CRUISE
+   (re-styled audience-style split, distinct from medi-audience-*
+   so it does not collide with the shared component default)
+---------------------------------------------------------- */
+.vmc-traveler-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vmc-traveler-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vmc-traveler-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vmc-traveler-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.vmc-traveler-card {
+    border-radius: 18px;
+    padding: 34px;
+}
+
+.vmc-traveler-card.yes {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vmc-traveler-card.no {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.vmc-traveler-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 22px 0;
+}
+
+.vmc-traveler-card.yes .vmc-traveler-card-heading {
+    color: #ffffff;
+}
+
+.vmc-traveler-card.no .vmc-traveler-card-heading {
+    color: var(--medi-navy);
+}
+
+.vmc-traveler-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vmc-traveler-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.vmc-traveler-card.yes .vmc-traveler-list li {
+    color: #cbd5e1;
+}
+
+.vmc-traveler-card.no .vmc-traveler-list li {
+    color: #374151;
+}
+
+.vmc-traveler-list svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vmc-traveler-card.yes .vmc-traveler-list svg {
+    color: var(--medi-green);
+}
+
+.vmc-traveler-card.no .vmc-traveler-list svg {
+    color: var(--medi-red);
+}
+
+@media (max-width: 900px) {
+    .vmc-traveler-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE — GENERAL TYPOGRAPHY SCALE-DOWN FOR NEW SECTIONS
+---------------------------------------------------------- */
+@media (max-width: 767px) {
+
+    .vmc-costs-section,
+    .vmc-staterooms-section,
+    .vmc-dining-section,
+    .vmc-season-section,
+    .vmc-voyages-section,
+    .vmc-traveler-section,
+    .vmc-why-viking-separated-section {
+        padding: 56px 16px;
+    }
+
+    .vmc-costs-card,
+    .vmc-stateroom-body,
+    .vmc-voyage-card,
+    .vmc-traveler-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ----------------------------------------------------------
+   WHY CHOOSE VIKING (SEPARATED FEATURE BLOCK)
+---------------------------------------------------------- */
+.vmc-why-viking-separated-section {
+    background: linear-gradient(135deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vmc-why-viking-separated-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.vmc-why-viking-separated-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vmc-why-viking-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vmc-separated-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--medi-green);
+    margin-bottom: 16px;
+}
+
+.vmc-separated-intro-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--medi-bg-white);
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+}
+
+.vmc-separated-accent-bar {
+    width: 60px;
+    height: 3px;
+    background: var(--medi-green);
+    border-radius: 2px;
+}
+
+.vmc-why-viking-right-panel {
+    width: 100%;
+}
+
+.vmc-why-viking-horizontal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.vmc-separated-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.vmc-separated-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.vmc-separated-card-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--medi-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.vmc-separated-card:hover .vmc-separated-card-icon {
+    background: var(--medi-green);
+    color: var(--medi-bg-white);
+    transform: scale(1.05);
+}
+
+.vmc-separated-card-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--medi-bg-soft);
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .vmc-why-viking-separated-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .vmc-why-viking-horizontal-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------
+   WHAT MAKES VIKING DIFFERENT (OVERRIDE STYLES)
+---------------------------------------------------------- */
+.vmc-diff-custom-override {
+    background: var(--medi-bg-soft) !important;
+    padding: 100px 20px !important;
+}
+
+.vmc-diff-custom-override .medi-diff-grid {
+    gap: 32px !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card {
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.05) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.12) !important;
+    border-color: var(--medi-navy) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card-navy {
+    background: var(--medi-navy) !important;
+    border: none !important;
+    color: var(--medi-bg-white) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card-white {
+    background: var(--medi-bg-white) !important;
+    color: var(--medi-navy) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card-soft {
+    background: var(--medi-bg-soft) !important;
+    color: var(--medi-navy) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-stat-ring {
+    border-color: var(--medi-navy) !important;
+    background: rgba(39, 68, 114, 0.05) !important;
+    box-shadow: inset 0 0 15px rgba(39, 68, 114, 0.1) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-stat-num {
+    color: var(--medi-navy) !important;
+    font-weight: 700 !important;
+}
+
+.vmc-diff-custom-override .medi-diff-list-icon {
+    color: var(--medi-green) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-card-navy .medi-diff-list-icon {
+    color: var(--medi-green) !important;
+}
+
+.vmc-diff-custom-override .medi-diff-list-num {
+    background: var(--medi-navy) !important;
+    color: var(--medi-bg-white) !important;
+}
+
+
+/* ----------------------------------------------------------
+   TOP DESTINATIONS (OVERRIDE STYLES)
+---------------------------------------------------------- */
+.vmc-destinations-custom-override {
+    background: var(--medi-bg-soft) !important;
+    padding: 100px 20px !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-definition-container {
+    display: grid !important;
+    grid-template-columns: 1.25fr 0.75fr !important;
+    gap: 50px !important;
+    align-items: start !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-content-wrapper {
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-appreciated-box {
+    background: var(--medi-bg-white) !important;
+    border-radius: 16px !important;
+    padding: 28px 32px !important;
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.04) !important;
+    border: 1px solid rgba(39, 68, 114, 0.06) !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 0 !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-appreciated-box:hover {
+    transform: translateX(6px) !important;
+    border-color: var(--medi-navy) !important;
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08) !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-subheading {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: var(--medi-navy) !important;
+    border-bottom: 2px solid var(--medi-bg-soft) !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 16px !important;
+}
+
+.vmc-destinations-custom-override .medi-feature-check-icon {
+    color: var(--medi-green) !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-visual-wrapper {
+    position: sticky !important;
+    top: 40px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-main-image {
+    border-radius: 24px !important;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.15) !important;
+    border: 6px solid var(--medi-bg-white) !important;
+    width: 100% !important;
+    height: 580px !important;
+    object-fit: cover !important;
+    transition: transform 0.5s ease !important;
+}
+
+.vmc-destinations-custom-override .medi-luxury-main-image:hover {
+    transform: scale(1.02) !important;
+}
+
+@media (max-width: 1024px) {
+    .vmc-destinations-custom-override .medi-luxury-definition-container {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+    .vmc-destinations-custom-override .medi-luxury-visual-wrapper {
+        position: relative !important;
+        top: 0 !important;
+    }
+    .vmc-destinations-custom-override .medi-luxury-main-image {
+        height: 400px !important;
+    }
+}
+
+
+/* ----------------------------------------------------------
+   WHO SHOULD / WHO SHOULD NOT TAKE VIKING (REDESIGN)
+---------------------------------------------------------- */
+.vmc-traveler-section {
+    background: var(--medi-bg-white) !important;
+    padding: 100px 20px !important;
+}
+
+.vmc-traveler-grid {
+    gap: 36px !important;
+}
+
+.vmc-traveler-card {
+    border-radius: 24px !important;
+    padding: 44px !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.vmc-traveler-card:hover {
+    transform: translateY(-6px) !important;
+}
+
+.vmc-traveler-card.yes {
+    background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 100%) !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.15) !important;
+}
+
+.vmc-traveler-card.no {
+    background: var(--medi-bg-white) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03) !important;
+}
+
+.vmc-traveler-card.no:hover {
+    border-color: var(--medi-navy) !important;
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08) !important;
+}
+
+.vmc-traveler-card-heading {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 28px !important;
+}
+
+.vmc-traveler-list {
+    gap: 16px !important;
+}
+
+.vmc-traveler-list li {
+    font-size: 15.5px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    transition: all 0.2s ease !important;
+}
+
+.vmc-traveler-card:hover .vmc-traveler-list li {
+    transform: translateX(4px);
+}
+
+.vmc-traveler-list svg {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .vmc-traveler-card {
+        padding: 30px !important;
+    }
+}

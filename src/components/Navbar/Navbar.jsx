@@ -535,6 +535,16 @@ const Navbar = () => {
               >
                 Viking Christmas Market Cruises
               </NavLink>
+              
+              
+              <NavLink
+                to="/viking-mediterranean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Mediterranean Cruises
+              </NavLink>
+
             </div>
           </div>
         </div>
@@ -1080,6 +1090,14 @@ const Navbar = () => {
             >
               Viking Christmas Market Cruises
             </NavLink>
+
+             <NavLink
+                to="/viking-mediterranean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Mediterranean Cruises
+              </NavLink>
             <span className="mobile-dropdown-divider"></span>
           </div>
         </div>
