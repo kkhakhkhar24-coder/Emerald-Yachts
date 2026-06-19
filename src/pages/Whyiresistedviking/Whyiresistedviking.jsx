@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './WhyIResistedViking.css'
+import './Whyiresistedviking.css'
 
 // ── Hero slideshow images ──
 import hero1 from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-26.jpg'

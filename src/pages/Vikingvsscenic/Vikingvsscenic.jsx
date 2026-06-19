@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
-import './VikingVsScenic.css'
+import './Vikingvsscenic.css'
 
 import {
     Ship, MapPin, Star, CheckCircle, Anchor, Gem,
@@ -34,7 +34,6 @@ const SCENIC_ECLIPSE_IMG= scenicEclipseImg
 const DINING_IMG        = diningImg
 const ANGELA_IMG        = angelaImg
 
-
 /* ════════════════════════════════════════════════════════════ */
 
 function VikingVsScenic() {
@@ -51,16 +50,16 @@ function VikingVsScenic() {
 
     /* ── Quick Comparison Table rows (exact from doc) ── */
     const tableRows = [
-        { feature: 'Best For',         viking: 'Destination-focused travelers', scenic: 'All-inclusive luxury travelers', winnerCol: null },
-        { feature: 'Luxury Level',     viking: 'Upper Premium',                  scenic: 'Ultra Luxury',                  winnerCol: null },
-        { feature: 'River Cruises',    viking: 'Extensive Fleet',                scenic: 'Extensive Fleet',               winnerCol: null },
-        { feature: 'Ocean Cruises',    viking: 'Yes',                            scenic: 'Yes',                           winnerCol: null },
-        { feature: 'Included Excursions', viking: 'Yes',                         scenic: 'More Included',                 winnerCol: 'scenic' },
-        { feature: 'Butler Service',   viking: 'No',                             scenic: 'Yes (selected categories)',     winnerCol: 'scenic' },
-        { feature: 'Drinks Included',  viking: 'Partial',                        scenic: 'Extensive',                     winnerCol: 'scenic' },
-        { feature: 'Pricing',          viking: 'Lower',                          scenic: 'Higher',                        winnerCol: 'viking' },
-        { feature: 'Service',          viking: 'Excellent',                      scenic: 'Exceptional',                   winnerCol: 'scenic' },
-        { feature: 'Solo Travel',      viking: 'Good',                           scenic: 'Limited',                       winnerCol: 'viking' },
+        { feature: 'Best For', viking: 'Destination-focused travelers', scenic: 'All-inclusive luxury travelers', winnerCol: null },
+        { feature: 'Luxury Level', viking: 'Upper Premium', scenic: 'Ultra Luxury', winnerCol: null },
+        { feature: 'River Cruises', viking: 'Extensive Fleet', scenic: 'Extensive Fleet', winnerCol: null },
+        { feature: 'Ocean Cruises', viking: 'Yes', scenic: 'Yes', winnerCol: null },
+        { feature: 'Included Excursions', viking: 'Yes', scenic: 'More Included', winnerCol: 'scenic' },
+        { feature: 'Butler Service', viking: 'No', scenic: 'Yes (selected categories)', winnerCol: 'scenic' },
+        { feature: 'Drinks Included', viking: 'Partial', scenic: 'Extensive', winnerCol: 'scenic' },
+        { feature: 'Pricing', viking: 'Lower', scenic: 'Higher', winnerCol: 'viking' },
+        { feature: 'Service', viking: 'Excellent', scenic: 'Exceptional', winnerCol: 'scenic' },
+        { feature: 'Solo Travel', viking: 'Good', scenic: 'Limited', winnerCol: 'viking' },
     ]
 
     /* ── Head-to-head category data (exact from doc) ── */
@@ -402,8 +401,8 @@ function VikingVsScenic() {
                                     {row.winnerCol === 'scenic'
                                         ? <span className="vvs-table-pill winner">{row.scenic}</span>
                                         : row.winnerCol === null && row.viking === row.scenic
-                                        ? <span className="vvs-table-pill tie">{row.scenic}</span>
-                                        : row.scenic}
+                                            ? <span className="vvs-table-pill tie">{row.scenic}</span>
+                                            : row.scenic}
                                 </span>
                             </div>
                         ))}
