@@ -84,6 +84,7 @@ import Vikingmediterraneancruises from "./pages/Vikingmediterraneancruises/Vikin
 import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises"
 import VikingIcelandCruises from "./pages/VikingIcelandCruises/VikingIcelandCruises"
 import VikingVsAmaWaterways from "./pages/VikingVsAmaWaterways/VikingVsAmaWaterways";
+import VikingVsTauck from "./pages/VikingVsTauck/VikingVsTauck";
 
 function App() {
   return (
@@ -443,6 +444,11 @@ function App() {
           <Route
             path="/viking-vs-amawaterways"
             element={< VikingVsAmaWaterways />}
+          />
+
+          <Route
+            path="/viking-vs-tauck"
+            element={< VikingVsTauck />}
           />
 
         </Routes>

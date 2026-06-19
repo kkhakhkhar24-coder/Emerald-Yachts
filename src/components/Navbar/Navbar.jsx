@@ -568,6 +568,14 @@ const Navbar = () => {
               >
                 Viking vs AmaWaterways
               </NavLink>
+
+              <NavLink
+                to="/viking-vs-tauck"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Tauck
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1145,6 +1153,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Viking vs AmaWaterways
+            </NavLink>
+
+            <NavLink
+              to="/viking-vs-tauck"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking vs Tauck
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
