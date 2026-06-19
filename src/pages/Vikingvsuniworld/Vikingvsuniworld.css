@@ -1,0 +1,760 @@
+/* ════════════════════════════════════════════════════════════════════
+   VikingVsUniworld.css
+   New sections ONLY for the Viking vs Uniworld comparison page.
+   Uses ONLY existing --medi- CSS variables from AzamaraMediterraneanCruises.css
+   Breakpoints follow the same convention: 1024px (tablet) / 767px (mobile)
+   ════════════════════════════════════════════════════════════════════ */
+
+/* ── QUICK COMPARISON TABLE ─────────────────────────────────────────── */
+.vu-quick-compare-section {
+    background: var(--medi-bg-soft);
+    padding: 80px 20px;
+}
+
+.vu-quick-compare-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vu-quick-compare-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vu-quick-compare-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.vu-table-wrapper {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(15, 28, 46, 0.10);
+    -webkit-overflow-scrolling: touch;
+}
+
+.vu-compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 640px;
+    background: var(--medi-bg-white);
+}
+
+.vu-compare-table thead tr {
+    background: var(--medi-bg-dark);
+}
+
+.vu-compare-table th {
+    padding: 18px 20px;
+    color: #93c5fd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.vu-compare-table th.vu-th-feature {
+    color: #ffffff;
+}
+
+.vu-compare-table tbody tr {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.vu-compare-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.vu-compare-table tbody tr:nth-child(even) {
+    background: var(--medi-bg-soft);
+}
+
+.vu-compare-table td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.vu-td-feature {
+    font-weight: 700;
+    color: var(--medi-bg-dark);
+    white-space: nowrap;
+}
+
+.vu-td-viking,
+.vu-td-uniworld {
+    font-weight: 600;
+}
+
+.vu-td-viking {
+    color: var(--medi-navy);
+}
+
+.vu-td-uniworld {
+    color: #7c3aed;
+}
+
+@media (max-width: 1024px) {
+    .vu-quick-compare-section {
+        padding: 64px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-quick-compare-section {
+        padding: 48px 16px;
+    }
+
+    .vu-compare-table th,
+    .vu-compare-table td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+/* ── BRAND OVERVIEW SPLIT (Viking / Uniworld side cards) ───────────── */
+.vu-overview-section {
+    background: var(--medi-bg-white);
+    padding: 80px 20px;
+}
+
+.vu-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vu-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.vu-overview-card {
+    border-radius: 20px;
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vu-overview-card.vu-card-viking {
+    background: var(--medi-bg-dark);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vu-overview-card.vu-card-uniworld {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+}
+
+.vu-overview-brand-name {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 6px;
+}
+
+.vu-card-viking .vu-overview-brand-name {
+    color: #ffffff;
+}
+
+.vu-card-uniworld .vu-overview-brand-name {
+    color: var(--medi-bg-dark);
+}
+
+.vu-overview-tagline {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 0 24px;
+}
+
+.vu-card-viking .vu-overview-tagline {
+    color: #93c5fd;
+}
+
+.vu-card-uniworld .vu-overview-tagline {
+    color: var(--medi-navy);
+}
+
+.vu-overview-divider {
+    width: 40px;
+    height: 3px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+}
+
+.vu-overview-desc {
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 24px;
+}
+
+.vu-card-viking .vu-overview-desc {
+    color: #cbd5e1;
+}
+
+.vu-card-uniworld .vu-overview-desc {
+    color: #475569;
+}
+
+.vu-overview-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vu-overview-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.vu-card-viking .vu-overview-checklist li {
+    color: #e2e8f0;
+}
+
+.vu-card-uniworld .vu-overview-checklist li {
+    color: #334155;
+}
+
+.vu-checklist-icon {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .vu-overview-section {
+        padding: 64px 20px;
+    }
+
+    .vu-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-overview-section {
+        padding: 48px 16px;
+    }
+
+    .vu-overview-card {
+        padding: 28px 24px;
+    }
+}
+
+/* ── CATEGORY VERSUS BLOCKS (Ships, Destinations, Excursions, Dining, Service, Inclusions, Pricing, Solo) ── */
+.vu-versus-section {
+    padding: 64px 20px;
+}
+
+.vu-versus-section.vu-bg-white {
+    background: var(--medi-bg-white);
+}
+
+.vu-versus-section.vu-bg-soft {
+    background: var(--medi-bg-soft);
+}
+
+.vu-versus-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vu-versus-heading-row {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vu-versus-heading-row h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--medi-bg-dark);
+    margin: 0 0 16px;
+}
+
+.vu-versus-bar {
+    width: 56px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin: 0 auto;
+}
+
+.vu-versus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.vu-versus-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 32px 28px;
+    border: 1px solid rgba(39, 68, 114, 0.10);
+    box-shadow: 0 4px 24px rgba(15, 28, 46, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.vu-versus-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.vu-versus-icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.vu-versus-icon-box.vu-icon-viking {
+    background: var(--medi-navy);
+}
+
+.vu-versus-icon-box.vu-icon-uniworld {
+    background: #7c3aed;
+}
+
+.vu-versus-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-bg-dark);
+    margin: 0;
+}
+
+.vu-versus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.vu-versus-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.vu-versus-list-icon {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vu-versus-card-note {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    padding-top: 14px;
+}
+
+.vu-winner-banner {
+    margin-top: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--medi-bg-dark);
+    border-radius: 12px;
+    padding: 16px 24px;
+}
+
+.vu-winner-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #93c5fd;
+}
+
+.vu-winner-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.vu-winner-banner.vu-winner-tie {
+    background: var(--medi-navy);
+}
+
+@media (max-width: 1024px) {
+    .vu-versus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-versus-section {
+        padding: 48px 16px;
+    }
+
+    .vu-versus-heading-row h2 {
+        font-size: 26px;
+    }
+
+    .vu-versus-card {
+        padding: 24px 22px;
+    }
+}
+
+/* ── INCLUSIONS DUAL CHECKLIST ──────────────────────────────────────── */
+.vu-inclusions-section {
+    background: var(--medi-bg-dark);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vu-inclusions-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(39, 68, 114, 0.35) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.vu-inclusions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vu-inclusions-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.vu-inclusions-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.vu-inclusions-header h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+
+.vu-inclusions-bar {
+    width: 56px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin: 0 auto;
+}
+
+.vu-inclusions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.vu-inclusions-card {
+    border-radius: 18px;
+    padding: 36px 32px;
+}
+
+.vu-inclusions-card.vu-incl-viking {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.vu-inclusions-card.vu-incl-uniworld {
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+.vu-inclusions-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 22px;
+}
+
+.vu-incl-viking h3 {
+    color: #93c5fd;
+}
+
+.vu-incl-uniworld h3 {
+    color: #c4b5fd;
+}
+
+.vu-inclusions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vu-inclusions-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.vu-inclusions-check {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .vu-inclusions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vu-inclusions-section {
+        padding: 64px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-inclusions-section {
+        padding: 48px 16px;
+    }
+
+    .vu-inclusions-header h2 {
+        font-size: 28px;
+    }
+
+    .vu-inclusions-card {
+        padding: 26px 22px;
+    }
+}
+
+/* ── WHO SHOULD CHOOSE (final decision split) ───────────────────────── */
+.vu-decision-section {
+    background: var(--medi-bg-soft);
+    padding: 80px 20px;
+}
+
+.vu-decision-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vu-decision-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vu-decision-header h2 {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--medi-bg-dark);
+    margin: 0 0 16px;
+}
+
+.vu-decision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.vu-decision-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    padding: 36px 32px;
+    box-shadow: 0 4px 28px rgba(15, 28, 46, 0.08);
+    border-top: 4px solid var(--medi-navy);
+}
+
+.vu-decision-card.vu-decision-uniworld {
+    border-top-color: #7c3aed;
+}
+
+.vu-decision-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--medi-bg-dark);
+    margin: 0 0 20px;
+}
+
+.vu-decision-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.vu-decision-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.vu-decision-check {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .vu-decision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vu-decision-section {
+        padding: 64px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-decision-section {
+        padding: 48px 16px;
+    }
+
+    .vu-decision-header h2 {
+        font-size: 26px;
+    }
+
+    .vu-decision-card {
+        padding: 26px 22px;
+    }
+}
+
+/* ── FINAL VERDICT ───────────────────────────────────────────────────── */
+.vu-verdict-section {
+    background: var(--medi-bg-white);
+    padding: 80px 20px;
+}
+
+.vu-verdict-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vu-verdict-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.vu-verdict-container h2 {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--medi-bg-dark);
+    margin: 0 0 20px;
+}
+
+.vu-verdict-bar {
+    width: 56px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin: 0 auto 32px;
+}
+
+.vu-verdict-text {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+.vu-verdict-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 36px;
+    text-align: left;
+}
+
+.vu-verdict-pill {
+    border-radius: 14px;
+    padding: 22px 24px;
+}
+
+.vu-verdict-pill.vu-pill-viking {
+    background: var(--medi-bg-soft);
+    border-left: 4px solid var(--medi-navy);
+}
+
+.vu-verdict-pill.vu-pill-uniworld {
+    background: #f5f3ff;
+    border-left: 4px solid #7c3aed;
+}
+
+.vu-verdict-pill strong {
+    display: block;
+    font-size: 15px;
+    color: var(--medi-bg-dark);
+    margin-bottom: 6px;
+}
+
+.vu-verdict-pill p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .vu-verdict-section {
+        padding: 64px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vu-verdict-section {
+        padding: 48px 16px;
+    }
+
+    .vu-verdict-container h2 {
+        font-size: 26px;
+    }
+
+    .vu-verdict-split {
+        grid-template-columns: 1fr;
+    }
+}

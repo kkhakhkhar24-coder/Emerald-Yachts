@@ -85,6 +85,9 @@ import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises
 import VikingIcelandCruises from "./pages/VikingIcelandCruises/VikingIcelandCruises"
 import VikingVsAmaWaterways from "./pages/VikingVsAmaWaterways/VikingVsAmaWaterways";
 import VikingVsTauck from "./pages/VikingVsTauck/VikingVsTauck";
+import Vikingvsscenic from "./pages/Vikingvsscenic/Vikingvsscenic";
+import Vikingvsuniworld from "./pages/Vikingvsuniworld/Vikingvsuniworld";
+import Whyiresistedviking from "./pages/Whyiresistedviking/Whyiresistedviking";
 
 function App() {
   return (
@@ -449,6 +452,21 @@ function App() {
           <Route
             path="/viking-vs-tauck"
             element={< VikingVsTauck />}
+          />
+
+           <Route
+            path="/viking-vs-scenic"
+            element={< Vikingvsscenic />}
+          />
+
+          <Route
+            path="/viking-vs-uniworld"
+            element={< Vikingvsuniworld />}
+          />
+
+          <Route
+            path="/why-i-resisted-viking-for-years"
+            element={< Whyiresistedviking />}
           />
 
         </Routes>

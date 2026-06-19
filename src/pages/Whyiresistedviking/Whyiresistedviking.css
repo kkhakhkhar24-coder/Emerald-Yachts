@@ -1,0 +1,1893 @@
+/* =============================================================
+   WhyIResistedViking.css
+   NEW SECTION STYLES ONLY — shared medi-* styles live in
+   AzamaraMediterraneanCruises.css
+   Color palette: strictly uses existing --medi-* variables
+   ============================================================= */
+
+/* ── SHARED HELPERS ─────────────────────────────────────────── */
+
+.vik-section-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.vik-eyebrow-light {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.vik-dark-heading {
+    color: #ffffff !important;
+}
+
+.vik-separator-muted {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* shared image frame */
+.vik-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    box-shadow: 0 24px 60px rgba(15, 28, 46, 0.14);
+}
+
+.vik-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vik-image-frame:hover .vik-frame-img {
+    transform: scale(1.04);
+}
+
+.vik-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.05) 60%);
+    z-index: 1;
+}
+
+.vik-frame-overlay-light {
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%) !important;
+}
+
+/* ── 1. CONFESSION OPENER ────────────────────────────────────── */
+
+.vik-confession-section {
+    background: var(--medi-bg-white);
+    padding: 96px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vik-confession-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vik-confession-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: center;
+}
+
+.vik-confession-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.vik-confession-opener {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 72px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+    color: var(--medi-navy);
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+}
+
+.vik-confession-lead {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #2d3748;
+    margin: 0 0 32px 0;
+    line-height: 1.35;
+}
+
+.vik-confession-body-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 36px;
+}
+
+.vik-confession-body-block p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+.vik-confession-reveal-box {
+    border-left: 4px solid var(--medi-navy);
+    padding: 20px 24px;
+    background: var(--medi-bg-soft);
+    border-radius: 0 12px 12px 0;
+}
+
+.vik-confession-reveal-line {
+    display: none;
+}
+
+.vik-confession-reveal-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.5;
+}
+
+.vik-confession-reveal-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Image column */
+.vik-confession-image-col {
+    position: relative;
+    height: 560px;
+}
+
+.vik-confession-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 28px 70px rgba(15, 28, 46, 0.16);
+}
+
+.vik-confession-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vik-confession-image-frame:hover .vik-confession-img {
+    transform: scale(1.04);
+}
+
+.vik-confession-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.5) 0%, transparent 55%);
+    z-index: 1;
+}
+
+.vik-confession-img-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.25);
+}
+
+/* ── 2. ASSUMPTIONS ──────────────────────────────────────────── */
+
+.vik-assumptions-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vik-assumptions-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(39, 68, 114, 0.4) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.vik-assumptions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vik-assumptions-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vik-assumptions-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    margin-bottom: 14px;
+}
+
+.vik-assumptions-intro {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 8px 0 0;
+    line-height: 1.6;
+}
+
+.vik-assumptions-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 52px;
+}
+
+.vik-assumption-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+    backdrop-filter: blur(8px);
+}
+
+.vik-assumption-card:hover {
+    background: rgba(39, 68, 114, 0.5);
+    border-color: rgba(39, 68, 114, 0.7);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.35);
+}
+
+.vik-assumption-num {
+    display: block;
+    font-size: 38px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.15);
+    line-height: 1;
+    margin-bottom: 14px;
+    font-family: Georgia, serif;
+}
+
+.vik-assumption-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.vik-assumptions-footer-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px 40px;
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.vik-assumptions-footer-box p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 8px 0;
+    line-height: 1.65;
+}
+
+.vik-assumptions-footer-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ── 3. MARKETING MACHINE ────────────────────────────────────── */
+
+.vik-marketing-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.vik-marketing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vik-marketing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.vik-marketing-lead {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.vik-marketing-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 24px 0;
+}
+
+.vik-channels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.vik-channel-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.vik-channel-item:hover {
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--medi-navy);
+}
+
+.vik-channel-icon-box {
+    width: 38px;
+    height: 38px;
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vik-marketing-insight-box {
+    border-left: 4px solid var(--medi-navy);
+    padding: 18px 22px;
+    background: var(--medi-bg-white);
+    border-radius: 0 10px 10px 0;
+}
+
+.vik-marketing-insight-box p {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 10px 0;
+    line-height: 1.7;
+}
+
+.vik-marketing-insight-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.vik-marketing-image-col {
+    height: 500px;
+}
+
+/* ── 4. LUXURY PIVOT ─────────────────────────────────────────── */
+
+.vik-luxury-pivot-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.vik-luxury-pivot-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vik-pivot-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vik-pivot-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 6px 0;
+}
+
+.vik-pivot-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0;
+}
+
+.vik-luxury-pivot-grid {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+/* Brands column */
+.vik-brands-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vik-brands-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.vik-brand-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.vik-brand-chip svg {
+    color: var(--medi-navy);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.vik-comparison-caveat {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.vik-comparison-clarify {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Arrow divider */
+.vik-pivot-arrow-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vik-pivot-arrow-circle {
+    width: 56px;
+    height: 56px;
+    background: var(--medi-navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.25);
+}
+
+/* Affordable Luxury card */
+.vik-affordable-luxury-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.vik-al-card {
+    background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 100%);
+    border-radius: 20px;
+    padding: 40px 36px;
+    color: #ffffff;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.vik-al-card::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+}
+
+.vik-al-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vik-al-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.35;
+}
+
+.vik-al-body {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 10px 0;
+    line-height: 1.7;
+}
+
+.vik-al-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.vik-al-pillar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.vik-al-pillar-icon {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vik-al-footer-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 16px;
+}
+
+/* ── 5. REVELATION ───────────────────────────────────────────── */
+
+.vik-reveal-section {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vik-reveal-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transform: scale(1.05);
+    transition: transform 12s ease-out;
+}
+
+.vik-reveal-section:hover .vik-reveal-bg {
+    transform: scale(1);
+}
+
+.vik-reveal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 38, 0.78);
+    z-index: 1;
+}
+
+.vik-reveal-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.vik-reveal-eyebrow {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.vik-reveal-heading {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 72px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.vik-reveal-intro {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 36px 0;
+}
+
+.vik-reveal-descriptors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.vik-reveal-descriptor {
+    padding: 10px 28px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vik-reveal-descriptor:last-child {
+    border-right: none;
+}
+
+.vik-reveal-descriptor span {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.vik-reveal-observations {
+    margin-bottom: 32px;
+}
+
+.vik-reveal-observations p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 6px 0;
+}
+
+.vik-reveal-conclusion-box {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 28px 36px;
+    backdrop-filter: blur(10px);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.vik-reveal-conclusion-box p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 10px 0;
+    line-height: 1.65;
+}
+
+.vik-reveal-conclusion-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ── 6. SCANDINAVIAN DESIGN ──────────────────────────────────── */
+
+.vik-design-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.vik-design-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vik-design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.vik-design-image-col {
+    height: 560px;
+    position: relative;
+}
+
+.vik-design-frame {
+    height: 100%;
+}
+
+.vik-design-badge {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+.vik-design-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.5;
+}
+
+.vik-design-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 14px 0;
+    line-height: 1.75;
+}
+
+.vik-design-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 20px 0;
+}
+
+.vik-design-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.vik-design-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.vik-design-feature-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
+}
+
+.vik-design-quote-box {
+    border-left: 4px solid var(--medi-navy);
+    padding: 16px 20px;
+    background: var(--medi-bg-white);
+    border-radius: 0 10px 10px 0;
+}
+
+.vik-design-quote-box p {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.65;
+    font-weight: 500;
+}
+
+/* ── 7. ADULTS-ONLY ──────────────────────────────────────────── */
+
+.vik-adults-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+}
+
+.vik-adults-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vik-adults-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.vik-adults-lead {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.vik-adults-body {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 10px 0;
+    line-height: 1.7;
+}
+
+.vik-adults-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 18px 0;
+}
+
+.vik-no-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vik-no-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.vik-no-icon {
+    width: 28px;
+    height: 28px;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fca5a5;
+    flex-shrink: 0;
+}
+
+.vik-adults-result-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 22px 26px;
+}
+
+.vik-adults-result-box p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 8px 0;
+    line-height: 1.65;
+}
+
+.vik-adults-result-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.vik-adults-image-col {
+    height: 520px;
+}
+
+/* ── 8. DESTINATION FOCUS ────────────────────────────────────── */
+
+.vik-destination-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.vik-destination-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vik-destination-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.vik-destination-lead {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 28px 0;
+    line-height: 1.6;
+}
+
+.vik-destination-contrast-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+}
+
+.vik-contrast-item {
+    flex: 1;
+    text-align: center;
+}
+
+.vik-contrast-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #4a5568;
+    margin-bottom: 6px;
+    opacity: 0.75;
+}
+
+.vik-contrast-value {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.vik-contrast-other .vik-contrast-value {
+    color: #718096;
+}
+
+.vik-contrast-viking .vik-contrast-value {
+    color: var(--medi-navy);
+}
+
+.vik-contrast-divider {
+    color: var(--medi-navy);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.vik-destination-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 18px 0;
+}
+
+.vik-destination-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.vik-destination-pillar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.vik-destination-pillar:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vik-destination-pillar:hover .vik-destination-pillar-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.vik-destination-pillar-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--medi-bg-white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.vik-destination-quote-box {
+    border-left: 4px solid var(--medi-navy);
+    padding: 18px 22px;
+    background: var(--medi-bg-soft);
+    border-radius: 0 12px 12px 0;
+}
+
+.vik-destination-quote-box p {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 8px 0;
+    line-height: 1.7;
+}
+
+.vik-destination-quote-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.vik-destination-image-col {
+    height: 560px;
+    position: relative;
+}
+
+.vik-destination-frame {
+    height: 100%;
+}
+
+/* ── 9. INCLUSIONS ───────────────────────────────────────────── */
+
+.vik-inclusions-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.vik-inclusions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vik-inclusions-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vik-inclusions-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.vik-inclusions-sub {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 4px 0;
+    line-height: 1.65;
+}
+
+.vik-inclusions-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 44px;
+}
+
+.vik-inclusion-card {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.04);
+}
+
+.vik-inclusion-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+    border-color: var(--medi-navy);
+}
+
+.vik-inclusion-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s ease;
+}
+
+.vik-inclusion-card:hover .vik-inclusion-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vik-inclusion-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    line-height: 1.35;
+    text-align: center;
+}
+
+.vik-inclusions-image-row {
+    position: relative;
+    height: 360px;
+}
+
+.vik-inclusions-frame {
+    height: 100%;
+}
+
+.vik-inclusions-img-callout {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    z-index: 2;
+    white-space: nowrap;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.3);
+    max-width: 90%;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+}
+
+.vik-inclusions-img-callout svg {
+    flex-shrink: 0;
+}
+
+/* ── 10. WHAT SURPRISED ME MOST ──────────────────────────────── */
+
+.vik-surprise-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.vik-surprise-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vik-surprise-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vik-surprise-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 16px 0 0;
+    line-height: 1.6;
+}
+
+.vik-surprise-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.vik-surprise-card {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    border-radius: 18px;
+    padding: 32px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.vik-surprise-card:hover {
+    background: var(--medi-navy);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 48px rgba(39, 68, 114, 0.2);
+    border-color: var(--medi-navy);
+}
+
+.vik-surprise-card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--medi-bg-white);
+    color: var(--medi-navy);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 14px rgba(39, 68, 114, 0.08);
+}
+
+.vik-surprise-card:hover .vik-surprise-card-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.vik-surprise-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+    transition: color 0.35s ease;
+}
+
+.vik-surprise-card:hover .vik-surprise-card-title {
+    color: #ffffff;
+}
+
+.vik-surprise-card-text {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.65;
+    transition: color 0.35s ease;
+}
+
+.vik-surprise-card:hover .vik-surprise-card-text {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* ── 11. LIMITS / DOESN'T DO BEST ───────────────────────────── */
+
+.vik-limits-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vik-limits-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 100%, rgba(39, 68, 114, 0.35) 0%, transparent 60%);
+    z-index: 0;
+}
+
+.vik-limits-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vik-limits-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.vik-limits-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.vik-limits-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 4px 0;
+    line-height: 1.65;
+}
+
+.vik-limits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.vik-limit-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 36px 28px;
+    backdrop-filter: blur(10px);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vik-limit-card:hover {
+    background: rgba(39, 68, 114, 0.4);
+    border-color: rgba(39, 68, 114, 0.7);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.4);
+}
+
+.vik-limit-card-icon-wrap {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.vik-limit-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 14px 0;
+    line-height: 1.35;
+}
+
+.vik-limit-card-body {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 18px 0;
+    line-height: 1.7;
+}
+
+.vik-limit-alt-brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vik-limit-brand-chip {
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* ── 12. FINAL VERDICT ───────────────────────────────────────── */
+
+.vik-verdict-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 50%, var(--medi-bg-dark) 100%);
+    padding: 96px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.vik-verdict-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 65%);
+    z-index: 0;
+}
+
+.vik-verdict-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vik-verdict-eyebrow-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 20px;
+}
+
+.vik-verdict-eyebrow-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+}
+
+.vik-verdict-heading {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 56px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.vik-verdict-separator {
+    width: 80px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 0 auto 44px;
+    border-radius: 2px;
+}
+
+.vik-verdict-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px 48px;
+    margin-bottom: 44px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+}
+
+.vik-verdict-body {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 14px 0;
+    line-height: 1.75;
+}
+
+.vik-verdict-body:last-child {
+    margin-bottom: 0;
+}
+
+.vik-verdict-emphasis {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.vik-verdict-conclusion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.vik-verdict-conclusion-line {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.vik-verdict-final-stmt {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    line-height: 1.55;
+}
+
+.vik-verdict-final-stmt:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.vik-verdict-final-stmt:last-of-type {
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: TABLET  (max-width: 1024px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+    /* Confession */
+    .vik-confession-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .vik-confession-image-col {
+        height: 420px;
+        order: -1;
+    }
+    .vik-confession-opener {
+        font-size: 56px;
+    }
+    .vik-confession-lead {
+        font-size: 22px;
+    }
+
+    /* Assumptions */
+    .vik-assumptions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    /* Marketing */
+    .vik-marketing-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .vik-marketing-image-col {
+        height: 380px;
+    }
+
+    /* Luxury Pivot */
+    .vik-luxury-pivot-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .vik-pivot-arrow-col {
+        order: 2;
+        transform: rotate(90deg);
+    }
+    .vik-brands-chips {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Design */
+    .vik-design-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .vik-design-image-col {
+        height: 380px;
+        order: -1;
+    }
+
+    /* Adults */
+    .vik-adults-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .vik-adults-image-col {
+        height: 380px;
+    }
+
+    /* Destination */
+    .vik-destination-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .vik-destination-image-col {
+        height: 380px;
+    }
+
+    /* Inclusions */
+    .vik-inclusions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .vik-inclusions-image-row {
+        height: 300px;
+    }
+
+    /* Surprise */
+    .vik-surprise-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    /* Limits */
+    .vik-limits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Verdict */
+    .vik-verdict-heading {
+        font-size: 44px;
+    }
+    .vik-verdict-card {
+        padding: 32px 36px;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: MOBILE  (max-width: 767px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+
+    /* Confession */
+    .vik-confession-section {
+        padding: 64px 16px;
+    }
+    .vik-confession-opener {
+        font-size: 44px;
+    }
+    .vik-confession-lead {
+        font-size: 20px;
+    }
+    .vik-confession-body-block p {
+        font-size: 15px;
+    }
+    .vik-confession-image-col {
+        height: 340px;
+    }
+
+    /* Assumptions */
+    .vik-assumptions-section {
+        padding: 64px 16px;
+    }
+    .vik-assumptions-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .vik-assumption-card:last-child {
+        grid-column: span 2;
+    }
+    .vik-assumption-num {
+        font-size: 30px;
+    }
+
+    /* Marketing */
+    .vik-marketing-section {
+        padding: 64px 16px;
+    }
+    .vik-channels-grid {
+        grid-template-columns: 1fr;
+    }
+    .vik-marketing-image-col {
+        height: 280px;
+    }
+
+    /* Luxury Pivot */
+    .vik-luxury-pivot-section {
+        padding: 64px 16px;
+    }
+    .vik-brands-chips {
+        grid-template-columns: 1fr;
+    }
+    .vik-al-pillars {
+        grid-template-columns: 1fr;
+    }
+    .vik-al-card {
+        padding: 28px 24px;
+    }
+    .vik-pivot-arrow-col {
+        display: none;
+    }
+
+    /* Revelation */
+    .vik-reveal-section {
+        min-height: 550px;
+    }
+    .vik-reveal-heading {
+        font-size: 48px;
+    }
+    .vik-reveal-descriptors {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .vik-reveal-descriptor {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 10px 0;
+    }
+    .vik-reveal-descriptor:last-child {
+        border-bottom: none;
+    }
+    .vik-reveal-descriptor span {
+        font-size: 22px;
+    }
+    .vik-reveal-conclusion-box {
+        padding: 22px 20px;
+    }
+
+    /* Design */
+    .vik-design-section {
+        padding: 64px 16px;
+    }
+    .vik-design-image-col {
+        height: 300px;
+    }
+
+    /* Adults */
+    .vik-adults-section {
+        padding: 64px 16px;
+    }
+    .vik-adults-image-col {
+        height: 300px;
+    }
+
+    /* Destination */
+    .vik-destination-section {
+        padding: 64px 16px;
+    }
+    .vik-destination-contrast-box {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .vik-contrast-divider {
+        transform: rotate(90deg);
+    }
+    .vik-destination-pillars {
+        grid-template-columns: 1fr;
+    }
+    .vik-destination-image-col {
+        height: 300px;
+    }
+
+    /* Inclusions */
+    .vik-inclusions-section {
+        padding: 64px 16px;
+    }
+    .vik-inclusions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .vik-inclusions-grid > *:last-child {
+        grid-column: span 2;
+    }
+    .vik-inclusions-image-row {
+        height: 240px;
+    }
+    .vik-inclusions-img-callout {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+    /* Surprise */
+    .vik-surprise-section {
+        padding: 64px 16px;
+    }
+    .vik-surprise-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .vik-surprise-grid > *:last-child {
+        grid-column: span 2;
+    }
+
+    /* Limits */
+    .vik-limits-section {
+        padding: 64px 16px;
+    }
+
+    /* Verdict */
+    .vik-verdict-section {
+        padding: 64px 16px;
+    }
+    .vik-verdict-heading {
+        font-size: 36px;
+    }
+    .vik-verdict-card {
+        padding: 24px 22px;
+        text-align: left;
+    }
+    .vik-verdict-body {
+        font-size: 16px;
+    }
+    .vik-verdict-emphasis {
+        font-size: 22px;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: SMALL MOBILE  (max-width: 360px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 360px) {
+
+    .vik-confession-opener {
+        font-size: 36px !important;
+    }
+    .vik-confession-lead {
+        font-size: 17px !important;
+    }
+    .vik-confession-image-col {
+        height: 260px !important;
+    }
+    .vik-assumption-card:last-child {
+        grid-column: span 1 !important;
+    }
+    .vik-assumptions-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .vik-surprise-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .vik-surprise-grid > *:last-child {
+        grid-column: span 1 !important;
+    }
+    .vik-inclusions-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .vik-inclusions-grid > *:last-child {
+        grid-column: span 1 !important;
+    }
+    .vik-reveal-heading {
+        font-size: 34px !important;
+    }
+    .vik-verdict-heading {
+        font-size: 30px !important;
+    }
+    .vik-verdict-card {
+        padding: 20px 16px !important;
+    }
+    .vik-limit-card {
+        padding: 24px 20px !important;
+    }
+    .vik-al-card {
+        padding: 22px 18px !important;
+    }
+    .vik-brands-chips {
+        grid-template-columns: 1fr !important;
+    }
+}

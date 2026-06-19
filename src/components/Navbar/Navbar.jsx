@@ -576,6 +576,32 @@ const Navbar = () => {
               >
                 Viking vs Tauck
               </NavLink>
+
+              <NavLink
+                to="/viking-vs-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Scenic
+              </NavLink>
+
+              <NavLink
+                to="/viking-vs-uniworld"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Uniwold
+              </NavLink>
+
+              <NavLink
+                to="/why-i-resisted-viking-for-years"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why I Resisted Viking for Years
+              </NavLink>
+
+
             </div>
           </div>
         </div>
@@ -1162,6 +1188,30 @@ const Navbar = () => {
             >
               Viking vs Tauck
             </NavLink>
+
+             <NavLink
+                to="/viking-vs-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Scenic
+              </NavLink>
+
+              <NavLink
+                to="/viking-vs-uniworld"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking vs Uniwold
+              </NavLink>
+
+              <NavLink
+                to="/why-i-resisted-viking-for-years"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why I Resisted Viking for Years
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

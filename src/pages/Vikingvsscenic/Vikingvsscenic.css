@@ -1,0 +1,1137 @@
+/* ============================================================
+   VikingVsScenic — NEW SECTION STYLES
+   Only uses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   Fully responsive: Desktop (>1024px) / Tablet (768-1024px) / Mobile (<768px)
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   QUICK COMPARISON TABLE
+---------------------------------------------------------- */
+.vvs-table-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vvs-table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.vvs-table-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vvs-table-wrapper {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.vvs-table-head {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    background: var(--medi-navy);
+    padding: 18px 32px;
+    gap: 16px;
+}
+
+.vvs-table-head-cell {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.vvs-table-head-cell.center {
+    text-align: center;
+}
+
+.vvs-table-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 16px 32px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.2s ease;
+}
+
+.vvs-table-row:last-child {
+    border-bottom: none;
+}
+
+.vvs-table-row:nth-child(even) {
+    background: rgba(231, 243, 245, 0.35);
+}
+
+.vvs-table-row:hover {
+    background: rgba(39, 68, 114, 0.05);
+}
+
+.vvs-table-feature {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.vvs-table-cell {
+    font-size: 14px;
+    color: #374151;
+    text-align: center;
+}
+
+.vvs-table-pill {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 30px;
+}
+
+.vvs-table-pill.winner {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vvs-table-pill.tie {
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.2);
+}
+
+/* ----------------------------------------------------------
+   OVERVIEW PANELS — two cruise line intro cards
+---------------------------------------------------------- */
+.vvs-overview-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.vvs-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vvs-overview-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vvs-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.vvs-overview-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.vvs-overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(39, 68, 114, 0.12);
+}
+
+.vvs-overview-card-header {
+    padding: 28px 30px 22px;
+    background: var(--medi-navy);
+}
+
+.vvs-overview-card-header.scenic {
+    background: var(--medi-bg-dark);
+}
+
+.vvs-overview-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 8px 0;
+}
+
+.vvs-overview-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.vvs-overview-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.vvs-overview-img-wrap {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.vvs-overview-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vvs-overview-card:hover .vvs-overview-img-wrap img {
+    transform: scale(1.05);
+}
+
+.vvs-overview-body {
+    padding: 26px 30px;
+}
+
+.vvs-overview-founded {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.vvs-overview-desc {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+}
+
+.vvs-overview-operations-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+}
+
+.vvs-overview-ops-list {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vvs-overview-ops-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.vvs-overview-ops-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.vvs-overview-features-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+}
+
+.vvs-overview-features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vvs-overview-features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.vvs-overview-features-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   SHIPS & ACCOMMODATIONS
+---------------------------------------------------------- */
+.vvs-ships-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vvs-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vvs-ships-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vvs-ships-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.vvs-ship-panel {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.vvs-ship-panel-header {
+    background: var(--medi-navy);
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vvs-ship-panel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vvs-ship-panel-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.vvs-ship-panel-body {
+    padding: 24px 28px;
+    background: var(--medi-bg-soft);
+}
+
+.vvs-ship-sub-heading {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+}
+
+.vvs-ship-sub-heading.mt {
+    margin-top: 20px;
+}
+
+.vvs-ship-feature-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vvs-ship-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.vvs-ship-feature-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-ship-advantage-box {
+    margin-top: 20px;
+    background: var(--medi-navy);
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vvs-ship-advantage-box svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+}
+
+.vvs-ship-advantage-text {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ----------------------------------------------------------
+   CATEGORY-BY-CATEGORY HEAD-TO-HEAD (tabbed)
+   Destinations, Excursions, Dining, Service, Pricing, Solo
+---------------------------------------------------------- */
+.vvs-headtohead-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.vvs-headtohead-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vvs-headtohead-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vvs-category-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.vvs-category-tab-btn {
+    padding: 11px 24px;
+    border-radius: 40px;
+    border: 2px solid rgba(39, 68, 114, 0.18);
+    background: transparent;
+    color: var(--medi-navy);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+}
+
+.vvs-category-tab-btn.active {
+    background: var(--medi-navy);
+    border-color: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vvs-category-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.vvs-category-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    padding: 32px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.vvs-category-card.winner-card {
+    border: 2px solid var(--medi-navy);
+    background: var(--medi-bg-dark);
+}
+
+.vvs-winner-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 6px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.vvs-category-card-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+    opacity: 0.7;
+}
+
+.vvs-category-card.winner-card .vvs-category-card-brand {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.vvs-category-card:not(.winner-card) .vvs-category-card-brand {
+    color: var(--medi-navy);
+}
+
+.vvs-category-card-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 18px 0;
+}
+
+.vvs-category-card.winner-card .vvs-category-card-heading {
+    color: #ffffff;
+}
+
+.vvs-category-card:not(.winner-card) .vvs-category-card-heading {
+    color: var(--medi-navy);
+}
+
+.vvs-category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.vvs-category-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.vvs-category-card.winner-card .vvs-category-list li {
+    color: #cbd5e1;
+}
+
+.vvs-category-card:not(.winner-card) .vvs-category-list li {
+    color: #374151;
+}
+
+.vvs-category-card.winner-card .vvs-category-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-category-card:not(.winner-card) .vvs-category-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-category-winner-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--medi-green);
+}
+
+.vvs-category-tie-note {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 14px;
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-top: 24px;
+    grid-column: 1 / -1;
+}
+
+/* ----------------------------------------------------------
+   RIVER CRUISES SPLIT
+---------------------------------------------------------- */
+.vvs-river-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vvs-river-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.vvs-river-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vvs-river-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.vvs-river-card {
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.vvs-river-card.viking {
+    background: var(--medi-navy);
+}
+
+.vvs-river-card.scenic {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.vvs-river-card-heading {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vvs-river-card.viking .vvs-river-card-heading {
+    color: #ffffff;
+}
+
+.vvs-river-card.scenic .vvs-river-card-heading {
+    color: var(--medi-navy);
+}
+
+.vvs-river-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vvs-river-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.vvs-river-card.viking .vvs-river-list li {
+    color: #cbd5e1;
+}
+
+.vvs-river-card.scenic .vvs-river-list li {
+    color: #374151;
+}
+
+.vvs-river-card.viking .vvs-river-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-river-card.scenic .vvs-river-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   OCEAN CRUISES COMPARISON (image + content split)
+---------------------------------------------------------- */
+.vvs-ocean-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.vvs-ocean-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vvs-ocean-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vvs-ocean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.vvs-ocean-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.vvs-ocean-card:hover {
+    box-shadow: 0 14px 40px rgba(39, 68, 114, 0.1);
+    transform: translateY(-4px);
+}
+
+.vvs-ocean-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.vvs-ocean-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vvs-ocean-card:hover .vvs-ocean-img-wrap img {
+    transform: scale(1.05);
+}
+
+.vvs-ocean-winner-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.vvs-ocean-body {
+    padding: 26px 28px;
+}
+
+.vvs-ocean-brand {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 6px 0;
+}
+
+.vvs-ocean-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 14px 0;
+}
+
+.vvs-ocean-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vvs-ocean-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.vvs-ocean-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   FINAL VERDICT
+---------------------------------------------------------- */
+.vvs-verdict-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.vvs-verdict-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vvs-verdict-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.vvs-verdict-lead {
+    text-align: center;
+    font-size: 17px;
+    color: #475569;
+    max-width: 800px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+}
+
+.vvs-verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.vvs-verdict-card {
+    border-radius: 18px;
+    padding: 34px;
+}
+
+.vvs-verdict-card.viking {
+    background: var(--medi-navy);
+}
+
+.vvs-verdict-card.scenic {
+    background: var(--medi-bg-soft);
+    border: 2px solid var(--medi-navy);
+}
+
+.vvs-verdict-card-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.vvs-verdict-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vvs-verdict-card.viking .vvs-verdict-icon-box {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.vvs-verdict-card.scenic .vvs-verdict-icon-box {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.vvs-verdict-card-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.vvs-verdict-card.viking .vvs-verdict-card-heading {
+    color: #ffffff;
+}
+
+.vvs-verdict-card.scenic .vvs-verdict-card-heading {
+    color: var(--medi-navy);
+}
+
+.vvs-verdict-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vvs-verdict-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.vvs-verdict-card.viking .vvs-verdict-list li {
+    color: #cbd5e1;
+}
+
+.vvs-verdict-card.scenic .vvs-verdict-list li {
+    color: #374151;
+}
+
+.vvs-verdict-card.viking .vvs-verdict-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-verdict-card.scenic .vvs-verdict-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vvs-verdict-summary-box {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 16px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.05);
+}
+
+.vvs-verdict-summary-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vvs-verdict-summary-text {
+    font-size: 15.5px;
+    color: #2d3748;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS — 3 SCREENS
+   ============================================================ */
+
+/* ---------------- TABLET (≤1024px) ---------------- */
+@media (max-width: 1024px) {
+
+    .vvs-overview-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .vvs-ships-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto 32px;
+    }
+
+    .vvs-category-panel {
+        gap: 20px;
+    }
+
+    .vvs-river-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .vvs-ocean-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .vvs-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto 32px;
+    }
+
+    .vvs-table-section,
+    .vvs-overview-section,
+    .vvs-ships-section,
+    .vvs-headtohead-section,
+    .vvs-river-section,
+    .vvs-ocean-section,
+    .vvs-verdict-section {
+        padding: 70px 24px;
+    }
+
+    .vvs-table-row,
+    .vvs-table-head {
+        padding: 14px 20px;
+    }
+}
+
+/* ---------------- MOBILE (≤768px) ---------------- */
+@media (max-width: 768px) {
+
+    .vvs-table-wrapper {
+        border-radius: 14px;
+        overflow-x: auto;
+    }
+
+    .vvs-table-head {
+        grid-template-columns: 1.2fr 1fr 1fr;
+        padding: 14px 16px;
+        gap: 10px;
+        min-width: 460px;
+    }
+
+    .vvs-table-head-cell {
+        font-size: 11px;
+    }
+
+    .vvs-table-row {
+        grid-template-columns: 1.2fr 1fr 1fr;
+        padding: 12px 16px;
+        gap: 10px;
+        min-width: 460px;
+    }
+
+    .vvs-table-feature {
+        font-size: 13px;
+    }
+
+    .vvs-table-cell {
+        font-size: 12.5px;
+    }
+
+    .vvs-table-pill {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .vvs-overview-grid,
+    .vvs-ships-grid,
+    .vvs-river-grid,
+    .vvs-ocean-grid,
+    .vvs-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .vvs-category-panel {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .vvs-category-tabs {
+        gap: 8px;
+    }
+
+    .vvs-category-tab-btn {
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+
+    .vvs-category-card,
+    .vvs-river-card,
+    .vvs-verdict-card {
+        padding: 24px 20px;
+    }
+
+    .vvs-overview-card-header,
+    .vvs-overview-body {
+        padding: 22px 22px;
+    }
+
+    .vvs-ship-panel-body,
+    .vvs-ocean-body {
+        padding: 20px 22px;
+    }
+
+    .vvs-overview-img-wrap,
+    .vvs-ocean-img-wrap {
+        height: 180px;
+    }
+
+    .vvs-verdict-summary-box {
+        flex-direction: column;
+        padding: 22px 20px;
+    }
+
+    .vvs-verdict-summary-icon {
+        margin: 0;
+    }
+
+    .vvs-table-section,
+    .vvs-overview-section,
+    .vvs-ships-section,
+    .vvs-headtohead-section,
+    .vvs-river-section,
+    .vvs-ocean-section,
+    .vvs-verdict-section {
+        padding: 56px 16px;
+    }
+
+    .vvs-table-header,
+    .vvs-overview-header,
+    .vvs-ships-header,
+    .vvs-headtohead-header,
+    .vvs-river-header,
+    .vvs-ocean-header,
+    .vvs-verdict-header {
+        margin-bottom: 36px;
+    }
+}
+
+/* ---------------- SMALL MOBILE (≤480px) ---------------- */
+@media (max-width: 480px) {
+
+    .vvs-overview-title {
+        font-size: 19px;
+    }
+
+    .vvs-category-tab-btn {
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .vvs-ship-panel-header {
+        padding: 18px 18px;
+    }
+
+    .vvs-winner-badge {
+        font-size: 10px;
+        padding: 5px 14px;
+    }
+
+    .vvs-verdict-lead {
+        font-size: 15px;
+    }
+}
