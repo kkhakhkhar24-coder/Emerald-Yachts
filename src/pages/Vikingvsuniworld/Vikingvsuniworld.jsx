@@ -1,8 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
 import './VikingVsUniworld.css'
-// import Profile_AH from '../../assets/VikingVsUniworld/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/VikingVsUniworld/Profile_Picture_AH.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -14,12 +12,45 @@ import {
     UserCheck, Scale, Palette
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+// Import real images from assets
+import heroBg1 from '../../assets/Riverside-vs-Viking/Hero1.webp'
+import heroBg2 from '../../assets/Riverside-vs-Viking/Hero2.webp'
+import heroBg3 from '../../assets/Riverside-vs-Viking/Hero3.webp'
+
+import vikingOverviewImg from '../../assets/Riverside-vs-Viking/ImageGallary1.webp'
+import uniworldOverviewImg from '../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.webp'
+
+import vikingShipsImg from '../../assets/Riverside-vs-Viking/ImageGallary2.webp'
+import uniworldShipsImg from '../../assets/RiversideLuxuryCruises/Riversideimage2.webp'
+
+import vikingDiningImg from '../../assets/Riverside-vs-Viking/ImageGallary3.webp'
+import uniworldDiningImg from '../../assets/RiversideLuxuryCruises/Riversideimage3.webp'
+
+import vikingExcursionsImg from '../../assets/Riverside-vs-Viking/ImageGallary4.webp'
+import uniworldExcursionsImg from '../../assets/RiversideLuxuryCruises/Riversideimage4.webp'
+
+import vikingServiceImg from '../../assets/Riverside-vs-Viking/ImageGallary5.webp'
+import uniworldServiceImg from '../../assets/RiversideLuxuryCruises/Riversideimage5.webp'
+
+import Profile_AH from '../../assets/Media (2).jpg'
+import Profile_Picture_AH from '../../assets/Media (1).jpg'
 
 function VikingVsUniworld() {
 
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
     const mediToggleFaq = index => setMediActiveFaq(mediActiveFaq === index ? null : index)
+
+    const heroImages = [heroBg1, heroBg2, heroBg3]
+    const [currentHero, setCurrentHero] = useState(0)
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentHero(prev => (prev + 1) % heroImages.length)
+        }, 5000)
+        return () => clearInterval(timer)
+    }, [heroImages.length])
 
     // ── FAQ data — exact from doc ───────────────────────────────────────
     const mediFaqs = [
@@ -253,15 +284,16 @@ function VikingVsUniworld() {
             <Navbar />
 
             {/* ════════════════════════════════════════════════════════════
-                HERO  (medi-hero-section — static gradient, no images)
+                HERO  (medi-hero-section — with slideshow)
             ════════════════════════════════════════════════════════════ */}
-            <section
-                className="medi-hero-section"
-                style={{
-                    background: 'linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 55%, #274472 100%)',
-                    minHeight: '70vh'
-                }}
-            >
+            <section className="medi-hero-section">
+                {heroImages.map((img, idx) => (
+                    <div
+                        key={idx}
+                        className={`medi-hero-background ${currentHero === idx ? 'medi-active' : ''}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    />
+                ))}
                 <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag">
@@ -407,6 +439,9 @@ function VikingVsUniworld() {
                             <h3 className="vu-overview-brand-name">Viking</h3>
                             <p className="vu-overview-tagline">The largest river cruise company in the world</p>
                             <div className="vu-overview-divider"></div>
+                            <div style={{ width: '100%', height: '220px', borderRadius: '14px', overflow: 'hidden', margin: '20px 0', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                <img src={vikingOverviewImg} alt="Viking Ship Overview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <p className="vu-overview-desc">
                                 Viking has become the largest river cruise company in the world. The brand is known for:
                             </p>
@@ -424,6 +459,9 @@ function VikingVsUniworld() {
                             <h3 className="vu-overview-brand-name">Uniworld</h3>
                             <p className="vu-overview-tagline">Often considered one of the most luxurious river cruise brands in the world</p>
                             <div className="vu-overview-divider"></div>
+                            <div style={{ width: '100%', height: '220px', borderRadius: '14px', overflow: 'hidden', margin: '20px 0', border: '1px solid rgba(39,68,114,0.1)' }}>
+                                <img src={uniworldOverviewImg} alt="Uniworld Ship Overview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <p className="vu-overview-desc">
                                 Uniworld Boutique River Cruise Collection is known for:
                             </p>
@@ -455,6 +493,9 @@ function VikingVsUniworld() {
                                 <div className="vu-versus-icon-box vu-icon-viking"><Ship size={20} /></div>
                                 <h3 className="vu-versus-card-title">Viking Ships</h3>
                             </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={vikingShipsImg} alt="Viking Ships" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <ul className="vu-versus-list">
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>Viking Longships feature clean Scandinavian design</span></li>
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>Spacious public areas</span></li>
@@ -469,6 +510,9 @@ function VikingVsUniworld() {
                             <div className="vu-versus-card-header">
                                 <div className="vu-versus-icon-box vu-icon-uniworld"><Palette size={20} /></div>
                                 <h3 className="vu-versus-card-title">Uniworld Ships</h3>
+                            </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={uniworldShipsImg} alt="Uniworld Ships" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <ul className="vu-versus-list">
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>Every Uniworld ship is uniquely designed</span></li>
@@ -541,6 +585,9 @@ function VikingVsUniworld() {
                                 <div className="vu-versus-icon-box vu-icon-viking"><Compass size={20} /></div>
                                 <h3 className="vu-versus-card-title">Viking Excursions</h3>
                             </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={vikingExcursionsImg} alt="Viking Excursions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <ul className="vu-versus-list">
                                 {['One shore excursion in every port', 'Destination lectures', 'Cultural enrichment programs'].map((item, i) => (
                                     <li key={i}><CheckCircle size={15} className="vu-versus-list-icon" /><span>{item}</span></li>
@@ -552,6 +599,9 @@ function VikingVsUniworld() {
                             <div className="vu-versus-card-header">
                                 <div className="vu-versus-icon-box vu-icon-uniworld"><Compass size={20} /></div>
                                 <h3 className="vu-versus-card-title">Uniworld Excursions</h3>
+                            </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={uniworldExcursionsImg} alt="Uniworld Excursions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <ul className="vu-versus-list">
                                 {['Multiple excursion choices', 'Walking tours', 'Culinary experiences', 'Local cultural immersion'].map((item, i) => (
@@ -583,6 +633,9 @@ function VikingVsUniworld() {
                                 <div className="vu-versus-icon-box vu-icon-viking"><Utensils size={20} /></div>
                                 <h3 className="vu-versus-card-title">Viking Dining</h3>
                             </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={vikingDiningImg} alt="Viking Dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <ul className="vu-versus-list">
                                 {['Regional cuisine', 'Fresh ingredients', 'Destination-inspired menus'].map((item, i) => (
                                     <li key={i}><CheckCircle size={15} className="vu-versus-list-icon" /><span>{item}</span></li>
@@ -594,6 +647,9 @@ function VikingVsUniworld() {
                             <div className="vu-versus-card-header">
                                 <div className="vu-versus-icon-box vu-icon-uniworld"><Utensils size={20} /></div>
                                 <h3 className="vu-versus-card-title">Uniworld Dining</h3>
+                            </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={uniworldDiningImg} alt="Uniworld Dining" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <ul className="vu-versus-list">
                                 {['Farm-to-table cuisine', 'Premium wines', 'Locally sourced ingredients', 'Gourmet presentation'].map((item, i) => (
@@ -625,6 +681,9 @@ function VikingVsUniworld() {
                                 <div className="vu-versus-icon-box vu-icon-viking"><UserCheck size={20} /></div>
                                 <h3 className="vu-versus-card-title">Viking Service</h3>
                             </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={vikingServiceImg} alt="Viking Service" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <ul className="vu-versus-list">
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>Professional, friendly, and efficient service</span></li>
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>The larger fleet maintains impressive consistency</span></li>
@@ -634,6 +693,9 @@ function VikingVsUniworld() {
                             <div className="vu-versus-card-header">
                                 <div className="vu-versus-icon-box vu-icon-uniworld"><UserCheck size={20} /></div>
                                 <h3 className="vu-versus-card-title">Uniworld Service</h3>
+                            </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={uniworldServiceImg} alt="Uniworld Service" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <ul className="vu-versus-list">
                                 <li><CheckCircle size={15} className="vu-versus-list-icon" /><span>Renowned for highly personalized attention</span></li>
@@ -683,6 +745,39 @@ function VikingVsUniworld() {
                     </div>
                 </div>
             </section>
+
+              {/* ════════════════════════════════════════════════════════════
+                VIDEO — VIKING
+            ════════════════════════════════════════════════════════════ */}
+            <section className="vs-video-section">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Watch Viking River Cruises</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">See why Viking River Cruises is one of the world's most popular river cruise lines.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label">
+                            <Anchor size={16} />
+                            <span>Viking River Cruises</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/ZnDjcDZWjrc"
+                                title="Viking River Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
 
             {/* ════════════════════════════════════════════════════════════
                 PRICING  ← NEW SECTION
@@ -831,7 +926,7 @@ function VikingVsUniworld() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury River Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury River Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -921,7 +1016,7 @@ function VikingVsUniworld() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} /> */}
+                                <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -964,6 +1059,39 @@ function VikingVsUniworld() {
                 </div>
             </section>
 
+
+  {/* ════════════════════════════════════════════════════════════
+                VIDEO — UNIWORLD
+            ════════════════════════════════════════════════════════════ */}
+            <section className="vs-video-section vs-video-section-alt">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Watch Uniworld Boutique River Cruises</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">Discover the ultra-luxury boutique river cruise experience that Uniworld delivers.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label vs-video-label-scenic">
+                            <Crown size={16} />
+                            <span>Uniworld Boutique River Cruises</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/lvn69G9XnQI"
+                                title="Uniworld Boutique River Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
             {/* ════════════════════════════════════════════════════════════
                 FAQ  (medi-faq-main-section)
             ════════════════════════════════════════════════════════════ */}
@@ -988,6 +1116,11 @@ function VikingVsUniworld() {
                     </div>
                 </div>
             </section>
+
+          
+
+          
+
 
             {/* ════════════════════════════════════════════════════════════
                 CTA  (medi-cta-main-section)

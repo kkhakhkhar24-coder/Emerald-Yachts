@@ -1,19 +1,21 @@
 import Navbar from '../../components/Navbar/Navbar'
-// import './AzamaraMediterraneanCruises.css'
 import './WhyIResistedViking.css'
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-// import hero1 from '../../assets/WhyIResistedViking/hero1.jpg'
-// import hero2 from '../../assets/WhyIResistedViking/hero2.jpg'
-// import hero3 from '../../assets/WhyIResistedViking/hero3.jpg'
-// import vikingShipExterior from '../../assets/WhyIResistedViking/viking-ship-exterior.webp'
-// import vikingMarketing from '../../assets/WhyIResistedViking/viking-marketing.webp'
-// import vikingOnboard from '../../assets/WhyIResistedViking/viking-onboard-reveal.webp'
-// import vikingDesignInterior from '../../assets/WhyIResistedViking/viking-scandinavian-design.webp'
-// import vikingAdultsPool from '../../assets/WhyIResistedViking/viking-adults-pool.webp'
-// import vikingDestination from '../../assets/WhyIResistedViking/viking-destination.webp'
-// import vikingValue from '../../assets/WhyIResistedViking/viking-value.webp'
-// import vikingDining from '../../assets/WhyIResistedViking/viking-dining.webp'
+
+// ── Hero slideshow images ──
+import hero1 from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-26.jpg'
+import hero2 from '../../assets/Vikingmediterraneancruises/Aerial Mountains_2026-04-13_18-47-18.jpg'
+import hero3 from '../../assets/Vikingmediterraneancruises/Exterior_2026-04-13_19-02-39.jpg'
+import hero4 from '../../assets/Vikingalaskacruises/Expedition Ship - Antarctica_2026-04-13_19-00-59.jpg'
+
+// ── Section images ──
+import vikingShipExterior from '../../assets/AzamaravsVikingOcean/viking.webp'
+import vikingMarketing from '../../assets/AzamaravsVikingOcean/hero2.webp'
+import vikingOnboard from '../../assets/VikingIcelandCruises/Aquavit Terrace_2026-04-13_18-47-27.jpg'
+import vikingDesignInterior from '../../assets/Vikingalaskacruises/The Living Room_2026-04-13_18-49-19.jpg'
+import vikingAdultsPool from '../../assets/Vikingmediterraneancruises/Infinity Pool_2026-04-13_18-48-12.jpg'
+import vikingDestination from '../../assets/Vikingalaskacruises/Amalfi Coast_2026-04-13_18-47-20.jpg'
+import vikingValue from '../../assets/Vikingalaskacruises/The Restaurant_2026-04-13_18-49-21.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -29,7 +31,7 @@ import { useState, useEffect } from 'react'
 
 function WhyIResistedViking() {
     const [vikCurrentHero, setVikCurrentHero] = useState(0)
-    const vikHeroImages = []
+    const vikHeroImages = [hero1, hero2, hero3, hero4]
 
     useEffect(() => {
         const vikTimer = setInterval(() => {
@@ -205,7 +207,7 @@ function WhyIResistedViking() {
 
                         <div className="vik-confession-image-col">
                             <div className="vik-confession-image-frame">
-                                {/* <img src={vikingShipExterior} alt="Viking cruise ship" className="vik-confession-img" /> */}
+                                <img src={vikingShipExterior} alt="Viking cruise ship" className="vik-confession-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                                 <div className="vik-confession-img-overlay"></div>
                                 <div className="vik-confession-img-badge">
                                     <Star size={13} />
@@ -288,7 +290,7 @@ function WhyIResistedViking() {
 
                         <div className="vik-marketing-image-col">
                             <div className="vik-image-frame">
-                                {/* <img src={vikingMarketing} alt="Viking cruise ship at sea" className="vik-frame-img" /> */}
+                                <img src={vikingMarketing} alt="Viking cruise ship at sea" className="vik-frame-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                                 <div className="vik-frame-overlay"></div>
                             </div>
                         </div>
@@ -358,9 +360,40 @@ function WhyIResistedViking() {
                 </div>
             </section>
 
+
+              {/* ════════════════════════════════════════════════════════════
+                VIDEO — UNIWORLD
+            ════════════════════════════════════════════════════════════ */}
+            <section className="vs-video-section vs-video-section-alt">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Experience Uniworld Boutique River Cruisess</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">Discover the ultra-luxury boutique river cruise experience that Uniworld delivers.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label vs-video-label-scenic">
+                            <Crown size={16} />
+                            <span>Experience Uniworld Boutique River Cruises</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/drsLIk6vJ5A"
+                                title="Uniworld Boutique River Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ── THEN I STEPPED ONBOARD – REVELATION ── */}
             <section className="vik-reveal-section">
-                {/* <div className="vik-reveal-bg" style={{ backgroundImage: `url(${vikingOnboard})` }}></div> */}
+                <div className="vik-reveal-bg" style={{ backgroundImage: `url(${vikingOnboard})` }}></div>
                 <div className="vik-reveal-overlay"></div>
                 <div className="vik-reveal-content">
                     <span className="vik-reveal-eyebrow">THE MOMENT EVERYTHING CHANGED</span>
@@ -391,7 +424,7 @@ function WhyIResistedViking() {
 
                         <div className="vik-design-image-col">
                             <div className="vik-image-frame vik-design-frame">
-                                {/* <img src={vikingDesignInterior} alt="Viking ship Scandinavian interior design" className="vik-frame-img" /> */}
+                                <img src={vikingDesignInterior} alt="Viking ship Scandinavian interior design" className="vik-frame-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute', top: 0, left: 0 }} />
                                 <div className="vik-frame-overlay vik-frame-overlay-light"></div>
                                 <div className="vik-design-badge">
                                     <Sparkles size={13} />
@@ -463,7 +496,7 @@ function WhyIResistedViking() {
 
                         <div className="vik-adults-image-col">
                             <div className="vik-image-frame">
-                                {/* <img src={vikingAdultsPool} alt="Viking ship adults-only pool deck" className="vik-frame-img" /> */}
+                                <img src={vikingAdultsPool} alt="Viking ship adults-only pool deck" className="vik-frame-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                                 <div className="vik-frame-overlay"></div>
                             </div>
                         </div>
@@ -516,7 +549,7 @@ function WhyIResistedViking() {
 
                         <div className="vik-destination-image-col">
                             <div className="vik-image-frame vik-destination-frame">
-                                {/* <img src={vikingDestination} alt="Viking cruise destination immersion" className="vik-frame-img" /> */}
+                                <img src={vikingDestination} alt="Viking cruise destination immersion" className="vik-frame-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute', top: 0, left: 0 }} />
                                 <div className="vik-frame-overlay"></div>
                             </div>
                         </div>
@@ -555,7 +588,7 @@ function WhyIResistedViking() {
 
                     <div className="vik-inclusions-image-row">
                         <div className="vik-image-frame vik-inclusions-frame">
-                            {/* <img src={vikingValue} alt="Viking cruise included value" className="vik-frame-img" /> */}
+                            <img src={vikingValue} alt="Viking cruise included value" className="vik-frame-img" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                             <div className="vik-frame-overlay"></div>
                             <div className="vik-inclusions-img-callout">
                                 <CheckCircle size={16} />
@@ -604,7 +637,7 @@ function WhyIResistedViking() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -777,6 +810,36 @@ function WhyIResistedViking() {
                             </ul>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+              {/* ════════════════════════════════════════════════════════════
+                VIDEO — UNIWORLD
+            ════════════════════════════════════════════════════════════ */}
+            <section className="vs-video-section vs-video-section-alt">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Experience Uniworld's Award-Winning <br /> Boutique River Cruises</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">Discover the ultra-luxury boutique river cruise experience that Uniworld delivers.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label vs-video-label-scenic">
+                            <Crown size={16} />
+                            <span>See Why Travelers Choose Uniworld for Luxury River Cruising</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/JcegzKW4wys"
+                                title="Uniworld Boutique River Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </section>

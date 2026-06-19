@@ -11,20 +11,29 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
-/* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports
-   e.g. import vikingHero from '../../assets/VikingVsScenic/hero1.jpg'
-──────────────────────────────────────────────────────────────── */
-const HERO_1            = 'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=1600&q=80'
-const HERO_2            = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80'
-const HERO_3            = 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80'
+// Import real images from assets
+import vikingHero1 from '../../assets/AzamaravsVikingOcean/hero3.webp'
+import scenicHero1 from '../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg'
+import vikingHero2 from '../../assets/AzamaravsVikingOcean/hero2.webp'
 
-const VIKING_SHIP_IMG   = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-const SCENIC_SHIP_IMG   = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
-const VIKING_OCEAN_IMG  = 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80'
-const SCENIC_ECLIPSE_IMG= 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80'
-const DINING_IMG        = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80'
-const ANGELA_IMG        = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+import vikingShipImg from '../../assets/AzamaravsVikingOcean/viking.webp'
+import scenicShipImg from '../../assets/scenic-vs-silversea-antarctica/scenisilver1.webp'
+import vikingOceanImg from '../../assets/AzamaravsVikingOcean/ChoseViking.webp'
+import scenicEclipseImg from '../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg'
+import diningImg from '../../assets/Vikingalaskacruises/The Restaurant_2026-04-13_18-49-21.jpg'
+import angelaImg from '../../assets/Media (3).jpg'
+
+const HERO_1            = vikingHero1
+const HERO_2            = scenicHero1
+const HERO_3            = vikingHero2
+
+const VIKING_SHIP_IMG   = vikingShipImg
+const SCENIC_SHIP_IMG   = scenicShipImg
+const VIKING_OCEAN_IMG  = vikingOceanImg
+const SCENIC_ECLIPSE_IMG= scenicEclipseImg
+const DINING_IMG        = diningImg
+const ANGELA_IMG        = angelaImg
+
 
 /* ════════════════════════════════════════════════════════════ */
 
@@ -541,6 +550,40 @@ function VikingVsScenic() {
                 </div>
             </section>
 
+
+                {/* ══════════════════════════════════
+                VIDEO — VIKING
+            ══════════════════════════════════ */}
+            <section className="vs-video-section">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Watch Viking Cruises</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">Experience Viking Ocean and River Cruises through this exclusive video.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label">
+                            <Anchor size={16} />
+                            <span>Viking Cruises</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/4cOaQapXsrY"
+                                title="Viking Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            
+
             {/* ══════════════════════════════════
                 HEAD-TO-HEAD CATEGORIES (new tabbed section)
             ══════════════════════════════════ */}
@@ -816,6 +859,40 @@ function VikingVsScenic() {
                 </div>
             </section>
 
+
+               {/* ══════════════════════════════════
+                VIDEO — SCENIC
+            ══════════════════════════════════ */}
+            <section className="vs-video-section vs-video-section-alt">
+                <div className="vs-video-container">
+                    <div className="vs-video-header">
+                        <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Watch Scenic Cruises</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="vs-video-intro">Experience Scenic's luxury river and expedition cruising through this exclusive video.</p>
+                    </div>
+                    <div className="vs-video-single-wrap">
+                        <div className="vs-video-label vs-video-label-scenic">
+                            <Crown size={16} />
+                            <span>Scenic Cruises</span>
+                        </div>
+                        <div className="vs-video-frame-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/vka5apUEhZQ"
+                                title="Scenic Cruises Video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="vs-video-iframe"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
             {/* ══════════════════════════════════
                 FAQ
             ══════════════════════════════════ */}
@@ -844,6 +921,12 @@ function VikingVsScenic() {
                     </div>
                 </div>
             </section>
+
+        
+
+         
+
+
 
             {/* ══════════════════════════════════
                 CTA
