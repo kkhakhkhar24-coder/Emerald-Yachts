@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
-import './WhyIResistedViking.css'
+import './Whyiresistedviking.css'
 // import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
 // import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 // import hero1 from '../../assets/WhyIResistedViking/hero1.jpg'

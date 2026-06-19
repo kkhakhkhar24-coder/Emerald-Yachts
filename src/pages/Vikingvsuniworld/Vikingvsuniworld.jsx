@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
-import './VikingVsUniworld.css'
+import './Vikingvsuniworld.css'
 // import Profile_AH from '../../assets/VikingVsUniworld/Profile_AH.jpg'
 // import Profile_Picture_AH from '../../assets/VikingVsUniworld/Profile_Picture_AH.jpg'
 
@@ -902,7 +902,6 @@ function VikingVsUniworld() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>

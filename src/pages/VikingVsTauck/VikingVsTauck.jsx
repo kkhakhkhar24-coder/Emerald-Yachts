@@ -9,9 +9,29 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
+// Image imports from VikingVsTauck assets folder
+import heroBg1 from '../../assets/VikingVsTauck/Exterior_2026-04-13_19-02-37.jpg'
+import heroBg2 from '../../assets/VikingVsTauck/Exterior_2026-04-13_19-02-40.jpg'
+import heroBg3 from '../../assets/VikingVsTauck/Flam, Norway_2026-04-13_18-48-05.jpg'
+import galleryShipImg from '../../assets/VikingVsTauck/Exterior_2026-04-13_19-02-39.jpg'
+import galleryScenicImg from '../../assets/VikingVsTauck/Budapest, Hungary_2026-04-13_18-46-22.jpg'
+import gallerySuiteImg from '../../assets/VikingVsTauck/Explorer Suite - Living Room_2026-04-13_18-46-39.jpg'
+import galleryDiningImg from '../../assets/VikingVsTauck/The Restaurant_2026-04-13_18-49-21.jpg'
+import galleryCastleImg from '../../assets/VikingVsTauck/Cologne, Germany_2026-04-13_18-46-31.jpg'
+import vikingShipImg from '../../assets/VikingVsTauck/Exterior_2026-04-13_19-02-42.jpg'
+import tauckShipImg from '../../assets/VikingVsTauck/Exterior_2026-04-13_19-02-41.jpg'
+import destinationsImg from '../../assets/VikingVsTauck/Santorini, Greece_2026-04-13_18-49-07.jpg'
+import excursionsImg from '../../assets/VikingVsTauck/Rome, Italy_2026-04-13_18-49-03.jpg'
+import diningCardImg from '../../assets/VikingVsTauck/Aquavit Terrace_2026-04-13_18-47-28.jpg'
+import serviceCardImg from '../../assets/VikingVsTauck/Aquavit Terrace Waiter_2026-04-13_18-46-05.jpg'
+import angelaHughesImg from '../../assets/Angela_Hughes.jpg'
+
 function VikingVsTauck() {
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
     const [isMobileViewport, setIsMobileViewport] = useState(false)
+    const [currentHero, setCurrentHero] = useState(0)
+
+    const heroImages = [heroBg1, heroBg2, heroBg3]
 
     useEffect(() => {
         const handleResize = () => { setIsMobileViewport(window.innerWidth < 992) }
@@ -19,6 +39,11 @@ function VikingVsTauck() {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
+
+    useEffect(() => {
+        const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
+        return () => clearInterval(t)
+    }, [heroImages.length])
 
     const mediToggleFaq = (index) => { setMediActiveFaq(mediActiveFaq === index ? null : index) }
 
@@ -81,6 +106,13 @@ function VikingVsTauck() {
 
             {/* ═══════════════ HERO SECTION ═══════════════ */}
             <section className="medi-hero-section">
+                {heroImages.map((img, idx) => (
+                    <div
+                        key={idx}
+                        className={`medi-hero-background ${currentHero === idx ? 'medi-active' : ''}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    />
+                ))}
                 <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag"><Anchor size={16} /><span>Luxury Cruise Comparison, Ships, Pricing & Experiences</span></div>
@@ -123,9 +155,119 @@ function VikingVsTauck() {
                         <div className="medi-premium-signature-panel" style={{ marginTop: window.innerWidth <= 1024 ? '40px' : '0', borderLeftColor: '#274472' }}>
                             <div className="medi-premium-signature-glow"></div>
                             <div className="medi-premium-signature-content">
-                                <div className="medi-expert-profile-row"><div className="medi-expert-avatar-frame" style={{ background: '#274472' }}><Star size={24} className="medi-star-accent" /></div><div><span className="medi-expert-card-subtitle">CRUISE EXPERT</span><h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3></div></div>
+                                <div className="medi-expert-profile-row"><div className="medi-expert-avatar-frame" style={{ background: '#274472', overflow: 'hidden' }}><img src={angelaHughesImg} alt="Angela Hughes" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /></div><div><span className="medi-expert-card-subtitle">CRUISE EXPERT</span><h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3></div></div>
                                 <p className="medi-premium-expert-desc" style={{ color: '#475569', lineHeight: '1.7' }}>At Trips & Ships Luxury Travel, we help travelers compare premium cruise lines to find the perfect fit for their travel style, budget, and expectations.</p>
                                 <div className="medi-premium-expert-quote-box"><span className="medi-quote-mark" style={{ color: '#274472' }}>"</span><p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>With more than 40 years in the travel industry, Angela Hughes helps travelers navigate the differences between Viking and Tauck to select the ideal luxury cruise experience.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ NEW SECTION: VISUAL SHOWCASE GALLERY ═══════════════ */}
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px',
+                backgroundColor: '#0a1120',
+                fontFamily: 'sans-serif',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                {/* Scoped Hover Style */}
+                <style>{`
+        .gallery-container img {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+    `}</style>
+
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '10px' }}>
+                            The Visual Experience
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em' }}>
+                            Immersive Luxury Gallery
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    </div>
+
+                    {/* Mosaic Grid Container */}
+                    <div className="gallery-container" style={{
+                        display: 'grid',
+                        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(3, 1fr)',
+                        gridAutoRows: window.innerWidth <= 768 ? '250px' : '280px',
+                        gap: '20px'
+                    }}>
+
+                        {/* 1. Large Vertical (Viking Ship) */}
+                        <div className="gallery-item" style={{
+                            gridRow: window.innerWidth <= 768 ? 'span 1' : 'span 2'
+                        }}>
+                            <img
+                                src={galleryShipImg}
+                                alt="Viking Longship Exterior"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        </div>
+
+                        {/* 2. Wide Top (Scenic River) */}
+                        <div className="gallery-item" style={{
+                            gridColumn: window.innerWidth <= 768 ? 'span 1' : 'span 2'
+                        }}>
+                            <img
+                                src={galleryScenicImg}
+                                alt="Scenic River Landscape"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        </div>
+
+                        {/* 3. Small (Luxury Suite) */}
+                        <div className="gallery-item">
+                            <img
+                                src={gallerySuiteImg}
+                                alt="Luxury Stateroom"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        </div>
+
+                        {/* 4. Small (Dining) */}
+                        <div className="gallery-item">
+                            <img
+                                src={galleryDiningImg}
+                                alt="Gourmet Dining Experience"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        </div>
+
+                        {/* 5. Wide Bottom (Castle/Port) */}
+                        <div className="gallery-item" style={{
+                            gridColumn: window.innerWidth <= 768 ? 'span 1' : 'span 3',
+                            height: window.innerWidth <= 768 ? '250px' : '350px'
+                        }}>
+                            <img
+                                src={galleryCastleImg}
+                                alt="European Castle Port"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                            {/* Text Overlay for the Wide Image */}
+                            <div style={{
+                                position: 'absolute',
+                                inset: 0,
+                                background: 'linear-gradient(to top, rgba(10,17,32,0.8) 0%, transparent 60%)',
+                                display: 'flex',
+                                alignItems: 'flex-end',
+                                padding: '30px'
+                            }}>
                             </div>
                         </div>
                     </div>
@@ -155,6 +297,72 @@ function VikingVsTauck() {
                 </div>
             </section>
 
+            {/* ═══════════════ UPPER VIDEO: THE LUXURY EXPERIENCE ═══════════════ */}
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px',
+                backgroundColor: '#E7F3F5', // Your requested light blue navy color
+                fontFamily: 'sans-serif'
+            }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+                    <span style={{
+                        color: '#3b82f6',
+                        fontWeight: '700',
+                        fontSize: '12px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '4px',
+                        display: 'block',
+                        marginBottom: '15px'
+                    }}>
+                        Visualizing the Voyage
+                    </span>
+
+                    <h2 style={{
+                        fontSize: 'clamp(28px, 5vw, 42px)',
+                        color: '#274472', // Dark navy heading for perfect contrast
+                        fontWeight: '800',
+                        marginBottom: '20px',
+                        letterSpacing: '-0.02em',
+                        lineHeight: '1.2'
+                    }}>
+                        The Essence of Premium Cruising
+                    </h2>
+
+                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+
+                    <p style={{
+                        color: '#475569',
+                        fontSize: '18px',
+                        marginTop: '25px',
+                        marginBottom: '45px',
+                        lineHeight: '1.7',
+                        maxWidth: '800px',
+                        margin: '25px auto 45px'
+                    }}>
+                        Before diving into the technical differences of each fleet, witness the breathtaking landscapes and unparalleled service that define both Viking and Tauck journeys.
+                    </p>
+
+                    {/* Video Box */}
+                    <div style={{
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        boxShadow: '0 25px 50px rgba(39, 68, 114, 0.15)', // Shadow with a hint of navy
+                        border: '1px solid rgba(255, 255, 255, 0.5)', // Subtle white border to make it pop
+                        aspectRatio: '16/9',
+                        backgroundColor: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/mm-TtRkvDwc"
+                            title="Luxury Cruise Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* ═══════════════ SHIPS & ACCOMMODATIONS ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -163,23 +371,109 @@ function VikingVsTauck() {
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>Ships & Accommodations</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-                        <div style={{ backgroundColor: 'rgba(59,130,246,0.08)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '2px solid rgba(59,130,246,0.3)' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}><div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Ship size={24} style={{ color: '#fff' }} /></div><h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Viking Ships</h3></div>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>{[{ l: 'River Ships', v: 'Scandinavian d\u00e9cor, Aquavit Terrace' }, { l: 'Ocean Ships', v: 'All-veranda, heated bathroom floors' }, { l: 'Fleet Size', v: 'Larger fleet with more choices' }, { l: 'Design', v: 'Clean, contemporary style' }].map((r, i) => (<div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}><span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span><span style={{ fontSize: '16px', color: '#e2e8f0', fontWeight: '500' }}>{r.v}</span></div>))}</div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '40px' }}>
+
+                        {/* VIKING CARD */}
+                        <div style={{
+                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                            borderRadius: '30px',
+                            overflow: 'hidden',
+                            border: '1px solid rgba(255,255,255,0.1)',
+                            transition: 'transform 0.3s ease'
+                        }}>
+                            {/* Image Placeholder for Viking */}
+                            <div style={{ width: '100%', height: '250px', backgroundColor: '#1a365d', position: 'relative', overflow: 'hidden' }}>
+                                <img
+                                    src={vikingShipImg}
+                                    alt="Viking Longship Interior"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: '0.8' }}
+                                />
+                                <div style={{ position: 'absolute', top: '20px', left: '20px', backgroundColor: '#3b82f6', color: 'white', padding: '6px 15px', borderRadius: '50px', fontSize: '12px', fontWeight: 'bold', letterSpacing: '1px' }}>
+                                    SCANDINAVIAN MODERN
+                                </div>
+                            </div>
+
+                            <div style={{ padding: window.innerWidth <= 360 ? '28px 16px' : '40px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}>
+                                    <div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <Ship size={24} style={{ color: '#fff' }} />
+                                    </div>
+                                    <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Viking Ships</h3>
+                                </div>
+
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                                    {[
+                                        { l: 'River Ships', v: 'Scandinavian d\u00e9cor, Aquavit Terrace' },
+                                        { l: 'Ocean Ships', v: 'All-veranda, heated bathroom floors' },
+                                        { l: 'Fleet Size', v: 'Larger fleet with more choices' },
+                                        { l: 'Design', v: 'Clean, contemporary style' }
+                                    ].map((r, i) => (
+                                        <div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                                            <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span>
+                                            <span style={{ fontSize: '16px', color: '#e2e8f0', fontWeight: '500' }}>{r.v}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                        <div style={{ backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '28px 16px' : '45px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}><div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Crown size={24} style={{ color: '#94a3b8' }} /></div><h3 style={{ fontSize: '22px', fontWeight: '800', color: '#cbd5e1', margin: 0 }}>Tauck Ships</h3></div>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>{[{ l: 'Vessels', v: 'Chartered from leading operators' }, { l: 'Experience', v: 'Spacious suites, boutique atmosphere' }, { l: 'Guest Count', v: 'Lower passenger counts' }, { l: 'Amenities', v: 'Premium onboard amenities' }].map((r, i) => (<div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}><span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span><span style={{ fontSize: '16px', color: '#94a3b8', fontWeight: '500' }}>{r.v}</span></div>))}</div>
+
+                        {/* TAUCK CARD */}
+                        <div style={{
+                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                            borderRadius: '30px',
+                            overflow: 'hidden',
+                            border: '1px solid rgba(255,255,255,0.1)',
+                            transition: 'transform 0.3s ease'
+                        }}>
+                            {/* Image Placeholder for Tauck */}
+                            <div style={{ width: '100%', height: '250px', backgroundColor: '#1e293b', position: 'relative', overflow: 'hidden' }}>
+                                <img
+                                    src={tauckShipImg}
+                                    alt="Tauck River Boat Suite"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: '0.8' }}
+                                />
+                                <div style={{ position: 'absolute', top: '20px', left: '20px', backgroundColor: '#94a3b8', color: 'white', padding: '6px 15px', borderRadius: '50px', fontSize: '12px', fontWeight: 'bold', letterSpacing: '1px' }}>
+                                    TRADITIONAL LUXURY
+                                </div>
+                            </div>
+
+                            <div style={{ padding: window.innerWidth <= 360 ? '28px 16px' : '40px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '30px' }}>
+                                    <div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <Crown size={24} style={{ color: '#94a3b8' }} />
+                                    </div>
+                                    <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#cbd5e1', margin: 0 }}>Tauck Ships</h3>
+                                </div>
+
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                                    {[
+                                        { l: 'Vessels', v: 'Chartered from leading operators' },
+                                        { l: 'Experience', v: 'Spacious suites, boutique atmosphere' },
+                                        { l: 'Guest Count', v: 'Lower passenger counts' },
+                                        { l: 'Amenities', v: 'Premium onboard amenities' }
+                                    ].map((r, i) => (
+                                        <div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                                            <span style={{ fontSize: '11px', fontWeight: '800', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'block', marginBottom: '4px' }}>{r.l}</span>
+                                            <span style={{ fontSize: '16px', color: '#94a3b8', fontWeight: '500' }}>{r.v}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                     <div style={{ marginTop: '40px', padding: window.innerWidth <= 360 ? '20px 14px' : '30px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: window.innerWidth <= 360 ? '16px' : '24px', borderLeft: '5px solid #3b82f6' }}>
-                        <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.7', margin: 0 }}><strong style={{ color: '#ffffff' }}>Viking Advantage:</strong> More ship choices and broader fleet options. <strong style={{ color: '#ffffff' }}>Tauck Advantage:</strong> More intimate onboard experience.</p>
+                        <p style={{ fontSize: '17px', color: '#e2e8f0', lineHeight: '1.7', margin: 0 }}>
+                            <strong style={{ color: '#ffffff' }}>Viking Advantage:</strong> More ship choices and broader fleet options with a consistent modern feel.
+                            <br />
+                            <strong style={{ color: '#ffffff' }}>Tauck Advantage:</strong> More intimate onboard experience with significantly fewer guests and larger average suite sizes.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* ═══════════════ DESTINATIONS & EXCURSIONS ═══════════════ */}
+            {/* ═══════════════ FIXED: DESTINATIONS & EXCURSIONS ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '70px' }}>
@@ -187,24 +481,86 @@ function VikingVsTauck() {
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>Destinations & Excursions</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
-                            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '12px' }}>Destinations</span>
-                            <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#0f1c2e', marginBottom: '16px' }}>Where You'll Travel</h3>
-                            <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Viking offers extensive worldwide coverage: Europe, Alaska, Mediterranean, Scandinavia, Egypt, Asia, Antarctica, South America. Tauck focuses on European Rivers: France, Germany, Portugal, Netherlands, Switzerland.</p>
-                            <div style={{ padding: '16px 20px', backgroundColor: '#eff6ff', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}><p style={{ fontSize: '15px', fontWeight: '700', margin: 0, color: '#274472' }}>Winner: Viking — Greater destination variety.</p></div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1fr', gap: '30px' }}>
+
+                        {/* DESTINATIONS CARD */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '24px',
+                            overflow: 'hidden',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(15,28,46,0.05)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            {/* Image Placeholder */}
+                            <div style={{ width: '100%', height: '220px', overflow: 'hidden', position: 'relative' }}>
+                                <img
+                                    src={destinationsImg}
+                                    alt="Global Destinations"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{ position: 'absolute', bottom: '15px', left: '15px', backgroundColor: 'rgba(15, 28, 46, 0.8)', color: '#fff', padding: '5px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: '700', backdropFilter: 'blur(4px)' }}>
+                                    GLOBAL REACH
+                                </div>
+                            </div>
+
+                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '40px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '12px' }}>Destinations</span>
+                                <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#0f1c2e', marginBottom: '16px' }}>Where You'll Travel</h3>
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '30px' }}>
+                                    Viking offers extensive worldwide coverage across all seven continents, including the Nile, Mississippi, and Antarctica. Tauck remains the specialist for intimate European river journeys and grand land-and-sea combinations.
+                                </p>
+                                <div style={{ marginTop: 'auto', padding: '16px 20px', backgroundColor: '#eff6ff', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
+                                    <p style={{ fontSize: '14px', fontWeight: '700', margin: 0, color: '#274472', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <Globe size={16} /> Winner: Viking (For Variety)
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
-                            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '12px' }}>Excursions</span>
-                            <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#0f1c2e', marginBottom: '16px' }}>Included Experiences</h3>
-                            <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Viking includes at least one excursion per port plus destination lectures. Tauck is known for extensive inclusions: multiple options, exclusive experiences, special access, and more premium tours.</p>
-                            <div style={{ padding: '16px 20px', backgroundColor: '#eff6ff', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}><p style={{ fontSize: '15px', fontWeight: '700', margin: 0, color: '#274472' }}>Winner: Tauck — More included experiences.</p></div>
+
+                        {/* EXCURSIONS CARD */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '24px',
+                            overflow: 'hidden',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 10px 30px rgba(15,28,46,0.05)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            {/* Image Placeholder */}
+                            <div style={{ width: '100%', height: '220px', overflow: 'hidden', position: 'relative' }}>
+                                <img
+                                    src={excursionsImg}
+                                    alt="Guided Excursion"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{ position: 'absolute', bottom: '15px', left: '15px', backgroundColor: 'rgba(15, 28, 46, 0.8)', color: '#fff', padding: '5px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: '700', backdropFilter: 'blur(4px)' }}>
+                                    EXCLUSIVE ACCESS
+                                </div>
+                            </div>
+
+                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '40px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', marginBottom: '12px' }}>Excursions</span>
+                                <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#0f1c2e', marginBottom: '16px' }}>Included Experiences</h3>
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '30px' }}>
+                                    While Viking includes one excursion in every port, Tauck provides a truly all-inclusive shore program with multiple premium choices, private after-hours museum access, and exclusive cultural events.
+                                </p>
+                                <div style={{ marginTop: 'auto', padding: '16px 20px', backgroundColor: '#eff6ff', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
+                                    <p style={{ fontSize: '14px', fontWeight: '700', margin: 0, color: '#274472', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <Star size={16} /> Winner: Tauck (For Inclusions)
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
-            {/* ═══════════════ DINING & SERVICE ═══════════════ */}
+            {/* ═══════════════ FIXED: DINING & SERVICE ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '70px' }}>
@@ -212,21 +568,105 @@ function VikingVsTauck() {
                         <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>Dining & Service</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
-                            <div style={{ backgroundColor: '#0f1c2e', padding: '30px', textAlign: 'center' }}><Utensils size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} /><h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Dining</h4><p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Winner: Tie</p></div>
-                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Viking offers The Restaurant, Manfredi's, Chef's Table, and World Caf\u00e9. Tauck emphasizes regional cuisine, local wine tastings, and exclusive dining events.</p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{['Both offer exceptional dining', 'Viking: Destination-inspired menus', 'Tauck: Local culinary experiences', 'Regional cuisine on both lines'].map((item, i) => (<li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}</li>))}</ul>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : '1fr 1fr', gap: '40px' }}>
+
+                        {/* DINING CARD */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '30px',
+                            overflow: 'hidden',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 15px 35px rgba(15,28,46,0.05)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            <div style={{ height: '240px', position: 'relative', overflow: 'hidden' }}>
+                                <img
+                                    src={diningCardImg}
+                                    alt="Fine Dining"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(15,28,46,0.8) 100%)' }}></div>
+                                <div style={{ position: 'absolute', bottom: '20px', left: '25px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                    <Utensils size={24} style={{ color: '#3b82f6' }} />
+                                    <h4 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Dining</h4>
+                                </div>
+                            </div>
+
+                            <div style={{ padding: '35px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: '#f1f5f9', padding: '4px 12px', borderRadius: '50px', marginBottom: '20px' }}>
+                                    <Sparkles size={14} style={{ color: '#3b82f6' }} />
+                                    <span style={{ fontSize: '12px', fontWeight: '700', color: '#475569', textTransform: 'uppercase' }}>Winner: Tie</span>
+                                </div>
+
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '25px' }}>
+                                    Both lines offer world-class culinary programs. Viking focuses on diverse venue options and destination-inspired menus, while Tauck emphasizes regional flavors and exclusive shore-side dining events.
+                                </p>
+
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
+                                    {[
+                                        'Viking: Multi-venue flexibility',
+                                        'Tauck: Regional culinary immersion',
+                                        'Expert wine pairings on both lines',
+                                        'Included premium dining options'
+                                    ].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
+                                            <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
-                            <div style={{ background: 'linear-gradient(135deg, #0f1c2e 0%, #1a365d 100%)', padding: '30px', textAlign: 'center' }}><Heart size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} /><h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Service</h4><p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Winner: Tauck</p></div>
-                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>Viking provides professional, attentive, consistent service across the fleet. Tauck offers highly personalized service with crew knowing guests by name early in the voyage.</p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>{['Viking: Consistent & professional', 'Tauck: Highly personalized approach', 'Smaller Tauck ships enable closer relationships', 'Both rated exceptional by guests'].map((item, i) => (<li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}><CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}</li>))}</ul>
+
+                        {/* SERVICE CARD */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '30px',
+                            overflow: 'hidden',
+                            border: '1px solid #e2e8f0',
+                            boxShadow: '0 15px 35px rgba(15,28,46,0.05)',
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+                            <div style={{ height: '240px', position: 'relative', overflow: 'hidden' }}>
+                                <img
+                                    src={serviceCardImg}
+                                    alt="Luxury Service"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(15,28,46,0.8) 100%)' }}></div>
+                                <div style={{ position: 'absolute', bottom: '20px', left: '25px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                    <Heart size={24} style={{ color: '#3b82f6' }} />
+                                    <h4 style={{ fontSize: '22px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Service</h4>
+                                </div>
+                            </div>
+
+                            <div style={{ padding: '35px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: '#eff6ff', padding: '4px 12px', borderRadius: '50px', marginBottom: '20px', border: '1px solid #dbeafe' }}>
+                                    <Star size={14} style={{ color: '#3b82f6' }} />
+                                    <span style={{ fontSize: '12px', fontWeight: '700', color: '#274472', textTransform: 'uppercase' }}>Winner: Tauck</span>
+                                </div>
+
+                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '25px' }}>
+                                    While Viking service is impeccably professional and efficient, Tauck is legendary for its "Intimate Hospitality," where staff frequently anticipate needs and build personal connections with every guest.
+                                </p>
+
+                                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
+                                    {[
+                                        'Tauck: Highly personalized attention',
+                                        'Viking: Fleet-wide consistency',
+                                        'Outstanding guest-to-crew ratios',
+                                        'Warm, attentive onboard culture'
+                                    ].map((item, i) => (
+                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
+                                            <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -284,6 +724,43 @@ function VikingVsTauck() {
                         <p style={{ margin: '0 0 20px' }}><strong style={{ color: '#274472' }}>Viking</strong> excels in destination variety, fleet size, ocean cruising, and overall value.</p>
                         <p style={{ margin: '0 0 20px' }}><strong style={{ color: '#274472' }}>Tauck</strong> shines through personalized service, extensive inclusions, and boutique-style luxury.</p>
                         <p style={{ margin: '0' }}>Neither choice is wrong. Both represent some of the <strong style={{ color: '#274472' }}>finest travel experiences available today.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ LOWER VIDEO: EXPERT ADVICE ═══════════════ */}
+            <section style={{ padding: '80px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
+                <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+                    <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '15px' }}>
+                        Expert Insight
+                    </span>
+                    <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                        How to Choose Your Perfect Cruise
+                    </h2>
+                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+
+                    <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', marginBottom: '45px', lineHeight: '1.7', maxWidth: '800px', margin: '25px auto 45px' }}>
+                        Choosing between Viking and Tauck often comes down to your personal travel style. Watch our deeper dive into what makes each brand unique and how to maximize your value.
+                    </p>
+
+                    {/* Video Box */}
+                    <div style={{
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        boxShadow: '0 25px 60px rgba(0,0,0,0.5)',
+                        border: '1px solid rgba(255,255,255,0.1)',
+                        aspectRatio: '16/9',
+                        backgroundColor: '#000'
+                    }}>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/2hiXhcgIJJc"
+                            title="Expert Comparison Video"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>
