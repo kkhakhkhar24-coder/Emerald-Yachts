@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
@@ -601,7 +601,13 @@ const Navbar = () => {
                 Why I Resisted Viking for Years
               </NavLink>
 
-
+              <NavLink
+                to="/viking-cruise-resource-center"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Cruise Resource Center
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1156,7 +1162,6 @@ const Navbar = () => {
               Viking Mediterranean Cruises
             </NavLink>
 
-
             <NavLink
               to="/viking-alaska-cruises"
               className="nav-dropdown-single"
@@ -1189,29 +1194,37 @@ const Navbar = () => {
               Viking vs Tauck
             </NavLink>
 
-             <NavLink
-                to="/viking-vs-scenic"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking vs Scenic
-              </NavLink>
+            <NavLink
+              to="/viking-vs-scenic"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking vs Scenic
+            </NavLink>
 
-              <NavLink
-                to="/viking-vs-uniworld"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking vs Uniwold
-              </NavLink>
+            <NavLink
+              to="/viking-vs-uniworld"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking vs Uniwold
+            </NavLink>
 
-              <NavLink
-                to="/why-i-resisted-viking-for-years"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Why I Resisted Viking for Years
-              </NavLink>
+            <NavLink
+              to="/why-i-resisted-viking-for-years"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Why I Resisted Viking for Years
+            </NavLink>
+
+            <NavLink
+              to="/viking-cruise-resource-center"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Cruise Resource Center
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

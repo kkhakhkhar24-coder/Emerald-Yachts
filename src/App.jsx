@@ -88,6 +88,7 @@ import VikingVsTauck from "./pages/VikingVsTauck/VikingVsTauck";
 import Vikingvsscenic from "./pages/Vikingvsscenic/Vikingvsscenic";
 import Vikingvsuniworld from "./pages/Vikingvsuniworld/Vikingvsuniworld";
 import Whyiresistedviking from "./pages/Whyiresistedviking/Whyiresistedviking";
+import VikingCruiseResourceCenter from "./pages/VikingCruiseResourceCenter/VikingCruiseResourceCenter";
 
 function App() {
   return (
@@ -454,7 +455,7 @@ function App() {
             element={< VikingVsTauck />}
           />
 
-           <Route
+          <Route
             path="/viking-vs-scenic"
             element={< Vikingvsscenic />}
           />
@@ -469,6 +470,10 @@ function App() {
             element={< Whyiresistedviking />}
           />
 
+          <Route
+            path="/viking-cruise-resource-center"
+            element={< VikingCruiseResourceCenter />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
