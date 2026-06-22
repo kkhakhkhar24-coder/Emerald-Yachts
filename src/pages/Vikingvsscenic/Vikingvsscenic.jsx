@@ -22,17 +22,18 @@ import vikingOceanImg from '../../assets/AzamaravsVikingOcean/ChoseViking.webp'
 import scenicEclipseImg from '../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg'
 import diningImg from '../../assets/Vikingalaskacruises/The Restaurant_2026-04-13_18-49-21.jpg'
 import angelaImg from '../../assets/Media (3).jpg'
+import { Link } from 'react-router'
 
-const HERO_1            = vikingHero1
-const HERO_2            = scenicHero1
-const HERO_3            = vikingHero2
+const HERO_1 = vikingHero1
+const HERO_2 = scenicHero1
+const HERO_3 = vikingHero2
 
-const VIKING_SHIP_IMG   = vikingShipImg
-const SCENIC_SHIP_IMG   = scenicShipImg
-const VIKING_OCEAN_IMG  = vikingOceanImg
-const SCENIC_ECLIPSE_IMG= scenicEclipseImg
-const DINING_IMG        = diningImg
-const ANGELA_IMG        = angelaImg
+const VIKING_SHIP_IMG = vikingShipImg
+const SCENIC_SHIP_IMG = scenicShipImg
+const VIKING_OCEAN_IMG = vikingOceanImg
+const SCENIC_ECLIPSE_IMG = scenicEclipseImg
+const DINING_IMG = diningImg
+const ANGELA_IMG = angelaImg
 
 /* ════════════════════════════════════════════════════════════ */
 
@@ -550,7 +551,7 @@ function VikingVsScenic() {
             </section>
 
 
-                {/* ══════════════════════════════════
+            {/* ══════════════════════════════════
                 VIDEO — VIKING
             ══════════════════════════════════ */}
             <section className="vs-video-section">
@@ -581,7 +582,7 @@ function VikingVsScenic() {
             </section>
 
 
-            
+
 
             {/* ══════════════════════════════════
                 HEAD-TO-HEAD CATEGORIES (new tabbed section)
@@ -859,7 +860,7 @@ function VikingVsScenic() {
             </section>
 
 
-               {/* ══════════════════════════════════
+            {/* ══════════════════════════════════
                 VIDEO — SCENIC
             ══════════════════════════════════ */}
             <section className="vs-video-section vs-video-section-alt">
@@ -921,11 +922,191 @@ function VikingVsScenic() {
                 </div>
             </section>
 
-        
+            {/* ═══════════════ VIKING INTERNAL RESOURCES (SEAMLESS GRID) ═══════════════ */}
+            <section className="viking-resources-stack">
+                <style>{`
+        .viking-resources-stack {
+            background-color: #ffffff;
+            padding: clamp(80px, 10vw, 120px) 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        .viking-resources-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            border-top: 1px solid #0f1c2e;
+            border-bottom: 1px solid #0f1c2e;
+            display: flex;
+            flex-direction: column;
+        }
 
-         
+        /* Seamless Grid Header */
+        .viking-resources-header {
+            padding: 30px 40px;
+            background-color: #f8fafc;
+            border-bottom: 1px solid #0f1c2e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .viking-resources-heading {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #0f1c2e;
+            margin: 0;
+        }
+        .viking-resources-meta {
+            font-size: 12px;
+            font-weight: 600;
+            color: #3b82f6;
+            text-transform: uppercase;
+        }
 
+        /* Zero Gap Grid */
+        .viking-resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0; 
+        }
+        @media (max-width: 992px) {
+            .viking-resources-grid { grid-template-columns: 1fr; }
+        }
 
+        .viking-resource-item {
+            text-decoration: none;
+            padding: clamp(50px, 6vw, 80px) 40px;
+            background-color: #ffffff;
+            border-right: 1px solid #e2e8f0;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .viking-resource-item:last-child { border-right: none; }
+        @media (max-width: 992px) {
+            .viking-resource-item { border-right: none; border-bottom: 1px solid #e2e8f0; }
+        }
+
+        /* Hover Interaction */
+        .viking-resource-item:hover {
+            background-color: #0f1c2e;
+        }
+
+        .viking-resource-cat {
+            font-size: 11px;
+            font-weight: 700;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .viking-resource-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0f1c2e;
+            margin: 0 0 15px 0;
+            line-height: 1.2;
+            transition: color 0.4s ease;
+        }
+        .viking-resource-item:hover .viking-resource-title {
+            color: #ffffff;
+        }
+
+        .viking-resource-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #64748b;
+            margin: 0 0 40px 0;
+            flex-grow: 1;
+            transition: color 0.4s ease;
+        }
+        .viking-resource-item:hover .viking-resource-desc {
+            color: #94a3b8;
+        }
+
+        .viking-resource-action {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #0f1c2e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+        .viking-resource-item:hover .viking-resource-action {
+            color: #ffffff;
+            transform: translateX(8px);
+        }
+        .viking-resource-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        .viking-resource-item:hover .viking-resource-circle {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+            color: #ffffff;
+        }
+    `}</style>
+
+                <div className="viking-resources-container">
+                    <header className="viking-resources-header">
+                        <h2 className="viking-resources-heading">Planning Resources</h2>
+                        <span className="viking-resources-meta">Viking Comparative Series</span>
+                    </header>
+
+                    <div className="viking-resources-grid">
+                        {/* LINK 1 */}
+                        <Link to="/viking-river-cruises" className="viking-resource-item">
+                            <span className="viking-resource-cat">Fleet Overview</span>
+                            <h3 className="viking-resource-title">Viking River Cruises</h3>
+                            <p className="viking-resource-desc">
+                                Explore the complete master portfolio of Viking’s world-class river journeys across Europe's historic waterways.
+                            </p>
+                            <div className="viking-resource-action">
+                                Explore Guide
+                                <div className="viking-resource-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+
+                        {/* LINK 2 */}
+                        <Link to="/viking-cruise-reviews" className="viking-resource-item">
+                            <span className="viking-resource-cat">Guest Insights</span>
+                            <h3 className="viking-resource-title">Viking Cruise Reviews</h3>
+                            <p className="viking-resource-desc">
+                                Authentic traveler feedback and detailed expert ratings covering service, dining, and shore excursions.
+                            </p>
+                            <div className="viking-resource-action">
+                                Read Reviews
+                                <div className="viking-resource-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+
+                        {/* LINK 3 */}
+                        <Link to="/viking-cruise-cost-guide" className="viking-resource-item">
+                            <span className="viking-resource-cat">Pricing & Value</span>
+                            <h3 className="viking-resource-title">Viking Cruise Cost Guide</h3>
+                            <p className="viking-resource-desc">
+                                A transparent breakdown of pricing structure, luxury inclusions, and airfare value for your upcoming voyage.
+                            </p>
+                            <div className="viking-resource-action">
+                                View Pricing
+                                <div className="viking-resource-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
             {/* ══════════════════════════════════
                 CTA

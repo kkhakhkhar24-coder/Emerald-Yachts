@@ -3,10 +3,12 @@ import {
     Ship, MapPin, Star, Users, CheckCircle,
     Sparkles, Anchor, Gem, Phone,
     Globe, Utensils, Award, Crown,
-    Heart, Minus, ChevronRight, Wine, Bike
+    Heart, Minus, ChevronRight, Wine, Bike,
+    DollarSign
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image imports from various cruise folders
@@ -380,6 +382,154 @@ function VikingVsAmaWaterways() {
                                 <div className="medi-faq-question-row"><span style={{ fontWeight: '600', fontSize: '17px' }}>{faq.question}</span><span className="medi-faq-toggle-icon">{mediActiveFaq === index ? '\u2212' : '+'}</span></div>
                                 {mediActiveFaq === index && (<p className="medi-faq-answer-text" style={{ padding: '20px 0', color: '#475569', lineHeight: '1.6' }}>{faq.answer}</p>)}
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ THE LUXURY NAVIGATION STACK (NO EMPTY SPACES) ═══════════════ */}
+            <section className="viking-stack-section">
+                <style>{`
+        .viking-stack-section {
+            background-color: #ffffff;
+            padding: clamp(80px, 10vw, 120px) 20px;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        .viking-stack-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            border-top: 2px solid #0f1c2e; /* Bold top anchor */
+        }
+        .viking-stack-header {
+            margin-bottom: 0;
+            padding: 40px 0;
+        }
+        .viking-stack-heading {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            color: #0f1c2e;
+            margin: 0;
+            letter-spacing: -0.03em;
+        }
+        .viking-stack-link {
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #ffffff;
+        }
+        .viking-stack-row {
+            display: flex;
+            align-items: center;
+            padding: clamp(30px, 5vw, 45px) 10px;
+            gap: 40px;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .viking-stack-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+        .viking-stack-num {
+            font-size: 14px;
+            font-weight: 800;
+            color: #cbd5e1;
+            font-variant-numeric: tabular-nums;
+            min-width: 30px;
+        }
+        .viking-stack-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .viking-stack-content {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        .viking-stack-title-box {
+            max-width: 350px;
+        }
+        .viking-stack-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f1c2e;
+            margin: 0 0 5px 0;
+            transition: color 0.3s ease;
+        }
+        .viking-stack-desc {
+            font-size: 15px;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.5;
+            max-width: 500px;
+        }
+        .viking-stack-icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3b82f6;
+            background: #f1f5f9;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+        
+        /* HOVER EFFECTS */
+        .viking-stack-link:hover {
+            background-color: #f8fafc;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .viking-stack-link:hover .viking-stack-title {
+            color: #3b82f6;
+        }
+        .viking-stack-link:hover .viking-stack-icon-box {
+            background-color: #0f1c2e;
+            color: #ffffff;
+            transform: scale(1.1) rotate(-45deg);
+        }
+        .viking-stack-link:hover .viking-stack-num {
+            color: #0f1c2e;
+        }
+    `}</style>
+
+                <div className="viking-stack-container">
+                    <header className="viking-stack-header">
+                        <h2 className="viking-stack-heading">Explore Related Research</h2>
+                    </header>
+
+                    <div className="viking-stack-list">
+                        {[
+                            { num: '01', title: 'River Cruise Guide', desc: 'A complete overview of the Longship fleet and award-winning river itineraries.', path: '/viking-river-cruises', icon: <Ship size={22} /> },
+                            { num: '02', title: 'Verified Reviews', desc: 'Read authentic guest feedback on service, dining, and shore excursions.', path: '/viking-cruise-reviews', icon: <Star size={22} /> },
+                            { num: '03', title: 'Fare & Value', desc: 'A transparent breakdown of pricing, luxury inclusions, and total value.', path: '/viking-cruise-cost-guide', icon: <DollarSign size={22} /> },
+                            { num: '04', title: 'Is Viking Worth It?', desc: 'Discover if a Viking cruise is the right value for your specific travel style.', path: '/is-viking-worth-it', icon: <Award size={22} /> }
+                        ].map((item, i) => (
+                            <Link key={i} to={item.path} className="viking-stack-link">
+                                <div className="viking-stack-row">
+                                    <span className="viking-stack-num">{item.num}</span>
+
+                                    <div className="viking-stack-content">
+                                        <div className="viking-stack-title-box">
+                                            <h3 className="viking-stack-title">{item.title}</h3>
+                                        </div>
+
+                                        <p className="viking-stack-desc">{item.desc}</p>
+
+                                        <div className="viking-stack-icon-box">
+                                            {item.icon}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

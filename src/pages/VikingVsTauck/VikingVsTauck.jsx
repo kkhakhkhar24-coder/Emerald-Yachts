@@ -1,12 +1,13 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
-    Ship, MapPin, Star, Users, CheckCircle,
-    Sparkles, Anchor, Gem, Phone,
+    Ship, MapPin, Star, CheckCircle,
+    Sparkles, Anchor, Phone,
     Globe, Utensils, Award, Crown,
-    Heart, Wine, DollarSign, UserCheck
+    Heart, DollarSign, ChevronRight
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image imports from VikingVsTauck assets folder
@@ -802,6 +803,146 @@ function VikingVsTauck() {
                                 <div className="medi-faq-question-row"><span style={{ fontWeight: '600', fontSize: '17px' }}>{faq.question}</span><span className="medi-faq-toggle-icon">{mediActiveFaq === index ? '\u2212' : '+'}</span></div>
                                 {mediActiveFaq === index && (<p className="medi-faq-answer-text" style={{ padding: '20px 0', color: '#475569', lineHeight: '1.6' }}>{faq.answer}</p>)}
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ THE LUXURY BOUTIQUE ROW ═══════════════ */}
+            <section style={{
+                padding: '120px 20px',
+                backgroundColor: '#ffffff',
+                fontFamily: '"Inter", sans-serif',
+                overflow: 'hidden'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+                    {/* Typographic Header */}
+                    <div style={{ marginBottom: '80px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                            <span style={{ fontSize: '14px', fontWeight: '800', letterSpacing: '4px', color: '#3b82f6', textTransform: 'uppercase' }}>Discovery</span>
+                            <div style={{ flex: 1, height: '1px', backgroundColor: '#eee' }}></div>
+                        </div>
+                        <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: '#0f1c2e', fontWeight: '800', letterSpacing: '-0.04em', margin: 0 }}>
+                            Viking In-Depth.
+                        </h2>
+                    </div>
+
+                    {/* The Boutique Row */}
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: window.innerWidth <= 992 ? 'column' : 'row',
+                        borderTop: '1px solid #0f1c2e',
+                        borderBottom: '1px solid #0f1c2e'
+                    }}>
+                        {[
+                            {
+                                num: 'I',
+                                title: 'The Fleet Guide',
+                                path: '/viking-river-cruises',
+                                label: 'Viking River Cruises',
+                                desc: 'A complete masterclass on Viking’s award-winning Longships.'
+                            },
+                            {
+                                num: 'II',
+                                title: 'Expert Reviews',
+                                path: '/viking-cruise-reviews',
+                                label: 'Viking Cruise Reviews',
+                                desc: 'Unbiased ratings on service, culinary programs, and ports.'
+                            },
+                            {
+                                num: 'III',
+                                title: 'Investment Guide',
+                                path: '/viking-cruise-cost-guide',
+                                label: 'Viking Cost Guide',
+                                desc: 'Everything you need to know about pricing, value, and airfare.'
+                            }
+                        ].map((item, i) => (
+                            <Link key={i} to={item.path} style={{ textDecoration: 'none', flex: 1 }}>
+                                <div style={{
+                                    padding: window.innerWidth <= 992 ? '40px 0' : '60px 40px',
+                                    borderRight: window.innerWidth > 992 && i !== 2 ? '1px solid #eee' : 'none',
+                                    borderBottom: window.innerWidth <= 992 && i !== 2 ? '1px solid #eee' : 'none',
+                                    height: '100%',
+                                    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
+                                    cursor: 'pointer',
+                                    position: 'relative'
+                                }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.backgroundColor = '#0f1c2e';
+                                        e.currentTarget.querySelectorAll('.boutique-text').forEach(el => el.style.color = '#ffffff');
+                                        e.currentTarget.querySelector('.boutique-num').style.color = '#3b82f6';
+                                        e.currentTarget.querySelector('.boutique-line').style.width = '100%';
+                                        e.currentTarget.querySelector('.boutique-line').style.backgroundColor = '#3b82f6';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.backgroundColor = 'transparent';
+                                        e.currentTarget.querySelector('.boutique-title').style.color = '#0f1c2e';
+                                        e.currentTarget.querySelector('.boutique-label').style.color = '#3b82f6';
+                                        e.currentTarget.querySelector('.boutique-desc').style.color = '#64748b';
+                                        e.currentTarget.querySelector('.boutique-num').style.color = '#f1f5f9';
+                                        e.currentTarget.querySelector('.boutique-line').style.width = '40px';
+                                        e.currentTarget.querySelector('.boutique-line').style.backgroundColor = '#0f1c2e';
+                                    }}>
+                                    {/* Roman Numeral Background */}
+                                    <div className="boutique-num" style={{
+                                        fontSize: '100px',
+                                        fontWeight: '900',
+                                        color: '#f1f5f9',
+                                        position: 'absolute',
+                                        top: '20px',
+                                        right: '30px',
+                                        transition: 'all 0.5s ease',
+                                        zIndex: 0
+                                    }}>{item.num}</div>
+
+                                    <div style={{ position: 'relative', zIndex: 1 }}>
+                                        <span className="boutique-text boutique-label" style={{
+                                            color: '#3b82f6',
+                                            fontSize: '12px',
+                                            fontWeight: '700',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '2px',
+                                            transition: 'all 0.5s ease'
+                                        }}>
+                                            {item.label}
+                                        </span>
+
+                                        <h3 className="boutique-text boutique-title" style={{
+                                            fontSize: '28px',
+                                            fontWeight: '800',
+                                            color: '#0f1c2e',
+                                            margin: '15px 0',
+                                            transition: 'all 0.5s ease'
+                                        }}>
+                                            {item.title}
+                                        </h3>
+
+                                        <div className="boutique-line" style={{
+                                            width: '40px',
+                                            height: '2px',
+                                            backgroundColor: '#0f1c2e',
+                                            marginBottom: '20px',
+                                            transition: 'all 0.5s ease'
+                                        }}></div>
+
+                                        <p className="boutique-text boutique-desc" style={{
+                                            fontSize: '16px',
+                                            color: '#64748b',
+                                            lineHeight: '1.6',
+                                            margin: 0,
+                                            transition: 'all 0.5s ease'
+                                        }}>
+                                            {item.desc}
+                                        </p>
+
+                                        <div style={{ marginTop: '30px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                            <div className="boutique-text" style={{ color: '#0f1c2e', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase' }}>Explore</div>
+                                            <ChevronRight size={16} className="boutique-text" style={{ color: '#3b82f6' }} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

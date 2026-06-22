@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 /* ─────────────────────────────────────────────────────────────
    IMAGE IMPORTS — local assets (Unique, no repeats)
@@ -368,7 +369,7 @@ function VikingMediterraneanCruises() {
             <section className="vmc-why-viking-separated-section">
                 <div className="vmc-why-viking-separated-container">
                     <div className="vmc-why-viking-separated-grid">
-                        
+
                         <div className="vmc-why-viking-left-panel">
                             <span className="vmc-separated-eyebrow">The Viking Difference</span>
                             <p className="vmc-separated-intro-text">
@@ -420,7 +421,7 @@ function VikingMediterraneanCruises() {
                     </div>
 
                     <div className="vmc-modern-diff-grid">
-                        
+
                         {/* Card 1 */}
                         <div className="vmc-modern-diff-card">
                             <span className="vmc-modern-diff-card-bg-number">01</span>
@@ -921,54 +922,54 @@ function VikingMediterraneanCruises() {
             {/* ══════════════════════════════════
     WHO SHOULD / SHOULD NOT TAKE A VIKING CRUISE
 ══════════════════════════════════ */}
-<section className="vmc-traveler-section">
-    <div className="vmc-traveler-container">
-        <div className="vmc-traveler-header">
-            <span className="medi-itinerary-eyebrow">THE EXPERT VERDICT</span>
-            <h2 className="medi-section-heading">Is Viking Right For Your Style?</h2>
-            <div className="medi-heading-separator-bar medi-bar-centered"></div>
-        </div>
+            <section className="vmc-traveler-section">
+                <div className="vmc-traveler-container">
+                    <div className="vmc-traveler-header">
+                        <span className="medi-itinerary-eyebrow">THE EXPERT VERDICT</span>
+                        <h2 className="medi-section-heading">Is Viking Right For Your Style?</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
 
-        <div className="vmc-traveler-grid">
-            {/* THE "YES" CARD */}
-            <div className="vmc-traveler-card vmc-card-premium">
-                <div className="vmc-status-badge">THE IDEAL CHOICE</div>
-                <h3 className="vmc-traveler-card-heading">
-                    <div className="vmc-icon-box"><CheckCircle size={24} /></div>
-                    Viking is Perfect For:
-                </h3>
-                <ul className="vmc-traveler-list">
-                    {['Romantic Couples', 'Lifelong Learners & Retirees', 'Empty Nesters', 'Cultural Explorers', 'First-time Mediterranean visitors', 'Food and wine enthusiasts'].map((item, i) => (
-                        <li key={i}>
-                            <div className="vmc-dot"></div>
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                    <div className="vmc-traveler-grid">
+                        {/* THE "YES" CARD */}
+                        <div className="vmc-traveler-card vmc-card-premium">
+                            <div className="vmc-status-badge">THE IDEAL CHOICE</div>
+                            <h3 className="vmc-traveler-card-heading">
+                                <div className="vmc-icon-box"><CheckCircle size={24} /></div>
+                                Viking is Perfect For:
+                            </h3>
+                            <ul className="vmc-traveler-list">
+                                {['Romantic Couples', 'Lifelong Learners & Retirees', 'Empty Nesters', 'Cultural Explorers', 'First-time Mediterranean visitors', 'Food and wine enthusiasts'].map((item, i) => (
+                                    <li key={i}>
+                                        <div className="vmc-dot"></div>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-            {/* THE "NO" CARD */}
-            <div className="vmc-traveler-card vmc-card-outline">
-                <div className="vmc-status-badge">CONSIDER ALTERNATIVES</div>
-                <h3 className="vmc-traveler-card-heading">
-                    <div className="vmc-icon-box"><X size={24} /></div>
-                    Viking May Not Be Ideal For:
-                </h3>
-                <ul className="vmc-traveler-list">
-                    {['Families with young children (Adults only)', 'Travelers seeking onboard casinos', 'Guests wanting waterparks & thrill rides', 'Groups looking for late-night clubbing scenes'].map((item, i) => (
-                        <li key={i}>
-                            <div className="vmc-x-dot"></div>
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-                <div className="vmc-advisory-note">
-                    <p>Viking maintains a serene, "no-gimmicks" environment focused on the destination.</p>
+                        {/* THE "NO" CARD */}
+                        <div className="vmc-traveler-card vmc-card-outline">
+                            <div className="vmc-status-badge">CONSIDER ALTERNATIVES</div>
+                            <h3 className="vmc-traveler-card-heading">
+                                <div className="vmc-icon-box"><X size={24} /></div>
+                                Viking May Not Be Ideal For:
+                            </h3>
+                            <ul className="vmc-traveler-list">
+                                {['Families with young children (Adults only)', 'Travelers seeking onboard casinos', 'Guests wanting waterparks & thrill rides', 'Groups looking for late-night clubbing scenes'].map((item, i) => (
+                                    <li key={i}>
+                                        <div className="vmc-x-dot"></div>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className="vmc-advisory-note">
+                                <p>Viking maintains a serene, "no-gimmicks" environment focused on the destination.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
             {/* ══════════════════════════════════
                 WHY BOOK THROUGH TRIPS & SHIPS
@@ -1039,6 +1040,171 @@ function VikingMediterraneanCruises() {
                                     <p className="medi-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ THE STITCHED EDITORIAL GRID (SEAMLESS LOOK) ═══════════════ */}
+            <section className="viking-stitched-section">
+                <style>{`
+        .viking-stitched-section {
+            background-color: #ffffff;
+            padding: clamp(60px, 10vw, 120px) 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: #0f172a;
+        }
+        .viking-stitched-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-top: 1px solid #0f172a; /* Bold anchor line */
+        }
+        .viking-stitched-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 40px 20px;
+        }
+        .viking-stitched-heading {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin: 0;
+            line-height: 1;
+        }
+        .viking-stitched-meta {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #3b82f6;
+        }
+
+        /* The Seamless Grid */
+        .viking-stitched-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0; /* No empty spaces */
+            border: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .viking-stitched-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .viking-stitched-item {
+            text-decoration: none;
+            display: block;
+            background-color: #ffffff;
+            padding: clamp(40px, 6vw, 70px);
+            position: relative;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            border: 1px solid #e2e8f0;
+            margin: -0.5px; /* Pulls borders together to prevent double thickness */
+        }
+
+        .viking-stitched-item:hover {
+            background-color: #f8fafc;
+            z-index: 10;
+            box-shadow: inset 0 0 0 2px #0f172a;
+        }
+
+        .viking-stitched-category {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #3b82f6;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .viking-stitched-title {
+            font-size: clamp(22px, 3vw, 28px);
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 15px 0;
+            line-height: 1.2;
+        }
+
+        .viking-stitched-desc {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #64748b;
+            margin: 0 0 40px 0;
+            max-width: 400px;
+        }
+
+        .viking-stitched-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .viking-stitched-number {
+            font-size: 40px;
+            font-weight: 900;
+            color: #f1f5f9;
+            transition: color 0.3s ease;
+        }
+
+        .viking-stitched-item:hover .viking-stitched-number {
+            color: #e2e8f0;
+        }
+
+        .viking-stitched-action {
+            width: 44px;
+            height: 44px;
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0f172a;
+            transition: all 0.4s ease;
+        }
+
+        .viking-stitched-item:hover .viking-stitched-action {
+            background-color: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+            transform: rotate(-45deg);
+        }
+    `}</style>
+
+                <div className="viking-stitched-container">
+                    <header className="viking-stitched-header">
+                        <h2 className="viking-stitched-heading">Beyond Comparison.</h2>
+                        <span className="viking-stitched-meta">04 Insights</span>
+                    </header>
+
+                    <div className="viking-stitched-grid">
+                        {[
+                            { cat: 'The Fleet', title: 'Ocean Cruises', desc: 'A global standard in small ship luxury across all seven continents.', path: '/viking-ocean-cruises', num: '01' },
+                            { cat: 'Wilderness', title: 'Alaska Voyages', desc: 'Navigate the Inside Passage with expert-led coastal expeditions.', path: '/viking-alaska-cruises', num: '02' },
+                            { cat: 'Cultural', title: 'Iceland Series', desc: 'In-depth exploration of the land of fire and ice via regional specialists.', path: '/viking-iceland-cruises', num: '03' },
+                            { cat: 'Analysis', title: 'Viking Reviews', desc: 'Verified guest feedback and expert ratings from our cruise community.', path: '/viking-cruise-reviews', num: '04' }
+                        ].map((item, i) => (
+                            <Link key={i} to={item.path} className="viking-stitched-item">
+                                <span className="viking-stitched-category">
+                                    <span style={{ width: '12px', height: '1px', backgroundColor: '#3b82f6' }}></span>
+                                    {item.cat}
+                                </span>
+
+                                <h3 className="viking-stitched-title">{item.title}</h3>
+                                <p className="viking-stitched-desc">{item.desc}</p>
+
+                                <div className="viking-stitched-footer">
+                                    <span className="viking-stitched-number">{item.num}</span>
+                                    <div className="viking-stitched-action">
+                                        <ChevronRight size={20} />
+                                    </div>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

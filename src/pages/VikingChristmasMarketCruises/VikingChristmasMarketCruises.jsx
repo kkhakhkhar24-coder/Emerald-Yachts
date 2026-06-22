@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
@@ -487,7 +488,191 @@ function VikingChristmasMarketCruises() {
                         ))}
                     </div>
                 </div>
-            </section>/
+            </section>
+
+            {/* ═══════════════ RELATED VIKING CRUISES (SEAMLESS EDITORIAL GRID) ═══════════════ */}
+            <section className="viking-related-seamless">
+                <style>{`
+        .viking-related-seamless {
+            padding: clamp(60px, 10vw, 100px) 0;
+            background-color: #ffffff;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        .viking-related-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #e2e8f0; /* Thin outer frame */
+            display: flex;
+            flex-direction: column;
+        }
+        .viking-related-intro {
+            padding: 40px;
+            background-color: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .viking-related-intro h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f1c2e;
+            margin: 0;
+            letter-spacing: -0.03em;
+        }
+        .viking-related-intro span {
+            color: #3b82f6;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* The Seamless Grid - ZERO GAP */
+        .viking-related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0; 
+        }
+
+        @media (max-width: 768px) {
+            .viking-related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .viking-tile-link {
+            text-decoration: none;
+            display: block;
+            background-color: #ffffff;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-right: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Clean up borders so the grid doesn't have double thickness or outside overflow */
+        @media (min-width: 769px) {
+            .viking-tile-link:nth-child(2n) { border-right: none; }
+            .viking-tile-link:nth-child(3), .viking-tile-link:nth-child(4) { border-bottom: none; }
+        }
+        @media (max-width: 768px) {
+            .viking-tile-link { border-right: none; }
+            .viking-tile-link:last-child { border-bottom: none; }
+        }
+
+        .viking-tile-card {
+            padding: clamp(40px, 6vw, 60px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hover Reveal Background */
+        .viking-tile-link:hover {
+            background-color: #0f1c2e; /* Dark Viking Navy */
+        }
+
+        .viking-tile-icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: #eff6ff;
+            color: #3b82f6;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+        }
+
+        .viking-tile-link:hover .viking-tile-icon-box {
+            background-color: #3b82f6;
+            color: #ffffff;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .viking-tile-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f1c2e;
+            margin: 0 0 12px 0;
+            transition: color 0.4s ease;
+        }
+
+        .viking-tile-link:hover h3 {
+            color: #ffffff;
+        }
+
+        .viking-tile-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #64748b;
+            margin: 0;
+            transition: color 0.4s ease;
+            flex-grow: 1;
+        }
+
+        .viking-tile-link:hover p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .viking-tile-action {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #3b82f6;
+            transition: color 0.4s ease, gap 0.4s ease;
+        }
+
+        .viking-tile-link:hover .viking-tile-action {
+            color: #ffffff;
+            gap: 15px;
+        }
+    `}</style>
+
+                <div className="viking-related-wrapper">
+                    <div className="viking-related-intro">
+                        <div>
+                            <span>Resource Center</span>
+                            <h2>The Viking Series</h2>
+                        </div>
+                        <div style={{ color: '#94a3b8', fontSize: '14px', fontWeight: '500' }}>[ 04 Guides ]</div>
+                    </div>
+
+                    <div className="viking-related-grid">
+                        {[
+                            { title: 'Viking River Cruises', desc: 'The complete portfolio of Viking\'s world-class river journeys across Europe.', path: '/viking-river-cruises', icon: <Ship size={24} /> },
+                            { title: 'Danube River Cruises', desc: 'Explore the heart of Europe through grand capitals and historic villages.', path: '/viking-danube-river-cruises', icon: <Anchor size={24} /> },
+                            { title: 'Rhine River Cruises', desc: 'Sail past fairytale castles and lush vineyards on Europe’s legendary waterway.', path: '/viking-rhine-river-cruises', icon: <Snowflake size={24} /> },
+                            { title: 'Is Viking Worth It', desc: 'A transparent analysis of the value, inclusions, and experience on board.', path: '/is-viking-worth-it', icon: <Award size={24} /> }
+                        ].map((item, i) => (
+                            <Link key={i} to={item.path} className="viking-tile-link">
+                                <div className="viking-tile-card">
+                                    <div className="viking-tile-icon-box">
+                                        {item.icon}
+                                    </div>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.desc}</p>
+                                    <div className="viking-tile-action">
+                                        Explore Guide <ChevronRight size={16} />
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* ═══════════════ FINAL CTA ═══════════════ */}
             <section className="medi-cta-main-section" id="viking-xmas-cta">

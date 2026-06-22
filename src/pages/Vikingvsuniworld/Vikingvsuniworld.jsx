@@ -3,39 +3,42 @@ import Navbar from '../../components/Navbar/Navbar'
 import './Vikingvsuniworld.css'
 
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone, Plus, Minus,
-    Globe, LayoutList, Heart, Utensils, Sun, Award,
-    Baby, Moon, Music,
-    Mic, FileText, GraduationCap, Wallet, Wine, Wifi,
+    Ship, Star, Clock, Users, CheckCircle,
+    Compass, Sparkles, Anchor, Gem,
+    ChevronRight, Crown, Phone,
+    Globe, LayoutList, Heart, Utensils, Award,
+    Mic, FileText, GraduationCap, Wallet,
     UserCheck, Scale, Palette
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 // Import real images from assets
-import heroBg1 from '../../assets/Riverside-vs-Viking/Hero1.webp'
-import heroBg2 from '../../assets/Riverside-vs-Viking/Hero2.webp'
-import heroBg3 from '../../assets/Riverside-vs-Viking/Hero3.webp'
+import heroBg1 from '../../assets/VikingVsUniworld/Exterior_2026-04-13_19-02-40.jpg'
+import heroBg2 from '../../assets/VikingVsUniworld/Budapest, Hungary_2026-04-13_18-46-22.jpg'
+import heroBg3 from '../../assets/VikingVsUniworld/Amsterdam, The Netherlands_2026-04-13_18-45-31.jpg'
 
-import vikingOverviewImg from '../../assets/Riverside-vs-Viking/ImageGallary1.webp'
-import uniworldOverviewImg from '../../assets/RiversideLuxuryCruises/RiversideLuxuryCruises.webp'
+import vikingOverviewImg from '../../assets/VikingVsUniworld/Aquavit Terrace_2026-04-13_18-45-57.jpg'
+import uniworldOverviewImg from '../../assets/VikingVsUniworld/Atrium Stairs_2026-04-13_18-47-32.jpg'
 
-import vikingShipsImg from '../../assets/Riverside-vs-Viking/ImageGallary2.webp'
-import uniworldShipsImg from '../../assets/RiversideLuxuryCruises/Riversideimage2.webp'
+import vikingShipsImg from '../../assets/VikingVsUniworld/French Balcony Stateroom_2026-04-13_18-46-43.jpg'
+import uniworldShipsImg from '../../assets/VikingVsUniworld/Explorer Suite - Living Room_2026-04-13_18-47-55.jpg'
 
-import vikingDiningImg from '../../assets/Riverside-vs-Viking/ImageGallary3.webp'
-import uniworldDiningImg from '../../assets/RiversideLuxuryCruises/Riversideimage3.webp'
+import vikingDiningImg from '../../assets/VikingVsUniworld/World Café _2026-04-13_18-49-30.jpg'
+import uniworldDiningImg from '../../assets/VikingVsUniworld/Chef_s Table_2026-04-13_18-47-48.jpg'
 
-import vikingExcursionsImg from '../../assets/Riverside-vs-Viking/ImageGallary4.webp'
-import uniworldExcursionsImg from '../../assets/RiversideLuxuryCruises/Riversideimage4.webp'
+import vikingExcursionsImg from '../../assets/VikingVsUniworld/Amsterdam, The Netherlands_2026-04-13_18-45-35.jpg'
+import uniworldExcursionsImg from '../../assets/VikingVsUniworld/Rome, Italy_2026-04-13_18-49-04.jpg'
 
-import vikingServiceImg from '../../assets/Riverside-vs-Viking/ImageGallary5.webp'
-import uniworldServiceImg from '../../assets/RiversideLuxuryCruises/Riversideimage5.webp'
+import vikingServiceImg from '../../assets/VikingVsUniworld/Aquavit Terrace Waiter_2026-04-13_18-46-05.jpg'
+import uniworldServiceImg from '../../assets/VikingVsUniworld/Mamsen_s_2026-04-13_18-48-35.jpg'
+
+import vikingDestinationsImg from '../../assets/VikingVsUniworld/Cochem, Germany_2026-04-13_18-46-29.jpg'
+import uniworldDestinationsImg from '../../assets/VikingVsUniworld/Avignon, France_2026-04-13_18-46-12.jpg'
 
 import Profile_AH from '../../assets/Media (2).jpg'
 import Profile_Picture_AH from '../../assets/Media (1).jpg'
+import { Link } from 'react-router'
 
 function VikingVsUniworld() {
 
@@ -543,6 +546,9 @@ function VikingVsUniworld() {
                                 <div className="vu-versus-icon-box vu-icon-viking"><Globe size={20} /></div>
                                 <h3 className="vu-versus-card-title">Viking Destinations</h3>
                             </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={vikingDestinationsImg} alt="Viking Destinations" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
                             <ul className="vu-versus-list">
                                 {['Rhine River', 'Danube River', 'Seine River', 'Douro River', 'Nile River', 'Mekong River'].map((item, i) => (
                                     <li key={i}><CheckCircle size={15} className="vu-versus-list-icon" /><span>{item}</span></li>
@@ -554,6 +560,9 @@ function VikingVsUniworld() {
                             <div className="vu-versus-card-header">
                                 <div className="vu-versus-icon-box vu-icon-uniworld"><Globe size={20} /></div>
                                 <h3 className="vu-versus-card-title">Uniworld Destinations</h3>
+                            </div>
+                            <div style={{ width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px' }}>
+                                <img src={uniworldDestinationsImg} alt="Uniworld Destinations" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <ul className="vu-versus-list">
                                 {['Rhine', 'Danube', 'Seine', 'Douro', 'Venice Lagoon', 'Nile', 'India'].map((item, i) => (
@@ -746,7 +755,7 @@ function VikingVsUniworld() {
                 </div>
             </section>
 
-              {/* ════════════════════════════════════════════════════════════
+            {/* ════════════════════════════════════════════════════════════
                 VIDEO — VIKING
             ════════════════════════════════════════════════════════════ */}
             <section className="vs-video-section">
@@ -1005,6 +1014,55 @@ function VikingVsUniworld() {
                 ANGELA HUGHES AUTHORITY  (medi-authority-section)
             ════════════════════════════════════════════════════════════ */}
             <section className="medi-authority-section">
+                <style>{`
+                    .medi-prestige-seal-ring {
+                        width: 100px !important;
+                        height: 100px !important;
+                        border-radius: 50% !important;
+                        border: none !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        margin-bottom: 24px !important;
+                        position: relative !important;
+                        animation: none !important;
+                    }
+
+                    .medi-prestige-rotating-border {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 50%;
+                        border: 2px dashed rgba(255, 255, 255, 0.2);
+                        animation: slow-spin 30s linear infinite;
+                        z-index: 1;
+                    }
+
+                    .medi-prestige-seal-ring img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid rgba(255, 255, 255, 0.2);
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    @media (max-width: 767px) {
+                        .medi-prestige-seal-ring {
+                            width: 80px !important;
+                            height: 80px !important;
+                            border: none !important;
+                            animation: none !important;
+                        }
+                        .medi-prestige-seal-ring img {
+                            width: 64px !important;
+                            height: 64px !important;
+                        }
+                    }
+                `}</style>
                 <div className="medi-authority-container">
                     <div className="medi-authority-header-block">
                         <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
@@ -1015,7 +1073,8 @@ function VikingVsUniworld() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
+                                <div className="medi-prestige-rotating-border"></div>
+                                <img src={Profile_AH} alt="Angela Hughes" />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1059,7 +1118,7 @@ function VikingVsUniworld() {
             </section>
 
 
-  {/* ════════════════════════════════════════════════════════════
+            {/* ════════════════════════════════════════════════════════════
                 VIDEO — UNIWORLD
             ════════════════════════════════════════════════════════════ */}
             <section className="vs-video-section vs-video-section-alt">
@@ -1089,7 +1148,191 @@ function VikingVsUniworld() {
                 </div>
             </section>
 
+            {/* ═══════════════ VIKING RESEARCH HUB (SEAMLESS GRID) ═══════════════ */}
+            <section className="vu-research-hub-section">
+                <style>{`
+        .vu-research-hub-section {
+            background-color: #ffffff;
+            padding: clamp(80px, 10vw, 120px) 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        .vu-research-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            border-top: 1px solid #0f1c2e;
+            border-bottom: 1px solid #0f1c2e;
+            display: flex;
+            flex-direction: column;
+        }
 
+        /* Seamless Grid Header */
+        .vu-research-header {
+            padding: 30px 40px;
+            background-color: #f8fafc;
+            border-bottom: 1px solid #0f1c2e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .vu-research-heading {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #0f1c2e;
+            margin: 0;
+        }
+        .vu-research-meta {
+            font-size: 12px;
+            font-weight: 600;
+            color: #3b82f6;
+            text-transform: uppercase;
+        }
+
+        /* Zero Gap Grid */
+        .vu-research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0; 
+        }
+        @media (max-width: 992px) {
+            .vu-research-grid { grid-template-columns: 1fr; }
+        }
+
+        .vu-research-item {
+            text-decoration: none;
+            padding: clamp(50px, 6vw, 80px) 40px;
+            background-color: #ffffff;
+            border-right: 1px solid #e2e8f0;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .vu-research-item:last-child { border-right: none; }
+        @media (max-width: 992px) {
+            .vu-research-item { border-right: none; border-bottom: 1px solid #e2e8f0; }
+        }
+
+        /* Hover Interaction */
+        .vu-research-item:hover {
+            background-color: #0f1c2e;
+        }
+
+        .vu-research-cat {
+            font-size: 11px;
+            font-weight: 700;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .vu-research-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0f1c2e;
+            margin: 0 0 15px 0;
+            line-height: 1.2;
+            transition: color 0.4s ease;
+        }
+        .vu-research-item:hover .vu-research-title {
+            color: #ffffff;
+        }
+
+        .vu-research-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #64748b;
+            margin: 0 0 40px 0;
+            flex-grow: 1;
+            transition: color 0.4s ease;
+        }
+        .vu-research-item:hover .vu-research-desc {
+            color: #94a3b8;
+        }
+
+        .vu-research-action {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #0f1c2e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+        .vu-research-item:hover .vu-research-action {
+            color: #ffffff;
+            transform: translateX(8px);
+        }
+        .vu-research-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        .vu-research-item:hover .vu-research-circle {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+            color: #ffffff;
+        }
+    `}</style>
+
+                <div className="vu-research-container">
+                    <header className="vu-research-header">
+                        <h2 className="vu-research-heading">Viking Research Hub</h2>
+                        <span className="vu-research-meta">Planning Essentials</span>
+                    </header>
+
+                    <div className="vu-research-grid">
+                        {/* LINK 1 */}
+                        <Link to="/viking-river-cruises" className="vu-research-item">
+                            <span className="vu-research-cat">Fleet Exploration</span>
+                            <h3 className="vu-research-title">Viking River Cruises</h3>
+                            <p className="vu-research-desc">
+                                A comprehensive guide to the Longship fleet and destination immersion on Europe's historic waterways.
+                            </p>
+                            <div className="vu-research-action">
+                                Explore Guide
+                                <div className="vu-research-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+
+                        {/* LINK 2 */}
+                        <Link to="/viking-cruise-reviews" className="vu-research-item">
+                            <span className="vu-research-cat">Guest Perspectives</span>
+                            <h3 className="vu-research-title">Viking Reviews</h3>
+                            <p className="vu-research-desc">
+                                Verified guest feedback and expert analysis covering service, culinary programs, and shore excursions.
+                            </p>
+                            <div className="vu-research-action">
+                                Read Reviews
+                                <div className="vu-research-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+
+                        {/* LINK 3 */}
+                        <Link to="/viking-cruise-cost-guide" className="vu-research-item">
+                            <span className="vu-research-cat">Investment Analysis</span>
+                            <h3 className="vu-research-title">Viking Cost Guide</h3>
+                            <p className="vu-research-desc">
+                                Detailed transparency into pricing, luxury inclusions, and the value of Viking's all-inclusive airfare.
+                            </p>
+                            <div className="vu-research-action">
+                                View Pricing
+                                <div className="vu-research-circle"><ChevronRight size={14} /></div>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
             {/* ════════════════════════════════════════════════════════════
                 FAQ  (medi-faq-main-section)
@@ -1116,9 +1359,9 @@ function VikingVsUniworld() {
                 </div>
             </section>
 
-          
 
-          
+
+
 
 
             {/* ════════════════════════════════════════════════════════════
