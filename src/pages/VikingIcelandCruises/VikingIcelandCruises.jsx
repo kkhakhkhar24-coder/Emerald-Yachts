@@ -4,7 +4,11 @@ import {
     Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone,
     Globe, Utensils, Award,
-    Mountain, Snowflake, Sun, TreePine, Camera, Bird
+    Mountain, Snowflake, Sun, TreePine, Camera, Bird,
+    GraduationCap,
+    Clock,
+    Mic,
+    FileText
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -23,6 +27,8 @@ import destImg1 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarc
 import destImg2 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarctica_2026-04-13_19-01-02.jpg'
 import destImg3 from '../../assets/VikingIcelandCruises/Expedition Ship - Antarctica_2026-04-13_19-01-03.jpg'
 import destImg4 from '../../assets/VikingIcelandCruises/Niagara & The Great Lakes_2026-04-13_18-44-07.jpg'
+
+import profileAH from '../../assets/VikingIcelandCruises/Profile_AH.jpg'
 
 function VikingIcelandCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
@@ -438,6 +444,461 @@ function VikingIcelandCruises() {
                                 <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ════════════════════════════════════════════════════════════
+                ANGELA HUGHES AUTHORITY  (medi-authority-section)
+            ════════════════════════════════════════════════════════════ */}
+            <section className="medi-authority-section">
+                <style>{`
+                    .medi-authority-section {
+                        background: #f1f5f9;
+                        position: relative;
+                        overflow: hidden;
+                        padding: 100px 20px;
+                        border-bottom: 1px solid #e2e8f0;
+                        font-family: 'Inter', -apple-system, sans-serif;
+                    }
+
+                    .medi-authority-section::before {
+                        content: '';
+                        position: absolute;
+                        width: 800px;
+                        height: 800px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, #ffffff 0%, transparent 70%);
+                        top: -300px;
+                        right: -200px;
+                        pointer-events: none;
+                        z-index: 1;
+                        opacity: 0.5;
+                    }
+
+                    .medi-authority-container {
+                        max-width: 1100px;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    .medi-authority-header-block {
+                        text-align: center;
+                        margin-bottom: 60px;
+                    }
+
+                    .medi-authority-eyebrow {
+                        display: inline-block;
+                        font-size: 13px;
+                        font-weight: 700;
+                        letter-spacing: 0.25em;
+                        color: #274472;
+                        margin-bottom: 16px;
+                        text-transform: uppercase;
+                    }
+
+                    .medi-prestige-plaque-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        background: #ffffff;
+                        border-radius: 32px;
+                        border: 1px solid #e2e8f0;
+                        box-shadow: 0 40px 90px rgba(15, 28, 46, 0.05);
+                        overflow: hidden;
+                        position: relative;
+                        height: 580px;
+                    }
+
+                    .medi-prestige-plaque-wrapper::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 8px;
+                        height: 100%;
+                        background: linear-gradient(to bottom, #274472, #274472cc);
+                    }
+
+                    .medi-prestige-identity-card {
+                        flex: 0 0 350px;
+                        background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+                        padding: 40px 30px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: #ffffff;
+                        position: relative;
+                        height: 100%;
+                    }
+
+                    .medi-prestige-seal-ring {
+                        width: 100px !important;
+                        height: 100px !important;
+                        border-radius: 50% !important;
+                        border: none !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        margin-bottom: 24px !important;
+                        position: relative !important;
+                        animation: none !important;
+                    }
+
+                    .medi-prestige-rotating-border {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 50%;
+                        border: 2px dashed rgba(255, 255, 255, 0.2);
+                        animation: slow-spin 30s linear infinite;
+                        z-index: 1;
+                    }
+
+                    .medi-prestige-seal-ring img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid rgba(255, 255, 255, 0.2);
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    @keyframes slow-spin {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                    }
+
+                    .medi-prestige-initials {
+                        font-size: 28px;
+                        font-weight: 500;
+                        letter-spacing: 0.1em;
+                        color: #eff6ff;
+                        animation: reverse-spin 30s linear infinite;
+                    }
+
+                    @keyframes reverse-spin {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(-360deg); }
+                    }
+
+                    .medi-prestige-label {
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.2em;
+                        color: #cbd5e1;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                    }
+
+                    .medi-prestige-name {
+                        font-size: 28px;
+                        font-family: serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        margin: 0 0 12px 0;
+                        line-height: 1.2;
+                    }
+
+                    .medi-prestige-role-pill {
+                        background: rgba(39, 68, 114, 0.2);
+                        border: 1px solid rgba(39, 68, 114, 0.3);
+                        padding: 6px 14px;
+                        border-radius: 30px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #eff6ff;
+                        margin-bottom: 24px;
+                    }
+
+                    .medi-prestige-meta-box {
+                        width: 100%;
+                        position: relative;
+                        padding-top: 20px;
+                    }
+
+                    .medi-prestige-meta-line {
+                        width: 50px;
+                        height: 1px;
+                        background: rgba(255, 255, 255, 0.15);
+                        margin: 0 auto 16px;
+                    }
+
+                    .medi-prestige-meta-text {
+                        font-size: 12px;
+                        color: #cbd5e1;
+                        opacity: 0.7;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                    }
+
+                    .medi-prestige-credentials-column {
+                        flex: 1;
+                        padding: 40px;
+                        background: #ffffff;
+                        overflow-y: auto;
+                        height: 100%;
+                    }
+
+                    .medi-prestige-credentials-column::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+                    .medi-prestige-credentials-column::-webkit-scrollbar-track {
+                        background: #eff6ff;
+                        border-radius: 4px;
+                    }
+
+                    .medi-prestige-credentials-column::-webkit-scrollbar-thumb {
+                        background: #274472cc;
+                        border-radius: 4px;
+                    }
+
+                    .medi-prestige-credentials-column::-webkit-scrollbar-thumb:hover {
+                        background: #274472;
+                    }
+
+                    .medi-prestige-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                    }
+
+                    .medi-prestige-item-card {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 16px 24px;
+                        border-radius: 14px;
+                        background: #ffffff;
+                        border: 1px solid #eff6ff;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .medi-prestige-item-accent-bar {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 4px;
+                        height: 100%;
+                        background: #274472;
+                        transform: scaleY(0);
+                        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        transform-origin: bottom;
+                    }
+
+                    .medi-prestige-item-card:hover {
+                        transform: translateX(6px);
+                        box-shadow: 0 10px 24px rgba(15, 28, 46, 0.04);
+                        border-color: rgba(39, 68, 114, 0.3);
+                    }
+
+                    .medi-prestige-item-card:hover .medi-prestige-item-accent-bar {
+                        transform: scaleY(1);
+                    }
+
+                    .medi-prestige-item-icon-box {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 10px;
+                        background: #eff6ff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #274472;
+                        flex-shrink: 0;
+                        transition: all 0.4s ease;
+                    }
+
+                    .medi-prestige-item-card:hover .medi-prestige-item-icon-box {
+                        background: #274472;
+                        color: #ffffff;
+                        transform: scale(1.05);
+                    }
+
+                    .medi-prestige-item-content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                    }
+
+                    .medi-prestige-item-category {
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.15em;
+                        color: #274472;
+                        opacity: 0.6;
+                        text-transform: uppercase;
+                    }
+
+                    .medi-prestige-item-card:hover .medi-prestige-item-category {
+                        color: #274472;
+                        opacity: 0.9;
+                    }
+
+                    .medi-prestige-item-text {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #0f1c2e;
+                        margin: 0;
+                        line-height: 1.5;
+                        transition: color 0.3s ease;
+                    }
+
+                    .medi-prestige-item-card:hover .medi-prestige-item-text {
+                        color: #274472;
+                    }
+
+                    @media (max-width: 992px) {
+                        .medi-prestige-plaque-wrapper {
+                            flex-direction: column;
+                            height: auto;
+                        }
+
+                        .medi-prestige-plaque-wrapper::before {
+                            width: 100%;
+                            height: 6px;
+                        }
+
+                        .medi-prestige-identity-card {
+                            flex: 1 0 auto;
+                            padding: 40px 24px;
+                            height: auto;
+                        }
+
+                        .medi-prestige-credentials-column {
+                            padding: 30px 20px;
+                            height: 400px;
+                        }
+
+                        .medi-prestige-item-card {
+                            padding: 14px 20px;
+                            gap: 14px;
+                        }
+                    }
+
+                    @media (max-width: 767px) {
+                        .medi-authority-header-block {
+                            margin-bottom: 40px;
+                        }
+
+                        .medi-authority-eyebrow {
+                            font-size: 11px;
+                            letter-spacing: 0.16em;
+                            margin-bottom: 12px;
+                        }
+
+                        .medi-prestige-plaque-wrapper {
+                            border-radius: 20px;
+                        }
+
+                        .medi-prestige-identity-card {
+                            padding: 28px 18px;
+                        }
+
+                        .medi-prestige-seal-ring {
+                            width: 80px;
+                            height: 80px;
+                            margin-bottom: 16px;
+                        }
+
+                        .medi-prestige-initials {
+                            font-size: 22px;
+                        }
+                        
+                        .medi-authority-section {
+                            padding: 50px 10px !important;
+                        }
+                        .medi-authority-container {
+                            padding: 0 !important;
+                        }
+                        .medi-authority-eyebrow {
+                            font-size: 11px !important;
+                            letter-spacing: 1.5px !important;
+                        }
+                        .medi-prestige-plaque-wrapper {
+                            gap: 24px !important;
+                        }
+                        .medi-prestige-identity-card {
+                            padding: 24px 14px !important;
+                            border-radius: 16px !important;
+                        }
+                        .medi-prestige-seal-ring {
+                            width: 80px !important;
+                            height: 80px !important;
+                            border: none !important;
+                            animation: none !important;
+                        }
+                        .medi-prestige-seal-ring img {
+                            width: 64px !important;
+                            height: 64px !important;
+                        }
+                        .medi-prestige-name {
+                            font-size: 20px !important;
+                        }
+                        .medi-prestige-role-pill {
+                            font-size: 12px !important;
+                            padding: 6px 14px !important;
+                        }
+                    }
+                `}</style>
+                <div className="medi-authority-container">
+                    <div className="medi-authority-header-block">
+                        <span className="medi-authority-eyebrow">ELITE INDUSTRY LEADERSHIP</span>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Meet Angela Hughes</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    </div>
+
+                    <div className="medi-prestige-plaque-wrapper">
+                        <div className="medi-prestige-identity-card">
+                            <div className="medi-prestige-seal-ring">
+                                <div className="medi-prestige-rotating-border"></div>
+                                <img src={profileAH} alt="Angela Hughes" />
+                            </div>
+                            <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
+                            <h3 className="medi-prestige-name">Angela Hughes</h3>
+                            <div className="medi-prestige-role-pill">CEO of Trips &amp; Ships Luxury Travel</div>
+                            <div className="medi-prestige-meta-box">
+                                <div className="medi-prestige-meta-line"></div>
+                                <span className="medi-prestige-meta-text">Est. 1986 | Global Authority</span>
+                            </div>
+                        </div>
+
+                        <div className="medi-prestige-credentials-column">
+                            <div className="medi-prestige-list">
+                                {[
+                                    { text: "Founder of Luxury Travel University", icon: GraduationCap, category: "EDUCATION" },
+                                    { text: "CEO of Trips & Ships Luxury Travel", icon: Crown, category: "LEADERSHIP" },
+                                    { text: "40+ years in luxury travel", icon: Clock, category: "EXPERIENCE" },
+                                    { text: "Traveled to 121+ countries", icon: Globe, category: "EXPLORATION" },
+                                    { text: "Global luxury travel speaker", icon: Mic, category: "SPEAKING" },
+                                    { text: "Weekly travel columnist", icon: FileText, category: "MEDIA" },
+                                    { text: "Travel Leaders Network Advisory Board member", icon: Users, category: "LEADERSHIP" },
+                                    { text: "2024 Luxury Travel Influencer of the Year", icon: Award, category: "HONOR" },
+                                    { text: "Named among the Most Influential Women in Travel in 2026", icon: Crown, category: "PRESTIGE" },
+                                    { text: "Luxury river and ocean cruise specialist", icon: Ship, category: "SPECIALTY" }
+                                ].map((accolade, idx) => {
+                                    const IconComp = accolade.icon;
+                                    return (
+                                        <div key={idx} className="medi-prestige-item-card">
+                                            <div className="medi-prestige-item-accent-bar"></div>
+                                            <div className="medi-prestige-item-icon-box"><IconComp size={16} /></div>
+                                            <div className="medi-prestige-item-content">
+                                                <span className="medi-prestige-item-category">{accolade.category}</span>
+                                                <h4 className="medi-prestige-item-text">{accolade.text}</h4>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
