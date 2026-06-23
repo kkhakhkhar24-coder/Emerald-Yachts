@@ -1,0 +1,1058 @@
+/* ============================================================
+   DonorRiverCruises — NEW SECTION STYLES
+   Only uses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   Fully responsive: Desktop (>1024px) / Tablet (≤1024px) / Mobile (≤768px)
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   WHY DONOR TRAVEL WORKS — stat highlight strip
+---------------------------------------------------------- */
+.drc-why-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.drc-why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-why-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-why-lead {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.drc-why-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.drc-why-image-col {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 420px;
+}
+
+.drc-why-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drc-why-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, transparent 55%);
+}
+
+.drc-why-image-stat {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 18px 22px;
+}
+
+.drc-why-image-stat-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.drc-why-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.drc-why-content-intro {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin: 0 0 6px 0;
+}
+
+.drc-why-point-card {
+    background: var(--medi-bg-soft);
+    border-radius: 14px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.drc-why-point-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.08);
+}
+
+.drc-why-point-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.drc-why-point-body h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 4px 0;
+}
+
+.drc-why-point-body p {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   WHY RIVER CRUISES — dark section with intimate stats
+---------------------------------------------------------- */
+.drc-river-why-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.drc-river-why-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.drc-river-why-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.drc-river-why-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.drc-river-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.drc-river-why-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 24px;
+    transition: all 0.3s ease;
+}
+
+.drc-river-why-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-4px);
+}
+
+.drc-river-why-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.drc-river-why-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.drc-river-why-text {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.drc-river-stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.drc-river-stat-item {
+    text-align: center;
+}
+
+.drc-river-stat-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.drc-river-stat-label {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------
+   BENEFITS SECTION — 5 benefit cards
+---------------------------------------------------------- */
+.drc-benefits-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.drc-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-benefits-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.drc-benefit-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    padding: 32px 26px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.drc-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 36px rgba(39, 68, 114, 0.1);
+}
+
+.drc-benefit-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.drc-benefit-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.drc-benefit-desc {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.drc-benefit-sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.drc-benefit-sublist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+.drc-benefit-sublist svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   DESTINATIONS — 4 river cards with images
+---------------------------------------------------------- */
+.drc-destinations-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.drc-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-destinations-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.drc-destination-card {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+    background: var(--medi-bg-white);
+}
+
+.drc-destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 44px rgba(39, 68, 114, 0.12);
+}
+
+.drc-destination-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.drc-destination-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.drc-destination-card:hover .drc-destination-image-wrap img {
+    transform: scale(1.05);
+}
+
+.drc-destination-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.drc-destination-body {
+    padding: 26px 26px;
+}
+
+.drc-destination-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.drc-destination-intro {
+    font-size: 14.5px;
+    color: #64748b;
+    margin: 0 0 18px 0;
+    line-height: 1.6;
+}
+
+.drc-destination-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.drc-destination-col-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 8px 0;
+}
+
+.drc-destination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.drc-destination-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 13.5px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.drc-destination-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   EDUCATIONAL PROGRAMMING
+---------------------------------------------------------- */
+.drc-education-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.drc-education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-education-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-education-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.drc-education-image-col {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 420px;
+    position: relative;
+}
+
+.drc-education-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drc-education-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drc-education-intro {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin: 0 0 8px;
+}
+
+.drc-education-program-card {
+    background: var(--medi-bg-white);
+    border-radius: 14px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.drc-education-program-card:hover {
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.09);
+    transform: translateX(4px);
+}
+
+.drc-education-program-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.drc-education-program-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 4px 0;
+}
+
+.drc-education-program-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   ADVANCEMENT GOALS — 5 pillars
+---------------------------------------------------------- */
+.drc-advancement-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.drc-advancement-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-advancement-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-advancement-intro {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.drc-advancement-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.drc-advancement-pillar {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    transition: all 0.3s ease;
+}
+
+.drc-advancement-pillar:hover {
+    background: var(--medi-navy);
+    transform: translateY(-5px);
+}
+
+.drc-advancement-pillar-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+    transition: background 0.3s ease;
+}
+
+.drc-advancement-pillar:hover .drc-advancement-pillar-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.drc-advancement-pillar-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 8px 0;
+    transition: color 0.3s ease;
+}
+
+.drc-advancement-pillar:hover .drc-advancement-pillar-title {
+    color: #ffffff;
+}
+
+.drc-advancement-pillar-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.drc-advancement-pillar:hover .drc-advancement-pillar-desc {
+    color: #cbd5e1;
+}
+
+/* ----------------------------------------------------------
+   WHY LUXURY MATTERS — split image + list
+---------------------------------------------------------- */
+.drc-luxury-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.drc-luxury-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.drc-luxury-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.drc-luxury-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px;
+}
+
+.drc-luxury-content-intro {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin: 0 0 28px;
+}
+
+.drc-luxury-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.drc-luxury-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.drc-luxury-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.drc-luxury-conclusion {
+    font-size: 14.5px;
+    color: #94a3b8;
+    font-style: italic;
+    margin: 20px 0 0;
+    line-height: 1.6;
+}
+
+.drc-luxury-image-col {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 440px;
+    position: relative;
+}
+
+.drc-luxury-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------------------------------------------------
+   WHY TRIPS & SHIPS — services grid
+---------------------------------------------------------- */
+.drc-services-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.drc-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drc-services-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.drc-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.drc-service-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 28px 24px;
+    border-left: 4px solid var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.drc-service-card:hover {
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.1);
+    transform: translateX(4px);
+}
+
+.drc-service-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.drc-service-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 8px 0;
+}
+
+.drc-service-desc {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   BEST FOR — organisations grid
+---------------------------------------------------------- */
+.drc-bestfor-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.drc-bestfor-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.drc-bestfor-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.drc-bestfor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.drc-bestfor-card {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 26px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+}
+
+.drc-bestfor-card:hover {
+    background: var(--medi-navy);
+    transform: translateY(-4px);
+}
+
+.drc-bestfor-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    transition: background 0.3s ease;
+}
+
+.drc-bestfor-card:hover .drc-bestfor-icon-box {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.drc-bestfor-name {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.drc-bestfor-card:hover .drc-bestfor-name {
+    color: #ffffff;
+}
+
+/* ============================================================
+   RESPONSIVE — 3 BREAKPOINTS
+   ============================================================ */
+
+/* ---------- TABLET (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .drc-why-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-why-image-col {
+        height: 300px;
+    }
+
+    .drc-river-why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drc-benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drc-destinations-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .drc-education-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-education-image-col {
+        height: 280px;
+    }
+
+    .drc-advancement-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .drc-luxury-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-luxury-image-col {
+        height: 300px;
+        order: -1;
+    }
+
+    .drc-services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drc-bestfor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .drc-why-section,
+    .drc-river-why-section,
+    .drc-benefits-section,
+    .drc-destinations-section,
+    .drc-education-section,
+    .drc-advancement-section,
+    .drc-luxury-section,
+    .drc-services-section,
+    .drc-bestfor-section {
+        padding: 70px 24px;
+    }
+}
+
+/* ---------- MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    .drc-why-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-why-image-col {
+        height: 240px;
+    }
+
+    .drc-river-why-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .drc-river-stat-row {
+        gap: 28px;
+    }
+
+    .drc-river-stat-number {
+        font-size: 28px;
+    }
+
+    .drc-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .drc-destinations-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .drc-destination-cols {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .drc-destination-image-wrap {
+        height: 190px;
+    }
+
+    .drc-education-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-education-image-col {
+        height: 220px;
+    }
+
+    .drc-advancement-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .drc-advancement-pillar {
+        padding: 22px 16px;
+    }
+
+    .drc-luxury-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-luxury-image-col {
+        height: 240px;
+    }
+
+    .drc-luxury-content h2 {
+        font-size: 24px;
+    }
+
+    .drc-services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .drc-bestfor-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .drc-benefit-card,
+    .drc-service-card,
+    .drc-education-program-card,
+    .drc-why-point-card {
+        padding: 20px 18px;
+    }
+
+    .drc-destination-body {
+        padding: 20px 20px;
+    }
+
+    .drc-why-section,
+    .drc-river-why-section,
+    .drc-benefits-section,
+    .drc-destinations-section,
+    .drc-education-section,
+    .drc-advancement-section,
+    .drc-luxury-section,
+    .drc-services-section,
+    .drc-bestfor-section {
+        padding: 56px 16px;
+    }
+
+    .drc-why-header,
+    .drc-river-why-header,
+    .drc-benefits-header,
+    .drc-destinations-header,
+    .drc-education-header,
+    .drc-advancement-header,
+    .drc-services-header,
+    .drc-bestfor-header {
+        margin-bottom: 36px;
+    }
+}
+
+/* ---------- SMALL MOBILE (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .drc-advancement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .drc-bestfor-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drc-river-stat-row {
+        gap: 20px;
+    }
+
+    .drc-river-stat-number {
+        font-size: 24px;
+    }
+
+    .drc-benefit-icon-box,
+    .drc-service-icon-box {
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -89,6 +89,9 @@ import Vikingvsscenic from "./pages/Vikingvsscenic/Vikingvsscenic";
 import Vikingvsuniworld from "./pages/Vikingvsuniworld/Vikingvsuniworld";
 import Whyiresistedviking from "./pages/Whyiresistedviking/Whyiresistedviking";
 import VikingCruiseResourceCenter from "./pages/VikingCruiseResourceCenter/VikingCruiseResourceCenter";
+import DonorRiverCruises from "./pages/Donorrivercruises/Donorrivercruises";
+import Donorsafaris from "./pages/Donorsafaris/Donorsafaris";
+
 
 function App() {
   return (
@@ -474,6 +477,17 @@ function App() {
             path="/viking-cruise-resource-center"
             element={< VikingCruiseResourceCenter />}
           />
+
+           <Route
+            path="/donor-river-cruises"
+            element={< DonorRiverCruises />}
+          />
+
+           <Route
+            path="/donor-safaris"
+            element={< Donorsafaris />}
+          />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
