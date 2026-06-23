@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 // import './AzamaraMediterraneanCruises.css'
-import './DonorRiverCruises.css'
+import './Donorrivercruises.css'
 
 import {
     Ship, MapPin, Star, CheckCircle, Anchor, Gem,
@@ -18,24 +18,24 @@ import { useState, useEffect } from 'react'
    IMAGE PLACEHOLDERS — swap with real imports
    e.g. import donorHero1 from '../../assets/DonorRiverCruises/hero1.jpg'
 ──────────────────────────────────────────────────────────────── */
-const HERO_1            = 'https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1600&q=80'
-const HERO_2            = 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=80'
-const HERO_3            = 'https://images.unsplash.com/photo-1469796466635-455ede028aca?w=1600&q=80'
+// const HERO_1            = 'https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1600&q=80'
+// const HERO_2            = 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=80'
+// const HERO_3            = 'https://images.unsplash.com/photo-1469796466635-455ede028aca?w=1600&q=80'
 
-const WHY_TRAVEL_IMG    = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80'
-const RHINE_IMG         = 'https://images.unsplash.com/photo-1599921841143-819065a55cc5?w=900&q=80'
-const DANUBE_IMG        = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80'
-const SEINE_IMG         = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80'
-const DOURO_IMG         = 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=900&q=80'
-const LECTURE_IMG       = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80'
-const LUXURY_SHIP_IMG   = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-const ANGELA_IMG        = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+// const WHY_TRAVEL_IMG    = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80'
+// const RHINE_IMG         = 'https://images.unsplash.com/photo-1599921841143-819065a55cc5?w=900&q=80'
+// const DANUBE_IMG        = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80'
+// const SEINE_IMG         = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80'
+// const DOURO_IMG         = 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=900&q=80'
+// const LECTURE_IMG       = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80'
+// const LUXURY_SHIP_IMG   = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
+// const ANGELA_IMG        = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
 
 /* ════════════════════════════════════════════════════════════ */
 
 function DonorRiverCruises() {
 
-    const heroImages = [HERO_1, HERO_2, HERO_3]
+    const heroImages = []
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -185,7 +185,7 @@ function DonorRiverCruises() {
                     <div className="drc-why-layout">
                         {/* Image col */}
                         <div className="drc-why-image-col">
-                            <img src={WHY_TRAVEL_IMG} alt="Donors on a river cruise" />
+                            {/* <img src={WHY_TRAVEL_IMG} alt="Donors on a river cruise" /> */}
                             <div className="drc-why-image-overlay"></div>
                             <div className="drc-why-image-stat">
                                 <p className="drc-why-image-stat-text">Traditional fundraising events often provide only a few hours of interaction. A donor river cruise offers something completely different.</p>
@@ -348,7 +348,7 @@ function DonorRiverCruises() {
                         {/* Rhine */}
                         <div className="drc-destination-card">
                             <div className="drc-destination-image-wrap">
-                                <img src={RHINE_IMG} alt="Rhine River Cruise" />
+                                {/* <img src={RHINE_IMG} alt="Rhine River Cruise" /> */}
                                 <span className="drc-destination-badge">Most Requested</span>
                             </div>
                             <div className="drc-destination-body">
@@ -374,7 +374,7 @@ function DonorRiverCruises() {
                         {/* Danube */}
                         <div className="drc-destination-card">
                             <div className="drc-destination-image-wrap">
-                                <img src={DANUBE_IMG} alt="Danube River Cruise" />
+                                {/* <img src={DANUBE_IMG} alt="Danube River Cruise" /> */}
                                 <span className="drc-destination-badge">Cultural Immersion</span>
                             </div>
                             <div className="drc-destination-body">
@@ -400,7 +400,7 @@ function DonorRiverCruises() {
                         {/* Seine */}
                         <div className="drc-destination-card">
                             <div className="drc-destination-image-wrap">
-                                <img src={SEINE_IMG} alt="Seine River Cruise" />
+                                {/* <img src={SEINE_IMG} alt="Seine River Cruise" /> */}
                                 <span className="drc-destination-badge">Arts & Culture</span>
                             </div>
                             <div className="drc-destination-body">
@@ -426,7 +426,7 @@ function DonorRiverCruises() {
                         {/* Douro */}
                         <div className="drc-destination-card">
                             <div className="drc-destination-image-wrap">
-                                <img src={DOURO_IMG} alt="Douro River Cruise" />
+                                {/* <img src={DOURO_IMG} alt="Douro River Cruise" /> */}
                                 <span className="drc-destination-badge">Luxury Favourite</span>
                             </div>
                             <div className="drc-destination-body">
@@ -459,7 +459,7 @@ function DonorRiverCruises() {
 
                     <div className="drc-education-layout">
                         <div className="drc-education-image-col">
-                            <img src={LECTURE_IMG} alt="Faculty lecture on a donor cruise" />
+                            {/* <img src={LECTURE_IMG} alt="Faculty lecture on a donor cruise" /> */}
                         </div>
 
                         <div className="drc-education-content-col">
@@ -543,7 +543,7 @@ function DonorRiverCruises() {
                         </div>
 
                         <div className="drc-luxury-image-col">
-                            <img src={LUXURY_SHIP_IMG} alt="Luxury river cruise ship" />
+                            {/* <img src={LUXURY_SHIP_IMG} alt="Luxury river cruise ship" /> */}
                         </div>
                     </div>
                 </div>
@@ -589,7 +589,7 @@ function DonorRiverCruises() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Travel Expert" />
+                                {/* <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Travel Expert" /> */}
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                         </div>

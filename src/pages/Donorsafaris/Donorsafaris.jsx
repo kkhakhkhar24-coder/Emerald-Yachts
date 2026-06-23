@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './DonorSafaris.css'
+import './Donorsafaris.css'
 // import Profile_AH from '../../assets/Profile_AH.jpg'
 // import Profile_Picture_AH from '../../assets/Profile_Picture_AH.jpg';
 
