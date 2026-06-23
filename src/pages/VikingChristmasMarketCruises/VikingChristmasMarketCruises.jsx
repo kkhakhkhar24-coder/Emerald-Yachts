@@ -4,7 +4,11 @@ import {
     Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone,
     Globe, Utensils, Award,
-    Gift, Snowflake, Wine, Music, Heart, TreePine
+    Gift, Snowflake, Wine, Music, Heart, TreePine,
+    GraduationCap,
+    Clock,
+    Mic,
+    FileText
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -16,6 +20,7 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 // import hero2 from '../../assets/VikingChristmasMarketCruises/christmas-market-hero-2.jpg'
 // import hero3 from '../../assets/VikingChristmasMarketCruises/christmas-market-hero-3.jpg'
 // import longshipImg from '../../assets/VikingChristmasMarketCruises/viking-longship-holiday.jpg'
+import Profile_AH from '../../assets/VikingChristmasMarketCruises/Profile_AH.jpg'
 
 function VikingChristmasMarketCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
