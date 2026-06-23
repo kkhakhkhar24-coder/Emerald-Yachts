@@ -91,6 +91,7 @@ import Whyiresistedviking from "./pages/Whyiresistedviking/Whyiresistedviking";
 import VikingCruiseResourceCenter from "./pages/VikingCruiseResourceCenter/VikingCruiseResourceCenter";
 import DonorRiverCruises from "./pages/Donorrivercruises/Donorrivercruises";
 import Donorsafaris from "./pages/Donorsafaris/Donorsafaris";
+import TravelProgramsOperaCompanies from "./pages/TravelProgramsOperaCompanies/TravelProgramsOperaCompanies";
 
 
 function App() {
@@ -478,14 +479,19 @@ function App() {
             element={< VikingCruiseResourceCenter />}
           />
 
-           <Route
+          <Route
             path="/donor-river-cruises"
             element={< DonorRiverCruises />}
           />
 
-           <Route
+          <Route
             path="/donor-safaris"
             element={< Donorsafaris />}
+          />
+
+          <Route
+            path="/travel-programs-for-opera-companies"
+            element={< TravelProgramsOperaCompanies />}
           />
 
         </Routes>

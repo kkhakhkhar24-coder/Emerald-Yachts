@@ -609,7 +609,7 @@ const Navbar = () => {
                 Viking Cruise Resource Center
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/donor-river-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -624,7 +624,15 @@ const Navbar = () => {
               >
                 Donor safaris
               </NavLink>
-              
+
+              {/* <NavLink
+                to="/travel-programs-for-opera-companies"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs for Opera Companies
+              </NavLink> */}
+
             </div>
           </div>
         </div>
@@ -1243,21 +1251,29 @@ const Navbar = () => {
               Viking Cruise Resource Center
             </NavLink>
 
-             <NavLink
-                to="/donor-river-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Donor River Cruises
-              </NavLink>
+            <NavLink
+              to="/donor-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Donor River Cruises
+            </NavLink>
 
-              <NavLink
-                to="/donor-safaris"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Donor safaris
-              </NavLink>
+            <NavLink
+              to="/donor-safaris"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Donor safaris
+            </NavLink>
+
+            {/* <NavLink
+              to="/travel-programs-for-opera-companies"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs for Opera Companies
+            </NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>
