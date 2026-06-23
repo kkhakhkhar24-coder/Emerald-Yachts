@@ -304,7 +304,7 @@ function VikingVsUniworld() {
                         <span>Luxury River Cruise Comparison</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Viking vs Uniworld: Which Luxury River Cruise Line Is Better?
+                        Viking vs Uniworld: <br /> Which Luxury River Cruise <br /> Line Is Better?
                     </h1>
                 </div>
             </section>

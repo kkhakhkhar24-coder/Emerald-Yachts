@@ -368,7 +368,7 @@ function WhyIResistedViking() {
                 <div className="vs-video-container">
                     <div className="vs-video-header">
                         <span className="vs-video-eyebrow">SEE THEM IN ACTION</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Experience Uniworld Boutique River Cruisess</h2>
+                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Experience Uniworld Boutique River Cruises</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p className="vs-video-intro">Discover the ultra-luxury boutique river cruise experience that Uniworld delivers.</p>
                     </div>
@@ -379,7 +379,7 @@ function WhyIResistedViking() {
                         </div>
                         <div className="vs-video-frame-wrap">
                             <iframe
-                                src="https://www.youtube.com/embed/drsLIk6vJ5A"
+                                src="https://www.youtube.com/embed/kivqQaJrObc"
                                 title="Uniworld Boutique River Cruises Video"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -832,7 +832,7 @@ function WhyIResistedViking() {
                         </div>
                         <div className="vs-video-frame-wrap">
                             <iframe
-                                src="https://www.youtube.com/embed/JcegzKW4wys"
+                                src="https://www.youtube.com/embed/J04Ws8vM99Q"
                                 title="Uniworld Boutique River Cruises Video"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
