@@ -17,9 +17,7 @@ import Profile_AH from '../../assets/Media (2).jpg'
 
 function TravelProgramsSymphonyOrchestras() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = [
-        'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=1600&q=80'
-    ]
+    const mediHeroImages = []
 
     useEffect(() => {
         if (mediHeroImages.length > 0) {
