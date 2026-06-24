@@ -1,12 +1,8 @@
 import Navbar from '../../components/Navbar/Navbar'
 import {
-    Ship, MapPin, Star, Users, CheckCircle,
-    Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone,
-    Globe, Utensils, Award,
-    GraduationCap,
-    Mountain, Wine, Building, TreePine, Snowflake, Sun,
-    Clock, Mic, FileText, Music, Heart, BookOpen, Briefcase
+    Ship, MapPin, Star, Users, CheckCircle, Sparkles, Calendar, Gem,
+    ChevronRight, Crown, Phone, Globe, Award, GraduationCap,
+    Building, Clock, Mic, FileText, Music, Heart, BookOpen, Briefcase
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -222,7 +218,7 @@ function TravelProgramsOperaCompanies() {
                         <span>Cultural Travel · Patron Engagement · Donor Stewardship</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Travel Programs for Opera Companies
+                        Travel Programs for <br /> Opera Companies
                     </h1>
                     <p style={{
                         color: 'rgba(255,255,255,0.85)',

@@ -8,7 +8,8 @@ import {
     GraduationCap,
     Clock,
     Mic,
-    FileText
+    FileText,
+    PlayCircle
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -195,35 +196,88 @@ function VikingChristmasMarketCruises() {
                 </div>
             </section>
 
-            {/* ═══════════════ WHAT ARE CHRISTMAS MARKETS ═══════════════ */}
+            {/* ═══════════════ WHAT ARE CHRISTMAS MARKETS (VIDEO ENHANCED) ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 12px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
-                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* Header Section */}
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>A Centuries-Old Tradition</span>
                         <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>What Are Christmas Markets?</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6', fontWeight: '500' }}>Christmas markets originated in Germany centuries ago and have become one of Europe's most beloved holiday traditions.</p>
                     </div>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', marginBottom: '60px' }}>
-                        <div style={{ flex: '1 1 280px' }}>
-                            <p style={{ fontSize: '16px', color: '#64748b', fontWeight: '700', textTransform: 'uppercase', marginBottom: '30px', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '10px' }}><Star size={20} style={{ color: '#3b82f6' }} /> Markets Typically Feature</p>
-                            <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 360 ? '1fr' : 'repeat(auto-fit, minmax(220px, 1fr))', gap: window.innerWidth <= 360 ? '12px' : '20px' }}>
-                                {[{ text: "Handmade Gifts & Ornaments", icon: <Gift size={18} /> }, { text: "Seasonal Food & Pastries", icon: <Utensils size={18} /> }, { text: "Mulled Wine (Glühwein)", icon: <Wine size={18} /> }, { text: "Choir & Live Music", icon: <Music size={18} /> }, { text: "Wood Carvings & Candles", icon: <TreePine size={18} /> }, { text: "Ice Skating & Events", icon: <Snowflake size={18} /> }].map((pill, i) => (
-                                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}><div style={{ color: '#3b82f6', display: 'flex' }}>{pill.icon}</div><span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{pill.text}</span></div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 992 ? '1fr' : '1fr 1.2fr', gap: '50px', alignItems: 'center' }}>
+
+                        {/* LEFT COLUMN: Content & Benefits */}
+                        <div style={{ order: window.innerWidth <= 992 ? 2 : 1 }}>
+                            <p style={{ fontSize: '18px', color: '#475569', lineHeight: '1.7', marginBottom: '30px' }}>
+                                Christmas markets originated in Germany centuries ago and have become one of Europe's most beloved holiday traditions.
+                                <strong> Instead of packing and unpacking</strong>, Viking guests enjoy a comfortable floating hotel while visiting multiple markets in one trip.
+                            </p>
+
+                            {/* Features Grid */}
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginBottom: '30px' }}>
+                                {[
+                                    { text: "Handmade Ornaments", icon: <Gift size={16} /> },
+                                    { text: "Mulled Wine (Glühwein)", icon: <Wine size={16} /> },
+                                    { text: "Seasonal Pastries", icon: <Utensils size={16} /> },
+                                    { text: "Live Holiday Music", icon: <Music size={16} /> },
+                                    { text: "Stress-Free Travel", icon: <CheckCircle size={16} /> },
+                                    { text: "Cultural Immersion", icon: <Globe size={16} /> }
+                                ].map((pill, i) => (
+                                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '12px', backgroundColor: '#f8fafc', borderRadius: '10px', border: '1px solid #e2e8f0' }}>
+                                        <div style={{ color: '#3b82f6', display: 'flex' }}>{pill.icon}</div>
+                                        <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{pill.text}</span>
+                                    </div>
                                 ))}
                             </div>
+
+                            <div style={{ padding: '20px', backgroundColor: '#eff6ff', borderRadius: '15px', borderLeft: '4px solid #3b82f6' }}>
+                                <p style={{ fontSize: '15px', fontStyle: 'italic', margin: 0, color: '#1e3a8a', fontWeight: '500' }}>
+                                    "One of the most requested seasonal sailings, offering a fairytale atmosphere across Germany, Austria, and France."
+                                </p>
+                            </div>
                         </div>
-                        <div style={{ flex: '1 1 280px' }}>
-                            <div style={{ backgroundColor: '#0f1c2e', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', borderRadius: window.innerWidth <= 360 ? '20px' : '30px', color: '#ffffff', boxShadow: '0 20px 40px rgba(15, 28, 46, 0.15)' }}>
-                                <h3 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '20px', color: '#3b82f6' }}>Instead of Packing & Unpacking</h3>
-                                <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#cbd5e1', marginBottom: '25px' }}>Guests enjoy a comfortable floating hotel while visiting multiple Christmas markets throughout Europe — transportation, accommodations, and logistics all handled for you.</p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                    {["Multiple markets in one trip", "Stress-free travel", "Scenic winter river cruising", "Cultural immersion across countries"].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '16px', fontWeight: '500' }}><CheckCircle size={18} style={{ color: '#3b82f6' }} /> {item}</li>
-                                    ))}
-                                </ul>
-                                <div style={{ marginTop: '25px', padding: '15px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
-                                    <p style={{ fontSize: '14px', fontStyle: 'italic', margin: 0, color: '#e2e8f0' }}>"Christmas market cruises are among Viking's most popular seasonal sailings."</p>
+
+                        {/* RIGHT COLUMN: VIDEO PLAYER */}
+                        <div style={{ order: window.innerWidth <= 992 ? 1 : 2 }}>
+                            <div style={{
+                                position: 'relative',
+                                borderRadius: '30px',
+                                overflow: 'hidden',
+                                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                                aspectRatio: '16/9',
+                                backgroundColor: '#000'
+                            }}>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/cUMlhDSOi20?autoplay=1&mute=1&loop=1&playlist=cUMlhDSOi20&rel=0"
+                                    title="Viking Christmas Market Experience"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                                ></iframe>
+
+                                {/* Visual Overlay Tag */}
+                                <div style={{
+                                    position: 'absolute',
+                                    top: '20px',
+                                    left: '20px',
+                                    backgroundColor: 'rgba(39, 68, 114, 0.9)',
+                                    color: '#fff',
+                                    padding: '8px 16px',
+                                    borderRadius: '50px',
+                                    fontSize: '12px',
+                                    fontWeight: '700',
+                                    letterSpacing: '1px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '8px',
+                                    backdropFilter: 'blur(4px)'
+                                }}>
+                                    <PlayCircle size={14} /> THE EXPERIENCE
                                 </div>
                             </div>
                         </div>
@@ -231,8 +285,8 @@ function VikingChristmasMarketCruises() {
                 </div>
             </section>
 
-            {/* ═══════════════ ITINERARY SHOWCASE ═══════════════ */}
-            <section className="medi-itinerary-showcase-section" style={{ backgroundColor: '#f1f5f9' }}>
+            {/* ═══════════════ ITINERARY SHOWCASE (DYNAMIC VIDEO - NO STRETCH) ═══════════════ */}
+            <section className="medi-itinerary-showcase-section" style={{ backgroundColor: '#f1f5f9', padding: '80px 0' }}>
                 <div className="medi-itinerary-showcase-container">
                     <div className="medi-itinerary-showcase-header">
                         <span className="medi-itinerary-eyebrow">CRUISE PLANNING GUIDE</span>
@@ -240,16 +294,48 @@ function VikingChristmasMarketCruises() {
                         <div className="medi-itinerary-showcase-separator"></div>
                         <p style={{ textAlign: 'center', color: '#475569', maxWidth: '800px', margin: '20px auto 0', fontSize: '17px', lineHeight: '1.6' }}>Viking offers several Christmas Market itineraries, each featuring Europe's most festive holiday destinations.</p>
                     </div>
+
                     <div className="medi-itinerary-dashboard">
                         <div className="medi-itinerary-tabs">
                             {["Christmas on the Rhine", "Christmas Time on the Danube", "Danube Waltz Christmas"].map((title, idx) => (
                                 <button key={idx} className={`medi-itinerary-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`} onClick={() => setMediSelectedItinerary(idx)}>
-                                    <span className="medi-itinerary-tab-number">0{idx + 1}</span><div className="medi-itinerary-tab-meta"><span className="medi-itinerary-tab-title">{title}</span></div><ChevronRight size={18} className="medi-itinerary-tab-arrow" />
+                                    <span className="medi-itinerary-tab-number">0{idx + 1}</span>
+                                    <div className="medi-itinerary-tab-meta">
+                                        <span className="medi-itinerary-tab-title">{title}</span>
+                                    </div>
+                                    <ChevronRight size={18} className="medi-itinerary-tab-arrow" />
                                 </button>
                             ))}
                         </div>
+
                         <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}><div className="medi-itinerary-showcase-img-overlay"></div><span className="medi-itinerary-showcase-badge">ITINERARY SPOTLIGHT</span></div>
+                            {/* Fixed Aspect Ratio Video Wrapper - Prevents Stretching */}
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{
+                                backgroundColor: '#000',
+                                padding: 0,
+                                overflow: 'hidden',
+                                position: 'relative',
+                                width: '100%',
+                                aspectRatio: '16/9' // This ensures the video box keeps its shape
+                            }}>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src={`https://www.youtube.com/embed/${[
+                                        'mm-TtRkvDwc', // Rhine
+                                        'GTMZa-AuxkU', // Danube
+                                        'FFVou8VsXz4'  // Waltz
+                                    ][mediSelectedItinerary]
+                                        }?autoplay=1&rel=0&modestbranding=1`}
+                                    title="Viking Christmas Market Itinerary"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                                ></iframe>
+                                <span className="medi-itinerary-showcase-badge">ITINERARY SPOTLIGHT</span>
+                            </div>
+
                             <div className="medi-itinerary-showcase-body">
                                 <h3 className="medi-itinerary-showcase-title">{["Christmas on the Rhine", "Christmas Time on the Danube", "Danube Waltz Christmas"][mediSelectedItinerary]}</h3>
                                 <div className="medi-itinerary-details-grid">
@@ -260,7 +346,9 @@ function VikingChristmasMarketCruises() {
                                                 ["8 Days — Basel to Amsterdam or reverse", "Strasbourg, Cologne, Heidelberg, Rhine Gorge", "One of Viking's most requested Christmas itineraries"],
                                                 ["8 Days — Budapest to Regensburg or reverse", "Vienna, Budapest, Passau, Austrian markets", "Classic Central European holiday traditions"],
                                                 ["Austria, Hungary, and Germany", "Holiday markets combined with cultural highlights", "Festive traditions across multiple countries"]
-                                            ][mediSelectedItinerary].map((feature, i) => (<li key={i}><Sparkles size={14} className="medi-itinerary-detail-icon" /><span>{feature}</span></li>))}
+                                            ][mediSelectedItinerary].map((feature, i) => (
+                                                <li key={i}><Sparkles size={14} className="medi-itinerary-detail-icon" /><span>{feature}</span></li>
+                                            ))}
                                         </ul>
                                     </div>
                                     <div className="medi-itinerary-details-col">
@@ -270,14 +358,17 @@ function VikingChristmasMarketCruises() {
                                                 ["Strasbourg Market", "Cologne Cathedral", "Heidelberg", "Rhine Gorge", "Amsterdam"],
                                                 ["Vienna Markets", "Budapest Lights", "Passau", "Austrian Traditions"],
                                                 ["Danube Markets", "Cultural Highlights", "Austrian & Hungarian Traditions"]
-                                            ][mediSelectedItinerary].map((tag, i) => (<span key={i} className="medi-itinerary-details-chip"><MapPin size={12} className="medi-itinerary-chip-icon" /><span>{tag}</span></span>))}
+                                            ][mediSelectedItinerary].map((tag, i) => (
+                                                <span key={i} className="medi-itinerary-details-chip"><MapPin size={12} className="medi-itinerary-chip-icon" /><span>{tag}</span></span>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
+
                                 <div style={{ marginTop: '30px', paddingTop: '20px', borderTop: '1px solid #f1f5f9' }}>
                                     <p style={{ fontSize: '15px', color: '#64748b', fontStyle: 'italic', margin: 0, lineHeight: '1.6' }}>
-                                        {mediSelectedItinerary === 0 && "One of Viking's most requested Christmas Market itineraries."}
-                                        {mediSelectedItinerary === 1 && "Ideal for travelers seeking classic Central European holiday traditions."}
+                                        {mediSelectedItinerary === 0 && "One of Viking's most requested Christmas Market itineraries featuring the best of Germany and France."}
+                                        {mediSelectedItinerary === 1 && "Ideal for travelers seeking classic Central European holiday traditions and Imperial grandeur."}
                                         {mediSelectedItinerary === 2 && "Combines holiday markets with cultural highlights throughout Austria, Hungary, and Germany."}
                                     </p>
                                 </div>
@@ -297,49 +388,109 @@ function VikingChristmasMarketCruises() {
                         <p style={{ color: '#cbd5e1', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>Discover the festive charm of Europe's most beloved Christmas markets. From glowing town squares to traditional Glühwein, every moment is filled with holiday wonder.</p>
                     </div>
                     <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.1)', aspectRatio: '16/9', backgroundColor: '#000' }}>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BxCuJXGlpcc" title="Viking Christmas Market Cruises" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BxCuJXGlpcc?autoplay=1" title="Viking Christmas Market Cruises" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </section>
 
-            {/* ═══════════════ BEST CHRISTMAS MARKETS ═══════════════ */}
-            <section style={{ padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)', backgroundColor: '#0a1120', fontFamily: 'sans-serif', overflow: 'hidden' }}>
-                <style>{`
-                    .xmas-market-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 420px; gap: 24px; max-width: 1240px; margin: 0 auto; }
-                    .xmas-market-item { position: relative; border-radius: 24px; overflow: hidden; background-color: #1c2f4a; border: 1px solid rgba(255,255,255,0.1); transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-                    .xmas-market-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,17,32,1) 0%, rgba(10,17,32,0.85) 30%, rgba(10,17,32,0.2) 60%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: clamp(24px,5vw,45px) clamp(20px,4vw,35px); color: #ffffff; z-index: 2; text-align: left; }
-                    .xmas-market-tag { font-size: clamp(10px,2vw,11px); font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #60a5fa; margin-bottom: 10px; }
-                    .xmas-market-title { font-size: clamp(20px,3vw,24px); font-weight: 700; margin: 0 0 12px 0; line-height: 1.2; color: #ffffff; text-shadow: 0 2px 15px rgba(0,0,0,0.8); }
-                    .xmas-market-desc { font-size: clamp(14px,2vw,15px); color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; font-weight: 400; max-width: 400px; }
-                    .xmas-market-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1a365d 0%, #0f1c2e 100%); color: #3b82f6; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-                    @media (max-width: 1024px) { .xmas-market-grid { grid-template-columns: repeat(2,1fr); grid-auto-rows: 380px; } }
-                    @media (max-width: 650px) { .xmas-market-grid { grid-template-columns: 1fr; grid-auto-rows: 340px; gap: 16px; } .xmas-market-overlay { padding: 30px 20px; } .xmas-market-desc { max-width: 100%; } }
-                    @media (max-width: 380px) { .xmas-market-grid { grid-auto-rows: 310px; } .xmas-market-title { font-size: 19px; } }
-                `}</style>
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(50px,8vw,80px)' }}>
-                    <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: 'clamp(11px,2vw,13px)', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '12px' }}>Festive Destinations</span>
-                    <h2 style={{ fontSize: 'clamp(30px,5vw,48px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>Best Christmas Markets You'll Visit</h2>
-                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                </div>
-                <div className="xmas-market-grid">
-                    {[
-                        { tag: "France", title: "Strasbourg", desc: "Often called the 'Capital of Christmas.' Historic market squares, elaborate decorations, and Alsatian holiday traditions dating back to the 16th century." },
-                        { tag: "Germany", title: "Cologne", desc: "Set against the backdrop of Cologne Cathedral. Handcrafted gifts, traditional German foods, holiday concerts, and festive lighting." },
-                        { tag: "Austria", title: "Vienna", desc: "Vienna transforms into a holiday wonderland. Imperial palaces, elegant decorations, traditional Austrian treats, and classical music." },
-                        { tag: "Hungary", title: "Budapest", desc: "One of Eastern Europe's most beautiful holiday celebrations. Local handicrafts, Hungarian cuisine, and illuminated city landmarks." },
-                        { tag: "Germany", title: "Nuremberg", desc: "Often considered one of the world's most famous Christmas markets. Gingerbread, handmade ornaments, and historic atmosphere." },
-                        { tag: "Germany", title: "Heidelberg", desc: "A romantic Christmas market set beneath the iconic Heidelberg Castle. Charming streets, festive lights, and seasonal specialties." }
-                    ].map((dest, idx) => (
-                        <div key={idx} className="xmas-market-item">
-                            <div className="xmas-market-placeholder">{dest.title.toLowerCase()}-market.jpg</div>
-                            <div className="xmas-market-overlay">
-                                <span className="xmas-market-tag">{dest.tag}</span>
-                                <h3 className="xmas-market-title">{dest.title}</h3>
-                                <p className="xmas-market-desc">{dest.desc}</p>
+            {/* ═══════════════ BEST CHRISTMAS MARKETS (EDITORIAL CONTENT GRID) ═══════════════ */}
+            <section style={{ padding: 'clamp(60px, 10vw, 100px) 20px', backgroundColor: '#0a1120', fontFamily: 'sans-serif' }}>
+                <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ textAlign: 'left', marginBottom: '50px', borderLeft: '4px solid #3b82f6', paddingLeft: '25px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '8px' }}>Festive Destinations</span>
+                        <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: '#ffffff', fontWeight: '800', margin: 0, letterSpacing: '-0.02em' }}>Best Christmas Markets You'll Visit</h2>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 1024 ? '1fr' : '1.2fr 0.8fr', gap: '40px' }}>
+
+                        {/* LEFT SIDE: DENSE TEXT GRID (Fills the space where images used to be) */}
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : '1fr 1fr',
+                            gap: '20px'
+                        }}>
+                            {[
+                                { tag: "France", title: "Strasbourg", desc: "The 'Capital of Christmas' with 300+ stalls across historic city squares.", icon: <Star size={18} /> },
+                                { tag: "Germany", title: "Cologne", desc: "A sea of lights beneath the twin spires of the world-famous Cathedral.", icon: <Sparkles size={18} /> },
+                                { tag: "Austria", title: "Vienna", desc: "Imperial palaces transformed into a winter wonderland of music and crafts.", icon: <Music size={18} /> },
+                                { tag: "Hungary", title: "Budapest", desc: "Spectacular laser projections on St. Stephen’s Basilica and local folk art.", icon: <MapPin size={18} /> },
+                                { tag: "Germany", title: "Nuremberg", desc: "Centuries of tradition, gold foil angels, and world-renowned gingerbread.", icon: <Gift size={18} /> },
+                                { tag: "Germany", title: "Heidelberg", desc: "A storybook setting beneath the castle with cozy markets and skating.", icon: <Snowflake size={18} /> }
+                            ].map((dest, idx) => (
+                                <div key={idx} style={{
+                                    backgroundColor: 'rgba(255,255,255,0.03)',
+                                    padding: '30px',
+                                    borderRadius: '24px',
+                                    border: '1px solid rgba(255,255,255,0.08)',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'space-between',
+                                    height: '100%',
+                                    transition: 'all 0.3s ease'
+                                }} className="market-card-hover">
+                                    <div>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                                            <span style={{ fontSize: '11px', fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', letterSpacing: '2px' }}>{dest.tag}</span>
+                                            <div style={{ color: 'rgba(255,255,255,0.2)' }}>{dest.icon}</div>
+                                        </div>
+                                        <h3 style={{ fontSize: '22px', color: '#fff', fontWeight: '700', marginBottom: '12px' }}>{dest.title}</h3>
+                                        <p style={{ fontSize: '15px', color: '#94a3b8', lineHeight: '1.6', margin: 0 }}>{dest.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* RIGHT SIDE: FEATURED VIDEO BOX (Visual weight to balance the text) */}
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                            <div style={{
+                                borderRadius: '30px',
+                                overflow: 'hidden',
+                                boxShadow: '0 25px 50px rgba(0,0,0,0.4)',
+                                aspectRatio: window.innerWidth <= 1024 ? '16/9' : 'auto',
+                                flexGrow: 1,
+                                backgroundColor: '#000',
+                                border: '1px solid rgba(255,255,255,0.1)',
+                                position: 'relative'
+                            }}>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/rMXtYYvEKD4?autoplay=1&mute=1&loop=1&playlist=rMXtYYvEKD4"
+                                    title="Viking Christmas Market Experience"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{ position: 'absolute', top: 0, left: 0, objectFit: 'cover' }}
+                                ></iframe>
+                            </div>
+
+                            {/* Promotional Banner Box (Fills the remaining vertical space) */}
+                            <div style={{
+                                backgroundColor: '#3b82f6',
+                                padding: '35px',
+                                borderRadius: '30px',
+                                color: '#fff',
+                                textAlign: 'center'
+                            }}>
+                                <h4 style={{ fontSize: '20px', fontWeight: '800', marginBottom: '10px' }}>Planning Tip</h4>
+                                <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.9)', lineHeight: '1.5', margin: 0 }}>
+                                    These markets are most magical at dusk when the lights go on. Viking's itineraries often include evening stays to ensure you experience the full atmosphere.
+                                </p>
                             </div>
                         </div>
-                    ))}
+
+                    </div>
                 </div>
+
+                <style>{`
+        .market-card-hover:hover {
+            background-color: rgba(255,255,255,0.06) !important;
+            border-color: rgba(59, 130, 246, 0.4) !important;
+            transform: translateY(-5px);
+        }
+    `}</style>
             </section>
 
             {/* ═══════════════ WHAT IS INCLUDED ═══════════════ */}
@@ -369,17 +520,29 @@ function VikingChristmasMarketCruises() {
                 </div>
             </section>
 
-            {/* ═══════════════ VIKING LONGSHIPS DURING THE HOLIDAYS ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+            {/* ═══════════════ VIKING LONGSHIPS (VIDEO & LISTS - FULL CONTENT) ═══════════════ */}
+            <section style={{ padding: '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>The Ship Experience</span>
                         <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>Viking Longships During the Holidays</h2>
                         <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                         <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>Most holiday itineraries operate aboard Viking Longships. The holiday spirit extends beyond the destinations themselves.</p>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
+
+                    {/* Video Centerpiece (Protected Ratio) */}
+                    <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto 60px' }}>
+                        <div style={{ aspectRatio: '16/9', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)', backgroundColor: '#000' }}>
+                            <iframe
+                                width="100%" height="100%"
+                                src="https://www.youtube.com/embed/drsLIk6vJ5A?autoplay=1&mute=1&loop=1&playlist=drsLIk6vJ5A"
+                                title="Ship Experience" frameBorder="0" allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(2, 1fr)', gap: '30px' }}>
+                        <div style={{ backgroundColor: '#ffffff', borderRadius: '30px', padding: '40px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15,28,46,0.03)' }}>
                             <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#0f1c2e', marginBottom: '24px' }}>Ship Features</h3>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {[{ text: "Aquavit Terrace — perfect for scenic cruising", icon: <Utensils size={18} /> }, { text: "Panoramic Lounges — enjoy winter scenery in comfort", icon: <Ship size={18} /> }, { text: "Comfortable Staterooms — ideal after exploring markets", icon: <Gem size={18} /> }, { text: "Elegant Scandinavian Design — warm holiday atmosphere", icon: <Crown size={18} /> }].map((item, i) => (
@@ -387,7 +550,7 @@ function VikingChristmasMarketCruises() {
                                 ))}
                             </ul>
                         </div>
-                        <div style={{ backgroundColor: '#0f1c2e', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', color: '#ffffff', boxShadow: '0 20px 40px rgba(15,28,46,0.15)' }}>
+                        <div style={{ backgroundColor: '#0f1c2e', borderRadius: '30px', padding: '40px', color: '#ffffff', boxShadow: '0 20px 40px rgba(15,28,46,0.15)' }}>
                             <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#3b82f6', marginBottom: '24px' }}>Holiday Onboard Experience</h3>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {["Christmas decorations throughout the ship", "Holiday music and festive ambiance", "Seasonal menus with holiday specialties", "Festive treats and special events", "Warm, welcoming holiday spirit"].map((item, i) => (
@@ -412,7 +575,7 @@ function VikingChristmasMarketCruises() {
                         <p style={{ color: '#475569', fontSize: '18px', marginTop: '25px', lineHeight: '1.7' }}>From sipping Glühwein in historic town squares to exploring beautifully decorated markets and cruising scenic rivers, every day brings new festive discoveries.</p>
                     </div>
                     <div style={{ borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(15,28,46,0.15)', border: '1px solid #e2e8f0', aspectRatio: '16/9', backgroundColor: '#000' }}>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LKBlZ8C6Nfo" title="Christmas Market Scenic Journey" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LKBlZ8C6Nfo?autoplay=1" title="Christmas Market Scenic Journey" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </section>
