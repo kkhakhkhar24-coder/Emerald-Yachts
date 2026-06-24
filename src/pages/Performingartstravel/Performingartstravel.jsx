@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './PerformingArtsTravel.css'
+import './Performingartstravel.css'
 
 import {
     CheckCircle, Anchor, Award, Phone, LayoutList,
