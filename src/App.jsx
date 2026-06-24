@@ -92,6 +92,7 @@ import VikingCruiseResourceCenter from "./pages/VikingCruiseResourceCenter/Vikin
 import DonorRiverCruises from "./pages/Donorrivercruises/Donorrivercruises";
 import Donorsafaris from "./pages/Donorsafaris/Donorsafaris";
 import TravelProgramsOperaCompanies from "./pages/TravelProgramsOperaCompanies/TravelProgramsOperaCompanies";
+import TravelProgramsSymphonyOrchestras from "./pages/TravelProgramsSymphonyOrchestras/TravelProgramsSymphonyOrchestras";
 
 
 function App() {
@@ -492,6 +493,11 @@ function App() {
           <Route
             path="/travel-programs-for-opera-companies"
             element={< TravelProgramsOperaCompanies />}
+          />
+
+          <Route
+            path="/travel-programs-for-symphony-orchestras"
+            element={< TravelProgramsSymphonyOrchestras />}
           />
 
         </Routes>

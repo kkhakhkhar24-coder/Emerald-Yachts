@@ -625,13 +625,21 @@ const Navbar = () => {
                 Donor safaris
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/travel-programs-for-opera-companies"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Travel Programs for Opera Companies
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+                to="/travel-programs-for-symphony-orchestras"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs for Symphony Orchestras
+              </NavLink>
 
             </div>
           </div>
@@ -1267,13 +1275,21 @@ const Navbar = () => {
               Donor safaris
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/travel-programs-for-opera-companies"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Travel Programs for Opera Companies
-            </NavLink> */}
+            </NavLink>
+
+            <NavLink
+              to="/travel-programs-for-symphony-orchestras"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs for Symphony Orchestras
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
