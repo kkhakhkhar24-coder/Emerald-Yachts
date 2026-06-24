@@ -93,6 +93,8 @@ import DonorRiverCruises from "./pages/Donorrivercruises/Donorrivercruises";
 import Donorsafaris from "./pages/Donorsafaris/Donorsafaris";
 import TravelProgramsOperaCompanies from "./pages/TravelProgramsOperaCompanies/TravelProgramsOperaCompanies";
 import TravelProgramsSymphonyOrchestras from "./pages/TravelProgramsSymphonyOrchestras/TravelProgramsSymphonyOrchestras";
+import Performingartstravel from "./pages/Performingartstravel/Performingartstravel";
+import Whytraveldonorengagement from "./pages/Whytraveldonorengagement/Whytraveldonorengagement";
 
 
 function App() {
@@ -500,6 +502,15 @@ function App() {
             element={< TravelProgramsSymphonyOrchestras />}
           />
 
+          <Route
+            path="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
+            element={< Performingartstravel />}
+          />
+
+          <Route
+            path="/why-travel-increases-donor-engagement-and-fundraising"
+            element={< Whytraveldonorengagement />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

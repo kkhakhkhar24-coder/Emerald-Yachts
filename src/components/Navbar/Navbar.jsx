@@ -641,6 +641,27 @@ const Navbar = () => {
                 Travel Programs for Symphony Orchestras
               </NavLink>
 
+              <NavLink
+                to="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Performing arts travel
+              </NavLink>
+
+
+              <NavLink
+                to="/why-travel-increases-donor-engagement-and-fundraising"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why travel donor engagement
+              </NavLink>
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -1290,6 +1311,22 @@ const Navbar = () => {
             >
               Travel Programs for Symphony Orchestras
             </NavLink>
+
+            <NavLink
+                to="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Performing arts travel
+              </NavLink>
+
+              <NavLink
+                to="/why-travel-increases-donor-engagement-and-fundraising"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why travel donor engagement
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

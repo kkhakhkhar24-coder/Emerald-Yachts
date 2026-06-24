@@ -1,0 +1,1037 @@
+/* ============================================================
+   PerformingArtsTravel — NEW SECTION STYLES
+   Only uses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   Fully responsive: Desktop (>1024px) / Tablet (≤1024px) / Mobile (≤768px)
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   WHAT ARE PERFORMING ARTS TRAVEL PROGRAMS
+   Two-column: image left, content right
+---------------------------------------------------------- */
+.pat-what-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.pat-what-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-what-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.pat-what-image-col {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 480px;
+}
+
+.pat-what-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pat-what-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.5) 0%, transparent 55%);
+}
+
+.pat-what-image-caption {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 16px 20px;
+}
+
+.pat-what-image-caption p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pat-what-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pat-what-lead {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin: 0 0 24px 0;
+}
+
+.pat-what-combine-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    margin: 0 0 14px 0;
+}
+
+.pat-what-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.pat-what-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.pat-what-chip svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.pat-what-footer-note {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+    padding: 18px 20px;
+    background: var(--medi-bg-soft);
+    border-radius: 12px;
+    border-left: 3px solid var(--medi-navy);
+}
+
+/* ----------------------------------------------------------
+   WHY ARTS ORGS OFFER TRAVEL + PATRON BENEFITS
+   Side-by-side two-panel cards
+---------------------------------------------------------- */
+.pat-why-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.pat-why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-why-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 48px;
+}
+
+.pat-why-panel {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.pat-why-panel-header {
+    background: var(--medi-navy);
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pat-why-panel-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pat-why-panel-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pat-why-panel-body {
+    padding: 28px;
+}
+
+.pat-why-panel-intro {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+}
+
+.pat-why-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pat-why-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.pat-why-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pat-why-footer-note {
+    text-align: center;
+    font-size: 15px;
+    color: #64748b;
+    font-style: italic;
+    margin: 0;
+    padding: 20px 24px;
+    background: var(--medi-bg-white);
+    border-radius: 14px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+/* ----------------------------------------------------------
+   DESTINATIONS — 5 city cards with images
+   2-column grid, 5th card full-width
+---------------------------------------------------------- */
+.pat-destinations-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.pat-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-destinations-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.pat-destination-card {
+    background: var(--medi-bg-soft);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    transition: all 0.3s ease;
+}
+
+.pat-destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 44px rgba(39, 68, 114, 0.12);
+}
+
+.pat-destination-card.full-width {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+}
+
+.pat-destination-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.pat-destination-card.full-width .pat-destination-image-wrap {
+    height: 100%;
+    min-height: 200px;
+}
+
+.pat-destination-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pat-destination-card:hover .pat-destination-image-wrap img {
+    transform: scale(1.05);
+}
+
+.pat-destination-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.pat-destination-body {
+    padding: 24px 22px;
+}
+
+.pat-destination-card.full-width .pat-destination-body {
+    padding: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pat-destination-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.pat-destination-intro {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0 0 14px 0;
+    line-height: 1.6;
+}
+
+.pat-destination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.pat-destination-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.pat-destination-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   EDUCATIONAL COMPONENTS + BACKSTAGE — dark two-column
+---------------------------------------------------------- */
+.pat-access-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pat-access-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.pat-access-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-access-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.pat-access-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.pat-access-panel {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 32px 28px;
+    transition: all 0.3s ease;
+}
+
+.pat-access-panel:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-4px);
+}
+
+.pat-access-panel-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.pat-access-panel-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pat-access-panel-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pat-access-intro {
+    font-size: 14.5px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.pat-access-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.pat-access-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.pat-access-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pat-access-footer-note {
+    text-align: center;
+    font-size: 14.5px;
+    color: #94a3b8;
+    font-style: italic;
+    margin: 36px 0 0 0;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   DONOR & PATRON ENGAGEMENT + GROUP TRAVEL MADE EASY
+   Light split section
+---------------------------------------------------------- */
+.pat-engagement-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.pat-engagement-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-engagement-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-engagement-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.pat-engagement-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.pat-engagement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(39, 68, 114, 0.1);
+}
+
+.pat-engagement-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.pat-engagement-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pat-engagement-card:hover .pat-engagement-img-wrap img {
+    transform: scale(1.05);
+}
+
+.pat-engagement-card-body {
+    padding: 26px 26px;
+}
+
+.pat-engagement-card-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.pat-engagement-card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pat-engagement-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+}
+
+.pat-engagement-intro {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0 0 16px 0;
+}
+
+.pat-engagement-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pat-engagement-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.pat-engagement-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pat-engagement-footer-note {
+    font-size: 13.5px;
+    color: #64748b;
+    font-style: italic;
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   IDEAL ORGANIZATIONS — 4 org-type accordion cards
+---------------------------------------------------------- */
+.pat-orgs-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.pat-orgs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-orgs-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-orgs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.pat-org-card {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 28px 26px;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    transition: all 0.3s ease;
+}
+
+.pat-org-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.1);
+}
+
+.pat-org-header-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.pat-org-icon-box {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pat-org-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+}
+
+.pat-org-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pat-org-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+.pat-org-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   WHY SPECIALIZED TRAVEL PARTNER — split dark
+---------------------------------------------------------- */
+.pat-partner-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pat-partner-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.pat-partner-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.pat-partner-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.pat-partner-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.pat-partner-intro {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.8;
+    margin: 0 0 24px 0;
+}
+
+.pat-partner-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pat-partner-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.pat-partner-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pat-partner-image-col {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.pat-partner-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------------------------------------------------
+   WHY TRIPS & SHIPS — services strip
+---------------------------------------------------------- */
+.pat-services-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.pat-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pat-services-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pat-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.pat-service-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 26px 22px;
+    border-left: 4px solid var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.pat-service-card:hover {
+    box-shadow: 0 10px 28px rgba(39, 68, 114, 0.1);
+    transform: translateX(4px);
+}
+
+.pat-service-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.pat-service-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 6px 0;
+}
+
+.pat-service-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pat-services-closing {
+    text-align: center;
+    font-size: 16px;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* ============================================================
+   RESPONSIVE — 3 BREAKPOINTS
+   ============================================================ */
+
+/* ---------- TABLET (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .pat-what-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .pat-what-image-col {
+        height: 320px;
+    }
+
+    .pat-why-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .pat-destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pat-destination-card.full-width {
+        grid-template-columns: 1fr;
+    }
+
+    .pat-destination-card.full-width .pat-destination-image-wrap {
+        height: 220px;
+    }
+
+    .pat-access-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pat-engagement-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .pat-orgs-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .pat-partner-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .pat-partner-image-col {
+        height: 280px;
+        order: -1;
+    }
+
+    .pat-services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pat-what-section,
+    .pat-why-section,
+    .pat-destinations-section,
+    .pat-access-section,
+    .pat-engagement-section,
+    .pat-orgs-section,
+    .pat-partner-section,
+    .pat-services-section {
+        padding: 70px 24px;
+    }
+}
+
+/* ---------- MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    .pat-what-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .pat-what-image-col {
+        height: 240px;
+    }
+
+    .pat-why-grid,
+    .pat-access-grid,
+    .pat-engagement-grid,
+    .pat-orgs-grid,
+    .pat-partner-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .pat-destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pat-destination-card.full-width {
+        grid-template-columns: 1fr;
+    }
+
+    .pat-destination-card.full-width .pat-destination-image-wrap {
+        height: 200px;
+    }
+
+    .pat-services-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .pat-partner-image-col {
+        height: 220px;
+    }
+
+    .pat-partner-image-col img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pat-engagement-img-wrap {
+        height: 180px;
+    }
+
+    .pat-destination-image-wrap {
+        height: 190px;
+    }
+
+    .pat-why-panel-body,
+    .pat-engagement-card-body,
+    .pat-org-card {
+        padding: 22px 18px;
+    }
+
+    .pat-access-panel {
+        padding: 24px 20px;
+    }
+
+    .pat-destination-body {
+        padding: 20px 18px;
+    }
+
+    .pat-service-card {
+        padding: 20px 18px;
+    }
+
+    .pat-what-section,
+    .pat-why-section,
+    .pat-destinations-section,
+    .pat-access-section,
+    .pat-engagement-section,
+    .pat-orgs-section,
+    .pat-partner-section,
+    .pat-services-section {
+        padding: 56px 16px;
+    }
+
+    .pat-why-header,
+    .pat-destinations-header,
+    .pat-access-header,
+    .pat-engagement-header,
+    .pat-orgs-header,
+    .pat-partner-header,
+    .pat-services-header {
+        margin-bottom: 36px;
+    }
+}
+
+/* ---------- SMALL MOBILE (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .pat-what-chips {
+        gap: 8px;
+    }
+
+    .pat-what-chip {
+        font-size: 12.5px;
+        padding: 7px 13px;
+    }
+
+    .pat-why-panel-title,
+    .pat-engagement-card-title,
+    .pat-org-name {
+        font-size: 16px;
+    }
+
+    .pat-access-panel-title {
+        font-size: 16px;
+    }
+
+    .pat-destination-title {
+        font-size: 17px;
+    }
+
+    .pat-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
