@@ -17,18 +17,28 @@ import { Link } from 'react-router-dom'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 // Image Placeholders - Replace with your actual paths
-// import hero1 from '../../assets/VikingChristmasMarketCruises/christmas-market-hero-1.jpg'
-// import hero2 from '../../assets/VikingChristmasMarketCruises/christmas-market-hero-2.jpg'
-// import hero3 from '../../assets/VikingChristmasMarketCruises/christmas-market-hero-3.jpg'
-// import longshipImg from '../../assets/VikingChristmasMarketCruises/viking-longship-holiday.jpg'
+import hero1 from '../../assets/VikingChristmasMarketCruises/vienna-christmas-lights-and-holiday-decorations-austria-city-center.jpg'
+import hero2 from '../../assets/VikingChristmasMarketCruises/schonbrunn-palace-christmas-market-vienna-austria-at-night.jpeg'
+import hero3 from '../../assets/VikingChristmasMarketCruises/prague-old-town-square-christmas-market-and-christmas-tree-czech-republic-night.jpeg'
 import Profile_AH from '../../assets/VikingChristmasMarketCruises/Profile_AH.jpg'
+
+// Gallery Images
+import galleryImg1 from '../../assets/VikingChristmasMarketCruises/couple-at-nuremberg-christmas-market-germany-winter-holiday-getaway.jpeg'
+import galleryImg2 from '../../assets/VikingChristmasMarketCruises/friends-enjoying-vienna-christmas-market-austria-winter-holiday-travel.jpeg'
+import galleryImg3 from '../../assets/VikingChristmasMarketCruises/giant-christmas-tree-in-european-christmas-market-square.jpeg'
+import galleryImg4 from '../../assets/VikingChristmasMarketCruises/giant-christmas-tree-light-display-in-historic-european-city-center.jpeg'
+import galleryImg5 from '../../assets/VikingChristmasMarketCruises/loro-piana-christmas-tree-holiday-light-display-europe.jpeg'
+import galleryImg6 from '../../assets/VikingChristmasMarketCruises/prague-castle-and-charles-bridge-winter-christmas-view-czech-republic.jpeg'
+import galleryImg7 from '../../assets/VikingChristmasMarketCruises/prague-christmas-market-festive-holiday-decorations-czech-republic.jpeg'
+import galleryImg8 from '../../assets/VikingChristmasMarketCruises/prague-old-town-square-christmas-market-christmas-tree-czech-republic.jpeg'
+
 
 function VikingChristmasMarketCruises() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
     const mediHeroImages = [
-        // hero1,
-        // hero2,
-        // hero3
+        hero1,
+        hero2,
+        hero3
     ]
 
     useEffect(() => {
@@ -516,6 +526,147 @@ function VikingChristmasMarketCruises() {
                                 <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════ NEW SECTION: VISUAL SHOWCASE GALLERY ═══════════════ */}
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px',
+                backgroundColor: '#0a1120',
+                fontFamily: 'sans-serif',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                {/* Scoped Hover Style */}
+                <style>{`
+                    .viking-gallery-container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-auto-rows: 320px;
+                        gap: 24px;
+                    }
+                    .viking-gallery-container img {
+                        transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                    .viking-gallery-item:hover img {
+                        transform: scale(1.08);
+                        opacity: 0.95;
+                    }
+                    .viking-gallery-item {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 24px;
+                        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+                        cursor: pointer;
+                        background: #111a2e;
+                    }
+                    .viking-gallery-item.col-span-2 {
+                        grid-column: span 2;
+                    }
+                    .viking-gallery-item.row-span-2 {
+                        grid-row: span 2;
+                    }
+                    @media (max-width: 992px) {
+                        .viking-gallery-container {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-auto-rows: 280px;
+                        }
+                    }
+                    @media (max-width: 600px) {
+                        .viking-gallery-container {
+                            grid-template-columns: 1fr;
+                            grid-auto-rows: 320px;
+                        }
+                        .viking-gallery-item.col-span-2 {
+                            grid-column: span 1;
+                        }
+                        .viking-gallery-item.row-span-2 {
+                            grid-row: span 1;
+                        }
+                    }
+                `}</style>
+
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '10px' }}>
+                            The Festive Voyage
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em' }}>
+                            Immersive Cruise Gallery
+                        </h2>
+                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    </div>
+
+                    {/* Mosaic Grid Container */}
+                    <div className="viking-gallery-container">
+                        {/* 1. Row 1, Col 1-2 (Wide) */}
+                        <div className="viking-gallery-item col-span-2">
+                            <img
+                                src={galleryImg1}
+                                alt="Festive Couple at Nuremberg Christmas Market, Germany"
+                            />
+                        </div>
+
+                        {/* 2. Row 1, Col 3 (Normal) */}
+                        <div className="viking-gallery-item">
+                            <img
+                                src={galleryImg2}
+                                alt="Friends Enjoying Vienna Christmas Market, Austria"
+                            />
+                        </div>
+
+                        {/* 3. Row 2, Col 1 (Tall Tree) */}
+                        <div className="viking-gallery-item row-span-2">
+                            <img
+                                src={galleryImg3}
+                                alt="Giant Christmas Tree in European Market Square"
+                            />
+                        </div>
+
+                        {/* 4. Row 2, Col 2 (Tall Tree) */}
+                        <div className="viking-gallery-item row-span-2">
+                            <img
+                                src={galleryImg4}
+                                alt="Spectacular Holiday Light Display in Historic City Center"
+                            />
+                        </div>
+
+                        {/* 5. Row 2, Col 3 (Normal) */}
+                        <div className="viking-gallery-item">
+                            <img
+                                src={galleryImg5}
+                                alt="Loro Piana Christmas Tree & Holiday Lights"
+                            />
+                        </div>
+
+                        {/* 6. Row 3, Col 3 (Normal) */}
+                        <div className="viking-gallery-item">
+                            <img
+                                src={galleryImg6}
+                                alt="Winter View of Prague Castle & Charles Bridge"
+                            />
+                        </div>
+
+                        {/* 7. Row 4, Col 1 (Normal) */}
+                        <div className="viking-gallery-item">
+                            <img
+                                src={galleryImg7}
+                                alt="Prague Christmas Market Holiday Decorations"
+                            />
+                        </div>
+
+                        {/* 8. Row 4, Col 2-3 (Wide) */}
+                        <div className="viking-gallery-item col-span-2">
+                            <img
+                                src={galleryImg8}
+                                alt="Old Town Square Christmas Market, Prague"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1318,7 +1469,7 @@ function VikingChristmasMarketCruises() {
                         </div>
                         <p className="medi-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>Contact Trips & Ships Luxury Travel today to reserve your Viking Christmas Market Cruise.</p>
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}><Phone size={18} />Schedule a Christmas Market Cruise Consultation Today</button>
+                            <Link to="/contact" className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}><Phone size={18} />Schedule a Christmas Market Cruise Consultation Today</Link>
                         </div>
                     </div>
                 </div>
