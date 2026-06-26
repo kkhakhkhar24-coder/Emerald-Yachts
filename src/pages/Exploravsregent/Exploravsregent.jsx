@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsRegent.css'
+import './Exploravsregent.css'
 
 import {
     Ship, MapPin, Star, CheckCircle, Anchor, Gem,

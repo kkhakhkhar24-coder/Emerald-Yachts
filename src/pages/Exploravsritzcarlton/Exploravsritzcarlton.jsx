@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsRitzCarlton.css'
+import './Exploravsritzcarlton.css'
 // import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 // import hero1 from '../../assets/ExploraVsRitz/hero1.jpg'
 // import hero2 from '../../assets/ExploraVsRitz/hero2.jpg'

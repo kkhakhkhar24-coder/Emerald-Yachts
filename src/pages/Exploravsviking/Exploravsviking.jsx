@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsViking.css'
+import './Exploravsviking.css'
 import Profile_AH from '../../assets/ExploraFAQ/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/ExploraFAQ/Profile_Picture_AH.jpg'
 
