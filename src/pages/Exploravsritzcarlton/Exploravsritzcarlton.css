@@ -1,0 +1,1249 @@
+/* =============================================================
+   ExploraVsRitzCarlton.css
+   NEW SECTION STYLES ONLY — shared medi-* styles live in
+   AzamaraMediterraneanCruises.css
+   Color palette: strictly uses existing --medi-* variables
+
+   Brand differentiation (no new colors):
+   Explora Journeys   → var(--medi-navy)    #274472
+   Ritz-Carlton       → var(--medi-bg-dark)  #0f1c2e
+   ============================================================= */
+
+/* ── SHARED UTILITIES ────────────────────────────────────────── */
+
+.cmp-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.cmp-eyebrow-light {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.cmp-white-heading { color: #ffffff !important; }
+.cmp-separator-white { background: rgba(255, 255, 255, 0.3) !important; }
+
+/* Section header block (shared) */
+.cmp-section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Shared image frame */
+.cmp-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(15, 28, 46, 0.16);
+}
+
+.cmp-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cmp-image-frame:hover .cmp-frame-img { transform: scale(1.04); }
+
+.cmp-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.5) 0%, transparent 55%);
+    z-index: 1;
+}
+
+.cmp-intro-img-badge {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── BRAND COLUMN SHARED STYLES ──────────────────────────────── */
+
+.cmp-brand-split-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 56px rgba(15, 28, 46, 0.12);
+}
+
+.cmp-brand-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.cmp-brand-col-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 28px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+}
+
+/* Explora brand color */
+.cmp-explora-header { background: var(--medi-navy); }
+
+/* Ritz-Carlton brand color */
+.cmp-ritz-header { background: var(--medi-bg-dark); }
+
+/* Column image */
+.cmp-brand-col-image-frame {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.cmp-brand-col-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cmp-brand-col:hover .cmp-brand-col-img { transform: scale(1.06); }
+
+.cmp-brand-col-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.35) 0%, transparent 60%);
+    z-index: 1;
+}
+
+/* Column body */
+.cmp-brand-col-body {
+    padding: 28px 28px 32px;
+    flex: 1;
+    background: var(--medi-bg-white);
+}
+
+.cmp-brand-col-intro {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0 0 14px 0;
+    line-height: 1.75;
+}
+
+.cmp-brand-col-sub {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    margin: 0 0 10px 0;
+}
+
+.cmp-brand-col-note {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+    line-height: 1.65;
+    font-style: italic;
+}
+
+/* Feature list */
+.cmp-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cmp-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.cmp-feature-list li svg {
+    color: var(--medi-navy);
+    opacity: 0.7;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Brand tagline box */
+.cmp-brand-col-tagline {
+    border-left: 3px solid var(--medi-navy);
+    padding: 10px 14px;
+    background: var(--medi-bg-soft);
+    border-radius: 0 8px 8px 0;
+}
+
+.cmp-brand-col-tagline p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.cmp-tagline-ritz { border-left-color: var(--medi-bg-dark2); }
+.cmp-tagline-ritz p { color: var(--medi-bg-dark); }
+
+/* Right brand column (Ritz) gets dividing border */
+.cmp-ritz-col .cmp-brand-col-body {
+    border-left: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+/* ── 1. INTRO SECTION ────────────────────────────────────────── */
+
+.cmp-intro-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.cmp-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cmp-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.cmp-intro-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 16px 0;
+    line-height: 1.75;
+}
+
+.cmp-intro-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 28px 0;
+    line-height: 1.78;
+}
+
+.cmp-brand-intro-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.cmp-brand-intro-box {
+    border-radius: 14px;
+    padding: 20px 22px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.cmp-explora-box {
+    background: var(--medi-bg-soft);
+    border-left: 4px solid var(--medi-navy);
+    border-radius: 0 14px 14px 0;
+}
+
+.cmp-ritz-box {
+    background: var(--medi-bg-dark);
+    border-left: 4px solid var(--medi-bg-dark2);
+    border-radius: 0 14px 14px 0;
+}
+
+.cmp-ritz-box p { color: rgba(255, 255, 255, 0.8); }
+
+.cmp-brand-intro-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    margin-bottom: 10px;
+}
+
+.cmp-ritz-tag { color: rgba(255, 255, 255, 0.6); }
+
+.cmp-brand-intro-box p {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.cmp-intro-footer {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.cmp-intro-image-col { height: 560px; }
+
+/* ── 2. COMPARISON TABLE ─────────────────────────────────────── */
+
+.cmp-table-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cmp-table-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(39, 68, 114, 0.45) 0%, transparent 65%);
+    z-index: 0;
+}
+
+.cmp-table-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cmp-table-header-block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cmp-table-wrap {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 28px 70px rgba(15, 28, 46, 0.35);
+}
+
+/* Table head */
+.cmp-table-head {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: stretch;
+}
+
+.cmp-th-feature {
+    background: var(--medi-bg-soft);
+    padding: 20px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.cmp-th-brand {
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+}
+
+.cmp-th-explora { background: var(--medi-navy); }
+.cmp-th-ritz { background: var(--medi-bg-dark); }
+
+/* Table rows */
+.cmp-table-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    border-top: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.25s ease;
+}
+
+.cmp-table-row:hover { background: rgba(39, 68, 114, 0.025); }
+
+.cmp-row-even { background: var(--medi-bg-white); }
+.cmp-row-odd { background: rgba(231, 243, 245, 0.5); }
+
+.cmp-row-same .cmp-td-explora,
+.cmp-row-same .cmp-td-ritz {
+    color: var(--medi-navy) !important;
+    font-weight: 600 !important;
+}
+
+.cmp-td-feature {
+    padding: 16px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    opacity: 0.8;
+    border-right: 1px solid rgba(39, 68, 114, 0.07);
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.cmp-td-value {
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.cmp-td-explora { border-right: 1px solid rgba(39, 68, 114, 0.07); }
+
+.cmp-same-icon {
+    color: var(--medi-navy);
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+/* ── 3. OVERVIEWS SECTION ────────────────────────────────────── */
+
+.cmp-overviews-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.cmp-overviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ── 4. SHIPS SECTION ────────────────────────────────────────── */
+
+.cmp-ships-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+}
+
+.cmp-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fleet grid & chips */
+.cmp-fleet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.cmp-fleet-chip {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.cmp-fleet-chip-explora {
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.2);
+}
+
+.cmp-fleet-chip-ritz {
+    background: rgba(15, 28, 46, 0.08);
+    color: var(--medi-bg-dark);
+    border: 1px solid rgba(15, 28, 46, 0.2);
+}
+
+.cmp-ship-capacity-badge {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 20px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.3);
+}
+
+.cmp-badge-explora { background: var(--medi-navy); color: #ffffff; }
+.cmp-badge-ritz { background: var(--medi-bg-dark); color: #ffffff; }
+
+/* ── 5. SUITES SECTION ───────────────────────────────────────── */
+
+.cmp-suites-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.cmp-suites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ── 6. DINING SECTION ───────────────────────────────────────── */
+
+.cmp-dining-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+}
+
+.cmp-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* For dark background sections, tint the brand col body */
+.cmp-dining-section .cmp-brand-col-body,
+.cmp-ships-section .cmp-brand-col-body,
+.cmp-wellness-section .cmp-brand-col-body {
+    background: var(--medi-bg-white);
+}
+
+/* ── 7. DESTINATIONS SECTION ─────────────────────────────────── */
+
+.cmp-destinations-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.cmp-destinations-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cmp-dest-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 32px 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.cmp-destinations-shared-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    margin-bottom: 44px;
+}
+
+.cmp-dest-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    border-radius: 14px;
+    padding: 20px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.cmp-dest-chip:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.18);
+}
+
+.cmp-dest-chip:hover svg { color: #ffffff; }
+.cmp-dest-chip svg { color: var(--medi-navy); }
+
+.cmp-destinations-differentiators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.cmp-dest-diff-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 16px;
+    padding: 28px 28px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.cmp-dest-diff-ritz {
+    background: var(--medi-bg-dark);
+    border-color: transparent;
+}
+
+.cmp-dest-diff-explora {
+    background: var(--medi-navy);
+    border-color: transparent;
+}
+
+.cmp-dest-diff-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+    flex-shrink: 0;
+}
+
+.cmp-dest-diff-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.cmp-dest-diff-content p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    line-height: 1.65;
+}
+
+/* ── 8. INCLUSIONS SECTION ───────────────────────────────────── */
+
+.cmp-inclusions-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+}
+
+.cmp-inclusions-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(39, 68, 114, 0.4) 0%, transparent 60%);
+    z-index: 0;
+}
+
+.cmp-inclusions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cmp-inclusions-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.cmp-inclusion-col {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(15, 28, 46, 0.25);
+}
+
+.cmp-inclusion-col-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 26px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.cmp-inclusion-list {
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cmp-inclusion-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--medi-bg-soft);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.cmp-inclusion-item:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.cmp-inclusion-item:hover .cmp-inclusion-icon { background: rgba(255,255,255,0.15); color: #ffffff; }
+
+.cmp-inclusion-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cmp-incl-explora { background: rgba(39, 68, 114, 0.12); color: var(--medi-navy); }
+.cmp-incl-ritz { background: rgba(15, 28, 46, 0.1); color: var(--medi-bg-dark); }
+
+.cmp-inclusion-note {
+    font-size: 12px;
+    color: #718096;
+    margin: 0;
+    padding: 12px 26px 22px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* ── 9. SERVICE SECTION ──────────────────────────────────────── */
+
+.cmp-service-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.cmp-service-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cmp-service-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.cmp-service-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.07);
+}
+
+.cmp-service-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 26px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.cmp-service-card-body {
+    padding: 28px 26px;
+}
+
+.cmp-service-intro {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0 0 8px 0;
+    line-height: 1.7;
+}
+
+.cmp-service-sub {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 14px 0;
+}
+
+.cmp-service-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cmp-service-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--medi-bg-soft);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.cmp-service-feature:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.cmp-service-feature:hover .cmp-service-icon { background: rgba(255,255,255,0.15); color: #ffffff; }
+
+.cmp-service-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cmp-svc-explora { background: rgba(39,68,114,0.1); color: var(--medi-navy); }
+.cmp-svc-ritz { background: rgba(15,28,46,0.1); color: var(--medi-bg-dark); }
+
+/* ── 10. WELLNESS SECTION ────────────────────────────────────── */
+
+.cmp-wellness-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.cmp-wellness-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Wellness uses dark bg header same as ships */
+.cmp-wellness-section .cmp-section-header .cmp-eyebrow { color: var(--medi-navy); opacity: 0.7; }
+.cmp-wellness-section .cmp-white-heading { color: var(--medi-navy) !important; }
+.cmp-wellness-section .cmp-separator-white { background: var(--medi-navy) !important; }
+
+/* Override: wellness is light bg so fix header eyebrow */
+.cmp-wellness-section .cmp-section-header .cmp-eyebrow-light {
+    color: var(--medi-navy) !important;
+    opacity: 0.65 !important;
+}
+
+.cmp-wellness-section .cmp-white-heading { color: var(--medi-navy) !important; }
+.cmp-wellness-section .cmp-separator-white { background: var(--medi-navy) !important; opacity: 1; }
+
+/* ── 11. ENTERTAINMENT SECTION ───────────────────────────────── */
+
+.cmp-entertainment-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.cmp-entertainment-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ── 12. PRICING SECTION ─────────────────────────────────────── */
+
+.cmp-pricing-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 88px 20px;
+    position: relative;
+}
+
+.cmp-pricing-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(39, 68, 114, 0.4) 0%, transparent 60%);
+    z-index: 0;
+}
+
+.cmp-pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cmp-pricing-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    margin: 0 0 44px 0;
+    line-height: 1.6;
+}
+
+.cmp-pricing-cards {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: center;
+}
+
+.cmp-pricing-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(15, 28, 46, 0.3);
+}
+
+.cmp-pricing-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.cmp-pricing-card-body {
+    padding: 24px 24px 28px;
+}
+
+.cmp-pricing-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.cmp-pricing-badge-value {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--medi-green);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.cmp-pricing-badge-boutique {
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.2);
+}
+
+.cmp-pricing-card-body p {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.75;
+}
+
+.cmp-pricing-note-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.cmp-pricing-note-box p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin: 0;
+    line-height: 1.55;
+    font-style: italic;
+    max-width: 140px;
+}
+
+/* ── 13. WHO SHOULD CHOOSE override ─────────────────────────── */
+
+.cmp-ritz-audience-override {
+    border-top: 4px solid var(--medi-bg-dark) !important;
+}
+
+.cmp-ritz-audience-override .medi-audience-column-heading {
+    color: var(--medi-bg-dark) !important;
+}
+
+/* ── 14. FINAL VERDICT ───────────────────────────────────────── */
+
+.cmp-verdict-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 50%, var(--medi-bg-dark) 100%);
+    padding: 96px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cmp-verdict-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 20%, rgba(255,255,255,0.05) 0%, transparent 65%);
+    z-index: 0;
+}
+
+.cmp-verdict-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cmp-verdict-eyebrow-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+}
+
+.cmp-verdict-eyebrow-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+}
+
+.cmp-verdict-heading {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.cmp-verdict-separator {
+    width: 80px;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+    margin: 0 auto 28px;
+    border-radius: 2px;
+}
+
+.cmp-verdict-intro {
+    font-size: 18px;
+    color: rgba(255,255,255,0.78);
+    margin: 0 0 44px 0;
+    line-height: 1.65;
+}
+
+.cmp-verdict-split {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cmp-verdict-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.cmp-verdict-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.cmp-verdict-card-body {
+    padding: 24px 24px 28px;
+}
+
+.cmp-verdict-card-body p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.82);
+    margin: 0;
+    line-height: 1.75;
+    text-align: left;
+}
+
+.cmp-verdict-vs-divider {
+    width: 64px;
+    height: 64px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+    margin: 0 16px;
+}
+
+.cmp-verdict-conclusion {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 26px 36px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.cmp-verdict-conclusion-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.82);
+    margin: 0;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: TABLET  (max-width: 1024px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+    /* Intro */
+    .cmp-intro-grid { grid-template-columns: 1fr; gap: 48px; }
+    .cmp-intro-image-col { height: 400px; order: -1; }
+
+    /* Table */
+    .cmp-table-head,
+    .cmp-table-row { grid-template-columns: 140px 1fr 1fr; }
+
+    /* Brand splits → stack */
+    .cmp-brand-split-wrap { grid-template-columns: 1fr; border-radius: 16px; }
+    .cmp-ritz-col .cmp-brand-col-body { border-left: none; border-top: 1px solid rgba(39,68,114,0.08); }
+    .cmp-brand-col-image-frame { height: 260px; }
+
+    /* Inclusions */
+    .cmp-inclusions-split { grid-template-columns: 1fr; }
+
+    /* Service & Entertainment */
+    .cmp-service-split { grid-template-columns: 1fr; }
+
+    /* Destinations grid */
+    .cmp-destinations-shared-grid { grid-template-columns: repeat(3, 1fr); }
+    .cmp-destinations-differentiators { grid-template-columns: 1fr; }
+
+    /* Pricing */
+    .cmp-pricing-cards { grid-template-columns: 1fr; gap: 18px; }
+    .cmp-pricing-note-box { flex-direction: row; padding: 0; }
+    .cmp-pricing-note-box p { max-width: 100%; text-align: left; }
+
+    /* Verdict */
+    .cmp-verdict-heading { font-size: 40px; }
+    .cmp-verdict-split { grid-template-columns: 1fr; gap: 16px; }
+    .cmp-verdict-vs-divider { width: 48px; height: 48px; margin: 0 auto; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: MOBILE  (max-width: 767px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+
+    .cmp-intro-section, .cmp-table-section, .cmp-overviews-section,
+    .cmp-ships-section, .cmp-suites-section, .cmp-dining-section,
+    .cmp-destinations-section, .cmp-inclusions-section, .cmp-service-section,
+    .cmp-wellness-section, .cmp-entertainment-section, .cmp-pricing-section,
+    .cmp-verdict-section { padding: 64px 16px; }
+
+    /* Intro */
+    .cmp-intro-image-col { height: 300px; }
+    .cmp-brand-intro-boxes { gap: 10px; }
+
+    /* Table — scrollable on mobile */
+    .cmp-table-wrap { overflow-x: auto; }
+    .cmp-table-head,
+    .cmp-table-row { grid-template-columns: 120px minmax(140px, 1fr) minmax(140px, 1fr); min-width: 420px; }
+    .cmp-th-brand { padding: 16px 16px; font-size: 12px; }
+    .cmp-td-feature { padding: 14px 16px; font-size: 12px; }
+    .cmp-td-value { padding: 14px 16px; font-size: 13px; }
+    .cmp-th-feature { padding: 16px 16px; }
+
+    /* Brand cols */
+    .cmp-brand-col-header { padding: 14px 20px; font-size: 12px; }
+    .cmp-brand-col-body { padding: 22px 20px 26px; }
+    .cmp-brand-col-image-frame { height: 220px; }
+
+    /* Destinations */
+    .cmp-destinations-shared-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .cmp-dest-chip { padding: 14px 10px; }
+
+    /* Verdict */
+    .cmp-verdict-heading { font-size: 30px; }
+    .cmp-verdict-conclusion { padding: 20px 22px; }
+
+    /* Fleet chips */
+    .cmp-fleet-grid { gap: 6px; }
+    .cmp-fleet-chip { font-size: 10px; padding: 5px 10px; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: SMALL MOBILE  (max-width: 360px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 360px) {
+
+    .cmp-table-head,
+    .cmp-table-row { grid-template-columns: 100px minmax(120px, 1fr) minmax(120px, 1fr); }
+    .cmp-destinations-shared-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .cmp-verdict-heading { font-size: 26px !important; }
+    .cmp-image-frame { min-height: 260px !important; }
+    .cmp-intro-image-col { height: 240px !important; }
+    .cmp-brand-col-image-frame { height: 180px !important; }
+    .cmp-brand-intro-box { padding: 16px 16px !important; }
+    .cmp-verdict-conclusion { padding: 16px 16px !important; }
+    .cmp-pricing-note-box { flex-direction: column !important; }
+}

@@ -1,0 +1,885 @@
+/* ============================================================
+   ExploraVsOceania.css
+   New-section styles only — reuses all medi-* classes from
+   AzamaraMediterraneanCruises.css which must also be imported.
+   Colors: --medi-navy #274472 | --medi-bg-soft rgb(231,243,245)
+           --medi-bg-dark #0f1c2e | --medi-bg-dark2 #1c2f4a
+   ============================================================ */
+
+/* ── Shared new-page tokens ──────────────────────────────── */
+.evo-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-navy);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.evo-eyebrow-white {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================================
+   HERO overrides (hero re-uses medi-hero-* classes)
+   ============================================================ */
+.evo-hero .medi-hero-main-title {
+    max-width: 980px;
+}
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+.evo-intro-section {
+    background: #ffffff;
+    padding: 88px 20px;
+    position: relative;
+}
+
+.evo-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.evo-intro-lead {
+    font-size: 18px;
+    color: #475569;
+    max-width: 820px;
+    margin: 0 auto 56px;
+    line-height: 1.75;
+}
+
+.evo-intro-split {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: stretch;
+    text-align: left;
+}
+
+.evo-intro-card {
+    border-radius: 16px;
+    padding: 36px 32px;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.evo-intro-card:hover {
+    box-shadow: 0 16px 48px rgba(39, 68, 114, 0.13);
+    transform: translateY(-4px);
+}
+
+.evo-card-explora {
+    background: var(--medi-bg-dark);
+}
+.evo-card-oceania {
+    background: var(--medi-bg-soft);
+}
+
+.evo-intro-card-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 40px;
+    margin-bottom: 14px;
+}
+.evo-card-explora .evo-intro-card-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #93c5fd;
+}
+.evo-card-oceania .evo-intro-card-badge {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evo-intro-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    line-height: 1.3;
+}
+.evo-card-explora .evo-intro-card-title { color: #ffffff; }
+.evo-card-oceania .evo-intro-card-title { color: var(--medi-navy); }
+
+.evo-intro-card-text {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+.evo-card-explora .evo-intro-card-text { color: #94a3b8; }
+.evo-card-oceania .evo-intro-card-text { color: #475569; }
+
+.evo-intro-card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.evo-intro-card-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.evo-card-explora .evo-intro-card-list li { color: #cbd5e1; }
+.evo-card-explora .evo-intro-card-list li svg { color: #10b981; flex-shrink: 0; }
+.evo-card-oceania .evo-intro-card-list li { color: #334155; }
+.evo-card-oceania .evo-intro-card-list li svg { color: var(--medi-navy); flex-shrink: 0; }
+
+.evo-intro-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+}
+
+.evo-vs-badge {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.3);
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   QUICK COMPARISON TABLE
+   ============================================================ */
+.evo-table-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+.evo-table-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.evo-table-wrapper {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(39, 68, 114, 0.1);
+}
+.evo-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 15px;
+}
+.evo-compare-table thead {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+.evo-compare-table thead th {
+    padding: 18px 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.evo-compare-table thead th:first-child {
+    width: 200px;
+    color: #93c5fd;
+}
+.evo-th-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.evo-compare-table tbody td {
+    padding: 14px 24px;
+    color: #334155;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    line-height: 1.5;
+}
+.evo-td-feature {
+    font-weight: 600;
+    color: var(--medi-navy) !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.evo-row-alt {
+    background: rgba(231, 243, 245, 0.5);
+}
+.evo-compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.evo-compare-table tbody tr:hover {
+    background: rgba(39, 68, 114, 0.04);
+}
+
+/* ============================================================
+   TABBED DEEP DIVE SECTION
+   ============================================================ */
+.evo-tabs-section {
+    background: #ffffff;
+    padding: 88px 20px;
+}
+.evo-tabs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.evo-tabs-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.evo-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1.5px solid rgba(39, 68, 114, 0.2);
+    background: transparent;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.evo-tab-btn:hover {
+    border-color: var(--medi-navy);
+    color: var(--medi-navy);
+    background: var(--medi-bg-soft);
+}
+.evo-tab-btn.active {
+    background: var(--medi-navy);
+    color: #ffffff;
+    border-color: var(--medi-navy);
+}
+
+.evo-tabs-panel {
+    background: var(--medi-bg-soft);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+.evo-panel-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 28px;
+    text-align: center;
+}
+.evo-panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+.evo-panel-col {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 4px 24px rgba(39, 68, 114, 0.07);
+}
+.evo-col-header {
+    padding: 20px 24px 14px;
+}
+.evo-col-brand-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+.evo-col-explora .evo-col-brand-label { color: var(--medi-navy); }
+.evo-col-oceania .evo-col-brand-label { color: #0f766e; }
+
+.evo-col-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+.evo-col-img-wrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.evo-col-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.evo-panel-col:hover .evo-col-img {
+    transform: scale(1.04);
+}
+.evo-col-stat-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 40px;
+    letter-spacing: 0.04em;
+}
+.evo-col-list {
+    list-style: none;
+    margin: 0;
+    padding: 18px 24px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.evo-col-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.4;
+}
+.evo-col-list li svg { color: var(--medi-navy); flex-shrink: 0; margin-top: 1px; }
+
+.evo-col-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    font-style: italic;
+    color: #64748b;
+    padding: 0 24px 10px;
+    line-height: 1.5;
+}
+.evo-col-highlight svg { color: var(--medi-navy); flex-shrink: 0; margin-top: 2px; }
+
+/* ============================================================
+   SERVICE & ENTERTAINMENT
+   ============================================================ */
+.evo-service-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+.evo-service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.evo-service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.evo-service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.evo-service-card:hover {
+    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.12);
+    transform: translateY(-3px);
+}
+.evo-service-icon-box {
+    width: 56px;
+    height: 56px;
+    background: var(--medi-bg-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+    margin-bottom: 18px;
+}
+.evo-service-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+.evo-service-card-text {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================================
+   WHO SHOULD CHOOSE
+   ============================================================ */
+.evo-choose-section {
+    background: var(--medi-bg-dark);
+    padding: 88px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.evo-choose-section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.5) 0%, transparent 70%);
+    pointer-events: none;
+}
+.evo-choose-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.evo-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 12px;
+}
+.evo-choose-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+.evo-choose-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 24px 28px;
+    color: #ffffff;
+}
+.evo-choose-explora-header { background: rgba(39, 68, 114, 0.6); }
+.evo-choose-oceania-header { background: rgba(15, 118, 110, 0.5); }
+.evo-choose-card-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+}
+.evo-choose-list {
+    list-style: none;
+    margin: 0;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.evo-choose-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #cbd5e1;
+}
+.evo-choose-list li svg { color: #10b981; flex-shrink: 0; }
+
+/* ============================================================
+   FINAL VERDICT
+   ============================================================ */
+.evo-verdict-section {
+    background: #ffffff;
+    padding: 88px 20px;
+}
+.evo-verdict-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.evo-verdict-lead {
+    font-size: 18px;
+    color: #475569;
+    max-width: 760px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+}
+.evo-verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    text-align: left;
+}
+.evo-verdict-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 8px 40px rgba(39, 68, 114, 0.09);
+    transition: transform 0.3s ease;
+}
+.evo-verdict-card:hover { transform: translateY(-4px); }
+
+.evo-verdict-img-wrap {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+.evo-verdict-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.evo-verdict-card:hover .evo-verdict-img { transform: scale(1.05); }
+.evo-verdict-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.7) 0%, transparent 60%);
+}
+.evo-verdict-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 40px;
+}
+.evo-verdict-body {
+    padding: 28px 30px;
+}
+.evo-verdict-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+.evo-verdict-text {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+}
+.evo-verdict-footer-note {
+    margin-top: 40px;
+    background: var(--medi-bg-soft);
+    border-left: 4px solid var(--medi-navy);
+    border-radius: 0 12px 12px 0;
+    padding: 20px 28px;
+    font-size: 16px;
+    font-style: italic;
+    color: #334155;
+    text-align: left;
+    line-height: 1.6;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================================
+   PRICING SECTION
+   ============================================================ */
+.evo-pricing-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+.evo-pricing-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.evo-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+.evo-pricing-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    text-align: center;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 4px 24px rgba(39, 68, 114, 0.07);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.evo-pricing-card:hover {
+    box-shadow: 0 12px 40px rgba(39, 68, 114, 0.13);
+    transform: translateY(-4px);
+}
+.evo-pricing-icon {
+    color: var(--medi-navy);
+    margin-bottom: 16px;
+}
+.evo-pricing-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 14px;
+}
+.evo-pricing-text {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 22px;
+}
+.evo-pricing-tag {
+    display: inline-block;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    border-radius: 40px;
+}
+.evo-pricing-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-style: italic;
+    color: #475569;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px 24px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    text-align: center;
+}
+.evo-pricing-note svg { color: var(--medi-navy); flex-shrink: 0; }
+
+/* ============================================================
+   TABLET — max-width: 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+    .evo-intro-split {
+        grid-template-columns: 1fr;
+    }
+    .evo-intro-divider {
+        padding: 16px 0;
+    }
+    .evo-panel-grid {
+        grid-template-columns: 1fr;
+    }
+    .evo-service-grid {
+        grid-template-columns: 1fr;
+    }
+    .evo-choose-grid {
+        grid-template-columns: 1fr;
+    }
+    .evo-verdict-grid {
+        grid-template-columns: 1fr;
+    }
+    .evo-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    .evo-tabs-panel {
+        padding: 28px 20px;
+    }
+    .evo-intro-section,
+    .evo-table-section,
+    .evo-tabs-section,
+    .evo-service-section,
+    .evo-choose-section,
+    .evo-verdict-section,
+    .evo-pricing-section {
+        padding: 64px 20px;
+    }
+}
+
+/* ============================================================
+   MOBILE — max-width: 767px
+   ============================================================ */
+@media (max-width: 767px) {
+    .evo-intro-section,
+    .evo-table-section,
+    .evo-tabs-section,
+    .evo-service-section,
+    .evo-choose-section,
+    .evo-verdict-section,
+    .evo-pricing-section {
+        padding: 56px 16px;
+    }
+    .evo-intro-lead {
+        font-size: 16px;
+    }
+    .evo-intro-card {
+        padding: 28px 22px;
+    }
+    .evo-compare-table thead th,
+    .evo-compare-table tbody td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+    .evo-tabs-nav {
+        gap: 8px;
+    }
+    .evo-tab-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    .evo-col-img-wrap {
+        height: 160px;
+    }
+    .evo-service-card {
+        padding: 24px 20px;
+    }
+    .evo-choose-card-header {
+        padding: 18px 20px;
+        gap: 10px;
+    }
+    .evo-choose-card-header h3 {
+        font-size: 16px;
+    }
+    .evo-choose-list {
+        padding: 18px 20px;
+        gap: 10px;
+    }
+    .evo-choose-list li {
+        font-size: 14px;
+    }
+    .evo-verdict-img-wrap {
+        height: 200px;
+    }
+    .evo-verdict-body {
+        padding: 22px 22px;
+    }
+    .evo-pricing-card {
+        padding: 28px 22px;
+    }
+    .evo-verdict-footer-note {
+        padding: 16px 18px;
+        font-size: 15px;
+    }
+    .evo-tabs-panel {
+        padding: 24px 16px;
+    }
+}
+
+/* ============================================================
+   SMALL MOBILE — max-width: 360px
+   ============================================================ */
+@media (max-width: 360px) {
+    .evo-intro-section,
+    .evo-table-section,
+    .evo-tabs-section,
+    .evo-service-section,
+    .evo-choose-section,
+    .evo-verdict-section,
+    .evo-pricing-section {
+        padding: 48px 10px;
+    }
+    .evo-intro-lead {
+        font-size: 15px;
+    }
+    .evo-intro-card {
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+    .evo-intro-card-title {
+        font-size: 19px;
+    }
+    .evo-vs-badge {
+        width: 44px;
+        height: 44px;
+        font-size: 12px;
+    }
+    .evo-compare-table thead th:first-child {
+        width: 110px;
+    }
+    .evo-compare-table thead th,
+    .evo-compare-table tbody td {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .evo-tabs-nav {
+        gap: 6px;
+    }
+    .evo-tab-btn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+    .evo-tabs-panel {
+        padding: 18px 12px;
+        border-radius: 14px;
+    }
+    .evo-panel-title {
+        font-size: 18px;
+    }
+    .evo-col-heading {
+        font-size: 16px;
+    }
+    .evo-col-img-wrap {
+        height: 140px;
+    }
+    .evo-col-list li {
+        font-size: 13px;
+    }
+    .evo-service-card {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+    .evo-service-card-title {
+        font-size: 16px;
+    }
+    .evo-service-card-text {
+        font-size: 14px;
+    }
+    .evo-service-icon-box {
+        width: 46px;
+        height: 46px;
+    }
+    .evo-choose-card-header {
+        padding: 14px 16px;
+    }
+    .evo-choose-card-header h3 {
+        font-size: 15px;
+    }
+    .evo-choose-list {
+        padding: 14px 16px;
+        gap: 8px;
+    }
+    .evo-choose-list li {
+        font-size: 13px;
+    }
+    .evo-verdict-img-wrap {
+        height: 170px;
+    }
+    .evo-verdict-body {
+        padding: 18px 16px;
+    }
+    .evo-verdict-brand {
+        font-size: 17px;
+    }
+    .evo-verdict-text {
+        font-size: 14px;
+    }
+    .evo-verdict-footer-note {
+        font-size: 14px;
+        padding: 14px 16px;
+        margin-top: 28px;
+    }
+    .evo-pricing-card {
+        padding: 24px 16px;
+        border-radius: 12px;
+    }
+    .evo-pricing-brand {
+        font-size: 17px;
+    }
+    .evo-pricing-text {
+        font-size: 14px;
+    }
+    .evo-pricing-note {
+        font-size: 14px;
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+}   

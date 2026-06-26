@@ -1,0 +1,1167 @@
+/* ════════════════════════════════════════════════════════════════════
+   ExploraVsViking.css  |  Prefix: ev-
+   Colors only from existing palette:
+     #274472   navy
+     #0f1c2e   dark
+     #1c2f4a   dark2
+     rgb(231,243,245)  soft
+     #10b981   green
+     #ffffff   white
+   Breakpoints: 1024px (tablet) | 767px (mobile)
+════════════════════════════════════════════════════════════════════ */
+
+/* ── QUICK COMPARE TABLE ─────────────────────────────────────────── */
+.ev-compare-section {
+    background: rgb(231, 243, 245);
+    padding: 80px 20px;
+}
+
+.ev-compare-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ev-compare-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.ev-compare-eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #274472;
+    opacity: 0.75;
+    margin-bottom: 10px;
+}
+
+.ev-table-scroll {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(15, 28, 46, 0.10);
+    -webkit-overflow-scrolling: touch;
+}
+
+.ev-compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 600px;
+    background: #ffffff;
+}
+
+.ev-compare-table thead tr {
+    background: #0f1c2e;
+}
+
+.ev-compare-table th {
+    padding: 18px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.ev-th-feature { color: #ffffff; }
+.ev-th-explora { color: #93c5fd; }
+.ev-th-viking  { color: #86efac; }
+
+.ev-compare-table tbody tr {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.18s;
+}
+
+.ev-compare-table tbody tr:last-child { border-bottom: none; }
+.ev-compare-table tbody tr:nth-child(even) { background: rgb(231, 243, 245); }
+.ev-compare-table tbody tr:hover { background: rgba(39, 68, 114, 0.05); }
+
+.ev-compare-table td {
+    padding: 15px 22px;
+    font-size: 14px;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.ev-td-feature { font-weight: 700; color: #0f1c2e; white-space: nowrap; }
+.ev-td-explora { font-weight: 600; color: #274472; }
+.ev-td-viking  { font-weight: 600; color: #166534; }
+
+@media (max-width: 1024px) { .ev-compare-section { padding: 64px 20px; } }
+@media (max-width: 767px)  { .ev-compare-section { padding: 48px 16px; } }
+
+/* ── BRAND OVERVIEW – SPLIT IMAGE CARDS ─────────────────────────── */
+.ev-overview-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.ev-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ev-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.ev-overview-card {
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-overview-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+.ev-overview-body {
+    flex: 1;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ev-overview-card.ev-card-explora { background: #0f1c2e; }
+.ev-overview-card.ev-card-viking  { background: rgb(231, 243, 245); }
+
+.ev-overview-brand {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ev-card-explora .ev-overview-brand { color: #ffffff; }
+.ev-card-viking  .ev-overview-brand { color: #0f1c2e; }
+
+.ev-overview-tagline {
+    font-size: 13px;
+    font-style: italic;
+    margin: 0;
+}
+
+.ev-card-explora .ev-overview-tagline { color: #93c5fd; }
+.ev-card-viking  .ev-overview-tagline { color: #274472; }
+
+.ev-overview-bar {
+    width: 36px;
+    height: 3px;
+    background: #274472;
+    flex-shrink: 0;
+}
+
+.ev-overview-desc {
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.ev-card-explora .ev-overview-desc { color: #cbd5e1; }
+.ev-card-viking  .ev-overview-desc { color: #475569; }
+
+.ev-overview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ev-overview-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ev-card-explora .ev-overview-list li { color: #e2e8f0; }
+.ev-card-viking  .ev-overview-list li { color: #334155; }
+
+.ev-ov-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 1024px) {
+    .ev-overview-section { padding: 64px 20px; }
+    .ev-overview-grid { grid-template-columns: 1fr; }
+    .ev-overview-card { min-height: auto; }
+}
+
+@media (max-width: 767px) {
+    .ev-overview-section { padding: 48px 16px; }
+    .ev-overview-img { height: 200px; }
+    .ev-overview-body { padding: 24px 20px; }
+}
+
+/* ── SHIPS IMAGE MOSAIC ──────────────────────────────────────────── */
+.ev-ships-section {
+    background: #0f1c2e;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ev-ships-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(39, 68, 114, 0.35) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.ev-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ev-ships-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.ev-ships-eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.ev-ships-header h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+.ev-ships-bar {
+    width: 56px;
+    height: 4px;
+    background: #274472;
+    margin: 0 auto;
+}
+
+.ev-ships-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.ev-fleet-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ev-fleet-brand-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.ev-fleet-brand-tag.explora {
+    background: rgba(39, 68, 114, 0.5);
+    color: #93c5fd;
+}
+
+.ev-fleet-brand-tag.viking {
+    background: rgba(16, 185, 129, 0.12);
+    color: #6ee7b7;
+}
+
+.ev-fleet-main-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+.ev-fleet-info {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 24px 22px;
+}
+
+.ev-fleet-info h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 14px;
+}
+
+.ev-fleet-ships-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.ev-fleet-ship-chip {
+    background: rgba(39, 68, 114, 0.35);
+    border: 1px solid rgba(39, 68, 114, 0.4);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12.5px;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.ev-fleet-strengths-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ev-fleet-strengths-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 13.5px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.ev-fleet-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 1024px) {
+    .ev-ships-section { padding: 64px 20px; }
+    .ev-ships-header h2 { font-size: 30px; }
+}
+
+@media (max-width: 767px) {
+    .ev-ships-section { padding: 48px 16px; }
+    .ev-ships-grid { grid-template-columns: 1fr; gap: 40px; }
+    .ev-ships-header h2 { font-size: 24px; }
+    .ev-fleet-main-img { height: 200px; }
+}
+
+/* ── ACCOMMODATIONS IMAGE COMPARISON ────────────────────────────── */
+.ev-suites-section {
+    background: rgb(231, 243, 245);
+    padding: 80px 20px;
+}
+
+.ev-suites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ev-suites-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.ev-suite-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 28px rgba(15, 28, 46, 0.10);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-suite-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.ev-suite-body {
+    padding: 28px 26px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ev-suite-brand-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #274472;
+    display: block;
+}
+
+.ev-suite-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 0;
+}
+
+.ev-suite-desc {
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.ev-suite-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.ev-suite-features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.ev-suite-feat-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+.ev-suite-note {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    padding-top: 12px;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .ev-suites-section { padding: 64px 20px; }
+    .ev-suites-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+    .ev-suites-section { padding: 48px 16px; }
+    .ev-suite-img { height: 220px; }
+    .ev-suite-body { padding: 22px 20px; }
+}
+
+/* ── CATEGORY VERSUS CARDS ───────────────────────────────────────── */
+.ev-versus-section {
+    padding: 72px 20px;
+}
+
+.ev-versus-section.ev-bg-white { background: #ffffff; }
+.ev-versus-section.ev-bg-soft  { background: rgb(231, 243, 245); }
+.ev-versus-section.ev-bg-dark  { background: #0f1c2e; }
+
+.ev-versus-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ev-versus-heading-row {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ev-versus-heading-row h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #0f1c2e;
+    margin: 0 0 16px;
+}
+
+.ev-versus-section.ev-bg-dark .ev-versus-heading-row h2 {
+    color: #ffffff;
+}
+
+.ev-versus-bar {
+    width: 56px;
+    height: 4px;
+    background: #274472;
+    margin: 0 auto;
+}
+
+.ev-versus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Versus cards with optional image strip at top */
+.ev-versus-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.10);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-bg-dark .ev-versus-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.ev-versus-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.ev-versus-card-body {
+    padding: 26px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+}
+
+.ev-versus-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ev-versus-icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.ev-icon-explora { background: #274472; }
+.ev-icon-viking  { background: #1c2f4a; }
+
+.ev-versus-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 0;
+}
+
+.ev-bg-dark .ev-versus-card-title { color: #ffffff; }
+
+.ev-versus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.ev-versus-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.ev-bg-dark .ev-versus-list li { color: #94a3b8; }
+
+.ev-versus-list-check { color: #10b981; flex-shrink: 0; margin-top: 1px; }
+
+.ev-versus-note {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    padding-top: 12px;
+    font-style: italic;
+}
+
+.ev-bg-dark .ev-versus-note {
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #64748b;
+}
+
+.ev-winner-row {
+    margin-top: 28px;
+    background: #0f1c2e;
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.ev-bg-dark .ev-winner-row {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ev-winner-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    flex-shrink: 0;
+}
+
+.ev-winner-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .ev-versus-section { padding: 56px 20px; }
+    .ev-versus-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+    .ev-versus-section { padding: 44px 16px; }
+    .ev-versus-heading-row h2 { font-size: 24px; }
+    .ev-versus-card-img { height: 150px; }
+}
+
+/* ── INCLUSIONS DARK SECTION ─────────────────────────────────────── */
+.ev-inclusions-section {
+    background: #1c2f4a;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ev-inclusions-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 20%, rgba(39, 68, 114, 0.4) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.ev-inclusions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ev-inclusions-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.ev-inclusions-eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.ev-inclusions-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+
+.ev-inclusions-bar {
+    width: 56px;
+    height: 4px;
+    background: #274472;
+    margin: 0 auto;
+}
+
+.ev-inclusions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.ev-inclusions-card {
+    border-radius: 18px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ev-inclusions-card.ev-incl-explora {
+    background: rgba(39, 68, 114, 0.2);
+    border: 1px solid rgba(39, 68, 114, 0.4);
+}
+
+.ev-inclusions-card.ev-incl-viking {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ev-inclusions-brand-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: block;
+}
+
+.ev-incl-explora .ev-inclusions-brand-label { color: #93c5fd; }
+.ev-incl-viking  .ev-inclusions-brand-label { color: #6ee7b7; }
+
+.ev-inclusions-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+}
+
+.ev-inclusions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.ev-inclusions-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-size: 14.5px;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.ev-incl-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 1024px) {
+    .ev-inclusions-section { padding: 64px 20px; }
+    .ev-inclusions-grid { grid-template-columns: 1fr; }
+    .ev-inclusions-header h2 { font-size: 28px; }
+}
+
+@media (max-width: 767px) {
+    .ev-inclusions-section { padding: 48px 16px; }
+    .ev-inclusions-card { padding: 24px 20px; }
+}
+
+/* ── DESTINATION IMAGE STRIP ─────────────────────────────────────── */
+.ev-destinations-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.ev-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ev-destinations-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.ev-dest-intro {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.75;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.ev-destinations-mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px 240px;
+    gap: 14px;
+}
+
+.ev-dest-tile {
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ev-dest-tile:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.ev-dest-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ev-dest-tile:hover img {
+    transform: scale(1.04);
+}
+
+.ev-dest-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.82), transparent);
+    padding: 20px 16px 14px;
+}
+
+.ev-dest-caption-line {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.ev-dest-caption-sub {
+    display: block;
+    font-size: 12px;
+    color: #93c5fd;
+    margin-top: 2px;
+}
+
+.ev-dest-chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.ev-dest-chip {
+    background: #0f1c2e;
+    color: #93c5fd;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .ev-destinations-section { padding: 64px 20px; }
+    .ev-destinations-mosaic {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .ev-dest-tile { height: 200px; }
+    .ev-dest-tile:first-child { grid-column: span 2; }
+}
+
+@media (max-width: 767px) {
+    .ev-destinations-section { padding: 48px 16px; }
+    .ev-destinations-mosaic {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .ev-dest-tile { height: 180px; }
+    .ev-dest-tile:first-child { grid-column: span 1; }
+}
+
+/* ── WELLNESS IMAGE SPLIT ─────────────────────────────────────────── */
+.ev-wellness-section {
+    background: rgb(231, 243, 245);
+    padding: 80px 20px;
+}
+
+.ev-wellness-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ev-wellness-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.ev-wellness-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.07);
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-wellness-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.ev-wellness-body {
+    padding: 28px 26px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ev-wellness-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #274472;
+    display: block;
+}
+
+.ev-wellness-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 0;
+}
+
+.ev-wellness-desc {
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.ev-wellness-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.ev-wellness-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.ev-wellness-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 1024px) {
+    .ev-wellness-section { padding: 64px 20px; }
+    .ev-wellness-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+    .ev-wellness-section { padding: 48px 16px; }
+    .ev-wellness-img { height: 200px; }
+    .ev-wellness-body { padding: 22px 20px; }
+}
+
+/* ── WHO SHOULD CHOOSE (DECISION CARDS) ─────────────────────────── */
+.ev-decision-section {
+    background: rgb(231, 243, 245);
+    padding: 80px 20px;
+}
+
+.ev-decision-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ev-decision-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.ev-decision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.ev-decision-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border-top: 4px solid #274472;
+    box-shadow: 0 4px 28px rgba(15, 28, 46, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-decision-card.ev-dec-viking { border-top-color: #1c2f4a; }
+
+.ev-decision-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.ev-decision-body {
+    padding: 28px 26px;
+    flex: 1;
+}
+
+.ev-decision-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 0 0 20px;
+}
+
+.ev-decision-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ev-decision-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.ev-dec-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 1024px) {
+    .ev-decision-section { padding: 64px 20px; }
+    .ev-decision-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+    .ev-decision-section { padding: 48px 16px; }
+    .ev-decision-img { height: 170px; }
+    .ev-decision-body { padding: 22px 20px; }
+}
+
+/* ── FINAL VERDICT ───────────────────────────────────────────────── */
+.ev-verdict-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.ev-verdict-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ev-verdict-eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #274472;
+    opacity: 0.75;
+    margin-bottom: 14px;
+}
+
+.ev-verdict-container h2 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #0f1c2e;
+    margin: 0 0 20px;
+}
+
+.ev-verdict-bar {
+    width: 56px;
+    height: 4px;
+    background: #274472;
+    margin: 0 auto 32px;
+}
+
+.ev-verdict-text {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.85;
+    margin: 0 0 18px;
+}
+
+.ev-verdict-pills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 36px;
+    text-align: left;
+}
+
+.ev-verdict-pill {
+    border-radius: 16px;
+    padding: 24px 26px;
+}
+
+.ev-verdict-pill.ev-pill-explora {
+    background: rgb(231, 243, 245);
+    border-left: 4px solid #274472;
+}
+
+.ev-verdict-pill.ev-pill-viking {
+    background: rgb(231, 243, 245);
+    border-left: 4px solid #1c2f4a;
+}
+
+.ev-verdict-pill strong {
+    display: block;
+    font-size: 15px;
+    color: #0f1c2e;
+    margin-bottom: 8px;
+}
+
+.ev-verdict-pill p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.65;
+    margin: 0;
+}
+
+@media (max-width: 1024px) { .ev-verdict-section { padding: 64px 20px; } }
+
+@media (max-width: 767px) {
+    .ev-verdict-section { padding: 48px 16px; }
+    .ev-verdict-container h2 { font-size: 26px; }
+    .ev-verdict-pills { grid-template-columns: 1fr; }
+}

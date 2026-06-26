@@ -1,0 +1,1343 @@
+/* ============================================================
+   ExploraVsRegent — NEW SECTION STYLES
+   Only uses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   Fully responsive: Desktop (>1024px) / Tablet (≤1024px) / Mobile (≤768px)
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   QUICK COMPARISON TABLE
+---------------------------------------------------------- */
+.evr-table-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evr-table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.evr-table-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evr-table-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.evr-table-head {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    background: var(--medi-navy);
+    padding: 18px 32px;
+    gap: 16px;
+}
+
+.evr-table-head-cell {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evr-table-head-cell.center {
+    text-align: center;
+}
+
+.evr-table-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    padding: 15px 32px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.2s ease;
+}
+
+.evr-table-row:last-child {
+    border-bottom: none;
+}
+
+.evr-table-row:nth-child(even) {
+    background: rgba(231, 243, 245, 0.35);
+}
+
+.evr-table-row:hover {
+    background: rgba(39, 68, 114, 0.04);
+}
+
+.evr-table-feature {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.evr-table-cell {
+    font-size: 13.5px;
+    color: #374151;
+    text-align: center;
+}
+
+.evr-table-pill {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 5px 13px;
+    border-radius: 30px;
+}
+
+.evr-table-pill.winner {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evr-table-pill.tie {
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.18);
+}
+
+/* ----------------------------------------------------------
+   OVERVIEW PANELS — two cruise line intro cards
+---------------------------------------------------------- */
+.evr-overview-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evr-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evr-overview-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evr-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evr-overview-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.evr-overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(39, 68, 114, 0.12);
+}
+
+.evr-overview-card-top {
+    background: var(--medi-navy);
+    padding: 26px 28px;
+}
+
+.evr-overview-card-top.dark {
+    background: var(--medi-bg-dark);
+}
+
+.evr-overview-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0 0 8px 0;
+}
+
+.evr-overview-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.evr-overview-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.evr-overview-img-wrap {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.evr-overview-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evr-overview-card:hover .evr-overview-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evr-overview-body {
+    padding: 26px 28px;
+}
+
+.evr-overview-desc {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+}
+
+.evr-overview-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    margin: 0 0 10px 0;
+}
+
+.evr-overview-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.evr-overview-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evr-overview-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   SHIPS COMPARISON
+---------------------------------------------------------- */
+.evr-ships-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evr-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evr-ships-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evr-ships-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evr-ship-panel {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evr-ship-panel-header {
+    background: var(--medi-navy);
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.evr-ship-panel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evr-ship-panel-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.evr-ship-panel-body {
+    background: var(--medi-bg-soft);
+    padding: 24px 28px;
+}
+
+.evr-ship-img-wrap {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.evr-ship-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.evr-ship-sub-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    margin: 0 0 10px 0;
+}
+
+.evr-ship-sub-label.mt {
+    margin-top: 18px;
+}
+
+.evr-ship-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.evr-ship-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evr-ship-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-ship-capacity-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-top: 16px;
+}
+
+/* ----------------------------------------------------------
+   SUITES & ACCOMMODATIONS COMPARISON
+   (image side by side)
+---------------------------------------------------------- */
+.evr-suites-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.evr-suites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.evr-suites-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evr-suites-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.evr-suites-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.evr-suite-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.evr-suite-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-4px);
+}
+
+.evr-suite-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.evr-suite-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evr-suite-card:hover .evr-suite-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evr-suite-body {
+    padding: 24px 24px;
+}
+
+.evr-suite-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 6px 0;
+}
+
+.evr-suite-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+}
+
+.evr-suite-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.evr-suite-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+.evr-suite-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-suites-note {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px 28px;
+    font-size: 14.5px;
+    color: #94a3b8;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   DINING COMPARISON — two col with image
+---------------------------------------------------------- */
+.evr-dining-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evr-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evr-dining-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evr-dining-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evr-dining-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.evr-dining-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(39, 68, 114, 0.1);
+}
+
+.evr-dining-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.evr-dining-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evr-dining-card:hover .evr-dining-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evr-dining-body {
+    padding: 24px 24px;
+}
+
+.evr-dining-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 6px 0;
+}
+
+.evr-dining-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.evr-dining-intro {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0 0 14px 0;
+    line-height: 1.6;
+}
+
+.evr-dining-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.evr-dining-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evr-dining-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-dining-footer {
+    font-size: 13px;
+    color: #64748b;
+    font-style: italic;
+    margin: 12px 0 0 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   WHAT'S INCLUDED — two col dark
+---------------------------------------------------------- */
+.evr-included-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evr-included-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.evr-included-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evr-included-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evr-included-card {
+    border-radius: 20px;
+    padding: 36px;
+}
+
+.evr-included-card.explora {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.evr-included-card.regent {
+    background: var(--medi-navy);
+}
+
+.evr-included-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.evr-included-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evr-included-card.explora .evr-included-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evr-included-card.regent .evr-included-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evr-included-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evr-included-card.explora .evr-included-title {
+    color: var(--medi-navy);
+}
+
+.evr-included-card.regent .evr-included-title {
+    color: #ffffff;
+}
+
+.evr-included-note {
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+}
+
+.evr-included-card.explora .evr-included-note {
+    color: #64748b;
+}
+
+.evr-included-card.regent .evr-included-note {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evr-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.evr-included-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.evr-included-card.explora .evr-included-list li {
+    color: #374151;
+}
+
+.evr-included-card.regent .evr-included-list li {
+    color: #cbd5e1;
+}
+
+.evr-included-card.explora .evr-included-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-included-card.regent .evr-included-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-included-footer {
+    font-size: 13px;
+    font-style: italic;
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
+
+.evr-included-card.explora .evr-included-footer {
+    color: #94a3b8;
+}
+
+.evr-included-card.regent .evr-included-footer {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------------------------------------------------
+   SERVICE + ENTERTAINMENT (tabbed head-to-head)
+---------------------------------------------------------- */
+.evr-headtohead-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evr-headtohead-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evr-headtohead-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evr-category-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.evr-category-tab-btn {
+    padding: 11px 24px;
+    border-radius: 40px;
+    border: 2px solid rgba(39, 68, 114, 0.18);
+    background: transparent;
+    color: var(--medi-navy);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+}
+
+.evr-category-tab-btn.active {
+    background: var(--medi-navy);
+    border-color: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evr-category-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.evr-category-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    padding: 30px 28px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    transition: all 0.3s ease;
+}
+
+.evr-category-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 6px 0;
+}
+
+.evr-category-heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 14px 0;
+}
+
+.evr-category-intro {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0 0 14px 0;
+}
+
+.evr-category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.evr-category-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evr-category-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-category-note {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    text-align: center;
+    margin-top: 22px;
+    grid-column: 1 / -1;
+}
+
+/* ----------------------------------------------------------
+   PRICING + WHO SHOULD CHOOSE (combined)
+---------------------------------------------------------- */
+.evr-choose-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evr-choose-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.evr-choose-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evr-pricing-note {
+    background: var(--medi-bg-soft);
+    border-radius: 14px;
+    padding: 22px 28px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evr-pricing-note p {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.evr-pricing-note strong {
+    color: var(--medi-navy);
+}
+
+.evr-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.evr-choose-card {
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.evr-choose-card.explora {
+    background: var(--medi-navy);
+}
+
+.evr-choose-card.regent {
+    background: var(--medi-bg-soft);
+    border: 2px solid var(--medi-navy);
+}
+
+.evr-choose-card-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.evr-choose-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evr-choose-card.explora .evr-choose-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evr-choose-card.regent .evr-choose-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evr-choose-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evr-choose-card.explora .evr-choose-title {
+    color: #ffffff;
+}
+
+.evr-choose-card.regent .evr-choose-title {
+    color: var(--medi-navy);
+}
+
+.evr-choose-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.evr-choose-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.evr-choose-card.explora .evr-choose-list li {
+    color: #cbd5e1;
+}
+
+.evr-choose-card.regent .evr-choose-list li {
+    color: #374151;
+}
+
+.evr-choose-card.explora .evr-choose-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evr-choose-card.regent .evr-choose-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   FINAL VERDICT
+---------------------------------------------------------- */
+.evr-verdict-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evr-verdict-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.evr-verdict-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evr-verdict-lead {
+    font-size: 17px;
+    color: #475569;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.evr-verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+.evr-verdict-card {
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.evr-verdict-card.explora {
+    background: var(--medi-navy);
+}
+
+.evr-verdict-card.regent {
+    background: var(--medi-bg-white);
+    border: 2px solid var(--medi-navy);
+}
+
+.evr-verdict-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.evr-verdict-card-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evr-verdict-card.explora .evr-verdict-card-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evr-verdict-card.regent .evr-verdict-card-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evr-verdict-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evr-verdict-card.explora .evr-verdict-card-title {
+    color: #ffffff;
+}
+
+.evr-verdict-card.regent .evr-verdict-card-title {
+    color: var(--medi-navy);
+}
+
+.evr-verdict-card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.evr-verdict-card.explora .evr-verdict-card-text {
+    color: #cbd5e1;
+}
+
+.evr-verdict-card.regent .evr-verdict-card-text {
+    color: #374151;
+}
+
+.evr-verdict-summary {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 14px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.05);
+}
+
+.evr-verdict-summary-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evr-verdict-summary-text {
+    font-size: 15px;
+    color: #2d3748;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — 3 BREAKPOINTS
+   ============================================================ */
+
+/* ---------- TABLET (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .evr-overview-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .evr-ships-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .evr-suites-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .evr-dining-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .evr-included-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .evr-category-panel {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .evr-choose-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .evr-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .evr-table-section,
+    .evr-overview-section,
+    .evr-ships-section,
+    .evr-suites-section,
+    .evr-dining-section,
+    .evr-included-section,
+    .evr-headtohead-section,
+    .evr-choose-section,
+    .evr-verdict-section {
+        padding: 70px 24px;
+    }
+
+    .evr-table-head,
+    .evr-table-row {
+        padding: 14px 20px;
+    }
+}
+
+/* ---------- MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    .evr-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .evr-table-head {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        padding: 14px 16px;
+        gap: 10px;
+        min-width: 460px;
+    }
+
+    .evr-table-head-cell {
+        font-size: 11px;
+    }
+
+    .evr-table-row {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        padding: 12px 16px;
+        gap: 10px;
+        min-width: 460px;
+    }
+
+    .evr-table-feature {
+        font-size: 12.5px;
+    }
+
+    .evr-table-cell {
+        font-size: 12px;
+    }
+
+    .evr-table-pill {
+        font-size: 10.5px;
+        padding: 4px 9px;
+    }
+
+    .evr-overview-grid,
+    .evr-ships-grid,
+    .evr-suites-grid,
+    .evr-dining-grid,
+    .evr-included-grid,
+    .evr-category-panel,
+    .evr-choose-grid,
+    .evr-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .evr-category-tabs {
+        gap: 8px;
+    }
+
+    .evr-category-tab-btn {
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+
+    .evr-overview-body,
+    .evr-ship-panel-body {
+        padding: 20px 20px;
+    }
+
+    .evr-suite-body,
+    .evr-dining-body,
+    .evr-category-card {
+        padding: 20px 18px;
+    }
+
+    .evr-included-card.explora,
+    .evr-included-card.regent,
+    .evr-choose-card.explora,
+    .evr-choose-card.regent,
+    .evr-verdict-card.explora,
+    .evr-verdict-card.regent {
+        padding: 24px 20px;
+    }
+
+    .evr-verdict-summary {
+        flex-direction: column;
+        padding: 20px 18px;
+    }
+
+    .evr-suite-img-wrap,
+    .evr-dining-img-wrap {
+        height: 180px;
+    }
+
+    .evr-overview-img-wrap {
+        height: 190px;
+    }
+
+    .evr-table-section,
+    .evr-overview-section,
+    .evr-ships-section,
+    .evr-suites-section,
+    .evr-dining-section,
+    .evr-included-section,
+    .evr-headtohead-section,
+    .evr-choose-section,
+    .evr-verdict-section {
+        padding: 56px 16px;
+    }
+
+    .evr-table-header,
+    .evr-overview-header,
+    .evr-ships-header,
+    .evr-suites-header,
+    .evr-dining-header,
+    .evr-included-header,
+    .evr-headtohead-header,
+    .evr-choose-header,
+    .evr-verdict-header {
+        margin-bottom: 36px;
+    }
+}
+
+/* ---------- SMALL MOBILE (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .evr-category-tab-btn {
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .evr-overview-title {
+        font-size: 19px;
+    }
+
+    .evr-verdict-lead {
+        font-size: 15px;
+    }
+
+    .evr-pricing-note p {
+        font-size: 14px;
+    }
+}

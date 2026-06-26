@@ -95,7 +95,10 @@ import TravelProgramsOperaCompanies from "./pages/TravelProgramsOperaCompanies/T
 import TravelProgramsSymphonyOrchestras from "./pages/TravelProgramsSymphonyOrchestras/TravelProgramsSymphonyOrchestras";
 import Performingartstravel from "./pages/Performingartstravel/Performingartstravel";
 import Whytraveldonorengagement from "./pages/Whytraveldonorengagement/Whytraveldonorengagement";
-
+import Exploravsregent from "./pages/Exploravsregent/Exploravsregent";
+import Exploravsritzcarlton from "./pages/Exploravsritzcarlton/Exploravsritzcarlton";
+import Exploravsviking from "./pages/Exploravsviking/Exploravsviking";
+import Exploravsoceania from "./pages/Exploravsoceania/Exploravsoceania";
 
 function App() {
   return (
@@ -511,6 +514,27 @@ function App() {
             path="/why-travel-increases-donor-engagement-and-fundraising"
             element={< Whytraveldonorengagement />}
           />
+
+          <Route
+            path="/explora-vs-regent"
+            element={< Exploravsregent />}
+          />
+
+          <Route
+            path="/explora-vs-ritz-carlton-yacht-collection"
+            element={< Exploravsritzcarlton />}
+          />
+
+          <Route
+            path="/explora-vs-viking"
+            element={< Exploravsviking />}
+          />
+
+          <Route
+            path="/explora-vs-oceania"
+            element={< Exploravsoceania />}
+          />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

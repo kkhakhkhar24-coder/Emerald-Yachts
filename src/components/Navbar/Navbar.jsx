@@ -658,7 +658,38 @@ const Navbar = () => {
                 Why travel donor engagement
               </NavLink>
 
+               <NavLink
+                to="/explora-vs-regent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Regent
+              </NavLink>
 
+              <NavLink
+                to="/explora-vs-ritz-carlton-yacht-collection
+"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Ritzcarlton
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-viking"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Viking
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-oceania"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Oceania
+              </NavLink>
 
 
 
@@ -1326,6 +1357,30 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Why travel donor engagement
+              </NavLink>
+
+               <NavLink
+                to="/explora-vs-regent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Regent
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-ritz-carlton-yacht-collection"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Ritzcarlton
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-oceania"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Oceania
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
