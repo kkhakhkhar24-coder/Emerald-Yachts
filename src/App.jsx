@@ -99,6 +99,9 @@ import Exploravsregent from "./pages/Exploravsregent/Exploravsregent";
 import Exploravsritzcarlton from "./pages/Exploravsritzcarlton/Exploravsritzcarlton";
 import Exploravsviking from "./pages/Exploravsviking/Exploravsviking";
 import Exploravsoceania from "./pages/Exploravsoceania/Exploravsoceania";
+import Exploravsscenic from "./pages/Exploravsscenic/Exploravsscenic";
+import Exploravsponant from "./pages/Exploravsponant/Exploravsponant";
+import Exploravscrystal from "./pages/Exploravscrystal/Exploravscrystal";
 
 function App() {
   return (
@@ -535,6 +538,20 @@ function App() {
             element={< Exploravsoceania />}
           />
 
+          <Route
+            path="/explora-vs-scenic"
+            element={< Exploravsscenic />}
+          />
+
+           <Route
+            path="/explora-vs-ponant"
+            element={< Exploravsponant />}
+          />
+
+          <Route
+            path="/explora-vs-crystal"
+            element={< Exploravscrystal />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

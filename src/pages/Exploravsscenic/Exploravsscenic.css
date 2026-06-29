@@ -1,0 +1,1312 @@
+/* ============================================================
+   ExploraVsScenic — NEW SECTION STYLES
+   Prefix: evs- (avoids collision with evr- from ExploraVsRegent)
+   Only uses existing root variables from AzamaraMediterraneanCruises.css:
+   --medi-navy, --medi-navy-light, --medi-bg-white, --medi-bg-soft,
+   --medi-bg-dark, --medi-bg-dark2, --medi-green, --medi-red
+   No new colors introduced anywhere in this file.
+   Fully responsive: Desktop (>1024px) / Tablet (≤1024px) / Mobile (≤768px)
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   QUICK COMPARISON TABLE
+---------------------------------------------------------- */
+.evs-table-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evs-table-container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.evs-table-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evs-table-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.evs-table-head {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    background: var(--medi-navy);
+    padding: 18px 32px;
+    gap: 16px;
+}
+
+.evs-table-head-cell {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evs-table-head-cell.center {
+    text-align: center;
+}
+
+.evs-table-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    padding: 15px 32px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+    transition: background 0.2s ease;
+}
+
+.evs-table-row:last-child {
+    border-bottom: none;
+}
+
+.evs-table-row:nth-child(even) {
+    background: rgba(231, 243, 245, 0.35);
+}
+
+.evs-table-row:hover {
+    background: rgba(39, 68, 114, 0.04);
+}
+
+.evs-table-feature {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.evs-table-cell {
+    font-size: 13.5px;
+    color: #374151;
+    text-align: center;
+}
+
+.evs-table-pill {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 5px 13px;
+    border-radius: 30px;
+}
+
+.evs-table-pill.winner {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evs-table-pill.tie {
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    border: 1px solid rgba(39, 68, 114, 0.18);
+}
+
+/* ----------------------------------------------------------
+   OVERVIEW PANELS — two cruise line intro cards
+---------------------------------------------------------- */
+.evs-overview-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evs-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evs-overview-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evs-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evs-overview-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.evs-overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(39, 68, 114, 0.12);
+}
+
+.evs-overview-card-top {
+    background: var(--medi-navy);
+    padding: 26px 28px;
+}
+
+.evs-overview-card-top.dark {
+    background: var(--medi-bg-dark);
+}
+
+.evs-overview-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0 0 8px 0;
+}
+
+.evs-overview-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.evs-overview-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    line-height: 1.55;
+}
+
+.evs-overview-img-wrap {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.evs-overview-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evs-overview-card:hover .evs-overview-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evs-overview-body {
+    padding: 26px 28px;
+}
+
+.evs-overview-desc {
+    font-size: 14.5px;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+}
+
+.evs-overview-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    margin: 0 0 10px 0;
+}
+
+.evs-overview-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.evs-overview-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evs-overview-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   SHIPS COMPARISON
+---------------------------------------------------------- */
+.evs-ships-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evs-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evs-ships-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evs-ships-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evs-ship-panel {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evs-ship-panel-header {
+    background: var(--medi-navy);
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.evs-ship-panel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evs-ship-panel-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.evs-ship-panel-body {
+    background: var(--medi-bg-soft);
+    padding: 24px 28px;
+}
+
+.evs-ship-img-wrap {
+    width: 100%;
+    height: 190px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.evs-ship-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.evs-ship-sub-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.65;
+    margin: 0 0 10px 0;
+}
+
+.evs-ship-sub-label.mt {
+    margin-top: 18px;
+}
+
+.evs-ship-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.evs-ship-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evs-ship-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-ship-capacity-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin: 14px 0 0 0;
+}
+
+.evs-ship-note {
+    font-size: 13px;
+    color: #64748b;
+    font-style: italic;
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   SUITES — dark two-column image cards
+---------------------------------------------------------- */
+.evs-suites-section {
+    background: var(--medi-bg-dark);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.evs-suites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.evs-suites-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evs-suites-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.evs-suites-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.evs-suite-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.evs-suite-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-4px);
+}
+
+.evs-suite-img-wrap {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.evs-suite-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evs-suite-card:hover .evs-suite-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evs-suite-body {
+    padding: 26px 24px;
+}
+
+.evs-suite-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 6px 0;
+}
+
+.evs-suite-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+}
+
+.evs-suite-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.evs-suite-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+.evs-suite-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-suites-note {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px 28px;
+    font-size: 14.5px;
+    color: #94a3b8;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   DINING COMPARISON — cards with images
+---------------------------------------------------------- */
+.evs-dining-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evs-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evs-dining-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evs-dining-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evs-dining-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.evs-dining-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(39, 68, 114, 0.1);
+}
+
+.evs-dining-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.evs-dining-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.evs-dining-card:hover .evs-dining-img-wrap img {
+    transform: scale(1.05);
+}
+
+.evs-dining-body {
+    padding: 24px 24px;
+}
+
+.evs-dining-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 6px 0;
+}
+
+.evs-dining-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+}
+
+.evs-dining-intro {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0 0 14px 0;
+}
+
+.evs-dining-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.evs-dining-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evs-dining-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-dining-footer {
+    font-size: 13px;
+    color: #64748b;
+    font-style: italic;
+    margin: 12px 0 0 0;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   WHAT'S INCLUDED — two col contrast
+---------------------------------------------------------- */
+.evs-included-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evs-included-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.evs-included-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.evs-included-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.evs-included-card {
+    border-radius: 20px;
+    padding: 36px;
+}
+
+.evs-included-card.explora {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.evs-included-card.scenic {
+    background: var(--medi-navy);
+}
+
+.evs-included-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.evs-included-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evs-included-card.explora .evs-included-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evs-included-card.scenic .evs-included-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evs-included-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evs-included-card.explora .evs-included-title {
+    color: var(--medi-navy);
+}
+
+.evs-included-card.scenic .evs-included-title {
+    color: #ffffff;
+}
+
+.evs-included-intro {
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+}
+
+.evs-included-card.explora .evs-included-intro {
+    color: #64748b;
+}
+
+.evs-included-card.scenic .evs-included-intro {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evs-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.evs-included-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.evs-included-card.explora .evs-included-list li {
+    color: #374151;
+}
+
+.evs-included-card.scenic .evs-included-list li {
+    color: #cbd5e1;
+}
+
+.evs-included-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-included-footer {
+    font-size: 13px;
+    font-style: italic;
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
+
+.evs-included-card.explora .evs-included-footer {
+    color: #94a3b8;
+}
+
+.evs-included-card.scenic .evs-included-footer {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------------------------------------------------
+   HEAD-TO-HEAD TABS: Service / Wellness / Entertainment
+   / Destinations / Pricing
+---------------------------------------------------------- */
+.evs-headtohead-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evs-headtohead-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evs-headtohead-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evs-category-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.evs-category-tab-btn {
+    padding: 11px 22px;
+    border-radius: 40px;
+    border: 2px solid rgba(39, 68, 114, 0.18);
+    background: transparent;
+    color: var(--medi-navy);
+    font-weight: 600;
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+}
+
+.evs-category-tab-btn.active {
+    background: var(--medi-navy);
+    border-color: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evs-category-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.evs-category-card {
+    background: var(--medi-bg-white);
+    border-radius: 18px;
+    padding: 30px 26px;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.evs-category-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.6;
+    margin: 0 0 6px 0;
+}
+
+.evs-category-heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 12px 0;
+}
+
+.evs-category-intro {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0 0 14px 0;
+}
+
+.evs-category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.evs-category-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.evs-category-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-category-footer {
+    font-size: 13.5px;
+    color: #64748b;
+    font-style: italic;
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
+
+.evs-category-note {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 12px;
+    padding: 18px 24px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    text-align: center;
+    margin-top: 22px;
+    grid-column: 1 / -1;
+}
+
+/* ----------------------------------------------------------
+   WHO SHOULD CHOOSE EACH + PRICING NOTE
+---------------------------------------------------------- */
+.evs-choose-section {
+    background: var(--medi-bg-white);
+    padding: 90px 20px;
+}
+
+.evs-choose-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.evs-choose-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evs-pricing-note {
+    background: var(--medi-bg-soft);
+    border-radius: 14px;
+    padding: 22px 28px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evs-pricing-note p {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.evs-pricing-note strong {
+    color: var(--medi-navy);
+}
+
+.evs-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.evs-choose-card {
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.evs-choose-card.explora {
+    background: var(--medi-navy);
+}
+
+.evs-choose-card.scenic {
+    background: var(--medi-bg-soft);
+    border: 2px solid var(--medi-navy);
+}
+
+.evs-choose-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.evs-choose-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evs-choose-card.explora .evs-choose-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evs-choose-card.scenic .evs-choose-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evs-choose-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evs-choose-card.explora .evs-choose-title {
+    color: #ffffff;
+}
+
+.evs-choose-card.scenic .evs-choose-title {
+    color: var(--medi-navy);
+}
+
+.evs-choose-intro {
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+}
+
+.evs-choose-card.explora .evs-choose-intro {
+    color: #94a3b8;
+}
+
+.evs-choose-card.scenic .evs-choose-intro {
+    color: #64748b;
+}
+
+.evs-choose-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.evs-choose-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.evs-choose-card.explora .evs-choose-list li {
+    color: #cbd5e1;
+}
+
+.evs-choose-card.scenic .evs-choose-list li {
+    color: #374151;
+}
+
+.evs-choose-card.explora .evs-choose-list svg {
+    color: var(--medi-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.evs-choose-card.scenic .evs-choose-list svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ----------------------------------------------------------
+   FINAL VERDICT
+---------------------------------------------------------- */
+.evs-verdict-section {
+    background: var(--medi-bg-soft);
+    padding: 90px 20px;
+}
+
+.evs-verdict-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.evs-verdict-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.evs-verdict-lead {
+    font-size: 17px;
+    color: #475569;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.evs-verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+.evs-verdict-card {
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.evs-verdict-card.explora {
+    background: var(--medi-navy);
+}
+
+.evs-verdict-card.scenic {
+    background: var(--medi-bg-white);
+    border: 2px solid var(--medi-navy);
+}
+
+.evs-verdict-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.evs-verdict-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evs-verdict-card.explora .evs-verdict-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.evs-verdict-card.scenic .evs-verdict-icon {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.evs-verdict-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.evs-verdict-card.explora .evs-verdict-title {
+    color: #ffffff;
+}
+
+.evs-verdict-card.scenic .evs-verdict-title {
+    color: var(--medi-navy);
+}
+
+.evs-verdict-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.evs-verdict-card.explora .evs-verdict-text {
+    color: #cbd5e1;
+}
+
+.evs-verdict-card.scenic .evs-verdict-text {
+    color: #374151;
+}
+
+.evs-verdict-summary {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 14px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.05);
+}
+
+.evs-verdict-summary-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evs-verdict-summary-text {
+    font-size: 15px;
+    color: #2d3748;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — 3 BREAKPOINTS
+   ============================================================ */
+
+/* ---------- TABLET (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .evs-overview-grid,
+    .evs-ships-grid,
+    .evs-suites-grid,
+    .evs-dining-grid,
+    .evs-included-grid,
+    .evs-choose-grid,
+    .evs-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .evs-category-panel {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .evs-table-section,
+    .evs-overview-section,
+    .evs-ships-section,
+    .evs-suites-section,
+    .evs-dining-section,
+    .evs-included-section,
+    .evs-headtohead-section,
+    .evs-choose-section,
+    .evs-verdict-section {
+        padding: 70px 24px;
+    }
+
+    .evs-table-head,
+    .evs-table-row {
+        padding: 14px 20px;
+    }
+}
+
+/* ---------- MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    .evs-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .evs-table-head {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        padding: 13px 14px;
+        gap: 8px;
+        min-width: 460px;
+    }
+
+    .evs-table-head-cell {
+        font-size: 11px;
+    }
+
+    .evs-table-row {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        padding: 12px 14px;
+        gap: 8px;
+        min-width: 460px;
+    }
+
+    .evs-table-feature { font-size: 12.5px; }
+    .evs-table-cell { font-size: 12px; }
+    .evs-table-pill { font-size: 10.5px; padding: 4px 9px; }
+
+    .evs-overview-grid,
+    .evs-ships-grid,
+    .evs-suites-grid,
+    .evs-dining-grid,
+    .evs-included-grid,
+    .evs-category-panel,
+    .evs-choose-grid,
+    .evs-verdict-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .evs-overview-img-wrap,
+    .evs-dining-img-wrap {
+        height: 190px;
+    }
+
+    .evs-suite-img-wrap { height: 185px; }
+
+    .evs-overview-body,
+    .evs-ship-panel-body { padding: 20px 18px; }
+
+    .evs-suite-body,
+    .evs-dining-body,
+    .evs-category-card { padding: 20px 16px; }
+
+    .evs-included-card.explora,
+    .evs-included-card.scenic,
+    .evs-choose-card.explora,
+    .evs-choose-card.scenic,
+    .evs-verdict-card.explora,
+    .evs-verdict-card.scenic { padding: 24px 18px; }
+
+    .evs-verdict-summary {
+        flex-direction: column;
+        padding: 20px 16px;
+    }
+
+    .evs-category-tabs { gap: 8px; }
+
+    .evs-category-tab-btn {
+        padding: 9px 16px;
+        font-size: 12.5px;
+    }
+
+    .evs-table-section,
+    .evs-overview-section,
+    .evs-ships-section,
+    .evs-suites-section,
+    .evs-dining-section,
+    .evs-included-section,
+    .evs-headtohead-section,
+    .evs-choose-section,
+    .evs-verdict-section {
+        padding: 56px 16px;
+    }
+
+    .evs-table-header,
+    .evs-overview-header,
+    .evs-ships-header,
+    .evs-suites-header,
+    .evs-dining-header,
+    .evs-included-header,
+    .evs-headtohead-header,
+    .evs-choose-header,
+    .evs-verdict-header {
+        margin-bottom: 36px;
+    }
+}
+
+/* ---------- SMALL MOBILE (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .evs-category-tab-btn {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .evs-overview-title { font-size: 19px; }
+    .evs-verdict-lead { font-size: 15px; }
+    .evs-pricing-note p { font-size: 13.5px; }
+    .evs-ship-capacity-tag { font-size: 12px; }
+}

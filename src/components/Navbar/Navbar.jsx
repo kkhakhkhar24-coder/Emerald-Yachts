@@ -691,6 +691,30 @@ const Navbar = () => {
                 Explora Vs Oceania
               </NavLink>
 
+              <NavLink
+                to="/explora-vs-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Scenic
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-ponant"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Ponant
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-crystal"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Crystal
+              </NavLink>
+
 
 
             </div>
@@ -1381,6 +1405,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Explora Vs Oceania
+              </NavLink>
+
+              <NavLink
+                to="/explora-vs-ponant"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Ponant
+              </NavLink>
+
+               <NavLink
+                to="/explora-vs-crystal"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Vs Crystal
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
