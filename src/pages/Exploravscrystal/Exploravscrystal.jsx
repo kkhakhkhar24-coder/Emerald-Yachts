@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsCrystal.css'
+import './Exploravscrystal.css'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import {

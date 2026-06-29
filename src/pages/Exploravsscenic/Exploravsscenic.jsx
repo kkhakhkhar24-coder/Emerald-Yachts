@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsScenic.css'
+import './Exploravsscenic.css'
 
 import {
     Ship, MapPin, Star, CheckCircle, Anchor, Gem,

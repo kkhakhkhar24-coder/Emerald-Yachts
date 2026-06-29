@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExploraVsPonant.css'
+import './Exploravsponant.css'
 // import Profile_AH from '../../assets/ExploraVsPonant/Profile_AH.jpg'
 // import Profile_Picture_AH from '../../assets/ExploraVsPonant/Profile_Picture_AH.jpg'
 
