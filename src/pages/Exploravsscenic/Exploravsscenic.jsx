@@ -16,24 +16,24 @@ import { useState, useEffect } from 'react'
    IMAGE PLACEHOLDERS — swap with real imports
    e.g. import exploraHero from '../../assets/ExploraVsScenic/hero1.jpg'
 ──────────────────────────────────────────────────────────────── */
-const HERO_1             = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80'
-const HERO_2             = 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80'
-const HERO_3             = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=1600&q=80'
+// const HERO_1             = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80'
+// const HERO_2             = 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80'
+// const HERO_3             = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=1600&q=80'
 
-const EXPLORA_IMG        = 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80'
-const SCENIC_IMG         = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=900&q=80'
-const EXPLORA_SUITE_IMG  = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
-const SCENIC_SUITE_IMG   = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'
-const EXPLORA_DINING_IMG = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80'
-const SCENIC_DINING_IMG  = 'https://images.unsplash.com/photo-1544025162-d76538b2a5ab?w=900&q=80'
-const WELLNESS_IMG       = 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80'
-const ANGELA_IMG         = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+// const EXPLORA_IMG        = 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80'
+// const SCENIC_IMG         = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=900&q=80'
+// const EXPLORA_SUITE_IMG  = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
+// const SCENIC_SUITE_IMG   = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'
+// const EXPLORA_DINING_IMG = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80'
+// const SCENIC_DINING_IMG  = 'https://images.unsplash.com/photo-1544025162-d76538b2a5ab?w=900&q=80'
+// const WELLNESS_IMG       = 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80'
+// const ANGELA_IMG         = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
 
 /* ════════════════════════════════════════════════════════════ */
 
 function ExploraVsScenic() {
 
-    const heroImages = [HERO_1, HERO_2, HERO_3]
+    const heroImages = []
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -375,7 +375,7 @@ function ExploraVsScenic() {
                                 <p className="evs-overview-tagline">The luxury lifestyle cruise brand launched by the MSC Group to redefine luxury ocean travel.</p>
                             </div>
                             <div className="evs-overview-img-wrap">
-                                <img src={EXPLORA_IMG} alt="Explora Journeys" />
+                                {/* <img src={EXPLORA_IMG} alt="Explora Journeys" /> */}
                             </div>
                             <div className="evs-overview-body">
                                 <p className="evs-overview-desc">Every guest enjoys an oceanfront suite with premium amenities, spacious interiors, and private terraces. Unlike traditional luxury cruise lines, Explora creates the feeling of staying at a five-star luxury resort that happens to travel the world.</p>
@@ -402,7 +402,9 @@ function ExploraVsScenic() {
                                 <p className="evs-overview-tagline">Best known for offering truly all-inclusive luxury travel with expedition capabilities.</p>
                             </div>
                             <div className="evs-overview-img-wrap">
-                                <img src={SCENIC_IMG} alt="Scenic Luxury Cruises" />
+                                <img 
+                                // src={SCENIC_IMG}
+                                 alt="Scenic Luxury Cruises" />
                             </div>
                             <div className="evs-overview-body">
                                 <p className="evs-overview-desc">Its fleet of Discovery Yachts combines expedition capabilities with six-star accommodations and personalized butler service. Scenic is ideal for travelers who want adventure without sacrificing luxury.</p>
@@ -444,7 +446,7 @@ function ExploraVsScenic() {
                             </div>
                             <div className="evs-ship-panel-body">
                                 <div className="evs-ship-img-wrap">
-                                    <img src={EXPLORA_IMG} alt="Explora Journeys fleet" />
+                                    {/* <img src={EXPLORA_IMG} alt="Explora Journeys fleet" /> */}
                                 </div>
                                 <p className="evs-ship-sub-label">Current and upcoming ships include:</p>
                                 <ul className="evs-ship-list">
@@ -470,7 +472,7 @@ function ExploraVsScenic() {
                             </div>
                             <div className="evs-ship-panel-body">
                                 <div className="evs-ship-img-wrap">
-                                    <img src={SCENIC_IMG} alt="Scenic Eclipse Discovery Yachts" />
+                                    {/* <img src={SCENIC_IMG} alt="Scenic Eclipse Discovery Yachts" /> */}
                                 </div>
                                 <p className="evs-ship-sub-label">Scenic currently operates:</p>
                                 <ul className="evs-ship-list">
@@ -507,7 +509,7 @@ function ExploraVsScenic() {
                         {/* Explora */}
                         <div className="evs-suite-card">
                             <div className="evs-suite-img-wrap">
-                                <img src={EXPLORA_SUITE_IMG} alt="Explora Journeys suites" />
+                                {/* <img src={EXPLORA_SUITE_IMG} alt="Explora Journeys suites" /> */}
                             </div>
                             <div className="evs-suite-body">
                                 <p className="evs-suite-brand">Explora Journeys</p>
@@ -525,7 +527,7 @@ function ExploraVsScenic() {
                         {/* Scenic */}
                         <div className="evs-suite-card">
                             <div className="evs-suite-img-wrap">
-                                <img src={SCENIC_SUITE_IMG} alt="Scenic Eclipse suites" />
+                                {/* <img src={SCENIC_SUITE_IMG} alt="Scenic Eclipse suites" /> */}
                             </div>
                             <div className="evs-suite-body">
                                 <p className="evs-suite-brand">Scenic Luxury Cruises</p>
@@ -562,7 +564,7 @@ function ExploraVsScenic() {
                         {/* Explora */}
                         <div className="evs-dining-card">
                             <div className="evs-dining-img-wrap">
-                                <img src={EXPLORA_DINING_IMG} alt="Explora Journeys dining" />
+                                {/* <img src={EXPLORA_DINING_IMG} alt="Explora Journeys dining" /> */}
                             </div>
                             <div className="evs-dining-body">
                                 <p className="evs-dining-brand">Explora Journeys</p>
@@ -580,7 +582,7 @@ function ExploraVsScenic() {
                         {/* Scenic */}
                         <div className="evs-dining-card">
                             <div className="evs-dining-img-wrap">
-                                <img src={SCENIC_DINING_IMG} alt="Scenic Luxury Cruises dining" />
+                                {/* <img src={SCENIC_DINING_IMG} alt="Scenic Luxury Cruises dining" /> */}
                             </div>
                             <div className="evs-dining-body">
                                 <p className="evs-dining-brand">Scenic Luxury Cruises</p>
@@ -797,7 +799,7 @@ function ExploraVsScenic() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Cruise Expert" />
+                                {/* <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Cruise Expert" /> */}
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                         </div>
