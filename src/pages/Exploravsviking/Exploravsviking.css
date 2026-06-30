@@ -1407,14 +1407,23 @@
 }
 
 /* Disable spin animation on profile images in Meet Angela Hughes section */
-.medi-prestige-seal-ring,
+.medi-prestige-seal-ring {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 2px solid rgba(255, 255, 255, 0.25) !important;
+}
+
 .medi-prestige-seal-ring img,
 .medi-prestige-seal-ring::before,
 .medi-prestige-seal-ring::after {
     animation: none !important;
     transform: none !important;
     transition: none !important;
-}
-
-border-radius: 50% !important;
+    border-radius: 50% !important;
 }
