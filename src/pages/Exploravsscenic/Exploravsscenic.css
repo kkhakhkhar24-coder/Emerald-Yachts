@@ -109,9 +109,14 @@
 /* ----------------------------------------------------------
    OVERVIEW PANELS — two cruise line intro cards
 ---------------------------------------------------------- */
-.evs-overview-section {
-    background: var(--medi-bg-soft);
-    padding: 90px 20px;
+/* ----------------------------------------------------------
+   OVERVIEW PANELS — Redesigned split rows
+   ---------------------------------------------------------- */
+.premium-redesigned-overview {
+    background: linear-gradient(180deg, var(--medi-bg-white) 0%, var(--medi-bg-soft) 50%, var(--medi-bg-white) 100%) !important;
+    padding: 110px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
 }
 
 .evs-overview-container {
@@ -121,120 +126,236 @@
 
 .evs-overview-header {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 72px;
 }
 
-.evs-overview-grid {
+.evs-overview-split-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.evs-overview-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 70px;
+    align-items: center;
 }
 
-.evs-overview-card {
-    background: var(--medi-bg-white);
-    border-radius: 20px;
+.evs-overview-row.reverse {
+    grid-template-columns: 1.1fr 1fr;
+}
+
+.evs-overview-row .evs-overview-img-column {
+    grid-column: 1;
+}
+
+.evs-overview-row .evs-overview-text-column {
+    grid-column: 2;
+}
+
+.evs-overview-row.reverse .evs-overview-img-column {
+    grid-column: 2;
+}
+
+.evs-overview-row.reverse .evs-overview-text-column {
+    grid-column: 1;
+}
+
+.evs-overview-img-frame-new {
+    position: relative;
+    border-radius: 24px;
     overflow: hidden;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    transition: all 0.3s ease;
+    box-shadow: 0 30px 60px rgba(15, 28, 46, 0.15);
+    border: 8px solid #ffffff;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    aspect-ratio: 4 / 3;
 }
 
-.evs-overview-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 48px rgba(39, 68, 114, 0.12);
+.evs-overview-img-frame-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.evs-overview-card-top {
-    background: var(--medi-navy);
-    padding: 26px 28px;
+.evs-overview-img-frame-new:hover img {
+    transform: scale(1.06);
 }
 
-.evs-overview-card-top.dark {
-    background: var(--medi-bg-dark);
+.evs-overview-img-frame-new:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 40px 85px rgba(15, 28, 46, 0.22);
 }
 
-.evs-overview-eyebrow {
+.evs-overview-badge-tag {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #ffffff;
+    padding: 9px 20px;
+    border-radius: 40px;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.55);
-    margin: 0 0 8px 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 2;
 }
 
-.evs-overview-title {
-    font-size: 22px;
+.evs-overview-badge-tag.explora-badge {
+    border-left: 4px solid #d4af37;
+}
+
+.evs-overview-badge-tag.scenic-badge {
+    border-left: 4px solid #38bdf8;
+}
+
+.evs-overview-brand-meta {
+    margin-bottom: 22px;
+}
+
+.evs-overview-mini-tag {
+    display: inline-block;
+    font-size: 11px;
     font-weight: 700;
-    color: #ffffff;
-    margin: 0 0 8px 0;
+    letter-spacing: 0.1em;
+    color: var(--medi-navy);
+    background: rgba(39, 68, 114, 0.08);
+    padding: 6px 14px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
 }
 
-.evs-overview-tagline {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.72);
+.evs-overview-mini-tag.dark {
+    color: var(--medi-bg-dark);
+    background: rgba(15, 23, 42, 0.06);
+}
+
+.evs-overview-brand-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+.evs-overview-brand-tagline {
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.5;
     margin: 0;
-    line-height: 1.55;
-}
-
-.evs-overview-img-wrap {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-}
-
-.evs-overview-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.evs-overview-card:hover .evs-overview-img-wrap img {
-    transform: scale(1.05);
-}
-
-.evs-overview-body {
-    padding: 26px 28px;
 }
 
 .evs-overview-desc {
-    font-size: 14.5px;
-    color: #4a5568;
-    line-height: 1.7;
-    margin: 0 0 18px 0;
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.75;
+    margin: 18px 0 0 0;
+}
+
+.evs-overview-bullet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
 }
 
 .evs-overview-label {
-    font-size: 11.5px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: var(--medi-navy);
-    opacity: 0.65;
-    margin: 0 0 10px 0;
+    margin: 0 0 14px 0;
+    opacity: 0.85;
 }
 
-.evs-overview-list {
+.evs-overview-list-new {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
-.evs-overview-list li {
+.evs-overview-list-new li {
     display: flex;
     align-items: flex-start;
-    gap: 9px;
+    gap: 10px;
     font-size: 14px;
-    color: #374151;
-    line-height: 1.4;
+    color: #4b5563;
+    line-height: 1.45;
 }
 
-.evs-overview-list svg {
+.evs-overview-list-new li svg {
     color: var(--medi-green);
     flex-shrink: 0;
     margin-top: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .premium-redesigned-overview {
+        padding: 70px 20px;
+    }
+
+    .evs-overview-split-layout {
+        gap: 70px;
+    }
+
+    .evs-overview-row {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .evs-overview-row.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .evs-overview-row .evs-overview-img-column {
+        grid-column: 1 !important;
+        grid-row: 1;
+    }
+
+    .evs-overview-row .evs-overview-text-column {
+        grid-column: 1 !important;
+        grid-row: 2;
+    }
+
+    .evs-overview-row.reverse .evs-overview-img-column {
+        grid-column: 1 !important;
+        grid-row: 1;
+    }
+
+    .evs-overview-row.reverse .evs-overview-text-column {
+        grid-column: 1 !important;
+        grid-row: 2;
+    }
+
+    .evs-overview-brand-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .evs-overview-bullet-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 24px;
+        padding-top: 24px;
+    }
 }
 
 /* ----------------------------------------------------------
@@ -1223,9 +1344,18 @@
         min-width: 460px;
     }
 
-    .evs-table-feature { font-size: 12.5px; }
-    .evs-table-cell { font-size: 12px; }
-    .evs-table-pill { font-size: 10.5px; padding: 4px 9px; }
+    .evs-table-feature {
+        font-size: 12.5px;
+    }
+
+    .evs-table-cell {
+        font-size: 12px;
+    }
+
+    .evs-table-pill {
+        font-size: 10.5px;
+        padding: 4px 9px;
+    }
 
     .evs-overview-grid,
     .evs-ships-grid,
@@ -1244,28 +1374,38 @@
         height: 190px;
     }
 
-    .evs-suite-img-wrap { height: 185px; }
+    .evs-suite-img-wrap {
+        height: 185px;
+    }
 
     .evs-overview-body,
-    .evs-ship-panel-body { padding: 20px 18px; }
+    .evs-ship-panel-body {
+        padding: 20px 18px;
+    }
 
     .evs-suite-body,
     .evs-dining-body,
-    .evs-category-card { padding: 20px 16px; }
+    .evs-category-card {
+        padding: 20px 16px;
+    }
 
     .evs-included-card.explora,
     .evs-included-card.scenic,
     .evs-choose-card.explora,
     .evs-choose-card.scenic,
     .evs-verdict-card.explora,
-    .evs-verdict-card.scenic { padding: 24px 18px; }
+    .evs-verdict-card.scenic {
+        padding: 24px 18px;
+    }
 
     .evs-verdict-summary {
         flex-direction: column;
         padding: 20px 16px;
     }
 
-    .evs-category-tabs { gap: 8px; }
+    .evs-category-tabs {
+        gap: 8px;
+    }
 
     .evs-category-tab-btn {
         padding: 9px 16px;
@@ -1305,8 +1445,19 @@
         font-size: 12px;
     }
 
-    .evs-overview-title { font-size: 19px; }
-    .evs-verdict-lead { font-size: 15px; }
-    .evs-pricing-note p { font-size: 13.5px; }
-    .evs-ship-capacity-tag { font-size: 12px; }
+    .evs-overview-title {
+        font-size: 19px;
+    }
+
+    .evs-verdict-lead {
+        font-size: 15px;
+    }
+
+    .evs-pricing-note p {
+        font-size: 13.5px;
+    }
+
+    .evs-ship-capacity-tag {
+        font-size: 12px;
+    }
 }

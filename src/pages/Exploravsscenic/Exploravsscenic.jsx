@@ -12,50 +12,58 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
-/* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports
-   e.g. import exploraHero from '../../assets/ExploraVsScenic/hero1.jpg'
-──────────────────────────────────────────────────────────────── */
-// const HERO_1             = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80'
-// const HERO_2             = 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80'
-// const HERO_3             = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=1600&q=80'
+// Hero section
+import exploraHero1 from '../../assets/ExploraJourneysVsSilversea/explora_hero.png'
+import exploraHero2 from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
+import scenicHero from '../../assets/ScenicvsFourSeasonsYachts/Hero1.jpg'
 
-// const EXPLORA_IMG        = 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80'
-// const SCENIC_IMG         = 'https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=900&q=80'
-// const EXPLORA_SUITE_IMG  = 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80'
-// const SCENIC_SUITE_IMG   = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'
-// const EXPLORA_DINING_IMG = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80'
-// const SCENIC_DINING_IMG  = 'https://images.unsplash.com/photo-1544025162-d76538b2a5ab?w=900&q=80'
-// const WELLNESS_IMG       = 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80'
-// const ANGELA_IMG         = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+// Brand overview cards
+import exploraOverviewImg from '../../assets/ExploraJourneysVsSilversea/explora_ship_overview.png'
+import scenicOverviewImg from '../../assets/ScenicvsFourSeasonsYachts/Section_12_Scenic_Eclipse.jpg'
+
+// Fleet comparison
+import exploraShipImg from '../../assets/BookExplora/explora-journeys-luxury-cruise-ships-sailing-miami.webp'
+import scenicShipImg from '../../assets/scenic-vs-silversea-antarctica/scenisilver1.webp'
+
+// Suites
+import exploraSuiteImg from '../../assets/ExploraJourneysVsSilversea/silversea_suite.webp'
+import scenicSuiteImg from '../../assets/ScenicvsFourSeasonsYachts/GalleryImage2.jpg'
+
+// Dining
+import exploraDiningImg from '../../assets/ExploraJourneysVsSilversea/explora_dining.webp'
+import scenicDiningImg from '../../assets/FourthPage/Scenic2.webp'
+
+// Expert / Author Profile Image
+import angelaImg from '../../assets/Media (2).jpg';
+import { Link } from 'react-router-dom'
 
 /* ════════════════════════════════════════════════════════════ */
 
 function ExploraVsScenic() {
 
-    const heroImages = []
+    const heroImages = [exploraHero1, exploraHero2, scenicHero]
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
         return () => clearInterval(t)
     }, [heroImages.length])
 
-    const [activeFaq, setActiveFaq]         = useState(null)
+    const [activeFaq, setActiveFaq] = useState(null)
     const [activeCategory, setActiveCategory] = useState(0)
 
     /* ── Quick Comparison Table rows — exact from doc ── */
     const tableRows = [
-        { feature: 'Best For',           explora: 'Modern luxury resort cruising',      scenic: 'Ultra all-inclusive expedition luxury', winner: null },
-        { feature: 'Luxury Level',        explora: 'Ultra-Luxury',                       scenic: 'Six-Star Ultra-Luxury',                  winner: 'scenic' },
-        { feature: 'Guest Capacity',      explora: 'Around 900 guests',                  scenic: 'Around 228 guests',                      winner: 'scenic' },
-        { feature: 'Suites',              explora: 'All oceanfront suites',              scenic: 'All-veranda suites',                      winner: null },
-        { feature: 'Butler Service',      explora: 'Select suites',                      scenic: 'Included for every suite',               winner: 'scenic' },
-        { feature: 'Dining',              explora: 'Multiple included restaurants',      scenic: 'Up to 10 dining experiences',            winner: 'scenic' },
-        { feature: 'Gratuities',          explora: 'Included',                           scenic: 'Included',                               winner: 'both' },
-        { feature: 'Premium Beverages',   explora: 'Included',                           scenic: 'Included',                               winner: 'both' },
-        { feature: 'Shore Excursions',    explora: 'Optional',                           scenic: 'Many included',                          winner: 'scenic' },
-        { feature: 'Expedition Cruises',  explora: 'No',                                 scenic: 'Yes',                                    winner: 'scenic' },
-        { feature: 'Atmosphere',          explora: 'Contemporary & relaxed',             scenic: 'Intimate & highly personalized',          winner: null },
+        { feature: 'Best For', explora: 'Modern luxury resort cruising', scenic: 'Ultra all-inclusive expedition luxury', winner: null },
+        { feature: 'Luxury Level', explora: 'Ultra-Luxury', scenic: 'Six-Star Ultra-Luxury', winner: 'scenic' },
+        { feature: 'Guest Capacity', explora: 'Around 900 guests', scenic: 'Around 228 guests', winner: 'scenic' },
+        { feature: 'Suites', explora: 'All oceanfront suites', scenic: 'All-veranda suites', winner: null },
+        { feature: 'Butler Service', explora: 'Select suites', scenic: 'Included for every suite', winner: 'scenic' },
+        { feature: 'Dining', explora: 'Multiple included restaurants', scenic: 'Up to 10 dining experiences', winner: 'scenic' },
+        { feature: 'Gratuities', explora: 'Included', scenic: 'Included', winner: 'both' },
+        { feature: 'Premium Beverages', explora: 'Included', scenic: 'Included', winner: 'both' },
+        { feature: 'Shore Excursions', explora: 'Optional', scenic: 'Many included', winner: 'scenic' },
+        { feature: 'Expedition Cruises', explora: 'No', scenic: 'Yes', winner: 'scenic' },
+        { feature: 'Atmosphere', explora: 'Contemporary & relaxed', scenic: 'Intimate & highly personalized', winner: null },
     ]
 
     /* ── Head-to-head tabs — Service, Wellness, Entertainment, Destinations ── */
@@ -257,7 +265,7 @@ function ExploraVsScenic() {
                         <span>2026 Ultra-Luxury Cruise Comparison</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Scenic: Which Luxury Cruise Line Is Right for You?
+                        Explora vs Scenic: <br /> Which Luxury Cruise Line <br /> Is Right for You?
                     </h1>
                     <p className="medi-hero-subtitle-text">
                         Comparing Two Exceptional Luxury Cruise Experiences — both brands emphasize exceptional service, elegant accommodations, and immersive travel, but are designed for different types of luxury travelers.
@@ -346,8 +354,8 @@ function ExploraVsScenic() {
                                     {row.winner === 'scenic'
                                         ? <span className="evs-table-pill winner">{row.scenic}</span>
                                         : row.winner === 'both'
-                                        ? <span className="evs-table-pill tie">{row.scenic}</span>
-                                        : row.scenic}
+                                            ? <span className="evs-table-pill tie">{row.scenic}</span>
+                                            : row.scenic}
                                 </span>
                             </div>
                         ))}
@@ -358,7 +366,7 @@ function ExploraVsScenic() {
             {/* ══════════════════════════════════
                 OVERVIEW PANELS
             ══════════════════════════════════ */}
-            <section className="evs-overview-section">
+            <section className="evs-overview-section premium-redesigned-overview">
                 <div className="evs-overview-container">
                     <div className="evs-overview-header">
                         <span className="medi-itinerary-eyebrow">BRAND OVERVIEW</span>
@@ -366,63 +374,158 @@ function ExploraVsScenic() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="evs-overview-grid">
-                        {/* Explora */}
-                        <div className="evs-overview-card">
-                            <div className="evs-overview-card-top">
-                                <p className="evs-overview-eyebrow">EXPLORA JOURNEYS OVERVIEW</p>
-                                <h3 className="evs-overview-title">Explora Journeys</h3>
-                                <p className="evs-overview-tagline">The luxury lifestyle cruise brand launched by the MSC Group to redefine luxury ocean travel.</p>
+                    <div className="evs-overview-split-layout">
+                        {/* Explora Row */}
+                        <div className="evs-overview-row explora-brand-row">
+                            <div className="evs-overview-img-column">
+                                <div className="evs-overview-img-frame-new">
+                                    <img src={exploraOverviewImg} alt="Explora Journeys" />
+                                    <div className="evs-overview-badge-tag explora-badge">EXPLORA JOURNEYS</div>
+                                </div>
                             </div>
-                            <div className="evs-overview-img-wrap">
-                                {/* <img src={EXPLORA_IMG} alt="Explora Journeys" /> */}
-                            </div>
-                            <div className="evs-overview-body">
+                            <div className="evs-overview-text-column">
+                                <div className="evs-overview-brand-meta">
+                                    <span className="evs-overview-mini-tag">LIFESTYLE OCEAN RESORT</span>
+                                    <h3 className="evs-overview-brand-title">Explora Journeys</h3>
+                                    <p className="evs-overview-brand-tagline">The luxury lifestyle cruise brand launched by the MSC Group to redefine luxury ocean travel.</p>
+                                </div>
                                 <p className="evs-overview-desc">Every guest enjoys an oceanfront suite with premium amenities, spacious interiors, and private terraces. Unlike traditional luxury cruise lines, Explora creates the feeling of staying at a five-star luxury resort that happens to travel the world.</p>
-                                <p className="evs-overview-label">The experience emphasizes:</p>
-                                <ul className="evs-overview-list">
-                                    {['Relaxed luxury', 'Wellness and rejuvenation', 'Flexible dining', 'Contemporary European elegance', 'Ocean-inspired design'].map((f, i) => (
-                                        <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
-                                    ))}
-                                </ul>
-                                <p className="evs-overview-label" style={{ marginTop: '16px' }}>Explora Strengths:</p>
-                                <ul className="evs-overview-list">
-                                    {['Spacious all-suite accommodations', 'Contemporary European design', 'Wellness-focused experiences', 'Flexible dining', 'Premium beverages included', 'Relaxed luxury atmosphere'].map((f, i) => (
-                                        <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
-                                    ))}
-                                </ul>
+
+                                <div className="evs-overview-bullet-grid">
+                                    <div className="evs-overview-bullet-block">
+                                        <p className="evs-overview-label">The experience emphasizes</p>
+                                        <ul className="evs-overview-list-new">
+                                            {['Relaxed luxury', 'Wellness and rejuvenation', 'Flexible dining', 'Contemporary European elegance', 'Ocean-inspired design'].map((f, i) => (
+                                                <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="evs-overview-bullet-block">
+                                        <p className="evs-overview-label">Explora Strengths</p>
+                                        <ul className="evs-overview-list-new">
+                                            {['Spacious all-suite accommodations', 'Contemporary European design', 'Wellness-focused experiences', 'Flexible dining', 'Premium beverages included', 'Relaxed luxury atmosphere'].map((f, i) => (
+                                                <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Scenic */}
-                        <div className="evs-overview-card">
-                            <div className="evs-overview-card-top dark">
-                                <p className="evs-overview-eyebrow">SCENIC LUXURY CRUISES OVERVIEW</p>
-                                <h3 className="evs-overview-title">Scenic Luxury Cruises</h3>
-                                <p className="evs-overview-tagline">Best known for offering truly all-inclusive luxury travel with expedition capabilities.</p>
-                            </div>
-                            <div className="evs-overview-img-wrap">
-                                <img 
-                                // src={SCENIC_IMG}
-                                 alt="Scenic Luxury Cruises" />
-                            </div>
-                            <div className="evs-overview-body">
+                        {/* Scenic Row */}
+                        <div className="evs-overview-row scenic-brand-row reverse">
+                            <div className="evs-overview-text-column">
+                                <div className="evs-overview-brand-meta">
+                                    <span className="evs-overview-mini-tag dark">EXPEDITION & SIX-STAR LUXURY</span>
+                                    <h3 className="evs-overview-brand-title">Scenic Luxury Cruises</h3>
+                                    <p className="evs-overview-brand-tagline">Best known for offering truly all-inclusive luxury travel with expedition capabilities.</p>
+                                </div>
                                 <p className="evs-overview-desc">Its fleet of Discovery Yachts combines expedition capabilities with six-star accommodations and personalized butler service. Scenic is ideal for travelers who want adventure without sacrificing luxury.</p>
-                                <p className="evs-overview-label">Guests enjoy:</p>
-                                <ul className="evs-overview-list">
-                                    {['Butler service for every suite', 'Nearly everything included', 'Scenic Eclipse Discovery Yachts', 'Helicopter and submarine experiences (select voyages)', 'Expedition experts', 'Luxury exploration'].map((f, i) => (
-                                        <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
-                                    ))}
-                                </ul>
-                                <p className="evs-overview-label" style={{ marginTop: '16px' }}>Scenic Strengths:</p>
-                                <ul className="evs-overview-list">
-                                    {['True all-inclusive experience', 'Butler service for all guests', 'Expedition capabilities', 'Luxury Discovery Yachts', 'Smaller guest capacity', 'Personalized service'].map((f, i) => (
-                                        <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
-                                    ))}
-                                </ul>
+
+                                <div className="evs-overview-bullet-grid">
+                                    <div className="evs-overview-bullet-block">
+                                        <p className="evs-overview-label">Guests enjoy</p>
+                                        <ul className="evs-overview-list-new">
+                                            {['Butler service for every suite', 'Nearly everything included', 'Scenic Eclipse Discovery Yachts', 'Helicopter and submarine experiences (select voyages)', 'Expedition experts', 'Luxury exploration'].map((f, i) => (
+                                                <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="evs-overview-bullet-block">
+                                        <p className="evs-overview-label">Scenic Strengths</p>
+                                        <ul className="evs-overview-list-new">
+                                            {['True all-inclusive experience', 'Butler service for all guests', 'Expedition capabilities', 'Luxury Discovery Yachts', 'Smaller guest capacity', 'Personalized service'].map((f, i) => (
+                                                <li key={i}><CheckCircle size={15} /><span>{f}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="evs-overview-img-column">
+                                <div className="evs-overview-img-frame-new">
+                                    <img src={scenicOverviewImg} alt="Scenic Luxury Cruises" />
+                                    <div className="evs-overview-badge-tag scenic-badge">SCENIC LUXURY CRUISES</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* EXPLORA JOURNEYS BRAND VIDEO SECTION */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#e6edf7', // Soft Blue Tint
+                fontFamily: 'sans-serif',
+                textAlign: 'center',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: "#274472",
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Scenic Eclipse: <br /> The World of Truly All-Inclusive <br /> Ultra-Luxury Cruising
+                        </h2>
+
+                        {/* Horizontal Accent Line Above Text */}
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6', // Azure Blue accent
+                            margin: '25px auto 25px auto',
+                            borderRadius: '10px'
+                        }}></div>
+
+                        <p style={{
+                            fontSize: 'clamp(16px, 2vw, 19px)',
+                            color: '#475569', // Dark slate/grey for readability
+                            maxWidth: '850px',
+                            margin: '0 auto',
+                            lineHeight: '1.7',
+                            fontWeight: '400'
+                        }}>
+                            Experience the extraordinary aboard Scenic Eclipse, where every detail is designed for uncompromising luxury. From world-class dining and spacious suites to unforgettable destinations, discover what truly all-inclusive ultra-luxury cruising feels like.
+                        </p>
+                    </div>
+
+                    {/* Video Player Container */}
+                    <div style={{
+                        position: 'relative',
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        backgroundColor: '#000',
+                        boxShadow: '0 40px 100px rgba(15, 28, 46, 0.15)', // Adjusted shadow for light background
+                        border: '1px solid rgba(15, 28, 46, 0.1)',
+                        aspectRatio: '16/9'
+                    }}>
+                        {/* The Video Embed - Official Explora Journeys Video */}
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/sVDShq1H4_A"
+                            title="Explora Journeys Luxury Cruise Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%'
+                            }}
+                        ></iframe>
+                    </div>
+
                 </div>
             </section>
 
@@ -446,7 +549,7 @@ function ExploraVsScenic() {
                             </div>
                             <div className="evs-ship-panel-body">
                                 <div className="evs-ship-img-wrap">
-                                    {/* <img src={EXPLORA_IMG} alt="Explora Journeys fleet" /> */}
+                                    <img src={exploraShipImg} alt="Explora Journeys fleet" />
                                 </div>
                                 <p className="evs-ship-sub-label">Current and upcoming ships include:</p>
                                 <ul className="evs-ship-list">
@@ -472,7 +575,7 @@ function ExploraVsScenic() {
                             </div>
                             <div className="evs-ship-panel-body">
                                 <div className="evs-ship-img-wrap">
-                                    {/* <img src={SCENIC_IMG} alt="Scenic Eclipse Discovery Yachts" /> */}
+                                    <img src={scenicShipImg} alt="Scenic Eclipse Discovery Yachts" />
                                 </div>
                                 <p className="evs-ship-sub-label">Scenic currently operates:</p>
                                 <ul className="evs-ship-list">
@@ -509,7 +612,7 @@ function ExploraVsScenic() {
                         {/* Explora */}
                         <div className="evs-suite-card">
                             <div className="evs-suite-img-wrap">
-                                {/* <img src={EXPLORA_SUITE_IMG} alt="Explora Journeys suites" /> */}
+                                <img src={exploraSuiteImg} alt="Explora Journeys suites" />
                             </div>
                             <div className="evs-suite-body">
                                 <p className="evs-suite-brand">Explora Journeys</p>
@@ -527,7 +630,7 @@ function ExploraVsScenic() {
                         {/* Scenic */}
                         <div className="evs-suite-card">
                             <div className="evs-suite-img-wrap">
-                                {/* <img src={SCENIC_SUITE_IMG} alt="Scenic Eclipse suites" /> */}
+                                <img src={scenicSuiteImg} alt="Scenic Eclipse suites" />
                             </div>
                             <div className="evs-suite-body">
                                 <p className="evs-suite-brand">Scenic Luxury Cruises</p>
@@ -564,7 +667,7 @@ function ExploraVsScenic() {
                         {/* Explora */}
                         <div className="evs-dining-card">
                             <div className="evs-dining-img-wrap">
-                                {/* <img src={EXPLORA_DINING_IMG} alt="Explora Journeys dining" /> */}
+                                <img src={exploraDiningImg} alt="Explora Journeys dining" />
                             </div>
                             <div className="evs-dining-body">
                                 <p className="evs-dining-brand">Explora Journeys</p>
@@ -582,7 +685,7 @@ function ExploraVsScenic() {
                         {/* Scenic */}
                         <div className="evs-dining-card">
                             <div className="evs-dining-img-wrap">
-                                {/* <img src={SCENIC_DINING_IMG} alt="Scenic Luxury Cruises dining" /> */}
+                                <img src={scenicDiningImg} alt="Scenic Luxury Cruises dining" />
                             </div>
                             <div className="evs-dining-body">
                                 <p className="evs-dining-brand">Scenic Luxury Cruises</p>
@@ -700,6 +803,83 @@ function ExploraVsScenic() {
                 </div>
             </section>
 
+                {/* EXPLORA JOURNEYS BRAND VIDEO SECTION */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#e6edf7', // Soft Blue Tint
+                fontFamily: 'sans-serif',
+                textAlign: 'center',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: "#274472",
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            EXPLORA II Naming Ceremony <br /> A Milestone for Explora Journeys
+                        </h2>
+
+                        {/* Horizontal Accent Line Above Text */}
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6', // Azure Blue accent
+                            margin: '25px auto 25px auto',
+                            borderRadius: '10px'
+                        }}></div>
+
+                        <p style={{
+                            fontSize: 'clamp(16px, 2vw, 19px)',
+                            color: '#475569', // Dark slate/grey for readability
+                            maxWidth: '850px',
+                            margin: '0 auto',
+                            lineHeight: '1.7',
+                            fontWeight: '400'
+                        }}>
+                           Celebrate the official naming of EXPLORA II, marking an exciting new chapter for Explora Journeys. Witness the elegance, tradition, and vision behind one of the world's newest luxury cruise ships.
+                        </p>
+                    </div>
+
+                    {/* Video Player Container */}
+                    <div style={{
+                        position: 'relative',
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        backgroundColor: '#000',
+                        boxShadow: '0 40px 100px rgba(15, 28, 46, 0.15)', // Adjusted shadow for light background
+                        border: '1px solid rgba(15, 28, 46, 0.1)',
+                        aspectRatio: '16/9'
+                    }}>
+                        {/* The Video Embed - Official Explora Journeys Video */}
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/-MoZN-XQPLY"
+                            title="Explora Journeys Luxury Cruise Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%'
+                            }}
+                        ></iframe>
+                    </div>
+
+                </div>
+            </section>
+
             {/* ══════════════════════════════════
                 PRICING + WHO SHOULD CHOOSE
             ══════════════════════════════════ */}
@@ -799,7 +979,7 @@ function ExploraVsScenic() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Cruise Expert" /> */}
+                                <img src={angelaImg} alt="Angela Hughes - Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                         </div>
@@ -892,10 +1072,10 @@ function ExploraVsScenic() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Compare More Cruise Lines

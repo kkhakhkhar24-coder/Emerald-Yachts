@@ -25,6 +25,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function ExploraVsRitzCarlton() {
     const [cmpCurrentHero, setCmpCurrentHero] = useState(0)
@@ -142,7 +143,7 @@ function ExploraVsRitzCarlton() {
                         <span>2026 Luxury Cruise Comparison · Trips &amp; Ships Luxury Travel</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Ritz-Carlton Yacht Collection: Which Luxury Cruise Experience Is Right for You?
+                        Explora vs Ritz-Carlton Yacht Collection:  Which Luxury Cruise Experience Is Right for You?
                     </h1>
                     <p className="medi-hero-subtitle-text">
                         An expert side-by-side comparison of ships, suites, dining, service, destinations, and overall luxury experience.
@@ -435,6 +436,33 @@ function ExploraVsRitzCarlton() {
                     </div>
                 </div>
             </section>
+
+              {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <h2>An Ocean of New | Explore the 2027 Journeys Collection</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+             Discover the 2027 Journeys Collection, featuring extraordinary itineraries, immersive destinations, and exceptional luxury at sea. Set sail on unforgettable voyages designed to inspire every traveler.
+            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <iframe
+                className="Emerald_video_player"
+                src="https://www.youtube.com/embed/OwYwL7N1Qfg"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
             {/* ── DINING COMPARISON ── */}
             <section className="cmp-dining-section">
@@ -1028,10 +1056,10 @@ function ExploraVsRitzCarlton() {
                         </div>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Compare Luxury Cruise Lines

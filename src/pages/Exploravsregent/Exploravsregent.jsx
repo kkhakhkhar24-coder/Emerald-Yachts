@@ -24,6 +24,7 @@ import exploraSuiteImg from '../../assets/BestSuitesExploraJourneys/explora-jour
 import exploraDiningImg from '../../assets/ExploraJourneysVsSilversea/Expolar-dining.jpg'
 import regentSuiteImg from '../../assets/SecondPage/Suite.webp'
 import profileAH from '../../assets/Media (2).jpg'
+import { Link } from 'react-router'
 
 const HERO_1             = hero1
 const HERO_2             = hero2
@@ -31,11 +32,10 @@ const HERO_3             = hero3
 
 const EXPLORA_OVERVIEW_IMG = exploraOverviewImg
 const EXPLORA_SHIP_IMG   = exploraShipImg
-const REGENT_SHIP_IMG    = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
+
 const EXPLORA_SUITE_IMG  = exploraSuiteImg
 const REGENT_SUITE_IMG   = regentSuiteImg
 const EXPLORA_DINING_IMG = exploraDiningImg
-const REGENT_DINING_IMG  = 'https://images.unsplash.com/photo-1544025162-d76538b2a5ab?w=900&q=80'
 const ANGELA_IMG         = profileAH
 
 /* ════════════════════════════════════════════════════════════ */
@@ -241,7 +241,7 @@ function ExploraVsRegent() {
                         <span>2026 Ultra-Luxury Cruise Comparison</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Regent: Which Ultra-Luxury Cruise Line Is Right for You?
+                        Explora vs Regent: <br /> Which Ultra-Luxury Cruise Line Is Right for You?
                     </h1>
                     <p className="medi-hero-subtitle-text">
                         Two Exceptional Luxury Cruise Experiences — Explora Journeys and Regent Seven Seas Cruises both promise exceptional service, elegant accommodations, gourmet dining, and immersive itineraries, but they deliver those experiences in different ways.
@@ -550,7 +550,7 @@ function ExploraVsRegent() {
                         {/* Regent */}
                         <div className="evr-dining-card">
                             <div className="evr-dining-img-wrap">
-                                <img src={REGENT_DINING_IMG} alt="Regent Seven Seas dining" />
+                                {/* <img src={REGENT_DINING_IMG} alt="Regent Seven Seas dining" /> */}
                             </div>
                             <div className="evr-dining-body">
                                 <p className="evr-dining-brand">Regent Seven Seas</p>
@@ -610,6 +610,33 @@ function ExploraVsRegent() {
                     </div>
                 </div>
             </section>
+
+              {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <h2>Owner's Residence by Patricia Urquiola | EXPLORA Journeys</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+                Step inside the elegant Owner's Residence, thoughtfully designed by Patricia Urquiola for EXPLORA Journeys. Discover sophisticated interiors, spacious living areas, and refined luxury inspired by modern ocean travel.
+            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <iframe
+                className="Emerald_video_player"
+                src="https://www.youtube.com/embed/PXbPxwZqLZ8"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
             {/* ══════════════════════════════════
                 SERVICE, ENTERTAINMENT & DESTINATIONS — tabbed (new section)
@@ -853,10 +880,10 @@ function ExploraVsRegent() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Compare More Cruise Lines

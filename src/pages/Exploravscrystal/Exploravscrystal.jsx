@@ -8,6 +8,7 @@ import {
     Mic, FileText, GraduationCap, Clock, Users, MapPin, Gem,
     Music, Wifi, Coffee, Calendar
 } from 'lucide-react'
+import { Link } from 'react-router'
 
 // ── Swap these imports for real assets ───────────────────────────
 // import hero1 from '../../assets/ExploraVsCrystal/hero1.jpg'
@@ -298,7 +299,7 @@ function ExploraVsCrystal() {
                         <span>Luxury Cruise Comparison Guide · 2026</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Crystal: Which Luxury Cruise Line Is Right for You?
+                        Explora vs Crystal: <br /> Which Luxury Cruise Line Is <br /> Right for You?
                     </h1>
                     <p className="medi-hero-subtitle-text">Two Exceptional Luxury Cruise Experiences</p>
                     <div className="medi-hero-cta-container">
@@ -310,7 +311,7 @@ function ExploraVsCrystal() {
                             ))}
                         </div>
                         <div style={{ display:'flex', gap:'14px', justifyContent:'center', flexWrap:'wrap' }}>
-                            <button className="medi-primary-cta-button"><Phone size={16} />Schedule a Consultation</button>
+                            <Link to="/contact" className="medi-primary-cta-button"><Phone size={16} />Schedule a Consultation</Link>
                             <button className="medi-secondary-outline-button"><LayoutList size={16} />Compare Now</button>
                         </div>
                     </div>
@@ -581,6 +582,32 @@ function ExploraVsCrystal() {
                 </div>
             </section>
 
+                     {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <h2>EXPLORA I Naming Ceremony | Celebrating a New Era in Luxury Cruising</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+Relive the unforgettable EXPLORA I Naming Ceremony in New York City, celebrating the launch of a new standard in luxury ocean travel. Experience the elegance, tradition, and vision behind Explora Journeys.            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <iframe
+                className="Emerald_video_player"
+                src="https://www.youtube.com/embed/6jg3MVXjjuo"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
             {/* ════════════════════════════════════════
                 FINAL VERDICT — image cards + quote
             ════════════════════════════════════════ */}
@@ -778,7 +805,7 @@ function ExploraVsCrystal() {
                             Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
                         </p>
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button"><Phone size={18} />Schedule a Consultation</button>
+                            <Link to='/contact' className="medi-primary-cta-button"><Phone size={18} />Schedule a Consultation</Link>
                             <button className="medi-secondary-outline-button"><LayoutList size={18} />Request Itinerary Options</button>
                         </div>
                     </div>

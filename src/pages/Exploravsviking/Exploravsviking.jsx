@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Exploravsviking.css'
-import Profile_AH from '../../assets/ExploraFAQ/Profile_AH.jpg'
+import Profile_AH from '../../assets/Media (2).jpg'
 import Profile_Picture_AH from '../../assets/ExploraFAQ/Profile_Picture_AH.jpg'
 
 // ── Hero images (3 rotating) ─────────────────────────────────────
@@ -45,6 +45,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function ExploraVsViking() {
 
@@ -241,7 +242,7 @@ function ExploraVsViking() {
                         <span>Luxury Ocean Cruise Comparison</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Viking: Which Luxury Cruise Line Is Right for You?
+                        Explora vs Viking: <br /> Which Luxury Cruise Line Is Right for You?
                     </h1>
                 </div>
             </section>
@@ -665,6 +666,83 @@ function ExploraVsViking() {
                 </div>
             </section>
 
+                 {/* EXPLORA JOURNEYS BRAND VIDEO SECTION */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#e6edf7', // Soft Blue Tint
+                fontFamily: 'sans-serif',
+                textAlign: 'center',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: "#274472",
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Romantic Danube Itinerary | Explore Europe with Viking
+                        </h2>
+
+                        {/* Horizontal Accent Line Above Text */}
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6', // Azure Blue accent
+                            margin: '25px auto 25px auto',
+                            borderRadius: '10px'
+                        }}></div>
+
+                        <p style={{
+                            fontSize: 'clamp(16px, 2vw, 19px)',
+                            color: '#475569', // Dark slate/grey for readability
+                            maxWidth: '850px',
+                            margin: '0 auto',
+                            lineHeight: '1.7',
+                            fontWeight: '400'
+                        }}>
+                            Sail through the heart of Europe on Viking's Romantic Danube itinerary. Discover charming riverside towns, iconic landmarks, and unforgettable cultural experiences along one of the world's most scenic waterways.
+                        </p>
+                    </div>
+
+                    {/* Video Player Container */}
+                    <div style={{
+                        position: 'relative',
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        backgroundColor: '#000',
+                        boxShadow: '0 40px 100px rgba(15, 28, 46, 0.15)', // Adjusted shadow for light background
+                        border: '1px solid rgba(15, 28, 46, 0.1)',
+                        aspectRatio: '16/9'
+                    }}>
+                        {/* The Video Embed - Official Explora Journeys Video */}
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/GTMZa-AuxkU"
+                            title="Explora Journeys Luxury Cruise Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%'
+                            }}
+                        ></iframe>
+                    </div>
+
+                </div>
+            </section>
+
             {/* ════════════════════════════════════════════════════
                 SERVICE  (medi-diff-section – 3 cards)
             ════════════════════════════════════════════════════ */}
@@ -1076,6 +1154,83 @@ function ExploraVsViking() {
                 </div>
             </section>
 
+                 {/* EXPLORA JOURNEYS BRAND VIDEO SECTION */}
+            <section style={{
+                padding: '100px 20px',
+                backgroundColor: '#e6edf7', // Soft Blue Tint
+                fontFamily: 'sans-serif',
+                textAlign: 'center',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+                    {/* Header Block */}
+                    <div style={{ marginBottom: '50px' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(28px, 5vw, 42px)',
+                            color: "#274472",
+                            fontWeight: '700',
+                            marginBottom: '20px',
+                            letterSpacing: '-0.02em',
+                            lineHeight: '1.2'
+                        }}>
+                            Chapter One: Tales of the Northern Sea | Explora Journeys
+                        </h2>
+
+                        {/* Horizontal Accent Line Above Text */}
+                        <div style={{
+                            width: '60px',
+                            height: '3px',
+                            backgroundColor: '#3b82f6', // Azure Blue accent
+                            margin: '25px auto 25px auto',
+                            borderRadius: '10px'
+                        }}></div>
+
+                        <p style={{
+                            fontSize: 'clamp(16px, 2vw, 19px)',
+                            color: '#475569', // Dark slate/grey for readability
+                            maxWidth: '850px',
+                            margin: '0 auto',
+                            lineHeight: '1.7',
+                            fontWeight: '400'
+                        }}>
+                            Embark on an unforgettable voyage through the breathtaking landscapes of the Northern Sea with Explora Journeys. Experience dramatic coastlines, rich cultural heritage, and immersive luxury at every destination.
+                        </p>
+                    </div>
+
+                    {/* Video Player Container */}
+                    <div style={{
+                        position: 'relative',
+                        borderRadius: '30px',
+                        overflow: 'hidden',
+                        backgroundColor: '#000',
+                        boxShadow: '0 40px 100px rgba(15, 28, 46, 0.15)', // Adjusted shadow for light background
+                        border: '1px solid rgba(15, 28, 46, 0.1)',
+                        aspectRatio: '16/9'
+                    }}>
+                        {/* The Video Embed - Official Explora Journeys Video */}
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/cOX8GgQMP48"
+                            title="Explora Journeys Luxury Cruise Experience"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%'
+                            }}
+                        ></iframe>
+                    </div>
+
+                </div>
+            </section>
+
             {/* ════════════════════════════════════════════════════
                 WHY WORK WITH US  (medi-work-with-us-section)
             ════════════════════════════════════════════════════ */}
@@ -1255,10 +1410,10 @@ function ExploraVsViking() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Compare Cruise Options

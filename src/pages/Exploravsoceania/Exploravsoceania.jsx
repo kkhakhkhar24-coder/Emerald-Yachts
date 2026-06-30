@@ -26,8 +26,9 @@ import exploraInclImg from '../../assets/ExploraFAQ/Explora_Cruises_Inclusive.we
 import oceaniaInclImg from '../../assets/AzamaraCruisesGuide/Simplified_Inclusions.webp'
 import exploraVerdictImg from '../../assets/BestSuitesExploraJourneys/EXPLORA_sailing_in_Miami.webp'
 import oceaniaVerdictImg from '../../assets/Azamarashipcomparison/Azamara-night.webp'
-import Profile_AH from '../../assets/ExploraFAQ/Profile_AH.jpg'
+import Profile_AH from '../../assets/Media (2).jpg';
 import Profile_Picture_AH from '../../assets/ExploraFAQ/Profile_Picture_AH.jpg'
+import { Link } from 'react-router'
 
 function ExploraVsOceania() {
     const [currentHero, setCurrentHero] = useState(0)
@@ -114,7 +115,6 @@ function ExploraVsOceania() {
                     { "@type": "Question", "name": "Does Explora include gratuities?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Gratuities are included in the cruise fare on Explora Journeys." } },
                     { "@type": "Question", "name": "Does Oceania include specialty dining?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Specialty dining is included, although reservations may be required." } },
                     { "@type": "Question", "name": "Which cruise line offers better wellness facilities?", "acceptedAnswer": { "@type": "Answer", "text": "Explora offers larger wellness facilities and comprehensive wellness programming, while Oceania features the Aquamar Spa + Vitality Center." } },
-                    { "@type": "Question", "name": "Which cruise line is better for food lovers?", "acceptedAnswer": { "@type": "Answer", "text": "Oceania is widely regarded as one of the best cruise lines for culinary enthusiasts." } },
                     { "@type": "Question", "name": "Which cruise line offers more destinations?", "acceptedAnswer": { "@type": "Answer", "text": "Oceania generally offers a broader range of worldwide itineraries, including Grand Voyages and World Cruises." } },
                     { "@type": "Question", "name": "Is Explora better for first-time luxury cruisers?", "acceptedAnswer": { "@type": "Answer", "text": "Many first-time luxury cruisers appreciate Explora's spacious suites, relaxed atmosphere, and inclusive experience." } },
                     { "@type": "Question", "name": "Which cruise line has a more relaxed dress code?", "acceptedAnswer": { "@type": "Answer", "text": "Both embrace elegant casual attire, but Explora places greater emphasis on relaxed luxury with minimal formality." } },
@@ -148,7 +148,7 @@ function ExploraVsOceania() {
             },
             oceania: {
                 heading: 'Oceania Fleet',
-                img: oceaniaShipImg,
+                // img: oceaniaShipImg,
                 items: ['Marina', 'Riviera', 'Vista', 'Allura', 'Nautica', 'Regatta', 'Insignia', 'Sirena'],
                 highlights: ['Mid-sized luxury ships', 'Elegant public spaces', 'Culinary-focused venues', 'Destination-rich itineraries', 'Comfortable atmosphere'],
                 stat: '670–1,250 Guests per ship'
@@ -249,7 +249,6 @@ function ExploraVsOceania() {
         { question: 'Does Explora include gratuities?', answer: 'Yes. Gratuities are included in the cruise fare on Explora Journeys.' },
         { question: 'Does Oceania include specialty dining?', answer: 'Yes. Specialty dining is included, although reservations may be required depending on the restaurant and sailing.' },
         { question: 'Which cruise line offers better wellness facilities?', answer: 'Explora features a larger wellness complex with extensive spa facilities, fitness studios, and wellness programming. Oceania also offers excellent wellness through its Aquamar Spa + Vitality Center.' },
-        { question: 'Which cruise line is better for food lovers?', answer: 'Oceania is often considered one of the best cruise lines for culinary enthusiasts thanks to its award-winning restaurants and destination-inspired cuisine.' },
         { question: 'Which cruise line offers more destinations?', answer: 'Oceania generally offers a broader selection of worldwide itineraries, including Grand Voyages and World Cruises.' },
         { question: 'Is Explora better for first-time luxury cruisers?', answer: "Many first-time luxury cruisers appreciate Explora's relaxed atmosphere, spacious suites, and inclusive experience." },
         { question: 'Which cruise line has a more relaxed dress code?', answer: 'Both cruise lines embrace elegant casual attire, but Explora places even greater emphasis on relaxed luxury with very little formality.' },
@@ -287,7 +286,7 @@ function ExploraVsOceania() {
                         <span>Luxury Cruise Comparison Guide · 2026</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Oceania: Which Luxury Cruise Line Is Right for You?
+                        Explora vs Oceania: <br /> Which Luxury Cruise Line Is Right for You?
                     </h1>
                     <p className="medi-hero-subtitle-text">
                         Comparing Two Distinct Luxury Cruise Experiences
@@ -301,7 +300,7 @@ function ExploraVsOceania() {
                             ))}
                         </div>
                         <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <button className="medi-primary-cta-button"><Phone size={16} />Schedule a Consultation</button>
+                            <Link to="/contact" className="medi-primary-cta-button"><Phone size={16} />Schedule a Consultation</Link>
                             <button className="medi-secondary-outline-button"><LayoutList size={16} />Compare Now</button>
                         </div>
                     </div>
@@ -547,6 +546,38 @@ function ExploraVsOceania() {
                 </div>
             </section>
 
+
+
+
+         {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <h2>EXPLORA II at the Formula 1 Monaco Grand Prix 2025</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+Experience the thrill of the Formula 1 Monaco Grand Prix 2025 aboard EXPLORA II. Enjoy ultra-luxury accommodations, spectacular race views, and an unforgettable blend of world-class hospitality and motorsport excitement.            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <iframe
+                className="Emerald_video_player"
+                src="https://www.youtube.com/embed/RjFFAQMiJUU"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
             {/* ── FINAL VERDICT ── */}
             <section className="evo-verdict-section">
                 <div className="evo-verdict-container">
@@ -737,7 +768,7 @@ function ExploraVsOceania() {
                             Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
                         </p>
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button"><Phone size={18} />Schedule a Consultation</button>
+                            <Link to="/contact" className="medi-primary-cta-button"><Phone size={18} />Schedule a Consultation</Link>
                             <button className="medi-secondary-outline-button"><LayoutList size={18} />Request Itinerary Options</button>
                         </div>
                     </div>

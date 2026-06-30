@@ -47,6 +47,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function ExploraVsPonant() {
 
@@ -229,7 +230,7 @@ function ExploraVsPonant() {
                         <span>Luxury Ocean Cruise Comparison</span>
                     </div>
                     <h1 className="medi-hero-main-title">
-                        Explora vs Ponant: Which Luxury Cruise Line Is Right for You?
+                        Explora vs Ponant: <br /> Which Luxury Cruise Line Is Right for You?
                     </h1>
                 </div>
             </section>
@@ -559,6 +560,33 @@ function ExploraVsPonant() {
                     </div>
                 </div>
             </section>
+
+
+                     {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+      <section className="Emerald_video_section">
+        <div className="Emerald_video_inner">
+          <div className="Emerald_video_header">
+            <h2>The 37th America's Cup | A Luxury Sailing Experience with Explora Journeys</h2>
+            <div className="Emerald_video_divider"></div>
+            <p className="Emerald_video_subtitle">
+Experience the excitement of the 37th America's Cup with Explora Journeys. Witness world-class sailing while enjoying exceptional comfort, refined service, and unforgettable moments at sea.            </p>
+          </div>
+
+          <div className="Emerald_video_wrapper">
+            <div className="Emerald_video_frame">
+              <iframe
+                className="Emerald_video_player"
+                src="https://www.youtube.com/embed/ShGJOuL-DRA"
+                title="Experience Emerald Yachts"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+              <div className="Emerald_video_glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
             {/* ════════════════════════════════════════════════════
                 DINING  ← NEW (ep-versus with images + dark bg)
@@ -1406,10 +1434,10 @@ function ExploraVsPonant() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Compare Cruise Options

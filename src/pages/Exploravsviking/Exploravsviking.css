@@ -65,18 +65,34 @@
     white-space: nowrap;
 }
 
-.ev-th-feature { color: #ffffff; }
-.ev-th-explora { color: #93c5fd; }
-.ev-th-viking  { color: #86efac; }
+.ev-th-feature {
+    color: #ffffff;
+}
+
+.ev-th-explora {
+    color: #93c5fd;
+}
+
+.ev-th-viking {
+    color: #86efac;
+}
 
 .ev-compare-table tbody tr {
     border-bottom: 1px solid rgba(39, 68, 114, 0.07);
     transition: background 0.18s;
 }
 
-.ev-compare-table tbody tr:last-child { border-bottom: none; }
-.ev-compare-table tbody tr:nth-child(even) { background: rgb(231, 243, 245); }
-.ev-compare-table tbody tr:hover { background: rgba(39, 68, 114, 0.05); }
+.ev-compare-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.ev-compare-table tbody tr:nth-child(even) {
+    background: rgb(231, 243, 245);
+}
+
+.ev-compare-table tbody tr:hover {
+    background: rgba(39, 68, 114, 0.05);
+}
 
 .ev-compare-table td {
     padding: 15px 22px;
@@ -85,12 +101,33 @@
     vertical-align: middle;
 }
 
-.ev-td-feature { font-weight: 700; color: #0f1c2e; white-space: nowrap; }
-.ev-td-explora { font-weight: 600; color: #274472; }
-.ev-td-viking  { font-weight: 600; color: #166534; }
+.ev-td-feature {
+    font-weight: 700;
+    color: #0f1c2e;
+    white-space: nowrap;
+}
 
-@media (max-width: 1024px) { .ev-compare-section { padding: 64px 20px; } }
-@media (max-width: 767px)  { .ev-compare-section { padding: 48px 16px; } }
+.ev-td-explora {
+    font-weight: 600;
+    color: #274472;
+}
+
+.ev-td-viking {
+    font-weight: 600;
+    color: #166534;
+}
+
+@media (max-width: 1024px) {
+    .ev-compare-section {
+        padding: 64px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ev-compare-section {
+        padding: 48px 16px;
+    }
+}
 
 /* ── BRAND OVERVIEW – SPLIT IMAGE CARDS ─────────────────────────── */
 .ev-overview-section {
@@ -135,8 +172,13 @@
     gap: 14px;
 }
 
-.ev-overview-card.ev-card-explora { background: #0f1c2e; }
-.ev-overview-card.ev-card-viking  { background: rgb(231, 243, 245); }
+.ev-overview-card.ev-card-explora {
+    background: #0f1c2e;
+}
+
+.ev-overview-card.ev-card-viking {
+    background: rgb(231, 243, 245);
+}
 
 .ev-overview-brand {
     font-size: 24px;
@@ -144,8 +186,13 @@
     margin: 0;
 }
 
-.ev-card-explora .ev-overview-brand { color: #ffffff; }
-.ev-card-viking  .ev-overview-brand { color: #0f1c2e; }
+.ev-card-explora .ev-overview-brand {
+    color: #ffffff;
+}
+
+.ev-card-viking .ev-overview-brand {
+    color: #0f1c2e;
+}
 
 .ev-overview-tagline {
     font-size: 13px;
@@ -153,8 +200,13 @@
     margin: 0;
 }
 
-.ev-card-explora .ev-overview-tagline { color: #93c5fd; }
-.ev-card-viking  .ev-overview-tagline { color: #274472; }
+.ev-card-explora .ev-overview-tagline {
+    color: #93c5fd;
+}
+
+.ev-card-viking .ev-overview-tagline {
+    color: #274472;
+}
 
 .ev-overview-bar {
     width: 36px;
@@ -169,8 +221,13 @@
     margin: 0;
 }
 
-.ev-card-explora .ev-overview-desc { color: #cbd5e1; }
-.ev-card-viking  .ev-overview-desc { color: #475569; }
+.ev-card-explora .ev-overview-desc {
+    color: #cbd5e1;
+}
+
+.ev-card-viking .ev-overview-desc {
+    color: #475569;
+}
 
 .ev-overview-list {
     list-style: none;
@@ -189,21 +246,46 @@
     line-height: 1.5;
 }
 
-.ev-card-explora .ev-overview-list li { color: #e2e8f0; }
-.ev-card-viking  .ev-overview-list li { color: #334155; }
+.ev-card-explora .ev-overview-list li {
+    color: #e2e8f0;
+}
 
-.ev-ov-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-card-viking .ev-overview-list li {
+    color: #334155;
+}
+
+.ev-ov-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 @media (max-width: 1024px) {
-    .ev-overview-section { padding: 64px 20px; }
-    .ev-overview-grid { grid-template-columns: 1fr; }
-    .ev-overview-card { min-height: auto; }
+    .ev-overview-section {
+        padding: 64px 20px;
+    }
+
+    .ev-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-overview-card {
+        min-height: auto;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-overview-section { padding: 48px 16px; }
-    .ev-overview-img { height: 200px; }
-    .ev-overview-body { padding: 24px 20px; }
+    .ev-overview-section {
+        padding: 48px 16px;
+    }
+
+    .ev-overview-img {
+        height: 200px;
+    }
+
+    .ev-overview-body {
+        padding: 24px 20px;
+    }
 }
 
 /* ── SHIPS IMAGE MOSAIC ──────────────────────────────────────────── */
@@ -348,18 +430,39 @@
     line-height: 1.5;
 }
 
-.ev-fleet-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-fleet-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 @media (max-width: 1024px) {
-    .ev-ships-section { padding: 64px 20px; }
-    .ev-ships-header h2 { font-size: 30px; }
+    .ev-ships-section {
+        padding: 64px 20px;
+    }
+
+    .ev-ships-header h2 {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-ships-section { padding: 48px 16px; }
-    .ev-ships-grid { grid-template-columns: 1fr; gap: 40px; }
-    .ev-ships-header h2 { font-size: 24px; }
-    .ev-fleet-main-img { height: 200px; }
+    .ev-ships-section {
+        padding: 48px 16px;
+    }
+
+    .ev-ships-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ev-ships-header h2 {
+        font-size: 24px;
+    }
+
+    .ev-fleet-main-img {
+        height: 200px;
+    }
 }
 
 /* ── ACCOMMODATIONS IMAGE COMPARISON ────────────────────────────── */
@@ -446,7 +549,11 @@
     line-height: 1.5;
 }
 
-.ev-suite-feat-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-suite-feat-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 .ev-suite-note {
     font-size: 13.5px;
@@ -459,14 +566,27 @@
 }
 
 @media (max-width: 1024px) {
-    .ev-suites-section { padding: 64px 20px; }
-    .ev-suites-grid { grid-template-columns: 1fr; }
+    .ev-suites-section {
+        padding: 64px 20px;
+    }
+
+    .ev-suites-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-suites-section { padding: 48px 16px; }
-    .ev-suite-img { height: 220px; }
-    .ev-suite-body { padding: 22px 20px; }
+    .ev-suites-section {
+        padding: 48px 16px;
+    }
+
+    .ev-suite-img {
+        height: 220px;
+    }
+
+    .ev-suite-body {
+        padding: 22px 20px;
+    }
 }
 
 /* ── CATEGORY VERSUS CARDS ───────────────────────────────────────── */
@@ -474,9 +594,17 @@
     padding: 72px 20px;
 }
 
-.ev-versus-section.ev-bg-white { background: #ffffff; }
-.ev-versus-section.ev-bg-soft  { background: rgb(231, 243, 245); }
-.ev-versus-section.ev-bg-dark  { background: #0f1c2e; }
+.ev-versus-section.ev-bg-white {
+    background: #ffffff;
+}
+
+.ev-versus-section.ev-bg-soft {
+    background: rgb(231, 243, 245);
+}
+
+.ev-versus-section.ev-bg-dark {
+    background: #0f1c2e;
+}
 
 .ev-versus-container {
     max-width: 1100px;
@@ -561,8 +689,13 @@
     flex-shrink: 0;
 }
 
-.ev-icon-explora { background: #274472; }
-.ev-icon-viking  { background: #1c2f4a; }
+.ev-icon-explora {
+    background: #274472;
+}
+
+.ev-icon-viking {
+    background: #1c2f4a;
+}
 
 .ev-versus-card-title {
     font-size: 17px;
@@ -571,7 +704,9 @@
     margin: 0;
 }
 
-.ev-bg-dark .ev-versus-card-title { color: #ffffff; }
+.ev-bg-dark .ev-versus-card-title {
+    color: #ffffff;
+}
 
 .ev-versus-list {
     list-style: none;
@@ -592,9 +727,15 @@
     line-height: 1.5;
 }
 
-.ev-bg-dark .ev-versus-list li { color: #94a3b8; }
+.ev-bg-dark .ev-versus-list li {
+    color: #94a3b8;
+}
 
-.ev-versus-list-check { color: #10b981; flex-shrink: 0; margin-top: 1px; }
+.ev-versus-list-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
 
 .ev-versus-note {
     font-size: 13.5px;
@@ -643,14 +784,27 @@
 }
 
 @media (max-width: 1024px) {
-    .ev-versus-section { padding: 56px 20px; }
-    .ev-versus-grid { grid-template-columns: 1fr; }
+    .ev-versus-section {
+        padding: 56px 20px;
+    }
+
+    .ev-versus-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-versus-section { padding: 44px 16px; }
-    .ev-versus-heading-row h2 { font-size: 24px; }
-    .ev-versus-card-img { height: 150px; }
+    .ev-versus-section {
+        padding: 44px 16px;
+    }
+
+    .ev-versus-heading-row h2 {
+        font-size: 24px;
+    }
+
+    .ev-versus-card-img {
+        height: 150px;
+    }
 }
 
 /* ── INCLUSIONS DARK SECTION ─────────────────────────────────────── */
@@ -736,8 +890,13 @@
     display: block;
 }
 
-.ev-incl-explora .ev-inclusions-brand-label { color: #93c5fd; }
-.ev-incl-viking  .ev-inclusions-brand-label { color: #6ee7b7; }
+.ev-incl-explora .ev-inclusions-brand-label {
+    color: #93c5fd;
+}
+
+.ev-incl-viking .ev-inclusions-brand-label {
+    color: #6ee7b7;
+}
 
 .ev-inclusions-card h3 {
     font-size: 20px;
@@ -764,17 +923,34 @@
     line-height: 1.5;
 }
 
-.ev-incl-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-incl-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 @media (max-width: 1024px) {
-    .ev-inclusions-section { padding: 64px 20px; }
-    .ev-inclusions-grid { grid-template-columns: 1fr; }
-    .ev-inclusions-header h2 { font-size: 28px; }
+    .ev-inclusions-section {
+        padding: 64px 20px;
+    }
+
+    .ev-inclusions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-inclusions-header h2 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-inclusions-section { padding: 48px 16px; }
-    .ev-inclusions-card { padding: 24px 20px; }
+    .ev-inclusions-section {
+        padding: 48px 16px;
+    }
+
+    .ev-inclusions-card {
+        padding: 24px 20px;
+    }
 }
 
 /* ── DESTINATION IMAGE STRIP ─────────────────────────────────────── */
@@ -875,25 +1051,41 @@
 }
 
 @media (max-width: 1024px) {
-    .ev-destinations-section { padding: 64px 20px; }
+    .ev-destinations-section {
+        padding: 64px 20px;
+    }
+
     .ev-destinations-mosaic {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
 
-    .ev-dest-tile { height: 200px; }
-    .ev-dest-tile:first-child { grid-column: span 2; }
+    .ev-dest-tile {
+        height: 200px;
+    }
+
+    .ev-dest-tile:first-child {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-destinations-section { padding: 48px 16px; }
+    .ev-destinations-section {
+        padding: 48px 16px;
+    }
+
     .ev-destinations-mosaic {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    .ev-dest-tile { height: 180px; }
-    .ev-dest-tile:first-child { grid-column: span 1; }
+    .ev-dest-tile {
+        height: 180px;
+    }
+
+    .ev-dest-tile:first-child {
+        grid-column: span 1;
+    }
 }
 
 /* ── WELLNESS IMAGE SPLIT ─────────────────────────────────────────── */
@@ -980,17 +1172,34 @@
     line-height: 1.5;
 }
 
-.ev-wellness-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-wellness-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 @media (max-width: 1024px) {
-    .ev-wellness-section { padding: 64px 20px; }
-    .ev-wellness-grid { grid-template-columns: 1fr; }
+    .ev-wellness-section {
+        padding: 64px 20px;
+    }
+
+    .ev-wellness-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-wellness-section { padding: 48px 16px; }
-    .ev-wellness-img { height: 200px; }
-    .ev-wellness-body { padding: 22px 20px; }
+    .ev-wellness-section {
+        padding: 48px 16px;
+    }
+
+    .ev-wellness-img {
+        height: 200px;
+    }
+
+    .ev-wellness-body {
+        padding: 22px 20px;
+    }
 }
 
 /* ── WHO SHOULD CHOOSE (DECISION CARDS) ─────────────────────────── */
@@ -1025,7 +1234,9 @@
     flex-direction: column;
 }
 
-.ev-decision-card.ev-dec-viking { border-top-color: #1c2f4a; }
+.ev-decision-card.ev-dec-viking {
+    border-top-color: #1c2f4a;
+}
 
 .ev-decision-img {
     width: 100%;
@@ -1064,17 +1275,34 @@
     line-height: 1.5;
 }
 
-.ev-dec-check { color: #10b981; flex-shrink: 0; margin-top: 2px; }
+.ev-dec-check {
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
 
 @media (max-width: 1024px) {
-    .ev-decision-section { padding: 64px 20px; }
-    .ev-decision-grid { grid-template-columns: 1fr; }
+    .ev-decision-section {
+        padding: 64px 20px;
+    }
+
+    .ev-decision-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 767px) {
-    .ev-decision-section { padding: 48px 16px; }
-    .ev-decision-img { height: 170px; }
-    .ev-decision-body { padding: 22px 20px; }
+    .ev-decision-section {
+        padding: 48px 16px;
+    }
+
+    .ev-decision-img {
+        height: 170px;
+    }
+
+    .ev-decision-body {
+        padding: 22px 20px;
+    }
 }
 
 /* ── FINAL VERDICT ───────────────────────────────────────────────── */
@@ -1158,10 +1386,35 @@
     margin: 0;
 }
 
-@media (max-width: 1024px) { .ev-verdict-section { padding: 64px 20px; } }
+@media (max-width: 1024px) {
+    .ev-verdict-section {
+        padding: 64px 20px;
+    }
+}
 
 @media (max-width: 767px) {
-    .ev-verdict-section { padding: 48px 16px; }
-    .ev-verdict-container h2 { font-size: 26px; }
-    .ev-verdict-pills { grid-template-columns: 1fr; }
+    .ev-verdict-section {
+        padding: 48px 16px;
+    }
+
+    .ev-verdict-container h2 {
+        font-size: 26px;
+    }
+
+    .ev-verdict-pills {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Disable spin animation on profile images in Meet Angela Hughes section */
+.medi-prestige-seal-ring,
+.medi-prestige-seal-ring img,
+.medi-prestige-seal-ring::before,
+.medi-prestige-seal-ring::after {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+border-radius: 50% !important;
 }
