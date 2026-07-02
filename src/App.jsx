@@ -102,6 +102,9 @@ import Exploravsoceania from "./pages/Exploravsoceania/Exploravsoceania";
 import Exploravsscenic from "./pages/Exploravsscenic/Exploravsscenic";
 import Exploravsponant from "./pages/Exploravsponant/Exploravsponant";
 import Exploravscrystal from "./pages/Exploravscrystal/Exploravscrystal";
+import PrivateEquityFamilyTravel from "./pages/PrivateEquityFamilyTravel/PrivateEquityFamilyTravel";
+import FamilyLegacyTravel from "./pages/FamilyLegacyTravel/FamilyLegacyTravel";
+import MultigenerationalLuxuryTravel from "./pages/MultigenerationalLuxuryTravel/MultigenerationalLuxuryTravel";
 
 function App() {
   return (
@@ -551,6 +554,21 @@ function App() {
           <Route
             path="/explora-vs-crystal"
             element={< Exploravscrystal />}
+          />
+
+          <Route
+            path="/private-equity-family-travel"
+            element={<PrivateEquityFamilyTravel />}
+          />
+
+          <Route
+            path="/family-legacy-travel"
+            element={<FamilyLegacyTravel />}
+          />
+
+          <Route
+            path="/multigenerational-luxury-travel"
+            element={<MultigenerationalLuxuryTravel />}
           />
         </Routes>
       </BrowserRouter>

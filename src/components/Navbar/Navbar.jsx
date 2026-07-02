@@ -269,6 +269,8 @@ const Navbar = () => {
               >
                 Best African Safari for Families</NavLink>
 
+            
+
 
               <NavLink
                 to="/azamara-mediterranean-cruises"
@@ -714,6 +716,27 @@ const Navbar = () => {
               >
                 Explora Vs Crystal
               </NavLink>
+
+               <NavLink
+                to="/private-equity-family-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Private Equity Family Travel</NavLink>
+
+               <NavLink
+                to="/family-legacy-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Legacy Travel</NavLink>
+
+               <NavLink
+                to="/multigenerational-luxury-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Multigenerational Luxury Travel</NavLink>
 
 
 
@@ -1422,6 +1445,27 @@ const Navbar = () => {
               >
                 Explora Vs Crystal
               </NavLink>
+
+               <NavLink
+                to="/private-equity-family-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Private Equity Family Travel</NavLink>
+
+               <NavLink
+                to="/family-legacy-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Legacy Travel</NavLink>
+
+               <NavLink
+                to="/multigenerational-luxury-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Multigenerational Luxury Travel</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
