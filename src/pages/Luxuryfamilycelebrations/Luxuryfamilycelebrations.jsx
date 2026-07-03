@@ -261,7 +261,7 @@ function LuxuryFamilyCelebrations() {
                                 </div>
                             </div>
                             <div className="fcel-intro-image-frame">
-                                <img src="https://picsum.photos/seed/fcel-intro-family/900/1000" alt="Family celebrating together on a luxury vacation" />
+                                {/* <img src="https://picsum.photos/seed/fcel-intro-family/900/1000" alt="Family celebrating together on a luxury vacation" /> */}
                                 <div className="fcel-intro-badge-float">
                                     <Heart size={18} />
                                     <span>Crafted for Every Generation</span>
