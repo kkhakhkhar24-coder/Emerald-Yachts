@@ -269,9 +269,6 @@ const Navbar = () => {
               >
                 Best African Safari for Families</NavLink>
 
-            
-
-
               <NavLink
                 to="/azamara-mediterranean-cruises"
                 className="nav-dropdown-single"
@@ -737,6 +734,34 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Multigenerational Luxury Travel</NavLink>
+
+              <NavLink
+                to="/family-office-travel-planning"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Office Travel Planning</NavLink>
+
+              <NavLink
+                to="/executive-family-retreats"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Executive Family Retreats</NavLink>
+
+              <NavLink
+                to="/family-governance-retreats"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Governance Retreats</NavLink>
+
+              <NavLink
+                to="/luxury-family-celebrations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Family Celebrations</NavLink>
 
 
 
@@ -1466,6 +1491,34 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Multigenerational Luxury Travel</NavLink>
+
+                 <NavLink
+                to="/family-office-travel-planning"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Office Travel Planning</NavLink>
+
+                 <NavLink
+                to="/executive-family-retreats"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Executive Family Retreats</NavLink>
+
+                 <NavLink
+                to="/family-governance-retreats"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Family Governance Retreats</NavLink>
+
+                 <NavLink
+                to="/luxury-family-celebrations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Family Celebrations</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

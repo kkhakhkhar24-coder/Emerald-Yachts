@@ -105,6 +105,10 @@ import Exploravscrystal from "./pages/Exploravscrystal/Exploravscrystal";
 import PrivateEquityFamilyTravel from "./pages/PrivateEquityFamilyTravel/PrivateEquityFamilyTravel";
 import FamilyLegacyTravel from "./pages/FamilyLegacyTravel/FamilyLegacyTravel";
 import MultigenerationalLuxuryTravel from "./pages/MultigenerationalLuxuryTravel/MultigenerationalLuxuryTravel";
+import Familyofficetravelplanning from "./pages/Familyofficetravelplanning/Familyofficetravelplanning";
+import Executivefamilyretreats from "./pages/Executivefamilyretreats/Executivefamilyretreats";
+import Familygovernanceretreats from "./pages/Familygovernanceretreats/Familygovernanceretreats";
+import Luxuryfamilycelebrations from "./pages/Luxuryfamilycelebrations/Luxuryfamilycelebrations";
 
 function App() {
   return (
@@ -569,6 +573,26 @@ function App() {
           <Route
             path="/multigenerational-luxury-travel"
             element={<MultigenerationalLuxuryTravel />}
+          />
+
+          <Route
+            path="/family-office-travel-planning"
+            element={<Familyofficetravelplanning/>}
+          />
+
+          <Route
+            path="/executive-family-retreats"
+            element={<Executivefamilyretreats/>}
+          />
+
+          <Route
+            path="//family-governance-retreats"
+            element={<Familygovernanceretreats/>}
+          />
+
+          <Route
+            path="/luxury-family-celebrations"
+            element={<Luxuryfamilycelebrations/>}
           />
         </Routes>
       </BrowserRouter>
