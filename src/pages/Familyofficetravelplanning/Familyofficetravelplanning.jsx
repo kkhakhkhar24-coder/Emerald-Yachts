@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './FamilyOfficeTravelPlanning.css'
+import './Familyofficetravelplanning.css'
 import {
     Shield, Plane, PlaneTakeoff, Ship, Compass, Heart, Award, Sparkles, Users, Clock,
     MapPin, CheckCircle, Phone, LayoutList, Star, Anchor, Calendar, Gem, Globe, Utensils,

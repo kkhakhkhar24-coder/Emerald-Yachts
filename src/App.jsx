@@ -102,7 +102,7 @@ import Exploravsoceania from "./pages/Exploravsoceania/Exploravsoceania";
 import Exploravsscenic from "./pages/Exploravsscenic/Exploravsscenic";
 import Exploravsponant from "./pages/Exploravsponant/Exploravsponant";
 import Exploravscrystal from "./pages/Exploravscrystal/Exploravscrystal";
-import PrivateEquityFamilyTravel from "./pages/PrivateEquityFamilyTravel/PrivateEquityFamilyTravel";
+import PrivateEquityFamilyTravel from "./pages/Privateequityfamilytravel/PrivateEquityFamilyTravel";
 import FamilyLegacyTravel from "./pages/FamilyLegacyTravel/FamilyLegacyTravel";
 import MultigenerationalLuxuryTravel from "./pages/MultigenerationalLuxuryTravel/MultigenerationalLuxuryTravel";
 import Familyofficetravelplanning from "./pages/Familyofficetravelplanning/Familyofficetravelplanning";

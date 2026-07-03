@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ExecutiveFamilyRetreats.css'
+import './Executivefamilyretreats.css'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     Compass, Sparkles, Anchor, Calendar, Gem,
