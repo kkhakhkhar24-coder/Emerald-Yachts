@@ -1,0 +1,1154 @@
+/* ============================================================
+   PRIVATE VILLAS & EXCLUSIVE RESORTS — PAGE STYLES
+   Prefix: pvr-
+   Shared elements (hero, faq, cta, expert editorial, section
+   heading/separator) reuse the medi- classes imported from
+   AzamaraMediterraneanCruises.css. Colors, fonts and spacing
+   below intentionally match that shared design system.
+   ============================================================ */
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+
+.pvr-intro-section {
+    position: relative;
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.pvr-intro-shape-one {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 320px;
+    height: 320px;
+    border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
+    background: rgba(39, 68, 114, 0.06);
+    pointer-events: none;
+}
+
+.pvr-intro-shape-two {
+    position: absolute;
+    bottom: -140px;
+    left: -100px;
+    width: 380px;
+    height: 380px;
+    border-radius: 55% 45% 40% 60% / 45% 55% 45% 55%;
+    background: rgba(16, 185, 129, 0.06);
+    pointer-events: none;
+}
+
+.pvr-intro-container {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-intro-lead-para {
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 24px 0;
+}
+
+.pvr-intro-body-para {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #475569;
+    margin: 0 0 36px 0;
+}
+
+.pvr-intro-highlight-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 28px 32px;
+    text-align: left;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.pvr-intro-highlight-icon {
+    flex-shrink: 0;
+    color: var(--medi-green);
+    margin-top: 2px;
+}
+
+.pvr-intro-highlight-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--medi-navy);
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .pvr-intro-section { padding: 80px 20px; }
+    .pvr-intro-lead-para { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+    .pvr-intro-section { padding: 64px 18px; }
+    .pvr-intro-lead-para { font-size: 19px; }
+    .pvr-intro-body-para { font-size: 16px; }
+    .pvr-intro-highlight-box { padding: 22px 22px; flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-intro-section { padding: 52px 16px; }
+    .pvr-intro-lead-para { font-size: 18px; }
+    .pvr-intro-highlight-text { font-size: 15px; }
+}
+
+/* ============================================================
+   WHY CHOOSE A PRIVATE VILLA
+   ============================================================ */
+
+.pvr-benefits-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.pvr-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-benefits-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 12px;
+}
+
+.pvr-benefits-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.pvr-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.pvr-benefit-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pvr-benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(15, 28, 46, 0.12);
+}
+
+.pvr-benefit-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pvr-benefit-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.pvr-benefits-closing-para {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .pvr-benefits-section { padding: 80px 20px; }
+    .pvr-benefits-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .pvr-benefits-section { padding: 64px 18px; }
+    .pvr-benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .pvr-benefit-card { padding: 22px 16px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-benefits-section { padding: 52px 14px; }
+    .pvr-benefits-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .pvr-benefit-icon-box { width: 44px; height: 44px; }
+    .pvr-benefit-card-text { font-size: 14px; }
+}
+
+/* ============================================================
+   EXCLUSIVE LUXURY RESORTS (image + content split)
+   ============================================================ */
+
+.pvr-resorts-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.pvr-resorts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.pvr-resorts-image-block {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(15, 28, 46, 0.14);
+    aspect-ratio: 4/5;
+}
+
+.pvr-resorts-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pvr-resorts-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(15, 28, 46, 0.55) 100%);
+}
+
+.pvr-resorts-floating-badge {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--medi-navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 999px;
+}
+
+.pvr-resorts-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-green);
+    margin-bottom: 14px;
+}
+
+.pvr-resorts-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--medi-navy);
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.pvr-resorts-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+}
+
+.pvr-resorts-lead-para {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.pvr-resorts-subtext {
+    font-size: 16px;
+    color: #475569;
+    margin: 0 0 20px;
+}
+
+.pvr-resorts-list {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 20px;
+}
+
+.pvr-resorts-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--medi-navy);
+    font-weight: 500;
+}
+
+.pvr-resorts-list-icon {
+    color: var(--medi-green);
+    flex-shrink: 0;
+}
+
+.pvr-resorts-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .pvr-resorts-section { padding: 80px 20px; }
+    .pvr-resorts-container { grid-template-columns: 1fr; gap: 40px; }
+    .pvr-resorts-image-block { aspect-ratio: 16/9; }
+    .pvr-resorts-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .pvr-resorts-section { padding: 64px 18px; }
+    .pvr-resorts-list { grid-template-columns: 1fr; }
+    .pvr-resorts-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-resorts-section { padding: 52px 14px; }
+    .pvr-resorts-heading { font-size: 24px; }
+    .pvr-resorts-lead-para { font-size: 16px; }
+}
+
+/* ============================================================
+   LUXURY VILLA DESTINATIONS (circular scatter gallery)
+   ============================================================ */
+
+.pvr-destinations-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.pvr-destinations-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-destinations-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-green);
+    margin-bottom: 10px;
+}
+
+.pvr-destinations-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.pvr-destinations-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.pvr-destinations-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.pvr-destination-card {
+    position: relative;
+    border-radius: 50% 50% 46% 46% / 55% 55% 45% 45%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(15, 28, 46, 0.1);
+}
+
+.pvr-destination-card:nth-child(even) {
+    margin-top: 28px;
+}
+
+.pvr-destination-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.pvr-destination-card:hover .pvr-destination-img {
+    transform: scale(1.1);
+}
+
+.pvr-destination-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0) 40%, rgba(15, 28, 46, 0.82) 100%);
+}
+
+.pvr-destination-card-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.pvr-destinations-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 28px auto 0;
+}
+
+@media (max-width: 1024px) {
+    .pvr-destinations-section { padding: 80px 20px; }
+    .pvr-destinations-gallery { grid-template-columns: repeat(4, 1fr); }
+    .pvr-destination-card:nth-child(even) { margin-top: 0; }
+}
+
+@media (max-width: 768px) {
+    .pvr-destinations-section { padding: 64px 18px; }
+    .pvr-destinations-gallery { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-destinations-section { padding: 52px 14px; }
+    .pvr-destinations-gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .pvr-destination-card-label { font-size: 11.5px; }
+}
+
+/* ============================================================
+   FAMILY VILLA VACATIONS (reverse split)
+   ============================================================ */
+
+.pvr-family-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.pvr-family-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.pvr-family-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-green);
+    margin-bottom: 14px;
+}
+
+.pvr-family-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--medi-navy);
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.pvr-family-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+}
+
+.pvr-family-lead-para {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.pvr-family-subtext {
+    font-size: 16px;
+    color: #475569;
+    margin: 0 0 20px;
+}
+
+.pvr-family-pills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.pvr-family-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.14);
+    border-radius: 999px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--medi-navy);
+}
+
+.pvr-family-pill-icon {
+    color: var(--medi-navy);
+}
+
+.pvr-family-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+.pvr-family-image-block {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(15, 28, 46, 0.14);
+    aspect-ratio: 4/5;
+}
+
+.pvr-family-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pvr-family-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.1) 0%, transparent 60%);
+}
+
+@media (max-width: 1024px) {
+    .pvr-family-section { padding: 80px 20px; }
+    .pvr-family-container { grid-template-columns: 1fr; gap: 40px; }
+    .pvr-family-image-block { order: -1; aspect-ratio: 16/9; }
+    .pvr-family-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .pvr-family-section { padding: 64px 18px; }
+    .pvr-family-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-family-section { padding: 52px 14px; }
+    .pvr-family-heading { font-size: 24px; }
+    .pvr-family-pill { font-size: 13px; padding: 8px 13px; }
+}
+
+/* ============================================================
+   PERSONALIZED CONCIERGE SERVICES
+   ============================================================ */
+
+.pvr-concierge-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.pvr-concierge-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-concierge-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-green);
+    margin-bottom: 10px;
+}
+
+.pvr-concierge-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.pvr-concierge-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.pvr-concierge-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.pvr-concierge-card {
+    position: relative;
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 26px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+}
+
+.pvr-concierge-num {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(39, 68, 114, 0.1);
+}
+
+.pvr-concierge-icon-box {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pvr-concierge-card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.pvr-concierge-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .pvr-concierge-section { padding: 80px 20px; }
+    .pvr-concierge-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .pvr-concierge-section { padding: 64px 18px; }
+    .pvr-concierge-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-concierge-section { padding: 52px 14px; }
+    .pvr-concierge-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .pvr-concierge-card { padding: 20px 12px 16px; }
+    .pvr-concierge-card-text { font-size: 13px; }
+}
+
+/* ============================================================
+   WELLNESS & RELAXATION (dark image gallery)
+   ============================================================ */
+
+.pvr-wellness-section {
+    background: var(--medi-bg-dark);
+    background-image: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.pvr-wellness-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.pvr-separator-light {
+    background: var(--medi-green) !important;
+}
+
+.pvr-wellness-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.pvr-wellness-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 36px;
+}
+
+.pvr-wellness-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.pvr-wellness-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+}
+
+.pvr-wellness-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.pvr-wellness-card:hover .pvr-wellness-img {
+    transform: scale(1.08);
+}
+
+.pvr-wellness-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.05) 40%, rgba(15, 28, 46, 0.88) 100%);
+}
+
+.pvr-wellness-icon-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pvr-wellness-label {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.pvr-wellness-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .pvr-wellness-section { padding: 80px 20px; }
+    .pvr-wellness-gallery { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (max-width: 768px) {
+    .pvr-wellness-section { padding: 64px 18px; }
+    .pvr-wellness-gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-wellness-section { padding: 52px 14px; }
+    .pvr-wellness-gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .pvr-wellness-label { font-size: 12px; }
+}
+
+/* ============================================================
+   LUXURY CELEBRATIONS
+   ============================================================ */
+
+.pvr-celebrations-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.pvr-celebrations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-celebrations-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-green);
+    margin-bottom: 10px;
+}
+
+.pvr-celebrations-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.pvr-celebrations-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.pvr-celebrations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.pvr-celebration-card {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pvr-celebration-card:hover {
+    transform: translateY(-6px);
+    background: var(--medi-navy);
+}
+
+.pvr-celebration-card:hover .pvr-celebration-icon-box {
+    background: #ffffff;
+    color: var(--medi-navy);
+}
+
+.pvr-celebration-card:hover .pvr-celebration-card-text {
+    color: #ffffff;
+}
+
+.pvr-celebration-icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.pvr-celebration-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.pvr-celebrations-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .pvr-celebrations-section { padding: 80px 20px; }
+    .pvr-celebrations-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .pvr-celebrations-section { padding: 64px 18px; }
+    .pvr-celebrations-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-celebrations-section { padding: 52px 14px; }
+    .pvr-celebrations-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .pvr-celebration-card { padding: 22px 12px; }
+    .pvr-celebration-icon-box { width: 46px; height: 46px; }
+    .pvr-celebration-card-text { font-size: 13.5px; }
+}
+
+/* ============================================================
+   PRIVACY & SECURITY
+   ============================================================ */
+
+.pvr-privacy-section {
+    background: var(--medi-navy);
+    padding: 100px 20px;
+}
+
+.pvr-privacy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-privacy-icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.pvr-privacy-heading {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.pvr-privacy-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-green);
+    margin: 0 auto 24px;
+}
+
+.pvr-privacy-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0 0 8px;
+}
+
+.pvr-privacy-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 30px;
+}
+
+.pvr-privacy-list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.pvr-privacy-list-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.pvr-privacy-list-icon {
+    color: var(--medi-green);
+}
+
+.pvr-privacy-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .pvr-privacy-section { padding: 80px 20px; }
+    .pvr-privacy-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .pvr-privacy-section { padding: 64px 18px; }
+    .pvr-privacy-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-privacy-section { padding: 52px 14px; }
+    .pvr-privacy-heading { font-size: 24px; }
+    .pvr-privacy-list-item { font-size: 13px; padding: 9px 14px; }
+}
+
+/* ============================================================
+   WHY CHOOSE TRIPS & SHIPS
+   ============================================================ */
+
+.pvr-whychoose-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.pvr-whychoose-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pvr-whychoose-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.pvr-whychoose-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.pvr-whychoose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.pvr-whychoose-card {
+    position: relative;
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 30px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+}
+
+.pvr-whychoose-accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--medi-navy);
+}
+
+.pvr-whychoose-icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--medi-navy);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pvr-whychoose-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.pvr-whychoose-closing-para {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .pvr-whychoose-section { padding: 80px 20px; }
+    .pvr-whychoose-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .pvr-whychoose-section { padding: 64px 18px; }
+    .pvr-whychoose-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-whychoose-section { padding: 52px 14px; }
+    .pvr-whychoose-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .pvr-whychoose-card { padding: 22px 14px 18px; }
+    .pvr-whychoose-card-text { font-size: 14px; }
+}
+
+/* ============================================================
+   EDITORIAL SECTION TITLE OVERRIDE (villa & resort context)
+   ============================================================ */
+
+.pvr-editorial-section .medi-editorial-title {
+    max-width: 620px;
+}

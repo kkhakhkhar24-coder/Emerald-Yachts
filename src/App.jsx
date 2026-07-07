@@ -109,6 +109,9 @@ import Familyofficetravelplanning from "./pages/Familyofficetravelplanning/Famil
 import Executivefamilyretreats from "./pages/Executivefamilyretreats/Executivefamilyretreats";
 import Familygovernanceretreats from "./pages/Familygovernanceretreats/Familygovernanceretreats";
 import Luxuryfamilycelebrations from "./pages/Luxuryfamilycelebrations/Luxuryfamilycelebrations";
+import Privatejetconciergetravel from "./pages/Privatejetconciergetravel/Privatejetconciergetravel";
+import Privatevillasexclusiveresorts from "./pages/Privatevillasexclusiveresorts/Privatevillasexclusiveresorts";
+import Safarisexpeditionsbucketlisttravel from "./pages/Safarisexpeditionsbucketlisttravel/Safarisexpeditionsbucketlisttravel";
 
 function App() {
   return (
@@ -594,6 +597,25 @@ function App() {
             path="/luxury-family-celebrations"
             element={<Luxuryfamilycelebrations/>}
           />
+
+          <Route
+            path="/private-jet-concierge-travel"
+            element={<Privatejetconciergetravel/>}
+          />
+
+          <Route
+            path="/private-villas-exclusive-resorts"
+            element={<Privatevillasexclusiveresorts/>}
+          />
+
+          <Route
+            path="/safaris-expeditions-bucket-list-travel"
+            element={<Safarisexpeditionsbucketlisttravel/>}
+          />
+
+
+
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

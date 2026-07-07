@@ -1,0 +1,1024 @@
+/* ============================================================
+   SAFARIS, EXPEDITIONS & BUCKET LIST TRAVEL — PAGE STYLES
+   Prefix: sfex- (all classnames unique to this page)
+   ============================================================ */
+
+:root {
+    --sfex-navy: #274472;
+    --sfex-navy-light: #274472cc;
+    --sfex-bg-white: #ffffff;
+    --sfex-bg-soft: rgb(231, 243, 245);
+    --sfex-bg-dark: #0f1c2e;
+    --sfex-bg-dark2: #1c2f4a;
+    --sfex-green: #10b981;
+    --sfex-gold: #c9a24b;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES
+   ============================================================ */
+
+.sfex-page-wrapper {
+    overflow-x: hidden;
+}
+
+.sfex-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--sfex-navy);
+}
+
+.sfex-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--sfex-navy);
+    margin-bottom: 32px;
+}
+
+.sfex-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sfex-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sfex-navy);
+    background: var(--sfex-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.sfex-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .sfex-section-heading { font-size: 34px !important; text-align: center; }
+    .sfex-heading-bar { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 480px) {
+    .sfex-section-heading { font-size: 26px !important; }
+    .sfex-lead-paragraph { font-size: 16px; }
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.sfex-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sfex-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+}
+
+.sfex-hero-slide.sfex-slide-active {
+    opacity: 1;
+}
+
+.sfex-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.sfex-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.sfex-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sfex-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #f0d9a0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.sfex-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 940px;
+}
+
+.sfex-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.sfex-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sfex-btn-primary {
+    background: var(--sfex-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.sfex-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.sfex-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.sfex-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .sfex-hero-title { font-size: 42px; }
+    .sfex-hero-subtitle { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+    .sfex-hero-title { font-size: 32px; }
+    .sfex-hero-content { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-hero-title { font-size: 26px; }
+    .sfex-hero-subtitle { font-size: 15px; margin-bottom: 28px; }
+    .sfex-hero-tag { font-size: 12px; }
+    .sfex-btn-primary, .sfex-btn-outline { padding: 12px 22px; font-size: 14px; width: 100%; justify-content: center; }
+    .sfex-hero-btn-row { width: 100%; flex-direction: column; }
+}
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+.sfex-intro-section {
+    background: var(--sfex-bg-white);
+    padding: 100px 20px;
+}
+
+.sfex-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sfex-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.sfex-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(15, 28, 46, 0.18);
+}
+
+.sfex-intro-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 420px;
+}
+
+.sfex-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 14px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--sfex-navy);
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 10px 24px rgba(15, 28, 46, 0.15);
+}
+
+.sfex-intro-highlight-box {
+    background: var(--sfex-bg-soft);
+    border-left: 4px solid var(--sfex-navy);
+    border-radius: 0 8px 8px 0;
+    padding: 22px 26px;
+    margin-top: 26px;
+    font-size: 17px;
+    font-style: italic;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .sfex-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+    .sfex-intro-image-frame { order: -1; }
+    .sfex-intro-image-frame img { min-height: 320px; }
+}
+
+@media (max-width: 768px) {
+    .sfex-intro-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-intro-section { padding: 44px 14px; }
+    .sfex-intro-highlight-box { padding: 16px 18px; font-size: 15px; }
+}
+
+/* ============================================================
+   WHY CHOOSE A BUCKET LIST ADVENTURE — FEATURE GRID
+   ============================================================ */
+.sfex-why-section {
+    background: linear-gradient(180deg, var(--sfex-bg-dark) 0%, var(--sfex-bg-dark2) 100%);
+    padding: 100px 20px;
+    position: relative;
+}
+
+.sfex-why-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.sfex-why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.sfex-why-header .sfex-section-heading {
+    color: #ffffff !important;
+}
+
+.sfex-why-header .sfex-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.sfex-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.sfex-why-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sfex-why-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.sfex-why-icon-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(240, 217, 160, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #f0d9a0;
+}
+
+.sfex-why-card-text {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .sfex-why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .sfex-why-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-why-grid { grid-template-columns: 1fr; gap: 14px; }
+    .sfex-why-card { padding: 20px 16px; }
+}
+
+/* ============================================================
+   AFRICAN SAFARIS — DESTINATION COUNTRY GRID
+   ============================================================ */
+.sfex-country-section {
+    background: var(--sfex-bg-white);
+    padding: 100px 20px;
+}
+
+.sfex-country-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sfex-country-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.sfex-country-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+.sfex-country-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 260px;
+    box-shadow: 0 14px 30px rgba(15, 28, 46, 0.14);
+    transition: transform 0.35s ease;
+}
+
+.sfex-country-card:hover {
+    transform: translateY(-6px);
+}
+
+.sfex-country-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.sfex-country-card:hover img {
+    transform: scale(1.08);
+}
+
+.sfex-country-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0) 40%, rgba(15, 28, 46, 0.85) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+}
+
+.sfex-country-card-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sfex-experience-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.sfex-experience-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--sfex-bg-soft);
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--sfex-navy);
+}
+
+@media (max-width: 1024px) {
+    .sfex-country-grid { grid-template-columns: repeat(3, 1fr); }
+    .sfex-country-section { padding: 60px 18px; }
+}
+
+@media (max-width: 768px) {
+    .sfex-country-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .sfex-country-card { height: 200px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-country-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sfex-country-card { height: 150px; }
+    .sfex-country-card-name { font-size: 14px; }
+    .sfex-experience-pill { font-size: 13px; padding: 10px 16px; }
+}
+
+/* ============================================================
+   REUSABLE SPLIT OCCASION SECTIONS
+   (Antarctica / Galápagos / Expedition Cruises / Family Adventure)
+   ============================================================ */
+.sfex-journey-section {
+    padding: 90px 20px;
+    background: var(--sfex-bg-white);
+}
+
+.sfex-journey-section.sfex-journey-soft {
+    background: var(--sfex-bg-soft);
+}
+
+.sfex-journey-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sfex-journey-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sfex-journey-grid.sfex-journey-reverse {
+    grid-template-columns: 1.05fr 0.95fr;
+}
+
+.sfex-journey-grid.sfex-journey-reverse .sfex-journey-media {
+    order: 2;
+}
+
+.sfex-journey-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.sfex-journey-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 16px 34px rgba(15, 28, 46, 0.14);
+}
+
+.sfex-journey-media .sfex-media-tall {
+    grid-row: span 2;
+    height: 100%;
+    min-height: 340px;
+}
+
+.sfex-journey-media .sfex-media-short {
+    min-height: 162px;
+}
+
+.sfex-journey-eyebrow {
+    color: var(--sfex-navy);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.sfex-journey-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--sfex-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.25;
+}
+
+.sfex-journey-intro {
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+}
+
+.sfex-journey-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 0 24px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sfex-journey-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.sfex-journey-list-icon {
+    color: var(--sfex-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.sfex-journey-footnote {
+    background: rgba(39, 68, 114, 0.06);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .sfex-journey-grid,
+    .sfex-journey-grid.sfex-journey-reverse {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+    .sfex-journey-grid.sfex-journey-reverse .sfex-journey-media { order: -1; }
+    .sfex-journey-media { order: -1; }
+    .sfex-journey-title { text-align: center; }
+    .sfex-journey-eyebrow { text-align: center; }
+    .sfex-journey-intro { text-align: center; }
+}
+
+@media (max-width: 768px) {
+    .sfex-journey-section { padding: 56px 18px; }
+    .sfex-journey-title { font-size: 26px; }
+    .sfex-journey-media .sfex-media-tall { min-height: 220px; }
+    .sfex-journey-media .sfex-media-short { min-height: 104px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-journey-section { padding: 40px 14px; }
+    .sfex-journey-title { font-size: 22px; }
+    .sfex-journey-list li { font-size: 14px; }
+    .sfex-journey-media { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
+
+/* ============================================================
+   LUXURY ACCOMMODATIONS SECTION
+   ============================================================ */
+.sfex-stay-section {
+    background: var(--sfex-bg-white);
+    padding: 100px 20px;
+}
+
+.sfex-stay-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sfex-stay-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.sfex-stay-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.sfex-stay-gallery img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 14px 28px rgba(15, 28, 46, 0.14);
+}
+
+.sfex-stay-gallery img:nth-child(2) {
+    margin-top: 28px;
+}
+
+.sfex-stay-gallery img:nth-child(4) {
+    margin-top: -28px;
+}
+
+.sfex-stay-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 26px;
+}
+
+.sfex-stay-feature-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--sfex-bg-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--sfex-navy);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .sfex-stay-grid { grid-template-columns: 1fr; gap: 40px; }
+    .sfex-stay-gallery { order: -1; }
+}
+
+@media (max-width: 768px) {
+    .sfex-stay-section { padding: 60px 18px; }
+    .sfex-stay-gallery img { height: 150px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-stay-features-grid { grid-template-columns: 1fr; }
+    .sfex-stay-gallery img:nth-child(2) { margin-top: 0; }
+    .sfex-stay-gallery img:nth-child(4) { margin-top: 0; }
+}
+
+/* ============================================================
+   CONCIERGE SERVICES SECTION
+   ============================================================ */
+.sfex-concierge-section {
+    background: var(--sfex-bg-soft);
+    padding: 100px 20px;
+}
+
+.sfex-concierge-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sfex-concierge-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.sfex-concierge-pill {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.15);
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--sfex-navy);
+    box-shadow: 0 6px 16px rgba(15, 28, 46, 0.06);
+}
+
+@media (max-width: 768px) {
+    .sfex-concierge-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-concierge-pill { font-size: 13px; padding: 10px 16px; }
+    .sfex-concierge-pills-wrap { gap: 10px; }
+}
+
+/* ============================================================
+   CONSERVATION & RESPONSIBLE TRAVEL SECTION
+   ============================================================ */
+.sfex-conservation-section {
+    background: linear-gradient(180deg, var(--sfex-bg-dark) 0%, var(--sfex-bg-dark2) 100%);
+    padding: 100px 20px;
+}
+
+.sfex-conservation-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sfex-conservation-copy .sfex-section-heading { color: #ffffff !important; }
+.sfex-conservation-copy .sfex-lead-paragraph { color: #cbd5e1; }
+
+.sfex-conservation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 24px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sfex-conservation-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #e2e8f0;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 14px 18px;
+}
+
+.sfex-conservation-list-icon {
+    color: #f0d9a0;
+    flex-shrink: 0;
+}
+
+.sfex-conservation-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .sfex-conservation-container { grid-template-columns: 1fr; gap: 34px; }
+    .sfex-conservation-image { order: -1; }
+    .sfex-conservation-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-conservation-list li { font-size: 14px; padding: 12px 14px; }
+}
+
+/* ============================================================
+   WHY CHOOSE US SECTION
+   ============================================================ */
+.sfex-why-us-section {
+    background: var(--sfex-bg-white);
+    padding: 100px 20px;
+}
+
+.sfex-why-us-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sfex-why-us-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sfex-why-us-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 44px rgba(15, 28, 46, 0.16);
+    display: block;
+}
+
+.sfex-why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.sfex-why-us-card {
+    background: var(--sfex-bg-soft);
+    border-radius: 14px;
+    padding: 26px 20px;
+    text-align: center;
+}
+
+.sfex-why-us-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--sfex-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+}
+
+.sfex-why-us-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--sfex-navy);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .sfex-why-us-top { grid-template-columns: 1fr; gap: 34px; }
+    .sfex-why-us-grid { grid-template-columns: repeat(2, 1fr); }
+    .sfex-why-us-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-why-us-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sfex-why-us-card { padding: 18px 12px; }
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.sfex-faq-section {
+    background: var(--sfex-bg-soft);
+    padding: 100px 20px;
+}
+
+.sfex-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sfex-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sfex-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.sfex-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.sfex-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--sfex-navy);
+}
+
+.sfex-faq-toggle {
+    font-size: 22px;
+    color: var(--sfex-navy);
+    flex-shrink: 0;
+}
+
+.sfex-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .sfex-faq-section { padding: 60px 18px; }
+    .sfex-faq-question-row { font-size: 15px; }
+    .sfex-faq-item { padding: 16px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-faq-question-row { font-size: 14px; }
+    .sfex-faq-answer { font-size: 14px; }
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.sfex-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--sfex-bg-dark) 0%, var(--sfex-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sfex-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.sfex-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.sfex-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.sfex-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #f0d9a0;
+    margin: 0 auto 28px;
+}
+
+.sfex-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.sfex-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .sfex-cta-heading { font-size: 30px; }
+}
+
+@media (max-width: 768px) {
+    .sfex-cta-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sfex-cta-heading { font-size: 22px; }
+    .sfex-cta-text { font-size: 14px; }
+    .sfex-cta-btn-row { flex-direction: column; width: 100%; }
+    .sfex-cta-btn-row .sfex-btn-primary,
+    .sfex-cta-btn-row .sfex-btn-outline { width: 100%; justify-content: center; }
+}

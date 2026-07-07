@@ -763,6 +763,27 @@ const Navbar = () => {
               >
                 Luxury Family Celebrations</NavLink>
 
+                {/* <NavLink
+                to="/private-jet-concierge-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Private Jet Concierge Travel</NavLink> */}
+
+                 <NavLink
+                to="/private-villas-exclusive-resorts"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Private villas & exclusive resorts</NavLink>
+
+                 <NavLink
+                to="/safaris-expeditions-bucket-list-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Safari & expeditions bucket list travel</NavLink>
+
 
 
             </div>
@@ -1519,6 +1540,28 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Luxury Family Celebrations</NavLink>
+
+                  {/* <NavLink
+                to="/private-jet-concierge-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Private Jet Concierge Travel</NavLink> */}
+
+
+                 <NavLink
+                to="/private-villas-exclusive-resorts"
+                className="nav-dropdown-single" 
+                onClick={toggleMenu}
+              >
+                Private villas & exclusive resorts</NavLink>
+
+                 <NavLink
+                to="/safaris-expeditions-bucket-list-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Safari & expeditions bucket list travel</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
