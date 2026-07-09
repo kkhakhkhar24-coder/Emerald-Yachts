@@ -657,7 +657,7 @@ const Navbar = () => {
                 Why travel donor engagement
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/explora-vs-regent"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -714,21 +714,21 @@ const Navbar = () => {
                 Explora Vs Crystal
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/private-equity-family-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Private Equity Family Travel</NavLink>
 
-               <NavLink
+              <NavLink
                 to="/family-legacy-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Family Legacy Travel</NavLink>
 
-               <NavLink
+              <NavLink
                 to="/multigenerational-luxury-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -763,26 +763,48 @@ const Navbar = () => {
               >
                 Luxury Family Celebrations</NavLink>
 
-                {/* <NavLink
+              <NavLink
                 to="/private-jet-concierge-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Private Jet Concierge Travel</NavLink> */}
+                Private Jet Concierge Travel</NavLink>
 
-                 <NavLink
+              <NavLink
                 to="/private-villas-exclusive-resorts"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Private villas & exclusive resorts</NavLink>
 
-                 <NavLink
+              <NavLink
                 to="/safaris-expeditions-bucket-list-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Safari & expeditions bucket list travel</NavLink>
+
+              <NavLink
+                to="/luxury-wellness-retreats"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Wellness Retreats</NavLink>
+
+                <NavLink
+                  to="/philanthropic-purpose-driven-travel"
+                  className="nav-dropdown-single"
+                  onClick={toggleMenu}
+                >
+                  Philanthropic Purpose-Driven Travel</NavLink>
+
+                  <NavLink
+                    to="/luxury-cruises-for-affluent-families"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Luxury Cruises For Affluent Families</NavLink>
+
 
 
 
@@ -1437,131 +1459,153 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Performing arts travel
-              </NavLink>
+              to="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Performing arts travel
+            </NavLink>
 
-              <NavLink
-                to="/why-travel-increases-donor-engagement-and-fundraising"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Why travel donor engagement
-              </NavLink>
+            <NavLink
+              to="/why-travel-increases-donor-engagement-and-fundraising"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Why travel donor engagement
+            </NavLink>
 
-               <NavLink
-                to="/explora-vs-regent"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Vs Regent
-              </NavLink>
+            <NavLink
+              to="/explora-vs-regent"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Vs Regent
+            </NavLink>
 
-              <NavLink
-                to="/explora-vs-ritz-carlton-yacht-collection"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Vs Ritzcarlton
-              </NavLink>
+            <NavLink
+              to="/explora-vs-ritz-carlton-yacht-collection"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Vs Ritzcarlton
+            </NavLink>
 
-              <NavLink
-                to="/explora-vs-oceania"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Vs Oceania
-              </NavLink>
+            <NavLink
+              to="/explora-vs-oceania"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Vs Oceania
+            </NavLink>
 
-              <NavLink
-                to="/explora-vs-ponant"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Vs Ponant
-              </NavLink>
+            <NavLink
+              to="/explora-vs-ponant"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Vs Ponant
+            </NavLink>
 
-               <NavLink
-                to="/explora-vs-crystal"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Vs Crystal
-              </NavLink>
+            <NavLink
+              to="/explora-vs-crystal"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Vs Crystal
+            </NavLink>
 
-               <NavLink
-                to="/private-equity-family-travel"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Private Equity Family Travel</NavLink>
+            <NavLink
+              to="/private-equity-family-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Private Equity Family Travel</NavLink>
 
-               <NavLink
-                to="/family-legacy-travel"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Family Legacy Travel</NavLink>
+            <NavLink
+              to="/family-legacy-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Family Legacy Travel</NavLink>
 
-               <NavLink
-                to="/multigenerational-luxury-travel"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Multigenerational Luxury Travel</NavLink>
+            <NavLink
+              to="/multigenerational-luxury-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Multigenerational Luxury Travel</NavLink>
 
-                 <NavLink
-                to="/family-office-travel-planning"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Family Office Travel Planning</NavLink>
+            <NavLink
+              to="/family-office-travel-planning"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Family Office Travel Planning</NavLink>
 
-                 <NavLink
-                to="/executive-family-retreats"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Executive Family Retreats</NavLink>
+            <NavLink
+              to="/executive-family-retreats"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Executive Family Retreats</NavLink>
 
-                 <NavLink
-                to="/family-governance-retreats"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Family Governance Retreats</NavLink>
+            <NavLink
+              to="/family-governance-retreats"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Family Governance Retreats</NavLink>
 
-                 <NavLink
-                to="/luxury-family-celebrations"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Luxury Family Celebrations</NavLink>
+            <NavLink
+              to="/luxury-family-celebrations"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Family Celebrations</NavLink>
 
-                  {/* <NavLink
+            <NavLink
                 to="/private-jet-concierge-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Private Jet Concierge Travel</NavLink> */}
+                Private Jet Concierge Travel</NavLink>
 
 
-                 <NavLink
-                to="/private-villas-exclusive-resorts"
-                className="nav-dropdown-single" 
-                onClick={toggleMenu}
-              >
-                Private villas & exclusive resorts</NavLink>
+            <NavLink
+              to="/private-villas-exclusive-resorts"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Private villas & exclusive resorts</NavLink>
 
-                 <NavLink
-                to="/safaris-expeditions-bucket-list-travel"
+            <NavLink
+              to="/safaris-expeditions-bucket-list-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Safari & expeditions bucket list travel</NavLink>
+
+              <NavLink
+                to="/luxury-wellness-retreats"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Safari & expeditions bucket list travel</NavLink>
+                Luxury Wellness Retreats</NavLink>
+
+                 <NavLink
+                  to="/philanthropic-purpose-driven-travel"
+                  className="nav-dropdown-single"
+                  onClick={toggleMenu}
+                >
+                  Philanthropic Purpose-Driven Travel</NavLink>
+
+                   <NavLink
+                    to="/luxury-cruises-for-affluent-families"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Luxury Cruises For Affluent Families</NavLink>
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

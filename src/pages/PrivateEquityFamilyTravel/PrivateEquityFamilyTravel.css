@@ -212,6 +212,28 @@
     margin-bottom: 24px;
 }
 
+.medi-intro-readmore-btn {
+    background: transparent;
+    border: none;
+    color: var(--pe-gold);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.medi-intro-readmore-btn:hover {
+    color: var(--pe-gold-hover);
+    letter-spacing: 0.22em;
+}
+
 /* Angela Hughes signature side panel */
 .medi-premium-signature-panel {
     background: linear-gradient(135deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
@@ -498,13 +520,16 @@
     .pe-privacy-split-card {
         grid-template-columns: 1fr;
     }
+
     .pe-privacy-image-side {
         height: 350px;
         order: -1;
     }
+
     .pe-privacy-image-overlay {
         background: linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, transparent 100%);
     }
+
     .pe-privacy-content-side {
         padding: 40px;
     }
@@ -927,16 +952,16 @@
     .medi-hero-main-title {
         font-size: 48px;
     }
-    
+
     .medi-premium-intro-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .pe-different-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .pe-legacy-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -951,17 +976,17 @@
     .medi-section-heading {
         font-size: 32px !important;
     }
-    
+
     .medi-hero-main-title {
         font-size: 36px;
         margin-bottom: 20px;
     }
-    
+
     .medi-hero-subtitle-text {
         font-size: 18px;
         margin-bottom: 30px;
     }
-    
+
     .medi-intro-section,
     .pe-different-section,
     .pe-privacy-section,
@@ -971,23 +996,23 @@
     .medi-cta-main-section {
         padding: 60px 16px;
     }
-    
+
     .medi-premium-heading {
         font-size: 30px;
     }
-    
+
     .pe-privacy-heading {
         font-size: 28px;
     }
-    
+
     .medi-cta-heading-white {
         font-size: 30px;
     }
-    
+
     .medi-cta-considerations-box {
         padding: 20px;
     }
-    
+
     .medi-cta-considerations-list {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -999,26 +1024,26 @@
     .pe-different-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .pe-legacy-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .pe-services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .medi-cta-button-group {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .medi-primary-cta-button,
     .medi-secondary-outline-button {
         width: 100%;
         justify-content: center;
     }
-    
+
     .medi-premium-signature-panel {
         padding: 24px;
     }

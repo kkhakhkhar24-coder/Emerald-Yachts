@@ -112,6 +112,9 @@ import Luxuryfamilycelebrations from "./pages/Luxuryfamilycelebrations/Luxuryfam
 import Privatejetconciergetravel from "./pages/Privatejetconciergetravel/Privatejetconciergetravel";
 import Privatevillasexclusiveresorts from "./pages/Privatevillasexclusiveresorts/Privatevillasexclusiveresorts";
 import Safarisexpeditionsbucketlisttravel from "./pages/Safarisexpeditionsbucketlisttravel/Safarisexpeditionsbucketlisttravel";
+import Luxurywellnessretreats from "./pages/Luxurywellnessretreats/Luxurywellnessretreats";
+import Philanthropicpurposedriventravel from "./pages/Philanthropicpurposedriventravel/Philanthropicpurposedriventravel";
+import Luxurycruisesforaffluentfamilies from "./pages/Luxurycruisesforaffluentfamilies/Luxurycruisesforaffluentfamilies";
 
 function App() {
   return (
@@ -553,7 +556,7 @@ function App() {
             element={< Exploravsscenic />}
           />
 
-           <Route
+          <Route
             path="/explora-vs-ponant"
             element={< Exploravsponant />}
           />
@@ -580,37 +583,52 @@ function App() {
 
           <Route
             path="/family-office-travel-planning"
-            element={<Familyofficetravelplanning/>}
+            element={<Familyofficetravelplanning />}
           />
 
           <Route
             path="/executive-family-retreats"
-            element={<Executivefamilyretreats/>}
+            element={<Executivefamilyretreats />}
           />
 
           <Route
             path="//family-governance-retreats"
-            element={<Familygovernanceretreats/>}
+            element={<Familygovernanceretreats />}
           />
 
           <Route
             path="/luxury-family-celebrations"
-            element={<Luxuryfamilycelebrations/>}
+            element={<Luxuryfamilycelebrations />}
           />
 
           <Route
             path="/private-jet-concierge-travel"
-            element={<Privatejetconciergetravel/>}
+            element={<Privatejetconciergetravel />}
           />
 
           <Route
             path="/private-villas-exclusive-resorts"
-            element={<Privatevillasexclusiveresorts/>}
+            element={<Privatevillasexclusiveresorts />}
           />
 
           <Route
             path="/safaris-expeditions-bucket-list-travel"
-            element={<Safarisexpeditionsbucketlisttravel/>}
+            element={<Safarisexpeditionsbucketlisttravel />}
+          />
+
+          <Route
+            path="/luxury-wellness-retreats"
+            element={<Luxurywellnessretreats />}
+          />
+
+          <Route
+            path="/philanthropic-purpose-driven-travel"
+            element={<Philanthropicpurposedriventravel />}
+          />
+
+          <Route
+            path="/luxury-cruises-for-affluent-families"
+            element={<Luxurycruisesforaffluentfamilies />}
           />
 
 

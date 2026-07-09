@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './PrivateJetConciergeTravel.css'
+import './Privatejetconciergetravel.css'
 import {
     Shield, Plane, PlaneTakeoff, Ship, Compass, Heart, Star, Anchor, Calendar, Gem, Globe,
     Utensils, Sun, Briefcase, Home, UserCheck, Building2, Car, Lock, MessageCircle,
@@ -45,14 +45,14 @@ function PrivateJetConciergeTravel() {
     }
 
     const experiencesList = [
-        { title: "Private yacht charters", icon: <Anchor size={22} /> },
-        { title: "Wine tastings", icon: <Wine size={22} /> },
-        { title: "Cultural tours", icon: <Compass size={22} /> },
-        { title: "Golf experiences", icon: <Flag size={22} /> },
-        { title: "Wildlife safaris", icon: <PawPrint size={22} /> },
-        { title: "Helicopter excursions", icon: <Navigation size={22} /> },
-        { title: "Private museum access", icon: <Landmark size={22} /> },
-        { title: "Culinary experiences", icon: <Utensils size={22} /> }
+        { title: "Private yacht charters", desc: "Navigate pristine waters on exclusive private vessels.", icon: <Anchor size={24} /> },
+        { title: "Wine tastings", desc: "Sip private reserve vintages with master sommeliers.", icon: <Wine size={24} /> },
+        { title: "Cultural tours", desc: "Deep dive into local traditions with private local guides.", icon: <Compass size={24} /> },
+        { title: "Golf experiences", desc: "Tee off at championship courses with priority slot booking.", icon: <Flag size={24} /> },
+        { title: "Wildlife safaris", desc: "Encounter raw nature with certified luxury trackers.", icon: <PawPrint size={24} /> },
+        { title: "Helicopter excursions", desc: "Savor breathtaking aerial vistas via chartered helicopters.", icon: <Navigation size={24} /> },
+        { title: "Private museum access", desc: "Explore world heritage after-hours, free of crowds.", icon: <Landmark size={24} /> },
+        { title: "Culinary experiences", desc: "Indulge in Michelin-starred menus by private chefs.", icon: <Utensils size={24} /> }
     ]
 
     const pjcFaqs = [
@@ -475,40 +475,43 @@ function PrivateJetConciergeTravel() {
             </section>
 
             {/* ============================ PRIVATE AVIATION COORDINATION ============================ */}
-            <section
-                className="pjc-aviation-section"
-                /* style={{ backgroundImage: `url('${aviationBannerImage}')` }} */
-            >
+            <section className="pjc-aviation-section">
                 <div className="pjc-aviation-overlay"></div>
                 <div className="pjc-aviation-container">
-                    <span className="pjc-aviation-eyebrow">
-                        <Plane size={14} /> Aviation Coordination
-                    </span>
-                    <h2 className="pjc-aviation-heading">Private Aviation Coordination</h2>
-                    <p className="pjc-aviation-p">
-                        Our travel advisors coordinate every aspect of private air travel. We work closely with trusted aviation partners to deliver seamless travel experiences.
-                    </p>
-                </div>
+                    <div className="pjc-aviation-header">
+                        <span className="pjc-aviation-eyebrow">
+                            <Plane size={14} /> Aviation Coordination
+                        </span>
+                        <h2 className="pjc-aviation-heading">Private Aviation Coordination</h2>
+                        <div className="pjc-aviation-separator"></div>
+                        <p className="pjc-aviation-p">
+                            Our travel advisors coordinate every aspect of private air travel. We work closely with trusted aviation partners to deliver seamless travel experiences.
+                        </p>
+                    </div>
 
-                <div className="pjc-aviation-ticker-wrap">
-                    <div className="pjc-aviation-ticker">
+                    <div className="pjc-aviation-grid">
                         {[
-                            { label: "Private jet charters", icon: <Plane size={16} /> },
-                            { label: "Aircraft selection", icon: <CheckCircle size={16} /> },
-                            { label: "Flight scheduling", icon: <Calendar size={16} /> },
-                            { label: "International flight coordination", icon: <Globe size={16} /> },
-                            { label: "Airport slot management", icon: <MapPin size={16} /> },
-                            { label: "Ground handling", icon: <Car size={16} /> },
-                            { label: "FBO services", icon: <Building2 size={16} /> },
-                            { label: "Luxury ground transportation", icon: <Car size={16} /> }
+                            { label: "Private jet charters", icon: <Plane size={22} /> },
+                            { label: "Aircraft selection", icon: <CheckCircle size={22} /> },
+                            { label: "Flight scheduling", icon: <Calendar size={22} /> },
+                            { label: "International flight coordination", icon: <Globe size={22} /> },
+                            { label: "Airport slot management", icon: <MapPin size={22} /> },
+                            { label: "Ground handling", icon: <Car size={22} /> },
+                            { label: "FBO services", icon: <Building2 size={22} /> },
+                            { label: "Luxury ground transportation", icon: <Car size={22} /> }
                         ].map((item, idx) => (
-                            <span key={idx} className="pjc-aviation-pill">
-                                {item.icon}
-                                {item.label}
-                            </span>
+                            <div key={idx} className="pjc-aviation-card">
+                                <div className="pjc-aviation-icon-wrapper">
+                                    {item.icon}
+                                </div>
+                                <p className="pjc-aviation-card-label">{item.label}</p>
+                            </div>
                         ))}
                     </div>
-                    <p className="pjc-aviation-outro">Services include the above and more, tailored to every itinerary.</p>
+
+                    <p className="pjc-aviation-outro">
+                        Services include the above and more, tailored to every itinerary.
+                    </p>
                 </div>
             </section>
 
@@ -550,72 +553,77 @@ function PrivateJetConciergeTravel() {
             {/* ============================ LUXURY ACCOMMODATIONS ============================ */}
             <section className="pjc-accom-section">
                 <div className="pjc-accom-container">
-                    <h2 className="medi-section-heading">Luxury Accommodations</h2>
-                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                    <div className="pjc-accom-grid">
+                        
+                        <div className="pjc-accom-image-column">
+                            <div className="pjc-accom-image-wrapper">
+                                <img src="https://placehold.co/800x1000?text=Luxury+Accommodations" alt="Luxury suite accommodation" className="pjc-accom-image" />
+                                <div className="pjc-accom-image-badge">
+                                    <Home size={18} />
+                                    <span>Vetted Luxury Estates</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    <p className="pjc-accom-p">
-                        Your accommodations should reflect the same level of comfort and exclusivity as your journey.
-                    </p>
-                    <p className="pjc-accom-lead">We arrange:</p>
+                        <div className="pjc-accom-content-column">
+                            <span className="pjc-accom-eyebrow">ACCOMMODATIONS & RETREATS</span>
+                            <h2 className="pjc-accom-heading">Luxury Accommodations</h2>
+                            <div className="pjc-accom-separator"></div>
+                            
+                            <p className="pjc-accom-p">
+                                Your accommodations should reflect the same level of comfort and exclusivity as your journey.
+                            </p>
+                            <p className="pjc-accom-lead">We arrange:</p>
 
-                    <div
-                        className="pjc-accom-image-stage"
-                        /* style={{ backgroundImage: `url('${accommodationsImage}')` }} */
-                    >
-                        <div className="pjc-accom-image-tint"></div>
-                        {[
-                            { label: "Five-star hotels", icon: <Star size={14} />, pos: 1 },
-                            { label: "Luxury resorts", icon: <Sun size={14} />, pos: 2 },
-                            { label: "Private villas", icon: <Home size={14} />, pos: 3 },
-                            { label: "Boutique properties", icon: <Gem size={14} />, pos: 4 },
-                            { label: "Private islands", icon: <Palmtree size={14} />, pos: 5 },
-                            { label: "Safari lodges", icon: <PawPrint size={14} />, pos: 6 },
-                            { label: "Luxury cruise suites", icon: <Ship size={14} />, pos: 7 },
-                            { label: "Exclusive residences", icon: <Building2 size={14} />, pos: 8 }
-                        ].map((pin, idx) => (
-                            <span key={idx} className={`pjc-accom-pin pjc-accom-pin-${pin.pos}`}>
-                                <span className="pjc-accom-pin-icon">{pin.icon}</span>
-                                {pin.label}
-                            </span>
-                        ))}
+                            <div className="pjc-accom-list-grid">
+                                {[
+                                    { label: "Five-star hotels", icon: <Star size={18} /> },
+                                    { label: "Luxury resorts", icon: <Sun size={18} /> },
+                                    { label: "Private villas", icon: <Home size={18} /> },
+                                    { label: "Boutique properties", icon: <Gem size={18} /> },
+                                    { label: "Private islands", icon: <Palmtree size={18} /> },
+                                    { label: "Safari lodges", icon: <PawPrint size={18} /> },
+                                    { label: "Luxury cruise suites", icon: <Ship size={18} /> },
+                                    { label: "Exclusive residences", icon: <Building2 size={18} /> }
+                                ].map((item, idx) => (
+                                    <div key={idx} className="pjc-accom-item-card">
+                                        <div className="pjc-accom-item-icon-box">
+                                            {item.icon}
+                                        </div>
+                                        <span className="pjc-accom-item-label">{item.label}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <p className="pjc-accom-outro">
+                                Every property is selected based on your preferences and travel objectives.
+                            </p>
+                        </div>
+
                     </div>
-
-                    <p className="pjc-accom-outro">
-                        Every property is selected based on your preferences and travel objectives.
-                    </p>
                 </div>
             </section>
 
             {/* ============================ EXCLUSIVE EXPERIENCES ============================ */}
             <section className="pjc-experiences-section">
                 <div className="pjc-experiences-container">
-                    <h2 className="medi-section-heading">Exclusive Experiences</h2>
-                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
-
-                    <p className="pjc-experiences-p">
-                        Luxury travel is about creating unforgettable moments.
-                    </p>
-                    <p className="pjc-experiences-lead">Popular experiences include:</p>
-
-                    <div className="pjc-experiences-orbit-wrap">
-                        <div
-                            className="pjc-experiences-center-image"
-                            /* style={{ backgroundImage: `url('${experiencesCenterImage}')` }} */
-                        ></div>
-                        {experiencesList.map((item, idx) => (
-                            <div key={idx} className={`pjc-experiences-node pjc-experiences-node-${idx + 1}`}>
-                                <div className="pjc-experiences-node-icon">{item.icon}</div>
-                                <span className="pjc-experiences-node-label">{item.title}</span>
-                            </div>
-                        ))}
+                    <div className="pjc-experiences-header">
+                        <span className="pjc-experiences-eyebrow">CURATED ADVENTURES</span>
+                        <h2 className="medi-section-heading">Exclusive Experiences</h2>
+                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <p className="pjc-experiences-p">
+                            Luxury travel is about creating unforgettable moments. We handcraft unique activities tailored to your passions.
+                        </p>
                     </div>
 
-                    {/* Mobile fallback (orbit hides under 768px via CSS) */}
-                    <div className="pjc-experiences-mobile-list">
+                    <div className="pjc-experiences-grid">
                         {experiencesList.map((item, idx) => (
-                            <div key={idx} className="pjc-experiences-mobile-item">
-                                <div className="pjc-experiences-mobile-icon">{item.icon}</div>
-                                <span className="pjc-experiences-mobile-label">{item.title}</span>
+                            <div key={idx} className="pjc-experiences-card">
+                                <div className="pjc-experiences-icon-box">
+                                    {item.icon}
+                                </div>
+                                <h3 className="pjc-experiences-card-title">{item.title}</h3>
+                                <p className="pjc-experiences-card-desc">{item.desc}</p>
                             </div>
                         ))}
                     </div>

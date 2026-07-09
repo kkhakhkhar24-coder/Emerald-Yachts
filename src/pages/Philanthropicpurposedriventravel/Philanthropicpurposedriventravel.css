@@ -1,0 +1,1168 @@
+/* ============================================================
+   PHILANTHROPIC & PURPOSE-DRIVEN TRAVEL — PAGE STYLES
+   Prefix: ppd-
+   Shared elements (hero, faq, cta, expert editorial, section
+   heading/separator) reuse the medi- classes imported from
+   AzamaraMediterraneanCruises.css. Colors, fonts and spacing
+   below intentionally match that shared design system.
+   ============================================================ */
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+
+.ppd-intro-section {
+    position: relative;
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.ppd-intro-leaf-one {
+    position: absolute;
+    top: -110px;
+    left: -110px;
+    width: 340px;
+    height: 340px;
+    border-radius: 42% 58% 60% 40% / 55% 45% 55% 45%;
+    background: rgba(39, 68, 114, 0.07);
+    pointer-events: none;
+}
+
+.ppd-intro-leaf-two {
+    position: absolute;
+    bottom: -130px;
+    right: -110px;
+    width: 380px;
+    height: 380px;
+    border-radius: 58% 42% 45% 55% / 45% 55% 45% 55%;
+    background: rgba(39, 68, 114, 0.06);
+    pointer-events: none;
+}
+
+.ppd-intro-container {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-intro-lead-para {
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 24px 0;
+}
+
+.ppd-intro-body-para {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #475569;
+    margin: 0 0 36px 0;
+}
+
+.ppd-intro-highlight-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 28px 32px;
+    text-align: left;
+    border-left: 4px solid var(--medi-navy);
+}
+
+.ppd-intro-highlight-icon {
+    flex-shrink: 0;
+    color: var(--medi-navy);
+    margin-top: 2px;
+}
+
+.ppd-intro-highlight-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--medi-navy);
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ppd-intro-section { padding: 80px 20px; }
+    .ppd-intro-lead-para { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+    .ppd-intro-section { padding: 64px 18px; }
+    .ppd-intro-lead-para { font-size: 19px; }
+    .ppd-intro-body-para { font-size: 16px; }
+    .ppd-intro-highlight-box { padding: 22px 22px; flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-intro-section { padding: 52px 16px; }
+    .ppd-intro-lead-para { font-size: 18px; }
+    .ppd-intro-highlight-text { font-size: 15px; }
+}
+
+/* ============================================================
+   WHY CHOOSE PURPOSE-DRIVEN TRAVEL
+   ============================================================ */
+
+.ppd-why-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.ppd-why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-why-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 12px;
+}
+
+.ppd-why-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.ppd-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.ppd-why-card {
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ppd-why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(15, 28, 46, 0.12);
+}
+
+.ppd-why-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppd-why-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.ppd-why-closing-para {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .ppd-why-section { padding: 80px 20px; }
+    .ppd-why-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .ppd-why-section { padding: 64px 18px; }
+    .ppd-why-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .ppd-why-card { padding: 22px 16px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-why-section { padding: 52px 14px; }
+    .ppd-why-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ppd-why-icon-box { width: 44px; height: 44px; }
+    .ppd-why-card-text { font-size: 14px; }
+}
+
+/* ============================================================
+   FAMILY PHILANTHROPY THROUGH TRAVEL (image + content split)
+   ============================================================ */
+
+.ppd-family-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.ppd-family-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ppd-family-image-block {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(15, 28, 46, 0.14);
+    aspect-ratio: 4/5;
+}
+
+.ppd-family-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ppd-family-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(15, 28, 46, 0.55) 100%);
+}
+
+.ppd-family-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-navy-light);
+    margin-bottom: 14px;
+}
+
+.ppd-family-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--medi-navy);
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.ppd-family-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+}
+
+.ppd-family-lead-para {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.ppd-family-subtext {
+    font-size: 16px;
+    color: #475569;
+    margin: 0 0 20px;
+}
+
+.ppd-family-list {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 20px;
+}
+
+.ppd-family-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--medi-navy);
+    font-weight: 500;
+}
+
+.ppd-family-list-icon {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.ppd-family-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ppd-family-section { padding: 80px 20px; }
+    .ppd-family-container { grid-template-columns: 1fr; gap: 40px; }
+    .ppd-family-image-block { aspect-ratio: 16/9; }
+    .ppd-family-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .ppd-family-section { padding: 64px 18px; }
+    .ppd-family-list { grid-template-columns: 1fr; }
+    .ppd-family-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-family-section { padding: 52px 14px; }
+    .ppd-family-heading { font-size: 24px; }
+    .ppd-family-lead-para { font-size: 16px; }
+}
+
+/* ============================================================
+   WILDLIFE & CONSERVATION EXPERIENCES (staggered diagonal gallery)
+   ============================================================ */
+
+.ppd-conservation-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.ppd-conservation-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-conservation-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-navy);
+    margin-bottom: 10px;
+}
+
+.ppd-conservation-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.ppd-conservation-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.ppd-conservation-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.ppd-conservation-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    box-shadow: 0 12px 28px rgba(15, 28, 46, 0.1);
+}
+
+.ppd-cons-card-2,
+.ppd-cons-card-4,
+.ppd-cons-card-6,
+.ppd-cons-card-8 {
+    margin-top: 32px;
+}
+
+.ppd-conservation-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.ppd-conservation-card:hover .ppd-conservation-img {
+    transform: scale(1.08);
+}
+
+.ppd-conservation-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.05) 45%, rgba(15, 28, 46, 0.85) 100%);
+}
+
+.ppd-conservation-icon-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppd-conservation-label {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.ppd-conservation-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 44px auto 0;
+}
+
+@media (max-width: 1024px) {
+    .ppd-conservation-section { padding: 80px 20px; }
+    .ppd-conservation-gallery { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .ppd-cons-card-2, .ppd-cons-card-4, .ppd-cons-card-6, .ppd-cons-card-8 { margin-top: 0; }
+}
+
+@media (max-width: 768px) {
+    .ppd-conservation-section { padding: 64px 18px; }
+    .ppd-conservation-gallery { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-conservation-section { padding: 52px 14px; }
+    .ppd-conservation-gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .ppd-conservation-label { font-size: 12px; }
+}
+
+/* ============================================================
+   EDUCATION & CULTURAL EXCHANGE (masonry columns)
+   ============================================================ */
+
+.ppd-education-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.ppd-education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-education-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-navy);
+    margin-bottom: 10px;
+}
+
+.ppd-education-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.ppd-education-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.ppd-education-masonry {
+    columns: 4;
+    column-gap: 16px;
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.ppd-education-tile {
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.ppd-education-tile:nth-child(3n+1) { aspect-ratio: 3/4; }
+.ppd-education-tile:nth-child(3n+2) { aspect-ratio: 1/1; }
+.ppd-education-tile:nth-child(3n) { aspect-ratio: 4/5; }
+
+.ppd-education-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.ppd-education-tile:hover .ppd-education-img {
+    transform: scale(1.08);
+}
+
+.ppd-education-tile-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0) 45%, rgba(15, 28, 46, 0.82) 100%);
+}
+
+.ppd-education-tile-content {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ppd-education-tile-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ppd-education-tile-label {
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.ppd-education-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .ppd-education-section { padding: 80px 20px; }
+    .ppd-education-masonry { columns: 3; }
+}
+
+@media (max-width: 768px) {
+    .ppd-education-section { padding: 64px 18px; }
+    .ppd-education-masonry { columns: 2; column-gap: 12px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-education-section { padding: 52px 14px; }
+    .ppd-education-masonry { columns: 2; column-gap: 10px; }
+    .ppd-education-tile-label { font-size: 12px; }
+}
+
+/* ============================================================
+   HUMANITARIAN & COMMUNITY PROJECTS (dark)
+   ============================================================ */
+
+.ppd-humanitarian-section {
+    background: var(--medi-navy);
+    padding: 100px 20px;
+}
+
+.ppd-humanitarian-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-humanitarian-icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.ppd-humanitarian-heading {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.ppd-humanitarian-separator {
+    width: 60px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 auto 24px;
+}
+
+.ppd-humanitarian-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 640px;
+    margin: 0 auto 30px;
+}
+
+.ppd-humanitarian-list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.ppd-humanitarian-list-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.ppd-humanitarian-list-icon {
+    color: #ffffff;
+}
+
+.ppd-humanitarian-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ppd-humanitarian-section { padding: 80px 20px; }
+    .ppd-humanitarian-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .ppd-humanitarian-section { padding: 64px 18px; }
+    .ppd-humanitarian-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-humanitarian-section { padding: 52px 14px; }
+    .ppd-humanitarian-heading { font-size: 24px; }
+    .ppd-humanitarian-list-item { font-size: 13px; padding: 9px 14px; }
+}
+
+/* ============================================================
+   LUXURY ACCOMMODATIONS WITH PURPOSE (reverse split)
+   ============================================================ */
+
+.ppd-accommodations-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.ppd-accommodations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ppd-accommodations-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-navy);
+    margin-bottom: 14px;
+}
+
+.ppd-accommodations-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--medi-navy);
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+}
+
+.ppd-accommodations-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 24px;
+}
+
+.ppd-accommodations-lead-para {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.ppd-accommodations-subtext {
+    font-size: 16px;
+    color: #475569;
+    margin: 0 0 20px;
+}
+
+.ppd-accommodations-pills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.ppd-accommodations-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.14);
+    border-radius: 999px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--medi-navy);
+}
+
+.ppd-accommodations-pill-icon {
+    color: var(--medi-navy);
+}
+
+.ppd-accommodations-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+.ppd-accommodations-image-block {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(15, 28, 46, 0.14);
+    aspect-ratio: 4/5;
+}
+
+.ppd-accommodations-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ppd-accommodations-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(15, 28, 46, 0.6) 100%);
+}
+
+.ppd-accommodations-badge {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--medi-navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 999px;
+}
+
+@media (max-width: 1024px) {
+    .ppd-accommodations-section { padding: 80px 20px; }
+    .ppd-accommodations-container { grid-template-columns: 1fr; gap: 40px; }
+    .ppd-accommodations-image-block { order: -1; aspect-ratio: 16/9; }
+    .ppd-accommodations-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .ppd-accommodations-section { padding: 64px 18px; }
+    .ppd-accommodations-heading { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-accommodations-section { padding: 52px 14px; }
+    .ppd-accommodations-heading { font-size: 24px; }
+    .ppd-accommodations-pill { font-size: 13px; padding: 8px 13px; }
+}
+
+/* ============================================================
+   SUSTAINABLE LUXURY TRAVEL
+   ============================================================ */
+
+.ppd-sustainable-section {
+    background: var(--medi-bg-white);
+    padding: 100px 20px;
+}
+
+.ppd-sustainable-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-sustainable-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.ppd-sustainable-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.ppd-sustainable-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.ppd-sustainable-card {
+    background: var(--medi-bg-soft);
+    border-radius: 16px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ppd-sustainable-card:hover {
+    transform: translateY(-6px);
+    background: var(--medi-navy);
+}
+
+.ppd-sustainable-card:hover .ppd-sustainable-icon-box {
+    background: #ffffff;
+    color: var(--medi-navy);
+}
+
+.ppd-sustainable-card:hover .ppd-sustainable-card-text {
+    color: #ffffff;
+}
+
+.ppd-sustainable-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ppd-sustainable-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.ppd-sustainable-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .ppd-sustainable-section { padding: 80px 20px; }
+    .ppd-sustainable-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .ppd-sustainable-section { padding: 64px 18px; }
+    .ppd-sustainable-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-sustainable-section { padding: 52px 14px; }
+    .ppd-sustainable-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ppd-sustainable-card { padding: 22px 14px; }
+    .ppd-sustainable-card-text { font-size: 14px; }
+}
+
+/* ============================================================
+   CONCIERGE PLANNING FOR PURPOSEFUL JOURNEYS (dark)
+   ============================================================ */
+
+.ppd-concierge-section {
+    background: var(--medi-bg-dark);
+    background-image: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.ppd-concierge-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ppd-concierge-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--medi-bg-soft);
+    margin-bottom: 10px;
+}
+
+.ppd-separator-light {
+    background: var(--medi-bg-soft) !important;
+}
+
+.ppd-concierge-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.ppd-concierge-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 36px;
+}
+
+.ppd-concierge-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.ppd-concierge-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 26px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.ppd-concierge-num {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.14);
+}
+
+.ppd-concierge-icon-box {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--medi-navy-light);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppd-concierge-card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.ppd-concierge-closing-para {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .ppd-concierge-section { padding: 80px 20px; }
+    .ppd-concierge-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .ppd-concierge-section { padding: 64px 18px; }
+    .ppd-concierge-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-concierge-section { padding: 52px 14px; }
+    .ppd-concierge-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .ppd-concierge-card { padding: 20px 12px 16px; }
+    .ppd-concierge-card-text { font-size: 13px; }
+}
+
+/* ============================================================
+   WHY CHOOSE TRIPS & SHIPS
+   ============================================================ */
+
+.ppd-whychoose-section {
+    background: var(--medi-bg-soft);
+    padding: 100px 20px;
+}
+
+.ppd-whychoose-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ppd-whychoose-lead-para {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 720px;
+    margin: 0 auto 10px;
+}
+
+.ppd-whychoose-subtext {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 32px;
+}
+
+.ppd-whychoose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.ppd-whychoose-card {
+    position: relative;
+    background: var(--medi-bg-white);
+    border-radius: 16px;
+    padding: 30px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+}
+
+.ppd-whychoose-accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--medi-navy);
+}
+
+.ppd-whychoose-icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--medi-navy);
+    color: var(--medi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppd-whychoose-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.ppd-whychoose-closing-para {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #475569;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .ppd-whychoose-section { padding: 80px 20px; }
+    .ppd-whychoose-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .ppd-whychoose-section { padding: 64px 18px; }
+    .ppd-whychoose-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .ppd-whychoose-section { padding: 52px 14px; }
+    .ppd-whychoose-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ppd-whychoose-card { padding: 22px 14px 18px; }
+    .ppd-whychoose-card-text { font-size: 14px; }
+}
+
+/* ============================================================
+   EDITORIAL SECTION TITLE OVERRIDE (philanthropic travel context)
+   ============================================================ */
+
+.ppd-editorial-section .medi-editorial-title {
+    max-width: 620px;
+}

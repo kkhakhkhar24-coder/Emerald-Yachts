@@ -23,6 +23,7 @@ function PrivateEquityFamilyTravel() {
     }, [heroImages.length])
 
     const [activeFaq, setActiveFaq] = useState(null)
+    const [isIntroReadMore, setIsIntroReadMore] = useState(false)
 
     const toggleFaq = (index) => {
         setActiveFaq(activeFaq === index ? null : index)
@@ -317,7 +318,7 @@ function PrivateEquityFamilyTravel() {
                 <div className="medi-premium-intro-glow-two"></div>
                 <div className="medi-intro-container">
                     <div className="medi-premium-intro-grid">
-                        
+
                         {/* Left Side: Content */}
                         <div>
                             <span className="medi-premium-mini-badge">EXECUTIVE FAMILY VACATIONS</span>
@@ -327,12 +328,24 @@ function PrivateEquityFamilyTravel() {
                             <p className="medi-premium-lead-text">
                                 Families involved in private equity often lead fast-paced lives filled with demanding schedules, international business commitments, and significant responsibilities. Vacation time is valuable—not simply as a chance to relax, but as an opportunity to reconnect, celebrate milestones, strengthen family relationships, and create meaningful memories across generations.
                             </p>
-                            <p className="medi-intro-desc-text">
-                                At Trips & Ships Luxury Travel, we specialize in designing luxury travel experiences for private equity professionals, founders, executives, family offices, and multi-generational families. Every itinerary is customized with privacy, flexibility, security, and personalized service in mind, ensuring that every journey is seamless from departure to return.
-                            </p>
-                            <p className="medi-intro-desc-text">
-                                Whether you're planning a private yacht charter in the Mediterranean, a family safari in Africa, an exclusive villa in Italy, or a luxury cruise through Northern Europe, our advisors handle every detail so you can focus on spending quality time together.
-                            </p>
+
+                            {isIntroReadMore && (
+                                <>
+                                    <p className="medi-intro-desc-text">
+                                        At Trips & Ships Luxury Travel, we specialize in designing luxury travel experiences for private equity professionals, founders, executives, family offices, and multi-generational families. Every itinerary is customized with privacy, flexibility, security, and personalized service in mind, ensuring that every journey is seamless from departure to return.
+                                    </p>
+                                    <p className="medi-intro-desc-text">
+                                        Whether you're planning a private yacht charter in the Mediterranean, a family safari in Africa, an exclusive villa in Italy, or a luxury cruise through Northern Europe, our advisors handle every detail so you can focus on spending quality time together.
+                                    </p>
+                                </>
+                            )}
+
+                            <button
+                                className="medi-intro-readmore-btn"
+                                onClick={() => setIsIntroReadMore(!isIntroReadMore)}
+                            >
+                                {isIntroReadMore ? 'Read Less' : 'Read More'}
+                            </button>
                         </div>
 
                         {/* Right Side: Signature Expert Panel */}
@@ -409,7 +422,7 @@ function PrivateEquityFamilyTravel() {
             <section className="pe-privacy-section">
                 <div className="pe-privacy-container">
                     <div className="pe-privacy-split-card">
-                        
+
                         {/* Text Content */}
                         <div className="pe-privacy-content-side">
                             <span className="pe-privacy-eyebrow">
@@ -506,7 +519,7 @@ function PrivateEquityFamilyTravel() {
                     </div>
 
                     <div className="pe-services-grid">
-                        
+
                         {/* Executive Retreats */}
                         <div className="pe-services-card">
                             {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600')` }}>
