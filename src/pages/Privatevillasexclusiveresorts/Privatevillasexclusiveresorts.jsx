@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
-import './PrivateVillasExclusiveResorts.css'
+import './Privatevillasexclusiveresorts.css'
+
 
 // import hero1 from '../../assets/PrivateVillasExclusiveResorts/hero1.jpg'
 // import hero2 from '../../assets/PrivateVillasExclusiveResorts/hero2.jpg'

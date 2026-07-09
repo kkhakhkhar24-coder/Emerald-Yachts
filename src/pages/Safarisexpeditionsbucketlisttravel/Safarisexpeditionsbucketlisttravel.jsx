@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './SafarisExpeditionsBucketListTravel.css'
+import './Safarisexpeditionsbucketlisttravel.css'
 import {
     Compass, Users, Globe, Calendar, Sparkles, Camera,
     Ship, Anchor, Mountain, Home, Star, Phone,
