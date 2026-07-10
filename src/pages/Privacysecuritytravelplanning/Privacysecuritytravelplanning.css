@@ -1,0 +1,881 @@
+/* ============================================================
+   PRIVACY & SECURITY TRAVEL PLANNING — PAGE STYLES
+   Prefix: psec- (all classnames unique to this page)
+   ============================================================ */
+
+:root {
+    --psec-navy: #274472;
+    --psec-navy-light: #274472cc;
+    --psec-bg-white: #ffffff;
+    --psec-bg-soft: rgb(231, 243, 245);
+    --psec-bg-dark: #0f1c2e;
+    --psec-bg-dark2: #1c2f4a;
+    --psec-green: #10b981;
+
+    /* Text palette */
+    --psec-text-main: #3d4a5c;
+    --psec-text-muted: #475569;
+    --psec-text-subtle: #334155;
+    --psec-text-dark: #2d3748;
+    --psec-text-light: #cbd5e1;
+    --psec-text-white: #e2e8f0;
+    --psec-text-pure: #ffffff;
+
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES
+   ============================================================ */
+
+.psec-page-wrapper {
+    overflow-x: hidden;
+}
+
+.psec-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--psec-navy);
+}
+
+.psec-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--psec-navy);
+    margin-bottom: 32px;
+}
+
+.psec-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.psec-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--psec-navy);
+    background: var(--psec-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.psec-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--psec-text-main);
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .psec-section-heading { font-size: 34px !important; text-align: center; }
+    .psec-heading-bar { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 480px) {
+    .psec-section-heading { font-size: 26px !important; }
+    .psec-lead-paragraph { font-size: 16px; }
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.psec-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.psec-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+}
+
+.psec-hero-slide.psec-slide-active {
+    opacity: 1;
+}
+
+.psec-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.psec-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.psec-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.psec-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--psec-bg-soft);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.psec-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: var(--psec-text-pure);
+    text-align: center;
+    max-width: 940px;
+}
+
+.psec-hero-subtitle {
+    font-size: 22px;
+    color: var(--psec-text-white);
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.psec-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.psec-btn-primary {
+    background: var(--psec-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.psec-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.psec-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.psec-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .psec-hero-title { font-size: 42px; }
+    .psec-hero-subtitle { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+    .psec-hero-title { font-size: 32px; }
+    .psec-hero-content { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-hero-title { font-size: 26px; }
+    .psec-hero-subtitle { font-size: 15px; margin-bottom: 28px; }
+    .psec-hero-tag { font-size: 12px; }
+    .psec-btn-primary, .psec-btn-outline { padding: 12px 22px; font-size: 14px; width: 100%; justify-content: center; }
+    .psec-hero-btn-row { width: 100%; flex-direction: column; }
+}
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+.psec-intro-section {
+    background: var(--psec-bg-white);
+    padding: 100px 20px;
+}
+
+.psec-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.psec-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.psec-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(15, 28, 46, 0.18);
+}
+
+.psec-intro-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 420px;
+}
+
+.psec-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 14px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--psec-navy);
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 10px 24px rgba(15, 28, 46, 0.15);
+}
+
+.psec-intro-highlight-box {
+    background: var(--psec-bg-soft);
+    border-left: 4px solid var(--psec-navy);
+    border-radius: 0 8px 8px 0;
+    padding: 22px 26px;
+    margin-top: 26px;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--psec-text-dark);
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .psec-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+    .psec-intro-image-frame { order: -1; }
+    .psec-intro-image-frame img { min-height: 320px; }
+}
+
+@media (max-width: 768px) {
+    .psec-intro-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-intro-section { padding: 44px 14px; }
+    .psec-intro-highlight-box { padding: 16px 18px; font-size: 15px; }
+}
+
+/* ============================================================
+   WHY PRIVACY MATTERS — FEATURE GRID
+   ============================================================ */
+.psec-why-section {
+    background: linear-gradient(180deg, var(--psec-bg-dark) 0%, var(--psec-bg-dark2) 100%);
+    padding: 100px 20px;
+    position: relative;
+}
+
+.psec-why-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.psec-why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.psec-why-header .psec-section-heading {
+    color: var(--psec-text-pure) !important;
+}
+
+.psec-why-header .psec-lead-paragraph {
+    color: var(--psec-text-light);
+}
+
+.psec-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.psec-why-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.psec-why-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.psec-why-icon-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--psec-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--psec-text-pure);
+}
+
+.psec-why-card-text {
+    color: var(--psec-text-white);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .psec-why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .psec-why-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-why-grid { grid-template-columns: 1fr; gap: 14px; }
+    .psec-why-card { padding: 20px 16px; }
+}
+
+/* ============================================================
+   REUSABLE SPLIT SERVICE SECTIONS
+   (Confidential Planning / Private Aviation / Ground Transport /
+   Family Privacy)
+   ============================================================ */
+.psec-service-section {
+    padding: 90px 20px;
+    background: var(--psec-bg-white);
+}
+
+.psec-service-section.psec-service-soft {
+    background: var(--psec-bg-soft);
+}
+
+.psec-service-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.psec-service-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.psec-service-grid.psec-service-reverse {
+    grid-template-columns: 1.05fr 0.95fr;
+}
+
+.psec-service-grid.psec-service-reverse .psec-service-media {
+    order: 2;
+}
+
+.psec-service-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.psec-service-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 16px 34px rgba(15, 28, 46, 0.14);
+}
+
+.psec-service-media .psec-media-tall {
+    grid-row: span 2;
+    height: 100%;
+    min-height: 340px;
+}
+
+.psec-service-media .psec-media-short {
+    min-height: 162px;
+}
+
+.psec-service-eyebrow {
+    color: var(--psec-navy);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.psec-service-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--psec-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.25;
+}
+
+.psec-service-intro {
+    font-size: 17px;
+    color: var(--psec-text-muted);
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+}
+
+.psec-service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 0 24px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.psec-service-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--psec-text-subtle);
+    font-weight: 500;
+}
+
+.psec-service-list-icon {
+    color: var(--psec-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.psec-service-footnote {
+    background: rgba(39, 68, 114, 0.06);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: var(--psec-text-subtle);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .psec-service-grid,
+    .psec-service-grid.psec-service-reverse {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+    .psec-service-grid.psec-service-reverse .psec-service-media { order: -1; }
+    .psec-service-media { order: -1; }
+    .psec-service-title { text-align: center; }
+    .psec-service-eyebrow { text-align: center; }
+    .psec-service-intro { text-align: center; }
+}
+
+@media (max-width: 768px) {
+    .psec-service-section { padding: 56px 18px; }
+    .psec-service-title { font-size: 26px; }
+    .psec-service-media .psec-media-tall { min-height: 220px; }
+    .psec-service-media .psec-media-short { min-height: 104px; }
+}
+
+@media (max-width: 480px) {
+    .psec-service-section { padding: 40px 14px; }
+    .psec-service-title { font-size: 22px; }
+    .psec-service-list li { font-size: 14px; }
+    .psec-service-media { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
+
+/* ============================================================
+   PRIVATE VILLAS, RESORTS & LUXURY CRUISES — TYPE GRID
+   ============================================================ */
+.psec-stay-section {
+    background: var(--psec-bg-white);
+    padding: 100px 20px;
+}
+
+.psec-stay-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.psec-stay-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.psec-stay-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.psec-stay-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 260px;
+    box-shadow: 0 14px 30px rgba(15, 28, 46, 0.14);
+    transition: transform 0.35s ease;
+}
+
+.psec-stay-card:hover {
+    transform: translateY(-6px);
+}
+
+.psec-stay-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.psec-stay-card:hover img {
+    transform: scale(1.08);
+}
+
+.psec-stay-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0) 40%, rgba(15, 28, 46, 0.85) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+}
+
+.psec-stay-card-name {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.psec-stay-footer-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 46px auto 0;
+    font-size: 17px;
+    color: var(--psec-text-muted);
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .psec-stay-grid { grid-template-columns: repeat(3, 1fr); }
+    .psec-stay-section { padding: 60px 18px; }
+}
+
+@media (max-width: 768px) {
+    .psec-stay-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .psec-stay-card { height: 200px; }
+}
+
+@media (max-width: 480px) {
+    .psec-stay-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .psec-stay-card { height: 150px; }
+    .psec-stay-card-name { font-size: 13px; }
+}
+
+/* ============================================================
+   CONCIERGE SERVICES SECTION
+   ============================================================ */
+.psec-concierge-section {
+    background: var(--psec-bg-soft);
+    padding: 100px 20px;
+}
+
+.psec-concierge-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.psec-concierge-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.psec-concierge-pill {
+    background: var(--psec-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.15);
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--psec-navy);
+    box-shadow: 0 6px 16px rgba(15, 28, 46, 0.06);
+}
+
+@media (max-width: 768px) {
+    .psec-concierge-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-concierge-pill { font-size: 13px; padding: 10px 16px; }
+    .psec-concierge-pills-wrap { gap: 10px; }
+}
+
+/* ============================================================
+   WHY CHOOSE US SECTION
+   ============================================================ */
+.psec-why-us-section {
+    background: var(--psec-bg-white);
+    padding: 100px 20px;
+}
+
+.psec-why-us-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.psec-why-us-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.psec-why-us-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 44px rgba(15, 28, 46, 0.16);
+    display: block;
+}
+
+.psec-why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.psec-why-us-card {
+    background: var(--psec-bg-soft);
+    border-radius: 14px;
+    padding: 26px 20px;
+    text-align: center;
+}
+
+.psec-why-us-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--psec-navy);
+    color: var(--psec-text-pure);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+}
+
+.psec-why-us-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--psec-navy);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .psec-why-us-top { grid-template-columns: 1fr; gap: 34px; }
+    .psec-why-us-grid { grid-template-columns: repeat(2, 1fr); }
+    .psec-why-us-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-why-us-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .psec-why-us-card { padding: 18px 12px; }
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.psec-faq-section {
+    background: var(--psec-bg-soft);
+    padding: 100px 20px;
+}
+
+.psec-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.psec-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.psec-faq-item {
+    background: var(--psec-bg-white);
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.psec-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.psec-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--psec-navy);
+}
+
+.psec-faq-toggle {
+    font-size: 22px;
+    color: var(--psec-navy);
+    flex-shrink: 0;
+}
+
+.psec-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: var(--psec-text-muted);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .psec-faq-section { padding: 60px 18px; }
+    .psec-faq-question-row { font-size: 15px; }
+    .psec-faq-item { padding: 16px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-faq-question-row { font-size: 14px; }
+    .psec-faq-answer { font-size: 14px; }
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.psec-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--psec-bg-dark) 0%, var(--psec-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.psec-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(39, 68, 114, 0.18) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(39, 68, 114, 0.18) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.psec-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.psec-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--psec-text-pure);
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.psec-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--psec-navy-light);
+    margin: 0 auto 28px;
+}
+
+.psec-cta-text {
+    font-size: 17px;
+    color: var(--psec-text-light);
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.psec-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .psec-cta-heading { font-size: 30px; }
+}
+
+@media (max-width: 768px) {
+    .psec-cta-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .psec-cta-heading { font-size: 22px; }
+    .psec-cta-text { font-size: 14px; }
+    .psec-cta-btn-row { flex-direction: column; width: 100%; }
+    .psec-cta-btn-row .psec-btn-primary,
+    .psec-cta-btn-row .psec-btn-outline { width: 100%; justify-content: center; }
+}

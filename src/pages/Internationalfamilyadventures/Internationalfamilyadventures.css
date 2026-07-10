@@ -1,0 +1,1445 @@
+/* ============================================================
+   INTERNATIONAL FAMILY ADVENTURES — PAGE STYLES
+   Prefix: ifad- (all classnames unique to this page)
+   ============================================================ */
+
+:root {
+    --ifad-navy: #274472;
+    --ifad-navy-light: #274472cc;
+    --ifad-bg-white: #ffffff;
+    --ifad-bg-soft: rgb(231, 243, 245);
+    --ifad-bg-dark: #0f1c2e;
+    --ifad-bg-dark2: #1c2f4a;
+    --ifad-green: #10b981;
+    --ifad-gold: var(--ifad-navy);
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES
+   ============================================================ */
+
+.ifad-page-wrapper {
+    overflow-x: hidden;
+}
+
+.ifad-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--ifad-navy);
+}
+
+.ifad-heading-light {
+    color: #ffffff !important;
+}
+
+.ifad-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ifad-navy);
+    margin-bottom: 32px;
+}
+
+.ifad-heading-bar.ifad-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ifad-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ifad-navy);
+    background: var(--ifad-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.ifad-eyebrow-label.ifad-eyebrow-light {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.ifad-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+.ifad-paragraph-light {
+    color: #cbd5e1;
+}
+
+.ifad-benefits-lead {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.ifad-birthday-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ifad-navy);
+    margin-bottom: 16px;
+}
+
+.ifad-eyebrow-icon {
+    color: var(--ifad-navy);
+}
+
+.ifad-footnote-sparkle {
+    color: var(--ifad-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .ifad-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .ifad-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-section-heading {
+        font-size: 26px !important;
+    }
+
+    .ifad-lead-paragraph {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.ifad-btn-primary {
+    background: var(--ifad-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.ifad-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.ifad-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.ifad-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+
+    .ifad-btn-primary,
+    .ifad-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.ifad-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ifad-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+}
+
+.ifad-hero-slide.ifad-slide-active {
+    opacity: 1;
+}
+
+.ifad-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.ifad-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.ifad-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ifad-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ifad-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.ifad-hero-subtitle {
+    font-size: 20px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.ifad-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .ifad-hero-title {
+        font-size: 42px;
+    }
+
+    .ifad-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-hero-title {
+        font-size: 32px;
+    }
+
+    .ifad-hero-content {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-hero-title {
+        font-size: 26px;
+    }
+
+    .ifad-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .ifad-hero-tag {
+        font-size: 12px;
+    }
+
+    .ifad-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION — framed image + floating badge
+   ============================================================ */
+.ifad-intro-section {
+    background: var(--ifad-bg-white);
+    padding: 100px 20px;
+}
+
+.ifad-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-intro-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.ifad-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(15, 28, 46, 0.18);
+}
+
+.ifad-intro-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 420px;
+}
+
+.ifad-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: #ffffff;
+    color: var(--ifad-navy);
+    padding: 14px 22px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 12px 26px rgba(15, 28, 46, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .ifad-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .ifad-intro-image-frame {
+        order: -1;
+    }
+
+    .ifad-intro-copy {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-intro-section {
+        padding: 56px 18px;
+    }
+
+    .ifad-intro-image-frame img {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-intro-section {
+        padding: 44px 14px;
+    }
+
+    .ifad-intro-badge-float {
+        font-size: 12px;
+        padding: 10px 16px;
+        left: 14px;
+        bottom: 14px;
+    }
+}
+
+/* ============================================================
+   WHY CHOOSE INTERNATIONAL FAMILY TRAVEL — full-bleed dark banner
+   ============================================================ */
+.ifad-why-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 110px 20px;
+}
+
+.ifad-why-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.92) 0%, rgba(28, 47, 74, 0.94) 100%);
+    z-index: 0;
+}
+
+.ifad-why-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ifad-why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.ifad-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.ifad-why-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ifad-why-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.ifad-why-icon-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #60a5fa;
+}
+
+.ifad-why-card-text {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ifad-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ifad-why-section {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-why-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-why-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ifad-why-card {
+        padding: 20px 16px;
+    }
+}
+
+/* ============================================================
+   AROUND-THE-WORLD VACATIONS — zigzag journey timeline
+   ============================================================ */
+/* ============================================================
+   AROUND-THE-WORLD VACATIONS — simple grid layout
+   ============================================================ */
+.ifad-journey-section {
+    background-color: var(--ifad-bg-soft);
+    padding: 110px 20px;
+}
+
+.ifad-journey-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ifad-journey-header {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 60px;
+}
+
+.ifad-simple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.ifad-simple-card {
+    background: var(--ifad-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: default;
+}
+
+.ifad-simple-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--ifad-navy);
+    box-shadow: 0 8px 20px rgba(15, 28, 46, 0.08);
+}
+
+.ifad-simple-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 28px 20px;
+    gap: 10px;
+    height: 100%;
+}
+
+.ifad-simple-route-number {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ifad-navy-light);
+    letter-spacing: 0.1em;
+}
+
+.ifad-simple-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ifad-navy);
+}
+
+.ifad-simple-info svg {
+    color: var(--ifad-navy);
+    flex-shrink: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .ifad-simple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-journey-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-simple-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ifad-simple-card-inner {
+        padding: 20px 16px;
+    }
+
+    .ifad-simple-info {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   LUXURY CULTURAL EXPERIENCES — bento masonry collage
+   ============================================================ */
+.ifad-culture-section {
+    background: var(--ifad-bg-white);
+    padding: 110px 20px;
+}
+
+.ifad-culture-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-culture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ifad-culture-bento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 160px 160px;
+    gap: 16px;
+}
+
+.ifad-bento-item {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(15, 28, 46, 0.14);
+}
+
+.ifad-bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ifad-bento-tall {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.ifad-bento-square-1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.ifad-bento-square-2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.ifad-bento-wide {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.ifad-culture-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    margin: 10px 0 0 0;
+}
+
+.ifad-culture-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.ifad-culture-list-icon {
+    color: var(--ifad-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .ifad-culture-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .ifad-culture-copy {
+        text-align: center;
+    }
+
+    .ifad-culture-list {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-culture-section {
+        padding: 60px 18px;
+    }
+
+    .ifad-culture-bento {
+        grid-template-rows: 120px 120px 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-culture-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ifad-culture-bento {
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+    }
+}
+
+/* ============================================================
+   EXTRAORDINARY DESTINATIONS — image-free layout
+   ============================================================ */
+.ifad-dest-section {
+    background-color: #fbf9f6;
+    padding: 110px 20px;
+    position: relative;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.ifad-dest-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-dest-header {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 60px;
+}
+
+.ifad-dest-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.ifad-dest-card {
+    position: relative;
+    padding: 24px 16px;
+    background: var(--ifad-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: default;
+}
+
+.ifad-dest-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--ifad-navy);
+    box-shadow: 0 8px 20px rgba(15, 28, 46, 0.08);
+}
+
+.ifad-dest-icon-container {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--ifad-bg-soft);
+    color: var(--ifad-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.ifad-dest-card:hover .ifad-dest-icon-container {
+    background: var(--ifad-navy);
+    color: var(--ifad-bg-white);
+}
+
+.ifad-dest-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ifad-navy);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .ifad-dest-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-dest-section {
+        padding: 80px 20px;
+    }
+
+    .ifad-dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-dest-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+/* ============================================================
+   LUXURY ACCOMMODATIONS — layered stacked gallery
+   ============================================================ */
+.ifad-stay-section {
+    background: var(--ifad-bg-white);
+    padding: 110px 20px;
+}
+
+.ifad-stay-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-stay-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.ifad-stay-stack {
+    position: relative;
+    height: 520px;
+}
+
+.ifad-stay-stack-item {
+    position: absolute;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.2);
+    border: 6px solid #ffffff;
+}
+
+.ifad-stay-stack-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ifad-stack-1 {
+    width: 62%;
+    height: 62%;
+    top: 0;
+    left: 0;
+    transform: rotate(-4deg);
+    z-index: 1;
+}
+
+.ifad-stack-2 {
+    width: 55%;
+    height: 55%;
+    top: 6%;
+    right: 0;
+    transform: rotate(3deg);
+    z-index: 2;
+}
+
+.ifad-stack-3 {
+    width: 52%;
+    height: 50%;
+    bottom: 0;
+    left: 6%;
+    transform: rotate(2deg);
+    z-index: 3;
+}
+
+.ifad-stack-4 {
+    width: 48%;
+    height: 46%;
+    bottom: 4%;
+    right: 6%;
+    transform: rotate(-3deg);
+    z-index: 4;
+}
+
+.ifad-stay-pill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 20px 0 0 0;
+}
+
+.ifad-stay-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ifad-bg-soft);
+    color: var(--ifad-navy);
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .ifad-stay-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ifad-stay-copy {
+        text-align: center;
+    }
+
+    .ifad-stay-pill-grid {
+        text-align: left;
+    }
+
+    .ifad-stay-stack {
+        max-width: 460px;
+        margin: 0 auto;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-stay-section {
+        padding: 60px 18px;
+    }
+
+    .ifad-stay-stack {
+        height: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-stay-pill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ifad-stay-stack {
+        height: 280px;
+    }
+}
+
+/* ============================================================
+   PERSONALIZED FAMILY EXPERIENCES — showcase split
+   ============================================================ */
+.ifad-showcase-section {
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
+}
+
+.ifad-showcase-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.ifad-showcase-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--ifad-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.25;
+}
+
+.ifad-showcase-intro {
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+}
+
+.ifad-showcase-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0 0 28px 0;
+}
+
+.ifad-showcase-card-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--ifad-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: default;
+}
+
+.ifad-showcase-card-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--ifad-navy);
+    box-shadow: 0 8px 18px rgba(15, 28, 46, 0.06);
+}
+
+.ifad-showcase-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--ifad-bg-soft);
+    color: var(--ifad-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ifad-showcase-card-item:hover .ifad-showcase-icon-wrap {
+    background: var(--ifad-navy);
+    color: var(--ifad-bg-white);
+    transform: rotate(15deg) scale(1.05);
+}
+
+.ifad-showcase-card-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.ifad-showcase-footnote {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.ifad-showcase-media {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(15, 28, 46, 0.18);
+}
+
+.ifad-showcase-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 480px;
+}
+
+.ifad-showcase-media-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: var(--ifad-navy);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .ifad-showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .ifad-showcase-media {
+        order: -1;
+    }
+
+    .ifad-showcase-copy {
+        text-align: center;
+    }
+
+    .ifad-showcase-card-grid {
+        justify-content: center;
+    }
+
+    .ifad-showcase-intro {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-showcase-section {
+        padding: 60px 18px;
+    }
+
+    .ifad-showcase-media img {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-showcase-section {
+        padding: 44px 14px;
+    }
+
+    .ifad-showcase-card-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ifad-showcase-card-item {
+        padding: 12px 14px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+/* ============================================================
+   CONCIERGE TRAVEL PLANNING — full-width banner
+   ============================================================ */
+.ifad-concierge-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 110px 20px;
+    text-align: center;
+}
+
+.ifad-concierge-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 28, 46, 0.92) 0%, rgba(39, 68, 114, 0.9) 100%);
+    z-index: 0;
+}
+
+.ifad-concierge-container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ifad-concierge-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ifad-concierge-pill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .ifad-concierge-section {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-concierge-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-concierge-pill {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+
+/* ============================================================
+   WHY CHOOSE TRIPS & SHIPS — stacked offset frame + icon grid
+   ============================================================ */
+.ifad-why-us-section {
+    background: var(--ifad-bg-white);
+    padding: 110px 20px;
+}
+
+.ifad-why-us-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ifad-why-us-header {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 60px;
+}
+
+.ifad-why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ifad-why-us-card {
+    background: var(--ifad-bg-soft);
+    border-radius: 14px;
+    padding: 26px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ifad-why-us-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(15, 28, 46, 0.12);
+}
+
+.ifad-why-us-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--ifad-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+}
+
+.ifad-why-us-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ifad-navy);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ifad-why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-why-us-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ifad-why-us-card {
+        padding: 20px 16px;
+    }
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.ifad-faq-section {
+    background: var(--ifad-bg-soft);
+    padding: 100px 20px;
+}
+
+.ifad-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ifad-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ifad-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.ifad-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.ifad-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ifad-navy);
+}
+
+.ifad-faq-toggle {
+    font-size: 22px;
+    color: var(--ifad-navy);
+    flex-shrink: 0;
+}
+
+.ifad-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .ifad-faq-section {
+        padding: 60px 18px;
+    }
+
+    .ifad-faq-question-row {
+        font-size: 15px;
+    }
+
+    .ifad-faq-item {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-faq-question-row {
+        font-size: 14px;
+    }
+
+    .ifad-faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.ifad-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--ifad-bg-dark) 0%, var(--ifad-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ifad-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.ifad-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.ifad-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.ifad-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.ifad-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.ifad-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .ifad-cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ifad-cta-section {
+        padding: 70px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ifad-cta-heading {
+        font-size: 22px;
+    }
+
+    .ifad-cta-text {
+        font-size: 14px;
+    }
+
+    .ifad-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ifad-cta-btn-row .ifad-btn-primary,
+    .ifad-cta-btn-row .ifad-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}

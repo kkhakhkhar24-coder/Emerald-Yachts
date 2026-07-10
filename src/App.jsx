@@ -115,6 +115,10 @@ import Safarisexpeditionsbucketlisttravel from "./pages/Safarisexpeditionsbucket
 import Luxurywellnessretreats from "./pages/Luxurywellnessretreats/Luxurywellnessretreats";
 import Philanthropicpurposedriventravel from "./pages/Philanthropicpurposedriventravel/Philanthropicpurposedriventravel";
 import Luxurycruisesforaffluentfamilies from "./pages/Luxurycruisesforaffluentfamilies/Luxurycruisesforaffluentfamilies";
+import Internationalfamilyadventures from "./pages/Internationalfamilyadventures/Internationalfamilyadventures";
+import Businessmilestoneliquidityeventtravel from "./pages/Businessmilestoneliquidityeventtravel/Businessmilestoneliquidityeventtravel";
+import Privacysecuritytravelplanning  from "./pages/Privacysecuritytravelplanning/Privacysecuritytravelplanning";
+import Buildingstrongerfamiliesthroughtravel from "./pages/Buildingstrongerfamiliesthroughtravel/Buildingstrongerfamiliesthroughtravel";
 
 function App() {
   return (
@@ -631,8 +635,25 @@ function App() {
             element={<Luxurycruisesforaffluentfamilies />}
           />
 
+          <Route
+            path="/international-family-adventures"
+            element={<Internationalfamilyadventures />}
+          />
 
+          <Route
+            path="/business-milestone-liquidity-event-travel"
+            element={<Businessmilestoneliquidityeventtravel />}
+          />
 
+          <Route
+          path="/privacy-security-travel-planning"
+          element={<Privacysecuritytravelplanning  />}
+          />
+
+          <Route
+          path="/building-stronger-families-through-travel"
+          element={<Buildingstrongerfamiliesthroughtravel />}
+          />
 
         </Routes>
       </BrowserRouter>

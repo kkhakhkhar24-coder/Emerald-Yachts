@@ -805,9 +805,36 @@ const Navbar = () => {
                   >
                     Luxury Cruises For Affluent Families</NavLink>
 
+                  <NavLink
+                    to="/international-family-adventures"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    International Family Adventures</NavLink>
 
 
+                   <NavLink
+                    to="/business-milestone-liquidity-event-travel"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Business Milestone Liquidity Event Travel</NavLink>
 
+                     <NavLink
+                    to="/privacy-security-travel-planning"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Privacy & security travel planning</NavLink>
+
+                     <NavLink
+                    to="/building-stronger-families-through-travel"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Building stronger families through travel</NavLink>
+
+                    
             </div>
           </div>
         </div>
@@ -1605,6 +1632,34 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     Luxury Cruises For Affluent Families</NavLink>
+
+                     <NavLink
+                    to="/international-family-adventures"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    International Family Adventures</NavLink>
+
+                     <NavLink
+                    to="/business-milestone-liquidity-event-travel"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Business Milestone Liquidity Event Travel</NavLink>
+
+                     <NavLink
+                    to="/privacy-security-travel-planning"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Privacy & security travel planning</NavLink>
+
+                     <NavLink
+                    to="/building-stronger-families-through-travel"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Building stronger families through travel</NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>
