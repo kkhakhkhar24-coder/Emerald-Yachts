@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
-import './BusinessMilestoneLiquidityEventTravel.css'
+import './Businessmilestoneliquidityeventtravel.css'
 
 // import hero1 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero1.jpg'
 // import hero2 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero2.jpg'

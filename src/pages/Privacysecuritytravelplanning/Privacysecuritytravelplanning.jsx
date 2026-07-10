@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './PrivacySecurityTravelPlanning.css'
+import './Privacysecuritytravelplanning.css'
 import {
     ShieldCheck, Users, Globe, Calendar, Sparkles, Lock,
     Home, Star, Phone, CheckCircle, LayoutList, Plane,

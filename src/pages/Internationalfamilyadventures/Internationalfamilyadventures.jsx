@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './InternationalFamilyAdventures.css'
+import './Internationalfamilyadventures.css'
 import {
     Heart, Users, Globe, Calendar, Sparkles, Gift,
     Compass, Home, Star, CheckCircle, Phone, LayoutList,

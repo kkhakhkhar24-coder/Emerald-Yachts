@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './BuildingStrongerFamiliesThroughTravel.css'
+import './Buildingstrongerfamiliesthroughtravel.css'
 
 // import hero1 from '../../assets/BuildingStrongerFamiliesThroughTravel/hero1.jpg'
 // import hero2 from '../../assets/BuildingStrongerFamiliesThroughTravel/hero2.jpg'
