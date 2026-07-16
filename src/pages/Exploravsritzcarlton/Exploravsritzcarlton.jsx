@@ -1,20 +1,20 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Exploravsritzcarlton.css'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-// import hero1 from '../../assets/ExploraVsRitz/hero1.jpg'
-// import hero2 from '../../assets/ExploraVsRitz/hero2.jpg'
-// import hero3 from '../../assets/ExploraVsRitz/hero3.jpg'
-// import cmpIntroImg from '../../assets/ExploraVsRitz/cmp-intro.webp'
-// import exploraOverview from '../../assets/ExploraVsRitz/explora-overview.webp'
-// import ritzOverview from '../../assets/ExploraVsRitz/ritz-overview.webp'
-// import exploraShip from '../../assets/ExploraVsRitz/explora-ship.webp'
-// import ritzYacht from '../../assets/ExploraVsRitz/ritz-yacht.webp'
-// import exploraSuite from '../../assets/ExploraVsRitz/explora-suite.webp'
-// import ritzSuite from '../../assets/ExploraVsRitz/ritz-suite.webp'
-// import exploraDining from '../../assets/ExploraVsRitz/explora-dining.webp'
-// import ritzDining from '../../assets/ExploraVsRitz/ritz-dining.webp'
-// import exploraWellness from '../../assets/ExploraVsRitz/explora-wellness.webp'
-// import ritzWellness from '../../assets/ExploraVsRitz/ritz-wellness.webp'
+import hero1 from '../../assets/Exploravscrystal/hero1.webp'
+import hero2 from '../../assets/Exploravscrystal/hero2.webp'
+import hero3 from '../../assets/Exploravscrystal/hero3.webp'
+import cmpIntroImg from '../../assets/ExploraJourneysVsSilversea/explora-journeys-grand-lobby-staircase-interior (1).webp'
+import exploraOverview from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
+import exploraShip from '../../assets/ExploraJourneysVsSilversea/explora-I-luxury-cruise-ship-exterior-port-view (1).webp'
+import exploraSuite from '../../assets/ExploraJourneysVsSilversea/explora_suite.png'
+import exploraDining from '../../assets/ExploraJourneysVsSilversea/explora_dining.webp'
+import exploraWellness from '../../assets/BestSuitesExploraJourneys/explora-journeys-indoor-hydrotherapy-pool-luxury-spa-experience.jpg'
+import ritzOverview from '../../assets/Exploravsritzcarlton/_IL_2024_Exteriors_003.jpg'
+import ritzYacht from '../../assets/Exploravsritzcarlton/IL_EV_2024_Exteriors_Valletta_007.jpg'
+import ritzSuite from '../../assets/Exploravsritzcarlton/EV_2022_Terrace to Terrace_T2_H.jpg'
+import ritzDining from '../../assets/Exploravsritzcarlton/IL_2024_The Living Room Bar_006.jpg'
+import ritzWellness from '../../assets/Exploravsritzcarlton/LU_2025_Don Riddle_Deck 10 Pool Bar 001.jpg'
+import Profile_Picture_AH from '../../assets/ExploraFAQ/Profile_Picture_AH.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -29,7 +29,7 @@ import { Link } from 'react-router'
 
 function ExploraVsRitzCarlton() {
     const [cmpCurrentHero, setCmpCurrentHero] = useState(0)
-    const cmpHeroImages = []
+    const cmpHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const cmpTimer = setInterval(() => {
@@ -185,7 +185,7 @@ function ExploraVsRitzCarlton() {
 
                         <div className="cmp-intro-image-col">
                             <div className="cmp-image-frame">
-                                {/* <img src={cmpIntroImg} alt="Luxury cruise comparison" className="cmp-frame-img" /> */}
+                                <img src={cmpIntroImg} alt="Luxury cruise comparison" className="cmp-frame-img" />
                                 <div className="cmp-frame-overlay"></div>
                                 <div className="cmp-intro-img-badge">
                                     <Star size={13} />
@@ -260,7 +260,7 @@ function ExploraVsRitzCarlton() {
                                 <span>Explora Journeys Overview</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={exploraOverview} alt="Explora Journeys overview" className="cmp-brand-col-img" /> */}
+                                <img src={exploraOverview} alt="Explora Journeys overview" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -284,7 +284,7 @@ function ExploraVsRitzCarlton() {
                                 <span>Ritz-Carlton Yacht Collection Overview</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={ritzOverview} alt="Ritz-Carlton Yacht Collection overview" className="cmp-brand-col-img" /> */}
+                                <img src={ritzOverview} alt="Ritz-Carlton Yacht Collection overview" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -322,7 +322,7 @@ function ExploraVsRitzCarlton() {
                                 <Ship size={18} /><span>Explora Fleet</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={exploraShip} alt="Explora Journeys ship" className="cmp-brand-col-img" /> */}
+                                <img src={exploraShip} alt="Explora Journeys ship" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                                 <div className="cmp-ship-capacity-badge cmp-badge-explora">
                                     <Users size={14} />
@@ -351,7 +351,7 @@ function ExploraVsRitzCarlton() {
                                 <Anchor size={18} /><span>Ritz-Carlton Yacht Collection Fleet</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={ritzYacht} alt="Ritz-Carlton Yacht Collection yacht" className="cmp-brand-col-img" /> */}
+                                <img src={ritzYacht} alt="Ritz-Carlton Yacht Collection yacht" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                                 <div className="cmp-ship-capacity-badge cmp-badge-ritz">
                                     <Users size={14} />
@@ -396,7 +396,7 @@ function ExploraVsRitzCarlton() {
                                 <Ship size={18} /><span>Explora</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={exploraSuite} alt="Explora Journeys suite" className="cmp-brand-col-img" /> */}
+                                <img src={exploraSuite} alt="Explora Journeys suite" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -417,7 +417,7 @@ function ExploraVsRitzCarlton() {
                                 <Crown size={18} /><span>Ritz-Carlton Yacht Collection</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={ritzSuite} alt="Ritz-Carlton Yacht Collection suite" className="cmp-brand-col-img" /> */}
+                                <img src={ritzSuite} alt="Ritz-Carlton Yacht Collection suite" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -481,7 +481,7 @@ function ExploraVsRitzCarlton() {
                                 <Utensils size={18} /><span>Explora Dining</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={exploraDining} alt="Explora Journeys dining" className="cmp-brand-col-img" /> */}
+                                <img src={exploraDining} alt="Explora Journeys dining" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -502,7 +502,7 @@ function ExploraVsRitzCarlton() {
                                 <Utensils size={18} /><span>Ritz-Carlton Dining</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={ritzDining} alt="Ritz-Carlton Yacht Collection dining" className="cmp-brand-col-img" /> */}
+                                <img src={ritzDining} alt="Ritz-Carlton Yacht Collection dining" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -702,7 +702,7 @@ function ExploraVsRitzCarlton() {
                                 <Sparkles size={18} /><span>Explora</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={exploraWellness} alt="Explora Journeys wellness and spa" className="cmp-brand-col-img" /> */}
+                                <img src={exploraWellness} alt="Explora Journeys wellness and spa" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -721,7 +721,7 @@ function ExploraVsRitzCarlton() {
                                 <Sparkles size={18} /><span>Ritz-Carlton Yacht Collection</span>
                             </div>
                             <div className="cmp-brand-col-image-frame">
-                                {/* <img src={ritzWellness} alt="Ritz-Carlton Yacht Collection wellness" className="cmp-brand-col-img" /> */}
+                                <img src={ritzWellness} alt="Ritz-Carlton Yacht Collection wellness" className="cmp-brand-col-img" />
                                 <div className="cmp-brand-col-img-overlay"></div>
                             </div>
                             <div className="cmp-brand-col-body">
@@ -943,7 +943,7 @@ function ExploraVsRitzCarlton() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">

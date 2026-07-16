@@ -13,7 +13,7 @@ import hero1 from '../../assets/ExploraJourneysVsSilversea/explora_hero.png'
 import hero2 from '../../assets/AzamaravsVikingOcean/hero2.webp'
 import hero3 from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
 import exploraShipImg from '../../assets/BookExplora/explora-journeys-luxury-cruise-ships-sailing-miami.webp'
-import oceaniaShipImg from '../../assets/ExploraFAQ/Hero_3.webp'
+import oceaniaShipImg from '../../assets/ExploravsOceania/Oceania Aurelia - Ship Image_2026-07-03_13-58-49.jpg'
 import exploraDiningImg from '../../assets/ExploraJourneysVsSilversea/explora_dining.webp'
 import oceaniaDiningImg from '../../assets/Azamarashipcomparison/Azamara-Dining-Experience.jpg'
 import exploraSuiteImg from '../../assets/AzamaraCabinsGuide2026/luxury-oceanfront-suite-explora-journeys-interior.jpg'
@@ -25,7 +25,7 @@ import oceaniaDestImg from '../../assets/AzamaraGreeceCruises/luxury-santorini-o
 import exploraInclImg from '../../assets/ExploraFAQ/Explora_Cruises_Inclusive.webp'
 import oceaniaInclImg from '../../assets/AzamaraCruisesGuide/Simplified_Inclusions.webp'
 import exploraVerdictImg from '../../assets/BestSuitesExploraJourneys/EXPLORA_sailing_in_Miami.webp'
-import oceaniaVerdictImg from '../../assets/Azamarashipcomparison/Azamara-night.webp'
+import oceaniaVerdictImg from '../../assets/ExploravsOceania/Oceania Aurelia - Horizon Lounge_2026-07-03_13-58-37.jpg'
 import Profile_AH from '../../assets/Media (2).jpg';
 import Profile_Picture_AH from '../../assets/ExploraFAQ/Profile_Picture_AH.jpg'
 import { Link } from 'react-router'
@@ -148,7 +148,7 @@ function ExploraVsOceania() {
             },
             oceania: {
                 heading: 'Oceania Fleet',
-                // img: oceaniaShipImg,
+                img: oceaniaShipImg,
                 items: ['Marina', 'Riviera', 'Vista', 'Allura', 'Nautica', 'Regatta', 'Insignia', 'Sirena'],
                 highlights: ['Mid-sized luxury ships', 'Elegant public spaces', 'Culinary-focused venues', 'Destination-rich itineraries', 'Comfortable atmosphere'],
                 stat: '670–1,250 Guests per ship'
