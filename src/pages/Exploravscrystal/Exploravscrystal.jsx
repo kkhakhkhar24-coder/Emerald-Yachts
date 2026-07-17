@@ -11,24 +11,25 @@ import {
 import { Link } from 'react-router'
 
 // ── Real assets ───────────────────────────
-import hero1 from '../../assets/Exploravscrystal/hero1.webp'
-import hero2 from '../../assets/Exploravscrystal/hero2.webp'
-import hero3 from '../../assets/Exploravscrystal/hero3.webp'
+import hero1 from '../../assets/Exploravscrystal/st-maarten-caribbean-coastal-resort-aerial-island-waterfront-view.webp'
+import hero2 from '../../assets/Exploravscrystal/el-arco-cabo-san-lucas-rock-formation-sunset-baja-california-mexico.webp'
+import hero3 from '../../assets/Exploravscrystal/luxury-catamaran-sailing-turquoise-caribbean-sea-tropical-island-vacation.webp'
 
-import exploraShipImg from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
-import exploraSuiteImg from '../../assets/ExploraJourneysVsSilversea/explora_suite.png'
+import exploraIntroImg from '../../assets/ExploraJourneysVsSilversea/Explora_Journeys.webp'
+import exploraShipImg from '../../assets/ExploraJourneysVsSilversea/explora_ship_overview.png'
+import exploraSuiteImg from '../../assets/BestSuitesExploraJourneys/explora-journeys-private-suite-balcony-breakfast-ocean-view.jpg'
 import exploraDiningImg from '../../assets/ExploraJourneysVsSilversea/explora_dining.webp'
-import exploraWellnessImg from '../../assets/BestSuitesExploraJourneys/explora-journeys-indoor-hydrotherapy-pool-luxury-spa-experience.jpg'
+import exploraWellnessImg from '../../assets/ExploraJourneysVsSilversea/explora-journeys-helios-pool-spa-sundeck (1).webp'
 import exploraDestinationImg from '../../assets/ExploraJourneysVsSilversea/explora_destination.webp'
-import exploraServiceImg from '../../assets/ExploraJourneysVsSilversea/explora-journeys-grand-lobby-staircase-interior (1).webp'
-import exploraEntertainmentImg from '../../assets/BestSuitesExploraJourneys/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg'
-import exploraVerdictImg from '../../assets/ExploraJourneysVsSilversea/explora-I-luxury-pool-deck-close-up (1).webp'
+import exploraServiceImg from '../../assets/ExploraJourneysVsSilversea/Explora_Atmosphere.jpeg'
+import exploraEntertainmentImg from '../../assets/BestSuitesExploraJourneys/xplora-III-outdoor-sky-lounge-ocean-deck.webp'
+import exploraVerdictImg from '../../assets/BestSuitesExploraJourneys/EXPLORA_sailing_in_Miami.webp'
 
-import crystalShipImg from '../../assets/Exploravscrystal/crystal-suite.webp'
-import crystalSuiteImg from '../../assets/Exploravscrystal/crystal-suite.webp'
-import crystalDiningImg from '../../assets/Exploravscrystal/crystal-suite.webp'
-import crystalServiceImg from '../../assets/Exploravscrystal/crystal-suite.webp'
-import crystalEntImg from '../../assets/Exploravscrystal/crystal-ship.webp'
+import crystalShipImg from '../../assets/Exploravscrystal/crystal-serenity-luxury-ocean-cruise-ship-open-sea-voyage.webp'
+import crystalSuiteImg from '../../assets/Exploravscrystal/overwater-bungalows-coastal-lagoon-caribbean-island-aerial-vacation.webp'
+import crystalDiningImg from '../../assets/Exploravscrystal/boston-oyster-house-sign-downtown-boston-massachusetts-food-district.webp'
+import crystalServiceImg from '../../assets/Exploravscrystal/historic-portuguese-heritage-house-mumbai-india-cultural-landmark.webp'
+import crystalEntImg from '../../assets/Exploravscrystal/french-quarter-new-orleans-historic-balcony-architecture-louisiana.webp'
 
 import Profile_AH from '../../assets/Profile_AH.jpg'
 
@@ -341,7 +342,7 @@ function ExploraVsCrystal() {
                         {/* Explora card */}
                         <div className="evc-intro-card evc-card-explora">
                             <div className="evc-intro-img-wrap">
-                                <img src={exploraShipImg} alt="Explora Journeys Ship" className="evc-intro-img" />
+                                <img src={exploraIntroImg} alt="Explora Journeys" className="evc-intro-img" />
                                 <div className="evc-intro-img-overlay"></div>
                                 <span className="evc-intro-img-badge">EXPLORA JOURNEYS</span>
                             </div>
