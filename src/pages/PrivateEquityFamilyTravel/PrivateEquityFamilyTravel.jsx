@@ -7,12 +7,40 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Import SEO images
+import heroAviationImg from '../../assets/seo_images/private-helicopter-transfer-luxury-travel-concierge-villa-arrival-service.webp'
+import heroYachtImg from '../../assets/seo_images/private-yacht-arrival-luxury-concierge-travel-vip-marina-welcome.webp'
+import heroVillaImg from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+
+import privacyImg from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
+
+// Legacy Section Images
+import legacyEuropeImg from '../../assets/seo_images/multigenerational-family-vacation-rome-colosseum-luxury-italy-travel.webp'
+import legacySafariImg from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
+import legacyYachtImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
+import legacyChristmasImg from '../../assets/seo_images/cologne-christmas-market-gothic-cathedral-germany-holiday-river-cruise.webp'
+
+import legacyAlaskaImg from '../../assets/seo_images/alaska-expedition-cruise.png'
+import legacyGalapagosImg from '../../assets/seo_images/galapagos-adventure.png'
+import legacySkiImg from '../../assets/seo_images/luxury-ski-vacation.png'
+
+// Services Images
+import svcRetreatsImg from '../../assets/seo_images/family-governance-retreat-luxury-mountain-lodge-private-family-office-meeting.webp'
+import svcOfficeImg from '../../assets/seo_images/luxury-family-travel-consultation-private-vacation-planning-with-travel-advisor.webp'
+import svcJetImg from '../../assets/seo_images/private-helicopter-transfer-luxury-travel-concierge-villa-arrival-service.webp'
+import svcCruisesImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
+import svcSafarisImg from '../../assets/seo_images/luxury-african-safari-lodge-elephant-watering-hole-wildlife-view-family-travel.webp'
+import svcWellnessImg from '../../assets/seo_images/luxury-wellness-retreat-spa-with-ocean-view-infinity-pool-private-resort.webp'
+import svcCelebrationsImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import svcConciergeImg from '../../assets/seo_images/luxury-resort-personalized-concierge-vip-hotel-check-in-experience.webp'
+import { Link } from 'react-router'
+
 function PrivateEquityFamilyTravel() {
     const [heroIndex, setHeroIndex] = useState(0)
     const heroImages = [
-        // "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1600", // Private Jet
-        // "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=1600", // Luxury Yacht
-        // "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600"  // Luxury Villa
+        heroAviationImg,
+        heroYachtImg,
+        heroVillaImg
     ]
 
     useEffect(() => {
@@ -288,7 +316,8 @@ function PrivateEquityFamilyTravel() {
 
             <Navbar />
 
-            {/* HERO SECTION */}
+            <div className="private-equity-page-wrapper">
+                {/* HERO SECTION */}
             <section className="medi-hero-section">
                 {heroImages.map((img, idx) => (
                     <div
@@ -456,12 +485,12 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Image Side */}
-                        {/* <div 
+                        <div 
                             className="pe-privacy-image-side" 
-                            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1618083707368-b3823daa2726?q=80&w=1200')` }}
+                            style={{ backgroundImage: `url(${privacyImg})` }}
                         >
                             <div className="pe-privacy-image-overlay"></div>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>
@@ -471,7 +500,7 @@ function PrivateEquityFamilyTravel() {
             <section className="pe-legacy-section">
                 <div className="pe-legacy-container">
                     <div className="pe-legacy-intro">
-                        <h2 className="medi-section-heading">Building a Family Legacy Through Travel</h2>
+                        <h2 className="medi-section-heading">Building a Family Legacy <br /> Through Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p className="pe-legacy-desc">
                             Luxury travel offers more than relaxation—it creates opportunities to build lasting family traditions and strengthen relationships across generations.
@@ -481,24 +510,29 @@ function PrivateEquityFamilyTravel() {
                         </p>
                     </div>
 
-                    <div className="pe-legacy-grid">
+                    <div className="pe-legacy-editorial-grid">
                         {[
-                            { title: "European cultural tours", img: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600" },
-                            { title: "African safaris", img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=600" },
-                            { title: "Mediterranean yacht charters", img: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=600" },
-                            { title: "Alaska expedition cruises", img: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600" },
-                            { title: "Galápagos adventures", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600" },
-                            { title: "Christmas market river cruises", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600" },
-                            { title: "Luxury ski vacations", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600" }
+                            { title: "European Cultural Tours", img: legacyEuropeImg, num: "01", icon: <Globe size={20} />, desc: "Immersive heritage journeys through historic cities and landmarks." },
+                            { title: "African Safaris", img: legacySafariImg, num: "02", icon: <Compass size={20} />, desc: "Bespoke private game drives and luxury conservation lodging." },
+                            { title: "Mediterranean Yacht Charters", img: legacyYachtImg, num: "03", icon: <Anchor size={20} />, desc: "Private sailing routes along exclusive coastal waters and islands." },
+                            { title: "Alaska Expedition Cruises", img: legacyAlaskaImg, num: "04", icon: <Ship size={20} />, desc: "Untamed glacial wilderness explored in ultimate modern comfort." },
+                            { title: "Galápagos Adventures", img: legacyGalapagosImg, num: "05", icon: <Sparkles size={20} />, desc: "Close-up encounters with rare endemic wildlife in absolute luxury." },
+                            { title: "Christmas Market River Cruises", img: legacyChristmasImg, num: "06", icon: <Calendar size={20} />, desc: "Enchanting winter voyages through Europe's historic riverside capitals." },
+                            { title: "Luxury Ski Vacations", img: legacySkiImg, num: "07", icon: <Gem size={20} />, desc: "Exquisite private chalets nestled in premier Alpine slopes." }
                         ].map((card, idx) => (
-                            <div key={idx} className="pe-legacy-card">
-                                {/* <div 
-                                    className="pe-legacy-card-bg" 
-                                    style={{ backgroundImage: `url('${card.img}')` }}
-                                /> */}
-                                <div className="pe-legacy-card-overlay"></div>
-                                <div className="pe-legacy-card-content">
-                                    <h4 className="pe-legacy-card-title">{card.title}</h4>
+                            <div key={idx} className={`pe-legacy-editorial-card card-span-${idx + 1}`}>
+                                <div 
+                                    className="pe-legacy-editorial-bg" 
+                                    style={{ backgroundImage: `url(${card.img})` }}
+                                />
+                                <div className="pe-legacy-editorial-overlay"></div>
+                                <div className="pe-legacy-editorial-badge">
+                                    <span className="pe-legacy-badge-num">{card.num}</span>
+                                    <div className="pe-legacy-badge-icon">{card.icon}</div>
+                                </div>
+                                <div className="pe-legacy-editorial-content">
+                                    <h4 className="pe-legacy-editorial-title">{card.title}</h4>
+                                    <p className="pe-legacy-editorial-desc">{card.desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -518,19 +552,19 @@ function PrivateEquityFamilyTravel() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="pe-services-grid">
+                    <div className="pe-services-grid-new">
 
                         {/* Executive Retreats */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Briefcase size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Executive Retreats</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcRetreatsImg})` }}>
+                                <div className="pe-services-card-badge-new"><Briefcase size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Executive Retreats</h3>
+                                <p className="pe-services-text-new">
                                     Many successful executives use travel as an opportunity to recharge while maintaining productivity when necessary. We balance relaxation with professional flexibility.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Luxury accommodations",
                                         "Wellness experiences",
@@ -539,8 +573,8 @@ function PrivateEquityFamilyTravel() {
                                         "Spa treatments",
                                         "Outdoor adventures"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -549,16 +583,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Family Office Travel Management */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Users size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Family Office Travel</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcOfficeImg})` }}>
+                                <div className="pe-services-card-badge-new"><Users size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Family Office Travel</h3>
+                                <p className="pe-services-text-new">
                                     Family offices often coordinate travel for multiple generations, assistants, advisors, and household staff. We become an extension of your trusted team.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Group itinerary management",
                                         "Flight coordination",
@@ -567,8 +601,8 @@ function PrivateEquityFamilyTravel() {
                                         "Dining reservations",
                                         "Last-minute itinerary adjustments"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -577,16 +611,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Private Jet Travel */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1490430657723-4d607c1503fc?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Plane size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Private Jet Travel</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcJetImg})` }}>
+                                <div className="pe-services-card-badge-new"><Plane size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Private Jet Travel</h3>
+                                <p className="pe-services-text-new">
                                     For many private equity families, private aviation provides unmatched convenience, flexibility, and privacy, minimizing travel stress.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Flexible departure schedules",
                                         "Direct flights & Private terminals",
@@ -594,8 +628,8 @@ function PrivateEquityFamilyTravel() {
                                         "Customized catering",
                                         "Pet-friendly travel"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -604,16 +638,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Luxury Cruises */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Ship size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Luxury Cruises</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcCruisesImg})` }}>
+                                <div className="pe-services-card-badge-new"><Ship size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Luxury Cruises</h3>
+                                <p className="pe-services-text-new">
                                     Luxury cruises combine exceptional accommodations with effortless travel between multiple destinations. Recommended partners include Explora Journeys, Regent Seven Seas Cruises, Silversea Cruises, Seabourn, Crystal Cruises, Scenic Luxury Cruises, and Viking Cruises.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "World-class dining",
                                         "Spacious suites",
@@ -621,8 +655,8 @@ function PrivateEquityFamilyTravel() {
                                         "Enriching shore excursions",
                                         "Attentive personalized service"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -631,16 +665,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Private Safaris */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Compass size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Private Safaris</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcSafarisImg})` }}>
+                                <div className="pe-services-card-badge-new"><Compass size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Private Safaris</h3>
+                                <p className="pe-services-text-new">
                                     African safaris create unforgettable experiences for families. Destinations include South Africa, Botswana, Kenya, Tanzania, Namibia, and Rwanda, tailored to your family's comfort level.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Private game drives",
                                         "Luxury safari lodges & walking safaris",
@@ -648,8 +682,8 @@ function PrivateEquityFamilyTravel() {
                                         "Conservation experiences",
                                         "Family-friendly guides"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -658,16 +692,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Wellness Retreats */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Heart size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Wellness Retreats</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcWellnessImg})` }}>
+                                <div className="pe-services-card-badge-new"><Heart size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Wellness Retreats</h3>
+                                <p className="pe-services-text-new">
                                     Wellness travel has become increasingly important for executives seeking balance between demanding careers and personal well-being.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Luxury spa resorts & thermal spas",
                                         "Yoga & Meditation retreats",
@@ -675,8 +709,8 @@ function PrivateEquityFamilyTravel() {
                                         "Holistic wellness treatments",
                                         "Digital detox experiences"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -685,16 +719,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Family Celebrations */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Award size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Family Celebrations</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcCelebrationsImg})` }}>
+                                <div className="pe-services-card-badge-new"><Award size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Family Celebrations</h3>
+                                <p className="pe-services-text-new">
                                     Life's biggest milestones deserve unforgettable destinations. We plan milestones personalized to reflect your family's traditions and style.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Anniversary & birthday celebrations",
                                         "Graduation & retirement trips",
@@ -702,8 +736,8 @@ function PrivateEquityFamilyTravel() {
                                         "Holiday gatherings",
                                         "Wedding anniversaries"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -712,16 +746,16 @@ function PrivateEquityFamilyTravel() {
                         </div>
 
                         {/* Concierge Services */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Sparkles size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Concierge Services</h3>
-                                <p className="pe-services-text">
+                        <div className="pe-services-card-new">
+                            <div className="pe-services-image-new" style={{ backgroundImage: `url(${svcConciergeImg})` }}>
+                                <div className="pe-services-card-badge-new"><Sparkles size={16} /></div>
+                            </div>
+                            <div className="pe-services-body-new">
+                                <h3 className="pe-services-title-new">Concierge Services</h3>
+                                <p className="pe-services-text-new">
                                     Our concierge services ensure every detail is handled before, during, and after your trip. No request is too small when creating extraordinary travel experiences.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="pe-services-bullets-new">
                                     {[
                                         "Restaurant reservations & private chefs",
                                         "Private guides & yacht charters",
@@ -729,8 +763,8 @@ function PrivateEquityFamilyTravel() {
                                         "Spa appointments & luxury transport",
                                         "Last-minute itinerary changes"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="pe-services-bullet-new">
+                                            <CheckCircle size={14} className="pe-services-bullet-icon-new" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -810,10 +844,10 @@ function PrivateEquityFamilyTravel() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -822,6 +856,7 @@ function PrivateEquityFamilyTravel() {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }

@@ -7,12 +7,41 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Import SEO images
+import heroFamilyImg from '../../assets/seo_images/luxury-multigenerational-family-dinner-seaside-private-villa-mediterranean-vacation.webp'
+import heroSceneryImg from '../../assets/seo_images/luxury-wellness-retreat-infinity-pool-private-spa-villa-ocean-view.webp'
+import heroVillaImg from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
+
+
+import privacyImg from '../../assets/seo_images/multigenerational-family-beach-vacation-luxury-tropical-family-travel.webp'
+
+// Legacy Section Images
+import legacyHolidayImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
+import legacyReunionImg from '../../assets/seo_images/multigenerational-luxury-family-vacation-oceanfront-villa-private-resort.webp'
+import legacyRiverImg from '../../assets/seo_images/douro-river-cruise-porto-portugal-luxury-river-vacation.webp'
+import legacyYachtImg from '../../assets/seo_images/private-yacht-arrival-luxury-concierge-travel-vip-marina-welcome.webp'
+import legacyChristmasImg from '../../assets/seo_images/cologne-christmas-market-gothic-cathedral-germany-holiday-river-cruise.webp'
+
+import legacyCelebrationImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import legacyNationalParkImg from '../../assets/seo_images/national-park-adventure.png'
+import legacySkiImg from '../../assets/seo_images/luxury-ski-vacation.png'
+
+// Services Images
+import svcMultiGenImg from '../../assets/seo_images/luxury-family-dining-private-oceanfront-villa-multigenerational-travel-experience.webp'
+import svcVillaImg from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import svcCruiseImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
+import svcSafariImg from '../../assets/seo_images/luxury-african-safari-lodge-elephant-watering-hole-wildlife-view-family-travel.webp'
+import svcCultureImg from '../../assets/seo_images/multigenerational-family-walking-through-tuscan-village-luxury-italy-vacation.webp'
+import svcMilestoneImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import svcConciergeImg from '../../assets/seo_images/luxury-travel-advisor-personalized-vacation-planning-private-consultation.webp'
+import { Link } from 'react-router'
+
 function FamilyLegacyTravel() {
     const [heroIndex, setHeroIndex] = useState(0)
     const heroImages = [
-        // "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600", // Family gathered together
-        // "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600", // Serene scenery
-        // "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600"  // Luxury villa courtyard
+        heroFamilyImg,
+        heroSceneryImg,
+        heroVillaImg
     ]
 
     useEffect(() => {
@@ -287,8 +316,9 @@ function FamilyLegacyTravel() {
 
             <Navbar />
 
-            {/* HERO SECTION */}
-            <section className="medi-hero-section">
+            <div className="family-legacy-page-wrapper">
+                {/* HERO SECTION */}
+                <section className="medi-hero-section">
                 {heroImages.map((img, idx) => (
                     <div
                         key={idx}
@@ -364,35 +394,58 @@ function FamilyLegacyTravel() {
             {/* WHY FAMILY LEGACY TRAVEL MATTERS */}
             <section className="pe-different-section">
                 <div className="pe-different-container">
-                    <h2 className="medi-section-heading">Why Family Legacy Travel Matters</h2>
-                    <div className="medi-heading-separator-bar"></div>
+                    <div className="pe-different-row-grid">
+                        
+                        {/* Left Side: Content & Callout */}
+                        <div className="pe-different-text-col">
+                            <h2 className="medi-section-heading">Why Family Legacy Travel Matters</h2>
+                            <div className="medi-heading-separator-bar"></div>
 
-                    <p className="pe-different-lead">
-                        Today's successful families often live in different cities, states, or even countries. Busy careers, school schedules, and daily responsibilities can make quality family time increasingly rare.
-                    </p>
-                    <p className="pe-different-desc">
-                        Travel provides an opportunity to slow down, reconnect, and create experiences that become part of your family's story. Rather than exchanging gifts, many families are choosing to invest in shared adventures that inspire learning, strengthen relationships, and create traditions that continue year after year.
-                    </p>
+                            <p className="pe-different-lead">
+                                Today's successful families often live in different cities, states, or even countries. Busy careers, school schedules, and daily responsibilities can make quality family time increasingly rare.
+                            </p>
+                            <p className="pe-different-desc">
+                                Travel provides an opportunity to slow down, reconnect, and create experiences that become part of your family's story. Rather than exchanging gifts, many families are choosing to invest in shared adventures that inspire learning, strengthen relationships, and create traditions that continue year after year.
+                            </p>
 
-                    <div className="pe-different-grid">
-                        {[
-                            { title: "Inspire Learning & Traditions", icon: <BookOpen size={22} /> },
-                            { title: "Strengthen Intergenerational Bonds", icon: <Users size={22} /> },
-                            { title: "Shared Legacy & Storytelling", icon: <Flame size={22} /> }
-                        ].map((item, idx) => (
-                            <div key={idx} className="pe-different-card">
-                                <div className="pe-different-icon-wrapper">
-                                    {item.icon}
-                                </div>
-                                <span className="pe-different-title">{item.title}</span>
+                            <div className="pe-different-callout">
+                                <p className="pe-different-callout-text">
+                                    Family legacy travel is about creating moments that become stories told for decades.
+                                </p>
                             </div>
-                        ))}
-                    </div>
+                        </div>
 
-                    <div className="pe-different-callout">
-                        <p className="pe-different-callout-text">
-                            Family legacy travel is about creating moments that become stories told for decades.
-                        </p>
+                        {/* Right Side: Vertical Cards Stack */}
+                        <div className="pe-different-cards-col">
+                            {[
+                                { 
+                                    title: "Inspire Learning & Traditions", 
+                                    icon: <BookOpen size={24} />, 
+                                    desc: "Enrich younger generations with heritage tours and historical context." 
+                                },
+                                { 
+                                    title: "Strengthen Intergenerational Bonds", 
+                                    icon: <Users size={24} />, 
+                                    desc: "Foster meaningful ties between grandparents, parents, and children." 
+                                },
+                                { 
+                                    title: "Shared Legacy & Storytelling", 
+                                    icon: <Flame size={24} />, 
+                                    desc: "Carry forward precious values and family milestones through shared adventures." 
+                                }
+                            ].map((item, idx) => (
+                                <div key={idx} className="pe-different-card-horizontal">
+                                    <div className="pe-different-icon-wrapper">
+                                        {item.icon}
+                                    </div>
+                                    <div className="pe-different-card-content">
+                                        <h4 className="pe-different-card-title">{item.title}</h4>
+                                        <p className="pe-different-card-desc">{item.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -420,12 +473,12 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Image Side */}
-                        {/* <div
+                        <div
                             className="pe-privacy-image-side"
-                            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200')` }}
+                            style={{ backgroundImage: `url(${privacyImg})` }}
                         >
                             <div className="pe-privacy-image-overlay"></div>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>
@@ -435,32 +488,37 @@ function FamilyLegacyTravel() {
             <section className="pe-legacy-section">
                 <div className="pe-legacy-container">
                     <div className="pe-legacy-intro">
-                        <h2 className="medi-section-heading">Creating Family Traditions Through Travel</h2>
+                        <h2 className="medi-section-heading">Creating Family Traditions <br /> Through Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                         <p className="pe-legacy-desc">
                             Many families establish annual or milestone trips that become treasured traditions.
                         </p>
                     </div>
 
-                    <div className="pe-legacy-grid">
+                    <div className="pe-legacy-mosaic-grid">
                         {[
-                            { title: "Annual holiday vacations", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600" },
-                            { title: "Summer family reunions", img: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600" },
-                            { title: "European river cruises", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600" },
-                            { title: "Mediterranean yacht charters", img: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=600" },
-                            { title: "Christmas Market cruises", img: "https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600" },
-                            { title: "National park adventures", img: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600" },
-                            { title: "Luxury ski vacations", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600" },
-                            { title: "Birthday celebrations abroad", img: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600" }
+                            { title: "Annual Holiday Vacations", img: legacyHolidayImg, num: "01", icon: <Sun size={20} />, desc: "Cherished annual breaks to relax and reflect together as a family." },
+                            { title: "Summer Family Reunions", img: legacyReunionImg, num: "02", icon: <Users size={20} />, desc: "Summertime gatherings at exclusive oceanfront villas and private resorts." },
+                            { title: "European River Cruises", img: legacyRiverImg, num: "03", icon: <Ship size={20} />, desc: "Scenic river routes linking history, cuisine, and local culture." },
+                            { title: "Mediterranean Yacht Charters", img: legacyYachtImg, num: "04", icon: <Anchor size={20} />, desc: "Cruising coastal islands and hidden coves in absolute privacy." },
+                            { title: "Christmas Market Cruises", img: legacyChristmasImg, num: "05", icon: <Calendar size={20} />, desc: "Enchanting winter cruises visiting Europe's traditional holiday markets." },
+                            { title: "National Park Adventures", img: legacyNationalParkImg, num: "06", icon: <Compass size={20} />, desc: "Active exploration of historic trails and wilderness." },
+                            { title: "Luxury Ski Vacations", img: legacySkiImg, num: "07", icon: <Gem size={20} />, desc: "Private chalet retreats near premier ski fields and winter resorts." },
+                            { title: "Birthday Celebrations Abroad", img: legacyCelebrationImg, num: "08", icon: <Award size={20} />, desc: "Unforgettable birthday memories spent exploring luxury destinations together." }
                         ].map((card, idx) => (
-                            <div key={idx} className="pe-legacy-card">
-                                {/* <div
-                                    className="pe-legacy-card-bg"
-                                    style={{ backgroundImage: `url('${card.img}')` }}
-                                /> */}
-                                <div className="pe-legacy-card-overlay"></div>
-                                <div className="pe-legacy-card-content">
-                                    <h4 className="pe-legacy-card-title">{card.title}</h4>
+                            <div key={idx} className={`pe-legacy-mosaic-card card-span-${idx + 1}`}>
+                                <div
+                                    className="pe-legacy-mosaic-bg"
+                                    style={{ backgroundImage: `url(${card.img})` }}
+                                />
+                                <div className="pe-legacy-mosaic-overlay"></div>
+                                <div className="pe-legacy-mosaic-badge">
+                                    <span className="pe-legacy-mosaic-badge-num">{card.num}</span>
+                                    <div className="pe-legacy-mosaic-badge-icon">{card.icon}</div>
+                                </div>
+                                <div className="pe-legacy-mosaic-content">
+                                    <h4 className="pe-legacy-mosaic-title">{card.title}</h4>
+                                    <p className="pe-legacy-mosaic-desc">{card.desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -480,19 +538,19 @@ function FamilyLegacyTravel() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="pe-services-grid">
+                    <div className="fl-services-grid-arched">
 
                         {/* Multi-Generational Luxury Travel */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Users size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Multi-Generational Luxury Travel</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcMultiGenImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Users size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Multi-Generational Luxury Travel</h3>
+                                <p className="fl-services-text-arched">
                                     Planning travel for multiple generations requires thoughtful coordination. Every traveler has different interests, activity levels, and expectations. From toddlers to grandparents, every family member enjoys an experience tailored to their needs.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Adventure and relaxation balance",
                                         "Cultural experiences & Fine dining",
@@ -500,8 +558,8 @@ function FamilyLegacyTravel() {
                                         "Wellness experiences & free time",
                                         "Luxury accommodations for all"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -510,24 +568,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Luxury Villas for Family Gatherings */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Gem size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Luxury Villas</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcVillaImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Gem size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Luxury Villas</h3>
+                                <p className="fl-services-text-arched">
                                     Private villas provide one of the best settings for family legacy travel, allowing families to spend meaningful time together while enjoying the comforts of a private home. Destinations include Italy, France, Greece, Spain, Portugal, and Caribbean Islands.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Spacious multi-bedroom setups",
                                         "Private pools & dining spaces",
                                         "Personal chefs & dedicated staff",
                                         "Flexible, private schedules"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -536,24 +594,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Luxury Cruises for Families */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Ship size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Luxury Cruises</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcCruiseImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Ship size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Luxury Cruises</h3>
+                                <p className="fl-services-text-arched">
                                     Luxury cruises make multi-generational travel remarkably easy, eliminating the need to unpack between destinations. Recommended cruise partners include Explora Journeys, Regent Seven Seas Cruises, Crystal Cruises, Silversea Cruises, Viking Cruises, and Seabourn.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Spacious suites & multiple dining options",
                                         "Entertainment & wellness facilities",
                                         "Kids, teens & adult-only spaces",
                                         "Enriching age-appropriate excursions"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -562,24 +620,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Family Safaris */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Compass size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Family Safaris</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcSafariImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Compass size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Family Safaris</h3>
+                                <p className="fl-services-text-arched">
                                     African safaris are among the most memorable family legacy experiences. Destinations include Kenya, Tanzania, Botswana, South Africa, Namibia, and Rwanda. Safaris create unforgettable moments that families remember for generations.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Private game drives & nature walks",
                                         "Luxury lodges & custom conservation",
                                         "Guided photography & stargazing",
                                         "Family-oriented rangers & local culture"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -588,24 +646,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Heritage & Cultural Journeys */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Globe size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Heritage & Cultural Journeys</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcCultureImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Globe size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Heritage & Cultural Journeys</h3>
+                                <p className="fl-services-text-arched">
                                     Many families choose travel to reconnect with their ancestry and cultural heritage. These experiences help younger generations better understand their family's history while creating new memories together.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Visiting ancestral towns & landmarks",
                                         "Exploring heritage & local historians",
                                         "Genealogy research & private tours",
                                         "Local cooking & family storytelling"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -614,24 +672,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Celebrating Life's Biggest Milestones */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Award size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Celebrating Milestones</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcMilestoneImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Award size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Celebrating Milestones</h3>
+                                <p className="fl-services-text-arched">
                                     Family legacy travel is ideal for celebrating life's most meaningful moments. Each celebration becomes another chapter in your family's story, customized to reflect your traditions.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Milestone birthdays & anniversaries",
                                         "Graduations & retirement celebrations",
                                         "Family reunions & holiday gatherings",
                                         "Business achievements & life milestones"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -640,24 +698,24 @@ function FamilyLegacyTravel() {
                         </div>
 
                         {/* Concierge Planning for Effortless Travel */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Sparkles size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Concierge Planning</h3>
-                                <p className="pe-services-text">
+                        <div className="fl-services-card-arched highlight-banner-card">
+                            <div className="fl-services-image-arched" style={{ backgroundImage: `url(${svcConciergeImg})` }}>
+                                <div className="fl-services-card-badge-arched"><Sparkles size={16} /></div>
+                            </div>
+                            <div className="fl-services-body-arched">
+                                <h3 className="fl-services-title-arched">Concierge Planning</h3>
+                                <p className="fl-services-text-arched">
                                     Coordinating travel for multiple generations can quickly become overwhelming. We manage every detail so your family can focus on spending time together.
                                 </p>
-                                <ul className="pe-services-bullets">
+                                <ul className="fl-services-bullets-arched">
                                     {[
                                         "Flight & ground transport coordination",
                                         "Luxury accommodations & VIP access",
                                         "Private guides & dining reservations",
                                         "Last-minute itinerary adjustments"
                                     ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
+                                        <li key={i} className="fl-services-bullet-arched">
+                                            <CheckCircle size={14} className="fl-services-bullet-icon-arched" />
                                             <span>{b}</span>
                                         </li>
                                     ))}
@@ -737,10 +795,10 @@ function FamilyLegacyTravel() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -749,6 +807,7 @@ function FamilyLegacyTravel() {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }

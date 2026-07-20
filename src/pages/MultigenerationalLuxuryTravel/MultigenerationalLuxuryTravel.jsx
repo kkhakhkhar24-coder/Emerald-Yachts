@@ -2,17 +2,46 @@ import Navbar from '../../components/Navbar/Navbar'
 import './MultigenerationalLuxuryTravel.css'
 import {
     Shield, Plane, Ship, Compass, Heart, Award, Sparkles, Users, Clock, MapPin, CheckCircle,
-    Phone, LayoutList, Star, Anchor, Calendar, Gem, Globe, Utensils, Sun, Briefcase, BookOpen, Flame
+    Phone, LayoutList, Star, Anchor, Calendar, Gem, Globe, Utensils, Sun, Briefcase, BookOpen, Flame,
+    ArrowUpRight
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Import SEO images
+import heroOutdoorsImg from '../../assets/seo_images/multigenerational-family-walking-tour-luxury-european-village-vacation.webp'
+import heroDiningImg from '../../assets/seo_images/luxury-family-dining-private-oceanfront-villa-multigenerational-travel-experience.webp'
+import heroVillaImg from '../../assets/seo_images/private-luxury-tropical-villa-exclusive-high-end-vacation-retreat.webp'
+
+
+import privacyImg from '../../assets/seo_images/multigenerational-family-vacation-rome-colosseum-luxury-italy-travel.webp'
+
+// Legacy Section Images
+import legacyRiverImg from '../../assets/seo_images/douro-river-cruise-porto-portugal-luxury-river-vacation.webp'
+import legacyYachtImg from '../../assets/seo_images/private-yacht-arrival-luxury-concierge-travel-vip-marina-welcome.webp'
+import legacyLodgeImg from '../../assets/seo_images/family-governance-retreat-luxury-mountain-lodge-private-family-office-meeting.webp'
+import legacyBeachImg from '../../assets/seo_images/multigenerational-family-beach-vacation-luxury-tropical-family-travel.webp'
+import legacyCultureImg from '../../assets/seo_images/multigenerational-family-walking-through-tuscan-village-luxury-italy-vacation.webp'
+import legacyHolidayImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
+import legacyChristmasImg from '../../assets/seo_images/cologne-christmas-market-gothic-cathedral-germany-holiday-river-cruise.webp'
+import legacySafariImg from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
+
+// Services Images
+import svcReunionImg from '../../assets/seo_images/luxury-multigenerational-family-dinner-seaside-private-villa-mediterranean-vacation.webp'
+import svcVillaImg from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
+import svcCruiseImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
+import svcSafariImg from '../../assets/seo_images/luxury-african-safari-lodge-elephant-watering-hole-wildlife-view-family-travel.webp'
+import svcWellnessImg from '../../assets/seo_images/multigenerational-family-wellness-yoga-retreat-luxury-resort-vacation.webp'
+import svcMilestoneImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import svcConciergeImg from '../../assets/seo_images/luxury-travel-advisor-personalized-vacation-planning-private-consultation.webp'
+import { Link } from 'react-router'
+
 function MultigenerationalLuxuryTravel() {
     const [heroIndex, setHeroIndex] = useState(0)
     const heroImages = [
-        // "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1600", // Family outdoors
-        // "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600", // Grandparents and children
-        // "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600"  // Premium resort
+        heroOutdoorsImg,
+        heroDiningImg,
+        heroVillaImg
     ]
 
     useEffect(() => {
@@ -76,6 +105,94 @@ function MultigenerationalLuxuryTravel() {
         {
             question: "Why use a luxury travel advisor for multigenerational vacations?",
             answer: "A luxury travel advisor coordinates complex logistics, secures exclusive experiences, and ensures every family member enjoys a seamless and memorable vacation."
+        }
+    ]
+
+    const servicesData = [
+        {
+            title: "Family Reunion Vacations",
+            icon: <Users size={20} />,
+            img: svcReunionImg,
+            text: "Family reunions deserve extraordinary destinations. Rather than gathering in a hotel ballroom, celebrate through immersive travel experiences in destinations like Italy, Greece, France, Caribbean, Hawaii, Alaska, South Africa, and Costa Rica.",
+            bullets: [
+                "Luxury accommodations",
+                "Private excursions & guides",
+                "Group dining coordination",
+                "Seamless logistics for all guests"
+            ]
+        },
+        {
+            title: "Private Villas",
+            icon: <Gem size={20} />,
+            img: svcVillaImg,
+            text: "Luxury villas are among the most popular options for multigenerational vacations. Families enjoy the comfort of staying together while maintaining plenty of personal space.",
+            bullets: [
+                "Spacious living areas & bedrooms",
+                "Private swimming pools & kitchens",
+                "Personal chefs & housekeeping",
+                "Outdoor entertaining & complete privacy"
+            ]
+        },
+        {
+            title: "Luxury Cruises",
+            icon: <Ship size={20} />,
+            img: svcCruiseImg,
+            text: "Cruises offer an easy way for multiple generations to travel together, eliminating the hassle of packing and unpacking between ports. Partners include Explora Journeys, Regent Seven Seas, Crystal, Silversea, Viking, and Seabourn.",
+            bullets: [
+                "Spacious suites & multiple dining venues",
+                "Children's programs & teen clubs",
+                "Adult-only areas & wellness spas",
+                "Excursions for every interest"
+            ]
+        },
+        {
+            title: "Family Safari Adventures",
+            icon: <Compass size={20} />,
+            img: svcSafariImg,
+            text: "Luxury African safaris provide unforgettable experiences for every generation in destinations like Kenya, Tanzania, Botswana, South Africa, Namibia, and Rwanda.",
+            bullets: [
+                "Private game drives & walks",
+                "Luxury lodges & kids programs",
+                "Wildlife photography & stargazing",
+                "Conservation & cultural visits"
+            ]
+        },
+        {
+            title: "Wellness Retreats",
+            icon: <Heart size={20} />,
+            img: svcWellnessImg,
+            text: "Luxury travel isn't only about sightseeing. Many families include wellness experiences that help everyone recharge, allowing every generation to enjoy their vacation at their own pace.",
+            bullets: [
+                "Luxury spas & thermal spas",
+                "Yoga sessions & meditation",
+                "Nature walks & fitness classes",
+                "Healthy dining & beach relaxation"
+            ]
+        },
+        {
+            title: "Celebrating Milestones",
+            icon: <Award size={20} />,
+            img: svcMilestoneImg,
+            text: "Multigenerational travel provides the perfect setting for life's biggest celebrations, creating another chapter in your family's legacy and building traditions.",
+            bullets: [
+                "Anniversary & birthday celebrations",
+                "Retirement & graduation vacations",
+                "Family reunions & holiday gatherings",
+                "Generational achievements & new traditions"
+            ]
+        },
+        {
+            title: "Concierge Planning",
+            icon: <Sparkles size={20} />,
+            img: svcConciergeImg,
+            text: "Planning travel for several generations can be complex. We manage every detail so your family can simply enjoy the journey.",
+            bullets: [
+                "Flight & ground transport coordination",
+                "Luxury accommodations & villa rentals",
+                "Private tours & cruise planning",
+                "Restaurant reservations & activities",
+                "Special celebrations & VIP support"
+            ]
         }
     ]
 
@@ -287,7 +404,8 @@ function MultigenerationalLuxuryTravel() {
 
             <Navbar />
 
-            {/* HERO SECTION */}
+            <div className="multigenerational-page-wrapper">
+                {/* HERO SECTION */}
             <section className="medi-hero-section">
                 {heroImages.map((img, idx) => (
                     <div
@@ -367,29 +485,58 @@ function MultigenerationalLuxuryTravel() {
             {/* WHY MULTIGENERATIONAL TRAVEL IS POPULAR */}
             <section className="pe-different-section">
                 <div className="pe-different-container">
-                    <h2 className="medi-section-heading">Why Multigenerational Travel Is More Popular Than Ever</h2>
-                    <div className="medi-heading-separator-bar"></div>
+                    <div className="pe-different-row-grid-reversed">
 
-                    <p className="pe-different-lead">
-                        Today's families are often spread across different cities, states, and countries. Busy careers, school schedules, and everyday responsibilities make quality family time increasingly difficult.
-                    </p>
-                    <p className="pe-different-desc">
-                        Luxury travel provides an opportunity to reconnect, celebrate important milestones, and strengthen relationships through shared experiences. Many families now choose unforgettable vacations instead of traditional gifts, creating memories that last far longer than material possessions.
-                    </p>
-
-                    <div className="pe-different-grid">
-                        {[
-                            { title: "Reconnect with Extended Family", icon: <Users size={22} /> },
-                            { title: "Celebrate Milestone Moments", icon: <Award size={22} /> },
-                            { title: "Create Life-Long Traditions", icon: <Flame size={22} /> }
-                        ].map((item, idx) => (
-                            <div key={idx} className="pe-different-card">
-                                <div className="pe-different-icon-wrapper">
-                                    {item.icon}
+                        {/* Left Side: Vertical Cards Stack */}
+                        <div className="pe-different-cards-col">
+                            {[
+                                { 
+                                    title: "Reconnect with Extended Family", 
+                                    icon: <Users size={24} />, 
+                                    desc: "Spend quality time building deeper connections across generations." 
+                                },
+                                { 
+                                    title: "Celebrate Milestone Moments", 
+                                    icon: <Award size={24} />, 
+                                    desc: "Commemorate birthdays, anniversaries, and family achievements." 
+                                },
+                                { 
+                                    title: "Create Life-Long Traditions", 
+                                    icon: <Flame size={24} />, 
+                                    desc: "Form recurring annual journeys and storytelling customs." 
+                                }
+                            ].map((item, idx) => (
+                                <div key={idx} className="pe-different-card-horizontal">
+                                    <div className="pe-different-icon-wrapper">
+                                        {item.icon}
+                                    </div>
+                                    <div className="pe-different-card-content">
+                                        <h4 className="pe-different-card-title">{item.title}</h4>
+                                        <p className="pe-different-card-desc">{item.desc}</p>
+                                    </div>
                                 </div>
-                                <span className="pe-different-title">{item.title}</span>
+                            ))}
+                        </div>
+
+                        {/* Right Side: Content & Callout */}
+                        <div className="pe-different-text-col">
+                            <h2 className="medi-section-heading">Why Multigenerational Travel Is More Popular Than Ever</h2>
+                            <div className="medi-heading-separator-bar"></div>
+
+                            <p className="pe-different-lead">
+                                Today's families are often spread across different cities, states, and countries. Busy careers, school schedules, and everyday responsibilities make quality family time increasingly difficult.
+                            </p>
+                            <p className="pe-different-desc">
+                                Luxury travel provides an opportunity to reconnect, celebrate important milestones, and strengthen relationships through shared experiences. Many families now choose unforgettable vacations instead of traditional gifts, creating memories that last far longer than material possessions.
+                            </p>
+
+                            <div className="pe-different-callout">
+                                <p className="pe-different-callout-text">
+                                    Multigenerational travel builds a bridge between the past, present, and future of your family story.
+                                </p>
                             </div>
-                        ))}
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -430,12 +577,12 @@ function MultigenerationalLuxuryTravel() {
                         </div>
 
                         {/* Image Side */}
-                        {/* <div
+                        <div
                             className="pe-privacy-image-side"
-                            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200')` }}
+                            style={{ backgroundImage: `url(${privacyImg})` }}
                         >
                             <div className="pe-privacy-image-overlay"></div>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>
@@ -452,25 +599,26 @@ function MultigenerationalLuxuryTravel() {
                         </p>
                     </div>
 
-                    <div className="pe-legacy-grid">
+                    <div className="pe-legacy-portfolio-grid">
                         {[
-                            { title: "European river cruises", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600" },
-                            { title: "Mediterranean cruises", img: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=600" },
-                            { title: "National park adventures", img: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600" },
-                            { title: "Luxury beach resorts", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600" },
-                            { title: "Cultural tours", img: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600" },
-                            { title: "Holiday vacations", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600" },
-                            { title: "Christmas Market cruises", img: "https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600" },
-                            { title: "Wildlife safaris", img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=600" }
+                            { title: "European river cruises", tag: "Cruise", img: legacyRiverImg },
+                            { title: "Mediterranean cruises", tag: "Yachting", img: legacyYachtImg },
+                            { title: "National park adventures", tag: "Expedition", img: legacyLodgeImg },
+                            { title: "Luxury beach resorts", tag: "Resort", img: legacyBeachImg },
+                            { title: "Cultural tours", tag: "Heritage", img: legacyCultureImg },
+                            { title: "Holiday vacations", tag: "Celebration", img: legacyHolidayImg },
+                            { title: "Christmas Market cruises", tag: "Seasonal", img: legacyChristmasImg },
+                            { title: "Wildlife safaris", tag: "Wildlife", img: legacySafariImg }
                         ].map((card, idx) => (
-                            <div key={idx} className="pe-legacy-card">
-                                {/* <div
-                                    className="pe-legacy-card-bg"
-                                    style={{ backgroundImage: `url('${card.img}')` }}
-                                /> */}
-                                <div className="pe-legacy-card-overlay"></div>
-                                <div className="pe-legacy-card-content">
-                                    <h4 className="pe-legacy-card-title">{card.title}</h4>
+                            <div key={idx} className="pe-legacy-portfolio-card">
+                                <div className="pe-legacy-portfolio-img-wrapper">
+                                    <img src={card.img} alt={card.title} className="pe-legacy-portfolio-img" />
+                                    <div className="pe-legacy-portfolio-tag-badge">
+                                        <span>{card.tag}</span>
+                                    </div>
+                                </div>
+                                <div className="pe-legacy-portfolio-body">
+                                    <h4 className="pe-legacy-portfolio-title">{card.title}</h4>
                                 </div>
                             </div>
                         ))}
@@ -490,192 +638,34 @@ function MultigenerationalLuxuryTravel() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="pe-services-grid">
-
-                        {/* Luxury Family Reunion Vacations */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Users size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Family Reunion Vacations</h3>
-                                <p className="pe-services-text">
-                                    Family reunions deserve extraordinary destinations. Rather than gathering in a hotel ballroom, celebrate through immersive travel experiences in destinations like Italy, Greece, France, Caribbean, Hawaii, Alaska, South Africa, and Costa Rica.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Luxury accommodations",
-                                        "Private excursions & guides",
-                                        "Group dining coordination",
-                                        "Seamless logistics for all guests"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                    <div className="pe-services-arch-grid">
+                        {servicesData.map((svc, idx) => (
+                            <div 
+                                key={idx} 
+                                className={`pe-services-arch-card ${idx === 6 ? 'highlight-banner' : ''}`}
+                            >
+                                <div className="pe-services-arch-img-wrapper">
+                                    <img src={svc.img} alt={svc.title} className="pe-services-arch-img" />
+                                    <div className="pe-services-arch-badge">
+                                        {svc.icon}
+                                    </div>
+                                </div>
+                                <div className="pe-services-arch-body">
+                                    <h3 className="pe-services-arch-title">{svc.title}</h3>
+                                    <p className="pe-services-arch-text">{svc.text}</p>
+                                    <ul className="pe-services-arch-bullets">
+                                        {svc.bullets.map((b, i) => (
+                                            <li key={i} className="pe-services-arch-bullet">
+                                                <CheckCircle size={14} className="pe-services-arch-bullet-icon" />
+                                                <span>{b}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-
-                        {/* Private Villas for Extended Families */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Gem size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Private Villas</h3>
-                                <p className="pe-services-text">
-                                    Luxury villas are among the most popular options for multigenerational vacations. Families enjoy the comfort of staying together while maintaining plenty of personal space.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Spacious living areas & bedrooms",
-                                        "Private swimming pools & kitchens",
-                                        "Personal chefs & housekeeping",
-                                        "Outdoor entertaining & complete privacy"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Luxury Cruises for Families */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Ship size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Luxury Cruises</h3>
-                                <p className="pe-services-text">
-                                    Cruises offer an easy way for multiple generations to travel together, eliminating the hassle of packing and unpacking between ports. Partners include Explora Journeys, Regent Seven Seas, Crystal, Silversea, Viking, and Seabourn.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Spacious suites & multiple dining venues",
-                                        "Children's programs & teen clubs",
-                                        "Adult-only areas & wellness spas",
-                                        "Excursions for every interest"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Family Safari Adventures */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Compass size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Family Safari Adventures</h3>
-                                <p className="pe-services-text">
-                                    Luxury African safaris provide unforgettable experiences for every generation in destinations like Kenya, Tanzania, Botswana, South Africa, Namibia, and Rwanda.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Private game drives & walks",
-                                        "Luxury lodges & kids programs",
-                                        "Wildlife photography & stargazing",
-                                        "Conservation & cultural visits"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Wellness for Every Generation */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Heart size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Wellness Retreats</h3>
-                                <p className="pe-services-text">
-                                    Luxury travel isn't only about sightseeing. Many families include wellness experiences that help everyone recharge, allowing every generation to enjoy their vacation at their own pace.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Luxury spas & thermal spas",
-                                        "Yoga sessions & meditation",
-                                        "Nature walks & fitness classes",
-                                        "Healthy dining & beach relaxation"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Celebrating Family Milestones */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Award size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Celebrating Milestones</h3>
-                                <p className="pe-services-text">
-                                    Multigenerational travel provides the perfect setting for life's biggest celebrations, creating another chapter in your family's legacy and building traditions.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Anniversary & birthday celebrations",
-                                        "Retirement & graduation vacations",
-                                        "Family reunions & holiday gatherings",
-                                        "Generational achievements & new traditions"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Concierge Planning Makes Everything Easier */}
-                        <div className="pe-services-card">
-                            {/* <div className="pe-services-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600')` }}>
-                                <div className="pe-services-card-badge"><Sparkles size={16} /></div>
-                            </div> */}
-                            <div className="pe-services-body">
-                                <h3 className="pe-services-title">Concierge Planning</h3>
-                                <p className="pe-services-text">
-                                    Planning travel for several generations can be complex. We manage every detail so your family can simply enjoy the journey.
-                                </p>
-                                <ul className="pe-services-bullets">
-                                    {[
-                                        "Flight & ground transport coordination",
-                                        "Luxury accommodations & villa rentals",
-                                        "Private tours & cruise planning",
-                                        "Restaurant reservations & activities",
-                                        "Special celebrations & VIP support"
-                                    ].map((b, i) => (
-                                        <li key={i} className="pe-services-bullet">
-                                            <CheckCircle size={14} className="pe-services-bullet-icon" />
-                                            <span>{b}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
+                        ))}
                     </div>
+
                 </div>
             </section>
 
@@ -747,10 +737,10 @@ function MultigenerationalLuxuryTravel() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/Contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -759,6 +749,7 @@ function MultigenerationalLuxuryTravel() {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }
