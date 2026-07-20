@@ -238,8 +238,8 @@
    2-column grid, 5th card full-width
 ---------------------------------------------------------- */
 .pat-destinations-section {
-    background: var(--medi-bg-white);
-    padding: 90px 20px;
+    background: linear-gradient(180deg, var(--medi-bg-white) 0%, var(--medi-bg-soft) 100%);
+    padding: 100px 20px;
 }
 
 .pat-destinations-container {
@@ -254,113 +254,132 @@
 
 .pat-destinations-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
 }
 
 .pat-destination-card {
-    background: var(--medi-bg-soft);
-    border-radius: 18px;
+    background: var(--medi-bg-white);
+    border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(39, 68, 114, 0.07);
-    transition: all 0.3s ease;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pat-destination-card:nth-child(1),
+.pat-destination-card:nth-child(2),
+.pat-destination-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.pat-destination-card:nth-child(4) {
+    grid-column: 2 / 4;
+}
+
+.pat-destination-card:nth-child(5) {
+    grid-column: 4 / 6;
 }
 
 .pat-destination-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 44px rgba(39, 68, 114, 0.12);
-}
-
-.pat-destination-card.full-width {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 380px 1fr;
+    transform: translateY(-8px);
+    border-color: rgba(39, 68, 114, 0.18);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.12);
 }
 
 .pat-destination-image-wrap {
     position: relative;
     width: 100%;
-    height: 210px;
+    height: 240px;
     overflow: hidden;
-}
-
-.pat-destination-card.full-width .pat-destination-image-wrap {
-    height: 100%;
-    min-height: 200px;
 }
 
 .pat-destination-image-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .pat-destination-card:hover .pat-destination-image-wrap img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 .pat-destination-badge {
     position: absolute;
-    top: 14px;
-    left: 14px;
-    background: var(--medi-navy);
+    top: 16px;
+    left: 16px;
+    background: rgba(15, 28, 46, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     padding: 6px 14px;
     border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 2;
 }
 
 .pat-destination-body {
-    padding: 24px 22px;
-}
-
-.pat-destination-card.full-width .pat-destination-body {
-    padding: 28px 28px;
+    padding: 28px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
 }
 
 .pat-destination-title {
-    font-size: 19px;
-    font-weight: 700;
+    font-family: var(--font-display), "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
     color: var(--medi-navy);
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
+    transition: color 0.3s ease;
+}
+
+.pat-destination-card:hover .pat-destination-title {
+    color: #3b5f94;
 }
 
 .pat-destination-intro {
-    font-size: 13.5px;
+    font-size: 14px;
     color: #64748b;
-    margin: 0 0 14px 0;
+    margin: 0 0 20px 0;
     line-height: 1.6;
+    flex-grow: 0;
 }
 
 .pat-destination-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: auto 0 0 0;
+    padding: 20px 0 0 0;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
+    border-top: 1px dashed rgba(39, 68, 114, 0.12);
 }
 
 .pat-destination-list li {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 13.5px;
+    gap: 10px;
+    font-size: 14px;
     color: #374151;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .pat-destination-list svg {
     color: var(--medi-navy);
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 /* ----------------------------------------------------------
@@ -599,91 +618,200 @@
 }
 
 /* ----------------------------------------------------------
-   IDEAL ORGANIZATIONS — 4 org-type accordion cards
+   IDEAL ORGANIZATIONS — premium v2 redesign
+   Dark gradient bg, 3-col staggered grid, glassmorphism cards,
+   gradient icon circles, decorative numbering, accent bar
 ---------------------------------------------------------- */
 .pat-orgs-section {
-    background: var(--medi-bg-white);
-    padding: 90px 20px;
+    background: linear-gradient(168deg, #0f1c2e 0%, #162640 45%, #1a3050 100%);
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle decorative dot grid */
+.pat-orgs-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
 }
 
 .pat-orgs-container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .pat-orgs-header {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
 }
 
-.pat-orgs-grid {
+.pat-orgs-header .medi-section-heading {
+    color: #ffffff;
+}
+
+.pat-orgs-subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* 3-col top row, 2 centered bottom row */
+.pat-orgs-grid-v2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
 }
 
-.pat-org-card {
-    background: var(--medi-bg-soft);
-    border-radius: 16px;
-    padding: 28px 26px;
-    border: 1px solid rgba(39, 68, 114, 0.07);
-    transition: all 0.3s ease;
+/* center the last 2 cards */
+.pat-orgs-grid-v2 .pat-org-card-v2:nth-child(4) {
+    grid-column: 1 / 2;
+    margin-left: auto;
+    margin-right: 0;
+    width: calc(100% + 13px);
+    transform: translateX(50%);
 }
 
-.pat-org-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.1);
+.pat-orgs-grid-v2 .pat-org-card-v2:nth-child(5) {
+    grid-column: 3 / 4;
+    margin-left: 0;
+    margin-right: auto;
+    width: calc(100% + 13px);
+    transform: translateX(-50%);
 }
 
-.pat-org-header-row {
+/* individual card */
+.pat-org-card-v2 {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 36px 28px 32px;
     display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 16px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                background 0.45s ease,
+                border-color 0.45s ease,
+                box-shadow 0.45s ease;
 }
 
-.pat-org-icon-box {
-    width: 46px;
-    height: 46px;
-    border-radius: 12px;
-    background: var(--medi-navy);
+.pat-org-card-v2:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35),
+                0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* decorative large number */
+.pat-org-num {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-family: var(--font-display), "Playfair Display", serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+    user-select: none;
+    transition: color 0.4s ease;
+}
+
+.pat-org-card-v2:hover .pat-org-num {
+    color: rgba(255, 255, 255, 0.08);
+}
+
+/* gradient icon circle */
+.pat-org-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-bottom: 18px;
+    transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.pat-org-name {
-    font-size: 18px;
+.pat-org-card-v2:hover .pat-org-icon-wrap {
+    background: linear-gradient(135deg, var(--medi-navy-light, #3b5f94) 0%, var(--medi-navy) 100%);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* org name */
+.pat-org-name-v2 {
+    font-family: var(--font-display), "Playfair Display", serif;
+    font-size: 20px;
     font-weight: 700;
-    color: var(--medi-navy);
-    margin: 0;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    transition: color 0.3s ease;
 }
 
-.pat-org-list {
+/* description */
+.pat-org-desc {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.65;
+    margin: 0 0 18px 0;
+}
+
+/* list */
+.pat-org-list-v2 {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 16px 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 9px;
+    flex-grow: 1;
 }
 
-.pat-org-list li {
+.pat-org-list-v2 li {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 9px;
     font-size: 13.5px;
-    color: #4a5568;
-    line-height: 1.4;
+    color: #cbd5e1;
+    line-height: 1.45;
 }
 
-.pat-org-list svg {
-    color: var(--medi-navy);
+.pat-org-list-v2 svg {
+    color: var(--medi-green, #3ddc84);
     flex-shrink: 0;
     margin-top: 2px;
 }
+
+/* animated accent bar at bottom */
+.pat-org-accent-bar {
+    height: 3px;
+    margin-top: 22px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--medi-navy, #274472), var(--medi-navy-light, #3b5f94), rgba(255, 255, 255, 0.15));
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pat-org-card-v2:hover .pat-org-accent-bar {
+    transform: scaleX(1);
+}
+
 
 /* ----------------------------------------------------------
    WHY SPECIALIZED TRAVEL PARTNER — split dark
@@ -857,15 +985,16 @@
     }
 
     .pat-destinations-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
-    .pat-destination-card.full-width {
-        grid-template-columns: 1fr;
+    .pat-destination-card {
+        grid-column: span 1 !important;
     }
 
-    .pat-destination-card.full-width .pat-destination-image-wrap {
-        height: 220px;
+    .pat-destination-card:nth-child(5) {
+        grid-column: span 2 !important;
     }
 
     .pat-access-grid {
@@ -878,9 +1007,17 @@
         gap: 22px;
     }
 
-    .pat-orgs-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
+    .pat-orgs-grid-v2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pat-orgs-grid-v2 .pat-org-card-v2:nth-child(4),
+    .pat-orgs-grid-v2 .pat-org-card-v2:nth-child(5) {
+        grid-column: span 1;
+        width: 100%;
+        transform: none;
+        margin: 0;
     }
 
     .pat-partner-layout {
@@ -924,10 +1061,22 @@
     .pat-why-grid,
     .pat-access-grid,
     .pat-engagement-grid,
-    .pat-orgs-grid,
     .pat-partner-layout {
         grid-template-columns: 1fr;
         gap: 18px;
+    }
+
+    .pat-orgs-grid-v2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .pat-orgs-grid-v2 .pat-org-card-v2:nth-child(4),
+    .pat-orgs-grid-v2 .pat-org-card-v2:nth-child(5) {
+        grid-column: span 1;
+        width: 100%;
+        transform: none;
+        margin: 0;
     }
 
     .pat-destinations-grid {
@@ -935,12 +1084,9 @@
         gap: 20px;
     }
 
-    .pat-destination-card.full-width {
-        grid-template-columns: 1fr;
-    }
-
-    .pat-destination-card.full-width .pat-destination-image-wrap {
-        height: 200px;
+    .pat-destination-card,
+    .pat-destination-card:nth-child(5) {
+        grid-column: span 1 !important;
     }
 
     .pat-services-grid {
@@ -966,9 +1112,12 @@
     }
 
     .pat-why-panel-body,
-    .pat-engagement-card-body,
-    .pat-org-card {
+    .pat-engagement-card-body {
         padding: 22px 18px;
+    }
+
+    .pat-org-card-v2 {
+        padding: 28px 20px 24px;
     }
 
     .pat-access-panel {
@@ -1018,9 +1167,16 @@
     }
 
     .pat-why-panel-title,
-    .pat-engagement-card-title,
-    .pat-org-name {
+    .pat-engagement-card-title {
         font-size: 16px;
+    }
+
+    .pat-org-name-v2 {
+        font-size: 17px;
+    }
+
+    .pat-org-num {
+        font-size: 42px;
     }
 
     .pat-access-panel-title {

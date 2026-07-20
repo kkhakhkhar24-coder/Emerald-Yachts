@@ -3,35 +3,34 @@ import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import './Privatevillasexclusiveresorts.css'
 
 
-// import hero1 from '../../assets/PrivateVillasExclusiveResorts/hero1.jpg'
-// import hero2 from '../../assets/PrivateVillasExclusiveResorts/hero2.jpg'
-// import hero3 from '../../assets/PrivateVillasExclusiveResorts/hero3.jpg'
+import hero1 from '../../assets/seo_images/private-luxury-tropical-villa-exclusive-high-end-vacation-retreat.webp'
+import hero2 from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import hero3 from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
 
-// import exclusiveResortImg from '../../assets/PrivateVillasExclusiveResorts/exclusive-luxury-resort.webp'
-// import familyVillaImg from '../../assets/PrivateVillasExclusiveResorts/family-villa-vacation.webp'
+import exclusiveResortImg from '../../assets/seo_images/luxury-resort-personalized-concierge-vip-hotel-check-in-experience.webp'
+import familyVillaImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
 
-// import destCaribbean from '../../assets/PrivateVillasExclusiveResorts/destination-caribbean-islands.webp'
-// import destHawaii from '../../assets/PrivateVillasExclusiveResorts/destination-hawaii.webp'
-// import destItaly from '../../assets/PrivateVillasExclusiveResorts/destination-italy.webp'
-// import destGreece from '../../assets/PrivateVillasExclusiveResorts/destination-greece.webp'
-// import destFrance from '../../assets/PrivateVillasExclusiveResorts/destination-france.webp'
-// import destCostaRica from '../../assets/PrivateVillasExclusiveResorts/destination-costa-rica.webp'
-// import destMexico from '../../assets/PrivateVillasExclusiveResorts/destination-mexico.webp'
-// import destMaldives from '../../assets/PrivateVillasExclusiveResorts/destination-maldives.webp'
-// import destBali from '../../assets/PrivateVillasExclusiveResorts/destination-bali.webp'
-// import destSouthAfrica from '../../assets/PrivateVillasExclusiveResorts/destination-south-africa.webp'
+import destCaribbean from '../../assets/seo_images/luxury_villa_destination_caribbean_islands.webp'
+import destHawaii from '../../assets/seo_images/luxury_villa_destination_hawaii.webp'
+import destItaly from '../../assets/seo_images/multigenerational-family-walking-through-tuscan-village-luxury-italy-vacation.webp'
+import destGreece from '../../assets/seo_images/luxury_villa_destination_greece.webp'
+import destFrance from '../../assets/seo_images/luxury_villa_destination_france.webp'
+import destCostaRica from '../../assets/seo_images/private-luxury-tropical-villa-exclusive-high-end-vacation-retreat.webp'
+import destMexico from '../../assets/seo_images/luxury-family-dining-private-oceanfront-villa-multigenerational-travel-experience.webp'
+import destMaldives from '../../assets/seo_images/luxury-wellness-retreat-spa-with-ocean-view-infinity-pool-private-resort.webp'
+import destBali from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import destSouthAfrica from '../../assets/seo_images/luxury-african-safari-lodge-big-five-wildlife-viewing-experience.webp'
 
-// import wellnessYoga from '../../assets/PrivateVillasExclusiveResorts/wellness-private-yoga.webp'
-// import wellnessSpa from '../../assets/PrivateVillasExclusiveResorts/wellness-in-villa-spa.webp'
-// import wellnessMeditation from '../../assets/PrivateVillasExclusiveResorts/wellness-meditation-class.webp'
-// import wellnessFitness from '../../assets/PrivateVillasExclusiveResorts/wellness-personal-fitness.webp'
-// import wellnessDining from '../../assets/PrivateVillasExclusiveResorts/wellness-healthy-dining.webp'
-// import wellnessBeachfront from '../../assets/PrivateVillasExclusiveResorts/wellness-beachfront-experience.webp'
-// import wellnessHolistic from '../../assets/PrivateVillasExclusiveResorts/wellness-holistic-therapy.webp'
-// import wellnessNature from '../../assets/PrivateVillasExclusiveResorts/wellness-nature-excursion.webp'
+import wellnessYoga from '../../assets/seo_images/multigenerational-family-wellness-yoga-retreat-luxury-resort-vacation.webp'
+import wellnessSpa from '../../assets/seo_images/luxury-spa-massage-wellness-retreat-holistic-relaxation-resort-experience.webp'
+import wellnessMeditation from '../../assets/seo_images/luxury_meditation_class_wellness.webp'
+import wellnessFitness from '../../assets/seo_images/active-senior-fitness-vacation-luxury-wellness-resort-morning-exercise.webp'
+import wellnessDining from '../../assets/seo_images/healthy-gourmet-salmon-meal-luxury-wellness-resort-farm-to-table-dining.webp'
+import wellnessBeachfront from '../../assets/seo_images/luxury-wellness-retreat-infinity-pool-private-spa-villa-ocean-view.webp'
+import wellnessHolistic from '../../assets/seo_images/luxury-thermal-spa-hydrotherapy-pool-wellness-resort-relaxation.webp'
+import wellnessNature from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
 
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_Picture_AH from '../../assets/Media (2).jpg'
 
 import {
     Home, Lock, Sofa, BedDouble, Waves, ChefHat, TreePine, Star, Calendar,
@@ -45,10 +44,11 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function PrivateVillasExclusiveResorts() {
     const [pvrCurrentHero, setPvrCurrentHero] = useState(0)
-    const pvrHeroImages = []
+    const pvrHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const pvrTimer = setInterval(() => {
@@ -85,16 +85,16 @@ function PrivateVillasExclusiveResorts() {
     ]
 
     const pvrDestinations = [
-        // { name: 'Caribbean Islands', img: destCaribbean },
-        // { name: 'Hawaii', img: destHawaii },
-        // { name: 'Italy', img: destItaly },
-        // { name: 'Greece', img: destGreece },
-        // { name: 'France', img: destFrance },
-        // { name: 'Costa Rica', img: destCostaRica },
-        // { name: 'Mexico', img: destMexico },
-        // { name: 'Maldives', img: destMaldives },
-        // { name: 'Bali', img: destBali },
-        // { name: 'South Africa', img: destSouthAfrica }
+        { name: 'Caribbean Islands', img: destCaribbean },
+        { name: 'Hawaii', img: destHawaii },
+        { name: 'Italy', img: destItaly },
+        { name: 'Greece', img: destGreece },
+        { name: 'France', img: destFrance },
+        { name: 'Costa Rica', img: destCostaRica },
+        { name: 'Mexico', img: destMexico },
+        { name: 'Maldives', img: destMaldives },
+        { name: 'Bali', img: destBali },
+        { name: 'South Africa', img: destSouthAfrica }
     ]
 
     const pvrFamilyFeatures = [
@@ -122,14 +122,14 @@ function PrivateVillasExclusiveResorts() {
     ]
 
     const pvrWellnessItems = [
-        // { text: 'Private yoga sessions', img: wellnessYoga, icon: HeartPulse },
-        // { text: 'In-villa spa treatments', img: wellnessSpa, icon: Scissors },
-        // { text: 'Meditation classes', img: wellnessMeditation, icon: Sparkles },
-        // { text: 'Personal fitness training', img: wellnessFitness, icon: Flag },
-        // { text: 'Healthy dining options', img: wellnessDining, icon: Utensils },
-        // { text: 'Beachfront wellness experiences', img: wellnessBeachfront, icon: Waves },
-        // { text: 'Holistic therapies', img: wellnessHolistic, icon: HeartHandshake },
-        // { text: 'Nature excursions', img: wellnessNature, icon: TreePine }
+        { text: 'Private Yoga Sessions', img: wellnessYoga, icon: HeartPulse },
+        { text: 'In-villa Spa Treatments', img: wellnessSpa, icon: Scissors },
+        { text: 'Meditation Classes', img: wellnessMeditation, icon: Sparkles },
+        { text: 'Personal Fitness Training', img: wellnessFitness, icon: Flag },
+        { text: 'Healthy Dining Options', img: wellnessDining, icon: Utensils },
+        { text: 'Beachfront Wellness Experiences', img: wellnessBeachfront, icon: Waves },
+        { text: 'Holistic Therapies', img: wellnessHolistic, icon: HeartHandshake },
+        { text: 'Nature Excursions', img: wellnessNature, icon: TreePine }
     ]
 
     const pvrCelebrations = [
@@ -398,7 +398,7 @@ function PrivateVillasExclusiveResorts() {
                     <div
                         key={idx}
                         className={`medi-hero-background ${pvrCurrentHero === idx ? 'medi-active' : ''}`}
-                        /* style={{ backgroundImage: `url(${img})` }} */
+                        style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
@@ -469,7 +469,7 @@ function PrivateVillasExclusiveResorts() {
             <section className="pvr-resorts-section">
                 <div className="pvr-resorts-container">
                     <div className="pvr-resorts-image-block">
-                        {/* <img src={exclusiveResortImg} alt="Exclusive luxury resort" className="pvr-resorts-image" /> */}
+                        <img src={exclusiveResortImg} alt="Exclusive luxury resort" className="pvr-resorts-image" />
                         <div className="pvr-resorts-image-overlay"></div>
                         <div className="pvr-resorts-floating-badge">
                             <Star size={16} />
@@ -512,7 +512,7 @@ function PrivateVillasExclusiveResorts() {
                         <h2 className="medi-section-heading">Luxury Villa Destinations</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
-                    <p className="pvr-destinations-lead-para">
+                    <p className="pvr-destinations-lead-para" style={{ marginBottom: "3rem" }}>
                         We arrange luxury villa rentals in some of the world's most desirable destinations.
                     </p>
                     <p className="pvr-destinations-subtext">
@@ -521,7 +521,7 @@ function PrivateVillasExclusiveResorts() {
                     <div className="pvr-destinations-gallery">
                         {pvrDestinations.map((dest, idx) => (
                             <div key={idx} className="pvr-destination-card">
-                                {/* <img src={dest.img} alt={dest.name} className="pvr-destination-img" /> */}
+                                <img src={dest.img} alt={dest.name} className="pvr-destination-img" />
                                 <div className="pvr-destination-card-overlay"></div>
                                 <div className="pvr-destination-card-label">
                                     <MapPin size={14} />
@@ -530,7 +530,7 @@ function PrivateVillasExclusiveResorts() {
                             </div>
                         ))}
                     </div>
-                    <p className="pvr-destinations-closing-para">
+                    <p className="pvr-destinations-closing-para" style={{ textAlign: 'center' }}>
                         Whether you dream of a beachfront villa, a countryside estate, or a mountaintop retreat, we help you find the perfect setting.
                     </p>
                 </div>
@@ -565,7 +565,7 @@ function PrivateVillasExclusiveResorts() {
                         </p>
                     </div>
                     <div className="pvr-family-image-block">
-                        {/* <img src={familyVillaImg} alt="Family villa vacation" className="pvr-family-image" /> */}
+                        <img src={familyVillaImg} alt="Family villa vacation" className="pvr-family-image" />
                         <div className="pvr-family-image-overlay"></div>
                     </div>
                 </div>
@@ -623,7 +623,7 @@ function PrivateVillasExclusiveResorts() {
                             const IconComp = item.icon
                             return (
                                 <div key={idx} className="pvr-wellness-card">
-                                    {/* <img src={item.img} alt={item.text} className="pvr-wellness-img" /> */}
+                                    <img src={item.img} alt={item.text} className="pvr-wellness-img" />
                                     <div className="pvr-wellness-card-overlay"></div>
                                     <div className="pvr-wellness-icon-badge">
                                         <IconComp size={16} />
@@ -745,7 +745,7 @@ function PrivateVillasExclusiveResorts() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Villa & Resort Advisor" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Villa & Resort Advisor" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -895,10 +895,10 @@ function PrivateVillasExclusiveResorts() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contect' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Property Options

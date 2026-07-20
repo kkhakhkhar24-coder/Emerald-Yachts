@@ -14,30 +14,29 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 /* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports
-   e.g. import artsHero1 from '../../assets/PerformingArts/hero1.jpg'
+   SEO Images — Performing Arts Travel
 ──────────────────────────────────────────────────────────────── */
-// const HERO_1           = 'https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=1600&q=80'
-// const HERO_2           = 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&q=80'
-// const HERO_3           = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80'
+import artsHero1 from '../../assets/seo_images/ornate-european-opera-house-auditorium-world-class-performing-arts-travel.webp'
+import artsHero2 from '../../assets/seo_images/historic-european-opera-house-grand-theater-interior-luxury-performing-arts-venue.webp'
+import artsHero3 from '../../assets/seo_images/world-class-classical-concert-hall-orchestra-performance-venue-luxury-cultural-travel.webp'
 
-// const WHAT_IMG         = 'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=900&q=80'
-// const ITALY_IMG        = 'https://images.unsplash.com/photo-1499678329028-101435549a4e?w=900&q=80'
-// const LONDON_IMG       = 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80'
-// const VIENNA_IMG       = 'https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=900&q=80'
-// const PARIS_IMG        = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80'
-// const NYC_IMG          = 'https://images.unsplash.com/photo-1499092346302-b8d7a16b4d81?w=900&q=80'
-// const BACKSTAGE_IMG    = 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=80'
-// const ENGAGEMENT_IMG   = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80'
-// const GROUP_TRAVEL_IMG = 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=900&q=80'
-// const PARTNER_IMG      = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80'
-// const ANGELA_IMG       = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+import WHAT_IMG       from '../../assets/seo_images/historic-european-opera-house-grand-lobby-luxury-cultural-landmark.webp'
+import ITALY_IMG      from '../../assets/seo_images/multigenerational-family-vacation-rome-colosseum-luxury-italy-travel.webp'
+import LONDON_IMG     from '../../assets/seo_images/private-guided-cultural-tour-luxury-small-group-historic-city-experience.webp'
+import VIENNA_IMG     from '../../assets/seo_images/historic-symphony-concert-hall-classical-music-performance-venue.webp'
+import PARIS_IMG      from '../../assets/seo_images/iconic-european-opera-house-luxury-theater-interior-cultural-travel.webp'
+import NYC_IMG        from '../../assets/seo_images/world-class-classical-concert-hall-orchestra-performance-venue-luxury-cultural-travel.webp'
+import ENGAGEMENT_IMG from '../../assets/seo_images/luxury-executive-group-travel-networking-event-private-cultural-experience.webp'
+import GROUP_TRAVEL_IMG from '../../assets/seo_images/luxury-travel-advisor-personalized-vacation-planning-private-consultation.webp'
+import PARTNER_IMG    from '../../assets/seo_images/luxury-performing-arts-group-travel-planning-meeting-cultural-tour-logistics-management.webp'
+import FINAL_IMG      from '../../assets/seo_images/luxury-performing-arts-organization-group-travel-exclusive-cultural-event-private-theater-experience.webp'
+import { Link } from 'react-router'
 
 /* ════════════════════════════════════════════════════════════ */
 
 function PerformingArtsTravel() {
 
-    const heroImages = []
+    const heroImages = [artsHero1, artsHero2, artsHero3]
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -229,7 +228,7 @@ function PerformingArtsTravel() {
                 <div className="pat-what-container">
                     <div className="pat-what-layout">
                         <div className="pat-what-image-col">
-                        <img src={''} alt="Performing arts travel program" />
+                        <img src={WHAT_IMG} alt="Historic European opera house grand lobby — performing arts travel program" />
                             <div className="pat-what-image-overlay"></div>
                             <div className="pat-what-image-caption">
                                 <p>Unlike traditional tours, these programs are designed around artistic and cultural enrichment while building stronger relationships among travelers and the organization.</p>
@@ -343,7 +342,7 @@ function PerformingArtsTravel() {
                         {/* Italy */}
                         <div className="pat-destination-card">
                             <div className="pat-destination-image-wrap">
-                                {/* <img src={ITALY_IMG} alt="Italy performing arts travel" /> */}
+                                <img src={ITALY_IMG} alt="Italy performing arts travel — Rome Colosseum luxury cultural experience" />
                                 <span className="pat-destination-badge">Most Sought-After</span>
                             </div>
                             <div className="pat-destination-body">
@@ -360,8 +359,8 @@ function PerformingArtsTravel() {
                         {/* London */}
                         <div className="pat-destination-card">
                             <div className="pat-destination-image-wrap">
-                                {/* <img src={LONDON_IMG} alt="London performing arts travel" /> */}
-                                <span className="pat-destination-badge">West End & Beyond</span>
+                                <img src={LONDON_IMG} alt="London performing arts travel — private guided cultural tour historic city" />
+                                <span className="pat-destination-badge">West End &amp; Beyond</span>
                             </div>
                             <div className="pat-destination-body">
                                 <h3 className="pat-destination-title">London</h3>
@@ -377,7 +376,7 @@ function PerformingArtsTravel() {
                         {/* Vienna */}
                         <div className="pat-destination-card">
                             <div className="pat-destination-image-wrap">
-                                {/* <img src={VIENNA_IMG} alt="Vienna classical music travel" /> */}
+                                <img src={VIENNA_IMG} alt="Vienna classical music travel — historic symphony concert hall" />
                                 <span className="pat-destination-badge">Classical Music Capital</span>
                             </div>
                             <div className="pat-destination-body">
@@ -394,8 +393,8 @@ function PerformingArtsTravel() {
                         {/* Paris */}
                         <div className="pat-destination-card">
                             <div className="pat-destination-image-wrap">
-                                {/* <img src={PARIS_IMG} alt="Paris arts travel" /> */}
-                                <span className="pat-destination-badge">Art, Music & History</span>
+                                <img src={PARIS_IMG} alt="Paris arts travel — iconic European opera house luxury theater interior" />
+                                <span className="pat-destination-badge">Art, Music &amp; History</span>
                             </div>
                             <div className="pat-destination-body">
                                 <h3 className="pat-destination-title">Paris</h3>
@@ -409,9 +408,9 @@ function PerformingArtsTravel() {
                         </div>
 
                         {/* New York City — full width */}
-                        <div className="pat-destination-card full-width">
+                        <div className="pat-destination-card">
                             <div className="pat-destination-image-wrap">
-                                {/* <img src={NYC_IMG} alt="New York City arts travel" /> */}
+                                <img src={NYC_IMG} alt="New York City arts travel — world-class classical concert hall performance venue" />
                                 <span className="pat-destination-badge">Domestic Arts Hub</span>
                             </div>
                             <div className="pat-destination-body">
@@ -486,7 +485,7 @@ function PerformingArtsTravel() {
                 <div className="pat-engagement-container">
                     <div className="pat-engagement-header">
                         <span className="medi-itinerary-eyebrow">RELATIONSHIP BUILDING</span>
-                        <h2 className="medi-section-heading">Donor and Patron Engagement &amp; Group Travel Made Easy</h2>
+                        <h2 className="medi-section-heading">Donor and Patron Engagement &amp; <br /> Group Travel Made Easy</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
@@ -494,7 +493,7 @@ function PerformingArtsTravel() {
                         {/* Donor Engagement */}
                         <div className="pat-engagement-card">
                             <div className="pat-engagement-img-wrap">
-                                {/* <img src={ENGAGEMENT_IMG} alt="Donor and patron engagement" /> */}
+                                <img src={ENGAGEMENT_IMG} alt="Donor and patron engagement — luxury executive group travel private cultural experience" />
                             </div>
                             <div className="pat-engagement-card-body">
                                 <div className="pat-engagement-card-icon-row">
@@ -516,7 +515,7 @@ function PerformingArtsTravel() {
                         {/* Group Travel Made Easy */}
                         <div className="pat-engagement-card">
                             <div className="pat-engagement-img-wrap">
-                                {/* <img src={GROUP_TRAVEL_IMG} alt="Group travel management" /> */}
+                                <img src={GROUP_TRAVEL_IMG} alt="Group travel made easy — luxury travel advisor personalized vacation planning" />
                             </div>
                             <div className="pat-engagement-card-body">
                                 <div className="pat-engagement-card-icon-row">
@@ -539,7 +538,7 @@ function PerformingArtsTravel() {
             </section>
 
             {/* ══════════════════════════════════
-                IDEAL ORGANIZATIONS (new section, own css)
+                IDEAL ORGANIZATIONS — premium redesign
             ══════════════════════════════════ */}
             <section className="pat-orgs-section">
                 <div className="pat-orgs-container">
@@ -547,76 +546,64 @@ function PerformingArtsTravel() {
                         <span className="medi-itinerary-eyebrow">IDEAL PARTNERS</span>
                         <h2 className="medi-section-heading">Ideal Organizations for Performing Arts Travel</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                        <p style={{ fontSize: '16px', color: '#64748b', maxWidth: '680px', margin: '0 auto', textAlign: 'center', lineHeight: '1.7' }}>
-                            Travel programs work especially well for:
+                        <p className="pat-orgs-subtitle">
+                            Travel programs work especially well for organizations that share a passion for cultural enrichment and meaningful patron engagement.
                         </p>
                     </div>
 
-                    <div className="pat-orgs-grid">
-                        {/* Theaters */}
-                        <div className="pat-org-card">
-                            <div className="pat-org-header-row">
-                                <div className="pat-org-icon-box"><Theater size={22} /></div>
-                                <h3 className="pat-org-name">Theaters</h3>
+                    <div className="pat-orgs-grid-v2">
+                        {[
+                            {
+                                Icon: Theater,
+                                name: 'Theaters',
+                                num: '01',
+                                desc: 'Regional, professional, and community theater companies seeking to deepen audience loyalty through immersive cultural journeys.',
+                                items: ['Regional theaters', 'Professional theater companies', 'Community theater organizations'],
+                            },
+                            {
+                                Icon: Music,
+                                name: 'Symphony Orchestras',
+                                num: '02',
+                                desc: 'Symphony organizations enriching patron relationships with curated travel built around the world\'s finest concert halls.',
+                                items: ['Patron travel', 'Donor engagement programs', 'Cultural enrichment journeys'],
+                            },
+                            {
+                                Icon: Mic,
+                                name: 'Opera Companies',
+                                num: '03',
+                                desc: 'Opera companies creating exclusive international performance experiences and VIP cultural programs for devoted supporters.',
+                                items: ['Opera-focused travel', 'International performance experiences', 'VIP cultural programs'],
+                            },
+                            {
+                                Icon: Star,
+                                name: 'Ballet Organizations',
+                                num: '04',
+                                desc: 'Ballet companies inspiring supporters with dance-focused travel, backstage encounters, and cultural exploration around the globe.',
+                                items: ['Dance-focused travel', 'Performance-centered itineraries', 'Cultural exploration'],
+                            },
+                            {
+                                Icon: Landmark,
+                                name: 'Performing Arts Centers',
+                                num: '05',
+                                desc: 'Multi-discipline arts centers strengthening subscriber loyalty and patron stewardship through memorable group experiences.',
+                                items: ['Subscriber travel programs', 'Member experiences', 'Patron stewardship initiatives'],
+                            },
+                        ].map(({ Icon, name, num, desc, items }, i) => (
+                            <div key={i} className="pat-org-card-v2">
+                                <span className="pat-org-num">{num}</span>
+                                <div className="pat-org-icon-wrap">
+                                    <Icon size={24} />
+                                </div>
+                                <h3 className="pat-org-name-v2">{name}</h3>
+                                <p className="pat-org-desc">{desc}</p>
+                                <ul className="pat-org-list-v2">
+                                    {items.map((item, j) => (
+                                        <li key={j}><CheckCircle size={14} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                                <div className="pat-org-accent-bar"></div>
                             </div>
-                            <ul className="pat-org-list">
-                                {['Regional theaters', 'Professional theater companies', 'Community theater organizations'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Symphony Orchestras */}
-                        <div className="pat-org-card">
-                            <div className="pat-org-header-row">
-                                <div className="pat-org-icon-box"><Music size={22} /></div>
-                                <h3 className="pat-org-name">Symphony Orchestras</h3>
-                            </div>
-                            <ul className="pat-org-list">
-                                {['Patron travel', 'Donor engagement programs', 'Cultural enrichment journeys'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Opera Companies */}
-                        <div className="pat-org-card">
-                            <div className="pat-org-header-row">
-                                <div className="pat-org-icon-box"><Mic size={22} /></div>
-                                <h3 className="pat-org-name">Opera Companies</h3>
-                            </div>
-                            <ul className="pat-org-list">
-                                {['Opera-focused travel', 'International performance experiences', 'VIP cultural programs'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Ballet Organizations */}
-                        <div className="pat-org-card">
-                            <div className="pat-org-header-row">
-                                <div className="pat-org-icon-box"><Star size={22} /></div>
-                                <h3 className="pat-org-name">Ballet Organizations</h3>
-                            </div>
-                            <ul className="pat-org-list">
-                                {['Dance-focused travel', 'Performance-centered itineraries', 'Cultural exploration'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Performing Arts Centers */}
-                        <div className="pat-org-card">
-                            <div className="pat-org-header-row">
-                                <div className="pat-org-icon-box"><Landmark size={22} /></div>
-                                <h3 className="pat-org-name">Performing Arts Centers</h3>
-                            </div>
-                            <ul className="pat-org-list">
-                                {['Subscriber travel programs', 'Member experiences', 'Patron stewardship initiatives'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -648,7 +635,7 @@ function PerformingArtsTravel() {
                         </div>
 
                         <div className="pat-partner-image-col">
-                            {/* <img src={PARTNER_IMG} alt="Specialized performing arts travel partner" /> */}
+                            <img src={PARTNER_IMG} alt="Luxury performing arts group travel planning meeting — cultural tour logistics management" />
                         </div>
                     </div>
                 </div>
@@ -699,7 +686,7 @@ function PerformingArtsTravel() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Travel Expert" /> */}
+                                <img src={FINAL_IMG} alt="Luxury performing arts organization group travel — exclusive cultural event private theater experience" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                         </div>
@@ -787,10 +774,10 @@ function PerformingArtsTravel() {
                         </div>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contect' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Explore Program Options

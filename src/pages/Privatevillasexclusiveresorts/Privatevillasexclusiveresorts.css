@@ -347,62 +347,98 @@
 }
 
 /* ============================================================
-   LUXURY VILLA DESTINATIONS (circular scatter gallery)
+   LUXURY VILLA DESTINATIONS (Modern Premium Interactive Grid)
    ============================================================ */
 
 .pvr-destinations-section {
-    background: var(--medi-bg-soft);
-    padding: 100px 20px;
+    background: #0b1329; /* Dark elegant background */
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pvr-destinations-section::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+.pvr-destinations-section::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.15) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
 }
 
 .pvr-destinations-container {
     max-width: 1280px;
     margin: 0 auto;
-    text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .pvr-destinations-eyebrow {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--medi-green);
-    margin-bottom: 10px;
+    letter-spacing: 0.25em;
+    color: #10b981;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 .pvr-destinations-lead-para {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.7;
-    color: #475569;
-    max-width: 720px;
-    margin: 0 auto 10px;
+    color: #94a3b8;
+    max-width: 800px;
+    margin: 0 auto 12px;
 }
 
 .pvr-destinations-subtext {
     font-size: 16px;
     font-weight: 600;
-    color: var(--medi-navy);
-    margin: 0 0 32px;
+    color: #e2e8f0;
+    margin: 0 0 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .pvr-destinations-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    margin-bottom: 36px;
+    gap: 24px;
+    margin-bottom: 48px;
 }
 
 .pvr-destination-card {
     position: relative;
-    border-radius: 50% 50% 46% 46% / 55% 55% 45% 45%;
+    border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/5;
     cursor: pointer;
-    box-shadow: 0 12px 28px rgba(15, 28, 46, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .pvr-destination-card:nth-child(even) {
-    margin-top: 28px;
+    margin-top: 0; /* Align flatly for modern look */
+}
+
+.pvr-destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(16, 185, 129, 0.4);
 }
 
 .pvr-destination-img {
@@ -410,41 +446,84 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.6s ease;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .pvr-destination-card:hover .pvr-destination-img {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .pvr-destination-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(15, 28, 46, 0) 40%, rgba(15, 28, 46, 0.82) 100%);
+    background: linear-gradient(180deg, rgba(11, 19, 41, 0.1) 30%, rgba(11, 19, 41, 0.5) 60%, rgba(11, 19, 41, 0.95) 100%);
+    transition: opacity 0.3s;
+}
+
+.pvr-destination-card:hover .pvr-destination-card-overlay {
+    background: linear-gradient(180deg, rgba(11, 19, 41, 0) 20%, rgba(11, 19, 41, 0.4) 50%, rgba(11, 19, 41, 0.98) 100%);
 }
 
 .pvr-destination-card-label {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 16px;
+    left: 20px;
+    right: 20px;
+    bottom: 24px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
     color: #ffffff;
-    font-size: 12.5px;
-    font-weight: 600;
-    text-align: center;
-    padding: 0 10px;
+    z-index: 3;
+}
+
+.pvr-destination-card-label svg {
+    color: #10b981;
+    transition: transform 0.3s ease;
+}
+
+.pvr-destination-card:hover .pvr-destination-card-label svg {
+    transform: translateY(-3px);
+}
+
+.pvr-destination-card-label span {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #ffffff;
 }
 
 .pvr-destinations-closing-para {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #475569;
-    max-width: 720px;
-    margin: 28px auto 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #94a3b8;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+@media (max-width: 1200px) {
+    .pvr-destinations-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pvr-destinations-section { padding: 80px 20px; }
+    .pvr-destinations-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pvr-destinations-lead-para { font-size: 17px; }
+}
+
+@media (max-width: 480px) {
+    .pvr-destinations-section { padding: 60px 16px; }
+    .pvr-destinations-gallery {
+        grid-template-columns: 1fr;
+    }
+    .pvr-destination-card {
+        aspect-ratio: 4/3;
+    }
 }
 
 @media (max-width: 1024px) {

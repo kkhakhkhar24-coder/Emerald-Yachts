@@ -10,14 +10,31 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 import Profile_AH from '../../assets/Media (2).jpg'
 
+// SEO Images for Travel Programs for Symphony Orchestras
+import ImgSympHero1 from '../../assets/seo_images/historic-symphony-concert-hall-classical-music-performance-venue.webp'
+import ImgSympHero2 from '../../assets/seo_images/world-class-classical-concert-hall-orchestra-performance-venue-luxury-cultural-travel.webp'
+import ImgSympHero3 from '../../assets/seo_images/ornate-european-opera-house-auditorium-world-class-performing-arts-travel.webp'
+import ImgTabEuropean from '../../assets/seo_images/historic-european-opera-house-grand-lobby-luxury-cultural-landmark.webp'
+import ImgTabRiver from '../../assets/seo_images/luxury-rhine-river-cruise-ship-germany-scenic-castle-voyage.webp'
+import ImgTabFestival from '../../assets/seo_images/iconic-european-opera-house-luxury-theater-interior-cultural-travel.webp'
+import ImgTabLand from '../../assets/seo_images/prague-old-town-christmas-market-astronomical-square-czech-republic.webp'
+import ImgDestVienna from '../../assets/seo_images/vienna_classical_music.jpg'
+import ImgDestSalzburg from '../../assets/seo_images/salzburg_music_festival.jpg'
+import ImgDestPrague from '../../assets/seo_images/prague-old-town-christmas-market-astronomical-square-czech-republic.webp'
+import ImgDestLeipzig from '../../assets/seo_images/leipzig_orchestra.jpg'
+import ImgDestBudapest from '../../assets/seo_images/budapest_panorama.jpg'
+import ImgDestRiver from '../../assets/seo_images/danube-river-cruise-regensburg-germany-historic-old-town-panorama.webp'
+import ImgRiverCruise from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
+import ImgPrivateEvent from '../../assets/seo_images/luxury-private-estate-garden-reception-high-end-cultural-travel-experience.webp'
+
 function TravelProgramsSymphonyOrchestras() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [ImgSympHero1, ImgSympHero2, ImgSympHero3]
 
     useEffect(() => {
         if (mediHeroImages.length > 0) {
@@ -344,21 +361,21 @@ function TravelProgramsSymphonyOrchestras() {
                         }}>
                             <div className="medi-premium-signature-glow"></div>
                             <div className="medi-premium-signature-content">
-                                <div className="medi-expert-profile-row">
-                                    <div className="medi-expert-avatar-frame" style={{ background: '#274472' }}>
-                                        <Star size={24} className="medi-star-accent" />
+                                <div className="medi-expert-profile-row" style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
+                                    <div className="medi-expert-avatar-frame" style={{ background: '#274472', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffffff' }}>
+                                        <Star size={24} style={{ fill: '#ffffff', stroke: '#ffffff' }} />
                                     </div>
                                     <div>
-                                        <span className="medi-expert-card-subtitle">CULTURAL TRAVEL EXPERT</span>
-                                        <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
+                                        <span className="medi-expert-card-subtitle" style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: 'rgba(255, 255, 255, 0.8)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>CULTURAL TRAVEL EXPERT</span>
+                                        <h3 className="medi-expert-card-title" style={{ color: '#ffffff', fontSize: '24px', fontWeight: '800', margin: '2px 0 0 0' }}>Angela Hughes</h3>
                                     </div>
                                 </div>
-                                <p className="medi-premium-expert-desc" style={{ color: '#475569', lineHeight: '1.7' }}>
+                                <p className="medi-premium-expert-desc" style={{ color: '#ffffff', fontSize: '15.5px', lineHeight: '1.75', fontWeight: '600', marginBottom: '20px' }}>
                                     At Trips & Ships Luxury Travel, we help symphony orchestras create customized travel experiences that inspire patrons while supporting organizational goals — from historic music capitals to luxury river cruises.
                                 </p>
-                                <div className="medi-premium-expert-quote-box">
-                                    <span className="medi-quote-mark" style={{ color: '#274472' }}>"</span>
-                                    <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
+                                <div className="medi-premium-expert-quote-box" style={{ padding: '16px', borderLeft: '4px solid #274472' }}>
+                                    <span className="medi-quote-mark" style={{ color: '#274472', fontSize: '32px', lineHeight: '1', fontWeight: 'bold', display: 'block', marginBottom: '-10px' }}>"</span>
+                                    <p className="medi-premium-expert-quote-text" style={{ color: '#111827', fontSize: '14.5px', lineHeight: '1.65', fontWeight: '600', fontStyle: 'italic', margin: 0 }}>
                                         With more than 40 years in the travel industry and experience across 121+ countries, Angela Hughes helps music organizations plan cultural travel programs that inspire deeper connections.
                                     </p>
                                 </div>
@@ -560,7 +577,7 @@ function TravelProgramsSymphonyOrchestras() {
                         </div>
 
                         <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e', backgroundImage: `url(${[ImgTabEuropean, ImgTabRiver, ImgTabFestival, ImgTabLand][mediSelectedProgram]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">EXPERIENCE SPOTLIGHT</span>
                             </div>
@@ -630,72 +647,139 @@ function TravelProgramsSymphonyOrchestras() {
                 overflow: 'hidden'
             }}>
                 <style>{`
-                    .symph-dest-grid {
+                    .symph-dest-grid-premium {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
-                        gap: 24px;
-                        max-width: 1240px;
+                        gap: 36px;
+                        max-width: 1200px;
                         margin: 0 auto;
                     }
-                    .symph-dest-item {
-                        position: relative;
-                        border-radius: 24px;
+                    .symph-dest-card-premium {
+                        background: #0f1c30;
+                        border-radius: 16px;
                         overflow: hidden;
-                        background-color: #1c2f4a;
-                        border: 1px solid rgba(255,255,255,0.1);
-                        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                        min-height: 320px;
+                        border: 1px solid rgba(59, 130, 246, 0.15);
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-end;
+                        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+                        height: 100%;
                     }
-                    .symph-dest-item:hover { transform: translateY(-6px); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
-                    .symph-dest-overlay {
+                    .symph-dest-card-premium:hover {
+                        transform: translateY(-8px);
+                        border-color: rgba(59, 130, 246, 0.4);
+                        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+                    }
+                    .symph-dest-img-wrap {
                         position: relative;
-                        z-index: 2;
-                        padding: clamp(24px, 5vw, 40px) clamp(20px, 4vw, 32px);
-                        color: #ffffff;
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
                     }
-                    .symph-dest-bg {
+                    .symph-dest-img-wrap img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.8s ease;
+                    }
+                    .symph-dest-card-premium:hover .symph-dest-img-wrap img {
+                        transform: scale(1.08);
+                    }
+                    .symph-dest-tag-badge-premium {
                         position: absolute;
-                        inset: 0;
-                        background: linear-gradient(135deg, #0f1c2e 0%, #1a365d 60%, #274472 100%);
-                        z-index: 1;
+                        bottom: 16px;
+                        left: 16px;
+                        background: #274472;
+                        color: #ffffff;
+                        font-size: 11px;
+                        font-weight: 700;
+                        padding: 6px 14px;
+                        border-radius: 4px;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
                     }
-                    .symph-dest-tag { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #60a5fa; margin-bottom: 10px; display: block; }
-                    .symph-dest-title { font-size: clamp(20px, 3vw, 24px); font-weight: 700; margin: 0 0 12px 0; line-height: 1.2; color: #ffffff; }
-                    .symph-dest-desc { font-size: clamp(14px, 2vw, 15px); color: rgba(255,255,255,0.8); line-height: 1.6; margin: 0; }
-                    .symph-dest-icon { width: 44px; height: 44px; background: rgba(59,130,246,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #3b82f6; margin-bottom: 16px; }
-                    @media (max-width: 1024px) { .symph-dest-grid { grid-template-columns: repeat(2, 1fr); } }
-                    @media (max-width: 650px) { .symph-dest-grid { grid-template-columns: 1fr; gap: 16px; } }
+                    .symph-dest-info-block {
+                        padding: 28px 24px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        border-top: 2px solid #274472;
+                    }
+                    .symph-dest-title-row {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        margin-bottom: 16px;
+                    }
+                    .symph-dest-card-icon-premium {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: rgba(59, 130, 246, 0.1);
+                        color: #3b82f6;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+                    }
+                    .symph-dest-card-title-premium {
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: #ffffff;
+                        margin: 0;
+                        letter-spacing: -0.01em;
+                    }
+                    .symph-dest-card-desc-premium {
+                        font-size: 14.5px;
+                        color: #94a3b8;
+                        line-height: 1.65;
+                        margin: 0;
+                    }
+                    @media (max-width: 1024px) {
+                        .symph-dest-grid-premium {
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 28px;
+                        }
+                    }
+                    @media (max-width: 650px) {
+                        .symph-dest-grid-premium {
+                            grid-template-columns: 1fr;
+                            gap: 24px;
+                        }
+                    }
                 `}</style>
 
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(50px, 8vw, 80px)' }}>
-                    <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: 'clamp(11px, 2vw, 13px)', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '12px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '12px' }}>
                         European Music Capitals
                     </span>
-                    <h2 style={{ fontSize: 'clamp(30px, 5vw, 48px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+                    <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                         Popular Destinations for Symphony Travel
                     </h2>
                     <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
                 </div>
 
-                <div className="symph-dest-grid">
+                <div className="symph-dest-grid-premium">
                     {[
-                        { tag: "Austria", title: "Vienna", desc: "The historic home of Mozart, Beethoven, Haydn, and Strauss. Vienna offers legendary opera traditions and world-famous concert venues.", icon: <Music size={20} /> },
-                        { tag: "Austria", title: "Salzburg", desc: "Birthplace of Mozart and one of Europe's most important musical destinations. A must-visit city for any music-focused travel program.", icon: <Crown size={20} /> },
-                        { tag: "Czech Republic", title: "Prague", desc: "A city rich in classical music history and architectural beauty. Prague's musical heritage and stunning settings make it a favorite for orchestra travelers.", icon: <Building size={20} /> },
-                        { tag: "Germany", title: "Leipzig", desc: "Associated with Bach and Germany's musical heritage. Leipzig's Gewandhaus Orchestra is one of the oldest and most respected in the world.", icon: <Mic size={20} /> },
-                        { tag: "Hungary", title: "Budapest", desc: "A cultural destination known for music, architecture, and history. Budapest combines dramatic settings with rich classical traditions.", icon: <Star size={20} /> },
-                        { tag: "Multiple Rivers", title: "River Cruises", desc: "Rhine, Danube, Seine, and Douro — luxury river cruises combine cultural enrichment with comfortable small-ship travel and onboard programming.", icon: <Ship size={20} /> }
+                        { tag: "Austria", title: "Vienna", desc: "The historic home of Mozart, Beethoven, Haydn, and Strauss. Vienna offers legendary opera traditions and world-famous concert venues.", icon: <Music size={18} />, img: ImgDestVienna },
+                        { tag: "Austria", title: "Salzburg", desc: "Birthplace of Mozart and one of Europe's most important musical destinations. A must-visit city for any music-focused travel program.", icon: <Crown size={18} />, img: ImgDestSalzburg },
+                        { tag: "Czech Republic", title: "Prague", desc: "A city rich in classical music history and architectural beauty. Prague's musical heritage and stunning settings make it a favorite for orchestra travelers.", icon: <Building size={18} />, img: ImgDestPrague },
+                        { tag: "Germany", title: "Leipzig", desc: "Associated with Bach and Germany's musical heritage. Leipzig's Gewandhaus Orchestra is one of the oldest and most respected in the world.", icon: <Mic size={18} />, img: ImgDestLeipzig },
+                        { tag: "Hungary", title: "Budapest", desc: "A cultural destination known for music, architecture, and history. Budapest combines dramatic settings with rich classical traditions.", icon: <Star size={18} />, img: ImgDestBudapest },
+                        { tag: "Multiple Rivers", title: "River Cruises", desc: "Rhine, Danube, Seine, and Douro — luxury river cruises combine cultural enrichment with comfortable small-ship travel and onboard programming.", icon: <Ship size={18} />, img: ImgDestRiver }
                     ].map((dest, idx) => (
-                        <div key={idx} className="symph-dest-item">
-                            <div className="symph-dest-bg"></div>
-                            <div className="symph-dest-overlay">
-                                <div className="symph-dest-icon">{dest.icon}</div>
-                                <span className="symph-dest-tag">{dest.tag}</span>
-                                <h3 className="symph-dest-title">{dest.title}</h3>
-                                <p className="symph-dest-desc">{dest.desc}</p>
+                        <div key={idx} className="symph-dest-card-premium">
+                            <div className="symph-dest-img-wrap">
+                                <img src={dest.img} alt={`${dest.title} - Popular Destination for Symphony Orchestra Travel`} />
+                                <span className="symph-dest-tag-badge-premium">{dest.tag}</span>
+                            </div>
+                            <div className="symph-dest-info-block">
+                                <div className="symph-dest-title-row">
+                                    <div className="symph-dest-card-icon-premium">{dest.icon}</div>
+                                    <h3 className="symph-dest-card-title-premium">{dest.title}</h3>
+                                </div>
+                                <p className="symph-dest-card-desc-premium">{dest.desc}</p>
                             </div>
                         </div>
                     ))}
@@ -777,6 +861,20 @@ function TravelProgramsSymphonyOrchestras() {
             {/* ═══════════════ WHY RIVER CRUISES WORK SO WELL ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+                    {/* River Cruise Hero Image */}
+                    <div style={{ borderRadius: '28px', overflow: 'hidden', marginBottom: '60px', position: 'relative', height: 'clamp(220px, 35vw, 420px)', boxShadow: '0 20px 60px rgba(15,28,46,0.13)' }}>
+                        <img
+                            src={ImgRiverCruise}
+                            alt="Luxury Rhine river cruise ship sailing through Germany at sunset for symphony orchestra travel programs"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        />
+                        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,17,32,0.65) 0%, rgba(10,17,32,0.10) 70%, transparent 100%)' }}></div>
+                        <div style={{ position: 'absolute', bottom: '28px', left: '36px', color: '#ffffff' }}>
+                            <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', color: '#60a5fa', display: 'block', marginBottom: '6px' }}>Rhine River · Germany</span>
+                            <span style={{ fontSize: 'clamp(18px, 3vw, 26px)', fontWeight: '800', lineHeight: '1.2' }}>Luxury River Cruise Experience</span>
+                        </div>
+                    </div>
+
                     <div style={{ textAlign: 'center', marginBottom: '70px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
                             The Ideal Format
@@ -790,22 +888,52 @@ function TravelProgramsSymphonyOrchestras() {
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(2, 1fr)', gap: window.innerWidth <= 360 ? '20px' : '30px' }}>
                         {[
                             { title: "Intimate Atmosphere", desc: "Smaller ships encourage interaction and community. Patrons spend extended time together in a relaxed and elegant setting, forging genuine connections.", icon: <Users size={24} /> },
                             { title: "Cultural Focus", desc: "Destinations align naturally with music, history, and education. Every port offers new opportunities to explore the cultural heritage that inspires the music.", icon: <Globe size={24} /> },
                             { title: "Comfortable Travel", desc: "Guests unpack once while visiting multiple destinations. This convenience appeals to many orchestra patrons who value seamless, high-quality travel experiences.", icon: <Ship size={24} /> },
                             { title: "Luxury Experience", desc: "High-quality accommodations and service appeal to many orchestra patrons. River cruises combine comfort with cultural enrichment in a format that feels natural and rewarding.", icon: <Gem size={24} /> }
                         ].map((item, i) => (
-                            <div key={i} style={{ backgroundColor: '#f8fafc', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '36px 30px', border: '1px solid #e2e8f0', boxShadow: '0 6px 20px rgba(15, 28, 46, 0.04)', transition: 'all 0.3s ease' }}
-                                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 36px rgba(15,28,46,0.10)'; e.currentTarget.style.borderColor = '#3b82f6'; }}
-                                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(15,28,46,0.04)'; e.currentTarget.style.borderColor = '#e2e8f0'; }}
+                            <div key={i} style={{ 
+                                backgroundColor: '#ffffff', 
+                                borderRadius: '16px', 
+                                padding: '36px 30px', 
+                                border: '1px solid rgba(39, 68, 114, 0.08)',
+                                borderLeft: '4px solid #3b82f6',
+                                boxShadow: '0 10px 30px rgba(15, 28, 46, 0.04)', 
+                                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                position: 'relative'
+                            }}
+                                onMouseEnter={(e) => { 
+                                    e.currentTarget.style.transform = 'translateY(-6px)'; 
+                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(39, 68, 114, 0.12)'; 
+                                    e.currentTarget.style.borderLeftColor = '#274472';
+                                }}
+                                onMouseLeave={(e) => { 
+                                    e.currentTarget.style.transform = 'translateY(0)'; 
+                                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(15, 28, 46, 0.04)'; 
+                                    e.currentTarget.style.borderLeftColor = '#3b82f6';
+                                }}
                             >
-                                <div style={{ width: '52px', height: '52px', borderRadius: '14px', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6', marginBottom: '20px' }}>
+                                <div style={{ 
+                                    width: '50px', 
+                                    height: '50px', 
+                                    borderRadius: '12px', 
+                                    background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(39, 68, 114, 0.05) 100%)', 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    justifyContent: 'center', 
+                                    color: '#3b82f6', 
+                                    marginBottom: '20px',
+                                    transition: 'all 0.3s ease'
+                                }}>
                                     {item.icon}
                                 </div>
-                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#0f1c2e', marginBottom: '12px' }}>{item.title}</h3>
-                                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
+                                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#1e293b', marginBottom: '12px', letterSpacing: '-0.01em' }}>{item.title}</h3>
+                                <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -848,6 +976,20 @@ function TravelProgramsSymphonyOrchestras() {
             {/* ═══════════════ CUSTOM TRAVEL PROGRAMS ═══════════════ */}
             <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+                    {/* Private event / patron reception image */}
+                    <div style={{ borderRadius: '28px', overflow: 'hidden', marginBottom: '60px', position: 'relative', height: 'clamp(200px, 30vw, 380px)', boxShadow: '0 16px 50px rgba(15,28,46,0.10)' }}>
+                        <img
+                            src={ImgPrivateEvent}
+                            alt="Private luxury reception and exclusive cultural event for symphony orchestra patron travel programs"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        />
+                        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,17,32,0.60) 0%, rgba(10,17,32,0.08) 65%, transparent 100%)' }}></div>
+                        <div style={{ position: 'absolute', bottom: '28px', left: '36px', color: '#ffffff' }}>
+                            <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', color: '#60a5fa', display: 'block', marginBottom: '6px' }}>Exclusive Access</span>
+                            <span style={{ fontSize: 'clamp(18px, 3vw, 26px)', fontWeight: '800', lineHeight: '1.2' }}>Private Patron Receptions & Events</span>
+                        </div>
+                    </div>
+
                     <div style={{ textAlign: 'center', marginBottom: '70px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
                             Tailored to Your Organization
@@ -1171,10 +1313,10 @@ function TravelProgramsSymphonyOrchestras() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
+                            <Link to="/contact" className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
                                 <Phone size={18} />
                                 Begin Planning Your Symphony Travel Program Today
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
