@@ -10,17 +10,20 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import heroImg1 from '../../assets/seo_images/family-governance-retreat-luxury-mountain-lodge-private-family-office-meeting.webp'
-import heroImg2 from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
+import heroImg2 from '../../assets/seo_images/multigenerational-luxury-family-vacation-oceanfront-villa-private-resort.webp'
 import heroImg3 from '../../assets/seo_images/luxury-wellness-retreat-infinity-pool-private-spa-villa-ocean-view.webp'
-import familyReconnectImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
-import privateVillaImg from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
-import luxuryCruiseImg from '../../assets/ExploraJourneysVsSilversea/explora-I-aft-pool-deck-drone-view (2).webp'
+import familyReconnectImg from '../../assets/seo_images/multigenerational-family-beach-vacation-luxury-tropical-family-travel.webp'
+import privateVillaImg from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import luxuryCruiseImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
 import wellnessRetreatImg from '../../assets/seo_images/luxury-wellness-retreat-spa-with-ocean-view-infinity-pool-private-resort.webp'
 import adventureSafariImg from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
 import conciergeTravelImg from '../../assets/seo_images/private-helicopter-transfer-luxury-travel-concierge-villa-arrival-service.webp'
-import audiencePhotoImg from '../../assets/seo_images/multigenerational-luxury-family-vacation-oceanfront-villa-private-resort.webp'
+import audiencePhotoImg from '../../assets/seo_images/multigenerational-family-walking-tour-luxury-european-village-vacation.webp'
+import celebrationImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import executiveMeetingImg from '../../assets/seo_images/luxury-executive-group-travel-networking-event-private-cultural-experience.webp'
 import Profile_AH from '../../assets/Profile_AH.jpg'
 import Profile_Picture_AH from '../../assets/Angela_Hughes.jpg'
+import { Link } from 'react-router'
 
 function ExecutiveFamilyRetreats() {
     const [efrCurrentHero, setEfrCurrentHero] = useState(0)
@@ -474,128 +477,43 @@ function ExecutiveFamilyRetreats() {
 
             {/* PERSONALIZED LUXURY FAMILY RETREATS */}
             <section className="efr-excel-section">
-                {/* Visual coordinate watermarks for premium destination-themed look */}
-                <div className="efr-excel-coord coord-tl">EXECUTIVE FAMILY RETREATS // TRIPS & SHIPS</div>
-                <div className="efr-excel-coord coord-tr">43.7696° N, 11.2558° E</div>
-                <div className="efr-excel-coord coord-bl">21.4691° N, 158.0778° W</div>
-                <div className="efr-excel-coord coord-br">9.7489° N, 83.7534° W</div>
-
-                <div className="efr-excel-glow-one"></div>
-                <div className="efr-excel-glow-two"></div>
                 <div className="efr-excel-container">
-
-                    {/* Header/Intro Block */}
                     <div className="efr-excel-header-block">
+                        <span className="efr-excel-eyebrow">TAILORED TO YOUR FAMILY</span>
                         <h2 className="efr-excel-main-title">Personalized Luxury Family Retreats</h2>
                         <div className="efr-excel-separator"></div>
-                        <p className="efr-excel-lead-paragraph">
-                            Every executive family has unique travel preferences.
-                        </p>
                     </div>
 
-                    {/* Content Grid */}
-                    <div className="efr-excel-grid">
-
-                        {/* Column 1 */}
-                        <div className="efr-excel-column">
+                    <div className="efr-excel-split">
+                        <div className="efr-excel-image-col">
+                            <img src={familyReconnectImg} alt="Executive family reconnecting on a luxury retreat" />
+                            <div className="efr-excel-footer-block">
+                                <p className="efr-excel-footer-paragraph">
+                                    Every itinerary is completely personalized to provide a seamless luxury experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="efr-excel-content-col">
                             <div className="efr-excel-card">
-                                <h3 className="efr-excel-card-heading">
-                                    Our customized retreats are designed around:
-                                </h3>
+                                <h3 className="efr-excel-card-heading">Designed Around You</h3>
                                 <ul className="efr-excel-list">
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <MapPin size={18} />
-                                        </div>
-                                        <span>Preferred destinations</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Heart size={18} />
-                                        </div>
-                                        <span>Family interests</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Compass size={18} />
-                                        </div>
-                                        <span>Activity levels</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Calendar size={18} />
-                                        </div>
-                                        <span>Travel schedules</span>
-                                    </li>
+                                    <li className="efr-excel-list-item"><MapPin size={18} /><span>Preferred destinations</span></li>
+                                    <li className="efr-excel-list-item"><Heart size={18} /><span>Family interests</span></li>
+                                    <li className="efr-excel-list-item"><Compass size={18} /><span>Activity levels</span></li>
+                                    <li className="efr-excel-list-item"><Calendar size={18} /><span>Travel schedules</span></li>
+                                </ul>
+                            </div>
+                            <div className="efr-excel-card">
+                                <h3 className="efr-excel-card-heading">Every Detail Considered</h3>
+                                <ul className="efr-excel-list">
+                                    <li className="efr-excel-list-item"><ShieldCheck size={18} /><span>Privacy requirements</span></li>
+                                    <li className="efr-excel-list-item"><Waves size={18} /><span>Wellness goals</span></li>
+                                    <li className="efr-excel-list-item"><Sparkles size={18} /><span>Celebration occasions</span></li>
+                                    <li className="efr-excel-list-item"><Crown size={18} /><span>Lifestyle preferences</span></li>
                                 </ul>
                             </div>
                         </div>
-
-                        {/* Column 2 */}
-                        <div className="efr-excel-column">
-                            <div className="efr-excel-card">
-                                <h3 className="efr-excel-card-heading">
-                                    As well as every family's:
-                                </h3>
-                                <ul className="efr-excel-list">
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <ShieldCheck size={18} />
-                                        </div>
-                                        <span>Privacy requirements</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Waves size={18} />
-                                        </div>
-                                        <span>Wellness goals</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Sparkles size={18} />
-                                        </div>
-                                        <span>Celebration occasions</span>
-                                    </li>
-                                    <li className="efr-excel-list-item">
-                                        <div className="efr-excel-icon-wrapper">
-                                            <Crown size={18} />
-                                        </div>
-                                        <span>Lifestyle preferences</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
                     </div>
-
-                    <div className="efr-excel-photo-block" style={{ marginTop: '48px', marginBottom: '48px', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-                        <img
-                            src={familyReconnectImg}
-                            alt="Executive family reconnecting on a luxury retreat"
-                            style={{
-                                width: '100%',
-                                maxWidth: '900px',
-                                height: 'auto',
-                                borderRadius: '16px',
-                                boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
-                                objectFit: 'cover'
-                            }}
-                        />
-                        <div style={{ marginTop: '16px', fontSize: '16px', color: 'var(--efr-navy)', fontStyle: 'italic', fontWeight: '500', textAlign: 'center' }}>
-                            Uninterrupted family time, thoughtfully planned
-                        </div>
-                    </div>
-
-                    {/* Footer Statement */}
-                    <div className="efr-excel-footer-block">
-                        <div className="efr-excel-footer-badge">
-                            <Sparkles size={20} />
-                        </div>
-                        <p className="efr-excel-footer-paragraph">
-                            Every itinerary is completely personalized to provide a seamless luxury experience.
-                        </p>
-                    </div>
-
                 </div>
             </section>
 
@@ -608,10 +526,8 @@ function ExecutiveFamilyRetreats() {
                         <div className="efr-diff-separator"></div>
                     </div>
 
-                    <div style={{ display: 'flex', flexDirection: 'row', gap: '40px', marginTop: '40px', alignItems: 'stretch', flexWrap: 'wrap' }}>
-
-                        {/* Left Column: Interactive Selector Buttons */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', flex: '1 1 350px' }}>
+                    <div className="efr-diff-panel-layout">
+                        <div className="efr-diff-selector-col">
                             {[
                                 { id: 0, title: 'Private Villas & Luxury Resorts', icon: <Home size={22} />, desc: 'Privacy, dedicated chefs, and flexible schedules for families.' },
                                 { id: 1, title: 'Luxury Cruises for Families', icon: <Ship size={22} />, desc: 'Exceptional dining and activities spanning multiple destinations.' },
@@ -622,166 +538,94 @@ function ExecutiveFamilyRetreats() {
                                     <button
                                         key={pillar.id}
                                         onClick={() => setEfrActivePillar(pillar.id)}
-                                        style={{
-                                            textAlign: 'left',
-                                            padding: '24px',
-                                            borderRadius: '20px',
-                                            border: isActive ? '1px solid transparent' : '1px solid rgba(39, 68, 114, 0.12)',
-                                            background: isActive ? 'linear-gradient(135deg, #274472 0%, #1c2f4a 100%)' : '#ffffff',
-                                            color: isActive ? '#ffffff' : '#1c2f4a',
-                                            boxShadow: isActive ? '0 12px 24px rgba(39, 68, 114, 0.18)' : 'none',
-                                            cursor: 'pointer',
-                                            transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-                                            display: 'flex',
-                                            gap: '20px',
-                                            alignItems: 'flex-start',
-                                            width: '100%'
-                                        }}
+                                        className={`efr-diff-pillar-btn ${isActive ? 'active' : ''}`}
                                     >
-                                        <div style={{
-                                            width: '48px',
-                                            height: '48px',
-                                            borderRadius: '12px',
-                                            background: isActive ? 'rgba(255, 255, 255, 0.15)' : 'rgba(39, 68, 114, 0.05)',
-                                            color: isActive ? '#ffffff' : '#274472',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            flexShrink: 0
-                                        }}>
-                                            {pillar.icon}
-                                        </div>
-                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                                            <span style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '0.05em', color: isActive ? 'rgba(255,255,255,0.7)' : '#274472' }}>PILLAR 0{pillar.id + 1}</span>
-                                            <h3 style={{ fontSize: '18px', fontWeight: '600', margin: 0, color: 'inherit' }}>{pillar.title}</h3>
-                                            <p style={{ fontSize: '13px', margin: '4px 0 0', opacity: 0.8, color: 'inherit', lineHeight: '1.4' }}>{pillar.desc}</p>
+                                        <div className="efr-diff-pillar-icon">{pillar.icon}</div>
+                                        <div className="efr-diff-pillar-text">
+                                            <span className="efr-diff-pillar-num">PILLAR 0{pillar.id + 1}</span>
+                                            <h3 className="efr-diff-pillar-title">{pillar.title}</h3>
+                                            <p className="efr-diff-pillar-desc">{pillar.desc}</p>
                                         </div>
                                     </button>
                                 );
                             })}
                         </div>
 
-                        {/* Right Column: Dynamic Detail Plaque */}
-                        <div style={{ flex: '2 1 500px', display: 'flex', flexDirection: 'column' }}>
-                            <div style={{
-                                background: '#ffffff',
-                                borderRadius: '24px',
-                                border: '1px solid rgba(39, 68, 114, 0.08)',
-                                boxShadow: '0 20px 40px rgba(39, 68, 114, 0.05)',
-                                padding: '32px',
-                                height: '100%',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                position: 'relative'
-                            }}>
-
-                                {efrActivePillar === 0 && (
-                                    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: '20px' }}>
-                                        <div style={{ position: 'relative', height: '200px', overflow: 'hidden', borderRadius: '16px' }}>
-                                            <img src={privateVillaImg} alt="Private luxury villa" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                        </div>
-                                        <h3 style={{ fontSize: '24px', fontWeight: '600', color: '#1c2f4a', margin: 0 }}>Private Villas & Luxury Resorts</h3>
-                                        <p style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: '1.6', margin: 0 }}>
-                                            Private accommodations provide the ideal setting for executive families seeking privacy and flexibility. Popular destinations include:
-                                        </p>
-                                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                        <div className="efr-diff-detail-col">
+                            {efrActivePillar === 0 && (
+                                <div className="efr-diff-detail-card">
+                                    <div className="efr-diff-detail-img">
+                                        <img src={privateVillaImg} alt="Private luxury villa" />
+                                    </div>
+                                    <div className="efr-diff-detail-body">
+                                        <h3 className="efr-diff-detail-title">Private Villas & Luxury Resorts</h3>
+                                        <p className="efr-diff-detail-desc">Private accommodations provide the ideal setting for executive families seeking privacy and flexibility. Popular destinations include:</p>
+                                        <div className="efr-diff-detail-tags">
                                             {['Tuscany', 'Provence', 'Greek Islands', 'Caribbean', 'Hawaii', 'Costa Rica'].map((dest, i) => (
-                                                <span key={i} style={{ background: 'rgba(39, 68, 114, 0.05)', color: '#274472', fontSize: '12px', fontWeight: '500', padding: '4px 10px', borderRadius: '100px' }}>{dest}</span>
+                                                <span key={i} className="efr-diff-tag">{dest}</span>
                                             ))}
                                         </div>
-                                        <div style={{ height: '1px', background: 'rgba(39, 68, 114, 0.1)' }}></div>
+                                        <div className="efr-diff-detail-divider"></div>
                                         <div>
-                                            <p style={{ fontSize: '12px', fontWeight: '700', color: '#1c2f4a', letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 10px' }}>Benefits include:</p>
-                                            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '8px', padding: 0, margin: 0, listStyle: 'none' }}>
-                                                {[
-                                                    'Spacious accommodations', 'Private swimming pools', 'Personal chefs',
-                                                    'Dedicated housekeeping', 'Concierge services', 'Family gathering spaces',
-                                                    'Flexible schedules', 'Complete privacy'
-                                                ].map((ben, i) => (
-                                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#4a5568' }}>
-                                                        <CheckCircle size={15} style={{ color: '#10b981', flexShrink: 0 }} />
-                                                        <span>{ben}</span>
-                                                    </li>
+                                            <p className="efr-diff-benefit-label">Benefits include:</p>
+                                            <ul className="efr-diff-benefit-list">
+                                                {['Spacious accommodations', 'Private swimming pools', 'Personal chefs', 'Dedicated housekeeping', 'Concierge services', 'Family gathering spaces', 'Flexible schedules', 'Complete privacy'].map((ben, i) => (
+                                                    <li key={i}><CheckCircle size={15} /><span>{ben}</span></li>
                                                 ))}
                                             </ul>
                                         </div>
                                     </div>
-                                )}
-
-                                {efrActivePillar === 1 && (
-                                    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: '20px' }}>
-                                        <div style={{ position: 'relative', height: '200px', overflow: 'hidden', borderRadius: '16px' }}>
-                                            <img src={luxuryCruiseImg} alt="Luxury family cruise" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                            <div style={{ position: 'absolute', top: '16px', right: '16px', background: 'rgba(15, 28, 46, 0.85)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.2)', padding: '6px 14px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '6px', color: '#ffffff' }}>
-                                                <span style={{ fontWeight: '700', fontSize: '14px', color: '#f59e0b' }}>6</span>
-                                                <span style={{ fontSize: '9px', letterSpacing: '0.05em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.9)' }}>CURATED CRUISE LINES</span>
-                                            </div>
-                                        </div>
-                                        <h3 style={{ fontSize: '24px', fontWeight: '600', color: '#1c2f4a', margin: 0 }}>Luxury Cruises for Families</h3>
-                                        <p style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: '1.6', margin: 0 }}>
-                                            Luxury cruises combine relaxation with exploration while eliminating the stress of coordinating multiple destinations. Recommended cruise lines include:
-                                        </p>
-                                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                                </div>
+                            )}
+                            {efrActivePillar === 1 && (
+                                <div className="efr-diff-detail-card">
+                                    <div className="efr-diff-detail-img">
+                                        <img src={luxuryCruiseImg} alt="Luxury family cruise"/>
+                                        <div className="efr-diff-img-badge">6 CURATED CRUISE LINES</div>
+                                    </div>
+                                    <div className="efr-diff-detail-body">
+                                        <h3 className="efr-diff-detail-title">Luxury Cruises for Families</h3>
+                                        <p className="efr-diff-detail-desc">Luxury cruises combine relaxation with exploration while eliminating the stress of coordinating multiple destinations. Recommended cruise lines include:</p>
+                                        <div className="efr-diff-detail-tags">
                                             {['Explora Journeys', 'Regent Seven Seas Cruises', 'Crystal Cruises', 'Silversea Cruises', 'Seabourn', 'Viking'].map((cruise, i) => (
-                                                <span key={i} style={{ background: 'rgba(39, 68, 114, 0.05)', color: '#274472', fontSize: '12px', fontWeight: '500', padding: '4px 10px', borderRadius: '100px' }}>{cruise}</span>
+                                                <span key={i} className="efr-diff-tag">{cruise}</span>
                                             ))}
                                         </div>
-                                        <div style={{ height: '1px', background: 'rgba(39, 68, 114, 0.1)' }}></div>
+                                        <div className="efr-diff-detail-divider"></div>
                                         <div>
-                                            <p style={{ fontSize: '12px', fontWeight: '700', color: '#1c2f4a', letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 10px' }}>Families enjoy:</p>
-                                            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '8px', padding: 0, margin: 0, listStyle: 'none' }}>
-                                                {[
-                                                    'Spacious suites', 'Fine dining', "Children's programs",
-                                                    'Adult-only spaces', 'Wellness facilities', 'Private shore excursions'
-                                                ].map((enj, i) => (
-                                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#4a5568' }}>
-                                                        <CheckCircle size={15} style={{ color: '#10b981', flexShrink: 0 }} />
-                                                        <span>{enj}</span>
-                                                    </li>
+                                            <p className="efr-diff-benefit-label">Families enjoy:</p>
+                                            <ul className="efr-diff-benefit-list">
+                                                {['Spacious suites', 'Fine dining', "Children's programs", 'Adult-only spaces', 'Wellness facilities', 'Private shore excursions'].map((enj, i) => (
+                                                    <li key={i}><CheckCircle size={15} /><span>{enj}</span></li>
                                                 ))}
                                             </ul>
                                         </div>
                                     </div>
-                                )}
-
-                                {efrActivePillar === 2 && (
-                                    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: '20px' }}>
-                                        <div style={{ position: 'relative', height: '200px', overflow: 'hidden', borderRadius: '16px' }}>
-                                            <img src={wellnessRetreatImg} alt="Wellness retreat" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                        </div>
-                                        <h3 style={{ fontSize: '24px', fontWeight: '600', color: '#1c2f4a', margin: 0 }}>Wellness & Rejuvenation</h3>
-                                        <p style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: '1.6', margin: 0 }}>
-                                            Executive retreats often include wellness experiences that benefit every family member. Popular options include:
-                                        </p>
-                                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '8px' }}>
-                                            {[
-                                                { num: '01', text: 'Luxury spas' },
-                                                { num: '02', text: 'Yoga sessions' },
-                                                { num: '03', text: 'Meditation' },
-                                                { num: '04', text: 'Fitness programs' },
-                                                { num: '05', text: 'Nature hikes' },
-                                                { num: '06', text: 'Healthy cuisine' },
-                                                { num: '07', text: 'Thermal spas' },
-                                                { num: '08', text: 'Beach relaxation' }
-                                            ].map((wel, i) => (
-                                                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 10px', background: 'rgba(16, 185, 129, 0.04)', borderRadius: '8px', border: '1px solid rgba(16, 185, 129, 0.08)' }}>
-                                                    <span style={{ fontSize: '10px', fontWeight: '700', color: '#10b981' }}>{wel.num}</span>
-                                                    <span style={{ fontSize: '12px', fontWeight: '500', color: '#4a5568' }}>{wel.text}</span>
+                                </div>
+                            )}
+                            {efrActivePillar === 2 && (
+                                <div className="efr-diff-detail-card">
+                                    <div className="efr-diff-detail-img">
+                                        <img src={wellnessRetreatImg} alt="Wellness retreat" />
+                                    </div>
+                                    <div className="efr-diff-detail-body">
+                                        <h3 className="efr-diff-detail-title">Wellness & Rejuvenation</h3>
+                                        <p className="efr-diff-detail-desc">Executive retreats often include wellness experiences that benefit every family member. Popular options include:</p>
+                                        <div className="efr-diff-wellness-grid">
+                                            {['Luxury spas', 'Yoga sessions', 'Meditation', 'Fitness programs', 'Nature hikes', 'Healthy cuisine', 'Thermal spas', 'Beach relaxation'].map((wel, i) => (
+                                                <div key={i} className="efr-diff-wellness-item">
+                                                    <span className="efr-diff-wellness-num">{String(i + 1).padStart(2, '0')}</span>
+                                                    <span>{wel}</span>
                                                 </div>
                                             ))}
                                         </div>
-                                        <div style={{ height: '1px', background: 'rgba(39, 68, 114, 0.1)' }}></div>
-                                        <div style={{ padding: '14px 16px', background: 'rgba(39, 68, 114, 0.03)', borderRadius: '12px', borderLeft: '4px solid #274472', marginTop: 'auto' }}>
-                                            <p style={{ fontSize: '13px', color: '#4a5568', lineHeight: '1.5', margin: 0, fontStyle: 'italic' }}>
-                                                Wellness activities help families recharge while spending meaningful time together.
-                                            </p>
+                                        <div className="efr-diff-wellness-quote">
+                                            <p>Wellness activities help families recharge while spending meaningful time together.</p>
                                         </div>
                                     </div>
-                                )}
-
-                            </div>
+                                </div>
+                            )}
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -798,7 +642,7 @@ function ExecutiveFamilyRetreats() {
                                 <span style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '0.05em', color: '#274472', textTransform: 'uppercase' }}>Adventure & Cultural Experiences</span>
                             </div>
 
-                            <h2 style={{ fontSize: '38px', fontWeight: '600', color: '#1c2f4a', lineHeight: '1.25', margin: 0 }}>
+                            <h2 style={{ fontSize: '38px', fontWeight: '600', color: '#274472', lineHeight: '1.25', margin: 0 }}>
                                 Combining Relaxation With Immersive Experiences
                             </h2>
 
@@ -1047,7 +891,7 @@ function ExecutiveFamilyRetreats() {
                             }}>
                                 <div>
                                     <span style={{ fontSize: '11px', fontWeight: '700', color: '#10b981', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '8px' }}>EXCLUSIVE RETREAT OVERVIEW</span>
-                                    <h3 style={{ fontSize: '28px', fontWeight: '600', color: '#ffffff', margin: 0, lineHeight: '1.3' }}>
+                                    <h3 style={{ fontSize: '28px', fontWeight: '600', color: '#ffffff', margin: 0, lineHeight: '1.3', textAlign: 'left' }}>
                                         {efrShowcaseCategories[efrSelectedCategory].title}
                                     </h3>
                                 </div>
@@ -1098,97 +942,68 @@ function ExecutiveFamilyRetreats() {
             </section>
 
             {/* CELEBRATING IMPORTANT MILESTONES */}
-            <section id="executive-milestones-insight" className="efr-expert-editorial-section efr-growth-insight-section">
-                <div className="efr-expert-editorial-container">
-                    <div className="efr-expert-editorial-card">
+            <section id="executive-milestones-insight" className="efr-milestones-section">
+                <div className="efr-milestones-split">
 
-                        {/* Left Side: Editorial Portrait and Floating Stat Badge */}
-                        <div className="efr-editorial-portrait-block">
-                            <div className="efr-editorial-image-frame">
-                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Travel Expert" />
-                                <div className="efr-editorial-gradient-layer"></div>
-                            </div>
-
-                            <div className="efr-editorial-floating-stat">
-                                <div className="efr-stat-tile">
-                                    <span className="efr-stat-number">40+</span>
-                                    <span className="efr-stat-label">Years Experience</span>
+                    <div className="efr-milestones-img-col">
+                        <div className="efr-milestones-img-wrap">
+                            <img src={celebrationImg} alt="Family milestone celebration luxury travel" className="efr-milestones-img" />
+                            <div className="efr-milestones-stats">
+                                <div className="efr-milestones-stat">
+                                    <span className="efr-milestones-stat-number">40+</span>
+                                    <span className="efr-milestones-stat-label">Years of Expertise</span>
                                 </div>
-                                <div className="efr-stat-divider"></div>
-                                <div className="efr-stat-tile">
-                                    <span className="efr-stat-number">121+</span>
-                                    <span className="efr-stat-label">Countries Visited</span>
+                                <div className="efr-milestones-divider" />
+                                <div className="efr-milestones-stat">
+                                    <span className="efr-milestones-stat-number">121+</span>
+                                    <span className="efr-milestones-stat-label">Countries Visited</span>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Right Side: Editorial Text & Structured Lists */}
-                        <div className="efr-editorial-content-block">
-                            <div className="efr-editorial-header">
-                                <div className="efr-editorial-eyebrow-container">
-                                    <Award size={18} className="efr-editorial-icon-badge" />
-                                    <span className="efr-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                </div>
-                                <h2 className="efr-editorial-title">
-                                    Celebrating Important <br className="efr-growth-title-break" />Milestones
-                                </h2>
-                                <div className="efr-editorial-accent-bar"></div>
-                            </div>
+                    <div className="efr-milestones-content-col">
 
-                            <p className="efr-editorial-lead-para">
-                                Executive family retreats are ideal for celebrating life's biggest achievements.
-                            </p>
+                        <div className="efr-milestones-eyebrow-row">
+                            <Award size={15} className="efr-milestones-eyebrow-icon" />
+                            <span className="efr-milestones-eyebrow">Expert Insight from Angela Hughes</span>
+                        </div>
 
-                            <div className="efr-priorities-box">
-                                <p className="efr-priorities-intro">
-                                    Popular occasions include:
-                                </p>
-                                <div className="efr-priorities-grid-pills">
-                                    {[
-                                        'Anniversary celebrations',
-                                        'Retirement',
-                                        'Birthday milestones',
-                                        'Graduations',
-                                        'Career achievements',
-                                        'Family reunions',
-                                        'Holiday vacations',
-                                        'Business success celebrations'
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="efr-priority-pill-item">
-                                            <CheckCircle size={15} className="efr-priority-check" />
-                                            <span>{item}</span>
+                        <h2 className="efr-milestones-title">Celebrating Important Milestones</h2>
+                        <div className="efr-milestones-accent-bar" />
+
+                        <p className="efr-milestones-lead">
+                            Executive family retreats are ideal for celebrating life's biggest achievements. Every celebration becomes a memorable experience shared with those who matter most.
+                        </p>
+
+                        <span className="efr-milestones-occasions-label">Popular occasions include:</span>
+
+                        <div className="efr-milestones-grid">
+                            {[
+                                { label: 'Anniversary celebrations', icon: Heart },
+                                { label: 'Retirement', icon: Sparkles },
+                                { label: 'Birthday milestones', icon: Star },
+                                { label: 'Graduations', icon: Award },
+                                { label: 'Career achievements', icon: Briefcase },
+                                { label: 'Family reunions', icon: Users },
+                                { label: 'Holiday vacations', icon: Sun },
+                                { label: 'Business success celebrations', icon: Crown },
+                            ].map((item, idx) => {
+                                const IconComp = item.icon
+                                return (
+                                    <div key={idx} className="efr-milestones-card">
+                                        <div className="efr-milestones-card-icon">
+                                            <IconComp size={18} />
                                         </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <p className="efr-editorial-body-para">
-                                Every celebration becomes a memorable experience shared with those who matter most. As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps executive families navigate increasingly complex travel choices with real-world expertise.
-                            </p>
-
-                            <div className="efr-expertise-section-box">
-                                <span className="efr-expertise-intro-label">Her expertise spans:</span>
-                                <div className="efr-expertise-horizontal-strip">
-                                    {[
-                                        { title: 'Luxury cruises', icon: Ship },
-                                        { title: 'Private villas', icon: Home },
-                                        { title: 'Wellness travel', icon: Waves },
-                                        { title: 'Safaris', icon: Globe },
-                                        { title: 'Premium global travel planning', icon: Sparkles }
-                                    ].map((item, idx) => {
-                                        const IconComponent = item.icon
-                                        return (
-                                            <div key={idx} className="efr-expertise-pills-row">
-                                                <div className="efr-expertise-pill-icon-box">
-                                                    <IconComponent size={14} />
-                                                </div>
-                                                <span className="efr-expertise-pill-text">{item.title}</span>
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                            </div>
+                                        <span className="efr-milestones-card-label">{item.label}</span>
+                                    </div>
+                                )
+                            })}
                         </div>
+
+                        <p className="efr-milestones-expertise-text">
+                            As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps executive families navigate complex travel choices with real-world expertise spanning luxury cruises, private villas, wellness travel, safaris, and premium global travel planning.
+                        </p>
 
                     </div>
                 </div>
@@ -1453,7 +1268,7 @@ function ExecutiveFamilyRetreats() {
                     {/* Header Block */}
                     <div className="efr-work-header-card">
                         <span className="efr-work-eyebrow">ELITE TRAVEL ADVISOR ADVANTAGE</span>
-                        <h2 className="efr-section-heading white-heading">Why Executive Families Trust Trips & Ships Luxury Travel</h2>
+                        <h2 className="efr-section-heading white-heading">Why Executive Families Trust <br /> Trips & Ships Luxury Travel</h2>
                         <div className="efr-heading-separator-bar custom-bar"></div>
                         <p className="efr-work-intro-para">
                             Whether you're planning a relaxing family retreat, celebrating a milestone, or simply creating time together, we'll design a journey that exceeds every expectation.
@@ -1635,20 +1450,6 @@ function ExecutiveFamilyRetreats() {
                 </div>
             </section>
 
-            {/* BRAND TRANSITION BANNER — MULTIGENERATIONAL VACATION */}
-            <div className="efr-brand-transition-banner" style={{ width: '100%', height: '450px', overflow: 'hidden', position: 'relative', margin: '60px 0 0' }}>
-                <img
-                    src={audiencePhotoImg}
-                    alt="Multigenerational family luxury travel"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-                <div style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background: 'linear-gradient(180deg, rgba(15, 28, 46, 0.1) 0%, rgba(15, 28, 46, 0.4) 100%)'
-                }}></div>
-            </div>
-
             {/* FAQ SECTION */}
             <section className="efr-faq-main-section">
                 <div className="efr-faq-container">
@@ -1684,7 +1485,7 @@ function ExecutiveFamilyRetreats() {
                 <div className="efr-cta-bg-pattern-layer"></div>
                 <div className="efr-cta-content-relative">
                     <div className="efr-cta-inner-wrapper">
-                        <h2 className="efr-cta-heading-white">Ready to Reconnect With What Matters Most?</h2>
+                        <h2 className="efr-cta-heading-white">Ready to Reconnect With <br /> What Matters Most?</h2>
                         <div className="efr-cta-separator-white"></div>
 
                         <p className="efr-cta-paragraph-white">
@@ -1718,10 +1519,10 @@ function ExecutiveFamilyRetreats() {
                         </p>
 
                         <div className="efr-cta-button-group">
-                            <button className="efr-primary-cta-button">
+                            <Link to="/contact" className="efr-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="efr-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options

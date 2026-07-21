@@ -678,15 +678,12 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 4 / 5;
     box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
     border: 1px solid rgba(39, 68, 114, 0.1);
 }
 
 .efr-editorial-image-frame img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
     transition: transform 0.8s ease;
 }
@@ -2154,67 +2151,9 @@
 
 .efr-excel-section {
     position: relative;
-    background: linear-gradient(135deg, var(--efr-bg-dark) 0%, var(--efr-bg-dark2) 100%) !important;
-    padding: 100px 20px !important;
+    background: #0f1c2e;
+    padding: 100px 20px;
     overflow: hidden;
-    color: #ffffff;
-}
-
-.efr-excel-coord {
-    position: absolute;
-    font-size: 11px;
-    font-family: monospace, sans-serif;
-    color: var(--efr-bg-soft);
-    opacity: 0.15;
-    letter-spacing: 0.25em;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.coord-tl {
-    top: 40px;
-    left: 40px;
-}
-
-.coord-tr {
-    top: 40px;
-    right: 40px;
-}
-
-.coord-bl {
-    bottom: 40px;
-    left: 40px;
-}
-
-.coord-br {
-    bottom: 40px;
-    right: 40px;
-}
-
-.efr-excel-glow-one {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(231, 243, 245, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
-    top: -250px;
-    right: -150px;
-    z-index: 0;
-    pointer-events: none;
-    filter: blur(90px);
-}
-
-.efr-excel-glow-two {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(39, 68, 114, 0.35) 0%, rgba(0, 0, 0, 0) 70%);
-    bottom: -200px;
-    left: -150px;
-    z-index: 0;
-    pointer-events: none;
-    filter: blur(80px);
 }
 
 .efr-excel-container {
@@ -2226,69 +2165,76 @@
 
 .efr-excel-header-block {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+}
+
+.efr-excel-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #8ab4d6;
+    margin-bottom: 12px;
 }
 
 .efr-excel-main-title {
-    font-size: 48px !important;
-    line-height: 1.25 !important;
-    font-weight: 500 !important;
-    color: #ffffff !important;
-    margin: 0 0 20px 0 !important;
-    letter-spacing: -0.01em;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
 }
 
 .efr-excel-separator {
-    width: 100px;
+    width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, transparent 0%, var(--efr-bg-soft) 50%, transparent 100%);
-    margin: 0 auto 28px;
-}
-
-.efr-excel-lead-paragraph {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-    color: #cbd5e1 !important;
-    max-width: 800px;
+    background: #8ab4d6;
     margin: 0 auto;
-    font-weight: 300;
 }
 
-.efr-excel-grid {
+.efr-excel-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 70px;
+    gap: 48px;
+    align-items: start;
+}
+
+.efr-excel-image-col img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.efr-excel-content-col {
+    display: grid;
+    gap: 24px;
 }
 
 .efr-excel-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-    border: 1px solid rgba(231, 243, 245, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
-    padding: 50px 40px;
-    height: 100%;
-    backdrop-filter: blur(15px);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    padding: 32px 32px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .efr-excel-card:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(231, 243, 245, 0.22);
-    transform: translateY(-6px);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4), 0 0 30px rgba(231, 243, 245, 0.03);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
 }
 
 .efr-excel-card-heading {
-    font-size: 15px !important;
-    line-height: 1.6 !important;
-    font-weight: 600 !important;
-    color: var(--efr-bg-soft) !important;
-    margin: 0 0 32px 0 !important;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #8ab4d6;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding-bottom: 24px;
 }
 
 .efr-excel-list {
@@ -2296,126 +2242,75 @@
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 16px;
+    gap: 12px;
 }
 
 .efr-excel-list-item {
     display: flex;
     align-items: center;
-    gap: 18px;
-    padding: 14px 20px;
-    background: rgba(255, 255, 255, 0.015);
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    gap: 14px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.25s ease;
 }
 
 .efr-excel-list-item:hover {
-    background: rgba(231, 243, 245, 0.05);
-    border-color: rgba(231, 243, 245, 0.2);
-    padding-left: 26px;
-    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
-.efr-excel-icon-wrapper {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(231, 243, 245, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--efr-bg-soft);
+.efr-excel-list-item svg {
+    color: #8ab4d6;
     flex-shrink: 0;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(231, 243, 245, 0.15);
-}
-
-.efr-excel-list-item:hover .efr-excel-icon-wrapper {
-    background: var(--efr-bg-soft);
-    color: var(--efr-bg-dark);
-    transform: scale(1.1) rotate(8deg);
 }
 
 .efr-excel-list-item span {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    color: #f8fafc;
+    color: #e2e8f0;
 }
 
 .efr-excel-footer-block {
-    max-width: 800px;
-    margin: 50px auto 0;
-    background: linear-gradient(135deg, rgba(231, 243, 245, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-    border: 1px solid rgba(231, 243, 245, 0.08);
-    padding: 40px 50px;
-    border-radius: 24px;
-    backdrop-filter: blur(15px);
-    position: relative;
+    max-width: 700px;
+    margin: 60px auto 0;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-}
-
-.efr-excel-footer-badge {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: rgba(231, 243, 245, 0.06);
-    border: 1px solid rgba(231, 243, 245, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px;
-    color: var(--efr-bg-soft);
 }
 
 .efr-excel-footer-paragraph {
-    font-size: 19px !important;
-    line-height: 1.8 !important;
-    color: #e2e8f0 !important;
-    margin: 0 !important;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin: 0;
     font-style: italic;
-    font-weight: 300;
 }
 
 @media (max-width: 1024px) {
-    .efr-excel-coord {
-        display: none;
-    }
-
-    .efr-excel-grid {
+    .efr-excel-split {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 36px;
     }
-
+    .efr-excel-image-col img {
+        height: 360px;
+    }
     .efr-excel-main-title {
-        font-size: 34px !important;
+        font-size: 34px;
     }
 }
 
 @media (max-width: 767px) {
     .efr-excel-section {
-        padding: 70px 16px !important;
+        padding: 70px 16px;
     }
-
     .efr-excel-main-title {
-        font-size: 28px !important;
+        font-size: 28px;
     }
-
-    .efr-excel-lead-paragraph {
-        font-size: 17px !important;
+    .efr-excel-image-col img {
+        height: 260px;
     }
-
     .efr-excel-card {
-        padding: 30px 24px;
-    }
-
-    .efr-excel-footer-block {
-        padding: 24px 20px;
-    }
-
-    .efr-excel-footer-paragraph {
-        font-size: 17px !important;
+        padding: 24px;
     }
 }
 
@@ -2552,58 +2447,285 @@
     margin: 0 auto;
 }
 
-.efr-diff-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.efr-diff-panel-layout {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
     align-items: stretch;
 }
 
-.efr-diff-card {
-    background: #ffffff;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 20px;
-    padding: 40px 32px;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+.efr-diff-selector-col {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    flex: 1 1 350px;
 }
 
-.efr-diff-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
-    border-color: rgba(39, 68, 114, 0.15);
+.efr-diff-pillar-btn {
+    text-align: left;
+    justify-content: flex-start;
+    padding: 22px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    background: #ffffff;
+    color: #1c2f4a;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    font-family: inherit;
+    box-shadow: none;
 }
 
-.efr-diff-card-navy {
-    background: linear-gradient(135deg, var(--efr-navy) 0%, #1c3254 100%) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.15);
+.efr-diff-pillar-btn:hover {
+    border-color: rgba(39, 68, 114, 0.25);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
 }
 
-.efr-diff-card-navy .efr-diff-card-title {
-    color: #ffffff !important;
-    font-size: 15px;
+.efr-diff-pillar-btn.active {
+    background: linear-gradient(135deg, #274472 0%, #1c2f4a 100%);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 12px 24px rgba(39, 68, 114, 0.18);
+}
+
+.efr-diff-pillar-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.05);
+    color: #274472;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.efr-diff-pillar-btn.active .efr-diff-pillar-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.efr-diff-pillar-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.efr-diff-pillar-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #274472;
+    transition: color 0.3s ease;
+}
+
+.efr-diff-pillar-btn.active .efr-diff-pillar-num {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.efr-diff-pillar-title {
+    font-size: 18px;
     font-weight: 600;
+    margin: 0;
+    color: inherit;
+    text-align: left;
 }
 
-.efr-diff-card-navy .efr-diff-card-text {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 18px !important;
+.efr-diff-pillar-desc {
+    font-size: 13px;
+    margin: 4px 0 0;
+    opacity: 0.8;
+    color: inherit;
+    line-height: 1.4;
 }
 
-.efr-diff-card-navy .efr-diff-card-text-secondary {
-    color: #ffffff !important;
-    font-size: 18px !important;
+.efr-diff-detail-col {
+    flex: 2 1 500px;
+    display: flex;
 }
 
-.efr-diff-card-navy .efr-diff-experience-list li span {
-    color: rgba(255, 255, 255, 0.9);
+.efr-diff-detail-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.efr-diff-card-navy .efr-diff-list-icon {
-    color: #ffffff !important;
+.efr-diff-detail-img {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.efr-diff-detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.efr-diff-img-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(15, 28, 46, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.efr-diff-detail-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.efr-diff-detail-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c2f4a;
+    margin: 0;
+}
+
+.efr-diff-detail-desc {
+    font-size: 14.5px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.efr-diff-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.efr-diff-tag {
+    background: rgba(39, 68, 114, 0.05);
+    color: #274472;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 100px;
+}
+
+.efr-diff-detail-divider {
+    height: 1px;
+    background: rgba(39, 68, 114, 0.1);
+}
+
+.efr-diff-benefit-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1c2f4a;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.efr-diff-benefit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.efr-diff-benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #4a5568;
+}
+
+.efr-diff-benefit-list svg {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.efr-diff-wellness-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 8px;
+}
+
+.efr-diff-wellness-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: rgba(16, 185, 129, 0.04);
+    border-radius: 8px;
+    border: 1px solid rgba(16, 185, 129, 0.08);
+    font-size: 12px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.efr-diff-wellness-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.efr-diff-wellness-quote {
+    padding: 14px 16px;
+    background: rgba(39, 68, 114, 0.03);
+    border-radius: 12px;
+    border-left: 4px solid #274472;
+}
+
+.efr-diff-wellness-quote p {
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .efr-diff-panel-layout {
+        flex-direction: column;
+    }
+    .efr-diff-main-title {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .efr-diff-section {
+        padding: 70px 16px;
+    }
+    .efr-diff-main-title {
+        font-size: 28px !important;
+    }
+    .efr-diff-detail-body {
+        padding: 24px;
+    }
+    .efr-diff-benefit-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 .efr-diff-card-navy .efr-diff-icon-box {
@@ -3283,15 +3405,12 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 4 / 5;
     box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
     border: 1px solid rgba(39, 68, 114, 0.1);
 }
 
 .efr-editorial-image-frame img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
     transition: transform 0.8s ease;
 }
@@ -3819,7 +3938,7 @@
 }
 
 .efr-luxury-definition-section {
-    background: var(--bg-soft);
+    background: #ffffff;
     padding: 100px 20px;
 }
 
@@ -7583,5 +7702,264 @@
     }
     .efr-intro-photo-frame img {
         height: 170px;
+    }
+}
+
+/* ============================================================
+   CELEBRATING IMPORTANT MILESTONES — TWO-COLUMN SPLIT
+   ============================================================ */
+
+.efr-milestones-section {
+    padding: 100px 24px;
+    background-color: var(--efr-bg-soft);
+}
+
+.efr-milestones-split {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+/* --- Left: Image Column --- */
+.efr-milestones-img-col {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.efr-milestones-img-wrap {
+    position: relative;
+    line-height: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(39, 68, 114, 0.15);
+}
+
+.efr-milestones-img {
+    width: 100%;
+    display: block;
+}
+
+.efr-milestones-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 28, 46, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.efr-milestones-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.efr-milestones-stat-number {
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--efr-green, #10b981);
+    line-height: 1;
+}
+
+.efr-milestones-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.efr-milestones-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Right: Content Column --- */
+.efr-milestones-content-col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.efr-milestones-content-col::-webkit-scrollbar {
+    width: 4px;
+}
+
+.efr-milestones-content-col::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.efr-milestones-content-col::-webkit-scrollbar-thumb {
+    background: rgba(39, 68, 114, 0.2);
+    border-radius: 4px;
+}
+
+.efr-milestones-eyebrow-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 100px;
+    padding: 6px 14px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.efr-milestones-eyebrow-icon {
+    color: var(--efr-navy);
+}
+
+.efr-milestones-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--efr-navy);
+}
+
+.efr-milestones-title {
+    font-family: "Playfair Display", serif;
+    font-size: 46px !important;
+    font-weight: 600 !important;
+    color: var(--efr-navy) !important;
+    margin: 0 0 16px 0;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+
+.efr-milestones-accent-bar {
+    width: 50px;
+    height: 3px;
+    background: var(--efr-navy);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.efr-milestones-lead {
+    font-size: 17px !important;
+    color: #4a5568 !important;
+    line-height: 1.7 !important;
+    margin: 0 0 32px 0 !important;
+}
+
+.efr-milestones-occasions-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #718096;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.efr-milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.efr-milestones-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.efr-milestones-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.efr-milestones-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.05);
+    color: var(--efr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.efr-milestones-card-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2d3748;
+    line-height: 1.3;
+}
+
+.efr-milestones-expertise-text {
+    font-size: 14.5px !important;
+    color: #4a5568 !important;
+    line-height: 1.7 !important;
+    margin: 0 !important;
+    padding-top: 24px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+    .efr-milestones-split {
+        flex-direction: column;
+        gap: 48px;
+        max-height: none;
+        overflow: visible;
+    }
+    .efr-milestones-img-col {
+        flex: 1 1 100%;
+    }
+    .efr-milestones-content-col {
+        overflow-y: visible;
+        padding-right: 0;
+    }
+    .efr-milestones-title {
+        font-size: 38px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .efr-milestones-section {
+        padding: 60px 16px;
+    }
+    .efr-milestones-title {
+        font-size: 32px !important;
+    }
+    .efr-milestones-grid {
+        grid-template-columns: 1fr;
+    }
+    .efr-milestones-stats {
+        gap: 16px;
+        padding: 16px;
+    }
+    .efr-milestones-stat-number {
+        font-size: 28px;
     }
 }
