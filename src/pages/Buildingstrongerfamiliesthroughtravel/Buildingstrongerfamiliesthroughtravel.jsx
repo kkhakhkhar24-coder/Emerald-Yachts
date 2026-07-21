@@ -1,45 +1,45 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Buildingstrongerfamiliesthroughtravel.css'
 
-// import hero1 from '../../assets/BuildingStrongerFamiliesThroughTravel/hero1.jpg'
-// import hero2 from '../../assets/BuildingStrongerFamiliesThroughTravel/hero2.jpg'
-// import hero3 from '../../assets/BuildingStrongerFamiliesThroughTravel/hero3.jpg'
+import hero1 from '../../assets/seo_images/multigenerational-luxury-family-vacation-oceanfront-villa-private-resort.webp'
+import hero2 from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import hero3 from '../../assets/seo_images/luxury-private-villa-with-infinity-pool-mediterranean-coastal-family-vacation.webp'
 
-// import introPrimaryImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Multigenerational family on luxury vacation.webp'
-// import introSecondaryImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family sharing travel memories together.webp'
+import introPrimaryImg from '../../assets/seo_images/multigenerational-family-walking-through-tuscan-village-luxury-italy-vacation.webp'
+import introSecondaryImg from '../../assets/seo_images/luxury-multigenerational-family-dinner-seaside-private-villa-mediterranean-vacation.webp'
 
-// import strengthenImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family quality time on vacation.webp'
+import strengthenImg from '../../assets/seo_images/luxury-family-relaxing-private-seaside-villa-outdoor-lounge-mediterranean-holiday.webp'
 
-// import memorySafariImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Grandchildren spotting elephant on safari.webp'
-// import memoryRiverCruiseImg from '../../assets/BuildingStrongerFamiliesThroughTravel/European river cruise anniversary celebration.webp'
-// import memoryMediterraneanImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Mediterranean sunset three generations.webp'
-// import memoryCookingClassImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family cooking class in Italy.webp'
-// import memoryAntarcticaImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Antarctica expedition family explorers.webp'
+import memorySafariImg from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
+import memoryRiverCruiseImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-sunset-germany-european-waterways.webp'
+import memoryMediterraneanImg from '../../assets/seo_images/porto-portugal-douro-river-dom-luis-bridge-sunset-cityscape.webp'
+import memoryCookingClassImg from '../../assets/seo_images/luxury-family-dining-private-oceanfront-villa-multigenerational-travel-experience.webp'
+import memoryAntarcticaImg from '../../assets/seo_images/alaska-expedition-cruise.png'
 
-// import intentionalImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Intentional family travel planning.webp'
+import intentionalImg from '../../assets/seo_images/luxury-family-travel-consultation-private-vacation-planning-with-travel-advisor.webp'
 
-// import legacyHolidayImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Annual holiday family vacation.webp'
-// import legacyCruiseImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family luxury cruise tradition.webp'
-// import legacySafariImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Safari adventure family tradition.webp'
-// import legacyCulturalImg from '../../assets/BuildingStrongerFamiliesThroughTravel/International cultural journey family.webp'
-// import legacyGraduationImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Graduation trip celebration.webp'
-// import legacyMilestoneImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Milestone celebration family travel.webp'
-// import legacyGrandparentImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Grandparent grandchild adventure.webp'
-// import legacyReunionImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Multi-generational family reunion.webp'
+import legacyHolidayImg from '../../assets/seo_images/multigenerational-family-beach-vacation-luxury-tropical-family-travel.webp'
+import legacyCruiseImg from '../../assets/seo_images/luxury-rhine-river-cruise-ship-germany-scenic-castle-voyage.webp'
+import legacySafariImg from '../../assets/seo_images/luxury-african-safari-lodge-elephant-watering-hole-wildlife-view-family-travel.webp'
+import legacyCulturalImg from '../../assets/seo_images/multigenerational-family-walking-tour-luxury-european-village-vacation.webp'
+import legacyGraduationImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import legacyMilestoneImg from '../../assets/seo_images/multigenerational-family-vacation-rome-colosseum-luxury-italy-travel.webp'
+import legacyGrandparentImg from '../../assets/seo_images/multigenerational-family-wellness-yoga-retreat-luxury-resort-vacation.webp'
+import legacyReunionImg from '../../assets/seo_images/family-governance-retreat-luxury-mountain-lodge-private-family-office-meeting.webp'
 
-// import generationGrandparentsImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Grandparents sharing wisdom travel.webp'
-// import generationParentsImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Parents reconnecting family vacation.webp'
-// import generationChildrenImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Children curiosity cultural travel.webp'
+import generationGrandparentsImg from '../../assets/seo_images/active-senior-fitness-vacation-luxury-wellness-resort-morning-exercise.webp'
+import generationParentsImg from '../../assets/seo_images/private-luxury-tropical-villa-exclusive-high-end-vacation-retreat.webp'
+import generationChildrenImg from '../../assets/seo_images/philanthropic-family-travel-cultural-community-experience-sustainable-tourism.webp'
 
-// import learningImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family learning through travel experience.webp'
+import learningImg from '../../assets/seo_images/private-guided-cultural-tour-luxury-small-group-historic-city-experience.webp'
 
-// import celebrateBirthdayImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Milestone birthday celebration travel.webp'
-// import celebrateAnniversaryImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Anniversary celebration luxury travel.webp'
-// import celebrateGraduationImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Graduation celebration family trip.webp'
-// import celebrateReunionImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Family reunion celebration.webp'
+import celebrateBirthdayImg from '../../assets/seo_images/luxury-private-estate-garden-reception-high-end-cultural-travel-experience.webp'
+import celebrateAnniversaryImg from '../../assets/seo_images/douro-valley-portugal-vineyards-river-scenic-wine-country-cruise.webp'
+import celebrateGraduationImg from '../../assets/seo_images/nile-river-cruise-giza-pyramids-egypt-luxury-travel-experience.webp'
+import celebrateReunionImg from '../../assets/seo_images/danube-river-cruise-regensburg-germany-historic-old-town-panorama.webp'
 
-// import chooseImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Trips and Ships family travel planning.webp'
-// import angelaHughesImg from '../../assets/BuildingStrongerFamiliesThroughTravel/Angela Hughes CEO Trips and Ships.webp'
+import chooseImg from '../../assets/seo_images/luxury-resort-personalized-concierge-vip-hotel-check-in-experience.webp'
+import angelaHughesImg from '../../assets/Media (1).jpg'
 
 import {
     Heart, Users, Sparkles, Compass, GraduationCap, Award,
@@ -49,10 +49,15 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function BuildingStrongerFamiliesThroughTravel() {
     const [bsfCurrentHero, setBsfCurrentHero] = useState(0)
-    const bsfHeroImages = []
+    const bsfHeroImages = [
+        { url: hero1, position: 'center' },
+        { url: hero2, position: 'center' },
+        { url: hero3, position: 'center' }
+    ]
 
     useEffect(() => {
         const bsfTimer = setInterval(() => {
@@ -79,11 +84,11 @@ function BuildingStrongerFamiliesThroughTravel() {
     ]
 
     const bsfMemoryGallery = [
-        // { img: memorySafariImg, caption: 'The safari where grandchildren spotted their first elephant.', wide: true },
-        // { img: memoryRiverCruiseImg, caption: 'The European river cruise celebrating an anniversary.', wide: false },
-        // { img: memoryMediterraneanImg, caption: 'The Mediterranean sunset shared by three generations.', wide: false },
-        // { img: memoryCookingClassImg, caption: 'The family cooking class in Italy.', wide: false },
-        // { img: memoryAntarcticaImg, caption: 'The expedition to Antarctica that inspired future explorers.', wide: true }
+        { img: memorySafariImg, caption: 'The safari where grandchildren spotted their first elephant.', wide: true },
+        { img: memoryRiverCruiseImg, caption: 'The European river cruise celebrating an anniversary.', wide: false },
+        { img: memoryMediterraneanImg, caption: 'The Mediterranean sunset shared by three generations.', wide: false },
+        { img: memoryCookingClassImg, caption: 'The family cooking class in Italy.', wide: false },
+        { img: memoryAntarcticaImg, caption: 'The expedition to Antarctica that inspired future explorers.', wide: true }
     ]
 
     const bsfIntentionalGoals = [
@@ -97,31 +102,31 @@ function BuildingStrongerFamiliesThroughTravel() {
     ]
 
     const bsfLegacyTraditions = [
-        // { img: legacyHolidayImg, name: 'Annual holiday vacations' },
-        // { img: legacyCruiseImg, name: 'Family cruises' },
-        // { img: legacySafariImg, name: 'Safari adventures' },
-        // { img: legacyCulturalImg, name: 'International cultural journeys' },
-        // { img: legacyGraduationImg, name: 'Graduation trips' },
-        // { img: legacyMilestoneImg, name: 'Milestone celebrations' },
-        // { img: legacyGrandparentImg, name: 'Grandparent-grandchild adventures' },
-        // { img: legacyReunionImg, name: 'Multi-generational reunions' }
+        { img: legacyHolidayImg, name: 'Annual holiday vacations' },
+        { img: legacyCruiseImg, name: 'Family cruises' },
+        { img: legacySafariImg, name: 'Safari adventures' },
+        { img: legacyCulturalImg, name: 'International cultural journeys' },
+        { img: legacyGraduationImg, name: 'Graduation trips' },
+        { img: legacyMilestoneImg, name: 'Milestone celebrations' },
+        { img: legacyGrandparentImg, name: 'Grandparent-grandchild adventures' },
+        { img: legacyReunionImg, name: 'Multi-generational reunions' }
     ]
 
     const bsfGenerationCards = [
         {
-            // img: generationGrandparentsImg,
+            img: generationGrandparentsImg,
             icon: Crown,
             title: 'Grandparents',
             text: 'Grandparents can share wisdom and life experiences.'
         },
         {
-            // img: generationParentsImg,
+            img: generationParentsImg,
             icon: Heart,
             title: 'Parents',
             text: 'Parents can step away from professional responsibilities and focus on meaningful family time.'
         },
         {
-            // img: generationChildrenImg,
+            img: generationChildrenImg,
             icon: Baby,
             title: 'Children',
             text: 'Children develop confidence, curiosity, and cultural awareness.'
@@ -140,10 +145,10 @@ function BuildingStrongerFamiliesThroughTravel() {
     ]
 
     const bsfCelebrateItems = [
-        // { img: celebrateBirthdayImg, label: 'Milestone birthdays' },
-        // { img: celebrateAnniversaryImg, label: 'Anniversaries' },
-        // { img: celebrateGraduationImg, label: 'Graduations' },
-        // { img: celebrateReunionImg, label: 'Family reunions' }
+        { img: celebrateBirthdayImg, label: 'Milestone birthdays' },
+        { img: celebrateAnniversaryImg, label: 'Anniversaries' },
+        { img: celebrateGraduationImg, label: 'Graduations' },
+        { img: celebrateReunionImg, label: 'Family reunions' }
     ]
 
     const bsfCelebrateChips = ['Retirements', 'Business successes', 'Holiday traditions', 'Special achievements']
@@ -397,7 +402,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                     <div
                         key={idx}
                         className={`bsf-hero-background ${bsfCurrentHero === idx ? 'bsf-active' : ''}`}
-                        style={{ backgroundImage: `url(${img})` }}
+                        style={{ backgroundImage: `url(${img.url})` }}
                     />
                 ))}
                 <div className="bsf-hero-overlay-layer"></div>
@@ -412,6 +417,16 @@ function BuildingStrongerFamiliesThroughTravel() {
                     <p className="bsf-hero-subtitle-text">
                         Intentional luxury journeys that reconnect, celebrate, and create traditions built to last for generations.
                     </p>
+                    <div className="bsf-hero-btn-row">
+                        <Link to="/contact" className="bsf-btn-primary">
+                            <Phone size={18} />
+                            Schedule a Consultation
+                        </Link>
+                        <button className="bsf-btn-outline">
+                            <LayoutList size={18} />
+                            Request Itinerary Options
+                        </button>
+                    </div>
                 </div>
                 <div className="bsf-hero-dots-row">
                     {bsfHeroImages.map((_, idx) => (
@@ -438,8 +453,8 @@ function BuildingStrongerFamiliesThroughTravel() {
                             </p>
                         </div>
                         <div className="bsf-intro-image-stack">
-                            {/* <img src={introPrimaryImg} alt="Multigenerational family on luxury vacation" className="bsf-intro-img-primary" />
-                            <img src={introSecondaryImg} alt="Family sharing travel memories together" className="bsf-intro-img-secondary" /> */}
+                            <img src={introPrimaryImg} alt="Multigenerational family on luxury vacation" className="bsf-intro-img-primary" />
+                            <img src={introSecondaryImg} alt="Family sharing travel memories together" className="bsf-intro-img-secondary" />
                         </div>
                     </div>
                 </div>
@@ -449,7 +464,7 @@ function BuildingStrongerFamiliesThroughTravel() {
             <section className="bsf-strengthen-section">
                 <div className="bsf-strengthen-container">
                     <div className="bsf-strengthen-image-frame">
-                        {/* <img src={strengthenImg} alt="Family quality time on vacation" /> */}
+                        <img src={strengthenImg} alt="Family quality time on vacation" />
                         <div className="bsf-strengthen-caption-tag">Slowing down, together</div>
                     </div>
                     <div className="bsf-strengthen-content-col">
@@ -489,7 +504,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                 <div className="bsf-memories-mosaic-grid">
                     {bsfMemoryGallery.map((memory, idx) => (
                         <div key={idx} className={`bsf-memory-tile ${memory.wide ? 'bsf-tile-wide' : ''}`}>
-                            {/* <img src={memory.img} alt={memory.caption} /> */}
+                            <img src={memory.img} alt={memory.caption} />
                             <div className="bsf-memory-tile-overlay">
                                 <p className="bsf-memory-tile-caption">{memory.caption}</p>
                             </div>
@@ -508,7 +523,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                 <div className="bsf-intentional-glow"></div>
                 <div className="bsf-intentional-container">
                     <div className="bsf-intentional-image-col">
-                        {/* <img src={intentionalImg} alt="Intentional family travel planning" /> */}
+                        <img src={intentionalImg} alt="Intentional family travel planning" />
                     </div>
                     <div className="bsf-intentional-text-col">
                         <span className="bsf-hero-eyebrow-tag" style={{ marginBottom: '16px' }}>
@@ -538,7 +553,7 @@ function BuildingStrongerFamiliesThroughTravel() {
             {/* BUILDING A FAMILY LEGACY THROUGH TRAVEL */}
             <section className="bsf-legacy-section">
                 <div className="bsf-legacy-header-block">
-                    <h2 className="bsf-section-heading">Building a Family Legacy Through Travel</h2>
+                    <h2 className="bsf-section-heading">Building a Family Legacy <br /> Through Travel</h2>
                     <div className="bsf-heading-separator-bar bsf-bar-centered"></div>
                     <p className="bsf-legacy-lead-paragraph">
                         Many affluent families focus on leaving financial legacies. Travel creates something equally valuable—a legacy of shared experiences.
@@ -550,7 +565,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                 <div className="bsf-legacy-traditions-grid">
                     {bsfLegacyTraditions.map((tradition, idx) => (
                         <div key={idx} className="bsf-legacy-tradition-card">
-                            {/* <img src={tradition.img} alt={tradition.name} /> */}
+                            <img src={tradition.img} alt={tradition.name} />
                             <div className="bsf-legacy-tradition-overlay">
                                 <span className="bsf-legacy-tradition-name">{tradition.name}</span>
                             </div>
@@ -579,7 +594,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                         return (
                             <div key={idx} className="bsf-generation-card">
                                 <div className="bsf-generation-card-image">
-                                    {/* <img src={card.img} alt={card.title} /> */}
+                                    <img src={card.img} alt={card.title} />
                                 </div>
                                 <div className="bsf-generation-card-body">
                                     <div className="bsf-generation-card-icon-badge">
@@ -601,7 +616,7 @@ function BuildingStrongerFamiliesThroughTravel() {
             <section className="bsf-learning-section">
                 <div className="bsf-learning-container">
                     <div className="bsf-learning-image-col">
-                        {/* <img src={learningImg} alt="Family learning through travel experience" /> */}
+                        <img src={learningImg} alt="Family learning through travel experience" />
                     </div>
                     <div>
                         <h2 className="bsf-section-heading">Learning Through Travel</h2>
@@ -639,7 +654,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                 <div className="bsf-celebrate-collage-grid">
                     {bsfCelebrateItems.map((item, idx) => (
                         <div key={idx} className="bsf-celebrate-collage-tile">
-                            {/* <img src={item.img} alt={item.label} /> */}
+                            <img src={item.img} alt={item.label} />
                         </div>
                     ))}
                 </div>
@@ -676,7 +691,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                             </div>
                         </div>
                         <div className="bsf-choose-image-col">
-                            {/* <img src={chooseImg} alt="Trips and Ships family travel planning" /> */}
+                            <img src={chooseImg} alt="Trips and Ships family travel planning" />
                         </div>
                     </div>
 
@@ -684,22 +699,40 @@ function BuildingStrongerFamiliesThroughTravel() {
                         Whether you're beginning a new family tradition or celebrating generations of shared memories, we're here to help you create journeys that truly matter.
                     </p>
 
+                </div>
+            </section>
+
+            {/* ANGELA HUGHES AUTHORITY SECTION */}
+            <section className="bsf-authority-section">
+                <div className="bsf-authority-section-container">
                     <div className="bsf-authority-card">
                         <div className="bsf-authority-photo-wrap">
-                            {/* <img src={angelaHughesImg} alt="Angela Hughes, CEO of Trips & Ships Luxury Travel" /> */}
-                            <div className="bsf-authority-badge-ring">
-                                <Award size={20} />
-                            </div>
+                            <img src={angelaHughesImg} alt="Angela Hughes, CEO of Trips & Ships Luxury Travel" />
                         </div>
-                        <div>
-                            <h3 className="bsf-authority-name">Angela Hughes</h3>
-                            <span className="bsf-authority-title">CEO, Trips & Ships Luxury Travel</span>
+                        <div className="bsf-authority-content">
+                            <div className="bsf-authority-header">
+                                <span className="bsf-authority-section-label">MEET YOUR ADVISOR</span>
+                                <h3 className="bsf-authority-name">Angela Hughes</h3>
+                                <span className="bsf-authority-title">CEO, Trips & Ships Luxury Travel</span>
+                            </div>
+                            <div className="bsf-authority-stats-row">
+                                <div className="bsf-authority-stat">
+                                    <span className="bsf-authority-stat-value">121+</span>
+                                    <span className="bsf-authority-stat-label">Countries Visited</span>
+                                </div>
+                                <div className="bsf-authority-stat">
+                                    <span className="bsf-authority-stat-value">40+</span>
+                                    <span className="bsf-authority-stat-label">Years Experience</span>
+                                </div>
+                                <div className="bsf-authority-stat">
+                                    <span className="bsf-authority-stat-value">#1</span>
+                                    <span className="bsf-authority-stat-label">Travel Influencer 2026</span>
+                                </div>
+                            </div>
                             <div className="bsf-authority-credentials-row">
-                                <span className="bsf-authority-credential-chip">40+ Years Experience</span>
-                                <span className="bsf-authority-credential-chip">121+ Countries Visited</span>
                                 <span className="bsf-authority-credential-chip">Founder, Luxury Travel University</span>
                                 <span className="bsf-authority-credential-chip">2024 Luxury Travel Influencer of the Year</span>
-                                <span className="bsf-authority-credential-chip">Most Influential Women in Travel 2026 — TravelPulse</span>
+                                <span className="bsf-authority-credential-chip">Most Influential Women in Travel 2026</span>
                             </div>
                             <p className="bsf-authority-bio-text">
                                 With more than four decades guiding families toward journeys that matter, Angela Hughes and the Trips & Ships Luxury Travel team specialize in multigenerational planning, concierge-level service, and itineraries designed around what your family values most.
@@ -744,7 +777,7 @@ function BuildingStrongerFamiliesThroughTravel() {
                 <div className="bsf-cta-bg-pattern-layer"></div>
                 <div className="bsf-cta-content-relative">
                     <div className="bsf-cta-inner-wrapper">
-                        <h2 className="bsf-cta-heading-white">Ready to Build Your Family's Next Chapter?</h2>
+                        <h2 className="bsf-cta-heading-white">Ready to Build Your Family's <br /> Next Chapter?</h2>
                         <div className="bsf-cta-separator-white"></div>
 
                         <p className="bsf-cta-paragraph-white">
@@ -768,10 +801,10 @@ function BuildingStrongerFamiliesThroughTravel() {
                         </p>
 
                         <div className="bsf-cta-button-group">
-                            <button className="bsf-primary-cta-button">
+                            <Link to="/contact" className="bsf-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="bsf-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options

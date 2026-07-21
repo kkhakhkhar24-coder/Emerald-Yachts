@@ -92,6 +92,7 @@
 .lwr-btn-primary {
     background: var(--lwr-navy);
     color: #ffffff;
+    text-decoration: none;
     border: none;
     padding: 16px 36px;
     border-radius: 8px;
@@ -369,114 +370,335 @@
    ============================================================================================ */
 
 /* ------------------------------------------------------------
-   1) WHY CHOOSE A WELLNESS VACATION? — image w/ floating badge + checklist
+   1) WHY CHOOSE A WELLNESS VACATION? — Fresh editorial layout
    ------------------------------------------------------------ */
 .lwr-why-section {
-    padding: 100px 20px;
-    background: var(--lwr-bg-soft);
+    padding: 110px 20px;
+    background: linear-gradient(165deg, #0c1a2e 0%, #1a2f4a 50%, #0f2035 100%);
+    overflow: hidden;
 }
 
 .lwr-why-container {
-    max-width: 1280px;
+    max-width: 1340px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 70px;
+    grid-template-columns: 0.52fr 0.48fr;
+    gap: 72px;
     align-items: center;
 }
 
-.lwr-why-image-wrap {
+/* ---- Left: Content column ---- */
+.lwr-why-content-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lwr-why-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8ab4d6;
+    border: 1px solid rgba(138, 180, 214, 0.3);
+    background: rgba(138, 180, 214, 0.08);
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.lwr-why-heading {
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.02em;
+}
+
+.lwr-why-accent-line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8ab4d6, #5a7fa0);
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.lwr-why-subtitle {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #b0c4d0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.lwr-why-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(138, 180, 214, 0.25), transparent);
+    margin: 28px 0;
+}
+
+/* ---- Tile grid ---- */
+.lwr-why-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+.lwr-why-tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    cursor: default;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.lwr-why-tile::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #8ab4d6, #5a7fa0);
+    border-radius: 0 3px 3px 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.lwr-why-tile:hover {
+    transform: translateX(6px);
+    border-color: rgba(138, 180, 214, 0.2);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.lwr-why-tile:hover::before {
+    opacity: 1;
+}
+
+.lwr-why-tile-bg {
+    display: none;
+}
+
+.lwr-why-tile-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 12px;
+    background: rgba(138, 180, 214, 0.1);
+    border: 1px solid rgba(138, 180, 214, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8ab4d6;
+    transition: all 0.35s ease;
+}
+
+.lwr-why-tile:hover .lwr-why-tile-icon {
+    background: rgba(138, 180, 214, 0.18);
+    border-color: rgba(138, 180, 214, 0.3);
+    transform: scale(1.08);
+}
+
+.lwr-why-tile-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e8f0f4;
+    line-height: 1.3;
+}
+
+/* ---- Right: Image column ---- */
+.lwr-why-image-col {
+    position: relative;
+}
+
+.lwr-why-image-frame {
     position: relative;
     border-radius: 24px;
     overflow: hidden;
-    min-height: 480px;
-    box-shadow: 0 25px 55px rgba(15, 28, 46, 0.12);
+    box-shadow:
+        0 32px 72px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
-.lwr-why-image-wrap img {
+.lwr-why-image-frame img {
     width: 100%;
     height: 100%;
+    min-height: 560px;
     object-fit: cover;
     display: block;
 }
 
-.lwr-why-image-tint {
+.lwr-why-image-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, transparent 50%);
+    background: linear-gradient(
+        180deg,
+        transparent 40%,
+        rgba(12, 26, 46, 0.65) 100%
+    );
+    pointer-events: none;
 }
 
-.lwr-why-floating-badge {
-    position: absolute;
-    left: 28px;
-    bottom: 28px;
-    right: 28px;
-    background: rgba(15, 28, 46, 0.82);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+.lwr-why-caption {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    padding: 20px 22px;
+    padding: 18px 20px;
     display: flex;
     align-items: center;
     gap: 14px;
-    color: #ffffff;
 }
 
-.lwr-why-floating-badge-icon {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
+.lwr-why-caption-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(138, 180, 214, 0.1);
+    border: 1px solid rgba(138, 180, 214, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #8ab4d6;
 }
 
-.lwr-why-floating-badge-text {
+.lwr-why-caption-text {
     font-size: 14px;
-    line-height: 1.5;
-    color: #e2e8f0;
+    line-height: 1.6;
+    color: #c7d5e0;
     margin: 0;
-}
-
-.lwr-why-lead {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--lwr-navy);
-    margin-bottom: 20px;
-}
-
-.lwr-why-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px 24px;
-    margin-bottom: 26px;
-}
-
-.lwr-why-list-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: #334155;
-    background: var(--lwr-bg-white);
-    border-radius: 10px;
-    padding: 12px 14px;
-}
-
-.lwr-why-list-icon {
-    color: var(--lwr-navy);
-    flex-shrink: 0;
-}
-
-.lwr-why-outro {
-    font-size: 16px;
-    color: var(--lwr-navy);
-    font-weight: 500;
     font-style: italic;
-    margin: 0;
+    font-weight: 300;
 }
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+    .lwr-why-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .lwr-why-image-frame img {
+        min-height: 420px;
+    }
+
+    .lwr-why-heading {
+        font-size: 38px;
+    }
+
+    .lwr-why-section {
+        padding: 80px 20px;
+    }
+
+    .lwr-why-content-col {
+        align-items: center;
+        text-align: center;
+    }
+
+    .lwr-why-accent-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lwr-why-subtitle {
+        text-align: center;
+    }
+
+    .lwr-why-divider {
+        background: linear-gradient(90deg, rgba(138, 180, 214, 0.25), rgba(138, 180, 214, 0.05));
+    }
+}
+
+@media (max-width: 768px) {
+    .lwr-why-section {
+        padding: 64px 18px;
+    }
+
+    .lwr-why-heading {
+        font-size: 30px;
+    }
+
+    .lwr-why-subtitle {
+        font-size: 15px;
+    }
+
+    .lwr-why-image-frame img {
+        min-height: 340px;
+    }
+
+    .lwr-why-tiles {
+        gap: 10px;
+    }
+
+    .lwr-why-tile {
+        padding: 14px 16px;
+    }
+
+    .lwr-why-caption {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lwr-why-section {
+        padding: 48px 14px;
+    }
+
+    .lwr-why-heading {
+        font-size: 26px;
+    }
+
+    .lwr-why-tiles {
+        gap: 8px;
+    }
+
+    .lwr-why-tile {
+        padding: 12px 14px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+
+    .lwr-why-tile-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        border-radius: 10px;
+    }
+
+    .lwr-why-tile-title {
+        font-size: 13px;
+    }
+
+    .lwr-why-eyebrow {
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+
+    .lwr-why-image-frame img {
+        min-height: 280px;
+    }
+
+    .lwr-why-caption {
+        flex-direction: column;
+        text-align: center;
+        padding: 14px 16px;
+    }
+}
+
+
 
 /* ------------------------------------------------------------
    2) EXECUTIVE WELLNESS TRAVEL — dark section, quote panel + numbered stack
@@ -1790,15 +2012,6 @@
    TABLET (max-width: 1024px)
    ============================================================ */
 @media (max-width: 1024px) {
-    .lwr-why-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .lwr-why-image-wrap {
-        min-height: 340px;
-    }
-
     .lwr-exec-container {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1824,7 +2037,6 @@
    ============================================================ */
 @media (max-width: 768px) {
 
-    .lwr-why-section,
     .lwr-exec-section,
     .lwr-fitness-section,
     .lwr-mind-section,
@@ -1836,14 +2048,6 @@
 
     .lwr-dest-section {
         padding: 60px 0;
-    }
-
-    .lwr-why-list {
-        grid-template-columns: 1fr;
-    }
-
-    .lwr-why-image-wrap {
-        min-height: 280px;
     }
 
     .lwr-spa-section {
@@ -1876,11 +2080,6 @@
    SMALL MOBILE (max-width: 480px)
    ============================================================ */
 @media (max-width: 480px) {
-    .lwr-why-floating-badge {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .lwr-personalize-grid {
         grid-template-columns: 1fr;
     }

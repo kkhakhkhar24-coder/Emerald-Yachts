@@ -141,6 +141,7 @@
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .ifad-btn-primary:hover {
@@ -625,7 +626,7 @@
 .ifad-culture-bento {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 160px 160px 160px;
+    grid-template-rows: 180px 180px 220px;
     gap: 16px;
 }
 
@@ -640,6 +641,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.ifad-bento-wide img {
+    object-position: center 40%;
 }
 
 .ifad-bento-tall {
@@ -705,7 +710,7 @@
     }
 
     .ifad-culture-bento {
-        grid-template-rows: 120px 120px 120px;
+        grid-template-rows: 140px 140px 180px;
     }
 }
 
@@ -715,7 +720,7 @@
     }
 
     .ifad-culture-bento {
-        grid-template-rows: 100px 100px 100px;
+        grid-template-rows: 110px 110px 150px;
         gap: 10px;
     }
 }
@@ -887,12 +892,16 @@
 }
 
 .ifad-stack-4 {
-    width: 48%;
-    height: 46%;
-    bottom: 4%;
-    right: 6%;
-    transform: rotate(-3deg);
+    width: 55%;
+    height: 52%;
+    bottom: 2%;
+    right: 4%;
+    transform: rotate(-2deg);
     z-index: 4;
+}
+
+.ifad-stack-4 img {
+    object-position: center 30%;
 }
 
 .ifad-stay-pill-grid {

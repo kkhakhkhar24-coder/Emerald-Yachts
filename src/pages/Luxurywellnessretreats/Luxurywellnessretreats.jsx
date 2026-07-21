@@ -11,12 +11,27 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Import SEO images
+import heroSpaImg from '../../assets/seo_images/luxury-wellness-retreat-infinity-pool-private-spa-villa-ocean-view.webp'
+import heroMeditationImg from '../../assets/seo_images/luxury_meditation_class_wellness.webp'
+import heroFitnessImg from '../../assets/seo_images/active-senior-fitness-vacation-luxury-wellness-resort-morning-exercise.webp'
+
+import introSpaImg from '../../assets/seo_images/luxury-spa-massage-wellness-retreat-holistic-relaxation-resort-experience.webp'
+import whyStretchingImg from '../../assets/seo_images/healthy-active-senior-wellness-retreat-morning-stretching-luxury-resort.webp'
+import destThermalPoolImg from '../../assets/seo_images/luxury-thermal-spa-hydrotherapy-pool-wellness-resort-relaxation.webp'
+import destOceanViewSpaImg from '../../assets/seo_images/luxury-wellness-retreat-spa-with-ocean-view-infinity-pool-private-resort.webp'
+import destMaldivesImg from '../../assets/seo_images/luxury-wellness-destination-maldives.jpg'
+import destSwitzerlandImg from '../../assets/seo_images/luxury-wellness-destination-switzerland.jpg'
+import personalizedDiningImg from '../../assets/seo_images/personalized-wellness-experiences.jpg'
+import conciergeVIPImg from '../../assets/seo_images/luxury-resort-personalized-concierge-vip-hotel-check-in-experience.webp'
+import { Link } from 'react-router'
+
 function LuxuryWellnessRetreats() {
 
     const lwrHeroImages = [
-        'https://placehold.co/1800x1200?text=Luxury+Spa+Retreat',
-        'https://placehold.co/1800x1200?text=Mindfulness+%26+Meditation',
-        'https://placehold.co/1800x1200?text=Executive+Wellness+Escape'
+        { url: heroSpaImg, position: 'center' },
+        { url: heroMeditationImg, position: 'center' },
+        { url: heroFitnessImg, position: 'top center' }
     ]
 
     const [lwrCurrentHero, setLwrCurrentHero] = useState(0)
@@ -92,16 +107,16 @@ function LuxuryWellnessRetreats() {
     ]
 
     const lwrDestinations = [
-        { name: "Maldives", img: "https://placehold.co/440x560?text=Maldives" },
-        { name: "Bali", img: "https://placehold.co/440x560?text=Bali" },
-        { name: "Costa Rica", img: "https://placehold.co/440x560?text=Costa+Rica" },
-        { name: "Switzerland", img: "https://placehold.co/440x560?text=Switzerland" },
-        { name: "Italy", img: "https://placehold.co/440x560?text=Italy" },
-        { name: "Thailand", img: "https://placehold.co/440x560?text=Thailand" },
-        { name: "Iceland", img: "https://placehold.co/440x560?text=Iceland" },
-        { name: "Arizona", img: "https://placehold.co/440x560?text=Arizona" },
-        { name: "California", img: "https://placehold.co/440x560?text=California" },
-        { name: "Caribbean", img: "https://placehold.co/440x560?text=Caribbean" }
+        { name: "Maldives" },
+        { name: "Bali" },
+        { name: "Costa Rica" },
+        { name: "Switzerland" },
+        { name: "Italy" },
+        { name: "Thailand" },
+        { name: "Iceland" },
+        { name: "Arizona" },
+        { name: "California" },
+        { name: "Caribbean" }
     ]
 
     const lwrPersonalizedExperiences = [
@@ -406,7 +421,10 @@ function LuxuryWellnessRetreats() {
                         <div
                             key={idx}
                             className={`lwr-hero-slide ${lwrCurrentHero === idx ? 'lwr-slide-active' : ''}`}
-                            style={{ backgroundImage: `url(${img})` }}
+                            style={{ 
+                                backgroundImage: `url(${img.url})`,
+                                backgroundPosition: img.position || 'center'
+                            }}
                         />
                     ))}
                     <div className="lwr-hero-overlay"></div>
@@ -451,7 +469,7 @@ function LuxuryWellnessRetreats() {
                                 </div>
                             </div>
                             <div className="lwr-intro-image-frame">
-                                <img src="https://placehold.co/900x1000?text=Luxury+Wellness+Retreat" alt="Luxury wellness retreat with spa and relaxation" />
+                                <img src={introSpaImg} alt="Luxury wellness retreat with spa and relaxation" />
                                 <div className="lwr-intro-badge-float">
                                     <Sparkles size={18} />
                                     <span>Mind, Body & Spirit Renewal</span>
@@ -461,45 +479,37 @@ function LuxuryWellnessRetreats() {
                     </div>
                 </section>
 
-                {/* ============================ WHY CHOOSE A WELLNESS VACATION? ============================ */}
                 <section className="lwr-why-section">
                     <div className="lwr-why-container">
-
-                        <div className="lwr-why-image-wrap">
-                            <img src="https://placehold.co/900x1000?text=Peaceful+Spa+Escape" alt="Peaceful spa escape for relaxation" />
-                            <div className="lwr-why-image-tint"></div>
-                            <div className="lwr-why-floating-badge">
-                                <div className="lwr-why-floating-badge-icon">
-                                    <Heart size={20} color="#ffffff" />
-                                </div>
-                                <p className="lwr-why-floating-badge-text">
-                                    Luxury wellness travel combines relaxation with meaningful experiences that promote long-term health.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 className="lwr-section-heading">Why Choose a Wellness Vacation?</h2>
-                            <div className="lwr-heading-bar"></div>
-
-                            <p className="lwr-lead-paragraph">
-                                Modern life is busy, demanding, and often overwhelming. A wellness retreat provides the opportunity to disconnect from daily stress while reconnecting with yourself.
-                            </p>
-                            <p className="lwr-why-lead">Benefits include:</p>
-
-                            <div className="lwr-why-list">
+                        <div className="lwr-why-content-col">
+                            <span className="lwr-why-eyebrow"><Sparkles size={14} /><span>Invest In Your Well-Being</span></span>
+                            <h2 className="lwr-why-heading">Why Choose a Wellness Vacation?</h2>
+                            <div className="lwr-why-accent-line"></div>
+                            <p className="lwr-why-subtitle">Modern life is busy, demanding, and often overwhelming. A wellness retreat provides the opportunity to disconnect from daily stress while reconnecting with yourself.</p>
+                            <div className="lwr-why-divider"></div>
+                            <div className="lwr-why-tiles">
                                 {lwrWellnessBenefits.map((item, idx) => {
                                     const LwrIcon = item.icon
                                     return (
-                                        <div key={idx} className="lwr-why-list-item">
-                                            <span className="lwr-why-list-icon"><LwrIcon size={18} /></span>
-                                            <span>{item.title}</span>
+                                        <div key={idx} className="lwr-why-tile">
+                                            <div className="lwr-why-tile-bg"></div>
+                                            <div className="lwr-why-tile-icon"><LwrIcon size={20} /></div>
+                                            <span className="lwr-why-tile-title">{item.title}</span>
                                         </div>
                                     )
                                 })}
                             </div>
                         </div>
-
+                        <div className="lwr-why-image-col">
+                            <div className="lwr-why-image-frame">
+                                <img src={whyStretchingImg} alt="Luxury wellness retreat morning stretching" />
+                                <div className="lwr-why-image-gradient"></div>
+                            </div>
+                            <div className="lwr-why-caption">
+                                <div className="lwr-why-caption-icon"><Heart size={18} /></div>
+                                <p className="lwr-why-caption-text">Luxury wellness travel combines relaxation with meaningful experiences that promote long-term health.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -664,10 +674,10 @@ function LuxuryWellnessRetreats() {
                             </p>
                         </div>
 
-                        {/* Right Side: Two Placeholder Images */}
+                        {/* Right Side: Two Images */}
                         <div className="lwr-dest-split-images">
-                            <img src="https://placehold.co/600x405?text=Luxury+Resort" alt="Luxury Wellness Destination 1" className="lwr-dest-split-img" />
-                            <img src="https://placehold.co/600x405?text=Wellness+Retreat" alt="Luxury Wellness Destination 2" className="lwr-dest-split-img" />
+                            <img src={destMaldivesImg} alt="Luxury Maldives Overwater Wellness Resort" className="lwr-dest-split-img" />
+                            <img src={destSwitzerlandImg} alt="Luxury Swiss Thermal Spa Resort" className="lwr-dest-split-img" />
                         </div>
                     </div>
                 </section>
@@ -686,8 +696,8 @@ function LuxuryWellnessRetreats() {
                                 Every traveler has different wellness goals. We customize experiences based on your interests.
                             </p>
                             
-                            {/* Placeholder image */}
-                            <img src="https://placehold.co/600x400?text=Personalized+Itinerary" alt="Personalized Itinerary Placeholder" className="lwr-pers-new-img" />
+                            {/* Personalized Wellness image */}
+                            <img src={personalizedDiningImg} alt="Personalized Wellness Dining & Nutrition" className="lwr-pers-new-img" />
 
                             <p className="lwr-pers-new-outro">
                                 Your itinerary is designed around your lifestyle, schedule, and personal preferences.
@@ -750,7 +760,7 @@ function LuxuryWellnessRetreats() {
 
 
                         <div className="lwr-concierge-image-wrap">
-                            <img src="https://placehold.co/900x1000?text=Concierge+Wellness+Planning" alt="Concierge planning a wellness journey" />
+                            <img src={conciergeVIPImg} alt="Concierge planning a wellness journey" />
                         </div>
 
                     </div>
@@ -828,10 +838,10 @@ function LuxuryWellnessRetreats() {
                             Whether you're seeking relaxation, recovery, fitness, or complete renewal, we'll design a wellness journey tailored specifically to you.
                         </p>
                         <div className="lwr-cta-btn-row">
-                            <button className="lwr-btn-primary">
+                            <Link to='/contact' className="lwr-btn-primary">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="lwr-btn-outline">
                                 <LayoutList size={18} />
                                 Request Itinerary Options

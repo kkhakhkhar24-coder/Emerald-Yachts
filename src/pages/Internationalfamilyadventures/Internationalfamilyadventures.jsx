@@ -11,13 +11,29 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Import SEO images
+import heroTuscanImg from '../../assets/seo_images/multigenerational-family-walking-through-tuscan-village-luxury-italy-vacation.webp'
+import heroSafariImg from '../../assets/seo_images/luxury-african-safari-family-wildlife-experience-elephant-viewing-private-game-drive.webp'
+import heroRomeImg from '../../assets/seo_images/multigenerational-family-vacation-rome-colosseum-luxury-italy-travel.webp'
+import introFamilyImg from '../../assets/seo_images/multigenerational-family-walking-tour-luxury-european-village-vacation.webp'
+import cultureMuseumImg from '../../assets/seo_images/private-guided-cultural-tour-luxury-small-group-historic-city-experience.webp'
+import cultureCulinaryImg from '../../assets/seo_images/luxury-family-dining-private-oceanfront-villa-multigenerational-travel-experience.webp'
+import cultureWorkshopImg from '../../assets/seo_images/luxury-multigenerational-family-dinner-seaside-private-villa-mediterranean-vacation.webp'
+import cultureLandscapeImg from '../../assets/seo_images/douro-valley-portugal-vineyards-river-scenic-wine-country-cruise.webp'
+import accomHotelImg from '../../assets/seo_images/private-luxury-ocean-view-villa-infinity-pool-exclusive-family-vacation.webp'
+import accomVillaImg from '../../assets/seo_images/private-luxury-tropical-villa-exclusive-high-end-vacation-retreat.webp'
+import accomSafariImg from '../../assets/seo_images/luxury-african-safari-lodge-elephant-watering-hole-wildlife-view-family-travel.webp'
+import accomResortImg from '../../assets/seo_images/luxury-resort-personalized-concierge-vip-hotel-check-in-experience.webp'
+import showcaseFamilyImg from '../../assets/seo_images/luxury-family-celebration-private-villa-cocktail-gathering-mediterranean-coast.webp'
+import { Link } from 'react-router'
+
 function InternationalFamilyAdventures() {
 
     /* Hero rotating background images */
     const ifadHeroImages = [
-        'https://placehold.co/1800x1200?text=Around+the+World+Family+Travel',
-        'https://placehold.co/1800x1200?text=Safari+%26+Cultural+Journeys',
-        'https://placehold.co/1800x1200?text=Multigenerational+World+Adventures'
+        { url: heroTuscanImg, position: 'center' },
+        { url: heroSafariImg, position: 'center' },
+        { url: heroRomeImg, position: 'center' }
     ]
     const [ifadCurrentHero, setIfadCurrentHero] = useState(0)
     useEffect(() => {
@@ -67,10 +83,10 @@ function InternationalFamilyAdventures() {
     ]
 
     const ifadCulturalImages = [
-        'https://placehold.co/640x480?text=Private+Museum+Tour',
-        'https://placehold.co/640x820?text=Local+Culinary+Experience',
-        'https://placehold.co/640x480?text=Artisan+Workshop',
-        'https://placehold.co/640x480?text=Cultural+Performance'
+        cultureMuseumImg,
+        cultureCulinaryImg,
+        cultureWorkshopImg,
+        cultureLandscapeImg
     ]
 
     /* Extraordinary destinations */
@@ -94,10 +110,10 @@ function InternationalFamilyAdventures() {
     ]
 
     const ifadAccommodationImages = [
-        'https://placehold.co/560x560?text=Luxury+Hotel+Suite',
-        'https://placehold.co/560x560?text=Private+Villa',
-        'https://placehold.co/560x560?text=Safari+Lodge',
-        'https://placehold.co/560x560?text=Yacht+Charter'
+        accomHotelImg,
+        accomVillaImg,
+        accomSafariImg,
+        accomResortImg
     ]
 
     /* Personalized family experiences */
@@ -252,7 +268,10 @@ function InternationalFamilyAdventures() {
                         <div
                             key={idx}
                             className={`ifad-hero-slide ${ifadCurrentHero === idx ? 'ifad-slide-active' : ''}`}
-                            style={{ backgroundImage: `url(${img})` }}
+                            style={{ 
+                                backgroundImage: `url(${img.url})`,
+                                backgroundPosition: img.position || 'center'
+                            }}
                         />
                     ))}
                     <div className="ifad-hero-overlay"></div>
@@ -264,10 +283,10 @@ function InternationalFamilyAdventures() {
                         <h1 className="ifad-hero-title">International Family Adventures</h1>
                         <p className="ifad-hero-subtitle">Discover the World Together</p>
                         <div className="ifad-hero-btn-row">
-                            <button className="ifad-btn-primary">
+                            <Link to='/contact' className="ifad-btn-primary">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="ifad-btn-outline">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -292,7 +311,7 @@ function InternationalFamilyAdventures() {
                                 </p>
                             </div>
                             <div className="ifad-intro-image-frame">
-                                <img src="https://placehold.co/900x1050?text=Family+Exploring+the+World" alt="Family exploring the world together" />
+                                <img src={introFamilyImg} alt="Family exploring the world together" />
                                 <div className="ifad-intro-badge-float">
                                     <Heart size={18} />
                                     <span>Crafted for Every Generation</span>
@@ -387,7 +406,7 @@ function InternationalFamilyAdventures() {
                                     <img src={ifadCulturalImages[2]} alt="Artisan workshop" />
                                 </div>
                                 <div className="ifad-bento-item ifad-bento-wide">
-                                    <img src={ifadCulturalImages[3]} alt="Cultural performance" />
+                                    <img src={ifadCulturalImages[3]} alt="Cultural travel destination" />
                                 </div>
                             </div>
                             <div className="ifad-culture-copy">
@@ -511,7 +530,7 @@ function InternationalFamilyAdventures() {
                                 </div>
                             </div>
                             <div className="ifad-showcase-media">
-                                <img src="https://placehold.co/900x1100?text=Personalized+Family+Adventure" alt="Personalized family adventure experience" />
+                                <img src={showcaseFamilyImg} alt="Personalized family adventure experience" />
                                 <div className="ifad-showcase-media-tag">Tailored to Your Family</div>
                             </div>
                         </div>
@@ -612,10 +631,10 @@ function InternationalFamilyAdventures() {
                             Whether you're planning your first international family vacation or an around-the-world adventure, we'll create a journey that inspires lifelong memories.
                         </p>
                         <div className="ifad-cta-btn-row">
-                            <button className="ifad-btn-primary">
+                            <Link to='/contact' className="ifad-btn-primary">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="ifad-btn-outline">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
