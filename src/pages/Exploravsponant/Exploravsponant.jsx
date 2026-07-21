@@ -1,7 +1,8 @@
-import Navbar from '../../components/Navbar/Navbar'
 import './Exploravsponant.css'
-import Profile_AH from '../../assets/ExploraVsPonant/Profile_AH.jpg'
-import Profile_Picture_AH from '../../assets/ExploraVsPonant/Profile_Picture_AH.jpg'
+import "./../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css";
+import "./../EmeraldYachts/EmeraldYachts.css";
+import Profile_AH from '../../assets/Media (2).jpg'
+import Profile_Picture_AH from '../../assets/image.jpg'
 
 // ── Hero (3 rotating) ────────────────────────────────────────────
 import hero1 from '../../assets/ExploraVsPonant/hero1.png'
@@ -210,7 +211,7 @@ function ExploraVsPonant() {
                 <script type="application/ld+json">{JSON.stringify(mediSchemaData)}</script>
             </Helmet>
 
-            <Navbar />
+
 
             {/* ════════════════════════════════════════════════════
                 HERO  (medi-hero-section – rotating images)
@@ -491,73 +492,76 @@ function ExploraVsPonant() {
             </section>
 
             {/* ════════════════════════════════════════════════════
-                SUITES SHOWCASE TABS (medi-itinerary-showcase-section)
+                SUITES SHOWCASE TABS  (ep-sc- custom prefix)
             ════════════════════════════════════════════════════ */}
-            <section className="medi-itinerary-showcase-section">
-                <div className="medi-itinerary-showcase-container">
-                    <div className="medi-itinerary-showcase-header">
-                        <span className="medi-itinerary-eyebrow">SUITE CATEGORY GUIDE</span>
-                        <h2 className="medi-itinerary-showcase-heading">Explora vs Ponant Suite Categories</h2>
-                        <div className="medi-itinerary-showcase-separator"></div>
+            <section className="ep-sc-section">
+                <div className="ep-sc-container">
+
+                    {/* Header */}
+                    <div className="ep-sc-header">
+                        <span className="ep-sc-eyebrow">SUITE CATEGORY GUIDE</span>
+                        <h2 className="ep-sc-heading">Explora vs Ponant Suite Categories</h2>
+                        <div className="ep-sc-bar"></div>
                     </div>
 
-                    <div className="medi-itinerary-dashboard">
-                        <div className="medi-itinerary-tabs">
-                            {mediItineraries.map((suite, idx) => (
-                                <button
-                                    key={idx}
-                                    className={`medi-itinerary-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`}
-                                    onClick={() => setMediSelectedItinerary(idx)}
-                                >
-                                    <span className="medi-itinerary-tab-number">0{idx + 1}</span>
-                                    <div className="medi-itinerary-tab-meta">
-                                        <span className="medi-itinerary-tab-title">{suite.title}</span>
-                                    </div>
-                                    <ChevronRight size={18} className="medi-itinerary-tab-arrow" />
-                                </button>
-                            ))}
+                    {/* Horizontal pill tabs */}
+                    <div className="ep-sc-tabs">
+                        {mediItineraries.map((suite, idx) => (
+                            <button
+                                key={idx}
+                                className={`ep-sc-tab${mediSelectedItinerary === idx ? ' ep-sc-tab--active' : ''}`}
+                                onClick={() => setMediSelectedItinerary(idx)}
+                            >
+                                <span className="ep-sc-tab-num">0{idx + 1}</span>
+                                <span className="ep-sc-tab-label">{suite.title}</span>
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Content card */}
+                    <div className="ep-sc-card">
+                        {/* Image */}
+                        <div className="ep-sc-img-wrap">
+                            <img
+                                src={mediItineraries[mediSelectedItinerary].img}
+                                alt={mediItineraries[mediSelectedItinerary].title}
+                                className="ep-sc-img"
+                            />
+                            <span className="ep-sc-badge">{mediItineraries[mediSelectedItinerary].badge}</span>
                         </div>
 
-                        <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper">
-                                <img
-                                    src={mediItineraries[mediSelectedItinerary].img}
-                                    alt={mediItineraries[mediSelectedItinerary].title}
-                                    className="medi-itinerary-showcase-img"
-                                />
-                                <div className="medi-itinerary-showcase-img-overlay"></div>
-                                <span className="medi-itinerary-showcase-badge">{mediItineraries[mediSelectedItinerary].badge}</span>
-                            </div>
+                        {/* Details */}
+                        <div className="ep-sc-details">
+                            <h3 className="ep-sc-title">{mediItineraries[mediSelectedItinerary].title}</h3>
+                            <div className="ep-sc-divider"></div>
 
-                            <div className="medi-itinerary-showcase-body">
-                                <h3 className="medi-itinerary-showcase-title">{mediItineraries[mediSelectedItinerary].title}</h3>
-                                <div className="medi-itinerary-details-grid">
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">Best For:</h4>
-                                        <ul className="medi-itinerary-details-list">
-                                            {mediItineraries[mediSelectedItinerary].bestFor.map((item, i) => (
-                                                <li key={i}>
-                                                    <Sparkles size={14} className="medi-itinerary-detail-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">Highlights:</h4>
-                                        <div className="medi-itinerary-details-chips">
-                                            {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
-                                                <span key={i} className="medi-itinerary-details-chip">
-                                                    <MapPin size={12} className="medi-itinerary-chip-icon" />
-                                                    <span>{item}</span>
-                                                </span>
-                                            ))}
-                                        </div>
+                            <div className="ep-sc-cols">
+                                <div className="ep-sc-col">
+                                    <p className="ep-sc-col-label">Best For</p>
+                                    <ul className="ep-sc-best-list">
+                                        {mediItineraries[mediSelectedItinerary].bestFor.map((item, i) => (
+                                            <li key={i}>
+                                                <Sparkles size={13} className="ep-sc-spark" />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="ep-sc-col">
+                                    <p className="ep-sc-col-label">Highlights</p>
+                                    <div className="ep-sc-chips">
+                                        {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
+                                            <span key={i} className="ep-sc-chip">
+                                                <MapPin size={11} />
+                                                {item}
+                                            </span>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -1150,7 +1154,7 @@ function ExploraVsPonant() {
                                     <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
                                 </div>
                                 <h2 className="medi-editorial-title">
-                                    Choosing Between Explora <br className="medi-growth-title-break" />and Ponant
+                                    Choosing Between  <br className="medi-growth-title-break" />Explora and Ponant
                                 </h2>
                                 <div className="medi-editorial-accent-bar"></div>
                             </div>
