@@ -1,40 +1,40 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Exploravsponant.css'
-// import Profile_AH from '../../assets/ExploraVsPonant/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/ExploraVsPonant/Profile_Picture_AH.jpg'
+import Profile_AH from '../../assets/ExploraVsPonant/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/ExploraVsPonant/Profile_Picture_AH.jpg'
 
 // ── Hero (3 rotating) ────────────────────────────────────────────
-// import hero1 from '../../assets/ExploraVsPonant/hero1.jpg'
-// import hero2 from '../../assets/ExploraVsPonant/hero2.jpg'
-// import hero3 from '../../assets/ExploraVsPonant/hero3.jpg'
+import hero1 from '../../assets/ExploraVsPonant/hero1.png'
+import hero2 from '../../assets/ExploraVsPonant/hero2.png'
+import hero3 from '../../assets/ExploraVsPonant/hero3.png'
 
 // ── Explora images ───────────────────────────────────────────────
-// import exploraOverviewImg   from '../../assets/ExploraVsPonant/explora-overview.webp'
-// import exploraShipImg       from '../../assets/ExploraVsPonant/explora-ship.webp'
-// import exploraSuiteImg      from '../../assets/ExploraVsPonant/explora-suite.webp'
-// import exploraDiningImg     from '../../assets/ExploraVsPonant/explora-dining.webp'
-// import exploraWellnessImg   from '../../assets/ExploraVsPonant/explora-wellness.webp'
-// import exploraServiceImg    from '../../assets/ExploraVsPonant/explora-service.webp'
-// import exploraEntertainImg  from '../../assets/ExploraVsPonant/explora-entertainment.webp'
-// import exploraChooseImg     from '../../assets/ExploraVsPonant/explora-choose.webp'
-// import luxurySuiteImg       from '../../assets/ExploraVsPonant/luxury-suite-pricing.webp'
+import exploraOverviewImg   from '../../assets/ExploraVsPonant/explora-overview.png'
+import exploraShipImg       from '../../assets/ExploraVsPonant/explora-ship.png'
+import exploraSuiteImg      from '../../assets/ExploraVsPonant/explora-suite.png'
+import exploraDiningImg     from '../../assets/ExploraVsPonant/explora-dining.png'
+import exploraWellnessImg   from '../../assets/ExploraVsPonant/explora-wellness.png'
+import exploraServiceImg    from '../../assets/ExploraVsPonant/explora-service.webp'
+import exploraEntertainImg  from '../../assets/ExploraVsPonant/explora-entertainment.jpg'
+import exploraChooseImg     from '../../assets/ExploraVsPonant/explora-choose.jpg'
+import luxurySuiteImg       from '../../assets/ExploraVsPonant/luxury-suite-pricing.png'
 
 // ── Ponant images ────────────────────────────────────────────────
-// import ponantOverviewImg    from '../../assets/ExploraVsPonant/ponant-overview.webp'
-// import ponantShipImg        from '../../assets/ExploraVsPonant/ponant-ship.webp'
-// import ponantSuiteImg       from '../../assets/ExploraVsPonant/ponant-suite.webp'
-// import ponantDiningImg      from '../../assets/ExploraVsPonant/ponant-dining.webp'
-// import ponantWellnessImg    from '../../assets/ExploraVsPonant/ponant-wellness.webp'
-// import ponantServiceImg     from '../../assets/ExploraVsPonant/ponant-service.webp'
-// import ponantEntertainImg   from '../../assets/ExploraVsPonant/ponant-entertainment.webp'
-// import ponantChooseImg      from '../../assets/ExploraVsPonant/ponant-choose.webp'
+import ponantOverviewImg    from '../../assets/ExploraVsPonant/ponant-overview.png'
+import ponantShipImg        from '../../assets/ExploraVsPonant/ponant-ship.png'
+import ponantSuiteImg       from '../../assets/ExploraVsPonant/ponant-suite.png'
+import ponantDiningImg      from '../../assets/ExploraVsPonant/ponant-dining.png'
+import ponantWellnessImg    from '../../assets/ExploraVsPonant/ponant-wellness.webp'
+import ponantServiceImg     from '../../assets/ExploraVsPonant/ponant-service.webp'
+import ponantEntertainImg   from '../../assets/ExploraVsPonant/ponant-entertainment.webp'
+import ponantChooseImg      from '../../assets/ExploraVsPonant/ponant-choose.png'
 
 // ── Destination images ───────────────────────────────────────────
-// import destAntarcticaImg    from '../../assets/ExploraVsPonant/dest-antarctica.webp'
-// import destMedImg           from '../../assets/ExploraVsPonant/dest-mediterranean.webp'
-// import destArcticImg        from '../../assets/ExploraVsPonant/dest-arctic.webp'
-// import destAsiaImg          from '../../assets/ExploraVsPonant/dest-asia.webp'
-// import destCaribbeanImg     from '../../assets/ExploraVsPonant/dest-caribbean.webp'
+import destAntarcticaImg    from '../../assets/ExploraVsPonant/dest-antarctica.webp'
+import destMedImg           from '../../assets/ExploraVsPonant/dest-mediterranean.jpg'
+import destArcticImg        from '../../assets/ExploraVsPonant/dest-arctic.webp'
+import destAsiaImg          from '../../assets/ExploraVsPonant/dest-asia.webp'
+import destCaribbeanImg     from '../../assets/ExploraVsPonant/dest-caribbean.webp'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -53,7 +53,7 @@ function ExploraVsPonant() {
 
     // ── Hero slider ──────────────────────────────────────────────
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [hero1, hero2, hero3]
     useEffect(() => {
         const t = setInterval(() => setMediCurrentHero(p => (p + 1) % mediHeroImages.length), 5000)
         return () => clearInterval(t)
@@ -83,28 +83,28 @@ function ExploraVsPonant() {
     const mediItineraries = [
         {
             title: 'Explora Ocean Terrace Suite',
-            // img: exploraSuiteImg,
+            img: exploraSuiteImg,
             badge: 'ALL SUITES',
             bestFor: ['Travelers prioritizing space', 'Couples seeking luxury resort atmosphere', 'Wellness-focused travelers'],
             highlights: ['Oceanfront views', 'Private terrace', 'Spacious sitting area', 'Luxury linens', 'Heated bathroom floors', 'Walk-in wardrobe']
         },
         {
             title: 'Explora Ocean Penthouse',
-            // img: exploraShipImg,
+            img: exploraShipImg,
             badge: 'ULTRA-LUXURY',
             bestFor: ['Ultra-luxury travelers', 'Extended voyage guests', 'Those seeking maximum space'],
             highlights: ['Multi-room living', 'Large private terrace', 'Full dining area', 'Dedicated concierge', 'Priority access']
         },
         {
             title: 'Ponant Deluxe Stateroom',
-            // img: ponantSuiteImg,
+            img: ponantSuiteImg,
             badge: 'YACHT STYLE',
             bestFor: ['Boutique yacht lovers', 'Expedition travelers', 'French luxury seekers'],
             highlights: ['Private balcony', 'Contemporary French décor', 'Premium bedding', 'Marble bathrooms', 'Ocean views']
         },
         {
             title: 'Ponant Prestige Suite',
-            // img: ponantShipImg,
+            img: ponantShipImg,
             badge: 'EXPEDITION LUXURY',
             bestFor: ['Luxury expedition travelers', 'Remote destination seekers', 'Personalized service guests'],
             highlights: ['Larger terrace', 'Additional luxury amenities', 'Priority service', 'Butler service', 'Premium location']
@@ -363,7 +363,7 @@ function ExploraVsPonant() {
                     <div className="ep-overview-grid">
                         {/* Explora Card */}
                         <div className="ep-overview-card ep-card-explora">
-                            {/* <img src={exploraOverviewImg} alt="Explora Journeys luxury cruise ship at sea" className="ep-overview-img" /> */}
+                            <img src={exploraOverviewImg} alt="Explora Journeys luxury cruise ship at sea" className="ep-overview-img" />
                             <div className="ep-overview-body">
                                 <h3 className="ep-overview-brand">Explora Journeys</h3>
                                 <p className="ep-overview-tagline">Created by the MSC Group to redefine luxury ocean travel</p>
@@ -381,7 +381,7 @@ function ExploraVsPonant() {
 
                         {/* Ponant Card */}
                         <div className="ep-overview-card ep-card-ponant">
-                            {/* <img src={ponantOverviewImg} alt="Ponant luxury expedition yacht" className="ep-overview-img" /> */}
+                            <img src={ponantOverviewImg} alt="Ponant luxury expedition yacht" className="ep-overview-img" />
                             <div className="ep-overview-body">
                                 <h3 className="ep-overview-brand">Ponant</h3>
                                 <p className="ep-overview-tagline">French luxury cruise line renowned for elegant yacht cruising and expedition exploration</p>
@@ -416,7 +416,7 @@ function ExploraVsPonant() {
                         {/* Explora Fleet */}
                         <div className="ep-fleet-col">
                             <span className="ep-fleet-tag explora">Explora Journeys Fleet</span>
-                            {/* <img src={exploraShipImg} alt="Explora Journeys ship" className="ep-fleet-main-img" /> */}
+                            <img src={exploraShipImg} alt="Explora Journeys ship" className="ep-fleet-main-img" />
                             <div className="ep-fleet-info">
                                 <h3>Current &amp; Upcoming Explora Ships</h3>
                                 <div className="ep-fleet-chips">
@@ -431,7 +431,7 @@ function ExploraVsPonant() {
                         {/* Ponant Fleet */}
                         <div className="ep-fleet-col">
                             <span className="ep-fleet-tag ponant">Ponant Fleet</span>
-                            {/* <img src={ponantShipImg} alt="Ponant luxury expedition yacht" className="ep-fleet-main-img" /> */}
+                            <img src={ponantShipImg} alt="Ponant luxury expedition yacht" className="ep-fleet-main-img" />
                             <div className="ep-fleet-info">
                                 <h3>Ponant Luxury Expedition Fleet</h3>
                                 <div className="ep-fleet-chips">
@@ -459,7 +459,7 @@ function ExploraVsPonant() {
 
                     <div className="ep-suites-grid">
                         <div className="ep-suite-card">
-                            {/* <img src={exploraSuiteImg} alt="Explora Journeys oceanfront suite with private terrace" className="ep-suite-img" /> */}
+                            <img src={exploraSuiteImg} alt="Explora Journeys oceanfront suite with private terrace" className="ep-suite-img" />
                             <div className="ep-suite-body">
                                 <span className="ep-suite-brand">Explora Journeys</span>
                                 <h3 className="ep-suite-title">All Oceanfront Suites</h3>
@@ -473,7 +473,7 @@ function ExploraVsPonant() {
                         </div>
 
                         <div className="ep-suite-card">
-                            {/* <img src={ponantSuiteImg} alt="Ponant luxury stateroom with balcony" className="ep-suite-img" /> */}
+                            <img src={ponantSuiteImg} alt="Ponant luxury stateroom with balcony" className="ep-suite-img" />
                             <div className="ep-suite-body">
                                 <span className="ep-suite-brand">Ponant</span>
                                 <h3 className="ep-suite-title">Elegant Staterooms &amp; Suites</h3>
@@ -520,11 +520,11 @@ function ExploraVsPonant() {
 
                         <div className="medi-itinerary-showcase-card">
                             <div className="medi-itinerary-showcase-image-wrapper">
-                                {/* <img
+                                <img
                                     src={mediItineraries[mediSelectedItinerary].img}
                                     alt={mediItineraries[mediSelectedItinerary].title}
                                     className="medi-itinerary-showcase-img"
-                                /> */}
+                                />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">{mediItineraries[mediSelectedItinerary].badge}</span>
                             </div>
@@ -562,31 +562,31 @@ function ExploraVsPonant() {
             </section>
 
 
-                     {/* ===== SECTION: VIDEO SHOWCASE ===== */}
-      <section className="Emerald_video_section">
-        <div className="Emerald_video_inner">
-          <div className="Emerald_video_header">
-            <h2>The 37th America's Cup | A Luxury Sailing Experience with Explora Journeys</h2>
-            <div className="Emerald_video_divider"></div>
-            <p className="Emerald_video_subtitle">
-Experience the excitement of the 37th America's Cup with Explora Journeys. Witness world-class sailing while enjoying exceptional comfort, refined service, and unforgettable moments at sea.            </p>
-          </div>
+            {/* ===== SECTION: VIDEO SHOWCASE ===== */}
+            <section className="Emerald_video_section">
+                <div className="Emerald_video_inner">
+                    <div className="Emerald_video_header">
+                        <h2>The 37th America's Cup | A Luxury Sailing Experience with Explora Journeys</h2>
+                        <div className="Emerald_video_divider"></div>
+                        <p className="Emerald_video_subtitle">
+                            Experience the excitement of the 37th America's Cup with Explora Journeys. Witness world-class sailing while enjoying exceptional comfort, refined service, and unforgettable moments at sea.            </p>
+                    </div>
 
-          <div className="Emerald_video_wrapper">
-            <div className="Emerald_video_frame">
-              <iframe
-                className="Emerald_video_player"
-                src="https://www.youtube.com/embed/ShGJOuL-DRA"
-                title="Experience Emerald Yachts"
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-              ></iframe>
-              <div className="Emerald_video_glow"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    <div className="Emerald_video_wrapper">
+                        <div className="Emerald_video_frame">
+                            <iframe
+                                className="Emerald_video_player"
+                                src="https://www.youtube.com/embed/ShGJOuL-DRA"
+                                title="Experience Emerald Yachts"
+                                frameBorder="0"
+                                allow="autoplay; encrypted-media"
+                                allowFullScreen
+                            ></iframe>
+                            <div className="Emerald_video_glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* ════════════════════════════════════════════════════
                 DINING  ← NEW (ep-versus with images + dark bg)
@@ -599,7 +599,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                     </div>
                     <div className="ep-versus-grid">
                         <div className="ep-versus-card">
-                            {/* <img src={exploraDiningImg} alt="Explora Journeys international dining venues" className="ep-versus-card-img" /> */}
+                            <img src={exploraDiningImg} alt="Explora Journeys international dining venues" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-explora"><Utensils size={18} /></div>
@@ -616,7 +616,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                         </div>
 
                         <div className="ep-versus-card">
-                            {/* <img src={ponantDiningImg} alt="Ponant gourmet French cuisine" className="ep-versus-card-img" /> */}
+                            <img src={ponantDiningImg} alt="Ponant gourmet French cuisine" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-ponant"><Utensils size={18} /></div>
@@ -656,35 +656,35 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
 
                     <div className="ep-destinations-mosaic">
                         <div className="ep-dest-tile">
-                            {/* <img src={destAntarcticaImg} alt="Ponant Antarctica expedition cruise" /> */}
+                            <img src={destAntarcticaImg} alt="Ponant Antarctica expedition cruise" />
                             <div className="ep-dest-caption">
                                 <span className="ep-dest-caption-line">Antarctica</span>
                                 <span className="ep-dest-caption-sub">Ponant expedition specialty</span>
                             </div>
                         </div>
                         <div className="ep-dest-tile">
-                            {/* <img src={destMedImg} alt="Mediterranean luxury cruise" /> */}
+                            <img src={destMedImg} alt="Mediterranean luxury cruise" />
                             <div className="ep-dest-caption">
                                 <span className="ep-dest-caption-line">Mediterranean</span>
                                 <span className="ep-dest-caption-sub">Both cruise lines</span>
                             </div>
                         </div>
                         <div className="ep-dest-tile">
-                            {/* <img src={destArcticImg} alt="Arctic expedition cruise" /> */}
+                            <img src={destArcticImg} alt="Arctic expedition cruise" />
                             <div className="ep-dest-caption">
                                 <span className="ep-dest-caption-line">Arctic &amp; Greenland</span>
                                 <span className="ep-dest-caption-sub">Ponant expedition specialty</span>
                             </div>
                         </div>
                         <div className="ep-dest-tile">
-                            {/* <img src={destAsiaImg} alt="Asia luxury cruise" /> */}
+                            <img src={destAsiaImg} alt="Asia luxury cruise" />
                             <div className="ep-dest-caption">
                                 <span className="ep-dest-caption-line">Asia</span>
                                 <span className="ep-dest-caption-sub">Both cruise lines</span>
                             </div>
                         </div>
                         <div className="ep-dest-tile">
-                            {/* <img src={destCaribbeanImg} alt="Caribbean luxury cruise" /> */}
+                            <img src={destCaribbeanImg} alt="Caribbean luxury cruise" />
                             <div className="ep-dest-caption">
                                 <span className="ep-dest-caption-line">Caribbean</span>
                                 <span className="ep-dest-caption-sub">Both cruise lines</span>
@@ -819,7 +819,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                     </div>
                     <div className="ep-versus-grid">
                         <div className="ep-versus-card">
-                            {/* <img src={exploraServiceImg} alt="Explora Journeys attentive luxury service" className="ep-versus-card-img" /> */}
+                            <img src={exploraServiceImg} alt="Explora Journeys attentive luxury service" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-explora"><Users size={18} /></div>
@@ -829,7 +829,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                             </div>
                         </div>
                         <div className="ep-versus-card">
-                            {/* <img src={ponantServiceImg} alt="Ponant personalized French service" className="ep-versus-card-img" /> */}
+                            <img src={ponantServiceImg} alt="Ponant personalized French service" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-ponant"><Users size={18} /></div>
@@ -855,7 +855,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
 
                     <div className="ep-wellness-grid">
                         <div className="ep-wellness-card">
-                            {/* <img src={exploraWellnessImg} alt="Explora Journeys Ocean Wellness Spa" className="ep-wellness-img" /> */}
+                            <img src={exploraWellnessImg} alt="Explora Journeys Ocean Wellness Spa" className="ep-wellness-img" />
                             <div className="ep-wellness-body">
                                 <span className="ep-wellness-brand">Explora Journeys</span>
                                 <h3 className="ep-wellness-title">Extensive Wellness Focus</h3>
@@ -869,7 +869,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                         </div>
 
                         <div className="ep-wellness-card">
-                            {/* <img src={ponantWellnessImg} alt="Ponant spa facilities" className="ep-wellness-img" /> */}
+                            <img src={ponantWellnessImg} alt="Ponant spa facilities" className="ep-wellness-img" />
                             <div className="ep-wellness-body">
                                 <span className="ep-wellness-brand">Ponant</span>
                                 <h3 className="ep-wellness-title">Quality Spa &amp; Wellness</h3>
@@ -921,7 +921,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                     </div>
 
                     <div className="medi-luxury-visual-wrapper">
-                        {/* <img src={luxurySuiteImg} alt="Luxury cruise suite pricing comparison" className="medi-luxury-main-image" /> */}
+                        <img src={luxurySuiteImg} alt="Luxury cruise suite pricing comparison" className="medi-luxury-main-image" />
                     </div>
                 </div>
             </section>
@@ -996,7 +996,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
 
                     <div className="ep-decision-grid">
                         <div className="ep-decision-card">
-                            {/* <img src={exploraChooseImg} alt="Choose Explora Journeys" className="ep-decision-img" /> */}
+                            <img src={exploraChooseImg} alt="Choose Explora Journeys" className="ep-decision-img" />
                             <div className="ep-decision-body">
                                 <h3>Who Should Choose Explora?</h3>
                                 <ul className="ep-decision-ul">
@@ -1008,7 +1008,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                         </div>
 
                         <div className="ep-decision-card ep-dec-ponant">
-                            {/* <img src={ponantChooseImg} alt="Choose Ponant luxury expedition yacht" className="ep-decision-img" /> */}
+                            <img src={ponantChooseImg} alt="Choose Ponant luxury expedition yacht" className="ep-decision-img" />
                             <div className="ep-decision-body">
                                 <h3>Who Should Choose Ponant?</h3>
                                 <ul className="ep-decision-ul">
@@ -1081,7 +1081,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                     </div>
                     <div className="ep-versus-grid">
                         <div className="ep-versus-card">
-                            {/* <img src={exploraEntertainImg} alt="Explora Journeys entertainment and lounges" className="ep-versus-card-img" /> */}
+                            <img src={exploraEntertainImg} alt="Explora Journeys entertainment and lounges" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-explora"><Music size={18} /></div>
@@ -1096,7 +1096,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                         </div>
 
                         <div className="ep-versus-card">
-                            {/* <img src={ponantEntertainImg} alt="Ponant expedition lectures and cultural events" className="ep-versus-card-img" /> */}
+                            <img src={ponantEntertainImg} alt="Ponant expedition lectures and cultural events" className="ep-versus-card-img" />
                             <div className="ep-versus-card-body">
                                 <div className="ep-versus-card-header">
                                     <div className="ep-versus-icon ep-icon-ponant"><BookOpen size={18} /></div>
@@ -1127,7 +1127,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Cruise Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -1306,7 +1306,7 @@ Experience the excitement of the 37th America's Cup with Explora Journeys. Witne
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} /> */}
+                                <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>

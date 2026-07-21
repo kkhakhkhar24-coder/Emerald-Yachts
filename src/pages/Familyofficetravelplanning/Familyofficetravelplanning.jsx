@@ -10,50 +10,82 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 /* ============================================================
-   IMAGE PLACEHOLDERS (Unsplash) — grouped here for easy swapping.
-   Replace any URL below with a final licensed/brand image using
-   the same variable name; no other code changes are required.
+   IMAGE ASSETS — loaded from local assets folder
    ============================================================ */
+import hero1 from '../../assets/FamilyOfficeTravelPlanning/hero1.jpeg'
+import hero2 from '../../assets/FamilyOfficeTravelPlanning/hero2.jpeg'
+import hero3 from '../../assets/FamilyOfficeTravelPlanning/hero3.jpeg'
+
+import principalImg from '../../assets/FamilyOfficeTravelPlanning/principal.webp'
+import spouseImg from '../../assets/FamilyOfficeTravelPlanning/spouse.webp'
+import childrenImg from '../../assets/FamilyOfficeTravelPlanning/children.webp'
+import grandchildrenImg from '../../assets/FamilyOfficeTravelPlanning/grandchildren.webp'
+import extendedFamilyImg from '../../assets/FamilyOfficeTravelPlanning/extended-family.webp'
+import householdStaffImg from '../../assets/FamilyOfficeTravelPlanning/household-staff.webp'
+import executiveAssistantsImg from '../../assets/FamilyOfficeTravelPlanning/assistant.webp'
+import businessAssociatesImg from '../../assets/FamilyOfficeTravelPlanning/business.webp'
+
+import privateTravelImageFile from '../../assets/FamilyOfficeTravelPlanning/private-travel.webp'
+import privateJetBannerFile from '../../assets/FamilyOfficeTravelPlanning/private-jet-tarmac.webp'
+import executiveBusinessImageFile from '../../assets/FamilyOfficeTravelPlanning/executive-meeting.webp'
+import privacySecurityImageFile from '../../assets/FamilyOfficeTravelPlanning/secure-villa.jpeg'
+
+import vacationMedCruises from '../../assets/FamilyOfficeTravelPlanning/vacation-med-cruises.jpeg'
+import vacationCulturalJourneys from '../../assets/FamilyOfficeTravelPlanning/vacation-cultural-journeys.jpg'
+import vacationSafaris from '../../assets/FamilyOfficeTravelPlanning/vacation-safaris.jpg'
+import vacationBeachResorts from '../../assets/FamilyOfficeTravelPlanning/vacation-beach-resorts.jpg'
+import vacationIslandEscapes from '../../assets/FamilyOfficeTravelPlanning/vacation-island-escapes.webp'
+import vacationSkiVacations from '../../assets/FamilyOfficeTravelPlanning/vacation-ski-vacations.jpg'
+import vacationWellnessRetreats from '../../assets/FamilyOfficeTravelPlanning/vacation-wellness-retreats.webp'
+import vacationExpeditionCruises from '../../assets/FamilyOfficeTravelPlanning/vacation-expedition-cruises.webp'
+
+import cruiseExplora from '../../assets/FamilyOfficeTravelPlanning/cruise-explora.jpg'
+import cruiseRegent from '../../assets/FamilyOfficeTravelPlanning/cruise-regent.png'
+import cruiseCrystal from '../../assets/FamilyOfficeTravelPlanning/cruise-crystal.jpg'
+import cruiseSilversea from '../../assets/FamilyOfficeTravelPlanning/cruise-silversea.webp'
+import cruiseSeabourn from '../../assets/FamilyOfficeTravelPlanning/cruise-seabourn.webp'
+import cruiseViking from '../../assets/FamilyOfficeTravelPlanning/cruise-viking.webp'
+
 const heroImages = [
-    "https://placehold.co/1600x900?text=Private+Jet+Interior",
-    "https://placehold.co/1600x900?text=Luxury+Superyacht",
-    "https://placehold.co/1600x900?text=Luxury+Villa"
+    hero1,
+    hero2,
+    hero3
 ]
 
 const membersImages = {
-    principals: "https://placehold.co/600x600?text=Executive+Portrait",
-    spouses: "https://placehold.co/600x600?text=Couple+Travel",
-    children: "https://placehold.co/600x600?text=Family+with+Kids",
-    grandchildren: "https://placehold.co/600x600?text=Multi-gen+Family",
-    extendedFamily: "https://placehold.co/600x600?text=Family+Gathering",
-    householdStaff: "https://placehold.co/600x600?text=Concierge+Staff",
-    executiveAssistants: "https://placehold.co/600x600?text=Assistant+Working",
-    businessAssociates: "https://placehold.co/600x600?text=Business+Group"
+    principals: principalImg,
+    spouses: spouseImg,
+    children: childrenImg,
+    grandchildren: grandchildrenImg,
+    extendedFamily: extendedFamilyImg,
+    householdStaff: householdStaffImg,
+    executiveAssistants: executiveAssistantsImg,
+    businessAssociates: businessAssociatesImg
 }
 
-const privateTravelImage = "https://placehold.co/1200x800?text=Concierge+Planning+Desk"
-const privateJetBanner = "https://placehold.co/1800x800?text=Private+Jet+on+Tarmac"
-const executiveBusinessImage = "https://placehold.co/1000x666?text=Executive+Meeting"
-const privacySecurityImage = "https://placehold.co/1200x800?text=Secure+Luxury+Villa"
+const privateTravelImage = privateTravelImageFile
+const privateJetBanner = privateJetBannerFile
+const executiveBusinessImage = executiveBusinessImageFile
+const privacySecurityImage = privacySecurityImageFile
 
 const vacationImages = {
-    mediterraneanCruises: "https://placehold.co/600x400?text=Mediterranean+Cruises",
-    europeanCulturalJourneys: "https://placehold.co/600x400?text=European+Cultural+Journeys",
-    africanSafaris: "https://placehold.co/600x400?text=African+Safaris",
-    luxuryBeachResorts: "https://placehold.co/600x400?text=Luxury+Beach+Resorts",
-    privateIslandEscapes: "https://placehold.co/600x400?text=Private+Island+Escapes",
-    skiVacations: "https://placehold.co/600x400?text=Ski+Vacations",
-    wellnessRetreats: "https://placehold.co/600x400?text=Wellness+Retreats",
-    expeditionCruises: "https://placehold.co/600x400?text=Expedition+Cruises"
+    mediterraneanCruises: vacationMedCruises,
+    europeanCulturalJourneys: vacationCulturalJourneys,
+    africanSafaris: vacationSafaris,
+    luxuryBeachResorts: vacationBeachResorts,
+    privateIslandEscapes: vacationIslandEscapes,
+    skiVacations: vacationSkiVacations,
+    wellnessRetreats: vacationWellnessRetreats,
+    expeditionCruises: vacationExpeditionCruises
 }
 
 const cruiseLineImages = {
-    exploraJourneys: "https://placehold.co/400x300?text=Explora+Journeys",
-    regentSevenSeas: "https://placehold.co/400x300?text=Regent+Seven+Seas",
-    crystalCruises: "https://placehold.co/400x300?text=Crystal+Cruises",
-    silversea: "https://placehold.co/400x300?text=Silversea+Cruises",
-    seabourn: "https://placehold.co/400x300?text=Seabourn",
-    viking: "https://placehold.co/400x300?text=Viking"
+    exploraJourneys: cruiseExplora,
+    regentSevenSeas: cruiseRegent,
+    crystalCruises: cruiseCrystal,
+    silversea: cruiseSilversea,
+    seabourn: cruiseSeabourn,
+    viking: cruiseViking
 }
 
 function FamilyOfficeTravelPlanning() {
