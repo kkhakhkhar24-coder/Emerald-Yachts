@@ -2,34 +2,32 @@ import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import './Philanthropicpurposedriventravel.css'
 
+import hero1 from '../../assets/Philanthropicpurposedriventravel/hero1.jpg'
+import hero2 from '../../assets/Philanthropicpurposedriventravel/hero2.png'
+import hero3 from '../../assets/Philanthropicpurposedriventravel/hero3.png'
 
-// import hero1 from '../../assets/PhilanthropicPurposeDrivenTravel/hero1.jpg'
-// import hero2 from '../../assets/PhilanthropicPurposeDrivenTravel/hero2.jpg'
-// import hero3 from '../../assets/PhilanthropicPurposeDrivenTravel/hero3.jpg'
+import familyPhilanthropyImg from '../../assets/Philanthropicpurposedriventravel/family-philanthropy-travel.webp'
+import luxuryPurposeImg from '../../assets/Philanthropicpurposedriventravel/luxury-accommodations-with-purpose.webp'
 
-// import familyPhilanthropyImg from '../../assets/PhilanthropicPurposeDrivenTravel/family-philanthropy-travel.webp'
-// import luxuryPurposeImg from '../../assets/PhilanthropicPurposeDrivenTravel/luxury-accommodations-with-purpose.webp'
+import consWildlifeResearch from '../../assets/Philanthropicpurposedriventravel/conservation-wildlife-research.webp'
+import consMarine from '../../assets/Philanthropicpurposedriventravel/conservation-marine-conservation.webp'
+import consSeaTurtle from '../../assets/Philanthropicpurposedriventravel/conservation-sea-turtle-protection.webp'
+import consElephant from '../../assets/Philanthropicpurposedriventravel/conservation-elephant-sanctuary.webp'
+import consRhino from '../../assets/Philanthropicpurposedriventravel/conservation-rhino-conservation.webp'
+import consGorilla from '../../assets/Philanthropicpurposedriventravel/conservation-gorilla-conservation.webp'
+import consNationalPark from '../../assets/Philanthropicpurposedriventravel/conservation-national-park-initiative.webp'
+import consHabitat from '../../assets/Philanthropicpurposedriventravel/conservation-habitat-restoration.webp'
 
-// import consWildlifeResearch from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-wildlife-research.webp'
-// import consMarine from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-marine-conservation.webp'
-// import consSeaTurtle from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-sea-turtle-protection.webp'
-// import consElephant from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-elephant-sanctuary.webp'
-// import consRhino from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-rhino-conservation.webp'
-// import consGorilla from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-gorilla-conservation.webp'
-// import consNationalPark from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-national-park-initiative.webp'
-// import consHabitat from '../../assets/PhilanthropicPurposeDrivenTravel/conservation-habitat-restoration.webp'
+import eduSchoolVisits from '../../assets/Philanthropicpurposedriventravel/education-school-visits.webp'
+import eduPartnerships from '../../assets/Philanthropicpurposedriventravel/education-educational-partnerships.webp'
+import eduWorkshops from '../../assets/Philanthropicpurposedriventravel/education-cultural-workshops.webp'
+import eduArtisan from '../../assets/Philanthropicpurposedriventravel/education-local-artisan-programs.webp'
+import eduLanguage from '../../assets/Philanthropicpurposedriventravel/education-language-experiences.webp'
+import eduHistorical from '../../assets/Philanthropicpurposedriventravel/education-historical-tours.webp'
+import eduCommunity from '../../assets/Philanthropicpurposedriventravel/education-community-development.webp'
+import eduIndigenous from '../../assets/Philanthropicpurposedriventravel/education-indigenous-cultural-exchange.webp'
 
-// import eduSchoolVisits from '../../assets/PhilanthropicPurposeDrivenTravel/education-school-visits.webp'
-// import eduPartnerships from '../../assets/PhilanthropicPurposeDrivenTravel/education-educational-partnerships.webp'
-// import eduWorkshops from '../../assets/PhilanthropicPurposeDrivenTravel/education-cultural-workshops.webp'
-// import eduArtisan from '../../assets/PhilanthropicPurposeDrivenTravel/education-local-artisan-programs.webp'
-// import eduLanguage from '../../assets/PhilanthropicPurposeDrivenTravel/education-language-experiences.webp'
-// import eduHistorical from '../../assets/PhilanthropicPurposeDrivenTravel/education-historical-tours.webp'
-// import eduCommunity from '../../assets/PhilanthropicPurposeDrivenTravel/education-community-development.webp'
-// import eduIndigenous from '../../assets/PhilanthropicPurposeDrivenTravel/education-indigenous-cultural-exchange.webp'
-
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_Picture_AH from '../../assets/Philanthropicpurposedriventravel/Profile_Picture_AH.jpg'
 
 import {
     Heart, Leaf, Users, Sparkles, GraduationCap, HandHeart, Compass, Award,
@@ -47,7 +45,7 @@ import { useState, useEffect } from 'react'
 
 function PhilanthropicPurposeDrivenTravel() {
     const [ppdCurrentHero, setPpdCurrentHero] = useState(0)
-    const ppdHeroImages = []
+    const ppdHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const ppdTimer = setInterval(() => {
@@ -84,25 +82,25 @@ function PhilanthropicPurposeDrivenTravel() {
     ]
 
     const ppdConservationItems = [
-        // { text: 'Wildlife research programs', img: consWildlifeResearch, icon: PawPrint },
-        // { text: 'Marine conservation', img: consMarine, icon: Waves },
-        // { text: 'Sea turtle protection', img: consSeaTurtle, icon: Fish },
-        // { text: 'Elephant sanctuaries', img: consElephant, icon: PawIcon },
-        // { text: 'Rhino conservation', img: consRhino, icon: Rabbit },
-        // { text: 'Gorilla conservation', img: consGorilla, icon: Trees },
-        // { text: 'National park initiatives', img: consNationalPark, icon: Mountain },
-        // { text: 'Habitat restoration', img: consHabitat, icon: Sprout }
+        { text: 'Wildlife research programs', img: consWildlifeResearch, icon: PawPrint },
+        { text: 'Marine conservation', img: consMarine, icon: Waves },
+        { text: 'Sea turtle protection', img: consSeaTurtle, icon: Fish },
+        { text: 'Elephant sanctuaries', img: consElephant, icon: PawIcon },
+        { text: 'Rhino conservation', img: consRhino, icon: Rabbit },
+        { text: 'Gorilla conservation', img: consGorilla, icon: Trees },
+        { text: 'National park initiatives', img: consNationalPark, icon: Mountain },
+        { text: 'Habitat restoration', img: consHabitat, icon: Sprout }
     ]
 
     const ppdEducationItems = [
-        // { text: 'School visits', img: eduSchoolVisits, icon: School },
-        // { text: 'Educational partnerships', img: eduPartnerships, icon: Building2 },
-        // { text: 'Cultural workshops', img: eduWorkshops, icon: Palette },
-        // { text: 'Local artisan programs', img: eduArtisan, icon: Hammer },
-        // { text: 'Language experiences', img: eduLanguage, icon: Languages },
-        // { text: 'Historical tours', img: eduHistorical, icon: ScrollText },
-        // { text: 'Community development projects', img: eduCommunity, icon: Home },
-        // { text: 'Indigenous cultural exchanges', img: eduIndigenous, icon: Users }
+        { text: 'School visits', img: eduSchoolVisits, icon: School },
+        { text: 'Educational partnerships', img: eduPartnerships, icon: Building2 },
+        { text: 'Cultural workshops', img: eduWorkshops, icon: Palette },
+        { text: 'Local artisan programs', img: eduArtisan, icon: Hammer },
+        { text: 'Language experiences', img: eduLanguage, icon: Languages },
+        { text: 'Historical tours', img: eduHistorical, icon: ScrollText },
+        { text: 'Community development projects', img: eduCommunity, icon: Home },
+        { text: 'Indigenous cultural exchanges', img: eduIndigenous, icon: Users }
     ]
 
     const ppdHumanitarianItems = [
@@ -468,7 +466,7 @@ function PhilanthropicPurposeDrivenTravel() {
             <section className="ppd-family-section">
                 <div className="ppd-family-container">
                     <div className="ppd-family-image-block">
-                        {/* <img src={familyPhilanthropyImg} alt="Family philanthropy through travel" className="ppd-family-image" /> */}
+                        <img src={familyPhilanthropyImg} alt="Family philanthropy through travel" className="ppd-family-image" />
                         <div className="ppd-family-image-overlay"></div>
                     </div>
                     <div className="ppd-family-content-block">
@@ -518,7 +516,7 @@ function PhilanthropicPurposeDrivenTravel() {
                             const IconComp = item.icon
                             return (
                                 <div key={idx} className={`ppd-conservation-card ppd-cons-card-${idx + 1}`}>
-                                    {/* <img src={item.img} alt={item.text} className="ppd-conservation-img" /> */}
+                                    <img src={item.img} alt={item.text} className="ppd-conservation-img" />
                                     <div className="ppd-conservation-card-overlay"></div>
                                     <div className="ppd-conservation-icon-badge">
                                         <IconComp size={16} />
@@ -553,7 +551,7 @@ function PhilanthropicPurposeDrivenTravel() {
                             const IconComp = item.icon
                             return (
                                 <div key={idx} className="ppd-education-tile">
-                                    {/* <img src={item.img} alt={item.text} className="ppd-education-img" /> */}
+                                    <img src={item.img} alt={item.text} className="ppd-education-img" />
                                     <div className="ppd-education-tile-overlay"></div>
                                     <div className="ppd-education-tile-content">
                                         <div className="ppd-education-tile-icon">
@@ -630,7 +628,7 @@ function PhilanthropicPurposeDrivenTravel() {
                         </p>
                     </div>
                     <div className="ppd-accommodations-image-block">
-                        {/* <img src={luxuryPurposeImg} alt="Luxury accommodations with purpose" className="ppd-accommodations-image" /> */}
+                        <img src={luxuryPurposeImg} alt="Luxury accommodations with purpose" className="ppd-accommodations-image" />
                         <div className="ppd-accommodations-image-overlay"></div>
                         <div className="ppd-accommodations-badge">
                             <Leaf size={18} />
@@ -746,7 +744,7 @@ function PhilanthropicPurposeDrivenTravel() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Philanthropic Travel Advisor" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Philanthropic Travel Advisor" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">

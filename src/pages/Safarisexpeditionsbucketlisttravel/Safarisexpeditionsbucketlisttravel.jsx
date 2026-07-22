@@ -9,13 +9,63 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+/* Hero Images */
+import hero1 from '../../assets/Safarisexpeditionsbucketlisttravel/african-safari-expedition-hero.png'
+import hero2 from '../../assets/Safarisexpeditionsbucketlisttravel/antarctica-expedition-cruise-hero.png'
+import hero3 from '../../assets/Safarisexpeditionsbucketlisttravel/galapagos-islands-luxury-yacht-hero.png'
+
+/* Intro Image */
+import introSafariDrive from '../../assets/Safarisexpeditionsbucketlisttravel/luxury-african-safari-game-drive.png'
+
+/* Safari Countries */
+import kenyaImg from '../../assets/Safarisexpeditionsbucketlisttravel/kenya-masai-mara-luxury-safari.png'
+import tanzaniaImg from '../../assets/Safarisexpeditionsbucketlisttravel/tanzania-serengeti-great-migration-safari.png'
+import botswanaImg from '../../assets/Safarisexpeditionsbucketlisttravel/botswana-okavango-delta-luxury-safari.png'
+import southAfricaImg from '../../assets/Safarisexpeditionsbucketlisttravel/south-africa-kruger-luxury-safari.png'
+import namibiaImg from '../../assets/Safarisexpeditionsbucketlisttravel/namibia-sossusvlei-red-dunes-safari.png'
+import zambiaImg from '../../assets/Safarisexpeditionsbucketlisttravel/zambia-victoria-falls-safari.png'
+import zimbabweImg from '../../assets/Safarisexpeditionsbucketlisttravel/zimbabwe-mana-pools-safari.png'
+import rwandaImg from '../../assets/Safarisexpeditionsbucketlisttravel/rwanda-gorilla-trekking-safari.png'
+
+/* Antarctica Expedition Images */
+import antarcticaGlaciers from '../../assets/Safarisexpeditionsbucketlisttravel/antarctica-expedition-glaciers-vessel.png'
+import antarcticaPenguins from '../../assets/Safarisexpeditionsbucketlisttravel/antarctica-gentoo-penguin-colony-wildlife.webp'
+import antarcticaZodiac from '../../assets/Safarisexpeditionsbucketlisttravel/antarctica-zodiac-expedition-excursion.jpg'
+
+/* Galápagos Cruise Images */
+import galapagosTortoise from '../../assets/Safarisexpeditionsbucketlisttravel/galapagos-giant-tortoise-wildlife-sanctuary.jpg'
+import galapagosBooby from '../../assets/Safarisexpeditionsbucketlisttravel/galapagos-blue-footed-booby-wildlife.webp'
+import galapagosSnorkeling from '../../assets/Safarisexpeditionsbucketlisttravel/galapagos-snorkeling-marine-life-expedition.webp'
+
+/* Expedition Cruise Images */
+import expeditionVessel from '../../assets/Safarisexpeditionsbucketlisttravel/luxury-polar-expedition-cruise-vessel.jpg'
+import norwegianFjords from '../../assets/Safarisexpeditionsbucketlisttravel/norwegian-fjords-expedition-cruise-landscape.webp'
+import arcticKayaking from '../../assets/Safarisexpeditionsbucketlisttravel/arctic-kayaking-expedition-excursion.webp'
+
+/* Family Adventure Images */
+import familySafari from '../../assets/Safarisexpeditionsbucketlisttravel/multigenerational-family-safari-vacation.jpg'
+import grandparentsSafari from '../../assets/Safarisexpeditionsbucketlisttravel/grandparents-grandchildren-safari-experience.jpg'
+import teenagersAdventure from '../../assets/Safarisexpeditionsbucketlisttravel/teenagers-family-expedition-adventure-vacation.jpg'
+
+/* Luxury Accommodations Images */
+import lodgeDeck from '../../assets/Safarisexpeditionsbucketlisttravel/luxury-safari-lodge-private-deck-suite.jpg'
+import glampingSuite from '../../assets/Safarisexpeditionsbucketlisttravel/boutique-expedition-camp-glamping-suite.jpg'
+import cruiseSuite from '../../assets/Safarisexpeditionsbucketlisttravel/expedition-cruise-ship-suite-balcony-view.jpg'
+import resortDining from '../../assets/Safarisexpeditionsbucketlisttravel/eco-luxury-resort-dining-experience.webp'
+
+/* Conservation Image */
+import conservationImg from '../../assets/Safarisexpeditionsbucketlisttravel/wildlife-conservation-responsible-travel.webp'
+
+/* Why Choose Us Image */
+import whyChooseUsImg from '../../assets/Safarisexpeditionsbucketlisttravel/family-enjoying-luxury-expedition-adventure.jpg'
+
 function SafarisExpeditionsBucketListTravel() {
 
     /* Hero rotating background images */
     const sfexHeroImages = [
-        // 'https://picsum.photos/seed/sfex-hero-1/1800/1200',
-        // 'https://picsum.photos/seed/sfex-hero-2/1800/1200',
-        // 'https://picsum.photos/seed/sfex-hero-3/1800/1200'
+        hero1,
+        hero2,
+        hero3
     ]
     const [sfexCurrentHero, setSfexCurrentHero] = useState(0)
     useEffect(() => {
@@ -44,14 +94,14 @@ function SafarisExpeditionsBucketListTravel() {
 
     /* African safari countries with images */
     const sfexSafariCountries = [
-        { name: 'Kenya', img: 'https://picsum.photos/seed/sfex-kenya/600/700' },
-        { name: 'Tanzania', img: 'https://picsum.photos/seed/sfex-tanzania/600/700' },
-        { name: 'Botswana', img: 'https://picsum.photos/seed/sfex-botswana/600/700' },
-        { name: 'South Africa', img: 'https://picsum.photos/seed/sfex-southafrica/600/700' },
-        { name: 'Namibia', img: 'https://picsum.photos/seed/sfex-namibia/600/700' },
-        { name: 'Zambia', img: 'https://picsum.photos/seed/sfex-zambia/600/700' },
-        { name: 'Zimbabwe', img: 'https://picsum.photos/seed/sfex-zimbabwe/600/700' },
-        { name: 'Rwanda', img: 'https://picsum.photos/seed/sfex-rwanda/600/700' }
+        { name: 'Kenya', img: kenyaImg },
+        { name: 'Tanzania', img: tanzaniaImg },
+        { name: 'Botswana', img: botswanaImg },
+        { name: 'South Africa', img: southAfricaImg },
+        { name: 'Namibia', img: namibiaImg },
+        { name: 'Zambia', img: zambiaImg },
+        { name: 'Zimbabwe', img: zimbabweImg },
+        { name: 'Rwanda', img: rwandaImg }
     ]
 
     const sfexSafariExperiences = [
@@ -214,7 +264,7 @@ function SafarisExpeditionsBucketListTravel() {
                         <div
                             key={idx}
                             className={`sfex-hero-slide ${sfexCurrentHero === idx ? 'sfex-slide-active' : ''}`}
-                            /* style={{ backgroundImage: `url(${img})` }} */
+                            style={{ backgroundImage: `url(${img})` }}
                         />
                     ))}
                     <div className="sfex-hero-overlay"></div>
@@ -259,7 +309,7 @@ function SafarisExpeditionsBucketListTravel() {
                                 </div>
                             </div>
                             <div className="sfex-intro-image-frame">
-                                {/* <img src="https://picsum.photos/seed/sfex-intro-safari/900/1000" alt="Luxury African safari game drive" /> */}
+                                <img src={introSafariDrive} alt="Luxury African safari game drive experience with expert guide" />
                                 <div className="sfex-intro-badge-float">
                                     <Compass size={18} />
                                     <span>Expertly Guided Adventures</span>
@@ -314,7 +364,7 @@ function SafarisExpeditionsBucketListTravel() {
                         <div className="sfex-country-grid">
                             {sfexSafariCountries.map((country, idx) => (
                                 <div key={idx} className="sfex-country-card">
-                                    {/* <img src={country.img} alt={`${country.name} luxury safari destination`} /> */}
+                                    <img src={country.img} alt={`${country.name} luxury safari destination`} />
                                     <div className="sfex-country-card-overlay">
                                         <h4 className="sfex-country-card-name">{country.name}</h4>
                                     </div>
@@ -338,9 +388,9 @@ function SafarisExpeditionsBucketListTravel() {
                     <div className="sfex-journey-container">
                         <div className="sfex-journey-grid">
                             <div className="sfex-journey-media">
-                                {/* <img className="sfex-media-tall" src="https://picsum.photos/seed/sfex-antarctica-1/700/900" alt="Antarctica expedition glaciers" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-antarctica-2/700/440" alt="Penguin colonies in Antarctica" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-antarctica-3/700/440" alt="Zodiac landing Antarctica expedition" /> */}
+                                <img className="sfex-media-tall" src={antarcticaGlaciers} alt="Antarctica polar expedition vessel among giant glaciers" />
+                                <img className="sfex-media-short" src={antarcticaPenguins} alt="Gentoo penguin colonies in Antarctica snow shoreline" />
+                                <img className="sfex-media-short" src={antarcticaZodiac} alt="Zodiac boat expedition excursion near icebergs in Antarctica" />
                             </div>
                             <div className="sfex-journey-copy">
                                 <span className="sfex-journey-eyebrow">
@@ -370,9 +420,9 @@ function SafarisExpeditionsBucketListTravel() {
                     <div className="sfex-journey-container">
                         <div className="sfex-journey-grid sfex-journey-reverse">
                             <div className="sfex-journey-media">
-                                {/* <img className="sfex-media-tall" src="https://picsum.photos/seed/sfex-galapagos-1/700/900" alt="Galápagos giant tortoise wildlife" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-galapagos-2/700/440" alt="Blue-footed booby Galápagos" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-galapagos-3/700/440" alt="Snorkeling in the Galápagos Islands" /> */}
+                                <img className="sfex-media-tall" src={galapagosTortoise} alt="Giant tortoise wildlife in Galápagos Islands" />
+                                <img className="sfex-media-short" src={galapagosBooby} alt="Blue-footed booby birds in Galápagos Islands" />
+                                <img className="sfex-media-short" src={galapagosSnorkeling} alt="Snorkeling with marine life in Galápagos Islands" />
                             </div>
                             <div className="sfex-journey-copy">
                                 <span className="sfex-journey-eyebrow">
@@ -402,9 +452,9 @@ function SafarisExpeditionsBucketListTravel() {
                     <div className="sfex-journey-container">
                         <div className="sfex-journey-grid">
                             <div className="sfex-journey-media">
-                                {/* <img className="sfex-media-tall" src="https://picsum.photos/seed/sfex-expedition-1/700/900" alt="Luxury expedition cruise ship" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-expedition-2/700/440" alt="Norwegian Fjords expedition cruise" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-expedition-3/700/440" alt="Kayaking expedition excursion" /> */}
+                                <img className="sfex-media-tall" src={expeditionVessel} alt="Ultra-luxury polar expedition cruise ship" />
+                                <img className="sfex-media-short" src={norwegianFjords} alt="Norwegian Fjords expedition cruise landscape" />
+                                <img className="sfex-media-short" src={arcticKayaking} alt="Arctic kayaking expedition excursion near icebergs" />
                             </div>
                             <div className="sfex-journey-copy">
                                 <span className="sfex-journey-eyebrow">
@@ -434,9 +484,9 @@ function SafarisExpeditionsBucketListTravel() {
                     <div className="sfex-journey-container">
                         <div className="sfex-journey-grid sfex-journey-reverse">
                             <div className="sfex-journey-media">
-                                {/* <img className="sfex-media-tall" src="https://picsum.photos/seed/sfex-family-1/700/900" alt="Multigenerational family adventure travel" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-family-2/700/440" alt="Grandparents and grandchildren on safari" /> */}
-                                {/* <img className="sfex-media-short" src="https://picsum.photos/seed/sfex-family-3/700/440" alt="Teenagers on family adventure vacation" /> */}
+                                <img className="sfex-media-tall" src={familySafari} alt="Multigenerational family safari adventure vacation" />
+                                <img className="sfex-media-short" src={grandparentsSafari} alt="Grandparents and grandchildren on African safari" />
+                                <img className="sfex-media-short" src={teenagersAdventure} alt="Teenagers on family adventure vacation" />
                             </div>
                             <div className="sfex-journey-copy">
                                 <span className="sfex-journey-eyebrow">
@@ -486,10 +536,10 @@ function SafarisExpeditionsBucketListTravel() {
                                 </p>
                             </div>
                             <div className="sfex-stay-gallery">
-                                {/* <img src="https://picsum.photos/seed/sfex-stay-1/500/500" alt="Luxury safari lodge accommodation" /> */}
-                                {/* <img src="https://picsum.photos/seed/sfex-stay-2/500/500" alt="Boutique expedition camp" /> */}
-                                {/* <img src="https://picsum.photos/seed/sfex-stay-3/500/500" alt="Expedition suite interior" /> */}
-                                {/* <img src="https://picsum.photos/seed/sfex-stay-4/500/500" alt="Eco-luxury resort setting" /> */}
+                                <img src={lodgeDeck} alt="Luxury African safari lodge suite with private deck" />
+                                <img src={glampingSuite} alt="Boutique expedition camp glamping tent suite" />
+                                <img src={cruiseSuite} alt="Expedition cruise ship suite with ocean balcony view" />
+                                <img src={resortDining} alt="Eco-luxury resort outdoor dining experience" />
                             </div>
                         </div>
                     </div>
@@ -543,7 +593,7 @@ function SafarisExpeditionsBucketListTravel() {
                             </p>
                         </div>
                         <div className="sfex-conservation-image">
-                            {/* <img src="https://picsum.photos/seed/sfex-conservation/900/700" alt="Wildlife conservation and responsible travel" /> */}
+                            <img src={conservationImg} alt="Wildlife conservation and responsible travel" />
                         </div>
                     </div>
                 </section>
@@ -561,7 +611,7 @@ function SafarisExpeditionsBucketListTravel() {
                                 </p>
                             </div>
                             <div className="sfex-why-us-image">
-                                {/* <img src="https://picsum.photos/seed/sfex-whychoose/900/650" alt="Family enjoying a luxury expedition adventure" /> */}
+                                <img src={whyChooseUsImg} alt="Family enjoying a luxury expedition adventure" />
                             </div>
                         </div>
                         <div className="sfex-why-us-grid">

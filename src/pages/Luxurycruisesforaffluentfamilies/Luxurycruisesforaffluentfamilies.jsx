@@ -8,13 +8,59 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+/* Hero Images */
+import hero1 from '../../assets/Luxurycruisesforaffluentfamilies/hero1.webp'
+import hero2 from '../../assets/Luxurycruisesforaffluentfamilies/hero2.webp'
+import hero3 from '../../assets/Luxurycruisesforaffluentfamilies/hero3.jpg'
+
+/* Intro Image */
+import introCruiseImg from '../../assets/Luxurycruisesforaffluentfamilies/luxury-family-cruise-ship-ocean-sunset.webp'
+
+/* Small Ship Cruises */
+import smallShipTall from '../../assets/Luxurycruisesforaffluentfamilies/small-ship-luxury-cruise-vessel.webp'
+import smallShipShort1 from '../../assets/Luxurycruisesforaffluentfamilies/boutique-small-ship-lounge-atmosphere.webp'
+import smallShipShort2 from '../../assets/Luxurycruisesforaffluentfamilies/small-luxury-cruise-ship-exclusive-port.webp'
+
+/* Luxury Expedition Cruises */
+import expeditionTall from '../../assets/Luxurycruisesforaffluentfamilies/antarctica-luxury-expedition-cruise-vessel.jpg'
+import expeditionShort1 from '../../assets/Luxurycruisesforaffluentfamilies/zodiac-excursion-expedition-cruise.jpg'
+import expeditionShort2 from '../../assets/Luxurycruisesforaffluentfamilies/polar-wildlife-encounter-expedition-cruise.webp'
+
+/* River Destinations */
+import riverRhine from '../../assets/Luxurycruisesforaffluentfamilies/rhine-river-luxury-cruise-germany.jpg'
+import riverDanube from '../../assets/Luxurycruisesforaffluentfamilies/danube-river-luxury-cruise-budapest.jpg'
+import riverRhone from '../../assets/Luxurycruisesforaffluentfamilies/rhone-river-luxury-cruise-france.jpg'
+import riverSeine from '../../assets/Luxurycruisesforaffluentfamilies/seine-river-luxury-cruise-paris.jpg'
+import riverDouro from '../../assets/Luxurycruisesforaffluentfamilies/douro-river-luxury-cruise-portugal.jpg'
+import riverMekong from '../../assets/Luxurycruisesforaffluentfamilies/mekong-river-luxury-cruise-asia.jpg'
+import riverNile from '../../assets/Luxurycruisesforaffluentfamilies/nile-river-luxury-cruise-egypt.jpg'
+import riverMississippi from '../../assets/Luxurycruisesforaffluentfamilies/mississippi-river-luxury-steamboat-cruise.jpg'
+
+/* Yacht Cruises */
+import yachtTall from '../../assets/Luxurycruisesforaffluentfamilies/ultra-luxury-yacht-cruise-mediterranean.webp'
+import yachtShort1 from '../../assets/Luxurycruisesforaffluentfamilies/elegant-luxury-yacht-suite-balcony.webp'
+import yachtShort2 from '../../assets/Luxurycruisesforaffluentfamilies/private-beach-yacht-cruise-excursion.webp'
+
+/* Family-Friendly Cruising */
+import familyCruiseTall from '../../assets/Luxurycruisesforaffluentfamilies/multigenerational-family-luxury-cruise-vacation.jpg'
+import familyCruiseShort1 from '../../assets/Luxurycruisesforaffluentfamilies/connecting-suites-family-luxury-cruise.webp'
+import familyCruiseShort2 from '../../assets/Luxurycruisesforaffluentfamilies/children-enrichment-activity-family-cruise.jpg'
+
+/* Exceptional Dining */
+import diningTall from '../../assets/Luxurycruisesforaffluentfamilies/gourmet-fine-dining-luxury-cruise-restaurant.webp'
+import diningShort1 from '../../assets/Luxurycruisesforaffluentfamilies/chefs-tasting-menu-luxury-cruise-experience.webp'
+import diningShort2 from '../../assets/Luxurycruisesforaffluentfamilies/wine-pairing-dinner-ocean-view-cruise.webp'
+
+/* Why Choose Us */
+import whyChooseUsImg from '../../assets/Luxurycruisesforaffluentfamilies/family-enjoying-luxury-cruise-vacation-deck.jpg'
+
 function LuxuryCruisesForAffluentFamilies() {
 
     /* Hero rotating background images */
     const lcafHeroImages = [
-        // 'https://picsum.photos/seed/lcaf-hero-1/1800/1200',
-        // 'https://picsum.photos/seed/lcaf-hero-2/1800/1200',
-        // 'https://picsum.photos/seed/lcaf-hero-3/1800/1200'
+        hero1,
+        hero2,
+        hero3
     ]
     const [lcafCurrentHero, setLcafCurrentHero] = useState(0)
     useEffect(() => {
@@ -43,14 +89,14 @@ function LuxuryCruisesForAffluentFamilies() {
 
     /* River destinations with images */
     const lcafRivers = [
-        { name: 'Rhine', img: 'https://picsum.photos/seed/lcaf-rhine/600/700' },
-        { name: 'Danube', img: 'https://picsum.photos/seed/lcaf-danube/600/700' },
-        { name: 'Rhône', img: 'https://picsum.photos/seed/lcaf-rhone/600/700' },
-        { name: 'Seine', img: 'https://picsum.photos/seed/lcaf-seine/600/700' },
-        { name: 'Douro', img: 'https://picsum.photos/seed/lcaf-douro/600/700' },
-        { name: 'Mekong', img: 'https://picsum.photos/seed/lcaf-mekong/600/700' },
-        { name: 'Nile', img: 'https://picsum.photos/seed/lcaf-nile/600/700' },
-        { name: 'Mississippi', img: 'https://picsum.photos/seed/lcaf-mississippi/600/700' }
+        { name: 'Rhine', img: riverRhine },
+        { name: 'Danube', img: riverDanube },
+        { name: 'Rhône', img: riverRhone },
+        { name: 'Seine', img: riverSeine },
+        { name: 'Douro', img: riverDouro },
+        { name: 'Mekong', img: riverMekong },
+        { name: 'Nile', img: riverNile },
+        { name: 'Mississippi', img: riverMississippi }
     ]
 
     /* Concierge services */
@@ -189,13 +235,13 @@ function LuxuryCruisesForAffluentFamilies() {
 
                 {/* HERO SECTION */}
                 <section className="lcaf-hero-section">
-                    {/* lcafHeroImages.map((img, idx) => (
+                    {lcafHeroImages.map((img, idx) => (
                         <div
                             key={idx}
                             className={`lcaf-hero-slide ${lcafCurrentHero === idx ? 'lcaf-slide-active' : ''}`}
                             style={{ backgroundImage: `url(${img})` }}
                         />
-                    )) */}
+                    ))}
                     <div className="lcaf-hero-overlay"></div>
                     <div className="lcaf-hero-content">
                         <div className="lcaf-hero-tag">
@@ -237,13 +283,13 @@ function LuxuryCruisesForAffluentFamilies() {
                                     Every itinerary is carefully matched to your family's travel style, interests, and expectations.
                                 </div>
                             </div>
-                            {/* <div className="lcaf-intro-image-frame">
-                                <img src="https://picsum.photos/seed/lcaf-intro-cruise/900/1000" alt="Luxury cruise ship sailing at sunset" />
+                            <div className="lcaf-intro-image-frame">
+                                <img src={introCruiseImg} alt="Luxury cruise ship sailing at sunset" />
                                 <div className="lcaf-intro-badge-float">
                                     <Anchor size={18} />
                                     <span>Voyages Matched to Your Family</span>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -282,11 +328,11 @@ function LuxuryCruisesForAffluentFamilies() {
                 <section className="lcaf-cruisetype-section">
                     <div className="lcaf-cruisetype-container">
                         <div className="lcaf-cruisetype-grid">
-                            {/* <div className="lcaf-cruisetype-media">
-                                <img className="lcaf-media-tall" src="https://picsum.photos/seed/lcaf-smallship-1/700/900" alt="Small ship luxury cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-smallship-2/700/440" alt="Boutique small ship atmosphere" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-smallship-3/700/440" alt="Small ship reaching unique port" />
-                            </div> */}
+                            <div className="lcaf-cruisetype-media">
+                                <img className="lcaf-media-tall" src={smallShipTall} alt="Small ship luxury cruise" />
+                                <img className="lcaf-media-short" src={smallShipShort1} alt="Boutique small ship atmosphere" />
+                                <img className="lcaf-media-short" src={smallShipShort2} alt="Small ship reaching unique port" />
+                            </div>
                             <div className="lcaf-cruisetype-copy">
                                 <span className="lcaf-cruisetype-eyebrow">
                                     <Ship size={16} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
@@ -314,11 +360,11 @@ function LuxuryCruisesForAffluentFamilies() {
                 <section className="lcaf-cruisetype-section lcaf-cruisetype-soft">
                     <div className="lcaf-cruisetype-container">
                         <div className="lcaf-cruisetype-grid lcaf-cruisetype-reverse">
-                            {/* <div className="lcaf-cruisetype-media">
-                                <img className="lcaf-media-tall" src="https://picsum.photos/seed/lcaf-expedition-1/700/900" alt="Luxury expedition cruise in Antarctica" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-expedition-2/700/440" alt="Zodiac excursion expedition cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-expedition-3/700/440" alt="Wildlife encounter expedition cruise" />
-                            </div> */}
+                            <div className="lcaf-cruisetype-media">
+                                <img className="lcaf-media-tall" src={expeditionTall} alt="Luxury expedition cruise in Antarctica" />
+                                <img className="lcaf-media-short" src={expeditionShort1} alt="Zodiac excursion expedition cruise" />
+                                <img className="lcaf-media-short" src={expeditionShort2} alt="Wildlife encounter expedition cruise" />
+                            </div>
                             <div className="lcaf-cruisetype-copy">
                                 <span className="lcaf-cruisetype-eyebrow">
                                     <Snowflake size={16} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
@@ -357,7 +403,7 @@ function LuxuryCruisesForAffluentFamilies() {
                         <div className="lcaf-river-grid">
                             {lcafRivers.map((river, idx) => (
                                 <div key={idx} className="lcaf-river-card">
-                                    {/* <img src={river.img} alt={`${river.name} luxury river cruise`} /> */}
+                                    <img src={river.img} alt={`${river.name} luxury river cruise`} />
                                     <div className="lcaf-river-card-overlay">
                                         <h4 className="lcaf-river-card-name">{river.name}</h4>
                                     </div>
@@ -374,11 +420,11 @@ function LuxuryCruisesForAffluentFamilies() {
                 <section className="lcaf-cruisetype-section lcaf-cruisetype-soft">
                     <div className="lcaf-cruisetype-container">
                         <div className="lcaf-cruisetype-grid">
-                            {/* <div className="lcaf-cruisetype-media">
-                                <img className="lcaf-media-tall" src="https://picsum.photos/seed/lcaf-yacht-1/700/900" alt="Luxury yacht cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-yacht-2/700/440" alt="Elegant yacht suite" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-yacht-3/700/440" alt="Private beach yacht cruise" />
-                            </div> */}
+                            <div className="lcaf-cruisetype-media">
+                                <img className="lcaf-media-tall" src={yachtTall} alt="Luxury yacht cruise" />
+                                <img className="lcaf-media-short" src={yachtShort1} alt="Elegant yacht suite" />
+                                <img className="lcaf-media-short" src={yachtShort2} alt="Private beach yacht cruise" />
+                            </div>
                             <div className="lcaf-cruisetype-copy">
                                 <span className="lcaf-cruisetype-eyebrow">
                                     <Anchor size={16} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
@@ -406,11 +452,11 @@ function LuxuryCruisesForAffluentFamilies() {
                 <section className="lcaf-cruisetype-section">
                     <div className="lcaf-cruisetype-container">
                         <div className="lcaf-cruisetype-grid lcaf-cruisetype-reverse">
-                            {/* <div className="lcaf-cruisetype-media">
-                                <img className="lcaf-media-tall" src="https://picsum.photos/seed/lcaf-familycruise-1/700/900" alt="Family-friendly luxury cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-familycruise-2/700/440" alt="Connecting suites family cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-familycruise-3/700/440" alt="Kids program on luxury cruise" />
-                            </div> */}
+                            <div className="lcaf-cruisetype-media">
+                                <img className="lcaf-media-tall" src={familyCruiseTall} alt="Family-friendly luxury cruise" />
+                                <img className="lcaf-media-short" src={familyCruiseShort1} alt="Connecting suites family cruise" />
+                                <img className="lcaf-media-short" src={familyCruiseShort2} alt="Kids program on luxury cruise" />
+                            </div>
                             <div className="lcaf-cruisetype-copy">
                                 <span className="lcaf-cruisetype-eyebrow">
                                     <Users size={16} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
@@ -438,11 +484,11 @@ function LuxuryCruisesForAffluentFamilies() {
                 <section className="lcaf-cruisetype-section lcaf-cruisetype-soft">
                     <div className="lcaf-cruisetype-container">
                         <div className="lcaf-cruisetype-grid">
-                            {/* <div className="lcaf-cruisetype-media">
-                                <img className="lcaf-media-tall" src="https://picsum.photos/seed/lcaf-dining-1/700/900" alt="Gourmet dining aboard a luxury cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-dining-2/700/440" alt="Chef's tasting menu on cruise" />
-                                <img className="lcaf-media-short" src="https://picsum.photos/seed/lcaf-dining-3/700/440" alt="Wine pairing dinner cruise" />
-                            </div> */}
+                            <div className="lcaf-cruisetype-media">
+                                <img className="lcaf-media-tall" src={diningTall} alt="Gourmet dining aboard a luxury cruise" />
+                                <img className="lcaf-media-short" src={diningShort1} alt="Chef's tasting menu on cruise" />
+                                <img className="lcaf-media-short" src={diningShort2} alt="Wine pairing dinner cruise" />
+                            </div>
                             <div className="lcaf-cruisetype-copy">
                                 <span className="lcaf-cruisetype-eyebrow">
                                     <Utensils size={16} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
@@ -499,9 +545,9 @@ function LuxuryCruisesForAffluentFamilies() {
                                     Luxury cruising is about selecting the right ship, itinerary, and experience—not simply booking a cabin. Families choose us because we provide:
                                 </p>
                             </div>
-                            {/* <div className="lcaf-why-us-image">
-                                <img src="https://picsum.photos/seed/lcaf-whychoose/900/650" alt="Family enjoying a luxury cruise vacation" />
-                            </div> */}
+                            <div className="lcaf-why-us-image">
+                                <img src={whyChooseUsImg} alt="Family enjoying a luxury cruise vacation" />
+                            </div>
                         </div>
                         <div className="lcaf-why-us-grid">
                             {lcafWhyChooseUs.map((item, idx) => {
