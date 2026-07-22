@@ -10,14 +10,39 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+import hero1 from '../../assets/Luxuryfamilycelebrations/milestone-vacations-multigenerational-family-celebration.jpg'
+import hero2 from '../../assets/Luxuryfamilycelebrations/family-reunion-luxury-resort-vacation.jpg'
+import hero3 from '../../assets/Luxuryfamilycelebrations/romantic-anniversary-travel-luxury-getaway.jpg'
+
+import introImg from '../../assets/Luxuryfamilycelebrations/family-celebrating-milestone-luxury-vacation-beach.jpg'
+
+import birthdayCollage1 from '../../assets/Luxuryfamilycelebrations/milestone-birthday-luxury-destination-resort.jpg'
+import birthdayCollage2 from '../../assets/Luxuryfamilycelebrations/private-villa-milestone-birthday-getaway.jpg'
+import birthdayCollage3 from '../../assets/Luxuryfamilycelebrations/luxury-theater-hall-birthday-gala-celebration.jpg'
+
+import destItaly from '../../assets/Luxuryfamilycelebrations/italy-amalfi-coast-anniversary-luxury-trip.jpg'
+import destFrance from '../../assets/Luxuryfamilycelebrations/france-provence-romantic-anniversary-vacation.jpg'
+import destGreece from '../../assets/Luxuryfamilycelebrations/greece-islands-luxury-catamaran-anniversary-cruise.jpg'
+import destBoraBora from '../../assets/Luxuryfamilycelebrations/bora-bora-overwater-bungalow-anniversary-trip.jpg'
+import destMaldives from '../../assets/Luxuryfamilycelebrations/maldives-luxury-water-villa-anniversary-celebration.jpg'
+import destHawaii from '../../assets/Luxuryfamilycelebrations/hawaii-beachfront-resort-family-anniversary.jpg'
+import destAmalfi from '../../assets/Luxuryfamilycelebrations/amalfi-coast-positano-anniversary-luxury-cruise.jpg'
+import destSwissAlps from '../../assets/Luxuryfamilycelebrations/swiss-alps-chalet-anniversary-winter-retreat.jpg'
+
+import reunionImg from '../../assets/Luxuryfamilycelebrations/multigenerational-family-reunion-resort-vacation.jpg'
+
+import villaGallery1 from '../../assets/Luxuryfamilycelebrations/private-luxury-villa-infinity-pool-celebration.jpg'
+import villaGallery2 from '../../assets/Luxuryfamilycelebrations/personal-chef-dining-private-villa-celebration.jpg'
+import villaGallery3 from '../../assets/Luxuryfamilycelebrations/private-pool-ocean-view-luxury-villa.jpg'
+import villaGallery4 from '../../assets/Luxuryfamilycelebrations/exclusive-resort-gathering-family-celebration.jpg'
+
+import whyUsImg from '../../assets/Luxuryfamilycelebrations/multigenerational-family-enjoying-luxury-travel.jpg'
+import { Link } from 'react-router'
+
 function LuxuryFamilyCelebrations() {
 
     /* Hero rotating background images */
-    const fcelHeroImages = [
-        'https://placehold.co/1800x1200?text=Milestone+Vacations',
-        'https://placehold.co/1800x1200?text=Family+Reunions',
-        'https://placehold.co/1800x1200?text=Anniversary+Travel'
-    ]
+    const fcelHeroImages = [hero1, hero2, hero3]
     const [fcelCurrentHero, setFcelCurrentHero] = useState(0)
     useEffect(() => {
         const fcelTimer = setInterval(() => {
@@ -45,14 +70,14 @@ function LuxuryFamilyCelebrations() {
 
     /* Anniversary destinations with images */
     const fcelAnniversaryDestinations = [
-        { name: 'Italy', icon: Globe },
-        { name: 'France', icon: Heart },
-        { name: 'Greece', icon: Anchor },
-        { name: 'Bora Bora', icon: Palmtree },
-        { name: 'Maldives', icon: Compass },
-        { name: 'Hawaii', icon: Sun },
-        { name: 'Amalfi Coast', icon: Ship },
-        { name: 'Swiss Alps', icon: Mountain }
+        { name: 'Italy', icon: Globe, img: destItaly },
+        { name: 'France', icon: Heart, img: destFrance },
+        { name: 'Greece', icon: Anchor, img: destGreece },
+        { name: 'Bora Bora', icon: Palmtree, img: destBoraBora },
+        { name: 'Maldives', icon: Compass, img: destMaldives },
+        { name: 'Hawaii', icon: Sun, img: destHawaii },
+        { name: 'Amalfi Coast', icon: Ship, img: destAmalfi },
+        { name: 'Swiss Alps', icon: Mountain, img: destSwissAlps }
     ]
 
     /* Luxury cruise lines */
@@ -230,10 +255,10 @@ function LuxuryFamilyCelebrations() {
                             Celebrate Life's Biggest Moments with Extraordinary Travel
                         </p>
                         <div className="fcel-hero-btn-row">
-                            <button className="fcel-btn-primary">
+                            <Link to='/contact' className="fcel-btn-primary">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="fcel-btn-outline">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -256,15 +281,18 @@ function LuxuryFamilyCelebrations() {
                                 <p className="fcel-lead-paragraph">
                                     At Trips & Ships Luxury Travel, we specialize in creating personalized luxury family celebrations that combine exceptional destinations, world-class accommodations, and unforgettable experiences. Every itinerary is thoughtfully designed to reflect your family's unique traditions, interests, and milestones.
                                 </p>
-                                <div className="fcel-intro-highlight-box">
-                                    From private villas overlooking the Mediterranean to luxury cruises, African safaris, and exclusive island escapes, we ensure every celebration is seamless, meaningful, and truly extraordinary.
-                                </div>
                             </div>
                             <div className="fcel-intro-image-frame">
-                                {/* <img src="https://picsum.photos/seed/fcel-intro-family/900/1000" alt="Family celebrating together on a luxury vacation" /> */}
+                                <img src={introImg} alt="Family celebrating milestone luxury vacation on beach" />
                                 <div className="fcel-intro-badge-float">
-                                    <Heart size={18} />
+                                    <Crown size={15} />
                                     <span>Crafted for Every Generation</span>
+                                </div>
+                            </div>
+                            <div className="fcel-intro-highlight-box">
+                                <span className="fcel-intro-quote-icon">"</span>
+                                <div className="fcel-intro-quote-content">
+                                    From private villas overlooking the Mediterranean to luxury cruises, African safaris, and exclusive island escapes, we ensure every celebration is seamless, meaningful, and truly extraordinary.
                                 </div>
                             </div>
                         </div>
@@ -307,13 +335,13 @@ function LuxuryFamilyCelebrations() {
                         <div className="fcel-birthday-grid">
                             <div className="fcel-birthday-media-collage">
                                 <div className="fcel-collage-img-wrap fcel-collage-tall">
-                                    <img src="https://placehold.co/700x900?text=Milestone+Birthday+Destination" alt="Milestone birthday celebration destination" />
+                                    <img src={birthdayCollage1} alt="Milestone birthday luxury destination resort" />
                                 </div>
                                 <div className="fcel-collage-img-wrap fcel-collage-short-1">
-                                    <img src="https://placehold.co/700x440?text=Private+Villa+Birthday" alt="Private villa birthday getaway" />
+                                    <img src={birthdayCollage2} alt="Private villa milestone birthday getaway" />
                                 </div>
                                 <div className="fcel-collage-img-wrap fcel-collage-short-2">
-                                    <img src="https://placehold.co/700x440?text=Surprise+Luxury+Birthday" alt="Surprise luxury birthday getaway" />
+                                    <img src={birthdayCollage3} alt="Luxury theater hall venue for milestone birthday gala celebration" />
                                 </div>
                                 <div className="fcel-collage-glow"></div>
                             </div>
@@ -361,11 +389,12 @@ function LuxuryFamilyCelebrations() {
                             {fcelAnniversaryDestinations.map((dest, idx) => {
                                 const DestIcon = dest.icon
                                 return (
-                                    <div key={idx} className="fcel-dest-card">
-                                        <div className="fcel-dest-icon-wrap">
-                                            <DestIcon size={24} />
-                                        </div>
-                                        <div className="fcel-dest-card-overlay">
+                                    <div key={idx} className="fcel-dest-card" style={{ backgroundImage: `url(${dest.img})` }}>
+                                        <div className="fcel-dest-card-overlay"></div>
+                                        <div className="fcel-dest-card-content">
+                                            <div className="fcel-dest-icon-wrap">
+                                                <DestIcon size={24} />
+                                            </div>
                                             <h4 className="fcel-dest-card-name">{dest.name}</h4>
                                         </div>
                                     </div>
@@ -384,7 +413,7 @@ function LuxuryFamilyCelebrations() {
                         <div className="fcel-reunion-grid-layout">
                             <div className="fcel-reunion-media-col">
                                 <div className="fcel-reunion-framed-card">
-                                    <img src="https://placehold.co/800x1000?text=Family+Reunion+Travel" alt="Multigenerational family reunion travel" />
+                                    <img src={reunionImg} alt="Multigenerational family reunion travel luxury resort celebration" />
                                     <div className="fcel-reunion-frame-badge">Multi-Generational Excellence</div>
                                 </div>
                             </div>
@@ -421,19 +450,17 @@ function LuxuryFamilyCelebrations() {
                                 Retirement Celebrations
                             </span>
                             <h3 className="fcel-retire-title">Retirement marks the beginning of an exciting new chapter.</h3>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <div className="fcel-heading-bar"></div>
                             <p className="fcel-retire-intro">Celebrate with:</p>
                         </div>
 
-                        <div className="fcel-retire-timeline">
+                        <div className="fcel-retire-grid">
                             {['Around-the-world journeys', 'Luxury cruises', 'African safaris', 'European grand tours', 'Expedition cruises', 'Wellness retreats', 'Private yacht charters', 'Bucket-list adventures'].map((item, idx) => (
-                                <div key={idx} className="fcel-retire-timeline-item">
-                                    <div className="fcel-retire-timeline-dot">
+                                <div key={idx} className="fcel-retire-card">
+                                    <div className="fcel-retire-card-number">
                                         <span>{idx + 1}</span>
                                     </div>
-                                    <div className="fcel-retire-timeline-content">
-                                        <h4 className="fcel-retire-item-text">{item}</h4>
-                                    </div>
+                                    <h4 className="fcel-retire-card-text">{item}</h4>
                                 </div>
                             ))}
                         </div>
@@ -560,10 +587,10 @@ function LuxuryFamilyCelebrations() {
                                 </p>
                             </div>
                             <div className="fcel-villa-gallery">
-                                <img src="https://placehold.co/500x500?text=Luxury+Villa+with+Pool" alt="Private luxury villa with pool" />
-                                <img src="https://placehold.co/500x500?text=Personal+Chef+Dining" alt="Personal chef villa dining" />
-                                <img src="https://placehold.co/500x500?text=Private+Pool+View" alt="Private pool villa view" />
-                                <img src="https://placehold.co/500x500?text=Exclusive+Resort" alt="Exclusive resort gathering area" />
+                                <img src={villaGallery1} alt="Secluded private luxury villa estate with infinity pool" />
+                                <img src={villaGallery2} alt="Personal chef gourmet dining setup at luxury private villa" />
+                                <img src={villaGallery3} alt="Private pool with panoramic ocean view luxury villa" />
+                                <img src={villaGallery4} alt="Exclusive resort beachfront gathering area for family celebrations" />
                             </div>
                         </div>
                     </div>
@@ -603,7 +630,7 @@ function LuxuryFamilyCelebrations() {
                                 </p>
                             </div>
                             <div className="fcel-why-us-image">
-                                <img src="https://placehold.co/900x650?text=Multigenerational+Family+Travel" alt="Multigenerational family enjoying luxury travel" />
+                                <img src={whyUsImg} alt="Multigenerational family enjoying luxury travel" />
                             </div>
                         </div>
                         <div className="fcel-why-us-grid">
@@ -664,10 +691,10 @@ function LuxuryFamilyCelebrations() {
                             Whether you're celebrating a milestone birthday, planning a multigenerational reunion, or honoring a lifetime achievement, we'll create an unforgettable journey designed around your family's vision.
                         </p>
                         <div className="fcel-cta-btn-row">
-                            <button className="fcel-btn-primary">
+                            <Link to="/contact" className="fcel-btn-primary">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="fcel-btn-outline">
                                 <LayoutList size={18} />
                                 Request Itinerary Options

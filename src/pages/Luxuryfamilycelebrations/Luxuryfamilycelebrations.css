@@ -176,6 +176,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -196,6 +197,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -226,27 +228,69 @@
    INTRO SECTION
    ============================================================ */
 .fcel-intro-section {
-    background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fcel-intro-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.fcel-intro-section::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.02);
+    pointer-events: none;
 }
 
 .fcel-intro-container {
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .fcel-intro-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 64px;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
     align-items: center;
+}
+
+.fcel-intro-copy {
+    position: relative;
 }
 
 .fcel-intro-image-frame {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 24px 50px rgba(15, 28, 46, 0.18);
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.fcel-intro-image-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+    z-index: 2;
 }
 
 .fcel-intro-image-frame img {
@@ -254,42 +298,69 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    min-height: 420px;
+    min-height: 500px;
+    transition: transform 0.6s ease;
+}
+
+.fcel-intro-image-frame:hover img {
+    transform: scale(1.03);
 }
 
 .fcel-intro-badge-float {
     position: absolute;
     bottom: 24px;
     left: 24px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(6px);
-    padding: 14px 20px;
-    border-radius: 12px;
-    display: flex;
+    background: var(--fcel-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
-    color: var(--fcel-navy);
+    gap: 8px;
     font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0 10px 24px rgba(15, 28, 46, 0.15);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
 }
 
 .fcel-intro-highlight-box {
-    background: var(--fcel-bg-soft);
-    border-left: 4px solid var(--fcel-navy);
-    border-radius: 0 8px 8px 0;
-    padding: 22px 26px;
-    margin-top: 26px;
-    font-size: 17px;
-    font-style: italic;
-    color: #2d3748;
-    line-height: 1.7;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--fcel-navy);
+    border-radius: 14px;
+    padding: 26px 32px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.15);
+}
+
+.fcel-intro-quote-icon {
+    font-size: 36px;
+    line-height: 0.5;
+    color: rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fcel-intro-quote-content {
+    flex: 1;
 }
 
 @media (max-width: 1024px) {
-    .fcel-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+    .fcel-intro-grid { grid-template-columns: 1fr; gap: 40px; align-items: center; }
     .fcel-intro-image-frame { order: -1; }
     .fcel-intro-image-frame img { min-height: 320px; }
+    .fcel-intro-highlight-box { grid-column: auto; }
+    .fcel-intro-copy { padding-left: 0; }
+    .fcel-intro-copy::before { display: none; }
 }
 
 @media (max-width: 768px) {
@@ -299,7 +370,10 @@
 
 @media (max-width: 480px) {
     .fcel-intro-section { padding: 44px 14px; }
-    .fcel-intro-highlight-box { padding: 16px 18px; font-size: 15px; }
+    .fcel-intro-highlight-box { padding: 20px; flex-direction: column; gap: 12px; align-items: flex-start; }
+    .fcel-intro-quote-icon { font-size: 28px; }
+    .fcel-intro-image-frame img { min-height: 240px; }
+    .fcel-intro-badge-float { bottom: 16px; left: 16px; padding: 8px 14px; font-size: 11px; }
 }
 
 /* ============================================================
@@ -532,7 +606,7 @@
    ANNIVERSARY DESTINATIONS GRID
    ============================================================ */
 .fcel-dest-section {
-    background: var(--fcel-bg-white);
+    background: var(--fcel-bg-soft);
     padding: 100px 20px;
 }
 
@@ -557,72 +631,68 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    height: 180px;
-    background: #ffffff;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+    height: 240px;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 24px;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
 }
 
-.fcel-dest-card::before {
+.fcel-dest-card::after {
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 20px;
-    background: linear-gradient(135deg, rgba(39, 68, 114, 0.03) 0%, rgba(96, 165, 250, 0.05) 100%);
-    opacity: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.1) 0%, rgba(15, 28, 46, 0.65) 100%);
+    z-index: 1;
     transition: opacity 0.4s ease;
-    z-index: 0;
 }
 
 .fcel-dest-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(39, 68, 114, 0.25);
-    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.12);
 }
 
-.fcel-dest-card:hover::before {
-    opacity: 1;
+.fcel-dest-card:hover::after {
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.05) 0%, rgba(15, 28, 46, 0.75) 100%);
+}
+
+.fcel-dest-card-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
 
 .fcel-dest-icon-wrap {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    background: var(--fcel-bg-soft);
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
-    color: var(--fcel-navy);
-    transition: all 0.4s ease;
-    z-index: 1;
-    position: relative;
+    margin: 0 auto 12px;
+    color: #ffffff;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .fcel-dest-card:hover .fcel-dest-icon-wrap {
     background: var(--fcel-navy);
-    color: #ffffff;
+    border-color: transparent;
     transform: rotate(15deg) scale(1.05);
 }
 
-.fcel-dest-card-overlay {
-    z-index: 1;
-    position: relative;
-}
-
 .fcel-dest-card-name {
-    color: var(--fcel-navy);
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-    text-align: center;
+    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
 }
 
 .fcel-dest-footer-note {
@@ -636,17 +706,18 @@
 
 @media (max-width: 1024px) {
     .fcel-dest-grid { grid-template-columns: repeat(3, 1fr); }
+    .fcel-dest-card { height: 200px; }
     .fcel-dest-section { padding: 60px 18px; }
 }
 
 @media (max-width: 768px) {
     .fcel-dest-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    .fcel-dest-card { height: 160px; padding: 18px; }
+    .fcel-dest-card { height: 180px; }
 }
 
 @media (max-width: 480px) {
-    .fcel-dest-grid { grid-template-columns: 1fr; gap: 12px; }
-    .fcel-dest-card { height: 140px; }
+    .fcel-dest-grid { grid-template-columns: 1fr; gap: 14px; }
+    .fcel-dest-card { height: 200px; }
     .fcel-dest-icon-wrap { width: 48px; height: 48px; margin-bottom: 10px; }
     .fcel-dest-card-name { font-size: 16px; }
 }
@@ -1485,7 +1556,7 @@
    ============================================================ */
 .fcel-reunion-section {
     padding: 100px 20px;
-    background: var(--fcel-bg-soft);
+    background: var(--fcel-bg-white);
 }
 
 .fcel-reunion-container {
@@ -1548,6 +1619,7 @@
 .fcel-reunion-copy-col {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .fcel-reunion-title {
@@ -1556,6 +1628,7 @@
     font-weight: 500;
     color: var(--fcel-navy);
     margin: 0 0 18px 0;
+    text-align: left;
 }
 
 .fcel-reunion-intro {
@@ -1628,7 +1701,7 @@
 }
 
 .fcel-retire-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -1637,6 +1710,11 @@
 .fcel-retire-header {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.fcel-retire-header .fcel-heading-bar {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fcel-retire-title {
@@ -1653,91 +1731,64 @@
     margin: 0;
 }
 
-.fcel-retire-timeline {
-    position: relative;
-    padding: 20px 0;
+.fcel-retire-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
     margin-bottom: 50px;
 }
 
-.fcel-retire-timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(96, 165, 250, 0.25) 0px,
-        rgba(96, 165, 250, 0.25) 6px,
-        transparent 6px,
-        transparent 12px
-    );
-}
-
-.fcel-retire-timeline-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.fcel-retire-timeline-dot {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: var(--fcel-bg-dark2);
-    border: 2px solid #60a5fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.fcel-retire-timeline-dot span {
-    font-size: 15px;
-    font-weight: 700;
-    color: #60a5fa;
-    transition: color 0.3s ease;
-}
-
-.fcel-retire-timeline-content {
-    margin-left: 24px;
+.fcel-retire-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 16px 24px;
-    flex-grow: 1;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 14px;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
 
-.fcel-retire-item-text {
+.fcel-retire-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.fcel-retire-card-number {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.35s ease;
+}
+
+.fcel-retire-card-number span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #60a5fa;
+    transition: color 0.35s ease;
+}
+
+.fcel-retire-card:hover .fcel-retire-card-number {
+    background: #60a5fa;
+}
+
+.fcel-retire-card:hover .fcel-retire-card-number span {
+    color: var(--fcel-bg-dark);
+}
+
+.fcel-retire-card-text {
     font-size: 17px;
     font-weight: 600;
     color: #e2e8f0;
     margin: 0;
-}
-
-.fcel-retire-timeline-item:hover .fcel-retire-timeline-dot {
-    background: #60a5fa;
-    transform: scale(1.1);
-}
-
-.fcel-retire-timeline-item:hover .fcel-retire-timeline-dot span {
-    color: var(--fcel-bg-dark);
-}
-
-.fcel-retire-timeline-item:hover .fcel-retire-timeline-content {
-    transform: translateX(6px);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(96, 165, 250, 0.4);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .fcel-retire-footnote-wrapper {
@@ -1750,16 +1801,14 @@
     align-items: flex-start;
     gap: 12px;
     background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-left: 3px solid #60a5fa;
     border-radius: 0 12px 12px 0;
     padding: 18px 22px;
     font-size: 15px;
     color: #cbd5e1;
     line-height: 1.6;
-    font-style: italic;
     max-width: 680px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-left: 3px solid #60a5fa;
 }
 
 /* ============================================================
@@ -1927,16 +1976,16 @@
     .fcel-reunion-title,
     .fcel-retire-title,
     .fcel-grad-title {
-        text-align: center;
+        text-align: left;
     }
-    
+
     .fcel-reunion-intro,
     .fcel-grad-intro {
-        text-align: center;
+        text-align: left;
     }
-    
+
     .fcel-reunion-copy-col {
-        align-items: center;
+        align-items: flex-start;
     }
     
     .fcel-reunion-footnote {
@@ -1958,6 +2007,9 @@
     .fcel-retire-title,
     .fcel-grad-title {
         font-size: 30px;
+    }
+    .fcel-retire-grid {
+        grid-template-columns: 1fr;
     }
     .fcel-grad-board {
         gap: 20px;
@@ -1984,26 +2036,26 @@
         grid-template-columns: 1fr;
         gap: 12px;
     }
-    
-    .fcel-retire-timeline::before {
-        left: 15px;
+
+    .fcel-retire-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
-    
-    .fcel-retire-timeline-dot {
-        width: 32px;
-        height: 32px;
+
+    .fcel-retire-card {
+        padding: 18px 20px;
     }
-    
-    .fcel-retire-timeline-dot span {
-        font-size: 13px;
+
+    .fcel-retire-card-number {
+        width: 38px;
+        height: 38px;
     }
-    
-    .fcel-retire-timeline-content {
-        margin-left: 16px;
-        padding: 12px 16px;
+
+    .fcel-retire-card-number span {
+        font-size: 15px;
     }
-    
-    .fcel-retire-item-text {
+
+    .fcel-retire-card-text {
         font-size: 15px;
     }
     

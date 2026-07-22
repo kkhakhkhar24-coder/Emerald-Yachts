@@ -3,6 +3,22 @@ import './Donorsafaris.css'
 // import Profile_AH from '../../assets/Profile_AH.jpg'
 // import Profile_Picture_AH from '../../assets/Profile_Picture_AH.jpg';
 
+import hero1 from '../../assets/Donorsafaris/african-safari-sunrise-savannah-landscape-donor-travel.jpg'
+import hero2 from '../../assets/Donorsafaris/luxury-safari-game-drive-sunset-donor-engagement.jpg'
+import hero3 from '../../assets/Donorsafaris/luxury-safari-lodge-hospitality-donor-experience.jpg'
+
+import destKenyaImg from '../../assets/Donorsafaris/great-migration-safari-wildebeest-zebra-crossing.png'
+import destTanzaniaImg from '../../assets/Donorsafaris/luxury-safari-game-drive-sunset-wildlife-viewing.png'
+import destSouthAfricaImg from '../../assets/Donorsafaris/private-safari-wildlife-game-drive-elephants.png'
+import destBotswanaImg from '../../assets/Donorsafaris/mokoro-canoe-safari-elephant-wetlands.png'
+import destRwandaImg from '../../assets/Donorsafaris/luxury-gorilla-trekking-rwanda-uganda.png'
+import educationImg from '../../assets/Donorsafaris/luxury-safari-wildlife-education-program.png'
+import conservationResearchImg from '../../assets/Donorsafaris/wildlife-conservation-research-expedition-africa.png'
+import conservationCommunityImg from '../../assets/Donorsafaris/community-conservation-partnership-safari-travel.png'
+import expertPortraitImg from '../../assets/Donorsafaris/luxury-safari-lodge-hospitality-tea-experience.png'
+import whyMediaImg from '../../assets/Media (1).jpg'
+import angelaMediaImg from '../../assets/Media (2).jpg'
+
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
@@ -15,20 +31,29 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function DonorSafaris() {
+
+    // ── Hero rotating background images ────────────────────────────
+    const donorHeroImages = [hero1, hero2, hero3]
+    const [donorCurrentHero, setDonorCurrentHero] = useState(0)
+    useEffect(() => {
+        const donorTimer = setInterval(() => {
+            setDonorCurrentHero((prev) => (prev + 1) % donorHeroImages.length)
+        }, 5000)
+        return () => clearInterval(donorTimer)
+    }, [donorHeroImages.length])
 
     // ── Destination tabs ──────────────────────────────────────────────
     const [mediSelectedItinerary, setMediSelectedItinerary] = useState(0)
 
     // ── Mistakes slider ───────────────────────────────────────────────
     const [mediActiveMistake, setMediActiveMistake] = useState(0)
-    const [isMediSliderHovered, setIsMediSliderHovered] = useState(false)
     useEffect(() => {
-        if (isMediSliderHovered) return
-        const t = setInterval(() => setMediActiveMistake(p => (p + 1) % 4), 5000)
+        const t = setInterval(() => setMediActiveMistake(p => (p + 1) % mediMistakes.length), 5000)
         return () => clearInterval(t)
-    }, [isMediSliderHovered])
+    }, [])
 
     // ── FAQ ───────────────────────────────────────────────────────────
     const [mediActiveFaq, setMediActiveFaq] = useState(null)
@@ -71,6 +96,8 @@ function DonorSafaris() {
             highlights: ['Gorilla trekking', 'Conservation education', 'Community engagement', 'Luxury eco-lodges']
         }
     ]
+
+    const mediDestImages = [destKenyaImg, destTanzaniaImg, destSouthAfricaImg, destBotswanaImg, destRwandaImg]
 
     // Benefits slider → medi-mistakes-slider-section
     const mediMistakes = [
@@ -327,16 +354,17 @@ function DonorSafaris() {
             <Navbar />
 
             {/* ════════════════════════════════════════════════════════════
-                HERO  (medi-hero-section – gradient, no images)
+                HERO  (medi-hero-section – rotating backgrounds)
             ════════════════════════════════════════════════════════════ */}
-            <section
-                className="medi-hero-section"
-                style={{
-                    background: 'linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 50%, #274472 100%)',
-                    minHeight: '72vh'
-                }}
-            >
-                <div className="medi-hero-overlay-layer" style={{ background: 'rgba(15,28,46,0.25)' }}></div>
+            <section className="medi-hero-section">
+                {donorHeroImages.map((img, idx) => (
+                    <div
+                        key={idx}
+                        className={`medi-hero-background ${donorCurrentHero === idx ? 'medi-active' : ''}`}
+                        style={{ backgroundImage: `url(${img})` }}
+                    />
+                ))}
+                <div className="medi-hero-overlay-layer"></div>
                 <div className="medi-hero-content-wrapper">
                     <div className="medi-hero-eyebrow-tag">
                         <Leaf size={16} />
@@ -349,67 +377,64 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                INTRO  (medi-intro-section / medi-premium-intro-section)
+                INTRO  (ds-intro-section)
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-intro-section medi-premium-intro-section">
-                <div className="medi-premium-intro-glow-one"></div>
-                <div className="medi-premium-intro-glow-two"></div>
-                <div className="medi-intro-container">
-                    <div className="medi-premium-intro-grid">
+            <section className="ds-intro-section">
+                <div className="ds-intro-container">
+                    <div className="ds-intro-grid">
 
-                        <div className="medi-premium-editorial-block">
-                            <span className="medi-premium-mini-badge">LUXURY SAFARI EXPERIENCES DESIGNED FOR DONOR ENGAGEMENT</span>
-                            <h2 className="medi-premium-heading">Building Deeper Connections Through Transformational Travel</h2>
-                            <div className="medi-premium-separator"></div>
+                        <div className="ds-intro-editorial">
+                            <span className="ds-intro-eyebrow">LUXURY SAFARI EXPERIENCES DESIGNED FOR DONOR ENGAGEMENT</span>
+                            <h2>Building Deeper Connections Through Transformational Travel</h2>
+                            <div className="ds-intro-bar"></div>
 
-                            <p className="medi-premium-lead-text">
+                            <p className="ds-intro-text">
                                 In today's competitive fundraising environment, organizations are continually seeking meaningful ways to strengthen relationships with major donors, alumni, foundation supporters, and key stakeholders.
                             </p>
 
-                            <p className="medi-premium-lead-text">
+                            <p className="ds-intro-text">
                                 One of the most powerful strategies is donor travel. Among all donor travel experiences, few are as transformative as a luxury safari. Donor safaris combine extraordinary wildlife encounters, cultural immersion, conservation education, and once-in-a-lifetime experiences that create lasting emotional connections between organizations and their supporters.
                             </p>
 
-                            <div className="medi-immersion-list-wrapper">
-                                <p className="medi-immersion-lead-in">
+                            <div className="ds-intro-features">
+                                <p className="ds-intro-features-label">
                                     Whether hosted by universities, museums, conservation organizations, healthcare foundations, faith-based groups, or nonprofit institutions, donor safaris provide:
                                 </p>
-                                <div className="medi-immersion-cards-grid">
+                                <div className="ds-intro-features-grid">
                                     {[
-                                        { icon: <HeartHandshake size={20} />, label: 'Stewardship' },
-                                        { icon: <Users size={20} />, label: 'Relationship building' },
-                                        { icon: <TrendingUp size={20} />, label: 'Philanthropic engagement' },
-                                        { icon: <Binoculars size={20} />, label: 'Wildlife encounters' },
-                                        { icon: <Leaf size={20} />, label: 'Conservation education' },
-                                        { icon: <Globe size={20} />, label: 'Cultural immersion' },
+                                        { icon: <HeartHandshake size={18} />, label: 'Stewardship' },
+                                        { icon: <Users size={18} />, label: 'Relationship building' },
+                                        { icon: <TrendingUp size={18} />, label: 'Philanthropic engagement' },
+                                        { icon: <Binoculars size={18} />, label: 'Wildlife encounters' },
+                                        { icon: <Leaf size={18} />, label: 'Conservation education' },
+                                        { icon: <Globe size={18} />, label: 'Cultural immersion' },
                                     ].map((item, i) => (
-                                        <div key={i} className="medi-immersion-card-item">
-                                            <div className="medi-immersion-icon-box">{item.icon}</div>
-                                            <span className="medi-immersion-card-title">{item.label}</span>
+                                        <div key={i} className="ds-intro-feature-chip">
+                                            <span className="ds-intro-feature-icon">{item.icon}</span>
+                                            <span>{item.label}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
                         </div>
 
-                        <div className="medi-premium-signature-panel">
-                            <div className="medi-premium-signature-glow"></div>
-                            <div className="medi-premium-signature-content">
-                                <div className="medi-expert-profile-row">
-                                    <div className="medi-expert-avatar-frame">
-                                        <Star size={24} className="medi-star-accent" />
+                        <div className="ds-intro-card">
+                            <div className="ds-intro-card-body">
+                                <div className="ds-intro-card-header">
+                                    <div className="ds-intro-avatar">
+                                        <Star size={22} />
                                     </div>
                                     <div>
-                                        <span className="medi-expert-card-subtitle">DONOR TRAVEL EXPERT</span>
-                                        <h3 className="medi-expert-card-title">Angela Hughes</h3>
+                                        <span className="ds-intro-card-subtitle">DONOR TRAVEL EXPERT</span>
+                                        <h3>Angela Hughes</h3>
                                     </div>
                                 </div>
-                                <p className="medi-premium-expert-desc">
+                                <p className="ds-intro-card-desc">
                                     At Trips &amp; Ships Luxury Travel, we work closely with organizations to create meaningful experiences that align with institutional goals and donor interests.
                                 </p>
-                                <div className="medi-premium-expert-quote-box">
-                                    <span className="medi-quote-mark">"</span>
-                                    <p className="medi-premium-expert-quote-text">
+                                <div className="ds-intro-quote">
+                                    <span className="ds-intro-quote-mark">"</span>
+                                    <p>
                                         When donors share transformational experiences together, stronger relationships always follow. A thoughtfully designed safari becomes one of your organization's most impactful travel programs.
                                     </p>
                                 </div>
@@ -422,73 +447,63 @@ function DonorSafaris() {
 
             {/* ════════════════════════════════════════════════════════════
                 WHAT IS A DONOR SAFARI + WHY SAFARIS ARE EFFECTIVE
-                (medi-excel-section)
+                (ds-what-section)
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-excel-section">
-                <div className="medi-excel-coord coord-tl">DONOR TRAVEL PROGRAMS // LUXURY SAFARI EXPERIENCES</div>
-                <div className="medi-excel-coord coord-tr">-1.2921° S, 36.8219° E</div>
-                <div className="medi-excel-coord coord-bl">-3.3869° S, 36.6958° E</div>
-                <div className="medi-excel-coord coord-br">-19.9167° S, 23.4167° E</div>
+            <section className="ds-what-section">
+                <div className="ds-what-container">
 
-                <div className="medi-excel-glow-one"></div>
-                <div className="medi-excel-glow-two"></div>
-                <div className="medi-excel-container">
-
-                    <div className="medi-excel-header-block">
-                        <h2 className="medi-excel-main-title">What Is a Donor Safari? Why Are Safaris So Effective?</h2>
-                        <div className="medi-excel-separator"></div>
-                        <p className="medi-excel-lead-paragraph">
+                    <div className="ds-what-header-block">
+                        <h2 className="ds-what-main-title">What Is a Donor Safari? Why Are Safaris So Effective?</h2>
+                        <div className="ds-what-separator"></div>
+                        <p className="ds-what-lead-paragraph">
                             A donor safari is a curated travel experience designed specifically for supporters, benefactors, alumni, trustees, or major gift prospects.
                         </p>
                     </div>
 
-                    <div className="medi-excel-grid">
-                        <div className="medi-excel-column">
-                            <div className="medi-excel-card">
-                                <h3 className="medi-excel-card-heading">These journeys typically combine:</h3>
-                                <ul className="medi-excel-list">
-                                    {[
-                                        { icon: <Gem size={18} />, label: 'Luxury accommodations' },
-                                        { icon: <Binoculars size={18} />, label: 'Wildlife experiences' },
-                                        { icon: <BookOpen size={18} />, label: 'Educational programming' },
-                                        { icon: <Leaf size={18} />, label: 'Conservation initiatives' },
-                                        { icon: <Crown size={18} />, label: 'Leadership engagement' },
-                                        { icon: <Star size={18} />, label: 'Exclusive access opportunities' },
-                                    ].map((item, i) => (
-                                        <li key={i} className="medi-excel-list-item">
-                                            <div className="medi-excel-icon-wrapper">{item.icon}</div>
-                                            <span>{item.label}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                    <div className="ds-what-grid">
+                        <div className="ds-what-card ds-what-card-green">
+                            <span className="ds-what-card-badge ds-what-badge-green">DEFINITION</span>
+                            <h3 className="ds-what-card-heading">These journeys typically combine:</h3>
+                            <ul className="ds-what-list">
+                                {[
+                                    'Luxury accommodations',
+                                    'Wildlife experiences',
+                                    'Educational programming',
+                                    'Conservation initiatives',
+                                    'Leadership engagement',
+                                    'Exclusive access opportunities',
+                                ].map((item, i) => (
+                                    <li key={i} className="ds-what-list-item">
+                                        <span className="ds-what-check ds-what-check-green">✓</span>
+                                        <span className="ds-what-list-label">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
 
-                        <div className="medi-excel-column">
-                            <div className="medi-excel-card">
-                                <h3 className="medi-excel-card-heading">Safari experiences are emotionally powerful. Guests often experience:</h3>
-                                <ul className="medi-excel-list">
-                                    {[
-                                        { icon: <Binoculars size={18} />, label: 'Wildlife encounters' },
-                                        { icon: <Globe size={18} />, label: 'Natural wonders' },
-                                        { icon: <Leaf size={18} />, label: 'Conservation education' },
-                                        { icon: <Users size={18} />, label: 'Cultural immersion' },
-                                        { icon: <Heart size={18} />, label: 'Personal reflection' },
-                                        { icon: <Compass size={18} />, label: 'Shared adventure' },
-                                    ].map((item, i) => (
-                                        <li key={i} className="medi-excel-list-item">
-                                            <div className="medi-excel-icon-wrapper">{item.icon}</div>
-                                            <span>{item.label}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                        <div className="ds-what-card ds-what-card-blue">
+                            <span className="ds-what-card-badge ds-what-badge-blue">EMOTIONAL IMPACT</span>
+                            <h3 className="ds-what-card-heading">Safari experiences are emotionally powerful. Guests often experience:</h3>
+                            <ul className="ds-what-list">
+                                {[
+                                    'Wildlife encounters',
+                                    'Natural wonders',
+                                    'Conservation education',
+                                    'Cultural immersion',
+                                    'Personal reflection',
+                                    'Shared adventure',
+                                ].map((item, i) => (
+                                    <li key={i} className="ds-what-list-item">
+                                        <span className="ds-what-check ds-what-check-blue">✓</span>
+                                        <span className="ds-what-list-label">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
 
-                    <div className="medi-excel-footer-block">
-                        <div className="medi-excel-footer-badge"><Sparkles size={20} /></div>
-                        <p className="medi-excel-footer-paragraph">
+                    <div className="ds-what-footer-block">
+                        <p className="ds-what-footer-paragraph">
                             Unlike traditional fundraising events, donor safaris create meaningful shared experiences that foster authentic relationships in an unforgettable setting. These emotional moments often deepen connections between travelers and the organizations hosting the journey.
                         </p>
                     </div>
@@ -497,88 +512,69 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                WHY ORGANIZATIONS CHOOSE DONOR SAFARIS
-                (medi-diff-section – 3 cards)
+                WHY ORGANIZATIONS CHOOSE  (ds-benefits-section)
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-diff-section">
-                <div className="medi-diff-container">
-                    <div className="medi-diff-header-block">
-                        <span className="medi-diff-eyebrow-tag">ORGANIZATIONAL BENEFITS</span>
-                        <h2 className="medi-diff-main-title">Why Organizations Choose Donor Safaris</h2>
-                        <div className="medi-diff-separator"></div>
+            <section className="ds-benefits-section">
+                <div className="ds-benefits-container">
+                    <div className="ds-benefits-header">
+                        <span className="ds-benefits-eyebrow">ORGANIZATIONAL BENEFITS</span>
+                        <h2>Why Organizations Choose Donor Safaris</h2>
+                        <div className="ds-benefits-bar"></div>
                     </div>
 
-                    <div className="medi-diff-grid">
+                    <div className="ds-benefits-grid">
 
-                        {/* Card 1 */}
-                        <div className="medi-diff-card medi-diff-card-navy">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><HeartHandshake size={24} /></div>
-                                <h3 className="medi-diff-card-title">Relationship Building</h3>
+                        <div className="ds-benefits-card ds-benefits-card-green">
+                            <div className="ds-benefits-card-top">
+                                <div className="ds-benefits-card-icon"><HeartHandshake size={24} /></div>
+                                <h3>Relationship Building</h3>
                             </div>
-                            <p className="medi-diff-card-text">
-                                Organizations increasingly use travel as a donor engagement strategy because travel creates stronger personal connections than traditional fundraising events.
-                            </p>
-                            <div className="medi-diff-destination-chips">
-                                <span className="medi-diff-chip">Strengthening relationships</span>
-                                <span className="medi-diff-chip">Increasing donor retention</span>
-                                <span className="medi-diff-chip">Cultivating major gifts</span>
-                                <span className="medi-diff-chip">Enhancing stewardship</span>
-                                <span className="medi-diff-chip">Creating memories</span>
+                            <p>Organizations increasingly use travel as a donor engagement strategy because travel creates stronger personal connections than traditional fundraising events.</p>
+                            <div className="ds-benefits-chips">
+                                {['Strengthening relationships', 'Increasing donor retention', 'Cultivating major gifts', 'Enhancing stewardship', 'Creating memories'].map((chip, i) => (
+                                    <span key={i} className="ds-benefits-chip">{chip}</span>
+                                ))}
                             </div>
-                            <p className="medi-diff-card-text-secondary">
-                                Safari experiences naturally encourage:
-                            </p>
-                            <ul className="medi-diff-experience-list">
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Meaningful conversations</span></li>
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Relationship development in a relaxed environment</span></li>
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Community building among supporters</span></li>
-                                <li><CheckCircle size={16} className="medi-diff-list-icon" /><span>Authentic long-term engagement</span></li>
-                            </ul>
+                            <div className="ds-benefits-sub">
+                                <span className="ds-benefits-sub-label">Safari experiences naturally encourage:</span>
+                                <ul className="ds-benefits-list">
+                                    {['Meaningful conversations', 'Relationship development in a relaxed environment', 'Community building among supporters', 'Authentic long-term engagement'].map((item, i) => (
+                                        <li key={i}><CheckCircle size={15} className="ds-benefits-check" /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
 
-                        {/* Card 2 */}
-                        <div className="medi-diff-card medi-diff-card-white">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><TrendingUp size={24} /></div>
-                                <h3 className="medi-diff-card-title">Transformational Impact</h3>
+                        <div className="ds-benefits-card ds-benefits-card-blue">
+                            <div className="ds-benefits-card-top">
+                                <div className="ds-benefits-card-icon"><TrendingUp size={24} /></div>
+                                <h3>Transformational Impact</h3>
                             </div>
-                            <div className="medi-diff-ship-stat-box">
-                                <div className="medi-diff-stat-ring">
-                                    <div className="medi-diff-stat-num" style={{ fontSize: '14px', lineHeight: 1.2 }}>7–14</div>
+                            <div className="ds-benefits-stat">
+                                <div className="ds-benefits-stat-circle">
+                                    <span className="ds-benefits-stat-num">7–14</span>
                                 </div>
-                                <div className="medi-diff-stat-label">DAYS OF IMPACT</div>
+                                <span className="ds-benefits-stat-label">DAYS OF IMPACT</span>
                             </div>
-                            <p className="medi-diff-card-text">
-                                When donors share transformational experiences together, stronger relationships often follow. A thoughtfully designed safari becomes one of your organization's most impactful travel programs.
-                            </p>
-                            <div className="medi-diff-quote-wrapper">
-                                <p className="medi-diff-quote-text">
-                                    These emotional moments often deepen connections between travelers and the organizations hosting the journey.
-                                </p>
+                            <p>When donors share transformational experiences together, stronger relationships often follow. A thoughtfully designed safari becomes one of your organization's most impactful travel programs.</p>
+                            <div className="ds-benefits-quote">
+                                <p>These emotional moments often deepen connections between travelers and the organizations hosting the journey.</p>
                             </div>
                         </div>
 
-                        {/* Card 3 */}
-                        <div className="medi-diff-card medi-diff-card-soft">
-                            <div className="medi-diff-icon-header">
-                                <div className="medi-diff-icon-box"><Gem size={24} /></div>
-                                <h3 className="medi-diff-card-title">Luxury Experience Design</h3>
+                        <div className="ds-benefits-card ds-benefits-card-gold">
+                            <div className="ds-benefits-card-top">
+                                <div className="ds-benefits-card-icon"><Gem size={24} /></div>
+                                <h3>Luxury Experience Design</h3>
                             </div>
-                            <p className="medi-diff-card-text">
-                                Modern donor safaris feature world-class accommodations including:
-                            </p>
-                            <ul className="medi-diff-focus-list-premium">
-                                <li><span className="medi-diff-list-num">01</span><span>Luxury tented camps</span></li>
-                                <li><span className="medi-diff-list-num">02</span><span>Boutique safari lodges</span></li>
-                                <li><span className="medi-diff-list-num">03</span><span>Private villas</span></li>
-                                <li><span className="medi-diff-list-num">04</span><span>Exclusive-use properties</span></li>
-                                <li><span className="medi-diff-list-num">05</span><span>Curated dining experiences</span></li>
-                            </ul>
-                            <div className="medi-diff-conclusion-box">
-                                <p className="medi-diff-conclusion-text">
-                                    Guests enjoy exceptional comfort while remaining fully immersed in the destination.
-                                </p>
+                            <p>Modern donor safaris feature world-class accommodations including:</p>
+                            <ol className="ds-benefits-numlist">
+                                {['Luxury tented camps', 'Boutique safari lodges', 'Private villas', 'Exclusive-use properties', 'Curated dining experiences'].map((item, i) => (
+                                    <li key={i}><span className="ds-benefits-num">0{i + 1}</span><span>{item}</span></li>
+                                ))}
+                            </ol>
+                            <div className="ds-benefits-note">
+                                <p>Guests enjoy exceptional comfort while remaining fully immersed in the destination.</p>
                             </div>
                         </div>
 
@@ -587,43 +583,22 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                IDEAL ORGANIZATIONS FOR DONOR SAFARIS  ← NEW SECTION (ds-)
+                IDEAL ORGANIZATIONS FOR DONOR SAFARIS
             ════════════════════════════════════════════════════════════ */}
             <section className="ds-orgs-section">
-                <div className="ds-orgs-glow"></div>
                 <div className="ds-orgs-container">
                     <div className="ds-orgs-header">
                         <span className="ds-orgs-eyebrow">WHO BENEFITS</span>
                         <h2>Ideal Organizations for Donor Safaris</h2>
-                        <div className="ds-orgs-bar"></div>
+                        <div className="ds-orgs-separator"></div>
                     </div>
                     <div className="ds-orgs-grid">
                         {[
-                            {
-                                icon: <GraduationCap size={22} />,
-                                title: 'Universities',
-                                items: ['Alumni engagement', 'Donor cultivation', 'Leadership travel']
-                            },
-                            {
-                                icon: <Building2 size={22} />,
-                                title: 'Museums',
-                                items: ['Patron experiences', 'Curator-led travel', 'Educational journeys']
-                            },
-                            {
-                                icon: <Leaf size={22} />,
-                                title: 'Conservation Organizations',
-                                items: ['Mission-aligned experiences', 'Wildlife education', 'Conservation partnerships']
-                            },
-                            {
-                                icon: <Heart size={22} />,
-                                title: 'Healthcare Foundations',
-                                items: ['Major donor stewardship', 'Leadership engagement', 'Community building']
-                            },
-                            {
-                                icon: <Globe size={22} />,
-                                title: 'Faith-Based Organizations',
-                                items: ['Mission travel', 'Cultural exploration', 'Relationship development']
-                            },
+                            { icon: <GraduationCap size={22} />, title: 'Universities', items: ['Alumni engagement', 'Donor cultivation', 'Leadership travel'] },
+                            { icon: <Building2 size={22} />, title: 'Museums', items: ['Patron experiences', 'Curator-led travel', 'Educational journeys'] },
+                            { icon: <Leaf size={22} />, title: 'Conservation', items: ['Mission-aligned experiences', 'Wildlife education', 'Conservation partnerships'] },
+                            { icon: <Heart size={22} />, title: 'Healthcare Foundations', items: ['Major donor stewardship', 'Leadership engagement', 'Community building'] },
+                            { icon: <Globe size={22} />, title: 'Faith-Based Groups', items: ['Mission travel', 'Cultural exploration', 'Relationship development'] },
                         ].map((org, i) => (
                             <div key={i} className="ds-org-card">
                                 <div className="ds-org-icon-box">{org.icon}</div>
@@ -631,7 +606,7 @@ function DonorSafaris() {
                                 <ul className="ds-org-card-list">
                                     {org.items.map((item, j) => (
                                         <li key={j}>
-                                            <span className="ds-org-list-dot"></span>
+                                            <span className="ds-org-list-check">✓</span>
                                             <span>{item}</span>
                                         </li>
                                     ))}
@@ -643,74 +618,58 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                DESTINATIONS SHOWCASE  (medi-itinerary-showcase-section)
+                POPULAR DONOR SAFARI DESTINATIONS  (ds-dest-section)
             ════════════════════════════════════════════════════════════ */}
-            <section className="medi-itinerary-showcase-section">
-                <div className="medi-itinerary-showcase-container">
-                    <div className="medi-itinerary-showcase-header">
-                        <span className="medi-itinerary-eyebrow">CURATED SAFARI DESTINATIONS</span>
-                        <h2 className="medi-itinerary-showcase-heading">Popular Donor Safari Destinations</h2>
-                        <div className="medi-itinerary-showcase-separator"></div>
+            <section className="ds-dest-section">
+                <div className="ds-dest-container">
+                    <div className="ds-dest-header">
+                        <span className="ds-dest-eyebrow">CURATED SAFARI DESTINATIONS</span>
+                        <h2 className="ds-dest-heading">Popular Donor Safari Destinations</h2>
+                        <div className="ds-dest-separator"></div>
                     </div>
 
-                    <div className="medi-itinerary-dashboard">
-                        <div className="medi-itinerary-tabs">
-                            {mediItineraries.map((dest, idx) => (
-                                <button
-                                    key={idx}
-                                    className={`medi-itinerary-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`}
-                                    onClick={() => setMediSelectedItinerary(idx)}
-                                >
-                                    <span className="medi-itinerary-tab-number">0{idx + 1}</span>
-                                    <div className="medi-itinerary-tab-meta">
-                                        <span className="medi-itinerary-tab-title">{dest.title}</span>
-                                    </div>
-                                    <ChevronRight size={18} className="medi-itinerary-tab-arrow" />
-                                </button>
-                            ))}
-                        </div>
+                    <div className="ds-dest-tabs-row">
+                        {mediItineraries.map((dest, idx) => (
+                            <button
+                                key={idx}
+                                className={`ds-dest-tab-btn ${mediSelectedItinerary === idx ? 'active' : ''}`}
+                                onClick={() => setMediSelectedItinerary(idx)}
+                            >
+                                <span className="ds-dest-tab-num">0{idx + 1}</span>
+                                <span className="ds-dest-tab-label">{dest.title}</span>
+                            </button>
+                        ))}
+                    </div>
 
-                        <div className="medi-itinerary-showcase-card">
-                            {/* Icon-based visual instead of photo */}
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ background: 'linear-gradient(135deg, #0f1c2e 0%, #274472 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px', padding: '40px' }}>
-                                <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', border: '2px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffffff' }}>
-                                    <MapPin size={36} />
-                                </div>
-                                <h3 style={{ color: '#ffffff', fontSize: '28px', fontWeight: '500', margin: 0, textAlign: 'center' }}>
-                                    {mediItineraries[mediSelectedItinerary].title}
-                                </h3>
-                                <p style={{ color: '#93c5fd', fontSize: '13px', margin: 0, fontWeight: '600', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                                    {mediItineraries[mediSelectedItinerary].badge}
-                                </p>
-                                <div className="medi-itinerary-showcase-img-overlay" style={{ display: 'none' }}></div>
-                                <span className="medi-itinerary-showcase-badge">FEATURED DESTINATION</span>
+                    <div className="ds-dest-card">
+                        <div className="ds-dest-card-image" style={{ backgroundImage: `url(${mediDestImages[mediSelectedItinerary]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                            <div className="ds-dest-card-overlay"></div>
+                            <div className="ds-dest-card-image-content">
+                                <h3 className="ds-dest-card-title">{mediItineraries[mediSelectedItinerary].title}</h3>
+                                <span className="ds-dest-card-badge">{mediItineraries[mediSelectedItinerary].badge}</span>
                             </div>
-
-                            <div className="medi-itinerary-showcase-body">
-                                <h3 className="medi-itinerary-showcase-title">{mediItineraries[mediSelectedItinerary].title}</h3>
-                                <div className="medi-itinerary-details-grid">
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">Best For:</h4>
-                                        <ul className="medi-itinerary-details-list">
-                                            {mediItineraries[mediSelectedItinerary].bestFor.map((item, i) => (
-                                                <li key={i}>
-                                                    <Sparkles size={14} className="medi-itinerary-detail-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="medi-itinerary-details-col">
-                                        <h4 className="medi-itinerary-details-heading">Highlights:</h4>
-                                        <div className="medi-itinerary-details-chips">
-                                            {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
-                                                <span key={i} className="medi-itinerary-details-chip">
-                                                    <MapPin size={12} className="medi-itinerary-chip-icon" />
-                                                    <span>{item}</span>
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
+                        </div>
+                        <div className="ds-dest-card-body">
+                            <div className="ds-dest-card-col">
+                                <h4 className="ds-dest-card-col-heading">Best For:</h4>
+                                <ul className="ds-dest-card-list">
+                                    {mediItineraries[mediSelectedItinerary].bestFor.map((item, i) => (
+                                        <li key={i}>
+                                            <span className="ds-dest-check">✓</span>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="ds-dest-card-col">
+                                <h4 className="ds-dest-card-col-heading">Highlights:</h4>
+                                <div className="ds-dest-chips">
+                                    {mediItineraries[mediSelectedItinerary].highlights.map((item, i) => (
+                                        <span key={i} className="ds-dest-chip">
+                                            <MapPin size={12} />
+                                            <span>{item}</span>
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -719,143 +678,145 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                EDUCATIONAL COMPONENTS  ← NEW SECTION (ds-)
+                EDUCATIONAL COMPONENTS  (ds-education-section)
             ════════════════════════════════════════════════════════════ */}
             <section className="ds-education-section">
                 <div className="ds-education-container">
                     <div className="ds-education-header">
                         <span className="ds-education-eyebrow">PROGRAM DESIGN</span>
-                        <h2 className="medi-section-heading">Educational Components of Donor Safaris</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ds-education-heading">Educational Components of Donor Safaris</h2>
+                        <div className="ds-education-bar"></div>
                     </div>
 
                     <div className="ds-education-grid">
-                        <div className="ds-education-text-block">
-                            <p className="ds-education-intro">
-                                Many organizations incorporate educational programming into safari itineraries. These experiences enhance both engagement and impact.
-                            </p>
-                            <div className="ds-education-components-card">
-                                <h4>Educational Programming Examples:</h4>
-                                <ul className="ds-education-list">
-                                    {['Conservation presentations', 'Wildlife expert lectures', 'Cultural discussions', 'Leadership conversations', 'Mission-focused programming'].map((item, i) => (
-                                        <li key={i}><CheckCircle size={16} className="ds-education-check" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="ds-education-components-card">
-                                <h4>Luxury Accommodations Include:</h4>
-                                <ul className="ds-education-list">
-                                    {['Luxury tented camps', 'Boutique safari lodges', 'Private villas', 'Exclusive-use properties'].map((item, i) => (
-                                        <li key={i}><CheckCircle size={16} className="ds-education-check" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
-                                <p style={{ fontSize: '14px', color: '#64748b', marginTop: '12px', marginBottom: 0, lineHeight: '1.6' }}>
-                                    Guests enjoy exceptional comfort while remaining immersed in the destination.
+                        <div className="ds-education-image-block" style={{ backgroundImage: `url(${educationImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                            <div className="ds-education-image-overlay"></div>
+                            <div className="ds-education-image-content">
+                                <h3 className="ds-education-image-title">Educational Programming That Creates Lasting Impact</h3>
+                                <p className="ds-education-image-text">
+                                    Expert-led lectures, conservation briefings, and cultural discussions transform a luxury safari into a meaningful institutional experience.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="ds-education-img-block">
-                            <div className="ds-education-img-icon-ring">
-                                <BookOpen size={40} />
+                        <div className="ds-education-cards">
+                            <div className="ds-education-card ds-edu-card-green">
+                                <div className="ds-education-card-header">
+                                    <div className="ds-education-card-icon"><BookOpen size={20} /></div>
+                                    <h3 className="ds-education-card-title">Educational Programming</h3>
+                                </div>
+                                <ul className="ds-education-list">
+                                    {['Conservation presentations', 'Wildlife expert lectures', 'Cultural discussions', 'Leadership conversations', 'Mission-focused programming'].map((item, i) => (
+                                        <li key={i}>
+                                            <CheckCircle size={15} className="ds-education-check" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <h3 className="ds-education-img-title">Educational Programming That Creates Lasting Impact</h3>
-                            <p className="ds-education-img-sub">
-                                Expert-led lectures, conservation briefings, and cultural discussions transform a luxury safari into a meaningful institutional experience.
-                            </p>
+
+                            <div className="ds-education-card ds-edu-card-blue">
+                                <div className="ds-education-card-header">
+                                    <div className="ds-education-card-icon"><Gem size={20} /></div>
+                                    <h3 className="ds-education-card-title">Luxury Accommodations</h3>
+                                </div>
+                                <ul className="ds-education-list">
+                                    {['Luxury tented camps', 'Boutique safari lodges', 'Private villas', 'Exclusive-use properties'].map((item, i) => (
+                                        <li key={i}>
+                                            <CheckCircle size={15} className="ds-education-check" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <p className="ds-education-card-note">
+                                    Guests enjoy exceptional comfort while remaining immersed in the destination.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                EXPERT INSIGHT  (medi-expert-editorial-section)
+                WHY TRIPS & SHIPS LUXURY TRAVEL  (ds-why-section)
             ════════════════════════════════════════════════════════════ */}
-            <section id="donor-safari-expert-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                <div className="medi-expert-editorial-container">
-                    <div className="medi-expert-editorial-card">
+            <section className="ds-why-section">
+                <div className="ds-why-container">
+                    <div className="ds-why-header">
+                        <span className="ds-why-eyebrow">ABOUT US</span>
+                        <h2 className="ds-why-heading">Why Trips &amp; Ships Luxury Travel <br/>For Donor Safari Programs</h2>
+                        <div className="ds-why-bar"></div>
+                    </div>
 
-                        <div className="medi-editorial-portrait-block">
-                            <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Donor Travel Expert" /> */}
-                                <div className="medi-editorial-gradient-layer"></div>
+                    <div className="ds-why-grid">
+                        <div className="ds-why-image-block">
+                            <div className="ds-why-image-frame">
+                                <img src={whyMediaImg} alt="Angela Hughes – Donor Safari Expert" className="ds-why-image-img" />
+                                <div className="ds-why-image-overlay"></div>
                             </div>
-                            <div className="medi-editorial-floating-stat">
-                                <div className="medi-stat-tile">
-                                    <span className="medi-stat-number">40+</span>
-                                    <span className="medi-stat-label">Years Experience</span>
+                            <div className="ds-why-stats-row">
+                                <div className="ds-why-stat">
+                                    <span className="ds-why-stat-number">40+</span>
+                                    <span className="ds-why-stat-label">Years Experience</span>
                                 </div>
-                                <div className="medi-stat-divider"></div>
-                                <div className="medi-stat-tile">
-                                    <span className="medi-stat-number">121+</span>
-                                    <span className="medi-stat-label">Countries Visited</span>
+                                <div className="ds-why-stat-divider"></div>
+                                <div className="ds-why-stat">
+                                    <span className="ds-why-stat-number">121+</span>
+                                    <span className="ds-why-stat-label">Countries Visited</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="medi-editorial-content-block">
-                            <div className="medi-editorial-header">
-                                <div className="medi-editorial-eyebrow-container">
-                                    <Award size={18} className="medi-editorial-icon-badge" />
-                                    <span className="medi-editorial-eyebrow">Expert Insight – Angela Hughes</span>
-                                </div>
-                                <h2 className="medi-editorial-title">
-                                    Why Trips &amp; Ships Luxury Travel <br className="medi-growth-title-break" />For Donor Safari Programs
-                                </h2>
-                                <div className="medi-editorial-accent-bar"></div>
-                            </div>
-
-                            <p className="medi-editorial-lead-para">
+                        <div className="ds-why-content">
+                            <p className="ds-why-lead">
                                 Trips &amp; Ships Luxury Travel specializes in customized donor travel programs designed to deepen engagement and strengthen relationships. We work closely with organizations to create meaningful experiences that align with institutional goals and donor interests.
                             </p>
 
-                            <div className="medi-priorities-box">
-                                <p className="medi-priorities-intro">Our services include:</p>
-                                <div className="medi-priorities-grid-pills">
-                                    {['Destination planning', 'Group travel management', 'Luxury safari design', 'Donor engagement consulting', 'Educational travel programming', 'VIP travel coordination'].map((item, idx) => (
-                                        <div key={idx} className="medi-priority-pill-item">
-                                            <CheckCircle size={15} className="medi-priority-check" />
+                            <div className="ds-why-services">
+                                <span className="ds-why-services-label">Our services include:</span>
+                                <div className="ds-why-services-grid">
+                                    {['Destination planning', 'Group travel management', 'Luxury safari design', 'Donor engagement consulting', 'Educational travel programming', 'VIP travel coordination'].map((item, i) => (
+                                        <div key={i} className="ds-why-service-pill">
+                                            <CheckCircle size={14} className="ds-why-service-check" />
                                             <span>{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <p className="medi-editorial-body-para">
+                            <p className="ds-why-body">
                                 With more than 40 years in luxury travel and firsthand experience across 121+ countries, Angela Hughes provides donor travel planning backed by real-world expertise and deep industry relationships.
                             </p>
 
-                            <div className="medi-expertise-section-box">
-                                <span className="medi-expertise-intro-label">Our expertise spans:</span>
-                                <div className="medi-expertise-horizontal-strip">
+                            <div className="ds-why-expertise-strip">
+                                <span className="ds-why-expertise-label">Our expertise spans:</span>
+                                <div className="ds-why-expertise-row">
                                     {[
                                         { title: 'Luxury safaris', icon: Binoculars },
                                         { title: 'Donor travel programs', icon: HeartHandshake },
                                         { title: 'Alumni travel', icon: GraduationCap },
                                         { title: 'Conservation journeys', icon: Leaf },
-                                        { title: 'Group travel management', icon: Users }
+                                        { title: 'Group travel', icon: Users }
                                     ].map((item, idx) => {
                                         const IconComponent = item.icon
                                         return (
-                                            <div key={idx} className="medi-expertise-pills-row">
-                                                <div className="medi-expertise-pill-icon-box"><IconComponent size={14} /></div>
-                                                <span className="medi-expertise-pill-text">{item.title}</span>
+                                            <div key={idx} className="ds-why-expertise-chip">
+                                                <IconComponent size={13} />
+                                                <span>{item.title}</span>
                                             </div>
                                         )
                                     })}
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                CONSERVATION & PHILANTHROPY  ← NEW SECTION (ds-)
+                CONSERVATION & PHILANTHROPY  (ds-conservation-section)
             ════════════════════════════════════════════════════════════ */}
             <section className="ds-conservation-section">
-                <div className="ds-conservation-glow"></div>
                 <div className="ds-conservation-container">
                     <div className="ds-conservation-header">
                         <span className="ds-conservation-eyebrow">IMPACT &amp; PURPOSE</span>
@@ -864,26 +825,36 @@ function DonorSafaris() {
                     </div>
 
                     <div className="ds-conservation-grid">
-                        <div className="ds-conservation-card">
-                            <div className="ds-conservation-card-icon"><Leaf size={24} /></div>
-                            <h3>Conservation-Focused Experiences</h3>
-                            <p>Many donor safaris incorporate conservation-focused experiences that align naturally with philanthropic goals and mission-driven programming.</p>
-                            <ul className="ds-conservation-card-list">
-                                {['Meet researchers in the field', 'Visit active conservation projects', 'Learn about wildlife protection', 'Support local communities'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} className="ds-conservation-list-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                        <div className="ds-conservation-card ds-conservation-card-green">
+                            <div className="ds-conservation-card-top-img">
+                                <img src={conservationResearchImg} alt="Conservation research expedition" />
+                            </div>
+                            <div className="ds-conservation-card-body">
+                                <div className="ds-conservation-card-icon"><Leaf size={24} /></div>
+                                <h3>Conservation-Focused Experiences</h3>
+                                <p>Many donor safaris incorporate conservation-focused experiences that align naturally with philanthropic goals and mission-driven programming.</p>
+                                <ul className="ds-conservation-card-list">
+                                    {['Meet researchers in the field', 'Visit active conservation projects', 'Learn about wildlife protection', 'Support local communities'].map((item, i) => (
+                                        <li key={i}><CheckCircle size={14} className="ds-conservation-list-check" /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
 
-                        <div className="ds-conservation-card">
-                            <div className="ds-conservation-card-icon"><HeartHandshake size={24} /></div>
-                            <h3>Philanthropic Alignment</h3>
-                            <p>Conservation experiences often resonate deeply with donors who are passionate about environmental stewardship, sustainability, and global impact.</p>
-                            <ul className="ds-conservation-card-list">
-                                {['Mission-aligned programming', 'Institutional storytelling opportunities', 'Donor recognition in meaningful settings', 'Connection to organizational impact'].map((item, i) => (
-                                    <li key={i}><CheckCircle size={14} className="ds-conservation-list-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                        <div className="ds-conservation-card ds-conservation-card-blue">
+                            <div className="ds-conservation-card-top-img">
+                                <img src={conservationCommunityImg} alt="Community conservation partnership" />
+                            </div>
+                            <div className="ds-conservation-card-body">
+                                <div className="ds-conservation-card-icon"><HeartHandshake size={24} /></div>
+                                <h3>Philanthropic Alignment</h3>
+                                <p>Conservation experiences often resonate deeply with donors who are passionate about environmental stewardship, sustainability, and global impact.</p>
+                                <ul className="ds-conservation-card-list">
+                                    {['Mission-aligned programming', 'Institutional storytelling opportunities', 'Donor recognition in meaningful settings', 'Connection to organizational impact'].map((item, i) => (
+                                        <li key={i}><CheckCircle size={14} className="ds-conservation-list-check" /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -896,68 +867,54 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                BENEFITS OF DONOR SAFARIS (medi-mistakes-slider-section
-                repurposed as a benefits highlight slider)
+                WHY DONOR TRAVEL WORKS  (ds-travelworks-section)
             ════════════════════════════════════════════════════════════ */}
-            <section
-                className="medi-mistakes-slider-section"
-                onMouseEnter={() => setIsMediSliderHovered(true)}
-                onMouseLeave={() => setIsMediSliderHovered(false)}
-            >
-                <div className="medi-mistakes-slider-container">
-                    <div className="medi-mistakes-slider-header">
-                        <span className="medi-mistakes-eyebrow">WHY DONOR TRAVEL WORKS</span>
-                        <h2 className="medi-mistakes-slider-title">
-                            Why Organizations Choose Donor Safaris
-                        </h2>
-                        <div className="medi-mistakes-slider-separator"></div>
+            <section className="ds-travelworks-section">
+                <div className="ds-travelworks-container">
+                    <div className="ds-travelworks-header">
+                        <span className="ds-travelworks-eyebrow">WHY DONOR TRAVEL WORKS</span>
+                        <h2>Why Organizations Choose Donor Safaris</h2>
+                        <div className="ds-travelworks-bar"></div>
                     </div>
 
-                    <div className="medi-mistakes-carousel-wrapper">
+                    <div className="ds-travelworks-carousel">
                         <button
-                            className="medi-slider-nav-btn btn-left"
+                            className="ds-travelworks-arrow ds-travelworks-arrow-left"
                             onClick={() => setMediActiveMistake(p => (p === 0 ? mediMistakes.length - 1 : p - 1))}
-                            aria-label="Previous slide"
+                            aria-label="Previous"
                         >
-                            <ChevronRight size={24} style={{ transform: 'rotate(180deg)' }} />
+                            <ChevronRight size={22} />
                         </button>
 
-                        <div className="medi-slider-card-viewport">
+                        <div className="ds-travelworks-track">
                             {mediMistakes.map((benefit, idx) => (
-                                <div key={idx} className={`medi-mistakes-slider-card ${mediActiveMistake === idx ? 'active' : ''}`}>
-                                    <div className="medi-mistake-slide-header">
-                                        <span className="medi-mistake-card-num">0{idx + 1}</span>
-                                        <h3 className="medi-mistake-card-title">{benefit.title}</h3>
-                                    </div>
-                                    <div className="medi-mistake-slide-body">
-                                        <p className="medi-mistake-card-description">{benefit.desc}</p>
-                                        {benefit.bullets && (
-                                            <ul className="medi-mistake-card-bullets-list">
-                                                {benefit.bullets.map((b, bi) => (
-                                                    <li key={bi} className="medi-mistake-card-bullet-item">
-                                                        <CheckCircle size={16} className="medi-mistake-bullet-check" />
-                                                        <span>{b}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
+                                <div key={idx} className={`ds-travelworks-card ${mediActiveMistake === idx ? 'active' : ''}`}>
+                                    <span className="ds-travelworks-num">0{idx + 1}</span>
+                                    <h3>{benefit.title}</h3>
+                                    <p>{benefit.desc}</p>
+                                    {benefit.bullets && (
+                                        <ul className="ds-travelworks-bullets">
+                                            {benefit.bullets.map((b, bi) => (
+                                                <li key={bi}><CheckCircle size={16} className="ds-travelworks-check" /><span>{b}</span></li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </div>
                             ))}
                         </div>
 
                         <button
-                            className="medi-slider-nav-btn btn-right"
+                            className="ds-travelworks-arrow ds-travelworks-arrow-right"
                             onClick={() => setMediActiveMistake(p => (p === mediMistakes.length - 1 ? 0 : p + 1))}
-                            aria-label="Next slide"
+                            aria-label="Next"
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight size={22} />
                         </button>
                     </div>
 
-                    <div className="medi-slider-progress-dots">
+                    <div className="ds-travelworks-dots">
                         {mediMistakes.map((_, idx) => (
-                            <button key={idx} className={`medi-slider-dot ${mediActiveMistake === idx ? 'active' : ''}`} onClick={() => setMediActiveMistake(idx)} aria-label={`Slide ${idx + 1}`} />
+                            <button key={idx} className={`ds-travelworks-dot ${mediActiveMistake === idx ? 'active' : ''}`} onClick={() => setMediActiveMistake(idx)} aria-label={`Slide ${idx + 1}`} />
                         ))}
                     </div>
                 </div>
@@ -1012,14 +969,14 @@ function DonorSafaris() {
             </section>
 
             {/* ════════════════════════════════════════════════════════════
-                WHY PROFESSIONAL TRAVEL PARTNER  ← NEW SECTION (ds-)
+                WHY PROFESSIONAL TRAVEL PARTNER  (ds-partner-section)
             ════════════════════════════════════════════════════════════ */}
             <section className="ds-partner-section">
                 <div className="ds-partner-container">
                     <div className="ds-partner-header">
                         <span className="ds-partner-eyebrow">PLANNING EXPERTISE</span>
-                        <h2 className="medi-section-heading">Why Work With a Professional Travel Partner?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2>Why Work With a Professional Travel Partner?</h2>
+                        <div className="ds-partner-bar"></div>
                     </div>
 
                     <p className="ds-partner-intro">
@@ -1035,16 +992,17 @@ function DonorSafaris() {
                             { icon: <Compass size={20} />, label: 'Safari operations' },
                             { icon: <Globe size={20} />, label: 'Air travel coordination' },
                         ].map((item, i) => (
-                            <div key={i} className="ds-partner-consideration-card">
-                                <div className="ds-partner-cons-icon">{item.icon}</div>
-                                <span className="ds-partner-cons-label">{item.label}</span>
+                            <div key={i} className="ds-partner-card">
+                                <div className="ds-partner-card-icon">{item.icon}</div>
+                                <span className="ds-partner-card-label">{item.label}</span>
                             </div>
                         ))}
                     </div>
 
-                    <div className="ds-partner-services-header">
+                    <div className="ds-partner-bottom-header">
                         <h3>Why Trips &amp; Ships Luxury Travel</h3>
                         <p>Trips &amp; Ships Luxury Travel specializes in customized donor travel programs. Our services include:</p>
+                        <div className="ds-partner-bottom-bar"></div>
                     </div>
 
                     <div className="ds-partner-services-grid">
@@ -1056,8 +1014,8 @@ function DonorSafaris() {
                             { icon: <BookOpen size={18} />, label: 'Educational travel programming' },
                             { icon: <Crown size={18} />, label: 'VIP travel coordination' },
                         ].map((item, i) => (
-                            <div key={i} className="ds-partner-service-pill">
-                                <span className="ds-partner-service-pill-icon">{item.icon}</span>
+                            <div key={i} className="ds-partner-pill">
+                                <span className="ds-partner-pill-icon">{item.icon}</span>
                                 <span>{item.label}</span>
                             </div>
                         ))}
@@ -1143,7 +1101,7 @@ function DonorSafaris() {
                     <div className="medi-prestige-plaque-wrapper">
                         <div className="medi-prestige-identity-card">
                             <div className="medi-prestige-seal-ring">
-                                {/* <img src={Profile_AH} alt="Angela Hughes" style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }} /> */}
+                                <img src={angelaMediaImg} alt="Angela Hughes" className="medi-prestige-seal-img" />
                             </div>
                             <span className="medi-prestige-label">ELITE ADVISOR ACCREDITATION</span>
                             <h3 className="medi-prestige-name">Angela Hughes</h3>
@@ -1246,10 +1204,10 @@ function DonorSafaris() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Program Information

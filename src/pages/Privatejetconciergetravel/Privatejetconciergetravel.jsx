@@ -15,19 +15,40 @@ import { useState, useEffect } from 'react'
    Replace any URL below with a final licensed/brand image using
    the same variable name; no other code changes are required.
    ============================================================ */
-const heroImages = [
-    "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1600", // Private jet interior
-    "https://images.unsplash.com/photo-1583396618422-b4d2828b1e6c?q=80&w=1600", // Private jet on tarmac
-    "https://images.unsplash.com/photo-1524638431109-93d95c968f03?q=80&w=1600"  // Luxury concierge lounge
-]
+import hero1 from '../../assets/Privatejetconciergetravel/private-jet-charter-luxury-flight-cabin-interior.jpg'
+import hero2 from '../../assets/Privatejetconciergetravel/private-aviation-tarmac-vip-airport-transfer.jpg'
+import hero3 from '../../assets/Privatejetconciergetravel/luxury-travel-concierge-lounge-vip-service.jpg'
 
-const whyJetImage = "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1200"          // Private jet cabin interior
-const aviationBannerImage = "https://images.unsplash.com/photo-1583396618422-b4d2828b1e6c?q=80&w=1800"  // Private jet on tarmac at sunset
-const accommodationsImage = "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1600"   // Luxury resort infinity pool
-const experiencesCenterImage = "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800" // Luxury yacht
-const executiveImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000"        // Executives traveling
-const conciergeImage = "https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1000"           // Concierge desk
-const privacyBannerImage = "https://images.unsplash.com/photo-1618083707368-b3823daa2726?q=80&w=1800"    // Private secure villa corridor
+import whyJetImgAsset from '../../assets/Privatejetconciergetravel/private-jet-cabin-interior-executive-travel.jpg'
+import aviationBannerImgAsset from '../../assets/Privatejetconciergetravel/private-jet-tarmac-sunset-charter-flight.jpg'
+import accommodationsImgAsset from '../../assets/Privatejetconciergetravel/luxury-resort-infinity-pool-exclusive-accommodations.jpg'
+import experiencesCenterImgAsset from '../../assets/Privatejetconciergetravel/private-yacht-charter-mediterranean-concierge-experience.jpg'
+import executiveImgAsset from '../../assets/Privatejetconciergetravel/executive-business-travel-private-aviation-meeting.jpg'
+import conciergeImgAsset from '../../assets/Privatejetconciergetravel/vip-concierge-service-desk-luxury-hospitality.jpg'
+import privacyBannerImgAsset from '../../assets/Privatejetconciergetravel/private-secure-villa-corridor-discrete-luxury.jpg'
+
+import aviationCoordImg from '../../assets/Privatejetconciergetravel/executive-business-travel-private-aviation-meeting.jpg'
+import executiveFamilyImg from '../../assets/Privatejetconciergetravel/luxury-executive-group-travel-networking-event-private-cultural-experience.webp'
+
+import expYacht from '../../assets/Privatejetconciergetravel/private-luxury-yacht-charter-mediterranean-coast-exclusive-cruise.png'
+import expWine from '../../assets/Privatejetconciergetravel/private-wine-tasting-vineyard-cellar-luxury-culinary-experience.png'
+import expCultural from '../../assets/Privatejetconciergetravel/private-guided-cultural-walking-tour-historic-european-village-luxury-travel.png'
+import expGolf from '../../assets/Privatejetconciergetravel/luxury-golf-vacation-championship-golf-course-mountain-resort.png'
+import expSafari from '../../assets/Privatejetconciergetravel/luxury-african-safari-private-game-drive-wildlife-adventure.png'
+import expHeli from '../../assets/Privatejetconciergetravel/private-helicopter-tour-alpine-mountains-luxury-adventure-travel.png'
+import expMuseum from '../../assets/Privatejetconciergetravel/private-museum-art-gallery-cultural-tour-luxury-travel-experience.png'
+import expCulinary from '../../assets/Privatejetconciergetravel/private-chef-gourmet-cooking-experience-luxury-villa-dining.png'
+import { Link } from 'react-router'
+
+const heroImages = [hero1, hero2, hero3]
+
+const whyJetImage = whyJetImgAsset
+const aviationBannerImage = aviationBannerImgAsset
+const accommodationsImage = accommodationsImgAsset
+const experiencesCenterImage = experiencesCenterImgAsset
+const executiveImage = executiveImgAsset
+const conciergeImage = conciergeImgAsset
+const privacyBannerImage = privacyBannerImgAsset
 
 function PrivateJetConciergeTravel() {
     const [heroIndex, setHeroIndex] = useState(0)
@@ -45,14 +66,14 @@ function PrivateJetConciergeTravel() {
     }
 
     const experiencesList = [
-        { title: "Private yacht charters", desc: "Navigate pristine waters on exclusive private vessels.", icon: <Anchor size={24} /> },
-        { title: "Wine tastings", desc: "Sip private reserve vintages with master sommeliers.", icon: <Wine size={24} /> },
-        { title: "Cultural tours", desc: "Deep dive into local traditions with private local guides.", icon: <Compass size={24} /> },
-        { title: "Golf experiences", desc: "Tee off at championship courses with priority slot booking.", icon: <Flag size={24} /> },
-        { title: "Wildlife safaris", desc: "Encounter raw nature with certified luxury trackers.", icon: <PawPrint size={24} /> },
-        { title: "Helicopter excursions", desc: "Savor breathtaking aerial vistas via chartered helicopters.", icon: <Navigation size={24} /> },
-        { title: "Private museum access", desc: "Explore world heritage after-hours, free of crowds.", icon: <Landmark size={24} /> },
-        { title: "Culinary experiences", desc: "Indulge in Michelin-starred menus by private chefs.", icon: <Utensils size={24} /> }
+        { title: "Private yacht charters", desc: "Navigate pristine waters on exclusive private vessels.", icon: <Anchor size={24} />, img: expYacht },
+        { title: "Wine tastings", desc: "Sip private reserve vintages with master sommeliers.", icon: <Wine size={24} />, img: expWine },
+        { title: "Cultural tours", desc: "Deep dive into local traditions with private local guides.", icon: <Compass size={24} />, img: expCultural },
+        { title: "Golf experiences", desc: "Tee off at championship courses with priority slot booking.", icon: <Flag size={24} />, img: expGolf },
+        { title: "Wildlife safaris", desc: "Encounter raw nature with certified luxury trackers.", icon: <PawPrint size={24} />, img: expSafari },
+        { title: "Helicopter excursions", desc: "Savor breathtaking aerial vistas via chartered helicopters.", icon: <Navigation size={24} />, img: expHeli },
+        { title: "Private museum access", desc: "Explore world heritage after-hours, free of crowds.", icon: <Landmark size={24} />, img: expMuseum },
+        { title: "Culinary experiences", desc: "Indulge in Michelin-starred menus by private chefs.", icon: <Utensils size={24} />, img: expCulinary }
     ]
 
     const pjcFaqs = [
@@ -320,7 +341,7 @@ function PrivateJetConciergeTravel() {
                     <div
                         key={idx}
                         className={`medi-hero-background ${heroIndex === idx ? 'medi-active' : ''}`}
-                        /* style={{ backgroundImage: `url(${img})` }} */
+                        style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
                 <div className="medi-hero-overlay-layer"></div>
@@ -395,7 +416,7 @@ function PrivateJetConciergeTravel() {
 
                     <div
                         className="pjc-why-image-wrap"
-                        /* style={{ backgroundImage: `url('${whyJetImage}')` }} */
+                        style={{ backgroundImage: `url('${whyJetImage}')` }}
                     >
                         <div className="pjc-why-image-tint"></div>
                         <div className="pjc-why-floating-badge">
@@ -476,9 +497,21 @@ function PrivateJetConciergeTravel() {
 
             {/* ============================ PRIVATE AVIATION COORDINATION ============================ */}
             <section className="pjc-aviation-section">
-                <div className="pjc-aviation-overlay"></div>
                 <div className="pjc-aviation-container">
-                    <div className="pjc-aviation-header">
+
+                    <div className="pjc-aviation-image-wrap" style={{ backgroundImage: `url('${aviationCoordImg}')` }}>
+                        <div className="pjc-aviation-image-tint"></div>
+                        <div className="pjc-aviation-floating-badge">
+                            <div className="pjc-aviation-floating-badge-icon">
+                                <LayoutList size={20} color="#ffffff" />
+                            </div>
+                            <p className="pjc-aviation-floating-badge-text">
+                                Services include the above and more, tailored to every itinerary.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="pjc-aviation-content-side">
                         <span className="pjc-aviation-eyebrow">
                             <Plane size={14} /> Aviation Coordination
                         </span>
@@ -487,31 +520,27 @@ function PrivateJetConciergeTravel() {
                         <p className="pjc-aviation-p">
                             Our travel advisors coordinate every aspect of private air travel. We work closely with trusted aviation partners to deliver seamless travel experiences.
                         </p>
-                    </div>
-
-                    <div className="pjc-aviation-grid">
-                        {[
-                            { label: "Private jet charters", icon: <Plane size={22} /> },
-                            { label: "Aircraft selection", icon: <CheckCircle size={22} /> },
-                            { label: "Flight scheduling", icon: <Calendar size={22} /> },
-                            { label: "International flight coordination", icon: <Globe size={22} /> },
-                            { label: "Airport slot management", icon: <MapPin size={22} /> },
-                            { label: "Ground handling", icon: <Car size={22} /> },
-                            { label: "FBO services", icon: <Building2 size={22} /> },
-                            { label: "Luxury ground transportation", icon: <Car size={22} /> }
-                        ].map((item, idx) => (
-                            <div key={idx} className="pjc-aviation-card">
-                                <div className="pjc-aviation-icon-wrapper">
-                                    {item.icon}
+                        <div className="pjc-aviation-grid">
+                            {[
+                                { label: "Private jet charters", icon: <Plane size={20} /> },
+                                { label: "Aircraft selection", icon: <CheckCircle size={20} /> },
+                                { label: "Flight scheduling", icon: <Calendar size={20} /> },
+                                { label: "International flight coordination", icon: <Globe size={20} /> },
+                                { label: "Airport slot management", icon: <MapPin size={20} /> },
+                                { label: "Ground handling", icon: <Car size={20} /> },
+                                { label: "FBO services", icon: <Building2 size={20} /> },
+                                { label: "Luxury ground transportation", icon: <Car size={20} /> }
+                            ].map((item, idx) => (
+                                <div key={idx} className="pjc-aviation-card">
+                                    <div className="pjc-aviation-icon-wrapper">
+                                        {item.icon}
+                                    </div>
+                                    <p className="pjc-aviation-card-label">{item.label}</p>
                                 </div>
-                                <p className="pjc-aviation-card-label">{item.label}</p>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
 
-                    <p className="pjc-aviation-outro">
-                        Services include the above and more, tailored to every itinerary.
-                    </p>
                 </div>
             </section>
 
@@ -557,7 +586,7 @@ function PrivateJetConciergeTravel() {
                         
                         <div className="pjc-accom-image-column">
                             <div className="pjc-accom-image-wrapper">
-                                <img src="https://placehold.co/800x1000?text=Luxury+Accommodations" alt="Luxury suite accommodation" className="pjc-accom-image" />
+                                <img src={accommodationsImage} alt="Luxury suite accommodation and vetted private villa" className="pjc-accom-image" />
                                 <div className="pjc-accom-image-badge">
                                     <Home size={18} />
                                     <span>Vetted Luxury Estates</span>
@@ -619,11 +648,17 @@ function PrivateJetConciergeTravel() {
                     <div className="pjc-experiences-grid">
                         {experiencesList.map((item, idx) => (
                             <div key={idx} className="pjc-experiences-card">
-                                <div className="pjc-experiences-icon-box">
-                                    {item.icon}
+                                <div className="pjc-experiences-card-img-wrap">
+                                    <img src={item.img} alt={item.title} className="pjc-experiences-card-img" />
+                                    <span className="pjc-experiences-card-num">{String(idx + 1).padStart(2, '0')}</span>
                                 </div>
-                                <h3 className="pjc-experiences-card-title">{item.title}</h3>
-                                <p className="pjc-experiences-card-desc">{item.desc}</p>
+                                <div className="pjc-experiences-card-content">
+                                    <div className="pjc-experiences-icon-box">
+                                        {item.icon}
+                                    </div>
+                                    <h3 className="pjc-experiences-card-title">{item.title}</h3>
+                                    <p className="pjc-experiences-card-desc">{item.desc}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -638,31 +673,30 @@ function PrivateJetConciergeTravel() {
             <section className="pjc-executive-section">
                 <div className="pjc-executive-container">
 
-                    <div
-                        className="pjc-executive-image-wrap"
-                        /* style={{ backgroundImage: `url('${executiveImage}')` }} */
-                    ></div>
+                    <div className="pjc-executive-image-wrap">
+                        <img src={executiveFamilyImg} alt="Executive & Family Travel" className="pjc-executive-image" />
+                    </div>
 
-                    <div>
+                    <div className="pjc-executive-content">
                         <h2 className="medi-section-heading">Executive & Family Travel</h2>
                         <div className="medi-heading-separator-bar"></div>
 
                         <p className="pjc-executive-lead">We plan travel for:</p>
 
-                        <div className="pjc-executive-stack">
+                        <div className="pjc-executive-grid">
                             {[
-                                { title: "Executives" },
-                                { title: "Entrepreneurs" },
-                                { title: "Family offices" },
-                                { title: "Multigenerational families" },
-                                { title: "Corporate leaders" },
-                                { title: "Celebrity clients" },
-                                { title: "Athletes" },
-                                { title: "Private investors" }
+                                { title: "Executives", icon: <Briefcase size={18} /> },
+                                { title: "Entrepreneurs", icon: <Zap size={18} /> },
+                                { title: "Family offices", icon: <Building2 size={18} /> },
+                                { title: "Multigenerational families", icon: <Users size={18} /> },
+                                { title: "Corporate leaders", icon: <Star size={18} /> },
+                                { title: "Celebrity clients", icon: <Heart size={18} /> },
+                                { title: "Athletes", icon: <ShieldCheck size={18} /> },
+                                { title: "Private investors", icon: <Gem size={18} /> }
                             ].map((item, idx) => (
-                                <div key={idx} className="pjc-executive-stack-item">
-                                    <div className="pjc-executive-stack-number">{idx + 1}</div>
-                                    <span className="pjc-executive-stack-text">{item.title}</span>
+                                <div key={idx} className="pjc-executive-card">
+                                    <div className="pjc-executive-card-icon">{item.icon}</div>
+                                    <span className="pjc-executive-card-text">{item.title}</span>
                                 </div>
                             ))}
                         </div>
@@ -716,7 +750,7 @@ function PrivateJetConciergeTravel() {
 
                     <div
                         className="pjc-concierge-image-wrap"
-                        /* style={{ backgroundImage: `url('${conciergeImage}')` }} */
+                        style={{ backgroundImage: `url('${conciergeImage}')` }}
                     ></div>
 
                 </div>
@@ -725,7 +759,7 @@ function PrivateJetConciergeTravel() {
             {/* ============================ PRIVACY & SECURITY ============================ */}
             <section
                 className="pjc-privacy-section"
-                /* style={{ backgroundImage: `url('${privacyBannerImage}')` }} */
+                style={{ backgroundImage: `url('${privacyBannerImage}')` }}
             >
                 <div className="pjc-privacy-overlay"></div>
                 <div className="pjc-privacy-seal-panel">
@@ -827,10 +861,10 @@ function PrivateJetConciergeTravel() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Itinerary Options

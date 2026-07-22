@@ -2,35 +2,34 @@ import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import './Familygovernanceretreats.css'
 
-// import hero1 from '../../assets/FamilyGovernanceRetreats/hero1.jpg'
-// import hero2 from '../../assets/FamilyGovernanceRetreats/hero2.jpg'
-// import hero3 from '../../assets/FamilyGovernanceRetreats/hero3.jpg'
+import hero1 from '../../assets/FamilyGovernanceRetreats/tuscany-luxury-estate-family-governance-retreat-italy.jpg'
+import hero2 from '../../assets/FamilyGovernanceRetreats/swiss-alps-chalet-family-leadership-retreat.jpg'
+import hero3 from '../../assets/FamilyGovernanceRetreats/caribbean-oceanfront-villa-multigenerational-family-retreat.jpg'
 
-// import destTuscany from '../../assets/FamilyGovernanceRetreats/destination-tuscany-italy.webp'
-// import destProvence from '../../assets/FamilyGovernanceRetreats/destination-provence-france.webp'
-// import destScottish from '../../assets/FamilyGovernanceRetreats/destination-scottish-highlands.webp'
-// import destNapa from '../../assets/FamilyGovernanceRetreats/destination-napa-valley.webp'
-// import destJackson from '../../assets/FamilyGovernanceRetreats/destination-jackson-hole.webp'
-// import destCostaRica from '../../assets/FamilyGovernanceRetreats/destination-costa-rica.webp'
-// import destCaribbean from '../../assets/FamilyGovernanceRetreats/destination-the-caribbean.webp'
-// import destSwissAlps from '../../assets/FamilyGovernanceRetreats/destination-swiss-alps.webp'
+import destTuscany from '../../assets/FamilyGovernanceRetreats/tuscany-vineyard-villa-family-legacy-planning.jpg'
+import destProvence from '../../assets/FamilyGovernanceRetreats/provence-lavender-estate-family-business-retreat-france.jpg'
+import destScottish from '../../assets/FamilyGovernanceRetreats/scottish-highlands-castle-succession-planning-retreat.jpg'
+import destNapa from '../../assets/FamilyGovernanceRetreats/napa-valley-luxury-wine-estate-family-retreat-california.jpg'
+import destJackson from '../../assets/FamilyGovernanceRetreats/luxury-mountain-ski-retreat-private-lodge-winter-vacation.png'
+import destCostaRica from '../../assets/FamilyGovernanceRetreats/costa-rica-eco-luxury-resort-family-retreat.jpg'
+import destCaribbean from '../../assets/FamilyGovernanceRetreats/caribbean-oceanfront-villa-multigenerational-family-retreat.jpg'
+import destSwissAlps from '../../assets/FamilyGovernanceRetreats/luxury-alpine-chalet-scenic-train-journey-swiss-mountains.png'
 
-// import familyBusinessImg from '../../assets/FamilyGovernanceRetreats/family-business-retreat-meeting.webp'
-// import successionPlanningImg from '../../assets/FamilyGovernanceRetreats/succession-planning-generations.webp'
-// import privateVillaImg from '../../assets/FamilyGovernanceRetreats/private-villa-exclusive-resort.webp'
+import familyBusinessImg from '../../assets/FamilyGovernanceRetreats/family-business-governance-meeting-retreat.jpg'
+import successionPlanningImg from '../../assets/FamilyGovernanceRetreats/multigenerational-family-succession-planning-retreat.jpg'
+import privateVillaImg from '../../assets/FamilyGovernanceRetreats/exclusive-private-villa-family-office-retreat.jpg'
 
-// import expWineTasting from '../../assets/FamilyGovernanceRetreats/experience-wine-tasting.webp'
-// import expCookingClass from '../../assets/FamilyGovernanceRetreats/experience-cooking-class.webp'
-// import expYachtCharter from '../../assets/FamilyGovernanceRetreats/experience-private-yacht-charter.webp'
-// import expCulturalTour from '../../assets/FamilyGovernanceRetreats/experience-cultural-tour.webp'
-// import expGolf from '../../assets/FamilyGovernanceRetreats/experience-golf-outing.webp'
-// import expWellness from '../../assets/FamilyGovernanceRetreats/experience-wellness-session.webp'
-// import expHiking from '../../assets/FamilyGovernanceRetreats/experience-hiking-adventure.webp'
-// import expSafari from '../../assets/FamilyGovernanceRetreats/experience-safari.webp'
-// import expLuxuryCruise from '../../assets/FamilyGovernanceRetreats/experience-luxury-cruise.webp'
+import expWineTasting from '../../assets/FamilyGovernanceRetreats/family-wine-tasting-experience-tuscany.jpg'
+import expCookingClass from '../../assets/FamilyGovernanceRetreats/family-gourmet-cooking-class-retreat-experience.jpg'
+import expYachtCharter from '../../assets/FamilyGovernanceRetreats/private-yacht-charter-family-governance-cruise.jpg'
+import expCulturalTour from '../../assets/FamilyGovernanceRetreats/multigenerational-cultural-tour-family-bonding.jpg'
+import expGolf from '../../assets/FamilyGovernanceRetreats/luxury-golf-vacation-championship-golf-course-mountain-resort.png'
+import expWellness from '../../assets/FamilyGovernanceRetreats/holistic-wellness-session-family-governance-retreat.jpg'
+import expHiking from '../../assets/FamilyGovernanceRetreats/mountain-hiking-adventure-family-bonding.jpg'
+import expSafari from '../../assets/FamilyGovernanceRetreats/luxury-african-safari-family-legacy-retreat.jpg'
 
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 import {
     Users, Heart, Compass, Handshake, TrendingUp, Trophy, MessageCircle,
@@ -42,10 +41,11 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function FamilyGovernanceRetreats() {
     const [fgrCurrentHero, setFgrCurrentHero] = useState(0)
-    const fgrHeroImages = []
+    const fgrHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const fgrTimer = setInterval(() => {
@@ -93,14 +93,14 @@ function FamilyGovernanceRetreats() {
     ]
 
     const fgrDestinations = [
-        // { name: 'Tuscany, Italy', img: destTuscany },
-        // { name: 'Provence, France', img: destProvence },
-        // { name: 'Scottish Highlands', img: destScottish },
-        // { name: 'Napa Valley', img: destNapa },
-        // { name: 'Jackson Hole', img: destJackson },
-        // { name: 'Costa Rica', img: destCostaRica },
-        // { name: 'The Caribbean', img: destCaribbean },
-        // { name: 'Swiss Alps', img: destSwissAlps }
+        { name: 'Tuscany, Italy', img: destTuscany },
+        { name: 'Provence, France', img: destProvence },
+        { name: 'Scottish Highlands', img: destScottish },
+        { name: 'Napa Valley', img: destNapa },
+        { name: 'Jackson Hole', img: destJackson },
+        { name: 'Costa Rica', img: destCostaRica },
+        { name: 'The Caribbean', img: destCaribbean },
+        { name: 'Swiss Alps', img: destSwissAlps }
     ]
 
     const fgrVillaItems = [
@@ -115,15 +115,15 @@ function FamilyGovernanceRetreats() {
     ]
 
     const fgrExperiences = [
-        // { text: 'Wine tastings', img: expWineTasting, icon: Wine },
-        // { text: 'Cooking classes', img: expCookingClass, icon: ChefHat },
-        // { text: 'Private yacht charters', img: expYachtCharter, icon: Anchor },
-        // { text: 'Cultural tours', img: expCulturalTour, icon: Compass },
-        // { text: 'Golf outings', img: expGolf, icon: Flag },
-        // { text: 'Wellness sessions', img: expWellness, icon: HeartPulse },
-        // { text: 'Hiking adventures', img: expHiking, icon: Mountain },
-        // { text: 'Safari experiences', img: expSafari, icon: Globe },
-     ]
+        { text: 'Wine tastings', img: expWineTasting, icon: Wine },
+        { text: 'Cooking classes', img: expCookingClass, icon: ChefHat },
+        { text: 'Private yacht charters', img: expYachtCharter, icon: Anchor },
+        { text: 'Cultural tours', img: expCulturalTour, icon: Compass },
+        { text: 'Golf outings', img: expGolf, icon: Flag },
+        { text: 'Wellness sessions', img: expWellness, icon: HeartPulse },
+        { text: 'Hiking adventures', img: expHiking, icon: Mountain },
+        { text: 'Safari experiences', img: expSafari, icon: Globe },
+    ]
 
     const fgrPlanningItems = [
         { text: 'Destination selection', icon: MapPin },
@@ -465,7 +465,7 @@ function FamilyGovernanceRetreats() {
             <section className="fgr-business-section">
                 <div className="fgr-business-container">
                     <div className="fgr-business-image-block">
-                        {/* <img src={familyBusinessImg} alt="Family business retreat meeting" className="fgr-business-image" /> */}
+                        <img src={familyBusinessImg} alt="Family business governance meeting retreat" className="fgr-business-image" />
                         <div className="fgr-business-image-overlay"></div>
                     </div>
                     <div className="fgr-business-content-block">
@@ -525,8 +525,7 @@ function FamilyGovernanceRetreats() {
                         </p>
                     </div>
                     <div className="fgr-succession-image-block">
-                        {/* <img src={successionPlanningImg} alt="Succession planning across generations" className="fgr-succession-image" /> */}
-                        <div className="fgr-succession-image-overlay"></div>
+                        <img src={successionPlanningImg} alt="Multigenerational family succession planning retreat" className="fgr-succession-image" />
                         <div className="fgr-succession-badge">
                             <Repeat size={18} />
                             <span>Generational Continuity</span>
@@ -538,7 +537,7 @@ function FamilyGovernanceRetreats() {
             {/* LUXURY DESTINATIONS GALLERY */}
             <section className="fgr-destinations-section">
                 <div className="fgr-destinations-container">
-                    <div style={{ textAlign: 'center' }}>
+                    <div className="fgr-destinations-header">
                         <span className="fgr-destinations-eyebrow">CURATED SETTINGS</span>
                         <h2 className="medi-section-heading">Luxury Destinations for Family Governance Retreats</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
@@ -551,11 +550,10 @@ function FamilyGovernanceRetreats() {
                     </p>
                     <div className="fgr-destinations-gallery">
                         {fgrDestinations.map((dest, idx) => (
-                            <div key={idx} className={`fgr-destination-card fgr-dest-card-${idx + 1}`}>
-                                {/* <img src={dest.img} alt={dest.name} className="fgr-destination-img" /> */}
-                                <div className="fgr-destination-card-overlay"></div>
+                            <div key={idx} className="fgr-destination-card">
+                                <img src={dest.img} alt={dest.name} className="fgr-destination-img" />
                                 <div className="fgr-destination-card-label">
-                                    <MapPin size={15} />
+                                    <MapPin size={14} />
                                     <span>{dest.name}</span>
                                 </div>
                             </div>
@@ -596,7 +594,7 @@ function FamilyGovernanceRetreats() {
                         </p>
                     </div>
                     <div className="fgr-villa-image-wrapper">
-                        {/* <img src={privateVillaImg} alt="Private villa and exclusive resort" className="fgr-villa-main-image" /> */}
+                        <img src={privateVillaImg} alt="Exclusive private villa family office retreat" className="fgr-villa-main-image" />
                         <div className="fgr-villa-image-glow"></div>
                     </div>
                 </div>
@@ -620,8 +618,7 @@ function FamilyGovernanceRetreats() {
                             const IconComp = exp.icon
                             return (
                                 <div key={idx} className="fgr-experience-card">
-                                    {/* <img src={exp.img} alt={exp.text} className="fgr-experience-img" /> */}
-                                    <div className="fgr-experience-card-overlay"></div>
+                                    <img src={exp.img} alt={exp.text} className="fgr-experience-img" />
                                     <div className="fgr-experience-icon-badge">
                                         <IconComp size={16} />
                                     </div>
@@ -743,7 +740,7 @@ function FamilyGovernanceRetreats() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Family Retreat Advisor" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Family Retreat Advisor" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -893,10 +890,10 @@ function FamilyGovernanceRetreats() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Retreat Options
