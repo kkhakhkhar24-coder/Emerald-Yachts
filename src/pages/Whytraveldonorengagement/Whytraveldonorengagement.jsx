@@ -1,21 +1,21 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Whytraveldonorengagement.css'
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-// import hero1 from '../../assets/DonorEngagement/hero1.jpg'
-// import hero2 from '../../assets/DonorEngagement/hero2.jpg'
-// import hero3 from '../../assets/DonorEngagement/hero3.jpg'
-// import donGroupTravel from '../../assets/DonorEngagement/donor-group-travel.webp'
-// import donTraditional from '../../assets/DonorEngagement/donor-traditional.webp'
-// import donRelationships from '../../assets/DonorEngagement/donor-relationships.webp'
-// import donCommunity from '../../assets/DonorEngagement/donor-community.webp'
-// import donMissionUniversity from '../../assets/DonorEngagement/donor-mission-university.webp'
-// import donMissionMuseum from '../../assets/DonorEngagement/donor-mission-museum.webp'
-// import donMissionConservation from '../../assets/DonorEngagement/donor-mission-conservation.webp'
-// import donMissionHealthcare from '../../assets/DonorEngagement/donor-mission-healthcare.webp'
-// import donGiftConversation from '../../assets/DonorEngagement/donor-gift-conversation.webp'
-// import donStewardship from '../../assets/DonorEngagement/donor-stewardship.webp'
-// import donGenerations from '../../assets/DonorEngagement/donor-generations.webp'
+import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import hero1 from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-coastal-celebration-dinner.png'
+import hero2 from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-coastal-group-excursion.png'
+import hero3 from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/luxury-river-cruise-sunset-reception.png'
+import donGroupTravel from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-coastal-group-excursion.png'
+import donTraditional from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/executive-recognition-gala-dinner.png'
+import donRelationships from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/luxury-river-cruise-sunset-reception.png'
+import donCommunity from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/community-cultural-connection-experience.png'
+import donMissionUniversity from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/expert-led-cultural-heritage-tour.png'
+import donMissionMuseum from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-artisan-cultural-workshop.png'
+import donMissionConservation from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-historic-village-walking-tour.png'
+import donMissionHealthcare from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/luxury-couple-river-cruise-experience.png'
+import donGiftConversation from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/private-cultural-partnership-meeting.png'
+import donStewardship from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/executive-leadership-retreat-session.png'
+import donGenerations from '../../assets/WhyTravelIncreasesDonorEngagementandFundraising/multigenerational-family-luxury-travel.png'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
@@ -27,10 +27,11 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function WhyTravelDonorEngagement() {
     const [donCurrentHero, setDonCurrentHero] = useState(0)
-    const donHeroImages = []
+    const donHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const donTimer = setInterval(() => {
@@ -63,25 +64,25 @@ function WhyTravelDonorEngagement() {
     const donOrgTypes = [
         {
             type: 'Universities',
-            // img: donMissionUniversity,
+            img: donMissionUniversity,
             Icon: GraduationCap,
             items: ['Faculty-led educational travel', 'Alumni travel programs', 'Study-abroad-inspired experiences']
         },
         {
             type: 'Museums',
-            // img: donMissionMuseum,
+            img: donMissionMuseum,
             Icon: Globe,
             items: ['Curator-led cultural journeys', 'Art-focused travel experiences', 'Behind-the-scenes access']
         },
         {
             type: 'Conservation Organizations',
-            // img: donMissionConservation,
+            img: donMissionConservation,
             Icon: Leaf,
             items: ['Wildlife safaris', 'Conservation projects', 'Research-focused travel']
         },
         {
             type: 'Healthcare Foundations',
-            // img: donMissionHealthcare,
+            img: donMissionHealthcare,
             Icon: Heart,
             items: ['Wellness-focused travel', 'Leadership engagement programs', 'Educational experiences']
         }
@@ -215,23 +216,23 @@ function WhyTravelDonorEngagement() {
                             <p className="don-power-lead">Fundraising has always been about relationships.</p>
                             <p className="don-power-body">While annual campaigns, galas, donor events, and stewardship programs remain important, organizations are increasingly discovering that travel creates deeper and more meaningful donor connections than almost any other engagement strategy.</p>
                             <p className="don-power-body">Universities, museums, healthcare foundations, conservation organizations, performing arts institutions, and nonprofits are using travel programs to strengthen relationships, increase donor loyalty, cultivate major gifts, and build long-term engagement.</p>
+                        </div>
+
+                        <div className="don-power-image-col">
+                            <div className="don-image-frame">
+                                <img src={donGroupTravel} alt="Donor group travel experience" className="don-frame-img" />
+                                <div className="don-frame-overlay"></div>
+                                <div className="don-image-badge">
+                                    <Users size={13} />
+                                    <span>Shared Experiences Build Lasting Connections</span>
+                                </div>
+                            </div>
                             <div className="don-power-statement-box">
                                 <div className="don-power-statement-accent"></div>
                                 <div className="don-power-statement-text">
                                     <p className="don-power-statement-primary">The reason is simple:</p>
                                     <p className="don-power-statement-bold">People remember experiences far longer than events.</p>
                                     <p className="don-power-statement-primary">Travel creates those experiences.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="don-power-image-col">
-                            <div className="don-image-frame">
-                                {/* <img src={donGroupTravel} alt="Donor group travel experience" className="don-frame-img" /> */}
-                                <div className="don-frame-overlay"></div>
-                                <div className="don-image-badge">
-                                    <Users size={13} />
-                                    <span>Shared Experiences Build Lasting Connections</span>
                                 </div>
                             </div>
                         </div>
@@ -247,8 +248,12 @@ function WhyTravelDonorEngagement() {
 
                         <div className="don-limits-image-col">
                             <div className="don-image-frame">
-                                {/* <img src={donTraditional} alt="Traditional donor fundraising event" className="don-frame-img" /> */}
+                                <img src={donTraditional} alt="Traditional donor fundraising event" className="don-frame-img" />
                                 <div className="don-frame-overlay don-overlay-soft"></div>
+                            </div>
+                            <div className="don-limits-pivot-box">
+                                <p className="don-limits-pivot-text">Travel changes that dynamic completely.</p>
+                                <p className="don-limits-pivot-sub">A seven-day journey can provide dozens of meaningful interactions that would otherwise take years to develop.</p>
                             </div>
                         </div>
 
@@ -276,11 +281,6 @@ function WhyTravelDonorEngagement() {
                             <div className="don-limits-insight-box">
                                 <p>While effective, these interactions are often brief.</p>
                                 <p>Donors may spend only a few hours with organizational leaders during an entire year.</p>
-                            </div>
-
-                            <div className="don-limits-pivot-box">
-                                <p className="don-limits-pivot-text">Travel changes that dynamic completely.</p>
-                                <p className="don-limits-pivot-sub">A seven-day journey can provide dozens of meaningful interactions that would otherwise take years to develop.</p>
                             </div>
                         </div>
 
@@ -313,17 +313,16 @@ function WhyTravelDonorEngagement() {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="don-trust-conclusion-box">
-                                <p>Travel naturally creates opportunities for all four.</p>
-                                <p>When donors travel alongside organizational leaders, faculty members, curators, physicians, or subject-matter experts, conversations become more personal and relationships become stronger.</p>
-                            </div>
                         </div>
 
                         <div className="don-trust-image-col">
                             <div className="don-image-frame">
-                                {/* <img src={donRelationships} alt="Donors building relationships through travel" className="don-frame-img" /> */}
+                                <img src={donRelationships} alt="Donors building relationships through travel" className="don-frame-img" />
                                 <div className="don-frame-overlay"></div>
+                            </div>
+                            <div className="don-trust-conclusion-box">
+                                <p>Travel naturally creates opportunities for all four.</p>
+                                <p>When donors travel alongside organizational leaders, faculty members, curators, physicians, or subject-matter experts, conversations become more personal and relationships become stronger.</p>
                             </div>
                         </div>
 
@@ -351,7 +350,7 @@ function WhyTravelDonorEngagement() {
                             { Icon: Heart, label: 'Connection', desc: 'Human relationships built through authentic shared experience.' }
                         ].map(({ Icon, label, desc }, idx) => (
                             <div key={idx} className="don-emotion-card">
-                                <div className="don-emotion-card-icon"><Icon size={26} /></div>
+                                <div className="don-emotion-card-icon"><Icon size={22} /></div>
                                 <h3 className="don-emotion-card-title">{label}</h3>
                                 <p className="don-emotion-card-desc">{desc}</p>
                             </div>
@@ -390,17 +389,16 @@ function WhyTravelDonorEngagement() {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="don-community-conclusion-box">
-                                <p>Travel brings these individuals together in ways that traditional fundraising events rarely achieve.</p>
-                                <p>Many lifelong friendships begin during donor travel programs.</p>
-                            </div>
                         </div>
 
                         <div className="don-community-image-col">
                             <div className="don-image-frame">
-                                {/* <img src={donCommunity} alt="Donor travel community building" className="don-frame-img" /> */}
+                                <img src={donCommunity} alt="Donor travel community building" className="don-frame-img" />
                                 <div className="don-frame-overlay"></div>
+                            </div>
+                            <div className="don-community-conclusion-box">
+                                <p>Travel brings these individuals together in ways that traditional fundraising events rarely achieve.</p>
+                                <p>Many lifelong friendships begin during donor travel programs.</p>
                             </div>
                         </div>
 
@@ -458,17 +456,14 @@ function WhyTravelDonorEngagement() {
                             <div key={idx} className="don-mission-card">
                                 <div className="don-mission-card-img-wrap">
                                     <img src={img} alt={`${type} donor travel`} className="don-mission-card-img" />
-                                    <div className="don-mission-card-overlay"></div>
-                                    <div className="don-mission-card-header">
-                                        <div className="don-mission-card-icon-wrap"><Icon size={20} /></div>
-                                        <h3 className="don-mission-card-type">{type}</h3>
-                                    </div>
                                 </div>
+                                <div className="don-mission-card-icon-box"><Icon size={22} /></div>
+                                <h3 className="don-mission-card-title">{type}</h3>
                                 <div className="don-mission-card-body">
                                     <ul className="don-mission-card-list">
                                         {items.map((item, iIdx) => (
                                             <li key={iIdx} className="don-mission-card-item">
-                                                <ChevronRight size={14} className="don-mission-chevron" />
+                                                <ChevronRight size={13} className="don-mission-chevron" />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
@@ -486,7 +481,7 @@ function WhyTravelDonorEngagement() {
 
             {/* ── MAJOR GIFT CONVERSATIONS ── */}
             <section className="don-gift-section">
-                {/* <div className="don-gift-bg" style={{ backgroundImage: `url(${donGiftConversation})` }}></div> */}
+                <div className="don-gift-bg" style={{ backgroundImage: `url(${donGiftConversation})` }}></div>
                 <div className="don-gift-overlay"></div>
                 <div className="don-gift-content">
                     <span className="don-gift-eyebrow">PHILANTHROPIC OPPORTUNITY</span>
@@ -535,20 +530,18 @@ function WhyTravelDonorEngagement() {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="don-retention-conclusion">
-                                <p>Donors who feel connected are more likely to remain engaged over time.</p>
-                            </div>
                         </div>
 
                         <div className="don-retention-image-col">
-                            <div className="don-image-frame">
-                                {/* <img src={donStewardship} alt="Donor retention through travel" className="don-frame-img" /> */}
-                                <div className="don-frame-overlay"></div>
-                                <div className="don-retention-stat-badge">
-                                    <TrendingUp size={16} />
-                                    <span>Higher Retention Through Travel</span>
-                                </div>
+                            <div className="don-image-frame don-image-frame-full">
+                                <img src={donStewardship} alt="Donor retention through travel" className="don-frame-img" />
+                            </div>
+                            <div className="don-retention-stat-badge">
+                                <TrendingUp size={16} />
+                                <span>Higher Retention Through Travel</span>
+                            </div>
+                            <div className="don-retention-conclusion">
+                                <p>Donors who feel connected are more likely to remain engaged over time.</p>
                             </div>
                         </div>
 
@@ -613,16 +606,14 @@ function WhyTravelDonorEngagement() {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="don-generations-conclusion">
-                                <p>This diversity creates opportunities for broader engagement across donor communities.</p>
-                            </div>
                         </div>
 
                         <div className="don-generations-image-col">
                             <div className="don-image-frame">
-                                {/* <img src={donGenerations} alt="Multi-generational donor travel" className="don-frame-img" /> */}
-                                <div className="don-frame-overlay"></div>
+                                <img src={donGenerations} alt="Multi-generational donor travel" className="don-frame-img" />
+                            </div>
+                            <div className="don-generations-conclusion">
+                                <p>This diversity creates opportunities for broader engagement across donor communities.</p>
                             </div>
                         </div>
 
@@ -697,48 +688,43 @@ function WhyTravelDonorEngagement() {
                 </div>
             </section>
 
-            {/* ── WHY TRIPS & SHIPS (reusing medi-expert-editorial-section) ── */}
-            <section className="medi-expert-editorial-section">
-                <div className="medi-expert-editorial-container">
-                    <div className="medi-expert-editorial-card">
+            {/* ── WHY TRIPS & SHIPS ── */}
+            <section className="don-editorial-section">
+                <div className="don-editorial-container">
+                    <div className="don-editorial-card">
 
-                        <div className="medi-editorial-portrait-block">
-                            <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Travel Expert" /> */}
-                                <div className="medi-editorial-gradient-layer"></div>
+                        <div className="don-editorial-image-side">
+                            <div className="don-editorial-image-frame">
+                                <img src={Profile_Picture_AH} alt="Angela Hughes – Luxury Travel Expert" />
                             </div>
-                            <div className="medi-editorial-floating-stat">
-                                <div className="medi-stat-tile">
-                                    <span className="medi-stat-number">40+</span>
-                                    <span className="medi-stat-label">Years Experience</span>
+                            <div className="don-editorial-stats">
+                                <div className="don-editorial-stat-item">
+                                    <span className="don-editorial-stat-number">40+</span>
+                                    <span className="don-editorial-stat-label">Years Experience</span>
                                 </div>
-                                <div className="medi-stat-divider"></div>
-                                <div className="medi-stat-tile">
-                                    <span className="medi-stat-number">121+</span>
-                                    <span className="medi-stat-label">Countries Visited</span>
+                                <div className="don-editorial-stat-divider"></div>
+                                <div className="don-editorial-stat-item">
+                                    <span className="don-editorial-stat-number">121+</span>
+                                    <span className="don-editorial-stat-label">Countries Visited</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="medi-editorial-content-block">
-                            <div className="medi-editorial-header">
-                                <div className="medi-editorial-eyebrow-container">
-                                    <Award size={18} className="medi-editorial-icon-badge" />
-                                    <span className="medi-editorial-eyebrow">Why Trips &amp; Ships Luxury Travel</span>
-                                </div>
-                                <h2 className="medi-editorial-title">
-                                    Your Partner in Donor Travel Programs
-                                </h2>
-                                <div className="medi-editorial-accent-bar"></div>
+                        <div className="don-editorial-content-side">
+                            <div className="don-editorial-badge">
+                                <Award size={16} />
+                                <span>Why Trips &amp; Ships Luxury Travel</span>
                             </div>
+                            <h2 className="don-editorial-title">Your Partner in Donor Travel Programs</h2>
+                            <div className="don-editorial-bar"></div>
 
-                            <p className="medi-editorial-lead-para">
+                            <p className="don-editorial-text">
                                 Trips &amp; Ships Luxury Travel works with universities, museums, nonprofits, healthcare organizations, performing arts institutions, and foundations to create meaningful donor travel experiences.
                             </p>
 
-                            <div className="medi-priorities-box">
-                                <p className="medi-priorities-intro">Our services include:</p>
-                                <div className="medi-priorities-grid-pills">
+                            <div className="don-editorial-services">
+                                <span className="don-editorial-services-label">Our services include:</span>
+                                <div className="don-editorial-services-list">
                                     {[
                                         'Donor travel strategy',
                                         'Alumni travel programs',
@@ -748,21 +734,21 @@ function WhyTravelDonorEngagement() {
                                         'River and ocean cruise programs',
                                         'Custom itinerary development'
                                     ].map((item, idx) => (
-                                        <div key={idx} className="medi-priority-pill-item">
-                                            <CheckCircle size={15} className="medi-priority-check" />
+                                        <div key={idx} className="don-editorial-pill">
+                                            <CheckCircle size={14} />
                                             <span>{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <p className="medi-editorial-body-para">
+                            <p className="don-editorial-text">
                                 We help organizations design experiences that strengthen relationships and support long-term engagement goals.
                             </p>
 
-                            <div className="medi-expertise-section-box">
-                                <span className="medi-expertise-intro-label">Angela Hughes' expertise spans:</span>
-                                <div className="medi-expertise-horizontal-strip">
+                            <div className="don-editorial-expertise">
+                                <span className="don-editorial-expertise-label">Angela Hughes' expertise spans:</span>
+                                <div className="don-editorial-expertise-strip">
                                     {[
                                         { title: 'Donor travel strategy', icon: Compass },
                                         { title: 'Alumni travel programs', icon: GraduationCap },
@@ -772,11 +758,9 @@ function WhyTravelDonorEngagement() {
                                     ].map((item, idx) => {
                                         const IconComponent = item.icon
                                         return (
-                                            <div key={idx} className="medi-expertise-pills-row">
-                                                <div className="medi-expertise-pill-icon-box">
-                                                    <IconComponent size={14} />
-                                                </div>
-                                                <span className="medi-expertise-pill-text">{item.title}</span>
+                                            <div key={idx} className="don-editorial-expertise-pill">
+                                                <IconComponent size={13} />
+                                                <span>{item.title}</span>
                                             </div>
                                         )
                                     })}
@@ -798,7 +782,7 @@ function WhyTravelDonorEngagement() {
                         <span className="don-final-eyebrow-text">FINAL THOUGHTS</span>
                     </div>
 
-                    <h2 className="don-final-heading">Travel Is Far More Than a Benefit for Donors</h2>
+                    <h2 className="don-final-heading">Travel Is Far More Than a <br /> Benefit for Donors</h2>
                     <div className="don-final-separator"></div>
 
                     <div className="don-final-card">
@@ -884,10 +868,10 @@ function WhyTravelDonorEngagement() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to='/contact' className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Explore Donor Travel Programs

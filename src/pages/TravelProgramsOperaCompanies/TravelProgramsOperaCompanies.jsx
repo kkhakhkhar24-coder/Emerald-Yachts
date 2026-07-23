@@ -10,13 +10,20 @@ import { Link } from 'react-router-dom'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 
 import Profile_AH from '../../assets/Media (2).jpg'
-
-// Replace these with actual image imports when available
-// import heroOperaImg from '../../assets/OperaTravel/hero-opera.jpg'
+import operaHouseInterior from '../../assets/TravelProgramsOperaCompanies/historic-grand-opera-house-interior.png'
+import luxuryOperaEvening from '../../assets/TravelProgramsOperaCompanies/luxury-opera-house-evening-experience.png'
+import riverCruiseSkyline from '../../assets/TravelProgramsOperaCompanies/private-river-cruise-historic-city-skyline.png'
+import eveningWalkingTour from '../../assets/TravelProgramsOperaCompanies/evening-cultural-performance-city-walking-tour.png'
+import walkingTour from '../../assets/TravelProgramsOperaCompanies/private-historic-city-cultural-walking-tour.png'
+import expertConsultation from '../../assets/TravelProgramsOperaCompanies/private-classical-music-expert-consultation.png'
+import backstageTour from '../../assets/TravelProgramsOperaCompanies/exclusive-opera-house-backstage-tour.png'
+import riverCruiseSuite from '../../assets/TravelProgramsOperaCompanies/luxury-river-cruise-suite-writing-desk.png'
+import privateTransfer from '../../assets/TravelProgramsOperaCompanies/private-opera-house-arrival-luxury-transfer.png'
+import vipOperaEntrance from '../../assets/TravelProgramsOperaCompanies/vip-opera-house-private-entrance-experience.png'
 
 function TravelProgramsOperaCompanies() {
     const [mediCurrentHero, setMediCurrentHero] = useState(0)
-    const mediHeroImages = []
+    const mediHeroImages = [operaHouseInterior, luxuryOperaEvening, vipOperaEntrance]
 
     useEffect(() => {
         if (mediHeroImages.length > 0) {
@@ -257,7 +264,7 @@ function TravelProgramsOperaCompanies() {
                         display: 'grid',
                         gridTemplateColumns: window.innerWidth <= 1024 ? '1fr' : '1.2fr 0.8fr',
                         gap: '60px',
-                        alignItems: 'start'
+                        alignItems: 'stretch'
                     }}>
 
                         <div className="medi-premium-editorial-block" style={{
@@ -339,25 +346,31 @@ function TravelProgramsOperaCompanies() {
                         {/* Signature Expert Block */}
                         <div className="medi-premium-signature-panel" style={{
                             marginTop: window.innerWidth <= 1024 ? '40px' : '0',
-                            borderLeftColor: '#274472'
+                            position: 'relative',
+                            overflow: 'hidden',
+                            padding: 0,
+                            background: 'linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%)',
+                            border: '1px solid rgba(255,255,255,0.1)',
+                            height: '100%',
+                            display: 'flex'
                         }}>
-                            <div className="medi-premium-signature-glow"></div>
-                            <div className="medi-premium-signature-content">
+                            <div className="medi-premium-signature-glow" style={{ position: 'relative', zIndex: 2 }}></div>
+                            <div className="medi-premium-signature-content" style={{ position: 'relative', zIndex: 2, padding: '44px 36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                 <div className="medi-expert-profile-row">
-                                    <div className="medi-expert-avatar-frame" style={{ background: '#274472' }}>
-                                        <Star size={24} className="medi-star-accent" />
+                                    <div className="medi-expert-avatar-frame" style={{ background: 'rgba(59,130,246,0.2)', border: '1px solid rgba(59,130,246,0.3)' }}>
+                                        <Star size={24} style={{ color: '#60a5fa' }} />
                                     </div>
                                     <div>
-                                        <span className="medi-expert-card-subtitle">CULTURAL TRAVEL EXPERT</span>
-                                        <h3 className="medi-expert-card-title" style={{ color: '#274472' }}>Angela Hughes</h3>
+                                        <span className="medi-expert-card-subtitle" style={{ color: '#60a5fa' }}>CULTURAL TRAVEL EXPERT</span>
+                                        <h3 className="medi-expert-card-title" style={{ color: '#ffffff' }}>Angela Hughes</h3>
                                     </div>
                                 </div>
-                                <p className="medi-premium-expert-desc" style={{ color: '#475569', lineHeight: '1.7' }}>
+                                <p className="medi-premium-expert-desc" style={{ color: '#e2e8f0', lineHeight: '1.7', fontSize: '16px', marginBottom: '28px' }}>
                                     At Trips & Ships Luxury Travel, we partner with opera companies to design customized travel experiences that align with organizational goals while delivering extraordinary cultural enrichment for patrons and donors.
                                 </p>
-                                <div className="medi-premium-expert-quote-box">
-                                    <span className="medi-quote-mark" style={{ color: '#274472' }}>"</span>
-                                    <p className="medi-premium-expert-quote-text" style={{ color: '#274472' }}>
+                                <div className="medi-premium-expert-quote-box" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '24px' }}>
+                                    <span className="medi-quote-mark" style={{ color: '#60a5fa', opacity: '0.15' }}>"</span>
+                                    <p className="medi-premium-expert-quote-text" style={{ color: '#cbd5e1', fontSize: '15px', lineHeight: '1.75', margin: 0, fontStyle: 'italic' }}>
                                         With more than 40 years in the travel industry and travel experience across 121+ countries, Angela Hughes helps arts organizations plan cultural travel programs that inspire deeper connections.
                                     </p>
                                 </div>
@@ -368,64 +381,75 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ WHY TRAVEL PROGRAMS MATTER ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 12px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
+            <section style={{ padding: window.innerWidth <= 360 ? '50px 12px' : '80px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
-                            Why It Matters
-                        </span>
-                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
-                            Why Travel Programs Matter for Opera Companies
-                        </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6', fontWeight: '500' }}>
-                            Patrons increasingly seek experiences that connect them more deeply to the arts they love. Unlike traditional fundraising events, travel allows supporters to spend extended time together while exploring destinations connected to music, history, and culture.
-                        </p>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: window.innerWidth <= 768 ? '30px' : '50px', marginBottom: '50px', flexWrap: window.innerWidth <= 768 ? 'wrap' : 'nowrap' }}>
+                        <div style={{ flex: window.innerWidth <= 768 ? '1 1 100%' : '0 0 48%' }}>
+                            <img src={luxuryOperaEvening} alt="Luxury opera evening experience" style={{ width: '100%', height: '320px', objectFit: 'cover', objectPosition: 'center', borderRadius: '18px', display: 'block' }} />
+                        </div>
+                        <div style={{ flex: '1', textAlign: window.innerWidth <= 768 ? 'center' : 'left' }}>
+                            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '8px' }}>
+                                Why It Matters
+                            </span>
+                            <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: '#274472', fontWeight: '700', margin: '0 0 12px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                                Why Travel Programs Matter for Opera Companies
+                            </h2>
+                            <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', borderRadius: '10px', margin: window.innerWidth <= 768 ? '0 auto 16px' : '0 0 16px' }}></div>
+                            <p style={{ fontSize: '16px', color: '#475569', maxWidth: '520px', margin: '0', lineHeight: '1.7' }}>
+                                Patrons increasingly seek experiences that connect them more deeply to the arts they love. Unlike traditional fundraising events, travel allows supporters to spend extended time together while exploring destinations connected to music, history, and culture.
+                            </p>
+                        </div>
                     </div>
 
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', marginBottom: '60px' }}>
-                        <div style={{ flex: '1 1 280px' }}>
-                            <p style={{ fontSize: '16px', color: '#64748b', fontWeight: '700', textTransform: 'uppercase', marginBottom: '30px', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                <Star size={20} style={{ color: '#3b82f6' }} /> Travel Creates Opportunities For
-                            </p>
-                            <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 360 ? '1fr' : 'repeat(auto-fit, minmax(220px, 1fr))', gap: window.innerWidth <= 360 ? '12px' : '20px' }}>
-                                {[
-                                    { text: "Cultural Immersion", icon: <Globe size={18} /> },
-                                    { text: "Donor Engagement", icon: <Heart size={18} /> },
-                                    { text: "Patron Recognition", icon: <Award size={18} /> },
-                                    { text: "Community Building", icon: <Users size={18} /> },
-                                    { text: "Lifelong Learning", icon: <GraduationCap size={18} /> },
-                                    { text: "Exclusive Access", icon: <Gem size={18} /> },
-                                    { text: "Meaningful Conversations", icon: <Mic size={18} /> },
-                                    { text: "Organizational Loyalty", icon: <Crown size={18} /> }
-                                ].map((pill, i) => (
-                                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
-                                        <div style={{ color: '#3b82f6', display: 'flex' }}>{pill.icon}</div>
-                                        <span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{pill.text}</span>
-                                    </div>
-                                ))}
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'stretch' }}>
+                        <div style={{ flex: '1 1 280px', display: 'flex', flexDirection: 'column' }}>
+                            <div style={{ flex: 1, backgroundColor: '#ffffff', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 16px rgba(15,28,46,0.06)', padding: '24px' }}>
+                                <p style={{ fontSize: '13px', color: '#64748b', fontWeight: '700', textTransform: 'uppercase', marginBottom: '16px', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <Star size={16} style={{ color: '#3b82f6' }} /> Travel Creates Opportunities For
+                                </p>
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px' }}>
+                                    {[
+                                        { text: "Cultural Immersion", icon: <Globe size={16} /> },
+                                        { text: "Donor Engagement", icon: <Heart size={16} /> },
+                                        { text: "Patron Recognition", icon: <Award size={16} /> },
+                                        { text: "Community Building", icon: <Users size={16} /> },
+                                        { text: "Lifelong Learning", icon: <GraduationCap size={16} /> },
+                                        { text: "Exclusive Access", icon: <Gem size={16} /> },
+                                        { text: "Meaningful Conversations", icon: <Mic size={16} /> },
+                                        { text: "Organizational Loyalty", icon: <Crown size={16} /> }
+                                    ].map((pill, i) => (
+                                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 14px', backgroundColor: '#f8fafc', borderRadius: '10px', border: '1px solid #e2e8f0', transition: 'all 0.2s ease' }}
+                                            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#eff6ff'; e.currentTarget.style.borderColor = '#93c5fd'; }}
+                                            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#f8fafc'; e.currentTarget.style.borderColor = '#e2e8f0'; }}
+                                        >
+                                            <div style={{ color: '#3b82f6', display: 'flex' }}>{pill.icon}</div>
+                                            <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{pill.text}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
-                        <div style={{ flex: '1 1 280px' }}>
-                            <div style={{ backgroundColor: '#0f1c2e', padding: window.innerWidth <= 360 ? '24px 16px' : '40px', borderRadius: window.innerWidth <= 360 ? '20px' : '30px', color: '#ffffff', boxShadow: '0 20px 40px rgba(15, 28, 46, 0.15)' }}>
-                                <h3 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '20px', color: '#3b82f6' }}>
-                                    Shared Experiences Strengthen Loyalty
-                                </h3>
-                                <p style={{ fontSize: '16px', lineHeight: '1.7', color: '#cbd5e1', marginBottom: '25px' }}>
-                                    These shared experiences often strengthen loyalty and deepen organizational relationships. Travel provides a unique environment where patrons interact with opera leadership, board members, guest speakers, and fellow supporters.
-                                </p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                    {["Opera leadership interactions", "Board member engagement", "Guest speaker experiences", "Fellow supporter connections"].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', fontSize: '16px', fontWeight: '500' }}>
-                                            <CheckCircle size={18} style={{ color: '#3b82f6' }} /> {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <div style={{ marginTop: '25px', padding: '15px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '12px', borderLeft: '3px solid #3b82f6' }}>
-                                    <p style={{ fontSize: '14px', fontStyle: 'italic', margin: 0, color: '#e2e8f0' }}>
-                                        "The informal nature of travel often leads to deeper and more meaningful conversations."
+                        <div style={{ flex: '1 1 300px', display: 'flex' }}>
+                                <div style={{ flex: 1, borderRadius: '16px', overflow: 'hidden', backgroundColor: '#ffffff', border: '1px solid #e2e8f0', boxShadow: '0 4px 16px rgba(15,28,46,0.06)' }}>
+                                <img src={operaHouseInterior} alt="Opera house interior" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'bottom', display: 'block' }} />
+                                <div style={{ padding: '24px' }}>
+                                    <h3 style={{ fontSize: '18px', fontWeight: '700', margin: '0 0 12px', color: '#0f1c2e' }}>Shared Experiences Strengthen Loyalty</h3>
+                                    <p style={{ fontSize: '14px', lineHeight: '1.7', color: '#475569', margin: '0 0 16px' }}>
+                                        These shared experiences often strengthen loyalty and deepen organizational relationships. Travel provides a unique environment where patrons interact with opera leadership, board members, guest speakers, and fellow supporters.
                                     </p>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px' }}>
+                                        {["Opera leadership interactions", "Board member engagement", "Guest speaker experiences", "Fellow supporter connections"].map((item, i) => (
+                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px', fontSize: '14px', fontWeight: '500', color: '#334155' }}>
+                                                <CheckCircle size={14} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <div style={{ padding: '14px', backgroundColor: '#f1f5f9', borderRadius: '10px', borderLeft: '3px solid #3b82f6' }}>
+                                        <p style={{ fontSize: '13px', fontStyle: 'italic', margin: 0, color: '#475569' }}>
+                                            "The informal nature of travel often leads to deeper and more meaningful conversations."
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -435,8 +459,8 @@ function TravelProgramsOperaCompanies() {
 
             {/* ═══════════════ BENEFITS OF OPERA TRAVEL PROGRAMS ═══════════════ */}
             <section style={{
-                padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)',
-                backgroundColor: '#0a1120',
+                padding: 'clamp(50px, 8vw, 90px) clamp(16px, 4vw, 32px)',
+                backgroundColor: '#0f1c2e',
                 fontFamily: 'sans-serif',
                 overflow: 'hidden'
             }}>
@@ -444,50 +468,50 @@ function TravelProgramsOperaCompanies() {
                     .opera-benefit-grid {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        gap: 24px;
+                        gap: 20px;
                         max-width: 1100px;
                         margin: 0 auto;
                     }
                     .opera-benefit-card {
-                        background: rgba(255,255,255,0.05);
-                        border: 1px solid rgba(255,255,255,0.08);
-                        border-radius: 24px;
-                        padding: 36px 32px;
-                        transition: all 0.4s ease;
+                        background: rgba(255,255,255,0.04);
+                        border: 1px solid rgba(255,255,255,0.06);
+                        border-radius: 16px;
+                        padding: 28px 24px;
+                        transition: all 0.35s ease;
                     }
                     .opera-benefit-card:hover {
-                        background: rgba(59, 130, 246, 0.08);
-                        border-color: rgba(59, 130, 246, 0.25);
-                        transform: translateY(-4px);
+                        background: rgba(59, 130, 246, 0.06);
+                        border-color: rgba(59, 130, 246, 0.2);
+                        transform: translateY(-2px);
                     }
                     .opera-benefit-icon {
-                        width: 52px;
-                        height: 52px;
-                        background: rgba(59,130,246,0.12);
-                        border-radius: 14px;
+                        width: 40px;
+                        height: 40px;
+                        background: rgba(59,130,246,0.1);
+                        border-radius: 10px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        color: #3b82f6;
-                        margin-bottom: 20px;
+                        color: #60a5fa;
+                        margin-bottom: 14px;
                         transition: all 0.3s ease;
                     }
                     .opera-benefit-card:hover .opera-benefit-icon {
                         background: #3b82f6;
                         color: #ffffff;
                     }
-                    @media (max-width: 768px) { .opera-benefit-grid { grid-template-columns: 1fr; } .opera-benefit-card { padding: 28px 20px; } }
-                    @media (max-width: 380px) { .opera-benefit-card { padding: 22px 16px; border-radius: 18px; } }
+                    @media (max-width: 768px) { .opera-benefit-grid { grid-template-columns: 1fr; } .opera-benefit-card { padding: 22px 18px; } }
+                    @media (max-width: 380px) { .opera-benefit-card { padding: 18px 14px; border-radius: 12px; } }
                 `}</style>
 
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(50px, 8vw, 80px)' }}>
-                    <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: 'clamp(11px, 2vw, 13px)', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '12px' }}>
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 50px)' }}>
+                    <span style={{ color: '#60a5fa', fontWeight: '700', fontSize: 'clamp(11px, 1.8vw, 12px)', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '10px' }}>
                         Program Advantages
                     </span>
-                    <h2 style={{ fontSize: 'clamp(30px, 5vw, 48px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+                    <h2 style={{ fontSize: 'clamp(26px, 4vw, 38px)', color: '#ffffff', fontWeight: '700', marginBottom: '14px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                         Benefits of Opera Travel Programs
                     </h2>
-                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    <div style={{ width: '50px', height: '3px', backgroundColor: '#60a5fa', margin: '0 auto', borderRadius: '10px' }}></div>
                 </div>
 
                 <div className="opera-benefit-grid">
@@ -495,36 +519,36 @@ function TravelProgramsOperaCompanies() {
                         {
                             title: "Strengthen Donor Relationships",
                             desc: "Travel offers a unique environment for relationship building. The informal nature of travel often leads to deeper and more meaningful conversations with opera leadership, board members, and fellow supporters.",
-                            icon: <Heart size={22} />,
+                            icon: <Heart size={18} />,
                             items: ["Opera leadership", "Board members", "Guest speakers", "Fellow supporters"]
                         },
                         {
                             title: "Increase Patron Engagement",
                             desc: "Travel experiences keep supporters actively connected to the organization throughout the year. The engagement extends far beyond the trip itself.",
-                            icon: <Users size={22} />,
+                            icon: <Users size={18} />,
                             items: ["Repeat travelers", "Event attendees", "Volunteers", "Ambassadors & Donors"]
                         },
                         {
                             title: "Create Exclusive Experiences",
                             desc: "Opera travel programs can include private performances, backstage tours, and artist meet-and-greets that provide exceptional value for participants.",
-                            icon: <Sparkles size={22} />,
+                            icon: <Sparkles size={18} />,
                             items: ["Private performances", "Backstage tours", "Artist meet-and-greets", "VIP receptions & Lectures"]
                         },
                         {
                             title: "Build Community",
                             desc: "Shared cultural experiences foster stronger connections among travelers. Guests often develop friendships that strengthen their relationship with the opera company as well.",
-                            icon: <Globe size={22} />,
+                            icon: <Globe size={18} />,
                             items: ["Deeper friendships", "Shared cultural memory", "Extended community bonds", "Year-round engagement"]
                         }
                     ].map((benefit, idx) => (
                         <div key={idx} className="opera-benefit-card">
                             <div className="opera-benefit-icon">{benefit.icon}</div>
-                            <h3 style={{ fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: '700', color: '#ffffff', marginBottom: '12px' }}>{benefit.title}</h3>
-                            <p style={{ fontSize: '15px', color: '#94a3b8', lineHeight: '1.7', marginBottom: '20px' }}>{benefit.desc}</p>
+                            <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#ffffff', marginBottom: '8px' }}>{benefit.title}</h3>
+                            <p style={{ fontSize: '14px', color: '#94a3b8', lineHeight: '1.7', marginBottom: '14px' }}>{benefit.desc}</p>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                 {benefit.items.map((item, i) => (
-                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '14px', color: '#cbd5e1', fontWeight: '500' }}>
-                                        <CheckCircle size={15} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
+                                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px', fontSize: '13px', color: '#cbd5e1', fontWeight: '500' }}>
+                                        <CheckCircle size={13} style={{ color: '#60a5fa', flexShrink: 0 }} /> {item}
                                     </li>
                                 ))}
                             </ul>
@@ -559,7 +583,12 @@ function TravelProgramsOperaCompanies() {
                         </div>
 
                         <div className="medi-itinerary-showcase-card">
-                            <div className="medi-itinerary-showcase-image-wrapper" style={{ backgroundColor: '#0f1c2e' }}>
+                            <div className="medi-itinerary-showcase-image-wrapper" style={{
+                                backgroundColor: '#0f1c2e',
+                                position: 'relative',
+                                overflow: 'hidden'
+                            }}>
+                                <img src={[luxuryOperaEvening, riverCruiseSkyline, eveningWalkingTour, walkingTour][mediSelectedProgram]} alt="" style={{ width: '100%', display: 'block' }} />
                                 <div className="medi-itinerary-showcase-img-overlay"></div>
                                 <span className="medi-itinerary-showcase-badge">EXPERIENCE SPOTLIGHT</span>
                             </div>
@@ -623,8 +652,8 @@ function TravelProgramsOperaCompanies() {
 
             {/* ═══════════════ DESTINATIONS SECTION ═══════════════ */}
             <section style={{
-                padding: 'clamp(60px, 10vw, 120px) clamp(16px, 5vw, 40px)',
-                backgroundColor: '#0a1120',
+                padding: 'clamp(50px, 8vw, 90px) clamp(16px, 4vw, 32px)',
+                backgroundColor: '#0f1c2e',
                 fontFamily: 'sans-serif',
                 overflow: 'hidden'
             }}>
@@ -632,64 +661,60 @@ function TravelProgramsOperaCompanies() {
                     .opera-dest-grid {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
-                        gap: 24px;
+                        gap: 20px;
                         max-width: 1240px;
                         margin: 0 auto;
                     }
                     .opera-dest-item {
                         position: relative;
-                        border-radius: 24px;
+                        border-radius: 16px;
                         overflow: hidden;
                         background-color: #1c2f4a;
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                        min-height: 320px;
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        transition: all 0.4s ease;
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-end;
                     }
-                    .opera-dest-item:hover { transform: translateY(-6px); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+                    .opera-dest-item:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+                    .opera-dest-item img {
+                        width: 100%;
+                        display: block;
+                        height: 180px;
+                        object-fit: cover;
+                    }
                     .opera-dest-overlay {
-                        position: relative;
-                        z-index: 2;
-                        padding: clamp(24px, 5vw, 40px) clamp(20px, 4vw, 32px);
+                        padding: 20px 20px 24px;
                         color: #ffffff;
                     }
-                    .opera-dest-bg {
-                        position: absolute;
-                        inset: 0;
-                        background: linear-gradient(135deg, #0f1c2e 0%, #1a365d 60%, #274472 100%);
-                        z-index: 1;
-                    }
-                    .opera-dest-tag { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #60a5fa; margin-bottom: 10px; display: block; }
-                    .opera-dest-title { font-size: clamp(20px, 3vw, 24px); font-weight: 700; margin: 0 0 12px 0; line-height: 1.2; color: #ffffff; }
-                    .opera-dest-desc { font-size: clamp(14px, 2vw, 15px); color: rgba(255,255,255,0.8); line-height: 1.6; margin: 0; }
-                    .opera-dest-icon { width: 44px; height: 44px; background: rgba(59,130,246,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #3b82f6; margin-bottom: 16px; }
+                    .opera-dest-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #60a5fa; margin-bottom: 6px; display: block; text-align: left; }
+                    .opera-dest-title { font-size: 20px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.2; color: #ffffff; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: left; }
+                    .opera-dest-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5; margin: 0; text-align: left; }
+                    .opera-dest-icon { width: 36px; height: 36px; background: rgba(59,130,246,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #60a5fa; margin-bottom: 12px; }
                     @media (max-width: 1024px) { .opera-dest-grid { grid-template-columns: repeat(2, 1fr); } }
                     @media (max-width: 650px) { .opera-dest-grid { grid-template-columns: 1fr; gap: 16px; } }
                 `}</style>
 
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(50px, 8vw, 80px)' }}>
-                    <span style={{ color: '#3b82f6', fontWeight: '800', fontSize: 'clamp(11px, 2vw, 13px)', textTransform: 'uppercase', letterSpacing: '5px', display: 'block', marginBottom: '12px' }}>
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 50px)' }}>
+                    <span style={{ color: '#60a5fa', fontWeight: '700', fontSize: 'clamp(11px, 1.8vw, 12px)', textTransform: 'uppercase', letterSpacing: '4px', display: 'block', marginBottom: '10px' }}>
                         European Opera Capitals
                     </span>
-                    <h2 style={{ fontSize: 'clamp(30px, 5vw, 48px)', color: '#ffffff', fontWeight: '800', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+                    <h2 style={{ fontSize: 'clamp(26px, 4vw, 38px)', color: '#ffffff', fontWeight: '700', marginBottom: '14px', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                         Popular Destinations for Opera Travel
                     </h2>
-                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                    <div style={{ width: '50px', height: '3px', backgroundColor: '#60a5fa', margin: '0 auto', borderRadius: '10px' }}></div>
                 </div>
 
                 <div className="opera-dest-grid">
                     {[
-                        { tag: "Austria", title: "Vienna", desc: "Home to legendary opera traditions and world-famous music venues. A must-visit destination for any opera travel program.", icon: <Music size={20} /> },
-                        { tag: "Italy", title: "Milan", desc: "A must-visit destination for opera lovers. La Scala remains one of the world's most celebrated opera houses.", icon: <Crown size={20} /> },
-                        { tag: "France", title: "Paris", desc: "Combines cultural sophistication with exceptional performance opportunities, from the Opéra Garnier to intimate venues.", icon: <Star size={20} /> },
-                        { tag: "Czech Republic", title: "Prague", desc: "Known for its remarkable musical heritage and stunning historic architecture. A deeply atmospheric destination for arts travelers.", icon: <Building size={20} /> },
-                        { tag: "Germany", title: "Munich", desc: "Offers renowned opera productions and rich cultural experiences, including the Bavarian State Opera and world-class festivals.", icon: <Award size={20} /> },
-                        { tag: "Multiple Rivers", title: "River Cruises", desc: "Rhine, Danube, Seine, and Douro — luxury river cruises combine cultural enrichment with comfortable small-ship travel.", icon: <Ship size={20} /> }
+                        { tag: "Austria", title: "Vienna", desc: "Home to legendary opera traditions and world-famous music venues.", icon: <Music size={18} />, img: operaHouseInterior },
+                        { tag: "Italy", title: "Milan", desc: "A must-visit for opera lovers. La Scala is one of the world's most celebrated opera houses.", icon: <Crown size={18} />, img: luxuryOperaEvening },
+                        { tag: "France", title: "Paris", desc: "Combines cultural sophistication with exceptional performance opportunities.", icon: <Star size={18} />, img: vipOperaEntrance },
+                        { tag: "Czech Republic", title: "Prague", desc: "Known for its remarkable musical heritage and stunning historic architecture.", icon: <Building size={18} />, img: walkingTour },
+                        { tag: "Germany", title: "Munich", desc: "Offers renowned opera productions and rich cultural experiences.", icon: <Award size={18} />, img: backstageTour },
+                        { tag: "Multiple Rivers", title: "River Cruises", desc: "Rhine, Danube, Seine, and Douro — luxury river cruises with cultural enrichment.", icon: <Ship size={18} />, img: riverCruiseSkyline }
                     ].map((dest, idx) => (
                         <div key={idx} className="opera-dest-item">
-                            <div className="opera-dest-bg"></div>
+                            <img src={dest.img} alt={dest.title} />
                             <div className="opera-dest-overlay">
                                 <div className="opera-dest-icon">{dest.icon}</div>
                                 <span className="opera-dest-tag">{dest.tag}</span>
@@ -702,30 +727,30 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ EDUCATIONAL COMPONENTS ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
+            <section style={{ padding: window.innerWidth <= 360 ? '50px 10px' : '80px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
                             Educational Enrichment
                         </span>
-                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                        <h2 style={{ fontSize: 'clamp(26px, 4vw, 38px)', color: '#274472', fontWeight: '700', marginBottom: '14px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
                             Educational Components That Add Value
                         </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>
+                        <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
+                        <p style={{ fontSize: '17px', color: '#475569', maxWidth: '800px', margin: '24px auto 0', lineHeight: '1.6' }}>
                             The most successful opera travel programs often incorporate educational enrichment that deepens appreciation and understanding.
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(2, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-                            <div style={{ backgroundColor: '#0f1c2e', padding: '30px', textAlign: 'center' }}>
-                                <GraduationCap size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} />
-                                <h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Expert-Led Learning</h4>
-                                <p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Knowledge That Travels With You</p>
-                            </div>
-                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(2, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '24px' }}>
+                        <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                            <img src={expertConsultation} alt="Expert consultation" style={{ width: '100%', display: 'block', height: '200px', objectFit: 'cover' }} />
+                            <div style={{ padding: '24px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
+                                    <GraduationCap size={22} style={{ color: '#3b82f6' }} />
+                                    <h4 style={{ fontSize: '18px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Expert-Led Learning</h4>
+                                </div>
+                                <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.7', marginBottom: '16px' }}>
                                     Experts provide context and insight into destinations and performances, enhancing appreciation throughout the journey.
                                 </p>
                                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -736,22 +761,22 @@ function TravelProgramsOperaCompanies() {
                                         "Destination-based cultural learning",
                                         "Historical and musical influence exploration"
                                     ].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '12px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
-                                            <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0, marginTop: '2px' }} /> {item}
+                                        <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '8px', fontSize: '14px', color: '#334155', fontWeight: '500' }}>
+                                            <CheckCircle size={14} style={{ color: '#3b82f6', flexShrink: 0, marginTop: '2px' }} /> {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                         </div>
 
-                        <div style={{ backgroundColor: '#ffffff', borderRadius: window.innerWidth <= 360 ? '18px' : '30px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(15, 28, 46, 0.03)' }}>
-                            <div style={{ background: 'linear-gradient(135deg, #0f1c2e 0%, #1a365d 100%)', padding: '30px', textAlign: 'center' }}>
-                                <Sparkles size={32} style={{ color: '#3b82f6', marginBottom: '12px' }} />
-                                <h4 style={{ fontSize: '24px', fontWeight: '800', color: '#ffffff', margin: 0 }}>Exclusive Access</h4>
-                                <p style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', margin: '8px 0 0' }}>Experiences Beyond the Stage</p>
-                            </div>
-                            <div style={{ padding: window.innerWidth <= 360 ? '24px 16px' : '35px' }}>
-                                <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.7', marginBottom: '20px' }}>
+                        <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                            <img src={backstageTour} alt="Backstage tour" style={{ width: '100%', display: 'block', height: '200px', objectFit: 'cover' }} />
+                            <div style={{ padding: '24px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
+                                    <Sparkles size={22} style={{ color: '#3b82f6' }} />
+                                    <h4 style={{ fontSize: '18px', fontWeight: '700', color: '#0f1c2e', margin: 0 }}>Exclusive Access</h4>
+                                </div>
+                                <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.7', marginBottom: '16px' }}>
                                     These unique opportunities provide exceptional value for participants and create memories that outlast the journey.
                                 </p>
                                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -762,8 +787,8 @@ function TravelProgramsOperaCompanies() {
                                         "VIP receptions",
                                         "Exclusive pre-performance lectures"
                                     ].map((item, i) => (
-                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', fontSize: '15px', color: '#1e293b', fontWeight: '600' }}>
-                                            <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
+                                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', fontSize: '14px', color: '#334155', fontWeight: '500' }}>
+                                            <CheckCircle size={14} style={{ color: '#3b82f6', flexShrink: 0 }} /> {item}
                                         </li>
                                     ))}
                                 </ul>
@@ -774,8 +799,14 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ HOW TRAVEL PROGRAMS SUPPORT FUNDRAISING ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
-                <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px',
+                fontFamily: 'sans-serif',
+                position: 'relative',
+                overflow: 'hidden',
+                backgroundColor: '#0f1c2e'
+            }}>
+                <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
                             Advancement Strategy
@@ -807,39 +838,45 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ CUSTOM TRAVEL PROGRAMS ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px 100px',
+                fontFamily: 'sans-serif',
+                backgroundColor: '#ffffff'
+            }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
+                    <img src={vipOperaEntrance} alt="VIP opera entrance" style={{ width: '100%', height: '350px', objectFit: 'cover', objectPosition: 'bottom', borderRadius: '18px', display: 'block', marginBottom: '50px' }} />
+
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '8px' }}>
                             Tailored to Your Organization
                         </span>
-                        <h2 style={{ fontSize: 'clamp(30px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                        <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: '#274472', fontWeight: '700', margin: '0 0 12px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
                             Custom Travel Programs for Opera Companies
                         </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>
+                        <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '0 auto 16px', borderRadius: '10px' }}></div>
+                        <p style={{ fontSize: '16px', color: '#475569', maxWidth: '700px', margin: '0 auto', lineHeight: '1.7' }}>
                             Every opera organization has unique goals. Trips & Ships Luxury Travel develops programs tailored to your specific audience and objectives.
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(3, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 640 ? '1fr' : 'repeat(3, 1fr)', gap: window.innerWidth <= 360 ? '14px' : '24px' }}>
                         {[
-                            { title: "Patron Travel", desc: "Experiences designed to engage subscribers and supporters in meaningful cultural journeys.", icon: <Users size={24} /> },
-                            { title: "Donor Travel", desc: "Luxury journeys focused on stewardship and cultivation for your most valued supporters.", icon: <Heart size={24} /> },
-                            { title: "Board Member Travel", desc: "Programs that strengthen leadership engagement and deepen board member connection to the organization.", icon: <Crown size={24} /> },
-                            { title: "Educational Travel", desc: "Music-focused itineraries that emphasize learning, enrichment, and appreciation of operatic traditions.", icon: <GraduationCap size={24} /> },
-                            { title: "Festival Programs", desc: "Access to international opera festivals, classical music events, and world-class performance experiences.", icon: <Music size={24} /> },
-                            { title: "Special Interest Groups", desc: "Customized travel built around specific composers, performances, or destinations that inspire your community.", icon: <Sparkles size={24} /> }
+                            { title: "Patron Travel", desc: "Experiences designed to engage subscribers and supporters in meaningful cultural journeys.", icon: <Users size={20} /> },
+                            { title: "Donor Travel", desc: "Luxury journeys focused on stewardship and cultivation for your most valued supporters.", icon: <Heart size={20} /> },
+                            { title: "Board Member Travel", desc: "Programs that strengthen leadership engagement and deepen board member connection.", icon: <Crown size={20} /> },
+                            { title: "Educational Travel", desc: "Music-focused itineraries that emphasize learning, enrichment, and appreciation of operatic traditions.", icon: <GraduationCap size={20} /> },
+                            { title: "Festival Programs", desc: "Access to international opera festivals, classical music events, and world-class performance experiences.", icon: <Music size={20} /> },
+                            { title: "Special Interest Groups", desc: "Customized travel built around specific composers, performances, or destinations that inspire your community.", icon: <Sparkles size={20} /> }
                         ].map((item, i) => (
-                            <div key={i} style={{ backgroundColor: '#f8fafc', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '36px 30px', border: '1px solid #e2e8f0', boxShadow: '0 6px 20px rgba(15, 28, 46, 0.04)', textAlign: 'center', transition: 'all 0.3s ease' }}
-                                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 36px rgba(15,28,46,0.10)'; e.currentTarget.style.borderColor = '#3b82f6'; }}
-                                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(15,28,46,0.04)'; e.currentTarget.style.borderColor = '#e2e8f0'; }}
+                            <div key={i} style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '28px 24px', boxShadow: '0 4px 16px rgba(15,28,46,0.06)', border: '1px solid #f1f5f9', transition: 'all 0.25s ease', cursor: 'default', textAlign: 'left' }}
+                                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 36px rgba(15,28,46,0.10)'; }}
+                                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(15,28,46,0.06)'; }}
                             >
-                                <div style={{ width: '60px', height: '60px', borderRadius: '50%', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', color: '#3b82f6' }}>
+                                <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'linear-gradient(135deg, #274472, #3b82f6)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', color: '#ffffff', boxShadow: '0 4px 12px rgba(59,130,246,0.3)' }}>
                                     {item.icon}
                                 </div>
-                                <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#0f1c2e', marginBottom: '12px' }}>{item.title}</h3>
-                                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
+                                <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#0f1c2e', margin: '0 0 10px', textAlign: 'left' }}>{item.title}</h3>
+                                <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.65', margin: 0, textAlign: 'left' }}>{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -847,20 +884,24 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ WHY LUXURY TRAVEL WORKS ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px', backgroundColor: '#f1f5f9', fontFamily: 'sans-serif' }}>
-                <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-                    <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
+            <section style={{
+                padding: window.innerWidth <= 360 ? '50px 10px' : '60px 20px',
+                fontFamily: 'sans-serif',
+                backgroundColor: '#f1f5f9'
+            }}>
+                <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+                    <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '8px' }}>
                         A Natural Fit
                     </span>
-                    <h2 style={{ fontSize: 'clamp(28px, 5vw, 38px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em' }}>
+                    <h2 style={{ fontSize: 'clamp(22px, 4vw, 32px)', color: '#274472', fontWeight: '700', marginBottom: '12px', letterSpacing: '-0.02em' }}>
                         Why Luxury Travel Works for Opera Audiences
                     </h2>
-                    <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto 24px', borderRadius: '10px' }}></div>
-                    <p style={{ fontSize: '18px', color: '#475569', lineHeight: '1.7', marginBottom: '40px' }}>
+                    <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '0 auto 16px', borderRadius: '10px' }}></div>
+                    <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.6', marginBottom: '28px', maxWidth: '680px', margin: '0 auto 28px' }}>
                         Programs can be designed to balance comfort, exclusivity, and educational value. Luxury travel aligns naturally with the expectations of many arts supporters.
                     </p>
 
-                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '16px' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
                         {[
                             'High-quality accommodations',
                             'Exceptional service',
@@ -872,14 +913,12 @@ function TravelProgramsOperaCompanies() {
                             'Thoughtfully curated itineraries'
                         ].map((item, i) => (
                             <div key={i} style={{
-                                display: 'flex', alignItems: 'center', gap: '10px',
-                                padding: '14px 24px', backgroundColor: '#ffffff',
-                                borderRadius: '60px', border: '1px solid #e2e8f0',
-                                boxShadow: '0 2px 4px rgba(0,0,0,0.04)',
-                                transition: 'all 0.3s ease'
+                                display: 'flex', alignItems: 'center', gap: '8px',
+                                padding: '10px 20px', backgroundColor: '#ffffff',
+                                borderRadius: '40px', border: '1px solid #e2e8f0'
                             }}>
-                                <CheckCircle size={18} style={{ color: '#3b82f6', flexShrink: 0 }} />
-                                <span style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b' }}>{item}</span>
+                                <CheckCircle size={16} style={{ color: '#3b82f6', flexShrink: 0 }} />
+                                <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{item}</span>
                             </div>
                         ))}
                     </div>
@@ -887,36 +926,45 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ WHY PARTNER WITH TRIPS & SHIPS ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '100px 20px', backgroundColor: '#ffffff', fontFamily: 'sans-serif' }}>
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px 100px',
+                fontFamily: 'sans-serif',
+                backgroundColor: '#ffffff'
+            }}>
                 <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
+                    <img src={privateTransfer} alt="Luxury private transfer" style={{ width: '100%', height: '350px', objectFit: 'cover', objectPosition: 'bottom', borderRadius: '18px', display: 'block', marginBottom: '50px' }} />
+
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '8px' }}>
                             Our Partnership
                         </span>
-                        <h2 style={{ fontSize: 'clamp(28px, 5vw, 42px)', color: '#274472', fontWeight: '700', marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
+                        <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', color: '#274472', fontWeight: '700', margin: '0 0 12px', letterSpacing: '-0.02em', lineHeight: '1.2' }}>
                             Why Opera Companies Partner with <br />Trips & Ships Luxury Travel
                         </h2>
-                        <div style={{ width: '60px', height: '4px', backgroundColor: '#3b82f6', margin: '0 auto', borderRadius: '10px' }}></div>
-                        <p style={{ fontSize: '19px', color: '#475569', maxWidth: '800px', margin: '30px auto 0', lineHeight: '1.6' }}>
+                        <div style={{ width: '50px', height: '3px', backgroundColor: '#3b82f6', margin: '0 auto 16px', borderRadius: '10px' }}></div>
+                        <p style={{ fontSize: '16px', color: '#475569', maxWidth: '700px', margin: '0 auto', lineHeight: '1.7' }}>
                             Our team understands the importance of creating experiences that reflect the excellence of your organization.
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 600 ? '1fr' : 'repeat(3, 1fr)', gap: window.innerWidth <= 360 ? '16px' : '30px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth <= 640 ? '1fr' : 'repeat(3, 1fr)', gap: window.innerWidth <= 360 ? '14px' : '24px' }}>
                         {[
-                            { title: "Strategic Program Planning", desc: "Travel aligned with engagement and advancement objectives, tailored to your organization's unique goals.", icon: <Star size={24} /> },
-                            { title: "Cultural Travel Expertise", desc: "Access to unique experiences throughout the world, with deep knowledge of opera capitals and performing arts destinations.", icon: <Globe size={24} /> },
-                            { title: "Luxury Partnerships", desc: "Relationships with leading travel providers, cruise lines, hotels, and cultural institutions worldwide.", icon: <Gem size={24} /> },
-                            { title: "Event Coordination", desc: "Private receptions, lectures, backstage access, and exclusive experiences that elevate every journey.", icon: <Calendar size={24} /> },
-                            { title: "White-Glove Service", desc: "Comprehensive support before, during, and after travel. We handle every detail so your team can focus on relationships.", icon: <Award size={24} /> },
-                            { title: "Decades of Expertise", desc: "With Angela Hughes' 40+ years of luxury travel experience, we help arts organizations maximize the impact of every program.", icon: <Crown size={24} /> }
+                            { title: "Strategic Program Planning", desc: "Travel aligned with engagement and advancement objectives, tailored to your organization's unique goals.", icon: <Star size={20} /> },
+                            { title: "Cultural Travel Expertise", desc: "Access to unique experiences throughout the world, with deep knowledge of opera capitals and performing arts destinations.", icon: <Globe size={20} /> },
+                            { title: "Luxury Partnerships", desc: "Relationships with leading travel providers, cruise lines, hotels, and cultural institutions worldwide.", icon: <Gem size={20} /> },
+                            { title: "Event Coordination", desc: "Private receptions, lectures, backstage access, and exclusive experiences that elevate every journey.", icon: <Calendar size={20} /> },
+                            { title: "White-Glove Service", desc: "Comprehensive support before, during, and after travel. We handle every detail so your team can focus on relationships.", icon: <Award size={20} /> },
+                            { title: "Decades of Expertise", desc: "With Angela Hughes' 40+ years of luxury travel experience, we help arts organizations maximize the impact of every program.", icon: <Crown size={20} /> }
                         ].map((item, i) => (
-                            <div key={i} style={{ backgroundColor: '#f8fafc', borderRadius: window.innerWidth <= 360 ? '18px' : '24px', padding: window.innerWidth <= 360 ? '24px 16px' : '36px', border: '1px solid #e2e8f0', boxShadow: '0 6px 20px rgba(15, 28, 46, 0.04)', textAlign: 'center' }}>
-                                <div style={{ width: '60px', height: '60px', borderRadius: '50%', backgroundColor: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', color: '#3b82f6' }}>
+                            <div key={i} style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '28px 24px', boxShadow: '0 4px 16px rgba(15,28,46,0.06)', border: '1px solid #f1f5f9', transition: 'all 0.25s ease', cursor: 'default', textAlign: 'left' }}
+                                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 36px rgba(15,28,46,0.10)'; }}
+                                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(15,28,46,0.06)'; }}
+                            >
+                                <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'linear-gradient(135deg, #274472, #3b82f6)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', color: '#ffffff', boxShadow: '0 4px 12px rgba(59,130,246,0.3)' }}>
                                     {item.icon}
                                 </div>
-                                <h3 style={{ fontSize: '19px', fontWeight: '800', color: '#0f1c2e', marginBottom: '12px' }}>{item.title}</h3>
-                                <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
+                                <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#0f1c2e', margin: '0 0 10px', textAlign: 'left' }}>{item.title}</h3>
+                                <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.65', margin: 0, textAlign: 'left' }}>{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -1160,8 +1208,14 @@ function TravelProgramsOperaCompanies() {
             </section>
 
             {/* ═══════════════ BEST FOR SECTION ═══════════════ */}
-            <section style={{ padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px', backgroundColor: '#0f1c2e', fontFamily: 'sans-serif' }}>
-                <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+            <section style={{
+                padding: window.innerWidth <= 360 ? '60px 10px' : '80px 20px',
+                fontFamily: 'sans-serif',
+                position: 'relative',
+                overflow: 'hidden',
+                backgroundColor: '#0f1c2e'
+            }}>
+                <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
                     <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', marginBottom: '10px' }}>
                         Ideal For
                     </span>
@@ -1318,10 +1372,10 @@ function TravelProgramsOperaCompanies() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
+                            <Link to="/contact" className="medi-primary-cta-button" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
                                 <Phone size={18} />
                                 Begin Planning Your Opera Travel Program Today
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -159,7 +159,19 @@
 }
 
 .don-power-image-col {
-    height: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.don-power-image-col .don-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.don-power-image-col .don-frame-img {
+    object-fit: cover;
+    background-color: transparent;
 }
 
 /* ── 2. TRADITIONAL LIMITS ───────────────────────────────────── */
@@ -182,7 +194,18 @@
 }
 
 .don-limits-image-col {
-    height: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.don-limits-image-col .don-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.don-limits-image-col .don-frame-img {
+    object-fit: cover;
 }
 
 .don-limits-lead {
@@ -376,13 +399,26 @@
 
 .don-trust-conclusion-box p:last-child { margin-bottom: 0; }
 
-.don-trust-image-col { height: 520px; }
+.don-trust-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.don-trust-image-col .don-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.don-trust-image-col .don-frame-img {
+    object-fit: cover;
+}
 
 /* ── 4. EMOTIONAL CONNECTIONS ────────────────────────────────── */
 
 .don-emotions-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
-    padding: 88px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -404,7 +440,7 @@
 
 .don-emotions-header {
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
 }
 
 .don-emotions-intro {
@@ -425,20 +461,20 @@
 .don-emotions-cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    margin-bottom: 44px;
+    gap: 14px;
+    margin-bottom: 28px;
 }
 
 .don-emotion-card {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
-    padding: 32px 22px;
+    border-radius: 14px;
+    padding: 24px 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     backdrop-filter: blur(10px);
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
@@ -452,11 +488,11 @@
 }
 
 .don-emotion-card-icon {
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -486,8 +522,8 @@
 .don-emotions-footer-box {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 28px 40px;
+    border-radius: 14px;
+    padding: 20px 28px;
     text-align: center;
     max-width: 760px;
     margin: 0 auto;
@@ -510,7 +546,7 @@
 
 .don-community-section {
     background: var(--medi-bg-soft);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-community-container {
@@ -606,13 +642,26 @@
     color: var(--medi-navy);
 }
 
-.don-community-image-col { height: 520px; }
+.don-community-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.don-community-image-col .don-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.don-community-image-col .don-frame-img {
+    object-fit: cover;
+}
 
 /* ── 6. EXTENDED TIME ────────────────────────────────────────── */
 
 .don-extended-section {
     background: var(--medi-bg-white);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-extended-container {
@@ -622,7 +671,7 @@
 
 .don-extended-header {
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
 }
 
 .don-extended-intro {
@@ -643,20 +692,20 @@
 .don-extended-activities {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    margin-bottom: 40px;
+    gap: 14px;
+    margin-bottom: 28px;
 }
 
 .don-activity-card {
     background: var(--medi-bg-soft);
     border: 1px solid rgba(39, 68, 114, 0.07);
-    border-radius: 18px;
-    padding: 30px 20px;
+    border-radius: 14px;
+    padding: 24px 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
     position: relative;
@@ -686,10 +735,10 @@
 }
 
 .don-activity-icon {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     background: var(--medi-bg-white);
-    border-radius: 14px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -731,8 +780,8 @@
 .don-extended-conclusion {
     text-align: center;
     background: var(--medi-bg-soft);
-    border-radius: 14px;
-    padding: 22px 40px;
+    border-radius: 12px;
+    padding: 18px 28px;
     max-width: 680px;
     margin: 0 auto;
 }
@@ -750,7 +799,7 @@
 
 .don-mission-section {
     background: var(--medi-bg-soft);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-mission-container {
@@ -760,19 +809,19 @@
 
 .don-mission-header {
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
 }
 
 .don-mission-intro {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #2d3748;
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
     line-height: 1.6;
 }
 
 .don-mission-sub {
-    font-size: 16px;
+    font-size: 15px;
     color: #4a5568;
     margin: 0;
     line-height: 1.6;
@@ -781,29 +830,28 @@
 .don-mission-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-    margin-bottom: 40px;
+    gap: 18px;
+    margin-bottom: 28px;
 }
 
 .don-mission-card {
-    background: var(--medi-bg-white);
-    border-radius: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    padding: 0 0 20px;
     overflow: hidden;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .don-mission-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 56px rgba(39, 68, 114, 0.16);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.10);
 }
 
 .don-mission-card-img-wrap {
-    position: relative;
-    height: 200px;
+    height: 140px;
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -813,55 +861,39 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.6s ease;
 }
 
 .don-mission-card:hover .don-mission-card-img {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
-.don-mission-card-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 28, 46, 0.8) 0%, rgba(15, 28, 46, 0.2) 55%);
-    z-index: 1;
-}
-
-.don-mission-card-header {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.don-mission-card-icon-wrap {
-    width: 36px;
-    height: 36px;
-    background: var(--medi-navy);
-    border-radius: 10px;
+.don-mission-card-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #274472, #3b82f6);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.25);
+    margin: -22px auto 0 14px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    position: relative;
+    z-index: 1;
 }
 
-.don-mission-card-type {
-    font-size: 15px;
+.don-mission-card-title {
+    font-size: 16px;
     font-weight: 700;
-    color: #ffffff;
-    margin: 0;
+    color: #0f1c2e;
+    margin: 10px 14px 12px;
     line-height: 1.3;
-    text-shadow: 0 1px 4px rgba(15, 28, 46, 0.4);
+    text-align: left;
 }
 
 .don-mission-card-body {
-    padding: 20px 22px 24px;
+    padding: 0 14px;
     flex: 1;
 }
 
@@ -871,43 +903,41 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .don-mission-card-item {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
     font-size: 14px;
     font-weight: 500;
-    color: #4a5568;
+    color: #475569;
     line-height: 1.5;
 }
 
 .don-mission-chevron {
-    color: var(--medi-navy);
+    color: #3b82f6;
     flex-shrink: 0;
-    margin-top: 2px;
-    opacity: 0.7;
+    margin-top: 3px;
 }
 
 .don-mission-footer {
     text-align: center;
-    background: var(--medi-bg-white);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 14px;
-    padding: 20px 36px;
-    max-width: 680px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 28px;
+    max-width: 640px;
     margin: 0 auto;
 }
 
 .don-mission-footer p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    color: var(--medi-navy);
+    color: #274472;
     margin: 0;
     line-height: 1.6;
-    font-style: italic;
 }
 
 /* ── 8. MAJOR GIFT CONVERSATIONS ─────────────────────────────── */
@@ -947,7 +977,7 @@
     width: 100%;
     max-width: 820px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -958,7 +988,7 @@
     letter-spacing: 0.28em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 .don-gift-heading {
@@ -966,7 +996,7 @@
     font-size: 48px;
     font-weight: 400;
     color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 14px 0;
     line-height: 1.2;
     letter-spacing: -0.01em;
 }
@@ -975,7 +1005,7 @@
     width: 70px;
     height: 2px;
     background: rgba(255, 255, 255, 0.25);
-    margin: 0 auto 28px;
+    margin: 0 auto 18px;
     border-radius: 2px;
 }
 
@@ -985,59 +1015,69 @@
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    margin: 0 0 12px 0;
+    margin: 0 0 8px 0;
 }
 
 .don-gift-body {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.82);
-    margin: 0 0 36px 0;
-    line-height: 1.7;
+    margin: 0 0 24px 0;
+    line-height: 1.6;
 }
 
 .don-gift-points {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    text-align: left;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
 }
 
 .don-gift-point {
     display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 18px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 20px 14px;
     backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.don-gift-point:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
 }
 
 .don-gift-point-icon {
-    width: 36px;
-    height: 36px;
-    background: var(--medi-navy);
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #274472, #3b82f6);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .don-gift-point p {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.88);
     margin: 0;
-    line-height: 1.65;
-    padding-top: 6px;
+    line-height: 1.5;
+    padding-top: 0;
 }
 
 /* ── 9. DONOR RETENTION ──────────────────────────────────────── */
 
 .don-retention-section {
     background: var(--medi-bg-white);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-retention-container {
@@ -1048,7 +1088,7 @@
 .don-retention-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 68px;
+    gap: 48px;
     align-items: center;
 }
 
@@ -1056,22 +1096,22 @@
     font-size: 18px;
     font-weight: 600;
     color: var(--medi-navy);
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
     line-height: 1.5;
 }
 
 .don-retention-body {
     font-size: 16px;
     color: #4a5568;
-    margin: 0 0 22px 0;
+    margin: 0 0 18px 0;
     line-height: 1.7;
 }
 
 .don-retention-benefits {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 0;
 }
 
 .don-retention-benefit {
@@ -1081,7 +1121,7 @@
     background: var(--medi-bg-soft);
     border: 1px solid rgba(39, 68, 114, 0.07);
     border-radius: 12px;
-    padding: 14px 18px;
+    padding: 12px 16px;
     font-size: 15px;
     font-weight: 600;
     color: var(--medi-navy);
@@ -1113,30 +1153,17 @@
     transition: all 0.3s ease;
 }
 
-.don-retention-conclusion {
-    border-left: 4px solid var(--medi-navy);
-    padding: 16px 20px;
-    background: var(--medi-bg-soft);
-    border-radius: 0 10px 10px 0;
+.don-retention-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.don-retention-conclusion p {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--medi-navy);
-    margin: 0;
-    line-height: 1.6;
-    font-style: italic;
+.don-retention-image-col .don-image-frame {
+    height: 400px;
 }
-
-.don-retention-image-col { height: 520px; position: relative; }
 
 .don-retention-stat-badge {
-    position: absolute;
-    bottom: 22px;
-    right: 22px;
-    background: var(--medi-navy);
-    color: #ffffff;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1146,15 +1173,33 @@
     letter-spacing: 0.06em;
     padding: 10px 18px;
     border-radius: 30px;
-    z-index: 2;
+    background: var(--medi-navy);
+    color: #ffffff;
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+    width: fit-content;
+}
+
+.don-retention-conclusion {
+    border-left: 4px solid var(--medi-navy);
+    padding: 14px 18px;
+    background: var(--medi-bg-soft);
+    border-radius: 0 10px 10px 0;
+}
+
+.don-retention-conclusion p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.5;
+    font-style: italic;
 }
 
 /* ── 10. STEWARDSHIP ─────────────────────────────────────────── */
 
 .don-stewardship-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
-    padding: 88px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -1176,14 +1221,14 @@
 
 .don-stewardship-header {
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
 }
 
 .don-stewardship-intro {
     font-size: 18px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
     line-height: 1.6;
 }
 
@@ -1196,18 +1241,18 @@
 .don-stewardship-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 44px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .don-stewardship-card {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px;
-    padding: 32px 24px;
+    padding: 24px 20px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     backdrop-filter: blur(10px);
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
@@ -1221,8 +1266,8 @@
 }
 
 .don-stewardship-card-icon {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 14px;
@@ -1244,13 +1289,15 @@
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
     line-height: 1.35;
+    text-align: left;
 }
 
 .don-stewardship-card-desc {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.65);
     margin: 0;
-    line-height: 1.65;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .don-stewardship-footer {
@@ -1258,13 +1305,13 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    padding: 22px 40px;
+    padding: 18px 32px;
     max-width: 680px;
     margin: 0 auto;
 }
 
 .don-stewardship-footer p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
@@ -1276,7 +1323,7 @@
 
 .don-generations-section {
     background: var(--medi-bg-soft);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-generations-container {
@@ -1287,7 +1334,7 @@
 .don-generations-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 68px;
+    gap: 48px;
     align-items: center;
 }
 
@@ -1295,15 +1342,15 @@
     font-size: 18px;
     font-weight: 500;
     color: #2d3748;
-    margin: 0 0 22px 0;
+    margin: 0 0 18px 0;
     line-height: 1.6;
 }
 
 .don-generations-types {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 26px;
+    gap: 8px;
+    margin-bottom: 0;
 }
 
 .don-generation-type {
@@ -1313,7 +1360,7 @@
     background: var(--medi-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 12px;
-    padding: 14px 20px;
+    padding: 12px 18px;
     font-size: 15px;
     font-weight: 600;
     color: var(--medi-navy);
@@ -1345,6 +1392,16 @@
     transition: all 0.3s ease;
 }
 
+.don-generations-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.don-generations-image-col .don-image-frame {
+    height: 400px;
+}
+
 .don-generations-conclusion {
     border-left: 4px solid var(--medi-navy);
     padding: 14px 18px;
@@ -1353,19 +1410,17 @@
 }
 
 .don-generations-conclusion p {
-    font-size: 16px;
+    font-size: 15px;
     color: #4a5568;
     margin: 0;
-    line-height: 1.7;
+    line-height: 1.6;
 }
-
-.don-generations-image-col { height: 500px; }
 
 /* ── 12. RISE OF EXPERIENTIAL ────────────────────────────────── */
 
 .don-rise-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
-    padding: 88px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -1387,14 +1442,14 @@
 
 .don-rise-header {
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
 }
 
 .don-rise-intro {
     font-size: 18px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
     line-height: 1.6;
 }
 
@@ -1407,20 +1462,20 @@
 .don-rise-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 44px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .don-rise-card {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px;
-    padding: 32px 22px;
+    padding: 24px 18px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     backdrop-filter: blur(10px);
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
@@ -1434,8 +1489,8 @@
 }
 
 .don-rise-card-icon {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -1462,7 +1517,7 @@
     font-size: 13px;
     color: rgba(255, 255, 255, 0.65);
     margin: 0;
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 .don-rise-conclusion {
@@ -1470,16 +1525,16 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    padding: 22px 40px;
+    padding: 18px 32px;
     max-width: 680px;
     margin: 0 auto;
 }
 
 .don-rise-conclusion p {
-    font-size: 16px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.8);
-    margin: 0 0 6px 0;
-    line-height: 1.65;
+    margin: 0 0 4px 0;
+    line-height: 1.6;
 }
 
 .don-rise-conclusion p:last-child {
@@ -1492,7 +1547,7 @@
 
 .don-partner-section {
     background: var(--medi-bg-soft);
-    padding: 88px 20px;
+    padding: 60px 20px;
 }
 
 .don-partner-container {
@@ -1502,14 +1557,14 @@
 
 .don-partner-header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
 }
 
 .don-partner-intro {
     font-size: 18px;
     font-weight: 500;
     color: #2d3748;
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
     line-height: 1.6;
 }
 
@@ -1522,18 +1577,18 @@
 .don-partner-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-bottom: 40px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .don-partner-card {
     background: var(--medi-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 18px;
-    padding: 32px 26px;
+    padding: 24px 22px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.04);
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
@@ -1546,8 +1601,8 @@
 }
 
 .don-partner-card-icon {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     background: var(--medi-bg-soft);
     border-radius: 14px;
     display: flex;
@@ -1574,24 +1629,24 @@
     font-size: 14px;
     color: #4a5568;
     margin: 0;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .don-partner-footer {
     text-align: center;
     background: var(--medi-navy);
     border-radius: 14px;
-    padding: 22px 40px;
+    padding: 18px 32px;
     max-width: 760px;
     margin: 0 auto;
 }
 
 .don-partner-footer p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.9);
     margin: 0;
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 /* ── 14. FINAL THOUGHTS ──────────────────────────────────────── */
@@ -1599,7 +1654,7 @@
 .don-final-section {
     position: relative;
     background: linear-gradient(135deg, var(--medi-navy) 0%, var(--medi-bg-dark2) 50%, var(--medi-bg-dark) 100%);
-    padding: 96px 20px;
+    padding: 64px 20px;
     overflow: hidden;
     text-align: center;
 }
@@ -1623,7 +1678,7 @@
     align-items: center;
     gap: 10px;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .don-final-eyebrow-text {
@@ -1639,7 +1694,7 @@
     font-weight: 400;
     font-style: italic;
     color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 14px 0;
     line-height: 1.2;
     letter-spacing: -0.015em;
 }
@@ -1648,7 +1703,7 @@
     width: 80px;
     height: 2px;
     background: rgba(255, 255, 255, 0.2);
-    margin: 0 auto 44px;
+    margin: 0 auto 32px;
     border-radius: 2px;
 }
 
@@ -1656,8 +1711,8 @@
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 40px 48px;
-    margin-bottom: 40px;
+    padding: 32px 40px;
+    margin-bottom: 32px;
     text-align: left;
     backdrop-filter: blur(10px);
 }
@@ -1665,8 +1720,8 @@
 .don-final-body {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
-    margin: 0 0 14px 0;
-    line-height: 1.78;
+    margin: 0 0 10px 0;
+    line-height: 1.7;
 }
 
 .don-final-body:last-child { margin-bottom: 0; }
@@ -1683,7 +1738,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 14px;
 }
 
 .don-final-conclusion-line {
@@ -1707,23 +1762,283 @@
    RESPONSIVE: TABLET  (max-width: 1024px)
    ───────────────────────────────────────────────────────────── */
 
+/* ── WHY TRIPS & SHIPS EDITORIAL ──────────────────────────── */
+
+.don-editorial-section {
+    padding: 60px 20px;
+    background: linear-gradient(160deg, #0f1c2e 0%, #1a2a44 100%);
+    position: relative;
+}
+
+.don-editorial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.don-editorial-card {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 44px;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 25px 60px rgba(15, 28, 46, 0.12);
+}
+
+.don-editorial-image-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.don-editorial-image-frame {
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.15);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.don-editorial-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.don-editorial-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: linear-gradient(135deg, #274472, #3b82f6);
+    border-radius: 12px;
+    padding: 16px 32px;
+}
+
+.don-editorial-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.don-editorial-stat-number {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.don-editorial-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.don-editorial-stat-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.don-editorial-content-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.don-editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #274472;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    width: fit-content;
+    margin-bottom: 14px;
+}
+
+.don-editorial-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+.don-editorial-bar {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #274472, #3b82f6);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.don-editorial-text {
+    font-size: 15px;
+    color: #475569;
+    margin: 0 0 18px;
+    line-height: 1.7;
+}
+
+.don-editorial-text:last-of-type {
+    margin-bottom: 18px;
+}
+
+.don-editorial-services {
+    margin-bottom: 18px;
+}
+
+.don-editorial-services-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin-bottom: 10px;
+}
+
+.don-editorial-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.don-editorial-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #274472;
+    transition: all 0.25s ease;
+}
+
+.don-editorial-pill:hover {
+    background: #274472;
+    color: #ffffff;
+    border-color: #274472;
+}
+
+.don-editorial-pill svg {
+    flex-shrink: 0;
+    color: #3b82f6;
+}
+
+.don-editorial-pill:hover svg {
+    color: #ffffff;
+}
+
+.don-editorial-expertise-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.don-editorial-expertise-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.don-editorial-expertise-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #274472, #3b82f6);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.don-editorial-expertise-pill svg {
+    flex-shrink: 0;
+}
+
+/* ── CTA section overrides (tighten) ──────────────────────── */
+.medi-cta-main-section {
+    padding: 60px 20px;
+}
+
+.medi-cta-heading-white {
+    margin-bottom: 16px;
+}
+
+.medi-cta-separator-white {
+    margin: 0 auto 24px;
+}
+
+.medi-cta-paragraph-white {
+    margin-bottom: 18px;
+}
+
+.medi-cta-considerations-box {
+    padding: 32px;
+    margin: 32px 0;
+}
+
+.medi-cta-considerations-title {
+    margin-bottom: 20px;
+}
+
+.medi-cta-considerations-list {
+    gap: 14px 28px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: TABLET  (max-width: 1024px)
+   ───────────────────────────────────────────────────────────── */
+
 @media (max-width: 1024px) {
 
-    /* Power */
+    /* Hero */
+    .medi-hero-main-title { font-size: 42px; }
+    .medi-hero-subtitle-text { font-size: 17px; }
+
+    /* 2-col → 1-col sections */
     .don-power-grid,
     .don-limits-grid,
     .don-trust-grid,
     .don-community-grid,
     .don-retention-grid,
-    .don-generations-grid { grid-template-columns: 1fr; gap: 48px; }
-    .don-power-image-col { height: 400px; order: -1; }
-    .don-limits-image-col { height: 360px; }
-    .don-trust-image-col { height: 380px; }
-    .don-community-image-col { height: 380px; }
-    .don-retention-image-col { height: 380px; }
-    .don-generations-image-col { height: 360px; }
+    .don-generations-grid { grid-template-columns: 1fr; gap: 40px; }
+    .don-power-image-col { order: -1; }
+    .don-retention-image-col,
+    .don-generations-image-col,
+    .don-power-image-col,
+    .don-limits-image-col,
+    .don-trust-image-col,
+    .don-community-image-col { height: auto; }
 
-    /* Cards */
+    /* Image frames in stacked layout */
+    .don-power-image-col .don-image-frame,
+    .don-limits-image-col .don-image-frame,
+    .don-trust-image-col .don-image-frame,
+    .don-community-image-col .don-image-frame,
+    .don-retention-image-col .don-image-frame,
+    .don-generations-image-col .don-image-frame { height: 340px; }
+
+    /* Card grids shrink */
     .don-emotions-cards { grid-template-columns: repeat(3, 1fr); }
     .don-extended-activities { grid-template-columns: repeat(3, 1fr); }
     .don-mission-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1733,14 +2048,21 @@
 
     /* Gift */
     .don-gift-heading { font-size: 38px; }
-    .don-gift-points { grid-template-columns: 1fr; }
+    .don-gift-points { grid-template-columns: repeat(2, 1fr); }
+
+    /* Editorial */
+    .don-editorial-card { grid-template-columns: 1fr; gap: 36px; padding: 36px; }
+    .don-editorial-image-side { max-width: 340px; margin: 0 auto; }
+    .don-editorial-title { font-size: 28px; }
+    .don-editorial-text { font-size: 15px; }
 
     /* Final */
     .don-final-heading { font-size: 38px; }
     .don-final-card { padding: 32px 36px; }
 
-    /* Limit images */
-    .don-image-frame { min-height: 320px; }
+    /* CTA */
+    .medi-cta-heading-white { font-size: 38px !important; }
+    .medi-cta-considerations-list { grid-template-columns: 1fr; gap: 12px; }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1749,65 +2071,125 @@
 
 @media (max-width: 767px) {
 
+    /* All section paddings */
     .don-power-section, .don-limits-section, .don-trust-section,
     .don-emotions-section, .don-community-section, .don-extended-section,
     .don-mission-section, .don-retention-section, .don-stewardship-section,
     .don-generations-section, .don-rise-section, .don-partner-section,
-    .don-final-section { padding: 64px 16px; }
+    .don-final-section { padding: 48px 16px; }
+
+    .don-editorial-section { padding: 48px 16px; }
+
+    /* Hero */
+    .medi-hero-main-title { font-size: 30px; }
+    .medi-hero-subtitle-text { font-size: 15px; }
+    .medi-hero-eyebrow-tag { font-size: 10px; padding: 5px 12px; }
 
     /* Power */
-    .don-power-image-col { height: 300px; }
+    .don-power-image-col .don-image-frame { height: 260px; }
     .don-power-statement-bold { font-size: 16px; }
+    .don-power-statement-box { padding: 16px; }
 
     /* Limits */
-    .don-limits-image-col { height: 260px; }
-    .don-channels-grid { grid-template-columns: 1fr; }
+    .don-limits-image-col .don-image-frame { height: 240px; }
+    .don-limits-methods { gap: 8px; }
+    .don-method-item { padding: 10px 14px; font-size: 14px; }
+    .don-limits-insight-box { padding: 14px 16px; }
 
     /* Trust */
-    .don-trust-pillars { grid-template-columns: 1fr 1fr; }
-    .don-trust-image-col { height: 280px; }
+    .don-trust-pillars { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .don-trust-image-col .don-image-frame { height: 260px; }
+    .don-trust-pillar { padding: 12px; }
+    .don-trust-conclusion-box { padding: 14px 16px; }
 
     /* Emotions */
-    .don-emotions-cards { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .don-emotions-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
     .don-emotions-cards > *:last-child { grid-column: span 2; }
+    .don-emotion-card { padding: 18px 14px; }
+    .don-emotions-footer-box { padding: 16px; }
 
     /* Community */
-    .don-community-pillars { grid-template-columns: 1fr; }
-    .don-community-image-col { height: 280px; }
+    .don-community-pillars { grid-template-columns: 1fr; gap: 8px; }
+    .don-community-image-col .don-image-frame { height: 260px; }
+    .don-community-conclusion-box { padding: 14px 16px; }
 
     /* Extended */
-    .don-extended-activities { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .don-extended-activities { grid-template-columns: 1fr 1fr; gap: 12px; }
     .don-extended-activities > *:last-child { grid-column: span 2; }
+    .don-activity-card { padding: 18px 14px; }
 
     /* Mission */
-    .don-mission-grid { grid-template-columns: 1fr; }
-    .don-mission-card-img-wrap { height: 220px; }
+    .don-mission-grid { grid-template-columns: 1fr; gap: 16px; }
+    .don-mission-card-img-wrap { height: 200px; }
+    .don-mission-footer { padding: 14px 18px; }
 
     /* Gift */
-    .don-gift-section { min-height: 500px; }
-    .don-gift-heading { font-size: 28px; }
-    .don-gift-points { grid-template-columns: 1fr; gap: 12px; }
+    .don-gift-section { min-height: auto; padding: 48px 16px; }
+    .don-gift-content { padding: 0; }
+    .don-gift-heading { font-size: 26px; }
+    .don-gift-points { grid-template-columns: 1fr; gap: 10px; }
+    .don-gift-point { padding: 14px; }
+    .don-gift-point-icon { width: 36px; height: 36px; }
+    .don-gift-point p { font-size: 13px; }
 
     /* Retention */
-    .don-retention-image-col { height: 280px; }
+    .don-retention-image-col .don-image-frame { height: 260px; }
+    .don-retention-benefits { gap: 8px; }
+    .don-retention-benefit { padding: 10px 14px; font-size: 14px; }
 
     /* Stewardship */
-    .don-stewardship-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto 40px; }
+    .don-stewardship-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto 28px; gap: 12px; }
+    .don-stewardship-card { padding: 20px 16px; }
+    .don-stewardship-footer { padding: 14px 20px; }
 
     /* Generations */
-    .don-generations-image-col { height: 280px; }
+    .don-generations-image-col .don-image-frame { height: 260px; }
+    .don-generations-types { gap: 6px; }
+    .don-generation-type { padding: 10px 16px; font-size: 14px; }
 
     /* Rise */
-    .don-rise-cards { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .don-rise-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .don-rise-card { padding: 18px 14px; }
+    .don-rise-conclusion { padding: 14px 20px; }
+    .don-rise-conclusion p { font-size: 14px; }
 
     /* Partner */
-    .don-partner-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto 36px; }
-    .don-partner-footer { padding: 18px 22px; }
+    .don-partner-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto 28px; gap: 12px; }
+    .don-partner-card { padding: 18px 16px; }
+    .don-partner-footer { padding: 14px 20px; }
+
+    /* Editorial */
+    .don-editorial-card { padding: 24px 20px; gap: 24px; }
+    .don-editorial-image-side { max-width: 280px; margin: 0 auto; }
+    .don-editorial-image-frame { aspect-ratio: 3 / 4.5; }
+    .don-editorial-stats { padding: 12px 20px; gap: 16px; }
+    .don-editorial-stat-number { font-size: 22px; }
+    .don-editorial-title { font-size: 24px; }
+    .don-editorial-text { font-size: 14px; margin-bottom: 14px; }
+    .don-editorial-services { margin-bottom: 14px; }
+    .don-editorial-services-list { gap: 6px; }
+    .don-editorial-pill { font-size: 12px; padding: 5px 12px; }
+    .don-editorial-expertise-strip { gap: 6px; }
+    .don-editorial-expertise-pill { font-size: 11px; padding: 5px 12px; }
+    .don-editorial-badge { margin-bottom: 10px; }
+    .don-editorial-bar { margin-bottom: 14px; }
 
     /* Final */
-    .don-final-heading { font-size: 30px; }
-    .don-final-card { padding: 24px 22px; }
+    .don-final-heading { font-size: 28px; }
+    .don-final-card { padding: 22px 20px; }
     .don-final-body { font-size: 16px; }
+    .don-final-emphasis { font-size: 22px; }
+    .don-final-stmt { font-size: 18px; }
+
+    /* CTA */
+    .medi-cta-main-section { padding: 48px 16px; }
+    .medi-cta-heading-white { font-size: 28px !important; }
+    .medi-cta-considerations-box { padding: 24px 20px; margin: 24px 0; }
+    .medi-cta-considerations-list { gap: 10px; }
+    .medi-cta-considerations-item { font-size: 14px; gap: 10px; }
+    .medi-cta-button-group { flex-direction: column; gap: 12px; }
+    .medi-primary-cta-button,
+    .medi-secondary-outline-button { width: 100%; justify-content: center; }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1816,6 +2198,25 @@
 
 @media (max-width: 360px) {
 
+    /* Hero */
+    .medi-hero-main-title { font-size: 24px; }
+    .medi-hero-subtitle-text { font-size: 13px; }
+
+    /* All sections */
+    .don-power-section, .don-limits-section, .don-trust-section,
+    .don-emotions-section, .don-community-section, .don-extended-section,
+    .don-mission-section, .don-retention-section, .don-stewardship-section,
+    .don-generations-section, .don-rise-section, .don-partner-section,
+    .don-final-section { padding: 40px 12px !important; }
+    .don-editorial-section { padding: 40px 12px !important; }
+
+    /* Heading sizes */
+    .medi-section-heading { font-size: 22px !important; }
+    .don-gift-heading { font-size: 22px !important; }
+    .don-final-heading { font-size: 22px !important; }
+    .don-editorial-title { font-size: 20px !important; }
+
+    /* 2-col → 1-col on smallest screens */
     .don-trust-pillars { grid-template-columns: 1fr !important; }
     .don-emotions-cards { grid-template-columns: 1fr !important; }
     .don-emotions-cards > *:last-child { grid-column: span 1 !important; }
@@ -1823,12 +2224,40 @@
     .don-extended-activities > *:last-child { grid-column: span 1 !important; }
     .don-rise-cards { grid-template-columns: 1fr !important; }
     .don-community-pillars { grid-template-columns: 1fr !important; }
-    .don-gift-heading { font-size: 24px !important; }
-    .don-final-heading { font-size: 24px !important; }
-    .don-final-card { padding: 18px 16px !important; }
-    .don-power-image-col { height: 240px !important; }
-    .don-limits-image-col { height: 220px !important; }
+
+    /* Card grids */
     .don-mission-grid { grid-template-columns: 1fr !important; }
     .don-partner-grid { max-width: 100% !important; }
     .don-stewardship-grid { max-width: 100% !important; }
+
+    /* Image heights */
+    .don-power-image-col .don-image-frame,
+    .don-limits-image-col .don-image-frame,
+    .don-trust-image-col .don-image-frame,
+    .don-community-image-col .don-image-frame,
+    .don-retention-image-col .don-image-frame,
+    .don-generations-image-col .don-image-frame { height: 200px !important; }
+    .don-mission-card-img-wrap { height: 180px !important; }
+
+    /* Cards padding */
+    .don-final-card { padding: 16px 14px !important; }
+    .don-gift-point { padding: 12px !important; }
+
+    /* Editorial */
+    .don-editorial-card { padding: 18px 14px !important; gap: 18px; }
+    .don-editorial-image-side { max-width: 200px; }
+    .don-editorial-image-frame { aspect-ratio: 3 / 5; }
+    .don-editorial-stats { flex-direction: column; gap: 8px; padding: 12px; }
+    .don-editorial-stat-divider { display: none; }
+    .don-editorial-badge { font-size: 10px; padding: 4px 10px; }
+    .don-editorial-title { font-size: 20px !important; }
+    .don-editorial-text { font-size: 14px; }
+    .don-editorial-services-label { font-size: 13px; }
+    .don-editorial-pill { font-size: 12px; padding: 5px 10px; }
+    .don-editorial-expertise-label { font-size: 12px; }
+    .don-editorial-expertise-pill { font-size: 11px; padding: 4px 10px; }
+
+    /* CTA */
+    .medi-cta-heading-white { font-size: 22px !important; }
+    .medi-cta-considerations-box { padding: 18px 14px !important; }
 }
