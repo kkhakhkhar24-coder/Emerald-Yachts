@@ -8,13 +8,47 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
+// Image imports
+import hero1 from '../../assets/PrivacySecurityTravelPlanning/hero1.png'
+import hero2 from '../../assets/PrivacySecurityTravelPlanning/hero2.png'
+import hero3 from '../../assets/PrivacySecurityTravelPlanning/hero3.png'
+
+import introPrivateJet from '../../assets/PrivacySecurityTravelPlanning/intro-private-jet.png'
+
+import serviceConfidentialPlanning from '../../assets/PrivacySecurityTravelPlanning/service-confidential-planning.webp'
+import serviceCustomizedItinerary from '../../assets/PrivacySecurityTravelPlanning/service-customized-itinerary.webp'
+import serviceSecureCommunication from '../../assets/PrivacySecurityTravelPlanning/service-secure-communication.webp'
+
+import aviationPrivateJet from '../../assets/PrivacySecurityTravelPlanning/aviation-private-jet.png'
+import aviationVipAssistance from '../../assets/PrivacySecurityTravelPlanning/aviation-vip-assistance.webp'
+import aviationHelicopterTransfer from '../../assets/PrivacySecurityTravelPlanning/aviation-helicopter-transfer.webp'
+
+import transportChauffeurVehicle from '../../assets/PrivacySecurityTravelPlanning/transport-chauffeur-vehicle.png'
+import transportExecutiveTravel from '../../assets/PrivacySecurityTravelPlanning/transport-executive-travel.png'
+import transportSuvTransfer from '../../assets/PrivacySecurityTravelPlanning/transport-suv-transfer.webp'
+
+import stayPrivateVillas from '../../assets/PrivacySecurityTravelPlanning/stay-private-villas.webp'
+import stayExclusiveResorts from '../../assets/PrivacySecurityTravelPlanning/stay-exclusive-resorts.webp'
+import stayBoutiqueHotels from '../../assets/PrivacySecurityTravelPlanning/stay-boutique-hotels.webp'
+import staySafariLodges from '../../assets/PrivacySecurityTravelPlanning/stay-safari-lodges.webp'
+import staySmallShipCruises from '../../assets/PrivacySecurityTravelPlanning/stay-small-ship-cruises.webp'
+import stayExpeditionCruises from '../../assets/PrivacySecurityTravelPlanning/stay-expedition-cruises.png'
+import stayRiverCruises from '../../assets/PrivacySecurityTravelPlanning/stay-river-cruises.webp'
+import stayPrivateYachts from '../../assets/PrivacySecurityTravelPlanning/stay-private-yachts.webp'
+
+import familyPrivacyTravel from '../../assets/PrivacySecurityTravelPlanning/family-privacy-travel.webp'
+import familyPrivateExcursion from '../../assets/PrivacySecurityTravelPlanning/family-private-excursion.webp'
+import familyActivities from '../../assets/PrivacySecurityTravelPlanning/family-activities.webp'
+
+import whychooseDiscreetTravel from '../../assets/PrivacySecurityTravelPlanning/whychoose-discreet-travel.webp'
+
 function PrivacySecurityTravelPlanning() {
 
     /* Hero rotating background images */
     const psecHeroImages = [
-        'https://placehold.co/1800x1200?text=Privacy+Security+Travel',
-        'https://placehold.co/1800x1200?text=Confidential+Luxury+Travel',
-        'https://placehold.co/1800x1200?text=Secure+Executive+Travel'
+        hero1,
+        hero2,
+        hero3
     ]
     const [psecCurrentHero, setPsecCurrentHero] = useState(0)
     useEffect(() => {
@@ -43,14 +77,14 @@ function PrivacySecurityTravelPlanning() {
 
     /* Accommodation types with images */
     const psecStayTypes = [
-        { name: 'Private Villas', img: 'https://placehold.co/600x700?text=Private+Villas' },
-        { name: 'Exclusive Resorts', img: 'https://placehold.co/600x700?text=Exclusive+Resorts' },
-        { name: 'Boutique Luxury Hotels', img: 'https://placehold.co/600x700?text=Boutique+Luxury+Hotels' },
-        { name: 'Luxury Safari Lodges', img: 'https://placehold.co/600x700?text=Luxury+Safari+Lodges' },
-        { name: 'Small Ship Cruises', img: 'https://placehold.co/600x700?text=Small+Ship+Cruises' },
-        { name: 'Expedition Cruises', img: 'https://placehold.co/600x700?text=Expedition+Cruises' },
-        { name: 'River Cruises', img: 'https://placehold.co/600x700?text=River+Cruises' },
-        { name: 'Private Yacht Charters', img: 'https://placehold.co/600x700?text=Private+Yacht+Charters' }
+        { name: 'Private Villas', img: stayPrivateVillas },
+        { name: 'Exclusive Resorts', img: stayExclusiveResorts },
+        { name: 'Boutique Luxury Hotels', img: stayBoutiqueHotels },
+        { name: 'Luxury Safari Lodges', img: staySafariLodges },
+        { name: 'Small Ship Cruises', img: staySmallShipCruises },
+        { name: 'Expedition Cruises', img: stayExpeditionCruises },
+        { name: 'River Cruises', img: stayRiverCruises },
+        { name: 'Private Yacht Charters', img: stayPrivateYachts }
     ]
 
     /* Concierge services */
@@ -237,7 +271,7 @@ function PrivacySecurityTravelPlanning() {
                                 </div>
                             </div>
                             <div className="psec-intro-image-frame">
-                                <img src="https://placehold.co/900x1000?text=Private+Jet+Luxury+Travel" alt="Private jet aviation for discreet luxury travel" />
+                                <img src={introPrivateJet} alt="Private jet aviation for discreet luxury travel" />
                                 <div className="psec-intro-badge-float">
                                     <Lock size={18} />
                                     <span>Confidential by Design</span>
@@ -282,9 +316,9 @@ function PrivacySecurityTravelPlanning() {
                     <div className="psec-service-container">
                         <div className="psec-service-grid">
                             <div className="psec-service-media">
-                                <img className="psec-media-tall" src="https://placehold.co/700x900?text=Confidential+Travel+Planning" alt="Confidential travel planning consultation" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Customized+Itinerary" alt="Customized itinerary planning" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Secure+Communication" alt="Secure communication travel planning" />
+                                <img className="psec-media-tall" src={serviceConfidentialPlanning} alt="Confidential travel planning consultation" />
+                                <img className="psec-media-short" src={serviceCustomizedItinerary} alt="Customized itinerary planning" />
+                                <img className="psec-media-short" src={serviceSecureCommunication} alt="Secure communication travel planning" />
                             </div>
                             <div className="psec-service-copy">
                                 <span className="psec-service-eyebrow">
@@ -314,9 +348,9 @@ function PrivacySecurityTravelPlanning() {
                     <div className="psec-service-container">
                         <div className="psec-service-grid psec-service-reverse">
                             <div className="psec-service-media">
-                                <img className="psec-media-tall" src="https://placehold.co/700x900?text=Private+Jet+Charter" alt="Private jet charter aviation service" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=VIP+Airport+Assistance" alt="VIP airport assistance" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Helicopter+Transfer" alt="Helicopter transfer luxury travel" />
+                                <img className="psec-media-tall" src={aviationPrivateJet} alt="Private jet charter aviation service" />
+                                <img className="psec-media-short" src={aviationVipAssistance} alt="VIP airport assistance" />
+                                <img className="psec-media-short" src={aviationHelicopterTransfer} alt="Helicopter transfer luxury travel" />
                             </div>
                             <div className="psec-service-copy">
                                 <span className="psec-service-eyebrow">
@@ -346,9 +380,9 @@ function PrivacySecurityTravelPlanning() {
                     <div className="psec-service-container">
                         <div className="psec-service-grid">
                             <div className="psec-service-media">
-                                <img className="psec-media-tall" src="https://placehold.co/700x900?text=Chauffeur+Driven+Vehicle" alt="Chauffeur-driven luxury vehicle" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Executive+Transportation" alt="Executive transportation service" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Luxury+SUV+Transfer" alt="Luxury SUV airport transfer" />
+                                <img className="psec-media-tall" src={transportChauffeurVehicle} alt="Chauffeur-driven luxury vehicle" />
+                                <img className="psec-media-short" src={transportExecutiveTravel} alt="Executive transportation service" />
+                                <img className="psec-media-short" src={transportSuvTransfer} alt="Luxury SUV airport transfer" />
                             </div>
                             <div className="psec-service-copy">
                                 <span className="psec-service-eyebrow">
@@ -406,9 +440,9 @@ function PrivacySecurityTravelPlanning() {
                     <div className="psec-service-container">
                         <div className="psec-service-grid psec-service-reverse">
                             <div className="psec-service-media">
-                                <img className="psec-media-tall" src="https://placehold.co/700x900?text=Family+Privacy+Travel" alt="Family privacy and secure travel" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Private+Family+Excursion" alt="Private family excursion" />
-                                <img className="psec-media-short" src="https://placehold.co/700x440?text=Family+Activities" alt="Children's activities on secure family trip" />
+                                <img className="psec-media-tall" src={familyPrivacyTravel} alt="Family privacy and secure travel" />
+                                <img className="psec-media-short" src={familyPrivateExcursion} alt="Private family excursion" />
+                                <img className="psec-media-short" src={familyActivities} alt="Children's activities on secure family trip" />
                             </div>
                             <div className="psec-service-copy">
                                 <span className="psec-service-eyebrow">
@@ -467,7 +501,7 @@ function PrivacySecurityTravelPlanning() {
                                 </p>
                             </div>
                             <div className="psec-why-us-image">
-                                <img src="https://placehold.co/900x650?text=Discreet+Executive+Travel" alt="Discreet executive luxury travel experience" />
+                                <img src={whychooseDiscreetTravel} alt="Discreet executive luxury travel experience" />
                             </div>
                         </div>
                         <div className="psec-why-us-grid">

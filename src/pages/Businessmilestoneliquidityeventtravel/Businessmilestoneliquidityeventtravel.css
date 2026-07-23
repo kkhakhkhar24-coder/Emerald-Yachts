@@ -719,12 +719,12 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.12em;
-    color: var(--medi-green);
+    color: var(--medi-bg-soft);
     margin-bottom: 10px;
 }
 
 .bml-separator-light {
-    background: var(--medi-green) !important;
+    background: var(--medi-bg-soft) !important;
 }
 
 .bml-experiences-lead-para {
@@ -742,63 +742,226 @@
     margin: 0 0 36px;
 }
 
-.bml-experiences-gallery {
+/* INTERACTIVE SHOWCASE STYLES */
+.bml-experiences-showcase-split {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 14px;
-    margin-bottom: 36px;
+    grid-template-columns: 1.1fr 1.3fr;
+    gap: 40px;
+    margin: 40px auto;
+    align-items: stretch;
+    text-align: left;
 }
 
-.bml-experience-card {
+/* FEATURED SHOWCASE HERO CARD */
+.bml-experiences-showcase-hero {
     position: relative;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 3/4;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
 }
 
-.bml-experience-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease;
-}
-
-.bml-experience-card:hover .bml-experience-img {
-    transform: scale(1.1);
-}
-
-.bml-experience-card-overlay {
+.bml-experiences-hero-bg-wrapper {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(15, 28, 46, 0.1) 40%, rgba(15, 28, 46, 0.9) 100%);
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
 }
 
-.bml-experience-icon-badge {
+.bml-experiences-hero-bg-wrapper.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.bml-experiences-hero-bg {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 28px;
-    height: 28px;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 8s ease-out;
+}
+
+.bml-experiences-hero-bg-wrapper.active .bml-experiences-hero-bg {
+    transform: scale(1.05);
+}
+
+.bml-experiences-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.65) 45%, rgba(15, 28, 46, 0.1) 100%);
+    z-index: 2;
+}
+
+.bml-experiences-hero-content {
+    position: relative;
+    margin-top: auto;
+    padding: 40px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bml-experiences-hero-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--medi-bg-soft);
+    margin-bottom: 16px;
+    background: rgba(39, 68, 114, 0.4);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(231, 243, 245, 0.25);
+}
+
+.bml-experiences-hero-icon-box {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
 }
 
-.bml-experience-label {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+.bml-experiences-hero-title {
+    font-size: 32px;
+    font-weight: 500;
     color: #ffffff;
-    font-size: 12px;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.bml-experiences-hero-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    max-width: 90%;
+}
+
+/* SELECTION TILES GRID */
+.bml-experiences-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.bml-experiences-showcase-tile {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 130px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bml-experiences-tile-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    z-index: 0;
+}
+
+.bml-experiences-tile-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.9) 0%, rgba(15, 28, 46, 0.4) 100%);
+    z-index: 1;
+}
+
+.bml-experiences-tile-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.bml-experiences-tile-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bml-experiences-tile-label {
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.4s ease;
+    line-height: 1.35;
     text-align: left;
+}
+
+.bml-experiences-tile-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--medi-bg-soft);
+    transition: width 0.4s ease;
+    z-index: 3;
+}
+
+/* HOVER & ACTIVE STATE INTERACTION */
+.bml-experiences-showcase-tile:hover,
+.bml-experiences-showcase-tile.active {
+    border-color: rgba(231, 243, 245, 0.35);
+    background: rgba(39, 68, 114, 0.35);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(231, 243, 245, 0.1);
+    transform: translateY(-2px);
+}
+
+.bml-experiences-showcase-tile:hover .bml-experiences-tile-bg,
+.bml-experiences-showcase-tile.active .bml-experiences-tile-bg {
+    transform: scale(1.08);
+    opacity: 0.45;
+}
+
+.bml-experiences-showcase-tile:hover .bml-experiences-tile-icon,
+.bml-experiences-showcase-tile.active .bml-experiences-tile-icon {
+    background: var(--medi-bg-soft);
+    color: var(--medi-navy);
+    transform: rotate(360deg);
+}
+
+.bml-experiences-showcase-tile:hover .bml-experiences-tile-label,
+.bml-experiences-showcase-tile.active .bml-experiences-tile-label {
+    color: #ffffff;
+}
+
+.bml-experiences-showcase-tile:hover .bml-experiences-tile-indicator,
+.bml-experiences-showcase-tile.active .bml-experiences-tile-indicator {
+    width: 100%;
 }
 
 .bml-experiences-closing-para {
@@ -809,20 +972,60 @@
     margin: 0 auto;
 }
 
+/* RESPONSIVE SCALING */
+@media (max-width: 1140px) {
+    .bml-experiences-showcase-split {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .bml-experiences-showcase-hero {
+        min-height: 450px;
+    }
+}
+
 @media (max-width: 1024px) {
     .bml-experiences-section { padding: 80px 20px; }
-    .bml-experiences-gallery { grid-template-columns: repeat(4, 1fr); gap: 12px; }
 }
 
 @media (max-width: 768px) {
     .bml-experiences-section { padding: 64px 18px; }
-    .bml-experiences-gallery { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .bml-experiences-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .bml-experiences-showcase-hero {
+        min-height: 380px;
+    }
+    .bml-experiences-hero-content {
+        padding: 30px;
+    }
+    .bml-experiences-hero-title {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 480px) {
     .bml-experiences-section { padding: 52px 14px; }
-    .bml-experiences-gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .bml-experience-label { font-size: 11px; }
+    .bml-experiences-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .bml-experiences-showcase-hero {
+        min-height: 320px;
+    }
+    .bml-experiences-hero-content {
+        padding: 20px;
+    }
+    .bml-experiences-hero-title {
+        font-size: 22px;
+    }
+    .bml-experiences-tile-label {
+        font-size: 12.5px;
+    }
+    .bml-experiences-tile-icon {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /* ============================================================

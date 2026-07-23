@@ -15,27 +15,27 @@ import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
 /* ─────────────────────────────────────────────────────────────
-   IMAGE PLACEHOLDERS — swap with real imports
-   e.g. import donorHero1 from '../../assets/DonorRiverCruises/hero1.jpg'
+   IMAGE IMPORTS
 ──────────────────────────────────────────────────────────────── */
-// const HERO_1            = 'https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1600&q=80'
-// const HERO_2            = 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=80'
-// const HERO_3            = 'https://images.unsplash.com/photo-1469796466635-455ede028aca?w=1600&q=80'
+import HERO_1 from '../../assets/DonorRiverCruises/hero1.webp'
+import HERO_2 from '../../assets/DonorRiverCruises/hero2.webp'
+import HERO_3 from '../../assets/DonorRiverCruises/hero3.webp'
 
-// const WHY_TRAVEL_IMG    = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80'
-// const RHINE_IMG         = 'https://images.unsplash.com/photo-1599921841143-819065a55cc5?w=900&q=80'
-// const DANUBE_IMG        = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80'
-// const SEINE_IMG         = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80'
-// const DOURO_IMG         = 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=900&q=80'
-// const LECTURE_IMG       = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80'
-// const LUXURY_SHIP_IMG   = 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=80'
-// const ANGELA_IMG        = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80'
+import WHY_TRAVEL_IMG from '../../assets/DonorRiverCruises/why-travel.png'
+import RHINE_IMG from '../../assets/DonorRiverCruises/rhine-cruise.webp'
+import DANUBE_IMG from '../../assets/DonorRiverCruises/danube-cruise.webp'
+import SEINE_IMG from '../../assets/DonorRiverCruises/seine-cruise.jpg'
+import DOURO_IMG from '../../assets/DonorRiverCruises/douro-cruise.webp'
+import LECTURE_IMG from '../../assets/DonorRiverCruises/lecture-presentation.webp'
+import LUXURY_SHIP_IMG from '../../assets/DonorRiverCruises/luxury-ship.webp'
+import ANGELA_IMG from '../../assets/Media (2).jpg'
+import { Link } from 'react-router'
 
 /* ════════════════════════════════════════════════════════════ */
 
 function DonorRiverCruises() {
 
-    const heroImages = []
+    const heroImages = [HERO_1, HERO_2, HERO_3]
     const [currentHero, setCurrentHero] = useState(0)
     useEffect(() => {
         const t = setInterval(() => setCurrentHero(p => (p + 1) % heroImages.length), 5000)
@@ -133,46 +133,61 @@ function DonorRiverCruises() {
             {/* ══════════════════════════════════
                 INTRO (existing medi-intro section)
             ══════════════════════════════════ */}
-            <section className="medi-intro-section medi-premium-intro-section">
-                <div className="medi-intro-container">
-                    <div className="medi-intro-grid-layout">
+            {/* ══════════════════════════════════
+                INTRO (Redesigned custom drc-intro section)
+            ══════════════════════════════════ */}
+            <section className="drc-intro-section">
+                <div className="drc-intro-container">
+                    <div className="drc-intro-grid">
 
-                        <div className="medi-intro-heading-column">
-                            <span className="medi-premium-mini-badge">DONOR ENGAGEMENT TRAVEL</span>
-                            <h2 className="medi-section-heading">Donor River Cruises</h2>
-                            <div className="medi-heading-separator-bar"></div>
-                            <div className="medi-intro-highlight-box">
-                                "One of the most effective yet often overlooked strategies is donor travel."
+                        {/* LEFT COLUMN: Quote & Branding Card */}
+                        <div className="drc-intro-left">
+                            <div className="drc-intro-branding-card">
+                                <span className="drc-intro-badge">Donor Engagement Travel</span>
+                                <h2 className="drc-intro-heading">Donor River Cruises</h2>
+                                <div className="drc-intro-line"></div>
+                                <div className="drc-intro-quote-box">
+                                    <span className="drc-intro-quote-symbol">“</span>
+                                    <p className="drc-intro-quote-text">
+                                        One of the most effective yet often overlooked strategies is donor travel.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="medi-intro-content-column">
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '20px' }}>
-                                In today's competitive fundraising environment, organizations are continually seeking meaningful ways to engage donors, strengthen relationships, and cultivate long-term support.
-                            </p>
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '20px' }}>
-                                Whether organized by a university, museum, nonprofit organization, foundation, healthcare institution, or cultural association, donor river cruises have become a powerful engagement tool for advancement professionals.
-                            </p>
-                            <p style={{ fontSize: '17px', color: '#4a5568', lineHeight: '1.8', marginBottom: '32px' }}>
-                                At Trips &amp; Ships Luxury Travel, we help organizations create extraordinary donor travel experiences that foster relationships, celebrate supporters, and inspire continued philanthropy.
-                            </p>
+                        {/* RIGHT COLUMN: Description & Badges */}
+                        <div className="drc-intro-right">
+                            <div className="drc-intro-content">
+                                <p className="drc-intro-para">
+                                    In today's competitive fundraising environment, organizations are continually seeking meaningful ways to engage donors, strengthen relationships, and cultivate long-term support.
+                                </p>
+                                <p className="drc-intro-para">
+                                    Whether organized by a university, museum, nonprofit organization, foundation, healthcare institution, or cultural association, donor river cruises have become a powerful engagement tool for advancement professionals.
+                                </p>
+                                <p className="drc-intro-para drc-intro-para-highlight">
+                                    At Trips &amp; Ships Luxury Travel, we help organizations create extraordinary donor travel experiences that foster relationships, celebrate supporters, and inspire continued philanthropy.
+                                </p>
+                            </div>
 
-                            {/* Quick-glance org types */}
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                                {['Universities', 'Alumni Associations', 'Nonprofits', 'Museums', 'Foundations', 'Healthcare Institutions', 'Cultural Organizations', 'Major Donor Programs'].map((org, i) => (
-                                    <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'var(--medi-bg-soft)', color: 'var(--medi-navy)', fontSize: '13px', fontWeight: '600', padding: '8px 16px', borderRadius: '30px', border: '1px solid rgba(39,68,114,0.12)' }}>
-                                        <CheckCircle size={13} style={{ color: 'var(--medi-green)' }} />
-                                        {org}
-                                    </span>
-                                ))}
+                            <div className="drc-intro-badge-container">
+                                <span className="drc-intro-badge-title">Designed for advancement programs:</span>
+                                <div className="drc-intro-badge-grid">
+                                    {['Universities', 'Alumni Associations', 'Nonprofits', 'Museums', 'Foundations', 'Healthcare Institutions', 'Cultural Organizations', 'Major Donor Programs'].map((org, i) => (
+                                        <div key={i} className="drc-intro-org-badge">
+                                            <CheckCircle size={14} className="drc-intro-org-icon" />
+                                            <span className="drc-intro-org-text">{org}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
             {/* ══════════════════════════════════
-                WHY DONOR TRAVEL WORKS (new section, own css)
+                WHY DONOR TRAVEL WORKS (Redesigned section)
             ══════════════════════════════════ */}
             <section className="drc-why-section">
                 <div className="drc-why-container">
@@ -180,38 +195,49 @@ function DonorRiverCruises() {
                         <span className="medi-itinerary-eyebrow">THE POWER OF TRAVEL</span>
                         <h2 className="medi-section-heading">Why Donor Travel Programs Work</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    </div>
-
-                    <div className="drc-why-layout">
-                        {/* Image col */}
-                        <div className="drc-why-image-col">
-                            {/* <img src={WHY_TRAVEL_IMG} alt="Donors on a river cruise" /> */}
-                            <div className="drc-why-image-overlay"></div>
-                            <div className="drc-why-image-stat">
-                                <p className="drc-why-image-stat-text">Traditional fundraising events often provide only a few hours of interaction. A donor river cruise offers something completely different.</p>
-                            </div>
-                        </div>
-
-                        {/* Content col */}
-                        <div className="drc-why-content-col">
+                        <div className="drc-why-intro-center">
                             <p className="drc-why-content-intro">
                                 A donor river cruise offers something completely different. Guests spend several days together sharing experiences, exploring destinations, learning from experts, and building authentic relationships.
                             </p>
                             <p className="drc-why-content-intro">
                                 The relaxed atmosphere allows conversations to develop naturally and creates opportunities for deeper engagement than traditional donor events.
                             </p>
+                        </div>
+                    </div>
 
+                    <div className="drc-why-timeline-split">
+                        {/* LEFT COLUMN: Visual Media Card */}
+                        <div className="drc-why-image-col">
+                            <div className="drc-why-image-wrapper">
+                                <img src={WHY_TRAVEL_IMG} alt="Donors on a river cruise" className="drc-why-img" />
+                                <div className="drc-why-image-overlay"></div>
+                                <div className="drc-why-image-stat">
+                                    <p className="drc-why-image-stat-text">
+                                        Traditional fundraising events often provide only a few hours of interaction. A donor river cruise offers something completely different.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* RIGHT COLUMN: Interactive Vertical Timeline Track */}
+                        <div className="drc-why-timeline-track">
+                            <div className="drc-why-timeline-line"></div>
                             {[
                                 [Calendar, 'Several Days Together', 'Extended time creates relationship depth impossible in a single-event format.'],
                                 [Compass, 'Shared Experiences', 'Exploring destinations together builds lasting memories and genuine connections.'],
                                 [GraduationCap, 'Learning from Experts', 'Faculty and leadership share knowledge in an immersive setting.'],
                                 [HeartHandshake, 'Building Authentic Relationships', 'Organic conversations develop naturally in a relaxed atmosphere.'],
                             ].map(([Icon, title, desc], i) => (
-                                <div key={i} className="drc-why-point-card">
-                                    <div className="drc-why-point-icon"><Icon size={20} /></div>
-                                    <div className="drc-why-point-body">
-                                        <h4>{title}</h4>
-                                        <p>{desc}</p>
+                                <div key={i} className="drc-why-timeline-item">
+                                    <div className="drc-why-timeline-node">
+                                        <span>0{i + 1}</span>
+                                    </div>
+                                    <div className="drc-why-timeline-card">
+                                        <div className="drc-why-point-icon"><Icon size={20} /></div>
+                                        <div className="drc-why-point-body">
+                                            <h4>{title}</h4>
+                                            <p>{desc}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -312,6 +338,11 @@ function DonorRiverCruises() {
                             <div className="drc-benefit-icon-box"><Users size={24} /></div>
                             <h3 className="drc-benefit-title">Encourage Peer Connections</h3>
                             <p className="drc-benefit-desc">Donor travel also helps supporters connect with one another. Guests often form friendships based on shared interests, values, and experiences.</p>
+                            <ul className="drc-benefit-sublist">
+                                {['Shared interests', 'Shared values', 'Shared experiences', 'Friendship formation'].map((item, i) => (
+                                    <li key={i}><CheckCircle size={14} /><span>{item}</span></li>
+                                ))}
+                            </ul>
                             <p style={{ fontSize: '13.5px', color: '#64748b', marginTop: '12px', lineHeight: '1.5' }}>
                                 This sense of community can strengthen overall organizational engagement.
                             </p>
@@ -344,11 +375,11 @@ function DonorRiverCruises() {
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
 
-                    <div className="drc-destinations-grid">
+                    <div className="drc-destinations-list-wrapper">
                         {/* Rhine */}
-                        <div className="drc-destination-card">
+                        <div className="drc-destination-row">
                             <div className="drc-destination-image-wrap">
-                                {/* <img src={RHINE_IMG} alt="Rhine River Cruise" /> */}
+                                <img src={RHINE_IMG} alt="Rhine River Cruise" />
                                 <span className="drc-destination-badge">Most Requested</span>
                             </div>
                             <div className="drc-destination-body">
@@ -372,9 +403,9 @@ function DonorRiverCruises() {
                         </div>
 
                         {/* Danube */}
-                        <div className="drc-destination-card">
+                        <div className="drc-destination-row">
                             <div className="drc-destination-image-wrap">
-                                {/* <img src={DANUBE_IMG} alt="Danube River Cruise" /> */}
+                                <img src={DANUBE_IMG} alt="Danube River Cruise" />
                                 <span className="drc-destination-badge">Cultural Immersion</span>
                             </div>
                             <div className="drc-destination-body">
@@ -398,9 +429,9 @@ function DonorRiverCruises() {
                         </div>
 
                         {/* Seine */}
-                        <div className="drc-destination-card">
+                        <div className="drc-destination-row">
                             <div className="drc-destination-image-wrap">
-                                {/* <img src={SEINE_IMG} alt="Seine River Cruise" /> */}
+                                <img src={SEINE_IMG} alt="Seine River Cruise" />
                                 <span className="drc-destination-badge">Arts & Culture</span>
                             </div>
                             <div className="drc-destination-body">
@@ -424,9 +455,9 @@ function DonorRiverCruises() {
                         </div>
 
                         {/* Douro */}
-                        <div className="drc-destination-card">
+                        <div className="drc-destination-row">
                             <div className="drc-destination-image-wrap">
-                                {/* <img src={DOURO_IMG} alt="Douro River Cruise" /> */}
+                                <img src={DOURO_IMG} alt="Douro River Cruise" />
                                 <span className="drc-destination-badge">Luxury Favourite</span>
                             </div>
                             <div className="drc-destination-body">
@@ -459,7 +490,7 @@ function DonorRiverCruises() {
 
                     <div className="drc-education-layout">
                         <div className="drc-education-image-col">
-                            {/* <img src={LECTURE_IMG} alt="Faculty lecture on a donor cruise" /> */}
+                            <img src={LECTURE_IMG} alt="Faculty lecture on a donor cruise" />
                         </div>
 
                         <div className="drc-education-content-col">
@@ -543,7 +574,7 @@ function DonorRiverCruises() {
                         </div>
 
                         <div className="drc-luxury-image-col">
-                            {/* <img src={LUXURY_SHIP_IMG} alt="Luxury river cruise ship" /> */}
+                            <img src={LUXURY_SHIP_IMG} alt="Luxury river cruise ship" />
                         </div>
                     </div>
                 </div>
@@ -589,7 +620,7 @@ function DonorRiverCruises() {
                     <div className="medi-expert-editorial-card">
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Travel Expert" /> */}
+                                <img src={ANGELA_IMG} alt="Angela Hughes - Luxury Travel Expert" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                         </div>
@@ -733,10 +764,10 @@ function DonorRiverCruises() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Explore Program Options

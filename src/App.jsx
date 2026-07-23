@@ -596,7 +596,7 @@ function App() {
           />
 
           <Route
-            path="//family-governance-retreats"
+            path="/family-governance-retreats"
             element={<Familygovernanceretreats />}
           />
 

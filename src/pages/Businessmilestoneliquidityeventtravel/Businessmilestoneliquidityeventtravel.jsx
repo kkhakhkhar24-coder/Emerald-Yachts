@@ -2,39 +2,39 @@ import Navbar from '../../components/Navbar/Navbar'
 import '../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css'
 import './Businessmilestoneliquidityeventtravel.css'
 
-// import hero1 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero1.jpg'
-// import hero2 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero2.jpg'
-// import hero3 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero3.jpg'
+import hero1 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero1.png'
+import hero2 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero2.png'
+import hero3 from '../../assets/BusinessMilestoneLiquidityEventTravel/hero3.png'
 
-// import liquidityEventImg from '../../assets/BusinessMilestoneLiquidityEventTravel/liquidity-event-celebration.webp'
-// import executiveMilestoneImg from '../../assets/BusinessMilestoneLiquidityEventTravel/executive-milestone-vacation.webp'
+import liquidityEventImg from '../../assets/BusinessMilestoneLiquidityEventTravel/liquidity-event-celebration.png'
+import executiveMilestoneImg from '../../assets/BusinessMilestoneLiquidityEventTravel/executive-milestone-vacation.png'
 
-// import destMediterranean from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-mediterranean-yacht-cruise.webp'
-// import destAfricanSafari from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-african-safari.webp'
-// import destAntarctica from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-antarctica-expedition.webp'
-// import destEuropeanRiver from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-european-river-cruise.webp'
-// import destPrivateIsland from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-private-island-escape.webp'
-// import destWellnessRetreat from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-luxury-wellness-retreat.webp'
-// import destAlpine from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-alpine-resort.webp'
-// import destTropicalVilla from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-tropical-villa.webp'
-// import destLuxuryRail from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-luxury-rail-journey.webp'
-// import destAroundWorld from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-around-the-world-adventure.webp'
+import destMediterranean from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-mediterranean-yacht-cruise.png'
+import destAfricanSafari from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-african-safari.webp'
+import destAntarctica from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-antarctica-expedition.jpg'
+import destEuropeanRiver from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-european-river-cruise.webp'
+import destPrivateIsland from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-private-island-escape.jpg'
+import destWellnessRetreat from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-luxury-wellness-retreat.webp'
+import destAlpine from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-alpine-resort.jpg'
+import destTropicalVilla from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-tropical-villa.webp'
+import destLuxuryRail from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-luxury-rail-journey.webp'
+import destAroundWorld from '../../assets/BusinessMilestoneLiquidityEventTravel/destination-around-the-world-adventure.webp'
 
-// import expYachtCharter from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-yacht-charter.webp'
-// import expHelicopter from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-helicopter-tour.webp'
-// import expWineTasting from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-wine-tasting.webp'
-// import expMichelinDining from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-michelin-starred-dining.webp'
-// import expCulturalTour from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-cultural-tour.webp'
-// import expVipSporting from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-vip-sporting-event.webp'
-// import expGolf from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-luxury-golf.webp'
-// import expSafari from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-safari-adventure.webp'
-// import expExpeditionCruise from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-expedition-cruise.webp'
-// import expConcert from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-concert.webp'
-// import expAnniversary from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-anniversary-celebration.webp'
-// import expGiftsSurprises from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-personalized-gifts-surprises.webp'
+import expYachtCharter from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-yacht-charter.webp'
+import expHelicopter from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-helicopter-tour.webp'
+import expWineTasting from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-wine-tasting.png'
+import expMichelinDining from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-michelin-starred-dining.webp'
+import expCulturalTour from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-cultural-tour.webp'
+import expVipSporting from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-vip-sporting-event.webp'
+import expGolf from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-luxury-golf.png'
+import expSafari from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-safari-adventure.webp'
+import expExpeditionCruise from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-expedition-cruise.jpg'
+import expConcert from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-private-concert.webp'
+import expAnniversary from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-anniversary-celebration.webp'
+import expGiftsSurprises from '../../assets/BusinessMilestoneLiquidityEventTravel/experience-personalized-gifts-surprises.webp'
 
-// import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
-// import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_AH.jpg'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 import {
     Trophy, RefreshCw, Users, Heart, Sparkles, Compass, Award, Star,
@@ -50,10 +50,11 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function BusinessMilestoneLiquidityEventTravel() {
     const [bmlCurrentHero, setBmlCurrentHero] = useState(0)
-    const bmlHeroImages = []
+    const bmlHeroImages = [hero1, hero2, hero3]
 
     useEffect(() => {
         const bmlTimer = setInterval(() => {
@@ -66,6 +67,8 @@ function BusinessMilestoneLiquidityEventTravel() {
     const bmlToggleFaq = (index) => {
         setBmlActiveFaq(bmlActiveFaq === index ? null : index)
     }
+
+    const [bmlActiveExpIndex, setBmlActiveExpIndex] = useState(0)
 
     const bmlWhyItems = [
         { text: 'Reflect on your accomplishments', icon: Compass },
@@ -101,16 +104,16 @@ function BusinessMilestoneLiquidityEventTravel() {
     ]
 
     const bmlDestinations = [
-        // { name: 'Mediterranean Yacht Cruises', img: destMediterranean },
-        // { name: 'African Safaris', img: destAfricanSafari },
-        // { name: 'Antarctica Expeditions', img: destAntarctica },
-        // { name: 'European River Cruises', img: destEuropeanRiver },
-        // { name: 'Private Island Escapes', img: destPrivateIsland },
-        // { name: 'Luxury Wellness Retreats', img: destWellnessRetreat },
-        // { name: 'Alpine Resorts', img: destAlpine },
-        // { name: 'Tropical Villas', img: destTropicalVilla },
-        // { name: 'Luxury Rail Journeys', img: destLuxuryRail },
-        // { name: 'Around-the-World Adventures', img: destAroundWorld }
+        { name: 'Mediterranean Yacht Cruises', img: destMediterranean },
+        { name: 'African Safaris', img: destAfricanSafari },
+        { name: 'Antarctica Expeditions', img: destAntarctica },
+        { name: 'European River Cruises', img: destEuropeanRiver },
+        { name: 'Private Island Escapes', img: destPrivateIsland },
+        { name: 'Luxury Wellness Retreats', img: destWellnessRetreat },
+        { name: 'Alpine Resorts', img: destAlpine },
+        { name: 'Tropical Villas', img: destTropicalVilla },
+        { name: 'Luxury Rail Journeys', img: destLuxuryRail },
+        { name: 'Around-the-World Adventures', img: destAroundWorld }
     ]
 
     const bmlAudienceItems = [
@@ -125,18 +128,18 @@ function BusinessMilestoneLiquidityEventTravel() {
     ]
 
     const bmlExperiences = [
-        // { text: 'Private yacht charters', img: expYachtCharter, icon: Anchor },
-        // { text: 'Helicopter tours', img: expHelicopter, icon: Plane },
-        // { text: 'Wine tastings', img: expWineTasting, icon: Wine },
-        // { text: 'Michelin-starred dining', img: expMichelinDining, icon: Utensils },
-        // { text: 'Private cultural tours', img: expCulturalTour, icon: CompassIcon },
-        // { text: 'VIP sporting events', img: expVipSporting, icon: Flag },
-        // { text: 'Luxury golf experiences', img: expGolf, icon: Flag },
-        // { text: 'Safari adventures', img: expSafari, icon: TreePine },
-        // { text: 'Expedition cruises', img: expExpeditionCruise, icon: Ship },
-        // { text: 'Private concerts', img: expConcert, icon: Music },
-        // { text: 'Anniversary celebrations', img: expAnniversary, icon: PartyPopper },
-        // { text: 'Personalized gifts and surprises', img: expGiftsSurprises, icon: Gift }
+        { text: 'Private yacht charters', img: expYachtCharter, icon: Anchor },
+        { text: 'Helicopter tours', img: expHelicopter, icon: Plane },
+        { text: 'Wine tastings', img: expWineTasting, icon: Wine },
+        { text: 'Michelin-starred dining', img: expMichelinDining, icon: Utensils },
+        { text: 'Private cultural tours', img: expCulturalTour, icon: CompassIcon },
+        { text: 'VIP sporting events', img: expVipSporting, icon: Flag },
+        { text: 'Luxury golf experiences', img: expGolf, icon: Flag },
+        { text: 'Safari adventures', img: expSafari, icon: TreePine },
+        { text: 'Expedition cruises', img: expExpeditionCruise, icon: Ship },
+        { text: 'Private concerts', img: expConcert, icon: Music },
+        { text: 'Anniversary celebrations', img: expAnniversary, icon: PartyPopper },
+        { text: 'Personalized gifts and surprises', img: expGiftsSurprises, icon: Gift }
     ]
 
     const bmlConciergeItems = [
@@ -469,7 +472,7 @@ function BusinessMilestoneLiquidityEventTravel() {
             <section className="bml-liquidity-section">
                 <div className="bml-liquidity-container">
                     <div className="bml-liquidity-image-block">
-                        {/* <img src={liquidityEventImg} alt="Liquidity event celebration" className="bml-liquidity-image" /> */}
+                        <img src={liquidityEventImg} alt="Liquidity event celebration" className="bml-liquidity-image" />
                         <div className="bml-liquidity-image-overlay"></div>
                         <div className="bml-liquidity-floating-badge">
                             <TrendingUp size={16} />
@@ -533,7 +536,7 @@ function BusinessMilestoneLiquidityEventTravel() {
                         </p>
                     </div>
                     <div className="bml-executive-image-block">
-                        {/* <img src={executiveMilestoneImg} alt="Executive milestone vacation" className="bml-executive-image" /> */}
+                        <img src={executiveMilestoneImg} alt="Executive milestone vacation" className="bml-executive-image" />
                         <div className="bml-executive-image-overlay"></div>
                     </div>
                 </div>
@@ -557,7 +560,7 @@ function BusinessMilestoneLiquidityEventTravel() {
                         {bmlDestinations.map((dest, idx) => (
                             <div key={idx} className="bml-destination-card">
                                 <div className="bml-destination-photo">
-                                    {/* <img src={dest.img} alt={dest.name} className="bml-destination-img" /> */}
+                                    <img src={dest.img} alt={dest.name} className="bml-destination-img" />
                                 </div>
                                 <div className="bml-destination-caption">
                                     <MapPin size={13} />
@@ -618,21 +621,68 @@ function BusinessMilestoneLiquidityEventTravel() {
                     <p className="bml-experiences-subtext">
                         Experiences may include:
                     </p>
-                    <div className="bml-experiences-gallery">
-                        {bmlExperiences.map((exp, idx) => {
-                            const IconComp = exp.icon
-                            return (
-                                <div key={idx} className="bml-experience-card">
-                                    {/* <img src={exp.img} alt={exp.text} className="bml-experience-img" /> */}
-                                    <div className="bml-experience-card-overlay"></div>
-                                    <div className="bml-experience-icon-badge">
-                                        <IconComp size={15} />
-                                    </div>
-                                    <span className="bml-experience-label">{exp.text}</span>
+                    
+                    <div className="bml-experiences-showcase-split">
+                        {/* FEATURED EXPERIENCE HERO CARD */}
+                        <div className="bml-experiences-showcase-hero">
+                            {bmlExperiences.map((exp, idx) => (
+                                <div
+                                    key={idx}
+                                    className={`bml-experiences-hero-bg-wrapper ${bmlActiveExpIndex === idx ? 'active' : ''}`}
+                                >
+                                    <div
+                                        className="bml-experiences-hero-bg"
+                                        style={{ backgroundImage: `url(${exp.img})` }}
+                                    />
                                 </div>
-                            )
-                        })}
+                            ))}
+                            <div className="bml-experiences-hero-overlay"></div>
+                            <div className="bml-experiences-hero-content">
+                                <span className="bml-experiences-hero-tag">Signature Experience</span>
+                                <div className="bml-experiences-hero-icon-box">
+                                    {(() => {
+                                        const IconComponent = bmlExperiences[bmlActiveExpIndex].icon;
+                                        return <IconComponent size={32} />;
+                                    })()}
+                                </div>
+                                <h3 className="bml-experiences-hero-title">
+                                    {bmlExperiences[bmlActiveExpIndex].text}
+                                </h3>
+                                <p className="bml-experiences-hero-description">
+                                    Tailored specifically to your milestones for an unforgettable celebration.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* SELECTION GRID */}
+                        <div className="bml-experiences-showcase-grid">
+                            {bmlExperiences.map((exp, idx) => {
+                                const IconComp = exp.icon
+                                return (
+                                    <div
+                                        key={idx}
+                                        className={`bml-experiences-showcase-tile ${bmlActiveExpIndex === idx ? 'active' : ''}`}
+                                        onMouseEnter={() => setBmlActiveExpIndex(idx)}
+                                        onClick={() => setBmlActiveExpIndex(idx)}
+                                    >
+                                        <div
+                                            className="bml-experiences-tile-bg"
+                                            style={{ backgroundImage: `url(${exp.img})` }}
+                                        />
+                                        <div className="bml-experiences-tile-overlay"></div>
+                                        <div className="bml-experiences-tile-content">
+                                            <div className="bml-experiences-tile-icon">
+                                                <IconComp size={18} />
+                                            </div>
+                                            <span className="bml-experiences-tile-label">{exp.text}</span>
+                                        </div>
+                                        <div className="bml-experiences-tile-indicator"></div>
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
+
                     <p className="bml-experiences-closing-para">
                         Every itinerary is tailored to your vision.
                     </p>
@@ -713,7 +763,7 @@ function BusinessMilestoneLiquidityEventTravel() {
 
                         <div className="medi-editorial-portrait-block">
                             <div className="medi-editorial-image-frame">
-                                {/* <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Executive Travel Advisor" /> */}
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Executive Travel Advisor" />
                                 <div className="medi-editorial-gradient-layer"></div>
                             </div>
                             <div className="medi-editorial-floating-stat">
@@ -863,10 +913,10 @@ function BusinessMilestoneLiquidityEventTravel() {
                         </p>
 
                         <div className="medi-cta-button-group">
-                            <button className="medi-primary-cta-button">
+                            <Link to="/contact" className="medi-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
-                            </button>
+                            </Link>
                             <button className="medi-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Request Celebration Options
