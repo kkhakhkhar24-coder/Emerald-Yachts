@@ -122,6 +122,9 @@ import Buildingstrongerfamiliesthroughtravel from "./pages/Buildingstrongerfamil
 import Scenicluxuryyachtguide from "./pages/Scenicluxuryyachtguide/Scenicluxuryyachtguide";
 import Sceniceclipsereviews from "./pages/Sceniceclipsereviews/Sceniceclipsereviews";
 import Sceniceclipseiireviews from "./pages/Sceniceclipseiireviews/Sceniceclipseiireviews";
+import ScenicvsPonant from "./pages/ScenicvsPonant/ScenicvsPonant";
+import ScenicVsSeabourn from "./pages/ScenicvsSeabourn/ScenicvsSeabourn";
+import IsScenicWorthIt from "./pages/IsScenicworthit/IsScenicWorthIt";
 
 function App() {
   return (
@@ -673,10 +676,21 @@ function App() {
           path="/scenic-eclipse-ii-reviews"
           element={<Sceniceclipseiireviews />}
           />
-
-
-
           
+          <Route
+          path="/scenic-vs-ponant"
+          element={<ScenicvsPonant />}
+          />
+          
+          <Route
+          path="/scenic-vs-seabourn"
+          element={<ScenicVsSeabourn />}
+          />
+          
+          <Route
+          path="/is-scenic-worth-it"
+          element={<IsScenicWorthIt />}
+          />
 
         </Routes>
       </BrowserRouter>

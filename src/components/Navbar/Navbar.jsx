@@ -855,13 +855,19 @@ const Navbar = () => {
                   >
                     Scenic Eclipse Ii Reviews</NavLink>
 
-
-
-
-
+                    <NavLink
+                    to="/scenic-vs-seabourn"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Vs Seabourn</NavLink>                    
                     
-
-                    
+                    <NavLink
+                    to="/is-scenic-worth-it"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Is Scenic Worth It</NavLink>                    
             </div>
           </div>
         </div>
@@ -1702,6 +1708,19 @@ const Navbar = () => {
                   >
                     Scenic Eclipse Reviews</NavLink>
 
+                    <NavLink
+                    to="/scenic-vs-seabourn"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Vs Seabourn</NavLink>
+                    
+                    <NavLink
+                    to="/is-scenic-worth-it"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Is Scenic Worth It</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

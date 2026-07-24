@@ -1,0 +1,1394 @@
+/* =============================================================
+   ScenicVsPonant.css
+   Self-contained styles (scoped "svp-" prefix) for the
+   Scenic vs Ponant comparison page.
+   Color palette follows the Trips & Ships design system.
+   Fully responsive: desktop / tablet / mobile.
+   ============================================================= */
+
+:root {
+    --svp-navy: #274472;
+    --svp-navy-dark: #0f1c2e;
+    --svp-navy-deepest: #0a1120;
+    --svp-blue-accent: #3b82f6;
+    --svp-bg-soft: #f1f5f9;
+    --svp-bg-white: #ffffff;
+    --svp-text-body: #4a5568;
+    --svp-text-dark: #2d3748;
+    --svp-border: #e2e8f0;
+}
+
+/* ── GLOBAL / RESET FOR THIS PAGE ───────────────────────────── */
+
+.svp-hero-section, .svp-intro-section, .svp-glance-section, .svp-about-section,
+.svp-compare-section, .svp-expedition-section, .svp-service-section,
+.svp-pricing-section, .svp-choose-section, .svp-whybook-section,
+.svp-editorial-section, .svp-final-section, .svp-faq-main-section,
+.svp-cta-main-section {
+    box-sizing: border-box;
+}
+
+.svp-hero-section *, .svp-intro-section *, .svp-glance-section *, .svp-about-section *,
+.svp-compare-section *, .svp-expedition-section *, .svp-service-section *,
+.svp-pricing-section *, .svp-choose-section *, .svp-whybook-section *,
+.svp-editorial-section *, .svp-final-section *, .svp-faq-main-section *,
+.svp-cta-main-section * {
+    box-sizing: border-box;
+}
+
+/* ── SHARED TYPOGRAPHY / UTILITIES ──────────────────────────── */
+
+.svp-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--svp-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.svp-eyebrow-light {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.svp-white-heading {
+    color: #ffffff !important;
+}
+
+.svp-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.svp-section-heading {
+    font-size: clamp(26px, 3.4vw, 38px);
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin: 0 0 18px 0;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.svp-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--svp-blue-accent);
+    margin: 0 0 22px 0;
+}
+
+.svp-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── IMAGE PLACEHOLDER ──────────────────────────────────────── */
+
+.svp-img-placeholder {
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #dbe4f0 0%, #c3d2e6 100%);
+    border: 1.5px dashed #9fb2cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--svp-navy);
+    opacity: 0.85;
+}
+
+.svp-img-placeholder span {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.svp-placeholder-dark {
+    background: linear-gradient(135deg, #24344f 0%, #101c30 100%);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── HERO ────────────────────────────────────────────────────── */
+
+.svp-hero-section {
+    position: relative;
+    min-height: 640px;
+    height: 90vh;
+    max-height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.svp-hero-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+
+.svp-hero-background.svp-active {
+    opacity: 1;
+}
+
+.svp-hero-bg-0 { background: linear-gradient(135deg, #1c2f4d 0%, #2f4a73 55%, #3b5c8c 100%); }
+.svp-hero-bg-1 { background: linear-gradient(135deg, #0f1c2e 0%, #274472 55%, #3b82f6 100%); }
+.svp-hero-bg-2 { background: linear-gradient(135deg, #16273f 0%, #24405f 55%, #345a86 100%); }
+
+.svp-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 17, 32, 0.35) 0%, rgba(10, 17, 32, 0.65) 100%);
+    z-index: 1;
+}
+
+.svp-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.svp-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    backdrop-filter: blur(6px);
+}
+
+.svp-hero-main-title {
+    font-size: clamp(30px, 5vw, 54px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+}
+
+.svp-hero-subtitle-text {
+    font-size: clamp(15px, 1.6vw, 19px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ── INTRO ───────────────────────────────────────────────────── */
+
+.svp-intro-section {
+    background: var(--svp-bg-white);
+    padding: 72px 20px 56px;
+}
+
+.svp-intro-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-intro-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--svp-navy);
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.svp-intro-body {
+    font-size: 16px;
+    color: var(--svp-text-body);
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+}
+
+/* ── AT A GLANCE TABLE ──────────────────────────────────────── */
+
+.svp-glance-section {
+    background: var(--svp-bg-soft);
+    padding: 72px 20px;
+}
+
+.svp-glance-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.svp-glance-table-wrap {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.1);
+    background: var(--svp-bg-white);
+}
+
+.svp-glance-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+}
+
+.svp-glance-table thead th {
+    background: var(--svp-navy);
+    color: #ffffff;
+    text-align: left;
+    padding: 16px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.svp-glance-table thead th:first-child {
+    border-radius: 16px 0 0 0;
+}
+
+.svp-glance-table thead th:last-child {
+    border-radius: 0 16px 0 0;
+}
+
+.svp-glance-table tbody td {
+    padding: 15px 22px;
+    font-size: 14.5px;
+    color: var(--svp-text-body);
+    border-bottom: 1px solid var(--svp-border);
+}
+
+.svp-glance-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.svp-glance-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.svp-glance-feature-cell {
+    font-weight: 700;
+    color: var(--svp-navy);
+}
+
+.svp-glance-cards {
+    display: none;
+}
+
+/* ── ABOUT ──────────────────────────────────────────────────── */
+
+.svp-about-section {
+    background: var(--svp-bg-white);
+    padding: 80px 20px;
+}
+
+.svp-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.svp-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.svp-about-card {
+    background: var(--svp-bg-soft);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.svp-about-card .svp-img-placeholder {
+    min-height: 220px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--svp-border);
+}
+
+.svp-about-card-body {
+    padding: 28px 28px 32px;
+}
+
+.svp-about-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin: 0 0 14px 0;
+}
+
+.svp-about-card-text {
+    font-size: 15px;
+    color: var(--svp-text-body);
+    line-height: 1.75;
+    margin: 0 0 12px 0;
+}
+
+/* ── COMPARISON SECTIONS (shared) ──────────────────────────── */
+
+.svp-compare-section {
+    background: var(--svp-bg-white);
+    padding: 76px 20px;
+}
+
+.svp-bg-soft {
+    background: var(--svp-bg-soft);
+}
+
+.svp-compare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.svp-compare-intro {
+    max-width: 780px;
+    margin: 0 auto 8px;
+    font-size: 15.5px;
+    color: var(--svp-text-body);
+    line-height: 1.75;
+}
+
+.svp-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+}
+
+.svp-compare-col {
+    background: var(--svp-bg-white);
+    border: 1px solid var(--svp-border);
+    border-radius: 18px;
+    padding: 28px 26px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.svp-bg-soft .svp-compare-col {
+    background: var(--svp-bg-white);
+}
+
+.svp-compare-col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--svp-border);
+}
+
+.svp-compare-col-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin: 0;
+}
+
+.svp-col-scenic { color: var(--svp-navy); }
+.svp-col-ponant { color: var(--svp-blue-accent); }
+.svp-col-ponant h3 { color: var(--svp-blue-accent); }
+
+.svp-compare-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.svp-compare-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--svp-text-body);
+    line-height: 1.5;
+}
+
+.svp-compare-list li svg {
+    color: var(--svp-blue-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── TAG CLOUD (Destinations) ──────────────────────────────── */
+
+.svp-tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.svp-tag {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: var(--svp-bg-soft);
+    color: var(--svp-navy);
+}
+
+.svp-tag-ponant {
+    background: #e8f0fe;
+    color: var(--svp-blue-accent);
+}
+
+/* ── ICON LIST (Included Amenities) ────────────────────────── */
+
+.svp-icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svp-icon-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--svp-text-body);
+}
+
+.svp-icon-list-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.svp-icon-scenic {
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--svp-navy);
+}
+
+.svp-icon-ponant {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--svp-blue-accent);
+}
+
+/* ── EXPEDITION (dark feature section) ─────────────────────── */
+
+.svp-expedition-section {
+    position: relative;
+    padding: 88px 20px;
+    background: var(--svp-navy-deepest);
+    overflow: hidden;
+}
+
+.svp-expedition-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+}
+
+.svp-expedition-bg-placeholder .svp-img-placeholder {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.svp-expedition-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 17, 32, 0.75) 0%, rgba(10, 17, 32, 0.92) 100%);
+}
+
+.svp-expedition-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-expedition-intro {
+    max-width: 760px;
+    margin: 0 auto 8px;
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.75;
+}
+
+.svp-expedition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+    text-align: left;
+}
+
+.svp-expedition-col {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 28px 26px;
+}
+
+.svp-expedition-col h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+}
+
+.svp-expedition-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.svp-expedition-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.5;
+}
+
+.svp-expedition-list li svg {
+    color: var(--svp-blue-accent);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* ── SERVICE COMPARISON ────────────────────────────────────── */
+
+.svp-service-section {
+    background: var(--svp-bg-soft);
+    padding: 80px 20px;
+}
+
+.svp-service-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.svp-service-card {
+    background: var(--svp-bg-white);
+    border-radius: 18px;
+    padding: 30px 28px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.svp-service-card svg {
+    color: var(--svp-blue-accent);
+    margin-bottom: 12px;
+}
+
+.svp-service-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin: 0 0 14px 0;
+}
+
+.svp-service-card ul {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.svp-service-card li {
+    font-size: 14.5px;
+    color: var(--svp-text-body);
+    line-height: 1.5;
+}
+
+.svp-service-footer {
+    margin-top: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svp-service-footer p {
+    font-size: 15px;
+    color: var(--svp-text-body);
+    line-height: 1.7;
+}
+
+/* ── PRICING ────────────────────────────────────────────────── */
+
+.svp-pricing-section {
+    background: var(--svp-bg-white);
+    padding: 76px 20px;
+}
+
+.svp-pricing-container {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-pricing-text {
+    font-size: 16px;
+    color: var(--svp-text-body);
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+}
+
+/* ── WHO SHOULD CHOOSE ──────────────────────────────────────── */
+
+.svp-choose-section {
+    background: var(--svp-bg-soft);
+    padding: 80px 20px;
+}
+
+.svp-choose-container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.svp-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+}
+
+.svp-choose-card {
+    background: var(--svp-bg-white);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.08);
+}
+
+.svp-choose-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.svp-choose-card-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.svp-choose-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svp-choose-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--svp-text-body);
+    line-height: 1.55;
+}
+
+.svp-choose-check {
+    color: #16a34a;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── WHY BOOK WITH T&S ──────────────────────────────────────── */
+
+.svp-whybook-section {
+    background: var(--svp-bg-white);
+    padding: 80px 20px;
+}
+
+.svp-whybook-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-whybook-lead {
+    font-size: 16px;
+    color: var(--svp-text-body);
+    line-height: 1.8;
+    margin: 0 0 12px 0;
+}
+
+.svp-whybook-sub {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--svp-navy);
+    margin: 0 0 28px 0;
+}
+
+.svp-whybook-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+.svp-whybook-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--svp-bg-soft);
+    padding: 16px 18px;
+    border-radius: 14px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--svp-navy);
+}
+
+.svp-whybook-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--svp-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ── ANGELA HUGHES EDITORIAL ────────────────────────────────── */
+
+.svp-editorial-section {
+    background: var(--svp-bg-soft);
+    padding: 80px 20px;
+}
+
+.svp-editorial-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.svp-editorial-card {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 0;
+    background: var(--svp-bg-white);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(15, 28, 46, 0.1);
+}
+
+.svp-editorial-image-side {
+    padding: 32px;
+    background: var(--svp-navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.svp-editorial-image-side .svp-img-placeholder {
+    min-height: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.svp-editorial-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.svp-editorial-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.svp-editorial-stat-number {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.svp-editorial-stat-label {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.svp-editorial-stat-divider {
+    width: 1px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.svp-editorial-content-side {
+    padding: 44px 40px;
+}
+
+.svp-editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--svp-navy);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.svp-editorial-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin: 0 0 14px 0;
+}
+
+.svp-editorial-bar {
+    width: 56px;
+    height: 4px;
+    background: var(--svp-blue-accent);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.svp-editorial-text {
+    font-size: 15px;
+    color: var(--svp-text-body);
+    line-height: 1.75;
+    margin: 0 0 18px 0;
+}
+
+.svp-editorial-services-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--svp-navy);
+    margin-bottom: 12px;
+}
+
+.svp-editorial-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.svp-editorial-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--svp-bg-soft);
+    color: var(--svp-navy);
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.svp-editorial-pill svg {
+    color: #16a34a;
+}
+
+/* ── CONCLUSION / FINAL ─────────────────────────────────────── */
+
+.svp-final-section {
+    position: relative;
+    padding: 90px 20px;
+    background: var(--svp-navy-dark);
+    overflow: hidden;
+}
+
+.svp-final-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 55%);
+}
+
+.svp-final-container {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-final-eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--svp-blue-accent);
+    margin-bottom: 16px;
+}
+
+.svp-final-eyebrow-text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.svp-final-heading {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0 0 20px 0;
+}
+
+.svp-final-separator {
+    width: 64px;
+    height: 4px;
+    background: var(--svp-blue-accent);
+    border-radius: 4px;
+    margin: 0 auto 36px;
+}
+
+.svp-final-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 32px 30px;
+}
+
+.svp-final-body {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin: 0 0 14px 0;
+}
+
+.svp-final-body:last-child {
+    margin-bottom: 0;
+}
+
+.svp-final-emphasis {
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+/* ── FAQ ────────────────────────────────────────────────────── */
+
+.svp-faq-main-section {
+    background: var(--svp-bg-white);
+    padding: 80px 20px;
+}
+
+.svp-faq-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.svp-faq-list-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svp-faq-individual-item {
+    background: var(--svp-bg-soft);
+    border-radius: 14px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.svp-faq-individual-item:hover {
+    background: #e9eff8;
+}
+
+.svp-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--svp-navy);
+}
+
+.svp-faq-toggle-icon {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--svp-blue-accent);
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.svp-faq-answer-text {
+    margin: 14px 0 0 0;
+    font-size: 14.5px;
+    color: var(--svp-text-body);
+    line-height: 1.7;
+}
+
+/* ── CTA ────────────────────────────────────────────────────── */
+
+.svp-cta-main-section {
+    position: relative;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, var(--svp-navy) 0%, var(--svp-navy-dark) 100%);
+    overflow: hidden;
+}
+
+.svp-cta-bg-pattern-layer {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
+}
+
+.svp-cta-content-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.svp-cta-inner-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svp-cta-heading-white {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    line-height: 1.3;
+}
+
+.svp-cta-separator-white {
+    width: 64px;
+    height: 4px;
+    background: #ffffff;
+    opacity: 0.6;
+    border-radius: 4px;
+    margin: 0 auto 26px;
+}
+
+.svp-cta-paragraph-white {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.75;
+    margin: 0 auto 18px;
+    max-width: 720px;
+}
+
+.svp-cta-considerations-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 0 auto 26px;
+    max-width: 560px;
+    text-align: left;
+}
+
+.svp-cta-considerations-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.svp-cta-considerations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.svp-cta-considerations-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.svp-cta-considerations-icon {
+    color: #4ade80;
+    flex-shrink: 0;
+}
+
+.svp-cta-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.svp-primary-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    color: var(--svp-navy);
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.svp-primary-cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.svp-secondary-outline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.svp-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================= */
+
+/* ── Tablets (≤ 1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .svp-about-grid,
+    .svp-compare-grid,
+    .svp-expedition-grid,
+    .svp-service-grid,
+    .svp-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .svp-editorial-card {
+        grid-template-columns: 1fr;
+    }
+
+    .svp-editorial-image-side {
+        padding: 28px;
+    }
+
+    .svp-whybook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .svp-hero-section {
+        min-height: 560px;
+        height: 80vh;
+    }
+}
+
+/* ── Small tablets / large phones (≤ 768px) ─────────────────── */
+@media (max-width: 768px) {
+    .svp-hero-section {
+        min-height: 480px;
+        height: auto;
+        padding: 100px 0 70px;
+    }
+
+    .svp-hero-content-wrapper {
+        padding: 0 20px;
+    }
+
+    .svp-hero-break {
+        display: none;
+    }
+
+    .svp-intro-section,
+    .svp-glance-section,
+    .svp-about-section,
+    .svp-compare-section,
+    .svp-expedition-section,
+    .svp-service-section,
+    .svp-pricing-section,
+    .svp-choose-section,
+    .svp-whybook-section,
+    .svp-editorial-section,
+    .svp-final-section,
+    .svp-faq-main-section,
+    .svp-cta-main-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .svp-section-heading {
+        font-size: 26px;
+    }
+
+    /* Swap table for stacked cards on small screens */
+    .svp-glance-table-wrap {
+        display: none;
+    }
+
+    .svp-glance-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .svp-glance-card {
+        background: var(--svp-bg-white);
+        border-radius: 14px;
+        padding: 16px 18px;
+        box-shadow: 0 8px 22px rgba(15, 28, 46, 0.08);
+    }
+
+    .svp-glance-card-feature {
+        font-weight: 700;
+        color: var(--svp-navy);
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--svp-border);
+    }
+
+    .svp-glance-card-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 13.5px;
+        padding: 4px 0;
+    }
+
+    .svp-glance-card-label {
+        color: var(--svp-text-body);
+        font-weight: 600;
+    }
+
+    .svp-glance-card-value {
+        color: var(--svp-text-dark);
+        text-align: right;
+    }
+
+    .svp-editorial-content-side {
+        padding: 32px 26px;
+    }
+
+    .svp-cta-considerations-box {
+        max-width: 100%;
+    }
+}
+
+/* ── Phones (≤ 480px) ───────────────────────────────────────── */
+@media (max-width: 480px) {
+    .svp-hero-eyebrow-tag {
+        font-size: 10.5px;
+        padding: 8px 14px;
+    }
+
+    .svp-hero-main-title {
+        font-size: 26px;
+    }
+
+    .svp-hero-subtitle-text {
+        font-size: 14.5px;
+    }
+
+    .svp-section-heading {
+        font-size: 22px;
+    }
+
+    .svp-about-card-body,
+    .svp-compare-col,
+    .svp-expedition-col,
+    .svp-service-card,
+    .svp-choose-card {
+        padding: 22px 18px;
+    }
+
+    .svp-editorial-stats {
+        gap: 14px;
+    }
+
+    .svp-editorial-stat-number {
+        font-size: 20px;
+    }
+
+    .svp-cta-button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .svp-primary-cta-button,
+    .svp-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .svp-faq-individual-item {
+        padding: 16px 18px;
+    }
+
+    .svp-faq-question-row {
+        font-size: 14.5px;
+    }
+}
+
+/* ── Very small phones (≤ 360px) ─────────────────────────────── */
+@media (max-width: 360px) {
+    .svp-hero-main-title {
+        font-size: 23px;
+    }
+
+    .svp-section-heading {
+        font-size: 20px;
+    }
+
+    .svp-cta-considerations-box {
+        padding: 18px 16px;
+    }
+}

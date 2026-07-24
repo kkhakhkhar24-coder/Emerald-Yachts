@@ -1,0 +1,1394 @@
+/* =============================================================
+   ScenicVsSeabourn.css
+   Self-contained styles (scoped "svs-" prefix) for the
+   Scenic vs Seabourn comparison page.
+   Color palette follows the Trips & Ships design system.
+   Fully responsive: desktop / tablet / mobile.
+   ============================================================= */
+
+:root {
+    --svs-navy: #274472;
+    --svs-navy-dark: #0f1c2e;
+    --svs-navy-deepest: #0a1120;
+    --svs-blue-accent: #3b82f6;
+    --svs-bg-soft: #f1f5f9;
+    --svs-bg-white: #ffffff;
+    --svs-text-body: #4a5568;
+    --svs-text-dark: #2d3748;
+    --svs-border: #e2e8f0;
+}
+
+/* ── GLOBAL / RESET FOR THIS PAGE ───────────────────────────── */
+
+.svs-hero-section, .svs-intro-section, .svs-glance-section, .svs-about-section,
+.svs-compare-section, .svs-expedition-section, .svs-service-section,
+.svs-pricing-section, .svs-choose-section, .svs-whybook-section,
+.svs-editorial-section, .svs-final-section, .svs-faq-main-section,
+.svs-cta-main-section {
+    box-sizing: border-box;
+}
+
+.svs-hero-section *, .svs-intro-section *, .svs-glance-section *, .svs-about-section *,
+.svs-compare-section *, .svs-expedition-section *, .svs-service-section *,
+.svs-pricing-section *, .svs-choose-section *, .svs-whybook-section *,
+.svs-editorial-section *, .svs-final-section *, .svs-faq-main-section *,
+.svs-cta-main-section * {
+    box-sizing: border-box;
+}
+
+/* ── SHARED TYPOGRAPHY / UTILITIES ──────────────────────────── */
+
+.svs-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--svs-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.svs-eyebrow-light {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.svs-white-heading {
+    color: #ffffff !important;
+}
+
+.svs-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.svs-section-heading {
+    font-size: clamp(26px, 3.4vw, 38px);
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin: 0 0 18px 0;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.svs-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--svs-blue-accent);
+    margin: 0 0 22px 0;
+}
+
+.svs-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── IMAGE PLACEHOLDER ──────────────────────────────────────── */
+
+.svs-img-placeholder {
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #dbe4f0 0%, #c3d2e6 100%);
+    border: 1.5px dashed #9fb2cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--svs-navy);
+    opacity: 0.85;
+}
+
+.svs-img-placeholder span {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.svs-placeholder-dark {
+    background: linear-gradient(135deg, #24344f 0%, #101c30 100%);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── HERO ────────────────────────────────────────────────────── */
+
+.svs-hero-section {
+    position: relative;
+    min-height: 640px;
+    height: 90vh;
+    max-height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.svs-hero-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+
+.svs-hero-background.svs-active {
+    opacity: 1;
+}
+
+.svs-hero-bg-0 { background: linear-gradient(135deg, #1c2f4d 0%, #2f4a73 55%, #3b5c8c 100%); }
+.svs-hero-bg-1 { background: linear-gradient(135deg, #0f1c2e 0%, #274472 55%, #3b82f6 100%); }
+.svs-hero-bg-2 { background: linear-gradient(135deg, #16273f 0%, #24405f 55%, #345a86 100%); }
+
+.svs-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 17, 32, 0.35) 0%, rgba(10, 17, 32, 0.65) 100%);
+    z-index: 1;
+}
+
+.svs-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.svs-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    backdrop-filter: blur(6px);
+}
+
+.svs-hero-main-title {
+    font-size: clamp(30px, 5vw, 54px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+}
+
+.svs-hero-subtitle-text {
+    font-size: clamp(15px, 1.6vw, 19px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ── INTRO ───────────────────────────────────────────────────── */
+
+.svs-intro-section {
+    background: var(--svs-bg-white);
+    padding: 72px 20px 56px;
+}
+
+.svs-intro-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-intro-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--svs-navy);
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.svs-intro-body {
+    font-size: 16px;
+    color: var(--svs-text-body);
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+}
+
+/* ── AT A GLANCE TABLE ──────────────────────────────────────── */
+
+.svs-glance-section {
+    background: var(--svs-bg-soft);
+    padding: 72px 20px;
+}
+
+.svs-glance-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.svs-glance-table-wrap {
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.1);
+    background: var(--svs-bg-white);
+}
+
+.svs-glance-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+}
+
+.svs-glance-table thead th {
+    background: var(--svs-navy);
+    color: #ffffff;
+    text-align: left;
+    padding: 16px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.svs-glance-table thead th:first-child {
+    border-radius: 16px 0 0 0;
+}
+
+.svs-glance-table thead th:last-child {
+    border-radius: 0 16px 0 0;
+}
+
+.svs-glance-table tbody td {
+    padding: 15px 22px;
+    font-size: 14.5px;
+    color: var(--svs-text-body);
+    border-bottom: 1px solid var(--svs-border);
+}
+
+.svs-glance-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.svs-glance-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.svs-glance-feature-cell {
+    font-weight: 700;
+    color: var(--svs-navy);
+}
+
+.svs-glance-cards {
+    display: none;
+}
+
+/* ── ABOUT ──────────────────────────────────────────────────── */
+
+.svs-about-section {
+    background: var(--svs-bg-white);
+    padding: 80px 20px;
+}
+
+.svs-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.svs-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.svs-about-card {
+    background: var(--svs-bg-soft);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.svs-about-card .svs-img-placeholder {
+    min-height: 220px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--svs-border);
+}
+
+.svs-about-card-body {
+    padding: 28px 28px 32px;
+}
+
+.svs-about-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin: 0 0 14px 0;
+}
+
+.svs-about-card-text {
+    font-size: 15px;
+    color: var(--svs-text-body);
+    line-height: 1.75;
+    margin: 0 0 12px 0;
+}
+
+/* ── COMPARISON SECTIONS (shared) ──────────────────────────── */
+
+.svs-compare-section {
+    background: var(--svs-bg-white);
+    padding: 76px 20px;
+}
+
+.svs-bg-soft {
+    background: var(--svs-bg-soft);
+}
+
+.svs-compare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.svs-compare-intro {
+    max-width: 780px;
+    margin: 0 auto 8px;
+    font-size: 15.5px;
+    color: var(--svs-text-body);
+    line-height: 1.75;
+}
+
+.svs-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+}
+
+.svs-compare-col {
+    background: var(--svs-bg-white);
+    border: 1px solid var(--svs-border);
+    border-radius: 18px;
+    padding: 28px 26px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.svs-bg-soft .svs-compare-col {
+    background: var(--svs-bg-white);
+}
+
+.svs-compare-col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--svs-border);
+}
+
+.svs-compare-col-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin: 0;
+}
+
+.svs-col-scenic { color: var(--svs-navy); }
+.svs-col-seabourn { color: var(--svs-blue-accent); }
+.svs-col-seabourn h3 { color: var(--svs-blue-accent); }
+
+.svs-compare-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.svs-compare-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--svs-text-body);
+    line-height: 1.5;
+}
+
+.svs-compare-list li svg {
+    color: var(--svs-blue-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── TAG CLOUD (Destinations) ──────────────────────────────── */
+
+.svs-tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.svs-tag {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: var(--svs-bg-soft);
+    color: var(--svs-navy);
+}
+
+.svs-tag-seabourn {
+    background: #e8f0fe;
+    color: var(--svs-blue-accent);
+}
+
+/* ── ICON LIST (Included Amenities) ────────────────────────── */
+
+.svs-icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svs-icon-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--svs-text-body);
+}
+
+.svs-icon-list-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.svs-icon-scenic {
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--svs-navy);
+}
+
+.svs-icon-seabourn {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--svs-blue-accent);
+}
+
+/* ── EXPEDITION (dark feature section) ─────────────────────── */
+
+.svs-expedition-section {
+    position: relative;
+    padding: 88px 20px;
+    background: var(--svs-navy-deepest);
+    overflow: hidden;
+}
+
+.svs-expedition-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+}
+
+.svs-expedition-bg-placeholder .svs-img-placeholder {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.svs-expedition-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 17, 32, 0.75) 0%, rgba(10, 17, 32, 0.92) 100%);
+}
+
+.svs-expedition-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-expedition-intro {
+    max-width: 760px;
+    margin: 0 auto 8px;
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.75;
+}
+
+.svs-expedition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+    text-align: left;
+}
+
+.svs-expedition-col {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 28px 26px;
+}
+
+.svs-expedition-col h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+}
+
+.svs-expedition-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.svs-expedition-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.5;
+}
+
+.svs-expedition-list li svg {
+    color: var(--svs-blue-accent);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* ── SERVICE COMPARISON ────────────────────────────────────── */
+
+.svs-service-section {
+    background: var(--svs-bg-soft);
+    padding: 80px 20px;
+}
+
+.svs-service-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.svs-service-card {
+    background: var(--svs-bg-white);
+    border-radius: 18px;
+    padding: 30px 28px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.svs-service-card svg {
+    color: var(--svs-blue-accent);
+    margin-bottom: 12px;
+}
+
+.svs-service-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin: 0 0 14px 0;
+}
+
+.svs-service-card ul {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.svs-service-card li {
+    font-size: 14.5px;
+    color: var(--svs-text-body);
+    line-height: 1.5;
+}
+
+.svs-service-footer {
+    margin-top: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svs-service-footer p {
+    font-size: 15px;
+    color: var(--svs-text-body);
+    line-height: 1.7;
+}
+
+/* ── PRICING ────────────────────────────────────────────────── */
+
+.svs-pricing-section {
+    background: var(--svs-bg-white);
+    padding: 76px 20px;
+}
+
+.svs-pricing-container {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-pricing-text {
+    font-size: 16px;
+    color: var(--svs-text-body);
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+}
+
+/* ── WHO SHOULD CHOOSE ──────────────────────────────────────── */
+
+.svs-choose-section {
+    background: var(--svs-bg-soft);
+    padding: 80px 20px;
+}
+
+.svs-choose-container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.svs-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 44px;
+}
+
+.svs-choose-card {
+    background: var(--svs-bg-white);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.08);
+}
+
+.svs-choose-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.svs-choose-card-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.svs-choose-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svs-choose-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--svs-text-body);
+    line-height: 1.55;
+}
+
+.svs-choose-check {
+    color: #16a34a;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── WHY BOOK WITH T&S ──────────────────────────────────────── */
+
+.svs-whybook-section {
+    background: var(--svs-bg-white);
+    padding: 80px 20px;
+}
+
+.svs-whybook-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-whybook-lead {
+    font-size: 16px;
+    color: var(--svs-text-body);
+    line-height: 1.8;
+    margin: 0 0 12px 0;
+}
+
+.svs-whybook-sub {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--svs-navy);
+    margin: 0 0 28px 0;
+}
+
+.svs-whybook-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+.svs-whybook-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--svs-bg-soft);
+    padding: 16px 18px;
+    border-radius: 14px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--svs-navy);
+}
+
+.svs-whybook-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--svs-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ── ANGELA HUGHES EDITORIAL ────────────────────────────────── */
+
+.svs-editorial-section {
+    background: var(--svs-bg-soft);
+    padding: 80px 20px;
+}
+
+.svs-editorial-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.svs-editorial-card {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 0;
+    background: var(--svs-bg-white);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(15, 28, 46, 0.1);
+}
+
+.svs-editorial-image-side {
+    padding: 32px;
+    background: var(--svs-navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.svs-editorial-image-side .svs-img-placeholder {
+    min-height: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.svs-editorial-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.svs-editorial-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.svs-editorial-stat-number {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.svs-editorial-stat-label {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.svs-editorial-stat-divider {
+    width: 1px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.svs-editorial-content-side {
+    padding: 44px 40px;
+}
+
+.svs-editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.1);
+    color: var(--svs-navy);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.svs-editorial-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin: 0 0 14px 0;
+}
+
+.svs-editorial-bar {
+    width: 56px;
+    height: 4px;
+    background: var(--svs-blue-accent);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.svs-editorial-text {
+    font-size: 15px;
+    color: var(--svs-text-body);
+    line-height: 1.75;
+    margin: 0 0 18px 0;
+}
+
+.svs-editorial-services-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--svs-navy);
+    margin-bottom: 12px;
+}
+
+.svs-editorial-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.svs-editorial-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--svs-bg-soft);
+    color: var(--svs-navy);
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.svs-editorial-pill svg {
+    color: #16a34a;
+}
+
+/* ── CONCLUSION / FINAL ─────────────────────────────────────── */
+
+.svs-final-section {
+    position: relative;
+    padding: 90px 20px;
+    background: var(--svs-navy-dark);
+    overflow: hidden;
+}
+
+.svs-final-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 55%);
+}
+
+.svs-final-container {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-final-eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--svs-blue-accent);
+    margin-bottom: 16px;
+}
+
+.svs-final-eyebrow-text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.svs-final-heading {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0 0 20px 0;
+}
+
+.svs-final-separator {
+    width: 64px;
+    height: 4px;
+    background: var(--svs-blue-accent);
+    border-radius: 4px;
+    margin: 0 auto 36px;
+}
+
+.svs-final-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 32px 30px;
+}
+
+.svs-final-body {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin: 0 0 14px 0;
+}
+
+.svs-final-body:last-child {
+    margin-bottom: 0;
+}
+
+.svs-final-emphasis {
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+/* ── FAQ ────────────────────────────────────────────────────── */
+
+.svs-faq-main-section {
+    background: var(--svs-bg-white);
+    padding: 80px 20px;
+}
+
+.svs-faq-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.svs-faq-list-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.svs-faq-individual-item {
+    background: var(--svs-bg-soft);
+    border-radius: 14px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.svs-faq-individual-item:hover {
+    background: #e9eff8;
+}
+
+.svs-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--svs-navy);
+}
+
+.svs-faq-toggle-icon {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--svs-blue-accent);
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.svs-faq-answer-text {
+    margin: 14px 0 0 0;
+    font-size: 14.5px;
+    color: var(--svs-text-body);
+    line-height: 1.7;
+}
+
+/* ── CTA ────────────────────────────────────────────────────── */
+
+.svs-cta-main-section {
+    position: relative;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, var(--svs-navy) 0%, var(--svs-navy-dark) 100%);
+    overflow: hidden;
+}
+
+.svs-cta-bg-pattern-layer {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
+}
+
+.svs-cta-content-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.svs-cta-inner-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svs-cta-heading-white {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    line-height: 1.3;
+}
+
+.svs-cta-separator-white {
+    width: 64px;
+    height: 4px;
+    background: #ffffff;
+    opacity: 0.6;
+    border-radius: 4px;
+    margin: 0 auto 26px;
+}
+
+.svs-cta-paragraph-white {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.75;
+    margin: 0 auto 18px;
+    max-width: 720px;
+}
+
+.svs-cta-considerations-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 0 auto 26px;
+    max-width: 560px;
+    text-align: left;
+}
+
+.svs-cta-considerations-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.svs-cta-considerations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.svs-cta-considerations-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.svs-cta-considerations-icon {
+    color: #4ade80;
+    flex-shrink: 0;
+}
+
+.svs-cta-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.svs-primary-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    color: var(--svs-navy);
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.svs-primary-cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.svs-secondary-outline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.svs-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================= */
+
+/* ── Tablets (≤ 1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .svs-about-grid,
+    .svs-compare-grid,
+    .svs-expedition-grid,
+    .svs-service-grid,
+    .svs-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .svs-editorial-card {
+        grid-template-columns: 1fr;
+    }
+
+    .svs-editorial-image-side {
+        padding: 28px;
+    }
+
+    .svs-whybook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .svs-hero-section {
+        min-height: 560px;
+        height: 80vh;
+    }
+}
+
+/* ── Small tablets / large phones (≤ 768px) ─────────────────── */
+@media (max-width: 768px) {
+    .svs-hero-section {
+        min-height: 480px;
+        height: auto;
+        padding: 100px 0 70px;
+    }
+
+    .svs-hero-content-wrapper {
+        padding: 0 20px;
+    }
+
+    .svs-hero-break {
+        display: none;
+    }
+
+    .svs-intro-section,
+    .svs-glance-section,
+    .svs-about-section,
+    .svs-compare-section,
+    .svs-expedition-section,
+    .svs-service-section,
+    .svs-pricing-section,
+    .svs-choose-section,
+    .svs-whybook-section,
+    .svs-editorial-section,
+    .svs-final-section,
+    .svs-faq-main-section,
+    .svs-cta-main-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .svs-section-heading {
+        font-size: 26px;
+    }
+
+    /* Swap table for stacked cards on small screens */
+    .svs-glance-table-wrap {
+        display: none;
+    }
+
+    .svs-glance-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .svs-glance-card {
+        background: var(--svs-bg-white);
+        border-radius: 14px;
+        padding: 16px 18px;
+        box-shadow: 0 8px 22px rgba(15, 28, 46, 0.08);
+    }
+
+    .svs-glance-card-feature {
+        font-weight: 700;
+        color: var(--svs-navy);
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--svs-border);
+    }
+
+    .svs-glance-card-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 13.5px;
+        padding: 4px 0;
+    }
+
+    .svs-glance-card-label {
+        color: var(--svs-text-body);
+        font-weight: 600;
+    }
+
+    .svs-glance-card-value {
+        color: var(--svs-text-dark);
+        text-align: right;
+    }
+
+    .svs-editorial-content-side {
+        padding: 32px 26px;
+    }
+
+    .svs-cta-considerations-box {
+        max-width: 100%;
+    }
+}
+
+/* ── Phones (≤ 480px) ───────────────────────────────────────── */
+@media (max-width: 480px) {
+    .svs-hero-eyebrow-tag {
+        font-size: 10.5px;
+        padding: 8px 14px;
+    }
+
+    .svs-hero-main-title {
+        font-size: 26px;
+    }
+
+    .svs-hero-subtitle-text {
+        font-size: 14.5px;
+    }
+
+    .svs-section-heading {
+        font-size: 22px;
+    }
+
+    .svs-about-card-body,
+    .svs-compare-col,
+    .svs-expedition-col,
+    .svs-service-card,
+    .svs-choose-card {
+        padding: 22px 18px;
+    }
+
+    .svs-editorial-stats {
+        gap: 14px;
+    }
+
+    .svs-editorial-stat-number {
+        font-size: 20px;
+    }
+
+    .svs-cta-button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .svs-primary-cta-button,
+    .svs-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .svs-faq-individual-item {
+        padding: 16px 18px;
+    }
+
+    .svs-faq-question-row {
+        font-size: 14.5px;
+    }
+}
+
+/* ── Very small phones (≤ 360px) ─────────────────────────────── */
+@media (max-width: 360px) {
+    .svs-hero-main-title {
+        font-size: 23px;
+    }
+
+    .svs-section-heading {
+        font-size: 20px;
+    }
+
+    .svs-cta-considerations-box {
+        padding: 18px 16px;
+    }
+}
