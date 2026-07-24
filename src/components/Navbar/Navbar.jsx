@@ -855,6 +855,13 @@ const Navbar = () => {
                   >
                     Scenic Eclipse Ii Reviews</NavLink>
 
+                     <NavLink
+                    to="/scenic-vs-ponant"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Vs Ponant</NavLink>
+
                     <NavLink
                     to="/scenic-vs-seabourn"
                     className="nav-dropdown-single"
@@ -1707,6 +1714,13 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     Scenic Eclipse Reviews</NavLink>
+
+                    <NavLink
+                    to="/scenic-vs-ponant"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Vs Ponant</NavLink>
 
                     <NavLink
                     to="/scenic-vs-seabourn"

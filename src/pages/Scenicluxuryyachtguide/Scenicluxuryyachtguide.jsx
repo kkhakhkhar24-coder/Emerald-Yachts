@@ -153,18 +153,234 @@ function ScenicLuxuryYachtGuide() {
 
     /* FAQs */
     const slyFaqs = [
-        { question: 'What is Scenic Eclipse?', answer: 'Scenic Eclipse is a six-star luxury Discovery Yacht designed to combine expedition cruising with ultra-luxury accommodations and all-inclusive service.' },
-        { question: 'How many Scenic luxury yachts are there?', answer: 'Scenic currently operates two Discovery Yachts: Scenic Eclipse and Scenic Eclipse II.' },
-        { question: 'Is Scenic all-inclusive?', answer: 'Yes. Most Scenic voyages include accommodations, dining, premium beverages, butler service, gratuities, Wi-Fi, and many excursions.' },
-        { question: 'Does every suite include butler service?', answer: 'Yes. Every suite aboard Scenic Eclipse includes personalized butler service.' },
-        { question: 'What destinations does Scenic visit?', answer: 'Scenic sails to Antarctica, the Arctic, Mediterranean, Norwegian Fjords, South Pacific, Australia, New Zealand, and many other destinations.' },
-        { question: 'Does Scenic offer expedition cruises?', answer: 'Yes. Scenic specializes in luxury expedition cruising with expert Discovery Teams and Zodiac excursions.' },
-        { question: 'Are helicopter flights included?', answer: 'Helicopter experiences are available on select voyages but may require an additional fee depending on the itinerary.' },
-        { question: 'Does Scenic have a submarine?', answer: 'Yes. Scenic Eclipse and Scenic Eclipse II feature custom-built submarines on select itineraries.' },
-        { question: 'Is Scenic good for first-time luxury cruisers?', answer: "Absolutely. Scenic's all-inclusive approach and exceptional service make it an excellent choice for first-time luxury travelers." },
-        { question: 'What is the dress code?', answer: 'The atmosphere is elegant but relaxed, with smart casual attire during most evenings.' },
-        { question: 'Is Scenic adults only?', answer: 'Scenic primarily caters to adults, though minimum age requirements vary by itinerary.' },
-        { question: 'Why choose Scenic over other luxury cruise lines?', answer: 'Scenic uniquely combines true expedition capability, six-star luxury, butler service, spacious suites, and comprehensive all-inclusive pricing.' }
+        {
+            question: 'The Caribbean: Paradise for Yacht Charters',
+            answer: (
+                <>
+                    <p>The Caribbean is synonymous with sailing paradise and ranks among the best places to yacht. With its turquoise waters and sun-drenched skies, it beckons yacht enthusiasts. The region's diverse islands offer countless treasures to explore.</p>
+                    <p>Each island boasts unique attractions, from vibrant marine life to pristine beaches. Sailing through this region provides an unmatched blend of natural beauty and adventure. Hidden coves and serene anchorages await exploration.</p>
+                    <p>For the best experience, consider these destinations:</p>
+                    <ul>
+                        <li><strong>British Virgin Islands:</strong> Calm waters and short distances make it ideal for beginners.</li>
+                        <li><strong>Antigua and Barbuda:</strong> Known for their beautiful beaches and vibrant culture.</li>
+                        <li><strong>Saint Lucia:</strong> Offers lush landscapes and stunning coastal views.</li>
+                    </ul>
+                    <p>Yacht charters here offer diverse routes that suit all tastes. Some routes cover bustling ports, while others take you to secluded hideaways. The Caribbean truly has something for everyone.</p>
+                </>
+            )
+        },
+        {
+            question: 'The Mediterranean: Culture, History, and Coastlines',
+            answer: (
+                <>
+                    <p>The Mediterranean is a sailor's dream, rich in culture and history. Its azure waters gracefully cradle ancient port cities and vibrant coastlines. Sailing here offers a unique blend of exploration and relaxation.</p>
+                    <p>From the bustling markets of Turkey to the quiet coves of Spain, there is much to discover. Each destination provides a glimpse into local heritage and a taste of Mediterranean cuisine. Sun-kissed beaches and historic sites abound.</p>
+                    <p>Highlights of Mediterranean sailing include:</p>
+                    <ul>
+                        <li><strong>Greece:</strong> The Cyclades Islands are famous for their whitewashed villages and ancient ruins.</li>
+                        <li><strong>Italy's Amalfi Coast:</strong> Known for its dramatic cliffs and charming coastal towns.</li>
+                        <li><strong>Turkey's Turquoise Coast:</strong> A blend of ancient ruins and stunning natural beauty.</li>
+                    </ul>
+                    <p>Yacht routes span cultural hotspots and natural wonders, catering to varied interests. This region's enchanting landscapes promise unforgettable sailing experiences.</p>
+                </>
+            )
+        },
+        {
+            question: 'Greece -- Cyclades & Ionian Islands',
+            answer: (
+                <>
+                    <p>Greece offers some of the best yacht destinations in the world. The Cyclades and Ionian Islands stand out with their sheer beauty. Each island has its own distinct character and charm.</p>
+                    <p>In the Cyclades, you'll find iconic white buildings and azure sea. Mykonos and Santorini are famous for their vibrant nightlife and stunning sunsets. History lovers will appreciate ancient ruins on Delos Island.</p>
+                    <p>The Ionian Islands, on the other hand, offer green landscapes and calm waters. Corfu and Kefalonia are ideal for relaxed sailing and exploring lush scenery. These islands are perfect for a tranquil escape.</p>
+                    <p>Must-see spots in Greece:</p>
+                    <ul>
+                        <li><strong>Santorini:</strong> Known for its dramatic cliffs and sunsets.</li>
+                        <li><strong>Mykonos:</strong> Famous for lively nightlife and sandy beaches.</li>
+                        <li><strong>Corfu:</strong> Offers lush scenery and historic forts.</li>
+                    </ul>
+                    <p>Both island groups provide yacht charter routes filled with breathtaking views. Sailing here can be a magical blend of discovery and relaxation.</p>
+                </>
+            )
+        },
+        {
+            question: 'Croatia -- Dalmatian Coast',
+            answer: (
+                <>
+                    <p>Croatia's Dalmatian Coast is a gem among top sailing destinations. Its medieval towns and pristine beaches draw many yacht enthusiasts. As you sail, you'll marvel at the Adriatic's clear waters.</p>
+                    <p>The coast boasts several historic cities like Dubrovnik and Split. These cities are famous for their stunning architecture and rich history. Moreover, the nearby islands offer tranquil retreats away from the crowds.</p>
+                    <p>For nature lovers, the national parks scattered along the coast offer lush greenery and breathtaking vistas. The islands of Hvar and Brač are known for lavender fields and olive groves, adding a touch of local culture to your sailing experience.</p>
+                    <p>Highlights of the Dalmatian Coast:</p>
+                    <ul>
+                        <li><strong>Dubrovnik:</strong> A historic city with stunning walls and views.</li>
+                        <li><strong>Split:</strong> Features ancient Roman architecture and vibrant markets.</li>
+                        <li><strong>Hvar:</strong> Offers beautiful fields and energetic nightlife.</li>
+                    </ul>
+                    <p>The Dalmatian Coast remains a favorite for those seeking both adventure and relaxation.</p>
+                </>
+            )
+        },
+        {
+            question: 'French Riviera, France',
+            answer: (
+                <>
+                    <p>The French Riviera is synonymous with luxury and beauty. This glamorous coastline combines vibrant towns with breathtaking scenery. Yachting here provides an unmatched blend of sophistication and serene beaches.</p>
+                    <p>Sail around iconic locations such as Nice and Cannes. These cities are well-known for their cultural events and upscale amenities. Hidden coves and pristine beaches await those who venture further along the coast.</p>
+                    <p>Indulge in local cuisine and fine wine at numerous seaside restaurants. The region's allure is perfect for anyone seeking elegance on the water. Whether you prefer bustling city ports or secluded anchorages, the French Riviera has something for all tastes.</p>
+                    <p>Notable places along the French Riviera:</p>
+                    <ul>
+                        <li><strong>Nice:</strong> Offers historic sites and fine dining.</li>
+                        <li><strong>Cannes:</strong> Famous for its film festival and sandy beaches.</li>
+                        <li><strong>Monaco:</strong> Known for luxury yachts and vibrant nightlife.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Thailand -- Andaman Sea',
+            answer: (
+                <>
+                    <p>Thailand's Andaman Sea is a true paradise for sailors. Its turquoise waters teem with vibrant marine life. Towering limestone cliffs create dramatic backdrops, making every voyage memorable.</p>
+                    <p>The region is filled with exotic islands, each offering unique experiences. Phang Nga Bay is known for its striking karsts jutting from the ocean. The Phi Phi Islands offer stunning beaches and exciting snorkeling opportunities.</p>
+                    <p>Savor Thailand's rich culinary traditions at charming local eateries. The friendly locals and lush landscapes are sure to enhance your sailing adventure. It's no surprise that this destination is a favorite among yacht charter enthusiasts.</p>
+                    <p>Highlights of sailing in the Andaman Sea:</p>
+                    <ul>
+                        <li><strong>Phang Nga Bay:</strong> Famous for its limestone formations.</li>
+                        <li><strong>Phi Phi Islands:</strong> Known for beautiful beaches and clear waters.</li>
+                        <li><strong>Similan Islands:</strong> Excellent for diving and snorkeling.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Whitsunday Islands, Australia',
+            answer: (
+                <>
+                    <p>The Whitsunday Islands offer an unparalleled sailing experience. Nestled near the Great Barrier Reef, they boast dazzling marine biodiversity. Vibrant coral reefs make snorkeling and diving unforgettable.</p>
+                    <p>These 74 islands feature serene beaches with pristine white sand. Whitehaven Beach stands out, acclaimed for its stunning silica sands. The panoramic views are truly breathtaking, leaving sailors in awe.</p>
+                    <p>Sailing in the Whitsundays, you'll encounter plenty of adventure and relaxation. Explore secluded coves or take a refreshing swim. Local marinas offer warm hospitality, welcoming yachts from around the globe.</p>
+                    <p>Reasons to sail the Whitsundays:</p>
+                    <ul>
+                        <li><strong>Whitehaven Beach:</strong> World-famous for its pure white sand.</li>
+                        <li><strong>Great Barrier Reef:</strong> Thrilling for diving and marine exploration.</li>
+                        <li><strong>Secluded Coves:</strong> Perfect for tranquil escapes.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Seychelles, Indian Ocean',
+            answer: (
+                <>
+                    <p>The Seychelles archipelago is a sailor's paradise with its secluded beaches and azure waters. Located in the Indian Ocean, it offers a perfect escape from the bustling world. Each island has its own charm and unique wildlife.</p>
+                    <p>Sailors can explore lush landscapes teeming with exotic fauna. Giant tortoises roam the islands, captivating nature enthusiasts. The underwater life in Seychelles is equally mesmerizing, showcasing vibrant coral reefs.</p>
+                    <p>This sailing destination is ideal for those seeking tranquility and natural beauty. Every corner of the Seychelles offers a new discovery. Its warm, welcoming climate makes it perfect for year-round yachting.</p>
+                    <p>Highlights of sailing in Seychelles:</p>
+                    <ul>
+                        <li><strong>Pristine Beaches:</strong> Offering solitude and serenity.</li>
+                        <li><strong>Unique Wildlife:</strong> Home to giant tortoises.</li>
+                        <li><strong>Vibrant Marine Life:</strong> Perfect for snorkeling.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Galápagos Islands, Ecuador',
+            answer: (
+                <>
+                    <p>The Galápagos Islands are a sailor's dream for unique wildlife encounters. This UNESCO World Heritage site offers a blend of unique landscapes and rare animals. It's a must-visit for nature lovers and adventure seekers alike.</p>
+                    <p>While sailing, you'll witness pristine environments largely untouched by human activity. The islands are famous for their unparalleled biodiversity. You might spot sea lions, iguanas, and various bird species during your journey.</p>
+                    <p>The Galápagos offer more than just spectacular sailing experiences. Snorkeling and diving opportunities abound, with rich marine life waiting beneath the waves. The islands provide an unmatched exploration of the natural world.</p>
+                    <p>Reasons to sail the Galápagos:</p>
+                    <ul>
+                        <li><strong>Unique Wildlife:</strong> Home to species found nowhere else.</li>
+                        <li><strong>Pristine Environments:</strong> Largely untouched by development.</li>
+                        <li><strong>Rich Marine Life:</strong> Offers vibrant snorkeling experiences.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: "Norway's Fjords",
+            answer: (
+                <>
+                    <p>Norway's fjords offer a sailing experience unlike any other. These deep blue waters weave through towering cliffs and breathtaking landscapes. They create an enchanting environment perfect for exploration and adventure.</p>
+                    <p>Sailing in Norway offers opportunities to explore charming coastal towns. The fjords' dramatic scenery makes every turn a visual delight. The combination of serene waters and majestic natural structures is truly captivating.</p>
+                    <p>The unique appeal of Norway's fjords lies in their untouched beauty and serene atmosphere. It's an ideal destination for those seeking tranquility amidst awe-inspiring landscapes. Combine sailing with hiking to experience the fullest of Norway's natural wonders.</p>
+                    <p>Highlights of sailing in Norway's fjords:</p>
+                    <ul>
+                        <li><strong>Dramatic Landscapes:</strong> Towering cliffs create stunning views.</li>
+                        <li><strong>Serene Waters:</strong> Perfect for peaceful sailing excursions.</li>
+                        <li><strong>Charming Towns:</strong> Add cultural richness to your adventure.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Tips for Planning Your Yacht Charter Adventure',
+            answer: (
+                <>
+                    <p>Embarking on a yacht charter adventure requires careful planning. Consider the season as weather can greatly impact your experience. Research the best time of year for your chosen destination.</p>
+                    <p>Understanding local regulations is crucial when sailing internationally. Each location might have unique requirements for sailors. Ensure that your documentation is in order well in advance.</p>
+                    <p>Budgeting properly helps ensure a smooth journey. Factor in costs beyond the charter itself, such as mooring fees and provisions. Planning your route in advance can save time and enhance your adventure.</p>
+                    <p>Key planning tips:</p>
+                    <ul>
+                        <li><strong>Choose the Right Season:</strong> Align with optimal weather.</li>
+                        <li><strong>Understand Local Regulations:</strong> Prepare documentation.</li>
+                        <li><strong>Plan Your Budget:</strong> Consider all expenses.</li>
+                        <li><strong>Match Destination to Experience:</strong> Research the best places to charter a yacht for your skill level.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            question: 'Conclusion: Choosing Your Dream Sailing Destination',
+            answer: (
+                <>
+                    <p>Choosing the perfect sailing destination depends on your preferences and style of adventure. Whether seeking luxury or exotic wildlife, there's a destination for every sailor's dream.</p>
+                    <p>Consider what draws you to the sea—serene beaches, thrilling marine life, or historical coastal towns. Each destination offers unique experiences. With thoughtful planning, your sailing journey will be unforgettable and full of discovery. Deciding between the top yacht charter destinations worldwide ensures an incredible nautical adventure tailored just for you. Happy sailing!</p>
+                </>
+            )
+        },
+        {
+            question: "I'm a first-time sailor—which destinations are most beginner-friendly?",
+            answer: (
+                <>
+                    <p>The British Virgin Islands in the Caribbean are ideal, thanks to calm waters and short island hops. Greece's Ionian Islands are also great for relaxed sailing, with gentle conditions and lush, sheltered scenery.</p>
+                </>
+            )
+        },
+        {
+            question: 'How do the Caribbean and the Mediterranean differ as sailing experiences?',
+            answer: (
+                <>
+                    <p>The Caribbean emphasizes turquoise waters, hidden coves, and flexible routes from lively ports to secluded anchorages. The Mediterranean blends sailing with rich culture and history—think ancient port cities, dramatic coasts, vibrant local markets, and standout cuisine.</p>
+                </>
+            )
+        },
+        {
+            question: 'Which destinations are best for wildlife and underwater exploration?',
+            answer: (
+                <>
+                    <p>The Galápagos offer rare wildlife and pristine environments. Seychelles feature giant tortoises and vibrant reefs. Thailand's Andaman Sea (including the Similan and Phi Phi Islands) is great for snorkeling and marine life, and Australia's Whitsundays sit beside the Great Barrier Reef for unforgettable diving.</p>
+                </>
+            )
+        },
+        {
+            question: 'When is the best season to sail these places?',
+            answer: (
+                <>
+                    <p>It varies by destination—seasonality can shape wind, sea state, and crowds, so research timing before you book. One notable exception is Seychelles, which the guide highlights as suitable for year-round yachting.</p>
+                </>
+            )
+        },
+        {
+            question: 'What should I plan for before booking a yacht charter?',
+            answer: (
+                <>
+                    <p>Align your destination with your experience level, pick the right season, understand local regulations and required documents, set a full-trip budget (charter, mooring fees, provisions), and map a route that balances must-see highlights with safe, comfortable passages.</p>
+                </>
+            )
+        }
     ]
 
     const slySchemaData = {
@@ -230,18 +446,23 @@ function ScenicLuxuryYachtGuide() {
             {
                 "@type": "FAQPage",
                 "mainEntity": [
-                    { "@type": "Question", "name": "What is Scenic Eclipse?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic Eclipse is a six-star luxury Discovery Yacht designed for expedition cruising with all-inclusive luxury." } },
-                    { "@type": "Question", "name": "Is Scenic all-inclusive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic includes luxury accommodations, butler service, dining, premium beverages, Wi-Fi, gratuities, and many excursions." } },
-                    { "@type": "Question", "name": "Does Scenic include butler service?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every suite aboard Scenic Eclipse includes personalized butler service." } },
-                    { "@type": "Question", "name": "Does Scenic offer Antarctica cruises?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic operates luxury expedition cruises to Antarctica featuring Zodiac landings and expert Discovery Teams." } },
-                    { "@type": "Question", "name": "Does Scenic have helicopters and a submarine?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse features onboard helicopters and a custom-built submarine on select itineraries." } },
-                    { "@type": "Question", "name": "Which destinations does Scenic visit?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic sails to Antarctica, the Arctic, Mediterranean, Norwegian Fjords, Australia, New Zealand, the South Pacific, and more." } },
-                    { "@type": "Question", "name": "Is Scenic good for first-time luxury cruisers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic is an excellent choice for travelers seeking a seamless all-inclusive luxury experience." } },
-                    { "@type": "Question", "name": "How many Scenic luxury yachts are there?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic currently operates Scenic Eclipse and Scenic Eclipse II." } },
-                    { "@type": "Question", "name": "What is included in the cruise fare?", "acceptedAnswer": { "@type": "Answer", "text": "Most fares include accommodations, dining, beverages, Wi-Fi, gratuities, butler service, and many shore experiences." } },
-                    { "@type": "Question", "name": "Who should choose Scenic?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic is ideal for travelers seeking expedition adventures with six-star luxury, personalized service, and all-inclusive value." } },
-                    { "@type": "Question", "name": "What makes Scenic different?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic combines true expedition capability with spacious suites, butler service, fine dining, and world-class exploration." } },
-                    { "@type": "Question", "name": "Why book Scenic with Trips & Ships Luxury Travel?", "acceptedAnswer": { "@type": "Answer", "text": "Our advisors provide expert guidance, itinerary recommendations, exclusive offers, and personalized cruise planning to help you choose the perfect Scenic voyage." } }
+                    { "@type": "Question", "name": "The Caribbean: Paradise for Yacht Charters", "acceptedAnswer": { "@type": "Answer", "text": "The Caribbean is a sailing paradise with turquoise waters, diverse islands, and destinations like the British Virgin Islands, Antigua and Barbuda, and Saint Lucia offering calm waters, beautiful beaches, and vibrant culture." } },
+                    { "@type": "Question", "name": "The Mediterranean: Culture, History, and Coastlines", "acceptedAnswer": { "@type": "Answer", "text": "The Mediterranean blends sailing with rich culture, history, and cuisine, with highlights including Greece, Italy's Amalfi Coast, and Turkey's Turquoise Coast offering ancient ruins and stunning coastlines." } },
+                    { "@type": "Question", "name": "Greece -- Cyclades and Ionian Islands", "acceptedAnswer": { "@type": "Answer", "text": "Greece offers world-class sailing with iconic Cyclades islands like Santorini and Mykonos, and lush Ionian islands like Corfu, each offering unique beauty and cultural experiences." } },
+                    { "@type": "Question", "name": "Croatia -- Dalmatian Coast", "acceptedAnswer": { "@type": "Answer", "text": "Croatia's Dalmatian Coast features medieval towns, clear Adriatic waters, and highlights like Dubrovnik, Split, and Hvar offering historic architecture and natural beauty." } },
+                    { "@type": "Question", "name": "French Riviera, France", "acceptedAnswer": { "@type": "Answer", "text": "The French Riviera combines luxury, sophistication, and beautiful coastlines with iconic destinations like Nice, Cannes, and Monaco offering cultural events and upscale amenities." } },
+                    { "@type": "Question", "name": "Thailand -- Andaman Sea", "acceptedAnswer": { "@type": "Answer", "text": "Thailand's Andaman Sea offers turquoise waters, limestone cliffs, and islands like Phang Nga Bay, Phi Phi Islands, and Similan Islands with excellent snorkeling and marine life." } },
+                    { "@type": "Question", "name": "Whitsunday Islands, Australia", "acceptedAnswer": { "@type": "Answer", "text": "The Whitsunday Islands near the Great Barrier Reef offer world-famous Whitehaven Beach, incredible diving, and 74 islands with pristine silica sand and marine biodiversity." } },
+                    { "@type": "Question", "name": "Seychelles, Indian Ocean", "acceptedAnswer": { "@type": "Answer", "text": "The Seychelles archipelago features secluded beaches, unique wildlife including giant tortoises, vibrant coral reefs, and year-round warm climate perfect for yachting." } },
+                    { "@type": "Question", "name": "Galapagos Islands, Ecuador", "acceptedAnswer": { "@type": "Answer", "text": "The Galapagos Islands offer unparalleled wildlife encounters, pristine environments, and rich marine life for snorkeling and diving with species found nowhere else on Earth." } },
+                    { "@type": "Question", "name": "Norway's Fjords", "acceptedAnswer": { "@type": "Answer", "text": "Norway's fjords offer dramatic landscapes, towering cliffs, serene waters, and charming coastal towns creating an enchanting environment perfect for sailing and exploration." } },
+                    { "@type": "Question", "name": "Tips for Planning Your Yacht Charter Adventure", "acceptedAnswer": { "@type": "Answer", "text": "Planning a yacht charter requires choosing the right season, understanding local regulations, budgeting for all expenses including mooring fees and provisions, and matching destinations to your experience level." } },
+                    { "@type": "Question", "name": "Conclusion: Choosing Your Dream Sailing Destination", "acceptedAnswer": { "@type": "Answer", "text": "Choosing the perfect sailing destination depends on your preferences for luxury, wildlife, culture, or adventure. Each destination offers unique experiences for an unforgettable nautical adventure." } },
+                    { "@type": "Question", "name": "I'm a first-time sailor - which destinations are most beginner-friendly?", "acceptedAnswer": { "@type": "Answer", "text": "The British Virgin Islands in the Caribbean are ideal, thanks to calm waters and short island hops. Greece's Ionian Islands are also great for relaxed sailing, with gentle conditions and lush, sheltered scenery." } },
+                    { "@type": "Question", "name": "How do the Caribbean and the Mediterranean differ as sailing experiences?", "acceptedAnswer": { "@type": "Answer", "text": "The Caribbean emphasizes turquoise waters, hidden coves, and flexible routes from lively ports to secluded anchorages. The Mediterranean blends sailing with rich culture and history, ancient port cities, vibrant local markets, and standout cuisine." } },
+                    { "@type": "Question", "name": "Which destinations are best for wildlife and underwater exploration?", "acceptedAnswer": { "@type": "Answer", "text": "The Galapagos offer rare wildlife and pristine environments. Seychelles feature giant tortoises and vibrant reefs. Thailand's Andaman Sea is great for snorkeling, and Australia's Whitsundays sit beside the Great Barrier Reef for unforgettable diving." } },
+                    { "@type": "Question", "name": "When is the best season to sail these places?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by destination as seasonality shapes wind, sea state, and crowds. One notable exception is Seychelles, which is suitable for year-round yachting." } },
+                    { "@type": "Question", "name": "What should I plan for before booking a yacht charter?", "acceptedAnswer": { "@type": "Answer", "text": "Align your destination with your experience level, pick the right season, understand local regulations and required documents, set a full-trip budget, and map a safe route." } }
                 ]
             }
         ]
@@ -250,13 +471,13 @@ function ScenicLuxuryYachtGuide() {
     return (
         <>
             <Helmet>
-                <title>Scenic Luxury Yacht Guide | Scenic Eclipse Cruises, Ships, Destinations & Expert Planning</title>
-                <meta name="title" content="Scenic Luxury Yacht Guide | Scenic Eclipse Cruises & Luxury Expeditions" />
+                <title>Top 10 Sailing Destinations: Unforgettable Yacht Charters</title>
+                <meta name="title" content="Top 10 Sailing Destinations: Unforgettable Yacht Charters" />
                 <meta
                     name="description"
-                    content="Explore the ultimate Scenic Luxury Yacht Guide. Learn about Scenic Eclipse ships, suites, destinations, expedition experiences, dining, inclusions, pricing, and expert cruise planning from Trips & Ships Luxury Travel."
+                    content="Explore the world's top 10 must-visit sailing destinations, from the Caribbean's hidden coves to the Mediterranean's historic shores. Your adventure awaits!"
                 />
-                <meta name="keywords" content="Scenic Luxury Yacht Guide, Scenic Eclipse, Scenic luxury yachts, Scenic cruises, Luxury expedition cruises, Scenic Eclipse cruises, Scenic Eclipse II, Scenic cruise planning, Luxury yacht cruises, Scenic destinations, Scenic cruise guide" />
+                <meta name="keywords" content="Top 10 Sailing Destinations, Sailing Destinations, Yacht Charters, Caribbean Yacht Charter, Mediterranean Sailing, Luxury Sailing, Best Sailing Destinations, Yacht Charter Guide" />
                 <script type="application/ld+json">
                     {JSON.stringify(slySchemaData)}
                 </script>
@@ -689,10 +910,16 @@ function ScenicLuxuryYachtGuide() {
                 {/* FAQ SECTION */}
                 <section className="sly-faq-section">
                     <div className="sly-faq-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <h2 className="sly-section-heading">Frequently Asked Questions</h2>
-                            <div className="sly-heading-bar sly-bar-center"></div>
+                        <h1 className="sly-faq-main-title">Top 10 Must-Visit Sailing Destinations Worldwide</h1>
+
+                        <div className="sly-faq-intro">
+                            <p>Sailing offers a unique way to explore the world. It combines adventure with relaxation, allowing you to discover hidden gems.</p>
+                            <p>Imagine gliding over crystal-clear waters, surrounded by breathtaking landscapes. Each destination offers its own charm and allure.</p>
+                            <p>From the vibrant culture of the Mediterranean to the tranquil beauty of the Seychelles, the options are endless.</p>
+                            <p>Whether you're a seasoned sailor or a curious traveler, there's a perfect spot waiting for you.</p>
+                            <p>Join us as we explore the top 10 must-visit sailing destinations worldwide. Your next adventure awaits on the horizon, with many of these picks also ranking among the best yacht charter destinations.</p>
                         </div>
+
                         <div className="sly-faq-list">
                             {slyFaqs.map((faq, index) => (
                                 <div
@@ -701,13 +928,13 @@ function ScenicLuxuryYachtGuide() {
                                     onClick={() => slyToggleFaq(index)}
                                 >
                                     <div className="sly-faq-question-row">
-                                        <span>{faq.question}</span>
-                                        <span className="sly-faq-toggle">
-                                            {slyActiveFaq === index ? "−" : "+"}
+                                        <h2 className="sly-faq-q-title">{faq.question}</h2>
+                                        <span className="sly-faq-toggle-icon">
+                                            {slyActiveFaq === index ? "\u2212" : "+"}
                                         </span>
                                     </div>
                                     {slyActiveFaq === index && (
-                                        <p className="sly-faq-answer">{faq.answer}</p>
+                                        <div className="sly-faq-answer-content">{faq.answer}</div>
                                     )}
                                 </div>
                             ))}

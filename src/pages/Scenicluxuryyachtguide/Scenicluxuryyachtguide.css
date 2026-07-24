@@ -64,13 +64,25 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-section-heading { font-size: 34px !important; text-align: center; }
-    .sly-heading-bar { margin-left: auto; margin-right: auto; }
+    .sly-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .sly-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-section-heading { font-size: 26px !important; }
-    .sly-lead-paragraph { font-size: 16px; }
+    .sly-section-heading {
+        font-size: 26px !important;
+    }
+
+    .sly-lead-paragraph {
+        font-size: 16px;
+    }
 }
 
 /* ============================================================
@@ -201,21 +213,51 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-hero-title { font-size: 42px; }
-    .sly-hero-subtitle { font-size: 18px; }
+    .sly-hero-title {
+        font-size: 42px;
+    }
+
+    .sly-hero-subtitle {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-hero-title { font-size: 32px; }
-    .sly-hero-content { padding: 60px 18px; }
+    .sly-hero-title {
+        font-size: 32px;
+    }
+
+    .sly-hero-content {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-hero-title { font-size: 26px; }
-    .sly-hero-subtitle { font-size: 15px; margin-bottom: 28px; }
-    .sly-hero-tag { font-size: 12px; }
-    .sly-btn-primary, .sly-btn-outline { padding: 12px 22px; font-size: 14px; width: 100%; justify-content: center; }
-    .sly-hero-btn-row { width: 100%; flex-direction: column; }
+    .sly-hero-title {
+        font-size: 26px;
+    }
+
+    .sly-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .sly-hero-tag {
+        font-size: 12px;
+    }
+
+    .sly-btn-primary,
+    .sly-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sly-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 /* ============================================================
@@ -339,23 +381,61 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-intro-grid { grid-template-columns: 1fr; gap: 40px; align-items: center; }
-    .sly-intro-image-frame { order: -1; }
-    .sly-intro-image-frame img { min-height: 320px; }
-    .sly-intro-highlight-box { grid-column: auto; }
+    .sly-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .sly-intro-image-frame {
+        order: -1;
+    }
+
+    .sly-intro-image-frame img {
+        min-height: 320px;
+    }
+
+    .sly-intro-highlight-box {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-intro-section { padding: 60px 18px; }
-    .sly-lead-paragraph { text-align: left; }
+    .sly-intro-section {
+        padding: 60px 18px;
+    }
+
+    .sly-lead-paragraph {
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-intro-section { padding: 44px 14px; }
-    .sly-intro-highlight-box { padding: 20px; flex-direction: column; gap: 12px; align-items: flex-start; }
-    .sly-intro-quote-icon { font-size: 28px; }
-    .sly-intro-image-frame img { min-height: 240px; }
-    .sly-intro-badge-float { bottom: 16px; left: 16px; padding: 8px 14px; font-size: 11px; }
+    .sly-intro-section {
+        padding: 44px 14px;
+    }
+
+    .sly-intro-highlight-box {
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .sly-intro-quote-icon {
+        font-size: 28px;
+    }
+
+    .sly-intro-image-frame img {
+        min-height: 240px;
+    }
+
+    .sly-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
 }
 
 /* ============================================================
@@ -437,16 +517,26 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-why-grid { grid-template-columns: repeat(2, 1fr); }
+    .sly-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-why-section { padding: 60px 18px; }
+    .sly-why-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-why-grid { grid-template-columns: 1fr; gap: 14px; }
-    .sly-why-card { padding: 20px 16px; }
+    .sly-why-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .sly-why-card {
+        padding: 20px 16px;
+    }
 }
 
 /* ============================================================
@@ -472,8 +562,13 @@
 }
 
 @media (max-width: 480px) {
-    .sly-midcta-section { padding: 44px 16px; }
-    .sly-midcta-text { font-size: 17px; }
+    .sly-midcta-section {
+        padding: 44px 16px;
+    }
+
+    .sly-midcta-text {
+        font-size: 17px;
+    }
 }
 
 /* ============================================================
@@ -588,24 +683,58 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-yacht-grid { grid-template-columns: 1fr; gap: 40px; }
-    .sly-yacht-media { order: -1; }
-    .sly-yacht-media img { min-height: 320px; }
-    .sly-yacht-eyebrow { align-self: center; }
-    .sly-yacht-title { text-align: center; }
-    .sly-yacht-intro { text-align: center; }
+    .sly-yacht-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sly-yacht-media {
+        order: -1;
+    }
+
+    .sly-yacht-media img {
+        min-height: 320px;
+    }
+
+    .sly-yacht-eyebrow {
+        align-self: center;
+    }
+
+    .sly-yacht-title {
+        text-align: center;
+    }
+
+    .sly-yacht-intro {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-yacht-section { padding: 60px 18px; }
-    .sly-yacht-title { font-size: 28px; }
+    .sly-yacht-section {
+        padding: 60px 18px;
+    }
+
+    .sly-yacht-title {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-yacht-section { padding: 44px 14px; }
-    .sly-yacht-title { font-size: 22px; }
-    .sly-yacht-list { grid-template-columns: 1fr; }
-    .sly-yacht-media img { min-height: 220px; }
+    .sly-yacht-section {
+        padding: 44px 14px;
+    }
+
+    .sly-yacht-title {
+        font-size: 22px;
+    }
+
+    .sly-yacht-list {
+        grid-template-columns: 1fr;
+    }
+
+    .sly-yacht-media img {
+        min-height: 220px;
+    }
 }
 
 /* ============================================================
@@ -638,9 +767,17 @@
 }
 
 @media (max-width: 480px) {
-    .sly-eclipse2-section { padding: 44px 14px; }
-    .sly-eclipse2-title { font-size: 22px; }
-    .sly-eclipse2-text { font-size: 15px; }
+    .sly-eclipse2-section {
+        padding: 44px 14px;
+    }
+
+    .sly-eclipse2-title {
+        font-size: 22px;
+    }
+
+    .sly-eclipse2-text {
+        font-size: 15px;
+    }
 }
 
 /* ============================================================
@@ -706,17 +843,30 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-suites-grid { grid-template-columns: 1fr; gap: 40px; }
-    .sly-suites-gallery { order: -1; }
+    .sly-suites-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sly-suites-gallery {
+        order: -1;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-suites-section { padding: 60px 18px; }
-    .sly-suites-gallery img { height: 150px; }
+    .sly-suites-section {
+        padding: 60px 18px;
+    }
+
+    .sly-suites-gallery img {
+        height: 150px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-suites-features-grid { grid-template-columns: 1fr; }
+    .sly-suites-features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================
@@ -757,12 +907,20 @@
 }
 
 @media (max-width: 768px) {
-    .sly-dining-section { padding: 60px 18px; }
+    .sly-dining-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-dining-pill { font-size: 13px; padding: 10px 16px; }
-    .sly-dining-pills-wrap { gap: 10px; }
+    .sly-dining-pill {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .sly-dining-pills-wrap {
+        gap: 10px;
+    }
 }
 
 /* ============================================================
@@ -893,23 +1051,54 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-wellness-section { padding: 60px 18px; }
-    .sly-wellness-title { text-align: center; }
+    .sly-wellness-section {
+        padding: 60px 18px;
+    }
+
+    .sly-wellness-title {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-wellness-title { font-size: 30px; }
-    .sly-wellness-grid { grid-template-columns: 1fr; }
+    .sly-wellness-title {
+        font-size: 30px;
+    }
+
+    .sly-wellness-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-wellness-section { padding: 44px 14px; }
-    .sly-wellness-title { font-size: 24px; }
-    .sly-wellness-grid { gap: 14px; }
-    .sly-wellness-card { padding: 18px 20px; }
-    .sly-wellness-card-number { width: 38px; height: 38px; }
-    .sly-wellness-card-number span { font-size: 15px; }
-    .sly-wellness-card-text { font-size: 15px; }
+    .sly-wellness-section {
+        padding: 44px 14px;
+    }
+
+    .sly-wellness-title {
+        font-size: 24px;
+    }
+
+    .sly-wellness-grid {
+        gap: 14px;
+    }
+
+    .sly-wellness-card {
+        padding: 18px 20px;
+    }
+
+    .sly-wellness-card-number {
+        width: 38px;
+        height: 38px;
+    }
+
+    .sly-wellness-card-number span {
+        font-size: 15px;
+    }
+
+    .sly-wellness-card-text {
+        font-size: 15px;
+    }
 }
 
 /* ============================================================
@@ -1051,16 +1240,35 @@
 }
 
 @media (max-width: 768px) {
-    .sly-expedition-section { padding: 60px 18px; }
-    .sly-expedition-title { font-size: 28px; }
-    .sly-expedition-board { gap: 20px; }
-    .sly-expedition-polaroid { width: calc(50% - 10px); }
+    .sly-expedition-section {
+        padding: 60px 18px;
+    }
+
+    .sly-expedition-title {
+        font-size: 28px;
+    }
+
+    .sly-expedition-board {
+        gap: 20px;
+    }
+
+    .sly-expedition-polaroid {
+        width: calc(50% - 10px);
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-expedition-section { padding: 44px 14px; }
-    .sly-expedition-title { font-size: 22px; }
-    .sly-expedition-polaroid { width: 100%; }
+    .sly-expedition-section {
+        padding: 44px 14px;
+    }
+
+    .sly-expedition-title {
+        font-size: 22px;
+    }
+
+    .sly-expedition-polaroid {
+        width: 100%;
+    }
 }
 
 /* ============================================================
@@ -1159,20 +1367,42 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-dest-grid { grid-template-columns: repeat(2, 1fr); }
-    .sly-dest-card { height: 280px; }
-    .sly-dest-section { padding: 60px 18px; }
+    .sly-dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sly-dest-card {
+        height: 280px;
+    }
+
+    .sly-dest-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-dest-grid { gap: 16px; }
-    .sly-dest-card { height: 260px; }
+    .sly-dest-grid {
+        gap: 16px;
+    }
+
+    .sly-dest-card {
+        height: 260px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-dest-grid { grid-template-columns: 1fr; gap: 14px; }
-    .sly-dest-card { height: 220px; }
-    .sly-dest-card-name { font-size: 18px; }
+    .sly-dest-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .sly-dest-card {
+        height: 220px;
+    }
+
+    .sly-dest-card-name {
+        font-size: 18px;
+    }
 }
 
 /* ============================================================
@@ -1198,8 +1428,13 @@
 }
 
 @media (max-width: 480px) {
-    .sly-destcta-section { padding: 40px 16px; }
-    .sly-destcta-text { font-size: 17px; }
+    .sly-destcta-section {
+        padding: 40px 16px;
+    }
+
+    .sly-destcta-text {
+        font-size: 17px;
+    }
 }
 
 /* ============================================================
@@ -1253,13 +1488,25 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-included-grid { grid-template-columns: repeat(2, 1fr); }
-    .sly-included-section { padding: 60px 18px; }
+    .sly-included-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sly-included-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-included-grid { grid-template-columns: 1fr; gap: 12px; }
-    .sly-included-item { font-size: 14px; padding: 14px 16px; }
+    .sly-included-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sly-included-item {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
 }
 
 /* ============================================================
@@ -1381,18 +1628,34 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-who-grid { grid-template-columns: 1fr; gap: 40px; }
-    .sly-who-media { order: -1; }
-    .sly-who-media img { min-height: 300px; }
+    .sly-who-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sly-who-media {
+        order: -1;
+    }
+
+    .sly-who-media img {
+        min-height: 300px;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-who-section { padding: 60px 18px; }
+    .sly-who-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-who-section { padding: 44px 14px; }
-    .sly-who-card-title { font-size: 14px; }
+    .sly-who-section {
+        padding: 44px 14px;
+    }
+
+    .sly-who-card-title {
+        font-size: 14px;
+    }
 }
 
 /* ============================================================
@@ -1545,14 +1808,29 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-why-us-top { grid-template-columns: 1fr; gap: 40px; }
-    .sly-why-us-grid { grid-template-columns: repeat(2, 1fr); }
-    .sly-why-us-section { padding: 80px 18px; }
+    .sly-why-us-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sly-why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sly-why-us-section {
+        padding: 80px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-why-us-grid { grid-template-columns: 1fr; gap: 16px; }
-    .sly-why-us-card { padding: 24px 20px; }
+    .sly-why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .sly-why-us-card {
+        padding: 24px 20px;
+    }
 }
 
 /* ============================================================
@@ -1608,20 +1886,28 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-related-grid { grid-template-columns: repeat(2, 1fr); }
-    .sly-related-section { padding: 60px 18px; }
+    .sly-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sly-related-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-related-grid { grid-template-columns: 1fr; gap: 12px; }
+    .sly-related-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
 
 /* ============================================================
    FAQ SECTION
    ============================================================ */
 .sly-faq-section {
-    background: var(--sly-bg-soft);
-    padding: 100px 20px;
+    background: #ffffff;
+    padding: 80px 20px;
 }
 
 .sly-faq-container {
@@ -1629,58 +1915,148 @@
     margin: 0 auto;
 }
 
+.sly-faq-main-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--sly-navy);
+    margin: 0 0 20px;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.sly-faq-intro {
+    margin-bottom: 36px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+    text-align: left;
+}
+
+.sly-faq-intro p {
+    margin-bottom: 14px;
+}
+
 .sly-faq-list {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
 }
 
 .sly-faq-item {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px 24px;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    border-radius: 0 !important;
+    padding: 28px 20px;
     cursor: pointer;
-    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
-    transition: box-shadow 0.3s ease;
+    transition: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    scale: none !important;
+}
+
+.sly-faq-item:focus,
+.sly-faq-item:focus-visible,
+.sly-faq-item:active {
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    scale: none !important;
+}
+
+.sly-faq-item:last-child {
+    border-bottom: none !important;
 }
 
 .sly-faq-item:hover {
-    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+    background: rgba(39, 68, 114, 0.02) !important;
+    transform: none !important;
+    scale: none !important;
 }
 
 .sly-faq-question-row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    font-size: 17px;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--sly-navy);
+    text-align: left;
 }
 
-.sly-faq-toggle {
-    font-size: 22px;
+.sly-faq-q-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--sly-navy);
+    margin: 0;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.sly-faq-toggle-icon {
+    font-size: 28px;
     color: var(--sly-navy);
     flex-shrink: 0;
+    font-weight: 300;
 }
 
-.sly-faq-answer {
-    margin: 14px 0 0 0;
-    font-size: 15px;
-    color: #475569;
-    line-height: 1.7;
+.sly-faq-answer-content {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4a5568;
+    padding-right: 50px;
+}
+
+.sly-faq-answer-content p {
+    margin-bottom: 12px;
+}
+
+.sly-faq-answer-content ul {
+    margin: 12px 0 16px 24px;
+    padding-left: 0;
+    list-style-type: disc;
+}
+
+.sly-faq-answer-content ul li {
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+.sly-faq-answer-content ul li strong {
+    color: var(--sly-navy);
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    .sly-faq-section { padding: 60px 18px; }
-    .sly-faq-question-row { font-size: 15px; }
-    .sly-faq-item { padding: 16px 18px; }
+    .sly-faq-section {
+        padding: 60px 18px;
+    }
+
+    .sly-faq-main-title {
+        font-size: 22px;
+    }
+
+    .sly-faq-q-title {
+        font-size: 15.5px;
+    }
+
+    .sly-faq-item {
+        padding: 16px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-faq-question-row { font-size: 14px; }
-    .sly-faq-answer { font-size: 14px; }
+    .sly-faq-q-title {
+        font-size: 14px;
+    }
+
+    .sly-faq-answer-content {
+        font-size: 14px;
+    }
 }
 
 /* ============================================================
@@ -1740,17 +2116,34 @@
 }
 
 @media (max-width: 1024px) {
-    .sly-cta-heading { font-size: 30px; }
+    .sly-cta-heading {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 768px) {
-    .sly-cta-section { padding: 70px 18px; }
+    .sly-cta-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .sly-cta-heading { font-size: 22px; }
-    .sly-cta-text { font-size: 14px; }
-    .sly-cta-btn-row { flex-direction: column; width: 100%; }
+    .sly-cta-heading {
+        font-size: 22px;
+    }
+
+    .sly-cta-text {
+        font-size: 14px;
+    }
+
+    .sly-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
     .sly-cta-btn-row .sly-btn-primary,
-    .sly-cta-btn-row .sly-btn-outline { width: 100%; justify-content: center; }
+    .sly-cta-btn-row .sly-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
 }
