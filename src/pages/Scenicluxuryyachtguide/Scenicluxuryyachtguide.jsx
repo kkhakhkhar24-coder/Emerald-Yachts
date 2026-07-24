@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ScenicLuxuryYachtGuide.css'
+import './Scenicluxuryyachtguide.css'
 import {
     Sparkles, Phone, LayoutList, CheckCircle, Crown, Users, Home,
     UtensilsCrossed, Wine, Gift, Wifi, Compass, Anchor, Plane, Ship,

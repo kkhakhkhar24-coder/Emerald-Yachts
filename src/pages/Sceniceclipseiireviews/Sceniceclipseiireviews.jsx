@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ScenicEclipseIIReviews.css'
+import './Sceniceclipseiireviews.css'
 import {
     Star, CheckCircle, XCircle, Phone, LayoutList, Award, Users,
     Ship, Utensils, Sparkles, Compass, Wind, HeartPulse, Plane,
