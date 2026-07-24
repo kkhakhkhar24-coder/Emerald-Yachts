@@ -119,6 +119,9 @@ import Internationalfamilyadventures from "./pages/Internationalfamilyadventures
 import Businessmilestoneliquidityeventtravel from "./pages/Businessmilestoneliquidityeventtravel/Businessmilestoneliquidityeventtravel";
 import Privacysecuritytravelplanning  from "./pages/Privacysecuritytravelplanning/Privacysecuritytravelplanning";
 import Buildingstrongerfamiliesthroughtravel from "./pages/Buildingstrongerfamiliesthroughtravel/Buildingstrongerfamiliesthroughtravel";
+import Scenicluxuryyachtguide from "./pages/Scenicluxuryyachtguide/Scenicluxuryyachtguide";
+import Sceniceclipsereviews from "./pages/Sceniceclipsereviews/Sceniceclipsereviews";
+import Sceniceclipseiireviews from "./pages/Sceniceclipseiireviews/Sceniceclipseiireviews";
 
 function App() {
   return (
@@ -654,6 +657,26 @@ function App() {
           path="/building-stronger-families-through-travel"
           element={<Buildingstrongerfamiliesthroughtravel />}
           />
+
+          <Route
+          path="/scenic-luxury-yacht-guide"
+          element={<Scenicluxuryyachtguide />}
+          />
+
+
+          <Route
+          path="/scenic-eclipse-reviews"
+          element={<Sceniceclipsereviews />}
+          />
+
+          <Route
+          path="/scenic-eclipse-ii-reviews"
+          element={<Sceniceclipseiireviews />}
+          />
+
+
+
+          
 
         </Routes>
       </BrowserRouter>

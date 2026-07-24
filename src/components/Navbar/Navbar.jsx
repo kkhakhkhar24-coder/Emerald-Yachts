@@ -834,6 +834,33 @@ const Navbar = () => {
                   >
                     Building stronger families through travel</NavLink>
 
+                     <NavLink
+                    to="/scenic-luxury-yacht-guide"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Luxury Yacht Guide</NavLink>
+
+                     <NavLink
+                    to="/scenic-eclipse-reviews"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Eclipse Reviews</NavLink>
+
+                    <NavLink
+                    to="/scenic-eclipse-ii-reviews"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Eclipse Ii Reviews</NavLink>
+
+
+
+
+
+                    
+
                     
             </div>
           </div>
@@ -1660,6 +1687,20 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     Building stronger families through travel</NavLink>
+
+                    <NavLink
+                    to="/scenic-luxury-yacht-guide"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Luxury Yacht Guide</NavLink>
+
+                     <NavLink
+                    to="/scenic-eclipse-reviews"
+                    className="nav-dropdown-single"
+                    onClick={toggleMenu}
+                  >
+                    Scenic Eclipse Reviews</NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>
