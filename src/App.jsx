@@ -123,7 +123,7 @@ import Scenicluxuryyachtguide from "./pages/Scenicluxuryyachtguide/Scenicluxuryy
 import Sceniceclipsereviews from "./pages/Sceniceclipsereviews/Sceniceclipsereviews";
 import Sceniceclipseiireviews from "./pages/Sceniceclipseiireviews/Sceniceclipseiireviews";
 import ScenicvsPonant from "./pages/ScenicvsPonant/ScenicvsPonant";
-import ScenicVsSeabourn from "./pages/ScenicvsSeabourn/ScenicvsSeabourn";
+import ScenicVsSeabourn from "./pages/ScenicvsSeabourn/ScenicVsSeabourn";
 import IsScenicWorthIt from "./pages/IsScenicworthit/IsScenicWorthIt";
 
 function App() {
