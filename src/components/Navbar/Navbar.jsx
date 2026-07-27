@@ -876,14 +876,14 @@ const Navbar = () => {
               >
                 What Is Included On Scenic</NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-mediterranean-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Scenic Mediterranean Cruises</NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/scenic-iceland-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1763,14 +1763,14 @@ const Navbar = () => {
             >
               What Is Included On Scenic</NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-mediterranean-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Scenic Mediterranean Cruises</NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/scenic-iceland-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}

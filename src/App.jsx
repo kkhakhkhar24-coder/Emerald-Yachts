@@ -127,7 +127,7 @@ import ScenicVsSeabourn from "./pages/ScenicvsSeabourn/ScenicVsSeabourn";
 import IsScenicWorthIt from "./pages/IsScenicworthit/IsScenicWorthIt";
 import Whatisincludedonscenic from "./pages/Whatisincludedonscenic/Whatisincludedonscenic";
 import ScenicGreenlandCruises from "./pages/ScenicGreenlandCruises/ScenicGreenlandCruises";
-// import Scenicmediterraneancruises from "./pages/Scenicmediterraneancruises/Scenicmediterraneancruises";
+import Scenicmediterraneancruises from "./pages/Scenicmediterraneancruises/Scenicmediterraneancruises";
 // import Scenicicelandcruises from "./pages/Scenicicelandcruises/Scenicicelandcruises";
 
 function App() {
@@ -701,15 +701,15 @@ function App() {
             element={<Whatisincludedonscenic />}
           />
 
-          {/* <Route
+          <Route
             path="/scenic-mediterranean-cruises"
             element={<Scenicmediterraneancruises />}
           />
 
-          <Route
+          {/* <Route
             path="/scenic-iceland-cruises"
             element={<Scenicicelandcruises />}
-          /> */}
+          />  */}
 
           <Route
           path="/scenic-greenland-cruises"
