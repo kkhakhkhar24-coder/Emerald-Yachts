@@ -103,7 +103,8 @@ function ScenicEclipseReviews() {
     /* Destinations */
     const sceDestinations = [
         { name: 'Antarctica', desc: "Witness glaciers, penguins, whales, and Zodiac landings in one of the world's most remote destinations.", icon: Snowflake },
-        { name: 'Arctic & Greenland', desc: 'Explore polar landscapes, dramatic fjords, and incredible wildlife.', icon: Mountain },
+        { name: 'Arctic', desc: 'Explore polar landscapes, remote wilderness, and incredible wildlife.', icon: Mountain },
+        { name: 'Greenland', desc: 'Discover colossal icebergs, spectacular fjords, and remote polar landscapes.', icon: Wind },
         { name: 'Mediterranean', desc: 'Visit iconic ports alongside smaller coastal towns inaccessible to larger ships.', icon: Anchor },
         { name: 'Norwegian Fjords', desc: 'Cruise breathtaking fjords surrounded by waterfalls and mountain scenery.', icon: Waves },
         { name: 'South Pacific', desc: 'Discover remote islands, vibrant marine life, and unique cultural experiences.', icon: Globe }
@@ -575,9 +576,8 @@ function ScenicEclipseReviews() {
                         <div className="sce-destinations-grid">
                             {sceDestinations.map((dest, idx) => {
                                 const DestIcon = dest.icon
-                                const isLast = idx === sceDestinations.length - 1
                                 return (
-                                    <div key={idx} className={`sce-destination-card ${isLast ? 'sce-destinations-wide-card' : ''}`}>
+                                    <div key={idx} className="sce-destination-card">
                                         <div className="sce-destination-icon">
                                             <DestIcon size={22} />
                                         </div>

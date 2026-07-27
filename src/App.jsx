@@ -117,7 +117,7 @@ import Philanthropicpurposedriventravel from "./pages/Philanthropicpurposedriven
 import Luxurycruisesforaffluentfamilies from "./pages/Luxurycruisesforaffluentfamilies/Luxurycruisesforaffluentfamilies";
 import Internationalfamilyadventures from "./pages/Internationalfamilyadventures/Internationalfamilyadventures";
 import Businessmilestoneliquidityeventtravel from "./pages/Businessmilestoneliquidityeventtravel/Businessmilestoneliquidityeventtravel";
-import Privacysecuritytravelplanning  from "./pages/Privacysecuritytravelplanning/Privacysecuritytravelplanning";
+import Privacysecuritytravelplanning from "./pages/Privacysecuritytravelplanning/Privacysecuritytravelplanning";
 import Buildingstrongerfamiliesthroughtravel from "./pages/Buildingstrongerfamiliesthroughtravel/Buildingstrongerfamiliesthroughtravel";
 import Scenicluxuryyachtguide from "./pages/Scenicluxuryyachtguide/Scenicluxuryyachtguide";
 import Sceniceclipsereviews from "./pages/Sceniceclipsereviews/Sceniceclipsereviews";
@@ -125,6 +125,9 @@ import Sceniceclipseiireviews from "./pages/Sceniceclipseiireviews/Sceniceclipse
 import ScenicvsPonant from "./pages/ScenicvsPonant/ScenicvsPonant";
 import ScenicVsSeabourn from "./pages/ScenicvsSeabourn/ScenicVsSeabourn";
 import IsScenicWorthIt from "./pages/IsScenicworthit/IsScenicWorthIt";
+import Whatisincludedonscenic from "./pages/Whatisincludedonscenic/Whatisincludedonscenic";
+// import Scenicmediterraneancruises from "./pages/Scenicmediterraneancruises/Scenicmediterraneancruises";
+// import Scenicicelandcruises from "./pages/Scenicicelandcruises/Scenicicelandcruises";
 
 function App() {
   return (
@@ -652,45 +655,61 @@ function App() {
           />
 
           <Route
-          path="/privacy-security-travel-planning"
-          element={<Privacysecuritytravelplanning  />}
+            path="/privacy-security-travel-planning"
+            element={<Privacysecuritytravelplanning />}
           />
 
           <Route
-          path="/building-stronger-families-through-travel"
-          element={<Buildingstrongerfamiliesthroughtravel />}
+            path="/building-stronger-families-through-travel"
+            element={<Buildingstrongerfamiliesthroughtravel />}
           />
 
           <Route
-          path="/scenic-luxury-yacht-guide"
-          element={<Scenicluxuryyachtguide />}
+            path="/scenic-luxury-yacht-guide"
+            element={<Scenicluxuryyachtguide />}
           />
 
 
           <Route
-          path="/scenic-eclipse-reviews"
-          element={<Sceniceclipsereviews />}
+            path="/scenic-eclipse-reviews"
+            element={<Sceniceclipsereviews />}
           />
 
           <Route
-          path="/scenic-eclipse-ii-reviews"
-          element={<Sceniceclipseiireviews />}
+            path="/scenic-eclipse-ii-reviews"
+            element={<Sceniceclipseiireviews />}
           />
-          
+
           <Route
-          path="/scenic-vs-ponant"
-          element={<ScenicvsPonant />}
+            path="/scenic-vs-ponant"
+            element={<ScenicvsPonant />}
           />
-          
+
           <Route
-          path="/scenic-vs-seabourn"
-          element={<ScenicVsSeabourn />}
+            path="/scenic-vs-seabourn"
+            element={<ScenicVsSeabourn />}
           />
-          
+
           <Route
-          path="/is-scenic-worth-it"
-          element={<IsScenicWorthIt />}
+            path="/is-scenic-worth-it"
+            element={<IsScenicWorthIt />}
           />
+
+          <Route
+            path="/what-is-included-on-scenic"
+            element={<Whatisincludedonscenic />}
+          />
+
+          {/* <Route
+            path="/scenic-mediterranean-cruises"
+            element={<Scenicmediterraneancruises />}
+          />
+
+          <Route
+            path="/scenic-iceland-cruises"
+            element={<Scenicicelandcruises />}
+          /> */}
+
 
         </Routes>
       </BrowserRouter>

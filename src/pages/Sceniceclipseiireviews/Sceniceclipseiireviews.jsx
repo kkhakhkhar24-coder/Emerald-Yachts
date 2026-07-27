@@ -79,7 +79,8 @@ function ScenicEclipseIIReviews() {
     /* Destinations */
     const seirDestinations = [
         { name: 'Antarctica', icon: Snowflake, desc: "Penguins, whales, glaciers, Zodiac landings, and extraordinary expedition experiences." },
-        { name: 'Arctic & Greenland', icon: Mountain, desc: 'Icebergs, fjords, wildlife, and remote polar landscapes.' },
+        { name: 'Arctic', icon: Mountain, desc: 'Polar bears, sea ice, Svalbard, remote archipelagos, and tundra wilderness.' },
+        { name: 'Greenland', icon: Wind, desc: 'Towering icebergs, deep fjords, coastal communities, and spectacular Arctic scenery.' },
         { name: 'Mediterranean', icon: Anchor, desc: 'Historic ports, boutique coastal towns, and luxury yacht cruising.' },
         { name: 'South Pacific', icon: Palmtree, desc: 'French Polynesia, Fiji, Indonesia, Papua New Guinea, and tropical islands.' },
         { name: 'Australia & New Zealand', icon: Compass, desc: "The Kimberley, Tasmania, New Zealand, and Australia's remarkable coastline." }
@@ -589,9 +590,9 @@ function ScenicEclipseIIReviews() {
                 </section>
 
                 {/* DESTINATIONS */}
-                <section className="fcel-dest-section">
-                    <div className="fcel-dest-container">
-                        <div className="fcel-dest-header">
+                <section className="seir-dest-section">
+                    <div className="seir-dest-container">
+                        <div className="seir-dest-header">
                             <span className="fcel-eyebrow-label">
                                 <Globe size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
                                 Destinations
@@ -600,17 +601,17 @@ function ScenicEclipseIIReviews() {
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Popular itineraries include:</p>
                         </div>
-                        <div className="fcel-dest-grid">
+                        <div className="seir-dest-grid">
                             {seirDestinations.map((dest, idx) => {
                                 const DestIcon = dest.icon
                                 return (
-                                    <div key={idx} className="fcel-dest-card">
-                                        <div className="fcel-dest-card-content">
-                                            <div className="fcel-dest-icon-wrap">
+                                    <div key={idx} className="seir-dest-card">
+                                        <div className="seir-dest-card-content">
+                                            <div className="seir-dest-icon-wrap">
                                                 <DestIcon size={24} />
                                             </div>
-                                            <h4 className="fcel-dest-card-name">{dest.name}</h4>
-                                            <p className="fcel-dest-card-desc">{dest.desc}</p>
+                                            <h4 className="seir-dest-card-name">{dest.name}</h4>
+                                            <p className="seir-dest-card-desc">{dest.desc}</p>
                                         </div>
                                     </div>
                                 )
@@ -713,23 +714,23 @@ function ScenicEclipseIIReviews() {
                 </section>
 
                 {/* WHY BOOK WITH TRIPS & SHIPS */}
-                <section className="fcel-why-us-section">
-                    <div className="fcel-why-us-container">
-                        <div className="fcel-why-us-top">
+                <section className="seir-why-us-section">
+                    <div className="seir-why-us-container">
+                        <div className="seir-why-us-top">
                             <span className="fcel-eyebrow-label">TRUSTED SCENIC SPECIALISTS</span>
                             <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Our Scenic specialists help you:</p>
                         </div>
-                        <div className="fcel-why-us-grid">
+                        <div className="seir-why-us-grid">
                             {seirWhyBook.map((item, idx) => {
                                 const SeirIcon = item.icon
                                 return (
-                                    <div key={idx} className="fcel-why-us-card">
-                                        <div className="fcel-why-us-icon">
+                                    <div key={idx} className="seir-why-us-card">
+                                        <div className="seir-why-us-icon">
                                             <SeirIcon size={22} />
                                         </div>
-                                        <p className="fcel-why-us-card-title">{item.title}</p>
+                                        <p className="seir-why-us-card-title">{item.title}</p>
                                     </div>
                                 )
                             })}

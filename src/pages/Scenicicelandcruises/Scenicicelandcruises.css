@@ -1,7 +1,7 @@
 /* ============================================================
-   SCENIC ECLIPSE II REVIEWS — PAGE STYLES
+   SCENIC ICELAND CRUISES — PAGE STYLES
    Reused prefix (matching content/patterns): fcel-
-   New unique prefix (page-specific content):  seir-
+   New unique prefix (page-specific content):  sic-
    Colors, fonts, sizes copied 1:1 from the reference stylesheet.
    Fully responsive at 1024px / 768px / 480px.
    ============================================================ */
@@ -15,12 +15,11 @@
     --fcel-bg-dark2: #1c2f4a;
     --fcel-green: #10b981;
     --fcel-gold: var(--fcel-navy);
-    --seir-accent: #60a5fa;
-    --seir-red: #dc2626;
+    --sic-accent: #60a5fa;
 }
 
 /* ============================================================
-   SHARED TYPOGRAPHY & UTILITIES (reused — same content role as reference)
+   SHARED TYPOGRAPHY & UTILITIES (reused)
    ============================================================ */
 .fcel-page-wrapper {
     overflow-x: hidden;
@@ -78,7 +77,7 @@
 }
 
 /* ============================================================
-   HERO SECTION (reused — same role as reference hero)
+   HERO SECTION (reused)
    ============================================================ */
 .fcel-hero-section {
     position: relative;
@@ -196,14 +195,7 @@
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Star-badge used inside the hero to replace rotating photography */
-.seir-hero-stars {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.seir-hero-placeholder {
+.sic-hero-placeholder {
     position: absolute;
     inset: 0;
     z-index: 0;
@@ -233,7 +225,7 @@
 }
 
 /* ============================================================
-   INTRO SECTION (reused — same role as reference intro)
+   INTRO SECTION (reused)
    ============================================================ */
 .fcel-intro-section {
     background: #faf8f5;
@@ -368,9 +360,9 @@
 }
 
 /* ============================================================
-   IMAGE PLACEHOLDERS (new — no real images used anywhere)
+   IMAGE PLACEHOLDERS (new — no real images anywhere on page)
    ============================================================ */
-.seir-placeholder {
+.sic-placeholder {
     width: 100%;
     height: 100%;
     min-height: 220px;
@@ -384,13 +376,7 @@
     border-radius: 20px;
 }
 
-.seir-placeholder-dark {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
-    color: #e2e8f0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.seir-placeholder span {
+.sic-placeholder span {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -399,55 +385,278 @@
     max-width: 220px;
 }
 
-.seir-intro-frame {
+.sic-intro-frame {
     min-height: 500px;
     border-radius: 20px;
 }
 
 @media (max-width: 480px) {
-    .seir-placeholder { min-height: 160px; }
-    .seir-intro-frame { min-height: 240px; }
+    .sic-placeholder { min-height: 160px; }
+    .sic-intro-frame { min-height: 240px; }
 }
 
 /* ============================================================
-   STAR RATING (new — unique to review content)
+   WHY CHOOSE SCENIC — HIGHLIGHT PILL GRID
+   (reused — matches reference villa feature-pill pattern)
    ============================================================ */
-.seir-rating-row {
+.fcel-villa-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 26px;
+}
+
+.fcel-villa-feature-pill {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 22px;
-}
-
-.seir-rating-stars {
-    display: flex;
-    gap: 3px;
+    background: var(--fcel-bg-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
     color: var(--fcel-navy);
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.seir-rating-stars svg {
-    fill: var(--fcel-navy);
+@media (max-width: 480px) {
+    .fcel-villa-features-grid { grid-template-columns: 1fr; }
 }
 
-.seir-rating-label {
+/* Why choose scenic wrapper section */
+.sic-whyscenic-section {
+    background: var(--fcel-bg-white);
+    padding: 100px 20px;
+}
+
+.sic-whyscenic-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sic-whyscenic-note {
+    max-width: 720px;
+    margin: 26px auto 0;
     font-size: 15px;
-    font-weight: 700;
+    color: #475569;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   INLINE CTA STRIPS (new — repeated mid-page CTA banners)
+   ============================================================ */
+.sic-inline-cta {
+    background: var(--fcel-bg-soft);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sic-inline-cta-inner {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.sic-inline-cta-heading {
+    font-size: 26px;
+    font-weight: 600;
     color: var(--fcel-navy);
+    margin: 0 0 20px 0;
+    line-height: 1.35;
 }
 
-.seir-rating-row.seir-rating-on-dark .seir-rating-stars,
-.seir-rating-row.seir-rating-on-dark .seir-rating-stars svg {
-    color: var(--seir-accent);
-    fill: var(--seir-accent);
+@media (max-width: 480px) {
+    .sic-inline-cta { padding: 40px 16px; }
+    .sic-inline-cta-heading { font-size: 20px; }
 }
 
-.seir-rating-row.seir-rating-on-dark .seir-rating-label {
+/* ============================================================
+   LANDSCAPES DESTINATION GRID (reused — matches reference's
+   destination card grid pattern exactly)
+   ============================================================ */
+.sic-dest-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.sic-dest-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sic-dest-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.sic-dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sic-dest-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
+    background: linear-gradient(150deg, var(--fcel-navy) 0%, var(--fcel-bg-dark) 100%);
+}
+
+.sic-dest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.12);
+}
+
+.sic-dest-card-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 24px;
+}
+
+.sic-dest-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
     color: #ffffff;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sic-dest-card:hover .sic-dest-icon-wrap {
+    background: #ffffff;
+    color: var(--fcel-navy);
+    transform: rotate(15deg) scale(1.05);
+}
+
+.sic-dest-card-name {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
+}
+
+.sic-dest-card-desc {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .sic-dest-grid { grid-template-columns: repeat(2, 1fr); }
+    .sic-dest-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sic-dest-grid { grid-template-columns: 1fr; gap: 14px; }
+    .sic-dest-card { min-height: 220px; }
+    .sic-dest-icon-wrap { width: 48px; height: 48px; margin-bottom: 10px; }
+    .sic-dest-card-name { font-size: 16px; }
+}
+
+/* ============================================================
+   WILDLIFE ENCOUNTERS — ICON RING GRID ON DARK
+   (reused — matches reference's "why-grid" dark feature-card pattern)
+   ============================================================ */
+.fcel-why-section {
+    background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
+    padding: 100px 20px;
+    position: relative;
+}
+
+.fcel-why-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fcel-why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.fcel-why-header .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.fcel-why-header .fcel-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.fcel-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.fcel-why-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fcel-why-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.fcel-why-icon-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #60a5fa;
+}
+
+.fcel-why-card-text {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .fcel-why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .fcel-why-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .fcel-why-grid { grid-template-columns: 1fr; gap: 14px; }
+    .fcel-why-card { padding: 20px 16px; }
 }
 
 /* ============================================================
    OCCASION-STYLE SPLIT SECTIONS (reused — matches reference's
-   reusable image + copy pattern used for Suites / Dining / Service / Expedition)
+   reusable image + copy pattern; used for Expedition Experiences,
+   Scenic Eclipse Luxury, and Dining & Culinary Experiences)
    ============================================================ */
 .fcel-occasion-section {
     padding: 90px 20px;
@@ -582,240 +791,31 @@
 }
 
 /* ============================================================
-   FIRST IMPRESSIONS (new — icon feature-card grid on dark navy)
+   WELLNESS AT SEA — FACILITY CARD GRID (new)
    ============================================================ */
-.seir-impression-section {
-    background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
+.sic-wellness-section {
+    background: var(--fcel-bg-soft);
     padding: 100px 20px;
 }
 
-.seir-impression-container {
+.sic-wellness-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.seir-impression-header {
+.sic-wellness-header {
     text-align: center;
     max-width: 780px;
     margin: 0 auto 50px;
 }
 
-.seir-impression-header .fcel-section-heading {
-    color: #ffffff !important;
-}
-
-.seir-impression-header .fcel-lead-paragraph {
-    color: #cbd5e1;
-}
-
-.seir-impression-grid {
+.sic-wellness-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.seir-impression-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 26px 22px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    transition: all 0.3s ease;
-}
-
-.seir-impression-card:hover {
-    background: rgba(255, 255, 255, 0.09);
-    transform: translateY(-4px);
-}
-
-.seir-impression-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background: rgba(96, 165, 250, 0.15);
-    color: var(--seir-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.seir-impression-text {
-    color: #e2e8f0;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0;
-}
-
-@media (max-width: 1024px) {
-    .seir-impression-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-impression-section { padding: 70px 18px; }
-}
-
-@media (max-width: 480px) {
-    .seir-impression-grid { grid-template-columns: 1fr; gap: 14px; }
-    .seir-impression-card { padding: 20px 18px; }
-}
-
-/* ============================================================
-   DINING VENUES GRID (new — unique venue-name card grid)
-   ============================================================ */
-.seir-venues-wrap {
-    margin: 6px 0 24px 0;
-}
-
-.seir-venues-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-}
-
-.seir-venue-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #ffffff;
-    border: 1px solid rgba(39, 68, 114, 0.12);
-    border-radius: 10px;
-    padding: 12px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--fcel-navy);
-    box-shadow: 0 6px 16px rgba(15, 28, 46, 0.05);
-}
-
-@media (max-width: 480px) {
-    .seir-venues-grid { grid-template-columns: 1fr; }
-}
-
-/* ============================================================
-   PILL / CHECKLIST GRID (reused — matches reference's villa
-   feature-pill pattern; used here for Suite features & What's Included)
-   ============================================================ */
-.fcel-villa-features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-top: 26px;
-}
-
-.fcel-villa-feature-pill {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--fcel-bg-soft);
-    border-radius: 10px;
-    padding: 14px 16px;
-    color: var(--fcel-navy);
-    font-weight: 600;
-    font-size: 14px;
-}
-
-@media (max-width: 480px) {
-    .fcel-villa-features-grid { grid-template-columns: 1fr; }
-}
-
-/* ============================================================
-   HELICOPTERS & SUBMERSIBLE SPOTLIGHT (new)
-   ============================================================ */
-.seir-heli-section {
-    background: var(--fcel-bg-white);
-    padding: 100px 20px;
-}
-
-.seir-heli-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.seir-heli-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 44px;
-    text-align: left;
-}
-
-.seir-heli-card {
-    background: var(--fcel-bg-soft);
-    border-radius: 18px;
-    padding: 34px 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.seir-heli-icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 14px;
-    background: var(--fcel-navy);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.seir-heli-card-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--fcel-navy);
-    margin: 0 0 10px 0;
-}
-
-.seir-heli-card-text {
-    font-size: 15px;
-    color: #3d4a5c;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.seir-heli-note {
-    max-width: 760px;
-    margin: 40px auto 0;
-    font-size: 15px;
-    color: #475569;
-    font-style: italic;
-    line-height: 1.7;
-}
-
-@media (max-width: 1024px) {
-    .seir-heli-section { padding: 70px 18px; }
-}
-
-@media (max-width: 768px) {
-    .seir-heli-grid { grid-template-columns: 1fr; }
-}
-
-/* ============================================================
-   WELLNESS & SPA FACILITY GRID (new)
-   ============================================================ */
-.seir-wellness-section {
-    background: var(--fcel-bg-soft);
-    padding: 100px 20px;
-}
-
-.seir-wellness-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.seir-wellness-header {
-    text-align: center;
-    max-width: 780px;
-    margin: 0 auto 50px;
-}
-
-.seir-wellness-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.seir-wellness-card {
+.sic-wellness-card {
     background: #ffffff;
     border-radius: 14px;
     padding: 26px 20px;
@@ -824,12 +824,12 @@
     transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.seir-wellness-card:hover {
+.sic-wellness-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 36px rgba(39, 68, 114, 0.1);
 }
 
-.seir-wellness-icon {
+.sic-wellness-icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -841,7 +841,7 @@
     margin: 0 auto 14px;
 }
 
-.seir-wellness-text {
+.sic-wellness-text {
     font-size: 14px;
     font-weight: 600;
     color: var(--fcel-navy);
@@ -849,133 +849,29 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-wellness-grid { grid-template-columns: repeat(3, 1fr); }
-    .seir-wellness-section { padding: 70px 18px; }
-}
-
-@media (max-width: 768px) {
-    .seir-wellness-grid { grid-template-columns: repeat(2, 1fr); }
+    .sic-wellness-grid { grid-template-columns: repeat(2, 1fr); }
+    .sic-wellness-section { padding: 70px 18px; }
 }
 
 @media (max-width: 480px) {
-    .seir-wellness-grid { grid-template-columns: 1fr; gap: 14px; }
+    .sic-wellness-grid { grid-template-columns: 1fr; gap: 14px; }
 }
 
 /* ============================================================
-   DESTINATIONS GRID (reused — matches reference's destination
-   card grid pattern exactly)
+   WHAT'S INCLUDED (new wrapper — reuses pill grid inside)
    ============================================================ */
-.seir-dest-section {
+.sic-included-section {
     background: var(--fcel-bg-white);
     padding: 100px 20px;
 }
 
-.seir-dest-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.seir-dest-header {
-    text-align: center;
-    max-width: 780px;
-    margin: 0 auto 50px;
-}
-
-.seir-dest-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.seir-dest-card {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
-    background: linear-gradient(150deg, var(--fcel-navy) 0%, var(--fcel-bg-dark) 100%);
-}
-
-.seir-dest-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.12);
-}
-
-.seir-dest-card-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 24px;
-}
-
-.seir-dest-icon-wrap {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 14px;
-    color: #ffffff;
-    transition: all 0.35s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.seir-dest-card:hover .seir-dest-icon-wrap {
-    background: #ffffff;
-    color: var(--fcel-navy);
-    transform: rotate(15deg) scale(1.05);
-}
-
-.seir-dest-card-name {
-    color: #ffffff;
-    font-size: 19px;
-    font-weight: 600;
-    margin: 0 0 8px 0;
-    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
-}
-
-.seir-dest-card-desc {
-    color: #cbd5e1;
-    font-size: 13px;
-    margin: 0;
-    line-height: 1.5;
-}
-
-@media (max-width: 1024px) {
-    .seir-dest-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-dest-section { padding: 70px 18px; }
-}
-
-@media (max-width: 480px) {
-    .seir-dest-grid { grid-template-columns: 1fr; gap: 14px; }
-    .seir-dest-card { min-height: 220px; }
-    .seir-dest-icon-wrap { width: 48px; height: 48px; margin-bottom: 10px; }
-    .seir-dest-card-name { font-size: 16px; }
-}
-
-/* ============================================================
-   WHAT'S INCLUDED (new wrapper, reuses pill grid inside)
-   ============================================================ */
-.seir-included-section {
-    background: var(--fcel-bg-soft);
-    padding: 100px 20px;
-}
-
-.seir-included-container {
+.sic-included-container {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.seir-included-note {
+.sic-included-note {
     max-width: 720px;
     margin: 26px auto 0;
     font-size: 15px;
@@ -985,157 +881,194 @@
 }
 
 /* ============================================================
-   PROS & CONS (new)
+   BEST TIME TO CRUISE ICELAND — SEASON CARDS (new)
    ============================================================ */
-.seir-proscons-section {
-    background: var(--fcel-bg-white);
+.sic-season-section {
+    background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
     padding: 100px 20px;
 }
 
-.seir-proscons-container {
+.sic-season-container {
     max-width: 1100px;
     margin: 0 auto;
-}
-
-.seir-proscons-header {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 50px;
-}
-
-.seir-proscons-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.seir-pros-col,
-.seir-cons-col {
-    border-radius: 18px;
-    padding: 32px 28px;
-}
-
-.seir-pros-col {
-    background: rgba(16, 185, 129, 0.06);
-    border: 1px solid rgba(16, 185, 129, 0.2);
-}
-
-.seir-cons-col {
-    background: rgba(220, 38, 38, 0.05);
-    border: 1px solid rgba(220, 38, 38, 0.18);
-}
-
-.seir-proscons-col-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-}
-
-.seir-pros-col .seir-proscons-col-title {
-    color: var(--fcel-green);
-}
-
-.seir-cons-col .seir-proscons-col-title {
-    color: var(--seir-red);
-}
-
-.seir-proscons-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.seir-proscons-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #334155;
-    line-height: 1.5;
-}
-
-.seir-pros-icon {
-    color: var(--fcel-green);
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.seir-cons-icon {
-    color: var(--seir-red);
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-@media (max-width: 768px) {
-    .seir-proscons-grid { grid-template-columns: 1fr; }
-    .seir-proscons-section { padding: 60px 18px; }
-}
-
-/* ============================================================
-   OUR VERDICT (new)
-   ============================================================ */
-.seir-verdict-section {
-    background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
-    padding: 110px 20px;
     text-align: center;
 }
 
-.seir-verdict-container {
-    max-width: 820px;
-    margin: 0 auto;
-}
-
-.seir-verdict-container .fcel-section-heading {
+.sic-season-container .fcel-section-heading {
     color: #ffffff !important;
 }
 
-.seir-verdict-text {
-    font-size: 18px;
+.sic-season-container .fcel-lead-paragraph {
     color: #cbd5e1;
-    line-height: 1.8;
+}
+
+.sic-season-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 44px;
+    text-align: left;
+}
+
+.sic-season-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 26px;
+    transition: all 0.3s ease;
+}
+
+.sic-season-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-6px);
+}
+
+.sic-season-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--sic-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.sic-season-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
     margin: 0 0 10px 0;
 }
 
-.seir-verdict-rating {
-    justify-content: center;
-    margin-top: 30px;
+.sic-season-text {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.sic-season-note {
+    max-width: 720px;
+    margin: 40px auto 0;
+    font-size: 15px;
+    color: #cbd5e1;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .sic-season-section { padding: 70px 18px; }
 }
 
 @media (max-width: 768px) {
-    .seir-verdict-section { padding: 70px 18px; }
+    .sic-season-grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
-   WHY BOOK WITH US (reused — matches reference why-us grid pattern)
+   WHO SHOULD CHOOSE — AUDIENCE PERSONA GRID (new)
    ============================================================ */
-.seir-why-us-section {
+.sic-audience-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.sic-audience-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sic-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.sic-audience-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 14px;
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.04);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sic-audience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(39, 68, 114, 0.1);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.sic-audience-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--fcel-bg-soft);
+    color: var(--fcel-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sic-audience-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0;
+}
+
+.sic-audience-closing {
+    max-width: 780px;
+    margin: 40px auto 0;
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .sic-audience-grid { grid-template-columns: repeat(2, 1fr); }
+    .sic-audience-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .sic-audience-grid { grid-template-columns: 1fr; gap: 14px; }
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS (reused — matches reference's
+   own "Why Choose Us" section 1:1)
+   ============================================================ */
+.sic-why-us-section {
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
     padding: 120px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
-.seir-why-us-container {
+.sic-why-us-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.seir-why-us-top {
+.sic-why-us-top {
     text-align: center;
     max-width: 780px;
     margin: 0 auto 50px;
 }
 
-.seir-why-us-grid {
+.sic-why-us-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.seir-why-us-card {
+.sic-why-us-card {
     background: #ffffff;
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 16px;
@@ -1148,7 +1081,7 @@
     overflow: hidden;
 }
 
-.seir-why-us-card::before {
+.sic-why-us-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1161,7 +1094,7 @@
     transform-origin: left;
 }
 
-.seir-why-us-icon {
+.sic-why-us-icon {
     width: 54px;
     height: 54px;
     border-radius: 14px;
@@ -1174,7 +1107,7 @@
     transition: all 0.3s ease;
 }
 
-.seir-why-us-card-title {
+.sic-why-us-card-title {
     font-size: 15px;
     font-weight: 600;
     color: var(--fcel-navy);
@@ -1182,34 +1115,34 @@
     line-height: 1.4;
 }
 
-.seir-why-us-card:hover {
+.sic-why-us-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
     border-color: rgba(39, 68, 114, 0.2);
 }
 
-.seir-why-us-card:hover::before {
+.sic-why-us-card:hover::before {
     transform: scaleX(1);
 }
 
-.seir-why-us-card:hover .seir-why-us-icon {
+.sic-why-us-card:hover .sic-why-us-icon {
     background: var(--fcel-navy);
     color: #ffffff;
     transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
-    .seir-why-us-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-why-us-section { padding: 80px 18px; }
+    .sic-why-us-grid { grid-template-columns: repeat(2, 1fr); }
+    .sic-why-us-section { padding: 80px 18px; }
 }
 
 @media (max-width: 480px) {
-    .seir-why-us-grid { grid-template-columns: 1fr; gap: 16px; }
-    .seir-why-us-card { padding: 24px 20px; }
+    .sic-why-us-grid { grid-template-columns: 1fr; gap: 16px; }
+    .sic-why-us-card { padding: 24px 20px; }
 }
 
 /* ============================================================
-   FAQ SECTION (reused — same role as reference FAQ)
+   FAQ SECTION (reused)
    ============================================================ */
 .fcel-faq-section {
     background: var(--fcel-bg-soft);
@@ -1276,34 +1209,7 @@
 }
 
 /* ============================================================
-   INLINE CTA STRIPS (new — 3 repeated mid-page CTA banners)
-   ============================================================ */
-.seir-inline-cta {
-    background: var(--fcel-bg-soft);
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.seir-inline-cta-inner {
-    max-width: 780px;
-    margin: 0 auto;
-}
-
-.seir-inline-cta-heading {
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--fcel-navy);
-    margin: 0 0 20px 0;
-    line-height: 1.35;
-}
-
-@media (max-width: 480px) {
-    .seir-inline-cta { padding: 40px 16px; }
-    .seir-inline-cta-heading { font-size: 20px; }
-}
-
-/* ============================================================
-   FINAL CTA SECTION (reused — same role as reference CTA)
+   FINAL CTA SECTION (reused)
    ============================================================ */
 .fcel-cta-section {
     position: relative;
