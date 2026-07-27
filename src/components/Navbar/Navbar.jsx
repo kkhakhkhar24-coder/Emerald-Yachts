@@ -870,13 +870,6 @@ const Navbar = () => {
                 Scenic Vs Seabourn</NavLink>
 
               <NavLink
-                to="/is-scenic-worth-it"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Is Scenic Worth It</NavLink>
-
-              <NavLink
                 to="/what-is-included-on-scenic"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -896,6 +889,19 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Scenic Iceland Cruises</NavLink> */}
+
+              <NavLink
+                to="/is-scenic-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Scenic Worth It</NavLink>
+              {/* <NavLink
+                to="/scenic-greenland-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Greenland Cruises</NavLink> */}                    
             </div>
           </div>
         </div>
@@ -1751,13 +1757,6 @@ const Navbar = () => {
               Scenic Vs Seabourn</NavLink>
 
             <NavLink
-              to="/is-scenic-worth-it"
-              className="nav-dropdown-single"
-              onClick={toggleMenu}
-            >
-              Is Scenic Worth It</NavLink>
-
-            <NavLink
               to="/what-is-included-on-scenic"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -1777,6 +1776,19 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Scenic Iceland Cruises</NavLink> */}
+
+            <NavLink
+              to="/is-scenic-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Scenic Worth It</NavLink>
+            {/* <NavLink
+              to="/scenic-greenland-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Greenland Cruises</NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>

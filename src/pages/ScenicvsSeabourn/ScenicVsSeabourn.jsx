@@ -4,9 +4,9 @@ import './ScenicVsSeabourn.css'
 import {
     Ship, MapPin, Users, CheckCircle,
     Compass, Sparkles, Anchor, Gem,
-    ChevronRight, Crown, Phone, LayoutList, Utensils,
+    Crown, Phone, LayoutList, Utensils,
     Sun, Award, Music, GraduationCap,
-    Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck
+    Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck, Leaf
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -247,16 +247,25 @@ function ScenicVsSeabourn() {
             {/* ── INTRO ── */}
             <section className="svs-intro-section">
                 <div className="svs-intro-container">
-                    <p className="svs-intro-lead">For travelers seeking exceptional service, elegant accommodations, gourmet dining, and immersive destinations, Scenic Luxury Cruises &amp; Tours and Seabourn consistently rank among the world's finest cruise lines.</p>
-                    <p className="svs-intro-body">While both brands deliver all-inclusive luxury experiences with outstanding personalized service, they each have their own strengths. Scenic is renowned for its truly all-inclusive approach and expedition expertise aboard the Scenic Eclipse fleet, while Seabourn combines intimate yacht-like ships with award-winning hospitality and destination-focused itineraries.</p>
-                    <p className="svs-intro-body">Whether you're dreaming of exploring Antarctica, sailing the Mediterranean, or discovering Alaska, this comparison will help you decide which cruise line best matches your travel style.</p>
+                    <div className="svs-intro-grid">
+                        <div className="svs-intro-text-side">
+                            <p className="svs-intro-lead">For travelers seeking exceptional service, elegant accommodations, gourmet dining, and immersive destinations, Scenic Luxury Cruises &amp; Tours and Seabourn consistently rank among the world's finest cruise lines.</p>
+                            <div className="svs-heading-separator-bar"></div>
+                            <p className="svs-intro-body">While both brands deliver all-inclusive luxury experiences with outstanding personalized service, they each have their own strengths. Scenic is renowned for its truly all-inclusive approach and expedition expertise aboard the Scenic Eclipse fleet, while Seabourn combines intimate yacht-like ships with award-winning hospitality and destination-focused itineraries.</p>
+                            <p className="svs-intro-body">Whether you're dreaming of exploring Antarctica, sailing the Mediterranean, or discovering Alaska, this comparison will help you decide which cruise line best matches your travel style.</p>
+                        </div>
+                        <div className="svs-intro-image-side">
+                            <SvsImagePlaceholder label="Luxury Expedition Cruise" />
+                            <div className="svs-intro-image-caption">Scenic Eclipse &amp; Seabourn luxury cruise ships</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             {/* ── AT A GLANCE TABLE ── */}
             <section className="svs-glance-section">
                 <div className="svs-glance-container">
-                    <div style={{ textAlign: 'center' }}>
+                    <div className="svs-glance-top">
                         <span className="svs-eyebrow">SIDE-BY-SIDE COMPARISON</span>
                         <h2 className="svs-section-heading">Scenic vs Seabourn at a Glance</h2>
                         <div className="svs-heading-separator-bar svs-bar-centered"></div>
@@ -299,30 +308,45 @@ function ScenicVsSeabourn() {
                             </div>
                         ))}
                     </div>
+                    <div className="svs-mid-cta-wrap">
+                        <Link to='/contact' className="svs-mid-cta-button">
+                            <Phone size={16} />
+                            Book Your Discovery Call
+                        </Link>
+                    </div>
                 </div>
             </section>
 
-            {/* ── ABOUT SCENIC / SEABOURN ── */}
             <section className="svs-about-section">
                 <div className="svs-about-container">
                     <div className="svs-about-grid">
 
-                        <div className="svs-about-card">
-                            <SvsImagePlaceholder label="Scenic Eclipse Discovery Yacht" />
+                        <div className="svs-about-card svs-about-scenic">
+                            <div className="svs-about-card-img">
+                                <SvsImagePlaceholder label="Scenic Eclipse Discovery Yacht" />
+                            </div>
                             <div className="svs-about-card-body">
-                                <span className="svs-eyebrow">ABOUT SCENIC LUXURY CRUISES</span>
+                                <span className="svs-about-chip svs-about-chip-scenic">
+                                    <Ship size={13} strokeWidth={2} />SCENIC
+                                </span>
                                 <h3 className="svs-about-card-title">Scenic Luxury Cruises</h3>
+                                <div className="svs-about-card-divider"></div>
                                 <p className="svs-about-card-text">Scenic has earned a global reputation for delivering truly all-inclusive luxury vacations.</p>
                                 <p className="svs-about-card-text">Its ocean fleet includes Scenic Eclipse and Scenic Eclipse II — purpose-built Discovery Yachts for expedition cruising that combine luxury accommodations with advanced technology, allowing guests to explore destinations ranging from Antarctica to the Mediterranean.</p>
                                 <p className="svs-about-card-text">Scenic also operates award-winning river cruises throughout Europe and Southeast Asia, making it a versatile choice for travelers who enjoy both ocean and river experiences.</p>
                             </div>
                         </div>
 
-                        <div className="svs-about-card">
-                            <SvsImagePlaceholder label="Seabourn Ocean Suite Living" />
+                        <div className="svs-about-card svs-about-seabourn">
+                            <div className="svs-about-card-img">
+                                <SvsImagePlaceholder label="Seabourn Ocean Suite Living" />
+                            </div>
                             <div className="svs-about-card-body">
-                                <span className="svs-eyebrow">ABOUT SEABOURN</span>
+                                <span className="svs-about-chip svs-about-chip-seabourn">
+                                    <Anchor size={13} strokeWidth={2} />SEABOURN
+                                </span>
                                 <h3 className="svs-about-card-title">Seabourn</h3>
+                                <div className="svs-about-card-divider"></div>
                                 <p className="svs-about-card-text">Seabourn has been a leader in ultra-luxury cruising for decades, offering intimate ships with exceptional personalized service.</p>
                                 <p className="svs-about-card-text">Its fleet includes Seabourn Ovation, Seabourn Encore, Seabourn Quest, Seabourn Sojourn, Seabourn Pursuit, and Seabourn Venture.</p>
                                 <p className="svs-about-card-text">Seabourn is known for creating a yacht-like atmosphere where guests enjoy sophisticated luxury, attentive hospitality, and destination-rich itineraries around the globe.</p>
@@ -334,459 +358,584 @@ function ScenicVsSeabourn() {
             </section>
 
             {/* ── SHIPS & ONBOARD ATMOSPHERE ── */}
-            <section className="svs-compare-section svs-bg-soft">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">ONBOARD EXPERIENCE</span>
-                        <h2 className="svs-section-heading">Ships and Onboard Atmosphere</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">Scenic's Discovery Yachts are designed for exploration without sacrificing comfort, appealing to travelers seeking adventure combined with uncompromising luxury. Seabourn's ships emphasize elegant relaxation and personalized service in a refined, social, and quietly luxurious atmosphere.</p>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Ship size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsShipsScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Ship size={20} />
-                                <h3>Seabourn</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsShipsSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            <section className="svs-ships-section svs-bg-soft">
+              <div className="svs-ships-container">
+                <div className="svs-ships-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">ONBOARD EXPERIENCE</span>
+                  <h2 className="svs-section-heading">Ships and Onboard Atmosphere</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">Scenic's Discovery Yachts are designed for exploration without sacrificing comfort, appealing to travelers seeking adventure combined with uncompromising luxury. Seabourn's ships emphasize elegant relaxation and personalized service in a refined, social, and quietly luxurious atmosphere.</p>
                 </div>
+                <div className="svs-ships-grid">
+                  <div className="svs-ships-card svs-ships-scenic">
+                    <div className="svs-ships-image">
+                      <SvsImagePlaceholder label="Scenic Eclipse Discovery Yacht" />
+                    </div>
+                    <div className="svs-ships-body">
+                      <div className="svs-ships-header">
+                        <Ship size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-ships-list">
+                        {svsShipsScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-ships-card svs-ships-seabourn">
+                    <div className="svs-ships-image">
+                      <SvsImagePlaceholder label="Seabourn Yacht-Style Living" />
+                    </div>
+                    <div className="svs-ships-body">
+                      <div className="svs-ships-header">
+                        <Ship size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-ships-list">
+                        {svsShipsSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── SUITES & ACCOMMODATIONS ── */}
-            <section className="svs-compare-section">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">STAYING ABOARD</span>
-                        <h2 className="svs-section-heading">Suites and Accommodations</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">Every suite on both cruise lines is designed for comfort, privacy, and elegance — with higher categories offering expanded living spaces and exclusive privileges.</p>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Crown size={20} />
-                                <h3>Scenic — Every Suite Includes</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsSuitesScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Crown size={20} />
-                                <h3>Seabourn — Every Suite Includes</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsSuitesSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            <section className="svs-suites-section">
+              <div className="svs-suites-container">
+                <div className="svs-suites-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">STAYING ABOARD</span>
+                  <h2 className="svs-section-heading">Suites and Accommodations</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">Every suite on both cruise lines is designed for comfort, privacy, and elegance — with higher categories offering expanded living spaces and exclusive privileges.</p>
                 </div>
+                <div className="svs-suites-grid">
+                  <div className="svs-suites-card svs-suites-scenic">
+                    <div className="svs-suites-image">
+                      <SvsImagePlaceholder label="Scenic Suite & Accommodation" />
+                    </div>
+                    <div className="svs-suites-body">
+                      <div className="svs-suites-header">
+                        <Crown size={18} />
+                        <h3>Scenic — Every Suite Includes</h3>
+                      </div>
+                      <ul className="svs-suites-list">
+                        {svsSuitesScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-suites-card svs-suites-seabourn">
+                    <div className="svs-suites-image">
+                      <SvsImagePlaceholder label="Seabourn Suite Accommodation" />
+                    </div>
+                    <div className="svs-suites-body">
+                      <div className="svs-suites-header">
+                        <Crown size={18} />
+                        <h3>Seabourn — Every Suite Includes</h3>
+                      </div>
+                      <ul className="svs-suites-list">
+                        {svsSuitesSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── DINING ── */}
-            <section className="svs-compare-section svs-bg-soft">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">CULINARY PROGRAM</span>
-                        <h2 className="svs-section-heading">Dining Experience</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">All meals and specialty dining venues are included on Scenic voyages, while Seabourn is widely recognized for its exceptional culinary program featuring regional ingredients and destination-inspired cuisine.</p>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Utensils size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsDiningScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Utensils size={20} />
-                                <h3>Seabourn</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsDiningSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            <section className="svs-dining-section svs-bg-soft">
+              <div className="svs-dining-container">
+                <div className="svs-dining-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">CULINARY PROGRAM</span>
+                  <h2 className="svs-section-heading">Dining Experience</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">All meals and specialty dining venues are included on Scenic voyages, while Seabourn is widely recognized for its exceptional culinary program featuring regional ingredients and destination-inspired cuisine.</p>
                 </div>
+                <div className="svs-dining-grid">
+                  <div className="svs-dining-card svs-dining-scenic">
+                    <div className="svs-dining-image">
+                      <SvsImagePlaceholder label="Scenic Fine Dining" />
+                    </div>
+                    <div className="svs-dining-body">
+                      <div className="svs-dining-header">
+                        <Utensils size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-dining-list">
+                        {svsDiningScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-dining-card svs-dining-seabourn">
+                    <div className="svs-dining-image">
+                      <SvsImagePlaceholder label="Seabourn Dining Experience" />
+                    </div>
+                    <div className="svs-dining-body">
+                      <div className="svs-dining-header">
+                        <Utensils size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-dining-list">
+                        {svsDiningSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── DESTINATIONS ── */}
-            <section className="svs-compare-section">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">WHERE YOU'LL SAIL</span>
-                        <h2 className="svs-section-heading">Destinations</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">Scenic's expedition cruises are among the most comprehensive in the luxury market, while Seabourn sails to more than 400 destinations worldwide with unique ports and immersive destination experiences.</p>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <MapPin size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svs-tag-cloud">
-                                {svsDestinationsScenic.map((item, idx) => (
-                                    <span key={idx} className="svs-tag svs-tag-scenic">{item}</span>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <MapPin size={20} />
-                                <h3>Seabourn</h3>
-                            </div>
-                            <div className="svs-tag-cloud">
-                                {svsDestinationsSeabourn.map((item, idx) => (
-                                    <span key={idx} className="svs-tag svs-tag-seabourn">{item}</span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+            <section className="svs-dest-section">
+              <div className="svs-dest-container">
+                <div className="svs-dest-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">WHERE YOU'LL SAIL</span>
+                  <h2 className="svs-section-heading">Destinations</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">Scenic's expedition cruises are among the most comprehensive in the luxury market, while Seabourn sails to more than 400 destinations worldwide with unique ports and immersive destination experiences.</p>
                 </div>
+                <div className="svs-dest-grid">
+                  <div className="svs-dest-card svs-dest-scenic">
+                    <div className="svs-dest-image">
+                      <SvsImagePlaceholder label="Scenic Global Destinations" />
+                    </div>
+                    <div className="svs-dest-body">
+                      <div className="svs-dest-header">
+                        <MapPin size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <div className="svs-tag-cloud">
+                        {svsDestinationsScenic.map((item, idx) => (
+                          <span key={idx} className="svs-tag svs-tag-scenic">{item}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="svs-dest-card svs-dest-seabourn">
+                    <div className="svs-dest-image">
+                      <SvsImagePlaceholder label="Seabourn Itineraries" />
+                    </div>
+                    <div className="svs-dest-body">
+                      <div className="svs-dest-header">
+                        <MapPin size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <div className="svs-tag-cloud">
+                        {svsDestinationsSeabourn.map((item, idx) => (
+                          <span key={idx} className="svs-tag svs-tag-seabourn">{item}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── EXPEDITION CRUISING ── */}
-            <section className="svs-expedition-section">
-                <div className="svs-expedition-bg-placeholder">
-                    <SvsImagePlaceholder label="Polar Expedition Voyage" tone="svs-placeholder-dark" />
+            <section className="svs-expedition-section svs-bg-soft">
+              <div className="svs-expedition-container">
+                <div className="svs-expedition-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">ADVENTURE AT SEA</span>
+                  <h2 className="svs-section-heading">Expedition Cruising</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">Both cruise lines excel in expedition travel, but their experiences differ. Both brands provide exceptional expedition experiences with knowledgeable guides and immersive exploration.</p>
                 </div>
-                <div className="svs-expedition-overlay"></div>
-                <div className="svs-expedition-content">
-                    <span className="svs-eyebrow svs-eyebrow-light">ADVENTURE AT SEA</span>
-                    <h2 className="svs-section-heading svs-white-heading">Expedition Cruising</h2>
-                    <div className="svs-heading-separator-bar svs-bar-centered svs-separator-white"></div>
-                    <p className="svs-expedition-intro">Both cruise lines excel in expedition travel, but their experiences differ. Both brands provide exceptional expedition experiences with knowledgeable guides and immersive exploration.</p>
-
-                    <div className="svs-expedition-grid">
-                        <div className="svs-expedition-col">
-                            <h3>Scenic</h3>
-                            <ul className="svs-expedition-list">
-                                {svsExpeditionScenic.map((item, idx) => (
-                                    <li key={idx}><ChevronRight size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-expedition-col">
-                            <h3>Seabourn</h3>
-                            <ul className="svs-expedition-list">
-                                {svsExpeditionSeabourn.map((item, idx) => (
-                                    <li key={idx}><ChevronRight size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
+                <div className="svs-expedition-grid">
+                  <div className="svs-expedition-card svs-expedition-scenic">
+                    <div className="svs-expedition-image">
+                      <SvsImagePlaceholder label="Scenic Expedition Voyage" />
                     </div>
+                    <div className="svs-expedition-body">
+                      <div className="svs-expedition-header">
+                        <Compass size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-expedition-list">
+                        {svsExpeditionScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-expedition-card svs-expedition-seabourn">
+                    <div className="svs-expedition-image">
+                      <SvsImagePlaceholder label="Seabourn Expedition Voyage" />
+                    </div>
+                    <div className="svs-expedition-body">
+                      <div className="svs-expedition-header">
+                        <Compass size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-expedition-list">
+                        {svsExpeditionSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </section>
 
             {/* ── INCLUDED AMENITIES ── */}
-            <section className="svs-compare-section">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">WHAT'S INCLUDED</span>
-                        <h2 className="svs-section-heading">Included Amenities</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Gem size={20} />
-                                <h3>Scenic Includes</h3>
-                            </div>
-                            <div className="svs-icon-list">
-                                {svsIncludedScenic.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="svs-icon-list-item">
-                                        <div className="svs-icon-list-icon svs-icon-scenic"><Icon size={17} /></div>
-                                        <span>{text}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Gem size={20} />
-                                <h3>Seabourn Includes</h3>
-                            </div>
-                            <div className="svs-icon-list">
-                                {svsIncludedSeabourn.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="svs-icon-list-item">
-                                        <div className="svs-icon-list-icon svs-icon-seabourn"><Icon size={17} /></div>
-                                        <span>{text}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+            <section className="svs-amenities-section">
+              <div className="svs-amenities-container">
+                <div className="svs-amenities-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">WHAT'S INCLUDED</span>
+                  <h2 className="svs-section-heading">Included Amenities</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
                 </div>
+                <div className="svs-amenities-grid">
+                  <div className="svs-amenities-card svs-amenities-scenic">
+                    <div className="svs-amenities-image">
+                      <SvsImagePlaceholder label="Scenic All-Inclusive Amenities" />
+                    </div>
+                    <div className="svs-amenities-body">
+                      <div className="svs-amenities-header">
+                        <Gem size={18} />
+                        <h3>Scenic Includes</h3>
+                      </div>
+                      <div className="svs-amenities-list">
+                        {svsIncludedScenic.map(({ Icon, text }, idx) => (
+                          <div key={idx} className="svs-amenities-item">
+                            <div className="svs-amenities-icon"><Icon size={16} /></div>
+                            <span>{text}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="svs-amenities-card svs-amenities-seabourn">
+                    <div className="svs-amenities-image">
+                      <SvsImagePlaceholder label="Seabourn Premium Amenities" />
+                    </div>
+                    <div className="svs-amenities-body">
+                      <div className="svs-amenities-header">
+                        <Gem size={18} />
+                        <h3>Seabourn Includes</h3>
+                      </div>
+                      <div className="svs-amenities-list">
+                        {svsIncludedSeabourn.map(({ Icon, text }, idx) => (
+                          <div key={idx} className="svs-amenities-item">
+                            <div className="svs-amenities-icon"><Icon size={16} /></div>
+                            <span>{text}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── WELLNESS ── */}
-            <section className="svs-compare-section svs-bg-soft">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">MIND &amp; BODY</span>
-                        <h2 className="svs-section-heading">Wellness and Relaxation</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Sun size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsWellnessScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Sun size={20} />
-                                <h3>Seabourn</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsWellnessSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            <section className="svs-wellness-section svs-bg-soft">
+              <div className="svs-wellness-container">
+                <div className="svs-wellness-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">MIND &amp; BODY</span>
+                  <h2 className="svs-section-heading">Wellness and Relaxation</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
                 </div>
+                <div className="svs-wellness-grid">
+                  <div className="svs-wellness-card svs-wellness-scenic">
+                    <div className="svs-wellness-image">
+                      <SvsImagePlaceholder label="Scenic Spa & Wellness" />
+                    </div>
+                    <div className="svs-wellness-body">
+                      <div className="svs-wellness-header">
+                        <Sun size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-wellness-list">
+                        {svsWellnessScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-wellness-card svs-wellness-seabourn">
+                    <div className="svs-wellness-image">
+                      <SvsImagePlaceholder label="Seabourn Wellness Center" />
+                    </div>
+                    <div className="svs-wellness-body">
+                      <div className="svs-wellness-header">
+                        <Sun size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-wellness-list">
+                        {svsWellnessSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── ENTERTAINMENT ── */}
-            <section className="svs-compare-section">
-                <div className="svs-compare-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">EVENINGS ONBOARD</span>
-                        <h2 className="svs-section-heading">Entertainment</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">Scenic entertainment emphasizes cultural enrichment, while Seabourn offers a broader mix of performances — though the onboard atmosphere on both remains elegant rather than high-energy.</p>
-                    </div>
-
-                    <div className="svs-compare-grid">
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-scenic">
-                                <Music size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsEntertainmentScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-compare-col">
-                            <div className="svs-compare-col-header svs-col-seabourn">
-                                <Music size={20} />
-                                <h3>Seabourn</h3>
-                            </div>
-                            <ul className="svs-compare-list">
-                                {svsEntertainmentSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+            <section className="svs-entertainment-section">
+              <div className="svs-entertainment-container">
+                <div className="svs-entertainment-top" style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">EVENINGS ONBOARD</span>
+                  <h2 className="svs-section-heading">Entertainment</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-compare-intro">Scenic entertainment emphasizes cultural enrichment, while Seabourn offers a broader mix of performances — though the onboard atmosphere on both remains elegant rather than high-energy.</p>
                 </div>
+                <div className="svs-entertainment-grid">
+                  <div className="svs-entertainment-card svs-entertainment-scenic">
+                    <div className="svs-entertainment-image">
+                      <SvsImagePlaceholder label="Scenic Onboard Entertainment" />
+                    </div>
+                    <div className="svs-entertainment-body">
+                      <div className="svs-entertainment-header">
+                        <Music size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-entertainment-list">
+                        {svsEntertainmentScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-entertainment-card svs-entertainment-seabourn">
+                    <div className="svs-entertainment-image">
+                      <SvsImagePlaceholder label="Seabourn Evening Entertainment" />
+                    </div>
+                    <div className="svs-entertainment-body">
+                      <div className="svs-entertainment-header">
+                        <Music size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-entertainment-list">
+                        {svsEntertainmentSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── SERVICE COMPARISON ── */}
             <section className="svs-service-section">
-                <div className="svs-service-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">HOSPITALITY</span>
-                        <h2 className="svs-section-heading">Service Comparison</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
-                        <p className="svs-compare-intro">Both Scenic and Seabourn consistently receive high marks for personalized service.</p>
-                    </div>
-
-                    <div className="svs-service-grid">
-                        <div className="svs-service-card">
-                            <Users size={22} />
-                            <h3>Scenic</h3>
-                            <ul>
-                                <li>Butler service for every suite</li>
-                                <li>Intimate guest-to-crew ratio</li>
-                                <li>Personalized luxury</li>
-                            </ul>
-                        </div>
-                        <div className="svs-service-card">
-                            <Users size={22} />
-                            <h3>Seabourn</h3>
-                            <ul>
-                                <li>Attentive suite hosts</li>
-                                <li>Friendly and intuitive hospitality</li>
-                                <li>Relaxed yet refined service</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="svs-service-footer">
-                        <p>Both cruise lines are recognized for creating meaningful guest relationships and delivering exceptional onboard experiences.</p>
-                    </div>
+              <div className="svs-service-container">
+                <div className="svs-service-top">
+                  <span className="svs-eyebrow">HOSPITALITY</span>
+                  <h2 className="svs-section-heading">Service Comparison</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                  <p className="svs-service-intro">Both Scenic and Seabourn consistently receive high marks for personalized service.</p>
                 </div>
+                <div className="svs-service-grid">
+                  <div className="svs-service-card svs-service-scenic">
+                    <div className="svs-service-image">
+                      <SvsImagePlaceholder label="Scenic Personalized Service" />
+                    </div>
+                    <div className="svs-service-body">
+                      <div className="svs-service-header">
+                        <Users size={18} />
+                        <h3>Scenic</h3>
+                      </div>
+                      <ul className="svs-service-list">
+                        <li><CheckCircle size={15} /><span>Butler service for every suite</span></li>
+                        <li><CheckCircle size={15} /><span>Intimate guest-to-crew ratio</span></li>
+                        <li><CheckCircle size={15} /><span>Personalized luxury</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-service-card svs-service-seabourn">
+                    <div className="svs-service-image">
+                      <SvsImagePlaceholder label="Seabourn Hospitality" />
+                    </div>
+                    <div className="svs-service-body">
+                      <div className="svs-service-header">
+                        <Users size={18} />
+                        <h3>Seabourn</h3>
+                      </div>
+                      <ul className="svs-service-list">
+                        <li><CheckCircle size={15} /><span>Attentive suite hosts</span></li>
+                        <li><CheckCircle size={15} /><span>Friendly and intuitive hospitality</span></li>
+                        <li><CheckCircle size={15} /><span>Relaxed yet refined service</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* ── PRICING ── */}
             <section className="svs-pricing-section">
                 <div className="svs-pricing-container">
-                    <span className="svs-eyebrow">INVESTMENT</span>
-                    <h2 className="svs-section-heading">Pricing</h2>
-                    <div className="svs-heading-separator-bar"></div>
-                    <p className="svs-pricing-text">Both Scenic and Seabourn occupy the ultra-luxury segment, with pricing varying based on itinerary, suite category, and season.</p>
-                    <p className="svs-pricing-text">Scenic often commands premium pricing for expedition voyages due to its advanced Discovery Yacht features and all-inclusive offerings. Seabourn provides excellent value with elegant accommodations, exceptional dining, and immersive itineraries across its fleet.</p>
+                    <div className="svs-pricing-top">
+                        <span className="svs-eyebrow">INVESTMENT</span>
+                        <h2 className="svs-section-heading">Pricing</h2>
+                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                    </div>
+                    <div className="svs-pricing-cards">
+                        <div className="svs-pricing-card svs-pricing-scenic">
+                            <div className="svs-pricing-card-icon"><Gem size={22} /></div>
+                            <h3 className="svs-pricing-card-title">Scenic</h3>
+                            <p className="svs-pricing-card-text">Commands premium pricing for expedition voyages due to its advanced Discovery Yacht features and all-inclusive offerings.</p>
+                        </div>
+                        <div className="svs-pricing-card svs-pricing-seabourn">
+                            <div className="svs-pricing-card-icon"><Waves size={22} /></div>
+                            <h3 className="svs-pricing-card-title">Seabourn</h3>
+                            <p className="svs-pricing-card-text">Provides excellent value with elegant accommodations, exceptional dining, and immersive itineraries across its fleet.</p>
+                        </div>
+                    </div>
+                    <p className="svs-pricing-footer">The best value depends on your preferred itinerary, travel season, and suite category.</p>
                 </div>
             </section>
 
             {/* ── WHO SHOULD CHOOSE ── */}
             <section className="svs-choose-section">
-                <div className="svs-choose-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="svs-eyebrow">MAKE YOUR DECISION</span>
-                        <h2 className="svs-section-heading">Which Cruise Line Is Right for You?</h2>
-                        <div className="svs-heading-separator-bar svs-bar-centered"></div>
+              <div className="svs-choose-container">
+                <div style={{ textAlign: 'center' }}>
+                  <span className="svs-eyebrow">MAKE YOUR DECISION</span>
+                  <h2 className="svs-section-heading">Which Cruise Line Is Right for You?</h2>
+                  <div className="svs-heading-separator-bar svs-bar-centered"></div>
+                </div>
+                <div className="svs-choose-grid">
+                  <div className="svs-choose-card svs-choose-scenic">
+                    <div className="svs-choose-image">
+                      <SvsImagePlaceholder label="Who Should Choose Scenic?" />
                     </div>
-
-                    <div className="svs-choose-grid">
-                        <div className="svs-choose-card">
-                            <div className="svs-choose-card-header svs-col-scenic">
-                                <Compass size={22} />
-                                <h3>Who Should Choose Scenic?</h3>
-                            </div>
-                            <ul className="svs-choose-list">
-                                {svsChooseScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={17} className="svs-choose-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svs-choose-card">
-                            <div className="svs-choose-card-header svs-col-seabourn">
-                                <Waves size={22} />
-                                <h3>Who Should Choose Seabourn?</h3>
-                            </div>
-                            <ul className="svs-choose-list">
-                                {svsChooseSeabourn.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={17} className="svs-choose-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
+                    <div className="svs-choose-body">
+                      <div className="svs-choose-header">
+                        <Compass size={18} />
+                        <h3>Who Should Choose Scenic?</h3>
+                      </div>
+                      <ul className="svs-choose-list">
+                        {svsChooseScenic.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} style={{ color: '#16a34a' }} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="svs-choose-card svs-choose-seabourn">
+                    <div className="svs-choose-image">
+                      <SvsImagePlaceholder label="Who Should Choose Seabourn?" />
+                    </div>
+                    <div className="svs-choose-body">
+                      <div className="svs-choose-header">
+                        <Waves size={18} />
+                        <h3>Who Should Choose Seabourn?</h3>
+                      </div>
+                      <ul className="svs-choose-list">
+                        {svsChooseSeabourn.map((item, idx) => (
+                          <li key={idx}><CheckCircle size={15} style={{ color: '#16a34a' }} /><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                    <div className="svs-mid-cta-wrap">
+                        <Link to='/contact' className="svs-mid-cta-button">
+                            <Phone size={16} />
+                            Ready to Book? Let's Talk
+                        </Link>
                     </div>
                 </div>
-            </section>
+              </section>
 
-            {/* ── WHY BOOK WITH TRIPS & SHIPS ── */}
+              {/* ── WHY BOOK WITH TRIPS & SHIPS ── */}
             <section className="svs-whybook-section">
                 <div className="svs-whybook-container">
                     <span className="svs-eyebrow">YOUR LUXURY CRUISE SPECIALISTS</span>
                     <h2 className="svs-section-heading">Why Book with Trips &amp; Ships Luxury Travel?</h2>
-                    <div className="svs-heading-separator-bar"></div>
+                    <div className="svs-heading-separator-bar svs-bar-centered"></div>
                     <p className="svs-whybook-lead">Choosing between two exceptional cruise lines can be challenging. The luxury cruise specialists at Trips &amp; Ships Luxury Travel provide personalized guidance to help you select the itinerary, ship, and suite that best fit your travel goals.</p>
                     <p className="svs-whybook-sub">When you book with us, you'll enjoy:</p>
 
                     <div className="svs-whybook-grid">
                         {svsWhyBook.map(({ Icon, text }, idx) => (
                             <div key={idx} className="svs-whybook-item">
-                                <div className="svs-whybook-icon"><Icon size={20} /></div>
-                                <span>{text}</span>
+                                <div className="svs-whybook-icon"><Icon size={22} /></div>
+                                <span className="svs-whybook-text">{text}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES ── */}
+            {/* ── ANGELA HUGHES EDITORIAL ── */}
             <section className="svs-editorial-section">
-                <div className="svs-editorial-container">
-                    <div className="svs-editorial-card">
-
-                        <div className="svs-editorial-image-side">
-                            <SvsImagePlaceholder label="Angela Hughes — Luxury Travel Expert" />
-                            <div className="svs-editorial-stats">
-                                <div className="svs-editorial-stat-item">
-                                    <span className="svs-editorial-stat-number">40+</span>
-                                    <span className="svs-editorial-stat-label">Years Experience</span>
-                                </div>
-                                <div className="svs-editorial-stat-divider"></div>
-                                <div className="svs-editorial-stat-item">
-                                    <span className="svs-editorial-stat-number">121+</span>
-                                    <span className="svs-editorial-stat-label">Countries Visited</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="svs-editorial-content-side">
-                            <div className="svs-editorial-badge">
-                                <Award size={16} />
-                                <span>Angela Hughes: Luxury Cruise Expertise You Can Trust</span>
-                            </div>
-                            <h2 className="svs-editorial-title">Trusted Guidance From an Industry Leader</h2>
-                            <div className="svs-editorial-bar"></div>
-
-                            <p className="svs-editorial-text">Angela Hughes has spent more than 40 years helping travelers experience the world's finest destinations.</p>
-
-                            <div className="svs-editorial-services">
-                                <span className="svs-editorial-services-label">Her credentials include:</span>
-                                <div className="svs-editorial-services-list">
-                                    {[
-                                        'Founder of Luxury Travel University',
-                                        'Traveled to more than 121 countries',
-                                        'Travel Leaders Network Advisory Board Member',
-                                        'Luxury Travel Influencer of the Year',
-                                        'International travel educator',
-                                        'Weekly travel columnist'
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="svs-editorial-pill">
-                                            <CheckCircle size={14} />
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <p className="svs-editorial-text">Her expertise ensures travelers receive trusted recommendations and exceptional service when planning luxury cruise vacations.</p>
-                        </div>
-
-                    </div>
+              <div className="svs-editorial-container">
+                <div className="svs-editorial-badge-row">
+                  <Award size={14} />
+                  <span>Industry Leader · 40+ Years of Excellence</span>
                 </div>
+
+                <div className="svs-editorial-layout">
+                  <div className="svs-editorial-visual">
+                    <div className="svs-editorial-image-frame">
+                      <SvsImagePlaceholder label="Angela Hughes — Luxury Travel Expert" />
+                    </div>
+                    <div className="svs-editorial-stats-card">
+                      <div className="svs-editorial-stat-item">
+                        <span className="svs-editorial-stat-value">40+</span>
+                        <span className="svs-editorial-stat-label">Years of Experience</span>
+                      </div>
+                      <div className="svs-editorial-stat-divider"></div>
+                      <div className="svs-editorial-stat-item">
+                        <span className="svs-editorial-stat-value">121+</span>
+                        <span className="svs-editorial-stat-label">Countries Visited</span>
+                      </div>
+                      <div className="svs-editorial-stat-divider"></div>
+                      <div className="svs-editorial-stat-item">
+                        <span className="svs-editorial-stat-value">10K+</span>
+                        <span className="svs-editorial-stat-label">Travelers Advised</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="svs-editorial-content">
+                    <span className="svs-editorial-name-tag">Angela Hughes</span>
+                    <h2 className="svs-editorial-title">Trusted Guidance From an Industry Leader</h2>
+                    <div className="svs-editorial-title-accent"></div>
+                    <p className="svs-editorial-text">Angela Hughes has spent more than 40 years helping travelers discover the world's most extraordinary destinations. Her deep industry knowledge and personal travel experience across 121+ countries make her one of the most trusted voices in luxury cruising.</p>
+                    <div className="svs-editorial-credentials">
+                      <span className="svs-editorial-cred-label">Credentials</span>
+                      <div className="svs-editorial-cred-grid">
+                        {[
+                          'Founder of Luxury Travel University',
+                          'Luxury Travel Influencer of the Year',
+                          'Travel Leaders Network Advisory Board',
+                          'International travel educator',
+                          'Weekly travel columnist',
+                          '121+ countries visited'
+                        ].map((item, idx) => (
+                          <div key={idx} className="svs-editorial-cred-item">
+                            <CheckCircle size={12} />
+                            <span>{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="svs-editorial-footer-text">
+                      <p>Her expertise ensures travelers receive trusted recommendations and exceptional service when planning luxury cruise vacations.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="svs-editorial-quote">
+                  <span className="svs-editorial-quote-mark">"</span>
+                  <p>Choosing the right cruise line is about matching your personal travel style with the right onboard experience. I've sailed both Scenic and Seabourn extensively — let me help you find your perfect fit.</p>
+                  <span className="svs-editorial-quote-author">— Angela Hughes</span>
+                </div>
+              </div>
             </section>
 
             {/* ── CONCLUSION ── */}
@@ -840,53 +989,78 @@ function ScenicVsSeabourn() {
 
             {/* ── CTA ── */}
             <section className="svs-cta-main-section">
-                <div className="svs-cta-bg-pattern-layer"></div>
+                <div className="svs-cta-bg-gradient"></div>
+                <div className="svs-cta-bg-orb svs-cta-orb-1"></div>
+                <div className="svs-cta-bg-orb svs-cta-orb-2"></div>
+                <div className="svs-cta-bg-orb svs-cta-orb-3"></div>
+
                 <div className="svs-cta-content-relative">
                     <div className="svs-cta-inner-wrapper">
 
+                        <div className="svs-cta-eyebrow">
+                            <Compass size={16} />
+                            <span>PERSONALIZED VOYAGE PLANNING</span>
+                        </div>
+
                         <h2 className="svs-cta-heading-white">Ready to Choose Your Ultra-Luxury Cruise?</h2>
-                        <div className="svs-cta-separator-white"></div>
+                        <div className="svs-cta-heading-line"></div>
 
                         <p className="svs-cta-paragraph-white">
                             Whether Scenic's expedition-driven Discovery Yachts or Seabourn's yacht-like elegance calls to you, our specialists will match you with the ship, suite, and itinerary that fit your travel style.
                         </p>
 
-                        <p className="svs-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help travelers navigate every detail of ultra-luxury cruising.
-                        </p>
-
-                        <div className="svs-cta-considerations-box">
-                            <span className="svs-cta-considerations-title">Whether you are considering:</span>
-                            <ul className="svs-cta-considerations-list">
-                                {[
-                                    'Scenic Eclipse expedition voyages',
-                                    'Seabourn ocean and expedition sailings',
-                                    'Antarctica and polar itineraries',
-                                    'Mediterranean and river cruise pairings',
-                                    'Suite upgrades and exclusive offers'
-                                ].map((item, idx) => (
-                                    <li key={idx} className="svs-cta-considerations-item">
-                                        <CheckCircle size={16} className="svs-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="svs-cta-highlights">
+                            {[
+                                { icon: Ship, text: 'Scenic Eclipse expedition voyages' },
+                                { icon: Anchor, text: 'Seabourn ocean and expedition sailings' },
+                                { icon: Compass, text: 'Antarctica and polar itineraries' },
+                                { icon: Leaf, text: 'Mediterranean and river cruise pairings' },
+                                { icon: Gem, text: 'Suite upgrades and exclusive offers' }
+                            ].map(({ icon: Icon, text }, idx) => (
+                                <div key={idx} className="svs-cta-highlight-item">
+                                    <div className="svs-cta-highlight-icon"><Icon size={16} /></div>
+                                    <span className="svs-cta-highlight-text">{text}</span>
+                                </div>
+                            ))}
                         </div>
 
-                        <p className="svs-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                            Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
-                        </p>
-
-                        <div className="svs-cta-button-group">
+                        <div className="svs-cta-actions">
                             <Link to='/contact' className="svs-primary-cta-button">
                                 <Phone size={18} />
-                                Schedule a Consultation
+                                Plan My Perfect Voyage
                             </Link>
-                            <button className="svs-secondary-outline-button">
-                                <LayoutList size={18} />
-                                Explore Luxury Cruise Lines
-                            </button>
                         </div>
+
+                        <div className="svs-cta-trust-grid">
+                            <div className="svs-cta-trust-card">
+                                <div className="svs-cta-trust-icon-wrap">
+                                    <Award size={20} />
+                                </div>
+                                <div className="svs-cta-trust-card-content">
+                                    <span className="svs-cta-trust-label">40+ Years</span>
+                                    <span className="svs-cta-trust-desc">of luxury travel expertise</span>
+                                </div>
+                            </div>
+                            <div className="svs-cta-trust-card">
+                                <div className="svs-cta-trust-icon-wrap">
+                                    <ShieldCheck size={20} />
+                                </div>
+                                <div className="svs-cta-trust-card-content">
+                                    <span className="svs-cta-trust-label">Dedicated Support</span>
+                                    <span className="svs-cta-trust-desc">throughout your journey</span>
+                                </div>
+                            </div>
+                            <div className="svs-cta-trust-card">
+                                <div className="svs-cta-trust-icon-wrap">
+                                    <Sparkles size={20} />
+                                </div>
+                                <div className="svs-cta-trust-card-content">
+                                    <span className="svs-cta-trust-label">Exclusive Offers</span>
+                                    <span className="svs-cta-trust-desc">and premium amenities</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

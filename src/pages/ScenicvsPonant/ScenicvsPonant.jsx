@@ -247,9 +247,18 @@ function ScenicVsPonant() {
             {/* ── INTRO ── */}
             <section className="svp-intro-section">
                 <div className="svp-intro-container">
-                    <p className="svp-intro-lead">For travelers seeking extraordinary adventures without sacrificing comfort, Scenic Luxury Cruises &amp; Tours and Ponant stand among the world's leading luxury expedition cruise lines.</p>
-                    <p className="svp-intro-body">Both brands combine small-ship luxury with immersive exploration, taking guests to remote destinations such as Antarctica, the Arctic, Iceland, and the South Pacific. However, their onboard atmosphere, expedition style, and luxury experience differ in several important ways.</p>
-                    <p className="svp-intro-body">Scenic is known for its truly all-inclusive Discovery Yachts featuring helicopters and a submarine on select voyages, while Ponant blends French sophistication with authentic expedition travel aboard elegant small ships. This comparison will help you determine which cruise line best aligns with your travel preferences.</p>
+                    <div className="svp-intro-grid">
+                        <div className="svp-intro-text-side">
+                            <p className="svp-intro-lead">For travelers seeking extraordinary adventures without sacrificing comfort, Scenic Luxury Cruises &amp; Tours and Ponant stand among the world's leading luxury expedition cruise lines.</p>
+                            <div className="svp-heading-separator-bar"></div>
+                            <p className="svp-intro-body">Both brands combine small-ship luxury with immersive exploration, taking guests to remote destinations such as Antarctica, the Arctic, Iceland, and the South Pacific. However, their onboard atmosphere, expedition style, and luxury experience differ in several important ways.</p>
+                            <p className="svp-intro-body">Scenic is known for its truly all-inclusive Discovery Yachts featuring helicopters and a submarine on select voyages, while Ponant blends French sophistication with authentic expedition travel aboard elegant small ships. This comparison will help you determine which cruise line best aligns with your travel preferences.</p>
+                        </div>
+                        <div className="svp-intro-image-side">
+                            <SvpImagePlaceholder label="Luxury Expedition Cruise" />
+                            <div className="svp-intro-image-caption">Scenic Eclipse &amp; Ponant luxury expedition ships</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -299,6 +308,12 @@ function ScenicVsPonant() {
                             </div>
                         ))}
                     </div>
+                    <div className="svp-mid-cta-wrap">
+                        <Link to='/contact' className="svp-mid-cta-button">
+                            <Phone size={16} />
+                            Book Your Discovery Call
+                        </Link>
+                    </div>
                 </div>
             </section>
 
@@ -307,94 +322,35 @@ function ScenicVsPonant() {
                 <div className="svp-about-container">
                     <div className="svp-about-grid">
 
-                        <div className="svp-about-card" style={{ 
-                            backgroundColor: '#f8f8f8', 
-                            marginBottom: '20px',
-                            borderLeft: '4px solid #2c5282',
-                            boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                            borderRadius: '8px',
-                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                            cursor: 'pointer'
-                        }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                        <div className="svp-about-card svp-about-scenic">
+                            <div className="svp-about-card-img">
+                                <SvpImagePlaceholder label="Scenic Eclipse Yacht" />
+                            </div>
                             <div className="svp-about-card-body">
-                                <div className="svp-card-header">
-                                    <span className="svp-chip svp-chip-scenic" style={{ 
-                                        backgroundColor: '#2c5282', 
-                                        color: 'white',
-                                        padding: '6px 12px',
-                                        borderRadius: '20px',
-                                        fontSize: '12px',
-                                        fontWeight: '600',
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '6px'
-                                    }}><Ship size={14} strokeWidth={2} />SCENIC</span>
-                                    <div className="svp-card-accent svp-accent-scenic" style={{ 
-                                        width: '40px', 
-                                        height: '3px', 
-                                        backgroundColor: '#2c5282',
-                                        borderRadius: '2px'
-                                    }}></div>
-                                </div>
-                                <h3 className="svp-about-card-title svp-title-scenic" style={{ 
-                                    color: '#1a365d',
-                                    fontWeight: '700',
-                                    fontSize: '20px',
-                                    margin: '8px 0'
-                                }}>Scenic Luxury Cruises</h3>
-                                <div className="svp-divider svp-divider-scenic" style={{ 
-                                    height: '2px',
-                                    background: 'linear-gradient(to right, #2c5282, transparent)',
-                                    margin: '12px 0'
-                                }}></div>
-                                <p className="svp-about-card-text" style={{ marginBottom: '12px', lineHeight: '1.6' }}>Scenic has become a leader in ultra-luxury cruising through its all-inclusive philosophy and innovative Discovery Yachts.</p>
-                                <p className="svp-about-card-text" style={{ marginBottom: '12px', lineHeight: '1.6' }}>Its ocean fleet includes Scenic Eclipse and Scenic Eclipse II — purpose-built expedition yachts combining luxurious accommodations with advanced exploration technology, allowing guests to experience some of the world's most remote destinations while enjoying five-star service.</p>
-                                <p className="svp-about-card-text" style={{ lineHeight: '1.6' }}>Scenic also operates award-winning river cruises throughout Europe and Southeast Asia.</p>
+                                <span className="svp-about-chip svp-about-chip-scenic">
+                                    <Ship size={13} strokeWidth={2} />SCENIC
+                                </span>
+                                <h3 className="svp-about-card-title">Scenic Luxury Cruises</h3>
+                                <div className="svp-about-card-divider"></div>
+                                <p className="svp-about-card-text">Scenic has become a leader in ultra-luxury cruising through its all-inclusive philosophy and innovative Discovery Yachts.</p>
+                                <p className="svp-about-card-text">Its ocean fleet includes Scenic Eclipse and Scenic Eclipse II — purpose-built expedition yachts combining luxurious accommodations with advanced exploration technology, allowing guests to experience some of the world's most remote destinations while enjoying five-star service.</p>
+                                <p className="svp-about-card-text">Scenic also operates award-winning river cruises throughout Europe and Southeast Asia.</p>
                             </div>
                         </div>
-                        <div className="svp-about-card" style={{ 
-                            backgroundColor: '#f0f4f8', 
-                            marginBottom: '20px',
-                            borderLeft: '4px solid #2563eb',
-                            boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                            borderRadius: '8px',
-                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                            cursor: 'pointer'
-                        }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+
+                        <div className="svp-about-card svp-about-ponant">
+                            <div className="svp-about-card-img">
+                                <SvpImagePlaceholder label="Ponant Expedition Ship" />
+                            </div>
                             <div className="svp-about-card-body">
-                                <div className="svp-card-header">
-                                    <span className="svp-chip svp-chip-ponant" style={{ 
-                                        backgroundColor: '#2563eb', 
-                                        color: 'white',
-                                        padding: '6px 12px',
-                                        borderRadius: '20px',
-                                        fontSize: '12px',
-                                        fontWeight: '600',
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '6px'
-                                    }}><Anchor size={14} strokeWidth={2} />PONANT</span>
-                                    <div className="svp-card-accent svp-accent-ponant" style={{ 
-                                        width: '40px', 
-                                        height: '3px', 
-                                        backgroundColor: '#2563eb',
-                                        borderRadius: '2px'
-                                    }}></div>
-                                </div>
-                                <h3 className="svp-about-card-title svp-title-ponant" style={{ 
-                                    color: '#1e40af',
-                                    fontWeight: '700',
-                                    fontSize: '20px',
-                                    margin: '8px 0'
-                                }}>Ponant</h3>
-                                <div className="svp-divider svp-divider-ponant" style={{ 
-                                    height: '2px',
-                                    background: 'linear-gradient(to right, #2563eb, transparent)',
-                                    margin: '12px 0'
-                                }}></div>
-                                <p className="svp-about-card-text" style={{ marginBottom: '12px', lineHeight: '1.6' }}>Founded in France, Ponant specializes in luxury small-ship cruising with a strong emphasis on expedition travel and cultural exploration.</p>
-                                <p className="svp-about-card-text" style={{ marginBottom: '12px', lineHeight: '1.6' }}>Its modern fleet includes ships such as Le Commandant Charcot, Le Bougainville, Le Dumont-d'Urville, Le Bellot, Le Jacques-Cartier, and Le Champlain.</p>
-                                <p className="svp-about-card-text" style={{ lineHeight: '1.6' }}>Ponant is recognized for blending refined French hospitality with environmentally conscious exploration.</p>
+                                <span className="svp-about-chip svp-about-chip-ponant">
+                                    <Anchor size={13} strokeWidth={2} />PONANT
+                                </span>
+                                <h3 className="svp-about-card-title">Ponant</h3>
+                                <div className="svp-about-card-divider"></div>
+                                <p className="svp-about-card-text">Founded in France, Ponant specializes in luxury small-ship cruising with a strong emphasis on expedition travel and cultural exploration.</p>
+                                <p className="svp-about-card-text">Its modern fleet includes ships such as Le Commandant Charcot, Le Bougainville, Le Dumont-d'Urville, Le Bellot, Le Jacques-Cartier, and Le Champlain.</p>
+                                <p className="svp-about-card-text">Ponant is recognized for blending refined French hospitality with environmentally conscious exploration.</p>
                             </div>
                         </div>
 
@@ -403,171 +359,183 @@ function ScenicVsPonant() {
             </section>
 
             {/* ── SHIPS & ONBOARD EXPERIENCE ── */}
-            <section className="svp-compare-section svp-bg-soft">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-ships-section">
+                <div className="svp-ships-container">
+                    <div className="svp-ships-top">
                         <span className="svp-eyebrow">ONBOARD EXPERIENCE</span>
                         <h2 className="svp-section-heading">Ships and Onboard Experience</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Scenic's atmosphere is sophisticated while remaining adventure-focused. Ponant's ships are intentionally intimate and elegant, delivering a refined European cruising experience with an emphasis on exploration.</p>
+                        <p className="svp-ships-intro">Scenic's atmosphere is sophisticated while remaining adventure-focused. Ponant's ships are intentionally intimate and elegant, delivering a refined European cruising experience with an emphasis on exploration.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Ship size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-ships-grid">
+                        <div className="svp-ships-card svp-ships-scenic">
+                            <div className="svp-ships-image">
                                 <SvpImagePlaceholder label="Scenic Eclipse Discovery Yacht" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpShipsScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Ship size={20} />
-                                <h3>Ponant</h3>
+                            <div className="svp-ships-body">
+                                <div className="svp-ships-header">
+                                    <Ship size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-ships-list">
+                                    {svpShipsScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-ships-card svp-ships-ponant">
+                            <div className="svp-ships-image">
                                 <SvpImagePlaceholder label="Ponant Expedition Ship" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpShipsPonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-ships-body">
+                                <div className="svp-ships-header">
+                                    <Ship size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-ships-list">
+                                    {svpShipsPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── SUITES & ACCOMMODATIONS ── */}
-            <section className="svp-compare-section">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-suites-section">
+                <div className="svp-suites-container">
+                    <div className="svp-suites-top">
                         <span className="svp-eyebrow">STAYING ABOARD</span>
                         <h2 className="svp-section-heading">Suites and Accommodations</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Scenic accommodations are designed to provide residential-style comfort, while Ponant's select suite categories include enhanced personalized services.</p>
+                        <p className="svp-suites-intro">Scenic accommodations are designed to provide residential-style comfort, while Ponant's select suite categories include enhanced personalized services.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Crown size={20} />
-                                <h3>Scenic — Every Suite Includes</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-suites-grid">
+                        <div className="svp-suites-card svp-suites-scenic">
+                            <div className="svp-suites-image">
                                 <SvpImagePlaceholder label="Scenic Suite & Accommodation" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpSuitesScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Crown size={20} />
-                                <h3>Ponant — Staterooms &amp; Suites Feature</h3>
+                            <div className="svp-suites-body">
+                                <div className="svp-suites-header">
+                                    <Crown size={18} />
+                                    <h3>Scenic — Every Suite Includes</h3>
+                                </div>
+                                <ul className="svp-suites-list">
+                                    {svpSuitesScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-suites-card svp-suites-ponant">
+                            <div className="svp-suites-image">
                                 <SvpImagePlaceholder label="Ponant Stateroom & Suite" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpSuitesPonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-suites-body">
+                                <div className="svp-suites-header">
+                                    <Crown size={18} />
+                                    <h3>Ponant — Staterooms &amp; Suites Feature</h3>
+                                </div>
+                                <ul className="svp-suites-list">
+                                    {svpSuitesPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── DINING ── */}
-            <section className="svp-compare-section svp-bg-soft">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-dining-section">
+                <div className="svp-dining-container">
+                    <div className="svp-dining-top">
                         <span className="svp-eyebrow">CULINARY PROGRAM</span>
                         <h2 className="svp-section-heading">Dining Experience</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Every dining venue is included in the fare on Scenic voyages, while Ponant celebrates French gastronomy with a culinary experience that reflects the cruise line's heritage.</p>
+                        <p className="svp-dining-intro">Every dining venue is included in the fare on Scenic voyages, while Ponant celebrates French gastronomy with a culinary experience that reflects the cruise line's heritage.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Utensils size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-dining-grid">
+                        <div className="svp-dining-card svp-dining-scenic">
+                            <div className="svp-dining-image">
                                 <SvpImagePlaceholder label="Scenic Fine Dining" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpDiningScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Utensils size={20} />
-                                <h3>Ponant</h3>
+                            <div className="svp-dining-body">
+                                <div className="svp-dining-header">
+                                    <Utensils size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-dining-list">
+                                    {svpDiningScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-dining-card svp-dining-ponant">
+                            <div className="svp-dining-image">
                                 <SvpImagePlaceholder label="Ponant Dining Experience" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpDiningPonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-dining-body">
+                                <div className="svp-dining-header">
+                                    <Utensils size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-dining-list">
+                                    {svpDiningPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── DESTINATIONS ── */}
-            <section className="svp-compare-section">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-dest-section">
+                <div className="svp-dest-container">
+                    <div className="svp-dest-top">
                         <span className="svp-eyebrow">WHERE YOU'LL SAIL</span>
                         <h2 className="svp-section-heading">Destinations</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Scenic specializes in luxury expedition travel, while Ponant's itineraries often feature culturally immersive and environmentally focused experiences.</p>
+                        <p className="svp-dest-intro">Scenic specializes in luxury expedition travel, while Ponant's itineraries often feature culturally immersive and environmentally focused experiences.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <MapPin size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-dest-grid">
+                        <div className="svp-dest-card svp-dest-scenic">
+                            <div className="svp-dest-image">
                                 <SvpImagePlaceholder label="Scenic Global Destinations" />
                             </div>
-                            <div className="svp-tag-cloud">
-                                {svpDestinationsScenic.map((item, idx) => (
-                                    <span key={idx} className="svp-tag svp-tag-scenic">{item}</span>
-                                ))}
+                            <div className="svp-dest-body">
+                                <div className="svp-dest-header">
+                                    <MapPin size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <div className="svp-tag-cloud">
+                                    {svpDestinationsScenic.map((item, idx) => (
+                                        <span key={idx} className="svp-tag svp-tag-scenic">{item}</span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <MapPin size={20} />
-                                <h3>Ponant</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                        <div className="svp-dest-card svp-dest-ponant">
+                            <div className="svp-dest-image">
                                 <SvpImagePlaceholder label="Ponant Itineraries" />
                             </div>
-                            <div className="svp-tag-cloud">
-                                {svpDestinationsPonant.map((item, idx) => (
-                                    <span key={idx} className="svp-tag svp-tag-ponant">{item}</span>
-                                ))}
+                            <div className="svp-dest-body">
+                                <div className="svp-dest-header">
+                                    <MapPin size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <div className="svp-tag-cloud">
+                                    {svpDestinationsPonant.map((item, idx) => (
+                                        <span key={idx} className="svp-tag svp-tag-ponant">{item}</span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -576,79 +544,95 @@ function ScenicVsPonant() {
 
             {/* ── EXPEDITION EXPERIENCE ── */}
             <section className="svp-expedition-section">
-                <div className="svp-expedition-bg-placeholder">
-                    <SvpImagePlaceholder label="Polar & Remote Expedition Voyage" tone="svp-placeholder-dark" />
-                </div>
-                <div className="svp-expedition-overlay"></div>
-                <div className="svp-expedition-content">
-                    <span className="svp-eyebrow svp-eyebrow-light">ADVENTURE AT SEA</span>
-                    <h2 className="svp-section-heading svp-white-heading">Expedition Experience</h2>
-                    <div className="svp-heading-separator-bar svp-bar-centered svp-separator-white"></div>
-                    <p className="svp-expedition-intro">Both cruise lines provide exceptional expedition programs, though Scenic emphasizes advanced exploration technology while Ponant highlights cultural and environmental discovery.</p>
-
+                <div className="svp-expedition-container">
+                    <div className="svp-expedition-top">
+                        <span className="svp-eyebrow">ADVENTURE AT SEA</span>
+                        <h2 className="svp-section-heading">Expedition Experience</h2>
+                        <div className="svp-heading-separator-bar svp-bar-centered"></div>
+                        <p className="svp-expedition-intro">Both cruise lines provide exceptional expedition programs, though Scenic emphasizes advanced exploration technology while Ponant highlights cultural and environmental discovery.</p>
+                    </div>
                     <div className="svp-expedition-grid">
-                        <div className="svp-expedition-col">
-                            <h3>Scenic</h3>
-                            <ul className="svp-expedition-list">
-                                {svpExpeditionScenic.map((item, idx) => (
-                                    <li key={idx}><ChevronRight size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                        <div className="svp-expedition-card svp-expedition-scenic">
+                            <div className="svp-expedition-image">
+                                <SvpImagePlaceholder label="Scenic Expedition" />
+                            </div>
+                            <div className="svp-expedition-body">
+                                <div className="svp-expedition-header">
+                                    <Compass size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-expedition-list">
+                                    {svpExpeditionScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
-                        <div className="svp-expedition-col">
-                            <h3>Ponant</h3>
-                            <ul className="svp-expedition-list">
-                                {svpExpeditionPonant.map((item, idx) => (
-                                    <li key={idx}><ChevronRight size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                        <div className="svp-expedition-card svp-expedition-ponant">
+                            <div className="svp-expedition-image">
+                                <SvpImagePlaceholder label="Ponant Expedition" />
+                            </div>
+                            <div className="svp-expedition-body">
+                                <div className="svp-expedition-header">
+                                    <Compass size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-expedition-list">
+                                    {svpExpeditionPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── INCLUDED AMENITIES ── */}
-            <section className="svp-compare-section">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-amenities-section">
+                <div className="svp-amenities-container">
+                    <div className="svp-amenities-top">
                         <span className="svp-eyebrow">WHAT'S INCLUDED</span>
                         <h2 className="svp-section-heading">Included Amenities</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Gem size={20} />
-                                <h3>Scenic Includes</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-amenities-grid">
+                        <div className="svp-amenities-card svp-amenities-scenic">
+                            <div className="svp-amenities-image">
                                 <SvpImagePlaceholder label="Scenic All-Inclusive Amenities" />
                             </div>
-                            <div className="svp-icon-list">
-                                {svpIncludedScenic.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="svp-icon-list-item">
-                                        <div className="svp-icon-list-icon svp-icon-scenic"><Icon size={17} /></div>
-                                        <span>{text}</span>
-                                    </div>
-                                ))}
+                            <div className="svp-amenities-body">
+                                <div className="svp-amenities-header">
+                                    <Gem size={18} />
+                                    <h3>Scenic Includes</h3>
+                                </div>
+                                <div className="svp-amenities-list">
+                                    {svpIncludedScenic.map(({ Icon, text }, idx) => (
+                                        <div key={idx} className="svp-amenities-item">
+                                            <div className="svp-amenities-icon"><Icon size={16} /></div>
+                                            <span>{text}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Gem size={20} />
-                                <h3>Ponant Includes</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                        <div className="svp-amenities-card svp-amenities-ponant">
+                            <div className="svp-amenities-image">
                                 <SvpImagePlaceholder label="Ponant Premium Amenities" />
                             </div>
-                            <div className="svp-icon-list">
-                                {svpIncludedPonant.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="svp-icon-list-item">
-                                        <div className="svp-icon-list-icon svp-icon-ponant"><Icon size={17} /></div>
-                                        <span>{text}</span>
-                                    </div>
-                                ))}
+                            <div className="svp-amenities-body">
+                                <div className="svp-amenities-header">
+                                    <Gem size={18} />
+                                    <h3>Ponant Includes</h3>
+                                </div>
+                                <div className="svp-amenities-list">
+                                    {svpIncludedPonant.map(({ Icon, text }, idx) => (
+                                        <div key={idx} className="svp-amenities-item">
+                                            <div className="svp-amenities-icon"><Icon size={16} /></div>
+                                            <span>{text}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -656,86 +640,92 @@ function ScenicVsPonant() {
             </section>
 
             {/* ── WELLNESS ── */}
-            <section className="svp-compare-section svp-bg-soft">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-wellness-section">
+                <div className="svp-wellness-container">
+                    <div className="svp-wellness-top">
                         <span className="svp-eyebrow">MIND &amp; BODY</span>
                         <h2 className="svp-section-heading">Wellness and Spa</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Both brands provide relaxing wellness spaces after days of exploration.</p>
+                        <p className="svp-wellness-intro">Both brands provide relaxing wellness spaces after days of exploration.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Sun size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-wellness-grid">
+                        <div className="svp-wellness-card svp-wellness-scenic">
+                            <div className="svp-wellness-image">
                                 <SvpImagePlaceholder label="Scenic Spa & Wellness" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpWellnessScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Sun size={20} />
-                                <h3>Ponant</h3>
+                            <div className="svp-wellness-body">
+                                <div className="svp-wellness-header">
+                                    <Sun size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-wellness-list">
+                                    {svpWellnessScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-wellness-card svp-wellness-ponant">
+                            <div className="svp-wellness-image">
                                 <SvpImagePlaceholder label="Ponant Wellness Center" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpWellnessPonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-wellness-body">
+                                <div className="svp-wellness-header">
+                                    <Sun size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-wellness-list">
+                                    {svpWellnessPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── ENTERTAINMENT ── */}
-            <section className="svp-compare-section">
-                <div className="svp-compare-container">
-                    <div style={{ textAlign: 'center' }}>
+            <section className="svp-entertainment-section">
+                <div className="svp-entertainment-container">
+                    <div className="svp-entertainment-top">
                         <span className="svp-eyebrow">EVENINGS ONBOARD</span>
                         <h2 className="svp-section-heading">Entertainment</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Entertainment on both cruise lines remains understated, allowing destinations to take center stage.</p>
+                        <p className="svp-entertainment-intro">Entertainment on both cruise lines remains understated, allowing destinations to take center stage.</p>
                     </div>
-
-                    <div className="svp-compare-grid">
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-scenic">
-                                <Music size={20} />
-                                <h3>Scenic</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                    <div className="svp-entertainment-grid">
+                        <div className="svp-entertainment-card svp-entertainment-scenic">
+                            <div className="svp-entertainment-image">
                                 <SvpImagePlaceholder label="Scenic Onboard Entertainment" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpEntertainmentScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-compare-col">
-                            <div className="svp-compare-col-header svp-col-ponant">
-                                <Music size={20} />
-                                <h3>Ponant</h3>
+                            <div className="svp-entertainment-body">
+                                <div className="svp-entertainment-header">
+                                    <Music size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-entertainment-list">
+                                    {svpEntertainmentScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-entertainment-card svp-entertainment-ponant">
+                            <div className="svp-entertainment-image">
                                 <SvpImagePlaceholder label="Ponant Evening Entertainment" />
                             </div>
-                            <ul className="svp-compare-list">
-                                {svpEntertainmentPonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-entertainment-body">
+                                <div className="svp-entertainment-header">
+                                    <Music size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-entertainment-list">
+                                    {svpEntertainmentPonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -744,39 +734,46 @@ function ScenicVsPonant() {
             {/* ── SERVICE COMPARISON ── */}
             <section className="svp-service-section">
                 <div className="svp-service-container">
-                    <div style={{ textAlign: 'center' }}>
+                    <div className="svp-service-top">
                         <span className="svp-eyebrow">HOSPITALITY</span>
                         <h2 className="svp-section-heading">Service Comparison</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                        <p className="svp-compare-intro">Both cruise lines receive excellent ratings for attentive service and guest satisfaction.</p>
+                        <p className="svp-service-intro">Both cruise lines receive excellent ratings for attentive service and guest satisfaction.</p>
                     </div>
-
                     <div className="svp-service-grid">
-                        <div className="svp-service-card">
-                            <Users size={22} />
-                            <h3>Scenic</h3>
-                            <div className="svp-compare-img-wrap">
+                        <div className="svp-service-card svp-service-scenic">
+                            <div className="svp-service-image">
                                 <SvpImagePlaceholder label="Scenic Personalized Service" />
                             </div>
-                            <ul>
-                                <li>Butler service in every suite</li>
-                                <li>Personalized luxury</li>
-                                <li>High crew-to-guest ratio</li>
-                                <li>Comprehensive all-inclusive experience</li>
-                            </ul>
+                            <div className="svp-service-body">
+                                <div className="svp-service-header">
+                                    <Users size={18} />
+                                    <h3>Scenic</h3>
+                                </div>
+                                <ul className="svp-service-list">
+                                    <li><CheckCircle size={15} /><span>Butler service in every suite</span></li>
+                                    <li><CheckCircle size={15} /><span>Personalized luxury</span></li>
+                                    <li><CheckCircle size={15} /><span>High crew-to-guest ratio</span></li>
+                                    <li><CheckCircle size={15} /><span>Comprehensive all-inclusive experience</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="svp-service-card">
-                            <Users size={22} />
-                            <h3>Ponant</h3>
-                            <div className="svp-compare-img-wrap">
+                        <div className="svp-service-card svp-service-ponant">
+                            <div className="svp-service-image">
                                 <SvpImagePlaceholder label="Ponant French Hospitality" />
                             </div>
-                            <ul>
-                                <li>Warm French hospitality</li>
-                                <li>Personalized attention</li>
-                                <li>Intimate guest experience</li>
-                                <li>Multilingual crew</li>
-                            </ul>
+                            <div className="svp-service-body">
+                                <div className="svp-service-header">
+                                    <Users size={18} />
+                                    <h3>Ponant</h3>
+                                </div>
+                                <ul className="svp-service-list">
+                                    <li><CheckCircle size={15} /><span>Warm French hospitality</span></li>
+                                    <li><CheckCircle size={15} /><span>Personalized attention</span></li>
+                                    <li><CheckCircle size={15} /><span>Intimate guest experience</span></li>
+                                    <li><CheckCircle size={15} /><span>Multilingual crew</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -785,52 +782,74 @@ function ScenicVsPonant() {
             {/* ── PRICING ── */}
             <section className="svp-pricing-section">
                 <div className="svp-pricing-container">
-                    <span className="svp-eyebrow">INVESTMENT</span>
-                    <h2 className="svp-section-heading">Pricing</h2>
-                    <div className="svp-heading-separator-bar svp-bar-centered"></div>
-                    <p className="svp-pricing-text">Scenic generally commands premium pricing because of its all-inclusive approach, Discovery Yacht technology, and luxury expedition amenities.</p>
-                    <p className="svp-pricing-text">Ponant offers competitive luxury pricing with a focus on cultural exploration, smaller ships, and French-inspired hospitality. The best value depends on your preferred itinerary, travel season, and suite category.</p>
+                    <div className="svp-pricing-top">
+                        <span className="svp-eyebrow">INVESTMENT</span>
+                        <h2 className="svp-section-heading">Pricing</h2>
+                        <div className="svp-heading-separator-bar svp-bar-centered"></div>
+                    </div>
+                    <div className="svp-pricing-cards">
+                        <div className="svp-pricing-card svp-pricing-scenic">
+                            <div className="svp-pricing-card-icon"><Gem size={22} /></div>
+                            <h3 className="svp-pricing-card-title">Scenic</h3>
+                            <p className="svp-pricing-card-text">Commands premium pricing because of its all-inclusive approach, Discovery Yacht technology, and luxury expedition amenities.</p>
+                        </div>
+                        <div className="svp-pricing-card svp-pricing-ponant">
+                            <div className="svp-pricing-card-icon"><Waves size={22} /></div>
+                            <h3 className="svp-pricing-card-title">Ponant</h3>
+                            <p className="svp-pricing-card-text">Offers competitive luxury pricing with a focus on cultural exploration, smaller ships, and French-inspired hospitality.</p>
+                        </div>
+                    </div>
+                    <p className="svp-pricing-footer">The best value depends on your preferred itinerary, travel season, and suite category.</p>
                 </div>
             </section>
 
             {/* ── WHO SHOULD CHOOSE ── */}
             <section className="svp-choose-section">
                 <div className="svp-choose-container">
-                    <div style={{ textAlign: 'center' }}>
+                    <div className="svp-choose-top">
                         <span className="svp-eyebrow">MAKE YOUR DECISION</span>
                         <h2 className="svp-section-heading">Which Cruise Line Is Right for You?</h2>
                         <div className="svp-heading-separator-bar svp-bar-centered"></div>
                     </div>
-
                     <div className="svp-choose-grid">
-                        <div className="svp-choose-card">
-                            <div className="svp-choose-card-header svp-col-scenic">
-                                <Compass size={22} />
-                                <h3>Who Should Choose Scenic?</h3>
-                            </div>
-                            <div className="svp-compare-img-wrap">
+                        <div className="svp-choose-card svp-choose-scenic">
+                            <div className="svp-choose-image">
                                 <SvpImagePlaceholder label="Who Should Choose Scenic?" />
                             </div>
-                            <ul className="svp-choose-list">
-                                {svpChooseScenic.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={17} className="svp-choose-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="svp-choose-card">
-                            <div className="svp-choose-card-header svp-col-ponant">
-                                <Waves size={22} />
-                                <h3>Who Should Choose Ponant?</h3>
+                            <div className="svp-choose-body">
+                                <div className="svp-choose-header">
+                                    <Compass size={18} />
+                                    <h3>Who Should Choose Scenic?</h3>
+                                </div>
+                                <ul className="svp-choose-list">
+                                    {svpChooseScenic.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="svp-compare-img-wrap">
+                        </div>
+                        <div className="svp-choose-card svp-choose-ponant">
+                            <div className="svp-choose-image">
                                 <SvpImagePlaceholder label="Who Should Choose Ponant?" />
                             </div>
-                            <ul className="svp-choose-list">
-                                {svpChoosePonant.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={17} className="svp-choose-check" /><span>{item}</span></li>
-                                ))}
-                            </ul>
+                            <div className="svp-choose-body">
+                                <div className="svp-choose-header">
+                                    <Waves size={18} />
+                                    <h3>Who Should Choose Ponant?</h3>
+                                </div>
+                                <ul className="svp-choose-list">
+                                    {svpChoosePonant.map((item, idx) => (
+                                        <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+                    <div className="svp-mid-cta-wrap">
+                        <Link to='/contact' className="svp-mid-cta-button">
+                            <Phone size={16} />
+                            Ready to Book? Let's Talk
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -847,8 +866,8 @@ function ScenicVsPonant() {
                     <div className="svp-whybook-grid">
                         {svpWhyBook.map(({ Icon, text }, idx) => (
                             <div key={idx} className="svp-whybook-item">
-                                <div className="svp-whybook-icon"><Icon size={20} /></div>
-                                <span>{text}</span>
+                                <div className="svp-whybook-icon"><Icon size={22} /></div>
+                                <span className="svp-whybook-text">{text}</span>
                             </div>
                         ))}
                     </div>
@@ -857,58 +876,70 @@ function ScenicVsPonant() {
 
             {/* ── ANGELA HUGHES ── */}
             <section className="svp-editorial-section">
-                <div className="svp-editorial-container">
-                    <div className="svp-editorial-card">
-
-                        <div className="svp-editorial-image-side">
-                            <SvpImagePlaceholder label="Angela Hughes — Luxury Travel Expert" />
-                            <div className="svp-editorial-stats">
-                                <div className="svp-editorial-stat-item">
-                                    <span className="svp-editorial-stat-number">40+</span>
-                                    <span className="svp-editorial-stat-label">Years Experience</span>
-                                </div>
-                                <div className="svp-editorial-stat-divider"></div>
-                                <div className="svp-editorial-stat-item">
-                                    <span className="svp-editorial-stat-number">121+</span>
-                                    <span className="svp-editorial-stat-label">Countries Visited</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="svp-editorial-content-side">
-                            <div className="svp-editorial-badge">
-                                <Award size={16} />
-                                <span>Angela Hughes: Luxury Cruise Expertise</span>
-                            </div>
-                            <h2 className="svp-editorial-title">Trusted Guidance From an Industry Leader</h2>
-                            <div className="svp-editorial-bar"></div>
-
-                            <p className="svp-editorial-text">Angela Hughes has spent more than 40 years helping travelers discover the world's most extraordinary destinations.</p>
-
-                            <div className="svp-editorial-services">
-                                <span className="svp-editorial-services-label">Her credentials include:</span>
-                                <div className="svp-editorial-services-list">
-                                    {[
-                                        'Founder of Luxury Travel University',
-                                        'Visited more than 121 countries',
-                                        'Luxury Travel Influencer of the Year',
-                                        'Travel Leaders Network Advisory Board Member',
-                                        'International travel educator',
-                                        'Weekly travel columnist'
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="svp-editorial-pill">
-                                            <CheckCircle size={14} />
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <p className="svp-editorial-text">Her extensive experience helps travelers confidently choose the luxury expedition cruise that best fits their travel style.</p>
-                        </div>
-
-                    </div>
+              <div className="svp-editorial-container">
+                <div className="svp-editorial-badge-row">
+                  <Award size={14} />
+                  <span>Industry Leader · 40+ Years of Excellence</span>
                 </div>
+
+                <div className="svp-editorial-layout">
+                  <div className="svp-editorial-visual">
+                    <div className="svp-editorial-image-frame">
+                      <SvpImagePlaceholder label="Angela Hughes — Luxury Travel Expert" />
+                    </div>
+                    <div className="svp-editorial-stats-card">
+                      <div className="svp-editorial-stat-item">
+                        <span className="svp-editorial-stat-value">40+</span>
+                        <span className="svp-editorial-stat-label">Years of Experience</span>
+                      </div>
+                      <div className="svp-editorial-stat-divider"></div>
+                      <div className="svp-editorial-stat-item">
+                        <span className="svp-editorial-stat-value">121+</span>
+                        <span className="svp-editorial-stat-label">Countries Visited</span>
+                      </div>
+                      <div className="svp-editorial-stat-divider"></div>
+                      <div className="svp-editorial-stat-item">
+                        <span className="svp-editorial-stat-value">10K+</span>
+                        <span className="svp-editorial-stat-label">Travelers Advised</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="svp-editorial-content">
+                    <span className="svp-editorial-name-tag">Angela Hughes</span>
+                    <h2 className="svp-editorial-title">Trusted Guidance From an Industry Leader</h2>
+                    <div className="svp-editorial-title-accent"></div>
+                    <p className="svp-editorial-text">Angela Hughes has spent more than 40 years helping travelers discover the world's most extraordinary destinations. Her deep industry knowledge and personal travel experience across 121+ countries make her one of the most trusted voices in luxury cruising.</p>
+                    <div className="svp-editorial-credentials">
+                      <span className="svp-editorial-cred-label">Credentials</span>
+                      <div className="svp-editorial-cred-grid">
+                        {[
+                          'Founder of Luxury Travel University',
+                          'Luxury Travel Influencer of the Year',
+                          'Travel Leaders Network Advisory Board',
+                          'International travel educator',
+                          'Weekly travel columnist',
+                          '121+ countries visited'
+                        ].map((item, idx) => (
+                          <div key={idx} className="svp-editorial-cred-item">
+                            <CheckCircle size={12} />
+                            <span>{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="svp-editorial-footer-text">
+                      <p>Her extensive experience helps travelers confidently choose the luxury expedition cruise that best fits their travel style.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="svp-editorial-quote">
+                  <span className="svp-editorial-quote-mark">"</span>
+                  <p>Choosing the right expedition cruise line is about matching your sense of adventure with the right onboard experience. I've sailed both Scenic and Ponant extensively — let me help you find your perfect fit.</p>
+                  <span className="svp-editorial-quote-author">— Angela Hughes</span>
+                </div>
+              </div>
             </section>
 
             {/* ── CONCLUSION ── */}
@@ -930,6 +961,12 @@ function ScenicVsPonant() {
                         <p className="svp-final-body svp-final-emphasis">Whether you dream of exploring Antarctica, the Arctic, or the Mediterranean, both cruise lines provide unforgettable journeys filled with luxury, discovery, and personalized service.</p>
                     </div>
 
+                    <div className="svp-mid-cta-wrap">
+                        <Link to='/contact' className="svp-mid-cta-button">
+                            <Phone size={16} />
+                            Start Your Expedition Journey
+                        </Link>
+                    </div>
                 </div>
             </section>
 
@@ -965,40 +1002,35 @@ function ScenicVsPonant() {
                 <div className="svp-cta-bg-pattern-layer"></div>
                 <div className="svp-cta-content-relative">
                     <div className="svp-cta-inner-wrapper">
-
                         <h2 className="svp-cta-heading-white">Ready to Choose Your Luxury Expedition?</h2>
                         <div className="svp-cta-separator-white"></div>
-
                         <p className="svp-cta-paragraph-white">
                             Whether Scenic's all-inclusive Discovery Yachts or Ponant's French boutique elegance calls to you, our specialists will match you with the ship, suite, and itinerary that fit your travel style.
                         </p>
-
-                        <p className="svp-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                        <p className="svp-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 16px' }}>
                             With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help travelers navigate every detail of luxury expedition cruising.
                         </p>
-
                         <div className="svp-cta-considerations-box">
+                            <div className="svp-cta-box-top-bar"></div>
                             <span className="svp-cta-considerations-title">Whether you are considering:</span>
-                            <ul className="svp-cta-considerations-list">
+                            <div className="svp-cta-grid-items">
                                 {[
-                                    'Scenic Eclipse expedition voyages',
-                                    'Ponant French boutique expeditions',
-                                    'Antarctica and polar itineraries',
-                                    'Cultural and environmental exploration cruises',
-                                    'Suite upgrades and exclusive offers'
-                                ].map((item, idx) => (
-                                    <li key={idx} className="svp-cta-considerations-item">
-                                        <CheckCircle size={16} className="svp-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
+                                    { icon: Ship, label: 'Scenic Eclipse expedition voyages' },
+                                    { icon: Anchor, label: 'Ponant French boutique expeditions' },
+                                    { icon: Compass, label: 'Antarctica and polar itineraries' },
+                                    { icon: Leaf, label: 'Cultural and environmental exploration cruises' },
+                                    { icon: Gem, label: 'Suite upgrades and exclusive offers' }
+                                ].map(({ icon: Icon, label }, idx) => (
+                                    <div key={idx} className="svp-cta-grid-item">
+                                        <div className="svp-cta-grid-item-icon"><Icon size={15} /></div>
+                                        <span>{label}</span>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
-
-                        <p className="svp-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
+                        <p className="svp-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 28px', maxWidth: '850px' }}>
                             Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
                         </p>
-
                         <div className="svp-cta-button-group">
                             <Link to='/contact' className="svp-primary-cta-button">
                                 <Phone size={18} />
@@ -1009,7 +1041,6 @@ function ScenicVsPonant() {
                                 Explore Luxury Expedition Cruises
                             </button>
                         </div>
-
                     </div>
                 </div>
             </section>

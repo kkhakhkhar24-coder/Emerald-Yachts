@@ -111,7 +111,8 @@ function IsScenicWorthIt() {
         { Icon: Fish, title: 'Submarine excursions', desc: 'Available on select voyages for a rare underwater vantage point.' },
         { Icon: Mountain, title: 'Observation lounges', desc: 'Panoramic spaces designed for taking in dramatic landscapes.' },
         { Icon: Sparkles, title: 'Luxury spa', desc: 'Wellness treatments and relaxation spaces onboard every voyage.' },
-        { Icon: ConciergeBell, title: 'Butler for every suite', desc: 'Personalized service extended to every guest, not just top suites.' }
+        { Icon: ConciergeBell, title: 'Butler for every suite', desc: 'Personalized service extended to every guest, not just top suites.' },
+        { Icon: MapPin, title: 'Zodiac excursions', desc: 'Expert-led landings and wildlife viewing in remote destinations.' }
     ]
 
     const scnAccommodationFeatures = [
@@ -130,7 +131,9 @@ function IsScenicWorthIt() {
         { Icon: Bath, title: 'Laundry arrangements', desc: 'Your wardrobe is cared for throughout the voyage.' },
         { Icon: Utensils, title: 'In-suite dining', desc: 'Restaurant-quality meals delivered to your suite.' },
         { Icon: CheckCircle, title: 'Reservations', desc: 'Dining and excursion bookings handled on your behalf.' },
-        { Icon: Sparkles, title: 'Special requests', desc: 'Personal touches that make each voyage feel tailor-made.' }
+        { Icon: Sparkles, title: 'Special requests', desc: 'Personal touches that make each voyage feel tailor-made.' },
+        { Icon: Star, title: 'Welcome amenities', desc: 'Champagne, fresh fruit, and personalized touches upon arrival.' },
+        { Icon: BedDouble, title: 'Evening turndown', desc: 'Your suite prepared each evening for a restful night.' }
     ]
 
     const scnDestinations = [
@@ -261,6 +264,9 @@ function IsScenicWorthIt() {
                     </div>
                     <div className="scn-checklist-footer">
                         Because so much is included, many travelers find the overall value to be stronger than cruise lines with lower base fares but significant onboard charges.
+                    </div>
+                    <div className="scn-cta-buttons" style={{ marginTop: '36px' }}>
+                        <a href="/contact" className="scn-cta-btn-primary"><Phone size={17} />Speak with a Luxury Travel Advisor</a>
                     </div>
                 </div>
             </section>
@@ -491,6 +497,9 @@ function IsScenicWorthIt() {
                     <div className="scn-highlight-card">
                         <p>When considering the value of butler service, premium beverages, specialty dining, gratuities, luxury accommodations, included excursions, and personalized service &mdash; many travelers find Scenic to offer excellent overall value in the ultra-luxury cruise market.</p>
                     </div>
+                    <div className="scn-cta-buttons" style={{ marginTop: '32px' }}>
+                        <a href="/contact" className="scn-cta-btn-primary"><Phone size={17} />Speak with a Luxury Travel Advisor</a>
+                    </div>
                 </div>
             </section>
 
@@ -523,6 +532,9 @@ function IsScenicWorthIt() {
                             ))}
                         </div>
                         <p className="scn-editorial-text" style={{ marginTop: '16px' }}>Angela Hughes has spent more than 40 years helping travelers experience the world's finest luxury vacations &mdash; as Founder of Luxury Travel University, Luxury Travel Influencer of the Year, and a Travel Leaders Network Advisory Board Member. Her extensive experience helps clients confidently choose the luxury cruise experience that best suits their interests and travel goals.</p>
+                        <div style={{ marginTop: '24px' }}>
+                            <a href="/contact" className="scn-cta-btn-primary"><Phone size={17} />Schedule Your Consultation</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -531,7 +543,7 @@ function IsScenicWorthIt() {
             <section className="scn-final-section">
                 <div className="scn-final-container">
                     <span className="scn-eyebrow scn-eyebrow-light"><Gem size={14} /> FINAL VERDICT</span>
-                    <h2 className="scn-final-heading">Scenic Delivers a Level of Comfort <br /> That Justifies Its Premium Position</h2>
+                    <h2 className="scn-final-heading">Scenic Delivers a Level of Comfort That Justifies Its Premium Position</h2>
                     <div className="scn-final-card">
                         <p>Scenic stands among the world's premier luxury cruise companies for good reason. Its commitment to all-inclusive pricing, personalized butler service, exceptional dining, and immersive itineraries creates an experience that consistently exceeds expectations.</p>
                         <p>Whether you're sailing through Europe's iconic rivers or embarking on a once-in-a-lifetime expedition to Antarctica aboard Scenic Eclipse, Scenic delivers a level of comfort, service, and attention to detail that justifies its premium positioning.</p>

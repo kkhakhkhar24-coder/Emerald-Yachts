@@ -54,7 +54,7 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
-    color: var(--scn-navy);
+    color: var(--scn-navy-light);
     margin: 0 0 18px 0;
 }
 
@@ -355,6 +355,7 @@
 
 .scn-compare-header { max-width: 720px; margin: 0 auto 48px; text-align: center; }
 .scn-compare-header .scn-eyebrow { justify-content: center; }
+.scn-compare-header .scn-section-heading { font-size: 26px; white-space: nowrap; }
 
 .scn-compare-grid {
     display: grid;
@@ -602,7 +603,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
 }
 
 .scn-drawback-title { font-size: 16.5px; font-weight: 700; color: var(--scn-navy); margin: 0 0 8px 0; }
@@ -677,7 +678,7 @@
     margin-bottom: 16px;
 }
 
-.scn-editorial-title { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 600; color: var(--scn-navy); margin: 0 0 16px 0; }
+.scn-editorial-title { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 600; color: var(--scn-navy-light); margin: 0 0 16px 0; }
 .scn-editorial-text { font-size: 15.5px; color: var(--scn-text); line-height: 1.75; margin: 0 0 18px 0; }
 
 .scn-editorial-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
@@ -810,7 +811,7 @@
     cursor: pointer;
 }
 
-.scn-cta-btn-primary { background: var(--scn-accent); color: var(--scn-navy-deep); }
+.scn-cta-btn-primary { background: var(--scn-accent); color: #fff; }
 .scn-cta-btn-secondary { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
 
 /* =============================================================
@@ -865,6 +866,11 @@
     .scn-cta-section { padding: 52px 16px; }
 
     .scn-section-heading { font-size: 26px; }
+    .scn-compare-header .scn-section-heading { font-size: 22px; white-space: normal; }
+    .scn-split-text { text-align: center; }
+    .scn-split-text .scn-eyebrow { justify-content: center; }
+    .scn-split-text .scn-separator { margin-left: auto; margin-right: auto; }
+    .scn-value-grid .scn-separator { margin-left: auto; margin-right: auto; }
 
     .scn-frame, .scn-split-image { min-height: 220px; }
 
@@ -887,6 +893,10 @@
     .scn-final-card { padding: 24px 20px; }
     .scn-final-conclusion { flex-direction: column; gap: 10px; }
     .scn-final-conclusion-line { width: 60px; height: 1px; }
+    .scn-final-stmt { white-space: normal; font-size: 17px; }
+
+    .scn-dark-header { margin-bottom: 32px; }
+    .scn-dark-header p { font-size: 14px; }
 
     .scn-cta-heading { font-size: 24px; }
     .scn-cta-box { padding: 20px 18px; }
