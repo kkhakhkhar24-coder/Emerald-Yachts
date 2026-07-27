@@ -73,7 +73,7 @@ function ScenicLuxuryYachtGuide() {
     const slyExpeditionExperiences = [
         'Zodiac cruises', 'Wildlife viewing', 'Hiking', 'Kayaking',
         'Snorkeling', 'Paddleboarding', 'Guided nature walks',
-        'Cultural encounters', 'Photography excursions'
+        'Cultural encounters'
     ]
 
     /* Destinations */

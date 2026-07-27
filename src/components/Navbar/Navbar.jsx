@@ -791,90 +791,111 @@ const Navbar = () => {
               >
                 Luxury Wellness Retreats</NavLink>
 
-                <NavLink
-                  to="/philanthropic-purpose-driven-travel"
-                  className="nav-dropdown-single"
-                  onClick={toggleMenu}
-                >
-                  Philanthropic Purpose-Driven Travel</NavLink>
+              <NavLink
+                to="/philanthropic-purpose-driven-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Philanthropic Purpose-Driven Travel</NavLink>
 
-                  <NavLink
-                    to="/luxury-cruises-for-affluent-families"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Luxury Cruises For Affluent Families</NavLink>
+              <NavLink
+                to="/luxury-cruises-for-affluent-families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Cruises For Affluent Families</NavLink>
 
-                  <NavLink
-                    to="/international-family-adventures"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    International Family Adventures</NavLink>
+              <NavLink
+                to="/international-family-adventures"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                International Family Adventures</NavLink>
 
 
-                   <NavLink
-                    to="/business-milestone-liquidity-event-travel"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Business Milestone Liquidity Event Travel</NavLink>
+              <NavLink
+                to="/business-milestone-liquidity-event-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Business Milestone Liquidity Event Travel</NavLink>
 
-                     <NavLink
-                    to="/privacy-security-travel-planning"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Privacy & security travel planning</NavLink>
+              <NavLink
+                to="/privacy-security-travel-planning"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Privacy & security travel planning</NavLink>
 
-                     <NavLink
-                    to="/building-stronger-families-through-travel"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Building stronger families through travel</NavLink>
+              <NavLink
+                to="/building-stronger-families-through-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Building stronger families through travel</NavLink>
 
-                     <NavLink
-                    to="/scenic-luxury-yacht-guide"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Luxury Yacht Guide</NavLink>
+              <NavLink
+                to="/scenic-luxury-yacht-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Luxury Yacht Guide</NavLink>
 
-                     <NavLink
-                    to="/scenic-eclipse-reviews"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Eclipse Reviews</NavLink>
+              <NavLink
+                to="/scenic-eclipse-reviews"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Eclipse Reviews</NavLink>
 
-                    <NavLink
-                    to="/scenic-eclipse-ii-reviews"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Eclipse Ii Reviews</NavLink>
+              <NavLink
+                to="/scenic-eclipse-ii-reviews"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Eclipse Ii Reviews</NavLink>
 
-                     <NavLink
-                    to="/scenic-vs-ponant"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Vs Ponant</NavLink>
+              <NavLink
+                to="/scenic-vs-ponant"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Ponant</NavLink>
 
-                    <NavLink
-                    to="/scenic-vs-seabourn"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Vs Seabourn</NavLink>                    
-                    
-                    <NavLink
-                    to="/is-scenic-worth-it"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Is Scenic Worth It</NavLink>                    
+              <NavLink
+                to="/scenic-vs-seabourn"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Seabourn</NavLink>
+
+              <NavLink
+                to="/is-scenic-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Scenic Worth It</NavLink>
+
+              <NavLink
+                to="/what-is-included-on-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included On Scenic</NavLink>
+
+              {/* <NavLink
+                to="/scenic-mediterranean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Mediterranean Cruises</NavLink>
+
+              <NavLink
+                to="/scenic-iceland-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Iceland Cruises</NavLink> */}
             </div>
           </div>
         </div>
@@ -1631,11 +1652,11 @@ const Navbar = () => {
               Luxury Family Celebrations</NavLink>
 
             <NavLink
-                to="/private-jet-concierge-travel"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Private Jet Concierge Travel</NavLink>
+              to="/private-jet-concierge-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Private Jet Concierge Travel</NavLink>
 
 
             <NavLink
@@ -1652,89 +1673,110 @@ const Navbar = () => {
             >
               Safari & expeditions bucket list travel</NavLink>
 
-              <NavLink
-                to="/luxury-wellness-retreats"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Luxury Wellness Retreats</NavLink>
+            <NavLink
+              to="/luxury-wellness-retreats"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Wellness Retreats</NavLink>
 
-                 <NavLink
-                  to="/philanthropic-purpose-driven-travel"
-                  className="nav-dropdown-single"
-                  onClick={toggleMenu}
-                >
-                  Philanthropic Purpose-Driven Travel</NavLink>
+            <NavLink
+              to="/philanthropic-purpose-driven-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Philanthropic Purpose-Driven Travel</NavLink>
 
-                   <NavLink
-                    to="/luxury-cruises-for-affluent-families"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Luxury Cruises For Affluent Families</NavLink>
+            <NavLink
+              to="/luxury-cruises-for-affluent-families"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Cruises For Affluent Families</NavLink>
 
-                     <NavLink
-                    to="/international-family-adventures"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    International Family Adventures</NavLink>
+            <NavLink
+              to="/international-family-adventures"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              International Family Adventures</NavLink>
 
-                     <NavLink
-                    to="/business-milestone-liquidity-event-travel"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Business Milestone Liquidity Event Travel</NavLink>
+            <NavLink
+              to="/business-milestone-liquidity-event-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Business Milestone Liquidity Event Travel</NavLink>
 
-                     <NavLink
-                    to="/privacy-security-travel-planning"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Privacy & security travel planning</NavLink>
+            <NavLink
+              to="/privacy-security-travel-planning"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Privacy & security travel planning</NavLink>
 
-                     <NavLink
-                    to="/building-stronger-families-through-travel"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Building stronger families through travel</NavLink>
+            <NavLink
+              to="/building-stronger-families-through-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Building stronger families through travel</NavLink>
 
-                    <NavLink
-                    to="/scenic-luxury-yacht-guide"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Luxury Yacht Guide</NavLink>
+            <NavLink
+              to="/scenic-luxury-yacht-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Luxury Yacht Guide</NavLink>
 
-                     <NavLink
-                    to="/scenic-eclipse-reviews"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Eclipse Reviews</NavLink>
+            <NavLink
+              to="/scenic-eclipse-reviews"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Eclipse Reviews</NavLink>
 
-                    <NavLink
-                    to="/scenic-vs-ponant"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Vs Ponant</NavLink>
+            <NavLink
+              to="/scenic-vs-ponant"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Ponant</NavLink>
 
-                    <NavLink
-                    to="/scenic-vs-seabourn"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Scenic Vs Seabourn</NavLink>
-                    
-                    <NavLink
-                    to="/is-scenic-worth-it"
-                    className="nav-dropdown-single"
-                    onClick={toggleMenu}
-                  >
-                    Is Scenic Worth It</NavLink>
+            <NavLink
+              to="/scenic-vs-seabourn"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Seabourn</NavLink>
+
+            <NavLink
+              to="/is-scenic-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Scenic Worth It</NavLink>
+
+            <NavLink
+              to="/what-is-included-on-scenic"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Is Included On Scenic</NavLink>
+
+            {/* <NavLink
+              to="/scenic-mediterranean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Mediterranean Cruises</NavLink>
+
+            <NavLink
+              to="/scenic-iceland-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Iceland Cruises</NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>
