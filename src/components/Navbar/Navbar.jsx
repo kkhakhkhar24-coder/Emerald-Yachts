@@ -883,12 +883,12 @@ const Navbar = () => {
               >
                 Scenic Mediterranean Cruises</NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-iceland-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Iceland Cruises</NavLink> */}
+                Scenic Iceland Cruises</NavLink>
 
               <NavLink
                 to="/is-scenic-worth-it"
@@ -901,7 +901,14 @@ const Navbar = () => {
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Greenland Cruises</NavLink> */}                    
+                Scenic Greenland Cruises</NavLink> */}
+
+                <NavLink
+                to="/scenic-food-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Food Review</NavLink>                    
             </div>
           </div>
         </div>
@@ -1789,6 +1796,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Scenic Greenland Cruises</NavLink> */}
+
+               <NavLink
+                to="/scenic-food-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Food Review</NavLink>  
 
             <span className="mobile-dropdown-divider"></span>
           </div>

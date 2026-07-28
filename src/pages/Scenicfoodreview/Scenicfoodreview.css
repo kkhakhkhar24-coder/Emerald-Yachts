@@ -1,0 +1,185 @@
+/* ============================================================
+   SCENIC FOOD REVIEW — COMPANION PAGE STYLES
+   Prefix: sfr- (new, unique classnames only — used alongside
+   the shared fcel- classes imported from Luxuryfamilycelebrations.css
+   for sections whose structure matches the existing design system)
+   ============================================================ */
+
+/* ============================================================
+   DEST CARD DESCRIPTION TEXT
+   (adds a description line under fcel-dest-card-name, since the
+   reference destination cards only show a name, not a description)
+   ============================================================ */
+.sfr-dest-card-text {
+    color: #e2e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 6px 0 0 0;
+    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
+}
+
+@media (max-width: 480px) {
+    .sfr-dest-card-text { font-size: 13px; }
+}
+
+/* ============================================================
+   MID-PAGE CTA BANNER
+   ============================================================ */
+.sfr-midcta-section {
+    background: var(--fcel-bg-soft);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sfr-midcta-container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.sfr-midcta-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--fcel-navy);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .sfr-midcta-section { padding: 44px 16px; }
+    .sfr-midcta-text { font-size: 17px; }
+}
+
+/* ============================================================
+   OUR EXPERT REVIEW — PROS / CONSIDERATIONS SECTION
+   ============================================================ */
+.sfr-review-section {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f7fa 100%);
+}
+
+.sfr-review-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sfr-review-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.sfr-review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.sfr-review-card {
+    border-radius: 18px;
+    padding: 36px 32px;
+    box-shadow: 0 20px 44px rgba(15, 28, 46, 0.06);
+}
+
+.sfr-review-card-love {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-top: 4px solid var(--fcel-navy);
+}
+
+.sfr-review-card-consider {
+    background: var(--fcel-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-top: 4px solid #94a3b8;
+}
+
+.sfr-review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.sfr-review-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sfr-review-card-love .sfr-review-card-icon {
+    background: var(--fcel-navy);
+    color: #ffffff;
+}
+
+.sfr-review-card-consider .sfr-review-card-icon {
+    background: #94a3b8;
+    color: #ffffff;
+}
+
+.sfr-review-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0;
+}
+
+.sfr-review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sfr-review-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.sfr-review-list-icon-love {
+    color: var(--fcel-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.sfr-review-list-icon-consider {
+    color: #64748b;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.sfr-review-closing {
+    text-align: center;
+    max-width: 780px;
+    margin: 40px auto 0;
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.sfr-review-cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .sfr-review-section { padding: 60px 18px; }
+    .sfr-review-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 480px) {
+    .sfr-review-section { padding: 44px 14px; }
+    .sfr-review-card { padding: 26px 22px; }
+    .sfr-review-card-title { font-size: 18px; }
+    .sfr-review-list-item { font-size: 14px; }
+}
