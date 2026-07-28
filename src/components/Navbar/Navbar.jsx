@@ -917,12 +917,12 @@ const Navbar = () => {
               >
                 Scenic Cabins Guide</NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/best-scenic-suites"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Best Scenic Suites</NavLink>                    
+                Best Scenic Suites</NavLink>                     */}
             </div>
           </div>
         </div>
@@ -1825,12 +1825,12 @@ const Navbar = () => {
               >
                 Scenic Cabins Guide</NavLink> 
 
-                <NavLink
+                {/* <NavLink
                 to="/best-scenic-suites"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Best Scenic Suites</NavLink>  
+                Best Scenic Suites</NavLink>   */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>
