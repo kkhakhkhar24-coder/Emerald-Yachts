@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
-import '../LuxuryFamilyCelebrations/Luxuryfamilycelebrations.css'
-import './ScenicFoodReview.css'
+import '../Luxuryfamilycelebrations/Luxuryfamilycelebrations.css'
+import './Scenicfoodreview.css'
 import {
     Sparkles, Phone, LayoutList, CheckCircle, UtensilsCrossed, ChefHat,
     Fish, Store, Wine, Coffee, Sun, Home, Compass, Ship, BedDouble,
