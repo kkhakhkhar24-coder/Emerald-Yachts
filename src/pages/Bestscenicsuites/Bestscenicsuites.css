@@ -1,0 +1,563 @@
+@import '../Luxuryfamilycelebrations/Luxuryfamilycelebrations.css';
+
+/* ============================================================
+   BEST SCENIC SUITES — PAGE STYLES
+   Reused prefix (matching content/patterns): fcel-
+   New unique prefix (page-specific content):  bss-
+   Colors, fonts, sizes copied 1:1 from the reference stylesheet.
+   Fully responsive at 1024px / 768px / 480px.
+   ============================================================ */
+
+:root {
+    --bss-accent: #60a5fa;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (reused)
+   ============================================================ */
+
+/* ============================================================
+   HERO SECTION (reused)
+   ============================================================ */
+
+.bss-hero-placeholder {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 220px;
+}
+
+/* ============================================================
+   INTRO SECTION (reused)
+   ============================================================ */
+
+/* ============================================================
+   IMAGE PLACEHOLDERS (new — no real images anywhere on page)
+   ============================================================ */
+
+.bss-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--fcel-bg-soft) 0%, #dbe9ec 100%);
+    color: var(--fcel-navy);
+    border-radius: 20px;
+}
+
+.bss-placeholder span {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0 16px;
+    max-width: 220px;
+}
+
+.bss-intro-frame {
+    min-height: 500px;
+    border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+.bss-placeholder { min-height: 160px; }
+
+.bss-intro-frame { min-height: 240px; }
+}
+
+/* ============================================================
+   WHY SCENIC SUITES STAND OUT — FEATURE PILL GRID
+   (reused — matches reference villa feature-pill pattern)
+   ============================================================ */
+
+.bss-standout-section {
+    background: var(--fcel-bg-white);
+    padding: 100px 20px;
+}
+
+.bss-standout-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bss-standout-note {
+    max-width: 720px;
+    margin: 26px auto 0;
+    font-size: 15px;
+    color: #475569;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   INLINE CTA STRIPS (new — repeated mid-page CTA banners)
+   ============================================================ */
+
+.bss-inline-cta {
+    background: var(--fcel-bg-soft);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.bss-inline-cta-inner {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.bss-inline-cta-heading {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0 0 20px 0;
+    line-height: 1.35;
+}
+
+@media (max-width: 480px) {
+.bss-inline-cta { padding: 40px 16px; }
+
+.bss-inline-cta-heading { font-size: 20px; }
+}
+
+/* ============================================================
+   SUITE CATEGORY BADGE (new — "Best Overall Suite" style label)
+   ============================================================ */
+
+.bss-suite-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--fcel-navy);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+}
+
+.bss-suite-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bss-suite-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--fcel-navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+/* ============================================================
+   OCCASION-STYLE SPLIT SECTIONS (reused — matches reference's
+   reusable image + copy pattern; used for every suite category)
+   ============================================================ */
+
+@media (max-width: 1024px) {
+.bss-suite-category { display: inline-flex; }
+
+.bss-suite-tags { justify-content: center; }
+}
+
+/* ============================================================
+   QUICK PICK COMPARISON GRID (new — "Which Suite Should You Choose")
+   ============================================================ */
+
+.bss-quickpick-section {
+    background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
+    padding: 100px 20px;
+}
+
+.bss-quickpick-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bss-quickpick-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.bss-quickpick-header .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.bss-quickpick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bss-quickpick-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 26px 22px;
+    transition: all 0.3s ease;
+}
+
+.bss-quickpick-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-4px);
+}
+
+.bss-quickpick-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--bss-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.bss-quickpick-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #93c5fd;
+    margin: 0 0 8px 0;
+}
+
+.bss-quickpick-suite {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+.bss-quickpick-grid { grid-template-columns: repeat(2, 1fr); }
+
+.bss-quickpick-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+.bss-quickpick-grid { grid-template-columns: 1fr; gap: 14px; }
+}
+
+/* ============================================================
+   TIPS FOR CHOOSING (new wrapper — reuses pill grid inside)
+   ============================================================ */
+
+.bss-tips-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.bss-tips-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bss-tips-note {
+    max-width: 720px;
+    margin: 26px auto 0;
+    font-size: 15px;
+    color: #475569;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS (reused — matches reference's
+   own "Why Choose Us" section 1:1)
+   ============================================================ */
+
+/* ============================================================
+   FAQ SECTION (reused)
+   ============================================================ */
+
+/* ============================================================
+   FINAL CTA SECTION (reused)
+   ============================================================ */
+/* ============================================================
+   EYEBROW LABEL — DARK BACKGROUND VARIANT (new)
+   ============================================================ */
+.bss-eyebrow-on-dark {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* ============================================================
+   SUITE CATEGORIES SECTION (new UI)
+   ============================================================ */
+.bss-suite-section {
+    padding: 100px 20px;
+    background-color: var(--fcel-bg-white);
+}
+
+.bss-suite-section-alt {
+    background-color: var(--fcel-bg-soft);
+}
+
+.bss-suite-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bss-suite-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.bss-suite-grid-reverse .bss-suite-media {
+    order: 2;
+}
+
+.bss-suite-grid-reverse .bss-suite-content {
+    order: 1;
+}
+
+.bss-suite-media {
+    width: 100%;
+}
+
+.bss-suite-image-placeholder {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 20px;
+    background: repeating-linear-gradient(
+        135deg,
+        var(--fcel-bg-soft),
+        var(--fcel-bg-soft) 12px,
+        var(--fcel-bg-white) 12px,
+        var(--fcel-bg-white) 24px
+    );
+    border: 2px dashed rgba(39, 68, 114, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--fcel-navy);
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bss-suite-image-placeholder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.1);
+}
+
+.bss-suite-section-alt .bss-suite-image-placeholder {
+    background: repeating-linear-gradient(
+        135deg,
+        var(--fcel-bg-white),
+        var(--fcel-bg-white) 12px,
+        var(--fcel-bg-soft) 12px,
+        var(--fcel-bg-soft) 24px
+    );
+}
+
+.bss-suite-image-icon {
+    opacity: 0.7;
+    color: var(--fcel-navy);
+}
+
+.bss-suite-image-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--fcel-navy);
+    opacity: 0.8;
+}
+
+.bss-suite-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bss-suite-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--fcel-navy);
+    margin: 12px 0 16px 0;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.bss-suite-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0 0 24px 0;
+}
+
+.bss-suite-list-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0 0 14px 0;
+}
+
+.bss-suite-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+}
+
+.bss-suite-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #334155;
+    background: var(--fcel-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.02);
+}
+
+.bss-suite-section-alt .bss-suite-feature-item {
+    background: var(--fcel-bg-white);
+}
+
+.bss-suite-feature-icon {
+    color: var(--fcel-green);
+    flex-shrink: 0;
+}
+
+.bss-suite-tags-container {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.bss-suite-tags-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0 0 12px 0;
+}
+
+.bss-suite-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bss-suite-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--fcel-bg-soft);
+    color: var(--fcel-navy);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.bss-suite-section-alt .bss-suite-tag-pill {
+    background: var(--fcel-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.bss-suite-footnote {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14.5px;
+    color: #475569;
+    font-style: italic;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.bss-suite-footnote-icon {
+    color: var(--fcel-navy);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN FOR SUITE CATEGORIES
+   ============================================================ */
+@media (max-width: 1024px) {
+    .bss-suite-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .bss-suite-grid-reverse .bss-suite-media {
+        order: -1;
+    }
+    
+    .bss-suite-media {
+        order: -1;
+    }
+    
+    .bss-suite-image-placeholder {
+        min-height: 320px;
+    }
+    
+    .bss-suite-section {
+        padding: 60px 20px;
+    }
+    
+    .bss-suite-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bss-suite-features-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bss-suite-section {
+        padding: 40px 14px;
+    }
+    
+    .bss-suite-image-placeholder {
+        min-height: 240px;
+    }
+    
+    .bss-suite-title {
+        font-size: 24px;
+    }
+    
+    .bss-suite-intro {
+        font-size: 16px;
+    }
+    
+    .bss-suite-feature-item {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}

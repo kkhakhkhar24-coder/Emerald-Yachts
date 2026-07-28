@@ -1,0 +1,1085 @@
+/* ============================================================
+   SCENIC CABINS GUIDE — PAGE STYLES
+   Shared classes reused from Luxury Family Celebrations system: fcel-
+   New unique classes for this page: scg-
+   No photographic images used — placeholder visual blocks only
+   ============================================================ */
+
+:root {
+    --fcel-navy: #274472;
+    --fcel-navy-light: #274472cc;
+    --fcel-bg-white: #ffffff;
+    --fcel-bg-soft: rgb(231, 243, 245);
+    --fcel-bg-dark: #0f1c2e;
+    --fcel-bg-dark2: #1c2f4a;
+    --fcel-green: #10b981;
+    --fcel-gold: var(--fcel-navy);
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (reused from reference)
+   ============================================================ */
+
+.fcel-page-wrapper {
+    overflow-x: hidden;
+}
+
+.fcel-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--fcel-navy);
+}
+
+.fcel-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--fcel-navy);
+    margin-bottom: 32px;
+}
+
+.fcel-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fcel-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fcel-navy);
+    background: var(--fcel-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.fcel-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .fcel-section-heading { font-size: 34px !important; text-align: center; }
+    .fcel-heading-bar { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 480px) {
+    .fcel-section-heading { font-size: 26px !important; }
+    .fcel-lead-paragraph { font-size: 16px; }
+}
+
+/* ============================================================
+   PLACEHOLDER VISUAL BLOCKS (new — scg-)
+   Used instead of real <img> tags throughout the page
+   ============================================================ */
+.scg-img-placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    border-radius: 18px;
+    border: 2px dashed rgba(39, 68, 114, 0.3);
+    background: repeating-linear-gradient(
+        135deg,
+        var(--fcel-bg-soft),
+        var(--fcel-bg-soft) 12px,
+        #ffffff 12px,
+        #ffffff 24px
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--fcel-navy);
+    text-align: center;
+    padding: 20px;
+}
+
+.scg-img-placeholder svg {
+    opacity: 0.55;
+}
+
+.scg-img-placeholder span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--fcel-navy);
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+
+.scg-img-placeholder-dark {
+    border: 2px dashed rgba(255, 255, 255, 0.25);
+    background: repeating-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.04) 12px,
+        rgba(255, 255, 255, 0.08) 12px,
+        rgba(255, 255, 255, 0.08) 24px
+    );
+    color: #e2e8f0;
+}
+
+.scg-img-placeholder-dark span {
+    color: #e2e8f0;
+    opacity: 0.7;
+}
+
+.scg-img-placeholder-tall {
+    min-height: 480px;
+    border-radius: 20px;
+}
+
+/* ============================================================
+   HERO SECTION (reused — rotating gradient tints instead of photos)
+   ============================================================ */
+.fcel-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fcel-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+}
+
+.fcel-hero-slide.fcel-slide-active {
+    opacity: 1;
+}
+
+.fcel-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.fcel-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.55);
+    z-index: 1;
+}
+
+.fcel-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcel-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fcel-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.fcel-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fcel-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fcel-btn-primary {
+    background: var(--fcel-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.fcel-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .fcel-hero-title { font-size: 42px; }
+    .fcel-hero-subtitle { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+    .fcel-hero-title { font-size: 32px; }
+    .fcel-hero-content { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .fcel-hero-title { font-size: 26px; }
+    .fcel-hero-subtitle { font-size: 15px; margin-bottom: 28px; }
+    .fcel-hero-tag { font-size: 12px; }
+    .fcel-btn-primary, .fcel-btn-outline { padding: 12px 22px; font-size: 14px; width: 100%; justify-content: center; }
+    .fcel-hero-btn-row { width: 100%; flex-direction: column; }
+}
+
+/* ============================================================
+   INTRO SECTION (reused, image slot replaced by placeholder)
+   ============================================================ */
+.fcel-intro-section {
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fcel-intro-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.fcel-intro-section::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.02);
+    pointer-events: none;
+}
+
+.fcel-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fcel-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.fcel-intro-copy {
+    position: relative;
+}
+
+.fcel-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+    min-height: 500px;
+}
+
+.fcel-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--fcel-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
+}
+
+.fcel-intro-highlight-box {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--fcel-navy);
+    border-radius: 14px;
+    padding: 26px 32px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.15);
+}
+
+.fcel-intro-quote-icon {
+    font-size: 36px;
+    line-height: 0.5;
+    color: rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fcel-intro-quote-content {
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .fcel-intro-grid { grid-template-columns: 1fr; gap: 40px; align-items: center; }
+    .fcel-intro-image-frame { order: -1; min-height: 320px; }
+    .fcel-intro-highlight-box { grid-column: auto; }
+}
+
+@media (max-width: 768px) {
+    .fcel-intro-section { padding: 60px 18px; }
+    .fcel-lead-paragraph { text-align: left; }
+}
+
+@media (max-width: 480px) {
+    .fcel-intro-section { padding: 44px 14px; }
+    .fcel-intro-highlight-box { padding: 20px; flex-direction: column; gap: 12px; align-items: flex-start; }
+    .fcel-intro-quote-icon { font-size: 28px; }
+    .fcel-intro-image-frame { min-height: 240px; }
+    .fcel-intro-badge-float { bottom: 16px; left: 16px; padding: 8px 14px; font-size: 11px; }
+}
+
+/* ============================================================
+   SHARED ICON PILL helper (new — scg-)
+   ============================================================ */
+.scg-icon-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--fcel-bg-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--fcel-navy);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ============================================================
+   CTA BANNER (new — scg-) — used multiple times mid-page
+   ============================================================ */
+.scg-cta-banner {
+    background: linear-gradient(120deg, var(--fcel-navy) 0%, #1e365a 100%);
+    padding: 46px 20px;
+}
+
+.scg-cta-banner-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.scg-cta-banner-text {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 640px;
+}
+
+.scg-cta-banner-btn {
+    background: #ffffff;
+    color: var(--fcel-navy);
+    border: none;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.scg-cta-banner-btn:hover {
+    background: var(--fcel-bg-soft);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .scg-cta-banner { padding: 36px 18px; }
+    .scg-cta-banner-inner { flex-direction: column; text-align: center; }
+    .scg-cta-banner-text { font-size: 19px; max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .scg-cta-banner-text { font-size: 17px; }
+    .scg-cta-banner-btn { width: 100%; justify-content: center; padding: 14px 22px; font-size: 14px; }
+}
+
+/* ============================================================
+   WHY SCENIC SUITES STAND OUT (new — scg-)
+   ============================================================ */
+.scg-standout-section {
+    background: var(--fcel-bg-white);
+    padding: 100px 20px;
+}
+
+.scg-standout-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scg-standout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.scg-standout-note {
+    margin-top: 30px;
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+    .scg-standout-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .scg-standout-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-standout-section { padding: 44px 14px; }
+    .scg-standout-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   SUITE CATEGORIES (new — scg-) — main image-style section
+   ============================================================ */
+.scg-suites-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.scg-suites-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.scg-suites-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 54px;
+}
+
+.scg-suite-row {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 56px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.scg-suite-row:last-child {
+    margin-bottom: 0;
+}
+
+.scg-suite-row-reverse .scg-suite-visual {
+    order: 2;
+}
+
+.scg-suite-row-reverse .scg-suite-copy {
+    order: 1;
+}
+
+.scg-suite-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--fcel-navy);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 30px;
+    margin-bottom: 14px;
+}
+
+.scg-suite-name {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0 0 12px 0;
+}
+
+.scg-suite-intro {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+}
+
+.scg-suite-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 0 18px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.scg-suite-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.scg-suite-closing {
+    font-size: 15px;
+    color: #334155;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .scg-suite-row,
+    .scg-suite-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .scg-suite-row-reverse .scg-suite-visual,
+    .scg-suite-row-reverse .scg-suite-copy {
+        order: unset;
+    }
+    .scg-suite-visual { order: -1; }
+    .scg-suites-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-suites-section { padding: 44px 14px; }
+    .scg-suite-features { grid-template-columns: 1fr; }
+    .scg-suite-name { font-size: 22px; }
+    .scg-suite-row { margin-bottom: 40px; }
+}
+
+/* ============================================================
+   BUTLER SERVICE (new — scg-)
+   ============================================================ */
+.scg-butler-section {
+    background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
+    padding: 100px 20px;
+}
+
+.scg-butler-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.scg-butler-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.scg-butler-section .fcel-section-heading { color: #ffffff !important; }
+
+.scg-butler-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.scg-butler-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.scg-butler-note {
+    margin-top: 24px;
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .scg-butler-grid { grid-template-columns: 1fr; gap: 34px; }
+}
+
+@media (max-width: 768px) {
+    .scg-butler-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-butler-section { padding: 44px 14px; }
+    .scg-butler-list { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   SUITE AMENITIES (new — scg-)
+   ============================================================ */
+.scg-amenities-section {
+    background: var(--fcel-bg-white);
+    padding: 100px 20px;
+}
+
+.scg-amenities-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scg-amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.scg-amenities-note {
+    margin-top: 28px;
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .scg-amenities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .scg-amenities-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-amenities-section { padding: 44px 14px; }
+    .scg-amenities-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   WHICH SUITE SHOULD YOU CHOOSE (new — scg-)
+   ============================================================ */
+.scg-picker-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.scg-picker-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.scg-picker-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.scg-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.scg-picker-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
+    transition: all 0.3s ease;
+}
+
+.scg-picker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 36px rgba(39, 68, 114, 0.12);
+}
+
+.scg-picker-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--fcel-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.scg-picker-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 0 0 8px 0;
+}
+
+.scg-picker-suite {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    margin: 0 0 10px 0;
+}
+
+.scg-picker-desc {
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .scg-picker-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .scg-picker-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-picker-section { padding: 44px 14px; }
+    .scg-picker-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   TIPS FOR CHOOSING (new — scg-)
+   ============================================================ */
+.scg-tips-section {
+    background: var(--fcel-bg-white);
+    padding: 100px 20px;
+}
+
+.scg-tips-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scg-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.scg-tips-note {
+    margin-top: 28px;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .scg-tips-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .scg-tips-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-tips-section { padding: 44px 14px; }
+    .scg-tips-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS (new — scg-)
+   ============================================================ */
+.scg-whybook-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.scg-whybook-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scg-whybook-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.scg-whybook-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+}
+
+.scg-whybook-cta-row {
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .scg-whybook-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .scg-whybook-section { padding: 60px 18px; }
+}
+
+@media (max-width: 480px) {
+    .scg-whybook-section { padding: 44px 14px; }
+    .scg-whybook-list { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FAQ SECTION (reused)
+   ============================================================ */
+.fcel-faq-section {
+    background: var(--fcel-bg-soft);
+    padding: 100px 20px;
+}
+
+.fcel-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fcel-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fcel-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.fcel-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.fcel-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--fcel-navy);
+}
+
+.fcel-faq-toggle {
+    font-size: 22px;
+    color: var(--fcel-navy);
+    flex-shrink: 0;
+}
+
+.fcel-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .fcel-faq-section { padding: 60px 18px; }
+    .fcel-faq-question-row { font-size: 15px; }
+    .fcel-faq-item { padding: 16px 18px; }
+}
+
+@media (max-width: 480px) {
+    .fcel-faq-question-row { font-size: 14px; }
+    .fcel-faq-answer { font-size: 14px; }
+}
+
+/* ============================================================
+   CTA SECTION (reused)
+   ============================================================ */
+.fcel-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fcel-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.fcel-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.fcel-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.fcel-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.fcel-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.fcel-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .fcel-cta-heading { font-size: 30px; }
+}
+
+@media (max-width: 768px) {
+    .fcel-cta-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .fcel-cta-heading { font-size: 22px; }
+    .fcel-cta-text { font-size: 14px; }
+    .fcel-cta-btn-row { flex-direction: column; width: 100%; }
+    .fcel-cta-btn-row .fcel-btn-primary,
+    .fcel-cta-btn-row .fcel-btn-outline { width: 100%; justify-content: center; }
+}

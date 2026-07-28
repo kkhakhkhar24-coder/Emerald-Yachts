@@ -908,7 +908,21 @@ const Navbar = () => {
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Food Review</NavLink>                    
+                Scenic Food Review</NavLink>
+
+              <NavLink
+                to="/scenic-cabins-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Cabins Guide</NavLink>
+
+              <NavLink
+                to="/best-scenic-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Scenic Suites</NavLink>                    
             </div>
           </div>
         </div>
@@ -1803,6 +1817,20 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Scenic Food Review</NavLink>  
+
+                <NavLink
+                to="/scenic-cabins-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Cabins Guide</NavLink> 
+
+                <NavLink
+                to="/best-scenic-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Scenic Suites</NavLink>  
 
             <span className="mobile-dropdown-divider"></span>
           </div>
