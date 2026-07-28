@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './ScenicIcelandCruises.css'
+import './Scenicicelandcruises.css'
 import {
     Ship, CheckCircle, Phone, LayoutList, Award, Users, Compass,
     Sparkles, Wind, Sun, Waves, Camera, Mountain, Snowflake,
