@@ -33,7 +33,8 @@ const destinations = [
     { name: 'Disko Bay', Icon: Navigation, text: 'Renowned for spectacular floating icebergs and abundant marine wildlife. Travelers may see humpback whales, fin whales, seals, and seabirds.', tags: ['Whale watching', 'Photography', 'Arctic scenery'] },
     { name: 'East Greenland', Icon: Mountain, text: 'One of the most remote regions on Earth. Explore massive fjords, Arctic mountains, glaciers, small Inuit settlements, and untouched wilderness.', tags: ['Fjords', 'Glaciers', 'Wilderness', 'Expert insights'] },
     { name: 'Narsaq', Icon: Compass, text: 'Located in southern Greenland, Narsaq offers colorful homes, dramatic mountain scenery, and fascinating Norse and Inuit history.', tags: ['Guided walks', 'Local culture', 'Mountain scenery'] },
-    { name: 'Prince Christian Sound', Icon: MapPin, text: 'Towering cliffs, waterfalls, glaciers, and drifting icebergs create one of the Arctic\'s most scenic waterways.', tags: ['Waterfalls', 'Glaciers', 'Scenic cruising'] }
+    { name: 'Prince Christian Sound', Icon: MapPin, text: 'Towering cliffs, waterfalls, glaciers, and drifting icebergs create one of the Arctic\'s most scenic waterways.', tags: ['Waterfalls', 'Glaciers', 'Scenic cruising'] },
+    { name: 'Qaqortoq', Icon: Anchor, text: 'The largest town in southern Greenland, featuring beautiful colonial architecture, stone monuments, and stunning surrounding fjords.', tags: ['Colonial history', 'Fjords', 'Local art', 'Southern Greenland'] }
 ]
 
 const benefits = [
@@ -154,13 +155,18 @@ function ScenicGreenlandCruises() {
                             <h2 className="medi-section-heading">Experience the Untouched Beauty of the Arctic</h2>
                             <div className="medi-heading-separator-bar"></div>
                             <p className="scng-intro-body">Greenland is one of the world's last true wilderness destinations, where towering icebergs, dramatic fjords, ancient glaciers, and vibrant Inuit communities create an unforgettable expedition experience.</p>
-                            <p className="scng-intro-body">Aboard <strong>Scenic Eclipse</strong>, Scenic's award-winning Discovery Yacht, you'll experience Greenland in exceptional comfort while exploring some of the most remote and spectacular landscapes on Earth. Guests can sail through breathtaking fjords, admire colossal ice formations, visit colorful coastal villages, and learn about Inuit culture with guidance from Scenic's expert Discovery Team.</p>
+                            <p className="scng-intro-body">Aboard <strong>Scenic Eclipse</strong>, Scenic's award-winning Discovery Yacht—purpose-built and Polar Class 6 certified with advanced stabilization systems and a strengthened hull for confident navigation in polar waters—you'll experience Greenland in exceptional comfort while exploring some of the most remote and spectacular landscapes on Earth. Guests can sail through breathtaking fjords, admire colossal ice formations, visit colorful coastal villages, and learn about Inuit culture with guidance from Scenic's expert Discovery Team.</p>
                             <p className="scng-intro-body">Scenic's Greenland itineraries often combine Greenland with Iceland, allowing travelers to experience two extraordinary Arctic destinations on a single voyage.</p>
                         </div>
-                        <div className="scng-intro-note">
-                            <span className="scng-note-number">01</span>
-                            <p>Scenic's purpose-built Discovery Yachts are Polar Class 6 certified, with advanced stabilization systems and a strengthened hull for confident navigation in polar waters.</p>
-                            <a href="#why-scenic">Why Scenic <ArrowRight size={15} /></a>
+                        <div className="scng-intro-right-wrapper">
+                            <div className="scng-intro-image scng-placeholder">
+                                <div className="scng-why-badge"><Ship size={16} /> Arctic Expedition</div>
+                            </div>
+                            <div className="scng-intro-feature-box">
+                                <div className="scng-feature-item"><CheckCircle size={16} /><span>Polar Class 6 ice-strengthened hull</span></div>
+                                <div className="scng-feature-item"><CheckCircle size={16} /><span>Expert Discovery Team on board</span></div>
+                                <div className="scng-feature-item"><CheckCircle size={16} /><span>Zodiac landings &amp; Arctic exploration</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -318,11 +324,16 @@ function ScenicGreenlandCruises() {
                                 ))}
                             </div>
                         </div>
-                        <div className="scng-inclusive-panel">
-                            <div><strong>Every suite</strong><span>Personalized butler service</span></div>
-                            <div><strong>Every day</strong><span>Discovery Team guidance</span></div>
-                            <div><strong>Every meal</strong><span>Gourmet dining at sea</span></div>
-                            <div><strong>Every landing</strong><span>Zodiac exploration</span></div>
+                        <div className="scng-inclusive-right-wrapper">
+                            <div className="scng-inclusive-image scng-placeholder">
+                                <div className="scng-why-badge"><Ship size={16} /> All-Inclusive Luxury</div>
+                            </div>
+                            <div className="scng-inclusive-panel">
+                                <div><strong>Every suite</strong><span>Personalized butler service</span></div>
+                                <div><strong>Every day</strong><span>Discovery Team guidance</span></div>
+                                <div><strong>Every meal</strong><span>Gourmet dining at sea</span></div>
+                                <div><strong>Every landing</strong><span>Zodiac exploration</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,7 +384,6 @@ function ScenicGreenlandCruises() {
             <section className="scng-section scng-who-section">
                 <div className="scng-container">
                     <div className="scng-who-grid">
-                        <div className="scng-who-image scng-placeholder"></div>
                         <div>
                             <span className="scng-eyebrow">IDEAL FOR</span>
                             <h2 className="medi-section-heading">Who Should Choose a Scenic Greenland Cruise?</h2>
@@ -384,6 +394,9 @@ function ScenicGreenlandCruises() {
                                     <div key={i} className="scng-who-item"><CheckCircle size={18} /><span>{item}</span></div>
                                 ))}
                             </div>
+                        </div>
+                        <div className="scng-who-image scng-placeholder">
+                            <div className="scng-why-badge"><Compass size={16} /> Arctic Explorer</div>
                         </div>
                     </div>
                 </div>
@@ -423,27 +436,31 @@ function ScenicGreenlandCruises() {
                             ))}
                         </div>
                         <div style={{ marginTop: '24px' }}>
-                            <Link to="/contact" className="medi-primary-cta-button"><Phone size={17} />Speak with a Cruise Specialist</Link>
+                            <Link to="/contact" className="scng-editorial-btn">
+                                <Phone size={17} />
+                                <span>Speak with a Cruise Specialist</span>
+                                <ArrowRight size={16} className="scng-btn-arrow" />
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── FAQ ── */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
+            <section className="scng-faq-section">
+                <div className="scng-faq-container">
                     <div style={{ textAlign: 'center' }}>
                         <h2 className="medi-section-heading">Frequently Asked Questions</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
-                    <div className="medi-faq-list-wrapper">
+                    <div className="scng-faq-list">
                         {faqData.map(({ q, a }, i) => (
-                            <div key={i} className="medi-faq-individual-item" onClick={() => setActiveFaq(activeFaq === i ? null : i)}>
-                                <div className="medi-faq-question-row">
+                            <div key={i} className="scng-faq-item" onClick={() => setActiveFaq(activeFaq === i ? null : i)}>
+                                <div className="scng-faq-question">
                                     <span>{q}</span>
-                                    <span className="medi-faq-toggle-icon">{activeFaq === i ? '−' : '+'}</span>
+                                    <span className="scng-faq-toggle">{activeFaq === i ? '−' : '+'}</span>
                                 </div>
-                                {activeFaq === i && <p className="medi-faq-answer-text">{a}</p>}
+                                {activeFaq === i && <p className="scng-faq-answer">{a}</p>}
                             </div>
                         ))}
                     </div>
@@ -451,38 +468,56 @@ function ScenicGreenlandCruises() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <span className="scng-eyebrow scng-eyebrow-light" style={{ textAlign: 'center', display: 'block' }}>YOUR ARCTIC STORY STARTS HERE</span>
-                        <h2 className="medi-cta-heading-white">Ready to Explore Greenland with Scenic?</h2>
-                        <div className="medi-cta-separator-white"></div>
-                        <p className="medi-cta-paragraph-white">
-                            A well-planned Scenic Greenland expedition combines six-star luxury with authentic Arctic exploration. Let our specialists help you find the perfect itinerary.
-                        </p>
-                        <div className="medi-cta-considerations-box">
-                            <span className="medi-cta-considerations-title">Whether you are considering:</span>
-                            <ul className="medi-cta-considerations-list">
-                                {['Scenic Greenland expeditions', 'Iceland & Greenland combined voyages', 'Scenic Eclipse Discovery Yacht', 'Antarctica & Arctic expedition cruises', 'Custom luxury cruise packages'].map((item, i) => (
-                                    <li key={i} className="medi-cta-considerations-item">
-                                        <CheckCircle size={16} className="medi-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <p className="medi-cta-paragraph-white" style={{ fontWeight: 500, color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                            Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
-                        </p>
-                        <div className="medi-cta-button-group">
-                            <Link to="/contact" className="medi-primary-cta-button">
-                                <Phone size={18} />Schedule a Consultation
-                            </Link>
-                            <a href="#destinations" className="medi-secondary-outline-button">
-                                <ArrowRight size={18} />Explore Destinations
-                            </a>
-                        </div>
+            <section className="scng-cta-section">
+                {/* Decorative background elements */}
+                <div className="scng-cta-aurora-glow"></div>
+                <div className="scng-cta-ice-crystal scng-cta-crystal-1"></div>
+                <div className="scng-cta-ice-crystal scng-cta-crystal-2"></div>
+                <div className="scng-cta-ice-crystal scng-cta-crystal-3"></div>
+                <div className="scng-cta-grid-lines"></div>
+
+                <div className="scng-cta-content">
+                    {/* Floating compass decoration */}
+                    <div className="scng-cta-compass-ring">
+                        <Compass size={28} />
+                    </div>
+
+                    <span className="scng-cta-eyebrow">YOUR ARCTIC STORY STARTS HERE</span>
+                    <h2 className="scng-cta-title">Ready to Explore Greenland<br className="scng-cta-br" />with Scenic?</h2>
+                    <div className="scng-cta-bar"></div>
+                    <p className="scng-cta-subtitle">
+                        A well-planned Scenic Greenland expedition combines six-star luxury with authentic Arctic exploration. Let our specialists help you find the perfect itinerary.
+                    </p>
+
+                    {/* Glassmorphic considerations grid */}
+                    <div className="scng-cta-cards-grid">
+                        {[
+                            { icon: Ship, text: 'Scenic Greenland expeditions' },
+                            { icon: Globe2, text: 'Iceland & Greenland combined voyages' },
+                            { icon: Crown, text: 'Scenic Eclipse Discovery Yacht' },
+                            { icon: Navigation, text: 'Antarctica & Arctic expedition cruises' },
+                            { icon: Gem, text: 'Custom luxury cruise packages' }
+                        ].map(({ icon: Icon, text }, i) => (
+                            <div key={i} className="scng-cta-card">
+                                <div className="scng-cta-card-icon"><Icon size={20} /></div>
+                                <span>{text}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    <p className="scng-cta-closing">
+                        Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
+                    </p>
+
+                    <div className="scng-cta-actions">
+                        <Link to="/contact" className="scng-cta-primary-btn">
+                            <Phone size={18} />
+                            <span>Schedule a Consultation</span>
+                            <ArrowRight size={16} className="scng-cta-btn-arrow" />
+                        </Link>
+                        <a href="#destinations" className="scng-cta-ghost-btn">
+                            <Compass size={17} />Explore Destinations
+                        </a>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,1931 @@
+/* =============================================================
+   ScenicHelicopterExperience.css
+   NEW SECTION STYLES ONLY — shared medi-* styles live in
+   AzamaraMediterraneanCruises.css
+   Color palette: strictly uses existing --medi-* variables
+   ============================================================= */
+
+/* ── SHARED UTILITIES ────────────────────────────────────────── */
+
+.hel-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.hel-eyebrow-light {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.hel-white-heading {
+    color: #ffffff !important;
+}
+
+.hel-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* ── FAQ ────────────────────────────────────────────────────────── */
+
+.hel-faq-section {
+    padding: 80px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.hel-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hel-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.hel-faq-item {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px 26px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hel-faq-item:hover {
+    border-color: var(--medi-navy-light);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.06);
+}
+
+.hel-faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.hel-faq-toggle {
+    font-size: 20px;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--medi-bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.hel-faq-answer {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4a5568;
+    padding-right: 20px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 14px;
+}
+
+/* Shared image frame */
+.hel-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(15, 28, 46, 0.15);
+}
+
+.hel-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hel-image-frame:hover .hel-frame-img {
+    transform: scale(1.04);
+}
+
+.hel-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.05) 60%);
+    z-index: 1;
+}
+
+.hel-overlay-soft {
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%) !important;
+}
+
+.hel-image-badge {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── 1. INTRO SECTION ────────────────────────────────────────── */
+
+.hel-intro-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.hel-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hel-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.hel-intro-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+}
+
+.hel-intro-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+    line-height: 1.8;
+}
+
+.hel-intro-statement-box {
+    display: flex;
+    gap: 0;
+    margin-top: 28px;
+    background: var(--medi-bg-soft);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hel-intro-statement-accent {
+    width: 5px;
+    background: var(--medi-navy);
+    flex-shrink: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.hel-intro-statement-text {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hel-intro-statement-primary {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.hel-intro-statement-bold {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.4;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+.hel-intro-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hel-intro-image-col .hel-image-frame {
+    height: 440px;
+    min-height: unset;
+}
+
+/* ── 2. AIRCRAFT SECTION ─────────────────────────────────────── */
+
+.hel-aircraft-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.hel-aircraft-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hel-aircraft-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.hel-aircraft-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hel-aircraft-image-col .hel-image-frame {
+    height: 400px;
+    min-height: unset;
+}
+
+.hel-image-frame-full .hel-frame-img {
+    object-fit: cover;
+}
+
+.hel-aircraft-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.hel-aircraft-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 16px 0;
+    line-height: 1.7;
+}
+
+.hel-aircraft-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.hel-aircraft-features-grid > :last-child {
+    grid-column: span 2;
+}
+
+.hel-aircraft-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.hel-feature-icon {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.hel-aircraft-insight-box {
+    border-left: 4px solid rgba(39, 68, 114, 0.3);
+    padding: 16px 20px;
+    background: var(--medi-bg-white);
+    border-radius: 0 10px 10px 0;
+}
+
+.hel-aircraft-insight-box p {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ── 3. WHAT YOU'LL SEE ──────────────────────────────────────── */
+
+.hel-views-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-views-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(39, 68, 114, 0.5) 0%, transparent 65%);
+    z-index: 0;
+}
+
+.hel-views-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hel-views-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.hel-views-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.hel-views-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hel-views-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.hel-view-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 24px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+    position: relative;
+}
+
+.hel-view-card:hover {
+    background: rgba(39, 68, 114, 0.55);
+    border-color: rgba(39, 68, 114, 0.8);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 48px rgba(15, 28, 46, 0.4);
+}
+
+.hel-view-num {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.05em;
+    transition: opacity 0.35s ease;
+}
+
+.hel-view-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.35s ease;
+}
+
+.hel-view-card:hover .hel-view-icon {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.hel-view-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}
+
+.hel-view-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+    line-height: 1.65;
+}
+
+.hel-views-footer-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px 28px;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hel-views-footer-box p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 8px 0;
+    line-height: 1.65;
+}
+
+.hel-views-footer-box p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ── 4. DESTINATIONS ─────────────────────────────────────────── */
+
+.hel-destinations-section {
+    background: var(--medi-bg-soft);
+    padding: 60px 20px;
+}
+
+.hel-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hel-destinations-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.hel-destinations-intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 0 0 6px 0;
+    line-height: 1.6;
+}
+
+.hel-destinations-sub {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hel-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.hel-destination-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    padding: 0 0 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.hel-destination-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.10);
+}
+
+.hel-destination-card-img-wrap {
+    height: 140px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.hel-destination-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.hel-destination-card:hover .hel-destination-card-img {
+    transform: scale(1.06);
+}
+
+.hel-destination-card-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #274472, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin: -22px auto 0 14px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+.hel-destination-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f1c2e;
+    margin: 10px 14px 12px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.hel-destination-card-body {
+    padding: 0 14px;
+    flex: 1;
+}
+
+.hel-destination-card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hel-destination-card-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.hel-destination-chevron {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hel-destinations-footer {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 18px 28px;
+    text-align: center;
+}
+
+.hel-destinations-footer p {
+    font-size: 16px;
+    font-style: italic;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.65;
+}
+
+/* ── 5. DISCOVERY EXCURSIONS (parallax bg) ───────────────────── */
+
+.hel-discovery-section {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.hel-discovery-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hel-discovery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10, 17, 32, 0.85) 0%, rgba(39, 68, 114, 0.75) 100%);
+}
+
+.hel-discovery-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hel-discovery-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hel-discovery-heading {
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 24px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+
+.hel-discovery-separator {
+    width: 56px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 auto 28px;
+    border-radius: 2px;
+}
+
+.hel-discovery-note {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.hel-discovery-body {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 36px;
+    line-height: 1.75;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hel-discovery-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    text-align: left;
+}
+
+.hel-discovery-point {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.hel-discovery-point:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+.hel-discovery-point-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.hel-discovery-point p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ── 6. SAFETY ───────────────────────────────────────────────── */
+
+.hel-safety-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.hel-safety-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hel-safety-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.hel-safety-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.hel-safety-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0 0 20px 0;
+    line-height: 1.7;
+}
+
+.hel-safety-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hel-safety-benefit {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    transition: all 0.3s ease;
+}
+
+.hel-safety-benefit:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.hel-safety-benefit:hover .hel-safety-benefit-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.hel-safety-benefit-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--medi-bg-white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.hel-safety-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hel-safety-image-col .hel-image-frame {
+    height: 380px;
+    min-height: unset;
+}
+
+.hel-safety-stat-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.hel-safety-conclusion {
+    background: var(--medi-bg-soft);
+    border-left: 4px solid var(--medi-navy);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 20px;
+}
+
+.hel-safety-conclusion p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.65;
+    font-style: italic;
+}
+
+/* ── 7. EXPERT REVIEW ────────────────────────────────────────── */
+
+.hel-review-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-review-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(39, 68, 114, 0.5) 0%, transparent 65%);
+    z-index: 0;
+}
+
+.hel-review-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hel-review-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hel-review-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.hel-review-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hel-review-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hel-review-col {
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.hel-review-col-love {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hel-review-col-consider {
+    background: rgba(39, 68, 114, 0.2);
+    border: 1px solid rgba(39, 68, 114, 0.4);
+}
+
+.hel-review-col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hel-review-col-header-alt {
+    border-bottom-color: rgba(39, 68, 114, 0.5);
+}
+
+.hel-review-col-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.hel-review-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hel-review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.55;
+}
+
+.hel-review-check {
+    color: #3b82f6;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hel-review-item-alt {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hel-review-chevron {
+    color: rgba(255, 255, 255, 0.5);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hel-review-verdict {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.4);
+}
+
+.hel-review-verdict p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* ── 8. COMPARE SECTION ──────────────────────────────────────── */
+
+.hel-compare-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.hel-compare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hel-compare-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hel-compare-intro {
+    font-size: 17px;
+    color: #4a5568;
+    margin: 0 auto;
+    max-width: 760px;
+    line-height: 1.7;
+}
+
+.hel-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.hel-compare-card {
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.07);
+    border-radius: 14px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.hel-compare-card:hover {
+    background: var(--medi-navy);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(39, 68, 114, 0.18);
+}
+
+.hel-compare-card-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--medi-bg-white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.08);
+    transition: all 0.35s ease;
+}
+
+.hel-compare-card:hover .hel-compare-card-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.hel-compare-card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.3;
+    transition: color 0.35s ease;
+}
+
+.hel-compare-card:hover .hel-compare-card-title {
+    color: #ffffff;
+}
+
+.hel-compare-card-desc {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.65;
+    transition: color 0.35s ease;
+}
+
+.hel-compare-card:hover .hel-compare-card-desc {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hel-compare-footer {
+    text-align: center;
+    background: var(--medi-bg-soft);
+    border-radius: 12px;
+    padding: 18px 28px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hel-compare-footer p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ── 9. EDITORIAL / WHY TRIPS & SHIPS ────────────────────────── */
+
+.hel-editorial-section {
+    background: var(--medi-bg-soft);
+    padding: 88px 20px;
+}
+
+.hel-editorial-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hel-editorial-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 56px;
+    background: var(--medi-bg-white);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 20px 60px rgba(15, 28, 46, 0.08);
+    align-items: start;
+}
+
+.hel-editorial-image-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.hel-editorial-image-frame {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(15, 28, 46, 0.14);
+}
+
+.hel-editorial-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hel-editorial-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--medi-navy);
+    border-radius: 0 0 16px 16px;
+    padding: 14px 20px;
+    gap: 12px;
+}
+
+.hel-editorial-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+}
+
+.hel-editorial-stat-number {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.hel-editorial-stat-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.hel-editorial-stat-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hel-editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 30px;
+    padding: 7px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    margin-bottom: 14px;
+}
+
+.hel-editorial-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f1c2e;
+    margin: 0 0 16px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.hel-editorial-bar {
+    width: 44px;
+    height: 3px;
+    background: var(--medi-navy);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.hel-editorial-text {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.hel-editorial-services {
+    margin-bottom: 20px;
+}
+
+.hel-editorial-services-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hel-editorial-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.hel-editorial-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.hel-editorial-expertise {
+    margin-top: 4px;
+}
+
+.hel-editorial-expertise-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #718096;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hel-editorial-expertise-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.hel-editorial-expertise-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--medi-navy);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ── 10. FINAL THOUGHTS ──────────────────────────────────────── */
+
+.hel-final-section {
+    background: #ffffff;
+    padding: 88px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-final-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(39, 68, 114, 0.07) 0%, transparent 70%);
+}
+
+.hel-final-container {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hel-final-eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    color: var(--medi-navy);
+    opacity: 0.55;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+}
+
+.hel-final-eyebrow-text {
+    letter-spacing: 0.28em;
+}
+
+.hel-final-heading {
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--medi-navy);
+    margin: 0 0 20px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+
+.hel-final-separator {
+    width: 56px;
+    height: 3px;
+    background: var(--medi-navy);
+    opacity: 0.3;
+    margin: 0 auto 40px;
+    border-radius: 2px;
+}
+
+.hel-final-card {
+    background: var(--medi-bg-white);
+    border-radius: 20px;
+    padding: 40px 48px;
+    box-shadow: 0 12px 36px rgba(15, 28, 46, 0.07);
+    margin-bottom: 36px;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.hel-final-body {
+    font-size: 18px;
+    color: #4a5568;
+    margin: 0 0 16px;
+    line-height: 1.75;
+}
+
+.hel-final-body:last-child {
+    margin-bottom: 0;
+}
+
+.hel-final-emphasis {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+.hel-final-conclusion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hel-final-conclusion-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(39, 68, 114, 0.18);
+    max-width: 160px;
+}
+
+.hel-final-stmt {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    font-style: italic;
+    font-family: Georgia, serif;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 480px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: TABLET  (max-width: 1024px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+    /* Hero */
+    .medi-hero-main-title { font-size: 42px; }
+    .medi-hero-subtitle-text { font-size: 17px; }
+
+    /* 2-col → 1-col sections */
+    .hel-intro-grid,
+    .hel-aircraft-grid,
+    .hel-safety-grid { grid-template-columns: 1fr; gap: 40px; }
+
+    .hel-intro-image-col { order: -1; }
+
+    .hel-intro-image-col .hel-image-frame,
+    .hel-aircraft-image-col .hel-image-frame,
+    .hel-safety-image-col .hel-image-frame { height: 340px; }
+
+    /* Card grids shrink */
+    .hel-views-cards { grid-template-columns: repeat(3, 1fr); }
+    .hel-destinations-grid { grid-template-columns: repeat(2, 1fr); }
+    .hel-compare-grid { grid-template-columns: repeat(2, 1fr); }
+    .hel-review-two-col { grid-template-columns: 1fr; gap: 16px; }
+
+    /* Discovery */
+    .hel-discovery-points { grid-template-columns: 1fr; }
+    .hel-discovery-heading { font-size: 36px; }
+
+    /* Editorial */
+    .hel-editorial-card { grid-template-columns: 1fr; gap: 36px; padding: 36px; }
+    .hel-editorial-image-side { max-width: 300px; margin: 0 auto; }
+    .hel-editorial-title { font-size: 28px; }
+
+    /* Final */
+    .hel-final-heading { font-size: 36px; }
+    .hel-final-card { padding: 32px 36px; }
+
+    /* FAQ */
+    .hel-faq-section {
+        padding: 64px 20px;
+    }
+
+    .hel-faq-list {
+        gap: 10px;
+        margin-top: 32px;
+    }
+
+    .hel-faq-item {
+        padding: 18px 22px;
+        border-radius: 10px;
+    }
+
+    .hel-faq-question {
+        font-size: 16px;
+    }
+
+    /* CTA */
+    .medi-cta-heading-white { font-size: 38px !important; }
+    .medi-cta-considerations-list { grid-template-columns: 1fr; gap: 12px; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: MOBILE  (max-width: 767px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+
+    /* Section paddings */
+    .hel-intro-section,
+    .hel-aircraft-section,
+    .hel-safety-section,
+    .hel-compare-section,
+    .hel-editorial-section,
+    .hel-final-section { padding: 48px 16px; }
+
+    .hel-views-section,
+    .hel-destinations-section,
+    .hel-review-section { padding: 48px 16px; }
+
+    .hel-discovery-section { padding: 48px 16px; min-height: auto; }
+
+    /* Hero */
+    .medi-hero-main-title { font-size: 30px; }
+    .medi-hero-subtitle-text { font-size: 15px; }
+    .medi-hero-eyebrow-tag { font-size: 10px; padding: 5px 12px; }
+
+    /* Intro */
+    .hel-intro-image-col .hel-image-frame { height: 260px; }
+    .hel-intro-statement-bold { font-size: 16px; }
+
+    /* Aircraft */
+    .hel-aircraft-image-col .hel-image-frame { height: 240px; }
+    .hel-aircraft-features { gap: 8px; }
+    .hel-aircraft-feature { padding: 10px 14px; font-size: 14px; }
+
+    /* Views */
+    .hel-views-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hel-views-cards > *:last-child { grid-column: span 2; }
+    .hel-view-card { padding: 18px 14px; }
+    .hel-views-footer-box { padding: 16px; }
+
+    /* Destinations */
+    .hel-destinations-grid { grid-template-columns: 1fr; gap: 16px; }
+    .hel-destination-card-img-wrap { height: 200px; }
+    .hel-destinations-footer { padding: 14px 18px; }
+
+    /* Discovery */
+    .hel-discovery-heading { font-size: 26px; }
+    .hel-discovery-points { grid-template-columns: 1fr; gap: 10px; }
+    .hel-discovery-point { padding: 14px; }
+    .hel-discovery-point-icon { width: 36px; height: 36px; }
+
+    /* Safety */
+    .hel-safety-image-col .hel-image-frame { height: 260px; }
+    .hel-safety-benefits { gap: 8px; }
+    .hel-safety-benefit { padding: 10px 14px; font-size: 14px; }
+
+    /* Review */
+    .hel-review-two-col { grid-template-columns: 1fr; }
+    .hel-review-col { padding: 20px 16px; }
+
+    /* Compare */
+    .hel-compare-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hel-compare-card { padding: 18px 14px; }
+    .hel-compare-footer { padding: 14px 20px; }
+
+    /* Editorial */
+    .hel-editorial-card { padding: 24px 20px; gap: 24px; text-align: center; }
+    .hel-editorial-image-side { max-width: 280px; margin: 0 auto; }
+    .hel-editorial-image-frame { aspect-ratio: 3 / 4.5; }
+    .hel-editorial-stats { padding: 12px 20px; gap: 16px; }
+    .hel-editorial-stat-number { font-size: 22px; }
+    .hel-editorial-title { font-size: 24px !important; }
+    .hel-editorial-bar { margin: 0 auto 14px; }
+    .hel-editorial-text { font-size: 15px; margin-bottom: 14px; }
+    .hel-editorial-services { margin-bottom: 14px; }
+    .hel-editorial-services-list { gap: 6px; justify-content: center; }
+    .hel-editorial-pill { font-size: 12px; padding: 5px 12px; }
+    .hel-editorial-expertise-strip { gap: 6px; justify-content: center; }
+    .hel-editorial-expertise-pill { font-size: 11px; padding: 5px 12px; }
+    .hel-editorial-badge { margin-bottom: 10px; }
+
+    /* Final */
+    .hel-final-heading { font-size: 28px; }
+    .hel-final-card { padding: 22px 20px; }
+    .hel-final-body { font-size: 16px; }
+    .hel-final-emphasis { font-size: 22px; }
+    .hel-final-stmt { font-size: 18px; }
+
+    /* FAQ */
+    .hel-faq-section {
+        padding: 48px 16px;
+    }
+
+    .hel-faq-list {
+        margin-top: 24px;
+        gap: 10px;
+    }
+
+    .hel-faq-item {
+        padding: 16px 18px;
+        border-radius: 10px;
+    }
+
+    .hel-faq-question {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .hel-faq-toggle {
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+    }
+
+    .hel-faq-answer {
+        font-size: 14px;
+        padding-right: 0;
+    }
+}
+
+/* ── CTA SECTION (Arctic Aurora style like Greenland page) ── */
+
+.hel-cta-section {
+    position: relative;
+    padding: 60px 20px;
+    background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
+    text-align: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Aurora glow */
+.hel-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: hel-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes hel-aurora-pulse {
+    0% {
+        opacity: 0.6;
+        transform: translateX(-50%) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+    }
+}
+
+/* Floating ice crystals */
+.hel-cta-ice-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(148, 210, 255, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.hel-cta-crystal-1 {
+    width: 80px;
+    height: 80px;
+    top: 12%;
+    left: 8%;
+    transform: rotate(45deg);
+    animation: hel-crystal-float 12s ease-in-out infinite;
+}
+
+.hel-cta-crystal-2 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 12%;
+    transform: rotate(25deg);
+    animation: hel-crystal-float 10s ease-in-out 2s infinite;
+}
+
+.hel-cta-crystal-3 {
+    width: 35px;
+    height: 35px;
+    bottom: 18%;
+    left: 15%;
+    transform: rotate(60deg);
+    animation: hel-crystal-float 14s ease-in-out 4s infinite;
+}
+
+@keyframes hel-crystal-float {
+    0%, 100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(45deg) translateY(-18px);
+        opacity: 0.9;
+    }
+}
+
+/* Subtle grid lines backdrop */
+.hel-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+/* Content wrapper */
+.hel-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Compass ring */
+.hel-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 210, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(148, 210, 255, 0.8);
+    margin-bottom: 16px;
+    animation: hel-compass-spin 20s linear infinite;
+    background: rgba(148, 210, 255, 0.04);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+@keyframes hel-compass-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hel-cta-compass-ring svg {
+    animation: hel-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes hel-compass-counter-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+/* Eyebrow */
+.hel-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(148, 210, 255, 0.7);
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Title */
+.hel-cta-title {
+    font-size: 52px;
+    line-height: 1.12;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+}
+
+/* Separator bar */
+.hel-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+/* Subtitle */
+.hel-cta-subtitle {
+    font-size: 18px;
+    line-height: 1.75;
+    color: rgba(203, 213, 225, 0.85);
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
+
+/* 4 Cards grid - 2 columns */
+.hel-cta-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto 24px;
+}
+
+.hel-cta-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(148, 210, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 18px 20px;
+    text-align: left;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.hel-cta-card:hover {
+    background: rgba(148, 210, 255, 0.08);
+    border-color: rgba(148, 210, 255, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.08);
+}
+
+.hel-cta-card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.12), rgba(99, 102, 241, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: rgba(148, 210, 255, 0.9);
+    border: 1px solid rgba(148, 210, 255, 0.12);
+}
+
+.hel-cta-card span {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+}
+
+/* Closing text */
+.hel-cta-closing {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto 24px;
+    line-height: 1.7;
+}
+
+/* Button group */
+.hel-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Primary CTA button */
+.hel-cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 36px;
+    background: linear-gradient(135deg, #274472, #1e3a5f);
+    color: #ffffff;
+    border: 1px solid rgba(148, 210, 255, 0.15);
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35), 0 0 0 0 rgba(148, 210, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-cta-primary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.hel-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
+    border-color: rgba(148, 210, 255, 0.3);
+}
+
+.hel-cta-primary-btn:hover::before {
+    opacity: 1;
+}
+
+.hel-cta-btn-arrow {
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.hel-cta-primary-btn:hover .hel-cta-btn-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+    .hel-cta-title { font-size: 38px; }
+}
+
+@media (max-width: 767px) {
+    .hel-cta-section { padding: 60px 16px; }
+    .hel-cta-title { font-size: 28px; }
+    .hel-cta-subtitle { font-size: 16px; margin-bottom: 32px; }
+    .hel-cta-cards-grid { grid-template-columns: 1fr; gap: 12px; }
+    .hel-cta-card { padding: 14px 16px; }
+    .hel-cta-card-icon { width: 36px; height: 36px; }
+    .hel-cta-actions { flex-direction: column; gap: 12px; }
+    .hel-cta-primary-btn { width: 100%; justify-content: center; }
+    .hel-cta-crystal-1,
+    .hel-cta-crystal-2,
+    .hel-cta-crystal-3 { display: none; }
+    .hel-cta-compass-ring { width: 52px; height: 52px; margin-bottom: 22px; }
+    .hel-cta-closing { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+    .hel-cta-title { font-size: 22px !important; }
+    .hel-cta-section { padding: 48px 12px; }
+}
+
+/* ── FAQ RESPONSIVE SMALL MOBILE ────────────────────────────── */
+
+@media (max-width: 360px) {
+    .hel-faq-section {
+        padding: 36px 12px;
+    }
+
+    .hel-faq-list {
+        gap: 8px;
+    }
+
+    .hel-faq-item {
+        padding: 14px 14px;
+        border-radius: 8px;
+    }
+
+    .hel-faq-question {
+        font-size: 14px;
+    }
+
+    .hel-faq-toggle {
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+    }
+
+    .hel-faq-answer {
+        font-size: 13px;
+    }
+}

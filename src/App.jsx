@@ -132,6 +132,8 @@ import Scenicicelandcruises from "./pages/Scenicicelandcruises/Scenicicelandcrui
 import Scenicfoodreview from "./pages/Scenicfoodreview/Scenicfoodreview";
 import Sceniccabinsguide from "./pages/Sceniccabinsguide/Sceniccabinsguide";
 // import Bestscenicsuites from "./pages/Bestscenicsuites/Bestscenicsuites";
+import ScenicHelicopterExperience from "./pages/ScenicHelicopterExperience/ScenicHelicopterExperience";
+import ScenicSubmarineExperience from "./pages/ScenicSubmarineExperience/ScenicSubmarineExperience";
 
 function App() {
   return (
@@ -712,21 +714,21 @@ function App() {
           <Route
             path="/scenic-iceland-cruises"
             element={<Scenicicelandcruises />}
-          /> 
-
-          <Route
-          path="/scenic-greenland-cruises"
-          element={<ScenicGreenlandCruises />}
           />
 
           <Route
-          path="/scenic-food-review"
-          element={<Scenicfoodreview />}
+            path="/scenic-greenland-cruises"
+            element={<ScenicGreenlandCruises />}
           />
 
           <Route
-          path="/scenic-cabins-guide"
-          element={<Sceniccabinsguide />}
+            path="/scenic-food-review"
+            element={<Scenicfoodreview />}
+          />
+
+          <Route
+            path="/scenic-cabins-guide"
+            element={<Sceniccabinsguide />}
           />
 
           {/* <Route
@@ -734,7 +736,15 @@ function App() {
           element={<Bestscenicsuites />}
           /> */}
 
+          <Route
+            path="/scenic-helicopter-experience"
+            element={<ScenicHelicopterExperience />}
+          />
 
+          <Route
+            path="/scenic-submarine-experience"
+            element={<ScenicSubmarineExperience />}
+          />
 
         </Routes>
       </BrowserRouter>

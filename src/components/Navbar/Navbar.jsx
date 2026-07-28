@@ -884,6 +884,13 @@ const Navbar = () => {
                 Scenic Mediterranean Cruises</NavLink>
 
               <NavLink
+                to="/is-scenic-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Scenic Worth It</NavLink>
+
+              <NavLink
                 to="/scenic-iceland-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -891,19 +898,13 @@ const Navbar = () => {
                 Scenic Iceland Cruises</NavLink>
 
               <NavLink
-                to="/is-scenic-worth-it"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Is Scenic Worth It</NavLink>
-              {/* <NavLink
                 to="/scenic-greenland-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Greenland Cruises</NavLink> */}
+                Scenic Greenland Cruises</NavLink>
 
-                <NavLink
+              <NavLink
                 to="/scenic-food-review"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -923,6 +924,20 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best Scenic Suites</NavLink>                     */}
+
+              {/* <NavLink
+                to="/scenic-helicopter-experience"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Helicopter Experience</NavLink>
+
+              <NavLink
+                to="/scenic-submarine-experience"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Submarine Experience</NavLink> */}
             </div>
           </div>
         </div>
@@ -1791,46 +1806,61 @@ const Navbar = () => {
             >
               Scenic Mediterranean Cruises</NavLink>
 
-            {/* <NavLink
-              to="/scenic-iceland-cruises"
-              className="nav-dropdown-single"
-              onClick={toggleMenu}
-            >
-              Scenic Iceland Cruises</NavLink> */}
-
             <NavLink
               to="/is-scenic-worth-it"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Is Scenic Worth It</NavLink>
-            {/* <NavLink
+
+            <NavLink
+              to="/scenic-iceland-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Iceland Cruises</NavLink>
+
+            <NavLink
               to="/scenic-greenland-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
-              Scenic Greenland Cruises</NavLink> */}
+              Scenic Greenland Cruises</NavLink>
 
-               <NavLink
-                to="/scenic-food-review"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Scenic Food Review</NavLink>  
+            <NavLink
+              to="/scenic-food-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Food Review</NavLink>
 
-                <NavLink
-                to="/scenic-cabins-guide"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Scenic Cabins Guide</NavLink> 
+            <NavLink
+              to="/scenic-cabins-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Cabins Guide</NavLink>
 
-                {/* <NavLink
+            {/* <NavLink
                 to="/best-scenic-suites"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Best Scenic Suites</NavLink>   */}
+
+            {/* <NavLink
+              to="/scenic-helicopter-experience"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Helicopter Experience</NavLink>
+
+            <NavLink
+              to="/scenic-submarine-experience"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Submarine Experience</NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>
