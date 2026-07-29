@@ -203,14 +203,6 @@ function ScenicHelicopterExperience() {
                             <p className="hel-intro-lead">One of the most extraordinary features that sets Scenic Eclipse apart from other luxury expedition ships is the opportunity to explore the world from above.</p>
                             <p className="hel-intro-body">The Scenic Helicopter Experience gives guests an unforgettable perspective of glaciers, fjords, remote islands, waterfalls, deserts, and pristine coastlines that simply cannot be appreciated from sea level.</p>
                             <p className="hel-intro-body">Available on select itineraries and subject to weather and operational conditions, Scenic&apos;s twin-engine helicopters offer breathtaking flightseeing adventures led by experienced pilots.</p>
-
-                            <div className="hel-intro-statement-box">
-                                <div className="hel-intro-statement-accent"></div>
-                                <div className="hel-intro-statement-text">
-                                    <p className="hel-intro-statement-primary">For travelers seeking the ultimate luxury expedition experience,</p>
-                                    <p className="hel-intro-statement-bold">&ldquo;Scenic&apos;s helicopter excursions represent one of the most unique adventures available at sea.&rdquo;</p>
-                                </div>
-                            </div>
                         </div>
 
                         <div className="hel-intro-image-col">
@@ -220,6 +212,13 @@ function ScenicHelicopterExperience() {
                                 <div className="hel-image-badge">
                                     <Navigation size={13} />
                                     <span>Aerial Expedition Experiences</span>
+                                </div>
+                            </div>
+                            <div className="hel-intro-statement-box">
+                                <div className="hel-intro-statement-accent"></div>
+                                <div className="hel-intro-statement-text">
+                                    <p className="hel-intro-statement-primary">For travelers seeking the ultimate luxury expedition experience,</p>
+                                    <p className="hel-intro-statement-bold">&ldquo;Scenic&apos;s helicopter excursions represent one of the most unique adventures available at sea.&rdquo;</p>
                                 </div>
                             </div>
                         </div>
@@ -673,7 +672,7 @@ function ScenicHelicopterExperience() {
                     </div>
 
                     <span className="hel-cta-eyebrow">YOUR EXPEDITION STORY STARTS HERE</span>
-                    <h2 className="hel-cta-title">Ready to Plan Your Scenic Helicopter Experience?</h2>
+                    <h2 className="hel-cta-title">Ready to Plan Your <br /> Scenic Helicopter Experience?</h2>
                     <div className="hel-cta-bar"></div>
                     <p className="hel-cta-subtitle">
                         A well-planned Scenic Eclipse voyage &mdash; with helicopter excursions reserved in advance &mdash; can deliver experiences that redefine what luxury travel means.

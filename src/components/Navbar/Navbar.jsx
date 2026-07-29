@@ -918,14 +918,14 @@ const Navbar = () => {
               >
                 Scenic Cabins Guide</NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/best-scenic-suites"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Best Scenic Suites</NavLink>                     */}
+                Best Scenic Suites</NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-helicopter-experience"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -937,7 +937,21 @@ const Navbar = () => {
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Submarine Experience</NavLink> */}
+                Scenic Submarine Experience</NavLink>
+
+              <NavLink
+                to="/best-expedition-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Expedition Cruises</NavLink>
+
+              <NavLink
+                to="/best-luxury-expedition-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Luxury Expedition Cruises</NavLink>
             </div>
           </div>
         </div>
@@ -1841,14 +1855,14 @@ const Navbar = () => {
             >
               Scenic Cabins Guide</NavLink>
 
-            {/* <NavLink
-                to="/best-scenic-suites"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Best Scenic Suites</NavLink>   */}
+            <NavLink
+              to="/best-scenic-suites"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Scenic Suites</NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-helicopter-experience"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -1860,7 +1874,21 @@ const Navbar = () => {
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
-              Scenic Submarine Experience</NavLink> */}
+              Scenic Submarine Experience</NavLink>
+
+            <NavLink
+              to="/best-expedition-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Expedition Cruises</NavLink>
+
+            <NavLink
+              to="/best-luxury-expedition-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Luxury Expedition Cruises</NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

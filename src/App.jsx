@@ -131,9 +131,11 @@ import Scenicmediterraneancruises from "./pages/Scenicmediterraneancruises/Sceni
 import Scenicicelandcruises from "./pages/Scenicicelandcruises/Scenicicelandcruises";
 import Scenicfoodreview from "./pages/Scenicfoodreview/Scenicfoodreview";
 import Sceniccabinsguide from "./pages/Sceniccabinsguide/Sceniccabinsguide";
-// import Bestscenicsuites from "./pages/Bestscenicsuites/Bestscenicsuites";
+import Bestscenicsuites from "./pages/Bestscenicsuites/Bestscenicsuites";
 import ScenicHelicopterExperience from "./pages/ScenicHelicopterExperience/ScenicHelicopterExperience";
 import ScenicSubmarineExperience from "./pages/ScenicSubmarineExperience/ScenicSubmarineExperience";
+import BestExpeditionCruises from "./pages/BestExpeditionCruises/BestExpeditionCruises";
+import BestLuxuryExpeditionCruises from "./pages/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
 
 function App() {
   return (
@@ -731,10 +733,10 @@ function App() {
             element={<Sceniccabinsguide />}
           />
 
-          {/* <Route
-          path="/best-scenic-suites"
-          element={<Bestscenicsuites />}
-          /> */}
+          <Route
+            path="/best-scenic-suites"
+            element={<Bestscenicsuites />}
+          />
 
           <Route
             path="/scenic-helicopter-experience"
@@ -746,6 +748,15 @@ function App() {
             element={<ScenicSubmarineExperience />}
           />
 
+          <Route
+            path="/best-expedition-cruises"
+            element={<BestExpeditionCruises />}
+          />
+
+          <Route
+            path="/best-luxury-expedition-cruises"
+            element={<BestLuxuryExpeditionCruises />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
