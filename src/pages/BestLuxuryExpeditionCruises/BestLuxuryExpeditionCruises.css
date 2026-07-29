@@ -1,0 +1,1080 @@
+/* =============================================================
+   BestLuxuryExpeditionCruises.css
+   Luxury Expedition Cruises — Complete styling
+   Responsive design with mobile-first approach
+   Color palette: Navy (#274472), Dark (#0f1c2e), White (#ffffff)
+   ============================================================= */
+
+/* ── ROOT & UTILITY VARIABLES ─────────────────────────────── */
+:root {
+    --exp-navy: #274472;
+    --exp-dark: #0f1c2e;
+    --exp-light: #f1f5f9;
+    --exp-blue: #3b82f6;
+    --exp-white: #ffffff;
+    --exp-text-dark: #4a5568;
+    --exp-text-light: #718096;
+    --exp-border: rgba(39, 68, 114, 0.08);
+}
+
+/* ── EYEBROW & TEXT UTILITIES ────────────────────────────── */
+.exp-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--exp-navy);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.exp-eyebrow-light {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.exp-section-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.exp-section-separator {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--exp-navy) 0%, var(--exp-blue) 100%);
+    border-radius: 2px;
+    margin-bottom: 40px;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   1. HERO SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-hero-section {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.exp-hero-carousel {
+    position: absolute;
+    inset: 0;
+}
+
+.exp-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+    background-repeat: no-repeat;
+}
+
+.exp-hero-slide.active {
+    opacity: 1;
+}
+
+.exp-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 28, 46, 0.2) 0%,
+        rgba(15, 28, 46, 0.65) 100%
+    );
+    z-index: 1;
+}
+
+.exp-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.exp-hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--exp-white);
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.exp-hero-subtitle {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.exp-hero-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 3;
+}
+
+.exp-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.exp-indicator.active {
+    background: var(--exp-white);
+    width: 32px;
+    border-radius: 6px;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   2. EXPERTISE SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-expertise-section {
+    background: var(--exp-light);
+    padding: 80px 20px;
+}
+
+.exp-expertise-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.exp-expertise-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.exp-expertise-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 12px 0 4px 0;
+    line-height: 1.2;
+}
+
+.exp-expertise-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--exp-blue);
+    margin: 0 0 20px 0;
+}
+
+.exp-expertise-bio {
+    font-size: 16px;
+    color: var(--exp-text-dark);
+    line-height: 1.8;
+    margin: 0 0 28px 0;
+}
+
+.exp-expertise-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exp-credential-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--exp-text-dark);
+    font-weight: 500;
+}
+
+.exp-credential-item svg {
+    color: var(--exp-blue);
+    flex-shrink: 0;
+}
+
+.exp-expertise-image {
+    position: relative;
+    height: 480px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.exp-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.exp-image-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--exp-navy);
+    color: var(--exp-white);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.25);
+}
+
+/* ────────────────────────────────────────────────────────── 
+   3. WHAT IS LUXURY EXPEDITION CRUISE
+   ─────────────────────────────────────────────────────────── */
+
+.exp-what-section {
+    background: var(--exp-white);
+    padding: 88px 20px;
+}
+
+.exp-what-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-what-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.exp-what-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background: var(--exp-light);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-what-item:hover {
+    background: var(--exp-white);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
+    transform: translateY(-5px);
+}
+
+.exp-what-icon-box {
+    width: 52px;
+    height: 52px;
+    background: var(--exp-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--exp-white);
+}
+
+.exp-what-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.exp-what-item p {
+    font-size: 15px;
+    color: var(--exp-text-dark);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   4. CRUISE LINES SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-cruiselines-section {
+    background: var(--exp-light);
+    padding: 88px 20px;
+}
+
+.exp-cruiselines-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-cruiselines-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.exp-cruiseline-card {
+    background: var(--exp-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.08);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.exp-cruiseline-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.15);
+}
+
+.exp-cruiseline-image-wrapper {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.exp-cruiseline-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-cruiseline-card:hover .exp-cruiseline-img {
+    transform: scale(1.08);
+}
+
+.exp-cruiseline-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.4) 0%, transparent 70%);
+}
+
+.exp-cruiseline-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exp-cruiseline-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.exp-cruiseline-icon {
+    color: var(--exp-blue);
+    flex-shrink: 0;
+}
+
+.exp-cruiseline-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.exp-cruiseline-desc {
+    font-size: 14px;
+    color: var(--exp-text-light);
+    margin: 0;
+    font-weight: 500;
+}
+
+.exp-cruiseline-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.exp-cruiseline-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--exp-text-dark);
+}
+
+.exp-feature-icon {
+    color: var(--exp-blue);
+    flex-shrink: 0;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   5. DESTINATIONS SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-destinations-section {
+    background: var(--exp-white);
+    padding: 88px 20px;
+}
+
+.exp-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.exp-destination-card {
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--exp-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.35s ease;
+    cursor: default;
+}
+
+.exp-destination-card:hover {
+    box-shadow: 0 16px 32px rgba(39, 68, 114, 0.12);
+    transform: translateY(-6px);
+}
+
+.exp-destination-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.exp-destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.exp-destination-card:hover .exp-destination-image img {
+    transform: scale(1.06);
+}
+
+.exp-destination-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%);
+}
+
+.exp-destination-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: var(--exp-navy);
+    color: var(--exp-white);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.exp-destination-content {
+    padding: 20px;
+}
+
+.exp-destination-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0 0 8px 0;
+}
+
+.exp-destination-content p {
+    font-size: 13px;
+    color: var(--exp-text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   6. WILDLIFE SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-wildlife-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+    gap: 0;
+}
+
+.exp-wildlife-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-wildlife-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.exp-wildlife-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(39, 68, 114, 0.1) 0%,
+        rgba(15, 28, 46, 0.3) 100%
+    );
+}
+
+.exp-wildlife-content {
+    background: var(--exp-navy);
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.exp-wildlife-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--exp-white);
+    margin: 12px 0 20px 0;
+    line-height: 1.2;
+}
+
+.exp-wildlife-separator {
+    width: 50px;
+    height: 3px;
+    background: var(--exp-blue);
+    border-radius: 2px;
+    margin-bottom: 28px;
+}
+
+.exp-wildlife-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin: 0 0 32px 0;
+}
+
+.exp-wildlife-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.exp-wildlife-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+.exp-wildlife-icon {
+    color: var(--exp-blue);
+    flex-shrink: 0;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   7. ADVENTURE ACTIVITIES SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-activities-section {
+    background: var(--exp-light);
+    padding: 88px 20px;
+}
+
+.exp-activities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 50px;
+}
+
+.exp-activity-card {
+    background: var(--exp-white);
+    padding: 36px 28px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-activity-card:hover {
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
+    transform: translateY(-6px);
+    border-color: var(--exp-blue);
+}
+
+.exp-activity-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--exp-blue) 0%, rgba(59, 130, 246, 0.8) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--exp-white);
+    margin: 0 auto 20px;
+    transition: all 0.35s ease;
+}
+
+.exp-activity-card:hover .exp-activity-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.exp-activity-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0 0 10px 0;
+}
+
+.exp-activity-card p {
+    font-size: 14px;
+    color: var(--exp-text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   8. LUXURY ONBOARD SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-onboard-section {
+    background: var(--exp-white);
+    padding: 88px 20px;
+}
+
+.exp-onboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exp-onboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.exp-onboard-image {
+    height: 480px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.15);
+}
+
+.exp-onboard-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.exp-onboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.exp-onboard-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 12px 0 20px 0;
+    line-height: 1.2;
+}
+
+.exp-onboard-separator {
+    width: 50px;
+    height: 3px;
+    background: var(--exp-blue);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.exp-onboard-text {
+    font-size: 16px;
+    color: var(--exp-text-dark);
+    line-height: 1.8;
+    margin: 0 0 32px 0;
+}
+
+.exp-onboard-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.exp-onboard-benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--exp-navy);
+}
+
+.exp-onboard-benefit svg {
+    color: var(--exp-blue);
+    flex-shrink: 0;
+}
+
+.exp-onboard-features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.exp-feature-group h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--exp-navy);
+    margin: 0 0 14px 0;
+}
+
+.exp-feature-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.exp-feature-group li {
+    font-size: 14px;
+    color: var(--exp-text-dark);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.exp-feature-group li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--exp-blue);
+    font-weight: 700;
+}
+
+/* ────────────────────────────────────────────────────────── 
+   9. FINAL THOUGHTS SECTION
+   ─────────────────────────────────────────────────────────── */
+
+.exp-final-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--exp-dark) 0%, var(--exp-navy) 100%);
+    padding: 88px 20px;
+    overflow: hidden;
+}
+
+.exp-final-bg {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.exp-final-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.exp-final-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.exp-final-eyebrow-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--exp-blue);
+}
+
+.exp-final-eyebrow-row svg {
+    color: var(--exp-blue);
+}
+
+.exp-final-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--exp-white);
+    text-align: center;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.exp-final-separator {
+    width: 50px;
+    height: 3px;
+    background: var(--exp-blue);
+    border-radius: 2px;
+    margin: 20px auto 32px;
+}
+
+.exp-final-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 44px;
+    margin-bottom: 36px;
+}
+
+.exp-final-body {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 20px 0;
+    line-height: 1.8;
+}
+
+.exp-final-body:last-child {
+    margin-bottom: 0;
+}
+
+.exp-final-emphasis {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--exp-blue);
+    font-style: italic;
+}
+
+.exp-final-conclusion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.exp-final-conclusion-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(59, 130, 246, 0.3);
+}
+
+.exp-final-stmt {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--exp-blue);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ════════════════════════════════════════════════════════════ */
+
+/* TABLET (768px - 1024px) */
+@media (max-width: 1024px) {
+    .exp-hero-title { font-size: 44px; }
+    .exp-hero-subtitle { font-size: 20px; }
+    
+    .exp-expertise-grid { gap: 40px; }
+    .exp-expertise-heading { font-size: 36px; }
+    .exp-expertise-image { height: 400px; }
+    
+    .exp-section-heading { font-size: 40px; }
+    .exp-what-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .exp-what-item { padding: 24px; }
+    
+    .exp-cruiselines-grid { grid-template-columns: 1fr; gap: 24px; }
+    .exp-destinations-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    
+    .exp-wildlife-section { grid-template-columns: 1fr; min-height: auto; }
+    .exp-wildlife-content { padding: 50px 40px; }
+    .exp-wildlife-heading { font-size: 36px; }
+    
+    .exp-activities-grid { grid-template-columns: repeat(2, 1fr); }
+    
+    .exp-onboard-grid { gap: 40px; }
+    .exp-onboard-image { height: 400px; }
+    .exp-onboard-heading { font-size: 36px; }
+    
+    .exp-final-heading { font-size: 40px; }
+    .exp-final-card { padding: 32px 36px; }
+}
+
+/* MOBILE LANDSCAPE & SMALL TABLET (768px) */
+@media (max-width: 768px) {
+    .exp-hero-section { height: 500px; }
+    .exp-hero-title { font-size: 36px; }
+    .exp-hero-subtitle { font-size: 18px; }
+    
+    .exp-expertise-section { padding: 60px 16px; }
+    .exp-expertise-grid { grid-template-columns: 1fr; gap: 40px; }
+    .exp-expertise-heading { font-size: 32px; }
+    .exp-expertise-image { height: 320px; }
+    
+    .exp-what-section { padding: 60px 16px; }
+    .exp-section-heading { font-size: 32px; }
+    .exp-what-grid { grid-template-columns: 1fr; gap: 20px; }
+    .exp-what-item { padding: 20px; }
+    
+    .exp-cruiselines-section { padding: 60px 16px; }
+    .exp-destinations-section { padding: 60px 16px; }
+    .exp-destinations-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .exp-destination-image { height: 180px; }
+    
+    .exp-wildlife-section { grid-template-columns: 1fr; }
+    .exp-wildlife-image { height: 300px; }
+    .exp-wildlife-content { padding: 40px 30px; }
+    .exp-wildlife-heading { font-size: 32px; }
+    .exp-wildlife-list { grid-template-columns: 1fr; gap: 12px; }
+    
+    .exp-activities-section { padding: 60px 16px; }
+    .exp-activities-grid { grid-template-columns: 1fr; gap: 20px; }
+    
+    .exp-onboard-section { padding: 60px 16px; }
+    .exp-onboard-grid { grid-template-columns: 1fr; gap: 40px; }
+    .exp-onboard-image { height: 320px; }
+    .exp-onboard-heading { font-size: 32px; }
+    .exp-onboard-benefits { grid-template-columns: 1fr; }
+    .exp-onboard-features-list { grid-template-columns: 1fr; }
+    
+    .exp-final-section { padding: 60px 16px; }
+    .exp-final-heading { font-size: 32px; }
+    .exp-final-card { padding: 24px 28px; }
+    .exp-final-conclusion { flex-direction: column; gap: 16px; }
+    .exp-final-conclusion-line { width: 30px; height: 1px; }
+}
+
+/* MOBILE (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Hero */
+    .exp-hero-section { height: 400px; padding: 0; }
+    .exp-hero-title { font-size: 28px; margin: 0 0 12px 0; }
+    .exp-hero-subtitle { font-size: 15px; }
+    .exp-hero-indicators { bottom: 20px; gap: 8px; }
+    .exp-indicator { width: 10px; height: 10px; }
+    .exp-indicator.active { width: 28px; }
+    
+    /* Expertise */
+    .exp-expertise-section { padding: 48px 16px; }
+    .exp-expertise-heading { font-size: 26px; }
+    .exp-expertise-title { font-size: 16px; }
+    .exp-expertise-bio { font-size: 15px; }
+    .exp-credential-item { font-size: 14px; }
+    .exp-expertise-image { height: 280px; }
+    
+    /* What is */
+    .exp-what-section { padding: 48px 16px; }
+    .exp-section-heading { font-size: 26px; }
+    .exp-section-separator { margin-bottom: 32px; }
+    .exp-what-grid { gap: 16px; }
+    .exp-what-item { padding: 18px; gap: 12px; }
+    .exp-what-item h3 { font-size: 16px; }
+    .exp-what-item p { font-size: 14px; }
+    
+    /* Cruise lines */
+    .exp-cruiselines-section { padding: 48px 16px; }
+    .exp-cruiseline-card { border-radius: 12px; }
+    .exp-cruiseline-image-wrapper { height: 220px; }
+    .exp-cruiseline-content { padding: 20px; }
+    .exp-cruiseline-name { font-size: 18px; }
+    .exp-cruiseline-features li { font-size: 13px; }
+    
+    /* Destinations */
+    .exp-destinations-section { padding: 48px 16px; }
+    .exp-destinations-grid { grid-template-columns: 1fr; gap: 16px; }
+    .exp-destination-card { border-radius: 12px; }
+    .exp-destination-image { height: 200px; }
+    .exp-destination-content h3 { font-size: 16px; }
+    .exp-destination-content p { font-size: 12px; }
+    
+    /* Wildlife */
+    .exp-wildlife-section { padding: 0; }
+    .exp-wildlife-image { height: 240px; }
+    .exp-wildlife-content { padding: 36px 20px; }
+    .exp-wildlife-heading { font-size: 26px; margin: 12px 0 16px 0; }
+    .exp-wildlife-text { font-size: 15px; margin: 0 0 20px 0; }
+    .exp-wildlife-list { gap: 12px; }
+    .exp-wildlife-item { font-size: 14px; }
+    
+    /* Activities */
+    .exp-activities-section { padding: 48px 16px; }
+    .exp-activities-grid { gap: 16px; }
+    .exp-activity-card { padding: 24px 20px; }
+    .exp-activity-card h3 { font-size: 16px; }
+    .exp-activity-card p { font-size: 13px; }
+    
+    /* Onboard */
+    .exp-onboard-section { padding: 48px 16px; }
+    .exp-onboard-image { height: 280px; }
+    .exp-onboard-heading { font-size: 26px; }
+    .exp-onboard-text { font-size: 15px; }
+    .exp-onboard-benefits { gap: 14px; }
+    .exp-onboard-benefit { font-size: 14px; }
+    .exp-feature-group h4 { font-size: 15px; }
+    .exp-feature-group li { font-size: 13px; }
+    
+    /* Final */
+    .exp-final-section { padding: 48px 16px; }
+    .exp-final-heading { font-size: 26px; }
+    .exp-final-card { padding: 20px 22px; }
+    .exp-final-body { font-size: 15px; }
+    .exp-final-emphasis { font-size: 18px; }
+    .exp-final-stmt { font-size: 16px; }
+    
+    /* FAQ & CTA (shared medi-* styles) */
+    .medi-section-heading { font-size: 26px !important; }
+    .medi-faq-individual-item { padding: 12px 16px; }
+    .medi-cta-heading-white { font-size: 26px !important; }
+}
+
+/* EXTRA SMALL (max-width: 360px) */
+@media (max-width: 360px) {
+    .exp-hero-title { font-size: 24px; }
+    .exp-hero-subtitle { font-size: 14px; }
+    
+    .exp-section-heading { font-size: 22px !important; }
+    .exp-expertise-heading { font-size: 22px; }
+    .exp-wildlife-heading { font-size: 22px; }
+    .exp-onboard-heading { font-size: 22px; }
+    .exp-final-heading { font-size: 22px; }
+    
+    .exp-what-grid { gap: 14px; }
+    .exp-what-item { padding: 16px; }
+    
+    .exp-activities-grid { gap: 14px; }
+    
+    .exp-onboard-features-list { grid-template-columns: 1fr; }
+    .exp-onboard-benefits { grid-template-columns: 1fr; }
+}
