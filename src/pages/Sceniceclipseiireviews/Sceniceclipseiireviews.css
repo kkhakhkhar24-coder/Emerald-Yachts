@@ -48,16 +48,20 @@
 }
 
 .fcel-eyebrow-label {
-    display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--fcel-navy);
-    background: var(--fcel-bg-soft);
-    padding: 8px 16px;
-    border-radius: 30px;
-    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.fcel-eyebrow-label.seir-eyebrow-light {
+    font-size: 15px !important;
+    color: var(--fcel-navy) !important;
+    opacity: 1 !important;
+    letter-spacing: 0.15em;
 }
 
 .fcel-lead-paragraph {
@@ -68,13 +72,24 @@
 }
 
 @media (max-width: 1024px) {
-    .fcel-section-heading { font-size: 34px !important; text-align: center; }
-    .fcel-heading-bar { margin-left: auto; margin-right: auto; }
+    .fcel-section-heading {
+        font-size: 34px !important;
+    }
+
+    .fcel-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-section-heading { font-size: 26px !important; }
-    .fcel-lead-paragraph { font-size: 16px; }
+    .fcel-section-heading {
+        font-size: 26px !important;
+    }
+
+    .fcel-lead-paragraph {
+        font-size: 16px;
+    }
 }
 
 /* ============================================================
@@ -215,28 +230,58 @@
 }
 
 @media (max-width: 1024px) {
-    .fcel-hero-title { font-size: 42px; }
-    .fcel-hero-subtitle { font-size: 18px; }
+    .fcel-hero-title {
+        font-size: 42px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .fcel-hero-title { font-size: 32px; }
-    .fcel-hero-content { padding: 60px 18px; }
+    .fcel-hero-title {
+        font-size: 32px;
+    }
+
+    .fcel-hero-content {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-hero-title { font-size: 26px; }
-    .fcel-hero-subtitle { font-size: 15px; margin-bottom: 28px; }
-    .fcel-hero-tag { font-size: 12px; }
-    .fcel-btn-primary, .fcel-btn-outline { padding: 12px 22px; font-size: 14px; width: 100%; justify-content: center; }
-    .fcel-hero-btn-row { width: 100%; flex-direction: column; }
+    .fcel-hero-title {
+        font-size: 26px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .fcel-hero-tag {
+        font-size: 12px;
+    }
+
+    .fcel-btn-primary,
+    .fcel-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fcel-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 /* ============================================================
    INTRO SECTION (reused — same role as reference intro)
    ============================================================ */
 .fcel-intro-section {
-    background: #faf8f5;
+    background: #ffffff !important;
     padding: 120px 20px;
     position: relative;
     overflow: hidden;
@@ -350,21 +395,53 @@
 }
 
 @media (max-width: 1024px) {
-    .fcel-intro-grid { grid-template-columns: 1fr; gap: 40px; align-items: center; }
-    .fcel-intro-image-frame { order: -1; }
-    .fcel-intro-highlight-box { grid-column: auto; }
+    .fcel-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .fcel-intro-image-frame {
+        order: -1;
+    }
+
+    .fcel-intro-highlight-box {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 768px) {
-    .fcel-intro-section { padding: 60px 18px; }
-    .fcel-lead-paragraph { text-align: left; }
+    .fcel-intro-section {
+        padding: 60px 18px;
+    }
+
+    .fcel-lead-paragraph {
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-intro-section { padding: 44px 14px; }
-    .fcel-intro-highlight-box { padding: 20px; flex-direction: column; gap: 12px; align-items: flex-start; }
-    .fcel-intro-quote-icon { font-size: 28px; }
-    .fcel-intro-badge-float { bottom: 16px; left: 16px; padding: 8px 14px; font-size: 11px; }
+    .fcel-intro-section {
+        padding: 44px 14px;
+    }
+
+    .fcel-intro-highlight-box {
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .fcel-intro-quote-icon {
+        font-size: 28px;
+    }
+
+    .fcel-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
 }
 
 /* ============================================================
@@ -405,8 +482,13 @@
 }
 
 @media (max-width: 480px) {
-    .seir-placeholder { min-height: 160px; }
-    .seir-intro-frame { min-height: 240px; }
+    .seir-placeholder {
+        min-height: 160px;
+    }
+
+    .seir-intro-frame {
+        min-height: 240px;
+    }
 }
 
 /* ============================================================
@@ -494,23 +576,23 @@
 }
 
 .fcel-occasion-eyebrow {
-    color: var(--fcel-navy);
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--fcel-navy);
+    opacity: 0.7;
+    display: block;
     margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .fcel-occasion-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 500;
     color: var(--fcel-navy);
-    margin: 0 0 14px 0;
-    line-height: 1.25;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
 }
 
 .fcel-occasion-intro {
@@ -555,30 +637,61 @@
 }
 
 @media (max-width: 1024px) {
+
     .fcel-occasion-grid,
     .fcel-occasion-grid.fcel-occasion-reverse {
         grid-template-columns: 1fr;
         gap: 34px;
     }
-    .fcel-occasion-grid.fcel-occasion-reverse .fcel-occasion-media { order: -1; }
-    .fcel-occasion-media { order: -1; }
-    .fcel-occasion-title { text-align: center; }
-    .fcel-occasion-eyebrow { text-align: center; justify-content: center; }
-    .fcel-occasion-intro { text-align: center; }
+
+    .fcel-occasion-grid.fcel-occasion-reverse .fcel-occasion-media {
+        order: -1;
+    }
+
+    .fcel-occasion-media {
+        order: -1;
+    }
+
+    .fcel-occasion-title {
+        font-size: 34px !important;
+    }
 }
 
 @media (max-width: 768px) {
-    .fcel-occasion-section { padding: 56px 18px; }
-    .fcel-occasion-title { font-size: 26px; }
-    .fcel-occasion-media .fcel-media-tall { min-height: 220px; }
-    .fcel-occasion-media .fcel-media-short { min-height: 104px; }
+    .fcel-occasion-section {
+        padding: 56px 18px;
+    }
+
+    .fcel-occasion-title {
+        font-size: 28px !important;
+    }
+
+    .fcel-occasion-media .fcel-media-tall {
+        min-height: 220px;
+    }
+
+    .fcel-occasion-media .fcel-media-short {
+        min-height: 104px;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-occasion-section { padding: 40px 14px; }
-    .fcel-occasion-title { font-size: 22px; }
-    .fcel-occasion-list li { font-size: 14px; }
-    .fcel-occasion-media { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .fcel-occasion-section {
+        padding: 40px 14px;
+    }
+
+    .fcel-occasion-title {
+        font-size: 22px !important;
+    }
+
+    .fcel-occasion-list li {
+        font-size: 14px;
+    }
+
+    .fcel-occasion-media {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
 }
 
 /* ============================================================
@@ -602,6 +715,13 @@
 
 .seir-impression-header .fcel-section-heading {
     color: #ffffff !important;
+}
+
+.seir-impression-header .fcel-eyebrow-label {
+    font-size: 15px !important;
+    color: var(--fcel-navy) !important;
+    opacity: 1 !important;
+    letter-spacing: 0.15em;
 }
 
 .seir-impression-header .fcel-lead-paragraph {
@@ -650,13 +770,24 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-impression-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-impression-section { padding: 70px 18px; }
+    .seir-impression-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seir-impression-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .seir-impression-grid { grid-template-columns: 1fr; gap: 14px; }
-    .seir-impression-card { padding: 20px 18px; }
+    .seir-impression-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .seir-impression-card {
+        padding: 20px 18px;
+    }
 }
 
 /* ============================================================
@@ -687,7 +818,9 @@
 }
 
 @media (max-width: 480px) {
-    .seir-venues-grid { grid-template-columns: 1fr; }
+    .seir-venues-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================
@@ -714,7 +847,9 @@
 }
 
 @media (max-width: 480px) {
-    .fcel-villa-features-grid { grid-template-columns: 1fr; }
+    .fcel-villa-features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================
@@ -783,11 +918,15 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-heli-section { padding: 70px 18px; }
+    .seir-heli-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .seir-heli-grid { grid-template-columns: 1fr; }
+    .seir-heli-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================
@@ -849,16 +988,26 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-wellness-grid { grid-template-columns: repeat(3, 1fr); }
-    .seir-wellness-section { padding: 70px 18px; }
+    .seir-wellness-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .seir-wellness-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .seir-wellness-grid { grid-template-columns: repeat(2, 1fr); }
+    .seir-wellness-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
-    .seir-wellness-grid { grid-template-columns: 1fr; gap: 14px; }
+    .seir-wellness-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
 }
 
 /* ============================================================
@@ -950,15 +1099,34 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-dest-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-dest-section { padding: 70px 18px; }
+    .seir-dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seir-dest-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .seir-dest-grid { grid-template-columns: 1fr; gap: 14px; }
-    .seir-dest-card { min-height: 220px; }
-    .seir-dest-icon-wrap { width: 48px; height: 48px; margin-bottom: 10px; }
-    .seir-dest-card-name { font-size: 16px; }
+    .seir-dest-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .seir-dest-card {
+        min-height: 220px;
+    }
+
+    .seir-dest-icon-wrap {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+
+    .seir-dest-card-name {
+        font-size: 16px;
+    }
 }
 
 /* ============================================================
@@ -1071,8 +1239,13 @@
 }
 
 @media (max-width: 768px) {
-    .seir-proscons-grid { grid-template-columns: 1fr; }
-    .seir-proscons-section { padding: 60px 18px; }
+    .seir-proscons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seir-proscons-section {
+        padding: 60px 18px;
+    }
 }
 
 /* ============================================================
@@ -1093,6 +1266,13 @@
     color: #ffffff !important;
 }
 
+.seir-verdict-container .fcel-eyebrow-label {
+    font-size: 15px !important;
+    color: var(--fcel-navy) !important;
+    opacity: 1 !important;
+    letter-spacing: 0.15em;
+}
+
 .seir-verdict-text {
     font-size: 18px;
     color: #cbd5e1;
@@ -1106,7 +1286,9 @@
 }
 
 @media (max-width: 768px) {
-    .seir-verdict-section { padding: 70px 18px; }
+    .seir-verdict-section {
+        padding: 70px 18px;
+    }
 }
 
 /* ============================================================
@@ -1199,13 +1381,24 @@
 }
 
 @media (max-width: 1024px) {
-    .seir-why-us-grid { grid-template-columns: repeat(2, 1fr); }
-    .seir-why-us-section { padding: 80px 18px; }
+    .seir-why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seir-why-us-section {
+        padding: 80px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .seir-why-us-grid { grid-template-columns: 1fr; gap: 16px; }
-    .seir-why-us-card { padding: 24px 20px; }
+    .seir-why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .seir-why-us-card {
+        padding: 24px 20px;
+    }
 }
 
 /* ============================================================
@@ -1265,14 +1458,27 @@
 }
 
 @media (max-width: 768px) {
-    .fcel-faq-section { padding: 60px 18px; }
-    .fcel-faq-question-row { font-size: 15px; }
-    .fcel-faq-item { padding: 16px 18px; }
+    .fcel-faq-section {
+        padding: 60px 18px;
+    }
+
+    .fcel-faq-question-row {
+        font-size: 15px;
+    }
+
+    .fcel-faq-item {
+        padding: 16px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-faq-question-row { font-size: 14px; }
-    .fcel-faq-answer { font-size: 14px; }
+    .fcel-faq-question-row {
+        font-size: 14px;
+    }
+
+    .fcel-faq-answer {
+        font-size: 14px;
+    }
 }
 
 /* ============================================================
@@ -1298,8 +1504,13 @@
 }
 
 @media (max-width: 480px) {
-    .seir-inline-cta { padding: 40px 16px; }
-    .seir-inline-cta-heading { font-size: 20px; }
+    .seir-inline-cta {
+        padding: 40px 16px;
+    }
+
+    .seir-inline-cta-heading {
+        font-size: 20px;
+    }
 }
 
 /* ============================================================
@@ -1359,17 +1570,34 @@
 }
 
 @media (max-width: 1024px) {
-    .fcel-cta-heading { font-size: 30px; }
+    .fcel-cta-heading {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 768px) {
-    .fcel-cta-section { padding: 70px 18px; }
+    .fcel-cta-section {
+        padding: 70px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .fcel-cta-heading { font-size: 22px; }
-    .fcel-cta-text { font-size: 14px; }
-    .fcel-cta-btn-row { flex-direction: column; width: 100%; }
+    .fcel-cta-heading {
+        font-size: 22px;
+    }
+
+    .fcel-cta-text {
+        font-size: 14px;
+    }
+
+    .fcel-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
     .fcel-cta-btn-row .fcel-btn-primary,
-    .fcel-cta-btn-row .fcel-btn-outline { width: 100%; justify-content: center; }
+    .fcel-cta-btn-row .fcel-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
 }

@@ -213,16 +213,6 @@ function ScenicEclipseIIReviews() {
         ]
     }
 
-    /* Reusable 5-star rating row */
-    const SeirRating = ({ onDark }) => (
-        <div className={`seir-rating-row${onDark ? ' seir-rating-on-dark' : ''}`}>
-            <div className="seir-rating-stars">
-                {[...Array(5)].map((_, i) => <Star key={i} size={20} />)}
-            </div>
-            <span className="seir-rating-label">5/5</span>
-        </div>
-    )
-
     return (
         <>
             <Helmet>
@@ -275,8 +265,8 @@ function ScenicEclipseIIReviews() {
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">SCENIC ECLIPSE II REVIEWS</span>
-                                <h2 className="fcel-section-heading">Is Scenic Eclipse II Worth It?</h2>
+                                <span className="fcel-eyebrow-label">SCENIC ECLIPSE II REVIEW</span>
+                                <h2 className="fcel-section-heading">Is Scenic Eclipse II Worth the Investment?</h2>
                                 <div className="fcel-heading-bar"></div>
                                 <p className="fcel-lead-paragraph">
                                     Launched in 2023, Scenic Eclipse II builds on the success of the original Scenic Eclipse while introducing enhanced wellness facilities, a redesigned Sky Bar, an expanded outdoor relaxation area, and Scenic's next-generation expedition technology. Carrying just 228 guests (200 in Polar regions), the ship combines six-star luxury with true expedition capability.
@@ -310,9 +300,8 @@ function ScenicEclipseIIReviews() {
                     <div className="seir-impression-container">
                         <div className="seir-impression-header">
                             <span className="fcel-eyebrow-label">FIRST IMPRESSIONS</span>
-                            <h2 className="fcel-section-heading">Guests frequently praise:</h2>
+                            <h2 className="fcel-section-heading">What Guests Love About Scenic Eclipse II</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <SeirRating onDark />
                         </div>
                         <div className="seir-impression-grid">
                             {seirFirstImpressions.map((item, idx) => {
@@ -349,11 +338,9 @@ function ScenicEclipseIIReviews() {
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Home size={14} />
-                                    Suites & Accommodations
-                                </span>
-                                <h3 className="fcel-occasion-title">Every guest enjoys an all-veranda suite complete with butler service.</h3>
+                                <span className="fcel-eyebrow-label">SUITES & ACCOMMODATIONS</span>
+                                <h2 className="fcel-section-heading">Every Guest Enjoys an All-Veranda Suite With Butler Service</h2>
+                                <div className="fcel-heading-bar"></div>
                                 <p className="fcel-occasion-intro">Suite features include:</p>
                                 <div className="fcel-villa-features-grid">
                                     {seirSuiteFeatures.map((feature, idx) => (
@@ -366,21 +353,14 @@ function ScenicEclipseIIReviews() {
                                 <p className="fcel-occasion-intro" style={{ marginTop: '22px', marginBottom: '18px' }}>
                                     Suites are among the largest in the expedition cruise industry and feel comparable to luxury hotel accommodations.
                                 </p>
-                                <SeirRating />
+                                <p className="fcel-occasion-intro" style={{ marginTop: '22px', marginBottom: '16px', fontWeight: 600, fontSize: '18px' }}>Ready to Reserve Your All-Veranda Suite?</p>
+                                <div className="fcel-hero-btn-row" style={{ justifyContent: 'flex-start' }}>
+                                    <Link to="/contact" className="fcel-btn-primary">
+                                        <Phone size={18} />
+                                        Schedule a Consultation
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* MID-PAGE CTA #2 */}
-                <section className="seir-inline-cta">
-                    <div className="seir-inline-cta-inner">
-                        <h3 className="seir-inline-cta-heading">Ready to reserve your all-veranda suite?</h3>
-                        <div className="fcel-hero-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary" style={{ color: '#ffffff' }}>
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
                         </div>
                     </div>
                 </section>
@@ -404,11 +384,9 @@ function ScenicEclipseIIReviews() {
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Utensils size={14} />
-                                    Dining Experience
-                                </span>
-                                <h3 className="fcel-occasion-title">Up to ten dining experiences, allowing guests to enjoy a wide variety of international cuisine.</h3>
+                                <span className="fcel-eyebrow-label">DINING EXPERIENCE</span>
+                                <h2 className="fcel-section-heading">Up to Ten Dining Venues Offering Global Cuisine</h2>
+                                <div className="fcel-heading-bar"></div>
                                 <p className="fcel-occasion-intro">Dining venues include:</p>
                                 <div className="seir-venues-wrap">
                                     <div className="seir-venues-grid">
@@ -429,7 +407,6 @@ function ScenicEclipseIIReviews() {
                                         </li>
                                     ))}
                                 </ul>
-                                <SeirRating />
                             </div>
                         </div>
                     </div>
@@ -454,11 +431,9 @@ function ScenicEclipseIIReviews() {
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Users size={14} />
-                                    Service
-                                </span>
-                                <h3 className="fcel-occasion-title">Service aboard Scenic Eclipse II reflects six-star hospitality.</h3>
+                                <span className="fcel-eyebrow-label">SERVICE</span>
+                                <h2 className="fcel-section-heading">Six-Star Hospitality With a One-to-One Crew-to-Guest Ratio</h2>
+                                <div className="fcel-heading-bar"></div>
                                 <p className="fcel-occasion-intro">
                                     With nearly a one-to-one crew-to-guest ratio, staff quickly recognize guest preferences and provide personalized attention throughout the voyage. Highlights include:
                                 </p>
@@ -472,9 +447,6 @@ function ScenicEclipseIIReviews() {
                                             </div>
                                         )
                                     })}
-                                </div>
-                                <div style={{ marginTop: '22px' }}>
-                                    <SeirRating />
                                 </div>
                             </div>
                         </div>
@@ -500,11 +472,9 @@ function ScenicEclipseIIReviews() {
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Compass size={14} />
-                                    Expedition Experience
-                                </span>
-                                <h3 className="fcel-occasion-title">Although exceptionally luxurious, Scenic Eclipse II is first and foremost a genuine expedition yacht.</h3>
+                                <span className="fcel-eyebrow-label">EXPEDITION EXPERIENCE</span>
+                                <h2 className="fcel-section-heading">Genuine Expedition Experiences Led by Expert Discovery Teams</h2>
+                                <div className="fcel-heading-bar"></div>
                                 <p className="fcel-occasion-intro">Depending on the itinerary, guests may enjoy:</p>
                                 <ul className="fcel-occasion-list">
                                     {seirExpeditionActivities.map((item, idx) => (
@@ -517,9 +487,6 @@ function ScenicEclipseIIReviews() {
                                 <div className="fcel-occasion-footnote">
                                     The expert Discovery Team includes marine biologists, naturalists, historians, photographers, and destination specialists who provide lectures and accompany shore excursions.
                                 </div>
-                                <div style={{ marginTop: '22px' }}>
-                                    <SeirRating />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -528,11 +495,8 @@ function ScenicEclipseIIReviews() {
                 {/* HELICOPTERS & SUBMERSIBLE */}
                 <section className="seir-heli-section">
                     <div className="seir-heli-container">
-                        <span className="fcel-eyebrow-label">
-                            <Plane size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                            Helicopters & Submersible
-                        </span>
-                        <h2 className="fcel-section-heading">One feature that sets Scenic Eclipse II apart is its expedition technology.</h2>
+                        <span className="fcel-eyebrow-label">HELICOPTERS & SUBMERSIBLE</span>
+                        <h2 className="fcel-section-heading">Exclusive Expedition Technology: Helicopters & Submersible</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <p className="fcel-lead-paragraph" style={{ textAlign: 'center' }}>Select itineraries offer optional experiences such as:</p>
                         <div className="seir-heli-grid">
@@ -559,11 +523,8 @@ function ScenicEclipseIIReviews() {
                 <section className="seir-wellness-section">
                     <div className="seir-wellness-container">
                         <div className="seir-wellness-header">
-                            <span className="fcel-eyebrow-label">
-                                <HeartPulse size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                                Wellness & Spa
-                            </span>
-                            <h2 className="fcel-section-heading">Scenic significantly enhanced the wellness experience aboard Eclipse II.</h2>
+                            <span className="fcel-eyebrow-label">WELLNESS & SPA</span>
+                            <h2 className="fcel-section-heading">Enhanced Wellness Facilities Designed for Relaxation at Sea</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Facilities include:</p>
                         </div>
@@ -583,9 +544,6 @@ function ScenicEclipseIIReviews() {
                         <p className="fcel-lead-paragraph" style={{ textAlign: 'center', maxWidth: '760px', margin: '40px auto 0' }}>
                             Sea days are especially enjoyable thanks to the ship's expanded wellness facilities.
                         </p>
-                        <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <SeirRating />
-                        </div>
                     </div>
                 </section>
 
@@ -593,11 +551,8 @@ function ScenicEclipseIIReviews() {
                 <section className="seir-dest-section">
                     <div className="seir-dest-container">
                         <div className="seir-dest-header">
-                            <span className="fcel-eyebrow-label">
-                                <Globe size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                                Destinations
-                            </span>
-                            <h2 className="fcel-section-heading">Scenic Eclipse II sails to some of the world's most spectacular destinations.</h2>
+                            <span className="fcel-eyebrow-label">DESTINATIONS</span>
+                            <h2 className="fcel-section-heading">Spectacular Destinations From Antarctica to the South Pacific</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Popular itineraries include:</p>
                         </div>
@@ -617,14 +572,7 @@ function ScenicEclipseIIReviews() {
                                 )
                             })}
                         </div>
-                    </div>
-                </section>
-
-                {/* MID-PAGE CTA #3 */}
-                <section className="seir-inline-cta">
-                    <div className="seir-inline-cta-inner">
-                        <h3 className="seir-inline-cta-heading">Curious which Scenic Eclipse II itinerary suits you best?</h3>
-                        <div className="fcel-hero-btn-row">
+                        <div className="fcel-hero-btn-row" style={{ marginTop: '40px' }}>
                             <button className="fcel-btn-primary" style={{ background: 'var(--fcel-navy)', color: '#ffffff' }}>
                                 <LayoutList size={18} />
                                 Request Itinerary Options
@@ -636,11 +584,8 @@ function ScenicEclipseIIReviews() {
                 {/* WHAT'S INCLUDED */}
                 <section className="seir-included-section">
                     <div className="seir-included-container">
-                        <span className="fcel-eyebrow-label">
-                            <CheckCircle size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                            What's Included?
-                        </span>
-                        <h2 className="fcel-section-heading">One of the industry's most comprehensive all-inclusive experiences.</h2>
+                        <span className="fcel-eyebrow-label">WHAT'S INCLUDED</span>
+                        <h2 className="fcel-section-heading">Comprehensive All-Inclusive Luxury: What's Included</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <p className="fcel-lead-paragraph">Most voyages include:</p>
                         <div className="fcel-villa-features-grid">
@@ -662,7 +607,7 @@ function ScenicEclipseIIReviews() {
                     <div className="seir-proscons-container">
                         <div className="seir-proscons-header">
                             <span className="fcel-eyebrow-label">HONEST ASSESSMENT</span>
-                            <h2 className="fcel-section-heading">Pros & Cons</h2>
+                            <h2 className="fcel-section-heading">Pros & Cons: An Objective Look at Scenic Eclipse II</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
                         <div className="seir-proscons-grid">
@@ -695,8 +640,8 @@ function ScenicEclipseIIReviews() {
                 {/* OUR VERDICT */}
                 <section className="seir-verdict-section">
                     <div className="seir-verdict-container">
-                        <span className="fcel-eyebrow-label" style={{ background: 'rgba(255,255,255,0.1)', color: '#ffffff' }}>OUR VERDICT</span>
-                        <h2 className="fcel-section-heading">Scenic Eclipse II successfully elevates the already exceptional Scenic Eclipse experience.</h2>
+                        <span className="fcel-eyebrow-label seir-eyebrow-light">OUR VERDICT</span>
+                        <h2 className="fcel-section-heading">Our Verdict: Scenic Eclipse II Elevates an Already Exceptional Experience</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <p className="seir-verdict-text">
                             The upgraded wellness spaces, improved outdoor amenities, luxurious accommodations, and world-class expedition program make it one of the finest ultra-luxury expedition ships sailing today.
@@ -704,12 +649,6 @@ function ScenicEclipseIIReviews() {
                         <p className="seir-verdict-text">
                             For travelers seeking bucket-list destinations without sacrificing comfort, Scenic Eclipse II is among the very best choices available.
                         </p>
-                        <div className="seir-rating-row seir-rating-on-dark seir-verdict-rating">
-                            <div className="seir-rating-stars">
-                                {[...Array(5)].map((_, i) => <Star key={i} size={26} />)}
-                            </div>
-                            <span className="seir-rating-label">Overall Rating: 5/5</span>
-                        </div>
                     </div>
                 </section>
 
@@ -718,7 +657,7 @@ function ScenicEclipseIIReviews() {
                     <div className="seir-why-us-container">
                         <div className="seir-why-us-top">
                             <span className="fcel-eyebrow-label">TRUSTED SCENIC SPECIALISTS</span>
-                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                            <h2 className="fcel-section-heading">Why Book Scenic Eclipse II With Trips & Ships Luxury Travel</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Our Scenic specialists help you:</p>
                         </div>
