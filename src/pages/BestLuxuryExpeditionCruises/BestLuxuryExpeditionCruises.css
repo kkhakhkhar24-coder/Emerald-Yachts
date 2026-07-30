@@ -1,1080 +1,1941 @@
-/* =============================================================
-   BestLuxuryExpeditionCruises.css
-   Luxury Expedition Cruises — Complete styling
-   Responsive design with mobile-first approach
-   Color palette: Navy (#274472), Dark (#0f1c2e), White (#ffffff)
-   ============================================================= */
+/* ============================================================
+   BEST LUXURY EXPEDITION CRUISES
+   Shared vars: --medi-navy, --medi-bg-dark, --medi-bg-dark2,
+   --medi-bg-white, --medi-bg-soft (defined in AzamaraMedCruises.css)
+   ============================================================ */
 
-/* ── ROOT & UTILITY VARIABLES ─────────────────────────────── */
-:root {
-    --exp-navy: #274472;
-    --exp-dark: #0f1c2e;
-    --exp-light: #f1f5f9;
-    --exp-blue: #3b82f6;
-    --exp-white: #ffffff;
-    --exp-text-dark: #4a5568;
-    --exp-text-light: #718096;
-    --exp-border: rgba(39, 68, 114, 0.08);
+/* ── RESET ──────────────────────────────────────────────────── */
+
+.luxe-page,
+.luxe-page *,
+.luxe-page *::before,
+.luxe-page *::after {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-/* ── EYEBROW & TEXT UTILITIES ────────────────────────────── */
-.exp-eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--exp-navy);
-    opacity: 0.7;
+.luxe-page {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color: #2d3748;
+    overflow-x: hidden;
+}
+
+.luxe-page img {
     display: block;
+    max-width: 100%;
+}
+
+/* ── HERO OVERRIDES ────────────────────────────────────────── */
+
+.luxe-page .medi-hero-content-wrapper {
+    padding: 100px 24px 80px;
+}
+
+.luxe-page .medi-hero-eyebrow-tag {
+    margin-bottom: 20px;
+}
+
+.luxe-page .medi-hero-main-title {
+    margin: 0 0 28px 0;
+    max-width: 1000px;
+    font-size: 52px;
+}
+
+.luxe-page .medi-hero-subtitle-text {
+    margin-bottom: 24px;
+    max-width: 580px;
+}
+
+/* ── SHARED DECORATIVE ─────────────────────────────────────── */
+
+.luxe-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
     margin-bottom: 14px;
 }
 
-.exp-eyebrow-light {
-    color: rgba(255, 255, 255, 0.6) !important;
-    opacity: 1 !important;
+.luxe-eyebrow-light {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.exp-section-heading {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0 0 8px 0;
-    line-height: 1.2;
+.luxe-white-heading {
+    color: #ffffff !important;
 }
 
-.exp-section-separator {
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--exp-navy) 0%, var(--exp-blue) 100%);
-    border-radius: 2px;
-    margin-bottom: 40px;
+.luxe-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
 }
 
-/* ────────────────────────────────────────────────────────── 
-   1. HERO SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-hero-section {
-    position: relative;
-    height: 600px;
+.luxe-list-row {
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.luxe-list-row svg {
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+/* ── BUTTON ─────────────────────────────────────────────────── */
+
+.luxe-button {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-.exp-hero-carousel {
-    position: absolute;
-    inset: 0;
-}
-
-.exp-hero-slide {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
-    background-repeat: no-repeat;
-}
-
-.exp-hero-slide.active {
-    opacity: 1;
-}
-
-.exp-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(15, 28, 46, 0.2) 0%,
-        rgba(15, 28, 46, 0.65) 100%
-    );
-    z-index: 1;
-}
-
-.exp-hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.exp-hero-title {
-    font-size: 56px;
+    gap: 10px;
+    min-height: 48px;
+    padding: 13px 26px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
     font-weight: 700;
-    color: var(--exp-white);
-    margin: 0 0 16px 0;
-    line-height: 1.2;
-}
-
-.exp-hero-subtitle {
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.95);
-    margin: 0;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.exp-hero-indicators {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 12px;
-    z-index: 3;
-}
-
-.exp-indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--medi-navy);
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.exp-indicator.active {
-    background: var(--exp-white);
-    width: 32px;
-    border-radius: 6px;
+.luxe-button:hover {
+    background: var(--medi-bg-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(15, 28, 46, 0.3);
 }
 
-/* ────────────────────────────────────────────────────────── 
-   2. EXPERTISE SECTION
-   ─────────────────────────────────────────────────────────── */
+/* ── IMAGE FRAME ───────────────────────────────────────────── */
 
-.exp-expertise-section {
-    background: var(--exp-light);
-    padding: 80px 20px;
-}
-
-.exp-expertise-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-expertise-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.exp-expertise-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-.exp-expertise-heading {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 12px 0 4px 0;
-    line-height: 1.2;
-}
-
-.exp-expertise-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--exp-blue);
-    margin: 0 0 20px 0;
-}
-
-.exp-expertise-bio {
-    font-size: 16px;
-    color: var(--exp-text-dark);
-    line-height: 1.8;
-    margin: 0 0 28px 0;
-}
-
-.exp-expertise-credentials {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.exp-credential-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: var(--exp-text-dark);
-    font-weight: 500;
-}
-
-.exp-credential-item svg {
-    color: var(--exp-blue);
-    flex-shrink: 0;
-}
-
-.exp-expertise-image {
+.luxe-image-frame {
     position: relative;
-    height: 480px;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
+    background: var(--medi-navy);
+    box-shadow: 0 24px 64px rgba(15, 28, 46, 0.18);
 }
 
-.exp-profile-img {
+.luxe-frame-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-.exp-image-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--exp-navy);
-    color: var(--exp-white);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 10px 18px;
-    border-radius: 30px;
-    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.25);
-}
-
-/* ────────────────────────────────────────────────────────── 
-   3. WHAT IS LUXURY EXPEDITION CRUISE
-   ─────────────────────────────────────────────────────────── */
-
-.exp-what-section {
-    background: var(--exp-white);
-    padding: 88px 20px;
-}
-
-.exp-what-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-what-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin-top: 50px;
-}
-
-.exp-what-item {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 32px;
-    background: var(--exp-light);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 16px;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.exp-what-item:hover {
-    background: var(--exp-white);
-    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
-    transform: translateY(-5px);
-}
-
-.exp-what-icon-box {
-    width: 52px;
-    height: 52px;
-    background: var(--exp-blue);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--exp-white);
-}
-
-.exp-what-item h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0;
-    line-height: 1.3;
-}
-
-.exp-what-item p {
-    font-size: 15px;
-    color: var(--exp-text-dark);
-    margin: 0;
-    line-height: 1.7;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   4. CRUISE LINES SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-cruiselines-section {
-    background: var(--exp-light);
-    padding: 88px 20px;
-}
-
-.exp-cruiselines-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-cruiselines-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    margin-top: 50px;
-}
-
-.exp-cruiseline-card {
-    background: var(--exp-white);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.08);
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid rgba(39, 68, 114, 0.05);
-}
-
-.exp-cruiseline-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.15);
-}
-
-.exp-cruiseline-image-wrapper {
-    position: relative;
-    height: 280px;
-    overflow: hidden;
-}
-
-.exp-cruiseline-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.exp-cruiseline-card:hover .exp-cruiseline-img {
-    transform: scale(1.08);
-}
-
-.exp-cruiseline-overlay {
+.luxe-frame-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(39, 68, 114, 0.4) 0%, transparent 70%);
-}
-
-.exp-cruiseline-content {
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.exp-cruiseline-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.exp-cruiseline-icon {
-    color: var(--exp-blue);
-    flex-shrink: 0;
-}
-
-.exp-cruiseline-name {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0;
-    line-height: 1.3;
-}
-
-.exp-cruiseline-desc {
-    font-size: 14px;
-    color: var(--exp-text-light);
-    margin: 0;
-    font-weight: 500;
-}
-
-.exp-cruiseline-features {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.exp-cruiseline-features li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    color: var(--exp-text-dark);
-}
-
-.exp-feature-icon {
-    color: var(--exp-blue);
-    flex-shrink: 0;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   5. DESTINATIONS SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-destinations-section {
-    background: var(--exp-white);
-    padding: 88px 20px;
-}
-
-.exp-destinations-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    margin-top: 50px;
-}
-
-.exp-destination-card {
-    border-radius: 14px;
-    overflow: hidden;
-    background: var(--exp-white);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    transition: all 0.35s ease;
-    cursor: default;
-}
-
-.exp-destination-card:hover {
-    box-shadow: 0 16px 32px rgba(39, 68, 114, 0.12);
-    transform: translateY(-6px);
-}
-
-.exp-destination-image {
-    position: relative;
-    height: 220px;
-    overflow: hidden;
-}
-
-.exp-destination-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease;
-}
-
-.exp-destination-card:hover .exp-destination-image img {
-    transform: scale(1.06);
-}
-
-.exp-destination-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%);
-}
-
-.exp-destination-badge {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    background: var(--exp-navy);
-    color: var(--exp-white);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 8px 14px;
-    border-radius: 20px;
-    z-index: 2;
-}
-
-.exp-destination-content {
-    padding: 20px;
-}
-
-.exp-destination-content h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0 0 8px 0;
-}
-
-.exp-destination-content p {
-    font-size: 13px;
-    color: var(--exp-text-light);
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   6. WILDLIFE SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-wildlife-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 500px;
-    gap: 0;
-}
-
-.exp-wildlife-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.exp-wildlife-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.exp-wildlife-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(39, 68, 114, 0.1) 0%,
-        rgba(15, 28, 46, 0.3) 100%
-    );
-}
-
-.exp-wildlife-content {
-    background: var(--exp-navy);
-    padding: 60px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0;
-}
-
-.exp-wildlife-heading {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--exp-white);
-    margin: 12px 0 20px 0;
-    line-height: 1.2;
-}
-
-.exp-wildlife-separator {
-    width: 50px;
-    height: 3px;
-    background: var(--exp-blue);
-    border-radius: 2px;
-    margin-bottom: 28px;
-}
-
-.exp-wildlife-text {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.8;
-    margin: 0 0 32px 0;
-}
-
-.exp-wildlife-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.exp-wildlife-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 500;
-}
-
-.exp-wildlife-icon {
-    color: var(--exp-blue);
-    flex-shrink: 0;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   7. ADVENTURE ACTIVITIES SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-activities-section {
-    background: var(--exp-light);
-    padding: 88px 20px;
-}
-
-.exp-activities-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-activities-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-    margin-top: 50px;
-}
-
-.exp-activity-card {
-    background: var(--exp-white);
-    padding: 36px 28px;
-    border-radius: 14px;
-    text-align: center;
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.exp-activity-card:hover {
-    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.1);
-    transform: translateY(-6px);
-    border-color: var(--exp-blue);
-}
-
-.exp-activity-icon-wrapper {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--exp-blue) 0%, rgba(59, 130, 246, 0.8) 100%);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--exp-white);
-    margin: 0 auto 20px;
-    transition: all 0.35s ease;
-}
-
-.exp-activity-card:hover .exp-activity-icon-wrapper {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.exp-activity-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0 0 10px 0;
-}
-
-.exp-activity-card p {
-    font-size: 14px;
-    color: var(--exp-text-light);
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   8. LUXURY ONBOARD SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-onboard-section {
-    background: var(--exp-white);
-    padding: 88px 20px;
-}
-
-.exp-onboard-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.exp-onboard-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.exp-onboard-image {
-    height: 480px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(39, 68, 114, 0.15);
-}
-
-.exp-onboard-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.exp-onboard-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-.exp-onboard-heading {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 12px 0 20px 0;
-    line-height: 1.2;
-}
-
-.exp-onboard-separator {
-    width: 50px;
-    height: 3px;
-    background: var(--exp-blue);
-    border-radius: 2px;
-    margin-bottom: 24px;
-}
-
-.exp-onboard-text {
-    font-size: 16px;
-    color: var(--exp-text-dark);
-    line-height: 1.8;
-    margin: 0 0 32px 0;
-}
-
-.exp-onboard-benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin-bottom: 36px;
-}
-
-.exp-onboard-benefit {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--exp-navy);
-}
-
-.exp-onboard-benefit svg {
-    color: var(--exp-blue);
-    flex-shrink: 0;
-}
-
-.exp-onboard-features-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-}
-
-.exp-feature-group h4 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--exp-navy);
-    margin: 0 0 14px 0;
-}
-
-.exp-feature-group ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.exp-feature-group li {
-    font-size: 14px;
-    color: var(--exp-text-dark);
-    line-height: 1.6;
-    position: relative;
-    padding-left: 20px;
-}
-
-.exp-feature-group li:before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--exp-blue);
-    font-weight: 700;
-}
-
-/* ────────────────────────────────────────────────────────── 
-   9. FINAL THOUGHTS SECTION
-   ─────────────────────────────────────────────────────────── */
-
-.exp-final-section {
-    position: relative;
-    background: linear-gradient(135deg, var(--exp-dark) 0%, var(--exp-navy) 100%);
-    padding: 88px 20px;
-    overflow: hidden;
-}
-
-.exp-final-bg {
-    position: absolute;
-    inset: 0;
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
-    pointer-events: none;
-}
-
-.exp-final-container {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.45) 0%, rgba(15, 28, 46, 0.05) 60%);
     z-index: 1;
 }
 
-.exp-final-eyebrow-row {
-    display: flex;
+.luxe-image-badge {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 2;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
-}
-
-.exp-final-eyebrow-text {
+    gap: 7px;
+    padding: 8px 13px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(15, 28, 46, 0.88), rgba(39, 68, 114, 0.85));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--exp-blue);
+    letter-spacing: 0.06em;
+    box-shadow: 0 4px 16px rgba(15, 28, 46, 0.35);
 }
 
-.exp-final-eyebrow-row svg {
-    color: var(--exp-blue);
+/* ── 1. INTRO ──────────────────────────────────────────────── */
+
+.luxe-intro-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-white);
 }
 
-.exp-final-heading {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--exp-white);
-    text-align: center;
-    margin: 0 0 20px 0;
-    line-height: 1.2;
+.luxe-intro-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.exp-final-separator {
-    width: 50px;
-    height: 3px;
-    background: var(--exp-blue);
-    border-radius: 2px;
-    margin: 20px auto 32px;
+.luxe-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
 }
 
-.exp-final-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 40px 44px;
-    margin-bottom: 36px;
+.luxe-intro-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+    font-size: 42px !important;
 }
 
-.exp-final-body {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0 0 20px 0;
-    line-height: 1.8;
+.luxe-intro-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
 }
 
-.exp-final-body:last-child {
+.luxe-intro-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-intro-text-col p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.luxe-intro-text-col p:last-child {
     margin-bottom: 0;
 }
 
-.exp-final-emphasis {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--exp-blue);
-    font-style: italic;
+.luxe-intro-image-col .luxe-image-frame {
+    height: 440px;
 }
 
-.exp-final-conclusion {
+/* ── 2. WHAT IS (dark) ─────────────────────────────────────── */
+
+.luxe-different-section {
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    padding: 64px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-different-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-different-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.luxe-different-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-different-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-different-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-different-intro {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.55;
+    max-width: 480px;
+}
+
+.luxe-different-list-col .luxe-list-row {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    font-weight: 600;
+    padding: 11px 0;
+}
+
+.luxe-different-list-col .luxe-list-row svg {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── 3. DESTINATIONS ───────────────────────────────────────── */
+
+.luxe-destinations-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.luxe-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.luxe-destinations-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.luxe-destinations-header .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-destinations-header .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-destinations-header .medi-heading-separator-bar {
+    margin-bottom: 20px;
+}
+
+.luxe-destinations-intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.55;
+}
+
+.luxe-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.luxe-destination-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.10);
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.06);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+
+.luxe-destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 44px rgba(39, 68, 114, 0.15);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+/* ── Image placeholder area (swap with <img> when ready) ── */
+.luxe-dest-img-placeholder {
+    height: 160px;
+    background: linear-gradient(135deg, var(--medi-navy) 0%, #1e3a5f 60%, #274472 100%);
     display: flex;
     align-items: center;
-    gap: 20px;
     justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s ease;
 }
 
-.exp-final-conclusion-line {
-    flex: 1;
-    height: 1px;
-    background: rgba(59, 130, 246, 0.3);
+.luxe-dest-img-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
+    pointer-events: none;
 }
 
-.exp-final-stmt {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--exp-blue);
+.luxe-destination-card:hover .luxe-dest-img-placeholder {
+    background: linear-gradient(135deg, #1a2f4a 0%, var(--medi-navy) 60%, #2d5082 100%);
+}
+
+.luxe-dest-img-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
     text-align: center;
-    white-space: nowrap;
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
 }
 
-/* ════════════════════════════════════════════════════════════
-   RESPONSIVE DESIGN
-   ════════════════════════════════════════════════════════════ */
+/* ── Text body below the image ── */
+.luxe-dest-card-body {
+    padding: 16px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
 
-/* TABLET (768px - 1024px) */
+.luxe-destination-card-num {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--medi-navy);
+    opacity: 0.35;
+    letter-spacing: 0.1em;
+}
+
+.luxe-dest-card-body h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--medi-navy);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.luxe-dest-card-body p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+
+
+/* ── 4. CRUISE LINES (dark) ────────────────────────────────── */
+
+.luxe-lines-section {
+    padding: 60px 20px;
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-lines-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-lines-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.luxe-lines-intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 auto;
+    max-width: 520px;
+    line-height: 1.55;
+}
+
+/* Two-column body */
+.luxe-lines-body {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* LEFT: clickable rows */
+.luxe-lines-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.luxe-line-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr 20px;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 14px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all 0.25s ease;
+}
+
+.luxe-line-row:hover {
+    background: rgba(255, 255, 255, 0.04);
+    padding-left: 20px;
+}
+
+.luxe-line-row.is-active {
+    background: rgba(39, 68, 114, 0.35);
+    border-bottom-color: rgba(39, 68, 114, 0.5);
+    padding-left: 20px;
+}
+
+.luxe-line-row-num {
+    font-size: 11px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.05em;
+    transition: color 0.25s ease;
+}
+
+.luxe-line-row.is-active .luxe-line-row-num {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.luxe-line-row-body h3 {
+    margin: 0 0 4px 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.2;
+    transition: color 0.25s ease;
+}
+
+.luxe-line-row.is-active .luxe-line-row-body h3,
+.luxe-line-row:hover .luxe-line-row-body h3 {
+    color: #ffffff;
+}
+
+.luxe-line-row-body p {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+    transition: color 0.25s ease;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.luxe-line-row.is-active .luxe-line-row-body p {
+    color: rgba(255, 255, 255, 0.75);
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: visible;
+}
+
+.luxe-line-row-arrow {
+    color: rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+}
+
+.luxe-line-row.is-active .luxe-line-row-arrow,
+.luxe-line-row:hover .luxe-line-row-arrow {
+    color: rgba(255, 255, 255, 0.7);
+    transform: translateX(3px);
+}
+
+/* RIGHT: switching image panel */
+.luxe-lines-image-panel {
+    position: sticky;
+    top: 100px;
+}
+
+.luxe-lines-img-wrap {
+    position: relative;
+    border-radius: 18px 18px 0 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--medi-navy);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.3);
+}
+
+.luxe-lines-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+    z-index: 1;
+}
+
+.luxe-lines-img.is-visible {
+    opacity: 1;
+    z-index: 2;
+}
+
+.luxe-lines-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.4) 0%, transparent 60%);
+    z-index: 3;
+}
+
+.luxe-lines-img-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 4;
+    background: rgba(15, 28, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+}
+
+.luxe-lines-info-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: none;
+    border-radius: 0 0 18px 18px;
+    padding: 24px;
+    box-shadow: 0 15px 35px rgba(15, 28, 46, 0.4);
+}
+
+.luxe-lines-info-card h3 {
+    margin: 0 0 8px 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.luxe-lines-info-card p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+/* ── 5. SCENIC ECLIPSE ─────────────────────────────────────── */
+
+.luxe-eclipse-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-white);
+}
+
+.luxe-eclipse-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.luxe-eclipse-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.luxe-eclipse-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-eclipse-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-eclipse-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-eclipse-image-col .luxe-image-frame {
+    height: 460px;
+}
+
+.luxe-eclipse-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    line-height: 1.45;
+    margin-bottom: 10px;
+    max-width: 480px;
+}
+
+.luxe-eclipse-body {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.luxe-eclipse-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+}
+
+.luxe-eclipse-features .luxe-list-row {
+    border-bottom: none;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+/* ── 6. WILDLIFE & ACTIVITIES ──────────────────────────────── */
+
+.luxe-wildlife-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.luxe-wildlife-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.luxe-wildlife-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 0.9fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.luxe-wildlife-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-wildlife-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-wildlife-text-col .medi-heading-separator-bar {
+    margin-bottom: 20px;
+}
+
+.luxe-wildlife-intro {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.55;
+    max-width: 360px;
+}
+
+.luxe-list-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    margin-bottom: 10px;
+}
+
+.luxe-wildlife-list-col .luxe-list-row {
+    font-size: 13px;
+    padding: 9px 0;
+}
+
+.luxe-wildlife-list-col .luxe-list-row svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+/* ── 7. ONBOARD EXPERIENCE (dark) ──────────────────────────── */
+
+.luxe-onboard-section {
+    padding: 64px 20px;
+    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-onboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-onboard-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.luxe-onboard-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-onboard-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-onboard-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-onboard-intro {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.55;
+    max-width: 460px;
+}
+
+.luxe-onboard-list-col .luxe-list-row {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.luxe-onboard-list-col .luxe-list-row svg {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── 8. SEASONS ────────────────────────────────────────────── */
+
+.luxe-seasons-section {
+    padding: 60px 20px;
+    background: var(--medi-navy);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-seasons-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-seasons-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.luxe-seasons-header .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-seasons-header .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-seasons-header .medi-heading-separator-bar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+.luxe-seasons-intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.55;
+}
+
+.luxe-seasons-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.luxe-season-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 22px 14px 20px;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(8px);
+    cursor: default;
+}
+
+.luxe-season-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15, 28, 46, 0.35);
+}
+
+.luxe-season-card-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.35s ease;
+}
+
+.luxe-season-card:hover .luxe-season-card-icon {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.luxe-season-card h3 {
+    margin: 0 0 6px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.luxe-season-card p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── 9. HOW TO CHOOSE ──────────────────────────────────────── */
+
+.luxe-choose-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-white);
+}
+
+.luxe-choose-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.luxe-choose-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.luxe-choose-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-choose-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-choose-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-choose-text-col p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.luxe-choose-text-col p:last-of-type {
+    margin-bottom: 22px;
+}
+
+.luxe-choose-criteria-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #e2e8f0;
+}
+
+.luxe-choose-criterion {
+    display: grid;
+    grid-template-columns: 36px 1fr 18px;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.luxe-choose-criterion:nth-child(odd) {
+    margin-right: 18px;
+}
+
+.luxe-choose-criterion:nth-child(even) {
+    padding-left: 18px;
+    border-left: 1px solid #e2e8f0;
+}
+
+.luxe-choose-criterion-num {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--medi-navy);
+}
+
+.luxe-choose-criterion p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.luxe-choose-criterion svg {
+    color: var(--medi-navy);
+}
+
+/* ── 10. WORTH IT (dark) ───────────────────────────────────── */
+
+.luxe-value-section {
+    padding: 64px 20px;
+    background: linear-gradient(160deg, var(--medi-bg-dark2) 0%, var(--medi-bg-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-value-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-value-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.luxe-value-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-value-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-value-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-value-text-col p {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.55;
+    max-width: 440px;
+}
+
+.luxe-value-benefits-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.luxe-value-benefits-col .luxe-list-row {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.luxe-value-benefits-col .luxe-list-row svg {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── 11. EXPERT REVIEW ─────────────────────────────────────── */
+
+.luxe-review-section {
+    padding: 64px 20px;
+    background: var(--medi-navy);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-review-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.luxe-review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.luxe-review-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-review-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-review-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-review-text-col p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
+}
+
+.luxe-review-text-col p strong {
+    color: #ffffff;
+}
+
+.luxe-review-consider-wrap {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.luxe-review-consider-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 14px;
+}
+
+.luxe-review-consider-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.luxe-review-consider-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+}
+
+.luxe-review-consider-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+.luxe-review-consider-dot {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1;
+}
+
+.luxe-review-consider-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
+}
+
+.luxe-review-list-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+}
+
+.luxe-review-detail-col .luxe-list-row {
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+    padding: 12px 0;
+    font-size: 15px;
+}
+
+.luxe-review-detail-col .luxe-list-row svg {
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── 12. WHY BOOK WITH US ──────────────────────────────────── */
+
+.luxe-planning-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.luxe-planning-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.luxe-planning-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.luxe-planning-text-col .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-planning-text-col .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-planning-text-col .medi-heading-separator-bar {
+    margin-bottom: 22px;
+}
+
+.luxe-planning-text-col p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.luxe-planning-steps-col {
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.luxe-planning-step {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.luxe-planning-step-num {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--medi-navy);
+}
+
+.luxe-planning-step p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* ── 13. CTA ───────────────────────────────────────────────── */
+
+.luxe-cta-section {
+    position: relative;
+    padding: 60px 20px;
+    background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
+    text-align: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.luxe-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: luxe-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes luxe-aurora-pulse {
+    0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+}
+
+.luxe-cta-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(148, 210, 255, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.luxe-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: luxe-crystal-float 12s ease-in-out infinite; }
+.luxe-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: luxe-crystal-float 10s ease-in-out 2s infinite; }
+.luxe-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: luxe-crystal-float 14s ease-in-out 4s infinite; }
+
+@keyframes luxe-crystal-float {
+    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+    50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
+}
+
+.luxe-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+.luxe-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.luxe-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 210, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(148, 210, 255, 0.8);
+    margin-bottom: 16px;
+    animation: luxe-compass-spin 20s linear infinite;
+    background: rgba(148, 210, 255, 0.04);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+@keyframes luxe-compass-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.luxe-cta-compass-ring svg {
+    animation: luxe-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes luxe-compass-counter-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.luxe-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(148, 210, 255, 0.7);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.luxe-cta-title {
+    font-size: 52px;
+    line-height: 1.12;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+}
+
+.luxe-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.luxe-cta-subtitle {
+    font-size: 18px;
+    line-height: 1.65;
+    color: rgba(203, 213, 225, 0.85);
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
+
+.luxe-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.luxe-cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 36px;
+    background: linear-gradient(135deg, #274472, #1e3a5f);
+    color: #ffffff;
+    border: 1px solid rgba(148, 210, 255, 0.15);
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35), 0 0 0 0 rgba(148, 210, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-cta-primary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.luxe-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
+    border-color: rgba(148, 210, 255, 0.3);
+}
+
+.luxe-cta-primary-btn:hover::before {
+    opacity: 1;
+}
+
+.luxe-cta-btn-arrow {
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.luxe-cta-primary-btn:hover .luxe-cta-btn-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+/* ── 14. FAQ ───────────────────────────────────────────────── */
+
+.luxe-faq-section {
+    padding: 64px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.luxe-faq-section .luxe-eyebrow {
+    margin-bottom: 10px;
+}
+
+.luxe-faq-section .medi-section-heading {
+    margin: 0 0 14px 0;
+}
+
+.luxe-faq-section .medi-heading-separator-bar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.luxe-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.luxe-faq-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.luxe-faq-item {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+}
+
+.luxe-faq-item:hover {
+    border-color: var(--medi-navy);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.08);
+}
+
+.luxe-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.luxe-faq-question-row span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    line-height: 1.4;
+}
+
+.luxe-faq-toggle-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.luxe-faq-answer-text {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #475569;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 14px;
+    margin-bottom: 0;
+}
+
+/* ── 15. FOOTER ────────────────────────────────────────────── */
+
+.luxe-footer-section {
+    padding: 36px 20px;
+    background: #0c1e32;
+}
+
+.luxe-footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.luxe-footer-container span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.luxe-footer-container p {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ── 14. ANGELA HUGHES EXPERT INSIGHT ── */
+
+.luxe-expert-insight-section {
+    padding: 88px 20px;
+    background: var(--medi-bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.luxe-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.luxe-expert-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luxe-expert-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.1);
+}
+
+.luxe-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 24px;
+}
+
+.luxe-expert-stat-box h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin-bottom: 2px;
+}
+
+.luxe-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+    margin: 0;
+}
+
+.luxe-expert-content-panel .luxe-eyebrow {
+    margin-bottom: 12px;
+    color: #3b82f6;
+}
+
+.luxe-expert-content-panel .medi-section-heading {
+    margin: 0 0 14px;
+    font-size: 38px !important;
+}
+
+.luxe-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--medi-navy);
+    font-style: italic;
+    margin: 22px 0;
+    padding-left: 20px;
+    border-left: 3px solid #3b82f6;
+}
+
+.luxe-expert-priorities h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.luxe-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.luxe-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--medi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--medi-navy);
+}
+
+.luxe-expert-pill svg {
+    color: #3b82f6;
+}
+
+.luxe-expert-bio {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #475569;
+    margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
 @media (max-width: 1024px) {
-    .exp-hero-title { font-size: 44px; }
-    .exp-hero-subtitle { font-size: 20px; }
-    
-    .exp-expertise-grid { gap: 40px; }
-    .exp-expertise-heading { font-size: 36px; }
-    .exp-expertise-image { height: 400px; }
-    
-    .exp-section-heading { font-size: 40px; }
-    .exp-what-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .exp-what-item { padding: 24px; }
-    
-    .exp-cruiselines-grid { grid-template-columns: 1fr; gap: 24px; }
-    .exp-destinations-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    
-    .exp-wildlife-section { grid-template-columns: 1fr; min-height: auto; }
-    .exp-wildlife-content { padding: 50px 40px; }
-    .exp-wildlife-heading { font-size: 36px; }
-    
-    .exp-activities-grid { grid-template-columns: repeat(2, 1fr); }
-    
-    .exp-onboard-grid { gap: 40px; }
-    .exp-onboard-image { height: 400px; }
-    .exp-onboard-heading { font-size: 36px; }
-    
-    .exp-final-heading { font-size: 40px; }
-    .exp-final-card { padding: 32px 36px; }
+
+    .luxe-intro-grid,
+    .luxe-different-grid,
+    .luxe-eclipse-grid,
+    .luxe-onboard-grid,
+    .luxe-choose-grid,
+    .luxe-value-grid,
+    .luxe-review-grid,
+    .luxe-planning-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .luxe-wildlife-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .luxe-destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .luxe-seasons-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .luxe-intro-image-col .luxe-image-frame {
+        height: 320px;
+    }
+
+    .luxe-eclipse-image-col .luxe-image-frame {
+        height: 320px;
+    }
+
+    .luxe-different-intro {
+        max-width: none;
+    }
+
+    .luxe-eclipse-lead {
+        max-width: none;
+    }
+
+    .luxe-wildlife-intro {
+        max-width: none;
+    }
+
+    .luxe-onboard-intro {
+        max-width: none;
+    }
+
+    .luxe-value-text-col p {
+        max-width: none;
+    }
+
+    .luxe-dest-img-placeholder {
+        height: 200px;
+    }
+
+    .luxe-cta-crystal-1 { width: 54px; height: 54px; }
+    .luxe-cta-crystal-2 { width: 36px; height: 36px; }
+    .luxe-cta-crystal-3 { width: 26px; height: 26px; }
+
+    .luxe-choose-criteria-col {
+        grid-template-columns: 1fr;
+    }
+
+    .luxe-choose-criterion:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .luxe-choose-criterion:nth-child(even) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .luxe-page .medi-hero-content-wrapper {
+        padding: 110px 24px 80px;
+    }
+
+    .luxe-page .medi-hero-main-title {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .luxe-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .luxe-expert-img-container {
+        height: 340px;
+    }
+
+    .luxe-lines-body {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .luxe-lines-image-panel {
+        position: static;
+    }
+
+    .luxe-lines-img-wrap {
+        aspect-ratio: 16 / 9;
+    }
+
+    .luxe-cta-title {
+        font-size: 34px;
+    }
+
+    .luxe-intro-text-col .medi-section-heading,
+    .luxe-expert-content-panel .medi-section-heading {
+        font-size: 34px !important;
+    }
 }
 
-/* MOBILE LANDSCAPE & SMALL TABLET (768px) */
-@media (max-width: 768px) {
-    .exp-hero-section { height: 500px; }
-    .exp-hero-title { font-size: 36px; }
-    .exp-hero-subtitle { font-size: 18px; }
-    
-    .exp-expertise-section { padding: 60px 16px; }
-    .exp-expertise-grid { grid-template-columns: 1fr; gap: 40px; }
-    .exp-expertise-heading { font-size: 32px; }
-    .exp-expertise-image { height: 320px; }
-    
-    .exp-what-section { padding: 60px 16px; }
-    .exp-section-heading { font-size: 32px; }
-    .exp-what-grid { grid-template-columns: 1fr; gap: 20px; }
-    .exp-what-item { padding: 20px; }
-    
-    .exp-cruiselines-section { padding: 60px 16px; }
-    .exp-destinations-section { padding: 60px 16px; }
-    .exp-destinations-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    .exp-destination-image { height: 180px; }
-    
-    .exp-wildlife-section { grid-template-columns: 1fr; }
-    .exp-wildlife-image { height: 300px; }
-    .exp-wildlife-content { padding: 40px 30px; }
-    .exp-wildlife-heading { font-size: 32px; }
-    .exp-wildlife-list { grid-template-columns: 1fr; gap: 12px; }
-    
-    .exp-activities-section { padding: 60px 16px; }
-    .exp-activities-grid { grid-template-columns: 1fr; gap: 20px; }
-    
-    .exp-onboard-section { padding: 60px 16px; }
-    .exp-onboard-grid { grid-template-columns: 1fr; gap: 40px; }
-    .exp-onboard-image { height: 320px; }
-    .exp-onboard-heading { font-size: 32px; }
-    .exp-onboard-benefits { grid-template-columns: 1fr; }
-    .exp-onboard-features-list { grid-template-columns: 1fr; }
-    
-    .exp-final-section { padding: 60px 16px; }
-    .exp-final-heading { font-size: 32px; }
-    .exp-final-card { padding: 24px 28px; }
-    .exp-final-conclusion { flex-direction: column; gap: 16px; }
-    .exp-final-conclusion-line { width: 30px; height: 1px; }
-}
+@media (max-width: 640px) {
 
-/* MOBILE (max-width: 480px) */
-@media (max-width: 480px) {
-    /* Hero */
-    .exp-hero-section { height: 400px; padding: 0; }
-    .exp-hero-title { font-size: 28px; margin: 0 0 12px 0; }
-    .exp-hero-subtitle { font-size: 15px; }
-    .exp-hero-indicators { bottom: 20px; gap: 8px; }
-    .exp-indicator { width: 10px; height: 10px; }
-    .exp-indicator.active { width: 28px; }
-    
-    /* Expertise */
-    .exp-expertise-section { padding: 48px 16px; }
-    .exp-expertise-heading { font-size: 26px; }
-    .exp-expertise-title { font-size: 16px; }
-    .exp-expertise-bio { font-size: 15px; }
-    .exp-credential-item { font-size: 14px; }
-    .exp-expertise-image { height: 280px; }
-    
-    /* What is */
-    .exp-what-section { padding: 48px 16px; }
-    .exp-section-heading { font-size: 26px; }
-    .exp-section-separator { margin-bottom: 32px; }
-    .exp-what-grid { gap: 16px; }
-    .exp-what-item { padding: 18px; gap: 12px; }
-    .exp-what-item h3 { font-size: 16px; }
-    .exp-what-item p { font-size: 14px; }
-    
-    /* Cruise lines */
-    .exp-cruiselines-section { padding: 48px 16px; }
-    .exp-cruiseline-card { border-radius: 12px; }
-    .exp-cruiseline-image-wrapper { height: 220px; }
-    .exp-cruiseline-content { padding: 20px; }
-    .exp-cruiseline-name { font-size: 18px; }
-    .exp-cruiseline-features li { font-size: 13px; }
-    
-    /* Destinations */
-    .exp-destinations-section { padding: 48px 16px; }
-    .exp-destinations-grid { grid-template-columns: 1fr; gap: 16px; }
-    .exp-destination-card { border-radius: 12px; }
-    .exp-destination-image { height: 200px; }
-    .exp-destination-content h3 { font-size: 16px; }
-    .exp-destination-content p { font-size: 12px; }
-    
-    /* Wildlife */
-    .exp-wildlife-section { padding: 0; }
-    .exp-wildlife-image { height: 240px; }
-    .exp-wildlife-content { padding: 36px 20px; }
-    .exp-wildlife-heading { font-size: 26px; margin: 12px 0 16px 0; }
-    .exp-wildlife-text { font-size: 15px; margin: 0 0 20px 0; }
-    .exp-wildlife-list { gap: 12px; }
-    .exp-wildlife-item { font-size: 14px; }
-    
-    /* Activities */
-    .exp-activities-section { padding: 48px 16px; }
-    .exp-activities-grid { gap: 16px; }
-    .exp-activity-card { padding: 24px 20px; }
-    .exp-activity-card h3 { font-size: 16px; }
-    .exp-activity-card p { font-size: 13px; }
-    
-    /* Onboard */
-    .exp-onboard-section { padding: 48px 16px; }
-    .exp-onboard-image { height: 280px; }
-    .exp-onboard-heading { font-size: 26px; }
-    .exp-onboard-text { font-size: 15px; }
-    .exp-onboard-benefits { gap: 14px; }
-    .exp-onboard-benefit { font-size: 14px; }
-    .exp-feature-group h4 { font-size: 15px; }
-    .exp-feature-group li { font-size: 13px; }
-    
-    /* Final */
-    .exp-final-section { padding: 48px 16px; }
-    .exp-final-heading { font-size: 26px; }
-    .exp-final-card { padding: 20px 22px; }
-    .exp-final-body { font-size: 15px; }
-    .exp-final-emphasis { font-size: 18px; }
-    .exp-final-stmt { font-size: 16px; }
-    
-    /* FAQ & CTA (shared medi-* styles) */
-    .medi-section-heading { font-size: 26px !important; }
-    .medi-faq-individual-item { padding: 12px 16px; }
-    .medi-cta-heading-white { font-size: 26px !important; }
-}
+    .luxe-intro-section,
+    .luxe-different-section,
+    .luxe-destinations-section,
+    .luxe-lines-section,
+    .luxe-eclipse-section,
+    .luxe-wildlife-section,
+    .luxe-onboard-section,
+    .luxe-seasons-section,
+    .luxe-choose-section,
+    .luxe-value-section,
+    .luxe-review-section,
+    .luxe-planning-section,
+    .luxe-expert-insight-section {
+        padding: 56px 16px;
+    }
 
-/* EXTRA SMALL (max-width: 360px) */
-@media (max-width: 360px) {
-    .exp-hero-title { font-size: 24px; }
-    .exp-hero-subtitle { font-size: 14px; }
-    
-    .exp-section-heading { font-size: 22px !important; }
-    .exp-expertise-heading { font-size: 22px; }
-    .exp-wildlife-heading { font-size: 22px; }
-    .exp-onboard-heading { font-size: 22px; }
-    .exp-final-heading { font-size: 22px; }
-    
-    .exp-what-grid { gap: 14px; }
-    .exp-what-item { padding: 16px; }
-    
-    .exp-activities-grid { gap: 14px; }
-    
-    .exp-onboard-features-list { grid-template-columns: 1fr; }
-    .exp-onboard-benefits { grid-template-columns: 1fr; }
+    .luxe-expert-insight-container {
+        gap: 24px;
+    }
+
+    .luxe-expert-img-container {
+        height: 280px;
+    }
+
+    .luxe-expert-stats-strip {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .luxe-expert-content-panel .medi-section-heading {
+        font-size: 28px !important;
+    }
+
+    .luxe-expert-quote {
+        font-size: 16px;
+    }
+
+    .luxe-destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .luxe-dest-img-placeholder {
+        height: 180px;
+    }
+
+    .luxe-seasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .luxe-different-intro,
+    .luxe-eclipse-lead,
+    .luxe-wildlife-intro,
+    .luxe-onboard-intro,
+    .luxe-value-text-col p {
+        max-width: none;
+    }
+
+    .luxe-line-row {
+        grid-template-columns: 30px 1fr 16px;
+        gap: 12px;
+        padding: 16px 10px;
+    }
+
+    .luxe-line-row-body h3 {
+        font-size: 16px;
+    }
+
+    .luxe-lines-img-wrap {
+        aspect-ratio: 16 / 10;
+    }
+
+    .luxe-lines-info-card {
+        padding: 18px;
+    }
+
+    .luxe-lines-info-card h3 {
+        font-size: 17px;
+    }
+
+    .luxe-lines-info-card p {
+        font-size: 13px;
+    }
+
+    .luxe-eclipse-image-col .luxe-image-frame {
+        height: 280px;
+    }
+
+    .luxe-intro-image-col .luxe-image-frame {
+        height: 240px;
+    }
+
+    .luxe-eclipse-features {
+        grid-template-columns: 1fr;
+    }
+
+    .luxe-cta-section {
+        padding: 52px 16px;
+    }
+
+    .luxe-cta-title {
+        font-size: 28px;
+    }
+
+    .luxe-intro-text-col .medi-section-heading {
+        font-size: 28px !important;
+    }
+
+    .luxe-cta-subtitle {
+        font-size: 15px;
+    }
+
+    .luxe-cta-crystal-1,
+    .luxe-cta-crystal-2,
+    .luxe-cta-crystal-3 {
+        display: none;
+    }
+
+    .luxe-cta-compass-ring {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 12px;
+    }
+
+    .luxe-faq-section {
+        padding: 64px 16px;
+    }
+
+    .luxe-faq-item {
+        padding: 20px;
+    }
+
+    .luxe-faq-question-row span {
+        font-size: 15px;
+    }
+
+    .luxe-review-consider-card {
+        padding: 10px 12px;
+    }
+
+    .luxe-review-consider-card p {
+        font-size: 12px;
+    }
+
+    .luxe-footer-section {
+        padding: 24px 16px;
+    }
+
+    .luxe-footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .luxe-page .medi-hero-content-wrapper {
+        padding: 90px 16px 60px;
+    }
+
+    .luxe-page .medi-hero-main-title {
+        font-size: 28px;
+        margin: 0 0 20px 0;
+        max-width: 100%;
+    }
+
+    .luxe-page .medi-hero-subtitle-text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 }

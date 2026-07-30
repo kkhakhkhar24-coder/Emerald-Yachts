@@ -767,25 +767,25 @@ function BestExpeditionCruises() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
+            <section className="expg-faq-section">
+                <div className="expg-faq-container">
                     <div style={{ textAlign: 'center' }}>
                         <h2 className="medi-section-heading">Frequently Asked Questions</h2>
                         <div className="medi-heading-separator-bar medi-bar-centered"></div>
                     </div>
-                    <div className="medi-faq-list-wrapper">
+                    <div className="expg-faq-list-wrapper">
                         {expFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="medi-faq-individual-item"
+                                className="expg-faq-item"
                                 onClick={() => expToggleFaq(index)}
                             >
-                                <div className="medi-faq-question-row">
+                                <div className="expg-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="medi-faq-toggle-icon">{expActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="expg-faq-toggle-icon">{expActiveFaq === index ? '−' : '+'}</span>
                                 </div>
                                 {expActiveFaq === index && (
-                                    <p className="medi-faq-answer-text">{faq.answer}</p>
+                                    <p className="expg-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
                         ))}

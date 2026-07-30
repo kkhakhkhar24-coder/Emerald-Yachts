@@ -665,7 +665,7 @@
 
 .expg-wildlife-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
-    padding: 88px 20px;
+    padding: 64px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -678,51 +678,51 @@
 .expg-wildlife-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    gap: 48px;
     align-items: center;
 }
 
 .expg-wildlife-image-col {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .expg-wildlife-image-col .expg-image-frame {
-    height: 400px;
+    height: 380px;
     min-height: unset;
 }
 
 .expg-wildlife-intro {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
-    margin: 0 0 6px 0;
-    line-height: 1.6;
+    margin: 0 0 10px 0;
+    line-height: 1.55;
 }
 
 .expg-wildlife-sub {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.6);
-    margin: 0 0 20px 0;
-    line-height: 1.6;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 16px 0;
+    line-height: 1.5;
 }
 
 .expg-wildlife-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 8px;
 }
 
 .expg-wildlife-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    padding: 10px 16px;
-    font-size: 14px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9px;
+    padding: 8px 14px;
+    font-size: 13px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
@@ -735,10 +735,10 @@
 }
 
 .expg-wildlife-item-icon {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -748,13 +748,13 @@
 
 .expg-wildlife-footer {
     border-left: 4px solid rgba(255, 255, 255, 0.4);
-    padding: 14px 18px;
+    padding: 12px 16px;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 0 10px 10px 0;
 }
 
 .expg-wildlife-footer p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
@@ -1017,7 +1017,7 @@
 /* ── 9. BEST TIME / SEASONS ────────────────────────────────── */
 
 .expg-seasons-section {
-    background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
+    background: var(--medi-navy);
     padding: 60px 20px;
     position: relative;
     overflow: hidden;
@@ -1567,6 +1567,71 @@
 .expg-review-expertise-pill svg {
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── FAQ ────────────────────────────────────────────────────── */
+
+.expg-faq-section {
+    padding: 100px 20px;
+    background: var(--medi-bg-soft);
+}
+
+.expg-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.expg-faq-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.expg-faq-item {
+    background: var(--medi-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+}
+
+.expg-faq-item:hover {
+    border-color: var(--medi-navy);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.08);
+}
+
+.expg-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.expg-faq-question-row span {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--medi-navy);
+    line-height: 1.4;
+}
+
+.expg-faq-toggle-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    flex-shrink: 0;
+}
+
+.expg-faq-answer-text {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 16px;
+    margin-bottom: 0;
 }
 
 /* ── CTA ────────────────────────────────────────────────────── */
