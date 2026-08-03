@@ -251,21 +251,144 @@
 
 .uni-intro-section {
     background: var(--uni-bg-white);
-    padding: 88px 20px;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .uni-intro-container {
-    max-width: 860px;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+}
+
+.uni-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.uni-intro-text-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.uni-intro-lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--uni-navy);
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .uni-intro-body {
-    font-size: 17px;
+    font-size: 16.5px;
     color: var(--uni-text-body);
     line-height: 1.85;
-    margin: 0 0 18px 0;
-    text-align: left;
+    margin-bottom: 18px;
+}
+
+.uni-intro-mini-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.uni-intro-stat-card {
+    background: var(--uni-bg-soft);
+    border: 1px solid var(--uni-border-soft);
+    padding: 16px 24px;
+    border-radius: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uni-intro-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+}
+
+.uni-stat-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--uni-navy);
+}
+
+.uni-stat-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--uni-text-body);
+    letter-spacing: 0.02em;
+}
+
+.uni-intro-image-col {
+    position: relative;
+}
+
+.uni-intro-image-card {
+    position: relative;
+    padding: 10px;
+}
+
+.uni-intro-image-card .uni-image-frame {
+    height: 480px;
+    min-height: unset;
+}
+
+.uni-intro-floating-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background: var(--uni-bg-white);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.12);
+    border-radius: 12px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 5;
+    border: 1px solid var(--uni-border-soft);
+    animation: float-slow 4s ease-in-out infinite alternate;
+}
+
+.uni-badge-gold-icon {
+    color: #d4af37;
+}
+
+.uni-floating-bold {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0;
+}
+
+.uni-floating-sub {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--uni-text-body);
+    margin: 0;
+}
+
+@keyframes float-slow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+
+@media (max-width: 991px) {
+    .uni-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .uni-intro-image-card .uni-image-frame {
+        height: 380px;
+    }
+    .uni-intro-floating-badge {
+        right: 10px;
+    }
 }
 
 /* ── WHY CHOOSE ───────────────────────────────────────────── */
@@ -393,7 +516,7 @@
 
 .uni-destinations-section {
     background: var(--uni-navy-dark);
-    padding: 88px 20px;
+    padding: 64px 20px;
 }
 
 .uni-destinations-container {
@@ -404,7 +527,7 @@
 .uni-destinations-header {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto 44px;
+    margin: 0 auto 32px;
 }
 
 .uni-destinations-intro {
@@ -414,54 +537,142 @@
     margin: 0;
 }
 
-.uni-destinations-grid {
+.uni-destinations-cards-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.uni-destination-card {
+.uni-destinations-cards-grid.uni-destinations-cards-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+.uni-destination-feature-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.uni-destination-feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.uni-dest-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.uni-dest-card-image .uni-placeholder {
+    min-height: 200px;
+    border-radius: 0;
+    border: none;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 14px, rgba(255,255,255,0.01) 14px, rgba(255,255,255,0.01) 28px);
+}
+
+.uni-dest-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85));
+}
+
+.uni-dest-card-tag {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 6px 14px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.uni-dest-card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.uni-dest-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+    letter-spacing: 0.01em;
+}
+
+.uni-dest-card-description {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+}
+
+.uni-dest-card-details {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.uni-dest-detail-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    padding: 18px 20px;
-    color: #ffffff;
-    font-size: 15px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
-    transition: all 0.3s ease;
 }
 
-.uni-destination-card:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-3px);
-}
-
-.uni-destination-icon {
-    width: 36px;
-    height: 36px;
-    background: var(--uni-navy);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+.uni-dest-detail-item svg {
+    color: #4a9eff;
     flex-shrink: 0;
 }
 
 .uni-destinations-footer {
-    text-align: center;
     margin-top: 40px;
+    padding: 28px 36px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .uni-destinations-footer p {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 15px;
-    line-height: 1.7;
-    max-width: 780px;
-    margin: 0 auto;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    margin: 0;
+    font-weight: 400;
+}
+
+.uni-destinations-footer::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 0 auto 18px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #4a9eff, #7bc4ff);
 }
 
 /* ── BOUTIQUE SHIPS ───────────────────────────────────────── */
@@ -1621,7 +1832,7 @@
     .uni-suites-image-col .uni-image-frame { height: 320px; }
     .uni-suites-features-grid { grid-template-columns: repeat(4, 1fr); }
 
-    .uni-destinations-grid { grid-template-columns: repeat(3, 1fr); }
+    .uni-destinations-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .uni-compare-grid { grid-template-columns: repeat(2, 1fr); }
     .uni-who-grid { grid-template-columns: repeat(2, 1fr); }
     .uni-included-grid { grid-template-columns: 1fr 1fr; }
@@ -1659,6 +1870,8 @@
 
     .uni-destinations-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
     .uni-destination-card { padding: 14px 16px; font-size: 14px; }
+    .uni-destinations-footer { padding: 22px 18px; }
+    .uni-destinations-footer p { font-size: 16px; line-height: 1.7; }
 
     .uni-ships-image-col .uni-image-frame { height: 220px; }
     .uni-ships-highlights { gap: 8px; }

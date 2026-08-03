@@ -56,14 +56,47 @@ function UniworldRiverCruises() {
         { Icon: UserCheck, text: 'Personalized service' }
     ]
 
-    const uniEuropeRivers = [
-        'Danube River', 'Rhine River', 'Main River', 'Moselle River',
-        'Seine River', 'Rhône River', 'Douro River', 'Po River'
-    ]
-
-    const uniEuropeCountries = [
-        'France', 'Germany', 'Austria', 'Hungary', 'Netherlands',
-        'Belgium', 'Portugal', 'Italy', 'Switzerland', 'Czech Republic'
+    const uniDestinations = [
+        {
+            region: 'Europe',
+            imageLabel: 'European River Cruise Image',
+            tag: 'Most Popular',
+            description: 'Explore the heart of Europe along its most iconic waterways, from the Danube to the Douro.',
+            rivers: 'Danube, Rhine, Seine, Douro, Po & more',
+            countries: 'France, Germany, Portugal, Italy, Austria'
+        },
+        {
+            region: 'Egypt',
+            imageLabel: 'Nile River Cruise Image',
+            tag: 'Exotic',
+            description: 'Sail the timeless Nile and discover ancient wonders like the Valley of the Kings in absolute luxury.',
+            rivers: 'Nile River',
+            countries: 'Egypt'
+        },
+        {
+            region: 'India',
+            imageLabel: 'Ganges River Cruise Image',
+            tag: 'Immersive',
+            description: 'A soul-stirring journey along the sacred Ganges, exploring vibrant Kolkata and historic temples.',
+            rivers: 'Ganges River',
+            countries: 'India'
+        },
+        {
+            region: 'Peru',
+            imageLabel: 'Amazon River Cruise Image',
+            tag: 'Adventure',
+            description: 'Venture into the Amazon rainforest or explore the Sacred Valley and Machu Picchu.',
+            rivers: 'Amazon River',
+            countries: 'Peru'
+        },
+        {
+            region: 'Vietnam & Cambodia',
+            imageLabel: 'Mekong River Cruise Image',
+            tag: 'Cultural',
+            description: 'Experience the magic of the Mekong, from the temples of Angkor Wat to the bustling life of the delta.',
+            rivers: 'Mekong River',
+            countries: 'Vietnam, Cambodia'
+        }
     ]
 
     const uniFleetData = [
@@ -289,7 +322,7 @@ function UniworldRiverCruises() {
 
             {/* ── HERO ── */}
             <section className="uni-hero-section">
-                <UniPlaceholder label="Hero Background Image" className="uni-hero-bg-placeholder" />
+                <UniPlaceholder className="uni-hero-bg-placeholder" />
                 <div className="uni-hero-overlay-layer"></div>
                 <div className="uni-hero-content-wrapper">
                     <div className="uni-hero-eyebrow-tag">
@@ -326,14 +359,6 @@ function UniworldRiverCruises() {
                                 ))}
                             </div>
 
-                            <div className="uni-why-statement-box" style={{ marginTop: '24px' }}>
-                                <div className="uni-why-statement-accent"></div>
-                                <div className="uni-why-statement-text">
-                                    <p className="uni-why-statement-primary" style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: 1.6 }}>
-                                        Unlike large ocean cruises, Uniworld&apos;s intimate ships provide a relaxed atmosphere while docking directly in the heart of historic cities.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
 
                         <div className="uni-why-image-col">
@@ -343,6 +368,14 @@ function UniworldRiverCruises() {
                                 <div className="uni-image-badge">
                                     <Ship size={13} />
                                     <span>Boutique Luxury on Europe&apos;s Rivers</span>
+                                </div>
+                            </div>
+                            <div className="uni-why-statement-box" style={{ marginTop: '24px' }}>
+                                <div className="uni-why-statement-accent"></div>
+                                <div className="uni-why-statement-text">
+                                    <p className="uni-why-statement-primary" style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: 1.6 }}>
+                                        Unlike large ocean cruises, Uniworld&apos;s intimate ships provide a relaxed atmosphere while docking directly in the heart of historic cities.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -355,55 +388,64 @@ function UniworldRiverCruises() {
                 <div className="uni-destinations-container">
                     <div className="uni-destinations-header">
                         <span className="uni-eyebrow uni-eyebrow-light">WORLDWIDE ITINERARIES</span>
-                        <h2 className="uni-section-heading uni-white-heading">Destinations Covered by Uniworld River Cruises</h2>
+                        <h2 className="uni-section-heading uni-white-heading" style={{ fontSize: '34px' }}>Destinations Covered by <br /> Uniworld River Cruises</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
-                        <p className="uni-destinations-intro">Uniworld offers itineraries across some of the world&apos;s most scenic rivers.</p>
+                        <p className="uni-destinations-intro">From the heart of Europe to the Nile, the Ganges, and the Amazon, Uniworld&apos;s boutique ships unlock the world&apos;s most iconic waterways.</p>
                     </div>
 
-                    {/* Europe */}
-                    <div style={{ marginBottom: '40px' }}>
-                        <h3 style={{ color: '#ffffff', fontSize: '20px', fontWeight: 700, marginBottom: '18px', letterSpacing: '0.02em' }}>Europe</h3>
-                        <div className="uni-destinations-grid">
-                            {uniEuropeRivers.map((river, idx) => (
-                                <div key={idx} className="uni-destination-card">
-                                    <div className="uni-destination-icon"><MapPin size={18} /></div>
-                                    <span>{river}</span>
+                    <div className="uni-destinations-cards-grid">
+                        {uniDestinations.slice(0, 3).map((dest, idx) => (
+                            <div key={idx} className="uni-destination-feature-card">
+                                <div className="uni-dest-card-image">
+                                    <UniPlaceholder label={dest.imageLabel} />
+                                    <div className="uni-dest-card-overlay"></div>
+                                    <div className="uni-dest-card-tag">{dest.tag}</div>
                                 </div>
-                            ))}
-                        </div>
-                        <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '14px', fontWeight: 600, margin: '24px 0 14px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Countries visited</p>
-                        <div className="uni-destinations-grid">
-                            {uniEuropeCountries.map((country, idx) => (
-                                <div key={idx} className="uni-destination-card">
-                                    <div className="uni-destination-icon"><Globe size={18} /></div>
-                                    <span>{country}</span>
+                                <div className="uni-dest-card-content">
+                                    <h3 className="uni-dest-card-title">{dest.region}</h3>
+                                    <p className="uni-dest-card-description">{dest.description}</p>
+                                    <div className="uni-dest-card-details">
+                                        <div className="uni-dest-detail-item">
+                                            <Anchor size={14} />
+                                            <span>{dest.rivers}</span>
+                                        </div>
+                                        <div className="uni-dest-detail-item">
+                                            <Globe size={14} />
+                                            <span>{dest.countries}</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="uni-destinations-cards-grid uni-destinations-cards-bottom">
+                        {uniDestinations.slice(3).map((dest, idx) => (
+                            <div key={idx} className="uni-destination-feature-card">
+                                <div className="uni-dest-card-image">
+                                    <UniPlaceholder label={dest.imageLabel} />
+                                    <div className="uni-dest-card-overlay"></div>
+                                    <div className="uni-dest-card-tag">{dest.tag}</div>
+                                </div>
+                                <div className="uni-dest-card-content">
+                                    <h3 className="uni-dest-card-title">{dest.region}</h3>
+                                    <p className="uni-dest-card-description">{dest.description}</p>
+                                    <div className="uni-dest-card-details">
+                                        <div className="uni-dest-detail-item">
+                                            <Anchor size={14} />
+                                            <span>{dest.rivers}</span>
+                                        </div>
+                                        <div className="uni-dest-detail-item">
+                                            <Globe size={14} />
+                                            <span>{dest.countries}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
 
-                    {/* Egypt */}
-                    <div style={{ marginBottom: '36px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '14px', padding: '28px 32px' }}>
-                        <h3 style={{ color: '#ffffff', fontSize: '20px', fontWeight: 700, marginBottom: '12px', letterSpacing: '0.02em' }}>Egypt</h3>
-                        <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15.5px', lineHeight: 1.7, margin: 0 }}>
-                            Luxury Nile River cruises featuring Luxor, Aswan, Valley of the Kings, and Karnak Temple, combining ancient wonders with modern comfort.
-                        </p>
-                    </div>
-
-                    {/* India */}
-                    <div style={{ marginBottom: '36px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '14px', padding: '28px 32px' }}>
-                        <h3 style={{ color: '#ffffff', fontSize: '20px', fontWeight: 700, marginBottom: '12px', letterSpacing: '0.02em' }}>India</h3>
-                        <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15.5px', lineHeight: 1.7, margin: 0 }}>
-                            River cruises along the Ganges, exploring Kolkata, Varanasi, rural villages, and historic temples for an immersive cultural journey.
-                        </p>
-                    </div>
-
-                    {/* Peru */}
-                    <div style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '14px', padding: '28px 32px' }}>
-                        <h3 style={{ color: '#ffffff', fontSize: '20px', fontWeight: 700, marginBottom: '12px', letterSpacing: '0.02em' }}>Peru</h3>
-                        <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15.5px', lineHeight: 1.7, margin: 0 }}>
-                            Amazon River cruises and Sacred Valley extensions, offering unique perspectives on Peru&apos;s natural beauty and cultural heritage.
-                        </p>
+                    <div className="uni-destinations-footer">
+                        <p>Whether you seek the cultural riches of the Rhine or the natural wonders of the Amazon, Uniworld offers meticulously planned itineraries that bring the best of each destination to life.</p>
                     </div>
                 </div>
             </section>
