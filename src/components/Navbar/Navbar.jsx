@@ -960,6 +960,13 @@ const Navbar = () => {
               >
                 Uniworld River Cruises
               </NavLink>
+              <NavLink
+                to="/uniworld-river-cruises-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld River Cruises Review
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1904,6 +1911,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Uniworld River Cruises
+            </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld River Cruises Review
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

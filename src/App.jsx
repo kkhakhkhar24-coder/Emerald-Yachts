@@ -137,6 +137,7 @@ import ScenicSubmarineExperience from "./pages/ScenicSubmarineExperience/ScenicS
 import BestExpeditionCruises from "./pages/BestExpeditionCruises/BestExpeditionCruises";
 import BestLuxuryExpeditionCruises from "./pages/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
 import UniworldRiverCruises from "../src/pages/UniworldRiverCruises/UniworldRiverCruises";
+import UniworldRiverCruisesReview from "./pages/UniworldRiverCruisesReview/UniworldRiverCruisesReview";
 
 function App() {
   return (
@@ -762,6 +763,10 @@ function App() {
           <Route
             path="/uniworld-river-cruises"
             element={<UniworldRiverCruises />}
+          />
+          <Route
+            path="/uniworld-river-cruises-review"
+            element={<UniworldRiverCruisesReview />}
           />
         </Routes>
       </BrowserRouter>
