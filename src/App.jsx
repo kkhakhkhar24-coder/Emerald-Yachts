@@ -136,6 +136,7 @@ import ScenicHelicopterExperience from "./pages/ScenicHelicopterExperience/Sceni
 import ScenicSubmarineExperience from "./pages/ScenicSubmarineExperience/ScenicSubmarineExperience";
 import BestExpeditionCruises from "./pages/BestExpeditionCruises/BestExpeditionCruises";
 import BestLuxuryExpeditionCruises from "./pages/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
+import UniworldRiverCruises from "../src/pages/UniworldRiverCruises/UniworldRiverCruises";
 
 function App() {
   return (
@@ -756,6 +757,11 @@ function App() {
           <Route
             path="/best-luxury-expedition-cruises"
             element={<BestLuxuryExpeditionCruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises"
+            element={<UniworldRiverCruises />}
           />
         </Routes>
       </BrowserRouter>

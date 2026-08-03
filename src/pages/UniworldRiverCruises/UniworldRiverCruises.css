@@ -1,0 +1,1735 @@
+/* =============================================================
+   UniworldRiverCruises.css
+   Self-contained styles for the Uniworld River Cruises page.
+   Color palette defined locally via CSS variables.
+   ============================================================= */
+
+:root {
+    --uni-navy: #274472;
+    --uni-navy-dark: #182c49;
+    --uni-bg-white: #ffffff;
+    --uni-bg-soft: #f6f8fb;
+    --uni-text-body: #4a5568;
+    --uni-text-dark: #2d3748;
+    --uni-border-soft: rgba(39, 68, 114, 0.08);
+}
+
+.uni-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--uni-navy);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.uni-eyebrow-light {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.uni-white-heading {
+    color: #ffffff !important;
+}
+
+.uni-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.uni-section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0 0 18px 0;
+    line-height: 1.25;
+    
+}
+
+.uni-heading-center {
+    text-align: center;
+}
+
+.uni-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    background: var(--uni-navy);
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+
+.uni-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Shared image frame */
+.uni-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(15, 28, 46, 0.15);
+}
+
+.uni-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uni-image-frame:hover .uni-frame-img {
+    transform: scale(1.04);
+}
+
+.uni-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.05) 60%);
+    z-index: 1;
+}
+
+.uni-overlay-soft {
+    background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%) !important;
+}
+
+.uni-image-badge {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── IMAGE PLACEHOLDERS ───────────────────────────────────────────── */
+/* Visible placeholder blocks where real images should be added later */
+
+.uni-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+    padding: 20px;
+    background: repeating-linear-gradient(45deg, #f6f8fb 0, #f6f8fb 14px, #eef1f6 14px, #eef1f6 28px);
+    border: 2px dashed rgba(39, 68, 114, 0.35);
+    border-radius: 20px;
+    color: var(--uni-navy);
+    opacity: 0.9;
+}
+
+.uni-placeholder svg {
+    opacity: 0.6;
+}
+
+.uni-placeholder span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--uni-navy);
+    line-height: 1.5;
+    max-width: 260px;
+}
+
+/* Full-bleed hero placeholder */
+.uni-hero-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+    border-radius: 0;
+    border-width: 2px;
+    z-index: 0;
+}
+
+/* Full-bleed dining background placeholder */
+.uni-dining-bg .uni-dining-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+/* ── HERO ─────────────────────────────────────────────────── */
+
+.uni-hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+    z-index: 0;
+}
+
+.uni-hero-background.uni-active {
+    opacity: 1;
+}
+
+.uni-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.35) 45%, rgba(15, 28, 46, 0.75) 100%);
+    z-index: 1;
+}
+
+.uni-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.uni-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.uni-hero-main-title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 22px 0;
+    
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.uni-hero-subtitle-text {
+    font-size: 19px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.92);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ── INTRO ────────────────────────────────────────────────── */
+
+.uni-intro-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-intro-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uni-intro-body {
+    font-size: 17px;
+    color: var(--uni-text-body);
+    line-height: 1.85;
+    margin: 0 0 18px 0;
+    text-align: left;
+}
+
+/* ── WHY CHOOSE ───────────────────────────────────────────── */
+
+.uni-why-section {
+    background: var(--uni-bg-soft);
+    padding: 88px 20px;
+}
+
+.uni-why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.uni-why-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--uni-navy);
+    margin: 0 0 8px 0;
+    line-height: 1.5;
+}
+
+.uni-why-sub {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.uni-why-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.uni-why-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-white);
+    border: 1px solid var(--uni-border-soft);
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--uni-navy);
+    transition: all 0.3s ease;
+}
+
+.uni-why-item:hover {
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.1);
+    transform: translateY(-2px);
+}
+
+.uni-why-icon {
+    width: 34px;
+    height: 34px;
+    background: var(--uni-bg-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-why-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.uni-why-image-col .uni-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.uni-why-statement-box {
+    display: flex;
+    gap: 0;
+    background: var(--uni-bg-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
+}
+
+.uni-why-statement-accent {
+    width: 5px;
+    background: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-why-statement-text {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.uni-why-statement-bold {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0;
+    line-height: 1.4;
+    font-style: italic;
+    
+}
+
+.uni-why-statement-primary {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ── DESTINATIONS ─────────────────────────────────────────── */
+
+.uni-destinations-section {
+    background: var(--uni-navy-dark);
+    padding: 88px 20px;
+}
+
+.uni-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-destinations-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 44px;
+}
+
+.uni-destinations-intro {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.uni-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.uni-destination-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 18px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.uni-destination-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+}
+
+.uni-destination-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--uni-navy);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.uni-destinations-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.uni-destinations-footer p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+/* ── BOUTIQUE SHIPS ───────────────────────────────────────── */
+
+.uni-ships-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-ships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-ships-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.uni-ships-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uni-ships-image-col .uni-image-frame {
+    height: 340px;
+    min-height: unset;
+}
+
+.uni-ships-pivot-box {
+    background: var(--uni-bg-soft);
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+
+.uni-ships-pivot-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.uni-ships-pivot-sub {
+    font-size: 14px;
+    color: var(--uni-text-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.uni-ships-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.uni-ships-sub {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.uni-ships-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uni-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--uni-text-dark);
+    background: var(--uni-bg-soft);
+    border-radius: 8px;
+    padding: 11px 16px;
+}
+
+.uni-highlight-chevron {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+/* ── SUITES ───────────────────────────────────────────────── */
+
+.uni-suites-section {
+    background: var(--uni-bg-soft);
+    padding: 88px 20px;
+}
+
+.uni-suites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-suites-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 36px;
+}
+
+.uni-suites-intro {
+    font-size: 17px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+}
+
+.uni-suites-sub {
+    font-size: 15px;
+    color: var(--uni-navy);
+    font-weight: 700;
+    margin: 0;
+}
+
+.uni-stateroom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.uni-stateroom-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+.uni-suites-content {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.uni-suites-image-col .uni-image-frame {
+    height: 400px;
+}
+
+.uni-suites-features-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0 0 18px 0;
+}
+
+.uni-suites-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.uni-feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    background: var(--uni-bg-white);
+    border-radius: 12px;
+    padding: 18px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+    box-shadow: 0 4px 16px rgba(15, 28, 46, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.uni-feature-card:hover {
+    transform: translateY(-3px);
+}
+
+.uni-feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--uni-bg-soft);
+    color: var(--uni-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-suites-note {
+    background: rgba(39, 68, 114, 0.08);
+    border-left: 4px solid var(--uni-navy);
+    border-radius: 8px;
+    padding: 14px 18px;
+}
+
+.uni-suites-note p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--uni-text-dark);
+    line-height: 1.6;
+}
+
+/* ── DINING ───────────────────────────────────────────────── */
+
+.uni-dining-section {
+    position: relative;
+    padding: 100px 20px;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.uni-dining-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.uni-dining-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(15, 28, 46, 0.92) 30%, rgba(15, 28, 46, 0.55) 100%);
+    z-index: 1;
+}
+
+.uni-dining-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    color: #ffffff;
+}
+
+.uni-dining-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 16px;
+}
+
+.uni-dining-heading {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 18px 0;
+    
+}
+
+.uni-dining-separator {
+    width: 64px;
+    height: 4px;
+    background: var(--uni-navy);
+    border-radius: 4px;
+    margin-bottom: 22px;
+}
+
+.uni-dining-note {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 22px 0;
+}
+
+.uni-dining-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.uni-dining-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14.5px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+.uni-dining-point-icon {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.uni-dining-footer {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── WHAT'S INCLUDED ──────────────────────────────────────── */
+
+.uni-included-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-included-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uni-included-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 36px;
+}
+
+.uni-included-intro {
+    font-size: 17px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+}
+
+.uni-included-sub {
+    font-size: 15px;
+    color: var(--uni-navy);
+    font-weight: 700;
+    margin: 0;
+}
+
+.uni-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.uni-included-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-soft);
+    border-radius: 10px;
+    padding: 15px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+}
+
+.uni-included-check {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-included-footer {
+    text-align: center;
+}
+
+.uni-included-footer p {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── SHORE EXCURSIONS ─────────────────────────────────────── */
+
+.uni-excursions-section {
+    background: var(--uni-bg-soft);
+    padding: 88px 20px;
+}
+
+.uni-excursions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-excursions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.uni-excursions-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.uni-excursions-sub {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.uni-excursions-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.uni-excursion-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-white);
+    border: 1px solid var(--uni-border-soft);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uni-navy);
+}
+
+.uni-excursion-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--uni-bg-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-excursions-image-col .uni-image-frame {
+    height: 360px;
+}
+
+.uni-excursions-conclusion-box {
+    background: var(--uni-bg-white);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.06);
+}
+
+.uni-excursions-conclusion-box p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+}
+
+/* ── SERVICE AND HOSPITALITY ──────────────────────────────── */
+
+.uni-service-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.uni-service-image-col .uni-image-frame {
+    height: 400px;
+}
+
+.uni-service-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.uni-service-sub {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.uni-service-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.uni-service-pillar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--uni-bg-soft);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.uni-service-pillar-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-service-pillar-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+}
+
+.uni-service-conclusion-box {
+    background: rgba(39, 68, 114, 0.08);
+    border-left: 4px solid var(--uni-navy);
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+.uni-service-conclusion-box p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--uni-text-dark);
+    line-height: 1.6;
+}
+
+/* ── WHO SHOULD CHOOSE ────────────────────────────────────── */
+
+.uni-who-section {
+    background: var(--uni-bg-soft);
+    padding: 88px 20px;
+}
+
+.uni-who-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uni-who-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 36px;
+}
+
+.uni-who-intro {
+    font-size: 17px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+}
+
+.uni-who-sub {
+    font-size: 15px;
+    color: var(--uni-navy);
+    font-weight: 700;
+    margin: 0;
+}
+
+.uni-who-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.uni-who-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--uni-bg-white);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--uni-navy);
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+}
+
+.uni-who-icon {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-who-footer {
+    text-align: center;
+}
+
+.uni-who-footer p {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── UNIWORLD VS OTHERS ───────────────────────────────────── */
+
+.uni-compare-section {
+    background: var(--uni-navy);
+    padding: 88px 20px;
+}
+
+.uni-compare-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uni-compare-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 36px;
+}
+
+.uni-compare-header .uni-section-heading {
+    color: #ffffff !important;
+}
+
+.uni-compare-intro {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+}
+
+.uni-compare-sub {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    margin: 0;
+}
+
+.uni-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.uni-compare-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.uni-compare-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    
+}
+
+.uni-compare-footer {
+    text-align: center;
+}
+
+.uni-compare-footer p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── IS IT WORTH IT ───────────────────────────────────────── */
+
+.uni-worth-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-worth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-worth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.uni-worth-lead {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.uni-worth-sub {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    margin: 0;
+    font-weight: 600;
+}
+
+.uni-worth-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.uni-worth-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-soft);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+}
+
+.uni-worth-check {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-worth-conclusion-box {
+    background: rgba(39, 68, 114, 0.06);
+    border-left: 4px solid var(--uni-navy);
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+.uni-worth-conclusion-box p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--uni-text-dark);
+    line-height: 1.6;
+}
+
+/* ── EXPERT REVIEW ────────────────────────────────────────── */
+
+.uni-review-section {
+    background: var(--uni-bg-soft);
+    padding: 88px 20px;
+}
+
+.uni-review-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uni-review-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.uni-review-intro {
+    font-size: 17px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.uni-review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.uni-review-card {
+    background: var(--uni-bg-white);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 28px rgba(15, 28, 46, 0.06);
+}
+
+.uni-review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.uni-review-love .uni-review-card-header {
+    color: #1f8a4c;
+}
+
+.uni-review-consider .uni-review-card-header {
+    color: #c07a1e;
+}
+
+.uni-review-card-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    margin: 0;
+}
+
+.uni-review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.uni-review-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--uni-text-dark);
+    line-height: 1.5;
+}
+
+.uni-review-icon-love {
+    color: #1f8a4c;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.uni-review-icon-consider {
+    color: #c07a1e;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.uni-review-footer {
+    text-align: center;
+}
+
+.uni-review-footer p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--uni-navy);
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── WHY BOOK WITH US ─────────────────────────────────────── */
+
+.uni-booking-section {
+    background: var(--uni-navy-dark);
+    padding: 88px 20px;
+}
+
+.uni-booking-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uni-booking-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 36px;
+}
+
+.uni-booking-intro {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.uni-booking-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.uni-booking-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 16px 18px;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.uni-booking-num {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    
+    flex-shrink: 0;
+}
+
+.uni-booking-footer {
+    text-align: center;
+}
+
+.uni-booking-footer p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── FAQ ──────────────────────────────────────────────────── */
+
+.uni-faq-main-section {
+    background: var(--uni-bg-white);
+    padding: 88px 20px;
+}
+
+.uni-faq-container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.uni-faq-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 36px;
+}
+
+.uni-faq-individual-item {
+    background: var(--uni-bg-soft);
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.uni-faq-individual-item:hover {
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.06);
+}
+
+.uni-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--uni-navy);
+}
+
+.uni-faq-toggle-icon {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--uni-navy);
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+}
+
+.uni-faq-answer-text {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: var(--uni-text-body);
+    line-height: 1.7;
+}
+
+/* ── CTA ──────────────────────────────────────────────────── */
+
+.uni-cta-main-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--uni-navy) 0%, var(--uni-navy-dark) 100%);
+    padding: 96px 20px;
+    overflow: hidden;
+}
+
+.uni-cta-bg-pattern-layer {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 40%),
+                       radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.06) 0, transparent 40%);
+    z-index: 0;
+}
+
+.uni-cta-content-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.uni-cta-inner-wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uni-cta-heading-white {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    
+}
+
+.uni-cta-separator-white {
+    width: 64px;
+    height: 4px;
+    background: var(--uni-navy);
+    border-radius: 4px;
+    margin: 0 auto 28px;
+}
+
+.uni-cta-paragraph-white {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto 18px;
+}
+
+.uni-cta-considerations-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin: 32px 0;
+    text-align: left;
+}
+
+.uni-cta-considerations-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.uni-cta-considerations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.uni-cta-considerations-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.uni-cta-considerations-icon {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.uni-primary-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35);
+}
+
+.uni-primary-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.45);
+}
+
+.uni-secondary-outline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.uni-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: TABLET (max-width: 1024px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+    .uni-hero-main-title { font-size: 42px; }
+    .uni-hero-subtitle-text { font-size: 17px; }
+
+    .uni-why-grid,
+    .uni-excursions-grid,
+    .uni-service-grid,
+    .uni-worth-grid,
+    .uni-ships-grid { grid-template-columns: 1fr; gap: 40px; }
+
+    .uni-ships-image-col { order: -1; }
+
+    .uni-why-image-col .uni-image-frame,
+    .uni-ships-image-col .uni-image-frame,
+    .uni-excursions-image-col .uni-image-frame,
+    .uni-service-image-col .uni-image-frame { height: 320px; }
+
+    .uni-suites-content { grid-template-columns: 1fr; gap: 32px; }
+    .uni-suites-image-col .uni-image-frame { height: 320px; }
+    .uni-suites-features-grid { grid-template-columns: repeat(4, 1fr); }
+
+    .uni-destinations-grid { grid-template-columns: repeat(3, 1fr); }
+    .uni-compare-grid { grid-template-columns: repeat(2, 1fr); }
+    .uni-who-grid { grid-template-columns: repeat(2, 1fr); }
+    .uni-included-grid { grid-template-columns: 1fr 1fr; }
+    .uni-booking-grid { grid-template-columns: 1fr; }
+    .uni-dining-points { grid-template-columns: 1fr; }
+
+    .uni-dining-heading { font-size: 32px; }
+    .uni-cta-heading-white { font-size: 36px; }
+    .uni-cta-considerations-list { grid-template-columns: 1fr; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: MOBILE (max-width: 767px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+
+    .uni-intro-section, .uni-why-section, .uni-destinations-section,
+    .uni-ships-section, .uni-suites-section, .uni-included-section,
+    .uni-excursions-section, .uni-service-section, .uni-who-section,
+    .uni-compare-section, .uni-worth-section, .uni-review-section,
+    .uni-booking-section, .uni-faq-main-section { padding: 48px 16px; }
+
+    .uni-dining-section { padding: 56px 16px; min-height: auto; }
+
+    .uni-hero-section { height: 100vh; min-height: 480px; }
+    .uni-hero-main-title { font-size: 30px; }
+    .uni-hero-subtitle-text { font-size: 15px; }
+    .uni-hero-eyebrow-tag { font-size: 10px; padding: 6px 14px; }
+
+    .uni-section-heading { font-size: 26px; }
+
+    .uni-why-list { grid-template-columns: 1fr; }
+    .uni-why-image-col .uni-image-frame { height: 240px; }
+
+    .uni-destinations-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .uni-destination-card { padding: 14px 16px; font-size: 14px; }
+
+    .uni-ships-image-col .uni-image-frame { height: 220px; }
+    .uni-ships-highlights { gap: 8px; }
+    .uni-highlight-item { font-size: 14px; padding: 10px 14px; }
+
+    .uni-stateroom-row { gap: 8px; }
+    .uni-stateroom-pill { font-size: 12.5px; padding: 8px 14px; }
+    .uni-suites-image-col .uni-image-frame { height: 240px; }
+    .uni-suites-features-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .uni-feature-card { padding: 14px 8px; font-size: 12px; }
+
+    .uni-dining-heading { font-size: 26px; }
+    .uni-dining-note { font-size: 15px; }
+    .uni-dining-points { gap: 10px; }
+
+    .uni-included-grid { grid-template-columns: 1fr; gap: 10px; }
+    .uni-included-card { padding: 13px 16px; font-size: 14px; }
+
+    .uni-excursions-list { grid-template-columns: 1fr; }
+    .uni-excursions-image-col .uni-image-frame { height: 240px; }
+
+    .uni-service-image-col .uni-image-frame { height: 240px; }
+    .uni-service-pillars { grid-template-columns: 1fr; gap: 10px; }
+
+    .uni-who-grid { grid-template-columns: 1fr; gap: 10px; }
+
+    .uni-compare-grid { grid-template-columns: 1fr; gap: 10px; }
+
+    .uni-worth-list { gap: 8px; }
+    .uni-worth-item { padding: 10px 14px; font-size: 14px; }
+
+    .uni-review-grid { grid-template-columns: 1fr; gap: 18px; }
+    .uni-review-card { padding: 22px; }
+
+    .uni-booking-grid { gap: 10px; }
+    .uni-booking-card { padding: 14px 16px; font-size: 14px; }
+
+    .uni-faq-question-row { font-size: 14.5px; }
+    .uni-faq-individual-item { padding: 16px 18px; }
+
+    .uni-cta-main-section { padding: 56px 16px; }
+    .uni-cta-heading-white { font-size: 28px; }
+    .uni-cta-considerations-box { padding: 22px 20px; }
+    .uni-cta-button-group { flex-direction: column; gap: 12px; }
+    .uni-primary-cta-button,
+    .uni-secondary-outline-button { width: 100%; justify-content: center; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE: SMALL MOBILE (max-width: 360px)
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 360px) {
+
+    .uni-hero-main-title { font-size: 24px; }
+    .uni-hero-subtitle-text { font-size: 13px; }
+    .uni-section-heading { font-size: 22px !important; }
+    .uni-dining-heading { font-size: 22px !important; }
+    .uni-cta-heading-white { font-size: 22px !important; }
+
+    .uni-destinations-grid { grid-template-columns: 1fr !important; }
+    .uni-suites-features-grid { grid-template-columns: 1fr 1fr !important; }
+    .uni-compare-grid { grid-template-columns: 1fr !important; }
+    .uni-who-grid { grid-template-columns: 1fr !important; }
+    .uni-service-pillars { grid-template-columns: 1fr !important; }
+
+    .uni-intro-section, .uni-why-section, .uni-destinations-section,
+    .uni-ships-section, .uni-suites-section, .uni-included-section,
+    .uni-excursions-section, .uni-service-section, .uni-who-section,
+    .uni-compare-section, .uni-worth-section, .uni-review-section,
+    .uni-booking-section, .uni-faq-main-section { padding: 40px 12px !important; }
+
+    .uni-cta-considerations-box { padding: 18px 14px !important; }
+}

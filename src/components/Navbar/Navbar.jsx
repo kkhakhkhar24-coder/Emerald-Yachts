@@ -952,6 +952,14 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Best Luxury Expedition Cruises</NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld River Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1889,6 +1897,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best Luxury Expedition Cruises</NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld River Cruises
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
