@@ -967,6 +967,31 @@ const Navbar = () => {
               >
                 Uniworld River Cruises Review
               </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/cruise-and-rail"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Cruise And Rail Journeys
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/rhine"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Rhine River Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/uniworld-river-cruises/danube"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Danube River Cruises
+              </NavLink> */}
+
             </div>
           </div>
         </div>
@@ -1919,6 +1944,30 @@ const Navbar = () => {
             >
               Uniworld River Cruises Review
             </NavLink>
+
+            <NavLink
+                to="/uniworld-river-cruises/cruise-and-rail"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Cruise And Rail Journeys
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/rhine"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Rhine River Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/uniworld-river-cruises/danube"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Danube River Cruises
+              </NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>

@@ -1,8 +1,12 @@
 /* ============================================================
-   UNIWORLD RIVER CRUISES REVIEW — PAGE STYLES
-   Reference Colors & Typography preserved.
-   Prefix: urcr- (used for all new/custom sections)
-   Matched layouts: fcel- (used for hero, intro, faq, cta)
+   UNIWORLD RHINE RIVER CRUISES — PAGE STYLES
+   Reference Colors & Typography preserved verbatim from the
+   Uniworld River Cruises Review stylesheet (no re-written values).
+   Matched layouts: fcel- (hero, intro, faq, cta)
+   Matched layouts: urcr- (rating, quick-answer, inline-cta,
+     pros/cons, audience, review-section split layouts, why-book)
+   New unique prefix (page-specific content): rhine-
+   Fully responsive at 1024px / 768px / 480px.
    ============================================================ */
 
 :root {
@@ -727,14 +731,8 @@
 /* ============================================================
    PROS & CONS SECTIONS (NEW & SPLIT)
    ============================================================ */
-.urcr-pros-section {
-    padding: 100px 20px;
-}
-
-.urcr-cons-section {
-    padding: 100px 20px;
-    border-top: 1px solid rgba(39, 68, 114, 0.05);
-    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+.urcr-comparison-section {
+    padding: 60px 20px !important;
 }
 
 .urcr-pros-cons-container {
@@ -742,153 +740,140 @@
     margin: 0 auto;
 }
 
-.urcr-pros-grid {
+.urcr-comparison-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 60px;
-}
-
-.urcr-pro-card-wide {
-    grid-column: span 2;
-}
-
-.urcr-pro-card {
-    background: var(--urcr-bg-soft);
+    grid-template-columns: 1.25fr 1fr;
+    background: var(--urcr-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 16px;
-    padding: 30px 24px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.01);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
 }
 
-.urcr-pro-card:hover {
-    transform: translateY(-5px);
+.urcr-pros-panel {
+    padding: 50px 40px;
     background: var(--urcr-bg-white);
-    border-color: rgba(39, 68, 114, 0.2);
-    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.06);
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
 }
 
-.urcr-pro-icon-wrap {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: var(--urcr-bg-white);
-    color: var(--urcr-navy);
+.urcr-cons-panel {
+    padding: 50px 40px;
+    background: #fafbfe;
+}
+
+.urcr-panel-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.urcr-panel-title.pros-title {
+    color: #10b981;
+}
+
+.urcr-panel-title.cons-title {
+    color: #ef4444;
+}
+
+.urcr-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.urcr-list-item {
+    display: flex;
+    gap: 16px;
+}
+
+.urcr-item-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
-.urcr-pro-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--urcr-navy);
-    margin: 0 0 12px 0;
+.urcr-item-icon-wrap.pro-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
 }
 
-.urcr-pro-desc {
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--urcr-navy-light);
-    margin: 0;
+.urcr-item-icon-wrap.con-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
 }
 
-.urcr-cons-heading-wrap {
-    text-align: center;
-}
-
-.urcr-cons-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-}
-
-.urcr-con-card {
-    background: var(--urcr-bg-white);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-left: 4px solid var(--urcr-navy);
-    border-radius: 0 16px 16px 0;
-    padding: 26px 28px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
-}
-
-.urcr-con-card:hover {
-    transform: translateY(-3px);
-    background: var(--urcr-bg-soft);
-    border-color: rgba(39, 68, 114, 0.2);
-    border-left-color: var(--urcr-navy);
-    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.06);
-}
-
-.urcr-con-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--urcr-navy);
-    margin: 0 0 10px 0;
+.urcr-item-content {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.urcr-con-desc {
-    font-size: 15px;
-    line-height: 1.6;
+.urcr-item-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+}
+
+.urcr-item-desc {
+    font-size: 14.5px;
+    line-height: 1.5;
     color: var(--urcr-navy-light);
     margin: 0;
 }
 
-@media (max-width: 1024px) {
-    .urcr-pros-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .urcr-pros-cons-section {
-        padding: 60px 18px;
-    }
-
-    .urcr-pros-grid {
+@media (max-width: 992px) {
+    .urcr-comparison-board {
         grid-template-columns: 1fr;
     }
 
-    .urcr-cons-grid {
-        grid-template-columns: 1fr;
+    .urcr-pros-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 40px 30px;
     }
 
-    .urcr-pro-card[style],
-    .urcr-pro-card-wide {
-        grid-column: span 1;
+    .urcr-cons-panel {
+        padding: 40px 30px;
     }
 }
 
 @media (max-width: 480px) {
-    .urcr-pros-cons-section {
-        padding: 44px 14px;
+    .urcr-pros-panel,
+    .urcr-cons-panel {
+        padding: 30px 20px;
     }
 
-    .urcr-pros-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+    .urcr-panel-title {
+        font-size: 19px;
+        margin-bottom: 25px;
     }
 
-    .urcr-pro-card {
-        padding: 20px;
+    .urcr-panel-list {
+        gap: 20px;
     }
 
-    .urcr-pro-card[style],
-    .urcr-pro-card-wide {
-        grid-column: span 1;
+    .urcr-list-item {
+        gap: 12px;
     }
 
-    .urcr-con-card {
-        padding: 20px;
+    .urcr-item-title {
+        font-size: 15px;
+    }
+
+    .urcr-item-desc {
+        font-size: 13.5px;
     }
 }
+
 
 /* ============================================================
    SHIPS HIGHLIGHT SECTION (NEW)
@@ -1996,6 +1981,46 @@
     font-weight: 500;
 }
 
+/* dining light section theme overrides */
+.urcr-dining-light-section {
+    background: var(--urcr-bg-white) !important;
+    color: var(--urcr-navy);
+}
+
+.urcr-dining-light-section .urcr-review-title {
+    color: var(--urcr-navy) !important;
+}
+
+.urcr-dining-light-section .fcel-lead-paragraph {
+    color: var(--urcr-navy-light) !important;
+}
+
+.urcr-dining-light-section .urcr-dining-course-card {
+    background: var(--urcr-bg-soft) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    border-left: 3px solid var(--urcr-navy) !important;
+}
+
+.urcr-dining-light-section .urcr-dining-course-card:hover {
+    background: var(--urcr-bg-white) !important;
+    border-color: var(--urcr-navy) !important;
+    border-left-color: var(--urcr-navy) !important;
+}
+
+.urcr-dining-light-section .urcr-dining-course-text {
+    color: var(--urcr-navy) !important;
+}
+
+.urcr-dining-light-section .urcr-dining-course-icon {
+    background: rgba(39, 68, 114, 0.08) !important;
+    color: var(--urcr-navy) !important;
+}
+
+.urcr-dining-light-section .urcr-dining-course-card:hover .urcr-dining-course-icon {
+    background: var(--urcr-navy) !important;
+    color: #ffffff !important;
+}
+
 /* 3. EXCURSIONS REVIEW (SHORE EXPERIENCES - timeline style) */
 .urcr-excursion-layout {
     display: grid;
@@ -2301,8 +2326,6 @@
 .fcel-intro-section,
 .urcr-rating-section,
 .urcr-quick-answer-section,
-.urcr-pros-section,
-.urcr-cons-section,
 .urcr-ships-section,
 .urcr-review-section,
 .urcr-dest-section,
@@ -2312,7 +2335,12 @@
 .fcel-faq-section,
 .fcel-cta-section,
 .urcr-inline-cta-section,
-.urcr-dining-dark-section {
+.urcr-dining-light-section,
+.rhine-season-section,
+.rhine-included-section,
+.rhine-dest-section,
+.rhine-tips-section,
+.rhine-worth-section {
     padding: 60px 20px !important;
 }
 
@@ -2371,4 +2399,316 @@
     .fcel-page-wrapper p {
         font-size: 16px !important;
     }
+}
+/* ============================================================
+   WHAT'S INCLUDED — CHECKLIST PILL GRID (new — no existing
+   equivalent in the urcr- vocabulary)
+   ============================================================ */
+.rhine-included-section {
+    padding: 100px 20px;
+}
+
+.rhine-included-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.rhine-included-split {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.rhine-included-copy-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.rhine-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.rhine-included-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--urcr-bg-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--urcr-navy);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rhine-included-pill svg {
+    flex-shrink: 0;
+    color: var(--urcr-navy);
+}
+
+@media (max-width: 1024px) {
+    .rhine-included-section { padding: 70px 18px; }
+    
+    .rhine-included-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rhine-included-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ============================================================
+   TOP RHINE RIVER DESTINATIONS — ICON + NAME + DESCRIPTION CARDS
+   (new — extends the urcr-dest-card concept with a description,
+   needed because Rhine destinations include descriptive text)
+   ============================================================ */
+.rhine-dest-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.rhine-dest-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.rhine-dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.rhine-dest-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
+    background: linear-gradient(150deg, var(--urcr-navy) 0%, var(--urcr-bg-dark) 100%);
+}
+
+.rhine-dest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.12);
+}
+
+.rhine-dest-card-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 26px 24px;
+}
+
+.rhine-dest-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    color: #ffffff;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rhine-dest-card:hover .rhine-dest-icon-wrap {
+    background: #ffffff;
+    color: var(--urcr-navy);
+    transform: rotate(15deg) scale(1.05);
+}
+
+.rhine-dest-card-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
+}
+
+.rhine-dest-card-desc {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .rhine-dest-grid { grid-template-columns: repeat(2, 1fr); }
+    .rhine-dest-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .rhine-dest-grid { grid-template-columns: 1fr; gap: 14px; }
+    .rhine-dest-card { min-height: 200px; }
+}
+
+/* ============================================================
+   BEST TIME TO CRUISE THE RHINE — SEASON CARDS (new)
+   ============================================================ */
+.rhine-season-section {
+    background: linear-gradient(180deg, var(--urcr-bg-dark) 0%, var(--urcr-bg-dark2) 100%);
+    padding: 100px 20px;
+}
+
+.rhine-season-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rhine-season-container .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.rhine-season-container .fcel-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.rhine-season-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 44px;
+    text-align: left;
+}
+
+.rhine-season-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px 22px;
+    transition: all 0.3s ease;
+}
+
+.rhine-season-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-6px);
+}
+
+.rhine-season-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(96, 165, 250, 0.15);
+    color: #60a5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.rhine-season-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.rhine-season-text {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .rhine-season-grid { grid-template-columns: repeat(2, 1fr); }
+    .rhine-season-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .rhine-season-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   PLANNING TIPS — NUMBERED TIP LIST (new)
+   ============================================================ */
+.rhine-tips-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.rhine-tips-container {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rhine-tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 34px 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.rhine-tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--urcr-bg-soft);
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.rhine-tip-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--urcr-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.rhine-tip-text {
+    font-size: 15.5px;
+    color: #334155;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 4px;
+}
+
+@media (max-width: 1024px) {
+    .rhine-tips-section { padding: 70px 18px; }
+}
+
+@media (max-width: 480px) {
+    .rhine-tip-item { padding: 14px 16px; gap: 12px; }
+    .rhine-tip-text { font-size: 14px; }
+}
+
+/* ============================================================
+   IS IT WORTH THE MONEY — SIMPLE TEXT SECTION (new)
+   ============================================================ */
+.rhine-worth-section {
+    background: var(--urcr-bg-white);
+    padding: 90px 20px;
+}
+
+.rhine-worth-container {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
 }

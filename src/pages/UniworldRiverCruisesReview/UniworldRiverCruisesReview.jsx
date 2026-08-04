@@ -4,7 +4,7 @@ import {
     Ship, Star, Sparkles, Phone, LayoutList, Heart,
     CheckCircle, ChevronRight, Globe, Award, Utensils, Wine,
     Bed, Compass, Gift, Smile, ShieldCheck, XCircle, AlertTriangle,
-    Image as ImageIcon, Map, Sun, Trees
+    Image as ImageIcon, Map, Sun, Trees, Bath, Bell, Coffee, Activity, Coins
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
@@ -389,8 +389,8 @@ function UniworldRiverCruisesReview() {
                 <section className="urcr-rating-section">
                     <div className="urcr-rating-container">
                         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <span className="fcel-eyebrow-label">⭐ OUR OVERALL RATING</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>Expert Review Summary</h2>
+                            <span className="fcel-eyebrow-label urcr-eyebrow-rating">⭐ OUR OVERALL RATING</span>
+                            <h2 className="fcel-section-heading">Expert Review Summary</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
                         <div className="urcr-rating-card">
@@ -503,7 +503,7 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-pros-cons-container">
                         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
                             <span className="fcel-eyebrow-label">PROS & CONS</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>What We Love About Uniworld</h2>
+                            <h2 className="fcel-section-heading">What We Love About Uniworld</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
 
@@ -545,7 +545,7 @@ function UniworldRiverCruisesReview() {
                                     Many suites include butler service, marble bathrooms, luxury linens, and river views.
                                 </p>
                             </div>
-                            <div className="urcr-pro-card" style={{ gridColumn: 'span 2' }}>
+                            <div className="urcr-pro-card urcr-pro-card-wide">
                                 <div className="urcr-pro-icon-wrap">
                                     <Gift size={20} />
                                 </div>
@@ -563,8 +563,8 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-pros-cons-container">
                         {/* Cons Heading */}
                         <div className="urcr-cons-heading-wrap" style={{ textAlign: 'center', marginBottom: '50px' }}>
-                            <span className="fcel-eyebrow-label">LIMITATIONS</span>
-                            <h3 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>Cons of Uniworld</h3>
+                            <span className="fcel-eyebrow-label urcr-eyebrow-limitations">LIMITATIONS</span>
+                            <h2 className="fcel-section-heading">Cons of Uniworld</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ marginBottom: '40px' }}>
                                 A balanced and honest assessment to build travel planning confidence.
@@ -617,7 +617,7 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-ships-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">THE UNIWORLD FLEET</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>Boutique Ships We Recommend</h2>
+                            <h2 className="fcel-section-heading">Boutique Ships We Recommend</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto 40px auto' }}>
                                 Uniworld fleet is comprised of unique ships, each matching the spirit of the rivers they sail.
@@ -641,34 +641,46 @@ function UniworldRiverCruisesReview() {
                 {/* Cabins & Suites */}
                 <section className="urcr-review-section urcr-bg-soft">
                     <div className="urcr-review-container">
-                        <div className="urcr-review-grid">
+                        <div className="urcr-cabins-container">
                             <div className="urcr-review-copy-col">
-                                <span className="fcel-eyebrow-label">ACCOMMODATIONS</span>
-                                <h3 className="urcr-review-title">Cabins & Suites</h3>
-                               
+                                <span className="fcel-eyebrow-label urcr-eyebrow-accommodations">ACCOMMODATIONS</span>
+                                <h2 className="urcr-review-title" style={{ textAlign: "left" }}>Cabins & Suites</h2>
+
                                 <p className="fcel-lead-paragraph">
                                     Uniworld accommodations are styled like boutique hotels, combining fine craftsmanship with modern luxury. Guests can expect elegant decorations, high-end linens, and personalized touches.
                                 </p>
-                                <div className="urcr-review-bullets">
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Luxury bedding and custom-made Savoir of England beds.</span>
+                                <div className="urcr-cabin-feature-grid">
+                                    <div className="urcr-cabin-feature-card">
+                                        <div className="urcr-cabin-card-icon">
+                                            <Bed size={20} />
+                                        </div>
+                                        <span className="urcr-cabin-card-text">Luxury bedding and custom-made Savoir of England beds.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Marble bathrooms equipped with Asprey bath products.</span>
+                                    <div className="urcr-cabin-feature-card">
+                                        <div className="urcr-cabin-card-icon">
+                                            <Bath size={20} />
+                                        </div>
+                                        <span className="urcr-cabin-card-text">Marble bathrooms equipped with Asprey bath products.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Butler service in select suites for unpacking, shoe polishing, and meal deliveries.</span>
+                                    <div className="urcr-cabin-feature-card">
+                                        <div className="urcr-cabin-card-icon">
+                                            <Bell size={20} />
+                                        </div>
+                                        <span className="urcr-cabin-card-text">Butler service in select suites for unpacking, shoe polishing, and meal deliveries.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Luxury amenities, robes, slippers, and ample river views.</span>
+                                    <div className="urcr-cabin-feature-card">
+                                        <div className="urcr-cabin-card-icon">
+                                            <Ship size={20} />
+                                        </div>
+                                        <span className="urcr-cabin-card-text">Luxury amenities, robes, slippers, and ample river views.</span>
                                     </div>
                                 </div>
                             </div>
-                            <div className="urcr-review-placeholder-col">
+                            <div className="urcr-image-wrapper-premium">
+                                <div className="urcr-badge-overlay-gold">
+                                    <Sparkles size={14} />
+                                    <span>Boutique Comfort</span>
+                                </div>
                                 <UrcrPlaceholder label="Uniworld Luxury Cabin / Suite Interior" />
                             </div>
                         </div>
@@ -676,37 +688,49 @@ function UniworldRiverCruisesReview() {
                 </section>
 
                 {/* Dining Review */}
-                <section className="urcr-review-section urcr-bg-white">
+                <section className="urcr-review-section urcr-dining-dark-section">
                     <div className="urcr-review-container">
-                        <div className="urcr-review-grid urcr-review-reverse">
+                        <div className="urcr-dining-container">
+                            <div className="urcr-image-wrapper-premium">
+                                <div className="urcr-badge-overlay-gold">
+                                    <Utensils size={14} />
+                                    <span>5-Star Culinary</span>
+                                </div>
+                                <UrcrPlaceholder label="Uniworld Fine Dining Experience" />
+                            </div>
                             <div className="urcr-review-copy-col">
-                                <span className="fcel-eyebrow-label">CULINARY EXCELLENCE</span>
-                                <h3 className="urcr-review-title">Dining Review</h3>
-                                
-                                <p className="fcel-lead-paragraph">
+                                <span className="fcel-eyebrow-label" style={{ width: "230px" }}>CULINARY EXCELLENCE</span>
+                                <h2 className="urcr-review-title">Dining Review</h2>
+
+                                <p className="fcel-lead-paragraph" style={{ color: "white" }}>
                                     With a focus on farm-to-table cuisine, Uniworld chefs use local ingredients harvested from the regions visited. Dinners are paired with locally produced wines representing the cruise's itinerary.
                                 </p>
-                                <div className="urcr-review-bullets">
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Restaurant quality matching Michelin-starred establishments.</span>
+                                <div className="urcr-dining-menu-list">
+                                    <div className="urcr-dining-course-card">
+                                        <div className="urcr-dining-course-icon">
+                                            <Utensils size={20} />
+                                        </div>
+                                        <span className="urcr-dining-course-text">Restaurant quality matching Michelin-starred establishments.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Unlimited premium wine, beers, and spirits selected daily by sommeliers.</span>
+                                    <div className="urcr-dining-course-card">
+                                        <div className="urcr-dining-course-icon">
+                                            <Wine size={20} />
+                                        </div>
+                                        <span className="urcr-dining-course-text">Unlimited premium wine, beers, and spirits selected daily by sommeliers.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Regional cuisine reflecting local traditions and culinary history.</span>
+                                    <div className="urcr-dining-course-card">
+                                        <div className="urcr-dining-course-icon">
+                                            <Globe size={20} />
+                                        </div>
+                                        <span className="urcr-dining-course-text">Regional cuisine reflecting local traditions and culinary history.</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>In-suite room service and daily elegant afternoon tea service.</span>
+                                    <div className="urcr-dining-course-card">
+                                        <div className="urcr-dining-course-icon">
+                                            <Coffee size={20} />
+                                        </div>
+                                        <span className="urcr-dining-course-text">In-suite room service and daily elegant afternoon tea service.</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="urcr-review-placeholder-col">
-                                <UrcrPlaceholder label="Uniworld Fine Dining Experience" />
                             </div>
                         </div>
                     </div>
@@ -715,35 +739,59 @@ function UniworldRiverCruisesReview() {
                 {/* Excursions Review */}
                 <section className="urcr-review-section urcr-bg-soft">
                     <div className="urcr-review-container">
-                        <div className="urcr-review-grid">
+                        <div className="urcr-excursion-layout">
                             <div className="urcr-review-copy-col">
-                                <span className="fcel-eyebrow-label">SHORE EXPERIENCES</span>
-                                <h3 className="urcr-review-title">Excursions Review</h3>
-                               
+                                <span className="fcel-eyebrow-label urcr-eyebrow-shore">SHORE EXPERIENCES</span>
+                                <h2 className="urcr-review-title">Excursions Review</h2>
+
                                 <p className="fcel-lead-paragraph">
                                     Uniworld provides curated daily shore excursions designed for all physical activity levels. These VIP and small-group outings help travelers explore each port like a local.
                                 </p>
-                                <div className="urcr-review-bullets">
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Guided walking tours led by local historians.</span>
+
+                                <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', marginBottom: '20px', boxShadow: '0 12px 32px rgba(39,68,114,0.08)', border: '1px solid rgba(39,68,114,0.08)' }}>
+                                    <div className="urcr-badge-overlay-gold">
+                                        <Compass size={14} />
+                                        <span>Shore Program</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Active options including bicycle tours and Nordic walking.</span>
-                                    </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Private experiences and exclusive, after-hours VIP access.</span>
-                                    </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span>Immersive village visits and curated regional wine tastings.</span>
-                                    </div>
+                                    <UrcrPlaceholder label="Uniworld Premium Shore Excursion" />
                                 </div>
                             </div>
-                            <div className="urcr-review-placeholder-col">
-                                <UrcrPlaceholder label="Uniworld Premium Shore Excursion" />
+
+                            <div className="urcr-excursion-timeline">
+                                <div className="urcr-excursion-node">
+                                    <div className="urcr-excursion-bullet-dot">
+                                        <Map size={12} />
+                                    </div>
+                                    <p className="urcr-excursion-node-text">Guided walking tours led by local historians.</p>
+                                </div>
+                                <div className="urcr-excursion-node">
+                                    <div className="urcr-excursion-bullet-dot">
+                                        <Activity size={12} />
+                                    </div>
+                                    <p className="urcr-excursion-node-text">Active options including bicycle tours and Nordic walking.</p>
+                                </div>
+                                <div className="urcr-excursion-node">
+                                    <div className="urcr-excursion-bullet-dot">
+                                        <Award size={12} />
+                                    </div>
+                                    <p className="urcr-excursion-node-text">Private experiences and exclusive, after-hours VIP access.</p>
+                                </div>
+                                <div className="urcr-excursion-node">
+                                    <div className="urcr-excursion-bullet-dot">
+                                        <Trees size={12} />
+                                    </div>
+                                    <p className="urcr-excursion-node-text">Immersive village visits and curated regional wine tastings.</p>
+                                </div>
+
+                                <div className="urcr-excursion-rating-badge">
+                                    <div className="urcr-excursion-rating-icon">
+                                        <Compass size={24} />
+                                    </div>
+                                    <div className="urcr-excursion-rating-details">
+                                        <h4>Top-Rated Shore Program</h4>
+                                        <p>Custom paced active & cultural experiences included at every port.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -754,7 +802,7 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-dest-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">WORLD CLASS RIVERWAYS</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>Destinations & Itineraries</h2>
+                            <h2 className="fcel-section-heading">Destinations & Itineraries</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto 40px auto' }}>
                                 Uniworld operates across the world's most historic rivers, showcasing castles, cultures, and cities.
@@ -783,31 +831,59 @@ function UniworldRiverCruisesReview() {
                 {/* PRICING & VALUE (NEW) */}
                 <section className="urcr-review-section urcr-bg-soft">
                     <div className="urcr-review-container">
-                        <div className="urcr-review-grid" style={{ marginBottom: '0' }}>
+                        <div className="urcr-pricing-grid">
                             <div className="urcr-review-copy-col">
-                                <span className="fcel-eyebrow-label">INVESTMENT & VALUE</span>
-                                <h3 className="urcr-review-title">Pricing Analysis</h3>
-                                
+                                <span className="fcel-eyebrow-label urcr-eyebrow-investment">INVESTMENT & VALUE</span>
+                                <h2 className="urcr-review-title">Pricing Analysis</h2>
+
                                 <p className="fcel-lead-paragraph">
                                     While Uniworld cruise fares sit at the higher end of the river cruise market, their near-total inclusion model delivers strong value. When you factor in premium beverages, daily shore excursions, gratuities, airport transfers, and butler services, it is highly competitive against custom-built land itineraries.
                                 </p>
-                                <div className="urcr-review-bullets">
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span><strong>Typical Prices:</strong> Fares reflect the high-end boutique nature of the ships, accommodations, and small-group focus.</span>
+
+                                <div className="urcr-image-wrapper-premium" style={{ marginTop: '20px' }}>
+                                    <div className="urcr-badge-overlay-gold">
+                                        <Coins size={14} />
+                                        <span>Luxury Value</span>
                                     </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span><strong>Included Value:</strong> Gratuities, premium unlimited drinks, transfers, Wi-Fi, and shore excursions are all wrapped in.</span>
-                                    </div>
-                                    <div className="urcr-review-bullet">
-                                        <CheckCircle size={16} className="urcr-review-bullet-icon" />
-                                        <span><strong>Who gets the best value:</strong> Travelers who appreciate fine dining, luxury aesthetics, and hassle-free, all-inclusive vacations.</span>
-                                    </div>
+                                    <UrcrPlaceholder label="Uniworld Luxury River Cruise Value" />
                                 </div>
                             </div>
-                            <div className="urcr-review-placeholder-col">
-                                <UrcrPlaceholder label="Uniworld Luxury River Cruise Value" />
+
+                            <div className="urcr-pricing-dashboard">
+                                <div className="urcr-pricing-dashboard-header">
+                                    <h4 className="urcr-pricing-dashboard-title">The Uniworld Value Model</h4>
+                                    <p className="urcr-pricing-dashboard-subtitle">A review of inclusions and expected costs</p>
+                                </div>
+
+                                <div className="urcr-pricing-block">
+                                    <span className="urcr-pricing-block-title">
+                                        <Coins size={16} /> Typical Prices
+                                    </span>
+                                    <p className="urcr-pricing-block-desc">
+                                        Fares reflect the high-end boutique nature of the ships, accommodations, and small-group focus.
+                                    </p>
+                                </div>
+
+                                <div className="urcr-pricing-block">
+                                    <span className="urcr-pricing-block-title">
+                                        <CheckCircle size={16} /> Included Value
+                                    </span>
+                                    <p className="urcr-pricing-block-desc">
+                                        Gratuities, premium unlimited drinks, transfers, Wi-Fi, and shore excursions are all wrapped in.
+                                    </p>
+                                    <div className="urcr-pricing-inclusions-list">
+                                        {['Gratuities', 'Premium Drinks', 'Shore Excursions', 'Wi-Fi', 'Transfers'].map((pill, idx) => (
+                                            <span key={idx} className="urcr-pricing-inclusion-pill">{pill}</span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="urcr-pricing-value-box">
+                                    <span className="urcr-pricing-value-tag">Who gets the best value</span>
+                                    <p className="urcr-pricing-value-text">
+                                        Travelers who appreciate fine dining, luxury aesthetics, and hassle-free, all-inclusive vacations.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -835,8 +911,8 @@ function UniworldRiverCruisesReview() {
                 <section className="urcr-audience-section">
                     <div className="urcr-audience-container">
                         <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">WHO IS IT FOR?</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 15px 0' }}>Is Uniworld Right for You?</h2>
+                            <span className="fcel-eyebrow-label urcr-eyebrow-audience">WHO IS IT FOR?</span>
+                            <h2 className="fcel-section-heading">Is Uniworld Right for You?</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
                         <div className="urcr-audience-grid">
@@ -871,7 +947,7 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-comparison-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">CRUISE COMPARISON</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '10px 0 10px 0' }}>Uniworld vs Other Cruise Lines</h2>
+                            <h2 className="fcel-section-heading">Uniworld vs Other Cruise Lines</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
                                 A quick look at how Uniworld River Cruises stands against top alternatives in the luxury river cruise space.
@@ -937,8 +1013,8 @@ function UniworldRiverCruisesReview() {
                 {/* FINAL VERDICT (NEW) */}
                 <section className="urcr-review-section urcr-bg-soft">
                     <div className="urcr-review-container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-                        <span className="fcel-eyebrow-label">FINAL VERDICT</span>
-                        <h2 className="fcel-section-heading" style={{ margin: '10px 0 20px 0' }}>Is Uniworld Worth Booking?</h2>
+                        <span className="fcel-eyebrow-label urcr-eyebrow-verdict">FINAL VERDICT</span>
+                        <h2 className="fcel-section-heading">Is Uniworld Worth Booking?</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <div style={{ color: '#f1c40f', fontSize: '32px', marginBottom: '24px' }}>⭐⭐⭐⭐⭐</div>
                         <p className="fcel-lead-paragraph" style={{ fontSize: '20px', fontWeight: '500', color: 'var(--urcr-navy)', lineHeight: '1.7' }}>
@@ -955,8 +1031,8 @@ function UniworldRiverCruisesReview() {
                     <div className="urcr-why-book-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">PLANNING ADVANTAGE</span>
-                            <h2 className="fcel-section-heading" style={{ margin: '1px 0 10px 0' }}>Why Book With Trips & Ships Luxury Travel?</h2>
-                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <h2 className="fcel-section-heading">Why Book With Trips & Ships Luxury Travel?</h2>
+                            <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
                                 As river cruise experts, we add value to your Uniworld booking, helping you plan every detail from takeoff to return.
                             </p>

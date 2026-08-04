@@ -138,6 +138,9 @@ import BestExpeditionCruises from "./pages/BestExpeditionCruises/BestExpeditionC
 import BestLuxuryExpeditionCruises from "./pages/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
 import UniworldRiverCruises from "../src/pages/UniworldRiverCruises/UniworldRiverCruises";
 import UniworldRiverCruisesReview from "./pages/UniworldRiverCruisesReview/UniworldRiverCruisesReview";
+import Uniworldcruiseandrailjourneys from "./pages/Uniworldcruiseandrailjourneys/Uniworldcruiseandrailjourneys";
+import Uniworldrhinerivercruises from "./pages/Uniworldrhinerivercruises/Uniworldrhinerivercruises";
+// import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniworlddanuberivercruises";
 
 function App() {
   return (
@@ -768,6 +771,22 @@ function App() {
             path="/uniworld-river-cruises-review"
             element={<UniworldRiverCruisesReview />}
           />
+
+          <Route
+            path="/uniworld-river-cruises/cruise-and-rail"
+            element={<Uniworldcruiseandrailjourneys />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/rhine"
+            element={<Uniworldrhinerivercruises />}
+          />
+
+          {/* <Route
+            path="/uniworld-river-cruises/danube"
+            element={<Uniworlddanuberivercruises />}
+          /> */}
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
