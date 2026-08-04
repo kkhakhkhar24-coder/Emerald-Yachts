@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './UniworldCruiseAndRailJourneys.css'
+import './Uniworldcruiseandrailjourneys.css'
 import {
     Ship, Sparkles, Phone, LayoutList,
     CheckCircle, Globe, Award, Utensils, Wine,

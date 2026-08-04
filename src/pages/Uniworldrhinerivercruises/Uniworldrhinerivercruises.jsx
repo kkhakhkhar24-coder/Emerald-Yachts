@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './UniworldRhineRiverCruises.css'
+import './Uniworldrhinerivercruises.css'
 import {
     Ship, Sparkles, Phone, LayoutList, CheckCircle, XCircle,
     Globe, Award, Utensils, Wine, Bed, Compass, Gift,
