@@ -984,6 +984,22 @@ const Navbar = () => {
                 Uniworld Rhine River Cruises
               </NavLink>
 
+              <NavLink
+                to="/uniworld-river-cruises/whats-included/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What's Included on a Uniworld River Cruise
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/cost-deals/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How Much Does a Uniworld River Cruise Cost?
+              </NavLink>
+
               {/* <NavLink
                 to="/uniworld-river-cruises/danube"
                 className="nav-dropdown-single"
@@ -1946,22 +1962,38 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/uniworld-river-cruises/cruise-and-rail"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Cruise And Rail Journeys
-              </NavLink>
+              to="/uniworld-river-cruises/cruise-and-rail"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Cruise And Rail Journeys
+            </NavLink>
 
-              <NavLink
-                to="/uniworld-river-cruises/rhine"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Rhine River Cruises
-              </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises/rhine"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Rhine River Cruises
+            </NavLink>
 
-              {/* <NavLink
+            <NavLink
+              to="/uniworld-river-cruises/whats-included/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What's Included on a Uniworld River Cruise
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/cost-deals/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              How Much Does a Uniworld River Cruise Cost?
+            </NavLink>
+
+            {/* <NavLink
                 to="/uniworld-river-cruises/danube"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
