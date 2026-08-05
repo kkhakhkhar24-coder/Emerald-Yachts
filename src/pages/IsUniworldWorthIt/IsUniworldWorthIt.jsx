@@ -5,7 +5,7 @@ import {
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Wifi, Wine, MapPin, Coffee, Landmark,
-    Sparkle, DollarSign, TrendingUp, Bike, Music, Waves, Info, BookOpen, Compass
+    Sparkle, DollarSign, TrendingUp, Bike, Music, Waves, Info, BookOpen
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
