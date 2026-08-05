@@ -23,11 +23,19 @@
     opacity: 0.7;
     display: block;
     margin-bottom: 14px;
+    text-align: left !important;
 }
 
 .uni-eyebrow-light {
     color: rgba(255, 255, 255, 0.65) !important;
     opacity: 1 !important;
+}
+
+.uni-eyebrow-center {
+    text-align: center !important;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 14px;
 }
 
 .uni-white-heading {
@@ -44,7 +52,7 @@
     color: var(--uni-navy);
     margin: 0 0 18px 0;
     line-height: 1.25;
-    
+
 }
 
 .uni-heading-center {
@@ -235,7 +243,7 @@
     font-weight: 700;
     line-height: 1.15;
     margin: 0 0 22px 0;
-    
+
     text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
@@ -374,8 +382,13 @@
 }
 
 @keyframes float-slow {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-8px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
 }
 
 @media (max-width: 991px) {
@@ -383,9 +396,11 @@
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     .uni-intro-image-card .uni-image-frame {
         height: 380px;
     }
+
     .uni-intro-floating-badge {
         right: 10px;
     }
@@ -502,7 +517,7 @@
     margin: 0;
     line-height: 1.4;
     font-style: italic;
-    
+
 }
 
 .uni-why-statement-primary {
@@ -537,142 +552,232 @@
     margin: 0;
 }
 
-.uni-destinations-cards-grid {
+/* ── TABS ── */
+.uni-tabs-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 320px 1fr;
+    gap: 36px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.uni-destinations-cards-grid.uni-destinations-cards-bottom {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-    margin: 20px auto 0;
-}
-
-.uni-destination-feature-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+.uni-tabs-sidebar {
     display: flex;
     flex-direction: column;
+    gap: 28px;
+    position: sticky;
+    top: 100px;
 }
 
-.uni-destination-feature-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+.uni-tabs-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.uni-dest-card-image {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
-
-.uni-dest-card-image .uni-placeholder {
-    min-height: 200px;
-    border-radius: 0;
+.uni-tab-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: transparent;
     border: none;
-    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 14px, rgba(255,255,255,0.01) 14px, rgba(255,255,255,0.01) 28px);
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
 }
 
-.uni-dest-card-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85));
+.uni-tab-btn:hover {
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.uni-dest-card-tag {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+.uni-tab-btn.active {
     background: var(--uni-navy);
     color: #ffffff;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 6px 14px;
-    border-radius: 30px;
-    z-index: 2;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.4);
 }
 
-.uni-dest-card-content {
-    padding: 20px;
-    flex-grow: 1;
+.uni-tab-panel {
+    display: none;
+}
+
+.uni-tab-panel.active {
+    display: block;
+    animation: uniFadeIn 0.4s ease;
+}
+
+@keyframes uniFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.uni-tab-dest-layout {
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-.uni-dest-card-title {
-    font-size: 24px;
+.uni-tab-dest-image {
+    position: relative;
+    height: 260px;
+    min-height: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.uni-tab-dest-image .uni-placeholder {
+    min-height: 260px;
+    border-radius: 0;
+    border: none;
+    background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 14px, rgba(255, 255, 255, 0.01) 14px, rgba(255, 255, 255, 0.01) 28px);
+}
+
+.uni-tab-dest-image .uni-dest-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85) 100%);
+}
+
+.uni-tab-dest-image .uni-dest-card-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: auto;
+}
+
+.uni-tab-dest-content {
+    padding: 32px 34px 36px;
+}
+
+.uni-tab-dest-title {
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px 0;
     letter-spacing: 0.01em;
 }
 
-.uni-dest-card-description {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.6;
-    margin: 0 0 24px 0;
+.uni-tab-dest-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin: 0 0 28px 0;
 }
 
-.uni-dest-card-details {
-    margin-top: auto;
+.uni-tab-dest-details {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
-.uni-dest-detail-item {
+.uni-tab-detail-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 13.5px;
+    gap: 14px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.9);
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.uni-dest-detail-item svg {
+.uni-tab-detail-item strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.uni-tab-detail-item svg {
     color: #4a9eff;
     flex-shrink: 0;
 }
 
-.uni-destinations-footer {
-    margin-top: 40px;
+.uni-tab-dest-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.35);
+}
+
+.uni-tab-dest-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(39, 68, 114, 0.5);
+    background: #2e5080;
+}
+
+.uni-destinations-statement-box {
+    margin-top: 48px;
     padding: 28px 36px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 12px;
-    text-align: center;
-    max-width: 860px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #4a9eff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
-.uni-destinations-footer p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.92);
-    line-height: 1.8;
-    letter-spacing: 0.01em;
+.uni-destinations-statement-icon {
+    color: #4a9eff;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+.uni-destinations-statement-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.uni-destinations-footer::before {
-    content: "";
-    display: block;
-    width: 64px;
-    height: 3px;
-    margin: 0 auto 18px;
-    border-radius: 2px;
-    background: linear-gradient(90deg, #4a9eff, #7bc4ff);
+.uni-destinations-statement-text em {
+    color: #7bc4ff;
+    font-style: italic;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .uni-destinations-statement-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 22px 24px;
+        margin-top: 32px;
+    }
 }
 
 /* ── BOUTIQUE SHIPS ───────────────────────────────────────── */
@@ -687,27 +792,61 @@
     margin: 0 auto;
 }
 
-.uni-ships-grid {
+.uni-ships-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 44px;
+}
+
+.uni-ships-intro {
+    font-size: 15px;
+    color: var(--uni-text-body);
+    line-height: 1.6;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.uni-fleet-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 68px;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 52px;
     align-items: center;
 }
 
-.uni-ships-image-col {
+.uni-fleet-image-col {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.uni-ships-image-col .uni-image-frame {
-    height: 340px;
+.uni-fleet-image-col .uni-image-frame {
+    height: 380px;
     min-height: unset;
+}
+
+.uni-fleet-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
 .uni-ships-pivot-box {
     background: var(--uni-bg-soft);
-    border-radius: 12px;
+    border-left: 4px solid var(--uni-navy);
+    border-radius: 8px;
     padding: 18px 22px;
 }
 
@@ -726,12 +865,69 @@
     line-height: 1.6;
 }
 
-.uni-ships-lead {
-    font-size: 17px;
-    font-weight: 500;
+.uni-fleet-table-col {
+    background: var(--uni-bg-soft);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--uni-border-soft);
+}
+
+.uni-fleet-ships-row,
+.uni-fleet-ship-item {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    align-items: center;
+}
+
+.uni-fleet-ships-row {
+    background: var(--uni-navy);
+    padding: 14px 22px;
+}
+
+.uni-fleet-col-head {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.uni-fleet-ships-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.uni-fleet-ship-item {
+    padding: 14px 22px;
+    border-bottom: 1px solid var(--uni-border-soft);
+    transition: background 0.25s ease;
+}
+
+.uni-fleet-ship-item:last-child {
+    border-bottom: none;
+}
+
+.uni-fleet-ship-item:hover {
+    background: var(--uni-bg-white);
+}
+
+.uni-fleet-ship-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14.5px;
+    font-weight: 600;
     color: var(--uni-text-dark);
-    margin: 0 0 8px 0;
-    line-height: 1.6;
+}
+
+.uni-fleet-ship-name svg {
+    color: var(--uni-navy);
+    flex-shrink: 0;
+}
+
+.uni-fleet-ship-region {
+    font-size: 14.5px;
+    color: var(--uni-text-body);
 }
 
 .uni-ships-sub {
@@ -766,8 +962,44 @@
 /* ── SUITES ───────────────────────────────────────────────── */
 
 .uni-suites-section {
-    background: var(--uni-bg-soft);
+    background: var(--uni-navy-dark) !important;
     padding: 88px 20px;
+}
+
+.uni-suites-section .uni-section-heading {
+    color: #ffffff !important;
+}
+
+.uni-suites-section .uni-eyebrow {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.uni-suites-section .uni-heading-separator-bar {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.uni-suites-intro {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.uni-suites-features-label {
+    color: #ffffff !important;
+}
+
+.uni-suites-section .uni-stateroom-pill {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.uni-suites-note {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.uni-suites-note p {
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .uni-suites-container {
@@ -840,6 +1072,22 @@
     margin-bottom: 20px;
 }
 
+.uni-suites-section .uni-feature-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+}
+
+.uni-suites-section .uni-feature-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.uni-suites-section .uni-feature-icon {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
 .uni-feature-card {
     display: flex;
     flex-direction: column;
@@ -888,110 +1136,141 @@
 /* ── DINING ───────────────────────────────────────────────── */
 
 .uni-dining-section {
-    position: relative;
-    padding: 100px 20px;
-    min-height: 520px;
-    display: flex;
+    background: var(--uni-bg-soft) !important;
+    padding: 72px 20px;
+}
+
+.uni-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uni-dining-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 48px;
     align-items: center;
-    overflow: hidden;
-}
-
-.uni-dining-bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-}
-
-.uni-dining-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, rgba(15, 28, 46, 0.92) 30%, rgba(15, 28, 46, 0.55) 100%);
-    z-index: 1;
 }
 
 .uni-dining-content {
-    position: relative;
-    z-index: 2;
-    max-width: 720px;
-    color: #ffffff;
-}
-
-.uni-dining-eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-    display: block;
-    margin-bottom: 16px;
+    max-width: 620px;
 }
 
 .uni-dining-heading {
-    font-size: 38px;
+    font-size: 34px;
     font-weight: 700;
     line-height: 1.2;
-    margin: 0 0 18px 0;
-    
-}
-
-.uni-dining-separator {
-    width: 64px;
-    height: 4px;
-    background: var(--uni-navy);
-    border-radius: 4px;
-    margin-bottom: 22px;
+    margin: 0 0 12px 0;
+    color: var(--uni-navy);
+    text-align: center;
 }
 
 .uni-dining-note {
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 15.5px;
+    font-weight: 500;
     margin: 0 0 22px 0;
+    color: var(--uni-text-body);
+    text-align: center;
+    line-height: 1.6;
 }
 
 .uni-dining-points {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .uni-dining-point {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 14.5px;
-    font-weight: 500;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uni-navy);
+    background: var(--uni-bg-white);
+    border: 1px solid var(--uni-border-soft);
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+}
+
+.uni-dining-point:hover {
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.1);
+    transform: translateY(-2px);
 }
 
 .uni-dining-point-icon {
     width: 30px;
     height: 30px;
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 7px;
+    background: var(--uni-bg-soft);
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--uni-navy);
     flex-shrink: 0;
 }
 
 .uni-dining-footer {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--uni-bg-soft);
+    border: 1px dashed var(--uni-border-soft);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 16px;
+}
+
+.uni-dining-footer-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    background: rgba(39, 68, 114, 0.10);
+    color: var(--uni-navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-dining-footer p {
     margin: 0;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--uni-text-body);
+    line-height: 1.55;
+}
+
+.uni-dining-image-col .uni-image-frame {
+    height: 440px;
+}
+
+.uni-dining-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
 /* ── WHAT'S INCLUDED ──────────────────────────────────────── */
 
 .uni-included-section {
     background: var(--uni-bg-white);
-    padding: 88px 20px;
+    padding: 72px 20px;
 }
 
 .uni-included-container {
@@ -1002,28 +1281,21 @@
 .uni-included-header {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto 36px;
+    margin: 0 auto 32px;
 }
 
 .uni-included-intro {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--uni-text-body);
     line-height: 1.6;
-    margin: 0 0 6px 0;
-}
-
-.uni-included-sub {
-    font-size: 15px;
-    color: var(--uni-navy);
-    font-weight: 700;
     margin: 0;
 }
 
 .uni-included-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin-bottom: 32px;
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
 .uni-included-card {
@@ -1031,172 +1303,229 @@
     align-items: center;
     gap: 12px;
     background: var(--uni-bg-soft);
+    border: 1px solid transparent;
     border-radius: 10px;
-    padding: 15px 18px;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--uni-text-dark);
+    padding: 14px 16px;
+    transition: all 0.3s ease;
+}
+
+.uni-included-card:hover {
+    border-color: var(--uni-border-soft);
+    background: var(--uni-bg-white);
+    box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+}
+
+.uni-included-num {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgba(39, 68, 114, 0.35);
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+
+.uni-included-check-wrap {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--uni-bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--uni-border-soft);
 }
 
 .uni-included-check {
     color: var(--uni-navy);
-    flex-shrink: 0;
+}
+
+.uni-included-label {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
 }
 
 .uni-included-footer {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    border: 1px dashed rgba(39, 68, 114, 0.2);
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.uni-included-footer-icon {
+    color: var(--uni-navy);
+    flex-shrink: 0;
 }
 
 .uni-included-footer p {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--uni-text-body);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* ── SHORE EXCURSIONS ─────────────────────────────────────── */
 
 .uni-excursions-section {
-    background: var(--uni-bg-soft);
-    padding: 88px 20px;
+    background: var(--uni-navy-dark) !important;
+    padding: 72px 20px;
 }
 
 .uni-excursions-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.uni-excursions-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 68px;
-    align-items: center;
+.uni-excursions-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+
+.uni-excursions-section .uni-eyebrow {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.uni-excursions-section .uni-section-heading {
+    color: #ffffff !important;
+    margin-bottom: 12px;
+}
+
+.uni-excursions-section .uni-heading-separator-bar {
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .uni-excursions-lead {
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--uni-text-dark);
-    margin: 0 0 8px 0;
-    line-height: 1.6;
-}
-
-.uni-excursions-sub {
     font-size: 15px;
-    color: var(--uni-text-body);
-    margin: 0 0 20px 0;
-    font-weight: 600;
-}
-
-.uni-excursions-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
-
-.uni-excursion-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
-    border-radius: 10px;
-    padding: 12px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--uni-navy);
-}
-
-.uni-excursion-icon {
-    width: 32px;
-    height: 32px;
-    background: var(--uni-bg-soft);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--uni-navy);
-    flex-shrink: 0;
-}
-
-.uni-excursions-image-col .uni-image-frame {
-    height: 360px;
-}
-
-.uni-excursions-conclusion-box {
-    background: var(--uni-bg-white);
-    border-radius: 12px;
-    padding: 18px 22px;
-    margin-top: 20px;
-    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.06);
-}
-
-.uni-excursions-conclusion-box p {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75) !important;
     margin: 0;
-    font-size: 14.5px;
-    color: var(--uni-text-body);
-    line-height: 1.6;
+    line-height: 1.7;
 }
+
+
 
 /* ── SERVICE AND HOSPITALITY ──────────────────────────────── */
 
 .uni-service-section {
-    background: var(--uni-bg-white);
-    padding: 88px 20px;
+    background: var(--uni-bg-soft);
+    padding: 64px 20px;
 }
 
 .uni-service-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .uni-service-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 68px;
-    align-items: center;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+/* left – image + caption */
+
+.uni-service-image-col {
+    flex: 0 0 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .uni-service-image-col .uni-image-frame {
-    height: 400px;
+    height: 340px;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.uni-service-image-col .uni-placeholder {
+    height: 100%;
+    border-radius: 14px;
+    border: none;
+}
+
+.uni-service-image-caption {
+    background: var(--uni-bg-white);
+    border-left: 4px solid var(--uni-navy);
+    border-radius: 10px;
+    padding: 18px 22px;
+}
+
+.uni-service-image-caption p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--uni-text-body);
+    line-height: 1.65;
+}
+
+/* right – text + pillars */
+
+.uni-service-text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.uni-service-text-col .uni-section-heading {
+    margin-bottom: 10px;
+}
+
+.uni-service-text-col .uni-heading-separator-bar {
+    margin-bottom: 18px;
 }
 
 .uni-service-lead {
-    font-size: 17px;
+    font-size: 15.5px;
     font-weight: 500;
     color: var(--uni-text-dark);
-    margin: 0 0 8px 0;
-    line-height: 1.6;
+    margin: 0 0 6px 0;
+    line-height: 1.65;
 }
 
 .uni-service-sub {
-    font-size: 15px;
-    color: var(--uni-text-body);
-    margin: 0 0 20px 0;
-    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--uni-navy);
+    font-weight: 700;
+    margin: 0 0 16px 0;
 }
 
 .uni-service-pillars {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-bottom: 24px;
+    gap: 12px;
 }
 
 .uni-service-pillar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    background: var(--uni-bg-soft);
-    border-radius: 12px;
-    padding: 18px;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-white);
+    border-radius: 10px;
+    padding: 16px 18px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.uni-service-pillar:hover {
+    box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+    transform: translateY(-2px);
 }
 
 .uni-service-pillar-icon {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
     background: var(--uni-navy);
     color: #ffffff;
     border-radius: 10px;
@@ -1206,52 +1535,43 @@
 }
 
 .uni-service-pillar-label {
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     color: var(--uni-text-dark);
-}
-
-.uni-service-conclusion-box {
-    background: rgba(39, 68, 114, 0.08);
-    border-left: 4px solid var(--uni-navy);
-    border-radius: 8px;
-    padding: 16px 20px;
-}
-
-.uni-service-conclusion-box p {
-    margin: 0;
-    font-size: 14.5px;
-    color: var(--uni-text-dark);
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* ── WHO SHOULD CHOOSE ────────────────────────────────────── */
 
 .uni-who-section {
-    background: var(--uni-bg-soft);
-    padding: 88px 20px;
+    background: var(--uni-bg-white);
+    padding: 64px 20px;
 }
 
 .uni-who-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .uni-who-header {
     text-align: center;
-    max-width: 720px;
+    max-width: 640px;
     margin: 0 auto 36px;
 }
 
+.uni-who-header .uni-section-heading {
+    margin-bottom: 10px;
+}
+
 .uni-who-intro {
-    font-size: 17px;
+    font-size: 15.5px;
     color: var(--uni-text-body);
-    line-height: 1.6;
+    line-height: 1.65;
     margin: 0 0 6px 0;
 }
 
 .uni-who-sub {
-    font-size: 15px;
+    font-size: 14.5px;
     color: var(--uni-navy);
     font-weight: 700;
     margin: 0;
@@ -1259,114 +1579,400 @@
 
 .uni-who-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-bottom: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
 }
 
 .uni-who-card {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: var(--uni-bg-white);
+    gap: 12px;
+    background: var(--uni-bg-soft);
     border-radius: 10px;
-    padding: 14px 18px;
-    font-size: 14.5px;
-    font-weight: 600;
-    color: var(--uni-navy);
-    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    padding: 16px 18px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.uni-who-icon {
+.uni-who-card:hover {
+    box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+    transform: translateY(-2px);
+}
+
+.uni-who-num {
+    font-size: 13px;
+    font-weight: 700;
     color: var(--uni-navy);
-    flex-shrink: 0;
+    background: rgba(39, 68, 114, 0.10);
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-who-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+    line-height: 1.4;
 }
 
 .uni-who-footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--uni-bg-soft);
+    border: 1px dashed var(--uni-border-soft);
+    border-radius: 12px;
+    padding: 18px 28px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.uni-who-footer-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: rgba(39, 68, 114, 0.10);
+    color: var(--uni-navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .uni-who-footer p {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
     color: var(--uni-text-body);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
+    margin: 0;
+    line-height: 1.65;
 }
 
 /* ── UNIWORLD VS OTHERS ───────────────────────────────────── */
 
 .uni-compare-section {
-    background: var(--uni-navy);
-    padding: 88px 20px;
+    background: var(--uni-navy) !important;
+    padding: 64px 20px;
 }
 
 .uni-compare-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .uni-compare-header {
     text-align: center;
-    max-width: 720px;
+    max-width: 680px;
     margin: 0 auto 36px;
 }
 
 .uni-compare-header .uni-section-heading {
     color: #ffffff !important;
+    margin-bottom: 10px;
 }
 
-.uni-compare-intro {
-    font-size: 17px;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.6;
-    margin: 0 0 6px 0;
+.uni-compare-header .uni-eyebrow {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
 }
 
-.uni-compare-sub {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.95);
-    font-weight: 700;
-    margin: 0;
+.uni-compare-header .uni-heading-separator-bar {
+    background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-compare-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 32px;
-}
+/* comparison table */
 
-.uni-compare-card {
+.uni-compare-table {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    padding: 20px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    margin-bottom: 28px;
 }
 
-.uni-compare-num {
-    font-size: 22px;
+.uni-compare-row {
+    display: flex;
+    align-items: stretch;
+    padding: 15px 24px;
+    gap: 20px;
+}
+
+.uni-compare-row + .uni-compare-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.uni-compare-head {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.uni-compare-head span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
     font-weight: 700;
-    color: var(--uni-navy);
-    
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.uni-compare-col-feature {
+    flex: 0 0 220px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.uni-compare-col-uni {
+    flex: 1;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.uni-compare-col-typical {
+    flex: 1;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.uni-compare-row:not(.uni-compare-head):hover {
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .uni-compare-footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 18px 28px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.uni-compare-footer-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: var(--uni-navy);
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-compare-footer-icon svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
 }
 
 .uni-compare-footer p {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.75);
-    max-width: 760px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+}
+
+/* ── BEST TIME TO CRUISE ─────────────────────────────────── */
+
+.uni-besttime-section {
+    background: var(--uni-bg-white);
+    padding: 64px 20px;
+}
+
+.uni-besttime-container {
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.uni-besttime-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+
+.uni-besttime-header .uni-section-heading {
+    margin-bottom: 10px;
+}
+
+/* 4-column grid */
+
+.uni-besttime-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.uni-besttime-card {
+    background: var(--uni-bg-soft);
+    border-radius: 14px;
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--uni-border-soft);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.uni-besttime-card:hover {
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.10);
+    transform: translateY(-3px);
+}
+
+.uni-besttime-card-accent {
+    width: 36px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--uni-navy);
+    margin-bottom: 4px;
+}
+
+.uni-besttime-card-season {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--uni-navy);
+}
+
+.uni-besttime-card-text {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--uni-text-body);
+    line-height: 1.65;
+}
+
+/* footer – info strip */
+
+.uni-besttime-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--uni-bg-white);
+    border: 1px dashed var(--uni-navy);
+    border-radius: 12px;
+    padding: 18px 28px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.uni-besttime-footer-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: var(--uni-navy);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-besttime-footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    line-height: 1.65;
+}
+
+/* ── PRICING ──────────────────────────────────────────────── */
+
+.uni-pricing-section {
+    background: var(--uni-navy-dark);
+    padding: 64px 20px;
+}
+
+.uni-pricing-container {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.uni-pricing-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.uni-pricing-header .uni-section-heading {
+    color: #ffffff !important;
+    margin-bottom: 10px;
+}
+
+.uni-pricing-header .uni-eyebrow {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.uni-pricing-header .uni-heading-separator-bar {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.uni-pricing-intro {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.7;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uni-pricing-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    padding: 32px 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.uni-pricing-card-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.uni-pricing-card-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.uni-pricing-divider {
+    width: 48px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.uni-pricing-card-sub {
+    margin: 0;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    max-width: 580px;
 }
 
 /* ── IS IT WORTH IT ───────────────────────────────────────── */
@@ -1441,140 +2047,187 @@
     line-height: 1.6;
 }
 
-/* ── EXPERT REVIEW ────────────────────────────────────────── */
+/* ── KEY TAKEAWAYS ───────────────────────────────────────── */
+
+.uni-takeaway-section {
+    background: var(--uni-bg-white);
+    padding: 64px 20px;
+}
+
+.uni-takeaway-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.uni-takeaway-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 36px;
+}
+
+.uni-takeaway-header .uni-section-heading {
+    margin-bottom: 10px;
+}
+
+.uni-takeaway-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.uni-takeaway-grid-center {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.uni-takeaway-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uni-bg-soft);
+    border-radius: 10px;
+    padding: 16px 18px;
+    border: 1px solid var(--uni-border-soft);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.uni-takeaway-card:hover {
+    box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+    transform: translateY(-2px);
+}
+
+.uni-takeaway-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--uni-navy);
+    background: rgba(39, 68, 114, 0.10);
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-takeaway-label {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--uni-text-dark);
+    line-height: 1.45;
+}
+
+/* ── CONCLUSION ──────────────────────────────────────────── */
 
 .uni-review-section {
     background: var(--uni-bg-soft);
-    padding: 88px 20px;
+    padding: 64px 20px;
 }
 
 .uni-review-container {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .uni-review-header {
     text-align: center;
-    max-width: 720px;
-    margin: 0 auto 40px;
-}
-
-.uni-review-intro {
-    font-size: 17px;
-    color: var(--uni-text-body);
-    line-height: 1.6;
-    margin: 0;
-}
-
-.uni-review-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
     margin-bottom: 32px;
 }
 
-.uni-review-card {
-    background: var(--uni-bg-white);
-    border-radius: 16px;
-    padding: 28px;
-    box-shadow: 0 8px 28px rgba(15, 28, 46, 0.06);
+.uni-review-header .uni-section-heading {
+    margin-bottom: 10px;
 }
 
-.uni-review-card-header {
+.uni-review-intro {
+    font-size: 15.5px;
+    color: var(--uni-text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.uni-review-cta {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
-}
-
-.uni-review-love .uni-review-card-header {
-    color: #1f8a4c;
-}
-
-.uni-review-consider .uni-review-card-header {
-    color: #c07a1e;
-}
-
-.uni-review-card-header h3 {
-    font-size: 19px;
-    font-weight: 700;
-    color: var(--uni-navy);
-    margin: 0;
-}
-
-.uni-review-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.uni-review-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 14.5px;
-    color: var(--uni-text-dark);
-    line-height: 1.5;
-}
-
-.uni-review-icon-love {
-    color: #1f8a4c;
-    margin-top: 2px;
-    flex-shrink: 0;
-}
-
-.uni-review-icon-consider {
-    color: #c07a1e;
-    margin-top: 2px;
-    flex-shrink: 0;
-}
-
-.uni-review-footer {
-    text-align: center;
-}
-
-.uni-review-footer p {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--uni-navy);
-    max-width: 760px;
+    gap: 14px;
+    background: var(--uni-bg-white);
+    border: 1px solid var(--uni-border-soft);
+    border-radius: 14px;
+    padding: 22px 28px;
+    max-width: 720px;
     margin: 0 auto;
-    line-height: 1.7;
 }
 
-/* ── WHY BOOK WITH US ─────────────────────────────────────── */
+.uni-review-cta-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: var(--uni-navy);
+    color: #ffffff !important;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-review-cta-icon svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.uni-review-cta p {
+    margin: 0;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--uni-text-dark);
+    line-height: 1.65;
+}
+
+/* ── BOOKING TIPS ────────────────────────────────────────── */
 
 .uni-booking-section {
-    background: var(--uni-navy-dark);
-    padding: 88px 20px;
+    background: var(--uni-navy-dark) !important;
+    padding: 64px 20px;
 }
 
 .uni-booking-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .uni-booking-header {
     text-align: center;
-    max-width: 720px;
+    max-width: 640px;
     margin: 0 auto 36px;
 }
 
+.uni-booking-header .uni-section-heading {
+    color: #ffffff !important;
+    margin-bottom: 10px;
+}
+
+.uni-booking-header .uni-eyebrow {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.uni-booking-header .uni-heading-separator-bar {
+    background: rgba(255, 255, 255, 0.35);
+}
+
 .uni-booking-intro {
-    font-size: 17px;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.6;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.65;
     margin: 0;
 }
 
 .uni-booking-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin-bottom: 32px;
+    gap: 12px;
+    margin-bottom: 28px;
 }
 
 .uni-booking-card {
@@ -1582,24 +2235,73 @@
     align-items: center;
     gap: 14px;
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 12px;
-    padding: 16px 18px;
-    color: #ffffff;
-    font-size: 14.5px;
-    font-weight: 600;
+    padding: 16px 20px;
+    transition: background 0.25s ease;
+}
+
+.uni-booking-card:hover {
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .uni-booking-num {
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 700;
-    color: var(--uni-navy);
-    
-    flex-shrink: 0;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.10);
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-booking-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
 }
 
 .uni-booking-footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 18px 28px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.uni-booking-footer-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uni-booking-footer-icon svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.uni-booking-footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
 }
 
 .uni-booking-footer p {
@@ -1612,13 +2314,23 @@
 
 /* ── FAQ ──────────────────────────────────────────────────── */
 
-.uni-faq-main-section {
-    background: var(--uni-bg-white);
-    padding: 88px 20px;
+.uni-faq-section {
+    background: var(--uni-bg-white) !important;
+    padding: 64px 20px;
+}
+
+.uni-faq-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.uni-faq-header .uni-section-heading {
+    margin-bottom: 10px;
 }
 
 .uni-faq-container {
-    max-width: 880px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -1626,34 +2338,41 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
-.uni-faq-individual-item {
+.uni-faq-item {
     background: var(--uni-bg-soft);
-    border-radius: 12px;
+    border: 1px solid var(--uni-border-soft);
+    border-radius: 14px;
     padding: 20px 24px;
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(15, 28, 46, 0.03);
 }
 
-.uni-faq-individual-item:hover {
-    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.06);
+.uni-faq-item:hover {
+    border-color: var(--uni-navy);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.08);
 }
 
 .uni-faq-question-row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    font-size: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni-faq-question-row span {
+    font-size: 15.5px;
     font-weight: 600;
     color: var(--uni-navy);
+    line-height: 1.45;
 }
 
 .uni-faq-toggle-icon {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     color: var(--uni-navy);
     flex-shrink: 0;
     width: 24px;
@@ -1662,79 +2381,164 @@
 
 .uni-faq-answer-text {
     margin: 14px 0 0 0;
-    font-size: 15px;
-    color: var(--uni-text-body);
+    padding-top: 14px;
+    border-top: 1px solid var(--uni-border-soft);
+    font-size: 14.5px;
     line-height: 1.7;
+    color: var(--uni-text-body);
 }
 
 /* ── CTA ──────────────────────────────────────────────────── */
 
-.uni-cta-main-section {
+.uni-cta-section {
     position: relative;
-    background: linear-gradient(135deg, var(--uni-navy) 0%, var(--uni-navy-dark) 100%);
-    padding: 96px 20px;
+    padding: 72px 20px;
+    background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
+    text-align: center;
     overflow: hidden;
+    isolation: isolate;
 }
 
-.uni-cta-bg-pattern-layer {
+.uni-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: uni-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes uni-aurora-pulse {
+    0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+}
+
+.uni-cta-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(148, 210, 255, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.uni-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uni-crystal-float 12s ease-in-out infinite; }
+.uni-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uni-crystal-float 10s ease-in-out 2s infinite; }
+.uni-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uni-crystal-float 14s ease-in-out 4s infinite; }
+
+@keyframes uni-crystal-float {
+    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+    50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
+}
+
+.uni-cta-grid-lines {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 40%),
-                       radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.06) 0, transparent 40%);
+    background-image:
+        linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
     z-index: 0;
 }
 
-.uni-cta-content-relative {
+.uni-cta-content {
     position: relative;
-    z-index: 1;
-}
-
-.uni-cta-inner-wrapper {
-    max-width: 880px;
+    z-index: 2;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.uni-cta-heading-white {
-    font-size: 44px;
+.uni-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 210, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(148, 210, 255, 0.8);
+    margin-bottom: 16px;
+    animation: uni-compass-spin 20s linear infinite;
+    background: rgba(148, 210, 255, 0.04);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+@keyframes uni-compass-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.uni-cta-compass-ring svg {
+    animation: uni-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes uni-compass-counter-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.uni-cta-eyebrow {
+    font-size: 11px;
     font-weight: 700;
-    color: #ffffff;
-    margin: 0 0 18px 0;
-    
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(148, 210, 255, 0.7);
+    margin-bottom: 12px;
+    display: block;
 }
 
-.uni-cta-separator-white {
-    width: 64px;
-    height: 4px;
-    background: var(--uni-navy);
-    border-radius: 4px;
+.uni-cta-title {
+    font-size: 48px;
+    line-height: 1.12;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+}
+
+.uni-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.uni-cta-subtitle {
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgba(203, 213, 225, 0.85);
+    max-width: 700px;
     margin: 0 auto 28px;
 }
 
-.uni-cta-paragraph-white {
-    font-size: 17px;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.7;
-    max-width: 780px;
-    margin: 0 auto 18px;
-}
-
 .uni-cta-considerations-box {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(148, 210, 255, 0.12);
     border-radius: 16px;
-    padding: 32px 36px;
-    margin: 32px 0;
+    padding: 28px 32px;
+    margin-bottom: 28px;
     text-align: left;
+    width: 100%;
+    max-width: 720px;
 }
 
 .uni-cta-considerations-title {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 18px;
+    color: rgba(148, 210, 255, 0.9);
+    margin-bottom: 16px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 .uni-cta-considerations-list {
@@ -1743,67 +2547,75 @@
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 12px;
 }
 
 .uni-cta-considerations-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    color: rgba(203, 213, 225, 0.85);
 }
 
 .uni-cta-considerations-icon {
-    color: var(--uni-navy);
+    color: rgba(148, 210, 255, 0.7);
     flex-shrink: 0;
 }
 
-.uni-cta-button-group {
+.uni-cta-actions {
     display: flex;
     justify-content: center;
     gap: 18px;
     flex-wrap: wrap;
 }
 
-.uni-primary-cta-button {
+.uni-cta-primary-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: var(--uni-navy);
+    padding: 17px 36px;
+    background: linear-gradient(135deg, #274472, #1e3a5f);
     color: #ffffff;
+    border: 1px solid rgba(148, 210, 255, 0.15);
+    border-radius: 14px;
     font-size: 15px;
     font-weight: 700;
-    padding: 15px 30px;
-    border-radius: 30px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35);
-}
-
-.uni-primary-cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.45);
-}
-
-.uni-secondary-outline-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: transparent;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 15px 30px;
-    border-radius: 30px;
-    border: 1.5px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35), 0 0 0 0 rgba(148, 210, 255, 0);
+    position: relative;
+    overflow: hidden;
 }
 
-.uni-secondary-outline-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #ffffff;
+.uni-cta-primary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.uni-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
+    border-color: rgba(148, 210, 255, 0.3);
+}
+
+.uni-cta-primary-btn:hover::before {
+    opacity: 1;
+}
+
+.uni-cta-btn-arrow {
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.uni-cta-primary-btn:hover .uni-cta-btn-arrow {
+    transform: translateX(4px);
+    opacity: 1;
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1812,36 +2624,182 @@
 
 @media (max-width: 1024px) {
 
-    .uni-hero-main-title { font-size: 42px; }
-    .uni-hero-subtitle-text { font-size: 17px; }
+    .uni-hero-main-title {
+        font-size: 42px;
+    }
+
+    .uni-hero-subtitle-text {
+        font-size: 17px;
+    }
 
     .uni-why-grid,
-    .uni-excursions-grid,
     .uni-service-grid,
-    .uni-worth-grid,
-    .uni-ships-grid { grid-template-columns: 1fr; gap: 40px; }
+    .uni-worth-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 
-    .uni-ships-image-col { order: -1; }
+    .uni-fleet-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .uni-fleet-image-col {
+        order: -1;
+    }
+
+    .uni-service-image-col {
+        order: 2;
+    }
+
+    .uni-service-text-col {
+        order: 1;
+    }
 
     .uni-why-image-col .uni-image-frame,
-    .uni-ships-image-col .uni-image-frame,
-    .uni-excursions-image-col .uni-image-frame,
-    .uni-service-image-col .uni-image-frame { height: 320px; }
+    .uni-fleet-image-col .uni-image-frame,
+    .uni-service-image-col .uni-image-frame {
+        height: 320px;
+    }
 
-    .uni-suites-content { grid-template-columns: 1fr; gap: 32px; }
-    .uni-suites-image-col .uni-image-frame { height: 320px; }
-    .uni-suites-features-grid { grid-template-columns: repeat(4, 1fr); }
+    .uni-suites-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 
-    .uni-destinations-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .uni-compare-grid { grid-template-columns: repeat(2, 1fr); }
-    .uni-who-grid { grid-template-columns: repeat(2, 1fr); }
-    .uni-included-grid { grid-template-columns: 1fr 1fr; }
-    .uni-booking-grid { grid-template-columns: 1fr; }
-    .uni-dining-points { grid-template-columns: 1fr; }
+    .uni-suites-image-col .uni-image-frame {
+        height: 320px;
+    }
 
-    .uni-dining-heading { font-size: 32px; }
-    .uni-cta-heading-white { font-size: 36px; }
-    .uni-cta-considerations-list { grid-template-columns: 1fr; }
+    .uni-suites-features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .uni-tabs-wrapper {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .uni-tabs-sidebar {
+        position: static;
+        gap: 24px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .uni-tabs-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .uni-tabs-header {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .uni-tabs-header::-webkit-scrollbar {
+        display: none;
+    }
+
+    .uni-tab-btn {
+        width: auto;
+        text-align: center;
+        padding: 12px 20px;
+        flex-shrink: 0;
+    }
+
+    .uni-tab-dest-image {
+        min-height: 260px;
+    }
+
+    .uni-tab-dest-image .uni-placeholder {
+        min-height: 260px;
+    }
+
+    .uni-tab-dest-image .uni-dest-card-overlay {
+        background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85) 100%);
+    }
+
+    .uni-tab-dest-content {
+        padding: 28px 0;
+    }
+
+    .uni-tab-dest-title {
+        font-size: 24px;
+    }
+
+    .uni-compare-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uni-who-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uni-included-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .uni-booking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .uni-dining-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .uni-dining-image-col .uni-image-frame {
+        height: 320px;
+    }
+
+    .uni-dining-points {
+        grid-template-columns: 1fr;
+    }
+
+    .uni-dining-heading {
+        font-size: 32px;
+    }
+
+    .uni-cta-title {
+        font-size: 36px;
+    }
+
+    .uni-cta-considerations-list {
+        grid-template-columns: 1fr;
+    }
+
+    .uni-besttime-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uni-compare-col-feature {
+        flex: 0 0 160px;
+        font-size: 13.5px;
+    }
+
+    .uni-compare-col-uni,
+    .uni-compare-col-typical {
+        font-size: 13.5px;
+    }
+
+    .uni-compare-row {
+        padding: 12px 18px;
+        gap: 14px;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1850,74 +2808,301 @@
 
 @media (max-width: 767px) {
 
-    .uni-intro-section, .uni-why-section, .uni-destinations-section,
-    .uni-ships-section, .uni-suites-section, .uni-included-section,
-    .uni-excursions-section, .uni-service-section, .uni-who-section,
-    .uni-compare-section, .uni-worth-section, .uni-review-section,
-    .uni-booking-section, .uni-faq-main-section { padding: 48px 16px; }
+    .uni-intro-section,
+    .uni-why-section,
+    .uni-destinations-section,
+    .uni-ships-section,
+    .uni-suites-section,
+    .uni-included-section,
+    .uni-excursions-section,
+    .uni-service-section,
+    .uni-who-section,
+    .uni-compare-section,
+    .uni-worth-section,
+    .uni-review-section,
+    .uni-booking-section,
+    .uni-faq-section {
+        padding: 48px 16px;
+    }
 
-    .uni-dining-section { padding: 56px 16px; min-height: auto; }
+    .uni-dining-section {
+        padding: 56px 16px;
+    }
 
-    .uni-hero-section { height: 100vh; min-height: 480px; }
-    .uni-hero-main-title { font-size: 30px; }
-    .uni-hero-subtitle-text { font-size: 15px; }
-    .uni-hero-eyebrow-tag { font-size: 10px; padding: 6px 14px; }
+    .uni-dining-image-col .uni-image-frame {
+        height: 240px;
+    }
 
-    .uni-section-heading { font-size: 26px; }
+    .uni-hero-section {
+        height: 100vh;
+        min-height: 480px;
+    }
 
-    .uni-why-list { grid-template-columns: 1fr; }
-    .uni-why-image-col .uni-image-frame { height: 240px; }
+    .uni-hero-main-title {
+        font-size: 30px;
+    }
 
-    .uni-destinations-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .uni-destination-card { padding: 14px 16px; font-size: 14px; }
-    .uni-destinations-footer { padding: 22px 18px; }
-    .uni-destinations-footer p { font-size: 16px; line-height: 1.7; }
+    .uni-hero-subtitle-text {
+        font-size: 15px;
+    }
 
-    .uni-ships-image-col .uni-image-frame { height: 220px; }
-    .uni-ships-highlights { gap: 8px; }
-    .uni-highlight-item { font-size: 14px; padding: 10px 14px; }
+    .uni-hero-eyebrow-tag {
+        font-size: 10px;
+        padding: 6px 14px;
+    }
 
-    .uni-stateroom-row { gap: 8px; }
-    .uni-stateroom-pill { font-size: 12.5px; padding: 8px 14px; }
-    .uni-suites-image-col .uni-image-frame { height: 240px; }
-    .uni-suites-features-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-    .uni-feature-card { padding: 14px 8px; font-size: 12px; }
+    .uni-ships-intro {
+        white-space: normal;
+    }
 
-    .uni-dining-heading { font-size: 26px; }
-    .uni-dining-note { font-size: 15px; }
-    .uni-dining-points { gap: 10px; }
+    .uni-section-heading {
+        font-size: 26px;
+    }
 
-    .uni-included-grid { grid-template-columns: 1fr; gap: 10px; }
-    .uni-included-card { padding: 13px 16px; font-size: 14px; }
+    .uni-why-list {
+        grid-template-columns: 1fr;
+    }
 
-    .uni-excursions-list { grid-template-columns: 1fr; }
-    .uni-excursions-image-col .uni-image-frame { height: 240px; }
+    .uni-why-image-col .uni-image-frame {
+        height: 240px;
+    }
 
-    .uni-service-image-col .uni-image-frame { height: 240px; }
-    .uni-service-pillars { grid-template-columns: 1fr; gap: 10px; }
+    .uni-destinations-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
 
-    .uni-who-grid { grid-template-columns: 1fr; gap: 10px; }
+    .uni-destination-card {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
 
-    .uni-compare-grid { grid-template-columns: 1fr; gap: 10px; }
+    .uni-destinations-footer {
+        padding: 22px 18px;
+    }
 
-    .uni-worth-list { gap: 8px; }
-    .uni-worth-item { padding: 10px 14px; font-size: 14px; }
+    .uni-destinations-footer p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
 
-    .uni-review-grid { grid-template-columns: 1fr; gap: 18px; }
-    .uni-review-card { padding: 22px; }
+    .uni-fleet-image-col .uni-image-frame {
+        height: 220px;
+    }
 
-    .uni-booking-grid { gap: 10px; }
-    .uni-booking-card { padding: 14px 16px; font-size: 14px; }
+    .uni-ships-highlights {
+        gap: 8px;
+    }
 
-    .uni-faq-question-row { font-size: 14.5px; }
-    .uni-faq-individual-item { padding: 16px 18px; }
+    .uni-highlight-item {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
 
-    .uni-cta-main-section { padding: 56px 16px; }
-    .uni-cta-heading-white { font-size: 28px; }
-    .uni-cta-considerations-box { padding: 22px 20px; }
-    .uni-cta-button-group { flex-direction: column; gap: 12px; }
-    .uni-primary-cta-button,
-    .uni-secondary-outline-button { width: 100%; justify-content: center; }
+    .uni-stateroom-row {
+        gap: 8px;
+    }
+
+    .uni-stateroom-pill {
+        font-size: 12.5px;
+        padding: 8px 14px;
+    }
+
+    .uni-suites-image-col .uni-image-frame {
+        height: 240px;
+    }
+
+    .uni-suites-features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .uni-feature-card {
+        padding: 14px 8px;
+        font-size: 12px;
+    }
+
+    .uni-dining-heading {
+        font-size: 26px;
+    }
+
+    .uni-dining-note {
+        font-size: 15px;
+    }
+
+    .uni-dining-points {
+        gap: 10px;
+    }
+
+    .uni-included-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .uni-included-card {
+        padding: 13px 16px;
+        font-size: 14px;
+    }
+
+    .uni-service-image-col .uni-image-frame {
+        height: 240px;
+    }
+
+    .uni-service-pillars {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .uni-who-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .uni-compare-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .uni-worth-list {
+        gap: 8px;
+    }
+
+    .uni-worth-item {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .uni-review-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .uni-review-card {
+        padding: 22px;
+    }
+
+    .uni-booking-grid {
+        gap: 10px;
+    }
+
+    .uni-booking-card {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .uni-faq-question-row {
+        font-size: 14.5px;
+    }
+
+    .uni-faq-item {
+        padding: 16px 18px;
+    }
+
+    .uni-cta-section {
+        padding: 56px 16px;
+    }
+
+    .uni-cta-title {
+        font-size: 28px;
+    }
+
+    .uni-cta-considerations-box {
+        padding: 22px 20px;
+    }
+
+    .uni-cta-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .uni-cta-primary-btn,
+    .uni-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .uni-tab-dest-content {
+        padding: 20px 18px 24px;
+    }
+
+    .uni-tab-dest-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .uni-tab-dest-desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .uni-tab-dest-details {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .uni-tab-detail-item {
+        font-size: 13.5px;
+        gap: 10px;
+    }
+
+    .uni-tab-dest-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+    }
+
+    .uni-besttime-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .uni-besttime-card {
+        padding: 18px 18px;
+    }
+
+    .uni-besttime-footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+    }
+
+    .uni-compare-table {
+        overflow-x: auto;
+    }
+
+    .uni-compare-row {
+        min-width: 520px;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .uni-compare-col-feature {
+        flex: 0 0 140px;
+        font-size: 13px;
+    }
+
+    .uni-compare-col-uni,
+    .uni-compare-col-typical {
+        font-size: 13px;
+    }
+
+    .uni-compare-head span {
+        font-size: 11px;
+    }
+
+    .uni-takeaway-grid,
+    .uni-takeaway-grid-center {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .uni-takeaway-card {
+        padding: 14px 16px;
+    }
+
+    .uni-takeaway-label {
+        font-size: 13px;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1926,23 +3111,82 @@
 
 @media (max-width: 360px) {
 
-    .uni-hero-main-title { font-size: 24px; }
-    .uni-hero-subtitle-text { font-size: 13px; }
-    .uni-section-heading { font-size: 22px !important; }
-    .uni-dining-heading { font-size: 22px !important; }
-    .uni-cta-heading-white { font-size: 22px !important; }
+    .uni-hero-main-title {
+        font-size: 24px;
+    }
 
-    .uni-destinations-grid { grid-template-columns: 1fr !important; }
-    .uni-suites-features-grid { grid-template-columns: 1fr 1fr !important; }
-    .uni-compare-grid { grid-template-columns: 1fr !important; }
-    .uni-who-grid { grid-template-columns: 1fr !important; }
-    .uni-service-pillars { grid-template-columns: 1fr !important; }
+    .uni-hero-subtitle-text {
+        font-size: 13px;
+    }
 
-    .uni-intro-section, .uni-why-section, .uni-destinations-section,
-    .uni-ships-section, .uni-suites-section, .uni-included-section,
-    .uni-excursions-section, .uni-service-section, .uni-who-section,
-    .uni-compare-section, .uni-worth-section, .uni-review-section,
-    .uni-booking-section, .uni-faq-main-section { padding: 40px 12px !important; }
+    .uni-section-heading {
+        font-size: 22px !important;
+    }
 
-    .uni-cta-considerations-box { padding: 18px 14px !important; }
+    .uni-dining-heading {
+        font-size: 22px !important;
+    }
+
+    .uni-cta-title {
+        font-size: 22px !important;
+    }
+
+    .uni-destinations-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .uni-suites-features-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .uni-compare-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .uni-who-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .uni-service-pillars {
+        grid-template-columns: 1fr !important;
+    }
+
+    .uni-intro-section,
+    .uni-why-section,
+    .uni-destinations-section,
+    .uni-ships-section,
+    .uni-suites-section,
+    .uni-included-section,
+    .uni-excursions-section,
+    .uni-service-section,
+    .uni-who-section,
+    .uni-compare-section,
+    .uni-worth-section,
+    .uni-review-section,
+    .uni-booking-section,
+    .uni-faq-section,
+    .uni-besttime-section,
+    .uni-takeaway-section {
+        padding: 40px 12px !important;
+    }
+
+    .uni-cta-considerations-box {
+        padding: 18px 14px !important;
+    }
+
+    .uni-tab-dest-content {
+        padding: 16px 14px 20px;
+    }
+
+    .uni-tab-dest-title {
+        font-size: 20px;
+    }
+
+    .uni-tab-dest-desc {
+        font-size: 13px;
+    }
+
+    .uni-tab-detail-item {
+        font-size: 12.5px;
+    }
 }

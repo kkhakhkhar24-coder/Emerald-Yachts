@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import './UniworldRiverCruises.css'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Gem,
+    Compass, Sparkles, Anchor, Gem, ArrowRight,
     ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Moon, Wifi, Wine, Bed, Bath, Tv,
     Globe, MessageSquare, Eye, Smile,
@@ -26,6 +26,8 @@ function UniPlaceholder({ label, className = '' }) {
 function UniworldRiverCruises() {
     const [uniActiveFaq, setUniActiveFaq] = useState(null)
     const uniToggleFaq = i => setUniActiveFaq(uniActiveFaq === i ? null : i)
+    const [uniActiveDestTab, setUniActiveDestTab] = useState(0)
+    const [uniActiveExcursionTab, setUniActiveExcursionTab] = useState(0)
 
     const uniFaqs = [
         { question: 'What is Uniworld River Cruises?', answer: 'Uniworld Boutique River Cruises is a luxury river cruise line offering all-inclusive voyages across Europe, Egypt, India, Peru, and Asia. Each ship is individually designed with boutique hotel-style interiors.' },
@@ -159,15 +161,78 @@ function UniworldRiverCruises() {
     ]
 
     const uniExcursions = [
-        { Icon: Users, text: 'Guided walking tours' },
-        { Icon: Landmark, text: 'Museum visits' },
-        { Icon: Palette, text: 'Castle tours' },
-        { Icon: Utensils, text: 'Culinary experiences' },
-        { Icon: Wine, text: 'Wine tastings' },
-        { Icon: Bike, text: 'Bike tours' },
-        { Icon: MapPin, text: 'Village visits' },
-        { Icon: Music, text: 'Cultural performances' },
-        { Icon: Camera, text: 'Market tours' }
+        { 
+            Icon: Users, 
+            text: 'Guided walking tours',
+            description: 'Explore historic city centers, winding cobblestone streets, and local neighborhoods with an expert local guide who brings history, architecture, and folklore to life.',
+            tag: 'Cultural',
+            imageLabel: 'Guided Walking Tour Image',
+            highlights: ['Local expert guides', 'Whisper audio headsets included', 'Small group pacing']
+        },
+        { 
+            Icon: Landmark, 
+            text: 'Museum visits',
+            description: 'Enjoy skip-the-line access to world-renowned museums and galleries, discovering masterpiece collections with insights from dedicated art historians.',
+            tag: 'Art & History',
+            imageLabel: 'Museum Visit Image',
+            highlights: ['Pre-booked tickets', 'Expert art commentators', 'Iconic collections']
+        },
+        { 
+            Icon: Palette, 
+            text: 'Castle tours',
+            description: 'Step back in time at magnificent cliffside castles, medieval fortresses, and opulent palaces that line the banks of Europe\'s historic waterways.',
+            tag: 'Architecture',
+            imageLabel: 'Castle Tour Image',
+            highlights: ['Panoramic views', 'Royal history stories', 'Private garden access']
+        },
+        { 
+            Icon: Utensils, 
+            text: 'Culinary experiences',
+            description: 'Indulge in authentic regional flavors with hands-on cooking demonstrations, local food tastings, and visits to artisanal producers.',
+            tag: 'Local Flavor',
+            imageLabel: 'Culinary Experience Image',
+            highlights: ['Local food markets', 'Regional specialties', 'Cooking lessons']
+        },
+        { 
+            Icon: Wine, 
+            text: 'Wine tastings',
+            description: 'Visit historic family-run vineyards and grand estates to sample award-winning local vintages and learn about traditional winemaking methods.',
+            tag: 'Tastings',
+            imageLabel: 'Wine Tasting Image',
+            highlights: ['Sommelier-led tours', 'Scenic vineyard walks', 'Wine & food pairings']
+        },
+        { 
+            Icon: Bike, 
+            text: 'Bike tours',
+            description: 'Pedal along scenic river paths and through picturesque countryside with guided bicycle excursions, using the ship\'s high-quality fleet of bikes.',
+            tag: 'Active',
+            imageLabel: 'Bike Tour Image',
+            highlights: ['Helmets & gear provided', 'Guided routes', 'Active exploration']
+        },
+        { 
+            Icon: MapPin, 
+            text: 'Village visits',
+            description: 'Wander through charming, untouched fairytale villages and small towns, meeting local artisans and experiencing traditional daily life firsthand.',
+            tag: 'Immersive',
+            imageLabel: 'Village Visit Image',
+            highlights: ['Off-the-beaten-path locations', 'Local craft interactions', 'Authentic hospitality']
+        },
+        { 
+            Icon: Music, 
+            text: 'Cultural performances',
+            description: 'Experience exclusive musical concerts, traditional dance shows, and theatrical performances at historic, atmospheric venues onshore.',
+            tag: 'Entertainment',
+            imageLabel: 'Cultural Performance Image',
+            highlights: ['Private concerts', 'Historic venues', 'Local musicians']
+        },
+        { 
+            Icon: Camera, 
+            text: 'Market tours',
+            description: 'Navigate bustling local craft and food markets with guides who point out authentic items, regional treats, and the best local vendors.',
+            tag: 'Lifestyle',
+            imageLabel: 'Market Tour Image',
+            highlights: ['Street food sampling', 'Souvenir tips', 'Seasonal market vibes']
+        }
     ]
 
     const uniWellness = [
@@ -387,65 +452,64 @@ function UniworldRiverCruises() {
             <section className="uni-destinations-section">
                 <div className="uni-destinations-container">
                     <div className="uni-destinations-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">WORLDWIDE ITINERARIES</span>
+                        <span className="uni-eyebrow uni-eyebrow-light uni-eyebrow-center">WORLDWIDE ITINERARIES</span>
                         <h2 className="uni-section-heading uni-white-heading" style={{ fontSize: '34px' }}>Destinations Covered by <br /> Uniworld River Cruises</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
                         <p className="uni-destinations-intro">From the heart of Europe to the Nile, the Ganges, and the Amazon, Uniworld&apos;s boutique ships unlock the world&apos;s most iconic waterways.</p>
                     </div>
 
-                    <div className="uni-destinations-cards-grid">
-                        {uniDestinations.slice(0, 3).map((dest, idx) => (
-                            <div key={idx} className="uni-destination-feature-card">
-                                <div className="uni-dest-card-image">
-                                    <UniPlaceholder label={dest.imageLabel} />
-                                    <div className="uni-dest-card-overlay"></div>
-                                    <div className="uni-dest-card-tag">{dest.tag}</div>
-                                </div>
-                                <div className="uni-dest-card-content">
-                                    <h3 className="uni-dest-card-title">{dest.region}</h3>
-                                    <p className="uni-dest-card-description">{dest.description}</p>
-                                    <div className="uni-dest-card-details">
-                                        <div className="uni-dest-detail-item">
-                                            <Anchor size={14} />
-                                            <span>{dest.rivers}</span>
+                    <div className="uni-tabs-wrapper">
+                        <div className="uni-tabs-sidebar">
+                            <div className="uni-tabs-header">
+                                {uniDestinations.map((dest, idx) => (
+                                    <button
+                                        key={idx}
+                                        className={`uni-tab-btn ${uniActiveDestTab === idx ? 'active' : ''}`}
+                                        onClick={() => setUniActiveDestTab(idx)}
+                                    >
+                                        {dest.region}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="uni-tabs-content">
+                            {uniDestinations.map((dest, idx) => (
+                                <div key={idx} className={`uni-tab-panel ${uniActiveDestTab === idx ? 'active' : ''}`}>
+                                    <div className="uni-tab-dest-layout">
+                                        <div className="uni-tab-dest-image">
+                                            <UniPlaceholder label={dest.imageLabel} />
+                                            <div className="uni-dest-card-overlay"></div>
+                                            <div className="uni-dest-card-tag">{dest.tag}</div>
                                         </div>
-                                        <div className="uni-dest-detail-item">
-                                            <Globe size={14} />
-                                            <span>{dest.countries}</span>
+                                        <div className="uni-tab-dest-content">
+                                            <h3 className="uni-tab-dest-title">{dest.region}</h3>
+                                            <p className="uni-tab-dest-desc">{dest.description}</p>
+                                            <div className="uni-tab-dest-details">
+                                                <div className="uni-tab-detail-item">
+                                                    <Anchor size={16} />
+                                                    <span><strong>Rivers:</strong> {dest.rivers}</span>
+                                                </div>
+                                                <div className="uni-tab-detail-item">
+                                                    <Globe size={16} />
+                                                    <span><strong>Countries:</strong> {dest.countries}</span>
+                                                </div>
+                                            </div>
+                                            <Link to="/river-cruises" className="uni-tab-dest-cta">
+                                                Explore This Region <ChevronRight size={16} />
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="uni-destinations-cards-grid uni-destinations-cards-bottom">
-                        {uniDestinations.slice(3).map((dest, idx) => (
-                            <div key={idx} className="uni-destination-feature-card">
-                                <div className="uni-dest-card-image">
-                                    <UniPlaceholder label={dest.imageLabel} />
-                                    <div className="uni-dest-card-overlay"></div>
-                                    <div className="uni-dest-card-tag">{dest.tag}</div>
-                                </div>
-                                <div className="uni-dest-card-content">
-                                    <h3 className="uni-dest-card-title">{dest.region}</h3>
-                                    <p className="uni-dest-card-description">{dest.description}</p>
-                                    <div className="uni-dest-card-details">
-                                        <div className="uni-dest-detail-item">
-                                            <Anchor size={14} />
-                                            <span>{dest.rivers}</span>
-                                        </div>
-                                        <div className="uni-dest-detail-item">
-                                            <Globe size={14} />
-                                            <span>{dest.countries}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
 
-                    <div className="uni-destinations-footer">
-                        <p>Whether you seek the cultural riches of the Rhine or the natural wonders of the Amazon, Uniworld offers meticulously planned itineraries that bring the best of each destination to life.</p>
+                    <div className="uni-destinations-statement-box">
+                        <Compass className="uni-destinations-statement-icon" size={24} />
+                        <p className="uni-destinations-statement-text">
+                            Whether you seek the <em>cultural riches of the Rhine</em> or the <em>natural wonders of the Amazon</em>, Uniworld offers meticulously planned itineraries that bring the best of each destination to life.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -453,12 +517,22 @@ function UniworldRiverCruises() {
             {/* ── FLEET OVERVIEW ── */}
             <section className="uni-ships-section">
                 <div className="uni-ships-container">
-                    <div className="uni-ships-grid">
+                    <div className="uni-ships-header">
+                        <span className="uni-eyebrow uni-eyebrow-center">SHIP DESIGN</span>
+                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Uniworld Fleet Overview</h2>
+                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+                        <p className="uni-ships-intro">Every ship has its own personality rather than following a standardized design.</p>
+                    </div>
 
-                        <div className="uni-ships-image-col">
+                    <div className="uni-fleet-layout">
+                        <div className="uni-fleet-image-col">
                             <div className="uni-image-frame">
                                 <UniPlaceholder label="Uniworld Fleet Image" />
-                                <div className="uni-frame-overlay uni-overlay-soft"></div>
+                                <div className="uni-frame-overlay"></div>
+                                <div className="uni-fleet-image-badge">
+                                    <Ship size={16} />
+                                    <span>Award-Winning Boutique Fleet</span>
+                                </div>
                             </div>
                             <div className="uni-ships-pivot-box">
                                 <p className="uni-ships-pivot-text">Each vessel typically accommodates between 120 and 160 guests.</p>
@@ -466,28 +540,19 @@ function UniworldRiverCruises() {
                             </div>
                         </div>
 
-                        <div className="uni-ships-text-col">
-                            <span className="uni-eyebrow">SHIP DESIGN</span>
-                            <h2 className="uni-section-heading">Uniworld Fleet Overview</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-ships-lead">Every ship has its own personality rather than following a standardized design.</p>
-
-                            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
-                                <thead>
-                                    <tr style={{ borderBottom: '2px solid rgba(39, 68, 114, 0.15)' }}>
-                                        <th style={{ textAlign: 'left', padding: '12px 16px', fontSize: '12px', fontWeight: 700, color: '#274472', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ship Name</th>
-                                        <th style={{ textAlign: 'left', padding: '12px 16px', fontSize: '12px', fontWeight: 700, color: '#274472', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Primary Region</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {uniFleetData.map((ship, idx) => (
-                                        <tr key={idx} style={{ borderBottom: '1px solid rgba(39, 68, 114, 0.08)' }}>
-                                            <td style={{ padding: '11px 16px', fontSize: '14.5px', fontWeight: 600, color: '#2d3748' }}>{ship.name}</td>
-                                            <td style={{ padding: '11px 16px', fontSize: '14.5px', color: '#4a5568' }}>{ship.region}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                        <div className="uni-fleet-table-col">
+                            <div className="uni-fleet-ships-row">
+                                <div className="uni-fleet-col-head">Ship Name</div>
+                                <div className="uni-fleet-col-head">Primary Region</div>
+                            </div>
+                            <div className="uni-fleet-ships-list">
+                                {uniFleetData.map((ship, idx) => (
+                                    <div key={idx} className="uni-fleet-ship-item">
+                                        <span className="uni-fleet-ship-name"><Ship size={14} /> {ship.name}</span>
+                                        <span className="uni-fleet-ship-region">{ship.region}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,7 +562,7 @@ function UniworldRiverCruises() {
             <section className="uni-suites-section">
                 <div className="uni-suites-container">
                     <div className="uni-suites-header">
-                        <span className="uni-eyebrow">ACCOMMODATIONS</span>
+                        <span className="uni-eyebrow uni-eyebrow-center">ACCOMMODATIONS</span>
                         <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Accommodation Options</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                         <p className="uni-suites-intro">Guests can choose from several accommodation categories, each offering comfort and elegance.</p>
@@ -539,26 +604,42 @@ function UniworldRiverCruises() {
 
             {/* ── DINING ── */}
             <section className="uni-dining-section">
-                <div className="uni-dining-bg">
-                    <UniPlaceholder label="Uniworld Dining Image" className="uni-dining-bg-placeholder" />
-                </div>
-                <div className="uni-dining-overlay"></div>
-                <div className="uni-dining-content">
-                    <span className="uni-dining-eyebrow">CULINARY EXCELLENCE</span>
-                    <h2 className="uni-dining-heading">Dining on Uniworld</h2>
-                    <div className="uni-dining-separator"></div>
-                    <p className="uni-dining-note">Dining emphasizes regional cuisine prepared using fresh ingredients sourced throughout each itinerary.</p>
+                <div className="uni-dining-container">
+                    <div className="uni-dining-grid">
+                        <div className="uni-dining-content">
+                            <span className="uni-eyebrow">CULINARY EXCELLENCE</span>
+                            <h2 className="uni-section-heading">Dining on Uniworld</h2>
+                            <div className="uni-heading-separator-bar"></div>
+                            <p className="uni-dining-note" style={{ textAlign: 'left' }}>Dining emphasizes regional cuisine prepared using fresh ingredients sourced throughout each itinerary.</p>
 
-                    <div className="uni-dining-points">
-                        {uniDining.map(({ Icon, text }, idx) => (
-                            <div key={idx} className="uni-dining-point">
-                                <div className="uni-dining-point-icon"><Icon size={18} /></div>
-                                <span>{text}</span>
+                            <div className="uni-dining-points">
+                                {uniDining.map(({ Icon, text }, idx) => (
+                                    <div key={idx} className="uni-dining-point">
+                                        <div className="uni-dining-point-icon"><Icon size={18} /></div>
+                                        <span>{text}</span>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
-                    </div>
 
-                    <p className="uni-dining-footer">Menus change throughout the voyage to reflect local destinations.</p>
+                            <div className="uni-dining-footer">
+                                <div className="uni-dining-footer-icon">
+                                    <Info size={16} />
+                                </div>
+                                <p>Menus change throughout the voyage to reflect local destinations.</p>
+                            </div>
+                        </div>
+
+                        <div className="uni-dining-image-col">
+                            <div className="uni-image-frame">
+                                <UniPlaceholder label="Uniworld Dining Image" />
+                                <div className="uni-frame-overlay"></div>
+                                <div className="uni-dining-image-badge">
+                                    <Utensils size={15} />
+                                    <span>Gourmet Regional Cuisine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -566,7 +647,7 @@ function UniworldRiverCruises() {
             <section className="uni-included-section">
                 <div className="uni-included-container">
                     <div className="uni-included-header">
-                        <span className="uni-eyebrow">ALL-INCLUSIVE VALUE</span>
+                        <span className="uni-eyebrow uni-eyebrow-center">ALL-INCLUSIVE VALUE</span>
                         <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>What&apos;s Included?</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                         <p className="uni-included-intro">One reason travelers choose Uniworld is its comprehensive all-inclusive experience.</p>
@@ -591,34 +672,65 @@ function UniworldRiverCruises() {
             {/* ── SHORE EXCURSIONS ── */}
             <section className="uni-excursions-section">
                 <div className="uni-excursions-container">
-                    <div className="uni-excursions-grid">
+                    <div className="uni-excursions-header">
+                        <span className="uni-eyebrow uni-eyebrow-light uni-eyebrow-center">GUIDED EXPERIENCES</span>
+                        <h2 className="uni-section-heading uni-white-heading" style={{ textAlign: 'center', fontSize: '34px' }}>Shore Excursions</h2>
+                        <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
+                        <p className="uni-excursions-lead" style={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.85)' }}>Uniworld focuses on immersive local experiences led by knowledgeable guides.</p>
+                    </div>
 
-                        <div className="uni-excursions-text-col">
-                            <span className="uni-eyebrow">GUIDED EXPERIENCES</span>
-                            <h2 className="uni-section-heading">Shore Excursions</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-excursions-lead">Uniworld focuses on immersive local experiences led by knowledgeable guides.</p>
-                            <p className="uni-excursions-sub">Popular experiences include:</p>
+                    <div className="uni-tabs-wrapper">
+                        <div className="uni-tabs-sidebar">
+                            <div className="uni-tabs-header">
+                                {uniExcursions.map((excursion, idx) => {
+                                    const Icon = excursion.Icon;
+                                    return (
+                                        <button
+                                            key={idx}
+                                            className={`uni-tab-btn ${uniActiveExcursionTab === idx ? 'active' : ''}`}
+                                            onClick={() => setUniActiveExcursionTab(idx)}
+                                            style={{ display: 'flex', alignItems: 'center', gap: '10px' }}
+                                        >
+                                            <Icon size={16} />
+                                            {excursion.text}
+                                        </button>
+                                    )
+                                })}
+                            </div>
+                        </div>
 
-                            <div className="uni-excursions-list">
-                                {uniExcursions.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="uni-excursion-item">
-                                        <div className="uni-excursion-icon"><Icon size={17} /></div>
-                                        <span>{text}</span>
+                        <div className="uni-tabs-content">
+                            {uniExcursions.map((excursion, idx) => (
+                                <div key={idx} className={`uni-tab-panel ${uniActiveExcursionTab === idx ? 'active' : ''}`}>
+                                    <div className="uni-tab-dest-layout">
+                                        <div className="uni-tab-dest-image">
+                                            <UniPlaceholder label={excursion.imageLabel} />
+                                            <div className="uni-dest-card-overlay"></div>
+                                            <div className="uni-dest-card-tag">{excursion.tag}</div>
+                                        </div>
+                                        <div className="uni-tab-dest-content">
+                                            <h3 className="uni-tab-dest-title">{excursion.text}</h3>
+                                            <p className="uni-tab-dest-desc">{excursion.description}</p>
+                                            <div className="uni-tab-dest-details">
+                                                {excursion.highlights.map((highlight, hIdx) => (
+                                                    <div key={hIdx} className="uni-tab-detail-item">
+                                                        <CheckCircle size={16} style={{ color: '#4a9eff' }} />
+                                                        <span>{highlight}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
+                    </div>
 
-                        <div className="uni-excursions-image-col">
-                            <div className="uni-image-frame">
-                                <UniPlaceholder label="Guided Shore Excursion Image" />
-                                <div className="uni-frame-overlay"></div>
-                            </div>
-                            <div className="uni-excursions-conclusion-box">
-                                <p>Many sailings also include exclusive evening events at historic venues.</p>
-                            </div>
-                        </div>
+                    <div className="uni-destinations-statement-box">
+                        <Compass className="uni-destinations-statement-icon" size={24} />
+                        <p className="uni-destinations-statement-text">
+                            Many sailings also include <em>exclusive evening events</em> at historic venues, offering a rare look into local culture and heritage.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -632,6 +744,9 @@ function UniworldRiverCruises() {
                             <div className="uni-image-frame">
                                 <UniPlaceholder label="Onboard Wellness and Activities Image" />
                                 <div className="uni-frame-overlay"></div>
+                            </div>
+                            <div className="uni-service-conclusion-box" style={{ marginTop: '20px' }}>
+                                <p>Wellness activities and enrichment programs complement the immersive destination experiences on every voyage.</p>
                             </div>
                         </div>
 
@@ -650,10 +765,6 @@ function UniworldRiverCruises() {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="uni-service-conclusion-box">
-                                <p>Wellness activities and enrichment programs complement the immersive destination experiences on every voyage.</p>
-                            </div>
                         </div>
 
                     </div>
@@ -661,54 +772,54 @@ function UniworldRiverCruises() {
             </section>
 
             {/* ── BEST TIME ── */}
-            <section className="uni-compare-section">
-                <div className="uni-compare-container">
-                    <div className="uni-compare-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">SEASONAL GUIDE</span>
-                        <h2 className="uni-section-heading uni-white-heading">Best Time to Take a Uniworld River Cruise</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
+            <section className="uni-besttime-section">
+                <div className="uni-besttime-container">
+                    <div className="uni-besttime-header">
+                        <span className="uni-eyebrow uni-eyebrow-center">SEASONAL GUIDE</span>
+                        <h2 className="uni-section-heading">Best Time to Take a Uniworld River Cruise</h2>
+                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
                     </div>
 
-                    <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '32px' }}>
-                        <thead>
-                            <tr style={{ borderBottom: '2px solid rgba(255, 255, 255, 0.2)' }}>
-                                <th style={{ textAlign: 'left', padding: '14px 20px', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Season</th>
-                                <th style={{ textAlign: 'left', padding: '14px 20px', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Highlights</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {uniBestTime.map((item, idx) => (
-                                <tr key={idx} style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
-                                    <td style={{ padding: '14px 20px', fontSize: '15px', fontWeight: 600, color: '#ffffff' }}>{item.season}</td>
-                                    <td style={{ padding: '14px 20px', fontSize: '15px', color: 'rgba(255,255,255,0.85)' }}>{item.highlights}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    <div className="uni-besttime-grid">
+                        {uniBestTime.map((item, idx) => (
+                            <div key={idx} className="uni-besttime-card">
+                                <div className="uni-besttime-card-accent"></div>
+                                <h4 className="uni-besttime-card-season">{item.season}</h4>
+                                <p className="uni-besttime-card-text">{item.highlights}</p>
+                            </div>
+                        ))}
+                    </div>
 
-                    <div className="uni-compare-footer">
+                    <div className="uni-besttime-footer">
+                        <div className="uni-besttime-footer-icon">
+                            <Compass size={18} />
+                        </div>
                         <p>Travel goals often determine the ideal season for your Uniworld river cruise.</p>
                     </div>
                 </div>
             </section>
 
             {/* ── PRICING ── */}
-            <section className="uni-compare-section" style={{ background: '#182c49' }}>
-                <div className="uni-compare-container">
-                    <div className="uni-compare-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">VALUE &amp; INVESTMENT</span>
-                        <h2 className="uni-section-heading uni-white-heading">Understanding Uniworld Pricing</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
-                        <p className="uni-compare-intro">Pricing depends on destination, cruise length, cabin category, travel season, promotions, and included land programs.</p>
+            <section className="uni-pricing-section">
+                <div className="uni-pricing-container">
+                    <div className="uni-pricing-header">
+                        <span className="uni-eyebrow uni-eyebrow-center">VALUE &amp; INVESTMENT</span>
+                        <h2 className="uni-section-heading">Understanding Uniworld Pricing</h2>
+                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+                        <p className="uni-pricing-intro">Pricing depends on destination, cruise length, cabin category, travel season, promotions, and included land programs.</p>
                     </div>
 
-                    <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-                        <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '14px', padding: '28px 32px', display: 'inline-block', maxWidth: '720px' }}>
-                            <DollarSign size={28} style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '14px' }} />
-                            <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '16px', lineHeight: 1.7, margin: 0 }}>
-                                Luxury inclusions often reduce additional onboard expenses compared with lower-priced alternatives, making Uniworld a compelling value for discerning travelers.
-                            </p>
+                    <div className="uni-pricing-card">
+                        <div className="uni-pricing-card-icon">
+                            <DollarSign size={26} />
                         </div>
+                        <div className="uni-pricing-divider"></div>
+                        <p className="uni-pricing-card-text">
+                            Luxury inclusions often reduce additional onboard expenses compared with lower-priced alternatives.
+                        </p>
+                        <p className="uni-pricing-card-sub">
+                            Making Uniworld a compelling value for discerning travelers who appreciate all-inclusive elegance.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -717,8 +828,8 @@ function UniworldRiverCruises() {
             <section className="uni-who-section">
                 <div className="uni-who-container">
                     <div className="uni-who-header">
-                        <span className="uni-eyebrow">IDEAL TRAVELERS</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Who Should Choose Uniworld?</h2>
+                        <span className="uni-eyebrow uni-eyebrow-center">IDEAL TRAVELERS</span>
+                        <h2 className="uni-section-heading">Who Should Choose Uniworld?</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                         <p className="uni-who-intro">Uniworld appeals to travelers looking for refined, culturally immersive experiences.</p>
                         <p className="uni-who-sub">Ideal for:</p>
@@ -727,13 +838,16 @@ function UniworldRiverCruises() {
                     <div className="uni-who-grid">
                         {uniWhoShould.map((item, idx) => (
                             <div key={idx} className="uni-who-card">
-                                <Heart size={16} className="uni-who-icon" />
-                                <span>{item}</span>
+                                <div className="uni-who-num">{String(idx + 1).padStart(2, '0')}</div>
+                                <span className="uni-who-label">{item}</span>
                             </div>
                         ))}
                     </div>
 
                     <div className="uni-who-footer">
+                        <div className="uni-who-footer-icon">
+                            <Info size={16} />
+                        </div>
                         <p>Travelers looking for nightlife or large-scale entertainment may prefer ocean cruises instead.</p>
                     </div>
                 </div>
@@ -743,31 +857,30 @@ function UniworldRiverCruises() {
             <section className="uni-compare-section">
                 <div className="uni-compare-container">
                     <div className="uni-compare-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">COMPETITIVE STANDING</span>
+                        <span className="uni-eyebrow uni-eyebrow-center">COMPETITIVE STANDING</span>
                         <h2 className="uni-section-heading uni-white-heading">Uniworld Compared with Other Luxury River Cruise Lines</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
                     </div>
 
-                    <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '32px' }}>
-                        <thead>
-                            <tr style={{ borderBottom: '2px solid rgba(255, 255, 255, 0.2)' }}>
-                                <th style={{ textAlign: 'left', padding: '14px 20px', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Feature</th>
-                                <th style={{ textAlign: 'left', padding: '14px 20px', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Uniworld</th>
-                                <th style={{ textAlign: 'left', padding: '14px 20px', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Typical Premium River Cruise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {uniComparisonData.map((row, idx) => (
-                                <tr key={idx} style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
-                                    <td style={{ padding: '14px 20px', fontSize: '14.5px', fontWeight: 600, color: '#ffffff' }}>{row.feature}</td>
-                                    <td style={{ padding: '14px 20px', fontSize: '14.5px', color: 'rgba(255,255,255,0.9)' }}>{row.uniworld}</td>
-                                    <td style={{ padding: '14px 20px', fontSize: '14.5px', color: 'rgba(255,255,255,0.75)' }}>{row.typical}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    <div className="uni-compare-table">
+                        <div className="uni-compare-row uni-compare-head">
+                            <span className="uni-compare-col-feature">Feature</span>
+                            <span className="uni-compare-col-uni">Uniworld</span>
+                            <span className="uni-compare-col-typical">Typical Premium River Cruise</span>
+                        </div>
+                        {uniComparisonData.map((row, idx) => (
+                            <div key={idx} className="uni-compare-row">
+                                <span className="uni-compare-col-feature">{row.feature}</span>
+                                <span className="uni-compare-col-uni">{row.uniworld}</span>
+                                <span className="uni-compare-col-typical">{row.typical}</span>
+                            </div>
+                        ))}
+                    </div>
 
                     <div className="uni-compare-footer">
+                        <div className="uni-compare-footer-icon">
+                            <Award size={16} />
+                        </div>
                         <p>Uniworld distinguishes itself through personalized service and highly distinctive ship interiors.</p>
                     </div>
                 </div>
@@ -777,8 +890,8 @@ function UniworldRiverCruises() {
             <section className="uni-booking-section">
                 <div className="uni-booking-container">
                     <div className="uni-booking-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">EXPERT PLANNING</span>
-                        <h2 className="uni-section-heading uni-white-heading" style={{ textAlign: 'center' }}>Booking Tips</h2>
+                        <span className="uni-eyebrow uni-eyebrow-center">EXPERT PLANNING</span>
+                        <h2 className="uni-section-heading uni-white-heading">Booking Tips</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
                         <p className="uni-booking-intro">Our expert recommendations for planning your Uniworld river cruise:</p>
                     </div>
@@ -786,32 +899,43 @@ function UniworldRiverCruises() {
                     <div className="uni-booking-grid">
                         {uniBookingTips.map((item, idx) => (
                             <div key={idx} className="uni-booking-card">
-                                <CheckCircle size={18} style={{ color: '#274472', flexShrink: 0 }} />
-                                <span>{item}</span>
+                                <div className="uni-booking-num">{String(idx + 1).padStart(2, '0')}</div>
+                                <span className="uni-booking-label">{item}</span>
                             </div>
                         ))}
                     </div>
 
                     <div className="uni-booking-footer">
+                        <div className="uni-booking-footer-icon">
+                            <CheckCircle size={16} />
+                        </div>
                         <p>We make booking your Uniworld river cruise simple, seamless, and stress-free.</p>
                     </div>
                 </div>
             </section>
 
             {/* ── KEY TAKEAWAYS ── */}
-            <section className="uni-who-section" style={{ background: '#ffffff' }}>
-                <div className="uni-who-container">
-                    <div className="uni-who-header">
-                        <span className="uni-eyebrow">SUMMARY</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
+            <section className="uni-takeaway-section">
+                <div className="uni-takeaway-container">
+                    <div className="uni-takeaway-header">
+                        <span className="uni-eyebrow uni-eyebrow-center">SUMMARY</span>
+                        <h2 className="uni-section-heading">Key Takeaways</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                     </div>
 
-                    <div className="uni-who-grid">
-                        {uniKeyTakeaways.map((item, idx) => (
-                            <div key={idx} className="uni-who-card">
-                                <CheckCircle size={16} className="uni-who-icon" />
-                                <span>{item}</span>
+                    <div className="uni-takeaway-grid">
+                        {uniKeyTakeaways.slice(0, 4).map((item, idx) => (
+                            <div key={idx} className="uni-takeaway-card">
+                                <div className="uni-takeaway-num">{String(idx + 1).padStart(2, '0')}</div>
+                                <span className="uni-takeaway-label">{item}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="uni-takeaway-grid uni-takeaway-grid-center">
+                        {uniKeyTakeaways.slice(4).map((item, idx) => (
+                            <div key={idx} className="uni-takeaway-card">
+                                <div className="uni-takeaway-num">{String(idx + 5).padStart(2, '0')}</div>
+                                <span className="uni-takeaway-label">{item}</span>
                             </div>
                         ))}
                     </div>
@@ -822,29 +946,30 @@ function UniworldRiverCruises() {
             <section className="uni-review-section">
                 <div className="uni-review-container">
                     <div className="uni-review-header">
-                        <span className="uni-eyebrow">FINAL THOUGHTS</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Conclusion</h2>
+                        <span className="uni-eyebrow uni-eyebrow-center">FINAL THOUGHTS</span>
+                        <h2 className="uni-section-heading">Conclusion</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                         <p className="uni-review-intro">
                             Uniworld River Cruises offers an elevated river cruising experience through boutique ships, destination-inspired design, personalized service, and comprehensive all-inclusive amenities. Whether exploring the castles of the Rhine, the vineyards of the Douro, or the ancient temples of Egypt, travelers enjoy immersive journeys paired with exceptional hospitality. By understanding the destinations, ships, pricing, and onboard experience, you can confidently determine whether Uniworld is the right choice for your next luxury river cruise.
                         </p>
                     </div>
 
-                    <div style={{ textAlign: 'center', marginTop: '32px' }}>
-                        <div style={{ background: '#f6f8fb', borderRadius: '14px', padding: '28px 32px', display: 'inline-block', maxWidth: '720px', border: '1px solid rgba(39, 68, 114, 0.08)' }}>
-                            <Info size={28} style={{ color: '#274472', marginBottom: '14px' }} />
-                            <p style={{ color: '#2d3748', fontSize: '15px', lineHeight: 1.7, margin: 0, fontWeight: 500 }}>
-                                Contact Trips &amp; Ships Luxury Travel for personalized guidance and exclusive Uniworld offers tailored to your travel preferences.
-                            </p>
+                    <div className="uni-review-cta">
+                        <div className="uni-review-cta-icon">
+                            <Info size={20} />
                         </div>
+                        <p>
+                            Contact Trips &amp; Ships Luxury Travel for personalized guidance and exclusive Uniworld offers tailored to your travel preferences.
+                        </p>
                     </div>
                 </div>
             </section>
 
             {/* ── FAQ ── */}
-            <section className="uni-faq-main-section">
+            <section className="uni-faq-section">
                 <div className="uni-faq-container">
-                    <div style={{ textAlign: 'center' }}>
+                    <div className="uni-faq-header">
+                        <span className="uni-eyebrow uni-eyebrow-center">QUESTIONS BEFORE YOU GO</span>
                         <h2 className="uni-section-heading">Frequently Asked Questions</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                     </div>
@@ -852,7 +977,7 @@ function UniworldRiverCruises() {
                         {uniFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="uni-faq-individual-item"
+                                className="uni-faq-item"
                                 onClick={() => uniToggleFaq(index)}
                             >
                                 <div className="uni-faq-question-row">
@@ -869,55 +994,29 @@ function UniworldRiverCruises() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="uni-cta-main-section">
-                <div className="uni-cta-bg-pattern-layer"></div>
-                <div className="uni-cta-content-relative">
-                    <div className="uni-cta-inner-wrapper">
+            <section className="uni-cta-section">
+                <div className="uni-cta-aurora-glow"></div>
+                <div className="uni-cta-crystal uni-cta-crystal-1"></div>
+                <div className="uni-cta-crystal uni-cta-crystal-2"></div>
+                <div className="uni-cta-crystal uni-cta-crystal-3"></div>
+                <div className="uni-cta-grid-lines"></div>
 
-                        <h2 className="uni-cta-heading-white">Ready to experience luxury river cruising?</h2>
-                        <div className="uni-cta-separator-white"></div>
-
-                        <p className="uni-cta-paragraph-white">
-                            A Uniworld river cruise offers boutique luxury, all-inclusive comfort, and unforgettable destinations across Europe, Egypt, India, and Peru.
-                        </p>
-
-                        <p className="uni-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
-                            With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help travelers choose the right ship, suite, and itinerary for an unforgettable Uniworld vacation.
-                        </p>
-
-                        <div className="uni-cta-considerations-box">
-                            <span className="uni-cta-considerations-title">Let us help you with:</span>
-                            <ul className="uni-cta-considerations-list">
-                                {[
-                                    'Comparing Uniworld itineraries',
-                                    'Choosing the right ship and suite',
-                                    'Finding exclusive offers and promotions',
-                                    'Arranging flights and pre/post-cruise stays',
-                                    'Personalized concierge-level planning',
-                                    'Ensuring every detail exceeds expectations'
-                                ].map((item, idx) => (
-                                    <li key={idx} className="uni-cta-considerations-item">
-                                        <CheckCircle size={16} className="uni-cta-considerations-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <p className="uni-cta-paragraph-white" style={{ fontWeight: '500', color: '#ffffff', margin: '0 auto 36px', maxWidth: '850px' }}>
-                            Trips &amp; Ships Luxury Travel delivers expert guidance backed by real-world luxury travel expertise.
-                        </p>
-
-                        <div className="uni-cta-button-group">
-                            <Link to='/contact' className="uni-primary-cta-button">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="uni-secondary-outline-button">
-                                <LayoutList size={18} />
-                                Explore River Cruise Programs
-                            </button>
-                        </div>
+                <div className="uni-cta-content">
+                    <div className="uni-cta-compass-ring">
+                        <Compass size={28} />
+                    </div>
+                    <span className="uni-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
+                    <h2 className="uni-cta-title">Ready to Experience <br /> Luxury River Cruising?</h2>
+                    <div className="uni-cta-bar"></div>
+                    <p className="uni-cta-subtitle">
+                        Explore available Uniworld itineraries, compare destinations, and start planning your unforgettable boutique river cruise vacation today.
+                    </p>
+                    <div className="uni-cta-actions">
+                        <Link to="/contact" className="uni-cta-primary-btn">
+                            <Phone size={18} />
+                            <span>Speak with a luxury river cruise specialist</span>
+                            <ArrowRight size={16} className="uni-cta-btn-arrow" />
+                        </Link>
                     </div>
                 </div>
             </section>
