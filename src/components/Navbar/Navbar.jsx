@@ -1016,13 +1016,21 @@ const Navbar = () => {
                 Uniworld Ships &amp; Suites Guide
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/danube"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Uniworld Danube River Cruises
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/seine"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Seine River Cruises
+              </NavLink>
 
             </div>
           </div>
@@ -2017,13 +2025,23 @@ const Navbar = () => {
               Is Uniworld Worth the Money?
             </NavLink>
 
-            {/* <NavLink
-                to="/uniworld-river-cruises/danube"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Danube River Cruises
-              </NavLink> */}
+            <NavLink
+              to="/uniworld-river-cruises/danube"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Danube River Cruises
+            </NavLink>
+
+
+            <NavLink
+              to="/uniworld-river-cruises/seine"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Seine River Cruises
+            </NavLink>
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

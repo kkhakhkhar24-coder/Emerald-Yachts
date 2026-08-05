@@ -144,7 +144,10 @@ import WhatIsIncludedOnUniworld from "./pages/Whatisincludedonuniworld/Whatisinc
 import UniworldRiverCruiseCost from "./pages/Uniworldrivercruisecost/Uniworldrivercruisecost";
 import IsUniworldWorthIt from "./pages/IsUniworldWorthIt/IsUniworldWorthIt";
 import UniworldShipsSuites from "./pages/UniworldShipsSuites/UniworldShipsSuites";
-// import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniworlddanuberivercruises";
+import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniworlddanuberivercruises";
+import Uniworldbordeauxrivercruises from "./pages/Uniworldbordeauxrivercruises/Uniworldbordeauxrivercruises";
+import Uniworldrhonesaonerivercruises from "./pages/Uniworldrhonesaonerivercruises/Uniworldrhonesaonerivercruises";
+import Uniworldseinerivercruises from "./pages/Uniworldseinerivercruises/Uniworldseinerivercruises";
 
 function App() {
   return (
@@ -806,10 +809,25 @@ function App() {
             element={<UniworldShipsSuites />}
           />
 
-          {/* <Route
+          <Route
             path="/uniworld-river-cruises/danube"
             element={<Uniworlddanuberivercruises />}
-          /> */}
+          />
+
+           <Route
+            path="/uniworld-river-cruises/bordeaux"
+            element={<Uniworldbordeauxrivercruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/rhone-saone"
+            element={<Uniworldrhonesaonerivercruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/seine"
+            element={<Uniworldseinerivercruises />}
+          />
 
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,2362 @@
+/* ============================================================
+   UNIWORLD BORDEAUX RIVER CRUISES — PAGE STYLES
+   Reference Colors & Typography preserved from site design system.
+   Shared/matched layout classes: fcel- (hero, intro, faq, cta, buttons)
+   New unique page-specific classes: bwrc- (Bordeaux Wine River Cruise)
+   ============================================================ */
+
+:root {
+    --urcr-navy: #274472;
+    --urcr-navy-light: #274472cc;
+    --urcr-bg-white: #ffffff;
+    --urcr-bg-soft: rgb(231, 243, 245);
+    --urcr-bg-dark: #0f1c2e;
+    --urcr-bg-dark2: #1c2f4a;
+    --urcr-green: #10b981;
+    --urcr-gold: var(--urcr-navy);
+
+    /* Eyebrow theme colors */
+    --bwrc-eyebrow-rating-bg: white;
+    --bwrc-eyebrow-rating-color: navy;
+    --bwrc-eyebrow-included-bg: white;
+    --bwrc-eyebrow-included-color: navy;
+    --bwrc-eyebrow-accommodations-bg: white;
+    --bwrc-eyebrow-accommodations-color: navy;
+    --bwrc-eyebrow-season-bg: white;
+    --bwrc-eyebrow-season-color: navy;
+    --bwrc-eyebrow-worth-bg: white;
+    --bwrc-eyebrow-worth-color: navy;
+    --bwrc-eyebrow-audience-bg: white;
+    --bwrc-eyebrow-audience-color: navy;
+    --bwrc-eyebrow-verdict-bg: white;
+    --bwrc-eyebrow-verdict-color: navy;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (MATCHED)
+   ============================================================ */
+
+.fcel-page-wrapper {
+    overflow-x: hidden;
+}
+
+.fcel-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--urcr-navy);
+}
+
+.fcel-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--urcr-navy);
+    margin-bottom: 32px;
+}
+
+.fcel-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fcel-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--urcr-navy);
+    background: var(--urcr-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+/* Custom themed eyebrow overlays */
+.bwrc-eyebrow-rating {
+    background: var(--bwrc-eyebrow-rating-bg) !important;
+    color: var(--bwrc-eyebrow-rating-color) !important;
+}
+
+.bwrc-eyebrow-included {
+    background: var(--bwrc-eyebrow-included-bg) !important;
+    color: var(--bwrc-eyebrow-included-color) !important;
+}
+
+.bwrc-eyebrow-accommodations {
+    background: var(--bwrc-eyebrow-accommodations-bg) !important;
+    color: var(--bwrc-eyebrow-accommodations-color) !important;
+}
+
+.bwrc-eyebrow-season {
+    background: var(--bwrc-eyebrow-season-bg) !important;
+    color: var(--bwrc-eyebrow-season-color) !important;
+    width: 220px;
+}
+
+.bwrc-eyebrow-worth {
+    background: var(--bwrc-eyebrow-worth-bg) !important;
+    color: var(--bwrc-eyebrow-worth-color) !important;
+    width: 220px;
+}
+
+.bwrc-eyebrow-audience {
+    background: var(--bwrc-eyebrow-audience-bg) !important;
+    color: var(--bwrc-eyebrow-audience-color) !important;
+}
+
+.bwrc-eyebrow-verdict {
+    background: var(--bwrc-eyebrow-verdict-bg) !important;
+    color: var(--bwrc-eyebrow-verdict-color) !important;
+}
+
+/* White background for eyebrows on soft-blue section backgrounds */
+.bwrc-eyebrow-included,
+.bwrc-eyebrow-accommodations {
+    background: var(--urcr-bg-white) !important;
+    color: var(--urcr-navy) !important;
+}
+
+.fcel-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .fcel-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .fcel-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-section-heading {
+        font-size: 26px !important;
+    }
+
+    .fcel-lead-paragraph {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   IMAGE PLACEHOLDER COMPONENT (NEW - UNIQUE)
+   ============================================================ */
+.bwrc-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.04) 0%, rgba(231, 243, 245, 0.7) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--urcr-navy);
+    padding: 24px;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.bwrc-image-placeholder span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.bwrc-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+/* ============================================================
+   HERO SECTION (MATCHED)
+   ============================================================ */
+.fcel-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fcel-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.fcel-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.fcel-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcel-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fcel-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.fcel-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fcel-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fcel-btn-primary {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.fcel-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .fcel-hero-title {
+        font-size: 42px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-hero-title {
+        font-size: 32px;
+    }
+
+    .fcel-hero-content {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-hero-title {
+        font-size: 26px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .fcel-hero-tag {
+        font-size: 12px;
+    }
+
+    .fcel-btn-primary,
+    .fcel-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fcel-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION (MATCHED)
+   ============================================================ */
+.fcel-intro-section {
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fcel-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fcel-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.fcel-intro-copy {
+    position: relative;
+}
+
+.fcel-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.fcel-intro-image-frame img,
+.fcel-intro-image-frame .bwrc-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.fcel-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--urcr-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
+}
+
+.fcel-intro-highlight-box {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--urcr-navy);
+    border-radius: 14px;
+    padding: 26px 32px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.15);
+}
+
+.fcel-intro-quote-icon {
+    font-size: 36px;
+    line-height: 0.5;
+    color: rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fcel-intro-quote-content {
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .fcel-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .fcel-intro-image-frame {
+        order: -1;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .bwrc-image-placeholder {
+        min-height: 320px;
+    }
+
+    .fcel-intro-highlight-box {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-intro-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-intro-section {
+        padding: 44px 14px;
+    }
+
+    .fcel-intro-highlight-box {
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .fcel-intro-quote-icon {
+        font-size: 28px;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .bwrc-image-placeholder {
+        min-height: 240px;
+    }
+
+    .fcel-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+/* ============================================================
+   RATING SUMMARY SECTION (bwrc- unique)
+   ============================================================ */
+.bwrc-rating-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.bwrc-rating-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bwrc-rating-card {
+    background: var(--urcr-bg-white);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 40px;
+    align-items: center;
+}
+
+.bwrc-rating-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.bwrc-rating-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #faf8f5;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-rating-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+}
+
+.bwrc-rating-stars {
+    color: #f1c40f;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.bwrc-rating-score-box {
+    background: linear-gradient(135deg, var(--urcr-bg-dark) 0%, var(--urcr-navy) 100%);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.15);
+}
+
+.bwrc-rating-score {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.bwrc-rating-score-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-rating-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-rating-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-rating-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-rating-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-rating-card {
+        padding: 20px;
+    }
+
+    .bwrc-rating-item {
+        padding: 12px 16px;
+    }
+
+    .bwrc-rating-label {
+        font-size: 14px;
+    }
+
+    .bwrc-rating-stars {
+        font-size: 14px;
+    }
+
+    .bwrc-rating-score {
+        font-size: 36px;
+    }
+}
+
+/* ============================================================
+   QUICK ANSWER SECTION (bwrc- unique)
+   ============================================================ */
+.bwrc-quick-answer-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.bwrc-quick-answer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bwrc-quick-answer-card {
+    background: #faf8f5;
+    border-left: 5px solid var(--urcr-navy);
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-quick-answer-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 20px 0;
+}
+
+.bwrc-quick-answer-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .bwrc-quick-answer-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-quick-answer-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-quick-answer-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-quick-answer-title {
+        font-size: 22px;
+    }
+
+    .bwrc-quick-answer-text {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   HIGHLIGHTS SECTION — "WHY CHOOSE A BORDEAUX RIVER CRUISE?" (bwrc- unique)
+   ============================================================ */
+.bwrc-highlights-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.bwrc-highlights-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.bwrc-highlight-card {
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 26px 20px;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.bwrc-highlight-card:hover {
+    background: var(--urcr-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.bwrc-highlight-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+    transition: all 0.3s ease;
+}
+
+.bwrc-highlight-card:hover .bwrc-highlight-icon-wrap {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+.bwrc-highlight-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-highlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-highlights-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-highlights-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* ============================================================
+   INLINE CTA SECTIONS (bwrc- unique, reused across page)
+   ============================================================ */
+.bwrc-inline-cta-section {
+    background: linear-gradient(135deg, #faf8f5 0%, #e7f3f5 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.bwrc-inline-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.bwrc-inline-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.bwrc-inline-cta-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 24px;
+    padding: 38px 46px;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.bwrc-inline-cta-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--urcr-navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--urcr-bg-soft);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.bwrc-inline-cta-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+    line-height: 1.45;
+    max-width: 650px;
+}
+
+.bwrc-inline-cta-btn-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.bwrc-btn-primary {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.2);
+}
+
+.bwrc-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.3);
+}
+
+.bwrc-btn-outline {
+    background: transparent;
+    color: var(--urcr-navy);
+    border: 2px solid var(--urcr-navy);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bwrc-btn-outline:hover {
+    background: rgba(39, 68, 114, 0.06);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .bwrc-inline-cta-section {
+        padding: 40px 18px;
+    }
+
+    .bwrc-inline-cta-container {
+        padding: 26px 30px;
+    }
+
+    .bwrc-inline-cta-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-inline-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bwrc-btn-primary,
+    .bwrc-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   WHAT'S INCLUDED SECTION (bwrc- unique)
+   ============================================================ */
+.bwrc-included-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.bwrc-included-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bwrc-included-card {
+    background: var(--urcr-bg-white);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-included-intro {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 24px 0;
+}
+
+.bwrc-included-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bwrc-included-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.bwrc-included-icon {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .bwrc-included-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-included-card {
+        padding: 24px;
+    }
+
+    .bwrc-included-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-included-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-included-intro {
+        font-size: 16px;
+    }
+
+    .bwrc-included-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   TOP DESTINATIONS GRID (bwrc- unique)
+   ============================================================ */
+.bwrc-dest-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.bwrc-dest-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.bwrc-dest-card {
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.bwrc-dest-card:hover {
+    background: var(--urcr-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.bwrc-dest-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--urcr-navy);
+}
+
+.bwrc-dest-card:hover .bwrc-dest-icon-wrap {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+.bwrc-dest-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 10px 0;
+}
+
+.bwrc-dest-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-dest-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-dest-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-dest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bwrc-dest-name {
+        font-size: 17px;
+    }
+}
+
+/* ============================================================
+   DETAILED REVIEW BLOCK — SHARED WRAPPER (bwrc- unique)
+   ============================================================ */
+.bwrc-review-section {
+    background: #faf8f5;
+    padding: 100px 20px;
+}
+
+.bwrc-bg-white {
+    background: var(--urcr-bg-white) !important;
+}
+
+.bwrc-bg-soft {
+    background: var(--urcr-bg-soft) !important;
+}
+
+.bwrc-review-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-review-copy-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.bwrc-review-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--urcr-navy);
+    margin: 0 0 16px 0;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-review-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-review-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-review-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-review-title {
+        font-size: 24px;
+    }
+}
+
+/* 1. LUXURY ACCOMMODATIONS */
+.bwrc-cabins-container {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.bwrc-cabins-container .fcel-eyebrow-label {
+    align-self: flex-start;
+}
+
+.bwrc-cabins-container .bwrc-review-title {
+    text-align: center;
+    width: 100%;
+}
+
+.bwrc-cabin-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.bwrc-cabin-feature-card {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.bwrc-cabin-feature-card:hover {
+    background: #ffffff;
+    border-color: var(--urcr-navy);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08);
+}
+
+.bwrc-cabin-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--urcr-bg-soft);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.bwrc-cabin-feature-card:hover .bwrc-cabin-card-icon {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+.bwrc-cabin-card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    font-weight: 500;
+}
+
+.bwrc-image-wrapper-premium {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bwrc-image-wrapper-premium .bwrc-image-placeholder {
+    min-height: 400px;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.bwrc-badge-overlay-gold {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-bg-dark);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+/* 2. DINING ONBOARD (DARK THEME) */
+.bwrc-dining-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.bwrc-dining-dark-section {
+    background: linear-gradient(135deg, var(--urcr-bg-dark) 0%, var(--urcr-bg-dark2) 100%) !important;
+    color: var(--urcr-bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.bwrc-dining-dark-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 80% 20%, rgba(39, 68, 114, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.bwrc-dining-dark-section .bwrc-review-title {
+    color: var(--urcr-bg-white);
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.bwrc-dining-dark-section .fcel-lead-paragraph {
+    color: var(--urcr-navy-light);
+}
+
+.bwrc-dining-intro-line {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--urcr-bg-soft);
+    margin: 0 0 20px 0;
+}
+
+.bwrc-dining-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.bwrc-dining-course-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 3px solid var(--urcr-navy);
+    border-radius: 0 16px 16px 0;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bwrc-dining-course-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--urcr-bg-white);
+    border-left-color: var(--urcr-bg-white);
+    transform: translateX(6px);
+}
+
+.bwrc-dining-course-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.15);
+    color: var(--urcr-bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.bwrc-dining-course-card:hover .bwrc-dining-course-icon {
+    background: var(--urcr-navy);
+    color: var(--urcr-bg-white);
+}
+
+.bwrc-dining-course-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--urcr-bg-soft);
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+
+    .bwrc-cabins-container,
+    .bwrc-dining-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .bwrc-cabin-feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bwrc-dining-dark-section .bwrc-review-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .bwrc-dining-dark-section .fcel-eyebrow-label {
+        margin: 0 auto 20px;
+        display: table;
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-cabin-feature-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .bwrc-dining-course-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .bwrc-dining-course-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-image-wrapper-premium .bwrc-image-placeholder {
+        min-height: 280px;
+    }
+}
+
+/* ============================================================
+   BEST TIME TO CRUISE BORDEAUX (bwrc- unique)
+   ============================================================ */
+.bwrc-season-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.bwrc-season-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-season-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.bwrc-season-card {
+    background: var(--urcr-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.bwrc-season-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(39, 68, 114, 0.2);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.bwrc-season-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--urcr-navy);
+    transition: all 0.3s ease;
+}
+
+.bwrc-season-card:hover .bwrc-season-icon-wrap {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+.bwrc-season-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 10px 0;
+}
+
+.bwrc-season-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-season-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-season-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-season-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-season-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* ============================================================
+   PLANNING TIPS (bwrc- unique)
+   ============================================================ */
+.bwrc-tips-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.bwrc-tips-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bwrc-tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.bwrc-tip-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 14px;
+    padding: 20px 26px;
+    transition: all 0.3s ease;
+}
+
+.bwrc-tip-item:hover {
+    background: var(--urcr-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.06);
+    transform: translateY(-2px);
+}
+
+.bwrc-tip-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--urcr-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.bwrc-tip-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .bwrc-tips-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-tip-item {
+        padding: 16px 20px;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-tips-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-tip-text {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   PROS & CONS SECTIONS (bwrc- unique)
+   ============================================================ */
+.bwrc-pros-section {
+    padding: 100px 20px;
+}
+
+.bwrc-cons-section {
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-pros-cons-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-pros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.bwrc-pro-card {
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 26px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.01);
+}
+
+.bwrc-pro-card:hover {
+    transform: translateY(-5px);
+    background: var(--urcr-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.06);
+}
+
+.bwrc-pro-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-pro-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+}
+
+.bwrc-cons-heading-wrap {
+    text-align: center;
+}
+
+.bwrc-cons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.bwrc-con-card {
+    background: var(--urcr-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-left: 4px solid var(--urcr-navy);
+    border-radius: 0 16px 16px 0;
+    padding: 26px 28px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.bwrc-con-card:hover {
+    transform: translateY(-3px);
+    background: var(--urcr-bg-soft);
+    border-color: rgba(39, 68, 114, 0.2);
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.06);
+}
+
+.bwrc-con-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 1024px) {
+
+    .bwrc-pros-grid,
+    .bwrc-cons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bwrc-pros-section,
+    .bwrc-cons-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-pros-grid,
+    .bwrc-cons-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .bwrc-pros-section,
+    .bwrc-cons-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-pro-card,
+    .bwrc-con-card {
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   WHO SHOULD BOOK — TARGET AUDIENCE (bwrc- unique)
+   ============================================================ */
+.bwrc-audience-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.bwrc-audience-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bwrc-audience-card {
+    background: var(--urcr-bg-white);
+    border-radius: 20px;
+    padding: 44px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 4px solid var(--urcr-green);
+}
+
+.bwrc-audience-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 24px 0;
+    text-align: center;
+}
+
+.bwrc-audience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bwrc-audience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.bwrc-audience-check {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .bwrc-audience-section {
+        padding: 60px 18px;
+    }
+
+    .bwrc-audience-card {
+        padding: 24px;
+    }
+
+    .bwrc-audience-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-audience-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-audience-title {
+        font-size: 20px;
+    }
+
+    .bwrc-audience-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS (bwrc- unique)
+   ============================================================ */
+.bwrc-why-book-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-why-book-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bwrc-why-book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.bwrc-why-book-card {
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.01);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.bwrc-why-book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--urcr-navy);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.bwrc-why-book-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.bwrc-why-book-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+}
+
+.bwrc-why-book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.bwrc-why-book-card:hover::before {
+    transform: scaleX(1);
+}
+
+.bwrc-why-book-card:hover .bwrc-why-book-icon {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .bwrc-why-book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bwrc-why-book-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bwrc-why-book-section {
+        padding: 44px 14px;
+    }
+
+    .bwrc-why-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bwrc-why-book-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ============================================================
+   VERDICT SECTION — "OUR RECOMMENDATION" (bwrc- unique)
+   ============================================================ */
+.bwrc-verdict-stars {
+    color: #f1c40f;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.bwrc-verdict-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--urcr-navy);
+    line-height: 1.7;
+}
+
+/* ============================================================
+   FAQ SECTION (MATCHED)
+   ============================================================ */
+.fcel-faq-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.fcel-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fcel-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fcel-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.fcel-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.fcel-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+}
+
+.fcel-faq-toggle {
+    font-size: 22px;
+    color: var(--urcr-navy);
+    flex-shrink: 0;
+}
+
+.fcel-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .fcel-faq-section {
+        padding: 60px 18px;
+    }
+
+    .fcel-faq-question-row {
+        font-size: 15px;
+    }
+
+    .fcel-faq-item {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-faq-question-row {
+        font-size: 14px;
+    }
+
+    .fcel-faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   CTA SECTION (MATCHED)
+   ============================================================ */
+.fcel-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--urcr-bg-dark) 0%, var(--urcr-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fcel-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.fcel-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.fcel-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.fcel-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.fcel-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.fcel-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .fcel-cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-cta-section {
+        padding: 70px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-cta-heading {
+        font-size: 22px;
+    }
+
+    .fcel-cta-text {
+        font-size: 14px;
+    }
+
+    .fcel-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fcel-cta-btn-row .fcel-btn-primary,
+    .fcel-cta-btn-row .fcel-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY & SECTION PADDING OVERRIDES
+   ============================================================ */
+
+/* Section paddings */
+.fcel-intro-section,
+.bwrc-rating-section,
+.bwrc-quick-answer-section,
+.bwrc-highlights-section,
+.bwrc-included-section,
+.bwrc-dest-section,
+.bwrc-review-section,
+.bwrc-season-section,
+.bwrc-tips-section,
+.bwrc-pros-section,
+.bwrc-cons-section,
+.bwrc-audience-section,
+.bwrc-why-book-section,
+.fcel-faq-section,
+.fcel-cta-section,
+.bwrc-inline-cta-section,
+.bwrc-dining-dark-section {
+    padding: 60px 20px !important;
+}
+
+/* Desktop typography (1024px+) */
+.fcel-hero-title,
+.fcel-page-wrapper h1 {
+    font-size: 60px !important;
+}
+
+.fcel-section-heading,
+.bwrc-review-title,
+.fcel-page-wrapper h2 {
+    font-size: 48px !important;
+}
+
+.fcel-lead-paragraph,
+.fcel-page-wrapper p {
+    font-size: 18px !important;
+}
+
+/* Tablet typography (<=1024px) */
+@media (max-width: 1024px) {
+
+    .fcel-hero-title,
+    .fcel-page-wrapper h1 {
+        font-size: 32px !important;
+    }
+
+    .fcel-section-heading,
+    .bwrc-review-title,
+    .fcel-page-wrapper h2 {
+        font-size: 28px !important;
+    }
+
+    .fcel-lead-paragraph,
+    .fcel-page-wrapper p {
+        font-size: 17px !important;
+    }
+}
+
+/* Mobile typography (<=480px) */
+@media (max-width: 480px) {
+
+    .fcel-hero-title,
+    .fcel-page-wrapper h1 {
+        font-size: 26px !important;
+    }
+
+    .fcel-section-heading,
+    .bwrc-review-title,
+    .fcel-page-wrapper h2 {
+        font-size: 24px !important;
+    }
+
+    .fcel-lead-paragraph,
+    .fcel-page-wrapper p {
+        font-size: 16px !important;
+    }
+}
+
+/* ============================================================
+   TOP DESTINATIONS — COMPACT PLACEHOLDER LAYOUT
+   ============================================================ */
+.bwrc-placeholder-card {
+    min-height: 180px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 12px !important;
+}
+
+.bwrc-badge-overlay-gold {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-bg-dark);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+/* ============================================================
+   PROS & CONS — COMPARISON BOARD STYLE (NEW)
+   ============================================================ */
+.bwrc-comparison-board {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--urcr-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    margin-top: 40px;
+    text-align: left;
+}
+
+.bwrc-pros-panel {
+    padding: 50px 40px;
+    background: var(--urcr-bg-white);
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.bwrc-cons-panel {
+    padding: 50px 40px;
+    background: #fafbfe;
+}
+
+.bwrc-panel-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bwrc-panel-title.pros-title {
+    color: #10b981;
+}
+
+.bwrc-panel-title.cons-title {
+    color: #ef4444;
+}
+
+.bwrc-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bwrc-list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bwrc-item-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bwrc-item-icon-wrap.pro-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.bwrc-item-icon-wrap.con-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.bwrc-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.bwrc-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .bwrc-comparison-board {
+        grid-template-columns: 1fr;
+    }
+
+    .bwrc-pros-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 40px 30px;
+    }
+
+    .bwrc-cons-panel {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .bwrc-pros-panel,
+    .bwrc-cons-panel {
+        padding: 30px 20px;
+    }
+
+    .bwrc-panel-title {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .bwrc-panel-list {
+        gap: 20px;
+    }
+
+    .bwrc-list-item {
+        gap: 12px;
+    }
+
+    .bwrc-item-title {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   BACKGROUND HELPERS
+   ============================================================ */
+.bwrc-bg-white {
+    background-color: var(--urcr-bg-white) !important;
+}
+
+.bwrc-bg-soft {
+    background-color: var(--urcr-bg-soft) !important;
+}
+
+/* ============================================================
+   WHY BOOK WITH US — DARK BLUE THEME OVERRIDES
+   ============================================================ */
+.bwrc-why-book-dark-section {
+    background: var(--urcr-bg-dark) !important;
+}
+
+.bwrc-why-book-dark-section .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.bwrc-why-book-dark-section .fcel-heading-bar {
+    background: #60a5fa !important;
+}
+
+.bwrc-why-book-dark-section .fcel-eyebrow-label {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+}
+
+.bwrc-why-book-dark-section .bwrc-why-book-card {
+    background: var(--urcr-bg-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.bwrc-why-book-dark-section .bwrc-why-book-icon {
+    background: var(--urcr-bg-soft) !important;
+    color: var(--urcr-navy) !important;
+}
+
+.bwrc-why-book-dark-section .bwrc-why-book-title {
+    color: var(--urcr-navy) !important;
+}
+
+.bwrc-why-book-dark-section .bwrc-why-book-desc {
+    color: #475569 !important;
+}

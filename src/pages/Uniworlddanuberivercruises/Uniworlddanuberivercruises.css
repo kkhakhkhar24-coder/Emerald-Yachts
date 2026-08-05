@@ -784,6 +784,7 @@
     .urcr-pros-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .urcr-cons-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -901,6 +902,7 @@
 }
 
 @media (max-width: 1024px) {
+
     .urcr-review-grid,
     .urcr-review-grid.urcr-review-reverse {
         grid-template-columns: 1fr;
@@ -2033,6 +2035,7 @@
 }
 
 @media (max-width: 768px) {
+
     .udrc-worth-section,
     .udrc-recommendation-section {
         padding: 60px 18px;
@@ -2040,6 +2043,7 @@
 }
 
 @media (max-width: 480px) {
+
     .udrc-worth-section,
     .udrc-recommendation-section {
         padding: 44px 14px;
@@ -2101,4 +2105,389 @@
         font-size: 14px;
         padding: 16px 18px;
     }
+}
+
+/* ============================================================
+   TOP DESTINATIONS — COMPACT PLACEHOLDER LAYOUT
+   ============================================================ */
+.udrc-placeholder-card {
+    min-height: 180px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 12px !important;
+}
+
+.udrc-badge-overlay-gold {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-bg-dark);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+/* ============================================================
+   CABINS & DINING — RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    .urcr-cabins-container,
+    .urcr-dining-container {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .urcr-cabin-feature-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+
+/* ============================================================
+   PROS & CONS — COMPARISON BOARD STYLE (NEW)
+   ============================================================ */
+.udrc-comparison-board {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--urcr-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    margin-top: 40px;
+    text-align: left;
+}
+
+.udrc-pros-panel {
+    padding: 50px 40px;
+    background: var(--urcr-bg-white);
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.udrc-cons-panel {
+    padding: 50px 40px;
+    background: #fafbfe;
+}
+
+.udrc-panel-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.udrc-panel-title.pros-title {
+    color: #10b981;
+}
+
+.udrc-panel-title.cons-title {
+    color: #ef4444;
+}
+
+.udrc-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.udrc-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.udrc-item-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.udrc-item-icon-wrap.pro-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.udrc-item-icon-wrap.con-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.udrc-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.udrc-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 4px 0;
+}
+
+.udrc-item-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .udrc-comparison-board {
+        grid-template-columns: 1fr;
+    }
+
+    .udrc-pros-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 40px 30px;
+    }
+
+    .udrc-cons-panel {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .udrc-pros-panel,
+    .udrc-cons-panel {
+        padding: 30px 20px;
+    }
+
+    .udrc-panel-title {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .udrc-panel-list {
+        gap: 20px;
+    }
+
+    .udrc-list-item {
+        gap: 12px;
+    }
+
+    .udrc-item-title {
+        font-size: 15px;
+    }
+
+    .udrc-item-desc {
+        font-size: 13px;
+    }
+}
+
+/* ============================================================
+   WHY BOOK WITH US — STAGGERED FLOW THEME (NEW)
+   ============================================================ */
+.udrc-why-book-section {
+    background: #fafbfe;
+    padding: 100px 20px;
+}
+
+.udrc-why-book-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.udrc-why-book-flow {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.udrc-why-book-featured-card {
+    background: linear-gradient(145deg, #0f1c2e 0%, #1c2f4a 100%);
+    border: 1px solid rgba(229, 193, 88, 0.2);
+    border-radius: 24px;
+    padding: 50px 40px;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.15);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.udrc-why-book-featured-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(229, 193, 88, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.udrc-featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(229, 193, 88, 0.1);
+    border: 1px solid rgba(229, 193, 88, 0.3);
+    color: #e5c158;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.udrc-featured-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+}
+
+.udrc-featured-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.udrc-why-book-vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+
+.udrc-vertical-list-item {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.udrc-vertical-item-bullet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.udrc-bullet-inner {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.udrc-vertical-list-item:hover .udrc-bullet-inner {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(39, 68, 114, 0.15);
+}
+
+.udrc-vertical-list-item:not(:last-child) .udrc-vertical-item-bullet::after {
+    content: '';
+    position: absolute;
+    top: 44px;
+    bottom: -30px;
+    width: 2px;
+    background: rgba(39, 68, 114, 0.08);
+    z-index: 1;
+}
+
+.udrc-vertical-item-content {
+    padding-top: 4px;
+}
+
+.udrc-vertical-item-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 6px 0;
+    transition: color 0.3s ease;
+}
+
+.udrc-vertical-list-item:hover .udrc-vertical-item-title {
+    color: #10b981;
+}
+
+.udrc-vertical-item-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .udrc-why-book-flow {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .udrc-why-book-featured-card {
+        padding: 30px 24px;
+    }
+
+    .udrc-featured-title {
+        font-size: 20px;
+    }
+
+    .udrc-vertical-item-title {
+        font-size: 15px;
+    }
+
+    .udrc-vertical-item-desc {
+        font-size: 13px;
+    }
+}
+
+/* ============================================================
+   GLOBAL SECTION PADDING OVERRIDES
+   ============================================================ */
+.fcel-intro-section,
+.udrc-highlights-section,
+.udrc-included-section,
+.udrc-dest-section,
+.urcr-review-section,
+.udrc-season-section,
+.udrc-worth-section,
+.urcr-pros-section,
+.urcr-audience-section,
+.udrc-tips-section,
+.udrc-why-book-section,
+.udrc-recommendation-section,
+.fcel-faq-section,
+.fcel-cta-section,
+.urcr-inline-cta-section,
+.urcr-dining-dark-section {
+    padding: 60px 20px !important;
 }
