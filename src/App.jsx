@@ -142,6 +142,8 @@ import Uniworldcruiseandrailjourneys from "./pages/Uniworldcruiseandrailjourneys
 import Uniworldrhinerivercruises from "./pages/Uniworldrhinerivercruises/Uniworldrhinerivercruises";
 import WhatIsIncludedOnUniworld from "./pages/Whatisincludedonuniworld/Whatisincludedonuniworld";
 import UniworldRiverCruiseCost from "./pages/Uniworldrivercruisecost/Uniworldrivercruisecost";
+import IsUniworldWorthIt from "./pages/IsUniworldWorthIt/IsUniworldWorthIt";
+import UniworldShipsSuites from "./pages/UniworldShipsSuites/UniworldShipsSuites";
 // import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniworlddanuberivercruises";
 
 function App() {
@@ -792,6 +794,16 @@ function App() {
           <Route
             path="/uniworld-river-cruises/cost-deals/"
             element={<UniworldRiverCruiseCost />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/is-uniworld-worth-it/"
+            element={<IsUniworldWorthIt />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/ships-suites/"
+            element={<UniworldShipsSuites />}
           />
 
           {/* <Route

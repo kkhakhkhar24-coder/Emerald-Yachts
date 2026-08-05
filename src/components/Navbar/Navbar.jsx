@@ -1000,6 +1000,22 @@ const Navbar = () => {
                 How Much Does a Uniworld River Cruise Cost?
               </NavLink>
 
+              <NavLink
+                to="/uniworld-river-cruises/is-uniworld-worth-it/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Uniworld Worth the Money?
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/ships-suites/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Ships &amp; Suites Guide
+              </NavLink>
+
               {/* <NavLink
                 to="/uniworld-river-cruises/danube"
                 className="nav-dropdown-single"
@@ -1991,6 +2007,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               How Much Does a Uniworld River Cruise Cost?
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/is-uniworld-worth-it/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Uniworld Worth the Money?
             </NavLink>
 
             {/* <NavLink
