@@ -1048,37 +1048,7 @@ const Navbar = () => {
                 Uniworld Bordeaux River Cruises
               </NavLink>
 
-              <NavLink
-                to="/uniworld-river-cruises/italy-venice"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Italy Venice River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/egypt-nile"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Egypt Nile River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-scenic"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Scenic River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-amawaterways"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Ama Waterways
-              </NavLink>
+              
 
             </div>
           </div>
@@ -2106,38 +2076,7 @@ const Navbar = () => {
                 Uniworld Bordeaux River Cruises
               </NavLink>
 
-               <NavLink
-                to="/uniworld-river-cruises/italy-venice"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Italy Venice River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/egypt-nile"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Egypt Nile River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-scenic"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Scenic River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-amawaterways"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Ama Waterways
-              </NavLink>
-
+              
 
 
             <span className="mobile-dropdown-divider"></span>

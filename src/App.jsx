@@ -148,10 +148,7 @@ import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniwo
 import Uniworldseinerivercruises from "./pages/Uniworldseinerivercruises/Uniworldseinerivercruises";
 import Uniworldrhonesaonerivercruises from "./pages/Uniworldrhonesaonerivercruises/Uniworldrhonesaonerivercruises";
 import Uniworldbordeauxrivercruises from "./pages/Uniworldbordeauxrivercruises/Uniworldbordeauxrivercruises";
-import UniworldVeniceItalyRiverCruises from "./pages/UniworldVeniceItalyRiverCruises/UniworldVeniceItalyRiverCruises";
-import UniworldEgyptNileRiverCruises from "./pages/UniworldEgyptNileRiverCruises/UniworldEgyptNileRiverCruises";
-import UniworldvsScenicRiverCruises from "./pages/UniworldvsScenicRiverCruises/UniworldvsScenicRiverCruises";
-import UniworldvsAmaWaterways from "./pages/UniworldvsAmaWaterways/UniworldvsAmaWaterways";
+
 
 function App() {
   return (
@@ -833,26 +830,7 @@ function App() {
             element={<Uniworldbordeauxrivercruises />}
           />
 
-           <Route
-            path="/uniworld-river-cruises/italy-venice"
-            element={<UniworldVeniceItalyRiverCruises />}
-          />
-
-          <Route
-            path="/uniworld-river-cruises/egypt-nile"
-            element={<UniworldEgyptNileRiverCruises />}
-          />
-
-           <Route
-            path="/uniworld-river-cruises/uniworld-vs-scenic"
-            element={< UniworldvsScenicRiverCruises/>}
-          />
-
-           <Route
-            path="/uniworld-river-cruises/uniworld-vs-amawaterways"
-            element={<UniworldvsAmaWaterways />}
-          />
-
+           
 
 
         </Routes>

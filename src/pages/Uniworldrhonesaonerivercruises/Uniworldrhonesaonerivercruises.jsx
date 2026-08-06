@@ -314,7 +314,7 @@ function UniworldRhoneSaoneRiverCruises() {
                             <Sparkles size={16} />
                             <span>Uniworld Rhône & Saône River Cruises</span>
                         </div>
-                        <h1 className="fcel-hero-title">Uniworld Rhône & Saône River Cruises</h1>
+                        <h1 className="fcel-hero-title">Uniworld Rhône & Saône <br /> River Cruises</h1>
                         <p className="fcel-hero-subtitle">
                             Discover Burgundy & Provence in Boutique Luxury
                         </p>

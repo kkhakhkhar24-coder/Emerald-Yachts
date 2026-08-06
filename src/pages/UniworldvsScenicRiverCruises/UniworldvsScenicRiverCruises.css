@@ -1,0 +1,1834 @@
+/* ============================================================
+   UNIWORLD VS SCENIC RIVER CRUISES — PAGE STYLES
+   Reference Colors & Typography preserved from site design system.
+   Shared/matched layout classes: fcel- (hero, intro, faq, cta, buttons)
+   New unique page-specific classes: uvsc- (Uniworld Vs Scenic Comparison)
+   ============================================================ */
+
+:root {
+    --urcr-navy: #274472;
+    --urcr-navy-light: #274472cc;
+    --urcr-bg-white: #ffffff;
+    --urcr-bg-soft: rgb(231, 243, 245);
+    --urcr-bg-dark: #0f1c2e;
+    --urcr-bg-dark2: #1c2f4a;
+    --urcr-green: #10b981;
+    --urcr-gold: var(--urcr-navy);
+
+    /* Eyebrow theme colors */
+    --uvsc-eyebrow-glance-bg: white;
+    --uvsc-eyebrow-glance-color: navy;
+    --uvsc-eyebrow-ratings-bg: white;
+    --uvsc-eyebrow-ratings-color: navy;
+    --uvsc-eyebrow-included-bg: white;
+    --uvsc-eyebrow-included-color: navy;
+    --uvsc-eyebrow-service-bg: white;
+    --uvsc-eyebrow-service-color: navy;
+    --uvsc-eyebrow-audience-bg: white;
+    --uvsc-eyebrow-audience-color: navy;
+    --uvsc-eyebrow-verdict-bg: white;
+    --uvsc-eyebrow-verdict-color: navy;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (MATCHED)
+   ============================================================ */
+
+.fcel-page-wrapper {
+    overflow-x: hidden;
+}
+
+.fcel-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--urcr-navy);
+}
+
+.fcel-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--urcr-navy);
+    margin-bottom: 32px;
+}
+
+.fcel-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fcel-eyebrow-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--urcr-navy);
+    background: var(--urcr-bg-soft);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+/* Custom themed eyebrow overlays */
+.uvsc-eyebrow-glance {
+    background: var(--uvsc-eyebrow-glance-bg) !important;
+    color: var(--uvsc-eyebrow-glance-color) !important;
+}
+
+.uvsc-eyebrow-ratings {
+    background: var(--uvsc-eyebrow-ratings-bg) !important;
+    color: var(--uvsc-eyebrow-ratings-color) !important;
+}
+
+.uvsc-eyebrow-included {
+    background: var(--uvsc-eyebrow-included-bg) !important;
+    color: var(--uvsc-eyebrow-included-color) !important;
+}
+
+.uvsc-eyebrow-service {
+    background: var(--uvsc-eyebrow-service-bg) !important;
+    color: var(--uvsc-eyebrow-service-color) !important;
+    width: 220px;
+}
+
+.uvsc-eyebrow-audience {
+    background: var(--uvsc-eyebrow-audience-bg) !important;
+    color: var(--uvsc-eyebrow-audience-color) !important;
+}
+
+.uvsc-eyebrow-verdict {
+    background: var(--uvsc-eyebrow-verdict-bg) !important;
+    color: var(--uvsc-eyebrow-verdict-color) !important;
+}
+
+.uvsc-eyebrow-included,
+.uvsc-eyebrow-service {
+    background: var(--urcr-bg-white) !important;
+    color: var(--urcr-navy) !important;
+}
+
+.fcel-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .fcel-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .fcel-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-section-heading {
+        font-size: 26px !important;
+    }
+
+    .fcel-lead-paragraph {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   IMAGE PLACEHOLDER COMPONENT (NEW - UNIQUE)
+   ============================================================ */
+.uvsc-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.04) 0%, rgba(231, 243, 245, 0.7) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--urcr-navy);
+    padding: 24px;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.uvsc-image-placeholder span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.uvsc-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+/* ============================================================
+   HERO SECTION (MATCHED)
+   ============================================================ */
+.fcel-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fcel-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.fcel-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.fcel-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcel-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fcel-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.fcel-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fcel-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fcel-btn-primary {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.fcel-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .fcel-hero-title {
+        font-size: 42px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-hero-title {
+        font-size: 32px;
+    }
+
+    .fcel-hero-content {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-hero-title {
+        font-size: 26px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .fcel-hero-tag {
+        font-size: 12px;
+    }
+
+    .fcel-btn-primary,
+    .fcel-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fcel-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION (MATCHED)
+   ============================================================ */
+.fcel-intro-section {
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fcel-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fcel-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.fcel-intro-copy {
+    position: relative;
+}
+
+.fcel-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.fcel-intro-image-frame img,
+.fcel-intro-image-frame .uvsc-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.fcel-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--urcr-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
+}
+
+.fcel-intro-highlight-box {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--urcr-navy);
+    border-radius: 14px;
+    padding: 26px 32px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 12px 32px rgba(39, 68, 114, 0.15);
+}
+
+.fcel-intro-quote-icon {
+    font-size: 36px;
+    line-height: 0.5;
+    color: rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fcel-intro-quote-content {
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .fcel-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .fcel-intro-image-frame {
+        order: -1;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .uvsc-image-placeholder {
+        min-height: 320px;
+    }
+
+    .fcel-intro-highlight-box {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-intro-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-intro-section {
+        padding: 44px 14px;
+    }
+
+    .fcel-intro-highlight-box {
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .fcel-intro-quote-icon {
+        font-size: 28px;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .uvsc-image-placeholder {
+        min-height: 240px;
+    }
+
+    .fcel-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+/* ============================================================
+   QUICK ANSWER SECTION (uvsc- unique)
+   ============================================================ */
+.uvsc-quick-answer-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.uvsc-quick-answer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.uvsc-quick-answer-card {
+    background: #faf8f5;
+    border-left: 5px solid var(--urcr-navy);
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.uvsc-quick-answer-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 24px 0;
+}
+
+.uvsc-choice-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.uvsc-choice-block:last-of-type {
+    margin-bottom: 24px;
+}
+
+.uvsc-choice-icon {
+    color: var(--urcr-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.uvsc-choice-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #1e293b;
+    font-weight: 500;
+    margin: 0;
+}
+
+.uvsc-choice-text strong {
+    color: var(--urcr-navy);
+}
+
+.uvsc-quick-answer-footer {
+    font-size: 15px;
+    color: #475569;
+    font-style: italic;
+    margin: 0;
+    padding-top: 18px;
+    border-top: 1px dashed rgba(39, 68, 114, 0.15);
+}
+
+@media (max-width: 768px) {
+    .uvsc-quick-answer-section {
+        padding: 60px 18px;
+    }
+
+    .uvsc-quick-answer-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-quick-answer-section {
+        padding: 44px 14px;
+    }
+
+    .uvsc-quick-answer-title {
+        font-size: 22px;
+    }
+
+    .uvsc-choice-text {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   INLINE CTA SECTIONS (uvsc- unique, reused across page)
+   ============================================================ */
+.uvsc-inline-cta-section {
+    background: linear-gradient(135deg, #faf8f5 0%, #e7f3f5 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.uvsc-inline-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.uvsc-inline-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.uvsc-inline-cta-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 24px;
+    padding: 38px 46px;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.uvsc-inline-cta-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--urcr-navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--urcr-bg-soft);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.uvsc-inline-cta-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+    line-height: 1.45;
+    max-width: 650px;
+}
+
+.uvsc-inline-cta-btn-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.uvsc-btn-primary {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.2);
+}
+
+.uvsc-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.3);
+}
+
+.uvsc-btn-outline {
+    background: transparent;
+    color: var(--urcr-navy);
+    border: 2px solid var(--urcr-navy);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.uvsc-btn-outline:hover {
+    background: rgba(39, 68, 114, 0.06);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .uvsc-inline-cta-section {
+        padding: 40px 18px;
+    }
+
+    .uvsc-inline-cta-container {
+        padding: 26px 30px;
+    }
+
+    .uvsc-inline-cta-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-inline-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .uvsc-btn-primary,
+    .uvsc-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   AT A GLANCE TABLE (uvsc- unique)
+   ============================================================ */
+.uvsc-glance-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.uvsc-glance-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.uvsc-glance-table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.02);
+}
+
+.uvsc-glance-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 500px;
+}
+
+.uvsc-glance-th {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    padding: 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.uvsc-glance-td {
+    padding: 16px 24px;
+    font-size: 15px;
+    color: #334155;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    background: #ffffff;
+    font-weight: 500;
+}
+
+.uvsc-glance-table tr:last-child td {
+    border-bottom: none;
+}
+
+.uvsc-glance-table tr:nth-child(even) td {
+    background: #faf8f5;
+}
+
+.uvsc-glance-winner {
+    font-weight: 700;
+    color: var(--urcr-navy);
+}
+
+@media (max-width: 768px) {
+    .uvsc-glance-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-glance-section {
+        padding: 44px 14px;
+    }
+}
+
+/* ============================================================
+   OVERALL RATINGS TABLE (uvsc- unique)
+   ============================================================ */
+.uvsc-ratings-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+}
+
+.uvsc-ratings-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.uvsc-ratings-table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.02);
+}
+
+.uvsc-ratings-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 500px;
+}
+
+.uvsc-ratings-th {
+    background: var(--urcr-navy);
+    color: #ffffff;
+    padding: 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.uvsc-ratings-td {
+    padding: 16px 24px;
+    font-size: 15px;
+    color: #334155;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    background: #ffffff;
+    font-weight: 500;
+}
+
+.uvsc-ratings-table tr:last-child td {
+    border-bottom: none;
+}
+
+.uvsc-ratings-table tr:nth-child(even) td {
+    background: #faf8f5;
+}
+
+.uvsc-ratings-stars {
+    color: #f1c40f;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.uvsc-ratings-score-row td {
+    font-weight: 700;
+    color: var(--urcr-navy);
+    background: var(--urcr-bg-soft) !important;
+}
+
+@media (max-width: 768px) {
+    .uvsc-ratings-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-ratings-section {
+        padding: 44px 14px;
+    }
+}
+
+/* ============================================================
+   HEAD-TO-HEAD COMPARISON BLOCKS (uvsc- unique)
+   Used for: Ship Design, Suites, Dining, What's Included,
+   Service, Excursions, Destinations, Pricing
+   ============================================================ */
+.uvsc-compare-section {
+    background: #faf8f5;
+    padding: 100px 20px;
+}
+
+.uvsc-bg-white {
+    background: var(--urcr-bg-white) !important;
+}
+
+.uvsc-bg-soft {
+    background: var(--urcr-bg-soft) !important;
+}
+
+.uvsc-compare-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.uvsc-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.uvsc-compare-col {
+    background: var(--urcr-bg-white);
+    border-radius: 20px;
+    padding: 34px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+    border-top: 4px solid var(--urcr-navy);
+}
+
+.uvsc-compare-col-scenic {
+    border-top-color: var(--urcr-green);
+}
+
+.uvsc-compare-col-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--urcr-navy);
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.uvsc-compare-col-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--urcr-bg-soft);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.uvsc-compare-col-scenic .uvsc-compare-col-icon {
+    background: rgba(16, 185, 129, 0.12);
+    color: var(--urcr-green);
+}
+
+.uvsc-compare-col-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0 0 16px 0;
+}
+
+.uvsc-compare-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0 0 16px 0;
+    list-style: none;
+}
+
+.uvsc-compare-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.uvsc-compare-list-icon {
+    color: var(--urcr-navy);
+    flex-shrink: 0;
+}
+
+.uvsc-compare-col-scenic .uvsc-compare-list-icon {
+    color: var(--urcr-green);
+}
+
+.uvsc-compare-bestfor {
+    background: var(--urcr-bg-soft);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-top: 8px;
+}
+
+.uvsc-compare-col-scenic .uvsc-compare-bestfor {
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.uvsc-compare-bestfor-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--urcr-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.uvsc-compare-bestfor-text {
+    font-size: 14px;
+    color: #334155;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.uvsc-winner-badge {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    background: var(--urcr-navy);
+    color: var(--urcr-bg-white) !important;
+    border-radius: 14px;
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.15);
+}
+
+.uvsc-winner-icon {
+    flex-shrink: 0;
+    color: var(--urcr-green);
+}
+
+.uvsc-winner-text {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--urcr-bg-white) !important;
+}
+
+.uvsc-winner-text strong {
+    font-weight: 700;
+    color: var(--urcr-bg-white) !important;
+}
+
+.uvsc-compare-note {
+    max-width: 1100px;
+    margin: 16px auto 0;
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+    font-style: italic;
+}
+
+.uvsc-compare-shared-rivers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+
+.uvsc-river-pill {
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+}
+
+@media (max-width: 1024px) {
+    .uvsc-compare-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .uvsc-compare-section {
+        padding: 60px 18px;
+    }
+
+    .uvsc-compare-col {
+        padding: 24px;
+    }
+
+    .uvsc-winner-badge {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-compare-section {
+        padding: 44px 14px;
+    }
+
+    .uvsc-compare-col-title {
+        font-size: 18px;
+    }
+
+    .uvsc-compare-list-item {
+        font-size: 14px;
+    }
+
+    .uvsc-winner-text {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   WHO SHOULD CHOOSE — AUDIENCE COMPARISON (uvsc- unique)
+   ============================================================ */
+.uvsc-audience-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.uvsc-audience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uvsc-audience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.uvsc-audience-column {
+    background: var(--urcr-bg-white);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 4px solid var(--urcr-navy);
+}
+
+.uvsc-audience-column-scenic {
+    border-top-color: var(--urcr-green);
+}
+
+.uvsc-audience-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0 0 24px 0;
+}
+
+.uvsc-audience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.uvsc-audience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.uvsc-audience-check {
+    color: var(--urcr-navy);
+    flex-shrink: 0;
+}
+
+.uvsc-audience-column-scenic .uvsc-audience-check {
+    color: var(--urcr-green);
+}
+
+@media (max-width: 768px) {
+    .uvsc-audience-section {
+        padding: 60px 18px;
+    }
+
+    .uvsc-audience-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .uvsc-audience-column {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-audience-section {
+        padding: 44px 14px;
+    }
+
+    .uvsc-audience-title {
+        font-size: 19px;
+    }
+
+    .uvsc-audience-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS (uvsc- unique)
+   ============================================================ */
+.uvsc-why-book-section {
+    background: var(--urcr-bg-white);
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.uvsc-why-book-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.uvsc-why-book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.uvsc-why-book-card {
+    background: var(--urcr-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.01);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.uvsc-why-book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--urcr-navy);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.uvsc-why-book-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--urcr-bg-white);
+    color: var(--urcr-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.uvsc-why-book-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.uvsc-why-book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.uvsc-why-book-card:hover::before {
+    transform: scaleX(1);
+}
+
+.uvsc-why-book-card:hover .uvsc-why-book-icon {
+    background: var(--urcr-navy);
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .uvsc-why-book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .uvsc-why-book-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-why-book-section {
+        padding: 44px 14px;
+    }
+
+    .uvsc-why-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .uvsc-why-book-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ============================================================
+   OUR RECOMMENDATION — FINAL VERDICT (uvsc- unique)
+   ============================================================ */
+.uvsc-recommendation-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.uvsc-recommendation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uvsc-recommendation-block {
+    background: var(--urcr-bg-white);
+    border-radius: 16px;
+    padding: 26px 30px;
+    margin-bottom: 18px;
+    text-align: left;
+    box-shadow: 0 8px 22px rgba(39, 68, 114, 0.04);
+    border-left: 4px solid var(--urcr-navy);
+}
+
+.uvsc-recommendation-block-scenic {
+    border-left-color: var(--urcr-green);
+}
+
+.uvsc-recommendation-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #334155;
+    margin: 0;
+    font-weight: 500;
+}
+
+.uvsc-recommendation-text strong {
+    color: var(--urcr-navy);
+}
+
+.uvsc-recommendation-closing {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+    margin-top: 24px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .uvsc-recommendation-section {
+        padding: 60px 18px;
+    }
+
+    .uvsc-recommendation-block {
+        padding: 20px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uvsc-recommendation-section {
+        padding: 44px 14px;
+    }
+
+    .uvsc-recommendation-text {
+        font-size: 15px;
+    }
+
+    .uvsc-recommendation-closing {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   FAQ SECTION (MATCHED)
+   ============================================================ */
+.fcel-faq-section {
+    background: var(--urcr-bg-soft);
+    padding: 100px 20px;
+}
+
+.fcel-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fcel-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fcel-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.fcel-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.fcel-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--urcr-navy);
+}
+
+.fcel-faq-toggle {
+    font-size: 22px;
+    color: var(--urcr-navy);
+    flex-shrink: 0;
+}
+
+.fcel-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .fcel-faq-section {
+        padding: 60px 18px;
+    }
+
+    .fcel-faq-question-row {
+        font-size: 15px;
+    }
+
+    .fcel-faq-item {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-faq-question-row {
+        font-size: 14px;
+    }
+
+    .fcel-faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   CTA SECTION (MATCHED)
+   ============================================================ */
+.fcel-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--urcr-bg-dark) 0%, var(--urcr-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fcel-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.fcel-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.fcel-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.fcel-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.fcel-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.fcel-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .fcel-cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-cta-section {
+        padding: 70px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-cta-heading {
+        font-size: 22px;
+    }
+
+    .fcel-cta-text {
+        font-size: 14px;
+    }
+
+    .fcel-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fcel-cta-btn-row .fcel-btn-primary,
+    .fcel-cta-btn-row .fcel-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY & SECTION PADDING OVERRIDES
+   ============================================================ */
+
+.fcel-intro-section,
+.uvsc-quick-answer-section,
+.uvsc-glance-section,
+.uvsc-ratings-section,
+.uvsc-compare-section,
+.uvsc-audience-section,
+.uvsc-why-book-section,
+.uvsc-recommendation-section,
+.fcel-faq-section,
+.fcel-cta-section,
+.uvsc-inline-cta-section {
+    padding: 60px 20px !important;
+}
+
+/* Desktop typography (1024px+) */
+.fcel-hero-title,
+.fcel-page-wrapper h1 {
+    font-size: 60px !important;
+}
+
+.fcel-section-heading,
+.fcel-page-wrapper h2 {
+    font-size: 48px !important;
+}
+
+.fcel-lead-paragraph,
+.fcel-page-wrapper p {
+    font-size: 18px !important;
+}
+
+/* Tablet typography (<=1024px) */
+@media (max-width: 1024px) {
+
+    .fcel-hero-title,
+    .fcel-page-wrapper h1 {
+        font-size: 32px !important;
+    }
+
+    .fcel-section-heading,
+    .fcel-page-wrapper h2 {
+        font-size: 28px !important;
+    }
+
+    .fcel-lead-paragraph,
+    .fcel-page-wrapper p {
+        font-size: 17px !important;
+    }
+}
+
+/* Mobile typography (<=480px) */
+@media (max-width: 480px) {
+
+    .fcel-hero-title,
+    .fcel-page-wrapper h1 {
+        font-size: 26px !important;
+    }
+
+    .fcel-section-heading,
+    .fcel-page-wrapper h2 {
+        font-size: 24px !important;
+    }
+
+    .fcel-lead-paragraph,
+    .fcel-page-wrapper p {
+        font-size: 16px !important;
+    }
+}
+
+/* ============================================================
+   NEW UNIQUE STYLES FOR COMPARISON SECTIONS
+   ============================================================ */
+
+/* 1. Split Layout with Image (Image on Left) */
+.uvsc-layout-split-img {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.uvsc-split-img-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+    height: 100%;
+    min-height: 380px;
+}
+
+/* 2. Split Layout with Image (Image on Right) */
+.uvsc-layout-split-img-reverse {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* 3. Card Deck Layout (2 columns of cards) */
+.uvsc-layout-card-deck {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 30px;
+}
+
+.uvsc-deck-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.uvsc-deck-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
+}
+
+.uvsc-deck-card.uniworld-card {
+    border-top: 5px solid var(--urcr-navy);
+}
+
+.uvsc-deck-card.scenic-card {
+    border-top: 5px solid var(--urcr-green);
+    background: #fafbfe;
+}
+
+/* 4. 3-Column Profile Layout (Left, Image, Right) */
+.uvsc-layout-triple {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.uvsc-triple-center-img {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1);
+    height: 100%;
+    min-height: 350px;
+}
+
+/* 5. Asymmetric Cards (different backgrounds/borders) */
+.uvsc-asymmetric-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.uvsc-asym-card-left {
+    background: linear-gradient(135deg, #ffffff 0%, #faf8f5 100%);
+    border-left: 6px solid var(--urcr-navy);
+    border-radius: 0 24px 24px 0;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+}
+
+.uvsc-asym-card-right {
+    background: linear-gradient(135deg, #ffffff 0%, #e7f3f5 100%);
+    border-right: 6px solid var(--urcr-green);
+    border-radius: 24px 0 0 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+}
+
+/* 6. Pricing comparison boxes */
+.uvsc-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 30px;
+}
+
+.uvsc-pricing-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.uvsc-pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.uvsc-pricing-card.uniworld-price::before {
+    background: var(--urcr-navy);
+}
+
+.uvsc-pricing-card.scenic-price::before {
+    background: var(--urcr-green);
+}
+
+.uvsc-pricing-header {
+    margin-bottom: 24px;
+}
+
+.uvsc-pricing-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--urcr-navy);
+    margin-bottom: 12px;
+}
+
+.uvsc-pricing-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.uniworld-price .uvsc-pricing-tag {
+    background: var(--urcr-bg-soft);
+    color: var(--urcr-navy);
+}
+
+.scenic-price .uvsc-pricing-tag {
+    background: #e6f7f0;
+    color: var(--urcr-green);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+
+    .uvsc-layout-split-img,
+    .uvsc-layout-split-img-reverse,
+    .uvsc-layout-card-deck,
+    .uvsc-asymmetric-grid,
+    .uvsc-pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .uvsc-layout-triple {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .uvsc-triple-center-img {
+        order: -1;
+        min-height: 250px;
+    }
+
+    .uvsc-split-img-wrapper {
+        min-height: 280px;
+    }
+
+    .uvsc-layout-split-img-reverse .uvsc-split-img-wrapper {
+        order: -1;
+    }
+}
