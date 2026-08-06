@@ -151,6 +151,7 @@ import Uniworldbordeauxrivercruises from "./pages/Uniworldbordeauxrivercruises/U
 import UniworldCabinCategories from "./pages/UniworldCabinCategories/UniworldCabinCategories";
 import UniworldBestCabins from "./pages/UniworldBestCabins/UniworldBestCabins";
 import UniworldBestItineraries from "./pages/UniworldBestItineraries/UniworldBestItineraries";
+import FirstTimeUniworldRiverCruiseGuide from "./pages/FirstTimeUniworldRiverCruiseGuide/FirstTimeUniworldRiverCruiseGuide";
 
 function App() {
   return (
@@ -845,6 +846,11 @@ function App() {
           <Route
             path="/uniworld-river-cruises/best-itineraries/"
             element={<UniworldBestItineraries />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/first-time-guide/"
+            element={<FirstTimeUniworldRiverCruiseGuide />}
           />
 
 

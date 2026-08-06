@@ -1072,6 +1072,14 @@ const Navbar = () => {
                 Best Uniworld River Cruise Itineraries
               </NavLink>
 
+              <NavLink
+                to="/uniworld-river-cruises/first-time-guide/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                First-Time Uniworld River Cruise Guide
+              </NavLink>
+
             </div>
           </div>
         </div>
@@ -2120,6 +2128,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Best Uniworld River Cruise Itineraries
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/first-time-guide/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              First-Time Uniworld River Cruise Guide
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
