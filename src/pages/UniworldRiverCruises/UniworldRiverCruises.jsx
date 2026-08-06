@@ -148,16 +148,16 @@ function UniworldRiverCruises() {
     ]
 
     const uniIncluded = [
-        'Luxury accommodations',
-        'All meals',
-        'Unlimited premium beverages',
-        'Wine and spirits',
-        'Shore excursions',
-        'Airport transfers (selected itineraries)',
-        'Gratuities',
-        'Wi-Fi',
-        'Onboard entertainment',
-        'Fitness facilities'
+        { Icon: Bed, label: 'Luxury accommodations' },
+        { Icon: Utensils, label: 'All meals' },
+        { Icon: Wine, label: 'Unlimited premium beverages' },
+        { Icon: Wine, label: 'Wine and spirits' },
+        { Icon: Compass, label: 'Shore excursions' },
+        { Icon: Globe, label: 'Airport transfers' },
+        { Icon: Gift, label: 'Gratuities' },
+        { Icon: Wifi, label: 'Wi-Fi' },
+        { Icon: Music, label: 'Onboard entertainment' },
+        { Icon: Sun, label: 'Fitness facilities' }
     ]
 
     const uniExcursions = [
@@ -651,32 +651,34 @@ function UniworldRiverCruises() {
                         <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>What&apos;s Included?</h2>
                         <div className="uni-heading-separator-bar uni-bar-centered"></div>
                         <p className="uni-included-intro">One reason travelers choose Uniworld is its comprehensive all-inclusive experience.</p>
-                        <p className="uni-included-sub">Typically included:</p>
                     </div>
 
                     <div className="uni-included-grid">
-                        {uniIncluded.map((item, idx) => (
+                        {uniIncluded.map(({ Icon, label }, idx) => (
                             <div key={idx} className="uni-included-card">
-                                <CheckCircle size={18} className="uni-included-check" />
-                                <span>{item}</span>
+                                <div className="uni-included-icon-wrap">
+                                    <Icon size={20} />
+                                </div>
+                                <span className="uni-included-label">{label}</span>
                             </div>
                         ))}
                     </div>
 
                     <div className="uni-included-footer">
+                        <Info size={16} className="uni-included-footer-icon" />
                         <p>Some specialty excursions or extensions may involve additional costs.</p>
                     </div>
                 </div>
             </section>
 
             {/* ── SHORE EXCURSIONS ── */}
-            <section className="uni-excursions-section">
+            <section className="uni-experience-section">
                 <div className="uni-excursions-container">
                     <div className="uni-excursions-header">
-                        <span className="uni-eyebrow uni-eyebrow-light uni-eyebrow-center">GUIDED EXPERIENCES</span>
-                        <h2 className="uni-section-heading uni-white-heading" style={{ textAlign: 'center', fontSize: '34px' }}>Shore Excursions</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
-                        <p className="uni-excursions-lead" style={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.85)' }}>Uniworld focuses on immersive local experiences led by knowledgeable guides.</p>
+                        <span className="uni-eyebrow uni-eyebrow-center">GUIDED EXPERIENCES</span>
+                        <h2 className="uni-section-heading" style={{ textAlign: 'center', fontSize: '34px' }}>Shore Excursions</h2>
+                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+                        <p className="uni-excursions-lead" style={{ textAlign: 'center' }}>Uniworld focuses on immersive local experiences led by knowledgeable guides.</p>
                     </div>
 
                     <div className="uni-tabs-wrapper">
