@@ -1048,7 +1048,29 @@ const Navbar = () => {
                 Uniworld Bordeaux River Cruises
               </NavLink>
 
-              
+              <NavLink
+                to="/uniworld-river-cruises/cabin-categories/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Cabin Categories Explained
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/best-cabins/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Uniworld Cabins and Cabins to Avoid
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/best-itineraries/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Uniworld River Cruise Itineraries
+              </NavLink>
 
             </div>
           </div>
@@ -2061,23 +2083,44 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/uniworld-river-cruises/rhone-saone"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Rhone Saone River Cruises
-              </NavLink>
+              to="/uniworld-river-cruises/rhone-saone"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Rhone Saone River Cruises
+            </NavLink>
 
-              <NavLink
-                to="/uniworld-river-cruises/bordeaux"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Bordeaux River Cruises
-              </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises/bordeaux"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Bordeaux River Cruises
+            </NavLink>
 
-              
+            <NavLink
+              to="/uniworld-river-cruises/cabin-categories/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Cabin Categories Explained
+            </NavLink>
 
+            <NavLink
+              to="/uniworld-river-cruises/best-cabins/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Uniworld Cabins and Cabins to Avoid
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/best-itineraries/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Uniworld River Cruise Itineraries
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

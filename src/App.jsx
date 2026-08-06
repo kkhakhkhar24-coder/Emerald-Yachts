@@ -148,7 +148,9 @@ import Uniworlddanuberivercruises from "./pages/Uniworlddanuberivercruises/Uniwo
 import Uniworldseinerivercruises from "./pages/Uniworldseinerivercruises/Uniworldseinerivercruises";
 import Uniworldrhonesaonerivercruises from "./pages/Uniworldrhonesaonerivercruises/Uniworldrhonesaonerivercruises";
 import Uniworldbordeauxrivercruises from "./pages/Uniworldbordeauxrivercruises/Uniworldbordeauxrivercruises";
-
+import UniworldCabinCategories from "./pages/UniworldCabinCategories/UniworldCabinCategories";
+import UniworldBestCabins from "./pages/UniworldBestCabins/UniworldBestCabins";
+import UniworldBestItineraries from "./pages/UniworldBestItineraries/UniworldBestItineraries";
 
 function App() {
   return (
@@ -825,12 +827,25 @@ function App() {
             element={<Uniworldrhonesaonerivercruises />}
           />
 
-           <Route
+          <Route
             path="/uniworld-river-cruises/bordeaux"
             element={<Uniworldbordeauxrivercruises />}
           />
 
-           
+          <Route
+            path="/uniworld-river-cruises/cabin-categories/"
+            element={<UniworldCabinCategories />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/best-cabins/"
+            element={<UniworldBestCabins />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/best-itineraries/"
+            element={<UniworldBestItineraries />}
+          />
 
 
         </Routes>
