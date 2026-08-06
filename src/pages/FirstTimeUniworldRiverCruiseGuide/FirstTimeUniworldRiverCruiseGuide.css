@@ -11,7 +11,7 @@
 .uni-why-section,
 .uni-itinerary-section,
 .uni-cabin-section,
-.uni-included-section,
+.uni-fare-section,
 .uni-pack-section,
 .uni-day-section,
 .uni-dining-section,
@@ -20,8 +20,8 @@
 .uni-tips-section,
 .uni-fit-section,
 .uni-takeaways-section,
-.uni-faq-main-section,
-.uni-cta-main-section {
+.uni-faqs-section,
+.uni-cta-section {
     --uni-navy: #274472;
     --uni-navy-dark: #0f1c2e;
     --uni-navy-deep2: #1c2f45;
@@ -37,7 +37,7 @@
 .uni-why-section *,
 .uni-itinerary-section *,
 .uni-cabin-section *,
-.uni-included-section *,
+.uni-fare-section *,
 .uni-pack-section *,
 .uni-day-section *,
 .uni-dining-section *,
@@ -46,8 +46,8 @@
 .uni-tips-section *,
 .uni-fit-section *,
 .uni-takeaways-section *,
-.uni-faq-main-section *,
-.uni-cta-main-section * {
+.uni-faqs-section *,
+.uni-cta-section * {
     box-sizing: border-box;
     font-family: var(--font-body), sans-serif;
 }
@@ -2169,22 +2169,6 @@
 
 .uni-cta-primary-btn:hover .uni-cta-btn-arrow {
     transform: translateX(4px);
-}
-    gap: 10px;
-    background: transparent;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    border: 1.5px solid rgba(255, 255, 255, 0.5);
-    padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.uni-secondary-outline-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
 }
 
 /* =============================================================
