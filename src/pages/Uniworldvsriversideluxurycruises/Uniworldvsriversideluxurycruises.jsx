@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
-import './UniworldVsRiversideLuxuryCruises.css'
+import './Uniworldvsriversideluxurycruises.css'
 import {
     Ship, Sparkles, Phone, LayoutList, CheckCircle, Globe, Award,
     Utensils, Wine, Bed, Compass, Coins, Trophy, Scale,
