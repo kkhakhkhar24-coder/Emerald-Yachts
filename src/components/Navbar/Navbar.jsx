@@ -1080,6 +1080,49 @@ const Navbar = () => {
                 First-Time Uniworld River Cruise Guide
               </NavLink>
 
+               <NavLink
+                to="/uniworld-river-cruises/italy-venice"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Italy Venice River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/egypt-nile"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Egypt Nile River Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-avalon"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Avalon
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-tauck"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Tauck
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-riverside"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Riverside
+              </NavLink> */}
+
+
+
+
             </div>
           </div>
         </div>
@@ -2137,6 +2180,47 @@ const Navbar = () => {
             >
               First-Time Uniworld River Cruise Guide
             </NavLink>
+
+             <NavLink
+                to="/uniworld-river-cruises/italy-venice"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Italy Venice River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/egypt-nile"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Egypt Nile River Cruises
+              </NavLink>
+
+               {/* <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-avalon"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Avalon
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-tauck"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Tauck
+              </NavLink>
+
+               <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-riverside"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld vs Riverside
+              </NavLink> */}
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

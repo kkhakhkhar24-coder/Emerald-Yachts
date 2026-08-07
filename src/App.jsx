@@ -152,6 +152,11 @@ import UniworldCabinCategories from "./pages/UniworldCabinCategories/UniworldCab
 import UniworldBestCabins from "./pages/UniworldBestCabins/UniworldBestCabins";
 import UniworldBestItineraries from "./pages/UniworldBestItineraries/UniworldBestItineraries";
 import FirstTimeUniworldRiverCruiseGuide from "./pages/FirstTimeUniworldRiverCruiseGuide/FirstTimeUniworldRiverCruiseGuide";
+import UniworldVeniceItalyRiverCruises from "./pages/UniworldVeniceItalyRiverCruises/UniworldVeniceItalyRiverCruises";
+import UniworldEgyptNileRiverCruises from "./pages/UniworldEgyptNileRiverCruises/UniworldEgyptNileRiverCruises";
+import Uniworldvsavalonwaterways from "./pages/Uniworldvsavalonwaterways/Uniworldvsavalonwaterways";
+import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
+import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
 
 function App() {
   return (
@@ -852,6 +857,33 @@ function App() {
             path="/uniworld-river-cruises/first-time-guide/"
             element={<FirstTimeUniworldRiverCruiseGuide />}
           />
+
+          <Route
+            path="/uniworld-river-cruises/italy-venice"
+            element={<UniworldVeniceItalyRiverCruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/egypt-nile"
+            element={<UniworldEgyptNileRiverCruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/uniworld-vs-avalon"
+            element={<Uniworldvsavalonwaterways />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/uniworld-vs-tauck"
+            element={<Uniworldvstauckrivercruises />}
+          />
+
+          <Route
+            path="/uniworld-river-cruises/uniworld-vs-riverside"
+            element={<Uniworldvsriversideluxurycruises />}
+          />
+
+
 
 
         </Routes>
