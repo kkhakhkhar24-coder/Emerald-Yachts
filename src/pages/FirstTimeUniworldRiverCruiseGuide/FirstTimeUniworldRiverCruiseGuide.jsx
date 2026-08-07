@@ -229,7 +229,7 @@ function FirstTimeUniworldGuide() {
                         <span>Uniworld River Cruises · Trips &amp; Ships Luxury Travel</span>
                     </div>
                     <h1 className="uni-hero-main-title">
-                        First-Time Uniworld River Cruise Guide
+                        First-Time Uniworld <br /> River Cruise Guide
                     </h1>
                     <p className="uni-hero-subtitle-text">
                         Everything first-time guests need to know before sailing — from choosing an itinerary and cabin to dining, excursions, packing, and onboard etiquette.
@@ -386,7 +386,6 @@ function FirstTimeUniworldGuide() {
                                 <p className="uni-fare-note-body">Optional services such as spa, airfare, and shopping cost extra.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -471,7 +470,6 @@ function FirstTimeUniworldGuide() {
                             </ul>
                             <p className="uni-dining-footnote">Menus often change throughout the itinerary to reflect local cuisine.</p>
                         </div>
-
                     </div>
                 </div>
             </section>

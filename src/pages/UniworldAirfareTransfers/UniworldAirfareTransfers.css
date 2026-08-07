@@ -1,0 +1,2161 @@
+/* =============================================================
+   UniworldAirfareTransfers.css
+   Uniworld Airfare, Airport Transfers and Arrival Guide
+   Design system: navy palette, Georgia serif headings,
+   sans-serif body, fully responsive, no gold/decorative accents
+   ============================================================= */
+
+:root {
+    --uaf-navy: #274472;
+    --uaf-navy-deep: #0f1c2e;
+    --uaf-navy-mid: #1a2a44;
+    --uaf-blue-accent: #3b82f6;
+    --uaf-bg-white: #ffffff;
+    --uaf-bg-soft: #e7f3f5;
+    --uaf-border: #e2e8f0;
+    --uaf-text-body: #4a5568;
+    --uaf-text-heading: #2d3748;
+    --uaf-text-muted: #64748b;
+    --uaf-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --uaf-font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* ── BASE ─────────────────────────────────────────────────────── */
+
+.uaf-hero-section,
+.uaf-intro-section,
+.uaf-checklist-section,
+.uaf-booking-section,
+.uaf-early-section,
+.uaf-transfers-section,
+.uaf-arrival-section,
+.uaf-embark-section,
+.uaf-luggage-section,
+.uaf-hotelship-section,
+.uaf-timing-section,
+.uaf-docs-section,
+.uaf-tips-section,
+.uaf-mistakes-section,
+.uaf-summary-section,
+.uaf-takeaways-section,
+.uaf-links-section,
+.uaf-refs-section,
+.uaf-faq-main-section,
+.uaf-cta-main-section {
+    font-family: var(--uaf-font-body);
+    box-sizing: border-box;
+}
+
+.uaf-hero-section *,
+.uaf-intro-section *,
+.uaf-checklist-section *,
+.uaf-booking-section *,
+.uaf-early-section *,
+.uaf-transfers-section *,
+.uaf-arrival-section *,
+.uaf-embark-section *,
+.uaf-luggage-section *,
+.uaf-hotelship-section *,
+.uaf-timing-section *,
+.uaf-docs-section *,
+.uaf-tips-section *,
+.uaf-mistakes-section *,
+.uaf-summary-section *,
+.uaf-takeaways-section *,
+.uaf-links-section *,
+.uaf-refs-section *,
+.uaf-faq-main-section *,
+.uaf-cta-main-section * {
+    box-sizing: border-box;
+}
+
+/* ── SHARED UTILITIES ────────────────────────────────────────── */
+
+.uaf-eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--uaf-navy);
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.uaf-eyebrow-light {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.uaf-white-heading {
+    color: #ffffff !important;
+}
+
+.uaf-intro-light {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.uaf-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.uaf-section-heading {
+    font-family: var(--uaf-font-heading);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.uaf-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--uaf-navy);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.uaf-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uaf-section-intro {
+    font-size: 17px;
+    color: var(--uaf-text-body);
+    line-height: 1.65;
+    max-width: 720px;
+    margin: 0 0 40px 0;
+}
+
+.uaf-intro-centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.uaf-note-box {
+    border-left: 4px solid rgba(39, 68, 114, 0.3);
+    padding: 16px 22px;
+    background: var(--uaf-bg-white);
+    border-radius: 0 10px 10px 0;
+    max-width: 720px;
+}
+
+.uaf-note-box p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--uaf-text-body);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.uaf-note-centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.uaf-note-dark {
+    background: rgba(255, 255, 255, 0.06);
+    border-left-color: rgba(255, 255, 255, 0.3);
+}
+
+.uaf-note-dark p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+
+.uaf-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px 100px;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--uaf-navy-deep) 0%, var(--uaf-navy-mid) 55%, var(--uaf-navy) 100%);
+}
+
+.uaf-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.16) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
+}
+
+.uaf-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 28, 46, 0.2) 0%, rgba(15, 28, 46, 0.55) 100%);
+}
+
+.uaf-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.uaf-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 9px 20px;
+    border-radius: 30px;
+    margin-bottom: 26px;
+}
+
+.uaf-hero-main-title {
+    font-family: var(--uaf-font-heading);
+    font-size: 54px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.15;
+    margin: 0 0 20px 0;
+}
+
+.uaf-hero-subtitle-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+/* ── INTRO ────────────────────────────────────────────────────── */
+
+.uaf-intro-section {
+    background: var(--uaf-bg-white);
+    padding: 88px 20px 72px;
+}
+
+.uaf-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uaf-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.uaf-intro-text-col {
+    padding-right: 20px;
+}
+
+.uaf-intro-lead {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+}
+
+.uaf-intro-body {
+    font-size: 15px;
+    color: var(--uaf-text-body);
+    margin: 0 0 14px 0;
+    line-height: 1.65;
+}
+
+.uaf-intro-image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uaf-intro-image-frame {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+}
+
+.uaf-intro-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 6/5;
+    object-fit: cover;
+}
+
+.uaf-intro-image-caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px 20px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.06);
+}
+
+.uaf-intro-caption-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+/* ── PLANNING CHECKLIST ──────────────────────────────────────── */
+
+.uaf-checklist-section {
+    background: #f1f5f9;
+    padding: 88px 20px;
+}
+
+.uaf-checklist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uaf-checklist-grid-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.uaf-checklist-image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uaf-checklist-image-frame {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+}
+
+.uaf-checklist-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 6/5;
+    object-fit: cover;
+}
+
+.uaf-checklist-image-caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 12px 18px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+    max-width: 480px;
+    width: 100%;
+}
+
+.uaf-checklist-caption-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.uaf-checklist-content-col {
+    padding-left: 16px;
+}
+
+.uaf-checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.uaf-checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    transition: all 0.3s ease;
+}
+
+.uaf-checklist-item:hover {
+    box-shadow: 0 10px 26px rgba(39, 68, 114, 0.1);
+    transform: translateY(-2px);
+}
+
+.uaf-checklist-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--uaf-navy), var(--uaf-blue-accent));
+    color: #ffffff;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── BOOKING AIRFARE ──────────────────────────────────────────── */
+
+.uaf-booking-section {
+    background: var(--uaf-navy-deep);
+    padding: 88px 20px;
+}
+
+.uaf-booking-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 24px;
+    text-align: left;
+}
+
+.uaf-booking-card {
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-top: 4px solid var(--uaf-navy);
+    border-radius: 18px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.04);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uaf-booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.uaf-booking-card-icon {
+    width: 54px;
+    height: 54px;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--uaf-navy);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+
+.uaf-booking-card:hover .uaf-booking-card-icon {
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-color: var(--uaf-navy);
+}
+
+.uaf-booking-card-title {
+    font-family: var(--uaf-font-heading) !important;
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: var(--uaf-navy-deep);
+    margin: 0 0 12px 0;
+}
+
+.uaf-booking-card-sub {
+    font-size: 15px;
+    color: var(--uaf-text-body);
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.uaf-booking-card-list {
+    list-style: none;
+    margin: 0 0 18px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uaf-booking-card-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 15px;
+    color: var(--uaf-navy);
+    font-weight: 500;
+}
+
+.uaf-booking-card-list li svg {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.uaf-booking-card-footnote {
+    font-size: 14px;
+    color: var(--uaf-text-muted);
+    font-style: italic;
+    margin: 0;
+    border-top: 1px solid var(--uaf-border);
+    padding-top: 14px;
+}
+
+/* ── SHOULD YOU ARRIVE EARLY ─────────────────────────────────── */
+
+.uaf-early-section {
+    background: var(--uaf-bg-white);
+    padding: 88px 20px;
+}
+
+.uaf-early-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.uaf-early-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.uaf-early-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.5;
+}
+
+.uaf-early-body {
+    font-size: 15px;
+    color: var(--uaf-text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.uaf-early-benefits-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--uaf-navy-deep);
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.uaf-early-benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.uaf-early-benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--uaf-bg-soft);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+}
+
+.uaf-early-benefit-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── AIRPORT TRANSFERS EXPLAINED ─────────────────────────────── */
+
+.uaf-transfers-section {
+    background: var(--uaf-bg-soft);
+    padding: 88px 20px;
+}
+
+.uaf-transfers-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-transfers-factors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.uaf-transfers-factor {
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-radius: 12px;
+    padding: 22px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+}
+
+.uaf-transfers-factor-num {
+    font-family: var(--uaf-font-heading);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--uaf-blue-accent);
+}
+
+.uaf-transfer-tip-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    padding: 16px 28px;
+    border-radius: 12px;
+    margin: 12px auto 0;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.04);
+}
+
+.uaf-transfer-tip-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+}
+
+.uaf-transfer-tip-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uaf-navy-deep);
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* ── WHAT TO EXPECT UPON ARRIVAL ─────────────────────────────── */
+
+.uaf-arrival-section {
+    background: linear-gradient(160deg, var(--uaf-navy-deep) 0%, var(--uaf-navy-mid) 100%);
+    padding: 88px 20px;
+}
+
+.uaf-arrival-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-arrival-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.uaf-arrival-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease;
+}
+
+.uaf-arrival-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+.uaf-arrival-card-image-box {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.uaf-arrival-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.uaf-arrival-card:hover .uaf-arrival-card-image {
+    transform: scale(1.05);
+}
+
+.uaf-arrival-card-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.uaf-arrival-card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.uaf-arrival-card-title {
+    font-family: var(--uaf-font-heading) !important;
+    font-size: 16px;
+    font-weight: 700 !important;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    line-height: 1.35;
+}
+
+.uaf-arrival-card-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.uaf-arrival-tip-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 4px solid var(--uaf-blue-accent);
+    padding: 16px 28px;
+    border-radius: 12px;
+    margin: 32px auto 0 auto;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.uaf-arrival-tip-icon {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+}
+
+.uaf-arrival-tip-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* ── EMBARKATION DAY ──────────────────────────────────────────── */
+
+.uaf-embark-section {
+    background: var(--uaf-bg-white);
+    padding: 88px 20px;
+}
+
+.uaf-embark-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uaf-embark-grid-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+
+
+.uaf-embark-image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.uaf-embark-image-col .uaf-eyebrow,
+.uaf-embark-image-col .uaf-section-heading {
+    text-align: left;
+}
+
+.uaf-embark-image-frame {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+}
+
+.uaf-embark-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 6/5;
+    object-fit: cover;
+}
+
+.uaf-embark-image-caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 12px 18px;
+    background: var(--uaf-bg-soft);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+    max-width: 480px;
+    width: 100%;
+}
+
+.uaf-embark-caption-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.uaf-embark-steps {
+    margin-top: 12px;
+}
+
+.uaf-embark-step {
+    display: flex;
+    gap: 20px;
+}
+
+.uaf-embark-step-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.uaf-embark-step-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.uaf-embark-step-line {
+    width: 2px;
+    flex: 1;
+    background: var(--uaf-border);
+    margin: 6px 0;
+    min-height: 24px;
+}
+
+.uaf-embark-step-content {
+    padding-bottom: 28px;
+}
+
+.uaf-embark-step-content h3 {
+    font-family: var(--uaf-font-heading) !important;
+    font-size: 17px;
+    font-weight: 700 !important;
+    color: var(--uaf-navy-deep);
+    margin: 8px 0 6px 0;
+}
+
+.uaf-embark-step-content p {
+    font-size: 14px;
+    color: var(--uaf-text-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.uaf-embark-section .uaf-eyebrow,
+.uaf-embark-section .uaf-section-heading,
+.uaf-embark-section .uaf-section-intro,
+.uaf-embark-section h3,
+.uaf-embark-section p,
+.uaf-embark-section span {
+    text-align: left !important;
+}
+
+.uaf-embark-section .uaf-heading-separator-bar {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* ── LUGGAGE GUIDELINES ──────────────────────────────────────── */
+
+.uaf-luggage-section {
+    background: var(--uaf-bg-soft);
+    padding: 88px 20px;
+}
+
+.uaf-luggage-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.uaf-luggage-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.uaf-luggage-lead {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.uaf-luggage-sub {
+    font-size: 15px;
+    color: var(--uaf-text-body);
+    margin: 0 0 16px 0;
+}
+
+.uaf-luggage-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.uaf-luggage-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    transition: all 0.3s ease;
+}
+
+.uaf-luggage-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.08);
+}
+
+.uaf-luggage-item svg {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+}
+
+.uaf-luggage-tip-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.uaf-luggage-image-frame {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+}
+
+.uaf-luggage-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+}
+
+.uaf-luggage-tip-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-top: 24px;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.04);
+}
+
+.uaf-luggage-tip-icon-inline {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.uaf-luggage-tip-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.uaf-luggage-tip-p {
+    font-size: 14px;
+    color: var(--uaf-text-body);
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ── TRANSFERS BETWEEN HOTELS AND SHIPS ──────────────────────── */
+
+.uaf-hotelship-section {
+    background: var(--uaf-bg-white);
+    padding: 88px 20px;
+}
+
+.uaf-hotelship-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-hotelship-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.uaf-hotelship-card {
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-radius: 12px;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s ease;
+}
+
+.uaf-hotelship-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.08);
+}
+
+.uaf-hotelship-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--uaf-navy);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.uaf-hotelship-card:hover .uaf-hotelship-icon {
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-color: var(--uaf-navy);
+}
+
+.uaf-hotelship-tip-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--uaf-bg-soft);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    padding: 16px 28px;
+    border-radius: 12px;
+    margin: 12px auto 0;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.04);
+}
+
+.uaf-hotelship-tip-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+}
+
+.uaf-hotelship-tip-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uaf-navy-deep);
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* ── FLIGHT TIMING TIPS ──────────────────────────────────────── */
+
+.uaf-timing-section {
+    background: var(--uaf-bg-soft);
+    padding: 88px 20px;
+}
+
+.uaf-timing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-timing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 32px;
+    text-align: left;
+}
+
+.uaf-timing-card {
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-top: 4px solid var(--uaf-navy);
+    border-radius: 16px;
+    padding: 24px 22px;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.04);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uaf-timing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.uaf-timing-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: var(--uaf-navy);
+}
+
+.uaf-timing-card-header h3 {
+    font-family: var(--uaf-font-heading);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--uaf-navy-deep);
+    margin: 0;
+}
+
+.uaf-timing-card-lead {
+    font-size: 14px;
+    color: var(--uaf-text-body);
+    margin: 0 0 14px 0;
+    line-height: 1.6;
+}
+
+.uaf-timing-card-list {
+    list-style: none;
+    margin: 0 0 14px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uaf-timing-card-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+}
+
+.uaf-timing-card-list li svg {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.uaf-timing-card-footnote {
+    font-size: 13px;
+    color: var(--uaf-text-muted);
+    font-style: italic;
+    margin: 0;
+}
+
+/* ── TRAVEL DOCUMENTS ─────────────────────────────────────────── */
+
+.uaf-docs-section {
+    background: linear-gradient(160deg, var(--uaf-navy-deep) 0%, var(--uaf-navy-mid) 100%);
+    padding: 88px 20px;
+}
+
+.uaf-docs-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.uaf-docs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.uaf-docs-lead {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+    line-height: 1.6;
+}
+
+.uaf-docs-warning-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-left: 4px solid #ef4444;
+    padding: 14px 20px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.uaf-docs-warning-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+.uaf-docs-warning-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.uaf-docs-list-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.uaf-docs-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--uaf-blue-accent);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.uaf-docs-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.uaf-docs-item svg {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+}
+
+/* ── ARRIVAL TIPS FOR INTERNATIONAL TRAVELERS ────────────────── */
+
+.uaf-tips-section {
+    background: var(--uaf-bg-white);
+    padding: 88px 20px;
+}
+
+.uaf-tips-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.uaf-tips-grid-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+}
+
+
+
+.uaf-tips-image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.uaf-tips-image-frame {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+}
+
+.uaf-tips-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 6/5;
+    object-fit: cover;
+}
+
+.uaf-tips-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.uaf-tips-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--uaf-bg-soft);
+    border: 1px solid var(--uaf-border);
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    transition: all 0.3s ease;
+}
+
+.uaf-tips-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.08);
+}
+
+.uaf-tips-list-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--uaf-navy);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.uaf-tips-note-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--uaf-bg-soft);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-navy);
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-top: 16px;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.04);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--uaf-navy-deep);
+    width: 100%;
+    max-width: 480px;
+}
+
+.uaf-tips-note-icon {
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+}
+
+/* ── COMMON ARRIVAL MISTAKES TO AVOID ────────────────────────── */
+
+.uaf-mistakes-section {
+    background: var(--uaf-bg-soft);
+    padding: 88px 20px;
+}
+
+.uaf-mistakes-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-mistakes-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+    text-align: left;
+}
+
+.uaf-mistake-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(239, 68, 68, 0.03);
+    border: 1px solid rgba(239, 68, 68, 0.1);
+    border-left: 4px solid #ef4444;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    transition: all 0.3s ease;
+}
+
+.uaf-mistake-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(239, 68, 68, 0.08);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.uaf-mistake-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+.uaf-mistakes-note-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 4px solid var(--uaf-blue-accent);
+    padding: 16px 28px;
+    border-radius: 12px;
+    margin: 12px auto 0;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.04);
+}
+
+.uaf-mistakes-note-icon {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+}
+
+/* ── FREQUENTLY ASKED TRAVEL QUESTIONS (SUMMARY) ─────────────── */
+
+.uaf-summary-section {
+    background: var(--uaf-bg-white);
+    padding: 72px 20px;
+}
+
+.uaf-summary-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.uaf-summary-body {
+    font-size: 16px;
+    color: var(--uaf-text-body);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ── KEY TAKEAWAYS ────────────────────────────────────────────── */
+
+.uaf-takeaways-section {
+    position: relative;
+    background: linear-gradient(160deg, var(--uaf-navy-deep) 0%, var(--uaf-navy-mid) 100%);
+    padding: 64px 20px;
+}
+
+.uaf-takeaways-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-takeaways-eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--uaf-blue-accent);
+    margin-bottom: 12px;
+}
+
+.uaf-takeaways-eyebrow-text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.uaf-takeaways-heading {
+    font-family: var(--uaf-font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+}
+
+.uaf-takeaways-separator {
+    width: 60px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    margin: 0 auto 28px;
+}
+
+.uaf-takeaways-grid-row-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.uaf-takeaways-grid-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: left;
+}
+
+.uaf-takeaways-grid-row-2 .uaf-takeaway-item {
+    width: calc(25% - 12px);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.uaf-takeaway-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--uaf-blue-accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 0.3s ease;
+}
+
+.uaf-takeaway-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.uaf-takeaway-item p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.uaf-takeaway-icon {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── INTERNAL LINKS ───────────────────────────────────────────── */
+
+.uaf-links-section {
+    background: var(--uaf-bg-white);
+    padding: 64px 20px;
+}
+
+.uaf-links-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    text-align: left;
+}
+
+.uaf-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--uaf-bg-white);
+    border: 1px solid var(--uaf-border);
+    border-left: 3px solid var(--uaf-navy);
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uaf-link-card:hover {
+    background: var(--uaf-navy);
+    color: #ffffff;
+    border-color: var(--uaf-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.08);
+}
+
+.uaf-link-card svg {
+    color: var(--uaf-blue-accent);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.uaf-link-card:hover svg {
+    color: #ffffff;
+}
+
+/* ── EXTERNAL AUTHORITY REFERENCES ───────────────────────────── */
+
+.uaf-refs-section {
+    background: linear-gradient(160deg, var(--uaf-navy-deep) 0%, var(--uaf-navy-mid) 100%);
+    padding: 80px 20px;
+}
+
+.uaf-refs-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uaf-refs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.uaf-refs-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.uaf-refs-item svg {
+    color: var(--uaf-blue-accent);
+    flex-shrink: 0;
+}
+
+/* ── FAQ ──────────────────────────────────────────────────────── */
+
+.uaf-faq-main-section {
+    background: var(--uaf-bg-soft);
+    padding: 88px 20px;
+}
+
+.uaf-faq-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.uaf-faq-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.uaf-faq-individual-item {
+    background: var(--uaf-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+}
+
+.uaf-faq-individual-item:hover {
+    border-color: var(--uaf-navy);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.08);
+}
+
+.uaf-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--uaf-navy);
+    line-height: 1.4;
+}
+
+.uaf-faq-toggle-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--uaf-navy);
+    flex-shrink: 0;
+}
+
+.uaf-faq-answer-text {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #475569;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 14px;
+    margin-bottom: 0;
+}
+
+/* ── CTA ──────────────────────────────────────────────────────── */
+
+.luxe-cta-section {
+    position: relative;
+    padding: 72px 20px;
+    background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
+    text-align: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.luxe-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: luxe-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes luxe-aurora-pulse {
+    0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+}
+
+.luxe-cta-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(148, 210, 255, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.luxe-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: luxe-crystal-float 12s ease-in-out infinite; }
+.luxe-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: luxe-crystal-float 10s ease-in-out 2s infinite; }
+.luxe-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: luxe-crystal-float 14s ease-in-out 4s infinite; }
+
+@keyframes luxe-crystal-float {
+    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+    50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
+}
+
+.luxe-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+.luxe-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.luxe-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 210, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(148, 210, 255, 0.8);
+    margin-bottom: 16px;
+    animation: luxe-compass-spin 20s linear infinite;
+    background: rgba(148, 210, 255, 0.04);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+@keyframes luxe-compass-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.luxe-cta-compass-ring svg {
+    animation: luxe-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes luxe-compass-counter-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.luxe-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(148, 210, 255, 0.7);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.luxe-cta-title {
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+}
+
+.luxe-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.luxe-cta-subtitle {
+    font-size: 16px;
+    line-height: 1.65;
+    color: rgba(203, 213, 225, 0.85);
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
+
+.luxe-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.luxe-cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #274472, #1e3a5f);
+    color: #ffffff;
+    border: 1px solid rgba(148, 210, 255, 0.15);
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35), 0 0 0 0 rgba(148, 210, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxe-cta-primary-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.luxe-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
+    border-color: rgba(148, 210, 255, 0.3);
+}
+
+.luxe-cta-primary-btn:hover::before {
+    opacity: 1;
+}
+
+.luxe-cta-btn-arrow {
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.luxe-cta-primary-btn:hover .luxe-cta-btn-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+/* =============================================================
+   RESPONSIVE — TABLET (max-width: 1024px)
+   ============================================================= */
+
+@media (max-width: 1024px) {
+    .uaf-hero-main-title { font-size: 42px; }
+    .uaf-section-heading { font-size: 36px; }
+
+    .uaf-intro-grid {
+        gap: 36px;
+    }
+
+    .uaf-checklist-grid { grid-template-columns: repeat(2, 1fr); }
+    .uaf-checklist-grid-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    .uaf-checklist-image-col {
+        order: 2;
+    }
+    .uaf-checklist-content-col {
+        order: 1;
+        padding-left: 0;
+    }
+    .uaf-checklist-section .uaf-eyebrow,
+    .uaf-checklist-section .uaf-section-heading {
+        text-align: center;
+    }
+    .uaf-checklist-section .uaf-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uaf-booking-grid { grid-template-columns: 1fr; gap: 24px; }
+    .uaf-early-grid { grid-template-columns: 1fr; gap: 36px; }
+    .uaf-early-section .uaf-eyebrow,
+    .uaf-early-section .uaf-section-heading,
+    .uaf-early-lead,
+    .uaf-early-body {
+        text-align: center;
+    }
+    .uaf-early-section .uaf-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uaf-embark-grid-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    .uaf-embark-image-col {
+        order: 1;
+        align-items: center !important;
+    }
+    .uaf-embark-content-col {
+        order: 2;
+    }
+    .uaf-embark-section .uaf-eyebrow,
+    .uaf-embark-section .uaf-section-heading {
+        text-align: center !important;
+    }
+    .uaf-embark-section .uaf-heading-separator-bar {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .uaf-transfers-factors { grid-template-columns: repeat(2, 1fr); }
+    .uaf-arrival-grid { grid-template-columns: repeat(3, 1fr); }
+    .uaf-luggage-grid { grid-template-columns: 1fr; gap: 32px; }
+    .uaf-luggage-section .uaf-eyebrow,
+    .uaf-luggage-section .uaf-section-heading {
+        text-align: center;
+    }
+    .uaf-luggage-section .uaf-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uaf-hotelship-grid { grid-template-columns: repeat(2, 1fr); }
+    .uaf-timing-grid { grid-template-columns: 1fr; gap: 20px; }
+    .uaf-docs-grid { grid-template-columns: 1fr; gap: 32px; }
+    .uaf-tips-grid-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    .uaf-tips-image-col {
+        order: 2;
+        align-items: center !important;
+    }
+    .uaf-tips-content-col {
+        order: 1;
+    }
+    .uaf-tips-section .uaf-eyebrow,
+    .uaf-tips-section .uaf-section-heading,
+    .uaf-tips-section .uaf-section-intro {
+        text-align: center;
+    }
+    .uaf-tips-section .uaf-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uaf-takeaways-grid-row-1,
+    .uaf-takeaways-grid-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 14px;
+    }
+    .uaf-takeaways-grid-row-2 .uaf-takeaway-item {
+        width: 100%;
+    }
+    .uaf-links-grid { grid-template-columns: 1fr; }
+    .uaf-refs-list { grid-template-columns: 1fr; }
+}
+
+/* =============================================================
+   RESPONSIVE — MOBILE (max-width: 640px)
+   ============================================================= */
+
+@media (max-width: 640px) {
+    .uaf-hero-section { padding: 120px 18px 72px; min-height: 100vh; }
+    .uaf-hero-main-title { font-size: 30px; }
+    .uaf-hero-subtitle-text { font-size: 15px; }
+    .uaf-hero-eyebrow-tag { font-size: 10px; padding: 6px 14px; text-align: center; }
+
+    .uaf-section-heading { font-size: 28px; }
+    .uaf-section-intro { font-size: 15px; margin-bottom: 28px; }
+
+    .uaf-intro-section,
+    .uaf-checklist-section,
+    .uaf-booking-section,
+    .uaf-early-section,
+    .uaf-transfers-section,
+    .uaf-arrival-section,
+    .uaf-embark-section,
+    .uaf-luggage-section,
+    .uaf-hotelship-section,
+    .uaf-timing-section,
+    .uaf-docs-section,
+    .uaf-tips-section,
+    .uaf-mistakes-section,
+    .uaf-summary-section,
+    .uaf-takeaways-section,
+    .uaf-links-section,
+    .uaf-refs-section,
+    .uaf-faq-main-section,
+    .uaf-cta-main-section {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .uaf-checklist-grid { grid-template-columns: 1fr; }
+    .uaf-checklist-grid-layout { gap: 32px; }
+    .uaf-booking-card { padding: 26px 22px; }
+    .uaf-transfers-factors { grid-template-columns: 1fr; }
+    .uaf-arrival-grid { grid-template-columns: 1fr; }
+    .uaf-hotelship-grid { grid-template-columns: 1fr; }
+    .uaf-docs-list-col { grid-template-columns: 1fr; }
+    .uaf-luggage-list { grid-template-columns: 1fr; }
+    .uaf-tips-list { grid-template-columns: 1fr; }
+    .uaf-mistakes-list { grid-template-columns: 1fr; }
+    .uaf-takeaways-grid-row-1,
+    .uaf-takeaways-grid-row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .uaf-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .uaf-intro-text-col {
+        padding-right: 0;
+        text-align: center;
+        order: 1;
+    }
+
+    .uaf-intro-image-col {
+        order: 2;
+    }
+
+    .uaf-intro-section .uaf-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uaf-tips-grid { grid-template-columns: 1fr; }
+    .uaf-links-grid { grid-template-columns: 1fr; }
+    .uaf-refs-list { grid-template-columns: 1fr; }
+
+    .luxe-cta-title { font-size: 32px; }
+    .luxe-cta-primary-btn { width: 100%; justify-content: center; }
+
+    .uaf-embark-step-content h3 { font-size: 16px; }
+    .uaf-faq-question-row { font-size: 15px; }
+}
+
+@media (max-width: 400px) {
+    .uaf-hero-main-title { font-size: 26px; }
+    .uaf-section-heading { font-size: 24px; }
+}

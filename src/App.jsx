@@ -157,6 +157,9 @@ import UniworldEgyptNileRiverCruises from "./pages/UniworldEgyptNileRiverCruises
 import Uniworldvsavalonwaterways from "./pages/Uniworldvsavalonwaterways/Uniworldvsavalonwaterways";
 import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
 import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
+import UniworldFoodDining from "./pages/UniworldFoodDining/UniworldFoodDining";
+import UniworldDressCodePacking from "./pages/UniworldDressCodePacking/UniworldDressCodePacking";
+import UniworldAirfareTransfers from "./pages/UniworldAirfareTransfers/UniworldAirfareTransfers";
 
 function App() {
   return (
@@ -883,8 +886,20 @@ function App() {
             element={<Uniworldvsriversideluxurycruises />}
           />
 
+          <Route
+            path="/uniworld-river-cruises/food-dining/"
+            element={<UniworldFoodDining />}
+          />
 
+          <Route
+            path="/uniworld-river-cruises/dress-code-packing/"
+            element={<UniworldDressCodePacking />}
+          />
 
+          <Route
+            path="/uniworld-river-cruises/airfare-transfers/"
+            element={<UniworldAirfareTransfers />}
+          />
 
         </Routes>
       </BrowserRouter>

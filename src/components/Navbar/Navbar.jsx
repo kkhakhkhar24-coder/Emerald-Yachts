@@ -1073,14 +1073,6 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
-                to="/uniworld-river-cruises/first-time-guide/"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                First-Time Uniworld River Cruise Guide
-              </NavLink>
-
-               <NavLink
                 to="/uniworld-river-cruises/italy-venice"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1094,6 +1086,38 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Uniworld Egypt Nile River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/first-time-guide/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                First-Time Uniworld River Cruise Guide
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/food-dining/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Food and Dining Review
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/dress-code-packing/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Dress Code and Packing Guide
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/airfare-transfers/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Airfare, Airport Transfers and Arrival Guide
               </NavLink>
 
               {/* <NavLink
@@ -2174,6 +2198,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              to="/uniworld-river-cruises/italy-venice"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Italy Venice River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/egypt-nile"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Egypt Nile River Cruises
+            </NavLink>
+
+            <NavLink
               to="/uniworld-river-cruises/first-time-guide/"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2181,23 +2221,31 @@ const Navbar = () => {
               First-Time Uniworld River Cruise Guide
             </NavLink>
 
-             <NavLink
-                to="/uniworld-river-cruises/italy-venice"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Italy Venice River Cruises
-              </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises/food-dining/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Food and Dining Review
+            </NavLink>
 
-              <NavLink
-                to="/uniworld-river-cruises/egypt-nile"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Egypt Nile River Cruises
-              </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises/dress-code-packing/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Dress Code and Packing Guide
+            </NavLink>
 
-               {/* <NavLink
+            <NavLink
+              to="/uniworld-river-cruises/airfare-transfers/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Airfare, Airport Transfers and Arrival Guide
+            </NavLink>
+
+            {/* <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-avalon"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
