@@ -43,7 +43,7 @@
 .uwi-section-heading {
     font-size: 36px;
     font-weight: 700;
-    color: var(--uni-navy);
+    color: #fff;
     margin: 0 0 18px 0;
     line-height: 1.25;
 }
@@ -2366,7 +2366,7 @@
 .luxe-expert-bio {
     font-size: 15px;
     line-height: 1.65;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
     margin: 0;
 }
 

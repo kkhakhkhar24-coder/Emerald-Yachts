@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './UniworldRiverCruises.css'
+import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     Compass, Sparkles, Anchor, Gem, ArrowRight,
@@ -409,7 +410,7 @@ function UniworldRiverCruises() {
                     <div className="urc-why-grid">
 
                         <div className="urc-why-text-col">
-                            <span className="urc-eyebrow">THE UNIWORLD DIFFERENCE</span>
+                            <span className="urc-eyebrow urc-eyebrow-center">THE UNIWORLD DIFFERENCE</span>
                             <h2 className="urc-section-heading">What Makes Uniworld River Cruises Unique?</h2>
                             <div className="urc-heading-separator-bar"></div>
                             <p className="urc-why-lead">Uniworld Boutique River Cruises combines luxury hospitality with destination-focused travel. Every ship is individually decorated using handcrafted furnishings, artwork, and locally inspired interiors, creating an experience unlike traditional cruise ships.</p>
@@ -607,7 +608,7 @@ function UniworldRiverCruises() {
                 <div className="urc-dining-container">
                     <div className="urc-dining-grid">
                         <div className="urc-dining-content">
-                            <span className="urc-eyebrow">CULINARY EXCELLENCE</span>
+                            <span className="urc-eyebrow urc-eyebrow-center">CULINARY EXCELLENCE</span>
                             <h2 className="urc-section-heading">Dining on Uniworld</h2>
                             <div className="urc-heading-separator-bar"></div>
                             <p className="urc-dining-note" style={{ textAlign: 'left' }}>Dining emphasizes regional cuisine prepared using fresh ingredients sourced throughout each itinerary.</p>
@@ -753,7 +754,7 @@ function UniworldRiverCruises() {
                         </div>
 
                         <div className="urc-service-text-col">
-                            <span className="urc-eyebrow">ONBOARD ENRICHMENT</span>
+                            <span className="urc-eyebrow urc-eyebrow-center">ONBOARD ENRICHMENT</span>
                             <h2 className="urc-section-heading">Wellness and Onboard Activities</h2>
                             <div className="urc-heading-separator-bar"></div>
                             <p className="urc-service-lead">Although river cruises emphasize destinations, Uniworld also provides onboard enrichment.</p>
@@ -964,6 +965,55 @@ function UniworldRiverCruises() {
                             Contact Trips &amp; Ships Luxury Travel for personalized guidance and exclusive Uniworld offers tailored to your travel preferences.
                         </p>
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="urc-expert-section">
+                <div className="urc-expert-container">
+
+                    <div className="urc-expert-portrait-panel">
+                        <div className="urc-expert-img-container">
+                            <img src={Profile_AH} alt="Angela Hughes - Expedition Travel Designer" />
+                        </div>
+                        <div className="urc-expert-stats-strip">
+                            <div className="urc-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Designing Travel</p>
+                            </div>
+                            <div className="urc-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Traveled</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="urc-expert-content-panel">
+                        <span className="urc-eyebrow urc-expert-eyebrow">MEET THE CEO</span>
+                        <h2 className="urc-section-heading">Insight from Angela Hughes</h2>
+                        <div className="urc-heading-separator-bar uni-bar-centered"></div>
+
+                        <p className="urc-expert-quote">
+                            &ldquo;Expedition cruising is not just a vacation&mdash;it is a transformation. True luxury is having the access to step ashore on polar ice and untouched islands while returning to an all-suite sanctuary at the end of the day.&rdquo;
+                        </p>
+
+                        <div className="urc-expert-priorities">
+                            <h5>Travel Prioritization Matrix:</h5>
+                            <div className="urc-expert-pills">
+                                {['Custom Zodiac Outings', 'Expert Naturalist Guides', 'Intimate Small-Ship Luxury', 'Remote Landing Access', 'Butler Services', 'Scientific Lectures'].map(pill => (
+                                    <span key={pill} className="urc-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="urc-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the adventure cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

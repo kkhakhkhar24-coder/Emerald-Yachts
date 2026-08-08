@@ -2347,7 +2347,7 @@
 .medi-section-heading {
     font-size: clamp(26px, 3.2vw, 38px);
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff !important;
     line-height: 1.25;
     margin: 0 0 14px;
 }
@@ -2436,7 +2436,7 @@
 .luxe-expert-bio {
     font-size: 14px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
     margin: 0;
 }
 
