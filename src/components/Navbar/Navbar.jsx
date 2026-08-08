@@ -1120,6 +1120,30 @@ const Navbar = () => {
                 Uniworld Airfare, Airport Transfers and Arrival Guide
               </NavLink>
 
+              <NavLink
+                to="/uniworld-river-cruises/solo-travel/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Solo River Cruises &amp; Single Supplement Guide
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/family-cruises/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Family River Cruises and Generations Collection
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/christmas-markets/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Christmas Market River Cruises
+              </NavLink>
+
               {/* <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-avalon"
                 className="nav-dropdown-single"
@@ -2243,6 +2267,22 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Uniworld Airfare, Airport Transfers and Arrival Guide
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/solo-travel/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Solo River Cruises & Single Supplement Guide
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/christmas-markets/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Christmas Market River Cruises
             </NavLink>
 
             {/* <NavLink

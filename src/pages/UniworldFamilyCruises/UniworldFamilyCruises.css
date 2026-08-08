@@ -1,0 +1,1373 @@
+/* =============================================================
+   UniworldFamilyCruises.css
+   Uniworld Family River Cruises & Generations Collection Guide
+   Uses shared medi-* variables from AzamaraMediterraneanCruises.css
+   Color palette: navy, responsive, no gold accents
+   ============================================================= */
+
+/* ── SHARED UTILITIES ────────────────────────────────────────── */
+
+.ufc-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.ufc-eyebrow-light {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.ufc-white-heading {
+    color: #ffffff !important;
+}
+
+.ufc-separator-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Shared image frame */
+.ufc-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(15, 28, 46, 0.15);
+}
+
+.ufc-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ufc-image-frame:hover .ufc-frame-img {
+    transform: scale(1.04);
+}
+
+.ufc-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.05) 60%);
+    z-index: 1;
+}
+
+.ufc-image-badge {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: var(--medi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── 1. INTRO / OVERVIEW ─────────────────────────────────────── */
+
+.ufc-intro-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.ufc-intro-lead {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.ufc-intro-body {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+/* ── 2. GENERATIONS COLLECTION ───────────────────────────────── */
+
+.ufc-generations-section {
+    background: linear-gradient(135deg, #162d50 0%, #0f1c2e 100%);
+    padding: 88px 20px;
+    text-align: center;
+}
+
+.ufc-generations-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ufc-generations-intro,
+.ufc-generations-sub {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ufc-generations-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 36px 0 24px;
+}
+
+.ufc-generation-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px 18px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.ufc-generation-feature:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.ufc-generation-feature-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa;
+}
+
+.ufc-generations-note {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+}
+
+/* ── 3. WHO ARE THESE CRUISES BEST FOR ───────────────────────── */
+
+.ufc-bestfor-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-bestfor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-bestfor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.ufc-bestfor-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 20px;
+}
+
+.ufc-bestfor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.ufc-bestfor-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: #f7f9fc;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #2d3748;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ufc-bestfor-item:hover {
+    background: #eef2f7;
+}
+
+.ufc-bestfor-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.ufc-bestfor-note {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.ufc-bestfor-conclusion {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: #f7f9fc;
+    border-radius: 14px;
+    border-left: 4px solid var(--medi-navy);
+}
+
+.ufc-bestfor-conclusion p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── 4. FAMILY-FRIENDLY DESTINATIONS ─────────────────────────── */
+
+.ufc-destinations-section {
+    background: #f7f9fc;
+    padding: 88px 20px;
+}
+
+.ufc-destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-destinations-intro {
+    font-size: 17px;
+    color: #4a5568;
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.ufc-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ufc-destination-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(15, 28, 46, 0.08);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ufc-destination-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(15, 28, 46, 0.14);
+}
+
+.ufc-destination-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ufc-destination-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: brightness(0.8);
+}
+
+.ufc-destination-card:hover .ufc-destination-img {
+    transform: scale(1.06);
+    filter: brightness(1);
+}
+
+.ufc-destination-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.65) 0%, rgba(15, 28, 46, 0.1) 50%);
+    z-index: 1;
+}
+
+.ufc-destination-title {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ufc-destination-body {
+    padding: 16px 18px 20px;
+}
+
+.ufc-destination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ufc-destination-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.ufc-destination-chevron {
+    color: var(--medi-navy);
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+/* ── 5. EDUCATIONAL EXPERIENCES ──────────────────────────────── */
+
+.ufc-education-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.ufc-education-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 16px;
+}
+
+.ufc-education-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.ufc-education-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.ufc-education-pillar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.ufc-education-pillar-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.ufc-education-conclusion {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: #f7f9fc;
+    border-radius: 14px;
+    border-left: 4px solid var(--medi-navy);
+}
+
+.ufc-education-conclusion p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── 6. ACTIVITIES FOR YOUNGER GUESTS ────────────────────────── */
+
+.ufc-activities-section {
+    background: linear-gradient(135deg, #162d50 0%, #0f1c2e 100%);
+    padding: 88px 20px;
+    text-align: center;
+}
+
+.ufc-activities-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ufc-activities-intro {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+}
+
+.ufc-activities-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+.ufc-activity-card {
+    flex: 0 1 calc((100% - 48px) / 4);
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 24px 18px;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ufc-activity-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.14);
+    transform: translateY(-4px);
+}
+
+.ufc-activity-card-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    color: #60a5fa;
+}
+
+.ufc-activity-card-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 8px;
+}
+
+.ufc-activity-card-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.ufc-activities-note {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 24px;
+    font-style: italic;
+}
+
+/* ── 7. DINING FOR FAMILIES ──────────────────────────────────── */
+
+.ufc-dining-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-dining-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.ufc-dining-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 16px;
+}
+
+.ufc-dining-body {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.ufc-dining-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ufc-dining-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.ufc-dining-feature-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.ufc-dining-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 13.5px;
+    font-weight: 550;
+    color: var(--medi-navy);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ufc-dining-note-icon {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
+
+/* ── 8. CABINS FOR FAMILIES ──────────────────────────────────── */
+
+.ufc-cabins-section {
+    background: #f7f9fc;
+    padding: 88px 20px;
+}
+
+.ufc-cabins-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ufc-cabins-header {
+    text-align: center;
+}
+
+.ufc-cabins-intro {
+    font-size: 17px;
+    color: #4a5568;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+}
+
+.ufc-cabins-table-wrap {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(15, 28, 46, 0.08);
+    margin-bottom: 20px;
+}
+
+.ufc-cabins-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.ufc-cabins-table thead {
+    background: var(--medi-navy);
+    color: #ffffff;
+}
+
+.ufc-cabins-table th {
+    padding: 16px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-align: left;
+}
+
+.ufc-cabins-table td {
+    padding: 18px 24px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.ufc-cabin-label {
+    font-weight: 700;
+    color: var(--medi-navy);
+    font-size: 14.5px;
+}
+
+.ufc-cabin-value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #162d50;
+}
+
+.ufc-cabins-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.ufc-cabins-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.ufc-cabins-table tbody tr:hover {
+    background: rgba(39, 68, 114, 0.02);
+}
+
+.ufc-cabins-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 24px auto 0;
+    font-size: 13.5px;
+    font-weight: 550;
+    color: var(--medi-navy);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ufc-cabins-note-icon {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
+
+/* ── 9. MINIMUM AGE ──────────────────────────────────────────── */
+
+.ufc-age-section {
+    background: var(--medi-bg-white);
+    padding: 60px 20px;
+}
+
+.ufc-age-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ufc-age-card {
+    background: linear-gradient(135deg, #162d50 0%, #0f1c2e 100%);
+    border-radius: 20px;
+    padding: 40px 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ufc-age-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #60a5fa;
+}
+
+.ufc-age-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.ufc-age-body {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.ufc-age-highlight {
+    font-size: 16px;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-top: 16px;
+}
+
+/* ── 10. WHY FAMILIES CHOOSE RIVER CRUISES ───────────────────── */
+
+.ufc-why-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.ufc-why-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 20px;
+}
+
+.ufc-why-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ufc-why-pillar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #2d3748;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ufc-why-pillar:hover {
+    background: #eef2f7;
+}
+
+.ufc-why-pillar-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.ufc-why-conclusion {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: #f7f9fc;
+    border-radius: 14px;
+    border-left: 4px solid var(--medi-navy);
+}
+
+.ufc-why-conclusion p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── 11. KEY TAKEAWAYS ───────────────────────────────────────── */
+
+.ufc-takeaways-section {
+    background: #f7f9fc;
+    padding: 72px 20px;
+}
+
+.ufc-takeaways-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ufc-takeaways-eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: var(--medi-navy);
+}
+
+.ufc-takeaways-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--medi-navy);
+    opacity: 0.7;
+}
+
+.ufc-takeaways-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.ufc-takeaways-separator {
+    width: 60px;
+    height: 3px;
+    background: var(--medi-navy);
+    opacity: 0.2;
+    margin: 0 auto 32px;
+    border-radius: 2px;
+}
+
+.ufc-takeaways-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+.ufc-takeaway-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 28, 46, 0.05);
+    font-size: 15px;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.ufc-takeaway-check {
+    color: #22c55e;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── 12. TIPS FOR PLANNING ───────────────────────────────────── */
+
+.ufc-tips-section {
+    background: var(--medi-bg-white);
+    padding: 88px 20px;
+}
+
+.ufc-tips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ufc-tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.ufc-tips-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--medi-navy);
+    margin-bottom: 20px;
+}
+
+.ufc-tips-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.ufc-tip-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #2d3748;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ufc-tip-item:hover {
+    background: #eef2f7;
+}
+
+.ufc-tip-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medi-navy);
+}
+
+.ufc-tips-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 13.5px;
+    font-weight: 550;
+    color: var(--medi-navy);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ufc-tips-note-icon {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
+
+/* ── 13. IS IT WORTH IT ──────────────────────────────────────── */
+
+.ufc-worth-section {
+    background: #f7f9fc;
+    padding: 72px 20px;
+}
+
+.ufc-worth-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ufc-worth-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 48px 40px;
+    text-align: center;
+    box-shadow: 0 16px 50px rgba(15, 28, 46, 0.08);
+}
+
+.ufc-worth-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(22, 45, 80, 0.08);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--medi-navy);
+}
+
+.ufc-worth-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--medi-navy);
+    margin: 0 0 12px;
+}
+
+.ufc-worth-separator {
+    width: 60px;
+    height: 3px;
+    background: var(--medi-navy);
+    opacity: 0.2;
+    margin: 0 auto 24px;
+    border-radius: 2px;
+}
+
+.ufc-worth-body {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+
+/* ── 14. INTERNAL LINKS ──────────────────────────────────────── */
+
+.ufc-links-section {
+    background: var(--medi-bg-white);
+    padding: 72px 20px;
+}
+
+.ufc-links-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ufc-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin-top: 36px;
+}
+
+.ufc-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 22px;
+    background: #f7f9fc;
+    border: 1px solid #eef2f7;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--medi-navy);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ufc-link-card:hover {
+    background: var(--medi-navy);
+    color: #ffffff;
+    border-color: var(--medi-navy);
+}
+
+.ufc-link-card svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.ufc-link-card:hover svg {
+    transform: translateX(4px);
+}
+
+/* =============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================= */
+
+/* ── TABLET (max-width: 992px) ───────────────────────────────── */
+
+@media (max-width: 992px) {
+
+    .ufc-intro-section,
+    .ufc-bestfor-section,
+    .ufc-education-section,
+    .ufc-dining-section,
+    .ufc-why-section,
+    .ufc-tips-section {
+        padding: 64px 20px;
+    }
+
+    .ufc-generations-section,
+    .ufc-activities-section {
+        padding: 64px 20px;
+    }
+
+    .ufc-intro-grid,
+    .ufc-bestfor-grid,
+    .ufc-education-grid,
+    .ufc-dining-grid,
+    .ufc-why-grid,
+    .ufc-tips-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .ufc-image-frame {
+        min-height: 320px;
+    }
+
+    .ufc-destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ufc-generations-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ufc-activity-card {
+        flex: 0 1 calc((100% - 32px) / 3);
+    }
+
+    .ufc-education-pillars {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── MOBILE (max-width: 768px) ───────────────────────────────── */
+
+@media (max-width: 768px) {
+
+    .ufc-intro-section,
+    .ufc-bestfor-section,
+    .ufc-education-section,
+    .ufc-dining-section,
+    .ufc-why-section,
+    .ufc-tips-section,
+    .ufc-generations-section,
+    .ufc-activities-section,
+    .ufc-destinations-section,
+    .ufc-cabins-section,
+    .ufc-age-section,
+    .ufc-takeaways-section,
+    .ufc-worth-section,
+    .ufc-links-section {
+        padding: 48px 16px;
+    }
+
+    .ufc-image-frame {
+        min-height: 260px;
+    }
+
+    .ufc-destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ufc-generations-features {
+        grid-template-columns: 1fr;
+    }
+
+    .ufc-generation-feature {
+        padding: 14px 16px;
+    }
+
+    .ufc-activity-card {
+        flex: 0 1 calc((100% - 16px) / 2);
+        padding: 20px 16px;
+    }
+
+    .ufc-bestfor-list {
+        gap: 8px;
+    }
+
+    .ufc-bestfor-item {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .ufc-dining-features {
+        gap: 8px;
+    }
+
+    .ufc-dining-feature {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .ufc-tips-list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .ufc-tip-item {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .ufc-cabins-table-wrap {
+        border-radius: 12px;
+    }
+
+    .ufc-cabins-table th,
+    .ufc-cabins-table td {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .ufc-age-card {
+        padding: 32px 24px;
+    }
+
+    .ufc-age-heading {
+        font-size: 22px;
+    }
+
+    .ufc-takeaways-heading {
+        font-size: 26px;
+    }
+
+    .ufc-takeaway-item {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .ufc-worth-card {
+        padding: 36px 24px;
+    }
+
+    .ufc-worth-heading {
+        font-size: 24px;
+    }
+
+    .ufc-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ufc-education-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .ufc-why-pillars {
+        gap: 8px;
+    }
+
+    .ufc-why-pillar {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .ufc-links-section .medi-section-heading {
+        font-size: 26px !important;
+    }
+
+    .ufc-generations-section .medi-section-heading {
+        font-size: 28px !important;
+    }
+
+    .ufc-activities-section .medi-section-heading {
+        font-size: 28px !important;
+    }
+
+    .ufc-destinations-section .medi-section-heading {
+        font-size: 28px !important;
+    }
+}
+
+/* ── SMALL MOBILE (max-width: 480px) ─────────────────────────── */
+
+@media (max-width: 480px) {
+
+    .ufc-intro-section,
+    .ufc-bestfor-section,
+    .ufc-education-section,
+    .ufc-dining-section,
+    .ufc-why-section,
+    .ufc-tips-section,
+    .ufc-generations-section,
+    .ufc-activities-section,
+    .ufc-destinations-section,
+    .ufc-cabins-section,
+    .ufc-age-section,
+    .ufc-takeaways-section,
+    .ufc-worth-section,
+    .ufc-links-section {
+        padding: 40px 14px;
+    }
+
+    .ufc-image-frame {
+        min-height: 220px;
+    }
+
+    .ufc-intro-lead,
+    .ufc-bestfor-lead,
+    .ufc-education-lead,
+    .ufc-dining-lead,
+    .ufc-why-lead,
+    .ufc-tips-lead {
+        font-size: 17px;
+    }
+
+    .ufc-takeaways-heading {
+        font-size: 24px;
+    }
+
+    .ufc-worth-heading {
+        font-size: 22px;
+    }
+
+    .ufc-age-card {
+        padding: 28px 20px;
+    }
+
+    .ufc-age-heading {
+        font-size: 20px;
+    }
+
+    .ufc-worth-card {
+        padding: 32px 20px;
+    }
+
+    .ufc-cabins-table {
+        font-size: 13px;
+    }
+
+    .ufc-cabins-table th,
+    .ufc-cabins-table td {
+        padding: 10px 14px;
+    }
+
+    .ufc-activity-card {
+        flex: 0 1 100%;
+    }
+}
