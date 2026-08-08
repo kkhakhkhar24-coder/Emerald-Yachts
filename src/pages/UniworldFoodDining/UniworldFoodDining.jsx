@@ -10,6 +10,7 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 function UniworldFoodDining() {
     const [ufdCurrentHero, setUfdCurrentHero] = useState(0)
@@ -601,6 +602,55 @@ function UniworldFoodDining() {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+                <section className="ufd-expert-insight-section">
+                    <div className="ufd-expert-insight-container">
+
+                        <div className="ufd-expert-portrait-panel">
+                            <div className="ufd-expert-img-container">
+                                <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Dining & River Cruise Expert" />
+                            </div>
+                            <div className="ufd-expert-stats-strip">
+                                <div className="ufd-expert-stat-box">
+                                    <h4>40+</h4>
+                                    <p>Years Experience</p>
+                                </div>
+                                <div className="ufd-expert-stat-box">
+                                    <h4>121+</h4>
+                                    <p>Countries Visited</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="ufd-expert-content-panel">
+                            <span className="ufd-eyebrow ufd-eyebrow-light">MEET THE CEO</span>
+                            <h2 className="ufd-section-heading ufd-white-heading">Insight from Angela Hughes</h2>
+                            <div className="ufd-heading-separator ufd-separator-blue"></div>
+
+                            <p className="ufd-expert-quote">
+                                "Uniworld's dining is genuinely one of the most underrated luxuries on the river. From farm-sourced regional menus to the sommelier-curated wine cellar, every meal is an extension of the destination. It's not just food — it's part of the story."
+                            </p>
+
+                            <div className="ufd-expert-priorities">
+                                <h5>Dining Highlights Matrix:</h5>
+                                <div className="ufd-expert-pills">
+                                    {['Regional Cuisine Focus', 'Award-Winning Sommeliers', 'All-Inclusive Beverages', 'Private Dining Options', 'Chef-Led Cooking Classes', 'Farm-to-Table Philosophy'].map(pill => (
+                                        <span key={pill} className="ufd-expert-pill">
+                                            <Anchor size={12} />
+                                            {pill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <p className="ufd-expert-bio">
+                                As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes has experienced Uniworld's culinary programme across multiple rivers — and consistently ranks it among the finest dining at sea or on land.
+                            </p>
+                        </div>
+
                     </div>
                 </section>
 

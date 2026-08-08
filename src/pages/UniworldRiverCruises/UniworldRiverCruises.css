@@ -14,7 +14,7 @@
     --uni-border-soft: rgba(39, 68, 114, 0.08);
 }
 
-.uni-eyebrow {
+.urc-eyebrow {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.26em;
@@ -26,27 +26,27 @@
     text-align: left !important;
 }
 
-.uni-eyebrow-light {
+.urc-eyebrow-light {
     color: rgba(255, 255, 255, 0.65) !important;
     opacity: 1 !important;
 }
 
-.uni-eyebrow-center {
+.urc-eyebrow-center {
     text-align: center !important;
     display: block;
     width: fit-content;
     margin: 0 auto 14px;
 }
 
-.uni-white-heading {
+.urc-white-heading {
     color: #ffffff !important;
 }
 
-.uni-separator-white {
+.urc-separator-white {
     background: rgba(255, 255, 255, 0.3) !important;
 }
 
-.uni-section-heading {
+.urc-section-heading {
     font-size: 36px;
     font-weight: 700;
     color: var(--uni-navy);
@@ -55,25 +55,27 @@
 
 }
 
-.uni-heading-center {
+.urc-heading-center {
     text-align: center;
 }
 
-.uni-heading-separator-bar {
+.urc-heading-separator-bar {
     width: 64px;
     height: 4px;
     background: var(--uni-navy);
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 26px;
 }
 
-.uni-bar-centered {
+.urc-bar-centered {
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Shared image frame */
-.uni-image-frame {
+.urc-image-frame {
     position: relative;
     width: 100%;
     height: 100%;
@@ -83,7 +85,7 @@
     box-shadow: 0 24px 60px rgba(15, 28, 46, 0.15);
 }
 
-.uni-frame-img {
+.urc-frame-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -91,22 +93,22 @@
     transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.uni-image-frame:hover .uni-frame-img {
+.urc-image-frame:hover .urc-frame-img {
     transform: scale(1.04);
 }
 
-.uni-frame-overlay {
+.urc-frame-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.05) 60%);
     z-index: 1;
 }
 
-.uni-overlay-soft {
+.urc-overlay-soft {
     background: linear-gradient(to top, rgba(39, 68, 114, 0.3) 0%, transparent 60%) !important;
 }
 
-.uni-image-badge {
+.urc-image-badge {
     position: absolute;
     bottom: 22px;
     left: 22px;
@@ -128,7 +130,7 @@
 /* ── IMAGE PLACEHOLDERS ───────────────────────────────────────────── */
 /* Visible placeholder blocks where real images should be added later */
 
-.uni-placeholder {
+.urc-placeholder {
     width: 100%;
     height: 100%;
     min-height: 340px;
@@ -146,11 +148,11 @@
     opacity: 0.9;
 }
 
-.uni-placeholder svg {
+.urc-placeholder svg {
     opacity: 0.6;
 }
 
-.uni-placeholder span {
+.urc-placeholder span {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -161,7 +163,7 @@
 }
 
 /* Full-bleed hero placeholder */
-.uni-hero-bg-placeholder {
+.urc-hero-bg-placeholder {
     position: absolute;
     inset: 0;
     min-height: 0;
@@ -171,7 +173,7 @@
 }
 
 /* Full-bleed dining background placeholder */
-.uni-dining-bg .uni-dining-bg-placeholder {
+.urc-dining-bg .urc-dining-bg-placeholder {
     position: absolute;
     inset: 0;
     min-height: 0;
@@ -181,7 +183,7 @@
 
 /* ── HERO ─────────────────────────────────────────────────── */
 
-.uni-hero-section {
+.urc-hero-section {
     position: relative;
     height: 100vh;
     min-height: 560px;
@@ -191,7 +193,7 @@
     justify-content: center;
 }
 
-.uni-hero-background {
+.urc-hero-background {
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -201,18 +203,18 @@
     z-index: 0;
 }
 
-.uni-hero-background.uni-active {
+.urc-hero-background.urc-active {
     opacity: 1;
 }
 
-.uni-hero-overlay-layer {
+.urc-hero-overlay-layer {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(15, 28, 46, 0.55) 0%, rgba(15, 28, 46, 0.35) 45%, rgba(15, 28, 46, 0.75) 100%);
     z-index: 1;
 }
 
-.uni-hero-content-wrapper {
+.urc-hero-content-wrapper {
     position: relative;
     z-index: 2;
     max-width: 900px;
@@ -222,7 +224,7 @@
     color: #ffffff;
 }
 
-.uni-hero-eyebrow-tag {
+.urc-hero-eyebrow-tag {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -238,7 +240,7 @@
     margin-bottom: 26px;
 }
 
-.uni-hero-main-title {
+.urc-hero-main-title {
     font-size: 54px;
     font-weight: 700;
     line-height: 1.15;
@@ -247,7 +249,7 @@
     text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
-.uni-hero-subtitle-text {
+.urc-hero-subtitle-text {
     font-size: 19px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.92);
@@ -257,32 +259,32 @@
 
 /* ── INTRO ────────────────────────────────────────────────── */
 
-.uni-intro-section {
+.urc-intro-section {
     background: var(--uni-bg-white);
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
 }
 
-.uni-intro-container {
+.urc-intro-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-intro-grid {
+.urc-intro-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     gap: 64px;
     align-items: center;
 }
 
-.uni-intro-text-col {
+.urc-intro-text-col {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.uni-intro-lead {
+.urc-intro-lead {
     font-size: 19px;
     line-height: 1.6;
     color: var(--uni-navy);
@@ -290,20 +292,20 @@
     margin-bottom: 20px;
 }
 
-.uni-intro-body {
+.urc-intro-body {
     font-size: 16.5px;
     color: var(--uni-text-body);
     line-height: 1.85;
     margin-bottom: 18px;
 }
 
-.uni-intro-mini-stats {
+.urc-intro-mini-stats {
     display: flex;
     gap: 20px;
     margin-top: 24px;
 }
 
-.uni-intro-stat-card {
+.urc-intro-stat-card {
     background: var(--uni-bg-soft);
     border: 1px solid var(--uni-border-soft);
     padding: 16px 24px;
@@ -315,39 +317,39 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.uni-intro-stat-card:hover {
+.urc-intro-stat-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
 }
 
-.uni-stat-number {
+.urc-stat-number {
     font-size: 24px;
     font-weight: 800;
     color: var(--uni-navy);
 }
 
-.uni-stat-label {
+.urc-stat-label {
     font-size: 13px;
     font-weight: 600;
     color: var(--uni-text-body);
     letter-spacing: 0.02em;
 }
 
-.uni-intro-image-col {
+.urc-intro-image-col {
     position: relative;
 }
 
-.uni-intro-image-card {
+.urc-intro-image-card {
     position: relative;
     padding: 10px;
 }
 
-.uni-intro-image-card .uni-image-frame {
+.urc-intro-image-card .urc-image-frame {
     height: 480px;
     min-height: unset;
 }
 
-.uni-intro-floating-badge {
+.urc-intro-floating-badge {
     position: absolute;
     bottom: 30px;
     right: -20px;
@@ -363,18 +365,18 @@
     animation: float-slow 4s ease-in-out infinite alternate;
 }
 
-.uni-badge-gold-icon {
+.urc-badge-gold-icon {
     color: #d4af37;
 }
 
-.uni-floating-bold {
+.urc-floating-bold {
     font-size: 14px;
     font-weight: 700;
     color: var(--uni-navy);
     margin: 0;
 }
 
-.uni-floating-sub {
+.urc-floating-sub {
     font-size: 11px;
     font-weight: 600;
     color: var(--uni-text-body);
@@ -392,40 +394,40 @@
 }
 
 @media (max-width: 991px) {
-    .uni-intro-grid {
+    .urc-intro-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .uni-intro-image-card .uni-image-frame {
+    .urc-intro-image-card .urc-image-frame {
         height: 380px;
     }
 
-    .uni-intro-floating-badge {
+    .urc-intro-floating-badge {
         right: 10px;
     }
 }
 
 /* ── WHY CHOOSE ───────────────────────────────────────────── */
 
-.uni-why-section {
+.urc-why-section {
     background: var(--uni-bg-soft);
     padding: 88px 20px;
 }
 
-.uni-why-container {
+.urc-why-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-why-grid {
+.urc-why-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 68px;
     align-items: center;
 }
 
-.uni-why-lead {
+.urc-why-lead {
     font-size: 18px;
     font-weight: 600;
     color: var(--uni-navy);
@@ -433,20 +435,20 @@
     line-height: 1.5;
 }
 
-.uni-why-sub {
+.urc-why-sub {
     font-size: 15px;
     color: var(--uni-text-body);
     margin: 0 0 20px 0;
     font-weight: 600;
 }
 
-.uni-why-list {
+.urc-why-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
 
-.uni-why-item {
+.urc-why-item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -460,12 +462,12 @@
     transition: all 0.3s ease;
 }
 
-.uni-why-item:hover {
+.urc-why-item:hover {
     box-shadow: 0 6px 20px rgba(39, 68, 114, 0.1);
     transform: translateY(-2px);
 }
 
-.uni-why-icon {
+.urc-why-icon {
     width: 34px;
     height: 34px;
     background: var(--uni-bg-soft);
@@ -477,18 +479,18 @@
     flex-shrink: 0;
 }
 
-.uni-why-image-col {
+.urc-why-image-col {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.uni-why-image-col .uni-image-frame {
+.urc-why-image-col .urc-image-frame {
     height: 340px;
     min-height: unset;
 }
 
-.uni-why-statement-box {
+.urc-why-statement-box {
     display: flex;
     gap: 0;
     background: var(--uni-bg-white);
@@ -497,20 +499,20 @@
     box-shadow: 0 8px 24px rgba(15, 28, 46, 0.06);
 }
 
-.uni-why-statement-accent {
+.urc-why-statement-accent {
     width: 5px;
     background: var(--uni-navy);
     flex-shrink: 0;
 }
 
-.uni-why-statement-text {
+.urc-why-statement-text {
     padding: 22px 24px;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.uni-why-statement-bold {
+.urc-why-statement-bold {
     font-size: 18px;
     font-weight: 700;
     color: var(--uni-navy);
@@ -520,7 +522,7 @@
 
 }
 
-.uni-why-statement-primary {
+.urc-why-statement-primary {
     font-size: 15px;
     color: var(--uni-text-body);
     margin: 0;
@@ -529,23 +531,23 @@
 
 /* ── DESTINATIONS ─────────────────────────────────────────── */
 
-.uni-destinations-section {
+.urc-destinations-section {
     background: var(--uni-navy-dark);
     padding: 64px 20px;
 }
 
-.uni-destinations-container {
+.urc-destinations-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-destinations-header {
+.urc-destinations-header {
     text-align: center;
     max-width: 720px;
     margin: 0 auto 32px;
 }
 
-.uni-destinations-intro {
+.urc-destinations-intro {
     font-size: 17px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.6;
@@ -553,7 +555,7 @@
 }
 
 /* ── TABS ── */
-.uni-tabs-wrapper {
+.urc-tabs-wrapper {
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 36px;
@@ -562,7 +564,7 @@
     margin: 0 auto;
 }
 
-.uni-tabs-sidebar {
+.urc-tabs-sidebar {
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -570,7 +572,7 @@
     top: 100px;
 }
 
-.uni-tabs-header {
+.urc-tabs-header {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -580,7 +582,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.uni-tab-btn {
+.urc-tab-btn {
     display: block;
     width: 100%;
     text-align: left;
@@ -597,22 +599,22 @@
     white-space: nowrap;
 }
 
-.uni-tab-btn:hover {
+.urc-tab-btn:hover {
     color: rgba(255, 255, 255, 0.85);
     background: rgba(255, 255, 255, 0.06);
 }
 
-.uni-tab-btn.active {
+.urc-tab-btn.active {
     background: var(--uni-navy);
     color: #ffffff;
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.4);
 }
 
-.uni-tab-panel {
+.urc-tab-panel {
     display: none;
 }
 
-.uni-tab-panel.active {
+.urc-tab-panel.active {
     display: block;
     animation: uniFadeIn 0.4s ease;
 }
@@ -629,7 +631,7 @@
     }
 }
 
-.uni-tab-dest-layout {
+.urc-tab-dest-layout {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.04);
@@ -640,7 +642,7 @@
     height: 100%;
 }
 
-.uni-tab-dest-image {
+.urc-tab-dest-image {
     position: relative;
     height: 260px;
     min-height: 260px;
@@ -648,31 +650,31 @@
     flex-shrink: 0;
 }
 
-.uni-tab-dest-image .uni-placeholder {
+.urc-tab-dest-image .urc-placeholder {
     min-height: 260px;
     border-radius: 0;
     border: none;
     background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 14px, rgba(255, 255, 255, 0.01) 14px, rgba(255, 255, 255, 0.01) 28px);
 }
 
-.uni-tab-dest-image .uni-dest-card-overlay {
+.urc-tab-dest-image .urc-dest-card-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85) 100%);
 }
 
-.uni-tab-dest-image .uni-dest-card-tag {
+.urc-tab-dest-image .urc-dest-card-tag {
     position: absolute;
     top: 20px;
     left: 20px;
     right: auto;
 }
 
-.uni-tab-dest-content {
+.urc-tab-dest-content {
     padding: 32px 34px 36px;
 }
 
-.uni-tab-dest-title {
+.urc-tab-dest-title {
     font-size: 28px;
     font-weight: 700;
     color: #ffffff;
@@ -680,21 +682,21 @@
     letter-spacing: 0.01em;
 }
 
-.uni-tab-dest-desc {
+.urc-tab-dest-desc {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.7;
     margin: 0 0 28px 0;
 }
 
-.uni-tab-dest-details {
+.urc-tab-dest-details {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 32px;
 }
 
-.uni-tab-detail-item {
+.urc-tab-detail-item {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -703,17 +705,17 @@
     font-weight: 500;
 }
 
-.uni-tab-detail-item strong {
+.urc-tab-detail-item strong {
     color: #ffffff;
     font-weight: 700;
 }
 
-.uni-tab-detail-item svg {
+.urc-tab-detail-item svg {
     color: #4a9eff;
     flex-shrink: 0;
 }
 
-.uni-tab-dest-cta {
+.urc-tab-dest-cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -728,13 +730,13 @@
     box-shadow: 0 6px 20px rgba(39, 68, 114, 0.35);
 }
 
-.uni-tab-dest-cta:hover {
+.urc-tab-dest-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 28px rgba(39, 68, 114, 0.5);
     background: #2e5080;
 }
 
-.uni-destinations-statement-box {
+.urc-destinations-statement-box {
     margin-top: 48px;
     padding: 28px 36px;
     background: rgba(255, 255, 255, 0.04);
@@ -750,13 +752,13 @@
     box-sizing: border-box;
 }
 
-.uni-destinations-statement-icon {
+.urc-destinations-statement-icon {
     color: #4a9eff;
     flex-shrink: 0;
     opacity: 0.85;
 }
 
-.uni-destinations-statement-text {
+.urc-destinations-statement-text {
     font-size: 16px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.9);
@@ -764,14 +766,14 @@
     font-weight: 500;
 }
 
-.uni-destinations-statement-text em {
+.urc-destinations-statement-text em {
     color: #7bc4ff;
     font-style: italic;
     font-weight: 600;
 }
 
 @media (max-width: 767px) {
-    .uni-destinations-statement-box {
+    .urc-destinations-statement-box {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
@@ -782,23 +784,23 @@
 
 /* ── BOUTIQUE SHIPS ───────────────────────────────────────── */
 
-.uni-ships-section {
+.urc-ships-section {
     background: var(--uni-bg-white);
     padding: 88px 20px;
 }
 
-.uni-ships-container {
+.urc-ships-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-ships-header {
+.urc-ships-header {
     text-align: center;
     max-width: 640px;
     margin: 0 auto 44px;
 }
 
-.uni-ships-intro {
+.urc-ships-intro {
     font-size: 15px;
     color: var(--uni-text-body);
     line-height: 1.6;
@@ -806,25 +808,25 @@
     white-space: nowrap;
 }
 
-.uni-fleet-layout {
+.urc-fleet-layout {
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
     gap: 52px;
     align-items: center;
 }
 
-.uni-fleet-image-col {
+.urc-fleet-image-col {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.uni-fleet-image-col .uni-image-frame {
+.urc-fleet-image-col .urc-image-frame {
     height: 380px;
     min-height: unset;
 }
 
-.uni-fleet-image-badge {
+.urc-fleet-image-badge {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -843,14 +845,14 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
-.uni-ships-pivot-box {
+.urc-ships-pivot-box {
     background: var(--uni-bg-soft);
     border-left: 4px solid var(--uni-navy);
     border-radius: 8px;
     padding: 18px 22px;
 }
 
-.uni-ships-pivot-text {
+.urc-ships-pivot-text {
     font-size: 16px;
     font-weight: 700;
     color: var(--uni-navy);
@@ -858,33 +860,33 @@
     line-height: 1.4;
 }
 
-.uni-ships-pivot-sub {
+.urc-ships-pivot-sub {
     font-size: 14px;
     color: var(--uni-text-body);
     margin: 0;
     line-height: 1.6;
 }
 
-.uni-fleet-table-col {
+.urc-fleet-table-col {
     background: var(--uni-bg-soft);
     border-radius: 18px;
     overflow: hidden;
     border: 1px solid var(--uni-border-soft);
 }
 
-.uni-fleet-ships-row,
-.uni-fleet-ship-item {
+.urc-fleet-ships-row,
+.urc-fleet-ship-item {
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     align-items: center;
 }
 
-.uni-fleet-ships-row {
+.urc-fleet-ships-row {
     background: var(--uni-navy);
     padding: 14px 22px;
 }
 
-.uni-fleet-col-head {
+.urc-fleet-col-head {
     font-size: 12px;
     font-weight: 700;
     color: #ffffff;
@@ -892,26 +894,26 @@
     letter-spacing: 0.08em;
 }
 
-.uni-fleet-ships-list {
+.urc-fleet-ships-list {
     display: flex;
     flex-direction: column;
 }
 
-.uni-fleet-ship-item {
+.urc-fleet-ship-item {
     padding: 14px 22px;
     border-bottom: 1px solid var(--uni-border-soft);
     transition: background 0.25s ease;
 }
 
-.uni-fleet-ship-item:last-child {
+.urc-fleet-ship-item:last-child {
     border-bottom: none;
 }
 
-.uni-fleet-ship-item:hover {
+.urc-fleet-ship-item:hover {
     background: var(--uni-bg-white);
 }
 
-.uni-fleet-ship-name {
+.urc-fleet-ship-name {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -920,30 +922,30 @@
     color: var(--uni-text-dark);
 }
 
-.uni-fleet-ship-name svg {
+.urc-fleet-ship-name svg {
     color: var(--uni-navy);
     flex-shrink: 0;
 }
 
-.uni-fleet-ship-region {
+.urc-fleet-ship-region {
     font-size: 14.5px;
     color: var(--uni-text-body);
 }
 
-.uni-ships-sub {
+.urc-ships-sub {
     font-size: 15px;
     color: var(--uni-text-body);
     margin: 0 0 20px 0;
     font-weight: 600;
 }
 
-.uni-ships-highlights {
+.urc-ships-highlights {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.uni-highlight-item {
+.urc-highlight-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -954,80 +956,80 @@
     padding: 11px 16px;
 }
 
-.uni-highlight-chevron {
+.urc-highlight-chevron {
     color: var(--uni-navy);
     flex-shrink: 0;
 }
 
 /* ── SUITES ───────────────────────────────────────────────── */
 
-.uni-suites-section {
+.urc-suites-section {
     background: var(--uni-navy-dark) !important;
     padding: 88px 20px;
 }
 
-.uni-suites-section .uni-section-heading {
+.urc-suites-section .urc-section-heading {
     color: #ffffff !important;
 }
 
-.uni-suites-section .uni-eyebrow {
+.urc-suites-section .urc-eyebrow {
     color: rgba(255, 255, 255, 0.65) !important;
     opacity: 1 !important;
 }
 
-.uni-suites-section .uni-heading-separator-bar {
+.urc-suites-section .urc-heading-separator-bar {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-suites-intro {
+.urc-suites-intro {
     color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.uni-suites-features-label {
+.urc-suites-features-label {
     color: #ffffff !important;
 }
 
-.uni-suites-section .uni-stateroom-pill {
+.urc-suites-section .urc-stateroom-pill {
     background: rgba(255, 255, 255, 0.14);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.uni-suites-note {
+.urc-suites-note {
     background: rgba(255, 255, 255, 0.1) !important;
     border-left-color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.uni-suites-note p {
+.urc-suites-note p {
     color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.uni-suites-container {
+.urc-suites-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-suites-header {
+.urc-suites-header {
     text-align: center;
     max-width: 720px;
     margin: 0 auto 36px;
 }
 
-.uni-suites-intro {
+.urc-suites-intro {
     font-size: 17px;
     color: var(--uni-text-body);
     line-height: 1.6;
     margin: 0 0 6px 0;
 }
 
-.uni-suites-sub {
+.urc-suites-sub {
     font-size: 15px;
     color: var(--uni-navy);
     font-weight: 700;
     margin: 0;
 }
 
-.uni-stateroom-row {
+.urc-stateroom-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1035,7 +1037,7 @@
     margin-bottom: 48px;
 }
 
-.uni-stateroom-pill {
+.urc-stateroom-pill {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1047,48 +1049,48 @@
     border-radius: 30px;
 }
 
-.uni-suites-content {
+.urc-suites-content {
     display: grid;
     grid-template-columns: 1fr 1.15fr;
     gap: 56px;
     align-items: center;
 }
 
-.uni-suites-image-col .uni-image-frame {
+.urc-suites-image-col .urc-image-frame {
     height: 400px;
 }
 
-.uni-suites-features-label {
+.urc-suites-features-label {
     font-size: 15px;
     font-weight: 700;
     color: var(--uni-navy);
     margin: 0 0 18px 0;
 }
 
-.uni-suites-features-grid {
+.urc-suites-features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
     margin-bottom: 20px;
 }
 
-.uni-suites-section .uni-feature-card {
+.urc-suites-section .urc-feature-card {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: rgba(255, 255, 255, 0.9);
     box-shadow: none;
 }
 
-.uni-suites-section .uni-feature-card:hover {
+.urc-suites-section .urc-feature-card:hover {
     background: rgba(255, 255, 255, 0.12);
 }
 
-.uni-suites-section .uni-feature-icon {
+.urc-suites-section .urc-feature-icon {
     background: rgba(255, 255, 255, 0.14);
     color: #ffffff;
 }
 
-.uni-feature-card {
+.urc-feature-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1104,11 +1106,11 @@
     transition: transform 0.3s ease;
 }
 
-.uni-feature-card:hover {
+.urc-feature-card:hover {
     transform: translateY(-3px);
 }
 
-.uni-feature-icon {
+.urc-feature-icon {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -1119,14 +1121,14 @@
     justify-content: center;
 }
 
-.uni-suites-note {
+.urc-suites-note {
     background: rgba(39, 68, 114, 0.08);
     border-left: 4px solid var(--uni-navy);
     border-radius: 8px;
     padding: 14px 18px;
 }
 
-.uni-suites-note p {
+.urc-suites-note p {
     margin: 0;
     font-size: 14px;
     color: var(--uni-text-dark);
@@ -1135,42 +1137,42 @@
 
 /* ── DINING ───────────────────────────────────────────────── */
 
-.uni-dining-section {
+.urc-dining-section {
     background: var(--uni-navy-dark) !important;
     padding: 72px 20px;
 }
 
-.uni-dining-section .uni-eyebrow {
+.urc-dining-section .urc-eyebrow {
     color: rgba(255, 255, 255, 0.6) !important;
     opacity: 1 !important;
 }
 
-.uni-dining-section .uni-section-heading {
+.urc-dining-section .urc-section-heading {
     color: #ffffff !important;
     margin-bottom: 12px;
 }
 
-.uni-dining-section .uni-heading-separator-bar {
+.urc-dining-section .urc-heading-separator-bar {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-dining-container {
+.urc-dining-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-dining-grid {
+.urc-dining-grid {
     display: grid;
     grid-template-columns: 1fr 0.9fr;
     gap: 48px;
     align-items: center;
 }
 
-.uni-dining-content {
+.urc-dining-content {
     max-width: 620px;
 }
 
-.uni-dining-heading {
+.urc-dining-heading {
     font-size: 34px;
     font-weight: 700;
     line-height: 1.2;
@@ -1179,7 +1181,7 @@
     text-align: center;
 }
 
-.uni-dining-note {
+.urc-dining-note {
     font-size: 15.5px;
     font-weight: 500;
     margin: 0 0 22px 0;
@@ -1188,14 +1190,14 @@
     line-height: 1.6;
 }
 
-.uni-dining-points {
+.urc-dining-points {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.uni-dining-point {
+.urc-dining-point {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1209,13 +1211,13 @@
     transition: all 0.3s ease;
 }
 
-.uni-dining-point:hover {
+.urc-dining-point:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.14);
 }
 
-.uni-dining-point-icon {
+.urc-dining-point-icon {
     width: 30px;
     height: 30px;
     background: rgba(255, 255, 255, 0.10);
@@ -1227,7 +1229,7 @@
     flex-shrink: 0;
 }
 
-.uni-dining-footer {
+.urc-dining-footer {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1238,7 +1240,7 @@
     margin-top: 16px;
 }
 
-.uni-dining-footer-icon {
+.urc-dining-footer-icon {
     width: 28px;
     height: 28px;
     min-width: 28px;
@@ -1250,7 +1252,7 @@
     justify-content: center;
 }
 
-.uni-dining-footer p {
+.urc-dining-footer p {
     margin: 0;
     font-size: 13.5px;
     font-weight: 500;
@@ -1258,11 +1260,11 @@
     line-height: 1.55;
 }
 
-.uni-dining-image-col .uni-image-frame {
+.urc-dining-image-col .urc-image-frame {
     height: 440px;
 }
 
-.uni-dining-image-badge {
+.urc-dining-image-badge {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -1283,37 +1285,37 @@
 
 /* ── WHAT'S INCLUDED ──────────────────────────────────────── */
 
-.uni-included-section {
+.urc-included-section {
     background: var(--uni-bg-white);
     padding: 72px 20px;
 }
 
-.uni-included-container {
+.urc-included-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-included-header {
+.urc-included-header {
     text-align: center;
     max-width: 720px;
     margin: 0 auto 40px;
 }
 
-.uni-included-intro {
+.urc-included-intro {
     font-size: 16px;
     color: var(--uni-text-body);
     line-height: 1.6;
     margin: 0;
 }
 
-.uni-included-grid {
+.urc-included-grid {
     display: grid !important;
     grid-template-columns: repeat(5, 1fr) !important;
     gap: 16px;
     margin-bottom: 32px;
 }
 
-.uni-included-card {
+.urc-included-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1327,14 +1329,14 @@
     cursor: default;
 }
 
-.uni-included-card:hover {
+.urc-included-card:hover {
     border-color: var(--uni-border-soft);
     background: var(--uni-bg-white);
     box-shadow: 0 8px 28px rgba(39, 68, 114, 0.1);
     transform: translateY(-4px);
 }
 
-.uni-included-icon-wrap {
+.urc-included-icon-wrap {
     width: 48px;
     height: 48px;
     border-radius: 12px;
@@ -1347,20 +1349,20 @@
     transition: all 0.3s ease;
 }
 
-.uni-included-card:hover .uni-included-icon-wrap {
+.urc-included-card:hover .urc-included-icon-wrap {
     background: var(--uni-navy);
     color: #ffffff;
     border-color: var(--uni-navy);
 }
 
-.uni-included-label {
+.urc-included-label {
     font-size: 13.5px;
     font-weight: 600;
     color: var(--uni-text-dark);
     line-height: 1.4;
 }
 
-.uni-included-footer {
+.urc-included-footer {
     text-align: center;
     display: flex;
     align-items: center;
@@ -1375,12 +1377,12 @@
     margin: 0 auto;
 }
 
-.uni-included-footer-icon {
+.urc-included-footer-icon {
     color: var(--uni-navy);
     flex-shrink: 0;
 }
 
-.uni-included-footer p {
+.urc-included-footer p {
     font-size: 14px;
     color: var(--uni-text-body);
     margin: 0;
@@ -1389,38 +1391,38 @@
 
 /* ── SHORE EXCURSIONS ─────────────────────────────────────── */
 
-.uni-experience-section {
+.urc-experience-section {
     background: var(--uni-bg-soft) !important;
     padding: 72px 20px;
 }
 
-.uni-excursions-container {
+.urc-excursions-container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-.uni-excursions-header {
+.urc-excursions-header {
     text-align: center;
     max-width: 680px;
     margin: 0 auto 40px;
 }
 
-.uni-experience-section .uni-eyebrow {
+.urc-experience-section .urc-eyebrow {
     color: var(--uni-navy) !important;
     opacity: 1 !important;
 }
 
-.uni-experience-section .uni-section-heading {
+.urc-experience-section .urc-section-heading {
     color: var(--uni-navy) !important;
     margin-bottom: 12px;
 }
 
-.uni-experience-section .uni-heading-separator-bar {
+.urc-experience-section .urc-heading-separator-bar {
     background: var(--uni-navy);
 }
 
-.uni-excursions-lead {
+.urc-excursions-lead {
     font-size: 15px;
     font-weight: 400;
     color: var(--uni-text-body) !important;
@@ -1428,65 +1430,65 @@
     line-height: 1.7;
 }
 
-.uni-experience-section .uni-tabs-header {
+.urc-experience-section .urc-tabs-header {
     background: rgba(39, 68, 114, 0.05);
     border: 1px solid rgba(39, 68, 114, 0.1);
 }
 
-.uni-experience-section .uni-tab-btn {
+.urc-experience-section .urc-tab-btn {
     color: rgba(39, 68, 114, 0.55);
 }
 
-.uni-experience-section .uni-tab-btn:hover {
+.urc-experience-section .urc-tab-btn:hover {
     color: rgba(39, 68, 114, 0.85);
     background: rgba(39, 68, 114, 0.06);
 }
 
-.uni-experience-section .uni-tab-btn.active {
+.urc-experience-section .urc-tab-btn.active {
     background: var(--uni-navy);
     color: #ffffff;
 }
 
-.uni-experience-section .uni-tab-dest-layout {
+.urc-experience-section .urc-tab-dest-layout {
     background: var(--uni-bg-white);
     border: 1px solid var(--uni-border-soft);
 }
 
-.uni-experience-section .uni-tab-dest-image .uni-placeholder {
+.urc-experience-section .urc-tab-dest-image .urc-placeholder {
     background: repeating-linear-gradient(45deg, rgba(39, 68, 114, 0.03) 0, rgba(39, 68, 114, 0.03) 14px, rgba(39, 68, 114, 0.01) 14px, rgba(39, 68, 114, 0.01) 28px);
 }
 
-.uni-experience-section .uni-tab-dest-title {
+.urc-experience-section .urc-tab-dest-title {
     color: var(--uni-navy);
 }
 
-.uni-experience-section .uni-tab-dest-desc {
+.urc-experience-section .urc-tab-dest-desc {
     color: var(--uni-text-body);
 }
 
-.uni-experience-section .uni-tab-detail-item {
+.urc-experience-section .urc-tab-detail-item {
     color: var(--uni-navy);
 }
 
-.uni-experience-section .uni-tab-detail-item strong {
+.urc-experience-section .urc-tab-detail-item strong {
     color: var(--uni-navy);
 }
 
-.uni-experience-section .uni-tab-detail-item svg {
+.urc-experience-section .urc-tab-detail-item svg {
     color: var(--uni-navy);
 }
 
-.uni-experience-section .uni-destinations-statement-box {
+.urc-experience-section .urc-destinations-statement-box {
     background: var(--uni-bg-white);
     border: 1px solid var(--uni-border-soft);
     border-left: 4px solid var(--uni-navy);
 }
 
-.uni-experience-section .uni-destinations-statement-icon {
+.urc-experience-section .urc-destinations-statement-icon {
     color: var(--uni-navy);
 }
 
-.uni-experience-section .uni-destinations-statement-text {
+.urc-experience-section .urc-destinations-statement-text {
     color: var(--uni-text-body);
 }
 
@@ -1494,17 +1496,17 @@
 
 /* ── SERVICE AND HOSPITALITY ──────────────────────────────── */
 
-.uni-service-section {
+.urc-service-section {
     background: var(--uni-navy-dark) !important;
     padding: 64px 20px;
 }
 
-.uni-service-container {
+.urc-service-container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.uni-service-grid {
+.urc-service-grid {
     display: flex;
     gap: 48px;
     align-items: flex-start;
@@ -1512,34 +1514,34 @@
 
 /* left – image + caption */
 
-.uni-service-image-col {
+.urc-service-image-col {
     flex: 0 0 420px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.uni-service-image-col .uni-image-frame {
+.urc-service-image-col .urc-image-frame {
     height: 340px;
     width: 100%;
     border-radius: 14px;
     overflow: hidden;
 }
 
-.uni-service-image-col .uni-placeholder {
+.urc-service-image-col .urc-placeholder {
     height: 100%;
     border-radius: 14px;
     border: none;
 }
 
-.uni-service-conclusion-box {
+.urc-service-conclusion-box {
     background: rgba(255, 255, 255, 0.08);
     border: 1px dashed rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 16px 20px;
 }
 
-.uni-service-conclusion-box p {
+.urc-service-conclusion-box p {
     margin: 0;
     font-size: 13.5px;
     font-weight: 500;
@@ -1549,28 +1551,28 @@
 
 /* right – text + pillars */
 
-.uni-service-text-col {
+.urc-service-text-col {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.uni-service-text-col .uni-eyebrow {
+.urc-service-text-col .urc-eyebrow {
     color: rgba(255, 255, 255, 0.6) !important;
     opacity: 1 !important;
 }
 
-.uni-service-text-col .uni-section-heading {
+.urc-service-text-col .urc-section-heading {
     margin-bottom: 10px;
     color: #ffffff !important;
 }
 
-.uni-service-text-col .uni-heading-separator-bar {
+.urc-service-text-col .urc-heading-separator-bar {
     margin-bottom: 18px;
     background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-service-lead {
+.urc-service-lead {
     font-size: 15.5px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.8) !important;
@@ -1578,20 +1580,20 @@
     line-height: 1.65;
 }
 
-.uni-service-sub {
+.urc-service-sub {
     font-size: 14.5px;
     color: #ffffff !important;
     font-weight: 700;
     margin: 0 0 16px 0;
 }
 
-.uni-service-pillars {
+.urc-service-pillars {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
 
-.uni-service-pillar {
+.urc-service-pillar {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1602,13 +1604,13 @@
     transition: all 0.25s ease;
 }
 
-.uni-service-pillar:hover {
+.urc-service-pillar:hover {
     background: rgba(255, 255, 255, 0.14);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
 
-.uni-service-pillar-icon {
+.urc-service-pillar-icon {
     width: 38px;
     height: 38px;
     min-width: 38px;
@@ -1620,7 +1622,7 @@
     justify-content: center;
 }
 
-.uni-service-pillar-label {
+.urc-service-pillar-label {
     font-size: 13.5px;
     font-weight: 600;
     color: #ffffff;
@@ -1629,48 +1631,48 @@
 
 /* ── WHO SHOULD CHOOSE ────────────────────────────────────── */
 
-.uni-who-section {
+.urc-who-section {
     background: var(--uni-bg-white);
     padding: 64px 20px;
 }
 
-.uni-who-container {
+.urc-who-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.uni-who-header {
+.urc-who-header {
     text-align: center;
     max-width: 640px;
     margin: 0 auto 36px;
 }
 
-.uni-who-header .uni-section-heading {
+.urc-who-header .urc-section-heading {
     margin-bottom: 10px;
 }
 
-.uni-who-intro {
+.urc-who-intro {
     font-size: 15.5px;
     color: var(--uni-text-body);
     line-height: 1.65;
     margin: 0 0 6px 0;
 }
 
-.uni-who-sub {
+.urc-who-sub {
     font-size: 14.5px;
     color: var(--uni-navy);
     font-weight: 700;
     margin: 0;
 }
 
-.uni-who-grid {
+.urc-who-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-bottom: 28px;
 }
 
-.uni-who-card {
+.urc-who-card {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1680,12 +1682,12 @@
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.uni-who-card:hover {
+.urc-who-card:hover {
     box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
     transform: translateY(-2px);
 }
 
-.uni-who-num {
+.urc-who-num {
     font-size: 13px;
     font-weight: 700;
     color: var(--uni-navy);
@@ -1699,14 +1701,14 @@
     justify-content: center;
 }
 
-.uni-who-label {
+.urc-who-label {
     font-size: 14px;
     font-weight: 600;
     color: var(--uni-text-dark);
     line-height: 1.4;
 }
 
-.uni-who-footer {
+.urc-who-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1719,7 +1721,7 @@
     margin: 0 auto;
 }
 
-.uni-who-footer-icon {
+.urc-who-footer-icon {
     width: 34px;
     height: 34px;
     min-width: 34px;
@@ -1731,7 +1733,7 @@
     justify-content: center;
 }
 
-.uni-who-footer p {
+.urc-who-footer p {
     font-size: 14px;
     font-weight: 500;
     color: var(--uni-text-body);
@@ -1741,39 +1743,39 @@
 
 /* ── UNIWORLD VS OTHERS ───────────────────────────────────── */
 
-.uni-compare-section {
+.urc-compare-section {
     background: var(--uni-navy) !important;
     padding: 64px 20px;
 }
 
-.uni-compare-container {
+.urc-compare-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.uni-compare-header {
+.urc-compare-header {
     text-align: center;
     max-width: 680px;
     margin: 0 auto 36px;
 }
 
-.uni-compare-header .uni-section-heading {
+.urc-compare-header .urc-section-heading {
     color: #ffffff !important;
     margin-bottom: 10px;
 }
 
-.uni-compare-header .uni-eyebrow {
+.urc-compare-header .urc-eyebrow {
     color: rgba(255, 255, 255, 0.6) !important;
     opacity: 1 !important;
 }
 
-.uni-compare-header .uni-heading-separator-bar {
+.urc-compare-header .urc-heading-separator-bar {
     background: rgba(255, 255, 255, 0.35);
 }
 
 /* comparison table */
 
-.uni-compare-table {
+.urc-compare-table {
     display: flex;
     flex-direction: column;
     border-radius: 14px;
@@ -1782,22 +1784,22 @@
     margin-bottom: 28px;
 }
 
-.uni-compare-row {
+.urc-compare-row {
     display: flex;
     align-items: stretch;
     padding: 15px 24px;
     gap: 20px;
 }
 
-.uni-compare-row + .uni-compare-row {
+.urc-compare-row + .urc-compare-row {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.uni-compare-head {
+.urc-compare-head {
     background: rgba(255, 255, 255, 0.08);
 }
 
-.uni-compare-head span {
+.urc-compare-head span {
     color: rgba(255, 255, 255, 0.9);
     font-size: 12px;
     font-weight: 700;
@@ -1805,31 +1807,31 @@
     letter-spacing: 0.08em;
 }
 
-.uni-compare-col-feature {
+.urc-compare-col-feature {
     flex: 0 0 220px;
     font-size: 14.5px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.uni-compare-col-uni {
+.urc-compare-col-uni {
     flex: 1;
     font-size: 14.5px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.uni-compare-col-typical {
+.urc-compare-col-typical {
     flex: 1;
     font-size: 14.5px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.uni-compare-row:not(.uni-compare-head):hover {
+.urc-compare-row:not(.urc-compare-head):hover {
     background: rgba(255, 255, 255, 0.04);
 }
 
-.uni-compare-footer {
+.urc-compare-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1842,7 +1844,7 @@
     margin: 0 auto;
 }
 
-.uni-compare-footer-icon {
+.urc-compare-footer-icon {
     width: 34px;
     height: 34px;
     min-width: 34px;
@@ -1854,12 +1856,12 @@
     justify-content: center;
 }
 
-.uni-compare-footer-icon svg {
+.urc-compare-footer-icon svg {
     color: #ffffff !important;
     stroke: #ffffff !important;
 }
 
-.uni-compare-footer p {
+.urc-compare-footer p {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
@@ -1869,36 +1871,36 @@
 
 /* ── BEST TIME TO CRUISE ─────────────────────────────────── */
 
-.uni-besttime-section {
+.urc-besttime-section {
     background: var(--uni-bg-white);
     padding: 64px 20px;
 }
 
-.uni-besttime-container {
+.urc-besttime-container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.uni-besttime-header {
+.urc-besttime-header {
     text-align: center;
     max-width: 680px;
     margin: 0 auto 40px;
 }
 
-.uni-besttime-header .uni-section-heading {
+.urc-besttime-header .urc-section-heading {
     margin-bottom: 10px;
 }
 
 /* 4-column grid */
 
-.uni-besttime-grid {
+.urc-besttime-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-bottom: 36px;
 }
 
-.uni-besttime-card {
+.urc-besttime-card {
     background: var(--uni-bg-soft);
     border-radius: 14px;
     padding: 24px 22px;
@@ -1911,12 +1913,12 @@
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.uni-besttime-card:hover {
+.urc-besttime-card:hover {
     box-shadow: 0 8px 24px rgba(39, 68, 114, 0.10);
     transform: translateY(-3px);
 }
 
-.uni-besttime-card-accent {
+.urc-besttime-card-accent {
     width: 36px;
     height: 4px;
     border-radius: 4px;
@@ -1924,13 +1926,13 @@
     margin-bottom: 4px;
 }
 
-.uni-besttime-card-season {
+.urc-besttime-card-season {
     font-size: 16px;
     font-weight: 700;
     color: var(--uni-navy);
 }
 
-.uni-besttime-card-text {
+.urc-besttime-card-text {
     margin: 0;
     font-size: 13.5px;
     color: var(--uni-text-body);
@@ -1939,7 +1941,7 @@
 
 /* footer – info strip */
 
-.uni-besttime-footer {
+.urc-besttime-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1952,7 +1954,7 @@
     margin: 0 auto;
 }
 
-.uni-besttime-footer-icon {
+.urc-besttime-footer-icon {
     width: 34px;
     height: 34px;
     min-width: 34px;
@@ -1964,7 +1966,7 @@
     justify-content: center;
 }
 
-.uni-besttime-footer p {
+.urc-besttime-footer p {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
@@ -1974,36 +1976,36 @@
 
 /* ── PRICING ──────────────────────────────────────────────── */
 
-.uni-pricing-section {
+.urc-pricing-section {
     background: var(--uni-navy-dark);
     padding: 64px 20px;
 }
 
-.uni-pricing-container {
+.urc-pricing-container {
     max-width: 780px;
     margin: 0 auto;
 }
 
-.uni-pricing-header {
+.urc-pricing-header {
     text-align: center;
     margin-bottom: 36px;
 }
 
-.uni-pricing-header .uni-section-heading {
+.urc-pricing-header .urc-section-heading {
     color: #ffffff !important;
     margin-bottom: 10px;
 }
 
-.uni-pricing-header .uni-eyebrow {
+.urc-pricing-header .urc-eyebrow {
     color: rgba(255, 255, 255, 0.6) !important;
     opacity: 1 !important;
 }
 
-.uni-pricing-header .uni-heading-separator-bar {
+.urc-pricing-header .urc-heading-separator-bar {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-pricing-intro {
+.urc-pricing-intro {
     margin: 0;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.75);
@@ -2013,7 +2015,7 @@
     margin-right: auto;
 }
 
-.uni-pricing-card {
+.urc-pricing-card {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 16px;
@@ -2025,7 +2027,7 @@
     gap: 16px;
 }
 
-.uni-pricing-card-icon {
+.urc-pricing-card-icon {
     width: 52px;
     height: 52px;
     background: rgba(255, 255, 255, 0.10);
@@ -2036,7 +2038,7 @@
     color: #ffffff;
 }
 
-.uni-pricing-card-text {
+.urc-pricing-card-text {
     margin: 0;
     font-size: 16px;
     font-weight: 500;
@@ -2045,14 +2047,14 @@
     max-width: 620px;
 }
 
-.uni-pricing-divider {
+.urc-pricing-divider {
     width: 48px;
     height: 2px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
 }
 
-.uni-pricing-card-sub {
+.urc-pricing-card-sub {
     margin: 0;
     font-size: 14.5px;
     font-weight: 400;
@@ -2063,24 +2065,24 @@
 
 /* ── IS IT WORTH IT ───────────────────────────────────────── */
 
-.uni-worth-section {
+.urc-worth-section {
     background: var(--uni-bg-white);
     padding: 88px 20px;
 }
 
-.uni-worth-container {
+.urc-worth-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uni-worth-grid {
+.urc-worth-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 68px;
     align-items: center;
 }
 
-.uni-worth-lead {
+.urc-worth-lead {
     font-size: 17px;
     font-weight: 500;
     color: var(--uni-text-dark);
@@ -2088,21 +2090,21 @@
     line-height: 1.6;
 }
 
-.uni-worth-sub {
+.urc-worth-sub {
     font-size: 15px;
     color: var(--uni-text-body);
     margin: 0;
     font-weight: 600;
 }
 
-.uni-worth-list {
+.urc-worth-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 22px;
 }
 
-.uni-worth-item {
+.urc-worth-item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -2114,19 +2116,19 @@
     color: var(--uni-text-dark);
 }
 
-.uni-worth-check {
+.urc-worth-check {
     color: var(--uni-navy);
     flex-shrink: 0;
 }
 
-.uni-worth-conclusion-box {
+.urc-worth-conclusion-box {
     background: rgba(39, 68, 114, 0.06);
     border-left: 4px solid var(--uni-navy);
     border-radius: 8px;
     padding: 16px 20px;
 }
 
-.uni-worth-conclusion-box p {
+.urc-worth-conclusion-box p {
     margin: 0;
     font-size: 14.5px;
     color: var(--uni-text-dark);
@@ -2135,40 +2137,40 @@
 
 /* ── KEY TAKEAWAYS ───────────────────────────────────────── */
 
-.uni-takeaway-section {
+.urc-takeaway-section {
     background: var(--uni-bg-white);
     padding: 64px 20px;
 }
 
-.uni-takeaway-container {
+.urc-takeaway-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.uni-takeaway-header {
+.urc-takeaway-header {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 36px;
 }
 
-.uni-takeaway-header .uni-section-heading {
+.urc-takeaway-header .urc-section-heading {
     margin-bottom: 10px;
 }
 
-.uni-takeaway-grid {
+.urc-takeaway-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-bottom: 12px;
 }
 
-.uni-takeaway-grid-center {
+.urc-takeaway-grid-center {
     grid-template-columns: repeat(3, 1fr);
     max-width: 750px;
     margin: 0 auto;
 }
 
-.uni-takeaway-card {
+.urc-takeaway-card {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -2179,12 +2181,12 @@
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.uni-takeaway-card:hover {
+.urc-takeaway-card:hover {
     box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
     transform: translateY(-2px);
 }
 
-.uni-takeaway-num {
+.urc-takeaway-num {
     font-size: 13px;
     font-weight: 700;
     color: var(--uni-navy);
@@ -2198,7 +2200,7 @@
     justify-content: center;
 }
 
-.uni-takeaway-label {
+.urc-takeaway-label {
     font-size: 13.5px;
     font-weight: 600;
     color: var(--uni-text-dark);
@@ -2207,33 +2209,33 @@
 
 /* ── CONCLUSION ──────────────────────────────────────────── */
 
-.uni-review-section {
+.urc-review-section {
     background: var(--uni-bg-soft);
     padding: 64px 20px;
 }
 
-.uni-review-container {
+.urc-review-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.uni-review-header {
+.urc-review-header {
     text-align: center;
     margin-bottom: 32px;
 }
 
-.uni-review-header .uni-section-heading {
+.urc-review-header .urc-section-heading {
     margin-bottom: 10px;
 }
 
-.uni-review-intro {
+.urc-review-intro {
     font-size: 15.5px;
     color: var(--uni-text-body);
     line-height: 1.7;
     margin: 0;
 }
 
-.uni-review-cta {
+.urc-review-cta {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -2245,7 +2247,7 @@
     margin: 0 auto;
 }
 
-.uni-review-cta-icon {
+.urc-review-cta-icon {
     width: 42px;
     height: 42px;
     min-width: 42px;
@@ -2257,12 +2259,12 @@
     justify-content: center;
 }
 
-.uni-review-cta-icon svg {
+.urc-review-cta-icon svg {
     color: #ffffff !important;
     stroke: #ffffff !important;
 }
 
-.uni-review-cta p {
+.urc-review-cta p {
     margin: 0;
     font-size: 14.5px;
     font-weight: 500;
@@ -2272,51 +2274,51 @@
 
 /* ── BOOKING TIPS ────────────────────────────────────────── */
 
-.uni-booking-section {
+.urc-booking-section {
     background: var(--uni-navy-dark) !important;
     padding: 64px 20px;
 }
 
-.uni-booking-container {
+.urc-booking-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.uni-booking-header {
+.urc-booking-header {
     text-align: center;
     max-width: 640px;
     margin: 0 auto 36px;
 }
 
-.uni-booking-header .uni-section-heading {
+.urc-booking-header .urc-section-heading {
     color: #ffffff !important;
     margin-bottom: 10px;
 }
 
-.uni-booking-header .uni-eyebrow {
+.urc-booking-header .urc-eyebrow {
     color: rgba(255, 255, 255, 0.6) !important;
     opacity: 1 !important;
 }
 
-.uni-booking-header .uni-heading-separator-bar {
+.urc-booking-header .urc-heading-separator-bar {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.uni-booking-intro {
+.urc-booking-intro {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.65;
     margin: 0;
 }
 
-.uni-booking-grid {
+.urc-booking-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-bottom: 28px;
 }
 
-.uni-booking-card {
+.urc-booking-card {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -2327,11 +2329,11 @@
     transition: background 0.25s ease;
 }
 
-.uni-booking-card:hover {
+.urc-booking-card:hover {
     background: rgba(255, 255, 255, 0.10);
 }
 
-.uni-booking-num {
+.urc-booking-num {
     font-size: 13px;
     font-weight: 700;
     color: #ffffff;
@@ -2345,14 +2347,14 @@
     justify-content: center;
 }
 
-.uni-booking-label {
+.urc-booking-label {
     font-size: 14px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.5;
 }
 
-.uni-booking-footer {
+.urc-booking-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2365,7 +2367,7 @@
     margin: 0 auto;
 }
 
-.uni-booking-footer-icon {
+.urc-booking-footer-icon {
     width: 34px;
     height: 34px;
     min-width: 34px;
@@ -2377,12 +2379,12 @@
     justify-content: center;
 }
 
-.uni-booking-footer-icon svg {
+.urc-booking-footer-icon svg {
     color: #ffffff !important;
     stroke: #ffffff !important;
 }
 
-.uni-booking-footer p {
+.urc-booking-footer p {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
@@ -2390,7 +2392,7 @@
     line-height: 1.65;
 }
 
-.uni-booking-footer p {
+.urc-booking-footer p {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.75);
     max-width: 700px;
@@ -2400,34 +2402,34 @@
 
 /* ── FAQ ──────────────────────────────────────────────────── */
 
-.uni-faq-section {
+.urc-faq-section {
     background: var(--uni-bg-white) !important;
     padding: 64px 20px;
 }
 
-.uni-faq-header {
+.urc-faq-header {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.uni-faq-header .uni-section-heading {
+.urc-faq-header .urc-section-heading {
     margin-bottom: 10px;
 }
 
-.uni-faq-container {
+.urc-faq-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.uni-faq-list-wrapper {
+.urc-faq-list-wrapper {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 32px;
 }
 
-.uni-faq-item {
+.urc-faq-item {
     background: var(--uni-bg-soft);
     border: 1px solid var(--uni-border-soft);
     border-radius: 14px;
@@ -2437,26 +2439,26 @@
     box-shadow: 0 2px 8px rgba(15, 28, 46, 0.03);
 }
 
-.uni-faq-item:hover {
+.urc-faq-item:hover {
     border-color: var(--uni-navy);
     box-shadow: 0 8px 24px rgba(39, 68, 114, 0.08);
 }
 
-.uni-faq-question-row {
+.urc-faq-question-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-.uni-faq-question-row span {
+.urc-faq-question-row span {
     font-size: 15.5px;
     font-weight: 600;
     color: var(--uni-navy);
     line-height: 1.45;
 }
 
-.uni-faq-toggle-icon {
+.urc-faq-toggle-icon {
     font-size: 20px;
     font-weight: 600;
     color: var(--uni-navy);
@@ -2465,7 +2467,7 @@
     text-align: center;
 }
 
-.uni-faq-answer-text {
+.urc-faq-answer-text {
     margin: 14px 0 0 0;
     padding-top: 14px;
     border-top: 1px solid var(--uni-border-soft);
@@ -2476,7 +2478,7 @@
 
 /* ── CTA ──────────────────────────────────────────────────── */
 
-.uni-cta-section {
+.urc-cta-section {
     position: relative;
     padding: 72px 20px;
     background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
@@ -2485,7 +2487,7 @@
     isolation: isolate;
 }
 
-.uni-cta-aurora-glow {
+.urc-cta-aurora-glow {
     position: absolute;
     top: -30%;
     left: 50%;
@@ -2503,7 +2505,7 @@
     100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
 
-.uni-cta-crystal {
+.urc-cta-crystal {
     position: absolute;
     border-radius: 4px;
     background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
@@ -2512,16 +2514,16 @@
     backdrop-filter: blur(6px);
 }
 
-.uni-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uni-crystal-float 12s ease-in-out infinite; }
-.uni-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uni-crystal-float 10s ease-in-out 2s infinite; }
-.uni-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uni-crystal-float 14s ease-in-out 4s infinite; }
+.urc-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uni-crystal-float 12s ease-in-out infinite; }
+.urc-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uni-crystal-float 10s ease-in-out 2s infinite; }
+.urc-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uni-crystal-float 14s ease-in-out 4s infinite; }
 
 @keyframes uni-crystal-float {
     0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
     50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
 }
 
-.uni-cta-grid-lines {
+.urc-cta-grid-lines {
     position: absolute;
     inset: 0;
     background-image:
@@ -2531,7 +2533,7 @@
     z-index: 0;
 }
 
-.uni-cta-content {
+.urc-cta-content {
     position: relative;
     z-index: 2;
     max-width: 900px;
@@ -2541,7 +2543,7 @@
     align-items: center;
 }
 
-.uni-cta-compass-ring {
+.urc-cta-compass-ring {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -2561,7 +2563,7 @@
     to { transform: rotate(360deg); }
 }
 
-.uni-cta-compass-ring svg {
+.urc-cta-compass-ring svg {
     animation: uni-compass-counter-spin 20s linear infinite;
 }
 
@@ -2570,7 +2572,7 @@
     to { transform: rotate(-360deg); }
 }
 
-.uni-cta-eyebrow {
+.urc-cta-eyebrow {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.3em;
@@ -2580,7 +2582,7 @@
     display: block;
 }
 
-.uni-cta-title {
+.urc-cta-title {
     font-size: 48px;
     line-height: 1.12;
     font-weight: 500;
@@ -2589,7 +2591,7 @@
     letter-spacing: -0.01em;
 }
 
-.uni-cta-bar {
+.urc-cta-bar {
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
@@ -2597,7 +2599,7 @@
     margin-bottom: 16px;
 }
 
-.uni-cta-subtitle {
+.urc-cta-subtitle {
     font-size: 17px;
     line-height: 1.65;
     color: rgba(203, 213, 225, 0.85);
@@ -2605,7 +2607,7 @@
     margin: 0 auto 28px;
 }
 
-.uni-cta-considerations-box {
+.urc-cta-considerations-box {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(148, 210, 255, 0.12);
     border-radius: 16px;
@@ -2616,7 +2618,7 @@
     max-width: 720px;
 }
 
-.uni-cta-considerations-title {
+.urc-cta-considerations-title {
     display: block;
     font-size: 14px;
     font-weight: 700;
@@ -2627,7 +2629,7 @@
     letter-spacing: 0.06em;
 }
 
-.uni-cta-considerations-list {
+.urc-cta-considerations-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -2636,7 +2638,7 @@
     gap: 12px;
 }
 
-.uni-cta-considerations-item {
+.urc-cta-considerations-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -2644,19 +2646,19 @@
     color: rgba(203, 213, 225, 0.85);
 }
 
-.uni-cta-considerations-icon {
+.urc-cta-considerations-icon {
     color: rgba(148, 210, 255, 0.7);
     flex-shrink: 0;
 }
 
-.uni-cta-actions {
+.urc-cta-actions {
     display: flex;
     justify-content: center;
     gap: 18px;
     flex-wrap: wrap;
 }
 
-.uni-cta-primary-btn {
+.urc-cta-primary-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -2675,7 +2677,7 @@
     overflow: hidden;
 }
 
-.uni-cta-primary-btn::before {
+.urc-cta-primary-btn::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -2684,22 +2686,22 @@
     transition: opacity 0.35s ease;
 }
 
-.uni-cta-primary-btn:hover {
+.urc-cta-primary-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
     border-color: rgba(148, 210, 255, 0.3);
 }
 
-.uni-cta-primary-btn:hover::before {
+.urc-cta-primary-btn:hover::before {
     opacity: 1;
 }
 
-.uni-cta-btn-arrow {
+.urc-cta-btn-arrow {
     transition: transform 0.3s ease;
     opacity: 0.7;
 }
 
-.uni-cta-primary-btn:hover .uni-cta-btn-arrow {
+.urc-cta-primary-btn:hover .urc-cta-btn-arrow {
     transform: translateX(4px);
     opacity: 1;
 }
@@ -2710,58 +2712,58 @@
 
 @media (max-width: 1024px) {
 
-    .uni-hero-main-title {
+    .urc-hero-main-title {
         font-size: 42px;
     }
 
-    .uni-hero-subtitle-text {
+    .urc-hero-subtitle-text {
         font-size: 17px;
     }
 
-    .uni-why-grid,
-    .uni-service-grid,
-    .uni-worth-grid {
+    .urc-why-grid,
+    .urc-service-grid,
+    .urc-worth-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .uni-fleet-layout {
+    .urc-fleet-layout {
         grid-template-columns: 1fr;
         gap: 36px;
     }
 
-    .uni-fleet-image-col {
+    .urc-fleet-image-col {
         order: -1;
     }
 
-    .uni-service-image-col {
+    .urc-service-image-col {
         order: 2;
     }
 
-    .uni-service-text-col {
+    .urc-service-text-col {
         order: 1;
     }
 
-    .uni-why-image-col .uni-image-frame,
-    .uni-fleet-image-col .uni-image-frame,
-    .uni-service-image-col .uni-image-frame {
+    .urc-why-image-col .urc-image-frame,
+    .urc-fleet-image-col .urc-image-frame,
+    .urc-service-image-col .urc-image-frame {
         height: 320px;
     }
 
-    .uni-suites-content {
+    .urc-suites-content {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
-    .uni-suites-image-col .uni-image-frame {
+    .urc-suites-image-col .urc-image-frame {
         height: 320px;
     }
 
-    .uni-suites-features-grid {
+    .urc-suites-features-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .uni-tabs-wrapper {
+    .urc-tabs-wrapper {
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
         width: 100%;
@@ -2769,7 +2771,7 @@
         box-sizing: border-box;
     }
 
-    .uni-tabs-sidebar {
+    .urc-tabs-sidebar {
         position: static;
         gap: 24px;
         width: 100%;
@@ -2778,14 +2780,14 @@
         box-sizing: border-box;
     }
 
-    .uni-tabs-content {
+    .urc-tabs-content {
         width: 100%;
         max-width: 100%;
         min-width: 0;
         box-sizing: border-box;
     }
 
-    .uni-tabs-header {
+    .urc-tabs-header {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -2796,93 +2798,93 @@
         gap: 10px;
     }
 
-    .uni-tabs-header::-webkit-scrollbar {
+    .urc-tabs-header::-webkit-scrollbar {
         display: none;
     }
 
-    .uni-tab-btn {
+    .urc-tab-btn {
         width: auto;
         text-align: center;
         padding: 12px 20px;
         flex-shrink: 0;
     }
 
-    .uni-tab-dest-image {
+    .urc-tab-dest-image {
         min-height: 260px;
     }
 
-    .uni-tab-dest-image .uni-placeholder {
+    .urc-tab-dest-image .urc-placeholder {
         min-height: 260px;
     }
 
-    .uni-tab-dest-image .uni-dest-card-overlay {
+    .urc-tab-dest-image .urc-dest-card-overlay {
         background: linear-gradient(to bottom, transparent 40%, rgba(24, 44, 73, 0.85) 100%);
     }
 
-    .uni-tab-dest-content {
+    .urc-tab-dest-content {
         padding: 28px 0;
     }
 
-    .uni-tab-dest-title {
+    .urc-tab-dest-title {
         font-size: 24px;
     }
 
-    .uni-compare-grid {
+    .urc-compare-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .uni-who-grid {
+    .urc-who-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .uni-included-grid {
+    .urc-included-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .uni-booking-grid {
+    .urc-booking-grid {
         grid-template-columns: 1fr;
     }
 
-    .uni-dining-grid {
+    .urc-dining-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
-    .uni-dining-image-col .uni-image-frame {
+    .urc-dining-image-col .urc-image-frame {
         height: 320px;
     }
 
-    .uni-dining-points {
+    .urc-dining-points {
         grid-template-columns: 1fr;
     }
 
-    .uni-dining-heading {
+    .urc-dining-heading {
         font-size: 32px;
     }
 
-    .uni-cta-title {
+    .urc-cta-title {
         font-size: 36px;
     }
 
-    .uni-cta-considerations-list {
+    .urc-cta-considerations-list {
         grid-template-columns: 1fr;
     }
 
-    .uni-besttime-grid {
+    .urc-besttime-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .uni-compare-col-feature {
+    .urc-compare-col-feature {
         flex: 0 0 160px;
         font-size: 13.5px;
     }
 
-    .uni-compare-col-uni,
-    .uni-compare-col-typical {
+    .urc-compare-col-uni,
+    .urc-compare-col-typical {
         font-size: 13.5px;
     }
 
-    .uni-compare-row {
+    .urc-compare-row {
         padding: 12px 18px;
         gap: 14px;
     }
@@ -2894,298 +2896,298 @@
 
 @media (max-width: 767px) {
 
-    .uni-intro-section,
-    .uni-why-section,
-    .uni-destinations-section,
-    .uni-ships-section,
-    .uni-suites-section,
-    .uni-included-section,
-    .uni-experience-section,
-    .uni-service-section,
-    .uni-who-section,
-    .uni-compare-section,
-    .uni-worth-section,
-    .uni-review-section,
-    .uni-booking-section,
-    .uni-faq-section {
+    .urc-intro-section,
+    .urc-why-section,
+    .urc-destinations-section,
+    .urc-ships-section,
+    .urc-suites-section,
+    .urc-included-section,
+    .urc-experience-section,
+    .urc-service-section,
+    .urc-who-section,
+    .urc-compare-section,
+    .urc-worth-section,
+    .urc-review-section,
+    .urc-booking-section,
+    .urc-faq-section {
         padding: 48px 16px;
     }
 
-    .uni-dining-section {
+    .urc-dining-section {
         padding: 56px 16px;
     }
 
-    .uni-dining-image-col .uni-image-frame {
+    .urc-dining-image-col .urc-image-frame {
         height: 240px;
     }
 
-    .uni-hero-section {
+    .urc-hero-section {
         height: 100vh;
         min-height: 480px;
     }
 
-    .uni-hero-main-title {
+    .urc-hero-main-title {
         font-size: 30px;
     }
 
-    .uni-hero-subtitle-text {
+    .urc-hero-subtitle-text {
         font-size: 15px;
     }
 
-    .uni-hero-eyebrow-tag {
+    .urc-hero-eyebrow-tag {
         font-size: 10px;
         padding: 6px 14px;
     }
 
-    .uni-ships-intro {
+    .urc-ships-intro {
         white-space: normal;
     }
 
-    .uni-section-heading {
+    .urc-section-heading {
         font-size: 26px;
     }
 
-    .uni-why-list {
+    .urc-why-list {
         grid-template-columns: 1fr;
     }
 
-    .uni-why-image-col .uni-image-frame {
+    .urc-why-image-col .urc-image-frame {
         height: 240px;
     }
 
-    .uni-destinations-grid {
+    .urc-destinations-grid {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
 
-    .uni-destination-card {
+    .urc-destination-card {
         padding: 14px 16px;
         font-size: 14px;
     }
 
-    .uni-destinations-footer {
+    .urc-destinations-footer {
         padding: 22px 18px;
     }
 
-    .uni-destinations-footer p {
+    .urc-destinations-footer p {
         font-size: 16px;
         line-height: 1.7;
     }
 
-    .uni-fleet-image-col .uni-image-frame {
+    .urc-fleet-image-col .urc-image-frame {
         height: 220px;
     }
 
-    .uni-ships-highlights {
+    .urc-ships-highlights {
         gap: 8px;
     }
 
-    .uni-highlight-item {
+    .urc-highlight-item {
         font-size: 14px;
         padding: 10px 14px;
     }
 
-    .uni-stateroom-row {
+    .urc-stateroom-row {
         gap: 8px;
     }
 
-    .uni-stateroom-pill {
+    .urc-stateroom-pill {
         font-size: 12.5px;
         padding: 8px 14px;
     }
 
-    .uni-suites-image-col .uni-image-frame {
+    .urc-suites-image-col .urc-image-frame {
         height: 240px;
     }
 
-    .uni-suites-features-grid {
+    .urc-suites-features-grid {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
-    .uni-feature-card {
+    .urc-feature-card {
         padding: 14px 8px;
         font-size: 12px;
     }
 
-    .uni-dining-heading {
+    .urc-dining-heading {
         font-size: 26px;
     }
 
-    .uni-dining-note {
+    .urc-dining-note {
         font-size: 15px;
     }
 
-    .uni-dining-points {
+    .urc-dining-points {
         gap: 10px;
     }
 
-    .uni-included-grid {
+    .urc-included-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
-    .uni-included-card {
+    .urc-included-card {
         padding: 22px 14px;
     }
 
-    .uni-service-image-col .uni-image-frame {
+    .urc-service-image-col .urc-image-frame {
         height: 240px;
     }
 
-    .uni-service-pillars {
+    .urc-service-pillars {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .uni-who-grid {
+    .urc-who-grid {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .uni-compare-grid {
+    .urc-compare-grid {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .uni-worth-list {
+    .urc-worth-list {
         gap: 8px;
     }
 
-    .uni-worth-item {
+    .urc-worth-item {
         padding: 10px 14px;
         font-size: 14px;
     }
 
-    .uni-review-grid {
+    .urc-review-grid {
         grid-template-columns: 1fr;
         gap: 18px;
     }
 
-    .uni-review-card {
+    .urc-review-card {
         padding: 22px;
     }
 
-    .uni-booking-grid {
+    .urc-booking-grid {
         gap: 10px;
     }
 
-    .uni-booking-card {
+    .urc-booking-card {
         padding: 14px 16px;
         font-size: 14px;
     }
 
-    .uni-faq-question-row {
+    .urc-faq-question-row {
         font-size: 14.5px;
     }
 
-    .uni-faq-item {
+    .urc-faq-item {
         padding: 16px 18px;
     }
 
-    .uni-cta-section {
+    .urc-cta-section {
         padding: 56px 16px;
     }
 
-    .uni-cta-title {
+    .urc-cta-title {
         font-size: 28px;
     }
 
-    .uni-cta-considerations-box {
+    .urc-cta-considerations-box {
         padding: 22px 20px;
     }
 
-    .uni-cta-actions {
+    .urc-cta-actions {
         flex-direction: column;
         gap: 12px;
     }
 
-    .uni-cta-primary-btn,
-    .uni-secondary-outline-button {
+    .urc-cta-primary-btn,
+    .urc-secondary-outline-button {
         width: 100%;
         justify-content: center;
     }
 
-    .uni-tab-dest-content {
+    .urc-tab-dest-content {
         padding: 20px 18px 24px;
     }
 
-    .uni-tab-dest-title {
+    .urc-tab-dest-title {
         font-size: 22px;
         margin-bottom: 10px;
     }
 
-    .uni-tab-dest-desc {
+    .urc-tab-dest-desc {
         font-size: 14px;
         margin-bottom: 20px;
     }
 
-    .uni-tab-dest-details {
+    .urc-tab-dest-details {
         gap: 12px;
         margin-bottom: 24px;
     }
 
-    .uni-tab-detail-item {
+    .urc-tab-detail-item {
         font-size: 13.5px;
         gap: 10px;
     }
 
-    .uni-tab-dest-cta {
+    .urc-tab-dest-cta {
         width: 100%;
         justify-content: center;
         padding: 12px 24px;
     }
 
-    .uni-besttime-grid {
+    .urc-besttime-grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .uni-besttime-card {
+    .urc-besttime-card {
         padding: 18px 18px;
     }
 
-    .uni-besttime-footer {
+    .urc-besttime-footer {
         flex-direction: column;
         gap: 10px;
         padding: 16px 20px;
     }
 
-    .uni-compare-table {
+    .urc-compare-table {
         overflow-x: auto;
     }
 
-    .uni-compare-row {
+    .urc-compare-row {
         min-width: 520px;
         padding: 12px 16px;
         gap: 12px;
     }
 
-    .uni-compare-col-feature {
+    .urc-compare-col-feature {
         flex: 0 0 140px;
         font-size: 13px;
     }
 
-    .uni-compare-col-uni,
-    .uni-compare-col-typical {
+    .urc-compare-col-uni,
+    .urc-compare-col-typical {
         font-size: 13px;
     }
 
-    .uni-compare-head span {
+    .urc-compare-head span {
         font-size: 11px;
     }
 
-    .uni-takeaway-grid,
-    .uni-takeaway-grid-center {
+    .urc-takeaway-grid,
+    .urc-takeaway-grid-center {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .uni-takeaway-card {
+    .urc-takeaway-card {
         padding: 14px 16px;
     }
 
-    .uni-takeaway-label {
+    .urc-takeaway-label {
         font-size: 13px;
     }
 }
@@ -3196,91 +3198,91 @@
 
 @media (max-width: 480px) {
 
-    .uni-hero-main-title {
+    .urc-hero-main-title {
         font-size: 24px;
     }
 
-    .uni-hero-subtitle-text {
+    .urc-hero-subtitle-text {
         font-size: 13px;
     }
 
-    .uni-section-heading {
+    .urc-section-heading {
         font-size: 22px !important;
     }
 
-    .uni-dining-heading {
+    .urc-dining-heading {
         font-size: 22px !important;
     }
 
-    .uni-cta-title {
+    .urc-cta-title {
         font-size: 22px !important;
     }
 
-    .uni-destinations-grid {
+    .urc-destinations-grid {
         grid-template-columns: 1fr !important;
     }
 
-    .uni-included-grid {
+    .urc-included-grid {
         grid-template-columns: 1fr !important;
         gap: 10px !important;
     }
 
-    .uni-included-card {
+    .urc-included-card {
         padding: 18px 14px !important;
     }
 
-    .uni-suites-features-grid {
+    .urc-suites-features-grid {
         grid-template-columns: 1fr 1fr !important;
     }
 
-    .uni-compare-grid {
+    .urc-compare-grid {
         grid-template-columns: 1fr !important;
     }
 
-    .uni-who-grid {
+    .urc-who-grid {
         grid-template-columns: 1fr !important;
     }
 
-    .uni-service-pillars {
+    .urc-service-pillars {
         grid-template-columns: 1fr !important;
     }
 
-    .uni-intro-section,
-    .uni-why-section,
-    .uni-destinations-section,
-    .uni-ships-section,
-    .uni-suites-section,
-    .uni-included-section,
-    .uni-experience-section,
-    .uni-service-section,
-    .uni-who-section,
-    .uni-compare-section,
-    .uni-worth-section,
-    .uni-review-section,
-    .uni-booking-section,
-    .uni-faq-section,
-    .uni-besttime-section,
-    .uni-takeaway-section {
+    .urc-intro-section,
+    .urc-why-section,
+    .urc-destinations-section,
+    .urc-ships-section,
+    .urc-suites-section,
+    .urc-included-section,
+    .urc-experience-section,
+    .urc-service-section,
+    .urc-who-section,
+    .urc-compare-section,
+    .urc-worth-section,
+    .urc-review-section,
+    .urc-booking-section,
+    .urc-faq-section,
+    .urc-besttime-section,
+    .urc-takeaway-section {
         padding: 40px 12px !important;
     }
 
-    .uni-cta-considerations-box {
+    .urc-cta-considerations-box {
         padding: 18px 14px !important;
     }
 
-    .uni-tab-dest-content {
+    .urc-tab-dest-content {
         padding: 16px 14px 20px;
     }
 
-    .uni-tab-dest-title {
+    .urc-tab-dest-title {
         font-size: 20px;
     }
 
-    .uni-tab-dest-desc {
+    .urc-tab-dest-desc {
         font-size: 13px;
     }
 
-    .uni-tab-detail-item {
+    .urc-tab-detail-item {
         font-size: 12.5px;
     }
 }

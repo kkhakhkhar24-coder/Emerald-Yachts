@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 import { Link } from 'react-router'
 import { Compass, ArrowRight } from 'lucide-react'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 function UniworldDressCodePacking() {
 
@@ -558,6 +559,55 @@ function UniworldDressCodePacking() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="udc-expert-insight-section">
+                <div className="udc-expert-insight-container">
+
+                    <div className="udc-expert-portrait-panel">
+                        <div className="udc-expert-img-container">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - River Cruise Packing Expert" />
+                        </div>
+                        <div className="udc-expert-stats-strip">
+                            <div className="udc-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div className="udc-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Visited</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="udc-expert-content-panel">
+                        <span className="udc-eyebrow">MEET THE CEO</span>
+                        <h2 className="udc-section-heading">Insight from Angela Hughes</h2>
+                        <div className="udc-heading-separator"></div>
+
+                        <p className="udc-expert-quote">
+                            "Packing for a luxury river cruise is all about layer versatility. Because Uniworld has a relaxed, country-club casual elegance onboard, you can focus on lightweight packing with smart options for evening dining and regional tours, without the burden of heavy formalwear."
+                        </p>
+
+                        <div className="udc-expert-priorities">
+                            <h5>Packing &amp; Dress Code Matrix:</h5>
+                            <div className="udc-expert-pills">
+                                {['Smart Casual Focus', 'Daytime Versatile Layers', 'Sturdy Excursion Footwear', 'Rain &amp; Wind Outerwear', 'Respectful Temple/Church Wear', 'Onboard Laundry Access'].map(pill => (
+                                    <span key={pill} className="udc-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="udc-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers pack smart for rivers around the world, ensuring they meet onboard dress codes while staying perfectly comfortable on excursions.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

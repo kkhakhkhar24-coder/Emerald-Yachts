@@ -248,18 +248,18 @@ const schema = {
 }
 
 function UniWorldShipsSuites() {
-    const [uniCurrentHero, setUniCurrentHero] = useState(0)
-    const uniHeroImages = [1, 2, 3]
+    const [ussCurrentHero, setUssCurrentHero] = useState(0)
+    const ussHeroImages = [1, 2, 3]
 
     useEffect(() => {
-        const uniTimer = setInterval(() => {
-            setUniCurrentHero(prev => (prev + 1) % uniHeroImages.length)
+        const ussTimer = setInterval(() => {
+            setUssCurrentHero(prev => (prev + 1) % ussHeroImages.length)
         }, 5000)
-        return () => clearInterval(uniTimer)
-    }, [uniHeroImages.length])
+        return () => clearInterval(ussTimer)
+    }, [ussHeroImages.length])
 
-    const [uniActiveFaq, setUniActiveFaq] = useState(null)
-    const uniToggleFaq = i => setUniActiveFaq(uniActiveFaq === i ? null : i)
+    const [ussActiveFaq, setUssActiveFaq] = useState(null)
+    const ussToggleFaq = i => setUssActiveFaq(ussActiveFaq === i ? null : i)
 
     return (
         <>
@@ -275,64 +275,64 @@ function UniWorldShipsSuites() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="uni-hero-section">
-                {uniHeroImages.map((num, idx) => (
+            <section className="uss-hero-section">
+                {ussHeroImages.map((num, idx) => (
                     <div
                         key={idx}
-                        className={`uni-hero-background uni-hero-placeholder-bg ${uniCurrentHero === idx ? 'uni-active' : ''}`}
+                        className={`uss-hero-background uni-hero-placeholder-bg ${ussCurrentHero === idx ? 'uni-active' : ''}`}
                     >
-                        <div className="uni-hero-placeholder-overlay">
-                            <Image size={40} className="uni-placeholder-icon" />
+                        <div className="uss-hero-placeholder-overlay">
+                            <Image size={40} className="uss-placeholder-icon" />
                             <span>Uniworld River Cruise Scene {num}</span>
                         </div>
                     </div>
                 ))}
-                <div className="uni-hero-overlay-layer"></div>
-                <div className="uni-hero-content-wrapper">
-                    <div className="uni-hero-eyebrow-tag">
+                <div className="uss-hero-overlay-layer"></div>
+                <div className="uss-hero-content-wrapper">
+                    <div className="uss-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Uniworld Boutique River Cruises · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="uni-hero-main-title">
+                    <h1 className="uss-hero-main-title">
                         Uniworld Ships &amp; Suites: Complete Guide
                     </h1>
-                    <p className="uni-hero-subtitle-text">
+                    <p className="uss-hero-subtitle-text">
                         Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin.
                     </p>
                 </div>
             </section>
 
             {/* ── INTRO ── */}
-            <section className="uni-intro-section">
-                <div className="uni-intro-container">
-                    <div className="uni-intro-grid">
+            <section className="uss-intro-section">
+                <div className="uss-intro-container">
+                    <div className="uss-intro-grid">
 
-                        <div className="uni-intro-text-col">
-                            <span className="uni-eyebrow">A BOUTIQUE HOTEL ON THE WATER</span>
-                            <h2 className="uni-section-heading">Uniworld Ships and Suites: Complete Guide</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-intro-lead">Uniworld Boutique River Cruises is renowned for combining luxury hospitality with intimate river cruising.</p>
-                            <p className="uni-intro-body">Unlike many cruise lines that use standardized ship designs, each Uniworld vessel features its own distinctive décor, inspired by the destinations it sails. From elegant staterooms to lavish suites with butler service, every accommodation is designed to deliver a boutique hotel experience on the water.</p>
-                            <p className="uni-intro-body">Whether you're deciding which ship to book or choosing between a classic stateroom and a luxury suite, this guide explains everything you need to know about the Uniworld fleet, cabin categories, onboard amenities, and how to select the best accommodation for your travel style.</p>
+                        <div className="uss-intro-text-col">
+                            <span className="uss-eyebrow">A BOUTIQUE HOTEL ON THE WATER</span>
+                            <h2 className="uss-section-heading">Uniworld Ships and Suites: Complete Guide</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-intro-lead">Uniworld Boutique River Cruises is renowned for combining luxury hospitality with intimate river cruising.</p>
+                            <p className="uss-intro-body">Unlike many cruise lines that use standardized ship designs, each Uniworld vessel features its own distinctive décor, inspired by the destinations it sails. From elegant staterooms to lavish suites with butler service, every accommodation is designed to deliver a boutique hotel experience on the water.</p>
+                            <p className="uss-intro-body">Whether you're deciding which ship to book or choosing between a classic stateroom and a luxury suite, this guide explains everything you need to know about the Uniworld fleet, cabin categories, onboard amenities, and how to select the best accommodation for your travel style.</p>
                         </div>
 
-                        <div className="uni-intro-image-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+                        <div className="uss-intro-image-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Uniworld Ship Exterior</span>
                                 </div>
-                                <div className="uni-frame-overlay"></div>
-                                <div className="uni-image-badge">
+                                <div className="uss-frame-overlay"></div>
+                                <div className="uss-image-badge">
                                     <Gem size={13} />
                                     <span>Boutique River Cruising, Reimagined</span>
                                 </div>
                             </div>
-                            <div className="uni-statement-box">
-                                <div className="uni-statement-accent"></div>
-                                <div className="uni-statement-text">
-                                    <p className="uni-statement-primary">Design matters on a boutique river ship.</p>
-                                    <p className="uni-statement-bold">No two Uniworld ships are identical.</p>
+                            <div className="uss-statement-box">
+                                <div className="uss-statement-accent"></div>
+                                <div className="uss-statement-text">
+                                    <p className="uss-statement-primary">Design matters on a boutique river ship.</p>
+                                    <p className="uss-statement-bold">No two Uniworld ships are identical.</p>
                                 </div>
                             </div>
                         </div>
@@ -341,54 +341,54 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── FLEET ── */}
-            <section className="uni-fleet-section">
-                <div className="uni-fleet-container">
-                    <div className="uni-fleet-header">
-                        <span className="uni-eyebrow">THE FLEET</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Explore the Uniworld Fleet</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
-                        <p className="uni-fleet-intro">Uniworld operates a collection of boutique river ships across Europe, Egypt, India, and select international destinations. Most vessels accommodate between <strong>120 and 160 guests</strong>, creating a relaxed atmosphere with personalized service.</p>
+            <section className="uss-fleet-section">
+                <div className="uss-fleet-container">
+                    <div className="uss-fleet-header">
+                        <span className="uss-eyebrow">THE FLEET</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Explore the Uniworld Fleet</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
+                        <p className="uss-fleet-intro">Uniworld operates a collection of boutique river ships across Europe, Egypt, India, and select international destinations. Most vessels accommodate between <strong>120 and 160 guests</strong>, creating a relaxed atmosphere with personalized service.</p>
                     </div>
-                    <div className="uni-fleet-stats-bar">
-                        <div className="uni-fleet-stat">
-                            <span className="uni-fleet-stat-num">10+</span>
-                            <span className="uni-fleet-stat-label">Signature Ships</span>
+                    <div className="uss-fleet-stats-bar">
+                        <div className="uss-fleet-stat">
+                            <span className="uss-fleet-stat-num">10+</span>
+                            <span className="uss-fleet-stat-label">Signature Ships</span>
                         </div>
-                        <div className="uni-fleet-stat-divider"></div>
-                        <div className="uni-fleet-stat">
-                            <span className="uni-fleet-stat-num">120–160</span>
-                            <span className="uni-fleet-stat-label">Guests Per Ship</span>
+                        <div className="uss-fleet-stat-divider"></div>
+                        <div className="uss-fleet-stat">
+                            <span className="uss-fleet-stat-num">120–160</span>
+                            <span className="uss-fleet-stat-label">Guests Per Ship</span>
                         </div>
-                        <div className="uni-fleet-stat-divider"></div>
-                        <div className="uni-fleet-stat">
-                            <span className="uni-fleet-stat-num">5+</span>
-                            <span className="uni-fleet-stat-label">Regions Worldwide</span>
+                        <div className="uss-fleet-stat-divider"></div>
+                        <div className="uss-fleet-stat">
+                            <span className="uss-fleet-stat-num">5+</span>
+                            <span className="uss-fleet-stat-label">Regions Worldwide</span>
                         </div>
-                        <div className="uni-fleet-stat-divider"></div>
-                        <div className="uni-fleet-stat">
-                            <span className="uni-fleet-stat-num">100%</span>
-                            <span className="uni-fleet-stat-label">Boutique Design</span>
+                        <div className="uss-fleet-stat-divider"></div>
+                        <div className="uss-fleet-stat">
+                            <span className="uss-fleet-stat-num">100%</span>
+                            <span className="uss-fleet-stat-label">Boutique Design</span>
                         </div>
                     </div>
-                    <div className="uni-fleet-super-badge">
+                    <div className="uss-fleet-super-badge">
                         <Ship size={17} />
                         <strong>Signature Super Ships</strong>
                         <span>Several vessels belong to Uniworld&apos;s &ldquo;Super Ship&rdquo; collection, offering upgraded interiors and modern amenities.</span>
                     </div>
-                    <div className="uni-fleet-cards-grid">
+                    <div className="uss-fleet-cards-grid">
                         {fleet.map(({ ship, region }, idx) => (
-                            <div key={ship} className="uni-fleet-card">
-                                <div className="uni-fleet-card-index">0{idx + 1}</div>
-                                <div className="uni-fleet-card-icon"><Ship size={20} /></div>
-                                <h3 className="uni-fleet-card-name">{ship}</h3>
-                                <div className="uni-fleet-card-region">
+                            <div key={ship} className="uss-fleet-card">
+                                <div className="uss-fleet-card-index">0{idx + 1}</div>
+                                <div className="uss-fleet-card-icon"><Ship size={20} /></div>
+                                <h3 className="uss-fleet-card-name">{ship}</h3>
+                                <div className="uss-fleet-card-region">
                                     <MapPin size={12} />
                                     <span>{region}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className="uni-fleet-footer-note">
+                    <div className="uss-fleet-footer-note">
                         <Compass size={16} />
                         <span>Each vessel reflects regional architecture, art, and culture — ensuring no two ships feel alike.</span>
                     </div>
@@ -396,39 +396,39 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── BOUTIQUE DESIGN ── */}
-            <section className="uni-boutique-section">
-                <div className="uni-boutique-container">
-                    <div className="uni-boutique-grid">
+            <section className="uss-boutique-section">
+                <div className="uss-boutique-container">
+                    <div className="uss-boutique-grid">
 
-                        <div className="uni-boutique-text-col">
-                            <span className="uni-eyebrow">SIGNATURE DESIGN</span>
-                            <h2 className="uni-section-heading">Boutique Design Sets Every Ship Apart</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-boutique-lead">One of Uniworld's defining features is its commitment to unique interior design.</p>
+                        <div className="uss-boutique-text-col">
+                            <span className="uss-eyebrow">SIGNATURE DESIGN</span>
+                            <h2 className="uss-section-heading">Boutique Design Sets Every Ship Apart</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-boutique-lead">One of Uniworld's defining features is its commitment to unique interior design.</p>
 
-                            <div className="uni-boutique-pills">
+                            <div className="uss-boutique-pills">
                                 {boutiqueItems.map((item, idx) => (
-                                    <div key={idx} className="uni-boutique-pill">
+                                    <div key={idx} className="uss-boutique-pill">
                                         <CheckCircle size={16} />
                                         <span>{item}</span>
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="uni-boutique-conclusion-box">
+                            <div className="uss-boutique-conclusion-box">
                                 <p>Instead of mass-produced interiors, each ship is curated to create an immersive luxury environment.</p>
                             </div>
                         </div>
 
-                        <div className="uni-boutique-image-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+                        <div className="uss-boutique-image-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Boutique Lounge Interior</span>
                                 </div>
-                                <div className="uni-frame-overlay"></div>
+                                <div className="uss-frame-overlay"></div>
                             </div>
-                            <div className="uni-boutique-icon-box">
+                            <div className="uss-boutique-icon-box">
                                 <Sparkles size={22} />
                                 <p>Distinctive décor inspired by each destination.</p>
                             </div>
@@ -439,29 +439,29 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── STATEROOM CATEGORIES ── */}
-            <section className="uni-cabins-section">
-                <div className="uni-cabins-container">
-                    <div className="uni-cabins-header">
-                        <span className="uni-eyebrow">ROOM CATEGORIES</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Understanding Stateroom Categories</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-cabins-section">
+                <div className="uss-cabins-container">
+                    <div className="uss-cabins-header">
+                        <span className="uss-eyebrow">ROOM CATEGORIES</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Understanding Stateroom Categories</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-cabins-grid">
+                    <div className="uss-cabins-grid">
                         {cabinSections.map(({ id, Icon, title, body, items, note }) => (
-                            <article key={id} className="uni-cabin-card">
-                                <div className="uni-cabin-card-icon"><Icon size={22} /></div>
-                                <h3 className="uni-cabin-card-title">{title}</h3>
-                                <p className="uni-cabin-card-body">{body}</p>
-                                <ul className="uni-cabin-card-list">
+                            <article key={id} className="uss-cabin-card">
+                                <div className="uss-cabin-card-icon"><Icon size={22} /></div>
+                                <h3 className="uss-cabin-card-title">{title}</h3>
+                                <p className="uss-cabin-card-body">{body}</p>
+                                <ul className="uss-cabin-card-list">
                                     {items.map((item, iIdx) => (
                                         <li key={iIdx}>
-                                            <ChevronRight size={13} className="uni-cabin-chevron" />
+                                            <ChevronRight size={13} className="uss-cabin-chevron" />
                                             <span>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
-                                {note && <p className="uni-cabin-card-note">{note}</p>}
+                                {note && <p className="uss-cabin-card-note">{note}</p>}
                             </article>
                         ))}
                     </div>
@@ -469,18 +469,18 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── LUXURY SUITES ── */}
-            <section className="uni-suites-section">
-                <div className="uni-suites-container">
-                    <div className="uni-suites-grid">
+            <section className="uss-suites-section">
+                <div className="uss-suites-container">
+                    <div className="uss-suites-grid">
 
-                        <div className="uni-suites-text-col">
-                            <span className="uni-eyebrow">TOP-TIER ACCOMMODATION</span>
-                            <h2 className="uni-section-heading">Luxury Suites</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-suites-lead">Suites represent the highest level of onboard accommodation.</p>
-                            <p className="uni-suites-body">Depending on the ship, guests may enjoy:</p>
+                        <div className="uss-suites-text-col">
+                            <span className="uss-eyebrow">TOP-TIER ACCOMMODATION</span>
+                            <h2 className="uss-section-heading">Luxury Suites</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-suites-lead">Suites represent the highest level of onboard accommodation.</p>
+                            <p className="uss-suites-body">Depending on the ship, guests may enjoy:</p>
 
-                            <ul className="uni-suites-list">
+                            <ul className="uss-suites-list">
                                 {suiteItems.map((item, idx) => (
                                     <li key={idx}>
                                         <CheckCircle size={15} />
@@ -489,18 +489,18 @@ function UniWorldShipsSuites() {
                                 ))}
                             </ul>
 
-                            <p className="uni-suites-body">Many suites feature elegant furnishings comparable to luxury boutique hotels.</p>
+                            <p className="uss-suites-body">Many suites feature elegant furnishings comparable to luxury boutique hotels.</p>
                         </div>
 
-                        <div className="uni-suites-side-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+                        <div className="uss-suites-side-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Luxury Suite Layout</span>
                                 </div>
-                                <div className="uni-frame-overlay"></div>
+                                <div className="uss-frame-overlay"></div>
                             </div>
-                            <div className="uni-navy-callout">
+                            <div className="uss-navy-callout">
                                 <Crown size={26} />
                                 <h3>Luxury, tailored to you</h3>
                                 <p>Suite categories vary by vessel, so compare the deck plan and included services before upgrading.</p>
@@ -512,41 +512,41 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── BUTLER SERVICE ── */}
-            <section className="uni-butler-section">
-                <div className="uni-butler-container">
-                    <div className="uni-butler-side-by-side">
-                        <div className="uni-butler-image-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+            <section className="uss-butler-section">
+                <div className="uss-butler-container">
+                    <div className="uss-butler-side-by-side">
+                        <div className="uss-butler-image-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Personalized Butler Service</span>
                                 </div>
-                                <div className="uni-frame-overlay"></div>
-                                <div className="uni-butler-img-badge">
+                                <div className="uss-frame-overlay"></div>
+                                <div className="uss-butler-img-badge">
                                     <ConciergeBell size={13} />
                                     <span>Personalized Suite Service</span>
                                 </div>
                             </div>
-                            <div className="uni-butler-distinction-strip">
-                                <div className="uni-butler-distinction-icon"><Crown size={22} /></div>
-                                <div className="uni-butler-distinction-text">
+                            <div className="uss-butler-distinction-strip">
+                                <div className="uss-butler-distinction-icon"><Crown size={22} /></div>
+                                <div className="uss-butler-distinction-text">
                                     <strong>What sets Uniworld apart</strong>
                                     <span>Personalized butler service in qualifying suites creates a truly bespoke experience — confirm your suite category and exact service inclusions when booking.</span>
                                 </div>
                             </div>
                         </div>
-                        <div className="uni-butler-content-col">
-                            <span className="uni-eyebrow uni-eyebrow-light">PERSONALIZED SERVICE</span>
-                            <h2 className="uni-section-heading uni-white-heading">Butler Service Explained</h2>
-                            <div className="uni-heading-separator-bar uni-separator-white"></div>
-                            <p className="uni-butler-intro">One of Uniworld&apos;s signature luxury benefits is butler service for qualifying suites. This level of personalized attention distinguishes Uniworld from many premium river cruise lines.</p>
-                            <div className="uni-butler-cards-grid">
+                        <div className="uss-butler-content-col">
+                            <span className="uss-eyebrow uss-eyebrow-light">PERSONALIZED SERVICE</span>
+                            <h2 className="uss-section-heading uss-white-heading">Butler Service Explained</h2>
+                            <div className="uss-heading-separator-bar uss-separator-white"></div>
+                            <p className="uss-butler-intro">One of Uniworld&apos;s signature luxury benefits is butler service for qualifying suites. This level of personalized attention distinguishes Uniworld from many premium river cruise lines.</p>
+                            <div className="uss-butler-cards-grid">
                                 {butlerItems.map((item, idx) => (
-                                    <div key={idx} className="uni-butler-card">
-                                        <div className="uni-butler-card-icon">
+                                    <div key={idx} className="uss-butler-card">
+                                        <div className="uss-butler-card-icon">
                                             <ConciergeBell size={18} />
                                         </div>
-                                        <p className="uni-butler-card-text">{item}</p>
+                                        <p className="uss-butler-card-text">{item}</p>
                                     </div>
                                 ))}
                             </div>
@@ -556,41 +556,41 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── ONBOARD AMENITIES ── */}
-            <section className="uni-amenities-section">
-                <div className="uni-amenities-container">
-                    <div className="uni-amenities-header">
-                        <span className="uni-eyebrow">INCLUDED ON BOARD</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Onboard Amenities Available to Every Guest</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-amenities-section">
+                <div className="uss-amenities-container">
+                    <div className="uss-amenities-header">
+                        <span className="uss-eyebrow">INCLUDED ON BOARD</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Onboard Amenities Available to Every Guest</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-amenities-grid">
+                    <div className="uss-amenities-grid">
                         {amenityItems.map(({ label, Icon }, idx) => (
-                            <div key={label} className="uni-amenity-card">
-                                <div className="uni-amenity-num">0{idx + 1}</div>
-                                <div className="uni-amenity-icon"><Icon size={22} /></div>
-                                <h3 className="uni-amenity-label">{label}</h3>
+                            <div key={label} className="uss-amenity-card">
+                                <div className="uss-amenity-num">0{idx + 1}</div>
+                                <div className="uss-amenity-icon"><Icon size={22} /></div>
+                                <h3 className="uss-amenity-label">{label}</h3>
                             </div>
                         ))}
                     </div>
 
-                    <div className="uni-amenities-footer">
+                    <div className="uss-amenities-footer">
                         <p>Many ships also feature unique lounges inspired by the destinations they visit.</p>
                     </div>
                 </div>
             </section>
 
             {/* ── CABIN COMPARISON ── */}
-            <section className="uni-compare-section">
-                <div className="uni-compare-container">
-                    <div className="uni-compare-header">
-                        <span className="uni-eyebrow">AT A GLANCE</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Comparing Cabin Categories</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-compare-section">
+                <div className="uss-compare-container">
+                    <div className="uss-compare-header">
+                        <span className="uss-eyebrow">AT A GLANCE</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Comparing Cabin Categories</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-compare-table-wrap">
-                        <table className="uni-table uni-comparison-table">
+                    <div className="uss-compare-table-wrap">
+                        <table className="uss-table uni-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
@@ -613,21 +613,21 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── CHOOSING THE BEST CABIN ── */}
-            <section className="uni-choose-section">
-                <div className="uni-choose-container">
-                    <div className="uni-choose-header">
-                        <span className="uni-eyebrow uni-eyebrow-light">BOOKING GUIDANCE</span>
-                        <h2 className="uni-section-heading uni-white-heading" style={{ textAlign: 'center' }}>Choosing the Best Cabin</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered uni-separator-white"></div>
+            <section className="uss-choose-section">
+                <div className="uss-choose-container">
+                    <div className="uss-choose-header">
+                        <span className="uss-eyebrow uss-eyebrow-light">BOOKING GUIDANCE</span>
+                        <h2 className="uss-section-heading uss-white-heading" style={{ textAlign: 'center' }}>Choosing the Best Cabin</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered uss-separator-white"></div>
                     </div>
 
-                    <div className="uni-choose-grid">
+                    <div className="uss-choose-grid">
                         {chooseBlocks.map(({ Icon, label, title, intro, items }, idx) => (
-                            <article key={idx} className="uni-choose-card">
-                                <div className="uni-choose-label"><Icon size={13} /> <span>{label}</span></div>
-                                <h3 className="uni-choose-title">{title}</h3>
-                                <p className="uni-choose-intro">{intro}</p>
-                                <ul className="uni-choose-list">
+                            <article key={idx} className="uss-choose-card">
+                                <div className="uss-choose-label"><Icon size={13} /> <span>{label}</span></div>
+                                <h3 className="uss-choose-title">{title}</h3>
+                                <p className="uss-choose-intro">{intro}</p>
+                                <ul className="uss-choose-list">
                                     {items.map((item, iIdx) => (
                                         <li key={iIdx}>
                                             <CheckCircle size={14} />
@@ -639,45 +639,45 @@ function UniWorldShipsSuites() {
                         ))}
                     </div>
 
-                    <div className="uni-choose-footer">
+                    <div className="uss-choose-footer">
                         <p>Selecting the right category comes down to how you prefer to spend your time on board.</p>
                     </div>
                 </div>
             </section>
 
             {/* ── ACCESSIBILITY ── */}
-            <section className="uni-access-section">
-                <div className="uni-access-container">
-                    <div className="uni-access-grid">
+            <section className="uss-access-section">
+                <div className="uss-access-container">
+                    <div className="uss-access-grid">
 
-                        <div className="uni-access-text-col">
-                            <span className="uni-eyebrow">PLAN AHEAD</span>
-                            <h2 className="uni-section-heading">Accessibility Considerations</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-access-lead">Some Uniworld ships include accessible accommodations designed for guests with mobility needs.</p>
-                            <p className="uni-access-body">Accessibility features may include:</p>
+                        <div className="uss-access-text-col">
+                            <span className="uss-eyebrow">PLAN AHEAD</span>
+                            <h2 className="uss-section-heading">Accessibility Considerations</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-access-lead">Some Uniworld ships include accessible accommodations designed for guests with mobility needs.</p>
+                            <p className="uss-access-body">Accessibility features may include:</p>
 
-                            <div className="uni-access-pillars">
+                            <div className="uss-access-pillars">
                                 {accessibilityItems.map((item, idx) => (
-                                    <div key={idx} className="uni-access-pillar">
-                                        <div className="uni-access-pillar-icon"><CheckCircle size={18} /></div>
+                                    <div key={idx} className="uss-access-pillar">
+                                        <div className="uss-access-pillar-icon"><CheckCircle size={18} /></div>
                                         <span>{item}</span>
                                     </div>
                                 ))}
                             </div>
 
-                            <p className="uni-access-body">Availability varies by ship and itinerary, so early booking is recommended.</p>
+                            <p className="uss-access-body">Availability varies by ship and itinerary, so early booking is recommended.</p>
                         </div>
 
-                        <div className="uni-access-side-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+                        <div className="uss-access-side-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Accessible Room Cabin View</span>
                                 </div>
-                                <div className="uni-frame-overlay"></div>
+                                <div className="uss-frame-overlay"></div>
                             </div>
-                            <div className="uni-access-callout">
+                            <div className="uss-access-callout">
                                 <Accessibility size={28} />
                                 <h3>Ask before booking</h3>
                                 <p>Accessibility can vary by vessel, deck, and itinerary. Confirm the details with your travel advisor.</p>
@@ -689,39 +689,39 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── SHIP AMENITIES ── */}
-            <section className="uni-shipamen-section">
-                <div className="uni-shipamen-container">
-                    <div className="uni-shipamen-grid">
+            <section className="uss-shipamen-section">
+                <div className="uss-shipamen-container">
+                    <div className="uss-shipamen-grid">
 
-                        <div className="uni-shipamen-text-col">
-                            <span className="uni-eyebrow">BEYOND THE CABIN</span>
-                            <h2 className="uni-section-heading">Ship Amenities That Enhance the Experience</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-shipamen-lead">Beyond accommodations, guests benefit from numerous premium services.</p>
+                        <div className="uss-shipamen-text-col">
+                            <span className="uss-eyebrow">BEYOND THE CABIN</span>
+                            <h2 className="uss-section-heading">Ship Amenities That Enhance the Experience</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-shipamen-lead">Beyond accommodations, guests benefit from numerous premium services.</p>
 
-                            <div className="uni-shipamen-pillars">
+                            <div className="uss-shipamen-pillars">
                                 {shipAmenityItems.map((item, idx) => (
-                                    <div key={idx} className="uni-shipamen-pillar">
+                                    <div key={idx} className="uss-shipamen-pillar">
                                         <CheckCircle size={16} />
                                         <span>{item}</span>
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="uni-shipamen-conclusion-box">
+                            <div className="uss-shipamen-conclusion-box">
                                 <p>These amenities contribute to Uniworld's reputation as a luxury all-inclusive river cruise operator.</p>
                             </div>
                         </div>
 
-                        <div className="uni-shipamen-image-col">
-                            <div className="uni-image-frame">
-                                <div className="uni-image-placeholder-box">
-                                    <Image size={32} className="uni-placeholder-icon" />
+                        <div className="uss-shipamen-image-col">
+                            <div className="uss-image-frame">
+                                <div className="uss-image-placeholder-box">
+                                    <Image size={32} className="uss-placeholder-icon" />
                                     <span>Onboard Dining &amp; Lounge Scene</span>
                                 </div>
-                                <div className="uni-frame-overlay uni-overlay-soft"></div>
+                                <div className="uss-frame-overlay uni-overlay-soft"></div>
                             </div>
-                            <div className="uni-shipamen-stat-badge">
+                            <div className="uss-shipamen-stat-badge">
                                 <Star size={15} />
                                 <span>A Luxury All-Inclusive Experience</span>
                             </div>
@@ -732,22 +732,22 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── TIPS ── */}
-            <section className="uni-tips-section">
-                <div className="uni-tips-container">
-                    <div className="uni-tips-grid">
+            <section className="uss-tips-section">
+                <div className="uss-tips-container">
+                    <div className="uss-tips-grid">
 
-                        <div className="uni-tip-index">
-                            <span className="uni-tip-num">01</span>
+                        <div className="uss-tip-index">
+                            <span className="uss-tip-num">01</span>
                             <p>Research the vessel, not just the itinerary.</p>
                         </div>
 
-                        <div className="uni-tips-content">
-                            <span className="uni-eyebrow">BEFORE YOU BOOK</span>
-                            <h2 className="uni-section-heading">Tips for Selecting the Right Ship</h2>
-                            <div className="uni-heading-separator-bar"></div>
-                            <p className="uni-tips-lead">Before booking, consider:</p>
+                        <div className="uss-tips-content">
+                            <span className="uss-eyebrow">BEFORE YOU BOOK</span>
+                            <h2 className="uss-section-heading">Tips for Selecting the Right Ship</h2>
+                            <div className="uss-heading-separator-bar"></div>
+                            <p className="uss-tips-lead">Before booking, consider:</p>
 
-                            <ul className="uni-tips-list">
+                            <ul className="uss-tips-list">
                                 {tipsItems.map((item, idx) => (
                                     <li key={idx}>
                                         <CheckCircle size={15} />
@@ -756,7 +756,7 @@ function UniWorldShipsSuites() {
                                 ))}
                             </ul>
 
-                            <div className="uni-tips-conclusion">
+                            <div className="uss-tips-conclusion">
                                 <p>Because each vessel has a unique design, researching individual ships helps ensure the best experience.</p>
                             </div>
                         </div>
@@ -766,24 +766,24 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── SEMANTIC KEYWORDS ── */}
-            <section className="uni-keywords-section">
-                <div className="uni-keywords-container">
-                    <div className="uni-keywords-header">
-                        <span className="uni-eyebrow">SEO OPTIMIZATION</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Semantic Keywords</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-keywords-section">
+                <div className="uss-keywords-container">
+                    <div className="uss-keywords-header">
+                        <span className="uss-eyebrow">SEO OPTIMIZATION</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Semantic Keywords</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-keyword-chips">
+                    <div className="uss-keyword-chips">
                         {keywordChips.map((chip, idx) => (
-                            <span key={idx} className="uni-keyword-chip">{chip}</span>
+                            <span key={idx} className="uss-keyword-chip">{chip}</span>
                         ))}
                     </div>
 
-                    <div className="uni-eeat-card">
-                        <div className="uni-eeat-icon"><Search size={22} /></div>
-                        <h3 className="uni-eeat-title">EEAT Signals</h3>
-                        <ul className="uni-eeat-list">
+                    <div className="uss-eeat-card">
+                        <div className="uss-eeat-icon"><Search size={22} /></div>
+                        <h3 className="uss-eeat-title">EEAT Signals</h3>
+                        <ul className="uss-eeat-list">
                             {eeatItems.map((item, idx) => (
                                 <li key={idx}>
                                     <CheckCircle size={14} />
@@ -796,16 +796,16 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── INTERNAL LINKING ── */}
-            <section className="uni-linking-section">
-                <div className="uni-linking-container">
-                    <div className="uni-linking-header">
-                        <span className="uni-eyebrow">SEO STRATEGY</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Internal Linking Suggestions</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-linking-section">
+                <div className="uss-linking-container">
+                    <div className="uss-linking-header">
+                        <span className="uss-eyebrow">SEO STRATEGY</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Internal Linking Suggestions</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-linking-table-wrap">
-                        <table className="uni-table">
+                    <div className="uss-linking-table-wrap">
+                        <table className="uss-table">
                             <thead>
                                 <tr>
                                     <th>Suggested Anchor Text</th>
@@ -826,18 +826,18 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── EXTERNAL REFERENCES ── */}
-            <section className="uni-references-section">
-                <div className="uni-references-container">
-                    <div className="uni-references-header">
-                        <span className="uni-eyebrow">TRUSTED RESEARCH</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>External Authority References</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-references-section">
+                <div className="uss-references-container">
+                    <div className="uss-references-header">
+                        <span className="uss-eyebrow">TRUSTED RESEARCH</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>External Authority References</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-references-list">
+                    <div className="uss-references-list">
                         {externalRefs.map((ref, idx) => (
-                            <div key={idx} className="uni-reference-item">
-                                <div className="uni-reference-icon"><Globe size={17} /></div>
+                            <div key={idx} className="uss-reference-item">
+                                <div className="uss-reference-icon"><Globe size={17} /></div>
                                 <span>{ref}</span>
                             </div>
                         ))}
@@ -846,21 +846,21 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── IMAGE RECOMMENDATIONS ── */}
-            <section className="uni-imageplan-section">
-                <div className="uni-imageplan-container">
-                    <div className="uni-imageplan-header">
-                        <span className="uni-eyebrow">CONTENT PRODUCTION</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Image Recommendations</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-imageplan-section">
+                <div className="uss-imageplan-container">
+                    <div className="uss-imageplan-header">
+                        <span className="uss-eyebrow">CONTENT PRODUCTION</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Image Recommendations</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-imageplan-grid">
+                    <div className="uss-imageplan-grid">
                         {imageRecs.map(({ suggestion, alt, img }, idx) => (
-                            <figure key={idx} className="uni-imageplan-card">
-                                <div className="uni-imageplan-media">
+                            <figure key={idx} className="uss-imageplan-card">
+                                <div className="uss-imageplan-media">
                                     {img
                                         ? <img src={img} alt={alt} />
-                                        : <div className="uni-imageplan-placeholder"><Eye size={24} /><span>Recommended Image</span></div>}
+                                        : <div className="uss-imageplan-placeholder"><Eye size={24} /><span>Recommended Image</span></div>}
                                 </div>
                                 <figcaption>
                                     <strong>{suggestion}</strong>
@@ -892,8 +892,8 @@ function UniWorldShipsSuites() {
                     </div>
                     <div className="luxe-expert-content-panel">
                         <span className="luxe-eyebrow">MEET THE CEO</span>
-                        <h2 className="uni-section-heading">Insight from Angela Hughes</h2>
-                        <div className="uni-heading-separator-bar"></div>
+                        <h2 className="uss-section-heading">Insight from Angela Hughes</h2>
+                        <div className="uss-heading-separator-bar"></div>
                         <p className="luxe-expert-quote">
                             "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."
                         </p>
@@ -916,18 +916,18 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── KEY TAKEAWAYS ── */}
-            <section className="uni-takeaways-section">
-                <div className="uni-takeaways-container">
-                    <div className="uni-takeaways-header">
-                        <span className="uni-eyebrow">THE ESSENTIALS</span>
-                        <h2 className="uni-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+            <section className="uss-takeaways-section">
+                <div className="uss-takeaways-container">
+                    <div className="uss-takeaways-header">
+                        <span className="uss-eyebrow">THE ESSENTIALS</span>
+                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
 
-                    <div className="uni-takeaways-list">
+                    <div className="uss-takeaways-list">
                         {takeaways.map((item, idx) => (
-                            <div key={idx} className="uni-takeaway-item">
-                                <div className="uni-takeaway-icon"><CheckCircle size={18} /></div>
+                            <div key={idx} className="uss-takeaway-item">
+                                <div className="uss-takeaway-icon"><CheckCircle size={18} /></div>
                                 <span>{item}</span>
                             </div>
                         ))}
@@ -936,35 +936,35 @@ function UniWorldShipsSuites() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="uni-faq-main-section uni-faq-section">
-                <div className="uni-faq-container">
+            <section className="uss-faq-main-section uni-faq-section">
+                <div className="uss-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <span className="uni-eyebrow">QUESTIONS TRAVELERS ASK</span>
-                        <h2 className="uni-section-heading">Frequently Asked Questions</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
+                        <span className="uss-eyebrow">QUESTIONS TRAVELERS ASK</span>
+                        <h2 className="uss-section-heading">Frequently Asked Questions</h2>
+                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
                     </div>
-                    <div className="uni-faq-list-wrapper">
+                    <div className="uss-faq-list-wrapper">
                         {faqs.map(([question, answer], index) => (
                             <div
                                 key={question}
-                                className="uni-faq-individual-item"
-                                onClick={() => uniToggleFaq(index)}
+                                className="uss-faq-individual-item"
+                                onClick={() => ussToggleFaq(index)}
                                 role="button"
                                 tabIndex={0}
                                 onKeyDown={e => {
                                     if (e.key === 'Enter' || e.key === ' ') {
                                         e.preventDefault()
-                                        uniToggleFaq(index)
+                                        ussToggleFaq(index)
                                     }
                                 }}
-                                aria-expanded={uniActiveFaq === index}
+                                aria-expanded={ussActiveFaq === index}
                             >
-                                <div className="uni-faq-question-row">
+                                <div className="uss-faq-question-row">
                                     <span>{question}</span>
-                                    <span className="uni-faq-toggle-icon">{uniActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="uss-faq-toggle-icon">{ussActiveFaq === index ? '−' : '+'}</span>
                                 </div>
-                                {uniActiveFaq === index && (
-                                    <p className="uni-faq-answer-text">{answer}</p>
+                                {ussActiveFaq === index && (
+                                    <p className="uss-faq-answer-text">{answer}</p>
                                 )}
                             </div>
                         ))}

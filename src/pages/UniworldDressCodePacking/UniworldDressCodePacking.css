@@ -1674,3 +1674,174 @@
         font-size: 13px;
     }
 }
+
+/* ── ANGELA HUGHES EXPERT INSIGHT ── */
+.udc-expert-insight-section {
+    padding: 88px 20px;
+    background: #0f1c2e !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.udc-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.udc-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.udc-expert-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.udc-expert-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.udc-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    width: 100%;
+}
+
+.udc-expert-stat-box h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.udc-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.udc-expert-content-panel .udc-eyebrow {
+    margin-bottom: 12px;
+    color: #3b82f6;
+}
+
+.udc-expert-content-panel .udc-section-heading {
+    color: #ffffff !important;
+}
+
+.udc-expert-content-panel .udc-heading-separator {
+    background: #3b82f6 !important;
+    margin-bottom: 22px;
+}
+
+.udc-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff !important;
+    font-style: italic;
+    margin: 22px 0;
+    padding-left: 20px;
+    border-left: 3px solid #3b82f6;
+}
+
+.udc-expert-priorities h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.udc-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.udc-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.udc-expert-pill svg {
+    color: #3b82f6;
+}
+
+.udc-expert-bio {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .udc-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .udc-expert-img-container {
+        height: 340px;
+    }
+}
+
+@media (max-width: 640px) {
+    .udc-expert-insight-section {
+        padding: 56px 16px;
+    }
+
+    .udc-expert-insight-container {
+        gap: 24px;
+    }
+
+    .udc-expert-img-container {
+        height: 280px;
+    }
+
+    .udc-expert-stats-strip {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .udc-expert-content-panel h2 {
+        font-size: 28px !important;
+    }
+}

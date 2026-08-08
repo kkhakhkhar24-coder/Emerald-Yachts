@@ -26,10 +26,10 @@ function UniworldRiverCruiseInclusions() {
     //     return () => clearInterval(uincTimer)
     // }, [uincHeroImages.length])
 
-    const [uincActiveFaq, setUincActiveFaq] = useState(null)
-    const uincToggleFaq = i => setUincActiveFaq(uincActiveFaq === i ? null : i)
+    const [wiiActiveFaq, setWiiActiveFaq] = useState(null)
+    const wiiToggleFaq = i => setWiiActiveFaq(wiiActiveFaq === i ? null : i)
 
-    const uincFaqs = [
+    const wiiFaqs = [
         { question: 'What is included on a Uniworld River Cruise?', answer: 'The fare typically includes accommodations, meals, premium beverages, excursions, Wi-Fi, gratuities, entertainment, and selected transfers.' },
         { question: 'Are alcoholic drinks included with Uniworld?', answer: 'Yes. Premium wines, beer, spirits, cocktails, and many non-alcoholic beverages are generally included.' },
         { question: 'Are shore excursions included?', answer: 'Yes. Most daily guided excursions are included in the cruise fare.' },
@@ -47,44 +47,44 @@ function UniworldRiverCruiseInclusions() {
         { question: 'Is Uniworld truly all-inclusive?', answer: 'Uniworld is considered one of the most inclusive luxury river cruise lines, although expenses such as airfare, spa treatments, travel insurance, and personal purchases are generally not included.' }
     ]
 
-    const uincIncludedList = [
+    const wiiIncludedList = [
         'Boutique accommodations', 'All meals', 'Premium wines, beer, cocktails, and spirits',
         'Daily shore excursions', 'Onboard gratuities', 'Scheduled airport transfers on eligible itineraries',
         'Wi-Fi', 'Entertainment', 'Wellness activities', 'Concierge-style service'
     ]
 
-    const uincAccommodationFeatures = [
+    const wiiAccommodationFeatures = [
         'Luxury handcrafted furnishings', 'Premium bedding', 'Marble bathrooms', 'Bathrobes and slippers',
         'Daily housekeeping', 'Nightly turndown service', 'Climate control', 'Flat-screen television',
         'In-room safe', 'Complimentary bottled water', 'Luxury bath amenities'
     ]
 
-    const uincBreakfast = ['Extensive buffet', 'Fresh pastries', 'Seasonal fruits', 'Made-to-order specialties', 'Regional dishes']
-    const uincLunch = ['Multi-course dining', 'Fresh salads', 'Local cuisine', 'Outdoor dining when available']
-    const uincDinner = ['Multi-course gourmet menus', 'Locally inspired cuisine', 'Premium ingredients', 'Vegetarian selections', 'Vegan options', 'Gluten-free meals upon request', 'Regional wine pairings']
-    const uincAdditionalDining = ['Afternoon tea', 'Late-night snacks', 'Specialty dining events', 'Farm-to-table experiences', 'Destination-inspired culinary tastings']
+    const wiiBreakfast = ['Extensive buffet', 'Fresh pastries', 'Seasonal fruits', 'Made-to-order specialties', 'Regional dishes']
+    const wiiLunch = ['Multi-course dining', 'Fresh salads', 'Local cuisine', 'Outdoor dining when available']
+    const wiiDinner = ['Multi-course gourmet menus', 'Locally inspired cuisine', 'Premium ingredients', 'Vegetarian selections', 'Vegan options', 'Gluten-free meals upon request', 'Regional wine pairings']
+    const wiiAdditionalDining = ['Afternoon tea', 'Late-night snacks', 'Specialty dining events', 'Farm-to-table experiences', 'Destination-inspired culinary tastings']
 
-    const uincBeverages = [
+    const wiiBeverages = [
         'Premium wines', 'Champagne', 'Craft cocktails', 'Top-shelf spirits', 'Local beers',
         'Specialty coffee', 'Espresso drinks', 'Tea', 'Soft drinks', 'Mineral water', 'Fresh juices'
     ]
 
-    const uincExcursions = [
+    const wiiExcursions = [
         'Historic city walking tours', 'Castle visits', 'Museum tours', 'Wine tastings', 'Local food experiences',
         'Bike rides', 'Hiking excursions', 'Cultural performances', 'Village visits', 'Scenic countryside tours'
     ]
 
-    const uincButlerServices = [
+    const wiiButlerServices = [
         'Personal butler service', 'Unpacking assistance', 'Packing assistance', 'In-room dining',
         'Personalized concierge support', 'Laundry assistance', 'Shoe shining'
     ]
 
-    const uincEntertainment = [
+    const wiiEntertainment = [
         'Local musicians', 'Classical performances', 'Cultural presentations', 'Cooking demonstrations',
         'Guest lectures', 'Wine tastings', 'Regional entertainment', 'Themed evenings'
     ]
 
-    const uincWellness = [
+    const wiiWellness = [
         { Icon: Waves, text: 'Fitness center' },
         { Icon: Sparkles, text: 'Wellness classes' },
         { Icon: Sun, text: 'Yoga sessions' },
@@ -94,10 +94,10 @@ function UniworldRiverCruiseInclusions() {
         { Icon: Gem, text: 'Spa treatments (additional charge)' }
     ]
 
-    const uincWifiUses = ['Check email', 'Share travel photos', 'Browse the internet', 'Use messaging apps', 'Stay connected with family']
-    const uincTransfers = ['Airport to ship', 'Ship to airport', 'Hotel transfers on qualifying cruise-tour packages']
-    const uincGratuitiesCover = ['Dining staff', 'Housekeeping', 'Ship crew', 'Hospitality team']
-    const uincSuiteBenefits = [
+    const wiiWifiUses = ['Check email', 'Share travel photos', 'Browse the internet', 'Use messaging apps', 'Stay connected with family']
+    const wiiTransfers = ['Airport to ship', 'Ship to airport', 'Hotel transfers on qualifying cruise-tour packages']
+    const wiiGratuitiesCover = ['Dining staff', 'Housekeeping', 'Ship crew', 'Hospitality team']
+    const wiiSuiteBenefits = [
         'Larger living spaces', 'Butler service', 'Premium minibars', 'Laundry service',
         'Exclusive dining experiences', 'Enhanced bathroom amenities', 'Priority services', 'Complimentary room service'
     ]
@@ -135,7 +135,7 @@ function UniworldRiverCruiseInclusions() {
         'Spa treatments, airfare, and personal purchases are generally extra.'
     ]
 
-    const uincSchemaData = {
+    const wiiSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
             {
@@ -172,7 +172,7 @@ function UniworldRiverCruiseInclusions() {
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": uincFaqs.map(f => ({
+                "mainEntity": wiiFaqs.map(f => ({
                     "@type": "Question",
                     "name": f.question,
                     "acceptedAnswer": { "@type": "Answer", "text": f.answer }
@@ -188,57 +188,57 @@ function UniworldRiverCruiseInclusions() {
                 <meta name="title" content="What Is Included on a Uniworld River Cruise?" />
                 <meta name="description" content="Discover what's included on a Uniworld River Cruise, from luxury accommodations and gourmet dining to excursions, beverages, gratuities, and more." />
                 <meta name="keywords" content="What Is Included on a Uniworld River Cruise, Uniworld River Cruise inclusions, What's included with Uniworld, Uniworld all-inclusive river cruises, Uniworld cruise fare, Uniworld shore excursions, Luxury river cruise inclusions, Uniworld drinks package, Uniworld gratuities, Uniworld onboard amenities, Uniworld river cruise value" />
-                <script type="application/ld+json">{JSON.stringify(uincSchemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(wiiSchemaData)}</script>
             </Helmet>
 
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="uinc-hero-section">
+            <section className="wii-hero-section">
                 {/* {uincHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`uinc-hero-background ${uincCurrentHero === idx ? 'uinc-active' : ''}`}
+                        className={`wii-hero-background ${uincCurrentHero === idx ? 'uinc-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))} */}
-                <div className="uinc-hero-overlay-layer"></div>
-                <div className="uinc-hero-content-wrapper">
-                    <div className="uinc-hero-eyebrow-tag">
+                <div className="wii-hero-overlay-layer"></div>
+                <div className="wii-hero-content-wrapper">
+                    <div className="wii-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Uniworld River Cruises · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="uinc-hero-main-title">What Is Included on a Uniworld River Cruise?</h1>
-                    <p className="uinc-hero-subtitle-text">
+                    <h1 className="wii-hero-main-title">What Is Included on a Uniworld River Cruise?</h1>
+                    <p className="wii-hero-subtitle-text">
                         Discover what's included on a Uniworld River Cruise, from luxury accommodations and gourmet dining to excursions, beverages, gratuities, and more.
                     </p>
                 </div>
             </section>
 
             {/* ── INTRO ── */}
-            <section className="uinc-intro-section">
-                <div className="uinc-intro-container">
-                    <div className="uinc-intro-grid">
-                        <div className="uinc-intro-text-col">
-                            <div className="uinc-intro-lead-card">
-                                <p className="uinc-intro-lead">
+            <section className="wii-intro-section">
+                <div className="wii-intro-container">
+                    <div className="wii-intro-grid">
+                        <div className="wii-intro-text-col">
+                            <div className="wii-intro-lead-card">
+                                <p className="wii-intro-lead">
                                     Planning a luxury river cruise often starts with one important question: what exactly is included in the fare? Unlike many ocean cruises where additional charges can quickly add up, Uniworld Boutique River Cruises is known for offering one of the industry's most comprehensive all-inclusive experiences.
                                 </p>
                             </div>
-                            <p className="uinc-intro-body">
+                            <p className="wii-intro-body">
                                 From elegant accommodations and gourmet dining to premium beverages, immersive shore excursions, airport transfers on select sailings, gratuities, and personalized service, many of the costs travelers typically budget separately are already included.
                             </p>
-                            <p className="uinc-intro-body">
+                            <p className="wii-intro-body">
                                 This guide explains everything you can expect to receive when booking a Uniworld River Cruise, helping you understand the overall value before you travel.
                             </p>
                         </div>
-                        <div className="uinc-intro-image-col">
-                            <div className="uinc-intro-image-frame uinc-placeholder-frame">
-                                <div className="uinc-placeholder-content">
-                                    <Ship size={48} className="uinc-placeholder-icon" />
-                                    <span className="uinc-placeholder-text">Luxury Cruise Image Placeholder</span>
+                        <div className="wii-intro-image-col">
+                            <div className="wii-intro-image-frame uinc-placeholder-frame">
+                                <div className="wii-placeholder-content">
+                                    <Ship size={48} className="wii-placeholder-icon" />
+                                    <span className="wii-placeholder-text">Luxury Cruise Image Placeholder</span>
                                 </div>
-                                <div className="uinc-intro-image-badge">
+                                <div className="wii-intro-image-badge">
                                     <Anchor size={14} />
                                     <span>Boutique Luxury</span>
                                 </div>
@@ -249,23 +249,23 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── WHAT MAKES UNIWORLD DIFFERENT ── */}
-            <section className="uinc-different-section">
-                <div className="uinc-different-container">
-                    <span className="uinc-eyebrow">WHAT MAKES UNIWORLD DIFFERENT</span>
-                    <h2 className="uinc-section-heading">Why Uniworld Offers One of the Most Inclusive <br /> River Cruise Experiences</h2>
-                    <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
-                    <p className="uinc-different-body">
+            <section className="wii-different-section">
+                <div className="wii-different-container">
+                    <span className="wii-eyebrow">WHAT MAKES UNIWORLD DIFFERENT</span>
+                    <h2 className="wii-section-heading">Why Uniworld Offers One of the Most Inclusive <br /> River Cruise Experiences</h2>
+                    <div className="wii-heading-separator-bar uinc-bar-centered"></div>
+                    <p className="wii-different-body">
                         Uniworld positions itself as a luxury boutique river cruise company where guests enjoy an experience that feels similar to staying in an upscale five-star hotel. Instead of charging separately for common amenities, the cruise fare typically includes:
                     </p>
-                    <div className="uinc-included-grid">
-                        {uincIncludedList.map((item, idx) => (
-                            <div key={idx} className="uinc-included-chip">
+                    <div className="wii-included-grid">
+                        {wiiIncludedList.map((item, idx) => (
+                            <div key={idx} className="wii-included-chip">
                                 <CheckCircle size={17} />
                                 <span>{item}</span>
                             </div>
                         ))}
                     </div>
-                    <div className="uinc-different-footer-card">
+                    <div className="wii-different-footer-card">
                         <ShieldCheck size={20} />
                         <span>This approach simplifies travel planning and allows guests to enjoy their vacation without constantly considering additional costs.</span>
                     </div>
@@ -273,30 +273,30 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── ACCOMMODATIONS ── */}
-            <section className="uinc-feature-section uinc-bg-accomm">
-                <div className="uinc-feature-container">
-                    <div className="uinc-feature-grid">
-                        <div className="uinc-feature-image-col">
-                            <div className="uinc-image-frame">
-                                {/* <img src={imgAccommodations} alt="Luxury stateroom included on a Uniworld River Cruise" className="uinc-frame-img" /> */}
-                                <div className="uinc-frame-overlay"></div>
-                                <div className="uinc-image-badge"><Bed size={13} /><span>Boutique Suites</span></div>
+            <section className="wii-feature-section uinc-bg-accomm">
+                <div className="wii-feature-container">
+                    <div className="wii-feature-grid">
+                        <div className="wii-feature-image-col">
+                            <div className="wii-image-frame">
+                                {/* <img src={imgAccommodations} alt="Luxury stateroom included on a Uniworld River Cruise" className="wii-frame-img" /> */}
+                                <div className="wii-frame-overlay"></div>
+                                <div className="wii-image-badge"><Bed size={13} /><span>Boutique Suites</span></div>
                             </div>
-                            <div className="uinc-left-footnote-card">
-                                <Sparkles size={16} className="uinc-footnote-card-icon" />
-                                <p className="uinc-left-footnote-text">
+                            <div className="wii-left-footnote-card">
+                                <Sparkles size={16} className="wii-footnote-card-icon" />
+                                <p className="wii-left-footnote-text">
                                     Many ships feature individually designed rooms rather than identical cabin layouts, giving each vessel a boutique hotel atmosphere.
                                 </p>
                             </div>
                         </div>
-                        <div className="uinc-feature-text-col">
-                            <span className="uinc-eyebrow">ACCOMMODATIONS</span>
-                            <h2 className="uinc-section-heading">Elegant Boutique Accommodations</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-feature-lead">Every stateroom and suite includes thoughtfully designed interiors inspired by the destinations visited.</p>
-                            <p className="uinc-feature-body">Accommodation features generally include:</p>
-                            <ul className="uinc-check-list">
-                                {uincAccommodationFeatures.map((item, idx) => (
+                        <div className="wii-feature-text-col">
+                            <span className="wii-eyebrow">ACCOMMODATIONS</span>
+                            <h2 className="wii-section-heading">Elegant Boutique Accommodations</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-feature-lead">Every stateroom and suite includes thoughtfully designed interiors inspired by the destinations visited.</p>
+                            <p className="wii-feature-body">Accommodation features generally include:</p>
+                            <ul className="wii-check-list">
+                                {wiiAccommodationFeatures.map((item, idx) => (
                                     <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
                                 ))}
                             </ul>
@@ -306,66 +306,66 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── DINING ── */}
-            <section className="uinc-feature-section uinc-dining-redesign-section">
-                <div className="uinc-feature-container">
-                    <div className="uinc-dining-grid-layout">
-                        <div className="uinc-dining-left-col">
-                            <span className="uinc-eyebrow">DINING</span>
-                            <h2 className="uinc-section-heading">Gourmet Dining Included Every Day</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-dining-intro-text">
+            <section className="wii-feature-section uinc-dining-redesign-section">
+                <div className="wii-feature-container">
+                    <div className="wii-dining-grid-layout">
+                        <div className="wii-dining-left-col">
+                            <span className="wii-eyebrow">DINING</span>
+                            <h2 className="wii-section-heading">Gourmet Dining Included Every Day</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-dining-intro-text">
                                 Dining is one of Uniworld's signature experiences. Enjoy destination-inspired menus crafted by master chefs using fresh, locally sourced ingredients.
                             </p>
-                            <div className="uinc-dining-image-box uinc-dining-placeholder-box">
-                                <div className="uinc-placeholder-content">
-                                    <Utensils size={40} className="uinc-placeholder-icon" />
-                                    <span className="uinc-placeholder-text">Gourmet Dining Image Placeholder</span>
+                            <div className="wii-dining-image-box uinc-dining-placeholder-box">
+                                <div className="wii-placeholder-content">
+                                    <Utensils size={40} className="wii-placeholder-icon" />
+                                    <span className="wii-placeholder-text">Gourmet Dining Image Placeholder</span>
                                 </div>
-                                <div className="uinc-image-badge"><Utensils size={13} /><span>All-Inclusive Dining</span></div>
+                                <div className="wii-image-badge"><Utensils size={13} /><span>All-Inclusive Dining</span></div>
                             </div>
                         </div>
 
-                        <div className="uinc-dining-right-col">
-                            <div className="uinc-dining-card-grid-split">
-                                <div className="uinc-dining-card">
-                                    <div className="uinc-dining-card-header">
-                                        <div className="uinc-dining-card-icon-wrapper"><Sun size={18} /></div>
-                                        <h3 className="uinc-dining-card-title">Breakfast</h3>
+                        <div className="wii-dining-right-col">
+                            <div className="wii-dining-card-grid-split">
+                                <div className="wii-dining-card">
+                                    <div className="wii-dining-card-header">
+                                        <div className="wii-dining-card-icon-wrapper"><Sun size={18} /></div>
+                                        <h3 className="wii-dining-card-title">Breakfast</h3>
                                     </div>
-                                    <ul className="uinc-dining-tags">
-                                        {uincBreakfast.map((item, idx) => <li key={idx}>{item}</li>)}
+                                    <ul className="wii-dining-tags">
+                                        {wiiBreakfast.map((item, idx) => <li key={idx}>{item}</li>)}
                                     </ul>
                                 </div>
 
-                                <div className="uinc-dining-card">
-                                    <div className="uinc-dining-card-header">
-                                        <div className="uinc-dining-card-icon-wrapper"><Utensils size={18} /></div>
-                                        <h3 className="uinc-dining-card-title">Lunch</h3>
+                                <div className="wii-dining-card">
+                                    <div className="wii-dining-card-header">
+                                        <div className="wii-dining-card-icon-wrapper"><Utensils size={18} /></div>
+                                        <h3 className="wii-dining-card-title">Lunch</h3>
                                     </div>
-                                    <ul className="uinc-dining-tags">
-                                        {uincLunch.map((item, idx) => <li key={idx}>{item}</li>)}
+                                    <ul className="wii-dining-tags">
+                                        {wiiLunch.map((item, idx) => <li key={idx}>{item}</li>)}
                                     </ul>
                                 </div>
 
-                                <div className="uinc-dining-card uinc-dining-card-dinner">
-                                    <div className="uinc-dining-card-header">
-                                        <div className="uinc-dining-card-icon-wrapper"><Moon size={18} /></div>
-                                        <h3 className="uinc-dining-card-title">Dinner</h3>
+                                <div className="wii-dining-card uinc-dining-card-dinner">
+                                    <div className="wii-dining-card-header">
+                                        <div className="wii-dining-card-icon-wrapper"><Moon size={18} /></div>
+                                        <h3 className="wii-dining-card-title">Dinner</h3>
                                     </div>
-                                    <p className="uinc-dining-card-subtitle">Each evening typically includes:</p>
-                                    <ul className="uinc-dining-tags">
-                                        {uincDinner.map((item, idx) => <li key={idx}>{item}</li>)}
+                                    <p className="wii-dining-card-subtitle">Each evening typically includes:</p>
+                                    <ul className="wii-dining-tags">
+                                        {wiiDinner.map((item, idx) => <li key={idx}>{item}</li>)}
                                     </ul>
                                 </div>
 
-                                <div className="uinc-dining-card">
-                                    <div className="uinc-dining-card-header">
-                                        <div className="uinc-dining-card-icon-wrapper"><Coffee size={18} /></div>
-                                        <h3 className="uinc-dining-card-title">Additional Dining</h3>
+                                <div className="wii-dining-card">
+                                    <div className="wii-dining-card-header">
+                                        <div className="wii-dining-card-icon-wrapper"><Coffee size={18} /></div>
+                                        <h3 className="wii-dining-card-title">Additional Dining</h3>
                                     </div>
-                                    <p className="uinc-dining-card-subtitle">Many itineraries also include:</p>
-                                    <ul className="uinc-dining-tags">
-                                        {uincAdditionalDining.map((item, idx) => <li key={idx}>{item}</li>)}
+                                    <p className="wii-dining-card-subtitle">Many itineraries also include:</p>
+                                    <ul className="wii-dining-tags">
+                                        {wiiAdditionalDining.map((item, idx) => <li key={idx}>{item}</li>)}
                                     </ul>
                                 </div>
                             </div>
@@ -375,28 +375,28 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── DRINKS ── */}
-            <section className="uinc-feature-section uinc-bg-soft uinc-beverages-section">
-                <div className="uinc-feature-container">
-                    <div className="uinc-feature-grid uinc-reverse">
-                        <div className="uinc-feature-image-col">
-                            <div className="uinc-image-frame">
-                                {/* <img src={imgDrinks} alt="Complimentary premium wine served onboard Uniworld cruise" className="uinc-frame-img" /> */}
-                                <div className="uinc-frame-overlay"></div>
-                                <div className="uinc-image-badge"><Wine size={13} /><span>Premium Beverages</span></div>
+            <section className="wii-feature-section uinc-bg-soft uinc-beverages-section">
+                <div className="wii-feature-container">
+                    <div className="wii-feature-grid uinc-reverse">
+                        <div className="wii-feature-image-col">
+                            <div className="wii-image-frame">
+                                {/* <img src={imgDrinks} alt="Complimentary premium wine served onboard Uniworld cruise" className="wii-frame-img" /> */}
+                                <div className="wii-frame-overlay"></div>
+                                <div className="wii-image-badge"><Wine size={13} /><span>Premium Beverages</span></div>
                             </div>
                         </div>
-                        <div className="uinc-feature-text-col">
-                            <span className="uinc-eyebrow">BEVERAGES</span>
-                            <h2 className="uinc-section-heading">Unlimited Premium Beverages</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-feature-lead">Unlike many cruise lines that sell beverage packages separately, Uniworld includes premium drinks throughout much of the voyage.</p>
-                            <p className="uinc-feature-body">Included beverages generally consist of:</p>
-                            <div className="uinc-pill-grid">
-                                {uincBeverages.map((item, idx) => (
-                                    <span key={idx} className="uinc-pill">{item}</span>
+                        <div className="wii-feature-text-col">
+                            <span className="wii-eyebrow">BEVERAGES</span>
+                            <h2 className="wii-section-heading">Unlimited Premium Beverages</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-feature-lead">Unlike many cruise lines that sell beverage packages separately, Uniworld includes premium drinks throughout much of the voyage.</p>
+                            <p className="wii-feature-body">Included beverages generally consist of:</p>
+                            <div className="wii-pill-grid">
+                                {wiiBeverages.map((item, idx) => (
+                                    <span key={idx} className="wii-pill">{item}</span>
                                 ))}
                             </div>
-                            <div className="uinc-wine-footnote-badge">
+                            <div className="wii-wine-footnote-badge">
                                 <Sparkles size={14} />
                                 <span>Wine is carefully selected to complement each region visited.</span>
                             </div>
@@ -406,33 +406,33 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── EXCURSIONS ── */}
-            <section className="uinc-feature-section uinc-excursions-redesign-section">
-                <div className="uinc-feature-container">
-                    <div className="uinc-feature-grid">
-                        <div className="uinc-feature-image-col">
-                            <div className="uinc-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
-                                <div className="uinc-placeholder-content">
-                                    <Compass size={48} className="uinc-placeholder-icon" />
-                                    <span className="uinc-placeholder-text">Excursions Image Placeholder</span>
+            <section className="wii-feature-section uinc-excursions-redesign-section">
+                <div className="wii-feature-container">
+                    <div className="wii-feature-grid">
+                        <div className="wii-feature-image-col">
+                            <div className="wii-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
+                                <div className="wii-placeholder-content">
+                                    <Compass size={48} className="wii-placeholder-icon" />
+                                    <span className="wii-placeholder-text">Excursions Image Placeholder</span>
                                 </div>
-                                <div className="uinc-image-badge"><MapPin size={13} /><span>Guided Excursions</span></div>
+                                <div className="wii-image-badge"><MapPin size={13} /><span>Guided Excursions</span></div>
                             </div>
-                            <div className="uinc-left-footnote-card">
-                                <Compass size={16} className="uinc-footnote-card-icon" />
-                                <p className="uinc-left-footnote-text">
+                            <div className="wii-left-footnote-card">
+                                <Compass size={16} className="wii-footnote-card-icon" />
+                                <p className="wii-left-footnote-text">
                                     Many itineraries also offer multiple excursion choices each day, allowing travelers to select activities matching their interests and activity level.
                                 </p>
                             </div>
                         </div>
-                        <div className="uinc-feature-text-col">
-                            <span className="uinc-eyebrow">SHORE EXCURSIONS</span>
-                            <h2 className="uinc-section-heading">Daily Shore Excursions Included</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-feature-lead">One of the biggest values included in the cruise fare is a wide selection of guided excursions.</p>
-                            <p className="uinc-feature-body">Depending on the itinerary, guests may choose from experiences such as:</p>
-                            <div className="uinc-excursions-grid">
-                                {uincExcursions.map((item, idx) => (
-                                    <div key={idx} className="uinc-excursion-card">
+                        <div className="wii-feature-text-col">
+                            <span className="wii-eyebrow">SHORE EXCURSIONS</span>
+                            <h2 className="wii-section-heading">Daily Shore Excursions Included</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-feature-lead">One of the biggest values included in the cruise fare is a wide selection of guided excursions.</p>
+                            <p className="wii-feature-body">Depending on the itinerary, guests may choose from experiences such as:</p>
+                            <div className="wii-excursions-grid">
+                                {wiiExcursions.map((item, idx) => (
+                                    <div key={idx} className="wii-excursion-card">
                                         <CheckCircle size={15} />
                                         <span>{item}</span>
                                     </div>
@@ -444,32 +444,32 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── BUTLER SERVICE ── */}
-            <section className="uinc-feature-section uinc-bg-soft">
-                <div className="uinc-feature-container">
-                    <div className="uinc-feature-grid uinc-reverse">
-                        <div className="uinc-feature-image-col">
-                            <div className="uinc-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
-                                <div className="uinc-placeholder-content">
-                                    <Crown size={48} className="uinc-placeholder-icon" />
-                                    <span className="uinc-placeholder-text">Butler Service Image Placeholder</span>
+            <section className="wii-feature-section uinc-bg-soft">
+                <div className="wii-feature-container">
+                    <div className="wii-feature-grid uinc-reverse">
+                        <div className="wii-feature-image-col">
+                            <div className="wii-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
+                                <div className="wii-placeholder-content">
+                                    <Crown size={48} className="wii-placeholder-icon" />
+                                    <span className="wii-placeholder-text">Butler Service Image Placeholder</span>
                                 </div>
-                                <div className="uinc-image-badge"><Bell size={13} /><span>Butler Service</span></div>
+                                <div className="wii-image-badge"><Bell size={13} /><span>Butler Service</span></div>
                             </div>
-                            <div className="uinc-left-footnote-card">
-                                <Users size={16} className="uinc-footnote-card-icon" />
-                                <p className="uinc-left-footnote-text">
+                            <div className="wii-left-footnote-card">
+                                <Users size={16} className="wii-footnote-card-icon" />
+                                <p className="wii-left-footnote-text">
                                     Guests throughout the ship also benefit from an exceptionally high crew-to-guest ratio, providing attentive and personalized service.
                                 </p>
                             </div>
                         </div>
-                        <div className="uinc-feature-text-col">
-                            <span className="uinc-eyebrow">HOSPITALITY</span>
-                            <h2 className="uinc-section-heading">Personalized Butler Service</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-feature-lead">Luxury hospitality is one of Uniworld's defining characteristics.</p>
-                            <p className="uinc-feature-body">Many suite categories include:</p>
-                            <ul className="uinc-check-list">
-                                {uincButlerServices.map((item, idx) => (
+                        <div className="wii-feature-text-col">
+                            <span className="wii-eyebrow">HOSPITALITY</span>
+                            <h2 className="wii-section-heading">Personalized Butler Service</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-feature-lead">Luxury hospitality is one of Uniworld's defining characteristics.</p>
+                            <p className="wii-feature-body">Many suite categories include:</p>
+                            <ul className="wii-check-list">
+                                {wiiButlerServices.map((item, idx) => (
                                     <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
                                 ))}
                             </ul>
@@ -479,25 +479,25 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── ENTERTAINMENT ── */}
-            <section className="uinc-simple-section">
-                <div className="uinc-simple-container">
-                    <span className="uinc-eyebrow">ONBOARD LIFE</span>
-                    <h2 className="uinc-section-heading" style={{ textAlign: 'center' }}>Entertainment Included Onboard</h2>
-                    <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
-                    <p className="uinc-simple-intro">Although river cruising emphasizes destinations over large-scale entertainment, Uniworld offers engaging onboard activities. These may include:</p>
-                    <div className="uinc-card-grid">
-                        {uincEntertainment.map((item, idx) => {
+            <section className="wii-simple-section">
+                <div className="wii-simple-container">
+                    <span className="wii-eyebrow">ONBOARD LIFE</span>
+                    <h2 className="wii-section-heading" style={{ textAlign: 'center' }}>Entertainment Included Onboard</h2>
+                    <div className="wii-heading-separator-bar uinc-bar-centered"></div>
+                    <p className="wii-simple-intro">Although river cruising emphasizes destinations over large-scale entertainment, Uniworld offers engaging onboard activities. These may include:</p>
+                    <div className="wii-card-grid">
+                        {wiiEntertainment.map((item, idx) => {
                             const icons = [Music, Star, Globe, Utensils, Mic, Wine, Award, Sparkles]
                             const Icon = icons[idx % icons.length]
                             return (
-                                <div key={idx} className="uinc-mini-card">
+                                <div key={idx} className="wii-mini-card">
                                     <Icon size={20} />
                                     <span>{item}</span>
                                 </div>
                             )
                         })}
                     </div>
-                    <div className="uinc-entertainment-footnote-badge">
+                    <div className="wii-entertainment-footnote-badge">
                         <Sparkles size={14} />
                         <span>Entertainment is designed to complement each destination rather than overwhelm it.</span>
                     </div>
@@ -505,37 +505,37 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── WELLNESS ── */}
-            <section className="uinc-feature-section uinc-bg-soft uinc-wellness-redesign-section">
-                <div className="uinc-feature-container">
-                    <div className="uinc-wellness-header-block">
-                        <span className="uinc-eyebrow">WELLNESS</span>
-                        <h2 className="uinc-section-heading">Wellness and Fitness Amenities</h2>
-                        <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
-                        <p className="uinc-wellness-intro-text">
+            <section className="wii-feature-section uinc-bg-soft uinc-wellness-redesign-section">
+                <div className="wii-feature-container">
+                    <div className="wii-wellness-header-block">
+                        <span className="wii-eyebrow">WELLNESS</span>
+                        <h2 className="wii-section-heading">Wellness and Fitness Amenities</h2>
+                        <div className="wii-heading-separator-bar uinc-bar-centered"></div>
+                        <p className="wii-wellness-intro-text">
                             Travelers seeking relaxation, rejuvenation, and active exploration will find several premium wellness features onboard.
                         </p>
                     </div>
 
-                    <div className="uinc-wellness-cards-grid">
-                        {uincWellness.map((item, idx) => {
+                    <div className="wii-wellness-cards-grid">
+                        {wiiWellness.map((item, idx) => {
                             const WellnessIcon = item.Icon
                             return (
-                                <div key={idx} className="uinc-wellness-card">
-                                    <div className="uinc-wellness-card-placeholder">
-                                        <WellnessIcon size={32} className="uinc-wellness-card-icon" />
-                                        <span className="uinc-wellness-card-placeholder-label">Image Placeholder</span>
+                                <div key={idx} className="wii-wellness-card">
+                                    <div className="wii-wellness-card-placeholder">
+                                        <WellnessIcon size={32} className="wii-wellness-card-icon" />
+                                        <span className="wii-wellness-card-placeholder-label">Image Placeholder</span>
                                     </div>
-                                    <div className="uinc-wellness-card-info">
-                                        <h3 className="uinc-wellness-card-title">{item.text}</h3>
+                                    <div className="wii-wellness-card-info">
+                                        <h3 className="wii-wellness-card-title">{item.text}</h3>
                                     </div>
                                 </div>
                             )
                         })}
                     </div>
 
-                    <div className="uinc-wellness-bottom-banner">
-                        <Sparkles size={18} className="uinc-wellness-banner-icon" />
-                        <p className="uinc-wellness-banner-text">
+                    <div className="wii-wellness-bottom-banner">
+                        <Sparkles size={18} className="wii-wellness-banner-icon" />
+                        <p className="wii-wellness-banner-text">
                             Some newer ships also feature pools or wellness-focused facilities.
                         </p>
                     </div>
@@ -543,84 +543,84 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── WIFI / TRANSFERS / GRATUITIES ── */}
-            <section className="uinc-triple-section uinc-triple-redesign-section">
-                <div className="uinc-triple-container">
+            <section className="wii-triple-section uinc-triple-redesign-section">
+                <div className="wii-triple-container">
 
                     {/* CARD 1: WIFI */}
-                    <div className="uinc-triple-card">
-                        <div className="uinc-triple-icon-wrapper">
+                    <div className="wii-triple-card">
+                        <div className="wii-triple-icon-wrapper">
                             <Wifi size={24} />
                         </div>
-                        <h3 className="uinc-triple-title">Complimentary Wi-Fi</h3>
-                        <p className="uinc-triple-body">Wi-Fi is included throughout most ships, allowing guests to:</p>
-                        <ul className="uinc-triple-checklist">
-                            {uincWifiUses.map((item, idx) => (
+                        <h3 className="wii-triple-title">Complimentary Wi-Fi</h3>
+                        <p className="wii-triple-body">Wi-Fi is included throughout most ships, allowing guests to:</p>
+                        <ul className="wii-triple-checklist">
+                            {wiiWifiUses.map((item, idx) => (
                                 <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
                             ))}
                         </ul>
-                        <p className="uinc-triple-note">Internet performance varies depending on the river region and local network coverage.</p>
+                        <p className="wii-triple-note">Internet performance varies depending on the river region and local network coverage.</p>
                     </div>
 
                     {/* CARD 2: TRANSFERS */}
-                    <div className="uinc-triple-card">
-                        <div className="uinc-triple-icon-wrapper">
+                    <div className="wii-triple-card">
+                        <div className="wii-triple-icon-wrapper">
                             <Plane size={24} />
                         </div>
-                        <h3 className="uinc-triple-title">Airport Transfers</h3>
-                        <p className="uinc-triple-body">Scheduled airport transfers are included on eligible itineraries when flights are booked according to policies, covering:</p>
-                        <ul className="uinc-triple-checklist">
-                            {uincTransfers.map((item, idx) => (
+                        <h3 className="wii-triple-title">Airport Transfers</h3>
+                        <p className="wii-triple-body">Scheduled airport transfers are included on eligible itineraries when flights are booked according to policies, covering:</p>
+                        <ul className="wii-triple-checklist">
+                            {wiiTransfers.map((item, idx) => (
                                 <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
                             ))}
                         </ul>
-                        <p className="uinc-triple-note">Eligibility depends on the itinerary and booking conditions.</p>
+                        <p className="wii-triple-note">Eligibility depends on the itinerary and booking conditions.</p>
                     </div>
 
                     {/* CARD 3: GRATUITIES */}
-                    <div className="uinc-triple-card">
-                        <div className="uinc-triple-icon-wrapper">
+                    <div className="wii-triple-card">
+                        <div className="wii-triple-icon-wrapper">
                             <DollarSign size={24} />
                         </div>
-                        <h3 className="uinc-triple-title">Gratuities Included</h3>
-                        <p className="uinc-triple-body">Onboard gratuities are bundled directly into your cruise fare, ensuring seamless service. This covers:</p>
-                        <ul className="uinc-triple-checklist">
-                            {uincGratuitiesCover.map((item, idx) => (
+                        <h3 className="wii-triple-title">Gratuities Included</h3>
+                        <p className="wii-triple-body">Onboard gratuities are bundled directly into your cruise fare, ensuring seamless service. This covers:</p>
+                        <ul className="wii-triple-checklist">
+                            {wiiGratuitiesCover.map((item, idx) => (
                                 <li key={idx}><CheckCircle size={15} /><span>{item}</span></li>
                             ))}
                         </ul>
-                        <p className="uinc-triple-note">Guests who wish to recognize exceptional service may always provide additional tips voluntarily.</p>
+                        <p className="wii-triple-note">Guests who wish to recognize exceptional service may always provide additional tips voluntarily.</p>
                     </div>
 
                 </div>
             </section>
 
             {/* ── SUITE BENEFITS ── */}
-            <section className="uinc-feature-section uinc-bg-soft">
-                <div className="uinc-feature-container">
-                    <div className="uinc-feature-grid">
-                        <div className="uinc-feature-image-col">
-                            <div className="uinc-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
-                                <div className="uinc-placeholder-content">
-                                    <Crown size={48} className="uinc-placeholder-icon" />
-                                    <span className="uinc-placeholder-text">Suite Benefits Image Placeholder</span>
+            <section className="wii-feature-section uinc-bg-soft">
+                <div className="wii-feature-container">
+                    <div className="wii-feature-grid">
+                        <div className="wii-feature-image-col">
+                            <div className="wii-image-frame uinc-placeholder-frame" style={{ height: '360px' }}>
+                                <div className="wii-placeholder-content">
+                                    <Crown size={48} className="wii-placeholder-icon" />
+                                    <span className="wii-placeholder-text">Suite Benefits Image Placeholder</span>
                                 </div>
-                                <div className="uinc-image-badge"><Crown size={13} /><span>Suite Benefits</span></div>
+                                <div className="wii-image-badge"><Crown size={13} /><span>Suite Benefits</span></div>
                             </div>
-                            <div className="uinc-left-footnote-card">
-                                <Crown size={16} className="uinc-footnote-card-icon" />
-                                <p className="uinc-left-footnote-text">
+                            <div className="wii-left-footnote-card">
+                                <Crown size={16} className="wii-footnote-card-icon" />
+                                <p className="wii-left-footnote-text">
                                     Exact inclusions vary by ship and suite category.
                                 </p>
                             </div>
                         </div>
-                        <div className="uinc-feature-text-col">
-                            <span className="uinc-eyebrow">SUITE CATEGORIES</span>
-                            <h2 className="uinc-section-heading">Suite Benefits</h2>
-                            <div className="uinc-heading-separator-bar"></div>
-                            <p className="uinc-feature-lead">Guests booking higher accommodation categories often receive additional amenities.</p>
-                            <p className="uinc-feature-body">These may include:</p>
-                            <ul className="uinc-check-list">
-                                {uincSuiteBenefits.map((item, idx) => (
+                        <div className="wii-feature-text-col">
+                            <span className="wii-eyebrow">SUITE CATEGORIES</span>
+                            <h2 className="wii-section-heading">Suite Benefits</h2>
+                            <div className="wii-heading-separator-bar"></div>
+                            <p className="wii-feature-lead">Guests booking higher accommodation categories often receive additional amenities.</p>
+                            <p className="wii-feature-body">These may include:</p>
+                            <ul className="wii-check-list">
+                                {wiiSuiteBenefits.map((item, idx) => (
                                     <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
                                 ))}
                             </ul>
@@ -630,21 +630,21 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── WHAT'S NOT INCLUDED ── */}
-            <section className="uinc-table-section uinc-not-included-section">
-                <div className="uinc-table-container">
-                    <span className="uinc-eyebrow">GOOD TO KNOW</span>
-                    <h2 className="uinc-section-heading" style={{ textAlign: 'center' }}>What's Usually Not Included?</h2>
-                    <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
-                    <p className="uinc-table-intro">While Uniworld is highly inclusive, some expenses remain separate.</p>
+            <section className="wii-table-section uinc-not-included-section">
+                <div className="wii-table-container">
+                    <span className="wii-eyebrow">GOOD TO KNOW</span>
+                    <h2 className="wii-section-heading" style={{ textAlign: 'center' }}>What's Usually Not Included?</h2>
+                    <div className="wii-heading-separator-bar uinc-bar-centered"></div>
+                    <p className="wii-table-intro">While Uniworld is highly inclusive, some expenses remain separate.</p>
 
-                    <div className="uinc-comparison-cards-layout">
+                    <div className="wii-comparison-cards-layout">
                         {/* INCLUDED CARD */}
-                        <div className="uinc-comp-card uinc-comp-included">
-                            <div className="uinc-comp-card-header">
-                                <CheckCircle size={22} className="uinc-comp-header-icon" />
-                                <h3 className="uinc-comp-card-title">Typically Included</h3>
+                        <div className="wii-comp-card uinc-comp-included">
+                            <div className="wii-comp-card-header">
+                                <CheckCircle size={22} className="wii-comp-header-icon" />
+                                <h3 className="wii-comp-card-title">Typically Included</h3>
                             </div>
-                            <ul className="uinc-comp-list">
+                            <ul className="wii-comp-list">
                                 {uincIncludedVsExtra.map((row, idx) => (
                                     <li key={idx}>
                                         <CheckCircle size={15} />
@@ -655,12 +655,12 @@ function UniworldRiverCruiseInclusions() {
                         </div>
 
                         {/* EXTRA COST CARD */}
-                        <div className="uinc-comp-card uinc-comp-extra">
-                            <div className="uinc-comp-card-header">
-                                <XCircle size={22} className="uinc-comp-header-icon" />
-                                <h3 className="uinc-comp-card-title">Usually Extra Cost</h3>
+                        <div className="wii-comp-card uinc-comp-extra">
+                            <div className="wii-comp-card-header">
+                                <XCircle size={22} className="wii-comp-header-icon" />
+                                <h3 className="wii-comp-card-title">Usually Extra Cost</h3>
                             </div>
-                            <ul className="uinc-comp-list">
+                            <ul className="wii-comp-list">
                                 {uincIncludedVsExtra.map((row, idx) => (
                                     <li key={idx}>
                                         <XCircle size={15} />
@@ -671,7 +671,7 @@ function UniworldRiverCruiseInclusions() {
                         </div>
                     </div>
 
-                    <div className="uinc-table-footnote-badge">
+                    <div className="wii-table-footnote-badge">
                         <AlertCircle size={15} />
                         <span>Always review your specific itinerary, as inclusions can vary.</span>
                     </div>
@@ -679,43 +679,43 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── COMPARISON ── */}
-            <section className="uinc-table-section uinc-comparison-section-redesign">
-                <div className="uinc-table-container" style={{ maxWidth: '1000px' }}>
-                    <span className="uinc-eyebrow">HOW UNIWORLD COMPARES</span>
-                    <h2 className="uinc-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other Luxury River Cruise Lines</h2>
-                    <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
+            <section className="wii-table-section uinc-comparison-section-redesign">
+                <div className="wii-table-container" style={{ maxWidth: '1000px' }}>
+                    <span className="wii-eyebrow">HOW UNIWORLD COMPARES</span>
+                    <h2 className="wii-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other Luxury River Cruise Lines</h2>
+                    <div className="wii-heading-separator-bar uinc-bar-centered"></div>
 
-                    <div className="uinc-compare-wrapper">
-                        <table className="uinc-compare-table">
+                    <div className="wii-compare-wrapper">
+                        <table className="wii-compare-table">
                             <thead>
                                 <tr>
                                     <th>Compare Features</th>
-                                    <th className="uinc-uni-header">
+                                    <th className="wii-uni-header">
                                         <Sparkles size={15} style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle', color: 'var(--uinc-accent-light)' }} />
                                         Uniworld Inclusions
                                     </th>
-                                    <th className="uinc-typical-header">Typical Premium Line</th>
+                                    <th className="wii-typical-header">Typical Premium Line</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {uincComparison.map((row, idx) => (
                                     <tr key={idx}>
-                                        <td className="uinc-feature-title">{row.feature}</td>
-                                        <td className="uinc-uni-cell">
-                                            <span className="uinc-uni-badge">
+                                        <td className="wii-feature-title">{row.feature}</td>
+                                        <td className="wii-uni-cell">
+                                            <span className="wii-uni-badge">
                                                 <CheckCircle size={13} />
                                                 <span>{row.uniworld}</span>
                                             </span>
                                         </td>
-                                        <td className="uinc-typical-cell">
-                                            <span className="uinc-typical-value">{row.typical}</span>
+                                        <td className="wii-typical-cell">
+                                            <span className="wii-typical-value">{row.typical}</span>
                                         </td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
-                    <div className="uinc-table-footnote-badge">
+                    <div className="wii-table-footnote-badge">
                         <Award size={15} />
                         <span>Uniworld consistently ranks among the most inclusive luxury river cruise operators due to the breadth of services bundled into the cruise fare.</span>
                     </div>
@@ -723,38 +723,38 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── VALUE ── */}
-            <section className="uinc-value-section">
-                <div className="uinc-value-container">
-                    <div className="uinc-value-grid">
+            <section className="wii-value-section">
+                <div className="wii-value-container">
+                    <div className="wii-value-grid">
 
-                        <div className="uinc-value-left-col">
-                            <div className="uinc-value-eyebrow-row">
+                        <div className="wii-value-left-col">
+                            <div className="wii-value-eyebrow-row">
                                 <Gem size={18} />
-                                <span className="uinc-value-eyebrow-text">IS IT WORTH THE PRICE?</span>
+                                <span className="wii-value-eyebrow-text">IS IT WORTH THE PRICE?</span>
                             </div>
-                            <h2 className="uinc-value-heading">Why Many Travelers Find Uniworld Good Value</h2>
-                            <div className="uinc-value-separator"></div>
+                            <h2 className="wii-value-heading">Why Many Travelers Find Uniworld Good Value</h2>
+                            <div className="wii-value-separator"></div>
 
-                            <p className="uinc-value-body-lead">
+                            <p className="wii-value-body-lead">
                                 Although Uniworld cruises often carry a higher upfront price than some competitors, many travelers appreciate knowing that most vacation expenses have already been covered.
                             </p>
-                            <p className="uinc-value-body-desc">
+                            <p className="wii-value-body-desc">
                                 By bundling everything into one transparent fare, Uniworld eliminates the "nickel-and-diming" typical of other cruise lines. This allows you to relax fully without worrying about calculations at every meal, drink, or excursion.
                             </p>
 
-                            <div className="uinc-value-quote-card">
-                                <span className="uinc-quote-mark">“</span>
-                                <p className="uinc-value-emphasis">
+                            <div className="wii-value-quote-card">
+                                <span className="wii-quote-mark">“</span>
+                                <p className="wii-value-emphasis">
                                     For travelers seeking a hassle-free luxury vacation, the comprehensive fare often represents strong overall value.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="uinc-value-right-col">
-                            <div className="uinc-value-inclusion-card">
-                                <h3 className="uinc-inclusion-card-title">Bundled Luxury Inclusions</h3>
-                                <p className="uinc-inclusion-card-subtitle">These amenities significantly reduce additional onboard spending:</p>
-                                <div className="uinc-value-list-items">
+                        <div className="wii-value-right-col">
+                            <div className="wii-value-inclusion-card">
+                                <h3 className="wii-inclusion-card-title">Bundled Luxury Inclusions</h3>
+                                <p className="wii-inclusion-card-subtitle">These amenities significantly reduce additional onboard spending:</p>
+                                <div className="wii-value-list-items">
                                     {[
                                         { title: 'Premium Drinks', desc: 'Wines, spirits, and craft cocktails' },
                                         { title: 'Shore Excursions', desc: 'Daily guided tours in every port' },
@@ -763,11 +763,11 @@ function UniworldRiverCruiseInclusions() {
                                         { title: 'Accommodations', desc: 'Boutique handcrafted suites' },
                                         { title: 'Personalized Service', desc: 'Exceptional crew-to-guest ratio' }
                                     ].map((item, idx) => (
-                                        <div key={idx} className="uinc-value-list-item">
-                                            <CheckCircle size={16} className="uinc-value-item-icon" />
-                                            <div className="uinc-value-item-details">
-                                                <span className="uinc-value-item-title">{item.title}</span>
-                                                <span className="uinc-value-item-desc">{item.desc}</span>
+                                        <div key={idx} className="wii-value-list-item">
+                                            <CheckCircle size={16} className="wii-value-item-icon" />
+                                            <div className="wii-value-item-details">
+                                                <span className="wii-value-item-title">{item.title}</span>
+                                                <span className="wii-value-item-desc">{item.desc}</span>
                                             </div>
                                         </div>
                                     ))}
@@ -780,15 +780,15 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── KEY TAKEAWAYS ── */}
-            <section className="uinc-takeaways-section">
-                <div className="uinc-takeaways-container">
-                    <h2 className="uinc-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
-                    <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
-                    <div className="uinc-takeaways-grid">
+            <section className="wii-takeaways-section">
+                <div className="wii-takeaways-container">
+                    <h2 className="wii-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
+                    <div className="wii-heading-separator-bar uinc-bar-centered"></div>
+                    <div className="wii-takeaways-grid">
                         {uincKeyTakeaways.map((item, idx) => (
-                            <div key={idx} className="uinc-takeaway-card">
-                                <div className="uinc-takeaway-number">0{idx + 1}</div>
-                                <p className="uinc-takeaway-text">{item}</p>
+                            <div key={idx} className="wii-takeaway-card">
+                                <div className="wii-takeaway-number">0{idx + 1}</div>
+                                <p className="wii-takeaway-text">{item}</p>
                             </div>
                         ))}
                     </div>
@@ -857,25 +857,25 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="uinc-faq-section">
-                <div className="uinc-faq-container">
+            <section className="wii-faq-section">
+                <div className="wii-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="uinc-section-heading">Frequently Asked Questions</h2>
-                        <div className="uinc-heading-separator-bar uinc-bar-centered"></div>
+                        <h2 className="wii-section-heading">Frequently Asked Questions</h2>
+                        <div className="wii-heading-separator-bar uinc-bar-centered"></div>
                     </div>
-                    <div className="uinc-faq-list-wrapper">
-                        {uincFaqs.map((faq, index) => (
+                    <div className="wii-faq-list-wrapper">
+                        {wiiFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="uinc-faq-item"
-                                onClick={() => uincToggleFaq(index)}
+                                className="wii-faq-item"
+                                onClick={() => wiiToggleFaq(index)}
                             >
-                                <div className="uinc-faq-question-row">
+                                <div className="wii-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="uinc-faq-toggle-icon">{uincActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="wii-faq-toggle-icon">{wiiActiveFaq === index ? '−' : '+'}</span>
                                 </div>
-                                {uincActiveFaq === index && (
-                                    <p className="uinc-faq-answer-text">{faq.answer}</p>
+                                {wiiActiveFaq === index && (
+                                    <p className="wii-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
                         ))}
@@ -884,30 +884,30 @@ function UniworldRiverCruiseInclusions() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="uinc-cta-redesign-section">
-                <div className="uinc-cta-aurora-glow"></div>
-                <div className="uinc-cta-crystal uinc-cta-crystal-1"></div>
-                <div className="uinc-cta-crystal uinc-cta-crystal-2"></div>
-                <div className="uinc-cta-crystal uinc-cta-crystal-3"></div>
-                <div className="uinc-cta-grid-lines"></div>
+            <section className="wii-cta-redesign-section">
+                <div className="wii-cta-aurora-glow"></div>
+                <div className="wii-cta-crystal uinc-cta-crystal-1"></div>
+                <div className="wii-cta-crystal uinc-cta-crystal-2"></div>
+                <div className="wii-cta-crystal uinc-cta-crystal-3"></div>
+                <div className="wii-cta-grid-lines"></div>
 
-                <div className="uinc-cta-content">
-                    <div className="uinc-cta-compass-ring">
+                <div className="wii-cta-content">
+                    <div className="wii-cta-compass-ring">
                         <Compass size={28} />
                     </div>
-                    <span className="uinc-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="uinc-cta-title">Ready to Experience an All-Inclusive Uniworld River Cruise?</h2>
-                    <div className="uinc-cta-bar"></div>
-                    <p className="uinc-cta-subtitle">
+                    <span className="wii-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
+                    <h2 className="wii-cta-title">Ready to Experience an All-Inclusive Uniworld River Cruise?</h2>
+                    <div className="wii-cta-bar"></div>
+                    <p className="wii-cta-subtitle">
                         Ready to experience one of the most inclusive luxury river cruises available? Explore Uniworld itineraries, compare destinations, and find the sailing that best matches your travel style to start planning your next unforgettable journey.
                     </p>
-                    <div className="uinc-cta-actions">
-                        <Link to="/contact" className="uinc-cta-primary-btn">
+                    <div className="wii-cta-actions">
+                        <Link to="/contact" className="wii-cta-primary-btn">
                             <Phone size={18} />
                             <span>Schedule a Consultation</span>
-                            <ArrowRight size={16} className="uinc-cta-btn-arrow" />
+                            <ArrowRight size={16} className="wii-cta-btn-arrow" />
                         </Link>
-                        <Link to="/uniworld-river-cruises" className="uinc-cta-secondary-btn">
+                        <Link to="/uniworld-river-cruises" className="wii-cta-secondary-btn">
                             <LayoutList size={18} />
                             <span>Explore Uniworld Itineraries</span>
                         </Link>

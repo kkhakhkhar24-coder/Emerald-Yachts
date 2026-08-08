@@ -2159,3 +2159,165 @@
     .uaf-hero-main-title { font-size: 26px; }
     .uaf-section-heading { font-size: 24px; }
 }
+
+/* ── ANGELA HUGHES EXPERT INSIGHT ── */
+.uaf-expert-insight-section {
+    padding: 88px 20px;
+    background: #0f1c2e !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.uaf-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.uaf-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.uaf-expert-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uaf-expert-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.uaf-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    width: 100%;
+}
+
+.uaf-expert-stat-box h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.uaf-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.uaf-expert-content-panel .uaf-eyebrow {
+    margin-bottom: 12px;
+    color: #3b82f6;
+}
+
+.uaf-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff !important;
+    font-style: italic;
+    margin: 22px 0;
+    padding-left: 20px;
+    border-left: 3px solid #3b82f6;
+}
+
+.uaf-expert-priorities h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.uaf-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.uaf-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.uaf-expert-pill svg {
+    color: #3b82f6;
+}
+
+.uaf-expert-bio {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .uaf-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .uaf-expert-img-container {
+        height: 340px;
+    }
+}
+
+@media (max-width: 640px) {
+    .uaf-expert-insight-section {
+        padding: 56px 16px;
+    }
+
+    .uaf-expert-insight-container {
+        gap: 24px;
+    }
+
+    .uaf-expert-img-container {
+        height: 280px;
+    }
+
+    .uaf-expert-stats-strip {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .uaf-expert-content-panel h2 {
+        font-size: 28px !important;
+    }
+}

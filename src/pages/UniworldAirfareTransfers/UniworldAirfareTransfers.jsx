@@ -10,6 +10,7 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 function UniworldAirfareTransfers() {
 
@@ -672,6 +673,55 @@ function UniworldAirfareTransfers() {
                             </Link>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="uaf-expert-insight-section">
+                <div className="uaf-expert-insight-container">
+
+                    <div className="uaf-expert-portrait-panel">
+                        <div className="uaf-expert-img-container">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury Travel Designer" />
+                        </div>
+                        <div className="uaf-expert-stats-strip">
+                            <div className="uaf-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div className="uaf-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Visited</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="uaf-expert-content-panel">
+                        <span className="uaf-eyebrow">MEET THE CEO</span>
+                        <h2 className="uaf-section-heading">Insight from Angela Hughes</h2>
+                        <div className="uaf-heading-separator-bar"></div>
+
+                        <p className="uaf-expert-quote">
+                            "Arranging flights and port transfers doesn't have to be stressful. When we coordinate air travel and arrival logistics, my clients begin their river cruise relaxed, knowing their journey is seamlessly managed from touchdown to embarkation."
+                        </p>
+
+                        <div className="uaf-expert-priorities">
+                            <h5>Logistics Priorities Matrix:</h5>
+                            <div className="uaf-expert-pills">
+                                {['Coordinated Flight Routing', 'VIP Port Transfers', 'Pre-Cruise Hotel Stays', 'Arrival Meet-and-Greet', 'Luggage Assistance', 'Travel Insurance Shield'].map(pill => (
+                                    <span key={pill} className="uaf-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="uaf-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the luxury travel world to deliver custom travel planning and seamless logistics coordination that regular booking engines simply cannot replicate.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

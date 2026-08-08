@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import Navbar from '../../components/Navbar/Navbar'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 import './UniworldFamilyCruises.css'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
@@ -602,8 +603,7 @@ export default function UniworldFamilyCruises() {
                             { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
                             { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' },
                             { text: 'Best Uniworld Cabins', url: '/uniworld-river-cruises/best-cabins/' },
-                            { text: 'Uniworld Food and Dining', url: '/uniworld-river-cruises/food-dining/' },
-                            { text: 'Uniworld Dress Code and Packing Guide', url: '/uniworld-river-cruises/dress-code-packing/' }
+                            { text: 'Uniworld Food and Dining', url: '/uniworld-river-cruises/food-dining/' }
                         ].map(({ text, url }, idx) => (
                             <Link key={idx} to={url} className="ufc-link-card">
                                 <span>{text}</span>
@@ -611,6 +611,55 @@ export default function UniworldFamilyCruises() {
                             </Link>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="ufc-expert-insight-section">
+                <div className="ufc-expert-insight-container">
+
+                    <div className="ufc-expert-portrait-panel">
+                        <div className="ufc-expert-img-container">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - Multigenerational Travel Expert" />
+                        </div>
+                        <div className="ufc-expert-stats-strip">
+                            <div className="ufc-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div className="ufc-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Visited</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="ufc-expert-content-panel">
+                        <span className="ufc-eyebrow">MEET THE CEO</span>
+                        <h2 className="ufc-section-heading">Insight from Angela Hughes</h2>
+                        <div className="ufc-heading-separator-bar"></div>
+
+                        <p className="ufc-expert-quote">
+                            "River cruises are not just for couples. During select summer and holiday breaks, Uniworld's Generations Collection brings families together with dedicated kids' guides, hands-on shore activities, and specialized menus. It's the ultimate multigenerational travel experience without the massive crowds."
+                        </p>
+
+                        <div className="ufc-expert-priorities">
+                            <h5>Family Cruise Priorities Matrix:</h5>
+                            <div className="ufc-expert-pills">
+                                {['Generations Program Sailings', 'Connecting &amp; Family Suites', 'Dedicated Family Hosts', 'Kid-Friendly Shore Tours', 'Young Travelers Menus', 'Onboard Activity Zones'].map(pill => (
+                                    <span key={pill} className="ufc-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="ufc-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps multigenerational families plan luxury voyages that bridge the gap between grand-parents and grand-kids.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

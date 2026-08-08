@@ -11,6 +11,7 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 function UniworldSoloTravel() {
     const [ustCurrentHero, setUstCurrentHero] = useState(0)
@@ -664,6 +665,55 @@ function UniworldSoloTravel() {
                             </Link>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="ust-expert-insight-section">
+                <div className="ust-expert-insight-container">
+
+                    <div className="ust-expert-portrait-panel">
+                        <div className="ust-expert-img-container">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - Solo Travel Specialist" />
+                        </div>
+                        <div className="ust-expert-stats-strip">
+                            <div className="ust-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div className="ust-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Visited</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="ust-expert-content-panel">
+                        <span className="ust-eyebrow">MEET THE CEO</span>
+                        <h2 className="ust-section-heading">Insight from Angela Hughes</h2>
+                        <div className="ust-heading-separator-bar"></div>
+
+                        <p className="ust-expert-quote">
+                            "River cruising is uniquely suited for solo travelers, offering safety, easy companionship, and intimate ships. By timing your booking to align with Uniworld's popular wave-season single supplement waivers, you can secure a luxury stateroom without the double cost penalty."
+                        </p>
+
+                        <div className="ust-expert-priorities">
+                            <h5>Solo Cruising Priorities Matrix:</h5>
+                            <div className="ust-expert-pills">
+                                {['Supplement Waiver Offers', 'Solo-Friendly Seating', 'Group Excursion Options', 'Safe Port Logistics', 'Welcome Solo Gatherings', 'Stateroom Value Selection'].map(pill => (
+                                    <span key={pill} className="ust-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="ust-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps solo explorers navigate single-supplement promotions and match with itineraries that have high social integration.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

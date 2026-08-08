@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import './UniworldChristmasMarketCruises.css'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
+import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
@@ -651,6 +652,55 @@ export default function UniworldChristmasMarketCruises() {
                             </Link>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+            <section className="ucm-expert-insight-section">
+                <div className="ucm-expert-insight-container">
+
+                    <div className="ucm-expert-portrait-panel">
+                        <div className="ucm-expert-img-container">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - Christmas Market Specialist" />
+                        </div>
+                        <div className="ucm-expert-stats-strip">
+                            <div className="ucm-expert-stat-box">
+                                <h4>40+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div className="ucm-expert-stat-box">
+                                <h4>121+</h4>
+                                <p>Countries Visited</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="ucm-expert-content-panel">
+                        <span className="ucm-eyebrow">MEET THE CEO</span>
+                        <h2 className="ucm-section-heading">Insight from Angela Hughes</h2>
+                        <div className="ucm-heading-separator-bar"></div>
+
+                        <p className="ucm-expert-quote">
+                            "European Christmas markets are pure magic, but the true luxury is sailing right into the heart of them. With Uniworld, you avoid the cold transfer busses and return each evening to a warm, beautifully decorated ship serving hot glühwein and fresh gingerbread. It's the most comfortable way to experience Europe's holiday season."
+                        </p>
+
+                        <div className="ucm-expert-priorities">
+                            <h5>Christmas Market Priorities Matrix:</h5>
+                            <div className="ucm-expert-pills">
+                                {['Rhine &amp; Danube Classics', 'Onboard Glühwein Tastings', 'Thermal Packing Layers', 'Artisanal Gift Shopping', 'Local Gingerbread Classes', 'Warm Shipboard Sanctuary'].map(pill => (
+                                    <span key={pill} className="ucm-expert-pill">
+                                        <Anchor size={12} />
+                                        {pill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="ucm-expert-bio">
+                            As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate seasonal packing, select the best river routes, and book early enough to secure scarce holiday-season suites.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 

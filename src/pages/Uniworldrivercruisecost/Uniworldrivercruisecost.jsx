@@ -25,12 +25,12 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 
 function UniworldRiverCruiseCost() {
-    const [uicActiveFaq, setUicActiveFaq] = useState(null)
-    const uicToggleFaq = i => setUicActiveFaq(uicActiveFaq === i ? null : i)
+    const [uccActiveFaq, setUccActiveFaq] = useState(null)
+    const uccToggleFaq = i => setUccActiveFaq(uccActiveFaq === i ? null : i)
 
-    const [uicSelectedFactor, setUicSelectedFactor] = useState(0)
+    const [uccSelectedFactor, setUccSelectedFactor] = useState(0)
 
-    const uicFaqs = [
+    const uccFaqs = [
         { question: 'How much does a Uniworld River Cruise cost?', answer: 'Most itineraries start around $2,800 per person, with luxury suites and longer cruises costing considerably more.' },
         { question: 'Are Uniworld cruises all-inclusive?', answer: 'Yes. Most fares include accommodations, meals, beverages, excursions, Wi-Fi, and gratuities.' },
         { question: 'Why are Uniworld River Cruises expensive?', answer: 'They include many luxury services that are charged separately on other vacations, including premium drinks, excursions, and gratuities.' },
@@ -48,25 +48,25 @@ function UniworldRiverCruiseCost() {
         { question: 'Is a Uniworld River Cruise worth the cost?', answer: 'For travelers seeking an upscale, highly inclusive vacation with exceptional service and immersive excursions, many consider Uniworld to offer strong overall value.' }
     ]
 
-    const uicPriceRange = [
+    const uccPriceRange = [
         { length: '7 Nights', price: '$2,800–$6,000+' },
         { length: '8–10 Nights', price: '$3,800–$7,500+' },
         { length: '11–14 Nights', price: '$5,000–$10,000+' },
         { length: 'Grand Voyages', price: '$9,000–$18,000+' }
     ]
 
-    const uicDestinations = [
+    const uccDestinations = [
         'Danube River', 'Rhine River', 'Seine River', 'Douro River', 'Venice Lagoon',
         'Burgundy & Provence', 'Egypt (Nile)', 'India (Ganges)', 'Peru (Amazon)'
     ]
 
-    const uicDuration = [
+    const uccDuration = [
         { title: '7-night cruises', desc: 'ideal for first-time travelers.' },
         { title: '10–14-night itineraries', desc: 'allow deeper destination exploration.' },
         { title: 'Grand journeys', desc: 'combine multiple cruises for extended vacations.' }
     ]
 
-    const uicCabinTypes = [
+    const uccCabinTypes = [
         { type: 'Classic Stateroom', level: 'Lowest' },
         { type: 'Deluxe Stateroom', level: 'Moderate' },
         { type: 'French Balcony', level: 'Mid-High' },
@@ -74,7 +74,7 @@ function UniworldRiverCruiseCost() {
         { type: 'Royal Suite', level: 'Luxury' }
     ]
 
-    const uicSeasons = [
+    const uccSeasons = [
         { season: 'Early Spring', pricing: 'Lower', low: true },
         { season: 'Late Spring', pricing: 'High', low: false },
         { season: 'Summer', pricing: 'High', low: false },
@@ -83,12 +83,12 @@ function UniworldRiverCruiseCost() {
         { season: 'Winter (select itineraries)', pricing: 'Lower', low: true }
     ]
 
-    const uicFactors = [
+    const uccFactors = [
         {
             title: 'Destination',
             icon: MapPin,
             text: 'European itineraries generally offer the widest range of pricing, while more specialized destinations often command higher fares.',
-            tags: uicDestinations,
+            tags: uccDestinations,
             note: 'Long-haul and exotic destinations usually cost more due to limited departures and higher operating expenses.',
             type: 'tags'
         },
@@ -96,14 +96,14 @@ function UniworldRiverCruiseCost() {
             title: 'Cruise Duration',
             icon: Ship,
             text: 'Longer itineraries naturally increase the total fare but often provide better value on a per-night basis.',
-            list: uicDuration,
+            list: uccDuration,
             type: 'list'
         },
         {
             title: 'Stateroom Category',
             icon: Bed,
             text: 'Cabin selection has a significant impact on pricing. From classic staterooms to royal suites:',
-            rows: uicCabinTypes,
+            rows: uccCabinTypes,
             note: 'Higher-category accommodations typically include additional space, upgraded amenities, and enhanced services such as butler assistance.',
             type: 'rows'
         },
@@ -111,19 +111,19 @@ function UniworldRiverCruiseCost() {
             title: 'Travel Season',
             icon: Calendar,
             text: 'Pricing fluctuates throughout the year. Holiday cruises and Christmas Market sailings are usually among the most expensive.',
-            seasons: uicSeasons,
+            seasons: uccSeasons,
             type: 'seasons'
         }
     ]
 
-    const uicIncludedFare = [
+    const uccIncludedFare = [
         'Luxury accommodations', 'All meals', 'Fine dining experiences', 'Unlimited premium wines and spirits',
         'Specialty coffee and beverages', 'Daily guided shore excursions', 'Complimentary Wi-Fi',
         'Onboard gratuities', 'Entertainment', 'Fitness facilities', 'Concierge-level service',
         'Airport transfers on eligible itineraries'
     ]
 
-    const uicExtraCosts = [
+    const uccExtraCosts = [
         { expense: 'International airfare', always: true, icon: Plane, desc: 'Flights to and from your cruise departure cities.' },
         { expense: 'Travel insurance', always: true, icon: Award, desc: 'Essential protection for trip cancellation and medical coverage.' },
         { expense: 'Spa treatments', always: true, icon: Sparkles, desc: 'Onboard massages, facials, and wellness services.' },
@@ -134,18 +134,18 @@ function UniworldRiverCruiseCost() {
         { expense: 'Optional premium experiences', always: false, icon: Crown, desc: 'Exclusive curated tours or premium tastings.' }
     ]
 
-    const uicCoupleCost = [
+    const uccCoupleCost = [
         { length: '7 Nights', price: '$5,600–$12,000+' },
         { length: '10 Nights', price: '$7,600–$15,000+' },
         { length: '14 Nights', price: '$10,000–$20,000+' }
     ]
 
-    const uicWorthIncluded = [
+    const uccWorthIncluded = [
         'Unlimited premium drinks', 'Daily guided excursions', 'Fine dining', 'Gratuities',
         'Luxury accommodations', 'Personalized service', 'Wi-Fi', 'Entertainment'
     ]
 
-    const uicDealTips = [
+    const uccDealTips = [
         {
             Icon: CalendarClock,
             title: 'Book Early',
@@ -172,7 +172,7 @@ function UniworldRiverCruiseCost() {
         }
     ]
 
-    const uicComparison = [
+    const uccComparison = [
         { feature: 'Premium beverages', uniworld: 'Included', typical: 'Often included' },
         { feature: 'Shore excursions', uniworld: 'Included', typical: 'Included' },
         { feature: 'Gratuities', uniworld: 'Included', typical: 'Sometimes extra' },
@@ -182,17 +182,17 @@ function UniworldRiverCruiseCost() {
         { feature: 'Overall inclusiveness', uniworld: 'Excellent', typical: 'Good–Excellent' }
     ]
 
-    const uicCheapestTimes = [
+    const uccCheapestTimes = [
         'Early booking promotions', 'Shoulder season departures', 'Selected spring cruises',
         'Late autumn itineraries', 'Limited-time promotional events'
     ]
 
-    const uicBudgetItems = [
+    const uccBudgetItems = [
         'Flights', 'Travel insurance', 'Hotel nights before embarkation', 'Transfers not included',
         'Souvenirs', 'Spa services', 'Optional private excursions'
     ]
 
-    const uicKeyTakeaways = [
+    const uccKeyTakeaways = [
         'Uniworld River Cruise prices vary by destination, season, itinerary, and cabin category.',
         'Seven-night cruises typically start around $2,800 per person.',
         'Luxury suites and holiday departures carry premium pricing.',
@@ -203,7 +203,7 @@ function UniworldRiverCruiseCost() {
         'Consulting an expert travel advisor helps secure exclusive promotions and benefits.'
     ]
 
-    const uicSchemaData = {
+    const uccSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
             {
@@ -248,7 +248,7 @@ function UniworldRiverCruiseCost() {
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": uicFaqs.map(f => ({
+                "mainEntity": uccFaqs.map(f => ({
                     "@type": "Question",
                     "name": f.question,
                     "acceptedAnswer": { "@type": "Answer", "text": f.answer }
@@ -263,43 +263,43 @@ function UniworldRiverCruiseCost() {
                 <title>How Much Does a Uniworld River Cruise Cost? | Pricing Guide</title>
                 <meta name="description" content="Discover average prices, cabin options, inclusions, and tips for budgeting a Uniworld Boutique River Cruise." />
                 <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruise-cost" />
-                <script type="application/ld+json">{JSON.stringify(uicSchemaData)}</script>
+                <script type="application/ld+json">{JSON.stringify(uccSchemaData)}</script>
             </Helmet>
 
             <Navbar />
 
             {/* ── HERO SECTION ── */}
-            <section className="uic-hero-section">
-                <div className="uic-hero-placeholder"></div>
-                <div className="uic-hero-content-wrapper">
-                    <div className="uic-hero-eyebrow-tag">
+            <section className="ucc-hero-section">
+                <div className="ucc-hero-placeholder"></div>
+                <div className="ucc-hero-content-wrapper">
+                    <div className="ucc-hero-eyebrow-tag">
                         <Wallet size={16} />
                         <span>UNIWORLD COST GUIDE</span>
                     </div>
-                    <h1 className="uic-hero-main-title">How Much Does a Uniworld River Cruise Cost?</h1>
-                    <p className="uic-hero-subtitle-text">
+                    <h1 className="ucc-hero-main-title">How Much Does a Uniworld River Cruise Cost?</h1>
+                    <p className="ucc-hero-subtitle-text">
                         An honest breakdown of fares, suites, everyday inclusions, and out-of-pocket costs.
                     </p>
                 </div>
             </section>
 
             {/* ── INTRO SECTION (GRID) ── */}
-            <section className="uic-intro-section">
-                <div className="uic-intro-container">
-                    <div className="uic-intro-grid">
-                        <div className="uic-intro-text-col">
-                            <span className="uic-eyebrow">EXCLUSIVE TRAVEL EXPERIENCE</span>
-                            <h2 className="uic-section-heading">How Much Does a Uniworld River Cruise Cost?</h2>
-                            <div className="uic-heading-separator-bar"></div>
-                            <p className="uic-intro-paragraph">
+            <section className="ucc-intro-section">
+                <div className="ucc-intro-container">
+                    <div className="ucc-intro-grid">
+                        <div className="ucc-intro-text-col">
+                            <span className="ucc-eyebrow">EXCLUSIVE TRAVEL EXPERIENCE</span>
+                            <h2 className="ucc-section-heading">How Much Does a Uniworld River Cruise Cost?</h2>
+                            <div className="ucc-heading-separator-bar"></div>
+                            <p className="ucc-intro-paragraph">
                                 Luxury river cruising is often associated with premium pricing, but understanding what you receive for the fare helps put the cost into perspective. Uniworld Boutique River Cruises is one of the most inclusive luxury river cruise lines, with fares covering accommodations, gourmet dining, premium beverages, daily excursions, gratuities, and many onboard amenities.
                             </p>
                         </div>
-                        <div className="uic-intro-image-col">
-                            <div className="uic-image-frame">
-                                {/* <img src={imgSuite} alt="Elegant Suite on a Uniworld Boutique River Cruise" className="uic-frame-img" /> */}
-                                <div className="uic-frame-overlay"></div>
-                                <div className="uic-image-badge"><Crown size={13} /><span>Boutique Luxury</span></div>
+                        <div className="ucc-intro-image-col">
+                            <div className="ucc-image-frame">
+                                {/* <img src={imgSuite} alt="Elegant Suite on a Uniworld Boutique River Cruise" className="ucc-frame-img" /> */}
+                                <div className="ucc-frame-overlay"></div>
+                                <div className="ucc-image-badge"><Crown size={13} /><span>Boutique Luxury</span></div>
                             </div>
                         </div>
                     </div>
@@ -307,31 +307,31 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── TYPICAL PRICE RANGE (GRID) ── */}
-            <section className="uic-price-section uic-bg-blue-tint">
-                <div className="uic-price-container">
-                    <span className="uic-eyebrow">ESTIMATED FARES</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>Typical Uniworld River Cruise Price Range</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-price-intro">Cruise fares vary significantly based on itinerary duration, destination, cabin category, and season. Below are average starting prices per person.</p>
+            <section className="ucc-price-section ucc-bg-blue-tint">
+                <div className="ucc-price-container">
+                    <span className="ucc-eyebrow">ESTIMATED FARES</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Typical Uniworld River Cruise Price Range</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-price-intro">Cruise fares vary significantly based on itinerary duration, destination, cabin category, and season. Below are average starting prices per person.</p>
 
-                    <div className="uic-price-grid">
-                        {uicPriceRange.map((row, idx) => (
-                            <div key={idx} className="uic-price-card">
-                                <div className="uic-price-card-header">
-                                    <div className="uic-price-card-icon"><Compass size={28} /></div>
-                                    <h3 className="uic-price-card-title">{row.length}</h3>
+                    <div className="ucc-price-grid">
+                        {uccPriceRange.map((row, idx) => (
+                            <div key={idx} className="ucc-price-card">
+                                <div className="ucc-price-card-header">
+                                    <div className="ucc-price-card-icon"><Compass size={28} /></div>
+                                    <h3 className="ucc-price-card-title">{row.length}</h3>
                                 </div>
-                                <div className="uic-price-card-divider"></div>
-                                <div className="uic-price-card-body">
-                                    <span className="uic-price-card-label">Avg. Price Range</span>
-                                    <span className="uic-price-card-value">{row.price}</span>
-                                    <span className="uic-price-card-note">Per Person / Double Occ.</span>
+                                <div className="ucc-price-card-divider"></div>
+                                <div className="ucc-price-card-body">
+                                    <span className="ucc-price-card-label">Avg. Price Range</span>
+                                    <span className="ucc-price-card-value">{row.price}</span>
+                                    <span className="ucc-price-card-note">Per Person / Double Occ.</span>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="uic-price-footnote-badge">
+                    <div className="ucc-price-footnote-badge">
                         <AlertCircle size={15} />
                         <span>Luxury suites, holiday sailings, and limited-capacity departures can exceed these ranges.</span>
                     </div>
@@ -339,30 +339,30 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── PRICING FACTORS (TABBED) ── */}
-            <section className="uic-factors-section">
-                <div className="uic-factors-container">
-                    <span className="uic-eyebrow">PRICING FACTORS</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>What Affects the Cost of a Uniworld River Cruise?</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-factors-intro">Several key factors determine the final fare of your Uniworld River Cruise. Select a factor to explore how it impacts pricing.</p>
+            <section className="ucc-factors-section">
+                <div className="ucc-factors-container">
+                    <span className="ucc-eyebrow">PRICING FACTORS</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>What Affects the Cost of a Uniworld River Cruise?</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-factors-intro">Several key factors determine the final fare of your Uniworld River Cruise. Select a factor to explore how it impacts pricing.</p>
 
-                    <div className="uic-factors-dashboard">
+                    <div className="ucc-factors-dashboard">
 
                         {/* ── LEFT: Vertical Step Menu ── */}
-                        <div className="uic-factors-tabs">
-                            {uicFactors.map((factor, idx) => {
+                        <div className="ucc-factors-tabs">
+                            {uccFactors.map((factor, idx) => {
                                 const Icon = factor.icon
-                                const isActive = uicSelectedFactor === idx
+                                const isActive = uccSelectedFactor === idx
                                 return (
                                     <button
                                         key={idx}
-                                        className={`uic-factor-tab-btn ${isActive ? 'active' : ''}`}
-                                        onClick={() => setUicSelectedFactor(idx)}
+                                        className={`ucc-factor-tab-btn ${isActive ? 'active' : ''}`}
+                                        onClick={() => setUccSelectedFactor(idx)}
                                     >
-                                        <div className="uic-factor-tab-number">{String(idx + 1).padStart(2, '0')}</div>
-                                        <div className="uic-factor-tab-info">
-                                            <div className="uic-factor-tab-icon"><Icon size={16} /></div>
-                                            <span className="uic-factor-tab-title">{factor.title}</span>
+                                        <div className="ucc-factor-tab-number">{String(idx + 1).padStart(2, '0')}</div>
+                                        <div className="ucc-factor-tab-info">
+                                            <div className="ucc-factor-tab-icon"><Icon size={16} /></div>
+                                            <span className="ucc-factor-tab-title">{factor.title}</span>
                                         </div>
                                     </button>
                                 )
@@ -370,49 +370,49 @@ function UniworldRiverCruiseCost() {
                         </div>
 
                         {/* ── RIGHT: Detail Panel ── */}
-                        <div className="uic-factor-panel">
-                            <div className="uic-factor-panel-inner">
+                        <div className="ucc-factor-panel">
+                            <div className="ucc-factor-panel-inner">
 
                                 {/* Image Placeholder Column */}
-                                <div className="uic-factor-panel-image">
-                                    <div className="uic-factor-panel-image-bg">
-                                        {(() => { const BgIcon = uicFactors[uicSelectedFactor].icon; return <BgIcon size={110} className="uic-factor-panel-bg-icon" /> })()}
+                                <div className="ucc-factor-panel-image">
+                                    <div className="ucc-factor-panel-image-bg">
+                                        {(() => { const BgIcon = uccFactors[uccSelectedFactor].icon; return <BgIcon size={110} className="ucc-factor-panel-bg-icon" /> })()}
                                     </div>
-                                    <div className="uic-factor-panel-image-overlay">
-                                        <div className="uic-factor-panel-img-details">
-                                            <p className="uic-factor-panel-label" style={{ color: 'rgba(255, 255, 255, 0.7)', border: 'none', margin: '0 0 4px', padding: 0 }}>
-                                                FACTOR {String(uicSelectedFactor + 1).padStart(2, '0')} OF {uicFactors.length}
+                                    <div className="ucc-factor-panel-image-overlay">
+                                        <div className="ucc-factor-panel-img-details">
+                                            <p className="ucc-factor-panel-label" style={{ color: 'rgba(255, 255, 255, 0.7)', border: 'none', margin: '0 0 4px', padding: 0 }}>
+                                                FACTOR {String(uccSelectedFactor + 1).padStart(2, '0')} OF {uccFactors.length}
                                             </p>
-                                            <h3 className="uic-factor-panel-title" style={{ color: '#fff', margin: 0, fontSize: '26px', fontWeight: '800' }}>
-                                                {uicFactors[uicSelectedFactor].title}
+                                            <h3 className="ucc-factor-panel-title" style={{ color: '#fff', margin: 0, fontSize: '26px', fontWeight: '800' }}>
+                                                {uccFactors[uccSelectedFactor].title}
                                             </h3>
                                         </div>
-                                        <span className="uic-factor-panel-img-num">{String(uicSelectedFactor + 1).padStart(2, '0')}</span>
+                                        <span className="ucc-factor-panel-img-num">{String(uccSelectedFactor + 1).padStart(2, '0')}</span>
                                     </div>
                                 </div>
 
                                 {/* Content Column */}
-                                <div className="uic-factor-panel-content">
-                                    <p className="uic-factor-panel-desc">{uicFactors[uicSelectedFactor].text}</p>
+                                <div className="ucc-factor-panel-content">
+                                    <p className="ucc-factor-panel-desc">{uccFactors[uccSelectedFactor].text}</p>
 
                                     {/* TAGS grid */}
-                                    {uicFactors[uicSelectedFactor].type === 'tags' && (
-                                        <div className="uic-factor-tags">
-                                            {uicFactors[uicSelectedFactor].tags.map((item, idx) => (
-                                                <span key={idx} className="uic-factor-tag"><MapPin size={12} />{item}</span>
+                                    {uccFactors[uccSelectedFactor].type === 'tags' && (
+                                        <div className="ucc-factor-tags">
+                                            {uccFactors[uccSelectedFactor].tags.map((item, idx) => (
+                                                <span key={idx} className="ucc-factor-tag"><MapPin size={12} />{item}</span>
                                             ))}
                                         </div>
                                     )}
 
                                     {/* LIST grid */}
-                                    {uicFactors[uicSelectedFactor].type === 'list' && (
-                                        <div className="uic-factor-list">
-                                            {uicFactors[uicSelectedFactor].list.map((item, idx) => (
-                                                <div key={idx} className="uic-factor-list-card">
-                                                    <div className="uic-factor-list-num">{String(idx + 1).padStart(2, '0')}</div>
+                                    {uccFactors[uccSelectedFactor].type === 'list' && (
+                                        <div className="ucc-factor-list">
+                                            {uccFactors[uccSelectedFactor].list.map((item, idx) => (
+                                                <div key={idx} className="ucc-factor-list-card">
+                                                    <div className="ucc-factor-list-num">{String(idx + 1).padStart(2, '0')}</div>
                                                     <div>
-                                                        <p className="uic-factor-list-title">{item.title}</p>
-                                                        <p className="uic-factor-list-desc">{item.desc}</p>
+                                                        <p className="ucc-factor-list-title">{item.title}</p>
+                                                        <p className="ucc-factor-list-desc">{item.desc}</p>
                                                     </div>
                                                 </div>
                                             ))}
@@ -420,28 +420,28 @@ function UniworldRiverCruiseCost() {
                                     )}
 
                                     {/* ROWS grid */}
-                                    {uicFactors[uicSelectedFactor].type === 'rows' && (
-                                        <div className="uic-factor-rows">
-                                            {uicFactors[uicSelectedFactor].rows.map((row, idx) => (
-                                                <div key={idx} className="uic-factor-row">
-                                                    <div className="uic-factor-row-rank">{idx + 1}</div>
-                                                    <span className="uic-factor-row-label">{row.type}</span>
-                                                    <span className="uic-factor-row-value">{row.level}</span>
+                                    {uccFactors[uccSelectedFactor].type === 'rows' && (
+                                        <div className="ucc-factor-rows">
+                                            {uccFactors[uccSelectedFactor].rows.map((row, idx) => (
+                                                <div key={idx} className="ucc-factor-row">
+                                                    <div className="ucc-factor-row-rank">{idx + 1}</div>
+                                                    <span className="ucc-factor-row-label">{row.type}</span>
+                                                    <span className="ucc-factor-row-value">{row.level}</span>
                                                 </div>
                                             ))}
                                         </div>
                                     )}
 
                                     {/* SEASONS grid */}
-                                    {uicFactors[uicSelectedFactor].type === 'seasons' && (
-                                        <div className="uic-factor-seasons">
-                                            {uicFactors[uicSelectedFactor].seasons.map((row, idx) => (
-                                                <div key={idx} className="uic-factor-season">
-                                                    <span className="uic-factor-season-icon">
+                                    {uccFactors[uccSelectedFactor].type === 'seasons' && (
+                                        <div className="ucc-factor-seasons">
+                                            {uccFactors[uccSelectedFactor].seasons.map((row, idx) => (
+                                                <div key={idx} className="ucc-factor-season">
+                                                    <span className="ucc-factor-season-icon">
                                                         {row.low ? <TrendingDown size={14} /> : <TrendingUp size={14} />}
                                                     </span>
-                                                    <span className="uic-factor-season-label">{row.season}</span>
-                                                    <span className={`uic-season-tag ${row.low ? 'uic-season-low' : 'uic-season-high'}`}>
+                                                    <span className="ucc-factor-season-label">{row.season}</span>
+                                                    <span className={`ucc-season-tag ${row.low ? 'ucc-season-low' : 'ucc-season-high'}`}>
                                                         {row.pricing}
                                                     </span>
                                                 </div>
@@ -450,10 +450,10 @@ function UniworldRiverCruiseCost() {
                                     )}
 
                                     {/* Note */}
-                                    {uicFactors[uicSelectedFactor].note && (
-                                        <div className="uic-factor-panel-note">
+                                    {uccFactors[uccSelectedFactor].note && (
+                                        <div className="ucc-factor-panel-note">
                                             <AlertCircle size={15} />
-                                            <span>{uicFactors[uicSelectedFactor].note}</span>
+                                            <span>{uccFactors[uccSelectedFactor].note}</span>
                                         </div>
                                     )}
                                 </div>
@@ -467,28 +467,28 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── WHAT'S INCLUDED IN FARE ── */}
-            <section className="uic-feature-section uic-bg-azure">
-                <div className="uic-feature-container">
-                    <div className="uic-feature-grid uic-reverse">
-                        <div className="uic-feature-text-col">
-                            <span className="uic-eyebrow">CRUISE FARE INCLUSIONS</span>
-                            <h2 className="uic-section-heading">What Is Included in the Cruise Fare?</h2>
-                            <div className="uic-heading-separator-bar"></div>
-                            <p className="uic-feature-lead">One reason Uniworld commands premium pricing is its extensive list of inclusions.</p>
-                            <p className="uic-feature-body">Most fares include:</p>
-                            <ul className="uic-check-list uic-check-list-2col">
-                                {uicIncludedFare.map((item, idx) => (
+            <section className="ucc-feature-section ucc-bg-azure">
+                <div className="ucc-feature-container">
+                    <div className="ucc-feature-grid ucc-reverse">
+                        <div className="ucc-feature-text-col">
+                            <span className="ucc-eyebrow">CRUISE FARE INCLUSIONS</span>
+                            <h2 className="ucc-section-heading">What Is Included in the Cruise Fare?</h2>
+                            <div className="ucc-heading-separator-bar"></div>
+                            <p className="ucc-feature-lead">One reason Uniworld commands premium pricing is its extensive list of inclusions.</p>
+                            <p className="ucc-feature-body">Most fares include:</p>
+                            <ul className="ucc-check-list ucc-check-list-2col">
+                                {uccIncludedFare.map((item, idx) => (
                                     <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="uic-feature-image-col">
-                            <div className="uic-image-frame">
-                                {/* <img src={imgDining} alt="Gourmet dining included on a Uniworld River Cruise" className="uic-frame-img" /> */}
-                                <div className="uic-frame-overlay"></div>
-                                <div className="uic-image-badge"><Utensils size={13} /><span>All-Inclusive Fare</span></div>
+                        <div className="ucc-feature-image-col">
+                            <div className="ucc-image-frame">
+                                {/* <img src={imgDining} alt="Gourmet dining included on a Uniworld River Cruise" className="ucc-frame-img" /> */}
+                                <div className="ucc-frame-overlay"></div>
+                                <div className="ucc-image-badge"><Utensils size={13} /><span>All-Inclusive Fare</span></div>
                             </div>
-                            <div className="uic-feature-callout">
+                            <div className="ucc-feature-callout">
                                 <Sparkles size={18} />
                                 <p>Because many additional costs are already covered, travelers often spend less onboard than expected.</p>
                             </div>
@@ -498,34 +498,34 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── ADDITIONAL COSTS ── */}
-            <section className="uic-costs-section uic-bg-alabaster">
-                <div className="uic-costs-container">
-                    <span className="uic-eyebrow">BUDGET PLANNING</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>Additional Costs to Budget For</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-costs-intro">Although Uniworld Boutique River Cruises is highly inclusive, certain out-of-pocket expenses may still apply when planning your trip.</p>
+            <section className="ucc-costs-section ucc-bg-alabaster">
+                <div className="ucc-costs-container">
+                    <span className="ucc-eyebrow">BUDGET PLANNING</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Additional Costs to Budget For</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-costs-intro">Although Uniworld Boutique River Cruises is highly inclusive, certain out-of-pocket expenses may still apply when planning your trip.</p>
 
-                    <div className="uic-costs-grid">
-                        {uicExtraCosts.map((row, idx) => {
+                    <div className="ucc-costs-grid">
+                        {uccExtraCosts.map((row, idx) => {
                             const CostIcon = row.icon
                             return (
-                                <div key={idx} className="uic-cost-card">
-                                    <div className="uic-cost-card-header">
-                                        <div className="uic-cost-card-icon-wrap">
+                                <div key={idx} className="ucc-cost-card">
+                                    <div className="ucc-cost-card-header">
+                                        <div className="ucc-cost-card-icon-wrap">
                                             <CostIcon size={20} />
                                         </div>
-                                        <span className={`uic-cost-badge ${row.always ? 'always' : 'sometimes'}`}>
+                                        <span className={`ucc-cost-badge ${row.always ? 'always' : 'sometimes'}`}>
                                             {row.always ? 'Always Extra' : 'Sometimes'}
                                         </span>
                                     </div>
-                                    <h3 className="uic-cost-card-title">{row.expense}</h3>
-                                    <p className="uic-cost-card-desc">{row.desc}</p>
+                                    <h3 className="ucc-cost-card-title">{row.expense}</h3>
+                                    <p className="ucc-cost-card-desc">{row.desc}</p>
                                 </div>
                             )
                         })}
                     </div>
 
-                    <div className="uic-costs-footnote">
+                    <div className="ucc-costs-footnote">
                         <AlertCircle size={15} />
                         <span>Take these additional travel expenses into consideration when drafting your final cruise budget.</span>
                     </div>
@@ -533,35 +533,35 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── AVERAGE COST FOR COUPLES ── */}
-            <section className="uic-couples-section">
-                <div className="uic-couples-container">
-                    <span className="uic-eyebrow">COUPLES PRICING</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>Average Cost for Couples</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-couples-intro">Many travelers book as couples. Typical total cruise fares before airfare may range from:</p>
+            <section className="ucc-couples-section">
+                <div className="ucc-couples-container">
+                    <span className="ucc-eyebrow">COUPLES PRICING</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Average Cost for Couples</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-couples-intro">Many travelers book as couples. Typical total cruise fares before airfare may range from:</p>
 
-                    <div className="uic-couples-grid">
-                        {uicCoupleCost.map((row, idx) => (
-                            <div key={idx} className="uic-couple-card">
+                    <div className="ucc-couples-grid">
+                        {uccCoupleCost.map((row, idx) => (
+                            <div key={idx} className="ucc-couple-card">
                                 {/* Card Top — navy header */}
-                                <div className="uic-couple-card-header">
-                                    <div className="uic-couple-icon"><Clock size={20} /></div>
-                                    <span className="uic-couple-length">{row.length}</span>
-                                    <div className="uic-couple-users"><Users size={13} /><span>Per Couple</span></div>
+                                <div className="ucc-couple-card-header">
+                                    <div className="ucc-couple-icon"><Clock size={20} /></div>
+                                    <span className="ucc-couple-length">{row.length}</span>
+                                    <div className="ucc-couple-users"><Users size={13} /><span>Per Couple</span></div>
                                 </div>
                                 {/* Card Bottom — price row */}
-                                <div className="uic-couple-card-body">
-                                    <div className="uic-couple-price-row">
-                                        <span className="uic-couple-label">Est. Cost</span>
-                                        <span className="uic-couple-price">{row.price}</span>
+                                <div className="ucc-couple-card-body">
+                                    <div className="ucc-couple-price-row">
+                                        <span className="ucc-couple-label">Est. Cost</span>
+                                        <span className="ucc-couple-price">{row.price}</span>
                                     </div>
-                                    <span className="uic-couple-note">Before airfare · Double Occ.</span>
+                                    <span className="ucc-couple-note">Before airfare · Double Occ.</span>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="uic-couples-footnote">
+                    <div className="ucc-couples-footnote">
                         <AlertCircle size={15} />
                         <span>Prices vary depending on promotions, cabin selection, and departure date.</span>
                     </div>
@@ -569,34 +569,34 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── WORTH THE PRICE ── */}
-            <section className="uic-value-section">
-                <div className="uic-value-container">
-                    <div className="uic-value-grid-split">
+            <section className="ucc-value-section">
+                <div className="ucc-value-container">
+                    <div className="ucc-value-grid-split">
 
                         {/* Left Side: Editorial Argument */}
-                        <div className="uic-value-editorial-col">
-                            <div className="uic-value-eyebrow-row">
+                        <div className="ucc-value-editorial-col">
+                            <div className="ucc-value-eyebrow-row">
                                 <Gem size={18} />
-                                <span className="uic-value-eyebrow-text">IS IT WORTH THE PRICE?</span>
+                                <span className="ucc-value-eyebrow-text">IS IT WORTH THE PRICE?</span>
                             </div>
-                            <h2 className="uic-value-heading">Are Uniworld River Cruises Worth the Price?</h2>
-                            <p className="uic-value-body">
+                            <h2 className="ucc-value-heading">Are Uniworld River Cruises Worth the Price?</h2>
+                            <p className="ucc-value-body">
                                 Rather than comparing only the initial fare, many travelers evaluate the total vacation value. When all day-to-day luxuries are fully included, Uniworld offers highly competitive value in the luxury market.
                             </p>
-                            <div className="uic-value-quote-box">
-                                <p className="uic-value-emphasis">
+                            <div className="ucc-value-quote-box">
+                                <p className="ucc-value-emphasis">
                                     "When these inclusions are considered together, travelers often spend significantly less out-of-pocket onboard than on mainstream lines."
                                 </p>
                             </div>
                         </div>
 
                         {/* Right Side: The Luxury Inclusion Card */}
-                        <div className="uic-value-card">
-                            <h3 className="uic-value-card-title">What's Covered in Your Fare</h3>
-                            <p className="uic-value-card-subtitle">Included services that would typically cost extra on other cruises:</p>
-                            <div className="uic-value-chip-row">
-                                {uicWorthIncluded.map((item, idx) => (
-                                    <span key={idx} className="uic-value-chip">
+                        <div className="ucc-value-card">
+                            <h3 className="ucc-value-card-title">What's Covered in Your Fare</h3>
+                            <p className="ucc-value-card-subtitle">Included services that would typically cost extra on other cruises:</p>
+                            <div className="ucc-value-chip-row">
+                                {uccWorthIncluded.map((item, idx) => (
+                                    <span key={idx} className="ucc-value-chip">
                                         <CheckCircle size={13} />
                                         {item}
                                     </span>
@@ -609,26 +609,26 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── BEST DEALS ── */}
-            <section className="uic-deals-section">
-                <div className="uic-deals-container">
-                    <span className="uic-eyebrow">SAVING STRATEGIES</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>How to Find the Best Uniworld River Cruise Deals</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-table-intro">Booking strategically can lead to significant savings.</p>
+            <section className="ucc-deals-section">
+                <div className="ucc-deals-container">
+                    <span className="ucc-eyebrow">SAVING STRATEGIES</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>How to Find the Best Uniworld River Cruise Deals</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-table-intro">Booking strategically can lead to significant savings.</p>
 
-                    <div className="uic-deals-grid">
-                        {uicDealTips.map((item, idx) => {
+                    <div className="ucc-deals-grid">
+                        {uccDealTips.map((item, idx) => {
                             const DealIcon = item.Icon
                             return (
-                                <div key={idx} className="uic-deal-card">
-                                    <div className="uic-deal-card-header">
-                                        <div className="uic-deal-icon"><DealIcon size={20} /></div>
-                                        <span className="uic-deal-step-num">{String(idx + 1).padStart(2, '0')}</span>
+                                <div key={idx} className="ucc-deal-card">
+                                    <div className="ucc-deal-card-header">
+                                        <div className="ucc-deal-icon"><DealIcon size={20} /></div>
+                                        <span className="ucc-deal-step-num">{String(idx + 1).padStart(2, '0')}</span>
                                     </div>
-                                    <h3 className="uic-deal-title">{item.title}</h3>
-                                    <p className="uic-deal-body">{item.body}</p>
+                                    <h3 className="ucc-deal-title">{item.title}</h3>
+                                    <p className="ucc-deal-body">{item.body}</p>
                                     {item.items.length > 0 && (
-                                        <ul className="uic-deal-items-list">
+                                        <ul className="ucc-deal-items-list">
                                             {item.items.map((listItem, i) => (
                                                 <li key={i}>
                                                     <CheckCircle size={12} />
@@ -645,35 +645,35 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── COMPARISON ── */}
-            <section className="uic-comparison-section uic-bg-slate">
-                <div className="uic-comparison-container">
-                    <span className="uic-eyebrow">HOW UNIWORLD COMPARES</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other Luxury River Cruise Lines</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-comparison-intro">Comparing included services rather than base fares provides a more accurate measure of overall value.</p>
+            <section className="ucc-comparison-section ucc-bg-slate">
+                <div className="ucc-comparison-container">
+                    <span className="ucc-eyebrow">HOW UNIWORLD COMPARES</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other Luxury River Cruise Lines</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-comparison-intro">Comparing included services rather than base fares provides a more accurate measure of overall value.</p>
 
-                    <div className="uic-compare-list">
-                        {uicComparison.map((row, idx) => (
-                            <div key={idx} className="uic-compare-item">
-                                <div className="uic-compare-feature-name">
-                                    <div className="uic-compare-indicator"></div>
+                    <div className="ucc-compare-list">
+                        {uccComparison.map((row, idx) => (
+                            <div key={idx} className="ucc-compare-item">
+                                <div className="ucc-compare-feature-name">
+                                    <div className="ucc-compare-indicator"></div>
                                     <span>{row.feature}</span>
                                 </div>
-                                <div className="uic-compare-grid-cols">
-                                    <div className="uic-compare-brand-col uniworld">
-                                        <span className="uic-compare-brand-label">Uniworld</span>
-                                        <span className="uic-compare-value">{row.uniworld}</span>
+                                <div className="ucc-compare-grid-cols">
+                                    <div className="ucc-compare-brand-col uniworld">
+                                        <span className="ucc-compare-brand-label">Uniworld</span>
+                                        <span className="ucc-compare-value">{row.uniworld}</span>
                                     </div>
-                                    <div className="uic-compare-brand-col typical">
-                                        <span className="uic-compare-brand-label">Competitors</span>
-                                        <span className="uic-compare-value">{row.typical}</span>
+                                    <div className="ucc-compare-brand-col typical">
+                                        <span className="ucc-compare-brand-label">Competitors</span>
+                                        <span className="ucc-compare-value">{row.typical}</span>
                                     </div>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="uic-comparison-footnote">
+                    <div className="ucc-comparison-footnote">
                         <AlertCircle size={15} />
                         <span>Uniworld's boutique model ensures a high ratio of all-inclusive features per sailing compared to the industry standard.</span>
                     </div>
@@ -681,28 +681,28 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── CHEAPEST TIME TO BOOK ── */}
-            <section className="uic-timing-section">
-                <div className="uic-timing-container">
-                    <span className="uic-eyebrow">TIMING YOUR BOOKING</span>
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>When Is the Cheapest Time to Book?</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <p className="uic-timing-intro">Understanding seasonal pricing cycles can help you secure the best value.</p>
+            <section className="ucc-timing-section">
+                <div className="ucc-timing-container">
+                    <span className="ucc-eyebrow">TIMING YOUR BOOKING</span>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>When Is the Cheapest Time to Book?</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <p className="ucc-timing-intro">Understanding seasonal pricing cycles can help you secure the best value.</p>
 
-                    <div className="uic-timing-grid">
-                        {uicCheapestTimes.map((item, idx) => (
-                            <div key={idx} className="uic-timing-card">
-                                <div className="uic-timing-card-icon">
+                    <div className="ucc-timing-grid">
+                        {uccCheapestTimes.map((item, idx) => (
+                            <div key={idx} className="ucc-timing-card">
+                                <div className="ucc-timing-card-icon">
                                     <CalendarDays size={20} />
                                 </div>
-                                <div className="uic-timing-card-content">
-                                    <span className="uic-timing-card-label">Strategy {idx + 1}</span>
-                                    <h4 className="uic-timing-card-title">{item}</h4>
+                                <div className="ucc-timing-card-content">
+                                    <span className="ucc-timing-card-label">Strategy {idx + 1}</span>
+                                    <h4 className="ucc-timing-card-title">{item}</h4>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="uic-timing-footnote">
+                    <div className="ucc-timing-footnote">
                         <AlertCircle size={15} />
                         <span>Holiday cruises, tulip season, and Christmas Market sailings generally command premium pricing due to strong demand.</span>
                     </div>
@@ -710,27 +710,27 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── BUDGETING TIPS ── */}
-            <section className="uic-feature-section uic-bg-soft">
-                <div className="uic-feature-container">
-                    <div className="uic-feature-grid">
-                        <div className="uic-feature-image-col">
-                            <div className="uic-image-frame">
-                                {/* <img src={imgDeals} alt="Luxury Uniworld River Cruise sailing through Europe" className="uic-frame-img" /> */}
-                                <div className="uic-frame-overlay"></div>
-                                <div className="uic-image-badge"><Tag size={13} /><span>Smart Budgeting</span></div>
+            <section className="ucc-feature-section ucc-bg-soft">
+                <div className="ucc-feature-container">
+                    <div className="ucc-feature-grid">
+                        <div className="ucc-feature-image-col">
+                            <div className="ucc-image-frame">
+                                {/* <img src={imgDeals} alt="Luxury Uniworld River Cruise sailing through Europe" className="ucc-frame-img" /> */}
+                                <div className="ucc-frame-overlay"></div>
+                                <div className="ucc-image-badge"><Tag size={13} /><span>Smart Budgeting</span></div>
                             </div>
                         </div>
-                        <div className="uic-feature-text-col">
-                            <span className="uic-eyebrow">PLAN AHEAD</span>
-                            <h2 className="uic-section-heading">Tips for Budgeting Your Cruise</h2>
-                            <div className="uic-heading-separator-bar"></div>
-                            <p className="uic-feature-lead">Before booking, consider budgeting for:</p>
-                            <ul className="uic-check-list uic-check-list-2col">
-                                {uicBudgetItems.map((item, idx) => (
+                        <div className="ucc-feature-text-col">
+                            <span className="ucc-eyebrow">PLAN AHEAD</span>
+                            <h2 className="ucc-section-heading">Tips for Budgeting Your Cruise</h2>
+                            <div className="ucc-heading-separator-bar"></div>
+                            <p className="ucc-feature-lead">Before booking, consider budgeting for:</p>
+                            <ul className="ucc-check-list ucc-check-list-2col">
+                                {uccBudgetItems.map((item, idx) => (
                                     <li key={idx}><Compass size={14} /><span>{item}</span></li>
                                 ))}
                             </ul>
-                            <div className="uic-budget-callout">
+                            <div className="ucc-budget-callout">
                                 <AlertCircle size={16} />
                                 <span>A complete travel budget helps avoid unexpected expenses.</span>
                             </div>
@@ -740,13 +740,13 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── KEY TAKEAWAYS ── */}
-            <section className="uic-takeaways-section">
-                <div className="uic-takeaways-container">
-                    <h2 className="uic-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
-                    <div className="uic-heading-separator-bar uic-bar-centered"></div>
-                    <div className="uic-takeaways-grid">
-                        {uicKeyTakeaways.map((item, idx) => (
-                            <div key={idx} className="uic-takeaway-item">
+            <section className="ucc-takeaways-section">
+                <div className="ucc-takeaways-container">
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
+                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
+                    <div className="ucc-takeaways-grid">
+                        {uccKeyTakeaways.map((item, idx) => (
+                            <div key={idx} className="ucc-takeaway-item">
                                 <CheckCircle size={18} />
                                 <span>{item}</span>
                             </div>
@@ -817,25 +817,25 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="uic-faq-section">
-                <div className="uic-faq-container">
+            <section className="ucc-faq-section">
+                <div className="ucc-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="uic-section-heading">Frequently Asked Questions</h2>
-                        <div className="uic-heading-separator-bar uic-bar-centered"></div>
+                        <h2 className="ucc-section-heading">Frequently Asked Questions</h2>
+                        <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
                     </div>
-                    <div className="uic-faq-list-wrapper">
-                        {uicFaqs.map((faq, index) => (
+                    <div className="ucc-faq-list-wrapper">
+                        {uccFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="uic-faq-item"
-                                onClick={() => uicToggleFaq(index)}
+                                className="ucc-faq-item"
+                                onClick={() => uccToggleFaq(index)}
                             >
-                                <div className="uic-faq-question-row">
+                                <div className="ucc-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="uic-faq-toggle-icon">{uicActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="ucc-faq-toggle-icon">{uccActiveFaq === index ? '−' : '+'}</span>
                                 </div>
-                                {uicActiveFaq === index && (
-                                    <p className="uic-faq-answer-text">{faq.answer}</p>
+                                {uccActiveFaq === index && (
+                                    <p className="ucc-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
                         ))}
@@ -844,30 +844,30 @@ function UniworldRiverCruiseCost() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="uic-cta-redesign-section">
-                <div className="uic-cta-aurora-glow"></div>
-                <div className="uic-cta-crystal uic-cta-crystal-1"></div>
-                <div className="uic-cta-crystal uic-cta-crystal-2"></div>
-                <div className="uic-cta-crystal uic-cta-crystal-3"></div>
-                <div className="uic-cta-grid-lines"></div>
+            <section className="ucc-cta-redesign-section">
+                <div className="ucc-cta-aurora-glow"></div>
+                <div className="ucc-cta-crystal ucc-cta-crystal-1"></div>
+                <div className="ucc-cta-crystal ucc-cta-crystal-2"></div>
+                <div className="ucc-cta-crystal ucc-cta-crystal-3"></div>
+                <div className="ucc-cta-grid-lines"></div>
 
-                <div className="uic-cta-content">
-                    <div className="uic-cta-compass-ring">
+                <div className="ucc-cta-content">
+                    <div className="ucc-cta-compass-ring">
                         <Compass size={28} />
                     </div>
-                    <span className="uic-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="uic-cta-title">Ready to Find Your <br /> Perfect Uniworld Sailing?</h2>
-                    <div className="uic-cta-bar"></div>
-                    <p className="uic-cta-subtitle">
+                    <span className="ucc-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
+                    <h2 className="ucc-cta-title">Ready to Find Your <br /> Perfect Uniworld Sailing?</h2>
+                    <div className="ucc-cta-bar"></div>
+                    <p className="ucc-cta-subtitle">
                         Compare Uniworld itineraries, review current promotions, and choose the cruise that best fits your destination, travel style, and budget. Booking early can help secure preferred cabins and the most attractive fares.
                     </p>
-                    <div className="uic-cta-actions">
-                        <Link to="/contact" className="uic-cta-primary-btn">
+                    <div className="ucc-cta-actions">
+                        <Link to="/contact" className="ucc-cta-primary-btn">
                             <Phone size={18} />
                             <span>Schedule a Consultation</span>
-                            <ArrowRight size={16} className="uic-cta-btn-arrow" />
+                            <ArrowRight size={16} className="ucc-cta-btn-arrow" />
                         </Link>
-                        <Link to="/uniworld-river-cruises" className="uic-cta-secondary-btn">
+                        <Link to="/uniworld-river-cruises" className="ucc-cta-secondary-btn">
                             <LayoutList size={18} />
                             <span>Explore Uniworld Itineraries</span>
                         </Link>
