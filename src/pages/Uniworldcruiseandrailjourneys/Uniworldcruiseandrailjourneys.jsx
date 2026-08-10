@@ -83,64 +83,64 @@ function UniworldCruiseAndRailJourneys() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail",
                 "name": "Uniworld Cruise and Rail Journeys",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail",
                 "description": "Discover Uniworld Cruise and Rail Journeys combining luxury river cruises with iconic European train vacations. Learn what's included, destinations, pricing, pros, cons, and who these journeys are best for.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, rail journeys, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail#article",
                 "headline": "Uniworld Cruise and Rail Journeys",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail",
                 "description": "Expert guide to Uniworld Cruise and Rail Journeys featuring luxury river cruises, scenic rail experiences, premium accommodations, destinations, pricing, and travel planning tips.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-cruise-and-rail.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-cruise-and-rail.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Cruise and Rail Vacation Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury Cruise and Rail Consulting",
                 "description": "Expert planning services for luxury river cruises and scenic rail journeys, helping travelers choose the ideal itinerary, accommodations, and travel experience."
@@ -152,19 +152,19 @@ function UniworldCruiseAndRailJourneys() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Cruise and Rail Journeys",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cruise-and-rail"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/cruise-and-rail"
                     }
                 ]
             },

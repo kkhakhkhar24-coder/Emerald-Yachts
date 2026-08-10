@@ -172,13 +172,13 @@ function UniworldSoloTravel() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Uniworld Solo River Cruises and Single Supplement Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/solo-travel/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/solo-travel/",
                 "description": "Complete guide to Uniworld solo river cruises, single supplements, cabins, costs, safety, and travel planning.",
                 "inLanguage": "en"
             },
@@ -187,16 +187,16 @@ function UniworldSoloTravel() {
                 "headline": "Uniworld Solo River Cruises and Single Supplement Guide",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/solo-travel/" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/solo-travel/" },
                 "datePublished": "2026-08-07",
                 "dateModified": "2026-08-07"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Solo Travel", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/solo-travel/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Solo Travel", "item": "https://www.tripsandships.com/uniworld-river-cruises/solo-travel/" }
                 ]
             },
             {

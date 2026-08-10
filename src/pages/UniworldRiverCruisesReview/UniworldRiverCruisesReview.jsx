@@ -94,64 +94,64 @@ function UniworldRiverCruisesReview() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises-review",
                 "name": "Uniworld River Cruises Review: Pros, Cons & Who It Is Best For",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises-review",
                 "description": "Read our expert Uniworld River Cruises Review covering ships, dining, cabins, service, pricing, excursions, pros, cons, and who should book a Uniworld river cruise.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises-review#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, river cruises, expedition cruises, yacht cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises-review#article",
                 "headline": "Uniworld River Cruises Review: Pros, Cons & Who It Is Best For",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises-review",
                 "description": "Expert review of Uniworld River Cruises including luxury accommodations, dining, service, excursions, pricing, destinations, and who should choose Uniworld.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-river-cruises-review.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-river-cruises-review.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises-review"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury River Cruise Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert river cruise planning and comparison services helping travelers choose the best luxury river cruise line, itinerary, and accommodations."
@@ -163,19 +163,19 @@ function UniworldRiverCruisesReview() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld River Cruises Review",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/review"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises-review"
                     }
                 ]
             },

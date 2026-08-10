@@ -148,59 +148,59 @@ function UniworldRhineRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhine",
                 "name": "Uniworld Rhine River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/rhine",
                 "description": "Discover Uniworld Rhine River Cruises featuring luxury boutique ships, fairytale castles, Rhine Gorge, gourmet dining, all-inclusive amenities, and unforgettable European river cruise experiences.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhine#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhine#article",
                 "headline": "Uniworld Rhine River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/rhine",
                 "description": "Expert guide to Uniworld Rhine River Cruises including destinations, castles, Rhine Gorge, pricing, what's included, dining, excursions, and luxury travel planning.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-rhine-river-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine" }
+                "image": "https://www.tripsandships.com/images/uniworld-rhine-river-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhine" }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Rhine River Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Rhine River cruises, helping travelers compare itineraries, select accommodations, and create unforgettable European vacations."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Uniworld Rhine River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhine" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Uniworld Rhine River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/rhine" }
                 ]
             },
             {

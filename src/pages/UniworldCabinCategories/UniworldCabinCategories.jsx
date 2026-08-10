@@ -175,13 +175,13 @@ function UniworldCabinCategories() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Uniworld Cabin Categories Explained",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cabin-categories/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/cabin-categories/",
                 "description": "Learn about Uniworld cabin categories, including Classic, Deluxe, French Balcony, and Suites. Compare features, amenities, and choose the best cabin.",
                 "inLanguage": "en"
             },
@@ -190,16 +190,16 @@ function UniworldCabinCategories() {
                 "headline": "Uniworld Cabin Categories Explained",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cabin-categories/" },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tripsandships.com/uniworld-river-cruises/cabin-categories/" },
                 "datePublished": "2026-08-06",
                 "dateModified": "2026-08-06"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Cabin Categories", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cabin-categories/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Cabin Categories", "item": "https://www.tripsandships.com/uniworld-river-cruises/cabin-categories/" }
                 ]
             },
             {

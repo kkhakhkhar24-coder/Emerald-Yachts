@@ -157,59 +157,59 @@ function ExploraVsScenic() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic",
+                "@id": "https://www.tripsandships.com/explora-vs-scenic",
                 "name": "Explora vs Scenic",
-                "url": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic",
+                "url": "https://www.tripsandships.com/explora-vs-scenic",
                 "description": "Compare Explora Journeys vs Scenic Luxury Cruises with expert insights from Trips & Ships Luxury Travel. Discover differences in ships, suites, dining, inclusions, expedition experiences, service, pricing, and destinations.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/explora-vs-scenic#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruise vacations, expedition cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic#article",
+                "@id": "https://www.tripsandships.com/explora-vs-scenic#article",
                 "headline": "Explora vs Scenic",
-                "url": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic",
+                "url": "https://www.tripsandships.com/explora-vs-scenic",
                 "description": "Expert comparison of Explora Journeys and Scenic Luxury Cruises including accommodations, ships, dining, destinations, expedition experiences, pricing, inclusions, and onboard luxury.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/explora-vs-scenic.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic" }
+                "image": "https://www.tripsandships.com/images/explora-vs-scenic.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/explora-vs-scenic" }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting",
                 "description": "Expert luxury cruise planning and comparison services helping travelers select the ideal luxury cruise line based on travel style, destination preferences, and vacation goals."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Luxury Cruise Comparisons", "item": "https://www.tripsshipsluxurytravel.com/luxury-cruise-comparisons" },
-                    { "@type": "ListItem", "position": 3, "name": "Explora vs Scenic", "item": "https://www.tripsshipsluxurytravel.com/explora-vs-scenic" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Luxury Cruise Comparisons", "item": "https://www.tripsandships.com/luxury-cruise-comparisons" },
+                    { "@type": "ListItem", "position": 3, "name": "Explora vs Scenic", "item": "https://www.tripsandships.com/explora-vs-scenic" }
                 ]
             },
             {

@@ -162,59 +162,59 @@ function ScenicFoodReview() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-food-review",
+                "@id": "https://www.tripsandships.com/scenic-food-review",
                 "name": "Scenic Food Review",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-food-review",
+                "url": "https://www.tripsandships.com/scenic-food-review",
                 "description": "Read our Scenic Food Review and discover what to expect from dining aboard Scenic Eclipse and Scenic Eclipse II, including restaurants, cuisine, beverages, service, and our expert opinion.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-food-review#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-food-review#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-food-review#article",
+                "@id": "https://www.tripsandships.com/scenic-food-review#article",
                 "headline": "Scenic Food Review",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-food-review",
+                "url": "https://www.tripsandships.com/scenic-food-review",
                 "description": "Expert review of Scenic Cruises dining experience, including restaurants, culinary quality, premium beverages, service, and overall value aboard Scenic Eclipse and Scenic Eclipse II.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-food-review.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-food-review" }
+                "image": "https://www.tripsandships.com/images/scenic-food-review.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-food-review" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting",
                 "description": "Expert Scenic cruise planning and consultation services helping travelers compare ships, dining experiences, itineraries, and luxury cruise options."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Food Review", "item": "https://www.tripsshipsluxurytravel.com/scenic-food-review" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Food Review", "item": "https://www.tripsandships.com/scenic-food-review" }
                 ]
             },
             {

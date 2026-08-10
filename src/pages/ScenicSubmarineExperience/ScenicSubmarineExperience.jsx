@@ -98,57 +98,57 @@ function ScenicSubmarineExperience() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience",
+                "@id": "https://www.tripsandships.com/scenic-submarine-experience",
                 "name": "Scenic Submarine Experience",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience",
+                "url": "https://www.tripsandships.com/scenic-submarine-experience",
                 "description": "Discover the Scenic Submarine Experience aboard Scenic Eclipse, including Scenic Neptune™ submersible dives, marine life, destinations, safety, and expert review.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-submarine-experience#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in Scenic Eclipse expeditions, submarine excursions, and world-class cruise programs."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience#article",
+                "@id": "https://www.tripsandships.com/scenic-submarine-experience#article",
                 "headline": "Scenic Submarine Experience",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience",
+                "url": "https://www.tripsandships.com/scenic-submarine-experience",
                 "description": "Expert review of the Scenic Submarine Experience aboard Scenic Eclipse, including Scenic Neptune™ dives, destinations, marine life, safety, and overall value.",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience" }
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-submarine-experience" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Submarine Experience", "item": "https://www.tripsshipsluxurytravel.com/scenic-submarine-experience" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Submarine Experience", "item": "https://www.tripsandships.com/scenic-submarine-experience" }
                 ]
             },
             {

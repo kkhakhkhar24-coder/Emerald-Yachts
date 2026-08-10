@@ -83,64 +83,64 @@ function UniworldEgyptNileRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile",
                 "name": "Uniworld Egypt and Nile River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile",
                 "description": "Discover Uniworld Egypt and Nile River Cruises featuring luxury boutique ships, ancient Egyptian landmarks, expert Egyptologists, and immersive cultural experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile#article",
                 "headline": "Uniworld Egypt and Nile River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile",
                 "description": "Expert guide to Uniworld Egypt and Nile River Cruises including itineraries, pricing, excursions, luxury hotels, what's included, and travel planning.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-egypt-nile-river-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-egypt-nile-river-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Egypt & Nile River Cruise Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Egypt and Nile River cruises, helping travelers choose the best itinerary through ancient Egypt."
@@ -152,19 +152,19 @@ function UniworldEgyptNileRiverCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Egypt & Nile River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/egypt-nile"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/egypt-nile"
                     }
                 ]
             },

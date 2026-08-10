@@ -62,28 +62,28 @@ function UniworldFoodDining() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/food-dining/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/food-dining/",
                 "name": "Uniworld Food and Dining Review",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/food-dining/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/food-dining/",
                 "description": "Complete guide to Uniworld River Cruises food, dining, beverages, restaurants, and regional cuisine.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "Article",
                 "headline": "Uniworld Food and Dining Review",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/food-dining/"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/food-dining/"
                 },
                 "datePublished": "2026-08-07",
                 "dateModified": "2026-08-07"
@@ -91,9 +91,9 @@ function UniworldFoodDining() {
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Food & Dining", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/food-dining/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Food & Dining", "item": "https://www.tripsandships.com/uniworld-river-cruises/food-dining/" }
                 ]
             },
             {

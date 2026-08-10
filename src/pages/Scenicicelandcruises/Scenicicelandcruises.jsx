@@ -142,59 +142,59 @@ function ScenicIcelandCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises",
+                "@id": "https://www.tripsandships.com/scenic-iceland-cruises",
                 "name": "Scenic Iceland Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises",
+                "url": "https://www.tripsandships.com/scenic-iceland-cruises",
                 "description": "Discover Scenic Iceland Cruises aboard Scenic Eclipse and Scenic Eclipse II. Explore Iceland's glaciers, volcanoes, waterfalls, fjords, wildlife, and geothermal landscapes with six-star all-inclusive luxury.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-iceland-cruises#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises#article",
+                "@id": "https://www.tripsandships.com/scenic-iceland-cruises#article",
                 "headline": "Scenic Iceland Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises",
+                "url": "https://www.tripsandships.com/scenic-iceland-cruises",
                 "description": "Expert guide to Scenic Iceland Cruises featuring Scenic Eclipse and Scenic Eclipse II, including Iceland destinations, expedition experiences, wildlife, dining, accommodations, and all-inclusive luxury.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-iceland-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises" }
+                "image": "https://www.tripsandships.com/images/scenic-iceland-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-iceland-cruises" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Iceland Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Iceland Cruise Consulting",
                 "description": "Expert Scenic Iceland cruise planning and consultation services helping travelers choose the ideal Discovery Yacht, itinerary, suite, and Arctic adventure."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Iceland Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-iceland-cruises" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Iceland Cruises", "item": "https://www.tripsandships.com/scenic-iceland-cruises" }
                 ]
             },
             {

@@ -217,13 +217,13 @@ function UniworldRiverCruiseItineraries() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Best Uniworld River Cruise Itineraries",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-itineraries/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/best-itineraries/",
                 "description": "Compare the best Uniworld River Cruise itineraries across Europe, Egypt, India, and beyond.",
                 "inLanguage": "en"
             },
@@ -234,7 +234,7 @@ function UniworldRiverCruiseItineraries() {
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-itineraries/"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/best-itineraries/"
                 },
                 "datePublished": "2026-08-06",
                 "dateModified": "2026-08-06"
@@ -242,9 +242,9 @@ function UniworldRiverCruiseItineraries() {
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Best Itineraries", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-itineraries/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Itineraries", "item": "https://www.tripsandships.com/uniworld-river-cruises/best-itineraries/" }
                 ]
             },
             {
@@ -265,8 +265,7 @@ function UniworldRiverCruiseItineraries() {
                 <meta name="title" content="Best Uniworld River Cruise Itineraries" />
                 <meta name="description" content="Discover the best Uniworld River Cruise itineraries across Europe, Egypt, India, and Peru. Compare destinations, cruise lengths, highlights, and travel tips." />
                 <meta name="keywords" content="Best Uniworld River Cruise Itineraries, Uniworld itineraries, best Uniworld cruises, European river cruises, Danube river cruise, Rhine river cruise, Douro cruise, Nile cruise, luxury river cruise itineraries" />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-itineraries/" />
-                <script type="application/ld+json">{JSON.stringify(uniSchemaData)}</script>
+                                <script type="application/ld+json">{JSON.stringify(uniSchemaData)}</script>
             </Helmet>
 
             <Navbar />

@@ -145,64 +145,64 @@ function UniworldVsScenicRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic",
                 "name": "Uniworld vs Scenic River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic",
                 "description": "Compare Uniworld vs Scenic River Cruises including ships, pricing, dining, excursions, cabins, service, inclusions, destinations, and luxury travel experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic#article",
                 "headline": "Uniworld vs Scenic River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic",
                 "description": "Expert comparison of Uniworld and Scenic River Cruises including pricing, dining, luxury, excursions, destinations, service, cabins, and what's included.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-vs-scenic-river-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-vs-scenic-river-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury River Cruise Comparison Services",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert comparison and planning services helping travelers choose between Uniworld, Scenic, and other leading luxury river cruise lines."
@@ -214,19 +214,19 @@ function UniworldVsScenicRiverCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld vs Scenic River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-scenic"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-scenic"
                     }
                 ]
             },

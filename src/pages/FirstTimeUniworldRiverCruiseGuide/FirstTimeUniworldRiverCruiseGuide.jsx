@@ -166,13 +166,13 @@ function FirstTimeUniworldGuide() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "First-Time Uniworld River Cruise Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/first-time-guide/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/first-time-guide/",
                 "description": "Complete guide for first-time Uniworld River Cruise travelers covering planning, cabins, dining, excursions, packing, and onboard expectations.",
                 "inLanguage": "en"
             },
@@ -183,7 +183,7 @@ function FirstTimeUniworldGuide() {
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/first-time-guide/"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/first-time-guide/"
                 },
                 "datePublished": "2026-08-06",
                 "dateModified": "2026-08-06"
@@ -191,9 +191,9 @@ function FirstTimeUniworldGuide() {
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "First-Time Guide", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/first-time-guide/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "First-Time Guide", "item": "https://www.tripsandships.com/uniworld-river-cruises/first-time-guide/" }
                 ]
             },
             {
@@ -214,8 +214,7 @@ function FirstTimeUniworldGuide() {
                 <meta name="title" content="First-Time Uniworld River Cruise Guide" />
                 <meta name="description" content="Planning your first Uniworld River Cruise? Learn what to expect, what's included, packing tips, cabin advice, excursions, dining, and booking recommendations." />
                 <meta name="keywords" content="First-Time Uniworld River Cruise Guide, first Uniworld cruise, Uniworld tips, Uniworld beginner guide, what to expect on Uniworld, luxury river cruise guide, Uniworld travel tips, river cruise for beginners" />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/first-time-guide/" />
-                <script type="application/ld+json">{JSON.stringify(ftuwgSchemaData)}</script>
+                                <script type="application/ld+json">{JSON.stringify(ftuwgSchemaData)}</script>
             </Helmet>
 
             <Navbar />

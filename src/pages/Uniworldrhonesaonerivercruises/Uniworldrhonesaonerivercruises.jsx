@@ -83,64 +83,64 @@ function UniworldRhoneSaoneRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone",
                 "name": "Uniworld Rhône and Saône River Cruises: Burgundy and Provence",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone",
                 "description": "Discover Uniworld Rhône and Saône River Cruises through Burgundy and Provence featuring luxury boutique ships, gourmet dining, renowned wine regions, and all-inclusive river cruise experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone#article",
                 "headline": "Uniworld Rhône and Saône River Cruises: Burgundy and Provence",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone",
                 "description": "Expert guide to Uniworld Rhône and Saône River Cruises including Burgundy and Provence itineraries, wine regions, pricing, excursions, dining, and luxury travel planning.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-rhone-saone-river-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-rhone-saone-river-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Rhône & Saône River Cruise Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Rhône and Saône River cruises, helping travelers choose the best Burgundy and Provence itinerary."
@@ -152,19 +152,19 @@ function UniworldRhoneSaoneRiverCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Rhône & Saône River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/rhone-saone"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone"
                     }
                 ]
             },

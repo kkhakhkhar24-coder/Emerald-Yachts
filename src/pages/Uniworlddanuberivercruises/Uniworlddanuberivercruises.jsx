@@ -197,59 +197,59 @@ function Uniworlddanuberivercruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/danube",
                 "name": "Uniworld Danube River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/danube",
                 "description": "Thinking about a Uniworld Danube River Cruise? Discover the best itineraries, destinations, pricing, what's included, reviews, and whether a luxury Danube cruise is worth it.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/uniworld-river-cruises/danube#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/danube#article",
                 "headline": "Uniworld Danube River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/danube",
                 "description": "Expert guide to Uniworld Danube River Cruises including itineraries, destinations, pricing, what's included, reviews, and whether a luxury Danube cruise is worth it.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-danube-river-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube" }
+                "image": "https://www.tripsandships.com/images/uniworld-danube-river-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/danube" }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Danube River Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Danube River cruises, helping travelers compare itineraries, select ships/suites, and create custom European vacations."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Uniworld Danube River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/danube" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Uniworld Danube River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/danube" }
                 ]
             },
             {

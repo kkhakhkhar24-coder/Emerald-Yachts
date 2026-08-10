@@ -154,15 +154,15 @@ import UniworldBestItineraries from "./pages/UniworldBestItineraries/UniworldBes
 import FirstTimeUniworldRiverCruiseGuide from "./pages/FirstTimeUniworldRiverCruiseGuide/FirstTimeUniworldRiverCruiseGuide";
 import UniworldVeniceItalyRiverCruises from "./pages/UniworldVeniceItalyRiverCruises/UniworldVeniceItalyRiverCruises";
 import UniworldEgyptNileRiverCruises from "./pages/UniworldEgyptNileRiverCruises/UniworldEgyptNileRiverCruises";
-import Uniworldvsavalonwaterways from "./pages/Uniworldvsavalonwaterways/Uniworldvsavalonwaterways";
-import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
-import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
+// import Uniworldvsavalonwaterways from "./pages/Uniworldvsavalonwaterways/Uniworldvsavalonwaterways";
+// import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
+// import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
 import UniworldFoodDining from "./pages/UniworldFoodDining/UniworldFoodDining";
 import UniworldDressCodePacking from "./pages/UniworldDressCodePacking/UniworldDressCodePacking";
 import UniworldAirfareTransfers from "./pages/UniworldAirfareTransfers/UniworldAirfareTransfers";
 import UniworldSoloTravel from "./pages/UniworldSoloTravel/UniworldSoloTravel";
 import UniworldFamilyCruises from "./pages/UniworldFamilyCruises/UniworldFamilyCruises";
-import UniworldChristmasMarketCruises from "./pages/UniworldChristmasMarketCruises/UniworldChristmasMarketCruises";
+// import UniworldChristmasMarketCruises from "./pages/UniworldChristmasMarketCruises/UniworldChristmasMarketCruises";
 
 function App() {
   return (
@@ -874,12 +874,12 @@ function App() {
             element={<UniworldEgyptNileRiverCruises />}
           />
 
-          <Route
+          {/* <Route
             path="/uniworld-river-cruises/uniworld-vs-avalon"
             element={<Uniworldvsavalonwaterways />}
-          />
+          /> */}
 
-          <Route
+          {/* <Route
             path="/uniworld-river-cruises/uniworld-vs-tauck"
             element={<Uniworldvstauckrivercruises />}
           />
@@ -887,7 +887,7 @@ function App() {
           <Route
             path="/uniworld-river-cruises/uniworld-vs-riverside"
             element={<Uniworldvsriversideluxurycruises />}
-          />
+          /> */}
 
           <Route
             path="/uniworld-river-cruises/food-dining/"
@@ -913,10 +913,11 @@ function App() {
             path="/uniworld-river-cruises/family-cruises/"
             element={<UniworldFamilyCruises />}
           />
-          <Route
+
+          {/* <Route
             path="/uniworld-river-cruises/christmas-markets/"
             element={<UniworldChristmasMarketCruises />}
-          />
+          /> */}
 
         </Routes>
       </BrowserRouter>

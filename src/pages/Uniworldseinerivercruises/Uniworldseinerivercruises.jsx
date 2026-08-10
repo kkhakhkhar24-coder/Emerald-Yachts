@@ -83,64 +83,64 @@ function UniworldSeineRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine",
                 "name": "Uniworld Seine River Cruises: Paris and Normandy",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/seine",
                 "description": "Discover Uniworld Seine River Cruises featuring Paris, Normandy, luxury boutique ships, gourmet French cuisine, iconic excursions, and all-inclusive river cruise experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine#article",
                 "headline": "Uniworld Seine River Cruises: Paris and Normandy",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/seine",
                 "description": "Expert guide to Uniworld Seine River Cruises featuring Paris, Normandy, itineraries, pricing, dining, excursions, and luxury travel planning.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-seine-river-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Seine River Cruise Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Seine River cruises, helping travelers choose the best Paris and Normandy itinerary."
@@ -152,19 +152,19 @@ function UniworldSeineRiverCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Seine River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/seine"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/seine"
                     }
                 ]
             },

@@ -388,59 +388,59 @@ function ScenicLuxuryYachtGuide() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide",
+                "@id": "https://www.tripsandships.com/scenic-luxury-yacht-guide",
                 "name": "Scenic Luxury Yacht Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide",
+                "url": "https://www.tripsandships.com/scenic-luxury-yacht-guide",
                 "description": "Complete guide to Scenic Luxury Yachts including Scenic Eclipse, Scenic Eclipse II, destinations, suites, dining, expedition experiences, and expert cruise planning.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-luxury-yacht-guide#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide#article",
+                "@id": "https://www.tripsandships.com/scenic-luxury-yacht-guide#article",
                 "headline": "Scenic Luxury Yacht Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide",
+                "url": "https://www.tripsandships.com/scenic-luxury-yacht-guide",
                 "description": "Expert guide to Scenic Eclipse luxury yacht cruises including ships, suites, dining, expedition experiences, destinations, pricing, and all-inclusive luxury.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-luxury-yacht-guide.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide" }
+                "image": "https://www.tripsandships.com/images/scenic-luxury-yacht-guide.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-luxury-yacht-guide" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting",
                 "description": "Expert Scenic cruise planning and comparison services helping travelers choose the ideal Scenic itinerary, suite, and destination."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Luxury Yacht Guide", "item": "https://www.tripsshipsluxurytravel.com/scenic-luxury-yacht-guide" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Luxury Yacht Guide", "item": "https://www.tripsandships.com/scenic-luxury-yacht-guide" }
                 ]
             },
             {

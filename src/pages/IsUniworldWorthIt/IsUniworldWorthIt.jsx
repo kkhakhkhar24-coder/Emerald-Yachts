@@ -173,13 +173,13 @@ function IsUniworldWorthTheMoney() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Is Uniworld Worth the Money?",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/is-uniworld-worth-it/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/is-uniworld-worth-it/",
                 "description": "Learn whether Uniworld River Cruises are worth the money by comparing value, inclusions, luxury amenities, and overall experience.",
                 "inLanguage": "en"
             },
@@ -188,16 +188,16 @@ function IsUniworldWorthTheMoney() {
                 "headline": "Is Uniworld Worth the Money?",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/is-uniworld-worth-it/" },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tripsandships.com/uniworld-river-cruises/is-uniworld-worth-it/" },
                 "datePublished": "2026-08-05",
                 "dateModified": "2026-08-05"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Is Uniworld Worth the Money?", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/is-uniworld-worth-it/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Is Uniworld Worth the Money?", "item": "https://www.tripsandships.com/uniworld-river-cruises/is-uniworld-worth-it/" }
                 ]
             },
             {
@@ -218,8 +218,7 @@ function IsUniworldWorthTheMoney() {
                 <meta name="title" content="Is Uniworld Worth the Money? Luxury River Cruise Guide" />
                 <meta name="description" content="Wondering if Uniworld River Cruises are worth the cost? Compare value, inclusions, luxury, service, dining, and who benefits most before booking." />
                 <meta name="keywords" content="Is Uniworld Worth the Money, Is Uniworld worth it, Uniworld River Cruises value, luxury river cruise comparison, Uniworld all-inclusive, Uniworld vs Viking, boutique river cruises, premium river cruises" />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/is-uniworld-worth-it/" />
-                <script type="application/ld+json">{JSON.stringify(uwiSchemaData)}</script>
+                                <script type="application/ld+json">{JSON.stringify(uwiSchemaData)}</script>
             </Helmet>
 
             <Navbar />
@@ -707,7 +706,7 @@ function IsUniworldWorthTheMoney() {
                     </div>
                     <div className="luxe-expert-content-panel">
                         <span className="luxe-eyebrow">MEET THE CEO</span>
-                        <h2 className="uwi-section-heading">Insight from Angela Hughes</h2>
+                        <h2 className="uwi-section-heading" style={{color:'white'}}>Insight from Angela Hughes</h2>
                         <div className="uwi-heading-separator-bar"></div>
                         <p className="luxe-expert-quote">
                             "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."

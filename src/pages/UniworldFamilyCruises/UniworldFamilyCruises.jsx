@@ -55,33 +55,33 @@ export default function UniworldFamilyCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/family-cruises/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/family-cruises/",
                 "name": "Uniworld Family River Cruises and Generations Collection",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/family-cruises/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/family-cruises/",
                 "description": "Complete guide to Uniworld Family River Cruises and the Generations Collection, including family-friendly itineraries, activities, accommodations, and travel tips.",
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "Article",
                 "headline": "Uniworld Family River Cruises and Generations Collection",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/family-cruises/" },
+                "author": { "@id": "https://www.tripsandships.com/#organization" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/family-cruises/" },
                 "datePublished": "2026-08-08",
                 "dateModified": "2026-08-08"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Family Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/family-cruises/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Family Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/family-cruises/" }
                 ]
             },
             {
@@ -114,8 +114,7 @@ export default function UniworldFamilyCruises() {
                 <meta name="title" content="Uniworld Family River Cruises Guide" />
                 <meta name="description" content="Discover Uniworld Family River Cruises and the Generations Collection. Learn about family-friendly itineraries, activities, cabins, dining, and travel tips." />
                 <meta name="keywords" content="Uniworld Family River Cruises, Uniworld Generations Collection, family river cruises, multigenerational river cruises, Uniworld with kids, luxury family cruises, European family river cruise, Uniworld family vacations" />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/family-cruises/" />
-                <script type="application/ld+json">{JSON.stringify(ufcSchemaData)}</script>
+                                <script type="application/ld+json">{JSON.stringify(ufcSchemaData)}</script>
             </Helmet>
 
             <Navbar />

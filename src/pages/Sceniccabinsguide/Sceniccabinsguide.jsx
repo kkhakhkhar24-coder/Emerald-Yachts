@@ -188,59 +188,59 @@ function ScenicCabinsGuide() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide",
+                "@id": "https://www.tripsandships.com/scenic-cabins-guide",
                 "name": "Scenic Cabins Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide",
+                "url": "https://www.tripsandships.com/scenic-cabins-guide",
                 "description": "Discover every suite category aboard Scenic Eclipse and Scenic Eclipse II. Compare cabin sizes, amenities, butler service, locations, and luxury features to find the perfect Scenic suite for your cruise.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-cabins-guide#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide#article",
+                "@id": "https://www.tripsandships.com/scenic-cabins-guide#article",
                 "headline": "Scenic Cabins Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide",
+                "url": "https://www.tripsandships.com/scenic-cabins-guide",
                 "description": "Expert guide to Scenic Eclipse and Scenic Eclipse II suite categories, cabin locations, amenities, butler service, deck options, and tips for choosing the perfect luxury accommodation.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-cabins-guide.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide" }
+                "image": "https://www.tripsandships.com/images/scenic-cabins-guide.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-cabins-guide" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting",
                 "description": "Expert Scenic cruise planning services helping travelers compare suite categories, cabin locations, itineraries, and luxury cruise experiences."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Cabins Guide", "item": "https://www.tripsshipsluxurytravel.com/scenic-cabins-guide" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Cabins Guide", "item": "https://www.tripsandships.com/scenic-cabins-guide" }
                 ]
             },
             {

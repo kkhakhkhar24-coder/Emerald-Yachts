@@ -107,59 +107,59 @@ const wisWhyBookUs = [
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic",
+                "@id": "https://www.tripsandships.com/what-is-included-on-scenic",
                 "name": "What Is Included on Scenic?",
-                "url": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic",
+                "url": "https://www.tripsandships.com/what-is-included-on-scenic",
                 "description": "Discover everything included on Scenic Cruises, from luxury accommodations and butler service to fine dining, premium beverages, excursions, Wi-Fi, and gratuities.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/what-is-included-on-scenic#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic#article",
+                "@id": "https://www.tripsandships.com/what-is-included-on-scenic#article",
                 "headline": "What Is Included on Scenic?",
-                "url": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic",
+                "url": "https://www.tripsandships.com/what-is-included-on-scenic",
                 "description": "Expert guide explaining everything included on Scenic Cruises, including accommodations, butler service, dining, beverages, shore excursions, wellness, Wi-Fi, and gratuities.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/what-is-included-on-scenic.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic" }
+                "image": "https://www.tripsandships.com/images/what-is-included-on-scenic.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/what-is-included-on-scenic" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Cruise Consulting",
                 "description": "Expert Scenic cruise planning and consultation services helping travelers understand cruise inclusions, compare itineraries, and select the ideal luxury cruise experience."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "What Is Included on Scenic?", "item": "https://www.tripsshipsluxurytravel.com/what-is-included-on-scenic" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "What Is Included on Scenic?", "item": "https://www.tripsandships.com/what-is-included-on-scenic" }
                 ]
             },
             {

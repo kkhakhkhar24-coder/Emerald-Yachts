@@ -238,11 +238,13 @@ const schema = {
         { '@type': 'Organization', name: 'Your Company Name', url: 'https://www.example.com', logo: 'https://www.example.com/logo.png' },
         { '@type': 'WebPage', name: 'Uniworld Ships and Suites: Complete Guide', url: 'https://www.example.com/uniworld-river-cruises/ships-suites/', description: 'Explore Uniworld River Cruise ships, suites, staterooms, cabin categories, onboard amenities, and tips for choosing the best accommodation.', inLanguage: 'en' },
         { '@type': 'Article', headline: 'Uniworld Ships and Suites: Complete Guide', author: { '@type': 'Organization', name: 'Your Company Name' }, publisher: { '@type': 'Organization', name: 'Your Company Name' }, mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.example.com/uniworld-river-cruises/ships-suites/' }, datePublished: '2026-08-05', dateModified: '2026-08-05' },
-        { '@type': 'BreadcrumbList', itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.example.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Uniworld River Cruises', item: 'https://www.example.com/uniworld-river-cruises/' },
-            { '@type': 'ListItem', position: 3, name: 'Ships & Suites', item: 'https://www.example.com/uniworld-river-cruises/ships-suites/' }
-        ] },
+        {
+            '@type': 'BreadcrumbList', itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.example.com/' },
+                { '@type': 'ListItem', position: 2, name: 'Uniworld River Cruises', item: 'https://www.example.com/uniworld-river-cruises/' },
+                { '@type': 'ListItem', position: 3, name: 'Ships & Suites', item: 'https://www.example.com/uniworld-river-cruises/ships-suites/' }
+            ]
+        },
         { '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) }
     ]
 }
@@ -268,7 +270,6 @@ function UniWorldShipsSuites() {
                 <meta name="title" content="Uniworld Ships & Suites: Complete Guide" />
                 <meta name="description" content="Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin." />
                 <meta name="keywords" content="Uniworld Ships and Suites, Uniworld cruise ships, Uniworld suites, Uniworld staterooms, luxury river cruise cabins, Uniworld fleet, Uniworld room categories, boutique river cruise ships" />
-                <link rel="canonical" href="https://www.example.com/uniworld-river-cruises/ships-suites/" />
                 <script type="application/ld+json">{JSON.stringify(schema)}</script>
             </Helmet>
 
@@ -881,18 +882,18 @@ function UniWorldShipsSuites() {
                         </div>
                         <div className="luxe-expert-stats-strip">
                             <div className="luxe-expert-stat-box">
-                                <h4>40+</h4>
-                                <p>Years Designing Travel</p>
+                                <h4 className='luxe-title'>40+</h4>
+                                <p className='luxe-title'>Years Designing Travel</p>
                             </div>
                             <div className="luxe-expert-stat-box">
-                                <h4>121+</h4>
-                                <p>Countries Traveled</p>
+                                <h4 className='luxe-title'>121+</h4>
+                                <p className='luxe-title'>Countries Traveled</p>
                             </div>
                         </div>
                     </div>
                     <div className="luxe-expert-content-panel">
                         <span className="luxe-eyebrow">MEET THE CEO</span>
-                        <h2 className="uss-section-heading">Insight from Angela Hughes</h2>
+                        <h2 className="uss-section-heading" style={{color: 'white'}}>Insight from Angela Hughes</h2>
                         <div className="uss-heading-separator-bar"></div>
                         <p className="luxe-expert-quote">
                             "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."

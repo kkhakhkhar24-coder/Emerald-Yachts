@@ -90,64 +90,64 @@ function UniworldVsAvalonWaterways() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon",
                 "name": "Uniworld vs Avalon Waterways",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon",
                 "description": "Compare Uniworld vs Avalon Waterways including ships, pricing, dining, excursions, cabins, service, inclusions, destinations, and luxury river cruise experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon#article",
                 "headline": "Uniworld vs Avalon Waterways",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon",
                 "description": "Expert comparison of Uniworld and Avalon Waterways including pricing, luxury, dining, excursions, service, cabins, destinations, and what's included.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-vs-avalon-waterways.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-vs-avalon-waterways.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury River Cruise Comparison Services",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert comparison and planning services helping travelers choose between Uniworld, Avalon Waterways, and other leading luxury river cruise lines."
@@ -159,19 +159,19 @@ function UniworldVsAvalonWaterways() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld vs Avalon Waterways",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-avalon"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-avalon"
                     }
                 ]
             },

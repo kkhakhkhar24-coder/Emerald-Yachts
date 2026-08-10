@@ -177,59 +177,59 @@ function ScenicEclipseReviews() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews",
+                "@id": "https://www.tripsandships.com/scenic-eclipse-reviews",
                 "name": "Scenic Eclipse Reviews",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews",
+                "url": "https://www.tripsandships.com/scenic-eclipse-reviews",
                 "description": "Read our expert Scenic Eclipse reviews covering accommodations, dining, expedition experiences, destinations, service, inclusions, and whether Scenic Eclipse is worth the investment.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-eclipse-reviews#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews#article",
+                "@id": "https://www.tripsandships.com/scenic-eclipse-reviews#article",
                 "headline": "Scenic Eclipse Reviews",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews",
+                "url": "https://www.tripsandships.com/scenic-eclipse-reviews",
                 "description": "Expert Scenic Eclipse review covering accommodations, dining, service, expedition experiences, wellness, destinations, inclusions, and overall value.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-eclipse-reviews.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews" }
+                "image": "https://www.tripsandships.com/images/scenic-eclipse-reviews.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-eclipse-reviews" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Expedition Cruise Consulting",
                 "description": "Expert Scenic Eclipse cruise planning and comparison services helping travelers choose the best Discovery Yacht, itinerary, suite, and destination."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Eclipse Reviews", "item": "https://www.tripsshipsluxurytravel.com/scenic-eclipse-reviews" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Eclipse Reviews", "item": "https://www.tripsandships.com/scenic-eclipse-reviews" }
                 ]
             },
             {

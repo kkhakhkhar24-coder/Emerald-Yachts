@@ -90,64 +90,64 @@ function UniworldVsAmaWaterways() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways",
                 "name": "Uniworld vs AmaWaterways",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways",
                 "description": "Compare Uniworld vs AmaWaterways including ships, pricing, dining, excursions, cabins, service, inclusions, destinations, and luxury river cruise experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways#article",
                 "headline": "Uniworld vs AmaWaterways",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways",
                 "description": "Expert comparison of Uniworld and AmaWaterways including pricing, luxury, dining, excursions, service, cabins, destinations, and what's included.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-vs-amawaterways.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-vs-amawaterways.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury River Cruise Comparison Services",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert comparison and planning services helping travelers choose between Uniworld, AmaWaterways, and other leading luxury river cruise lines."
@@ -159,19 +159,19 @@ function UniworldVsAmaWaterways() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld vs AmaWaterways",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-amawaterways"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-amawaterways"
                     }
                 ]
             },

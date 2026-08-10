@@ -208,42 +208,42 @@ function UniworldRiverCruiseCost() {
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com/",
+                "url": "https://www.tripsandships.com/",
                 "logo": {
                     "@type": "ImageObject",
-                    "@id": "https://www.tripsshipsluxurytravel.com/#logo",
-                    "url": "https://www.tripsshipsluxurytravel.com/logo.png",
+                    "@id": "https://www.tripsandships.com/#logo",
+                    "url": "https://www.tripsandships.com/logo.png",
                     "caption": "Trips & Ships Luxury Travel"
                 },
                 "image": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#logo"
+                    "@id": "https://www.tripsandships.com/#logo"
                 }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/",
                 "name": "How Much Does a Uniworld River Cruise Cost?",
-                "isPartOf": { "@id": "https://www.tripsshipsluxurytravel.com/#website" },
-                "about": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/#article" }
+                "isPartOf": { "@id": "https://www.tripsandships.com/#website" },
+                "about": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/#article" }
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/#article",
                 "headline": "How Much Does a Uniworld River Cruise Cost?",
                 "description": "Discover Uniworld River Cruise prices, what's included, average costs by itinerary, suite types, seasonal pricing, and tips to find the best deals.",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/" }
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "How Much Does a Uniworld River Cruise Cost?", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/cost-deals/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "How Much Does a Uniworld River Cruise Cost?", "item": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/" }
                 ]
             },
             {
@@ -262,7 +262,6 @@ function UniworldRiverCruiseCost() {
             <Helmet>
                 <title>How Much Does a Uniworld River Cruise Cost? | Pricing Guide</title>
                 <meta name="description" content="Discover average prices, cabin options, inclusions, and tips for budgeting a Uniworld Boutique River Cruise." />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruise-cost" />
                 <script type="application/ld+json">{JSON.stringify(uccSchemaData)}</script>
             </Helmet>
 
@@ -784,7 +783,7 @@ function UniworldRiverCruiseCost() {
                             <Sparkles size={16} />
                             <span className="luxe-eyebrow">MEET THE CEO</span>
                         </div>
-                        <h2 className="medi-section-heading">Insight from Angela Hughes</h2>
+                        <h2 className="medi-section-heading1">Insight from Angela Hughes</h2>
                         <div className="medi-heading-separator-bar"></div>
 
                         <div className="luxe-expert-quote-card">

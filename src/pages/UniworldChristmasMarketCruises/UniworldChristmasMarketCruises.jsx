@@ -55,33 +55,33 @@ export default function UniworldChristmasMarketCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/christmas-markets/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/christmas-markets/",
                 "name": "Uniworld Christmas Market River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/christmas-markets/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/christmas-markets/",
                 "description": "Complete guide to Uniworld Christmas Market River Cruises including itineraries, destinations, onboard holiday experiences, and travel tips.",
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "Article",
                 "headline": "Uniworld Christmas Market River Cruises",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/christmas-markets/" },
+                "author": { "@id": "https://www.tripsandships.com/#organization" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/christmas-markets/" },
                 "datePublished": "2026-08-08",
                 "dateModified": "2026-08-08"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Christmas Market Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/christmas-markets/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Christmas Market Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/christmas-markets/" }
                 ]
             },
             {
@@ -114,8 +114,7 @@ export default function UniworldChristmasMarketCruises() {
                 <meta name="title" content="Uniworld Christmas Market River Cruises" />
                 <meta name="description" content="Discover Uniworld Christmas Market River Cruises with festive itineraries, famous European markets, onboard holiday traditions, travel tips, and booking advice." />
                 <meta name="keywords" content="Uniworld Christmas Market River Cruises, Uniworld Christmas Markets, Christmas Market river cruises, European Christmas cruises, Danube Christmas Markets, Rhine Christmas Markets, holiday river cruises, Uniworld winter cruises" />
-                <link rel="canonical" href="https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/christmas-markets/" />
-                <script type="application/ld+json">{JSON.stringify(ucmSchemaData)}</script>
+                                <script type="application/ld+json">{JSON.stringify(ucmSchemaData)}</script>
             </Helmet>
 
             <Navbar />

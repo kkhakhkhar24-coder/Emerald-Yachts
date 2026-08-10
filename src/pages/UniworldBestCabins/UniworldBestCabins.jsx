@@ -179,13 +179,13 @@ function BestUniworldCabins() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Best Uniworld Cabins and Cabins to Avoid",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-cabins/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/best-cabins/",
                 "description": "Discover the best Uniworld cabins, learn which cabin locations suit different travel styles, and compare stateroom and suite options.",
                 "inLanguage": "en"
             },
@@ -196,7 +196,7 @@ function BestUniworldCabins() {
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-cabins/"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/best-cabins/"
                 },
                 "datePublished": "2026-08-06",
                 "dateModified": "2026-08-06"
@@ -204,9 +204,9 @@ function BestUniworldCabins() {
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Best Cabins", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/best-cabins/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Cabins", "item": "https://www.tripsandships.com/uniworld-river-cruises/best-cabins/" }
                 ]
             },
             {

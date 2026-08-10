@@ -176,59 +176,59 @@ function ScenicMediterraneanCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises",
+                "@id": "https://www.tripsandships.com/scenic-mediterranean-cruises",
                 "name": "Scenic Mediterranean Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises",
+                "url": "https://www.tripsandships.com/scenic-mediterranean-cruises",
                 "description": "Discover Scenic Mediterranean Cruises aboard Scenic Eclipse and Scenic Eclipse II. Explore Italy, Greece, Croatia, France, Spain, and the Adriatic with six-star luxury, immersive excursions, and all-inclusive experiences.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-mediterranean-cruises#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises#article",
+                "@id": "https://www.tripsandships.com/scenic-mediterranean-cruises#article",
                 "headline": "Scenic Mediterranean Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises",
+                "url": "https://www.tripsandships.com/scenic-mediterranean-cruises",
                 "description": "Expert guide to Scenic Mediterranean Cruises featuring Scenic Eclipse and Scenic Eclipse II, including destinations, dining, accommodations, excursions, inclusions, and luxury travel experiences.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/scenic-mediterranean-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises" }
+                "image": "https://www.tripsandships.com/images/scenic-mediterranean-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-mediterranean-cruises" }
             },
             {
                 "@type": "Service",
                 "name": "Scenic Mediterranean Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Mediterranean Cruise Consulting",
                 "description": "Expert Scenic Mediterranean cruise planning and consultation services helping travelers choose the ideal Discovery Yacht, itinerary, suite, and Mediterranean destination."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Mediterranean Cruises", "item": "https://www.tripsshipsluxurytravel.com/scenic-mediterranean-cruises" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Scenic Mediterranean Cruises", "item": "https://www.tripsandships.com/scenic-mediterranean-cruises" }
                 ]
             },
             {

@@ -165,13 +165,13 @@ function UniworldAirfareTransfers() {
             {
                 "@type": "Organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": "https://www.tripsshipsluxurytravel.com/logo.png"
+                "url": "https://www.tripsandships.com",
+                "logo": "https://www.tripsandships.com/logo.png"
             },
             {
                 "@type": "WebPage",
                 "name": "Uniworld Airfare, Airport Transfers and Arrival Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/airfare-transfers/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/airfare-transfers/",
                 "description": "Complete guide to Uniworld airfare options, airport transfers, embarkation procedures, arrival tips, and travel planning.",
                 "inLanguage": "en"
             },
@@ -180,16 +180,16 @@ function UniworldAirfareTransfers() {
                 "headline": "Uniworld Airfare, Airport Transfers and Arrival Guide",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
                 "publisher": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/airfare-transfers/" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/airfare-transfers/" },
                 "datePublished": "2026-08-07",
                 "dateModified": "2026-08-07"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Airfare & Transfers", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/airfare-transfers/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Airfare & Transfers", "item": "https://www.tripsandships.com/uniworld-river-cruises/airfare-transfers/" }
                 ]
             },
             {

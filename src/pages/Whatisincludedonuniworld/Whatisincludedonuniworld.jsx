@@ -3,12 +3,11 @@ import './Whatisincludedonuniworld.css'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle, XCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
+    Ship, MapPin, Star, Users, CheckCircle, XCircle,
+    ArrowRight, Compass, Sparkles, Anchor, Gem,
     Crown, Phone, LayoutList, Heart, Utensils,
-    Sun, Award, Moon, Music, Mic, FileText, GraduationCap,
-    Globe, MessageSquare, Briefcase, TrendingUp, Eye, Smile,
-    Leaf, BookOpen, DollarSign, Wifi, Plane, Wine, Bed,
+    Sun, Award, Moon, Music, Mic,
+    Globe, DollarSign, Wifi, Plane, Wine, Bed,
     Bell, Waves, ShieldCheck, Coffee, AlertCircle
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
@@ -140,34 +139,34 @@ function UniworldRiverCruiseInclusions() {
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
-                "logo": { "@type": "ImageObject", "url": "https://www.tripsshipsluxurytravel.com/logo.png" }
+                "url": "https://www.tripsandships.com",
+                "logo": { "@type": "ImageObject", "url": "https://www.tripsandships.com/logo.png" }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/",
                 "name": "What Is Included on a Uniworld River Cruise?",
-                "isPartOf": { "@id": "https://www.tripsshipsluxurytravel.com/#website" },
-                "about": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/#article" }
+                "isPartOf": { "@id": "https://www.tripsandships.com/#website" },
+                "about": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/#article" }
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/#article",
                 "headline": "What Is Included on a Uniworld River Cruise?",
                 "description": "Discover what's included on a Uniworld River Cruise, from luxury accommodations and gourmet dining to excursions, beverages, gratuities, and more.",
                 "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/" }
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "What Is Included on a Uniworld River Cruise?", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/whats-included/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "What Is Included on a Uniworld River Cruise?", "item": "https://www.tripsandships.com/uniworld-river-cruises/whats-included/" }
                 ]
             },
             {
@@ -798,7 +797,7 @@ function UniworldRiverCruiseInclusions() {
             {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="luxe-expert-insight-section">
                 <div className="luxe-expert-insight-container">
-                    
+
                     {/* Left Column: Portrait & Stats Grid */}
                     <div className="luxe-expert-portrait-panel">
                         <div className="luxe-expert-img-frame">
@@ -824,7 +823,7 @@ function UniworldRiverCruiseInclusions() {
                             <Sparkles size={16} />
                             <span className="luxe-eyebrow">MEET THE CEO</span>
                         </div>
-                        <h2 className="medi-section-heading">Insight from Angela Hughes</h2>
+                        <h2 className="medi-section-heading1">Insight from Angela Hughes</h2>
                         <div className="medi-heading-separator-bar"></div>
 
                         <div className="luxe-expert-quote-card">

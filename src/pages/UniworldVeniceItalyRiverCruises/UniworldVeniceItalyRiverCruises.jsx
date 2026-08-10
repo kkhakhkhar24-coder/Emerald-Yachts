@@ -84,64 +84,64 @@ function UniworldVeniceItalyRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice",
                 "name": "Uniworld Venice and Italy River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice",
                 "description": "Discover Uniworld Venice and Italy River Cruises featuring luxury boutique ships, the Venetian Lagoon, gourmet Italian cuisine, and immersive cultural experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice#article",
                 "headline": "Uniworld Venice and Italy River Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice",
                 "description": "Expert guide to Uniworld Venice and Italy River Cruises including itineraries, pricing, excursions, dining, what's included, and luxury travel planning.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-venice-italy-river-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-venice-italy-river-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Venice & Italy River Cruise Planning",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning services for luxury Venice and Italy river cruises, helping travelers choose the best itinerary through the Venetian Lagoon and Northern Italy."
@@ -153,19 +153,19 @@ function UniworldVeniceItalyRiverCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Venice & Italy River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/italy-venice"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice"
                     }
                 ]
             },

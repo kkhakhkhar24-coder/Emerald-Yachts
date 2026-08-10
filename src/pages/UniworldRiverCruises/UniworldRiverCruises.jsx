@@ -301,54 +301,54 @@ function UniworldRiverCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises",
                 "name": "Uniworld River Cruises: Complete Guide to Luxury River Travel",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises",
                 "description": "Discover everything about Uniworld River Cruises, including destinations, ships, suites, dining, pricing, itineraries, and booking tips.",
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO"
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises#article",
                 "headline": "Uniworld River Cruises: The Complete Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises",
                 "description": "Expert guide to Uniworld River Cruises, featuring ships, destinations, luxury accommodations, dining, excursions, and all-inclusive experiences.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-river-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" }
+                "image": "https://www.tripsandships.com/images/uniworld-river-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises" }
             },
             {
                 "@type": "Service",
                 "name": "Uniworld River Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert planning and personalized advice for Uniworld River Cruises."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "River Cruises", "item": "https://www.tripsshipsluxurytravel.com/river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "River Cruises", "item": "https://www.tripsandships.com/river-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises" }
                 ]
             },
             {

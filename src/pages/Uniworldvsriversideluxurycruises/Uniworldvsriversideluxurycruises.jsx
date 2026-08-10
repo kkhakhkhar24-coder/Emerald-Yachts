@@ -143,64 +143,64 @@ function UniworldVsRiversideLuxuryCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside",
                 "name": "Uniworld vs Riverside Luxury Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside",
                 "description": "Compare Uniworld vs Riverside Luxury Cruises including ships, pricing, suites, dining, excursions, service, inclusions, destinations, and luxury river cruise experiences.",
                 "inLanguage": "en-US",
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntity": {
                     "@type": "Article",
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside#article"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside#article"
                 }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
                 "worksFor": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside#article",
                 "headline": "Uniworld vs Riverside Luxury Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside",
                 "description": "Expert comparison of Uniworld and Riverside Luxury Cruises including pricing, luxury, dining, excursions, service, cabins, destinations, and what's included.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/uniworld-vs-riverside-luxury-cruises.jpg",
+                "image": "https://www.tripsandships.com/images/uniworld-vs-riverside-luxury-cruises.jpg",
                 "author": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes"
+                    "@id": "https://www.tripsandships.com/#angela-hughes"
                 },
                 "publisher": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#organization"
+                    "@id": "https://www.tripsandships.com/#organization"
                 },
                 "mainEntityOfPage": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside"
+                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside"
                 }
             },
             {
                 "@type": "Service",
                 "name": "Luxury River Cruise Comparison Services",
                 "provider": {
-                    "@id": "https://www.tripsshipsluxurytravel.com/#travelagency"
+                    "@id": "https://www.tripsandships.com/#travelagency"
                 },
                 "serviceType": "Luxury River Cruise Consulting",
                 "description": "Expert comparison and planning services helping travelers choose between Uniworld, Riverside Luxury Cruises, and other leading luxury river cruise lines."
@@ -212,19 +212,19 @@ function UniworldVsRiversideLuxuryCruises() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsshipsluxurytravel.com"
+                        "item": "https://www.tripsandships.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Uniworld River Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld vs Riverside Luxury Cruises",
-                        "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/uniworld-vs-riverside"
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-riverside"
                     }
                 ]
             },

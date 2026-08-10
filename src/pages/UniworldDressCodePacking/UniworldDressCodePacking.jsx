@@ -86,37 +86,37 @@ function UniworldDressCodePacking() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/",
                 "name": "Uniworld Dress Code and Packing Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/",
                 "description": "Learn the Uniworld River Cruises dress code, what to pack for every season, excursion essentials, evening attire, and luggage tips for a stress-free trip.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/#article",
+                "@id": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/#article",
                 "headline": "Uniworld Dress Code and Packing Guide",
-                "url": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/",
+                "url": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/",
                 "description": "Complete guide to the Uniworld River Cruises dress code, packing checklist, seasonal clothing recommendations, and travel essentials.",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/" },
                 "datePublished": "2026-08-07",
                 "dateModified": "2026-08-07"
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "Dress Code & Packing", "item": "https://www.tripsshipsluxurytravel.com/uniworld-river-cruises/dress-code-packing/" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
+                    { "@type": "ListItem", "position": 3, "name": "Dress Code & Packing", "item": "https://www.tripsandships.com/uniworld-river-cruises/dress-code-packing/" }
                 ]
             },
             {

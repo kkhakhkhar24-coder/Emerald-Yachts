@@ -62,58 +62,58 @@ function BestExpeditionCruises() {
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises",
+                "@id": "https://www.tripsandships.com/best-expedition-cruises",
                 "name": "Best Expedition Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises",
+                "url": "https://www.tripsandships.com/best-expedition-cruises",
                 "description": "Explore the best expedition cruises worldwide, comparing luxury expedition cruise lines, destinations, ships, wildlife experiences, and expert travel advice.",
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises#article" }
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/best-expedition-cruises#article" }
             },
             {
                 "@type": "Organization",
-                "@id": "https://www.tripsshipsluxurytravel.com/#organization",
+                "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com"
+                "url": "https://www.tripsandships.com"
             },
             {
                 "@type": "TravelAgency",
-                "@id": "https://www.tripsshipsluxurytravel.com/#travelagency",
+                "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsshipsluxurytravel.com",
+                "url": "https://www.tripsandships.com",
                 "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, river cruises, and personalized travel planning."
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/#angela-hughes",
                 "name": "Angela Hughes",
                 "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" }
+                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" }
             },
             {
                 "@type": "Article",
-                "@id": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises#article",
+                "@id": "https://www.tripsandships.com/best-expedition-cruises#article",
                 "headline": "Best Expedition Cruises",
-                "url": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises",
+                "url": "https://www.tripsandships.com/best-expedition-cruises",
                 "description": "Expert guide to the world's best expedition cruises, featuring luxury cruise lines, destinations, ships, wildlife encounters, and planning advice.",
-                "image": "https://www.tripsshipsluxurytravel.com/images/best-expedition-cruises.jpg",
-                "author": { "@id": "https://www.tripsshipsluxurytravel.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsshipsluxurytravel.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises" }
+                "image": "https://www.tripsandships.com/images/best-expedition-cruises.jpg",
+                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
+                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
+                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/best-expedition-cruises" }
             },
             {
                 "@type": "Service",
                 "name": "Luxury Expedition Cruise Planning",
-                "provider": { "@id": "https://www.tripsshipsluxurytravel.com/#travelagency" },
+                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
                 "serviceType": "Luxury Expedition Cruise Consulting",
                 "description": "Expert advice and personalized planning for luxury expedition cruises around the world."
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsshipsluxurytravel.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsshipsluxurytravel.com/expedition-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Best Expedition Cruises", "item": "https://www.tripsshipsluxurytravel.com/best-expedition-cruises" }
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Expedition Cruises", "item": "https://www.tripsandships.com/expedition-cruises" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Expedition Cruises", "item": "https://www.tripsandships.com/best-expedition-cruises" }
                 ]
             },
             {
