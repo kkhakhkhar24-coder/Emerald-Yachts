@@ -1,9 +1,10 @@
-import { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
 
@@ -15,6 +16,28 @@ const Navbar = () => {
     e.preventDefault();
     setHomeDropdownOpen(!homeDropdownOpen);
   };
+
+  useEffect(() => {
+    // Scroll active link in any dropdown menu into view when pathname/menu states change
+    requestAnimationFrame(() => {
+      const activeLinks = document.querySelectorAll(
+        ".nav-dropdown-menu a.active, .mobile-dropdown-menu a.active"
+      );
+      activeLinks.forEach((activeLink) => {
+        const parent = activeLink.closest(
+          ".nav-dropdown-menu, .mobile-dropdown-menu"
+        );
+        if (parent && parent.scrollHeight > parent.clientHeight) {
+          const targetScrollTop =
+            activeLink.offsetTop -
+            parent.offsetTop -
+            parent.clientHeight / 2 +
+            activeLink.clientHeight / 2;
+          parent.scrollTop = Math.max(0, targetScrollTop);
+        }
+      });
+    });
+  }, [pathname, menuOpen, homeDropdownOpen]);
 
   return (
     <nav className="navbar">
@@ -1136,15 +1159,15 @@ const Navbar = () => {
                 Uniworld Family River Cruises and Generations Collection
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/christmas-markets/"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Uniworld Christmas Market River Cruises
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-avalon"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1152,7 +1175,7 @@ const Navbar = () => {
                 Uniworld vs Avalon
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-tauck"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1168,7 +1191,21 @@ const Navbar = () => {
                 Uniworld vs Riverside
               </NavLink> */}
 
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Vs Scenic River Cruises
+              </NavLink>
 
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-amawaterways"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Vs Ama Waterways
+              </NavLink>
 
 
             </div>
@@ -2285,15 +2322,15 @@ const Navbar = () => {
                 Uniworld Family River Cruises and Generations Collection
               </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/uniworld-river-cruises/christmas-markets/"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Uniworld Christmas Market River Cruises
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-avalon"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2301,7 +2338,7 @@ const Navbar = () => {
                 Uniworld vs Avalon
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-tauck"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2316,6 +2353,22 @@ const Navbar = () => {
               >
                 Uniworld vs Riverside
               </NavLink> */}
+
+                            <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-scenic"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Vs Scenic River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/uniworld-river-cruises/uniworld-vs-amawaterways"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Uniworld Vs Ama Waterways
+              </NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>
