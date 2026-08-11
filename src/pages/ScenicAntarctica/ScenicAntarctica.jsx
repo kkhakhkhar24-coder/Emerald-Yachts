@@ -1,7 +1,10 @@
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import {
+    Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Plus, Minus, Medal } from "lucide-react";
+import { Plus, Minus, Medal, Award, Globe, CheckCircle, Ship, Mountain, Users, Compass, Sparkles
+} from 'lucide-react';
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import "../ScenicAntarctica/ScenicAntarctica.css";
@@ -198,90 +201,102 @@ function ScenicAntarctica() {
         </div>
       </section>
 
-      {/* ================= SECTION 11.5 — IMAGE GALLERY SLIDER ================= */}
-      <section className="Scenic_gallery_section">
-        <div className="Scenic_gallery_inner">
-          <div className="Scenic_gallery_wrapper">
-            {/* NAVIGATION ARROWS */}
-            <button
-              className="Scenic_gallery_arrow Scenic_gallery_arrow--prev"
-              onClick={() =>
-                setGalleryCurrent(
-                  (prev) =>
-                    (prev - 1 + galleryImages.length) % galleryImages.length,
-                )
-              }
-            >
-              <i className="fas fa-chevron-left"></i>
-            </button>
+      
+                {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
 
-            <button
-              className="Scenic_gallery_arrow Scenic_gallery_arrow--next"
-              onClick={() =>
-                setGalleryCurrent((prev) => (prev + 1) % galleryImages.length)
-              }
-            >
-              <i className="fas fa-chevron-right"></i>
-            </button>
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
+                                </div>
 
-            {/* IMAGES */}
-            <div className="Scenic_gallery_container">
-              {galleryImages.map((img, index) => (
-                <div
-                  key={index}
-                  className={`Scenic_gallery_slide ${index === galleryCurrent ? "active" : ""}`}
-                  style={{
-                    backgroundImage: `url(${img})`,
-                  }}
-                >
-                  <div className="Scenic_gallery_overlay">
-                    <span className="Scenic_image_counter">
-                      {galleryCurrent + 1} / {galleryImages.length}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
+                                </div>
+                            </div>
 
-            {/* PAGINATION DOTS */}
-            <div className="Scenic_gallery_dots">
-              {galleryImages.map((_, index) => (
-                <span
-                  key={index}
-                  className={`Scenic_gallery_dot ${index === galleryCurrent ? "active" : ""}`}
-                  onClick={() => setGalleryCurrent(index)}
-                ></span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
 
-      <section className="Scenic_about_yachts_Experience_section">
-        <div className="Scenic_about_yachts_Experience_inner">
-          <h2>The Scenic Eclipse Experience</h2>
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                                </p>
 
-          <p>
-            Scenic Eclipse operates as a discovery yacht engineered for
-            expedition environments.
-          </p>
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Polar discovery yachting',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service for every suite',
+                                            'Helicopter & submarine features',
+                                            'Up to 10 dining experiences',
+                                            'Immersive Zodiac excursions'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
 
-          <p>
-            Each day is structured around guided landings led by a professional
-            expedition team. Guests access Antarctica via zodiac, reaching areas
-            that cannot be accessed by larger vessels.
-          </p>
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                                </p>
 
-          <p>
-            Operations are shaped by weather, ice conditions, and wildlife
-            movement. No two voyages are identical. Between landings, the ship
-            provides a refined onboard environment designed for recovery,
-            observation, and comfort.
-          </p>
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Ultra-luxury yachting', icon: Ship },
+                                            { title: 'Polar expeditions', icon: Mountain },
+                                            { title: 'Butler services', icon: Users },
+                                            { title: 'Luxury cruise planning', icon: Compass },
+                                            { title: 'Custom expedition travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
 
-          <p>This balance defines Scenic’s position in Antarctica.</p>
-        </div>
-      </section>
+                        </div>
+                    </div>
+                </section>
+
 
       {/* section What Is Included on a Scenic Antarctica Expedition? */}
 

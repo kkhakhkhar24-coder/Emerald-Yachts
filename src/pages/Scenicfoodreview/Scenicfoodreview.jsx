@@ -1,10 +1,9 @@
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import '../Luxuryfamilycelebrations/Luxuryfamilycelebrations.css'
 import './Scenicfoodreview.css'
 import {
-    Sparkles, Phone, LayoutList, CheckCircle, UtensilsCrossed, ChefHat,
-    Fish, Store, Wine, Coffee, Sun, Home, Compass, Ship, BedDouble,
-    Plane, Gift, Users, AlertCircle, Star
+    Sparkles, Phone, LayoutList, CheckCircle, UtensilsCrossed, ChefHat, Fish, Store, Wine, Coffee, Sun, Home, Compass, Ship, BedDouble, Plane, Gift, Users, AlertCircle, Star, Award, Globe, Mountain
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
@@ -716,6 +715,103 @@ function ScenicFoodReview() {
                         </div>
                     </div>
                 </section>
+
+
+                {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
+
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
+                                </div>
+
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
+
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                                </p>
+
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Polar discovery yachting',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service for every suite',
+                                            'Helicopter & submarine features',
+                                            'Up to 10 dining experiences',
+                                            'Immersive Zodiac excursions'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                                </p>
+
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Ultra-luxury yachting', icon: Ship },
+                                            { title: 'Polar expeditions', icon: Mountain },
+                                            { title: 'Butler services', icon: Users },
+                                            { title: 'Luxury cruise planning', icon: Compass },
+                                            { title: 'Custom expedition travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
 
                 {/* FAQ SECTION — reused fcel-faq-* classes */}
                 <section className="fcel-faq-section">

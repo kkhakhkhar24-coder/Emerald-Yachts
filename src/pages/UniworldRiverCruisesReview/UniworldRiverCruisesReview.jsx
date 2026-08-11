@@ -1,10 +1,13 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './UniworldRiverCruisesReview.css'
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import {
     Ship, Star, Sparkles, Phone, LayoutList, Heart,
     CheckCircle, ChevronRight, Globe, Award, Utensils, Wine,
     Bed, Compass, Gift, Smile, ShieldCheck, XCircle, AlertTriangle,
-    Image as ImageIcon, Map, Sun, Trees, Bath, Bell, Coffee, Activity, Coins
+    Image as ImageIcon, Map, Sun, Trees, Bath, Bell, Coffee, Activity, Coins,
+    Mountain,
+    Users
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
@@ -1080,6 +1083,101 @@ function UniworldRiverCruisesReview() {
                                 <h4 className="urcr-why-book-title">Cruise Comparisons</h4>
                                 <p className="urcr-why-book-desc">Ensure you choose the ideal river itinerary and vessel for your vacation objectives.</p>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                 {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
+
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury River Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
+                                </div>
+
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Discerning Travelers <br className="medi-growth-title-break" />Choose Uniworld River Cruises
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
+
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.
+                                </p>
+
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Uniworld travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Boutique, museum-quality ships',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service in select suites',
+                                            'Gourmet farm-to-table dining',
+                                            'Intimate, destination-rich itineraries',
+                                            'Personalized, warm onboard service'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.
+                                </p>
+
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Luxury river cruising', icon: Ship },
+                                            { title: 'European river itineraries', icon: Globe },
+                                            { title: 'Butler & suite services', icon: Users },
+                                            { title: 'All-inclusive cruise planning', icon: Compass },
+                                            { title: 'Gourmet & cultural travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>

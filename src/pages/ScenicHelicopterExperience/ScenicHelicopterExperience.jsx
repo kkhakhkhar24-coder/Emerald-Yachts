@@ -1,14 +1,9 @@
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicHelicopterExperience.css'
 
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
-    Sun, Award, Moon, Music, Mic, FileText, GraduationCap,
-    Globe, MessageSquare, Briefcase, TrendingUp, Eye, Smile,
-    Leaf, BookOpen, DollarSign, Wind, Camera, Shield,
-    Navigation, Zap, Mountain
+    Ship, MapPin, Star, Clock, Users, CheckCircle, ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem, ChevronRight, Crown, Phone, LayoutList, Heart, Utensils, Sun, Award, Moon, Music, Mic, FileText, GraduationCap, Globe, MessageSquare, Briefcase, TrendingUp, Eye, Smile, Leaf, BookOpen, DollarSign, Wind, Camera, Shield, Navigation, Zap, Mountain
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -517,88 +512,102 @@ function ScenicHelicopterExperience() {
             </section>
 
             {/* ── WHY TRIPS & SHIPS ── */}
-            <section className="hel-editorial-section">
-                <div className="hel-editorial-container">
-                    <div className="hel-editorial-card">
+            
+                {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
 
-                        <div className="hel-editorial-image-side">
-                            <div className="hel-editorial-image-frame">
-                                {Profile_Picture_AH && <img src={Profile_Picture_AH} alt="Angela Hughes – Scenic Expedition Expert" />}
-                            </div>
-                            <div className="hel-editorial-stats">
-                                <div className="hel-editorial-stat-item">
-                                    <span className="hel-editorial-stat-number">40+</span>
-                                    <span className="hel-editorial-stat-label">Years Experience</span>
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
                                 </div>
-                                <div className="hel-editorial-stat-divider"></div>
-                                <div className="hel-editorial-stat-item">
-                                    <span className="hel-editorial-stat-number">121+</span>
-                                    <span className="hel-editorial-stat-label">Countries Visited</span>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="hel-editorial-content-side">
-                            <div className="hel-editorial-badge">
-                                <Award size={16} />
-                                <span>Why Trips &amp; Ships Luxury Travel</span>
-                            </div>
-                            <h2 className="hel-editorial-title">Your Expert Partner for Scenic Eclipse</h2>
-                            <div className="hel-editorial-bar"></div>
-
-                            <p className="hel-editorial-text">
-                                Our Scenic specialists help you plan every detail of your Scenic luxury expedition, from choosing the right itinerary to reserving optional Discovery Experiences before they sell out.
-                            </p>
-
-                            <div className="hel-editorial-services">
-                                <span className="hel-editorial-services-label">Our Scenic services include:</span>
-                                <div className="hel-editorial-services-list">
-                                    {[
-                                        'Best Scenic Eclipse itinerary selection',
-                                        'Expedition destination comparisons',
-                                        'Helicopter excursion availability guidance',
-                                        'Discovery Experience reservations',
-                                        'Ideal suite selection',
-                                        'Pre- and post-cruise travel arrangements',
-                                        'Exclusive offer access'
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="hel-editorial-pill">
-                                            <CheckCircle size={14} />
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <p className="hel-editorial-text">
-                                We help you understand every optional experience, ensuring you never miss the moments that matter most aboard Scenic Eclipse.
-                            </p>
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
 
-                            <div className="hel-editorial-expertise">
-                                <span className="hel-editorial-expertise-label">Angela Hughes&apos; expertise spans:</span>
-                                <div className="hel-editorial-expertise-strip">
-                                    {[
-                                        { title: 'Scenic Eclipse voyages', icon: Anchor },
-                                        { title: 'Helicopter excursions', icon: Navigation },
-                                        { title: 'Antarctica expeditions', icon: Mountain },
-                                        { title: 'Arctic exploration', icon: Wind },
-                                        { title: 'Expedition cruise planning', icon: Compass }
-                                    ].map((item, idx) => {
-                                        const IconComponent = item.icon
-                                        return (
-                                            <div key={idx} className="hel-editorial-expertise-pill">
-                                                <IconComponent size={13} />
-                                                <span>{item.title}</span>
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                                </p>
+
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Polar discovery yachting',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service for every suite',
+                                            'Helicopter & submarine features',
+                                            'Up to 10 dining experiences',
+                                            'Immersive Zodiac excursions'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
                                             </div>
-                                        )
-                                    })}
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                                </p>
+
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Ultra-luxury yachting', icon: Ship },
+                                            { title: 'Polar expeditions', icon: Mountain },
+                                            { title: 'Butler services', icon: Users },
+                                            { title: 'Luxury cruise planning', icon: Compass },
+                                            { title: 'Custom expedition travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
 
             {/* ── FINAL THOUGHTS ── */}
             <section className="hel-final-section">

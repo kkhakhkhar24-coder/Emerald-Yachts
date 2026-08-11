@@ -1,20 +1,8 @@
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import React, { useState } from "react";
 import {
-  Snowflake,
-  Anchor,
-  Ship,
-  AlertCircle,
-  CheckCircle2,
-  Globe,
-  Key,
-  LayoutGrid,
-  ShieldCheck,
-  Award,
-  Clock,
-  MapPin,
-  Plus,
-  Minus,
-} from "lucide-react";
+    Snowflake, Anchor, Ship, AlertCircle, CheckCircle2, Globe, Key, LayoutGrid, ShieldCheck, Award, Clock, MapPin, Plus, Minus, CheckCircle, Mountain, Users, Compass, Sparkles
+} from 'lucide-react';
 import Navbar from "../../components/Navbar/Navbar";
 import "../ScenicVSSilversea/ScenicVSSilversea.css";
 import valueHero from "../../assets/scenic-vs-silversea-antarctica/value_hero.webp";
@@ -1020,108 +1008,102 @@ const AntarcticaPage = () => {
       </section>
 
       {/* ===== SECTION 13 — WHY BOOK & AUTHOR PROOF ===== */}
-      <section className="senianta-why-book">
-        <div className="senianta-why-book-inner">
-          <h2>Why Book with Angela Hughes and Trips & Ships Luxury Travel</h2>
-          <div className="senianta-why-book-flex">
-            <div className="senianta-why-book-left">
-              <div className="senianta-why-story">
-                <p className="senianta-lead-expertise">
-                  Choosing between expedition cruise lines requires experience
-                  and perspective.
-                </p>
-                <p className="senianta-p">
-                  Angela Hughes has over four decades in the travel industry and
-                  has traveled to 121 countries and territories, working with
-                  clients on complex, high-value itineraries.
-                </p>
-                <p className="senianta-emphasis senianta-emphasis--guided">
-                  The decision is guided, not guessed.
-                </p>
-              </div>
+      
+                {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
 
-              <div className="senianta-why-benefits-grid">
-                <h3>Clients benefit from:</h3>
-                <div className="senianta-benefit-item">
-                  <div className="senianta-benefit-icon-wrap">
-                    <Globe className="senianta-benefit-icon" />
-                  </div>
-                  <p>Clear positioning across competing brands</p>
-                </div>
-                <div className="senianta-benefit-item">
-                  <div className="senianta-benefit-icon-wrap">
-                    <Key className="senianta-benefit-icon" />
-                  </div>
-                  <p>Access to preferred inventory and timing</p>
-                </div>
-                <div className="senianta-benefit-item">
-                  <div className="senianta-benefit-icon-wrap">
-                    <LayoutGrid className="senianta-benefit-icon" />
-                  </div>
-                  <p>Full itinerary coordination</p>
-                </div>
-                <div className="senianta-benefit-item">
-                  <div className="senianta-benefit-icon-wrap">
-                    <ShieldCheck className="senianta-benefit-icon" />
-                  </div>
-                  <p>Ongoing support throughout the journey</p>
-                </div>
-              </div>
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
+                                </div>
 
-              <div className="senianta-auth-recognition">
-                <h4>Industry Recognition</h4>
-                <ul className="senianta-recognition-list">
-                  <li>
-                    Luxury Travel Influencer of the Year (2024), Travel Leaders
-                    Network
-                  </li>
-                  <li>Most Influential Women in Travel (2026), TravelPulse</li>
-                  <li>Featured across leading travel media</li>
-                </ul>
-              </div>
-            </div>
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div className="senianta-why-book-right">
-              <div className="senianta-why-book-image-wrapper">
-                <img
-                  src={myImage}
-                  alt="Angela Hughes — CEO & Founder, Trips & Ships Luxury Travel"
-                  className="senianta-why-book-portrait"
-                />
-              </div>
-              <div className="senianta-auth-title-wrap">
-                <h3 className="senianta-auth-title">
-                  Planned and Curated by Angela Hughes
-                </h3>
-                <p className="senianta-auth-role">
-                  CEO, Trips & Ships Luxury Travel
-                </p>
-              </div>
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
 
-              <div className="senianta-auth-stats-grid">
-                <div className="senianta-auth-stat-item">
-                  <Clock className="senianta-stat-icon" />
-                  <div className="senianta-stat-content">
-                    <span className="senianta-stat-val">40+</span>
-                    <span className="senianta-stat-label">
-                      Years Experience
-                    </span>
-                  </div>
-                </div>
-                <div className="senianta-auth-stat-item">
-                  <MapPin className="senianta-stat-icon" />
-                  <div className="senianta-stat-content">
-                    <span className="senianta-stat-val">121</span>
-                    <span className="senianta-stat-label">
-                      Countries Visited
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                                </p>
+
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Polar discovery yachting',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service for every suite',
+                                            'Helicopter & submarine features',
+                                            'Up to 10 dining experiences',
+                                            'Immersive Zodiac excursions'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                                </p>
+
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Ultra-luxury yachting', icon: Ship },
+                                            { title: 'Polar expeditions', icon: Mountain },
+                                            { title: 'Butler services', icon: Users },
+                                            { title: 'Luxury cruise planning', icon: Compass },
+                                            { title: 'Custom expedition travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
 
       {/* ===== SECTION 15 — FAQ ===== */}
       <section className="senianta-faq-section">

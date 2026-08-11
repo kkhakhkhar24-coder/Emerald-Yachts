@@ -1,12 +1,9 @@
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicVsSeabourn.css'
 
 import {
-    Ship, MapPin, Users, CheckCircle,
-    Compass, Sparkles, Anchor, Gem,
-    Crown, Phone, LayoutList, Utensils,
-    Sun, Award, Music, GraduationCap,
-    Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck, Leaf
+    Ship, MapPin, Users, CheckCircle, Compass, Sparkles, Anchor, Gem, Crown, Phone, LayoutList, Utensils, Sun, Award, Music, GraduationCap, Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck, Leaf, Globe, Mountain
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -870,73 +867,102 @@ function ScenicVsSeabourn() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EDITORIAL ── */}
-            <section className="svs-editorial-section">
-              <div className="svs-editorial-container">
-                <div className="svs-editorial-badge-row">
-                  <Award size={14} />
-                  <span>Industry Leader · 40+ Years of Excellence</span>
-                </div>
+            
+                {/* EXPERT INSIGHT */}
+                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
+                    <div className="medi-expert-editorial-container">
+                        <div className="medi-expert-editorial-card">
 
-                <div className="svs-editorial-layout">
-                  <div className="svs-editorial-visual">
-                    <div className="svs-editorial-image-frame">
-                      <SvsImagePlaceholder label="Angela Hughes — Luxury Travel Expert" />
-                    </div>
-                    <div className="svs-editorial-stats-card">
-                      <div className="svs-editorial-stat-item">
-                        <span className="svs-editorial-stat-value">40+</span>
-                        <span className="svs-editorial-stat-label">Years of Experience</span>
-                      </div>
-                      <div className="svs-editorial-stat-divider"></div>
-                      <div className="svs-editorial-stat-item">
-                        <span className="svs-editorial-stat-value">121+</span>
-                        <span className="svs-editorial-stat-label">Countries Visited</span>
-                      </div>
-                      <div className="svs-editorial-stat-divider"></div>
-                      <div className="svs-editorial-stat-item">
-                        <span className="svs-editorial-stat-value">10K+</span>
-                        <span className="svs-editorial-stat-label">Travelers Advised</span>
-                      </div>
-                    </div>
-                  </div>
+                            {/* Left Side: Portrait and Floating Stat Badge */}
+                            <div className="medi-editorial-portrait-block">
+                                <div className="medi-editorial-image-frame">
+                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
+                                    <div className="medi-editorial-gradient-layer"></div>
+                                </div>
 
-                  <div className="svs-editorial-content">
-                    <span className="svs-editorial-name-tag">Angela Hughes</span>
-                    <h2 className="svs-editorial-title">Trusted Guidance From an Industry Leader</h2>
-                    <div className="svs-editorial-title-accent"></div>
-                    <p className="svs-editorial-text">Angela Hughes has spent more than 40 years helping travelers discover the world's most extraordinary destinations. Her deep industry knowledge and personal travel experience across 121+ countries make her one of the most trusted voices in luxury cruising.</p>
-                    <div className="svs-editorial-credentials">
-                      <span className="svs-editorial-cred-label">Credentials</span>
-                      <div className="svs-editorial-cred-grid">
-                        {[
-                          'Founder of Luxury Travel University',
-                          'Luxury Travel Influencer of the Year',
-                          'Travel Leaders Network Advisory Board',
-                          'International travel educator',
-                          'Weekly travel columnist',
-                          '121+ countries visited'
-                        ].map((item, idx) => (
-                          <div key={idx} className="svs-editorial-cred-item">
-                            <CheckCircle size={12} />
-                            <span>{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="svs-editorial-footer-text">
-                      <p>Her expertise ensures travelers receive trusted recommendations and exceptional service when planning luxury cruise vacations.</p>
-                    </div>
-                  </div>
-                </div>
+                                <div className="medi-editorial-floating-stat">
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">40+</span>
+                                        <span className="medi-stat-label">Years Experience</span>
+                                    </div>
+                                    <div className="medi-stat-divider"></div>
+                                    <div className="medi-stat-tile">
+                                        <span className="medi-stat-number">121+</span>
+                                        <span className="medi-stat-label">Countries Visited</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div className="svs-editorial-quote">
-                  <span className="svs-editorial-quote-mark">"</span>
-                  <p>Choosing the right cruise line is about matching your personal travel style with the right onboard experience. I've sailed both Scenic and Seabourn extensively — let me help you find your perfect fit.</p>
-                  <span className="svs-editorial-quote-author">— Angela Hughes</span>
-                </div>
-              </div>
-            </section>
+                            {/* Right Side: Editorial Text */}
+                            <div className="medi-editorial-content-block">
+                                <div className="medi-editorial-header">
+                                    <div className="medi-editorial-eyebrow-container">
+                                        <Award size={18} className="medi-editorial-icon-badge" />
+                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
+                                    </div>
+                                    <h2 className="medi-editorial-title">
+                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
+                                    </h2>
+                                    <div className="medi-editorial-accent-bar"></div>
+                                </div>
+
+                                <p className="medi-editorial-lead-para">
+                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                                </p>
+
+                                <div className="medi-priorities-box">
+                                    <p className="medi-priorities-intro">
+                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
+                                    </p>
+                                    <div className="medi-priorities-grid-pills">
+                                        {[
+                                            'Polar discovery yachting',
+                                            'Truly all-inclusive luxury',
+                                            'Butler service for every suite',
+                                            'Helicopter & submarine features',
+                                            'Up to 10 dining experiences',
+                                            'Immersive Zodiac excursions'
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="medi-priority-pill-item">
+                                                <CheckCircle size={15} className="medi-priority-check" />
+                                                <span>{item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <p className="medi-editorial-body-para">
+                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                                </p>
+
+                                <div className="medi-expertise-section-box">
+                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
+                                    <div className="medi-expertise-horizontal-strip">
+                                        {[
+                                            { title: 'Ultra-luxury yachting', icon: Ship },
+                                            { title: 'Polar expeditions', icon: Mountain },
+                                            { title: 'Butler services', icon: Users },
+                                            { title: 'Luxury cruise planning', icon: Compass },
+                                            { title: 'Custom expedition travel', icon: Sparkles }
+                                        ].map((item, idx) => {
+                                            const IconComponent = item.icon
+                                            return (
+                                                <div key={idx} className="medi-expertise-pills-row">
+                                                    <div className="medi-expertise-pill-icon-box">
+                                                        <IconComponent size={14} />
+                                                    </div>
+                                                    <span className="medi-expertise-pill-text">{item.title}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
 
             {/* ── CONCLUSION ── */}
             <section className="svs-final-section">
