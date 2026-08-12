@@ -155,8 +155,8 @@ import FirstTimeUniworldRiverCruiseGuide from "./pages/FirstTimeUniworldRiverCru
 import UniworldVeniceItalyRiverCruises from "./pages/UniworldVeniceItalyRiverCruises/UniworldVeniceItalyRiverCruises";
 import UniworldEgyptNileRiverCruises from "./pages/UniworldEgyptNileRiverCruises/UniworldEgyptNileRiverCruises";
 import Uniworldvsavalonwaterways from "./pages/Uniworldvsavalonwaterways/Uniworldvsavalonwaterways";
-// import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
-// import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
+import Uniworldvstauckrivercruises from "./pages/Uniworldvstauckrivercruises/Uniworldvstauckrivercruises";
+import Uniworldvsriversideluxurycruises from "./pages/Uniworldvsriversideluxurycruises/Uniworldvsriversideluxurycruises";
 import UniworldFoodDining from "./pages/UniworldFoodDining/UniworldFoodDining";
 import UniworldDressCodePacking from "./pages/UniworldDressCodePacking/UniworldDressCodePacking";
 import UniworldAirfareTransfers from "./pages/UniworldAirfareTransfers/UniworldAirfareTransfers";
@@ -881,7 +881,7 @@ function App() {
             element={<Uniworldvsavalonwaterways />}
           />
 
-          {/* <Route
+          <Route
             path="/uniworld-river-cruises/uniworld-vs-tauck"
             element={<Uniworldvstauckrivercruises />}
           />
@@ -889,7 +889,7 @@ function App() {
           <Route
             path="/uniworld-river-cruises/uniworld-vs-riverside"
             element={<Uniworldvsriversideluxurycruises />}
-          /> */}
+          />
 
           <Route
             path="/uniworld-river-cruises/food-dining/"

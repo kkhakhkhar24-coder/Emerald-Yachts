@@ -1175,7 +1175,7 @@ const Navbar = () => {
                 Uniworld vs Avalon
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-tauck"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1189,7 +1189,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Uniworld vs Riverside
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-scenic"
@@ -2338,7 +2338,7 @@ const Navbar = () => {
                 Uniworld vs Avalon
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-tauck"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2352,7 +2352,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Uniworld vs Riverside
-              </NavLink> */}
+              </NavLink>
 
                             <NavLink
                 to="/uniworld-river-cruises/uniworld-vs-scenic"
