@@ -80,7 +80,7 @@
 
 .bss-standout-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .bss-standout-container {
@@ -114,9 +114,9 @@
 }
 
 .bss-inline-cta-heading {
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--fcel-navy);
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    color: var(--fcel-navy) !important;
     margin: 0 0 20px 0;
     line-height: 1.35;
 }
@@ -182,7 +182,7 @@
 
 .bss-quickpick-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .bss-quickpick-container {
@@ -263,7 +263,7 @@
 
 .bss-tips-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .bss-tips-container {
@@ -305,7 +305,7 @@
    SUITE CATEGORIES SECTION (new UI)
    ============================================================ */
 .bss-suite-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background-color: var(--fcel-bg-white);
 }
 
@@ -395,12 +395,13 @@
 }
 
 .bss-suite-title {
-    font-size: 36px;
-    font-weight: 500;
-    color: var(--fcel-navy);
-    margin: 12px 0 16px 0;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
+    margin: 12px 0 16px 0 !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.2 !important;
+    font-family: var(--font-display) !important;
 }
 
 .bss-suite-intro {
@@ -560,4 +561,22 @@
         font-size: 14px;
         padding: 10px 12px;
     }
+}
+
+/* ============================================================
+   WHY BOOK WITH TRIPS & SHIPS — CENTER ALIGNMENT
+   ============================================================ */
+.fcel-why-us-top {
+    display: block !important;
+    text-align: center !important;
+    max-width: 800px;
+    margin: 0 auto 50px auto !important;
+}
+
+.fcel-why-us-copy {
+    text-align: center !important;
+}
+
+.fcel-why-us-copy .fcel-heading-bar {
+    margin: 0 auto 20px auto !important;
 }

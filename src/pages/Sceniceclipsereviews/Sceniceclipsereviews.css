@@ -230,7 +230,7 @@
    ============================================================ */
 .fcel-intro-section {
     background: #faf8f5;
-    padding: 120px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -478,7 +478,7 @@
    ============================================================ */
 .sce-impressions-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-impressions-container {
@@ -550,7 +550,7 @@
    ============================================================ */
 .sce-suites-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-suites-container {
@@ -621,7 +621,7 @@
    ============================================================ */
 .sce-dining-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-dining-container {
@@ -698,7 +698,7 @@
    ============================================================ */
 .sce-service-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-service-container {
@@ -745,7 +745,7 @@
    ============================================================ */
 .sce-expedition-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-expedition-container {
@@ -757,7 +757,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: stretch;
+}
+
+.sce-expedition-media-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.sce-expedition-image-wrapper {
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+.sce-expedition-image-wrapper .sce-image-placeholder {
+    position: absolute;
+    inset: 0;
+    min-height: unset;
 }
 
 .sce-expedition-list {
@@ -823,6 +842,16 @@
 
 @media (max-width: 1024px) {
     .sce-expedition-grid { grid-template-columns: 1fr; gap: 34px; }
+    .sce-expedition-media-col {
+        height: auto;
+    }
+    .sce-expedition-image-wrapper {
+        height: 320px;
+    }
+    .sce-expedition-image-wrapper .sce-image-placeholder {
+        position: relative;
+        height: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -839,7 +868,7 @@
    ============================================================ */
 .sce-wellness-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-wellness-container {
@@ -899,7 +928,7 @@
    ============================================================ */
 .sce-destinations-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-destinations-container {
@@ -922,8 +951,25 @@
 .sce-destination-card {
     background: var(--fcel-bg-soft);
     border-radius: 16px;
-    padding: 30px 26px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sce-destination-card .sce-image-placeholder {
+    height: 180px;
+    min-height: 180px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px dashed rgba(39, 68, 114, 0.15);
+}
+
+.sce-destination-card-content {
+    padding: 24px 26px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .sce-destination-card:hover {
@@ -979,7 +1025,7 @@
    ============================================================ */
 .sce-included-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-included-container {
@@ -1036,7 +1082,7 @@
    ============================================================ */
 .sce-audience-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-audience-container {
@@ -1088,7 +1134,7 @@
    ============================================================ */
 .sce-proscons-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-proscons-container {
@@ -1111,10 +1157,10 @@
 }
 
 .sce-proscons-col-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--fcel-navy);
-    margin: 0 0 20px 0;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
+    margin: 0 0 20px 0 !important;
     padding-bottom: 14px;
     border-bottom: 1px solid rgba(39, 68, 114, 0.1);
 }
@@ -1165,7 +1211,7 @@
    ============================================================ */
 .sce-verdict-section {
     background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -1203,7 +1249,7 @@
    ============================================================ */
 .sce-whybook-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sce-whybook-container {
@@ -1256,7 +1302,7 @@
    ============================================================ */
 .fcel-faq-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .fcel-faq-container {
@@ -1324,7 +1370,7 @@
 .fcel-cta-section {
     position: relative;
     background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
-    padding: 110px 20px;
+    padding: 60px 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -1388,4 +1434,37 @@
     .fcel-cta-btn-row { flex-direction: column; width: 100%; }
     .fcel-cta-btn-row .fcel-btn-primary,
     .fcel-cta-btn-row .fcel-btn-outline { width: 100%; justify-content: center; }
+}
+
+/* ============================================================
+   IMAGE PLACEHOLDER COMPONENT (new)
+   ============================================================ */
+.sce-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.04) 0%, rgba(231, 243, 245, 0.7) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--fcel-navy);
+    padding: 24px;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.sce-image-placeholder span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.sce-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
+    border-color: rgba(39, 68, 114, 0.3);
 }

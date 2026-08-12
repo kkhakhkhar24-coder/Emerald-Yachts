@@ -73,17 +73,17 @@ function WhatIsIncludedOnScenic() {
         'Submarine dives', 'Private tours', 'Travel insurance', 'Some premium wines and spirits'
     ]
 
-   /* Why Book with Trips & Ships */
-const wisWhyBookUs = [
-    { title: "Compare Scenic River and Ocean voyages", icon: Compass },
-    { title: "Understand what's included", icon: CheckCircle },
-    { title: "Choose the right suite", icon: BedDouble },
-    { title: "Select the best itinerary", icon: MapPin },
-    { title: "Arrange flights and hotels", icon: Plane },
-    { title: "Secure exclusive offers", icon: Gift },
-    { title: "Coordinate pre- and post-cruise travel", icon: LayoutList },
-    { title: "Provide concierge-level service before, during, and after your trip", icon: Phone },
-];
+    /* Why Book with Trips & Ships */
+    const wisWhyBookUs = [
+        { title: "Compare Scenic River and Ocean voyages", icon: Compass },
+        { title: "Understand what's included", icon: CheckCircle },
+        { title: "Choose the right suite", icon: BedDouble },
+        { title: "Select the best itinerary", icon: MapPin },
+        { title: "Arrange flights and hotels", icon: Plane },
+        { title: "Secure exclusive offers", icon: Gift },
+        { title: "Coordinate pre- and post-cruise travel", icon: LayoutList },
+        { title: "Provide concierge-level service before, during, and after your trip", icon: Phone },
+    ];
 
     /* FAQs */
     const wisFaqs = [
@@ -230,13 +230,14 @@ const wisWhyBookUs = [
                 </section>
 
                 {/* INTRO SECTION — reused fcel-intro-* classes */}
-                <section className="fcel-intro-section">
+                <section className="fcel-intro-section wis-intro-section">
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">ALL-INCLUSIVE LUXURY TRAVEL</span>
-                                <h2 className="fcel-section-heading">One of the biggest reasons travelers choose Scenic is its truly all-inclusive approach to luxury travel.</h2>
+                                <h2 className="fcel-occasion-title">All-Inclusive Luxury Travel</h2>
                                 <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-section-heading">One of the biggest reasons travelers choose Scenic is its truly all-inclusive approach to luxury travel.</p>
                                 <p className="fcel-lead-paragraph">
                                     Whether you're sailing on a Scenic River Cruise or aboard one of Scenic's Discovery Yachts, your fare includes far more than just your suite and meals.
                                 </p>
@@ -244,11 +245,13 @@ const wisWhyBookUs = [
                                     From personalized butler service to premium beverages, immersive excursions, gratuities, and luxury accommodations, Scenic removes the stress of planning so you can simply enjoy your journey.
                                 </p>
                             </div>
-                            <div className="fcel-intro-image-frame">
-                                <img src="https://placehold.co/700x900/274472/ffffff?text=Scenic+Suite" alt="Luxury Scenic suite with premium in-suite amenities" />
-                                <div className="fcel-intro-badge-float">
-                                    <Star size={15} />
-                                    <span>All-Inclusive Six-Star Service</span>
+                            <div className="wis-intro-image-cell">
+                                <div className="fcel-intro-image-frame">
+                                    <img src="https://placehold.co/700x900/274472/ffffff?text=Scenic+Suite" alt="Luxury Scenic suite with premium in-suite amenities" />
+                                    <div className="fcel-intro-badge-float">
+                                        <Star size={15} />
+                                        <span>All-Inclusive Six-Star Service</span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="fcel-intro-highlight-box">
@@ -262,27 +265,25 @@ const wisWhyBookUs = [
                 </section>
 
                 {/* LUXURY ACCOMMODATIONS — reused fcel-occasion-* classes */}
-                <section className="fcel-occasion-section">
+                <section className="fcel-occasion-section" style={{backgroundColor: 'var(--bg-soft)'}}>
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media">
-                                <img className="fcel-media-tall" src="https://placehold.co/500x700/274472/ffffff?text=Veranda+Suite" alt="Spacious veranda suite aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/1c2f4a/ffffff?text=Marble+Bathroom" alt="Marble bathroom in a Scenic suite" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/0f1c2e/ffffff?text=In-Suite+Minibar" alt="In-suite minibar aboard Scenic" />
+                        <div className="fcel-occasion-grid wis-accommodations-grid">
+                            <div className="fcel-occasion-media wis-accommodations-media">
+                                <img src="https://placehold.co/500x700/274472/ffffff?text=Veranda+Suite" alt="Spacious veranda suite aboard Scenic" />
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">Luxury Accommodations</span>
-                                <h3 className="fcel-occasion-title">Every Scenic voyage begins with elegant accommodations designed for comfort and relaxation.</h3>
+                                <h2 className="fcel-occasion-title">Luxury Accommodations</h2>
+                                <p className="fcel-occasion-intro">Every Scenic voyage begins with elegant accommodations designed for comfort and relaxation.</p>
                                 <p className="fcel-occasion-intro">Depending on your ship and itinerary, accommodations may include:</p>
-                                <ul className="fcel-occasion-list">
+                                <div className="fcel-villa-features-grid">
                                     {wisAccommodations.map((item, idx) => (
-                                        <li key={idx}>
-                                            <CheckCircle size={16} className="fcel-occasion-list-icon" />
+                                        <div key={idx} className="fcel-villa-feature-pill" style={{backgroundColor: 'var(--bg-white)'}}>
+                                            <CheckCircle size={16} />
                                             <span>{item}</span>
-                                        </li>
+                                        </div>
                                     ))}
-                                </ul>
-                                <div className="fcel-occasion-footnote">
+                                </div>
+                                <div className="fcel-occasion-footnote" style={{marginTop: '10px'}}>
                                     Guests aboard Scenic Eclipse enjoy all-veranda suites with butler service, while Scenic river ships feature elegantly appointed balcony suites.
                                 </div>
                             </div>
@@ -291,27 +292,25 @@ const wisWhyBookUs = [
                 </section>
 
                 {/* BUTLER SERVICE — reused fcel-occasion-* classes (soft bg, reversed) */}
-                <section className="fcel-occasion-section fcel-occasion-soft">
+                <section className="fcel-occasion-section fcel-occasion-white">
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media">
-                                <img className="fcel-media-tall" src="https://placehold.co/500x700/1c2f4a/ffffff?text=Butler+Service" alt="Personal butler service aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/274472/ffffff?text=In-Suite+Dining" alt="In-suite dining arranged by a Scenic butler" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/0f1c2e/ffffff?text=Turndown+Service" alt="Turndown service provided by a Scenic butler" />
+                        <div className="fcel-occasion-grid fcel-occasion-reverse wis-butler-grid">
+                            <div className="fcel-occasion-media wis-butler-media">
+                                <img src="https://placehold.co/500x700/1c2f4a/ffffff?text=Butler+Service" alt="Personal butler service aboard Scenic" />
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">Butler Service</span>
-                                <h3 className="fcel-occasion-title">One of Scenic's signature luxury features is personalized butler service.</h3>
+                                <h2 className="fcel-occasion-title">Butler Service</h2>
+                                <p className="fcel-occasion-intro">One of Scenic's signature luxury features is personalized butler service.</p>
                                 <p className="fcel-occasion-intro">Depending on your suite category, your butler can assist with:</p>
-                                <ul className="fcel-occasion-list">
+                                <div className="fcel-villa-features-grid">
                                     {wisButlerServices.map((item, idx) => (
-                                        <li key={idx}>
-                                            <CheckCircle size={16} className="fcel-occasion-list-icon" />
+                                        <div key={idx} className="fcel-villa-feature-pill seir-dining-praise-pill">
+                                            <CheckCircle size={16} />
                                             <span>{item}</span>
-                                        </li>
+                                        </div>
                                     ))}
-                                </ul>
-                                <div className="fcel-occasion-footnote">
+                                </div>
+                                <div className="fcel-occasion-footnote" style={{marginTop: '10px'}}>
                                     Scenic Eclipse provides butler service for every suite.
                                 </div>
                             </div>
@@ -322,12 +321,12 @@ const wisWhyBookUs = [
                 {/* FINE DINING — reused fcel-concierge-* classes (pill tags) */}
                 <section className="fcel-concierge-section">
                     <div className="fcel-concierge-container">
-                        <span className="fcel-eyebrow-label">
-                            <UtensilsCrossed size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-occasion-title">
                             Fine Dining
-                        </span>
-                        <h2 className="fcel-section-heading">Dining is included throughout your voyage.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="fcel-section-heading">Dining is included throughout your voyage.</p>
                         <p className="fcel-lead-paragraph">Guests enjoy:</p>
                         <div className="fcel-concierge-pills-wrap">
                             {wisDining.map((item, idx) => (
@@ -345,12 +344,12 @@ const wisWhyBookUs = [
                     <div className="fcel-villa-container">
                         <div className="fcel-villa-grid">
                             <div>
-                                <span className="fcel-eyebrow-label">
-                                    <Wine size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="fcel-occasion-title">
                                     Premium Beverages
-                                </span>
-                                <h2 className="fcel-section-heading">Most Scenic cruises include:</h2>
+                                </h2>
                                 <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-section-heading">Most Scenic cruises include:</p>
                                 <div className="fcel-villa-features-grid">
                                     {wisBeverages.map((item, idx) => (
                                         <div key={idx} className="fcel-villa-feature-pill">
@@ -373,40 +372,29 @@ const wisWhyBookUs = [
                     </div>
                 </section>
 
-                {/* SHORE EXCURSIONS — reused fcel-birthday-* classes (media collage + numbered cards) */}
                 <section className="fcel-birthday-section">
                     <div className="fcel-birthday-container">
-                        <div className="fcel-birthday-grid">
-                            <div className="fcel-birthday-media-collage">
-                                <div className="fcel-collage-img-wrap fcel-collage-tall">
-                                    <img src="https://placehold.co/500x650/274472/ffffff?text=Walking+Tour" alt="Guided walking tour shore excursion" />
-                                </div>
-                                <div className="fcel-collage-img-wrap fcel-collage-short-1">
-                                    <img src="https://placehold.co/500x400/1c2f4a/ffffff?text=Wine+Tasting" alt="Wine tasting shore excursion" />
-                                </div>
-                                <div className="fcel-collage-img-wrap fcel-collage-short-2">
-                                    <img src="https://placehold.co/500x400/0f1c2e/ffffff?text=Local+Guide" alt="Local guide leading a cultural experience" />
-                                </div>
-                                <div className="fcel-collage-glow"></div>
+                        <div className="fcel-birthday-grid wis-shore-grid">
+                            <div className="fcel-occasion-media wis-shore-media">
+                                <img src="https://placehold.co/500x650/274472/ffffff?text=Walking+Tour" alt="Guided walking tour shore excursion" />
                             </div>
                             <div className="fcel-birthday-copy">
-                                <span className="fcel-birthday-eyebrow">
-                                    <MapPin size={16} className="fcel-cake-icon" />
+                                <h2 className="fcel-occasion-title">
                                     Shore Excursions
-                                </span>
-                                <h3 className="fcel-birthday-title">Scenic includes a wide variety of excursions designed to immerse travelers in each destination.</h3>
+                                </h2>
+                                <p className="fcel-birthday-intro">Scenic includes a wide variety of excursions designed to immerse travelers in each destination.</p>
                                 <p className="fcel-birthday-intro">Experiences may include:</p>
-                                <div className="fcel-birthday-cards-container">
+                                <div className="wis-shore-list-grid">
                                     {wisExcursions.map((item, idx) => (
-                                        <div key={idx} className="fcel-birthday-card">
-                                            <div className="fcel-birthday-card-badge">{idx + 1}</div>
-                                            <div className="fcel-birthday-card-content">
-                                                <span className="fcel-birthday-card-title">{item}</span>
+                                        <div key={idx} className="wis-shore-card">
+                                            <div className="wis-shore-number">{idx + 1}</div>
+                                            <div className="wis-shore-text-wrapper">
+                                                <span className="wis-shore-text">{item}</span>
                                             </div>
                                         </div>
                                     ))}
                                 </div>
-                                <div className="fcel-birthday-footnote">
+                                <div className="fcel-birthday-footnote" style={{marginTop: '10px'}}>
                                     <Sparkles size={16} className="fcel-footnote-sparkle" />
                                     <span>Many itineraries also include Scenic Freechoice excursions, allowing guests to personalize their day.</span>
                                 </div>
@@ -419,12 +407,11 @@ const wisWhyBookUs = [
                 <section className="fcel-grad-section">
                     <div className="fcel-grad-container">
                         <div className="fcel-grad-header">
-                            <span className="fcel-birthday-eyebrow">
-                                <Sparkles size={16} className="fcel-cake-icon" />
+                            <h2 className="fcel-occasion-title">
                                 Scenic Enrich Experiences
-                            </span>
-                            <h3 className="fcel-grad-title">Scenic Enrich offers exclusive experiences unavailable to most travelers.</h3>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-grad-title">Scenic Enrich offers exclusive experiences <br /> unavailable to most travelers.</p>
                             <p className="fcel-grad-intro">Examples include:</p>
                         </div>
 
@@ -459,12 +446,12 @@ const wisWhyBookUs = [
                 <section className="fcel-retire-section">
                     <div className="fcel-retire-container">
                         <div className="fcel-retire-header">
-                            <span className="fcel-birthday-eyebrow">
-                                <Compass size={16} className="fcel-cake-icon" />
+                            <h2 className="fcel-occasion-title" style={{color: 'white'}}>
                                 Expedition Experiences
-                            </span>
-                            <h3 className="fcel-retire-title">Guests sailing aboard Scenic Eclipse also enjoy:</h3>
+                            </h2>
                             <div className="fcel-heading-bar"></div>
+
+                            <p className="fcel-retire-title">Guests sailing aboard Scenic Eclipse <br /> also enjoy:</p>
                         </div>
 
                         <div className="fcel-retire-grid">
@@ -488,7 +475,7 @@ const wisWhyBookUs = [
                 </section>
 
                 {/* WELLNESS & FITNESS — reused fcel-reunion-* classes */}
-                <section className="fcel-reunion-section">
+                <section className="fcel-reunion-section" style={{ backgroundColor: 'var(--bg-soft)' }}>
                     <div className="fcel-reunion-container">
                         <div className="fcel-reunion-grid-layout">
                             <div className="fcel-reunion-media-col">
@@ -498,12 +485,12 @@ const wisWhyBookUs = [
                                 </div>
                             </div>
                             <div className="fcel-reunion-copy-col">
-                                <span className="fcel-birthday-eyebrow">
-                                    <Dumbbell size={16} className="fcel-cake-icon" />
+                                <h2 className="fcel-occasion-title">
                                     Wellness & Fitness
-                                </span>
-                                <h3 className="fcel-reunion-title">Scenic offers exceptional wellness facilities.</h3>
+                                </h2>
                                 <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-reunion-title">Scenic offers exceptional wellness facilities.</p>
                                 <p className="fcel-reunion-intro">Included amenities typically include:</p>
                                 <div className="fcel-reunion-cards-grid">
                                     {wisWellnessAmenities.map((item, idx) => (
@@ -525,8 +512,8 @@ const wisWhyBookUs = [
                 <section className="wis-quicknotes-section">
                     <div className="wis-quicknotes-container">
                         <div className="wis-quicknotes-header">
-                            <span className="fcel-eyebrow-label">GOOD TO KNOW</span>
-                            <h2 className="fcel-section-heading">A Few More Details Worth Knowing</h2>
+                            <h2 className="fcel-occasion-title">Good to Know</h2>
+                            <p className="fcel-section-heading">A Few More Details Worth Knowing</p>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
                         <div className="wis-quicknotes-grid">
@@ -564,9 +551,10 @@ const wisWhyBookUs = [
                 {/* WHAT'S NOT INCLUDED — new wis-notincluded section */}
                 <section className="wis-notincluded-section">
                     <div className="wis-notincluded-container">
-                        <span className="fcel-eyebrow-label">What's Not Included?</span>
-                        <h2 className="fcel-section-heading">While Scenic is among the industry's most inclusive cruise lines, some experiences may have additional costs, including:</h2>
+                        <h2 className="fcel-occasion-title">What's Not Included?</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="fcel-occasion-intro">While Scenic is among the industry's most inclusive cruise lines, some experiences may have additional costs, including:</p>
                         <div className="wis-notincluded-grid">
                             {wisNotIncluded.map((item, idx) => (
                                 <div key={idx} className="wis-notincluded-item">
@@ -600,18 +588,14 @@ const wisWhyBookUs = [
                 {/* WHY BOOK WITH TRIPS & SHIPS LUXURY TRAVEL — reused fcel-why-us-* classes */}
                 <section className="fcel-why-us-section">
                     <div className="fcel-why-us-container">
-                        <div className="fcel-why-us-top">
-                            <div className="fcel-why-us-copy">
-                                <span className="fcel-eyebrow-label">TRUSTED SCENIC CRUISE SPECIALISTS</span>
-                                <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    Our Scenic specialists help you:
-                                </p>
-                            </div>
-                            <div className="fcel-why-us-image">
-                                <img src="https://placehold.co/700x600/1c2f4a/ffffff?text=Trips+%26+Ships+Advisors" alt="Trips and Ships Luxury Travel advisors planning a Scenic voyage" />
-                            </div>
+                        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                            <h2 className="fcel-occasion-title">Trusted Scenic Cruise Specialists</h2>
+                            <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                            <p className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</p>
+                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                                Our Scenic specialists help you:
+                            </p>
                         </div>
                         <div className="fcel-why-us-grid">
                             {wisWhyBookUs.map((item, idx) => {

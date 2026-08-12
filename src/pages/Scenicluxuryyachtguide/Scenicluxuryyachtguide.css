@@ -265,7 +265,7 @@
    ============================================================ */
 .sly-intro-section {
     background: #faf8f5;
-    padding: 120px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -443,7 +443,7 @@
    ============================================================ */
 .sly-why-section {
     background: linear-gradient(180deg, var(--sly-bg-dark) 0%, var(--sly-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
     position: relative;
 }
 
@@ -575,7 +575,7 @@
    SCENIC ECLIPSE — YACHT SPLIT SECTION
    ============================================================ */
 .sly-yacht-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: var(--sly-bg-white);
 }
 
@@ -588,14 +588,22 @@
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
     gap: 64px;
-    align-items: center;
+    align-items: stretch;
+}
+
+.sly-yacht-media-cell {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .sly-yacht-media {
-    position: relative;
+    position: absolute;
+    inset: 0;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(15, 28, 46, 0.14);
+    display: flex;
 }
 
 .sly-yacht-media img {
@@ -603,7 +611,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    min-height: 460px;
 }
 
 .sly-yacht-badge {
@@ -624,6 +631,7 @@
 .sly-yacht-copy {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .sly-yacht-eyebrow {
@@ -688,12 +696,18 @@
         gap: 40px;
     }
 
-    .sly-yacht-media {
+    .sly-yacht-media-cell {
+        height: 380px;
         order: -1;
     }
 
+    .sly-yacht-media {
+        position: relative;
+        height: 100%;
+    }
+
     .sly-yacht-media img {
-        min-height: 320px;
+        min-height: unset;
     }
 
     .sly-yacht-eyebrow {
@@ -785,7 +799,7 @@
    ============================================================ */
 .sly-suites-section {
     background: var(--sly-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sly-suites-container {
@@ -874,7 +888,7 @@
    ============================================================ */
 .sly-dining-section {
     background: var(--sly-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sly-dining-container {
@@ -927,7 +941,7 @@
    WELLNESS & SPA — DARK NUMBERED GRID
    ============================================================ */
 .sly-wellness-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: var(--sly-bg-dark);
     position: relative;
     overflow: hidden;
@@ -951,7 +965,7 @@
 }
 
 .sly-wellness-title {
-    font-size: 38px;
+    font-size: 48px;
     line-height: 1.25;
     font-weight: 500;
     color: #ffffff;
@@ -1105,7 +1119,7 @@
    EXPEDITION EXPERIENCES — POLAROID BOARD
    ============================================================ */
 .sly-expedition-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: #f8fafc;
     background-image: radial-gradient(rgba(39, 68, 114, 0.04) 1.5px, transparent 1.5px);
     background-size: 24px 24px;
@@ -1122,7 +1136,7 @@
 }
 
 .sly-expedition-title {
-    font-size: 38px;
+    font-size: 48px;
     line-height: 1.25;
     font-weight: 500;
     color: var(--sly-navy);
@@ -1276,7 +1290,7 @@
    ============================================================ */
 .sly-dest-section {
     background: var(--sly-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sly-dest-container {
@@ -1442,7 +1456,7 @@
    ============================================================ */
 .sly-included-section {
     background: var(--sly-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sly-included-container {
@@ -1513,8 +1527,8 @@
    WHO SHOULD CRUISE — SPLIT CARD LIST
    ============================================================ */
 .sly-who-section {
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
+    padding: 60px 20px;
+    background: var(--bg-soft);
 }
 
 .sly-who-container {
@@ -1663,7 +1677,7 @@
    ============================================================ */
 .sly-why-us-section {
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    padding: 120px 20px;
+    padding: 60px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
@@ -1818,7 +1832,7 @@
     }
 
     .sly-why-us-section {
-        padding: 80px 18px;
+        padding: 60px 20px;
     }
 }
 
@@ -1838,7 +1852,7 @@
    ============================================================ */
 .sly-related-section {
     background: var(--sly-bg-soft);
-    padding: 90px 20px;
+    padding: 60px 20px;
 }
 
 .sly-related-container {
@@ -1907,7 +1921,7 @@
    ============================================================ */
 .sly-faq-section {
     background: #ffffff;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 .sly-faq-container {

@@ -509,40 +509,33 @@ function UniworldVsAvalonWaterways() {
                             <h2 className="fcel-section-heading">Ship Design</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvav-split-comparison">
-                            <div className="uvav-split-content">
-                                <div className="uvav-compare-grid">
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Ship size={18} /> Uniworld</span>
-                                        <ul className="uvav-compare-list">
-                                            {['Individually designed boutique ships', 'Elegant European décor', 'Luxury furnishings', 'Artistic interiors', 'Intimate atmosphere'].map((item, idx) => (
-                                                <li key={idx} className="uvav-compare-item">
-                                                    <CheckCircle size={16} className="uvav-compare-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Ship size={18} /> Avalon Waterways</span>
-                                        <ul className="uvav-compare-list">
-                                            {['Contemporary styling', 'Bright open spaces', 'Floor-to-ceiling Panorama Windows', 'Relaxed atmosphere'].map((item, idx) => (
-                                                <li key={idx} className="uvav-compare-item">
-                                                    <CheckCircle size={16} className="uvav-compare-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <WinnerBadge winner="Uniworld" />
+                        <div className="uvav-compare-grid">
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Uniworld Ship Design" />
+                                <span className="uvav-compare-brand"><Ship size={18} /> Uniworld</span>
+                                <ul className="uvav-compare-list">
+                                    {['Individually designed boutique ships', 'Elegant European décor', 'Luxury furnishings', 'Artistic interiors', 'Intimate atmosphere'].map((item, idx) => (
+                                        <li key={idx} className="uvav-compare-item">
+                                            <CheckCircle size={16} className="uvav-compare-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="uvav-split-image">
-                                <div className="uvav-split-image-card">
-                                    <UvavPlaceholder label="Uniworld vs Avalon River Cruise Ship Design" />
-                                </div>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Avalon Ship Design" />
+                                <span className="uvav-compare-brand"><Ship size={18} /> Avalon Waterways</span>
+                                <ul className="uvav-compare-list">
+                                    {['Contemporary styling', 'Bright open spaces', 'Floor-to-ceiling Panorama Windows', 'Relaxed atmosphere'].map((item, idx) => (
+                                        <li key={idx} className="uvav-compare-item">
+                                            <CheckCircle size={16} className="uvav-compare-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
+                        <WinnerBadge winner="Uniworld" />
                     </div>
                 </section>
 
@@ -608,40 +601,33 @@ function UniworldVsAvalonWaterways() {
                             <h2 className="fcel-section-heading">Dining Comparison</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvav-split-comparison uvav-reverse">
-                            <div className="uvav-split-content">
-                                <div className="uvav-compare-grid">
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Utensils size={18} /> Uniworld</span>
-                                        <ul className="uvav-compare-list">
-                                            {['Gourmet regional cuisine', 'Farm-to-table menus', 'Unlimited premium beverages', 'Fine dining experience'].map((item, idx) => (
-                                                <li key={idx} className="uvav-compare-item">
-                                                    <CheckCircle size={16} className="uvav-compare-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Utensils size={18} /> Avalon Waterways</span>
-                                        <ul className="uvav-compare-list">
-                                            {['Fresh regional cuisine', 'Flexible dining', 'Complimentary wine with dinner', 'Casual luxury atmosphere'].map((item, idx) => (
-                                                <li key={idx} className="uvav-compare-item">
-                                                    <CheckCircle size={16} className="uvav-compare-icon" />
-                                                    <span>{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <WinnerBadge winner="Uniworld" />
+                        <div className="uvav-compare-grid">
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Uniworld Dining Experience" />
+                                <span className="uvav-compare-brand"><Utensils size={18} /> Uniworld</span>
+                                <ul className="uvav-compare-list">
+                                    {['Gourmet regional cuisine', 'Farm-to-table menus', 'Unlimited premium beverages', 'Fine dining experience'].map((item, idx) => (
+                                        <li key={idx} className="uvav-compare-item">
+                                            <CheckCircle size={16} className="uvav-compare-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="uvav-split-image">
-                                <div className="uvav-split-image-card">
-                                    <UvavPlaceholder label="Uniworld vs Avalon Dining Options" />
-                                </div>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Avalon Dining Experience" />
+                                <span className="uvav-compare-brand"><Utensils size={18} /> Avalon Waterways</span>
+                                <ul className="uvav-compare-list">
+                                    {['Fresh regional cuisine', 'Flexible dining', 'Complimentary wine with dinner', 'Casual luxury atmosphere'].map((item, idx) => (
+                                        <li key={idx} className="uvav-compare-item">
+                                            <CheckCircle size={16} className="uvav-compare-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
+                        <WinnerBadge winner="Uniworld" />
                     </div>
                 </section>
 
@@ -707,30 +693,23 @@ function UniworldVsAvalonWaterways() {
                             <h2 className="fcel-section-heading">Service</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvav-split-comparison">
-                            <div className="uvav-split-content">
-                                <div className="uvav-compare-grid">
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Smile size={18} /> Uniworld</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Uniworld is recognized for personalized luxury service with one of the highest crew-to-guest ratios in river cruising.
-                                        </p>
-                                    </div>
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Smile size={18} /> Avalon Waterways</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Avalon provides warm, attentive service in a more relaxed atmosphere.
-                                        </p>
-                                    </div>
-                                </div>
-                                <WinnerBadge winner="Uniworld" />
+                        <div className="uvav-compare-grid">
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Uniworld Onboard Service" />
+                                <span className="uvav-compare-brand"><Smile size={18} /> Uniworld</span>
+                                <p className="uvav-compare-paragraph">
+                                    Uniworld is recognized for personalized luxury service with one of the highest crew-to-guest ratios in river cruising.
+                                </p>
                             </div>
-                            <div className="uvav-split-image">
-                                <div className="uvav-split-image-card">
-                                    <UvavPlaceholder label="Uniworld vs Avalon Guest Service" />
-                                </div>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Avalon Onboard Service" />
+                                <span className="uvav-compare-brand"><Smile size={18} /> Avalon Waterways</span>
+                                <p className="uvav-compare-paragraph">
+                                    Avalon provides warm, attentive service in a more relaxed atmosphere.
+                                </p>
                             </div>
                         </div>
+                        <WinnerBadge winner="Uniworld" />
                     </div>
                 </section>
 
@@ -787,30 +766,23 @@ function UniworldVsAvalonWaterways() {
                                 </li>
                             ))}
                         </ul>
-                        <div className="uvav-split-comparison uvav-reverse" style={{ marginTop: '48px' }}>
-                            <div className="uvav-split-content">
-                                <div className="uvav-compare-grid">
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Globe size={18} /> Uniworld</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Uniworld also offers Egypt, Peru, India, and Southeast Asia.
-                                        </p>
-                                    </div>
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Globe size={18} /> Avalon</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Avalon additionally sails the Mekong, Nile, and Colombia.
-                                        </p>
-                                    </div>
-                                </div>
-                                <WinnerBadge winner="Tie" />
+                        <div className="uvav-compare-grid" style={{ marginTop: '48px' }}>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Uniworld Cruise Destinations" />
+                                <span className="uvav-compare-brand"><Globe size={18} /> Uniworld</span>
+                                <p className="uvav-compare-paragraph">
+                                    Uniworld also offers Egypt, Peru, India, and Southeast Asia.
+                                </p>
                             </div>
-                            <div className="uvav-split-image">
-                                <div className="uvav-split-image-card">
-                                    <UvavPlaceholder label="Uniworld vs Avalon Cruise Destinations" />
-                                </div>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Avalon Cruise Destinations" />
+                                <span className="uvav-compare-brand"><Globe size={18} /> Avalon</span>
+                                <p className="uvav-compare-paragraph">
+                                    Avalon additionally sails the Mekong, Nile, and Colombia.
+                                </p>
                             </div>
                         </div>
+                        <WinnerBadge winner="Tie" />
                     </div>
                 </section>
 
@@ -840,30 +812,23 @@ function UniworldVsAvalonWaterways() {
                             <h2 className="fcel-section-heading">Pricing</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvav-split-comparison">
-                            <div className="uvav-split-content">
-                                <div className="uvav-compare-grid">
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Coins size={18} /> Uniworld</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Higher pricing with nearly all-inclusive luxury.
-                                        </p>
-                                    </div>
-                                    <div className="uvav-compare-col">
-                                        <span className="uvav-compare-brand"><Coins size={18} /> Avalon</span>
-                                        <p className="uvav-compare-paragraph">
-                                            Excellent value with competitive pricing and generous inclusions.
-                                        </p>
-                                    </div>
-                                </div>
-                                <WinnerBadge winner="Avalon Waterways" />
+                        <div className="uvav-compare-grid">
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Uniworld Cruise Pricing" />
+                                <span className="uvav-compare-brand"><Coins size={18} /> Uniworld</span>
+                                <p className="uvav-compare-paragraph">
+                                    Higher pricing with nearly all-inclusive luxury.
+                                </p>
                             </div>
-                            <div className="uvav-split-image">
-                                <div className="uvav-split-image-card">
-                                    <UvavPlaceholder label="Uniworld vs Avalon Pricing Comparison" />
-                                </div>
+                            <div className="uvav-compare-col">
+                                <UvavPlaceholder label="Avalon Cruise Pricing" />
+                                <span className="uvav-compare-brand"><Coins size={18} /> Avalon</span>
+                                <p className="uvav-compare-paragraph">
+                                    Excellent value with competitive pricing and generous inclusions.
+                                </p>
                             </div>
                         </div>
+                        <WinnerBadge winner="Avalon Waterways" />
                     </div>
                 </section>
 
@@ -958,7 +923,7 @@ function UniworldVsAvalonWaterways() {
                     </div>
                 </section>
 
-                 {/* EXPERT INSIGHT */}
+                {/* EXPERT INSIGHT */}
                 <section id="uniworld-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
                     <div className="medi-expert-editorial-container">
                         <div className="medi-expert-editorial-card">

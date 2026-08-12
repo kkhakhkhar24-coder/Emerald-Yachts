@@ -885,7 +885,7 @@
    ============================================================ */
 .fcel-villa-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .fcel-villa-container {
@@ -955,7 +955,7 @@
    ============================================================ */
 .fcel-concierge-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .fcel-concierge-container {
@@ -997,7 +997,7 @@
    ============================================================ */
 .fcel-why-us-section {
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    padding: 120px 20px;
+    padding: 60px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
@@ -1276,7 +1276,7 @@
    MILESTONE BIRTHDAY VACATIONS REDESIGN
    ============================================================ */
 .fcel-birthday-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
     position: relative;
     overflow: hidden;
@@ -1555,7 +1555,7 @@
    FAMILY REUNION TRAVEL REDESIGN
    ============================================================ */
 .fcel-reunion-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: var(--fcel-bg-white);
 }
 
@@ -1694,7 +1694,7 @@
    RETIREMENT TIMELINE REDESIGN (NO IMAGES, NO GRID)
    ============================================================ */
 .fcel-retire-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: var(--fcel-bg-dark);
     position: relative;
     overflow: hidden;
@@ -1815,7 +1815,7 @@
    GRADUATION VACATIONS REDESIGN (YEARBOOK POLAROID BOARD)
    ============================================================ */
 .fcel-grad-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: #f8fafc;
     background-image: radial-gradient(rgba(39, 68, 114, 0.04) 1.5px, transparent 1.5px);
     background-size: 24px 24px;
@@ -2063,4 +2063,4 @@
         width: 100%;
         transform: none !important;
     }
-}
+}

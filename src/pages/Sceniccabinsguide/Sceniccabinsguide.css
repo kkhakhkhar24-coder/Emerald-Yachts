@@ -497,7 +497,7 @@
    ============================================================ */
 .scg-standout-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-standout-container {
@@ -541,8 +541,25 @@
    SUITE CATEGORIES (new — scg-) — main image-style section
    ============================================================ */
 .scg-suites-section {
+    background: transparent;
+    padding: 60px 20px;
+}
+
+.scg-suite-row-wrapper {
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.scg-suite-row-wrapper.scg-bg-soft {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+}
+
+.scg-suite-row-wrapper.scg-bg-white {
+    background: #ffffff;
+}
+
+.scg-bg-white .scg-suite-feature-item {
+    background: var(--fcel-bg-soft);
 }
 
 .scg-suites-container {
@@ -592,10 +609,12 @@
 }
 
 .scg-suite-name {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--fcel-navy);
-    margin: 0 0 12px 0;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
+    margin: 0 0 12px 0 !important;
+    font-family: var(--font-display) !important;
+    text-align: left;
 }
 
 .scg-suite-intro {
@@ -661,7 +680,7 @@
    ============================================================ */
 .scg-butler-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-butler-container {
@@ -725,7 +744,7 @@
    ============================================================ */
 .scg-amenities-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-amenities-container {
@@ -767,7 +786,7 @@
    ============================================================ */
 .scg-picker-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-picker-container {
@@ -854,7 +873,7 @@
    ============================================================ */
 .scg-tips-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-tips-container {
@@ -896,7 +915,7 @@
    ============================================================ */
 .scg-whybook-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .scg-whybook-container {

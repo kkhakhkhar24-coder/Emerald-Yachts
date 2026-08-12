@@ -35,7 +35,7 @@ function ScenicEclipseIIReviews() {
     /* Dining venues */
     const seirDiningVenues = [
         'Elements', 'Lumière', "Koko's Asian Fusion", "Sushi @ Koko's", "Night Market @ Koko's",
-        'Azure Bar & Café', 'Yacht Club Grill', "Chef's Table", 'In-suite dining'
+        'Azure Bar & Café', 'Yacht Club Grill', "Chef's Table"
     ]
 
     const seirDiningPraise = [
@@ -298,7 +298,7 @@ function ScenicEclipseIIReviews() {
                     <div className="seir-impression-container">
                         <div className="seir-impression-header">
                             <span className="fcel-eyebrow-label">FIRST IMPRESSIONS</span>
-                            <h2 className="fcel-section-heading">What Guests Love About Scenic Eclipse II</h2>
+                            <h2 className="fcel-section-heading">What Guests Love About <br /> Scenic Eclipse II</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
                         <div className="seir-impression-grid">
@@ -321,24 +321,25 @@ function ScenicEclipseIIReviews() {
                 <section className="fcel-occasion-section">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall seir-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="seir-placeholder">
                                     <Home size={40} />
                                     <span>Image Placeholder: All-Veranda Suite Interior</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder">
                                     <Waves size={32} />
                                     <span>Image Placeholder: Private Veranda View</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder seir-placeholder-full">
                                     <Crown size={32} />
                                     <span>Image Placeholder: Suite Marble Bathroom</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">SUITES & ACCOMMODATIONS</span>
-                                <h2 className="fcel-section-heading">Every Guest Enjoys an All-Veranda Suite With Butler Service</h2>
+                                <h2 className="fcel-section-heading">Suites & Accommodations</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-section-intro">Every Guest Enjoys an All-Veranda Suite With Butler Service</p>
+
                                 <p className="fcel-occasion-intro">Suite features include:</p>
                                 <div className="fcel-villa-features-grid">
                                     {seirSuiteFeatures.map((feature, idx) => (
@@ -351,14 +352,20 @@ function ScenicEclipseIIReviews() {
                                 <p className="fcel-occasion-intro" style={{ marginTop: '22px', marginBottom: '18px' }}>
                                     Suites are among the largest in the expedition cruise industry and feel comparable to luxury hotel accommodations.
                                 </p>
-                                <p className="fcel-occasion-intro" style={{ marginTop: '22px', marginBottom: '16px', fontWeight: 600, fontSize: '18px' }}>Ready to Reserve Your All-Veranda Suite?</p>
-                                <div className="fcel-hero-btn-row" style={{ justifyContent: 'flex-start' }}>
-                                    <Link to="/contact" className="fcel-btn-primary">
-                                        <Phone size={18} />
-                                        Schedule a Consultation
-                                    </Link>
-                                </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* SUITES INLINE CTA */}
+                <section className="seir-inline-cta">
+                    <div className="seir-inline-cta-inner">
+                        <h2 className="seir-inline-cta-heading">Ready to Reserve Your <br /> All-Veranda Suite?</h2>
+                        <div className="fcel-hero-btn-row" style={{ justifyContent: 'center' }}>
+                            <Link to="/contact" className="fcel-btn-primary">
+                                <Phone size={18} />
+                                Schedule a Consultation
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -367,24 +374,24 @@ function ScenicEclipseIIReviews() {
                 <section className="fcel-occasion-section fcel-occasion-soft">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall seir-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="seir-placeholder">
                                     <Utensils size={40} />
                                     <span>Image Placeholder: Elements Dining Room</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder">
                                     <Ship size={32} />
                                     <span>Image Placeholder: Yacht Club Grill</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder seir-placeholder-full">
                                     <Sparkles size={32} />
                                     <span>Image Placeholder: Chef's Table Setting</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">DINING EXPERIENCE</span>
-                                <h2 className="fcel-section-heading">Up to Ten Dining Venues Offering Global Cuisine</h2>
+                                <h2 className="fcel-section-heading">Dining Experience</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-section-intro">Up to Ten Dining Venues Offering Global Cuisine</p>
                                 <p className="fcel-occasion-intro">Dining venues include:</p>
                                 <div className="seir-venues-wrap">
                                     <div className="seir-venues-grid">
@@ -397,14 +404,14 @@ function ScenicEclipseIIReviews() {
                                     </div>
                                 </div>
                                 <p className="fcel-occasion-intro">Guests consistently praise:</p>
-                                <ul className="fcel-occasion-list">
+                                <div className="fcel-villa-features-grid">
                                     {seirDiningPraise.map((item, idx) => (
-                                        <li key={idx}>
-                                            <CheckCircle size={18} className="fcel-occasion-list-icon" />
+                                        <div key={idx} className="fcel-villa-feature-pill seir-dining-praise-pill">
+                                            <CheckCircle size={16} />
                                             <span>{item}</span>
-                                        </li>
+                                        </div>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,9 +436,9 @@ function ScenicEclipseIIReviews() {
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">SERVICE</span>
-                                <h2 className="fcel-section-heading">Six-Star Hospitality With a One-to-One Crew-to-Guest Ratio</h2>
+                                <h2 className="fcel-section-heading">Service</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-section-intro">Six-Star Hospitality With a One-to-One Crew-to-Guest Ratio</p>
                                 <p className="fcel-occasion-intro">
                                     With nearly a one-to-one crew-to-guest ratio, staff quickly recognize guest preferences and provide personalized attention throughout the voyage. Highlights include:
                                 </p>
@@ -455,33 +462,33 @@ function ScenicEclipseIIReviews() {
                 <section className="fcel-occasion-section fcel-occasion-soft">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall seir-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="seir-placeholder">
                                     <Compass size={40} />
                                     <span>Image Placeholder: Zodiac Cruise Landing</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder">
                                     <Camera size={32} />
                                     <span>Image Placeholder: Wildlife Photography Excursion</span>
                                 </div>
-                                <div className="fcel-media-short seir-placeholder">
+                                <div className="seir-placeholder seir-placeholder-full">
                                     <Waves size={32} />
                                     <span>Image Placeholder: Kayaking Near Icebergs</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">EXPEDITION EXPERIENCE</span>
-                                <h2 className="fcel-section-heading">Genuine Expedition Experiences Led by Expert Discovery Teams</h2>
+                                <h2 className="fcel-section-heading">Expedition Experience</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-section-intro">Genuine Expedition Experiences Led by Expert Discovery Teams</p>
                                 <p className="fcel-occasion-intro">Depending on the itinerary, guests may enjoy:</p>
-                                <ul className="fcel-occasion-list">
+                                <div className="fcel-villa-features-grid">
                                     {seirExpeditionActivities.map((item, idx) => (
-                                        <li key={idx}>
-                                            <CheckCircle size={18} className="fcel-occasion-list-icon" />
+                                        <div key={idx} className="fcel-villa-feature-pill seir-dining-praise-pill">
+                                            <CheckCircle size={16} />
                                             <span>{item}</span>
-                                        </li>
+                                        </div>
                                     ))}
-                                </ul>
+                                </div>
                                 <div className="fcel-occasion-footnote">
                                     The expert Discovery Team includes marine biologists, naturalists, historians, photographers, and destination specialists who provide lectures and accompany shore excursions.
                                 </div>
@@ -493,9 +500,10 @@ function ScenicEclipseIIReviews() {
                 {/* HELICOPTERS & SUBMERSIBLE */}
                 <section className="seir-heli-section">
                     <div className="seir-heli-container">
-                        <span className="fcel-eyebrow-label">HELICOPTERS & SUBMERSIBLE</span>
-                        <h2 className="fcel-section-heading">Exclusive Expedition Technology: Helicopters & Submersible</h2>
+                        <h2 className="fcel-section-heading">Helicopters & Submersible</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-section-intro">Exclusive Expedition Technology: Helicopters & Submersible</p>
+
                         <p className="fcel-lead-paragraph" style={{ textAlign: 'center' }}>Select itineraries offer optional experiences such as:</p>
                         <div className="seir-heli-grid">
                             <div className="seir-heli-card">
@@ -521,9 +529,9 @@ function ScenicEclipseIIReviews() {
                 <section className="seir-wellness-section">
                     <div className="seir-wellness-container">
                         <div className="seir-wellness-header">
-                            <span className="fcel-eyebrow-label">WELLNESS & SPA</span>
-                            <h2 className="fcel-section-heading">Enhanced Wellness Facilities Designed for Relaxation at Sea</h2>
+                            <h2 className="fcel-section-heading">Wellness & Spa</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-lead-paragraph">Enhanced Wellness Facilities Designed for Relaxation at Sea</p>
                             <p className="fcel-lead-paragraph">Facilities include:</p>
                         </div>
                         <div className="seir-wellness-grid">
@@ -549,9 +557,9 @@ function ScenicEclipseIIReviews() {
                 <section className="seir-dest-section">
                     <div className="seir-dest-container">
                         <div className="seir-dest-header">
-                            <span className="fcel-eyebrow-label">DESTINATIONS</span>
-                            <h2 className="fcel-section-heading">Spectacular Destinations From Antarctica to the South Pacific</h2>
+                            <h2 className="fcel-section-heading">Destinations</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-section-intro">Spectacular Destinations From Antarctica to the South Pacific</p>
                             <p className="fcel-lead-paragraph">Popular itineraries include:</p>
                         </div>
                         <div className="seir-dest-grid">
@@ -570,8 +578,15 @@ function ScenicEclipseIIReviews() {
                                 )
                             })}
                         </div>
-                        <div className="fcel-hero-btn-row" style={{ marginTop: '40px' }}>
-                            <button className="fcel-btn-primary" style={{ background: 'var(--fcel-navy)', color: '#ffffff' }}>
+                    </div>
+                </section>
+
+                {/* DESTINATIONS INLINE CTA */}
+                <section className="seir-inline-cta">
+                    <div className="seir-inline-cta-inner">
+                        <h2 className="seir-inline-cta-heading">Ready to Explore These Spectacular Destinations?</h2>
+                        <div className="fcel-hero-btn-row" style={{ justifyContent: 'center', marginTop: '0' }}>
+                            <button className="fcel-btn-primary">
                                 <LayoutList size={18} />
                                 Request Itinerary Options
                             </button>
@@ -582,13 +597,13 @@ function ScenicEclipseIIReviews() {
                 {/* WHAT'S INCLUDED */}
                 <section className="seir-included-section">
                     <div className="seir-included-container">
-                        <span className="fcel-eyebrow-label">WHAT'S INCLUDED</span>
-                        <h2 className="fcel-section-heading">Comprehensive All-Inclusive Luxury: What's Included</h2>
+                        <h2 className="fcel-section-heading">What's Included</h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">Comprehensive All-Inclusive Luxury: What's Included</p>
                         <p className="fcel-lead-paragraph">Most voyages include:</p>
                         <div className="fcel-villa-features-grid">
                             {seirIncluded.map((item, idx) => (
-                                <div key={idx} className="fcel-villa-feature-pill">
+                                <div key={idx} className="fcel-villa-feature-pill seir-dining-praise-pill">
                                     <CheckCircle size={16} />
                                     <span>{item}</span>
                                 </div>
@@ -638,9 +653,10 @@ function ScenicEclipseIIReviews() {
                 {/* OUR VERDICT */}
                 <section className="seir-verdict-section">
                     <div className="seir-verdict-container">
-                        <span className="fcel-eyebrow-label seir-eyebrow-light">OUR VERDICT</span>
-                        <h2 className="fcel-section-heading">Our Verdict: Scenic Eclipse II Elevates an Already Exceptional Experience</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <h2 className="fcel-section-heading">Our Verdict</h2>
+                                                <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="seir-verdict-text">Our Verdict: Scenic Eclipse II Elevates an Already Exceptional Experience</p>
                         <p className="seir-verdict-text">
                             The upgraded wellness spaces, improved outdoor amenities, luxurious accommodations, and world-class expedition program make it one of the finest ultra-luxury expedition ships sailing today.
                         </p>

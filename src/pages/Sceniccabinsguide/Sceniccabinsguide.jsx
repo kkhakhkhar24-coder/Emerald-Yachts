@@ -316,9 +316,10 @@ function ScenicCabinsGuide() {
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">ALL-VERANDA LUXURY SUITES</span>
-                                <h2 className="fcel-section-heading">Find the Perfect Suite for Your Scenic Eclipse Journey</h2>
-                                <div className="fcel-heading-bar"></div>
+                                <h2 className="fcel-section-heading">All-Veranda Luxury Suites</h2>
+                                                                <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-lead-paragraph">Find the Perfect Suite for Your Scenic Eclipse Journey</p>
                                 <p className="fcel-lead-paragraph">
                                     One of the defining features of Scenic Eclipse and Scenic Eclipse II is that every accommodation is a spacious, all-veranda suite. Unlike many luxury cruise lines that offer inside or oceanview cabins, Scenic ensures every guest enjoys a private outdoor space, elegant furnishings, and personalized butler service.
                                 </p>
@@ -346,12 +347,11 @@ function ScenicCabinsGuide() {
                 {/* WHY SCENIC SUITES STAND OUT */}
                 <section className="scg-standout-section">
                     <div className="scg-standout-container">
-                        <span className="fcel-eyebrow-label">
-                            <Star size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Why Scenic Suites Stand Out
-                        </span>
-                        <h2 className="fcel-section-heading">Every suite includes:</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">Every suite includes:</p>
                         <div className="scg-standout-grid">
                             {scgStandoutList.map((item, idx) => {
                                 const ScgIcon = item.icon
@@ -382,44 +382,47 @@ function ScenicCabinsGuide() {
 
                 {/* SCENIC SUITE CATEGORIES */}
                 <section className="scg-suites-section">
-                    <div className="scg-suites-container">
-                        <div className="scg-suites-header">
-                            <span className="fcel-eyebrow-label">
-                                <Bed size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                    <div className="scg-suites-container" style={{ paddingBottom: '40px' }}>
+                        <div className="scg-suites-header" style={{ marginBottom: 0 }}>
+                            <h2 className="fcel-section-heading">
                                 Scenic Suite Categories
-                            </span>
-                            <h2 className="fcel-section-heading">From spacious entry-level suites to owner-style residences.</h2>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">
                                 Scenic offers a variety of suite categories ranging from spacious entry-level accommodations to expansive owner-style residences.
                             </p>
                         </div>
+                    </div>
 
-                        {scgSuites.map((suite, idx) => {
-                            const isReverse = idx % 2 === 1
-                            return (
-                                <div key={idx} className={`scg-suite-row ${isReverse ? 'scg-suite-row-reverse' : ''}`}>
-                                    <div className="scg-suite-visual">
-                                        <ScgPlaceholder label={suite.name} tall />
-                                    </div>
-                                    <div className="scg-suite-copy">
-                                        <span className="scg-suite-badge">Suite Category {idx + 1} of {scgSuites.length}</span>
-                                        <h3 className="scg-suite-name">{suite.name}</h3>
-                                        <p className="scg-suite-intro">{suite.intro}</p>
-                                        <ul className="scg-suite-features">
-                                            {suite.features.map((feature, fIdx) => (
-                                                <li key={fIdx} className="scg-suite-feature-item">
-                                                    <CheckCircle size={15} />
-                                                    <span>{feature}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <p className="scg-suite-closing">{suite.closing}</p>
+                    {scgSuites.map((suite, idx) => {
+                        const isReverse = idx % 2 === 1
+                        const rowBgClass = idx % 2 === 0 ? 'scg-bg-soft' : 'scg-bg-white'
+                        return (
+                            <div key={idx} className={`scg-suite-row-wrapper ${rowBgClass}`}>
+                                <div className="scg-suites-container">
+                                    <div className={`scg-suite-row ${isReverse ? 'scg-suite-row-reverse' : ''}`} style={{ marginBottom: 0 }}>
+                                        <div className="scg-suite-visual">
+                                            <ScgPlaceholder label={suite.name} tall />
+                                        </div>
+                                        <div className="scg-suite-copy">
+                                            <span className="scg-suite-badge">Suite Category {idx + 1} of {scgSuites.length}</span>
+                                            <h3 className="scg-suite-name">{suite.name}</h3>
+                                            <p className="scg-suite-intro">{suite.intro}</p>
+                                            <ul className="scg-suite-features">
+                                                {suite.features.map((feature, fIdx) => (
+                                                    <li key={fIdx} className="scg-suite-feature-item">
+                                                        <CheckCircle size={15} />
+                                                        <span>{feature}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                            <p className="scg-suite-closing">{suite.closing}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            )
-                        })}
-                    </div>
+                            </div>
+                        )
+                    })}
                 </section>
 
                 {/* BUTLER SERVICE IN EVERY SUITE */}
@@ -461,12 +464,11 @@ function ScenicCabinsGuide() {
                 {/* SUITE AMENITIES */}
                 <section className="scg-amenities-section">
                     <div className="scg-amenities-container">
-                        <span className="fcel-eyebrow-label">
-                            <Gem size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Suite Amenities
-                        </span>
-                        <h2 className="fcel-section-heading">Premium amenities throughout the ship.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">Premium amenities throughout the ship.</p>
                         <p className="fcel-lead-paragraph">Regardless of category, guests enjoy premium amenities throughout the ship. Included features:</p>
                         <div className="scg-amenities-grid">
                             {scgAmenitiesList.map((item, idx) => {
@@ -489,12 +491,11 @@ function ScenicCabinsGuide() {
                 <section className="scg-picker-section">
                     <div className="scg-picker-container">
                         <div className="scg-picker-header">
-                            <span className="fcel-eyebrow-label">
-                                <Trophy size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                            <h2 className="fcel-section-heading">
                                 Which Suite Should You Choose?
-                            </span>
-                            <h2 className="fcel-section-heading">Match your travel style to the ideal suite.</h2>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-lead-paragraph">Match your travel style to the ideal suite.</p>
                         </div>
                         <div className="scg-picker-grid">
                             {scgPicker.map((item, idx) => {
@@ -528,12 +529,11 @@ function ScenicCabinsGuide() {
                 {/* TIPS FOR CHOOSING THE RIGHT CABIN */}
                 <section className="scg-tips-section">
                     <div className="scg-tips-container">
-                        <span className="fcel-eyebrow-label">
-                            <Compass size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Tips for Choosing the Right Cabin
-                        </span>
-                        <h2 className="fcel-section-heading">When selecting your Scenic suite, consider:</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">When selecting your Scenic suite, consider:</p>
                         <div className="scg-tips-grid">
                             {scgTipsList.map((item, idx) => {
                                 const ScgIcon = item.icon
@@ -554,12 +554,11 @@ function ScenicCabinsGuide() {
                 {/* WHY BOOK WITH TRIPS & SHIPS */}
                 <section className="scg-whybook-section">
                     <div className="scg-whybook-container">
-                        <span className="fcel-eyebrow-label">
-                            <Award size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Why Book with Trips & Ships Luxury Travel?
-                        </span>
-                        <h2 className="fcel-section-heading">We help travelers:</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">We help travelers:</p>
                         <ul className="scg-whybook-list">
                             {scgWhyBookList.map((item, idx) => {
                                 const ScgIcon = item.icon

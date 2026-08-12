@@ -16,6 +16,16 @@ import { Link } from 'react-router'
 // import impressionsImg from '../../assets/ScenicEclipseReviews/scenic-eclipse-observation-lounge-interior-design.jpg'
 // import suitesImg from '../../assets/ScenicEclipseReviews/scenic-eclipse-suite-butler-service-luxury-bed.jpg'
 
+// Custom Image Placeholder Component
+function ScePlaceholder({ label, className = '' }) {
+    return (
+        <div className={`sce-image-placeholder ${className}`} role="img" aria-label={`Image placeholder: ${label}`}>
+            <Compass size={28} />
+            <span>{label}</span>
+        </div>
+    )
+}
+
 function ScenicEclipseReviews() {
 
     /* Hero rotating background images */
@@ -341,11 +351,10 @@ function ScenicEclipseReviews() {
                                 {/* <img src={impressionsImg} alt="Scenic Eclipse observation lounge interior design" /> */}
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">
-                                    <Sparkles size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="fcel-section-heading">
+
                                     First Impressions
-                                </span>
-                                <h2 className="fcel-section-heading">Not a traditional cruise ship.</h2>
+                                </h2>
                                 <div className="fcel-heading-bar"></div>
                                 <p className="fcel-lead-paragraph">
                                     From the moment you step aboard Scenic Eclipse, it's clear this is not a traditional cruise ship. The atmosphere feels more like an elegant private yacht than a large ocean liner.
@@ -379,12 +388,13 @@ function ScenicEclipseReviews() {
                                 {/* <img src={suitesImg} alt="Scenic Eclipse suite with butler service and luxury bed" /> */}
                             </div>
                             <div>
-                                <span className="fcel-eyebrow-label">
-                                    <Bed size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="fcel-section-heading">
+
                                     Suites & Accommodations
-                                </span>
-                                <h2 className="fcel-section-heading">One of Scenic Eclipse's biggest strengths.</h2>
-                                <div className="fcel-heading-bar"></div>
+                                </h2>
+                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">One of Scenic Eclipse's biggest strengths.</p>
+                               
                                 <p className="fcel-lead-paragraph">
                                     One of Scenic Eclipse's biggest strengths is its accommodations. Every guest stays in an ocean-view suite with a private veranda, creating a residential feel that makes even longer voyages exceptionally comfortable.
                                 </p>
@@ -454,11 +464,9 @@ function ScenicEclipseReviews() {
                 {/* SERVICE */}
                 <section className="sce-service-section">
                     <div className="sce-service-container">
-                        <span className="fcel-eyebrow-label">
-                            <Crown size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Service
-                        </span>
-                        <h2 className="fcel-section-heading">Service is one of Scenic Eclipse's defining features.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <p className="fcel-lead-paragraph">
                             With nearly a 1:1 crew-to-guest ratio, staff members quickly learn guests' names and preferences.
@@ -484,24 +492,23 @@ function ScenicEclipseReviews() {
                 {/* EXPEDITION EXPERIENCES */}
                 <section className="sce-expedition-section">
                     <div className="sce-expedition-container">
-                        <span className="fcel-eyebrow-label">
-                            <Compass size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Expedition Experiences
-                        </span>
-                        <h2 className="fcel-section-heading">Scenic Eclipse isn't just about luxury—it is a true expedition vessel.</h2>
+                        </h2>
                         <div className="fcel-heading-bar"></div>
+                        <p className="fcel-lead-paragraph">Scenic Eclipse isn't just about luxury—it is a true expedition vessel.</p>
                         <p className="fcel-lead-paragraph" style={{ marginBottom: '0' }}>Depending on your itinerary, you may enjoy:</p>
                         <div className="sce-expedition-grid" style={{ marginTop: '20px' }}>
-                            <ul className="sce-expedition-list">
-                                {sceExpeditionList.map((item, idx) => (
-                                    <li key={idx} className="sce-expedition-list-item">
-                                        <CheckCircle size={16} />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div>
-                                <div className="sce-expedition-premium-box">
+                            <div className="sce-expedition-copy-col">
+                                <ul className="sce-expedition-list">
+                                    {sceExpeditionList.map((item, idx) => (
+                                        <li key={idx} className="sce-expedition-list-item">
+                                            <CheckCircle size={16} />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div className="sce-expedition-premium-box" style={{ marginTop: '20px' }}>
                                     <p className="sce-expedition-premium-title">Select voyages also feature:</p>
                                     {scePremiumList.map((item, idx) => {
                                         const SceIcon = item.icon
@@ -513,7 +520,12 @@ function ScenicEclipseReviews() {
                                         )
                                     })}
                                 </div>
-                                <p className="sce-expedition-discovery-note">
+                            </div>
+                            <div className="sce-expedition-media-col">
+                                <div className="sce-expedition-image-wrapper">
+                                    <ScePlaceholder label="Scenic Eclipse Discovery Voyage & Expedition Experience" />
+                                </div>
+                                <p className="sce-expedition-discovery-note" style={{ marginTop: '20px' }}>
                                     The Discovery Team includes naturalists, historians, marine biologists, photographers, and destination experts who enrich every excursion.
                                 </p>
                             </div>
@@ -563,11 +575,9 @@ function ScenicEclipseReviews() {
                 <section className="sce-destinations-section">
                     <div className="sce-destinations-container">
                         <div className="sce-destinations-header">
-                            <span className="fcel-eyebrow-label">
-                                <MapPin size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                            <h2 className="fcel-section-heading">
                                 Destinations
-                            </span>
-                            <h2 className="fcel-section-heading">Scenic Eclipse sails to many of the world's most spectacular locations.</h2>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Popular itineraries include:</p>
                         </div>
@@ -576,11 +586,14 @@ function ScenicEclipseReviews() {
                                 const DestIcon = dest.icon
                                 return (
                                     <div key={idx} className="sce-destination-card">
-                                        <div className="sce-destination-icon">
-                                            <DestIcon size={22} />
+                                        <ScePlaceholder label={dest.name} />
+                                        <div className="sce-destination-card-content">
+                                            <div className="sce-destination-icon">
+                                                <DestIcon size={22} />
+                                            </div>
+                                            <h4 className="sce-destination-name">{dest.name}</h4>
+                                            <p className="sce-destination-desc">{dest.desc}</p>
                                         </div>
-                                        <h4 className="sce-destination-name">{dest.name}</h4>
-                                        <p className="sce-destination-desc">{dest.desc}</p>
                                     </div>
                                 )
                             })}
@@ -591,12 +604,11 @@ function ScenicEclipseReviews() {
                 {/* WHAT'S INCLUDED */}
                 <section className="sce-included-section">
                     <div className="sce-included-container">
-                        <span className="fcel-eyebrow-label">
-                            <CheckCircle size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             What's Included?
-                        </span>
-                        <h2 className="fcel-section-heading">One of the most inclusive luxury cruise experiences available.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">One of the most inclusive luxury cruise experiences available.</p>
                         <p className="fcel-lead-paragraph">Most voyages include:</p>
                         <div className="sce-included-grid">
                             {sceIncludedList.map((item, idx) => {
@@ -618,12 +630,11 @@ function ScenicEclipseReviews() {
                 {/* WHO SHOULD CHOOSE */}
                 <section className="sce-audience-section">
                     <div className="sce-audience-container">
-                        <span className="fcel-eyebrow-label">
-                            <Users size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Who Should Choose Scenic Eclipse?
-                        </span>
-                        <h2 className="fcel-section-heading">Scenic Eclipse is ideal for:</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <p className="fcel-lead-paragraph">Scenic Eclipse is ideal for:</p>
                         <div className="sce-audience-pills-wrap">
                             {sceAudienceList.map((item, idx) => (
                                 <span key={idx} className="sce-audience-pill">{item}</span>
@@ -673,9 +684,10 @@ function ScenicEclipseReviews() {
                 {/* OUR VERDICT */}
                 <section className="sce-verdict-section">
                     <div className="sce-verdict-container">
-                        <span className="fcel-eyebrow-label">Our Verdict</span>
-                        <h2 className="fcel-section-heading">Scenic Eclipse successfully combines luxury cruising with authentic expedition travel.</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
+                        <h2 className="fcel-section-heading">Our Verdict</h2>
+                                                <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="sce-verdict-text">Scenic Eclipse successfully combines luxury cruising with authentic expedition travel.</p>
                         <p className="sce-verdict-text">
                             Rather than choosing between adventure and comfort, guests enjoy both. Spacious suites, exceptional dining, personalized service, and immersive expedition experiences create one of the most complete luxury cruise experiences available today.
                         </p>
@@ -691,13 +703,11 @@ function ScenicEclipseReviews() {
                 {/* WHY BOOK WITH TRIPS & SHIPS */}
                 <section className="sce-whybook-section">
                     <div className="sce-whybook-container">
-                        <span className="fcel-eyebrow-label">
-                            <Star size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Why Book with Trips & Ships Luxury Travel?
-                        </span>
-                        <h2 className="fcel-section-heading">Choosing the right Scenic itinerary is just as important as choosing the ship.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">Our advisors help you:</p>
+                        <p className="fcel-lead-paragraph">Choosing the right Scenic itinerary is just as important as choosing the ship. Our advisors help you:</p>
                         <ul className="sce-whybook-list">
                             {sceWhyBookList.map((item, idx) => {
                                 const SceIcon = item.icon

@@ -282,7 +282,7 @@
    ============================================================ */
 .fcel-intro-section {
     background: #ffffff !important;
-    padding: 120px 20px;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -532,7 +532,7 @@
    reusable image + copy pattern used for Suites / Dining / Service / Expedition)
    ============================================================ */
 .fcel-occasion-section {
-    padding: 90px 20px;
+    padding: 60px 20px !important;
     background: var(--fcel-bg-white);
 }
 
@@ -549,7 +549,7 @@
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
     gap: 60px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .fcel-occasion-grid.fcel-occasion-reverse {
@@ -563,7 +563,9 @@
 .fcel-occasion-media {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 16px;
+    height: 100%;
 }
 
 .fcel-occasion-media .fcel-media-tall {
@@ -650,6 +652,8 @@
 
     .fcel-occasion-media {
         order: -1;
+        height: auto;
+        grid-template-rows: auto;
     }
 
     .fcel-occasion-title {
@@ -699,7 +703,7 @@
    ============================================================ */
 .seir-impression-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-impression-container {
@@ -857,7 +861,7 @@
    ============================================================ */
 .seir-heli-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-heli-container {
@@ -934,7 +938,7 @@
    ============================================================ */
 .seir-wellness-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-wellness-container {
@@ -1016,7 +1020,7 @@
    ============================================================ */
 .seir-dest-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-dest-container {
@@ -1134,7 +1138,7 @@
    ============================================================ */
 .seir-included-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-included-container {
@@ -1157,7 +1161,7 @@
    ============================================================ */
 .seir-proscons-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .seir-proscons-container {
@@ -1194,9 +1198,10 @@
 }
 
 .seir-proscons-col-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
+    margin: 0 0 20px 0 !important;
 }
 
 .seir-pros-col .seir-proscons-col-title {
@@ -1253,7 +1258,7 @@
    ============================================================ */
 .seir-verdict-section {
     background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
-    padding: 110px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -1296,7 +1301,7 @@
    ============================================================ */
 .seir-why-us-section {
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    padding: 120px 20px;
+    padding: 60px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
@@ -1406,7 +1411,7 @@
    ============================================================ */
 .fcel-faq-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .fcel-faq-container {
@@ -1485,7 +1490,7 @@
    INLINE CTA STRIPS (new — 3 repeated mid-page CTA banners)
    ============================================================ */
 .seir-inline-cta {
-    background: var(--fcel-bg-soft);
+    background: linear-gradient(135deg, var(--fcel-bg-dark2) 0%, var(--fcel-bg-dark) 100%);
     padding: 60px 20px;
     text-align: center;
 }
@@ -1498,9 +1503,22 @@
 .seir-inline-cta-heading {
     font-size: 26px;
     font-weight: 600;
-    color: var(--fcel-navy);
+    color: #ffffff;
     margin: 0 0 20px 0;
     line-height: 1.35;
+}
+
+/* Adjust primary button inside inline dark blue cta to have high contrast */
+.seir-inline-cta .fcel-btn-primary {
+    background: #ffffff !important;
+    color: var(--fcel-bg-dark) !important;
+    border-color: #ffffff !important;
+}
+
+.seir-inline-cta .fcel-btn-primary:hover {
+    background: var(--fcel-bg-soft) !important;
+    color: var(--fcel-bg-dark) !important;
+    border-color: var(--fcel-bg-soft) !important;
 }
 
 @media (max-width: 480px) {
@@ -1519,7 +1537,7 @@
 .fcel-cta-section {
     position: relative;
     background: linear-gradient(135deg, var(--fcel-bg-dark) 0%, var(--fcel-navy) 100%);
-    padding: 110px 20px;
+    padding: 60px 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -1600,4 +1618,44 @@
         width: 100%;
         justify-content: center;
     }
+}
+
+/* ============================================================
+   SUITES GRID CUSTOM LAYOUT (2 top, 1 bottom)
+   ============================================================ */
+.seir-suites-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    height: 100%;
+}
+
+.seir-suites-layout .seir-placeholder {
+    min-height: unset;
+    height: 100%;
+}
+
+.seir-placeholder-full {
+    grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+    .seir-suites-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+    
+    .seir-suites-layout .seir-placeholder {
+        height: 220px;
+        min-height: 220px;
+    }
+}
+
+/* Dining Praise Pill overrides (contrast color on soft background) */
+.seir-dining-praise-pill {
+    background: #ffffff !important;
+    border: 1px solid rgba(39, 68, 114, 0.12) !important;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.04) !important;
 }

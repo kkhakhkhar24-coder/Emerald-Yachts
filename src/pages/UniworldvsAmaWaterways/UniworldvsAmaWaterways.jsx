@@ -26,9 +26,8 @@ function UvaPlaceholder({ label, className = '' }) {
             <ImageIcon size={28} />
             <span>{label}</span>
         </div>
-    )
+    ) 
 }
-
 function WinnerBadge({ winner }) {
     return (
         <div className="uva-winner-badge">
@@ -283,7 +282,7 @@ function UniworldVsAmaWaterways() {
                             "@type": "Answer",
                             "text": "Trips & Ships Luxury Travel provides expert cruise comparisons, personalized recommendations, exclusive offers, and concierge-level planning before, during, and after your luxury river cruise vacation."
                         }
-                    }
+                    } 
                 ]
             }
         ]
@@ -528,6 +527,7 @@ function UniworldVsAmaWaterways() {
                         </div>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Ship Design" />
                                 <span className="uva-compare-brand"><Ship size={18} /> Uniworld</span>
                                 <p className="uva-compare-paragraph">
                                     Each ship is uniquely designed with boutique hotel-inspired décor, luxurious furnishings, original artwork, and elegant public spaces.
@@ -537,6 +537,7 @@ function UniworldVsAmaWaterways() {
                                 </div>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Ship Design" />
                                 <span className="uva-compare-brand"><Ship size={18} /> AmaWaterways</span>
                                 <p className="uva-compare-paragraph">
                                     AmaWaterways features contemporary ships with spacious public areas, twin-balcony staterooms, wellness facilities, and modern design.
@@ -578,6 +579,7 @@ function UniworldVsAmaWaterways() {
                         </div>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Suites & Cabins" />
                                 <span className="uva-compare-brand"><Bed size={18} /> Uniworld</span>
                                 <ul className="uva-compare-list">
                                     {['Boutique luxury cabins', 'Marble bathrooms', 'Butler service in select suites', 'Elegant custom décor', 'Luxury bedding'].map((item, idx) => (
@@ -589,6 +591,7 @@ function UniworldVsAmaWaterways() {
                                 </ul>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Twin-Balcony Staterooms" />
                                 <span className="uva-compare-brand"><Bed size={18} /> AmaWaterways</span>
                                 <ul className="uva-compare-list">
                                     {['Twin-balcony staterooms', 'Spacious suites', 'Luxury bedding', 'Large bathrooms', 'Contemporary design'].map((item, idx) => (
@@ -614,6 +617,7 @@ function UniworldVsAmaWaterways() {
                         </div>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Dining Experience" />
                                 <span className="uva-compare-brand"><Utensils size={18} /> Uniworld</span>
                                 <ul className="uva-compare-list">
                                     {['Gourmet regional cuisine', 'Farm-to-table ingredients', 'Unlimited premium beverages', 'Elegant fine dining'].map((item, idx) => (
@@ -625,6 +629,7 @@ function UniworldVsAmaWaterways() {
                                 </ul>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Dining Experience" />
                                 <span className="uva-compare-brand"><Utensils size={18} /> AmaWaterways</span>
                                 <ul className="uva-compare-list">
                                     {['Award-winning cuisine', 'Multiple dining venues', 'Complimentary wine with meals', "The Chef's Table specialty restaurant", 'Fresh local ingredients'].map((item, idx) => (
@@ -706,12 +711,14 @@ function UniworldVsAmaWaterways() {
                         </div>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Onboard Service" />
                                 <span className="uva-compare-brand"><Smile size={18} /> Uniworld</span>
                                 <p className="uva-compare-paragraph">
                                     Uniworld emphasizes boutique hospitality and personalized luxury.
                                 </p>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Onboard Service" />
                                 <span className="uva-compare-brand"><Smile size={18} /> AmaWaterways</span>
                                 <p className="uva-compare-paragraph">
                                     AmaWaterways is known for friendly crews and consistently high guest satisfaction.
@@ -777,12 +784,14 @@ function UniworldVsAmaWaterways() {
                         </ul>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Cruise Destinations" />
                                 <span className="uva-compare-brand"><Globe size={18} /> Uniworld</span>
                                 <p className="uva-compare-paragraph">
                                     Uniworld also sails Egypt, India, Peru, and Southeast Asia.
                                 </p>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Cruise Destinations" />
                                 <span className="uva-compare-brand"><Globe size={18} /> AmaWaterways</span>
                                 <p className="uva-compare-paragraph">
                                     AmaWaterways additionally offers cruises in Africa, Colombia, Egypt, and Vietnam & Cambodia.
@@ -847,6 +856,7 @@ function UniworldVsAmaWaterways() {
                         </div>
                         <div className="uva-compare-grid">
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="AmaWaterways Wellness & Fitness" />
                                 <span className="uva-compare-brand"><Activity size={18} /> AmaWaterways</span>
                                 <ul className="uva-compare-list">
                                     {['Fitness host', 'Wellness classes', 'Walking tracks', 'Healthy dining options', 'Complimentary bicycles'].map((item, idx) => (
@@ -858,6 +868,7 @@ function UniworldVsAmaWaterways() {
                                 </ul>
                             </div>
                             <div className="uva-compare-col">
+                                <UvaPlaceholder label="Uniworld Wellness Options" />
                                 <span className="uva-compare-brand"><Activity size={18} /> Uniworld</span>
                                 <p className="uva-compare-paragraph">
                                     Offers wellness amenities but focuses more on boutique luxury than fitness programming.

@@ -286,9 +286,10 @@ function BestScenicSuites() {
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">BEST SCENIC SUITES</span>
-                                <h2 className="fcel-section-heading">Which Scenic Suite Is <br /> Right for You?</h2>
-                                <div className="fcel-heading-bar"></div>
+                                <h2 className="fcel-section-heading">Best Scenic Suites</h2>
+                                                                <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-lead-paragraph">Which Scenic Suite Is <br /> Right for You?</p>
                                 <p className="fcel-lead-paragraph">
                                     Every accommodation aboard Scenic Eclipse and Scenic Eclipse II is a luxurious all-veranda suite complete with personalized butler service, premium amenities, and elegant contemporary design. Unlike many cruise lines, Scenic doesn't offer inside cabins or standard oceanview rooms—every guest enjoys a spacious suite with a private outdoor veranda.
                                 </p>
@@ -319,12 +320,9 @@ function BestScenicSuites() {
                 {/* WHY SCENIC SUITES STAND OUT */}
                 <section className="bss-standout-section">
                     <div className="bss-standout-container">
-                        <span className="fcel-eyebrow-label">
-                            <Sparkles size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Why Scenic Suites Stand Out
-                        </span>
-                        <h2 className="fcel-section-heading">Every Scenic suite includes luxury features that create a true six-star experience.</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
+                        </h2>
                         <p className="fcel-lead-paragraph">Included with every suite:</p>
                         <div className="fcel-villa-features-grid">
                             {bssStandoutFeatures.map((item, idx) => (
@@ -458,7 +456,7 @@ function BestScenicSuites() {
                 </section>
 
                 {/* MID-PAGE CTA #4 */}
-                <section className="bss-inline-cta">
+                <section className="bss-inline-cta" style={{backgroundColor: 'var(--bg-white)'}}>
                     <div className="bss-inline-cta-inner">
                         <h3 className="bss-inline-cta-heading">Let's find your perfect Scenic suite together</h3>
                         <div className="fcel-hero-btn-row">
@@ -481,7 +479,7 @@ function BestScenicSuites() {
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <div className="fcel-villa-features-grid">
                             {bssTips.map((tip, idx) => (
-                                <div key={idx} className="fcel-villa-feature-pill">
+                                <div key={idx} className="fcel-villa-feature-pill" style={{backgroundColor: 'var(--bg-white)'}}>
                                     <CheckCircle size={16} />
                                     <span>{tip}</span>
                                 </div>
@@ -499,15 +497,9 @@ function BestScenicSuites() {
                         <div className="fcel-why-us-top">
                             <div className="fcel-why-us-copy">
                                 <span className="fcel-eyebrow-label">TRUSTED SCENIC SPECIALISTS</span>
-                                <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                                <h2 className="fcel-section-heading">Why Book with Trips & Ships <br /> Luxury Travel?</h2>
                                 <div className="fcel-heading-bar"></div>
                                 <p className="fcel-lead-paragraph">Our Scenic experts help you:</p>
-                            </div>
-                            <div className="fcel-why-us-image">
-                                <div className="bss-placeholder bss-whyus-frame">
-                                    <Crown size={44} />
-                                    <span>Image Placeholder: Guest Consulting with Scenic Specialist</span>
-                                </div>
                             </div>
                         </div>
                         <div className="fcel-why-us-grid">

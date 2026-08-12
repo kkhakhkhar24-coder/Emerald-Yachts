@@ -424,7 +424,7 @@
 
 /* Why choose scenic wrapper section */
 .sic-whyscenic-section {
-    background: var(--fcel-bg-white);
+    background: var(--fcel-bg-soft);
     padding: 100px 20px;
 }
 
@@ -458,11 +458,11 @@
 }
 
 .sic-inline-cta-heading {
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--fcel-navy);
-    margin: 0 0 20px 0;
-    line-height: 1.35;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
+    margin: 0 0 20px 0 !important;
+    line-height: 1.35 !important;
 }
 
 @media (max-width: 480px) {
@@ -795,7 +795,7 @@
    ============================================================ */
 .sic-wellness-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sic-wellness-container {
@@ -861,8 +861,8 @@
    WHAT'S INCLUDED (new wrapper — reuses pill grid inside)
    ============================================================ */
 .sic-included-section {
-    background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    background: var(--fcel-bg-soft);
+    padding: 60px 20px;
 }
 
 .sic-included-container {
@@ -971,7 +971,7 @@
    ============================================================ */
 .sic-audience-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .sic-audience-container {
@@ -1047,7 +1047,7 @@
    ============================================================ */
 .sic-why-us-section {
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    padding: 120px 20px;
+    padding: 60px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
@@ -1278,4 +1278,38 @@
     .fcel-cta-btn-row { flex-direction: column; width: 100%; }
     .fcel-cta-btn-row .fcel-btn-primary,
     .fcel-cta-btn-row .fcel-btn-outline { width: 100%; justify-content: center; }
+}
+
+/* ============================================================
+   OCCASION SECTION MEDIA HEIGHT OVERRIDES (MATCH TO TEXT HEIGHT)
+   ============================================================ */
+.fcel-occasion-media {
+    height: 380px !important;
+}
+
+/* ============================================================
+   SUITES GRID CUSTOM LAYOUT (2 top, 1 bottom)
+   ============================================================ */
+.seir-suites-layout {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 16px !important;
+    height: 100% !important;
+}
+
+.seir-placeholder-full {
+    grid-column: span 2 !important;
+}
+
+@media (max-width: 1024px) {
+    .fcel-occasion-media {
+        height: auto !important;
+    }
+
+    .seir-suites-layout {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        height: auto !important;
+    }
 }

@@ -573,36 +573,33 @@ function UniworldVsScenicRiverCruises() {
                             <h2 className="fcel-section-heading">Ship Design</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvsc-layout-split-img">
-                            <div className="uvsc-split-img-wrapper">
-                                <UvscPlaceholder label="Boutique Artistry vs Modern Contemporary Yacht Design" />
-                            </div>
-                            <div className="uvsc-compare-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-                                <div className="uvsc-compare-col">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Ship size={18} /></span>
-                                        Uniworld
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Every ship is individually designed with boutique hotel-inspired décor, handcrafted furnishings, artwork, and elegant public spaces. No two ships look alike, creating a distinctive and luxurious atmosphere.
-                                    </p>
-                                    <div className="uvsc-compare-bestfor">
-                                        <span className="uvsc-compare-bestfor-label">Best For</span>
-                                        <p className="uvsc-compare-bestfor-text">Travelers seeking a unique, intimate, and artistic onboard experience.</p>
-                                    </div>
+                        <div className="uvsc-compare-grid">
+                            <div className="uvsc-compare-col">
+                                <UvscPlaceholder label="Uniworld Ship Design" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Ship size={18} /></span>
+                                    Uniworld
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Every ship is individually designed with boutique hotel-inspired décor, handcrafted furnishings, artwork, and elegant public spaces. No two ships look alike, creating a distinctive and luxurious atmosphere.
+                                </p>
+                                <div className="uvsc-compare-bestfor">
+                                    <span className="uvsc-compare-bestfor-label">Best For</span>
+                                    <p className="uvsc-compare-bestfor-text">Travelers seeking a unique, intimate, and artistic onboard experience.</p>
                                 </div>
-                                <div className="uvsc-compare-col uvsc-compare-col-scenic">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Ship size={18} /></span>
-                                        Scenic
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Scenic ships feature contemporary luxury, spacious layouts, elegant lounges, and modern suites. Every suite includes a private Scenic Sun Lounge, allowing guests to enjoy river views in comfort throughout the year.
-                                    </p>
-                                    <div className="uvsc-compare-bestfor">
-                                        <span className="uvsc-compare-bestfor-label">Best For</span>
-                                        <p className="uvsc-compare-bestfor-text">Travelers who appreciate modern luxury, spacious accommodations, and innovative ship design.</p>
-                                    </div>
+                            </div>
+                            <div className="uvsc-compare-col uvsc-compare-col-scenic">
+                                <UvscPlaceholder label="Scenic Ship Design" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Ship size={18} /></span>
+                                    Scenic
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Scenic ships feature contemporary luxury, spacious layouts, elegant lounges, and modern suites. Every suite includes a private Scenic Sun Lounge, allowing guests to enjoy river views in comfort throughout the year.
+                                </p>
+                                <div className="uvsc-compare-bestfor">
+                                    <span className="uvsc-compare-bestfor-label">Best For</span>
+                                    <p className="uvsc-compare-bestfor-text">Travelers who appreciate modern luxury, spacious accommodations, and innovative ship design.</p>
                                 </div>
                             </div>
                         </div>
@@ -660,39 +657,36 @@ function UniworldVsScenicRiverCruises() {
                             <h2 className="fcel-section-heading">Dining Comparison</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvsc-layout-split-img-reverse">
-                            <div className="uvsc-compare-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-                                <div className="uvsc-compare-col">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Utensils size={18} /></span>
-                                        Uniworld
-                                    </h4>
-                                    <ul className="uvsc-compare-list">
-                                        {uvscDiningUniworld.map((item, idx) => (
-                                            <li key={idx} className="uvsc-compare-list-item">
-                                                <CheckCircle size={16} className="uvsc-compare-list-icon" />
-                                                <span>{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="uvsc-compare-col uvsc-compare-col-scenic">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Wine size={18} /></span>
-                                        Scenic
-                                    </h4>
-                                    <ul className="uvsc-compare-list">
-                                        {uvscDiningScenic.map((item, idx) => (
-                                            <li key={idx} className="uvsc-compare-list-item">
-                                                <CheckCircle size={16} className="uvsc-compare-list-icon" />
-                                                <span>{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                        <div className="uvsc-compare-grid">
+                            <div className="uvsc-compare-col">
+                                <UvscPlaceholder label="Uniworld Dining Experience" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Utensils size={18} /></span>
+                                    Uniworld
+                                </h4>
+                                <ul className="uvsc-compare-list">
+                                    {uvscDiningUniworld.map((item, idx) => (
+                                        <li key={idx} className="uvsc-compare-list-item">
+                                            <CheckCircle size={16} className="uvsc-compare-list-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className="uvsc-split-img-wrapper">
-                                <UvscPlaceholder label="Uniworld Regional Dining vs Scenic Multiple Specialty Restaurants" />
+                            <div className="uvsc-compare-col uvsc-compare-col-scenic">
+                                <UvscPlaceholder label="Scenic Dining Experience" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Wine size={18} /></span>
+                                    Scenic
+                                </h4>
+                                <ul className="uvsc-compare-list">
+                                    {uvscDiningScenic.map((item, idx) => (
+                                        <li key={idx} className="uvsc-compare-list-item">
+                                            <CheckCircle size={16} className="uvsc-compare-list-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                         <WinnerBadge winner="Tie" />
@@ -771,29 +765,26 @@ function UniworldVsScenicRiverCruises() {
                                 Both cruise lines are known for exceptional personalized service.
                             </p>
                         </div>
-                        <div className="uvsc-layout-split-img">
-                            <div className="uvsc-split-img-wrapper">
-                                <UvscPlaceholder label="Personalized Butler Service & Warm Crew Onboard" />
+                        <div className="uvsc-compare-grid">
+                            <div className="uvsc-compare-col">
+                                <UvscPlaceholder label="Uniworld Onboard Service" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Users size={18} /></span>
+                                    Uniworld
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Uniworld focuses on boutique hospitality with highly attentive crews.
+                                </p>
                             </div>
-                            <div className="uvsc-compare-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-                                <div className="uvsc-compare-col">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Users size={18} /></span>
-                                        Uniworld
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Uniworld focuses on boutique hospitality with highly attentive crews.
-                                    </p>
-                                </div>
-                                <div className="uvsc-compare-col uvsc-compare-col-scenic">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><Users size={18} /></span>
-                                        Scenic
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Scenic enhances the experience with dedicated butler service for every suite and an impressive crew-to-guest ratio.
-                                    </p>
-                                </div>
+                            <div className="uvsc-compare-col uvsc-compare-col-scenic">
+                                <UvscPlaceholder label="Scenic Onboard Service" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><Users size={18} /></span>
+                                    Scenic
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Scenic enhances the experience with dedicated butler service for every suite and an impressive crew-to-guest ratio.
+                                </p>
                             </div>
                         </div>
                         <WinnerBadge winner="Tie" />
@@ -858,29 +849,26 @@ function UniworldVsScenicRiverCruises() {
                                 <span key={idx} className="uvsc-river-pill">{river}</span>
                             ))}
                         </div>
-                        <div className="uvsc-layout-split-img-reverse">
-                            <div className="uvsc-compare-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-                                <div className="uvsc-compare-col">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><MapPin size={18} /></span>
-                                        Uniworld
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Uniworld also sails Egypt, India, Peru, and Southeast Asia.
-                                    </p>
-                                </div>
-                                <div className="uvsc-compare-col uvsc-compare-col-scenic">
-                                    <h4 className="uvsc-compare-col-title">
-                                        <span className="uvsc-compare-col-icon"><MapPin size={18} /></span>
-                                        Scenic
-                                    </h4>
-                                    <p className="uvsc-compare-col-text">
-                                        Scenic additionally offers luxury ocean voyages aboard Scenic Eclipse expedition yachts.
-                                    </p>
-                                </div>
+                        <div className="uvsc-compare-grid" style={{ marginTop: '48px' }}>
+                            <div className="uvsc-compare-col">
+                                <UvscPlaceholder label="Uniworld Cruise Destinations" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><MapPin size={18} /></span>
+                                    Uniworld
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Uniworld also sails Egypt, India, Peru, and Southeast Asia.
+                                </p>
                             </div>
-                            <div className="uvsc-split-img-wrapper">
-                                <UvscPlaceholder label="Global Cruise Destinations & Scenic Eclipse Yachts" />
+                            <div className="uvsc-compare-col uvsc-compare-col-scenic">
+                                <UvscPlaceholder label="Scenic Cruise Destinations" />
+                                <h4 className="uvsc-compare-col-title">
+                                    <span className="uvsc-compare-col-icon"><MapPin size={18} /></span>
+                                    Scenic
+                                </h4>
+                                <p className="uvsc-compare-col-text">
+                                    Scenic additionally offers luxury ocean voyages aboard Scenic Eclipse expedition yachts.
+                                </p>
                             </div>
                         </div>
                         <WinnerBadge winner="Scenic" />
@@ -945,8 +933,9 @@ function UniworldVsScenicRiverCruises() {
                             <h2 className="fcel-section-heading">Who Should Choose Which?</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvsc-layout-triple">
+                        <div className="uvsc-audience-grid">
                             <div className="uvsc-audience-column">
+                                <UvscPlaceholder label="Uniworld Perfect Match" />
                                 <h4 className="uvsc-audience-title">Who Should Choose Uniworld?</h4>
                                 <ul className="uvsc-audience-list">
                                     {uvscUniworldAudience.map((item, idx) => (
@@ -957,10 +946,8 @@ function UniworldVsScenicRiverCruises() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="uvsc-triple-center-img">
-                                <UvscPlaceholder label="Compare Luxury River Cruises & Find Your Perfect Match" />
-                            </div>
                             <div className="uvsc-audience-column uvsc-audience-column-scenic">
+                                <UvscPlaceholder label="Scenic Perfect Match" />
                                 <h4 className="uvsc-audience-title">Who Should Choose Scenic?</h4>
                                 <ul className="uvsc-audience-list">
                                     {uvscScenicAudience.map((item, idx) => (

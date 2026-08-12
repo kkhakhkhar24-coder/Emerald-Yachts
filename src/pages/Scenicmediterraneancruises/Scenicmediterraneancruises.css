@@ -542,7 +542,7 @@
    ============================================================ */
 .smc-destinations-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-destinations-container {
@@ -618,7 +618,7 @@
    ============================================================ */
 .smc-experience-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-experience-container {
@@ -672,7 +672,7 @@
    ============================================================ */
 .smc-dining-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-dining-container {
@@ -741,7 +741,7 @@
    ============================================================ */
 .smc-excursions-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-excursions-container {
@@ -873,7 +873,7 @@
    ============================================================ */
 .smc-wellness-section {
     background: linear-gradient(180deg, var(--fcel-bg-dark) 0%, var(--fcel-bg-dark2) 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-wellness-container {
@@ -937,7 +937,7 @@
    ============================================================ */
 .smc-included-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-included-container {
@@ -991,7 +991,7 @@
    ============================================================ */
 .smc-seasons-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-seasons-container {
@@ -1064,7 +1064,7 @@
    ============================================================ */
 .smc-audience-section {
     background: var(--fcel-bg-white);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-audience-container {
@@ -1116,7 +1116,7 @@
    ============================================================ */
 .smc-whybook-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .smc-whybook-container {

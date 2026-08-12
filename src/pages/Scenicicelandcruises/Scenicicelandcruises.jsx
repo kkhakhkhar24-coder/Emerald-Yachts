@@ -266,9 +266,10 @@ function ScenicIcelandCruises() {
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">EXPERIENCE ICELAND LIKE NEVER BEFORE</span>
-                                <h2 className="fcel-section-heading">Iceland is a destination unlike anywhere else on Earth.</h2>
+                                <h2 className="fcel-occasion-title">Experience Iceland Like Never Before</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-section-heading">Iceland is a destination unlike anywhere else on Earth.</p>
+
                                 <p className="fcel-lead-paragraph">
                                     Towering waterfalls, active volcanoes, massive glaciers, black sand beaches, geothermal lagoons, and abundant wildlife combine to create one of the world's most extraordinary travel experiences.
                                 </p>
@@ -299,16 +300,16 @@ function ScenicIcelandCruises() {
                 {/* WHY CHOOSE SCENIC */}
                 <section className="sic-whyscenic-section">
                     <div className="sic-whyscenic-container">
-                        <span className="fcel-eyebrow-label">
-                            <Ship size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-occasion-title">
                             Why Choose Scenic for an Iceland Cruise?
-                        </span>
-                        <h2 className="fcel-section-heading">Six-star luxury combined with true expedition capability.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="fcel-section-heading">Six-star luxury combined with true expedition capability.</p>
                         <p className="fcel-lead-paragraph">Highlights include:</p>
                         <div className="fcel-villa-features-grid">
                             {sicWhyScenic.map((item, idx) => (
-                                <div key={idx} className="fcel-villa-feature-pill">
+                                <div key={idx} className="fcel-villa-feature-pill" style={{backgroundColor: 'var(--bg-white)'}}>
                                     <CheckCircle size={16} />
                                     <span>{item}</span>
                                 </div>
@@ -321,7 +322,7 @@ function ScenicIcelandCruises() {
                 </section>
 
                 {/* MID-PAGE CTA #2 */}
-                <section className="sic-inline-cta">
+                <section className="sic-inline-cta" style={{backgroundColor: 'var(--bg-white)'}}>
                     <div className="sic-inline-cta-inner">
                         <h3 className="sic-inline-cta-heading">Ready to plan your Scenic Iceland voyage?</h3>
                         <div className="fcel-hero-btn-row">
@@ -337,12 +338,12 @@ function ScenicIcelandCruises() {
                 <section className="sic-dest-section">
                     <div className="sic-dest-container">
                         <div className="sic-dest-header">
-                            <span className="fcel-eyebrow-label">
-                                <Globe size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                            <h2 className="fcel-occasion-title">
                                 Explore Iceland's Incredible Landscapes
-                            </span>
-                            <h2 className="fcel-section-heading">Every Scenic Iceland itinerary showcases the country's extraordinary diversity.</h2>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                            <p className="fcel-section-heading">Every Scenic Iceland itinerary showcases the country's extraordinary diversity.</p>
                         </div>
                         <div className="sic-dest-grid">
                             {sicLandscapes.map((dest, idx) => {
@@ -367,12 +368,12 @@ function ScenicIcelandCruises() {
                 <section className="fcel-why-section">
                     <div className="fcel-why-container">
                         <div className="fcel-why-header">
-                            <span className="fcel-eyebrow-label">
-                                <Bird size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                            <h2 className="fcel-occasion-title" style={{color: 'white'}}>
                                 Incredible Wildlife Encounters
-                            </span>
-                            <h2 className="fcel-section-heading">Iceland is one of Europe's premier wildlife destinations.</h2>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                            <p className="fcel-section-heading">Iceland is one of Europe's premier wildlife destinations.</p>
                             <p className="fcel-lead-paragraph">Guests may encounter:</p>
                         </div>
                         <div className="fcel-why-grid">
@@ -398,26 +399,25 @@ function ScenicIcelandCruises() {
                 <section className="fcel-occasion-section">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall sic-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="sic-placeholder">
                                     <Compass size={40} />
                                     <span>Image Placeholder: Zodiac Cruise Near Glacier</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder">
                                     <Camera size={32} />
                                     <span>Image Placeholder: Wildlife Photography</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder seir-placeholder-full">
                                     <Mountain size={32} />
                                     <span>Image Placeholder: Volcanic Landscape Hike</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Compass size={14} />
+                                <h2 className="fcel-occasion-title">
                                     Expedition Experiences
-                                </span>
-                                <h3 className="fcel-occasion-title">Scenic Eclipse is purpose-built for exploration.</h3>
+                                </h2>
+                                <p className="fcel-occasion-intro">Scenic Eclipse is purpose-built for exploration.</p>
                                 <p className="fcel-occasion-intro">Depending on your itinerary and weather conditions, experiences may include:</p>
                                 <ul className="fcel-occasion-list">
                                     {sicExpeditionActivities.map((item, idx) => (
@@ -439,26 +439,25 @@ function ScenicIcelandCruises() {
                 <section className="fcel-occasion-section fcel-occasion-soft">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall sic-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="sic-placeholder">
                                     <Home size={40} />
                                     <span>Image Placeholder: Veranda Suite Onboard</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder">
                                     <Sun size={32} />
                                     <span>Image Placeholder: Outdoor Observation Deck</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder seir-placeholder-full">
                                     <Users size={32} />
                                     <span>Image Placeholder: Butler Service Onboard</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Crown size={14} />
+                                <h2 className="fcel-occasion-title">
                                     Scenic Eclipse Luxury
-                                </span>
-                                <h3 className="fcel-occasion-title">While Iceland's landscapes are rugged, life onboard is exceptionally luxurious.</h3>
+                                </h2>
+                                <p className="fcel-occasion-intro">While Iceland's landscapes are rugged, life onboard is exceptionally luxurious.</p>
                                 <p className="fcel-occasion-intro">Guests enjoy:</p>
                                 <ul className="fcel-occasion-list">
                                     {sicLuxuryItems.map((item, idx) => (
@@ -480,26 +479,25 @@ function ScenicIcelandCruises() {
                 <section className="fcel-occasion-section">
                     <div className="fcel-occasion-container">
                         <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media">
-                                <div className="fcel-media-tall sic-placeholder">
+                            <div className="fcel-occasion-media seir-suites-layout">
+                                <div className="sic-placeholder">
                                     <Utensils size={40} />
                                     <span>Image Placeholder: Fine Dining Restaurant</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder">
                                     <Fish size={32} />
                                     <span>Image Placeholder: Fresh Icelandic Seafood</span>
                                 </div>
-                                <div className="fcel-media-short sic-placeholder">
+                                <div className="sic-placeholder seir-placeholder-full">
                                     <Sparkles size={32} />
                                     <span>Image Placeholder: In-Suite Dining Setup</span>
                                 </div>
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">
-                                    <Utensils size={14} />
+                                <h2 className="fcel-occasion-title">
                                     Dining & Culinary Experiences
-                                </span>
-                                <h3 className="fcel-occasion-title">Exceptional dining inspired by global cuisine and local flavors.</h3>
+                                </h2>
+                                <p className="fcel-occasion-intro">Exceptional dining inspired by global cuisine and local flavors.</p>
                                 <p className="fcel-occasion-intro">Guests enjoy:</p>
                                 <ul className="fcel-occasion-list">
                                     {sicDiningItems.map((item, idx) => (
@@ -521,12 +519,12 @@ function ScenicIcelandCruises() {
                 <section className="sic-wellness-section">
                     <div className="sic-wellness-container">
                         <div className="sic-wellness-header">
-                            <span className="fcel-eyebrow-label">
-                                <HeartPulse size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                            <h2 className="fcel-occasion-title">
                                 Wellness at Sea
-                            </span>
-                            <h2 className="fcel-section-heading">After exploring Iceland's dramatic landscapes, guests can relax in Scenic's wellness facilities.</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
+                            </h2>
+                                                        <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                            <p className="fcel-section-heading">After exploring Iceland's dramatic landscapes, guests can relax in Scenic's wellness facilities.</p>
                             <p className="fcel-lead-paragraph">Amenities include:</p>
                         </div>
                         <div className="sic-wellness-grid">
@@ -549,7 +547,7 @@ function ScenicIcelandCruises() {
                 </section>
 
                 {/* MID-PAGE CTA #3 */}
-                <section className="sic-inline-cta">
+                <section className="sic-inline-cta" style={{backgroundColor: 'var(--bg-white)'}}>
                     <div className="sic-inline-cta-inner">
                         <h3 className="sic-inline-cta-heading">See what's included on your Scenic Iceland voyage</h3>
                         <div className="fcel-hero-btn-row">
@@ -564,15 +562,14 @@ function ScenicIcelandCruises() {
                 {/* WHAT'S INCLUDED */}
                 <section className="sic-included-section">
                     <div className="sic-included-container">
-                        <span className="fcel-eyebrow-label">
-                            <CheckCircle size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-occasion-title">
                             What's Included?
-                        </span>
-                        <h2 className="fcel-section-heading">Scenic Iceland Cruises include:</h2>
+                        </h2>
+                        <p className="fcel-section-heading">Scenic Iceland Cruises include:</p>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <div className="fcel-villa-features-grid">
                             {sicIncluded.map((item, idx) => (
-                                <div key={idx} className="fcel-villa-feature-pill">
+                                <div key={idx} className="fcel-villa-feature-pill" style={{backgroundColor: 'var(--bg-white)'}}>
                                     <CheckCircle size={16} />
                                     <span>{item}</span>
                                 </div>
@@ -587,12 +584,12 @@ function ScenicIcelandCruises() {
                 {/* BEST TIME TO CRUISE ICELAND */}
                 <section className="sic-season-section">
                     <div className="sic-season-container">
-                        <span className="fcel-eyebrow-label" style={{ background: 'rgba(255,255,255,0.1)', color: '#ffffff' }}>
-                            <CalendarDays size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-occasion-title" style={{color: 'white'}}>
                             Best Time to Cruise Iceland
-                        </span>
-                        <h2 className="fcel-section-heading">Choose the season that matches your travel style.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="fcel-section-heading">Choose the season that matches your travel style.</p>
                         <div className="sic-season-grid">
                             {sicSeasons.map((season, idx) => {
                                 const SicIcon = season.icon
@@ -616,12 +613,12 @@ function ScenicIcelandCruises() {
                 {/* WHO SHOULD CHOOSE SCENIC ICELAND CRUISES */}
                 <section className="sic-audience-section">
                     <div className="sic-audience-container">
-                        <span className="fcel-eyebrow-label">
-                            <Users2 size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-occasion-title">
                             Who Should Choose Scenic Iceland Cruises?
-                        </span>
-                        <h2 className="fcel-section-heading">Scenic Iceland Cruises are ideal for:</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                        <p className="fcel-section-heading">Scenic Iceland Cruises are ideal for:</p>
                         <div className="sic-audience-grid">
                             {sicAudience.map((item, idx) => {
                                 const SicIcon = item.icon
@@ -645,9 +642,10 @@ function ScenicIcelandCruises() {
                 <section className="sic-why-us-section">
                     <div className="sic-why-us-container">
                         <div className="sic-why-us-top">
-                            <span className="fcel-eyebrow-label">TRUSTED SCENIC SPECIALISTS</span>
-                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                            <h2 className="fcel-occasion-title">Trusted Scenic Specialists</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+
+                            <p className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</p>
                             <p className="fcel-lead-paragraph">Our Scenic specialists help you:</p>
                         </div>
                         <div className="sic-why-us-grid">

@@ -37,9 +37,9 @@
 }
 
 .sfr-midcta-text {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--fcel-navy);
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
     margin: 0 0 24px 0;
     line-height: 1.5;
 }
@@ -120,9 +120,9 @@
 }
 
 .sfr-review-card-title {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--fcel-navy);
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: var(--fcel-navy) !important;
     margin: 0;
 }
 
@@ -182,4 +182,218 @@
     .sfr-review-card { padding: 26px 22px; }
     .sfr-review-card-title { font-size: 18px; }
     .sfr-review-list-item { font-size: 14px; }
+}
+
+/* ============================================================
+   OCCASION SECTION MEDIA HEIGHT OVERRIDES (MATCH TO TEXT HEIGHT)
+   ============================================================ */
+.fcel-occasion-media {
+    height: 380px !important;
+}
+
+/* ============================================================
+   SUITES GRID CUSTOM LAYOUT (2 top, 1 bottom)
+   ============================================================ */
+.seir-suites-layout {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 16px !important;
+    height: 100% !important;
+}
+
+.seir-placeholder-full {
+    grid-column: span 2 !important;
+}
+
+@media (max-width: 1024px) {
+    .fcel-occasion-media {
+        height: auto !important;
+    }
+
+    .seir-suites-layout {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        height: auto !important;
+    }
+}
+
+.sfr-mediterranean-grid {
+    align-items: center !important;
+}
+
+.sfr-mediterranean-media {
+    display: block !important;
+    height: 330px !important;
+}
+
+.sfr-mediterranean-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+.sfr-mediterranean-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px 20px !important;
+    margin-bottom: 24px !important;
+}
+
+@media (max-width: 1024px) {
+    .sfr-mediterranean-grid {
+        align-items: center !important;
+    }
+
+    .sfr-mediterranean-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sfr-mediterranean-media {
+        height: 280px !important;
+    }
+
+    .sfr-mediterranean-list {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}
+
+/* ============================================================
+   WINE & BEVERAGE PROGRAM — SINGLE IMAGE AND SIDE-BY-SIDE LIST
+   ============================================================ */
+.sfr-wine-grid {
+    align-items: center !important;
+}
+
+.sfr-wine-media {
+    display: block !important;
+    height: 330px !important;
+}
+
+.sfr-wine-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+.sfr-wine-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px 20px !important;
+    margin-bottom: 24px !important;
+}
+
+@media (max-width: 1024px) {
+    .sfr-wine-grid {
+        align-items: center !important;
+    }
+
+    .sfr-wine-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sfr-wine-media {
+        height: 280px !important;
+    }
+
+    .sfr-wine-list {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}
+
+/* ============================================================
+   SERVICE DURING MEALS — SINGLE IMAGE AND SIDE-BY-SIDE CARDS
+   ============================================================ */
+.sfr-service-grid {
+    align-items: center !important;
+}
+
+.sfr-service-media {
+    display: block !important;
+    height: 380px !important;
+    width: 100% !important;
+}
+
+.sfr-service-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+.sfr-service-list-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+.sfr-service-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03) !important;
+    transition: all 0.3s ease !important;
+}
+
+.sfr-service-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(15, 28, 46, 0.06) !important;
+}
+
+.sfr-service-number {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: var(--fcel-bg-soft) !important;
+    color: var(--fcel-navy) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    flex-shrink: 0 !important;
+}
+
+.sfr-service-text-wrapper {
+    flex-grow: 1 !important;
+}
+
+.sfr-service-text {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: var(--fcel-navy) !important;
+}
+
+@media (max-width: 1024px) {
+    .sfr-service-grid {
+        align-items: center !important;
+    }
+
+    .sfr-service-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sfr-service-media {
+        height: 280px !important;
+    }
+
+    .sfr-service-list-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
 }

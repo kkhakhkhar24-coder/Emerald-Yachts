@@ -775,6 +775,13 @@
     border-top: 4px solid var(--uva-navy);
 }
 
+.uva-compare-col .uva-image-placeholder {
+    height: 180px;
+    min-height: 180px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
 .uva-compare-brand {
     display: inline-flex;
     align-items: center;

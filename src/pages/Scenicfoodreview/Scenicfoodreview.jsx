@@ -289,9 +289,9 @@ function ScenicFoodReview() {
                     <div className="fcel-intro-container">
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">SCENIC CULINARY EXPERIENCE</span>
-                                <h2 className="fcel-section-heading">Dining is one of the highlights of any luxury cruise, and Scenic delivers an exceptional culinary experience that rivals many of the world's finest luxury hotels.</h2>
+                                <h2 className="fcel-section-heading">Scenic Culinary Experience</h2>
                                 <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">Dining is one of the highlights of any luxury cruise, and Scenic delivers an exceptional culinary experience that rivals many of the world's finest luxury hotels.</p>
                                 <p className="fcel-lead-paragraph">
                                     Whether you're sailing aboard Scenic Eclipse or Scenic Eclipse II, you'll enjoy a wide variety of restaurants, fresh ingredients, attentive service, and beautifully presented cuisine inspired by destinations around the world.
                                 </p>
@@ -319,11 +319,9 @@ function ScenicFoodReview() {
                 {/* OVERALL DINING EXPERIENCE — reused fcel-concierge-* classes (pill tags) */}
                 <section className="fcel-concierge-section">
                     <div className="fcel-concierge-container">
-                        <span className="fcel-eyebrow-label">
-                            <UtensilsCrossed size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="fcel-section-heading">
                             Overall Dining Experience
-                        </span>
-                        <h2 className="fcel-section-heading">Scenic's culinary philosophy focuses on quality over quantity.</h2>
+                        </h2>
                         <div className="fcel-heading-bar fcel-bar-center"></div>
                         <p className="fcel-lead-paragraph">Guests enjoy:</p>
                         <div className="fcel-concierge-pills-wrap">
@@ -338,11 +336,10 @@ function ScenicFoodReview() {
                 </section>
 
                 {/* RESTAURANTS ON SCENIC ECLIPSE — reused fcel-dest-* classes + new sfr-dest-card-text */}
-                <section className="fcel-dest-section">
+                <section className="fcel-dest-section" style={{ backgroundColor: 'var(--bg-white)' }}>
                     <div className="fcel-dest-container">
                         <div className="fcel-dest-header">
-                            <span className="fcel-eyebrow-label">Restaurants on Scenic Eclipse</span>
-                            <h2 className="fcel-section-heading">Scenic Eclipse offers several distinct dining venues, allowing guests to enjoy something different every day.</h2>
+                            <h2 className="fcel-section-heading">Restaurants on Scenic Eclipse</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph">Dining options typically include:</p>
                         </div>
@@ -382,12 +379,12 @@ function ScenicFoodReview() {
                     <div className="fcel-villa-container">
                         <div className="fcel-villa-grid">
                             <div>
-                                <span className="fcel-eyebrow-label">
-                                    <ChefHat size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="fcel-section-heading">
                                     Quality of the Food
-                                </span>
-                                <h2 className="fcel-section-heading">Scenic consistently receives praise for:</h2>
+                                </h2>
                                 <div className="fcel-heading-bar"></div>
+
+                                <p className="fcel-lead-paragraph">Scenic consistently receives praise for:</p>
                                 <div className="fcel-villa-features-grid">
                                     {sfrFoodQuality.map((item, idx) => (
                                         <div key={idx} className="fcel-villa-feature-pill">
@@ -411,19 +408,18 @@ function ScenicFoodReview() {
                 </section>
 
                 {/* MEDITERRANEAN & REGIONAL CUISINE — reused fcel-occasion-* classes */}
-                <section className="fcel-occasion-section">
+                <section className="fcel-occasion-section" style={{ backgroundColor: 'var(--bg-soft)' }}>
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media">
-                                <img className="fcel-media-tall" src="https://placehold.co/500x700/274472/ffffff?text=Mediterranean+Cuisine" alt="Mediterranean-inspired cuisine aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/1c2f4a/ffffff?text=Italian+Pasta" alt="Italian pasta dish aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/0f1c2e/ffffff?text=Greek+Specialties" alt="Greek specialties served aboard Scenic" />
+                        <div className="fcel-occasion-grid sfr-mediterranean-grid">
+                            <div className="fcel-occasion-media sfr-mediterranean-media">
+                                <img src="https://placehold.co/500x700/274472/ffffff?text=Mediterranean+Cuisine" alt="Mediterranean-inspired cuisine aboard Scenic" />
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">Mediterranean & Regional Cuisine</span>
-                                <h3 className="fcel-occasion-title">One of Scenic's strengths is incorporating local flavors into each itinerary.</h3>
+                                <h2 className="fcel-section-heading">Mediterranean & Regional Cuisine</h2>
+                                <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">One of Scenic's strengths is incorporating local flavors into each itinerary.</p>
                                 <p className="fcel-occasion-intro">Depending on your destination, you may enjoy:</p>
-                                <ul className="fcel-occasion-list">
+                                <ul className="fcel-occasion-list sfr-mediterranean-list">
                                     {sfrRegionalCuisine.map((item, idx) => (
                                         <li key={idx}>
                                             <CheckCircle size={16} className="fcel-occasion-list-icon" />
@@ -440,19 +436,18 @@ function ScenicFoodReview() {
                 </section>
 
                 {/* WINE & BEVERAGE PROGRAM — reused fcel-occasion-* classes (soft bg, reversed) */}
-                <section className="fcel-occasion-section fcel-occasion-soft">
+                <section className="fcel-occasion-section fcel-occasion-white">
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media">
-                                <img className="fcel-media-tall" src="https://placehold.co/500x700/1c2f4a/ffffff?text=Wine+%26+Beverage" alt="Wine and beverage program aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/274472/ffffff?text=Champagne" alt="Champagne service aboard Scenic" />
-                                <img className="fcel-media-short" src="https://placehold.co/500x340/0f1c2e/ffffff?text=Craft+Cocktails" alt="Craft cocktails aboard Scenic" />
+                        <div className="fcel-occasion-grid fcel-occasion-reverse sfr-wine-grid">
+                            <div className="fcel-occasion-media sfr-wine-media">
+                                <img src="https://placehold.co/500x700/1c2f4a/ffffff?text=Wine+%26+Beverage" alt="Wine and beverage program aboard Scenic" />
                             </div>
                             <div>
-                                <span className="fcel-occasion-eyebrow">Wine & Beverage Program</span>
-                                <h3 className="fcel-occasion-title">Scenic's beverage program is among the industry's strongest.</h3>
+                                <h2 className="fcel-section-heading">Wine & Beverage Program</h2>
+                                <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">Scenic's beverage program is among the industry's strongest.</p>
                                 <p className="fcel-occasion-intro">Included selections typically feature:</p>
-                                <ul className="fcel-occasion-list">
+                                <ul className="fcel-occasion-list sfr-wine-list">
                                     {sfrBeverageProgram.map((item, idx) => (
                                         <li key={idx}>
                                             <CheckCircle size={16} className="fcel-occasion-list-icon" />
@@ -469,7 +464,7 @@ function ScenicFoodReview() {
                 </section>
 
                 {/* DIETARY REQUIREMENTS — reused fcel-reunion-* classes */}
-                <section className="fcel-reunion-section">
+                <section className="fcel-reunion-section" style={{ backgroundColor: 'var(--bg-soft)' }}>
                     <div className="fcel-reunion-container">
                         <div className="fcel-reunion-grid-layout">
                             <div className="fcel-reunion-media-col">
@@ -479,13 +474,12 @@ function ScenicFoodReview() {
                                 </div>
                             </div>
                             <div className="fcel-reunion-copy-col">
-                                <span className="fcel-birthday-eyebrow">
-                                    <UtensilsCrossed size={16} className="fcel-cake-icon" />
+                                <h2 className="fcel-section-heading">
                                     Dietary Requirements
-                                </span>
-                                <h3 className="fcel-reunion-title">Scenic accommodates a wide variety of dietary needs.</h3>
+                                </h2>
                                 <div className="fcel-heading-bar"></div>
-                                <p className="fcel-reunion-intro">Options include:</p>
+                                <p className="fcel-lead-paragraph">Scenic accommodates a wide variety of dietary needs.</p>
+                                <p className="fcel-occasion-intro">Options include:</p>
                                 <div className="fcel-reunion-cards-grid">
                                     {sfrDietaryOptions.map((item, idx) => (
                                         <div key={idx} className="fcel-reunion-card">
@@ -505,32 +499,23 @@ function ScenicFoodReview() {
                 {/* SERVICE DURING MEALS — reused fcel-birthday-* classes (media collage + numbered cards) */}
                 <section className="fcel-birthday-section">
                     <div className="fcel-birthday-container">
-                        <div className="fcel-birthday-grid">
-                            <div className="fcel-birthday-media-collage">
-                                <div className="fcel-collage-img-wrap fcel-collage-tall">
-                                    <img src="https://placehold.co/500x650/274472/ffffff?text=Attentive+Service" alt="Attentive dining service aboard Scenic" />
-                                </div>
-                                <div className="fcel-collage-img-wrap fcel-collage-short-1">
-                                    <img src="https://placehold.co/500x400/1c2f4a/ffffff?text=Wine+Pairing" alt="Wine recommendation service aboard Scenic" />
-                                </div>
-                                <div className="fcel-collage-img-wrap fcel-collage-short-2">
-                                    <img src="https://placehold.co/500x400/0f1c2e/ffffff?text=Fine+Dining" alt="Fine dining service aboard Scenic" />
-                                </div>
-                                <div className="fcel-collage-glow"></div>
+                        <div className="fcel-birthday-grid sfr-service-grid">
+                            <div className="fcel-occasion-media sfr-service-media">
+                                <img src="https://placehold.co/500x650/274472/ffffff?text=Attentive+Service" alt="Attentive dining service aboard Scenic" />
                             </div>
                             <div className="fcel-birthday-copy">
-                                <span className="fcel-birthday-eyebrow">
-                                    <Users size={16} className="fcel-cake-icon" />
+                                <h2 className="fcel-section-heading">
                                     Service During Meals
-                                </span>
-                                <h3 className="fcel-birthday-title">Dining service reflects Scenic's six-star reputation.</h3>
-                                <p className="fcel-birthday-intro">Guests can expect:</p>
-                                <div className="fcel-birthday-cards-container">
+                                </h2>
+                                <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">Dining service reflects Scenic's six-star reputation.</p>
+                                <p className="fcel-occasion-intro">Guests can expect:</p>
+                                <div className="sfr-service-list-grid">
                                     {sfrServiceHighlights.map((item, idx) => (
-                                        <div key={idx} className="fcel-birthday-card">
-                                            <div className="fcel-birthday-card-badge">{idx + 1}</div>
-                                            <div className="fcel-birthday-card-content">
-                                                <span className="fcel-birthday-card-title">{item}</span>
+                                        <div key={idx} className="sfr-service-card">
+                                            <div className="sfr-service-number">{idx + 1}</div>
+                                            <div className="sfr-service-text-wrapper">
+                                                <span className="sfr-service-text">{item}</span>
                                             </div>
                                         </div>
                                     ))}
@@ -545,16 +530,15 @@ function ScenicFoodReview() {
                 </section>
 
                 {/* DINING ATMOSPHERE — reused fcel-grad-* classes (polaroid board) */}
-                <section className="fcel-grad-section">
+                <section className="fcel-grad-section" style={{ backgroundColor: 'var(--bg-soft)' }}>
                     <div className="fcel-grad-container">
                         <div className="fcel-grad-header">
-                            <span className="fcel-birthday-eyebrow">
-                                <Sparkles size={16} className="fcel-cake-icon" />
+                            <h2 className="fcel-section-heading">
                                 Dining Atmosphere
-                            </span>
-                            <h3 className="fcel-grad-title">Unlike larger cruise ships, Scenic offers a relaxed and sophisticated atmosphere.</h3>
+                            </h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-grad-intro">Restaurants feature:</p>
+                            <p className="fcel-lead-paragraph">Unlike larger cruise ships, Scenic offers a relaxed and sophisticated atmosphere.</p>
+                            <p className="fcel-occasion-intro">Restaurants feature:</p>
                         </div>
 
                         <div className="fcel-grad-board">
@@ -592,7 +576,7 @@ function ScenicFoodReview() {
                                 <Star size={16} className="fcel-cake-icon" />
                                 Is Scenic Better Than Other Luxury Cruise Lines?
                             </span>
-                            <h3 className="fcel-retire-title">Scenic compares favorably with many luxury brands.</h3>
+                            <h2 className="fcel-retire-title">Scenic compares favorably with <br /> many luxury brands.</h2>
                             <div className="fcel-heading-bar"></div>
                             <p className="fcel-retire-intro">Its strengths include:</p>
                         </div>
@@ -621,9 +605,9 @@ function ScenicFoodReview() {
                 <section className="sfr-review-section">
                     <div className="sfr-review-container">
                         <div className="sfr-review-header">
-                            <span className="fcel-eyebrow-label">Our Expert Review</span>
-                            <h2 className="fcel-section-heading">After evaluating Scenic's dining experience, our overall impression is extremely positive.</h2>
+                            <h2 className="fcel-section-heading">Our Expert Review</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-lead-paragraph">After evaluating Scenic's dining experience, our overall impression is extremely positive.</p>
                         </div>
 
                         <div className="sfr-review-grid">
@@ -678,18 +662,13 @@ function ScenicFoodReview() {
                 {/* WHY BOOK WITH TRIPS & SHIPS LUXURY TRAVEL — reused fcel-why-us-* classes */}
                 <section className="fcel-why-us-section">
                     <div className="fcel-why-us-container">
-                        <div className="fcel-why-us-top">
-                            <div className="fcel-why-us-copy">
-                                <span className="fcel-eyebrow-label">TRUSTED SCENIC CRUISE SPECIALISTS</span>
-                                <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    Our Scenic specialists help you:
-                                </p>
-                            </div>
-                            <div className="fcel-why-us-image">
-                                <img src="https://placehold.co/700x600/1c2f4a/ffffff?text=Trips+%26+Ships+Advisors" alt="Trips and Ships Luxury Travel advisors planning a Scenic voyage" />
-                            </div>
+                        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                            <span className="fcel-eyebrow-label">TRUSTED SCENIC CRUISE SPECIALISTS</span>
+                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                            <div className="fcel-heading-bar fcel-bar-center"></div>
+                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                                Our Scenic specialists help you:
+                            </p>
                         </div>
                         <div className="fcel-why-us-grid">
                             {sfrWhyBookUs.map((item, idx) => {

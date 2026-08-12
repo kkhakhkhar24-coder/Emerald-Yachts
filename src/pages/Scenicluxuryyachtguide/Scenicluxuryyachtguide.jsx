@@ -557,9 +557,10 @@ function ScenicLuxuryYachtGuide() {
                 <section className="sly-why-section">
                     <div className="sly-why-container">
                         <div className="sly-why-header">
-                            <span className="sly-eyebrow-label">WHY CHOOSE SCENIC?</span>
-                            <h2 className="sly-section-heading">Scenic appeals to travelers who want both adventure and uncompromising luxury.</h2>
-                            <div className="sly-heading-bar sly-bar-center"></div>
+                            <h2 className="sly-section-heading">Why Choose Scenic?</h2>
+                                                        <div className="sly-heading-bar sly-bar-center"></div>
+                            <p className="sly-lead-paragraph">Scenic appeals to travelers who want both adventure and uncompromising luxury.</p>
+
                             <p className="sly-lead-paragraph">Guests enjoy:</p>
                         </div>
                         <div className="sly-why-grid">
@@ -596,16 +597,18 @@ function ScenicLuxuryYachtGuide() {
                 <section className="sly-yacht-section">
                     <div className="sly-yacht-container">
                         <div className="sly-yacht-grid">
-                            <div className="sly-yacht-media">
-                                <img src="https://placehold.co/800x900/1c2f4a/ffffff?text=Scenic+Eclipse+2019" alt="Scenic Eclipse discovery yacht launched 2019" />
-                                <div className="sly-yacht-badge">Meet The Scenic Discovery Yachts</div>
+                            <div className="sly-yacht-media-cell">
+                                <div className="sly-yacht-media">
+                                    <img src="https://placehold.co/800x900/1c2f4a/ffffff?text=Scenic+Eclipse+2019" alt="Scenic Eclipse discovery yacht launched 2019" />
+                                    <div className="sly-yacht-badge">Meet The Scenic Discovery Yachts</div>
+                                </div>
                             </div>
                             <div className="sly-yacht-copy">
-                                <span className="sly-yacht-eyebrow">
-                                    <Ship size={16} />
+                                <h2 className="sly-section-heading">
+                                 
                                     Scenic Eclipse
-                                </span>
-                                <h3 className="sly-yacht-title">Launched in 2019, Scenic Eclipse introduced a completely new category of luxury cruising.</h3>
+                                </h2>
+                                <p className="sly-lead-paragraph">Launched in 2019, Scenic Eclipse introduced a completely new category of luxury cruising.</p>
                                 <p className="sly-yacht-intro">Highlights include:</p>
                                 <ul className="sly-yacht-list">
                                     {slyEclipseHighlights.map((item, idx) => (
@@ -623,7 +626,7 @@ function ScenicLuxuryYachtGuide() {
                 {/* SCENIC ECLIPSE II */}
                 <section className="sly-eclipse2-section">
                     <div className="sly-eclipse2-container">
-                        <h3 className="sly-eclipse2-title">Scenic Eclipse II</h3>
+                        <h2 className="sly-eclipse2-title">Scenic Eclipse II</h2>
                         <p className="sly-eclipse2-text">
                             Scenic Eclipse II builds upon the success of the original Discovery Yacht while offering refined public spaces, expanded wellness facilities, and even more immersive expedition experiences.
                         </p>
@@ -638,11 +641,10 @@ function ScenicLuxuryYachtGuide() {
                     <div className="sly-suites-container">
                         <div className="sly-suites-grid">
                             <div className="sly-suites-copy">
-                                <span className="sly-eyebrow-label">
-                                    <Home size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="sly-section-heading">
                                     Luxury Suites
-                                </span>
-                                <h2 className="sly-section-heading">Every accommodation aboard Scenic Eclipse features:</h2>
+                                </h2>
+                                <p className="sly-lead-paragraph">Every accommodation aboard Scenic Eclipse features:</p>
                                 <div className="sly-heading-bar"></div>
                                 <div className="sly-suites-features-grid">
                                     {slySuiteFeatures.map((feature, idx) => (
@@ -669,12 +671,11 @@ function ScenicLuxuryYachtGuide() {
                 {/* DINING ONBOARD */}
                 <section className="sly-dining-section">
                     <div className="sly-dining-container">
-                        <span className="sly-eyebrow-label">
-                            <UtensilsCrossed size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                        <h2 className="sly-section-heading">
                             Dining Onboard
-                        </span>
-                        <h2 className="sly-section-heading">Scenic offers one of the most impressive culinary programs at sea.</h2>
+                        </h2>
                         <div className="sly-heading-bar sly-bar-center"></div>
+                        <p className="sly-lead-paragraph">Scenic offers one of the most impressive culinary programs at sea.</p>
                         <p className="sly-lead-paragraph">Dining venues may include:</p>
                         <div className="sly-dining-pills-wrap">
                             {slyDiningVenues.map((venue, idx) => (
@@ -691,9 +692,10 @@ function ScenicLuxuryYachtGuide() {
                 <section className="sly-wellness-section">
                     <div className="sly-wellness-container">
                         <div className="sly-wellness-header">
-                            <span className="sly-eyebrow-label">Wellness & Spa</span>
-                            <h3 className="sly-wellness-title">Scenic Eclipse offers a destination-inspired wellness experience.</h3>
-                            <div className="sly-heading-bar sly-bar-center"></div>
+                            <h2 className="sly-wellness-title">Wellness & Spa</h2>
+                                                        <div className="sly-heading-bar sly-bar-center"></div>
+                            <p className="sly-wellness-intro">Scenic Eclipse offers a destination-inspired wellness experience.</p>
+
                             <p className="sly-wellness-intro">Facilities include:</p>
                         </div>
 
@@ -721,9 +723,9 @@ function ScenicLuxuryYachtGuide() {
                 <section className="sly-expedition-section">
                     <div className="sly-expedition-container">
                         <div className="sly-expedition-header">
-                            <span className="sly-eyebrow-label">Expedition Experiences</span>
-                            <h3 className="sly-expedition-title">Scenic's Discovery Team leads immersive adventures ashore.</h3>
+                            <h2 className="sly-expedition-title">Expedition Experiences</h2>
                             <div className="sly-heading-bar sly-bar-center"></div>
+                            <p className="sly-expedition-intro">Scenic's Discovery Team leads immersive adventures ashore.</p>
                             <p className="sly-expedition-intro">Depending on your itinerary, experiences may include:</p>
                         </div>
 
@@ -758,13 +760,10 @@ function ScenicLuxuryYachtGuide() {
                 <section className="sly-dest-section">
                     <div className="sly-dest-container">
                         <div className="sly-dest-header">
-                            <span className="sly-eyebrow-label">
-                                <MapPin size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                                Destinations
-                            </span>
-                            <h2 className="sly-section-heading">Scenic Luxury Yachts explore destinations around the globe.</h2>
+                            <h2 className="sly-expedition-title">Destinations</h2>
                             <div className="sly-heading-bar sly-bar-center"></div>
-                            <p className="sly-lead-paragraph">Popular itineraries include:</p>
+                            <p className="sly-dest-intro">Scenic Luxury Yachts explore destinations around the globe.</p>
+                            <p className="sly-dest-intro">Popular itineraries include:</p>
                         </div>
                         <div className="sly-dest-grid">
                             {slyDestinations.map((dest, idx) => {
@@ -800,9 +799,9 @@ function ScenicLuxuryYachtGuide() {
                 {/* WHAT'S INCLUDED */}
                 <section className="sly-included-section">
                     <div className="sly-included-container">
-                        <span className="sly-eyebrow-label">What's Included?</span>
-                        <h2 className="sly-section-heading">Scenic is known for exceptional value through comprehensive inclusions.</h2>
+                        <h2 className="sly-expedition-title">What's Included?</h2>
                         <div className="sly-heading-bar sly-bar-center"></div>
+                        <p className="sly-lead-paragraph">Scenic is known for exceptional value through comprehensive inclusions.</p>
                         <p className="sly-lead-paragraph">Most voyages include:</p>
                         <div className="sly-included-grid">
                             {slyIncluded.map((item, idx) => (
@@ -823,11 +822,9 @@ function ScenicLuxuryYachtGuide() {
                     <div className="sly-who-container">
                         <div className="sly-who-grid">
                             <div className="sly-who-copy">
-                                <span className="sly-eyebrow-label">
-                                    <Star size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
+                                <h2 className="sly-expedition-title">
                                     Who Should Cruise with Scenic?
-                                </span>
-                                <h2 className="sly-section-heading">Scenic is ideal for travelers seeking:</h2>
+                                </h2>
                                 <div className="sly-heading-bar"></div>
                                 <div className="sly-who-cards">
                                     {slyWhoShouldCruise.map((item, idx) => (
@@ -854,18 +851,13 @@ function ScenicLuxuryYachtGuide() {
                 {/* WHY BOOK WITH TRIPS & SHIPS LUXURY TRAVEL */}
                 <section className="sly-why-us-section">
                     <div className="sly-why-us-container">
-                        <div className="sly-why-us-top">
-                            <div className="sly-why-us-copy">
-                                <span className="sly-eyebrow-label">TRUSTED SCENIC CRUISE SPECIALISTS</span>
-                                <h2 className="sly-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                                <div className="sly-heading-bar"></div>
-                                <p className="sly-lead-paragraph">
-                                    Choosing the right Scenic itinerary involves much more than selecting a destination. Our advisors help you:
-                                </p>
-                            </div>
-                            <div className="sly-why-us-image">
-                                <img src="https://placehold.co/700x600/1c2f4a/ffffff?text=Trips+%26+Ships+Advisors" alt="Trips and Ships Luxury Travel advisors planning a Scenic voyage" />
-                            </div>
+                        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                            <span className="sly-eyebrow-label">TRUSTED SCENIC CRUISE SPECIALISTS</span>
+                            <h2 className="sly-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                            <div className="sly-heading-bar sly-bar-center"></div>
+                            <p className="sly-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                                Choosing the right Scenic itinerary involves much more than selecting a destination. Our advisors help you:
+                            </p>
                         </div>
                         <div className="sly-why-us-grid">
                             {slyWhyBookUs.map((item, idx) => {

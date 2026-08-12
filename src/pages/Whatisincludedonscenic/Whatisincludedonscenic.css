@@ -10,7 +10,7 @@
    ============================================================ */
 .wis-quicknotes-section {
     background: var(--fcel-bg-white);
-    padding: 90px 20px;
+    padding: 60px 20px;
 }
 
 .wis-quicknotes-container {
@@ -69,14 +69,28 @@
 }
 
 @media (max-width: 1024px) {
-    .wis-quicknotes-section { padding: 60px 18px; }
-    .wis-quicknotes-grid { grid-template-columns: 1fr; gap: 18px; }
+    .wis-quicknotes-section {
+        padding: 60px 18px;
+    }
+
+    .wis-quicknotes-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .wis-quicknotes-section { padding: 44px 14px; }
-    .wis-quicknotes-card { padding: 24px 20px; }
-    .wis-quicknotes-title { font-size: 17px; }
+    .wis-quicknotes-section {
+        padding: 44px 14px;
+    }
+
+    .wis-quicknotes-card {
+        padding: 24px 20px;
+    }
+
+    .wis-quicknotes-title {
+        font-size: 17px;
+    }
 }
 
 /* ============================================================
@@ -84,7 +98,7 @@
    ============================================================ */
 .wis-notincluded-section {
     background: var(--fcel-bg-soft);
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
 
 .wis-notincluded-container {
@@ -132,20 +146,32 @@
 }
 
 @media (max-width: 1024px) {
-    .wis-notincluded-grid { grid-template-columns: repeat(2, 1fr); }
-    .wis-notincluded-section { padding: 60px 18px; }
+    .wis-notincluded-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wis-notincluded-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .wis-notincluded-grid { grid-template-columns: 1fr; gap: 12px; }
-    .wis-notincluded-item { font-size: 13px; padding: 14px 16px; }
+    .wis-notincluded-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .wis-notincluded-item {
+        font-size: 13px;
+        padding: 14px 16px;
+    }
 }
 
 /* ============================================================
    WHY SCENIC OFFERS EXCELLENT VALUE — CENTERED TEXT BLOCK + CTA
    ============================================================ */
 .wis-value-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
     text-align: center;
 }
@@ -177,11 +203,211 @@
 }
 
 @media (max-width: 768px) {
-    .wis-value-section { padding: 60px 18px; }
+    .wis-value-section {
+        padding: 60px 18px;
+    }
 }
 
 @media (max-width: 480px) {
-    .wis-value-section { padding: 44px 14px; }
-    .wis-value-title { font-size: 24px; }
-    .wis-value-text { font-size: 15px; }
+    .wis-value-section {
+        padding: 44px 14px;
+    }
+
+    .wis-value-title {
+        font-size: 24px;
+    }
+
+    .wis-value-text {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION IMAGE SIZE OVERRIDES
+   ============================================================ */
+.wis-intro-section .fcel-intro-grid {
+    align-items: center;
+}
+
+.wis-intro-section .fcel-intro-image-frame {
+    height: 300px !important;
+}
+
+@media (max-width: 1024px) {
+    .wis-intro-section .fcel-intro-image-frame {
+        height: 340px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .wis-intro-section .fcel-intro-image-frame {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .wis-intro-section .fcel-intro-image-frame {
+        height: 220px !important;
+    }
+}
+
+/* ============================================================
+   LUXURY ACCOMMODATIONS — SINGLE IMAGE AND SIDE-BY-SIDE LIST
+   ============================================================ */
+.wis-accommodations-grid {
+    align-items: center !important;
+}
+
+.wis-accommodations-media {
+    display: block !important;
+    height: 330px !important;
+    width: 100% !important;
+}
+
+.wis-accommodations-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+@media (max-width: 1024px) {
+    .wis-accommodations-grid {
+        align-items: center !important;
+    }
+
+    .wis-accommodations-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .wis-accommodations-media {
+        height: 280px !important;
+    }
+}
+
+/* ============================================================
+   BUTLER SERVICE — SINGLE IMAGE AND SIDE-BY-SIDE LIST
+   ============================================================ */
+.wis-butler-grid {
+    align-items: center !important;
+}
+
+.wis-butler-media {
+    display: block !important;
+    height: 330px !important;
+    width: 100% !important;
+}
+
+.wis-butler-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+@media (max-width: 1024px) {
+    .wis-butler-grid {
+        align-items: center !important;
+    }
+
+    .wis-butler-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .wis-butler-media {
+        height: 280px !important;
+    }
+}
+
+/* ============================================================
+   SHORE EXCURSIONS — SINGLE IMAGE AND SIDE-BY-SIDE CARDS
+   ============================================================ */
+.wis-shore-grid {
+    align-items: center !important;
+}
+
+.wis-shore-media {
+    display: block !important;
+    height: 420px !important; /* Perfect height to match 4 rows of side-by-side cards */
+    width: 100% !important;
+}
+
+.wis-shore-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+}
+
+.wis-shore-list-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+.wis-shore-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.03) !important;
+    transition: all 0.3s ease !important;
+}
+
+.wis-shore-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(15, 28, 46, 0.06) !important;
+}
+
+.wis-shore-number {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: var(--fcel-bg-soft) !important;
+    color: var(--fcel-navy) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    flex-shrink: 0 !important;
+}
+
+.wis-shore-text-wrapper {
+    flex-grow: 1 !important;
+}
+
+.wis-shore-text {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: var(--fcel-navy) !important;
+}
+
+@media (max-width: 1024px) {
+    .wis-shore-grid {
+        align-items: center !important;
+    }
+
+    .wis-shore-media {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .wis-shore-media {
+        height: 280px !important;
+    }
+
+    .wis-shore-list-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
 }
