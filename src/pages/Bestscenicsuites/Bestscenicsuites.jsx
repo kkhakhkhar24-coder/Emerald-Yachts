@@ -289,7 +289,7 @@ function BestScenicSuites() {
                                 <h2 className="fcel-section-heading">Best Scenic Suites</h2>
                                                                 <div className="fcel-heading-bar"></div>
 
-                                <p className="fcel-lead-paragraph">Which Scenic Suite Is <br /> Right for You?</p>
+                                <p className="fcel-lead-paragraph">Which Scenic Suite Is Right for You?</p>
                                 <p className="fcel-lead-paragraph">
                                     Every accommodation aboard Scenic Eclipse and Scenic Eclipse II is a luxurious all-veranda suite complete with personalized butler service, premium amenities, and elegant contemporary design. Unlike many cruise lines, Scenic doesn't offer inside cabins or standard oceanview rooms—every guest enjoys a spacious suite with a private outdoor veranda.
                                 </p>
@@ -338,16 +338,13 @@ function BestScenicSuites() {
                     </div>
                 </section>
 
-                {/* MID-PAGE CTA #2 */}
-                <section className="bss-inline-cta">
-                    <div className="bss-inline-cta-inner">
-                        <h3 className="bss-inline-cta-heading">Not sure which suite fits your travel style?</h3>
-                        <div className="fcel-hero-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                        </div>
+                <section className="bss-separation-cta">
+                    <div className="bss-separation-cta-inner">
+                        <h3 className="bss-separation-cta-heading">Not sure which suite fits your travel style?</h3>
+                        <Link to="/contact" className="bss-separation-cta-btn">
+                            <Phone size={18} />
+                            Schedule a Consultation
+                        </Link>
                     </div>
                 </section>
 
@@ -411,15 +408,13 @@ function BestScenicSuites() {
                                 </div>
                             </section>
                             {idx === 3 && (
-                                <section className="bss-inline-cta">
-                                    <div className="bss-inline-cta-inner">
-                                        <h3 className="bss-inline-cta-heading">Curious how these suites compare in person?</h3>
-                                        <div className="fcel-hero-btn-row">
-                                            <button className="fcel-btn-primary">
-                                                <LayoutList size={18} />
-                                                Compare Suite Categories
-                                            </button>
-                                        </div>
+                                <section className="bss-separation-cta">
+                                    <div className="bss-separation-cta-inner">
+                                        <h3 className="bss-separation-cta-heading">Curious how these suites compare in person?</h3>
+                                        <button className="bss-separation-cta-btn">
+                                            <LayoutList size={18} />
+                                            Compare Suite Categories
+                                        </button>
                                     </div>
                                 </section>
                             )}

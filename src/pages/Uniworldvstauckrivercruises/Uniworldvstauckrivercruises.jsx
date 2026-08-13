@@ -545,38 +545,35 @@ function UniworldVsTauckRiverCruises() {
                             <h2 className="fcel-section-heading">Suites & Accommodations</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvtc-split-comparison uvtc-reverse">
-                            <div className="uvtc-split-content">
-                                <div className="uvtc-vs-grid">
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                        <ul className="uvtc-vs-card-list">
-                                            <li><Bed size={16} /><span>Boutique luxury cabins</span></li>
-                                            <li><Bath size={16} /><span>Marble bathrooms</span></li>
-                                            <li><Bell size={16} /><span>Butler service in select suites</span></li>
-                                            <li><Sparkles size={16} /><span>Elegant furnishings</span></li>
-                                        </ul>
-                                    </div>
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                        <ul className="uvtc-vs-card-list">
-                                            <li><Bed size={16} /><span>Spacious suites</span></li>
-                                            <li><Sparkles size={16} /><span>Luxury bedding</span></li>
-                                            <li><Award size={16} /><span>Premium amenities</span></li>
-                                            <li><CheckCircle size={16} /><span>Well-appointed accommodations</span></li>
-                                        </ul>
-                                    </div>
+                        <div className="uvtc-vs-grid">
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Uniworld Luxury Suites & Accommodations" />
                                 </div>
-                                <div className="uvtc-winner-badge">
-                                    <Award size={18} />
-                                    <span>Winner: Tie</span>
-                                </div>
+                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
+                                <ul className="uvtc-vs-card-list">
+                                    <li><Bed size={16} /><span>Boutique luxury cabins</span></li>
+                                    <li><Bath size={16} /><span>Marble bathrooms</span></li>
+                                    <li><Bell size={16} /><span>Butler service in select suites</span></li>
+                                    <li><Sparkles size={16} /><span>Elegant furnishings</span></li>
+                                </ul>
                             </div>
-                            <div className="uvtc-split-image">
-                                <div className="uvtc-split-image-card">
-                                    <UvtcPlaceholder label="Uniworld vs Tauck Suites & Accommodations" />
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Tauck Luxury Suites & Accommodations" />
                                 </div>
+                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
+                                <ul className="uvtc-vs-card-list">
+                                    <li><Bed size={16} /><span>Spacious suites</span></li>
+                                    <li><Sparkles size={16} /><span>Luxury bedding</span></li>
+                                    <li><Award size={16} /><span>Premium amenities</span></li>
+                                    <li><CheckCircle size={16} /><span>Well-appointed accommodations</span></li>
+                                </ul>
                             </div>
+                        </div>
+                        <div className="uvtc-winner-badge">
+                            <Award size={18} />
+                            <span>Winner: Tie</span>
                         </div>
                     </div>
                 </section>
@@ -589,38 +586,35 @@ function UniworldVsTauckRiverCruises() {
                             <h2 className="fcel-section-heading">Dining Comparison</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
-                        <div className="uvtc-split-comparison">
-                            <div className="uvtc-split-content">
-                                <div className="uvtc-vs-grid">
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                        <ul className="uvtc-vs-card-list">
-                                            <li><Utensils size={16} /><span>Gourmet regional cuisine</span></li>
-                                            <li><Landmark size={16} /><span>Farm-to-table menus</span></li>
-                                            <li><Wine size={16} /><span>Premium wines and spirits</span></li>
-                                            <li><Sparkles size={16} /><span>Elegant dining experience</span></li>
-                                        </ul>
-                                    </div>
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                        <ul className="uvtc-vs-card-list">
-                                            <li><Utensils size={16} /><span>Gourmet cuisine</span></li>
-                                            <li><MapPin size={16} /><span>Regional specialties</span></li>
-                                            <li><Wine size={16} /><span>Complimentary beverages</span></li>
-                                            <li><Sparkles size={16} /><span>Fine dining throughout the journey</span></li>
-                                        </ul>
-                                    </div>
+                        <div className="uvtc-vs-grid">
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Uniworld Dining & Culinary Excellence" />
                                 </div>
-                                <div className="uvtc-winner-badge">
-                                    <Award size={18} />
-                                    <span>Winner: Tie</span>
-                                </div>
+                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
+                                <ul className="uvtc-vs-card-list">
+                                    <li><Utensils size={16} /><span>Gourmet regional cuisine</span></li>
+                                    <li><Landmark size={16} /><span>Farm-to-table menus</span></li>
+                                    <li><Wine size={16} /><span>Premium wines and spirits</span></li>
+                                    <li><Sparkles size={16} /><span>Elegant dining experience</span></li>
+                                </ul>
                             </div>
-                            <div className="uvtc-split-image">
-                                <div className="uvtc-split-image-card">
-                                    <UvtcPlaceholder label="Uniworld vs Tauck Dining Comparison" />
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Tauck Dining & Culinary Excellence" />
                                 </div>
+                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
+                                <ul className="uvtc-vs-card-list">
+                                    <li><Utensils size={16} /><span>Gourmet cuisine</span></li>
+                                    <li><MapPin size={16} /><span>Regional specialties</span></li>
+                                    <li><Wine size={16} /><span>Complimentary beverages</span></li>
+                                    <li><Sparkles size={16} /><span>Fine dining throughout the journey</span></li>
+                                </ul>
                             </div>
+                        </div>
+                        <div className="uvtc-winner-badge">
+                            <Award size={18} />
+                            <span>Winner: Tie</span>
                         </div>
                     </div>
                 </section>
@@ -729,32 +723,29 @@ function UniworldVsTauckRiverCruises() {
                                 </span>
                             ))}
                         </div>
-                        <div className="uvtc-split-comparison uvtc-reverse" style={{ marginTop: '48px' }}>
-                            <div className="uvtc-split-content">
-                                <div className="uvtc-vs-grid">
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                        <p className="uvtc-vs-card-text">
-                                            Uniworld also offers Egypt, Peru, India, and Southeast Asia.
-                                        </p>
-                                    </div>
-                                    <div className="uvtc-vs-card">
-                                        <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                        <p className="uvtc-vs-card-text">
-                                            Tauck focuses primarily on Europe with selected itineraries beyond Europe.
-                                        </p>
-                                    </div>
+                        <div className="uvtc-vs-grid" style={{ marginTop: '48px' }}>
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Uniworld River Cruise Destinations" />
                                 </div>
-                                <div className="uvtc-winner-badge">
-                                    <Trophy size={18} />
-                                    <span>Winner: Uniworld</span>
-                                </div>
+                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
+                                <p className="uvtc-vs-card-text">
+                                    Uniworld also offers Egypt, Peru, India, and Southeast Asia.
+                                </p>
                             </div>
-                            <div className="uvtc-split-image">
-                                <div className="uvtc-split-image-card">
-                                    <UvtcPlaceholder label="Uniworld vs Tauck Cruise Destinations" />
+                            <div className="uvtc-vs-card">
+                                <div className="uvtc-card-image-wrapper">
+                                    <UvtcPlaceholder label="Tauck River Cruise Destinations" />
                                 </div>
+                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
+                                <p className="uvtc-vs-card-text">
+                                    Tauck focuses primarily on Europe with selected itineraries beyond Europe.
+                                </p>
                             </div>
+                        </div>
+                        <div className="uvtc-winner-badge">
+                            <Trophy size={18} />
+                            <span>Winner: Uniworld</span>
                         </div>
                     </div>
                 </section>

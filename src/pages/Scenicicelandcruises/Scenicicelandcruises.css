@@ -1313,3 +1313,64 @@
         height: auto !important;
     }
 }
+
+/* ============================================================
+   EXPEDITION, LUXURY, & DINING SECTIONS CUSTOM LAYOUT OVERRIDES
+   ============================================================ */
+.sic-expedition-grid,
+.sic-luxury-grid,
+.sic-dining-grid {
+    align-items: stretch !important;
+}
+
+.sic-expedition-media,
+.sic-luxury-media,
+.sic-dining-media {
+    display: block !important;
+    height: auto !important;
+    min-height: 100% !important;
+}
+
+.sic-expedition-media .sic-placeholder-single,
+.sic-luxury-media .sic-placeholder-single,
+.sic-dining-media .sic-placeholder-single {
+    height: 100% !important;
+    min-height: 100% !important;
+    box-sizing: border-box;
+}
+
+.sic-expedition-list,
+.sic-luxury-list,
+.sic-dining-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px 24px !important;
+}
+
+@media (max-width: 1024px) {
+    .sic-expedition-grid,
+    .sic-luxury-grid,
+    .sic-dining-grid {
+        align-items: normal !important;
+    }
+    .sic-expedition-media,
+    .sic-luxury-media,
+    .sic-dining-media {
+        height: 320px !important;
+        min-height: unset !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sic-expedition-media,
+    .sic-luxury-media,
+    .sic-dining-media {
+        height: 240px !important;
+    }
+    .sic-expedition-list,
+    .sic-luxury-list,
+    .sic-dining-list {
+        grid-template-columns: 1fr !important;
+    }
+}

@@ -496,8 +496,12 @@
    WHY SCENIC SUITES STAND OUT (new — scg-)
    ============================================================ */
 .scg-standout-section {
-    background: var(--fcel-bg-white);
+    background: var(--fcel-bg-soft);
     padding: 60px 20px;
+}
+
+.scg-standout-section .scg-icon-pill {
+    background: #ffffff;
 }
 
 .scg-standout-container {
@@ -542,12 +546,12 @@
    ============================================================ */
 .scg-suites-section {
     background: transparent;
-    padding: 60px 20px;
+    padding: 60px 0px;
 }
 
 .scg-suite-row-wrapper {
     padding: 80px 20px;
-    width: 100%;
+    width: 100% !important;
 }
 
 .scg-suite-row-wrapper.scg-bg-soft {
@@ -665,11 +669,10 @@
         order: unset;
     }
     .scg-suite-visual { order: -1; }
-    .scg-suites-section { padding: 60px 18px; }
 }
 
 @media (max-width: 480px) {
-    .scg-suites-section { padding: 44px 14px; }
+    .scg-suites-section { padding: 44px 0px; }
     .scg-suite-features { grid-template-columns: 1fr; }
     .scg-suite-name { font-size: 22px; }
     .scg-suite-row { margin-bottom: 40px; }

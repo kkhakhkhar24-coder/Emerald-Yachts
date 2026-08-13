@@ -423,7 +423,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: var(--fcel-bg-soft);
+    background: #ffffff;
     border-radius: 10px;
     padding: 14px 16px;
     color: var(--fcel-navy);
@@ -496,7 +496,7 @@
    WHY CHOOSE SCENIC (new — smc-)
    ============================================================ */
 .smc-why-section {
-    background: var(--fcel-bg-white);
+    background: var(--fcel-bg-soft);
     padding: 100px 20px;
 }
 
@@ -541,7 +541,7 @@
    MEDITERRANEAN DESTINATIONS (new — smc-) — main image-style section
    ============================================================ */
 .smc-destinations-section {
-    background: var(--fcel-bg-soft);
+    background: var(--fcel-bg-white);
     padding: 60px 20px;
 }
 
@@ -563,7 +563,7 @@
 }
 
 .smc-destination-card {
-    background: #ffffff;
+    background: var(--fcel-bg-soft);
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
@@ -650,6 +650,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     margin-top: 26px;
+}
+
+.smc-experience-section .smc-icon-pill {
+    background: var(--fcel-bg-soft);
 }
 
 @media (max-width: 1024px) {

@@ -317,7 +317,7 @@ function ScenicCabinsGuide() {
                         <div className="fcel-intro-grid">
                             <div className="fcel-intro-copy">
                                 <h2 className="fcel-section-heading">All-Veranda Luxury Suites</h2>
-                                                                <div className="fcel-heading-bar"></div>
+                                <div className="fcel-heading-bar"></div>
 
                                 <p className="fcel-lead-paragraph">Find the Perfect Suite for Your Scenic Eclipse Journey</p>
                                 <p className="fcel-lead-paragraph">

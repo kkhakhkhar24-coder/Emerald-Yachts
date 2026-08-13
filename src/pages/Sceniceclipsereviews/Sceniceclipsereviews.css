@@ -477,7 +477,7 @@
    FIRST IMPRESSIONS (new — sce-)
    ============================================================ */
 .sce-impressions-section {
-    background: var(--fcel-bg-white);
+    background: var(--fcel-bg-soft);
     padding: 60px 20px;
 }
 
@@ -519,7 +519,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--fcel-navy);
-    background: var(--fcel-bg-soft);
+    background: #ffffff;
     border-radius: 10px;
     padding: 14px 16px;
 }
@@ -549,7 +549,7 @@
    SUITES & ACCOMMODATIONS (new — sce-)
    ============================================================ */
 .sce-suites-section {
-    background: var(--fcel-bg-soft);
+    background: var(--fcel-bg-white);
     padding: 60px 20px;
 }
 
@@ -591,7 +591,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #ffffff;
+    background: var(--fcel-bg-soft);
     border-radius: 10px;
     padding: 14px 16px;
     color: var(--fcel-navy);
@@ -1467,4 +1467,34 @@
 .sce-image-placeholder:hover {
     background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
     border-color: rgba(39, 68, 114, 0.3);
+}
+
+.sce-impressions-placeholder {
+    min-height: 420px;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(15, 28, 46, 0.14);
+}
+
+.sce-suites-placeholder {
+    min-height: 460px;
+    border-radius: 0;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .sce-impressions-placeholder {
+        min-height: 320px;
+    }
+    .sce-suites-placeholder {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sce-impressions-placeholder {
+        min-height: 240px;
+    }
+    .sce-suites-placeholder {
+        min-height: 240px;
+    }
 }

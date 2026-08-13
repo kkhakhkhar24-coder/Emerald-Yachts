@@ -43,7 +43,7 @@ function ScenicIcelandCruises() {
         { text: 'Seals', icon: Fish },
         { text: 'Arctic foxes', icon: Snowflake },
         { text: 'Dolphins', icon: Waves },
-        { text: 'Sea eagles', icon: Bird }
+       
     ]
 
     /* Expedition experiences */
@@ -398,19 +398,11 @@ function ScenicIcelandCruises() {
                 {/* EXPEDITION EXPERIENCES */}
                 <section className="fcel-occasion-section">
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media seir-suites-layout">
-                                <div className="sic-placeholder">
+                        <div className="fcel-occasion-grid sic-expedition-grid">
+                            <div className="fcel-occasion-media sic-expedition-media">
+                                <div className="sic-placeholder sic-placeholder-single">
                                     <Compass size={40} />
-                                    <span>Image Placeholder: Zodiac Cruise Near Glacier</span>
-                                </div>
-                                <div className="sic-placeholder">
-                                    <Camera size={32} />
-                                    <span>Image Placeholder: Wildlife Photography</span>
-                                </div>
-                                <div className="sic-placeholder seir-placeholder-full">
-                                    <Mountain size={32} />
-                                    <span>Image Placeholder: Volcanic Landscape Hike</span>
+                                    <span>Image Placeholder: Scenic Eclipse Expedition Experience in Iceland</span>
                                 </div>
                             </div>
                             <div>
@@ -419,7 +411,7 @@ function ScenicIcelandCruises() {
                                 </h2>
                                 <p className="fcel-occasion-intro">Scenic Eclipse is purpose-built for exploration.</p>
                                 <p className="fcel-occasion-intro">Depending on your itinerary and weather conditions, experiences may include:</p>
-                                <ul className="fcel-occasion-list">
+                                <ul className="fcel-occasion-list sic-expedition-list">
                                     {sicExpeditionActivities.map((item, idx) => (
                                         <li key={idx}>
                                             <CheckCircle size={18} className="fcel-occasion-list-icon" />
@@ -438,19 +430,11 @@ function ScenicIcelandCruises() {
                 {/* SCENIC ECLIPSE LUXURY */}
                 <section className="fcel-occasion-section fcel-occasion-soft">
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid fcel-occasion-reverse">
-                            <div className="fcel-occasion-media seir-suites-layout">
-                                <div className="sic-placeholder">
+                        <div className="fcel-occasion-grid fcel-occasion-reverse sic-luxury-grid">
+                            <div className="fcel-occasion-media sic-luxury-media">
+                                <div className="sic-placeholder sic-placeholder-single">
                                     <Home size={40} />
-                                    <span>Image Placeholder: Veranda Suite Onboard</span>
-                                </div>
-                                <div className="sic-placeholder">
-                                    <Sun size={32} />
-                                    <span>Image Placeholder: Outdoor Observation Deck</span>
-                                </div>
-                                <div className="sic-placeholder seir-placeholder-full">
-                                    <Users size={32} />
-                                    <span>Image Placeholder: Butler Service Onboard</span>
+                                    <span>Image Placeholder: Scenic Eclipse Luxury Suite & Onboard Experience</span>
                                 </div>
                             </div>
                             <div>
@@ -459,7 +443,7 @@ function ScenicIcelandCruises() {
                                 </h2>
                                 <p className="fcel-occasion-intro">While Iceland's landscapes are rugged, life onboard is exceptionally luxurious.</p>
                                 <p className="fcel-occasion-intro">Guests enjoy:</p>
-                                <ul className="fcel-occasion-list">
+                                <ul className="fcel-occasion-list sic-luxury-list">
                                     {sicLuxuryItems.map((item, idx) => (
                                         <li key={idx}>
                                             <CheckCircle size={18} className="fcel-occasion-list-icon" />
@@ -478,19 +462,11 @@ function ScenicIcelandCruises() {
                 {/* DINING & CULINARY EXPERIENCES */}
                 <section className="fcel-occasion-section">
                     <div className="fcel-occasion-container">
-                        <div className="fcel-occasion-grid">
-                            <div className="fcel-occasion-media seir-suites-layout">
-                                <div className="sic-placeholder">
+                        <div className="fcel-occasion-grid sic-dining-grid">
+                            <div className="fcel-occasion-media sic-dining-media">
+                                <div className="sic-placeholder sic-placeholder-single">
                                     <Utensils size={40} />
-                                    <span>Image Placeholder: Fine Dining Restaurant</span>
-                                </div>
-                                <div className="sic-placeholder">
-                                    <Fish size={32} />
-                                    <span>Image Placeholder: Fresh Icelandic Seafood</span>
-                                </div>
-                                <div className="sic-placeholder seir-placeholder-full">
-                                    <Sparkles size={32} />
-                                    <span>Image Placeholder: In-Suite Dining Setup</span>
+                                    <span>Image Placeholder: Scenic Eclipse Fine Dining Experience</span>
                                 </div>
                             </div>
                             <div>
@@ -499,7 +475,7 @@ function ScenicIcelandCruises() {
                                 </h2>
                                 <p className="fcel-occasion-intro">Exceptional dining inspired by global cuisine and local flavors.</p>
                                 <p className="fcel-occasion-intro">Guests enjoy:</p>
-                                <ul className="fcel-occasion-list">
+                                <ul className="fcel-occasion-list sic-dining-list">
                                     {sicDiningItems.map((item, idx) => (
                                         <li key={idx}>
                                             <CheckCircle size={18} className="fcel-occasion-list-icon" />

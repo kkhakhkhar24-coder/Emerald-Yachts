@@ -349,6 +349,7 @@ function ScenicEclipseReviews() {
                         <div className="sce-impressions-grid">
                             <div className="sce-impressions-media">
                                 {/* <img src={impressionsImg} alt="Scenic Eclipse observation lounge interior design" /> */}
+                                <ScePlaceholder label="Scenic Eclipse Observation Lounge" className="sce-impressions-placeholder" />
                             </div>
                             <div>
                                 <h2 className="fcel-section-heading">
@@ -386,6 +387,7 @@ function ScenicEclipseReviews() {
                         <div className="sce-suites-grid">
                             <div className="sce-suites-image-frame">
                                 {/* <img src={suitesImg} alt="Scenic Eclipse suite with butler service and luxury bed" /> */}
+                                <ScePlaceholder label="Scenic Eclipse Suite Cabin" className="sce-suites-placeholder" />
                             </div>
                             <div>
                                 <h2 className="fcel-section-heading">
