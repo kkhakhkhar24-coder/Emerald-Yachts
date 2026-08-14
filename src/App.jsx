@@ -165,6 +165,8 @@ import UniworldFamilyCruises from "./pages/UniworldFamilyCruises/UniworldFamilyC
 import UniworldChristmasMarketCruises from "./pages/UniworldChristmasMarketCruises/UniworldChristmasMarketCruises";
 import UniworldvsScenicRiverCruises from "./pages/UniworldvsScenicRiverCruises/UniworldvsScenicRiverCruises";
 import UniworldvsAmaWaterways from "./pages/UniworldvsAmaWaterways/UniworldvsAmaWaterways";
+import Celebritybeyondcruiseshipguide  from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
+import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 
 function App() {
   return (
@@ -921,15 +923,27 @@ function App() {
             element={<UniworldChristmasMarketCruises />}
           />
 
-         <Route
+          <Route
             path="/uniworld-river-cruises/uniworld-vs-scenic"
-            element={< UniworldvsScenicRiverCruises/>}
+            element={< UniworldvsScenicRiverCruises />}
           />
 
-           <Route
+          <Route
             path="/uniworld-river-cruises/uniworld-vs-amawaterways"
             element={<UniworldvsAmaWaterways />}
           />
+
+          <Route
+            path="/celebrity-cruises/ships/celebrity-beyond"
+            element={<Celebritybeyondcruiseshipguide  />}
+          />
+
+          <Route
+            path="/celebrity-cruises/ships/celebrity-apex"
+            element={<Celebrityapexcruiseshipguide   />}
+          />
+
+
 
 
 

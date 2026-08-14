@@ -1207,6 +1207,23 @@ const Navbar = () => {
                 Uniworld Vs Ama Waterways
               </NavLink>
 
+              <NavLink
+                to="/celebrity-cruises/ships/celebrity-beyond"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Beyond Cruise Ship Guide
+              </NavLink>
+
+               <NavLink
+                to="/celebrity-cruises/ships/celebrity-apex"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Apex Cruise Ship Guide
+              </NavLink>
+
+              
 
             </div>
           </div>
@@ -2314,13 +2331,13 @@ const Navbar = () => {
               Uniworld Solo River Cruises & Single Supplement Guide
             </NavLink>
 
-             <NavLink
-                to="/uniworld-river-cruises/family-cruises/"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Family River Cruises and Generations Collection
-              </NavLink>
+            <NavLink
+              to="/uniworld-river-cruises/family-cruises/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Family River Cruises and Generations Collection
+            </NavLink>
 
             <NavLink
               to="/uniworld-river-cruises/christmas-markets/"
@@ -2331,43 +2348,59 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-avalon"
+              to="/uniworld-river-cruises/uniworld-vs-avalon"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld vs Avalon
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/uniworld-vs-tauck"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld vs Tauck
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/uniworld-vs-riverside"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld vs Riverside
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/uniworld-vs-scenic"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Vs Scenic River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/uniworld-river-cruises/uniworld-vs-amawaterways"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Uniworld Vs Ama Waterways
+            </NavLink>
+
+            <NavLink
+                to="/celebrity-cruises/ships/celebrity-beyond"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Uniworld vs Avalon
+                Celebrity Beyond Cruise Ship Guide
               </NavLink>
 
               <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-tauck"
+                to="/celebrity-cruises/ships/celebrity-apex"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Uniworld vs Tauck
-              </NavLink>
-
-               <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-riverside"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld vs Riverside
-              </NavLink>
-
-                            <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-scenic"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Scenic River Cruises
-              </NavLink>
-
-              <NavLink
-                to="/uniworld-river-cruises/uniworld-vs-amawaterways"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Uniworld Vs Ama Waterways
+                Celebrity Apex Cruise Ship Guide
               </NavLink>
 
 
