@@ -1,0 +1,4417 @@
+/* =============================================================
+   UniworldRiverCruiseInclusions.css
+   Self-contained styles for "What Is Included on a Uniworld
+   River Cruise?" page. Fully responsive (desktop → mobile).
+   ============================================================= */
+
+:root {
+    --cewi-navy: #274472;
+    --cewi-navy-dark: #0f1c2e;
+    --cewi-accent: #274472;
+    --cewi-accent-light: #93c5fd;
+    --cewi-bg-white: #ffffff;
+    --cewi-bg-soft: rgb(231, 243, 245);
+    --cewi-text-body: #4a5568;
+    --cewi-text-muted: #6b7280;
+    --cewi-border: rgba(39, 68, 114, 0.12);
+    --cewi-radius-lg: 20px;
+    --cewi-radius-md: 12px;
+    --cewi-shadow-soft: 0 24px 60px rgba(15, 28, 46, 0.12);
+    --cewi-font: 'Montserrat', sans-serif;
+    --cewi-font-display: 'Playfair Display', serif;
+}
+
+.cewi-hero-section *,
+.cewi-intro-section *,
+.cewi-toc-section *,
+.cewi-different-section *,
+.cewi-feature-section *,
+.cewi-simple-section *,
+.cewi-triple-section *,
+.cewi-table-section *,
+.cewi-value-section *,
+.cewi-takeaways-section *,
+.cewi-faq-section *,
+.cewi-cta-section * {
+    box-sizing: border-box;
+    font-family: var(--cewi-font);
+}
+
+/* ── SHARED ELEMENTS ─────────────────────────────────────────── */
+
+.cewi-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--cewi-accent);
+    display: block;
+    margin-bottom: 14px;
+}
+
+.cewi-section-heading {
+    font-family: var(--cewi-font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+}
+
+.cewi-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    background: var(--cewi-accent);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+}
+
+.cewi-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cewi-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border-radius: var(--cewi-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cewi-shadow-soft);
+}
+
+.cewi-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cewi-image-frame:hover .cewi-frame-img {
+    transform: scale(1.045);
+}
+
+.cewi-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.5) 0%, rgba(15, 28, 46, 0.02) 55%);
+    z-index: 1;
+}
+
+.cewi-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--cewi-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+
+.cewi-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cewi-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+    z-index: 0;
+}
+
+.cewi-hero-background.cewi-active {
+    opacity: 1;
+}
+
+.cewi-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.cewi-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.cewi-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cewi-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.cewi-hero-main-title {
+    font-family: var(--cewi-font-display);
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.cewi-hero-subtitle-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ── INTRO ────────────────────────────────────────────────────── */
+
+.cewi-intro-section {
+    background: var(--cewi-bg-white);
+    padding: 80px 20px 60px;
+}
+
+.cewi-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cewi-intro-text-col {
+    text-align: left;
+}
+
+.cewi-intro-lead-card {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.05) 0%, rgba(39, 68, 114, 0.01) 100%);
+    border-left: 4px solid var(--cewi-navy);
+    padding: 24px 28px;
+    border-radius: 0 16px 16px 0;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.03);
+}
+
+.cewi-intro-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cewi-intro-body {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+}
+
+.cewi-intro-image-col {
+    width: 100%;
+}
+
+.cewi-intro-image-frame {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: var(--cewi-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cewi-shadow-soft);
+}
+
+.cewi-placeholder-frame {
+    background: linear-gradient(135deg, var(--cewi-bg-soft) 0%, rgba(39, 68, 114, 0.08) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.cewi-placeholder-frame:hover {
+    background: linear-gradient(135deg, var(--cewi-bg-soft) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border-color: rgba(39, 68, 114, 0.4);
+}
+
+.cewi-placeholder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.cewi-placeholder-icon {
+    color: var(--cewi-navy);
+    opacity: 0.6;
+    animation: uincPulse 3s infinite ease-in-out;
+}
+
+.cewi-placeholder-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
+@keyframes uincPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.75;
+    }
+}
+
+.cewi-intro-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--cewi-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+@media (max-width: 991px) {
+    .cewi-intro-grid {
+        gap: 30px;
+    }
+
+    .cewi-intro-image-frame {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cewi-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-intro-text-col {
+        text-align: center;
+    }
+
+    .cewi-intro-lead-card {
+        border-left: none;
+        border-top: 4px solid var(--cewi-navy);
+        border-radius: 0 0 16px 16px;
+        padding: 20px;
+    }
+
+    .cewi-intro-image-frame {
+        height: 300px;
+    }
+}
+
+/* ── TOC ──────────────────────────────────────────────────────── */
+
+.cewi-toc-section {
+    background: var(--cewi-bg-soft);
+    padding: 44px 20px;
+}
+
+.cewi-toc-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--cewi-border);
+    border-radius: var(--cewi-radius-lg);
+    padding: 34px 36px;
+}
+
+.cewi-toc-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0 0 20px 0;
+}
+
+.cewi-toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: none;
+}
+
+.cewi-toc-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--cewi-border);
+}
+
+.cewi-toc-item svg {
+    color: var(--cewi-accent);
+    flex-shrink: 0;
+}
+
+/* ── WHAT MAKES DIFFERENT ────────────────────────────────────── */
+
+.cewi-different-section {
+    background: var(--cewi-bg-soft);
+    padding: 84px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-different-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cewi-different-body {
+    font-size: 16.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.8;
+    max-width: 760px;
+    margin: 0 auto 38px;
+}
+
+.cewi-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.cewi-included-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-md);
+    padding: 16px 20px;
+    font-size: 14.5px;
+    color: var(--cewi-navy);
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cewi-included-chip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.18);
+}
+
+.cewi-included-chip svg {
+    color: var(--cewi-accent);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.cewi-included-chip:hover svg {
+    transform: scale(1.1);
+}
+
+.cewi-different-footer-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.03);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 14.5px;
+    color: var(--cewi-navy);
+    font-weight: 600;
+    margin: 24px auto 0 auto;
+    max-width: 840px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.cewi-different-footer-card svg {
+    color: var(--cewi-navy);
+    background: rgba(39, 68, 114, 0.08);
+    padding: 6px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* ── FEATURE (IMAGE + TEXT) SECTIONS ─────────────────────────── */
+
+.cewi-feature-section {
+    padding: 84px 20px;
+    background: var(--cewi-bg-white);
+}
+
+.cewi-bg-soft {
+    background: var(--cewi-bg-soft);
+}
+
+.cewi-bg-accomm {
+    background: #f1f5f9;
+}
+
+.cewi-left-footnote-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #ffffff;
+    border-left: 4px solid var(--cewi-navy);
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin-top: 24px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+}
+
+.cewi-footnote-card-icon {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cewi-left-footnote-text {
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cewi-feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cewi-feature-grid.cewi-reverse .cewi-feature-image-col {
+    order: 2;
+}
+
+.cewi-feature-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.55;
+}
+
+.cewi-feature-body {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    margin: 0 0 12px 0;
+    line-height: 1.75;
+}
+
+.cewi-feature-footnote {
+    font-size: 14.5px;
+    color: var(--cewi-text-muted);
+    font-style: italic;
+    margin-top: 18px;
+    line-height: 1.7;
+}
+
+.cewi-wine-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.04);
+    border-left: 3px solid var(--cewi-navy);
+    padding: 8px 16px;
+    border-radius: 0 12px 12px 0;
+    font-size: 13.5px;
+    color: var(--cewi-text-body);
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.cewi-wine-footnote-badge svg {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+}
+
+.cewi-check-list {
+    list-style: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cewi-check-list-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.cewi-check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.5;
+}
+
+.cewi-check-list li svg {
+    color: var(--cewi-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cewi-inline-list {
+    list-style: none;
+    margin: 0 0 4px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+.cewi-inline-list li {
+    background: var(--cewi-bg-soft);
+    border: 1px solid var(--cewi-border);
+    color: var(--cewi-navy);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+
+.cewi-dining-redesign-section {
+    padding: 84px 20px;
+    background: var(--cewi-bg-white);
+}
+
+.cewi-dining-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.cewi-dining-left-col {
+    text-align: left;
+    position: sticky;
+    top: 100px;
+}
+
+.cewi-dining-right-col {
+    width: 100%;
+}
+
+.cewi-dining-intro-text {
+    font-size: 16px;
+    color: var(--cewi-text-body);
+    line-height: 1.75;
+    margin: 18px 0 24px 0;
+}
+
+.cewi-dining-image-box {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: var(--cewi-radius-md);
+    overflow: hidden;
+    box-shadow: var(--cewi-shadow-soft);
+}
+
+.cewi-dining-placeholder-box {
+    background: linear-gradient(135deg, var(--cewi-bg-soft) 0%, rgba(39, 68, 114, 0.08) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.cewi-dining-placeholder-box:hover {
+    background: linear-gradient(135deg, var(--cewi-bg-soft) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border-color: rgba(39, 68, 114, 0.4);
+}
+
+.cewi-dining-card-grid-split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cewi-dining-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-md);
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+}
+
+.cewi-dining-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.07);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cewi-dining-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    padding-bottom: 12px;
+}
+
+.cewi-dining-card-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cewi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cewi-dining-card:hover .cewi-dining-card-icon-wrapper {
+    background: var(--cewi-navy);
+    color: #ffffff;
+}
+
+.cewi-dining-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0;
+}
+
+.cewi-dining-card-subtitle {
+    font-size: 13.5px;
+    color: var(--cewi-text-muted);
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.cewi-dining-tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+}
+
+.cewi-dining-tags li {
+    background: var(--cewi-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    color: var(--cewi-navy);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.cewi-dining-card:hover .cewi-dining-tags li {
+    background: #ffffff;
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+@media (max-width: 991px) {
+    .cewi-dining-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .cewi-dining-left-col {
+        position: static;
+        text-align: center;
+    }
+
+    .cewi-dining-left-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cewi-dining-card-grid-split {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cewi-dining-card-grid-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── EXCURSIONS REDESIGN ── */
+.cewi-excursions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.cewi-excursion-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8fafc;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: var(--cewi-radius-md);
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--cewi-navy);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cewi-excursion-card:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+    border-color: rgba(39, 68, 114, 0.14);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+}
+
+.cewi-excursion-card svg {
+    color: var(--cewi-accent);
+}
+
+@media (max-width: 576px) {
+    .cewi-excursions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cewi-pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.cewi-pill {
+    background: var(--cewi-navy);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 24px;
+}
+
+.cewi-wellness-redesign-section {
+    padding: 84px 20px;
+    background: var(--cewi-bg-soft);
+}
+
+.cewi-wellness-header-block {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.cewi-wellness-intro-text {
+    font-size: 16.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.8;
+    margin-top: 18px;
+}
+
+.cewi-wellness-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cewi-wellness-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 24px);
+    min-width: 250px;
+    max-width: calc(25% - 24px);
+}
+
+.cewi-wellness-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.18);
+}
+
+.cewi-wellness-card-placeholder {
+    height: 130px;
+    background: linear-gradient(135deg, var(--cewi-bg-soft) 0%, rgba(39, 68, 114, 0.06) 100%);
+    border-bottom: 2px dashed rgba(39, 68, 114, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cewi-wellness-card:hover .cewi-wellness-card-placeholder {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(39, 68, 114, 0.03) 100%);
+}
+
+.cewi-wellness-card-icon {
+    color: var(--cewi-navy);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.cewi-wellness-card:hover .cewi-wellness-card-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.cewi-wellness-card-placeholder-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cewi-navy);
+    opacity: 0.45;
+}
+
+.cewi-wellness-card-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cewi-wellness-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.cewi-wellness-card-subtitle {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cewi-text-muted);
+}
+
+.cewi-wellness-bottom-banner {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-left: 4px solid var(--cewi-navy);
+    padding: 16px 22px;
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+}
+
+.cewi-wellness-banner-icon {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+}
+
+.cewi-wellness-banner-text {
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cewi-wellness-card {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .cewi-wellness-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .cewi-wellness-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .cewi-wellness-bottom-banner {
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid var(--cewi-navy);
+        border-radius: 0 0 12px 12px;
+        padding: 16px;
+    }
+}
+
+/* ── SIMPLE (ENTERTAINMENT) SECTION ──────────────────────────── */
+
+.cewi-simple-section {
+    background: var(--cewi-navy-dark);
+    padding: 84px 20px;
+    text-align: center;
+}
+
+.cewi-simple-section .cewi-eyebrow {
+    color: var(--cewi-accent-light);
+}
+
+.cewi-simple-section .cewi-section-heading {
+    color: #fff;
+}
+
+.cewi-simple-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cewi-simple-intro {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto 36px;
+    line-height: 1.75;
+}
+
+.cewi-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.cewi-mini-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--cewi-radius-md);
+    padding: 22px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cewi-mini-card svg {
+    color: var(--cewi-accent-light);
+}
+
+.cewi-entertainment-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.cewi-entertainment-footnote-badge svg {
+    color: var(--cewi-accent-light);
+    flex-shrink: 0;
+}
+
+/* ── TRIPLE (WIFI / TRANSFERS / GRATUITIES) ──────────────────── */
+
+.cewi-triple-redesign-section {
+    background: #ffffff;
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-triple-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 25px;
+    /* offset for overlapping icons */
+}
+
+.cewi-triple-card {
+    background: #f8fafc;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-lg);
+    padding: 54px 30px 36px 30px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.02);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cewi-triple-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cewi-navy) 0%, var(--cewi-accent) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cewi-triple-card:hover {
+    background: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cewi-triple-card:hover::before {
+    opacity: 1;
+}
+
+.cewi-triple-icon-wrapper {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--cewi-navy);
+    color: var(--cewi-accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transform: translateY(-50%);
+    box-shadow: 0 6px 15px rgba(15, 28, 46, 0.12);
+    border: 2.5px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cewi-triple-card:hover .cewi-triple-icon-wrapper {
+    background: var(--cewi-accent-light);
+    color: var(--cewi-navy);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 20px rgba(147, 197, 253, 0.35);
+}
+
+.cewi-triple-title {
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--cewi-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.cewi-triple-body {
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.cewi-triple-checklist {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.cewi-triple-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    line-height: 1.4;
+}
+
+.cewi-triple-checklist li svg {
+    color: var(--cewi-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cewi-triple-note {
+    font-size: 13px;
+    color: var(--cewi-text-muted);
+    font-style: italic;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cewi-triple-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 30px;
+    }
+}
+
+/* ── DRINKS SECTION (new design) ──────────────────────────────── */
+.cewi-drinks-section {
+    background: linear-gradient(135deg, #0f1c2e 0%, #1a2f4a 50%, #0c1726 100%);
+    padding: 64px 20px;
+}
+
+.cewi-drinks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-drinks-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cewi-drinks-eyebrow {
+    display: inline-block;
+    font-family: var(--cewi-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.cewi-drinks-title {
+    font-family: var(--cewi-font-display);
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+}
+
+.cewi-drinks-subtext {
+    font-family: var(--cewi-font);
+    font-size: 16px;
+    color: rgba(203, 213, 225, 0.85);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cewi-drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.cewi-drinks-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cewi-drinks-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.cewi-drinks-card-featured {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(147, 197, 253, 0.3);
+}
+
+.cewi-drinks-card-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cewi-accent-light);
+    color: var(--cewi-navy);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.cewi-drinks-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    margin: 0 auto 18px;
+    color: #ffffff;
+}
+
+.cewi-drinks-card-title {
+    font-family: var(--cewi-font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.cewi-drinks-card-text {
+    font-family: var(--cewi-font);
+    font-size: 14px;
+    color: rgba(203, 213, 225, 0.85);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cewi-drinks-included-section {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.cewi-drinks-included-title {
+    font-family: var(--cewi-font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.cewi-drinks-included-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.cewi-drinks-included-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: var(--cewi-font);
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.cewi-drinks-included-item svg {
+    color: #93c5fd;
+    flex-shrink: 0;
+}
+
+.cewi-drinks-note {
+    font-family: var(--cewi-font);
+    font-size: 13px;
+    color: rgba(203, 213, 225, 0.7);
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cewi-drinks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-drinks-included-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-drinks-title {
+        font-size: 32px;
+    }
+
+    .cewi-drinks-included-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cewi-drinks-included-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── NOT INCLUDED SECTION (new design) ─────────────────────────── */
+.cewi-not-included-section {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8edf5 50%, #f0f4ff 100%);
+    padding: 64px 20px;
+}
+
+.cewi-not-included-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cewi-not-included-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.cewi-not-included-eyebrow {
+    display: inline-block;
+    font-family: var(--cewi-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--cewi-navy);
+    background: rgba(39, 68, 114, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.cewi-not-included-title {
+    font-family: var(--cewi-font-display);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+}
+
+.cewi-not-included-subtext {
+    font-family: var(--cewi-font);
+    font-size: 16px;
+    color: var(--cewi-text-body);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cewi-not-included-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 8px 30px rgba(15, 28, 46, 0.06);
+}
+
+.cewi-not-included-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.cewi-not-included-card-header svg {
+    color: #dc2626;
+    flex-shrink: 0;
+}
+
+.cewi-not-included-card-header h3 {
+    font-family: var(--cewi-font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0;
+}
+
+.cewi-not-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.cewi-not-included-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: rgba(220, 38, 38, 0.04);
+    border: 1px solid rgba(220, 38, 38, 0.08);
+    border-radius: 12px;
+    font-family: var(--cewi-font);
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.cewi-not-included-item:hover {
+    background: rgba(220, 38, 38, 0.08);
+    border-color: rgba(220, 38, 38, 0.15);
+}
+
+.cewi-not-included-item svg {
+    color: #dc2626;
+    flex-shrink: 0;
+}
+
+.cewi-not-included-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    font-family: var(--cewi-font);
+    font-size: 13px;
+    color: var(--cewi-text-muted);
+    font-style: italic;
+}
+
+.cewi-not-included-note svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .cewi-not-included-title {
+        font-size: 32px;
+    }
+
+    .cewi-not-included-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-not-included-card {
+        padding: 24px;
+    }
+}
+
+/* ── TABLE SECTIONS ───────────────────────────────────────────── */
+
+.cewi-table-section {
+    background: var(--cewi-bg-white);
+    padding: 84px 20px;
+}
+
+.cewi-table-container {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cewi-table-intro {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    margin-bottom: 30px;
+}
+
+.cewi-comparison-cards-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px auto;
+    text-align: left;
+    max-width: 980px;
+}
+
+.cewi-comp-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-lg);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.02);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cewi-comp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.cewi-comp-card-header {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.cewi-comp-included .cewi-comp-card-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.cewi-comp-extra .cewi-comp-card-header {
+    background: linear-gradient(135deg, #274472 0%, #475569 100%);
+}
+
+.cewi-comp-card-title {
+    font-size: 16.5px;
+    font-weight: 750;
+    margin: 0;
+    color: #ffffff;
+}
+
+.cewi-comp-list {
+    list-style: none;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cewi-comp-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--cewi-navy);
+    font-weight: 500;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-comp-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cewi-comp-included .cewi-comp-list li svg {
+    color: #2563eb;
+    flex-shrink: 0;
+}
+
+.cewi-comp-extra .cewi-comp-list li svg {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .cewi-comparison-cards-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ── COMPARISON REDESIGN ── */
+.cewi-comparison-section-redesign {
+    padding: 90px 20px;
+    background-color: #e3ebf5;
+}
+
+.cewi-compare-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: var(--cewi-radius-lg);
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(15, 28, 46, 0.03);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cewi-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cewi-compare-table th {
+    padding: 22px 24px;
+    font-size: 14.5px;
+    font-weight: 750;
+    color: var(--cewi-navy);
+    border-bottom: 2px solid rgba(39, 68, 114, 0.08);
+    background: #f8fafc;
+}
+
+.cewi-compare-table th:first-child,
+.cewi-compare-table td:first-child {
+    width: 30%;
+    padding-left: 32px;
+}
+
+.cewi-compare-table th.cewi-uni-header {
+    background: linear-gradient(135deg, var(--cewi-navy) 0%, #15243b 100%);
+    color: #ffffff;
+    text-align: center;
+    width: 35%;
+}
+
+.cewi-compare-table td.cewi-uni-cell {
+    background: rgba(39, 68, 114, 0.02);
+    color: var(--cewi-navy);
+    font-weight: 700;
+    text-align: center;
+    border-left: 1px solid rgba(39, 68, 114, 0.04);
+    border-right: 1px solid rgba(39, 68, 114, 0.04);
+}
+
+.cewi-compare-table tr:hover td.cewi-uni-cell {
+    background: rgba(39, 68, 114, 0.04);
+}
+
+.cewi-compare-table th.cewi-typical-header {
+    background: #f8fafc;
+    color: var(--cewi-text-muted);
+    text-align: center;
+    width: 35%;
+}
+
+.cewi-compare-table td.cewi-typical-cell {
+    color: var(--cewi-text-body);
+    text-align: center;
+}
+
+.cewi-compare-table td {
+    padding: 18px 24px;
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+    transition: all 0.2s ease;
+}
+
+.cewi-compare-table tr:hover td {
+    background: #fafbfc;
+}
+
+.cewi-compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cewi-compare-table .cewi-feature-title {
+    font-weight: 700;
+    color: var(--cewi-navy);
+}
+
+.cewi-uni-badge {
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--cewi-navy);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cewi-typical-value {
+    color: var(--cewi-text-muted);
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.cewi-table-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    color: var(--cewi-navy);
+    font-weight: 500;
+    margin-top: 32px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.cewi-table-footnote-badge svg {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+}
+
+/* ── VALUE SECTION ────────────────────────────────────────────── */
+
+.cewi-value-section {
+    position: relative;
+    background: var(--cewi-navy-dark);
+    padding: 100px 20px;
+    text-align: left;
+}
+
+.cewi-value-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cewi-value-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cewi-value-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cewi-accent-light);
+    margin-bottom: 16px;
+}
+
+.cewi-value-eyebrow-text {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+.cewi-value-heading {
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+.cewi-value-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--cewi-accent-light);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.cewi-value-body-lead {
+    font-size: 16.5px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.75;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.cewi-value-body-desc {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.cewi-value-quote-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 4px solid var(--cewi-accent-light);
+    border-radius: 0 12px 12px 0;
+    padding: 22px 26px;
+    position: relative;
+}
+
+.cewi-quote-mark {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 54px;
+    color: rgba(255, 255, 255, 0.06);
+    font-family: serif;
+    line-height: 1;
+}
+
+.cewi-value-emphasis {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Right Column Card styling */
+.cewi-value-inclusion-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--cewi-radius-lg);
+    padding: 34px;
+    backdrop-filter: blur(10px);
+}
+
+.cewi-inclusion-card-title {
+    font-size: 18px;
+    font-weight: 750;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.cewi-inclusion-card-subtitle {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.cewi-value-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cewi-value-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.cewi-value-item-icon {
+    color: var(--cewi-accent-light);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cewi-value-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cewi-value-item-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.cewi-value-item-desc {
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 991px) {
+    .cewi-value-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cewi-value-left-col {
+        text-align: center;
+    }
+
+    .cewi-value-eyebrow-row {
+        justify-content: center;
+    }
+
+    .cewi-value-separator {
+        margin: 0 auto 30px;
+    }
+}
+
+/* ── KEY TAKEAWAYS ────────────────────────────────────────────── */
+
+.cewi-takeaways-section {
+    background: var(--cewi-bg-soft);
+    padding: 84px 20px;
+}
+
+.cewi-takeaways-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cewi-takeaways-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.cewi-takeaway-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cewi-radius-lg);
+    padding: 36px 24px 28px 24px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+}
+
+.cewi-takeaway-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cewi-takeaway-number {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    transform: translateY(-50%);
+    background: var(--cewi-navy);
+    color: var(--cewi-accent-light);
+    font-size: 11.5px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.2);
+    border: 1.5px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cewi-takeaway-card:hover .cewi-takeaway-number {
+    background: var(--cewi-accent-light);
+    color: var(--cewi-navy);
+    box-shadow: 0 4px 12px rgba(147, 197, 253, 0.4);
+}
+
+.cewi-takeaway-text {
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .cewi-takeaways-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cewi-takeaways-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+/* ── FAQ ──────────────────────────────────────────────────────── */
+
+.cewi-faq-section {
+    background: #ffffff;
+    padding: 88px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cewi-faq-list-wrapper {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cewi-faq-item {
+    background: #f8fafc;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(15, 28, 46, 0.01);
+}
+
+.cewi-faq-item:hover {
+    background: #ffffff;
+    border-color: var(--cewi-navy);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.08);
+}
+
+.cewi-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cewi-faq-question-row span {
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--cewi-navy);
+    line-height: 1.4;
+}
+
+.cewi-faq-toggle-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+}
+
+.cewi-faq-answer-text {
+    margin-top: 14px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--cewi-text-body);
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 14px;
+    margin-bottom: 0;
+}
+
+/* ── CTA ──────────────────────────────────────────────────────── */
+
+/* ── CTA REDESIGN ────────────────────────────────────────────── */
+
+.cewi-cta-redesign-section {
+    position: relative;
+    padding: 96px 20px;
+    background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
+    text-align: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.cewi-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: cewi-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes cewi-aurora-pulse {
+    0% {
+        opacity: 0.6;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+    }
+}
+
+.cewi-cta-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(148, 210, 255, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.cewi-cta-crystal-1 {
+    width: 80px;
+    height: 80px;
+    top: 12%;
+    left: 8%;
+    transform: rotate(45deg);
+    animation: cewi-crystal-float 12s ease-in-out infinite;
+}
+
+.cewi-cta-crystal-2 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 12%;
+    transform: rotate(25deg);
+    animation: cewi-crystal-float 10s ease-in-out 2s infinite;
+}
+
+.cewi-cta-crystal-3 {
+    width: 35px;
+    height: 35px;
+    bottom: 18%;
+    left: 15%;
+    transform: rotate(60deg);
+    animation: cewi-crystal-float 14s ease-in-out 4s infinite;
+}
+
+@keyframes cewi-crystal-float {
+
+    0%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(-18px);
+        opacity: 0.9;
+    }
+}
+
+.cewi-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+.cewi-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cewi-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 210, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(148, 210, 255, 0.8);
+    margin-bottom: 16px;
+    animation: cewi-compass-spin 20s linear infinite;
+    background: rgba(148, 210, 255, 0.04);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+@keyframes cewi-compass-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cewi-cta-compass-ring svg {
+    animation: cewi-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes cewi-compass-counter-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.cewi-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(148, 210, 255, 0.7);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.cewi-cta-title {
+    font-size: clamp(24px, 3.5vw, 42px);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px;
+    max-width: 800px;
+}
+
+.cewi-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.cewi-cta-subtitle {
+    font-size: clamp(15px, 2vw, 17px);
+    line-height: 1.7;
+    color: rgba(203, 213, 225, 0.85);
+    max-width: 740px;
+    margin: 0 auto 34px;
+}
+
+.cewi-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.cewi-cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, var(--cewi-navy), #1e3a5f);
+    color: #ffffff;
+    border: 1px solid rgba(148, 210, 255, 0.15);
+    border-radius: 30px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35);
+    position: relative;
+    overflow: hidden;
+}
+
+.cewi-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(39, 68, 114, 0.5);
+    border-color: rgba(148, 210, 255, 0.4);
+}
+
+.cewi-cta-btn-arrow {
+    transition: transform 0.3s ease;
+}
+
+.cewi-cta-primary-btn:hover .cewi-cta-btn-arrow {
+    transform: translateX(4px);
+}
+
+.cewi-cta-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 34px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cewi-cta-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* =============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================= */
+
+@media (max-width: 1024px) {
+    .cewi-hero-main-title {
+        font-size: 32px;
+    }
+
+    .cewi-hero-subtitle-text {
+        font-size: 17px;
+    }
+
+    .cewi-section-heading {
+        font-size: 28px;
+    }
+
+    .cewi-feature-grid {
+        gap: 44px;
+    }
+
+    .cewi-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cewi-triple-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .cewi-hero-main-title {
+        font-size: 30px;
+    }
+
+    .cewi-hero-subtitle-text {
+        font-size: 15px;
+    }
+
+    .cewi-section-heading {
+        font-size: 28px;
+    }
+
+    .cewi-hero-eyebrow-tag {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .cewi-feature-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cewi-feature-text-col {
+        order: 1;
+        text-align: left;
+    }
+
+    .cewi-feature-text-col .cewi-eyebrow,
+    .cewi-feature-text-col .cewi-section-heading {
+        text-align: center;
+    }
+
+    .cewi-feature-text-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cewi-feature-text-col .cewi-check-list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .cewi-feature-image-col {
+        order: 2;
+    }
+
+    .cewi-image-frame {
+        min-height: 280px;
+    }
+
+    .cewi-included-grid,
+    .cewi-toc-list,
+    .cewi-check-list-2col,
+    .cewi-wellness-list,
+    .cewi-takeaways-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-triple-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cewi-toc-container {
+        padding: 28px 24px;
+    }
+
+    .cewi-compare-table {
+        min-width: 680px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-hero-main-title {
+        font-size: 26px;
+    }
+
+    .cewi-hero-subtitle-text {
+        font-size: 13px;
+    }
+
+    .cewi-section-heading {
+        font-size: 24px;
+    }
+
+    .cewi-hero-content-wrapper {
+        padding: 60px 18px;
+    }
+
+    .cewi-intro-section,
+    .cewi-different-section,
+    .cewi-feature-section,
+    .cewi-simple-section,
+    .cewi-triple-section,
+    .cewi-table-section,
+    .cewi-value-section,
+    .cewi-takeaways-section,
+    .cewi-faq-section,
+    .cewi-cta-section,
+    .cewi-cta-redesign-section {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .cewi-card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cewi-cta-button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cewi-primary-btn,
+    .cewi-secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cewi-data-table {
+        min-width: 420px;
+    }
+
+    .cewi-faq-question-row {
+        font-size: 14.5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cewi-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cewi-value-card,
+    .cewi-toc-container {
+        padding: 24px 18px;
+    }
+}
+
+.cewi-expert-insight-section {
+    padding: 88px 24px;
+    background: #0f1c2e !important;
+    /* Navy Dark equivalent for this page */
+    position: relative;
+    overflow: hidden;
+}
+
+.cewi-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.cewi-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.cewi-expert-img-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 380px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cewi-expert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cewi-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, transparent 60%);
+}
+
+.cewi-expert-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: #93c5fd;
+    /* Soft Accent light blue tint */
+    color: #0f1c2e;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    padding: 6px 12px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.cewi-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.cewi-expert-stat-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.cewi-expert-stat-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #93c5fd;
+}
+
+.cewi-expert-stat-num {
+    font-size: 26px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.cewi-expert-stat-lbl {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.cewi-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.cewi-expert-eyebrow-row .cewi-eyebrow {
+    margin-bottom: 0;
+}
+
+.cewi-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    display: block;
+}
+
+.cewi-section-heading1 {
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 700;
+    color: #ffffff !important;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.cewi-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.cewi-expert-quote-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #93c5fd;
+    border-radius: 0 16px 16px 0;
+    padding: 24px 28px 24px 34px;
+    margin: 28px 0;
+}
+
+.cewi-expert-quote-mark {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 48px;
+    color: rgba(147, 197, 253, 0.15);
+    font-family: 'Georgia', serif;
+    line-height: 1;
+}
+
+.cewi-expert-quote-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff !important;
+    margin: 0;
+}
+
+.cewi-priorities-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 14px;
+}
+
+.cewi-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.cewi-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.cewi-expert-pill:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: #93c5fd;
+}
+
+.cewi-expert-pill svg {
+    color: #93c5fd;
+}
+
+.cewi-expert-footer-bio {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.cewi-expert-bio {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0;
+}
+
+/* ── TYPOGRAPHY: PLAYFAIR DISPLAY HEADINGS + MONTSERRAT BODY ── */
+
+.cewi-hero-main-title,
+.cewi-section-heading,
+.cewi-section-heading1,
+.cewi-fleet-main-heading,
+.cewi-fleet-block-title,
+.cewi-dest-block-title,
+.cewi-triple-title,
+.cewi-suited-header-title,
+.cewi-priorities-title,
+.cewi-toc-heading,
+.cewi-cta-title,
+.cewi-dining-card-title,
+.cewi-wellness-card-title,
+.cewi-inclusion-card-title,
+.cewi-value-item-title,
+.cewi-value-title,
+.cewi-takeaways-heading {
+    font-family: var(--cewi-font-display), 'Playfair Display', serif;
+}
+
+.cewi-hero-section,
+.cewi-intro-section,
+.cewi-different-section,
+.cewi-feature-section,
+.cewi-simple-section,
+.cewi-triple-section,
+.cewi-table-section,
+.cewi-value-section,
+.cewi-takeaways-section,
+.cewi-faq-section,
+.cewi-cta-section {
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .cewi-hero-main-title {
+        font-size: 32px;
+    }
+
+    .cewi-section-heading,
+    .cewi-section-heading1,
+    .cewi-fleet-main-heading {
+        font-size: 28px;
+    }
+
+    .cewi-hero-section,
+    .cewi-intro-section,
+    .cewi-different-section,
+    .cewi-feature-section,
+    .cewi-simple-section,
+    .cewi-triple-section,
+    .cewi-table-section,
+    .cewi-value-section,
+    .cewi-takeaways-section,
+    .cewi-faq-section,
+    .cewi-cta-section {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-hero-main-title {
+        font-size: 26px;
+    }
+
+    .cewi-section-heading,
+    .cewi-section-heading1,
+    .cewi-fleet-main-heading {
+        font-size: 24px;
+    }
+
+    .cewi-hero-section,
+    .cewi-intro-section,
+    .cewi-different-section,
+    .cewi-feature-section,
+    .cewi-simple-section,
+    .cewi-triple-section,
+    .cewi-table-section,
+    .cewi-value-section,
+    .cewi-takeaways-section,
+    .cewi-faq-section,
+    .cewi-cta-section {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cewi-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .cewi-expert-img-frame {
+        height: 320px;
+    }
+}
+
+/* ── ENTERTAINMENT BG AND TEXT COLOR ADJUSTMENTS ── */
+.cewi-bg-entertainment {
+    background: linear-gradient(135deg, #e3ebf5 0%, #edf3fa 100%) !important;
+}
+
+.cewi-bg-entertainment .cewi-eyebrow {
+    color: var(--cewi-navy) !important;
+}
+
+.cewi-bg-entertainment .cewi-section-heading {
+    color: var(--cewi-navy) !important;
+}
+
+.cewi-bg-entertainment .cewi-simple-intro {
+    color: var(--cewi-text-body) !important;
+}
+
+.cewi-bg-entertainment .cewi-mini-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(39, 68, 114, 0.12) !important;
+    color: var(--cewi-navy) !important;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.04);
+    transition: all 0.3s ease;
+}
+
+.cewi-bg-entertainment .cewi-mini-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.25) !important;
+}
+
+.cewi-bg-entertainment .cewi-mini-card svg {
+    color: var(--cewi-navy) !important;
+}
+
+.cewi-bg-entertainment .cewi-entertainment-footnote-badge {
+    background: rgba(39, 68, 114, 0.05) !important;
+    border: 1px solid rgba(39, 68, 114, 0.1) !important;
+    color: var(--cewi-navy) !important;
+}
+
+.cewi-bg-entertainment .cewi-entertainment-footnote-badge svg {
+    color: var(--cewi-navy) !important;
+}
+
+/* ── ENTERTAINMENT SIDE-BY-SIDE LAYOUT ── */
+.cewi-entertainment-sidebyside-section {
+    padding: 90px 20px !important;
+}
+
+.cewi-entertainment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-entertainment-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cewi-entertainment-left-col {
+    text-align: left;
+}
+
+.cewi-entertainment-left-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.cewi-entertainment-intro-text {
+    font-size: 16px;
+    color: var(--cewi-text-body);
+    line-height: 1.8;
+    margin: 20px 0 28px 0;
+}
+
+.cewi-entertainment-right-col {
+    width: 100%;
+}
+
+.cewi-entertainment-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.cewi-entertainment-footnote-badge {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .cewi-entertainment-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cewi-entertainment-left-col {
+        text-align: center;
+    }
+
+    .cewi-entertainment-left-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cewi-entertainment-footnote-badge {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .cewi-entertainment-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── RECREATION SECTION (POOLS / FITNESS / KIDS) ── */
+.cewi-recreation-section {
+    background: linear-gradient(150deg, #0f1c2e 0%, #13243f 50%, #0a1424 100%);
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cewi-recreation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cewi-recreation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Recreation Card */
+.cewi-recreation-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 44px 30px 36px 30px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cewi-recreation-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(147, 197, 253, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow bar at top of card */
+.cewi-recreation-top-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6 0%, #93c5fd 100%);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.cewi-recreation-card:hover .cewi-recreation-top-glow {
+    opacity: 1;
+    background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+/* Icon Wrap */
+.cewi-recreation-icon-wrap {
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(135deg, var(--cewi-navy) 0%, #3a5f9a 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(39, 68, 114, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cewi-recreation-card:hover .cewi-recreation-icon-wrap {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(147, 197, 253, 0.3);
+}
+
+.cewi-recreation-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.35;
+}
+
+.cewi-recreation-body {
+    font-size: 14px;
+    color: rgba(203, 213, 225, 0.8);
+    line-height: 1.65;
+    margin: 0 0 20px 0;
+}
+
+/* Checklist */
+.cewi-recreation-checklist {
+    list-style: none;
+    margin: 0 0 24px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.cewi-recreation-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #e2e8f0;
+    line-height: 1.45;
+}
+
+.cewi-recreation-checklist li svg {
+    color: var(--cewi-accent-light);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Footnote inside card */
+.cewi-recreation-note {
+    font-size: 12.5px;
+    color: rgba(203, 213, 225, 0.5);
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 14px;
+    margin-top: auto;
+    line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+    .cewi-recreation-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cewi-recreation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cewi-recreation-card {
+        padding: 36px 24px 28px 24px;
+    }
+}
+
+/* ── RETREAT SECTION (VIP / SUITE-LEVEL) ── */
+.cewi-retreat-section {
+    background: #ffffff;
+    padding: 100px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-retreat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-retreat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Luxury visual card (left) */
+.cewi-retreat-visual-card {
+    background: linear-gradient(135deg, #0c1c2e 0%, #173254 100%);
+    border: 2px solid rgba(197, 160, 89, 0.3); /* Gold/bronze tint */
+    border-radius: 24px;
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(12, 28, 46, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.cewi-retreat-visual-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(197, 160, 89, 0.6);
+}
+
+.cewi-retreat-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.cewi-retreat-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.cewi-retreat-crown-icon {
+    color: #c5a059; /* Gold color */
+    filter: drop-shadow(0 4px 10px rgba(197, 160, 89, 0.3));
+}
+
+.cewi-retreat-luxury-tag {
+    font-size: 10px;
+    font-weight: 700;
+    color: #c5a059;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    background: rgba(197, 160, 89, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.15em;
+}
+
+.cewi-retreat-card-body {
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.cewi-retreat-card-main-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.05em;
+}
+
+.cewi-retreat-card-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 28px 0;
+}
+
+/* Mini badges */
+.cewi-retreat-highlights-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cewi-retreat-mini-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.cewi-retreat-mini-badge svg {
+    color: #c5a059;
+}
+
+/* Right Column details */
+.cewi-retreat-text-col {
+    text-align: left;
+}
+
+.cewi-retreat-text-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.cewi-retreat-lead-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cewi-navy);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.cewi-retreat-checklist {
+    list-style: none;
+    margin: 0 0 24px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 24px;
+}
+
+.cewi-retreat-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cewi-text-body);
+    line-height: 1.45;
+}
+
+.cewi-retreat-checklist li svg {
+    color: var(--cewi-accent);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.cewi-retreat-body-text {
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.7;
+    margin: 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .cewi-retreat-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .cewi-retreat-image-col {
+        order: 2;
+    }
+    
+    .cewi-retreat-text-col {
+        order: 1;
+        text-align: center;
+    }
+    
+    .cewi-retreat-text-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cewi-retreat-checklist {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto 24px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .cewi-retreat-visual-card {
+        padding: 36px 24px;
+        min-height: 320px;
+    }
+    
+    .cewi-retreat-card-main-title {
+        font-size: 22px;
+    }
+    
+    .cewi-retreat-checklist {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ── CRUISE-ONLY VS ALL INCLUDED SECTION ── */
+.cewi-vs-section {
+    background: var(--cewi-bg-white);
+    padding: 90px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-vs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cewi-vs-info-col {
+    text-align: left;
+}
+
+.cewi-vs-info-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.cewi-vs-intro-text {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.75;
+    margin: 20px 0 24px 0;
+}
+
+.cewi-vs-badge {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--cewi-bg-soft);
+    border: 1px solid var(--cewi-border);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    color: var(--cewi-navy);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cewi-vs-badge svg {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cewi-vs-cards-col {
+    width: 100%;
+}
+
+.cewi-vs-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Comparison panels */
+.cewi-vs-panel {
+    background: #f8fafc;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 18px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.cewi-vs-panel:hover {
+    transform: translateY(-4px);
+    border-color: rgba(39, 68, 114, 0.16);
+    box-shadow: 0 10px 25px rgba(15, 28, 46, 0.06);
+}
+
+.cewi-vs-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.cewi-vs-panel-icon-x {
+    color: #ef4444;
+}
+
+.cewi-vs-panel-icon-check {
+    color: #22c55e;
+}
+
+.cewi-vs-panel-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0;
+}
+
+.cewi-vs-panel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cewi-vs-panel-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.45;
+}
+
+.cewi-vs-panel-list li svg {
+    color: var(--cewi-navy);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Featured panel styling */
+.cewi-vs-panel-featured {
+    background: #ffffff;
+    border: 2px solid var(--cewi-navy);
+}
+
+@media (max-width: 991px) {
+    .cewi-vs-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .cewi-vs-info-col {
+        text-align: center;
+    }
+    
+    .cewi-vs-info-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-vs-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── ALL INCLUDED COST SECTION ── */
+.cewi-all-included-cost-section {
+    background: linear-gradient(135deg, #edf2f9 0%, #e2eaf4 100%);
+    padding: 80px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-cost-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-cost-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Cost Card */
+.cewi-cost-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 36px 28px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.02);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cewi-cost-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.07);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+/* Icon wrap */
+.cewi-cost-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--cewi-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(39, 68, 114, 0.2);
+}
+
+.cewi-cost-card:hover .cewi-cost-icon-wrap {
+    background: var(--cewi-accent);
+    transform: scale(1.05);
+}
+
+.cewi-cost-title {
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--cewi-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.35;
+}
+
+.cewi-cost-body {
+    font-size: 14.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+/* Checklist inside cost cards */
+.cewi-cost-checklist {
+    list-style: none;
+    margin: 0 0 18px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.cewi-cost-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.45;
+}
+
+.cewi-cost-checklist li svg {
+    color: var(--cewi-accent);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Cost Note text */
+.cewi-cost-note {
+    font-size: 13px;
+    color: var(--cewi-text-muted);
+    font-style: italic;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 12px;
+    margin-top: auto;
+    line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+    .cewi-cost-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ── WHAT TO BUDGET SEPARATELY SECTION ── */
+.cewi-budget-section {
+    background: var(--cewi-bg-white);
+    padding: 90px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-budget-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-budget-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cewi-budget-info-col {
+    text-align: left;
+}
+
+.cewi-budget-info-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.cewi-budget-intro-text {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.75;
+    margin: 20px 0 0 0;
+}
+
+.cewi-budget-cards-col {
+    width: 100%;
+}
+
+/* Timeline/Stack cards on the right */
+.cewi-budget-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cewi-budget-timeline-card {
+    background: #f8fafc;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.cewi-budget-timeline-card:hover {
+    transform: translateX(5px);
+    border-color: rgba(39, 68, 114, 0.16);
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.04);
+}
+
+/* Card Header */
+.cewi-budget-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cewi-budget-icon-wrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cewi-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cewi-budget-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0;
+}
+
+/* Pill list for budget items */
+.cewi-budget-pill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+.cewi-budget-pill-list li {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    color: var(--cewi-text-body);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.cewi-budget-timeline-card:hover .cewi-budget-pill-list li {
+    border-color: rgba(39, 68, 114, 0.18);
+    background: var(--cewi-bg-soft);
+    color: var(--cewi-navy);
+}
+
+@media (max-width: 991px) {
+    .cewi-budget-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .cewi-budget-info-col {
+        text-align: center;
+    }
+    
+    .cewi-budget-info-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ── HOW TO GET BEST VALUE SECTION (DARK NAVY) ── */
+.cewi-value-steps-section {
+    background: linear-gradient(135deg, #f8faff 0%, var(--cewi-bg-soft) 100%);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(39, 68, 114, 0.07);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+}
+
+.cewi-valsteps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cewi-valsteps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Centered Header */
+.cewi-valsteps-header {
+    text-align: center;
+}
+
+.cewi-valsteps-card-grid-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Value steps cards */
+.cewi-valsteps-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 30px 24px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+}
+
+/* watermark number */
+.cewi-valsteps-card::after {
+    content: attr(data-num);
+    position: absolute;
+    bottom: -10px;
+    right: 12px;
+    font-size: 90px;
+    font-weight: 950;
+    color: rgba(39, 68, 114, 0.04);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cewi-valsteps-card:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    border-color: rgba(39, 68, 114, 0.16);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.1);
+}
+
+.cewi-valsteps-card-num {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--cewi-navy);
+    background: rgba(39, 68, 114, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.cewi-valsteps-card-body {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.cewi-valsteps-card-title {
+    font-family: var(--cewi-font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cewi-navy);
+    margin: 0 0 10px 0;
+    line-height: 1.35;
+}
+
+.cewi-valsteps-card-desc {
+    font-family: var(--cewi-font);
+    font-size: 13.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .cewi-valsteps-card-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-valsteps-card-grid-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── KEY TAKEAWAYS SECTION (NEW LOOK) ── */
+.cewi-takeaways-new-section {
+    background: var(--cewi-bg-soft);
+    padding: 80px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-takeaways-new-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-takeaways-new-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cewi-takeaways-new-info-col {
+    text-align: left;
+}
+
+.cewi-takeaways-new-info-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Centered Header */
+.cewi-takeaways-new-header {
+    text-align: center;
+}
+
+.cewi-takeaways-new-intro {
+    font-size: 15.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.75;
+    margin: 20px 0 0 0;
+}
+
+.cewi-takeaways-grid-row-4-3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards 1-4 span 3 columns each (takes up the 12-col row) */
+.cewi-takeaway-new-card:nth-child(-n+4) {
+    grid-column: span 3;
+}
+
+/* Cards 5-7 span 4 columns each (takes up the 12-col row centered) */
+.cewi-takeaway-new-card:nth-child(5),
+.cewi-takeaway-new-card:nth-child(6),
+.cewi-takeaway-new-card:nth-child(7) {
+    grid-column: span 4;
+}
+
+/* Takeaway card styling */
+.cewi-takeaway-new-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 32px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: default;
+}
+
+/* Watermark number */
+.cewi-takeaway-new-card::after {
+    content: attr(data-num);
+    position: absolute;
+    bottom: -10px;
+    right: 12px;
+    font-size: 90px;
+    font-weight: 950;
+    color: rgba(39, 68, 114, 0.02);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cewi-takeaway-new-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(39, 68, 114, 0.16);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.06);
+}
+
+/* Number badge */
+.cewi-takeaway-new-badge {
+    background: rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    color: var(--cewi-navy);
+    font-size: 12px;
+    font-weight: 800;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.cewi-takeaway-new-card:hover .cewi-takeaway-new-badge {
+    background: var(--cewi-navy);
+    color: #ffffff;
+    border-color: var(--cewi-navy);
+}
+
+.cewi-takeaway-new-desc {
+    font-size: 13.5px;
+    color: var(--cewi-text-body);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .cewi-takeaway-new-card:nth-child(-n+4),
+    .cewi-takeaway-new-card:nth-child(5),
+    .cewi-takeaway-new-card:nth-child(6),
+    .cewi-takeaway-new-card:nth-child(7) {
+        grid-column: span 6 !important;
+    }
+    
+    .cewi-takeaways-grid-row-4-3 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    /* Center the last card on 2-column layout */
+    .cewi-takeaway-new-card:nth-child(7) {
+        grid-column: 4 / span 6 !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-takeaway-new-card:nth-child(-n+4),
+    .cewi-takeaway-new-card:nth-child(5),
+    .cewi-takeaway-new-card:nth-child(6),
+    .cewi-takeaway-new-card:nth-child(7) {
+        grid-column: span 12 !important;
+    }
+    
+    .cewi-takeaway-new-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ── CONCLUSION SECTION (NEW LOOK) ── */
+.cewi-conclusion-new-section {
+    background: linear-gradient(150deg, #091322 0%, #0c182a 100%);
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cewi-conclusion-new-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-conclusion-new-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Advisor Card on the left */
+.cewi-conclusion-visual-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 44px 36px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+}
+
+.cewi-conclusion-visual-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cewi-accent) 0%, var(--cewi-accent-light) 100%);
+}
+
+.cewi-conclusion-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cewi-conclusion-award-icon {
+    color: var(--cewi-accent-light);
+}
+
+.cewi-conclusion-tag {
+    font-size: 11px;
+    font-weight: 750;
+    color: var(--cewi-accent-light);
+    letter-spacing: 0.15em;
+    background: rgba(147, 197, 253, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.cewi-conclusion-card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.cewi-conclusion-card-title {
+    font-size: 20px;
+    font-weight: 750;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.cewi-conclusion-card-desc {
+    font-size: 14.5px;
+    color: rgba(203, 213, 225, 0.85);
+    line-height: 1.7;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Text Column on the right */
+.cewi-conclusion-text-col {
+    color: #ffffff;
+    text-align: left;
+}
+
+.cewi-conclusion-text-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+    background: var(--cewi-accent-light);
+}
+
+.cewi-conclusion-text-col .cewi-section-heading {
+    color: #ffffff;
+}
+
+.cewi-conclusion-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cewi-conclusion-bullet {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.cewi-bullet-icon {
+    color: var(--cewi-accent-light);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cewi-conclusion-bullet p {
+    font-size: 14.5px;
+    color: rgba(203, 213, 225, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cewi-conclusion-bullet p strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .cewi-conclusion-new-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .cewi-conclusion-visual-card {
+        order: 2;
+    }
+    
+    .cewi-conclusion-text-col {
+        order: 1;
+        text-align: center;
+    }
+    
+    .cewi-conclusion-text-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cewi-conclusion-bullet {
+        text-align: left;
+    }
+}
+
+/* ── COFFEE / ROOM SERVICE / MINI-BAR GRID ── */
+.cewi-coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.cewi-coffee-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.cewi-coffee-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cewi-coffee-card-title {
+    font-size: 16px;
+    font-weight: 750;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.cewi-coffee-card-text {
+    font-size: 13.5px;
+    color: rgba(203, 213, 225, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .cewi-coffee-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cewi-coffee-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .cewi-coffee-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ── CORE FARE INCLUSIONS SECTION (NEW LOOK) ── */
+.cewi-core-fare-new-section {
+    background: linear-gradient(135deg, #f3f6fa 0%, #e8eef6 100%);
+    padding: 85px 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cewi-corefare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cewi-corefare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cewi-corefare-info-col {
+    text-align: left;
+}
+
+.cewi-corefare-info-col .cewi-heading-separator-bar {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.cewi-corefare-body-text {
+    font-size: 15px;
+    color: var(--cewi-text-body);
+    line-height: 1.7;
+    margin: 20px 0 24px 0;
+}
+
+/* Footer Banner Callout */
+.cewi-corefare-footer-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    color: var(--cewi-navy);
+    font-weight: 550;
+    line-height: 1.4;
+}
+
+.cewi-banner-icon {
+    color: var(--cewi-navy);
+    flex-shrink: 0;
+}
+
+/* Inclusions chips column (right) */
+.cewi-corefare-chips-col {
+    width: 100%;
+}
+
+.cewi-corefare-chips-title {
+    font-size: 15px;
+    font-weight: 750;
+    color: var(--cewi-navy);
+    margin: 0 0 18px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cewi-corefare-chips-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 16px;
+}
+
+.cewi-corefare-chip {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(15, 28, 46, 0.01);
+    transition: all 0.3s ease;
+}
+
+.cewi-corefare-chip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(39, 68, 114, 0.16);
+    box-shadow: 0 6px 15px rgba(15, 28, 46, 0.04);
+}
+
+.cewi-corefare-chip svg {
+    color: var(--cewi-accent);
+    flex-shrink: 0;
+}
+
+.cewi-corefare-chip span {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--cewi-text-body);
+}
+
+@media (max-width: 991px) {
+    .cewi-corefare-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .cewi-corefare-info-col {
+        text-align: center;
+    }
+    
+    .cewi-corefare-info-col .cewi-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cewi-corefare-footer-banner {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .cewi-corefare-chips-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

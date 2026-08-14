@@ -1208,6 +1208,22 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/celebrity-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises: Complete Guide
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on a Celebrity Cruise?
+              </NavLink>
+
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-beyond"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1215,15 +1231,13 @@ const Navbar = () => {
                 Celebrity Beyond Cruise Ship Guide
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-apex"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Apex Cruise Ship Guide
               </NavLink>
-
-              
 
             </div>
           </div>
@@ -2388,20 +2402,36 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/ships/celebrity-beyond"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Beyond Cruise Ship Guide
-              </NavLink>
+              to="/celebrity-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises: Complete Guide
+            </NavLink>
 
-              <NavLink
-                to="/celebrity-cruises/ships/celebrity-apex"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Apex Cruise Ship Guide
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/whats-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Is Included on a Celebrity Cruise?
+            </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/ships/celebrity-beyond"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Beyond Cruise Ship Guide
+            </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/ships/celebrity-apex"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Apex Cruise Ship Guide
+            </NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>

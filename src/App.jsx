@@ -165,7 +165,9 @@ import UniworldFamilyCruises from "./pages/UniworldFamilyCruises/UniworldFamilyC
 import UniworldChristmasMarketCruises from "./pages/UniworldChristmasMarketCruises/UniworldChristmasMarketCruises";
 import UniworldvsScenicRiverCruises from "./pages/UniworldvsScenicRiverCruises/UniworldvsScenicRiverCruises";
 import UniworldvsAmaWaterways from "./pages/UniworldvsAmaWaterways/UniworldvsAmaWaterways";
-import Celebritybeyondcruiseshipguide  from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
+import CelebrityCruises from "./pages/CelebrityCruises/CelebrityCruises";
+import WhatsIncludedCelebrityCruise from "./pages/WhatsIncludedCelebrityCruise/WhatsIncludedCelebrityCruise";
+import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 
 function App() {
@@ -934,18 +936,24 @@ function App() {
           />
 
           <Route
+            path="/celebrity-cruises"
+            element={<CelebrityCruises />}
+          />
+
+          <Route
+            path="/celebrity-cruises/whats-included"
+            element={<WhatsIncludedCelebrityCruise />}
+          />
+
+          <Route
             path="/celebrity-cruises/ships/celebrity-beyond"
-            element={<Celebritybeyondcruiseshipguide  />}
+            element={<Celebritybeyondcruiseshipguide />}
           />
 
           <Route
             path="/celebrity-cruises/ships/celebrity-apex"
-            element={<Celebrityapexcruiseshipguide   />}
+            element={<Celebrityapexcruiseshipguide />}
           />
-
-
-
-
 
         </Routes>
       </BrowserRouter>
